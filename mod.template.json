@@ -1,0 +1,16 @@
+{
+  "_QPVersion": "0.1.1",
+  "name": "${mod_name}",
+  "id": "${mod_id}",
+  "author": "void*",
+  "version": "${version}",
+  "packageId": "com.Really.Virtuoso",
+  "packageVersion": "0.6.3",
+  "description": "A core library used by almost every mod. DO NOT ATTEMPT TO UNINSTALL IT!",
+  "coverImage": "cover.png",
+  "dependencies": [],
+  "modFiles": [],
+  "libraryFiles": [],
+  "fileCopies": [],
+  "copyExtensions": []
+}

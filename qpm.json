@@ -1,0 +1,23 @@
+{
+  "sharedDir": "include",
+  "dependenciesDir": "extern",
+  "info": {
+    "name": "virtuoso-codegen",
+    "id": "virtuoso-codegen",
+    "version": "0.0.1",
+    "url": "https://github.com/v0idp/Virtuoso-Quest-Codegen",
+    "additionalData": {
+      "overrideSoName": "libvirtuoso-codegen.so"
+    }
+  },
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "^3.0.0",
+      "additionalData": {
+        "useRelease": true
+      }
+    }
+  ],
+  "additionalData": {}
+}
