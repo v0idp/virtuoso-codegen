@@ -55,11 +55,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::AudioSource*) == 0x8);
     // [TooltipAttribute] Offset: 0x5E2360
     // public OVRLipSync/ContextProviders provider
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::GlobalNamespace::OVRLipSync::ContextProviders provider;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRLipSync::ContextProviders) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRLipSync::ContextProviders) == 0x4);
     // [TooltipAttribute] Offset: 0x5E2398
     // public System.Boolean enableAcceleration
     // Size: 0x1

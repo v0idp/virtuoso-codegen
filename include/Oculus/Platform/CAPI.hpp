@@ -174,11 +174,13 @@ namespace Oculus::Platform {
       // Field size check
       static_assert(sizeof(::StringW) == 0x8);
       // private Oculus.Platform.KeyValuePairType valueType_
-      // Size: 0x14
+      // Size: 0x4
       // Offset: 0x8
       ::Oculus::Platform::KeyValuePairType valueType;
       // Field size check
-      static_assert(sizeof(::Oculus::Platform::KeyValuePairType) == 0x14);
+      static_assert(sizeof(::Oculus::Platform::KeyValuePairType) == 0x4);
+      // Padding between fields: valueType and: stringValue
+      char __padding1[0x4] = {};
       // public System.String stringValue_
       // Size: 0x8
       // Offset: 0x10

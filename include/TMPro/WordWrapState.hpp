@@ -163,11 +163,11 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public TMPro.HorizontalAlignmentOptions horizontalAlignment
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::TMPro::HorizontalAlignmentOptions horizontalAlignment;
     // Field size check
-    static_assert(sizeof(::TMPro::HorizontalAlignmentOptions) == 0x14);
+    static_assert(sizeof(::TMPro::HorizontalAlignmentOptions) == 0x4);
     // public System.Single marginLeft
     // Size: 0x4
     // Offset: 0x48
@@ -211,11 +211,11 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public TMPro.FontStyles fontStyle
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x64
     ::TMPro::FontStyles fontStyle;
     // Field size check
-    static_assert(sizeof(::TMPro::FontStyles) == 0x14);
+    static_assert(sizeof(::TMPro::FontStyles) == 0x4);
     // public System.Int32 italicAngle
     // Size: 0x4
     // Offset: 0x68

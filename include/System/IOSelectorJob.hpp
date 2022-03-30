@@ -55,11 +55,13 @@ namespace System {
     #endif
     #endif
     // private System.IOOperation operation
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::IOOperation operation;
     // Field size check
-    static_assert(sizeof(::System::IOOperation) == 0x14);
+    static_assert(sizeof(::System::IOOperation) == 0x4);
+    // Padding between fields: operation and: callback
+    char __padding0[0x4] = {};
     // private System.IOAsyncCallback callback
     // Size: 0x8
     // Offset: 0x18

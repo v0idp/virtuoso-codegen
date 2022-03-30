@@ -29,11 +29,13 @@ namespace System::Security::Cryptography::X509Certificates {
     public:
     public:
     // private System.Security.Cryptography.X509Certificates.X509ChainStatusFlags status
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags status;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags) == 0x4);
+    // Padding between fields: status and: info
+    char __padding0[0x4] = {};
     // private System.String info
     // Size: 0x8
     // Offset: 0x8

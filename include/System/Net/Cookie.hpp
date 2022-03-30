@@ -71,11 +71,11 @@ namespace System::Net {
     // Field size check
     static_assert(sizeof(::System::Uri*) == 0x8);
     // private System.Net.CookieVariant m_cookieVariant
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::System::Net::CookieVariant m_cookieVariant;
     // Field size check
-    static_assert(sizeof(::System::Net::CookieVariant) == 0x14);
+    static_assert(sizeof(::System::Net::CookieVariant) == 0x4);
     // private System.Boolean m_discard
     // Size: 0x1
     // Offset: 0x24

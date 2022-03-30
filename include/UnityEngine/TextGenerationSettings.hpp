@@ -83,17 +83,17 @@ namespace UnityEngine {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public UnityEngine.FontStyle fontStyle
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::UnityEngine::FontStyle fontStyle;
     // Field size check
-    static_assert(sizeof(::UnityEngine::FontStyle) == 0x14);
+    static_assert(sizeof(::UnityEngine::FontStyle) == 0x4);
     // public UnityEngine.TextAnchor textAnchor
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x2C
     ::UnityEngine::TextAnchor textAnchor;
     // Field size check
-    static_assert(sizeof(::UnityEngine::TextAnchor) == 0x14);
+    static_assert(sizeof(::UnityEngine::TextAnchor) == 0x4);
     // public System.Boolean alignByGeometry
     // Size: 0x1
     // Offset: 0x30
@@ -129,17 +129,17 @@ namespace UnityEngine {
     // Padding between fields: updateBounds and: verticalOverflow
     char __padding12[0x3] = {};
     // public UnityEngine.VerticalWrapMode verticalOverflow
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::UnityEngine::VerticalWrapMode verticalOverflow;
     // Field size check
-    static_assert(sizeof(::UnityEngine::VerticalWrapMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::VerticalWrapMode) == 0x4);
     // public UnityEngine.HorizontalWrapMode horizontalOverflow
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::UnityEngine::HorizontalWrapMode horizontalOverflow;
     // Field size check
-    static_assert(sizeof(::UnityEngine::HorizontalWrapMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::HorizontalWrapMode) == 0x4);
     // public UnityEngine.Vector2 generationExtents
     // Size: 0x8
     // Offset: 0x48

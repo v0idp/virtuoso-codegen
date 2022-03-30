@@ -44,18 +44,18 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     // [NativeNameAttribute] Offset: 0x56A4E4
     // public UnityEngine.LightmapBakeType lightmapBakeType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x8
     ::UnityEngine::LightmapBakeType lightmapBakeType;
     // Field size check
-    static_assert(sizeof(::UnityEngine::LightmapBakeType) == 0x14);
+    static_assert(sizeof(::UnityEngine::LightmapBakeType) == 0x4);
     // [NativeNameAttribute] Offset: 0x56A51C
     // public UnityEngine.MixedLightingMode mixedLightingMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xC
     ::UnityEngine::MixedLightingMode mixedLightingMode;
     // Field size check
-    static_assert(sizeof(::UnityEngine::MixedLightingMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::MixedLightingMode) == 0x4);
     // public System.Boolean isBaked
     // Size: 0x1
     // Offset: 0x10

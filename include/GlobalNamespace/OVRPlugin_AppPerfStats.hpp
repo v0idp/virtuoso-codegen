@@ -40,11 +40,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public OVRPlugin/Bool AnyFrameStatsDropped
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xC
     ::GlobalNamespace::OVRPlugin::Bool AnyFrameStatsDropped;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Bool) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Bool) == 0x4);
     // public System.Single AdaptiveGpuPerformanceScale
     // Size: 0x4
     // Offset: 0x10

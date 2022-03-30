@@ -172,11 +172,13 @@ namespace System::Text::RegularExpressions {
     // Field size check
     static_assert(sizeof(::System::Collections::Generic::List_1<::StringW>*) == 0x8);
     // System.Text.RegularExpressions.RegexOptions _options
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x80
     ::System::Text::RegularExpressions::RegexOptions options;
     // Field size check
-    static_assert(sizeof(::System::Text::RegularExpressions::RegexOptions) == 0x14);
+    static_assert(sizeof(::System::Text::RegularExpressions::RegexOptions) == 0x4);
+    // Padding between fields: options and: optionsStack
+    char __padding16[0x4] = {};
     // System.Collections.Generic.List`1<System.Text.RegularExpressions.RegexOptions> _optionsStack
     // Size: 0x8
     // Offset: 0x88

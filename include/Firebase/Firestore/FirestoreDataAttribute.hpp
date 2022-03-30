@@ -45,11 +45,13 @@ namespace Firebase::Firestore {
     #endif
     // [DebuggerBrowsableAttribute] Offset: 0x5C783C
     // private Firebase.Firestore.UnknownPropertyHandling <UnknownPropertyHandling>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::Firebase::Firestore::UnknownPropertyHandling UnknownPropertyHandling;
     // Field size check
-    static_assert(sizeof(::Firebase::Firestore::UnknownPropertyHandling) == 0x14);
+    static_assert(sizeof(::Firebase::Firestore::UnknownPropertyHandling) == 0x4);
+    // Padding between fields: UnknownPropertyHandling and: ConverterType
+    char __padding0[0x4] = {};
     // [DebuggerBrowsableAttribute] Offset: 0x5C7878
     // private System.Type <ConverterType>k__BackingField
     // Size: 0x8

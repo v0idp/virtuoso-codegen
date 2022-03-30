@@ -36,11 +36,13 @@ namespace Firebase::Auth {
     #endif
     #endif
     // Firebase.InitResult init_result
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::Firebase::InitResult init_result;
     // Field size check
-    static_assert(sizeof(::Firebase::InitResult) == 0x14);
+    static_assert(sizeof(::Firebase::InitResult) == 0x4);
+    // Padding between fields: init_result and: $$f__ref$1
+    char __padding0[0x4] = {};
     // Firebase.Auth.FirebaseAuth/Firebase.Auth.<GetAuth>c__AnonStorey1 <>f__ref$1
     // Size: 0x8
     // Offset: 0x18

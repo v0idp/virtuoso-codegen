@@ -28,11 +28,11 @@ namespace GlobalNamespace {
     public:
     public:
     // public OVRPlugin/Bool IsTriggering
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::OVRPlugin::Bool IsTriggering;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Bool) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Bool) == 0x4);
     // public System.Single ClosestDistance
     // Size: 0x4
     // Offset: 0x4

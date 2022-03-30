@@ -85,11 +85,11 @@ namespace Mono::Net::Security {
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     // public System.Security.Authentication.SslProtocols enabledProtocols
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::System::Security::Authentication::SslProtocols enabledProtocols;
     // Field size check
-    static_assert(sizeof(::System::Security::Authentication::SslProtocols) == 0x14);
+    static_assert(sizeof(::System::Security::Authentication::SslProtocols) == 0x4);
     // public System.Security.Cryptography.X509Certificates.X509CertificateCollection clientCertificates
     // Size: 0x8
     // Offset: 0x48

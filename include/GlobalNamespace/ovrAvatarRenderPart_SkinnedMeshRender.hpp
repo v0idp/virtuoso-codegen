@@ -40,11 +40,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::GlobalNamespace::ovrAvatarTransform) == 0x28);
     // public ovrAvatarVisibilityFlags visibilityMask
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::GlobalNamespace::ovrAvatarVisibilityFlags visibilityMask;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarVisibilityFlags) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarVisibilityFlags) == 0x4);
+    // Padding between fields: visibilityMask and: meshAssetID
+    char __padding1[0x4] = {};
     // public System.UInt64 meshAssetID
     // Size: 0x8
     // Offset: 0x30

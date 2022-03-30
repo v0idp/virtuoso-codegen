@@ -172,11 +172,11 @@ namespace GlobalNamespace {
     // Padding between fields: monoscopic and: colorGamut
     char __padding3[0x2] = {};
     // private OVRManager/ColorSpace _colorGamut
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::GlobalNamespace::OVRManager_ColorSpace colorGamut;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_ColorSpace) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_ColorSpace) == 0x4);
     // [RangeAttribute] Offset: 0x58C148
     // [TooltipAttribute] Offset: 0x58C148
     // public System.Single minRenderScale
@@ -229,11 +229,11 @@ namespace GlobalNamespace {
     // Padding between fields: enableMixedReality and: compositionMethod
     char __padding11[0x2] = {};
     // public OVRManager/CompositionMethod compositionMethod
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x54
     ::GlobalNamespace::OVRManager_CompositionMethod compositionMethod;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_CompositionMethod) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_CompositionMethod) == 0x4);
     // [TooltipAttribute] Offset: 0x58C2F4
     // public UnityEngine.LayerMask extraHiddenLayers
     // Size: 0x4
@@ -273,11 +273,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     // [TooltipAttribute] Offset: 0x58C470
     // public OVRManager/CameraDevice capturingCameraDevice
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x84
     ::GlobalNamespace::OVRManager_CameraDevice capturingCameraDevice;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_CameraDevice) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_CameraDevice) == 0x4);
     // [TooltipAttribute] Offset: 0x58C4BC
     // public System.Boolean flipCameraFrameHorizontally
     // Size: 0x1
@@ -354,11 +354,11 @@ namespace GlobalNamespace {
     char __padding28[0x3] = {};
     // [TooltipAttribute] Offset: 0x58C7B4
     // public OVRManager/DepthQuality depthQuality
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xB8
     ::GlobalNamespace::OVRManager_DepthQuality depthQuality;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_DepthQuality) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_DepthQuality) == 0x4);
     // [TooltipAttribute] Offset: 0x58C800
     // public System.Single dynamicLightingSmoothFactor
     // Size: 0x4
@@ -375,11 +375,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     // [TooltipAttribute] Offset: 0x58C898
     // public OVRManager/VirtualGreenScreenType virtualGreenScreenType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xC4
     ::GlobalNamespace::OVRManager_VirtualGreenScreenType virtualGreenScreenType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_VirtualGreenScreenType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_VirtualGreenScreenType) == 0x4);
     // [TooltipAttribute] Offset: 0x58C8E4
     // public System.Single virtualGreenScreenTopY
     // Size: 0x4
@@ -412,11 +412,13 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     // [TooltipAttribute] Offset: 0x58CA14
     // public OVRManager/MrcActivationMode mrcActivationMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xD8
     ::GlobalNamespace::OVRManager_MrcActivationMode mrcActivationMode;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_MrcActivationMode) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_MrcActivationMode) == 0x4);
+    // Padding between fields: mrcActivationMode and: instantiateMixedRealityCameraGameObject
+    char __padding37[0x4] = {};
     // public OVRManager/InstantiateMrcCameraDelegate instantiateMixedRealityCameraGameObject
     // Size: 0x8
     // Offset: 0xE0
@@ -435,11 +437,11 @@ namespace GlobalNamespace {
     // [HeaderAttribute] Offset: 0x58CAAC
     // [TooltipAttribute] Offset: 0x58CAAC
     // private OVRManager/TrackingOrigin _trackingOriginType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xEC
     ::GlobalNamespace::OVRManager_TrackingOrigin trackingOriginType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_TrackingOrigin) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_TrackingOrigin) == 0x4);
     // [TooltipAttribute] Offset: 0x58CB1C
     // public System.Boolean usePositionTracking
     // Size: 0x1

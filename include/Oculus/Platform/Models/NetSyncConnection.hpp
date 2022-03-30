@@ -49,11 +49,13 @@ namespace Oculus::Platform::Models {
     // Field size check
     static_assert(sizeof(int64_t) == 0x8);
     // public readonly Oculus.Platform.NetSyncDisconnectReason DisconnectReason
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::Oculus::Platform::NetSyncDisconnectReason DisconnectReason;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::NetSyncDisconnectReason) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::NetSyncDisconnectReason) == 0x4);
+    // Padding between fields: DisconnectReason and: SessionId
+    char __padding1[0x4] = {};
     // public readonly System.UInt64 SessionId
     // Size: 0x8
     // Offset: 0x20
@@ -61,11 +63,13 @@ namespace Oculus::Platform::Models {
     // Field size check
     static_assert(sizeof(uint64_t) == 0x8);
     // public readonly Oculus.Platform.NetSyncConnectionStatus Status
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::Oculus::Platform::NetSyncConnectionStatus Status;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::NetSyncConnectionStatus) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::NetSyncConnectionStatus) == 0x4);
+    // Padding between fields: Status and: ZoneId
+    char __padding3[0x4] = {};
     // public readonly System.String ZoneId
     // Size: 0x8
     // Offset: 0x30

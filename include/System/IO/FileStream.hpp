@@ -124,11 +124,11 @@ namespace System::IO {
     // Field size check
     static_assert(sizeof(int64_t) == 0x8);
     // private System.IO.FileAccess access
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::System::IO::FileAccess access;
     // Field size check
-    static_assert(sizeof(::System::IO::FileAccess) == 0x14);
+    static_assert(sizeof(::System::IO::FileAccess) == 0x4);
     // private System.Boolean owner
     // Size: 0x1
     // Offset: 0x54

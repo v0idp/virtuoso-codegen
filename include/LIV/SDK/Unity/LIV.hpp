@@ -215,11 +215,11 @@ namespace LIV::SDK::Unity {
     // Padding between fields: wasReady and: invalidate
     char __padding18[0x3] = {};
     // private LIV.SDK.Unity.INVALIDATION_FLAGS _invalidate
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x9C
     ::LIV::SDK::Unity::INVALIDATION_FLAGS invalidate;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::INVALIDATION_FLAGS) == 0x14);
+    static_assert(sizeof(::LIV::SDK::Unity::INVALIDATION_FLAGS) == 0x4);
     // private UnityEngine.Transform _stageCandidate
     // Size: 0x8
     // Offset: 0xA0

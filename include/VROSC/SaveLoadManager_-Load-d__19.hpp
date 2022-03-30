@@ -74,11 +74,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     // private VROSC.Error <returnError>5__2
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::VROSC::Error $returnError$5__2;
     // Field size check
-    static_assert(sizeof(::VROSC::Error) == 0x14);
+    static_assert(sizeof(::VROSC::Error) == 0x4);
     // private System.String <result>5__3
     // Size: 0x8
     // Offset: 0x48

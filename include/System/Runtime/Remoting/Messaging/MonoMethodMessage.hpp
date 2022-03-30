@@ -132,11 +132,13 @@ namespace System::Runtime::Remoting::Messaging {
     // Field size check
     static_assert(sizeof(::System::Runtime::Remoting::Messaging::AsyncResult*) == 0x8);
     // private System.Runtime.Remoting.Messaging.CallType call_type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::System::Runtime::Remoting::Messaging::CallType call_type;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Remoting::Messaging::CallType) == 0x14);
+    static_assert(sizeof(::System::Runtime::Remoting::Messaging::CallType) == 0x4);
+    // Padding between fields: call_type and: uri
+    char __padding8[0x4] = {};
     // private System.String uri
     // Size: 0x8
     // Offset: 0x58

@@ -35,18 +35,18 @@ namespace UnityEngine::Rendering {
     public:
     // [DebuggerBrowsableAttribute] Offset: 0x56C008
     // private UnityEngine.Rendering.VertexAttribute <attribute>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::UnityEngine::Rendering::VertexAttribute attribute;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Rendering::VertexAttribute) == 0x14);
+    static_assert(sizeof(::UnityEngine::Rendering::VertexAttribute) == 0x4);
     // [DebuggerBrowsableAttribute] Offset: 0x56C044
     // private UnityEngine.Rendering.VertexAttributeFormat <format>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::UnityEngine::Rendering::VertexAttributeFormat format;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Rendering::VertexAttributeFormat) == 0x14);
+    static_assert(sizeof(::UnityEngine::Rendering::VertexAttributeFormat) == 0x4);
     // [DebuggerBrowsableAttribute] Offset: 0x56C080
     // private System.Int32 <dimension>k__BackingField
     // Size: 0x4

@@ -103,11 +103,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     // private VROSC.Axis _axis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::VROSC::Axis axis;
     // Field size check
-    static_assert(sizeof(::VROSC::Axis) == 0x14);
+    static_assert(sizeof(::VROSC::Axis) == 0x4);
     // private UnityEngine.Color _xColor
     // Size: 0x10
     // Offset: 0x4C

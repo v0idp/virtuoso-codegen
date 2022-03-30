@@ -57,11 +57,11 @@ namespace Mono::Net::Security {
     // Field size check
     static_assert(sizeof(::Mono::Net::Security::MobileAuthenticatedStream*) == 0x8);
     // public Mono.Net.Security.MobileAuthenticatedStream/Mono.Net.Security.OperationType type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::Mono::Net::Security::MobileAuthenticatedStream::OperationType type;
     // Field size check
-    static_assert(sizeof(::Mono::Net::Security::MobileAuthenticatedStream::OperationType) == 0x14);
+    static_assert(sizeof(::Mono::Net::Security::MobileAuthenticatedStream::OperationType) == 0x4);
     // public Mono.Net.Security.AsyncProtocolRequest asyncRequest
     // Size: 0x8
     // Offset: 0x30

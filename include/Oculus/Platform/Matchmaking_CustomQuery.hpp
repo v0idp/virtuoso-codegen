@@ -59,11 +59,13 @@ namespace Oculus::Platform {
       // Field size check
       static_assert(sizeof(::StringW) == 0x8);
       // public Oculus.Platform.MatchmakingCriterionImportance importance
-      // Size: 0x14
+      // Size: 0x4
       // Offset: 0x8
       ::Oculus::Platform::MatchmakingCriterionImportance importance;
       // Field size check
-      static_assert(sizeof(::Oculus::Platform::MatchmakingCriterionImportance) == 0x14);
+      static_assert(sizeof(::Oculus::Platform::MatchmakingCriterionImportance) == 0x4);
+      // Padding between fields: importance and: parameters
+      char __padding1[0x4] = {};
       // public System.Collections.Generic.Dictionary`2<System.String,System.Object> parameters
       // Size: 0x8
       // Offset: 0x10

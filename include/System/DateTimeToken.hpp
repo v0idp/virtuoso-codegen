@@ -30,17 +30,17 @@ namespace System {
     public:
     public:
     // System.DateTimeParse/System.DTT dtt
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::System::DateTimeParse::DTT dtt;
     // Field size check
-    static_assert(sizeof(::System::DateTimeParse::DTT) == 0x14);
+    static_assert(sizeof(::System::DateTimeParse::DTT) == 0x4);
     // System.TokenType suffix
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::System::TokenType suffix;
     // Field size check
-    static_assert(sizeof(::System::TokenType) == 0x14);
+    static_assert(sizeof(::System::TokenType) == 0x4);
     // System.Int32 num
     // Size: 0x4
     // Offset: 0x8

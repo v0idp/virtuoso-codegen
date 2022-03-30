@@ -36,11 +36,13 @@ namespace VROSC {
     #endif
     #endif
     // public VROSC.Error Id
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::Error Id;
     // Field size check
-    static_assert(sizeof(::VROSC::Error) == 0x14);
+    static_assert(sizeof(::VROSC::Error) == 0x4);
+    // Padding between fields: Id and: Message
+    char __padding0[0x4] = {};
     // public System.String Message
     // Size: 0x8
     // Offset: 0x18

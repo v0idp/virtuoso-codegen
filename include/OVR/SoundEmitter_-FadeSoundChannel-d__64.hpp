@@ -58,11 +58,11 @@ namespace OVR {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public OVR.Fade fadeType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x24
     ::OVR::Fade fadeType;
     // Field size check
-    static_assert(sizeof(::OVR::Fade) == 0x14);
+    static_assert(sizeof(::OVR::Fade) == 0x4);
     // public System.Single defaultVolume
     // Size: 0x4
     // Offset: 0x28

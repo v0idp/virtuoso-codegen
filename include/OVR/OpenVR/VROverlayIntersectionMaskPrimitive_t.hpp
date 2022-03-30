@@ -29,11 +29,11 @@ namespace OVR::OpenVR {
     public:
     public:
     // public OVR.OpenVR.EVROverlayIntersectionMaskPrimitiveType m_nPrimitiveType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::OVR::OpenVR::EVROverlayIntersectionMaskPrimitiveType m_nPrimitiveType;
     // Field size check
-    static_assert(sizeof(::OVR::OpenVR::EVROverlayIntersectionMaskPrimitiveType) == 0x14);
+    static_assert(sizeof(::OVR::OpenVR::EVROverlayIntersectionMaskPrimitiveType) == 0x4);
     // public OVR.OpenVR.VROverlayIntersectionMaskPrimitive_Data_t m_Primitive
     // Size: 0xFFFFFFFF
     // Offset: 0x4

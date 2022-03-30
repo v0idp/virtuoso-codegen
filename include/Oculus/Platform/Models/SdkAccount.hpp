@@ -40,11 +40,13 @@ namespace Oculus::Platform::Models {
     #endif
     #endif
     // public readonly Oculus.Platform.SdkAccountType AccountType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::Oculus::Platform::SdkAccountType AccountType;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::SdkAccountType) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::SdkAccountType) == 0x4);
+    // Padding between fields: AccountType and: UserId
+    char __padding0[0x4] = {};
     // public readonly System.UInt64 UserId
     // Size: 0x8
     // Offset: 0x18

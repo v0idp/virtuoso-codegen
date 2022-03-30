@@ -41,11 +41,11 @@ namespace TMPro {
     #endif
     #endif
     // public TMPro.Compute_DistanceTransform_EventTypes EventType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::TMPro::Compute_DistanceTransform_EventTypes EventType;
     // Field size check
-    static_assert(sizeof(::TMPro::Compute_DistanceTransform_EventTypes) == 0x14);
+    static_assert(sizeof(::TMPro::Compute_DistanceTransform_EventTypes) == 0x4);
     // public System.Single ProgressPercentage
     // Size: 0x4
     // Offset: 0x14

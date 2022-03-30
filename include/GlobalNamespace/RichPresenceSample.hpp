@@ -123,11 +123,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::System::DateTime) == 0x8);
     // public Oculus.Platform.RichPresenceExtraContext ExtraContext
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::Oculus::Platform::RichPresenceExtraContext ExtraContext;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::RichPresenceExtraContext) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::RichPresenceExtraContext) == 0x4);
+    // Padding between fields: ExtraContext and: InVRConsole
+    char __padding8[0x4] = {};
     // public UnityEngine.UI.Text InVRConsole
     // Size: 0x8
     // Offset: 0x50

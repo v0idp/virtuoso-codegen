@@ -71,41 +71,41 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     #endif
     #endif
     // System.Runtime.Serialization.Formatters.Binary.InternalParseTypeE PRparseTypeEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Runtime::Serialization::Formatters::Binary::InternalParseTypeE PRparseTypeEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalParseTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalParseTypeE) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.InternalObjectTypeE PRobjectTypeEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE PRobjectTypeEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.InternalArrayTypeE PRarrayTypeEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE PRarrayTypeEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.InternalMemberTypeE PRmemberTypeEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE PRmemberTypeEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.InternalMemberValueE PRmemberValueEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE PRmemberValueEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.InternalObjectPositionE PRobjectPositionEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x24
     ::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE PRobjectPositionEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE) == 0x4);
     // System.String PRname
     // Size: 0x8
     // Offset: 0x28
@@ -137,11 +137,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::Type*) == 0x8);
     // System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE PRdtTypeCode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE PRdtTypeCode;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x4);
     // System.Boolean PRisEnum
     // Size: 0x1
     // Offset: 0x54
@@ -183,11 +183,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Padding between fields: PRisArrayVariant and: PRarrayElementTypeCode
     char __padding17[0x3] = {};
     // System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE PRarrayElementTypeCode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x7C
     ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE PRarrayElementTypeCode;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x4);
     // System.Int32 PRrank
     // Size: 0x4
     // Offset: 0x80

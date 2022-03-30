@@ -69,11 +69,11 @@ namespace System {
     // Padding between fields: m_day and: m_dayOfWeek
     char __padding3[0x1] = {};
     // private System.DayOfWeek m_dayOfWeek
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xC
     ::System::DayOfWeek m_dayOfWeek;
     // Field size check
-    static_assert(sizeof(::System::DayOfWeek) == 0x14);
+    static_assert(sizeof(::System::DayOfWeek) == 0x4);
     // private System.Boolean m_isFixedDateRule
     // Size: 0x1
     // Offset: 0x10

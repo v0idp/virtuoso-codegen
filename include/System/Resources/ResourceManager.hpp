@@ -135,11 +135,11 @@ namespace System::Resources {
     char __padding6[0x2] = {};
     // [OptionalFieldAttribute] Offset: 0x57F0C0
     // private System.Resources.UltimateResourceFallbackLocation _fallbackLoc
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::System::Resources::UltimateResourceFallbackLocation fallbackLoc;
     // Field size check
-    static_assert(sizeof(::System::Resources::UltimateResourceFallbackLocation) == 0x14);
+    static_assert(sizeof(::System::Resources::UltimateResourceFallbackLocation) == 0x4);
     // [OptionalFieldAttribute] Offset: 0x57F0D0
     // private System.Reflection.Assembly _callingAssembly
     // Size: 0x8

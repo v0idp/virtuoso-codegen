@@ -64,11 +64,11 @@ namespace VROSC::UI {
     // Field size check
     static_assert(sizeof(::TMPro::TMP_FontAsset*) == 0x8);
     // private TMPro.FontStyles _style
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::TMPro::FontStyles style;
     // Field size check
-    static_assert(sizeof(::TMPro::FontStyles) == 0x14);
+    static_assert(sizeof(::TMPro::FontStyles) == 0x4);
     // private System.Boolean _autoSize
     // Size: 0x1
     // Offset: 0x34

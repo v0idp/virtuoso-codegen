@@ -51,11 +51,11 @@ namespace DG::Tweening::Core {
     // Field size check
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     // public readonly DG.Tweening.LinkBehaviour behaviour
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::DG::Tweening::LinkBehaviour behaviour;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::LinkBehaviour) == 0x14);
+    static_assert(sizeof(::DG::Tweening::LinkBehaviour) == 0x4);
     // public System.Boolean lastSeenActive
     // Size: 0x1
     // Offset: 0x1C

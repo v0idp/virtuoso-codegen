@@ -56,11 +56,13 @@ namespace System::Net {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // private System.Net.Sockets.AddressFamily m_Family
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::System::Net::Sockets::AddressFamily m_Family;
     // Field size check
-    static_assert(sizeof(::System::Net::Sockets::AddressFamily) == 0x14);
+    static_assert(sizeof(::System::Net::Sockets::AddressFamily) == 0x4);
+    // Padding between fields: m_Family and: m_Numbers
+    char __padding2[0x4] = {};
     // private System.UInt16[] m_Numbers
     // Size: 0x8
     // Offset: 0x28

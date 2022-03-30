@@ -41,17 +41,17 @@ namespace System {
     // Field size check
     static_assert(sizeof(::System::Guid) == 0x10);
     // System.Guid/System.GuidParseThrowStyle throwStyle
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Guid::GuidParseThrowStyle throwStyle;
     // Field size check
-    static_assert(sizeof(::System::Guid::GuidParseThrowStyle) == 0x14);
+    static_assert(sizeof(::System::Guid::GuidParseThrowStyle) == 0x4);
     // System.Guid/System.ParseFailureKind m_failure
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::System::Guid::ParseFailureKind m_failure;
     // Field size check
-    static_assert(sizeof(::System::Guid::ParseFailureKind) == 0x14);
+    static_assert(sizeof(::System::Guid::ParseFailureKind) == 0x4);
     // System.String m_failureMessageID
     // Size: 0x8
     // Offset: 0x18

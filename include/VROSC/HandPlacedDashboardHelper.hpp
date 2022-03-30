@@ -49,11 +49,13 @@ namespace VROSC {
     #endif
     // [HeaderAttribute] Offset: 0x672240
     // private VROSC.DashboardSpawnPoint/VROSC.TriggerCondition _condition
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::DashboardSpawnPoint::TriggerCondition condition;
     // Field size check
-    static_assert(sizeof(::VROSC::DashboardSpawnPoint::TriggerCondition) == 0x14);
+    static_assert(sizeof(::VROSC::DashboardSpawnPoint::TriggerCondition) == 0x4);
+    // Padding between fields: condition and: leftHand
+    char __padding0[0x4] = {};
     // private VROSC.DashboardSpawnPoint _leftHand
     // Size: 0x8
     // Offset: 0x20

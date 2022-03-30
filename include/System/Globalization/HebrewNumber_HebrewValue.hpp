@@ -35,11 +35,11 @@ namespace System::Globalization {
     #endif
     #endif
     // System.Globalization.HebrewNumber/System.Globalization.HebrewToken token
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Globalization::HebrewNumber::HebrewToken token;
     // Field size check
-    static_assert(sizeof(::System::Globalization::HebrewNumber::HebrewToken) == 0x14);
+    static_assert(sizeof(::System::Globalization::HebrewNumber::HebrewToken) == 0x4);
     // System.Int32 value
     // Size: 0x4
     // Offset: 0x14

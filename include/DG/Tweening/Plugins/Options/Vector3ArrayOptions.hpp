@@ -31,11 +31,11 @@ namespace DG::Tweening::Plugins::Options {
     public:
     public:
     // public DG.Tweening.AxisConstraint axisConstraint
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::DG::Tweening::AxisConstraint axisConstraint;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::AxisConstraint) == 0x14);
+    static_assert(sizeof(::DG::Tweening::AxisConstraint) == 0x4);
     // public System.Boolean snapping
     // Size: 0x1
     // Offset: 0x4

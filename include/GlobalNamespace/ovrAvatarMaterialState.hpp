@@ -41,11 +41,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector4) == 0x10);
     // public ovrAvatarMaterialMaskType baseMaskType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::GlobalNamespace::ovrAvatarMaterialMaskType baseMaskType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialMaskType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialMaskType) == 0x4);
     // public UnityEngine.Vector4 baseMaskParameters
     // Size: 0x10
     // Offset: 0x14
@@ -59,11 +59,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector4) == 0x10);
     // public ovrAvatarMaterialLayerSampleMode sampleMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode sampleMode;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialLayerSampleMode) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialLayerSampleMode) == 0x4);
     // public System.UInt64 alphaMaskTextureID
     // Size: 0x8
     // Offset: 0x38

@@ -42,11 +42,11 @@ namespace UnityEngine::Rendering {
     public:
     public:
     // private UnityEngine.Rendering.BuiltinRenderTextureType m_Type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::UnityEngine::Rendering::BuiltinRenderTextureType m_Type;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Rendering::BuiltinRenderTextureType) == 0x14);
+    static_assert(sizeof(::UnityEngine::Rendering::BuiltinRenderTextureType) == 0x4);
     // private System.Int32 m_NameID
     // Size: 0x4
     // Offset: 0x4
@@ -74,11 +74,11 @@ namespace UnityEngine::Rendering {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private UnityEngine.CubemapFace m_CubeFace
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::UnityEngine::CubemapFace m_CubeFace;
     // Field size check
-    static_assert(sizeof(::UnityEngine::CubemapFace) == 0x14);
+    static_assert(sizeof(::UnityEngine::CubemapFace) == 0x4);
     // private System.Int32 m_DepthSlice
     // Size: 0x4
     // Offset: 0x20

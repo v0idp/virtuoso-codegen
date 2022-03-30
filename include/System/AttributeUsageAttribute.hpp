@@ -42,11 +42,11 @@ namespace System {
     #endif
     #endif
     // System.AttributeTargets m_attributeTarget
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::AttributeTargets m_attributeTarget;
     // Field size check
-    static_assert(sizeof(::System::AttributeTargets) == 0x14);
+    static_assert(sizeof(::System::AttributeTargets) == 0x4);
     // System.Boolean m_allowMultiple
     // Size: 0x1
     // Offset: 0x14

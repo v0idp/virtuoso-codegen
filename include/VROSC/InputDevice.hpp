@@ -178,11 +178,13 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // private VROSC.HandType <HandType>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x78
     ::VROSC::HandType HandType;
     // Field size check
-    static_assert(sizeof(::VROSC::HandType) == 0x14);
+    static_assert(sizeof(::VROSC::HandType) == 0x4);
+    // Padding between fields: HandType and: TouchPointTransform
+    char __padding13[0x4] = {};
     // private UnityEngine.Transform <TouchPointTransform>k__BackingField
     // Size: 0x8
     // Offset: 0x80

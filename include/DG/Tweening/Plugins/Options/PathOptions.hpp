@@ -45,29 +45,29 @@ namespace DG::Tweening::Plugins::Options {
     public:
     public:
     // public DG.Tweening.PathMode mode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::DG::Tweening::PathMode mode;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::PathMode) == 0x14);
+    static_assert(sizeof(::DG::Tweening::PathMode) == 0x4);
     // public DG.Tweening.Plugins.Options.OrientType orientType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::DG::Tweening::Plugins::Options::OrientType orientType;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::Plugins::Options::OrientType) == 0x14);
+    static_assert(sizeof(::DG::Tweening::Plugins::Options::OrientType) == 0x4);
     // public DG.Tweening.AxisConstraint lockPositionAxis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x8
     ::DG::Tweening::AxisConstraint lockPositionAxis;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::AxisConstraint) == 0x14);
+    static_assert(sizeof(::DG::Tweening::AxisConstraint) == 0x4);
     // public DG.Tweening.AxisConstraint lockRotationAxis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xC
     ::DG::Tweening::AxisConstraint lockRotationAxis;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::AxisConstraint) == 0x14);
+    static_assert(sizeof(::DG::Tweening::AxisConstraint) == 0x4);
     // public System.Boolean isClosedPath
     // Size: 0x1
     // Offset: 0x10

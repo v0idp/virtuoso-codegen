@@ -344,11 +344,11 @@ namespace System::Globalization {
     char __padding39[0x3] = {};
     // [OptionalFieldAttribute] Offset: 0x57F558
     // System.Globalization.DateTimeFormatFlags formatFlags
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x144
     ::System::Globalization::DateTimeFormatFlags formatFlags;
     // Field size check
-    static_assert(sizeof(::System::Globalization::DateTimeFormatFlags) == 0x14);
+    static_assert(sizeof(::System::Globalization::DateTimeFormatFlags) == 0x4);
     // [OptionalFieldAttribute] Offset: 0x57F590
     // private System.Int32 CultureID
     // Size: 0x4

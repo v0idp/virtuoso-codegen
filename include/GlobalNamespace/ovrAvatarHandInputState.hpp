@@ -38,17 +38,17 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::GlobalNamespace::ovrAvatarTransform) == 0x28);
     // public ovrAvatarButton buttonMask
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::GlobalNamespace::ovrAvatarButton buttonMask;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarButton) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarButton) == 0x4);
     // public ovrAvatarTouch touchMask
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x2C
     ::GlobalNamespace::ovrAvatarTouch touchMask;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarTouch) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarTouch) == 0x4);
     // public System.Single joystickX
     // Size: 0x4
     // Offset: 0x30

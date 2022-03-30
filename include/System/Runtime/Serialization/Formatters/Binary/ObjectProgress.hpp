@@ -72,11 +72,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum expectedType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum expectedType;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum) == 0x4);
+    // Padding between fields: expectedType and: expectedTypeInformation
+    char __padding2[0x4] = {};
     // System.Object expectedTypeInformation
     // Size: 0x8
     // Offset: 0x20
@@ -90,23 +92,25 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // System.Runtime.Serialization.Formatters.Binary.InternalObjectTypeE objectTypeEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE objectTypeEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.InternalMemberTypeE memberTypeEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE memberTypeEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.InternalMemberValueE memberValueEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE memberValueEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE) == 0x4);
+    // Padding between fields: memberValueEnum and: dtType
+    char __padding7[0x4] = {};
     // System.Type dtType
     // Size: 0x8
     // Offset: 0x40
@@ -120,11 +124,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum binaryTypeEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4C
     ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum binaryTypeEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum) == 0x4);
     // System.Object typeInformation
     // Size: 0x8
     // Offset: 0x50

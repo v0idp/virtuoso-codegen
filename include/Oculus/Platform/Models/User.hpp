@@ -101,11 +101,13 @@ namespace Oculus::Platform::Models {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // public readonly Oculus.Platform.UserPresenceStatus PresenceStatus
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x60
     ::Oculus::Platform::UserPresenceStatus PresenceStatus;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::UserPresenceStatus) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::UserPresenceStatus) == 0x4);
+    // Padding between fields: PresenceStatus and: SmallImageUrl
+    char __padding10[0x4] = {};
     // public readonly System.String SmallImageUrl
     // Size: 0x8
     // Offset: 0x68

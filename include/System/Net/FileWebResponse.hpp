@@ -82,11 +82,13 @@ namespace System::Net {
     // Field size check
     static_assert(sizeof(int64_t) == 0x8);
     // private System.IO.FileAccess m_fileAccess
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::System::IO::FileAccess m_fileAccess;
     // Field size check
-    static_assert(sizeof(::System::IO::FileAccess) == 0x14);
+    static_assert(sizeof(::System::IO::FileAccess) == 0x4);
+    // Padding between fields: m_fileAccess and: m_headers
+    char __padding2[0x4] = {};
     // private System.Net.WebHeaderCollection m_headers
     // Size: 0x8
     // Offset: 0x30

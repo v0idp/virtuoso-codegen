@@ -74,11 +74,11 @@ namespace System::Security::Principal {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // private System.Security.Principal.WindowsAccountType _account
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x88
     ::System::Security::Principal::WindowsAccountType account;
     // Field size check
-    static_assert(sizeof(::System::Security::Principal::WindowsAccountType) == 0x14);
+    static_assert(sizeof(::System::Security::Principal::WindowsAccountType) == 0x4);
     // private System.Boolean _authenticated
     // Size: 0x1
     // Offset: 0x8C

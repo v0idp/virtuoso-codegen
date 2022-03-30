@@ -54,11 +54,11 @@ namespace System::Globalization {
     // Field size check
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     // private readonly System.Globalization.CompareOptions options
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::System::Globalization::CompareOptions options;
     // Field size check
-    static_assert(sizeof(::System::Globalization::CompareOptions) == 0x14);
+    static_assert(sizeof(::System::Globalization::CompareOptions) == 0x4);
     // private readonly System.Int32 lcid
     // Size: 0x4
     // Offset: 0x24

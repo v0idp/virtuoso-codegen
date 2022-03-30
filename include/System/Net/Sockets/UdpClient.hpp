@@ -77,11 +77,11 @@ namespace System::Net::Sockets {
     // Field size check
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     // private System.Net.Sockets.AddressFamily m_Family
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::System::Net::Sockets::AddressFamily m_Family;
     // Field size check
-    static_assert(sizeof(::System::Net::Sockets::AddressFamily) == 0x14);
+    static_assert(sizeof(::System::Net::Sockets::AddressFamily) == 0x4);
     // private System.Boolean m_CleanedUp
     // Size: 0x1
     // Offset: 0x2C

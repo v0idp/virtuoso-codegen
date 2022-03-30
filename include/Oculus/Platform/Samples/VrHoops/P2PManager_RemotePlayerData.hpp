@@ -50,11 +50,13 @@ namespace Oculus::Platform::Samples::VrHoops {
     #endif
     #endif
     // public Oculus.Platform.PeerConnectionState state
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::Oculus::Platform::PeerConnectionState state;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x4);
+    // Padding between fields: state and: player
+    char __padding0[0x4] = {};
     // public Oculus.Platform.Samples.VrHoops.RemotePlayer player
     // Size: 0x8
     // Offset: 0x18

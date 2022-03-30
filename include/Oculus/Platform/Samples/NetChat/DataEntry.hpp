@@ -71,11 +71,13 @@ namespace Oculus::Platform::Samples::NetChat {
     // Field size check
     static_assert(sizeof(::UnityEngine::UI::Text*) == 0x8);
     // private Oculus.Platform.Samples.NetChat.states currentState
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::Oculus::Platform::Samples::NetChat::states currentState;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::Samples::NetChat::states) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::Samples::NetChat::states) == 0x4);
+    // Padding between fields: currentState and: localUser
+    char __padding1[0x4] = {};
     // private Oculus.Platform.Models.User localUser
     // Size: 0x8
     // Offset: 0x28

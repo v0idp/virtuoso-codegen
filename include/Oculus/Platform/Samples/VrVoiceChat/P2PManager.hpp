@@ -67,11 +67,11 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // Field size check
     static_assert(sizeof(uint64_t) == 0x8);
     // private Oculus.Platform.PeerConnectionState m_state
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::Oculus::Platform::PeerConnectionState m_state;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x4);
     // private System.Single m_timeForNextUpdate
     // Size: 0x4
     // Offset: 0x1C

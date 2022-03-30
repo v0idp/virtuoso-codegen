@@ -77,18 +77,20 @@ namespace Facebook::WitAi::CallbackHandlers {
     char __padding2[0x3] = {};
     // [TooltipAttribute] Offset: 0x5B21B4
     // public Facebook.WitAi.CallbackHandlers.MatchMethod matchMethod
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x24
     ::Facebook::WitAi::CallbackHandlers::MatchMethod matchMethod;
     // Field size check
-    static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::MatchMethod) == 0x14);
+    static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::MatchMethod) == 0x4);
     // [TooltipAttribute] Offset: 0x5B21EC
     // public Facebook.WitAi.CallbackHandlers.ComparisonMethod comparisonMethod
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::Facebook::WitAi::CallbackHandlers::ComparisonMethod comparisonMethod;
     // Field size check
-    static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::ComparisonMethod) == 0x14);
+    static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::ComparisonMethod) == 0x4);
+    // Padding between fields: comparisonMethod and: matchValue
+    char __padding4[0x4] = {};
     // [TooltipAttribute] Offset: 0x5B2224
     // public System.String matchValue
     // Size: 0x8

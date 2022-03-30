@@ -116,17 +116,17 @@ namespace System::Net {
     #endif
     #endif
     // private System.Net.Security.AuthenticationLevel m_AuthenticationLevel
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::System::Net::Security::AuthenticationLevel m_AuthenticationLevel;
     // Field size check
-    static_assert(sizeof(::System::Net::Security::AuthenticationLevel) == 0x14);
+    static_assert(sizeof(::System::Net::Security::AuthenticationLevel) == 0x4);
     // private System.Security.Principal.TokenImpersonationLevel m_ImpersonationLevel
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::System::Security::Principal::TokenImpersonationLevel m_ImpersonationLevel;
     // Field size check
-    static_assert(sizeof(::System::Security::Principal::TokenImpersonationLevel) == 0x14);
+    static_assert(sizeof(::System::Security::Principal::TokenImpersonationLevel) == 0x4);
     // private System.Net.Cache.RequestCachePolicy m_CachePolicy
     // Size: 0x8
     // Offset: 0x20

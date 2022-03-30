@@ -46,23 +46,23 @@ namespace System::Security::Cryptography {
     #endif
     #endif
     // private System.Security.Cryptography.CipherMode m_cipherMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Security::Cryptography::CipherMode m_cipherMode;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::CipherMode) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::CipherMode) == 0x4);
     // private System.Security.Cryptography.PaddingMode m_paddingValue
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::System::Security::Cryptography::PaddingMode m_paddingValue;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::PaddingMode) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::PaddingMode) == 0x4);
     // private System.Security.Cryptography.RijndaelManagedTransformMode m_transformMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::System::Security::Cryptography::RijndaelManagedTransformMode m_transformMode;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::RijndaelManagedTransformMode) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::RijndaelManagedTransformMode) == 0x4);
     // private System.Int32 m_blockSizeBits
     // Size: 0x4
     // Offset: 0x1C

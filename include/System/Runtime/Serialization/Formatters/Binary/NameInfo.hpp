@@ -66,11 +66,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(int64_t) == 0x8);
     // System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE NIprimitiveTypeEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE NIprimitiveTypeEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x4);
+    // Padding between fields: NIprimitiveTypeEnum and: NItype
+    char __padding3[0x4] = {};
     // System.Type NItype
     // Size: 0x8
     // Offset: 0x30
@@ -116,11 +118,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Padding between fields: NIisParentTypeOnObject and: NIarrayEnum
     char __padding10[0x2] = {};
     // System.Runtime.Serialization.Formatters.Binary.InternalArrayTypeE NIarrayEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE NIarrayEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE) == 0x4);
     // private System.Boolean NIsealedStatusChecked
     // Size: 0x1
     // Offset: 0x44

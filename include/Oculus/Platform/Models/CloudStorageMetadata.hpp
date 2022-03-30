@@ -79,11 +79,13 @@ namespace Oculus::Platform::Models {
     // Field size check
     static_assert(sizeof(uint64_t) == 0x8);
     // public readonly Oculus.Platform.CloudStorageDataStatus Status
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::Oculus::Platform::CloudStorageDataStatus Status;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::CloudStorageDataStatus) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::CloudStorageDataStatus) == 0x4);
+    // Padding between fields: Status and: VersionHandle
+    char __padding6[0x4] = {};
     // public readonly System.String VersionHandle
     // Size: 0x8
     // Offset: 0x48

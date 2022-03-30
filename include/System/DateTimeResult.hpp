@@ -90,11 +90,11 @@ namespace System {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // System.ParseFlags flags
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x24
     ::System::ParseFlags flags;
     // Field size check
-    static_assert(sizeof(::System::ParseFlags) == 0x14);
+    static_assert(sizeof(::System::ParseFlags) == 0x4);
     // System.TimeSpan timeZoneOffset
     // Size: 0x8
     // Offset: 0x28
@@ -114,11 +114,13 @@ namespace System {
     // Field size check
     static_assert(sizeof(::System::DateTime) == 0x8);
     // System.ParseFailureKind failure
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::System::ParseFailureKind failure;
     // Field size check
-    static_assert(sizeof(::System::ParseFailureKind) == 0x14);
+    static_assert(sizeof(::System::ParseFailureKind) == 0x4);
+    // Padding between fields: failure and: failureMessageID
+    char __padding12[0x4] = {};
     // System.String failureMessageID
     // Size: 0x8
     // Offset: 0x48

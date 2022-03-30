@@ -54,34 +54,36 @@ namespace OggVorbisEncoder::Setup::Templates::Stereo44::BookBlocks::Chapter9 {
     ::ArrayW<uint8_t> LengthList;
     // Field size check
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
-    struct __InternalQuantData {
-          char __quant_padding[0x4] = {};
-          // private readonly System.Int32 <QuantMin>k__BackingField
-          // Size: 0x4
-          // Offset: 0x24
-          int QuantMin;
-          // private readonly System.Int32 <QuantDelta>k__BackingField
-          // Size: 0x4
-          // Offset: 0x28
-          int QuantDelta;
-          // private readonly System.Int32 <Quant>k__BackingField
-          // Size: 0x4
-          // Offset: 0x2C
-          int Quant;
-          // private readonly System.Int32 <QuantSequenceP>k__BackingField
-          // Size: 0x4
-          // Offset: 0x30
-          int QuantSequenceP;
-    };
-    union {
-      // private readonly OggVorbisEncoder.Setup.CodeBookMapType <MapType>k__BackingField
-      // Size: 0x14
-      // Offset: 0x20
-      ::OggVorbisEncoder::Setup::CodeBookMapType MapType;
-      static_assert(sizeof(::OggVorbisEncoder::Setup::CodeBookMapType) == 0x14);
-      __InternalQuantData data;
-      static_assert(sizeof(__InternalQuantData) == 0x14);
-    };
+    // private readonly OggVorbisEncoder.Setup.CodeBookMapType <MapType>k__BackingField
+    // Size: 0x4
+    // Offset: 0x20
+    ::OggVorbisEncoder::Setup::CodeBookMapType MapType;
+    // Field size check
+    static_assert(sizeof(::OggVorbisEncoder::Setup::CodeBookMapType) == 0x4);
+    // private readonly System.Int32 <QuantMin>k__BackingField
+    // Size: 0x4
+    // Offset: 0x24
+    int QuantMin;
+    // Field size check
+    static_assert(sizeof(int) == 0x4);
+    // private readonly System.Int32 <QuantDelta>k__BackingField
+    // Size: 0x4
+    // Offset: 0x28
+    int QuantDelta;
+    // Field size check
+    static_assert(sizeof(int) == 0x4);
+    // private readonly System.Int32 <Quant>k__BackingField
+    // Size: 0x4
+    // Offset: 0x2C
+    int Quant;
+    // Field size check
+    static_assert(sizeof(int) == 0x4);
+    // private readonly System.Int32 <QuantSequenceP>k__BackingField
+    // Size: 0x4
+    // Offset: 0x30
+    int QuantSequenceP;
+    // Field size check
+    static_assert(sizeof(int) == 0x4);
     // Padding between fields: QuantSequenceP and: QuantList
     char __padding6[0x4] = {};
     // private readonly System.Int32[] <QuantList>k__BackingField

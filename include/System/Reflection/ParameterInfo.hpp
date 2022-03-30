@@ -109,11 +109,11 @@ namespace System::Reflection {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // protected System.Reflection.ParameterAttributes AttrsImpl
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::System::Reflection::ParameterAttributes AttrsImpl;
     // Field size check
-    static_assert(sizeof(::System::Reflection::ParameterAttributes) == 0x14);
+    static_assert(sizeof(::System::Reflection::ParameterAttributes) == 0x4);
     // System.Runtime.InteropServices.MarshalAsAttribute marshalAs
     // Size: 0x8
     // Offset: 0x38

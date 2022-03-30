@@ -47,11 +47,13 @@ namespace Oculus::Platform::Models {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // public readonly Oculus.Platform.ServiceProvider ServiceProvider
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::Oculus::Platform::ServiceProvider ServiceProvider;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::ServiceProvider) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::ServiceProvider) == 0x4);
+    // Padding between fields: ServiceProvider and: UserId
+    char __padding1[0x4] = {};
     // public readonly System.String UserId
     // Size: 0x8
     // Offset: 0x20

@@ -52,11 +52,13 @@ namespace GlobalNamespace {
     #endif
     #endif
     // public UnityEngine.KeyCode GridKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::UnityEngine::KeyCode GridKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
+    // Padding between fields: GridKey and: CubeGrid
+    char __padding0[0x4] = {};
     // private UnityEngine.GameObject CubeGrid
     // Size: 0x8
     // Offset: 0x20

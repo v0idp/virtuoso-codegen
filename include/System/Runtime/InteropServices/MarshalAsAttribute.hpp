@@ -75,23 +75,23 @@ namespace System::Runtime::InteropServices {
     // Field size check
     static_assert(sizeof(::System::Type*) == 0x8);
     // private System.Runtime.InteropServices.UnmanagedType utype
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::System::Runtime::InteropServices::UnmanagedType utype;
     // Field size check
-    static_assert(sizeof(::System::Runtime::InteropServices::UnmanagedType) == 0x14);
+    static_assert(sizeof(::System::Runtime::InteropServices::UnmanagedType) == 0x4);
     // public System.Runtime.InteropServices.UnmanagedType ArraySubType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::System::Runtime::InteropServices::UnmanagedType ArraySubType;
     // Field size check
-    static_assert(sizeof(::System::Runtime::InteropServices::UnmanagedType) == 0x14);
+    static_assert(sizeof(::System::Runtime::InteropServices::UnmanagedType) == 0x4);
     // public System.Runtime.InteropServices.VarEnum SafeArraySubType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::System::Runtime::InteropServices::VarEnum SafeArraySubType;
     // Field size check
-    static_assert(sizeof(::System::Runtime::InteropServices::VarEnum) == 0x14);
+    static_assert(sizeof(::System::Runtime::InteropServices::VarEnum) == 0x4);
     // public System.Int32 SizeConst
     // Size: 0x4
     // Offset: 0x3C

@@ -89,11 +89,11 @@ namespace GlobalNamespace {
     // Padding between fields: dynamicCullingMask and: compositionMethod
     char __padding3[0x3] = {};
     // public OVRManager/CompositionMethod compositionMethod
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::GlobalNamespace::OVRManager_CompositionMethod compositionMethod;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_CompositionMethod) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_CompositionMethod) == 0x4);
     // public UnityEngine.Color externalCompositionBackdropColorRift
     // Size: 0x10
     // Offset: 0x2C
@@ -107,11 +107,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     // public OVRManager/CameraDevice capturingCameraDevice
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4C
     ::GlobalNamespace::OVRManager_CameraDevice capturingCameraDevice;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_CameraDevice) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_CameraDevice) == 0x4);
     // public System.Boolean flipCameraFrameHorizontally
     // Size: 0x1
     // Offset: 0x50
@@ -177,11 +177,11 @@ namespace GlobalNamespace {
     // Padding between fields: useDynamicLighting and: depthQuality
     char __padding17[0x3] = {};
     // public OVRManager/DepthQuality depthQuality
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x80
     ::GlobalNamespace::OVRManager_DepthQuality depthQuality;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_DepthQuality) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_DepthQuality) == 0x4);
     // public System.Single dynamicLightingSmoothFactor
     // Size: 0x4
     // Offset: 0x84
@@ -195,11 +195,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public OVRManager/VirtualGreenScreenType virtualGreenScreenType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x8C
     ::GlobalNamespace::OVRManager_VirtualGreenScreenType virtualGreenScreenType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_VirtualGreenScreenType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_VirtualGreenScreenType) == 0x4);
     // public System.Single virtualGreenScreenTopY
     // Size: 0x4
     // Offset: 0x90
@@ -227,11 +227,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public OVRManager/MrcActivationMode mrcActivationMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xA0
     ::GlobalNamespace::OVRManager_MrcActivationMode mrcActivationMode;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRManager_MrcActivationMode) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRManager_MrcActivationMode) == 0x4);
+    // Padding between fields: mrcActivationMode and: instantiateMixedRealityCameraGameObject
+    char __padding26[0x4] = {};
     // private OVRManager/InstantiateMrcCameraDelegate <OVRMixedRealityCaptureConfiguration.instantiateMixedRealityCameraGameObject>k__BackingField
     // Size: 0x8
     // Offset: 0xA8

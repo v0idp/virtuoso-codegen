@@ -52,11 +52,11 @@ namespace VROSC {
     #endif
     #endif
     // private VROSC.Axis _axis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x78
     ::VROSC::Axis axis;
     // Field size check
-    static_assert(sizeof(::VROSC::Axis) == 0x14);
+    static_assert(sizeof(::VROSC::Axis) == 0x4);
     // private System.Single _width
     // Size: 0x4
     // Offset: 0x7C

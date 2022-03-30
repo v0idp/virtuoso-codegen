@@ -41,17 +41,19 @@ namespace Mono::Security::Interface {
     #endif
     #endif
     // private Mono.Security.Interface.CipherSuiteCode <CipherSuiteCode>k__BackingField
-    // Size: 0x12
+    // Size: 0x2
     // Offset: 0x10
     ::Mono::Security::Interface::CipherSuiteCode CipherSuiteCode;
     // Field size check
-    static_assert(sizeof(::Mono::Security::Interface::CipherSuiteCode) == 0x12);
+    static_assert(sizeof(::Mono::Security::Interface::CipherSuiteCode) == 0x2);
+    // Padding between fields: CipherSuiteCode and: ProtocolVersion
+    char __padding0[0x2] = {};
     // private Mono.Security.Interface.TlsProtocols <ProtocolVersion>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::Mono::Security::Interface::TlsProtocols ProtocolVersion;
     // Field size check
-    static_assert(sizeof(::Mono::Security::Interface::TlsProtocols) == 0x14);
+    static_assert(sizeof(::Mono::Security::Interface::TlsProtocols) == 0x4);
     // private System.String <PeerDomainName>k__BackingField
     // Size: 0x8
     // Offset: 0x18

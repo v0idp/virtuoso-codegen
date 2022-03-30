@@ -35,11 +35,11 @@ namespace UnityEngine::Profiling::Experimental {
     ::Unity::Collections::NativeArray_1<uint8_t> rawImageDataReference;
     // [DebuggerBrowsableAttribute] Offset: 0x56B5F8
     // private UnityEngine.TextureFormat <imageFormat>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::UnityEngine::TextureFormat imageFormat;
     // Field size check
-    static_assert(sizeof(::UnityEngine::TextureFormat) == 0x14);
+    static_assert(sizeof(::UnityEngine::TextureFormat) == 0x4);
     // [DebuggerBrowsableAttribute] Offset: 0x56B634
     // private System.Int32 <width>k__BackingField
     // Size: 0x4

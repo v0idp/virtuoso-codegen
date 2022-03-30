@@ -50,11 +50,13 @@ namespace TMPro {
     #endif
     #endif
     // protected TMPro.TextElementType m_ElementType
-    // Size: 0x11
+    // Size: 0x1
     // Offset: 0x10
     ::TMPro::TextElementType m_ElementType;
     // Field size check
-    static_assert(sizeof(::TMPro::TextElementType) == 0x11);
+    static_assert(sizeof(::TMPro::TextElementType) == 0x1);
+    // Padding between fields: m_ElementType and: m_Unicode
+    char __padding0[0x3] = {};
     // System.UInt32 m_Unicode
     // Size: 0x4
     // Offset: 0x14

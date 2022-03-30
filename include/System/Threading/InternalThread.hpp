@@ -84,11 +84,11 @@ namespace System::Threading {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private System.Threading.ThreadState state
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::System::Threading::ThreadState state;
     // Field size check
-    static_assert(sizeof(::System::Threading::ThreadState) == 0x14);
+    static_assert(sizeof(::System::Threading::ThreadState) == 0x4);
     // private System.Object abort_exc
     // Size: 0x8
     // Offset: 0x40

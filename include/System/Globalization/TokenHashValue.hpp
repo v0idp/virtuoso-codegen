@@ -45,11 +45,11 @@ namespace System::Globalization {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // System.TokenType tokenType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::System::TokenType tokenType;
     // Field size check
-    static_assert(sizeof(::System::TokenType) == 0x14);
+    static_assert(sizeof(::System::TokenType) == 0x4);
     // System.Int32 tokenValue
     // Size: 0x4
     // Offset: 0x1C

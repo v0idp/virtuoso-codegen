@@ -24,11 +24,11 @@ namespace GlobalNamespace {
     public:
     public:
     // public OVRPlugin/SkeletonType Type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::OVRPlugin::SkeletonType Type;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::SkeletonType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::SkeletonType) == 0x4);
     // public System.UInt32 NumBones
     // Size: 0x4
     // Offset: 0x4

@@ -94,11 +94,11 @@ namespace System::Net::Sockets {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private System.Net.Sockets.SocketError <SocketError>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::System::Net::Sockets::SocketError SocketError;
     // Field size check
-    static_assert(sizeof(::System::Net::Sockets::SocketError) == 0x14);
+    static_assert(sizeof(::System::Net::Sockets::SocketError) == 0x4);
     // private System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> Completed
     // Size: 0x8
     // Offset: 0x38

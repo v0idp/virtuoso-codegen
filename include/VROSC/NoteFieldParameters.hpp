@@ -88,17 +88,17 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::System::Collections::Generic::List_1<int>*) == 0x8);
     // private VROSC.NoteBoard/VROSC.Axis <PrimaryAxis>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::VROSC::NoteBoard::Axis PrimaryAxis;
     // Field size check
-    static_assert(sizeof(::VROSC::NoteBoard::Axis) == 0x14);
+    static_assert(sizeof(::VROSC::NoteBoard::Axis) == 0x4);
     // private VROSC.Scale <PrimaryScale>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::VROSC::Scale PrimaryScale;
     // Field size check
-    static_assert(sizeof(::VROSC::Scale) == 0x14);
+    static_assert(sizeof(::VROSC::Scale) == 0x4);
     // private System.Int32 <SecondaryAxisSteps>k__BackingField
     // Size: 0x4
     // Offset: 0x40

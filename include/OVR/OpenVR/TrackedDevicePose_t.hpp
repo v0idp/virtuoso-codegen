@@ -50,11 +50,11 @@ namespace OVR::OpenVR {
     // Field size check
     static_assert(sizeof(::OVR::OpenVR::HmdVector3_t) == 0xC);
     // public OVR.OpenVR.ETrackingResult eTrackingResult
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::OVR::OpenVR::ETrackingResult eTrackingResult;
     // Field size check
-    static_assert(sizeof(::OVR::OpenVR::ETrackingResult) == 0x14);
+    static_assert(sizeof(::OVR::OpenVR::ETrackingResult) == 0x4);
     // public System.Boolean bPoseIsValid
     // Size: 0x1
     // Offset: 0x4C

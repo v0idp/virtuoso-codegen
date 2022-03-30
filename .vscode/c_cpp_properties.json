@@ -18,12 +18,10 @@
         "${workspaceFolder}",
         "${default}"
       ],
-      "name": "Win32",
-      "windowsSdkVersion": "10.0.18362.0",
-      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x64/cl.exe",
+      "name": "Quest",
       "cStandard": "c11",
-      "cppStandard": "c++17",
-      "intelliSenseMode": "msvc-x64"
+      "cppStandard": "c++20",
+      "intelliSenseMode": "linux-clang-arm64"
     }
   ],
   "version": 4

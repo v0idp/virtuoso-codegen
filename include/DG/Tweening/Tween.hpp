@@ -113,11 +113,11 @@ namespace DG::Tweening {
     // Field size check
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     // DG.Tweening.UpdateType updateType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::DG::Tweening::UpdateType updateType;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::UpdateType) == 0x14);
+    static_assert(sizeof(::DG::Tweening::UpdateType) == 0x4);
     // System.Boolean isIndependentUpdate
     // Size: 0x1
     // Offset: 0x54
@@ -219,11 +219,11 @@ namespace DG::Tweening {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // DG.Tweening.LoopType loopType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xA8
     ::DG::Tweening::LoopType loopType;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::LoopType) == 0x14);
+    static_assert(sizeof(::DG::Tweening::LoopType) == 0x4);
     // System.Single delay
     // Size: 0x4
     // Offset: 0xAC
@@ -239,11 +239,11 @@ namespace DG::Tweening {
     // Padding between fields: isRelative and: easeType
     char __padding25[0x3] = {};
     // DG.Tweening.Ease easeType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xB4
     ::DG::Tweening::Ease easeType;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::Ease) == 0x14);
+    static_assert(sizeof(::DG::Tweening::Ease) == 0x4);
     // DG.Tweening.EaseFunction customEase
     // Size: 0x8
     // Offset: 0xB8
@@ -313,11 +313,11 @@ namespace DG::Tweening {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // DG.Tweening.Core.Enums.SpecialStartupMode specialStartupMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xFC
     ::DG::Tweening::Core::Enums::SpecialStartupMode specialStartupMode;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::Core::Enums::SpecialStartupMode) == 0x14);
+    static_assert(sizeof(::DG::Tweening::Core::Enums::SpecialStartupMode) == 0x4);
     // System.Boolean creationLocked
     // Size: 0x1
     // Offset: 0x100

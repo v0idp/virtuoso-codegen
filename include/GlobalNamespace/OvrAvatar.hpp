@@ -259,19 +259,19 @@ namespace GlobalNamespace {
     // Padding between fields: ShowThirdPerson and: Capabilities
     char __padding14[0x2] = {};
     // ovrAvatarCapabilities Capabilities
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x5C
     ::GlobalNamespace::ovrAvatarCapabilities Capabilities;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarCapabilities) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarCapabilities) == 0x4);
     // [TooltipAttribute] Offset: 0x66CAD8
     // [HeaderAttribute] Offset: 0x66CAD8
     // ovrAvatarAssetLevelOfDetail LevelOfDetail
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x60
     ::GlobalNamespace::ovrAvatarAssetLevelOfDetail LevelOfDetail;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarAssetLevelOfDetail) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarAssetLevelOfDetail) == 0x4);
     // [TooltipAttribute] Offset: 0x66CB48
     // private System.Boolean CombineMeshes
     // Size: 0x1
@@ -572,17 +572,17 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::GlobalNamespace::OvrAvatarHand*) == 0x8);
     // ovrAvatarLookAndFeelVersion LookAndFeelVersion
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C8
     ::GlobalNamespace::ovrAvatarLookAndFeelVersion LookAndFeelVersion;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarLookAndFeelVersion) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarLookAndFeelVersion) == 0x4);
     // ovrAvatarLookAndFeelVersion FallbackLookAndFeelVersion
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1CC
     ::GlobalNamespace::ovrAvatarLookAndFeelVersion FallbackLookAndFeelVersion;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarLookAndFeelVersion) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarLookAndFeelVersion) == 0x4);
     // private OvrAvatarPacket CurrentUnityPacket
     // Size: 0x8
     // Offset: 0x1D0

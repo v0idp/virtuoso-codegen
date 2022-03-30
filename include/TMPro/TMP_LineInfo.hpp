@@ -138,11 +138,11 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public TMPro.HorizontalAlignmentOptions alignment
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::TMPro::HorizontalAlignmentOptions alignment;
     // Field size check
-    static_assert(sizeof(::TMPro::HorizontalAlignmentOptions) == 0x14);
+    static_assert(sizeof(::TMPro::HorizontalAlignmentOptions) == 0x4);
     // public TMPro.Extents lineExtents
     // Size: 0x10
     // Offset: 0x4C

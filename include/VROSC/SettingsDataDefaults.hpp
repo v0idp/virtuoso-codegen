@@ -62,11 +62,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::ScalePresets*) == 0x8);
     // public VROSC.Metronome/VROSC.Mode MetronomeMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::VROSC::Metronome::Mode MetronomeMode;
     // Field size check
-    static_assert(sizeof(::VROSC::Metronome::Mode) == 0x14);
+    static_assert(sizeof(::VROSC::Metronome::Mode) == 0x4);
     // public System.Boolean UseExternalSynthesizer
     // Size: 0x1
     // Offset: 0x2C

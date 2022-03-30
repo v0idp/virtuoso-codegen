@@ -100,17 +100,17 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private OVRGLTFType dataType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::GlobalNamespace::OVRGLTFType dataType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRGLTFType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRGLTFType) == 0x4);
     // private OVRGLTFComponentType componentType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x2C
     ::GlobalNamespace::OVRGLTFComponentType componentType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRGLTFComponentType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRGLTFComponentType) == 0x4);
     // private System.Int32 dataCount
     // Size: 0x4
     // Offset: 0x30

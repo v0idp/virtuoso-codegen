@@ -82,11 +82,11 @@ namespace System::Text::RegularExpressions {
     // Field size check
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     // System.Text.RegularExpressions.RegexOptions _options
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::System::Text::RegularExpressions::RegexOptions options;
     // Field size check
-    static_assert(sizeof(::System::Text::RegularExpressions::RegexOptions) == 0x14);
+    static_assert(sizeof(::System::Text::RegularExpressions::RegexOptions) == 0x4);
     // System.Int32 _captop
     // Size: 0x4
     // Offset: 0x3C

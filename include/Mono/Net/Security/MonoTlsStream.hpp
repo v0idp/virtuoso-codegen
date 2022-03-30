@@ -112,11 +112,11 @@ namespace Mono::Net::Security {
     // Field size check
     static_assert(sizeof(::Mono::Security::Interface::IMonoSslStream*) == 0x8);
     // private System.Net.WebExceptionStatus status
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::System::Net::WebExceptionStatus status;
     // Field size check
-    static_assert(sizeof(::System::Net::WebExceptionStatus) == 0x14);
+    static_assert(sizeof(::System::Net::WebExceptionStatus) == 0x4);
     // private System.Boolean <CertificateValidationFailed>k__BackingField
     // Size: 0x1
     // Offset: 0x3C

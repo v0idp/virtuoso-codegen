@@ -61,8 +61,8 @@ namespace Firebase::Unity {
   // [PreserveAttribute] Offset: FFFFFFFF
   class UnitySynchronizationContext : public ::System::Threading::SynchronizationContext {
     public:
-    // Writing base type padding for base size: 0x24 to desired offset: 0x18
-    char ___base_padding[0xFFFFFFF4] = {};
+    // Writing base type padding for base size: 0x14 to desired offset: 0x18
+    char ___base_padding[0x4] = {};
     // Nested type: ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir
     class SynchronizationContextBehavoir;
     // Nested type: ::Firebase::Unity::UnitySynchronizationContext::$SignaledCoroutine$c__Iterator0

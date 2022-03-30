@@ -69,11 +69,11 @@ namespace System::Net {
     // Field size check
     static_assert(sizeof(::System::Net::BufferOffsetSize*) == 0x8);
     // private System.Net.ReadState <state>5__2
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::System::Net::ReadState $state$5__2;
     // Field size check
-    static_assert(sizeof(::System::Net::ReadState) == 0x14);
+    static_assert(sizeof(::System::Net::ReadState) == 0x4);
     // private System.Int32 <position>5__3
     // Size: 0x4
     // Offset: 0x3C

@@ -42,11 +42,13 @@ namespace VROSC {
     #endif
     #endif
     // private VROSC.HmdModel _hmdModel
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::HmdModel hmdModel;
     // Field size check
-    static_assert(sizeof(::VROSC::HmdModel) == 0x14);
+    static_assert(sizeof(::VROSC::HmdModel) == 0x4);
+    // Padding between fields: hmdModel and: microphoneName
+    char __padding0[0x4] = {};
     // private System.String _microphoneName
     // Size: 0x8
     // Offset: 0x20

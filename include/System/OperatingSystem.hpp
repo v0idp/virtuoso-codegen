@@ -58,11 +58,13 @@ namespace System {
     #endif
     #endif
     // private System.PlatformID _platform
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::PlatformID platform;
     // Field size check
-    static_assert(sizeof(::System::PlatformID) == 0x14);
+    static_assert(sizeof(::System::PlatformID) == 0x4);
+    // Padding between fields: platform and: version
+    char __padding0[0x4] = {};
     // private System.Version _version
     // Size: 0x8
     // Offset: 0x18

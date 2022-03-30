@@ -241,11 +241,13 @@ namespace System {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // private System.ConsoleColor fgcolor
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xD0
     ::System::ConsoleColor fgcolor;
     // Field size check
-    static_assert(sizeof(::System::ConsoleColor) == 0x14);
+    static_assert(sizeof(::System::ConsoleColor) == 0x4);
+    // Padding between fields: fgcolor and: setfgcolor
+    char __padding28[0x4] = {};
     // private System.String setfgcolor
     // Size: 0x8
     // Offset: 0xD8

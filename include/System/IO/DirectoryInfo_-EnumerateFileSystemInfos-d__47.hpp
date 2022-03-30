@@ -111,23 +111,25 @@ namespace System::IO {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // private System.IO.FileAttributes <attrs>5__2
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::System::IO::FileAttributes $attrs$5__2;
     // Field size check
-    static_assert(sizeof(::System::IO::FileAttributes) == 0x14);
+    static_assert(sizeof(::System::IO::FileAttributes) == 0x4);
     // private System.IO.SearchOption searchOption
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x54
     ::System::IO::SearchOption searchOption;
     // Field size check
-    static_assert(sizeof(::System::IO::SearchOption) == 0x14);
+    static_assert(sizeof(::System::IO::SearchOption) == 0x4);
     // public System.IO.SearchOption <>3__searchOption
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x58
     ::System::IO::SearchOption $$3__searchOption;
     // Field size check
-    static_assert(sizeof(::System::IO::SearchOption) == 0x14);
+    static_assert(sizeof(::System::IO::SearchOption) == 0x4);
+    // Padding between fields: $$3__searchOption and: $findHandle$5__3
+    char __padding10[0x4] = {};
     // private Microsoft.Win32.SafeHandles.SafeFindHandle <findHandle>5__3
     // Size: 0x8
     // Offset: 0x60

@@ -42,11 +42,13 @@ namespace System::Net {
     #endif
     #endif
     // private readonly System.Net.WebCompletionSource/System.Net.State <State>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Net::WebCompletionSource::State State;
     // Field size check
-    static_assert(sizeof(::System::Net::WebCompletionSource::State) == 0x14);
+    static_assert(sizeof(::System::Net::WebCompletionSource::State) == 0x4);
+    // Padding between fields: State and: Error
+    char __padding0[0x4] = {};
     // private readonly System.Runtime.ExceptionServices.ExceptionDispatchInfo <Error>k__BackingField
     // Size: 0x8
     // Offset: 0x18

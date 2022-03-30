@@ -34,23 +34,23 @@ namespace GlobalNamespace {
     public:
     public:
     // public ovrAvatarMaterialLayerBlendMode blendMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::ovrAvatarMaterialLayerBlendMode blendMode;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialLayerBlendMode) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialLayerBlendMode) == 0x4);
     // public ovrAvatarMaterialLayerSampleMode sampleMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode sampleMode;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialLayerSampleMode) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialLayerSampleMode) == 0x4);
     // public ovrAvatarMaterialMaskType maskType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x8
     ::GlobalNamespace::ovrAvatarMaterialMaskType maskType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialMaskType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarMaterialMaskType) == 0x4);
     // public UnityEngine.Vector4 layerColor
     // Size: 0x10
     // Offset: 0xC

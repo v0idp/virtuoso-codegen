@@ -95,11 +95,11 @@ namespace OggVorbisEncoder::Setup {
     // Field size check
     static_assert(sizeof(::ArrayW<int>) == 0x8);
     // private readonly OggVorbisEncoder.Setup.ResidueType <ResidueType>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::OggVorbisEncoder::Setup::ResidueType ResidueType;
     // Field size check
-    static_assert(sizeof(::OggVorbisEncoder::Setup::ResidueType) == 0x14);
+    static_assert(sizeof(::OggVorbisEncoder::Setup::ResidueType) == 0x4);
     // private readonly System.Int32 <Grouping>k__BackingField
     // Size: 0x4
     // Offset: 0x4C

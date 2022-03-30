@@ -107,11 +107,11 @@ namespace Mono::Unity {
     // Field size check
     static_assert(sizeof(uint64_t) == 0x8);
     // public readonly Mono.Unity.UnityTls/Mono.Unity.unitytls_tlsctx_protocolrange UNITYTLS_TLSCTX_PROTOCOLRANGE_DEFAULT
-    // Size: 0x18
+    // Size: 0x8
     // Offset: 0x18
     ::Mono::Unity::UnityTls::unitytls_tlsctx_protocolrange UNITYTLS_TLSCTX_PROTOCOLRANGE_DEFAULT;
     // Field size check
-    static_assert(sizeof(::Mono::Unity::UnityTls::unitytls_tlsctx_protocolrange) == 0x18);
+    static_assert(sizeof(::Mono::Unity::UnityTls::unitytls_tlsctx_protocolrange) == 0x8);
     // public Mono.Unity.UnityTls/Mono.Unity.unitytls_interface_struct/Mono.Unity.unitytls_errorstate_create_t unitytls_errorstate_create
     // Size: 0x8
     // Offset: 0x20

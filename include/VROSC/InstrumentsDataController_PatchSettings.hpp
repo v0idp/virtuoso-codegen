@@ -35,11 +35,13 @@ namespace VROSC {
     #endif
     #endif
     // public VROSC.WidgetSettings/VROSC.Identifier InstrumentId
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::WidgetSettings::Identifier InstrumentId;
     // Field size check
-    static_assert(sizeof(::VROSC::WidgetSettings::Identifier) == 0x14);
+    static_assert(sizeof(::VROSC::WidgetSettings::Identifier) == 0x4);
+    // Padding between fields: InstrumentId and: Patch
+    char __padding0[0x4] = {};
     // public System.Object Patch
     // Size: 0x8
     // Offset: 0x18

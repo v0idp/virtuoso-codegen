@@ -35,11 +35,11 @@ namespace VROSC {
     #endif
     #endif
     // public VROSC.Note Note
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::Note Note;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
     // public System.Int32 Priority
     // Size: 0x4
     // Offset: 0x14

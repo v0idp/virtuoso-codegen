@@ -72,17 +72,17 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::ControllerHintUI*) == 0x8);
     // private VROSC.HighlightControllerComponents/VROSC.Component _componentType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::VROSC::HighlightControllerComponents::Component componentType;
     // Field size check
-    static_assert(sizeof(::VROSC::HighlightControllerComponents::Component) == 0x14);
+    static_assert(sizeof(::VROSC::HighlightControllerComponents::Component) == 0x4);
     // private VROSC.TriggerButton _triggerButton
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::VROSC::TriggerButton triggerButton;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     // private System.Boolean _tooltipActive
     // Size: 0x1
     // Offset: 0x38

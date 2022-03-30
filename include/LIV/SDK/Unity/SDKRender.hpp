@@ -113,35 +113,37 @@ namespace LIV::SDK::Unity {
     // Field size check
     static_assert(sizeof(::UnityEngine::Rendering::CommandBuffer*) == 0x8);
     // private UnityEngine.Rendering.CameraEvent _clipPlaneCameraEvent
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::UnityEngine::Rendering::CameraEvent clipPlaneCameraEvent;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x14);
+    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x4);
     // private UnityEngine.Rendering.CameraEvent _clipPlaneCombineAlphaCameraEvent
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::UnityEngine::Rendering::CameraEvent clipPlaneCombineAlphaCameraEvent;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x14);
+    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x4);
     // private UnityEngine.Rendering.CameraEvent _captureTextureEvent
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::UnityEngine::Rendering::CameraEvent captureTextureEvent;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x14);
+    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x4);
     // private UnityEngine.Rendering.CameraEvent _applyTextureEvent
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::UnityEngine::Rendering::CameraEvent applyTextureEvent;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x14);
+    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x4);
     // private UnityEngine.Rendering.CameraEvent _optimizedRenderingCameraEvent
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::UnityEngine::Rendering::CameraEvent optimizedRenderingCameraEvent;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x14);
+    static_assert(sizeof(::UnityEngine::Rendering::CameraEvent) == 0x4);
+    // Padding between fields: optimizedRenderingCameraEvent and: clipPlaneMesh
+    char __padding9[0x4] = {};
     // private UnityEngine.Mesh _clipPlaneMesh
     // Size: 0x8
     // Offset: 0x50

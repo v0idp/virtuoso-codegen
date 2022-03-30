@@ -44,11 +44,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public VROSC.Scale Scale
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::VROSC::Scale Scale;
     // Field size check
-    static_assert(sizeof(::VROSC::Scale) == 0x14);
+    static_assert(sizeof(::VROSC::Scale) == 0x4);
     // public System.Boolean Locked
     // Size: 0x1
     // Offset: 0x18

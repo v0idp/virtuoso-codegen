@@ -39,11 +39,11 @@ namespace DG::Tweening::Plugins::Options {
     // Padding between fields: richTextEnabled and: scrambleMode
     char __padding0[0x3] = {};
     // public DG.Tweening.ScrambleMode scrambleMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::DG::Tweening::ScrambleMode scrambleMode;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::ScrambleMode) == 0x14);
+    static_assert(sizeof(::DG::Tweening::ScrambleMode) == 0x4);
     // public System.Char[] scrambledChars
     // Size: 0x8
     // Offset: 0x8

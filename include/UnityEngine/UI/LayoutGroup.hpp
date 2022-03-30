@@ -82,11 +82,13 @@ namespace UnityEngine::UI {
     // Field size check
     static_assert(sizeof(::UnityEngine::RectOffset*) == 0x8);
     // protected UnityEngine.TextAnchor m_ChildAlignment
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::UnityEngine::TextAnchor m_ChildAlignment;
     // Field size check
-    static_assert(sizeof(::UnityEngine::TextAnchor) == 0x14);
+    static_assert(sizeof(::UnityEngine::TextAnchor) == 0x4);
+    // Padding between fields: m_ChildAlignment and: m_Rect
+    char __padding1[0x4] = {};
     // private UnityEngine.RectTransform m_Rect
     // Size: 0x8
     // Offset: 0x28

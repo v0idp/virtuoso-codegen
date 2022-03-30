@@ -1752,11 +1752,11 @@ namespace RSG {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // private RSG.PromiseState <CurState>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::RSG::PromiseState CurState;
     // Field size check
-    static_assert(sizeof(::RSG::PromiseState) == 0x14);
+    static_assert(sizeof(::RSG::PromiseState) == 0x4);
     public:
     // Creating interface conversion operator: operator ::RSG::IPromise_1<PromisedT>
     operator ::RSG::IPromise_1<PromisedT>() noexcept {

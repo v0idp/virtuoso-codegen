@@ -64,11 +64,11 @@ namespace System {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // System.DateTimeParse/System.TM timeMark
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::System::DateTimeParse::TM timeMark;
     // Field size check
-    static_assert(sizeof(::System::DateTimeParse::TM) == 0x14);
+    static_assert(sizeof(::System::DateTimeParse::TM) == 0x4);
     // System.Double fraction
     // Size: 0x8
     // Offset: 0x20

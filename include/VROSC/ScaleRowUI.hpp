@@ -111,11 +111,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private VROSC.Scale _initScale
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::VROSC::Scale initScale;
     // Field size check
-    static_assert(sizeof(::VROSC::Scale) == 0x14);
+    static_assert(sizeof(::VROSC::Scale) == 0x4);
     // private VROSC.ScalePreset _initGlobalScalePreset
     // Size: 0x8
     // Offset: 0x48
@@ -123,17 +123,17 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::ScalePreset*) == 0x8);
     // private VROSC.Note _initStartNote
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::VROSC::Note initStartNote;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
     // private VROSC.Note _initGlobalKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x54
     ::VROSC::Note initGlobalKey;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
     // private System.Int32 _initNoteCount
     // Size: 0x4
     // Offset: 0x58
@@ -149,11 +149,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::ScalePreset*) == 0x8);
     // private VROSC.Note _lastGlobalKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x68
     ::VROSC::Note lastGlobalKey;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
     // private System.Boolean _overrideScaleDefaults
     // Size: 0x1
     // Offset: 0x6C

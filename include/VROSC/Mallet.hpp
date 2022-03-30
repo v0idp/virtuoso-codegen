@@ -92,11 +92,13 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::MalletAnimator*) == 0x8);
     // private VROSC.TriggerButton _holdingButton
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::VROSC::TriggerButton holdingButton;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
+    // Padding between fields: holdingButton and: InputDevice
+    char __padding5[0x4] = {};
     // private VROSC.InputDevice <InputDevice>k__BackingField
     // Size: 0x8
     // Offset: 0x48

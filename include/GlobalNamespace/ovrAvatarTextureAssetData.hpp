@@ -30,11 +30,11 @@ namespace GlobalNamespace {
     public:
     public:
     // public ovrAvatarTextureFormat format
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::ovrAvatarTextureFormat format;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarTextureFormat) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarTextureFormat) == 0x4);
     // public System.UInt32 sizeX
     // Size: 0x4
     // Offset: 0x4

@@ -60,11 +60,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::TouchableObject*) == 0x8);
     // public VROSC.NoteBoard/VROSC.PlayAxis Axis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::NoteBoard::PlayAxis Axis;
     // Field size check
-    static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x14);
+    static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x4);
     // [RangeAttribute] Offset: 0x673810
     // public System.Single Pressed
     // Size: 0x4

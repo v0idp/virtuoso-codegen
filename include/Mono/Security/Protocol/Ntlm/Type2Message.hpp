@@ -30,8 +30,6 @@ namespace Mono::Security::Protocol::Ntlm {
   // [TokenAttribute] Offset: FFFFFFFF
   class Type2Message : public ::Mono::Security::Protocol::Ntlm::MessageBase {
     public:
-    // Writing base type padding for base size: 0x28 to desired offset: 0x18
-    char ___base_padding[0xFFFFFFF0] = {};
     #ifdef USE_CODEGEN_FIELDS
     public:
     #else

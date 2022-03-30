@@ -67,11 +67,13 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::UnityEngine::Playables::PlayableAsset*) == 0x8);
     // private VROSC.AnimatedAppear/VROSC.Mode _mode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::VROSC::AnimatedAppear::Mode mode;
     // Field size check
-    static_assert(sizeof(::VROSC::AnimatedAppear::Mode) == 0x14);
+    static_assert(sizeof(::VROSC::AnimatedAppear::Mode) == 0x4);
+    // Padding between fields: mode and: director
+    char __padding2[0x4] = {};
     // private UnityEngine.Playables.PlayableDirector _director
     // Size: 0x8
     // Offset: 0x28

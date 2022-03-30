@@ -68,17 +68,19 @@ namespace GlobalNamespace {
     // Padding between fields: stillInRoom and: p2pConnectionState
     char __padding1[0x3] = {};
     // public Oculus.Platform.PeerConnectionState p2pConnectionState
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::Oculus::Platform::PeerConnectionState p2pConnectionState;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x4);
     // public Oculus.Platform.PeerConnectionState voipConnectionState
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::Oculus::Platform::PeerConnectionState voipConnectionState;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x4);
+    // Padding between fields: voipConnectionState and: RemoteAvatar
+    char __padding3[0x4] = {};
     // public OvrAvatar RemoteAvatar
     // Size: 0x8
     // Offset: 0x28

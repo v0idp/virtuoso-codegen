@@ -39,11 +39,13 @@ namespace LIV::SDK::Unity {
     public:
     public:
     // public LIV.SDK.Unity.TEXTURE_ID id
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::LIV::SDK::Unity::TEXTURE_ID id;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_ID) == 0x14);
+    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_ID) == 0x4);
+    // Padding between fields: id and: texturePtr
+    char __padding0[0x4] = {};
     // public System.IntPtr texturePtr
     // Size: 0x8
     // Offset: 0x8
@@ -57,11 +59,11 @@ namespace LIV::SDK::Unity {
     // Field size check
     static_assert(sizeof(::System::IntPtr) == 0x8);
     // public LIV.SDK.Unity.TEXTURE_DEVICE device
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::LIV::SDK::Unity::TEXTURE_DEVICE device;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_DEVICE) == 0x14);
+    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_DEVICE) == 0x4);
     // public System.Int32 dummy
     // Size: 0x4
     // Offset: 0x1C
@@ -69,23 +71,23 @@ namespace LIV::SDK::Unity {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public LIV.SDK.Unity.TEXTURE_TYPE type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::LIV::SDK::Unity::TEXTURE_TYPE type;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_TYPE) == 0x14);
+    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_TYPE) == 0x4);
     // public LIV.SDK.Unity.TEXTURE_FORMAT format
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x24
     ::LIV::SDK::Unity::TEXTURE_FORMAT format;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_FORMAT) == 0x14);
+    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_FORMAT) == 0x4);
     // public LIV.SDK.Unity.TEXTURE_COLOR_SPACE colorSpace
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::LIV::SDK::Unity::TEXTURE_COLOR_SPACE colorSpace;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_COLOR_SPACE) == 0x14);
+    static_assert(sizeof(::LIV::SDK::Unity::TEXTURE_COLOR_SPACE) == 0x4);
     // public System.Int32 width
     // Size: 0x4
     // Offset: 0x2C

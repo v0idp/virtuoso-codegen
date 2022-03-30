@@ -57,11 +57,13 @@ namespace GlobalNamespace {
     #endif
     #endif
     // public UnityEngine.KeyCode quitKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::UnityEngine::KeyCode quitKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
+    // Padding between fields: quitKey and: fadeInTexture
+    char __padding0[0x4] = {};
     // public UnityEngine.Texture fadeInTexture
     // Size: 0x8
     // Offset: 0x20

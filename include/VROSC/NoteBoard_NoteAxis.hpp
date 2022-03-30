@@ -48,23 +48,23 @@ namespace VROSC {
     #endif
     #endif
     // private VROSC.Scale <Scale>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::Scale Scale;
     // Field size check
-    static_assert(sizeof(::VROSC::Scale) == 0x14);
+    static_assert(sizeof(::VROSC::Scale) == 0x4);
     // private VROSC.Note <StartNote>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::VROSC::Note StartNote;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
     // private VROSC.NoteBoard/VROSC.Axis <Axis>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::NoteBoard::Axis Axis;
     // Field size check
-    static_assert(sizeof(::VROSC::NoteBoard::Axis) == 0x14);
+    static_assert(sizeof(::VROSC::NoteBoard::Axis) == 0x4);
     // public System.Boolean OverrideBoard
     // Size: 0x1
     // Offset: 0x1C
@@ -104,17 +104,17 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::IntField*) == 0x8);
     // private VROSC.Scale _lastScale
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::VROSC::Scale lastScale;
     // Field size check
-    static_assert(sizeof(::VROSC::Scale) == 0x14);
+    static_assert(sizeof(::VROSC::Scale) == 0x4);
     // private VROSC.Note _lastStartNote
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4C
     ::VROSC::Note lastStartNote;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
     // private System.Int32 _lastStartOctave
     // Size: 0x4
     // Offset: 0x50

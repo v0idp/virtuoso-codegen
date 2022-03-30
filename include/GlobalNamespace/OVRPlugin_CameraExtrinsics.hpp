@@ -31,11 +31,13 @@ namespace GlobalNamespace {
     public:
     public:
     // public OVRPlugin/Bool IsValid
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::OVRPlugin::Bool IsValid;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Bool) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Bool) == 0x4);
+    // Padding between fields: IsValid and: LastChangedTimeSeconds
+    char __padding0[0x4] = {};
     // public System.Double LastChangedTimeSeconds
     // Size: 0x8
     // Offset: 0x8
@@ -43,17 +45,17 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(double) == 0x8);
     // public OVRPlugin/CameraStatus CameraStatusData
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::GlobalNamespace::OVRPlugin::CameraStatus CameraStatusData;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::CameraStatus) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::CameraStatus) == 0x4);
     // public OVRPlugin/Node AttachedToNode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::GlobalNamespace::OVRPlugin::Node AttachedToNode;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Node) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Node) == 0x4);
     // public OVRPlugin/Posef RelativePose
     // Size: 0x1C
     // Offset: 0x18

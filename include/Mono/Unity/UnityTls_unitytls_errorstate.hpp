@@ -31,11 +31,11 @@ namespace Mono::Unity {
     // Field size check
     static_assert(sizeof(uint) == 0x4);
     // public Mono.Unity.UnityTls/Mono.Unity.unitytls_error_code code
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::Mono::Unity::UnityTls::unitytls_error_code code;
     // Field size check
-    static_assert(sizeof(::Mono::Unity::UnityTls::unitytls_error_code) == 0x14);
+    static_assert(sizeof(::Mono::Unity::UnityTls::unitytls_error_code) == 0x4);
     // private System.UInt64 reserved
     // Size: 0x8
     // Offset: 0x8

@@ -59,11 +59,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     // private VROSC.HandType _useHand
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::VROSC::HandType useHand;
     // Field size check
-    static_assert(sizeof(::VROSC::HandType) == 0x14);
+    static_assert(sizeof(::VROSC::HandType) == 0x4);
     // private System.Single _depthScrollSpeed
     // Size: 0x4
     // Offset: 0x2C

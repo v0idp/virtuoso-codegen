@@ -35,17 +35,17 @@ namespace UnityEngine::XR {
     public:
     public:
     // private UnityEngine.XR.XRNode m_Type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::UnityEngine::XR::XRNode m_Type;
     // Field size check
-    static_assert(sizeof(::UnityEngine::XR::XRNode) == 0x14);
+    static_assert(sizeof(::UnityEngine::XR::XRNode) == 0x4);
     // private UnityEngine.XR.AvailableTrackingData m_AvailableFields
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::UnityEngine::XR::AvailableTrackingData m_AvailableFields;
     // Field size check
-    static_assert(sizeof(::UnityEngine::XR::AvailableTrackingData) == 0x14);
+    static_assert(sizeof(::UnityEngine::XR::AvailableTrackingData) == 0x4);
     // private UnityEngine.Vector3 m_Position
     // Size: 0xC
     // Offset: 0x8

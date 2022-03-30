@@ -64,11 +64,11 @@ namespace System::Runtime::InteropServices {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // public System.Runtime.InteropServices.CharSet CharSet
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::System::Runtime::InteropServices::CharSet CharSet;
     // Field size check
-    static_assert(sizeof(::System::Runtime::InteropServices::CharSet) == 0x14);
+    static_assert(sizeof(::System::Runtime::InteropServices::CharSet) == 0x4);
     // public System.Boolean SetLastError
     // Size: 0x1
     // Offset: 0x24
@@ -90,11 +90,11 @@ namespace System::Runtime::InteropServices {
     // Padding between fields: PreserveSig and: CallingConvention
     char __padding5[0x1] = {};
     // public System.Runtime.InteropServices.CallingConvention CallingConvention
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::System::Runtime::InteropServices::CallingConvention CallingConvention;
     // Field size check
-    static_assert(sizeof(::System::Runtime::InteropServices::CallingConvention) == 0x14);
+    static_assert(sizeof(::System::Runtime::InteropServices::CallingConvention) == 0x4);
     // public System.Boolean BestFitMapping
     // Size: 0x1
     // Offset: 0x2C

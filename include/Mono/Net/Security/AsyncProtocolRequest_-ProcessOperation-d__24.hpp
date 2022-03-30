@@ -58,17 +58,17 @@ namespace Mono::Net::Security {
     // Field size check
     static_assert(sizeof(::Mono::Net::Security::AsyncProtocolRequest*) == 0x8);
     // private Mono.Net.Security.AsyncOperationStatus <status>5__1
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::Mono::Net::Security::AsyncOperationStatus $status$5__1;
     // Field size check
-    static_assert(sizeof(::Mono::Net::Security::AsyncOperationStatus) == 0x14);
+    static_assert(sizeof(::Mono::Net::Security::AsyncOperationStatus) == 0x4);
     // private Mono.Net.Security.AsyncOperationStatus <newStatus>5__2
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::Mono::Net::Security::AsyncOperationStatus $newStatus$5__2;
     // Field size check
-    static_assert(sizeof(::Mono::Net::Security::AsyncOperationStatus) == 0x14);
+    static_assert(sizeof(::Mono::Net::Security::AsyncOperationStatus) == 0x4);
     // private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Nullable`1<System.Int32>> <>u__1
     // Size: 0xFFFFFFFF
     // Offset: 0x38

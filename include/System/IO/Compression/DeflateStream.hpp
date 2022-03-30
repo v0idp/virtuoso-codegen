@@ -72,11 +72,11 @@ namespace System::IO::Compression {
     // Field size check
     static_assert(sizeof(::System::IO::Stream*) == 0x8);
     // private System.IO.Compression.CompressionMode mode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::System::IO::Compression::CompressionMode mode;
     // Field size check
-    static_assert(sizeof(::System::IO::Compression::CompressionMode) == 0x14);
+    static_assert(sizeof(::System::IO::Compression::CompressionMode) == 0x4);
     // private System.Boolean leaveOpen
     // Size: 0x1
     // Offset: 0x34

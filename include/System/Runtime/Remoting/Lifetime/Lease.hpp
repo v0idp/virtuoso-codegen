@@ -68,11 +68,13 @@ namespace System::Runtime::Remoting::Lifetime {
     // Field size check
     static_assert(sizeof(::System::DateTime) == 0x8);
     // private System.Runtime.Remoting.Lifetime.LeaseState _currentState
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::System::Runtime::Remoting::Lifetime::LeaseState currentState;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Remoting::Lifetime::LeaseState) == 0x14);
+    static_assert(sizeof(::System::Runtime::Remoting::Lifetime::LeaseState) == 0x4);
+    // Padding between fields: currentState and: initialLeaseTime
+    char __padding1[0x4] = {};
     // private System.TimeSpan _initialLeaseTime
     // Size: 0x8
     // Offset: 0x28
