@@ -80,11 +80,13 @@ namespace System::Reflection {
     // Field size check
     static_assert(sizeof(::System::Reflection::MethodInfo*) == 0x8);
     // public System.Reflection.EventAttributes attrs
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::System::Reflection::EventAttributes attrs;
     // Field size check
-    static_assert(sizeof(::System::Reflection::EventAttributes) == 0x14);
+    static_assert(sizeof(::System::Reflection::EventAttributes) == 0x4);
+    // Padding between fields: attrs and: other_methods
+    char __padding6[0x4] = {};
     // public System.Reflection.MethodInfo[] other_methods
     // Size: 0x8
     // Offset: 0x38

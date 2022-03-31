@@ -103,11 +103,13 @@ namespace System::Net {
     // Field size check
     static_assert(sizeof(::System::Version*) == 0x8);
     // private System.Net.HttpStatusCode statusCode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::System::Net::HttpStatusCode statusCode;
     // Field size check
-    static_assert(sizeof(::System::Net::HttpStatusCode) == 0x14);
+    static_assert(sizeof(::System::Net::HttpStatusCode) == 0x4);
+    // Padding between fields: statusCode and: statusDescription
+    char __padding5[0x4] = {};
     // private System.String statusDescription
     // Size: 0x8
     // Offset: 0x50

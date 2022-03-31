@@ -71,11 +71,11 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public TMPro.TMP_TextElementType elementType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xC
     ::TMPro::TMP_TextElementType elementType;
     // Field size check
-    static_assert(sizeof(::TMPro::TMP_TextElementType) == 0x14);
+    static_assert(sizeof(::TMPro::TMP_TextElementType) == 0x4);
     // public TMPro.TMP_TextElement textElement
     // Size: 0x8
     // Offset: 0x10
@@ -291,11 +291,11 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(::TMPro::HighlightState) == 0x14);
     // public TMPro.FontStyles style
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x170
     ::TMPro::FontStyles style;
     // Field size check
-    static_assert(sizeof(::TMPro::FontStyles) == 0x14);
+    static_assert(sizeof(::TMPro::FontStyles) == 0x4);
     // public System.Boolean isVisible
     // Size: 0x1
     // Offset: 0x174

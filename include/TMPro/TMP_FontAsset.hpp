@@ -116,11 +116,13 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(::UnityEngine::Font*) == 0x8);
     // private TMPro.AtlasPopulationMode m_AtlasPopulationMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::TMPro::AtlasPopulationMode m_AtlasPopulationMode;
     // Field size check
-    static_assert(sizeof(::TMPro::AtlasPopulationMode) == 0x14);
+    static_assert(sizeof(::TMPro::AtlasPopulationMode) == 0x4);
+    // Padding between fields: m_AtlasPopulationMode and: m_FaceInfo
+    char __padding3[0x4] = {};
     // UnityEngine.TextCore.FaceInfo m_FaceInfo
     // Size: 0x5C
     // Offset: 0x50
@@ -228,11 +230,11 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // UnityEngine.TextCore.LowLevel.GlyphRenderMode m_AtlasRenderMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x114
     ::UnityEngine::TextCore::LowLevel::GlyphRenderMode m_AtlasRenderMode;
     // Field size check
-    static_assert(sizeof(::UnityEngine::TextCore::LowLevel::GlyphRenderMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::TextCore::LowLevel::GlyphRenderMode) == 0x4);
     // System.Collections.Generic.List`1<TMPro.TMP_Glyph> m_glyphInfoList
     // Size: 0x8
     // Offset: 0x118

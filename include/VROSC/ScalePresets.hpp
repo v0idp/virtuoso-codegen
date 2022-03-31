@@ -54,11 +54,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public VROSC.Note SelectedStartNote
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::VROSC::Note SelectedStartNote;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
     // public VROSC.ScalePreset[] Presets
     // Size: 0x8
     // Offset: 0x20

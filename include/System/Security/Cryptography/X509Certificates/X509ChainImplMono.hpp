@@ -63,11 +63,13 @@ namespace System::Security::Cryptography::X509Certificates {
     #endif
     #endif
     // private System.Security.Cryptography.X509Certificates.StoreLocation location
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Security::Cryptography::X509Certificates::StoreLocation location;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::StoreLocation) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::StoreLocation) == 0x4);
+    // Padding between fields: location and: elements
+    char __padding0[0x4] = {};
     // private System.Security.Cryptography.X509Certificates.X509ChainElementCollection elements
     // Size: 0x8
     // Offset: 0x18

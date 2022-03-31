@@ -108,11 +108,11 @@ namespace UnityEngine {
     // Padding between fields: m_HasGenerated and: m_LastValid
     char __padding3[0x3] = {};
     // private UnityEngine.TextGenerationError m_LastValid
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x84
     ::UnityEngine::TextGenerationError m_LastValid;
     // Field size check
-    static_assert(sizeof(::UnityEngine::TextGenerationError) == 0x14);
+    static_assert(sizeof(::UnityEngine::TextGenerationError) == 0x4);
     // private readonly System.Collections.Generic.List`1<UnityEngine.UIVertex> m_Verts
     // Size: 0x8
     // Offset: 0x88

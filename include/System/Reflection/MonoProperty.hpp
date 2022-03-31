@@ -99,17 +99,21 @@ namespace System::Reflection {
     // Field size check
     static_assert(sizeof(::System::IntPtr) == 0x8);
     // private System.Reflection.MonoPropertyInfo info
-    // Size: 0x3C
+    // Size: 0x2C
     // Offset: 0x20
     ::System::Reflection::MonoPropertyInfo info;
     // Field size check
-    static_assert(sizeof(::System::Reflection::MonoPropertyInfo) == 0x3C);
+    static_assert(sizeof(::System::Reflection::MonoPropertyInfo) == 0x2C);
+    // Padding between fields: info and: cached
+    char __padding2[0x4] = {};
     // private System.Reflection.PInfo cached
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::System::Reflection::PInfo cached;
     // Field size check
-    static_assert(sizeof(::System::Reflection::PInfo) == 0x14);
+    static_assert(sizeof(::System::Reflection::PInfo) == 0x4);
+    // Padding between fields: cached and: cached_getter
+    char __padding3[0x4] = {};
     // private System.Reflection.MonoProperty/System.Reflection.GetterAdapter cached_getter
     // Size: 0x8
     // Offset: 0x58

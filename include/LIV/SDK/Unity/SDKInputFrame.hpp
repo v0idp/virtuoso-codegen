@@ -57,11 +57,11 @@ namespace LIV::SDK::Unity {
     // Padding between fields: stageTransform and: features
     char __padding2[0x4] = {};
     // public LIV.SDK.Unity.FEATURES features
-    // Size: 0x18
+    // Size: 0x8
     // Offset: 0xE8
     ::LIV::SDK::Unity::FEATURES features;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::FEATURES) == 0x18);
+    static_assert(sizeof(::LIV::SDK::Unity::FEATURES) == 0x8);
     // public LIV.SDK.Unity.SDKClipPlane groundClipPlane
     // Size: 0x4C
     // Offset: 0xF0

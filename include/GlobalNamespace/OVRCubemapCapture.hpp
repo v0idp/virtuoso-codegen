@@ -71,11 +71,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public UnityEngine.KeyCode triggeredByKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x24
     ::UnityEngine::KeyCode triggeredByKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // public System.String pathName
     // Size: 0x8
     // Offset: 0x28

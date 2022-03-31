@@ -46,8 +46,8 @@ namespace System::Threading {
   // [TokenAttribute] Offset: FFFFFFFF
   class OSSpecificSynchronizationContext : public ::System::Threading::SynchronizationContext {
     public:
-    // Writing base type padding for base size: 0x24 to desired offset: 0x18
-    char ___base_padding[0xFFFFFFF4] = {};
+    // Writing base type padding for base size: 0x14 to desired offset: 0x18
+    char ___base_padding[0x4] = {};
     // Nested type: ::System::Threading::OSSpecificSynchronizationContext::InvocationEntryDelegate
     class InvocationEntryDelegate;
     // Nested type: ::System::Threading::OSSpecificSynchronizationContext::MonoPInvokeCallbackAttribute

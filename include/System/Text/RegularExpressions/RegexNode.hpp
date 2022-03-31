@@ -87,11 +87,11 @@ namespace System::Text::RegularExpressions {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // System.Text.RegularExpressions.RegexOptions _options
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::System::Text::RegularExpressions::RegexOptions options;
     // Field size check
-    static_assert(sizeof(::System::Text::RegularExpressions::RegexOptions) == 0x14);
+    static_assert(sizeof(::System::Text::RegularExpressions::RegexOptions) == 0x4);
     // System.Text.RegularExpressions.RegexNode _next
     // Size: 0x8
     // Offset: 0x38

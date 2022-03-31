@@ -70,11 +70,11 @@ namespace DG::Tweening::Plugins::Core::PathCore {
     // Field size check
     static_assert(sizeof(::ArrayW<float>) == 0x8);
     // DG.Tweening.PathType type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::DG::Tweening::PathType type;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::PathType) == 0x14);
+    static_assert(sizeof(::DG::Tweening::PathType) == 0x4);
     // System.Int32 subdivisionsXSegment
     // Size: 0x4
     // Offset: 0x1C

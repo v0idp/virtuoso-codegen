@@ -107,17 +107,17 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::HelmWrapper*) == 0x8);
     // private VROSC.SoundSource _currentSoundSource
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::VROSC::SoundSource currentSoundSource;
     // Field size check
-    static_assert(sizeof(::VROSC::SoundSource) == 0x14);
+    static_assert(sizeof(::VROSC::SoundSource) == 0x4);
     // private VROSC.WidgetSettings/VROSC.Identifier _currentInstrumentId
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::VROSC::WidgetSettings::Identifier currentInstrumentId;
     // Field size check
-    static_assert(sizeof(::VROSC::WidgetSettings::Identifier) == 0x14);
+    static_assert(sizeof(::VROSC::WidgetSettings::Identifier) == 0x4);
     // private System.Boolean _patchSet
     // Size: 0x1
     // Offset: 0x48

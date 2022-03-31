@@ -52,11 +52,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     // public VROSC.HandType handType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x2C
     ::VROSC::HandType handType;
     // Field size check
-    static_assert(sizeof(::VROSC::HandType) == 0x14);
+    static_assert(sizeof(::VROSC::HandType) == 0x4);
     // private System.Runtime.CompilerServices.TaskAwaiter <>u__1
     // Size: 0x8
     // Offset: 0x30

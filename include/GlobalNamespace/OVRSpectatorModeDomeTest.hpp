@@ -94,11 +94,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     // private OVRPlugin/Media/PlatformCameraMode camMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::GlobalNamespace::OVRPlugin::Media::PlatformCameraMode camMode;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Media::PlatformCameraMode) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Media::PlatformCameraMode) == 0x4);
     // private System.Boolean readyToSwitch
     // Size: 0x1
     // Offset: 0x4C

@@ -121,11 +121,11 @@ namespace System::Security::Cryptography {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private System.Security.Cryptography.CryptoStreamMode _transformMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x58
     ::System::Security::Cryptography::CryptoStreamMode transformMode;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::CryptoStreamMode) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::CryptoStreamMode) == 0x4);
     // private System.Boolean _canRead
     // Size: 0x1
     // Offset: 0x5C

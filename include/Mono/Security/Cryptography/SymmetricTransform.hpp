@@ -94,11 +94,11 @@ namespace Mono::Security::Cryptography {
     // Field size check
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     // protected System.Security.Cryptography.PaddingMode padmode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::System::Security::Cryptography::PaddingMode padmode;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::PaddingMode) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::PaddingMode) == 0x4);
     // protected System.Int32 FeedBackByte
     // Size: 0x4
     // Offset: 0x44

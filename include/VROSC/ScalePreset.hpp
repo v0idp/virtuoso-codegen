@@ -61,11 +61,13 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     // [BitMaskAttribute] Offset: 0x66F484
     // public VROSC.Scale Scale
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::Scale Scale;
     // Field size check
-    static_assert(sizeof(::VROSC::Scale) == 0x14);
+    static_assert(sizeof(::VROSC::Scale) == 0x4);
+    // Padding between fields: Scale and: NotePriorities
+    char __padding1[0x4] = {};
     // public System.Collections.Generic.List`1<VROSC.ScalePreset/VROSC.NotePriority> NotePriorities
     // Size: 0x8
     // Offset: 0x20

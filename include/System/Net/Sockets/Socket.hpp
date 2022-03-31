@@ -151,23 +151,25 @@ namespace System::Net::Sockets {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private System.Net.Sockets.AddressFamily addressFamily
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::System::Net::Sockets::AddressFamily addressFamily;
     // Field size check
-    static_assert(sizeof(::System::Net::Sockets::AddressFamily) == 0x14);
+    static_assert(sizeof(::System::Net::Sockets::AddressFamily) == 0x4);
     // private System.Net.Sockets.SocketType socketType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::System::Net::Sockets::SocketType socketType;
     // Field size check
-    static_assert(sizeof(::System::Net::Sockets::SocketType) == 0x14);
+    static_assert(sizeof(::System::Net::Sockets::SocketType) == 0x4);
     // private System.Net.Sockets.ProtocolType protocolType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::System::Net::Sockets::ProtocolType protocolType;
     // Field size check
-    static_assert(sizeof(::System::Net::Sockets::ProtocolType) == 0x14);
+    static_assert(sizeof(::System::Net::Sockets::ProtocolType) == 0x4);
+    // Padding between fields: protocolType and: m_Handle
+    char __padding6[0x4] = {};
     // System.Net.Sockets.SafeSocketHandle m_Handle
     // Size: 0x8
     // Offset: 0x28

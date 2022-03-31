@@ -259,11 +259,13 @@ namespace GlobalNamespace {
     // Padding between fields: audioMute and: loopback
     char __padding2[0x3] = {};
     // public UnityEngine.KeyCode loopback
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::UnityEngine::KeyCode loopback;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
+    // Padding between fields: loopback and: VMPresets
+    char __padding3[0x4] = {};
     // private OVRVoiceModContext/VMPreset[] VMPresets
     // Size: 0x8
     // Offset: 0x30

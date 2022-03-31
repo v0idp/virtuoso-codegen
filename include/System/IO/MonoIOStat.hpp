@@ -28,11 +28,13 @@ namespace System::IO {
     public:
     public:
     // public System.IO.FileAttributes fileAttributes
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::System::IO::FileAttributes fileAttributes;
     // Field size check
-    static_assert(sizeof(::System::IO::FileAttributes) == 0x14);
+    static_assert(sizeof(::System::IO::FileAttributes) == 0x4);
+    // Padding between fields: fileAttributes and: Length
+    char __padding0[0x4] = {};
     // public System.Int64 Length
     // Size: 0x8
     // Offset: 0x8

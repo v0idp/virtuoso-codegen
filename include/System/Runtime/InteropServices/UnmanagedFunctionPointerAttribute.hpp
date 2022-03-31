@@ -44,17 +44,17 @@ namespace System::Runtime::InteropServices {
     #endif
     #endif
     // private System.Runtime.InteropServices.CallingConvention m_callingConvention
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Runtime::InteropServices::CallingConvention m_callingConvention;
     // Field size check
-    static_assert(sizeof(::System::Runtime::InteropServices::CallingConvention) == 0x14);
+    static_assert(sizeof(::System::Runtime::InteropServices::CallingConvention) == 0x4);
     // public System.Runtime.InteropServices.CharSet CharSet
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::System::Runtime::InteropServices::CharSet CharSet;
     // Field size check
-    static_assert(sizeof(::System::Runtime::InteropServices::CharSet) == 0x14);
+    static_assert(sizeof(::System::Runtime::InteropServices::CharSet) == 0x4);
     // public System.Boolean BestFitMapping
     // Size: 0x1
     // Offset: 0x18

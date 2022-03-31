@@ -35,11 +35,11 @@ namespace GlobalNamespace {
     public:
     public:
     // public ovrAvatarBodyPartType TypeIndex
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::ovrAvatarBodyPartType TypeIndex;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarBodyPartType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarBodyPartType) == 0x4);
     // public UnityEngine.Color Color
     // Size: 0x10
     // Offset: 0x4

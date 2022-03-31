@@ -29,11 +29,11 @@ namespace LIV::SDK::Unity {
     public:
     public:
     // public LIV.SDK.Unity.FEATURES supportedFeatures
-    // Size: 0x18
+    // Size: 0x8
     // Offset: 0x0
     ::LIV::SDK::Unity::FEATURES supportedFeatures;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::FEATURES) == 0x18);
+    static_assert(sizeof(::LIV::SDK::Unity::FEATURES) == 0x8);
     // public System.String engineName
     // Size: 0x8
     // Offset: 0x8

@@ -89,11 +89,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::Runtime::Serialization::ISurrogateSelector*) == 0x8);
     // System.Runtime.Serialization.StreamingContext m_context
-    // Size: 0x1C
+    // Size: 0xC
     // Offset: 0x18
     ::System::Runtime::Serialization::StreamingContext m_context;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0x1C);
+    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
+    // Padding between fields: m_context and: m_binder
+    char __padding1[0x4] = {};
     // System.Runtime.Serialization.SerializationBinder m_binder
     // Size: 0x8
     // Offset: 0x28
@@ -101,23 +103,25 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::Runtime::Serialization::SerializationBinder*) == 0x8);
     // System.Runtime.Serialization.Formatters.FormatterTypeStyle m_typeFormat
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::System::Runtime::Serialization::Formatters::FormatterTypeStyle m_typeFormat;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::FormatterTypeStyle) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::FormatterTypeStyle) == 0x4);
     // System.Runtime.Serialization.Formatters.FormatterAssemblyStyle m_assemblyFormat
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle m_assemblyFormat;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle) == 0x4);
     // System.Runtime.Serialization.Formatters.TypeFilterLevel m_securityLevel
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::System::Runtime::Serialization::Formatters::TypeFilterLevel m_securityLevel;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::TypeFilterLevel) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::TypeFilterLevel) == 0x4);
+    // Padding between fields: m_securityLevel and: m_crossAppDomainArray
+    char __padding5[0x4] = {};
     // System.Object[] m_crossAppDomainArray
     // Size: 0x8
     // Offset: 0x40

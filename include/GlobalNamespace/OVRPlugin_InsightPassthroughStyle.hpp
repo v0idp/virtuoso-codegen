@@ -31,11 +31,11 @@ namespace GlobalNamespace {
     public:
     public:
     // public OVRPlugin/InsightPassthroughStyleFlags Flags
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::OVRPlugin::InsightPassthroughStyleFlags Flags;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::InsightPassthroughStyleFlags) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::InsightPassthroughStyleFlags) == 0x4);
     // public System.Single TextureOpacityFactor
     // Size: 0x4
     // Offset: 0x4
@@ -49,11 +49,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::GlobalNamespace::OVRPlugin::Colorf) == 0x10);
     // public OVRPlugin/InsightPassthroughColorMapType TextureColorMapType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType TextureColorMapType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType) == 0x4);
     // public System.UInt32 TextureColorMapDataSize
     // Size: 0x4
     // Offset: 0x1C

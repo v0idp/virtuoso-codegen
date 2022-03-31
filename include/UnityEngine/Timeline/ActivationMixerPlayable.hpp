@@ -59,11 +59,11 @@ namespace UnityEngine::Timeline {
     #endif
     #endif
     // private UnityEngine.Timeline.ActivationTrack/UnityEngine.Timeline.PostPlaybackState m_PostPlaybackState
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::UnityEngine::Timeline::ActivationTrack::PostPlaybackState m_PostPlaybackState;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Timeline::ActivationTrack::PostPlaybackState) == 0x14);
+    static_assert(sizeof(::UnityEngine::Timeline::ActivationTrack::PostPlaybackState) == 0x4);
     // private System.Boolean m_BoundGameObjectInitialStateIsActive
     // Size: 0x1
     // Offset: 0x14

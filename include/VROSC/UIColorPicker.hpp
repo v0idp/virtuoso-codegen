@@ -97,11 +97,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::InputDevice*) == 0x8);
     // private VROSC.TriggerButton _grabbingButton
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xB0
     ::VROSC::TriggerButton grabbingButton;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     // private System.Boolean _uiHelperActive
     // Size: 0x1
     // Offset: 0xB4

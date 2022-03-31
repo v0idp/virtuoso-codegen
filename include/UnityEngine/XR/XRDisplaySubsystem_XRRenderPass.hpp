@@ -54,11 +54,11 @@ namespace UnityEngine::XR {
     // Padding between fields: renderTarget and: renderTargetDesc
     char __padding2[0x4] = {};
     // public UnityEngine.RenderTextureDescriptor renderTargetDesc
-    // Size: 0x44
+    // Size: 0x34
     // Offset: 0x38
     ::UnityEngine::RenderTextureDescriptor renderTargetDesc;
     // Field size check
-    static_assert(sizeof(::UnityEngine::RenderTextureDescriptor) == 0x44);
+    static_assert(sizeof(::UnityEngine::RenderTextureDescriptor) == 0x34);
     // public System.Boolean shouldFillOutDepth
     // Size: 0x1
     // Offset: 0x6C

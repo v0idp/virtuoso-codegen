@@ -74,11 +74,11 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     // private TMPro.TextContainerAnchors m_anchorPosition
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x24
     ::TMPro::TextContainerAnchors m_anchorPosition;
     // Field size check
-    static_assert(sizeof(::TMPro::TextContainerAnchors) == 0x14);
+    static_assert(sizeof(::TMPro::TextContainerAnchors) == 0x4);
     // private UnityEngine.Rect m_rect
     // Size: 0x10
     // Offset: 0x28

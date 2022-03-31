@@ -37,8 +37,6 @@ namespace System::Security::Cryptography {
   // [ComVisibleAttribute] Offset: 57B7C8
   class RC2 : public ::System::Security::Cryptography::SymmetricAlgorithm {
     public:
-    // Writing base type padding for base size: 0x54 to desired offset: 0x44
-    char ___base_padding[0xFFFFFFF0] = {};
     #ifdef USE_CODEGEN_FIELDS
     public:
     #else

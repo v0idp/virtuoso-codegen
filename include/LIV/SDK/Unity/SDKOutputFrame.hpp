@@ -31,11 +31,11 @@ namespace LIV::SDK::Unity {
     public:
     public:
     // public LIV.SDK.Unity.RENDERING_PIPELINE renderingPipeline
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::LIV::SDK::Unity::RENDERING_PIPELINE renderingPipeline;
     // Field size check
-    static_assert(sizeof(::LIV::SDK::Unity::RENDERING_PIPELINE) == 0x14);
+    static_assert(sizeof(::LIV::SDK::Unity::RENDERING_PIPELINE) == 0x4);
     // public LIV.SDK.Unity.SDKTrackedSpace trackedSpace
     // Size: 0xA8
     // Offset: 0x4

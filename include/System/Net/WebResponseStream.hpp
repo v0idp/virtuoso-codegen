@@ -171,11 +171,13 @@ namespace System::Net {
     // Field size check
     static_assert(sizeof(::System::Net::WebHeaderCollection*) == 0x8);
     // private System.Net.HttpStatusCode <StatusCode>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xB0
     ::System::Net::HttpStatusCode StatusCode;
     // Field size check
-    static_assert(sizeof(::System::Net::HttpStatusCode) == 0x14);
+    static_assert(sizeof(::System::Net::HttpStatusCode) == 0x4);
+    // Padding between fields: StatusCode and: StatusDescription
+    char __padding11[0x4] = {};
     // private System.String <StatusDescription>k__BackingField
     // Size: 0x8
     // Offset: 0xB8

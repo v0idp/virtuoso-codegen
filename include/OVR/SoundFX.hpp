@@ -87,11 +87,11 @@ namespace OVR {
     static_assert(sizeof(::StringW) == 0x8);
     // [TooltipAttribute] Offset: 0x5D5A6C
     // public OVR.SoundFXNext playback
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::OVR::SoundFXNext playback;
     // Field size check
-    static_assert(sizeof(::OVR::SoundFXNext) == 0x14);
+    static_assert(sizeof(::OVR::SoundFXNext) == 0x4);
     // [RangeAttribute] Offset: 0x5D5AA4
     // [TooltipAttribute] Offset: 0x5D5AA4
     // public System.Single volume
@@ -118,11 +118,13 @@ namespace OVR {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     // [TooltipAttribute] Offset: 0x5D5BB4
     // public UnityEngine.AudioRolloffMode falloffCurve
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::UnityEngine::AudioRolloffMode falloffCurve;
     // Field size check
-    static_assert(sizeof(::UnityEngine::AudioRolloffMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::AudioRolloffMode) == 0x4);
+    // Padding between fields: falloffCurve and: volumeFalloffCurve
+    char __padding5[0x4] = {};
     // [TooltipAttribute] Offset: 0x5D5BEC
     // public UnityEngine.AnimationCurve volumeFalloffCurve
     // Size: 0x8
@@ -155,11 +157,11 @@ namespace OVR {
     static_assert(sizeof(float) == 0x4);
     // [TooltipAttribute] Offset: 0x5D5D08
     // public OVR.SoundPriority priority
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::OVR::SoundPriority priority;
     // Field size check
-    static_assert(sizeof(::OVR::SoundPriority) == 0x14);
+    static_assert(sizeof(::OVR::SoundPriority) == 0x4);
     // [TooltipAttribute] Offset: 0x5D5D40
     // [MinMaxAttribute] Offset: 0x5D5D40
     // public UnityEngine.Vector2 delay

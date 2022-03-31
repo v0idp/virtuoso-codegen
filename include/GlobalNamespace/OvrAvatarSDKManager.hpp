@@ -97,11 +97,11 @@ namespace GlobalNamespace {
       // Padding between fields: useCombinedMesh and: lod
       char __padding2[0x3] = {};
       // public ovrAvatarAssetLevelOfDetail _lod
-      // Size: 0x14
+      // Size: 0x4
       // Offset: 0x14
       ::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod;
       // Field size check
-      static_assert(sizeof(::GlobalNamespace::ovrAvatarAssetLevelOfDetail) == 0x14);
+      static_assert(sizeof(::GlobalNamespace::ovrAvatarAssetLevelOfDetail) == 0x4);
       // public System.Boolean _forceMobileTextureFormat
       // Size: 0x1
       // Offset: 0x18
@@ -111,17 +111,17 @@ namespace GlobalNamespace {
       // Padding between fields: forceMobileTextureFormat and: lookVersion
       char __padding4[0x3] = {};
       // public ovrAvatarLookAndFeelVersion _lookVersion
-      // Size: 0x14
+      // Size: 0x4
       // Offset: 0x1C
       ::GlobalNamespace::ovrAvatarLookAndFeelVersion lookVersion;
       // Field size check
-      static_assert(sizeof(::GlobalNamespace::ovrAvatarLookAndFeelVersion) == 0x14);
+      static_assert(sizeof(::GlobalNamespace::ovrAvatarLookAndFeelVersion) == 0x4);
       // public ovrAvatarLookAndFeelVersion _fallbackVersion
-      // Size: 0x14
+      // Size: 0x4
       // Offset: 0x20
       ::GlobalNamespace::ovrAvatarLookAndFeelVersion fallbackVersion;
       // Field size check
-      static_assert(sizeof(::GlobalNamespace::ovrAvatarLookAndFeelVersion) == 0x14);
+      static_assert(sizeof(::GlobalNamespace::ovrAvatarLookAndFeelVersion) == 0x4);
       // public System.Boolean _enableExpressive
       // Size: 0x1
       // Offset: 0x24
@@ -206,11 +206,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::GlobalNamespace::OvrAvatarTextureCopyManager*) == 0x8);
     // public ovrAvatarLogLevel LoggingLevel
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::GlobalNamespace::ovrAvatarLogLevel LoggingLevel;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarLogLevel) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarLogLevel) == 0x4);
+    // Padding between fields: LoggingLevel and: avatarSpecificationQueue
+    char __padding6[0x4] = {};
     // private System.Collections.Generic.Queue`1<OvrAvatarSDKManager/AvatarSpecRequestParams> avatarSpecificationQueue
     // Size: 0x8
     // Offset: 0x50

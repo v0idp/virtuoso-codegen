@@ -47,11 +47,11 @@ namespace VROSC {
     #endif
     #endif
     // public VROSC.ChangeFlags Flags
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::ChangeFlags Flags;
     // Field size check
-    static_assert(sizeof(::VROSC::ChangeFlags) == 0x14);
+    static_assert(sizeof(::VROSC::ChangeFlags) == 0x4);
     // public System.Int32 SaveVersion
     // Size: 0x4
     // Offset: 0x14

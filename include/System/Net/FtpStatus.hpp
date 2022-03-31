@@ -39,11 +39,13 @@ namespace System::Net {
     #endif
     #endif
     // private readonly System.Net.FtpStatusCode statusCode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Net::FtpStatusCode statusCode;
     // Field size check
-    static_assert(sizeof(::System::Net::FtpStatusCode) == 0x14);
+    static_assert(sizeof(::System::Net::FtpStatusCode) == 0x4);
+    // Padding between fields: statusCode and: statusDescription
+    char __padding0[0x4] = {};
     // private readonly System.String statusDescription
     // Size: 0x8
     // Offset: 0x18

@@ -54,11 +54,11 @@ namespace AudioHelm {
     // Field size check
     static_assert(sizeof(::AudioHelm::HelmController*) == 0x8);
     // public AudioHelm.Param param
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::AudioHelm::Param param;
     // Field size check
-    static_assert(sizeof(::AudioHelm::Param) == 0x14);
+    static_assert(sizeof(::AudioHelm::Param) == 0x4);
     // public System.Single onValue
     // Size: 0x4
     // Offset: 0x24

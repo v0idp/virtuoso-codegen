@@ -125,17 +125,17 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::LayerMask) == 0x4);
     // [HeaderAttribute] Offset: 0x66DF4C
     // private VROSC.TriggerButton _pinButton
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::VROSC::TriggerButton pinButton;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     // private VROSC.TriggerButton _attractButton
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::VROSC::TriggerButton attractButton;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     // private System.Single _attractInDuration
     // Size: 0x4
     // Offset: 0x4C

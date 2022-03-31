@@ -47,11 +47,11 @@ namespace System {
     // Padding between fields: canThrow and: m_failure
     char __padding1[0x3] = {};
     // System.Enum/System.ParseFailureKind m_failure
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xC
     ::System::Enum::ParseFailureKind m_failure;
     // Field size check
-    static_assert(sizeof(::System::Enum::ParseFailureKind) == 0x14);
+    static_assert(sizeof(::System::Enum::ParseFailureKind) == 0x4);
     // System.String m_failureMessageID
     // Size: 0x8
     // Offset: 0x10

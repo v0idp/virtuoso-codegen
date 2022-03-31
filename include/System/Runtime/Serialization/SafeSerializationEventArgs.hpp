@@ -51,11 +51,13 @@ namespace System::Runtime::Serialization {
     #endif
     #endif
     // private System.Runtime.Serialization.StreamingContext m_streamingContext
-    // Size: 0x1C
+    // Size: 0xC
     // Offset: 0x10
     ::System::Runtime::Serialization::StreamingContext m_streamingContext;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0x1C);
+    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
+    // Padding between fields: m_streamingContext and: m_serializedStates
+    char __padding0[0x4] = {};
     // private System.Collections.Generic.List`1<System.Object> m_serializedStates
     // Size: 0x8
     // Offset: 0x20

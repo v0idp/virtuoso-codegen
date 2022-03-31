@@ -54,11 +54,11 @@ namespace AudioHelm {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public UnityEngine.KeyCode key
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::UnityEngine::KeyCode key;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // private UnityEngine.Vector3 surface_normal_
     // Size: 0xC
     // Offset: 0x20

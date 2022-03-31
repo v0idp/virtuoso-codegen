@@ -28,11 +28,11 @@ namespace System::Globalization {
     public:
     public:
     // System.Globalization.HebrewNumber/System.Globalization.HS state
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::System::Globalization::HebrewNumber::HS state;
     // Field size check
-    static_assert(sizeof(::System::Globalization::HebrewNumber::HS) == 0x14);
+    static_assert(sizeof(::System::Globalization::HebrewNumber::HS) == 0x4);
     // System.Int32 result
     // Size: 0x4
     // Offset: 0x4

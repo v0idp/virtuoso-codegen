@@ -56,11 +56,11 @@ namespace VROSC {
     #endif
     #endif
     // private VROSC.Axis _slideAxis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4C
     ::VROSC::Axis slideAxis;
     // Field size check
-    static_assert(sizeof(::VROSC::Axis) == 0x14);
+    static_assert(sizeof(::VROSC::Axis) == 0x4);
     // private VROSC.IntField _sensitivity
     // Size: 0x8
     // Offset: 0x50

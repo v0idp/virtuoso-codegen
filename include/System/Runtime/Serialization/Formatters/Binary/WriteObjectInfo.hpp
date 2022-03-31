@@ -144,11 +144,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::Runtime::Serialization::ISerializationSurrogate*) == 0x8);
     // System.Runtime.Serialization.StreamingContext context
-    // Size: 0x1C
+    // Size: 0xC
     // Offset: 0x50
     ::System::Runtime::Serialization::StreamingContext context;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0x1C);
+    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
+    // Padding between fields: context and: serObjectInfoInit
+    char __padding11[0x4] = {};
     // System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit
     // Size: 0x8
     // Offset: 0x60

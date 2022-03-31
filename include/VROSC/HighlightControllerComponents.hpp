@@ -111,11 +111,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::ControllerShaderEffects*) == 0x8);
     // private VROSC.HandType _hand
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x58
     ::VROSC::HandType hand;
     // Field size check
-    static_assert(sizeof(::VROSC::HandType) == 0x14);
+    static_assert(sizeof(::VROSC::HandType) == 0x4);
     // private System.Boolean _dirty
     // Size: 0x1
     // Offset: 0x5C

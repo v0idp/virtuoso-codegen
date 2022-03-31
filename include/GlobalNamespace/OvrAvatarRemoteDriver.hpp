@@ -43,8 +43,6 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarRemoteDriver : public ::GlobalNamespace::OvrAvatarDriver {
     public:
-    // Writing base type padding for base size: 0xC0 to desired offset: 0xB0
-    char ___base_padding[0xFFFFFFF0] = {};
     #ifdef USE_CODEGEN_FIELDS
     public:
     #else

@@ -165,11 +165,11 @@ namespace VROSC {
     // Padding between fields: SetRecordingLengthToFirstLoopLength and: MetronomeMode
     char __padding18[0x1] = {};
     // public VROSC.Metronome/VROSC.Mode MetronomeMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4C
     ::VROSC::Metronome::Mode MetronomeMode;
     // Field size check
-    static_assert(sizeof(::VROSC::Metronome::Mode) == 0x14);
+    static_assert(sizeof(::VROSC::Metronome::Mode) == 0x4);
     // public System.String SelectedEnvironment
     // Size: 0x8
     // Offset: 0x50

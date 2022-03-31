@@ -60,11 +60,11 @@ namespace System::Reflection {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // System.Reflection.ExceptionHandlingClauseOptions flags
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::System::Reflection::ExceptionHandlingClauseOptions flags;
     // Field size check
-    static_assert(sizeof(::System::Reflection::ExceptionHandlingClauseOptions) == 0x14);
+    static_assert(sizeof(::System::Reflection::ExceptionHandlingClauseOptions) == 0x4);
     // System.Int32 try_offset
     // Size: 0x4
     // Offset: 0x20

@@ -38,11 +38,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::GlobalNamespace::ovrAvatarTransform) == 0x28);
     // public ovrAvatarDebugContext context
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::GlobalNamespace::ovrAvatarDebugContext context;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarDebugContext) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarDebugContext) == 0x4);
+    // Padding between fields: context and: text
+    char __padding1[0x4] = {};
     // public System.IntPtr text
     // Size: 0x8
     // Offset: 0x30

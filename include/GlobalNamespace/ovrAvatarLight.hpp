@@ -36,11 +36,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(uint) == 0x4);
     // public ovrAvatarLightType type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::GlobalNamespace::ovrAvatarLightType type;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarLightType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarLightType) == 0x4);
     // public System.Single intensity
     // Size: 0x4
     // Offset: 0x8

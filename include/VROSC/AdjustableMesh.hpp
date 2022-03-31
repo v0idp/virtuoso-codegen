@@ -95,11 +95,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::UnityEngine::Mesh*) == 0x8);
     // private VROSC.AdjustableMeshUvs/VROSC.Channel _uvChannel
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::VROSC::AdjustableMeshUvs::Channel uvChannel;
     // Field size check
-    static_assert(sizeof(::VROSC::AdjustableMeshUvs::Channel) == 0x14);
+    static_assert(sizeof(::VROSC::AdjustableMeshUvs::Channel) == 0x4);
     // private System.Boolean _floatColors
     // Size: 0x1
     // Offset: 0x3C
@@ -129,11 +129,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // protected VROSC.AnimatedAppear/VROSC.Mode _appearMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4C
     ::VROSC::AnimatedAppear::Mode appearMode;
     // Field size check
-    static_assert(sizeof(::VROSC::AnimatedAppear::Mode) == 0x14);
+    static_assert(sizeof(::VROSC::AnimatedAppear::Mode) == 0x4);
     // protected System.Boolean _useFlash
     // Size: 0x1
     // Offset: 0x50

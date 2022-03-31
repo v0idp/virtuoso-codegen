@@ -77,17 +77,17 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::NoteBoard*) == 0x8);
     // private VROSC.NoteBoard/VROSC.PlayAxis _playAxis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x90
     ::VROSC::NoteBoard::PlayAxis playAxis;
     // Field size check
-    static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x14);
+    static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x4);
     // private VROSC.NoteBoardNote/VROSC.Coloring _coloring
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x94
     ::VROSC::NoteBoardNote::Coloring coloring;
     // Field size check
-    static_assert(sizeof(::VROSC::NoteBoardNote::Coloring) == 0x14);
+    static_assert(sizeof(::VROSC::NoteBoardNote::Coloring) == 0x4);
     // private VROSC.IntField _octave
     // Size: 0x8
     // Offset: 0x98

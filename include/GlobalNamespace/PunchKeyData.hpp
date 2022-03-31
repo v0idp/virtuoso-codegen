@@ -42,11 +42,13 @@ namespace GlobalNamespace {
     #endif
     #endif
     // private Key/Type _keyType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::GlobalNamespace::Key::Type keyType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::Key::Type) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::Key::Type) == 0x4);
+    // Padding between fields: keyType and: keyCapChar
+    char __padding0[0x4] = {};
     // private System.String _keyCapChar
     // Size: 0x8
     // Offset: 0x20

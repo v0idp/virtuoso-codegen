@@ -98,11 +98,11 @@ namespace UnityEngine {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // UnityEngine.AnimationEventSource m_Source
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::UnityEngine::AnimationEventSource m_Source;
     // Field size check
-    static_assert(sizeof(::UnityEngine::AnimationEventSource) == 0x14);
+    static_assert(sizeof(::UnityEngine::AnimationEventSource) == 0x4);
     // UnityEngine.AnimationState m_StateSender
     // Size: 0x8
     // Offset: 0x40

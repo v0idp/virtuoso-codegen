@@ -734,11 +734,11 @@ namespace BeautifyEffect {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public UnityEngine.FilterMode depthOfFieldFilterMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1EC
     ::UnityEngine::FilterMode depthOfFieldFilterMode;
     // Field size check
-    static_assert(sizeof(::UnityEngine::FilterMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::FilterMode) == 0x4);
     // public UnityEngine.LayerMask depthOfFieldTransparencyLayerMask
     // Size: 0x4
     // Offset: 0x1F0
@@ -804,11 +804,11 @@ namespace BeautifyEffect {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public BeautifyEffect.BEAUTIFY_TMO tonemap
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x214
     ::BeautifyEffect::BEAUTIFY_TMO tonemap;
     // Field size check
-    static_assert(sizeof(::BeautifyEffect::BEAUTIFY_TMO) == 0x14);
+    static_assert(sizeof(::BeautifyEffect::BEAUTIFY_TMO) == 0x4);
     // public System.Boolean sunFlares
     // Size: 0x1
     // Offset: 0x218

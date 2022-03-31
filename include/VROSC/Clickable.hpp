@@ -59,11 +59,11 @@ namespace VROSC {
     #endif
     // [BitMaskAttribute] Offset: 0x66E014
     // private VROSC.TriggerButton _reactsTo
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x6C
     ::VROSC::TriggerButton reactsTo;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     // private System.Boolean <IsPressed>k__BackingField
     // Size: 0x1
     // Offset: 0x70

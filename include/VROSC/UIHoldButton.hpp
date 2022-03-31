@@ -141,11 +141,13 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::InputDevice*) == 0x8);
     // private VROSC.TriggerButton _heldByButton
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xD0
     ::VROSC::TriggerButton heldByButton;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
+    // Padding between fields: heldByButton and: OnPressCompleted
+    char __padding10[0x4] = {};
     // public System.Action OnPressCompleted
     // Size: 0x8
     // Offset: 0xD8

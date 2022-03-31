@@ -62,11 +62,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::AdjustableMesh*) == 0x8);
     // public VROSC.AnimatedAppear/VROSC.Mode _mode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::AnimatedAppear::Mode mode;
     // Field size check
-    static_assert(sizeof(::VROSC::AnimatedAppear::Mode) == 0x14);
+    static_assert(sizeof(::VROSC::AnimatedAppear::Mode) == 0x4);
     // private UnityEngine.Color _tintColor
     // Size: 0x10
     // Offset: 0x1C

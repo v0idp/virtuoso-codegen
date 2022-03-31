@@ -98,11 +98,13 @@ namespace System::Text::RegularExpressions {
     // Field size check
     static_assert(sizeof(::System::Text::RegularExpressions::RegexRunnerFactory*) == 0x8);
     // protected internal System.Text.RegularExpressions.RegexOptions roptions
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::System::Text::RegularExpressions::RegexOptions roptions;
     // Field size check
-    static_assert(sizeof(::System::Text::RegularExpressions::RegexOptions) == 0x14);
+    static_assert(sizeof(::System::Text::RegularExpressions::RegexOptions) == 0x4);
+    // Padding between fields: roptions and: internalMatchTimeout
+    char __padding2[0x4] = {};
     // [OptionalFieldAttribute] Offset: 0x592E54
     // protected internal System.TimeSpan internalMatchTimeout
     // Size: 0x8

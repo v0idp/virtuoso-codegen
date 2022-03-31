@@ -109,17 +109,19 @@ namespace Oculus::Platform::Models {
     // Padding between fields: IsMembershipLocked and: JoinPolicy
     char __padding6[0x3] = {};
     // public readonly Oculus.Platform.RoomJoinPolicy JoinPolicy
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::Oculus::Platform::RoomJoinPolicy JoinPolicy;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::RoomJoinPolicy) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::RoomJoinPolicy) == 0x4);
     // public readonly Oculus.Platform.RoomJoinability Joinability
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::Oculus::Platform::RoomJoinability Joinability;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::RoomJoinability) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::RoomJoinability) == 0x4);
+    // Padding between fields: Joinability and: MatchedUsersOptional
+    char __padding8[0x4] = {};
     // public readonly Oculus.Platform.Models.MatchmakingEnqueuedUserList MatchedUsersOptional
     // Size: 0x8
     // Offset: 0x50
@@ -174,11 +176,13 @@ namespace Oculus::Platform::Models {
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::TeamList*) == 0x8);
     // public readonly Oculus.Platform.RoomType Type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x90
     ::Oculus::Platform::RoomType Type;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::RoomType) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::RoomType) == 0x4);
+    // Padding between fields: Type and: UsersOptional
+    char __padding17[0x4] = {};
     // public readonly Oculus.Platform.Models.UserList UsersOptional
     // Size: 0x8
     // Offset: 0x98

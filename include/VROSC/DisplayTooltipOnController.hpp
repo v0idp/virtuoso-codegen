@@ -52,11 +52,13 @@ namespace VROSC {
     #endif
     #endif
     // private VROSC.HighlightControllerComponents/VROSC.Component _component
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::HighlightControllerComponents::Component component;
     // Field size check
-    static_assert(sizeof(::VROSC::HighlightControllerComponents::Component) == 0x14);
+    static_assert(sizeof(::VROSC::HighlightControllerComponents::Component) == 0x4);
+    // Padding between fields: component and: controllerInputNode
+    char __padding0[0x4] = {};
     // private VROSC.ControllerInputNode _controllerInputNode
     // Size: 0x8
     // Offset: 0x20

@@ -96,32 +96,32 @@ namespace Unity::IO::LowLevel::Unsafe {
     char __padding7[0x3] = {};
     // [DebuggerBrowsableAttribute] Offset: 0x56999C
     // private readonly Unity.IO.LowLevel.Unsafe.ProcessingState <State>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::Unity::IO::LowLevel::Unsafe::ProcessingState State;
     // Field size check
-    static_assert(sizeof(::Unity::IO::LowLevel::Unsafe::ProcessingState) == 0x14);
+    static_assert(sizeof(::Unity::IO::LowLevel::Unsafe::ProcessingState) == 0x4);
     // [DebuggerBrowsableAttribute] Offset: 0x5699D8
     // private readonly Unity.IO.LowLevel.Unsafe.FileReadType <ReadType>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::Unity::IO::LowLevel::Unsafe::FileReadType ReadType;
     // Field size check
-    static_assert(sizeof(::Unity::IO::LowLevel::Unsafe::FileReadType) == 0x14);
+    static_assert(sizeof(::Unity::IO::LowLevel::Unsafe::FileReadType) == 0x4);
     // [DebuggerBrowsableAttribute] Offset: 0x569A14
     // private readonly Unity.IO.LowLevel.Unsafe.Priority <PriorityLevel>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::Unity::IO::LowLevel::Unsafe::Priority PriorityLevel;
     // Field size check
-    static_assert(sizeof(::Unity::IO::LowLevel::Unsafe::Priority) == 0x14);
+    static_assert(sizeof(::Unity::IO::LowLevel::Unsafe::Priority) == 0x4);
     // [DebuggerBrowsableAttribute] Offset: 0x569A50
     // private readonly Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem <Subsystem>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem Subsystem;
     // Field size check
-    static_assert(sizeof(::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem) == 0x14);
+    static_assert(sizeof(::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem) == 0x4);
     // [DebuggerBrowsableAttribute] Offset: 0x569A8C
     // private readonly System.Double <RequestTimeMicroseconds>k__BackingField
     // Size: 0x8

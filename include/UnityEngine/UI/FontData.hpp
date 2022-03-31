@@ -68,11 +68,11 @@ namespace UnityEngine::UI {
     static_assert(sizeof(int) == 0x4);
     // [FormerlySerializedAsAttribute] Offset: 0x596A24
     // private UnityEngine.FontStyle m_FontStyle
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::UnityEngine::FontStyle m_FontStyle;
     // Field size check
-    static_assert(sizeof(::UnityEngine::FontStyle) == 0x14);
+    static_assert(sizeof(::UnityEngine::FontStyle) == 0x4);
     // private System.Boolean m_BestFit
     // Size: 0x1
     // Offset: 0x20
@@ -95,11 +95,11 @@ namespace UnityEngine::UI {
     static_assert(sizeof(int) == 0x4);
     // [FormerlySerializedAsAttribute] Offset: 0x596AA0
     // private UnityEngine.TextAnchor m_Alignment
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x2C
     ::UnityEngine::TextAnchor m_Alignment;
     // Field size check
-    static_assert(sizeof(::UnityEngine::TextAnchor) == 0x14);
+    static_assert(sizeof(::UnityEngine::TextAnchor) == 0x4);
     // private System.Boolean m_AlignByGeometry
     // Size: 0x1
     // Offset: 0x30
@@ -116,17 +116,17 @@ namespace UnityEngine::UI {
     // Padding between fields: m_RichText and: m_HorizontalOverflow
     char __padding8[0x2] = {};
     // private UnityEngine.HorizontalWrapMode m_HorizontalOverflow
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::UnityEngine::HorizontalWrapMode m_HorizontalOverflow;
     // Field size check
-    static_assert(sizeof(::UnityEngine::HorizontalWrapMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::HorizontalWrapMode) == 0x4);
     // private UnityEngine.VerticalWrapMode m_VerticalOverflow
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::UnityEngine::VerticalWrapMode m_VerticalOverflow;
     // Field size check
-    static_assert(sizeof(::UnityEngine::VerticalWrapMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::VerticalWrapMode) == 0x4);
     // private System.Single m_LineSpacing
     // Size: 0x4
     // Offset: 0x3C

@@ -77,11 +77,11 @@ namespace OVR {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public OVR.PreloadSounds preloadAudio
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x2C
     ::OVR::PreloadSounds preloadAudio;
     // Field size check
-    static_assert(sizeof(::OVR::PreloadSounds) == 0x14);
+    static_assert(sizeof(::OVR::PreloadSounds) == 0x4);
     // public System.Single volumeOverride
     // Size: 0x4
     // Offset: 0x30

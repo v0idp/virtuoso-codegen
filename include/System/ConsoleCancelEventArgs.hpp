@@ -40,11 +40,11 @@ namespace System {
     #endif
     #endif
     // private System.ConsoleSpecialKey _type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::ConsoleSpecialKey type;
     // Field size check
-    static_assert(sizeof(::System::ConsoleSpecialKey) == 0x14);
+    static_assert(sizeof(::System::ConsoleSpecialKey) == 0x4);
     // private System.Boolean _cancel
     // Size: 0x1
     // Offset: 0x14

@@ -34,11 +34,11 @@ namespace System::IO::Compression {
     #endif
     #endif
     // private System.IO.Compression.MatchState <State>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::IO::Compression::MatchState State;
     // Field size check
-    static_assert(sizeof(::System::IO::Compression::MatchState) == 0x14);
+    static_assert(sizeof(::System::IO::Compression::MatchState) == 0x4);
     // private System.Int32 <Position>k__BackingField
     // Size: 0x4
     // Offset: 0x14

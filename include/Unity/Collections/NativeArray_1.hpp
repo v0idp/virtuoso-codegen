@@ -165,11 +165,11 @@ namespace Unity::Collections {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // Unity.Collections.Allocator m_AllocatorLabel
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::Unity::Collections::Allocator m_AllocatorLabel;
     // Field size check
-    static_assert(sizeof(::Unity::Collections::Allocator) == 0x14);
+    static_assert(sizeof(::Unity::Collections::Allocator) == 0x4);
     public:
     // Creating value type constructor for type: NativeArray_1
     constexpr NativeArray_1(void* m_Buffer_ = {}, int m_Length_ = {}, ::Unity::Collections::Allocator m_AllocatorLabel_ = {}) noexcept : m_Buffer{m_Buffer_}, m_Length{m_Length_}, m_AllocatorLabel{m_AllocatorLabel_} {}

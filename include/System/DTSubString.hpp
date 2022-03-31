@@ -48,11 +48,11 @@ namespace System {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // System.DTSubStringType type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::DTSubStringType type;
     // Field size check
-    static_assert(sizeof(::System::DTSubStringType) == 0x14);
+    static_assert(sizeof(::System::DTSubStringType) == 0x4);
     // System.Int32 value
     // Size: 0x4
     // Offset: 0x14

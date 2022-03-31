@@ -78,11 +78,11 @@ namespace System::IO::Compression {
     // Field size check
     static_assert(sizeof(::System::IO::Compression::HuffmanTree*) == 0x8);
     // private System.IO.Compression.InflaterState _state
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::System::IO::Compression::InflaterState state;
     // Field size check
-    static_assert(sizeof(::System::IO::Compression::InflaterState) == 0x14);
+    static_assert(sizeof(::System::IO::Compression::InflaterState) == 0x4);
     // private System.Boolean _hasFormatReader
     // Size: 0x1
     // Offset: 0x34
@@ -98,11 +98,11 @@ namespace System::IO::Compression {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private System.IO.Compression.BlockType _blockType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::System::IO::Compression::BlockType blockType;
     // Field size check
-    static_assert(sizeof(::System::IO::Compression::BlockType) == 0x14);
+    static_assert(sizeof(::System::IO::Compression::BlockType) == 0x4);
     // private readonly System.Byte[] _blockLengthBuffer
     // Size: 0x8
     // Offset: 0x40

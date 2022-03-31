@@ -28,11 +28,11 @@ namespace UnityEngine {
     public:
     public:
     // public UnityEngine.AudioSpeakerMode speakerMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::UnityEngine::AudioSpeakerMode speakerMode;
     // Field size check
-    static_assert(sizeof(::UnityEngine::AudioSpeakerMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::AudioSpeakerMode) == 0x4);
     // public System.Int32 dspBufferSize
     // Size: 0x4
     // Offset: 0x4

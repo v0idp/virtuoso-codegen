@@ -91,11 +91,13 @@ namespace VROSC::UI {
     // Field size check
     static_assert(sizeof(::TMPro::TextMeshPro*) == 0x8);
     // private VROSC.WidgetSettings/VROSC.Identifier _id
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::VROSC::WidgetSettings::Identifier id;
     // Field size check
-    static_assert(sizeof(::VROSC::WidgetSettings::Identifier) == 0x14);
+    static_assert(sizeof(::VROSC::WidgetSettings::Identifier) == 0x4);
+    // Padding between fields: id and: isOnObject
+    char __padding2[0x4] = {};
     // private UnityEngine.GameObject _isOnObject
     // Size: 0x8
     // Offset: 0x30

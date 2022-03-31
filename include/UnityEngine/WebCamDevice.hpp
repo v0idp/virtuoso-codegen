@@ -55,11 +55,11 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     // [NativeNameAttribute] Offset: 0x5AC048
     // UnityEngine.WebCamKind m_Kind
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::UnityEngine::WebCamKind m_Kind;
     // Field size check
-    static_assert(sizeof(::UnityEngine::WebCamKind) == 0x14);
+    static_assert(sizeof(::UnityEngine::WebCamKind) == 0x4);
     // [NativeNameAttribute] Offset: 0x5AC080
     // UnityEngine.Resolution[] m_Resolutions
     // Size: 0x8

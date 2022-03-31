@@ -137,11 +137,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     // private OVROverlay/OverlayShape _LastShape
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x68
     ::GlobalNamespace::OVROverlay::OverlayShape LastShape;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVROverlay::OverlayShape) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVROverlay::OverlayShape) == 0x4);
     // private UnityEngine.Vector3 _LastPosition
     // Size: 0xC
     // Offset: 0x6C

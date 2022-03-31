@@ -40,11 +40,11 @@ namespace GlobalNamespace {
     #endif
     #endif
     // public OVRInput/RawButton toggleButton
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::GlobalNamespace::OVRInput::RawButton toggleButton;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRInput::RawButton) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRInput::RawButton) == 0x4);
     // private System.Boolean chromatic
     // Size: 0x1
     // Offset: 0x1C

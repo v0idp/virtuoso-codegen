@@ -94,17 +94,17 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::System::Collections::Generic::List_1<::StringW>*) == 0x8);
     // private VROSC.SessionsLibraryUI/VROSC.OrderingType _orderingType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::VROSC::SessionsLibraryUI::OrderingType orderingType;
     // Field size check
-    static_assert(sizeof(::VROSC::SessionsLibraryUI::OrderingType) == 0x14);
+    static_assert(sizeof(::VROSC::SessionsLibraryUI::OrderingType) == 0x4);
     // private VROSC.SessionsLibraryUI/VROSC.OrderingDirection _orderingDirection
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::VROSC::SessionsLibraryUI::OrderingDirection orderingDirection;
     // Field size check
-    static_assert(sizeof(::VROSC::SessionsLibraryUI::OrderingDirection) == 0x14);
+    static_assert(sizeof(::VROSC::SessionsLibraryUI::OrderingDirection) == 0x4);
     // private System.Collections.Generic.List`1<VROSC.SessionItemData> <SessionItems>k__BackingField
     // Size: 0x8
     // Offset: 0x40

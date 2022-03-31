@@ -37,17 +37,17 @@ namespace GlobalNamespace {
     public:
     public:
     // public OVRPlugin/OverlayShape Shape
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::OVRPlugin::OverlayShape Shape;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::OverlayShape) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::OverlayShape) == 0x4);
     // public OVRPlugin/LayerLayout Layout
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::GlobalNamespace::OVRPlugin::LayerLayout Layout;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::LayerLayout) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::LayerLayout) == 0x4);
     // public OVRPlugin/Sizei TextureSize
     // Size: 0x8
     // Offset: 0x8
@@ -67,11 +67,11 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public OVRPlugin/EyeTextureFormat Format
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::GlobalNamespace::OVRPlugin::EyeTextureFormat Format;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x4);
     // public System.Int32 LayerFlags
     // Size: 0x4
     // Offset: 0x1C
@@ -97,23 +97,23 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::GlobalNamespace::OVRPlugin::Sizei) == 0x8);
     // public OVRPlugin/EyeTextureFormat DepthFormat
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::GlobalNamespace::OVRPlugin::EyeTextureFormat DepthFormat;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x4);
     // public OVRPlugin/EyeTextureFormat MotionVectorFormat
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::GlobalNamespace::OVRPlugin::EyeTextureFormat MotionVectorFormat;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x4);
     // public OVRPlugin/EyeTextureFormat MotionVectorDepthFormat
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::GlobalNamespace::OVRPlugin::EyeTextureFormat MotionVectorDepthFormat;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x4);
     // public OVRPlugin/Sizei MotionVectorTextureSize
     // Size: 0x8
     // Offset: 0x44

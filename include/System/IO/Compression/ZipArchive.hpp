@@ -102,11 +102,13 @@ namespace System::IO::Compression {
     // Field size check
     static_assert(sizeof(::System::IO::BinaryReader*) == 0x8);
     // private System.IO.Compression.ZipArchiveMode _mode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::System::IO::Compression::ZipArchiveMode mode;
     // Field size check
-    static_assert(sizeof(::System::IO::Compression::ZipArchiveMode) == 0x14);
+    static_assert(sizeof(::System::IO::Compression::ZipArchiveMode) == 0x4);
+    // Padding between fields: mode and: entries
+    char __padding3[0x4] = {};
     // private System.Collections.Generic.List`1<System.IO.Compression.ZipArchiveEntry> _entries
     // Size: 0x8
     // Offset: 0x30

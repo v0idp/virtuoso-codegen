@@ -55,11 +55,11 @@ namespace OggVorbisEncoder::Setup::Templates::Stereo44::BookBlocks::Chapter6 {
     // Field size check
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     // private readonly OggVorbisEncoder.Setup.CodeBookMapType <MapType>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::OggVorbisEncoder::Setup::CodeBookMapType MapType;
     // Field size check
-    static_assert(sizeof(::OggVorbisEncoder::Setup::CodeBookMapType) == 0x14);
+    static_assert(sizeof(::OggVorbisEncoder::Setup::CodeBookMapType) == 0x4);
     // private readonly System.Int32 <QuantMin>k__BackingField
     // Size: 0x4
     // Offset: 0x24

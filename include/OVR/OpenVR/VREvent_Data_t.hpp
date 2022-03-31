@@ -183,17 +183,17 @@ namespace OVR::OpenVR {
     // Field size check
     static_assert(sizeof(::OVR::OpenVR::VREvent_MessageOverlay_t) == 0x4);
     // public OVR.OpenVR.VREvent_Property_t property
-    // Size: 0x1C
+    // Size: 0xC
     // Offset: 0x0
     ::OVR::OpenVR::VREvent_Property_t property;
     // Field size check
-    static_assert(sizeof(::OVR::OpenVR::VREvent_Property_t) == 0x1C);
+    static_assert(sizeof(::OVR::OpenVR::VREvent_Property_t) == 0xC);
     // public OVR.OpenVR.VREvent_DualAnalog_t dualAnalog
-    // Size: 0x24
+    // Size: 0x14
     // Offset: 0x0
     ::OVR::OpenVR::VREvent_DualAnalog_t dualAnalog;
     // Field size check
-    static_assert(sizeof(::OVR::OpenVR::VREvent_DualAnalog_t) == 0x24);
+    static_assert(sizeof(::OVR::OpenVR::VREvent_DualAnalog_t) == 0x14);
     // public OVR.OpenVR.VREvent_HapticVibration_t hapticVibration
     // Size: 0x1C
     // Offset: 0x0

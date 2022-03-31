@@ -30,11 +30,11 @@ namespace OVR::OpenVR {
     public:
     public:
     // public OVR.OpenVR.EVRTrackedCameraFrameType eFrameType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::OVR::OpenVR::EVRTrackedCameraFrameType eFrameType;
     // Field size check
-    static_assert(sizeof(::OVR::OpenVR::EVRTrackedCameraFrameType) == 0x14);
+    static_assert(sizeof(::OVR::OpenVR::EVRTrackedCameraFrameType) == 0x4);
     // public System.UInt32 nWidth
     // Size: 0x4
     // Offset: 0x4

@@ -38,8 +38,6 @@ namespace UnityEngine::EventSystems {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRPointerEventData : public ::UnityEngine::EventSystems::PointerEventData {
     public:
-    // Writing base type padding for base size: 0x148 to desired offset: 0x138
-    char ___base_padding[0xFFFFFFF0] = {};
     #ifdef USE_CODEGEN_FIELDS
     public:
     #else

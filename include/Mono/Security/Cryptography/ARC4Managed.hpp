@@ -31,8 +31,8 @@ namespace Mono::Security::Cryptography {
   // [TokenAttribute] Offset: FFFFFFFF
   class ARC4Managed : public ::Mono::Security::Cryptography::RC4/*, public ::System::Security::Cryptography::ICryptoTransform*/ {
     public:
-    // Writing base type padding for base size: 0x54 to desired offset: 0x48
-    char ___base_padding[0xFFFFFFF4] = {};
+    // Writing base type padding for base size: 0x44 to desired offset: 0x48
+    char ___base_padding[0x4] = {};
     #ifdef USE_CODEGEN_FIELDS
     public:
     #else

@@ -47,23 +47,25 @@ namespace VROSC {
     #endif
     #endif
     // private AudioHelm.Param _paramX
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::AudioHelm::Param paramX;
     // Field size check
-    static_assert(sizeof(::AudioHelm::Param) == 0x14);
+    static_assert(sizeof(::AudioHelm::Param) == 0x4);
     // private AudioHelm.Param _paramY
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::AudioHelm::Param paramY;
     // Field size check
-    static_assert(sizeof(::AudioHelm::Param) == 0x14);
+    static_assert(sizeof(::AudioHelm::Param) == 0x4);
     // private AudioHelm.Param _paramZ
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::AudioHelm::Param paramZ;
     // Field size check
-    static_assert(sizeof(::AudioHelm::Param) == 0x14);
+    static_assert(sizeof(::AudioHelm::Param) == 0x4);
+    // Padding between fields: paramZ and: instrument
+    char __padding2[0x4] = {};
     // private VROSC.InstrumentController _instrument
     // Size: 0x8
     // Offset: 0x50

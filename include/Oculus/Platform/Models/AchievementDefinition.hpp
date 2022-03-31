@@ -41,11 +41,13 @@ namespace Oculus::Platform::Models {
     #endif
     #endif
     // public readonly Oculus.Platform.AchievementType Type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::Oculus::Platform::AchievementType Type;
     // Field size check
-    static_assert(sizeof(::Oculus::Platform::AchievementType) == 0x14);
+    static_assert(sizeof(::Oculus::Platform::AchievementType) == 0x4);
+    // Padding between fields: Type and: Name
+    char __padding0[0x4] = {};
     // public readonly System.String Name
     // Size: 0x8
     // Offset: 0x18

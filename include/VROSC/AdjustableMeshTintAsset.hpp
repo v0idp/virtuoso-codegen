@@ -72,11 +72,11 @@ namespace VROSC {
     // Offset: 0x20
     ::UnityEngine::ExposedReference_1<::VROSC::AdjustableMesh*> mesh;
     // public VROSC.AnimatedAppear/VROSC.Mode mode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::VROSC::AnimatedAppear::Mode mode;
     // Field size check
-    static_assert(sizeof(::VROSC::AnimatedAppear::Mode) == 0x14);
+    static_assert(sizeof(::VROSC::AnimatedAppear::Mode) == 0x4);
     public:
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;

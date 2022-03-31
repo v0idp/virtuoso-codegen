@@ -45,11 +45,13 @@ namespace VROSC {
     #endif
     #endif
     // protected VROSC.Note EnteredValue
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::Note EnteredValue;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
+    // Padding between fields: EnteredValue and: ConnectedValue
+    char __padding0[0x4] = {};
     // public VROSC.NoteNode ConnectedValue
     // Size: 0x8
     // Offset: 0x18

@@ -123,11 +123,13 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     // private VROSC.LoopStationLoopHandler/VROSC.LooperState _state
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x60
     ::VROSC::LoopStationLoopHandler::LooperState state;
     // Field size check
-    static_assert(sizeof(::VROSC::LoopStationLoopHandler::LooperState) == 0x14);
+    static_assert(sizeof(::VROSC::LoopStationLoopHandler::LooperState) == 0x4);
+    // Padding between fields: state and: recorder
+    char __padding9[0x4] = {};
     // private VROSC.LoopStationRecorder _recorder
     // Size: 0x8
     // Offset: 0x68

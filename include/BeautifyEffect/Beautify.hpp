@@ -109,17 +109,17 @@ namespace BeautifyEffect {
     #endif
     #endif
     // private BeautifyEffect.BEAUTIFY_PRESET _preset
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::BeautifyEffect::BEAUTIFY_PRESET preset;
     // Field size check
-    static_assert(sizeof(::BeautifyEffect::BEAUTIFY_PRESET) == 0x14);
+    static_assert(sizeof(::BeautifyEffect::BEAUTIFY_PRESET) == 0x4);
     // private BeautifyEffect.BEAUTIFY_QUALITY _quality
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::BeautifyEffect::BEAUTIFY_QUALITY quality;
     // Field size check
-    static_assert(sizeof(::BeautifyEffect::BEAUTIFY_QUALITY) == 0x14);
+    static_assert(sizeof(::BeautifyEffect::BEAUTIFY_QUALITY) == 0x4);
     // private BeautifyEffect.BeautifyProfile _profile
     // Size: 0x8
     // Offset: 0x20
@@ -829,11 +829,11 @@ namespace BeautifyEffect {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // private UnityEngine.FilterMode _depthOfFieldFilterMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20C
     ::UnityEngine::FilterMode depthOfFieldFilterMode;
     // Field size check
-    static_assert(sizeof(::UnityEngine::FilterMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::FilterMode) == 0x4);
     // public BeautifyEffect.OnBeforeFocusEvent OnBeforeFocus
     // Size: 0x8
     // Offset: 0x210
@@ -899,11 +899,11 @@ namespace BeautifyEffect {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // private BeautifyEffect.BEAUTIFY_TMO _tonemap
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x238
     ::BeautifyEffect::BEAUTIFY_TMO tonemap;
     // Field size check
-    static_assert(sizeof(::BeautifyEffect::BEAUTIFY_TMO) == 0x14);
+    static_assert(sizeof(::BeautifyEffect::BEAUTIFY_TMO) == 0x4);
     // private System.Boolean _sunFlares
     // Size: 0x1
     // Offset: 0x23C
@@ -1253,11 +1253,13 @@ namespace BeautifyEffect {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private UnityEngine.RenderTextureFormat rtFormat
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x338
     ::UnityEngine::RenderTextureFormat rtFormat;
     // Field size check
-    static_assert(sizeof(::UnityEngine::RenderTextureFormat) == 0x14);
+    static_assert(sizeof(::UnityEngine::RenderTextureFormat) == 0x4);
+    // Padding between fields: rtFormat and: rt
+    char __padding166[0x4] = {};
     // private UnityEngine.RenderTexture[] rt
     // Size: 0x8
     // Offset: 0x340
@@ -1407,11 +1409,11 @@ namespace BeautifyEffect {
     // Field size check
     static_assert(sizeof(::UnityEngine::RenderTexture*) == 0x8);
     // private UnityEngine.RenderTextureDescriptor rtDescBase
-    // Size: 0x44
+    // Size: 0x34
     // Offset: 0x400
     ::UnityEngine::RenderTextureDescriptor rtDescBase;
     // Field size check
-    static_assert(sizeof(::UnityEngine::RenderTextureDescriptor) == 0x44);
+    static_assert(sizeof(::UnityEngine::RenderTextureDescriptor) == 0x34);
     // private System.Single sunFlareTime
     // Size: 0x4
     // Offset: 0x434

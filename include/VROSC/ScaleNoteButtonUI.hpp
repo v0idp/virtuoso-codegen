@@ -72,11 +72,13 @@ namespace VROSC {
     #endif
     #endif
     // private VROSC.Note _note
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::Note note;
     // Field size check
-    static_assert(sizeof(::VROSC::Note) == 0x14);
+    static_assert(sizeof(::VROSC::Note) == 0x4);
+    // Padding between fields: note and: toggleButton
+    char __padding0[0x4] = {};
     // private VROSC.UIToggle _toggleButton
     // Size: 0x8
     // Offset: 0x20

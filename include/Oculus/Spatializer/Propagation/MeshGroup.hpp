@@ -44,11 +44,11 @@ namespace Oculus::Spatializer::Propagation {
     // Field size check
     static_assert(sizeof(::System::UIntPtr) == 0x8);
     // public Oculus.Spatializer.Propagation.FaceType faceType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::Oculus::Spatializer::Propagation::FaceType faceType;
     // Field size check
-    static_assert(sizeof(::Oculus::Spatializer::Propagation::FaceType) == 0x14);
+    static_assert(sizeof(::Oculus::Spatializer::Propagation::FaceType) == 0x4);
     // public System.IntPtr material
     // Size: 0x8
     // Offset: 0x14

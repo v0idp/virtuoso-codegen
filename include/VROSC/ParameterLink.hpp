@@ -51,29 +51,29 @@ namespace VROSC {
     #endif
     #endif
     // public VROSC.SynthParameterController/VROSC.TargetParameter TargetParameter
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::SynthParameterController::TargetParameter TargetParameter;
     // Field size check
-    static_assert(sizeof(::VROSC::SynthParameterController::TargetParameter) == 0x14);
+    static_assert(sizeof(::VROSC::SynthParameterController::TargetParameter) == 0x4);
     // public VROSC.MidiCC MidiCC
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x14
     ::VROSC::MidiCC MidiCC;
     // Field size check
-    static_assert(sizeof(::VROSC::MidiCC) == 0x14);
+    static_assert(sizeof(::VROSC::MidiCC) == 0x4);
     // public VROSC.ValueSourceSelector/VROSC.ValueSource ValueSource
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::ValueSourceSelector::ValueSource ValueSource;
     // Field size check
-    static_assert(sizeof(::VROSC::ValueSourceSelector::ValueSource) == 0x14);
+    static_assert(sizeof(::VROSC::ValueSourceSelector::ValueSource) == 0x4);
     // public VROSC.HandType HandType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::VROSC::HandType HandType;
     // Field size check
-    static_assert(sizeof(::VROSC::HandType) == 0x14);
+    static_assert(sizeof(::VROSC::HandType) == 0x4);
     // public System.Boolean LinkHands
     // Size: 0x1
     // Offset: 0x20

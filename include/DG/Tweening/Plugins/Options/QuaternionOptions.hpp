@@ -34,17 +34,17 @@ namespace DG::Tweening::Plugins::Options {
     public:
     public:
     // public DG.Tweening.RotateMode rotateMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::DG::Tweening::RotateMode rotateMode;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::RotateMode) == 0x14);
+    static_assert(sizeof(::DG::Tweening::RotateMode) == 0x4);
     // public DG.Tweening.AxisConstraint axisConstraint
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x4
     ::DG::Tweening::AxisConstraint axisConstraint;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::AxisConstraint) == 0x14);
+    static_assert(sizeof(::DG::Tweening::AxisConstraint) == 0x4);
     // public UnityEngine.Vector3 up
     // Size: 0xC
     // Offset: 0x8

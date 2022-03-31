@@ -43,11 +43,11 @@ namespace TMPro {
     #endif
     #endif
     // public TMPro.ColorMode colorMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::TMPro::ColorMode colorMode;
     // Field size check
-    static_assert(sizeof(::TMPro::ColorMode) == 0x14);
+    static_assert(sizeof(::TMPro::ColorMode) == 0x4);
     // public UnityEngine.Color topLeft
     // Size: 0x10
     // Offset: 0x1C

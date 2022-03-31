@@ -40,8 +40,8 @@ namespace System::Security::Cryptography {
   // [TokenAttribute] Offset: FFFFFFFF
   class AesManaged : public ::System::Security::Cryptography::Aes {
     public:
-    // Writing base type padding for base size: 0x54 to desired offset: 0x48
-    char ___base_padding[0xFFFFFFF4] = {};
+    // Writing base type padding for base size: 0x44 to desired offset: 0x48
+    char ___base_padding[0x4] = {};
     #ifdef USE_CODEGEN_FIELDS
     public:
     #else

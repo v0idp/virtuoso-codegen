@@ -85,11 +85,13 @@ namespace System::Net::Sockets {
     // Field size check
     static_assert(sizeof(::System::Net::Sockets::Socket*) == 0x8);
     // public System.Net.Sockets.SocketOperation operation
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::System::Net::Sockets::SocketOperation operation;
     // Field size check
-    static_assert(sizeof(::System::Net::Sockets::SocketOperation) == 0x14);
+    static_assert(sizeof(::System::Net::Sockets::SocketOperation) == 0x4);
+    // Padding between fields: operation and: DelayedException
+    char __padding1[0x4] = {};
     // private System.Exception DelayedException
     // Size: 0x8
     // Offset: 0x40
@@ -121,11 +123,13 @@ namespace System::Net::Sockets {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // public System.Net.Sockets.SocketFlags SockFlags
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x60
     ::System::Net::Sockets::SocketFlags SockFlags;
     // Field size check
-    static_assert(sizeof(::System::Net::Sockets::SocketFlags) == 0x14);
+    static_assert(sizeof(::System::Net::Sockets::SocketFlags) == 0x4);
+    // Padding between fields: SockFlags and: AcceptSocket
+    char __padding7[0x4] = {};
     // public System.Net.Sockets.Socket AcceptSocket
     // Size: 0x8
     // Offset: 0x68

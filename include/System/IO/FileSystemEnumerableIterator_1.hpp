@@ -114,11 +114,11 @@ namespace System::IO {
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
     // private System.IO.SearchOption searchOption
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::System::IO::SearchOption searchOption;
     // Field size check
-    static_assert(sizeof(::System::IO::SearchOption) == 0x14);
+    static_assert(sizeof(::System::IO::SearchOption) == 0x4);
     // private System.String fullPath
     // Size: 0x8
     // Offset: 0x0

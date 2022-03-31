@@ -137,11 +137,11 @@ namespace TMPro {
     // Field size check
     static_assert(sizeof(::ArrayW<::TMPro::TMP_SubMesh*>) == 0x8);
     // private TMPro.MaskingTypes m_maskType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x6F0
     ::TMPro::MaskingTypes m_maskType;
     // Field size check
-    static_assert(sizeof(::TMPro::MaskingTypes) == 0x14);
+    static_assert(sizeof(::TMPro::MaskingTypes) == 0x4);
     // private UnityEngine.Matrix4x4 m_EnvMapMatrix
     // Size: 0x40
     // Offset: 0x6F4

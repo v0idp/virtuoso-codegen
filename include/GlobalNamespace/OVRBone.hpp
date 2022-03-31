@@ -45,11 +45,11 @@ namespace GlobalNamespace {
     #endif
     #endif
     // private OVRSkeleton/BoneId <Id>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::GlobalNamespace::OVRSkeleton::BoneId Id;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRSkeleton::BoneId) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRSkeleton::BoneId) == 0x4);
     // private System.Int16 <ParentBoneIndex>k__BackingField
     // Size: 0x2
     // Offset: 0x14

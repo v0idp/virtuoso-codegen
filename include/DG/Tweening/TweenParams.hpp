@@ -77,11 +77,11 @@ namespace DG::Tweening {
     // Field size check
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     // DG.Tweening.UpdateType updateType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::DG::Tweening::UpdateType updateType;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::UpdateType) == 0x14);
+    static_assert(sizeof(::DG::Tweening::UpdateType) == 0x4);
     // System.Boolean isIndependentUpdate
     // Size: 0x1
     // Offset: 0x24
@@ -165,11 +165,11 @@ namespace DG::Tweening {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // DG.Tweening.LoopType loopType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x70
     ::DG::Tweening::LoopType loopType;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::LoopType) == 0x14);
+    static_assert(sizeof(::DG::Tweening::LoopType) == 0x4);
     // System.Single delay
     // Size: 0x4
     // Offset: 0x74
@@ -185,11 +185,11 @@ namespace DG::Tweening {
     // Padding between fields: isRelative and: easeType
     char __padding18[0x3] = {};
     // DG.Tweening.Ease easeType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x7C
     ::DG::Tweening::Ease easeType;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::Ease) == 0x14);
+    static_assert(sizeof(::DG::Tweening::Ease) == 0x4);
     // DG.Tweening.EaseFunction customEase
     // Size: 0x8
     // Offset: 0x80

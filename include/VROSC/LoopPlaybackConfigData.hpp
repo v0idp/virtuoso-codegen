@@ -40,11 +40,11 @@ namespace VROSC {
     #endif
     #endif
     // public VROSC.LoopPlaybackConfig/VROSC.TriggerSync StartMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::LoopPlaybackConfig::TriggerSync StartMode;
     // Field size check
-    static_assert(sizeof(::VROSC::LoopPlaybackConfig::TriggerSync) == 0x14);
+    static_assert(sizeof(::VROSC::LoopPlaybackConfig::TriggerSync) == 0x4);
     // public System.Boolean IsStartModeLocked
     // Size: 0x1
     // Offset: 0x14
@@ -54,23 +54,23 @@ namespace VROSC {
     // Padding between fields: IsStartModeLocked and: StopMode
     char __padding1[0x3] = {};
     // public VROSC.LoopPlaybackConfig/VROSC.TriggerSync StopMode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::LoopPlaybackConfig::TriggerSync StopMode;
     // Field size check
-    static_assert(sizeof(::VROSC::LoopPlaybackConfig::TriggerSync) == 0x14);
+    static_assert(sizeof(::VROSC::LoopPlaybackConfig::TriggerSync) == 0x4);
     // public VROSC.LoopPlaybackConfig/VROSC.FadeDuration FadeIn
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::VROSC::LoopPlaybackConfig::FadeDuration FadeIn;
     // Field size check
-    static_assert(sizeof(::VROSC::LoopPlaybackConfig::FadeDuration) == 0x14);
+    static_assert(sizeof(::VROSC::LoopPlaybackConfig::FadeDuration) == 0x4);
     // public VROSC.LoopPlaybackConfig/VROSC.FadeDuration FadeOut
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::VROSC::LoopPlaybackConfig::FadeDuration FadeOut;
     // Field size check
-    static_assert(sizeof(::VROSC::LoopPlaybackConfig::FadeDuration) == 0x14);
+    static_assert(sizeof(::VROSC::LoopPlaybackConfig::FadeDuration) == 0x4);
     // public System.Boolean OneShot
     // Size: 0x1
     // Offset: 0x24

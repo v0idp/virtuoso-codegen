@@ -25,11 +25,13 @@ namespace Mono::Globalization::Unicode {
     public:
     public:
     // public readonly System.Globalization.CompareOptions Option
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::System::Globalization::CompareOptions Option;
     // Field size check
-    static_assert(sizeof(::System::Globalization::CompareOptions) == 0x14);
+    static_assert(sizeof(::System::Globalization::CompareOptions) == 0x4);
+    // Padding between fields: Option and: NeverMatchFlags
+    char __padding0[0x4] = {};
     // public readonly System.Byte* NeverMatchFlags
     // Size: 0x8
     // Offset: 0x8

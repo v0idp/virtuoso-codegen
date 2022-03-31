@@ -62,11 +62,11 @@ namespace System::Net {
     // Field size check
     static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509Chain*) == 0x8);
     // readonly System.Net.Security.SslPolicyErrors sslPolicyErrors
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::System::Net::Security::SslPolicyErrors sslPolicyErrors;
     // Field size check
-    static_assert(sizeof(::System::Net::Security::SslPolicyErrors) == 0x14);
+    static_assert(sizeof(::System::Net::Security::SslPolicyErrors) == 0x4);
     // System.Boolean result
     // Size: 0x1
     // Offset: 0x2C

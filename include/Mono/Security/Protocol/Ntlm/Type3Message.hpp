@@ -39,8 +39,6 @@ namespace Mono::Security::Protocol::Ntlm {
   // [TokenAttribute] Offset: FFFFFFFF
   class Type3Message : public ::Mono::Security::Protocol::Ntlm::MessageBase {
     public:
-    // Writing base type padding for base size: 0x28 to desired offset: 0x18
-    char ___base_padding[0xFFFFFFF0] = {};
     #ifdef USE_CODEGEN_FIELDS
     public:
     #else
@@ -51,11 +49,13 @@ namespace Mono::Security::Protocol::Ntlm {
     #endif
     #endif
     // private Mono.Security.Protocol.Ntlm.NtlmAuthLevel _level
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::Mono::Security::Protocol::Ntlm::NtlmAuthLevel level;
     // Field size check
-    static_assert(sizeof(::Mono::Security::Protocol::Ntlm::NtlmAuthLevel) == 0x14);
+    static_assert(sizeof(::Mono::Security::Protocol::Ntlm::NtlmAuthLevel) == 0x4);
+    // Padding between fields: level and: challenge
+    char __padding0[0x4] = {};
     // private System.Byte[] _challenge
     // Size: 0x8
     // Offset: 0x20

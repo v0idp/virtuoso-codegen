@@ -45,11 +45,11 @@ namespace GlobalNamespace {
     #endif
     #endif
     // public OVRPlugin/MeshType Type
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::GlobalNamespace::OVRPlugin::MeshType Type;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::MeshType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::MeshType) == 0x4);
     // public System.UInt32 NumVertices
     // Size: 0x4
     // Offset: 0x14

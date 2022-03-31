@@ -83,11 +83,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Padding between fields: bArgsPrimitive and: messageEnum
     char __padding4[0x3] = {};
     // private System.Runtime.Serialization.Formatters.Binary.MessageEnum messageEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::System::Runtime::Serialization::Formatters::Binary::MessageEnum messageEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::MessageEnum) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::MessageEnum) == 0x4);
     // private System.Type returnType
     // Size: 0x8
     // Offset: 0x38

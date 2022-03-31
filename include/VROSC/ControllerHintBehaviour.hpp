@@ -79,11 +79,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::TouchableObjectsController*) == 0x8);
     // public VROSC.HighlightControllerComponents/VROSC.Component component
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::VROSC::HighlightControllerComponents::Component component;
     // Field size check
-    static_assert(sizeof(::VROSC::HighlightControllerComponents::Component) == 0x14);
+    static_assert(sizeof(::VROSC::HighlightControllerComponents::Component) == 0x4);
     // [RangeAttribute] Offset: 0x673780
     // public System.Single Visible
     // Size: 0x4
@@ -106,11 +106,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     // public VROSC.NoteBoard/VROSC.PlayAxis Axis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x50
     ::VROSC::NoteBoard::PlayAxis Axis;
     // Field size check
-    static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x14);
+    static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x4);
     // public System.Boolean UpdateAllTouchables
     // Size: 0x1
     // Offset: 0x54

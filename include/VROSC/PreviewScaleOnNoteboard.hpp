@@ -74,11 +74,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::ScaleRowUI*) == 0x8);
     // private VROSC.NoteBoard/VROSC.PlayAxis _axis
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::VROSC::NoteBoard::PlayAxis axis;
     // Field size check
-    static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x14);
+    static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x4);
     // private System.Single _highLightPower
     // Size: 0x4
     // Offset: 0x2C

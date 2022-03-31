@@ -71,11 +71,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::TransformMover*) == 0x8);
     // private VROSC.TriggerButton _moveIn
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::VROSC::TriggerButton moveIn;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     // private System.Single _moveinDuration
     // Size: 0x4
     // Offset: 0x24

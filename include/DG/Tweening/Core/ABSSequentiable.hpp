@@ -45,11 +45,11 @@ namespace DG::Tweening::Core {
     #endif
     #endif
     // DG.Tweening.TweenType tweenType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::DG::Tweening::TweenType tweenType;
     // Field size check
-    static_assert(sizeof(::DG::Tweening::TweenType) == 0x14);
+    static_assert(sizeof(::DG::Tweening::TweenType) == 0x4);
     // System.Single sequencedPosition
     // Size: 0x4
     // Offset: 0x14

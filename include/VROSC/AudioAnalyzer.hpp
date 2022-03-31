@@ -62,11 +62,13 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::UnityEngine::AudioSource*) == 0x8);
     // private UnityEngine.FFTWindow _fftWindow
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::UnityEngine::FFTWindow fftWindow;
     // Field size check
-    static_assert(sizeof(::UnityEngine::FFTWindow) == 0x14);
+    static_assert(sizeof(::UnityEngine::FFTWindow) == 0x4);
+    // Padding between fields: fftWindow and: leftMasterSamplesRaw
+    char __padding2[0x4] = {};
     // private System.Single[] _leftMasterSamplesRaw
     // Size: 0x8
     // Offset: 0x30

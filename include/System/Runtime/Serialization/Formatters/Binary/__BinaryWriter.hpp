@@ -108,11 +108,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::IO::Stream*) == 0x8);
     // System.Runtime.Serialization.Formatters.FormatterTypeStyle formatterTypeStyle
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::System::Runtime::Serialization::Formatters::FormatterTypeStyle formatterTypeStyle;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::FormatterTypeStyle) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::FormatterTypeStyle) == 0x4);
+    // Padding between fields: formatterTypeStyle and: objectMapTable
+    char __padding1[0x4] = {};
     // System.Collections.Hashtable objectMapTable
     // Size: 0x8
     // Offset: 0x20

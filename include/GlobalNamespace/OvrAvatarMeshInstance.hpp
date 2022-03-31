@@ -86,11 +86,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(uint64_t) == 0x8);
     // public ovrAvatarBodyPartType MeshType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::GlobalNamespace::ovrAvatarBodyPartType MeshType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::ovrAvatarBodyPartType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::ovrAvatarBodyPartType) == 0x4);
+    // Padding between fields: MeshType and: MaterialState
+    char __padding4[0x4] = {};
     // public ovrAvatarMaterialState MaterialState
     // Size: 0xA8
     // Offset: 0x40

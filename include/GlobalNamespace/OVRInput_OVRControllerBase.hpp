@@ -50,11 +50,13 @@ namespace GlobalNamespace {
     #endif
     #endif
     // public OVRInput/Controller controllerType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::GlobalNamespace::OVRInput::Controller controllerType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRInput::Controller) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRInput::Controller) == 0x4);
+    // Padding between fields: controllerType and: buttonMap
+    char __padding0[0x4] = {};
     // public OVRInput/OVRControllerBase/VirtualButtonMap buttonMap
     // Size: 0x8
     // Offset: 0x18

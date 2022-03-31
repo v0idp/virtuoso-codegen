@@ -143,11 +143,11 @@ namespace UnityEngine::Timeline {
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     // public UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState postPlayback
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState postPlayback;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState) == 0x14);
+    static_assert(sizeof(::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState) == 0x4);
     // private UnityEngine.Playables.PlayableAsset m_ControlDirectorAsset
     // Size: 0x8
     // Offset: 0x40

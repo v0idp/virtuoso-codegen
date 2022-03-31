@@ -45,11 +45,13 @@ namespace VROSC {
     #endif
     #endif
     // protected VROSC.NoteBoardPlayer/VROSC.PlayBehaviour EnteredValue
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::NoteBoardPlayer::PlayBehaviour EnteredValue;
     // Field size check
-    static_assert(sizeof(::VROSC::NoteBoardPlayer::PlayBehaviour) == 0x14);
+    static_assert(sizeof(::VROSC::NoteBoardPlayer::PlayBehaviour) == 0x4);
+    // Padding between fields: EnteredValue and: ConnectedValue
+    char __padding0[0x4] = {};
     // protected VROSC.PlayBehaviourNode ConnectedValue
     // Size: 0x8
     // Offset: 0x18

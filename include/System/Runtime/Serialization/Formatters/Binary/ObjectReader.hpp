@@ -114,11 +114,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::Runtime::Serialization::ISurrogateSelector*) == 0x8);
     // System.Runtime.Serialization.StreamingContext m_context
-    // Size: 0x1C
+    // Size: 0xC
     // Offset: 0x20
     ::System::Runtime::Serialization::StreamingContext m_context;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0x1C);
+    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
+    // Padding between fields: m_context and: m_objectManager
+    char __padding2[0x4] = {};
     // System.Runtime.Serialization.ObjectManager m_objectManager
     // Size: 0x8
     // Offset: 0x30

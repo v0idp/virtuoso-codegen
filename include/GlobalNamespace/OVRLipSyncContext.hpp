@@ -68,11 +68,11 @@ namespace GlobalNamespace {
     char __padding2[0x1] = {};
     // [TooltipAttribute] Offset: 0x5E2248
     // public UnityEngine.KeyCode loopbackKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x3C
     ::UnityEngine::KeyCode loopbackKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // [TooltipAttribute] Offset: 0x5E2280
     // public System.Boolean showVisemes
     // Size: 0x1
@@ -84,11 +84,11 @@ namespace GlobalNamespace {
     char __padding4[0x3] = {};
     // [TooltipAttribute] Offset: 0x5E22B8
     // public UnityEngine.KeyCode debugVisemesKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x44
     ::UnityEngine::KeyCode debugVisemesKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // [TooltipAttribute] Offset: 0x5E22F0
     // public System.Boolean skipAudioSource
     // Size: 0x1
@@ -114,11 +114,11 @@ namespace GlobalNamespace {
     // Padding between fields: hasDebugConsole and: debugLaughterKey
     char __padding8[0x3] = {};
     // public UnityEngine.KeyCode debugLaughterKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x54
     ::UnityEngine::KeyCode debugLaughterKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // public System.Boolean showLaughter
     // Size: 0x1
     // Offset: 0x58

@@ -26,11 +26,13 @@ namespace GlobalNamespace {
     public:
     public:
     // public OVRPlugin/EventType EventType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::OVRPlugin::EventType EventType;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EventType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::EventType) == 0x4);
+    // Padding between fields: EventType and: EventData
+    char __padding0[0x4] = {};
     // public System.Byte[] EventData
     // Size: 0x8
     // Offset: 0x8

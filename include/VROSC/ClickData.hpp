@@ -53,11 +53,11 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::VROSC::InputDevice*) == 0x8);
     // private readonly VROSC.TriggerButton <Button>k__BackingField
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::TriggerButton Button;
     // Field size check
-    static_assert(sizeof(::VROSC::TriggerButton) == 0x14);
+    static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     // private readonly UnityEngine.Vector3 <Position>k__BackingField
     // Size: 0xC
     // Offset: 0x1C

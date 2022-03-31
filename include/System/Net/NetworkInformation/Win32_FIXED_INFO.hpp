@@ -59,11 +59,13 @@ namespace System::Net::NetworkInformation {
     // Padding between fields: DnsServerList and: NodeType
     char __padding3[0x4] = {};
     // public System.Net.NetworkInformation.NetBiosNodeType NodeType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::System::Net::NetworkInformation::NetBiosNodeType NodeType;
     // Field size check
-    static_assert(sizeof(::System::Net::NetworkInformation::NetBiosNodeType) == 0x14);
+    static_assert(sizeof(::System::Net::NetworkInformation::NetBiosNodeType) == 0x4);
+    // Padding between fields: NodeType and: ScopeId
+    char __padding4[0x4] = {};
     // public System.String ScopeId
     // Size: 0x8
     // Offset: 0x40

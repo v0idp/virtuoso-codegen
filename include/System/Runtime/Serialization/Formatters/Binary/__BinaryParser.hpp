@@ -144,11 +144,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::SerStack*) == 0x8);
     // System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum expectedType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x48
     ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum expectedType;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum) == 0x4);
+    // Padding between fields: expectedType and: expectedTypeInformation
+    char __padding7[0x4] = {};
     // System.Object expectedTypeInformation
     // Size: 0x8
     // Offset: 0x50

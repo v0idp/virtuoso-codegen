@@ -41,25 +41,25 @@ namespace GlobalNamespace {
     #endif
     // [TooltipAttribute] Offset: 0x5E20F8
     // public UnityEngine.KeyCode rotateLeftKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::UnityEngine::KeyCode rotateLeftKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // [TooltipAttribute] Offset: 0x5E2130
     // public UnityEngine.KeyCode rotateRightKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x1C
     ::UnityEngine::KeyCode rotateRightKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // [TooltipAttribute] Offset: 0x5E2168
     // public UnityEngine.KeyCode resetRotationKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x20
     ::UnityEngine::KeyCode resetRotationKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // private System.Single resetRotation
     // Size: 0x4
     // Offset: 0x24

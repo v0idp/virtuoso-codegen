@@ -39,11 +39,13 @@ namespace System {
     // Field size check
     static_assert(sizeof(::System::Version*) == 0x8);
     // System.Version/System.ParseFailureKind m_failure
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x8
     ::System::Version::ParseFailureKind m_failure;
     // Field size check
-    static_assert(sizeof(::System::Version::ParseFailureKind) == 0x14);
+    static_assert(sizeof(::System::Version::ParseFailureKind) == 0x4);
+    // Padding between fields: m_failure and: m_exceptionArgument
+    char __padding1[0x4] = {};
     // System.String m_exceptionArgument
     // Size: 0x8
     // Offset: 0x10

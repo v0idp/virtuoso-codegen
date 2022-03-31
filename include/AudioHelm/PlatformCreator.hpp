@@ -76,17 +76,17 @@ namespace AudioHelm {
     // Field size check
     static_assert(sizeof(::System::Collections::Generic::List_1<::UnityEngine::Transform*>*) == 0x8);
     // public UnityEngine.KeyCode clearKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::UnityEngine::KeyCode clearKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // public UnityEngine.KeyCode undoKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::UnityEngine::KeyCode undoKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // private UnityEngine.Transform currentPlatform
     // Size: 0x8
     // Offset: 0x38

@@ -84,17 +84,17 @@ namespace System::Security::Cryptography::X509Certificates {
     // Field size check
     static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*) == 0x8);
     // private System.Security.Cryptography.X509Certificates.X509RevocationFlag rflag
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::System::Security::Cryptography::X509Certificates::X509RevocationFlag rflag;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509RevocationFlag) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509RevocationFlag) == 0x4);
     // private System.Security.Cryptography.X509Certificates.X509RevocationMode mode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x34
     ::System::Security::Cryptography::X509Certificates::X509RevocationMode mode;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509RevocationMode) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509RevocationMode) == 0x4);
     // private System.TimeSpan timeout
     // Size: 0x8
     // Offset: 0x38
@@ -102,11 +102,13 @@ namespace System::Security::Cryptography::X509Certificates {
     // Field size check
     static_assert(sizeof(::System::TimeSpan) == 0x8);
     // private System.Security.Cryptography.X509Certificates.X509VerificationFlags vflags
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x40
     ::System::Security::Cryptography::X509Certificates::X509VerificationFlags vflags;
     // Field size check
-    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509VerificationFlags) == 0x14);
+    static_assert(sizeof(::System::Security::Cryptography::X509Certificates::X509VerificationFlags) == 0x4);
+    // Padding between fields: vflags and: vtime
+    char __padding7[0x4] = {};
     // private System.DateTime vtime
     // Size: 0x8
     // Offset: 0x48

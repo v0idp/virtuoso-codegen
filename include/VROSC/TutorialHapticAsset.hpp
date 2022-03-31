@@ -59,11 +59,11 @@ namespace VROSC {
     #endif
     #endif
     // private VROSC.HandType _hand
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::VROSC::HandType hand;
     // Field size check
-    static_assert(sizeof(::VROSC::HandType) == 0x14);
+    static_assert(sizeof(::VROSC::HandType) == 0x4);
     // private System.Single _frequency
     // Size: 0x4
     // Offset: 0x1C

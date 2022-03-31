@@ -47,11 +47,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     #endif
     #endif
     // System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE typeInformation
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE typeInformation;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x4);
+    // Padding between fields: typeInformation and: value
+    char __padding0[0x4] = {};
     // System.Object value
     // Size: 0x8
     // Offset: 0x18

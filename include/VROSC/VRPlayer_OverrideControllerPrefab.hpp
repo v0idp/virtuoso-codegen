@@ -41,11 +41,13 @@ namespace VROSC {
     #endif
     #endif
     // public VROSC.VRPlayer/VROSC.ControllerType controllerType
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::VROSC::VRPlayer::ControllerType controllerType;
     // Field size check
-    static_assert(sizeof(::VROSC::VRPlayer::ControllerType) == 0x14);
+    static_assert(sizeof(::VROSC::VRPlayer::ControllerType) == 0x4);
+    // Padding between fields: controllerType and: name
+    char __padding0[0x4] = {};
     // public System.String name
     // Size: 0x8
     // Offset: 0x18

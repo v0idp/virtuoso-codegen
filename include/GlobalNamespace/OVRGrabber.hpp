@@ -104,11 +104,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::ArrayW<::UnityEngine::Collider*>) == 0x8);
     // protected OVRInput/Controller m_controller
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::GlobalNamespace::OVRInput::Controller m_controller;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRInput::Controller) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRInput::Controller) == 0x4);
+    // Padding between fields: m_controller and: m_parentTransform
+    char __padding6[0x4] = {};
     // protected UnityEngine.Transform m_parentTransform
     // Size: 0x8
     // Offset: 0x40

@@ -122,11 +122,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::Runtime::Serialization::ISurrogateSelector*) == 0x8);
     // private System.Runtime.Serialization.StreamingContext m_context
-    // Size: 0x1C
+    // Size: 0xC
     // Offset: 0x30
     ::System::Runtime::Serialization::StreamingContext m_context;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0x1C);
+    static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
+    // Padding between fields: m_context and: serWriter
+    char __padding4[0x4] = {};
     // private System.Runtime.Serialization.Formatters.Binary.__BinaryWriter serWriter
     // Size: 0x8
     // Offset: 0x40
@@ -206,11 +208,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Field size check
     static_assert(sizeof(::System::Type*) == 0x8);
     // private System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE previousCode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xA8
     ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE previousCode;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE) == 0x4);
+    // Padding between fields: previousCode and: assemblyToIdTable
+    char __padding18[0x4] = {};
     // private System.Collections.Hashtable assemblyToIdTable
     // Size: 0x8
     // Offset: 0xB0

@@ -51,11 +51,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     #endif
     #endif
     // System.Runtime.Serialization.Formatters.Binary.BinaryHeaderEnum binaryHeaderEnum
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x10
     ::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum binaryHeaderEnum;
     // Field size check
-    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum) == 0x14);
+    static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum) == 0x4);
     // System.Int32 objectId
     // Size: 0x4
     // Offset: 0x14

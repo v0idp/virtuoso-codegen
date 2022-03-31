@@ -78,11 +78,13 @@ namespace System::Net {
     // Field size check
     static_assert(sizeof(::System::Uri*) == 0x8);
     // private System.Net.FtpStatusCode statusCode
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x30
     ::System::Net::FtpStatusCode statusCode;
     // Field size check
-    static_assert(sizeof(::System::Net::FtpStatusCode) == 0x14);
+    static_assert(sizeof(::System::Net::FtpStatusCode) == 0x4);
+    // Padding between fields: statusCode and: lastModified
+    char __padding2[0x4] = {};
     // private System.DateTime lastModified
     // Size: 0x8
     // Offset: 0x38

@@ -114,18 +114,18 @@ namespace UnityEngine::Timeline {
     #endif
     // [FormerlySerializedAsAttribute] Offset: 0x59A370
     // private UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.ClipExtrapolation m_InfiniteClipPreExtrapolation
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xA0
     ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation m_InfiniteClipPreExtrapolation;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Timeline::TimelineClip::ClipExtrapolation) == 0x14);
+    static_assert(sizeof(::UnityEngine::Timeline::TimelineClip::ClipExtrapolation) == 0x4);
     // [FormerlySerializedAsAttribute] Offset: 0x59A3BC
     // private UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.ClipExtrapolation m_InfiniteClipPostExtrapolation
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xA4
     ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation m_InfiniteClipPostExtrapolation;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Timeline::TimelineClip::ClipExtrapolation) == 0x14);
+    static_assert(sizeof(::UnityEngine::Timeline::TimelineClip::ClipExtrapolation) == 0x4);
     // [FormerlySerializedAsAttribute] Offset: 0x59A408
     // private UnityEngine.Vector3 m_InfiniteClipOffsetPosition
     // Size: 0xC
@@ -161,17 +161,17 @@ namespace UnityEngine::Timeline {
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     // private UnityEngine.Timeline.AnimationPlayableAsset/UnityEngine.Timeline.LoopMode mInfiniteClipLoop
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xCC
     ::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode mInfiniteClipLoop;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode) == 0x14);
+    static_assert(sizeof(::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode) == 0x4);
     // private UnityEngine.Timeline.MatchTargetFields m_MatchTargetFields
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xD0
     ::UnityEngine::Timeline::MatchTargetFields m_MatchTargetFields;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Timeline::MatchTargetFields) == 0x14);
+    static_assert(sizeof(::UnityEngine::Timeline::MatchTargetFields) == 0x4);
     // private UnityEngine.Vector3 m_Position
     // Size: 0xC
     // Offset: 0xD4
@@ -197,11 +197,11 @@ namespace UnityEngine::Timeline {
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     // private UnityEngine.Timeline.TrackOffset m_TrackOffset
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0xFC
     ::UnityEngine::Timeline::TrackOffset m_TrackOffset;
     // Field size check
-    static_assert(sizeof(::UnityEngine::Timeline::TrackOffset) == 0x14);
+    static_assert(sizeof(::UnityEngine::Timeline::TrackOffset) == 0x4);
     // private UnityEngine.AnimationClip m_InfiniteClip
     // Size: 0x8
     // Offset: 0x100

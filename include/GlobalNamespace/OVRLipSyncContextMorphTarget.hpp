@@ -86,11 +86,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::ArrayW<::UnityEngine::KeyCode>) == 0x8);
     // [TooltipAttribute] Offset: 0x5E24E8
     // public UnityEngine.KeyCode laughterKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x38
     ::UnityEngine::KeyCode laughterKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // [TooltipAttribute] Offset: 0x5E2520
     // public System.Int32 laughterBlendTarget
     // Size: 0x4

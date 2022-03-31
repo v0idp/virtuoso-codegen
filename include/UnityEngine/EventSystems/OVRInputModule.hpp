@@ -87,18 +87,18 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::GlobalNamespace::OVRCursor*) == 0x8);
     // [TooltipAttribute] Offset: 0x58DA24
     // public OVRInput/Button joyPadClickButton
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x68
     ::GlobalNamespace::OVRInput::Button joyPadClickButton;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRInput::Button) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRInput::Button) == 0x4);
     // [TooltipAttribute] Offset: 0x58DA5C
     // public UnityEngine.KeyCode gazeClickKey
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x6C
     ::UnityEngine::KeyCode gazeClickKey;
     // Field size check
-    static_assert(sizeof(::UnityEngine::KeyCode) == 0x14);
+    static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
     // [HeaderAttribute] Offset: 0x58DA94
     // [TooltipAttribute] Offset: 0x58DA94
     // public System.Boolean performSphereCastForGazepointer

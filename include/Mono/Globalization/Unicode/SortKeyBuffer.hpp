@@ -155,11 +155,11 @@ namespace Mono::Globalization::Unicode {
     // Field size check
     static_assert(sizeof(int) == 0x4);
     // private System.Globalization.CompareOptions options
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x7C
     ::System::Globalization::CompareOptions options;
     // Field size check
-    static_assert(sizeof(::System::Globalization::CompareOptions) == 0x14);
+    static_assert(sizeof(::System::Globalization::CompareOptions) == 0x4);
     // private System.Boolean processLevel2
     // Size: 0x1
     // Offset: 0x80

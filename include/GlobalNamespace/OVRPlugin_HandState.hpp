@@ -32,11 +32,11 @@ namespace GlobalNamespace {
     public:
     public:
     // public OVRPlugin/HandStatus Status
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::OVRPlugin::HandStatus Status;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::HandStatus) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::HandStatus) == 0x4);
     // public OVRPlugin/Posef RootPose
     // Size: 0x1C
     // Offset: 0x4
@@ -50,11 +50,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(::ArrayW<::GlobalNamespace::OVRPlugin::Quatf>) == 0x8);
     // public OVRPlugin/HandFingerPinch Pinches
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x28
     ::GlobalNamespace::OVRPlugin::HandFingerPinch Pinches;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::HandFingerPinch) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::HandFingerPinch) == 0x4);
+    // Padding between fields: Pinches and: PinchStrength
+    char __padding3[0x4] = {};
     // public System.Single[] PinchStrength
     // Size: 0x8
     // Offset: 0x30
@@ -74,11 +76,13 @@ namespace GlobalNamespace {
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public OVRPlugin/TrackingConfidence HandConfidence
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x58
     ::GlobalNamespace::OVRPlugin::TrackingConfidence HandConfidence;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::TrackingConfidence) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::TrackingConfidence) == 0x4);
+    // Padding between fields: HandConfidence and: FingerConfidences
+    char __padding7[0x4] = {};
     // public OVRPlugin/TrackingConfidence[] FingerConfidences
     // Size: 0x8
     // Offset: 0x60

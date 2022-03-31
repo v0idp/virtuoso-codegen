@@ -29,11 +29,13 @@ namespace GlobalNamespace {
     public:
     public:
     // public OVRPlugin/Bool IsValid
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x0
     ::GlobalNamespace::OVRPlugin::Bool IsValid;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Bool) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::OVRPlugin::Bool) == 0x4);
+    // Padding between fields: IsValid and: LastChangedTimeSeconds
+    char __padding0[0x4] = {};
     // public System.Double LastChangedTimeSeconds
     // Size: 0x8
     // Offset: 0x8

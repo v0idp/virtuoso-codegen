@@ -56,11 +56,13 @@ namespace GlobalNamespace {
     #endif
     #endif
     // public TimeOfDayType timeOfDay
-    // Size: 0x14
+    // Size: 0x4
     // Offset: 0x18
     ::GlobalNamespace::TimeOfDayType timeOfDay;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::TimeOfDayType) == 0x14);
+    static_assert(sizeof(::GlobalNamespace::TimeOfDayType) == 0x4);
+    // Padding between fields: timeOfDay and: SkyboxMaterial
+    char __padding0[0x4] = {};
     // public UnityEngine.Material SkyboxMaterial
     // Size: 0x8
     // Offset: 0x20
