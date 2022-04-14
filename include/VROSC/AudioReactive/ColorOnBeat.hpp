@@ -37,15 +37,7 @@ namespace VROSC::AudioReactive {
     public:
     // Writing base type padding for base size: 0x24 to desired offset: 0x28
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.LerpColorEffect _colorAnimation
     // Size: 0x8
     // Offset: 0x28
@@ -54,12 +46,12 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::LerpColorEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.LerpColorEffect _colorAnimation
-    ::VROSC::AudioReactive::LerpColorEffect*& dyn__colorAnimation();
+    [[deprecated]] ::VROSC::AudioReactive::LerpColorEffect*& dyn__colorAnimation();
     // public VROSC.AudioReactive.LerpColorEffect get_ColorAnimation()
-    // Offset: 0x133393C
+    // Offset: 0x948590
     ::VROSC::AudioReactive::LerpColorEffect* get_ColorAnimation();
     // public System.Void .ctor()
-    // Offset: 0x13339B8
+    // Offset: 0x94860C
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -73,12 +65,12 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<ColorOnBeat*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x1333944
+    // Offset: 0x948598
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::Awake()
     void Awake();
     // protected override System.Void OnBeat(System.Int32 beat)
-    // Offset: 0x1333980
+    // Offset: 0x9485D4
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::OnBeat(System.Int32 beat)
     void OnBeat(int beat);

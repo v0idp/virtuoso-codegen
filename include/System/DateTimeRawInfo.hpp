@@ -95,33 +95,33 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32* num
-    int*& dyn_num();
+    [[deprecated]] int*& dyn_num();
     // Get instance field reference: System.Int32 numCount
-    int& dyn_numCount();
+    [[deprecated]] int& dyn_numCount();
     // Get instance field reference: System.Int32 month
-    int& dyn_month();
+    [[deprecated]] int& dyn_month();
     // Get instance field reference: System.Int32 year
-    int& dyn_year();
+    [[deprecated]] int& dyn_year();
     // Get instance field reference: System.Int32 dayOfWeek
-    int& dyn_dayOfWeek();
+    [[deprecated]] int& dyn_dayOfWeek();
     // Get instance field reference: System.Int32 era
-    int& dyn_era();
+    [[deprecated]] int& dyn_era();
     // Get instance field reference: System.DateTimeParse/System.TM timeMark
-    ::System::DateTimeParse::TM& dyn_timeMark();
+    [[deprecated]] ::System::DateTimeParse::TM& dyn_timeMark();
     // Get instance field reference: System.Double fraction
-    double& dyn_fraction();
+    [[deprecated]] double& dyn_fraction();
     // Get instance field reference: System.Boolean hasSameDateAndTimeSeparators
-    bool& dyn_hasSameDateAndTimeSeparators();
+    [[deprecated]] bool& dyn_hasSameDateAndTimeSeparators();
     // Get instance field reference: System.Boolean timeZone
-    bool& dyn_timeZone();
+    [[deprecated]] bool& dyn_timeZone();
     // System.Void Init(System.Int32* numberBuffer)
-    // Offset: 0xCA5080
+    // Offset: 0x128F9D0
     void Init(int* numberBuffer);
     // System.Void AddNumber(System.Int32 value)
-    // Offset: 0xCA50A4
+    // Offset: 0x128F9F4
     void AddNumber(int value);
     // System.Int32 GetNumber(System.Int32 index)
-    // Offset: 0xCA50BC
+    // Offset: 0x128FA0C
     int GetNumber(int index);
   }; // System.DateTimeRawInfo
   #pragma pack(pop)

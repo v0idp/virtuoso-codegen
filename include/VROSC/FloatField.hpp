@@ -33,15 +33,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class FloatField : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Single EnteredValue
     // Size: 0x4
     // Offset: 0x10
@@ -58,24 +50,24 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::FloatNode*) == 0x8);
     public:
     // Get instance field reference: protected System.Single EnteredValue
-    float& dyn_EnteredValue();
+    [[deprecated]] float& dyn_EnteredValue();
     // Get instance field reference: protected VROSC.FloatNode ConnectedValue
-    ::VROSC::FloatNode*& dyn_ConnectedValue();
+    [[deprecated]] ::VROSC::FloatNode*& dyn_ConnectedValue();
     // public System.Single get_Value()
-    // Offset: 0x88E9A4
+    // Offset: 0x199F858
     float get_Value();
     // public System.Void .ctor(System.Single enteredValue)
-    // Offset: 0x88E960
+    // Offset: 0x199F814
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FloatField* New_ctor(float enteredValue) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FloatField::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FloatField*, creationType>(enteredValue)));
     }
     // public VROSC.FloatNode GetNode()
-    // Offset: 0x88E994
+    // Offset: 0x199F848
     ::VROSC::FloatNode* GetNode();
     // public System.Void SetNode(VROSC.FloatNode floatNode)
-    // Offset: 0x88E99C
+    // Offset: 0x199F850
     void SetNode(::VROSC::FloatNode* floatNode);
   }; // VROSC.FloatField
   #pragma pack(pop)

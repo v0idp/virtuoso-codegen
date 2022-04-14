@@ -49,16 +49,16 @@ namespace DG::Tweening {
     // Nested type: ::DG::Tweening::EaseFactory::$$c__DisplayClass2_0
     class $$c__DisplayClass2_0;
     // static public DG.Tweening.EaseFunction StopMotion(System.Int32 motionFps, System.Nullable`1<DG.Tweening.Ease> ease)
-    // Offset: 0x109B48C
+    // Offset: 0x15DDAB4
     static ::DG::Tweening::EaseFunction* StopMotion(int motionFps, ::System::Nullable_1<::DG::Tweening::Ease> ease);
     // static public DG.Tweening.EaseFunction StopMotion(System.Int32 motionFps, UnityEngine.AnimationCurve animCurve)
-    // Offset: 0x109CC60
+    // Offset: 0x15DF288
     static ::DG::Tweening::EaseFunction* StopMotion(int motionFps, ::UnityEngine::AnimationCurve* animCurve);
     // static public DG.Tweening.EaseFunction StopMotion(System.Int32 motionFps, DG.Tweening.EaseFunction customEase)
-    // Offset: 0x109CBA0
+    // Offset: 0x15DF1C8
     static ::DG::Tweening::EaseFunction* StopMotion(int motionFps, ::DG::Tweening::EaseFunction* customEase);
     // public System.Void .ctor()
-    // Offset: 0x109CD10
+    // Offset: 0x15DF338
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

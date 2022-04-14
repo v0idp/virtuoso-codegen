@@ -40,15 +40,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class P2PManager::RemotePlayerData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Oculus.Platform.PeerConnectionState state
     // Size: 0x4
     // Offset: 0x10
@@ -83,17 +75,17 @@ namespace Oculus::Platform::Samples::VrHoops {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*) == 0x8);
     public:
     // Get instance field reference: public Oculus.Platform.PeerConnectionState state
-    ::Oculus::Platform::PeerConnectionState& dyn_state();
+    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_state();
     // Get instance field reference: public Oculus.Platform.Samples.VrHoops.RemotePlayer player
-    ::Oculus::Platform::Samples::VrHoops::RemotePlayer*& dyn_player();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::RemotePlayer*& dyn_player();
     // Get instance field reference: public System.Single remoteTimeOffset
-    float& dyn_remoteTimeOffset();
+    [[deprecated]] float& dyn_remoteTimeOffset();
     // Get instance field reference: public System.Single lastReceivedBallsTime
-    float& dyn_lastReceivedBallsTime();
+    [[deprecated]] float& dyn_lastReceivedBallsTime();
     // Get instance field reference: public readonly System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Platform.Samples.VrHoops.P2PNetworkBall> activeBalls
-    ::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*& dyn_activeBalls();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*& dyn_activeBalls();
     // public System.Void .ctor()
-    // Offset: 0x1156040
+    // Offset: 0x1722F3C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

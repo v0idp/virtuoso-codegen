@@ -111,7 +111,7 @@ namespace MiniJSON {
     // Set static field: static public MiniJSON.Json/MiniJSON.Parser/MiniJSON.TOKEN NULL
     static void _set_NULL(::MiniJSON::Json::Parser::TOKEN value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // MiniJSON.Json/MiniJSON.Parser/MiniJSON.TOKEN
   #pragma pack(pop)
   static check_size<sizeof(Json::Parser::TOKEN), 0 + sizeof(int)> __MiniJSON_Json_Parser_TOKENSizeCheck;

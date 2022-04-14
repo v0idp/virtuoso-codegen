@@ -41,30 +41,22 @@ namespace VRVisuals {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetSoundReactiveColors : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [ColorUsageAttribute] Offset: 0x66D164
+    // [ColorUsageAttribute] Offset: 0x7830D0
     // private UnityEngine.Color _baseColor
     // Size: 0x10
     // Offset: 0x18
     ::UnityEngine::Color baseColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x66D1A4
+    // [ColorUsageAttribute] Offset: 0x783110
     // private UnityEngine.Color _midColor
     // Size: 0x10
     // Offset: 0x28
     ::UnityEngine::Color midColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x66D1E4
+    // [ColorUsageAttribute] Offset: 0x783150
     // private UnityEngine.Color _topColor
     // Size: 0x10
     // Offset: 0x38
@@ -117,36 +109,36 @@ namespace VRVisuals {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color _baseColor
-    ::UnityEngine::Color& dyn__baseColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__baseColor();
     // Get instance field reference: private UnityEngine.Color _midColor
-    ::UnityEngine::Color& dyn__midColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__midColor();
     // Get instance field reference: private UnityEngine.Color _topColor
-    ::UnityEngine::Color& dyn__topColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__topColor();
     // Get instance field reference: private System.Single _rotation
-    float& dyn__rotation();
+    [[deprecated]] float& dyn__rotation();
     // Get instance field reference: private System.Single _rotationSpeed
-    float& dyn__rotationSpeed();
+    [[deprecated]] float& dyn__rotationSpeed();
     // Get instance field reference: private System.Single _bobbing
-    float& dyn__bobbing();
+    [[deprecated]] float& dyn__bobbing();
     // Get instance field reference: private System.Single _bobbingSpeed
-    float& dyn__bobbingSpeed();
+    [[deprecated]] float& dyn__bobbingSpeed();
     // Get instance field reference: private UnityEngine.Vector4 _jumpOnSound
-    ::UnityEngine::Vector4& dyn__jumpOnSound();
+    [[deprecated]] ::UnityEngine::Vector4& dyn__jumpOnSound();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // private System.Void Awake()
-    // Offset: 0x13B1D2C
+    // Offset: 0x1924BD0
     void Awake();
     // private System.Void Start()
-    // Offset: 0x13B1DC0
+    // Offset: 0x1924C64
     void Start();
     // private System.Void SetColors()
-    // Offset: 0x13B1DC4
+    // Offset: 0x1924C68
     void SetColors();
     // public System.Void .ctor()
-    // Offset: 0x13B1F80
+    // Offset: 0x1924E24
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

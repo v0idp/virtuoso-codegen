@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ObjectActivation : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<UnityEngine.GameObject> _gameObjects
     // Size: 0x8
     // Offset: 0x18
@@ -60,15 +52,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> _gameObjects
-    ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__gameObjects();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__gameObjects();
     // public System.Collections.Generic.List`1<UnityEngine.GameObject> get_GameObjects()
-    // Offset: 0x918240
+    // Offset: 0xC637C0
     ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* get_GameObjects();
     // public System.Void ActivateByPercentage(System.Single percentage)
-    // Offset: 0x918248
+    // Offset: 0xC637C8
     void ActivateByPercentage(float percentage);
     // public System.Void .ctor()
-    // Offset: 0x918398
+    // Offset: 0xC63918
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

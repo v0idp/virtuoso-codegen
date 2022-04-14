@@ -36,15 +36,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class EnableSwitch : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.GameObject[] SwitchTargets
     // Size: 0x8
     // Offset: 0x18
@@ -55,7 +47,7 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject[] SwitchTargets
-    ::ArrayW<::UnityEngine::GameObject*>& dyn_SwitchTargets();
+    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn_SwitchTargets();
     // public System.Boolean SetActive(System.Int32 target)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
@@ -67,7 +59,7 @@ namespace GlobalNamespace {
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(this, ___generic__method, target);
     }
     // public System.Void .ctor()
-    // Offset: 0x12A8628
+    // Offset: 0x18A71CC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -51,10 +51,10 @@ namespace GlobalNamespace {
     // Set static field: static private readonly OVRHaptics/OVRHapticsOutput[] m_outputs
     static void _set_m_outputs(::ArrayW<::GlobalNamespace::OVRHaptics::OVRHapticsOutput*> value);
     // static private System.Void .cctor()
-    // Offset: 0xD33CE0
+    // Offset: 0xFC1634
     static void _cctor();
     // static public System.Void Process()
-    // Offset: 0xD33F20
+    // Offset: 0xFC1874
     static void Process();
   }; // OVRHaptics
   #pragma pack(pop)

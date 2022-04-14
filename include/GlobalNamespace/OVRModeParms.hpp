@@ -30,15 +30,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRModeParms : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRInput/RawButton resetButton
     // Size: 0x4
     // Offset: 0x18
@@ -49,18 +41,18 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRInput/RawButton resetButton
-    ::GlobalNamespace::OVRInput::RawButton& dyn_resetButton();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_resetButton();
     // private System.Void Start()
-    // Offset: 0xB24030
+    // Offset: 0xE247B0
     void Start();
     // private System.Void Update()
-    // Offset: 0xB240D4
+    // Offset: 0xE24854
     void Update();
     // private System.Void TestPowerStateMode()
-    // Offset: 0xB24194
+    // Offset: 0xE24914
     void TestPowerStateMode();
     // public System.Void .ctor()
-    // Offset: 0xB2424C
+    // Offset: 0xE249CC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -86,27 +86,27 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public TMPro.TMP_Text textComponent
-    ::TMPro::TMP_Text*& dyn_textComponent();
+    [[deprecated]] ::TMPro::TMP_Text*& dyn_textComponent();
     // Get instance field reference: public System.Int32 hashCode
-    int& dyn_hashCode();
+    [[deprecated]] int& dyn_hashCode();
     // Get instance field reference: public System.Int32 linkIdFirstCharacterIndex
-    int& dyn_linkIdFirstCharacterIndex();
+    [[deprecated]] int& dyn_linkIdFirstCharacterIndex();
     // Get instance field reference: public System.Int32 linkIdLength
-    int& dyn_linkIdLength();
+    [[deprecated]] int& dyn_linkIdLength();
     // Get instance field reference: public System.Int32 linkTextfirstCharacterIndex
-    int& dyn_linkTextfirstCharacterIndex();
+    [[deprecated]] int& dyn_linkTextfirstCharacterIndex();
     // Get instance field reference: public System.Int32 linkTextLength
-    int& dyn_linkTextLength();
+    [[deprecated]] int& dyn_linkTextLength();
     // Get instance field reference: System.Char[] linkID
-    ::ArrayW<::Il2CppChar>& dyn_linkID();
+    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_linkID();
     // System.Void SetLinkID(System.Char[] text, System.Int32 startIndex, System.Int32 length)
-    // Offset: 0xD602B0
+    // Offset: 0x103BDE4
     void SetLinkID(::ArrayW<::Il2CppChar> text, int startIndex, int length);
     // public System.String GetLinkText()
-    // Offset: 0xD603AC
+    // Offset: 0x103BEE0
     ::StringW GetLinkText();
     // public System.String GetLinkID()
-    // Offset: 0xD6049C
+    // Offset: 0x103BFD0
     ::StringW GetLinkID();
   }; // TMPro.TMP_LinkInfo
   #pragma pack(pop)

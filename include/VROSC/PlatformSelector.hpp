@@ -123,20 +123,12 @@ namespace VROSC {
       // Set static field: static public VROSC.PlatformSelector/VROSC.Platform Steam
       static void _set_Steam(::VROSC::PlatformSelector::Platform value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.PlatformSelector/VROSC.Platform
     #pragma pack(pop)
     static check_size<sizeof(PlatformSelector::Platform), 0 + sizeof(int)> __VROSC_PlatformSelector_PlatformSizeCheck;
     static_assert(sizeof(PlatformSelector::Platform) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.VRPlayer _oculusPrefab
     // Size: 0x8
     // Offset: 0x18
@@ -241,97 +233,97 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.VRPlayer> OnPlayerInitialized
     static void _set_OnPlayerInitialized(::System::Action_1<::VROSC::VRPlayer*>* value);
     // Get instance field reference: private VROSC.VRPlayer _oculusPrefab
-    ::VROSC::VRPlayer*& dyn__oculusPrefab();
+    [[deprecated]] ::VROSC::VRPlayer*& dyn__oculusPrefab();
     // Get instance field reference: private VROSC.VRPlayer _steamPrefab
-    ::VROSC::VRPlayer*& dyn__steamPrefab();
+    [[deprecated]] ::VROSC::VRPlayer*& dyn__steamPrefab();
     // Get instance field reference: private VROSC.VRPlayer _debugPrefab
-    ::VROSC::VRPlayer*& dyn__debugPrefab();
+    [[deprecated]] ::VROSC::VRPlayer*& dyn__debugPrefab();
     // Get instance field reference: private VROSC.PlatformSelector/VROSC.DebugSettings _debugSettings
-    ::VROSC::PlatformSelector::DebugSettings*& dyn__debugSettings();
+    [[deprecated]] ::VROSC::PlatformSelector::DebugSettings*& dyn__debugSettings();
     // Get instance field reference: private VROSC.HmdProfile[] _hmdProfiles
-    ::ArrayW<::VROSC::HmdProfile*>& dyn__hmdProfiles();
+    [[deprecated]] ::ArrayW<::VROSC::HmdProfile*>& dyn__hmdProfiles();
     // Get instance field reference: private LIV.SDK.Unity.LIV _liv
-    ::LIV::SDK::Unity::LIV*& dyn__liv();
+    [[deprecated]] ::LIV::SDK::Unity::LIV*& dyn__liv();
     // Get instance field reference: private System.Boolean _bypassEntitlementCheck
-    bool& dyn__bypassEntitlementCheck();
+    [[deprecated]] bool& dyn__bypassEntitlementCheck();
     // Get instance field reference: private System.UInt64 _applicationUserID
-    uint64_t& dyn__applicationUserID();
+    [[deprecated]] uint64_t& dyn__applicationUserID();
     // Get instance field reference: private System.Boolean _waitingForUserId
-    bool& dyn__waitingForUserId();
+    [[deprecated]] bool& dyn__waitingForUserId();
     // Get instance field reference: private VROSC.VRPlayer <VRPlayer>k__BackingField
-    ::VROSC::VRPlayer*& dyn_$VRPlayer$k__BackingField();
+    [[deprecated]] ::VROSC::VRPlayer*& dyn_$VRPlayer$k__BackingField();
     // Get instance field reference: private System.String <PlatformUID>k__BackingField
-    ::StringW& dyn_$PlatformUID$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$PlatformUID$k__BackingField();
     // Get instance field reference: private System.String <PlatformUsername>k__BackingField
-    ::StringW& dyn_$PlatformUsername$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$PlatformUsername$k__BackingField();
     // Get instance field reference: private System.Boolean <HasPassedEntitlement>k__BackingField
-    bool& dyn_$HasPassedEntitlement$k__BackingField();
+    [[deprecated]] bool& dyn_$HasPassedEntitlement$k__BackingField();
     // Get instance field reference: private VROSC.PlatformSelector/VROSC.Platform <CurrentPlatform>k__BackingField
-    ::VROSC::PlatformSelector::Platform& dyn_$CurrentPlatform$k__BackingField();
+    [[deprecated]] ::VROSC::PlatformSelector::Platform& dyn_$CurrentPlatform$k__BackingField();
     // Get instance field reference: private VROSC.HmdProfile <CurrentHmdProfile>k__BackingField
-    ::VROSC::HmdProfile*& dyn_$CurrentHmdProfile$k__BackingField();
+    [[deprecated]] ::VROSC::HmdProfile*& dyn_$CurrentHmdProfile$k__BackingField();
     // public VROSC.VRPlayer get_VRPlayer()
-    // Offset: 0x8FA7F8
+    // Offset: 0xADEF90
     ::VROSC::VRPlayer* get_VRPlayer();
     // private System.Void set_VRPlayer(VROSC.VRPlayer value)
-    // Offset: 0x8FA800
+    // Offset: 0xADEF98
     void set_VRPlayer(::VROSC::VRPlayer* value);
     // public System.String get_PlatformUID()
-    // Offset: 0x8FA808
+    // Offset: 0xADEFA0
     ::StringW get_PlatformUID();
     // private System.Void set_PlatformUID(System.String value)
-    // Offset: 0x8FA810
+    // Offset: 0xADEFA8
     void set_PlatformUID(::StringW value);
     // public System.String get_PlatformUsername()
-    // Offset: 0x8FA818
+    // Offset: 0xADEFB0
     ::StringW get_PlatformUsername();
     // private System.Void set_PlatformUsername(System.String value)
-    // Offset: 0x8FA820
+    // Offset: 0xADEFB8
     void set_PlatformUsername(::StringW value);
     // public System.Boolean get_HasPassedEntitlement()
-    // Offset: 0x8FA828
+    // Offset: 0xADEFC0
     bool get_HasPassedEntitlement();
     // private System.Void set_HasPassedEntitlement(System.Boolean value)
-    // Offset: 0x8FA830
+    // Offset: 0xADEFC8
     void set_HasPassedEntitlement(bool value);
     // public VROSC.PlatformSelector/VROSC.Platform get_CurrentPlatform()
-    // Offset: 0x8FA83C
+    // Offset: 0xADEFD4
     ::VROSC::PlatformSelector::Platform get_CurrentPlatform();
     // private System.Void set_CurrentPlatform(VROSC.PlatformSelector/VROSC.Platform value)
-    // Offset: 0x8FA844
+    // Offset: 0xADEFDC
     void set_CurrentPlatform(::VROSC::PlatformSelector::Platform value);
     // public VROSC.HmdProfile get_CurrentHmdProfile()
-    // Offset: 0x8FA84C
+    // Offset: 0xADEFE4
     ::VROSC::HmdProfile* get_CurrentHmdProfile();
     // private System.Void set_CurrentHmdProfile(VROSC.HmdProfile value)
-    // Offset: 0x8FA854
+    // Offset: 0xADEFEC
     void set_CurrentHmdProfile(::VROSC::HmdProfile* value);
     // public System.Void Setup()
-    // Offset: 0x8FA85C
+    // Offset: 0xADEFF4
     void Setup();
     // private System.Void Update()
-    // Offset: 0x8FA920
+    // Offset: 0xADF0B8
     void Update();
     // private System.Void SetCurrentHmdProfile()
-    // Offset: 0x8FAA2C
+    // Offset: 0xADF1C4
     void SetCurrentHmdProfile();
     // private System.Void GetOculusUserCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.User> message)
-    // Offset: 0x8FAC78
+    // Offset: 0xADF410
     void GetOculusUserCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* message);
     // private System.Void SpawnOculusPlayer()
-    // Offset: 0x8FB010
+    // Offset: 0xADF7A8
     void SpawnOculusPlayer();
     // private System.Void GetOculusOrgUserIdCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.OrgScopedID> message)
-    // Offset: 0x8FB108
+    // Offset: 0xADF8A0
     void GetOculusOrgUserIdCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::OrgScopedID*>* message);
     // private System.Void OculusEntitlementCallback(Oculus.Platform.Message msg)
-    // Offset: 0x8FB458
+    // Offset: 0xADFBF0
     void OculusEntitlementCallback(::Oculus::Platform::Message* msg);
     // private UnityEngine.Component CopyComponent(UnityEngine.Component original, UnityEngine.GameObject destination)
-    // Offset: 0x8FB558
+    // Offset: 0xADFCF0
     ::UnityEngine::Component* CopyComponent(::UnityEngine::Component* original, ::UnityEngine::GameObject* destination);
     // public System.Void .ctor()
-    // Offset: 0x8FB640
+    // Offset: 0xADFDD8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

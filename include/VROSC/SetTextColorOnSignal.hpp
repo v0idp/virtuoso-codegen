@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetTextColorOnSignal : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.TextMesh _textMesh
     // Size: 0x8
     // Offset: 0x40
@@ -107,43 +99,43 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.TextMesh _textMesh
-    ::UnityEngine::TextMesh*& dyn__textMesh();
+    [[deprecated]] ::UnityEngine::TextMesh*& dyn__textMesh();
     // Get instance field reference: private UnityEngine.Color _onSignalColor
-    ::UnityEngine::Color& dyn__onSignalColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__onSignalColor();
     // Get instance field reference: private System.Single _zeroBrightness
-    float& dyn__zeroBrightness();
+    [[deprecated]] float& dyn__zeroBrightness();
     // Get instance field reference: private System.Single _oneBrightness
-    float& dyn__oneBrightness();
+    [[deprecated]] float& dyn__oneBrightness();
     // Get instance field reference: private System.Single _rampUpTime
-    float& dyn__rampUpTime();
+    [[deprecated]] float& dyn__rampUpTime();
     // Get instance field reference: private System.Single _rampDownTime
-    float& dyn__rampDownTime();
+    [[deprecated]] float& dyn__rampDownTime();
     // Get instance field reference: private System.Single _targetBrightness
-    float& dyn__targetBrightness();
+    [[deprecated]] float& dyn__targetBrightness();
     // Get instance field reference: private System.Single _currentBrightness
-    float& dyn__currentBrightness();
+    [[deprecated]] float& dyn__currentBrightness();
     // Get instance field reference: private UnityEngine.Color _defaultColor
-    ::UnityEngine::Color& dyn__defaultColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__defaultColor();
     // protected System.Void Awake()
-    // Offset: 0x13B2BC8
+    // Offset: 0x1925A6C
     void Awake();
     // protected System.Void Update()
-    // Offset: 0x13B2D30
+    // Offset: 0x1925BD4
     void Update();
     // private System.Void TurnOn(VROSC.Signal signal)
-    // Offset: 0x13B2C80
+    // Offset: 0x1925B24
     void TurnOn(::VROSC::Signal* signal);
     // private System.Void StayOn(VROSC.Signal signal)
-    // Offset: 0x13B2CD4
+    // Offset: 0x1925B78
     void StayOn(::VROSC::Signal* signal);
     // private System.Void TurnOff(VROSC.Signal signal)
-    // Offset: 0x13B2D14
+    // Offset: 0x1925BB8
     void TurnOff(::VROSC::Signal* signal);
     // private System.Void SetColorAmount(System.Single brightness)
-    // Offset: 0x13B2C10
+    // Offset: 0x1925AB4
     void SetColorAmount(float brightness);
     // public System.Void .ctor()
-    // Offset: 0x13B2DE0
+    // Offset: 0x1925C84
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -158,17 +150,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SetTextColorOnSignal*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13B2C7C
+    // Offset: 0x1925B20
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13B2CB0
+    // Offset: 0x1925B54
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x13B2CF8
+    // Offset: 0x1925B9C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

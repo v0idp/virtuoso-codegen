@@ -77,15 +77,7 @@ namespace Oculus::Platform::Samples::VrHoops {
     class RemotePlayerData;
     // Nested type: ::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer
     class StartTimeOffer;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Collections.Generic.Dictionary`2<System.UInt64,Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.RemotePlayerData> m_remotePlayers
     // Size: 0x8
     // Offset: 0x10
@@ -204,117 +196,117 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.UInt32 SCORE_UPDATE_MESSAGE_SIZE
     static void _set_SCORE_UPDATE_MESSAGE_SIZE(uint value);
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt64,Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.RemotePlayerData> m_remotePlayers
-    ::System::Collections::Generic::Dictionary_2<uint64_t, ::Oculus::Platform::Samples::VrHoops::P2PManager::RemotePlayerData*>*& dyn_m_remotePlayers();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::Oculus::Platform::Samples::VrHoops::P2PManager::RemotePlayerData*>*& dyn_m_remotePlayers();
     // Get instance field reference: private System.Single m_timeForNextBallUpdate
-    float& dyn_m_timeForNextBallUpdate();
+    [[deprecated]] float& dyn_m_timeForNextBallUpdate();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Platform.Samples.VrHoops.P2PNetworkBall> m_localBalls
-    ::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*& dyn_m_localBalls();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*& dyn_m_localBalls();
     // Get instance field reference: private readonly System.Byte[] readBuffer
-    ::ArrayW<uint8_t>& dyn_readBuffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_readBuffer();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt64,System.Collections.Generic.List`1<System.Single>> m_remoteSyncTimeCache
-    ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::List_1<float>*>*& dyn_m_remoteSyncTimeCache();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::List_1<float>*>*& dyn_m_remoteSyncTimeCache();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt64,System.Single> m_remoteSentTimeCache
-    ::System::Collections::Generic::Dictionary_2<uint64_t, float>*& dyn_m_remoteSentTimeCache();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, float>*& dyn_m_remoteSentTimeCache();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.StartTimeOffer m_startTimeOfferCallback
-    ::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer*& dyn_m_startTimeOfferCallback();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer*& dyn_m_startTimeOfferCallback();
     // private Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.StartTimeOffer get_StartTimeOfferCallback()
-    // Offset: 0x982334
+    // Offset: 0xB546D0
     ::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer* get_StartTimeOfferCallback();
     // public System.Void set_StartTimeOfferCallback(Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.StartTimeOffer value)
-    // Offset: 0x98233C
+    // Offset: 0xB546D8
     void set_StartTimeOfferCallback(::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer* value);
     // public System.Void UpdateNetwork()
-    // Offset: 0x9804B0
+    // Offset: 0xB5284C
     void UpdateNetwork();
     // public System.Void AddRemotePlayer(Oculus.Platform.Samples.VrHoops.RemotePlayer player)
-    // Offset: 0x972DE0
+    // Offset: 0xB4517C
     void AddRemotePlayer(::Oculus::Platform::Samples::VrHoops::RemotePlayer* player);
     // public System.Void DisconnectAll()
-    // Offset: 0x9734A0
+    // Offset: 0xB4583C
     void DisconnectAll();
     // private System.Void PeerConnectRequestCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x981928
+    // Offset: 0xB53CC4
     void PeerConnectRequestCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // private System.Void ConnectionStateChangedCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x981B30
+    // Offset: 0xB53ECC
     void ConnectionStateChangedCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // private System.Void SendTimeSyncMessage(System.UInt64 remoteID)
-    // Offset: 0x981DD8
+    // Offset: 0xB54174
     void SendTimeSyncMessage(uint64_t remoteID);
     // private System.Void ReadTimeSyncMessage(System.UInt64 remoteID, System.Byte[] msg)
-    // Offset: 0x980860
+    // Offset: 0xB52BFC
     void ReadTimeSyncMessage(uint64_t remoteID, ::ArrayW<uint8_t> msg);
     // private System.Single ShiftRemoteTime(System.UInt64 remoteID, System.Single remoteTime)
-    // Offset: 0x982284
+    // Offset: 0xB54620
     float ShiftRemoteTime(uint64_t remoteID, float remoteTime);
     // private System.Void OfferMatchStartTime()
-    // Offset: 0x982084
+    // Offset: 0xB54420
     void OfferMatchStartTime();
     // private System.Void ReceiveMatchStartTimeOffer(System.UInt64 remoteID, System.Byte[] msg)
-    // Offset: 0x980F74
+    // Offset: 0xB53310
     void ReceiveMatchStartTimeOffer(uint64_t remoteID, ::ArrayW<uint8_t> msg);
     // public System.Void SendBackboardUpdate(System.Single time, UnityEngine.Vector3 pos, UnityEngine.Vector3 moveDir, UnityEngine.Vector3 nextMoveDir)
-    // Offset: 0x982378
+    // Offset: 0xB54714
     void SendBackboardUpdate(float time, ::UnityEngine::Vector3 pos, ::UnityEngine::Vector3 moveDir, ::UnityEngine::Vector3 nextMoveDir);
     // private System.Void ReceiveBackboardUpdate(System.UInt64 remoteID, System.Byte[] msg)
-    // Offset: 0x980FD4
+    // Offset: 0xB53370
     void ReceiveBackboardUpdate(uint64_t remoteID, ::ArrayW<uint8_t> msg);
     // public System.Void AddNetworkBall(UnityEngine.GameObject ball)
-    // Offset: 0x96BBFC
+    // Offset: 0xB3DF98
     void AddNetworkBall(::UnityEngine::GameObject* ball);
     // public System.Void RemoveNetworkBall(UnityEngine.GameObject ball)
-    // Offset: 0x9827A4
+    // Offset: 0xB54B40
     void RemoveNetworkBall(::UnityEngine::GameObject* ball);
     // private System.Void SendLocalBallTransforms()
-    // Offset: 0x981524
+    // Offset: 0xB538C0
     void SendLocalBallTransforms();
     // private System.Void ReceiveBallTransforms(System.UInt64 remoteID, System.Byte[] msg, System.UInt64 msgLength)
-    // Offset: 0x98110C
+    // Offset: 0xB534A8
     void ReceiveBallTransforms(uint64_t remoteID, ::ArrayW<uint8_t> msg, uint64_t msgLength);
     // public System.Void SendScoreUpdate(System.UInt32 score)
-    // Offset: 0x96B948
+    // Offset: 0xB3DCE4
     void SendScoreUpdate(uint score);
     // private System.Void ReceiveScoredUpdate(System.UInt64 remoteID, System.Byte[] msg)
-    // Offset: 0x98147C
+    // Offset: 0xB53818
     void ReceiveScoredUpdate(uint64_t remoteID, ::ArrayW<uint8_t> msg);
     // private System.Void PackVector3(UnityEngine.Vector3 vec, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x9825B0
+    // Offset: 0xB5494C
     void PackVector3(::UnityEngine::Vector3 vec, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private UnityEngine.Vector3 UnpackVector3(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982600
+    // Offset: 0xB5499C
     ::UnityEngine::Vector3 UnpackVector3(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Void PackQuaternion(UnityEngine.Quaternion quat, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982CAC
+    // Offset: 0xB55048
     void PackQuaternion(::UnityEngine::Quaternion quat, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Void PackFloat(System.Single value, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x981F58
+    // Offset: 0xB542F4
     void PackFloat(float value, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Single UnpackFloat(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x981FFC
+    // Offset: 0xB54398
     float UnpackFloat(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Single UnpackTime(System.UInt64 remoteID, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982344
+    // Offset: 0xB546E0
     float UnpackTime(uint64_t remoteID, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Void PackInt32(System.Int32 value, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982890
+    // Offset: 0xB54C2C
     void PackInt32(int value, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Int32 UnpackInt32(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982994
+    // Offset: 0xB54D30
     int UnpackInt32(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Void PackUint32(System.UInt32 value, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982B88
+    // Offset: 0xB54F24
     void PackUint32(uint value, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.UInt32 UnpackUint32(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982C24
+    // Offset: 0xB54FC0
     uint UnpackUint32(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Void PackBool(System.Boolean value, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982848
+    // Offset: 0xB54BE4
     void PackBool(bool value, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Boolean UnpackBool(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x982948
+    // Offset: 0xB54CE4
     bool UnpackBool(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // public System.Void .ctor()
-    // Offset: 0x9802B4
+    // Offset: 0xB52650
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -41,16 +41,8 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationUserGroup : public ::VROSC::LoopStationGroup {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x66F028
+    // [HeaderAttribute] Offset: 0x785090
     // private VROSC.UIHoldButton _removeButton
     // Size: 0x8
     // Offset: 0xA8
@@ -65,20 +57,20 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::MoveOnPlane*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIHoldButton _removeButton
-    ::VROSC::UIHoldButton*& dyn__removeButton();
+    [[deprecated]] ::VROSC::UIHoldButton*& dyn__removeButton();
     // Get instance field reference: private VROSC.MoveOnPlane _mover
-    ::VROSC::MoveOnPlane*& dyn__mover();
+    [[deprecated]] ::VROSC::MoveOnPlane*& dyn__mover();
     // private System.Void Awake()
-    // Offset: 0x8A6840
+    // Offset: 0x1979294
     void Awake();
     // private System.Void OnGrabEnd()
-    // Offset: 0x8A6AE8
+    // Offset: 0x1979538
     void OnGrabEnd();
     // private System.Void RemovePressed()
-    // Offset: 0x8A6C30
+    // Offset: 0x1979678
     void RemovePressed();
     // public System.Void .ctor()
-    // Offset: 0x8A6D0C
+    // Offset: 0x1979754
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -92,17 +84,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationUserGroup*, creationType>()));
     }
     // public override System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationGroupHandler handler, VROSC.LoopStationGroup/VROSC.SetupVariables vars)
-    // Offset: 0x8A695C
+    // Offset: 0x19793B0
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::Setup(VROSC.LoopStation loopStation, VROSC.LoopStationGroupHandler handler, VROSC.LoopStationGroup/VROSC.SetupVariables vars)
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationGroupHandler* handler, ::VROSC::LoopStationGroup::SetupVariables vars);
     // public override System.Void OnDestroy()
-    // Offset: 0x8A6B64
+    // Offset: 0x19795B0
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::OnDestroy()
     void OnDestroy();
     // public override System.Void SetAutoSorted(System.Boolean autoSorted)
-    // Offset: 0x8A6C94
+    // Offset: 0x19796DC
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::SetAutoSorted(System.Boolean autoSorted)
     void SetAutoSorted(bool autoSorted);

@@ -30,7 +30,7 @@ namespace UnityEngine {
   class SubsystemBindings : public ::Il2CppObject {
     public:
     // static System.Void DestroySubsystem(System.IntPtr nativePtr)
-    // Offset: 0x12FDEEC
+    // Offset: 0x1903890
     static void DestroySubsystem(::System::IntPtr nativePtr);
   }; // UnityEngine.SubsystemBindings
   #pragma pack(pop)

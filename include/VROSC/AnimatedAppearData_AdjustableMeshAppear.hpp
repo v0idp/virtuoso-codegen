@@ -34,15 +34,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AnimatedAppearData::AdjustableMeshAppear : public ::VROSC::AnimatedAppearData::AppearingObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AdjustableMesh _adjustableMesh
     // Size: 0x8
     // Offset: 0x20
@@ -55,16 +47,16 @@ namespace VROSC {
       return adjustableMesh;
     }
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh, VROSC.MinMaxVector2 minMax)
-    // Offset: 0x1359A8C
+    // Offset: 0x956388
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimatedAppearData::AdjustableMeshAppear* New_ctor(::VROSC::AdjustableMesh* adjustableMesh, ::VROSC::MinMaxVector2* minMax) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearData::AdjustableMeshAppear::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearData::AdjustableMeshAppear*, creationType>(adjustableMesh, minMax)));
     }
     // protected override System.Void UpdateObject(VROSC.AnimatedAppear/VROSC.Mode mode, System.Boolean useFlash)
-    // Offset: 0x1359B0C
+    // Offset: 0x956408
     // Implemented from: VROSC.AnimatedAppearData/VROSC.AppearingObject
     // Base method: System.Void AppearingObject::UpdateObject(VROSC.AnimatedAppear/VROSC.Mode mode, System.Boolean useFlash)
     void UpdateObject(::VROSC::AnimatedAppear::Mode mode, bool useFlash);

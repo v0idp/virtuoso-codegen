@@ -34,15 +34,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AnimatedAppearData::SimpleAppear : public ::VROSC::AnimatedAppearData::AppearingObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SimpleAppearObject _target
     // Size: 0x8
     // Offset: 0x20
@@ -55,16 +47,16 @@ namespace VROSC {
       return target;
     }
     // Get instance field reference: private VROSC.SimpleAppearObject _target
-    ::VROSC::SimpleAppearObject*& dyn__target();
+    [[deprecated]] ::VROSC::SimpleAppearObject*& dyn__target();
     // public System.Void .ctor(VROSC.SimpleAppearObject target, VROSC.MinMaxVector2 minMax)
-    // Offset: 0x1359C0C
+    // Offset: 0x956508
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimatedAppearData::SimpleAppear* New_ctor(::VROSC::SimpleAppearObject* target, ::VROSC::MinMaxVector2* minMax) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearData::SimpleAppear::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearData::SimpleAppear*, creationType>(target, minMax)));
     }
     // protected override System.Void UpdateObject(VROSC.AnimatedAppear/VROSC.Mode mode, System.Boolean useFlash)
-    // Offset: 0x1359C54
+    // Offset: 0x956550
     // Implemented from: VROSC.AnimatedAppearData/VROSC.AppearingObject
     // Base method: System.Void AppearingObject::UpdateObject(VROSC.AnimatedAppear/VROSC.Mode mode, System.Boolean useFlash)
     void UpdateObject(::VROSC::AnimatedAppear::Mode mode, bool useFlash);

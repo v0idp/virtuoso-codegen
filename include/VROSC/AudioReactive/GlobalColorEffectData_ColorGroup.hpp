@@ -25,37 +25,29 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class GlobalColorEffectData::ColorGroup : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [ColorUsageAttribute] Offset: 0x67681C
+    // [ColorUsageAttribute] Offset: 0x78D0C0
     // private UnityEngine.Color _color1
     // Size: 0x10
     // Offset: 0x10
     ::UnityEngine::Color color1;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x67685C
+    // [ColorUsageAttribute] Offset: 0x78D100
     // private UnityEngine.Color _color2
     // Size: 0x10
     // Offset: 0x20
     ::UnityEngine::Color color2;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x67689C
+    // [ColorUsageAttribute] Offset: 0x78D140
     // private UnityEngine.Color _color3
     // Size: 0x10
     // Offset: 0x30
     ::UnityEngine::Color color3;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x6768DC
+    // [ColorUsageAttribute] Offset: 0x78D180
     // private UnityEngine.Color _color4
     // Size: 0x10
     // Offset: 0x40
@@ -64,27 +56,27 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Color _color1
-    ::UnityEngine::Color& dyn__color1();
+    [[deprecated]] ::UnityEngine::Color& dyn__color1();
     // Get instance field reference: private UnityEngine.Color _color2
-    ::UnityEngine::Color& dyn__color2();
+    [[deprecated]] ::UnityEngine::Color& dyn__color2();
     // Get instance field reference: private UnityEngine.Color _color3
-    ::UnityEngine::Color& dyn__color3();
+    [[deprecated]] ::UnityEngine::Color& dyn__color3();
     // Get instance field reference: private UnityEngine.Color _color4
-    ::UnityEngine::Color& dyn__color4();
+    [[deprecated]] ::UnityEngine::Color& dyn__color4();
     // public UnityEngine.Color get_Color1()
-    // Offset: 0x13CF4E4
+    // Offset: 0x1957130
     ::UnityEngine::Color get_Color1();
     // public UnityEngine.Color get_Color2()
-    // Offset: 0x13CF4F0
+    // Offset: 0x195713C
     ::UnityEngine::Color get_Color2();
     // public UnityEngine.Color get_Color3()
-    // Offset: 0x13CF4FC
+    // Offset: 0x1957148
     ::UnityEngine::Color get_Color3();
     // public UnityEngine.Color get_Color4()
-    // Offset: 0x13CF508
+    // Offset: 0x1957154
     ::UnityEngine::Color get_Color4();
     // public System.Void .ctor()
-    // Offset: 0x13CF514
+    // Offset: 0x1957160
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -26,15 +26,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionSettingsDataController::$$c__DisplayClass33_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.Scale scale
     // Size: 0x4
     // Offset: 0x10
@@ -47,12 +39,12 @@ namespace VROSC {
       return scale;
     }
     // Get instance field reference: public VROSC.Scale scale
-    ::VROSC::Scale& dyn_scale();
+    [[deprecated]] ::VROSC::Scale& dyn_scale();
     // System.Boolean <FilterSelectedScale>b__0(VROSC.Scale value)
-    // Offset: 0x134A1A0
+    // Offset: 0x8D5118
     bool $FilterSelectedScale$b__0(::VROSC::Scale value);
     // public System.Void .ctor()
-    // Offset: 0x134A198
+    // Offset: 0x8D5110
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

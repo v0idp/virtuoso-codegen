@@ -51,7 +51,7 @@ namespace OVR {
     // Set static field: static public OVR.AudioManager/OVR.Fade Out
     static void _set_Out(::OVR::AudioManager::Fade value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // OVR.AudioManager/OVR.Fade
   #pragma pack(pop)
   static check_size<sizeof(AudioManager::Fade), 0 + sizeof(int)> __OVR_AudioManager_FadeSizeCheck;

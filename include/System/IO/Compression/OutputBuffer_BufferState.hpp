@@ -48,13 +48,13 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: readonly System.Int32 _pos
-    int& dyn__pos();
+    [[deprecated]] int& dyn__pos();
     // Get instance field reference: readonly System.UInt32 _bitBuf
-    uint& dyn__bitBuf();
+    [[deprecated]] uint& dyn__bitBuf();
     // Get instance field reference: readonly System.Int32 _bitCount
-    int& dyn__bitCount();
+    [[deprecated]] int& dyn__bitCount();
     // System.Void .ctor(System.Int32 pos, System.UInt32 bitBuf, System.Int32 bitCount)
-    // Offset: 0x112117C
+    // Offset: 0x16989E8
     // ABORTED: conflicts with another method.  BufferState(int pos, uint bitBuf, int bitCount);
   }; // System.IO.Compression.OutputBuffer/System.IO.Compression.BufferState
   #pragma pack(pop)

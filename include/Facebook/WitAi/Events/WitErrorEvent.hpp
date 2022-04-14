@@ -29,7 +29,7 @@ namespace Facebook::WitAi::Events {
   class WitErrorEvent : public ::UnityEngine::Events::UnityEvent_2<::StringW, ::StringW> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x10FA0E4
+    // Offset: 0x167094C
     // Implemented from: UnityEngine.Events.UnityEvent`2
     // Base method: System.Void UnityEvent_2::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

@@ -72,15 +72,7 @@ namespace VROSC::Credits {
     public:
     // Nested type: ::VROSC::Credits::ScrollingCredits::$GrabbingCoroutine$d__22
     class $GrabbingCoroutine$d__22;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Credits.CreditsData _data
     // Size: 0x8
     // Offset: 0x18
@@ -179,76 +171,76 @@ namespace VROSC::Credits {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Credits.CreditsData _data
-    ::VROSC::Credits::CreditsData*& dyn__data();
+    [[deprecated]] ::VROSC::Credits::CreditsData*& dyn__data();
     // Get instance field reference: private VROSC.Credits.CreditsSection _sectionPrefab
-    ::VROSC::Credits::CreditsSection*& dyn__sectionPrefab();
+    [[deprecated]] ::VROSC::Credits::CreditsSection*& dyn__sectionPrefab();
     // Get instance field reference: private UnityEngine.RectTransform _background
-    ::UnityEngine::RectTransform*& dyn__background();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__background();
     // Get instance field reference: private UnityEngine.Transform _mover
-    ::UnityEngine::Transform*& dyn__mover();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__mover();
     // Get instance field reference: private VROSC.Clickable _dragObject
-    ::VROSC::Clickable*& dyn__dragObject();
+    [[deprecated]] ::VROSC::Clickable*& dyn__dragObject();
     // Get instance field reference: private System.Single _startFade
-    float& dyn__startFade();
+    [[deprecated]] float& dyn__startFade();
     // Get instance field reference: private VROSC.SmoothMovement _dragging
-    ::VROSC::SmoothMovement*& dyn__dragging();
+    [[deprecated]] ::VROSC::SmoothMovement*& dyn__dragging();
     // Get instance field reference: private System.Single _maxHeight
-    float& dyn__maxHeight();
+    [[deprecated]] float& dyn__maxHeight();
     // Get instance field reference: private System.Single _scrollAmount
-    float& dyn__scrollAmount();
+    [[deprecated]] float& dyn__scrollAmount();
     // Get instance field reference: private System.Single _moveTimer
-    float& dyn__moveTimer();
+    [[deprecated]] float& dyn__moveTimer();
     // Get instance field reference: private System.Boolean _setupComplete
-    bool& dyn__setupComplete();
+    [[deprecated]] bool& dyn__setupComplete();
     // Get instance field reference: private System.Boolean _grabbed
-    bool& dyn__grabbed();
+    [[deprecated]] bool& dyn__grabbed();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private VROSC.Credits.CreditsObject _postCreditsObject
-    ::VROSC::Credits::CreditsObject*& dyn__postCreditsObject();
+    [[deprecated]] ::VROSC::Credits::CreditsObject*& dyn__postCreditsObject();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Credits.CreditsObject> _objects
-    ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*& dyn__objects();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*& dyn__objects();
     // private System.Void Awake()
-    // Offset: 0x13E18B8
+    // Offset: 0x1980988
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13E19E8
+    // Offset: 0x1980AB8
     void OnDestroy();
     // private System.Void OnEnable()
-    // Offset: 0x13E1ABC
+    // Offset: 0x1980B8C
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x13E1FC0
+    // Offset: 0x1981090
     void OnDisable();
     // public System.Void Setup()
-    // Offset: 0x13E1BC0
+    // Offset: 0x1980C90
     void Setup();
     // private System.Void OnPressed(VROSC.ClickData clickData, System.Boolean pressed)
-    // Offset: 0x13E2178
+    // Offset: 0x1981248
     void OnPressed(::VROSC::ClickData* clickData, bool pressed);
     // private System.Void StopGrab(VROSC.InputDevice device, VROSC.TriggerButton button)
-    // Offset: 0x13E20C0
+    // Offset: 0x1981190
     void StopGrab(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
     // private System.Collections.IEnumerator GrabbingCoroutine(VROSC.InputDevice device)
-    // Offset: 0x13E225C
+    // Offset: 0x198132C
     ::System::Collections::IEnumerator* GrabbingCoroutine(::VROSC::InputDevice* device);
     // private System.Void Reset()
-    // Offset: 0x13E1F4C
+    // Offset: 0x198101C
     void Reset();
     // private System.Void Update()
-    // Offset: 0x13E22D4
+    // Offset: 0x19813A4
     void Update();
     // private System.Void UpdateVisibility()
-    // Offset: 0x13E23E8
+    // Offset: 0x19814B8
     void UpdateVisibility();
     // private System.Void UpdatePostCreditsObject()
-    // Offset: 0x13E2664
+    // Offset: 0x1981734
     void UpdatePostCreditsObject();
     // private System.Void OnDrawGizmosSelected()
-    // Offset: 0x13E2708
+    // Offset: 0x19817D8
     void OnDrawGizmosSelected();
     // public System.Void .ctor()
-    // Offset: 0x13E2850
+    // Offset: 0x1981920
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -58,15 +58,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlayerPlaybackSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopPlaybackConfig <LocalPlaybackConfig>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -221,203 +213,203 @@ namespace VROSC {
     // Set static field: static private System.Single AllowedLeadupToNoTailLoopInSeconds
     static void _set_AllowedLeadupToNoTailLoopInSeconds(float value);
     // Get instance field reference: private VROSC.LoopPlaybackConfig <LocalPlaybackConfig>k__BackingField
-    ::VROSC::LoopPlaybackConfig*& dyn_$LocalPlaybackConfig$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn_$LocalPlaybackConfig$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlaybackConfig <PlayingConfig>k__BackingField
-    ::VROSC::LoopPlaybackConfig*& dyn_$PlayingConfig$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn_$PlayingConfig$k__BackingField();
     // Get instance field reference: private VROSC.Loop <Loop>k__BackingField
-    ::VROSC::Loop*& dyn_$Loop$k__BackingField();
+    [[deprecated]] ::VROSC::Loop*& dyn_$Loop$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackStoppedState <StoppedState>k__BackingField
-    ::VROSC::LoopPlayerPlaybackStoppedState*& dyn_$StoppedState$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackStoppedState*& dyn_$StoppedState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackWillStartState <WillStartState>k__BackingField
-    ::VROSC::LoopPlayerPlaybackWillStartState*& dyn_$WillStartState$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackWillStartState*& dyn_$WillStartState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackLoopingState <LoopingState>k__BackingField
-    ::VROSC::LoopPlayerPlaybackLoopingState*& dyn_$LoopingState$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackLoopingState*& dyn_$LoopingState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackWillStopState <WillStopState>k__BackingField
-    ::VROSC::LoopPlayerPlaybackWillStopState*& dyn_$WillStopState$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackWillStopState*& dyn_$WillStopState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackState <CurrentState>k__BackingField
-    ::VROSC::LoopPlayerPlaybackState*& dyn_$CurrentState$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackState*& dyn_$CurrentState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackState <NextState>k__BackingField
-    ::VROSC::LoopPlayerPlaybackState*& dyn_$NextState$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackState*& dyn_$NextState$k__BackingField();
     // Get instance field reference: private System.Boolean <Active>k__BackingField
-    bool& dyn_$Active$k__BackingField();
+    [[deprecated]] bool& dyn_$Active$k__BackingField();
     // Get instance field reference: private System.Boolean <Playing>k__BackingField
-    bool& dyn_$Playing$k__BackingField();
+    [[deprecated]] bool& dyn_$Playing$k__BackingField();
     // Get instance field reference: private System.Single <FadeMultiplier>k__BackingField
-    float& dyn_$FadeMultiplier$k__BackingField();
+    [[deprecated]] float& dyn_$FadeMultiplier$k__BackingField();
     // Get instance field reference: private System.Int32 <PlayFromStartOffset>k__BackingField
-    int& dyn_$PlayFromStartOffset$k__BackingField();
+    [[deprecated]] int& dyn_$PlayFromStartOffset$k__BackingField();
     // Get instance field reference: private System.Int32 <StartOffsetBarRelative>k__BackingField
-    int& dyn_$StartOffsetBarRelative$k__BackingField();
+    [[deprecated]] int& dyn_$StartOffsetBarRelative$k__BackingField();
     // Get instance field reference: private System.Boolean _wasPlaying
-    bool& dyn__wasPlaying();
+    [[deprecated]] bool& dyn__wasPlaying();
     // Get instance field reference: private System.Boolean _startedWithPlayFromStart
-    bool& dyn__startedWithPlayFromStart();
+    [[deprecated]] bool& dyn__startedWithPlayFromStart();
     // Get instance field reference: private System.Int32 _noTailLoops
-    int& dyn__noTailLoops();
+    [[deprecated]] int& dyn__noTailLoops();
     // Get instance field reference: private System.Boolean _fadeWithNaturalTail
-    bool& dyn__fadeWithNaturalTail();
+    [[deprecated]] bool& dyn__fadeWithNaturalTail();
     // Get instance field reference: private System.Int32 _playedLength
-    int& dyn__playedLength();
+    [[deprecated]] int& dyn__playedLength();
     // Get instance field reference: private System.Int32 _allowedLeadupToNoTailLoop
-    int& dyn__allowedLeadupToNoTailLoop();
+    [[deprecated]] int& dyn__allowedLeadupToNoTailLoop();
     // Get instance field reference: public System.Action OnPlayingStart
-    ::System::Action*& dyn_OnPlayingStart();
+    [[deprecated]] ::System::Action*& dyn_OnPlayingStart();
     // Get instance field reference: public System.Action OnPlayingEnd
-    ::System::Action*& dyn_OnPlayingEnd();
+    [[deprecated]] ::System::Action*& dyn_OnPlayingEnd();
     // Get instance field reference: public System.Action`1<VROSC.LoopPlayerPlaybackState> OnStateChanged
-    ::System::Action_1<::VROSC::LoopPlayerPlaybackState*>*& dyn_OnStateChanged();
+    [[deprecated]] ::System::Action_1<::VROSC::LoopPlayerPlaybackState*>*& dyn_OnStateChanged();
     // public VROSC.LoopPlaybackConfig get_LocalPlaybackConfig()
-    // Offset: 0x907508
+    // Offset: 0x19BD4A4
     ::VROSC::LoopPlaybackConfig* get_LocalPlaybackConfig();
     // private System.Void set_LocalPlaybackConfig(VROSC.LoopPlaybackConfig value)
-    // Offset: 0x907500
+    // Offset: 0x19BD49C
     void set_LocalPlaybackConfig(::VROSC::LoopPlaybackConfig* value);
     // public VROSC.LoopPlaybackConfig get_PlayingConfig()
-    // Offset: 0x907518
+    // Offset: 0x19BD4B4
     ::VROSC::LoopPlaybackConfig* get_PlayingConfig();
     // private System.Void set_PlayingConfig(VROSC.LoopPlaybackConfig value)
-    // Offset: 0x907510
+    // Offset: 0x19BD4AC
     void set_PlayingConfig(::VROSC::LoopPlaybackConfig* value);
     // public VROSC.Loop get_Loop()
-    // Offset: 0x907528
+    // Offset: 0x19BD4C4
     ::VROSC::Loop* get_Loop();
     // private System.Void set_Loop(VROSC.Loop value)
-    // Offset: 0x907520
+    // Offset: 0x19BD4BC
     void set_Loop(::VROSC::Loop* value);
     // public VROSC.LoopPlayerPlaybackStoppedState get_StoppedState()
-    // Offset: 0x907538
+    // Offset: 0x19BD4D4
     ::VROSC::LoopPlayerPlaybackStoppedState* get_StoppedState();
     // private System.Void set_StoppedState(VROSC.LoopPlayerPlaybackStoppedState value)
-    // Offset: 0x907530
+    // Offset: 0x19BD4CC
     void set_StoppedState(::VROSC::LoopPlayerPlaybackStoppedState* value);
     // public VROSC.LoopPlayerPlaybackWillStartState get_WillStartState()
-    // Offset: 0x907548
+    // Offset: 0x19BD4E4
     ::VROSC::LoopPlayerPlaybackWillStartState* get_WillStartState();
     // private System.Void set_WillStartState(VROSC.LoopPlayerPlaybackWillStartState value)
-    // Offset: 0x907540
+    // Offset: 0x19BD4DC
     void set_WillStartState(::VROSC::LoopPlayerPlaybackWillStartState* value);
     // public VROSC.LoopPlayerPlaybackLoopingState get_LoopingState()
-    // Offset: 0x907558
+    // Offset: 0x19BD4F4
     ::VROSC::LoopPlayerPlaybackLoopingState* get_LoopingState();
     // private System.Void set_LoopingState(VROSC.LoopPlayerPlaybackLoopingState value)
-    // Offset: 0x907550
+    // Offset: 0x19BD4EC
     void set_LoopingState(::VROSC::LoopPlayerPlaybackLoopingState* value);
     // public VROSC.LoopPlayerPlaybackWillStopState get_WillStopState()
-    // Offset: 0x907568
+    // Offset: 0x19BD504
     ::VROSC::LoopPlayerPlaybackWillStopState* get_WillStopState();
     // private System.Void set_WillStopState(VROSC.LoopPlayerPlaybackWillStopState value)
-    // Offset: 0x907560
+    // Offset: 0x19BD4FC
     void set_WillStopState(::VROSC::LoopPlayerPlaybackWillStopState* value);
     // public VROSC.LoopPlayerPlaybackState get_CurrentState()
-    // Offset: 0x907578
+    // Offset: 0x19BD514
     ::VROSC::LoopPlayerPlaybackState* get_CurrentState();
     // private System.Void set_CurrentState(VROSC.LoopPlayerPlaybackState value)
-    // Offset: 0x907570
+    // Offset: 0x19BD50C
     void set_CurrentState(::VROSC::LoopPlayerPlaybackState* value);
     // public VROSC.LoopPlayerPlaybackState get_NextState()
-    // Offset: 0x907588
+    // Offset: 0x19BD524
     ::VROSC::LoopPlayerPlaybackState* get_NextState();
     // private System.Void set_NextState(VROSC.LoopPlayerPlaybackState value)
-    // Offset: 0x907580
+    // Offset: 0x19BD51C
     void set_NextState(::VROSC::LoopPlayerPlaybackState* value);
     // public System.Boolean get_Active()
-    // Offset: 0x90759C
+    // Offset: 0x19BD538
     bool get_Active();
     // private System.Void set_Active(System.Boolean value)
-    // Offset: 0x907590
+    // Offset: 0x19BD52C
     void set_Active(bool value);
     // public System.Boolean get_Playing()
-    // Offset: 0x9075B0
+    // Offset: 0x19BD54C
     bool get_Playing();
     // private System.Void set_Playing(System.Boolean value)
-    // Offset: 0x9075A4
+    // Offset: 0x19BD540
     void set_Playing(bool value);
     // public System.Boolean get_WaitingToStart()
-    // Offset: 0x906750
+    // Offset: 0x19BC724
     bool get_WaitingToStart();
     // public System.Single get_FadeMultiplier()
-    // Offset: 0x9075D0
+    // Offset: 0x19BD56C
     float get_FadeMultiplier();
     // private System.Void set_FadeMultiplier(System.Single value)
-    // Offset: 0x9075C8
+    // Offset: 0x19BD564
     void set_FadeMultiplier(float value);
     // public System.Int32 get_PlayFromStartOffset()
-    // Offset: 0x9075E0
+    // Offset: 0x19BD57C
     int get_PlayFromStartOffset();
     // private System.Void set_PlayFromStartOffset(System.Int32 value)
-    // Offset: 0x9075D8
+    // Offset: 0x19BD574
     void set_PlayFromStartOffset(int value);
     // public System.Int32 get_StartOffsetBarRelative()
-    // Offset: 0x9075F0
+    // Offset: 0x19BD58C
     int get_StartOffsetBarRelative();
     // private System.Void set_StartOffsetBarRelative(System.Int32 value)
-    // Offset: 0x9075E8
+    // Offset: 0x19BD584
     void set_StartOffsetBarRelative(int value);
     // public System.Void Setup(VROSC.Loop loop, VROSC.LoopPlaybackConfig config)
-    // Offset: 0x90564C
+    // Offset: 0x19BBB18
     void Setup(::VROSC::Loop* loop, ::VROSC::LoopPlaybackConfig* config);
     // private System.Void SetStart(VROSC.LoopPlaybackConfig/VROSC.TriggerSync mode)
-    // Offset: 0x90763C
+    // Offset: 0x19BD5D8
     void SetStart(::VROSC::LoopPlaybackConfig::TriggerSync mode);
     // private System.Void SetStop(VROSC.LoopPlaybackConfig/VROSC.TriggerSync mode)
-    // Offset: 0x907640
+    // Offset: 0x19BD5DC
     void SetStop(::VROSC::LoopPlaybackConfig::TriggerSync mode);
     // private System.Void SetFadeIn(VROSC.LoopPlaybackConfig/VROSC.FadeDuration mode)
-    // Offset: 0x907644
+    // Offset: 0x19BD5E0
     void SetFadeIn(::VROSC::LoopPlaybackConfig::FadeDuration mode);
     // private System.Void SetFadeOut(VROSC.LoopPlaybackConfig/VROSC.FadeDuration mode)
-    // Offset: 0x907648
+    // Offset: 0x19BD5E4
     void SetFadeOut(::VROSC::LoopPlaybackConfig::FadeDuration mode);
     // System.Void SetOneShot(System.Boolean oneShot)
-    // Offset: 0x90790C
+    // Offset: 0x19BD8AC
     void SetOneShot(bool oneShot);
     // private System.Void SetRetrigger(System.Boolean retrigger)
-    // Offset: 0x907ABC
+    // Offset: 0x19BDA54
     void SetRetrigger(bool retrigger);
     // public System.Void StartRequested(VROSC.LoopPlaybackConfig config)
-    // Offset: 0x906080
+    // Offset: 0x19BC24C
     void StartRequested(::VROSC::LoopPlaybackConfig* config);
     // System.Boolean ShouldShowPlayIcon()
-    // Offset: 0x9066D0
+    // Offset: 0x19BC6AC
     bool ShouldShowPlayIcon();
     // System.Void UpdatePlayConfig(VROSC.LoopPlaybackConfigOverride newConfig)
-    // Offset: 0x906488
+    // Offset: 0x19BC634
     void UpdatePlayConfig(::VROSC::LoopPlaybackConfigOverride* newConfig);
     // public System.Void StopRequested(System.Int32 atSample, System.Boolean instant)
-    // Offset: 0x905FE0
+    // Offset: 0x19BC1AC
     void StopRequested(int atSample, bool instant);
     // private System.Void ProgressState(System.Int32 atSample)
-    // Offset: 0x907BD8
+    // Offset: 0x19BDB70
     void ProgressState(int atSample);
     // private System.Void SetState(VROSC.LoopPlayerPlaybackState currentState, System.Int32 atSample)
-    // Offset: 0x907B28
+    // Offset: 0x19BDAC0
     void SetState(::VROSC::LoopPlayerPlaybackState* currentState, int atSample);
     // private System.Void PerformIsPlayingCheck()
-    // Offset: 0x907C34
+    // Offset: 0x19BDBCC
     void PerformIsPlayingCheck();
     // public System.Boolean ShouldCheckActivityChangeBeforeSample(System.Int32 samples)
-    // Offset: 0x907CC0
+    // Offset: 0x19BDC58
     bool ShouldCheckActivityChangeBeforeSample(int samples);
     // public System.Boolean ShouldUpdateFading()
-    // Offset: 0x907D1C
+    // Offset: 0x19BDCB4
     bool ShouldUpdateFading();
     // public System.Boolean CheckForStateSwitchThisSample(System.Int32 atSample)
-    // Offset: 0x907D38
+    // Offset: 0x19BDCD0
     bool CheckForStateSwitchThisSample(int atSample);
     // public System.Void UpdateFading(System.Int32 atSample)
-    // Offset: 0x907E1C
+    // Offset: 0x19BDDB4
     void UpdateFading(int atSample);
     // private System.Int32 GetNextLoopPointFromOffsetStart(System.Int32 startSample)
-    // Offset: 0x9079C0
+    // Offset: 0x19BD960
     int GetNextLoopPointFromOffsetStart(int startSample);
     // public System.Void RenderPlaybackData(System.Single[] data, System.Int32 channels)
-    // Offset: 0x906878
+    // Offset: 0x19BC84C
     void RenderPlaybackData(::ArrayW<float> data, int channels);
     // private System.Int32 GetLocalLoopSampleIndex(System.Int32 channels, System.Int32 atSample)
-    // Offset: 0x907E5C
+    // Offset: 0x19BDDF4
     int GetLocalLoopSampleIndex(int channels, int atSample);
     // public System.Void .ctor()
-    // Offset: 0x905634
+    // Offset: 0x19BBB00
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -60,18 +60,18 @@ namespace NatSuite::Examples {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public NatSuite.Examples.HotMic <>4__this
-    ::NatSuite::Examples::HotMic*& dyn_$$4__this();
+    [[deprecated]] ::NatSuite::Examples::HotMic*& dyn_$$4__this();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter`1<System.Boolean> <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter_1<bool>& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter_1<bool>& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x13D0450
+    // Offset: 0x195809C
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x13D0820
+    // Offset: 0x195846C
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // NatSuite.Examples.HotMic/NatSuite.Examples.<Start>d__2
   // WARNING Not writing size check since size may be invalid!

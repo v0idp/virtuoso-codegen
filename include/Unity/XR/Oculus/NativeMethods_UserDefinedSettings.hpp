@@ -90,25 +90,25 @@ namespace Unity::XR::Oculus {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt16 sharedDepthBuffer
-    uint16_t& dyn_sharedDepthBuffer();
+    [[deprecated]] uint16_t& dyn_sharedDepthBuffer();
     // Get instance field reference: public System.UInt16 dashSupport
-    uint16_t& dyn_dashSupport();
+    [[deprecated]] uint16_t& dyn_dashSupport();
     // Get instance field reference: public System.UInt16 stereoRenderingMode
-    uint16_t& dyn_stereoRenderingMode();
+    [[deprecated]] uint16_t& dyn_stereoRenderingMode();
     // Get instance field reference: public System.UInt16 colorSpace
-    uint16_t& dyn_colorSpace();
+    [[deprecated]] uint16_t& dyn_colorSpace();
     // Get instance field reference: public System.UInt16 lowOverheadMode
-    uint16_t& dyn_lowOverheadMode();
+    [[deprecated]] uint16_t& dyn_lowOverheadMode();
     // Get instance field reference: public System.UInt16 protectedContext
-    uint16_t& dyn_protectedContext();
+    [[deprecated]] uint16_t& dyn_protectedContext();
     // Get instance field reference: public System.UInt16 focusAware
-    uint16_t& dyn_focusAware();
+    [[deprecated]] uint16_t& dyn_focusAware();
     // Get instance field reference: public System.UInt16 optimizeBufferDiscards
-    uint16_t& dyn_optimizeBufferDiscards();
+    [[deprecated]] uint16_t& dyn_optimizeBufferDiscards();
     // Get instance field reference: public System.UInt16 phaseSync
-    uint16_t& dyn_phaseSync();
+    [[deprecated]] uint16_t& dyn_phaseSync();
     // Get instance field reference: public System.UInt16 subsampledLayout
-    uint16_t& dyn_subsampledLayout();
+    [[deprecated]] uint16_t& dyn_subsampledLayout();
   }; // Unity.XR.Oculus.NativeMethods/Unity.XR.Oculus.UserDefinedSettings
   #pragma pack(pop)
   static check_size<sizeof(NativeMethods::UserDefinedSettings), 18 + sizeof(uint16_t)> __Unity_XR_Oculus_NativeMethods_UserDefinedSettingsSizeCheck;

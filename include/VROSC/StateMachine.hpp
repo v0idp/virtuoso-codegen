@@ -54,15 +54,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::StateMachine::Transition
     class Transition;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IState _currentState
     // Size: 0x8
     // Offset: 0x10
@@ -93,36 +85,36 @@ namespace VROSC {
     // Set static field: static private System.Collections.Generic.List`1<VROSC.StateMachine/VROSC.Transition> EmptyTransitions
     static void _set_EmptyTransitions(::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>* value);
     // Get instance field reference: private VROSC.IState _currentState
-    ::VROSC::IState*& dyn__currentState();
+    [[deprecated]] ::VROSC::IState*& dyn__currentState();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Type,System.Collections.Generic.List`1<VROSC.StateMachine/VROSC.Transition>> _transitions
-    ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*>*& dyn__transitions();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*>*& dyn__transitions();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.StateMachine/VROSC.Transition> _currentTransitions
-    ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*& dyn__currentTransitions();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*& dyn__currentTransitions();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.StateMachine/VROSC.Transition> _anyTransitions
-    ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*& dyn__anyTransitions();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*& dyn__anyTransitions();
     // static private System.Void .cctor()
-    // Offset: 0x13BD5F0
+    // Offset: 0x1930A44
     static void _cctor();
     // public System.Boolean IsState(VROSC.IState state)
-    // Offset: 0x13BCC88
+    // Offset: 0x19300DC
     bool IsState(::VROSC::IState* state);
     // public System.Void Tick()
-    // Offset: 0x13BCC98
+    // Offset: 0x19300EC
     void Tick();
     // public System.Void SetState(VROSC.IState state, params System.Object[] values)
-    // Offset: 0x13BD0E8
+    // Offset: 0x193053C
     void SetState(::VROSC::IState* state, ::ArrayW<::Il2CppObject*> values);
     // public System.Void AddTransition(VROSC.IState from, VROSC.IState to, System.Func`1<System.Boolean> predicate)
-    // Offset: 0x13BD318
+    // Offset: 0x193076C
     void AddTransition(::VROSC::IState* from, ::VROSC::IState* to, ::System::Func_1<bool>* predicate);
     // public System.Void AddAnyTransition(VROSC.IState state, System.Func`1<System.Boolean> predicate)
-    // Offset: 0x13BD47C
+    // Offset: 0x19308D0
     void AddAnyTransition(::VROSC::IState* state, ::System::Func_1<bool>* predicate);
     // private System.Boolean GetTransition(out VROSC.StateMachine/VROSC.Transition transition)
-    // Offset: 0x13BCE1C
+    // Offset: 0x1930270
     bool GetTransition(ByRef<::VROSC::StateMachine::Transition*> transition);
     // public System.Void .ctor()
-    // Offset: 0x13BD518
+    // Offset: 0x193096C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

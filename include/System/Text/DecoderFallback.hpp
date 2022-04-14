@@ -33,15 +33,7 @@ namespace System::Text {
   // [TokenAttribute] Offset: FFFFFFFF
   class DecoderFallback : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Boolean bIsMicrosoftBestFitFallback
     // Size: 0x1
     // Offset: 0x10
@@ -66,15 +58,15 @@ namespace System::Text {
     // Set static field: static private System.Object s_InternalSyncObject
     static void _set_s_InternalSyncObject(::Il2CppObject* value);
     // Get instance field reference: System.Boolean bIsMicrosoftBestFitFallback
-    bool& dyn_bIsMicrosoftBestFitFallback();
+    [[deprecated]] bool& dyn_bIsMicrosoftBestFitFallback();
     // static private System.Object get_InternalSyncObject()
-    // Offset: 0xCA8310
+    // Offset: 0x12939F4
     static ::Il2CppObject* get_InternalSyncObject();
     // static public System.Text.DecoderFallback get_ReplacementFallback()
-    // Offset: 0xCA7964
+    // Offset: 0x1292AC8
     static ::System::Text::DecoderFallback* get_ReplacementFallback();
     // static public System.Text.DecoderFallback get_ExceptionFallback()
-    // Offset: 0xCA83F8
+    // Offset: 0x1293ADC
     static ::System::Text::DecoderFallback* get_ExceptionFallback();
     // public System.Int32 get_MaxCharCount()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -83,7 +75,7 @@ namespace System::Text {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Text::DecoderFallbackBuffer* CreateFallbackBuffer();
     // protected System.Void .ctor()
-    // Offset: 0xCA7F7C
+    // Offset: 0x1293658
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

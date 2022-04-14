@@ -48,49 +48,49 @@ namespace DG::Tweening::Core {
     // Set static field: static private System.String _LogPrefix
     static void _set__LogPrefix(::StringW value);
     // static public System.Int32 get_logPriority()
-    // Offset: 0x109ADC4
+    // Offset: 0x15DD3EC
     static int get_logPriority();
     // static public System.Void Log(System.Object message)
-    // Offset: 0x1094F68
+    // Offset: 0x15D7590
     static void Log(::Il2CppObject* message);
     // static public System.Void LogWarning(System.Object message, DG.Tweening.Tween t)
-    // Offset: 0x1098DD0
+    // Offset: 0x15DB3F8
     static void LogWarning(::Il2CppObject* message, ::DG::Tweening::Tween* t);
     // static public System.Void LogError(System.Object message)
-    // Offset: 0x1097028
+    // Offset: 0x15D9650
     static void LogError(::Il2CppObject* message);
     // static public System.Void LogReport(System.Object message)
-    // Offset: 0x1099EA0
+    // Offset: 0x15DC4C8
     static void LogReport(::Il2CppObject* message);
     // static public System.Void LogSafeModeReport(System.Object message)
-    // Offset: 0x1099FF4
+    // Offset: 0x15DC61C
     static void LogSafeModeReport(::Il2CppObject* message);
     // static public System.Void LogInvalidTween(DG.Tweening.Tween t)
-    // Offset: 0x109AE10
+    // Offset: 0x15DD438
     static void LogInvalidTween(::DG::Tweening::Tween* t);
     // static public System.Void LogNestedTween(DG.Tweening.Tween t)
-    // Offset: 0x109AE58
+    // Offset: 0x15DD480
     static void LogNestedTween(::DG::Tweening::Tween* t);
     // static public System.Void LogNullTween(DG.Tweening.Tween t)
-    // Offset: 0x109AEA4
+    // Offset: 0x15DD4CC
     static void LogNullTween(::DG::Tweening::Tween* t);
     // static public System.Void LogNonPathTween(DG.Tweening.Tween t)
-    // Offset: 0x109AEEC
+    // Offset: 0x15DD514
     static void LogNonPathTween(::DG::Tweening::Tween* t);
     // static public System.Void LogMissingMaterialProperty(System.String propertyName)
-    // Offset: 0x109AF38
+    // Offset: 0x15DD560
     static void LogMissingMaterialProperty(::StringW propertyName);
     // static public System.Void LogMissingMaterialProperty(System.Int32 propertyId)
-    // Offset: 0x109AF90
+    // Offset: 0x15DD5B8
     static void LogMissingMaterialProperty(int propertyId);
     // static public System.Void LogRemoveActiveTweenError(System.String errorInfo, DG.Tweening.Tween t)
-    // Offset: 0x109B01C
+    // Offset: 0x15DD644
     static void LogRemoveActiveTweenError(::StringW errorInfo, ::DG::Tweening::Tween* t);
     // static public System.Void LogAddActiveTweenError(System.String errorInfo, DG.Tweening.Tween t)
-    // Offset: 0x109B080
+    // Offset: 0x15DD6A8
     static void LogAddActiveTweenError(::StringW errorInfo, ::DG::Tweening::Tween* t);
     // static public System.Void SetLogPriority(DG.Tweening.LogBehaviour logBehaviour)
-    // Offset: 0x109429C
+    // Offset: 0x15D68C4
     static void SetLogPriority(::DG::Tweening::LogBehaviour logBehaviour);
   }; // DG.Tweening.Core.Debugger
   #pragma pack(pop)

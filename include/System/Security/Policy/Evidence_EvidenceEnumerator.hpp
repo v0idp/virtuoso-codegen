@@ -25,15 +25,7 @@ namespace System::Security::Policy {
   // [TokenAttribute] Offset: FFFFFFFF
   class Evidence::EvidenceEnumerator : public ::Il2CppObject/*, public ::System::Collections::IEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.IEnumerator currentEnum
     // Size: 0x8
     // Offset: 0x10
@@ -58,26 +50,26 @@ namespace System::Security::Policy {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.IEnumerator currentEnum
-    ::System::Collections::IEnumerator*& dyn_currentEnum();
+    [[deprecated]] ::System::Collections::IEnumerator*& dyn_currentEnum();
     // Get instance field reference: private System.Collections.IEnumerator hostEnum
-    ::System::Collections::IEnumerator*& dyn_hostEnum();
+    [[deprecated]] ::System::Collections::IEnumerator*& dyn_hostEnum();
     // Get instance field reference: private System.Collections.IEnumerator assemblyEnum
-    ::System::Collections::IEnumerator*& dyn_assemblyEnum();
+    [[deprecated]] ::System::Collections::IEnumerator*& dyn_assemblyEnum();
     // public System.Object get_Current()
-    // Offset: 0xDD4508
+    // Offset: 0xE50BB4
     ::Il2CppObject* get_Current();
     // public System.Void .ctor(System.Collections.IEnumerator hostenum, System.Collections.IEnumerator assemblyenum)
-    // Offset: 0xDD4248
+    // Offset: 0xE508F4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Evidence::EvidenceEnumerator* New_ctor(::System::Collections::IEnumerator* hostenum, ::System::Collections::IEnumerator* assemblyenum) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Policy::Evidence::EvidenceEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Evidence::EvidenceEnumerator*, creationType>(hostenum, assemblyenum)));
     }
     // public System.Boolean MoveNext()
-    // Offset: 0xDD4284
+    // Offset: 0xE50930
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0xDD43CC
+    // Offset: 0xE50A78
     void Reset();
   }; // System.Security.Policy.Evidence/System.Security.Policy.EvidenceEnumerator
   #pragma pack(pop)

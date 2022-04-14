@@ -36,20 +36,20 @@ namespace Firebase::Auth {
   class AuthUtilPINVOKE::SWIGStringHelper::SWIGStringDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x12B4288
+    // Offset: 0x18B4478
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AuthUtilPINVOKE::SWIGStringHelper::SWIGStringDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::AuthUtilPINVOKE::SWIGStringHelper::SWIGStringDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AuthUtilPINVOKE::SWIGStringHelper::SWIGStringDelegate*, creationType>(object, method)));
     }
     // public System.String Invoke(System.String message)
-    // Offset: 0x12B5410
+    // Offset: 0x18B5600
     ::StringW Invoke(::StringW message);
     // public System.IAsyncResult BeginInvoke(System.String message, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x12B578C
+    // Offset: 0x18B597C
     ::System::IAsyncResult* BeginInvoke(::StringW message, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.String EndInvoke(System.IAsyncResult result)
-    // Offset: 0x12B57B0
+    // Offset: 0x18B59A0
     ::StringW EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGStringHelper/Firebase.Auth.SWIGStringDelegate
   #pragma pack(pop)

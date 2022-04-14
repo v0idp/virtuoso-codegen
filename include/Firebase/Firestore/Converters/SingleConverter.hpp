@@ -40,7 +40,7 @@ namespace Firebase::Firestore::Converters {
   class SingleConverter : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
     // System.Void .ctor()
-    // Offset: 0xC2ECD8
+    // Offset: 0xD50AE8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -49,17 +49,17 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<SingleConverter*, creationType>()));
     }
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC400D4
+    // Offset: 0xD64660
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
     // protected override System.Object DeserializeDouble(Firebase.Firestore.DeserializationContext context, System.Double value)
-    // Offset: 0xC4014C
+    // Offset: 0xD646D8
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeDouble(Firebase.Firestore.DeserializationContext context, System.Double value)
     ::Il2CppObject* DeserializeDouble(::Firebase::Firestore::DeserializationContext* context, double value);
     // protected override System.Object DeserializeInteger(Firebase.Firestore.DeserializationContext context, System.Int64 value)
-    // Offset: 0xC401B4
+    // Offset: 0xD64740
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeInteger(Firebase.Firestore.DeserializationContext context, System.Int64 value)
     ::Il2CppObject* DeserializeInteger(::Firebase::Firestore::DeserializationContext* context, int64_t value);

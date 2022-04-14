@@ -31,16 +31,8 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class AdjustableMeshColorChangeEffect : public ::VROSC::AdjustableMeshEffect {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [ColorUsageAttribute] Offset: 0x6752C4
+    // [ColorUsageAttribute] Offset: 0x78B818
     // private UnityEngine.Color _color
     // Size: 0x10
     // Offset: 0x20
@@ -55,17 +47,17 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private UnityEngine.Color _baseColor
-    ::UnityEngine::Color& dyn__baseColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__baseColor();
     // private System.Void Awake()
-    // Offset: 0x13688D0
+    // Offset: 0x967210
     void Awake();
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x1368994
+    // Offset: 0x9672D4
     void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x13689A8
+    // Offset: 0x9672E8
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -79,7 +71,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshColorChangeEffect*, creationType>()));
     }
     // protected override System.Void OnMeshVisible()
-    // Offset: 0x13688DC
+    // Offset: 0x96721C
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::OnMeshVisible()
     void OnMeshVisible();

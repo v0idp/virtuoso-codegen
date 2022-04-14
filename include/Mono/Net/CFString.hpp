@@ -36,15 +36,7 @@ namespace Mono::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class CFString : public ::Mono::Net::CFObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String str
     // Size: 0x8
     // Offset: 0x18
@@ -55,27 +47,27 @@ namespace Mono::Net {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String str
-    ::StringW& dyn_str();
+    [[deprecated]] ::StringW& dyn_str();
     // static private System.IntPtr CFStringCreateWithCharacters(System.IntPtr alloc, System.IntPtr chars, System.IntPtr length)
-    // Offset: 0xE6E37C
+    // Offset: 0x10E0214
     static ::System::IntPtr CFStringCreateWithCharacters(::System::IntPtr alloc, ::System::IntPtr chars, ::System::IntPtr length);
     // static public Mono.Net.CFString Create(System.String value)
-    // Offset: 0xE6C61C
+    // Offset: 0x10DE4B4
     static ::Mono::Net::CFString* Create(::StringW value);
     // static private System.IntPtr CFStringGetLength(System.IntPtr handle)
-    // Offset: 0xE6E414
+    // Offset: 0x10E02AC
     static ::System::IntPtr CFStringGetLength(::System::IntPtr handle);
     // static private System.IntPtr CFStringGetCharactersPtr(System.IntPtr handle)
-    // Offset: 0xE6E494
+    // Offset: 0x10E032C
     static ::System::IntPtr CFStringGetCharactersPtr(::System::IntPtr handle);
     // static private System.IntPtr CFStringGetCharacters(System.IntPtr handle, Mono.Net.CFRange range, System.IntPtr buffer)
-    // Offset: 0xE6E514
+    // Offset: 0x10E03AC
     static ::System::IntPtr CFStringGetCharacters(::System::IntPtr handle, ::Mono::Net::CFRange range, ::System::IntPtr buffer);
     // static public System.String AsString(System.IntPtr handle)
-    // Offset: 0xE6D984
+    // Offset: 0x10DF81C
     static ::StringW AsString(::System::IntPtr handle);
     // public System.Void .ctor(System.IntPtr handle, System.Boolean own)
-    // Offset: 0xE6E32C
+    // Offset: 0x10E01C4
     // Implemented from: Mono.Net.CFObject
     // Base method: System.Void CFObject::.ctor(System.IntPtr handle, System.Boolean own)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -84,7 +76,7 @@ namespace Mono::Net {
       return THROW_UNLESS((::il2cpp_utils::New<CFString*, creationType>(handle, own)));
     }
     // public override System.String ToString()
-    // Offset: 0xE6E5BC
+    // Offset: 0x10E0454
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

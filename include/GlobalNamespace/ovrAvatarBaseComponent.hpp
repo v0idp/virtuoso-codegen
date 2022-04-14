@@ -51,9 +51,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 basePosition
-    ::UnityEngine::Vector3& dyn_basePosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_basePosition();
     // Get instance field reference: public System.IntPtr renderComponent
-    ::System::IntPtr& dyn_renderComponent();
+    [[deprecated]] ::System::IntPtr& dyn_renderComponent();
   }; // ovrAvatarBaseComponent
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarBaseComponent), 16 + sizeof(::System::IntPtr)> __GlobalNamespace_ovrAvatarBaseComponentSizeCheck;

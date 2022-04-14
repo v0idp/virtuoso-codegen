@@ -35,20 +35,20 @@ namespace Firebase::Auth {
   class FirebaseAuth::StateChangedDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x12B0848
+    // Offset: 0x18B0584
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseAuth::StateChangedDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::FirebaseAuth::StateChangedDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseAuth::StateChangedDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.IntPtr authCPtr)
-    // Offset: 0x12B4484
+    // Offset: 0x18B4674
     void Invoke(::System::IntPtr authCPtr);
     // public System.IAsyncResult BeginInvoke(System.IntPtr authCPtr, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x12B46B0
+    // Offset: 0x18B48A0
     ::System::IAsyncResult* BeginInvoke(::System::IntPtr authCPtr, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x12B4738
+    // Offset: 0x18B4928
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Auth.FirebaseAuth/Firebase.Auth.StateChangedDelegate
   #pragma pack(pop)

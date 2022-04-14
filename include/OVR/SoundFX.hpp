@@ -69,54 +69,46 @@ namespace OVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class SoundFX : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x5D5A34
+    // [TooltipAttribute] Offset: 0x6EE640
     // public System.String name
     // Size: 0x8
     // Offset: 0x10
     ::StringW name;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5A6C
+    // [TooltipAttribute] Offset: 0x6EE678
     // public OVR.SoundFXNext playback
     // Size: 0x4
     // Offset: 0x18
     ::OVR::SoundFXNext playback;
     // Field size check
     static_assert(sizeof(::OVR::SoundFXNext) == 0x4);
-    // [RangeAttribute] Offset: 0x5D5AA4
-    // [TooltipAttribute] Offset: 0x5D5AA4
+    // [RangeAttribute] Offset: 0x6EE6B0
+    // [TooltipAttribute] Offset: 0x6EE6B0
     // public System.Single volume
     // Size: 0x4
     // Offset: 0x1C
     float volume;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [TooltipAttribute] Offset: 0x5D5AF8
-    // [MinMaxAttribute] Offset: 0x5D5AF8
+    // [TooltipAttribute] Offset: 0x6EE704
+    // [MinMaxAttribute] Offset: 0x6EE704
     // public UnityEngine.Vector2 pitchVariance
     // Size: 0x8
     // Offset: 0x20
     ::UnityEngine::Vector2 pitchVariance;
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5B54
-    // [MinMaxAttribute] Offset: 0x5D5B54
+    // [TooltipAttribute] Offset: 0x6EE760
+    // [MinMaxAttribute] Offset: 0x6EE760
     // public UnityEngine.Vector2 falloffDistance
     // Size: 0x8
     // Offset: 0x28
     ::UnityEngine::Vector2 falloffDistance;
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5BB4
+    // [TooltipAttribute] Offset: 0x6EE7C0
     // public UnityEngine.AudioRolloffMode falloffCurve
     // Size: 0x4
     // Offset: 0x30
@@ -125,52 +117,52 @@ namespace OVR {
     static_assert(sizeof(::UnityEngine::AudioRolloffMode) == 0x4);
     // Padding between fields: falloffCurve and: volumeFalloffCurve
     char __padding5[0x4] = {};
-    // [TooltipAttribute] Offset: 0x5D5BEC
+    // [TooltipAttribute] Offset: 0x6EE7F8
     // public UnityEngine.AnimationCurve volumeFalloffCurve
     // Size: 0x8
     // Offset: 0x38
     ::UnityEngine::AnimationCurve* volumeFalloffCurve;
     // Field size check
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5C24
+    // [TooltipAttribute] Offset: 0x6EE830
     // public UnityEngine.AnimationCurve reverbZoneMix
     // Size: 0x8
     // Offset: 0x40
     ::UnityEngine::AnimationCurve* reverbZoneMix;
     // Field size check
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5C5C
-    // [RangeAttribute] Offset: 0x5D5C5C
+    // [TooltipAttribute] Offset: 0x6EE868
+    // [RangeAttribute] Offset: 0x6EE868
     // public System.Single spread
     // Size: 0x4
     // Offset: 0x48
     float spread;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [TooltipAttribute] Offset: 0x5D5CB4
-    // [RangeAttribute] Offset: 0x5D5CB4
+    // [TooltipAttribute] Offset: 0x6EE8C0
+    // [RangeAttribute] Offset: 0x6EE8C0
     // public System.Single pctChanceToPlay
     // Size: 0x4
     // Offset: 0x4C
     float pctChanceToPlay;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [TooltipAttribute] Offset: 0x5D5D08
+    // [TooltipAttribute] Offset: 0x6EE914
     // public OVR.SoundPriority priority
     // Size: 0x4
     // Offset: 0x50
     ::OVR::SoundPriority priority;
     // Field size check
     static_assert(sizeof(::OVR::SoundPriority) == 0x4);
-    // [TooltipAttribute] Offset: 0x5D5D40
-    // [MinMaxAttribute] Offset: 0x5D5D40
+    // [TooltipAttribute] Offset: 0x6EE94C
+    // [MinMaxAttribute] Offset: 0x6EE94C
     // public UnityEngine.Vector2 delay
     // Size: 0x8
     // Offset: 0x54
     ::UnityEngine::Vector2 delay;
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5D9C
+    // [TooltipAttribute] Offset: 0x6EE9A8
     // public System.Boolean looping
     // Size: 0x1
     // Offset: 0x5C
@@ -185,7 +177,7 @@ namespace OVR {
     ::OVR::OSPProps* ospProps;
     // Field size check
     static_assert(sizeof(::OVR::OSPProps*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5DD4
+    // [TooltipAttribute] Offset: 0x6EE9E0
     // public UnityEngine.AudioClip[] soundClips
     // Size: 0x8
     // Offset: 0x68
@@ -220,99 +212,99 @@ namespace OVR {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: public OVR.SoundFXNext playback
-    ::OVR::SoundFXNext& dyn_playback();
+    [[deprecated]] ::OVR::SoundFXNext& dyn_playback();
     // Get instance field reference: public System.Single volume
-    float& dyn_volume();
+    [[deprecated]] float& dyn_volume();
     // Get instance field reference: public UnityEngine.Vector2 pitchVariance
-    ::UnityEngine::Vector2& dyn_pitchVariance();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_pitchVariance();
     // Get instance field reference: public UnityEngine.Vector2 falloffDistance
-    ::UnityEngine::Vector2& dyn_falloffDistance();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_falloffDistance();
     // Get instance field reference: public UnityEngine.AudioRolloffMode falloffCurve
-    ::UnityEngine::AudioRolloffMode& dyn_falloffCurve();
+    [[deprecated]] ::UnityEngine::AudioRolloffMode& dyn_falloffCurve();
     // Get instance field reference: public UnityEngine.AnimationCurve volumeFalloffCurve
-    ::UnityEngine::AnimationCurve*& dyn_volumeFalloffCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_volumeFalloffCurve();
     // Get instance field reference: public UnityEngine.AnimationCurve reverbZoneMix
-    ::UnityEngine::AnimationCurve*& dyn_reverbZoneMix();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_reverbZoneMix();
     // Get instance field reference: public System.Single spread
-    float& dyn_spread();
+    [[deprecated]] float& dyn_spread();
     // Get instance field reference: public System.Single pctChanceToPlay
-    float& dyn_pctChanceToPlay();
+    [[deprecated]] float& dyn_pctChanceToPlay();
     // Get instance field reference: public OVR.SoundPriority priority
-    ::OVR::SoundPriority& dyn_priority();
+    [[deprecated]] ::OVR::SoundPriority& dyn_priority();
     // Get instance field reference: public UnityEngine.Vector2 delay
-    ::UnityEngine::Vector2& dyn_delay();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_delay();
     // Get instance field reference: public System.Boolean looping
-    bool& dyn_looping();
+    [[deprecated]] bool& dyn_looping();
     // Get instance field reference: public OVR.OSPProps ospProps
-    ::OVR::OSPProps*& dyn_ospProps();
+    [[deprecated]] ::OVR::OSPProps*& dyn_ospProps();
     // Get instance field reference: public UnityEngine.AudioClip[] soundClips
-    ::ArrayW<::UnityEngine::AudioClip*>& dyn_soundClips();
+    [[deprecated]] ::ArrayW<::UnityEngine::AudioClip*>& dyn_soundClips();
     // Get instance field reference: public System.Boolean visibilityToggle
-    bool& dyn_visibilityToggle();
+    [[deprecated]] bool& dyn_visibilityToggle();
     // Get instance field reference: private OVR.SoundGroup soundGroup
-    ::OVR::SoundGroup*& dyn_soundGroup();
+    [[deprecated]] ::OVR::SoundGroup*& dyn_soundGroup();
     // Get instance field reference: private System.Int32 lastIdx
-    int& dyn_lastIdx();
+    [[deprecated]] int& dyn_lastIdx();
     // Get instance field reference: private System.Int32 playingIdx
-    int& dyn_playingIdx();
+    [[deprecated]] int& dyn_playingIdx();
     // public System.Int32 get_Length()
-    // Offset: 0x12A7324
+    // Offset: 0x18A4EC8
     int get_Length();
     // public System.Boolean get_IsValid()
-    // Offset: 0x12A7340
+    // Offset: 0x18A4EE4
     bool get_IsValid();
     // public OVR.SoundGroup get_Group()
-    // Offset: 0x12A73E0
+    // Offset: 0x18A4F84
     ::OVR::SoundGroup* get_Group();
     // public System.Void set_Group(OVR.SoundGroup value)
-    // Offset: 0x12A73E8
+    // Offset: 0x18A4F8C
     void set_Group(::OVR::SoundGroup* value);
     // public System.Single get_MaxFalloffDistSquared()
-    // Offset: 0x12A4F08
+    // Offset: 0x18A2AAC
     float get_MaxFalloffDistSquared();
     // public System.Single get_GroupVolumeOverride()
-    // Offset: 0x12A4F3C
+    // Offset: 0x18A2AE0
     float get_GroupVolumeOverride();
     // public UnityEngine.AudioClip GetClip()
-    // Offset: 0x12A4E38
+    // Offset: 0x18A29DC
     ::UnityEngine::AudioClip* GetClip();
     // public UnityEngine.Audio.AudioMixerGroup GetMixerGroup(UnityEngine.Audio.AudioMixerGroup defaultMixerGroup)
-    // Offset: 0x12A4F60
+    // Offset: 0x18A2B04
     ::UnityEngine::Audio::AudioMixerGroup* GetMixerGroup(::UnityEngine::Audio::AudioMixerGroup* defaultMixerGroup);
     // public System.Boolean ReachedGroupPlayLimit()
-    // Offset: 0x12A4F14
+    // Offset: 0x18A2AB8
     bool ReachedGroupPlayLimit();
     // public System.Single GetClipLength(System.Int32 idx)
-    // Offset: 0x12A7410
+    // Offset: 0x18A4FB4
     float GetClipLength(int idx);
     // public System.Single GetPitch()
-    // Offset: 0x12A4F54
+    // Offset: 0x18A2AF8
     float GetPitch();
     // public System.Int32 PlaySound(System.Single delaySecs)
-    // Offset: 0x12A7508
+    // Offset: 0x18A50AC
     int PlaySound(float delaySecs);
     // public System.Int32 PlaySoundAt(UnityEngine.Vector3 pos, System.Single delaySecs, System.Single volumeOverride, System.Single pitchMultiplier)
-    // Offset: 0x12A75E0
+    // Offset: 0x18A5184
     int PlaySoundAt(::UnityEngine::Vector3 pos, float delaySecs, float volumeOverride, float pitchMultiplier);
     // public System.Void SetOnFinished(System.Action onFinished)
-    // Offset: 0x12A76F0
+    // Offset: 0x18A5294
     void SetOnFinished(::System::Action* onFinished);
     // public System.Void SetOnFinished(System.Action`1<System.Object> onFinished, System.Object obj)
-    // Offset: 0x12A7778
+    // Offset: 0x18A531C
     void SetOnFinished(::System::Action_1<::Il2CppObject*>* onFinished, ::Il2CppObject* obj);
     // public System.Boolean StopSound()
-    // Offset: 0x12A7808
+    // Offset: 0x18A53AC
     bool StopSound();
     // public System.Void AttachToParent(UnityEngine.Transform parent)
-    // Offset: 0x12A7890
+    // Offset: 0x18A5434
     void AttachToParent(::UnityEngine::Transform* parent);
     // public System.Void DetachFromParent()
-    // Offset: 0x12A7918
+    // Offset: 0x18A54BC
     void DetachFromParent();
     // public System.Void .ctor()
-    // Offset: 0x12A64CC
+    // Offset: 0x18A4070
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -54,15 +54,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::DrumpadEffect::$SpecificFlow$d__8
     class $SpecificFlow$d__8;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.ChangeColorEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -95,26 +87,26 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ChangeColorEffectData _data
-    ::VROSC::AudioReactive::ChangeColorEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::ChangeColorEffectData*& dyn__data();
     // Get instance field reference: private VROSC.GlobalDrumPadEffect[] _targets
-    ::ArrayW<::VROSC::GlobalDrumPadEffect*>& dyn__targets();
+    [[deprecated]] ::ArrayW<::VROSC::GlobalDrumPadEffect*>& dyn__targets();
     // Get instance field reference: private System.Int32 _currentInt
-    int& dyn__currentInt();
+    [[deprecated]] int& dyn__currentInt();
     // Get instance field reference: private System.Int32 _pingPongDirection
-    int& dyn__pingPongDirection();
+    [[deprecated]] int& dyn__pingPongDirection();
     // Get instance field reference: private UnityEngine.Color _currentColor
-    ::UnityEngine::Color& dyn__currentColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__currentColor();
     // public VROSC.AudioReactive.ChangeColorEffectData get_Data()
-    // Offset: 0x130E87C
+    // Offset: 0x8E8424
     ::VROSC::AudioReactive::ChangeColorEffectData* get_Data();
     // private UnityEngine.Color GetNewColor()
-    // Offset: 0x130E8D0
+    // Offset: 0x8E8474
     ::UnityEngine::Color GetNewColor();
     // private System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x130EB1C
+    // Offset: 0x8E86C0
     void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x130ED2C
+    // Offset: 0x8E88D0
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -125,17 +117,17 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<DrumpadEffect*, creationType>()));
     }
     // public override System.Void Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
-    // Offset: 0x130E884
+    // Offset: 0x8E842C
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
     void Setup(::VROSC::AudioReactive::AudioReactiveBehaviour* behaviour);
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0x130EBC4
+    // Offset: 0x8E8768
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();
     // public override System.Void DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
-    // Offset: 0x130EC30
+    // Offset: 0x8E87D4
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
     void DrawGizmos(::VROSC::AudioReactive::ReactToBeat* sender);

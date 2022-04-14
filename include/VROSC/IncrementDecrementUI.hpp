@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IncrementDecrementUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _incrementButton
     // Size: 0x8
     // Offset: 0x18
@@ -79,27 +71,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _incrementButton
-    ::VROSC::UIButton*& dyn__incrementButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__incrementButton();
     // Get instance field reference: private VROSC.UIButton _decrementButton
-    ::VROSC::UIButton*& dyn__decrementButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__decrementButton();
     // Get instance field reference: protected TMPro.TextMeshPro _display
-    ::TMPro::TextMeshPro*& dyn__display();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__display();
     // Get instance field reference: protected VROSC.IntNode _output
-    ::VROSC::IntNode*& dyn__output();
+    [[deprecated]] ::VROSC::IntNode*& dyn__output();
     // private System.Void Start()
-    // Offset: 0x8A0290
+    // Offset: 0x1942D80
     void Start();
     // protected System.Void IncrementButtonPressed()
-    // Offset: 0x8A0438
+    // Offset: 0x1942FC8
     void IncrementButtonPressed();
     // protected System.Void DecrementButtonPressed()
-    // Offset: 0x8A04B0
+    // Offset: 0x1943044
     void DecrementButtonPressed();
     // protected System.Void OnDestroy()
-    // Offset: 0x8A0528
+    // Offset: 0x19430C0
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x8A062C
+    // Offset: 0x19431C4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

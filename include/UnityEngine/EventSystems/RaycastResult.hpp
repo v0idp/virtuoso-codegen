@@ -116,41 +116,41 @@ namespace UnityEngine::EventSystems {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.GameObject m_GameObject
-    ::UnityEngine::GameObject*& dyn_m_GameObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_GameObject();
     // Get instance field reference: public UnityEngine.EventSystems.BaseRaycaster module
-    ::UnityEngine::EventSystems::BaseRaycaster*& dyn_module();
+    [[deprecated]] ::UnityEngine::EventSystems::BaseRaycaster*& dyn_module();
     // Get instance field reference: public System.Single distance
-    float& dyn_distance();
+    [[deprecated]] float& dyn_distance();
     // Get instance field reference: public System.Single index
-    float& dyn_index();
+    [[deprecated]] float& dyn_index();
     // Get instance field reference: public System.Int32 depth
-    int& dyn_depth();
+    [[deprecated]] int& dyn_depth();
     // Get instance field reference: public System.Int32 sortingLayer
-    int& dyn_sortingLayer();
+    [[deprecated]] int& dyn_sortingLayer();
     // Get instance field reference: public System.Int32 sortingOrder
-    int& dyn_sortingOrder();
+    [[deprecated]] int& dyn_sortingOrder();
     // Get instance field reference: public UnityEngine.Vector3 worldPosition
-    ::UnityEngine::Vector3& dyn_worldPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_worldPosition();
     // Get instance field reference: public UnityEngine.Vector3 worldNormal
-    ::UnityEngine::Vector3& dyn_worldNormal();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_worldNormal();
     // Get instance field reference: public UnityEngine.Vector2 screenPosition
-    ::UnityEngine::Vector2& dyn_screenPosition();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_screenPosition();
     // Get instance field reference: public System.Int32 displayIndex
-    int& dyn_displayIndex();
+    [[deprecated]] int& dyn_displayIndex();
     // public UnityEngine.GameObject get_gameObject()
-    // Offset: 0xF3976C
+    // Offset: 0x142AE4C
     ::UnityEngine::GameObject* get_gameObject();
     // public System.Void set_gameObject(UnityEngine.GameObject value)
-    // Offset: 0xF39774
+    // Offset: 0x142AE54
     void set_gameObject(::UnityEngine::GameObject* value);
     // public System.Boolean get_isValid()
-    // Offset: 0xF3977C
+    // Offset: 0x142AE5C
     bool get_isValid();
     // public System.Void Clear()
-    // Offset: 0xF39834
+    // Offset: 0x142AF14
     void Clear();
     // public override System.String ToString()
-    // Offset: 0xF374E0
+    // Offset: 0x1428BC0
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

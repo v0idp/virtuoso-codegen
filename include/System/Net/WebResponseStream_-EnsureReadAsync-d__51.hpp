@@ -98,30 +98,30 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32> <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<int>& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<int>& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebResponseStream <>4__this
-    ::System::Net::WebResponseStream*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebResponseStream*& dyn_$$4__this();
     // Get instance field reference: private System.Byte[] <morebytes>5__1
-    ::ArrayW<uint8_t>& dyn_$morebytes$5__1();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_$morebytes$5__1();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Int32 <nbytes>5__2
-    int& dyn_$nbytes$5__2();
+    [[deprecated]] int& dyn_$nbytes$5__2();
     // Get instance field reference: public System.Byte[] buffer
-    ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: public System.Int32 offset
-    int& dyn_offset();
+    [[deprecated]] int& dyn_offset();
     // Get instance field reference: public System.Int32 size
-    int& dyn_size();
+    [[deprecated]] int& dyn_size();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Int32> <>u__1
-    typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8EE648
+    // Offset: 0x17CC414
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8EE9A8
+    // Offset: 0x17CC774
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.Net.WebResponseStream/System.Net.<EnsureReadAsync>d__51
   // WARNING Not writing size check since size may be invalid!

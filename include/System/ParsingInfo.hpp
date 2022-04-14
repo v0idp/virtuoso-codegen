@@ -98,25 +98,25 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Globalization.Calendar calendar
-    ::System::Globalization::Calendar*& dyn_calendar();
+    [[deprecated]] ::System::Globalization::Calendar*& dyn_calendar();
     // Get instance field reference: System.Int32 dayOfWeek
-    int& dyn_dayOfWeek();
+    [[deprecated]] int& dyn_dayOfWeek();
     // Get instance field reference: System.DateTimeParse/System.TM timeMark
-    ::System::DateTimeParse::TM& dyn_timeMark();
+    [[deprecated]] ::System::DateTimeParse::TM& dyn_timeMark();
     // Get instance field reference: System.Boolean fUseHour12
-    bool& dyn_fUseHour12();
+    [[deprecated]] bool& dyn_fUseHour12();
     // Get instance field reference: System.Boolean fUseTwoDigitYear
-    bool& dyn_fUseTwoDigitYear();
+    [[deprecated]] bool& dyn_fUseTwoDigitYear();
     // Get instance field reference: System.Boolean fAllowInnerWhite
-    bool& dyn_fAllowInnerWhite();
+    [[deprecated]] bool& dyn_fAllowInnerWhite();
     // Get instance field reference: System.Boolean fAllowTrailingWhite
-    bool& dyn_fAllowTrailingWhite();
+    [[deprecated]] bool& dyn_fAllowTrailingWhite();
     // Get instance field reference: System.Boolean fCustomNumberParser
-    bool& dyn_fCustomNumberParser();
+    [[deprecated]] bool& dyn_fCustomNumberParser();
     // Get instance field reference: System.DateTimeParse/System.MatchNumberDelegate parseNumberDelegate
-    ::System::DateTimeParse::MatchNumberDelegate*& dyn_parseNumberDelegate();
+    [[deprecated]] ::System::DateTimeParse::MatchNumberDelegate*& dyn_parseNumberDelegate();
     // System.Void Init()
-    // Offset: 0x112C8BC
+    // Offset: 0x14CA4F8
     void Init();
   }; // System.ParsingInfo
   #pragma pack(pop)

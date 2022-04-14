@@ -82,20 +82,12 @@ namespace VROSC {
       // Set static field: static public VROSC.EnumDisplay/VROSC.DisplayEnum Quantize
       static void _set_Quantize(::VROSC::EnumDisplay::DisplayEnum value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.EnumDisplay/VROSC.DisplayEnum
     #pragma pack(pop)
     static check_size<sizeof(EnumDisplay::DisplayEnum), 0 + sizeof(int)> __VROSC_EnumDisplay_DisplayEnumSizeCheck;
     static_assert(sizeof(EnumDisplay::DisplayEnum) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IntNode _intNode
     // Size: 0x8
     // Offset: 0x20
@@ -110,17 +102,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::EnumDisplay::DisplayEnum) == 0x4);
     public:
     // Get instance field reference: private VROSC.IntNode _intNode
-    ::VROSC::IntNode*& dyn__intNode();
+    [[deprecated]] ::VROSC::IntNode*& dyn__intNode();
     // Get instance field reference: private VROSC.EnumDisplay/VROSC.DisplayEnum _displayEnum
-    ::VROSC::EnumDisplay::DisplayEnum& dyn__displayEnum();
+    [[deprecated]] ::VROSC::EnumDisplay::DisplayEnum& dyn__displayEnum();
     // private System.Void UpdateDisplayEnum(System.Int32 value)
-    // Offset: 0x131346C
+    // Offset: 0x8ED340
     void UpdateDisplayEnum(int value);
     // protected System.Void OnDestroy()
-    // Offset: 0x1313588
+    // Offset: 0x8ED45C
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x131365C
+    // Offset: 0x8ED530
     // Implemented from: VROSC.TextDisplay
     // Base method: System.Void TextDisplay::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -135,7 +127,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<EnumDisplay*, creationType>()));
     }
     // protected override System.Void InitDisplay()
-    // Offset: 0x131337C
+    // Offset: 0x8ED250
     // Implemented from: VROSC.TextDisplay
     // Base method: System.Void TextDisplay::InitDisplay()
     void InitDisplay();

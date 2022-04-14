@@ -29,15 +29,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MicrophoneRecorder : public ::VROSC::SourceRecorder {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single[] _effectData
     // Size: 0x8
     // Offset: 0x48
@@ -52,23 +44,23 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<float>) == 0x8);
     public:
     // Get instance field reference: private System.Single[] _effectData
-    ::ArrayW<float>& dyn__effectData();
+    [[deprecated]] ::ArrayW<float>& dyn__effectData();
     // Get instance field reference: private System.Single[] _microphoneData
-    ::ArrayW<float>& dyn__microphoneData();
+    [[deprecated]] ::ArrayW<float>& dyn__microphoneData();
     // public System.Void SetMicrophoneData(System.Single[] buffer)
-    // Offset: 0x8B38F0
+    // Offset: 0xAC7480
     void SetMicrophoneData(::ArrayW<float> buffer);
     // public System.Void ClearMicrophoneData()
-    // Offset: 0x8B391C
+    // Offset: 0xAC74AC
     void ClearMicrophoneData();
     // public System.Single[] GetRawMicrophoneRecordingData()
-    // Offset: 0x8B3940
+    // Offset: 0xAC74D0
     ::ArrayW<float> GetRawMicrophoneRecordingData();
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x8B3948
+    // Offset: 0xAC74D8
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void .ctor()
-    // Offset: 0x8B3A44
+    // Offset: 0xAC75D4
     // Implemented from: VROSC.SourceRecorder
     // Base method: System.Void SourceRecorder::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

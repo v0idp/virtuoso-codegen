@@ -35,10 +35,10 @@ namespace Oculus::Platform {
   class MessageWithSendInvitesResult : public ::Oculus::Platform::Message_1<::Oculus::Platform::Models::SendInvitesResult*> {
     public:
     // protected Oculus.Platform.Models.SendInvitesResult GetDataFromMessage(System.IntPtr c_message)
-    // Offset: 0x97DFF4
+    // Offset: 0xB50390
     ::Oculus::Platform::Models::SendInvitesResult* GetDataFromMessage(::System::IntPtr c_message);
     // public System.Void .ctor(System.IntPtr c_message)
-    // Offset: 0x9776D8
+    // Offset: 0xB49A74
     // Implemented from: Oculus.Platform.Message`1
     // Base method: System.Void Message_1::.ctor(System.IntPtr c_message)
     // Base method: System.Void Message::.ctor(System.IntPtr c_message)
@@ -48,7 +48,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<MessageWithSendInvitesResult*, creationType>(c_message)));
     }
     // public override Oculus.Platform.Models.SendInvitesResult GetSendInvitesResult()
-    // Offset: 0x97DFB4
+    // Offset: 0xB50350
     // Implemented from: Oculus.Platform.Message
     // Base method: Oculus.Platform.Models.SendInvitesResult Message::GetSendInvitesResult()
     ::Oculus::Platform::Models::SendInvitesResult* GetSendInvitesResult();

@@ -37,15 +37,7 @@ namespace VROSC::AudioReactive {
     public:
     // Writing base type padding for base size: 0x24 to desired offset: 0x28
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.ParticleSystem _system
     // Size: 0x8
     // Offset: 0x28
@@ -66,13 +58,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.ParticleSystem _system
-    ::UnityEngine::ParticleSystem*& dyn__system();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__system();
     // Get instance field reference: private System.Int32 _minAmount
-    int& dyn__minAmount();
+    [[deprecated]] int& dyn__minAmount();
     // Get instance field reference: private System.Int32 _maxAmount
-    int& dyn__maxAmount();
+    [[deprecated]] int& dyn__maxAmount();
     // public System.Void .ctor()
-    // Offset: 0x1311984
+    // Offset: 0x8EB704
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -86,12 +78,12 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<EmitParticlesOnBeat*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x1311930
+    // Offset: 0x8EB6B0
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::Awake()
     void Awake();
     // protected override System.Void OnBeat(System.Int32 beat)
-    // Offset: 0x1311938
+    // Offset: 0x8EB6B8
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::OnBeat(System.Int32 beat)
     void OnBeat(int beat);

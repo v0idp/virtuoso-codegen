@@ -28,15 +28,7 @@ namespace Mono::Net::Security {
   // [TokenAttribute] Offset: FFFFFFFF
   class BufferOffsetSize : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Byte[] Buffer
     // Size: 0x8
     // Offset: 0x10
@@ -69,30 +61,30 @@ namespace Mono::Net::Security {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Byte[] Buffer
-    ::ArrayW<uint8_t>& dyn_Buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_Buffer();
     // Get instance field reference: public System.Int32 Offset
-    int& dyn_Offset();
+    [[deprecated]] int& dyn_Offset();
     // Get instance field reference: public System.Int32 Size
-    int& dyn_Size();
+    [[deprecated]] int& dyn_Size();
     // Get instance field reference: public System.Int32 TotalBytes
-    int& dyn_TotalBytes();
+    [[deprecated]] int& dyn_TotalBytes();
     // Get instance field reference: public System.Boolean Complete
-    bool& dyn_Complete();
+    [[deprecated]] bool& dyn_Complete();
     // public System.Int32 get_EndOffset()
-    // Offset: 0xE69458
+    // Offset: 0x10DB0B0
     int get_EndOffset();
     // public System.Int32 get_Remaining()
-    // Offset: 0xE69464
+    // Offset: 0x10DB0BC
     int get_Remaining();
     // public System.Void .ctor(System.Byte[] buffer, System.Int32 offset, System.Int32 size)
-    // Offset: 0xE67610
+    // Offset: 0x10D72E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BufferOffsetSize* New_ctor(::ArrayW<uint8_t> buffer, int offset, int size) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::Security::BufferOffsetSize::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BufferOffsetSize*, creationType>(buffer, offset, size)));
     }
     // public override System.String ToString()
-    // Offset: 0xE6948C
+    // Offset: 0x10DB0E4
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

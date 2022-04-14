@@ -25,15 +25,7 @@ namespace DG::Tweening::Core {
   // [TokenAttribute] Offset: FFFFFFFF
   class DOTweenSettings::SafeModeOptions : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public DG.Tweening.Core.Enums.NestedTweenFailureBehaviour nestedTweenFailureBehaviour
     // Size: 0x4
     // Offset: 0x10
@@ -46,9 +38,9 @@ namespace DG::Tweening::Core {
       return nestedTweenFailureBehaviour;
     }
     // Get instance field reference: public DG.Tweening.Core.Enums.NestedTweenFailureBehaviour nestedTweenFailureBehaviour
-    ::DG::Tweening::Core::Enums::NestedTweenFailureBehaviour& dyn_nestedTweenFailureBehaviour();
+    [[deprecated]] ::DG::Tweening::Core::Enums::NestedTweenFailureBehaviour& dyn_nestedTweenFailureBehaviour();
     // public System.Void .ctor()
-    // Offset: 0x126B08C
+    // Offset: 0x1863430
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

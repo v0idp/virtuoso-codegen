@@ -44,20 +44,20 @@ namespace UnityEngine::Playables {
   class PlayableBinding::CreateOutputMethod : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x124F858
+    // Offset: 0x1843A2C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayableBinding::CreateOutputMethod* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Playables::PlayableBinding::CreateOutputMethod::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PlayableBinding::CreateOutputMethod*, creationType>(object, method)));
     }
     // public UnityEngine.Playables.PlayableOutput Invoke(UnityEngine.Playables.PlayableGraph graph, System.String name)
-    // Offset: 0x124F868
+    // Offset: 0x1843A3C
     ::UnityEngine::Playables::PlayableOutput Invoke(::UnityEngine::Playables::PlayableGraph graph, ::StringW name);
     // public System.IAsyncResult BeginInvoke(UnityEngine.Playables.PlayableGraph graph, System.String name, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x124FAF0
+    // Offset: 0x1843CC4
     ::System::IAsyncResult* BeginInvoke(::UnityEngine::Playables::PlayableGraph graph, ::StringW name, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public UnityEngine.Playables.PlayableOutput EndInvoke(System.IAsyncResult result)
-    // Offset: 0x124FB84
+    // Offset: 0x1843D58
     ::UnityEngine::Playables::PlayableOutput EndInvoke(::System::IAsyncResult* result);
   }; // UnityEngine.Playables.PlayableBinding/UnityEngine.Playables.CreateOutputMethod
   #pragma pack(pop)

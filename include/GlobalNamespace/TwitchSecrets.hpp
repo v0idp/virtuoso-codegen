@@ -44,7 +44,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.String BOT_REFRESH_TOKEN
     static void _set_BOT_REFRESH_TOKEN(::StringW value);
     // static private System.Void .cctor()
-    // Offset: 0x140AA4C
+    // Offset: 0xA32F70
     static void _cctor();
   }; // TwitchSecrets
   #pragma pack(pop)

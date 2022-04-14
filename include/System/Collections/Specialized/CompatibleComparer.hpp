@@ -37,15 +37,7 @@ namespace System::Collections::Specialized {
   // [TokenAttribute] Offset: FFFFFFFF
   class CompatibleComparer : public ::Il2CppObject/*, public ::System::Collections::IEqualityComparer*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.IComparer _comparer
     // Size: 0x8
     // Offset: 0x10
@@ -72,33 +64,33 @@ namespace System::Collections::Specialized {
     // Set static field: static private System.Collections.IHashCodeProvider defaultHashProvider
     static void _set_defaultHashProvider(::System::Collections::IHashCodeProvider* value);
     // Get instance field reference: private System.Collections.IComparer _comparer
-    ::System::Collections::IComparer*& dyn__comparer();
+    [[deprecated]] ::System::Collections::IComparer*& dyn__comparer();
     // Get instance field reference: private System.Collections.IHashCodeProvider _hcp
-    ::System::Collections::IHashCodeProvider*& dyn__hcp();
+    [[deprecated]] ::System::Collections::IHashCodeProvider*& dyn__hcp();
     // public System.Collections.IComparer get_Comparer()
-    // Offset: 0xE70904
+    // Offset: 0x10E2CBC
     ::System::Collections::IComparer* get_Comparer();
     // public System.Collections.IHashCodeProvider get_HashCodeProvider()
-    // Offset: 0xE7090C
+    // Offset: 0x10E2CC4
     ::System::Collections::IHashCodeProvider* get_HashCodeProvider();
     // static public System.Collections.IComparer get_DefaultComparer()
-    // Offset: 0xE70914
+    // Offset: 0x10E2CCC
     static ::System::Collections::IComparer* get_DefaultComparer();
     // static public System.Collections.IHashCodeProvider get_DefaultHashCodeProvider()
-    // Offset: 0xE709FC
+    // Offset: 0x10E2DB4
     static ::System::Collections::IHashCodeProvider* get_DefaultHashCodeProvider();
     // System.Void .ctor(System.Collections.IComparer comparer, System.Collections.IHashCodeProvider hashCodeProvider)
-    // Offset: 0xE70598
+    // Offset: 0x10E2950
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CompatibleComparer* New_ctor(::System::Collections::IComparer* comparer, ::System::Collections::IHashCodeProvider* hashCodeProvider) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::CompatibleComparer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CompatibleComparer*, creationType>(comparer, hashCodeProvider)));
     }
     // public System.Boolean Equals(System.Object a, System.Object b)
-    // Offset: 0xE705D0
+    // Offset: 0x10E2988
     bool Equals(::Il2CppObject* a, ::Il2CppObject* b);
     // public System.Int32 GetHashCode(System.Object obj)
-    // Offset: 0xE707E4
+    // Offset: 0x10E2B9C
     int GetHashCode(::Il2CppObject* obj);
   }; // System.Collections.Specialized.CompatibleComparer
   #pragma pack(pop)

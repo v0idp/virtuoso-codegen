@@ -264,7 +264,7 @@ namespace TMPro {
     // Set static field: static public TMPro.TextAlignmentOptions Converted
     static void _set_Converted(::TMPro::TextAlignmentOptions value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // TMPro.TextAlignmentOptions
   #pragma pack(pop)
   static check_size<sizeof(TextAlignmentOptions), 0 + sizeof(int)> __TMPro_TextAlignmentOptionsSizeCheck;

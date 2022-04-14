@@ -36,31 +36,31 @@ namespace NatSuite::Devices {
     // Set static field: static public readonly NatSuite.Devices.MediaDeviceQuery/NatSuite.Devices.Criteria/NatSuite.Devices.<>c <>9
     static void _set_$$9(::NatSuite::Devices::MediaDeviceQuery::Criteria::$$c* value);
     // static private System.Void .cctor()
-    // Offset: 0x1419F0C
+    // Offset: 0xE8B8B4
     static void _cctor();
     // System.Boolean <.cctor>b__7_0(NatSuite.Devices.IMediaDevice device)
-    // Offset: 0x1419F74
+    // Offset: 0xE8B91C
     bool $_cctor$b__7_0(::NatSuite::Devices::IMediaDevice* device);
     // System.Boolean <.cctor>b__7_1(NatSuite.Devices.IMediaDevice device)
-    // Offset: 0x1419FF0
+    // Offset: 0xE8B998
     bool $_cctor$b__7_1(::NatSuite::Devices::IMediaDevice* device);
     // System.Boolean <.cctor>b__7_2(NatSuite.Devices.IMediaDevice device)
-    // Offset: 0x141A06C
+    // Offset: 0xE8BA14
     bool $_cctor$b__7_2(::NatSuite::Devices::IMediaDevice* device);
     // System.Boolean <.cctor>b__7_3(NatSuite.Devices.IMediaDevice device)
-    // Offset: 0x141A0C4
+    // Offset: 0xE8BA6C
     bool $_cctor$b__7_3(::NatSuite::Devices::IMediaDevice* device);
     // System.Boolean <.cctor>b__7_4(NatSuite.Devices.IMediaDevice device)
-    // Offset: 0x141A18C
+    // Offset: 0xE8BB34
     bool $_cctor$b__7_4(::NatSuite::Devices::IMediaDevice* device);
     // System.Boolean <.cctor>b__7_5(NatSuite.Devices.IMediaDevice device)
-    // Offset: 0x141A24C
+    // Offset: 0xE8BBF4
     bool $_cctor$b__7_5(::NatSuite::Devices::IMediaDevice* device);
     // System.Boolean <.cctor>b__7_6(NatSuite.Devices.IMediaDevice device)
-    // Offset: 0x141A2E8
+    // Offset: 0xE8BC90
     bool $_cctor$b__7_6(::NatSuite::Devices::IMediaDevice* device);
     // public System.Void .ctor()
-    // Offset: 0x1419F6C
+    // Offset: 0xE8B914
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

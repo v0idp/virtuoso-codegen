@@ -44,15 +44,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class RemotePlayer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.UInt64 remoteUserID
     // Size: 0x8
     // Offset: 0x10
@@ -119,27 +111,27 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Oculus::Platform::VoipAudioSourceHiLevel*) == 0x8);
     public:
     // Get instance field reference: public System.UInt64 remoteUserID
-    uint64_t& dyn_remoteUserID();
+    [[deprecated]] uint64_t& dyn_remoteUserID();
     // Get instance field reference: public System.Boolean stillInRoom
-    bool& dyn_stillInRoom();
+    [[deprecated]] bool& dyn_stillInRoom();
     // Get instance field reference: public Oculus.Platform.PeerConnectionState p2pConnectionState
-    ::Oculus::Platform::PeerConnectionState& dyn_p2pConnectionState();
+    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_p2pConnectionState();
     // Get instance field reference: public Oculus.Platform.PeerConnectionState voipConnectionState
-    ::Oculus::Platform::PeerConnectionState& dyn_voipConnectionState();
+    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_voipConnectionState();
     // Get instance field reference: public OvrAvatar RemoteAvatar
-    ::GlobalNamespace::OvrAvatar*& dyn_RemoteAvatar();
+    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_RemoteAvatar();
     // Get instance field reference: public UnityEngine.Vector3 receivedRootPosition
-    ::UnityEngine::Vector3& dyn_receivedRootPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_receivedRootPosition();
     // Get instance field reference: public UnityEngine.Vector3 receivedRootPositionPrior
-    ::UnityEngine::Vector3& dyn_receivedRootPositionPrior();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_receivedRootPositionPrior();
     // Get instance field reference: public UnityEngine.Quaternion receivedRootRotation
-    ::UnityEngine::Quaternion& dyn_receivedRootRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_receivedRootRotation();
     // Get instance field reference: public UnityEngine.Quaternion receivedRootRotationPrior
-    ::UnityEngine::Quaternion& dyn_receivedRootRotationPrior();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_receivedRootRotationPrior();
     // Get instance field reference: public Oculus.Platform.VoipAudioSourceHiLevel voipSource
-    ::Oculus::Platform::VoipAudioSourceHiLevel*& dyn_voipSource();
+    [[deprecated]] ::Oculus::Platform::VoipAudioSourceHiLevel*& dyn_voipSource();
     // public System.Void .ctor()
-    // Offset: 0x999794
+    // Offset: 0xB32238
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -39,15 +39,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationController : public ::VROSC::ToolController {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopStation _loopStation
     // Size: 0x8
     // Offset: 0x70
@@ -62,14 +54,14 @@ namespace GlobalNamespace {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // private System.Void CloseButtonPressed()
-    // Offset: 0x910578
+    // Offset: 0x196A240
     void CloseButtonPressed();
     // public System.Void .ctor()
-    // Offset: 0x910584
+    // Offset: 0x196A24C
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::.ctor()
     // Base method: System.Void WidgetController::.ctor()
@@ -84,28 +76,23 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationController*, creationType>()));
     }
     // public override System.Void Setup()
-    // Offset: 0x9101DC
+    // Offset: 0x1969F04
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::Setup()
     void Setup();
     // protected System.Void OnDestroy()
-    // Offset: 0x910348
+    // Offset: 0x196A070
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::OnDestroy()
     // Base method: System.Void WidgetController::OnDestroy()
     void OnDestroy();
-    // protected override System.Void ResetWidget()
-    // Offset: 0x910450
-    // Implemented from: VROSC.WidgetController
-    // Base method: System.Void WidgetController::ResetWidget()
-    void ResetWidget();
     // protected override System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x9104B8
+    // Offset: 0x196A178
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::UserDataLoaded(VROSC.UserDataControllers user)
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // protected override System.Void SynthesizerSourceChanged(System.Boolean useMidi)
-    // Offset: 0x910560
+    // Offset: 0x196A228
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::SynthesizerSourceChanged(System.Boolean useMidi)
     void SynthesizerSourceChanged(bool useMidi);
@@ -141,14 +128,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::LoopStationController::*)()>(&GlobalNamespace::LoopStationController::OnDestroy)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LoopStationController*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::LoopStationController::ResetWidget
-// Il2CppName: ResetWidget
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::LoopStationController::*)()>(&GlobalNamespace::LoopStationController::ResetWidget)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LoopStationController*), "ResetWidget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::LoopStationController::UserDataLoaded

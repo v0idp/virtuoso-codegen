@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MalletVisual : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _stick
     // Size: 0x8
     // Offset: 0x18
@@ -101,33 +93,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _stick
-    ::UnityEngine::Transform*& dyn__stick();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__stick();
     // Get instance field reference: private UnityEngine.Transform _head
-    ::UnityEngine::Transform*& dyn__head();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__head();
     // Get instance field reference: private UnityEngine.Renderer _tipRenderer
-    ::UnityEngine::Renderer*& dyn__tipRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__tipRenderer();
     // Get instance field reference: private UnityEngine.Renderer _stickRenderer
-    ::UnityEngine::Renderer*& dyn__stickRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__stickRenderer();
     // Get instance field reference: private VROSC.PredictiveHitWisp _wisp
-    ::VROSC::PredictiveHitWisp*& dyn__wisp();
+    [[deprecated]] ::VROSC::PredictiveHitWisp*& dyn__wisp();
     // Get instance field reference: private UnityEngine.Material _material
-    ::UnityEngine::Material*& dyn__material();
+    [[deprecated]] ::UnityEngine::Material*& dyn__material();
     // Get instance field reference: private UnityEngine.Vector3 _headStartPosition
-    ::UnityEngine::Vector3& dyn__headStartPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__headStartPosition();
     // private System.Void Awake()
-    // Offset: 0x8AD200
+    // Offset: 0xAC0678
     void Awake();
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x8AB330
+    // Offset: 0xAC0744
     void SetColor(::UnityEngine::Color color);
     // public System.Void SetLength(System.Single length)
-    // Offset: 0x8AB014
+    // Offset: 0xAC07EC
     void SetLength(float length);
     // public System.Void SetAngle(System.Single angle)
-    // Offset: 0x8AB0D8
+    // Offset: 0xAC0898
     void SetAngle(float angle);
     // public System.Void .ctor()
-    // Offset: 0x8AD2CC
+    // Offset: 0xAC0908
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

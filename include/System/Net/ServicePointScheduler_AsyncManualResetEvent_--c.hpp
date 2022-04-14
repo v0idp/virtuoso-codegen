@@ -41,13 +41,13 @@ namespace System::Net {
     // Set static field: static public System.Func`2<System.Object,System.Boolean> <>9__4_0
     static void _set_$$9__4_0(::System::Func_2<::Il2CppObject*, bool>* value);
     // static private System.Void .cctor()
-    // Offset: 0x12818F4
+    // Offset: 0x17D010C
     static void _cctor();
     // System.Boolean <Set>b__4_0(System.Object s)
-    // Offset: 0x128195C
+    // Offset: 0x17D0174
     bool $Set$b__4_0(::Il2CppObject* s);
     // public System.Void .ctor()
-    // Offset: 0x1281954
+    // Offset: 0x17D016C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

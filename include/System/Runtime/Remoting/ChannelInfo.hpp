@@ -29,15 +29,7 @@ namespace System::Runtime::Remoting {
   // [TokenAttribute] Offset: FFFFFFFF
   class ChannelInfo : public ::Il2CppObject/*, public ::System::Runtime::Remoting::IChannelInfo*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Object[] channelData
     // Size: 0x8
     // Offset: 0x10
@@ -54,19 +46,19 @@ namespace System::Runtime::Remoting {
       return channelData;
     }
     // Get instance field reference: private System.Object[] channelData
-    ::ArrayW<::Il2CppObject*>& dyn_channelData();
+    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_channelData();
     // public System.Object[] get_ChannelData()
-    // Offset: 0xCD8A64
+    // Offset: 0xE2DAB4
     ::ArrayW<::Il2CppObject*> get_ChannelData();
     // public System.Void .ctor(System.Object remoteChannelData)
-    // Offset: 0xCD89B0
+    // Offset: 0xE2DA00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ChannelInfo* New_ctor(::Il2CppObject* remoteChannelData) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Remoting::ChannelInfo::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ChannelInfo*, creationType>(remoteChannelData)));
     }
     // public System.Void .ctor()
-    // Offset: 0xCD84F4
+    // Offset: 0xE2D544
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

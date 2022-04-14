@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class EnvironmentPanelUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.EnvironmentUIButton[] _environmentButtons
     // Size: 0x8
     // Offset: 0x18
@@ -77,30 +69,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.EnvironmentUIButton[] _environmentButtons
-    ::ArrayW<::VROSC::EnvironmentUIButton*>& dyn__environmentButtons();
+    [[deprecated]] ::ArrayW<::VROSC::EnvironmentUIButton*>& dyn__environmentButtons();
     // Get instance field reference: private VROSC.EnvironmentUIButton _passthroughButton
-    ::VROSC::EnvironmentUIButton*& dyn__passthroughButton();
+    [[deprecated]] ::VROSC::EnvironmentUIButton*& dyn__passthroughButton();
     // Get instance field reference: private VROSC.UISlider _effectSlider
-    ::VROSC::UISlider*& dyn__effectSlider();
+    [[deprecated]] ::VROSC::UISlider*& dyn__effectSlider();
     // Get instance field reference: private VROSC.EnvironmentData _selectedEnvironment
-    ::VROSC::EnvironmentData*& dyn__selectedEnvironment();
+    [[deprecated]] ::VROSC::EnvironmentData*& dyn__selectedEnvironment();
     // protected System.Void Awake()
-    // Offset: 0x1315060
+    // Offset: 0x8EF0C0
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0x1315180
+    // Offset: 0x8EF1E0
     void OnEnable();
     // private System.Void OnDestroy()
-    // Offset: 0x1315320
+    // Offset: 0x8EF380
     void OnDestroy();
     // public System.Void SetActiveEnvironment(VROSC.EnvironmentData newEvironment)
-    // Offset: 0x13153F4
+    // Offset: 0x8EF454
     void SetActiveEnvironment(::VROSC::EnvironmentData* newEvironment);
     // private System.Void SetEffectsInput(System.Single amount)
-    // Offset: 0x1315558
+    // Offset: 0x8EF5B8
     void SetEffectsInput(float amount);
     // public System.Void .ctor()
-    // Offset: 0x1315608
+    // Offset: 0x8EF668
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

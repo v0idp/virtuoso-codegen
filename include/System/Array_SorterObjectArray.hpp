@@ -56,40 +56,40 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Object[] keys
-    ::ArrayW<::Il2CppObject*>& dyn_keys();
+    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_keys();
     // Get instance field reference: private System.Object[] items
-    ::ArrayW<::Il2CppObject*>& dyn_items();
+    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_items();
     // Get instance field reference: private System.Collections.IComparer comparer
-    ::System::Collections::IComparer*& dyn_comparer();
+    [[deprecated]] ::System::Collections::IComparer*& dyn_comparer();
     // System.Void .ctor(System.Object[] keys, System.Object[] items, System.Collections.IComparer comparer)
-    // Offset: 0xDCA828
+    // Offset: 0x13A0A9C
     // ABORTED: conflicts with another method.  SorterObjectArray(::ArrayW<::Il2CppObject*> keys, ::ArrayW<::Il2CppObject*> items, ::System::Collections::IComparer* comparer);
     // System.Void SwapIfGreaterWithItems(System.Int32 a, System.Int32 b)
-    // Offset: 0xDCA8B8
+    // Offset: 0x13A0B2C
     void SwapIfGreaterWithItems(int a, int b);
     // private System.Void Swap(System.Int32 i, System.Int32 j)
-    // Offset: 0xDCAB04
+    // Offset: 0x13A0D78
     void Swap(int i, int j);
     // System.Void Sort(System.Int32 left, System.Int32 length)
-    // Offset: 0xDCAC7C
+    // Offset: 0x13A0EF0
     void Sort(int left, int length);
     // private System.Void IntrospectiveSort(System.Int32 left, System.Int32 length)
-    // Offset: 0xDCAC80
+    // Offset: 0x13A0EF4
     void IntrospectiveSort(int left, int length);
     // private System.Void IntroSort(System.Int32 lo, System.Int32 hi, System.Int32 depthLimit)
-    // Offset: 0xDCADDC
+    // Offset: 0x13A1050
     void IntroSort(int lo, int hi, int depthLimit);
     // private System.Int32 PickPivotAndPartition(System.Int32 lo, System.Int32 hi)
-    // Offset: 0xDCB278
+    // Offset: 0x13A14EC
     int PickPivotAndPartition(int lo, int hi);
     // private System.Void Heapsort(System.Int32 lo, System.Int32 hi)
-    // Offset: 0xDCB1C4
+    // Offset: 0x13A1438
     void Heapsort(int lo, int hi);
     // private System.Void DownHeap(System.Int32 i, System.Int32 n, System.Int32 lo)
-    // Offset: 0xDCB4C0
+    // Offset: 0x13A1734
     void DownHeap(int i, int n, int lo);
     // private System.Void InsertionSort(System.Int32 lo, System.Int32 hi)
-    // Offset: 0xDCAF08
+    // Offset: 0x13A117C
     void InsertionSort(int lo, int hi);
   }; // System.Array/System.SorterObjectArray
   #pragma pack(pop)

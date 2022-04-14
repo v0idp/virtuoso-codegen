@@ -71,20 +71,20 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IntPtr rVertexData
-    ::System::IntPtr& dyn_rVertexData();
+    [[deprecated]] ::System::IntPtr& dyn_rVertexData();
     // Get instance field reference: public System.UInt32 unVertexCount
-    uint& dyn_unVertexCount();
+    [[deprecated]] uint& dyn_unVertexCount();
     // Get instance field reference: public System.IntPtr rIndexData
-    ::System::IntPtr& dyn_rIndexData();
+    [[deprecated]] ::System::IntPtr& dyn_rIndexData();
     // Get instance field reference: public System.UInt32 unTriangleCount
-    uint& dyn_unTriangleCount();
+    [[deprecated]] uint& dyn_unTriangleCount();
     // Get instance field reference: public System.Int32 diffuseTextureId
-    int& dyn_diffuseTextureId();
+    [[deprecated]] int& dyn_diffuseTextureId();
     // public System.Void .ctor(OVR.OpenVR.RenderModel_t unpacked)
-    // Offset: 0x6EE114
+    // Offset: 0x804818
     RenderModel_t_Packed(::OVR::OpenVR::RenderModel_t unpacked);
     // public System.Void Unpack(ref OVR.OpenVR.RenderModel_t unpacked)
-    // Offset: 0x6EE140
+    // Offset: 0x804844
     void Unpack(ByRef<::OVR::OpenVR::RenderModel_t> unpacked);
   }; // OVR.OpenVR.RenderModel_t_Packed
   #pragma pack(pop)

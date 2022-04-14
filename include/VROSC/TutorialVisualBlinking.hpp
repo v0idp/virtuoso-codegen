@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialVisualBlinking : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <Active>k__BackingField
     // Size: 0x1
     // Offset: 0x10
@@ -145,70 +137,70 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Boolean <Active>k__BackingField
-    bool& dyn_$Active$k__BackingField();
+    [[deprecated]] bool& dyn_$Active$k__BackingField();
     // Get instance field reference: private UnityEngine.Color _onColor
-    ::UnityEngine::Color& dyn__onColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__onColor();
     // Get instance field reference: private UnityEngine.Color _offColor
-    ::UnityEngine::Color& dyn__offColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private System.Boolean _useNormalColorAsOffColor
-    bool& dyn__useNormalColorAsOffColor();
+    [[deprecated]] bool& dyn__useNormalColorAsOffColor();
     // Get instance field reference: private System.Single _intensity
-    float& dyn__intensity();
+    [[deprecated]] float& dyn__intensity();
     // Get instance field reference: private System.Func`1<UnityEngine.Color> _getNormalColor
-    ::System::Func_1<::UnityEngine::Color>*& dyn__getNormalColor();
+    [[deprecated]] ::System::Func_1<::UnityEngine::Color>*& dyn__getNormalColor();
     // Get instance field reference: private System.Func`1<UnityEngine.Color> _getCurrentColor
-    ::System::Func_1<::UnityEngine::Color>*& dyn__getCurrentColor();
+    [[deprecated]] ::System::Func_1<::UnityEngine::Color>*& dyn__getCurrentColor();
     // Get instance field reference: private UnityEngine.Color _startColor
-    ::UnityEngine::Color& dyn__startColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__startColor();
     // Get instance field reference: private System.Single _startTime
-    float& dyn__startTime();
+    [[deprecated]] float& dyn__startTime();
     // Get instance field reference: private System.Single _peak
-    float& dyn__peak();
+    [[deprecated]] float& dyn__peak();
     // Get instance field reference: private System.Boolean _hasPeaked
-    bool& dyn__hasPeaked();
+    [[deprecated]] bool& dyn__hasPeaked();
     // Get instance field reference: private System.Boolean _stopping
-    bool& dyn__stopping();
+    [[deprecated]] bool& dyn__stopping();
     // Get instance field reference: private System.Single _stoppingBeginTime
-    float& dyn__stoppingBeginTime();
+    [[deprecated]] float& dyn__stoppingBeginTime();
     // Get instance field reference: private UnityEngine.Color _stoppingBeginColor
-    ::UnityEngine::Color& dyn__stoppingBeginColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__stoppingBeginColor();
     // Get instance field reference: private System.Single _stoppingEndTime
-    float& dyn__stoppingEndTime();
+    [[deprecated]] float& dyn__stoppingEndTime();
     // public System.Boolean get_Active()
-    // Offset: 0x140A690
+    // Offset: 0xA32BBC
     bool get_Active();
     // private System.Void set_Active(System.Boolean value)
-    // Offset: 0x140A684
+    // Offset: 0xA32BB0
     void set_Active(bool value);
     // public System.Void Setup(System.Func`1<UnityEngine.Color> getNormalColor, System.Func`1<UnityEngine.Color> getCurrentColor)
-    // Offset: 0x1406C28
+    // Offset: 0xA2E8AC
     void Setup(::System::Func_1<::UnityEngine::Color>* getNormalColor, ::System::Func_1<::UnityEngine::Color>* getCurrentColor);
     // public System.Void Start(UnityEngine.Color onColor, System.Single intensity)
-    // Offset: 0x1406D44
+    // Offset: 0xA2E9C8
     void Start(::UnityEngine::Color onColor, float intensity);
     // public System.Void Start(UnityEngine.Color onColor, UnityEngine.Color offColor)
-    // Offset: 0x140A71C
+    // Offset: 0xA32C48
     void Start(::UnityEngine::Color onColor, ::UnityEngine::Color offColor);
     // private System.Void SharedStart()
-    // Offset: 0x140A698
+    // Offset: 0xA32BC4
     void SharedStart();
     // public System.Void Stop(System.Single fadeOverSeconds)
-    // Offset: 0x1406D78
+    // Offset: 0xA2E9FC
     void Stop(float fadeOverSeconds);
     // public UnityEngine.Color GetColor()
-    // Offset: 0x1406CE0
+    // Offset: 0xA2E964
     ::UnityEngine::Color GetColor();
     // private UnityEngine.Color SetToBeginningColor()
-    // Offset: 0x140A844
+    // Offset: 0xA32D68
     ::UnityEngine::Color SetToBeginningColor();
     // private UnityEngine.Color SetToBlinkingColor()
-    // Offset: 0x140A93C
+    // Offset: 0xA32E60
     ::UnityEngine::Color SetToBlinkingColor();
     // private UnityEngine.Color SetToStoppingColor()
-    // Offset: 0x140A734
+    // Offset: 0xA32C60
     ::UnityEngine::Color SetToStoppingColor();
     // public System.Void .ctor()
-    // Offset: 0x1406E6C
+    // Offset: 0xA2EAF0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

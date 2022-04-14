@@ -64,15 +64,7 @@ namespace NatSuite::Devices::Internal {
     class $$c__DisplayClass58_0;
     // Nested type: ::NatSuite::Devices::Internal::NativeCameraDevice::$$c__DisplayClass60_0
     class $$c__DisplayClass60_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.IntPtr device
     // Size: 0x8
     // Offset: 0x10
@@ -87,206 +79,206 @@ namespace NatSuite::Devices::Internal {
     static_assert(sizeof(::UnityEngine::Texture2D*) == 0x8);
     public:
     // Get instance field reference: private readonly System.IntPtr device
-    ::System::IntPtr& dyn_device();
+    [[deprecated]] ::System::IntPtr& dyn_device();
     // Get instance field reference: private UnityEngine.Texture2D previewTexture
-    ::UnityEngine::Texture2D*& dyn_previewTexture();
+    [[deprecated]] ::UnityEngine::Texture2D*& dyn_previewTexture();
     // public System.Void .ctor(System.IntPtr device)
-    // Offset: 0xA0DA14
+    // Offset: 0xAC1BAC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NativeCameraDevice* New_ctor(::System::IntPtr device) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::NativeCameraDevice::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NativeCameraDevice*, creationType>(device)));
     }
     // static private System.Void OnFrame(System.IntPtr context, System.IntPtr pixelBuffer, System.Int32 width, System.Int32 height, System.Int64 timestamp)
-    // Offset: 0xA0D150
+    // Offset: 0xAD2000
     static void OnFrame(::System::IntPtr context, ::System::IntPtr pixelBuffer, int width, int height, int64_t timestamp);
     // public override System.String get_uniqueID()
-    // Offset: 0xA0D21C
+    // Offset: 0xAD20CC
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.String CameraDevice::get_uniqueID()
     ::StringW get_uniqueID();
     // public override System.Boolean get_frontFacing()
-    // Offset: 0xA0D29C
+    // Offset: 0xAD214C
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_frontFacing()
     bool get_frontFacing();
     // public override System.Boolean get_flashSupported()
-    // Offset: 0xA0D2A8
+    // Offset: 0xAD2158
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_flashSupported()
     bool get_flashSupported();
     // public override System.Boolean get_torchSupported()
-    // Offset: 0xA0D2B4
+    // Offset: 0xAD2164
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_torchSupported()
     bool get_torchSupported();
     // public override System.Boolean get_exposureLockSupported()
-    // Offset: 0xA0D2C0
+    // Offset: 0xAD2170
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_exposureLockSupported()
     bool get_exposureLockSupported();
     // public override System.Boolean get_focusLockSupported()
-    // Offset: 0xA0D2CC
+    // Offset: 0xAD217C
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_focusLockSupported()
     bool get_focusLockSupported();
     // public override System.Boolean get_whiteBalanceLockSupported()
-    // Offset: 0xA0D2D8
+    // Offset: 0xAD2188
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_whiteBalanceLockSupported()
     bool get_whiteBalanceLockSupported();
     // public override System.ValueTuple`2<System.Single,System.Single> get_fieldOfView()
-    // Offset: 0xA0D2E4
+    // Offset: 0xAD2194
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.ValueTuple`2<System.Single,System.Single> CameraDevice::get_fieldOfView()
     ::System::ValueTuple_2<float, float> get_fieldOfView();
     // public override System.ValueTuple`2<System.Single,System.Single> get_exposureRange()
-    // Offset: 0xA0D360
+    // Offset: 0xAD2210
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.ValueTuple`2<System.Single,System.Single> CameraDevice::get_exposureRange()
     ::System::ValueTuple_2<float, float> get_exposureRange();
     // public override System.ValueTuple`2<System.Single,System.Single> get_zoomRange()
-    // Offset: 0xA0D3DC
+    // Offset: 0xAD228C
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.ValueTuple`2<System.Single,System.Single> CameraDevice::get_zoomRange()
     ::System::ValueTuple_2<float, float> get_zoomRange();
     // public override System.ValueTuple`2<System.Int32,System.Int32> get_previewResolution()
-    // Offset: 0xA0D458
+    // Offset: 0xAD2308
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.ValueTuple`2<System.Int32,System.Int32> CameraDevice::get_previewResolution()
     ::System::ValueTuple_2<int, int> get_previewResolution();
     // public override System.Void set_previewResolution(System.ValueTuple`2<System.Int32,System.Int32> value)
-    // Offset: 0xA0D4D4
+    // Offset: 0xAD2384
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_previewResolution(System.ValueTuple`2<System.Int32,System.Int32> value)
     void set_previewResolution(::System::ValueTuple_2<int, int> value);
     // public override System.ValueTuple`2<System.Int32,System.Int32> get_photoResolution()
-    // Offset: 0xA0D4E4
+    // Offset: 0xAD2394
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.ValueTuple`2<System.Int32,System.Int32> CameraDevice::get_photoResolution()
     ::System::ValueTuple_2<int, int> get_photoResolution();
     // public override System.Void set_photoResolution(System.ValueTuple`2<System.Int32,System.Int32> value)
-    // Offset: 0xA0D560
+    // Offset: 0xAD2410
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_photoResolution(System.ValueTuple`2<System.Int32,System.Int32> value)
     void set_photoResolution(::System::ValueTuple_2<int, int> value);
     // public override System.Int32 get_frameRate()
-    // Offset: 0xA0D570
+    // Offset: 0xAD2420
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Int32 CameraDevice::get_frameRate()
     int get_frameRate();
     // public override System.Void set_frameRate(System.Int32 value)
-    // Offset: 0xA0D57C
+    // Offset: 0xAD242C
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_frameRate(System.Int32 value)
     void set_frameRate(int value);
     // public override System.Single get_exposureBias()
-    // Offset: 0xA0D588
+    // Offset: 0xAD2438
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Single CameraDevice::get_exposureBias()
     float get_exposureBias();
     // public override System.Void set_exposureBias(System.Single value)
-    // Offset: 0xA0D594
+    // Offset: 0xAD2444
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_exposureBias(System.Single value)
     void set_exposureBias(float value);
     // public override System.Boolean get_exposureLock()
-    // Offset: 0xA0D5A0
+    // Offset: 0xAD2450
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_exposureLock()
     bool get_exposureLock();
     // public override System.Void set_exposureLock(System.Boolean value)
-    // Offset: 0xA0D5AC
+    // Offset: 0xAD245C
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_exposureLock(System.Boolean value)
     void set_exposureLock(bool value);
     // public override System.Void set_exposurePoint(System.ValueTuple`2<System.Single,System.Single> value)
-    // Offset: 0xA0D5BC
+    // Offset: 0xAD246C
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_exposurePoint(System.ValueTuple`2<System.Single,System.Single> value)
     void set_exposurePoint(::System::ValueTuple_2<float, float> value);
     // public override NatSuite.Devices.FlashMode get_flashMode()
-    // Offset: 0xA0D5C8
+    // Offset: 0xAD2478
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: NatSuite.Devices.FlashMode CameraDevice::get_flashMode()
     ::NatSuite::Devices::FlashMode get_flashMode();
     // public override System.Void set_flashMode(NatSuite.Devices.FlashMode value)
-    // Offset: 0xA0D5D4
+    // Offset: 0xAD2484
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_flashMode(NatSuite.Devices.FlashMode value)
     void set_flashMode(::NatSuite::Devices::FlashMode value);
     // public override System.Boolean get_focusLock()
-    // Offset: 0xA0D5E0
+    // Offset: 0xAD2490
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_focusLock()
     bool get_focusLock();
     // public override System.Void set_focusLock(System.Boolean value)
-    // Offset: 0xA0D5EC
+    // Offset: 0xAD249C
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_focusLock(System.Boolean value)
     void set_focusLock(bool value);
     // public override System.Void set_focusPoint(System.ValueTuple`2<System.Single,System.Single> value)
-    // Offset: 0xA0D5FC
+    // Offset: 0xAD24AC
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_focusPoint(System.ValueTuple`2<System.Single,System.Single> value)
     void set_focusPoint(::System::ValueTuple_2<float, float> value);
     // public override System.Boolean get_torchEnabled()
-    // Offset: 0xA0D608
+    // Offset: 0xAD24B8
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_torchEnabled()
     bool get_torchEnabled();
     // public override System.Void set_torchEnabled(System.Boolean value)
-    // Offset: 0xA0D614
+    // Offset: 0xAD24C4
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_torchEnabled(System.Boolean value)
     void set_torchEnabled(bool value);
     // public override System.Boolean get_whiteBalanceLock()
-    // Offset: 0xA0D624
+    // Offset: 0xAD24D4
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_whiteBalanceLock()
     bool get_whiteBalanceLock();
     // public override System.Void set_whiteBalanceLock(System.Boolean value)
-    // Offset: 0xA0D630
+    // Offset: 0xAD24E0
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_whiteBalanceLock(System.Boolean value)
     void set_whiteBalanceLock(bool value);
     // public override System.Single get_zoomRatio()
-    // Offset: 0xA0D640
+    // Offset: 0xAD24F0
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Single CameraDevice::get_zoomRatio()
     float get_zoomRatio();
     // public override System.Void set_zoomRatio(System.Single value)
-    // Offset: 0xA0D64C
+    // Offset: 0xAD24FC
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_zoomRatio(System.Single value)
     void set_zoomRatio(float value);
     // public override System.Void set_orientation(NatSuite.Devices.FrameOrientation value)
-    // Offset: 0xA0D658
+    // Offset: 0xAD2508
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::set_orientation(NatSuite.Devices.FrameOrientation value)
     void set_orientation(::NatSuite::Devices::FrameOrientation value);
     // public override System.Boolean get_running()
-    // Offset: 0xA0D664
+    // Offset: 0xAD2514
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Boolean CameraDevice::get_running()
     bool get_running();
     // public override System.Threading.Tasks.Task`1<UnityEngine.Texture2D> StartRunning()
-    // Offset: 0xA0D670
+    // Offset: 0xAD2520
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Threading.Tasks.Task`1<UnityEngine.Texture2D> CameraDevice::StartRunning()
     ::System::Threading::Tasks::Task_1<::UnityEngine::Texture2D*>* StartRunning();
     // public override System.Void StopRunning()
-    // Offset: 0xA0D804
+    // Offset: 0xAD26B4
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Void CameraDevice::StopRunning()
     void StopRunning();
     // public override System.Threading.Tasks.Task`1<UnityEngine.Texture2D> CapturePhoto()
-    // Offset: 0xA0D880
+    // Offset: 0xAD2730
     // Implemented from: NatSuite.Devices.CameraDevice
     // Base method: System.Threading.Tasks.Task`1<UnityEngine.Texture2D> CameraDevice::CapturePhoto()
     ::System::Threading::Tasks::Task_1<::UnityEngine::Texture2D*>* CapturePhoto();
     // protected override System.Void Finalize()
-    // Offset: 0xA0DAB8
+    // Offset: 0xAD28C4
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

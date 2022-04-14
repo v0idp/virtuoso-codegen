@@ -46,11 +46,11 @@ namespace GlobalNamespace {
     // Set static field: static public readonly OVRPlugin/Sizef zero
     static void _set_zero(::GlobalNamespace::OVRPlugin::Sizef value);
     // Get instance field reference: public System.Single w
-    float& dyn_w();
+    [[deprecated]] float& dyn_w();
     // Get instance field reference: public System.Single h
-    float& dyn_h();
+    [[deprecated]] float& dyn_h();
     // static private System.Void .cctor()
-    // Offset: 0xF13E18
+    // Offset: 0x13EDE14
     static void _cctor();
   }; // OVRPlugin/Sizef
   #pragma pack(pop)

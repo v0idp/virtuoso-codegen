@@ -57,9 +57,9 @@ namespace RSG {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Action`1<System.Single> callback
-    ::System::Action_1<float>*& dyn_callback();
+    [[deprecated]] ::System::Action_1<float>*& dyn_callback();
     // Get instance field reference: public RSG.IRejectable rejectable
-    ::RSG::IRejectable*& dyn_rejectable();
+    [[deprecated]] ::RSG::IRejectable*& dyn_rejectable();
   }; // RSG.ProgressHandler
   #pragma pack(pop)
   static check_size<sizeof(ProgressHandler), 8 + sizeof(::RSG::IRejectable*)> __RSG_ProgressHandlerSizeCheck;

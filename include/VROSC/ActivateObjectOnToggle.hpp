@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ActivateObjectOnToggle : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIToggle _toggle
     // Size: 0x8
     // Offset: 0x18
@@ -64,20 +56,20 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIToggle _toggle
-    ::VROSC::UIToggle*& dyn__toggle();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__toggle();
     // Get instance field reference: private VROSC.TooltipData _tooltip
-    ::VROSC::TooltipData*& dyn__tooltip();
+    [[deprecated]] ::VROSC::TooltipData*& dyn__tooltip();
     // private System.Void Awake()
-    // Offset: 0x1366B7C
+    // Offset: 0x965388
     void Awake();
     // private System.Void Start()
-    // Offset: 0x1366D1C
+    // Offset: 0x965528
     void Start();
     // public System.Void SetActive(VROSC.InputDevice device, System.Boolean shouldBeOn)
-    // Offset: 0x1366D38
+    // Offset: 0x965544
     void SetActive(::VROSC::InputDevice* device, bool shouldBeOn);
     // public System.Void .ctor()
-    // Offset: 0x1366D6C
+    // Offset: 0x965578
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

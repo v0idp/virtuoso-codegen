@@ -48,15 +48,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoginUIPopupPanelBase : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected TMPro.TextMeshPro _stateText
     // Size: 0x8
     // Offset: 0x18
@@ -79,31 +71,31 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected TMPro.TextMeshPro _stateText
-    ::TMPro::TextMeshPro*& dyn__stateText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__stateText();
     // Get instance field reference: protected VROSC.LoginUIPopup _loginUIPopup
-    ::VROSC::LoginUIPopup*& dyn__loginUIPopup();
+    [[deprecated]] ::VROSC::LoginUIPopup*& dyn__loginUIPopup();
     // Get instance field reference: protected UIInputField _selectedInputField
-    ::GlobalNamespace::UIInputField*& dyn__selectedInputField();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__selectedInputField();
     // public System.Void Setup(VROSC.LoginUIPopup loginUIPopup)
-    // Offset: 0x1393C4C
+    // Offset: 0x19B40A0
     void Setup(::VROSC::LoginUIPopup* loginUIPopup);
     // public System.Void Open(params System.Object[] parameters)
-    // Offset: 0x13902E0
+    // Offset: 0x19B0734
     void Open(::ArrayW<::Il2CppObject*> parameters);
     // public System.Void Close()
-    // Offset: 0x1391BE8
+    // Offset: 0x19B203C
     void Close();
     // protected System.Void EnableUI(System.Boolean enable)
-    // Offset: 0x1393CC0
+    // Offset: 0x19B4114
     void EnableUI(bool enable);
     // protected System.Void SetStateMessage(System.String message)
-    // Offset: 0x138FB04
+    // Offset: 0x19AFF58
     void SetStateMessage(::StringW message);
     // protected System.Void InputFieldSelected(UIInputField inputField)
-    // Offset: 0x1393CC4
+    // Offset: 0x19B4118
     void InputFieldSelected(::GlobalNamespace::UIInputField* inputField);
     // public System.Void .ctor()
-    // Offset: 0x138FDDC
+    // Offset: 0x19B0230
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

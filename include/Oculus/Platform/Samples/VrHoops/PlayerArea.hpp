@@ -48,15 +48,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class PlayerArea : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject m_ballPrefab
     // Size: 0x8
     // Offset: 0x18
@@ -85,21 +77,21 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject m_ballPrefab
-    ::UnityEngine::GameObject*& dyn_m_ballPrefab();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_ballPrefab();
     // Get instance field reference: private UnityEngine.GameObject m_playerHead
-    ::UnityEngine::GameObject*& dyn_m_playerHead();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_playerHead();
     // Get instance field reference: private UnityEngine.UI.Text m_nameText
-    ::UnityEngine::UI::Text*& dyn_m_nameText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_nameText();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.P2PNetworkGoal m_p2pGoal
-    ::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal*& dyn_m_p2pGoal();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal*& dyn_m_p2pGoal();
     // public Oculus.Platform.Samples.VrHoops.Player get_Player()
-    // Offset: 0x1145E7C
+    // Offset: 0x1712D78
     ::Oculus::Platform::Samples::VrHoops::Player* get_Player();
     // public UnityEngine.UI.Text get_NameText()
-    // Offset: 0x1145ED0
+    // Offset: 0x1712DCC
     ::UnityEngine::UI::Text* get_NameText();
     // private System.Void Awake()
-    // Offset: 0x1145ED8
+    // Offset: 0x1712DD4
     void Awake();
     // public T SetupForPlayer(System.String name)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -112,7 +104,7 @@ namespace Oculus::Platform::Samples::VrHoops {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___generic__method, name);
     }
     // public System.Void .ctor()
-    // Offset: 0x1145FD8
+    // Offset: 0x1712ED4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

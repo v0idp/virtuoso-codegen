@@ -26,15 +26,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class Uri::UriInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Host
     // Size: 0x8
     // Offset: 0x10
@@ -73,19 +65,19 @@ namespace System {
     static_assert(sizeof(::System::Uri::MoreInfo*) == 0x8);
     public:
     // Get instance field reference: public System.String Host
-    ::StringW& dyn_Host();
+    [[deprecated]] ::StringW& dyn_Host();
     // Get instance field reference: public System.String ScopeId
-    ::StringW& dyn_ScopeId();
+    [[deprecated]] ::StringW& dyn_ScopeId();
     // Get instance field reference: public System.String String
-    ::StringW& dyn_String();
+    [[deprecated]] ::StringW& dyn_String();
     // Get instance field reference: public System.Uri/System.Offset Offset
-    ::System::Uri::Offset& dyn_Offset();
+    [[deprecated]] ::System::Uri::Offset& dyn_Offset();
     // Get instance field reference: public System.String DnsSafeHost
-    ::StringW& dyn_DnsSafeHost();
+    [[deprecated]] ::StringW& dyn_DnsSafeHost();
     // Get instance field reference: public System.Uri/System.MoreInfo MoreInfo
-    ::System::Uri::MoreInfo*& dyn_MoreInfo();
+    [[deprecated]] ::System::Uri::MoreInfo*& dyn_MoreInfo();
     // public System.Void .ctor()
-    // Offset: 0x8E7A34
+    // Offset: 0xA05418
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

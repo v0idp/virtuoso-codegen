@@ -42,15 +42,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRGridCube : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.KeyCode GridKey
     // Size: 0x4
     // Offset: 0x18
@@ -125,44 +117,44 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.KeyCode GridKey
-    ::UnityEngine::KeyCode& dyn_GridKey();
+    [[deprecated]] ::UnityEngine::KeyCode& dyn_GridKey();
     // Get instance field reference: private UnityEngine.GameObject CubeGrid
-    ::UnityEngine::GameObject*& dyn_CubeGrid();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_CubeGrid();
     // Get instance field reference: private System.Boolean CubeGridOn
-    bool& dyn_CubeGridOn();
+    [[deprecated]] bool& dyn_CubeGridOn();
     // Get instance field reference: private System.Boolean CubeSwitchColorOld
-    bool& dyn_CubeSwitchColorOld();
+    [[deprecated]] bool& dyn_CubeSwitchColorOld();
     // Get instance field reference: private System.Boolean CubeSwitchColor
-    bool& dyn_CubeSwitchColor();
+    [[deprecated]] bool& dyn_CubeSwitchColor();
     // Get instance field reference: private System.Int32 gridSizeX
-    int& dyn_gridSizeX();
+    [[deprecated]] int& dyn_gridSizeX();
     // Get instance field reference: private System.Int32 gridSizeY
-    int& dyn_gridSizeY();
+    [[deprecated]] int& dyn_gridSizeY();
     // Get instance field reference: private System.Int32 gridSizeZ
-    int& dyn_gridSizeZ();
+    [[deprecated]] int& dyn_gridSizeZ();
     // Get instance field reference: private System.Single gridScale
-    float& dyn_gridScale();
+    [[deprecated]] float& dyn_gridScale();
     // Get instance field reference: private System.Single cubeScale
-    float& dyn_cubeScale();
+    [[deprecated]] float& dyn_cubeScale();
     // Get instance field reference: private OVRCameraRig CameraController
-    ::GlobalNamespace::OVRCameraRig*& dyn_CameraController();
+    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraController();
     // private System.Void Update()
-    // Offset: 0xD31BFC
+    // Offset: 0xFBF550
     void Update();
     // public System.Void SetOVRCameraController(ref OVRCameraRig cameraController)
-    // Offset: 0xD31E8C
+    // Offset: 0xFBF7E0
     void SetOVRCameraController(ByRef<::GlobalNamespace::OVRCameraRig*> cameraController);
     // private System.Void UpdateCubeGrid()
-    // Offset: 0xD31C00
+    // Offset: 0xFBF554
     void UpdateCubeGrid();
     // private System.Void CreateCubeGrid()
-    // Offset: 0xD31E98
+    // Offset: 0xFBF7EC
     void CreateCubeGrid();
     // private System.Void CubeGridSwitchColor(System.Boolean CubeSwitchColor)
-    // Offset: 0xD3222C
+    // Offset: 0xFBFB80
     void CubeGridSwitchColor(bool CubeSwitchColor);
     // public System.Void .ctor()
-    // Offset: 0xD32624
+    // Offset: 0xFBFF78
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

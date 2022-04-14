@@ -37,13 +37,13 @@ namespace Firebase::Platform {
     // Set static field: static private Firebase.Platform.DebugLogger _instance
     static void _set__instance(::Firebase::Platform::DebugLogger* value);
     // static public Firebase.Platform.DebugLogger get_Instance()
-    // Offset: 0x12C80E4
+    // Offset: 0x18C7474
     static ::Firebase::Platform::DebugLogger* get_Instance();
     // static private System.Void .cctor()
-    // Offset: 0x12C8148
+    // Offset: 0x18C74D8
     static void _cctor();
     // public System.Void .ctor()
-    // Offset: 0x12C80DC
+    // Offset: 0x18C746C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

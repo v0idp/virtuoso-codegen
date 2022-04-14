@@ -24,10 +24,6 @@ namespace System {
   // Forward declaring type: String
   class String;
 }
-// Forward declaring namespace: System::Security::Cryptography
-namespace System::Security::Cryptography {
-  // Skipping declaration: AsnEncodedData because it is already included!
-}
 // Forward declaring namespace: System::Security::Cryptography::X509Certificates
 namespace System::Security::Cryptography::X509Certificates {
   // Forward declaring type: PublicKey
@@ -52,15 +48,7 @@ namespace System::Security::Cryptography::X509Certificates {
     public:
     // Writing base type padding for base size: 0x21 to desired offset: 0x28
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte[] _subjectKeyIdentifier
     // Size: 0x8
     // Offset: 0x28
@@ -95,66 +83,66 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static System.String friendlyName
     static void _set_friendlyName(::StringW value);
     // Get instance field reference: private System.Byte[] _subjectKeyIdentifier
-    ::ArrayW<uint8_t>& dyn__subjectKeyIdentifier();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__subjectKeyIdentifier();
     // Get instance field reference: private System.String _ski
-    ::StringW& dyn__ski();
+    [[deprecated]] ::StringW& dyn__ski();
     // Get instance field reference: private System.Security.Cryptography.AsnDecodeStatus _status
-    ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
+    [[deprecated]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
     // public System.String get_SubjectKeyIdentifier()
-    // Offset: 0x8D7EBC
+    // Offset: 0x9F2C34
     ::StringW get_SubjectKeyIdentifier();
     // public System.Void .ctor(System.Security.Cryptography.AsnEncodedData encodedSubjectKeyIdentifier, System.Boolean critical)
-    // Offset: 0x8D7460
+    // Offset: 0x9F21D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509SubjectKeyIdentifierExtension* New_ctor(::System::Security::Cryptography::AsnEncodedData* encodedSubjectKeyIdentifier, bool critical) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509SubjectKeyIdentifierExtension*, creationType>(encodedSubjectKeyIdentifier, critical)));
     }
     // public System.Void .ctor(System.Byte[] subjectKeyIdentifier, System.Boolean critical)
-    // Offset: 0x8D76A8
+    // Offset: 0x9F2420
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509SubjectKeyIdentifierExtension* New_ctor(::ArrayW<uint8_t> subjectKeyIdentifier, bool critical) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509SubjectKeyIdentifierExtension*, creationType>(subjectKeyIdentifier, critical)));
     }
     // public System.Void .ctor(System.String subjectKeyIdentifier, System.Boolean critical)
-    // Offset: 0x8D78B4
+    // Offset: 0x9F262C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509SubjectKeyIdentifierExtension* New_ctor(::StringW subjectKeyIdentifier, bool critical) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509SubjectKeyIdentifierExtension*, creationType>(subjectKeyIdentifier, critical)));
     }
     // public System.Void .ctor(System.Security.Cryptography.X509Certificates.PublicKey key, System.Boolean critical)
-    // Offset: 0x8D7B14
+    // Offset: 0x9F288C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509SubjectKeyIdentifierExtension* New_ctor(::System::Security::Cryptography::X509Certificates::PublicKey* key, bool critical) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509SubjectKeyIdentifierExtension*, creationType>(key, critical)));
     }
     // public System.Void .ctor(System.Security.Cryptography.X509Certificates.PublicKey key, System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm algorithm, System.Boolean critical)
-    // Offset: 0x8D7B20
+    // Offset: 0x9F2898
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509SubjectKeyIdentifierExtension* New_ctor(::System::Security::Cryptography::X509Certificates::PublicKey* key, ::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierHashAlgorithm algorithm, bool critical) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509SubjectKeyIdentifierExtension*, creationType>(key, algorithm, critical)));
     }
     // static System.Byte FromHexChar(System.Char c)
-    // Offset: 0x8D811C
+    // Offset: 0x9F2E94
     static uint8_t FromHexChar(::Il2CppChar c);
     // static System.Byte FromHexChars(System.Char c1, System.Char c2)
-    // Offset: 0x8D8164
+    // Offset: 0x9F2EDC
     static uint8_t FromHexChars(::Il2CppChar c1, ::Il2CppChar c2);
     // static System.Byte[] FromHex(System.String hex)
-    // Offset: 0x8D7A10
+    // Offset: 0x9F2788
     static ::ArrayW<uint8_t> FromHex(::StringW hex);
     // System.Security.Cryptography.AsnDecodeStatus Decode(System.Byte[] extension)
-    // Offset: 0x8D752C
+    // Offset: 0x9F22A4
     ::System::Security::Cryptography::AsnDecodeStatus Decode(::ArrayW<uint8_t> extension);
     // System.Byte[] Encode()
-    // Offset: 0x8D783C
+    // Offset: 0x9F25B4
     ::ArrayW<uint8_t> Encode();
     // public System.Void .ctor()
-    // Offset: 0x8D73C8
+    // Offset: 0x9F2140
     // Implemented from: System.Security.Cryptography.X509Certificates.X509Extension
     // Base method: System.Void X509Extension::.ctor()
     // Base method: System.Void AsnEncodedData::.ctor()
@@ -165,12 +153,12 @@ namespace System::Security::Cryptography::X509Certificates {
       return THROW_UNLESS((::il2cpp_utils::New<X509SubjectKeyIdentifierExtension*, creationType>()));
     }
     // public override System.Void CopyFrom(System.Security.Cryptography.AsnEncodedData asnEncodedData)
-    // Offset: 0x8D7F4C
+    // Offset: 0x9F2CC4
     // Implemented from: System.Security.Cryptography.X509Certificates.X509Extension
     // Base method: System.Void X509Extension::CopyFrom(System.Security.Cryptography.AsnEncodedData asnEncodedData)
     void CopyFrom(::System::Security::Cryptography::AsnEncodedData* asnEncodedData);
     // override System.String ToString(System.Boolean multiLine)
-    // Offset: 0x8D8200
+    // Offset: 0x9F2F78
     // Implemented from: System.Security.Cryptography.AsnEncodedData
     // Base method: System.String AsnEncodedData::ToString(System.Boolean multiLine)
     ::StringW ToString(bool multiLine);

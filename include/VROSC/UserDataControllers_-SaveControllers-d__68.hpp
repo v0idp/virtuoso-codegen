@@ -61,18 +61,18 @@ namespace VROSC {
     ::VROSC::UserDataControllers* $$4__this;
     // Field size check
     static_assert(sizeof(::VROSC::UserDataControllers*) == 0x8);
-    // public System.Action`1<VROSC.Error> onFailure
-    // Size: 0x8
-    // Offset: 0x30
-    ::System::Action_1<::VROSC::Error>* onFailure;
-    // Field size check
-    static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     // public System.String sessionId
     // Size: 0x8
-    // Offset: 0x38
+    // Offset: 0x30
     ::StringW sessionId;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
+    // public System.Action`1<VROSC.Error> onFailure
+    // Size: 0x8
+    // Offset: 0x38
+    ::System::Action_1<::VROSC::Error>* onFailure;
+    // Field size check
+    static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     // private VROSC.UserDataControllers/VROSC.<>c__DisplayClass68_0 <>8__1
     // Size: 0x8
     // Offset: 0x40
@@ -93,7 +93,7 @@ namespace VROSC {
     static_assert(sizeof(::System::Runtime::CompilerServices::TaskAwaiter) == 0x8);
     public:
     // Creating value type constructor for type: $SaveControllers$d__68
-    constexpr $SaveControllers$d__68(int $$1__state_ = {}, ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder $$t__builder_ = {}, ::VROSC::UserDataControllers* $$4__this_ = {}, ::System::Action_1<::VROSC::Error>* onFailure_ = {}, ::StringW sessionId_ = {}, ::VROSC::UserDataControllers::$$c__DisplayClass68_0* $$8__1_ = {}, ::System::Action* onSuccess_ = {}, ::System::Runtime::CompilerServices::TaskAwaiter $$u__1_ = {}) noexcept : $$1__state{$$1__state_}, $$t__builder{$$t__builder_}, $$4__this{$$4__this_}, onFailure{onFailure_}, sessionId{sessionId_}, $$8__1{$$8__1_}, onSuccess{onSuccess_}, $$u__1{$$u__1_} {}
+    constexpr $SaveControllers$d__68(int $$1__state_ = {}, ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder $$t__builder_ = {}, ::VROSC::UserDataControllers* $$4__this_ = {}, ::StringW sessionId_ = {}, ::System::Action_1<::VROSC::Error>* onFailure_ = {}, ::VROSC::UserDataControllers::$$c__DisplayClass68_0* $$8__1_ = {}, ::System::Action* onSuccess_ = {}, ::System::Runtime::CompilerServices::TaskAwaiter $$u__1_ = {}) noexcept : $$1__state{$$1__state_}, $$t__builder{$$t__builder_}, $$4__this{$$4__this_}, sessionId{sessionId_}, onFailure{onFailure_}, $$8__1{$$8__1_}, onSuccess{onSuccess_}, $$u__1{$$u__1_} {}
     // Creating interface conversion operator: operator ::System::ValueType
     operator ::System::ValueType() noexcept {
       return *reinterpret_cast<::System::ValueType*>(this);
@@ -103,26 +103,26 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public VROSC.UserDataControllers <>4__this
-    ::VROSC::UserDataControllers*& dyn_$$4__this();
-    // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::VROSC::UserDataControllers*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
+    // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: private VROSC.UserDataControllers/VROSC.<>c__DisplayClass68_0 <>8__1
-    ::VROSC::UserDataControllers::$$c__DisplayClass68_0*& dyn_$$8__1();
+    [[deprecated]] ::VROSC::UserDataControllers::$$c__DisplayClass68_0*& dyn_$$8__1();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x1412B5C
+    // Offset: 0xE84DAC
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x1413C58
+    // Offset: 0xE85ED8
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.UserDataControllers/VROSC.<SaveControllers>d__68
   #pragma pack(pop)

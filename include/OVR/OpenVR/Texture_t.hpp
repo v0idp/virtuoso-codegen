@@ -57,11 +57,11 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IntPtr handle
-    ::System::IntPtr& dyn_handle();
+    [[deprecated]] ::System::IntPtr& dyn_handle();
     // Get instance field reference: public OVR.OpenVR.ETextureType eType
-    ::OVR::OpenVR::ETextureType& dyn_eType();
+    [[deprecated]] ::OVR::OpenVR::ETextureType& dyn_eType();
     // Get instance field reference: public OVR.OpenVR.EColorSpace eColorSpace
-    ::OVR::OpenVR::EColorSpace& dyn_eColorSpace();
+    [[deprecated]] ::OVR::OpenVR::EColorSpace& dyn_eColorSpace();
   }; // OVR.OpenVR.Texture_t
   #pragma pack(pop)
   static check_size<sizeof(Texture_t), 12 + sizeof(::OVR::OpenVR::EColorSpace)> __OVR_OpenVR_Texture_tSizeCheck;

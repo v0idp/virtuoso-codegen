@@ -31,15 +31,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ShortcutExtensions::$$c__DisplayClass65_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public DG.Tweening.Tween target
     // Size: 0x8
     // Offset: 0x10
@@ -52,15 +44,15 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public DG.Tweening.Tween target
-    ::DG::Tweening::Tween*& dyn_target();
+    [[deprecated]] ::DG::Tweening::Tween*& dyn_target();
     // System.Single <DOTimeScale>b__0()
-    // Offset: 0x126D3A8
+    // Offset: 0x186574C
     float $DOTimeScale$b__0();
     // System.Void <DOTimeScale>b__1(System.Single x)
-    // Offset: 0x126D3C4
+    // Offset: 0x1865768
     void $DOTimeScale$b__1(float x);
     // public System.Void .ctor()
-    // Offset: 0x126D3A0
+    // Offset: 0x1865744
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

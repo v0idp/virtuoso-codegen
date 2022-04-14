@@ -25,19 +25,19 @@ namespace GlobalNamespace {
   class OculusXRPlugin : public ::Il2CppObject {
     public:
     // static public System.Void SetColorScale(System.Single x, System.Single y, System.Single z, System.Single w)
-    // Offset: 0x6ECBCC
+    // Offset: 0x8032D0
     static void SetColorScale(float x, float y, float z, float w);
     // static public System.Void SetColorOffset(System.Single x, System.Single y, System.Single z, System.Single w)
-    // Offset: 0x6ECC70
+    // Offset: 0x803374
     static void SetColorOffset(float x, float y, float z, float w);
     // static public System.Void SetSpaceWarp(OVRPlugin/Bool on)
-    // Offset: 0x6ECD10
+    // Offset: 0x803414
     static void SetSpaceWarp(::GlobalNamespace::OVRPlugin::Bool on);
     // static public System.Void SetAppSpacePosition(System.Single x, System.Single y, System.Single z)
-    // Offset: 0x6ECD90
+    // Offset: 0x803494
     static void SetAppSpacePosition(float x, float y, float z);
     // static public System.Void SetAppSpaceRotation(System.Single x, System.Single y, System.Single z, System.Single w)
-    // Offset: 0x6ECE2C
+    // Offset: 0x803530
     static void SetAppSpaceRotation(float x, float y, float z, float w);
   }; // OculusXRPlugin
   #pragma pack(pop)

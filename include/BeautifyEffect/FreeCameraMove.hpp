@@ -28,15 +28,7 @@ namespace BeautifyEffect {
   // [TokenAttribute] Offset: FFFFFFFF
   class FreeCameraMove : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single cameraSensitivity
     // Size: 0x4
     // Offset: 0x18
@@ -89,29 +81,29 @@ namespace BeautifyEffect {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single cameraSensitivity
-    float& dyn_cameraSensitivity();
+    [[deprecated]] float& dyn_cameraSensitivity();
     // Get instance field reference: public System.Single climbSpeed
-    float& dyn_climbSpeed();
+    [[deprecated]] float& dyn_climbSpeed();
     // Get instance field reference: public System.Single normalMoveSpeed
-    float& dyn_normalMoveSpeed();
+    [[deprecated]] float& dyn_normalMoveSpeed();
     // Get instance field reference: public System.Single slowMoveFactor
-    float& dyn_slowMoveFactor();
+    [[deprecated]] float& dyn_slowMoveFactor();
     // Get instance field reference: public System.Single fastMoveFactor
-    float& dyn_fastMoveFactor();
+    [[deprecated]] float& dyn_fastMoveFactor();
     // Get instance field reference: private System.Single rotationX
-    float& dyn_rotationX();
+    [[deprecated]] float& dyn_rotationX();
     // Get instance field reference: private System.Single rotationY
-    float& dyn_rotationY();
+    [[deprecated]] float& dyn_rotationY();
     // Get instance field reference: private UnityEngine.Quaternion originalRotation
-    ::UnityEngine::Quaternion& dyn_originalRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_originalRotation();
     // private System.Void Start()
-    // Offset: 0x88EB00
+    // Offset: 0x19A0E58
     void Start();
     // private System.Void Update()
-    // Offset: 0x88EB54
+    // Offset: 0x19A0EAC
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x88F2F0
+    // Offset: 0x19A1648
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

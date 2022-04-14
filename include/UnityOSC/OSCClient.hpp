@@ -43,15 +43,7 @@ namespace UnityOSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class OSCClient : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.IPAddress _ipAddress
     // Size: 0x8
     // Offset: 0x10
@@ -74,32 +66,32 @@ namespace UnityOSC {
     static_assert(sizeof(::System::Net::Sockets::UdpClient*) == 0x8);
     public:
     // Get instance field reference: private System.Net.IPAddress _ipAddress
-    ::System::Net::IPAddress*& dyn__ipAddress();
+    [[deprecated]] ::System::Net::IPAddress*& dyn__ipAddress();
     // Get instance field reference: private System.Int32 _port
-    int& dyn__port();
+    [[deprecated]] int& dyn__port();
     // Get instance field reference: private System.Net.Sockets.UdpClient _udpClient
-    ::System::Net::Sockets::UdpClient*& dyn__udpClient();
+    [[deprecated]] ::System::Net::Sockets::UdpClient*& dyn__udpClient();
     // public System.Net.IPAddress get_ClientIPAddress()
-    // Offset: 0xA16AA4
+    // Offset: 0xC5BB08
     ::System::Net::IPAddress* get_ClientIPAddress();
     // public System.Int32 get_Port()
-    // Offset: 0xA16AAC
+    // Offset: 0xC5BB10
     int get_Port();
     // public System.Void .ctor(System.Net.IPAddress address, System.Int32 port)
-    // Offset: 0xA168DC
+    // Offset: 0xC5B940
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OSCClient* New_ctor(::System::Net::IPAddress* address, int port) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCClient::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OSCClient*, creationType>(address, port)));
     }
     // public System.Void Connect()
-    // Offset: 0xA1691C
+    // Offset: 0xC5B980
     void Connect();
     // public System.Void Close()
-    // Offset: 0xA16AB4
+    // Offset: 0xC5BB18
     void Close();
     // public System.Void Send(UnityOSC.OSCPacket packet)
-    // Offset: 0xA16AE8
+    // Offset: 0xC5BB4C
     void Send(::UnityOSC::OSCPacket* packet);
   }; // UnityOSC.OSCClient
   #pragma pack(pop)

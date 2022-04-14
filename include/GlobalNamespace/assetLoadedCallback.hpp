@@ -43,20 +43,20 @@ namespace GlobalNamespace {
   class assetLoadedCallback : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x13573C0
+    // Offset: 0x953CBC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static assetLoadedCallback* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::assetLoadedCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<assetLoadedCallback*, creationType>(object, method)));
     }
     // public System.Void Invoke(OvrAvatarAsset asset)
-    // Offset: 0x13573D0
+    // Offset: 0x953CCC
     void Invoke(::GlobalNamespace::OvrAvatarAsset* asset);
     // public System.IAsyncResult BeginInvoke(OvrAvatarAsset asset, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1357744
+    // Offset: 0x954040
     ::System::IAsyncResult* BeginInvoke(::GlobalNamespace::OvrAvatarAsset* asset, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x1357768
+    // Offset: 0x954064
     void EndInvoke(::System::IAsyncResult* result);
   }; // assetLoadedCallback
   #pragma pack(pop)

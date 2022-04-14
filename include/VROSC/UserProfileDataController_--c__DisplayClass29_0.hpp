@@ -38,15 +38,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UserProfileDataController::$$c__DisplayClass29_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.UserProfileDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -61,14 +53,14 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public VROSC.UserProfileDataController <>4__this
-    ::VROSC::UserProfileDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UserProfileDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // System.Void <LoadCloudData>b__0(System.Collections.Generic.Dictionary`2<System.String,System.Object> data)
-    // Offset: 0x1416170
+    // Offset: 0xE883F0
     void $LoadCloudData$b__0(::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* data);
     // public System.Void .ctor()
-    // Offset: 0x1416168
+    // Offset: 0xE883E8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

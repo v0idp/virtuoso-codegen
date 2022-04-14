@@ -30,15 +30,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetOptionsProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -57,24 +49,24 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC3FB90
+    // Offset: 0xD64180
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetOptionsProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::SetOptionsProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetOptionsProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.SetOptionsProxy obj)
-    // Offset: 0xC39068
+    // Offset: 0xD5C5F8
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::SetOptionsProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC3FC64
+    // Offset: 0xD64254
     void Dispose();
     // public System.Void .ctor()
-    // Offset: 0xC3F604
+    // Offset: 0xD63BFC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -83,7 +75,7 @@ namespace Firebase::Firestore {
       return THROW_UNLESS((::il2cpp_utils::New<SetOptionsProxy*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xC3FBF4
+    // Offset: 0xD641E4
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

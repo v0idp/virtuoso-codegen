@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MalletGrabbing : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Mallet _mallet
     // Size: 0x8
     // Offset: 0x18
@@ -100,47 +92,47 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Mallet _mallet
-    ::VROSC::Mallet*& dyn__mallet();
+    [[deprecated]] ::VROSC::Mallet*& dyn__mallet();
     // Get instance field reference: private VROSC.MalletSettings _malletSettings
-    ::VROSC::MalletSettings*& dyn__malletSettings();
+    [[deprecated]] ::VROSC::MalletSettings*& dyn__malletSettings();
     // Get instance field reference: private System.Boolean _isGrabbing
-    bool& dyn__isGrabbing();
+    [[deprecated]] bool& dyn__isGrabbing();
     // Get instance field reference: private System.Single _changeTimer
-    float& dyn__changeTimer();
+    [[deprecated]] float& dyn__changeTimer();
     // Get instance field reference: private System.Single _hitTimer
-    float& dyn__hitTimer();
+    [[deprecated]] float& dyn__hitTimer();
     // Get instance field reference: private System.Boolean _laserWasHovering
-    bool& dyn__laserWasHovering();
+    [[deprecated]] bool& dyn__laserWasHovering();
     // Get instance field reference: private System.Boolean _laserIsDim
-    bool& dyn__laserIsDim();
+    [[deprecated]] bool& dyn__laserIsDim();
     // Get instance field reference: private System.Boolean _userDisabledLaser
-    bool& dyn__userDisabledLaser();
+    [[deprecated]] bool& dyn__userDisabledLaser();
     // private System.Void Awake()
-    // Offset: 0x8AB6E0
+    // Offset: 0x197DAD4
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x8AB7BC
+    // Offset: 0x197DBB0
     void OnDestroy();
     // private System.Void OnHitDSP(System.Single predictedTime, System.Boolean dimLaser)
-    // Offset: 0x8AB898
+    // Offset: 0x197DC8C
     void OnHitDSP(float predictedTime, bool dimLaser);
     // private System.Void ToggleUserDisabledLaser()
-    // Offset: 0x8AB964
+    // Offset: 0x197DD58
     void ToggleUserDisabledLaser();
     // System.Void SetActive(System.Boolean shouldUseMallets)
-    // Offset: 0x8AB1FC
+    // Offset: 0x197D698
     void SetActive(bool shouldUseMallets);
     // private System.Void Update()
-    // Offset: 0x8AB97C
+    // Offset: 0x197DD70
     void Update();
     // private System.Void CheckIfLaserHovering()
-    // Offset: 0x8ABA60
+    // Offset: 0x197DE54
     void CheckIfLaserHovering();
     // private System.Void SetLaserDimmed(System.Boolean dimmed)
-    // Offset: 0x8AB928
+    // Offset: 0x197DD1C
     void SetLaserDimmed(bool dimmed);
     // public System.Void .ctor()
-    // Offset: 0x8ABB10
+    // Offset: 0x197DF04
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

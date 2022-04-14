@@ -55,15 +55,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::WidgetHoveringController::$HideAfterDelay$d__10
     class $HideAfterDelay$d__10;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Interactable _reactTo
     // Size: 0x8
     // Offset: 0x18
@@ -106,37 +98,37 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Interactable _reactTo
-    ::VROSC::Interactable*& dyn__reactTo();
+    [[deprecated]] ::VROSC::Interactable*& dyn__reactTo();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.WidgetHoveringNode> _nodes
-    ::System::Collections::Generic::List_1<::VROSC::WidgetHoveringNode*>*& dyn__nodes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::WidgetHoveringNode*>*& dyn__nodes();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> _hideWhenNotPointingAt
-    ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__hideWhenNotPointingAt();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__hideWhenNotPointingAt();
     // Get instance field reference: private System.Single _closeAfterSeconds
-    float& dyn__closeAfterSeconds();
+    [[deprecated]] float& dyn__closeAfterSeconds();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> _shouldBeVisibleWhenPointedAtAgain
-    ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__shouldBeVisibleWhenPointedAtAgain();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__shouldBeVisibleWhenPointedAtAgain();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.MonoBehaviour> _activators
-    ::System::Collections::Generic::List_1<::UnityEngine::MonoBehaviour*>*& dyn__activators();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::MonoBehaviour*>*& dyn__activators();
     // private System.Void Awake()
-    // Offset: 0x1355034
+    // Offset: 0x951924
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13555F0
+    // Offset: 0x951EE0
     void OnDestroy();
     // private System.Void SetHovering(System.Boolean hovering)
-    // Offset: 0x13556C4
+    // Offset: 0x951FB4
     void SetHovering(bool hovering);
     // public System.Void SetHoveringWithSender(System.Boolean hovering, UnityEngine.MonoBehaviour sender)
-    // Offset: 0x13556D0
+    // Offset: 0x951FC0
     void SetHoveringWithSender(bool hovering, ::UnityEngine::MonoBehaviour* sender);
     // private System.Collections.IEnumerator HideAfterDelay()
-    // Offset: 0x1355820
+    // Offset: 0x952110
     ::System::Collections::IEnumerator* HideAfterDelay();
     // private System.Void ActivateSubObjects(System.Boolean shouldBeVisible)
-    // Offset: 0x1355354
+    // Offset: 0x951C44
     void ActivateSubObjects(bool shouldBeVisible);
     // public System.Void .ctor()
-    // Offset: 0x135588C
+    // Offset: 0x95217C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

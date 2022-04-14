@@ -36,15 +36,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarLocalDriver : public ::GlobalNamespace::OvrAvatarDriver {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 centerEyePosition
     // Size: 0xC
     // Offset: 0xB0
@@ -65,22 +57,22 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Vector3 centerEyePosition
-    ::UnityEngine::Vector3& dyn_centerEyePosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_centerEyePosition();
     // Get instance field reference: private UnityEngine.Quaternion centerEyeRotation
-    ::UnityEngine::Quaternion& dyn_centerEyeRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_centerEyeRotation();
     // Get instance field reference: private System.Single voiceAmplitude
-    float& dyn_voiceAmplitude();
+    [[deprecated]] float& dyn_voiceAmplitude();
     // private OvrAvatarDriver/ControllerPose GetMalibuControllerPose(OVRInput/Controller controller)
-    // Offset: 0x92A550
+    // Offset: 0xF8B950
     ::GlobalNamespace::OvrAvatarDriver::ControllerPose GetMalibuControllerPose(::GlobalNamespace::OVRInput::Controller controller);
     // private OvrAvatarDriver/ControllerPose GetControllerPose(OVRInput/Controller controller)
-    // Offset: 0x92A6B4
+    // Offset: 0xF8BAB4
     ::GlobalNamespace::OvrAvatarDriver::ControllerPose GetControllerPose(::GlobalNamespace::OVRInput::Controller controller);
     // private System.Void CalculateCurrentPose()
-    // Offset: 0x92AA50
+    // Offset: 0xF8BE50
     void CalculateCurrentPose();
     // public System.Void .ctor()
-    // Offset: 0x92ACA0
+    // Offset: 0xF8C0A0
     // Implemented from: OvrAvatarDriver
     // Base method: System.Void OvrAvatarDriver::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -94,7 +86,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarLocalDriver*, creationType>()));
     }
     // public override System.Void UpdateTransforms(System.IntPtr sdkAvatar)
-    // Offset: 0x92AC74
+    // Offset: 0xF8C074
     // Implemented from: OvrAvatarDriver
     // Base method: System.Void OvrAvatarDriver::UpdateTransforms(System.IntPtr sdkAvatar)
     void UpdateTransforms(::System::IntPtr sdkAvatar);

@@ -67,15 +67,7 @@ namespace System::Net {
     class AsyncManualResetEvent;
     // Nested type: ::System::Net::ServicePointScheduler::$StartScheduler$d__32
     struct $StartScheduler$d__32;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Net.ServicePoint <ServicePoint>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -162,85 +154,85 @@ namespace System::Net {
     // Set static field: static private System.Int32 nextId
     static void _set_nextId(int value);
     // Get instance field reference: private readonly System.Net.ServicePoint <ServicePoint>k__BackingField
-    ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
+    [[deprecated]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
     // Get instance field reference: private System.Int32 running
-    int& dyn_running();
+    [[deprecated]] int& dyn_running();
     // Get instance field reference: private System.Int32 maxIdleTime
-    int& dyn_maxIdleTime();
+    [[deprecated]] int& dyn_maxIdleTime();
     // Get instance field reference: private System.Net.ServicePointScheduler/System.Net.AsyncManualResetEvent schedulerEvent
-    ::System::Net::ServicePointScheduler::AsyncManualResetEvent*& dyn_schedulerEvent();
+    [[deprecated]] ::System::Net::ServicePointScheduler::AsyncManualResetEvent*& dyn_schedulerEvent();
     // Get instance field reference: private System.Net.ServicePointScheduler/System.Net.ConnectionGroup defaultGroup
-    ::System::Net::ServicePointScheduler::ConnectionGroup*& dyn_defaultGroup();
+    [[deprecated]] ::System::Net::ServicePointScheduler::ConnectionGroup*& dyn_defaultGroup();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Net.ServicePointScheduler/System.Net.ConnectionGroup> groups
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Net::ServicePointScheduler::ConnectionGroup*>*& dyn_groups();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Net::ServicePointScheduler::ConnectionGroup*>*& dyn_groups();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.ValueTuple`2<System.Net.ServicePointScheduler/System.Net.ConnectionGroup,System.Net.WebOperation>> operations
-    ::System::Collections::Generic::LinkedList_1<::System::ValueTuple_2<::System::Net::ServicePointScheduler::ConnectionGroup*, ::System::Net::WebOperation*>>*& dyn_operations();
+    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::ValueTuple_2<::System::Net::ServicePointScheduler::ConnectionGroup*, ::System::Net::WebOperation*>>*& dyn_operations();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.ValueTuple`3<System.Net.ServicePointScheduler/System.Net.ConnectionGroup,System.Net.WebConnection,System.Threading.Tasks.Task>> idleConnections
-    ::System::Collections::Generic::LinkedList_1<::System::ValueTuple_3<::System::Net::ServicePointScheduler::ConnectionGroup*, ::System::Net::WebConnection*, ::System::Threading::Tasks::Task*>>*& dyn_idleConnections();
+    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::ValueTuple_3<::System::Net::ServicePointScheduler::ConnectionGroup*, ::System::Net::WebConnection*, ::System::Threading::Tasks::Task*>>*& dyn_idleConnections();
     // Get instance field reference: private System.Int32 currentConnections
-    int& dyn_currentConnections();
+    [[deprecated]] int& dyn_currentConnections();
     // Get instance field reference: private System.Int32 connectionLimit
-    int& dyn_connectionLimit();
+    [[deprecated]] int& dyn_connectionLimit();
     // Get instance field reference: private System.DateTime idleSince
-    ::System::DateTime& dyn_idleSince();
+    [[deprecated]] ::System::DateTime& dyn_idleSince();
     // Get instance field reference: public readonly System.Int32 ID
-    int& dyn_ID();
+    [[deprecated]] int& dyn_ID();
     // Get instance field reference: private readonly System.String <ME>k__BackingField
-    ::StringW& dyn_$ME$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$ME$k__BackingField();
     // public System.Net.ServicePoint get_ServicePoint()
-    // Offset: 0x947AF0
+    // Offset: 0xD9BC80
     ::System::Net::ServicePoint* get_ServicePoint();
     // public System.Int32 get_MaxIdleTime()
-    // Offset: 0x947AF8
+    // Offset: 0xD9BC88
     int get_MaxIdleTime();
     // public System.Int32 get_ConnectionLimit()
-    // Offset: 0x947B00
+    // Offset: 0xD9BC90
     int get_ConnectionLimit();
     // public System.Void .ctor(System.Net.ServicePoint servicePoint, System.Int32 connectionLimit, System.Int32 maxIdleTime)
-    // Offset: 0x945D54
+    // Offset: 0xD9A188
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ServicePointScheduler* New_ctor(::System::Net::ServicePoint* servicePoint, int connectionLimit, int maxIdleTime) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::ServicePointScheduler::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ServicePointScheduler*, creationType>(servicePoint, connectionLimit, maxIdleTime)));
     }
     // public System.Void Run()
-    // Offset: 0x947B08
+    // Offset: 0xD9BC98
     void Run();
     // private System.Void StartScheduler()
-    // Offset: 0x947C04
+    // Offset: 0xD9BD94
     void StartScheduler();
     // private System.Void Cleanup()
-    // Offset: 0x947CC4
+    // Offset: 0xD9BE54
     void Cleanup();
     // private System.Void RunSchedulerIteration()
-    // Offset: 0x947E9C
+    // Offset: 0xD9C02C
     void RunSchedulerIteration();
     // private System.Boolean OperationCompleted(System.Net.ServicePointScheduler/System.Net.ConnectionGroup group, System.Net.WebOperation operation, System.Threading.Tasks.Task`1<System.ValueTuple`2<System.Boolean,System.Net.WebOperation>> task)
-    // Offset: 0x948164
+    // Offset: 0xD9C2F4
     bool OperationCompleted(::System::Net::ServicePointScheduler::ConnectionGroup* group, ::System::Net::WebOperation* operation, ::System::Threading::Tasks::Task_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>* task);
     // private System.Void CloseIdleConnection(System.Net.ServicePointScheduler/System.Net.ConnectionGroup group, System.Net.WebConnection connection)
-    // Offset: 0x948494
+    // Offset: 0xD9C624
     void CloseIdleConnection(::System::Net::ServicePointScheduler::ConnectionGroup* group, ::System::Net::WebConnection* connection);
     // private System.Boolean SchedulerIteration(System.Net.ServicePointScheduler/System.Net.ConnectionGroup group)
-    // Offset: 0x94806C
+    // Offset: 0xD9C1FC
     bool SchedulerIteration(::System::Net::ServicePointScheduler::ConnectionGroup* group);
     // private System.Void RemoveOperation(System.Net.WebOperation operation)
-    // Offset: 0x9484D4
+    // Offset: 0xD9C664
     void RemoveOperation(::System::Net::WebOperation* operation);
     // private System.Void RemoveIdleConnection(System.Net.WebConnection connection)
-    // Offset: 0x9483C4
+    // Offset: 0xD9C554
     void RemoveIdleConnection(::System::Net::WebConnection* connection);
     // public System.Void SendRequest(System.Net.WebOperation operation, System.String groupName)
-    // Offset: 0x946AD4
+    // Offset: 0xD9ADB4
     void SendRequest(::System::Net::WebOperation* operation, ::StringW groupName);
     // private System.Net.ServicePointScheduler/System.Net.ConnectionGroup GetConnectionGroup(System.String name)
-    // Offset: 0x9485A4
+    // Offset: 0xD9C734
     ::System::Net::ServicePointScheduler::ConnectionGroup* GetConnectionGroup(::StringW name);
     // private System.Void OnConnectionCreated(System.Net.WebConnection connection)
-    // Offset: 0x948798
+    // Offset: 0xD9C928
     void OnConnectionCreated(::System::Net::WebConnection* connection);
     // private System.Void OnConnectionClosed(System.Net.WebConnection connection)
-    // Offset: 0x9487A4
+    // Offset: 0xD9C934
     void OnConnectionClosed(::System::Net::WebConnection* connection);
   }; // System.Net.ServicePointScheduler
   #pragma pack(pop)

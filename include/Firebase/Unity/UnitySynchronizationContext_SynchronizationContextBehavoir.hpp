@@ -54,15 +54,7 @@ namespace Firebase::Unity {
     public:
     // Nested type: ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0
     class $Start$c__Iterator0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.Queue`1<System.Tuple`2<System.Threading.SendOrPostCallback,System.Object>> callbackQueue
     // Size: 0x8
     // Offset: 0x18
@@ -73,15 +65,15 @@ namespace Firebase::Unity {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.Queue`1<System.Tuple`2<System.Threading.SendOrPostCallback,System.Object>> callbackQueue
-    ::System::Collections::Generic::Queue_1<::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*>*& dyn_callbackQueue();
+    [[deprecated]] ::System::Collections::Generic::Queue_1<::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*>*& dyn_callbackQueue();
     // public System.Collections.Generic.Queue`1<System.Tuple`2<System.Threading.SendOrPostCallback,System.Object>> get_CallbackQueue()
-    // Offset: 0x12CBB04
+    // Offset: 0x18CAE94
     ::System::Collections::Generic::Queue_1<::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*>* get_CallbackQueue();
     // private System.Collections.IEnumerator Start()
-    // Offset: 0x12CC5A4
+    // Offset: 0x18CB934
     ::System::Collections::IEnumerator* Start();
     // public System.Void .ctor()
-    // Offset: 0x12CC59C
+    // Offset: 0x18CB92C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

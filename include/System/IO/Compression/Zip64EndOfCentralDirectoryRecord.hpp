@@ -98,28 +98,28 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt64 SizeOfThisRecord
-    uint64_t& dyn_SizeOfThisRecord();
+    [[deprecated]] uint64_t& dyn_SizeOfThisRecord();
     // Get instance field reference: public System.UInt16 VersionMadeBy
-    uint16_t& dyn_VersionMadeBy();
+    [[deprecated]] uint16_t& dyn_VersionMadeBy();
     // Get instance field reference: public System.UInt16 VersionNeededToExtract
-    uint16_t& dyn_VersionNeededToExtract();
+    [[deprecated]] uint16_t& dyn_VersionNeededToExtract();
     // Get instance field reference: public System.UInt32 NumberOfThisDisk
-    uint& dyn_NumberOfThisDisk();
+    [[deprecated]] uint& dyn_NumberOfThisDisk();
     // Get instance field reference: public System.UInt32 NumberOfDiskWithStartOfCD
-    uint& dyn_NumberOfDiskWithStartOfCD();
+    [[deprecated]] uint& dyn_NumberOfDiskWithStartOfCD();
     // Get instance field reference: public System.UInt64 NumberOfEntriesOnThisDisk
-    uint64_t& dyn_NumberOfEntriesOnThisDisk();
+    [[deprecated]] uint64_t& dyn_NumberOfEntriesOnThisDisk();
     // Get instance field reference: public System.UInt64 NumberOfEntriesTotal
-    uint64_t& dyn_NumberOfEntriesTotal();
+    [[deprecated]] uint64_t& dyn_NumberOfEntriesTotal();
     // Get instance field reference: public System.UInt64 SizeOfCentralDirectory
-    uint64_t& dyn_SizeOfCentralDirectory();
+    [[deprecated]] uint64_t& dyn_SizeOfCentralDirectory();
     // Get instance field reference: public System.UInt64 OffsetOfCentralDirectory
-    uint64_t& dyn_OffsetOfCentralDirectory();
+    [[deprecated]] uint64_t& dyn_OffsetOfCentralDirectory();
     // static public System.Boolean TryReadBlock(System.IO.BinaryReader reader, out System.IO.Compression.Zip64EndOfCentralDirectoryRecord zip64EOCDRecord)
-    // Offset: 0x11223CC
+    // Offset: 0x1699C38
     static bool TryReadBlock(::System::IO::BinaryReader* reader, ByRef<::System::IO::Compression::Zip64EndOfCentralDirectoryRecord> zip64EOCDRecord);
     // static public System.Void WriteBlock(System.IO.Stream stream, System.Int64 numberOfEntries, System.Int64 startOfCentralDirectory, System.Int64 sizeOfCentralDirectory)
-    // Offset: 0x1122508
+    // Offset: 0x1699D74
     static void WriteBlock(::System::IO::Stream* stream, int64_t numberOfEntries, int64_t startOfCentralDirectory, int64_t sizeOfCentralDirectory);
   }; // System.IO.Compression.Zip64EndOfCentralDirectoryRecord
   #pragma pack(pop)

@@ -51,7 +51,7 @@ namespace VROSC {
     // Set static field: static public VROSC.LoopPlaybackConfig/VROSC.Sync Global
     static void _set_Global(::VROSC::LoopPlaybackConfig::Sync value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.LoopPlaybackConfig/VROSC.Sync
   #pragma pack(pop)
   static check_size<sizeof(LoopPlaybackConfig::Sync), 0 + sizeof(int)> __VROSC_LoopPlaybackConfig_SyncSizeCheck;

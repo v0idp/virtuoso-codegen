@@ -29,13 +29,13 @@ namespace VROSC {
   class DebugAppController : public ::UnityEngine::MonoBehaviour {
     public:
     // protected System.Void Awake()
-    // Offset: 0x130A344
+    // Offset: 0x8E3518
     void Awake();
     // protected System.Void Start()
-    // Offset: 0x130A34C
+    // Offset: 0x8E351C
     void Start();
     // public System.Void .ctor()
-    // Offset: 0x130A3A4
+    // Offset: 0x8E3574
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

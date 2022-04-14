@@ -28,15 +28,7 @@ namespace System::Threading::Tasks {
   // [TokenAttribute] Offset: FFFFFFFF
   class StackGuard : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 m_inliningDepth
     // Size: 0x4
     // Offset: 0x10
@@ -55,18 +47,18 @@ namespace System::Threading::Tasks {
     // Set static field: static private System.Int32 MAX_UNCHECKED_INLINING_DEPTH
     static void _set_MAX_UNCHECKED_INLINING_DEPTH(int value);
     // Get instance field reference: private System.Int32 m_inliningDepth
-    int& dyn_m_inliningDepth();
+    [[deprecated]] int& dyn_m_inliningDepth();
     // System.Boolean TryBeginInliningScope()
-    // Offset: 0xFF2104
+    // Offset: 0x12548CC
     bool TryBeginInliningScope();
     // System.Void EndInliningScope()
-    // Offset: 0xFF2124
+    // Offset: 0x12548EC
     void EndInliningScope();
     // private System.Boolean CheckForSufficientStack()
-    // Offset: 0xFF211C
+    // Offset: 0x12548E4
     bool CheckForSufficientStack();
     // public System.Void .ctor()
-    // Offset: 0xFF2138
+    // Offset: 0x1254900
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

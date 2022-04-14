@@ -36,15 +36,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class NetSyncOptions : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IntPtr Handle
     // Size: 0x8
     // Offset: 0x10
@@ -57,21 +49,21 @@ namespace Oculus::Platform {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr Handle
-    ::System::IntPtr& dyn_Handle();
+    [[deprecated]] ::System::IntPtr& dyn_Handle();
     // public System.Void SetVoipGroup(System.String value)
-    // Offset: 0x97F9BC
+    // Offset: 0xB51D58
     void SetVoipGroup(::StringW value);
     // public System.Void SetVoipStreamDefault(Oculus.Platform.NetSyncVoipStreamMode value)
-    // Offset: 0x97FA34
+    // Offset: 0xB51DD0
     void SetVoipStreamDefault(::Oculus::Platform::NetSyncVoipStreamMode value);
     // public System.Void SetZoneId(System.String value)
-    // Offset: 0x97FAAC
+    // Offset: 0xB51E48
     void SetZoneId(::StringW value);
     // static public System.IntPtr op_Explicit(Oculus.Platform.NetSyncOptions options)
-    // Offset: 0x97FB24
+    // Offset: 0xB51EC0
     // ABORTED: conflicts with another method.  explicit operator ::System::IntPtr();
     // public System.Void .ctor()
-    // Offset: 0x97F948
+    // Offset: 0xB51CE4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -80,7 +72,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<NetSyncOptions*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x97FB70
+    // Offset: 0xB51F0C
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

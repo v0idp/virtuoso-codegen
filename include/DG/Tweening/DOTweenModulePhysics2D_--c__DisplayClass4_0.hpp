@@ -40,15 +40,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOTweenModulePhysics2D::$$c__DisplayClass4_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Rigidbody2D target
     // Size: 0x8
     // Offset: 0x10
@@ -97,39 +89,39 @@ namespace DG::Tweening {
     static_assert(sizeof(::DG::Tweening::Tween*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Rigidbody2D target
-    ::UnityEngine::Rigidbody2D*& dyn_target();
+    [[deprecated]] ::UnityEngine::Rigidbody2D*& dyn_target();
     // Get instance field reference: public System.Single startPosY
-    float& dyn_startPosY();
+    [[deprecated]] float& dyn_startPosY();
     // Get instance field reference: public System.Boolean offsetYSet
-    bool& dyn_offsetYSet();
+    [[deprecated]] bool& dyn_offsetYSet();
     // Get instance field reference: public System.Single offsetY
-    float& dyn_offsetY();
+    [[deprecated]] float& dyn_offsetY();
     // Get instance field reference: public DG.Tweening.Sequence s
-    ::DG::Tweening::Sequence*& dyn_s();
+    [[deprecated]] ::DG::Tweening::Sequence*& dyn_s();
     // Get instance field reference: public UnityEngine.Vector2 endValue
-    ::UnityEngine::Vector2& dyn_endValue();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_endValue();
     // Get instance field reference: public DG.Tweening.Tween yTween
-    ::DG::Tweening::Tween*& dyn_yTween();
+    [[deprecated]] ::DG::Tweening::Tween*& dyn_yTween();
     // UnityEngine.Vector2 <DOJump>b__0()
-    // Offset: 0x1264A28
+    // Offset: 0x17E2F68
     ::UnityEngine::Vector2 $DOJump$b__0();
     // System.Void <DOJump>b__1(UnityEngine.Vector2 x)
-    // Offset: 0x1264A44
+    // Offset: 0x17E2F84
     void $DOJump$b__1(::UnityEngine::Vector2 x);
     // System.Void <DOJump>b__2()
-    // Offset: 0x1264A60
+    // Offset: 0x17E2FA0
     void $DOJump$b__2();
     // UnityEngine.Vector2 <DOJump>b__3()
-    // Offset: 0x1264A94
+    // Offset: 0x17E2FD4
     ::UnityEngine::Vector2 $DOJump$b__3();
     // System.Void <DOJump>b__4(UnityEngine.Vector2 x)
-    // Offset: 0x1264AB0
+    // Offset: 0x17E2FF0
     void $DOJump$b__4(::UnityEngine::Vector2 x);
     // System.Void <DOJump>b__5()
-    // Offset: 0x1264ACC
+    // Offset: 0x17E300C
     void $DOJump$b__5();
     // public System.Void .ctor()
-    // Offset: 0x1264A20
+    // Offset: 0x17DC6A4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

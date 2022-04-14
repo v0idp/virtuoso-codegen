@@ -47,7 +47,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.Int64 renderComponent
     static void _set_renderComponent(int64_t value);
     // static private System.Void .cctor()
-    // Offset: 0x1357B84
+    // Offset: 0x954480
     static void _cctor();
   }; // ovrAvatarBodyComponent_Offsets
   #pragma pack(pop)

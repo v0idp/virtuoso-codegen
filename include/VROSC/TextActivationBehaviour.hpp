@@ -51,22 +51,14 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TextActivationBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _textMesh
     // Size: 0x8
     // Offset: 0x10
     ::TMPro::TextMeshPro* textMesh;
     // Field size check
     static_assert(sizeof(::TMPro::TextMeshPro*) == 0x8);
-    // [RangeAttribute] Offset: 0x6738A0
+    // [RangeAttribute] Offset: 0x789C14
     // public System.Single Activation
     // Size: 0x4
     // Offset: 0x18
@@ -109,24 +101,24 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _textMesh
-    ::TMPro::TextMeshPro*& dyn__textMesh();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textMesh();
     // Get instance field reference: public System.Single Activation
-    float& dyn_Activation();
+    [[deprecated]] float& dyn_Activation();
     // Get instance field reference: private UnityEngine.Vector3[] _vertices
-    ::ArrayW<::UnityEngine::Vector3>& dyn__vertices();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__vertices();
     // Get instance field reference: private UnityEngine.Vector3[] _endVertices
-    ::ArrayW<::UnityEngine::Vector3>& dyn__endVertices();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__endVertices();
     // Get instance field reference: private UnityEngine.Vector3[] _posOffset
-    ::ArrayW<::UnityEngine::Vector3>& dyn__posOffset();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__posOffset();
     // Get instance field reference: public System.Single Deviation
-    float& dyn_Deviation();
+    [[deprecated]] float& dyn_Deviation();
     // Get instance field reference: public UnityEngine.AnimationCurve DeviationCurve
-    ::UnityEngine::AnimationCurve*& dyn_DeviationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_DeviationCurve();
     // public System.Void Setup(TMPro.TextMeshPro textMesh, System.String text)
-    // Offset: 0x13FC7CC
+    // Offset: 0xA247CC
     void Setup(::TMPro::TextMeshPro* textMesh, ::StringW text);
     // public System.Void .ctor()
-    // Offset: 0x13FCC24
+    // Offset: 0xA24C24
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -136,7 +128,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TextActivationBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x13FC944
+    // Offset: 0xA24944
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

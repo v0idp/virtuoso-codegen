@@ -37,15 +37,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class HandMover : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _leftHand
     // Size: 0x8
     // Offset: 0x18
@@ -80,23 +72,23 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _leftHand
-    ::UnityEngine::Transform*& dyn__leftHand();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__leftHand();
     // Get instance field reference: private UnityEngine.Transform _rightHand
-    ::UnityEngine::Transform*& dyn__rightHand();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__rightHand();
     // Get instance field reference: private VROSC.HandType _useHand
-    ::VROSC::HandType& dyn__useHand();
+    [[deprecated]] ::VROSC::HandType& dyn__useHand();
     // Get instance field reference: private System.Single _depthScrollSpeed
-    float& dyn__depthScrollSpeed();
+    [[deprecated]] float& dyn__depthScrollSpeed();
     // Get instance field reference: private System.Single _depthOffset
-    float& dyn__depthOffset();
+    [[deprecated]] float& dyn__depthOffset();
     // public VROSC.HandType get_UseHand()
-    // Offset: 0x897B48
+    // Offset: 0x19AAC60
     ::VROSC::HandType get_UseHand();
     // protected System.Void Update()
-    // Offset: 0x897B50
+    // Offset: 0x19AAC68
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x897E10
+    // Offset: 0x19AAF28
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

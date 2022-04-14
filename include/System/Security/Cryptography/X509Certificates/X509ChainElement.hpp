@@ -34,15 +34,7 @@ namespace System::Security::Cryptography::X509Certificates {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509ChainElement : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Security.Cryptography.X509Certificates.X509Certificate2 certificate
     // Size: 0x8
     // Offset: 0x10
@@ -57,14 +49,14 @@ namespace System::Security::Cryptography::X509Certificates {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate2 certificate
-    ::System::Security::Cryptography::X509Certificates::X509Certificate2*& dyn_certificate();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate2*& dyn_certificate();
     // Get instance field reference: private System.String info
-    ::StringW& dyn_info();
+    [[deprecated]] ::StringW& dyn_info();
     // public System.Security.Cryptography.X509Certificates.X509Certificate2 get_Certificate()
-    // Offset: 0xAC76D0
+    // Offset: 0xC52CEC
     ::System::Security::Cryptography::X509Certificates::X509Certificate2* get_Certificate();
     // System.Void .ctor(System.Security.Cryptography.X509Certificates.X509Certificate2 certificate)
-    // Offset: 0xAC7660
+    // Offset: 0xC52C7C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509ChainElement* New_ctor(::System::Security::Cryptography::X509Certificates::X509Certificate2* certificate) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509ChainElement::.ctor");

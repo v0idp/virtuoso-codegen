@@ -101,26 +101,26 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Type declaring_type
-    ::System::Type*& dyn_declaring_type();
+    [[deprecated]] ::System::Type*& dyn_declaring_type();
     // Get instance field reference: public System.Type reflected_type
-    ::System::Type*& dyn_reflected_type();
+    [[deprecated]] ::System::Type*& dyn_reflected_type();
     // Get instance field reference: public System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: public System.Reflection.MethodInfo add_method
-    ::System::Reflection::MethodInfo*& dyn_add_method();
+    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_add_method();
     // Get instance field reference: public System.Reflection.MethodInfo remove_method
-    ::System::Reflection::MethodInfo*& dyn_remove_method();
+    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_remove_method();
     // Get instance field reference: public System.Reflection.MethodInfo raise_method
-    ::System::Reflection::MethodInfo*& dyn_raise_method();
+    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_raise_method();
     // Get instance field reference: public System.Reflection.EventAttributes attrs
-    ::System::Reflection::EventAttributes& dyn_attrs();
+    [[deprecated]] ::System::Reflection::EventAttributes& dyn_attrs();
     // Get instance field reference: public System.Reflection.MethodInfo[] other_methods
-    ::ArrayW<::System::Reflection::MethodInfo*>& dyn_other_methods();
+    [[deprecated]] ::ArrayW<::System::Reflection::MethodInfo*>& dyn_other_methods();
     // static private System.Void get_event_info(System.Reflection.MonoEvent ev, out System.Reflection.MonoEventInfo info)
-    // Offset: 0xFC8384
+    // Offset: 0x100B0B4
     static void get_event_info(::System::Reflection::MonoEvent* ev, ByRef<::System::Reflection::MonoEventInfo> info);
     // static System.Reflection.MonoEventInfo GetEventInfo(System.Reflection.MonoEvent ev)
-    // Offset: 0xFC8388
+    // Offset: 0x100ACD8
     static ::System::Reflection::MonoEventInfo GetEventInfo(::System::Reflection::MonoEvent* ev);
   }; // System.Reflection.MonoEventInfo
   #pragma pack(pop)

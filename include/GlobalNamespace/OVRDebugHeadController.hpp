@@ -35,15 +35,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRDebugHeadController : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean AllowPitchLook
     // Size: 0x1
     // Offset: 0x18
@@ -106,34 +98,34 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean AllowPitchLook
-    bool& dyn_AllowPitchLook();
+    [[deprecated]] bool& dyn_AllowPitchLook();
     // Get instance field reference: public System.Boolean AllowYawLook
-    bool& dyn_AllowYawLook();
+    [[deprecated]] bool& dyn_AllowYawLook();
     // Get instance field reference: public System.Boolean InvertPitch
-    bool& dyn_InvertPitch();
+    [[deprecated]] bool& dyn_InvertPitch();
     // Get instance field reference: public System.Single GamePad_PitchDegreesPerSec
-    float& dyn_GamePad_PitchDegreesPerSec();
+    [[deprecated]] float& dyn_GamePad_PitchDegreesPerSec();
     // Get instance field reference: public System.Single GamePad_YawDegreesPerSec
-    float& dyn_GamePad_YawDegreesPerSec();
+    [[deprecated]] float& dyn_GamePad_YawDegreesPerSec();
     // Get instance field reference: public System.Boolean AllowMovement
-    bool& dyn_AllowMovement();
+    [[deprecated]] bool& dyn_AllowMovement();
     // Get instance field reference: public System.Single ForwardSpeed
-    float& dyn_ForwardSpeed();
+    [[deprecated]] float& dyn_ForwardSpeed();
     // Get instance field reference: public System.Single StrafeSpeed
-    float& dyn_StrafeSpeed();
+    [[deprecated]] float& dyn_StrafeSpeed();
     // Get instance field reference: protected OVRCameraRig CameraRig
-    ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
+    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
     // private System.Void Awake()
-    // Offset: 0xD219E8
+    // Offset: 0xFAF33C
     void Awake();
     // private System.Void Start()
-    // Offset: 0xD21B00
+    // Offset: 0xFAF454
     void Start();
     // private System.Void Update()
-    // Offset: 0xD21B04
+    // Offset: 0xFAF458
     void Update();
     // public System.Void .ctor()
-    // Offset: 0xD21FD4
+    // Offset: 0xFAF928
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

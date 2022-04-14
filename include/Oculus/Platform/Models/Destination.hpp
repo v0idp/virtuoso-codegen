@@ -29,15 +29,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class Destination : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String ApiName
     // Size: 0x8
     // Offset: 0x10
@@ -58,13 +50,13 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String ApiName
-    ::StringW& dyn_ApiName();
+    [[deprecated]] ::StringW& dyn_ApiName();
     // Get instance field reference: public readonly System.String DeeplinkMessage
-    ::StringW& dyn_DeeplinkMessage();
+    [[deprecated]] ::StringW& dyn_DeeplinkMessage();
     // Get instance field reference: public readonly System.String DisplayName
-    ::StringW& dyn_DisplayName();
+    [[deprecated]] ::StringW& dyn_DisplayName();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7B27E4
+    // Offset: 0x8F8BC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Destination* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::Destination::.ctor");

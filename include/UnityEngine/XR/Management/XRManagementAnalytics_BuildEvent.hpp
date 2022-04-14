@@ -56,13 +56,13 @@ namespace UnityEngine::XR::Management {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String buildGuid
-    ::StringW& dyn_buildGuid();
+    [[deprecated]] ::StringW& dyn_buildGuid();
     // Get instance field reference: public System.String buildTarget
-    ::StringW& dyn_buildTarget();
+    [[deprecated]] ::StringW& dyn_buildTarget();
     // Get instance field reference: public System.String buildTargetGroup
-    ::StringW& dyn_buildTargetGroup();
+    [[deprecated]] ::StringW& dyn_buildTargetGroup();
     // Get instance field reference: public System.String[] assigned_loaders
-    ::ArrayW<::StringW>& dyn_assigned_loaders();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_assigned_loaders();
   }; // UnityEngine.XR.Management.XRManagementAnalytics/UnityEngine.XR.Management.BuildEvent
   #pragma pack(pop)
   static check_size<sizeof(XRManagementAnalytics::BuildEvent), 24 + sizeof(::ArrayW<::StringW>)> __UnityEngine_XR_Management_XRManagementAnalytics_BuildEventSizeCheck;

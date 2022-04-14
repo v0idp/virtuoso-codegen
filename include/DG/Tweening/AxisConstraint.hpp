@@ -73,7 +73,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.AxisConstraint W
     static void _set_W(::DG::Tweening::AxisConstraint value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.AxisConstraint
   #pragma pack(pop)
   static check_size<sizeof(AxisConstraint), 0 + sizeof(int)> __DG_Tweening_AxisConstraintSizeCheck;

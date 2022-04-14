@@ -29,10 +29,10 @@ namespace Oculus::Platform::Samples::VrHoops {
   class AIPlayer : public ::Oculus::Platform::Samples::VrHoops::Player {
     public:
     // private System.Void FixedUpdate()
-    // Offset: 0x7AEAC4
+    // Offset: 0x8F4EA4
     void FixedUpdate();
     // public System.Void .ctor()
-    // Offset: 0x7AEB34
+    // Offset: 0x8F4F14
     // Implemented from: Oculus.Platform.Samples.VrHoops.Player
     // Base method: System.Void Player::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

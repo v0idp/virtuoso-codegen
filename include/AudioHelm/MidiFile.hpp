@@ -45,15 +45,7 @@ namespace AudioHelm {
     public:
     // Nested type: ::AudioHelm::MidiFile::MidiData
     class MidiData;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Object midiObject
     // Size: 0x8
     // Offset: 0x18
@@ -70,17 +62,17 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Object midiObject
-    ::UnityEngine::Object*& dyn_midiObject();
+    [[deprecated]] ::UnityEngine::Object*& dyn_midiObject();
     // Get instance field reference: public AudioHelm.MidiFile/AudioHelm.MidiData midiData
-    ::AudioHelm::MidiFile::MidiData*& dyn_midiData();
+    [[deprecated]] ::AudioHelm::MidiFile::MidiData*& dyn_midiData();
     // public System.Void LoadMidiData(System.String filePath)
-    // Offset: 0x8B3ADC
+    // Offset: 0xAC766C
     void LoadMidiData(::StringW filePath);
     // static public AudioHelm.MidiFile/AudioHelm.MidiData LoadMidiData(System.IO.Stream midiStream)
-    // Offset: 0x8B3B50
+    // Offset: 0xAC76E0
     static ::AudioHelm::MidiFile::MidiData* LoadMidiData(::System::IO::Stream* midiStream);
     // public System.Void .ctor()
-    // Offset: 0x8B3BA8
+    // Offset: 0xAC7738
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

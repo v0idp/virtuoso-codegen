@@ -49,15 +49,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PaginatedListPageButton : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIToggle _button
     // Size: 0x8
     // Offset: 0x18
@@ -94,35 +86,35 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIToggle _button
-    ::VROSC::UIToggle*& dyn__button();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__button();
     // Get instance field reference: private TMPro.TextMeshPro _text
-    ::TMPro::TextMeshPro*& dyn__text();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__text();
     // Get instance field reference: private System.Int32 _targetPage
-    int& dyn__targetPage();
+    [[deprecated]] int& dyn__targetPage();
     // Get instance field reference: protected System.Boolean _selected
-    bool& dyn__selected();
+    [[deprecated]] bool& dyn__selected();
     // Get instance field reference: public System.Action`1<System.Int32> OnPageButtonPressed
-    ::System::Action_1<int>*& dyn_OnPageButtonPressed();
+    [[deprecated]] ::System::Action_1<int>*& dyn_OnPageButtonPressed();
     // private System.Void Awake()
-    // Offset: 0x8F7FEC
+    // Offset: 0xADC7C4
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x8F80B0
+    // Offset: 0xADC888
     void OnDestroy();
     // public System.Void SetActive(System.Boolean active)
-    // Offset: 0x8F7BF4
+    // Offset: 0xADC3CC
     void SetActive(bool active);
     // public System.Void SetIsSelected(System.Boolean selected)
-    // Offset: 0x8F7C5C
+    // Offset: 0xADC434
     void SetIsSelected(bool selected);
     // public System.Void SetPage(System.Int32 page, System.String text)
-    // Offset: 0x8F7C28
+    // Offset: 0xADC400
     void SetPage(int page, ::StringW text);
     // protected System.Void SetSelected(VROSC.InputDevice inputDevice, System.Boolean shouldBeSelected)
-    // Offset: 0x8F8174
+    // Offset: 0xADC94C
     void SetSelected(::VROSC::InputDevice* inputDevice, bool shouldBeSelected);
     // public System.Void .ctor()
-    // Offset: 0x8F81F8
+    // Offset: 0xADC9D0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

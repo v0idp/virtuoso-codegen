@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class StartState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.FullScreenFxController _fullScreenFxController
     // Size: 0x8
     // Offset: 0x10
@@ -62,25 +54,25 @@ namespace VROSC {
       return fullScreenFxController;
     }
     // Get instance field reference: private VROSC.FullScreenFxController _fullScreenFxController
-    ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
+    [[deprecated]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
     // public System.Void .ctor(VROSC.FullScreenFxController fullScreenFxController)
-    // Offset: 0x13BCC08
+    // Offset: 0x193005C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StartState* New_ctor(::VROSC::FullScreenFxController* fullScreenFxController) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StartState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<StartState*, creationType>(fullScreenFxController)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13BCC34
+    // Offset: 0x1930088
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13BCC7C
+    // Offset: 0x19300D0
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13BCC80
+    // Offset: 0x19300D4
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13BCC84
+    // Offset: 0x19300D8
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.StartState
   #pragma pack(pop)

@@ -43,28 +43,28 @@ namespace UnityEngine::SceneManagement {
     static ::UnityEngine::SceneManagement::SceneManagerAPI* _get_s_DefaultAPI();
     // Set static field: static private UnityEngine.SceneManagement.SceneManagerAPI s_DefaultAPI
     static void _set_s_DefaultAPI(::UnityEngine::SceneManagement::SceneManagerAPI* value);
-    // [DebuggerBrowsableAttribute] Offset: 0x56BCD4
+    // [DebuggerBrowsableAttribute] Offset: 0x665EB8
     // Get static field: static private UnityEngine.SceneManagement.SceneManagerAPI <overrideAPI>k__BackingField
     static ::UnityEngine::SceneManagement::SceneManagerAPI* _get_$overrideAPI$k__BackingField();
     // Set static field: static private UnityEngine.SceneManagement.SceneManagerAPI <overrideAPI>k__BackingField
     static void _set_$overrideAPI$k__BackingField(::UnityEngine::SceneManagement::SceneManagerAPI* value);
     // static UnityEngine.SceneManagement.SceneManagerAPI get_ActiveAPI()
-    // Offset: 0x9DCD14
+    // Offset: 0xBD1ABC
     static ::UnityEngine::SceneManagement::SceneManagerAPI* get_ActiveAPI();
     // static public UnityEngine.SceneManagement.SceneManagerAPI get_overrideAPI()
-    // Offset: 0x9DD590
+    // Offset: 0xBD2338
     static ::UnityEngine::SceneManagement::SceneManagerAPI* get_overrideAPI();
     // static private System.Void .cctor()
-    // Offset: 0x9DD6DC
+    // Offset: 0xBD2484
     static void _cctor();
     // protected internal UnityEngine.AsyncOperation LoadSceneAsyncByNameOrIndex(System.String sceneName, System.Int32 sceneBuildIndex, UnityEngine.SceneManagement.LoadSceneParameters parameters, System.Boolean mustCompleteNextFrame)
-    // Offset: 0x9DD5FC
+    // Offset: 0xBD23A4
     ::UnityEngine::AsyncOperation* LoadSceneAsyncByNameOrIndex(::StringW sceneName, int sceneBuildIndex, ::UnityEngine::SceneManagement::LoadSceneParameters parameters, bool mustCompleteNextFrame);
     // protected internal UnityEngine.AsyncOperation LoadFirstScene(System.Boolean mustLoadAsync)
-    // Offset: 0x9DD6D4
+    // Offset: 0xBD247C
     ::UnityEngine::AsyncOperation* LoadFirstScene(bool mustLoadAsync);
     // protected internal System.Void .ctor()
-    // Offset: 0x9DD5F4
+    // Offset: 0xBD239C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

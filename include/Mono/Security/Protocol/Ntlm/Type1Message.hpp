@@ -30,15 +30,7 @@ namespace Mono::Security::Protocol::Ntlm {
   // [TokenAttribute] Offset: FFFFFFFF
   class Type1Message : public ::Mono::Security::Protocol::Ntlm::MessageBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _host
     // Size: 0x8
     // Offset: 0x18
@@ -53,17 +45,17 @@ namespace Mono::Security::Protocol::Ntlm {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _host
-    ::StringW& dyn__host();
+    [[deprecated]] ::StringW& dyn__host();
     // Get instance field reference: private System.String _domain
-    ::StringW& dyn__domain();
+    [[deprecated]] ::StringW& dyn__domain();
     // public System.Void set_Domain(System.String value)
-    // Offset: 0x10F3928
+    // Offset: 0x16457E4
     void set_Domain(::StringW value);
     // public System.Void set_Host(System.String value)
-    // Offset: 0x10F39AC
+    // Offset: 0x1645868
     void set_Host(::StringW value);
     // public System.Void .ctor()
-    // Offset: 0x10F3898
+    // Offset: 0x1645754
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -72,12 +64,12 @@ namespace Mono::Security::Protocol::Ntlm {
       return THROW_UNLESS((::il2cpp_utils::New<Type1Message*, creationType>()));
     }
     // protected override System.Void Decode(System.Byte[] message)
-    // Offset: 0x10F3A30
+    // Offset: 0x16458EC
     // Implemented from: Mono.Security.Protocol.Ntlm.MessageBase
     // Base method: System.Void MessageBase::Decode(System.Byte[] message)
     void Decode(::ArrayW<uint8_t> message);
     // public override System.Byte[] GetBytes()
-    // Offset: 0x10F3B24
+    // Offset: 0x16459E0
     // Implemented from: Mono.Security.Protocol.Ntlm.MessageBase
     // Base method: System.Byte[] MessageBase::GetBytes()
     ::ArrayW<uint8_t> GetBytes();

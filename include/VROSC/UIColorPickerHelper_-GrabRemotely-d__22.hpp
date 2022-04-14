@@ -37,15 +37,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UIColorPickerHelper::$GrabRemotely$d__22 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -114,46 +106,46 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.UIColorPicker target
-    ::VROSC::UIColorPicker*& dyn_target();
+    [[deprecated]] ::VROSC::UIColorPicker*& dyn_target();
     // Get instance field reference: public VROSC.InputDevice device
-    ::VROSC::InputDevice*& dyn_device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_device();
     // Get instance field reference: public VROSC.UIColorPickerHelper <>4__this
-    ::VROSC::UIColorPickerHelper*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UIColorPickerHelper*& dyn_$$4__this();
     // Get instance field reference: private System.Single <startHue>5__2
-    float& dyn_$startHue$5__2();
+    [[deprecated]] float& dyn_$startHue$5__2();
     // Get instance field reference: private System.Single <startValue>5__3
-    float& dyn_$startValue$5__3();
+    [[deprecated]] float& dyn_$startValue$5__3();
     // Get instance field reference: private System.Single <startSaturation>5__4
-    float& dyn_$startSaturation$5__4();
+    [[deprecated]] float& dyn_$startSaturation$5__4();
     // Get instance field reference: private UnityEngine.Vector3 <size>5__5
-    ::UnityEngine::Vector3& dyn_$size$5__5();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$size$5__5();
     // Get instance field reference: private UnityEngine.Vector3 <startpos>5__6
-    ::UnityEngine::Vector3& dyn_$startpos$5__6();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$startpos$5__6();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x140E404
+    // Offset: 0xE804D8
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x140E44C
+    // Offset: 0xE80520
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x140DFF4
+    // Offset: 0xE800C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIColorPickerHelper::$GrabRemotely$d__22* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIColorPickerHelper::$GrabRemotely$d__22::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UIColorPickerHelper::$GrabRemotely$d__22*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x140E020
+    // Offset: 0xE800F4
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x140E024
+    // Offset: 0xE800F8
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x140E40C
+    // Offset: 0xE804E0
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.UIColorPickerHelper/VROSC.<GrabRemotely>d__22
   #pragma pack(pop)

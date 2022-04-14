@@ -42,22 +42,14 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IconSwitchOnSignal : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.MeshFilter _meshFilter
     // Size: 0x8
     // Offset: 0x40
     ::UnityEngine::MeshFilter* meshFilter;
     // Field size check
     static_assert(sizeof(::UnityEngine::MeshFilter*) == 0x8);
-    // [HeaderAttribute] Offset: 0x672564
+    // [HeaderAttribute] Offset: 0x788818
     // private UnityEngine.Mesh _normalMesh
     // Size: 0x8
     // Offset: 0x48
@@ -78,18 +70,18 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.MeshFilter _meshFilter
-    ::UnityEngine::MeshFilter*& dyn__meshFilter();
+    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
     // Get instance field reference: private UnityEngine.Mesh _normalMesh
-    ::UnityEngine::Mesh*& dyn__normalMesh();
+    [[deprecated]] ::UnityEngine::Mesh*& dyn__normalMesh();
     // Get instance field reference: private UnityEngine.Mesh _activeMesh
-    ::UnityEngine::Mesh*& dyn__activeMesh();
+    [[deprecated]] ::UnityEngine::Mesh*& dyn__activeMesh();
     // Get instance field reference: private System.Boolean _isHovering
-    bool& dyn__isHovering();
+    [[deprecated]] bool& dyn__isHovering();
     // public System.Void SetActive(System.Boolean shouldBeActive)
-    // Offset: 0x8A0178
+    // Offset: 0x1942C50
     void SetActive(bool shouldBeActive);
     // public System.Void .ctor()
-    // Offset: 0x8A01D8
+    // Offset: 0x1942CB0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -104,12 +96,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<IconSwitchOnSignal*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x8A014C
+    // Offset: 0x1942C24
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x8A01AC
+    // Offset: 0x1942C84
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

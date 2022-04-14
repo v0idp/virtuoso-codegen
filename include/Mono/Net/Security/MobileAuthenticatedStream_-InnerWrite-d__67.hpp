@@ -74,22 +74,22 @@ namespace Mono::Net::Security {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: public Mono.Net.Security.MobileAuthenticatedStream <>4__this
-    ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$$4__this();
+    [[deprecated]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$$4__this();
     // Get instance field reference: public System.Boolean sync
-    bool& dyn_sync();
+    [[deprecated]] bool& dyn_sync();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8DE9F8
+    // Offset: 0x9F9774
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8DECA0
+    // Offset: 0x9F9A1C
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // Mono.Net.Security.MobileAuthenticatedStream/Mono.Net.Security.<InnerWrite>d__67
   // WARNING Not writing size check since size may be invalid!

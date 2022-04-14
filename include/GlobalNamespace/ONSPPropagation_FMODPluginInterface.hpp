@@ -40,15 +40,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class ONSPPropagation::FMODPluginInterface : public ::Il2CppObject/*, public ::GlobalNamespace::ONSPPropagation::PropagationInterface*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IntPtr context_
     // Size: 0x8
     // Offset: 0x10
@@ -71,105 +63,105 @@ namespace GlobalNamespace {
     // Set static field: static public System.String strOSPS
     static void _set_strOSPS(::StringW value);
     // Get instance field reference: private System.IntPtr context_
-    ::System::IntPtr& dyn_context_();
+    [[deprecated]] ::System::IntPtr& dyn_context_();
     // private System.IntPtr get_context()
-    // Offset: 0x11C9CA0
+    // Offset: 0x176EBA8
     ::System::IntPtr get_context();
     // static public System.Int32 ovrAudio_GetPluginContext(out System.IntPtr context, System.UInt32 clientType)
-    // Offset: 0x11BB710
+    // Offset: 0x1760618
     static int ovrAudio_GetPluginContext(ByRef<::System::IntPtr> context, uint clientType);
     // static private System.Int32 ovrAudio_SetPropagationQuality(System.IntPtr context, System.Single quality)
-    // Offset: 0x11C9D00
+    // Offset: 0x176EC08
     static int ovrAudio_SetPropagationQuality(::System::IntPtr context, float quality);
     // public System.Int32 SetPropagationQuality(System.Single quality)
-    // Offset: 0x11C9D90
+    // Offset: 0x176EC98
     int SetPropagationQuality(float quality);
     // static private System.Int32 ovrAudio_SetPropagationThreadAffinity(System.IntPtr context, System.UInt64 cpuMask)
-    // Offset: 0x11C9DB4
+    // Offset: 0x176ECBC
     static int ovrAudio_SetPropagationThreadAffinity(::System::IntPtr context, uint64_t cpuMask);
     // public System.Int32 SetPropagationThreadAffinity(System.UInt64 cpuMask)
-    // Offset: 0x11C9E44
+    // Offset: 0x176ED4C
     int SetPropagationThreadAffinity(uint64_t cpuMask);
     // static private System.Int32 ovrAudio_CreateAudioGeometry(System.IntPtr context, out System.IntPtr geometry)
-    // Offset: 0x11C9E68
+    // Offset: 0x176ED70
     static int ovrAudio_CreateAudioGeometry(::System::IntPtr context, ByRef<::System::IntPtr> geometry);
     // public System.Int32 CreateAudioGeometry(out System.IntPtr geometry)
-    // Offset: 0x11C9EF8
+    // Offset: 0x176EE00
     int CreateAudioGeometry(ByRef<::System::IntPtr> geometry);
     // static private System.Int32 ovrAudio_DestroyAudioGeometry(System.IntPtr geometry)
-    // Offset: 0x11C9F1C
+    // Offset: 0x176EE24
     static int ovrAudio_DestroyAudioGeometry(::System::IntPtr geometry);
     // public System.Int32 DestroyAudioGeometry(System.IntPtr geometry)
-    // Offset: 0x11C9F9C
+    // Offset: 0x176EEA4
     int DestroyAudioGeometry(::System::IntPtr geometry);
     // static private System.Int32 ovrAudio_AudioGeometryUploadMeshArrays(System.IntPtr geometry, System.Single[] vertices, System.UIntPtr verticesBytesOffset, System.UIntPtr vertexCount, System.UIntPtr vertexStride, ONSPPropagation/ovrAudioScalarType vertexType, System.Int32[] indices, System.UIntPtr indicesByteOffset, System.UIntPtr indexCount, ONSPPropagation/ovrAudioScalarType indexType, Oculus.Spatializer.Propagation.MeshGroup[] groups, System.UIntPtr groupCount)
-    // Offset: 0x11C9FA4
+    // Offset: 0x176EEAC
     static int ovrAudio_AudioGeometryUploadMeshArrays(::System::IntPtr geometry, ::ArrayW<float> vertices, ::System::UIntPtr verticesBytesOffset, ::System::UIntPtr vertexCount, ::System::UIntPtr vertexStride, ::GlobalNamespace::ONSPPropagation::ovrAudioScalarType vertexType, ::ArrayW<int> indices, ::System::UIntPtr indicesByteOffset, ::System::UIntPtr indexCount, ::GlobalNamespace::ONSPPropagation::ovrAudioScalarType indexType, ::ArrayW<::Oculus::Spatializer::Propagation::MeshGroup> groups, ::System::UIntPtr groupCount);
     // public System.Int32 AudioGeometryUploadMeshArrays(System.IntPtr geometry, System.Single[] vertices, System.Int32 vertexCount, System.Int32[] indices, System.Int32 indexCount, Oculus.Spatializer.Propagation.MeshGroup[] groups, System.Int32 groupCount)
-    // Offset: 0x11CA0C4
+    // Offset: 0x176EFCC
     int AudioGeometryUploadMeshArrays(::System::IntPtr geometry, ::ArrayW<float> vertices, int vertexCount, ::ArrayW<int> indices, int indexCount, ::ArrayW<::Oculus::Spatializer::Propagation::MeshGroup> groups, int groupCount);
     // static private System.Int32 ovrAudio_AudioGeometrySetTransform(System.IntPtr geometry, System.Single[] matrix4x4)
-    // Offset: 0x11CA1B8
+    // Offset: 0x176F0C0
     static int ovrAudio_AudioGeometrySetTransform(::System::IntPtr geometry, ::ArrayW<float> matrix4x4);
     // public System.Int32 AudioGeometrySetTransform(System.IntPtr geometry, System.Single[] matrix4x4)
-    // Offset: 0x11CA250
+    // Offset: 0x176F158
     int AudioGeometrySetTransform(::System::IntPtr geometry, ::ArrayW<float> matrix4x4);
     // static private System.Int32 ovrAudio_AudioGeometryGetTransform(System.IntPtr geometry, out System.Single[] matrix4x4)
-    // Offset: 0x11CA25C
+    // Offset: 0x176F164
     static int ovrAudio_AudioGeometryGetTransform(::System::IntPtr geometry, ByRef<::ArrayW<float>> matrix4x4);
     // public System.Int32 AudioGeometryGetTransform(System.IntPtr geometry, out System.Single[] matrix4x4)
-    // Offset: 0x11CA384
+    // Offset: 0x176F28C
     int AudioGeometryGetTransform(::System::IntPtr geometry, ByRef<::ArrayW<float>> matrix4x4);
     // static private System.Int32 ovrAudio_AudioGeometryWriteMeshFile(System.IntPtr geometry, System.String filePath)
-    // Offset: 0x11CA390
+    // Offset: 0x176F298
     static int ovrAudio_AudioGeometryWriteMeshFile(::System::IntPtr geometry, ::StringW filePath);
     // public System.Int32 AudioGeometryWriteMeshFile(System.IntPtr geometry, System.String filePath)
-    // Offset: 0x11CA43C
+    // Offset: 0x176F344
     int AudioGeometryWriteMeshFile(::System::IntPtr geometry, ::StringW filePath);
     // static private System.Int32 ovrAudio_AudioGeometryReadMeshFile(System.IntPtr geometry, System.String filePath)
-    // Offset: 0x11CA448
+    // Offset: 0x176F350
     static int ovrAudio_AudioGeometryReadMeshFile(::System::IntPtr geometry, ::StringW filePath);
     // public System.Int32 AudioGeometryReadMeshFile(System.IntPtr geometry, System.String filePath)
-    // Offset: 0x11CA4F4
+    // Offset: 0x176F3FC
     int AudioGeometryReadMeshFile(::System::IntPtr geometry, ::StringW filePath);
     // static private System.Int32 ovrAudio_AudioGeometryWriteMeshFileObj(System.IntPtr geometry, System.String filePath)
-    // Offset: 0x11CA500
+    // Offset: 0x176F408
     static int ovrAudio_AudioGeometryWriteMeshFileObj(::System::IntPtr geometry, ::StringW filePath);
     // public System.Int32 AudioGeometryWriteMeshFileObj(System.IntPtr geometry, System.String filePath)
-    // Offset: 0x11CA5AC
+    // Offset: 0x176F4B4
     int AudioGeometryWriteMeshFileObj(::System::IntPtr geometry, ::StringW filePath);
     // static private System.Int32 ovrAudio_CreateAudioMaterial(System.IntPtr context, out System.IntPtr material)
-    // Offset: 0x11CA5B8
+    // Offset: 0x176F4C0
     static int ovrAudio_CreateAudioMaterial(::System::IntPtr context, ByRef<::System::IntPtr> material);
     // public System.Int32 CreateAudioMaterial(out System.IntPtr material)
-    // Offset: 0x11CA648
+    // Offset: 0x176F550
     int CreateAudioMaterial(ByRef<::System::IntPtr> material);
     // static private System.Int32 ovrAudio_DestroyAudioMaterial(System.IntPtr material)
-    // Offset: 0x11CA66C
+    // Offset: 0x176F574
     static int ovrAudio_DestroyAudioMaterial(::System::IntPtr material);
     // public System.Int32 DestroyAudioMaterial(System.IntPtr material)
-    // Offset: 0x11CA6EC
+    // Offset: 0x176F5F4
     int DestroyAudioMaterial(::System::IntPtr material);
     // static private System.Int32 ovrAudio_AudioMaterialSetFrequency(System.IntPtr material, Oculus.Spatializer.Propagation.MaterialProperty property, System.Single frequency, System.Single value)
-    // Offset: 0x11CA6F4
+    // Offset: 0x176F5FC
     static int ovrAudio_AudioMaterialSetFrequency(::System::IntPtr material, ::Oculus::Spatializer::Propagation::MaterialProperty property, float frequency, float value);
     // public System.Int32 AudioMaterialSetFrequency(System.IntPtr material, Oculus.Spatializer.Propagation.MaterialProperty property, System.Single frequency, System.Single value)
-    // Offset: 0x11CA79C
+    // Offset: 0x176F6A4
     int AudioMaterialSetFrequency(::System::IntPtr material, ::Oculus::Spatializer::Propagation::MaterialProperty property, float frequency, float value);
     // static private System.Int32 ovrAudio_AudioMaterialGetFrequency(System.IntPtr material, Oculus.Spatializer.Propagation.MaterialProperty property, System.Single frequency, out System.Single value)
-    // Offset: 0x11CA7A8
+    // Offset: 0x176F6B0
     static int ovrAudio_AudioMaterialGetFrequency(::System::IntPtr material, ::Oculus::Spatializer::Propagation::MaterialProperty property, float frequency, ByRef<float> value);
     // public System.Int32 AudioMaterialGetFrequency(System.IntPtr material, Oculus.Spatializer.Propagation.MaterialProperty property, System.Single frequency, out System.Single value)
-    // Offset: 0x11CA850
+    // Offset: 0x176F758
     int AudioMaterialGetFrequency(::System::IntPtr material, ::Oculus::Spatializer::Propagation::MaterialProperty property, float frequency, ByRef<float> value);
     // static private System.Int32 ovrAudio_AudioMaterialReset(System.IntPtr material, Oculus.Spatializer.Propagation.MaterialProperty property)
-    // Offset: 0x11CA860
+    // Offset: 0x176F768
     static int ovrAudio_AudioMaterialReset(::System::IntPtr material, ::Oculus::Spatializer::Propagation::MaterialProperty property);
     // public System.Int32 AudioMaterialReset(System.IntPtr material, Oculus.Spatializer.Propagation.MaterialProperty property)
-    // Offset: 0x11CA8F0
+    // Offset: 0x176F7F8
     int AudioMaterialReset(::System::IntPtr material, ::Oculus::Spatializer::Propagation::MaterialProperty property);
     // public System.Void .ctor()
-    // Offset: 0x11BB7A0
+    // Offset: 0x17606A8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

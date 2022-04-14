@@ -46,15 +46,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x61 to desired offset: 0x68
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _errorMessage
     // Size: 0x8
     // Offset: 0x68
@@ -63,24 +55,24 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _errorMessage
-    ::StringW& dyn__errorMessage();
+    [[deprecated]] ::StringW& dyn__errorMessage();
     // private System.Void UserLoggedIn()
-    // Offset: 0xA09268
+    // Offset: 0xACE144
     void UserLoggedIn();
     // private System.Void CloudSessionsDataLoadSucceeded(System.Collections.Generic.List`1<VROSC.SessionUIData> sessionUIDatas)
-    // Offset: 0xA09110
+    // Offset: 0xACDFEC
     void CloudSessionsDataLoadSucceeded(::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* sessionUIDatas);
     // private System.Void CloudSessionsDataLoadFailed(VROSC.Error error)
-    // Offset: 0xA09480
+    // Offset: 0xACE35C
     void CloudSessionsDataLoadFailed(::VROSC::Error error);
     // private System.Void <Refresh>b__1_0()
-    // Offset: 0xA09594
+    // Offset: 0xACE470
     void $Refresh$b__1_0();
     // private System.Void <UserLoggedIn>b__3_0()
-    // Offset: 0xA09604
+    // Offset: 0xACE4E0
     void $UserLoggedIn$b__3_0();
     // public System.Void .ctor()
-    // Offset: 0xA09540
+    // Offset: 0xACE41C
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -94,17 +86,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<MySessionsPanelUI*, creationType>()));
     }
     // public override System.Void Refresh()
-    // Offset: 0xA08E30
+    // Offset: 0xACDD0C
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::Refresh()
     void Refresh();
     // protected System.Void OnDisable()
-    // Offset: 0xA09184
+    // Offset: 0xACE060
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::OnDisable()
     void OnDisable();
     // protected override System.Void UserLoggedOut()
-    // Offset: 0xA09408
+    // Offset: 0xACE2E4
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::UserLoggedOut()
     void UserLoggedOut();

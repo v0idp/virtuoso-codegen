@@ -76,20 +76,20 @@ namespace Mono::Net::Security {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Mono.Net.Security.AsyncProtocolResult> <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::Mono::Net::Security::AsyncProtocolResult*>& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::Mono::Net::Security::AsyncProtocolResult*>& dyn_$$t__builder();
     // Get instance field reference: public Mono.Net.Security.AsyncProtocolRequest <>4__this
-    ::Mono::Net::Security::AsyncProtocolRequest*& dyn_$$4__this();
+    [[deprecated]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_$$4__this();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8D8D74
+    // Offset: 0x9F3AEC
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8D912C
+    // Offset: 0x9F3EA4
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // Mono.Net.Security.AsyncProtocolRequest/Mono.Net.Security.<StartOperation>d__23
   // WARNING Not writing size check since size may be invalid!

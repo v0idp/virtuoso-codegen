@@ -31,15 +31,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoardNoteNeighbours::Axis : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNote[] <Neighbours>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -54,30 +46,30 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::NoteBoardNote*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteBoardNote[] <Neighbours>k__BackingField
-    ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$Neighbours$k__BackingField();
+    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$Neighbours$k__BackingField();
     // Get instance field reference: private VROSC.NoteBoardNote[] <InvertedNeighbours>k__BackingField
-    ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$InvertedNeighbours$k__BackingField();
+    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$InvertedNeighbours$k__BackingField();
     // public VROSC.NoteBoardNote[] get_Neighbours()
-    // Offset: 0x133E118
+    // Offset: 0x1966008
     ::ArrayW<::VROSC::NoteBoardNote*> get_Neighbours();
     // private System.Void set_Neighbours(VROSC.NoteBoardNote[] value)
-    // Offset: 0x133E110
+    // Offset: 0x1966000
     void set_Neighbours(::ArrayW<::VROSC::NoteBoardNote*> value);
     // public VROSC.NoteBoardNote[] get_InvertedNeighbours()
-    // Offset: 0x133E128
+    // Offset: 0x1966018
     ::ArrayW<::VROSC::NoteBoardNote*> get_InvertedNeighbours();
     // private System.Void set_InvertedNeighbours(VROSC.NoteBoardNote[] value)
-    // Offset: 0x133E120
+    // Offset: 0x1966010
     void set_InvertedNeighbours(::ArrayW<::VROSC::NoteBoardNote*> value);
     // public System.Void .ctor(VROSC.NoteBoardNote up, VROSC.NoteBoardNote down)
-    // Offset: 0x133E130
+    // Offset: 0x1966020
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoardNoteNeighbours::Axis* New_ctor(::VROSC::NoteBoardNote* up, ::VROSC::NoteBoardNote* down) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteNeighbours::Axis::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteNeighbours::Axis*, creationType>(up, down)));
     }
     // public System.Void AddInvertedNeighBours(VROSC.NoteBoardNoteNeighbours/VROSC.Axis firstAxis, VROSC.NoteBoardNoteNeighbours/VROSC.Axis secondAxis)
-    // Offset: 0x133E324
+    // Offset: 0x1966214
     void AddInvertedNeighBours(::VROSC::NoteBoardNoteNeighbours::Axis* firstAxis, ::VROSC::NoteBoardNoteNeighbours::Axis* secondAxis);
   }; // VROSC.NoteBoardNoteNeighbours/VROSC.Axis
   #pragma pack(pop)

@@ -29,15 +29,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class Product : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String Description
     // Size: 0x8
     // Offset: 0x10
@@ -64,15 +56,15 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String Description
-    ::StringW& dyn_Description();
+    [[deprecated]] ::StringW& dyn_Description();
     // Get instance field reference: public readonly System.String FormattedPrice
-    ::StringW& dyn_FormattedPrice();
+    [[deprecated]] ::StringW& dyn_FormattedPrice();
     // Get instance field reference: public readonly System.String Name
-    ::StringW& dyn_Name();
+    [[deprecated]] ::StringW& dyn_Name();
     // Get instance field reference: public readonly System.String Sku
-    ::StringW& dyn_Sku();
+    [[deprecated]] ::StringW& dyn_Sku();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x1145FE0
+    // Offset: 0x1712EDC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Product* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::Product::.ctor");

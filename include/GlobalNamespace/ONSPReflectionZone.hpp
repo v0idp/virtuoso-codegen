@@ -50,15 +50,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class ONSPReflectionZone : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Audio.AudioMixerSnapshot mixerSnapshot
     // Size: 0x8
     // Offset: 0x18
@@ -83,38 +75,38 @@ namespace GlobalNamespace {
     // Set static field: static private ReflectionSnapshot currentSnapshot
     static void _set_currentSnapshot(::GlobalNamespace::ReflectionSnapshot value);
     // Get instance field reference: public UnityEngine.Audio.AudioMixerSnapshot mixerSnapshot
-    ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_mixerSnapshot();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_mixerSnapshot();
     // Get instance field reference: public System.Single fadeTime
-    float& dyn_fadeTime();
+    [[deprecated]] float& dyn_fadeTime();
     // private System.Void Start()
-    // Offset: 0x11C76A4
+    // Offset: 0x176C5AC
     void Start();
     // private System.Void Update()
-    // Offset: 0x11C76A8
+    // Offset: 0x176C5B0
     void Update();
     // private System.Void OnTriggerEnter(UnityEngine.Collider other)
-    // Offset: 0x11C76AC
+    // Offset: 0x176C5B4
     void OnTriggerEnter(::UnityEngine::Collider* other);
     // private System.Void OnTriggerExit(UnityEngine.Collider other)
-    // Offset: 0x11C7824
+    // Offset: 0x176C72C
     void OnTriggerExit(::UnityEngine::Collider* other);
     // private System.Boolean CheckForAudioListener(UnityEngine.GameObject gameObject)
-    // Offset: 0x11C76F8
+    // Offset: 0x176C600
     bool CheckForAudioListener(::UnityEngine::GameObject* gameObject);
     // private System.Void PushCurrentMixerShapshot()
-    // Offset: 0x11C7790
+    // Offset: 0x176C698
     void PushCurrentMixerShapshot();
     // private System.Void PopCurrentMixerSnapshot()
-    // Offset: 0x11C7870
+    // Offset: 0x176C778
     void PopCurrentMixerSnapshot();
     // private System.Void SetReflectionValues()
-    // Offset: 0x11C7910
+    // Offset: 0x176C818
     void SetReflectionValues();
     // private System.Void SetReflectionValues(ref ReflectionSnapshot mss)
-    // Offset: 0x11C7AA4
+    // Offset: 0x176C9AC
     void SetReflectionValues(ByRef<::GlobalNamespace::ReflectionSnapshot> mss);
     // public System.Void .ctor()
-    // Offset: 0x11C7C38
+    // Offset: 0x176CB40
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -127,7 +119,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<ONSPReflectionZone*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x11C7C40
+    // Offset: 0x176CB48
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

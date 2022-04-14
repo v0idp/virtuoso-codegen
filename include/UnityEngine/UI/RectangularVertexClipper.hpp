@@ -40,15 +40,7 @@ namespace UnityEngine::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class RectangularVertexClipper : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly UnityEngine.Vector3[] m_WorldCorners
     // Size: 0x8
     // Offset: 0x10
@@ -63,14 +55,14 @@ namespace UnityEngine::UI {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector3>) == 0x8);
     public:
     // Get instance field reference: private readonly UnityEngine.Vector3[] m_WorldCorners
-    ::ArrayW<::UnityEngine::Vector3>& dyn_m_WorldCorners();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_WorldCorners();
     // Get instance field reference: private readonly UnityEngine.Vector3[] m_CanvasCorners
-    ::ArrayW<::UnityEngine::Vector3>& dyn_m_CanvasCorners();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_CanvasCorners();
     // public UnityEngine.Rect GetCanvasRect(UnityEngine.RectTransform t, UnityEngine.Canvas c)
-    // Offset: 0xF39DC8
+    // Offset: 0x142B4A8
     ::UnityEngine::Rect GetCanvasRect(::UnityEngine::RectTransform* t, ::UnityEngine::Canvas* c);
     // public System.Void .ctor()
-    // Offset: 0xF3A09C
+    // Offset: 0x142B77C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

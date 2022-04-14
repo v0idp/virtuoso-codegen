@@ -46,31 +46,31 @@ namespace UnityEngine {
     static ::UnityEngine::ResourcesAPI* _get_s_DefaultAPI();
     // Set static field: static private UnityEngine.ResourcesAPI s_DefaultAPI
     static void _set_s_DefaultAPI(::UnityEngine::ResourcesAPI* value);
-    // [DebuggerBrowsableAttribute] Offset: 0x56B1F0
+    // [DebuggerBrowsableAttribute] Offset: 0x6653D4
     // Get static field: static private UnityEngine.ResourcesAPI <overrideAPI>k__BackingField
     static ::UnityEngine::ResourcesAPI* _get_$overrideAPI$k__BackingField();
     // Set static field: static private UnityEngine.ResourcesAPI <overrideAPI>k__BackingField
     static void _set_$overrideAPI$k__BackingField(::UnityEngine::ResourcesAPI* value);
     // static UnityEngine.ResourcesAPI get_ActiveAPI()
-    // Offset: 0x9DBCB4
+    // Offset: 0xBD0A5C
     static ::UnityEngine::ResourcesAPI* get_ActiveAPI();
     // static public UnityEngine.ResourcesAPI get_overrideAPI()
-    // Offset: 0x9DBED4
+    // Offset: 0xBD0C7C
     static ::UnityEngine::ResourcesAPI* get_overrideAPI();
     // static private System.Void .cctor()
-    // Offset: 0x9DC0E0
+    // Offset: 0xBD0E88
     static void _cctor();
     // protected internal UnityEngine.Object[] FindObjectsOfTypeAll(System.Type systemTypeInstance)
-    // Offset: 0x9DBF40
+    // Offset: 0xBD0CE8
     ::ArrayW<::UnityEngine::Object*> FindObjectsOfTypeAll(::System::Type* systemTypeInstance);
     // protected internal UnityEngine.Shader FindShaderByName(System.String name)
-    // Offset: 0x9DBFC0
+    // Offset: 0xBD0D68
     ::UnityEngine::Shader* FindShaderByName(::StringW name);
     // protected internal UnityEngine.Object Load(System.String path, System.Type systemTypeInstance)
-    // Offset: 0x9DC040
+    // Offset: 0xBD0DE8
     ::UnityEngine::Object* Load(::StringW path, ::System::Type* systemTypeInstance);
     // protected internal System.Void .ctor()
-    // Offset: 0x9DBF38
+    // Offset: 0xBD0CE0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

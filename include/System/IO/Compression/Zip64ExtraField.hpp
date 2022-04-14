@@ -71,56 +71,56 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt16 _size
-    uint16_t& dyn__size();
+    [[deprecated]] uint16_t& dyn__size();
     // Get instance field reference: private System.Nullable`1<System.Int64> _uncompressedSize
-    ::System::Nullable_1<int64_t>& dyn__uncompressedSize();
+    [[deprecated]] ::System::Nullable_1<int64_t>& dyn__uncompressedSize();
     // Get instance field reference: private System.Nullable`1<System.Int64> _compressedSize
-    ::System::Nullable_1<int64_t>& dyn__compressedSize();
+    [[deprecated]] ::System::Nullable_1<int64_t>& dyn__compressedSize();
     // Get instance field reference: private System.Nullable`1<System.Int64> _localHeaderOffset
-    ::System::Nullable_1<int64_t>& dyn__localHeaderOffset();
+    [[deprecated]] ::System::Nullable_1<int64_t>& dyn__localHeaderOffset();
     // Get instance field reference: private System.Nullable`1<System.Int32> _startDiskNumber
-    ::System::Nullable_1<int>& dyn__startDiskNumber();
+    [[deprecated]] ::System::Nullable_1<int>& dyn__startDiskNumber();
     // public System.UInt16 get_TotalSize()
-    // Offset: 0x1122678
+    // Offset: 0x1699EE4
     uint16_t get_TotalSize();
     // public System.Nullable`1<System.Int64> get_UncompressedSize()
-    // Offset: 0x1122684
+    // Offset: 0x1699EF0
     ::System::Nullable_1<int64_t> get_UncompressedSize();
     // public System.Void set_UncompressedSize(System.Nullable`1<System.Int64> value)
-    // Offset: 0x1122690
+    // Offset: 0x1699EFC
     void set_UncompressedSize(::System::Nullable_1<int64_t> value);
     // public System.Nullable`1<System.Int64> get_CompressedSize()
-    // Offset: 0x1122724
+    // Offset: 0x1699F90
     ::System::Nullable_1<int64_t> get_CompressedSize();
     // public System.Void set_CompressedSize(System.Nullable`1<System.Int64> value)
-    // Offset: 0x1122730
+    // Offset: 0x1699F9C
     void set_CompressedSize(::System::Nullable_1<int64_t> value);
     // public System.Nullable`1<System.Int64> get_LocalHeaderOffset()
-    // Offset: 0x1122738
+    // Offset: 0x1699FA4
     ::System::Nullable_1<int64_t> get_LocalHeaderOffset();
     // public System.Void set_LocalHeaderOffset(System.Nullable`1<System.Int64> value)
-    // Offset: 0x1122744
+    // Offset: 0x1699FB0
     void set_LocalHeaderOffset(::System::Nullable_1<int64_t> value);
     // public System.Nullable`1<System.Int32> get_StartDiskNumber()
-    // Offset: 0x112274C
+    // Offset: 0x1699FB8
     ::System::Nullable_1<int> get_StartDiskNumber();
     // private System.Void UpdateSize()
-    // Offset: 0x1122698
+    // Offset: 0x1699F04
     void UpdateSize();
     // static public System.IO.Compression.Zip64ExtraField GetJustZip64Block(System.IO.Stream extraFieldStream, System.Boolean readUncompressedSize, System.Boolean readCompressedSize, System.Boolean readLocalHeaderOffset, System.Boolean readStartDiskNumber)
-    // Offset: 0x1122754
+    // Offset: 0x1699FC0
     static ::System::IO::Compression::Zip64ExtraField GetJustZip64Block(::System::IO::Stream* extraFieldStream, bool readUncompressedSize, bool readCompressedSize, bool readLocalHeaderOffset, bool readStartDiskNumber);
     // static private System.Boolean TryGetZip64BlockFromGenericExtraField(System.IO.Compression.ZipGenericExtraField extraField, System.Boolean readUncompressedSize, System.Boolean readCompressedSize, System.Boolean readLocalHeaderOffset, System.Boolean readStartDiskNumber, out System.IO.Compression.Zip64ExtraField zip64Block)
-    // Offset: 0x112299C
+    // Offset: 0x169A208
     static bool TryGetZip64BlockFromGenericExtraField(::System::IO::Compression::ZipGenericExtraField extraField, bool readUncompressedSize, bool readCompressedSize, bool readLocalHeaderOffset, bool readStartDiskNumber, ByRef<::System::IO::Compression::Zip64ExtraField> zip64Block);
     // static public System.IO.Compression.Zip64ExtraField GetAndRemoveZip64Block(System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> extraFields, System.Boolean readUncompressedSize, System.Boolean readCompressedSize, System.Boolean readLocalHeaderOffset, System.Boolean readStartDiskNumber)
-    // Offset: 0x1123008
+    // Offset: 0x169A874
     static ::System::IO::Compression::Zip64ExtraField GetAndRemoveZip64Block(::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>* extraFields, bool readUncompressedSize, bool readCompressedSize, bool readLocalHeaderOffset, bool readStartDiskNumber);
     // static public System.Void RemoveZip64Blocks(System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> extraFields)
-    // Offset: 0x112333C
+    // Offset: 0x169ABA8
     static void RemoveZip64Blocks(::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>* extraFields);
     // public System.Void WriteBlock(System.IO.Stream stream)
-    // Offset: 0x11235BC
+    // Offset: 0x169AE28
     void WriteBlock(::System::IO::Stream* stream);
   }; // System.IO.Compression.Zip64ExtraField
   // WARNING Not writing size check since size may be invalid!

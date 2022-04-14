@@ -21,7 +21,7 @@ namespace GlobalNamespace {
   class Levenshtein::LevenshteinDistance : public ::Il2CppObject {
     public:
     // static public System.Int32 Compute(System.String s, System.String t)
-    // Offset: 0x13D4680
+    // Offset: 0x195C39C
     static int Compute(::StringW s, ::StringW t);
   }; // Levenshtein/LevenshteinDistance
   #pragma pack(pop)

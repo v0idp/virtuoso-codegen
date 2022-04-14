@@ -57,7 +57,7 @@ namespace VROSC {
     // Set static field: static public VROSC.SessionsLibraryUI/VROSC.OrderingType Popularity
     static void _set_Popularity(::VROSC::SessionsLibraryUI::OrderingType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.SessionsLibraryUI/VROSC.OrderingType
   #pragma pack(pop)
   static check_size<sizeof(SessionsLibraryUI::OrderingType), 0 + sizeof(int)> __VROSC_SessionsLibraryUI_OrderingTypeSizeCheck;

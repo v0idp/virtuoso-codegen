@@ -36,15 +36,7 @@ namespace UnityEngine::Timeline {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class AnimationPlayableAsset::$get_outputs$d__45 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>, public ::System::Collections::Generic::IEnumerator_1<::UnityEngine::Playables::PlayableBinding>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -83,40 +75,40 @@ namespace UnityEngine::Timeline {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::UnityEngine::Playables::PlayableBinding>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private UnityEngine.Playables.PlayableBinding <>2__current
-    ::UnityEngine::Playables::PlayableBinding& dyn_$$2__current();
+    [[deprecated]] ::UnityEngine::Playables::PlayableBinding& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    int& dyn_$$l__initialThreadId();
+    [[deprecated]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public UnityEngine.Timeline.AnimationPlayableAsset <>4__this
-    ::UnityEngine::Timeline::AnimationPlayableAsset*& dyn_$$4__this();
+    [[deprecated]] ::UnityEngine::Timeline::AnimationPlayableAsset*& dyn_$$4__this();
     // private UnityEngine.Playables.PlayableBinding System.Collections.Generic.IEnumerator<UnityEngine.Playables.PlayableBinding>.get_Current()
-    // Offset: 0x12D0F4C
+    // Offset: 0x18D41C0
     ::UnityEngine::Playables::PlayableBinding System_Collections_Generic_IEnumerator$UnityEngine_Playables_PlayableBinding$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x12D0F9C
+    // Offset: 0x18D4210
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x12D0E80
+    // Offset: 0x18D40F4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimationPlayableAsset::$get_outputs$d__45* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AnimationPlayableAsset::$get_outputs$d__45::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AnimationPlayableAsset::$get_outputs$d__45*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x12D0EB8
+    // Offset: 0x18D412C
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x12D0EBC
+    // Offset: 0x18D4130
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x12D0F5C
+    // Offset: 0x18D41D0
     void System_Collections_IEnumerator_Reset();
     // private System.Collections.Generic.IEnumerator`1<UnityEngine.Playables.PlayableBinding> System.Collections.Generic.IEnumerable<UnityEngine.Playables.PlayableBinding>.GetEnumerator()
-    // Offset: 0x12D1000
+    // Offset: 0x18D4274
     ::System::Collections::Generic::IEnumerator_1<::UnityEngine::Playables::PlayableBinding>* System_Collections_Generic_IEnumerable$UnityEngine_Playables_PlayableBinding$_GetEnumerator();
     // private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-    // Offset: 0x12D10A8
+    // Offset: 0x18D431C
     ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator();
   }; // UnityEngine.Timeline.AnimationPlayableAsset/UnityEngine.Timeline.<get_outputs>d__45
   #pragma pack(pop)

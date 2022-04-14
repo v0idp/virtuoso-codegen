@@ -96,7 +96,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarLogLevel Silent
     static void _set_Silent(::GlobalNamespace::ovrAvatarLogLevel value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // ovrAvatarLogLevel
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarLogLevel), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarLogLevelSizeCheck;

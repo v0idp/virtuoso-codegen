@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMPTextAppearBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _target
     // Size: 0x8
     // Offset: 0x10
@@ -65,7 +57,7 @@ namespace VROSC {
     ::UnityEngine::Color visibleColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [RangeAttribute] Offset: 0x673B70
+    // [RangeAttribute] Offset: 0x789EE4
     // public System.Single Appear
     // Size: 0x4
     // Offset: 0x28
@@ -74,16 +66,16 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _target
-    ::TMPro::TextMeshPro*& dyn__target();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__target();
     // Get instance field reference: private UnityEngine.Color _visibleColor
-    ::UnityEngine::Color& dyn__visibleColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__visibleColor();
     // Get instance field reference: public System.Single Appear
-    float& dyn_Appear();
+    [[deprecated]] float& dyn_Appear();
     // public System.Void Setup(TMPro.TextMeshPro target)
-    // Offset: 0x13F7EE4
+    // Offset: 0x193A268
     void Setup(::TMPro::TextMeshPro* target);
     // public System.Void .ctor()
-    // Offset: 0x13F7FB0
+    // Offset: 0x193A334
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -93,7 +85,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TMPTextAppearBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x13F7EEC
+    // Offset: 0x193A270
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

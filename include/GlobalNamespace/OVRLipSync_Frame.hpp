@@ -24,15 +24,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRLipSync::Frame : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 frameNumber
     // Size: 0x4
     // Offset: 0x10
@@ -59,21 +51,21 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Int32 frameNumber
-    int& dyn_frameNumber();
+    [[deprecated]] int& dyn_frameNumber();
     // Get instance field reference: public System.Int32 frameDelay
-    int& dyn_frameDelay();
+    [[deprecated]] int& dyn_frameDelay();
     // Get instance field reference: public System.Single[] Visemes
-    ::ArrayW<float>& dyn_Visemes();
+    [[deprecated]] ::ArrayW<float>& dyn_Visemes();
     // Get instance field reference: public System.Single laughterScore
-    float& dyn_laughterScore();
+    [[deprecated]] float& dyn_laughterScore();
     // public System.Void CopyInput(OVRLipSync/Frame input)
-    // Offset: 0x12AC2C0
+    // Offset: 0x18AAE64
     void CopyInput(::GlobalNamespace::OVRLipSync::Frame* input);
     // public System.Void Reset()
-    // Offset: 0x12AC018
+    // Offset: 0x18AABBC
     void Reset();
     // public System.Void .ctor()
-    // Offset: 0x12AC0A4
+    // Offset: 0x18AAC48
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

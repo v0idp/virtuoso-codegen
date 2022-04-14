@@ -54,15 +54,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class VirtuosoSampler : public ::VROSC::AudioHelmInstrumentWrapper {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Audio.AudioMixerGroup _audioMixerGroup
     // Size: 0x8
     // Offset: 0x18
@@ -95,18 +87,18 @@ namespace VROSC {
     // Set static field: static public System.Action`1<UnityEngine.AudioClip> OnSamplePlayed
     static void _set_OnSamplePlayed(::System::Action_1<::UnityEngine::AudioClip*>* value);
     // Get instance field reference: private UnityEngine.Audio.AudioMixerGroup _audioMixerGroup
-    ::UnityEngine::Audio::AudioMixerGroup*& dyn__audioMixerGroup();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn__audioMixerGroup();
     // Get instance field reference: private System.Int32 _numberOfSources
-    int& dyn__numberOfSources();
+    [[deprecated]] int& dyn__numberOfSources();
     // Get instance field reference: private System.Int32 _sourceIndex
-    int& dyn__sourceIndex();
+    [[deprecated]] int& dyn__sourceIndex();
     // Get instance field reference: private UnityEngine.AudioSource[] _audioSources
-    ::ArrayW<::UnityEngine::AudioSource*>& dyn__audioSources();
+    [[deprecated]] ::ArrayW<::UnityEngine::AudioSource*>& dyn__audioSources();
     // private UnityEngine.AudioClip GetAudioClip(System.Int32 id)
-    // Offset: 0x13520AC
+    // Offset: 0x1923CC0
     ::UnityEngine::AudioClip* GetAudioClip(int id);
     // public System.Void .ctor()
-    // Offset: 0x135211C
+    // Offset: 0x1923D30
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -120,32 +112,32 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<VirtuosoSampler*, creationType>()));
     }
     // public override System.Void Setup(VROSC.InternalSynthesizer internalSynthesizer)
-    // Offset: 0x1351CA0
+    // Offset: 0x19238B4
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::Setup(VROSC.InternalSynthesizer internalSynthesizer)
     void Setup(::VROSC::InternalSynthesizer* internalSynthesizer);
     // public override System.Void AllNotesOff()
-    // Offset: 0x1351E6C
+    // Offset: 0x1923A80
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::AllNotesOff()
     void AllNotesOff();
     // public override System.Void NoteOff(System.Int32 note)
-    // Offset: 0x1351ED8
+    // Offset: 0x1923AEC
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::NoteOff(System.Int32 note)
     void NoteOff(int note);
     // public override System.Void NoteOn(System.Int32 note, System.Single velocity, System.Double predictedDspTime, System.Single pitch)
-    // Offset: 0x1351EDC
+    // Offset: 0x1923AF0
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::NoteOn(System.Int32 note, System.Single velocity, System.Double predictedDspTime, System.Single pitch)
     void NoteOn(int note, float velocity, double predictedDspTime, float pitch);
     // public override System.Void SetMidiCC(System.Single midiCCValue, System.Int32 midiCC)
-    // Offset: 0x1352114
+    // Offset: 0x1923D28
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::SetMidiCC(System.Single midiCCValue, System.Int32 midiCC)
     void SetMidiCC(float midiCCValue, int midiCC);
     // public override System.Void SetPitchBend(System.Single pitchBendValue)
-    // Offset: 0x1352118
+    // Offset: 0x1923D2C
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::SetPitchBend(System.Single pitchBendValue)
     void SetPitchBend(float pitchBendValue);

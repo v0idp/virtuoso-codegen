@@ -38,15 +38,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScalePresets : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 SelectedScaleIndex
     // Size: 0x4
     // Offset: 0x18
@@ -69,16 +61,16 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Int32 SelectedScaleIndex
-    int& dyn_SelectedScaleIndex();
+    [[deprecated]] int& dyn_SelectedScaleIndex();
     // Get instance field reference: public VROSC.Note SelectedStartNote
-    ::VROSC::Note& dyn_SelectedStartNote();
+    [[deprecated]] ::VROSC::Note& dyn_SelectedStartNote();
     // Get instance field reference: public VROSC.ScalePreset[] Presets
-    ::ArrayW<::VROSC::ScalePreset*>& dyn_Presets();
+    [[deprecated]] ::ArrayW<::VROSC::ScalePreset*>& dyn_Presets();
     // protected System.Void OnValidate()
-    // Offset: 0x13DFCB0
+    // Offset: 0xDE4384
     void OnValidate();
     // public System.Void .ctor()
-    // Offset: 0x13DFD18
+    // Offset: 0xDE43EC
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

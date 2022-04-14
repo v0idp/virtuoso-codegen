@@ -27,7 +27,7 @@ namespace GlobalNamespace {
   class OVRMessenger::BroadcastException : public ::System::Exception {
     public:
     // public System.Void .ctor(System.String msg)
-    // Offset: 0x133F580
+    // Offset: 0x8CABA0
     // Implemented from: System.Exception
     // Base method: System.Void Exception::.ctor(System.String msg)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

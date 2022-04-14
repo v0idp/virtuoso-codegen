@@ -53,42 +53,42 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IEquatable_1<::Firebase::Firestore::CollectionReference*>*>(this);
     }
     // private Firebase.Firestore.CollectionReferenceProxy get_Proxy()
-    // Offset: 0xC299D8
+    // Offset: 0xD4B6F8
     ::Firebase::Firestore::CollectionReferenceProxy* get_Proxy();
     // public System.String get_Path()
-    // Offset: 0xC29A54
+    // Offset: 0xD4B774
     ::StringW get_Path();
     // System.Void .ctor(Firebase.Firestore.CollectionReferenceProxy proxy, Firebase.Firestore.FirebaseFirestore firestore)
-    // Offset: 0xC298C4
+    // Offset: 0xD4B5E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CollectionReference* New_ctor(::Firebase::Firestore::CollectionReferenceProxy* proxy, ::Firebase::Firestore::FirebaseFirestore* firestore) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::CollectionReference::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CollectionReference*, creationType>(proxy, firestore)));
     }
     // public Firebase.Firestore.DocumentReference Document()
-    // Offset: 0xC29A78
+    // Offset: 0xD4B798
     ::Firebase::Firestore::DocumentReference* Document();
     // public Firebase.Firestore.DocumentReference Document(System.String path)
-    // Offset: 0xC29BBC
+    // Offset: 0xD4B8DC
     ::Firebase::Firestore::DocumentReference* Document(::StringW path);
     // public System.Threading.Tasks.Task`1<Firebase.Firestore.DocumentReference> AddAsync(System.Object documentData)
-    // Offset: 0xC29C54
+    // Offset: 0xD4BA78
     ::System::Threading::Tasks::Task_1<::Firebase::Firestore::DocumentReference*>* AddAsync(::Il2CppObject* documentData);
     // public System.Boolean Equals(Firebase.Firestore.CollectionReference other)
-    // Offset: 0xC29EE8
+    // Offset: 0xD4BDB0
     bool Equals(::Firebase::Firestore::CollectionReference* other);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xC29E1C
+    // Offset: 0xD4BCD8
     // Implemented from: Firebase.Firestore.Query
     // Base method: System.Int32 Query::GetHashCode()
     int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC29E88
+    // Offset: 0xD4BD30
     // Implemented from: Firebase.Firestore.Query
     // Base method: System.Boolean Query::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.String ToString()
-    // Offset: 0xC29F40
+    // Offset: 0xD4BDE0
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

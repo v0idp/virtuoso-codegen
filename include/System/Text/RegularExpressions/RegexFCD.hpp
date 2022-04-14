@@ -40,15 +40,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class RegexFCD : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32[] _intStack
     // Size: 0x8
     // Offset: 0x10
@@ -95,63 +87,63 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32[] _intStack
-    ::ArrayW<int>& dyn__intStack();
+    [[deprecated]] ::ArrayW<int>& dyn__intStack();
     // Get instance field reference: private System.Int32 _intDepth
-    int& dyn__intDepth();
+    [[deprecated]] int& dyn__intDepth();
     // Get instance field reference: private System.Text.RegularExpressions.RegexFC[] _fcStack
-    ::ArrayW<::System::Text::RegularExpressions::RegexFC*>& dyn__fcStack();
+    [[deprecated]] ::ArrayW<::System::Text::RegularExpressions::RegexFC*>& dyn__fcStack();
     // Get instance field reference: private System.Int32 _fcDepth
-    int& dyn__fcDepth();
+    [[deprecated]] int& dyn__fcDepth();
     // Get instance field reference: private System.Boolean _skipAllChildren
-    bool& dyn__skipAllChildren();
+    [[deprecated]] bool& dyn__skipAllChildren();
     // Get instance field reference: private System.Boolean _skipchild
-    bool& dyn__skipchild();
+    [[deprecated]] bool& dyn__skipchild();
     // Get instance field reference: private System.Boolean _failed
-    bool& dyn__failed();
+    [[deprecated]] bool& dyn__failed();
     // static System.Text.RegularExpressions.RegexPrefix FirstChars(System.Text.RegularExpressions.RegexTree t)
-    // Offset: 0x1251084
+    // Offset: 0x1846258
     static ::System::Text::RegularExpressions::RegexPrefix* FirstChars(::System::Text::RegularExpressions::RegexTree* t);
     // static System.Text.RegularExpressions.RegexPrefix Prefix(System.Text.RegularExpressions.RegexTree tree)
-    // Offset: 0x12513EC
+    // Offset: 0x18465C0
     static ::System::Text::RegularExpressions::RegexPrefix* Prefix(::System::Text::RegularExpressions::RegexTree* tree);
     // static System.Int32 Anchors(System.Text.RegularExpressions.RegexTree tree)
-    // Offset: 0x125172C
+    // Offset: 0x1846900
     static int Anchors(::System::Text::RegularExpressions::RegexTree* tree);
     // static private System.Int32 AnchorFromType(System.Int32 type)
-    // Offset: 0x125185C
+    // Offset: 0x1846A30
     static int AnchorFromType(int type);
     // private System.Void PushInt(System.Int32 I)
-    // Offset: 0x12518C8
+    // Offset: 0x1846A9C
     void PushInt(int I);
     // private System.Boolean IntIsEmpty()
-    // Offset: 0x12519A4
+    // Offset: 0x1846B78
     bool IntIsEmpty();
     // private System.Int32 PopInt()
-    // Offset: 0x12519B4
+    // Offset: 0x1846B88
     int PopInt();
     // private System.Void PushFC(System.Text.RegularExpressions.RegexFC fc)
-    // Offset: 0x12519FC
+    // Offset: 0x1846BD0
     void PushFC(::System::Text::RegularExpressions::RegexFC* fc);
     // private System.Boolean FCIsEmpty()
-    // Offset: 0x1251B00
+    // Offset: 0x1846CD4
     bool FCIsEmpty();
     // private System.Text.RegularExpressions.RegexFC PopFC()
-    // Offset: 0x1251B10
+    // Offset: 0x1846CE4
     ::System::Text::RegularExpressions::RegexFC* PopFC();
     // private System.Text.RegularExpressions.RegexFC TopFC()
-    // Offset: 0x1251B58
+    // Offset: 0x1846D2C
     ::System::Text::RegularExpressions::RegexFC* TopFC();
     // private System.Text.RegularExpressions.RegexFC RegexFCFromRegexTree(System.Text.RegularExpressions.RegexTree tree)
-    // Offset: 0x1251238
+    // Offset: 0x184640C
     ::System::Text::RegularExpressions::RegexFC* RegexFCFromRegexTree(::System::Text::RegularExpressions::RegexTree* tree);
     // private System.Void SkipChild()
-    // Offset: 0x1252024
+    // Offset: 0x18471F8
     void SkipChild();
     // private System.Void CalculateFC(System.Int32 NodeType, System.Text.RegularExpressions.RegexNode node, System.Int32 CurIndex)
-    // Offset: 0x1251B9C
+    // Offset: 0x1846D70
     void CalculateFC(int NodeType, ::System::Text::RegularExpressions::RegexNode* node, int CurIndex);
     // private System.Void .ctor()
-    // Offset: 0x12511B4
+    // Offset: 0x1846388
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

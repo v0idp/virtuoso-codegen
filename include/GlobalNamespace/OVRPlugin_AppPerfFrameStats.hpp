@@ -114,33 +114,33 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 HmdVsyncIndex
-    int& dyn_HmdVsyncIndex();
+    [[deprecated]] int& dyn_HmdVsyncIndex();
     // Get instance field reference: public System.Int32 AppFrameIndex
-    int& dyn_AppFrameIndex();
+    [[deprecated]] int& dyn_AppFrameIndex();
     // Get instance field reference: public System.Int32 AppDroppedFrameCount
-    int& dyn_AppDroppedFrameCount();
+    [[deprecated]] int& dyn_AppDroppedFrameCount();
     // Get instance field reference: public System.Single AppMotionToPhotonLatency
-    float& dyn_AppMotionToPhotonLatency();
+    [[deprecated]] float& dyn_AppMotionToPhotonLatency();
     // Get instance field reference: public System.Single AppQueueAheadTime
-    float& dyn_AppQueueAheadTime();
+    [[deprecated]] float& dyn_AppQueueAheadTime();
     // Get instance field reference: public System.Single AppCpuElapsedTime
-    float& dyn_AppCpuElapsedTime();
+    [[deprecated]] float& dyn_AppCpuElapsedTime();
     // Get instance field reference: public System.Single AppGpuElapsedTime
-    float& dyn_AppGpuElapsedTime();
+    [[deprecated]] float& dyn_AppGpuElapsedTime();
     // Get instance field reference: public System.Int32 CompositorFrameIndex
-    int& dyn_CompositorFrameIndex();
+    [[deprecated]] int& dyn_CompositorFrameIndex();
     // Get instance field reference: public System.Int32 CompositorDroppedFrameCount
-    int& dyn_CompositorDroppedFrameCount();
+    [[deprecated]] int& dyn_CompositorDroppedFrameCount();
     // Get instance field reference: public System.Single CompositorLatency
-    float& dyn_CompositorLatency();
+    [[deprecated]] float& dyn_CompositorLatency();
     // Get instance field reference: public System.Single CompositorCpuElapsedTime
-    float& dyn_CompositorCpuElapsedTime();
+    [[deprecated]] float& dyn_CompositorCpuElapsedTime();
     // Get instance field reference: public System.Single CompositorGpuElapsedTime
-    float& dyn_CompositorGpuElapsedTime();
+    [[deprecated]] float& dyn_CompositorGpuElapsedTime();
     // Get instance field reference: public System.Single CompositorCpuStartToGpuEndElapsedTime
-    float& dyn_CompositorCpuStartToGpuEndElapsedTime();
+    [[deprecated]] float& dyn_CompositorCpuStartToGpuEndElapsedTime();
     // Get instance field reference: public System.Single CompositorGpuEndToVsyncElapsedTime
-    float& dyn_CompositorGpuEndToVsyncElapsedTime();
+    [[deprecated]] float& dyn_CompositorGpuEndToVsyncElapsedTime();
   }; // OVRPlugin/AppPerfFrameStats
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::AppPerfFrameStats), 52 + sizeof(float)> __GlobalNamespace_OVRPlugin_AppPerfFrameStatsSizeCheck;

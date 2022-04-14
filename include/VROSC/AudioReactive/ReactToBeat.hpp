@@ -158,20 +158,12 @@ namespace VROSC::AudioReactive {
         // Set static field: static public VROSC.AudioReactive.ReactToBeat/VROSC.AudioReactive.ReactToBeatEffect/VROSC.AudioReactive.Type DrumpadEffect
         static void _set_DrumpadEffect(::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect::Type value);
         // Get instance field reference: public System.Int32 value__
-        int& dyn_value__();
+        [[deprecated]] int& dyn_value__();
       }; // VROSC.AudioReactive.ReactToBeat/VROSC.AudioReactive.ReactToBeatEffect/VROSC.AudioReactive.Type
       #pragma pack(pop)
       static check_size<sizeof(ReactToBeat::ReactToBeatEffect::Type), 0 + sizeof(int)> __VROSC_AudioReactive_ReactToBeat_ReactToBeatEffect_TypeSizeCheck;
       static_assert(sizeof(ReactToBeat::ReactToBeatEffect::Type) == 0x4);
-      #ifdef USE_CODEGEN_FIELDS
       public:
-      #else
-      #ifdef CODEGEN_FIELD_ACCESSIBILITY
-      CODEGEN_FIELD_ACCESSIBILITY:
-      #else
-      protected:
-      #endif
-      #endif
       // private VROSC.AudioReactive.LerpColorEffect _colorEffect
       // Size: 0x8
       // Offset: 0x10
@@ -240,53 +232,45 @@ namespace VROSC::AudioReactive {
       static_assert(sizeof(::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect::Type) == 0x4);
       public:
       // Get instance field reference: private VROSC.AudioReactive.LerpColorEffect _colorEffect
-      ::VROSC::AudioReactive::LerpColorEffect*& dyn__colorEffect();
+      [[deprecated]] ::VROSC::AudioReactive::LerpColorEffect*& dyn__colorEffect();
       // Get instance field reference: private VROSC.AudioReactive.RotateEffect _rotateEffect
-      ::VROSC::AudioReactive::RotateEffect*& dyn__rotateEffect();
+      [[deprecated]] ::VROSC::AudioReactive::RotateEffect*& dyn__rotateEffect();
       // Get instance field reference: private VROSC.AudioReactive.TranslateEffect _translateEffect
-      ::VROSC::AudioReactive::TranslateEffect*& dyn__translateEffect();
+      [[deprecated]] ::VROSC::AudioReactive::TranslateEffect*& dyn__translateEffect();
       // Get instance field reference: private VROSC.AudioReactive.ScaleEffect _scaleEffect
-      ::VROSC::AudioReactive::ScaleEffect*& dyn__scaleEffect();
+      [[deprecated]] ::VROSC::AudioReactive::ScaleEffect*& dyn__scaleEffect();
       // Get instance field reference: private VROSC.AudioReactive.TransformLerpEffect _transformEffect
-      ::VROSC::AudioReactive::TransformLerpEffect*& dyn__transformEffect();
+      [[deprecated]] ::VROSC::AudioReactive::TransformLerpEffect*& dyn__transformEffect();
       // Get instance field reference: private VROSC.AudioReactive.EmitParticlesEffect _emitParticlesEffect
-      ::VROSC::AudioReactive::EmitParticlesEffect*& dyn__emitParticlesEffect();
+      [[deprecated]] ::VROSC::AudioReactive::EmitParticlesEffect*& dyn__emitParticlesEffect();
       // Get instance field reference: private VROSC.AudioReactive.SlowdownParticlesEffect _slowdownParticlesEffect
-      ::VROSC::AudioReactive::SlowdownParticlesEffect*& dyn__slowdownParticlesEffect();
+      [[deprecated]] ::VROSC::AudioReactive::SlowdownParticlesEffect*& dyn__slowdownParticlesEffect();
       // Get instance field reference: private VROSC.AudioReactive.ShaderEffect _shaderEffect
-      ::VROSC::AudioReactive::ShaderEffect*& dyn__shaderEffect();
+      [[deprecated]] ::VROSC::AudioReactive::ShaderEffect*& dyn__shaderEffect();
       // Get instance field reference: private VROSC.AudioReactive.ShiftColorEffect _shiftColorEffect
-      ::VROSC::AudioReactive::ShiftColorEffect*& dyn__shiftColorEffect();
+      [[deprecated]] ::VROSC::AudioReactive::ShiftColorEffect*& dyn__shiftColorEffect();
       // Get instance field reference: private VROSC.AudioReactive.DrumpadEffect _drumpadEffect
-      ::VROSC::AudioReactive::DrumpadEffect*& dyn__drumpadEffect();
+      [[deprecated]] ::VROSC::AudioReactive::DrumpadEffect*& dyn__drumpadEffect();
       // Get instance field reference: private VROSC.AudioReactive.ReactToBeat/VROSC.AudioReactive.ReactToBeatEffect/VROSC.AudioReactive.Type _type
-      ::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect::Type& dyn__type();
+      [[deprecated]] ::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect::Type& dyn__type();
       // public VROSC.AudioReactive.ReactiveEffect get_Effect()
-      // Offset: 0x1344C78
+      // Offset: 0x8CFBD0
       ::VROSC::AudioReactive::ReactiveEffect* get_Effect();
       // public System.Void .ctor(VROSC.AudioReactive.ReactToBeat/VROSC.AudioReactive.ReactToBeatEffect/VROSC.AudioReactive.Type type)
-      // Offset: 0x1344CF4
+      // Offset: 0x8CFC4C
       template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
       static ReactToBeat::ReactToBeatEffect* New_ctor(::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect::Type type) {
         static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect::.ctor");
         return THROW_UNLESS((::il2cpp_utils::New<ReactToBeat::ReactToBeatEffect*, creationType>(type)));
       }
       // private VROSC.AudioReactive.ReactiveEffect GetEffectByType()
-      // Offset: 0x1344C7C
+      // Offset: 0x8CFBD4
       ::VROSC::AudioReactive::ReactiveEffect* GetEffectByType();
     }; // VROSC.AudioReactive.ReactToBeat/VROSC.AudioReactive.ReactToBeatEffect
     #pragma pack(pop)
     static check_size<sizeof(ReactToBeat::ReactToBeatEffect), 96 + sizeof(::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect::Type)> __VROSC_AudioReactive_ReactToBeat_ReactToBeatEffectSizeCheck;
     static_assert(sizeof(ReactToBeat::ReactToBeatEffect) == 0x64);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<VROSC.AudioReactive.ReactToBeat/VROSC.AudioReactive.ReactToBeatEffect> _effects
     // Size: 0x8
     // Offset: 0x28
@@ -301,20 +285,20 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.AudioReactive.ReactToBeat/VROSC.AudioReactive.ReactToBeatEffect> _effects
-    ::System::Collections::Generic::List_1<::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect*>*& dyn__effects();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect*>*& dyn__effects();
     // Get instance field reference: private System.Boolean _showGuides
-    bool& dyn__showGuides();
+    [[deprecated]] bool& dyn__showGuides();
     // private System.Void Update()
-    // Offset: 0x9961C0
+    // Offset: 0xB2DCAC
     void Update();
     // public System.Void AddEffect(VROSC.AudioReactive.ReactToBeat/VROSC.AudioReactive.ReactToBeatEffect/VROSC.AudioReactive.Type type)
-    // Offset: 0x99643C
+    // Offset: 0xB2DF28
     void AddEffect(::VROSC::AudioReactive::ReactToBeat::ReactToBeatEffect::Type type);
     // private System.Void OnDrawGizmos()
-    // Offset: 0x9964D0
+    // Offset: 0xB2DFBC
     void OnDrawGizmos();
     // public System.Void .ctor()
-    // Offset: 0x996664
+    // Offset: 0xB2E150
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -328,12 +312,12 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<ReactToBeat*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x996080
+    // Offset: 0xB2DB6C
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::Awake()
     void Awake();
     // protected override System.Void OnBeat(System.Int32 beat)
-    // Offset: 0x9962F0
+    // Offset: 0xB2DDDC
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::OnBeat(System.Int32 beat)
     void OnBeat(int beat);

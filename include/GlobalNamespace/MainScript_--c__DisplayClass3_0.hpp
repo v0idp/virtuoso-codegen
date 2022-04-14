@@ -57,15 +57,7 @@ namespace GlobalNamespace {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class MainScript::$$c__DisplayClass3_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public MainScript <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -80,26 +72,26 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Proyecto26::RequestHelper*) == 0x8);
     public:
     // Get instance field reference: public MainScript <>4__this
-    ::GlobalNamespace::MainScript*& dyn_$$4__this();
+    [[deprecated]] ::GlobalNamespace::MainScript*& dyn_$$4__this();
     // Get instance field reference: public Proyecto26.RequestHelper requestOptions
-    ::Proyecto26::RequestHelper*& dyn_requestOptions();
+    [[deprecated]] ::Proyecto26::RequestHelper*& dyn_requestOptions();
     // RSG.IPromise`1<Models.Todo[]> <Get>b__0(Proyecto26.Models.Post[] res)
-    // Offset: 0x13D8838
+    // Offset: 0x1960554
     ::RSG::IPromise_1<::ArrayW<::Models::Todo*>>* $Get$b__0(::ArrayW<::Proyecto26::Models::Post*> res);
     // RSG.IPromise`1<Models.User[]> <Get>b__1(Models.Todo[] res)
-    // Offset: 0x13D8910
+    // Offset: 0x196062C
     ::RSG::IPromise_1<::ArrayW<::Models::User*>>* $Get$b__1(::ArrayW<::Models::Todo*> res);
     // RSG.IPromise`1<Models.Photo[]> <Get>b__2(Models.User[] res)
-    // Offset: 0x13D89E8
+    // Offset: 0x1960704
     ::RSG::IPromise_1<::ArrayW<::Models::Photo*>>* $Get$b__2(::ArrayW<::Models::User*> res);
     // System.Void <Get>b__3(Models.Photo[] res)
-    // Offset: 0x13D8B94
+    // Offset: 0x19608B0
     void $Get$b__3(::ArrayW<::Models::Photo*> res);
     // System.Void <Get>b__4(System.Exception err)
-    // Offset: 0x13D8C24
+    // Offset: 0x1960940
     void $Get$b__4(::System::Exception* err);
     // public System.Void .ctor()
-    // Offset: 0x13D8830
+    // Offset: 0x196054C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

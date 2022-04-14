@@ -31,30 +31,22 @@ namespace UnityEngine::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class AndroidAssetPackState : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x59FD0C
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3EC0
     // private readonly System.String <name>k__BackingField
     // Size: 0x8
     // Offset: 0x10
     ::StringW name;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [DebuggerBrowsableAttribute] Offset: 0x59FD48
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3EFC
     // private readonly UnityEngine.Android.AndroidAssetPackStatus <status>k__BackingField
     // Size: 0x4
     // Offset: 0x18
     ::UnityEngine::Android::AndroidAssetPackStatus status;
     // Field size check
     static_assert(sizeof(::UnityEngine::Android::AndroidAssetPackStatus) == 0x4);
-    // [DebuggerBrowsableAttribute] Offset: 0x59FD84
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3F38
     // private readonly UnityEngine.Android.AndroidAssetPackError <error>k__BackingField
     // Size: 0x4
     // Offset: 0x1C
@@ -63,13 +55,13 @@ namespace UnityEngine::Android {
     static_assert(sizeof(::UnityEngine::Android::AndroidAssetPackError) == 0x4);
     public:
     // Get instance field reference: private readonly System.String <name>k__BackingField
-    ::StringW& dyn_$name$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$name$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Android.AndroidAssetPackStatus <status>k__BackingField
-    ::UnityEngine::Android::AndroidAssetPackStatus& dyn_$status$k__BackingField();
+    [[deprecated]] ::UnityEngine::Android::AndroidAssetPackStatus& dyn_$status$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Android.AndroidAssetPackError <error>k__BackingField
-    ::UnityEngine::Android::AndroidAssetPackError& dyn_$error$k__BackingField();
+    [[deprecated]] ::UnityEngine::Android::AndroidAssetPackError& dyn_$error$k__BackingField();
     // System.Void .ctor(System.String name, UnityEngine.Android.AndroidAssetPackStatus status, UnityEngine.Android.AndroidAssetPackError error)
-    // Offset: 0x126DEBC
+    // Offset: 0x1866260
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AndroidAssetPackState* New_ctor(::StringW name, ::UnityEngine::Android::AndroidAssetPackStatus status, ::UnityEngine::Android::AndroidAssetPackError error) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Android::AndroidAssetPackState::.ctor");

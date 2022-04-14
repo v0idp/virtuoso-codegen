@@ -40,15 +40,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::StaticBatcher::$Start$d__1
     class $Start$d__1;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _delay
     // Size: 0x4
     // Offset: 0x18
@@ -59,15 +51,15 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _delay
-    float& dyn__delay();
+    [[deprecated]] float& dyn__delay();
     // private System.Collections.IEnumerator Start()
-    // Offset: 0x13BD684
+    // Offset: 0x1930AD8
     ::System::Collections::IEnumerator* Start();
     // private System.Void Batch()
-    // Offset: 0x13BD6F0
+    // Offset: 0x1930B44
     void Batch();
     // public System.Void .ctor()
-    // Offset: 0x13BD85C
+    // Offset: 0x1930CB0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

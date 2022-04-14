@@ -53,28 +53,28 @@ namespace Oculus::Platform {
     // Set static field: static public System.String PlatformUninitializedError
     static void _set_PlatformUninitializedError(::StringW value);
     // static private System.Void .cctor()
-    // Offset: 0x7DFB84
+    // Offset: 0x925F64
     static void _cctor();
     // static public System.Boolean IsInitialized()
-    // Offset: 0x7DF278
+    // Offset: 0x925658
     static bool IsInitialized();
     // static System.Void ForceInitialized()
-    // Offset: 0x7DF2DC
+    // Offset: 0x9256BC
     static void ForceInitialized();
     // static private System.String getAppID(System.String appId)
-    // Offset: 0x7DF344
+    // Offset: 0x925724
     static ::StringW getAppID(::StringW appId);
     // static public Oculus.Platform.Request`1<Oculus.Platform.Models.PlatformInitialize> AsyncInitialize(System.String appId)
-    // Offset: 0x7DF538
+    // Offset: 0x925918
     static ::Oculus::Platform::Request_1<::Oculus::Platform::Models::PlatformInitialize*>* AsyncInitialize(::StringW appId);
     // static public System.Void Initialize(System.String appId)
-    // Offset: 0x7DF838
+    // Offset: 0x925C18
     static void Initialize(::StringW appId);
     // static private System.String GetAppIDFromConfig()
-    // Offset: 0x7DF508
+    // Offset: 0x9258E8
     static ::StringW GetAppIDFromConfig();
     // public System.Void .ctor()
-    // Offset: 0x7DFB7C
+    // Offset: 0x925F5C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

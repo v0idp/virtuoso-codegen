@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LooperTutorialHelper : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Interactable[] _interactablesToDisable
     // Size: 0x8
     // Offset: 0x18
@@ -101,40 +93,43 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Interactable[] _interactablesToDisable
-    ::ArrayW<::VROSC::Interactable*>& dyn__interactablesToDisable();
+    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__interactablesToDisable();
     // Get instance field reference: private VROSC.LoopStationLoopHandler _loopHandler
-    ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
+    [[deprecated]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _rerecordBlinker
-    ::VROSC::TutorialBlinkingUIElement*& dyn__rerecordBlinker();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__rerecordBlinker();
     // Get instance field reference: private VROSC.InstrumentSettings _boardSettings
-    ::VROSC::InstrumentSettings*& dyn__boardSettings();
+    [[deprecated]] ::VROSC::InstrumentSettings*& dyn__boardSettings();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Interactable> _disabledInteractables
-    ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
     // Get instance field reference: private System.Boolean _waitingForFirstRecording
-    bool& dyn__waitingForFirstRecording();
+    [[deprecated]] bool& dyn__waitingForFirstRecording();
     // protected System.Void Start()
-    // Offset: 0x8A89C0
+    // Offset: 0x197ADA4
     void Start();
     // private System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x8A8AB0
+    // Offset: 0x197AE94
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
     // private System.Void WaitForFirstRecording()
-    // Offset: 0x8A8EC0
+    // Offset: 0x197B350
     void WaitForFirstRecording();
     // private System.Void FirstLoopRecorded(VROSC.LoopPlayer loopPlayer)
-    // Offset: 0x8A8FA4
+    // Offset: 0x197B434
     void FirstLoopRecorded(::VROSC::LoopPlayer* loopPlayer);
     // private System.Void AdditionalLoopRecorded(VROSC.LoopPlayer loopPlayer)
-    // Offset: 0x8A90D8
+    // Offset: 0x197B568
     void AdditionalLoopRecorded(::VROSC::LoopPlayer* loopPlayer);
+    // private System.Void RerecordStarted()
+    // Offset: 0x197B6BC
+    void RerecordStarted();
     // private System.Void DisableAllInteractables()
-    // Offset: 0x8A8DD0
+    // Offset: 0x197B260
     void DisableAllInteractables();
     // private System.Void ResetAll()
-    // Offset: 0x8A8C88
+    // Offset: 0x197B118
     void ResetAll();
     // public System.Void .ctor()
-    // Offset: 0x8A922C
+    // Offset: 0x197B7D8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -193,6 +188,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
   static const MethodInfo* get() {
     static auto* loopPlayer = &::il2cpp_utils::GetClassFromName("VROSC", "LoopPlayer")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::LooperTutorialHelper*), "AdditionalLoopRecorded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{loopPlayer});
+  }
+};
+// Writing MetadataGetter for method: VROSC::LooperTutorialHelper::RerecordStarted
+// Il2CppName: RerecordStarted
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LooperTutorialHelper::*)()>(&VROSC::LooperTutorialHelper::RerecordStarted)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LooperTutorialHelper*), "RerecordStarted", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::LooperTutorialHelper::DisableAllInteractables

@@ -36,15 +36,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class AssetDetails : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.UInt64 AssetId
     // Size: 0x8
     // Offset: 0x10
@@ -81,7 +73,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::LanguagePackInfo* LanguageOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::LanguagePackInfo*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A510C
+    // [ObsoleteAttribute] Offset: 0x6B92C0
     // public readonly Oculus.Platform.Models.LanguagePackInfo Language
     // Size: 0x8
     // Offset: 0x40
@@ -96,23 +88,23 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.UInt64 AssetId
-    uint64_t& dyn_AssetId();
+    [[deprecated]] uint64_t& dyn_AssetId();
     // Get instance field reference: public readonly System.String AssetType
-    ::StringW& dyn_AssetType();
+    [[deprecated]] ::StringW& dyn_AssetType();
     // Get instance field reference: public readonly System.String DownloadStatus
-    ::StringW& dyn_DownloadStatus();
+    [[deprecated]] ::StringW& dyn_DownloadStatus();
     // Get instance field reference: public readonly System.String Filepath
-    ::StringW& dyn_Filepath();
+    [[deprecated]] ::StringW& dyn_Filepath();
     // Get instance field reference: public readonly System.String IapStatus
-    ::StringW& dyn_IapStatus();
+    [[deprecated]] ::StringW& dyn_IapStatus();
     // Get instance field reference: public readonly Oculus.Platform.Models.LanguagePackInfo LanguageOptional
-    ::Oculus::Platform::Models::LanguagePackInfo*& dyn_LanguageOptional();
+    [[deprecated]] ::Oculus::Platform::Models::LanguagePackInfo*& dyn_LanguageOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.LanguagePackInfo Language
-    ::Oculus::Platform::Models::LanguagePackInfo*& dyn_Language();
+    [[deprecated]] ::Oculus::Platform::Models::LanguagePackInfo*& dyn_Language();
     // Get instance field reference: public readonly System.String Metadata
-    ::StringW& dyn_Metadata();
+    [[deprecated]] ::StringW& dyn_Metadata();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7B36C8
+    // Offset: 0x8F9AA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AssetDetails* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::AssetDetails::.ctor");

@@ -48,15 +48,7 @@ namespace System::Runtime::Remoting::Lifetime {
   // [TokenAttribute] Offset: FFFFFFFF
   class LeaseManager : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.ArrayList _objects
     // Size: 0x8
     // Offset: 0x10
@@ -71,26 +63,26 @@ namespace System::Runtime::Remoting::Lifetime {
     static_assert(sizeof(::System::Threading::Timer*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.ArrayList _objects
-    ::System::Collections::ArrayList*& dyn__objects();
+    [[deprecated]] ::System::Collections::ArrayList*& dyn__objects();
     // Get instance field reference: private System.Threading.Timer _timer
-    ::System::Threading::Timer*& dyn__timer();
+    [[deprecated]] ::System::Threading::Timer*& dyn__timer();
     // public System.Void SetPollTime(System.TimeSpan timeSpan)
-    // Offset: 0xC5B204
+    // Offset: 0x10778B4
     void SetPollTime(::System::TimeSpan timeSpan);
     // public System.Void TrackLifetime(System.Runtime.Remoting.ServerIdentity identity)
-    // Offset: 0xC5B2FC
+    // Offset: 0x10779AC
     void TrackLifetime(::System::Runtime::Remoting::ServerIdentity* identity);
     // public System.Void StartManager()
-    // Offset: 0xC5B438
+    // Offset: 0x1077AE8
     void StartManager();
     // public System.Void StopManager()
-    // Offset: 0xC5B5B0
+    // Offset: 0x1077C60
     void StopManager();
     // public System.Void ManageLeases(System.Object state)
-    // Offset: 0xC5B5CC
+    // Offset: 0x1077C7C
     void ManageLeases(::Il2CppObject* state);
     // public System.Void .ctor()
-    // Offset: 0xC5B830
+    // Offset: 0x1077EE0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

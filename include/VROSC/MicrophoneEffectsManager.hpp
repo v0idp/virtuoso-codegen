@@ -28,15 +28,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MicrophoneEffectsManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _active
     // Size: 0x1
     // Offset: 0x18
@@ -73,32 +65,35 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _active
-    bool& dyn__active();
+    [[deprecated]] bool& dyn__active();
     // Get instance field reference: private System.Single _reverbVolumeAdjustment
-    float& dyn__reverbVolumeAdjustment();
+    [[deprecated]] float& dyn__reverbVolumeAdjustment();
     // Get instance field reference: private System.Single _preampReverb
-    float& dyn__preampReverb();
+    [[deprecated]] float& dyn__preampReverb();
     // Get instance field reference: private System.Single _proximityReverbMultiplier
-    float& dyn__proximityReverbMultiplier();
+    [[deprecated]] float& dyn__proximityReverbMultiplier();
     // Get instance field reference: private System.Boolean _useProximity
-    bool& dyn__useProximity();
+    [[deprecated]] bool& dyn__useProximity();
     // public System.Void Activate()
-    // Offset: 0x8B32AC
+    // Offset: 0xAC6D64
     void Activate();
     // public System.Void Deactivate()
-    // Offset: 0x8B3334
+    // Offset: 0xAC6DEC
     void Deactivate();
     // public System.Void SetProximity(System.Single proximity)
-    // Offset: 0x8B2EB4
+    // Offset: 0xAC696C
     void SetProximity(float proximity);
     // public System.Void SetPreampReverb(System.Single preampReverb)
-    // Offset: 0x8B38B8
+    // Offset: 0xAC7448
     void SetPreampReverb(float preampReverb);
+    // public System.Void SetPreviewReverb(System.Boolean enabled)
+    // Offset: 0xAC7004
+    void SetPreviewReverb(bool enabled);
     // System.Void SetUseProximity(System.Boolean state)
-    // Offset: 0x8B38C0
+    // Offset: 0xAC7450
     void SetUseProximity(bool state);
     // public System.Void .ctor()
-    // Offset: 0x8B38CC
+    // Offset: 0xAC745C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -148,6 +143,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
   static const MethodInfo* get() {
     static auto* preampReverb = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneEffectsManager*), "SetPreampReverb", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{preampReverb});
+  }
+};
+// Writing MetadataGetter for method: VROSC::MicrophoneEffectsManager::SetPreviewReverb
+// Il2CppName: SetPreviewReverb
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::MicrophoneEffectsManager::*)(bool)>(&VROSC::MicrophoneEffectsManager::SetPreviewReverb)> {
+  static const MethodInfo* get() {
+    static auto* enabled = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneEffectsManager*), "SetPreviewReverb", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{enabled});
   }
 };
 // Writing MetadataGetter for method: VROSC::MicrophoneEffectsManager::SetUseProximity

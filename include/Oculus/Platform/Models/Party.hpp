@@ -39,15 +39,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class Party : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.UInt64 ID
     // Size: 0x8
     // Offset: 0x10
@@ -60,7 +52,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::UserList* InvitedUsersOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A52EC
+    // [ObsoleteAttribute] Offset: 0x6B94A0
     // public readonly Oculus.Platform.Models.UserList InvitedUsers
     // Size: 0x8
     // Offset: 0x20
@@ -73,7 +65,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::User* LeaderOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::User*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A5324
+    // [ObsoleteAttribute] Offset: 0x6B94D8
     // public readonly Oculus.Platform.Models.User Leader
     // Size: 0x8
     // Offset: 0x30
@@ -86,7 +78,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::Room* RoomOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::Room*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A535C
+    // [ObsoleteAttribute] Offset: 0x6B9510
     // public readonly Oculus.Platform.Models.Room Room
     // Size: 0x8
     // Offset: 0x40
@@ -99,7 +91,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::UserList* UsersOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A5394
+    // [ObsoleteAttribute] Offset: 0x6B9548
     // public readonly Oculus.Platform.Models.UserList Users
     // Size: 0x8
     // Offset: 0x50
@@ -108,25 +100,25 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
     public:
     // Get instance field reference: public readonly System.UInt64 ID
-    uint64_t& dyn_ID();
+    [[deprecated]] uint64_t& dyn_ID();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList InvitedUsersOptional
-    ::Oculus::Platform::Models::UserList*& dyn_InvitedUsersOptional();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsersOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList InvitedUsers
-    ::Oculus::Platform::Models::UserList*& dyn_InvitedUsers();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsers();
     // Get instance field reference: public readonly Oculus.Platform.Models.User LeaderOptional
-    ::Oculus::Platform::Models::User*& dyn_LeaderOptional();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_LeaderOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.User Leader
-    ::Oculus::Platform::Models::User*& dyn_Leader();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_Leader();
     // Get instance field reference: public readonly Oculus.Platform.Models.Room RoomOptional
-    ::Oculus::Platform::Models::Room*& dyn_RoomOptional();
+    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_RoomOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.Room Room
-    ::Oculus::Platform::Models::Room*& dyn_Room();
+    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_Room();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList UsersOptional
-    ::Oculus::Platform::Models::UserList*& dyn_UsersOptional();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_UsersOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList Users
-    ::Oculus::Platform::Models::UserList*& dyn_Users();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_Users();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x97C8D0
+    // Offset: 0xB4EC6C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Party* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::Party::.ctor");

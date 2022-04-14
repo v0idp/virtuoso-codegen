@@ -26,15 +26,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class TransactionCallbackProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -53,11 +45,11 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // public System.Void Dispose()
-    // Offset: 0xC40E70
+    // Offset: 0xD653DC
     void Dispose();
   }; // Firebase.Firestore.TransactionCallbackProxy
   #pragma pack(pop)

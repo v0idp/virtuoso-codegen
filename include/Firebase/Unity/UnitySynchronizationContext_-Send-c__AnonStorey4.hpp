@@ -31,15 +31,7 @@ namespace Firebase::Unity {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UnitySynchronizationContext::$Send$c__AnonStorey4 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Threading.ManualResetEvent newSignal
     // Size: 0x8
     // Offset: 0x10
@@ -54,14 +46,14 @@ namespace Firebase::Unity {
     static_assert(sizeof(::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey3*) == 0x8);
     public:
     // Get instance field reference: System.Threading.ManualResetEvent newSignal
-    ::System::Threading::ManualResetEvent*& dyn_newSignal();
+    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_newSignal();
     // Get instance field reference: Firebase.Unity.UnitySynchronizationContext/Firebase.Unity.<Send>c__AnonStorey3 <>f__ref$3
-    ::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey3*& dyn_$$f__ref$3();
+    [[deprecated]] ::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey3*& dyn_$$f__ref$3();
     // System.Void <>m__0(System.Object x)
-    // Offset: 0x12CC338
+    // Offset: 0x18CB6C8
     void $$m__0(::Il2CppObject* x);
     // public System.Void .ctor()
-    // Offset: 0x12CBFFC
+    // Offset: 0x18CB38C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

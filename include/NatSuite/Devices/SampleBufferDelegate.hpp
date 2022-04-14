@@ -39,20 +39,20 @@ namespace NatSuite::Devices {
   class SampleBufferDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xB09FD8
+    // Offset: 0xDDB580
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SampleBufferDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::SampleBufferDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SampleBufferDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Single[] sampleBuffer, System.Int64 timestamp)
-    // Offset: 0xB09FE8
+    // Offset: 0xDDB590
     void Invoke(::ArrayW<float> sampleBuffer, int64_t timestamp);
     // public System.IAsyncResult BeginInvoke(System.Single[] sampleBuffer, System.Int64 timestamp, System.AsyncCallback callback, System.Object object)
-    // Offset: 0xB0A378
+    // Offset: 0xDDB920
     ::System::IAsyncResult* BeginInvoke(::ArrayW<float> sampleBuffer, int64_t timestamp, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xB0A40C
+    // Offset: 0xDDB9B4
     void EndInvoke(::System::IAsyncResult* result);
   }; // NatSuite.Devices.SampleBufferDelegate
   #pragma pack(pop)

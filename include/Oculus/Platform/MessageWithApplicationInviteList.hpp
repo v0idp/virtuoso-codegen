@@ -35,10 +35,10 @@ namespace Oculus::Platform {
   class MessageWithApplicationInviteList : public ::Oculus::Platform::Message_1<::Oculus::Platform::Models::ApplicationInviteList*> {
     public:
     // protected Oculus.Platform.Models.ApplicationInviteList GetDataFromMessage(System.IntPtr c_message)
-    // Offset: 0x978B74
+    // Offset: 0xB4AF10
     ::Oculus::Platform::Models::ApplicationInviteList* GetDataFromMessage(::System::IntPtr c_message);
     // public System.Void .ctor(System.IntPtr c_message)
-    // Offset: 0x9763CC
+    // Offset: 0xB48768
     // Implemented from: Oculus.Platform.Message`1
     // Base method: System.Void Message_1::.ctor(System.IntPtr c_message)
     // Base method: System.Void Message::.ctor(System.IntPtr c_message)
@@ -48,7 +48,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<MessageWithApplicationInviteList*, creationType>(c_message)));
     }
     // public override Oculus.Platform.Models.ApplicationInviteList GetApplicationInviteList()
-    // Offset: 0x978B34
+    // Offset: 0xB4AED0
     // Implemented from: Oculus.Platform.Message
     // Base method: Oculus.Platform.Models.ApplicationInviteList Message::GetApplicationInviteList()
     ::Oculus::Platform::Models::ApplicationInviteList* GetApplicationInviteList();

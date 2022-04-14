@@ -46,22 +46,22 @@ namespace DG::Tweening {
     // Nested type: ::DG::Tweening::DOVirtual::$$c__DisplayClass0_0
     class $$c__DisplayClass0_0;
     // static public DG.Tweening.Tweener Float(System.Single from, System.Single to, System.Single duration, DG.Tweening.TweenCallback`1<System.Single> onVirtualUpdate)
-    // Offset: 0x109A814
+    // Offset: 0x15DCE3C
     static ::DG::Tweening::Tweener* Float(float from, float to, float duration, ::DG::Tweening::TweenCallback_1<float>* onVirtualUpdate);
     // static public System.Single EasedValue(System.Single from, System.Single to, System.Single lifetimePercentage, DG.Tweening.Ease easeType)
-    // Offset: 0x109A9FC
+    // Offset: 0x15DD024
     static float EasedValue(float from, float to, float lifetimePercentage, ::DG::Tweening::Ease easeType);
     // static public System.Single EasedValue(System.Single from, System.Single to, System.Single lifetimePercentage, DG.Tweening.Ease easeType, System.Single overshoot)
-    // Offset: 0x109AAA0
+    // Offset: 0x15DD0C8
     static float EasedValue(float from, float to, float lifetimePercentage, ::DG::Tweening::Ease easeType, float overshoot);
     // static public System.Single EasedValue(System.Single from, System.Single to, System.Single lifetimePercentage, DG.Tweening.Ease easeType, System.Single amplitude, System.Single period)
-    // Offset: 0x109AB4C
+    // Offset: 0x15DD174
     static float EasedValue(float from, float to, float lifetimePercentage, ::DG::Tweening::Ease easeType, float amplitude, float period);
     // static public System.Single EasedValue(System.Single from, System.Single to, System.Single lifetimePercentage, UnityEngine.AnimationCurve easeCurve)
-    // Offset: 0x109AB90
+    // Offset: 0x15DD1B8
     static float EasedValue(float from, float to, float lifetimePercentage, ::UnityEngine::AnimationCurve* easeCurve);
     // static public DG.Tweening.Tween DelayedCall(System.Single delay, DG.Tweening.TweenCallback callback, System.Boolean ignoreTimeScale)
-    // Offset: 0x109ACE0
+    // Offset: 0x15DD308
     static ::DG::Tweening::Tween* DelayedCall(float delay, ::DG::Tweening::TweenCallback* callback, bool ignoreTimeScale);
   }; // DG.Tweening.DOVirtual
   #pragma pack(pop)

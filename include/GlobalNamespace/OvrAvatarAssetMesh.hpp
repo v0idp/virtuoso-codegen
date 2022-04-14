@@ -45,15 +45,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarAssetMesh : public ::GlobalNamespace::OvrAvatarAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Mesh mesh
     // Size: 0x8
     // Offset: 0x18
@@ -76,32 +68,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator uint64_t
     constexpr operator uint64_t() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Mesh mesh
-    ::UnityEngine::Mesh*& dyn_mesh();
+    [[deprecated]] ::UnityEngine::Mesh*& dyn_mesh();
     // Get instance field reference: private ovrAvatarSkinnedMeshPose skinnedBindPose
-    ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedBindPose();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedBindPose();
     // Get instance field reference: public System.String[] jointNames
-    ::ArrayW<::StringW>& dyn_jointNames();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_jointNames();
     // public System.Void .ctor(System.UInt64 _assetId, System.IntPtr asset, ovrAvatarAssetType meshType)
-    // Offset: 0x92625C
+    // Offset: 0xF87430
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarAssetMesh* New_ctor(uint64_t _assetId, ::System::IntPtr asset, ::GlobalNamespace::ovrAvatarAssetType meshType) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarAssetMesh::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarAssetMesh*, creationType>(_assetId, asset, meshType)));
     }
     // private System.Void LoadSubmeshes(System.IntPtr asset, System.IntPtr indexBufferPtr, System.UInt64 indexCount)
-    // Offset: 0x9274E0
+    // Offset: 0xF886B4
     void LoadSubmeshes(::System::IntPtr asset, ::System::IntPtr indexBufferPtr, uint64_t indexCount);
     // private System.Void LoadBlendShapes(System.IntPtr asset, System.Int64 vertexCount)
-    // Offset: 0x9270B4
+    // Offset: 0xF88288
     void LoadBlendShapes(::System::IntPtr asset, int64_t vertexCount);
     // private System.Void SetSkinnedBindPose(System.IntPtr asset, ovrAvatarAssetType meshType)
-    // Offset: 0x926E44
+    // Offset: 0xF88018
     void SetSkinnedBindPose(::System::IntPtr asset, ::GlobalNamespace::ovrAvatarAssetType meshType);
     // private System.Void GetVertexAndIndexData(System.IntPtr asset, ovrAvatarAssetType meshType, out System.Int64 vertexCount, out System.IntPtr vertexBuffer, out System.UInt32 indexCount, out System.IntPtr indexBuffer)
-    // Offset: 0x926F20
+    // Offset: 0xF880F4
     void GetVertexAndIndexData(::System::IntPtr asset, ::GlobalNamespace::ovrAvatarAssetType meshType, ByRef<int64_t> vertexCount, ByRef<::System::IntPtr> vertexBuffer, ByRef<uint> indexCount, ByRef<::System::IntPtr> indexBuffer);
     // public UnityEngine.SkinnedMeshRenderer CreateSkinnedMeshRendererOnObject(UnityEngine.GameObject target)
-    // Offset: 0x927770
+    // Offset: 0xF88944
     ::UnityEngine::SkinnedMeshRenderer* CreateSkinnedMeshRendererOnObject(::UnityEngine::GameObject* target);
   }; // OvrAvatarAssetMesh
   #pragma pack(pop)

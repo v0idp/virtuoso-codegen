@@ -63,15 +63,7 @@ namespace System::Net {
     public:
     // Writing base type padding for base size: 0x1A to desired offset: 0x20
     char ___base_padding[0x6] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Uri uri
     // Size: 0x8
     // Offset: 0x20
@@ -150,68 +142,73 @@ namespace System::Net {
     static_assert(sizeof(::System::IO::Stream*) == 0x8);
     public:
     // Get instance field reference: private System.Uri uri
-    ::System::Uri*& dyn_uri();
+    [[deprecated]] ::System::Uri*& dyn_uri();
     // Get instance field reference: private System.Net.WebHeaderCollection webHeaders
-    ::System::Net::WebHeaderCollection*& dyn_webHeaders();
+    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_webHeaders();
     // Get instance field reference: private System.Net.CookieCollection cookieCollection
-    ::System::Net::CookieCollection*& dyn_cookieCollection();
+    [[deprecated]] ::System::Net::CookieCollection*& dyn_cookieCollection();
     // Get instance field reference: private System.String method
-    ::StringW& dyn_method();
+    [[deprecated]] ::StringW& dyn_method();
     // Get instance field reference: private System.Version version
-    ::System::Version*& dyn_version();
+    [[deprecated]] ::System::Version*& dyn_version();
     // Get instance field reference: private System.Net.HttpStatusCode statusCode
-    ::System::Net::HttpStatusCode& dyn_statusCode();
+    [[deprecated]] ::System::Net::HttpStatusCode& dyn_statusCode();
     // Get instance field reference: private System.String statusDescription
-    ::StringW& dyn_statusDescription();
+    [[deprecated]] ::StringW& dyn_statusDescription();
     // Get instance field reference: private System.Int64 contentLength
-    int64_t& dyn_contentLength();
+    [[deprecated]] int64_t& dyn_contentLength();
     // Get instance field reference: private System.String contentType
-    ::StringW& dyn_contentType();
+    [[deprecated]] ::StringW& dyn_contentType();
     // Get instance field reference: private System.Net.CookieContainer cookie_container
-    ::System::Net::CookieContainer*& dyn_cookie_container();
+    [[deprecated]] ::System::Net::CookieContainer*& dyn_cookie_container();
     // Get instance field reference: private System.Boolean disposed
-    bool& dyn_disposed();
+    [[deprecated]] bool& dyn_disposed();
     // Get instance field reference: private System.IO.Stream stream
-    ::System::IO::Stream*& dyn_stream();
+    [[deprecated]] ::System::IO::Stream*& dyn_stream();
     // public System.Net.HttpStatusCode get_StatusCode()
-    // Offset: 0xD92100
+    // Offset: 0x10EF2EC
     ::System::Net::HttpStatusCode get_StatusCode();
     // public System.String get_StatusDescription()
-    // Offset: 0xD92108
+    // Offset: 0x10EF2F4
     ::StringW get_StatusDescription();
     // System.Void .ctor(System.Uri uri, System.String method, System.Net.HttpStatusCode status, System.Net.WebHeaderCollection headers)
-    // Offset: 0xD91800
+    // Offset: 0x10EE928
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HttpWebResponse* New_ctor(::System::Uri* uri, ::StringW method, ::System::Net::HttpStatusCode status, ::System::Net::WebHeaderCollection* headers) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::HttpWebResponse::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<HttpWebResponse*, creationType>(uri, method, status, headers)));
     }
     // System.Void .ctor(System.Uri uri, System.String method, System.Net.WebResponseStream stream, System.Net.CookieContainer container)
-    // Offset: 0xD918BC
+    // Offset: 0x10EE9E8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HttpWebResponse* New_ctor(::System::Uri* uri, ::StringW method, ::System::Net::WebResponseStream* stream, ::System::Net::CookieContainer* container) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::HttpWebResponse::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<HttpWebResponse*, creationType>(uri, method, stream, container)));
     }
     // private System.Void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xD9224C
+    // Offset: 0x10EF3C0
     void System_Runtime_Serialization_ISerializable_GetObjectData(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext);
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0xD92438
+    // Offset: 0x10EF5AC
     void System_IDisposable_Dispose();
     // private System.Void CheckDisposed()
-    // Offset: 0xD9212C
+    // Offset: 0x10EF274
     void CheckDisposed();
     // private System.Void FillCookies()
-    // Offset: 0xD91B9C
+    // Offset: 0x10EECEC
     void FillCookies();
     // public override System.Net.WebHeaderCollection get_Headers()
-    // Offset: 0xD920F8
+    // Offset: 0x10EF248
     // Implemented from: System.Net.WebResponse
     // Base method: System.Net.WebHeaderCollection WebResponse::get_Headers()
     ::System::Net::WebHeaderCollection* get_Headers();
+    // public override System.Uri get_ResponseUri()
+    // Offset: 0x10EF250
+    // Implemented from: System.Net.WebResponse
+    // Base method: System.Uri WebResponse::get_ResponseUri()
+    ::System::Uri* get_ResponseUri();
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xD91DBC
+    // Offset: 0x10EEF0C
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -220,7 +217,7 @@ namespace System::Net {
       return THROW_UNLESS((::il2cpp_utils::New<HttpWebResponse*, creationType>(serializationInfo, streamingContext)));
     }
     // public System.Void .ctor()
-    // Offset: 0xD9245C
+    // Offset: 0x10EF5D0
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::.ctor()
     // Base method: System.Void MarshalByRefObject::.ctor()
@@ -231,22 +228,22 @@ namespace System::Net {
       return THROW_UNLESS((::il2cpp_utils::New<HttpWebResponse*, creationType>()));
     }
     // public override System.IO.Stream GetResponseStream()
-    // Offset: 0xD921A4
+    // Offset: 0x10EF318
     // Implemented from: System.Net.WebResponse
     // Base method: System.IO.Stream WebResponse::GetResponseStream()
     ::System::IO::Stream* GetResponseStream();
     // protected override System.Void GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xD92258
+    // Offset: 0x10EF3CC
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     void GetObjectData(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext);
     // public override System.Void Close()
-    // Offset: 0xD92404
+    // Offset: 0x10EF578
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::Close()
     void Close();
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xD92448
+    // Offset: 0x10EF5BC
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);
@@ -320,6 +317,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Net::WebHeaderCollection* (System::Net::HttpWebResponse::*)()>(&System::Net::HttpWebResponse::get_Headers)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::Net::HttpWebResponse*), "get_Headers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::Net::HttpWebResponse::get_ResponseUri
+// Il2CppName: get_ResponseUri
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Uri* (System::Net::HttpWebResponse::*)()>(&System::Net::HttpWebResponse::get_ResponseUri)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Net::HttpWebResponse*), "get_ResponseUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: System::Net::HttpWebResponse::New_ctor

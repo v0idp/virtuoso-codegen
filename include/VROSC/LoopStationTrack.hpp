@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationTrack : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String TrackId
     // Size: 0x8
     // Offset: 0x10
@@ -151,39 +143,39 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: public System.String TrackId
-    ::StringW& dyn_TrackId();
+    [[deprecated]] ::StringW& dyn_TrackId();
     // Get instance field reference: public System.Int32 TrackNumber
-    int& dyn_TrackNumber();
+    [[deprecated]] int& dyn_TrackNumber();
     // Get instance field reference: public System.String InstrumentName
-    ::StringW& dyn_InstrumentName();
+    [[deprecated]] ::StringW& dyn_InstrumentName();
     // Get instance field reference: public System.String PatchName
-    ::StringW& dyn_PatchName();
+    [[deprecated]] ::StringW& dyn_PatchName();
     // Get instance field reference: public System.Single Volume
-    float& dyn_Volume();
+    [[deprecated]] float& dyn_Volume();
     // Get instance field reference: public System.Single NormalizeMultiplier
-    float& dyn_NormalizeMultiplier();
+    [[deprecated]] float& dyn_NormalizeMultiplier();
     // Get instance field reference: public System.Boolean IsMuted
-    bool& dyn_IsMuted();
+    [[deprecated]] bool& dyn_IsMuted();
     // Get instance field reference: public System.String BelongsToGroup
-    ::StringW& dyn_BelongsToGroup();
+    [[deprecated]] ::StringW& dyn_BelongsToGroup();
     // Get instance field reference: public System.Int32 PositionInGroup
-    int& dyn_PositionInGroup();
+    [[deprecated]] int& dyn_PositionInGroup();
     // Get instance field reference: public System.String DisplayName
-    ::StringW& dyn_DisplayName();
+    [[deprecated]] ::StringW& dyn_DisplayName();
     // Get instance field reference: public System.Int32 GlobalSyncStartOffset
-    int& dyn_GlobalSyncStartOffset();
+    [[deprecated]] int& dyn_GlobalSyncStartOffset();
     // Get instance field reference: public System.Int32 LoopLength
-    int& dyn_LoopLength();
+    [[deprecated]] int& dyn_LoopLength();
     // Get instance field reference: public VROSC.LoopPlaybackConfigData PlaybackConfigData
-    ::VROSC::LoopPlaybackConfigData*& dyn_PlaybackConfigData();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigData*& dyn_PlaybackConfigData();
     // Get instance field reference: public VROSC.LoopPlaybackConfigData StartConfigData
-    ::VROSC::LoopPlaybackConfigData*& dyn_StartConfigData();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigData*& dyn_StartConfigData();
     // Get instance field reference: public System.Boolean IsPlaying
-    bool& dyn_IsPlaying();
+    [[deprecated]] bool& dyn_IsPlaying();
     // Get instance field reference: public UnityEngine.Color Color
-    ::UnityEngine::Color& dyn_Color();
+    [[deprecated]] ::UnityEngine::Color& dyn_Color();
     // public System.Void .ctor()
-    // Offset: 0x8A66F4
+    // Offset: 0x196C310
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -143,7 +143,7 @@ namespace System::Net {
     // Size: 0xFFFFFFFF
     // Offset: 0x90
     ::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Net::WebResponseStream*> $$u__3;
-    // [TupleElementNamesAttribute] Offset: 0x592F9C
+    // [TupleElementNamesAttribute] Offset: 0x69E32C
     // private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.ValueTuple`5<System.Net.HttpWebResponse,System.Boolean,System.Boolean,System.Net.BufferOffsetSize,System.Net.WebOperation>> <>u__4
     // Size: 0xFFFFFFFF
     // Offset: 0x98
@@ -160,44 +160,44 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.HttpWebResponse> <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Net::HttpWebResponse*>& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Net::HttpWebResponse*>& dyn_$$t__builder();
     // Get instance field reference: public System.Net.HttpWebRequest <>4__this
-    ::System::Net::HttpWebRequest*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_$$4__this();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Net.WebOperation <operation>5__1
-    ::System::Net::WebOperation*& dyn_$operation$5__1();
+    [[deprecated]] ::System::Net::WebOperation*& dyn_$operation$5__1();
     // Get instance field reference: private System.Net.WebException <throwMe>5__2
-    ::System::Net::WebException*& dyn_$throwMe$5__2();
+    [[deprecated]] ::System::Net::WebException*& dyn_$throwMe$5__2();
     // Get instance field reference: private System.Net.WebCompletionSource <completion>5__3
-    ::System::Net::WebCompletionSource*& dyn_$completion$5__3();
+    [[deprecated]] ::System::Net::WebCompletionSource*& dyn_$completion$5__3();
     // Get instance field reference: private System.Boolean <redirect>5__4
-    bool& dyn_$redirect$5__4();
+    [[deprecated]] bool& dyn_$redirect$5__4();
     // Get instance field reference: private System.Net.HttpWebResponse <response>5__5
-    ::System::Net::HttpWebResponse*& dyn_$response$5__5();
+    [[deprecated]] ::System::Net::HttpWebResponse*& dyn_$response$5__5();
     // Get instance field reference: private System.Net.WebOperation <ntlm>5__6
-    ::System::Net::WebOperation*& dyn_$ntlm$5__6();
+    [[deprecated]] ::System::Net::WebOperation*& dyn_$ntlm$5__6();
     // Get instance field reference: private System.Boolean <mustReadAll>5__7
-    bool& dyn_$mustReadAll$5__7();
+    [[deprecated]] bool& dyn_$mustReadAll$5__7();
     // Get instance field reference: private System.Net.WebResponseStream <stream>5__8
-    ::System::Net::WebResponseStream*& dyn_$stream$5__8();
+    [[deprecated]] ::System::Net::WebResponseStream*& dyn_$stream$5__8();
     // Get instance field reference: private System.Net.BufferOffsetSize <writeBuffer>5__9
-    ::System::Net::BufferOffsetSize*& dyn_$writeBuffer$5__9();
+    [[deprecated]] ::System::Net::BufferOffsetSize*& dyn_$writeBuffer$5__9();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.WebRequestStream> <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Net::WebRequestStream*>& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Net::WebRequestStream*>& dyn_$$u__1();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__2
-    ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__2();
+    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__2();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.WebResponseStream> <>u__3
-    ::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Net::WebResponseStream*>& dyn_$$u__3();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Net::WebResponseStream*>& dyn_$$u__3();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.ValueTuple`5<System.Net.HttpWebResponse,System.Boolean,System.Boolean,System.Net.BufferOffsetSize,System.Net.WebOperation>> <>u__4
-    typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::ValueTuple_5<::System::Net::HttpWebResponse*, bool, bool, ::System::Net::BufferOffsetSize*, ::System::Net::WebOperation*>>::ConfiguredTaskAwaiter& dyn_$$u__4();
+    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::ValueTuple_5<::System::Net::HttpWebResponse*, bool, bool, ::System::Net::BufferOffsetSize*, ::System::Net::WebOperation*>>::ConfiguredTaskAwaiter& dyn_$$u__4();
     // private System.Void MoveNext()
-    // Offset: 0x8DCA64
+    // Offset: 0x9F77DC
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8DD9AC
+    // Offset: 0x9F8724
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.Net.HttpWebRequest/System.Net.<MyGetResponseAsync>d__236
   // WARNING Not writing size check since size may be invalid!

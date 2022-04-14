@@ -41,7 +41,7 @@ namespace System::Collections::Generic {
     // Offset: 0xFFFFFFFFFFFFFFFF
     T get_Current() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Generic::IEnumerator_1::get_Current");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "get_Current", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Collections::Generic::IEnumerator_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___internal__method);
     }
   }; // System.Collections.Generic.IEnumerator`1

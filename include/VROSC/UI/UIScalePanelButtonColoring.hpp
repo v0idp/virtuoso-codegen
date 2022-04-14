@@ -36,15 +36,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIScalePanelButtonColoring : public ::VROSC::UI::UIInteractableColoring {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _renderer
     // Size: 0x8
     // Offset: 0x48
@@ -77,29 +69,29 @@ namespace VROSC::UI {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Boolean _natural
-    bool& dyn__natural();
+    [[deprecated]] bool& dyn__natural();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // Get instance field reference: private System.Boolean _toggled
-    bool& dyn__toggled();
+    [[deprecated]] bool& dyn__toggled();
     // Get instance field reference: private System.Int32 _axis
-    int& dyn__axis();
+    [[deprecated]] int& dyn__axis();
     // private System.Void Awake()
-    // Offset: 0x139F8B8
+    // Offset: 0x19131E4
     void Awake();
     // public System.Void SetAxis(System.Int32 axis)
-    // Offset: 0x139F928
+    // Offset: 0x1913254
     void SetAxis(int axis);
     // public System.Void SetToggled(System.Boolean toggled)
-    // Offset: 0x139F930
+    // Offset: 0x191325C
     void SetToggled(bool toggled);
     // private System.Void GetValues()
-    // Offset: 0x139FAAC
+    // Offset: 0x19133D8
     void GetValues();
     // public System.Void .ctor()
-    // Offset: 0x139FBF8
+    // Offset: 0x1913524
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -113,7 +105,7 @@ namespace VROSC::UI {
       return THROW_UNLESS((::il2cpp_utils::New<UIScalePanelButtonColoring*, creationType>()));
     }
     // public override System.Void UpdateColor()
-    // Offset: 0x139F93C
+    // Offset: 0x1913268
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::UpdateColor()
     void UpdateColor();

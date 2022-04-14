@@ -32,15 +32,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class CommunitySessionsDataController::$$c__DisplayClass5_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.CommunitySessionsDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -61,16 +53,16 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public VROSC.CommunitySessionsDataController <>4__this
-    ::VROSC::CommunitySessionsDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::CommunitySessionsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // System.Void <RemoveSession>b__0()
-    // Offset: 0x1360C64
+    // Offset: 0x95D758
     void $RemoveSession$b__0();
     // public System.Void .ctor()
-    // Offset: 0x1360C5C
+    // Offset: 0x95D750
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

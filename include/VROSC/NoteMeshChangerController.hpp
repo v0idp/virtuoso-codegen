@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteMeshChangerController : public ::VROSC::NoteBoardNoteVisualController {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NotefieldColorSettings _colorSettings
     // Size: 0x8
     // Offset: 0x20
@@ -106,27 +98,27 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
     public:
     // Get instance field reference: private VROSC.NotefieldColorSettings _colorSettings
-    ::VROSC::NotefieldColorSettings*& dyn__colorSettings();
+    [[deprecated]] ::VROSC::NotefieldColorSettings*& dyn__colorSettings();
     // Get instance field reference: private System.Boolean _sendMultiNoteData
-    bool& dyn__sendMultiNoteData();
+    [[deprecated]] bool& dyn__sendMultiNoteData();
     // Get instance field reference: private UnityEngine.Color _restingColor
-    ::UnityEngine::Color& dyn__restingColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__restingColor();
     // Get instance field reference: private System.Boolean _animating
-    bool& dyn__animating();
+    [[deprecated]] bool& dyn__animating();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Single _note
-    float& dyn__note();
+    [[deprecated]] float& dyn__note();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // private System.Void CreateBlock()
-    // Offset: 0xA15984
+    // Offset: 0xC5A480
     void CreateBlock();
     // private System.Void SetPlayingColor(UnityEngine.Vector3 power, System.Single velocity, System.Single highlight)
-    // Offset: 0xA15A50
+    // Offset: 0xC5A54C
     void SetPlayingColor(::UnityEngine::Vector3 power, float velocity, float highlight);
     // public System.Void .ctor()
-    // Offset: 0xA15D20
+    // Offset: 0xC5A81C
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -140,17 +132,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NoteMeshChangerController*, creationType>()));
     }
     // public override System.Void Setup(VROSC.NoteBoardNote noteField, System.Boolean octave, System.Boolean isOdd)
-    // Offset: 0xA158B8
+    // Offset: 0xC5A3B4
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::Setup(VROSC.NoteBoardNote noteField, System.Boolean octave, System.Boolean isOdd)
     void Setup(::VROSC::NoteBoardNote* noteField, bool octave, bool isOdd);
     // public override System.Void SetRestingColor(UnityEngine.Color color)
-    // Offset: 0xA15C0C
+    // Offset: 0xC5A708
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::SetRestingColor(UnityEngine.Color color)
     void SetRestingColor(::UnityEngine::Color color);
     // public override System.Void UpdateVisuals()
-    // Offset: 0xA15C18
+    // Offset: 0xC5A714
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::UpdateVisuals()
     void UpdateVisuals();

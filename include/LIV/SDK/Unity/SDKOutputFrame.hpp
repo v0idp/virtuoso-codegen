@@ -50,14 +50,14 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.RENDERING_PIPELINE renderingPipeline
-    ::LIV::SDK::Unity::RENDERING_PIPELINE& dyn_renderingPipeline();
+    [[deprecated]] ::LIV::SDK::Unity::RENDERING_PIPELINE& dyn_renderingPipeline();
     // Get instance field reference: public LIV.SDK.Unity.SDKTrackedSpace trackedSpace
-    ::LIV::SDK::Unity::SDKTrackedSpace& dyn_trackedSpace();
+    [[deprecated]] ::LIV::SDK::Unity::SDKTrackedSpace& dyn_trackedSpace();
     // static public LIV.SDK.Unity.SDKOutputFrame get_empty()
-    // Offset: 0xB03B44
+    // Offset: 0xDD50EC
     static ::LIV::SDK::Unity::SDKOutputFrame get_empty();
     // public override System.String ToString()
-    // Offset: 0xB03C00
+    // Offset: 0xDD51A8
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

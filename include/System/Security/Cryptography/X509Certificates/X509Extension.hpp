@@ -30,15 +30,7 @@ namespace System::Security::Cryptography::X509Certificates {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509Extension : public ::System::Security::Cryptography::AsnEncodedData {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _critical
     // Size: 0x1
     // Offset: 0x20
@@ -51,18 +43,18 @@ namespace System::Security::Cryptography::X509Certificates {
       return critical;
     }
     // Get instance field reference: private System.Boolean _critical
-    bool& dyn__critical();
+    [[deprecated]] bool& dyn__critical();
     // public System.Boolean get_Critical()
-    // Offset: 0xAC8F04
+    // Offset: 0xC54520
     bool get_Critical();
     // public System.Void set_Critical(System.Boolean value)
-    // Offset: 0xAC8F0C
+    // Offset: 0xC54528
     void set_Critical(bool value);
     // System.String FormatUnkownData(System.Byte[] data)
-    // Offset: 0xAC3DB8
+    // Offset: 0xC4F3D4
     ::StringW FormatUnkownData(::ArrayW<uint8_t> data);
     // protected System.Void .ctor()
-    // Offset: 0xAC32C4
+    // Offset: 0xC4E8E0
     // Implemented from: System.Security.Cryptography.AsnEncodedData
     // Base method: System.Void AsnEncodedData::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -72,7 +64,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return THROW_UNLESS((::il2cpp_utils::New<X509Extension*, creationType>()));
     }
     // public override System.Void CopyFrom(System.Security.Cryptography.AsnEncodedData asnEncodedData)
-    // Offset: 0xAC8F18
+    // Offset: 0xC54534
     // Implemented from: System.Security.Cryptography.AsnEncodedData
     // Base method: System.Void AsnEncodedData::CopyFrom(System.Security.Cryptography.AsnEncodedData asnEncodedData)
     void CopyFrom(::System::Security::Cryptography::AsnEncodedData* asnEncodedData);

@@ -49,15 +49,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PadUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected UnityEngine.Transform _alignment
     // Size: 0x8
     // Offset: 0x18
@@ -138,55 +130,55 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected UnityEngine.Transform _alignment
-    ::UnityEngine::Transform*& dyn__alignment();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__alignment();
     // Get instance field reference: protected System.Boolean _align
-    bool& dyn__align();
+    [[deprecated]] bool& dyn__align();
     // Get instance field reference: protected VROSC.UIHoldButton _deleteButton
-    ::VROSC::UIHoldButton*& dyn__deleteButton();
+    [[deprecated]] ::VROSC::UIHoldButton*& dyn__deleteButton();
     // Get instance field reference: protected VROSC.TransformMover _drumMover
-    ::VROSC::TransformMover*& dyn__drumMover();
+    [[deprecated]] ::VROSC::TransformMover*& dyn__drumMover();
     // Get instance field reference: protected VROSC.Grabable _extendedHover
-    ::VROSC::Grabable*& dyn__extendedHover();
+    [[deprecated]] ::VROSC::Grabable*& dyn__extendedHover();
     // Get instance field reference: protected UnityEngine.Transform _UIContent
-    ::UnityEngine::Transform*& dyn__UIContent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__UIContent();
     // Get instance field reference: protected System.Boolean _drumHovered
-    bool& dyn__drumHovered();
+    [[deprecated]] bool& dyn__drumHovered();
     // Get instance field reference: protected System.Boolean _settingsHovered
-    bool& dyn__settingsHovered();
+    [[deprecated]] bool& dyn__settingsHovered();
     // Get instance field reference: protected System.Boolean _drumgrabbed
-    bool& dyn__drumgrabbed();
+    [[deprecated]] bool& dyn__drumgrabbed();
     // Get instance field reference: protected System.Boolean _active
-    bool& dyn__active();
+    [[deprecated]] bool& dyn__active();
     // Get instance field reference: protected System.Boolean _shouldBeActiveThisFrame
-    bool& dyn__shouldBeActiveThisFrame();
+    [[deprecated]] bool& dyn__shouldBeActiveThisFrame();
     // Get instance field reference: public System.Action OnDeletePressed
-    ::System::Action*& dyn_OnDeletePressed();
+    [[deprecated]] ::System::Action*& dyn_OnDeletePressed();
     // protected System.Void OnDestroy()
-    // Offset: 0x8F6A70
+    // Offset: 0xADB248
     void OnDestroy();
     // public System.Void Setup()
-    // Offset: 0x8F6C84
+    // Offset: 0xADB45C
     void Setup();
     // protected System.Void DrumGrabbed(System.Boolean grabbed)
-    // Offset: 0x8F6EB4
+    // Offset: 0xADB68C
     void DrumGrabbed(bool grabbed);
     // protected System.Void SettingsHovered(System.Boolean hovered)
-    // Offset: 0x8F6EC8
+    // Offset: 0xADB6A0
     void SettingsHovered(bool hovered);
     // protected System.Void DrumHovered(System.Boolean drumHovered)
-    // Offset: 0x8F6EDC
+    // Offset: 0xADB6B4
     void DrumHovered(bool drumHovered);
     // protected System.Void UpdateHover()
-    // Offset: 0x8F6EF0
+    // Offset: 0xADB6C8
     void UpdateHover();
     // protected System.Void LateUpdate()
-    // Offset: 0x8F6F1C
+    // Offset: 0xADB6F4
     void LateUpdate();
     // public System.Void Delete()
-    // Offset: 0x8F70F0
+    // Offset: 0xADB8C8
     void Delete();
     // public System.Void .ctor()
-    // Offset: 0x8F7104
+    // Offset: 0xADB8DC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

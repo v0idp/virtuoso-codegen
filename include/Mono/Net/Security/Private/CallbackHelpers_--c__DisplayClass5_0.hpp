@@ -43,15 +43,7 @@ namespace Mono::Net::Security::Private {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class CallbackHelpers::$$c__DisplayClass5_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Mono.Security.Interface.MonoRemoteCertificateValidationCallback callback
     // Size: 0x8
     // Offset: 0x10
@@ -64,12 +56,12 @@ namespace Mono::Net::Security::Private {
       return callback;
     }
     // Get instance field reference: public Mono.Security.Interface.MonoRemoteCertificateValidationCallback callback
-    ::Mono::Security::Interface::MonoRemoteCertificateValidationCallback*& dyn_callback();
+    [[deprecated]] ::Mono::Security::Interface::MonoRemoteCertificateValidationCallback*& dyn_callback();
     // System.Boolean <MonoToPublic>b__0(System.Object t, System.Security.Cryptography.X509Certificates.X509Certificate c, System.Security.Cryptography.X509Certificates.X509Chain ch, System.Net.Security.SslPolicyErrors e)
-    // Offset: 0x8D9F50
+    // Offset: 0x9F4CC8
     bool $MonoToPublic$b__0(::Il2CppObject* t, ::System::Security::Cryptography::X509Certificates::X509Certificate* c, ::System::Security::Cryptography::X509Certificates::X509Chain* ch, ::System::Net::Security::SslPolicyErrors e);
     // public System.Void .ctor()
-    // Offset: 0x8D9F48
+    // Offset: 0x9F4CC0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

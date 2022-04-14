@@ -51,40 +51,40 @@ namespace TMPro {
     // Set static field: static private System.String k_LookupStringU
     static void _set_k_LookupStringU(::StringW value);
     // static public TMPro.TMP_TextParsingUtilities get_instance()
-    // Offset: 0xACBE28
+    // Offset: 0xD10C7C
     static ::TMPro::TMP_TextParsingUtilities* get_instance();
     // static private System.Void .cctor()
-    // Offset: 0xACBDC0
+    // Offset: 0xD10C14
     static void _cctor();
     // static public System.Int32 GetHashCode(System.String s)
-    // Offset: 0xACBE8C
+    // Offset: 0xD10CE0
     static int GetHashCode(::StringW s);
     // static public System.Int32 GetHashCodeCaseSensitive(System.String s)
-    // Offset: 0xACBFD4
+    // Offset: 0xD10E28
     static int GetHashCodeCaseSensitive(::StringW s);
     // static public System.Char ToLowerASCIIFast(System.Char c)
-    // Offset: 0xACC04C
+    // Offset: 0xD10EA0
     static ::Il2CppChar ToLowerASCIIFast(::Il2CppChar c);
     // static public System.Char ToUpperASCIIFast(System.Char c)
-    // Offset: 0xACBF5C
+    // Offset: 0xD10DB0
     static ::Il2CppChar ToUpperASCIIFast(::Il2CppChar c);
     // static public System.UInt32 ToUpperASCIIFast(System.UInt32 c)
-    // Offset: 0xACC0C4
+    // Offset: 0xD10F18
     static uint ToUpperASCIIFast(uint c);
     // static public System.UInt32 ToLowerASCIIFast(System.UInt32 c)
-    // Offset: 0xACC13C
+    // Offset: 0xD10F90
     static uint ToLowerASCIIFast(uint c);
     // static public System.Boolean IsHighSurrogate(System.UInt32 c)
-    // Offset: 0xACC1B4
+    // Offset: 0xD11008
     static bool IsHighSurrogate(uint c);
     // static public System.Boolean IsLowSurrogate(System.UInt32 c)
-    // Offset: 0xACC1C8
+    // Offset: 0xD1101C
     static bool IsLowSurrogate(uint c);
     // static System.UInt32 ConvertToUTF32(System.UInt32 highSurrogate, System.UInt32 lowSurrogate)
-    // Offset: 0xACC1DC
+    // Offset: 0xD11030
     static uint ConvertToUTF32(uint highSurrogate, uint lowSurrogate);
     // public System.Void .ctor()
-    // Offset: 0xACBE20
+    // Offset: 0xD10C74
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

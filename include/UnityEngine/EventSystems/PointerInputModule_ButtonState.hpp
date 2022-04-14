@@ -25,15 +25,7 @@ namespace UnityEngine::EventSystems {
   // [TokenAttribute] Offset: FFFFFFFF
   class PointerInputModule::ButtonState : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton m_Button
     // Size: 0x4
     // Offset: 0x10
@@ -50,23 +42,23 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton m_Button
-    ::UnityEngine::EventSystems::PointerEventData::InputButton& dyn_m_Button();
+    [[deprecated]] ::UnityEngine::EventSystems::PointerEventData::InputButton& dyn_m_Button();
     // Get instance field reference: private UnityEngine.EventSystems.PointerInputModule/UnityEngine.EventSystems.MouseButtonEventData m_EventData
-    ::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData*& dyn_m_EventData();
+    [[deprecated]] ::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData*& dyn_m_EventData();
     // public UnityEngine.EventSystems.PointerInputModule/UnityEngine.EventSystems.MouseButtonEventData get_eventData()
-    // Offset: 0x114333C
+    // Offset: 0x16D9AD4
     ::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData* get_eventData();
     // public System.Void set_eventData(UnityEngine.EventSystems.PointerInputModule/UnityEngine.EventSystems.MouseButtonEventData value)
-    // Offset: 0x1143344
+    // Offset: 0x16D9ADC
     void set_eventData(::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData* value);
     // public UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton get_button()
-    // Offset: 0x114334C
+    // Offset: 0x16D9AE4
     ::UnityEngine::EventSystems::PointerEventData::InputButton get_button();
     // public System.Void set_button(UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton value)
-    // Offset: 0x1143354
+    // Offset: 0x16D9AEC
     void set_button(::UnityEngine::EventSystems::PointerEventData::InputButton value);
     // public System.Void .ctor()
-    // Offset: 0x114335C
+    // Offset: 0x16D9AF4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

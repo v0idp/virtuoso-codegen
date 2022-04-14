@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CreditsPanelUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _joinDiscordButton
     // Size: 0x8
     // Offset: 0x18
@@ -65,23 +57,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _joinDiscordButton
-    ::VROSC::UIButton*& dyn__joinDiscordButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__joinDiscordButton();
     // Get instance field reference: private TMPro.TextMeshPro _discordURLOpenedText
-    ::TMPro::TextMeshPro*& dyn__discordURLOpenedText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__discordURLOpenedText();
     // public System.Boolean get_IsOpen()
-    // Offset: 0x1306C9C
+    // Offset: 0x8DFC80
     bool get_IsOpen();
     // protected System.Void Awake()
-    // Offset: 0x1306CC0
+    // Offset: 0x8DFCA4
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x1306D9C
+    // Offset: 0x8DFD80
     void OnDestroy();
     // private System.Void JoinDiscordButtonPressed()
-    // Offset: 0x1306E5C
+    // Offset: 0x8DFE40
     void JoinDiscordButtonPressed();
     // public System.Void .ctor()
-    // Offset: 0x1306ECC
+    // Offset: 0x8DFEB0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

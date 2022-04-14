@@ -23,13 +23,13 @@ namespace DG::Tweening::Core::Easing {
   class Bounce : public ::Il2CppObject {
     public:
     // static public System.Single EaseIn(System.Single time, System.Single duration, System.Single unusedOvershootOrAmplitude, System.Single unusedPeriod)
-    // Offset: 0x1090D1C
+    // Offset: 0x15D3344
     static float EaseIn(float time, float duration, float unusedOvershootOrAmplitude, float unusedPeriod);
     // static public System.Single EaseOut(System.Single time, System.Single duration, System.Single unusedOvershootOrAmplitude, System.Single unusedPeriod)
-    // Offset: 0x1090D3C
+    // Offset: 0x15D3364
     static float EaseOut(float time, float duration, float unusedOvershootOrAmplitude, float unusedPeriod);
     // static public System.Single EaseInOut(System.Single time, System.Single duration, System.Single unusedOvershootOrAmplitude, System.Single unusedPeriod)
-    // Offset: 0x1090E00
+    // Offset: 0x15D3428
     static float EaseInOut(float time, float duration, float unusedOvershootOrAmplitude, float unusedPeriod);
   }; // DG.Tweening.Core.Easing.Bounce
   #pragma pack(pop)

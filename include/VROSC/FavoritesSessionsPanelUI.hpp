@@ -44,22 +44,22 @@ namespace VROSC {
   class FavoritesSessionsPanelUI : public ::VROSC::SessionsPanelUI {
     public:
     // private System.Void UserLoggedIn()
-    // Offset: 0x1317CF0
+    // Offset: 0x8F1D94
     void UserLoggedIn();
     // private System.Void FavoritesDataChanged()
-    // Offset: 0x1317E94
+    // Offset: 0x8F1F38
     void FavoritesDataChanged();
     // private System.Void UpdateSessionList(System.Collections.Generic.List`1<VROSC.SessionUIData> sessionUIDatas)
-    // Offset: 0x1317AE8
+    // Offset: 0x8F1B8C
     void UpdateSessionList(::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* sessionUIDatas);
     // private System.Void FavoritesDataLoadSucceded()
-    // Offset: 0x13179CC
+    // Offset: 0x8F1A70
     void FavoritesDataLoadSucceded();
     // private System.Void FavoritesDataLoadFailed(VROSC.Error error)
-    // Offset: 0x1317F04
+    // Offset: 0x8F1FA8
     void FavoritesDataLoadFailed(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1317FF8
+    // Offset: 0x8F209C
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -73,22 +73,22 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<FavoritesSessionsPanelUI*, creationType>()));
     }
     // protected System.Void Awake()
-    // Offset: 0x1317618
+    // Offset: 0x8F16BC
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::Awake()
     void Awake();
     // protected System.Void OnEnable()
-    // Offset: 0x1317658
+    // Offset: 0x8F16FC
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::OnEnable()
     void OnEnable();
     // public override System.Void Refresh()
-    // Offset: 0x131773C
+    // Offset: 0x8F17E0
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::Refresh()
     void Refresh();
     // protected System.Void OnDisable()
-    // Offset: 0x1317B8C
+    // Offset: 0x8F1C30
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::OnDisable()
     void OnDisable();

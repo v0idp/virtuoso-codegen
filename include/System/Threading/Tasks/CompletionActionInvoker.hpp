@@ -42,15 +42,7 @@ namespace System::Threading::Tasks {
   // [TokenAttribute] Offset: FFFFFFFF
   class CompletionActionInvoker : public ::Il2CppObject/*, public ::System::Threading::IThreadPoolWorkItem*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Threading.Tasks.ITaskCompletionAction m_action
     // Size: 0x8
     // Offset: 0x10
@@ -69,21 +61,21 @@ namespace System::Threading::Tasks {
       return *reinterpret_cast<::System::Threading::IThreadPoolWorkItem*>(this);
     }
     // Get instance field reference: private readonly System.Threading.Tasks.ITaskCompletionAction m_action
-    ::System::Threading::Tasks::ITaskCompletionAction*& dyn_m_action();
+    [[deprecated]] ::System::Threading::Tasks::ITaskCompletionAction*& dyn_m_action();
     // Get instance field reference: private readonly System.Threading.Tasks.Task m_completingTask
-    ::System::Threading::Tasks::Task*& dyn_m_completingTask();
+    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_completingTask();
     // System.Void .ctor(System.Threading.Tasks.ITaskCompletionAction action, System.Threading.Tasks.Task completingTask)
-    // Offset: 0xBD78B0
+    // Offset: 0xE3C2EC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CompletionActionInvoker* New_ctor(::System::Threading::Tasks::ITaskCompletionAction* action, ::System::Threading::Tasks::Task* completingTask) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::Tasks::CompletionActionInvoker::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CompletionActionInvoker*, creationType>(action, completingTask)));
     }
     // public System.Void ExecuteWorkItem()
-    // Offset: 0xBD78E8
+    // Offset: 0xE3C324
     void ExecuteWorkItem();
     // public System.Void MarkAborted(System.Threading.ThreadAbortException tae)
-    // Offset: 0xBD799C
+    // Offset: 0xE3C3D8
     void MarkAborted(::System::Threading::ThreadAbortException* tae);
   }; // System.Threading.Tasks.CompletionActionInvoker
   #pragma pack(pop)

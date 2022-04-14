@@ -78,7 +78,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRGLTFComponentType FLOAT
     static void _set_FLOAT(::GlobalNamespace::OVRGLTFComponentType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // OVRGLTFComponentType
   #pragma pack(pop)
   static check_size<sizeof(OVRGLTFComponentType), 0 + sizeof(int)> __GlobalNamespace_OVRGLTFComponentTypeSizeCheck;

@@ -28,15 +28,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MinMaxVector4 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector4 _min
     // Size: 0x10
     // Offset: 0x10
@@ -51,27 +43,27 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector4) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Vector4 _min
-    ::UnityEngine::Vector4& dyn__min();
+    [[deprecated]] ::UnityEngine::Vector4& dyn__min();
     // Get instance field reference: private UnityEngine.Vector4 _max
-    ::UnityEngine::Vector4& dyn__max();
+    [[deprecated]] ::UnityEngine::Vector4& dyn__max();
     // public UnityEngine.Vector4 get_Min()
-    // Offset: 0x8B52F0
+    // Offset: 0xAC8EF0
     ::UnityEngine::Vector4 get_Min();
     // public UnityEngine.Vector4 get_Max()
-    // Offset: 0x8B52FC
+    // Offset: 0xAC8EFC
     ::UnityEngine::Vector4 get_Max();
     // public System.Void .ctor(UnityEngine.Vector4 min, UnityEngine.Vector4 max)
-    // Offset: 0x8B5308
+    // Offset: 0xAC8F08
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MinMaxVector4* New_ctor(::UnityEngine::Vector4 min, ::UnityEngine::Vector4 max) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MinMaxVector4::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MinMaxVector4*, creationType>(min, max)));
     }
     // public UnityEngine.Vector4 Random(System.Boolean uniform)
-    // Offset: 0x8B537C
+    // Offset: 0xAC8F7C
     ::UnityEngine::Vector4 Random(bool uniform);
     // public UnityEngine.Vector4 Lerp(System.Single amount, System.Boolean clamp)
-    // Offset: 0x8B5458
+    // Offset: 0xAC9058
     ::UnityEngine::Vector4 Lerp(float amount, bool clamp);
   }; // VROSC.MinMaxVector4
   #pragma pack(pop)

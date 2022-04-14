@@ -44,13 +44,13 @@ namespace Proyecto26::Common {
     // Set static field: static public System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.String>,System.String> <>9__3_1
     static void _set_$$9__3_1(::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::StringW, ::StringW>, ::StringW>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1362C90
+    // Offset: 0x95F784
     static void _cctor();
     // System.String <BuildUrl>b__3_1(System.Collections.Generic.KeyValuePair`2<System.String,System.String> p)
-    // Offset: 0x1362CF8
+    // Offset: 0x95F7EC
     ::StringW $BuildUrl$b__3_1(::System::Collections::Generic::KeyValuePair_2<::StringW, ::StringW> p);
     // public System.Void .ctor()
-    // Offset: 0x1362CF0
+    // Offset: 0x95F7E4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

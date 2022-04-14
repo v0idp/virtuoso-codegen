@@ -44,15 +44,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UserDataControllers::$$c__DisplayClass68_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.KeyValuePair`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.InstrumentDataController> instrumentDataController
     // Size: 0xFFFFFFFF
     // Offset: 0x10
@@ -77,24 +69,24 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.KeyValuePair`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.InstrumentDataController> instrumentDataController
-    ::System::Collections::Generic::KeyValuePair_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>& dyn_instrumentDataController();
+    [[deprecated]] ::System::Collections::Generic::KeyValuePair_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>& dyn_instrumentDataController();
     // Get instance field reference: public VROSC.UserDataControllers/VROSC.<>c__DisplayClass68_0 CS$<>8__locals1
-    ::VROSC::UserDataControllers::$$c__DisplayClass68_0*& dyn_CS$$$8__locals1();
+    [[deprecated]] ::VROSC::UserDataControllers::$$c__DisplayClass68_0*& dyn_CS$$$8__locals1();
     // Get instance field reference: public System.Action <>9__16
-    ::System::Action*& dyn_$$9__16();
+    [[deprecated]] ::System::Action*& dyn_$$9__16();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__17
-    ::System::Action_1<::VROSC::Error>*& dyn_$$9__17();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__17();
     // System.Void <SaveControllers>b__14()
-    // Offset: 0x1411A0C
+    // Offset: 0xE83C5C
     void $SaveControllers$b__14();
     // System.Void <SaveControllers>b__16()
-    // Offset: 0x1411B40
+    // Offset: 0xE83D90
     void $SaveControllers$b__16();
     // System.Void <SaveControllers>b__17(VROSC.Error error)
-    // Offset: 0x1411C18
+    // Offset: 0xE83E68
     void $SaveControllers$b__17(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1411A04
+    // Offset: 0xE83C54
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

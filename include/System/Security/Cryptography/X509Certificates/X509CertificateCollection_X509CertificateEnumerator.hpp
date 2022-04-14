@@ -32,15 +32,7 @@ namespace System::Security::Cryptography::X509Certificates {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509CertificateCollection::X509CertificateEnumerator : public ::Il2CppObject/*, public ::System::Collections::IEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.IEnumerator enumerator
     // Size: 0x8
     // Offset: 0x10
@@ -57,28 +49,28 @@ namespace System::Security::Cryptography::X509Certificates {
       return enumerator;
     }
     // Get instance field reference: private System.Collections.IEnumerator enumerator
-    ::System::Collections::IEnumerator*& dyn_enumerator();
+    [[deprecated]] ::System::Collections::IEnumerator*& dyn_enumerator();
     // public System.Security.Cryptography.X509Certificates.X509Certificate get_Current()
-    // Offset: 0x128131C
+    // Offset: 0x17CFB34
     ::System::Security::Cryptography::X509Certificates::X509Certificate* get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x1281418
+    // Offset: 0x17CFC30
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Security.Cryptography.X509Certificates.X509CertificateCollection mappings)
-    // Offset: 0x1281254
+    // Offset: 0x17CFA6C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509CertificateCollection::X509CertificateEnumerator* New_ctor(::System::Security::Cryptography::X509Certificates::X509CertificateCollection* mappings) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509CertificateCollection::X509CertificateEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509CertificateCollection::X509CertificateEnumerator*, creationType>(mappings)));
     }
     // private System.Boolean System.Collections.IEnumerator.MoveNext()
-    // Offset: 0x12814C8
+    // Offset: 0x17CFCE0
     bool System_Collections_IEnumerator_MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x1281574
+    // Offset: 0x17CFD8C
     void System_Collections_IEnumerator_Reset();
     // public System.Boolean MoveNext()
-    // Offset: 0x1281624
+    // Offset: 0x17CFE3C
     bool MoveNext();
   }; // System.Security.Cryptography.X509Certificates.X509CertificateCollection/System.Security.Cryptography.X509Certificates.X509CertificateEnumerator
   #pragma pack(pop)

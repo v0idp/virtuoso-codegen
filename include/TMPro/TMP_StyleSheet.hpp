@@ -46,15 +46,7 @@ namespace TMPro {
   // [ExcludeFromPresetAttribute] Offset: FFFFFFFF
   class TMP_StyleSheet : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<TMPro.TMP_Style> m_StyleList
     // Size: 0x8
     // Offset: 0x18
@@ -71,29 +63,29 @@ namespace TMPro {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<TMPro.TMP_Style> m_StyleList
-    ::System::Collections::Generic::List_1<::TMPro::TMP_Style*>*& dyn_m_StyleList();
+    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Style*>*& dyn_m_StyleList();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_Style> m_StyleLookupDictionary
-    ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_Style*>*& dyn_m_StyleLookupDictionary();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_Style*>*& dyn_m_StyleLookupDictionary();
     // System.Collections.Generic.List`1<TMPro.TMP_Style> get_styles()
-    // Offset: 0x85CFC0
+    // Offset: 0x9B4158
     ::System::Collections::Generic::List_1<::TMPro::TMP_Style*>* get_styles();
     // private System.Void Reset()
-    // Offset: 0x85CFC8
+    // Offset: 0x9B4160
     void Reset();
     // public TMPro.TMP_Style GetStyle(System.Int32 hashCode)
-    // Offset: 0x85D2C8
+    // Offset: 0x9B4460
     ::TMPro::TMP_Style* GetStyle(int hashCode);
     // public TMPro.TMP_Style GetStyle(System.String name)
-    // Offset: 0x85D354
+    // Offset: 0x9B44EC
     ::TMPro::TMP_Style* GetStyle(::StringW name);
     // public System.Void RefreshStyles()
-    // Offset: 0x85D41C
+    // Offset: 0x9B45B4
     void RefreshStyles();
     // private System.Void LoadStyleDictionaryInternal()
-    // Offset: 0x85CFCC
+    // Offset: 0x9B4164
     void LoadStyleDictionaryInternal();
     // public System.Void .ctor()
-    // Offset: 0x85D420
+    // Offset: 0x9B45B8
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

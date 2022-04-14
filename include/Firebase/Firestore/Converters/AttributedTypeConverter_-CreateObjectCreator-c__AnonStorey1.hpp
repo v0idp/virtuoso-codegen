@@ -31,15 +31,7 @@ namespace Firebase::Firestore::Converters {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Type type
     // Size: 0x8
     // Offset: 0x10
@@ -52,12 +44,12 @@ namespace Firebase::Firestore::Converters {
       return type;
     }
     // Get instance field reference: System.Type type
-    ::System::Type*& dyn_type();
+    [[deprecated]] ::System::Type*& dyn_type();
     // System.Object <>m__0()
-    // Offset: 0xC4224C
+    // Offset: 0xD668F8
     ::Il2CppObject* $$m__0();
     // public System.Void .ctor()
-    // Offset: 0xC278CC
+    // Offset: 0xD4962C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

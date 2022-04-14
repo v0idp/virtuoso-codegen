@@ -34,10 +34,10 @@ namespace DG::Tweening {
     // Set static field: static private System.Boolean _initialized
     static void _set__initialized(bool value);
     // static public System.Void Init()
-    // Offset: 0x753738
+    // Offset: 0x17E26B4
     static void Init();
     // static private System.Void Preserver()
-    // Offset: 0x7537FC
+    // Offset: 0x17E2778
     static void Preserver();
   }; // DG.Tweening.DOTweenModuleUtils
   #pragma pack(pop)

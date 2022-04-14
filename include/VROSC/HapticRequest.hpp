@@ -53,13 +53,13 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single Amplitude
-    float& dyn_Amplitude();
+    [[deprecated]] float& dyn_Amplitude();
     // Get instance field reference: public System.Single Frequency
-    float& dyn_Frequency();
+    [[deprecated]] float& dyn_Frequency();
     // Get instance field reference: public VROSC.HandType Hand
-    ::VROSC::HandType& dyn_Hand();
+    [[deprecated]] ::VROSC::HandType& dyn_Hand();
     // public System.Void .ctor(System.Single amplitude, System.Single frequency, VROSC.HandType hand)
-    // Offset: 0x898990
+    // Offset: 0x19ABB88
     // ABORTED: conflicts with another method.  HapticRequest(float amplitude, float frequency, ::VROSC::HandType hand);
   }; // VROSC.HapticRequest
   #pragma pack(pop)

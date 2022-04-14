@@ -36,15 +36,7 @@ namespace Oculus::Voice::Core::Bindings::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class AndroidServiceConnection : public ::Il2CppObject/*, public ::Oculus::Voice::Core::Bindings::Interfaces::IConnection*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AndroidJavaObject mAssistantServiceConnection
     // Size: 0x8
     // Offset: 0x10
@@ -69,32 +61,32 @@ namespace Oculus::Voice::Core::Bindings::Android {
       return *reinterpret_cast<::Oculus::Voice::Core::Bindings::Interfaces::IConnection*>(this);
     }
     // Get instance field reference: private UnityEngine.AndroidJavaObject mAssistantServiceConnection
-    ::UnityEngine::AndroidJavaObject*& dyn_mAssistantServiceConnection();
+    [[deprecated]] ::UnityEngine::AndroidJavaObject*& dyn_mAssistantServiceConnection();
     // Get instance field reference: private System.String serviceFragmentClass
-    ::StringW& dyn_serviceFragmentClass();
+    [[deprecated]] ::StringW& dyn_serviceFragmentClass();
     // Get instance field reference: private System.String serviceGetter
-    ::StringW& dyn_serviceGetter();
+    [[deprecated]] ::StringW& dyn_serviceGetter();
     // public System.Boolean get_IsConnected()
-    // Offset: 0x13063A8
+    // Offset: 0x190E540
     bool get_IsConnected();
     // public UnityEngine.AndroidJavaObject get_AssistantServiceConnection()
-    // Offset: 0x13063B8
+    // Offset: 0x190E550
     ::UnityEngine::AndroidJavaObject* get_AssistantServiceConnection();
     // public System.Void .ctor(System.String serviceFragmentClassName, System.String serviceGetterMethodName)
-    // Offset: 0x13063C0
+    // Offset: 0x190E558
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AndroidServiceConnection* New_ctor(::StringW serviceFragmentClassName, ::StringW serviceGetterMethodName) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Core::Bindings::Android::AndroidServiceConnection::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AndroidServiceConnection*, creationType>(serviceFragmentClassName, serviceGetterMethodName)));
     }
     // public System.Void Connect()
-    // Offset: 0x13063F8
+    // Offset: 0x190E590
     void Connect();
     // public System.Void Disconnect()
-    // Offset: 0x1306688
+    // Offset: 0x190E820
     void Disconnect();
     // public UnityEngine.AndroidJavaObject GetService()
-    // Offset: 0x1306784
+    // Offset: 0x190E91C
     ::UnityEngine::AndroidJavaObject* GetService();
   }; // Oculus.Voice.Core.Bindings.Android.AndroidServiceConnection
   #pragma pack(pop)

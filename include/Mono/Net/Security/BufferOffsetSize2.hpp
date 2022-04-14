@@ -31,15 +31,7 @@ namespace Mono::Net::Security {
     public:
     // Writing base type padding for base size: 0x25 to desired offset: 0x28
     char ___base_padding[0x3] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.Int32 InitialSize
     // Size: 0x4
     // Offset: 0x28
@@ -52,22 +44,22 @@ namespace Mono::Net::Security {
       return InitialSize;
     }
     // Get instance field reference: public readonly System.Int32 InitialSize
-    int& dyn_InitialSize();
+    [[deprecated]] int& dyn_InitialSize();
     // public System.Void .ctor(System.Int32 size)
-    // Offset: 0xE69600
+    // Offset: 0x10DB258
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BufferOffsetSize2* New_ctor(int size) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::Security::BufferOffsetSize2::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BufferOffsetSize2*, creationType>(size)));
     }
     // public System.Void Reset()
-    // Offset: 0xE69674
+    // Offset: 0x10DB2CC
     void Reset();
     // public System.Void MakeRoom(System.Int32 size)
-    // Offset: 0xE696FC
+    // Offset: 0x10DB354
     void MakeRoom(int size);
     // public System.Void AppendData(System.Byte[] buffer, System.Int32 offset, System.Int32 size)
-    // Offset: 0xE697BC
+    // Offset: 0x10DB414
     void AppendData(::ArrayW<uint8_t> buffer, int offset, int size);
   }; // Mono.Net.Security.BufferOffsetSize2
   #pragma pack(pop)

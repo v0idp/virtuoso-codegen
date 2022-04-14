@@ -47,15 +47,7 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class GlobalShiftColorData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.GlobalColorEffectData _data
     // Size: 0x8
     // Offset: 0x10
@@ -134,64 +126,64 @@ namespace VROSC::AudioReactive {
     // Set static field: static public System.Action`2<UnityEngine.Color,System.Single> OnColor4Change
     static void _set_OnColor4Change(::System::Action_2<::UnityEngine::Color, float>* value);
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData _data
-    ::VROSC::AudioReactive::GlobalColorEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData*& dyn__data();
     // Get instance field reference: private System.Int32 _channel
-    int& dyn__channel();
+    [[deprecated]] int& dyn__channel();
     // Get instance field reference: private System.Single _shift
-    float& dyn__shift();
+    [[deprecated]] float& dyn__shift();
     // Get instance field reference: private System.Single _currentHue
-    float& dyn__currentHue();
+    [[deprecated]] float& dyn__currentHue();
     // Get instance field reference: private System.Single _currentSaturation
-    float& dyn__currentSaturation();
+    [[deprecated]] float& dyn__currentSaturation();
     // Get instance field reference: private System.Single _currentValue
-    float& dyn__currentValue();
+    [[deprecated]] float& dyn__currentValue();
     // Get instance field reference: private System.Single _startSaturation
-    float& dyn__startSaturation();
+    [[deprecated]] float& dyn__startSaturation();
     // Get instance field reference: private System.Single _intensityShift
-    float& dyn__intensityShift();
+    [[deprecated]] float& dyn__intensityShift();
     // Get instance field reference: private System.Single _saturationShift
-    float& dyn__saturationShift();
+    [[deprecated]] float& dyn__saturationShift();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _block
-    ::UnityEngine::MaterialPropertyBlock*& dyn__block();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__block();
     // public UnityEngine.Color get_Color()
-    // Offset: 0x892D54
+    // Offset: 0x19A51D4
     ::UnityEngine::Color get_Color();
     // public System.Void .ctor(VROSC.AudioReactive.GlobalColorEffectData data, System.Int32 channel)
-    // Offset: 0x892104
+    // Offset: 0x19A4584
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GlobalShiftColorData* New_ctor(::VROSC::AudioReactive::GlobalColorEffectData* data, int channel) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::GlobalShiftColorData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GlobalShiftColorData*, creationType>(data, channel)));
     }
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x892490
+    // Offset: 0x19A4910
     void SetColor(::UnityEngine::Color color);
     // private UnityEngine.Color GetColor()
-    // Offset: 0x892D58
+    // Offset: 0x19A51D8
     ::UnityEngine::Color GetColor();
     // public System.Void ShiftShade()
-    // Offset: 0x8923E8
+    // Offset: 0x19A4868
     void ShiftShade();
     // public System.Void ShiftShadeSpecific(System.Single shift)
-    // Offset: 0x892D9C
+    // Offset: 0x19A521C
     void ShiftShadeSpecific(float shift);
     // public System.Void SetSaturationShift(System.Single saturationShift)
-    // Offset: 0x892E68
+    // Offset: 0x19A52E8
     void SetSaturationShift(float saturationShift);
     // public System.Void SetValueShift(System.Single value)
-    // Offset: 0x892E70
+    // Offset: 0x19A52F0
     void SetValueShift(float value);
     // public System.Void UpdateGlobalColor()
-    // Offset: 0x89246C
+    // Offset: 0x19A48EC
     void UpdateGlobalColor();
     // static public System.Void UpdateGlobalColor(UnityEngine.Color color, System.Int32 channel)
-    // Offset: 0x8926B8
+    // Offset: 0x19A4B38
     static void UpdateGlobalColor(::UnityEngine::Color color, int channel);
     // static private System.Void SendActions(UnityEngine.Color color, System.Single multiplier, System.Int32 channel)
-    // Offset: 0x892F00
+    // Offset: 0x19A5380
     static void SendActions(::UnityEngine::Color color, float multiplier, int channel);
     // static private System.String GetGlobalShaderString(System.Int32 channel)
-    // Offset: 0x892E78
+    // Offset: 0x19A52F8
     static ::StringW GetGlobalShaderString(int channel);
   }; // VROSC.AudioReactive.GlobalShiftColorData
   #pragma pack(pop)

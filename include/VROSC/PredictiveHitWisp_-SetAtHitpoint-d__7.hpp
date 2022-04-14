@@ -95,24 +95,24 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Double dspTime
-    double& dyn_dspTime();
+    [[deprecated]] double& dyn_dspTime();
     // Get instance field reference: public VROSC.PredictiveHitWisp <>4__this
-    ::VROSC::PredictiveHitWisp*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::PredictiveHitWisp*& dyn_$$4__this();
     // Get instance field reference: public UnityEngine.Vector3 hitpoint
-    ::UnityEngine::Vector3& dyn_hitpoint();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_hitpoint();
     // Get instance field reference: public VROSC.PredictiveHittable predictiveHittable
-    ::VROSC::PredictiveHittable*& dyn_predictiveHittable();
+    [[deprecated]] ::VROSC::PredictiveHittable*& dyn_predictiveHittable();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x1342BCC
+    // Offset: 0x8CDB24
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x1343328
+    // Offset: 0x8CE280
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.PredictiveHitWisp/VROSC.<SetAtHitpoint>d__7
   #pragma pack(pop)

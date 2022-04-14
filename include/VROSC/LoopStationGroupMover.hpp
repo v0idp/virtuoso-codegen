@@ -50,15 +50,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::LoopStationGroupMover::$MoveGroupFlow$d__10
     class $MoveGroupFlow$d__10;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _moveDuration
     // Size: 0x4
     // Offset: 0x18
@@ -115,35 +107,35 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _moveDuration
-    float& dyn__moveDuration();
+    [[deprecated]] float& dyn__moveDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve _moveCurve
-    ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
     // Get instance field reference: private System.Single _shortMoveDistance
-    float& dyn__shortMoveDistance();
+    [[deprecated]] float& dyn__shortMoveDistance();
     // Get instance field reference: private System.Single _shortMoveDuration
-    float& dyn__shortMoveDuration();
+    [[deprecated]] float& dyn__shortMoveDuration();
     // Get instance field reference: private System.Single _moveOutDistance
-    float& dyn__moveOutDistance();
+    [[deprecated]] float& dyn__moveOutDistance();
     // Get instance field reference: private UnityEngine.AnimationCurve _zCurve
-    ::UnityEngine::AnimationCurve*& dyn__zCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__zCurve();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopStationGroup _group
-    ::VROSC::LoopStationGroup*& dyn__group();
+    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__group();
     // public System.Void Setup(VROSC.LoopStationGroup group, VROSC.LoopStation loopStation)
-    // Offset: 0x913254
+    // Offset: 0x196E888
     void Setup(::VROSC::LoopStationGroup* group, ::VROSC::LoopStation* loopStation);
     // public System.Void MoveGroup(UnityEngine.Vector3 from, UnityEngine.Vector3 to, System.Single zmultiplier)
-    // Offset: 0x9141A0
+    // Offset: 0x1970234
     void MoveGroup(::UnityEngine::Vector3 from, ::UnityEngine::Vector3 to, float zmultiplier);
     // private System.Collections.IEnumerator MoveGroupFlow(UnityEngine.Vector3 from, UnityEngine.Vector3 to, System.Single zmultiplier)
-    // Offset: 0x91428C
+    // Offset: 0x1970320
     ::System::Collections::IEnumerator* MoveGroupFlow(::UnityEngine::Vector3 from, ::UnityEngine::Vector3 to, float zmultiplier);
     // private System.Void MoveComplete(UnityEngine.Vector3 position)
-    // Offset: 0x914344
+    // Offset: 0x19703D8
     void MoveComplete(::UnityEngine::Vector3 position);
     // public System.Void .ctor()
-    // Offset: 0x9143C0
+    // Offset: 0x1970454
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

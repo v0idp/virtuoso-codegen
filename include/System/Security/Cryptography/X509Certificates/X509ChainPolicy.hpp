@@ -50,15 +50,7 @@ namespace System::Security::Cryptography::X509Certificates {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509ChainPolicy : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Security.Cryptography.OidCollection apps
     // Size: 0x8
     // Offset: 0x10
@@ -117,35 +109,35 @@ namespace System::Security::Cryptography::X509Certificates {
     static_assert(sizeof(::System::DateTime) == 0x8);
     public:
     // Get instance field reference: private System.Security.Cryptography.OidCollection apps
-    ::System::Security::Cryptography::OidCollection*& dyn_apps();
+    [[deprecated]] ::System::Security::Cryptography::OidCollection*& dyn_apps();
     // Get instance field reference: private System.Security.Cryptography.OidCollection cert
-    ::System::Security::Cryptography::OidCollection*& dyn_cert();
+    [[deprecated]] ::System::Security::Cryptography::OidCollection*& dyn_cert();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509CertificateCollection store
-    ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_store();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_store();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate2Collection store2
-    ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_store2();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_store2();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509RevocationFlag rflag
-    ::System::Security::Cryptography::X509Certificates::X509RevocationFlag& dyn_rflag();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509RevocationFlag& dyn_rflag();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509RevocationMode mode
-    ::System::Security::Cryptography::X509Certificates::X509RevocationMode& dyn_mode();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509RevocationMode& dyn_mode();
     // Get instance field reference: private System.TimeSpan timeout
-    ::System::TimeSpan& dyn_timeout();
+    [[deprecated]] ::System::TimeSpan& dyn_timeout();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509VerificationFlags vflags
-    ::System::Security::Cryptography::X509Certificates::X509VerificationFlags& dyn_vflags();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509VerificationFlags& dyn_vflags();
     // Get instance field reference: private System.DateTime vtime
-    ::System::DateTime& dyn_vtime();
+    [[deprecated]] ::System::DateTime& dyn_vtime();
     // System.Void .ctor(System.Security.Cryptography.X509Certificates.X509CertificateCollection store)
-    // Offset: 0xAC8530
+    // Offset: 0xC53B4C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509ChainPolicy* New_ctor(::System::Security::Cryptography::X509Certificates::X509CertificateCollection* store) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509ChainPolicy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509ChainPolicy*, creationType>(store)));
     }
     // public System.Void Reset()
-    // Offset: 0xAC842C
+    // Offset: 0xC53A48
     void Reset();
     // public System.Void .ctor()
-    // Offset: 0xAC7E34
+    // Offset: 0xC53450
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

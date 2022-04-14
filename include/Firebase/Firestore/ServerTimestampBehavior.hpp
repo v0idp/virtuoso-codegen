@@ -60,7 +60,7 @@ namespace Firebase::Firestore {
     // Set static field: static public Firebase.Firestore.ServerTimestampBehavior Previous
     static void _set_Previous(::Firebase::Firestore::ServerTimestampBehavior value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Firebase.Firestore.ServerTimestampBehavior
   #pragma pack(pop)
   static check_size<sizeof(ServerTimestampBehavior), 0 + sizeof(int)> __Firebase_Firestore_ServerTimestampBehaviorSizeCheck;

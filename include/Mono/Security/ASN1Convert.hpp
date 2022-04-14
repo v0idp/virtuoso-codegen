@@ -37,22 +37,22 @@ namespace Mono::Security {
   class ASN1Convert : public ::Il2CppObject {
     public:
     // static public Mono.Security.ASN1 FromInt32(System.Int32 value)
-    // Offset: 0x10E1F80
+    // Offset: 0x1633E3C
     static ::Mono::Security::ASN1* FromInt32(int value);
     // static public Mono.Security.ASN1 FromOid(System.String oid)
-    // Offset: 0x10E212C
+    // Offset: 0x1633FE8
     static ::Mono::Security::ASN1* FromOid(::StringW oid);
     // static public Mono.Security.ASN1 FromUnsignedBigInteger(System.Byte[] big)
-    // Offset: 0x10E21E8
+    // Offset: 0x16340A4
     static ::Mono::Security::ASN1* FromUnsignedBigInteger(::ArrayW<uint8_t> big);
     // static public System.Int32 ToInt32(Mono.Security.ASN1 asn1)
-    // Offset: 0x10E2304
+    // Offset: 0x16341C0
     static int ToInt32(::Mono::Security::ASN1* asn1);
     // static public System.String ToOid(Mono.Security.ASN1 asn1)
-    // Offset: 0x10E2420
+    // Offset: 0x16342DC
     static ::StringW ToOid(::Mono::Security::ASN1* asn1);
     // static public System.DateTime ToDateTime(Mono.Security.ASN1 time)
-    // Offset: 0x10E26C8
+    // Offset: 0x1634584
     static ::System::DateTime ToDateTime(::Mono::Security::ASN1* time);
   }; // Mono.Security.ASN1Convert
   #pragma pack(pop)

@@ -28,15 +28,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class WASDMove : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _movementSpeed
     // Size: 0x4
     // Offset: 0x18
@@ -47,12 +39,12 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _movementSpeed
-    float& dyn__movementSpeed();
+    [[deprecated]] float& dyn__movementSpeed();
     // protected System.Void Update()
-    // Offset: 0x13531E8
+    // Offset: 0x94FA38
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x1353418
+    // Offset: 0x94FC68
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

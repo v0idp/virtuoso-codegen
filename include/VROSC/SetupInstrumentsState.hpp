@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupInstrumentsState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.InstrumentHub _instrumentHub
     // Size: 0x8
     // Offset: 0x10
@@ -62,25 +54,25 @@ namespace VROSC {
       return instrumentHub;
     }
     // Get instance field reference: private VROSC.InstrumentHub _instrumentHub
-    ::VROSC::InstrumentHub*& dyn__instrumentHub();
+    [[deprecated]] ::VROSC::InstrumentHub*& dyn__instrumentHub();
     // public System.Void .ctor(VROSC.InstrumentHub instrumentHub)
-    // Offset: 0x13B39C4
+    // Offset: 0x1926890
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupInstrumentsState* New_ctor(::VROSC::InstrumentHub* instrumentHub) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupInstrumentsState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupInstrumentsState*, creationType>(instrumentHub)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B39F0
+    // Offset: 0x19268BC
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B3A0C
+    // Offset: 0x19268D8
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B3A10
+    // Offset: 0x19268DC
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B3A14
+    // Offset: 0x19268E0
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupInstrumentsState
   #pragma pack(pop)

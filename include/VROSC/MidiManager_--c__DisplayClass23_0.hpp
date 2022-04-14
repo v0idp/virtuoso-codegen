@@ -24,15 +24,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class MidiManager::$$c__DisplayClass23_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Object patch
     // Size: 0x8
     // Offset: 0x10
@@ -47,14 +39,14 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Object patch
-    ::Il2CppObject*& dyn_patch();
+    [[deprecated]] ::Il2CppObject*& dyn_patch();
     // Get instance field reference: public System.Int32 channel
-    int& dyn_channel();
+    [[deprecated]] int& dyn_channel();
     // System.Boolean <IsPlaying>b__0(VROSC.MidiManager/VROSC.ActiveNote a)
-    // Offset: 0x13DB484
+    // Offset: 0x19631A0
     bool $IsPlaying$b__0(::VROSC::MidiManager::ActiveNote* a);
     // public System.Void .ctor()
-    // Offset: 0x13DB47C
+    // Offset: 0x1963198
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -40,15 +40,7 @@ namespace AudioHelm {
   // [TokenAttribute] Offset: FFFFFFFF
   class HelmPatch : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Object patchObject
     // Size: 0x8
     // Offset: 0x18
@@ -65,14 +57,14 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Object patchObject
-    ::UnityEngine::Object*& dyn_patchObject();
+    [[deprecated]] ::UnityEngine::Object*& dyn_patchObject();
     // Get instance field reference: public AudioHelm.HelmPatchFormat patchData
-    ::AudioHelm::HelmPatchFormat*& dyn_patchData();
+    [[deprecated]] ::AudioHelm::HelmPatchFormat*& dyn_patchData();
     // public System.Void LoadPatchData(System.String filePath)
-    // Offset: 0x89AB80
+    // Offset: 0x193D32C
     void LoadPatchData(::StringW filePath);
     // public System.Void .ctor()
-    // Offset: 0x89ABE8
+    // Offset: 0x193D394
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

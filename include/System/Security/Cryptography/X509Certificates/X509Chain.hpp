@@ -39,15 +39,7 @@ namespace System::Security::Cryptography::X509Certificates {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509Chain : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Security.Cryptography.X509Certificates.X509ChainImpl impl
     // Size: 0x8
     // Offset: 0x10
@@ -64,38 +56,38 @@ namespace System::Security::Cryptography::X509Certificates {
       return impl;
     }
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainImpl impl
-    ::System::Security::Cryptography::X509Certificates::X509ChainImpl*& dyn_impl();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainImpl*& dyn_impl();
     // System.Security.Cryptography.X509Certificates.X509ChainImpl get_Impl()
-    // Offset: 0xAC72F0
+    // Offset: 0xC5290C
     ::System::Security::Cryptography::X509Certificates::X509ChainImpl* get_Impl();
     // public System.Security.Cryptography.X509Certificates.X509ChainElementCollection get_ChainElements()
-    // Offset: 0xAC7458
+    // Offset: 0xC52A74
     ::System::Security::Cryptography::X509Certificates::X509ChainElementCollection* get_ChainElements();
     // public System.Void set_ChainPolicy(System.Security.Cryptography.X509Certificates.X509ChainPolicy value)
-    // Offset: 0xAC7490
+    // Offset: 0xC52AAC
     void set_ChainPolicy(::System::Security::Cryptography::X509Certificates::X509ChainPolicy* value);
     // public System.Void .ctor(System.Boolean useMachineContext)
-    // Offset: 0xAC7394
+    // Offset: 0xC529B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509Chain* New_ctor(bool useMachineContext) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Chain::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509Chain*, creationType>(useMachineContext)));
     }
     // System.Void .ctor(System.Security.Cryptography.X509Certificates.X509ChainImpl impl)
-    // Offset: 0xAC7424
+    // Offset: 0xC52A40
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509Chain* New_ctor(::System::Security::Cryptography::X509Certificates::X509ChainImpl* impl) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Chain::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509Chain*, creationType>(impl)));
     }
     // public System.Void Dispose()
-    // Offset: 0xAC74D0
+    // Offset: 0xC52AEC
     void Dispose();
     // protected System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xAC7548
+    // Offset: 0xC52B64
     void Dispose(bool disposing);
     // public System.Void .ctor()
-    // Offset: 0xAC7364
+    // Offset: 0xC52980
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -104,7 +96,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return THROW_UNLESS((::il2cpp_utils::New<X509Chain*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xAC75EC
+    // Offset: 0xC52C08
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

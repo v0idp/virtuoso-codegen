@@ -49,16 +49,8 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationBaseGroup : public ::VROSC::LoopStationGroup {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x66ED9C
+    // [HeaderAttribute] Offset: 0x784E04
     // private VROSC.TransformMoverRelay _moverRelay
     // Size: 0x8
     // Offset: 0xA8
@@ -85,24 +77,24 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.TransformMoverRelay _moverRelay
-    ::VROSC::TransformMoverRelay*& dyn__moverRelay();
+    [[deprecated]] ::VROSC::TransformMoverRelay*& dyn__moverRelay();
     // Get instance field reference: private VROSC.UIButton _convertButton
-    ::VROSC::UIButton*& dyn__convertButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__convertButton();
     // Get instance field reference: private UnityEngine.GameObject[] _objectsToDisable
-    ::ArrayW<::UnityEngine::GameObject*>& dyn__objectsToDisable();
+    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn__objectsToDisable();
     // Get instance field reference: private System.Boolean _isTheUngroupedGroup
-    bool& dyn__isTheUngroupedGroup();
+    [[deprecated]] bool& dyn__isTheUngroupedGroup();
     // private System.Void Awake()
-    // Offset: 0x90DB90
+    // Offset: 0x19C1104
     void Awake();
     // private System.Void ConvertToUserGroupButtonPressed()
-    // Offset: 0x90DEC8
+    // Offset: 0x19C1280
     void ConvertToUserGroupButtonPressed();
     // public System.Void SetAsTheUngroupedGroup()
-    // Offset: 0x90E0A0
+    // Offset: 0x19C1414
     void SetAsTheUngroupedGroup();
     // public System.Void .ctor()
-    // Offset: 0x90E40C
+    // Offset: 0x19C15E4
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -116,17 +108,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationBaseGroup*, creationType>()));
     }
     // public override System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationGroupHandler handler, VROSC.LoopStationGroup/VROSC.SetupVariables vars)
-    // Offset: 0x90DCAC
+    // Offset: 0x19C1220
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::Setup(VROSC.LoopStation loopStation, VROSC.LoopStationGroupHandler handler, VROSC.LoopStationGroup/VROSC.SetupVariables vars)
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationGroupHandler* handler, ::VROSC::LoopStationGroup::SetupVariables vars);
     // public override System.Void RemoveLoop(VROSC.LoopPlayer loopPlayer, System.Boolean byGrab, System.Boolean fromReset)
-    // Offset: 0x90E118
+    // Offset: 0x19C148C
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::RemoveLoop(VROSC.LoopPlayer loopPlayer, System.Boolean byGrab, System.Boolean fromReset)
     void RemoveLoop(::VROSC::LoopPlayer* loopPlayer, bool byGrab, bool fromReset);
     // public override System.Void UpdateGroupVisibility(System.Boolean byGrab)
-    // Offset: 0x90E2F0
+    // Offset: 0x19C1548
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::UpdateGroupVisibility(System.Boolean byGrab)
     void UpdateGroupVisibility(bool byGrab);

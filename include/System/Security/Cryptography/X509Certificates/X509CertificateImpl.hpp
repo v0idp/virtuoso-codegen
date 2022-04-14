@@ -37,15 +37,7 @@ namespace System::Security::Cryptography::X509Certificates {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509CertificateImpl : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte[] cachedCertificateHash
     // Size: 0x8
     // Offset: 0x10
@@ -62,12 +54,12 @@ namespace System::Security::Cryptography::X509Certificates {
       return cachedCertificateHash;
     }
     // Get instance field reference: private System.Byte[] cachedCertificateHash
-    ::ArrayW<uint8_t>& dyn_cachedCertificateHash();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_cachedCertificateHash();
     // public System.Boolean get_IsValid()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_IsValid();
     // protected System.Void ThrowIfContextInvalid()
-    // Offset: 0xCF9968
+    // Offset: 0x1217DE8
     void ThrowIfContextInvalid();
     // public System.Security.Cryptography.X509Certificates.X509CertificateImpl Clone()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -88,7 +80,7 @@ namespace System::Security::Cryptography::X509Certificates {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::DateTime GetValidUntil();
     // public System.Byte[] GetCertHash()
-    // Offset: 0xCF8EEC
+    // Offset: 0x121736C
     ::ArrayW<uint8_t> GetCertHash();
     // protected System.Byte[] GetCertHash(System.Boolean lazy)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -103,13 +95,13 @@ namespace System::Security::Cryptography::X509Certificates {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::StringW ToString(bool full);
     // public System.Void Dispose()
-    // Offset: 0xCF96FC
+    // Offset: 0x1217B7C
     void Dispose();
     // protected System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xCF9C2C
+    // Offset: 0x12180AC
     void Dispose(bool disposing);
     // protected System.Void .ctor()
-    // Offset: 0xCF9CAC
+    // Offset: 0x121812C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -118,17 +110,17 @@ namespace System::Security::Cryptography::X509Certificates {
       return THROW_UNLESS((::il2cpp_utils::New<X509CertificateImpl*, creationType>()));
     }
     // public override System.Int32 GetHashCode()
-    // Offset: 0xCF9A34
+    // Offset: 0x1217EB4
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xCF9AA0
+    // Offset: 0x1217F20
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // protected override System.Void Finalize()
-    // Offset: 0xCF9C34
+    // Offset: 0x12180B4
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

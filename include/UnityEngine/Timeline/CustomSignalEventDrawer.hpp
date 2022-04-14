@@ -29,7 +29,7 @@ namespace UnityEngine::Timeline {
   class CustomSignalEventDrawer : public ::UnityEngine::PropertyAttribute {
     public:
     // public System.Void .ctor()
-    // Offset: 0xA7E5D0
+    // Offset: 0xC75AA0
     // Implemented from: UnityEngine.PropertyAttribute
     // Base method: System.Void PropertyAttribute::.ctor()
     // Base method: System.Void Attribute::.ctor()

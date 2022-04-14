@@ -38,15 +38,7 @@ namespace OVRSimpleJSON {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class JSONObject::$$c__DisplayClass21_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRSimpleJSON.JSONNode aNode
     // Size: 0x8
     // Offset: 0x10
@@ -59,12 +51,12 @@ namespace OVRSimpleJSON {
       return aNode;
     }
     // Get instance field reference: public OVRSimpleJSON.JSONNode aNode
-    ::OVRSimpleJSON::JSONNode*& dyn_aNode();
+    [[deprecated]] ::OVRSimpleJSON::JSONNode*& dyn_aNode();
     // System.Boolean <Remove>b__0(System.Collections.Generic.KeyValuePair`2<System.String,OVRSimpleJSON.JSONNode> k)
-    // Offset: 0x735328
+    // Offset: 0x84BA2C
     bool $Remove$b__0(::System::Collections::Generic::KeyValuePair_2<::StringW, ::OVRSimpleJSON::JSONNode*> k);
     // public System.Void .ctor()
-    // Offset: 0x735320
+    // Offset: 0x84BA24
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

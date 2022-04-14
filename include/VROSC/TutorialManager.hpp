@@ -63,15 +63,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Tutorial _tutorial
     // Size: 0x8
     // Offset: 0x18
@@ -146,74 +138,74 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Tutorial _tutorial
-    ::VROSC::Tutorial*& dyn__tutorial();
+    [[deprecated]] ::VROSC::Tutorial*& dyn__tutorial();
     // Get instance field reference: private TutorialSettings _settings
-    ::GlobalNamespace::TutorialSettings*& dyn__settings();
+    [[deprecated]] ::GlobalNamespace::TutorialSettings*& dyn__settings();
     // Get instance field reference: private VROSC.TutorialPanel _tutorialPanel
-    ::VROSC::TutorialPanel*& dyn__tutorialPanel();
+    [[deprecated]] ::VROSC::TutorialPanel*& dyn__tutorialPanel();
     // Get instance field reference: private UnityEngine.AudioSource _timelineVOSource
-    ::UnityEngine::AudioSource*& dyn__timelineVOSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__timelineVOSource();
     // Get instance field reference: private UnityEngine.AudioSource _replayVOSource
-    ::UnityEngine::AudioSource*& dyn__replayVOSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__replayVOSource();
     // Get instance field reference: private VROSC.StateMachine _stateMachine
-    ::VROSC::StateMachine*& dyn__stateMachine();
+    [[deprecated]] ::VROSC::StateMachine*& dyn__stateMachine();
     // Get instance field reference: private VROSC.TutorialCompletedState _completedState
-    ::VROSC::TutorialCompletedState*& dyn__completedState();
+    [[deprecated]] ::VROSC::TutorialCompletedState*& dyn__completedState();
     // Get instance field reference: private System.Boolean _isRunning
-    bool& dyn__isRunning();
+    [[deprecated]] bool& dyn__isRunning();
     // Get instance field reference: private VROSC.TutorialStep _currentStep
-    ::VROSC::TutorialStep*& dyn__currentStep();
+    [[deprecated]] ::VROSC::TutorialStep*& dyn__currentStep();
     // Get instance field reference: private System.Boolean <HasRecordedCowbell>k__BackingField
-    bool& dyn_$HasRecordedCowbell$k__BackingField();
+    [[deprecated]] bool& dyn_$HasRecordedCowbell$k__BackingField();
     // Get instance field reference: public System.Action`1<VROSC.TutorialEvent> OnEvent
-    ::System::Action_1<::VROSC::TutorialEvent>*& dyn_OnEvent();
+    [[deprecated]] ::System::Action_1<::VROSC::TutorialEvent>*& dyn_OnEvent();
     // public TutorialSettings get_Settings()
-    // Offset: 0x1407F18
+    // Offset: 0xA2FFF4
     ::GlobalNamespace::TutorialSettings* get_Settings();
     // public UnityEngine.AudioSource get_TimelineVOSource()
-    // Offset: 0x1407F20
+    // Offset: 0xA2FFFC
     ::UnityEngine::AudioSource* get_TimelineVOSource();
     // public UnityEngine.AudioSource get_ReplayVOSource()
-    // Offset: 0x1407F28
+    // Offset: 0xA30004
     ::UnityEngine::AudioSource* get_ReplayVOSource();
     // public System.Boolean get_HasRecordedCowbell()
-    // Offset: 0x1407F30
+    // Offset: 0xA3000C
     bool get_HasRecordedCowbell();
     // private System.Void set_HasRecordedCowbell(System.Boolean value)
-    // Offset: 0x1407F38
+    // Offset: 0xA30014
     void set_HasRecordedCowbell(bool value);
     // protected System.Void Awake()
-    // Offset: 0x1407F44
+    // Offset: 0xA30020
     void Awake();
     // public System.Void StartTutorial(UnityEngine.Transform startMenuTransform)
-    // Offset: 0x14080D8
+    // Offset: 0xA30190
     void StartTutorial(::UnityEngine::Transform* startMenuTransform);
     // System.Void SendEvent(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x14071C8
+    // Offset: 0xA2F2A4
     void SendEvent(::VROSC::TutorialEvent tutorialEvent);
     // public System.Void StopTutorial(System.Boolean isCancel)
-    // Offset: 0x1408828
+    // Offset: 0xA30918
     void StopTutorial(bool isCancel);
     // public System.Void ReEnableEverything()
-    // Offset: 0x1408C70
+    // Offset: 0xA30D60
     void ReEnableEverything();
     // public System.Void ActivateStep(VROSC.TutorialStep tutorialStep)
-    // Offset: 0x1408D08
+    // Offset: 0xA30E24
     void ActivateStep(::VROSC::TutorialStep* tutorialStep);
     // protected System.Void Update()
-    // Offset: 0x1408FC4
+    // Offset: 0xA313A0
     void Update();
     // private System.Void OnAppPaused(System.Boolean paused)
-    // Offset: 0x1409028
+    // Offset: 0xA31404
     void OnAppPaused(bool paused);
     // private System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x14090B8
+    // Offset: 0xA31494
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
     // public System.Void SetHasRecordedCowbell(System.Boolean hasRecordedCowbell)
-    // Offset: 0x1409174
+    // Offset: 0xA31550
     void SetHasRecordedCowbell(bool hasRecordedCowbell);
     // public System.Void .ctor()
-    // Offset: 0x1409180
+    // Offset: 0xA3155C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

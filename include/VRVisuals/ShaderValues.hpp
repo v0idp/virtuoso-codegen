@@ -30,10 +30,10 @@ namespace VRVisuals {
   class ShaderValues : public ::UnityEngine::MonoBehaviour {
     public:
     // private System.Void GetValuesFromTime()
-    // Offset: 0x13B4194
+    // Offset: 0x1927060
     void GetValuesFromTime();
     // public System.Void .ctor()
-    // Offset: 0x13B4338
+    // Offset: 0x1927204
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -75,21 +75,21 @@ namespace UnityEngine::Scripting::APIUpdating {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String className
-    ::StringW& dyn_className();
+    [[deprecated]] ::StringW& dyn_className();
     // Get instance field reference: public System.String nameSpace
-    ::StringW& dyn_nameSpace();
+    [[deprecated]] ::StringW& dyn_nameSpace();
     // Get instance field reference: public System.String assembly
-    ::StringW& dyn_assembly();
+    [[deprecated]] ::StringW& dyn_assembly();
     // Get instance field reference: public System.Boolean classHasChanged
-    bool& dyn_classHasChanged();
+    [[deprecated]] bool& dyn_classHasChanged();
     // Get instance field reference: public System.Boolean nameSpaceHasChanged
-    bool& dyn_nameSpaceHasChanged();
+    [[deprecated]] bool& dyn_nameSpaceHasChanged();
     // Get instance field reference: public System.Boolean assemblyHasChanged
-    bool& dyn_assemblyHasChanged();
+    [[deprecated]] bool& dyn_assemblyHasChanged();
     // Get instance field reference: public System.Boolean autoUdpateAPI
-    bool& dyn_autoUdpateAPI();
+    [[deprecated]] bool& dyn_autoUdpateAPI();
     // public System.Void Set(System.Boolean autoUpdateAPI, System.String sourceNamespace, System.String sourceAssembly, System.String sourceClassName)
-    // Offset: 0x9CB0FC
+    // Offset: 0xBBFEA4
     void Set(bool autoUpdateAPI, ::StringW sourceNamespace, ::StringW sourceAssembly, ::StringW sourceClassName);
   }; // UnityEngine.Scripting.APIUpdating.MovedFromAttributeData
   #pragma pack(pop)

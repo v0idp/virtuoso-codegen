@@ -97,25 +97,25 @@ namespace AudioHelm {
     // Set static field: static private System.Boolean[] blackKeys
     static void _set_blackKeys(::ArrayW<bool> value);
     // static private System.Void .cctor()
-    // Offset: 0x13AD330
+    // Offset: 0x19212A4
     static void _cctor();
     // static public System.Boolean IsBlackKey(System.Int32 key)
-    // Offset: 0x13AD0E0
+    // Offset: 0x1921054
     static bool IsBlackKey(int key);
     // static public System.Boolean IsC(System.Int32 key)
-    // Offset: 0x13AD190
+    // Offset: 0x1921104
     static bool IsC(int key);
     // static public System.Int32 GetOctave(System.Int32 key)
-    // Offset: 0x13AD1BC
+    // Offset: 0x1921130
     static int GetOctave(int key);
     // static public System.Single MidiChangeToRatio(System.Int32 midi)
-    // Offset: 0x13AD1DC
+    // Offset: 0x1921150
     static float MidiChangeToRatio(int midi);
     // static public System.Boolean RangesOverlap(System.Single start, System.Single end, System.Single rangeStart, System.Single rangeEnd)
-    // Offset: 0x13AD1EC
+    // Offset: 0x1921160
     static bool RangesOverlap(float start, float end, float rangeStart, float rangeEnd);
     // static public System.Void InitAudioSource(UnityEngine.AudioSource audio)
-    // Offset: 0x13AD21C
+    // Offset: 0x1921190
     static void InitAudioSource(::UnityEngine::AudioSource* audio);
     // static public T CopyComponent(T original, UnityEngine.GameObject destination)
     // Offset: 0xFFFFFFFFFFFFFFFF

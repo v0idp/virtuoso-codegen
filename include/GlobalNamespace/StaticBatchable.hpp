@@ -29,7 +29,7 @@ namespace GlobalNamespace {
   class StaticBatchable : public ::UnityEngine::MonoBehaviour {
     public:
     // public System.Void .ctor()
-    // Offset: 0x13BD67C
+    // Offset: 0x1930AD0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

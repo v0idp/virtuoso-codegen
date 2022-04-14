@@ -28,15 +28,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class LivestreamingStatus : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.Boolean CommentsVisible
     // Size: 0x1
     // Offset: 0x10
@@ -71,17 +63,17 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly System.Boolean CommentsVisible
-    bool& dyn_CommentsVisible();
+    [[deprecated]] bool& dyn_CommentsVisible();
     // Get instance field reference: public readonly System.Boolean IsPaused
-    bool& dyn_IsPaused();
+    [[deprecated]] bool& dyn_IsPaused();
     // Get instance field reference: public readonly System.Boolean LivestreamingEnabled
-    bool& dyn_LivestreamingEnabled();
+    [[deprecated]] bool& dyn_LivestreamingEnabled();
     // Get instance field reference: public readonly System.Int32 LivestreamingType
-    int& dyn_LivestreamingType();
+    [[deprecated]] int& dyn_LivestreamingType();
     // Get instance field reference: public readonly System.Boolean MicEnabled
-    bool& dyn_MicEnabled();
+    [[deprecated]] bool& dyn_MicEnabled();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x96B72C
+    // Offset: 0xB3DAC8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LivestreamingStatus* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::LivestreamingStatus::.ctor");

@@ -29,13 +29,13 @@ namespace System::Collections::Generic {
   class NonRandomizedStringEqualityComparer : public ::System::Collections::Generic::EqualityComparer_1<::StringW> {
     public:
     // public System.Boolean Equals(System.String x, System.String y)
-    // Offset: 0xFCEAEC
+    // Offset: 0x1011880
     bool Equals(::StringW x, ::StringW y);
     // public System.Int32 GetHashCode(System.String obj)
-    // Offset: 0xFCEAFC
+    // Offset: 0x1011890
     int GetHashCode(::StringW obj);
     // public System.Void .ctor()
-    // Offset: 0xFCEB14
+    // Offset: 0x10118A8
     // Implemented from: System.Collections.Generic.EqualityComparer`1
     // Base method: System.Void EqualityComparer_1::.ctor()
     // Base method: System.Void Object::.ctor()

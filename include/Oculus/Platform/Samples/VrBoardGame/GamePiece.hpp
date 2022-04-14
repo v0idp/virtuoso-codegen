@@ -88,20 +88,12 @@ namespace Oculus::Platform::Samples::VrBoardGame {
       // Set static field: static public Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece PowerBall
       static void _set_PowerBall(::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece
     #pragma pack(pop)
     static check_size<sizeof(GamePiece::Piece), 0 + sizeof(int)> __Oculus_Platform_Samples_VrBoardGame_GamePiece_PieceSizeCheck;
     static_assert(sizeof(GamePiece::Piece) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece m_type
     // Size: 0x4
     // Offset: 0x18
@@ -138,32 +130,32 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece m_type
-    ::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece& dyn_m_type();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece& dyn_m_type();
     // Get instance field reference: private UnityEngine.GameObject m_prefabA
-    ::UnityEngine::GameObject*& dyn_m_prefabA();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_prefabA();
     // Get instance field reference: private UnityEngine.GameObject m_prefabB
-    ::UnityEngine::GameObject*& dyn_m_prefabB();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_prefabB();
     // Get instance field reference: private UnityEngine.GameObject m_prefabPower
-    ::UnityEngine::GameObject*& dyn_m_prefabPower();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_prefabPower();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.BoardPosition m_position
-    ::Oculus::Platform::Samples::VrBoardGame::BoardPosition*& dyn_m_position();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::BoardPosition*& dyn_m_position();
     // public Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece get_Type()
-    // Offset: 0x7EAA1C
+    // Offset: 0x930DFC
     ::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece get_Type();
     // public Oculus.Platform.Samples.VrBoardGame.BoardPosition get_Position()
-    // Offset: 0x7EAA24
+    // Offset: 0x930E04
     ::Oculus::Platform::Samples::VrBoardGame::BoardPosition* get_Position();
     // public System.Void set_Position(Oculus.Platform.Samples.VrBoardGame.BoardPosition value)
-    // Offset: 0x7EAA2C
+    // Offset: 0x930E0C
     void set_Position(::Oculus::Platform::Samples::VrBoardGame::BoardPosition* value);
     // public UnityEngine.GameObject get_Prefab()
-    // Offset: 0x7EA770
+    // Offset: 0x930B50
     ::UnityEngine::GameObject* get_Prefab();
     // public UnityEngine.GameObject PrefabFor(Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece p)
-    // Offset: 0x7EA878
+    // Offset: 0x930C58
     ::UnityEngine::GameObject* PrefabFor(::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece p);
     // public System.Void .ctor()
-    // Offset: 0x7EAA34
+    // Offset: 0x930E14
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoginUIPopupEmailVerificationPanel : public ::VROSC::LoginUIPopupPanelBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _sendVerificationEmailButton
     // Size: 0x8
     // Offset: 0x30
@@ -68,43 +60,43 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIButton _sendVerificationEmailButton
-    ::VROSC::UIButton*& dyn__sendVerificationEmailButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__sendVerificationEmailButton();
     // Get instance field reference: private VROSC.UIButton _changeEmailButton
-    ::VROSC::UIButton*& dyn__changeEmailButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__changeEmailButton();
     // Get instance field reference: private VROSC.UIButton _logoutButton
-    ::VROSC::UIButton*& dyn__logoutButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__logoutButton();
     // private System.Void Awake()
-    // Offset: 0x1391718
+    // Offset: 0x19B1B6C
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13918A0
+    // Offset: 0x19B1CF4
     void OnDestroy();
     // private System.Void SendVerificationEmail()
-    // Offset: 0x1391D40
+    // Offset: 0x19B2194
     void SendVerificationEmail();
     // private System.Void SendValidationEmailButtonPressed()
-    // Offset: 0x1391F18
+    // Offset: 0x19B236C
     void SendValidationEmailButtonPressed();
     // private System.Void ChangeEmailButtonPressed()
-    // Offset: 0x1391F1C
+    // Offset: 0x19B2370
     void ChangeEmailButtonPressed();
     // private System.Void LogoutButtonPressed()
-    // Offset: 0x1391F38
+    // Offset: 0x19B238C
     void LogoutButtonPressed();
     // private System.Void SendVerificationEmailSucceeded()
-    // Offset: 0x1392080
+    // Offset: 0x19B24D4
     void SendVerificationEmailSucceeded();
     // private System.Void SendVerificationEmailFailed(VROSC.Error error)
-    // Offset: 0x1392230
+    // Offset: 0x19B2684
     void SendVerificationEmailFailed(::VROSC::Error error);
     // private System.Void UserLoggedOut()
-    // Offset: 0x1392434
+    // Offset: 0x19B2888
     void UserLoggedOut();
     // private System.Void UserHasVerified()
-    // Offset: 0x1392560
+    // Offset: 0x19B29B4
     void UserHasVerified();
     // public System.Void .ctor()
-    // Offset: 0x1392578
+    // Offset: 0x19B29CC
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -118,17 +110,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopupEmailVerificationPanel*, creationType>()));
     }
     // public override System.Void Open(params System.Object[] parameters)
-    // Offset: 0x1391A28
+    // Offset: 0x19B1E7C
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::Open(params System.Object[] parameters)
     void Open(::ArrayW<::Il2CppObject*> parameters);
     // public override System.Void Close()
-    // Offset: 0x1391B08
+    // Offset: 0x19B1F5C
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::Close()
     void Close();
     // protected override System.Void EnableUI(System.Boolean enable)
-    // Offset: 0x1391C64
+    // Offset: 0x19B20B8
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::EnableUI(System.Boolean enable)
     void EnableUI(bool enable);

@@ -50,15 +50,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationGroupPlaybackUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.OverridePlaybackSettingsUI _overridePlaybackSettingsUI
     // Size: 0x8
     // Offset: 0x18
@@ -111,62 +103,62 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.OverridePlaybackSettingsUI _overridePlaybackSettingsUI
-    ::VROSC::OverridePlaybackSettingsUI*& dyn__overridePlaybackSettingsUI();
+    [[deprecated]] ::VROSC::OverridePlaybackSettingsUI*& dyn__overridePlaybackSettingsUI();
     // Get instance field reference: private VROSC.LoopPlayButton _playButton
-    ::VROSC::LoopPlayButton*& dyn__playButton();
+    [[deprecated]] ::VROSC::LoopPlayButton*& dyn__playButton();
     // Get instance field reference: private VROSC.LoopPlaybackConfigOverride <PlaybackConfig>k__BackingField
-    ::VROSC::LoopPlaybackConfigOverride*& dyn_$PlaybackConfig$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigOverride*& dyn_$PlaybackConfig$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationGroup _loopGroup
-    ::VROSC::LoopStationGroup*& dyn__loopGroup();
+    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__loopGroup();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopPlayer _firstLoopPlayer
-    ::VROSC::LoopPlayer*& dyn__firstLoopPlayer();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn__firstLoopPlayer();
     // Get instance field reference: private VROSC.LoopPlayer _longestLoopPlayer
-    ::VROSC::LoopPlayer*& dyn__longestLoopPlayer();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn__longestLoopPlayer();
     // Get instance field reference: private System.Boolean _shouldUpdatePlayback
-    bool& dyn__shouldUpdatePlayback();
+    [[deprecated]] bool& dyn__shouldUpdatePlayback();
     // public VROSC.LoopPlaybackConfigOverride get_PlaybackConfig()
-    // Offset: 0x9143D0
+    // Offset: 0x1970464
     ::VROSC::LoopPlaybackConfigOverride* get_PlaybackConfig();
     // private System.Void set_PlaybackConfig(VROSC.LoopPlaybackConfigOverride value)
-    // Offset: 0x9143C8
+    // Offset: 0x197045C
     void set_PlaybackConfig(::VROSC::LoopPlaybackConfigOverride* value);
     // public System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationGroup loopGroup, VROSC.LoopPlaybackConfigOverride configOverride)
-    // Offset: 0x9143D8
+    // Offset: 0x197046C
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationGroup* loopGroup, ::VROSC::LoopPlaybackConfigOverride* configOverride);
     // private System.Void LoopAdded(VROSC.LoopPlayer player)
-    // Offset: 0x914674
+    // Offset: 0x1970708
     void LoopAdded(::VROSC::LoopPlayer* player);
     // private System.Void LoopRemoved(VROSC.LoopPlayer player)
-    // Offset: 0x9147E0
+    // Offset: 0x1970874
     void LoopRemoved(::VROSC::LoopPlayer* player);
     // private System.Void Update()
-    // Offset: 0x914940
+    // Offset: 0x19709D4
     void Update();
     // private System.Void UpdatePlayback()
-    // Offset: 0x9147D4
+    // Offset: 0x1970868
     void UpdatePlayback();
     // private System.Void SetPlaybackConfig(VROSC.LoopPlaybackConfigOverride playbackOverride)
-    // Offset: 0x914650
+    // Offset: 0x19706E4
     void SetPlaybackConfig(::VROSC::LoopPlaybackConfigOverride* playbackOverride);
     // private System.Void OnDestroy()
-    // Offset: 0x914AF4
+    // Offset: 0x1970B94
     void OnDestroy();
     // private System.Void ConfigChanged()
-    // Offset: 0x914CF8
+    // Offset: 0x1970D98
     void ConfigChanged();
     // private System.Void PlayToggled(System.Boolean play)
-    // Offset: 0x914E20
+    // Offset: 0x1970EB4
     void PlayToggled(bool play);
     // private VROSC.LoopPlayer GetLongestLoopCurrentlyPlaying()
-    // Offset: 0x914988
+    // Offset: 0x1970A1C
     ::VROSC::LoopPlayer* GetLongestLoopCurrentlyPlaying();
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x915134
+    // Offset: 0x19711C0
     void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x915150
+    // Offset: 0x19711DC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

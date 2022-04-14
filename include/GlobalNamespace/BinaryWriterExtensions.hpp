@@ -39,19 +39,19 @@ namespace GlobalNamespace {
   class BinaryWriterExtensions : public ::Il2CppObject {
     public:
     // static public System.Void Write(System.IO.BinaryWriter writer, OvrAvatarDriver/PoseFrame frame)
-    // Offset: 0x1323844
+    // Offset: 0x9373C4
     static void Write(::System::IO::BinaryWriter* writer, ::GlobalNamespace::OvrAvatarDriver::PoseFrame frame);
     // static public System.Void Write(System.IO.BinaryWriter writer, UnityEngine.Vector3 vec3)
-    // Offset: 0x1323958
+    // Offset: 0x9374D8
     static void Write(::System::IO::BinaryWriter* writer, ::UnityEngine::Vector3 vec3);
     // static public System.Void Write(System.IO.BinaryWriter writer, UnityEngine.Vector2 vec2)
-    // Offset: 0x1323B04
+    // Offset: 0x937684
     static void Write(::System::IO::BinaryWriter* writer, ::UnityEngine::Vector2 vec2);
     // static public System.Void Write(System.IO.BinaryWriter writer, UnityEngine.Quaternion quat)
-    // Offset: 0x13239C8
+    // Offset: 0x937548
     static void Write(::System::IO::BinaryWriter* writer, ::UnityEngine::Quaternion quat);
     // static public System.Void Write(System.IO.BinaryWriter writer, OvrAvatarDriver/ControllerPose pose)
-    // Offset: 0x1323A5C
+    // Offset: 0x9375DC
     static void Write(::System::IO::BinaryWriter* writer, ::GlobalNamespace::OvrAvatarDriver::ControllerPose pose);
   }; // BinaryWriterExtensions
   #pragma pack(pop)

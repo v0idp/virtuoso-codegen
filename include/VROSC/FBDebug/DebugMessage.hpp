@@ -36,15 +36,7 @@ namespace VROSC::FBDebug {
   // [TokenAttribute] Offset: FFFFFFFF
   class DebugMessage : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshProUGUI _messageText
     // Size: 0x8
     // Offset: 0x18
@@ -59,18 +51,18 @@ namespace VROSC::FBDebug {
     // Set static field: static private System.String _message
     static void _set__message(::StringW value);
     // Get instance field reference: private TMPro.TextMeshProUGUI _messageText
-    ::TMPro::TextMeshProUGUI*& dyn__messageText();
+    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn__messageText();
     // private System.Void Awake()
-    // Offset: 0x130A4DC
+    // Offset: 0x8E36AC
     void Awake();
     // private System.Void Update()
-    // Offset: 0x130A53C
+    // Offset: 0x8E370C
     void Update();
     // static public System.Void AddMessage(System.String message, System.Boolean clear)
-    // Offset: 0x130A5C0
+    // Offset: 0x8E3790
     static void AddMessage(::StringW message, bool clear);
     // public System.Void .ctor()
-    // Offset: 0x130A700
+    // Offset: 0x8E38D0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -83,7 +75,7 @@ namespace VROSC::FBDebug {
       return THROW_UNLESS((::il2cpp_utils::New<DebugMessage*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x130A708
+    // Offset: 0x8E38D8
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

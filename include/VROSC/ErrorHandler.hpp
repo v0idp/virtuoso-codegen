@@ -49,15 +49,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ErrorHandler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ErrorMessages _errorMessages
     // Size: 0x8
     // Offset: 0x18
@@ -72,24 +64,24 @@ namespace VROSC {
     // Set static field: static private System.Collections.Generic.Dictionary`2<VROSC.Error,System.String> _errorsDict
     static void _set__errorsDict(::System::Collections::Generic::Dictionary_2<::VROSC::Error, ::StringW>* value);
     // Get instance field reference: private VROSC.ErrorMessages _errorMessages
-    ::VROSC::ErrorMessages*& dyn__errorMessages();
+    [[deprecated]] ::VROSC::ErrorMessages*& dyn__errorMessages();
     // private System.Void Awake()
-    // Offset: 0x13158AC
+    // Offset: 0x8EF90C
     void Awake();
     // static public System.String GetMessage(VROSC.Error error)
-    // Offset: 0x1315B84
+    // Offset: 0x8EFBE4
     static ::StringW GetMessage(::VROSC::Error error);
     // static public VROSC.Error GetError(System.Int64 httpErrorCode)
-    // Offset: 0x1315D14
+    // Offset: 0x8EFD74
     static ::VROSC::Error GetError(int64_t httpErrorCode);
     // static public VROSC.Error GetError(System.Int32 fbErrorCode)
-    // Offset: 0x1315E08
+    // Offset: 0x8EFE68
     static ::VROSC::Error GetError(int fbErrorCode);
     // static public VROSC.Error GetError(System.Exception e)
-    // Offset: 0x1315F20
+    // Offset: 0x8EFF80
     static ::VROSC::Error GetError(::System::Exception* e);
     // public System.Void .ctor()
-    // Offset: 0x1316180
+    // Offset: 0x8F0230
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -102,7 +94,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ErrorHandler*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x1316188
+    // Offset: 0x8F0238
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

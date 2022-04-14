@@ -47,16 +47,16 @@ namespace GlobalNamespace {
     // Set static field: static public System.Func`2<ONSPPropagationMaterial/Point,System.Single> <>9__3_1
     static void _set_$$9__3_1(::System::Func_2<::GlobalNamespace::ONSPPropagationMaterial::Point*, float>* value);
     // static private System.Void .cctor()
-    // Offset: 0x11CCB64
+    // Offset: 0x1771A6C
     static void _cctor();
     // System.Single <get_Item>b__3_0(ONSPPropagationMaterial/Point p)
-    // Offset: 0x11CCBCC
+    // Offset: 0x1771AD4
     float $get_Item$b__3_0(::GlobalNamespace::ONSPPropagationMaterial::Point* p);
     // System.Single <get_Item>b__3_1(ONSPPropagationMaterial/Point p)
-    // Offset: 0x11CCBE4
+    // Offset: 0x1771AEC
     float $get_Item$b__3_1(::GlobalNamespace::ONSPPropagationMaterial::Point* p);
     // public System.Void .ctor()
-    // Offset: 0x11CCBC4
+    // Offset: 0x1771ACC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

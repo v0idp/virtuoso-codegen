@@ -27,15 +27,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class RegexPrefix : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.String _prefix
     // Size: 0x8
     // Offset: 0x10
@@ -54,27 +46,27 @@ namespace System::Text::RegularExpressions {
     // Set static field: static System.Text.RegularExpressions.RegexPrefix _empty
     static void _set__empty(::System::Text::RegularExpressions::RegexPrefix* value);
     // Get instance field reference: System.String _prefix
-    ::StringW& dyn__prefix();
+    [[deprecated]] ::StringW& dyn__prefix();
     // Get instance field reference: System.Boolean _caseInsensitive
-    bool& dyn__caseInsensitive();
+    [[deprecated]] bool& dyn__caseInsensitive();
     // System.String get_Prefix()
-    // Offset: 0x125BD9C
+    // Offset: 0x1850F70
     ::StringW get_Prefix();
     // System.Boolean get_CaseInsensitive()
-    // Offset: 0x125BDA4
+    // Offset: 0x1850F78
     bool get_CaseInsensitive();
     // static System.Text.RegularExpressions.RegexPrefix get_Empty()
-    // Offset: 0x125BDAC
+    // Offset: 0x1850F80
     static ::System::Text::RegularExpressions::RegexPrefix* get_Empty();
     // System.Void .ctor(System.String prefix, System.Boolean ci)
-    // Offset: 0x12513AC
+    // Offset: 0x1846580
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RegexPrefix* New_ctor(::StringW prefix, bool ci) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexPrefix::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RegexPrefix*, creationType>(prefix, ci)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x125BE10
+    // Offset: 0x1850FE4
     static void _cctor();
   }; // System.Text.RegularExpressions.RegexPrefix
   #pragma pack(pop)

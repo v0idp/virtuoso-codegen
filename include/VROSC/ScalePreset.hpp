@@ -44,22 +44,14 @@ namespace VROSC {
     class NotePriority;
     // Nested type: ::VROSC::ScalePreset::$$c__DisplayClass4_0
     class $$c__DisplayClass4_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Name
     // Size: 0x8
     // Offset: 0x10
     ::StringW Name;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [BitMaskAttribute] Offset: 0x66F484
+    // [BitMaskAttribute] Offset: 0x78550C
     // public VROSC.Scale Scale
     // Size: 0x4
     // Offset: 0x18
@@ -76,16 +68,16 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::ScalePreset::NotePriority*>*) == 0x8);
     public:
     // Get instance field reference: public System.String Name
-    ::StringW& dyn_Name();
+    [[deprecated]] ::StringW& dyn_Name();
     // Get instance field reference: public VROSC.Scale Scale
-    ::VROSC::Scale& dyn_Scale();
+    [[deprecated]] ::VROSC::Scale& dyn_Scale();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.ScalePreset/VROSC.NotePriority> NotePriorities
-    ::System::Collections::Generic::List_1<::VROSC::ScalePreset::NotePriority*>*& dyn_NotePriorities();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ScalePreset::NotePriority*>*& dyn_NotePriorities();
     // public System.Void UpdateNotePriorityList()
-    // Offset: 0x13DF96C
+    // Offset: 0xDE4040
     void UpdateNotePriorityList();
     // public System.Void .ctor()
-    // Offset: 0x13DFC38
+    // Offset: 0xDE430C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

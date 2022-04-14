@@ -51,19 +51,19 @@ namespace System::Security::Cryptography::X509Certificates {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void set_ChainPolicy(::System::Security::Cryptography::X509Certificates::X509ChainPolicy* value);
     // protected System.Void ThrowIfContextInvalid()
-    // Offset: 0xAC7C2C
+    // Offset: 0xC53248
     void ThrowIfContextInvalid();
     // public System.Void Reset()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Reset();
     // public System.Void Dispose()
-    // Offset: 0xAC7574
+    // Offset: 0xC52B90
     void Dispose();
     // protected System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xAC7CF8
+    // Offset: 0xC53314
     void Dispose(bool disposing);
     // protected System.Void .ctor()
-    // Offset: 0xAC7D70
+    // Offset: 0xC5338C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -72,7 +72,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return THROW_UNLESS((::il2cpp_utils::New<X509ChainImpl*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xAC7CFC
+    // Offset: 0xC53318
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

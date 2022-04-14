@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlaybackSettingsToggle : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopPlaybackSettingsUI _playbackSettings
     // Size: 0x8
     // Offset: 0x18
@@ -64,26 +56,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoopPlaybackSettingsUI _playbackSettings
-    ::VROSC::LoopPlaybackSettingsUI*& dyn__playbackSettings();
+    [[deprecated]] ::VROSC::LoopPlaybackSettingsUI*& dyn__playbackSettings();
     // Get instance field reference: private VROSC.UIToggle _playbackSettingsButton
-    ::VROSC::UIToggle*& dyn__playbackSettingsButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__playbackSettingsButton();
     // private System.Void Awake()
-    // Offset: 0x139741C
+    // Offset: 0x19B76EC
     void Awake();
     // public System.Void SetTarget(VROSC.LoopPlaybackSettingsUI settingsUI)
-    // Offset: 0x1397568
+    // Offset: 0x19B783C
     void SetTarget(::VROSC::LoopPlaybackSettingsUI* settingsUI);
     // private System.Void PlayBackSettingsOpened(System.Boolean isOn)
-    // Offset: 0x139776C
+    // Offset: 0x19B7A40
     void PlayBackSettingsOpened(bool isOn);
     // private System.Void OnDestroy()
-    // Offset: 0x1397790
+    // Offset: 0x19B7A64
     void OnDestroy();
     // public System.Void SetPlaybackSettingsOpen(VROSC.InputDevice inputDevice, System.Boolean isOn)
-    // Offset: 0x1397930
+    // Offset: 0x19B7C04
     void SetPlaybackSettingsOpen(::VROSC::InputDevice* inputDevice, bool isOn);
     // public System.Void .ctor()
-    // Offset: 0x1397A84
+    // Offset: 0x19B7D58
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

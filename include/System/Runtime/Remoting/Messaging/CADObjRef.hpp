@@ -34,15 +34,7 @@ namespace System::Runtime::Remoting::Messaging {
   // [TokenAttribute] Offset: FFFFFFFF
   class CADObjRef : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Runtime.Remoting.ObjRef objref
     // Size: 0x8
     // Offset: 0x10
@@ -65,13 +57,13 @@ namespace System::Runtime::Remoting::Messaging {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: System.Runtime.Remoting.ObjRef objref
-    ::System::Runtime::Remoting::ObjRef*& dyn_objref();
+    [[deprecated]] ::System::Runtime::Remoting::ObjRef*& dyn_objref();
     // Get instance field reference: System.Int32 SourceDomain
-    int& dyn_SourceDomain();
+    [[deprecated]] int& dyn_SourceDomain();
     // Get instance field reference: System.Byte[] TypeInfo
-    ::ArrayW<uint8_t>& dyn_TypeInfo();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_TypeInfo();
     // public System.Void .ctor(System.Runtime.Remoting.ObjRef o, System.Int32 sourceDomain)
-    // Offset: 0xCCFE00
+    // Offset: 0xFF1EEC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CADObjRef* New_ctor(::System::Runtime::Remoting::ObjRef* o, int sourceDomain) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Remoting::Messaging::CADObjRef::.ctor");

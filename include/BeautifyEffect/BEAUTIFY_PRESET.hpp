@@ -72,7 +72,7 @@ namespace BeautifyEffect {
     // Set static field: static public BeautifyEffect.BEAUTIFY_PRESET Custom
     static void _set_Custom(::BeautifyEffect::BEAUTIFY_PRESET value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // BeautifyEffect.BEAUTIFY_PRESET
   #pragma pack(pop)
   static check_size<sizeof(BEAUTIFY_PRESET), 0 + sizeof(int)> __BeautifyEffect_BEAUTIFY_PRESETSizeCheck;

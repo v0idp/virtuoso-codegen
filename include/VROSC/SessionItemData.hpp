@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionItemData : public ::VROSC::PaginatedListItemData {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String <ID>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -59,30 +51,30 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SessionUIData*) == 0x8);
     public:
     // Get instance field reference: private System.String <ID>k__BackingField
-    ::StringW& dyn_$ID$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$ID$k__BackingField();
     // Get instance field reference: private VROSC.SessionUIData <Data>k__BackingField
-    ::VROSC::SessionUIData*& dyn_$Data$k__BackingField();
+    [[deprecated]] ::VROSC::SessionUIData*& dyn_$Data$k__BackingField();
     // public System.String get_ID()
-    // Offset: 0x13E7D4C
+    // Offset: 0x1986FD0
     ::StringW get_ID();
     // private System.Void set_ID(System.String value)
-    // Offset: 0x13E7D44
+    // Offset: 0x1986FC8
     void set_ID(::StringW value);
     // public VROSC.SessionUIData get_Data()
-    // Offset: 0x13E7D5C
+    // Offset: 0x1986FE0
     ::VROSC::SessionUIData* get_Data();
     // private System.Void set_Data(VROSC.SessionUIData value)
-    // Offset: 0x13E7D54
+    // Offset: 0x1986FD8
     void set_Data(::VROSC::SessionUIData* value);
     // public System.Void .ctor(System.String id, VROSC.SessionUIData data)
-    // Offset: 0x13E7D64
+    // Offset: 0x1986FE8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionItemData* New_ctor(::StringW id, ::VROSC::SessionUIData* data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionItemData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SessionItemData*, creationType>(id, data)));
     }
     // public System.Void Set(VROSC.SessionUIData data)
-    // Offset: 0x13E7D9C
+    // Offset: 0x1987020
     void Set(::VROSC::SessionUIData* data);
   }; // VROSC.SessionItemData
   #pragma pack(pop)

@@ -30,15 +30,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRHaptics::OVRHapticsOutput::ClipPlaybackTracker : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <ReadCount>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -55,23 +47,23 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRHapticsClip*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <ReadCount>k__BackingField
-    int& dyn_$ReadCount$k__BackingField();
+    [[deprecated]] int& dyn_$ReadCount$k__BackingField();
     // Get instance field reference: private OVRHapticsClip <Clip>k__BackingField
-    ::GlobalNamespace::OVRHapticsClip*& dyn_$Clip$k__BackingField();
+    [[deprecated]] ::GlobalNamespace::OVRHapticsClip*& dyn_$Clip$k__BackingField();
     // public System.Int32 get_ReadCount()
-    // Offset: 0xF18054
+    // Offset: 0x13F2050
     int get_ReadCount();
     // public System.Void set_ReadCount(System.Int32 value)
-    // Offset: 0xF1805C
+    // Offset: 0x13F2058
     void set_ReadCount(int value);
     // public OVRHapticsClip get_Clip()
-    // Offset: 0xF18064
+    // Offset: 0x13F2060
     ::GlobalNamespace::OVRHapticsClip* get_Clip();
     // public System.Void set_Clip(OVRHapticsClip value)
-    // Offset: 0xF1806C
+    // Offset: 0x13F2068
     void set_Clip(::GlobalNamespace::OVRHapticsClip* value);
     // public System.Void .ctor(OVRHapticsClip clip)
-    // Offset: 0xF18074
+    // Offset: 0x13F2070
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRHaptics::OVRHapticsOutput::ClipPlaybackTracker* New_ctor(::GlobalNamespace::OVRHapticsClip* clip) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRHaptics::OVRHapticsOutput::ClipPlaybackTracker::.ctor");

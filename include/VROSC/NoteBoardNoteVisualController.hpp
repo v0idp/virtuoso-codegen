@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoardNoteVisualController : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.NoteBoardNote _noteBoardNote
     // Size: 0x8
     // Offset: 0x18
@@ -59,21 +51,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.NoteBoardNote _noteBoardNote
-    ::VROSC::NoteBoardNote*& dyn__noteBoardNote();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__noteBoardNote();
     // public System.Void Setup(VROSC.NoteBoardNote noteBoardNote, System.Boolean octave, System.Boolean isOdd)
-    // Offset: 0xA14000
+    // Offset: 0xC5744C
     void Setup(::VROSC::NoteBoardNote* noteBoardNote, bool octave, bool isOdd);
     // public System.Void UpdateVisuals()
-    // Offset: 0xA14008
+    // Offset: 0xC57454
     void UpdateVisuals();
     // public System.Void SetPlaying(System.Boolean isPlaying)
-    // Offset: 0xA1400C
+    // Offset: 0xC57458
     void SetPlaying(bool isPlaying);
     // public System.Void SetRestingColor(UnityEngine.Color color)
-    // Offset: 0xA14010
+    // Offset: 0xC5745C
     void SetRestingColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0xA14014
+    // Offset: 0xC57460
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -25,15 +25,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRInput::OVRControllerBase::VirtualButtonMap : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRInput/RawButton None
     // Size: 0x4
     // Offset: 0x10
@@ -234,76 +226,76 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRInput::RawButton) == 0x4);
     public:
     // Get instance field reference: public OVRInput/RawButton None
-    ::GlobalNamespace::OVRInput::RawButton& dyn_None();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_None();
     // Get instance field reference: public OVRInput/RawButton One
-    ::GlobalNamespace::OVRInput::RawButton& dyn_One();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_One();
     // Get instance field reference: public OVRInput/RawButton Two
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Two();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Two();
     // Get instance field reference: public OVRInput/RawButton Three
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Three();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Three();
     // Get instance field reference: public OVRInput/RawButton Four
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Four();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Four();
     // Get instance field reference: public OVRInput/RawButton Start
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Start();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Start();
     // Get instance field reference: public OVRInput/RawButton Back
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Back();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Back();
     // Get instance field reference: public OVRInput/RawButton PrimaryShoulder
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryShoulder();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryShoulder();
     // Get instance field reference: public OVRInput/RawButton PrimaryIndexTrigger
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryIndexTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawButton PrimaryHandTrigger
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryHandTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryHandTrigger();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstick
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstick();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstick();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstickUp
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickUp();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickUp();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstickDown
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickDown();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickDown();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstickLeft
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickLeft();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickLeft();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstickRight
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickRight();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickRight();
     // Get instance field reference: public OVRInput/RawButton PrimaryTouchpad
-    ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryTouchpad();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryTouchpad();
     // Get instance field reference: public OVRInput/RawButton SecondaryShoulder
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryShoulder();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryShoulder();
     // Get instance field reference: public OVRInput/RawButton SecondaryIndexTrigger
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryIndexTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawButton SecondaryHandTrigger
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryHandTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryHandTrigger();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstick
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstick();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstick();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstickUp
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickUp();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickUp();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstickDown
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickDown();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickDown();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstickLeft
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickLeft();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickLeft();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstickRight
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickRight();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickRight();
     // Get instance field reference: public OVRInput/RawButton SecondaryTouchpad
-    ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryTouchpad();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryTouchpad();
     // Get instance field reference: public OVRInput/RawButton DpadUp
-    ::GlobalNamespace::OVRInput::RawButton& dyn_DpadUp();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadUp();
     // Get instance field reference: public OVRInput/RawButton DpadDown
-    ::GlobalNamespace::OVRInput::RawButton& dyn_DpadDown();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadDown();
     // Get instance field reference: public OVRInput/RawButton DpadLeft
-    ::GlobalNamespace::OVRInput::RawButton& dyn_DpadLeft();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadLeft();
     // Get instance field reference: public OVRInput/RawButton DpadRight
-    ::GlobalNamespace::OVRInput::RawButton& dyn_DpadRight();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadRight();
     // Get instance field reference: public OVRInput/RawButton Up
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Up();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Up();
     // Get instance field reference: public OVRInput/RawButton Down
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Down();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Down();
     // Get instance field reference: public OVRInput/RawButton Left
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Left();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Left();
     // Get instance field reference: public OVRInput/RawButton Right
-    ::GlobalNamespace::OVRInput::RawButton& dyn_Right();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Right();
     // public OVRInput/RawButton ToRawMask(OVRInput/Button virtualMask)
-    // Offset: 0xF18158
+    // Offset: 0x13F2154
     ::GlobalNamespace::OVRInput::RawButton ToRawMask(::GlobalNamespace::OVRInput::Button virtualMask);
     // public System.Void .ctor()
-    // Offset: 0xF1836C
+    // Offset: 0x13F2368
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

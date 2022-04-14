@@ -30,15 +30,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NotefieldAnimationSettings::TimelineSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AnimationCurve _sizeCurve
     // Size: 0x8
     // Offset: 0x10
@@ -71,32 +63,32 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.AnimationCurve _sizeCurve
-    ::UnityEngine::AnimationCurve*& dyn__sizeCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__sizeCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _positionDeviationCurve
-    ::UnityEngine::AnimationCurve*& dyn__positionDeviationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__positionDeviationCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _rotationDeviationCurve
-    ::UnityEngine::AnimationCurve*& dyn__rotationDeviationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationDeviationCurve();
     // Get instance field reference: private System.Single _positionDeviationAmount
-    float& dyn__positionDeviationAmount();
+    [[deprecated]] float& dyn__positionDeviationAmount();
     // Get instance field reference: private System.Single _rotationDeviationAmount
-    float& dyn__rotationDeviationAmount();
+    [[deprecated]] float& dyn__rotationDeviationAmount();
     // public UnityEngine.AnimationCurve get_SizeCurve()
-    // Offset: 0x133F4E4
+    // Offset: 0x8CAB04
     ::UnityEngine::AnimationCurve* get_SizeCurve();
     // public UnityEngine.AnimationCurve get_PositionDeviationCurve()
-    // Offset: 0x133F4EC
+    // Offset: 0x8CAB0C
     ::UnityEngine::AnimationCurve* get_PositionDeviationCurve();
     // public UnityEngine.AnimationCurve get_RotationDeviationCurve()
-    // Offset: 0x133F4F4
+    // Offset: 0x8CAB14
     ::UnityEngine::AnimationCurve* get_RotationDeviationCurve();
     // public System.Single get_PositionDeviationAmount()
-    // Offset: 0x133F4FC
+    // Offset: 0x8CAB1C
     float get_PositionDeviationAmount();
     // public System.Single get_RotationDeviationAmount()
-    // Offset: 0x133F504
+    // Offset: 0x8CAB24
     float get_RotationDeviationAmount();
     // public System.Void .ctor()
-    // Offset: 0x133F50C
+    // Offset: 0x8CAB2C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

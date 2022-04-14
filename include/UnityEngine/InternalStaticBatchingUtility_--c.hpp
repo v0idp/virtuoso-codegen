@@ -52,16 +52,16 @@ namespace UnityEngine {
     // Set static field: static public System.Func`2<UnityEngine.Material,System.Boolean> <>9__6_0
     static void _set_$$9__6_0(::System::Func_2<::UnityEngine::Material*, bool>* value);
     // static private System.Void .cctor()
-    // Offset: 0x124EAA0
+    // Offset: 0x1842C74
     static void _cctor();
     // System.UInt32 <SortGameObjectsForStaticBatching>b__5_2(UnityEngine.GameObject g)
-    // Offset: 0x124EB08
+    // Offset: 0x1842CDC
     uint $SortGameObjectsForStaticBatching$b__5_2(::UnityEngine::GameObject* g);
     // System.Boolean <CombineGameObjects>b__6_0(UnityEngine.Material m)
-    // Offset: 0x124EC0C
+    // Offset: 0x1842DE0
     bool $CombineGameObjects$b__6_0(::UnityEngine::Material* m);
     // public System.Void .ctor()
-    // Offset: 0x124EB00
+    // Offset: 0x1842CD4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

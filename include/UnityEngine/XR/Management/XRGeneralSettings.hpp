@@ -36,22 +36,14 @@ namespace UnityEngine::XR::Management {
   // [TokenAttribute] Offset: FFFFFFFF
   class XRGeneralSettings : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // UnityEngine.XR.Management.XRManagerSettings m_LoaderManagerInstance
     // Size: 0x8
     // Offset: 0x18
     ::UnityEngine::XR::Management::XRManagerSettings* m_LoaderManagerInstance;
     // Field size check
     static_assert(sizeof(::UnityEngine::XR::Management::XRManagerSettings*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5E2AE0
+    // [TooltipAttribute] Offset: 0x6F9900
     // System.Boolean m_InitManagerOnStart
     // Size: 0x1
     // Offset: 0x20
@@ -90,62 +82,62 @@ namespace UnityEngine::XR::Management {
     // Set static field: static UnityEngine.XR.Management.XRGeneralSettings s_RuntimeSettingsInstance
     static void _set_s_RuntimeSettingsInstance(::UnityEngine::XR::Management::XRGeneralSettings* value);
     // Get instance field reference: UnityEngine.XR.Management.XRManagerSettings m_LoaderManagerInstance
-    ::UnityEngine::XR::Management::XRManagerSettings*& dyn_m_LoaderManagerInstance();
+    [[deprecated]] ::UnityEngine::XR::Management::XRManagerSettings*& dyn_m_LoaderManagerInstance();
     // Get instance field reference: System.Boolean m_InitManagerOnStart
-    bool& dyn_m_InitManagerOnStart();
+    [[deprecated]] bool& dyn_m_InitManagerOnStart();
     // Get instance field reference: private UnityEngine.XR.Management.XRManagerSettings m_XRManager
-    ::UnityEngine::XR::Management::XRManagerSettings*& dyn_m_XRManager();
+    [[deprecated]] ::UnityEngine::XR::Management::XRManagerSettings*& dyn_m_XRManager();
     // Get instance field reference: private System.Boolean m_ProviderIntialized
-    bool& dyn_m_ProviderIntialized();
+    [[deprecated]] bool& dyn_m_ProviderIntialized();
     // Get instance field reference: private System.Boolean m_ProviderStarted
-    bool& dyn_m_ProviderStarted();
+    [[deprecated]] bool& dyn_m_ProviderStarted();
     // public UnityEngine.XR.Management.XRManagerSettings get_Manager()
-    // Offset: 0x12F2B30
+    // Offset: 0x18F9D30
     ::UnityEngine::XR::Management::XRManagerSettings* get_Manager();
     // public System.Void set_Manager(UnityEngine.XR.Management.XRManagerSettings value)
-    // Offset: 0x12F2B38
+    // Offset: 0x18F9D38
     void set_Manager(::UnityEngine::XR::Management::XRManagerSettings* value);
     // static public UnityEngine.XR.Management.XRGeneralSettings get_Instance()
-    // Offset: 0x12F2B40
+    // Offset: 0x18F9D40
     static ::UnityEngine::XR::Management::XRGeneralSettings* get_Instance();
     // public UnityEngine.XR.Management.XRManagerSettings get_AssignedSettings()
-    // Offset: 0x12F2BA4
+    // Offset: 0x18F9DA4
     ::UnityEngine::XR::Management::XRManagerSettings* get_AssignedSettings();
     // public System.Boolean get_InitManagerOnStart()
-    // Offset: 0x12F2BAC
+    // Offset: 0x18F9DAC
     bool get_InitManagerOnStart();
     // private System.Void Awake()
-    // Offset: 0x12F2BB4
+    // Offset: 0x18F9DB4
     void Awake();
     // static private System.Void Quit()
-    // Offset: 0x12F2CF8
+    // Offset: 0x18F9EF8
     static void Quit();
     // private System.Void Start()
-    // Offset: 0x12F2EBC
+    // Offset: 0x18FA0BC
     void Start();
     // private System.Void OnDestroy()
-    // Offset: 0x12F2F8C
+    // Offset: 0x18FA18C
     void OnDestroy();
     // static System.Void AttemptInitializeXRSDKOnLoad()
-    // Offset: 0x12F2F90
+    // Offset: 0x18FA190
     static void AttemptInitializeXRSDKOnLoad();
     // static System.Void AttemptStartXRSDKOnBeforeSplashScreen()
-    // Offset: 0x12F338C
+    // Offset: 0x18FA58C
     static void AttemptStartXRSDKOnBeforeSplashScreen();
     // private System.Void InitXRSDK()
-    // Offset: 0x12F3090
+    // Offset: 0x18FA290
     void InitXRSDK();
     // private System.Void StartXRSDK()
-    // Offset: 0x12F2EC0
+    // Offset: 0x18FA0C0
     void StartXRSDK();
     // private System.Void StopXRSDK()
-    // Offset: 0x12F37B0
+    // Offset: 0x18FA9B0
     void StopXRSDK();
     // private System.Void DeInitXRSDK()
-    // Offset: 0x12F2DF0
+    // Offset: 0x18F9FF0
     void DeInitXRSDK();
     // public System.Void .ctor()
-    // Offset: 0x12F3A60
+    // Offset: 0x18FAC60
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -156,7 +148,7 @@ namespace UnityEngine::XR::Management {
       return THROW_UNLESS((::il2cpp_utils::New<XRGeneralSettings*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12F3A70
+    // Offset: 0x18FAC70
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

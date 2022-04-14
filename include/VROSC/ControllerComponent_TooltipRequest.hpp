@@ -11,8 +11,14 @@
 #include "beatsaber-hook/shared/utils/il2cpp-utils-properties.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
 #include "beatsaber-hook/shared/utils/utils.h"
-#include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
+// Begin forward declares
+// Forward declaring namespace: VROSC
+namespace VROSC {
+  // Forward declaring type: TooltipData
+  class TooltipData;
+}
+// Completed forward declares
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 NEED_NO_BOX(::VROSC::ControllerComponent::TooltipRequest);
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::ControllerComponent::TooltipRequest*, "VROSC", "ControllerComponent/TooltipRequest");
@@ -24,21 +30,13 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ControllerComponent::TooltipRequest : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // public System.String Text
+    // public VROSC.TooltipData Tooltip
     // Size: 0x8
     // Offset: 0x10
-    ::StringW Text;
+    ::VROSC::TooltipData* Tooltip;
     // Field size check
-    static_assert(sizeof(::StringW) == 0x8);
+    static_assert(sizeof(::VROSC::TooltipData*) == 0x8);
     // public System.Object Requester
     // Size: 0x8
     // Offset: 0x18
@@ -46,16 +44,16 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
-    // Get instance field reference: public System.String Text
-    ::StringW& dyn_Text();
+    // Get instance field reference: public VROSC.TooltipData Tooltip
+    [[deprecated]] ::VROSC::TooltipData*& dyn_Tooltip();
     // Get instance field reference: public System.Object Requester
-    ::Il2CppObject*& dyn_Requester();
-    // public System.Void .ctor(System.String text, System.Object requester)
-    // Offset: 0x136110C
+    [[deprecated]] ::Il2CppObject*& dyn_Requester();
+    // public System.Void .ctor(VROSC.TooltipData tooltip, System.Object requester)
+    // Offset: 0x95DC00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControllerComponent::TooltipRequest* New_ctor(::StringW text, ::Il2CppObject* requester) {
+    static ControllerComponent::TooltipRequest* New_ctor(::VROSC::TooltipData* tooltip, ::Il2CppObject* requester) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerComponent::TooltipRequest::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControllerComponent::TooltipRequest*, creationType>(text, requester)));
+      return THROW_UNLESS((::il2cpp_utils::New<ControllerComponent::TooltipRequest*, creationType>(tooltip, requester)));
     }
   }; // VROSC.ControllerComponent/VROSC.TooltipRequest
   #pragma pack(pop)

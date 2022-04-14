@@ -81,19 +81,19 @@ namespace TMPro::SpriteAssetUtilities {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String filename
-    ::StringW& dyn_filename();
+    [[deprecated]] ::StringW& dyn_filename();
     // Get instance field reference: public TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.SpriteFrame frame
-    ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteFrame& dyn_frame();
+    [[deprecated]] ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteFrame& dyn_frame();
     // Get instance field reference: public System.Boolean rotated
-    bool& dyn_rotated();
+    [[deprecated]] bool& dyn_rotated();
     // Get instance field reference: public System.Boolean trimmed
-    bool& dyn_trimmed();
+    [[deprecated]] bool& dyn_trimmed();
     // Get instance field reference: public TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.SpriteFrame spriteSourceSize
-    ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteFrame& dyn_spriteSourceSize();
+    [[deprecated]] ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteFrame& dyn_spriteSourceSize();
     // Get instance field reference: public TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.SpriteSize sourceSize
-    ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteSize& dyn_sourceSize();
+    [[deprecated]] ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteSize& dyn_sourceSize();
     // Get instance field reference: public UnityEngine.Vector2 pivot
-    ::UnityEngine::Vector2& dyn_pivot();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_pivot();
   }; // TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.Frame
   #pragma pack(pop)
   static check_size<sizeof(TexturePacker_JsonArray::Frame), 52 + sizeof(::UnityEngine::Vector2)> __TMPro_SpriteAssetUtilities_TexturePacker_JsonArray_FrameSizeCheck;

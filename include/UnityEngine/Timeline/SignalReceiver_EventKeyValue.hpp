@@ -41,22 +41,14 @@ namespace UnityEngine::Timeline {
   // [TokenAttribute] Offset: FFFFFFFF
   class SignalReceiver::EventKeyValue : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<UnityEngine.Timeline.SignalAsset> m_Signals
     // Size: 0x8
     // Offset: 0x10
     ::System::Collections::Generic::List_1<::UnityEngine::Timeline::SignalAsset*>* m_Signals;
     // Field size check
     static_assert(sizeof(::System::Collections::Generic::List_1<::UnityEngine::Timeline::SignalAsset*>*) == 0x8);
-    // [CustomSignalEventDrawer] Offset: 0x59B06C
+    // [CustomSignalEventDrawer] Offset: 0x6AF120
     // private System.Collections.Generic.List`1<UnityEngine.Events.UnityEvent> m_Events
     // Size: 0x8
     // Offset: 0x18
@@ -65,29 +57,29 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Timeline.SignalAsset> m_Signals
-    ::System::Collections::Generic::List_1<::UnityEngine::Timeline::SignalAsset*>*& dyn_m_Signals();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::SignalAsset*>*& dyn_m_Signals();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Events.UnityEvent> m_Events
-    ::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>*& dyn_m_Events();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>*& dyn_m_Events();
     // public System.Collections.Generic.List`1<UnityEngine.Timeline.SignalAsset> get_signals()
-    // Offset: 0x12D1E34
+    // Offset: 0x18D50A8
     ::System::Collections::Generic::List_1<::UnityEngine::Timeline::SignalAsset*>* get_signals();
     // public System.Collections.Generic.List`1<UnityEngine.Events.UnityEvent> get_events()
-    // Offset: 0x12D1E3C
+    // Offset: 0x18D50B0
     ::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>* get_events();
     // public System.Boolean TryGetValue(UnityEngine.Timeline.SignalAsset key, out UnityEngine.Events.UnityEvent value)
-    // Offset: 0x12D1B70
+    // Offset: 0x18D4DE4
     bool TryGetValue(::UnityEngine::Timeline::SignalAsset* key, ByRef<::UnityEngine::Events::UnityEvent*> value);
     // public System.Void Append(UnityEngine.Timeline.SignalAsset key, UnityEngine.Events.UnityEvent value)
-    // Offset: 0x12D1C30
+    // Offset: 0x18D4EA4
     void Append(::UnityEngine::Timeline::SignalAsset* key, ::UnityEngine::Events::UnityEvent* value);
     // public System.Void Remove(System.Int32 idx)
-    // Offset: 0x12D1CC0
+    // Offset: 0x18D4F34
     void Remove(int idx);
     // public System.Void Remove(UnityEngine.Timeline.SignalAsset key)
-    // Offset: 0x12D1D64
+    // Offset: 0x18D4FD8
     void Remove(::UnityEngine::Timeline::SignalAsset* key);
     // public System.Void .ctor()
-    // Offset: 0x12D1E44
+    // Offset: 0x18D50B8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

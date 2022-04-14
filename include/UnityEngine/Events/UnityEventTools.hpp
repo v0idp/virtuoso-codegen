@@ -24,7 +24,7 @@ namespace UnityEngine::Events {
   class UnityEventTools : public ::Il2CppObject {
     public:
     // static System.String TidyAssemblyTypeName(System.String assemblyTypeName)
-    // Offset: 0x12494E0
+    // Offset: 0x183D6AC
     static ::StringW TidyAssemblyTypeName(::StringW assemblyTypeName);
   }; // UnityEngine.Events.UnityEventTools
   #pragma pack(pop)

@@ -77,15 +77,7 @@ namespace System::Net {
     struct $Run$d__54;
     // Nested type: ::System::Net::WebOperation::$FinishReading$d__55
     struct $FinishReading$d__55;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Net.HttpWebRequest <Request>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -206,139 +198,139 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.Net.HttpWebRequest <Request>k__BackingField
-    ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
     // Get instance field reference: private System.Net.WebConnection <Connection>k__BackingField
-    ::System::Net::WebConnection*& dyn_$Connection$k__BackingField();
+    [[deprecated]] ::System::Net::WebConnection*& dyn_$Connection$k__BackingField();
     // Get instance field reference: private System.Net.ServicePoint <ServicePoint>k__BackingField
-    ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
+    [[deprecated]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
     // Get instance field reference: private readonly System.Net.BufferOffsetSize <WriteBuffer>k__BackingField
-    ::System::Net::BufferOffsetSize*& dyn_$WriteBuffer$k__BackingField();
+    [[deprecated]] ::System::Net::BufferOffsetSize*& dyn_$WriteBuffer$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <IsNtlmChallenge>k__BackingField
-    bool& dyn_$IsNtlmChallenge$k__BackingField();
+    [[deprecated]] bool& dyn_$IsNtlmChallenge$k__BackingField();
     // Get instance field reference: readonly System.Int32 ID
-    int& dyn_ID();
+    [[deprecated]] int& dyn_ID();
     // Get instance field reference: private System.Threading.CancellationTokenSource cts
-    ::System::Threading::CancellationTokenSource*& dyn_cts();
+    [[deprecated]] ::System::Threading::CancellationTokenSource*& dyn_cts();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebRequestStream> requestTask
-    ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebRequestStream*>*& dyn_requestTask();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebRequestStream*>*& dyn_requestTask();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebRequestStream> requestWrittenTask
-    ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebRequestStream*>*& dyn_requestWrittenTask();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebRequestStream*>*& dyn_requestWrittenTask();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebResponseStream> responseTask
-    ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebResponseStream*>*& dyn_responseTask();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebResponseStream*>*& dyn_responseTask();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Boolean> completeResponseReadTask
-    ::System::Threading::Tasks::TaskCompletionSource_1<bool>*& dyn_completeResponseReadTask();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<bool>*& dyn_completeResponseReadTask();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.ValueTuple`2<System.Boolean,System.Net.WebOperation>> finishedTask
-    ::System::Threading::Tasks::TaskCompletionSource_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>*& dyn_finishedTask();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>*& dyn_finishedTask();
     // Get instance field reference: private System.Net.WebRequestStream writeStream
-    ::System::Net::WebRequestStream*& dyn_writeStream();
+    [[deprecated]] ::System::Net::WebRequestStream*& dyn_writeStream();
     // Get instance field reference: private System.Net.WebResponseStream responseStream
-    ::System::Net::WebResponseStream*& dyn_responseStream();
+    [[deprecated]] ::System::Net::WebResponseStream*& dyn_responseStream();
     // Get instance field reference: private System.Runtime.ExceptionServices.ExceptionDispatchInfo disposedInfo
-    ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_disposedInfo();
+    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_disposedInfo();
     // Get instance field reference: private System.Runtime.ExceptionServices.ExceptionDispatchInfo closedInfo
-    ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_closedInfo();
+    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_closedInfo();
     // Get instance field reference: private System.Net.WebOperation priorityRequest
-    ::System::Net::WebOperation*& dyn_priorityRequest();
+    [[deprecated]] ::System::Net::WebOperation*& dyn_priorityRequest();
     // Get instance field reference: private System.Boolean finishedReading
-    bool& dyn_finishedReading();
+    [[deprecated]] bool& dyn_finishedReading();
     // Get instance field reference: private System.Int32 requestSent
-    int& dyn_requestSent();
+    [[deprecated]] int& dyn_requestSent();
     // public System.Net.HttpWebRequest get_Request()
-    // Offset: 0xABB9EC
+    // Offset: 0xC46ED4
     ::System::Net::HttpWebRequest* get_Request();
     // public System.Net.WebConnection get_Connection()
-    // Offset: 0xABB9F4
+    // Offset: 0xC46EDC
     ::System::Net::WebConnection* get_Connection();
     // private System.Void set_Connection(System.Net.WebConnection value)
-    // Offset: 0xABB9FC
+    // Offset: 0xC46EE4
     void set_Connection(::System::Net::WebConnection* value);
     // public System.Net.ServicePoint get_ServicePoint()
-    // Offset: 0xABBA04
+    // Offset: 0xC46EEC
     ::System::Net::ServicePoint* get_ServicePoint();
     // private System.Void set_ServicePoint(System.Net.ServicePoint value)
-    // Offset: 0xABBA0C
+    // Offset: 0xC46EF4
     void set_ServicePoint(::System::Net::ServicePoint* value);
     // public System.Net.BufferOffsetSize get_WriteBuffer()
-    // Offset: 0xABBA14
+    // Offset: 0xC46EFC
     ::System::Net::BufferOffsetSize* get_WriteBuffer();
     // public System.Boolean get_IsNtlmChallenge()
-    // Offset: 0xABBA1C
+    // Offset: 0xC46F04
     bool get_IsNtlmChallenge();
     // public System.Boolean get_Aborted()
-    // Offset: 0xAB7B08
+    // Offset: 0xC42FF0
     bool get_Aborted();
     // public System.Boolean get_Closed()
-    // Offset: 0xABBC28
+    // Offset: 0xC47110
     bool get_Closed();
     // public System.Net.WebRequestStream get_WriteStream()
-    // Offset: 0xABC308
+    // Offset: 0xC477F0
     ::System::Net::WebRequestStream* get_WriteStream();
     // public System.Void .ctor(System.Net.HttpWebRequest request, System.Net.BufferOffsetSize writeBuffer, System.Boolean isNtlmChallenge, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABBA24
+    // Offset: 0xC46F0C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebOperation* New_ctor(::System::Net::HttpWebRequest* request, ::System::Net::BufferOffsetSize* writeBuffer, bool isNtlmChallenge, ::System::Threading::CancellationToken cancellationToken) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebOperation::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WebOperation*, creationType>(request, writeBuffer, isNtlmChallenge, cancellationToken)));
     }
     // public System.Void Abort()
-    // Offset: 0xABBC60
+    // Offset: 0xC47148
     void Abort();
     // public System.Void Close()
-    // Offset: 0xABBE54
+    // Offset: 0xC4733C
     void Close();
     // private System.Void SetCanceled()
-    // Offset: 0xABBDA8
+    // Offset: 0xC47290
     void SetCanceled();
     // private System.Void SetError(System.Exception error)
-    // Offset: 0xABBF14
+    // Offset: 0xC473FC
     void SetError(::System::Exception* error);
     // private System.ValueTuple`2<System.Runtime.ExceptionServices.ExceptionDispatchInfo,System.Boolean> SetDisposed(ref System.Runtime.ExceptionServices.ExceptionDispatchInfo field)
-    // Offset: 0xABBCB4
+    // Offset: 0xC4719C
     ::System::ValueTuple_2<::System::Runtime::ExceptionServices::ExceptionDispatchInfo*, bool> SetDisposed(ByRef<::System::Runtime::ExceptionServices::ExceptionDispatchInfo*> field);
     // System.Void ThrowIfDisposed()
-    // Offset: 0xABBFDC
+    // Offset: 0xC474C4
     void ThrowIfDisposed();
     // System.Void ThrowIfDisposed(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABC048
+    // Offset: 0xC47530
     void ThrowIfDisposed(::System::Threading::CancellationToken cancellationToken);
     // System.Void ThrowIfClosedOrDisposed()
-    // Offset: 0xAB7DD0
+    // Offset: 0xC432B8
     void ThrowIfClosedOrDisposed();
     // System.Void ThrowIfClosedOrDisposed(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABC0D8
+    // Offset: 0xC475C0
     void ThrowIfClosedOrDisposed(::System::Threading::CancellationToken cancellationToken);
     // private System.Void ThrowDisposed(ref System.Runtime.ExceptionServices.ExceptionDispatchInfo field)
-    // Offset: 0xABC08C
+    // Offset: 0xC47574
     void ThrowDisposed(ByRef<::System::Runtime::ExceptionServices::ExceptionDispatchInfo*> field);
     // System.Void RegisterRequest(System.Net.ServicePoint servicePoint, System.Net.WebConnection connection)
-    // Offset: 0xAB7310
+    // Offset: 0xC427F8
     void RegisterRequest(::System::Net::ServicePoint* servicePoint, ::System::Net::WebConnection* connection);
     // public System.Void SetPriorityRequest(System.Net.WebOperation operation)
-    // Offset: 0xABC130
+    // Offset: 0xC47618
     void SetPriorityRequest(::System::Net::WebOperation* operation);
     // public System.Threading.Tasks.Task`1<System.Net.WebRequestStream> GetRequestStream()
-    // Offset: 0xABC2BC
+    // Offset: 0xC477A4
     ::System::Threading::Tasks::Task_1<::System::Net::WebRequestStream*>* GetRequestStream();
     // public System.Threading.Tasks.Task`1<System.Net.WebResponseStream> GetResponseStream()
-    // Offset: 0xABC32C
+    // Offset: 0xC47814
     ::System::Threading::Tasks::Task_1<::System::Net::WebResponseStream*>* GetResponseStream();
     // System.Threading.Tasks.Task`1<System.ValueTuple`2<System.Boolean,System.Net.WebOperation>> WaitForCompletion(System.Boolean ignoreErrors)
-    // Offset: 0xABC378
+    // Offset: 0xC47860
     ::System::Threading::Tasks::Task_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>* WaitForCompletion(bool ignoreErrors);
     // System.Void Run()
-    // Offset: 0xAB753C
+    // Offset: 0xC42A24
     void Run();
     // private System.Void FinishReading()
-    // Offset: 0xABC4AC
+    // Offset: 0xC47994
     void FinishReading();
     // System.Void CompleteRequestWritten(System.Net.WebRequestStream stream, System.Exception error)
-    // Offset: 0xABC56C
+    // Offset: 0xC47A54
     void CompleteRequestWritten(::System::Net::WebRequestStream* stream, ::System::Exception* error);
     // System.Void CompleteResponseRead(System.Boolean ok, System.Exception error)
-    // Offset: 0xABC5F0
+    // Offset: 0xC47AD8
     void CompleteResponseRead(bool ok, ::System::Exception* error);
     // private System.Void <RegisterRequest>b__46_0()
-    // Offset: 0xABC688
+    // Offset: 0xC47B70
     void $RegisterRequest$b__46_0();
   }; // System.Net.WebOperation
   #pragma pack(pop)

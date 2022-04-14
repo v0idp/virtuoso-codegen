@@ -63,16 +63,8 @@ namespace Firebase::Platform {
     class ApplicationFocusChangedEventArgs;
     // Nested type: ::Firebase::Platform::FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0
     class $CreatePartialOnMainThread$c__AnonStorey0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x5DFF34
+    // [DebuggerBrowsableAttribute] Offset: 0x6F7D54
     // private System.Boolean <IsPlayMode>k__BackingField
     // Size: 0x1
     // Offset: 0x10
@@ -104,7 +96,7 @@ namespace Firebase::Platform {
     static ::Firebase::Platform::FirebaseMonoBehaviour* _get_firebaseMonoBehaviour();
     // Set static field: static private Firebase.Platform.FirebaseMonoBehaviour firebaseMonoBehaviour
     static void _set_firebaseMonoBehaviour(::Firebase::Platform::FirebaseMonoBehaviour* value);
-    // [DebuggerBrowsableAttribute] Offset: 0x5DFEBC
+    // [DebuggerBrowsableAttribute] Offset: 0x6F7CDC
     // Get static field: static private Firebase.Platform.IFirebaseAppUtils <AppUtils>k__BackingField
     static ::Firebase::Platform::IFirebaseAppUtils* _get_$AppUtils$k__BackingField();
     // Set static field: static private Firebase.Platform.IFirebaseAppUtils <AppUtils>k__BackingField
@@ -113,7 +105,7 @@ namespace Firebase::Platform {
     static int _get_tickCount();
     // Set static field: static private System.Int32 tickCount
     static void _set_tickCount(int value);
-    // [DebuggerBrowsableAttribute] Offset: 0x5DFEF8
+    // [DebuggerBrowsableAttribute] Offset: 0x6F7D18
     // Get static field: static private Firebase.Dispatcher <ThreadDispatcher>k__BackingField
     static ::Firebase::Dispatcher* _get_$ThreadDispatcher$k__BackingField();
     // Set static field: static private Firebase.Dispatcher <ThreadDispatcher>k__BackingField
@@ -127,45 +119,45 @@ namespace Firebase::Platform {
     // Set static field: static private System.Func`1<System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_1<bool>* value);
     // Get instance field reference: private System.Boolean <IsPlayMode>k__BackingField
-    bool& dyn_$IsPlayMode$k__BackingField();
+    [[deprecated]] bool& dyn_$IsPlayMode$k__BackingField();
     // Get instance field reference: private System.EventHandler`1<System.EventArgs> Updated
-    ::System::EventHandler_1<::System::EventArgs*>*& dyn_Updated();
+    [[deprecated]] ::System::EventHandler_1<::System::EventArgs*>*& dyn_Updated();
     // Get instance field reference: System.Action UpdatedEventWrapper
-    ::System::Action*& dyn_UpdatedEventWrapper();
+    [[deprecated]] ::System::Action*& dyn_UpdatedEventWrapper();
     // Get instance field reference: private System.EventHandler`1<Firebase.Platform.FirebaseHandler/Firebase.Platform.ApplicationFocusChangedEventArgs> ApplicationFocusChanged
-    ::System::EventHandler_1<::Firebase::Platform::FirebaseHandler::ApplicationFocusChangedEventArgs*>*& dyn_ApplicationFocusChanged();
+    [[deprecated]] ::System::EventHandler_1<::Firebase::Platform::FirebaseHandler::ApplicationFocusChangedEventArgs*>*& dyn_ApplicationFocusChanged();
     // static public Firebase.Platform.IFirebaseAppUtils get_AppUtils()
-    // Offset: 0x12C9FF0
+    // Offset: 0x18C9380
     static ::Firebase::Platform::IFirebaseAppUtils* get_AppUtils();
     // static private System.Void set_AppUtils(Firebase.Platform.IFirebaseAppUtils value)
-    // Offset: 0x12CA054
+    // Offset: 0x18C93E4
     static void set_AppUtils(::Firebase::Platform::IFirebaseAppUtils* value);
     // static public System.Int32 get_TickCount()
-    // Offset: 0x12CA0BC
+    // Offset: 0x18C944C
     static int get_TickCount();
     // static private Firebase.Dispatcher get_ThreadDispatcher()
-    // Offset: 0x12CA120
+    // Offset: 0x18C94B0
     static ::Firebase::Dispatcher* get_ThreadDispatcher();
     // static private System.Void set_ThreadDispatcher(Firebase.Dispatcher value)
-    // Offset: 0x12CA184
+    // Offset: 0x18C9514
     static void set_ThreadDispatcher(::Firebase::Dispatcher* value);
     // public System.Boolean get_IsPlayMode()
-    // Offset: 0x12CA1EC
+    // Offset: 0x18C957C
     bool get_IsPlayMode();
     // public System.Void set_IsPlayMode(System.Boolean value)
-    // Offset: 0x12CA1F4
+    // Offset: 0x18C9584
     void set_IsPlayMode(bool value);
     // static Firebase.Platform.FirebaseHandler get_DefaultInstance()
-    // Offset: 0x12CA2A8
+    // Offset: 0x18C9638
     static ::Firebase::Platform::FirebaseHandler* get_DefaultInstance();
     // static private System.Void .cctor()
-    // Offset: 0x12C9EA4
+    // Offset: 0x18C9234
     static void _cctor();
     // System.Void StartMonoBehaviour()
-    // Offset: 0x12C9B80
+    // Offset: 0x18C8F10
     void StartMonoBehaviour();
     // System.Void StopMonoBehaviour()
-    // Offset: 0x12C9D14
+    // Offset: 0x18C90A4
     void StopMonoBehaviour();
     // static public TResult RunOnMainThread(System.Func`1<TResult> f)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -186,28 +178,28 @@ namespace Firebase::Platform {
       return ::il2cpp_utils::RunMethodRethrow<::System::Threading::Tasks::Task_1<TResult>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, f);
     }
     // static System.Void CreatePartialOnMainThread(Firebase.Platform.IFirebaseAppUtils appUtils)
-    // Offset: 0x12CA30C
+    // Offset: 0x18C969C
     static void CreatePartialOnMainThread(::Firebase::Platform::IFirebaseAppUtils* appUtils);
     // static System.Void Create(Firebase.Platform.IFirebaseAppUtils appUtils)
-    // Offset: 0x12CA43C
+    // Offset: 0x18C97CC
     static void Create(::Firebase::Platform::IFirebaseAppUtils* appUtils);
     // System.Void Update()
-    // Offset: 0x12C93F0
+    // Offset: 0x18C8780
     void Update();
     // System.Void OnApplicationFocus(System.Boolean hasFocus)
-    // Offset: 0x12CA66C
+    // Offset: 0x18C99FC
     void OnApplicationFocus(bool hasFocus);
     // static System.Void OnMonoBehaviourDestroyed(Firebase.Platform.FirebaseMonoBehaviour behaviour)
-    // Offset: 0x12CA77C
+    // Offset: 0x18C9B0C
     static void OnMonoBehaviourDestroyed(::Firebase::Platform::FirebaseMonoBehaviour* behaviour);
     // static private System.Boolean <StopMonoBehaviour>m__0()
-    // Offset: 0x12CA854
+    // Offset: 0x18C9BE4
     static bool $StopMonoBehaviour$m__0();
     // private System.Void <Update>m__1()
-    // Offset: 0x12CA9FC
+    // Offset: 0x18C9D8C
     void $Update$m__1();
     // private System.Void .ctor()
-    // Offset: 0x12C9F8C
+    // Offset: 0x18C931C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -46,15 +46,7 @@ namespace System::Runtime::Remoting::Contexts {
     public:
     // Nested type: ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection::DynamicPropertyReg
     class DynamicPropertyReg;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.ArrayList _properties
     // Size: 0x8
     // Offset: 0x10
@@ -67,24 +59,24 @@ namespace System::Runtime::Remoting::Contexts {
       return properties;
     }
     // Get instance field reference: private System.Collections.ArrayList _properties
-    ::System::Collections::ArrayList*& dyn__properties();
+    [[deprecated]] ::System::Collections::ArrayList*& dyn__properties();
     // public System.Boolean get_HasProperties()
-    // Offset: 0xCB45CC
+    // Offset: 0x12A0284
     bool get_HasProperties();
     // public System.Boolean RegisterDynamicProperty(System.Runtime.Remoting.Contexts.IDynamicProperty prop)
-    // Offset: 0xCB4600
+    // Offset: 0x12A02B8
     bool RegisterDynamicProperty(::System::Runtime::Remoting::Contexts::IDynamicProperty* prop);
     // public System.Boolean UnregisterDynamicProperty(System.String name)
-    // Offset: 0xCB4A64
+    // Offset: 0x12A071C
     bool UnregisterDynamicProperty(::StringW name);
     // public System.Void NotifyMessage(System.Boolean start, System.Runtime.Remoting.Messaging.IMessage msg, System.Boolean client_site, System.Boolean async)
-    // Offset: 0xCB4BD0
+    // Offset: 0x12A0888
     void NotifyMessage(bool start, ::System::Runtime::Remoting::Messaging::IMessage* msg, bool client_site, bool async);
     // private System.Int32 FindProperty(System.String name)
-    // Offset: 0xCB48F4
+    // Offset: 0x12A05AC
     int FindProperty(::StringW name);
     // public System.Void .ctor()
-    // Offset: 0xCB51D0
+    // Offset: 0x12A0E88
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -52,15 +52,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarMeshInstance : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.HashSet`1<System.UInt64> AssetsToLoad
     // Size: 0x8
     // Offset: 0x18
@@ -115,47 +107,47 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.UInt64> AssetsToLoad
-    ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_AssetsToLoad();
+    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_AssetsToLoad();
     // Get instance field reference: public System.UInt64 MeshID
-    uint64_t& dyn_MeshID();
+    [[deprecated]] uint64_t& dyn_MeshID();
     // Get instance field reference: private System.UInt64 MaterialID
-    uint64_t& dyn_MaterialID();
+    [[deprecated]] uint64_t& dyn_MaterialID();
     // Get instance field reference: private System.UInt64 FadeTextureID
-    uint64_t& dyn_FadeTextureID();
+    [[deprecated]] uint64_t& dyn_FadeTextureID();
     // Get instance field reference: public ovrAvatarBodyPartType MeshType
-    ::GlobalNamespace::ovrAvatarBodyPartType& dyn_MeshType();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarBodyPartType& dyn_MeshType();
     // Get instance field reference: public ovrAvatarMaterialState MaterialState
-    ::GlobalNamespace::ovrAvatarMaterialState& dyn_MaterialState();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialState& dyn_MaterialState();
     // Get instance field reference: private UnityEngine.MeshFilter Mesh
-    ::UnityEngine::MeshFilter*& dyn_Mesh();
+    [[deprecated]] ::UnityEngine::MeshFilter*& dyn_Mesh();
     // Get instance field reference: private UnityEngine.MeshRenderer MeshInstance
-    ::UnityEngine::MeshRenderer*& dyn_MeshInstance();
+    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_MeshInstance();
     // public System.Void AssetLoadedCallback(OvrAvatarAsset asset)
-    // Offset: 0x92CF6C
+    // Offset: 0xF8E3D4
     void AssetLoadedCallback(::GlobalNamespace::OvrAvatarAsset* asset);
     // public System.Void SetMeshAssets(System.UInt64 fadeTexture, System.UInt64 meshID, System.UInt64 materialID, ovrAvatarBodyPartType type)
-    // Offset: 0x92DA5C
+    // Offset: 0xF8EEC4
     void SetMeshAssets(uint64_t fadeTexture, uint64_t meshID, uint64_t materialID, ::GlobalNamespace::ovrAvatarBodyPartType type);
     // private System.Void HandleAssetAvailable(OvrAvatarAsset asset)
-    // Offset: 0x92D018
+    // Offset: 0xF8E480
     void HandleAssetAvailable(::GlobalNamespace::OvrAvatarAsset* asset);
     // public System.Void ChangeMaterial(System.UInt64 assetID)
-    // Offset: 0x92DCCC
+    // Offset: 0xF8F128
     void ChangeMaterial(uint64_t assetID);
     // private System.Void RequestAsset(System.UInt64 assetID)
-    // Offset: 0x92DB18
+    // Offset: 0xF8EF80
     void RequestAsset(uint64_t assetID);
     // private System.Void RequestMaterialTextures()
-    // Offset: 0x92DC30
+    // Offset: 0xF8F08C
     void RequestMaterialTextures();
     // public System.Void SetActive(System.Boolean active)
-    // Offset: 0x92DCD4
+    // Offset: 0xF8F130
     void SetActive(bool active);
     // private System.Void UpdateMaterial()
-    // Offset: 0x92D21C
+    // Offset: 0xF8E684
     void UpdateMaterial();
     // public System.Void .ctor()
-    // Offset: 0x92DD24
+    // Offset: 0xF8F180
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

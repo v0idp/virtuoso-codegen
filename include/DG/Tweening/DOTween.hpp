@@ -261,85 +261,85 @@ namespace DG::Tweening {
     // Set static field: static System.Boolean isQuitting
     static void _set_isQuitting(bool value);
     // static public DG.Tweening.LogBehaviour get_logBehaviour()
-    // Offset: 0x10941C8
+    // Offset: 0x15D67F0
     static ::DG::Tweening::LogBehaviour get_logBehaviour();
     // static public System.Void set_logBehaviour(DG.Tweening.LogBehaviour value)
-    // Offset: 0x109422C
+    // Offset: 0x15D6854
     static void set_logBehaviour(::DG::Tweening::LogBehaviour value);
     // static public System.Boolean get_debugStoreTargetId()
-    // Offset: 0x1094314
+    // Offset: 0x15D693C
     static bool get_debugStoreTargetId();
     // static public System.Void set_debugStoreTargetId(System.Boolean value)
-    // Offset: 0x10943D0
+    // Offset: 0x15D69F8
     static void set_debugStoreTargetId(bool value);
     // static private System.Void .cctor()
-    // Offset: 0x1098A34
+    // Offset: 0x15DB05C
     static void _cctor();
     // static public DG.Tweening.IDOTweenInit Init(System.Nullable`1<System.Boolean> recycleAllByDefault, System.Nullable`1<System.Boolean> useSafeMode, System.Nullable`1<DG.Tweening.LogBehaviour> logBehaviour)
-    // Offset: 0x109443C
+    // Offset: 0x15D6A64
     static ::DG::Tweening::IDOTweenInit* Init(::System::Nullable_1<bool> recycleAllByDefault, ::System::Nullable_1<bool> useSafeMode, ::System::Nullable_1<::DG::Tweening::LogBehaviour> logBehaviour);
     // static private System.Void AutoInit()
-    // Offset: 0x1094D24
+    // Offset: 0x15D734C
     static void AutoInit();
     // static private DG.Tweening.IDOTweenInit Init(DG.Tweening.Core.DOTweenSettings settings, System.Nullable`1<System.Boolean> recycleAllByDefault, System.Nullable`1<System.Boolean> useSafeMode, System.Nullable`1<DG.Tweening.LogBehaviour> logBehaviour)
-    // Offset: 0x10945C4
+    // Offset: 0x15D6BEC
     static ::DG::Tweening::IDOTweenInit* Init(::DG::Tweening::Core::DOTweenSettings* settings, ::System::Nullable_1<bool> recycleAllByDefault, ::System::Nullable_1<bool> useSafeMode, ::System::Nullable_1<::DG::Tweening::LogBehaviour> logBehaviour);
     // static public System.Void SetTweensCapacity(System.Int32 tweenersCapacity, System.Int32 sequencesCapacity)
-    // Offset: 0x10950B4
+    // Offset: 0x15D76DC
     static void SetTweensCapacity(int tweenersCapacity, int sequencesCapacity);
     // static public System.Void Clear(System.Boolean destroy)
-    // Offset: 0x1095128
+    // Offset: 0x15D7750
     static void Clear(bool destroy);
     // static public System.Void ClearCachedTweens()
-    // Offset: 0x10954A8
+    // Offset: 0x15D7AD0
     static void ClearCachedTweens();
     // static public System.Int32 Validate()
-    // Offset: 0x1095504
+    // Offset: 0x15D7B2C
     static int Validate();
     // static public System.Void ManualUpdate(System.Single deltaTime, System.Single unscaledDeltaTime)
-    // Offset: 0x1095560
+    // Offset: 0x15D7B88
     static void ManualUpdate(float deltaTime, float unscaledDeltaTime);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> To(DG.Tweening.Core.DOGetter`1<System.Single> getter, DG.Tweening.Core.DOSetter`1<System.Single> setter, System.Single endValue, System.Single duration)
-    // Offset: 0x1095730
+    // Offset: 0x15D7D58
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* To(::DG::Tweening::Core::DOGetter_1<float>* getter, ::DG::Tweening::Core::DOSetter_1<float>* setter, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Double,System.Double,DG.Tweening.Plugins.Options.NoOptions> To(DG.Tweening.Core.DOGetter`1<System.Double> getter, DG.Tweening.Core.DOSetter`1<System.Double> setter, System.Double endValue, System.Single duration)
-    // Offset: 0x10957D4
+    // Offset: 0x15D7DFC
     static ::DG::Tweening::Core::TweenerCore_3<double, double, ::DG::Tweening::Plugins::Options::NoOptions>* To(::DG::Tweening::Core::DOGetter_1<double>* getter, ::DG::Tweening::Core::DOSetter_1<double>* setter, double endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions> To(DG.Tweening.Core.DOGetter`1<System.Int32> getter, DG.Tweening.Core.DOSetter`1<System.Int32> setter, System.Int32 endValue, System.Single duration)
-    // Offset: 0x1095878
+    // Offset: 0x15D7EA0
     static ::DG::Tweening::Core::TweenerCore_3<int, int, ::DG::Tweening::Plugins::Options::NoOptions>* To(::DG::Tweening::Core::DOGetter_1<int>* getter, ::DG::Tweening::Core::DOSetter_1<int>* setter, int endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.UInt32,System.UInt32,DG.Tweening.Plugins.Options.UintOptions> To(DG.Tweening.Core.DOGetter`1<System.UInt32> getter, DG.Tweening.Core.DOSetter`1<System.UInt32> setter, System.UInt32 endValue, System.Single duration)
-    // Offset: 0x109591C
+    // Offset: 0x15D7F44
     static ::DG::Tweening::Core::TweenerCore_3<uint, uint, ::DG::Tweening::Plugins::Options::UintOptions>* To(::DG::Tweening::Core::DOGetter_1<uint>* getter, ::DG::Tweening::Core::DOSetter_1<uint>* setter, uint endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Int64,System.Int64,DG.Tweening.Plugins.Options.NoOptions> To(DG.Tweening.Core.DOGetter`1<System.Int64> getter, DG.Tweening.Core.DOSetter`1<System.Int64> setter, System.Int64 endValue, System.Single duration)
-    // Offset: 0x10959C0
+    // Offset: 0x15D7FE8
     static ::DG::Tweening::Core::TweenerCore_3<int64_t, int64_t, ::DG::Tweening::Plugins::Options::NoOptions>* To(::DG::Tweening::Core::DOGetter_1<int64_t>* getter, ::DG::Tweening::Core::DOSetter_1<int64_t>* setter, int64_t endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.UInt64,System.UInt64,DG.Tweening.Plugins.Options.NoOptions> To(DG.Tweening.Core.DOGetter`1<System.UInt64> getter, DG.Tweening.Core.DOSetter`1<System.UInt64> setter, System.UInt64 endValue, System.Single duration)
-    // Offset: 0x1095A64
+    // Offset: 0x15D808C
     static ::DG::Tweening::Core::TweenerCore_3<uint64_t, uint64_t, ::DG::Tweening::Plugins::Options::NoOptions>* To(::DG::Tweening::Core::DOGetter_1<uint64_t>* getter, ::DG::Tweening::Core::DOSetter_1<uint64_t>* setter, uint64_t endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.String,System.String,DG.Tweening.Plugins.Options.StringOptions> To(DG.Tweening.Core.DOGetter`1<System.String> getter, DG.Tweening.Core.DOSetter`1<System.String> setter, System.String endValue, System.Single duration)
-    // Offset: 0x1095B08
+    // Offset: 0x15D8130
     static ::DG::Tweening::Core::TweenerCore_3<::StringW, ::StringW, ::DG::Tweening::Plugins::Options::StringOptions>* To(::DG::Tweening::Core::DOGetter_1<::StringW>* getter, ::DG::Tweening::Core::DOSetter_1<::StringW>* setter, ::StringW endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> To(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector2> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector2> setter, UnityEngine.Vector2 endValue, System.Single duration)
-    // Offset: 0x1095BAC
+    // Offset: 0x15D81D4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* To(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector2>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector2>* setter, ::UnityEngine::Vector2 endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> To(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector3> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3> setter, UnityEngine.Vector3 endValue, System.Single duration)
-    // Offset: 0x1095C60
+    // Offset: 0x15D8288
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* To(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector3>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector3>* setter, ::UnityEngine::Vector3 endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector4,UnityEngine.Vector4,DG.Tweening.Plugins.Options.VectorOptions> To(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector4> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector4> setter, UnityEngine.Vector4 endValue, System.Single duration)
-    // Offset: 0x1095D1C
+    // Offset: 0x15D8344
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector4, ::UnityEngine::Vector4, ::DG::Tweening::Plugins::Options::VectorOptions>* To(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector4>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector4>* setter, ::UnityEngine::Vector4 endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> To(DG.Tweening.Core.DOGetter`1<UnityEngine.Quaternion> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Quaternion> setter, UnityEngine.Vector3 endValue, System.Single duration)
-    // Offset: 0x1095DE8
+    // Offset: 0x15D8410
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* To(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Quaternion>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Quaternion>* setter, ::UnityEngine::Vector3 endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> To(DG.Tweening.Core.DOGetter`1<UnityEngine.Color> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Color> setter, UnityEngine.Color endValue, System.Single duration)
-    // Offset: 0x1095EA4
+    // Offset: 0x15D84CC
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* To(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Color>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Color>* setter, ::UnityEngine::Color endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> To(DG.Tweening.Core.DOGetter`1<UnityEngine.Rect> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Rect> setter, UnityEngine.Rect endValue, System.Single duration)
-    // Offset: 0x1095F70
+    // Offset: 0x15D8598
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* To(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Rect>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Rect>* setter, ::UnityEngine::Rect endValue, float duration);
     // static public DG.Tweening.Tweener To(DG.Tweening.Core.DOGetter`1<UnityEngine.RectOffset> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.RectOffset> setter, UnityEngine.RectOffset endValue, System.Single duration)
-    // Offset: 0x109603C
+    // Offset: 0x15D8664
     static ::DG::Tweening::Tweener* To(::DG::Tweening::Core::DOGetter_1<::UnityEngine::RectOffset*>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::RectOffset*>* setter, ::UnityEngine::RectOffset* endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> To(DG.Tweening.Plugins.Core.ABSTweenPlugin`3<T1,T2,TPlugOptions> plugin, DG.Tweening.Core.DOGetter`1<T1> getter, DG.Tweening.Core.DOSetter`1<T1> setter, T2 endValue, System.Single duration)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -352,151 +352,151 @@ namespace DG::Tweening {
       return ::il2cpp_utils::RunMethodRethrow<::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, plugin, getter, setter, endValue, duration);
     }
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> ToAxis(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector3> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3> setter, System.Single endValue, System.Single duration, DG.Tweening.AxisConstraint axisConstraint)
-    // Offset: 0x10960E0
+    // Offset: 0x15D8708
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* ToAxis(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector3>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector3>* setter, float endValue, float duration, ::DG::Tweening::AxisConstraint axisConstraint);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> ToAlpha(DG.Tweening.Core.DOGetter`1<UnityEngine.Color> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Color> setter, System.Single endValue, System.Single duration)
-    // Offset: 0x10961A0
+    // Offset: 0x15D87C8
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* ToAlpha(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Color>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Color>* setter, float endValue, float duration);
     // static public DG.Tweening.Tweener To(DG.Tweening.Core.DOSetter`1<System.Single> setter, System.Single startValue, System.Single endValue, System.Single duration)
-    // Offset: 0x1096288
+    // Offset: 0x15D88B0
     static ::DG::Tweening::Tweener* To(::DG::Tweening::Core::DOSetter_1<float>* setter, float startValue, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> Punch(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector3> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3> setter, UnityEngine.Vector3 direction, System.Single duration, System.Int32 vibrato, System.Single elasticity)
-    // Offset: 0x109641C
+    // Offset: 0x15D8A44
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* Punch(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector3>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector3>* setter, ::UnityEngine::Vector3 direction, float duration, int vibrato, float elasticity);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> Shake(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector3> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3> setter, System.Single duration, System.Single strength, System.Int32 vibrato, System.Single randomness, System.Boolean ignoreZAxis, System.Boolean fadeOut)
-    // Offset: 0x109696C
+    // Offset: 0x15D8F94
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* Shake(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector3>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector3>* setter, float duration, float strength, int vibrato, float randomness, bool ignoreZAxis, bool fadeOut);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> Shake(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector3> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3> setter, System.Single duration, UnityEngine.Vector3 strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x1096F58
+    // Offset: 0x15D9580
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* Shake(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector3>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector3>* setter, float duration, ::UnityEngine::Vector3 strength, int vibrato, float randomness, bool fadeOut);
     // static private DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> Shake(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector3> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3> setter, System.Single duration, UnityEngine.Vector3 strength, System.Int32 vibrato, System.Single randomness, System.Boolean ignoreZAxis, System.Boolean vectorBased, System.Boolean fadeOut)
-    // Offset: 0x1096A30
+    // Offset: 0x15D9058
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* Shake(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector3>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector3>* setter, float duration, ::UnityEngine::Vector3 strength, int vibrato, float randomness, bool ignoreZAxis, bool vectorBased, bool fadeOut);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> ToArray(DG.Tweening.Core.DOGetter`1<UnityEngine.Vector3> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3> setter, UnityEngine.Vector3[] endValues, System.Single[] durations)
-    // Offset: 0x109673C
+    // Offset: 0x15D8D64
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* ToArray(::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector3>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector3>* setter, ::ArrayW<::UnityEngine::Vector3> endValues, ::ArrayW<float> durations);
     // static DG.Tweening.Core.TweenerCore`3<DG.Tweening.Color2,DG.Tweening.Color2,DG.Tweening.Plugins.Options.ColorOptions> To(DG.Tweening.Core.DOGetter`1<DG.Tweening.Color2> getter, DG.Tweening.Core.DOSetter`1<DG.Tweening.Color2> setter, DG.Tweening.Color2 endValue, System.Single duration)
-    // Offset: 0x1097174
+    // Offset: 0x15D979C
     static ::DG::Tweening::Core::TweenerCore_3<::DG::Tweening::Color2, ::DG::Tweening::Color2, ::DG::Tweening::Plugins::Options::ColorOptions>* To(::DG::Tweening::Core::DOGetter_1<::DG::Tweening::Color2>* getter, ::DG::Tweening::Core::DOSetter_1<::DG::Tweening::Color2>* setter, ::DG::Tweening::Color2 endValue, float duration);
     // static public DG.Tweening.Sequence Sequence()
-    // Offset: 0x1097234
+    // Offset: 0x15D985C
     static ::DG::Tweening::Sequence* Sequence();
     // static public System.Int32 CompleteAll(System.Boolean withCallbacks)
-    // Offset: 0x10973D8
+    // Offset: 0x15D9A00
     static int CompleteAll(bool withCallbacks);
     // static public System.Int32 Complete(System.Object targetOrId, System.Boolean withCallbacks)
-    // Offset: 0x109746C
+    // Offset: 0x15D9A94
     static int Complete(::Il2CppObject* targetOrId, bool withCallbacks);
     // static System.Int32 CompleteAndReturnKilledTot()
-    // Offset: 0x1097528
+    // Offset: 0x15D9B50
     static int CompleteAndReturnKilledTot();
     // static System.Int32 CompleteAndReturnKilledTot(System.Object targetOrId)
-    // Offset: 0x10975A0
+    // Offset: 0x15D9BC8
     static int CompleteAndReturnKilledTot(::Il2CppObject* targetOrId);
     // static System.Int32 CompleteAndReturnKilledTotExceptFor(params System.Object[] excludeTargetsOrIds)
-    // Offset: 0x1097630
+    // Offset: 0x15D9C58
     static int CompleteAndReturnKilledTotExceptFor(::ArrayW<::Il2CppObject*> excludeTargetsOrIds);
     // static public System.Int32 FlipAll()
-    // Offset: 0x10976AC
+    // Offset: 0x15D9CD4
     static int FlipAll();
     // static public System.Int32 Flip(System.Object targetOrId)
-    // Offset: 0x1097724
+    // Offset: 0x15D9D4C
     static int Flip(::Il2CppObject* targetOrId);
     // static public System.Int32 GotoAll(System.Single to, System.Boolean andPlay)
-    // Offset: 0x10977B4
+    // Offset: 0x15D9DDC
     static int GotoAll(float to, bool andPlay);
     // static public System.Int32 Goto(System.Object targetOrId, System.Single to, System.Boolean andPlay)
-    // Offset: 0x109783C
+    // Offset: 0x15D9E64
     static int Goto(::Il2CppObject* targetOrId, float to, bool andPlay);
     // static public System.Int32 KillAll(System.Boolean complete)
-    // Offset: 0x10978EC
+    // Offset: 0x15D9F14
     static int KillAll(bool complete);
     // static public System.Int32 KillAll(System.Boolean complete, params System.Object[] idsOrTargetsToExclude)
-    // Offset: 0x1097994
+    // Offset: 0x15D9FBC
     static int KillAll(bool complete, ::ArrayW<::Il2CppObject*> idsOrTargetsToExclude);
     // static public System.Int32 Kill(System.Object targetOrId, System.Boolean complete)
-    // Offset: 0x1097AD0
+    // Offset: 0x15DA0F8
     static int Kill(::Il2CppObject* targetOrId, bool complete);
     // static public System.Int32 PauseAll()
-    // Offset: 0x1097BB0
+    // Offset: 0x15DA1D8
     static int PauseAll();
     // static public System.Int32 Pause(System.Object targetOrId)
-    // Offset: 0x1097C28
+    // Offset: 0x15DA250
     static int Pause(::Il2CppObject* targetOrId);
     // static public System.Int32 PlayAll()
-    // Offset: 0x1097CB8
+    // Offset: 0x15DA2E0
     static int PlayAll();
     // static public System.Int32 Play(System.Object targetOrId)
-    // Offset: 0x1097D30
+    // Offset: 0x15DA358
     static int Play(::Il2CppObject* targetOrId);
     // static public System.Int32 Play(System.Object target, System.Object id)
-    // Offset: 0x1097DC0
+    // Offset: 0x15DA3E8
     static int Play(::Il2CppObject* target, ::Il2CppObject* id);
     // static public System.Int32 PlayBackwardsAll()
-    // Offset: 0x1097E64
+    // Offset: 0x15DA48C
     static int PlayBackwardsAll();
     // static public System.Int32 PlayBackwards(System.Object targetOrId)
-    // Offset: 0x1097EDC
+    // Offset: 0x15DA504
     static int PlayBackwards(::Il2CppObject* targetOrId);
     // static public System.Int32 PlayBackwards(System.Object target, System.Object id)
-    // Offset: 0x1097F6C
+    // Offset: 0x15DA594
     static int PlayBackwards(::Il2CppObject* target, ::Il2CppObject* id);
     // static public System.Int32 PlayForwardAll()
-    // Offset: 0x1098010
+    // Offset: 0x15DA638
     static int PlayForwardAll();
     // static public System.Int32 PlayForward(System.Object targetOrId)
-    // Offset: 0x1098088
+    // Offset: 0x15DA6B0
     static int PlayForward(::Il2CppObject* targetOrId);
     // static public System.Int32 PlayForward(System.Object target, System.Object id)
-    // Offset: 0x1098118
+    // Offset: 0x15DA740
     static int PlayForward(::Il2CppObject* target, ::Il2CppObject* id);
     // static public System.Int32 RestartAll(System.Boolean includeDelay)
-    // Offset: 0x10981BC
+    // Offset: 0x15DA7E4
     static int RestartAll(bool includeDelay);
     // static public System.Int32 Restart(System.Object targetOrId, System.Boolean includeDelay, System.Single changeDelayTo)
-    // Offset: 0x1098238
+    // Offset: 0x15DA860
     static int Restart(::Il2CppObject* targetOrId, bool includeDelay, float changeDelayTo);
     // static public System.Int32 Restart(System.Object target, System.Object id, System.Boolean includeDelay, System.Single changeDelayTo)
-    // Offset: 0x10982E8
+    // Offset: 0x15DA910
     static int Restart(::Il2CppObject* target, ::Il2CppObject* id, bool includeDelay, float changeDelayTo);
     // static public System.Int32 RewindAll(System.Boolean includeDelay)
-    // Offset: 0x10983A0
+    // Offset: 0x15DA9C8
     static int RewindAll(bool includeDelay);
     // static public System.Int32 Rewind(System.Object targetOrId, System.Boolean includeDelay)
-    // Offset: 0x109841C
+    // Offset: 0x15DAA44
     static int Rewind(::Il2CppObject* targetOrId, bool includeDelay);
     // static public System.Int32 SmoothRewindAll()
-    // Offset: 0x10984BC
+    // Offset: 0x15DAAE4
     static int SmoothRewindAll();
     // static public System.Int32 SmoothRewind(System.Object targetOrId)
-    // Offset: 0x1098534
+    // Offset: 0x15DAB5C
     static int SmoothRewind(::Il2CppObject* targetOrId);
     // static public System.Int32 TogglePauseAll()
-    // Offset: 0x10985C4
+    // Offset: 0x15DABEC
     static int TogglePauseAll();
     // static public System.Int32 TogglePause(System.Object targetOrId)
-    // Offset: 0x109863C
+    // Offset: 0x15DAC64
     static int TogglePause(::Il2CppObject* targetOrId);
     // static public System.Boolean IsTweening(System.Object targetOrId, System.Boolean alsoCheckIfIsPlaying)
-    // Offset: 0x10986CC
+    // Offset: 0x15DACF4
     static bool IsTweening(::Il2CppObject* targetOrId, bool alsoCheckIfIsPlaying);
     // static public System.Int32 TotalPlayingTweens()
-    // Offset: 0x1098760
+    // Offset: 0x15DAD88
     static int TotalPlayingTweens();
     // static public System.Collections.Generic.List`1<DG.Tweening.Tween> PlayingTweens(System.Collections.Generic.List`1<DG.Tweening.Tween> fillableList)
-    // Offset: 0x10987BC
+    // Offset: 0x15DADE4
     static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* PlayingTweens(::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* fillableList);
     // static public System.Collections.Generic.List`1<DG.Tweening.Tween> PausedTweens(System.Collections.Generic.List`1<DG.Tweening.Tween> fillableList)
-    // Offset: 0x1098848
+    // Offset: 0x15DAE70
     static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* PausedTweens(::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* fillableList);
     // static public System.Collections.Generic.List`1<DG.Tweening.Tween> TweensById(System.Object id, System.Boolean playingOnly, System.Collections.Generic.List`1<DG.Tweening.Tween> fillableList)
-    // Offset: 0x10988D4
+    // Offset: 0x15DAEFC
     static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* TweensById(::Il2CppObject* id, bool playingOnly, ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* fillableList);
     // static public System.Collections.Generic.List`1<DG.Tweening.Tween> TweensByTarget(System.Object target, System.Boolean playingOnly, System.Collections.Generic.List`1<DG.Tweening.Tween> fillableList)
-    // Offset: 0x109898C
+    // Offset: 0x15DAFB4
     static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* TweensByTarget(::Il2CppObject* target, bool playingOnly, ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* fillableList);
     // static private System.Void InitCheck()
-    // Offset: 0x1095674
+    // Offset: 0x15D7C9C
     static void InitCheck();
     // static private DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> ApplyTo(DG.Tweening.Core.DOGetter`1<T1> getter, DG.Tweening.Core.DOSetter`1<T1> setter, T2 endValue, System.Single duration, DG.Tweening.Plugins.Core.ABSTweenPlugin`3<T1,T2,TPlugOptions> plugin)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -509,7 +509,7 @@ namespace DG::Tweening {
       return ::il2cpp_utils::RunMethodRethrow<::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, getter, setter, endValue, duration, plugin);
     }
     // public System.Void .ctor()
-    // Offset: 0x1098A2C
+    // Offset: 0x15DB054
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -34,45 +34,37 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionsManager::$$c__DisplayClass59_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.SessionsManager <>4__this
     // Size: 0x8
     // Offset: 0x10
     ::VROSC::SessionsManager* $$4__this;
     // Field size check
     static_assert(sizeof(::VROSC::SessionsManager*) == 0x8);
-    // public System.String sessionId
-    // Size: 0x8
-    // Offset: 0x18
-    ::StringW sessionId;
-    // Field size check
-    static_assert(sizeof(::StringW) == 0x8);
     // public VROSC.SessionsDataController sessionsDataController
     // Size: 0x8
-    // Offset: 0x20
+    // Offset: 0x18
     ::VROSC::SessionsDataController* sessionsDataController;
     // Field size check
     static_assert(sizeof(::VROSC::SessionsDataController*) == 0x8);
+    // public System.String sessionId
+    // Size: 0x8
+    // Offset: 0x20
+    ::StringW sessionId;
+    // Field size check
+    static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public VROSC.SessionsManager <>4__this
-    ::VROSC::SessionsManager*& dyn_$$4__this();
-    // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::VROSC::SessionsManager*& dyn_$$4__this();
     // Get instance field reference: public VROSC.SessionsDataController sessionsDataController
-    ::VROSC::SessionsDataController*& dyn_sessionsDataController();
+    [[deprecated]] ::VROSC::SessionsDataController*& dyn_sessionsDataController();
+    // Get instance field reference: public System.String sessionId
+    [[deprecated]] ::StringW& dyn_sessionId();
     // System.Void <DeleteSession>b__1(VROSC.Error error)
-    // Offset: 0x134B288
+    // Offset: 0x8D6228
     void $DeleteSession$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x134B280
+    // Offset: 0x8D6220
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -82,7 +74,7 @@ namespace VROSC {
     }
   }; // VROSC.SessionsManager/VROSC.<>c__DisplayClass59_0
   #pragma pack(pop)
-  static check_size<sizeof(SessionsManager::$$c__DisplayClass59_0), 32 + sizeof(::VROSC::SessionsDataController*)> __VROSC_SessionsManager_$$c__DisplayClass59_0SizeCheck;
+  static check_size<sizeof(SessionsManager::$$c__DisplayClass59_0), 32 + sizeof(::StringW)> __VROSC_SessionsManager_$$c__DisplayClass59_0SizeCheck;
   static_assert(sizeof(SessionsManager::$$c__DisplayClass59_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"

@@ -33,22 +33,22 @@ namespace GlobalNamespace {
     // Set static field: static public readonly System.Version version
     static void _set_version(::System::Version* value);
     // static private System.Void .cctor()
-    // Offset: 0xF117B4
+    // Offset: 0x13EB7B0
     static void _cctor();
     // static public OVRPlugin/Result ovrp_Media_GetPlatformCameraMode(out OVRPlugin/Media/PlatformCameraMode platformCameraMode)
-    // Offset: 0xF11524
+    // Offset: 0x13EB520
     static ::GlobalNamespace::OVRPlugin::Result ovrp_Media_GetPlatformCameraMode(ByRef<::GlobalNamespace::OVRPlugin::Media::PlatformCameraMode> platformCameraMode);
     // static public OVRPlugin/Result ovrp_Media_SetPlatformCameraMode(OVRPlugin/Media/PlatformCameraMode platformCameraMode)
-    // Offset: 0xF115A4
+    // Offset: 0x13EB5A0
     static ::GlobalNamespace::OVRPlugin::Result ovrp_Media_SetPlatformCameraMode(::GlobalNamespace::OVRPlugin::Media::PlatformCameraMode platformCameraMode);
     // static public OVRPlugin/Result ovrp_SetEyeFovPremultipliedAlphaMode(OVRPlugin/Bool enabled)
-    // Offset: 0xF11624
+    // Offset: 0x13EB620
     static ::GlobalNamespace::OVRPlugin::Result ovrp_SetEyeFovPremultipliedAlphaMode(::GlobalNamespace::OVRPlugin::Bool enabled);
     // static public OVRPlugin/Result ovrp_GetEyeFovPremultipliedAlphaMode(ref OVRPlugin/Bool enabled)
-    // Offset: 0xF116A4
+    // Offset: 0x13EB6A0
     static ::GlobalNamespace::OVRPlugin::Result ovrp_GetEyeFovPremultipliedAlphaMode(ByRef<::GlobalNamespace::OVRPlugin::Bool> enabled);
     // static public OVRPlugin/Result ovrp_SetKeyboardOverlayUV(OVRPlugin/Vector2f uv)
-    // Offset: 0xF11724
+    // Offset: 0x13EB720
     static ::GlobalNamespace::OVRPlugin::Result ovrp_SetKeyboardOverlayUV(::GlobalNamespace::OVRPlugin::Vector2f uv);
   }; // OVRPlugin/OVRP_1_57_0
   #pragma pack(pop)

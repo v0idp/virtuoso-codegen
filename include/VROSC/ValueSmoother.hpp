@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ValueSmoother : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _smoothFrames
     // Size: 0x4
     // Offset: 0x40
@@ -66,14 +58,14 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<float>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _smoothFrames
-    int& dyn__smoothFrames();
+    [[deprecated]] int& dyn__smoothFrames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single> _buffer
-    ::System::Collections::Generic::List_1<float>*& dyn__buffer();
+    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn__buffer();
     // private VROSC.Signal TransformValue(VROSC.Signal signal)
-    // Offset: 0x13AD9A4
+    // Offset: 0x19218EC
     ::VROSC::Signal* TransformValue(::VROSC::Signal* signal);
     // public System.Void .ctor()
-    // Offset: 0x13ADB64
+    // Offset: 0x1921AAC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -88,17 +80,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ValueSmoother*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13AD9A0
+    // Offset: 0x19218E8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13ADB5C
+    // Offset: 0x1921AA4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x13ADB60
+    // Offset: 0x1921AA8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

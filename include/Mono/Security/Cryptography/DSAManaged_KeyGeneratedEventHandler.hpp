@@ -37,20 +37,20 @@ namespace Mono::Security::Cryptography {
   class DSAManaged::KeyGeneratedEventHandler : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xDD13C4
+    // Offset: 0x13A9D6C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DSAManaged::KeyGeneratedEventHandler* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Cryptography::DSAManaged::KeyGeneratedEventHandler::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DSAManaged::KeyGeneratedEventHandler*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Object sender, System.EventArgs e)
-    // Offset: 0xDD13D4
+    // Offset: 0x13A9D7C
     void Invoke(::Il2CppObject* sender, ::System::EventArgs* e);
     // public System.IAsyncResult BeginInvoke(System.Object sender, System.EventArgs e, System.AsyncCallback callback, System.Object object)
-    // Offset: 0xDD1764
+    // Offset: 0x13AA10C
     ::System::IAsyncResult* BeginInvoke(::Il2CppObject* sender, ::System::EventArgs* e, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xDD1794
+    // Offset: 0x13AA13C
     void EndInvoke(::System::IAsyncResult* result);
   }; // Mono.Security.Cryptography.DSAManaged/Mono.Security.Cryptography.KeyGeneratedEventHandler
   #pragma pack(pop)

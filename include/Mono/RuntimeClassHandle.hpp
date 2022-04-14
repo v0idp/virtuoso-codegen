@@ -54,29 +54,29 @@ namespace Mono {
       return value;
     }
     // Get instance field reference: private Mono.RuntimeStructs/Mono.MonoClass* value
-    ::Mono::RuntimeStructs::MonoClass*& dyn_value();
+    [[deprecated]] ::Mono::RuntimeStructs::MonoClass*& dyn_value();
     // Mono.RuntimeStructs/Mono.MonoClass* get_Value()
-    // Offset: 0xEDD6B8
+    // Offset: 0xCE3C58
     ::Mono::RuntimeStructs::MonoClass* get_Value();
     // System.Void .ctor(Mono.RuntimeStructs/Mono.MonoClass* value)
-    // Offset: 0xEDD684
+    // Offset: 0xCE3C24
     // ABORTED: conflicts with another method.  RuntimeClassHandle(::Mono::RuntimeStructs::MonoClass* value);
     // System.Void .ctor(System.IntPtr ptr)
-    // Offset: 0xEDD68C
+    // Offset: 0xCE3C2C
     RuntimeClassHandle(::System::IntPtr ptr);
     // static System.IntPtr GetTypeFromClass(Mono.RuntimeStructs/Mono.MonoClass* klass)
-    // Offset: 0xEDD80C
+    // Offset: 0xCE3DAC
     static ::System::IntPtr GetTypeFromClass(::Mono::RuntimeStructs::MonoClass* klass);
     // System.RuntimeTypeHandle GetTypeHandle()
-    // Offset: 0xEDD810
+    // Offset: 0xCE3DB0
     ::System::RuntimeTypeHandle GetTypeHandle();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xEDD6C0
+    // Offset: 0xCE3C60
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xEDD7D8
+    // Offset: 0xCE3D78
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

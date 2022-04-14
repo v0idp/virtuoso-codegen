@@ -35,15 +35,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class LoopStationGroupMover::$MoveGroupFlow$d__10 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -118,48 +110,48 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.LoopStationGroupMover <>4__this
-    ::VROSC::LoopStationGroupMover*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::LoopStationGroupMover*& dyn_$$4__this();
     // Get instance field reference: public UnityEngine.Vector3 from
-    ::UnityEngine::Vector3& dyn_from();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_from();
     // Get instance field reference: public UnityEngine.Vector3 to
-    ::UnityEngine::Vector3& dyn_to();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_to();
     // Get instance field reference: public System.Single zmultiplier
-    float& dyn_zmultiplier();
+    [[deprecated]] float& dyn_zmultiplier();
     // Get instance field reference: private System.Single <time>5__2
-    float& dyn_$time$5__2();
+    [[deprecated]] float& dyn_$time$5__2();
     // Get instance field reference: private UnityEngine.Transform <parent>5__3
-    ::UnityEngine::Transform*& dyn_$parent$5__3();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_$parent$5__3();
     // Get instance field reference: private UnityEngine.Vector3 <localStartPosition>5__4
-    ::UnityEngine::Vector3& dyn_$localStartPosition$5__4();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$localStartPosition$5__4();
     // Get instance field reference: private UnityEngine.Vector3 <localEndPosition>5__5
-    ::UnityEngine::Vector3& dyn_$localEndPosition$5__5();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$localEndPosition$5__5();
     // Get instance field reference: private System.Single <duration>5__6
-    float& dyn_$duration$5__6();
+    [[deprecated]] float& dyn_$duration$5__6();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x13D7748
+    // Offset: 0x195F464
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x13D7790
+    // Offset: 0x195F4AC
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x13D73DC
+    // Offset: 0x195F0F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationGroupMover::$MoveGroupFlow$d__10* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationGroupMover::$MoveGroupFlow$d__10::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationGroupMover::$MoveGroupFlow$d__10*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x13D7408
+    // Offset: 0x195F124
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x13D740C
+    // Offset: 0x195F128
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x13D7750
+    // Offset: 0x195F46C
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.LoopStationGroupMover/VROSC.<MoveGroupFlow>d__10
   #pragma pack(pop)

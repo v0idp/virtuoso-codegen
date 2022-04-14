@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupAuthenticationManagerState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AuthenticationManager _authenticationManager
     // Size: 0x8
     // Offset: 0x10
@@ -62,25 +54,25 @@ namespace VROSC {
       return authenticationManager;
     }
     // Get instance field reference: private VROSC.AuthenticationManager _authenticationManager
-    ::VROSC::AuthenticationManager*& dyn__authenticationManager();
+    [[deprecated]] ::VROSC::AuthenticationManager*& dyn__authenticationManager();
     // public System.Void .ctor(VROSC.AuthenticationManager authenticationManager)
-    // Offset: 0x13B381C
+    // Offset: 0x19266E8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupAuthenticationManagerState* New_ctor(::VROSC::AuthenticationManager* authenticationManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupAuthenticationManagerState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupAuthenticationManagerState*, creationType>(authenticationManager)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B3848
+    // Offset: 0x1926714
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B3864
+    // Offset: 0x1926730
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B3868
+    // Offset: 0x1926734
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B386C
+    // Offset: 0x1926738
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupAuthenticationManagerState
   #pragma pack(pop)

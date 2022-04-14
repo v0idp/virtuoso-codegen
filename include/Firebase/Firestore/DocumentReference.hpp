@@ -77,15 +77,7 @@ namespace Firebase::Firestore {
     public:
     // Nested type: ::Firebase::Firestore::DocumentReference::ListenerDelegate
     class ListenerDelegate;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly Firebase.Firestore.DocumentReferenceProxy _proxy
     // Size: 0x8
     // Offset: 0x10
@@ -112,70 +104,70 @@ namespace Firebase::Firestore {
     // Set static field: static private Firebase.Firestore.DocumentReference/Firebase.Firestore.ListenerDelegate documentSnapshotsHandler
     static void _set_documentSnapshotsHandler(::Firebase::Firestore::DocumentReference::ListenerDelegate* value);
     // Get instance field reference: private readonly Firebase.Firestore.DocumentReferenceProxy _proxy
-    ::Firebase::Firestore::DocumentReferenceProxy*& dyn__proxy();
+    [[deprecated]] ::Firebase::Firestore::DocumentReferenceProxy*& dyn__proxy();
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestore _firestore
-    ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
+    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
     // Firebase.Firestore.DocumentReferenceProxy get_Proxy()
-    // Offset: 0xC2FD4C
+    // Offset: 0xD51BE4
     ::Firebase::Firestore::DocumentReferenceProxy* get_Proxy();
     // public Firebase.Firestore.FirebaseFirestore get_Firestore()
-    // Offset: 0xC2FDE0
+    // Offset: 0xD51C78
     ::Firebase::Firestore::FirebaseFirestore* get_Firestore();
     // public System.String get_Id()
-    // Offset: 0xC26324
+    // Offset: 0xD48074
     ::StringW get_Id();
     // public System.String get_Path()
-    // Offset: 0xC2FDE8
+    // Offset: 0xD51C80
     ::StringW get_Path();
     // System.Void .ctor(Firebase.Firestore.DocumentReferenceProxy proxy, Firebase.Firestore.FirebaseFirestore firestore)
-    // Offset: 0xC29B08
+    // Offset: 0xD4B828
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DocumentReference* New_ctor(::Firebase::Firestore::DocumentReferenceProxy* proxy, ::Firebase::Firestore::FirebaseFirestore* firestore) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::DocumentReference::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DocumentReference*, creationType>(proxy, firestore)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xC305F4
+    // Offset: 0xD52704
     static void _cctor();
     // static System.Void ClearCallbacksForOwner(Firebase.Firestore.FirebaseFirestore owner)
-    // Offset: 0xC2FD54
+    // Offset: 0xD51BEC
     static void ClearCallbacksForOwner(::Firebase::Firestore::FirebaseFirestore* owner);
     // public Firebase.Firestore.CollectionReference Collection(System.String path)
-    // Offset: 0xC2FE08
+    // Offset: 0xD51CA0
     ::Firebase::Firestore::CollectionReference* Collection(::StringW path);
     // public System.Boolean Equals(Firebase.Firestore.DocumentReference other)
-    // Offset: 0xC2FF78
+    // Offset: 0xD51E48
     bool Equals(::Firebase::Firestore::DocumentReference* other);
     // public System.Threading.Tasks.Task DeleteAsync()
-    // Offset: 0xC300F8
+    // Offset: 0xD51FC8
     ::System::Threading::Tasks::Task* DeleteAsync();
     // public System.Threading.Tasks.Task UpdateAsync(System.Collections.Generic.IDictionary`2<System.String,System.Object> updates)
-    // Offset: 0xC30118
+    // Offset: 0xD51FE8
     ::System::Threading::Tasks::Task* UpdateAsync(::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* updates);
     // public System.Threading.Tasks.Task SetAsync(System.Object documentData, Firebase.Firestore.SetOptions options)
-    // Offset: 0xC29D04
+    // Offset: 0xD4BB28
     ::System::Threading::Tasks::Task* SetAsync(::Il2CppObject* documentData, ::Firebase::Firestore::SetOptions* options);
     // public System.Threading.Tasks.Task`1<Firebase.Firestore.DocumentSnapshot> GetSnapshotAsync(Firebase.Firestore.Source source)
-    // Offset: 0xC304B8
+    // Offset: 0xD52424
     ::System::Threading::Tasks::Task_1<::Firebase::Firestore::DocumentSnapshot*>* GetSnapshotAsync(::Firebase::Firestore::Source source);
     // static private System.Void DocumentSnapshotsHandler(System.Int32 callbackId, System.IntPtr snapshotPtr, Firebase.Firestore.FirestoreError errorCode, System.String errorMessage)
-    // Offset: 0xC2FB8C
+    // Offset: 0xD51994
     static void DocumentSnapshotsHandler(int callbackId, ::System::IntPtr snapshotPtr, ::Firebase::Firestore::FirestoreError errorCode, ::StringW errorMessage);
     // private Firebase.Firestore.DocumentSnapshot <GetSnapshotAsync>m__0(Firebase.Firestore.DocumentSnapshotProxy taskResult)
-    // Offset: 0xC306D8
+    // Offset: 0xD527E8
     ::Firebase::Firestore::DocumentSnapshot* $GetSnapshotAsync$m__0(::Firebase::Firestore::DocumentSnapshotProxy* taskResult);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xC2FE9C
+    // Offset: 0xD51D6C
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC2FF08
+    // Offset: 0xD51DD8
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.String ToString()
-    // Offset: 0xC30004
+    // Offset: 0xD51ED4
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

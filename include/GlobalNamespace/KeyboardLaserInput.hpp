@@ -40,15 +40,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class KeyboardLaserInput : public ::VROSC::Clickable {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Key _key
     // Size: 0x8
     // Offset: 0x88
@@ -87,42 +79,42 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private Key _key
-    ::GlobalNamespace::Key*& dyn__key();
+    [[deprecated]] ::GlobalNamespace::Key*& dyn__key();
     // Get instance field reference: private UnityEngine.Collider _collider
-    ::UnityEngine::Collider*& dyn__collider();
+    [[deprecated]] ::UnityEngine::Collider*& dyn__collider();
     // Get instance field reference: private System.Single _startRepeatedPressesDelay
-    float& dyn__startRepeatedPressesDelay();
+    [[deprecated]] float& dyn__startRepeatedPressesDelay();
     // Get instance field reference: private System.Single _repeatedPressDelay
-    float& dyn__repeatedPressDelay();
+    [[deprecated]] float& dyn__repeatedPressDelay();
     // Get instance field reference: private System.Single _repeatedClickStartTime
-    float& dyn__repeatedClickStartTime();
+    [[deprecated]] float& dyn__repeatedClickStartTime();
     // Get instance field reference: private System.Int32 _sentRepeatedClicks
-    int& dyn__sentRepeatedClicks();
+    [[deprecated]] int& dyn__sentRepeatedClicks();
     // private System.Void Awake()
-    // Offset: 0x1388CA4
+    // Offset: 0x194C570
     void Awake();
     // private System.Void Clicked(System.Boolean clicked)
-    // Offset: 0x1388E80
+    // Offset: 0x194C74C
     void Clicked(bool clicked);
     // private System.Void SettingsUpdated()
-    // Offset: 0x1388E04
+    // Offset: 0x194C6D0
     void SettingsUpdated();
     // private System.Void Update()
-    // Offset: 0x1388ED4
+    // Offset: 0x194C7A0
     void Update();
     // private System.Boolean ShouldSendRepeatedClick()
-    // Offset: 0x1388F34
+    // Offset: 0x194C800
     bool ShouldSendRepeatedClick();
     // private System.Void OnDestroy()
-    // Offset: 0x1388F98
+    // Offset: 0x194C864
     void OnDestroy();
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x1388C9C
+    // Offset: 0x194C568
     // Implemented from: VROSC.Clickable
     // Base method: System.Boolean Clickable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x13890F4
+    // Offset: 0x194C9C0
     // Implemented from: VROSC.Clickable
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()

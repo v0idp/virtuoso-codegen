@@ -29,15 +29,7 @@ namespace Facebook::WitAi::Data::Configuration {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitApplication : public ::Facebook::WitAi::Configuration::WitConfigurationData {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String name
     // Size: 0x8
     // Offset: 0x18
@@ -74,17 +66,17 @@ namespace Facebook::WitAi::Data::Configuration {
     // Deleting conversion operator: operator ::Facebook::WitAi::Data::Configuration::WitConfiguration*
     constexpr operator ::Facebook::WitAi::Data::Configuration::WitConfiguration*() const noexcept = delete;
     // Get instance field reference: public System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: public System.String id
-    ::StringW& dyn_id();
+    [[deprecated]] ::StringW& dyn_id();
     // Get instance field reference: public System.String lang
-    ::StringW& dyn_lang();
+    [[deprecated]] ::StringW& dyn_lang();
     // Get instance field reference: public System.Boolean isPrivate
-    bool& dyn_isPrivate();
+    [[deprecated]] bool& dyn_isPrivate();
     // Get instance field reference: public System.String createdAt
-    ::StringW& dyn_createdAt();
+    [[deprecated]] ::StringW& dyn_createdAt();
     // public System.Void .ctor()
-    // Offset: 0x10FD95C
+    // Offset: 0x16741C4
     // Implemented from: Facebook.WitAi.Configuration.WitConfigurationData
     // Base method: System.Void WitConfigurationData::.ctor()
     // Base method: System.Void Object::.ctor()

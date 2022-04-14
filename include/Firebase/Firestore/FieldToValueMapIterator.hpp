@@ -38,15 +38,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FieldToValueMapIterator : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -65,33 +57,33 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC34DC8
+    // Offset: 0xD56F78
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldToValueMapIterator* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldToValueMapIterator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FieldToValueMapIterator*, creationType>(cPtr, cMemoryOwn)));
     }
     // public System.Void Dispose()
-    // Offset: 0xC34E9C
+    // Offset: 0xD5704C
     void Dispose();
     // public System.Boolean HasMore()
-    // Offset: 0xC286A0
+    // Offset: 0xD4A3D8
     bool HasMore();
     // public System.Void Advance()
-    // Offset: 0xC284C4
+    // Offset: 0xD4A204
     void Advance();
     // public System.String UnsafeKeyView()
-    // Offset: 0xC2834C
+    // Offset: 0xD4A09C
     ::StringW UnsafeKeyView();
     // public Firebase.Firestore.FieldValueProxy UnsafeValueView()
-    // Offset: 0xC283F0
+    // Offset: 0xD4A138
     ::Firebase::Firestore::FieldValueProxy* UnsafeValueView();
     // protected override System.Void Finalize()
-    // Offset: 0xC34E2C
+    // Offset: 0xD56FDC
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

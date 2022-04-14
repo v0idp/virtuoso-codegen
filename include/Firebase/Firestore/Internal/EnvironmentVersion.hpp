@@ -31,10 +31,10 @@ namespace Firebase::Firestore::Internal {
   class EnvironmentVersion : public ::Il2CppObject {
     public:
     // static public System.String GetEnvironmentVersion()
-    // Offset: 0xC33744
+    // Offset: 0xD559E0
     static ::StringW GetEnvironmentVersion();
     // static private System.String FormatVersion(System.Version version)
-    // Offset: 0xC337A0
+    // Offset: 0xD55A3C
     static ::StringW FormatVersion(::System::Version* version);
   }; // Firebase.Firestore.Internal.EnvironmentVersion
   #pragma pack(pop)

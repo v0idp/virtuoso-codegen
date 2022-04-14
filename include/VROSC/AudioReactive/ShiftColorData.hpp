@@ -42,15 +42,7 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class ShiftColorData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _renderer
     // Size: 0x8
     // Offset: 0x10
@@ -113,52 +105,52 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // Get instance field reference: private VROSC.AudioReactive.ShiftColorEffectData _data
-    ::VROSC::AudioReactive::ShiftColorEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::ShiftColorEffectData*& dyn__data();
     // Get instance field reference: private System.Single _shift
-    float& dyn__shift();
+    [[deprecated]] float& dyn__shift();
     // Get instance field reference: private System.Single _currentHue
-    float& dyn__currentHue();
+    [[deprecated]] float& dyn__currentHue();
     // Get instance field reference: private System.Single _currentSaturation
-    float& dyn__currentSaturation();
+    [[deprecated]] float& dyn__currentSaturation();
     // Get instance field reference: private System.Single _currentValue
-    float& dyn__currentValue();
+    [[deprecated]] float& dyn__currentValue();
     // Get instance field reference: private System.Single _startSaturation
-    float& dyn__startSaturation();
+    [[deprecated]] float& dyn__startSaturation();
     // Get instance field reference: private System.Single _intensityShift
-    float& dyn__intensityShift();
+    [[deprecated]] float& dyn__intensityShift();
     // Get instance field reference: private System.Single _saturationShift
-    float& dyn__saturationShift();
+    [[deprecated]] float& dyn__saturationShift();
     // public UnityEngine.Color get_Color()
-    // Offset: 0x13B4340
+    // Offset: 0x192720C
     ::UnityEngine::Color get_Color();
     // public System.Void .ctor(UnityEngine.Renderer renderer, VROSC.AudioReactive.ShiftColorEffectData data)
-    // Offset: 0x13B4388
+    // Offset: 0x1927254
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ShiftColorData* New_ctor(::UnityEngine::Renderer* renderer, ::VROSC::AudioReactive::ShiftColorEffectData* data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ShiftColorData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ShiftColorData*, creationType>(renderer, data)));
     }
     // public System.Void SetRandomColor()
-    // Offset: 0x13B4430
+    // Offset: 0x19272FC
     void SetRandomColor();
     // private UnityEngine.Color GetColor()
-    // Offset: 0x13B4344
+    // Offset: 0x1927210
     ::UnityEngine::Color GetColor();
     // public System.Void ShiftShade(System.Single amount)
-    // Offset: 0x13B44B4
+    // Offset: 0x1927380
     void ShiftShade(float amount);
     // public System.Void SetSaturationShift(System.Single saturationShift)
-    // Offset: 0x13B4528
+    // Offset: 0x19273F4
     void SetSaturationShift(float saturationShift);
     // public System.Void SetValueShift(System.Single value)
-    // Offset: 0x13B4530
+    // Offset: 0x19273FC
     void SetValueShift(float value);
     // public System.Void SetColorOnRenderer()
-    // Offset: 0x13B4538
+    // Offset: 0x1927404
     void SetColorOnRenderer();
   }; // VROSC.AudioReactive.ShiftColorData
   #pragma pack(pop)

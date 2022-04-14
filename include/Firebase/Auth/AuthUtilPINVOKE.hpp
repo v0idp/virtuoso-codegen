@@ -55,79 +55,88 @@ namespace Firebase::Auth {
     // Set static field: static protected Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGStringHelper swigStringHelper
     static void _set_swigStringHelper(::Firebase::Auth::AuthUtilPINVOKE::SWIGStringHelper* value);
     // static private System.Void .cctor()
-    // Offset: 0x12AEF18
+    // Offset: 0x18AEABC
     static void _cctor();
     // static public System.IntPtr Future_User_SWIG_OnCompletion(System.Runtime.InteropServices.HandleRef jarg1, Firebase.Auth.Future_User/Firebase.Auth.SWIG_CompletionDelegate jarg2, System.Int32 jarg3)
-    // Offset: 0x12AEFD0
+    // Offset: 0x18AEB74
     static ::System::IntPtr Future_User_SWIG_OnCompletion(::System::Runtime::InteropServices::HandleRef jarg1, ::Firebase::Auth::Future_User::SWIG_CompletionDelegate* jarg2, int jarg3);
     // static public System.Void Future_User_SWIG_FreeCompletionData(System.Runtime.InteropServices.HandleRef jarg1, System.IntPtr jarg2)
-    // Offset: 0x12AF06C
+    // Offset: 0x18AEC10
     static void Future_User_SWIG_FreeCompletionData(::System::Runtime::InteropServices::HandleRef jarg1, ::System::IntPtr jarg2);
     // static public System.IntPtr Future_User_GetResult(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF0FC
+    // Offset: 0x18AECA0
     static ::System::IntPtr Future_User_GetResult(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_Future_User(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF17C
+    // Offset: 0x18AED20
     static void delete_Future_User(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_FirebaseUser(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF1FC
+    // Offset: 0x18AEDA0
     static void delete_FirebaseUser(::System::Runtime::InteropServices::HandleRef jarg1);
-    // static public System.IntPtr FirebaseUser_Token(System.Runtime.InteropServices.HandleRef jarg1, System.Boolean jarg2)
-    // Offset: 0x12AF27C
-    static ::System::IntPtr FirebaseUser_Token(::System::Runtime::InteropServices::HandleRef jarg1, bool jarg2);
     // static public System.IntPtr FirebaseUser_UpdateEmail(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0x12AF30C
+    // Offset: 0x18AEE20
     static ::System::IntPtr FirebaseUser_UpdateEmail(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.IntPtr FirebaseUser_UpdatePassword(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0x12AF3B8
+    // Offset: 0x18AEECC
     static ::System::IntPtr FirebaseUser_UpdatePassword(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.IntPtr FirebaseUser_SendEmailVerification(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF464
+    // Offset: 0x18AEF78
     static ::System::IntPtr FirebaseUser_SendEmailVerification(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.IntPtr FirebaseUser_UpdateUserProfile(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2)
+    // Offset: 0x18AEFF8
+    static ::System::IntPtr FirebaseUser_UpdateUserProfile(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2);
     // static public System.IntPtr FirebaseUser_Reload(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF4E4
+    // Offset: 0x18AF088
     static ::System::IntPtr FirebaseUser_Reload(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Boolean FirebaseUser_IsEmailVerified_get(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF564
+    // Offset: 0x18AF108
     static bool FirebaseUser_IsEmailVerified_get(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String FirebaseUser_UserId_get(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF5EC
+    // Offset: 0x18AF190
     static ::StringW FirebaseUser_UserId_get(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.IntPtr new_UserProfile()
+    // Offset: 0x18AF228
+    static ::System::IntPtr new_UserProfile();
+    // static public System.Void UserProfile_DisplayName_set(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
+    // Offset: 0x18AF29C
+    static void UserProfile_DisplayName_set(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
+    // static public System.Void delete_UserProfile(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0x18AF340
+    static void delete_UserProfile(::System::Runtime::InteropServices::HandleRef jarg1);
     // static System.IntPtr FirebaseAuth_SignInWithEmailAndPasswordInternal(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2, System.String jarg3)
-    // Offset: 0x12AF684
+    // Offset: 0x18AF3C0
     static ::System::IntPtr FirebaseAuth_SignInWithEmailAndPasswordInternal(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2, ::StringW jarg3);
     // static System.IntPtr FirebaseAuth_CreateUserWithEmailAndPasswordInternal(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2, System.String jarg3)
-    // Offset: 0x12AF74C
+    // Offset: 0x18AF488
     static ::System::IntPtr FirebaseAuth_CreateUserWithEmailAndPasswordInternal(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2, ::StringW jarg3);
     // static public System.Void FirebaseAuth_SignOut(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF814
+    // Offset: 0x18AF550
     static void FirebaseAuth_SignOut(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FirebaseAuth_SendPasswordResetEmail(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0x12AF894
+    // Offset: 0x18AF5D0
     static ::System::IntPtr FirebaseAuth_SendPasswordResetEmail(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static System.IntPtr FirebaseAuth_GetAuthInternal(System.Runtime.InteropServices.HandleRef jarg1, out System.Int32 jarg2)
-    // Offset: 0x12AF940
+    // Offset: 0x18AF67C
     static ::System::IntPtr FirebaseAuth_GetAuthInternal(::System::Runtime::InteropServices::HandleRef jarg1, ByRef<int> jarg2);
     // static System.Void FirebaseAuth_ReleaseReferenceInternal(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AF9D0
+    // Offset: 0x18AF70C
     static void FirebaseAuth_ReleaseReferenceInternal(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FirebaseAuth_CurrentUserInternal_get(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12AFA50
+    // Offset: 0x18AF78C
     static ::System::IntPtr FirebaseAuth_CurrentUserInternal_get(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr CreateAuthStateListener(System.Runtime.InteropServices.HandleRef jarg1, Firebase.Auth.FirebaseAuth/Firebase.Auth.StateChangedDelegate jarg2)
-    // Offset: 0x12AEA14
+    // Offset: 0x18AE5B8
     static ::System::IntPtr CreateAuthStateListener(::System::Runtime::InteropServices::HandleRef jarg1, ::Firebase::Auth::FirebaseAuth::StateChangedDelegate* jarg2);
     // static public System.Void DestroyAuthStateListener(System.Runtime.InteropServices.HandleRef jarg1, System.IntPtr jarg2)
-    // Offset: 0x12AEB90
+    // Offset: 0x18AE734
     static void DestroyAuthStateListener(::System::Runtime::InteropServices::HandleRef jarg1, ::System::IntPtr jarg2);
     // static public System.IntPtr CreateIdTokenListener(System.Runtime.InteropServices.HandleRef jarg1, Firebase.Auth.FirebaseAuth/Firebase.Auth.StateChangedDelegate jarg2)
-    // Offset: 0x12AED0C
+    // Offset: 0x18AE8B0
     static ::System::IntPtr CreateIdTokenListener(::System::Runtime::InteropServices::HandleRef jarg1, ::Firebase::Auth::FirebaseAuth::StateChangedDelegate* jarg2);
     // static public System.Void DestroyIdTokenListener(System.Runtime.InteropServices.HandleRef jarg1, System.IntPtr jarg2)
-    // Offset: 0x12AEE88
+    // Offset: 0x18AEA2C
     static void DestroyIdTokenListener(::System::Runtime::InteropServices::HandleRef jarg1, ::System::IntPtr jarg2);
     // static public System.IntPtr Future_User_SWIGUpcast(System.IntPtr jarg1)
-    // Offset: 0x12AFAD0
+    // Offset: 0x18AF80C
     static ::System::IntPtr Future_User_SWIGUpcast(::System::IntPtr jarg1);
   }; // Firebase.Auth.AuthUtilPINVOKE
   #pragma pack(pop)
@@ -189,16 +198,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE*), "delete_FirebaseUser", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
-// Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::FirebaseUser_Token
-// Il2CppName: FirebaseUser_Token
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::System::Runtime::InteropServices::HandleRef, bool)>(&Firebase::Auth::AuthUtilPINVOKE::FirebaseUser_Token)> {
-  static const MethodInfo* get() {
-    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
-    static auto* jarg2 = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE*), "FirebaseUser_Token", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2});
-  }
-};
 // Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::FirebaseUser_UpdateEmail
 // Il2CppName: FirebaseUser_UpdateEmail
 template<>
@@ -228,6 +227,16 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::I
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE*), "FirebaseUser_SendEmailVerification", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
+// Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::FirebaseUser_UpdateUserProfile
+// Il2CppName: FirebaseUser_UpdateUserProfile
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::System::Runtime::InteropServices::HandleRef, ::System::Runtime::InteropServices::HandleRef)>(&Firebase::Auth::AuthUtilPINVOKE::FirebaseUser_UpdateUserProfile)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    static auto* jarg2 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE*), "FirebaseUser_UpdateUserProfile", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::FirebaseUser_Reload
 // Il2CppName: FirebaseUser_Reload
 template<>
@@ -253,6 +262,33 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
   static const MethodInfo* get() {
     static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE*), "FirebaseUser_UserId_get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::new_UserProfile
+// Il2CppName: new_UserProfile
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)()>(&Firebase::Auth::AuthUtilPINVOKE::new_UserProfile)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE*), "new_UserProfile", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::UserProfile_DisplayName_set
+// Il2CppName: UserProfile_DisplayName_set
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Runtime::InteropServices::HandleRef, ::StringW)>(&Firebase::Auth::AuthUtilPINVOKE::UserProfile_DisplayName_set)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    static auto* jarg2 = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE*), "UserProfile_DisplayName_set", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::delete_UserProfile
+// Il2CppName: delete_UserProfile
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Auth::AuthUtilPINVOKE::delete_UserProfile)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE*), "delete_UserProfile", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
 // Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::FirebaseAuth_SignInWithEmailAndPasswordInternal

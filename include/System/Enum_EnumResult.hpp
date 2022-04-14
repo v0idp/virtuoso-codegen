@@ -84,33 +84,33 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Object parsedEnum
-    ::Il2CppObject*& dyn_parsedEnum();
+    [[deprecated]] ::Il2CppObject*& dyn_parsedEnum();
     // Get instance field reference: System.Boolean canThrow
-    bool& dyn_canThrow();
+    [[deprecated]] bool& dyn_canThrow();
     // Get instance field reference: System.Enum/System.ParseFailureKind m_failure
-    ::System::Enum::ParseFailureKind& dyn_m_failure();
+    [[deprecated]] ::System::Enum::ParseFailureKind& dyn_m_failure();
     // Get instance field reference: System.String m_failureMessageID
-    ::StringW& dyn_m_failureMessageID();
+    [[deprecated]] ::StringW& dyn_m_failureMessageID();
     // Get instance field reference: System.String m_failureParameter
-    ::StringW& dyn_m_failureParameter();
+    [[deprecated]] ::StringW& dyn_m_failureParameter();
     // Get instance field reference: System.Object m_failureMessageFormatArgument
-    ::Il2CppObject*& dyn_m_failureMessageFormatArgument();
+    [[deprecated]] ::Il2CppObject*& dyn_m_failureMessageFormatArgument();
     // Get instance field reference: System.Exception m_innerException
-    ::System::Exception*& dyn_m_innerException();
+    [[deprecated]] ::System::Exception*& dyn_m_innerException();
     // System.Void Init(System.Boolean canMethodThrow)
-    // Offset: 0xDD3BB8
+    // Offset: 0xE50264
     void Init(bool canMethodThrow);
     // System.Void SetFailure(System.Exception unhandledException)
-    // Offset: 0xDD3C24
+    // Offset: 0xE502D0
     void SetFailure(::System::Exception* unhandledException);
     // System.Void SetFailure(System.Enum/System.ParseFailureKind failure, System.String failureParameter)
-    // Offset: 0xDD3C34
+    // Offset: 0xE502E0
     void SetFailure(::System::Enum::ParseFailureKind failure, ::StringW failureParameter);
     // System.Void SetFailure(System.Enum/System.ParseFailureKind failure, System.String failureMessageID, System.Object failureMessageFormatArgument)
-    // Offset: 0xDD3DF0
+    // Offset: 0xE5049C
     void SetFailure(::System::Enum::ParseFailureKind failure, ::StringW failureMessageID, ::Il2CppObject* failureMessageFormatArgument);
     // System.Exception GetEnumParseException()
-    // Offset: 0xDD3C74
+    // Offset: 0xE50320
     ::System::Exception* GetEnumParseException();
   }; // System.Enum/System.EnumResult
   #pragma pack(pop)

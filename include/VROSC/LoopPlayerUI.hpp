@@ -42,6 +42,8 @@ namespace VROSC {
   class LoopStation;
   // Forward declaring type: LoopPlaybackConfig
   class LoopPlaybackConfig;
+  // Forward declaring type: TransformDataController
+  class TransformDataController;
 }
 // Forward declaring namespace: TMPro
 namespace TMPro {
@@ -52,8 +54,6 @@ namespace TMPro {
 namespace UnityEngine {
   // Forward declaring type: GameObject
   class GameObject;
-  // Skipping declaration: Vector3 because it is already included!
-  // Skipping declaration: Quaternion because it is already included!
 }
 // Forward declaring namespace: System
 namespace System {
@@ -82,22 +82,14 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::LoopPlayerUI::State
     struct State;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _nameLabel
     // Size: 0x8
     // Offset: 0x18
     ::TMPro::TextMeshPro* nameLabel;
     // Field size check
     static_assert(sizeof(::TMPro::TextMeshPro*) == 0x8);
-    // [HeaderAttribute] Offset: 0x66E64C
+    // [HeaderAttribute] Offset: 0x7846B4
     // private VROSC.LoopPlayerRecordingState _IsRecordingState
     // Size: 0x8
     // Offset: 0x20
@@ -128,7 +120,7 @@ namespace VROSC {
     ::VROSC::LoopPlaybackSettingsUI* settingsMenu;
     // Field size check
     static_assert(sizeof(::VROSC::LoopPlaybackSettingsUI*) == 0x8);
-    // [HeaderAttribute] Offset: 0x66E6D8
+    // [HeaderAttribute] Offset: 0x784740
     // private VROSC.LoopPlayButton _playButton
     // Size: 0x8
     // Offset: 0x48
@@ -205,103 +197,103 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _nameLabel
-    ::TMPro::TextMeshPro*& dyn__nameLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__nameLabel();
     // Get instance field reference: private VROSC.LoopPlayerRecordingState _IsRecordingState
-    ::VROSC::LoopPlayerRecordingState*& dyn__IsRecordingState();
+    [[deprecated]] ::VROSC::LoopPlayerRecordingState*& dyn__IsRecordingState();
     // Get instance field reference: private UnityEngine.GameObject _HasRecordingState
-    ::UnityEngine::GameObject*& dyn__HasRecordingState();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__HasRecordingState();
     // Get instance field reference: private VROSC.Grabable _hoverCheck
-    ::VROSC::Grabable*& dyn__hoverCheck();
+    [[deprecated]] ::VROSC::Grabable*& dyn__hoverCheck();
     // Get instance field reference: private UnityEngine.GameObject _hoveringState
-    ::UnityEngine::GameObject*& dyn__hoveringState();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__hoveringState();
     // Get instance field reference: private VROSC.LoopPlaybackSettingsUI _settingsMenu
-    ::VROSC::LoopPlaybackSettingsUI*& dyn__settingsMenu();
+    [[deprecated]] ::VROSC::LoopPlaybackSettingsUI*& dyn__settingsMenu();
     // Get instance field reference: private VROSC.LoopPlayButton _playButton
-    ::VROSC::LoopPlayButton*& dyn__playButton();
+    [[deprecated]] ::VROSC::LoopPlayButton*& dyn__playButton();
     // Get instance field reference: private VROSC.UIHoldButton _deleteButton
-    ::VROSC::UIHoldButton*& dyn__deleteButton();
+    [[deprecated]] ::VROSC::UIHoldButton*& dyn__deleteButton();
     // Get instance field reference: private VROSC.LoopPlayerColorizer _playerColorizer
-    ::VROSC::LoopPlayerColorizer*& dyn__playerColorizer();
+    [[deprecated]] ::VROSC::LoopPlayerColorizer*& dyn__playerColorizer();
     // Get instance field reference: private VROSC.LoopVolumeController _volumeController
-    ::VROSC::LoopVolumeController*& dyn__volumeController();
+    [[deprecated]] ::VROSC::LoopVolumeController*& dyn__volumeController();
     // Get instance field reference: private VROSC.UIButton _renameButton
-    ::VROSC::UIButton*& dyn__renameButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__renameButton();
     // Get instance field reference: private VROSC.LoopStationLaunchpadHandler _launchpadHandler
-    ::VROSC::LoopStationLaunchpadHandler*& dyn__launchpadHandler();
+    [[deprecated]] ::VROSC::LoopStationLaunchpadHandler*& dyn__launchpadHandler();
     // Get instance field reference: private System.String <DisplayName>k__BackingField
-    ::StringW& dyn_$DisplayName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$DisplayName$k__BackingField();
     // Get instance field reference: public System.Action OnDeletePressed
-    ::System::Action*& dyn_OnDeletePressed();
+    [[deprecated]] ::System::Action*& dyn_OnDeletePressed();
     // Get instance field reference: public System.Action`1<System.String> OnRename
-    ::System::Action_1<::StringW>*& dyn_OnRename();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_OnRename();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnRecolor
-    ::System::Action_1<::UnityEngine::Color>*& dyn_OnRecolor();
+    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnRecolor();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // public UnityEngine.Color get_MainColor()
-    // Offset: 0x908AA0
+    // Offset: 0x19BEA28
     ::UnityEngine::Color get_MainColor();
     // public System.String get_DisplayName()
-    // Offset: 0x908AC8
+    // Offset: 0x19BEA50
     ::StringW get_DisplayName();
     // private System.Void set_DisplayName(System.String value)
-    // Offset: 0x908AC0
+    // Offset: 0x19BEA48
     void set_DisplayName(::StringW value);
     // public VROSC.LoopVolumeController get_VolumeController()
-    // Offset: 0x908AD0
+    // Offset: 0x19BEA58
     ::VROSC::LoopVolumeController* get_VolumeController();
     // public VROSC.LoopPlayButton get_PlayButton()
-    // Offset: 0x908AD8
+    // Offset: 0x19BEA60
     ::VROSC::LoopPlayButton* get_PlayButton();
     // private System.Void Awake()
-    // Offset: 0x908AE0
+    // Offset: 0x19BEA68
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x908EE8
+    // Offset: 0x19BEE70
     void OnDestroy();
     // private System.Void UpdateHovering(System.Boolean hovering)
-    // Offset: 0x908E54
+    // Offset: 0x19BEDDC
     void UpdateHovering(bool hovering);
     // private System.Void SetState(VROSC.LoopPlayerUI/VROSC.State state)
-    // Offset: 0x909268
+    // Offset: 0x19BF1F0
     void SetState(::VROSC::LoopPlayerUI::State state);
     // public System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopPlayer loopPlayer, System.Boolean createdByRecorder, System.String displayName, VROSC.LoopPlaybackConfig config)
-    // Offset: 0x9033A8
+    // Offset: 0x19B9E58
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopPlayer* loopPlayer, bool createdByRecorder, ::StringW displayName, ::VROSC::LoopPlaybackConfig* config);
     // public System.Void SetRecordingComplete(System.Boolean colorize)
-    // Offset: 0x90385C
+    // Offset: 0x19BA294
     void SetRecordingComplete(bool colorize);
     // public System.Void SetRecordingText(System.String recordingtext)
-    // Offset: 0x903A50
+    // Offset: 0x19BA488
     void SetRecordingText(::StringW recordingtext);
     // private System.Void DeleteFromButton()
-    // Offset: 0x9092D0
+    // Offset: 0x19BF23C
     void DeleteFromButton();
     // public System.Void ShowAsMuted(System.Boolean showAsMuted)
-    // Offset: 0x9064D8
+    // Offset: 0x19BC65C
     void ShowAsMuted(bool showAsMuted);
     // private System.Void RenameButtonPressed()
-    // Offset: 0x9092E4
+    // Offset: 0x19BF250
     void RenameButtonPressed();
     // private System.Void RanameComplete(System.String displayName)
-    // Offset: 0x9094B8
+    // Offset: 0x19BF424
     void RanameComplete(::StringW displayName);
     // public System.Void SetDisplayName(System.String displayName)
-    // Offset: 0x90433C
+    // Offset: 0x19BAC5C
     void SetDisplayName(::StringW displayName);
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x909550
+    // Offset: 0x19BF4A0
     void SetColor(::UnityEngine::Color color);
     // private System.Void KeyboardClosed()
-    // Offset: 0x9096C4
+    // Offset: 0x19BF560
     void KeyboardClosed();
-    // System.Void LoadLaunchPad(System.String padID, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 localScale)
-    // Offset: 0x909844
-    void LoadLaunchPad(::StringW padID, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 localScale);
+    // System.Void LoadLaunchPad(System.String padID, VROSC.TransformDataController transformData)
+    // Offset: 0x19BF6E0
+    void LoadLaunchPad(::StringW padID, ::VROSC::TransformDataController* transformData);
     // public System.Void .ctor()
-    // Offset: 0x90998C
+    // Offset: 0x19BF6FC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -488,13 +480,11 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 // Writing MetadataGetter for method: VROSC::LoopPlayerUI::LoadLaunchPad
 // Il2CppName: LoadLaunchPad
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopPlayerUI::*)(::StringW, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Vector3)>(&VROSC::LoopPlayerUI::LoadLaunchPad)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopPlayerUI::*)(::StringW, ::VROSC::TransformDataController*)>(&VROSC::LoopPlayerUI::LoadLaunchPad)> {
   static const MethodInfo* get() {
     static auto* padID = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    static auto* position = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    static auto* rotation = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
-    static auto* localScale = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerUI*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, position, rotation, localScale});
+    static auto* transformData = &::il2cpp_utils::GetClassFromName("VROSC", "TransformDataController")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerUI*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, transformData});
   }
 };
 // Writing MetadataGetter for method: VROSC::LoopPlayerUI::New_ctor

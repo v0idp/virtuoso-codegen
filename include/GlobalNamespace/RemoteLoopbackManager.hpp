@@ -46,15 +46,7 @@ namespace GlobalNamespace {
     class PacketLatencyPair;
     // Nested type: ::GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings
     class SimulatedLatencySettings;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OvrAvatar LocalAvatar
     // Size: 0x8
     // Offset: 0x18
@@ -91,32 +83,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OvrAvatar LocalAvatar
-    ::GlobalNamespace::OvrAvatar*& dyn_LocalAvatar();
+    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_LocalAvatar();
     // Get instance field reference: public OvrAvatar LoopbackAvatar
-    ::GlobalNamespace::OvrAvatar*& dyn_LoopbackAvatar();
+    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_LoopbackAvatar();
     // Get instance field reference: public RemoteLoopbackManager/SimulatedLatencySettings LatencySettings
-    ::GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings*& dyn_LatencySettings();
+    [[deprecated]] ::GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings*& dyn_LatencySettings();
     // Get instance field reference: private System.Int32 PacketSequence
-    int& dyn_PacketSequence();
+    [[deprecated]] int& dyn_PacketSequence();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<RemoteLoopbackManager/PacketLatencyPair> packetQueue
-    ::System::Collections::Generic::LinkedList_1<::GlobalNamespace::RemoteLoopbackManager::PacketLatencyPair*>*& dyn_packetQueue();
+    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::GlobalNamespace::RemoteLoopbackManager::PacketLatencyPair*>*& dyn_packetQueue();
     // private System.Void Start()
-    // Offset: 0x998BBC
+    // Offset: 0xB31660
     void Start();
     // private System.Void OnLocalAvatarPacketRecorded(System.Object sender, OvrAvatar/PacketEventArgs args)
-    // Offset: 0x998D00
+    // Offset: 0xB317A4
     void OnLocalAvatarPacketRecorded(::Il2CppObject* sender, ::GlobalNamespace::OvrAvatar::PacketEventArgs* args);
     // private System.Void Update()
-    // Offset: 0x9990D8
+    // Offset: 0xB31B7C
     void Update();
     // private System.Void SendPacketData(System.Byte[] data)
-    // Offset: 0x999030
+    // Offset: 0xB31AD4
     void SendPacketData(::ArrayW<uint8_t> data);
     // private System.Void ReceivePacketData(System.Byte[] data)
-    // Offset: 0x999408
+    // Offset: 0xB31EAC
     void ReceivePacketData(::ArrayW<uint8_t> data);
     // public System.Void .ctor()
-    // Offset: 0x9996F0
+    // Offset: 0xB32194
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

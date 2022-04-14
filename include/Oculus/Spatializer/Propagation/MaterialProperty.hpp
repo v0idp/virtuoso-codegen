@@ -60,7 +60,7 @@ namespace Oculus::Spatializer::Propagation {
     // Set static field: static public Oculus.Spatializer.Propagation.MaterialProperty SCATTERING
     static void _set_SCATTERING(::Oculus::Spatializer::Propagation::MaterialProperty value);
     // Get instance field reference: public System.UInt32 value__
-    uint& dyn_value__();
+    [[deprecated]] uint& dyn_value__();
   }; // Oculus.Spatializer.Propagation.MaterialProperty
   #pragma pack(pop)
   static check_size<sizeof(MaterialProperty), 0 + sizeof(uint)> __Oculus_Spatializer_Propagation_MaterialPropertySizeCheck;

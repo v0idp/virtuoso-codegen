@@ -36,15 +36,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class CookieParser : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.CookieTokenizer m_tokenizer
     // Size: 0x8
     // Offset: 0x10
@@ -57,19 +49,19 @@ namespace System::Net {
       return m_tokenizer;
     }
     // Get instance field reference: private System.Net.CookieTokenizer m_tokenizer
-    ::System::Net::CookieTokenizer*& dyn_m_tokenizer();
+    [[deprecated]] ::System::Net::CookieTokenizer*& dyn_m_tokenizer();
     // System.Void .ctor(System.String cookieString)
-    // Offset: 0xE7651C
+    // Offset: 0x10E8F50
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CookieParser* New_ctor(::StringW cookieString) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::CookieParser::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CookieParser*, creationType>(cookieString)));
     }
     // System.Net.Cookie Get()
-    // Offset: 0xE76590
+    // Offset: 0x10E8FC4
     ::System::Net::Cookie* Get();
     // static System.String CheckQuoted(System.String value)
-    // Offset: 0xE71D90
+    // Offset: 0x10E47C4
     static ::StringW CheckQuoted(::StringW value);
   }; // System.Net.CookieParser
   #pragma pack(pop)

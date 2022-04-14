@@ -24,12 +24,6 @@ namespace VROSC {
   // Forward declaring type: HandType
   struct HandType;
 }
-// Forward declaring namespace: System::Collections::Generic
-namespace System::Collections::Generic {
-  // Forward declaring type: List`1<T>
-  template<typename T>
-  class List_1;
-}
 // Completed forward declares
 // Type namespace: VROSC
 namespace VROSC {
@@ -47,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class HighlightControllerComponentsManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.HighlightControllerComponents _left
     // Size: 0x8
     // Offset: 0x18
@@ -72,29 +58,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.HighlightControllerComponents _left
-    ::VROSC::HighlightControllerComponents*& dyn__left();
+    [[deprecated]] ::VROSC::HighlightControllerComponents*& dyn__left();
     // Get instance field reference: private VROSC.HighlightControllerComponents _right
-    ::VROSC::HighlightControllerComponents*& dyn__right();
+    [[deprecated]] ::VROSC::HighlightControllerComponents*& dyn__right();
     // public System.Void Setup(VROSC.InputDevice left, VROSC.InputDevice right)
-    // Offset: 0x89F050
+    // Offset: 0x194180C
     void Setup(::VROSC::InputDevice* left, ::VROSC::InputDevice* right);
     // public System.Void SetActive(VROSC.TooltipData tooltip, VROSC.HandType hand, System.Boolean active, System.Object requester)
-    // Offset: 0x89F07C
+    // Offset: 0x1941838
     void SetActive(::VROSC::TooltipData* tooltip, ::VROSC::HandType hand, bool active, ::Il2CppObject* requester);
-    // public System.Void SetActive(System.Collections.Generic.List`1<VROSC.TooltipData> tooltips, VROSC.HandType hand, System.Object requester)
-    // Offset: 0x89F23C
-    void SetActive(::System::Collections::Generic::List_1<::VROSC::TooltipData*>* tooltips, ::VROSC::HandType hand, ::Il2CppObject* requester);
-    // public System.Void DeactivateAll(VROSC.HandType hand)
-    // Offset: 0x89F4E4
-    void DeactivateAll(::VROSC::HandType hand);
     // private System.Boolean IsLeftValid(VROSC.HandType hand)
-    // Offset: 0x89F118
+    // Offset: 0x19418D4
     bool IsLeftValid(::VROSC::HandType hand);
     // private System.Boolean IsRightValid(VROSC.HandType hand)
-    // Offset: 0x89F1A8
+    // Offset: 0x1941964
     bool IsRightValid(::VROSC::HandType hand);
     // public System.Void .ctor()
-    // Offset: 0x89F540
+    // Offset: 0x19419F8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -132,26 +112,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     static auto* active = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     static auto* requester = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::HighlightControllerComponentsManager*), "SetActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{tooltip, hand, active, requester});
-  }
-};
-// Writing MetadataGetter for method: VROSC::HighlightControllerComponentsManager::SetActive
-// Il2CppName: SetActive
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::HighlightControllerComponentsManager::*)(::System::Collections::Generic::List_1<::VROSC::TooltipData*>*, ::VROSC::HandType, ::Il2CppObject*)>(&VROSC::HighlightControllerComponentsManager::SetActive)> {
-  static const MethodInfo* get() {
-    static auto* tooltips = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System.Collections.Generic", "List`1"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("VROSC", "TooltipData")})->byval_arg;
-    static auto* hand = &::il2cpp_utils::GetClassFromName("VROSC", "HandType")->byval_arg;
-    static auto* requester = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::HighlightControllerComponentsManager*), "SetActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{tooltips, hand, requester});
-  }
-};
-// Writing MetadataGetter for method: VROSC::HighlightControllerComponentsManager::DeactivateAll
-// Il2CppName: DeactivateAll
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::HighlightControllerComponentsManager::*)(::VROSC::HandType)>(&VROSC::HighlightControllerComponentsManager::DeactivateAll)> {
-  static const MethodInfo* get() {
-    static auto* hand = &::il2cpp_utils::GetClassFromName("VROSC", "HandType")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::HighlightControllerComponentsManager*), "DeactivateAll", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hand});
   }
 };
 // Writing MetadataGetter for method: VROSC::HighlightControllerComponentsManager::IsLeftValid

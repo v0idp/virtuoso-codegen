@@ -40,15 +40,7 @@ namespace System::Runtime::Serialization {
   // [TokenAttribute] Offset: FFFFFFFF
   class SerializationObjectManager : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Hashtable m_objectSeenTable
     // Size: 0x8
     // Offset: 0x10
@@ -69,26 +61,26 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
     public:
     // Get instance field reference: private System.Collections.Hashtable m_objectSeenTable
-    ::System::Collections::Hashtable*& dyn_m_objectSeenTable();
+    [[deprecated]] ::System::Collections::Hashtable*& dyn_m_objectSeenTable();
     // Get instance field reference: private System.Runtime.Serialization.SerializationEventHandler m_onSerializedHandler
-    ::System::Runtime::Serialization::SerializationEventHandler*& dyn_m_onSerializedHandler();
+    [[deprecated]] ::System::Runtime::Serialization::SerializationEventHandler*& dyn_m_onSerializedHandler();
     // Get instance field reference: private System.Runtime.Serialization.StreamingContext m_context
-    ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
+    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
     // public System.Void .ctor(System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0xF4FA64
+    // Offset: 0x117B9E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SerializationObjectManager* New_ctor(::System::Runtime::Serialization::StreamingContext context) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::SerializationObjectManager::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SerializationObjectManager*, creationType>(context)));
     }
     // public System.Void RegisterObject(System.Object obj)
-    // Offset: 0xF4FB00
+    // Offset: 0x117BA7C
     void RegisterObject(::Il2CppObject* obj);
     // public System.Void RaiseOnSerializedEvent()
-    // Offset: 0xF4FCD4
+    // Offset: 0x117BC50
     void RaiseOnSerializedEvent();
     // private System.Void AddOnSerialized(System.Object obj)
-    // Offset: 0xF4FC34
+    // Offset: 0x117BBB0
     void AddOnSerialized(::Il2CppObject* obj);
   }; // System.Runtime.Serialization.SerializationObjectManager
   #pragma pack(pop)

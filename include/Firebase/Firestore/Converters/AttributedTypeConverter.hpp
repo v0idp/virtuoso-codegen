@@ -82,15 +82,7 @@ namespace Firebase::Firestore::Converters {
     class $CreateObjectCreator$c__AnonStorey1;
     // Nested type: ::Firebase::Firestore::Converters::AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2
     class $CreateObjectCreator$c__AnonStorey2;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Collections.Generic.Dictionary`2<System.String,Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.AttributedProperty> _writableProperties
     // Size: 0x8
     // Offset: 0x18
@@ -123,36 +115,36 @@ namespace Firebase::Firestore::Converters {
     // Set static field: static private System.Func`2<System.Reflection.ConstructorInfo,System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::System::Reflection::ConstructorInfo*, bool>* value);
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.String,Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.AttributedProperty> _writableProperties
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty*>*& dyn__writableProperties();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty*>*& dyn__writableProperties();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.AttributedProperty> _readableProperties
-    ::System::Collections::Generic::List_1<::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty*>*& dyn__readableProperties();
+    [[deprecated]] ::System::Collections::Generic::List_1<::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty*>*& dyn__readableProperties();
     // Get instance field reference: private readonly System.Func`1<System.Object> _createInstance
-    ::System::Func_1<::Il2CppObject*>*& dyn__createInstance();
+    [[deprecated]] ::System::Func_1<::Il2CppObject*>*& dyn__createInstance();
     // Get instance field reference: private readonly Firebase.Firestore.FirestoreDataAttribute _attribute
-    ::Firebase::Firestore::FirestoreDataAttribute*& dyn__attribute();
+    [[deprecated]] ::Firebase::Firestore::FirestoreDataAttribute*& dyn__attribute();
     // private System.Void .ctor(System.Type targetType, Firebase.Firestore.FirestoreDataAttribute attribute)
-    // Offset: 0xC26C10
+    // Offset: 0xD4896C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AttributedTypeConverter* New_ctor(::System::Type* targetType, ::Firebase::Firestore::FirestoreDataAttribute* attribute) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Converters::AttributedTypeConverter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AttributedTypeConverter*, creationType>(targetType, attribute)));
     }
     // static private System.Func`1<System.Object> CreateObjectCreator(System.Type type)
-    // Offset: 0xC27218
+    // Offset: 0xD48F74
     static ::System::Func_1<::Il2CppObject*>* CreateObjectCreator(::System::Type* type);
     // static Firebase.Firestore.Converters.IFirestoreInternalConverter ForType(System.Type targetType)
-    // Offset: 0xC278DC
+    // Offset: 0xD4963C
     static ::Firebase::Firestore::Converters::IFirestoreInternalConverter* ForType(::System::Type* targetType);
     // static private System.Boolean <CreateObjectCreator>m__0(System.Reflection.ConstructorInfo c)
-    // Offset: 0xC28A70
+    // Offset: 0xD4A7A0
     static bool $CreateObjectCreator$m__0(::System::Reflection::ConstructorInfo* c);
     // public override System.Object DeserializeMap(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy mapValue)
-    // Offset: 0xC27D94
+    // Offset: 0xD49AF4
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeMap(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy mapValue)
     ::Il2CppObject* DeserializeMap(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::FieldValueProxy* mapValue);
     // public override System.Void SerializeMap(Firebase.Firestore.SerializationContext context, System.Object value, System.Collections.Generic.IDictionary`2<System.String,Firebase.Firestore.FieldValueProxy> map)
-    // Offset: 0xC2875C
+    // Offset: 0xD4A48C
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Void ConverterBase::SerializeMap(Firebase.Firestore.SerializationContext context, System.Object value, System.Collections.Generic.IDictionary`2<System.String,Firebase.Firestore.FieldValueProxy> map)
     void SerializeMap(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value, ::System::Collections::Generic::IDictionary_2<::StringW, ::Firebase::Firestore::FieldValueProxy*>* map);

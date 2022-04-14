@@ -41,21 +41,21 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A461C
+    // [DescriptionAttribute] Offset: 0x6B87D0
     // static field const value: static public Oculus.Platform.SdkAccountType Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.SdkAccountType Unknown
     static ::Oculus::Platform::SdkAccountType _get_Unknown();
     // Set static field: static public Oculus.Platform.SdkAccountType Unknown
     static void _set_Unknown(::Oculus::Platform::SdkAccountType value);
-    // [DescriptionAttribute] Offset: 0x5A4654
+    // [DescriptionAttribute] Offset: 0x6B8808
     // static field const value: static public Oculus.Platform.SdkAccountType Oculus
     static constexpr const int Oculus = 1;
     // Get static field: static public Oculus.Platform.SdkAccountType Oculus
     static ::Oculus::Platform::SdkAccountType _get_Oculus();
     // Set static field: static public Oculus.Platform.SdkAccountType Oculus
     static void _set_Oculus(::Oculus::Platform::SdkAccountType value);
-    // [DescriptionAttribute] Offset: 0x5A468C
+    // [DescriptionAttribute] Offset: 0x6B8840
     // static field const value: static public Oculus.Platform.SdkAccountType FacebookGameroom
     static constexpr const int FacebookGameroom = 2;
     // Get static field: static public Oculus.Platform.SdkAccountType FacebookGameroom
@@ -63,7 +63,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.SdkAccountType FacebookGameroom
     static void _set_FacebookGameroom(::Oculus::Platform::SdkAccountType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.SdkAccountType
   #pragma pack(pop)
   static check_size<sizeof(SdkAccountType), 0 + sizeof(int)> __Oculus_Platform_SdkAccountTypeSizeCheck;

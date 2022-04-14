@@ -34,15 +34,7 @@ namespace System::Runtime::Serialization {
   // [TokenAttribute] Offset: FFFFFFFF
   class ValueTypeFixupInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int64 m_containerID
     // Size: 0x8
     // Offset: 0x10
@@ -63,22 +55,22 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::ArrayW<int>) == 0x8);
     public:
     // Get instance field reference: private System.Int64 m_containerID
-    int64_t& dyn_m_containerID();
+    [[deprecated]] int64_t& dyn_m_containerID();
     // Get instance field reference: private System.Reflection.FieldInfo m_parentField
-    ::System::Reflection::FieldInfo*& dyn_m_parentField();
+    [[deprecated]] ::System::Reflection::FieldInfo*& dyn_m_parentField();
     // Get instance field reference: private System.Int32[] m_parentIndex
-    ::ArrayW<int>& dyn_m_parentIndex();
+    [[deprecated]] ::ArrayW<int>& dyn_m_parentIndex();
     // public System.Int64 get_ContainerID()
-    // Offset: 0xCEF7BC
+    // Offset: 0x120DB58
     int64_t get_ContainerID();
     // public System.Reflection.FieldInfo get_ParentField()
-    // Offset: 0xCEF7C4
+    // Offset: 0x120DB60
     ::System::Reflection::FieldInfo* get_ParentField();
     // public System.Int32[] get_ParentIndex()
-    // Offset: 0xCEF7CC
+    // Offset: 0x120DB68
     ::ArrayW<int> get_ParentIndex();
     // public System.Void .ctor(System.Int64 containerID, System.Reflection.FieldInfo member, System.Int32[] parentIndex)
-    // Offset: 0xCEF694
+    // Offset: 0x120DA30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ValueTypeFixupInfo* New_ctor(int64_t containerID, ::System::Reflection::FieldInfo* member, ::ArrayW<int> parentIndex) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::ValueTypeFixupInfo::.ctor");

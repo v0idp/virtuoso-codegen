@@ -76,19 +76,19 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 meshInstanceID
-    int& dyn_meshInstanceID();
+    [[deprecated]] int& dyn_meshInstanceID();
     // Get instance field reference: public System.Int32 rendererInstanceID
-    int& dyn_rendererInstanceID();
+    [[deprecated]] int& dyn_rendererInstanceID();
     // Get instance field reference: public System.Int32 additionalVertexStreamsMeshInstanceID
-    int& dyn_additionalVertexStreamsMeshInstanceID();
+    [[deprecated]] int& dyn_additionalVertexStreamsMeshInstanceID();
     // Get instance field reference: public System.Int32 enlightenVertexStreamMeshInstanceID
-    int& dyn_enlightenVertexStreamMeshInstanceID();
+    [[deprecated]] int& dyn_enlightenVertexStreamMeshInstanceID();
     // Get instance field reference: public UnityEngine.Matrix4x4 transform
-    ::UnityEngine::Matrix4x4& dyn_transform();
+    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_transform();
     // Get instance field reference: public UnityEngine.Vector4 lightmapScaleOffset
-    ::UnityEngine::Vector4& dyn_lightmapScaleOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_lightmapScaleOffset();
     // Get instance field reference: public UnityEngine.Vector4 realtimeLightmapScaleOffset
-    ::UnityEngine::Vector4& dyn_realtimeLightmapScaleOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_realtimeLightmapScaleOffset();
   }; // UnityEngine.MeshSubsetCombineUtility/UnityEngine.MeshInstance
   #pragma pack(pop)
   static check_size<sizeof(MeshSubsetCombineUtility::MeshInstance), 96 + sizeof(::UnityEngine::Vector4)> __UnityEngine_MeshSubsetCombineUtility_MeshInstanceSizeCheck;

@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ParameterLink : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.SynthParameterController/VROSC.TargetParameter TargetParameter
     // Size: 0x4
     // Offset: 0x10
@@ -102,23 +94,23 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public VROSC.SynthParameterController/VROSC.TargetParameter TargetParameter
-    ::VROSC::SynthParameterController::TargetParameter& dyn_TargetParameter();
+    [[deprecated]] ::VROSC::SynthParameterController::TargetParameter& dyn_TargetParameter();
     // Get instance field reference: public VROSC.MidiCC MidiCC
-    ::VROSC::MidiCC& dyn_MidiCC();
+    [[deprecated]] ::VROSC::MidiCC& dyn_MidiCC();
     // Get instance field reference: public VROSC.ValueSourceSelector/VROSC.ValueSource ValueSource
-    ::VROSC::ValueSourceSelector::ValueSource& dyn_ValueSource();
+    [[deprecated]] ::VROSC::ValueSourceSelector::ValueSource& dyn_ValueSource();
     // Get instance field reference: public VROSC.HandType HandType
-    ::VROSC::HandType& dyn_HandType();
+    [[deprecated]] ::VROSC::HandType& dyn_HandType();
     // Get instance field reference: public System.Boolean LinkHands
-    bool& dyn_LinkHands();
+    [[deprecated]] bool& dyn_LinkHands();
     // Get instance field reference: public UnityEngine.AnimationCurve TransformationCurve
-    ::UnityEngine::AnimationCurve*& dyn_TransformationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_TransformationCurve();
     // Get instance field reference: public System.Single Factor
-    float& dyn_Factor();
+    [[deprecated]] float& dyn_Factor();
     // Get instance field reference: public System.Boolean CenterOnHalf
-    bool& dyn_CenterOnHalf();
+    [[deprecated]] bool& dyn_CenterOnHalf();
     // public System.Void .ctor()
-    // Offset: 0x8F8438
+    // Offset: 0xADCBD0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

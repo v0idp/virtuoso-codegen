@@ -69,13 +69,13 @@ namespace Firebase::Firestore::Converters {
     // Set static field: static private System.Func`2<System.Type,System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::System::Type*, bool>* value);
     // static private System.Void .cctor()
-    // Offset: 0xC2D2D8
+    // Offset: 0xD4F0E8
     static void _cctor();
     // static Firebase.Firestore.Converters.IFirestoreInternalConverter GetConverter(System.Type targetType)
-    // Offset: 0xC2C424
+    // Offset: 0xD4E22C
     static ::Firebase::Firestore::Converters::IFirestoreInternalConverter* GetConverter(::System::Type* targetType);
     // static System.Void InitializeConverterCache()
-    // Offset: 0xC2CAF0
+    // Offset: 0xD4E900
     static void InitializeConverterCache();
     // static private Firebase.Firestore.Converters.IFirestoreInternalConverter CreateDictionaryConverter(System.Type targetType)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -87,16 +87,16 @@ namespace Firebase::Firestore::Converters {
       return ::il2cpp_utils::RunMethodRethrow<::Firebase::Firestore::Converters::IFirestoreInternalConverter*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, targetType);
     }
     // static private Firebase.Firestore.Converters.IFirestoreInternalConverter CreateConverter(System.Type targetType)
-    // Offset: 0xC2C5B4
+    // Offset: 0xD4E3BC
     static ::Firebase::Firestore::Converters::IFirestoreInternalConverter* CreateConverter(::System::Type* targetType);
     // static System.Boolean TryGetStringDictionaryValueType(System.Type type, out System.Type elementType)
-    // Offset: 0xC2CC44
+    // Offset: 0xD4EA54
     static bool TryGetStringDictionaryValueType(::System::Type* type, ByRef<::System::Type*> elementType);
     // static private System.Type MapInterfaceToDictionaryValueTypeArgument(System.Type iface)
-    // Offset: 0xC2D15C
+    // Offset: 0xD4EF6C
     static ::System::Type* MapInterfaceToDictionaryValueTypeArgument(::System::Type* iface);
     // static private System.Boolean <TryGetStringDictionaryValueType>m__0(System.Type t)
-    // Offset: 0xC2F178
+    // Offset: 0xD50F88
     static bool $TryGetStringDictionaryValueType$m__0(::System::Type* t);
   }; // Firebase.Firestore.Converters.ConverterCache
   #pragma pack(pop)

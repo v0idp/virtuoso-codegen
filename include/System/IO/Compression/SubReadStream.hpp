@@ -36,15 +36,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class SubReadStream : public ::System::IO::Stream {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Int64 _startInSuperStream
     // Size: 0x8
     // Offset: 0x28
@@ -83,87 +75,87 @@ namespace System::IO::Compression {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Int64 _startInSuperStream
-    int64_t& dyn__startInSuperStream();
+    [[deprecated]] int64_t& dyn__startInSuperStream();
     // Get instance field reference: private System.Int64 _positionInSuperStream
-    int64_t& dyn__positionInSuperStream();
+    [[deprecated]] int64_t& dyn__positionInSuperStream();
     // Get instance field reference: private readonly System.Int64 _endInSuperStream
-    int64_t& dyn__endInSuperStream();
+    [[deprecated]] int64_t& dyn__endInSuperStream();
     // Get instance field reference: private readonly System.IO.Stream _superStream
-    ::System::IO::Stream*& dyn__superStream();
+    [[deprecated]] ::System::IO::Stream*& dyn__superStream();
     // Get instance field reference: private System.Boolean _canRead
-    bool& dyn__canRead();
+    [[deprecated]] bool& dyn__canRead();
     // Get instance field reference: private System.Boolean _isDisposed
-    bool& dyn__isDisposed();
+    [[deprecated]] bool& dyn__isDisposed();
     // public System.Void .ctor(System.IO.Stream superStream, System.Int64 startPosition, System.Int64 maxLength)
-    // Offset: 0x1121628
+    // Offset: 0x1698E94
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SubReadStream* New_ctor(::System::IO::Stream* superStream, int64_t startPosition, int64_t maxLength) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::SubReadStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SubReadStream*, creationType>(superStream, startPosition, maxLength)));
     }
     // private System.Void ThrowIfDisposed()
-    // Offset: 0x11216EC
+    // Offset: 0x1698F58
     void ThrowIfDisposed();
     // private System.Void ThrowIfCantRead()
-    // Offset: 0x1121850
+    // Offset: 0x16990BC
     void ThrowIfCantRead();
     // public override System.Int64 get_Length()
-    // Offset: 0x11216C0
+    // Offset: 0x1698F2C
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Length()
     int64_t get_Length();
     // public override System.Int64 get_Position()
-    // Offset: 0x1121774
+    // Offset: 0x1698FE0
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Position()
     int64_t get_Position();
     // public override System.Void set_Position(System.Int64 value)
-    // Offset: 0x112179C
+    // Offset: 0x1699008
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::set_Position(System.Int64 value)
     void set_Position(int64_t value);
     // public override System.Boolean get_CanRead()
-    // Offset: 0x11217F4
+    // Offset: 0x1699060
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanRead()
     bool get_CanRead();
     // public override System.Boolean get_CanSeek()
-    // Offset: 0x1121840
+    // Offset: 0x16990AC
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanSeek()
     bool get_CanSeek();
     // public override System.Boolean get_CanWrite()
-    // Offset: 0x1121848
+    // Offset: 0x16990B4
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanWrite()
     bool get_CanWrite();
     // public override System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
-    // Offset: 0x11218C0
+    // Offset: 0x169912C
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
     int Read(::ArrayW<uint8_t> buffer, int offset, int count);
     // public override System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
-    // Offset: 0x1121984
+    // Offset: 0x16991F0
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::Seek(System.Int64 offset, System.IO.SeekOrigin origin)
     int64_t Seek(int64_t offset, ::System::IO::SeekOrigin origin);
     // public override System.Void SetLength(System.Int64 value)
-    // Offset: 0x11219DC
+    // Offset: 0x1699248
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::SetLength(System.Int64 value)
     void SetLength(int64_t value);
     // public override System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
-    // Offset: 0x1121A34
+    // Offset: 0x16992A0
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
     void Write(::ArrayW<uint8_t> buffer, int offset, int count);
     // public override System.Void Flush()
-    // Offset: 0x1121A8C
+    // Offset: 0x16992F8
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Flush()
     void Flush();
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x1121AE4
+    // Offset: 0x1699350
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);

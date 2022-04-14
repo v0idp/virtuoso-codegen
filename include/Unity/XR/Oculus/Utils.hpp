@@ -35,19 +35,19 @@ namespace Unity::XR::Oculus {
   class Utils : public ::Il2CppObject {
     public:
     // static public System.Void SetColorScaleAndOffset(UnityEngine.Vector4 colorScale, UnityEngine.Vector4 colorOffset)
-    // Offset: 0x12DBEF0
+    // Offset: 0x18DE164
     static void SetColorScaleAndOffset(::UnityEngine::Vector4 colorScale, ::UnityEngine::Vector4 colorOffset);
     // static public Unity.XR.Oculus.SystemHeadset GetSystemHeadsetType()
-    // Offset: 0x12DBF34
+    // Offset: 0x18DE1A8
     static ::Unity::XR::Oculus::SystemHeadset GetSystemHeadsetType();
     // static public System.Void SetFoveationLevel(System.Int32 level)
-    // Offset: 0x12DBF38
+    // Offset: 0x18DE1AC
     static void SetFoveationLevel(int level);
     // static public System.Boolean EnableDynamicFFR(System.Boolean enable)
-    // Offset: 0x12DBFEC
+    // Offset: 0x18DE260
     static bool EnableDynamicFFR(bool enable);
     // static public System.Int32 GetFoveationLevel()
-    // Offset: 0x12DC0A8
+    // Offset: 0x18DE31C
     static int GetFoveationLevel();
   }; // Unity.XR.Oculus.Utils
   #pragma pack(pop)

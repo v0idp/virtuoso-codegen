@@ -68,15 +68,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::UISpinner::$GrabSpinnerRemotely$d__33
     class $GrabSpinnerRemotely$d__33;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <IsGrabbingRemotely>k__BackingField
     // Size: 0x1
     // Offset: 0x88
@@ -159,105 +151,105 @@ namespace VROSC {
     // Set static field: static public System.Boolean InverseSpinners
     static void _set_InverseSpinners(bool value);
     // Get instance field reference: private System.Boolean <IsGrabbingRemotely>k__BackingField
-    bool& dyn_$IsGrabbingRemotely$k__BackingField();
+    [[deprecated]] bool& dyn_$IsGrabbingRemotely$k__BackingField();
     // Get instance field reference: private System.Int32 <Selection>k__BackingField
-    int& dyn_$Selection$k__BackingField();
+    [[deprecated]] int& dyn_$Selection$k__BackingField();
     // Get instance field reference: private System.Single <Value>k__BackingField
-    float& dyn_$Value$k__BackingField();
+    [[deprecated]] float& dyn_$Value$k__BackingField();
     // Get instance field reference: protected VROSC.UIButton _nextButton
-    ::VROSC::UIButton*& dyn__nextButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__nextButton();
     // Get instance field reference: protected VROSC.UIButton _previousButton
-    ::VROSC::UIButton*& dyn__previousButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__previousButton();
     // Get instance field reference: public System.Action`1<System.Int32> OnSelectionChanged
-    ::System::Action_1<int>*& dyn_OnSelectionChanged();
+    [[deprecated]] ::System::Action_1<int>*& dyn_OnSelectionChanged();
     // Get instance field reference: private TMPro.TextMeshPro _valueDisplay
-    ::TMPro::TextMeshPro*& dyn__valueDisplay();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__valueDisplay();
     // Get instance field reference: private VROSC.UISpinnerData _data
-    ::VROSC::UISpinnerData*& dyn__data();
+    [[deprecated]] ::VROSC::UISpinnerData*& dyn__data();
     // Get instance field reference: private UnityEngine.RectTransform _sizeTransform
-    ::UnityEngine::RectTransform*& dyn__sizeTransform();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__sizeTransform();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private VROSC.MinMaxInt _remapValue
-    ::VROSC::MinMaxInt*& dyn__remapValue();
+    [[deprecated]] ::VROSC::MinMaxInt*& dyn__remapValue();
     // Get instance field reference: private VROSC.TriggerButton _grabbingButton
-    ::VROSC::TriggerButton& dyn__grabbingButton();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__grabbingButton();
     // public System.Boolean get_IsGrabbingRemotely()
-    // Offset: 0x13A3F00
+    // Offset: 0x1917E30
     bool get_IsGrabbingRemotely();
     // private System.Void set_IsGrabbingRemotely(System.Boolean value)
-    // Offset: 0x13A3EF4
+    // Offset: 0x1917E24
     void set_IsGrabbingRemotely(bool value);
     // public System.Int32 get_Selection()
-    // Offset: 0x13A3F10
+    // Offset: 0x1917E40
     int get_Selection();
     // private System.Void set_Selection(System.Int32 value)
-    // Offset: 0x13A3F08
+    // Offset: 0x1917E38
     void set_Selection(int value);
     // public System.Single get_Value()
-    // Offset: 0x13A3F20
+    // Offset: 0x1917E50
     float get_Value();
     // private System.Void set_Value(System.Single value)
-    // Offset: 0x13A3F18
+    // Offset: 0x1917E48
     void set_Value(float value);
     // public UnityEngine.Vector2 get_Size()
-    // Offset: 0x13A3F28
+    // Offset: 0x1917E58
     ::UnityEngine::Vector2 get_Size();
     // public VROSC.UISpinnerData get_Data()
-    // Offset: 0x13A4018
+    // Offset: 0x1917F48
     ::VROSC::UISpinnerData* get_Data();
     // private System.Void Start()
-    // Offset: 0x13A4020
+    // Offset: 0x1917F50
     void Start();
     // private System.Void OnEnable()
-    // Offset: 0x13A4304
+    // Offset: 0x1918234
     void OnEnable();
     // public System.Void Setup(VROSC.MinMaxInt remapValue, System.Int32 startValue)
-    // Offset: 0x13A4660
+    // Offset: 0x1918590
     void Setup(::VROSC::MinMaxInt* remapValue, int startValue);
     // private System.Void ButtonWasPressed(VROSC.ClickData clickData, System.Boolean pressed)
-    // Offset: 0x13A4848
+    // Offset: 0x1918778
     void ButtonWasPressed(::VROSC::ClickData* clickData, bool pressed);
     // private System.Collections.IEnumerator GrabSpinnerRemotely(VROSC.InputDevice device, VROSC.TriggerButton grabbingButton)
-    // Offset: 0x13A4980
+    // Offset: 0x19188B0
     ::System::Collections::IEnumerator* GrabSpinnerRemotely(::VROSC::InputDevice* device, ::VROSC::TriggerButton grabbingButton);
     // private System.Void StopGrabSpinnerRemotely(VROSC.InputDevice device)
-    // Offset: 0x13A45B4
+    // Offset: 0x19184E4
     void StopGrabSpinnerRemotely(::VROSC::InputDevice* device);
     // private System.Void StopGrabSpinner(VROSC.InputDevice device, VROSC.TriggerButton button)
-    // Offset: 0x13A4A08
+    // Offset: 0x1918938
     void StopGrabSpinner(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
     // public System.Void SetRemappedValue(System.Int32 value)
-    // Offset: 0x13A4AD4
+    // Offset: 0x1918A04
     void SetRemappedValue(int value);
     // public System.Void SetSelectedIndex(System.Int32 index, System.Boolean force, System.Boolean useCallback)
-    // Offset: 0x13A4688
+    // Offset: 0x19185B8
     void SetSelectedIndex(int index, bool force, bool useCallback);
     // public System.Void SetFloatValue(System.Single value)
-    // Offset: 0x13A4AFC
+    // Offset: 0x1918A2C
     void SetFloatValue(float value);
     // public System.Void Next()
-    // Offset: 0x13A4BAC
+    // Offset: 0x1918ADC
     void Next();
     // private System.Void Previous()
-    // Offset: 0x13A4BC0
+    // Offset: 0x1918AF0
     void Previous();
     // private System.Void SetButtonsDisabled(System.Boolean disabled)
-    // Offset: 0x13A4404
+    // Offset: 0x1918334
     void SetButtonsDisabled(bool disabled);
     // private UnityEngine.Vector2 GetSize()
-    // Offset: 0x13A3F2C
+    // Offset: 0x1917E5C
     ::UnityEngine::Vector2 GetSize();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x13A4C10
+    // Offset: 0x1918B40
     void OnDrawGizmos();
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x13A3EEC
+    // Offset: 0x1917E1C
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Boolean UIInteractable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x13A4C70
+    // Offset: 0x1918BA0
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
@@ -273,17 +265,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UISpinner*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x13A4CE4
+    // Offset: 0x1918C14
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();
     // protected override System.Void OnDisable()
-    // Offset: 0x13A4490
+    // Offset: 0x19183C0
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::OnDisable()
     void OnDisable();
     // public override System.Void SetDisabled(System.Object disabler, System.Boolean shouldBeDisabled)
-    // Offset: 0x13A4BD4
+    // Offset: 0x1918B04
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::SetDisabled(System.Object disabler, System.Boolean shouldBeDisabled)
     void SetDisabled(::Il2CppObject* disabler, bool shouldBeDisabled);

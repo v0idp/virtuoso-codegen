@@ -74,15 +74,7 @@ namespace VROSC {
     class $$c__DisplayClass23_0;
     // Nested type: ::VROSC::MidiManager::$$c__DisplayClass26_0
     class $$c__DisplayClass26_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ExternalSynthesizer _externalSynthesizer
     // Size: 0x8
     // Offset: 0x18
@@ -129,74 +121,74 @@ namespace VROSC {
     // Set static field: static public System.Action`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.PatchSettings> OnAnyNotePlayed
     static void _set_OnAnyNotePlayed(::System::Action_2<::VROSC::WidgetSettings::Identifier, ::VROSC::PatchSettings*>* value);
     // Get instance field reference: private VROSC.ExternalSynthesizer _externalSynthesizer
-    ::VROSC::ExternalSynthesizer*& dyn__externalSynthesizer();
+    [[deprecated]] ::VROSC::ExternalSynthesizer*& dyn__externalSynthesizer();
     // Get instance field reference: private VROSC.InternalSynthesizer _internalSynthesizer
-    ::VROSC::InternalSynthesizer*& dyn__internalSynthesizer();
+    [[deprecated]] ::VROSC::InternalSynthesizer*& dyn__internalSynthesizer();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.MidiManager/VROSC.ActiveNote> _activeNotes
-    ::System::Collections::Generic::List_1<::VROSC::MidiManager::ActiveNote*>*& dyn__activeNotes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::MidiManager::ActiveNote*>*& dyn__activeNotes();
     // Get instance field reference: private System.Boolean _retriggerExternalNotes
-    bool& dyn__retriggerExternalNotes();
+    [[deprecated]] bool& dyn__retriggerExternalNotes();
     // Get instance field reference: private System.Boolean <IsReady>k__BackingField
-    bool& dyn_$IsReady$k__BackingField();
+    [[deprecated]] bool& dyn_$IsReady$k__BackingField();
     // public VROSC.ExternalSynthesizer get_ExternalSynthesizer()
-    // Offset: 0x8B3BB8
+    // Offset: 0xAC7748
     ::VROSC::ExternalSynthesizer* get_ExternalSynthesizer();
     // public VROSC.InternalSynthesizer get_InternalSynthesizer()
-    // Offset: 0x8B3BC0
+    // Offset: 0xAC7750
     ::VROSC::InternalSynthesizer* get_InternalSynthesizer();
     // public System.Boolean get_IsReady()
-    // Offset: 0x8B3BC8
+    // Offset: 0xAC7758
     bool get_IsReady();
     // private System.Void set_IsReady(System.Boolean value)
-    // Offset: 0x8B3BD0
+    // Offset: 0xAC7760
     void set_IsReady(bool value);
     // protected System.Void Awake()
-    // Offset: 0x8B3BDC
+    // Offset: 0xAC776C
     void Awake();
     // public System.Void Setup()
-    // Offset: 0x8B3CC8
+    // Offset: 0xAC7858
     void Setup();
     // private System.Void OnDestroy()
-    // Offset: 0x8B3D8C
+    // Offset: 0xAC791C
     void OnDestroy();
     // public System.Void PlayNote(VROSC.WidgetSettings/VROSC.Identifier instrumentId, System.Int32 note, System.Single velocity, VROSC.PatchSettings patchSettings, System.Int32 channel, System.Object source, System.Double predictedDspTime, VROSC.HandType handType, System.Single pitch)
-    // Offset: 0x8B3E78
+    // Offset: 0xAC7A08
     void PlayNote(::VROSC::WidgetSettings::Identifier instrumentId, int note, float velocity, ::VROSC::PatchSettings* patchSettings, int channel, ::Il2CppObject* source, double predictedDspTime, ::VROSC::HandType handType, float pitch);
     // public System.Void StopNote(System.Int32 note, VROSC.PatchSettings patchSettings, System.Int32 channel, System.Object source, VROSC.HandType handType)
-    // Offset: 0x8B4330
+    // Offset: 0xAC7EC0
     void StopNote(int note, ::VROSC::PatchSettings* patchSettings, int channel, ::Il2CppObject* source, ::VROSC::HandType handType);
     // private VROSC.MidiManager/VROSC.ActiveNote GetActiveNote(System.Int32 note, System.Object patch, System.Int32 channel, System.Object source)
-    // Offset: 0x8B41B4
+    // Offset: 0xAC7D44
     ::VROSC::MidiManager::ActiveNote* GetActiveNote(int note, ::Il2CppObject* patch, int channel, ::Il2CppObject* source);
     // public System.Boolean IsPlaying()
-    // Offset: 0x8B4584
+    // Offset: 0xAC8114
     bool IsPlaying();
     // public System.Boolean IsPlaying(System.Object patch, System.Int32 channel)
-    // Offset: 0x8B45D8
+    // Offset: 0xAC8168
     bool IsPlaying(::Il2CppObject* patch, int channel);
     // public System.Void SetMidiCC(System.Single midiCCValue, System.Int32 midiCC, VROSC.PatchSettings patchSettings, System.Int32 channel, System.Boolean sendToExternal, VROSC.HandType handType, System.Boolean saveToPatch)
-    // Offset: 0x8B46CC
+    // Offset: 0xAC825C
     void SetMidiCC(float midiCCValue, int midiCC, ::VROSC::PatchSettings* patchSettings, int channel, bool sendToExternal, ::VROSC::HandType handType, bool saveToPatch);
     // public System.Void SetMidiPitchBend(System.Single pitchBendValue, VROSC.PatchSettings patchSettings, System.Int32 channel, System.Boolean sendToExternal, VROSC.HandType handType)
-    // Offset: 0x8B4810
+    // Offset: 0xAC83A0
     void SetMidiPitchBend(float pitchBendValue, ::VROSC::PatchSettings* patchSettings, int channel, bool sendToExternal, ::VROSC::HandType handType);
     // public System.Void AllNotesOff(System.Object patch, System.Int32 channel)
-    // Offset: 0x8B4930
+    // Offset: 0xAC84C0
     void AllNotesOff(::Il2CppObject* patch, int channel);
     // public System.Void AllNotesOff()
-    // Offset: 0x8B4A8C
+    // Offset: 0xAC861C
     void AllNotesOff();
     // public System.Void ToggleInternalExternalSynthesizer()
-    // Offset: 0x8B4B40
+    // Offset: 0xAC86D0
     void ToggleInternalExternalSynthesizer();
     // private System.Void SetUseExternalSynthesizer(System.Boolean useExternal)
-    // Offset: 0x8B4BB4
+    // Offset: 0xAC8744
     void SetUseExternalSynthesizer(bool useExternal);
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x8B4CD4
+    // Offset: 0xAC8864
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // public System.Void .ctor()
-    // Offset: 0x8B4DCC
+    // Offset: 0xAC895C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

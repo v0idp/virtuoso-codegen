@@ -42,7 +42,7 @@ namespace Firebase::Firestore::Converters {
   class DateTimeOffsetConverter : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
     // System.Void .ctor()
-    // Offset: 0xC2F050
+    // Offset: 0xD50E60
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -51,12 +51,12 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<DateTimeOffsetConverter*, creationType>()));
     }
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC2F680
+    // Offset: 0xD51488
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
     // protected override System.Object DeserializeTimestamp(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.Timestamp value)
-    // Offset: 0xC2F7C4
+    // Offset: 0xD515CC
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeTimestamp(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.Timestamp value)
     ::Il2CppObject* DeserializeTimestamp(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::Timestamp value);

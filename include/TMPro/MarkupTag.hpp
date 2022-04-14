@@ -798,7 +798,7 @@ namespace TMPro {
     // Set static field: static public TMPro.MarkupTag DEFAULT
     static void _set_DEFAULT(::TMPro::MarkupTag value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // TMPro.MarkupTag
   #pragma pack(pop)
   static check_size<sizeof(MarkupTag), 0 + sizeof(int)> __TMPro_MarkupTagSizeCheck;

@@ -60,7 +60,7 @@ namespace Firebase::Firestore {
     // Set static field: static public Firebase.Firestore.UnknownPropertyHandling Throw
     static void _set_Throw(::Firebase::Firestore::UnknownPropertyHandling value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Firebase.Firestore.UnknownPropertyHandling
   #pragma pack(pop)
   static check_size<sizeof(UnknownPropertyHandling), 0 + sizeof(int)> __Firebase_Firestore_UnknownPropertyHandlingSizeCheck;

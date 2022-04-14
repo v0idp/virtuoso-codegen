@@ -77,20 +77,12 @@ namespace VROSC {
       // Set static field: static public VROSC.IntNode/VROSC.OverflowBehaviour Wrap
       static void _set_Wrap(::VROSC::IntNode::OverflowBehaviour value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.IntNode/VROSC.OverflowBehaviour
     #pragma pack(pop)
     static check_size<sizeof(IntNode::OverflowBehaviour), 0 + sizeof(int)> __VROSC_IntNode_OverflowBehaviourSizeCheck;
     static_assert(sizeof(IntNode::OverflowBehaviour) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Int32 _minValue
     // Size: 0x4
     // Offset: 0x18
@@ -125,35 +117,35 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Int32 _minValue
-    int& dyn__minValue();
+    [[deprecated]] int& dyn__minValue();
     // Get instance field reference: protected System.Int32 _maxValue
-    int& dyn__maxValue();
+    [[deprecated]] int& dyn__maxValue();
     // Get instance field reference: protected VROSC.IntNode/VROSC.OverflowBehaviour _overflowBehaviour
-    ::VROSC::IntNode::OverflowBehaviour& dyn__overflowBehaviour();
+    [[deprecated]] ::VROSC::IntNode::OverflowBehaviour& dyn__overflowBehaviour();
     // Get instance field reference: private System.Int32 _value
-    int& dyn__value();
+    [[deprecated]] int& dyn__value();
     // Get instance field reference: public System.Action`1<System.Int32> OnValueChanged
-    ::System::Action_1<int>*& dyn_OnValueChanged();
+    [[deprecated]] ::System::Action_1<int>*& dyn_OnValueChanged();
     // public System.Int32 get_MinValue()
-    // Offset: 0x1385944
+    // Offset: 0x1948BEC
     int get_MinValue();
     // public System.Int32 get_MaxValue()
-    // Offset: 0x138594C
+    // Offset: 0x1948BF4
     int get_MaxValue();
     // public System.Int32 get_Value()
-    // Offset: 0x1385954
+    // Offset: 0x1948BFC
     int get_Value();
     // public System.Void set_Value(System.Int32 value)
-    // Offset: 0x138595C
+    // Offset: 0x1942D5C
     void set_Value(int value);
     // protected System.Void OnValidate()
-    // Offset: 0x1385968
+    // Offset: 0x1948C04
     void OnValidate();
     // protected System.Int32 SetValueInRange(System.Int32 value)
-    // Offset: 0x1385978
+    // Offset: 0x1948C14
     int SetValueInRange(int value);
     // public System.Void .ctor()
-    // Offset: 0x1385A70
+    // Offset: 0x1948D0C
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

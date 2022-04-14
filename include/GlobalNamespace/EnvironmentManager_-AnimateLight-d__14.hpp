@@ -41,15 +41,7 @@ namespace GlobalNamespace {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class EnvironmentManager::$AnimateLight$d__14 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -142,54 +134,54 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public EnvironmentManager <>4__this
-    ::GlobalNamespace::EnvironmentManager*& dyn_$$4__this();
+    [[deprecated]] ::GlobalNamespace::EnvironmentManager*& dyn_$$4__this();
     // Get instance field reference: public TimeOfDayType timeOfDay
-    ::GlobalNamespace::TimeOfDayType& dyn_timeOfDay();
+    [[deprecated]] ::GlobalNamespace::TimeOfDayType& dyn_timeOfDay();
     // Get instance field reference: public System.Single animationTime
-    float& dyn_animationTime();
+    [[deprecated]] float& dyn_animationTime();
     // Get instance field reference: private UnityEngine.Material <currentSkybox>5__2
-    ::UnityEngine::Material*& dyn_$currentSkybox$5__2();
+    [[deprecated]] ::UnityEngine::Material*& dyn_$currentSkybox$5__2();
     // Get instance field reference: private UnityEngine.Material <targetSkybox>5__3
-    ::UnityEngine::Material*& dyn_$targetSkybox$5__3();
+    [[deprecated]] ::UnityEngine::Material*& dyn_$targetSkybox$5__3();
     // Get instance field reference: private UnityEngine.Light <currentDirLight>5__4
-    ::UnityEngine::Light*& dyn_$currentDirLight$5__4();
+    [[deprecated]] ::UnityEngine::Light*& dyn_$currentDirLight$5__4();
     // Get instance field reference: private UnityEngine.Light <targetDirLight>5__5
-    ::UnityEngine::Light*& dyn_$targetDirLight$5__5();
+    [[deprecated]] ::UnityEngine::Light*& dyn_$targetDirLight$5__5();
     // Get instance field reference: private UnityEngine.Transform <currentSunTransform>5__6
-    ::UnityEngine::Transform*& dyn_$currentSunTransform$5__6();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_$currentSunTransform$5__6();
     // Get instance field reference: private UnityEngine.Transform <targetSunTransform>5__7
-    ::UnityEngine::Transform*& dyn_$targetSunTransform$5__7();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_$targetSunTransform$5__7();
     // Get instance field reference: private UnityEngine.Color <sourceColor>5__8
-    ::UnityEngine::Color& dyn_$sourceColor$5__8();
+    [[deprecated]] ::UnityEngine::Color& dyn_$sourceColor$5__8();
     // Get instance field reference: private UnityEngine.Color <targetColor>5__9
-    ::UnityEngine::Color& dyn_$targetColor$5__9();
+    [[deprecated]] ::UnityEngine::Color& dyn_$targetColor$5__9();
     // Get instance field reference: private System.Single <elapsedTime>5__10
-    float& dyn_$elapsedTime$5__10();
+    [[deprecated]] float& dyn_$elapsedTime$5__10();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x1362C38
+    // Offset: 0x95F72C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x1362C80
+    // Offset: 0x95F774
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x136265C
+    // Offset: 0x95F150
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EnvironmentManager::$AnimateLight$d__14* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::EnvironmentManager::$AnimateLight$d__14::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EnvironmentManager::$AnimateLight$d__14*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x1362688
+    // Offset: 0x95F17C
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x136268C
+    // Offset: 0x95F180
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x1362C40
+    // Offset: 0x95F734
     void System_Collections_IEnumerator_Reset();
   }; // EnvironmentManager/<AnimateLight>d__14
   #pragma pack(pop)

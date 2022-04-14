@@ -34,10 +34,10 @@ namespace VROSC {
   class BeatCounter;
   // Forward declaring type: UserDataControllers
   class UserDataControllers;
+  // Forward declaring type: EnvironmentController
+  class EnvironmentController;
   // Forward declaring type: SaveLoadManager
   class SaveLoadManager;
-  // Forward declaring type: CloudDataManager
-  class CloudDataManager;
   // Forward declaring type: AuthenticationManager
   class AuthenticationManager;
   // Forward declaring type: AudioRecorder
@@ -50,17 +50,12 @@ namespace VROSC {
   class TutorialManager;
   // Forward declaring type: StaticData
   class StaticData;
+  // Forward declaring type: RemoteConfigManager
+  class RemoteConfigManager;
   // Forward declaring type: Dashboard
   class Dashboard;
   // Forward declaring type: VRPlayer
   class VRPlayer;
-}
-// Forward declaring namespace: GlobalNamespace
-namespace GlobalNamespace {
-  // Forward declaring type: EnvironmentController
-  class EnvironmentController;
-  // Forward declaring type: PunchKeyboard
-  class PunchKeyboard;
 }
 // Forward declaring namespace: LIV::SDK::Unity
 namespace LIV::SDK::Unity {
@@ -71,6 +66,11 @@ namespace LIV::SDK::Unity {
 namespace System {
   // Forward declaring type: String
   class String;
+}
+// Forward declaring namespace: GlobalNamespace
+namespace GlobalNamespace {
+  // Forward declaring type: PunchKeyboard
+  class PunchKeyboard;
 }
 // Completed forward declares
 // Type namespace: VROSC
@@ -137,18 +137,14 @@ namespace VROSC {
     static ::VROSC::UserDataControllers* _get_UserDataControllers();
     // Set static field: static public VROSC.UserDataControllers UserDataControllers
     static void _set_UserDataControllers(::VROSC::UserDataControllers* value);
-    // Get static field: static public EnvironmentController EnvironmentController
-    static ::GlobalNamespace::EnvironmentController* _get_EnvironmentController();
-    // Set static field: static public EnvironmentController EnvironmentController
-    static void _set_EnvironmentController(::GlobalNamespace::EnvironmentController* value);
+    // Get static field: static public VROSC.EnvironmentController EnvironmentController
+    static ::VROSC::EnvironmentController* _get_EnvironmentController();
+    // Set static field: static public VROSC.EnvironmentController EnvironmentController
+    static void _set_EnvironmentController(::VROSC::EnvironmentController* value);
     // Get static field: static public VROSC.SaveLoadManager SaveLoadManager
     static ::VROSC::SaveLoadManager* _get_SaveLoadManager();
     // Set static field: static public VROSC.SaveLoadManager SaveLoadManager
     static void _set_SaveLoadManager(::VROSC::SaveLoadManager* value);
-    // Get static field: static public VROSC.CloudDataManager CloudDataManager
-    static ::VROSC::CloudDataManager* _get_CloudDataManager();
-    // Set static field: static public VROSC.CloudDataManager CloudDataManager
-    static void _set_CloudDataManager(::VROSC::CloudDataManager* value);
     // Get static field: static public VROSC.AuthenticationManager AuthenticationManager
     static ::VROSC::AuthenticationManager* _get_AuthenticationManager();
     // Set static field: static public VROSC.AuthenticationManager AuthenticationManager
@@ -177,6 +173,10 @@ namespace VROSC {
     static ::VROSC::StaticData* _get_StaticData();
     // Set static field: static public VROSC.StaticData StaticData
     static void _set_StaticData(::VROSC::StaticData* value);
+    // Get static field: static public VROSC.RemoteConfigManager RemoteConfigManager
+    static ::VROSC::RemoteConfigManager* _get_RemoteConfigManager();
+    // Set static field: static public VROSC.RemoteConfigManager RemoteConfigManager
+    static void _set_RemoteConfigManager(::VROSC::RemoteConfigManager* value);
     // static field const value: static public System.String HostingURL
     static constexpr const char* HostingURL = "https://virtuoso-c845b.web.app/";
     // Get static field: static public System.String HostingURL
@@ -192,10 +192,10 @@ namespace VROSC {
     // Set static field: static public PunchKeyboard Keyboard
     static void _set_Keyboard(::GlobalNamespace::PunchKeyboard* value);
     // static public VROSC.VRPlayer get_VRPlayer()
-    // Offset: 0x1323FC4
+    // Offset: 0x8DEE1C
     static ::VROSC::VRPlayer* get_VRPlayer();
     // static public System.Void FetchReferences()
-    // Offset: 0x133B2C4
+    // Offset: 0x8DEE7C
     static void FetchReferences();
   }; // VROSC.Core
   #pragma pack(pop)

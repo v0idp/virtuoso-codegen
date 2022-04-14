@@ -36,15 +36,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionsManager::$$c__DisplayClass53_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action onSuccess
     // Size: 0x8
     // Offset: 0x10
@@ -65,19 +57,19 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public VROSC.SessionsManager <>4__this
-    ::VROSC::SessionsManager*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SessionsManager*& dyn_$$4__this();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // System.Void <LoadCloudSessions>b__0()
-    // Offset: 0x134A454
+    // Offset: 0x8D53F4
     void $LoadCloudSessions$b__0();
     // System.Void <LoadCloudSessions>b__1(VROSC.Error error)
-    // Offset: 0x134A508
+    // Offset: 0x8D54A8
     void $LoadCloudSessions$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x134A44C
+    // Offset: 0x8D53EC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -40,15 +40,7 @@ namespace Firebase::Auth {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Threading.Tasks.TaskCompletionSource`1<Firebase.Auth.FirebaseUser> taskCompletionSource
     // Size: 0x8
     // Offset: 0x10
@@ -63,14 +55,14 @@ namespace Firebase::Auth {
     static_assert(sizeof(::Firebase::Auth::FirebaseAuth*) == 0x8);
     public:
     // Get instance field reference: System.Threading.Tasks.TaskCompletionSource`1<Firebase.Auth.FirebaseUser> taskCompletionSource
-    ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Auth::FirebaseUser*>*& dyn_taskCompletionSource();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Auth::FirebaseUser*>*& dyn_taskCompletionSource();
     // Get instance field reference: Firebase.Auth.FirebaseAuth $this
-    ::Firebase::Auth::FirebaseAuth*& dyn_$this();
+    [[deprecated]] ::Firebase::Auth::FirebaseAuth*& dyn_$this();
     // System.Void <>m__0(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> task)
-    // Offset: 0x12B431C
+    // Offset: 0x18B450C
     void $$m__0(::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* task);
     // public System.Void .ctor()
-    // Offset: 0x12B1620
+    // Offset: 0x18B135C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

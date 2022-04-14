@@ -52,15 +52,7 @@ namespace VROSC {
     class ParticleEffect;
     // Nested type: ::VROSC::PredictiveHitWisp::$SetAtHitpoint$d__7
     struct $SetAtHitpoint$d__7;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _wisp
     // Size: 0x8
     // Offset: 0x18
@@ -103,25 +95,25 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _wisp
-    ::UnityEngine::Transform*& dyn__wisp();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__wisp();
     // Get instance field reference: private System.Int32 remainMs
-    int& dyn_remainMs();
+    [[deprecated]] int& dyn_remainMs();
     // Get instance field reference: private VROSC.PredictiveHitWisp/VROSC.ParticleEffect[] _particleEffects
-    ::ArrayW<::VROSC::PredictiveHitWisp::ParticleEffect*>& dyn__particleEffects();
+    [[deprecated]] ::ArrayW<::VROSC::PredictiveHitWisp::ParticleEffect*>& dyn__particleEffects();
     // Get instance field reference: private UnityEngine.Transform _lookAtPoint
-    ::UnityEngine::Transform*& dyn__lookAtPoint();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__lookAtPoint();
     // Get instance field reference: private UnityEngine.TrailRenderer _trailRenderer
-    ::UnityEngine::TrailRenderer*& dyn__trailRenderer();
+    [[deprecated]] ::UnityEngine::TrailRenderer*& dyn__trailRenderer();
     // Get instance field reference: private VROSC.MalletVisual _malletVisual
-    ::VROSC::MalletVisual*& dyn__malletVisual();
+    [[deprecated]] ::VROSC::MalletVisual*& dyn__malletVisual();
     // public System.Void SetAtHitpoint(System.Double dspTime, UnityEngine.Vector3 hitpoint, VROSC.PredictiveHittable predictiveHittable)
-    // Offset: 0x8FE294
+    // Offset: 0xAE2B84
     void SetAtHitpoint(double dspTime, ::UnityEngine::Vector3 hitpoint, ::VROSC::PredictiveHittable* predictiveHittable);
     // public System.Void SetTrailColor(UnityEngine.Color color)
-    // Offset: 0x8FE390
+    // Offset: 0xAE2C80
     void SetTrailColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x8FE40C
+    // Offset: 0xAE2CFC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

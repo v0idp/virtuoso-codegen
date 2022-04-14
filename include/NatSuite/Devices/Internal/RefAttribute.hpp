@@ -32,7 +32,7 @@ namespace NatSuite::Devices::Internal {
   class RefAttribute : public ::System::Attribute {
     public:
     // public System.Void .ctor(params System.String[] keys)
-    // Offset: 0x998BB4
+    // Offset: 0xB3148C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RefAttribute* New_ctor(::ArrayW<::StringW> keys) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::RefAttribute::.ctor");

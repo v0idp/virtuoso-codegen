@@ -34,15 +34,7 @@ namespace UnityEngine::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class AndroidAssetPacks::AssetPackManagerMobileDataConfirmationCallback : public ::UnityEngine::AndroidJavaProxy {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Action`1<UnityEngine.Android.AndroidAssetPackUseMobileDataRequestResult> m_Callback
     // Size: 0x8
     // Offset: 0x20
@@ -55,9 +47,9 @@ namespace UnityEngine::Android {
       return m_Callback;
     }
     // Get instance field reference: private System.Action`1<UnityEngine.Android.AndroidAssetPackUseMobileDataRequestResult> m_Callback
-    ::System::Action_1<::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult*>*& dyn_m_Callback();
+    [[deprecated]] ::System::Action_1<::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult*>*& dyn_m_Callback();
     // private System.Void onMobileDataConfirmationResult(System.Boolean allowed)
-    // Offset: 0x127D3BC
+    // Offset: 0x1875760
     void onMobileDataConfirmationResult(bool allowed);
   }; // UnityEngine.Android.AndroidAssetPacks/UnityEngine.Android.AssetPackManagerMobileDataConfirmationCallback
   #pragma pack(pop)

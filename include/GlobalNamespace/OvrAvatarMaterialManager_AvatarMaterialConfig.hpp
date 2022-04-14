@@ -28,15 +28,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarMaterialManager::AvatarMaterialConfig : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OvrAvatarMaterialManager/AvatarComponentMaterialProperties[] ComponentMaterialProperties
     // Size: 0x8
     // Offset: 0x10
@@ -51,11 +43,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialPropertyBlock) == 0x20);
     public:
     // Get instance field reference: public OvrAvatarMaterialManager/AvatarComponentMaterialProperties[] ComponentMaterialProperties
-    ::ArrayW<::GlobalNamespace::OvrAvatarMaterialManager::AvatarComponentMaterialProperties>& dyn_ComponentMaterialProperties();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OvrAvatarMaterialManager::AvatarComponentMaterialProperties>& dyn_ComponentMaterialProperties();
     // Get instance field reference: public OvrAvatarMaterialManager/AvatarMaterialPropertyBlock MaterialPropertyBlock
-    ::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialPropertyBlock& dyn_MaterialPropertyBlock();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialPropertyBlock& dyn_MaterialPropertyBlock();
     // public System.Void .ctor()
-    // Offset: 0x1341B2C
+    // Offset: 0x8CCA50
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

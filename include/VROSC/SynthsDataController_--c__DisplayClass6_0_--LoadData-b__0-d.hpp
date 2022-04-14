@@ -102,28 +102,28 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public VROSC.SynthsDataController/VROSC.<>c__DisplayClass6_0 <>4__this
-    ::VROSC::SynthsDataController::$$c__DisplayClass6_0*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SynthsDataController::$$c__DisplayClass6_0*& dyn_$$4__this();
     // Get instance field reference: public System.String data
-    ::StringW& dyn_data();
+    [[deprecated]] ::StringW& dyn_data();
     // Get instance field reference: private VROSC.SynthsDataController/VROSC.<>c__DisplayClass6_1 <>8__1
-    ::VROSC::SynthsDataController::$$c__DisplayClass6_1*& dyn_$$8__1();
+    [[deprecated]] ::VROSC::SynthsDataController::$$c__DisplayClass6_1*& dyn_$$8__1();
     // Get instance field reference: private VROSC.SynthsDataController/VROSC.<>c__DisplayClass6_2 <>8__2
-    ::VROSC::SynthsDataController::$$c__DisplayClass6_2*& dyn_$$8__2();
+    [[deprecated]] ::VROSC::SynthsDataController::$$c__DisplayClass6_2*& dyn_$$8__2();
     // Get instance field reference: private System.Collections.Generic.List`1/System.Collections.Generic.Enumerator<VROSC.SynthData> <>7__wrap1
-    typename ::System::Collections::Generic::List_1<::VROSC::SynthData*>::Enumerator& dyn_$$7__wrap1();
+    [[deprecated]] typename ::System::Collections::Generic::List_1<::VROSC::SynthData*>::Enumerator& dyn_$$7__wrap1();
     // Get instance field reference: private System.Int32 <i>5__3
-    int& dyn_$i$5__3();
+    [[deprecated]] int& dyn_$i$5__3();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x141A93C
+    // Offset: 0xE8C2E4
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x141B084
+    // Offset: 0xE8CA2C
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.SynthsDataController/VROSC.<>c__DisplayClass6_0/VROSC.<<LoadData>b__0>d
   // WARNING Not writing size check since size may be invalid!

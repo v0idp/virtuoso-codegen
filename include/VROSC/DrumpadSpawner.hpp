@@ -87,15 +87,7 @@ namespace VROSC {
     char ___base_padding[0x7] = {};
     // Nested type: ::VROSC::DrumpadSpawner::$CoHighlight$d__30
     class $CoHighlight$d__30;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.DrumpadPlayer _player
     // Size: 0x8
     // Offset: 0x70
@@ -232,94 +224,97 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Drumpad*) == 0x8);
     public:
     // Get instance field reference: private VROSC.DrumpadPlayer _player
-    ::VROSC::DrumpadPlayer*& dyn__player();
+    [[deprecated]] ::VROSC::DrumpadPlayer*& dyn__player();
     // Get instance field reference: private TMPro.TextMeshPro _headerText
-    ::TMPro::TextMeshPro*& dyn__headerText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__headerText();
     // Get instance field reference: private VROSC.UI.DrumSampleSwitcherUI _switcher
-    ::VROSC::UI::DrumSampleSwitcherUI*& dyn__switcher();
+    [[deprecated]] ::VROSC::UI::DrumSampleSwitcherUI*& dyn__switcher();
     // Get instance field reference: private VROSC.Drumpad _prefab
-    ::VROSC::Drumpad*& dyn__prefab();
+    [[deprecated]] ::VROSC::Drumpad*& dyn__prefab();
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal _preview
-    ::VROSC::DrumPadEffectOnSignal*& dyn__preview();
+    [[deprecated]] ::VROSC::DrumPadEffectOnSignal*& dyn__preview();
     // Get instance field reference: private UnityEngine.Transform _parent
-    ::UnityEngine::Transform*& dyn__parent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__parent();
     // Get instance field reference: private VROSC.TransformMoverRelay _moveRelay
-    ::VROSC::TransformMoverRelay*& dyn__moveRelay();
+    [[deprecated]] ::VROSC::TransformMoverRelay*& dyn__moveRelay();
     // Get instance field reference: private System.Single _spawnScaleMultiplier
-    float& dyn__spawnScaleMultiplier();
+    [[deprecated]] float& dyn__spawnScaleMultiplier();
     // Get instance field reference: private System.Single _hoverLengthToGrab
-    float& dyn__hoverLengthToGrab();
+    [[deprecated]] float& dyn__hoverLengthToGrab();
     // Get instance field reference: private UnityEngine.AnimationCurve _highlightAnimationCurve
-    ::UnityEngine::AnimationCurve*& dyn__highlightAnimationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__highlightAnimationCurve();
     // Get instance field reference: private System.Single _highlightAnimationDuration
-    float& dyn__highlightAnimationDuration();
+    [[deprecated]] float& dyn__highlightAnimationDuration();
     // Get instance field reference: private UnityEngine.GameObject _hintText
-    ::UnityEngine::GameObject*& dyn__hintText();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__hintText();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // Get instance field reference: private VROSC.ModularDrumsController _instrumentController
-    ::VROSC::ModularDrumsController*& dyn__instrumentController();
+    [[deprecated]] ::VROSC::ModularDrumsController*& dyn__instrumentController();
     // Get instance field reference: private System.Int32 _empadId
-    int& dyn__empadId();
+    [[deprecated]] int& dyn__empadId();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Drumpad> _drumpads
-    ::System::Collections::Generic::List_1<::VROSC::Drumpad*>*& dyn__drumpads();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Drumpad*>*& dyn__drumpads();
     // Get instance field reference: private System.Single _hoveringTimer
-    float& dyn__hoveringTimer();
+    [[deprecated]] float& dyn__hoveringTimer();
     // Get instance field reference: private UnityEngine.Coroutine _highlightRoutine
-    ::UnityEngine::Coroutine*& dyn__highlightRoutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn__highlightRoutine();
     // Get instance field reference: private System.Boolean _isHighlighted
-    bool& dyn__isHighlighted();
+    [[deprecated]] bool& dyn__isHighlighted();
     // Get instance field reference: private System.Boolean _forceHighlight
-    bool& dyn__forceHighlight();
+    [[deprecated]] bool& dyn__forceHighlight();
     // Get instance field reference: private VROSC.Drumpad lastSpawnedDrumpad
-    ::VROSC::Drumpad*& dyn_lastSpawnedDrumpad();
+    [[deprecated]] ::VROSC::Drumpad*& dyn_lastSpawnedDrumpad();
     // public System.Int32 get_DrumpadsCount()
-    // Offset: 0x130F040
+    // Offset: 0x8E8BE4
     int get_DrumpadsCount();
     // private System.Void Start()
-    // Offset: 0x130F08C
+    // Offset: 0x8E8C30
     void Start();
     // public System.Void Setup(System.Int32 groupId, VROSC.ModularDrumsController instrumentController)
-    // Offset: 0x130F160
+    // Offset: 0x8E8D04
     void Setup(int groupId, ::VROSC::ModularDrumsController* instrumentController);
     // System.Void SetActive(System.Boolean isActive)
-    // Offset: 0x130F8D4
+    // Offset: 0x8E9380
     void SetActive(bool isActive);
     // public System.Void Refresh(System.Int32 groupId, System.Int32 fixedEmpadId)
-    // Offset: 0x130F360
+    // Offset: 0x8E8F04
     void Refresh(int groupId, int fixedEmpadId);
     // private System.Void OnDestroy()
-    // Offset: 0x130FC4C
+    // Offset: 0x8E95F4
     void OnDestroy();
     // private System.Void Update()
-    // Offset: 0x130FD20
+    // Offset: 0x8E96C8
     void Update();
     // public System.Void ForceHighlight(System.Boolean forceHighlight)
-    // Offset: 0x130FE24
+    // Offset: 0x8E97CC
     void ForceHighlight(bool forceHighlight);
     // private System.Void Highlight(System.Boolean highlight)
-    // Offset: 0x130FDB4
+    // Offset: 0x8E975C
     void Highlight(bool highlight);
     // private System.Collections.IEnumerator CoHighlight(System.Boolean highlight)
-    // Offset: 0x130FE30
+    // Offset: 0x8E97D8
     ::System::Collections::IEnumerator* CoHighlight(bool highlight);
     // private System.Void SetDrumSampleOrNoteNumber(System.Int32 sampleIdOrNoteNumber, System.Boolean preview)
-    // Offset: 0x130FEB0
+    // Offset: 0x8E9858
     void SetDrumSampleOrNoteNumber(int sampleIdOrNoteNumber, bool preview);
     // private VROSC.Drumpad SpawnDrumpad(System.Int32 empadId, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, System.Single scale)
-    // Offset: 0x130FA18
+    // Offset: 0x8E9AC4
     ::VROSC::Drumpad* SpawnDrumpad(int empadId, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, float scale);
+    // private VROSC.Drumpad LoadDrumpad(System.Int32 empadId)
+    // Offset: 0x8E94C4
+    ::VROSC::Drumpad* LoadDrumpad(int empadId);
     // public System.Void DeleteAll()
-    // Offset: 0x131011C
+    // Offset: 0x8E9CF8
     void DeleteAll();
     // private System.Void Colorize(UnityEngine.Color color)
-    // Offset: 0x130F9FC
+    // Offset: 0x8E94A8
     void Colorize(::UnityEngine::Color color);
     // private System.Void RemovedDrumpad(VROSC.Drumpad drumpad)
-    // Offset: 0x1310194
+    // Offset: 0x8E9D70
     void RemovedDrumpad(::VROSC::Drumpad* drumpad);
     // public System.Void .ctor()
-    // Offset: 0x131028C
+    // Offset: 0x8E9E68
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
@@ -334,7 +329,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<DrumpadSpawner*, creationType>()));
     }
     // public override System.Void Grab(VROSC.GrabData grabData, System.Boolean grabbing)
-    // Offset: 0x130FECC
+    // Offset: 0x8E9874
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::Grab(VROSC.GrabData grabData, System.Boolean grabbing)
     void Grab(::VROSC::GrabData* grabData, bool grabbing);
@@ -452,6 +447,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Dr
     static auto* rotation = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
     static auto* scale = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::DrumpadSpawner*), "SpawnDrumpad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{empadId, position, rotation, scale});
+  }
+};
+// Writing MetadataGetter for method: VROSC::DrumpadSpawner::LoadDrumpad
+// Il2CppName: LoadDrumpad
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Drumpad* (VROSC::DrumpadSpawner::*)(int)>(&VROSC::DrumpadSpawner::LoadDrumpad)> {
+  static const MethodInfo* get() {
+    static auto* empadId = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::DrumpadSpawner*), "LoadDrumpad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{empadId});
   }
 };
 // Writing MetadataGetter for method: VROSC::DrumpadSpawner::DeleteAll

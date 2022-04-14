@@ -25,15 +25,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRInput::OVRControllerBase::VirtualAxis2DMap : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRInput/RawAxis2D None
     // Size: 0x4
     // Offset: 0x10
@@ -66,20 +58,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRInput::RawAxis2D) == 0x4);
     public:
     // Get instance field reference: public OVRInput/RawAxis2D None
-    ::GlobalNamespace::OVRInput::RawAxis2D& dyn_None();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis2D& dyn_None();
     // Get instance field reference: public OVRInput/RawAxis2D PrimaryThumbstick
-    ::GlobalNamespace::OVRInput::RawAxis2D& dyn_PrimaryThumbstick();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis2D& dyn_PrimaryThumbstick();
     // Get instance field reference: public OVRInput/RawAxis2D PrimaryTouchpad
-    ::GlobalNamespace::OVRInput::RawAxis2D& dyn_PrimaryTouchpad();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis2D& dyn_PrimaryTouchpad();
     // Get instance field reference: public OVRInput/RawAxis2D SecondaryThumbstick
-    ::GlobalNamespace::OVRInput::RawAxis2D& dyn_SecondaryThumbstick();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis2D& dyn_SecondaryThumbstick();
     // Get instance field reference: public OVRInput/RawAxis2D SecondaryTouchpad
-    ::GlobalNamespace::OVRInput::RawAxis2D& dyn_SecondaryTouchpad();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis2D& dyn_SecondaryTouchpad();
     // public OVRInput/RawAxis2D ToRawMask(OVRInput/Axis2D virtualMask)
-    // Offset: 0xF180FC
+    // Offset: 0x13F20F8
     ::GlobalNamespace::OVRInput::RawAxis2D ToRawMask(::GlobalNamespace::OVRInput::Axis2D virtualMask);
     // public System.Void .ctor()
-    // Offset: 0xF18150
+    // Offset: 0x13F214C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

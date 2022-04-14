@@ -57,16 +57,16 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 firstGlyphIndex
-    uint& dyn_firstGlyphIndex();
+    [[deprecated]] uint& dyn_firstGlyphIndex();
     // Get instance field reference: public System.UInt32 secondGlyphIndex
-    uint& dyn_secondGlyphIndex();
+    [[deprecated]] uint& dyn_secondGlyphIndex();
     // Get instance field reference: public System.UInt32 key
-    uint& dyn_key();
+    [[deprecated]] uint& dyn_key();
     // public System.Void .ctor(System.UInt32 firstGlyphIndex, System.UInt32 secondGlyphIndex)
-    // Offset: 0xA47B90
+    // Offset: 0xC297A0
     GlyphPairKey(uint firstGlyphIndex, uint secondGlyphIndex);
     // System.Void .ctor(TMPro.TMP_GlyphPairAdjustmentRecord record)
-    // Offset: 0xA47BA0
+    // Offset: 0xC297B0
     GlyphPairKey(::TMPro::TMP_GlyphPairAdjustmentRecord* record);
   }; // TMPro.GlyphPairKey
   #pragma pack(pop)

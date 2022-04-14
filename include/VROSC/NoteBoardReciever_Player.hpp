@@ -34,15 +34,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoardReciever::Player : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly VROSC.NotePlayer <Source>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -57,30 +49,30 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteFieldNoteData*) == 0x8);
     public:
     // Get instance field reference: private readonly VROSC.NotePlayer <Source>k__BackingField
-    ::VROSC::NotePlayer*& dyn_$Source$k__BackingField();
+    [[deprecated]] ::VROSC::NotePlayer*& dyn_$Source$k__BackingField();
     // Get instance field reference: private VROSC.NoteFieldNoteData <CurrentNote>k__BackingField
-    ::VROSC::NoteFieldNoteData*& dyn_$CurrentNote$k__BackingField();
+    [[deprecated]] ::VROSC::NoteFieldNoteData*& dyn_$CurrentNote$k__BackingField();
     // public VROSC.NotePlayer get_Source()
-    // Offset: 0x133E77C
+    // Offset: 0x19666E0
     ::VROSC::NotePlayer* get_Source();
     // public VROSC.NoteFieldNoteData get_CurrentNote()
-    // Offset: 0x133E78C
+    // Offset: 0x19666F0
     ::VROSC::NoteFieldNoteData* get_CurrentNote();
     // private System.Void set_CurrentNote(VROSC.NoteFieldNoteData value)
-    // Offset: 0x133E784
+    // Offset: 0x19666E8
     void set_CurrentNote(::VROSC::NoteFieldNoteData* value);
     // public System.Void .ctor(VROSC.NotePlayer source)
-    // Offset: 0x133E794
+    // Offset: 0x19666F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoardReciever::Player* New_ctor(::VROSC::NotePlayer* source) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardReciever::Player::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteBoardReciever::Player*, creationType>(source)));
     }
     // public System.Void Play(VROSC.NoteFieldNoteData note, VROSC.PlayData playData)
-    // Offset: 0x133E7C0
+    // Offset: 0x1966724
     void Play(::VROSC::NoteFieldNoteData* note, ::VROSC::PlayData playData);
     // public System.Void Stop()
-    // Offset: 0x133E848
+    // Offset: 0x19667AC
     void Stop();
   }; // VROSC.NoteBoardReciever/VROSC.Player
   #pragma pack(pop)

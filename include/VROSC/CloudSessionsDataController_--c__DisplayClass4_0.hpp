@@ -43,15 +43,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class CloudSessionsDataController::$$c__DisplayClass4_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.CloudSessionsDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -72,19 +64,19 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.CloudSessionsDataController <>4__this
-    ::VROSC::CloudSessionsDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::CloudSessionsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // System.Void <LoadCloudData>b__0(System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>> data)
-    // Offset: 0x135D840
+    // Offset: 0x9597F0
     void $LoadCloudData$b__0(::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>* data);
     // System.Void <LoadCloudData>b__1(VROSC.Error error)
-    // Offset: 0x135E63C
+    // Offset: 0x95A5EC
     void $LoadCloudData$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x135D838
+    // Offset: 0x9597E8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

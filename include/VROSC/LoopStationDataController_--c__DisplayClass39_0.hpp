@@ -13,15 +13,19 @@
 #include "beatsaber-hook/shared/utils/il2cpp-utils-properties.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
 #include "beatsaber-hook/shared/utils/utils.h"
+#include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
+// Forward declaring namespace: VROSC
+namespace VROSC {
+}
 // Forward declaring namespace: System
 namespace System {
+  // Forward declaring type: Action
+  class Action;
   // Forward declaring type: Action`1<T>
   template<typename T>
   class Action_1;
-  // Forward declaring type: Action
-  class Action;
 }
 // Completed forward declares
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
@@ -36,56 +40,47 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class LoopStationDataController::$$c__DisplayClass39_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
+    // Nested type: ::VROSC::LoopStationDataController::$$c__DisplayClass39_0::$$LoadData$b__0$d
+    struct $$LoadData$b__0$d;
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.LoopStationDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
     ::VROSC::LoopStationDataController* $$4__this;
     // Field size check
     static_assert(sizeof(::VROSC::LoopStationDataController*) == 0x8);
-    // public System.Action`1<VROSC.Error> onFailure
+    // public System.String sessionId
     // Size: 0x8
     // Offset: 0x18
-    ::System::Action_1<::VROSC::Error>* onFailure;
+    ::StringW sessionId;
     // Field size check
-    static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
-    // public System.Action <>9__0
+    static_assert(sizeof(::StringW) == 0x8);
+    // public System.Action onSuccess
     // Size: 0x8
     // Offset: 0x20
-    ::System::Action* $$9__0;
+    ::System::Action* onSuccess;
     // Field size check
     static_assert(sizeof(::System::Action*) == 0x8);
-    // public System.Action`1<VROSC.Error> <>9__1
+    // public System.Action`1<VROSC.Error> onFailure
     // Size: 0x8
     // Offset: 0x28
-    ::System::Action_1<::VROSC::Error>* $$9__1;
+    ::System::Action_1<::VROSC::Error>* onFailure;
     // Field size check
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.LoopStationDataController <>4__this
-    ::VROSC::LoopStationDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::LoopStationDataController*& dyn_$$4__this();
+    // Get instance field reference: public System.String sessionId
+    [[deprecated]] ::StringW& dyn_sessionId();
+    // Get instance field reference: public System.Action onSuccess
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
-    // Get instance field reference: public System.Action <>9__0
-    ::System::Action*& dyn_$$9__0();
-    // Get instance field reference: public System.Action`1<VROSC.Error> <>9__1
-    ::System::Action_1<::VROSC::Error>*& dyn_$$9__1();
-    // System.Void <SaveData>b__0()
-    // Offset: 0x13D5E40
-    void $SaveData$b__0();
-    // System.Void <SaveData>b__1(VROSC.Error error)
-    // Offset: 0x13D5E68
-    void $SaveData$b__1(::VROSC::Error error);
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    // System.Void <LoadData>b__0(System.String data)
+    // Offset: 0x195DC60
+    void $LoadData$b__0(::StringW data);
     // public System.Void .ctor()
-    // Offset: 0x13D5E38
+    // Offset: 0x195DC58
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -99,21 +94,13 @@ namespace VROSC {
   static_assert(sizeof(LoopStationDataController::$$c__DisplayClass39_0) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c__DisplayClass39_0::$SaveData$b__0
-// Il2CppName: <SaveData>b__0
+// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c__DisplayClass39_0::$LoadData$b__0
+// Il2CppName: <LoadData>b__0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationDataController::$$c__DisplayClass39_0::*)()>(&VROSC::LoopStationDataController::$$c__DisplayClass39_0::$SaveData$b__0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationDataController::$$c__DisplayClass39_0::*)(::StringW)>(&VROSC::LoopStationDataController::$$c__DisplayClass39_0::$LoadData$b__0)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c__DisplayClass39_0*), "<SaveData>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c__DisplayClass39_0::$SaveData$b__1
-// Il2CppName: <SaveData>b__1
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationDataController::$$c__DisplayClass39_0::*)(::VROSC::Error)>(&VROSC::LoopStationDataController::$$c__DisplayClass39_0::$SaveData$b__1)> {
-  static const MethodInfo* get() {
-    static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c__DisplayClass39_0*), "<SaveData>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+    static auto* data = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c__DisplayClass39_0*), "<LoadData>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data});
   }
 };
 // Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c__DisplayClass39_0::New_ctor

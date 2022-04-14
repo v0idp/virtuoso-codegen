@@ -54,28 +54,31 @@ namespace System::Globalization {
     // Set static field: static private System.UInt16[] s_pDigitValues
     static void _set_s_pDigitValues(::ArrayW<uint16_t> value);
     // static private System.Void .cctor()
-    // Offset: 0xBD00E0
+    // Offset: 0xE34920
     static void _cctor();
     // static System.Int32 InternalConvertToUtf32(System.String s, System.Int32 index)
-    // Offset: 0xBCFE90
+    // Offset: 0xE346D0
     static int InternalConvertToUtf32(::StringW s, int index);
+    // static System.Boolean IsWhiteSpace(System.String s, System.Int32 index)
+    // Offset: 0xE33CA4
+    static bool IsWhiteSpace(::StringW s, int index);
     // static System.Boolean IsWhiteSpace(System.Char c)
-    // Offset: 0xBCC8D4
+    // Offset: 0xE30E9C
     static bool IsWhiteSpace(::Il2CppChar c);
     // static public System.Globalization.UnicodeCategory GetUnicodeCategory(System.Char ch)
-    // Offset: 0xBCC63C
+    // Offset: 0xE30C04
     static ::System::Globalization::UnicodeCategory GetUnicodeCategory(::Il2CppChar ch);
     // static public System.Globalization.UnicodeCategory GetUnicodeCategory(System.String s, System.Int32 index)
-    // Offset: 0xBCF210
+    // Offset: 0xE337D8
     static ::System::Globalization::UnicodeCategory GetUnicodeCategory(::StringW s, int index);
     // static System.Globalization.UnicodeCategory InternalGetUnicodeCategory(System.Int32 ch)
-    // Offset: 0xBCF60C
+    // Offset: 0xE33E4C
     static ::System::Globalization::UnicodeCategory InternalGetUnicodeCategory(int ch);
     // static System.Byte InternalGetCategoryValue(System.Int32 ch, System.Int32 offset)
-    // Offset: 0xBCFFC8
+    // Offset: 0xE34808
     static uint8_t InternalGetCategoryValue(int ch, int offset);
     // static System.Globalization.UnicodeCategory InternalGetUnicodeCategory(System.String value, System.Int32 index)
-    // Offset: 0xBCF808
+    // Offset: 0xE34048
     static ::System::Globalization::UnicodeCategory InternalGetUnicodeCategory(::StringW value, int index);
   }; // System.Globalization.CharUnicodeInfo
   #pragma pack(pop)
@@ -97,6 +100,16 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::S
     static auto* s = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     static auto* index = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Globalization::CharUnicodeInfo*), "InternalConvertToUtf32", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{s, index});
+  }
+};
+// Writing MetadataGetter for method: System::Globalization::CharUnicodeInfo::IsWhiteSpace
+// Il2CppName: IsWhiteSpace
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::StringW, int)>(&System::Globalization::CharUnicodeInfo::IsWhiteSpace)> {
+  static const MethodInfo* get() {
+    static auto* s = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    static auto* index = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Globalization::CharUnicodeInfo*), "IsWhiteSpace", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{s, index});
   }
 };
 // Writing MetadataGetter for method: System::Globalization::CharUnicodeInfo::IsWhiteSpace

@@ -28,15 +28,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SimpleAppearObject : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _size
     // Size: 0x4
     // Offset: 0x18
@@ -67,27 +59,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _size
-    float& dyn__size();
+    [[deprecated]] float& dyn__size();
     // Get instance field reference: private System.Boolean _scaleEffect
-    bool& dyn__scaleEffect();
+    [[deprecated]] bool& dyn__scaleEffect();
     // Get instance field reference: private UnityEngine.Vector3 _originalScale
-    ::UnityEngine::Vector3& dyn__originalScale();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__originalScale();
     // Get instance field reference: private System.Boolean _setupDone
-    bool& dyn__setupDone();
+    [[deprecated]] bool& dyn__setupDone();
     // public System.Single get_Size()
-    // Offset: 0x13B5920
+    // Offset: 0x19287EC
     float get_Size();
     // public System.Void Setup()
-    // Offset: 0x13B5928
+    // Offset: 0x19287F4
     void Setup();
     // public System.Void UpdateAppearance(System.Single amount)
-    // Offset: 0x13B5974
+    // Offset: 0x1928840
     void UpdateAppearance(float amount);
     // private System.Void OnDrawGizmosSelected()
-    // Offset: 0x13B5A60
+    // Offset: 0x192892C
     void OnDrawGizmosSelected();
     // public System.Void .ctor()
-    // Offset: 0x13B5AB0
+    // Offset: 0x192897C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

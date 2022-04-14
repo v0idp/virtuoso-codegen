@@ -24,15 +24,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Session::Contributor : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String UserId
     // Size: 0x8
     // Offset: 0x10
@@ -59,15 +51,15 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String UserId
-    ::StringW& dyn_UserId();
+    [[deprecated]] ::StringW& dyn_UserId();
     // Get instance field reference: public System.String UserName
-    ::StringW& dyn_UserName();
+    [[deprecated]] ::StringW& dyn_UserName();
     // Get instance field reference: public System.String SessionId
-    ::StringW& dyn_SessionId();
+    [[deprecated]] ::StringW& dyn_SessionId();
     // Get instance field reference: public System.String Date
-    ::StringW& dyn_Date();
+    [[deprecated]] ::StringW& dyn_Date();
     // public System.Void .ctor()
-    // Offset: 0x134A0A4
+    // Offset: 0x8D501C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

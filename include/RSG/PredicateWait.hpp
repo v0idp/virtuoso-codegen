@@ -41,15 +41,7 @@ namespace RSG {
   // [TokenAttribute] Offset: FFFFFFFF
   class PredicateWait : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Func`2<RSG.TimeData,System.Boolean> predicate
     // Size: 0x8
     // Offset: 0x10
@@ -84,17 +76,17 @@ namespace RSG {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Func`2<RSG.TimeData,System.Boolean> predicate
-    ::System::Func_2<::RSG::TimeData, bool>*& dyn_predicate();
+    [[deprecated]] ::System::Func_2<::RSG::TimeData, bool>*& dyn_predicate();
     // Get instance field reference: public System.Single timeStarted
-    float& dyn_timeStarted();
+    [[deprecated]] float& dyn_timeStarted();
     // Get instance field reference: public RSG.IPendingPromise pendingPromise
-    ::RSG::IPendingPromise*& dyn_pendingPromise();
+    [[deprecated]] ::RSG::IPendingPromise*& dyn_pendingPromise();
     // Get instance field reference: public RSG.TimeData timeData
-    ::RSG::TimeData& dyn_timeData();
+    [[deprecated]] ::RSG::TimeData& dyn_timeData();
     // Get instance field reference: public System.Int32 frameStarted
-    int& dyn_frameStarted();
+    [[deprecated]] int& dyn_frameStarted();
     // public System.Void .ctor()
-    // Offset: 0x8FE28C
+    // Offset: 0xAE2B7C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

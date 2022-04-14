@@ -60,13 +60,13 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVR.OpenVR.HmdVector3_t vPoint
-    ::OVR::OpenVR::HmdVector3_t& dyn_vPoint();
+    [[deprecated]] ::OVR::OpenVR::HmdVector3_t& dyn_vPoint();
     // Get instance field reference: public OVR.OpenVR.HmdVector3_t vNormal
-    ::OVR::OpenVR::HmdVector3_t& dyn_vNormal();
+    [[deprecated]] ::OVR::OpenVR::HmdVector3_t& dyn_vNormal();
     // Get instance field reference: public OVR.OpenVR.HmdVector2_t vUVs
-    ::OVR::OpenVR::HmdVector2_t& dyn_vUVs();
+    [[deprecated]] ::OVR::OpenVR::HmdVector2_t& dyn_vUVs();
     // Get instance field reference: public System.Single fDistance
-    float& dyn_fDistance();
+    [[deprecated]] float& dyn_fDistance();
   }; // OVR.OpenVR.VROverlayIntersectionResults_t
   #pragma pack(pop)
   static check_size<sizeof(VROverlayIntersectionResults_t), 32 + sizeof(float)> __OVR_OpenVR_VROverlayIntersectionResults_tSizeCheck;

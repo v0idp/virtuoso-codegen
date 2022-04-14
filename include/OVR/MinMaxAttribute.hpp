@@ -28,15 +28,7 @@ namespace OVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class MinMaxAttribute : public ::UnityEngine::PropertyAttribute {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single minDefaultVal
     // Size: 0x4
     // Offset: 0x10
@@ -63,15 +55,15 @@ namespace OVR {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single minDefaultVal
-    float& dyn_minDefaultVal();
+    [[deprecated]] float& dyn_minDefaultVal();
     // Get instance field reference: public System.Single maxDefaultVal
-    float& dyn_maxDefaultVal();
+    [[deprecated]] float& dyn_maxDefaultVal();
     // Get instance field reference: public System.Single min
-    float& dyn_min();
+    [[deprecated]] float& dyn_min();
     // Get instance field reference: public System.Single max
-    float& dyn_max();
+    [[deprecated]] float& dyn_max();
     // public System.Void .ctor(System.Single minDefaultVal, System.Single maxDefaultVal, System.Single min, System.Single max)
-    // Offset: 0x12A6A30
+    // Offset: 0x18A45D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MinMaxAttribute* New_ctor(float minDefaultVal, float maxDefaultVal, float min, float max) {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::MinMaxAttribute::.ctor");

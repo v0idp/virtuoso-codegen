@@ -62,15 +62,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionsDataController : public ::VROSC::BaseDataController {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.Session _tempSession
     // Size: 0x8
     // Offset: 0x28
@@ -89,81 +81,81 @@ namespace VROSC {
     // Set static field: static protected System.String NewSessionName
     static void _set_NewSessionName(::StringW value);
     // static field const value: static public System.Int32 SessionsVersion
-    static constexpr const int SessionsVersion = 2;
+    static constexpr const int SessionsVersion = 3;
     // Get static field: static public System.Int32 SessionsVersion
     static int _get_SessionsVersion();
     // Set static field: static public System.Int32 SessionsVersion
     static void _set_SessionsVersion(int value);
     // Get instance field reference: protected VROSC.Session _tempSession
-    ::VROSC::Session*& dyn__tempSession();
+    [[deprecated]] ::VROSC::Session*& dyn__tempSession();
     // protected VROSC.SessionsDataModel get_SessionsDataModel()
-    // Offset: 0x13E9124
+    // Offset: 0x198863C
     ::VROSC::SessionsDataModel* get_SessionsDataModel();
     // public System.String CreateSession(System.String displayName, System.String description, System.Collections.Generic.List`1<System.Tuple`3<System.String,System.String,System.String>> contributors, System.String[] tags, System.String platformName, System.Int32 trackCount)
-    // Offset: 0x13E93A0
+    // Offset: 0x19888B8
     ::StringW CreateSession(::StringW displayName, ::StringW description, ::System::Collections::Generic::List_1<::System::Tuple_3<::StringW, ::StringW, ::StringW>*>* contributors, ::ArrayW<::StringW> tags, ::StringW platformName, int trackCount);
     // public System.String CreateSession(System.String displayName, System.String description, System.Collections.Generic.List`1<System.Tuple`3<System.String,System.String,System.String>> contributors, System.String[] tags, System.String userId, System.String userName, System.String platformName, System.Int32 trackCount)
-    // Offset: 0x13E97AC
+    // Offset: 0x1988CC4
     ::StringW CreateSession(::StringW displayName, ::StringW description, ::System::Collections::Generic::List_1<::System::Tuple_3<::StringW, ::StringW, ::StringW>*>* contributors, ::ArrayW<::StringW> tags, ::StringW userId, ::StringW userName, ::StringW platformName, int trackCount);
     // public System.Void CreateSession(System.String sessionId, System.String displayName, System.String description, System.Collections.Generic.List`1<System.Tuple`3<System.String,System.String,System.String>> contributors, System.String[] tags, System.String platformName, System.Int32 trackCount)
-    // Offset: 0x13E9434
+    // Offset: 0x198894C
     void CreateSession(::StringW sessionId, ::StringW displayName, ::StringW description, ::System::Collections::Generic::List_1<::System::Tuple_3<::StringW, ::StringW, ::StringW>*>* contributors, ::ArrayW<::StringW> tags, ::StringW platformName, int trackCount);
     // public System.Void RemoveSession(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13E98E0
+    // Offset: 0x1988DF8
     void RemoveSession(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Collections.Generic.List`1<System.String> GetSessionsIds()
-    // Offset: 0x13E9920
+    // Offset: 0x1988E38
     ::System::Collections::Generic::List_1<::StringW>* GetSessionsIds();
     // public System.Boolean HasSession(System.String sessionId)
-    // Offset: 0x13E999C
+    // Offset: 0x1988EB4
     bool HasSession(::StringW sessionId);
     // public System.Boolean HasSessionWithDisplayName(System.String displayName)
-    // Offset: 0x13E9A08
+    // Offset: 0x1988F20
     bool HasSessionWithDisplayName(::StringW displayName);
     // public System.Boolean HasSessionWithDisplayNameAndAuthor(System.String displayName, System.String authorId)
-    // Offset: 0x13E9BD4
+    // Offset: 0x19890EC
     bool HasSessionWithDisplayNameAndAuthor(::StringW displayName, ::StringW authorId);
     // public System.Int32 GetSessionVersion(System.String sessionId)
-    // Offset: 0x13E9E10
+    // Offset: 0x1989328
     int GetSessionVersion(::StringW sessionId);
     // public System.String GetSessionAuthorId(System.String sessionId)
-    // Offset: 0x13E9EF0
+    // Offset: 0x1989408
     ::StringW GetSessionAuthorId(::StringW sessionId);
     // public System.String GetSessionDisplayName(System.String sessionId)
-    // Offset: 0x13EA020
+    // Offset: 0x1989538
     ::StringW GetSessionDisplayName(::StringW sessionId);
     // public System.Collections.Generic.List`1<System.Tuple`3<System.String,System.String,System.String>> GetSessionContributors(System.String sessionId)
-    // Offset: 0x13EA098
+    // Offset: 0x19895B0
     ::System::Collections::Generic::List_1<::System::Tuple_3<::StringW, ::StringW, ::StringW>*>* GetSessionContributors(::StringW sessionId);
     // public System.Collections.Generic.List`1<VROSC.SessionUIData> GetSessionsUIData()
-    // Offset: 0x13EA350
+    // Offset: 0x1989868
     ::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* GetSessionsUIData();
     // public VROSC.SessionUIData GetSessionUIData(System.String sessionId)
-    // Offset: 0x13EA390
+    // Offset: 0x19898A8
     ::VROSC::SessionUIData* GetSessionUIData(::StringW sessionId);
     // public System.Void SetHasPreview(System.String sessionId, System.Boolean hasPreview, System.Single multiplier, VROSC.Session/VROSC.PreviewSource previewSource)
-    // Offset: 0x13EA3D0
+    // Offset: 0x19898E8
     void SetHasPreview(::StringW sessionId, bool hasPreview, float multiplier, ::VROSC::Session::PreviewSource previewSource);
     // public System.Boolean GetSessionHasPreview(System.String sessionId)
-    // Offset: 0x13EA494
+    // Offset: 0x19899AC
     bool GetSessionHasPreview(::StringW sessionId);
     // public System.Boolean IsSessionPreviewOgg(System.String sessionId)
-    // Offset: 0x13EA57C
+    // Offset: 0x1989A94
     bool IsSessionPreviewOgg(::StringW sessionId);
     // public System.Single GetSessionPreviewNormalizeMultiplier(System.String sessionId)
-    // Offset: 0x13EA584
+    // Offset: 0x1989B84
     float GetSessionPreviewNormalizeMultiplier(::StringW sessionId);
     // protected VROSC.Session GetSession(System.String sessionId)
-    // Offset: 0x13EA664
+    // Offset: 0x1989C64
     ::VROSC::Session* GetSession(::StringW sessionId);
     // protected System.String GenerateNewSessionId()
-    // Offset: 0x13EA718
+    // Offset: 0x1989D18
     ::StringW GenerateNewSessionId();
     // protected System.Void UserLoggedOut()
-    // Offset: 0x13EA758
+    // Offset: 0x1989D58
     void UserLoggedOut();
     // public System.Void .ctor()
-    // Offset: 0x13E91A0
+    // Offset: 0x19886B8
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -173,7 +165,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SessionsDataController*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x13E927C
+    // Offset: 0x1988794
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

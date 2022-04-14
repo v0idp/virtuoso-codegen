@@ -37,18 +37,18 @@ namespace VROSC {
   class LoopPlayerPlaybackWillStopState : public ::VROSC::LoopPlayerPlaybackFadeState {
     public:
     // public System.Void SetBySettings(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 loopStopSample, System.Boolean fromStopRequest)
-    // Offset: 0x907690
+    // Offset: 0x19BD62C
     void SetBySettings(::VROSC::LoopPlayerPlaybackSettings* settings, int loopStopSample, bool fromStopRequest);
     // protected System.Int32 GetStoppingPoint(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 sample)
-    // Offset: 0x908530
+    // Offset: 0x19BE4B4
     int GetStoppingPoint(::VROSC::LoopPlayerPlaybackSettings* settings, int sample);
     // public override System.Boolean get_Playing()
-    // Offset: 0x90842C
+    // Offset: 0x19BE3B0
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Boolean LoopPlayerPlaybackState::get_Playing()
     bool get_Playing();
     // public System.Void .ctor()
-    // Offset: 0x907620
+    // Offset: 0x19BD5BC
     // Implemented from: VROSC.LoopPlayerPlaybackFadeState
     // Base method: System.Void LoopPlayerPlaybackFadeState::.ctor()
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
@@ -59,17 +59,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackWillStopState*, creationType>()));
     }
     // public override System.String DebugString()
-    // Offset: 0x90843C
+    // Offset: 0x19BE3C0
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.String LoopPlayerPlaybackState::DebugString()
     ::StringW DebugString();
     // public override System.Void SetExplicit(System.Int32 startSample, System.Int32 stopSample)
-    // Offset: 0x908518
+    // Offset: 0x19BE49C
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::SetExplicit(System.Int32 startSample, System.Int32 stopSample)
     void SetExplicit(int startSample, int stopSample);
     // public override System.Void SetStateActive(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 atSample)
-    // Offset: 0x9085C4
+    // Offset: 0x19BE544
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::SetStateActive(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 atSample)
     void SetStateActive(::VROSC::LoopPlayerPlaybackSettings* settings, int atSample);

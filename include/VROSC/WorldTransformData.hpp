@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class WorldTransformData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Transform Transform
     // Size: 0x8
     // Offset: 0x10
@@ -72,25 +64,25 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: public UnityEngine.Transform Transform
-    ::UnityEngine::Transform*& dyn_Transform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_Transform();
     // Get instance field reference: public UnityEngine.Vector3 Position
-    ::UnityEngine::Vector3& dyn_Position();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_Position();
     // Get instance field reference: public UnityEngine.Quaternion Rotation
-    ::UnityEngine::Quaternion& dyn_Rotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_Rotation();
     // Get instance field reference: public UnityEngine.Vector3 LocalScale
-    ::UnityEngine::Vector3& dyn_LocalScale();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_LocalScale();
     // public System.Void .ctor(UnityEngine.Transform transform)
-    // Offset: 0x1356E14
+    // Offset: 0x953710
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WorldTransformData* New_ctor(::UnityEngine::Transform* transform) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WorldTransformData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WorldTransformData*, creationType>(transform)));
     }
     // public System.Void Update()
-    // Offset: 0x1356EB8
+    // Offset: 0x9537B4
     void Update();
     // public System.Void ResetTransform()
-    // Offset: 0x1356F20
+    // Offset: 0x95381C
     void ResetTransform();
   }; // VROSC.WorldTransformData
   #pragma pack(pop)

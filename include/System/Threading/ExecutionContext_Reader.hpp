@@ -47,33 +47,33 @@ namespace System::Threading {
       return m_ec;
     }
     // Get instance field reference: private System.Threading.ExecutionContext m_ec
-    ::System::Threading::ExecutionContext*& dyn_m_ec();
+    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_ec();
     // public System.Boolean get_IsNull()
-    // Offset: 0xDD45C8
+    // Offset: 0xE50C74
     bool get_IsNull();
     // public System.Boolean get_IsFlowSuppressed()
-    // Offset: 0xDD45F8
+    // Offset: 0xE50CA4
     bool get_IsFlowSuppressed();
     // public System.Threading.SynchronizationContext get_SynchronizationContext()
-    // Offset: 0xDD460C
+    // Offset: 0xE50CB8
     ::System::Threading::SynchronizationContext* get_SynchronizationContext();
     // public System.Threading.SynchronizationContext get_SynchronizationContextNoFlow()
-    // Offset: 0xDD4624
+    // Offset: 0xE50CD0
     ::System::Threading::SynchronizationContext* get_SynchronizationContextNoFlow();
     // public System.Runtime.Remoting.Messaging.LogicalCallContext/System.Runtime.Remoting.Messaging.Reader get_LogicalCallContext()
-    // Offset: 0xDD463C
+    // Offset: 0xE50CE8
     ::System::Runtime::Remoting::Messaging::LogicalCallContext::Reader get_LogicalCallContext();
     // public System.Void .ctor(System.Threading.ExecutionContext ec)
-    // Offset: 0xDD45B8
+    // Offset: 0xE50C64
     // ABORTED: conflicts with another method.  Reader(::System::Threading::ExecutionContext* ec);
     // public System.Threading.ExecutionContext DangerousGetRawExecutionContext()
-    // Offset: 0xDD45C0
+    // Offset: 0xE50C6C
     ::System::Threading::ExecutionContext* DangerousGetRawExecutionContext();
     // public System.Boolean IsDefaultFTContext(System.Boolean ignoreSyncCtx)
-    // Offset: 0xDD45D8
+    // Offset: 0xE50C84
     bool IsDefaultFTContext(bool ignoreSyncCtx);
     // public System.Boolean HasSameLocalValues(System.Threading.ExecutionContext other)
-    // Offset: 0xDD465C
+    // Offset: 0xE50D08
     bool HasSameLocalValues(::System::Threading::ExecutionContext* other);
   }; // System.Threading.ExecutionContext/System.Threading.Reader
   #pragma pack(pop)

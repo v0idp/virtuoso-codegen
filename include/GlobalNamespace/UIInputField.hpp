@@ -52,15 +52,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIInputField : public ::VROSC::UIInteractable {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.String _descriptionText
     // Size: 0x8
     // Offset: 0x88
@@ -107,53 +99,53 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: protected System.String _descriptionText
-    ::StringW& dyn__descriptionText();
+    [[deprecated]] ::StringW& dyn__descriptionText();
     // Get instance field reference: protected TMPro.TextMeshPro _textInput
-    ::TMPro::TextMeshPro*& dyn__textInput();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textInput();
     // Get instance field reference: protected TMPro.TextMeshPro _placeholderText
-    ::TMPro::TextMeshPro*& dyn__placeholderText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__placeholderText();
     // Get instance field reference: protected UnityEngine.GameObject _toggleObject
-    ::UnityEngine::GameObject*& dyn__toggleObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__toggleObject();
     // Get instance field reference: protected System.Boolean _isActive
-    bool& dyn__isActive();
+    [[deprecated]] bool& dyn__isActive();
     // Get instance field reference: public System.Action`1<UIInputField> OnSelected
-    ::System::Action_1<::GlobalNamespace::UIInputField*>*& dyn_OnSelected();
+    [[deprecated]] ::System::Action_1<::GlobalNamespace::UIInputField*>*& dyn_OnSelected();
     // Get instance field reference: public System.Action`1<System.String> OnValueChanged
-    ::System::Action_1<::StringW>*& dyn_OnValueChanged();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_OnValueChanged();
     // public System.String get_Text()
-    // Offset: 0x139C994
+    // Offset: 0x191024C
     ::StringW get_Text();
     // protected System.Void Awake()
-    // Offset: 0x139C9B8
+    // Offset: 0x1910270
     void Awake();
     // protected System.Void OnDestroy()
-    // Offset: 0x139CA90
+    // Offset: 0x1910348
     void OnDestroy();
     // public System.Void Toggle()
-    // Offset: 0x139CD54
+    // Offset: 0x191060C
     void Toggle();
     // public System.Void Select()
-    // Offset: 0x139CD68
+    // Offset: 0x1910620
     void Select();
     // public System.Void Deselect(System.Boolean releaseKeyboard)
-    // Offset: 0x139CB7C
+    // Offset: 0x1910434
     void Deselect(bool releaseKeyboard);
     // public System.Void SetText(System.String text)
-    // Offset: 0x139CFCC
+    // Offset: 0x1910884
     void SetText(::StringW text);
     // protected System.Void KeyboardClosed()
-    // Offset: 0x139D088
+    // Offset: 0x1910940
     void KeyboardClosed();
     // protected System.Void InputFieldPressed(VROSC.ClickData clickData)
-    // Offset: 0x139D090
+    // Offset: 0x1910948
     void InputFieldPressed(::VROSC::ClickData* clickData);
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x139C98C
+    // Offset: 0x1910244
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Boolean UIInteractable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x139D094
+    // Offset: 0x191094C
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
@@ -169,7 +161,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<UIInputField*, creationType>()));
     }
     // protected override System.Void OnDisable()
-    // Offset: 0x139CB50
+    // Offset: 0x1910408
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::OnDisable()
     void OnDisable();

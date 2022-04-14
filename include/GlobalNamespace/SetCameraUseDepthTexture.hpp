@@ -36,15 +36,7 @@ namespace GlobalNamespace {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class SetCameraUseDepthTexture : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Camera cam
     // Size: 0x8
     // Offset: 0x18
@@ -55,12 +47,12 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Camera cam
-    ::UnityEngine::Camera*& dyn_cam();
+    [[deprecated]] ::UnityEngine::Camera*& dyn_cam();
     // private System.Void Start()
-    // Offset: 0x13B1A2C
+    // Offset: 0x19248D0
     void Start();
     // public System.Void .ctor()
-    // Offset: 0x13B1A90
+    // Offset: 0x1924934
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

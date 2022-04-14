@@ -32,7 +32,7 @@ namespace VROSC {
   class MethodRunner::RunMethodEvent : public ::UnityEngine::Events::UnityEvent_1<::VROSC::Signal*> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x13DA3EC
+    // Offset: 0x1962108
     // Implemented from: UnityEngine.Events.UnityEvent`1
     // Base method: System.Void UnityEvent_1::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

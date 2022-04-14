@@ -30,7 +30,7 @@ namespace UnityEngine {
   class Internal_SubsystemDescriptors : public ::Il2CppObject {
     public:
     // static System.Void Internal_AddDescriptor(UnityEngine.SubsystemDescriptor descriptor)
-    // Offset: 0x12FE0A8
+    // Offset: 0x1903A4C
     static void Internal_AddDescriptor(::UnityEngine::SubsystemDescriptor* descriptor);
   }; // UnityEngine.Internal_SubsystemDescriptors
   #pragma pack(pop)

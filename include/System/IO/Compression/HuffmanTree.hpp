@@ -34,15 +34,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class HuffmanTree : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Int32 _tableBits
     // Size: 0x4
     // Offset: 0x10
@@ -91,47 +83,47 @@ namespace System::IO::Compression {
     // Set static field: static private readonly System.IO.Compression.HuffmanTree <StaticDistanceTree>k__BackingField
     static void _set_$StaticDistanceTree$k__BackingField(::System::IO::Compression::HuffmanTree* value);
     // Get instance field reference: private readonly System.Int32 _tableBits
-    int& dyn__tableBits();
+    [[deprecated]] int& dyn__tableBits();
     // Get instance field reference: private readonly System.Int16[] _table
-    ::ArrayW<int16_t>& dyn__table();
+    [[deprecated]] ::ArrayW<int16_t>& dyn__table();
     // Get instance field reference: private readonly System.Int16[] _left
-    ::ArrayW<int16_t>& dyn__left();
+    [[deprecated]] ::ArrayW<int16_t>& dyn__left();
     // Get instance field reference: private readonly System.Int16[] _right
-    ::ArrayW<int16_t>& dyn__right();
+    [[deprecated]] ::ArrayW<int16_t>& dyn__right();
     // Get instance field reference: private readonly System.Byte[] _codeLengthArray
-    ::ArrayW<uint8_t>& dyn__codeLengthArray();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__codeLengthArray();
     // Get instance field reference: private readonly System.Int32 _tableMask
-    int& dyn__tableMask();
+    [[deprecated]] int& dyn__tableMask();
     // static public System.IO.Compression.HuffmanTree get_StaticLiteralLengthTree()
-    // Offset: 0x111ECA4
+    // Offset: 0x1696510
     static ::System::IO::Compression::HuffmanTree* get_StaticLiteralLengthTree();
     // static public System.IO.Compression.HuffmanTree get_StaticDistanceTree()
-    // Offset: 0x111ED08
+    // Offset: 0x1696574
     static ::System::IO::Compression::HuffmanTree* get_StaticDistanceTree();
     // public System.Void .ctor(System.Byte[] codeLengths)
-    // Offset: 0x111ED6C
+    // Offset: 0x16965D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HuffmanTree* New_ctor(::ArrayW<uint8_t> codeLengths) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::HuffmanTree::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<HuffmanTree*, creationType>(codeLengths)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x111F628
+    // Offset: 0x1696E94
     static void _cctor();
     // static private System.Byte[] GetStaticLiteralTreeLength()
-    // Offset: 0x111F004
+    // Offset: 0x1696870
     static ::ArrayW<uint8_t> GetStaticLiteralTreeLength();
     // static private System.Byte[] GetStaticDistanceTreeLength()
-    // Offset: 0x111F100
+    // Offset: 0x169696C
     static ::ArrayW<uint8_t> GetStaticDistanceTreeLength();
     // private System.UInt32[] CalculateHuffmanCode()
-    // Offset: 0x111F18C
+    // Offset: 0x16969F8
     ::ArrayW<uint> CalculateHuffmanCode();
     // private System.Void CreateTable()
-    // Offset: 0x111EE44
+    // Offset: 0x16966B0
     void CreateTable();
     // public System.Int32 GetNextSymbol(System.IO.Compression.InputBuffer input)
-    // Offset: 0x111F3B0
+    // Offset: 0x1696C1C
     int GetNextSymbol(::System::IO::Compression::InputBuffer* input);
   }; // System.IO.Compression.HuffmanTree
   #pragma pack(pop)

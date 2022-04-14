@@ -25,15 +25,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScalePreset::NotePriority : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.Note Note
     // Size: 0x4
     // Offset: 0x10
@@ -48,11 +40,11 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public VROSC.Note Note
-    ::VROSC::Note& dyn_Note();
+    [[deprecated]] ::VROSC::Note& dyn_Note();
     // Get instance field reference: public System.Int32 Priority
-    int& dyn_Priority();
+    [[deprecated]] int& dyn_Priority();
     // public System.Void .ctor(VROSC.Note note, System.Int32 priority)
-    // Offset: 0x1349464
+    // Offset: 0x8D43DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScalePreset::NotePriority* New_ctor(::VROSC::Note note, int priority) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScalePreset::NotePriority::.ctor");

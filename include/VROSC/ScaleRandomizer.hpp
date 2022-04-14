@@ -38,15 +38,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ScaleRandomizer::RandomTarget
     class RandomTarget;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ScaleRandomizer/VROSC.RandomTarget[] _randomTargets
     // Size: 0x8
     // Offset: 0x40
@@ -55,9 +47,9 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::ScaleRandomizer::RandomTarget*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.ScaleRandomizer/VROSC.RandomTarget[] _randomTargets
-    ::ArrayW<::VROSC::ScaleRandomizer::RandomTarget*>& dyn__randomTargets();
+    [[deprecated]] ::ArrayW<::VROSC::ScaleRandomizer::RandomTarget*>& dyn__randomTargets();
     // public System.Void .ctor()
-    // Offset: 0x13DFF44
+    // Offset: 0xDE4618
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -72,7 +64,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ScaleRandomizer*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13DFD20
+    // Offset: 0xDE43F4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);

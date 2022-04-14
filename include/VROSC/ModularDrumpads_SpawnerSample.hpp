@@ -32,15 +32,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ModularDrumpads::SpawnerSample : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.DrumpadSpawner Spawner
     // Size: 0x8
     // Offset: 0x10
@@ -55,11 +47,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SampleGroup*) == 0x8);
     public:
     // Get instance field reference: public VROSC.DrumpadSpawner Spawner
-    ::VROSC::DrumpadSpawner*& dyn_Spawner();
+    [[deprecated]] ::VROSC::DrumpadSpawner*& dyn_Spawner();
     // Get instance field reference: public VROSC.SampleGroup SampleGroup
-    ::VROSC::SampleGroup*& dyn_SampleGroup();
+    [[deprecated]] ::VROSC::SampleGroup*& dyn_SampleGroup();
     // public System.Void .ctor()
-    // Offset: 0x13DCC10
+    // Offset: 0x196492C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

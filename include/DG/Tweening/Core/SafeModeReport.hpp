@@ -63,42 +63,42 @@ namespace DG::Tweening::Core {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 <totMissingTargetOrFieldErrors>k__BackingField
-    int& dyn_$totMissingTargetOrFieldErrors$k__BackingField();
+    [[deprecated]] int& dyn_$totMissingTargetOrFieldErrors$k__BackingField();
     // Get instance field reference: private System.Int32 <totCallbackErrors>k__BackingField
-    int& dyn_$totCallbackErrors$k__BackingField();
+    [[deprecated]] int& dyn_$totCallbackErrors$k__BackingField();
     // Get instance field reference: private System.Int32 <totStartupErrors>k__BackingField
-    int& dyn_$totStartupErrors$k__BackingField();
+    [[deprecated]] int& dyn_$totStartupErrors$k__BackingField();
     // Get instance field reference: private System.Int32 <totUnsetErrors>k__BackingField
-    int& dyn_$totUnsetErrors$k__BackingField();
+    [[deprecated]] int& dyn_$totUnsetErrors$k__BackingField();
     // public System.Int32 get_totMissingTargetOrFieldErrors()
-    // Offset: 0x10A3274
+    // Offset: 0x15E589C
     int get_totMissingTargetOrFieldErrors();
     // private System.Void set_totMissingTargetOrFieldErrors(System.Int32 value)
-    // Offset: 0x10A327C
+    // Offset: 0x15E58A4
     void set_totMissingTargetOrFieldErrors(int value);
     // public System.Int32 get_totCallbackErrors()
-    // Offset: 0x10A3284
+    // Offset: 0x15E58AC
     int get_totCallbackErrors();
     // private System.Void set_totCallbackErrors(System.Int32 value)
-    // Offset: 0x10A328C
+    // Offset: 0x15E58B4
     void set_totCallbackErrors(int value);
     // public System.Int32 get_totStartupErrors()
-    // Offset: 0x10A3294
+    // Offset: 0x15E58BC
     int get_totStartupErrors();
     // private System.Void set_totStartupErrors(System.Int32 value)
-    // Offset: 0x10A329C
+    // Offset: 0x15E58C4
     void set_totStartupErrors(int value);
     // public System.Int32 get_totUnsetErrors()
-    // Offset: 0x10A32A4
+    // Offset: 0x15E58CC
     int get_totUnsetErrors();
     // private System.Void set_totUnsetErrors(System.Int32 value)
-    // Offset: 0x10A32AC
+    // Offset: 0x15E58D4
     void set_totUnsetErrors(int value);
     // public System.Void Add(DG.Tweening.Core.SafeModeReport/DG.Tweening.Core.SafeModeReportType type)
-    // Offset: 0x10A32B4
+    // Offset: 0x15E58DC
     void Add(::DG::Tweening::Core::SafeModeReport::SafeModeReportType type);
     // public System.Int32 GetTotErrors()
-    // Offset: 0x1099FE4
+    // Offset: 0x15DC60C
     int GetTotErrors();
   }; // DG.Tweening.Core.SafeModeReport
   #pragma pack(pop)

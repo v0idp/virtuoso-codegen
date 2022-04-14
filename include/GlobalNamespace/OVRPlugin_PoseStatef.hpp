@@ -74,19 +74,19 @@ namespace GlobalNamespace {
     // Set static field: static public readonly OVRPlugin/PoseStatef identity
     static void _set_identity(::GlobalNamespace::OVRPlugin::PoseStatef value);
     // Get instance field reference: public OVRPlugin/Posef Pose
-    ::GlobalNamespace::OVRPlugin::Posef& dyn_Pose();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Posef& dyn_Pose();
     // Get instance field reference: public OVRPlugin/Vector3f Velocity
-    ::GlobalNamespace::OVRPlugin::Vector3f& dyn_Velocity();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector3f& dyn_Velocity();
     // Get instance field reference: public OVRPlugin/Vector3f Acceleration
-    ::GlobalNamespace::OVRPlugin::Vector3f& dyn_Acceleration();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector3f& dyn_Acceleration();
     // Get instance field reference: public OVRPlugin/Vector3f AngularVelocity
-    ::GlobalNamespace::OVRPlugin::Vector3f& dyn_AngularVelocity();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector3f& dyn_AngularVelocity();
     // Get instance field reference: public OVRPlugin/Vector3f AngularAcceleration
-    ::GlobalNamespace::OVRPlugin::Vector3f& dyn_AngularAcceleration();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector3f& dyn_AngularAcceleration();
     // Get instance field reference: public System.Double Time
-    double& dyn_Time();
+    [[deprecated]] double& dyn_Time();
     // static private System.Void .cctor()
-    // Offset: 0xF138CC
+    // Offset: 0x13ED8C8
     static void _cctor();
   }; // OVRPlugin/PoseStatef
   #pragma pack(pop)

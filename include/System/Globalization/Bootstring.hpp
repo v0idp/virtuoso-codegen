@@ -27,15 +27,7 @@ namespace System::Globalization {
   // [TokenAttribute] Offset: FFFFFFFF
   class Bootstring : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Char delimiter
     // Size: 0x2
     // Offset: 0x10
@@ -88,42 +80,42 @@ namespace System::Globalization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.Char delimiter
-    ::Il2CppChar& dyn_delimiter();
+    [[deprecated]] ::Il2CppChar& dyn_delimiter();
     // Get instance field reference: private readonly System.Int32 base_num
-    int& dyn_base_num();
+    [[deprecated]] int& dyn_base_num();
     // Get instance field reference: private readonly System.Int32 tmin
-    int& dyn_tmin();
+    [[deprecated]] int& dyn_tmin();
     // Get instance field reference: private readonly System.Int32 tmax
-    int& dyn_tmax();
+    [[deprecated]] int& dyn_tmax();
     // Get instance field reference: private readonly System.Int32 skew
-    int& dyn_skew();
+    [[deprecated]] int& dyn_skew();
     // Get instance field reference: private readonly System.Int32 damp
-    int& dyn_damp();
+    [[deprecated]] int& dyn_damp();
     // Get instance field reference: private readonly System.Int32 initial_bias
-    int& dyn_initial_bias();
+    [[deprecated]] int& dyn_initial_bias();
     // Get instance field reference: private readonly System.Int32 initial_n
-    int& dyn_initial_n();
+    [[deprecated]] int& dyn_initial_n();
     // public System.Void .ctor(System.Char delimiter, System.Int32 baseNum, System.Int32 tmin, System.Int32 tmax, System.Int32 skew, System.Int32 damp, System.Int32 initialBias, System.Int32 initialN)
-    // Offset: 0xCCC610
+    // Offset: 0xFEE648
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Bootstring* New_ctor(::Il2CppChar delimiter, int baseNum, int tmin, int tmax, int skew, int damp, int initialBias, int initialN) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Globalization::Bootstring::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Bootstring*, creationType>(delimiter, baseNum, tmin, tmax, skew, damp, initialBias, initialN)));
     }
     // public System.String Encode(System.String s, System.Int32 offset)
-    // Offset: 0xCCC688
+    // Offset: 0xFEE6C0
     ::StringW Encode(::StringW s, int offset);
     // private System.Char EncodeDigit(System.Int32 d)
-    // Offset: 0xCCC9F0
+    // Offset: 0xFEEA28
     ::Il2CppChar EncodeDigit(int d);
     // private System.Int32 DecodeDigit(System.Char c)
-    // Offset: 0xCCCA80
+    // Offset: 0xFEEAB8
     int DecodeDigit(::Il2CppChar c);
     // private System.Int32 Adapt(System.Int32 delta, System.Int32 numPoints, System.Boolean firstTime)
-    // Offset: 0xCCCA08
+    // Offset: 0xFEEA40
     int Adapt(int delta, int numPoints, bool firstTime);
     // public System.String Decode(System.String s, System.Int32 offset)
-    // Offset: 0xCCCAC0
+    // Offset: 0xFEEAF8
     ::StringW Decode(::StringW s, int offset);
   }; // System.Globalization.Bootstring
   #pragma pack(pop)

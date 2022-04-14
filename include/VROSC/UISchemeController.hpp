@@ -33,15 +33,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UISchemeController : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UI.UIScheme _uIScheme
     // Size: 0x8
     // Offset: 0x10
@@ -54,15 +46,15 @@ namespace VROSC {
       return uIScheme;
     }
     // Get instance field reference: private VROSC.UI.UIScheme _uIScheme
-    ::VROSC::UI::UIScheme*& dyn__uIScheme();
+    [[deprecated]] ::VROSC::UI::UIScheme*& dyn__uIScheme();
     // public VROSC.UI.UIScheme get_UIScheme()
-    // Offset: 0x139FE10
+    // Offset: 0x191373C
     ::VROSC::UI::UIScheme* get_UIScheme();
     // System.Void Setup()
-    // Offset: 0x139FE18
+    // Offset: 0x1913744
     void Setup();
     // public System.Void .ctor()
-    // Offset: 0x139FE68
+    // Offset: 0x1913794
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

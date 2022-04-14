@@ -37,15 +37,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class TransactionManagerProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -64,31 +56,31 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC41250
+    // Offset: 0xD657AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransactionManagerProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::TransactionManagerProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TransactionManagerProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // public System.Void .ctor(Firebase.Firestore.FirestoreProxy firestore)
-    // Offset: 0xC41000
+    // Offset: 0xD6556C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransactionManagerProxy* New_ctor(::Firebase::Firestore::FirestoreProxy* firestore) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::TransactionManagerProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TransactionManagerProxy*, creationType>(firestore)));
     }
     // public System.Void Dispose()
-    // Offset: 0xC41324
+    // Offset: 0xD65880
     void Dispose();
     // public System.Void CppDispose()
-    // Offset: 0xC4112C
+    // Offset: 0xD65690
     void CppDispose();
     // protected override System.Void Finalize()
-    // Offset: 0xC412B4
+    // Offset: 0xD65810
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

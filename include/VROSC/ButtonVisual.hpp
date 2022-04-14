@@ -45,15 +45,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ButtonVisual : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.MeshFilter _meshFilter
     // Size: 0x8
     // Offset: 0x18
@@ -72,7 +64,7 @@ namespace VROSC {
     ::UnityEngine::Mesh* inactiveMesh;
     // Field size check
     static_assert(sizeof(::UnityEngine::Mesh*) == 0x8);
-    // [HeaderAttribute] Offset: 0x672C14
+    // [HeaderAttribute] Offset: 0x788EC8
     // private TMPro.TextMeshPro _text
     // Size: 0x8
     // Offset: 0x30
@@ -107,35 +99,35 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.MeshFilter _meshFilter
-    ::UnityEngine::MeshFilter*& dyn__meshFilter();
+    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
     // Get instance field reference: private UnityEngine.Mesh _activeMesh
-    ::UnityEngine::Mesh*& dyn__activeMesh();
+    [[deprecated]] ::UnityEngine::Mesh*& dyn__activeMesh();
     // Get instance field reference: private UnityEngine.Mesh _inactiveMesh
-    ::UnityEngine::Mesh*& dyn__inactiveMesh();
+    [[deprecated]] ::UnityEngine::Mesh*& dyn__inactiveMesh();
     // Get instance field reference: private TMPro.TextMeshPro _text
-    ::TMPro::TextMeshPro*& dyn__text();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__text();
     // Get instance field reference: private UnityEngine.Color _activeTextColor
-    ::UnityEngine::Color& dyn__activeTextColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__activeTextColor();
     // Get instance field reference: private UnityEngine.Color _inActiveTextColor
-    ::UnityEngine::Color& dyn__inActiveTextColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__inActiveTextColor();
     // Get instance field reference: private UnityEngine.Color _hoverColor
-    ::UnityEngine::Color& dyn__hoverColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__hoverColor();
     // Get instance field reference: private System.Boolean _active
-    bool& dyn__active();
+    [[deprecated]] bool& dyn__active();
     // public System.Void SetText(System.String text)
-    // Offset: 0x1326E3C
+    // Offset: 0x93B940
     void SetText(::StringW text);
     // public System.Void SetHovering(System.Boolean hovering)
-    // Offset: 0x1326E54
+    // Offset: 0x93B958
     void SetHovering(bool hovering);
     // public System.Void SetActive(System.Boolean active)
-    // Offset: 0x1326F50
+    // Offset: 0x93BA54
     void SetActive(bool active);
     // private System.Void AutoFind()
-    // Offset: 0x1327088
+    // Offset: 0x93BB8C
     void AutoFind();
     // public System.Void .ctor()
-    // Offset: 0x1327170
+    // Offset: 0x93BC74
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

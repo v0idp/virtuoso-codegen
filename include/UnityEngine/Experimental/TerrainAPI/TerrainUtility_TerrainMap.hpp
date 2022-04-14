@@ -82,11 +82,11 @@ namespace UnityEngine::Experimental::TerrainAPI {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.Int32 tileX
-      int& dyn_tileX();
+      [[deprecated]] int& dyn_tileX();
       // Get instance field reference: public readonly System.Int32 tileZ
-      int& dyn_tileZ();
+      [[deprecated]] int& dyn_tileZ();
       // public System.Void .ctor(System.Int32 tileX, System.Int32 tileZ)
-      // Offset: 0x12E25BC
+      // Offset: 0x18E6830
       // ABORTED: conflicts with another method.  TileCoord(int tileX, int tileZ);
     }; // UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.TileCoord
     #pragma pack(pop)
@@ -141,20 +141,12 @@ namespace UnityEngine::Experimental::TerrainAPI {
       // Set static field: static public UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.ErrorCode EdgeAlignmentMismatch
       static void _set_EdgeAlignmentMismatch(::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::ErrorCode value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.ErrorCode
     #pragma pack(pop)
     static check_size<sizeof(TerrainUtility::TerrainMap::ErrorCode), 0 + sizeof(int)> __UnityEngine_Experimental_TerrainAPI_TerrainUtility_TerrainMap_ErrorCodeSizeCheck;
     static_assert(sizeof(TerrainUtility::TerrainMap::ErrorCode) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 m_patchSize
     // Size: 0xC
     // Offset: 0x10
@@ -175,34 +167,34 @@ namespace UnityEngine::Experimental::TerrainAPI {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TileCoord, ::UnityEngine::Terrain*>*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector3 m_patchSize
-    ::UnityEngine::Vector3& dyn_m_patchSize();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_m_patchSize();
     // Get instance field reference: public UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.ErrorCode m_errorCode
-    ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::ErrorCode& dyn_m_errorCode();
+    [[deprecated]] ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::ErrorCode& dyn_m_errorCode();
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.TileCoord,UnityEngine.Terrain> m_terrainTiles
-    ::System::Collections::Generic::Dictionary_2<::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TileCoord, ::UnityEngine::Terrain*>*& dyn_m_terrainTiles();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TileCoord, ::UnityEngine::Terrain*>*& dyn_m_terrainTiles();
     // public UnityEngine.Terrain GetTerrain(System.Int32 tileX, System.Int32 tileZ)
-    // Offset: 0x12E2104
+    // Offset: 0x18E6378
     ::UnityEngine::Terrain* GetTerrain(int tileX, int tileZ);
     // static public UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap CreateFromPlacement(UnityEngine.Terrain originTerrain, UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.TerrainFilter filter, System.Boolean fullValidation)
-    // Offset: 0x12E1A90
+    // Offset: 0x18E5D04
     static ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap* CreateFromPlacement(::UnityEngine::Terrain* originTerrain, ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TerrainFilter* filter, bool fullValidation);
     // static public UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap CreateFromPlacement(UnityEngine.Vector2 gridOrigin, UnityEngine.Vector2 gridSize, UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.TerrainFilter filter, System.Boolean fullValidation)
-    // Offset: 0x12E25CC
+    // Offset: 0x18E6840
     static ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap* CreateFromPlacement(::UnityEngine::Vector2 gridOrigin, ::UnityEngine::Vector2 gridSize, ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TerrainFilter* filter, bool fullValidation);
     // private System.Void AddTerrainInternal(System.Int32 x, System.Int32 z, UnityEngine.Terrain terrain)
-    // Offset: 0x12E2EC4
+    // Offset: 0x18E7138
     void AddTerrainInternal(int x, int z, ::UnityEngine::Terrain* terrain);
     // private System.Boolean TryToAddTerrain(System.Int32 tileX, System.Int32 tileZ, UnityEngine.Terrain terrain)
-    // Offset: 0x12E2C64
+    // Offset: 0x18E6ED8
     bool TryToAddTerrain(int tileX, int tileZ, ::UnityEngine::Terrain* terrain);
     // private System.Void ValidateTerrain(System.Int32 tileX, System.Int32 tileZ)
-    // Offset: 0x12E2FCC
+    // Offset: 0x18E7240
     void ValidateTerrain(int tileX, int tileZ);
     // private UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.ErrorCode Validate()
-    // Offset: 0x12E2D94
+    // Offset: 0x18E7008
     ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::ErrorCode Validate();
     // public System.Void .ctor()
-    // Offset: 0x12E2864
+    // Offset: 0x18E6AD8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

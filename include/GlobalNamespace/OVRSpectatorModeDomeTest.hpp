@@ -52,15 +52,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::OVRSpectatorModeDomeTest::$TimerCoroutine$d__20
     class $TimerCoroutine$d__20;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean inited
     // Size: 0x1
     // Offset: 0x18
@@ -153,59 +145,59 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single elevationLimit
     static void _set_elevationLimit(float value);
     // Get instance field reference: private System.Boolean inited
-    bool& dyn_inited();
+    [[deprecated]] bool& dyn_inited();
     // Get instance field reference: public UnityEngine.Camera defaultExternalCamera
-    ::UnityEngine::Camera*& dyn_defaultExternalCamera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn_defaultExternalCamera();
     // Get instance field reference: private OVRPlugin/Fovf defaultFov
-    ::GlobalNamespace::OVRPlugin::Fovf& dyn_defaultFov();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Fovf& dyn_defaultFov();
     // Get instance field reference: public UnityEngine.Transform SpectatorAnchor
-    ::UnityEngine::Transform*& dyn_SpectatorAnchor();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_SpectatorAnchor();
     // Get instance field reference: public UnityEngine.Transform Head
-    ::UnityEngine::Transform*& dyn_Head();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_Head();
     // Get instance field reference: private OVRPlugin/Media/PlatformCameraMode camMode
-    ::GlobalNamespace::OVRPlugin::Media::PlatformCameraMode& dyn_camMode();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Media::PlatformCameraMode& dyn_camMode();
     // Get instance field reference: private System.Boolean readyToSwitch
-    bool& dyn_readyToSwitch();
+    [[deprecated]] bool& dyn_readyToSwitch();
     // Get instance field reference: private UnityEngine.Transform SpectatorCamera
-    ::UnityEngine::Transform*& dyn_SpectatorCamera();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_SpectatorCamera();
     // Get instance field reference: private System.Single distance
-    float& dyn_distance();
+    [[deprecated]] float& dyn_distance();
     // Get instance field reference: private System.Single elevation
-    float& dyn_elevation();
+    [[deprecated]] float& dyn_elevation();
     // Get instance field reference: private System.Single polar
-    float& dyn_polar();
+    [[deprecated]] float& dyn_polar();
     // private System.Void Awake()
-    // Offset: 0x6E9500
+    // Offset: 0x7FFC04
     void Awake();
     // private System.Void Start()
-    // Offset: 0x6E969C
+    // Offset: 0x7FFDA0
     void Start();
     // private System.Void Initialize()
-    // Offset: 0x6E9760
+    // Offset: 0x7FFE64
     void Initialize();
     // private System.Void UpdateDefaultExternalCamera()
-    // Offset: 0x6E9AF8
+    // Offset: 0x8001FC
     void UpdateDefaultExternalCamera();
     // private System.Void UpdateSpectatorCameraStatus()
-    // Offset: 0x6E9F64
+    // Offset: 0x800668
     void UpdateSpectatorCameraStatus();
     // private UnityEngine.Vector3 SpectatorCameraDomePosition(UnityEngine.Vector3 spectatorAnchorPosition, System.Single d, System.Single e, System.Single p)
-    // Offset: 0x6EA738
+    // Offset: 0x800E3C
     ::UnityEngine::Vector3 SpectatorCameraDomePosition(::UnityEngine::Vector3 spectatorAnchorPosition, float d, float e, float p);
     // private System.Collections.IEnumerator TimerCoroutine()
-    // Offset: 0x6EA6CC
+    // Offset: 0x800DD0
     ::System::Collections::IEnumerator* TimerCoroutine();
     // private System.Void Update()
-    // Offset: 0x6EA7EC
+    // Offset: 0x800EF0
     void Update();
     // private System.Void OnApplicationPause()
-    // Offset: 0x6EA970
+    // Offset: 0x801074
     void OnApplicationPause();
     // private System.Void OnApplicationQuit()
-    // Offset: 0x6EA9D4
+    // Offset: 0x8010D8
     void OnApplicationQuit();
     // public System.Void .ctor()
-    // Offset: 0x6EAA38
+    // Offset: 0x80113C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

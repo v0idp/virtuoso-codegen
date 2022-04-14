@@ -35,20 +35,20 @@ namespace NatSuite::Devices::Internal {
   class Bridge::FrameDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x135B970
+    // Offset: 0x957ED8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Bridge::FrameDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::Bridge::FrameDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Bridge::FrameDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.IntPtr context, System.IntPtr pixelBuffer, System.Int32 width, System.Int32 height, System.Int64 timestamp)
-    // Offset: 0x135B980
+    // Offset: 0x957EE8
     void Invoke(::System::IntPtr context, ::System::IntPtr pixelBuffer, int width, int height, int64_t timestamp);
     // public System.IAsyncResult BeginInvoke(System.IntPtr context, System.IntPtr pixelBuffer, System.Int32 width, System.Int32 height, System.Int64 timestamp, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x135BC04
+    // Offset: 0x95816C
     ::System::IAsyncResult* BeginInvoke(::System::IntPtr context, ::System::IntPtr pixelBuffer, int width, int height, int64_t timestamp, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x135BD10
+    // Offset: 0x958278
     void EndInvoke(::System::IAsyncResult* result);
   }; // NatSuite.Devices.Internal.Bridge/NatSuite.Devices.Internal.FrameDelegate
   #pragma pack(pop)

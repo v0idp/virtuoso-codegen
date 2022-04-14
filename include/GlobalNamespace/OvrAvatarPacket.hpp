@@ -44,15 +44,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarPacket : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.IntPtr ovrNativePacket
     // Size: 0x8
     // Offset: 0x10
@@ -79,47 +71,47 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*) == 0x8);
     public:
     // Get instance field reference: public System.IntPtr ovrNativePacket
-    ::System::IntPtr& dyn_ovrNativePacket();
+    [[deprecated]] ::System::IntPtr& dyn_ovrNativePacket();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single> frameTimes
-    ::System::Collections::Generic::List_1<float>*& dyn_frameTimes();
+    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn_frameTimes();
     // Get instance field reference: private System.Collections.Generic.List`1<OvrAvatarDriver/PoseFrame> frames
-    ::System::Collections::Generic::List_1<::GlobalNamespace::OvrAvatarDriver::PoseFrame>*& dyn_frames();
+    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OvrAvatarDriver::PoseFrame>*& dyn_frames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Byte[]> encodedAudioPackets
-    ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_encodedAudioPackets();
+    [[deprecated]] ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_encodedAudioPackets();
     // public System.Single get_Duration()
-    // Offset: 0x923CCC
+    // Offset: 0xF84EA0
     float get_Duration();
     // public OvrAvatarDriver/PoseFrame get_FinalFrame()
-    // Offset: 0x923E18
+    // Offset: 0xF84FEC
     ::GlobalNamespace::OvrAvatarDriver::PoseFrame get_FinalFrame();
     // public System.Void .ctor(OvrAvatarDriver/PoseFrame initialPose)
-    // Offset: 0x923B30
+    // Offset: 0xF84D04
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarPacket* New_ctor(::GlobalNamespace::OvrAvatarDriver::PoseFrame initialPose) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarPacket::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarPacket*, creationType>(initialPose)));
     }
     // private System.Void .ctor(System.Collections.Generic.List`1<System.Single> frameTimes, System.Collections.Generic.List`1<OvrAvatarDriver/PoseFrame> frames, System.Collections.Generic.List`1<System.Byte[]> audioPackets)
-    // Offset: 0x92DD2C
+    // Offset: 0xF8F188
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarPacket* New_ctor(::System::Collections::Generic::List_1<float>* frameTimes, ::System::Collections::Generic::List_1<::GlobalNamespace::OvrAvatarDriver::PoseFrame>* frames, ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>* audioPackets) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarPacket::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarPacket*, creationType>(frameTimes, frames, audioPackets)));
     }
     // public System.Void AddFrame(OvrAvatarDriver/PoseFrame frame, System.Single deltaSeconds)
-    // Offset: 0x923D40
+    // Offset: 0xF84F14
     void AddFrame(::GlobalNamespace::OvrAvatarDriver::PoseFrame frame, float deltaSeconds);
     // public OvrAvatarDriver/PoseFrame GetPoseFrame(System.Single seconds)
-    // Offset: 0x92DE4C
+    // Offset: 0xF8F2A8
     ::GlobalNamespace::OvrAvatarDriver::PoseFrame GetPoseFrame(float seconds);
     // static public OvrAvatarPacket Read(System.IO.Stream stream)
-    // Offset: 0x92E07C
+    // Offset: 0xF8F4D8
     static ::GlobalNamespace::OvrAvatarPacket* Read(::System::IO::Stream* stream);
     // public System.Void Write(System.IO.Stream stream)
-    // Offset: 0x92E358
+    // Offset: 0xF8F7B4
     void Write(::System::IO::Stream* stream);
     // public System.Void .ctor()
-    // Offset: 0x923EA8
+    // Offset: 0xF8507C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

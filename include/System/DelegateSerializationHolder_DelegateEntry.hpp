@@ -36,15 +36,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class DelegateSerializationHolder::DelegateEntry : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String type
     // Size: 0x8
     // Offset: 0x10
@@ -89,28 +81,28 @@ namespace System {
     static_assert(sizeof(::System::DelegateSerializationHolder::DelegateEntry*) == 0x8);
     public:
     // Get instance field reference: private System.String type
-    ::StringW& dyn_type();
+    [[deprecated]] ::StringW& dyn_type();
     // Get instance field reference: private System.String assembly
-    ::StringW& dyn_assembly();
+    [[deprecated]] ::StringW& dyn_assembly();
     // Get instance field reference: private System.Object target
-    ::Il2CppObject*& dyn_target();
+    [[deprecated]] ::Il2CppObject*& dyn_target();
     // Get instance field reference: private System.String targetTypeAssembly
-    ::StringW& dyn_targetTypeAssembly();
+    [[deprecated]] ::StringW& dyn_targetTypeAssembly();
     // Get instance field reference: private System.String targetTypeName
-    ::StringW& dyn_targetTypeName();
+    [[deprecated]] ::StringW& dyn_targetTypeName();
     // Get instance field reference: private System.String methodName
-    ::StringW& dyn_methodName();
+    [[deprecated]] ::StringW& dyn_methodName();
     // Get instance field reference: public System.DelegateSerializationHolder/System.DelegateEntry delegateEntry
-    ::System::DelegateSerializationHolder::DelegateEntry*& dyn_delegateEntry();
+    [[deprecated]] ::System::DelegateSerializationHolder::DelegateEntry*& dyn_delegateEntry();
     // public System.Void .ctor(System.Delegate del, System.String targetLabel)
-    // Offset: 0xDD1C48
+    // Offset: 0x13AA5F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DelegateSerializationHolder::DelegateEntry* New_ctor(::System::Delegate* del, ::StringW targetLabel) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::DelegateSerializationHolder::DelegateEntry::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DelegateSerializationHolder::DelegateEntry*, creationType>(del, targetLabel)));
     }
     // public System.Delegate DeserializeDelegate(System.Runtime.Serialization.SerializationInfo info, System.Int32 index)
-    // Offset: 0xDD1D74
+    // Offset: 0x13AA71C
     ::System::Delegate* DeserializeDelegate(::System::Runtime::Serialization::SerializationInfo* info, int index);
   }; // System.DelegateSerializationHolder/System.DelegateEntry
   #pragma pack(pop)

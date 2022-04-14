@@ -34,15 +34,7 @@ namespace System::Collections {
   // [TokenAttribute] Offset: FFFFFFFF
   class Hashtable::HashtableEnumerator : public ::Il2CppObject/*, public ::System::ICloneable, public ::System::Collections::IDictionaryEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Hashtable hashtable
     // Size: 0x8
     // Offset: 0x10
@@ -97,46 +89,46 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.Hashtable hashtable
-    ::System::Collections::Hashtable*& dyn_hashtable();
+    [[deprecated]] ::System::Collections::Hashtable*& dyn_hashtable();
     // Get instance field reference: private System.Int32 bucket
-    int& dyn_bucket();
+    [[deprecated]] int& dyn_bucket();
     // Get instance field reference: private System.Int32 version
-    int& dyn_version();
+    [[deprecated]] int& dyn_version();
     // Get instance field reference: private System.Boolean current
-    bool& dyn_current();
+    [[deprecated]] bool& dyn_current();
     // Get instance field reference: private System.Int32 getObjectRetType
-    int& dyn_getObjectRetType();
+    [[deprecated]] int& dyn_getObjectRetType();
     // Get instance field reference: private System.Object currentKey
-    ::Il2CppObject*& dyn_currentKey();
+    [[deprecated]] ::Il2CppObject*& dyn_currentKey();
     // Get instance field reference: private System.Object currentValue
-    ::Il2CppObject*& dyn_currentValue();
+    [[deprecated]] ::Il2CppObject*& dyn_currentValue();
     // public System.Object get_Key()
-    // Offset: 0xDD539C
+    // Offset: 0xE51A48
     ::Il2CppObject* get_Key();
     // public System.Collections.DictionaryEntry get_Entry()
-    // Offset: 0xDD552C
+    // Offset: 0xE51BD8
     ::System::Collections::DictionaryEntry get_Entry();
     // public System.Object get_Current()
-    // Offset: 0xDD55BC
+    // Offset: 0xE51C68
     ::Il2CppObject* get_Current();
     // public System.Object get_Value()
-    // Offset: 0xDD56AC
+    // Offset: 0xE51D58
     ::Il2CppObject* get_Value();
     // System.Void .ctor(System.Collections.Hashtable hashtable, System.Int32 getObjRetType)
-    // Offset: 0xDD5330
+    // Offset: 0xE519DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Hashtable::HashtableEnumerator* New_ctor(::System::Collections::Hashtable* hashtable, int getObjRetType) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Hashtable::HashtableEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Hashtable::HashtableEnumerator*, creationType>(hashtable, getObjRetType)));
     }
     // public System.Object Clone()
-    // Offset: 0xDD5394
+    // Offset: 0xE51A40
     ::Il2CppObject* Clone();
     // public System.Boolean MoveNext()
-    // Offset: 0xDD5408
+    // Offset: 0xE51AB4
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0xDD5718
+    // Offset: 0xE51DC4
     void Reset();
   }; // System.Collections.Hashtable/System.Collections.HashtableEnumerator
   #pragma pack(pop)

@@ -32,15 +32,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x25 to desired offset: 0x28
     char ___base_padding[0x3] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Single _fadeStartValue
     // Size: 0x4
     // Offset: 0x28
@@ -55,20 +47,20 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: protected System.Single _fadeStartValue
-    float& dyn__fadeStartValue();
+    [[deprecated]] float& dyn__fadeStartValue();
     // Get instance field reference: protected System.Single _fadeStopValue
-    float& dyn__fadeStopValue();
+    [[deprecated]] float& dyn__fadeStopValue();
     // public System.Int32 GetFadeOutLength(VROSC.LoopPlaybackConfig/VROSC.FadeDuration fade, System.Int32 tailLength)
-    // Offset: 0x907104
+    // Offset: 0x19BD0BC
     int GetFadeOutLength(::VROSC::LoopPlaybackConfig::FadeDuration fade, int tailLength);
     // public System.Int32 GetFadeInLength(VROSC.LoopPlaybackConfig/VROSC.FadeDuration fade)
-    // Offset: 0x907348
+    // Offset: 0x19BD300
     int GetFadeInLength(::VROSC::LoopPlaybackConfig::FadeDuration fade);
     // public System.Int32 GetFadeLength(VROSC.LoopPlaybackConfig/VROSC.FadeDuration fade)
-    // Offset: 0x9071D0
+    // Offset: 0x19BD188
     int GetFadeLength(::VROSC::LoopPlaybackConfig::FadeDuration fade);
     // protected System.Void .ctor()
-    // Offset: 0x907358
+    // Offset: 0x19BD310
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -78,7 +70,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackFadeState*, creationType>()));
     }
     // public override System.Single GetCurrentFade(System.Int32 atSample)
-    // Offset: 0x9070AC
+    // Offset: 0x19BD064
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Single LoopPlayerPlaybackState::GetCurrentFade(System.Int32 atSample)
     float GetCurrentFade(int atSample);

@@ -35,15 +35,7 @@ namespace Facebook::WitAi::Data {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitFloatValue : public ::Facebook::WitAi::Data::WitValue {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single equalityTolerance
     // Size: 0x4
     // Offset: 0x28
@@ -52,12 +44,12 @@ namespace Facebook::WitAi::Data {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single equalityTolerance
-    float& dyn_equalityTolerance();
+    [[deprecated]] float& dyn_equalityTolerance();
     // public System.Single GetFloatValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x10FE88C
+    // Offset: 0x16750F4
     float GetFloatValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public System.Void .ctor()
-    // Offset: 0x10FE9F4
+    // Offset: 0x167525C
     // Implemented from: Facebook.WitAi.Data.WitValue
     // Base method: System.Void WitValue::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -69,12 +61,12 @@ namespace Facebook::WitAi::Data {
       return THROW_UNLESS((::il2cpp_utils::New<WitFloatValue*, creationType>()));
     }
     // public override System.Object GetValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x10FE820
+    // Offset: 0x1675088
     // Implemented from: Facebook.WitAi.Data.WitValue
     // Base method: System.Object WitValue::GetValue(Facebook.WitAi.Lib.WitResponseNode response)
     ::Il2CppObject* GetValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public override System.Boolean Equals(Facebook.WitAi.Lib.WitResponseNode response, System.Object value)
-    // Offset: 0x10FE8D4
+    // Offset: 0x167513C
     // Implemented from: Facebook.WitAi.Data.WitValue
     // Base method: System.Boolean WitValue::Equals(Facebook.WitAi.Lib.WitResponseNode response, System.Object value)
     bool Equals(::Facebook::WitAi::Lib::WitResponseNode* response, ::Il2CppObject* value);

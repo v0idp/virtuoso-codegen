@@ -27,15 +27,7 @@ namespace System::Security::Cryptography {
   // [TokenAttribute] Offset: FFFFFFFF
   class SHA1Internal : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt32[] _H
     // Size: 0x8
     // Offset: 0x10
@@ -70,41 +62,41 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(::ArrayW<uint>) == 0x8);
     public:
     // Get instance field reference: private System.UInt32[] _H
-    ::ArrayW<uint>& dyn__H();
+    [[deprecated]] ::ArrayW<uint>& dyn__H();
     // Get instance field reference: private System.UInt64 count
-    uint64_t& dyn_count();
+    [[deprecated]] uint64_t& dyn_count();
     // Get instance field reference: private System.Byte[] _ProcessingBuffer
-    ::ArrayW<uint8_t>& dyn__ProcessingBuffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__ProcessingBuffer();
     // Get instance field reference: private System.Int32 _ProcessingBufferCount
-    int& dyn__ProcessingBufferCount();
+    [[deprecated]] int& dyn__ProcessingBufferCount();
     // Get instance field reference: private System.UInt32[] buff
-    ::ArrayW<uint>& dyn_buff();
+    [[deprecated]] ::ArrayW<uint>& dyn_buff();
     // public System.Void HashCore(System.Byte[] rgb, System.Int32 ibStart, System.Int32 cbSize)
-    // Offset: 0xEEC3A0
+    // Offset: 0x116BD68
     void HashCore(::ArrayW<uint8_t> rgb, int ibStart, int cbSize);
     // public System.Byte[] HashFinal()
-    // Offset: 0xEEC4C4
+    // Offset: 0x116BE8C
     ::ArrayW<uint8_t> HashFinal();
     // public System.Void Initialize()
-    // Offset: 0xEEC5CC
+    // Offset: 0x116BF94
     void Initialize();
     // private System.Void ProcessBlock(System.Byte[] inputBuffer, System.UInt32 inputOffset)
-    // Offset: 0xEEC690
+    // Offset: 0x116C058
     void ProcessBlock(::ArrayW<uint8_t> inputBuffer, uint inputOffset);
     // static private System.Void InitialiseBuff(System.UInt32[] buff, System.Byte[] input, System.UInt32 inputOffset)
-    // Offset: 0xEECD68
+    // Offset: 0x116C730
     static void InitialiseBuff(::ArrayW<uint> buff, ::ArrayW<uint8_t> input, uint inputOffset);
     // static private System.Void FillBuff(System.UInt32[] buff)
-    // Offset: 0xEED450
+    // Offset: 0x116CE18
     static void FillBuff(::ArrayW<uint> buff);
     // private System.Void ProcessFinalBlock(System.Byte[] inputBuffer, System.Int32 inputOffset, System.Int32 inputCount)
-    // Offset: 0xEECBB4
+    // Offset: 0x116C57C
     void ProcessFinalBlock(::ArrayW<uint8_t> inputBuffer, int inputOffset, int inputCount);
     // System.Void AddLength(System.UInt64 length, System.Byte[] buffer, System.Int32 position)
-    // Offset: 0xEED690
+    // Offset: 0x116D058
     void AddLength(uint64_t length, ::ArrayW<uint8_t> buffer, int position);
     // public System.Void .ctor()
-    // Offset: 0xEEC260
+    // Offset: 0x116BC28
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

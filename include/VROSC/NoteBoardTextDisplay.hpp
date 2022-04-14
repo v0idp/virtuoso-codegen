@@ -47,15 +47,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::NoteBoardTextDisplay::$Animate$d__7
     class $Animate$d__7;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNoteController _controller
     // Size: 0x8
     // Offset: 0x18
@@ -92,29 +84,29 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteController _controller
-    ::VROSC::NoteBoardNoteController*& dyn__controller();
+    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__controller();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.PlayAxis[] _displayAxises
-    ::ArrayW<::VROSC::NoteBoard::PlayAxis>& dyn__displayAxises();
+    [[deprecated]] ::ArrayW<::VROSC::NoteBoard::PlayAxis>& dyn__displayAxises();
     // Get instance field reference: private System.Single _showDuration
-    float& dyn__showDuration();
+    [[deprecated]] float& dyn__showDuration();
     // Get instance field reference: private System.Boolean _colorize
-    bool& dyn__colorize();
+    [[deprecated]] bool& dyn__colorize();
     // Get instance field reference: private VROSC.NoteBoardNoteText[] _noteTexts
-    ::ArrayW<::VROSC::NoteBoardNoteText*>& dyn__noteTexts();
+    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNoteText*>& dyn__noteTexts();
     // private System.Void OnEnable()
-    // Offset: 0xA14FA8
+    // Offset: 0xC5868C
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0xA15158
+    // Offset: 0xC5883C
     void OnDisable();
     // private System.Collections.IEnumerator Animate()
-    // Offset: 0xA1505C
+    // Offset: 0xC58740
     ::System::Collections::IEnumerator* Animate();
     // private System.Void SetAllActive(System.Boolean active, VROSC.NoteBoard/VROSC.PlayAxis axis)
-    // Offset: 0xA150C8
+    // Offset: 0xC587AC
     void SetAllActive(bool active, ::VROSC::NoteBoard::PlayAxis axis);
     // public System.Void .ctor()
-    // Offset: 0xA15164
+    // Offset: 0xC58848
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -32,15 +32,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionsManager::$$c__DisplayClass78_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.SessionsManager <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -55,29 +47,29 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public VROSC.SessionsManager <>4__this
-    ::VROSC::SessionsManager*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SessionsManager*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
     // System.Void <SaveSessionSuccess>b__0(System.String id)
-    // Offset: 0x134D370
+    // Offset: 0x8D94BC
     void $SaveSessionSuccess$b__0(::StringW id);
     // System.Void <SaveSessionSuccess>b__1(VROSC.Error error)
-    // Offset: 0x134D400
+    // Offset: 0x8D9590
     void $SaveSessionSuccess$b__1(::VROSC::Error error);
     // System.Void <SaveSessionSuccess>b__2(System.String id)
-    // Offset: 0x134D490
+    // Offset: 0x8D9620
     void $SaveSessionSuccess$b__2(::StringW id);
     // System.Void <SaveSessionSuccess>b__3(VROSC.Error error)
-    // Offset: 0x134D520
+    // Offset: 0x8D96F4
     void $SaveSessionSuccess$b__3(::VROSC::Error error);
     // System.Void <SaveSessionSuccess>b__4()
-    // Offset: 0x134D5B0
+    // Offset: 0x8D9784
     void $SaveSessionSuccess$b__4();
     // System.Void <SaveSessionSuccess>b__5(VROSC.Error error)
-    // Offset: 0x134D640
+    // Offset: 0x8D9858
     void $SaveSessionSuccess$b__5(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x134D368
+    // Offset: 0x8D94B4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

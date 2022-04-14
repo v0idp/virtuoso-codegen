@@ -149,20 +149,12 @@ namespace Oculus::Platform::Samples::VrHoops {
       // Set static field: static public Oculus.Platform.Samples.VrHoops.MatchController/Oculus.Platform.Samples.VrHoops.State VIEWING_MATCH_RESULTS
       static void _set_VIEWING_MATCH_RESULTS(::Oculus::Platform::Samples::VrHoops::MatchController::State value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrHoops.MatchController/Oculus.Platform.Samples.VrHoops.State
     #pragma pack(pop)
     static check_size<sizeof(MatchController::State), 0 + sizeof(int)> __Oculus_Platform_Samples_VrHoops_MatchController_StateSizeCheck;
     static_assert(sizeof(MatchController::State) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.UI.Text m_timerText
     // Size: 0x8
     // Offset: 0x18
@@ -263,99 +255,99 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.UI.Text m_timerText
-    ::UnityEngine::UI::Text*& dyn_m_timerText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_timerText();
     // Get instance field reference: private UnityEngine.Camera m_camera
-    ::UnityEngine::Camera*& dyn_m_camera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn_m_camera();
     // Get instance field reference: private UnityEngine.Transform m_idleCameraTransform
-    ::UnityEngine::Transform*& dyn_m_idleCameraTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_m_idleCameraTransform();
     // Get instance field reference: private UnityEngine.UI.Text m_matchmakeButtonText
-    ::UnityEngine::UI::Text*& dyn_m_matchmakeButtonText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_matchmakeButtonText();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.PlayerArea[] m_playerAreas
-    ::ArrayW<::Oculus::Platform::Samples::VrHoops::PlayerArea*>& dyn_m_playerAreas();
+    [[deprecated]] ::ArrayW<::Oculus::Platform::Samples::VrHoops::PlayerArea*>& dyn_m_playerAreas();
     // Get instance field reference: private System.UInt32 PRACTICE_WARMUP_TIME
-    uint& dyn_PRACTICE_WARMUP_TIME();
+    [[deprecated]] uint& dyn_PRACTICE_WARMUP_TIME();
     // Get instance field reference: private System.UInt32 MATCH_WARMUP_TIME
-    uint& dyn_MATCH_WARMUP_TIME();
+    [[deprecated]] uint& dyn_MATCH_WARMUP_TIME();
     // Get instance field reference: private System.UInt32 MATCH_TIME
-    uint& dyn_MATCH_TIME();
+    [[deprecated]] uint& dyn_MATCH_TIME();
     // Get instance field reference: private System.UInt32 MATCH_COOLDOWN_TIME
-    uint& dyn_MATCH_COOLDOWN_TIME();
+    [[deprecated]] uint& dyn_MATCH_COOLDOWN_TIME();
     // Get instance field reference: private UnityEngine.GameObject m_mostWinsLeaderboard
-    ::UnityEngine::GameObject*& dyn_m_mostWinsLeaderboard();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_mostWinsLeaderboard();
     // Get instance field reference: private UnityEngine.GameObject m_highestScoresLeaderboard
-    ::UnityEngine::GameObject*& dyn_m_highestScoresLeaderboard();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_highestScoresLeaderboard();
     // Get instance field reference: private UnityEngine.GameObject m_leaderboardEntryPrefab
-    ::UnityEngine::GameObject*& dyn_m_leaderboardEntryPrefab();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_leaderboardEntryPrefab();
     // Get instance field reference: private UnityEngine.GameObject m_flytext
-    ::UnityEngine::GameObject*& dyn_m_flytext();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_flytext();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.MatchController/Oculus.Platform.Samples.VrHoops.State m_currentState
-    ::Oculus::Platform::Samples::VrHoops::MatchController::State& dyn_m_currentState();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::MatchController::State& dyn_m_currentState();
     // Get instance field reference: private System.Single m_nextStateTransitionTime
-    float& dyn_m_nextStateTransitionTime();
+    [[deprecated]] float& dyn_m_nextStateTransitionTime();
     // Get instance field reference: private System.Int32 m_localSlot
-    int& dyn_m_localSlot();
+    [[deprecated]] int& dyn_m_localSlot();
     // public System.Single get_MatchStartTime()
-    // Offset: 0x96C504
+    // Offset: 0xB3E8A0
     float get_MatchStartTime();
     // private System.Void set_MatchStartTime(System.Single value)
-    // Offset: 0x96C524
+    // Offset: 0xB3E8C0
     void set_MatchStartTime(float value);
     // private System.Void Start()
-    // Offset: 0x96BCA4
+    // Offset: 0xB3E040
     void Start();
     // private System.Void Update()
-    // Offset: 0x96C25C
+    // Offset: 0xB3E5F8
     void Update();
     // private System.Void TransitionToState(Oculus.Platform.Samples.VrHoops.MatchController/Oculus.Platform.Samples.VrHoops.State newState)
-    // Offset: 0x96BF50
+    // Offset: 0xB3E2EC
     void TransitionToState(::Oculus::Platform::Samples::VrHoops::MatchController::State newState);
     // private System.Void UpdateCheckForNextTimedTransition()
-    // Offset: 0x96C280
+    // Offset: 0xB3E61C
     void UpdateCheckForNextTimedTransition();
     // private System.Void UpdateMatchTimer()
-    // Offset: 0x96C324
+    // Offset: 0xB3E6C0
     void UpdateMatchTimer();
     // private System.Void SetupForIdle()
-    // Offset: 0x96C52C
+    // Offset: 0xB3E8C8
     void SetupForIdle();
     // private System.Void SetupForPractice()
-    // Offset: 0x96C7B8
+    // Offset: 0xB3EB54
     void SetupForPractice();
     // private Oculus.Platform.Samples.VrHoops.Player MatchPlayerAddedCallback(System.Int32 slot, Oculus.Platform.Models.User user)
-    // Offset: 0x96CEE4
+    // Offset: 0xB3F280
     ::Oculus::Platform::Samples::VrHoops::Player* MatchPlayerAddedCallback(int slot, ::Oculus::Platform::Models::User* user);
     // private System.Void MoveCameraToIdlePosition()
-    // Offset: 0x96C5E0
+    // Offset: 0xB3E97C
     void MoveCameraToIdlePosition();
     // private System.Void MoveCameraToMatchPosition()
-    // Offset: 0x96C8CC
+    // Offset: 0xB3EC68
     void MoveCameraToMatchPosition();
     // public System.Void StartPracticeMatch()
-    // Offset: 0x96D190
+    // Offset: 0xB3F52C
     void StartPracticeMatch();
     // public System.Void PlayOnlineOrCancel()
-    // Offset: 0x96D1A8
+    // Offset: 0xB3F544
     void PlayOnlineOrCancel();
     // private System.Void OnMatchFoundCallback(System.Boolean success)
-    // Offset: 0x96D380
+    // Offset: 0xB3F71C
     void OnMatchFoundCallback(bool success);
     // private System.Single StartTimeOfferCallback(System.Single remoteTime)
-    // Offset: 0x96D394
+    // Offset: 0xB3F730
     float StartTimeOfferCallback(float remoteTime);
     // private System.Void MostWinsLeaderboardCallback(System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry> entries)
-    // Offset: 0x96D49C
+    // Offset: 0xB3F838
     void MostWinsLeaderboardCallback(::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>* entries);
     // private System.Void HighestScoreLeaderboardCallback(System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry> entries)
-    // Offset: 0x96DA9C
+    // Offset: 0xB3FE38
     void HighestScoreLeaderboardCallback(::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>* entries);
     // private System.Void CalculateMatchResults()
-    // Offset: 0x96CA64
+    // Offset: 0xB3EE00
     void CalculateMatchResults();
     // private System.Void DisplayAchievementFlytext()
-    // Offset: 0x96CFF4
+    // Offset: 0xB3F390
     void DisplayAchievementFlytext();
     // public System.Void .ctor()
-    // Offset: 0x96E0F4
+    // Offset: 0xB40490
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -26,15 +26,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class MainState::$StopMenuMusicCoroutine$d__9 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -79,38 +71,38 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.MainState <>4__this
-    ::VROSC::MainState*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::MainState*& dyn_$$4__this();
     // Get instance field reference: private System.Single <fadeoutTime>5__2
-    float& dyn_$fadeoutTime$5__2();
+    [[deprecated]] float& dyn_$fadeoutTime$5__2();
     // Get instance field reference: private System.Single <progress>5__3
-    float& dyn_$progress$5__3();
+    [[deprecated]] float& dyn_$progress$5__3();
     // Get instance field reference: private System.Single <startVolume>5__4
-    float& dyn_$startVolume$5__4();
+    [[deprecated]] float& dyn_$startVolume$5__4();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x13D948C
+    // Offset: 0x19611A8
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x13D94D4
+    // Offset: 0x19611F0
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x13D9324
+    // Offset: 0x1961040
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MainState::$StopMenuMusicCoroutine$d__9* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MainState::$StopMenuMusicCoroutine$d__9::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MainState::$StopMenuMusicCoroutine$d__9*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x13D9350
+    // Offset: 0x196106C
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x13D9354
+    // Offset: 0x1961070
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x13D9494
+    // Offset: 0x19611B0
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.MainState/VROSC.<StopMenuMusicCoroutine>d__9
   #pragma pack(pop)

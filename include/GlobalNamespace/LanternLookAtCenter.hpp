@@ -28,15 +28,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class LanternLookAtCenter : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _height
     // Size: 0x4
     // Offset: 0x18
@@ -47,15 +39,15 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _height
-    float& dyn__height();
+    [[deprecated]] float& dyn__height();
     // private System.Void OnEnable()
-    // Offset: 0x138A1F8
+    // Offset: 0x194DAC4
     void OnEnable();
     // private System.Void LookAtCenter()
-    // Offset: 0x138A248
+    // Offset: 0x194DB14
     void LookAtCenter();
     // public System.Void .ctor()
-    // Offset: 0x138A298
+    // Offset: 0x194DB64
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

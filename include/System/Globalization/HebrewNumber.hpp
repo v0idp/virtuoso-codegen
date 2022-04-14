@@ -180,7 +180,7 @@ namespace System::Globalization {
       // Set static field: static public System.Globalization.HebrewNumber/System.Globalization.HS END
       static void _set_END(::System::Globalization::HebrewNumber::HS value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // System.Globalization.HebrewNumber/System.Globalization.HS
     #pragma pack(pop)
     static check_size<sizeof(HebrewNumber::HS), 0 + sizeof(int)> __System_Globalization_HebrewNumber_HSSizeCheck;
@@ -198,16 +198,16 @@ namespace System::Globalization {
     // Set static field: static private readonly System.Globalization.HebrewNumber/System.Globalization.HS[][] NumberPasingState
     static void _set_NumberPasingState(::ArrayW<::ArrayW<::System::Globalization::HebrewNumber::HS>> value);
     // static private System.Void .cctor()
-    // Offset: 0xC4BB04
+    // Offset: 0x145FCD8
     static void _cctor();
     // static System.String ToString(System.Int32 Number)
-    // Offset: 0xC4B5B0
+    // Offset: 0x145F784
     static ::StringW ToString(int Number);
     // static System.Globalization.HebrewNumberParsingState ParseByChar(System.Char ch, ref System.Globalization.HebrewNumberParsingContext context)
-    // Offset: 0xC4B818
+    // Offset: 0x145F9EC
     static ::System::Globalization::HebrewNumberParsingState ParseByChar(::Il2CppChar ch, ByRef<::System::Globalization::HebrewNumberParsingContext> context);
     // static System.Boolean IsDigit(System.Char ch)
-    // Offset: 0xC4BA08
+    // Offset: 0x145FBDC
     static bool IsDigit(::Il2CppChar ch);
   }; // System.Globalization.HebrewNumber
   #pragma pack(pop)

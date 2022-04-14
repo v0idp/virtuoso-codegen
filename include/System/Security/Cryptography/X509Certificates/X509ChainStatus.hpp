@@ -50,14 +50,14 @@ namespace System::Security::Cryptography::X509Certificates {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainStatusFlags status
-    ::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags& dyn_status();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags& dyn_status();
     // Get instance field reference: private System.String info
-    ::StringW& dyn_info();
+    [[deprecated]] ::StringW& dyn_info();
     // System.Void .ctor(System.Security.Cryptography.X509Certificates.X509ChainStatusFlags flag)
-    // Offset: 0xAC8394
+    // Offset: 0xC539B0
     X509ChainStatus(::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags flag);
     // static System.String GetInformation(System.Security.Cryptography.X509Certificates.X509ChainStatusFlags flags)
-    // Offset: 0xAC8560
+    // Offset: 0xC53B7C
     static ::StringW GetInformation(::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags flags);
   }; // System.Security.Cryptography.X509Certificates.X509ChainStatus
   #pragma pack(pop)

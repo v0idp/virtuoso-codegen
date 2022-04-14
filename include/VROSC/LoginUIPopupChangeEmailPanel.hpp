@@ -49,15 +49,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoginUIPopupChangeEmailPanel : public ::VROSC::LoginUIPopupPanelBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _currentEmailText
     // Size: 0x8
     // Offset: 0x30
@@ -84,33 +76,33 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _currentEmailText
-    ::TMPro::TextMeshPro*& dyn__currentEmailText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__currentEmailText();
     // Get instance field reference: private UIInputField _newEmailInput
-    ::GlobalNamespace::UIInputField*& dyn__newEmailInput();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__newEmailInput();
     // Get instance field reference: private VROSC.UIButton _confirmEmailChangeButton
-    ::VROSC::UIButton*& dyn__confirmEmailChangeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__confirmEmailChangeButton();
     // Get instance field reference: private VROSC.UIButton _cancelEmailChangeButton
-    ::VROSC::UIButton*& dyn__cancelEmailChangeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__cancelEmailChangeButton();
     // private System.Void Awake()
-    // Offset: 0x138FECC
+    // Offset: 0x19B0320
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x139007C
+    // Offset: 0x19B04D0
     void OnDestroy();
     // private System.Void ConfirmChangeEmailButtonPressed()
-    // Offset: 0x13903E4
+    // Offset: 0x19B0838
     void ConfirmChangeEmailButtonPressed();
     // private System.Void CancelChangeEmailButtonPressed()
-    // Offset: 0x13905D4
+    // Offset: 0x19B0A28
     void CancelChangeEmailButtonPressed();
     // private System.Void EmailChangeSucceeded()
-    // Offset: 0x13905EC
+    // Offset: 0x19B0A40
     void EmailChangeSucceeded();
     // private System.Void EmailChangeFailed(VROSC.Error error)
-    // Offset: 0x13907A8
+    // Offset: 0x19B0BFC
     void EmailChangeFailed(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x13909AC
+    // Offset: 0x19B0E00
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -124,12 +116,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopupChangeEmailPanel*, creationType>()));
     }
     // public override System.Void Open(params System.Object[] parameters)
-    // Offset: 0x139022C
+    // Offset: 0x19B0680
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::Open(params System.Object[] parameters)
     void Open(::ArrayW<::Il2CppObject*> parameters);
     // protected override System.Void EnableUI(System.Boolean enable)
-    // Offset: 0x1390308
+    // Offset: 0x19B075C
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::EnableUI(System.Boolean enable)
     void EnableUI(bool enable);

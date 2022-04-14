@@ -42,38 +42,30 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DashboardPositioning : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [RangeAttribute] Offset: 0x671FE0
-    // [HeaderAttribute] Offset: 0x671FE0
+    // [HeaderAttribute] Offset: 0x7882D4
+    // [RangeAttribute] Offset: 0x7882D4
     // private System.Single _distanceFromHand
     // Size: 0x4
     // Offset: 0x18
     float distanceFromHand;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x672044
+    // [RangeAttribute] Offset: 0x788338
     // private System.Single _moveTowardsCamera
     // Size: 0x4
     // Offset: 0x1C
     float moveTowardsCamera;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x672084
+    // [RangeAttribute] Offset: 0x788378
     // private System.Single _lookAtPointAbovePlayer
     // Size: 0x4
     // Offset: 0x20
     float lookAtPointAbovePlayer;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [HeaderAttribute] Offset: 0x6720C4
+    // [HeaderAttribute] Offset: 0x7883B8
     // private System.Single _debugPlayerDepth
     // Size: 0x4
     // Offset: 0x24
@@ -128,44 +120,44 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _distanceFromHand
-    float& dyn__distanceFromHand();
+    [[deprecated]] float& dyn__distanceFromHand();
     // Get instance field reference: private System.Single _moveTowardsCamera
-    float& dyn__moveTowardsCamera();
+    [[deprecated]] float& dyn__moveTowardsCamera();
     // Get instance field reference: private System.Single _lookAtPointAbovePlayer
-    float& dyn__lookAtPointAbovePlayer();
+    [[deprecated]] float& dyn__lookAtPointAbovePlayer();
     // Get instance field reference: private System.Single _debugPlayerDepth
-    float& dyn__debugPlayerDepth();
+    [[deprecated]] float& dyn__debugPlayerDepth();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private System.Boolean _isInRightHand
-    bool& dyn__isInRightHand();
+    [[deprecated]] bool& dyn__isInRightHand();
     // Get instance field reference: private UnityEngine.Vector3 _lookAtPoint
-    ::UnityEngine::Vector3& dyn__lookAtPoint();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__lookAtPoint();
     // Get instance field reference: private UnityEngine.Vector3 _controllerPosition
-    ::UnityEngine::Vector3& dyn__controllerPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__controllerPosition();
     // Get instance field reference: private UnityEngine.Vector3 _cameraPosition
-    ::UnityEngine::Vector3& dyn__cameraPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__cameraPosition();
     // Get instance field reference: private UnityEngine.Vector3 _dashboardPosition
-    ::UnityEngine::Vector3& dyn__dashboardPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__dashboardPosition();
     // Get instance field reference: private UnityEngine.Vector3 _cameraCenter
-    ::UnityEngine::Vector3& dyn__cameraCenter();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__cameraCenter();
     // private System.Void Awake()
-    // Offset: 0x130797C
+    // Offset: 0x8E097C
     void Awake();
     // public System.Void UpdateDashboardHandPosition(System.Boolean activeInRightHand)
-    // Offset: 0x13079D0
+    // Offset: 0x8E09D0
     void UpdateDashboardHandPosition(bool activeInRightHand);
     // private System.Void LookAtPlayer(UnityEngine.Transform cameraTransform, VROSC.VRPlayer vrPlayer, System.Boolean activeInRightHand)
-    // Offset: 0x1307B58
+    // Offset: 0x8E0B4C
     void LookAtPlayer(::UnityEngine::Transform* cameraTransform, ::VROSC::VRPlayer* vrPlayer, bool activeInRightHand);
     // private System.Void LookAtDebugPlayer(UnityEngine.Transform cameraTransform)
-    // Offset: 0x1307AD0
+    // Offset: 0x8E0AC4
     void LookAtDebugPlayer(::UnityEngine::Transform* cameraTransform);
     // private System.Void OnDrawGizmos()
-    // Offset: 0x1307D0C
+    // Offset: 0x8E0D00
     void OnDrawGizmos();
     // public System.Void .ctor()
-    // Offset: 0x1307DA4
+    // Offset: 0x8E0D98
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

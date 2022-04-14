@@ -63,13 +63,13 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public DG.Tweening.RotateMode rotateMode
-    ::DG::Tweening::RotateMode& dyn_rotateMode();
+    [[deprecated]] ::DG::Tweening::RotateMode& dyn_rotateMode();
     // Get instance field reference: public DG.Tweening.AxisConstraint axisConstraint
-    ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
+    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
     // Get instance field reference: public UnityEngine.Vector3 up
-    ::UnityEngine::Vector3& dyn_up();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_up();
     // public System.Void Reset()
-    // Offset: 0x10A0B1C
+    // Offset: 0x15E3144
     void Reset();
   }; // DG.Tweening.Plugins.Options.QuaternionOptions
   #pragma pack(pop)

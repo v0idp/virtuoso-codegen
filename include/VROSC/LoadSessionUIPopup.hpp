@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoadSessionUIPopup : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _closeButton
     // Size: 0x8
     // Offset: 0x18
@@ -78,37 +70,37 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private TMPro.TextMeshPro _loadingStateText
-    ::TMPro::TextMeshPro*& dyn__loadingStateText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__loadingStateText();
     // Get instance field reference: public System.Action OnClose
-    ::System::Action*& dyn_OnClose();
+    [[deprecated]] ::System::Action*& dyn_OnClose();
     // private System.Void Awake()
-    // Offset: 0x138D7B8
+    // Offset: 0x19512E0
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x138D878
+    // Offset: 0x19513A0
     void OnDestroy();
     // public System.Void SetActive(System.Boolean isActive)
-    // Offset: 0x138D938
+    // Offset: 0x1951460
     void SetActive(bool isActive);
     // public System.Void UpdateLoadingState(VROSC.Error error)
-    // Offset: 0x138D9F4
+    // Offset: 0x195151C
     void UpdateLoadingState(::VROSC::Error error);
     // public System.Void UpdateLoadingState(System.Single progress)
-    // Offset: 0x138DAD0
+    // Offset: 0x19515F8
     void UpdateLoadingState(float progress);
     // public System.Void UpdateDownloadingState(System.Single progress)
-    // Offset: 0x138DC04
+    // Offset: 0x195172C
     void UpdateDownloadingState(float progress);
     // private System.Int32 GetProgressPercent(System.Single progress)
-    // Offset: 0x138DBB8
+    // Offset: 0x19516E0
     int GetProgressPercent(float progress);
     // private System.Void Close()
-    // Offset: 0x138DCEC
+    // Offset: 0x1951814
     void Close();
     // public System.Void .ctor()
-    // Offset: 0x138DD28
+    // Offset: 0x1951850
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -35,10 +35,10 @@ namespace Oculus::Platform {
   class MessageWithNetSyncConnection : public ::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetSyncConnection*> {
     public:
     // protected Oculus.Platform.Models.NetSyncConnection GetDataFromMessage(System.IntPtr c_message)
-    // Offset: 0x97B938
+    // Offset: 0xB4DCD4
     ::Oculus::Platform::Models::NetSyncConnection* GetDataFromMessage(::System::IntPtr c_message);
     // public System.Void .ctor(System.IntPtr c_message)
-    // Offset: 0x9770BC
+    // Offset: 0xB49458
     // Implemented from: Oculus.Platform.Message`1
     // Base method: System.Void Message_1::.ctor(System.IntPtr c_message)
     // Base method: System.Void Message::.ctor(System.IntPtr c_message)
@@ -48,7 +48,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<MessageWithNetSyncConnection*, creationType>(c_message)));
     }
     // public override Oculus.Platform.Models.NetSyncConnection GetNetSyncConnection()
-    // Offset: 0x97B8F8
+    // Offset: 0xB4DC94
     // Implemented from: Oculus.Platform.Message
     // Base method: Oculus.Platform.Models.NetSyncConnection Message::GetNetSyncConnection()
     ::Oculus::Platform::Models::NetSyncConnection* GetNetSyncConnection();

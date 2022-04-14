@@ -34,15 +34,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoardNoteParticles::Emission : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _rate
     // Size: 0x4
     // Offset: 0x10
@@ -77,24 +69,24 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private System.Single _rate
-    float& dyn__rate();
+    [[deprecated]] float& dyn__rate();
     // Get instance field reference: private System.Single _size
-    float& dyn__size();
+    [[deprecated]] float& dyn__size();
     // Get instance field reference: private System.Single _coolDown
-    float& dyn__coolDown();
+    [[deprecated]] float& dyn__coolDown();
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
     // Get instance field reference: private UnityEngine.Transform _emitter
-    ::UnityEngine::Transform*& dyn__emitter();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__emitter();
     // public System.Void .ctor(UnityEngine.ParticleSystem particleSystem, System.Single rate, System.Single size, UnityEngine.Transform emitter)
-    // Offset: 0x133E3E0
+    // Offset: 0x19662D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoardNoteParticles::Emission* New_ctor(::UnityEngine::ParticleSystem* particleSystem, float rate, float size, ::UnityEngine::Transform* emitter) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteParticles::Emission::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteParticles::Emission*, creationType>(particleSystem, rate, size, emitter)));
     }
     // public System.Void Update(System.Int32 multiplier, UnityEngine.Color color)
-    // Offset: 0x133E430
+    // Offset: 0x1966320
     void Update(int multiplier, ::UnityEngine::Color color);
   }; // VROSC.NoteBoardNoteParticles/VROSC.Emission
   #pragma pack(pop)

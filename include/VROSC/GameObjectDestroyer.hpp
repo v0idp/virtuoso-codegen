@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class GameObjectDestroyer : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject _targetGameObject
     // Size: 0x8
     // Offset: 0x40
@@ -57,9 +49,9 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.GameObject _targetGameObject
-    ::UnityEngine::GameObject*& dyn__targetGameObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__targetGameObject();
     // public System.Void .ctor()
-    // Offset: 0x88F82C
+    // Offset: 0x19A1B84
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -74,7 +66,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<GameObjectDestroyer*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x88F760
+    // Offset: 0x19A1AB8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);

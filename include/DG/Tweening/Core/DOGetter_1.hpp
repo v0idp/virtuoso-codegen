@@ -48,21 +48,21 @@ namespace DG::Tweening::Core {
     // Offset: 0xFFFFFFFFFFFFFFFF
     T Invoke() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::DOGetter_1::Invoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Invoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Core::DOGetter_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___internal__method);
     }
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::DOGetter_1::BeginInvoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "BeginInvoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(callback), ::il2cpp_utils::ExtractType(object)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Core::DOGetter_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::System::IAsyncResult*, false>(this, ___internal__method, callback, object);
     }
     // public T EndInvoke(System.IAsyncResult result)
     // Offset: 0xFFFFFFFFFFFFFFFF
     T EndInvoke(::System::IAsyncResult* result) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::DOGetter_1::EndInvoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "EndInvoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(result)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Core::DOGetter_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___internal__method, result);
     }
   }; // DG.Tweening.Core.DOGetter`1

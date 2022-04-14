@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialHapticBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _frequencyScale
     // Size: 0x4
     // Offset: 0x10
@@ -80,20 +72,20 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _frequencyScale
-    float& dyn__frequencyScale();
+    [[deprecated]] float& dyn__frequencyScale();
     // Get instance field reference: private System.Single _amplitudeScale
-    float& dyn__amplitudeScale();
+    [[deprecated]] float& dyn__amplitudeScale();
     // Get instance field reference: private VROSC.HandType _hand
-    ::VROSC::HandType& dyn__hand();
+    [[deprecated]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private System.Single _frequency
-    float& dyn__frequency();
+    [[deprecated]] float& dyn__frequency();
     // Get instance field reference: private System.Single _amplitude
-    float& dyn__amplitude();
+    [[deprecated]] float& dyn__amplitude();
     // public System.Void Setup(VROSC.HandType hand, System.Single frequency, System.Single amplitude)
-    // Offset: 0x14073CC
+    // Offset: 0xA2F4A8
     void Setup(::VROSC::HandType hand, float frequency, float amplitude);
     // public System.Void .ctor()
-    // Offset: 0x14074E4
+    // Offset: 0xA2F5C0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -103,7 +95,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TutorialHapticBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x14073F0
+    // Offset: 0xA2F4CC
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

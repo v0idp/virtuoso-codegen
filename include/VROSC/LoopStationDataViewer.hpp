@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationDataViewer : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopStation _loopStation
     // Size: 0x8
     // Offset: 0x18
@@ -62,14 +54,14 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopStationDataModel _data
-    ::VROSC::LoopStationDataModel*& dyn__data();
+    [[deprecated]] ::VROSC::LoopStationDataModel*& dyn__data();
     // private System.Void Update()
-    // Offset: 0x91313C
+    // Offset: 0x196E4E4
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x913154
+    // Offset: 0x196E4FC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

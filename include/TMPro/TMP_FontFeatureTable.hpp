@@ -44,15 +44,7 @@ namespace TMPro {
     public:
     // Nested type: ::TMPro::TMP_FontFeatureTable::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Collections.Generic.List`1<TMPro.TMP_GlyphPairAdjustmentRecord> m_GlyphPairAdjustmentRecords
     // Size: 0x8
     // Offset: 0x10
@@ -67,20 +59,20 @@ namespace TMPro {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_GlyphPairAdjustmentRecord*>*) == 0x8);
     public:
     // Get instance field reference: System.Collections.Generic.List`1<TMPro.TMP_GlyphPairAdjustmentRecord> m_GlyphPairAdjustmentRecords
-    ::System::Collections::Generic::List_1<::TMPro::TMP_GlyphPairAdjustmentRecord*>*& dyn_m_GlyphPairAdjustmentRecords();
+    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_GlyphPairAdjustmentRecord*>*& dyn_m_GlyphPairAdjustmentRecords();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.UInt32,TMPro.TMP_GlyphPairAdjustmentRecord> m_GlyphPairAdjustmentRecordLookupDictionary
-    ::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_GlyphPairAdjustmentRecord*>*& dyn_m_GlyphPairAdjustmentRecordLookupDictionary();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_GlyphPairAdjustmentRecord*>*& dyn_m_GlyphPairAdjustmentRecordLookupDictionary();
     // public System.Collections.Generic.List`1<TMPro.TMP_GlyphPairAdjustmentRecord> get_glyphPairAdjustmentRecords()
-    // Offset: 0xD53A7C
+    // Offset: 0x102F5B0
     ::System::Collections::Generic::List_1<::TMPro::TMP_GlyphPairAdjustmentRecord*>* get_glyphPairAdjustmentRecords();
     // public System.Void set_glyphPairAdjustmentRecords(System.Collections.Generic.List`1<TMPro.TMP_GlyphPairAdjustmentRecord> value)
-    // Offset: 0xD53A84
+    // Offset: 0x102F5B8
     void set_glyphPairAdjustmentRecords(::System::Collections::Generic::List_1<::TMPro::TMP_GlyphPairAdjustmentRecord*>* value);
     // public System.Void SortGlyphPairAdjustmentRecords()
-    // Offset: 0xD53B48
+    // Offset: 0x102F67C
     void SortGlyphPairAdjustmentRecords();
     // public System.Void .ctor()
-    // Offset: 0xD53A8C
+    // Offset: 0x102F5C0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

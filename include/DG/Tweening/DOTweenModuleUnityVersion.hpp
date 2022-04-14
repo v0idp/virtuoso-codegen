@@ -57,34 +57,34 @@ namespace DG::Tweening {
     // Nested type: ::DG::Tweening::DOTweenModuleUnityVersion::$$c__DisplayClass9_0
     class $$c__DisplayClass9_0;
     // static public DG.Tweening.Sequence DOGradientColor(UnityEngine.Material target, UnityEngine.Gradient gradient, System.Single duration)
-    // Offset: 0x752A74
+    // Offset: 0x17E18B8
     static ::DG::Tweening::Sequence* DOGradientColor(::UnityEngine::Material* target, ::UnityEngine::Gradient* gradient, float duration);
     // static public DG.Tweening.Sequence DOGradientColor(UnityEngine.Material target, UnityEngine.Gradient gradient, System.String property, System.Single duration)
-    // Offset: 0x752C64
+    // Offset: 0x17E1AA8
     static ::DG::Tweening::Sequence* DOGradientColor(::UnityEngine::Material* target, ::UnityEngine::Gradient* gradient, ::StringW property, float duration);
     // static public UnityEngine.CustomYieldInstruction WaitForCompletion(DG.Tweening.Tween t, System.Boolean returnCustomYieldInstruction)
-    // Offset: 0x752E68
+    // Offset: 0x17E1CAC
     static ::UnityEngine::CustomYieldInstruction* WaitForCompletion(::DG::Tweening::Tween* t, bool returnCustomYieldInstruction);
     // static public UnityEngine.CustomYieldInstruction WaitForRewind(DG.Tweening.Tween t, System.Boolean returnCustomYieldInstruction)
-    // Offset: 0x752F28
+    // Offset: 0x17E1D98
     static ::UnityEngine::CustomYieldInstruction* WaitForRewind(::DG::Tweening::Tween* t, bool returnCustomYieldInstruction);
     // static public UnityEngine.CustomYieldInstruction WaitForKill(DG.Tweening.Tween t, System.Boolean returnCustomYieldInstruction)
-    // Offset: 0x752FE8
+    // Offset: 0x17E1E84
     static ::UnityEngine::CustomYieldInstruction* WaitForKill(::DG::Tweening::Tween* t, bool returnCustomYieldInstruction);
     // static public UnityEngine.CustomYieldInstruction WaitForElapsedLoops(DG.Tweening.Tween t, System.Int32 elapsedLoops, System.Boolean returnCustomYieldInstruction)
-    // Offset: 0x7530A8
+    // Offset: 0x17E1F70
     static ::UnityEngine::CustomYieldInstruction* WaitForElapsedLoops(::DG::Tweening::Tween* t, int elapsedLoops, bool returnCustomYieldInstruction);
     // static public UnityEngine.CustomYieldInstruction WaitForPosition(DG.Tweening.Tween t, System.Single position, System.Boolean returnCustomYieldInstruction)
-    // Offset: 0x753178
+    // Offset: 0x17E207C
     static ::UnityEngine::CustomYieldInstruction* WaitForPosition(::DG::Tweening::Tween* t, float position, bool returnCustomYieldInstruction);
     // static public UnityEngine.CustomYieldInstruction WaitForStart(DG.Tweening.Tween t, System.Boolean returnCustomYieldInstruction)
-    // Offset: 0x753248
+    // Offset: 0x17E2188
     static ::UnityEngine::CustomYieldInstruction* WaitForStart(::DG::Tweening::Tween* t, bool returnCustomYieldInstruction);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOOffset(UnityEngine.Material target, UnityEngine.Vector2 endValue, System.Int32 propertyID, System.Single duration)
-    // Offset: 0x753308
+    // Offset: 0x17E2274
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOOffset(::UnityEngine::Material* target, ::UnityEngine::Vector2 endValue, int propertyID, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOTiling(UnityEngine.Material target, UnityEngine.Vector2 endValue, System.Int32 propertyID, System.Single duration)
-    // Offset: 0x753520
+    // Offset: 0x17E2494
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOTiling(::UnityEngine::Material* target, ::UnityEngine::Vector2 endValue, int propertyID, float duration);
   }; // DG.Tweening.DOTweenModuleUnityVersion
   #pragma pack(pop)

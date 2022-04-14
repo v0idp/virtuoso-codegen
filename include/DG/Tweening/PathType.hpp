@@ -60,7 +60,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.PathType CubicBezier
     static void _set_CubicBezier(::DG::Tweening::PathType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.PathType
   #pragma pack(pop)
   static check_size<sizeof(PathType), 0 + sizeof(int)> __DG_Tweening_PathTypeSizeCheck;

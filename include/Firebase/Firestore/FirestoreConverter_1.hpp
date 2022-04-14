@@ -30,14 +30,14 @@ namespace Firebase::Firestore {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::Il2CppObject* ToFirestore(T value) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreConverter_1::ToFirestore");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ToFirestore", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(value)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::Firebase::Firestore::FirestoreConverter_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::Il2CppObject*, false>(this, ___internal__method, value);
     }
     // public T FromFirestore(System.Object value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     T FromFirestore(::Il2CppObject* value) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreConverter_1::FromFirestore");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "FromFirestore", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(value)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::Firebase::Firestore::FirestoreConverter_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___internal__method, value);
     }
   }; // Firebase.Firestore.FirestoreConverter`1

@@ -29,15 +29,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIScrollableItem : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _length
     // Size: 0x4
     // Offset: 0x18
@@ -78,73 +70,73 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _length
-    float& dyn__length();
+    [[deprecated]] float& dyn__length();
     // Get instance field reference: private System.Int32 <Index>k__BackingField
-    int& dyn_$Index$k__BackingField();
+    [[deprecated]] int& dyn_$Index$k__BackingField();
     // Get instance field reference: private System.String <Value>k__BackingField
-    ::StringW& dyn_$Value$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$Value$k__BackingField();
     // Get instance field reference: private System.Boolean <IsActive>k__BackingField
-    bool& dyn_$IsActive$k__BackingField();
+    [[deprecated]] bool& dyn_$IsActive$k__BackingField();
     // Get instance field reference: private System.Boolean <IsHovering>k__BackingField
-    bool& dyn_$IsHovering$k__BackingField();
+    [[deprecated]] bool& dyn_$IsHovering$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDisabled>k__BackingField
-    bool& dyn_$IsDisabled$k__BackingField();
+    [[deprecated]] bool& dyn_$IsDisabled$k__BackingField();
     // public System.Int32 get_Index()
-    // Offset: 0x13A1B14
+    // Offset: 0x1915440
     int get_Index();
     // private System.Void set_Index(System.Int32 value)
-    // Offset: 0x13A1B1C
+    // Offset: 0x1915448
     void set_Index(int value);
     // public System.String get_Value()
-    // Offset: 0x13A1B24
+    // Offset: 0x1915450
     ::StringW get_Value();
     // private System.Void set_Value(System.String value)
-    // Offset: 0x13A1B2C
+    // Offset: 0x1915458
     void set_Value(::StringW value);
     // public System.Single get_Length()
-    // Offset: 0x13A1B34
+    // Offset: 0x1915460
     float get_Length();
     // public System.Boolean get_IsActive()
-    // Offset: 0x13A1B3C
+    // Offset: 0x1915468
     bool get_IsActive();
     // private System.Void set_IsActive(System.Boolean value)
-    // Offset: 0x13A1B44
+    // Offset: 0x1915470
     void set_IsActive(bool value);
     // public System.Boolean get_IsHovering()
-    // Offset: 0x13A1B50
+    // Offset: 0x191547C
     bool get_IsHovering();
     // private System.Void set_IsHovering(System.Boolean value)
-    // Offset: 0x13A1B58
+    // Offset: 0x1915484
     void set_IsHovering(bool value);
     // public System.Boolean get_IsDisabled()
-    // Offset: 0x13A1B64
+    // Offset: 0x1915490
     bool get_IsDisabled();
     // private System.Void set_IsDisabled(System.Boolean value)
-    // Offset: 0x13A1B6C
+    // Offset: 0x1915498
     void set_IsDisabled(bool value);
     // public System.Void Setup(System.Int32 index, System.String value)
-    // Offset: 0x13A1B78
+    // Offset: 0x19154A4
     void Setup(int index, ::StringW value);
     // public System.Void SetHovering(System.Boolean hovering)
-    // Offset: 0x13A1B84
+    // Offset: 0x19154B0
     void SetHovering(bool hovering);
     // public System.Void SetActive(System.Boolean active)
-    // Offset: 0x13A1B98
+    // Offset: 0x19154C4
     void SetActive(bool active);
     // public System.Void SetDisabled(System.Boolean disabled)
-    // Offset: 0x13A1BAC
+    // Offset: 0x19154D8
     void SetDisabled(bool disabled);
     // protected System.Void UpdateColors()
-    // Offset: 0x13A1BC0
+    // Offset: 0x19154EC
     void UpdateColors();
     // public System.Void SetIndex(System.Int32 index)
-    // Offset: 0x13A0BE8
+    // Offset: 0x1914514
     void SetIndex(int index);
     // private System.Void OnDrawGizmosSelected()
-    // Offset: 0x13A1BC4
+    // Offset: 0x19154F0
     void OnDrawGizmosSelected();
     // public System.Void .ctor()
-    // Offset: 0x13A1C0C
+    // Offset: 0x1915538
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

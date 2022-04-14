@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class BypassOnExternal : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SignalNode _nodeToBypass
     // Size: 0x8
     // Offset: 0x18
@@ -54,21 +46,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SignalNode _nodeToBypass
-    ::VROSC::SignalNode*& dyn__nodeToBypass();
+    [[deprecated]] ::VROSC::SignalNode*& dyn__nodeToBypass();
     // protected System.Void Awake()
-    // Offset: 0x1327178
+    // Offset: 0x93BC7C
     void Awake();
     // protected System.Void OnEnable()
-    // Offset: 0x1327264
+    // Offset: 0x93BD68
     void OnEnable();
     // private System.Void UseExternalChanged(System.Boolean useExternal)
-    // Offset: 0x13272D4
+    // Offset: 0x93BDD8
     void UseExternalChanged(bool useExternal);
     // protected System.Void OnDestroy()
-    // Offset: 0x1327364
+    // Offset: 0x93BE68
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x1327450
+    // Offset: 0x93BF54
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

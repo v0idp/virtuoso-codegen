@@ -43,23 +43,15 @@ namespace VROSC::UI {
     public:
     // Nested type: ::VROSC::UI::UIColorSettings::ColorMapping
     class ColorMapping;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x67734C
+    // [HeaderAttribute] Offset: 0x78DBA0
     // public System.Collections.Generic.List`1<VROSC.UI.UIColorSettings/VROSC.UI.ColorMapping> _mappedColors
     // Size: 0x8
     // Offset: 0x10
     ::System::Collections::Generic::List_1<::VROSC::UI::UIColorSettings::ColorMapping*>* mappedColors;
     // Field size check
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::UI::UIColorSettings::ColorMapping*>*) == 0x8);
-    // [HeaderAttribute] Offset: 0x677398
+    // [HeaderAttribute] Offset: 0x78DBEC
     // private VROSC.UI.UITwoToneColor xAxisNaturals
     // Size: 0x8
     // Offset: 0x18
@@ -96,35 +88,35 @@ namespace VROSC::UI {
     ::VROSC::UI::UITwoToneColor* zAxisHalfs;
     // Field size check
     static_assert(sizeof(::VROSC::UI::UITwoToneColor*) == 0x8);
-    // [RangeAttribute] Offset: 0x677434
+    // [RangeAttribute] Offset: 0x78DC88
     // private System.Single _hoverMultiplier
     // Size: 0x4
     // Offset: 0x48
     float hoverMultiplier;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x677474
+    // [RangeAttribute] Offset: 0x78DCC8
     // private System.Single _pressedMultiplier
     // Size: 0x4
     // Offset: 0x4C
     float pressedMultiplier;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x6774B4
+    // [RangeAttribute] Offset: 0x78DD08
     // private System.Single _disabledDesaturation
     // Size: 0x4
     // Offset: 0x50
     float disabledDesaturation;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x6774F4
+    // [RangeAttribute] Offset: 0x78DD48
     // private System.Single _disabledDarken
     // Size: 0x4
     // Offset: 0x54
     float disabledDarken;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [HeaderAttribute] Offset: 0x677534
+    // [HeaderAttribute] Offset: 0x78DD88
     // private UnityEngine.Color _controllerButtonHighlight
     // Size: 0x10
     // Offset: 0x58
@@ -145,50 +137,50 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.UI.UIColorSettings/VROSC.UI.ColorMapping> _mappedColors
-    ::System::Collections::Generic::List_1<::VROSC::UI::UIColorSettings::ColorMapping*>*& dyn__mappedColors();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UI::UIColorSettings::ColorMapping*>*& dyn__mappedColors();
     // Get instance field reference: private VROSC.UI.UITwoToneColor xAxisNaturals
-    ::VROSC::UI::UITwoToneColor*& dyn_xAxisNaturals();
+    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_xAxisNaturals();
     // Get instance field reference: private VROSC.UI.UITwoToneColor xAxisHalfs
-    ::VROSC::UI::UITwoToneColor*& dyn_xAxisHalfs();
+    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_xAxisHalfs();
     // Get instance field reference: private VROSC.UI.UITwoToneColor yAxisNaturals
-    ::VROSC::UI::UITwoToneColor*& dyn_yAxisNaturals();
+    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_yAxisNaturals();
     // Get instance field reference: private VROSC.UI.UITwoToneColor yAxisHalfs
-    ::VROSC::UI::UITwoToneColor*& dyn_yAxisHalfs();
+    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_yAxisHalfs();
     // Get instance field reference: private VROSC.UI.UITwoToneColor zAxisNaturals
-    ::VROSC::UI::UITwoToneColor*& dyn_zAxisNaturals();
+    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_zAxisNaturals();
     // Get instance field reference: private VROSC.UI.UITwoToneColor zAxisHalfs
-    ::VROSC::UI::UITwoToneColor*& dyn_zAxisHalfs();
+    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_zAxisHalfs();
     // Get instance field reference: private System.Single _hoverMultiplier
-    float& dyn__hoverMultiplier();
+    [[deprecated]] float& dyn__hoverMultiplier();
     // Get instance field reference: private System.Single _pressedMultiplier
-    float& dyn__pressedMultiplier();
+    [[deprecated]] float& dyn__pressedMultiplier();
     // Get instance field reference: private System.Single _disabledDesaturation
-    float& dyn__disabledDesaturation();
+    [[deprecated]] float& dyn__disabledDesaturation();
     // Get instance field reference: private System.Single _disabledDarken
-    float& dyn__disabledDarken();
+    [[deprecated]] float& dyn__disabledDarken();
     // Get instance field reference: private UnityEngine.Color _controllerButtonHighlight
-    ::UnityEngine::Color& dyn__controllerButtonHighlight();
+    [[deprecated]] ::UnityEngine::Color& dyn__controllerButtonHighlight();
     // Get instance field reference: private UnityEngine.Color _controllerButtonPressed
-    ::UnityEngine::Color& dyn__controllerButtonPressed();
+    [[deprecated]] ::UnityEngine::Color& dyn__controllerButtonPressed();
     // Get instance field reference: private UnityEngine.Color _controllerButtonNormal
-    ::UnityEngine::Color& dyn__controllerButtonNormal();
+    [[deprecated]] ::UnityEngine::Color& dyn__controllerButtonNormal();
     // public System.Void UpdateColors()
-    // Offset: 0x139B498
+    // Offset: 0x190ED04
     void UpdateColors();
     // public VROSC.UI.UITwoToneColor GetScalePanelColor(System.Int32 axis, System.Boolean natural, System.Boolean isPressed, System.Boolean isHovering, System.Boolean isDisabled)
-    // Offset: 0x139B5B0
+    // Offset: 0x190EE1C
     ::VROSC::UI::UITwoToneColor* GetScalePanelColor(int axis, bool natural, bool isPressed, bool isHovering, bool isDisabled);
     // public UnityEngine.Color GetControllerButtonColor(System.Boolean highlight, System.Boolean pressed)
-    // Offset: 0x139B6A0
+    // Offset: 0x190EF0C
     ::UnityEngine::Color GetControllerButtonColor(bool highlight, bool pressed);
     // private VROSC.UI.UITwoToneColor ModifyColorByInteractivity(VROSC.UI.UITwoToneColor color, System.Boolean isPressed, System.Boolean isHovering, System.Boolean isDisabled)
-    // Offset: 0x139B664
+    // Offset: 0x190EED0
     ::VROSC::UI::UITwoToneColor* ModifyColorByInteractivity(::VROSC::UI::UITwoToneColor* color, bool isPressed, bool isHovering, bool isDisabled);
     // private VROSC.UI.UITwoToneColor GetColorByAxis(System.Int32 axis, System.Boolean natural)
-    // Offset: 0x139B610
+    // Offset: 0x190EE7C
     ::VROSC::UI::UITwoToneColor* GetColorByAxis(int axis, bool natural);
     // public System.Void .ctor()
-    // Offset: 0x139B8D8
+    // Offset: 0x190F144
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

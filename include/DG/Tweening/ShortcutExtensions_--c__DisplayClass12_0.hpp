@@ -33,15 +33,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ShortcutExtensions::$$c__DisplayClass12_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Light target
     // Size: 0x8
     // Offset: 0x10
@@ -54,15 +46,15 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.Light target
-    ::UnityEngine::Light*& dyn_target();
+    [[deprecated]] ::UnityEngine::Light*& dyn_target();
     // UnityEngine.Color <DOColor>b__0()
-    // Offset: 0x126C14C
+    // Offset: 0x18644F0
     ::UnityEngine::Color $DOColor$b__0();
     // System.Void <DOColor>b__1(UnityEngine.Color x)
-    // Offset: 0x126C168
+    // Offset: 0x186450C
     void $DOColor$b__1(::UnityEngine::Color x);
     // public System.Void .ctor()
-    // Offset: 0x126C144
+    // Offset: 0x18644E8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

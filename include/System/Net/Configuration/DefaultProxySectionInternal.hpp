@@ -33,15 +33,7 @@ namespace System::Net::Configuration {
   // [TokenAttribute] Offset: FFFFFFFF
   class DefaultProxySectionInternal : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.IWebProxy webProxy
     // Size: 0x8
     // Offset: 0x10
@@ -58,24 +50,24 @@ namespace System::Net::Configuration {
     // Set static field: static private System.Object classSyncObject
     static void _set_classSyncObject(::Il2CppObject* value);
     // Get instance field reference: private System.Net.IWebProxy webProxy
-    ::System::Net::IWebProxy*& dyn_webProxy();
+    [[deprecated]] ::System::Net::IWebProxy*& dyn_webProxy();
     // static System.Object get_ClassSyncObject()
-    // Offset: 0xE78C44
+    // Offset: 0x10EC464
     static ::Il2CppObject* get_ClassSyncObject();
     // System.Net.IWebProxy get_WebProxy()
-    // Offset: 0xE78E00
+    // Offset: 0x10EC620
     ::System::Net::IWebProxy* get_WebProxy();
     // static private System.Net.IWebProxy GetDefaultProxy_UsingOldMonoCode()
-    // Offset: 0xE78C34
+    // Offset: 0x10EC454
     static ::System::Net::IWebProxy* GetDefaultProxy_UsingOldMonoCode();
     // static private System.Net.IWebProxy GetSystemWebProxy()
-    // Offset: 0xE78C3C
+    // Offset: 0x10EC45C
     static ::System::Net::IWebProxy* GetSystemWebProxy();
     // static System.Net.Configuration.DefaultProxySectionInternal GetSection()
-    // Offset: 0xE78CE0
+    // Offset: 0x10EC500
     static ::System::Net::Configuration::DefaultProxySectionInternal* GetSection();
     // public System.Void .ctor()
-    // Offset: 0xE78DF8
+    // Offset: 0x10EC618
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -25,7 +25,7 @@ namespace GlobalNamespace {
   // Forward declaring type: ovrAvatarRenderPart_ProjectorRender
   struct ovrAvatarRenderPart_ProjectorRender;
   // Forward declaring type: OvrAvatarComponent
-  class OvrAvatarComponent;
+  class OvrAvatarComponent_;
 }
 // Completed forward declares
 // Type namespace: 
@@ -46,15 +46,7 @@ namespace GlobalNamespace {
     public:
     // Writing base type padding for base size: 0x31 to desired offset: 0x38
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Material material
     // Size: 0x8
     // Offset: 0x38
@@ -63,18 +55,18 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Material material
-    ::UnityEngine::Material*& dyn_material();
+    [[deprecated]] ::UnityEngine::Material*& dyn_material();
     // System.Void InitializeProjectorRender(ovrAvatarRenderPart_ProjectorRender render, UnityEngine.Shader shader, OvrAvatarRenderComponent target)
-    // Offset: 0x8EF20C
+    // Offset: 0xF8F9DC
     void InitializeProjectorRender(::GlobalNamespace::ovrAvatarRenderPart_ProjectorRender render, ::UnityEngine::Shader* shader, ::GlobalNamespace::OvrAvatarRenderComponent* target);
     // System.Void UpdateProjectorRender(OvrAvatarComponent component, ovrAvatarRenderPart_ProjectorRender render)
-    // Offset: 0x8EF540
-    void UpdateProjectorRender(::GlobalNamespace::OvrAvatarComponent* component, ::GlobalNamespace::ovrAvatarRenderPart_ProjectorRender render);
+    // Offset: 0xF8FD10
+    void UpdateProjectorRender(::GlobalNamespace::OvrAvatarComponent_* component, ::GlobalNamespace::ovrAvatarRenderPart_ProjectorRender render);
     // private System.Void OnDrawGizmos()
-    // Offset: 0x8EF6E4
+    // Offset: 0xF8FEAC
     void OnDrawGizmos();
     // public System.Void .ctor()
-    // Offset: 0x8EFB70
+    // Offset: 0xF90338
     // Implemented from: OvrAvatarRenderComponent
     // Base method: System.Void OvrAvatarRenderComponent::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -107,7 +99,7 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarProjectorRenderComponent::UpdateProjectorRender
 // Il2CppName: UpdateProjectorRender
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatarProjectorRenderComponent::*)(::GlobalNamespace::OvrAvatarComponent*, ::GlobalNamespace::ovrAvatarRenderPart_ProjectorRender)>(&GlobalNamespace::OvrAvatarProjectorRenderComponent::UpdateProjectorRender)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatarProjectorRenderComponent::*)(::GlobalNamespace::OvrAvatarComponent_*, ::GlobalNamespace::ovrAvatarRenderPart_ProjectorRender)>(&GlobalNamespace::OvrAvatarProjectorRenderComponent::UpdateProjectorRender)> {
   static const MethodInfo* get() {
     static auto* component = &::il2cpp_utils::GetClassFromName("", "OvrAvatarComponent")->byval_arg;
     static auto* render = &::il2cpp_utils::GetClassFromName("", "ovrAvatarRenderPart_ProjectorRender")->byval_arg;

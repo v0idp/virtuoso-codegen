@@ -43,15 +43,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FieldPath : public ::Il2CppObject/*, public ::System::IEquatable_1<::Firebase::Firestore::FieldPath*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.String[] _segments
     // Size: 0x8
     // Offset: 0x10
@@ -77,7 +69,7 @@ namespace Firebase::Firestore {
     static ::ArrayW<::Il2CppChar> _get_prohibitedCharacters();
     // Set static field: static private readonly System.Char[] prohibitedCharacters
     static void _set_prohibitedCharacters(::ArrayW<::Il2CppChar> value);
-    // [DebuggerBrowsableAttribute] Offset: 0x5C7A1C
+    // [DebuggerBrowsableAttribute] Offset: 0x6D8714
     // Get static field: static private readonly Firebase.Firestore.FieldPath <DocumentId>k__BackingField
     static ::Firebase::Firestore::FieldPath* _get_$DocumentId$k__BackingField();
     // Set static field: static private readonly Firebase.Firestore.FieldPath <DocumentId>k__BackingField
@@ -87,52 +79,52 @@ namespace Firebase::Firestore {
     // Set static field: static private System.Func`2<System.String,System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::StringW, bool>* value);
     // Get instance field reference: private readonly System.String[] _segments
-    ::ArrayW<::StringW>& dyn__segments();
+    [[deprecated]] ::ArrayW<::StringW>& dyn__segments();
     // Get instance field reference: private System.String _encodedPath
-    ::StringW& dyn__encodedPath();
+    [[deprecated]] ::StringW& dyn__encodedPath();
     // System.String get_EncodedPath()
-    // Offset: 0xC33B40
+    // Offset: 0xD55DDC
     ::StringW get_EncodedPath();
     // private System.Void .ctor(System.String[] segments, System.Boolean trusted)
-    // Offset: 0xC338DC
+    // Offset: 0xD55B78
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldPath* New_ctor(::ArrayW<::StringW> segments, bool trusted) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldPath::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FieldPath*, creationType>(segments, trusted)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xC34380
+    // Offset: 0xD56530
     static void _cctor();
     // static Firebase.Firestore.FieldPath FromDotSeparatedString(System.String path)
-    // Offset: 0xC33DB0
+    // Offset: 0xD5604C
     static ::Firebase::Firestore::FieldPath* FromDotSeparatedString(::StringW path);
     // static private System.String GetCanonicalPath(System.String[] fields)
-    // Offset: 0xC33BB4
+    // Offset: 0xD55E50
     static ::StringW GetCanonicalPath(::ArrayW<::StringW> fields);
     // static private System.Boolean IsValidIdentifier(System.String identifier)
-    // Offset: 0xC34034
+    // Offset: 0xD561EC
     static bool IsValidIdentifier(::StringW identifier);
     // public System.Boolean Equals(Firebase.Firestore.FieldPath other)
-    // Offset: 0xC34168
+    // Offset: 0xD56320
     bool Equals(::Firebase::Firestore::FieldPath* other);
     // Firebase.Firestore.FieldPathProxy ConvertToProxy()
-    // Offset: 0xC341D0
+    // Offset: 0xD56388
     ::Firebase::Firestore::FieldPathProxy* ConvertToProxy();
     // static private System.Boolean <FieldPath>m__0(System.String n)
-    // Offset: 0xC344E8
+    // Offset: 0xD56698
     static bool $FieldPath$m__0(::StringW n);
     // public override System.String ToString()
-    // Offset: 0xC340F4
+    // Offset: 0xD562AC
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC340F8
+    // Offset: 0xD562B0
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xC341AC
+    // Offset: 0xD56364
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();

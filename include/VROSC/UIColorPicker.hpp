@@ -63,15 +63,7 @@ namespace VROSC {
     class $GrabSliderRemotely$d__21;
     // Nested type: ::VROSC::UIColorPicker::$GrabPicker$d__23
     class $GrabPicker$d__23;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color <Color>k__BackingField
     // Size: 0x10
     // Offset: 0x88
@@ -118,66 +110,66 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::RectTransform*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnColorPicked
-    ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorPicked();
+    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorPicked();
     // Get instance field reference: private VROSC.UIColorPicker/VROSC.UIColorPickerData _data
-    ::VROSC::UIColorPicker::UIColorPickerData*& dyn__data();
+    [[deprecated]] ::VROSC::UIColorPicker::UIColorPickerData*& dyn__data();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private VROSC.TriggerButton _grabbingButton
-    ::VROSC::TriggerButton& dyn__grabbingButton();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__grabbingButton();
     // Get instance field reference: private System.Boolean _uiHelperActive
-    bool& dyn__uiHelperActive();
+    [[deprecated]] bool& dyn__uiHelperActive();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // public UnityEngine.Vector2 get_Size()
-    // Offset: 0x139A4A8
+    // Offset: 0xA34038
     ::UnityEngine::Vector2 get_Size();
     // public VROSC.UIColorPicker/VROSC.UIColorPickerData get_Data()
-    // Offset: 0x139A5A0
+    // Offset: 0xA34130
     ::VROSC::UIColorPicker::UIColorPickerData* get_Data();
     // public UnityEngine.Color get_Color()
-    // Offset: 0x139A5B4
+    // Offset: 0xA34144
     ::UnityEngine::Color get_Color();
     // private System.Void set_Color(UnityEngine.Color value)
-    // Offset: 0x139A5A8
+    // Offset: 0xA34138
     void set_Color(::UnityEngine::Color value);
     // private System.Void Awake()
-    // Offset: 0x139A5C0
+    // Offset: 0xA34150
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x139A71C
+    // Offset: 0xA342AC
     void OnDestroy();
     // private System.Void OnEnable()
-    // Offset: 0x139A7DC
+    // Offset: 0xA3436C
     void OnEnable();
     // private System.Void StopGrabPicker(VROSC.InputDevice device, VROSC.TriggerButton button)
-    // Offset: 0x139AA74
+    // Offset: 0xA34604
     void StopGrabPicker(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
     // private System.Void ButtonWasPressed(VROSC.ClickData clickData)
-    // Offset: 0x139AB40
+    // Offset: 0xA346D0
     void ButtonWasPressed(::VROSC::ClickData* clickData);
     // private System.Collections.IEnumerator GrabSliderRemotely(VROSC.InputDevice device, VROSC.TriggerButton grabbingButton)
-    // Offset: 0x139AC7C
+    // Offset: 0xA3480C
     ::System::Collections::IEnumerator* GrabSliderRemotely(::VROSC::InputDevice* device, ::VROSC::TriggerButton grabbingButton);
     // private System.Void StopGrabRemotely(VROSC.InputDevice device)
-    // Offset: 0x139A9D4
+    // Offset: 0xA34564
     void StopGrabRemotely(::VROSC::InputDevice* device);
     // private System.Collections.IEnumerator GrabPicker(VROSC.InputDevice device, VROSC.TriggerButton grabbingButton, System.Boolean pointing)
-    // Offset: 0x139ACFC
+    // Offset: 0xA3488C
     ::System::Collections::IEnumerator* GrabPicker(::VROSC::InputDevice* device, ::VROSC::TriggerButton grabbingButton, bool pointing);
     // private System.Void GetRectTransform()
-    // Offset: 0x139A684
+    // Offset: 0xA34214
     void GetRectTransform();
     // private UnityEngine.Vector2 GetSize()
-    // Offset: 0x139A4AC
+    // Offset: 0xA3403C
     ::UnityEngine::Vector2 GetSize();
     // public System.Void SetColor(UnityEngine.Color color, System.Boolean useCallback)
-    // Offset: 0x139AD98
+    // Offset: 0xA34928
     void SetColor(::UnityEngine::Color color, bool useCallback);
     // public System.Void .ctor()
-    // Offset: 0x139AE48
+    // Offset: 0xA349D8
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
@@ -193,7 +185,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UIColorPicker*, creationType>()));
     }
     // protected override System.Void OnDisable()
-    // Offset: 0x139A8C8
+    // Offset: 0xA34458
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::OnDisable()
     void OnDisable();

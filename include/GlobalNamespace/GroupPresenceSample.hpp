@@ -67,15 +67,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class GroupPresenceSample : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean IsJoinable
     // Size: 0x1
     // Offset: 0x18
@@ -142,108 +134,108 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean IsJoinable
-    bool& dyn_IsJoinable();
+    [[deprecated]] bool& dyn_IsJoinable();
     // Get instance field reference: public System.String LobbySessionID
-    ::StringW& dyn_LobbySessionID();
+    [[deprecated]] ::StringW& dyn_LobbySessionID();
     // Get instance field reference: public System.String MatchSessionID
-    ::StringW& dyn_MatchSessionID();
+    [[deprecated]] ::StringW& dyn_MatchSessionID();
     // Get instance field reference: public System.UInt64 SuggestedUserID
-    uint64_t& dyn_SuggestedUserID();
+    [[deprecated]] uint64_t& dyn_SuggestedUserID();
     // Get instance field reference: public UnityEngine.UI.Text InVRConsole
-    ::UnityEngine::UI::Text*& dyn_InVRConsole();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_InVRConsole();
     // Get instance field reference: public UnityEngine.UI.Text DestinationsConsole
-    ::UnityEngine::UI::Text*& dyn_DestinationsConsole();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_DestinationsConsole();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> DestinationAPINames
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_DestinationAPINames();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_DestinationAPINames();
     // Get instance field reference: private System.UInt64 LoggedInUserID
-    uint64_t& dyn_LoggedInUserID();
+    [[deprecated]] uint64_t& dyn_LoggedInUserID();
     // Get instance field reference: private System.Int32 DestinationIndex
-    int& dyn_DestinationIndex();
+    [[deprecated]] int& dyn_DestinationIndex();
     // Get instance field reference: private System.Boolean OnlyPushUpOnce
-    bool& dyn_OnlyPushUpOnce();
+    [[deprecated]] bool& dyn_OnlyPushUpOnce();
     // private System.Void Start()
-    // Offset: 0x7EC9F0
+    // Offset: 0x932DD0
     void Start();
     // private System.Void SetPresence()
-    // Offset: 0x7ECBBC
+    // Offset: 0x932F9C
     void SetPresence();
     // private System.Void ClearPresence()
-    // Offset: 0x7ECD78
+    // Offset: 0x933158
     void ClearPresence();
     // private System.Void LaunchInvitePanel()
-    // Offset: 0x7ECE34
+    // Offset: 0x933214
     void LaunchInvitePanel();
     // private System.Void LaunchRosterPanel()
-    // Offset: 0x7ECF5C
+    // Offset: 0x93333C
     void LaunchRosterPanel();
     // private System.Void OnJoinIntentChangeNotif(Oculus.Platform.Message`1<Oculus.Platform.Models.GroupPresenceJoinIntent> message)
-    // Offset: 0x7ED05C
+    // Offset: 0x93343C
     void OnJoinIntentChangeNotif(::Oculus::Platform::Message_1<::Oculus::Platform::Models::GroupPresenceJoinIntent*>* message);
     // private System.Void OnLeaveIntentChangeNotif(Oculus.Platform.Message`1<Oculus.Platform.Models.GroupPresenceLeaveIntent> message)
-    // Offset: 0x7ED3D4
+    // Offset: 0x9337B4
     void OnLeaveIntentChangeNotif(::Oculus::Platform::Message_1<::Oculus::Platform::Models::GroupPresenceLeaveIntent*>* message);
     // private System.Void OnInviteSentNotif(Oculus.Platform.Message`1<Oculus.Platform.Models.LaunchInvitePanelFlowResult> message)
-    // Offset: 0x7ED658
+    // Offset: 0x933A38
     void OnInviteSentNotif(::Oculus::Platform::Message_1<::Oculus::Platform::Models::LaunchInvitePanelFlowResult*>* message);
     // private System.Void OnGetDestinations(Oculus.Platform.Message`1<Oculus.Platform.Models.DestinationList> message)
-    // Offset: 0x7ED9DC
+    // Offset: 0x933DBC
     void OnGetDestinations(::Oculus::Platform::Message_1<::Oculus::Platform::Models::DestinationList*>* message);
     // private System.Void Update()
-    // Offset: 0x7EDE30
+    // Offset: 0x934210
     void Update();
     // private System.Void ScrollThroughDestinations()
-    // Offset: 0x7EDF4C
+    // Offset: 0x93432C
     void ScrollThroughDestinations();
     // private System.Void UpdateDestinationsConsole()
-    // Offset: 0x7EDCBC
+    // Offset: 0x93409C
     void UpdateDestinationsConsole();
     // private System.Void OnLoggedInUser(Oculus.Platform.Message`1<Oculus.Platform.Models.User> message)
-    // Offset: 0x7EE03C
+    // Offset: 0x93441C
     void OnLoggedInUser(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* message);
     // private System.Void UpdateConsole(System.String value)
-    // Offset: 0x7ECB04
+    // Offset: 0x932EE4
     void UpdateConsole(::StringW value);
     // private System.Boolean PressAButton()
-    // Offset: 0x7EDF1C
+    // Offset: 0x9342FC
     bool PressAButton();
     // private System.Boolean PressBButton()
-    // Offset: 0x7EDF28
+    // Offset: 0x934308
     bool PressBButton();
     // private System.Boolean PressXButton()
-    // Offset: 0x7EDF34
+    // Offset: 0x934314
     bool PressXButton();
     // private System.Boolean PressYButton()
-    // Offset: 0x7EDF40
+    // Offset: 0x934320
     bool PressYButton();
     // private System.Boolean PressUp()
-    // Offset: 0x7EE024
+    // Offset: 0x934404
     bool PressUp();
     // private System.Boolean PressDown()
-    // Offset: 0x7EE030
+    // Offset: 0x934410
     bool PressDown();
     // private System.Void <Start>b__8_0(Oculus.Platform.Message`1<Oculus.Platform.Models.PlatformInitialize> message)
-    // Offset: 0x7EE184
+    // Offset: 0x934564
     void $Start$b__8_0(::Oculus::Platform::Message_1<::Oculus::Platform::Models::PlatformInitialize*>* message);
     // private System.Void <SetPresence>b__9_0(Oculus.Platform.Message message)
-    // Offset: 0x7EE460
+    // Offset: 0x934840
     void $SetPresence$b__9_0(::Oculus::Platform::Message* message);
     // private System.Void <SetPresence>b__9_1(Oculus.Platform.Message`1<Oculus.Platform.Models.User> message2)
-    // Offset: 0x7EE570
+    // Offset: 0x934950
     void $SetPresence$b__9_1(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* message2);
     // private System.Void <ClearPresence>b__10_0(Oculus.Platform.Message message)
-    // Offset: 0x7EE78C
+    // Offset: 0x934B6C
     void $ClearPresence$b__10_0(::Oculus::Platform::Message* message);
     // private System.Void <ClearPresence>b__10_1(Oculus.Platform.Message`1<Oculus.Platform.Models.User> message2)
-    // Offset: 0x7EE89C
+    // Offset: 0x934C7C
     void $ClearPresence$b__10_1(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* message2);
     // private System.Void <LaunchInvitePanel>b__11_0(Oculus.Platform.Message`1<Oculus.Platform.Models.InvitePanelResultInfo> message)
-    // Offset: 0x7EE964
+    // Offset: 0x934D44
     void $LaunchInvitePanel$b__11_0(::Oculus::Platform::Message_1<::Oculus::Platform::Models::InvitePanelResultInfo*>* message);
     // private System.Void <LaunchRosterPanel>b__12_0(Oculus.Platform.Message message)
-    // Offset: 0x7EE9C4
+    // Offset: 0x934DA4
     void $LaunchRosterPanel$b__12_0(::Oculus::Platform::Message* message);
     // public System.Void .ctor()
-    // Offset: 0x7EE104
+    // Offset: 0x9344E4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

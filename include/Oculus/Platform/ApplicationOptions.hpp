@@ -29,15 +29,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class ApplicationOptions : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IntPtr Handle
     // Size: 0x8
     // Offset: 0x10
@@ -50,15 +42,15 @@ namespace Oculus::Platform {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr Handle
-    ::System::IntPtr& dyn_Handle();
+    [[deprecated]] ::System::IntPtr& dyn_Handle();
     // public System.Void SetDeeplinkMessage(System.String value)
-    // Offset: 0x7B3204
+    // Offset: 0x8F95E4
     void SetDeeplinkMessage(::StringW value);
     // static public System.IntPtr op_Explicit(Oculus.Platform.ApplicationOptions options)
-    // Offset: 0x7B24F0
+    // Offset: 0x8F88D0
     // ABORTED: conflicts with another method.  explicit operator ::System::IntPtr();
     // public System.Void .ctor()
-    // Offset: 0x7B3120
+    // Offset: 0x8F9500
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -67,7 +59,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<ApplicationOptions*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x7B332C
+    // Offset: 0x8F970C
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

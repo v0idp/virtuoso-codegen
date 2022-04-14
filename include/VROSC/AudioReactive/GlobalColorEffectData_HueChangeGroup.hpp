@@ -30,15 +30,7 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class GlobalColorEffectData::HueChangeGroup : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _hueShift
     // Size: 0x4
     // Offset: 0x10
@@ -47,7 +39,7 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(float) == 0x4);
     // Padding between fields: hueShift and: gradient
     char __padding0[0x4] = {};
-    // [GradientUsageAttribute] Offset: 0x67692C
+    // [GradientUsageAttribute] Offset: 0x78D1D0
     // private UnityEngine.Gradient _gradient
     // Size: 0x8
     // Offset: 0x18
@@ -68,27 +60,27 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Single _hueShift
-    float& dyn__hueShift();
+    [[deprecated]] float& dyn__hueShift();
     // Get instance field reference: private UnityEngine.Gradient _gradient
-    ::UnityEngine::Gradient*& dyn__gradient();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn__gradient();
     // Get instance field reference: private System.Boolean _useGradient
-    bool& dyn__useGradient();
+    [[deprecated]] bool& dyn__useGradient();
     // Get instance field reference: private System.Boolean _includeShifts
-    bool& dyn__includeShifts();
+    [[deprecated]] bool& dyn__includeShifts();
     // public System.Single get_HueShift()
-    // Offset: 0x13CF51C
+    // Offset: 0x1957168
     float get_HueShift();
     // public UnityEngine.Gradient get_Gradient()
-    // Offset: 0x13CF524
+    // Offset: 0x1957170
     ::UnityEngine::Gradient* get_Gradient();
     // public System.Boolean get_UseGradient()
-    // Offset: 0x13CF52C
+    // Offset: 0x1957178
     bool get_UseGradient();
     // public System.Boolean get_IncludeShifts()
-    // Offset: 0x13CF534
+    // Offset: 0x1957180
     bool get_IncludeShifts();
     // public System.Void .ctor()
-    // Offset: 0x13CF53C
+    // Offset: 0x1957188
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -53,16 +53,16 @@ namespace UnityEngine::UI {
     // Set static field: static public System.Func`2<UnityEngine.UI.Toggle,System.Boolean> <>9__14_0
     static void _set_$$9__14_0(::System::Func_2<::UnityEngine::UI::Toggle*, bool>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1145354
+    // Offset: 0x16DBAEC
     static void _cctor();
     // System.Boolean <AnyTogglesOn>b__13_0(UnityEngine.UI.Toggle x)
-    // Offset: 0x11453BC
+    // Offset: 0x16DBB54
     bool $AnyTogglesOn$b__13_0(::UnityEngine::UI::Toggle* x);
     // System.Boolean <ActiveToggles>b__14_0(UnityEngine.UI.Toggle x)
-    // Offset: 0x11453D4
+    // Offset: 0x16DBB6C
     bool $ActiveToggles$b__14_0(::UnityEngine::UI::Toggle* x);
     // public System.Void .ctor()
-    // Offset: 0x11453B4
+    // Offset: 0x16DBB4C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

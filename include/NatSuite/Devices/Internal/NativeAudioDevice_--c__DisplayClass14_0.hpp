@@ -32,15 +32,7 @@ namespace NatSuite::Devices::Internal {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class NativeAudioDevice::$$c__DisplayClass14_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public NatSuite.Devices.SampleBufferDelegate delegate
     // Size: 0x8
     // Offset: 0x10
@@ -53,12 +45,12 @@ namespace NatSuite::Devices::Internal {
       return delegate;
     }
     // Get instance field reference: public NatSuite.Devices.SampleBufferDelegate delegate
-    ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
+    [[deprecated]] ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
     // System.Void <StartRunning>b__0(System.Single[] sampleBuffer, System.Int64 timestamp)
-    // Offset: 0x133D564
+    // Offset: 0x1965454
     void $StartRunning$b__0(::ArrayW<float> sampleBuffer, int64_t timestamp);
     // public System.Void .ctor()
-    // Offset: 0x133D55C
+    // Offset: 0x196544C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

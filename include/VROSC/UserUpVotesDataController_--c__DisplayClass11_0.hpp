@@ -33,15 +33,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UserUpVotesDataController::$$c__DisplayClass11_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.UserUpVotesDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -62,16 +54,16 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public VROSC.UserUpVotesDataController <>4__this
-    ::VROSC::UserUpVotesDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UserUpVotesDataController*& dyn_$$4__this();
     // Get instance field reference: public VROSC.UserUpVotesDataModel/VROSC.UpVote upVote
-    ::VROSC::UserUpVotesDataModel::UpVote*& dyn_upVote();
+    [[deprecated]] ::VROSC::UserUpVotesDataModel::UpVote*& dyn_upVote();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // System.Void <RemoveUpVoteFromData>b__0()
-    // Offset: 0x14168A0
+    // Offset: 0xE88B20
     void $RemoveUpVoteFromData$b__0();
     // public System.Void .ctor()
-    // Offset: 0x1416898
+    // Offset: 0xE88B18
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -34,15 +34,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class OutputWindow : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Byte[] _window
     // Size: 0x8
     // Offset: 0x10
@@ -63,31 +55,31 @@ namespace System::IO::Compression {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.Byte[] _window
-    ::ArrayW<uint8_t>& dyn__window();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__window();
     // Get instance field reference: private System.Int32 _end
-    int& dyn__end();
+    [[deprecated]] int& dyn__end();
     // Get instance field reference: private System.Int32 _bytesUsed
-    int& dyn__bytesUsed();
+    [[deprecated]] int& dyn__bytesUsed();
     // public System.Int32 get_FreeBytes()
-    // Offset: 0x1120C04
+    // Offset: 0x1698470
     int get_FreeBytes();
     // public System.Int32 get_AvailableBytes()
-    // Offset: 0x1121188
+    // Offset: 0x16989F4
     int get_AvailableBytes();
     // public System.Void Write(System.Byte b)
-    // Offset: 0x1120C14
+    // Offset: 0x1698480
     void Write(uint8_t b);
     // public System.Void WriteLengthDistance(System.Int32 length, System.Int32 distance)
-    // Offset: 0x1120C78
+    // Offset: 0x16984E4
     void WriteLengthDistance(int length, int distance);
     // public System.Int32 CopyFrom(System.IO.Compression.InputBuffer input, System.Int32 length)
-    // Offset: 0x1120AE8
+    // Offset: 0x1698354
     int CopyFrom(::System::IO::Compression::InputBuffer* input, int length);
     // public System.Int32 CopyTo(System.Byte[] output, System.Int32 offset, System.Int32 length)
-    // Offset: 0x111F764
+    // Offset: 0x1696FD0
     int CopyTo(::ArrayW<uint8_t> output, int offset, int length);
     // public System.Void .ctor()
-    // Offset: 0x111F6C8
+    // Offset: 0x1696F34
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

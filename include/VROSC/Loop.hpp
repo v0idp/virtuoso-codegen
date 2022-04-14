@@ -27,15 +27,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Loop : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single[] LoopAudio
     // Size: 0x8
     // Offset: 0x10
@@ -62,36 +54,36 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Single[] LoopAudio
-    ::ArrayW<float>& dyn_LoopAudio();
+    [[deprecated]] ::ArrayW<float>& dyn_LoopAudio();
     // Get instance field reference: public System.Single[] LoopTailAudio
-    ::ArrayW<float>& dyn_LoopTailAudio();
+    [[deprecated]] ::ArrayW<float>& dyn_LoopTailAudio();
     // Get instance field reference: public System.Int32 LoopLength
-    int& dyn_LoopLength();
+    [[deprecated]] int& dyn_LoopLength();
     // Get instance field reference: private System.Int32 <GlobalSyncStartOffset>k__BackingField
-    int& dyn_$GlobalSyncStartOffset$k__BackingField();
+    [[deprecated]] int& dyn_$GlobalSyncStartOffset$k__BackingField();
     // public System.Int32 get_TailLength()
-    // Offset: 0x1394748
+    // Offset: 0x19B4A2C
     int get_TailLength();
     // public System.Int32 get_LoopLengthInSamples()
-    // Offset: 0x139476C
+    // Offset: 0x19B4A50
     int get_LoopLengthInSamples();
     // public System.Int32 get_GlobalSyncStartOffset()
-    // Offset: 0x139481C
+    // Offset: 0x19B4B00
     int get_GlobalSyncStartOffset();
     // public System.Void set_GlobalSyncStartOffset(System.Int32 value)
-    // Offset: 0x1394824
+    // Offset: 0x19B4B08
     void set_GlobalSyncStartOffset(int value);
     // public System.Single get_BeatLengthMultiplier()
-    // Offset: 0x139482C
+    // Offset: 0x19B4B10
     float get_BeatLengthMultiplier();
     // public System.Single GetAudio(System.Int32 index, System.Boolean addTail)
-    // Offset: 0x1394898
+    // Offset: 0x19B4B7C
     float GetAudio(int index, bool addTail);
     // public System.Int32 GetNextLoopStartAfterSample(System.Int32 sample)
-    // Offset: 0x1394900
+    // Offset: 0x19B4BE4
     int GetNextLoopStartAfterSample(int sample);
     // public System.Void .ctor()
-    // Offset: 0x139499C
+    // Offset: 0x19B4C80
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

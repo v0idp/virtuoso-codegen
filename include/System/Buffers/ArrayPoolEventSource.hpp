@@ -40,16 +40,16 @@ namespace System::Buffers {
     // Set static field: static readonly System.Buffers.ArrayPoolEventSource Log
     static void _set_Log(::System::Buffers::ArrayPoolEventSource* value);
     // System.Void BufferRented(System.Int32 bufferId, System.Int32 bufferSize, System.Int32 poolId, System.Int32 bucketId)
-    // Offset: 0x12EDB50
+    // Offset: 0x18F4D50
     void BufferRented(int bufferId, int bufferSize, int poolId, int bucketId);
     // System.Void BufferAllocated(System.Int32 bufferId, System.Int32 bufferSize, System.Int32 poolId, System.Int32 bucketId, System.Buffers.ArrayPoolEventSource/System.Buffers.BufferAllocatedReason reason)
-    // Offset: 0x12EDB54
+    // Offset: 0x18F4D54
     void BufferAllocated(int bufferId, int bufferSize, int poolId, int bucketId, ::System::Buffers::ArrayPoolEventSource::BufferAllocatedReason reason);
     // System.Void BufferReturned(System.Int32 bufferId, System.Int32 bufferSize, System.Int32 poolId)
-    // Offset: 0x12EDB58
+    // Offset: 0x18F4D58
     void BufferReturned(int bufferId, int bufferSize, int poolId);
     // public System.Void .ctor()
-    // Offset: 0x12EDB5C
+    // Offset: 0x18F4D5C
     // Implemented from: System.Diagnostics.Tracing.EventSource
     // Base method: System.Void EventSource::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -59,7 +59,7 @@ namespace System::Buffers {
       return THROW_UNLESS((::il2cpp_utils::New<ArrayPoolEventSource*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12EDBC0
+    // Offset: 0x18F4DC0
     // Implemented from: System.Diagnostics.Tracing.EventSource
     // Base method: System.Void EventSource::.cctor()
     static void _cctor();

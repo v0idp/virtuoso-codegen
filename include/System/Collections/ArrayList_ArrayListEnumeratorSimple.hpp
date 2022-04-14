@@ -27,15 +27,7 @@ namespace System::Collections {
   // [TokenAttribute] Offset: FFFFFFFF
   class ArrayList::ArrayListEnumeratorSimple : public ::Il2CppObject/*, public ::System::ICloneable, public ::System::Collections::IEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.ArrayList list
     // Size: 0x8
     // Offset: 0x10
@@ -80,36 +72,36 @@ namespace System::Collections {
     // Set static field: static private System.Object dummyObject
     static void _set_dummyObject(::Il2CppObject* value);
     // Get instance field reference: private System.Collections.ArrayList list
-    ::System::Collections::ArrayList*& dyn_list();
+    [[deprecated]] ::System::Collections::ArrayList*& dyn_list();
     // Get instance field reference: private System.Int32 index
-    int& dyn_index();
+    [[deprecated]] int& dyn_index();
     // Get instance field reference: private System.Int32 version
-    int& dyn_version();
+    [[deprecated]] int& dyn_version();
     // Get instance field reference: private System.Object currentElement
-    ::Il2CppObject*& dyn_currentElement();
+    [[deprecated]] ::Il2CppObject*& dyn_currentElement();
     // Get instance field reference: private System.Boolean isArrayList
-    bool& dyn_isArrayList();
+    [[deprecated]] bool& dyn_isArrayList();
     // public System.Object get_Current()
-    // Offset: 0xDCBB54
+    // Offset: 0x13A1DC8
     ::Il2CppObject* get_Current();
     // System.Void .ctor(System.Collections.ArrayList list)
-    // Offset: 0xDCB83C
+    // Offset: 0x13A1AB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ArrayList::ArrayListEnumeratorSimple* New_ctor(::System::Collections::ArrayList* list) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::ArrayList::ArrayListEnumeratorSimple::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ArrayList::ArrayListEnumeratorSimple*, creationType>(list)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xDCBD1C
+    // Offset: 0x13A1F90
     static void _cctor();
     // public System.Object Clone()
-    // Offset: 0xDCB958
+    // Offset: 0x13A1BCC
     ::Il2CppObject* Clone();
     // public System.Boolean MoveNext()
-    // Offset: 0xDCB960
+    // Offset: 0x13A1BD4
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0xDCBC3C
+    // Offset: 0x13A1EB0
     void Reset();
   }; // System.Collections.ArrayList/System.Collections.ArrayListEnumeratorSimple
   #pragma pack(pop)

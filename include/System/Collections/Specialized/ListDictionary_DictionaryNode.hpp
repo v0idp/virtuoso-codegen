@@ -23,15 +23,7 @@ namespace System::Collections::Specialized {
   // [TokenAttribute] Offset: FFFFFFFF
   class ListDictionary::DictionaryNode : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Object key
     // Size: 0x8
     // Offset: 0x10
@@ -52,13 +44,13 @@ namespace System::Collections::Specialized {
     static_assert(sizeof(::System::Collections::Specialized::ListDictionary::DictionaryNode*) == 0x8);
     public:
     // Get instance field reference: public System.Object key
-    ::Il2CppObject*& dyn_key();
+    [[deprecated]] ::Il2CppObject*& dyn_key();
     // Get instance field reference: public System.Object value
-    ::Il2CppObject*& dyn_value();
+    [[deprecated]] ::Il2CppObject*& dyn_value();
     // Get instance field reference: public System.Collections.Specialized.ListDictionary/System.Collections.Specialized.DictionaryNode next
-    ::System::Collections::Specialized::ListDictionary::DictionaryNode*& dyn_next();
+    [[deprecated]] ::System::Collections::Specialized::ListDictionary::DictionaryNode*& dyn_next();
     // public System.Void .ctor()
-    // Offset: 0x8DDF00
+    // Offset: 0x9F8C7C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

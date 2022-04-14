@@ -35,10 +35,10 @@ namespace Oculus::Platform {
   class MessageWithRejoinDialogResult : public ::Oculus::Platform::Message_1<::Oculus::Platform::Models::RejoinDialogResult*> {
     public:
     // protected Oculus.Platform.Models.RejoinDialogResult GetDataFromMessage(System.IntPtr c_message)
-    // Offset: 0x97D8B4
+    // Offset: 0xB4FC50
     ::Oculus::Platform::Models::RejoinDialogResult* GetDataFromMessage(::System::IntPtr c_message);
     // public System.Void .ctor(System.IntPtr c_message)
-    // Offset: 0x9773F8
+    // Offset: 0xB49794
     // Implemented from: Oculus.Platform.Message`1
     // Base method: System.Void Message_1::.ctor(System.IntPtr c_message)
     // Base method: System.Void Message::.ctor(System.IntPtr c_message)
@@ -48,7 +48,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<MessageWithRejoinDialogResult*, creationType>(c_message)));
     }
     // public override Oculus.Platform.Models.RejoinDialogResult GetRejoinDialogResult()
-    // Offset: 0x97D874
+    // Offset: 0xB4FC10
     // Implemented from: Oculus.Platform.Message
     // Base method: Oculus.Platform.Models.RejoinDialogResult Message::GetRejoinDialogResult()
     ::Oculus::Platform::Models::RejoinDialogResult* GetRejoinDialogResult();

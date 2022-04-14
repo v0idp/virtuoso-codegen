@@ -42,15 +42,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class WriteBatchProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -69,30 +61,30 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC3B500
+    // Offset: 0xD5F328
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WriteBatchProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::WriteBatchProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WriteBatchProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.WriteBatchProxy obj)
-    // Offset: 0xC38F64
+    // Offset: 0xD5C4F4
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::WriteBatchProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC41EDC
+    // Offset: 0xD66590
     void Dispose();
     // public Firebase.Firestore.WriteBatchProxy Delete(Firebase.Firestore.DocumentReferenceProxy document)
-    // Offset: 0xC4206C
+    // Offset: 0xD66720
     ::Firebase::Firestore::WriteBatchProxy* Delete(::Firebase::Firestore::DocumentReferenceProxy* document);
     // public System.Threading.Tasks.Task CommitAsync()
-    // Offset: 0xC42164
+    // Offset: 0xD66810
     ::System::Threading::Tasks::Task* CommitAsync();
     // protected override System.Void Finalize()
-    // Offset: 0xC41E6C
+    // Offset: 0xD66520
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

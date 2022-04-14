@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationRecordingButtonPlayback : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopPlaybackSettingsUI _playbackSettingsUI
     // Size: 0x8
     // Offset: 0x18
@@ -62,29 +54,29 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoopPlaybackSettingsUI _playbackSettingsUI
-    ::VROSC::LoopPlaybackSettingsUI*& dyn__playbackSettingsUI();
+    [[deprecated]] ::VROSC::LoopPlaybackSettingsUI*& dyn__playbackSettingsUI();
     // Get instance field reference: private VROSC.LoopPlaybackConfig <PlaybackConfig>k__BackingField
-    ::VROSC::LoopPlaybackConfig*& dyn_$PlaybackConfig$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn_$PlaybackConfig$k__BackingField();
     // public VROSC.LoopPlaybackConfig get_PlaybackConfig()
-    // Offset: 0x8A4564
+    // Offset: 0x1977668
     ::VROSC::LoopPlaybackConfig* get_PlaybackConfig();
     // private System.Void set_PlaybackConfig(VROSC.LoopPlaybackConfig value)
-    // Offset: 0x8A455C
+    // Offset: 0x1977660
     void set_PlaybackConfig(::VROSC::LoopPlaybackConfig* value);
     // public System.Void Setup()
-    // Offset: 0x8A32F4
+    // Offset: 0x197640C
     void Setup();
     // public System.Void Reset(VROSC.LoopPlaybackConfig loopPlaybackConfig)
-    // Offset: 0x8A3854
+    // Offset: 0x197696C
     void Reset(::VROSC::LoopPlaybackConfig* loopPlaybackConfig);
     // private System.Void CreateNewConfig()
-    // Offset: 0x8A456C
+    // Offset: 0x1977670
     void CreateNewConfig();
     // private System.Void ConfigChanged()
-    // Offset: 0x8A46AC
+    // Offset: 0x19777AC
     void ConfigChanged();
     // public System.Void .ctor()
-    // Offset: 0x8A471C
+    // Offset: 0x1977818
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

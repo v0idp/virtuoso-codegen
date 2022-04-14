@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InvertSignal : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Signal _signal
     // Size: 0x8
     // Offset: 0x40
@@ -52,9 +44,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Signal*) == 0x8);
     public:
     // Get instance field reference: private VROSC.Signal _signal
-    ::VROSC::Signal*& dyn__signal();
+    [[deprecated]] ::VROSC::Signal*& dyn__signal();
     // public System.Void .ctor()
-    // Offset: 0x1387908
+    // Offset: 0x194B21C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -69,12 +61,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<InvertSignal*, creationType>()));
     }
     // protected override System.Void LateUpdate()
-    // Offset: 0x1387884
+    // Offset: 0x194B198
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::LateUpdate()
     void LateUpdate();
     // public override System.Void ReceiveSignal(VROSC.Signal signal)
-    // Offset: 0x13878E0
+    // Offset: 0x194B1F4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::ReceiveSignal(VROSC.Signal signal)
     void ReceiveSignal(::VROSC::Signal* signal);

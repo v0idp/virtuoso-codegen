@@ -100,20 +100,12 @@ namespace DG::Tweening::Core {
       // Set static field: static public DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.SettingsLocation DemigiantDirectory
       static void _set_DemigiantDirectory(::DG::Tweening::Core::DOTweenSettings::SettingsLocation value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.SettingsLocation
     #pragma pack(pop)
     static check_size<sizeof(DOTweenSettings::SettingsLocation), 0 + sizeof(int)> __DG_Tweening_Core_DOTweenSettings_SettingsLocationSizeCheck;
     static_assert(sizeof(DOTweenSettings::SettingsLocation) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean useSafeMode
     // Size: 0x1
     // Offset: 0x18
@@ -296,57 +288,57 @@ namespace DG::Tweening::Core {
     // Set static field: static public System.String AssetFullFilename
     static void _set_AssetFullFilename(::StringW value);
     // Get instance field reference: public System.Boolean useSafeMode
-    bool& dyn_useSafeMode();
+    [[deprecated]] bool& dyn_useSafeMode();
     // Get instance field reference: public DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.SafeModeOptions safeModeOptions
-    ::DG::Tweening::Core::DOTweenSettings::SafeModeOptions*& dyn_safeModeOptions();
+    [[deprecated]] ::DG::Tweening::Core::DOTweenSettings::SafeModeOptions*& dyn_safeModeOptions();
     // Get instance field reference: public System.Single timeScale
-    float& dyn_timeScale();
+    [[deprecated]] float& dyn_timeScale();
     // Get instance field reference: public System.Boolean useSmoothDeltaTime
-    bool& dyn_useSmoothDeltaTime();
+    [[deprecated]] bool& dyn_useSmoothDeltaTime();
     // Get instance field reference: public System.Single maxSmoothUnscaledTime
-    float& dyn_maxSmoothUnscaledTime();
+    [[deprecated]] float& dyn_maxSmoothUnscaledTime();
     // Get instance field reference: public DG.Tweening.Core.Enums.RewindCallbackMode rewindCallbackMode
-    ::DG::Tweening::Core::Enums::RewindCallbackMode& dyn_rewindCallbackMode();
+    [[deprecated]] ::DG::Tweening::Core::Enums::RewindCallbackMode& dyn_rewindCallbackMode();
     // Get instance field reference: public System.Boolean showUnityEditorReport
-    bool& dyn_showUnityEditorReport();
+    [[deprecated]] bool& dyn_showUnityEditorReport();
     // Get instance field reference: public DG.Tweening.LogBehaviour logBehaviour
-    ::DG::Tweening::LogBehaviour& dyn_logBehaviour();
+    [[deprecated]] ::DG::Tweening::LogBehaviour& dyn_logBehaviour();
     // Get instance field reference: public System.Boolean drawGizmos
-    bool& dyn_drawGizmos();
+    [[deprecated]] bool& dyn_drawGizmos();
     // Get instance field reference: public System.Boolean defaultRecyclable
-    bool& dyn_defaultRecyclable();
+    [[deprecated]] bool& dyn_defaultRecyclable();
     // Get instance field reference: public DG.Tweening.AutoPlay defaultAutoPlay
-    ::DG::Tweening::AutoPlay& dyn_defaultAutoPlay();
+    [[deprecated]] ::DG::Tweening::AutoPlay& dyn_defaultAutoPlay();
     // Get instance field reference: public DG.Tweening.UpdateType defaultUpdateType
-    ::DG::Tweening::UpdateType& dyn_defaultUpdateType();
+    [[deprecated]] ::DG::Tweening::UpdateType& dyn_defaultUpdateType();
     // Get instance field reference: public System.Boolean defaultTimeScaleIndependent
-    bool& dyn_defaultTimeScaleIndependent();
+    [[deprecated]] bool& dyn_defaultTimeScaleIndependent();
     // Get instance field reference: public DG.Tweening.Ease defaultEaseType
-    ::DG::Tweening::Ease& dyn_defaultEaseType();
+    [[deprecated]] ::DG::Tweening::Ease& dyn_defaultEaseType();
     // Get instance field reference: public System.Single defaultEaseOvershootOrAmplitude
-    float& dyn_defaultEaseOvershootOrAmplitude();
+    [[deprecated]] float& dyn_defaultEaseOvershootOrAmplitude();
     // Get instance field reference: public System.Single defaultEasePeriod
-    float& dyn_defaultEasePeriod();
+    [[deprecated]] float& dyn_defaultEasePeriod();
     // Get instance field reference: public System.Boolean defaultAutoKill
-    bool& dyn_defaultAutoKill();
+    [[deprecated]] bool& dyn_defaultAutoKill();
     // Get instance field reference: public DG.Tweening.LoopType defaultLoopType
-    ::DG::Tweening::LoopType& dyn_defaultLoopType();
+    [[deprecated]] ::DG::Tweening::LoopType& dyn_defaultLoopType();
     // Get instance field reference: public System.Boolean debugMode
-    bool& dyn_debugMode();
+    [[deprecated]] bool& dyn_debugMode();
     // Get instance field reference: public System.Boolean debugStoreTargetId
-    bool& dyn_debugStoreTargetId();
+    [[deprecated]] bool& dyn_debugStoreTargetId();
     // Get instance field reference: public System.Boolean showPreviewPanel
-    bool& dyn_showPreviewPanel();
+    [[deprecated]] bool& dyn_showPreviewPanel();
     // Get instance field reference: public DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.SettingsLocation storeSettingsLocation
-    ::DG::Tweening::Core::DOTweenSettings::SettingsLocation& dyn_storeSettingsLocation();
+    [[deprecated]] ::DG::Tweening::Core::DOTweenSettings::SettingsLocation& dyn_storeSettingsLocation();
     // Get instance field reference: public DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.ModulesSetup modules
-    ::DG::Tweening::Core::DOTweenSettings::ModulesSetup*& dyn_modules();
+    [[deprecated]] ::DG::Tweening::Core::DOTweenSettings::ModulesSetup*& dyn_modules();
     // Get instance field reference: public System.Boolean showPlayingTweens
-    bool& dyn_showPlayingTweens();
+    [[deprecated]] bool& dyn_showPlayingTweens();
     // Get instance field reference: public System.Boolean showPausedTweens
-    bool& dyn_showPausedTweens();
+    [[deprecated]] bool& dyn_showPausedTweens();
     // public System.Void .ctor()
-    // Offset: 0x109A73C
+    // Offset: 0x15DCD64
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

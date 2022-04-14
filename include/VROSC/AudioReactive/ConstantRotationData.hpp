@@ -40,15 +40,7 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class ConstantRotationData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _transform
     // Size: 0x8
     // Offset: 0x10
@@ -69,20 +61,20 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Transform _transform
-    ::UnityEngine::Transform*& dyn__transform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__transform();
     // Get instance field reference: private UnityEngine.Vector3 _rotation
-    ::UnityEngine::Vector3& dyn__rotation();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__rotation();
     // Get instance field reference: private System.Boolean _local
-    bool& dyn__local();
+    [[deprecated]] bool& dyn__local();
     // public System.Void .ctor(UnityEngine.Transform transform, VROSC.AudioReactive.RotateEffectData data)
-    // Offset: 0x13379D8
+    // Offset: 0x94CC80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ConstantRotationData* New_ctor(::UnityEngine::Transform* transform, ::VROSC::AudioReactive::RotateEffectData* data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ConstantRotationData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ConstantRotationData*, creationType>(transform, data)));
     }
     // public System.Void Rotate()
-    // Offset: 0x1337A3C
+    // Offset: 0x94CCE4
     void Rotate();
   }; // VROSC.AudioReactive.ConstantRotationData
   #pragma pack(pop)

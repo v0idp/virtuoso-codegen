@@ -108,22 +108,14 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Texture2D[] Textures
-      ::ArrayW<::UnityEngine::Texture2D*>& dyn_Textures();
+      [[deprecated]] ::ArrayW<::UnityEngine::Texture2D*>& dyn_Textures();
       // Get instance field reference: public UnityEngine.Texture2DArray TextureArray
-      ::UnityEngine::Texture2DArray*& dyn_TextureArray();
+      [[deprecated]] ::UnityEngine::Texture2DArray*& dyn_TextureArray();
     }; // OvrAvatarMaterialManager/AvatarTextureArrayProperties
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarMaterialManager::AvatarTextureArrayProperties), 8 + sizeof(::UnityEngine::Texture2DArray*)> __GlobalNamespace_OvrAvatarMaterialManager_AvatarTextureArrayPropertiesSizeCheck;
     static_assert(sizeof(OvrAvatarMaterialManager::AvatarTextureArrayProperties) == 0x10);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer TargetRenderer
     // Size: 0x8
     // Offset: 0x18
@@ -276,58 +268,58 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single LOADING_ANIMATION_DIMMER_MIN
     static void _set_LOADING_ANIMATION_DIMMER_MIN(float value);
     // Get instance field reference: private UnityEngine.Renderer TargetRenderer
-    ::UnityEngine::Renderer*& dyn_TargetRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn_TargetRenderer();
     // Get instance field reference: private OvrAvatarMaterialManager/AvatarTextureArrayProperties[] TextureArrays
-    ::ArrayW<::GlobalNamespace::OvrAvatarMaterialManager::AvatarTextureArrayProperties>& dyn_TextureArrays();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OvrAvatarMaterialManager::AvatarTextureArrayProperties>& dyn_TextureArrays();
     // Get instance field reference: private readonly System.String[] TextureTypeToShaderProperties
-    ::ArrayW<::StringW>& dyn_TextureTypeToShaderProperties();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_TextureTypeToShaderProperties();
     // Get instance field reference: public OvrAvatarMaterialManager/AvatarMaterialConfig LocalAvatarConfig
-    ::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialConfig*& dyn_LocalAvatarConfig();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialConfig*& dyn_LocalAvatarConfig();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.Rendering.ReflectionProbeBlendInfo> ReflectionProbes
-    ::System::Collections::Generic::List_1<::UnityEngine::Rendering::ReflectionProbeBlendInfo>*& dyn_ReflectionProbes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Rendering::ReflectionProbeBlendInfo>*& dyn_ReflectionProbes();
     // Get instance field reference: private UnityEngine.Shader CombinedShader
-    ::UnityEngine::Shader*& dyn_CombinedShader();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_CombinedShader();
     // public System.Void CreateTextureArrays()
-    // Offset: 0x92ACEC
+    // Offset: 0xF8C0EC
     void CreateTextureArrays();
     // public System.Void SetRenderer(UnityEngine.Renderer renderer)
-    // Offset: 0x92AE78
+    // Offset: 0xF8C278
     void SetRenderer(::UnityEngine::Renderer* renderer);
     // public System.Void OnCombinedMeshReady()
-    // Offset: 0x92AEA0
+    // Offset: 0xF8C2A0
     void OnCombinedMeshReady();
     // public System.Void AddTextureIDToTextureManager(System.UInt64 assetID, System.Boolean isSingleComponent)
-    // Offset: 0x92B5FC
+    // Offset: 0xF8C9FC
     void AddTextureIDToTextureManager(uint64_t assetID, bool isSingleComponent);
     // private System.Void DeleteTextureSet()
-    // Offset: 0x92B668
+    // Offset: 0xF8CAE0
     void DeleteTextureSet();
     // public System.Void InitTextureArrays()
-    // Offset: 0x92AF3C
+    // Offset: 0xF8C33C
     void InitTextureArrays();
     // private System.Void ProcessTexturesWithMips(UnityEngine.Texture2D[] textures, System.Int32 texArrayResolution, UnityEngine.Texture2DArray texArray)
-    // Offset: 0x92B6BC
+    // Offset: 0xF8CB2C
     void ProcessTexturesWithMips(::ArrayW<::UnityEngine::Texture2D*> textures, int texArrayResolution, ::UnityEngine::Texture2DArray* texArray);
     // private System.Void SetMaterialPropertyBlock()
-    // Offset: 0x92B374
+    // Offset: 0xF8C774
     void SetMaterialPropertyBlock();
     // private System.Void ApplyMaterialPropertyBlock()
-    // Offset: 0x92B7AC
+    // Offset: 0xF8CC14
     void ApplyMaterialPropertyBlock();
     // static public ovrAvatarBodyPartType GetComponentType(System.String objectName)
-    // Offset: 0x92BA50
+    // Offset: 0xF8CEB8
     static ::GlobalNamespace::ovrAvatarBodyPartType GetComponentType(::StringW objectName);
     // private System.UInt64 GetTextureIDForType(ovrAvatarPBSMaterialState materialState, OvrAvatarMaterialManager/TextureType type)
-    // Offset: 0x92BB78
+    // Offset: 0xF8CFE0
     uint64_t GetTextureIDForType(::GlobalNamespace::ovrAvatarPBSMaterialState materialState, ::GlobalNamespace::OvrAvatarMaterialManager::TextureType type);
     // public System.Void ValidateTextures(ovrAvatarPBSMaterialState[] materialStates)
-    // Offset: 0x92BBB0
+    // Offset: 0xF8D018
     void ValidateTextures(::ArrayW<::GlobalNamespace::ovrAvatarPBSMaterialState> materialStates);
     // private System.Collections.IEnumerator RunLoadingAnimation(System.Action callBack)
-    // Offset: 0x92B584
+    // Offset: 0xF8C984
     ::System::Collections::IEnumerator* RunLoadingAnimation(::System::Action* callBack);
     // public System.Void .ctor()
-    // Offset: 0x92CA28
+    // Offset: 0xF8DE90
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -340,7 +332,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarMaterialManager*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x92CBD8
+    // Offset: 0xF8E040
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlaybackSettingsUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <IsOpen>k__BackingField
     // Size: 0x1
     // Offset: 0x18
@@ -64,7 +56,7 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: IsOpen and: oneShotToggle
     char __padding0[0x7] = {};
-    // [HeaderAttribute] Offset: 0x66E2F4
+    // [HeaderAttribute] Offset: 0x78435C
     // protected VROSC.UISlideToggle _oneShotToggle
     // Size: 0x8
     // Offset: 0x20
@@ -135,89 +127,89 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Boolean> OnActivated
     static void _set_OnActivated(::System::Action_1<bool>* value);
     // Get instance field reference: private System.Boolean <IsOpen>k__BackingField
-    bool& dyn_$IsOpen$k__BackingField();
+    [[deprecated]] bool& dyn_$IsOpen$k__BackingField();
     // Get instance field reference: protected VROSC.UISlideToggle _oneShotToggle
-    ::VROSC::UISlideToggle*& dyn__oneShotToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__oneShotToggle();
     // Get instance field reference: protected VROSC.UISlideToggle _retriggerToggle
-    ::VROSC::UISlideToggle*& dyn__retriggerToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__retriggerToggle();
     // Get instance field reference: protected VROSC.UISpinner _startSpinner
-    ::VROSC::UISpinner*& dyn__startSpinner();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__startSpinner();
     // Get instance field reference: protected VROSC.UISpinner _stopSpinner
-    ::VROSC::UISpinner*& dyn__stopSpinner();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__stopSpinner();
     // Get instance field reference: protected VROSC.UISpinner _fadeInSpinner
-    ::VROSC::UISpinner*& dyn__fadeInSpinner();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__fadeInSpinner();
     // Get instance field reference: protected VROSC.UISpinner _fadeOutSpinner
-    ::VROSC::UISpinner*& dyn__fadeOutSpinner();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__fadeOutSpinner();
     // Get instance field reference: protected System.Boolean _closeWhenOtherWindowOpens
-    bool& dyn__closeWhenOtherWindowOpens();
+    [[deprecated]] bool& dyn__closeWhenOtherWindowOpens();
     // Get instance field reference: public System.Action`1<System.Boolean> OnActivatedSelf
-    ::System::Action_1<bool>*& dyn_OnActivatedSelf();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnActivatedSelf();
     // Get instance field reference: private VROSC.LoopPlaybackConfig _config
-    ::VROSC::LoopPlaybackConfig*& dyn__config();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn__config();
     // Get instance field reference: private System.Boolean _setupDone
-    bool& dyn__setupDone();
+    [[deprecated]] bool& dyn__setupDone();
     // public System.Boolean get_IsOpen()
-    // Offset: 0x1397A98
+    // Offset: 0x19B7D6C
     bool get_IsOpen();
     // private System.Void set_IsOpen(System.Boolean value)
-    // Offset: 0x1397A8C
+    // Offset: 0x19B7D60
     void set_IsOpen(bool value);
     // protected System.Void Awake()
-    // Offset: 0x1397AA0
+    // Offset: 0x19B7D74
     void Awake();
     // private System.Void SetUIData()
-    // Offset: 0x1397E50
+    // Offset: 0x19B8124
     void SetUIData();
     // public System.Void SetConfig(VROSC.LoopPlaybackConfig config)
-    // Offset: 0x13980A8
+    // Offset: 0x19B8384
     void SetConfig(::VROSC::LoopPlaybackConfig* config);
     // private System.Void OnStartChanged(VROSC.LoopPlaybackConfig/VROSC.TriggerSync startMode)
-    // Offset: 0x13986A0
+    // Offset: 0x19B897C
     void OnStartChanged(::VROSC::LoopPlaybackConfig::TriggerSync startMode);
     // private System.Void OnStopChanged(VROSC.LoopPlaybackConfig/VROSC.TriggerSync stopMode)
-    // Offset: 0x13986C4
+    // Offset: 0x19B89A0
     void OnStopChanged(::VROSC::LoopPlaybackConfig::TriggerSync stopMode);
     // private System.Void OnOneShotChanged(System.Boolean oneShot)
-    // Offset: 0x13986E8
+    // Offset: 0x19B89C4
     void OnOneShotChanged(bool oneShot);
     // private System.Void OnRetriggerChanged(System.Boolean retrigger)
-    // Offset: 0x1398768
+    // Offset: 0x19B8A44
     void OnRetriggerChanged(bool retrigger);
     // private System.Void OnFadeInChanged(VROSC.LoopPlaybackConfig/VROSC.FadeDuration fadeIn)
-    // Offset: 0x139878C
+    // Offset: 0x19B8A68
     void OnFadeInChanged(::VROSC::LoopPlaybackConfig::FadeDuration fadeIn);
     // private System.Void OnFadeOutChanged(VROSC.LoopPlaybackConfig/VROSC.FadeDuration fadeOut)
-    // Offset: 0x13987B0
+    // Offset: 0x19B8A8C
     void OnFadeOutChanged(::VROSC::LoopPlaybackConfig::FadeDuration fadeOut);
     // protected System.Void OnDestroy()
-    // Offset: 0x13987D4
+    // Offset: 0x19B8AB0
     void OnDestroy();
     // private System.Void CloseIfOtherOpen(System.Boolean isOn)
-    // Offset: 0x1398E2C
+    // Offset: 0x19B9108
     void CloseIfOtherOpen(bool isOn);
     // public System.Void SetOpen(System.Boolean isOn)
-    // Offset: 0x13979C8
+    // Offset: 0x19B7C9C
     void SetOpen(bool isOn);
     // private System.Void SetOneShot(VROSC.InputDevice inputDevice, System.Boolean oneShot)
-    // Offset: 0x1398EE0
+    // Offset: 0x19B91BC
     void SetOneShot(::VROSC::InputDevice* inputDevice, bool oneShot);
     // private System.Void SetRetrigger(VROSC.InputDevice inputDevice, System.Boolean retrigger)
-    // Offset: 0x1398F94
+    // Offset: 0x19B9270
     void SetRetrigger(::VROSC::InputDevice* inputDevice, bool retrigger);
     // private System.Void SetStart(System.Int32 selection)
-    // Offset: 0x1398FA8
+    // Offset: 0x19B9284
     void SetStart(int selection);
     // private System.Void SetStop(System.Int32 selection)
-    // Offset: 0x1398F84
+    // Offset: 0x19B9260
     void SetStop(int selection);
     // private System.Void SetFadeIn(System.Int32 selection)
-    // Offset: 0x1398FB8
+    // Offset: 0x19B9294
     void SetFadeIn(int selection);
     // private System.Void SetFadeOut(System.Int32 selection)
-    // Offset: 0x1398FC8
+    // Offset: 0x19B92A4
     void SetFadeOut(int selection);
     // public System.Void .ctor()
-    // Offset: 0x1398FD8
+    // Offset: 0x19B92B4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

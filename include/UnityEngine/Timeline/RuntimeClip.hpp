@@ -44,15 +44,7 @@ namespace UnityEngine::Timeline {
     public:
     // Writing base type padding for base size: 0x14 to desired offset: 0x18
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Timeline.TimelineClip m_Clip
     // Size: 0x8
     // Offset: 0x18
@@ -77,58 +69,58 @@ namespace UnityEngine::Timeline {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip m_Clip
-    ::UnityEngine::Timeline::TimelineClip*& dyn_m_Clip();
+    [[deprecated]] ::UnityEngine::Timeline::TimelineClip*& dyn_m_Clip();
     // Get instance field reference: private UnityEngine.Playables.Playable m_Playable
-    ::UnityEngine::Playables::Playable& dyn_m_Playable();
+    [[deprecated]] ::UnityEngine::Playables::Playable& dyn_m_Playable();
     // Get instance field reference: private UnityEngine.Playables.Playable m_ParentMixer
-    ::UnityEngine::Playables::Playable& dyn_m_ParentMixer();
+    [[deprecated]] ::UnityEngine::Playables::Playable& dyn_m_ParentMixer();
     // public UnityEngine.Timeline.TimelineClip get_clip()
-    // Offset: 0xA83504
+    // Offset: 0xC7A9D4
     ::UnityEngine::Timeline::TimelineClip* get_clip();
     // public UnityEngine.Playables.Playable get_mixer()
-    // Offset: 0xA8350C
+    // Offset: 0xC7A9DC
     ::UnityEngine::Playables::Playable get_mixer();
     // public UnityEngine.Playables.Playable get_playable()
-    // Offset: 0xA83518
+    // Offset: 0xC7A9E8
     ::UnityEngine::Playables::Playable get_playable();
     // public System.Void .ctor(UnityEngine.Timeline.TimelineClip clip, UnityEngine.Playables.Playable clipPlayable, UnityEngine.Playables.Playable parentMixer)
-    // Offset: 0xA758C8
+    // Offset: 0xC6CD98
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RuntimeClip* New_ctor(::UnityEngine::Timeline::TimelineClip* clip, ::UnityEngine::Playables::Playable clipPlayable, ::UnityEngine::Playables::Playable parentMixer) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::RuntimeClip::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RuntimeClip*, creationType>(clip, clipPlayable, parentMixer)));
     }
     // private System.Void Create(UnityEngine.Timeline.TimelineClip clip, UnityEngine.Playables.Playable clipPlayable, UnityEngine.Playables.Playable parentMixer)
-    // Offset: 0xA8347C
+    // Offset: 0xC7A94C
     void Create(::UnityEngine::Timeline::TimelineClip* clip, ::UnityEngine::Playables::Playable clipPlayable, ::UnityEngine::Playables::Playable parentMixer);
     // public System.Void SetTime(System.Double time)
-    // Offset: 0xA8369C
+    // Offset: 0xC7AB6C
     void SetTime(double time);
     // public System.Void SetDuration(System.Double duration)
-    // Offset: 0xA836F8
+    // Offset: 0xC7ABC8
     void SetDuration(double duration);
     // public override System.Double get_start()
-    // Offset: 0xA83418
+    // Offset: 0xC7A8E8
     // Implemented from: UnityEngine.Timeline.RuntimeClipBase
     // Base method: System.Double RuntimeClipBase::get_start()
     double get_start();
     // public override System.Double get_duration()
-    // Offset: 0xA8345C
+    // Offset: 0xC7A92C
     // Implemented from: UnityEngine.Timeline.RuntimeClipBase
     // Base method: System.Double RuntimeClipBase::get_duration()
     double get_duration();
     // public override System.Void set_enable(System.Boolean value)
-    // Offset: 0xA83524
+    // Offset: 0xC7A9F4
     // Implemented from: UnityEngine.Timeline.RuntimeElement
     // Base method: System.Void RuntimeElement::set_enable(System.Boolean value)
     void set_enable(bool value);
     // public override System.Void EvaluateAt(System.Double localTime, UnityEngine.Playables.FrameData frameData)
-    // Offset: 0xA83754
+    // Offset: 0xC7AC24
     // Implemented from: UnityEngine.Timeline.RuntimeElement
     // Base method: System.Void RuntimeElement::EvaluateAt(System.Double localTime, UnityEngine.Playables.FrameData frameData)
     void EvaluateAt(double localTime, ::UnityEngine::Playables::FrameData frameData);
     // public override System.Void Reset()
-    // Offset: 0xA83C8C
+    // Offset: 0xC7B15C
     // Implemented from: UnityEngine.Timeline.RuntimeElement
     // Base method: System.Void RuntimeElement::Reset()
     void Reset();

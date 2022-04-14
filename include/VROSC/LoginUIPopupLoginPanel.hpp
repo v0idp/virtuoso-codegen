@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoginUIPopupLoginPanel : public ::VROSC::LoginUIPopupPanelBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UIInputField _emailInput
     // Size: 0x8
     // Offset: 0x30
@@ -94,49 +86,49 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private UIInputField _emailInput
-    ::GlobalNamespace::UIInputField*& dyn__emailInput();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__emailInput();
     // Get instance field reference: private UIInputField _passwordInput
-    ::GlobalNamespace::UIInputField*& dyn__passwordInput();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__passwordInput();
     // Get instance field reference: private VROSC.UISlideToggle _rememberMeToggle
-    ::VROSC::UISlideToggle*& dyn__rememberMeToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__rememberMeToggle();
     // Get instance field reference: private VROSC.UIButton _loginButton
-    ::VROSC::UIButton*& dyn__loginButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__loginButton();
     // Get instance field reference: private VROSC.UIButton _createAccountButton
-    ::VROSC::UIButton*& dyn__createAccountButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__createAccountButton();
     // Get instance field reference: private VROSC.UIButton _resetPasswordButton
-    ::VROSC::UIButton*& dyn__resetPasswordButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__resetPasswordButton();
     // private System.Void Awake()
-    // Offset: 0x1392580
+    // Offset: 0x19B29D4
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x1392874
+    // Offset: 0x19B2CC8
     void OnDestroy();
     // private System.Void LoginButtonPressed()
-    // Offset: 0x1392C2C
+    // Offset: 0x19B3080
     void LoginButtonPressed();
     // private System.Void CreateAccountButtonPressed()
-    // Offset: 0x1392E58
+    // Offset: 0x19B32AC
     void CreateAccountButtonPressed();
     // private System.Void ResetPasswordButtonPressed()
-    // Offset: 0x1393084
+    // Offset: 0x19B34D8
     void ResetPasswordButtonPressed();
     // private System.Void UserLoginSucceeded(System.String email, System.Boolean isVerified)
-    // Offset: 0x1393274
+    // Offset: 0x19B36C8
     void UserLoginSucceeded(::StringW email, bool isVerified);
     // private System.Void UserLoginFailed(VROSC.Error error)
-    // Offset: 0x1393460
+    // Offset: 0x19B38B4
     void UserLoginFailed(::VROSC::Error error);
     // private System.Void CreateUserFailed(VROSC.Error error)
-    // Offset: 0x1393678
+    // Offset: 0x19B3ACC
     void CreateUserFailed(::VROSC::Error error);
     // private System.Void ResetPasswordSucceeded()
-    // Offset: 0x1393890
+    // Offset: 0x19B3CE4
     void ResetPasswordSucceeded();
     // private System.Void ResetPasswordFailed(VROSC.Error error)
-    // Offset: 0x1393A40
+    // Offset: 0x19B3E94
     void ResetPasswordFailed(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1393C44
+    // Offset: 0x19B4098
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -150,12 +142,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopupLoginPanel*, creationType>()));
     }
     // public override System.Void Open(params System.Object[] parameters)
-    // Offset: 0x13927EC
+    // Offset: 0x19B2C40
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::Open(params System.Object[] parameters)
     void Open(::ArrayW<::Il2CppObject*> parameters);
     // protected override System.Void EnableUI(System.Boolean enable)
-    // Offset: 0x1392AE0
+    // Offset: 0x19B2F34
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::EnableUI(System.Boolean enable)
     void EnableUI(bool enable);

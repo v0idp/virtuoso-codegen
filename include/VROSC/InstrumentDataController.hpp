@@ -13,15 +13,10 @@
 #include "beatsaber-hook/shared/utils/utils.h"
 // Completed includes
 // Begin forward declares
-// Forward declaring namespace: UnityEngine
-namespace UnityEngine {
-  // Forward declaring type: Vector3
-  struct Vector3;
-  // Forward declaring type: Quaternion
-  struct Quaternion;
-}
 // Forward declaring namespace: VROSC
 namespace VROSC {
+  // Forward declaring type: TransformDataController
+  class TransformDataController;
   // Forward declaring type: WidgetSettings
   class WidgetSettings;
 }
@@ -42,30 +37,15 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InstrumentDataController : public ::VROSC::BaseDataController {
     public:
-    // public System.Boolean get_IsOpen()
+    // public VROSC.TransformDataController get_TransformData()
     // Offset: 0xFFFFFFFFFFFFFFFF
-    bool get_IsOpen();
-    // public System.Void set_IsOpen(System.Boolean value)
+    ::VROSC::TransformDataController* get_TransformData();
+    // public System.Boolean get_HasBeenOpened()
     // Offset: 0xFFFFFFFFFFFFFFFF
-    void set_IsOpen(bool value);
-    // public UnityEngine.Vector3 get_Position()
+    bool get_HasBeenOpened();
+    // public System.Void set_HasBeenOpened(System.Boolean value)
     // Offset: 0xFFFFFFFFFFFFFFFF
-    ::UnityEngine::Vector3 get_Position();
-    // public System.Void set_Position(UnityEngine.Vector3 value)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    void set_Position(::UnityEngine::Vector3 value);
-    // public UnityEngine.Quaternion get_Rotation()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    ::UnityEngine::Quaternion get_Rotation();
-    // public System.Void set_Rotation(UnityEngine.Quaternion value)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    void set_Rotation(::UnityEngine::Quaternion value);
-    // public UnityEngine.Vector3 get_Scale()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    ::UnityEngine::Vector3 get_Scale();
-    // public System.Void set_Scale(UnityEngine.Vector3 value)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    void set_Scale(::UnityEngine::Vector3 value);
+    void set_HasBeenOpened(bool value);
     // public System.Boolean get_Quantize()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_Quantize();
@@ -84,11 +64,17 @@ namespace VROSC {
     // public System.Void set_QuantizeBeatDivision(System.Int32 value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void set_QuantizeBeatDivision(int value);
+    // public System.Boolean get_FrameIsActive()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    bool get_FrameIsActive();
+    // public System.Void set_FrameIsActive(System.Boolean value)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    void set_FrameIsActive(bool value);
     // public System.Void ApplyDefaults(VROSC.WidgetSettings widgetDefaultSettings)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void ApplyDefaults(::VROSC::WidgetSettings* widgetDefaultSettings);
     // protected System.Void .ctor()
-    // Offset: 0x138471C
+    // Offset: 0x19475D0
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -101,72 +87,29 @@ namespace VROSC {
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-// Writing MetadataGetter for method: VROSC::InstrumentDataController::get_IsOpen
-// Il2CppName: get_IsOpen
+// Writing MetadataGetter for method: VROSC::InstrumentDataController::get_TransformData
+// Il2CppName: get_TransformData
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::InstrumentDataController::*)()>(&VROSC::InstrumentDataController::get_IsOpen)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::TransformDataController* (VROSC::InstrumentDataController::*)()>(&VROSC::InstrumentDataController::get_TransformData)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "get_IsOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "get_TransformData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::InstrumentDataController::set_IsOpen
-// Il2CppName: set_IsOpen
+// Writing MetadataGetter for method: VROSC::InstrumentDataController::get_HasBeenOpened
+// Il2CppName: get_HasBeenOpened
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::InstrumentDataController::*)(bool)>(&VROSC::InstrumentDataController::set_IsOpen)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::InstrumentDataController::*)()>(&VROSC::InstrumentDataController::get_HasBeenOpened)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "get_HasBeenOpened", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::InstrumentDataController::set_HasBeenOpened
+// Il2CppName: set_HasBeenOpened
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::InstrumentDataController::*)(bool)>(&VROSC::InstrumentDataController::set_HasBeenOpened)> {
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "set_IsOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
-  }
-};
-// Writing MetadataGetter for method: VROSC::InstrumentDataController::get_Position
-// Il2CppName: get_Position
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Vector3 (VROSC::InstrumentDataController::*)()>(&VROSC::InstrumentDataController::get_Position)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "get_Position", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::InstrumentDataController::set_Position
-// Il2CppName: set_Position
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::InstrumentDataController::*)(::UnityEngine::Vector3)>(&VROSC::InstrumentDataController::set_Position)> {
-  static const MethodInfo* get() {
-    static auto* value = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "set_Position", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
-  }
-};
-// Writing MetadataGetter for method: VROSC::InstrumentDataController::get_Rotation
-// Il2CppName: get_Rotation
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Quaternion (VROSC::InstrumentDataController::*)()>(&VROSC::InstrumentDataController::get_Rotation)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "get_Rotation", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::InstrumentDataController::set_Rotation
-// Il2CppName: set_Rotation
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::InstrumentDataController::*)(::UnityEngine::Quaternion)>(&VROSC::InstrumentDataController::set_Rotation)> {
-  static const MethodInfo* get() {
-    static auto* value = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "set_Rotation", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
-  }
-};
-// Writing MetadataGetter for method: VROSC::InstrumentDataController::get_Scale
-// Il2CppName: get_Scale
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Vector3 (VROSC::InstrumentDataController::*)()>(&VROSC::InstrumentDataController::get_Scale)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "get_Scale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::InstrumentDataController::set_Scale
-// Il2CppName: set_Scale
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::InstrumentDataController::*)(::UnityEngine::Vector3)>(&VROSC::InstrumentDataController::set_Scale)> {
-  static const MethodInfo* get() {
-    static auto* value = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "set_Scale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "set_HasBeenOpened", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
 // Writing MetadataGetter for method: VROSC::InstrumentDataController::get_Quantize
@@ -218,6 +161,23 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "set_QuantizeBeatDivision", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: VROSC::InstrumentDataController::get_FrameIsActive
+// Il2CppName: get_FrameIsActive
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::InstrumentDataController::*)()>(&VROSC::InstrumentDataController::get_FrameIsActive)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "get_FrameIsActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::InstrumentDataController::set_FrameIsActive
+// Il2CppName: set_FrameIsActive
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::InstrumentDataController::*)(bool)>(&VROSC::InstrumentDataController::set_FrameIsActive)> {
+  static const MethodInfo* get() {
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentDataController*), "set_FrameIsActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
 // Writing MetadataGetter for method: VROSC::InstrumentDataController::ApplyDefaults

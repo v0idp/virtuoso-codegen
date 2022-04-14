@@ -46,36 +46,28 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::NoteBoardNoteParticles::Emission
     class Emission;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNoteAnimator _target
     // Size: 0x8
     // Offset: 0x18
     ::VROSC::NoteBoardNoteAnimator* target;
     // Field size check
     static_assert(sizeof(::VROSC::NoteBoardNoteAnimator*) == 0x8);
-    // [RangeAttribute] Offset: 0x675684
+    // [RangeAttribute] Offset: 0x78C008
     // private System.Single _rate
     // Size: 0x4
     // Offset: 0x20
     float rate;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x6756C4
+    // [RangeAttribute] Offset: 0x78C048
     // private System.Single _size
     // Size: 0x4
     // Offset: 0x24
     float size;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x675704
+    // [RangeAttribute] Offset: 0x78C088
     // private System.Int32 _multiplier
     // Size: 0x4
     // Offset: 0x28
@@ -140,43 +132,43 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteAnimator _target
-    ::VROSC::NoteBoardNoteAnimator*& dyn__target();
+    [[deprecated]] ::VROSC::NoteBoardNoteAnimator*& dyn__target();
     // Get instance field reference: private System.Single _rate
-    float& dyn__rate();
+    [[deprecated]] float& dyn__rate();
     // Get instance field reference: private System.Single _size
-    float& dyn__size();
+    [[deprecated]] float& dyn__size();
     // Get instance field reference: private System.Int32 _multiplier
-    int& dyn__multiplier();
+    [[deprecated]] int& dyn__multiplier();
     // Get instance field reference: private System.Boolean _useRandomColor
-    bool& dyn__useRandomColor();
+    [[deprecated]] bool& dyn__useRandomColor();
     // Get instance field reference: private UnityEngine.Gradient _randomColor
-    ::UnityEngine::Gradient*& dyn__randomColor();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn__randomColor();
     // Get instance field reference: private System.Boolean _remap
-    bool& dyn__remap();
+    [[deprecated]] bool& dyn__remap();
     // Get instance field reference: private UnityEngine.Color _remapR
-    ::UnityEngine::Color& dyn__remapR();
+    [[deprecated]] ::UnityEngine::Color& dyn__remapR();
     // Get instance field reference: private UnityEngine.Color _remapG
-    ::UnityEngine::Color& dyn__remapG();
+    [[deprecated]] ::UnityEngine::Color& dyn__remapG();
     // Get instance field reference: private UnityEngine.Color _remapB
-    ::UnityEngine::Color& dyn__remapB();
+    [[deprecated]] ::UnityEngine::Color& dyn__remapB();
     // Get instance field reference: private VROSC.NoteBoardNoteParticles/VROSC.Emission _red
-    ::VROSC::NoteBoardNoteParticles::Emission*& dyn__red();
+    [[deprecated]] ::VROSC::NoteBoardNoteParticles::Emission*& dyn__red();
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
     // private System.Void Awake()
-    // Offset: 0xA13768
+    // Offset: 0xC56A54
     void Awake();
     // private System.Void Update()
-    // Offset: 0xA138C0
+    // Offset: 0xC56BAC
     void Update();
     // private UnityEngine.Color GetColor(UnityEngine.Color normalColor)
-    // Offset: 0xA139C8
+    // Offset: 0xC56CB4
     ::UnityEngine::Color GetColor(::UnityEngine::Color normalColor);
     // private System.Void OnDrawGizmosSelected()
-    // Offset: 0xA13B54
+    // Offset: 0xC56E40
     void OnDrawGizmosSelected();
     // public System.Void .ctor()
-    // Offset: 0xA13BA4
+    // Offset: 0xC56E90
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class OneShot : public ::VROSC::SignalFilter {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _signalDuration
     // Size: 0x4
     // Offset: 0x40
@@ -58,11 +50,11 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _signalDuration
-    float& dyn__signalDuration();
+    [[deprecated]] float& dyn__signalDuration();
     // Get instance field reference: private System.Single _currentSignalTime
-    float& dyn__currentSignalTime();
+    [[deprecated]] float& dyn__currentSignalTime();
     // public System.Void .ctor()
-    // Offset: 0x91D558
+    // Offset: 0xC67070
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -78,17 +70,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<OneShot*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x91D4F0
+    // Offset: 0xC67008
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x91D4FC
+    // Offset: 0xC67014
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void FilterSignal(VROSC.Signal signal)
-    // Offset: 0x91D544
+    // Offset: 0xC6705C
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::FilterSignal(VROSC.Signal signal)
     void FilterSignal(::VROSC::Signal* signal);

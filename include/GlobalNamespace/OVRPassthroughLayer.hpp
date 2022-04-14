@@ -114,7 +114,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRPassthroughLayer/ProjectionSurfaceType UserDefined
       static void _set_UserDefined(::GlobalNamespace::OVRPassthroughLayer::ProjectionSurfaceType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRPassthroughLayer/ProjectionSurfaceType
     #pragma pack(pop)
     static check_size<sizeof(OVRPassthroughLayer::ProjectionSurfaceType), 0 + sizeof(int)> __GlobalNamespace_OVRPassthroughLayer_ProjectionSurfaceTypeSizeCheck;
@@ -162,7 +162,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRPassthroughLayer/ColorMapEditorType Custom
       static void _set_Custom(::GlobalNamespace::OVRPassthroughLayer::ColorMapEditorType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRPassthroughLayer/ColorMapEditorType
     #pragma pack(pop)
     static check_size<sizeof(OVRPassthroughLayer::ColorMapEditorType), 0 + sizeof(int)> __GlobalNamespace_OVRPassthroughLayer_ColorMapEditorTypeSizeCheck;
@@ -201,11 +201,11 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.UInt64 meshHandle
-      uint64_t& dyn_meshHandle();
+      [[deprecated]] uint64_t& dyn_meshHandle();
       // Get instance field reference: public System.UInt64 instanceHandle
-      uint64_t& dyn_instanceHandle();
+      [[deprecated]] uint64_t& dyn_instanceHandle();
       // Get instance field reference: public System.Boolean updateTransform
-      bool& dyn_updateTransform();
+      [[deprecated]] bool& dyn_updateTransform();
     }; // OVRPassthroughLayer/PassthroughMeshInstance
     #pragma pack(pop)
     static check_size<sizeof(OVRPassthroughLayer::PassthroughMeshInstance), 16 + sizeof(bool)> __GlobalNamespace_OVRPassthroughLayer_PassthroughMeshInstanceSizeCheck;
@@ -238,22 +238,14 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.GameObject gameObject
-      ::UnityEngine::GameObject*& dyn_gameObject();
+      [[deprecated]] ::UnityEngine::GameObject*& dyn_gameObject();
       // Get instance field reference: public System.Boolean updateTransform
-      bool& dyn_updateTransform();
+      [[deprecated]] bool& dyn_updateTransform();
     }; // OVRPassthroughLayer/DeferredPassthroughMeshAddition
     #pragma pack(pop)
     static check_size<sizeof(OVRPassthroughLayer::DeferredPassthroughMeshAddition), 8 + sizeof(bool)> __GlobalNamespace_OVRPassthroughLayer_DeferredPassthroughMeshAdditionSizeCheck;
     static_assert(sizeof(OVRPassthroughLayer::DeferredPassthroughMeshAddition) == 0x9);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRPassthroughLayer/ProjectionSurfaceType projectionSurfaceType
     // Size: 0x4
     // Offset: 0x18
@@ -446,161 +438,161 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Gradient colorMapNeutralGradient
     static void _set_colorMapNeutralGradient(::UnityEngine::Gradient* value);
     // Get instance field reference: public OVRPassthroughLayer/ProjectionSurfaceType projectionSurfaceType
-    ::GlobalNamespace::OVRPassthroughLayer::ProjectionSurfaceType& dyn_projectionSurfaceType();
+    [[deprecated]] ::GlobalNamespace::OVRPassthroughLayer::ProjectionSurfaceType& dyn_projectionSurfaceType();
     // Get instance field reference: public OVROverlay/OverlayType overlayType
-    ::GlobalNamespace::OVROverlay::OverlayType& dyn_overlayType();
+    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayType& dyn_overlayType();
     // Get instance field reference: public System.Int32 compositionDepth
-    int& dyn_compositionDepth();
+    [[deprecated]] int& dyn_compositionDepth();
     // Get instance field reference: public System.Boolean hidden
-    bool& dyn_hidden();
+    [[deprecated]] bool& dyn_hidden();
     // Get instance field reference: public System.Boolean overridePerLayerColorScaleAndOffset
-    bool& dyn_overridePerLayerColorScaleAndOffset();
+    [[deprecated]] bool& dyn_overridePerLayerColorScaleAndOffset();
     // Get instance field reference: public UnityEngine.Vector4 colorScale
-    ::UnityEngine::Vector4& dyn_colorScale();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_colorScale();
     // Get instance field reference: public UnityEngine.Vector4 colorOffset
-    ::UnityEngine::Vector4& dyn_colorOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_colorOffset();
     // Get instance field reference: private OVRPassthroughLayer/ColorMapEditorType colorMapEditorType_
-    ::GlobalNamespace::OVRPassthroughLayer::ColorMapEditorType& dyn_colorMapEditorType_();
+    [[deprecated]] ::GlobalNamespace::OVRPassthroughLayer::ColorMapEditorType& dyn_colorMapEditorType_();
     // Get instance field reference: public UnityEngine.Gradient colorMapEditorGradient
-    ::UnityEngine::Gradient*& dyn_colorMapEditorGradient();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn_colorMapEditorGradient();
     // Get instance field reference: private UnityEngine.Gradient colorMapEditorGradientOld
-    ::UnityEngine::Gradient*& dyn_colorMapEditorGradientOld();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn_colorMapEditorGradientOld();
     // Get instance field reference: public System.Single colorMapEditorContrast
-    float& dyn_colorMapEditorContrast();
+    [[deprecated]] float& dyn_colorMapEditorContrast();
     // Get instance field reference: private System.Single colorMapEditorContrast_
-    float& dyn_colorMapEditorContrast_();
+    [[deprecated]] float& dyn_colorMapEditorContrast_();
     // Get instance field reference: public System.Single colorMapEditorBrightness
-    float& dyn_colorMapEditorBrightness();
+    [[deprecated]] float& dyn_colorMapEditorBrightness();
     // Get instance field reference: private System.Single colorMapEditorBrightness_
-    float& dyn_colorMapEditorBrightness_();
+    [[deprecated]] float& dyn_colorMapEditorBrightness_();
     // Get instance field reference: public System.Single colorMapEditorPosterize
-    float& dyn_colorMapEditorPosterize();
+    [[deprecated]] float& dyn_colorMapEditorPosterize();
     // Get instance field reference: private System.Single colorMapEditorPosterize_
-    float& dyn_colorMapEditorPosterize_();
+    [[deprecated]] float& dyn_colorMapEditorPosterize_();
     // Get instance field reference: private OVRCameraRig cameraRig
-    ::GlobalNamespace::OVRCameraRig*& dyn_cameraRig();
+    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_cameraRig();
     // Get instance field reference: private System.Boolean cameraRigInitialized
-    bool& dyn_cameraRigInitialized();
+    [[deprecated]] bool& dyn_cameraRigInitialized();
     // Get instance field reference: private UnityEngine.GameObject auxGameObject
-    ::UnityEngine::GameObject*& dyn_auxGameObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_auxGameObject();
     // Get instance field reference: private OVROverlay passthroughOverlay
-    ::GlobalNamespace::OVROverlay*& dyn_passthroughOverlay();
+    [[deprecated]] ::GlobalNamespace::OVROverlay*& dyn_passthroughOverlay();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,OVRPassthroughLayer/PassthroughMeshInstance> surfaceGameObjects
-    ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::GlobalNamespace::OVRPassthroughLayer::PassthroughMeshInstance>*& dyn_surfaceGameObjects();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::GlobalNamespace::OVRPassthroughLayer::PassthroughMeshInstance>*& dyn_surfaceGameObjects();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRPassthroughLayer/DeferredPassthroughMeshAddition> deferredSurfaceGameObjects
-    ::System::Collections::Generic::List_1<::GlobalNamespace::OVRPassthroughLayer::DeferredPassthroughMeshAddition>*& dyn_deferredSurfaceGameObjects();
+    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRPassthroughLayer::DeferredPassthroughMeshAddition>*& dyn_deferredSurfaceGameObjects();
     // Get instance field reference: private System.Single textureOpacity_
-    float& dyn_textureOpacity_();
+    [[deprecated]] float& dyn_textureOpacity_();
     // Get instance field reference: private System.Boolean edgeRenderingEnabled_
-    bool& dyn_edgeRenderingEnabled_();
+    [[deprecated]] bool& dyn_edgeRenderingEnabled_();
     // Get instance field reference: private UnityEngine.Color edgeColor_
-    ::UnityEngine::Color& dyn_edgeColor_();
+    [[deprecated]] ::UnityEngine::Color& dyn_edgeColor_();
     // Get instance field reference: private OVRPlugin/InsightPassthroughColorMapType colorMapType
-    ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType& dyn_colorMapType();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType& dyn_colorMapType();
     // Get instance field reference: private System.Byte[] colorMapData
-    ::ArrayW<uint8_t>& dyn_colorMapData();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_colorMapData();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle colorMapDataHandle
-    ::System::Runtime::InteropServices::GCHandle& dyn_colorMapDataHandle();
+    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_colorMapDataHandle();
     // Get instance field reference: private System.Boolean styleDirty
-    bool& dyn_styleDirty();
+    [[deprecated]] bool& dyn_styleDirty();
     // public System.Single get_textureOpacity()
-    // Offset: 0xB98150
+    // Offset: 0xE63980
     float get_textureOpacity();
     // public System.Void set_textureOpacity(System.Single value)
-    // Offset: 0xB98158
+    // Offset: 0xE63988
     void set_textureOpacity(float value);
     // public System.Boolean get_edgeRenderingEnabled()
-    // Offset: 0xB98174
+    // Offset: 0xE639A4
     bool get_edgeRenderingEnabled();
     // public System.Void set_edgeRenderingEnabled(System.Boolean value)
-    // Offset: 0xB9817C
+    // Offset: 0xE639AC
     void set_edgeRenderingEnabled(bool value);
     // public UnityEngine.Color get_edgeColor()
-    // Offset: 0xB981A4
+    // Offset: 0xE639D4
     ::UnityEngine::Color get_edgeColor();
     // public System.Void set_edgeColor(UnityEngine.Color value)
-    // Offset: 0xB981B0
+    // Offset: 0xE639E0
     void set_edgeColor(::UnityEngine::Color value);
     // public OVRPassthroughLayer/ColorMapEditorType get_colorMapEditorType()
-    // Offset: 0xB98908
+    // Offset: 0xE64138
     ::GlobalNamespace::OVRPassthroughLayer::ColorMapEditorType get_colorMapEditorType();
     // public System.Void set_colorMapEditorType(OVRPassthroughLayer/ColorMapEditorType value)
-    // Offset: 0xB98300
+    // Offset: 0xE63B30
     void set_colorMapEditorType(::GlobalNamespace::OVRPassthroughLayer::ColorMapEditorType value);
     // private OVROverlay/OverlayShape get_overlayShape()
-    // Offset: 0xB99DBC
+    // Offset: 0xE655EC
     ::GlobalNamespace::OVROverlay::OverlayShape get_overlayShape();
     // public System.Void AddSurfaceGeometry(UnityEngine.GameObject obj, System.Boolean updateTransform)
-    // Offset: 0xB979C4
+    // Offset: 0xE631F4
     void AddSurfaceGeometry(::UnityEngine::GameObject* obj, bool updateTransform);
     // public System.Void RemoveSurfaceGeometry(UnityEngine.GameObject obj)
-    // Offset: 0xB97B9C
+    // Offset: 0xE633CC
     void RemoveSurfaceGeometry(::UnityEngine::GameObject* obj);
     // public System.Boolean IsSurfaceGeometry(UnityEngine.GameObject obj)
-    // Offset: 0xB98020
+    // Offset: 0xE63850
     bool IsSurfaceGeometry(::UnityEngine::GameObject* obj);
     // public System.Void SetColorMap(UnityEngine.Color[] values)
-    // Offset: 0xB98210
+    // Offset: 0xE63A40
     void SetColorMap(::ArrayW<::UnityEngine::Color> values);
     // public System.Void SetColorMapControls(System.Single contrast, System.Single brightness, System.Single posterize, UnityEngine.Gradient gradient)
-    // Offset: 0xB984FC
+    // Offset: 0xE63D2C
     void SetColorMapControls(float contrast, float brightness, float posterize, ::UnityEngine::Gradient* gradient);
     // public System.Void SetColorMapMonochromatic(System.Byte[] values)
-    // Offset: 0xB98810
+    // Offset: 0xE64040
     void SetColorMapMonochromatic(::ArrayW<uint8_t> values);
     // public System.Void DisableColorMap()
-    // Offset: 0xB988D0
+    // Offset: 0xE64100
     void DisableColorMap();
     // private System.Void AddDeferredSurfaceGeometries()
-    // Offset: 0xB98C4C
+    // Offset: 0xE6447C
     void AddDeferredSurfaceGeometries();
     // private UnityEngine.Matrix4x4 GetTransformMatrixForPassthroughSurfaceObject(UnityEngine.GameObject obj)
-    // Offset: 0xB990DC
+    // Offset: 0xE6490C
     ::UnityEngine::Matrix4x4 GetTransformMatrixForPassthroughSurfaceObject(::UnityEngine::GameObject* obj);
     // private System.Boolean CreateAndAddMesh(UnityEngine.GameObject obj, out System.UInt64 meshHandle, out System.UInt64 instanceHandle)
-    // Offset: 0xB98E34
+    // Offset: 0xE64664
     bool CreateAndAddMesh(::UnityEngine::GameObject* obj, ByRef<uint64_t> meshHandle, ByRef<uint64_t> instanceHandle);
     // private System.Void DestroySurfaceGeometries(System.Boolean addBackToDeferredQueue)
-    // Offset: 0xB996A0
+    // Offset: 0xE64ED0
     void DestroySurfaceGeometries(bool addBackToDeferredQueue);
     // private System.Void UpdateSurfaceGeometryTransforms()
-    // Offset: 0xB998B8
+    // Offset: 0xE650E8
     void UpdateSurfaceGeometryTransforms();
     // private System.Void AllocateColorMapData()
-    // Offset: 0xB98364
+    // Offset: 0xE63B94
     void AllocateColorMapData();
     // private System.Void DeallocateColorMapData()
-    // Offset: 0xB98910
+    // Offset: 0xE64140
     void DeallocateColorMapData();
     // static private UnityEngine.Gradient CreateNeutralColorMapGradient()
-    // Offset: 0xB98600
+    // Offset: 0xE63E30
     static ::UnityEngine::Gradient* CreateNeutralColorMapGradient();
     // private System.Void UpdateColorMapFromControls(System.Boolean forceUpdate)
-    // Offset: 0xB989BC
+    // Offset: 0xE641EC
     void UpdateColorMapFromControls(bool forceUpdate);
     // private System.Void WriteColorToColorMap(System.Int32 colorIndex, ref UnityEngine.Color color)
-    // Offset: 0xB98430
+    // Offset: 0xE63C60
     void WriteColorToColorMap(int colorIndex, ByRef<::UnityEngine::Color> color);
     // private System.Void SyncToOverlay()
-    // Offset: 0xB99C3C
+    // Offset: 0xE6546C
     void SyncToOverlay();
     // private System.Void Update()
-    // Offset: 0xB99DD0
+    // Offset: 0xE65600
     void Update();
     // private System.Void LateUpdate()
-    // Offset: 0xB99DD4
+    // Offset: 0xE65604
     void LateUpdate();
     // private System.Void OnEnable()
-    // Offset: 0xB9A1A8
+    // Offset: 0xE659D8
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0xB9A2A4
+    // Offset: 0xE65AD4
     void OnDisable();
     // private System.Void OnDestroy()
-    // Offset: 0xB9A398
+    // Offset: 0xE65BC8
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0xB9A3A0
+    // Offset: 0xE65BD0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -613,7 +605,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVRPassthroughLayer*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0xB9A524
+    // Offset: 0xE65D54
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

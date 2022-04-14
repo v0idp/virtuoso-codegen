@@ -64,16 +64,8 @@ namespace VROSC {
     class $PulsateCoroutine$d__22;
     // Nested type: ::VROSC::DrumPadEffectOnSignal::$ActivateFlow$d__23
     class $ActivateFlow$d__23;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x6712B0
+    // [HeaderAttribute] Offset: 0x787504
     // private UnityEngine.Renderer _padRenderer
     // Size: 0x8
     // Offset: 0x40
@@ -86,7 +78,7 @@ namespace VROSC {
     ::UnityEngine::Renderer* ringRendererOuter;
     // Field size check
     static_assert(sizeof(::UnityEngine::Renderer*) == 0x8);
-    // [HeaderAttribute] Offset: 0x67130C
+    // [HeaderAttribute] Offset: 0x787560
     // private System.Boolean _effectScaledByPower
     // Size: 0x1
     // Offset: 0x50
@@ -107,7 +99,7 @@ namespace VROSC {
     ::UnityEngine::AnimationCurve* powerCurve;
     // Field size check
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
-    // [HeaderAttribute] Offset: 0x671378
+    // [HeaderAttribute] Offset: 0x7875CC
     // private UnityEngine.AnimationCurve _scaleCurve
     // Size: 0x8
     // Offset: 0x60
@@ -120,7 +112,7 @@ namespace VROSC {
     ::UnityEngine::Transform* scalingTransform;
     // Field size check
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
-    // [HeaderAttribute] Offset: 0x6713D4
+    // [HeaderAttribute] Offset: 0x787628
     // private UnityEngine.ParticleSystem _particleSystem
     // Size: 0x8
     // Offset: 0x70
@@ -133,7 +125,7 @@ namespace VROSC {
     ::VROSC::MinMaxInt* particleAmount;
     // Field size check
     static_assert(sizeof(::VROSC::MinMaxInt*) == 0x8);
-    // [HeaderAttribute] Offset: 0x671430
+    // [HeaderAttribute] Offset: 0x787684
     // private System.Boolean _preview
     // Size: 0x1
     // Offset: 0x80
@@ -148,7 +140,7 @@ namespace VROSC {
     ::UnityEngine::Color previewColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [RangeAttribute] Offset: 0x67148C
+    // [RangeAttribute] Offset: 0x7876E0
     // private System.Single _previewTiming
     // Size: 0x4
     // Offset: 0x94
@@ -183,69 +175,69 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _padRenderer
-    ::UnityEngine::Renderer*& dyn__padRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__padRenderer();
     // Get instance field reference: private UnityEngine.Renderer _ringRendererOuter
-    ::UnityEngine::Renderer*& dyn__ringRendererOuter();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__ringRendererOuter();
     // Get instance field reference: private System.Boolean _effectScaledByPower
-    bool& dyn__effectScaledByPower();
+    [[deprecated]] bool& dyn__effectScaledByPower();
     // Get instance field reference: private System.Single _duration
-    float& dyn__duration();
+    [[deprecated]] float& dyn__duration();
     // Get instance field reference: private UnityEngine.AnimationCurve _powerCurve
-    ::UnityEngine::AnimationCurve*& dyn__powerCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _scaleCurve
-    ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
     // Get instance field reference: private UnityEngine.Transform _scalingTransform
-    ::UnityEngine::Transform*& dyn__scalingTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__scalingTransform();
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
     // Get instance field reference: private VROSC.MinMaxInt _particleAmount
-    ::VROSC::MinMaxInt*& dyn__particleAmount();
+    [[deprecated]] ::VROSC::MinMaxInt*& dyn__particleAmount();
     // Get instance field reference: private System.Boolean _preview
-    bool& dyn__preview();
+    [[deprecated]] bool& dyn__preview();
     // Get instance field reference: private UnityEngine.Color _previewColor
-    ::UnityEngine::Color& dyn__previewColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__previewColor();
     // Get instance field reference: private System.Single _previewTiming
-    float& dyn__previewTiming();
+    [[deprecated]] float& dyn__previewTiming();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Boolean _meshesVerified
-    bool& dyn__meshesVerified();
+    [[deprecated]] bool& dyn__meshesVerified();
     // Get instance field reference: private System.Boolean _pulsating
-    bool& dyn__pulsating();
+    [[deprecated]] bool& dyn__pulsating();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // public System.Void SetColor(UnityEngine.Color color, System.Boolean affectVisual)
-    // Offset: 0x130C414
+    // Offset: 0x8E5F88
     void SetColor(::UnityEngine::Color color, bool affectVisual);
     // public System.Void Activate(System.Single power)
-    // Offset: 0x130C63C
+    // Offset: 0x8E61B0
     void Activate(float power);
     // public System.Void StartPulsating()
-    // Offset: 0x130C794
+    // Offset: 0x8E6308
     void StartPulsating();
     // public System.Void StopPulsating()
-    // Offset: 0x130C82C
+    // Offset: 0x8E63A0
     void StopPulsating();
     // private System.Collections.IEnumerator PulsateCoroutine()
-    // Offset: 0x130C7C0
+    // Offset: 0x8E6334
     ::System::Collections::IEnumerator* PulsateCoroutine();
     // private System.Collections.IEnumerator ActivateFlow(System.Single power)
-    // Offset: 0x130C718
+    // Offset: 0x8E628C
     ::System::Collections::IEnumerator* ActivateFlow(float power);
     // public System.Void DisplayEffectForTime(System.Single time, System.Single inputScaling, UnityEngine.Color color)
-    // Offset: 0x130C834
+    // Offset: 0x8E63A8
     void DisplayEffectForTime(float time, float inputScaling, ::UnityEngine::Color color);
     // private System.Void Update()
-    // Offset: 0x130C91C
+    // Offset: 0x8E6490
     void Update();
     // private System.Void CreatePropBlock()
-    // Offset: 0x130C978
+    // Offset: 0x8E64EC
     void CreatePropBlock();
     // private System.Void SetEffectOnShader(System.Single timing, System.Single power, UnityEngine.Color color)
-    // Offset: 0x130C2E0
+    // Offset: 0x8E5E54
     void SetEffectOnShader(float timing, float power, ::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x130C9DC
+    // Offset: 0x8E6550
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -260,12 +252,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<DrumPadEffectOnSignal*, creationType>()));
     }
     // protected override System.Void OnEnable()
-    // Offset: 0x130C2A8
+    // Offset: 0x8E5E1C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::OnEnable()
     void OnEnable();
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x130C574
+    // Offset: 0x8E60E8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);

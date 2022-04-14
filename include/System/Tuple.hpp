@@ -16,6 +16,9 @@ namespace System {
   // Forward declaring type: Tuple`2<T1, T2>
   template<typename T1, typename T2>
   class Tuple_2;
+  // Forward declaring type: Tuple`3<T1, T2, T3>
+  template<typename T1, typename T2, typename T3>
+  class Tuple_3;
 }
 // Completed forward declares
 // Type namespace: System
@@ -43,19 +46,31 @@ namespace System {
       static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T1>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T2>::get()})));
       return ::il2cpp_utils::RunMethodRethrow<::System::Tuple_2<T1, T2>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, item1, item2);
     }
+    // static public System.Tuple`3<T1,T2,T3> Create(T1 item1, T2 item2, T3 item3)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class T1, class T2, class T3>
+    static ::System::Tuple_3<T1, T2, T3>* Create(T1 item1, T2 item2, T3 item3) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Tuple::Create");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System", "Tuple", "Create", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T1>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T2>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T3>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(item1), ::il2cpp_utils::ExtractType(item2), ::il2cpp_utils::ExtractType(item3)})));
+      static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T1>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T2>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T3>::get()})));
+      return ::il2cpp_utils::RunMethodRethrow<::System::Tuple_3<T1, T2, T3>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, item1, item2, item3);
+    }
     // static System.Int32 CombineHashCodes(System.Int32 h1, System.Int32 h2)
-    // Offset: 0xCA0830
+    // Offset: 0x12AD4E4
     static int CombineHashCodes(int h1, int h2);
     // static System.Int32 CombineHashCodes(System.Int32 h1, System.Int32 h2, System.Int32 h3)
-    // Offset: 0xCA083C
+    // Offset: 0x12AD4F0
     static int CombineHashCodes(int h1, int h2, int h3);
     // static System.Int32 CombineHashCodes(System.Int32 h1, System.Int32 h2, System.Int32 h3, System.Int32 h4)
-    // Offset: 0xCA0850
+    // Offset: 0x12AD504
     static int CombineHashCodes(int h1, int h2, int h3, int h4);
   }; // System.Tuple
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Tuple::Create
+// Il2CppName: Create
+// Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Tuple::Create
 // Il2CppName: Create
 // Cannot write MetadataGetter for generic methods!

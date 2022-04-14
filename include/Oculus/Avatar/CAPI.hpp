@@ -169,121 +169,121 @@ namespace Oculus::Avatar {
     // Set static field: static private System.Version ovrPluginVersion
     static void _set_ovrPluginVersion(::System::Version* value);
     // static private System.Void .cctor()
-    // Offset: 0x132F248
+    // Offset: 0x943D4C
     static void _cctor();
     // static public System.Void ovrAvatar_InitializeAndroidUnity(System.String appID)
-    // Offset: 0x13274FC
+    // Offset: 0x93C000
     static void ovrAvatar_InitializeAndroidUnity(::StringW appID);
     // static public System.Void Initialize()
-    // Offset: 0x132758C
+    // Offset: 0x93C090
     static void Initialize();
     // static public System.Void Shutdown()
-    // Offset: 0x13277A4
+    // Offset: 0x93C2A8
     static void Shutdown();
     // static public System.Void ovrAvatar_Shutdown()
-    // Offset: 0x132788C
+    // Offset: 0x93C390
     static void ovrAvatar_Shutdown();
     // static public System.IntPtr ovrAvatarMessage_Pop()
-    // Offset: 0x13278FC
+    // Offset: 0x93C400
     static ::System::IntPtr ovrAvatarMessage_Pop();
     // static public ovrAvatarMessageType ovrAvatarMessage_GetType(System.IntPtr msg)
-    // Offset: 0x1327970
+    // Offset: 0x93C474
     static ::GlobalNamespace::ovrAvatarMessageType ovrAvatarMessage_GetType(::System::IntPtr msg);
     // static public ovrAvatarMessage_AvatarSpecification ovrAvatarMessage_GetAvatarSpecification(System.IntPtr msg)
-    // Offset: 0x13279F0
+    // Offset: 0x93C4F4
     static ::GlobalNamespace::ovrAvatarMessage_AvatarSpecification ovrAvatarMessage_GetAvatarSpecification(::System::IntPtr msg);
     // static private System.IntPtr ovrAvatarMessage_GetAvatarSpecification_Native(System.IntPtr msg)
-    // Offset: 0x1327B34
+    // Offset: 0x93C638
     static ::System::IntPtr ovrAvatarMessage_GetAvatarSpecification_Native(::System::IntPtr msg);
     // static public ovrAvatarMessage_AssetLoaded ovrAvatarMessage_GetAssetLoaded(System.IntPtr msg)
-    // Offset: 0x1327BB4
+    // Offset: 0x93C6B8
     static ::GlobalNamespace::ovrAvatarMessage_AssetLoaded ovrAvatarMessage_GetAssetLoaded(::System::IntPtr msg);
     // static private System.IntPtr ovrAvatarMessage_GetAssetLoaded_Native(System.IntPtr msg)
-    // Offset: 0x1327CF8
+    // Offset: 0x93C7FC
     static ::System::IntPtr ovrAvatarMessage_GetAssetLoaded_Native(::System::IntPtr msg);
     // static public System.Void ovrAvatarMessage_Free(System.IntPtr msg)
-    // Offset: 0x1327D78
+    // Offset: 0x93C87C
     static void ovrAvatarMessage_Free(::System::IntPtr msg);
     // static public System.IntPtr ovrAvatarSpecificationRequest_Create(System.UInt64 userID)
-    // Offset: 0x1327DF8
+    // Offset: 0x93C8FC
     static ::System::IntPtr ovrAvatarSpecificationRequest_Create(uint64_t userID);
     // static public System.Void ovrAvatarSpecificationRequest_Destroy(System.IntPtr specificationRequest)
-    // Offset: 0x1327E78
+    // Offset: 0x93C97C
     static void ovrAvatarSpecificationRequest_Destroy(::System::IntPtr specificationRequest);
     // static public System.Void ovrAvatarSpecificationRequest_SetCombineMeshes(System.IntPtr specificationRequest, System.Boolean useCombinedMesh)
-    // Offset: 0x1327EF8
+    // Offset: 0x93C9FC
     static void ovrAvatarSpecificationRequest_SetCombineMeshes(::System::IntPtr specificationRequest, bool useCombinedMesh);
     // static public System.Void ovrAvatarSpecificationRequest_SetLookAndFeelVersion(System.IntPtr specificationRequest, ovrAvatarLookAndFeelVersion version)
-    // Offset: 0x1327F88
+    // Offset: 0x93CA8C
     static void ovrAvatarSpecificationRequest_SetLookAndFeelVersion(::System::IntPtr specificationRequest, ::GlobalNamespace::ovrAvatarLookAndFeelVersion version);
     // static public System.Void ovrAvatarSpecificationRequest_SetLevelOfDetail(System.IntPtr specificationRequest, ovrAvatarAssetLevelOfDetail lod)
-    // Offset: 0x1328018
+    // Offset: 0x93CB1C
     static void ovrAvatarSpecificationRequest_SetLevelOfDetail(::System::IntPtr specificationRequest, ::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod);
     // static public System.Void ovrAvatar_RequestAvatarSpecification(System.UInt64 userID)
-    // Offset: 0x13280A8
+    // Offset: 0x93CBAC
     static void ovrAvatar_RequestAvatarSpecification(uint64_t userID);
     // static public System.Void ovrAvatar_RequestAvatarSpecificationFromSpecRequest(System.IntPtr specificationRequest)
-    // Offset: 0x1328128
+    // Offset: 0x93CC2C
     static void ovrAvatar_RequestAvatarSpecificationFromSpecRequest(::System::IntPtr specificationRequest);
     // static public System.Void ovrAvatarSpecificationRequest_SetFallbackLookAndFeelVersion(System.IntPtr specificationRequest, ovrAvatarLookAndFeelVersion version)
-    // Offset: 0x13281A8
+    // Offset: 0x93CCAC
     static void ovrAvatarSpecificationRequest_SetFallbackLookAndFeelVersion(::System::IntPtr specificationRequest, ::GlobalNamespace::ovrAvatarLookAndFeelVersion version);
     // static public System.Void ovrAvatarSpecificationRequest_SetExpressiveFlag(System.IntPtr specificationRequest, System.Boolean enable)
-    // Offset: 0x1328238
+    // Offset: 0x93CD3C
     static void ovrAvatarSpecificationRequest_SetExpressiveFlag(::System::IntPtr specificationRequest, bool enable);
     // static public System.IntPtr ovrAvatar_Create(System.IntPtr avatarSpecification, ovrAvatarCapabilities capabilities)
-    // Offset: 0x13282C8
+    // Offset: 0x93CDCC
     static ::System::IntPtr ovrAvatar_Create(::System::IntPtr avatarSpecification, ::GlobalNamespace::ovrAvatarCapabilities capabilities);
     // static public System.Void ovrAvatar_Destroy(System.IntPtr avatar)
-    // Offset: 0x1328358
+    // Offset: 0x93CE5C
     static void ovrAvatar_Destroy(::System::IntPtr avatar);
     // static public System.Void ovrAvatarPose_UpdateBody(System.IntPtr avatar, ovrAvatarTransform headPose)
-    // Offset: 0x13283D8
+    // Offset: 0x93CEDC
     static void ovrAvatarPose_UpdateBody(::System::IntPtr avatar, ::GlobalNamespace::ovrAvatarTransform headPose);
     // static public System.Void ovrAvatarPose_UpdateVoiceVisualization(System.IntPtr avatar, System.Single[] pcmData)
-    // Offset: 0x1328478
+    // Offset: 0x93CF7C
     static void ovrAvatarPose_UpdateVoiceVisualization(::System::IntPtr avatar, ::ArrayW<float> pcmData);
     // static private System.Void ovrAvatarPose_UpdateVoiceVisualization_Native(System.IntPtr avatar, System.UInt32 pcmDataSize, in System.Single[] pcmData)
-    // Offset: 0x13284F4
+    // Offset: 0x93CFF8
     static void ovrAvatarPose_UpdateVoiceVisualization_Native(::System::IntPtr avatar, uint pcmDataSize, ByRef<::ArrayW<float>> pcmData);
     // static public System.Void ovrAvatarPose_UpdateHands(System.IntPtr avatar, ovrAvatarHandInputState inputStateLeft, ovrAvatarHandInputState inputStateRight)
-    // Offset: 0x1328594
+    // Offset: 0x93D098
     static void ovrAvatarPose_UpdateHands(::System::IntPtr avatar, ::GlobalNamespace::ovrAvatarHandInputState inputStateLeft, ::GlobalNamespace::ovrAvatarHandInputState inputStateRight);
     // static public System.Void ovrAvatarPose_UpdateHandsWithType(System.IntPtr avatar, ovrAvatarHandInputState inputStateLeft, ovrAvatarHandInputState inputStateRight, ovrAvatarControllerType type)
-    // Offset: 0x1328654
+    // Offset: 0x93D158
     static void ovrAvatarPose_UpdateHandsWithType(::System::IntPtr avatar, ::GlobalNamespace::ovrAvatarHandInputState inputStateLeft, ::GlobalNamespace::ovrAvatarHandInputState inputStateRight, ::GlobalNamespace::ovrAvatarControllerType type);
     // static public System.Void ovrAvatarPose_Finalize(System.IntPtr avatar, System.Single elapsedSeconds)
-    // Offset: 0x1328724
+    // Offset: 0x93D228
     static void ovrAvatarPose_Finalize(::System::IntPtr avatar, float elapsedSeconds);
     // static public System.Void ovrAvatar_SetLeftControllerVisibility(System.IntPtr avatar, System.Boolean show)
-    // Offset: 0x13287B4
+    // Offset: 0x93D2B8
     static void ovrAvatar_SetLeftControllerVisibility(::System::IntPtr avatar, bool show);
     // static public System.Void ovrAvatar_SetRightControllerVisibility(System.IntPtr avatar, System.Boolean show)
-    // Offset: 0x1328844
+    // Offset: 0x93D348
     static void ovrAvatar_SetRightControllerVisibility(::System::IntPtr avatar, bool show);
     // static public System.Void ovrAvatar_SetLeftHandVisibility(System.IntPtr avatar, System.Boolean show)
-    // Offset: 0x13288D4
+    // Offset: 0x93D3D8
     static void ovrAvatar_SetLeftHandVisibility(::System::IntPtr avatar, bool show);
     // static public System.Void ovrAvatar_SetRightHandVisibility(System.IntPtr avatar, System.Boolean show)
-    // Offset: 0x1328964
+    // Offset: 0x93D468
     static void ovrAvatar_SetRightHandVisibility(::System::IntPtr avatar, bool show);
     // static public System.UInt32 ovrAvatarComponent_Count(System.IntPtr avatar)
-    // Offset: 0x13289F4
+    // Offset: 0x93D4F8
     static uint ovrAvatarComponent_Count(::System::IntPtr avatar);
     // static public System.Void ovrAvatarComponent_Get(System.IntPtr avatar, System.UInt32 index, System.Boolean includeName, ref ovrAvatarComponent component)
-    // Offset: 0x1328A74
+    // Offset: 0x93D578
     static void ovrAvatarComponent_Get(::System::IntPtr avatar, uint index, bool includeName, ByRef<::GlobalNamespace::ovrAvatarComponent> component);
     // static public System.Void ovrAvatarComponent_Get(System.IntPtr componentPtr, System.Boolean includeName, ref ovrAvatarComponent component)
-    // Offset: 0x1328B90
+    // Offset: 0x93D694
     static void ovrAvatarComponent_Get(::System::IntPtr componentPtr, bool includeName, ByRef<::GlobalNamespace::ovrAvatarComponent> component);
     // static public System.IntPtr ovrAvatarComponent_Get_Native(System.IntPtr avatar, System.UInt32 index)
-    // Offset: 0x1328B00
+    // Offset: 0x93D604
     static ::System::IntPtr ovrAvatarComponent_Get_Native(::System::IntPtr avatar, uint index);
     // static public System.Boolean ovrAvatarPose_GetBaseComponent(System.IntPtr avatar, ref ovrAvatarBaseComponent component)
-    // Offset: 0x1328DA4
+    // Offset: 0x93D8A8
     static bool ovrAvatarPose_GetBaseComponent(::System::IntPtr avatar, ByRef<::GlobalNamespace::ovrAvatarBaseComponent> component);
     // static private System.IntPtr ovrAvatarPose_GetBaseComponent_Native(System.IntPtr avatar)
-    // Offset: 0x1328F14
+    // Offset: 0x93DA18
     static ::System::IntPtr ovrAvatarPose_GetBaseComponent_Native(::System::IntPtr avatar);
     // static public System.IntPtr MarshalRenderComponent(System.IntPtr ptr)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -296,316 +296,316 @@ namespace Oculus::Avatar {
       return ::il2cpp_utils::RunMethodRethrow<::System::IntPtr, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, ptr);
     }
     // static public System.Boolean ovrAvatarPose_GetBodyComponent(System.IntPtr avatar, ref ovrAvatarBodyComponent component)
-    // Offset: 0x1328F94
+    // Offset: 0x93DA98
     static bool ovrAvatarPose_GetBodyComponent(::System::IntPtr avatar, ByRef<::GlobalNamespace::ovrAvatarBodyComponent> component);
     // static private System.IntPtr ovrAvatarPose_GetBodyComponent_Native(System.IntPtr avatar)
-    // Offset: 0x132923C
+    // Offset: 0x93DD40
     static ::System::IntPtr ovrAvatarPose_GetBodyComponent_Native(::System::IntPtr avatar);
     // static public System.Boolean ovrAvatarPose_GetLeftControllerComponent(System.IntPtr avatar, ref ovrAvatarControllerComponent component)
-    // Offset: 0x13292BC
+    // Offset: 0x93DDC0
     static bool ovrAvatarPose_GetLeftControllerComponent(::System::IntPtr avatar, ByRef<::GlobalNamespace::ovrAvatarControllerComponent> component);
     // static private System.IntPtr ovrAvatarPose_GetLeftControllerComponent_Native(System.IntPtr avatar)
-    // Offset: 0x132942C
+    // Offset: 0x93DF30
     static ::System::IntPtr ovrAvatarPose_GetLeftControllerComponent_Native(::System::IntPtr avatar);
     // static public System.Boolean ovrAvatarPose_GetRightControllerComponent(System.IntPtr avatar, ref ovrAvatarControllerComponent component)
-    // Offset: 0x13294AC
+    // Offset: 0x93DFB0
     static bool ovrAvatarPose_GetRightControllerComponent(::System::IntPtr avatar, ByRef<::GlobalNamespace::ovrAvatarControllerComponent> component);
     // static private System.IntPtr ovrAvatarPose_GetRightControllerComponent_Native(System.IntPtr avatar)
-    // Offset: 0x132961C
+    // Offset: 0x93E120
     static ::System::IntPtr ovrAvatarPose_GetRightControllerComponent_Native(::System::IntPtr avatar);
     // static public System.Boolean ovrAvatarPose_GetLeftHandComponent(System.IntPtr avatar, ref ovrAvatarHandComponent component)
-    // Offset: 0x132969C
+    // Offset: 0x93E1A0
     static bool ovrAvatarPose_GetLeftHandComponent(::System::IntPtr avatar, ByRef<::GlobalNamespace::ovrAvatarHandComponent> component);
     // static private System.IntPtr ovrAvatarPose_GetLeftHandComponent_Native(System.IntPtr avatar)
-    // Offset: 0x132980C
+    // Offset: 0x93E310
     static ::System::IntPtr ovrAvatarPose_GetLeftHandComponent_Native(::System::IntPtr avatar);
     // static public System.Boolean ovrAvatarPose_GetRightHandComponent(System.IntPtr avatar, ref ovrAvatarHandComponent component)
-    // Offset: 0x132988C
+    // Offset: 0x93E390
     static bool ovrAvatarPose_GetRightHandComponent(::System::IntPtr avatar, ByRef<::GlobalNamespace::ovrAvatarHandComponent> component);
     // static private System.IntPtr ovrAvatarPose_GetRightHandComponent_Native(System.IntPtr avatar)
-    // Offset: 0x13299FC
+    // Offset: 0x93E500
     static ::System::IntPtr ovrAvatarPose_GetRightHandComponent_Native(::System::IntPtr avatar);
     // static public System.Void ovrAvatarAsset_BeginLoading(System.UInt64 assetID)
-    // Offset: 0x1329A7C
+    // Offset: 0x93E580
     static void ovrAvatarAsset_BeginLoading(uint64_t assetID);
     // static public System.Boolean ovrAvatarAsset_BeginLoadingLOD(System.UInt64 assetId, ovrAvatarAssetLevelOfDetail lod)
-    // Offset: 0x1329AFC
+    // Offset: 0x93E600
     static bool ovrAvatarAsset_BeginLoadingLOD(uint64_t assetId, ::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod);
     // static public ovrAvatarAssetType ovrAvatarAsset_GetType(System.IntPtr assetHandle)
-    // Offset: 0x1329B94
+    // Offset: 0x93E698
     static ::GlobalNamespace::ovrAvatarAssetType ovrAvatarAsset_GetType(::System::IntPtr assetHandle);
     // static public ovrAvatarMeshAssetData ovrAvatarAsset_GetMeshData(System.IntPtr assetPtr)
-    // Offset: 0x1329C14
+    // Offset: 0x93E718
     static ::GlobalNamespace::ovrAvatarMeshAssetData ovrAvatarAsset_GetMeshData(::System::IntPtr assetPtr);
     // static public ovrAvatarMeshAssetDataV2 ovrAvatarAsset_GetCombinedMeshData(System.IntPtr assetPtr)
-    // Offset: 0x1329DEC
+    // Offset: 0x93E8F0
     static ::GlobalNamespace::ovrAvatarMeshAssetDataV2 ovrAvatarAsset_GetCombinedMeshData(::System::IntPtr assetPtr);
     // static private System.IntPtr ovrAvatarAsset_GetCombinedMeshData_Native(System.IntPtr assetPtr)
-    // Offset: 0x1329F44
+    // Offset: 0x93EA48
     static ::System::IntPtr ovrAvatarAsset_GetCombinedMeshData_Native(::System::IntPtr assetPtr);
     // static private System.IntPtr ovrAvatarAsset_GetMeshData_Native(System.IntPtr assetPtr)
-    // Offset: 0x1329D6C
+    // Offset: 0x93E870
     static ::System::IntPtr ovrAvatarAsset_GetMeshData_Native(::System::IntPtr assetPtr);
     // static public System.UInt32 ovrAvatarAsset_GetMeshBlendShapeCount(System.IntPtr assetPtr)
-    // Offset: 0x1329FC4
+    // Offset: 0x93EAC8
     static uint ovrAvatarAsset_GetMeshBlendShapeCount(::System::IntPtr assetPtr);
     // static public System.IntPtr ovrAvatarAsset_GetMeshBlendShapeName(System.IntPtr assetPtr, System.UInt32 index)
-    // Offset: 0x132A044
+    // Offset: 0x93EB48
     static ::System::IntPtr ovrAvatarAsset_GetMeshBlendShapeName(::System::IntPtr assetPtr, uint index);
     // static public System.UInt32 ovrAvatarAsset_GetSubmeshCount(System.IntPtr assetPtr)
-    // Offset: 0x132A0D4
+    // Offset: 0x93EBD8
     static uint ovrAvatarAsset_GetSubmeshCount(::System::IntPtr assetPtr);
     // static public System.UInt32 ovrAvatarAsset_GetSubmeshLastIndex(System.IntPtr assetPtr, System.UInt32 index)
-    // Offset: 0x132A154
+    // Offset: 0x93EC58
     static uint ovrAvatarAsset_GetSubmeshLastIndex(::System::IntPtr assetPtr, uint index);
     // static public System.IntPtr ovrAvatarAsset_GetMeshBlendShapeVertices(System.IntPtr assetPtr)
-    // Offset: 0x132A1E4
+    // Offset: 0x93ECE8
     static ::System::IntPtr ovrAvatarAsset_GetMeshBlendShapeVertices(::System::IntPtr assetPtr);
     // static public System.IntPtr ovrAvatarAsset_GetAvatar(System.IntPtr assetHandle)
-    // Offset: 0x132A264
+    // Offset: 0x93ED68
     static ::System::IntPtr ovrAvatarAsset_GetAvatar(::System::IntPtr assetHandle);
     // static public System.UInt64[] ovrAvatarAsset_GetCombinedMeshIDs(System.IntPtr assetHandle)
-    // Offset: 0x132A2E4
+    // Offset: 0x93EDE8
     static ::ArrayW<uint64_t> ovrAvatarAsset_GetCombinedMeshIDs(::System::IntPtr assetHandle);
     // static public System.IntPtr ovrAvatarAsset_GetCombinedMeshIDs_Native(System.IntPtr assetHandle, System.IntPtr count)
-    // Offset: 0x132A570
+    // Offset: 0x93F074
     static ::System::IntPtr ovrAvatarAsset_GetCombinedMeshIDs_Native(::System::IntPtr assetHandle, ::System::IntPtr count);
     // static public System.Void ovrAvatar_GetCombinedMeshAlphaData(System.IntPtr avatar, ref System.UInt64 textureID, ref UnityEngine.Vector4 offset)
-    // Offset: 0x132A600
+    // Offset: 0x93F104
     static void ovrAvatar_GetCombinedMeshAlphaData(::System::IntPtr avatar, ByRef<uint64_t> textureID, ByRef<::UnityEngine::Vector4> offset);
     // static public System.IntPtr ovrAvatar_GetCombinedMeshAlphaData_Native(System.IntPtr avatar, System.IntPtr textureIDPtr, System.IntPtr offsetPtr)
-    // Offset: 0x132A830
+    // Offset: 0x93F334
     static ::System::IntPtr ovrAvatar_GetCombinedMeshAlphaData_Native(::System::IntPtr avatar, ::System::IntPtr textureIDPtr, ::System::IntPtr offsetPtr);
     // static public ovrAvatarTextureAssetData ovrAvatarAsset_GetTextureData(System.IntPtr assetPtr)
-    // Offset: 0x132A8C8
+    // Offset: 0x93F3CC
     static ::GlobalNamespace::ovrAvatarTextureAssetData ovrAvatarAsset_GetTextureData(::System::IntPtr assetPtr);
     // static private System.IntPtr ovrAvatarAsset_GetTextureData_Native(System.IntPtr assetPtr)
-    // Offset: 0x132AA18
+    // Offset: 0x93F51C
     static ::System::IntPtr ovrAvatarAsset_GetTextureData_Native(::System::IntPtr assetPtr);
     // static private System.IntPtr ovrAvatarAsset_GetMaterialData_Native(System.IntPtr assetPtr)
-    // Offset: 0x132AA98
+    // Offset: 0x93F59C
     static ::System::IntPtr ovrAvatarAsset_GetMaterialData_Native(::System::IntPtr assetPtr);
     // static public ovrAvatarMaterialState ovrAvatarAsset_GetMaterialState(System.IntPtr assetPtr)
-    // Offset: 0x132AB18
+    // Offset: 0x93F61C
     static ::GlobalNamespace::ovrAvatarMaterialState ovrAvatarAsset_GetMaterialState(::System::IntPtr assetPtr);
     // static public ovrAvatarRenderPartType ovrAvatarRenderPart_GetType(System.IntPtr renderPart)
-    // Offset: 0x132AC6C
+    // Offset: 0x93F770
     static ::GlobalNamespace::ovrAvatarRenderPartType ovrAvatarRenderPart_GetType(::System::IntPtr renderPart);
     // static public ovrAvatarRenderPart_SkinnedMeshRender ovrAvatarRenderPart_GetSkinnedMeshRender(System.IntPtr renderPart)
-    // Offset: 0x132ACEC
+    // Offset: 0x93F7F0
     static ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRender ovrAvatarRenderPart_GetSkinnedMeshRender(::System::IntPtr renderPart);
     // static private System.IntPtr ovrAvatarRenderPart_GetSkinnedMeshRender_Native(System.IntPtr renderPart)
-    // Offset: 0x132AE40
+    // Offset: 0x93F944
     static ::System::IntPtr ovrAvatarRenderPart_GetSkinnedMeshRender_Native(::System::IntPtr renderPart);
     // static public ovrAvatarTransform ovrAvatarSkinnedMeshRender_GetTransform(System.IntPtr renderPart)
-    // Offset: 0x132AEC0
+    // Offset: 0x93F9C4
     static ::GlobalNamespace::ovrAvatarTransform ovrAvatarSkinnedMeshRender_GetTransform(::System::IntPtr renderPart);
     // static public ovrAvatarTransform ovrAvatarSkinnedMeshRenderPBS_GetTransform(System.IntPtr renderPart)
-    // Offset: 0x132AF50
+    // Offset: 0x93FA54
     static ::GlobalNamespace::ovrAvatarTransform ovrAvatarSkinnedMeshRenderPBS_GetTransform(::System::IntPtr renderPart);
     // static public ovrAvatarTransform ovrAvatarSkinnedMeshRenderPBSV2_GetTransform(System.IntPtr renderPart)
-    // Offset: 0x132AFE0
+    // Offset: 0x93FAE4
     static ::GlobalNamespace::ovrAvatarTransform ovrAvatarSkinnedMeshRenderPBSV2_GetTransform(::System::IntPtr renderPart);
     // static public ovrAvatarVisibilityFlags ovrAvatarSkinnedMeshRender_GetVisibilityMask(System.IntPtr renderPart)
-    // Offset: 0x132B070
+    // Offset: 0x93FB74
     static ::GlobalNamespace::ovrAvatarVisibilityFlags ovrAvatarSkinnedMeshRender_GetVisibilityMask(::System::IntPtr renderPart);
     // static public System.Boolean ovrAvatarSkinnedMeshRender_MaterialStateChanged(System.IntPtr renderPart)
-    // Offset: 0x132B0F0
+    // Offset: 0x93FBF4
     static bool ovrAvatarSkinnedMeshRender_MaterialStateChanged(::System::IntPtr renderPart);
     // static public System.Boolean ovrAvatarSkinnedMeshRenderPBSV2_MaterialStateChanged(System.IntPtr renderPart)
-    // Offset: 0x132B178
+    // Offset: 0x93FC7C
     static bool ovrAvatarSkinnedMeshRenderPBSV2_MaterialStateChanged(::System::IntPtr renderPart);
     // static public ovrAvatarVisibilityFlags ovrAvatarSkinnedMeshRenderPBS_GetVisibilityMask(System.IntPtr renderPart)
-    // Offset: 0x132B200
+    // Offset: 0x93FD04
     static ::GlobalNamespace::ovrAvatarVisibilityFlags ovrAvatarSkinnedMeshRenderPBS_GetVisibilityMask(::System::IntPtr renderPart);
     // static public ovrAvatarVisibilityFlags ovrAvatarSkinnedMeshRenderPBSV2_GetVisibilityMask(System.IntPtr renderPart)
-    // Offset: 0x132B280
+    // Offset: 0x93FD84
     static ::GlobalNamespace::ovrAvatarVisibilityFlags ovrAvatarSkinnedMeshRenderPBSV2_GetVisibilityMask(::System::IntPtr renderPart);
     // static public ovrAvatarMaterialState ovrAvatarSkinnedMeshRender_GetMaterialState(System.IntPtr renderPart)
-    // Offset: 0x132B300
+    // Offset: 0x93FE04
     static ::GlobalNamespace::ovrAvatarMaterialState ovrAvatarSkinnedMeshRender_GetMaterialState(::System::IntPtr renderPart);
     // static public ovrAvatarPBSMaterialState ovrAvatarSkinnedMeshRenderPBSV2_GetPBSMaterialState(System.IntPtr renderPart)
-    // Offset: 0x132B3B4
+    // Offset: 0x93FEB8
     static ::GlobalNamespace::ovrAvatarPBSMaterialState ovrAvatarSkinnedMeshRenderPBSV2_GetPBSMaterialState(::System::IntPtr renderPart);
     // static public ovrAvatarExpressiveParameters ovrAvatar_GetExpressiveParameters(System.IntPtr avatar)
-    // Offset: 0x132B444
+    // Offset: 0x93FF48
     static ::GlobalNamespace::ovrAvatarExpressiveParameters ovrAvatar_GetExpressiveParameters(::System::IntPtr avatar);
     // static public System.UInt64 ovrAvatarSkinnedMeshRender_GetDirtyJoints(System.IntPtr renderPart)
-    // Offset: 0x132B4D4
+    // Offset: 0x93FFD8
     static uint64_t ovrAvatarSkinnedMeshRender_GetDirtyJoints(::System::IntPtr renderPart);
     // static public System.UInt64 ovrAvatarSkinnedMeshRenderPBS_GetDirtyJoints(System.IntPtr renderPart)
-    // Offset: 0x132B554
+    // Offset: 0x940058
     static uint64_t ovrAvatarSkinnedMeshRenderPBS_GetDirtyJoints(::System::IntPtr renderPart);
     // static public System.UInt64 ovrAvatarSkinnedMeshRenderPBSV2_GetDirtyJoints(System.IntPtr renderPart)
-    // Offset: 0x132B5D4
+    // Offset: 0x9400D8
     static uint64_t ovrAvatarSkinnedMeshRenderPBSV2_GetDirtyJoints(::System::IntPtr renderPart);
     // static public ovrAvatarTransform ovrAvatarSkinnedMeshRender_GetJointTransform(System.IntPtr renderPart, System.UInt32 jointIndex)
-    // Offset: 0x132B654
+    // Offset: 0x940158
     static ::GlobalNamespace::ovrAvatarTransform ovrAvatarSkinnedMeshRender_GetJointTransform(::System::IntPtr renderPart, uint jointIndex);
     // static public System.Void ovrAvatar_SetActionUnitOnsetSpeed(System.IntPtr avatar, System.Single onsetSpeed)
-    // Offset: 0x132B6EC
+    // Offset: 0x9401F0
     static void ovrAvatar_SetActionUnitOnsetSpeed(::System::IntPtr avatar, float onsetSpeed);
     // static public System.Void ovrAvatar_SetActionUnitFalloffSpeed(System.IntPtr avatar, System.Single falloffSpeed)
-    // Offset: 0x132B77C
+    // Offset: 0x940280
     static void ovrAvatar_SetActionUnitFalloffSpeed(::System::IntPtr avatar, float falloffSpeed);
     // static public System.Void ovrAvatar_SetVisemeMultiplier(System.IntPtr avatar, System.Single visemeMultiplier)
-    // Offset: 0x132B80C
+    // Offset: 0x940310
     static void ovrAvatar_SetVisemeMultiplier(::System::IntPtr avatar, float visemeMultiplier);
     // static public ovrAvatarTransform ovrAvatarSkinnedMeshRenderPBS_GetJointTransform(System.IntPtr renderPart, System.UInt32 jointIndex)
-    // Offset: 0x132B89C
+    // Offset: 0x9403A0
     static ::GlobalNamespace::ovrAvatarTransform ovrAvatarSkinnedMeshRenderPBS_GetJointTransform(::System::IntPtr renderPart, uint jointIndex);
     // static public ovrAvatarTransform ovrAvatarSkinnedMeshRenderPBSV2_GetJointTransform(System.IntPtr renderPart, System.UInt32 jointIndex)
-    // Offset: 0x132B934
+    // Offset: 0x940438
     static ::GlobalNamespace::ovrAvatarTransform ovrAvatarSkinnedMeshRenderPBSV2_GetJointTransform(::System::IntPtr renderPart, uint jointIndex);
     // static public System.UInt64 ovrAvatarSkinnedMeshRenderPBS_GetAlbedoTextureAssetID(System.IntPtr renderPart)
-    // Offset: 0x132B9CC
+    // Offset: 0x9404D0
     static uint64_t ovrAvatarSkinnedMeshRenderPBS_GetAlbedoTextureAssetID(::System::IntPtr renderPart);
     // static public System.UInt64 ovrAvatarSkinnedMeshRenderPBS_GetSurfaceTextureAssetID(System.IntPtr renderPart)
-    // Offset: 0x132BA4C
+    // Offset: 0x940550
     static uint64_t ovrAvatarSkinnedMeshRenderPBS_GetSurfaceTextureAssetID(::System::IntPtr renderPart);
     // static public ovrAvatarRenderPart_SkinnedMeshRenderPBS ovrAvatarRenderPart_GetSkinnedMeshRenderPBS(System.IntPtr renderPart)
-    // Offset: 0x132BACC
+    // Offset: 0x9405D0
     static ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS ovrAvatarRenderPart_GetSkinnedMeshRenderPBS(::System::IntPtr renderPart);
     // static private System.IntPtr ovrAvatarRenderPart_GetSkinnedMeshRenderPBS_Native(System.IntPtr renderPart)
-    // Offset: 0x132BC20
+    // Offset: 0x940724
     static ::System::IntPtr ovrAvatarRenderPart_GetSkinnedMeshRenderPBS_Native(::System::IntPtr renderPart);
     // static public ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 ovrAvatarRenderPart_GetSkinnedMeshRenderPBSV2(System.IntPtr renderPart)
-    // Offset: 0x132BCA0
+    // Offset: 0x9407A4
     static ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 ovrAvatarRenderPart_GetSkinnedMeshRenderPBSV2(::System::IntPtr renderPart);
     // static private System.IntPtr ovrAvatarRenderPart_GetSkinnedMeshRenderPBSV2_Native(System.IntPtr renderPart)
-    // Offset: 0x132BDF4
+    // Offset: 0x9408F8
     static ::System::IntPtr ovrAvatarRenderPart_GetSkinnedMeshRenderPBSV2_Native(::System::IntPtr renderPart);
     // static public System.Void ovrAvatarSkinnedMeshRender_GetBlendShapeParams(System.IntPtr renderPart, ref ovrAvatarBlendShapeParams blendParams)
-    // Offset: 0x132BE74
+    // Offset: 0x940978
     static void ovrAvatarSkinnedMeshRender_GetBlendShapeParams(::System::IntPtr renderPart, ByRef<::GlobalNamespace::ovrAvatarBlendShapeParams> blendParams);
     // static private System.IntPtr ovrAvatarSkinnedMeshRender_GetBlendShapeParams_Native(System.IntPtr renderPart)
-    // Offset: 0x132BFB0
+    // Offset: 0x940AB4
     static ::System::IntPtr ovrAvatarSkinnedMeshRender_GetBlendShapeParams_Native(::System::IntPtr renderPart);
     // static public ovrAvatarRenderPart_ProjectorRender ovrAvatarRenderPart_GetProjectorRender(System.IntPtr renderPart)
-    // Offset: 0x132C030
+    // Offset: 0x940B34
     static ::GlobalNamespace::ovrAvatarRenderPart_ProjectorRender ovrAvatarRenderPart_GetProjectorRender(::System::IntPtr renderPart);
     // static public ovrAvatarPBSMaterialState[] ovrAvatar_GetBodyPBSMaterialStates(System.IntPtr renderPart)
-    // Offset: 0x132C204
+    // Offset: 0x940D08
     static ::ArrayW<::GlobalNamespace::ovrAvatarPBSMaterialState> ovrAvatar_GetBodyPBSMaterialStates(::System::IntPtr renderPart);
     // static private System.IntPtr ovrAvatar_GetBodyPBSMaterialStates_Native(System.IntPtr avatar, System.IntPtr count)
-    // Offset: 0x132C4E4
+    // Offset: 0x940FE8
     static ::System::IntPtr ovrAvatar_GetBodyPBSMaterialStates_Native(::System::IntPtr avatar, ::System::IntPtr count);
     // static private System.IntPtr ovrAvatarRenderPart_GetProjectorRender_Native(System.IntPtr renderPart)
-    // Offset: 0x132C184
+    // Offset: 0x940C88
     static ::System::IntPtr ovrAvatarRenderPart_GetProjectorRender_Native(::System::IntPtr renderPart);
     // static public System.UInt32 ovrAvatar_GetReferencedAssetCount(System.IntPtr avatar)
-    // Offset: 0x132C574
+    // Offset: 0x941078
     static uint ovrAvatar_GetReferencedAssetCount(::System::IntPtr avatar);
     // static public System.UInt64 ovrAvatar_GetReferencedAsset(System.IntPtr avatar, System.UInt32 index)
-    // Offset: 0x132C5F4
+    // Offset: 0x9410F8
     static uint64_t ovrAvatar_GetReferencedAsset(::System::IntPtr avatar, uint index);
     // static public System.Void ovrAvatar_SetLeftHandGesture(System.IntPtr avatar, ovrAvatarHandGesture gesture)
-    // Offset: 0x132C684
+    // Offset: 0x941188
     static void ovrAvatar_SetLeftHandGesture(::System::IntPtr avatar, ::GlobalNamespace::ovrAvatarHandGesture gesture);
     // static public System.Void ovrAvatar_SetRightHandGesture(System.IntPtr avatar, ovrAvatarHandGesture gesture)
-    // Offset: 0x132C714
+    // Offset: 0x941218
     static void ovrAvatar_SetRightHandGesture(::System::IntPtr avatar, ::GlobalNamespace::ovrAvatarHandGesture gesture);
     // static public System.Void ovrAvatar_SetLeftHandCustomGesture(System.IntPtr avatar, System.UInt32 jointCount, in ovrAvatarTransform[] customJointTransforms)
-    // Offset: 0x132C7A4
+    // Offset: 0x9412A8
     static void ovrAvatar_SetLeftHandCustomGesture(::System::IntPtr avatar, uint jointCount, ByRef<::ArrayW<::GlobalNamespace::ovrAvatarTransform>> customJointTransforms);
     // static public System.Void ovrAvatar_SetRightHandCustomGesture(System.IntPtr avatar, System.UInt32 jointCount, in ovrAvatarTransform[] customJointTransforms)
-    // Offset: 0x132C844
+    // Offset: 0x941348
     static void ovrAvatar_SetRightHandCustomGesture(::System::IntPtr avatar, uint jointCount, ByRef<::ArrayW<::GlobalNamespace::ovrAvatarTransform>> customJointTransforms);
     // static public System.Void ovrAvatar_UpdatePoseFromPacket(System.IntPtr avatar, System.IntPtr packet, System.Single secondsFromStart)
-    // Offset: 0x132C8E4
+    // Offset: 0x9413E8
     static void ovrAvatar_UpdatePoseFromPacket(::System::IntPtr avatar, ::System::IntPtr packet, float secondsFromStart);
     // static public System.Void ovrAvatarPacket_BeginRecording(System.IntPtr avatar)
-    // Offset: 0x132C984
+    // Offset: 0x941488
     static void ovrAvatarPacket_BeginRecording(::System::IntPtr avatar);
     // static public System.IntPtr ovrAvatarPacket_EndRecording(System.IntPtr avatar)
-    // Offset: 0x132CA04
+    // Offset: 0x941508
     static ::System::IntPtr ovrAvatarPacket_EndRecording(::System::IntPtr avatar);
     // static public System.UInt32 ovrAvatarPacket_GetSize(System.IntPtr packet)
-    // Offset: 0x132CA84
+    // Offset: 0x941588
     static uint ovrAvatarPacket_GetSize(::System::IntPtr packet);
     // static public System.Single ovrAvatarPacket_GetDurationSeconds(System.IntPtr packet)
-    // Offset: 0x132CB04
+    // Offset: 0x941608
     static float ovrAvatarPacket_GetDurationSeconds(::System::IntPtr packet);
     // static public System.Void ovrAvatarPacket_Free(System.IntPtr packet)
-    // Offset: 0x132CB84
+    // Offset: 0x941688
     static void ovrAvatarPacket_Free(::System::IntPtr packet);
     // static public System.Boolean ovrAvatarPacket_Write(System.IntPtr packet, System.UInt32 bufferSize, out System.Byte[] buffer)
-    // Offset: 0x132CC04
+    // Offset: 0x941708
     static bool ovrAvatarPacket_Write(::System::IntPtr packet, uint bufferSize, ByRef<::ArrayW<uint8_t>> buffer);
     // static public System.IntPtr ovrAvatarPacket_Read(System.UInt32 bufferSize, in System.Byte[] buffer)
-    // Offset: 0x132CD2C
+    // Offset: 0x941830
     static ::System::IntPtr ovrAvatarPacket_Read(uint bufferSize, ByRef<::ArrayW<uint8_t>> buffer);
     // static private System.Void ovrAvatar_SetInternalForceASTCTextures(System.Boolean value)
-    // Offset: 0x132CDC4
+    // Offset: 0x9418C8
     static void ovrAvatar_SetInternalForceASTCTextures(bool value);
     // static public System.Void ovrAvatar_SetForceASTCTextures(System.Boolean value)
-    // Offset: 0x132CE44
+    // Offset: 0x941948
     static void ovrAvatar_SetForceASTCTextures(bool value);
     // static public System.Void ovrAvatar_OverrideExpressiveLogic(System.IntPtr avatar, ovrAvatarBlendShapeParams blendParams)
-    // Offset: 0x132CEA4
+    // Offset: 0x9419A8
     static void ovrAvatar_OverrideExpressiveLogic(::System::IntPtr avatar, ::GlobalNamespace::ovrAvatarBlendShapeParams blendParams);
     // static private System.Void ovrAvatar_OverrideExpressiveLogic_Native(System.IntPtr avatar, System.IntPtr state)
-    // Offset: 0x132CFEC
+    // Offset: 0x941AF0
     static void ovrAvatar_OverrideExpressiveLogic_Native(::System::IntPtr avatar, ::System::IntPtr state);
     // static public System.Void ovrAvatar_SetVisemes(System.IntPtr avatar, ovrAvatarVisemes visemes)
-    // Offset: 0x132D07C
+    // Offset: 0x941B80
     static void ovrAvatar_SetVisemes(::System::IntPtr avatar, ::GlobalNamespace::ovrAvatarVisemes visemes);
     // static private System.Void ovrAvatar_SetVisemes_Native(System.IntPtr avatar, System.IntPtr visemes)
-    // Offset: 0x132D1D4
+    // Offset: 0x941CD8
     static void ovrAvatar_SetVisemes_Native(::System::IntPtr avatar, ::System::IntPtr visemes);
     // static public System.Void ovrAvatar_UpdateWorldTransform(System.IntPtr avatar, ovrAvatarTransform transform)
-    // Offset: 0x132D264
+    // Offset: 0x941D68
     static void ovrAvatar_UpdateWorldTransform(::System::IntPtr avatar, ::GlobalNamespace::ovrAvatarTransform transform);
     // static public System.Void ovrAvatar_UpdateGazeTargets(ovrAvatarGazeTargets targets)
-    // Offset: 0x132D304
+    // Offset: 0x941E08
     static void ovrAvatar_UpdateGazeTargets(::GlobalNamespace::ovrAvatarGazeTargets targets);
     // static private System.Void ovrAvatar_UpdateGazeTargets_Native(System.IntPtr targets)
-    // Offset: 0x132D6D4
+    // Offset: 0x9421D8
     static void ovrAvatar_UpdateGazeTargets_Native(::System::IntPtr targets);
     // static public System.Void ovrAvatar_RemoveGazeTargets(System.UInt32 targetCount, System.UInt32[] ids)
-    // Offset: 0x132D754
+    // Offset: 0x942258
     static void ovrAvatar_RemoveGazeTargets(uint targetCount, ::ArrayW<uint> ids);
     // static public System.Void ovrAvatar_UpdateLights(ovrAvatarLights lights)
-    // Offset: 0x132D7EC
+    // Offset: 0x9422F0
     static void ovrAvatar_UpdateLights(::GlobalNamespace::ovrAvatarLights lights);
     // static private System.Void ovrAvatar_UpdateLights_Native(System.IntPtr lights)
-    // Offset: 0x132E04C
+    // Offset: 0x942B50
     static void ovrAvatar_UpdateLights_Native(::System::IntPtr lights);
     // static public System.Void ovrAvatar_RemoveLights(System.UInt32 lightCount, System.UInt32[] ids)
-    // Offset: 0x132E0CC
+    // Offset: 0x942BD0
     static void ovrAvatar_RemoveLights(uint lightCount, ::ArrayW<uint> ids);
     // static public System.Void LoggingCallback(System.IntPtr str)
-    // Offset: 0x1327498
+    // Offset: 0x93BF9C
     static void LoggingCallback(::System::IntPtr str);
     // static public System.Void ovrAvatar_RegisterLoggingCallback(Oculus.Avatar.CAPI/Oculus.Avatar.LoggingDelegate callback)
-    // Offset: 0x132E164
+    // Offset: 0x942C68
     static void ovrAvatar_RegisterLoggingCallback(::Oculus::Avatar::CAPI::LoggingDelegate* callback);
     // static public System.Void ovrAvatar_SetLoggingLevel(ovrAvatarLogLevel level)
-    // Offset: 0x132E1E8
+    // Offset: 0x942CEC
     static void ovrAvatar_SetLoggingLevel(::GlobalNamespace::ovrAvatarLogLevel level);
     // static public System.IntPtr ovrAvatar_GetDebugTransforms_Native(System.IntPtr count)
-    // Offset: 0x132E268
+    // Offset: 0x942D6C
     static ::System::IntPtr ovrAvatar_GetDebugTransforms_Native(::System::IntPtr count);
     // static public System.IntPtr ovrAvatar_GetDebugLines_Native(System.IntPtr count)
-    // Offset: 0x132E2E8
+    // Offset: 0x942DEC
     static ::System::IntPtr ovrAvatar_GetDebugLines_Native(::System::IntPtr count);
     // static public System.Void ovrAvatar_DrawDebugLines()
-    // Offset: 0x132E368
+    // Offset: 0x942E6C
     static void ovrAvatar_DrawDebugLines();
     // static public System.Void ovrAvatar_SetDebugDrawContext(System.UInt32 context)
-    // Offset: 0x132ED2C
+    // Offset: 0x943830
     static void ovrAvatar_SetDebugDrawContext(uint context);
     // static public System.Boolean SendEvent(System.String name, System.String param, System.String source)
-    // Offset: 0x132EDAC
+    // Offset: 0x9438B0
     static bool SendEvent(::StringW name, ::StringW param, ::StringW source);
     // static private System.IntPtr _ovrp_GetVersion()
-    // Offset: 0x132F1CC
+    // Offset: 0x943CD0
     static ::System::IntPtr _ovrp_GetVersion();
     // static public System.String ovrp_GetVersion()
-    // Offset: 0x132F134
+    // Offset: 0x943C38
     static ::StringW ovrp_GetVersion();
     // public System.Void .ctor()
-    // Offset: 0x132F240
+    // Offset: 0x943D44
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

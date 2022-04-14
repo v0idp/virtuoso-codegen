@@ -20,6 +20,8 @@
 namespace VROSC {
   // Forward declaring type: Launchpad
   class Launchpad;
+  // Forward declaring type: TransformDataController
+  class TransformDataController;
   // Forward declaring type: GrabData
   class GrabData;
 }
@@ -61,15 +63,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x69 to desired offset: 0x70
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Launchpad _launchpadPrefab
     // Size: 0x8
     // Offset: 0x70
@@ -156,74 +150,74 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Launchpad*) == 0x8);
     public:
     // Get instance field reference: private VROSC.Launchpad _launchpadPrefab
-    ::VROSC::Launchpad*& dyn__launchpadPrefab();
+    [[deprecated]] ::VROSC::Launchpad*& dyn__launchpadPrefab();
     // Get instance field reference: private UnityEngine.Transform _spawnPoint
-    ::UnityEngine::Transform*& dyn__spawnPoint();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__spawnPoint();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Launchpad> _spawnedLaunchPads
-    ::System::Collections::Generic::List_1<::VROSC::Launchpad*>*& dyn__spawnedLaunchPads();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Launchpad*>*& dyn__spawnedLaunchPads();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadCreated
-    ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadCreated();
+    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadCreated();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadMoved
-    ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadMoved();
+    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadMoved();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadDeleted
-    ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadDeleted();
+    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadDeleted();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadHit
-    ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadHit();
+    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadHit();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnTargetColorChanged
-    ::System::Action_1<::UnityEngine::Color>*& dyn_OnTargetColorChanged();
+    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnTargetColorChanged();
     // Get instance field reference: public System.Action`1<System.String> OnTargetNameChanged
-    ::System::Action_1<::StringW>*& dyn_OnTargetNameChanged();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_OnTargetNameChanged();
     // Get instance field reference: private System.String <CurrentName>k__BackingField
-    ::StringW& dyn_$CurrentName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$CurrentName$k__BackingField();
     // Get instance field reference: private UnityEngine.Color <CurrentColor>k__BackingField
-    ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
     // Get instance field reference: private System.String _targetID
-    ::StringW& dyn__targetID();
+    [[deprecated]] ::StringW& dyn__targetID();
     // Get instance field reference: private UnityEngine.Transform _launchPadParent
-    ::UnityEngine::Transform*& dyn__launchPadParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__launchPadParent();
     // Get instance field reference: private VROSC.Launchpad _currentlyHeldLaunchpad
-    ::VROSC::Launchpad*& dyn__currentlyHeldLaunchpad();
+    [[deprecated]] ::VROSC::Launchpad*& dyn__currentlyHeldLaunchpad();
     // public System.String get_CurrentName()
-    // Offset: 0x138B2F4
+    // Offset: 0x194EBC4
     ::StringW get_CurrentName();
     // private System.Void set_CurrentName(System.String value)
-    // Offset: 0x138B2EC
+    // Offset: 0x194EBBC
     void set_CurrentName(::StringW value);
     // public UnityEngine.Color get_CurrentColor()
-    // Offset: 0x138B308
+    // Offset: 0x194EBD8
     ::UnityEngine::Color get_CurrentColor();
     // private System.Void set_CurrentColor(UnityEngine.Color value)
-    // Offset: 0x138B2FC
+    // Offset: 0x194EBCC
     void set_CurrentColor(::UnityEngine::Color value);
     // public System.Void Setup(System.String targetID, UnityEngine.Transform launchPadParent, System.String displayName)
-    // Offset: 0x138B314
+    // Offset: 0x194EBE4
     void Setup(::StringW targetID, ::UnityEngine::Transform* launchPadParent, ::StringW displayName);
     // private VROSC.Launchpad SpawnLaunchpad(System.String padID, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 localScale)
-    // Offset: 0x138B5EC
+    // Offset: 0x194EEBC
     ::VROSC::Launchpad* SpawnLaunchpad(::StringW padID, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 localScale);
     // private System.Void LaunchPadHit(VROSC.Launchpad launchpad)
-    // Offset: 0x138B8E0
+    // Offset: 0x194F1B0
     void LaunchPadHit(::VROSC::Launchpad* launchpad);
     // private System.Void LaunchPadMoved(VROSC.Launchpad launchpad)
-    // Offset: 0x138B950
+    // Offset: 0x194F220
     void LaunchPadMoved(::VROSC::Launchpad* launchpad);
     // private System.Void LaunchPadDeleted(VROSC.Launchpad launchpad)
-    // Offset: 0x138B9C0
+    // Offset: 0x194F290
     void LaunchPadDeleted(::VROSC::Launchpad* launchpad);
-    // public VROSC.Launchpad LoadLaunchPad(System.String padID, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 localScale)
-    // Offset: 0x138BA5C
-    ::VROSC::Launchpad* LoadLaunchPad(::StringW padID, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 localScale);
+    // public VROSC.Launchpad LoadLaunchPad(System.String padID, VROSC.TransformDataController transformData)
+    // Offset: 0x194F47C
+    ::VROSC::Launchpad* LoadLaunchPad(::StringW padID, ::VROSC::TransformDataController* transformData);
     // public System.Void SetLaunchpadColor(UnityEngine.Color color)
-    // Offset: 0x138BA70
+    // Offset: 0x194F570
     void SetLaunchpadColor(::UnityEngine::Color color);
     // public System.Void SetLaunchpadDisplayName(System.String name)
-    // Offset: 0x138B320
+    // Offset: 0x194EBF0
     void SetLaunchpadDisplayName(::StringW name);
     // public System.Void TearDown()
-    // Offset: 0x138BB0C
+    // Offset: 0x194F60C
     void TearDown();
     // public System.Void .ctor()
-    // Offset: 0x138BDEC
+    // Offset: 0x194F910
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
@@ -238,7 +232,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LaunchpadSpawner*, creationType>()));
     }
     // public override System.Void Grab(VROSC.GrabData grabData, System.Boolean grabbing)
-    // Offset: 0x138B394
+    // Offset: 0x194EC64
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::Grab(VROSC.GrabData grabData, System.Boolean grabbing)
     void Grab(::VROSC::GrabData* grabData, bool grabbing);
@@ -335,13 +329,11 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 // Writing MetadataGetter for method: VROSC::LaunchpadSpawner::LoadLaunchPad
 // Il2CppName: LoadLaunchPad
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Launchpad* (VROSC::LaunchpadSpawner::*)(::StringW, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Vector3)>(&VROSC::LaunchpadSpawner::LoadLaunchPad)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Launchpad* (VROSC::LaunchpadSpawner::*)(::StringW, ::VROSC::TransformDataController*)>(&VROSC::LaunchpadSpawner::LoadLaunchPad)> {
   static const MethodInfo* get() {
     static auto* padID = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    static auto* position = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    static auto* rotation = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
-    static auto* localScale = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LaunchpadSpawner*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, position, rotation, localScale});
+    static auto* transformData = &::il2cpp_utils::GetClassFromName("VROSC", "TransformDataController")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LaunchpadSpawner*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, transformData});
   }
 };
 // Writing MetadataGetter for method: VROSC::LaunchpadSpawner::SetLaunchpadColor

@@ -33,15 +33,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class NetSyncConnection : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.Int64 ConnectionId
     // Size: 0x8
     // Offset: 0x10
@@ -78,17 +70,17 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.Int64 ConnectionId
-    int64_t& dyn_ConnectionId();
+    [[deprecated]] int64_t& dyn_ConnectionId();
     // Get instance field reference: public readonly Oculus.Platform.NetSyncDisconnectReason DisconnectReason
-    ::Oculus::Platform::NetSyncDisconnectReason& dyn_DisconnectReason();
+    [[deprecated]] ::Oculus::Platform::NetSyncDisconnectReason& dyn_DisconnectReason();
     // Get instance field reference: public readonly System.UInt64 SessionId
-    uint64_t& dyn_SessionId();
+    [[deprecated]] uint64_t& dyn_SessionId();
     // Get instance field reference: public readonly Oculus.Platform.NetSyncConnectionStatus Status
-    ::Oculus::Platform::NetSyncConnectionStatus& dyn_Status();
+    [[deprecated]] ::Oculus::Platform::NetSyncConnectionStatus& dyn_Status();
     // Get instance field reference: public readonly System.String ZoneId
-    ::StringW& dyn_ZoneId();
+    [[deprecated]] ::StringW& dyn_ZoneId();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x97B9DC
+    // Offset: 0xB4DD78
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NetSyncConnection* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::NetSyncConnection::.ctor");

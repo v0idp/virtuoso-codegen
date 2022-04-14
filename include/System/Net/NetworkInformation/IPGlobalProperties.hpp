@@ -32,19 +32,19 @@ namespace System::Net::NetworkInformation {
     // Set static field: static private readonly System.Boolean <PlatformNeedsLibCWorkaround>k__BackingField
     static void _set_$PlatformNeedsLibCWorkaround$k__BackingField(bool value);
     // static private System.Boolean get_PlatformNeedsLibCWorkaround()
-    // Offset: 0xD95988
+    // Offset: 0x10F3968
     static bool get_PlatformNeedsLibCWorkaround();
     // public System.String get_DomainName()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::StringW get_DomainName();
     // static public System.Net.NetworkInformation.IPGlobalProperties GetIPGlobalProperties()
-    // Offset: 0xD959D4
+    // Offset: 0x10F39B4
     static ::System::Net::NetworkInformation::IPGlobalProperties* GetIPGlobalProperties();
     // static System.Net.NetworkInformation.IPGlobalProperties InternalGetIPGlobalProperties()
-    // Offset: 0xD95AA4
+    // Offset: 0x10F3BE8
     static ::System::Net::NetworkInformation::IPGlobalProperties* InternalGetIPGlobalProperties();
     // protected System.Void .ctor()
-    // Offset: 0xD95AA8
+    // Offset: 0x10F3BEC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

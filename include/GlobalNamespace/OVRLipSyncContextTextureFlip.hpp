@@ -45,31 +45,23 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRLipSyncContextTextureFlip : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Material material
     // Size: 0x8
     // Offset: 0x18
     ::UnityEngine::Material* material;
     // Field size check
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5E2658
-    // [OVRNamedArrayAttribute] Offset: 0x5E2658
+    // [TooltipAttribute] Offset: 0x6F9478
+    // [OVRNamedArrayAttribute] Offset: 0x6F9478
     // public UnityEngine.Texture[] Textures
     // Size: 0x8
     // Offset: 0x20
     ::ArrayW<::UnityEngine::Texture*> Textures;
     // Field size check
     static_assert(sizeof(::ArrayW<::UnityEngine::Texture*>) == 0x8);
-    // [TooltipAttribute] Offset: 0x5E27D0
-    // [RangeAttribute] Offset: 0x5E27D0
+    // [TooltipAttribute] Offset: 0x6F95F0
+    // [RangeAttribute] Offset: 0x6F95F0
     // public System.Int32 smoothAmount
     // Size: 0x4
     // Offset: 0x28
@@ -94,26 +86,26 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Material material
-    ::UnityEngine::Material*& dyn_material();
+    [[deprecated]] ::UnityEngine::Material*& dyn_material();
     // Get instance field reference: public UnityEngine.Texture[] Textures
-    ::ArrayW<::UnityEngine::Texture*>& dyn_Textures();
+    [[deprecated]] ::ArrayW<::UnityEngine::Texture*>& dyn_Textures();
     // Get instance field reference: public System.Int32 smoothAmount
-    int& dyn_smoothAmount();
+    [[deprecated]] int& dyn_smoothAmount();
     // Get instance field reference: private OVRLipSyncContextBase lipsyncContext
-    ::GlobalNamespace::OVRLipSyncContextBase*& dyn_lipsyncContext();
+    [[deprecated]] ::GlobalNamespace::OVRLipSyncContextBase*& dyn_lipsyncContext();
     // Get instance field reference: private OVRLipSync/Frame oldFrame
-    ::GlobalNamespace::OVRLipSync::Frame*& dyn_oldFrame();
+    [[deprecated]] ::GlobalNamespace::OVRLipSync::Frame*& dyn_oldFrame();
     // private System.Void Start()
-    // Offset: 0x12AC9F4
+    // Offset: 0x18AB598
     void Start();
     // private System.Void Update()
-    // Offset: 0x12ACB74
+    // Offset: 0x18AB718
     void Update();
     // private System.Void SetVisemeToTexture()
-    // Offset: 0x12ACD14
+    // Offset: 0x18AB8B8
     void SetVisemeToTexture();
     // public System.Void .ctor()
-    // Offset: 0x12ACE40
+    // Offset: 0x18AB9E4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

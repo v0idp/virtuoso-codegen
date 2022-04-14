@@ -39,15 +39,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x49 to desired offset: 0x50
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteNode _note
     // Size: 0x8
     // Offset: 0x50
@@ -56,9 +48,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteNode*) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteNode _note
-    ::VROSC::NoteNode*& dyn__note();
+    [[deprecated]] ::VROSC::NoteNode*& dyn__note();
     // public System.Void .ctor()
-    // Offset: 0xA1649C
+    // Offset: 0xC5AFB4
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -74,7 +66,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NoteToggle*, creationType>()));
     }
     // protected override System.Void SetValueBySignal(VROSC.Signal signal)
-    // Offset: 0xA1638C
+    // Offset: 0xC5AEA4
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::SetValueBySignal(VROSC.Signal signal)
     void SetValueBySignal(::VROSC::Signal* signal);

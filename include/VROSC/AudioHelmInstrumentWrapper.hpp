@@ -54,7 +54,7 @@ namespace VROSC {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetPitchBend(float pitchBendValue);
     // protected System.Void .ctor()
-    // Offset: 0x1370F64
+    // Offset: 0x96FBE8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

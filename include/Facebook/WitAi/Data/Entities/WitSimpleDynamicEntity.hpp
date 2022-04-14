@@ -45,15 +45,7 @@ namespace Facebook::WitAi::Data::Entities {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitSimpleDynamicEntity : public ::Il2CppObject/*, public ::Facebook::WitAi::Interfaces::IDynamicEntitiesProvider*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<System.String> keywords
     // Size: 0x8
     // Offset: 0x10
@@ -72,21 +64,21 @@ namespace Facebook::WitAi::Data::Entities {
       return *reinterpret_cast<::Facebook::WitAi::Interfaces::IDynamicEntitiesProvider*>(this);
     }
     // Get instance field reference: public System.Collections.Generic.List`1<System.String> keywords
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_keywords();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_keywords();
     // Get instance field reference: public System.String entity
-    ::StringW& dyn_entity();
+    [[deprecated]] ::StringW& dyn_entity();
     // public System.Void .ctor(System.String entityIdentifier, System.Collections.Generic.List`1<System.String> words)
-    // Offset: 0x11069F4
+    // Offset: 0x167D260
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitSimpleDynamicEntity* New_ctor(::StringW entityIdentifier, ::System::Collections::Generic::List_1<::StringW>* words) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::Entities::WitSimpleDynamicEntity::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitSimpleDynamicEntity*, creationType>(entityIdentifier, words)));
     }
     // public System.Collections.Generic.KeyValuePair`2<System.String,Facebook.WitAi.Lib.WitResponseArray> GetEntityPair()
-    // Offset: 0x10FDEB4
+    // Offset: 0x167471C
     ::System::Collections::Generic::KeyValuePair_2<::StringW, ::Facebook::WitAi::Lib::WitResponseArray*> GetEntityPair();
     // public System.String ToJSON()
-    // Offset: 0x1106A2C
+    // Offset: 0x167D298
     ::StringW ToJSON();
   }; // Facebook.WitAi.Data.Entities.WitSimpleDynamicEntity
   #pragma pack(pop)

@@ -26,7 +26,7 @@ namespace Proyecto26 {
   class StaticCoroutine::CoroutineHolder : public ::UnityEngine::MonoBehaviour {
     public:
     // public System.Void .ctor()
-    // Offset: 0x134E550
+    // Offset: 0x8DA768
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

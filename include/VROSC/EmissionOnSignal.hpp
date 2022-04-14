@@ -46,15 +46,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::EmissionOnSignal::$NodeBegin$d__11
     struct $NodeBegin$d__11;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _outputRenderer
     // Size: 0x8
     // Offset: 0x40
@@ -111,46 +103,46 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Renderer _outputRenderer
-    ::UnityEngine::Renderer*& dyn__outputRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__outputRenderer();
     // Get instance field reference: private UnityEngine.Color _emissionColor
-    ::UnityEngine::Color& dyn__emissionColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__emissionColor();
     // Get instance field reference: private System.Single _zeroBrightness
-    float& dyn__zeroBrightness();
+    [[deprecated]] float& dyn__zeroBrightness();
     // Get instance field reference: private System.Single _oneBrightness
-    float& dyn__oneBrightness();
+    [[deprecated]] float& dyn__oneBrightness();
     // Get instance field reference: private System.Single _rampUpTime
-    float& dyn__rampUpTime();
+    [[deprecated]] float& dyn__rampUpTime();
     // Get instance field reference: private System.Single _rampDownTime
-    float& dyn__rampDownTime();
+    [[deprecated]] float& dyn__rampDownTime();
     // Get instance field reference: private UnityEngine.Material _materialInstance
-    ::UnityEngine::Material*& dyn__materialInstance();
+    [[deprecated]] ::UnityEngine::Material*& dyn__materialInstance();
     // Get instance field reference: private System.Single _targetBrightness
-    float& dyn__targetBrightness();
+    [[deprecated]] float& dyn__targetBrightness();
     // Get instance field reference: private System.Single _currentBrightness
-    float& dyn__currentBrightness();
+    [[deprecated]] float& dyn__currentBrightness();
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x1311550
+    // Offset: 0x8EB2D0
     void SetColor(::UnityEngine::Color color);
     // protected System.Void Awake()
-    // Offset: 0x131155C
+    // Offset: 0x8EB2DC
     void Awake();
     // protected System.Void Update()
-    // Offset: 0x13117B4
+    // Offset: 0x8EB534
     void Update();
     // private System.Void TurnOn(VROSC.Signal signal)
-    // Offset: 0x1311864
+    // Offset: 0x8EB5E4
     void TurnOn(::VROSC::Signal* signal);
     // private System.Void StayOn(VROSC.Signal signal)
-    // Offset: 0x131173C
+    // Offset: 0x8EB4BC
     void StayOn(::VROSC::Signal* signal);
     // private System.Void TurnOff(VROSC.Signal signal)
-    // Offset: 0x1311798
+    // Offset: 0x8EB518
     void TurnOff(::VROSC::Signal* signal);
     // private System.Void SetEmission(System.Single brightness)
-    // Offset: 0x131159C
+    // Offset: 0x8EB31C
     void SetEmission(float brightness);
     // public System.Void .ctor()
-    // Offset: 0x1311894
+    // Offset: 0x8EB614
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -165,17 +157,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<EmissionOnSignal*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x1311644
+    // Offset: 0x8EB3C4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x131170C
+    // Offset: 0x8EB48C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x1311760
+    // Offset: 0x8EB4E0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

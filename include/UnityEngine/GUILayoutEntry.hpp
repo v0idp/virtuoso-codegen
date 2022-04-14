@@ -39,15 +39,7 @@ namespace UnityEngine {
   // [TokenAttribute] Offset: FFFFFFFF
   class GUILayoutEntry : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single minWidth
     // Size: 0x4
     // Offset: 0x10
@@ -114,77 +106,77 @@ namespace UnityEngine {
     // Set static field: static protected System.Int32 indent
     static void _set_indent(int value);
     // Get instance field reference: public System.Single minWidth
-    float& dyn_minWidth();
+    [[deprecated]] float& dyn_minWidth();
     // Get instance field reference: public System.Single maxWidth
-    float& dyn_maxWidth();
+    [[deprecated]] float& dyn_maxWidth();
     // Get instance field reference: public System.Single minHeight
-    float& dyn_minHeight();
+    [[deprecated]] float& dyn_minHeight();
     // Get instance field reference: public System.Single maxHeight
-    float& dyn_maxHeight();
+    [[deprecated]] float& dyn_maxHeight();
     // Get instance field reference: public UnityEngine.Rect rect
-    ::UnityEngine::Rect& dyn_rect();
+    [[deprecated]] ::UnityEngine::Rect& dyn_rect();
     // Get instance field reference: public System.Int32 stretchWidth
-    int& dyn_stretchWidth();
+    [[deprecated]] int& dyn_stretchWidth();
     // Get instance field reference: public System.Int32 stretchHeight
-    int& dyn_stretchHeight();
+    [[deprecated]] int& dyn_stretchHeight();
     // Get instance field reference: public System.Boolean consideredForMargin
-    bool& dyn_consideredForMargin();
+    [[deprecated]] bool& dyn_consideredForMargin();
     // Get instance field reference: private UnityEngine.GUIStyle m_Style
-    ::UnityEngine::GUIStyle*& dyn_m_Style();
+    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_Style();
     // public UnityEngine.GUIStyle get_style()
-    // Offset: 0x128C57C
+    // Offset: 0x1879AEC
     ::UnityEngine::GUIStyle* get_style();
     // public System.Void set_style(UnityEngine.GUIStyle value)
-    // Offset: 0x128C584
+    // Offset: 0x1879AF4
     void set_style(::UnityEngine::GUIStyle* value);
     // public System.Int32 get_marginLeft()
-    // Offset: 0x128C594
+    // Offset: 0x1879B04
     int get_marginLeft();
     // public System.Int32 get_marginRight()
-    // Offset: 0x128C668
+    // Offset: 0x1879BD8
     int get_marginRight();
     // public System.Int32 get_marginTop()
-    // Offset: 0x128C690
+    // Offset: 0x1879C00
     int get_marginTop();
     // public System.Int32 get_marginBottom()
-    // Offset: 0x128C6B8
+    // Offset: 0x1879C28
     int get_marginBottom();
     // public System.Int32 get_marginHorizontal()
-    // Offset: 0x128C6E0
+    // Offset: 0x1879C50
     int get_marginHorizontal();
     // public System.Int32 get_marginVertical()
-    // Offset: 0x128C720
+    // Offset: 0x1879C90
     int get_marginVertical();
     // public System.Void .ctor(System.Single _minWidth, System.Single _maxWidth, System.Single _minHeight, System.Single _maxHeight, UnityEngine.GUIStyle _style)
-    // Offset: 0x128C760
+    // Offset: 0x1879CD0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GUILayoutEntry* New_ctor(float _minWidth, float _maxWidth, float _minHeight, float _maxHeight, ::UnityEngine::GUIStyle* _style) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUILayoutEntry::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GUILayoutEntry*, creationType>(_minWidth, _maxWidth, _minHeight, _maxHeight, _style)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x128D44C
+    // Offset: 0x187A9BC
     static void _cctor();
     // public System.Void CalcWidth()
-    // Offset: 0x128C878
+    // Offset: 0x1879DE8
     void CalcWidth();
     // public System.Void CalcHeight()
-    // Offset: 0x128C87C
+    // Offset: 0x1879DEC
     void CalcHeight();
     // public System.Void SetHorizontal(System.Single x, System.Single width)
-    // Offset: 0x128C880
+    // Offset: 0x1879DF0
     void SetHorizontal(float x, float width);
     // public System.Void SetVertical(System.Single y, System.Single height)
-    // Offset: 0x128C8C0
+    // Offset: 0x1879E30
     void SetVertical(float y, float height);
     // protected System.Void ApplyStyleSettings(UnityEngine.GUIStyle style)
-    // Offset: 0x128C900
+    // Offset: 0x1879E70
     void ApplyStyleSettings(::UnityEngine::GUIStyle* style);
     // public System.Void ApplyOptions(UnityEngine.GUILayoutOption[] options)
-    // Offset: 0x128CB08
+    // Offset: 0x187A078
     void ApplyOptions(::ArrayW<::UnityEngine::GUILayoutOption*> options);
     // public override System.String ToString()
-    // Offset: 0x128CDEC
+    // Offset: 0x187A35C
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

@@ -29,10 +29,10 @@ namespace BeautifyEffect {
   class Demo4 : public ::UnityEngine::MonoBehaviour {
     public:
     // private System.Void Update()
-    // Offset: 0x130B3A0
+    // Offset: 0x8E4570
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x130B4BC
+    // Offset: 0x8E468C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

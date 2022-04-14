@@ -40,15 +40,7 @@ namespace System::Threading {
   // [TokenAttribute] Offset: FFFFFFFF
   class SynchronizationContext : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Threading.SynchronizationContextProperties _props
     // Size: 0x4
     // Offset: 0x10
@@ -81,36 +73,36 @@ namespace System::Threading {
     // Set static field: static private System.Type s_cachedPreparedType5
     static void _set_s_cachedPreparedType5(::System::Type* value);
     // Get instance field reference: private System.Threading.SynchronizationContextProperties _props
-    ::System::Threading::SynchronizationContextProperties& dyn__props();
+    [[deprecated]] ::System::Threading::SynchronizationContextProperties& dyn__props();
     // static public System.Threading.SynchronizationContext get_Current()
-    // Offset: 0xEF69E8
+    // Offset: 0x126B18C
     static ::System::Threading::SynchronizationContext* get_Current();
     // static System.Threading.SynchronizationContext get_CurrentNoFlow()
-    // Offset: 0xEF6A90
+    // Offset: 0x126B234
     static ::System::Threading::SynchronizationContext* get_CurrentNoFlow();
     // public System.Void Send(System.Threading.SendOrPostCallback d, System.Object state)
-    // Offset: 0xEF68F8
+    // Offset: 0x126B09C
     void Send(::System::Threading::SendOrPostCallback* d, ::Il2CppObject* state);
     // public System.Void Post(System.Threading.SendOrPostCallback d, System.Object state)
-    // Offset: 0xEF6918
+    // Offset: 0x126B0BC
     void Post(::System::Threading::SendOrPostCallback* d, ::Il2CppObject* state);
     // public System.Void OperationStarted()
-    // Offset: 0xEF69A4
+    // Offset: 0x126B148
     void OperationStarted();
     // public System.Void OperationCompleted()
-    // Offset: 0xEF69A8
+    // Offset: 0x126B14C
     void OperationCompleted();
     // static public System.Void SetSynchronizationContext(System.Threading.SynchronizationContext syncContext)
-    // Offset: 0xEF69AC
+    // Offset: 0x126B150
     static void SetSynchronizationContext(::System::Threading::SynchronizationContext* syncContext);
     // static private System.Threading.SynchronizationContext GetThreadLocalContext()
-    // Offset: 0xEF6A34
+    // Offset: 0x126B1D8
     static ::System::Threading::SynchronizationContext* GetThreadLocalContext();
     // public System.Threading.SynchronizationContext CreateCopy()
-    // Offset: 0xEF6ADC
+    // Offset: 0x126B280
     ::System::Threading::SynchronizationContext* CreateCopy();
     // public System.Void .ctor()
-    // Offset: 0xEF68F0
+    // Offset: 0x126B094
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

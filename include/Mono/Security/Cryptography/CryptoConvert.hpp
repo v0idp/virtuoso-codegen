@@ -25,7 +25,7 @@ namespace Mono::Security::Cryptography {
   class CryptoConvert : public ::Il2CppObject {
     public:
     // static public System.String ToHex(System.Byte[] input)
-    // Offset: 0x10E86E0
+    // Offset: 0x163A59C
     static ::StringW ToHex(::ArrayW<uint8_t> input);
   }; // Mono.Security.Cryptography.CryptoConvert
   #pragma pack(pop)

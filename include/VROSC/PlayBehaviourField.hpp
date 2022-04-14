@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PlayBehaviourField : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.NoteBoardPlayer/VROSC.PlayBehaviour EnteredValue
     // Size: 0x4
     // Offset: 0x10
@@ -60,14 +52,14 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::PlayBehaviourNode*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.NoteBoardPlayer/VROSC.PlayBehaviour EnteredValue
-    ::VROSC::NoteBoardPlayer::PlayBehaviour& dyn_EnteredValue();
+    [[deprecated]] ::VROSC::NoteBoardPlayer::PlayBehaviour& dyn_EnteredValue();
     // Get instance field reference: protected VROSC.PlayBehaviourNode ConnectedValue
-    ::VROSC::PlayBehaviourNode*& dyn_ConnectedValue();
+    [[deprecated]] ::VROSC::PlayBehaviourNode*& dyn_ConnectedValue();
     // public System.Int32 get_Value()
-    // Offset: 0x8FB69C
+    // Offset: 0xADFE34
     int get_Value();
     // public System.Void .ctor()
-    // Offset: 0x8FB72C
+    // Offset: 0xADFEC4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

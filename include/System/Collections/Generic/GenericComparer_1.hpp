@@ -52,7 +52,7 @@ namespace System::Collections::Generic {
     // Base method: System.Int32 Comparer_1::Compare(T x, T y)
     int Compare(T x, T y) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Generic::GenericComparer_1::Compare");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Compare", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(x), ::il2cpp_utils::ExtractType(y)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Collections::Generic::Comparer_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<int, false>(this, ___internal__method, x, y);
     }
     // public override System.Boolean Equals(System.Object obj)
@@ -61,7 +61,7 @@ namespace System::Collections::Generic {
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Generic::GenericComparer_1::Equals");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Equals", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(obj)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::Il2CppObject*), -1));
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(this, ___internal__method, obj);
     }
     // public override System.Int32 GetHashCode()
@@ -70,7 +70,7 @@ namespace System::Collections::Generic {
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Generic::GenericComparer_1::GetHashCode");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "GetHashCode", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::Il2CppObject*), -1));
       return ::il2cpp_utils::RunMethodRethrow<int, false>(this, ___internal__method);
     }
   }; // System.Collections.Generic.GenericComparer`1

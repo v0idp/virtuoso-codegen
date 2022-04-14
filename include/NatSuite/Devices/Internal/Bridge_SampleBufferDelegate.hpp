@@ -35,20 +35,20 @@ namespace NatSuite::Devices::Internal {
   class Bridge::SampleBufferDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x135BD1C
+    // Offset: 0x958284
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Bridge::SampleBufferDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::Bridge::SampleBufferDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Bridge::SampleBufferDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.IntPtr context, System.IntPtr sampleBuffer, System.Int32 sampleCount, System.Int64 timestamp)
-    // Offset: 0x135BD2C
+    // Offset: 0x958294
     void Invoke(::System::IntPtr context, ::System::IntPtr sampleBuffer, int sampleCount, int64_t timestamp);
     // public System.IAsyncResult BeginInvoke(System.IntPtr context, System.IntPtr sampleBuffer, System.Int32 sampleCount, System.Int64 timestamp, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x135BF9C
+    // Offset: 0x958504
     ::System::IAsyncResult* BeginInvoke(::System::IntPtr context, ::System::IntPtr sampleBuffer, int sampleCount, int64_t timestamp, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x135C090
+    // Offset: 0x9585F8
     void EndInvoke(::System::IAsyncResult* result);
   }; // NatSuite.Devices.Internal.Bridge/NatSuite.Devices.Internal.SampleBufferDelegate
   #pragma pack(pop)

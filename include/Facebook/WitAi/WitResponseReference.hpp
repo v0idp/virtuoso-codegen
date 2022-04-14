@@ -34,15 +34,7 @@ namespace Facebook::WitAi {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitResponseReference : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Facebook.WitAi.WitResponseReference child
     // Size: 0x8
     // Offset: 0x10
@@ -57,20 +49,20 @@ namespace Facebook::WitAi {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public Facebook.WitAi.WitResponseReference child
-    ::Facebook::WitAi::WitResponseReference*& dyn_child();
+    [[deprecated]] ::Facebook::WitAi::WitResponseReference*& dyn_child();
     // Get instance field reference: public System.String path
-    ::StringW& dyn_path();
+    [[deprecated]] ::StringW& dyn_path();
     // public System.String GetStringValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1106324
+    // Offset: 0x167CB90
     ::StringW GetStringValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public System.Int32 GetIntValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1106344
+    // Offset: 0x167CBB0
     int GetIntValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public System.Single GetFloatValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1106364
+    // Offset: 0x167CBD0
     float GetFloatValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public System.Void .ctor()
-    // Offset: 0x10F7E88
+    // Offset: 0x166E6F0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

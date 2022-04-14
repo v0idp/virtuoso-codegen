@@ -52,22 +52,22 @@ namespace DG::Tweening::Core {
     // Set static field: static private readonly System.String[] _defAssembliesToQuery
     static void _set__defAssembliesToQuery(::ArrayW<::StringW> value);
     // static private System.Void .cctor()
-    // Offset: 0x1267570
+    // Offset: 0x185F914
     static void _cctor();
     // static UnityEngine.Vector3 Vector3FromAngle(System.Single degrees, System.Single magnitude)
-    // Offset: 0x1266FF8
+    // Offset: 0x185F39C
     static ::UnityEngine::Vector3 Vector3FromAngle(float degrees, float magnitude);
     // static System.Single Angle2D(UnityEngine.Vector3 from, UnityEngine.Vector3 to)
-    // Offset: 0x126704C
+    // Offset: 0x185F3F0
     static float Angle2D(::UnityEngine::Vector3 from, ::UnityEngine::Vector3 to);
     // static UnityEngine.Vector3 RotateAroundPivot(UnityEngine.Vector3 point, UnityEngine.Vector3 pivot, UnityEngine.Quaternion rotation)
-    // Offset: 0x12671E8
+    // Offset: 0x185F58C
     static ::UnityEngine::Vector3 RotateAroundPivot(::UnityEngine::Vector3 point, ::UnityEngine::Vector3 pivot, ::UnityEngine::Quaternion rotation);
     // static System.Boolean Vector3AreApproximatelyEqual(UnityEngine.Vector3 a, UnityEngine.Vector3 b)
-    // Offset: 0x1267248
+    // Offset: 0x185F5EC
     static bool Vector3AreApproximatelyEqual(::UnityEngine::Vector3 a, ::UnityEngine::Vector3 b);
     // static System.Type GetLooseScriptType(System.String typeName)
-    // Offset: 0x12672BC
+    // Offset: 0x185F660
     static ::System::Type* GetLooseScriptType(::StringW typeName);
   }; // DG.Tweening.Core.Utils
   #pragma pack(pop)

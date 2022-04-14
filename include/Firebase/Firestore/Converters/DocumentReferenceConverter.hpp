@@ -42,7 +42,7 @@ namespace Firebase::Firestore::Converters {
   class DocumentReferenceConverter : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
     // System.Void .ctor()
-    // Offset: 0xC2F0E4
+    // Offset: 0xD50EF4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -51,12 +51,12 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<DocumentReferenceConverter*, creationType>()));
     }
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC307E4
+    // Offset: 0xD528F4
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
     // protected override System.Object DeserializeReference(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.DocumentReference value)
-    // Offset: 0xC3092C
+    // Offset: 0xD52A34
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeReference(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.DocumentReference value)
     ::Il2CppObject* DeserializeReference(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::DocumentReference* value);

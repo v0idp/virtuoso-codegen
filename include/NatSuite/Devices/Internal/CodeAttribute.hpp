@@ -30,7 +30,7 @@ namespace NatSuite::Devices::Internal {
   class CodeAttribute : public ::System::Attribute {
     public:
     // public System.Void .ctor(System.String key)
-    // Offset: 0x1333670
+    // Offset: 0x9482C4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CodeAttribute* New_ctor(::StringW key) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::CodeAttribute::.ctor");

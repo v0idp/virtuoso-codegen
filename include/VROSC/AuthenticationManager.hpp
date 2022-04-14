@@ -29,8 +29,6 @@ namespace VROSC {
 }
 // Forward declaring namespace: System
 namespace System {
-  // Forward declaring type: String
-  class String;
   // Forward declaring type: Action
   class Action;
   // Forward declaring type: Action`2<T1, T2>
@@ -67,21 +65,11 @@ namespace VROSC {
     class LocalUserData;
     // Nested type: ::VROSC::AuthenticationManager::FirebaseUserData
     class FirebaseUserData;
-    // Nested type: ::VROSC::AuthenticationManager::$$c__DisplayClass28_0
-    class $$c__DisplayClass28_0;
     // Nested type: ::VROSC::AuthenticationManager::$$c
     class $$c;
-    // Nested type: ::VROSC::AuthenticationManager::$$c__DisplayClass38_0
-    class $$c__DisplayClass38_0;
-    #ifdef USE_CODEGEN_FIELDS
+    // Nested type: ::VROSC::AuthenticationManager::$$c__DisplayClass37_0
+    class $$c__DisplayClass37_0;
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.AuthenticationManager/VROSC.LocalUserData LocalUser
     // Size: 0x8
     // Offset: 0x18
@@ -121,12 +109,6 @@ namespace VROSC {
     public:
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
-    // static field const value: static public System.String KEY_FIREBASE_REFRESH_TOKEN
-    static constexpr const char* KEY_FIREBASE_REFRESH_TOKEN = "FirebaseRefreshToken";
-    // Get static field: static public System.String KEY_FIREBASE_REFRESH_TOKEN
-    static ::StringW _get_KEY_FIREBASE_REFRESH_TOKEN();
-    // Set static field: static public System.String KEY_FIREBASE_REFRESH_TOKEN
-    static void _set_KEY_FIREBASE_REFRESH_TOKEN(::StringW value);
     // static field const value: static public System.Int32 MAX_RETRY_ATTEMPTS
     static constexpr const int MAX_RETRY_ATTEMPTS = 5;
     // Get static field: static public System.Int32 MAX_RETRY_ATTEMPTS
@@ -196,97 +178,118 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.Error> OnSendVerificationEmailFailure
     static void _set_OnSendVerificationEmailFailure(::System::Action_1<::VROSC::Error>* value);
     // Get instance field reference: public VROSC.AuthenticationManager/VROSC.LocalUserData LocalUser
-    ::VROSC::AuthenticationManager::LocalUserData*& dyn_LocalUser();
+    [[deprecated]] ::VROSC::AuthenticationManager::LocalUserData*& dyn_LocalUser();
     // Get instance field reference: public VROSC.AuthenticationManager/VROSC.FirebaseUserData FirebaseUser
-    ::VROSC::AuthenticationManager::FirebaseUserData*& dyn_FirebaseUser();
+    [[deprecated]] ::VROSC::AuthenticationManager::FirebaseUserData*& dyn_FirebaseUser();
     // Get instance field reference: private VROSC.StateMachine _stateMachine
-    ::VROSC::StateMachine*& dyn__stateMachine();
+    [[deprecated]] ::VROSC::StateMachine*& dyn__stateMachine();
     // Get instance field reference: private VROSC.IState _startState
-    ::VROSC::IState*& dyn__startState();
+    [[deprecated]] ::VROSC::IState*& dyn__startState();
     // Get instance field reference: private VROSC.LoginWithEmailState _loginWithEmailState
-    ::VROSC::LoginWithEmailState*& dyn__loginWithEmailState();
+    [[deprecated]] ::VROSC::LoginWithEmailState*& dyn__loginWithEmailState();
     // Get instance field reference: private System.Boolean <IsWaitingForCredentials>k__BackingField
-    bool& dyn_$IsWaitingForCredentials$k__BackingField();
+    [[deprecated]] bool& dyn_$IsWaitingForCredentials$k__BackingField();
     // public System.Boolean get_IsWaitingForCredentials()
-    // Offset: 0x1373128
+    // Offset: 0x971EBC
     bool get_IsWaitingForCredentials();
     // public System.Void set_IsWaitingForCredentials(System.Boolean value)
-    // Offset: 0x1373130
+    // Offset: 0x971EC4
     void set_IsWaitingForCredentials(bool value);
     // private System.Void Awake()
-    // Offset: 0x137313C
+    // Offset: 0x971ED0
     void Awake();
     // public System.Void Setup()
-    // Offset: 0x137360C
+    // Offset: 0x972494
     void Setup();
     // private System.Void OnDestroy()
-    // Offset: 0x13736F4
+    // Offset: 0x97257C
     void OnDestroy();
     // private System.Void Update()
-    // Offset: 0x13737CC
+    // Offset: 0x972654
     void Update();
     // public System.Void AuthenticateWithEmail(System.String email, System.String password, System.Boolean rememberMe)
-    // Offset: 0x13737E8
+    // Offset: 0x972670
     void AuthenticateWithEmail(::StringW email, ::StringW password, bool rememberMe);
     // public System.Void CreateUserWithEmail(System.String email, System.String password, System.Boolean rememberMe)
-    // Offset: 0x137396C
+    // Offset: 0x9727F4
     void CreateUserWithEmail(::StringW email, ::StringW password, bool rememberMe);
     // public System.Void UserLoginSuccess(System.String email, System.Boolean isVerified)
-    // Offset: 0x1373AF4
+    // Offset: 0x97297C
     void UserLoginSuccess(::StringW email, bool isVerified);
     // public System.Void UserLoginFailure(VROSC.Error error)
-    // Offset: 0x1373BA0
+    // Offset: 0x972A28
     void UserLoginFailure(::VROSC::Error error);
     // public System.Void LogoutUser()
-    // Offset: 0x1373C1C
+    // Offset: 0x972AA4
     void LogoutUser();
     // public System.Void ChangeUserEmail(System.String email)
-    // Offset: 0x1373C74
+    // Offset: 0x972AFC
     void ChangeUserEmail(::StringW email);
     // public System.Void ChangeUserPassword(System.String currentPassword, System.String newPassword)
-    // Offset: 0x1373DA4
+    // Offset: 0x972C2C
     void ChangeUserPassword(::StringW currentPassword, ::StringW newPassword);
     // public System.Void SendVerificationEmail()
-    // Offset: 0x1373F18
+    // Offset: 0x972DA0
     void SendVerificationEmail();
     // public System.Void UserHasVerified()
-    // Offset: 0x1374024
+    // Offset: 0x972EAC
     void UserHasVerified();
     // public System.Void ResetPassword(System.String email)
-    // Offset: 0x1374084
+    // Offset: 0x972F0C
     void ResetPassword(::StringW email);
     // private System.Void UserLoggedOut()
-    // Offset: 0x13741A0
+    // Offset: 0x973028
     void UserLoggedOut();
     // private System.Void UserEmailChangeSuccess(System.String email)
-    // Offset: 0x13742FC
+    // Offset: 0x973184
     void UserEmailChangeSuccess(::StringW email);
     // private System.Void UserEmailChangeFailure(VROSC.Error error)
-    // Offset: 0x1374538
+    // Offset: 0x9733C0
     void UserEmailChangeFailure(::VROSC::Error error);
     // private System.Void UserPasswordChangeSuccess(System.String password)
-    // Offset: 0x13745B4
+    // Offset: 0x97343C
     void UserPasswordChangeSuccess(::StringW password);
     // private System.Void UserPasswordChangeFailure(VROSC.Error error)
-    // Offset: 0x137466C
+    // Offset: 0x9734F4
     void UserPasswordChangeFailure(::VROSC::Error error);
     // private System.Void ResetPasswordSuccess()
-    // Offset: 0x13746E8
+    // Offset: 0x973570
     void ResetPasswordSuccess();
     // private System.Void ResetPasswordFailure(VROSC.Error error)
-    // Offset: 0x1374748
+    // Offset: 0x9735D0
     void ResetPasswordFailure(::VROSC::Error error);
     // private System.Void SendVerificationEmailSuccess()
-    // Offset: 0x13747C4
+    // Offset: 0x97364C
     void SendVerificationEmailSuccess();
     // private System.Void SendVerificationEmailFailure(VROSC.Error error)
-    // Offset: 0x1374824
+    // Offset: 0x9736AC
     void SendVerificationEmailFailure(::VROSC::Error error);
-    // static System.Func`1<System.Boolean> <Awake>g__Continue|28_1()
-    // Offset: 0x1373514
-    static ::System::Func_1<bool>* $Awake$g__Continue_28_1();
+    // private System.Boolean <Awake>b__27_0()
+    // Offset: 0x9737B8
+    bool $Awake$b__27_0();
+    // static System.Func`1<System.Boolean> <Awake>g__Continue|27_1()
+    // Offset: 0x9721F8
+    static ::System::Func_1<bool>* $Awake$g__Continue_27_1();
+    // private System.Func`1<System.Boolean> <Awake>g__HasVerifiedUserLoggedIn|27_2()
+    // Offset: 0x97237C
+    ::System::Func_1<bool>* $Awake$g__HasVerifiedUserLoggedIn_27_2();
+    // private System.Boolean <Awake>b__27_6()
+    // Offset: 0x9737EC
+    bool $Awake$b__27_6();
+    // private System.Func`1<System.Boolean> <Awake>g__HasUnverifiedUserLoggedIn|27_3()
+    // Offset: 0x9722F0
+    ::System::Func_1<bool>* $Awake$g__HasUnverifiedUserLoggedIn_27_3();
+    // private System.Boolean <Awake>b__27_7()
+    // Offset: 0x973820
+    bool $Awake$b__27_7();
+    // private System.Func`1<System.Boolean> <Awake>g__HasUserLoggedOut|27_4()
+    // Offset: 0x972408
+    ::System::Func_1<bool>* $Awake$g__HasUserLoggedOut_27_4();
+    // private System.Boolean <Awake>b__27_8()
+    // Offset: 0x973854
+    bool $Awake$b__27_8();
     // public System.Void .ctor()
-    // Offset: 0x13748A0
+    // Offset: 0x973728
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -524,12 +527,68 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "SendVerificationEmailFailure", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$g__Continue_28_1
-// Il2CppName: <Awake>g__Continue|28_1
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$b__27_0
+// Il2CppName: <Awake>b__27_0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Func_1<bool>* (*)()>(&VROSC::AuthenticationManager::$Awake$g__Continue_28_1)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AuthenticationManager::*)()>(&VROSC::AuthenticationManager::$Awake$b__27_0)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>g__Continue|28_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>b__27_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$g__Continue_27_1
+// Il2CppName: <Awake>g__Continue|27_1
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Func_1<bool>* (*)()>(&VROSC::AuthenticationManager::$Awake$g__Continue_27_1)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>g__Continue|27_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$g__HasVerifiedUserLoggedIn_27_2
+// Il2CppName: <Awake>g__HasVerifiedUserLoggedIn|27_2
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Func_1<bool>* (VROSC::AuthenticationManager::*)()>(&VROSC::AuthenticationManager::$Awake$g__HasVerifiedUserLoggedIn_27_2)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>g__HasVerifiedUserLoggedIn|27_2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$b__27_6
+// Il2CppName: <Awake>b__27_6
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AuthenticationManager::*)()>(&VROSC::AuthenticationManager::$Awake$b__27_6)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>b__27_6", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$g__HasUnverifiedUserLoggedIn_27_3
+// Il2CppName: <Awake>g__HasUnverifiedUserLoggedIn|27_3
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Func_1<bool>* (VROSC::AuthenticationManager::*)()>(&VROSC::AuthenticationManager::$Awake$g__HasUnverifiedUserLoggedIn_27_3)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>g__HasUnverifiedUserLoggedIn|27_3", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$b__27_7
+// Il2CppName: <Awake>b__27_7
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AuthenticationManager::*)()>(&VROSC::AuthenticationManager::$Awake$b__27_7)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>b__27_7", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$g__HasUserLoggedOut_27_4
+// Il2CppName: <Awake>g__HasUserLoggedOut|27_4
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Func_1<bool>* (VROSC::AuthenticationManager::*)()>(&VROSC::AuthenticationManager::$Awake$g__HasUserLoggedOut_27_4)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>g__HasUserLoggedOut|27_4", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$Awake$b__27_8
+// Il2CppName: <Awake>b__27_8
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AuthenticationManager::*)()>(&VROSC::AuthenticationManager::$Awake$b__27_8)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>b__27_8", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::AuthenticationManager::New_ctor

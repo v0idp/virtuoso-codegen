@@ -22,21 +22,21 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FieldValue : public ::Il2CppObject {
     public:
-    // [DebuggerBrowsableAttribute] Offset: 0x5C79A4
+    // [DebuggerBrowsableAttribute] Offset: 0x6D869C
     // Get static field: static private readonly System.Object <ServerTimestamp>k__BackingField
     static ::Il2CppObject* _get_$ServerTimestamp$k__BackingField();
     // Set static field: static private readonly System.Object <ServerTimestamp>k__BackingField
     static void _set_$ServerTimestamp$k__BackingField(::Il2CppObject* value);
-    // [DebuggerBrowsableAttribute] Offset: 0x5C79E0
+    // [DebuggerBrowsableAttribute] Offset: 0x6D86D8
     // Get static field: static private readonly System.Object <Delete>k__BackingField
     static ::Il2CppObject* _get_$Delete$k__BackingField();
     // Set static field: static private readonly System.Object <Delete>k__BackingField
     static void _set_$Delete$k__BackingField(::Il2CppObject* value);
     // static private System.Void .cctor()
-    // Offset: 0xC3539C
+    // Offset: 0xD57544
     static void _cctor();
     // static public System.Object Increment(System.Int64 value)
-    // Offset: 0xC352CC
+    // Offset: 0xD5747C
     static ::Il2CppObject* Increment(int64_t value);
   }; // Firebase.Firestore.FieldValue
   #pragma pack(pop)

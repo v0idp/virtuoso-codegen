@@ -32,10 +32,10 @@ namespace System::IO::Compression {
   class CopyEncoder : public ::Il2CppObject {
     public:
     // public System.Void GetBlock(System.IO.Compression.DeflateInput input, System.IO.Compression.OutputBuffer output, System.Boolean isFinal)
-    // Offset: 0x111AEC4
+    // Offset: 0x1692730
     void GetBlock(::System::IO::Compression::DeflateInput* input, ::System::IO::Compression::OutputBuffer* output, bool isFinal);
     // private System.Void WriteLenNLen(System.UInt16 len, System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111B19C
+    // Offset: 0x1692A08
     void WriteLenNLen(uint16_t len, ::System::IO::Compression::OutputBuffer* output);
   }; // System.IO.Compression.CopyEncoder
   #pragma pack(pop)

@@ -61,15 +61,7 @@ namespace Oculus::Platform::Samples::SimplePlatformSample {
   // [TokenAttribute] Offset: FFFFFFFF
   class DataEntry : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.UI.Text dataOutput
     // Size: 0x8
     // Offset: 0x18
@@ -80,144 +72,144 @@ namespace Oculus::Platform::Samples::SimplePlatformSample {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.Text dataOutput
-    ::UnityEngine::UI::Text*& dyn_dataOutput();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_dataOutput();
     // private System.Void Start()
-    // Offset: 0x7E2A30
+    // Offset: 0x928E10
     void Start();
     // private System.Void Update()
-    // Offset: 0x7E2B34
+    // Offset: 0x928F14
     void Update();
     // private System.Void SubmitCommand(System.String command)
-    // Offset: 0x7E2C00
+    // Offset: 0x928FE0
     void SubmitCommand(::StringW command);
     // private System.Void getLeaderboardEntries(System.String leaderboardName)
-    // Offset: 0x7E4D1C
+    // Offset: 0x92B0FC
     void getLeaderboardEntries(::StringW leaderboardName);
     // private System.Void writeLeaderboardEntry(System.String leaderboardName, System.String value)
-    // Offset: 0x7E4BC0
+    // Offset: 0x92AFA0
     void writeLeaderboardEntry(::StringW leaderboardName, ::StringW value);
     // private System.Void addFieldsAchievement(System.String achievementName, System.String fields)
-    // Offset: 0x7E4AEC
+    // Offset: 0x92AECC
     void addFieldsAchievement(::StringW achievementName, ::StringW fields);
     // private System.Void addCountAchievement(System.String achievementName, System.String count)
-    // Offset: 0x7E49E0
+    // Offset: 0x92ADC0
     void addCountAchievement(::StringW achievementName, ::StringW count);
     // private System.Void unlockAchievement(System.String achievementName)
-    // Offset: 0x7E4914
+    // Offset: 0x92ACF4
     void unlockAchievement(::StringW achievementName);
     // private System.Void getAchievementProgress(System.String achievementName)
-    // Offset: 0x7E47E4
+    // Offset: 0x92ABC4
     void getAchievementProgress(::StringW achievementName);
     // private System.Void getAchievementDefinition(System.String achievementName)
-    // Offset: 0x7E46B4
+    // Offset: 0x92AA94
     void getAchievementDefinition(::StringW achievementName);
     // private System.Void checkEntitlement()
-    // Offset: 0x7E2A98
+    // Offset: 0x928E78
     void checkEntitlement();
     // private System.Void getUserNonce()
-    // Offset: 0x7E45CC
+    // Offset: 0x92A9AC
     void getUserNonce();
     // private System.Void createAndJoinPrivateRoom(System.String joinPolicy, System.String maxUsers)
-    // Offset: 0x7E34E0
+    // Offset: 0x9298C0
     void createAndJoinPrivateRoom(::StringW joinPolicy, ::StringW maxUsers);
     // private System.Void getCurrentRoom()
-    // Offset: 0x7E3624
+    // Offset: 0x929A04
     void getCurrentRoom();
     // private System.Void getRoom(System.String roomID)
-    // Offset: 0x7E370C
+    // Offset: 0x929AEC
     void getRoom(::StringW roomID);
     // private System.Void joinRoom(System.String roomID)
-    // Offset: 0x7E3840
+    // Offset: 0x929C20
     void joinRoom(::StringW roomID);
     // private System.Void leaveRoom(System.String roomID)
-    // Offset: 0x7E3978
+    // Offset: 0x929D58
     void leaveRoom(::StringW roomID);
     // private System.Void kickUser(System.String roomID, System.String userID)
-    // Offset: 0x7E3AAC
+    // Offset: 0x929E8C
     void kickUser(::StringW roomID, ::StringW userID);
     // private System.Void getLoggedInUser()
-    // Offset: 0x7E3C1C
+    // Offset: 0x929FFC
     void getLoggedInUser();
     // private System.Void getUser(System.String userID)
-    // Offset: 0x7E3D04
+    // Offset: 0x92A0E4
     void getUser(::StringW userID);
     // private System.Void getLoggedInFriends()
-    // Offset: 0x7E3E38
+    // Offset: 0x92A218
     void getLoggedInFriends();
     // private System.Void getInvitableUsers()
-    // Offset: 0x7E3F20
+    // Offset: 0x92A300
     void getInvitableUsers();
     // private System.Void inviteUser(System.String roomID, System.String inviteToken)
-    // Offset: 0x7E4008
+    // Offset: 0x92A3E8
     void inviteUser(::StringW roomID, ::StringW inviteToken);
     // private System.Void setRoomDescription(System.String roomID, System.String description)
-    // Offset: 0x7E4160
+    // Offset: 0x92A540
     void setRoomDescription(::StringW roomID, ::StringW description);
     // private System.Void updateRoomDataStore(System.String roomID, System.String key, System.String value)
-    // Offset: 0x7E42B8
+    // Offset: 0x92A698
     void updateRoomDataStore(::StringW roomID, ::StringW key, ::StringW value);
     // private System.Void printOutputLine(System.String newLine)
-    // Offset: 0x7E4DF8
+    // Offset: 0x92B1D8
     void printOutputLine(::StringW newLine);
     // private System.Void outputRoomDetails(Oculus.Platform.Models.Room room)
-    // Offset: 0x7E4EAC
+    // Offset: 0x92B28C
     void outputRoomDetails(::Oculus::Platform::Models::Room* room);
     // private System.Void outputUserArray(Oculus.Platform.Models.UserList users)
-    // Offset: 0x7E52D8
+    // Offset: 0x92B6B8
     void outputUserArray(::Oculus::Platform::Models::UserList* users);
     // private System.Void userProofCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.UserProof> msg)
-    // Offset: 0x7E5844
+    // Offset: 0x92BC24
     void userProofCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::UserProof*>* msg);
     // private System.Void getEntitlementCallback(Oculus.Platform.Message msg)
-    // Offset: 0x7E5948
+    // Offset: 0x92BD28
     void getEntitlementCallback(::Oculus::Platform::Message* msg);
     // private System.Void leaderboardGetCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.LeaderboardEntryList> msg)
-    // Offset: 0x7E59D0
+    // Offset: 0x92BDB0
     void leaderboardGetCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::LeaderboardEntryList*>* msg);
     // private System.Void leaderboardWriteCallback(Oculus.Platform.Message msg)
-    // Offset: 0x7E5FDC
+    // Offset: 0x92C3BC
     void leaderboardWriteCallback(::Oculus::Platform::Message* msg);
     // private System.Void achievementFieldsCallback(Oculus.Platform.Message msg)
-    // Offset: 0x7E6140
+    // Offset: 0x92C520
     void achievementFieldsCallback(::Oculus::Platform::Message* msg);
     // private System.Void achievementCountCallback(Oculus.Platform.Message msg)
-    // Offset: 0x7E6210
+    // Offset: 0x92C5F0
     void achievementCountCallback(::Oculus::Platform::Message* msg);
     // private System.Void achievementUnlockCallback(Oculus.Platform.Message msg)
-    // Offset: 0x7E62E0
+    // Offset: 0x92C6C0
     void achievementUnlockCallback(::Oculus::Platform::Message* msg);
     // private System.Void achievementProgressCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.AchievementProgressList> msg)
-    // Offset: 0x7E63B0
+    // Offset: 0x92C790
     void achievementProgressCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::AchievementProgressList*>* msg);
     // private System.Void achievementDefinitionCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.AchievementDefinitionList> msg)
-    // Offset: 0x7E67C4
+    // Offset: 0x92CBA4
     void achievementDefinitionCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::AchievementDefinitionList*>* msg);
     // private System.Void createAndJoinPrivateRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x7E6C68
+    // Offset: 0x92D048
     void createAndJoinPrivateRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void getCurrentRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x7E6D60
+    // Offset: 0x92D140
     void getCurrentRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void joinRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x7E6E58
+    // Offset: 0x92D238
     void joinRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void leaveRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x7E6F50
+    // Offset: 0x92D330
     void leaveRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void getUserCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.User> msg)
-    // Offset: 0x7E7048
+    // Offset: 0x92D428
     void getUserCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* msg);
     // private System.Void getFriendsCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.UserList> msg)
-    // Offset: 0x7E7328
+    // Offset: 0x92D708
     void getFriendsCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::UserList*>* msg);
     // private System.Void getInvitableUsersCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.UserList> msg)
-    // Offset: 0x7E7420
+    // Offset: 0x92D800
     void getInvitableUsersCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::UserList*>* msg);
     // private System.Void inviteUserCallback(Oculus.Platform.Message msg)
-    // Offset: 0x7E7518
+    // Offset: 0x92D8F8
     void inviteUserCallback(::Oculus::Platform::Message* msg);
     // public System.Void .ctor()
-    // Offset: 0x7E75E8
+    // Offset: 0x92D9C8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

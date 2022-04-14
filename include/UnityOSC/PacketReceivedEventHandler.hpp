@@ -45,20 +45,20 @@ namespace UnityOSC {
   class PacketReceivedEventHandler : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x8F6680
+    // Offset: 0xADAE58
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PacketReceivedEventHandler* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::PacketReceivedEventHandler::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PacketReceivedEventHandler*, creationType>(object, method)));
     }
     // public System.Void Invoke(UnityOSC.OSCServer sender, UnityOSC.OSCPacket packet)
-    // Offset: 0x8F6690
+    // Offset: 0xADAE68
     void Invoke(::UnityOSC::OSCServer* sender, ::UnityOSC::OSCPacket* packet);
     // public System.IAsyncResult BeginInvoke(UnityOSC.OSCServer sender, UnityOSC.OSCPacket packet, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x8F6A20
+    // Offset: 0xADB1F8
     ::System::IAsyncResult* BeginInvoke(::UnityOSC::OSCServer* sender, ::UnityOSC::OSCPacket* packet, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x8F6A50
+    // Offset: 0xADB228
     void EndInvoke(::System::IAsyncResult* result);
   }; // UnityOSC.PacketReceivedEventHandler
   #pragma pack(pop)

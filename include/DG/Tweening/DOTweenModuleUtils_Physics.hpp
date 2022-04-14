@@ -53,16 +53,16 @@ namespace DG::Tweening {
   class DOTweenModuleUtils::Physics : public ::Il2CppObject {
     public:
     // static public System.Void SetOrientationOnPath(DG.Tweening.Plugins.Options.PathOptions options, DG.Tweening.Tween t, UnityEngine.Quaternion newRot, UnityEngine.Transform trans)
-    // Offset: 0x1265EE4
+    // Offset: 0x17E42C4
     static void SetOrientationOnPath(::DG::Tweening::Plugins::Options::PathOptions options, ::DG::Tweening::Tween* t, ::UnityEngine::Quaternion newRot, ::UnityEngine::Transform* trans);
     // static public System.Boolean HasRigidbody2D(UnityEngine.Component target)
-    // Offset: 0x1265FE8
+    // Offset: 0x17E43C8
     static bool HasRigidbody2D(::UnityEngine::Component* target);
     // static public System.Boolean HasRigidbody(UnityEngine.Component target)
-    // Offset: 0x1266080
+    // Offset: 0x17E4460
     static bool HasRigidbody(::UnityEngine::Component* target);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> CreateDOTweenPathTween(UnityEngine.MonoBehaviour target, System.Boolean tweenRigidbody, System.Boolean isLocal, DG.Tweening.Plugins.Core.PathCore.Path path, System.Single duration, DG.Tweening.PathMode pathMode)
-    // Offset: 0x1266118
+    // Offset: 0x17E44F8
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* CreateDOTweenPathTween(::UnityEngine::MonoBehaviour* target, bool tweenRigidbody, bool isLocal, ::DG::Tweening::Plugins::Core::PathCore::Path* path, float duration, ::DG::Tweening::PathMode pathMode);
   }; // DG.Tweening.DOTweenModuleUtils/DG.Tweening.Physics
   #pragma pack(pop)

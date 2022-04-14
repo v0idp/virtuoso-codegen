@@ -27,15 +27,7 @@ namespace System::Collections::Specialized {
   // [TokenAttribute] Offset: FFFFFFFF
   class ListDictionary::NodeKeyValueCollection::NodeKeyValueEnumerator : public ::Il2CppObject/*, public ::System::Collections::IEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Specialized.ListDictionary list
     // Size: 0x8
     // Offset: 0x10
@@ -72,30 +64,30 @@ namespace System::Collections::Specialized {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.Specialized.ListDictionary list
-    ::System::Collections::Specialized::ListDictionary*& dyn_list();
+    [[deprecated]] ::System::Collections::Specialized::ListDictionary*& dyn_list();
     // Get instance field reference: private System.Collections.Specialized.ListDictionary/System.Collections.Specialized.DictionaryNode current
-    ::System::Collections::Specialized::ListDictionary::DictionaryNode*& dyn_current();
+    [[deprecated]] ::System::Collections::Specialized::ListDictionary::DictionaryNode*& dyn_current();
     // Get instance field reference: private System.Int32 version
-    int& dyn_version();
+    [[deprecated]] int& dyn_version();
     // Get instance field reference: private System.Boolean isKeys
-    bool& dyn_isKeys();
+    [[deprecated]] bool& dyn_isKeys();
     // Get instance field reference: private System.Boolean start
-    bool& dyn_start();
+    [[deprecated]] bool& dyn_start();
     // public System.Object get_Current()
-    // Offset: 0x1281734
+    // Offset: 0x17CFF4C
     ::Il2CppObject* get_Current();
     // public System.Void .ctor(System.Collections.Specialized.ListDictionary list, System.Boolean isKeys)
-    // Offset: 0x12816D8
+    // Offset: 0x17CFEF0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ListDictionary::NodeKeyValueCollection::NodeKeyValueEnumerator* New_ctor(::System::Collections::Specialized::ListDictionary* list, bool isKeys) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::ListDictionary::NodeKeyValueCollection::NodeKeyValueEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ListDictionary::NodeKeyValueCollection::NodeKeyValueEnumerator*, creationType>(list, isKeys)));
     }
     // public System.Boolean MoveNext()
-    // Offset: 0x12817B4
+    // Offset: 0x17CFFCC
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0x1281864
+    // Offset: 0x17D007C
     void Reset();
   }; // System.Collections.Specialized.ListDictionary/System.Collections.Specialized.NodeKeyValueCollection/System.Collections.Specialized.NodeKeyValueEnumerator
   #pragma pack(pop)

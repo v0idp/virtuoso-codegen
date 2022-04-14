@@ -49,15 +49,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class CheckSumAndSizeWriteStream : public ::System::IO::Stream {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.IO.Stream _baseStream
     // Size: 0x8
     // Offset: 0x28
@@ -132,96 +124,96 @@ namespace System::IO::Compression {
     static_assert(sizeof(::System::Action_6<int64_t, int64_t, uint, ::System::IO::Stream*, ::System::IO::Compression::ZipArchiveEntry*, ::System::EventHandler*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.IO.Stream _baseStream
-    ::System::IO::Stream*& dyn__baseStream();
+    [[deprecated]] ::System::IO::Stream*& dyn__baseStream();
     // Get instance field reference: private readonly System.IO.Stream _baseBaseStream
-    ::System::IO::Stream*& dyn__baseBaseStream();
+    [[deprecated]] ::System::IO::Stream*& dyn__baseBaseStream();
     // Get instance field reference: private System.Int64 _position
-    int64_t& dyn__position();
+    [[deprecated]] int64_t& dyn__position();
     // Get instance field reference: private System.UInt32 _checksum
-    uint& dyn__checksum();
+    [[deprecated]] uint& dyn__checksum();
     // Get instance field reference: private readonly System.Boolean _leaveOpenOnClose
-    bool& dyn__leaveOpenOnClose();
+    [[deprecated]] bool& dyn__leaveOpenOnClose();
     // Get instance field reference: private System.Boolean _canWrite
-    bool& dyn__canWrite();
+    [[deprecated]] bool& dyn__canWrite();
     // Get instance field reference: private System.Boolean _isDisposed
-    bool& dyn__isDisposed();
+    [[deprecated]] bool& dyn__isDisposed();
     // Get instance field reference: private System.Boolean _everWritten
-    bool& dyn__everWritten();
+    [[deprecated]] bool& dyn__everWritten();
     // Get instance field reference: private System.Int64 _initialPosition
-    int64_t& dyn__initialPosition();
+    [[deprecated]] int64_t& dyn__initialPosition();
     // Get instance field reference: private readonly System.IO.Compression.ZipArchiveEntry _zipArchiveEntry
-    ::System::IO::Compression::ZipArchiveEntry*& dyn__zipArchiveEntry();
+    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry*& dyn__zipArchiveEntry();
     // Get instance field reference: private readonly System.EventHandler _onClose
-    ::System::EventHandler*& dyn__onClose();
+    [[deprecated]] ::System::EventHandler*& dyn__onClose();
     // Get instance field reference: private readonly System.Action`6<System.Int64,System.Int64,System.UInt32,System.IO.Stream,System.IO.Compression.ZipArchiveEntry,System.EventHandler> _saveCrcAndSizes
-    ::System::Action_6<int64_t, int64_t, uint, ::System::IO::Stream*, ::System::IO::Compression::ZipArchiveEntry*, ::System::EventHandler*>*& dyn__saveCrcAndSizes();
+    [[deprecated]] ::System::Action_6<int64_t, int64_t, uint, ::System::IO::Stream*, ::System::IO::Compression::ZipArchiveEntry*, ::System::EventHandler*>*& dyn__saveCrcAndSizes();
     // public System.Void .ctor(System.IO.Stream baseStream, System.IO.Stream baseBaseStream, System.Boolean leaveOpenOnClose, System.IO.Compression.ZipArchiveEntry entry, System.EventHandler onClose, System.Action`6<System.Int64,System.Int64,System.UInt32,System.IO.Stream,System.IO.Compression.ZipArchiveEntry,System.EventHandler> saveCrcAndSizes)
-    // Offset: 0x111A7E4
+    // Offset: 0x1692050
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CheckSumAndSizeWriteStream* New_ctor(::System::IO::Stream* baseStream, ::System::IO::Stream* baseBaseStream, bool leaveOpenOnClose, ::System::IO::Compression::ZipArchiveEntry* entry, ::System::EventHandler* onClose, ::System::Action_6<int64_t, int64_t, uint, ::System::IO::Stream*, ::System::IO::Compression::ZipArchiveEntry*, ::System::EventHandler*>* saveCrcAndSizes) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::CheckSumAndSizeWriteStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CheckSumAndSizeWriteStream*, creationType>(baseStream, baseBaseStream, leaveOpenOnClose, entry, onClose, saveCrcAndSizes)));
     }
     // private System.Void ThrowIfDisposed()
-    // Offset: 0x111A8F8
+    // Offset: 0x1692164
     void ThrowIfDisposed();
     // public override System.Int64 get_Length()
-    // Offset: 0x111A8A0
+    // Offset: 0x169210C
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Length()
     int64_t get_Length();
     // public override System.Int64 get_Position()
-    // Offset: 0x111A980
+    // Offset: 0x16921EC
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Position()
     int64_t get_Position();
     // public override System.Void set_Position(System.Int64 value)
-    // Offset: 0x111A9A4
+    // Offset: 0x1692210
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::set_Position(System.Int64 value)
     void set_Position(int64_t value);
     // public override System.Boolean get_CanRead()
-    // Offset: 0x111A9FC
+    // Offset: 0x1692268
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanRead()
     bool get_CanRead();
     // public override System.Boolean get_CanSeek()
-    // Offset: 0x111AA04
+    // Offset: 0x1692270
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanSeek()
     bool get_CanSeek();
     // public override System.Boolean get_CanWrite()
-    // Offset: 0x111AA0C
+    // Offset: 0x1692278
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanWrite()
     bool get_CanWrite();
     // public override System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
-    // Offset: 0x111AA14
+    // Offset: 0x1692280
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
     int Read(::ArrayW<uint8_t> buffer, int offset, int count);
     // public override System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
-    // Offset: 0x111AA6C
+    // Offset: 0x16922D8
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::Seek(System.Int64 offset, System.IO.SeekOrigin origin)
     int64_t Seek(int64_t offset, ::System::IO::SeekOrigin origin);
     // public override System.Void SetLength(System.Int64 value)
-    // Offset: 0x111AAC4
+    // Offset: 0x1692330
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::SetLength(System.Int64 value)
     void SetLength(int64_t value);
     // public override System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
-    // Offset: 0x111AB1C
+    // Offset: 0x1692388
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
     void Write(::ArrayW<uint8_t> buffer, int offset, int count);
     // public override System.Void Flush()
-    // Offset: 0x111ADA4
+    // Offset: 0x1692610
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Flush()
     void Flush();
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x111ADDC
+    // Offset: 0x1692648
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);

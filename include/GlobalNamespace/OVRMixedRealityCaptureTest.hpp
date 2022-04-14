@@ -84,20 +84,12 @@ namespace GlobalNamespace {
       // Set static field: static public OVRMixedRealityCaptureTest/CameraMode ThirdPerson
       static void _set_ThirdPerson(::GlobalNamespace::OVRMixedRealityCaptureTest::CameraMode value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRMixedRealityCaptureTest/CameraMode
     #pragma pack(pop)
     static check_size<sizeof(OVRMixedRealityCaptureTest::CameraMode), 0 + sizeof(int)> __GlobalNamespace_OVRMixedRealityCaptureTest_CameraModeSizeCheck;
     static_assert(sizeof(OVRMixedRealityCaptureTest::CameraMode) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean inited
     // Size: 0x1
     // Offset: 0x18
@@ -128,27 +120,27 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean inited
-    bool& dyn_inited();
+    [[deprecated]] bool& dyn_inited();
     // Get instance field reference: private OVRMixedRealityCaptureTest/CameraMode currentMode
-    ::GlobalNamespace::OVRMixedRealityCaptureTest::CameraMode& dyn_currentMode();
+    [[deprecated]] ::GlobalNamespace::OVRMixedRealityCaptureTest::CameraMode& dyn_currentMode();
     // Get instance field reference: public UnityEngine.Camera defaultExternalCamera
-    ::UnityEngine::Camera*& dyn_defaultExternalCamera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn_defaultExternalCamera();
     // Get instance field reference: private OVRPlugin/Fovf defaultFov
-    ::GlobalNamespace::OVRPlugin::Fovf& dyn_defaultFov();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Fovf& dyn_defaultFov();
     // private System.Void Start()
-    // Offset: 0xB23048
+    // Offset: 0xE237C8
     void Start();
     // private System.Void Initialize()
-    // Offset: 0xB2310C
+    // Offset: 0xE2388C
     void Initialize();
     // private System.Void UpdateDefaultExternalCamera()
-    // Offset: 0xB23378
+    // Offset: 0xE23AF8
     void UpdateDefaultExternalCamera();
     // private System.Void Update()
-    // Offset: 0xB237E4
+    // Offset: 0xE23F64
     void Update();
     // public System.Void .ctor()
-    // Offset: 0xB24028
+    // Offset: 0xE247A8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

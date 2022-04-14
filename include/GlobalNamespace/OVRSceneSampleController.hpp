@@ -47,15 +47,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRSceneSampleController : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.KeyCode quitKey
     // Size: 0x4
     // Offset: 0x18
@@ -114,41 +106,41 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.KeyCode quitKey
-    ::UnityEngine::KeyCode& dyn_quitKey();
+    [[deprecated]] ::UnityEngine::KeyCode& dyn_quitKey();
     // Get instance field reference: public UnityEngine.Texture fadeInTexture
-    ::UnityEngine::Texture*& dyn_fadeInTexture();
+    [[deprecated]] ::UnityEngine::Texture*& dyn_fadeInTexture();
     // Get instance field reference: public System.Single speedRotationIncrement
-    float& dyn_speedRotationIncrement();
+    [[deprecated]] float& dyn_speedRotationIncrement();
     // Get instance field reference: private OVRPlayerController playerController
-    ::GlobalNamespace::OVRPlayerController*& dyn_playerController();
+    [[deprecated]] ::GlobalNamespace::OVRPlayerController*& dyn_playerController();
     // Get instance field reference: private OVRCameraRig cameraController
-    ::GlobalNamespace::OVRCameraRig*& dyn_cameraController();
+    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_cameraController();
     // Get instance field reference: public System.String layerName
-    ::StringW& dyn_layerName();
+    [[deprecated]] ::StringW& dyn_layerName();
     // Get instance field reference: private System.Boolean visionMode
-    bool& dyn_visionMode();
+    [[deprecated]] bool& dyn_visionMode();
     // Get instance field reference: private OVRGridCube gridCube
-    ::GlobalNamespace::OVRGridCube*& dyn_gridCube();
+    [[deprecated]] ::GlobalNamespace::OVRGridCube*& dyn_gridCube();
     // private System.Void Awake()
-    // Offset: 0xBAFF74
+    // Offset: 0xE7B7AC
     void Awake();
     // private System.Void Start()
-    // Offset: 0xBB0154
+    // Offset: 0xE7B98C
     void Start();
     // private System.Void Update()
-    // Offset: 0xBB0248
+    // Offset: 0xE7BA80
     void Update();
     // private System.Void UpdateVisionMode()
-    // Offset: 0xBB03EC
+    // Offset: 0xE7BC24
     void UpdateVisionMode();
     // private System.Void UpdateSpeedAndRotationScaleMultiplier()
-    // Offset: 0xBB04C8
+    // Offset: 0xE7BD00
     void UpdateSpeedAndRotationScaleMultiplier();
     // private System.Void UpdateRecenterPose()
-    // Offset: 0xBB0328
+    // Offset: 0xE7BB60
     void UpdateRecenterPose();
     // public System.Void .ctor()
-    // Offset: 0xBB0598
+    // Offset: 0xE7BDD0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

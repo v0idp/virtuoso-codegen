@@ -28,15 +28,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class RejoinDialogResult : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.Boolean RejoinSelected
     // Size: 0x1
     // Offset: 0x10
@@ -49,9 +41,9 @@ namespace Oculus::Platform::Models {
       return RejoinSelected;
     }
     // Get instance field reference: public readonly System.Boolean RejoinSelected
-    bool& dyn_RejoinSelected();
+    [[deprecated]] bool& dyn_RejoinSelected();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x11465D0
+    // Offset: 0x17134CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RejoinDialogResult* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::RejoinDialogResult::.ctor");

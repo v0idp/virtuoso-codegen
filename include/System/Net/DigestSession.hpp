@@ -51,15 +51,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class DigestSession : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.DateTime lastUse
     // Size: 0x8
     // Offset: 0x10
@@ -98,59 +90,59 @@ namespace System::Net {
     // Set static field: static private System.Security.Cryptography.RandomNumberGenerator rng
     static void _set_rng(::System::Security::Cryptography::RandomNumberGenerator* value);
     // Get instance field reference: private System.DateTime lastUse
-    ::System::DateTime& dyn_lastUse();
+    [[deprecated]] ::System::DateTime& dyn_lastUse();
     // Get instance field reference: private System.Int32 _nc
-    int& dyn__nc();
+    [[deprecated]] int& dyn__nc();
     // Get instance field reference: private System.Security.Cryptography.HashAlgorithm hash
-    ::System::Security::Cryptography::HashAlgorithm*& dyn_hash();
+    [[deprecated]] ::System::Security::Cryptography::HashAlgorithm*& dyn_hash();
     // Get instance field reference: private System.Net.DigestHeaderParser parser
-    ::System::Net::DigestHeaderParser*& dyn_parser();
+    [[deprecated]] ::System::Net::DigestHeaderParser*& dyn_parser();
     // Get instance field reference: private System.String _cnonce
-    ::StringW& dyn__cnonce();
+    [[deprecated]] ::StringW& dyn__cnonce();
     // public System.String get_Algorithm()
-    // Offset: 0xE7CBC4
+    // Offset: 0xEFAD54
     ::StringW get_Algorithm();
     // public System.String get_Realm()
-    // Offset: 0xE7CBDC
+    // Offset: 0xEFAD6C
     ::StringW get_Realm();
     // public System.String get_Nonce()
-    // Offset: 0xE7BAD4
+    // Offset: 0xEF9C58
     ::StringW get_Nonce();
     // public System.String get_Opaque()
-    // Offset: 0xE7CBF4
+    // Offset: 0xEFAD84
     ::StringW get_Opaque();
     // public System.String get_QOP()
-    // Offset: 0xE7CC0C
+    // Offset: 0xEFAD9C
     ::StringW get_QOP();
     // public System.String get_CNonce()
-    // Offset: 0xE7CC24
+    // Offset: 0xEFADB4
     ::StringW get_CNonce();
     // public System.DateTime get_LastUse()
-    // Offset: 0xE7D1FC
+    // Offset: 0xEFB38C
     ::System::DateTime get_LastUse();
     // static private System.Void .cctor()
-    // Offset: 0xE7CB70
+    // Offset: 0xEFAD00
     static void _cctor();
     // public System.Boolean Parse(System.String challenge)
-    // Offset: 0xE7B9F0
+    // Offset: 0xEF9B74
     bool Parse(::StringW challenge);
     // private System.String HashToHexString(System.String toBeHashed)
-    // Offset: 0xE7CD34
+    // Offset: 0xEFAEC4
     ::StringW HashToHexString(::StringW toBeHashed);
     // private System.String HA1(System.String username, System.String password)
-    // Offset: 0xE7CE94
+    // Offset: 0xEFB024
     ::StringW HA1(::StringW username, ::StringW password);
     // private System.String HA2(System.Net.HttpWebRequest webRequest)
-    // Offset: 0xE7CFBC
+    // Offset: 0xEFB14C
     ::StringW HA2(::System::Net::HttpWebRequest* webRequest);
     // private System.String Response(System.String username, System.String password, System.Net.HttpWebRequest webRequest)
-    // Offset: 0xE7D098
+    // Offset: 0xEFB228
     ::StringW Response(::StringW username, ::StringW password, ::System::Net::HttpWebRequest* webRequest);
     // public System.Net.Authorization Authenticate(System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
-    // Offset: 0xE7BAEC
+    // Offset: 0xEF9C70
     ::System::Net::Authorization* Authenticate(::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
     // public System.Void .ctor()
-    // Offset: 0xE7B974
+    // Offset: 0xEF9AF8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -54,15 +54,7 @@ namespace GlobalNamespace {
     class LevenshteinDistance;
     // Nested type: ::GlobalNamespace::Levenshtein::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public NGramGenerator NGramHandler
     // Size: 0x8
     // Offset: 0x18
@@ -115,23 +107,23 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 minLevenshteinCost
     static void _set_minLevenshteinCost(int value);
     // Get instance field reference: public NGramGenerator NGramHandler
-    ::GlobalNamespace::NGramGenerator*& dyn_NGramHandler();
+    [[deprecated]] ::GlobalNamespace::NGramGenerator*& dyn_NGramHandler();
     // Get instance field reference: public UnityEngine.UI.Text[] ButtonLabels
-    ::ArrayW<::UnityEngine::UI::Text*>& dyn_ButtonLabels();
+    [[deprecated]] ::ArrayW<::UnityEngine::UI::Text*>& dyn_ButtonLabels();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> corpus
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_corpus();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_corpus();
     // Get instance field reference: private System.Boolean isUppercase
-    bool& dyn_isUppercase();
+    [[deprecated]] bool& dyn_isUppercase();
     // Get instance field reference: private System.Boolean isFirstLetterUpper
-    bool& dyn_isFirstLetterUpper();
+    [[deprecated]] bool& dyn_isFirstLetterUpper();
     // private System.Void Start()
-    // Offset: 0x138C774
+    // Offset: 0x1950298
     void Start();
     // public System.Void RunAutoComplete(System.String input)
-    // Offset: 0x138C848
+    // Offset: 0x195036C
     void RunAutoComplete(::StringW input);
     // public System.Void .ctor()
-    // Offset: 0x138D034
+    // Offset: 0x1950B58
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

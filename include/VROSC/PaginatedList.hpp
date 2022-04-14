@@ -59,15 +59,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PaginatedList : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <Pages>k__BackingField
     // Size: 0x4
     // Offset: 0x18
@@ -156,63 +148,63 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 <Pages>k__BackingField
-    int& dyn_$Pages$k__BackingField();
+    [[deprecated]] int& dyn_$Pages$k__BackingField();
     // Get instance field reference: private System.Int32 _itemCount
-    int& dyn__itemCount();
+    [[deprecated]] int& dyn__itemCount();
     // Get instance field reference: private UnityEngine.Transform _listItemParent
-    ::UnityEngine::Transform*& dyn__listItemParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__listItemParent();
     // Get instance field reference: private VROSC.PaginatedListItemUI _listItemPrefab
-    ::VROSC::PaginatedListItemUI*& dyn__listItemPrefab();
+    [[deprecated]] ::VROSC::PaginatedListItemUI*& dyn__listItemPrefab();
     // Get instance field reference: private System.Int32 _pageButtonCount
-    int& dyn__pageButtonCount();
+    [[deprecated]] int& dyn__pageButtonCount();
     // Get instance field reference: private UnityEngine.Transform _pageButtonsParent
-    ::UnityEngine::Transform*& dyn__pageButtonsParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__pageButtonsParent();
     // Get instance field reference: private VROSC.PaginatedListPageButton _pageButtonPrefab
-    ::VROSC::PaginatedListPageButton*& dyn__pageButtonPrefab();
+    [[deprecated]] ::VROSC::PaginatedListPageButton*& dyn__pageButtonPrefab();
     // Get instance field reference: private System.Boolean _isSetup
-    bool& dyn__isSetup();
+    [[deprecated]] bool& dyn__isSetup();
     // Get instance field reference: private VROSC.PaginatedListItemUI[] _uiItems
-    ::ArrayW<::VROSC::PaginatedListItemUI*>& dyn__uiItems();
+    [[deprecated]] ::ArrayW<::VROSC::PaginatedListItemUI*>& dyn__uiItems();
     // Get instance field reference: private VROSC.PaginatedListPageButton[] _pageButtons
-    ::ArrayW<::VROSC::PaginatedListPageButton*>& dyn__pageButtons();
+    [[deprecated]] ::ArrayW<::VROSC::PaginatedListPageButton*>& dyn__pageButtons();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PaginatedListDataHolder> _dataList
-    ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
     // Get instance field reference: private System.Int32 _currentPage
-    int& dyn__currentPage();
+    [[deprecated]] int& dyn__currentPage();
     // Get instance field reference: public System.Action`1<VROSC.PaginatedListDataHolder> OnItemSelected
-    ::System::Action_1<::VROSC::PaginatedListDataHolder*>*& dyn_OnItemSelected();
+    [[deprecated]] ::System::Action_1<::VROSC::PaginatedListDataHolder*>*& dyn_OnItemSelected();
     // public System.Int32 get_Pages()
-    // Offset: 0x8F7114
+    // Offset: 0xADB8EC
     int get_Pages();
     // private System.Void set_Pages(System.Int32 value)
-    // Offset: 0x8F710C
+    // Offset: 0xADB8E4
     void set_Pages(int value);
     // public System.Void Setup()
-    // Offset: 0x8F711C
+    // Offset: 0xADB8F4
     void Setup();
     // public System.Void UpdateData(System.Collections.Generic.List`1<VROSC.PaginatedListDataHolder> dataList, VROSC.PaginatedListDataHolder selected)
-    // Offset: 0x8F7520
+    // Offset: 0xADBCF8
     void UpdateData(::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>* dataList, ::VROSC::PaginatedListDataHolder* selected);
     // public System.Void SelectItem(VROSC.PaginatedListItemData data)
-    // Offset: 0x8F76CC
+    // Offset: 0xADBEA4
     void SelectItem(::VROSC::PaginatedListItemData* data);
     // private System.Void ItemSelected(VROSC.PaginatedListDataHolder dataHolder)
-    // Offset: 0x8F760C
+    // Offset: 0xADBDE4
     void ItemSelected(::VROSC::PaginatedListDataHolder* dataHolder);
     // private System.Void ShowPage(System.Int32 page)
-    // Offset: 0x8F75AC
+    // Offset: 0xADBD84
     void ShowPage(int page);
     // private System.Void ShowItemsOnCurrentPage()
-    // Offset: 0x8F78A8
+    // Offset: 0xADC080
     void ShowItemsOnCurrentPage();
     // private System.Void UpdatePageButtons()
-    // Offset: 0x8F79EC
+    // Offset: 0xADC1C4
     void UpdatePageButtons();
     // public System.Void UnselectAll()
-    // Offset: 0x8F7810
+    // Offset: 0xADBFE8
     void UnselectAll();
     // public System.Void .ctor()
-    // Offset: 0x8F7C88
+    // Offset: 0xADC460
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

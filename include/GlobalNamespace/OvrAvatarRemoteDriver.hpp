@@ -43,15 +43,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarRemoteDriver : public ::GlobalNamespace::OvrAvatarDriver {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.Queue`1<OvrAvatarPacket> packetQueue
     // Size: 0x8
     // Offset: 0xB0
@@ -104,28 +96,28 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 MaxPacketQueue
     static void _set_MaxPacketQueue(int value);
     // Get instance field reference: private System.Collections.Generic.Queue`1<OvrAvatarPacket> packetQueue
-    ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarPacket*>*& dyn_packetQueue();
+    [[deprecated]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarPacket*>*& dyn_packetQueue();
     // Get instance field reference: private System.IntPtr CurrentSDKPacket
-    ::System::IntPtr& dyn_CurrentSDKPacket();
+    [[deprecated]] ::System::IntPtr& dyn_CurrentSDKPacket();
     // Get instance field reference: private System.Single CurrentPacketTime
-    float& dyn_CurrentPacketTime();
+    [[deprecated]] float& dyn_CurrentPacketTime();
     // Get instance field reference: private System.Int32 CurrentSequence
-    int& dyn_CurrentSequence();
+    [[deprecated]] int& dyn_CurrentSequence();
     // Get instance field reference: private System.Boolean isStreaming
-    bool& dyn_isStreaming();
+    [[deprecated]] bool& dyn_isStreaming();
     // Get instance field reference: private OvrAvatarPacket currentPacket
-    ::GlobalNamespace::OvrAvatarPacket*& dyn_currentPacket();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarPacket*& dyn_currentPacket();
     // public System.Void QueuePacket(System.Int32 sequence, OvrAvatarPacket packet)
-    // Offset: 0x8EFB90
+    // Offset: 0xF90358
     void QueuePacket(int sequence, ::GlobalNamespace::OvrAvatarPacket* packet);
     // private System.Void UpdateFromSDKPacket(System.IntPtr sdkAvatar)
-    // Offset: 0x8EFC34
+    // Offset: 0xF903FC
     void UpdateFromSDKPacket(::System::IntPtr sdkAvatar);
     // private System.Void UpdateFromUnityPacket(System.IntPtr sdkAvatar)
-    // Offset: 0x8EFDD8
+    // Offset: 0xF905A0
     void UpdateFromUnityPacket(::System::IntPtr sdkAvatar);
     // public System.Void .ctor()
-    // Offset: 0x8EFFB0
+    // Offset: 0xF90750
     // Implemented from: OvrAvatarDriver
     // Base method: System.Void OvrAvatarDriver::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -139,7 +131,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarRemoteDriver*, creationType>()));
     }
     // public override System.Void UpdateTransforms(System.IntPtr sdkAvatar)
-    // Offset: 0x8EFC18
+    // Offset: 0xF903E0
     // Implemented from: OvrAvatarDriver
     // Base method: System.Void OvrAvatarDriver::UpdateTransforms(System.IntPtr sdkAvatar)
     void UpdateTransforms(::System::IntPtr sdkAvatar);

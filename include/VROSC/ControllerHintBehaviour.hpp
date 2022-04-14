@@ -51,15 +51,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ControllerHintBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNoteController _noteboardController
     // Size: 0x8
     // Offset: 0x10
@@ -84,21 +76,21 @@ namespace VROSC {
     ::VROSC::HighlightControllerComponents::Component component;
     // Field size check
     static_assert(sizeof(::VROSC::HighlightControllerComponents::Component) == 0x4);
-    // [RangeAttribute] Offset: 0x673780
+    // [RangeAttribute] Offset: 0x789AF4
     // public System.Single Visible
     // Size: 0x4
     // Offset: 0x2C
     float Visible;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [ColorUsageAttribute] Offset: 0x673798
+    // [ColorUsageAttribute] Offset: 0x789B0C
     // public UnityEngine.Color FromColor
     // Size: 0x10
     // Offset: 0x30
     ::UnityEngine::Color FromColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x6737B0
+    // [ColorUsageAttribute] Offset: 0x789B24
     // public UnityEngine.Color ToColor
     // Size: 0x10
     // Offset: 0x40
@@ -125,30 +117,30 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteboardController
-    ::VROSC::NoteBoardNoteController*& dyn__noteboardController();
+    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteboardController();
     // Get instance field reference: private VROSC.HighlightControllerComponents _highlight
-    ::VROSC::HighlightControllerComponents*& dyn__highlight();
+    [[deprecated]] ::VROSC::HighlightControllerComponents*& dyn__highlight();
     // Get instance field reference: private VROSC.TouchableObjectsController _touchables
-    ::VROSC::TouchableObjectsController*& dyn__touchables();
+    [[deprecated]] ::VROSC::TouchableObjectsController*& dyn__touchables();
     // Get instance field reference: public VROSC.HighlightControllerComponents/VROSC.Component component
-    ::VROSC::HighlightControllerComponents::Component& dyn_component();
+    [[deprecated]] ::VROSC::HighlightControllerComponents::Component& dyn_component();
     // Get instance field reference: public System.Single Visible
-    float& dyn_Visible();
+    [[deprecated]] float& dyn_Visible();
     // Get instance field reference: public UnityEngine.Color FromColor
-    ::UnityEngine::Color& dyn_FromColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_FromColor();
     // Get instance field reference: public UnityEngine.Color ToColor
-    ::UnityEngine::Color& dyn_ToColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_ToColor();
     // Get instance field reference: public VROSC.NoteBoard/VROSC.PlayAxis Axis
-    ::VROSC::NoteBoard::PlayAxis& dyn_Axis();
+    [[deprecated]] ::VROSC::NoteBoard::PlayAxis& dyn_Axis();
     // Get instance field reference: public System.Boolean UpdateAllTouchables
-    bool& dyn_UpdateAllTouchables();
+    [[deprecated]] bool& dyn_UpdateAllTouchables();
     // Get instance field reference: public System.Boolean OnlyHovering
-    bool& dyn_OnlyHovering();
+    [[deprecated]] bool& dyn_OnlyHovering();
     // public System.Void Setup(VROSC.HighlightControllerComponents highlight, VROSC.TouchableObjectsController touchables)
-    // Offset: 0x1338F98
+    // Offset: 0x94E268
     void Setup(::VROSC::HighlightControllerComponents* highlight, ::VROSC::TouchableObjectsController* touchables);
     // public System.Void .ctor()
-    // Offset: 0x13390B0
+    // Offset: 0x94E380
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -158,7 +150,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ControllerHintBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x1338FB8
+    // Offset: 0x94E288
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

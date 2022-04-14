@@ -49,15 +49,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::LoopPlayerAutoMover::$MovePlayerFlow$d__7
     class $MovePlayerFlow$d__7;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _moveDuration
     // Size: 0x4
     // Offset: 0x18
@@ -96,29 +88,29 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _moveDuration
-    float& dyn__moveDuration();
+    [[deprecated]] float& dyn__moveDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve _moveCurve
-    ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
     // Get instance field reference: private System.Single _moveOutDistance
-    float& dyn__moveOutDistance();
+    [[deprecated]] float& dyn__moveOutDistance();
     // Get instance field reference: private UnityEngine.AnimationCurve _zCurve
-    ::UnityEngine::AnimationCurve*& dyn__zCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__zCurve();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // public System.Void Setup(VROSC.LoopPlayer loopPlayer)
-    // Offset: 0x90441C
+    // Offset: 0x19BACB0
     void Setup(::VROSC::LoopPlayer* loopPlayer);
     // public System.Void MoveLoopPlayer(VROSC.LoopStationGroup from, VROSC.LoopStationGroup to, System.Single zmultiplier)
-    // Offset: 0x904424
+    // Offset: 0x19BACB8
     void MoveLoopPlayer(::VROSC::LoopStationGroup* from, ::VROSC::LoopStationGroup* to, float zmultiplier);
     // private System.Collections.IEnumerator MovePlayerFlow(VROSC.LoopStationGroup from, VROSC.LoopStationGroup to, System.Single zmultiplier)
-    // Offset: 0x904814
+    // Offset: 0x19BAEC8
     ::System::Collections::IEnumerator* MovePlayerFlow(::VROSC::LoopStationGroup* from, ::VROSC::LoopStationGroup* to, float zmultiplier);
     // private System.Void SetObjectsInteractable(VROSC.LoopStationGroup from, VROSC.LoopStationGroup to, System.Boolean interactable)
-    // Offset: 0x904758
+    // Offset: 0x19BAE04
     void SetObjectsInteractable(::VROSC::LoopStationGroup* from, ::VROSC::LoopStationGroup* to, bool interactable);
     // public System.Void .ctor()
-    // Offset: 0x904A30
+    // Offset: 0x19BAF58
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

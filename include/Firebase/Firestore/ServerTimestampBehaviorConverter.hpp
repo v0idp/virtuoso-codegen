@@ -33,7 +33,7 @@ namespace Firebase::Firestore {
   class ServerTimestampBehaviorConverter : public ::Il2CppObject {
     public:
     // static public Firebase.Firestore.DocumentSnapshotProxy/Firebase.Firestore.ServerTimestampBehavior ConvertToProxy(Firebase.Firestore.ServerTimestampBehavior stb)
-    // Offset: 0xC3F4DC
+    // Offset: 0xD63AD4
     static ::Firebase::Firestore::DocumentSnapshotProxy::ServerTimestampBehavior ConvertToProxy(::Firebase::Firestore::ServerTimestampBehavior stb);
   }; // Firebase.Firestore.ServerTimestampBehaviorConverter
   #pragma pack(pop)

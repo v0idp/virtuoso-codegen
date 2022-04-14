@@ -58,13 +58,13 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Double fSampleTime
-    double& dyn_fSampleTime();
+    [[deprecated]] double& dyn_fSampleTime();
     // Get instance field reference: public OVR.OpenVR.HmdVector3d_t vAccel
-    ::OVR::OpenVR::HmdVector3d_t& dyn_vAccel();
+    [[deprecated]] ::OVR::OpenVR::HmdVector3d_t& dyn_vAccel();
     // Get instance field reference: public OVR.OpenVR.HmdVector3d_t vGyro
-    ::OVR::OpenVR::HmdVector3d_t& dyn_vGyro();
+    [[deprecated]] ::OVR::OpenVR::HmdVector3d_t& dyn_vGyro();
     // Get instance field reference: public System.UInt32 unOffScaleFlags
-    uint& dyn_unOffScaleFlags();
+    [[deprecated]] uint& dyn_unOffScaleFlags();
   }; // OVR.OpenVR.ImuSample_t
   #pragma pack(pop)
   static check_size<sizeof(ImuSample_t), 56 + sizeof(uint)> __OVR_OpenVR_ImuSample_tSizeCheck;

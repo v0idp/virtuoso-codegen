@@ -32,15 +32,7 @@ namespace UnityOSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class OSCMessage : public ::UnityOSC::OSCPacket {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _typeTag
     // Size: 0x8
     // Offset: 0x30
@@ -95,31 +87,31 @@ namespace UnityOSC {
     // Set static field: static private System.Char DEFAULT
     static void _set_DEFAULT(::Il2CppChar value);
     // Get instance field reference: private System.String _typeTag
-    ::StringW& dyn__typeTag();
+    [[deprecated]] ::StringW& dyn__typeTag();
     // public System.Void .ctor(System.String address)
-    // Offset: 0xA188BC
+    // Offset: 0xC5D920
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OSCMessage* New_ctor(::StringW address) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCMessage::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OSCMessage*, creationType>(address)));
     }
     // public System.Void .ctor(System.String address, System.Object msgvalue)
-    // Offset: 0xA176E8
+    // Offset: 0xC5C74C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OSCMessage* New_ctor(::StringW address, ::Il2CppObject* msgvalue) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCMessage::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OSCMessage*, creationType>(address, msgvalue)));
     }
     // static public UnityOSC.OSCMessage Unpack(System.Byte[] data, ref System.Int32 start)
-    // Offset: 0xA18C34
+    // Offset: 0xC5DC98
     static ::UnityOSC::OSCMessage* Unpack(::ArrayW<uint8_t> data, ByRef<int> start);
     // public override System.Boolean IsBundle()
-    // Offset: 0xA18904
+    // Offset: 0xC5D968
     // Implemented from: UnityOSC.OSCPacket
     // Base method: System.Boolean OSCPacket::IsBundle()
     bool IsBundle();
     // public override System.Void Pack()
-    // Offset: 0xA1890C
+    // Offset: 0xC5D970
     // Implemented from: UnityOSC.OSCPacket
     // Base method: System.Void OSCPacket::Pack()
     void Pack();
@@ -130,7 +122,7 @@ namespace UnityOSC {
     template<class T>
     void Append(T value) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCMessage::Append");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Append", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(value)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::UnityOSC::OSCPacket*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, value);
     }

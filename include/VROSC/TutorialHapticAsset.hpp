@@ -49,15 +49,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialHapticAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.HandType _hand
     // Size: 0x4
     // Offset: 0x18
@@ -88,15 +80,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.HandType _hand
-    ::VROSC::HandType& dyn__hand();
+    [[deprecated]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private System.Single _frequency
-    float& dyn__frequency();
+    [[deprecated]] float& dyn__frequency();
     // Get instance field reference: private System.Single _amplitude
-    float& dyn__amplitude();
+    [[deprecated]] float& dyn__amplitude();
     // Get instance field reference: public VROSC.TutorialHapticBehaviour animation
-    ::VROSC::TutorialHapticBehaviour*& dyn_animation();
+    [[deprecated]] ::VROSC::TutorialHapticBehaviour*& dyn_animation();
     // public System.Void .ctor()
-    // Offset: 0x14073D8
+    // Offset: 0xA2F4B4
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -108,7 +100,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TutorialHapticAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0x14072C4
+    // Offset: 0xA2F3A0
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

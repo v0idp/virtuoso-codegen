@@ -36,7 +36,7 @@ namespace RSG::Exceptions {
   class PromiseStateException : public ::RSG::Exceptions::PromiseException {
     public:
     // public System.Void .ctor()
-    // Offset: 0x99225C
+    // Offset: 0xB29D24
     // Implemented from: RSG.Exceptions.PromiseException
     // Base method: System.Void PromiseException::.ctor()
     // Base method: System.Void Exception::.ctor()
@@ -47,7 +47,7 @@ namespace RSG::Exceptions {
       return THROW_UNLESS((::il2cpp_utils::New<PromiseStateException*, creationType>()));
     }
     // public System.Void .ctor(System.String message)
-    // Offset: 0x9903CC
+    // Offset: 0xB27E94
     // Implemented from: RSG.Exceptions.PromiseException
     // Base method: System.Void PromiseException::.ctor(System.String message)
     // Base method: System.Void Exception::.ctor(System.String message)
@@ -57,7 +57,7 @@ namespace RSG::Exceptions {
       return THROW_UNLESS((::il2cpp_utils::New<PromiseStateException*, creationType>(message)));
     }
     // public System.Void .ctor(System.String message, System.Exception inner)
-    // Offset: 0x992260
+    // Offset: 0xB29D28
     // Implemented from: RSG.Exceptions.PromiseException
     // Base method: System.Void PromiseException::.ctor(System.String message, System.Exception inner)
     // Base method: System.Void Exception::.ctor(System.String message, System.Exception inner)

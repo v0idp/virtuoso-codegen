@@ -43,15 +43,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class IOAsyncResult : public ::Il2CppObject/*, public ::System::IAsyncResult*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.AsyncCallback async_callback
     // Size: 0x8
     // Offset: 0x10
@@ -88,38 +80,38 @@ namespace System {
       return *reinterpret_cast<::System::IAsyncResult*>(this);
     }
     // Get instance field reference: private System.AsyncCallback async_callback
-    ::System::AsyncCallback*& dyn_async_callback();
+    [[deprecated]] ::System::AsyncCallback*& dyn_async_callback();
     // Get instance field reference: private System.Object async_state
-    ::Il2CppObject*& dyn_async_state();
+    [[deprecated]] ::Il2CppObject*& dyn_async_state();
     // Get instance field reference: private System.Threading.ManualResetEvent wait_handle
-    ::System::Threading::ManualResetEvent*& dyn_wait_handle();
+    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_wait_handle();
     // Get instance field reference: private System.Boolean completed_synchronously
-    bool& dyn_completed_synchronously();
+    [[deprecated]] bool& dyn_completed_synchronously();
     // Get instance field reference: private System.Boolean completed
-    bool& dyn_completed();
+    [[deprecated]] bool& dyn_completed();
     // public System.AsyncCallback get_AsyncCallback()
-    // Offset: 0xD93378
+    // Offset: 0x10F1104
     ::System::AsyncCallback* get_AsyncCallback();
     // public System.Object get_AsyncState()
-    // Offset: 0xD93380
+    // Offset: 0x10F110C
     ::Il2CppObject* get_AsyncState();
     // public System.Threading.WaitHandle get_AsyncWaitHandle()
-    // Offset: 0xD93388
+    // Offset: 0x10F1114
     ::System::Threading::WaitHandle* get_AsyncWaitHandle();
     // public System.Boolean get_CompletedSynchronously()
-    // Offset: 0xD934A0
+    // Offset: 0x10F122C
     bool get_CompletedSynchronously();
     // protected System.Void set_CompletedSynchronously(System.Boolean value)
-    // Offset: 0xD934A8
+    // Offset: 0x10F1234
     void set_CompletedSynchronously(bool value);
     // public System.Boolean get_IsCompleted()
-    // Offset: 0xD934B4
+    // Offset: 0x10F1240
     bool get_IsCompleted();
     // protected System.Void set_IsCompleted(System.Boolean value)
-    // Offset: 0xD934BC
+    // Offset: 0x10F1248
     void set_IsCompleted(bool value);
     // protected System.Void .ctor(System.AsyncCallback async_callback, System.Object async_state)
-    // Offset: 0xD93340
+    // Offset: 0x10F10CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IOAsyncResult* New_ctor(::System::AsyncCallback* async_callback, ::Il2CppObject* async_state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IOAsyncResult::.ctor");

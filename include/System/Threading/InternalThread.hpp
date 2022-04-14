@@ -36,15 +36,7 @@ namespace System::Threading {
   // [TokenAttribute] Offset: FFFFFFFF
   class InternalThread : public ::System::Runtime::ConstrainedExecution::CriticalFinalizerObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 lock_thread_id
     // Size: 0x4
     // Offset: 0x10
@@ -297,88 +289,88 @@ namespace System::Threading {
     static_assert(sizeof(::System::IntPtr) == 0x8);
     public:
     // Get instance field reference: private System.Int32 lock_thread_id
-    int& dyn_lock_thread_id();
+    [[deprecated]] int& dyn_lock_thread_id();
     // Get instance field reference: private System.IntPtr handle
-    ::System::IntPtr& dyn_handle();
+    [[deprecated]] ::System::IntPtr& dyn_handle();
     // Get instance field reference: private System.IntPtr native_handle
-    ::System::IntPtr& dyn_native_handle();
+    [[deprecated]] ::System::IntPtr& dyn_native_handle();
     // Get instance field reference: private System.IntPtr unused3
-    ::System::IntPtr& dyn_unused3();
+    [[deprecated]] ::System::IntPtr& dyn_unused3();
     // Get instance field reference: private System.IntPtr name
-    ::System::IntPtr& dyn_name();
+    [[deprecated]] ::System::IntPtr& dyn_name();
     // Get instance field reference: private System.Int32 name_len
-    int& dyn_name_len();
+    [[deprecated]] int& dyn_name_len();
     // Get instance field reference: private System.Threading.ThreadState state
-    ::System::Threading::ThreadState& dyn_state();
+    [[deprecated]] ::System::Threading::ThreadState& dyn_state();
     // Get instance field reference: private System.Object abort_exc
-    ::Il2CppObject*& dyn_abort_exc();
+    [[deprecated]] ::Il2CppObject*& dyn_abort_exc();
     // Get instance field reference: private System.Int32 abort_state_handle
-    int& dyn_abort_state_handle();
+    [[deprecated]] int& dyn_abort_state_handle();
     // Get instance field reference: System.Int64 thread_id
-    int64_t& dyn_thread_id();
+    [[deprecated]] int64_t& dyn_thread_id();
     // Get instance field reference: private System.IntPtr debugger_thread
-    ::System::IntPtr& dyn_debugger_thread();
+    [[deprecated]] ::System::IntPtr& dyn_debugger_thread();
     // Get instance field reference: private System.UIntPtr static_data
-    ::System::UIntPtr& dyn_static_data();
+    [[deprecated]] ::System::UIntPtr& dyn_static_data();
     // Get instance field reference: private System.IntPtr runtime_thread_info
-    ::System::IntPtr& dyn_runtime_thread_info();
+    [[deprecated]] ::System::IntPtr& dyn_runtime_thread_info();
     // Get instance field reference: private System.Object current_appcontext
-    ::Il2CppObject*& dyn_current_appcontext();
+    [[deprecated]] ::Il2CppObject*& dyn_current_appcontext();
     // Get instance field reference: private System.Object root_domain_thread
-    ::Il2CppObject*& dyn_root_domain_thread();
+    [[deprecated]] ::Il2CppObject*& dyn_root_domain_thread();
     // Get instance field reference: System.Byte[] _serialized_principal
-    ::ArrayW<uint8_t>& dyn__serialized_principal();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__serialized_principal();
     // Get instance field reference: System.Int32 _serialized_principal_version
-    int& dyn__serialized_principal_version();
+    [[deprecated]] int& dyn__serialized_principal_version();
     // Get instance field reference: private System.IntPtr appdomain_refs
-    ::System::IntPtr& dyn_appdomain_refs();
+    [[deprecated]] ::System::IntPtr& dyn_appdomain_refs();
     // Get instance field reference: private System.Int32 interruption_requested
-    int& dyn_interruption_requested();
+    [[deprecated]] int& dyn_interruption_requested();
     // Get instance field reference: private System.IntPtr synch_cs
-    ::System::IntPtr& dyn_synch_cs();
+    [[deprecated]] ::System::IntPtr& dyn_synch_cs();
     // Get instance field reference: System.Boolean threadpool_thread
-    bool& dyn_threadpool_thread();
+    [[deprecated]] bool& dyn_threadpool_thread();
     // Get instance field reference: private System.Boolean thread_interrupt_requested
-    bool& dyn_thread_interrupt_requested();
+    [[deprecated]] bool& dyn_thread_interrupt_requested();
     // Get instance field reference: System.Int32 stack_size
-    int& dyn_stack_size();
+    [[deprecated]] int& dyn_stack_size();
     // Get instance field reference: System.Byte apartment_state
-    uint8_t& dyn_apartment_state();
+    [[deprecated]] uint8_t& dyn_apartment_state();
     // Get instance field reference: System.Int32 critical_region_level
-    int& dyn_critical_region_level();
+    [[deprecated]] int& dyn_critical_region_level();
     // Get instance field reference: System.Int32 managed_id
-    int& dyn_managed_id();
+    [[deprecated]] int& dyn_managed_id();
     // Get instance field reference: private System.Int32 small_id
-    int& dyn_small_id();
+    [[deprecated]] int& dyn_small_id();
     // Get instance field reference: private System.IntPtr manage_callback
-    ::System::IntPtr& dyn_manage_callback();
+    [[deprecated]] ::System::IntPtr& dyn_manage_callback();
     // Get instance field reference: private System.IntPtr unused4
-    ::System::IntPtr& dyn_unused4();
+    [[deprecated]] ::System::IntPtr& dyn_unused4();
     // Get instance field reference: private System.IntPtr flags
-    ::System::IntPtr& dyn_flags();
+    [[deprecated]] ::System::IntPtr& dyn_flags();
     // Get instance field reference: private System.IntPtr thread_pinning_ref
-    ::System::IntPtr& dyn_thread_pinning_ref();
+    [[deprecated]] ::System::IntPtr& dyn_thread_pinning_ref();
     // Get instance field reference: private System.IntPtr abort_protected_block_count
-    ::System::IntPtr& dyn_abort_protected_block_count();
+    [[deprecated]] ::System::IntPtr& dyn_abort_protected_block_count();
     // Get instance field reference: private System.Int32 priority
-    int& dyn_priority();
+    [[deprecated]] int& dyn_priority();
     // Get instance field reference: private System.IntPtr owned_mutex
-    ::System::IntPtr& dyn_owned_mutex();
+    [[deprecated]] ::System::IntPtr& dyn_owned_mutex();
     // Get instance field reference: private System.IntPtr suspended_event
-    ::System::IntPtr& dyn_suspended_event();
+    [[deprecated]] ::System::IntPtr& dyn_suspended_event();
     // Get instance field reference: private System.Int32 self_suspended
-    int& dyn_self_suspended();
+    [[deprecated]] int& dyn_self_suspended();
     // Get instance field reference: private System.IntPtr unused1
-    ::System::IntPtr& dyn_unused1();
+    [[deprecated]] ::System::IntPtr& dyn_unused1();
     // Get instance field reference: private System.IntPtr unused2
-    ::System::IntPtr& dyn_unused2();
+    [[deprecated]] ::System::IntPtr& dyn_unused2();
     // Get instance field reference: private System.IntPtr last
-    ::System::IntPtr& dyn_last();
+    [[deprecated]] ::System::IntPtr& dyn_last();
     // private System.Void Thread_free_internal()
-    // Offset: 0xC51E1C
+    // Offset: 0x106E2AC
     void Thread_free_internal();
     // public System.Void .ctor()
-    // Offset: 0xC51E88
+    // Offset: 0x106E318
     // Implemented from: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
     // Base method: System.Void CriticalFinalizerObject::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -388,7 +380,7 @@ namespace System::Threading {
       return THROW_UNLESS((::il2cpp_utils::New<InternalThread*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xC51E20
+    // Offset: 0x106E2B0
     // Implemented from: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
     // Base method: System.Void CriticalFinalizerObject::Finalize()
     void Finalize();

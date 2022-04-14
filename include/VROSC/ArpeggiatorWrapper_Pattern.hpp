@@ -69,7 +69,7 @@ namespace VROSC {
     // Set static field: static public VROSC.ArpeggiatorWrapper/VROSC.Pattern Random
     static void _set_Random(::VROSC::ArpeggiatorWrapper::Pattern value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.ArpeggiatorWrapper/VROSC.Pattern
   #pragma pack(pop)
   static check_size<sizeof(ArpeggiatorWrapper::Pattern), 0 + sizeof(int)> __VROSC_ArpeggiatorWrapper_PatternSizeCheck;

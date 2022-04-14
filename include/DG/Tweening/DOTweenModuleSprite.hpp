@@ -56,16 +56,16 @@ namespace DG::Tweening {
     // Nested type: ::DG::Tweening::DOTweenModuleSprite::$$c__DisplayClass3_0
     class $$c__DisplayClass3_0;
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOColor(UnityEngine.SpriteRenderer target, UnityEngine.Color endValue, System.Single duration)
-    // Offset: 0x74D9B8
+    // Offset: 0x17DC6AC
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOColor(::UnityEngine::SpriteRenderer* target, ::UnityEngine::Color endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOFade(UnityEngine.SpriteRenderer target, System.Single endValue, System.Single duration)
-    // Offset: 0x74DB78
+    // Offset: 0x17DC874
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOFade(::UnityEngine::SpriteRenderer* target, float endValue, float duration);
     // static public DG.Tweening.Sequence DOGradientColor(UnityEngine.SpriteRenderer target, UnityEngine.Gradient gradient, System.Single duration)
-    // Offset: 0x74DD10
+    // Offset: 0x17DCA14
     static ::DG::Tweening::Sequence* DOGradientColor(::UnityEngine::SpriteRenderer* target, ::UnityEngine::Gradient* gradient, float duration);
     // static public DG.Tweening.Tweener DOBlendableColor(UnityEngine.SpriteRenderer target, UnityEngine.Color endValue, System.Single duration)
-    // Offset: 0x74DEFC
+    // Offset: 0x17DCC00
     static ::DG::Tweening::Tweener* DOBlendableColor(::UnityEngine::SpriteRenderer* target, ::UnityEngine::Color endValue, float duration);
   }; // DG.Tweening.DOTweenModuleSprite
   #pragma pack(pop)

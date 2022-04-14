@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteFieldNoteData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <NoteNumberX>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -116,96 +108,96 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<float>) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <NoteNumberX>k__BackingField
-    int& dyn_$NoteNumberX$k__BackingField();
+    [[deprecated]] int& dyn_$NoteNumberX$k__BackingField();
     // Get instance field reference: private System.Int32 <NoteNumberY>k__BackingField
-    int& dyn_$NoteNumberY$k__BackingField();
+    [[deprecated]] int& dyn_$NoteNumberY$k__BackingField();
     // Get instance field reference: private System.Int32 <NoteNumberZ>k__BackingField
-    int& dyn_$NoteNumberZ$k__BackingField();
+    [[deprecated]] int& dyn_$NoteNumberZ$k__BackingField();
     // Get instance field reference: private System.Int32 <NoteNumber3D>k__BackingField
-    int& dyn_$NoteNumber3D$k__BackingField();
+    [[deprecated]] int& dyn_$NoteNumber3D$k__BackingField();
     // Get instance field reference: private System.Boolean <IsOdd>k__BackingField
-    bool& dyn_$IsOdd$k__BackingField();
+    [[deprecated]] bool& dyn_$IsOdd$k__BackingField();
     // Get instance field reference: private System.Boolean <IsOctave>k__BackingField
-    bool& dyn_$IsOctave$k__BackingField();
+    [[deprecated]] bool& dyn_$IsOctave$k__BackingField();
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
     // Get instance field reference: private System.Boolean <IsHovering>k__BackingField
-    bool& dyn_$IsHovering$k__BackingField();
+    [[deprecated]] bool& dyn_$IsHovering$k__BackingField();
     // Get instance field reference: public System.Action`2<System.Boolean,VROSC.PlayData> OnPlay
-    ::System::Action_2<bool, ::VROSC::PlayData>*& dyn_OnPlay();
+    [[deprecated]] ::System::Action_2<bool, ::VROSC::PlayData>*& dyn_OnPlay();
     // Get instance field reference: public System.Action`2<System.Boolean,System.Boolean> OnHovering
-    ::System::Action_2<bool, bool>*& dyn_OnHovering();
+    [[deprecated]] ::System::Action_2<bool, bool>*& dyn_OnHovering();
     // Get instance field reference: private System.Single[] <MultiNote>k__BackingField
-    ::ArrayW<float>& dyn_$MultiNote$k__BackingField();
+    [[deprecated]] ::ArrayW<float>& dyn_$MultiNote$k__BackingField();
     // public System.Int32 get_NoteNumberX()
-    // Offset: 0xA154AC
+    // Offset: 0xC59B9C
     int get_NoteNumberX();
     // private System.Void set_NoteNumberX(System.Int32 value)
-    // Offset: 0xA154B4
+    // Offset: 0xC59BA4
     void set_NoteNumberX(int value);
     // public System.Int32 get_NoteNumberY()
-    // Offset: 0xA154BC
+    // Offset: 0xC59BAC
     int get_NoteNumberY();
     // private System.Void set_NoteNumberY(System.Int32 value)
-    // Offset: 0xA154C4
+    // Offset: 0xC59BB4
     void set_NoteNumberY(int value);
     // public System.Int32 get_NoteNumberZ()
-    // Offset: 0xA154CC
+    // Offset: 0xC59BBC
     int get_NoteNumberZ();
     // private System.Void set_NoteNumberZ(System.Int32 value)
-    // Offset: 0xA154D4
+    // Offset: 0xC59BC4
     void set_NoteNumberZ(int value);
     // public System.Int32 get_NoteNumber3D()
-    // Offset: 0xA154DC
+    // Offset: 0xC59BCC
     int get_NoteNumber3D();
     // private System.Void set_NoteNumber3D(System.Int32 value)
-    // Offset: 0xA154E4
+    // Offset: 0xC59BD4
     void set_NoteNumber3D(int value);
     // public System.Boolean get_IsOdd()
-    // Offset: 0xA154EC
+    // Offset: 0xC59BDC
     bool get_IsOdd();
     // private System.Void set_IsOdd(System.Boolean value)
-    // Offset: 0xA154F4
+    // Offset: 0xC59BE4
     void set_IsOdd(bool value);
     // public System.Boolean get_IsOctave()
-    // Offset: 0xA15500
+    // Offset: 0xC59BF0
     bool get_IsOctave();
     // private System.Void set_IsOctave(System.Boolean value)
-    // Offset: 0xA15508
+    // Offset: 0xC59BF8
     void set_IsOctave(bool value);
     // public System.Boolean get_IsPlaying()
-    // Offset: 0xA15514
+    // Offset: 0xC59C04
     bool get_IsPlaying();
     // private System.Void set_IsPlaying(System.Boolean value)
-    // Offset: 0xA1551C
+    // Offset: 0xC59C0C
     void set_IsPlaying(bool value);
     // public System.Boolean get_IsHovering()
-    // Offset: 0xA15528
+    // Offset: 0xC59C18
     bool get_IsHovering();
     // private System.Void set_IsHovering(System.Boolean value)
-    // Offset: 0xA15530
+    // Offset: 0xC59C20
     void set_IsHovering(bool value);
     // public System.Single[] get_MultiNote()
-    // Offset: 0xA1553C
+    // Offset: 0xC59C2C
     ::ArrayW<float> get_MultiNote();
     // private System.Void set_MultiNote(System.Single[] value)
-    // Offset: 0xA15544
+    // Offset: 0xC59C34
     void set_MultiNote(::ArrayW<float> value);
     // public System.Void .ctor(System.Int32 x, System.Int32 y, System.Int32 z, System.Int32 noteNumber3D, System.Boolean isOdd, System.Boolean isOctave)
-    // Offset: 0xA15398
+    // Offset: 0xC58F50
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteFieldNoteData* New_ctor(int x, int y, int z, int noteNumber3D, bool isOdd, bool isOctave) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldNoteData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteFieldNoteData*, creationType>(x, y, z, noteNumber3D, isOdd, isOctave)));
     }
     // public System.Void SetHovering(System.Boolean isHovering)
-    // Offset: 0xA12EEC
+    // Offset: 0xC59C3C
     void SetHovering(bool isHovering);
     // public System.Void SetPlaying(System.Boolean isPlaying, VROSC.PlayData playData)
-    // Offset: 0xA140B8
+    // Offset: 0xC57508
     void SetPlaying(bool isPlaying, ::VROSC::PlayData playData);
     // public System.Void SetMultiNote(System.Int32 index, System.Single amount)
-    // Offset: 0xA14164
+    // Offset: 0xC575B4
     void SetMultiNote(int index, float amount);
   }; // VROSC.NoteFieldNoteData
   #pragma pack(pop)

@@ -28,15 +28,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class Request : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Message/Oculus.Platform.Callback callback_
     // Size: 0x8
     // Offset: 0x10
@@ -51,30 +43,30 @@ namespace Oculus::Platform {
     static_assert(sizeof(uint64_t) == 0x8);
     public:
     // Get instance field reference: private Oculus.Platform.Message/Oculus.Platform.Callback callback_
-    ::Oculus::Platform::Message::Callback*& dyn_callback_();
+    [[deprecated]] ::Oculus::Platform::Message::Callback*& dyn_callback_();
     // Get instance field reference: private System.UInt64 <RequestID>k__BackingField
-    uint64_t& dyn_$RequestID$k__BackingField();
+    [[deprecated]] uint64_t& dyn_$RequestID$k__BackingField();
     // public System.UInt64 get_RequestID()
-    // Offset: 0x11466C4
+    // Offset: 0x17135C0
     uint64_t get_RequestID();
     // public System.Void set_RequestID(System.UInt64 value)
-    // Offset: 0x11466CC
+    // Offset: 0x17135C8
     void set_RequestID(uint64_t value);
     // public System.Void .ctor(System.UInt64 requestID)
-    // Offset: 0x1146698
+    // Offset: 0x1713594
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Request* New_ctor(uint64_t requestID) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Request::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Request*, creationType>(requestID)));
     }
     // public Oculus.Platform.Request OnComplete(Oculus.Platform.Message/Oculus.Platform.Callback callback)
-    // Offset: 0x11466D4
+    // Offset: 0x17135D0
     ::Oculus::Platform::Request* OnComplete(::Oculus::Platform::Message::Callback* callback);
     // public System.Void HandleMessage(Oculus.Platform.Message msg)
-    // Offset: 0x1146750
+    // Offset: 0x171364C
     void HandleMessage(::Oculus::Platform::Message* msg);
     // static public System.Void RunCallbacks(System.UInt32 limit)
-    // Offset: 0x1146B24
+    // Offset: 0x1713A20
     static void RunCallbacks(uint limit);
   }; // Oculus.Platform.Request
   #pragma pack(pop)

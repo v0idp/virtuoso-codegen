@@ -29,15 +29,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class AbuseReportRecording : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String RecordingUuid
     // Size: 0x8
     // Offset: 0x10
@@ -50,9 +42,9 @@ namespace Oculus::Platform::Models {
       return RecordingUuid;
     }
     // Get instance field reference: public readonly System.String RecordingUuid
-    ::StringW& dyn_RecordingUuid();
+    [[deprecated]] ::StringW& dyn_RecordingUuid();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7AEFA4
+    // Offset: 0x8F5384
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AbuseReportRecording* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::AbuseReportRecording::.ctor");

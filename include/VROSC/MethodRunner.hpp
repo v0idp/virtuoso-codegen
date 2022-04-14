@@ -37,15 +37,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::MethodRunner::RunMethodEvent
     class RunMethodEvent;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.MethodRunner/VROSC.RunMethodEvent _targetMethod
     // Size: 0x8
     // Offset: 0x40
@@ -54,9 +46,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::MethodRunner::RunMethodEvent*) == 0x8);
     public:
     // Get instance field reference: private VROSC.MethodRunner/VROSC.RunMethodEvent _targetMethod
-    ::VROSC::MethodRunner::RunMethodEvent*& dyn__targetMethod();
+    [[deprecated]] ::VROSC::MethodRunner::RunMethodEvent*& dyn__targetMethod();
     // public System.Void .ctor()
-    // Offset: 0x8AE688
+    // Offset: 0xAC1D90
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -71,7 +63,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<MethodRunner*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x8AE624
+    // Offset: 0xAC1D2C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);

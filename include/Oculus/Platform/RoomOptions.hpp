@@ -38,15 +38,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class RoomOptions : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IntPtr Handle
     // Size: 0x8
     // Offset: 0x10
@@ -59,36 +51,36 @@ namespace Oculus::Platform {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr Handle
-    ::System::IntPtr& dyn_Handle();
+    [[deprecated]] ::System::IntPtr& dyn_Handle();
     // public System.Void SetDataStore(System.String key, System.String value)
-    // Offset: 0x114C5E8
+    // Offset: 0x17194E4
     void SetDataStore(::StringW key, ::StringW value);
     // public System.Void ClearDataStore()
-    // Offset: 0x114C668
+    // Offset: 0x1719564
     void ClearDataStore();
     // public System.Void SetExcludeRecentlyMet(System.Boolean value)
-    // Offset: 0x114C6D0
+    // Offset: 0x17195CC
     void SetExcludeRecentlyMet(bool value);
     // public System.Void SetMaxUserResults(System.UInt32 value)
-    // Offset: 0x114C748
+    // Offset: 0x1719644
     void SetMaxUserResults(uint value);
     // public System.Void SetOrdering(Oculus.Platform.UserOrdering value)
-    // Offset: 0x114C7C0
+    // Offset: 0x17196BC
     void SetOrdering(::Oculus::Platform::UserOrdering value);
     // public System.Void SetRecentlyMetTimeWindow(Oculus.Platform.TimeWindow value)
-    // Offset: 0x114C838
+    // Offset: 0x1719734
     void SetRecentlyMetTimeWindow(::Oculus::Platform::TimeWindow value);
     // public System.Void SetRoomId(System.UInt64 value)
-    // Offset: 0x114C8B0
+    // Offset: 0x17197AC
     void SetRoomId(uint64_t value);
     // public System.Void SetTurnOffUpdates(System.Boolean value)
-    // Offset: 0x114C928
+    // Offset: 0x1719824
     void SetTurnOffUpdates(bool value);
     // static public System.IntPtr op_Explicit(Oculus.Platform.RoomOptions options)
-    // Offset: 0x114C9A0
+    // Offset: 0x171989C
     // ABORTED: conflicts with another method.  explicit operator ::System::IntPtr();
     // public System.Void .ctor()
-    // Offset: 0x114C574
+    // Offset: 0x1719470
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -97,7 +89,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<RoomOptions*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x114C9EC
+    // Offset: 0x17198E8
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

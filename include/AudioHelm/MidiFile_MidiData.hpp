@@ -36,15 +36,7 @@ namespace AudioHelm {
   // [TokenAttribute] Offset: FFFFFFFF
   class MidiFile::MidiData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 length
     // Size: 0x4
     // Offset: 0x10
@@ -61,11 +53,11 @@ namespace AudioHelm {
     static_assert(sizeof(::System::Collections::Generic::List_1<::AudioHelm::Note*>*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 length
-    int& dyn_length();
+    [[deprecated]] int& dyn_length();
     // Get instance field reference: public System.Collections.Generic.List`1<AudioHelm.Note> notes
-    ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_notes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_notes();
     // public System.Void .ctor()
-    // Offset: 0x13DB35C
+    // Offset: 0x1963078
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

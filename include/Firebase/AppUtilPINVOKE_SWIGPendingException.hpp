@@ -35,13 +35,13 @@ namespace Firebase {
     // Set static field: static private System.Int32 numExceptionsPending
     static void _set_numExceptionsPending(int value);
     // static public System.Boolean get_Pending()
-    // Offset: 0x1294388
+    // Offset: 0x1882EC0
     static bool get_Pending();
     // static public System.Void Set(System.Exception e)
-    // Offset: 0x129D9AC
+    // Offset: 0x188B894
     static void Set(::System::Exception* e);
     // static public System.Exception Retrieve()
-    // Offset: 0x12943F4
+    // Offset: 0x1882F2C
     static ::System::Exception* Retrieve();
   }; // Firebase.AppUtilPINVOKE/Firebase.SWIGPendingException
   #pragma pack(pop)

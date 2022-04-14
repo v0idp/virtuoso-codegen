@@ -38,15 +38,7 @@ namespace AudioHelm {
   // [TokenAttribute] Offset: FFFFFFFF
   class Keyzone : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.AudioClip audioClip
     // Size: 0x8
     // Offset: 0x10
@@ -99,29 +91,29 @@ namespace AudioHelm {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.AudioClip audioClip
-    ::UnityEngine::AudioClip*& dyn_audioClip();
+    [[deprecated]] ::UnityEngine::AudioClip*& dyn_audioClip();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup mixer
-    ::UnityEngine::Audio::AudioMixerGroup*& dyn_mixer();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_mixer();
     // Get instance field reference: public System.Int32 rootKey
-    int& dyn_rootKey();
+    [[deprecated]] int& dyn_rootKey();
     // Get instance field reference: public System.Int32 minKey
-    int& dyn_minKey();
+    [[deprecated]] int& dyn_minKey();
     // Get instance field reference: public System.Int32 maxKey
-    int& dyn_maxKey();
+    [[deprecated]] int& dyn_maxKey();
     // Get instance field reference: public System.Single minVelocity
-    float& dyn_minVelocity();
+    [[deprecated]] float& dyn_minVelocity();
     // Get instance field reference: public System.Single maxVelocity
-    float& dyn_maxVelocity();
+    [[deprecated]] float& dyn_maxVelocity();
     // Get instance field reference: public System.Double lastScheduled
-    double& dyn_lastScheduled();
+    [[deprecated]] double& dyn_lastScheduled();
     // public System.Boolean ValidForNote(System.Int32 note)
-    // Offset: 0x1389108
+    // Offset: 0x194C9D4
     bool ValidForNote(int note);
     // public System.Boolean ValidForNote(System.Int32 note, System.Single velocity)
-    // Offset: 0x13891AC
+    // Offset: 0x194CA78
     bool ValidForNote(int note, float velocity);
     // public System.Void .ctor()
-    // Offset: 0x13891FC
+    // Offset: 0x194CAC8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

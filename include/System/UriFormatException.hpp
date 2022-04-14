@@ -37,10 +37,10 @@ namespace System {
   class UriFormatException : public ::System::FormatException {
     public:
     // private System.Void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xAB2850
+    // Offset: 0xC3D760
     void System_Runtime_Serialization_ISerializable_GetObjectData(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext);
     // public System.Void .ctor()
-    // Offset: 0xAB2840
+    // Offset: 0xC3D750
     // Implemented from: System.FormatException
     // Base method: System.Void FormatException::.ctor()
     // Base method: System.Void SystemException::.ctor()
@@ -52,7 +52,7 @@ namespace System {
       return THROW_UNLESS((::il2cpp_utils::New<UriFormatException*, creationType>()));
     }
     // public System.Void .ctor(System.String textString)
-    // Offset: 0xAB272C
+    // Offset: 0xC3D63C
     // Implemented from: System.FormatException
     // Base method: System.Void FormatException::.ctor(System.String textString)
     // Base method: System.Void SystemException::.ctor(System.String textString)
@@ -63,7 +63,7 @@ namespace System {
       return THROW_UNLESS((::il2cpp_utils::New<UriFormatException*, creationType>(textString)));
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xAB2848
+    // Offset: 0xC3D758
     // Implemented from: System.FormatException
     // Base method: System.Void FormatException::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)

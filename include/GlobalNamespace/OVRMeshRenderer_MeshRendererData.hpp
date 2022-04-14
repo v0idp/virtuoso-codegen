@@ -47,28 +47,28 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Boolean <IsDataValid>k__BackingField
-    bool& dyn_$IsDataValid$k__BackingField();
+    [[deprecated]] bool& dyn_$IsDataValid$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataHighConfidence>k__BackingField
-    bool& dyn_$IsDataHighConfidence$k__BackingField();
+    [[deprecated]] bool& dyn_$IsDataHighConfidence$k__BackingField();
     // Get instance field reference: private System.Boolean <ShouldUseSystemGestureMaterial>k__BackingField
-    bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
+    [[deprecated]] bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
     // public System.Boolean get_IsDataValid()
-    // Offset: 0x73C5F8
+    // Offset: 0x852CFC
     bool get_IsDataValid();
     // public System.Void set_IsDataValid(System.Boolean value)
-    // Offset: 0x73C600
+    // Offset: 0x852D04
     void set_IsDataValid(bool value);
     // public System.Boolean get_IsDataHighConfidence()
-    // Offset: 0x73C60C
+    // Offset: 0x852D10
     bool get_IsDataHighConfidence();
     // public System.Void set_IsDataHighConfidence(System.Boolean value)
-    // Offset: 0x73C614
+    // Offset: 0x852D18
     void set_IsDataHighConfidence(bool value);
     // public System.Boolean get_ShouldUseSystemGestureMaterial()
-    // Offset: 0x73C620
+    // Offset: 0x852D24
     bool get_ShouldUseSystemGestureMaterial();
     // public System.Void set_ShouldUseSystemGestureMaterial(System.Boolean value)
-    // Offset: 0x73C628
+    // Offset: 0x852D2C
     void set_ShouldUseSystemGestureMaterial(bool value);
   }; // OVRMeshRenderer/MeshRendererData
   #pragma pack(pop)

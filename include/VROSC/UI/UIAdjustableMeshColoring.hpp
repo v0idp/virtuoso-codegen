@@ -44,15 +44,7 @@ namespace VROSC::UI {
   // [ExecuteAlways] Offset: FFFFFFFF
   class UIAdjustableMeshColoring : public ::VROSC::UI::UIInteractableColoring {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AdjustableMesh _adjustableMesh
     // Size: 0x8
     // Offset: 0x48
@@ -73,25 +65,25 @@ namespace VROSC::UI {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private VROSC.UI.UIMaterialSettings _transparencySwitch
-    ::VROSC::UI::UIMaterialSettings*& dyn__transparencySwitch();
+    [[deprecated]] ::VROSC::UI::UIMaterialSettings*& dyn__transparencySwitch();
     // Get instance field reference: protected System.Boolean _hideWhenNotHovering
-    bool& dyn__hideWhenNotHovering();
+    [[deprecated]] bool& dyn__hideWhenNotHovering();
     // private System.Void Awake()
-    // Offset: 0x140AB34
+    // Offset: 0xA33058
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x140AC24
+    // Offset: 0xA33148
     void OnDestroy();
     // public System.Void GetValues()
-    // Offset: 0x140AF68
+    // Offset: 0xA3349C
     void GetValues();
     // private System.Void Set()
-    // Offset: 0x140B060
+    // Offset: 0xA33598
     void Set();
     // public System.Void .ctor()
-    // Offset: 0x140B11C
+    // Offset: 0xA33654
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -105,12 +97,12 @@ namespace VROSC::UI {
       return THROW_UNLESS((::il2cpp_utils::New<UIAdjustableMeshColoring*, creationType>()));
     }
     // public override System.Void UpdateColor()
-    // Offset: 0x140AD14
+    // Offset: 0xA33238
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::UpdateColor()
     void UpdateColor();
     // public override System.Void ApplyColor(UnityEngine.Color color)
-    // Offset: 0x140AE34
+    // Offset: 0xA3335C
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::ApplyColor(UnityEngine.Color color)
     void ApplyColor(::UnityEngine::Color color);

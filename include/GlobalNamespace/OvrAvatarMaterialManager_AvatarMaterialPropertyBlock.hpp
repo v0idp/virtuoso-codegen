@@ -57,13 +57,13 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector4[] Colors
-    ::ArrayW<::UnityEngine::Vector4>& dyn_Colors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn_Colors();
     // Get instance field reference: public System.Single[] DiffuseIntensities
-    ::ArrayW<float>& dyn_DiffuseIntensities();
+    [[deprecated]] ::ArrayW<float>& dyn_DiffuseIntensities();
     // Get instance field reference: public System.Single[] RimIntensities
-    ::ArrayW<float>& dyn_RimIntensities();
+    [[deprecated]] ::ArrayW<float>& dyn_RimIntensities();
     // Get instance field reference: public System.Single[] ReflectionIntensities
-    ::ArrayW<float>& dyn_ReflectionIntensities();
+    [[deprecated]] ::ArrayW<float>& dyn_ReflectionIntensities();
   }; // OvrAvatarMaterialManager/AvatarMaterialPropertyBlock
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatarMaterialManager::AvatarMaterialPropertyBlock), 24 + sizeof(::ArrayW<float>)> __GlobalNamespace_OvrAvatarMaterialManager_AvatarMaterialPropertyBlockSizeCheck;

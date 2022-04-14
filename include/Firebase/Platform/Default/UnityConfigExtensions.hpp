@@ -39,10 +39,10 @@ namespace Firebase::Platform::Default {
     // Set static field: static private Firebase.Platform.Default.UnityConfigExtensions _instance
     static void _set__instance(::Firebase::Platform::Default::UnityConfigExtensions* value);
     // static public Firebase.Platform.IAppConfigExtensions get_DefaultInstance()
-    // Offset: 0x12CB8E0
+    // Offset: 0x18CAC70
     static ::Firebase::Platform::IAppConfigExtensions* get_DefaultInstance();
     // public System.Void .ctor()
-    // Offset: 0x12CB87C
+    // Offset: 0x18CAC0C
     // Implemented from: Firebase.Platform.Default.AppConfigExtensions
     // Base method: System.Void AppConfigExtensions::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -52,7 +52,7 @@ namespace Firebase::Platform::Default {
       return THROW_UNLESS((::il2cpp_utils::New<UnityConfigExtensions*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12CB944
+    // Offset: 0x18CACD4
     // Implemented from: Firebase.Platform.Default.AppConfigExtensions
     // Base method: System.Void AppConfigExtensions::.cctor()
     static void _cctor();

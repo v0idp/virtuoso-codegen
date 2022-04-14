@@ -61,15 +61,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIInputHandHovering : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 <GrabbableTouchPosition>k__BackingField
     // Size: 0xC
     // Offset: 0x10
@@ -182,101 +174,101 @@ namespace VROSC::UI {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Vector3 <GrabbableTouchPosition>k__BackingField
-    ::UnityEngine::Vector3& dyn_$GrabbableTouchPosition$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$GrabbableTouchPosition$k__BackingField();
     // Get instance field reference: private System.Boolean <GrabbablePointedAt>k__BackingField
-    bool& dyn_$GrabbablePointedAt$k__BackingField();
+    [[deprecated]] bool& dyn_$GrabbablePointedAt$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <ClickableTouchPosition>k__BackingField
-    ::UnityEngine::Vector3& dyn_$ClickableTouchPosition$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$ClickableTouchPosition$k__BackingField();
     // Get instance field reference: private System.Boolean <ClickablePointedAt>k__BackingField
-    bool& dyn_$ClickablePointedAt$k__BackingField();
+    [[deprecated]] bool& dyn_$ClickablePointedAt$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform _interactionPoint
-    ::UnityEngine::Transform*& dyn__interactionPoint();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__interactionPoint();
     // Get instance field reference: private UnityEngine.Transform _rayPoint
-    ::UnityEngine::Transform*& dyn__rayPoint();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__rayPoint();
     // Get instance field reference: private VROSC.Clickable <CurrentClickable>k__BackingField
-    ::VROSC::Clickable*& dyn_$CurrentClickable$k__BackingField();
+    [[deprecated]] ::VROSC::Clickable*& dyn_$CurrentClickable$k__BackingField();
     // Get instance field reference: private VROSC.Grabable <CurrentGrabbable>k__BackingField
-    ::VROSC::Grabable*& dyn_$CurrentGrabbable$k__BackingField();
+    [[deprecated]] ::VROSC::Grabable*& dyn_$CurrentGrabbable$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <RayEnd>k__BackingField
-    ::UnityEngine::Vector3& dyn_$RayEnd$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$RayEnd$k__BackingField();
     // Get instance field reference: private System.Boolean <IsHoveringSomething>k__BackingField
-    bool& dyn_$IsHoveringSomething$k__BackingField();
+    [[deprecated]] bool& dyn_$IsHoveringSomething$k__BackingField();
     // Get instance field reference: private System.Boolean _interactionDisabledByMallets
-    bool& dyn__interactionDisabledByMallets();
+    [[deprecated]] bool& dyn__interactionDisabledByMallets();
     // Get instance field reference: private VROSC.InputDevice _device
-    ::VROSC::InputDevice*& dyn__device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private VROSC.InputSettings _inputSettings
-    ::VROSC::InputSettings*& dyn__inputSettings();
+    [[deprecated]] ::VROSC::InputSettings*& dyn__inputSettings();
     // Get instance field reference: private UnityEngine.RaycastHit _hit
-    ::UnityEngine::RaycastHit& dyn__hit();
+    [[deprecated]] ::UnityEngine::RaycastHit& dyn__hit();
     // Get instance field reference: private UnityEngine.Collider[] _hoverColliderBuffer
-    ::ArrayW<::UnityEngine::Collider*>& dyn__hoverColliderBuffer();
+    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__hoverColliderBuffer();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _currentRequestedTooltips
-    ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__currentRequestedTooltips();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__currentRequestedTooltips();
     // Get instance field reference: private System.Boolean _ignoreGrabTooltips
-    bool& dyn__ignoreGrabTooltips();
+    [[deprecated]] bool& dyn__ignoreGrabTooltips();
     // public UnityEngine.Vector3 get_GrabbableTouchPosition()
-    // Offset: 0x139DDC4
+    // Offset: 0x19116F0
     ::UnityEngine::Vector3 get_GrabbableTouchPosition();
     // private System.Void set_GrabbableTouchPosition(UnityEngine.Vector3 value)
-    // Offset: 0x139DDB8
+    // Offset: 0x19116E4
     void set_GrabbableTouchPosition(::UnityEngine::Vector3 value);
     // public System.Boolean get_GrabbablePointedAt()
-    // Offset: 0x139DDDC
+    // Offset: 0x1911708
     bool get_GrabbablePointedAt();
     // private System.Void set_GrabbablePointedAt(System.Boolean value)
-    // Offset: 0x139DDD0
+    // Offset: 0x19116FC
     void set_GrabbablePointedAt(bool value);
     // public UnityEngine.Vector3 get_ClickableTouchPosition()
-    // Offset: 0x139DDF0
+    // Offset: 0x191171C
     ::UnityEngine::Vector3 get_ClickableTouchPosition();
     // private System.Void set_ClickableTouchPosition(UnityEngine.Vector3 value)
-    // Offset: 0x139DDE4
+    // Offset: 0x1911710
     void set_ClickableTouchPosition(::UnityEngine::Vector3 value);
     // public System.Boolean get_ClickablePointedAt()
-    // Offset: 0x139DE08
+    // Offset: 0x1911734
     bool get_ClickablePointedAt();
     // private System.Void set_ClickablePointedAt(System.Boolean value)
-    // Offset: 0x139DDFC
+    // Offset: 0x1911728
     void set_ClickablePointedAt(bool value);
     // public VROSC.Clickable get_CurrentClickable()
-    // Offset: 0x139DE18
+    // Offset: 0x1911744
     ::VROSC::Clickable* get_CurrentClickable();
     // private System.Void set_CurrentClickable(VROSC.Clickable value)
-    // Offset: 0x139DE10
+    // Offset: 0x191173C
     void set_CurrentClickable(::VROSC::Clickable* value);
     // public VROSC.Grabable get_CurrentGrabbable()
-    // Offset: 0x139DE28
+    // Offset: 0x1911754
     ::VROSC::Grabable* get_CurrentGrabbable();
     // private System.Void set_CurrentGrabbable(VROSC.Grabable value)
-    // Offset: 0x139DE20
+    // Offset: 0x191174C
     void set_CurrentGrabbable(::VROSC::Grabable* value);
     // public UnityEngine.Vector3 get_RayEnd()
-    // Offset: 0x139DE3C
+    // Offset: 0x1911768
     ::UnityEngine::Vector3 get_RayEnd();
     // private System.Void set_RayEnd(UnityEngine.Vector3 value)
-    // Offset: 0x139DE30
+    // Offset: 0x191175C
     void set_RayEnd(::UnityEngine::Vector3 value);
     // public System.Boolean get_IsHoveringSomething()
-    // Offset: 0x139DE54
+    // Offset: 0x1911780
     bool get_IsHoveringSomething();
     // private System.Void set_IsHoveringSomething(System.Boolean value)
-    // Offset: 0x139DE48
+    // Offset: 0x1911774
     void set_IsHoveringSomething(bool value);
     // public System.Void Setup(VROSC.InputSettings inputSettings, VROSC.InputDevice device, UnityEngine.Transform rayPoint)
-    // Offset: 0x139D3C4
+    // Offset: 0x1910CF0
     void Setup(::VROSC::InputSettings* inputSettings, ::VROSC::InputDevice* device, ::UnityEngine::Transform* rayPoint);
     // public System.Void Update(System.Boolean useLaser)
-    // Offset: 0x139D9CC
+    // Offset: 0x19112F8
     void Update(bool useLaser);
     // public System.Void ResetHovering()
-    // Offset: 0x139D5D8
+    // Offset: 0x1910F04
     void ResetHovering();
     // System.Void SetInteractionDisabledByMallets(System.Boolean disable)
-    // Offset: 0x139D670
+    // Offset: 0x1910F9C
     void SetInteractionDisabledByMallets(bool disable);
     // private System.Void UpdateHovering(System.Boolean useLaser)
-    // Offset: 0x139DE5C
+    // Offset: 0x1911788
     void UpdateHovering(bool useLaser);
     // private T GetClosestInCurrentlyHovering()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -289,16 +281,16 @@ namespace VROSC::UI {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___generic__method);
     }
     // private System.Void UpdateClickable(VROSC.Clickable currentlyHoveringOver)
-    // Offset: 0x139E4B8
+    // Offset: 0x1911DE4
     void UpdateClickable(::VROSC::Clickable* currentlyHoveringOver);
     // private System.Void UpdateGrabbable(VROSC.Grabable currentlyHoveringOver)
-    // Offset: 0x139E5C8
+    // Offset: 0x1911EF4
     void UpdateGrabbable(::VROSC::Grabable* currentlyHoveringOver);
     // private System.Void UpdateTooltips()
-    // Offset: 0x139E780
+    // Offset: 0x19120D0
     void UpdateTooltips();
     // public System.Void .ctor()
-    // Offset: 0x139EB38
+    // Offset: 0x1912488
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

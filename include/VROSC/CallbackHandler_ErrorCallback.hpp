@@ -33,15 +33,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CallbackHandler::ErrorCallback : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`1<VROSC.Error> Action
     // Size: 0x8
     // Offset: 0x10
@@ -56,11 +48,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Error) == 0x4);
     public:
     // Get instance field reference: public System.Action`1<VROSC.Error> Action
-    ::System::Action_1<::VROSC::Error>*& dyn_Action();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_Action();
     // Get instance field reference: public VROSC.Error Error
-    ::VROSC::Error& dyn_Error();
+    [[deprecated]] ::VROSC::Error& dyn_Error();
     // public System.Void .ctor()
-    // Offset: 0x135CE48
+    // Offset: 0x9593B0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

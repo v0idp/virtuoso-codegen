@@ -9,8 +9,6 @@
 #include "UnityEngine/MonoBehaviour.hpp"
 // Including type: VROSC.LoopStationLoopHandler/VROSC.LooperState
 #include "VROSC/LoopStationLoopHandler_LooperState.hpp"
-// Including type: VROSC.LoopStationRecorder
-#include "VROSC/LoopStationRecorder.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-properties.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
@@ -59,15 +57,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationRecordingUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SelectionBar _loopLengthSelectionBar
     // Size: 0x8
     // Offset: 0x18
@@ -146,67 +136,67 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SelectionBar _loopLengthSelectionBar
-    ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
+    [[deprecated]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
     // Get instance field reference: private UnityEngine.GameObject _noLoopsMode
-    ::UnityEngine::GameObject*& dyn__noLoopsMode();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__noLoopsMode();
     // Get instance field reference: private UnityEngine.GameObject _gotLoops
-    ::UnityEngine::GameObject*& dyn__gotLoops();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__gotLoops();
     // Get instance field reference: private UnityEngine.GameObject _loopLengthAutoText
-    ::UnityEngine::GameObject*& dyn__loopLengthAutoText();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__loopLengthAutoText();
     // Get instance field reference: private VROSC.LoopStationRecordingButton _recordingButton
-    ::VROSC::LoopStationRecordingButton*& dyn__recordingButton();
+    [[deprecated]] ::VROSC::LoopStationRecordingButton*& dyn__recordingButton();
     // Get instance field reference: private VROSC.LoopPlayerRecordingState _firstLoopRecordingState
-    ::VROSC::LoopPlayerRecordingState*& dyn__firstLoopRecordingState();
+    [[deprecated]] ::VROSC::LoopPlayerRecordingState*& dyn__firstLoopRecordingState();
     // Get instance field reference: private VROSC.UISlideToggle _overdubToggle
-    ::VROSC::UISlideToggle*& dyn__overdubToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__overdubToggle();
     // Get instance field reference: private VROSC.UISlideToggle _matchLengthToggle
-    ::VROSC::UISlideToggle*& dyn__matchLengthToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__matchLengthToggle();
     // Get instance field reference: private VROSC.UIButton _rerecordButton
-    ::VROSC::UIButton*& dyn__rerecordButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__rerecordButton();
     // Get instance field reference: private VROSC.LoopStationLoopHandler/VROSC.LooperState _state
-    ::VROSC::LoopStationLoopHandler::LooperState& dyn__state();
+    [[deprecated]] ::VROSC::LoopStationLoopHandler::LooperState& dyn__state();
     // Get instance field reference: private VROSC.LoopStationRecorder _recorder
-    ::VROSC::LoopStationRecorder*& dyn__recorder();
+    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn__recorder();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // public System.Single get_OverDubLength()
-    // Offset: 0x8A4CE4
+    // Offset: 0x1977D50
     float get_OverDubLength();
     // public System.Void Setup(VROSC.LoopStationRecorder recorder, VROSC.LoopStation loopStation)
-    // Offset: 0x8A4D18
+    // Offset: 0x197464C
     void Setup(::VROSC::LoopStationRecorder* recorder, ::VROSC::LoopStation* loopStation);
     // protected System.Void OnDestroy()
-    // Offset: 0x8A5170
+    // Offset: 0x1977E08
     void OnDestroy();
     // private System.Void RecorderStateChanged(VROSC.LoopStationRecorder/VROSC.RecordingState recordingState)
-    // Offset: 0x8A50EC
+    // Offset: 0x1977D84
     void RecorderStateChanged(::VROSC::LoopStationRecorder::RecordingState recordingState);
     // private System.String GetRecordingTextByState(VROSC.LoopStationRecorder/VROSC.RecordingState state)
-    // Offset: 0x8A540C
+    // Offset: 0x19780A4
     ::StringW GetRecordingTextByState(::VROSC::LoopStationRecorder::RecordingState state);
     // public System.Void UpdateLooperState()
-    // Offset: 0x8A54E4
+    // Offset: 0x1974CE0
     void UpdateLooperState();
     // public System.Void ShowRerecordButton()
-    // Offset: 0x8A55AC
+    // Offset: 0x1975FE4
     void ShowRerecordButton();
     // private System.Single GetOverdubLength()
-    // Offset: 0x8A4CE8
+    // Offset: 0x1977D54
     float GetOverdubLength();
     // private System.Void OverdubChanged(VROSC.InputDevice inputDevice, System.Boolean state)
-    // Offset: 0x8A55DC
+    // Offset: 0x197817C
     void OverdubChanged(::VROSC::InputDevice* inputDevice, bool state);
     // private System.Void MatchLengthChanged(VROSC.InputDevice inputDevice, System.Boolean state)
-    // Offset: 0x8A566C
+    // Offset: 0x197820C
     void MatchLengthChanged(::VROSC::InputDevice* inputDevice, bool state);
     // private System.Void RerecordPressed()
-    // Offset: 0x8A56FC
+    // Offset: 0x197829C
     void RerecordPressed();
     // private System.Void UserDataLoaded(VROSC.UserDataControllers dataControllers)
-    // Offset: 0x8A5748
+    // Offset: 0x19782E8
     void UserDataLoaded(::VROSC::UserDataControllers* dataControllers);
     // public System.Void .ctor()
-    // Offset: 0x8A5794
+    // Offset: 0x1978334
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

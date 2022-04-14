@@ -47,15 +47,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class TabButton : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _tabId
     // Size: 0x8
     // Offset: 0x18
@@ -104,39 +96,39 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String _tabId
-    ::StringW& dyn__tabId();
+    [[deprecated]] ::StringW& dyn__tabId();
     // Get instance field reference: private VROSC.UIButton _button
-    ::VROSC::UIButton*& dyn__button();
+    [[deprecated]] ::VROSC::UIButton*& dyn__button();
     // Get instance field reference: private UnityEngine.GameObject _activeBackground
-    ::UnityEngine::GameObject*& dyn__activeBackground();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__activeBackground();
     // Get instance field reference: private UnityEngine.GameObject _tabTarget
-    ::UnityEngine::GameObject*& dyn__tabTarget();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__tabTarget();
     // Get instance field reference: private System.Boolean _isActive
-    bool& dyn__isActive();
+    [[deprecated]] bool& dyn__isActive();
     // Get instance field reference: private System.Boolean _isEnabled
-    bool& dyn__isEnabled();
+    [[deprecated]] bool& dyn__isEnabled();
     // Get instance field reference: public System.Action`1<VROSC.UI.TabButton> OnTabActivated
-    ::System::Action_1<::VROSC::UI::TabButton*>*& dyn_OnTabActivated();
+    [[deprecated]] ::System::Action_1<::VROSC::UI::TabButton*>*& dyn_OnTabActivated();
     // public System.String get_Id()
-    // Offset: 0x13F7FE4
+    // Offset: 0x193A368
     ::StringW get_Id();
     // public UnityEngine.GameObject get_Target()
-    // Offset: 0x13F7FEC
+    // Offset: 0x193A370
     ::UnityEngine::GameObject* get_Target();
     // private System.Void Awake()
-    // Offset: 0x13F7FF4
+    // Offset: 0x193A378
     void Awake();
     // private System.Void Clicked()
-    // Offset: 0x13F80B4
+    // Offset: 0x193A438
     void Clicked();
     // public System.Void SetEnabled(System.Boolean enabled)
-    // Offset: 0x13F8124
+    // Offset: 0x193A4A8
     void SetEnabled(bool enabled);
     // public System.Void SetActive(System.Boolean active)
-    // Offset: 0x13F8130
+    // Offset: 0x193A4B4
     void SetActive(bool active);
     // public System.Void .ctor()
-    // Offset: 0x13F8190
+    // Offset: 0x193A514
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

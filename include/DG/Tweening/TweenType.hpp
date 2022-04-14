@@ -60,7 +60,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.TweenType Callback
     static void _set_Callback(::DG::Tweening::TweenType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.TweenType
   #pragma pack(pop)
   static check_size<sizeof(TweenType), 0 + sizeof(int)> __DG_Tweening_TweenTypeSizeCheck;

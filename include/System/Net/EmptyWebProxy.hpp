@@ -40,15 +40,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class EmptyWebProxy : public ::Il2CppObject/*, public ::System::Net::IWebProxy*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.ICredentials m_credentials
     // Size: 0x8
     // Offset: 0x10
@@ -65,18 +57,18 @@ namespace System::Net {
       return m_credentials;
     }
     // Get instance field reference: private System.Net.ICredentials m_credentials
-    ::System::Net::ICredentials*& dyn_m_credentials();
+    [[deprecated]] ::System::Net::ICredentials*& dyn_m_credentials();
     // public System.Net.ICredentials get_Credentials()
-    // Offset: 0xD7EB5C
+    // Offset: 0xEFD490
     ::System::Net::ICredentials* get_Credentials();
     // public System.Uri GetProxy(System.Uri uri)
-    // Offset: 0xD7EB4C
+    // Offset: 0xEFD480
     ::System::Uri* GetProxy(::System::Uri* uri);
     // public System.Boolean IsBypassed(System.Uri uri)
-    // Offset: 0xD7EB54
+    // Offset: 0xEFD488
     bool IsBypassed(::System::Uri* uri);
     // public System.Void .ctor()
-    // Offset: 0xD7EB44
+    // Offset: 0xEFD478
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

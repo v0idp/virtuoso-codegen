@@ -58,15 +58,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionsSearchBar : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.OrderToggleButton _newestOrderToggle
     // Size: 0x8
     // Offset: 0x18
@@ -113,54 +105,54 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.OrderToggleButton _newestOrderToggle
-    ::VROSC::OrderToggleButton*& dyn__newestOrderToggle();
+    [[deprecated]] ::VROSC::OrderToggleButton*& dyn__newestOrderToggle();
     // Get instance field reference: private VROSC.OrderToggleButton _azOrderToggle
-    ::VROSC::OrderToggleButton*& dyn__azOrderToggle();
+    [[deprecated]] ::VROSC::OrderToggleButton*& dyn__azOrderToggle();
     // Get instance field reference: private VROSC.OrderToggleButton _popularityOrderToggle
-    ::VROSC::OrderToggleButton*& dyn__popularityOrderToggle();
+    [[deprecated]] ::VROSC::OrderToggleButton*& dyn__popularityOrderToggle();
     // Get instance field reference: private UIInputField _searchField
-    ::GlobalNamespace::UIInputField*& dyn__searchField();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__searchField();
     // Get instance field reference: private VROSC.UIButton _clearSerachButton
-    ::VROSC::UIButton*& dyn__clearSerachButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__clearSerachButton();
     // Get instance field reference: public System.Action`2<VROSC.SessionsLibraryUI/VROSC.OrderingType,VROSC.SessionsLibraryUI/VROSC.OrderingDirection> OnOrderingChanged
-    ::System::Action_2<::VROSC::SessionsLibraryUI::OrderingType, ::VROSC::SessionsLibraryUI::OrderingDirection>*& dyn_OnOrderingChanged();
+    [[deprecated]] ::System::Action_2<::VROSC::SessionsLibraryUI::OrderingType, ::VROSC::SessionsLibraryUI::OrderingDirection>*& dyn_OnOrderingChanged();
     // Get instance field reference: public System.Action`1<System.String> OnSearchChanged
-    ::System::Action_1<::StringW>*& dyn_OnSearchChanged();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_OnSearchChanged();
     // private System.Void Awake()
-    // Offset: 0x13B0C48
+    // Offset: 0x1997330
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13B105C
+    // Offset: 0x1997744
     void OnDestroy();
     // public System.Void SetSearchText(System.String text)
-    // Offset: 0x13B1450
+    // Offset: 0x19920E0
     void SetSearchText(::StringW text);
     // private System.Void NewestOrderButtonToggled(VROSC.InputDevice device, System.Boolean isToggled)
-    // Offset: 0x13B146C
+    // Offset: 0x1997B38
     void NewestOrderButtonToggled(::VROSC::InputDevice* device, bool isToggled);
     // private System.Void AzOrderButtonToggled(VROSC.InputDevice device, System.Boolean isToggled)
-    // Offset: 0x13B150C
+    // Offset: 0x1997BD8
     void AzOrderButtonToggled(::VROSC::InputDevice* device, bool isToggled);
     // private System.Void PopularityOrderButtonToggled(VROSC.InputDevice device, System.Boolean isToggled)
-    // Offset: 0x13B15AC
+    // Offset: 0x1997C78
     void PopularityOrderButtonToggled(::VROSC::InputDevice* device, bool isToggled);
     // private System.Void NewestOrderButtonStateChanged(System.Int32 state)
-    // Offset: 0x13B164C
+    // Offset: 0x1997D18
     void NewestOrderButtonStateChanged(int state);
     // private System.Void AzOrderButtonStateChanged(System.Int32 state)
-    // Offset: 0x13B16C0
+    // Offset: 0x1997D8C
     void AzOrderButtonStateChanged(int state);
     // private System.Void PopularityOrderButtonStateChanged(System.Int32 state)
-    // Offset: 0x13B1734
+    // Offset: 0x1997E00
     void PopularityOrderButtonStateChanged(int state);
     // private System.Void SearchFieldChanged(System.String text)
-    // Offset: 0x13B17A8
+    // Offset: 0x1997E74
     void SearchFieldChanged(::StringW text);
     // private System.Void ClearSearchField()
-    // Offset: 0x13B1844
+    // Offset: 0x1997F10
     void ClearSearchField();
     // public System.Void .ctor()
-    // Offset: 0x13B189C
+    // Offset: 0x1997F68
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

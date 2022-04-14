@@ -28,15 +28,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class FlyText : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly UnityEngine.Vector3 m_movePerFrame
     // Size: 0xC
     // Offset: 0x18
@@ -59,17 +51,17 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.Single LIFESPAN
     static void _set_LIFESPAN(float value);
     // Get instance field reference: private readonly UnityEngine.Vector3 m_movePerFrame
-    ::UnityEngine::Vector3& dyn_m_movePerFrame();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_m_movePerFrame();
     // Get instance field reference: private System.Single m_eol
-    float& dyn_m_eol();
+    [[deprecated]] float& dyn_m_eol();
     // private System.Void Start()
-    // Offset: 0x7E8BA0
+    // Offset: 0x92EF80
     void Start();
     // private System.Void Update()
-    // Offset: 0x7E8C38
+    // Offset: 0x92F018
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x7E8D0C
+    // Offset: 0x92F0EC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

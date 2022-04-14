@@ -38,10 +38,10 @@ namespace VROSC {
   class OscMessages : public ::UnityEngine::MonoBehaviour {
     public:
     // static public System.String GetOSCMessageString(VROSC.OscMessage message, System.Object[] arguments)
-    // Offset: 0x91F2E4
+    // Offset: 0xF7FB14
     static ::StringW GetOSCMessageString(::VROSC::OscMessage message, ::ArrayW<::Il2CppObject*> arguments);
     // public System.Void .ctor()
-    // Offset: 0x91F410
+    // Offset: 0xF7FC40
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

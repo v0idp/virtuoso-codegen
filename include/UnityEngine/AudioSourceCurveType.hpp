@@ -66,7 +66,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.AudioSourceCurveType Spread
     static void _set_Spread(::UnityEngine::AudioSourceCurveType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.AudioSourceCurveType
   #pragma pack(pop)
   static check_size<sizeof(AudioSourceCurveType), 0 + sizeof(int)> __UnityEngine_AudioSourceCurveTypeSizeCheck;

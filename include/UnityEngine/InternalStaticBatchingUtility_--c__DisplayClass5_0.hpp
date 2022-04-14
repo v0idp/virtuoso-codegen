@@ -31,15 +31,7 @@ namespace UnityEngine {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class InternalStaticBatchingUtility::$$c__DisplayClass5_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.InternalStaticBatchingUtility/UnityEngine.StaticBatcherGOSorter sorter
     // Size: 0x8
     // Offset: 0x10
@@ -52,18 +44,18 @@ namespace UnityEngine {
       return sorter;
     }
     // Get instance field reference: public UnityEngine.InternalStaticBatchingUtility/UnityEngine.StaticBatcherGOSorter sorter
-    ::UnityEngine::InternalStaticBatchingUtility::StaticBatcherGOSorter*& dyn_sorter();
+    [[deprecated]] ::UnityEngine::InternalStaticBatchingUtility::StaticBatcherGOSorter*& dyn_sorter();
     // System.Int64 <SortGameObjectsForStaticBatching>b__0(UnityEngine.GameObject g)
-    // Offset: 0x124ECF4
+    // Offset: 0x1842EC8
     int64_t $SortGameObjectsForStaticBatching$b__0(::UnityEngine::GameObject* g);
     // System.Int32 <SortGameObjectsForStaticBatching>b__1(UnityEngine.GameObject g)
-    // Offset: 0x124EEA4
+    // Offset: 0x1843078
     int $SortGameObjectsForStaticBatching$b__1(::UnityEngine::GameObject* g);
     // System.Int64 <SortGameObjectsForStaticBatching>b__3(UnityEngine.GameObject g)
-    // Offset: 0x124EF68
+    // Offset: 0x184313C
     int64_t $SortGameObjectsForStaticBatching$b__3(::UnityEngine::GameObject* g);
     // public System.Void .ctor()
-    // Offset: 0x124ECEC
+    // Offset: 0x1842EC0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -76,20 +76,20 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public VROSC.Error error
-    ::VROSC::Error& dyn_error();
+    [[deprecated]] ::VROSC::Error& dyn_error();
     // Get instance field reference: public VROSC.AppValidityChecker <>4__this
-    ::VROSC::AppValidityChecker*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::AppValidityChecker*& dyn_$$4__this();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x1359F38
+    // Offset: 0x956834
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x135A234
+    // Offset: 0x956B30
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.AppValidityChecker/VROSC.<ForceUpdatesDataLoadFailure>d__19
   #pragma pack(pop)

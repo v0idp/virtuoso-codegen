@@ -43,7 +43,7 @@ namespace Firebase::Firestore::Converters {
   class EnumerableConverterBase : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
     // System.Void .ctor(System.Type targetType)
-    // Offset: 0xC2571C
+    // Offset: 0xD4748C
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Void ConverterBase::.ctor(System.Type targetType)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -52,7 +52,7 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<EnumerableConverterBase*, creationType>(targetType)));
     }
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC333D8
+    // Offset: 0xD55674
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);

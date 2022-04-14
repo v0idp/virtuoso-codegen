@@ -58,15 +58,7 @@ namespace System::Resources {
   // [TokenAttribute] Offset: FFFFFFFF
   class RuntimeResourceSet : public ::System::Resources::ResourceSet {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceLocator> _resCache
     // Size: 0x8
     // Offset: 0x28
@@ -99,68 +91,68 @@ namespace System::Resources {
     // Set static field: static System.Int32 Version
     static void _set_Version(int value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceLocator> _resCache
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__resCache();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__resCache();
     // Get instance field reference: private System.Resources.ResourceReader _defaultReader
-    ::System::Resources::ResourceReader*& dyn__defaultReader();
+    [[deprecated]] ::System::Resources::ResourceReader*& dyn__defaultReader();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceLocator> _caseInsensitiveTable
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__caseInsensitiveTable();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__caseInsensitiveTable();
     // Get instance field reference: private System.Boolean _haveReadFromReader
-    bool& dyn__haveReadFromReader();
+    [[deprecated]] bool& dyn__haveReadFromReader();
     // System.Void .ctor(System.String fileName)
-    // Offset: 0xEDFC2C
+    // Offset: 0xCE617C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RuntimeResourceSet* New_ctor(::StringW fileName) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Resources::RuntimeResourceSet::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RuntimeResourceSet*, creationType>(fileName)));
     }
     // System.Void .ctor(System.IO.Stream stream)
-    // Offset: 0xEDFD68
+    // Offset: 0xCE62B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RuntimeResourceSet* New_ctor(::System::IO::Stream* stream) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Resources::RuntimeResourceSet::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RuntimeResourceSet*, creationType>(stream)));
     }
     // private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-    // Offset: 0xEE00A0
+    // Offset: 0xCE65FC
     ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator();
     // private System.Object GetObject(System.String key, System.Boolean ignoreCase, System.Boolean isString)
-    // Offset: 0xEE0120
+    // Offset: 0xCE667C
     ::Il2CppObject* GetObject(::StringW key, bool ignoreCase, bool isString);
     // private System.Object ResolveResourceLocator(System.Resources.ResourceLocator resLocation, System.String key, System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceLocator> copyOfCache, System.Boolean keyInWrongCase)
-    // Offset: 0xEE0B78
+    // Offset: 0xCE70A0
     ::Il2CppObject* ResolveResourceLocator(::System::Resources::ResourceLocator resLocation, ::StringW key, ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>* copyOfCache, bool keyInWrongCase);
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xEDFE68
+    // Offset: 0xCE63A8
     // Implemented from: System.Resources.ResourceSet
     // Base method: System.Void ResourceSet::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);
     // public override System.Collections.IDictionaryEnumerator GetEnumerator()
-    // Offset: 0xEDFF8C
+    // Offset: 0xCE64E8
     // Implemented from: System.Resources.ResourceSet
     // Base method: System.Collections.IDictionaryEnumerator ResourceSet::GetEnumerator()
     ::System::Collections::IDictionaryEnumerator* GetEnumerator();
     // private System.Collections.IDictionaryEnumerator GetEnumeratorHelper()
-    // Offset: 0xEDFF90
+    // Offset: 0xCE64EC
     // Implemented from: System.Resources.ResourceSet
     // Base method: System.Collections.IDictionaryEnumerator ResourceSet::GetEnumeratorHelper()
     ::System::Collections::IDictionaryEnumerator* GetEnumeratorHelper();
     // public override System.String GetString(System.String key)
-    // Offset: 0xEE00A4
+    // Offset: 0xCE6600
     // Implemented from: System.Resources.ResourceSet
     // Base method: System.String ResourceSet::GetString(System.String key)
     ::StringW GetString(::StringW key);
     // public override System.String GetString(System.String key, System.Boolean ignoreCase)
-    // Offset: 0xEE0AE0
+    // Offset: 0xCE7008
     // Implemented from: System.Resources.ResourceSet
     // Base method: System.String ResourceSet::GetString(System.String key, System.Boolean ignoreCase)
     ::StringW GetString(::StringW key, bool ignoreCase);
     // public override System.Object GetObject(System.String key)
-    // Offset: 0xEE0B60
+    // Offset: 0xCE7088
     // Implemented from: System.Resources.ResourceSet
     // Base method: System.Object ResourceSet::GetObject(System.String key)
     ::Il2CppObject* GetObject(::StringW key);
     // public override System.Object GetObject(System.String key, System.Boolean ignoreCase)
-    // Offset: 0xEE0B6C
+    // Offset: 0xCE7094
     // Implemented from: System.Resources.ResourceSet
     // Base method: System.Object ResourceSet::GetObject(System.String key, System.Boolean ignoreCase)
     ::Il2CppObject* GetObject(::StringW key, bool ignoreCase);

@@ -59,7 +59,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.Int64 spotAngleDeg
     static void _set_spotAngleDeg(int64_t value);
     // static private System.Void .cctor()
-    // Offset: 0x1358564
+    // Offset: 0x954E60
     static void _cctor();
   }; // ovrAvatarLight_Offsets
   #pragma pack(pop)

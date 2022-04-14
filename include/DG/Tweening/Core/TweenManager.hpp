@@ -246,7 +246,7 @@ namespace DG::Tweening::Core {
     // Set static field: static private System.Boolean _despawnAllCalledFromUpdateLoopCallback
     static void _set__despawnAllCalledFromUpdateLoopCallback(bool value);
     // static private System.Void .cctor()
-    // Offset: 0x103AF14
+    // Offset: 0x15B190C
     static void _cctor();
     // static DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> GetTweener()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -259,124 +259,124 @@ namespace DG::Tweening::Core {
       return ::il2cpp_utils::RunMethodRethrow<::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method);
     }
     // static DG.Tweening.Sequence GetSequence()
-    // Offset: 0x103B0E0
+    // Offset: 0x15B1AD8
     static ::DG::Tweening::Sequence* GetSequence();
     // static System.Void SetUpdateType(DG.Tweening.Tween t, DG.Tweening.UpdateType updateType, System.Boolean isIndependentUpdate)
-    // Offset: 0x103BA44
+    // Offset: 0x15B243C
     static void SetUpdateType(::DG::Tweening::Tween* t, ::DG::Tweening::UpdateType updateType, bool isIndependentUpdate);
     // static System.Void AddActiveTweenToSequence(DG.Tweening.Tween t)
-    // Offset: 0x103BD00
+    // Offset: 0x15B26F8
     static void AddActiveTweenToSequence(::DG::Tweening::Tween* t);
     // static System.Int32 DespawnAll()
-    // Offset: 0x103C304
+    // Offset: 0x15B2CFC
     static int DespawnAll();
     // static System.Void Despawn(DG.Tweening.Tween t, System.Boolean modifyActiveLists)
-    // Offset: 0x1038480
+    // Offset: 0x15AEE78
     static void Despawn(::DG::Tweening::Tween* t, bool modifyActiveLists);
     // static System.Void PurgeAll()
-    // Offset: 0x103C584
+    // Offset: 0x15B2F7C
     static void PurgeAll();
     // static System.Void PurgePools()
-    // Offset: 0x103C728
+    // Offset: 0x15B3120
     static void PurgePools();
     // static System.Void AddTweenLink(DG.Tweening.Tween t, DG.Tweening.Core.TweenLink tweenLink)
-    // Offset: 0x103C870
+    // Offset: 0x15B3268
     static void AddTweenLink(::DG::Tweening::Tween* t, ::DG::Tweening::Core::TweenLink* tweenLink);
     // static private System.Void RemoveTweenLink(DG.Tweening.Tween t)
-    // Offset: 0x103CAFC
+    // Offset: 0x15B34F4
     static void RemoveTweenLink(::DG::Tweening::Tween* t);
     // static System.Void ResetCapacities()
-    // Offset: 0x103C810
+    // Offset: 0x15B3208
     static void ResetCapacities();
     // static System.Void SetCapacities(System.Int32 tweenersCapacity, System.Int32 sequencesCapacity)
-    // Offset: 0x103CBEC
+    // Offset: 0x15B35E4
     static void SetCapacities(int tweenersCapacity, int sequencesCapacity);
     // static System.Int32 Validate()
-    // Offset: 0x103CCF0
+    // Offset: 0x15B36E8
     static int Validate();
     // static System.Void Update(DG.Tweening.UpdateType updateType, System.Single deltaTime, System.Single independentTime)
-    // Offset: 0x103D2A8
+    // Offset: 0x15B3CA0
     static void Update(::DG::Tweening::UpdateType updateType, float deltaTime, float independentTime);
     // static System.Int32 FilteredOperation(DG.Tweening.Core.Enums.OperationType operationType, DG.Tweening.Core.Enums.FilterType filterType, System.Object id, System.Boolean optionalBool, System.Single optionalFloat, System.Object optionalObj, System.Object[] optionalArray)
-    // Offset: 0x103D968
+    // Offset: 0x15B4360
     static int FilteredOperation(::DG::Tweening::Core::Enums::OperationType operationType, ::DG::Tweening::Core::Enums::FilterType filterType, ::Il2CppObject* id, bool optionalBool, float optionalFloat, ::Il2CppObject* optionalObj, ::ArrayW<::Il2CppObject*> optionalArray);
     // static System.Boolean Complete(DG.Tweening.Tween t, System.Boolean modifyActiveLists, DG.Tweening.Core.Enums.UpdateMode updateMode)
-    // Offset: 0x1037C90
+    // Offset: 0x15AE688
     static bool Complete(::DG::Tweening::Tween* t, bool modifyActiveLists, ::DG::Tweening::Core::Enums::UpdateMode updateMode);
     // static System.Boolean Flip(DG.Tweening.Tween t)
-    // Offset: 0x1037EE4
+    // Offset: 0x15AE8DC
     static bool Flip(::DG::Tweening::Tween* t);
     // static System.Void ForceInit(DG.Tweening.Tween t, System.Boolean isSequenced)
-    // Offset: 0x1038080
+    // Offset: 0x15AEA78
     static void ForceInit(::DG::Tweening::Tween* t, bool isSequenced);
     // static System.Boolean Goto(DG.Tweening.Tween t, System.Single to, System.Boolean andPlay, DG.Tweening.Core.Enums.UpdateMode updateMode)
-    // Offset: 0x1038150
+    // Offset: 0x15AEB48
     static bool Goto(::DG::Tweening::Tween* t, float to, bool andPlay, ::DG::Tweening::Core::Enums::UpdateMode updateMode);
     // static System.Boolean Pause(DG.Tweening.Tween t)
-    // Offset: 0x103CABC
+    // Offset: 0x15B34B4
     static bool Pause(::DG::Tweening::Tween* t);
     // static System.Boolean Play(DG.Tweening.Tween t)
-    // Offset: 0x103CA3C
+    // Offset: 0x15B3434
     static bool Play(::DG::Tweening::Tween* t);
     // static System.Boolean PlayBackwards(DG.Tweening.Tween t)
-    // Offset: 0x1038B9C
+    // Offset: 0x15AF594
     static bool PlayBackwards(::DG::Tweening::Tween* t);
     // static System.Boolean PlayForward(DG.Tweening.Tween t)
-    // Offset: 0x1038E10
+    // Offset: 0x15AF808
     static bool PlayForward(::DG::Tweening::Tween* t);
     // static System.Boolean Restart(DG.Tweening.Tween t, System.Boolean includeDelay, System.Single changeDelayTo)
-    // Offset: 0x1039084
+    // Offset: 0x15AFA7C
     static bool Restart(::DG::Tweening::Tween* t, bool includeDelay, float changeDelayTo);
     // static System.Boolean Rewind(DG.Tweening.Tween t, System.Boolean includeDelay)
-    // Offset: 0x10392EC
+    // Offset: 0x15AFCE4
     static bool Rewind(::DG::Tweening::Tween* t, bool includeDelay);
     // static System.Boolean SmoothRewind(DG.Tweening.Tween t)
-    // Offset: 0x1039580
+    // Offset: 0x15AFF78
     static bool SmoothRewind(::DG::Tweening::Tween* t);
     // static System.Boolean TogglePause(DG.Tweening.Tween t)
-    // Offset: 0x10397EC
+    // Offset: 0x15B01E4
     static bool TogglePause(::DG::Tweening::Tween* t);
     // static System.Int32 TotalPooledTweens()
-    // Offset: 0x103E408
+    // Offset: 0x15B4E00
     static int TotalPooledTweens();
     // static System.Int32 TotalPlayingTweens()
-    // Offset: 0x103E474
+    // Offset: 0x15B4E6C
     static int TotalPlayingTweens();
     // static System.Collections.Generic.List`1<DG.Tweening.Tween> GetActiveTweens(System.Boolean playing, System.Collections.Generic.List`1<DG.Tweening.Tween> fillableList)
-    // Offset: 0x103E5C0
+    // Offset: 0x15B4FB8
     static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* GetActiveTweens(bool playing, ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* fillableList);
     // static System.Collections.Generic.List`1<DG.Tweening.Tween> GetTweensById(System.Object id, System.Boolean playingOnly, System.Collections.Generic.List`1<DG.Tweening.Tween> fillableList)
-    // Offset: 0x103E7B4
+    // Offset: 0x15B51AC
     static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* GetTweensById(::Il2CppObject* id, bool playingOnly, ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* fillableList);
     // static System.Collections.Generic.List`1<DG.Tweening.Tween> GetTweensByTarget(System.Object target, System.Boolean playingOnly, System.Collections.Generic.List`1<DG.Tweening.Tween> fillableList)
-    // Offset: 0x103EAA4
+    // Offset: 0x15B549C
     static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* GetTweensByTarget(::Il2CppObject* target, bool playingOnly, ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* fillableList);
     // static private System.Void MarkForKilling(DG.Tweening.Tween t)
-    // Offset: 0x103D138
+    // Offset: 0x15B3B30
     static void MarkForKilling(::DG::Tweening::Tween* t);
     // static private System.Void EvaluateTweenLink(DG.Tweening.Tween t)
-    // Offset: 0x103D704
+    // Offset: 0x15B40FC
     static void EvaluateTweenLink(::DG::Tweening::Tween* t);
     // static private System.Void AddActiveTween(DG.Tweening.Tween t)
-    // Offset: 0x103B410
+    // Offset: 0x15B1E08
     static void AddActiveTween(::DG::Tweening::Tween* t);
     // static private System.Void ReorganizeActiveTweens()
-    // Offset: 0x103CE98
+    // Offset: 0x15B3890
     static void ReorganizeActiveTweens();
     // static private System.Void DespawnActiveTweens(System.Collections.Generic.List`1<DG.Tweening.Tween> tweens)
-    // Offset: 0x103D1CC
+    // Offset: 0x15B3BC4
     static void DespawnActiveTweens(::System::Collections::Generic::List_1<::DG::Tweening::Tween*>* tweens);
     // static private System.Void RemoveActiveTween(DG.Tweening.Tween t)
-    // Offset: 0x103BD60
+    // Offset: 0x15B2758
     static void RemoveActiveTween(::DG::Tweening::Tween* t);
     // static private System.Void ClearTweenArray(DG.Tweening.Tween[] tweens)
-    // Offset: 0x103C52C
+    // Offset: 0x15B2F24
     static void ClearTweenArray(::ArrayW<::DG::Tweening::Tween*> tweens);
     // static private System.Void IncreaseCapacities(DG.Tweening.Core.TweenManager/DG.Tweening.Core.CapacityIncreaseMode increaseMode)
-    // Offset: 0x103B78C
+    // Offset: 0x15B2184
     static void IncreaseCapacities(::DG::Tweening::Core::TweenManager::CapacityIncreaseMode increaseMode);
     // static private System.Void ManageOnRewindCallbackWhenAlreadyRewinded(DG.Tweening.Tween t, System.Boolean isPlayBackwardsOrSmoothRewind)
-    // Offset: 0x103E340
+    // Offset: 0x15B4D38
     static void ManageOnRewindCallbackWhenAlreadyRewinded(::DG::Tweening::Tween* t, bool isPlayBackwardsOrSmoothRewind);
   }; // DG.Tweening.Core.TweenManager
   #pragma pack(pop)

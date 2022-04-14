@@ -35,10 +35,10 @@ namespace Oculus::Platform {
   class MessageWithNetSyncVoipAttenuationValueList : public ::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetSyncVoipAttenuationValueList*> {
     public:
     // protected Oculus.Platform.Models.NetSyncVoipAttenuationValueList GetDataFromMessage(System.IntPtr c_message)
-    // Offset: 0x97C22C
+    // Offset: 0xB4E5C8
     ::Oculus::Platform::Models::NetSyncVoipAttenuationValueList* GetDataFromMessage(::System::IntPtr c_message);
     // public System.Void .ctor(System.IntPtr c_message)
-    // Offset: 0x97C190
+    // Offset: 0xB4E52C
     // Implemented from: Oculus.Platform.Message`1
     // Base method: System.Void Message_1::.ctor(System.IntPtr c_message)
     // Base method: System.Void Message::.ctor(System.IntPtr c_message)
@@ -48,7 +48,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<MessageWithNetSyncVoipAttenuationValueList*, creationType>(c_message)));
     }
     // public override Oculus.Platform.Models.NetSyncVoipAttenuationValueList GetNetSyncVoipAttenuationValueList()
-    // Offset: 0x97C1EC
+    // Offset: 0xB4E588
     // Implemented from: Oculus.Platform.Message
     // Base method: Oculus.Platform.Models.NetSyncVoipAttenuationValueList Message::GetNetSyncVoipAttenuationValueList()
     ::Oculus::Platform::Models::NetSyncVoipAttenuationValueList* GetNetSyncVoipAttenuationValueList();

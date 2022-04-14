@@ -39,15 +39,7 @@ namespace UnityEngine::EventSystems {
   // [TokenAttribute] Offset: FFFFFFFF
   class AxisEventData : public ::UnityEngine::EventSystems::BaseEventData {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector2 <moveVector>k__BackingField
     // Size: 0x8
     // Offset: 0x20
@@ -62,23 +54,23 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::EventSystems::MoveDirection) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Vector2 <moveVector>k__BackingField
-    ::UnityEngine::Vector2& dyn_$moveVector$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_$moveVector$k__BackingField();
     // Get instance field reference: private UnityEngine.EventSystems.MoveDirection <moveDir>k__BackingField
-    ::UnityEngine::EventSystems::MoveDirection& dyn_$moveDir$k__BackingField();
+    [[deprecated]] ::UnityEngine::EventSystems::MoveDirection& dyn_$moveDir$k__BackingField();
     // public UnityEngine.Vector2 get_moveVector()
-    // Offset: 0xBB48B8
+    // Offset: 0xEAAF04
     ::UnityEngine::Vector2 get_moveVector();
     // public System.Void set_moveVector(UnityEngine.Vector2 value)
-    // Offset: 0xBB48C0
+    // Offset: 0xEAAF0C
     void set_moveVector(::UnityEngine::Vector2 value);
     // public UnityEngine.EventSystems.MoveDirection get_moveDir()
-    // Offset: 0xBB48C8
+    // Offset: 0xEAAF14
     ::UnityEngine::EventSystems::MoveDirection get_moveDir();
     // public System.Void set_moveDir(UnityEngine.EventSystems.MoveDirection value)
-    // Offset: 0xBB48D0
+    // Offset: 0xEAAF1C
     void set_moveDir(::UnityEngine::EventSystems::MoveDirection value);
     // public System.Void .ctor(UnityEngine.EventSystems.EventSystem eventSystem)
-    // Offset: 0xBB48D8
+    // Offset: 0xEAAF24
     // Implemented from: UnityEngine.EventSystems.BaseEventData
     // Base method: System.Void BaseEventData::.ctor(UnityEngine.EventSystems.EventSystem eventSystem)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

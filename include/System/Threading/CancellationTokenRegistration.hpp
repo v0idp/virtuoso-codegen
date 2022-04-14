@@ -65,28 +65,28 @@ namespace System::Threading {
       return *reinterpret_cast<::System::IEquatable_1<::System::Threading::CancellationTokenRegistration>*>(this);
     }
     // Get instance field reference: private readonly System.Threading.CancellationCallbackInfo m_callbackInfo
-    ::System::Threading::CancellationCallbackInfo*& dyn_m_callbackInfo();
+    [[deprecated]] ::System::Threading::CancellationCallbackInfo*& dyn_m_callbackInfo();
     // Get instance field reference: private readonly System.Threading.SparselyPopulatedArrayAddInfo`1<System.Threading.CancellationCallbackInfo> m_registrationInfo
-    ::System::Threading::SparselyPopulatedArrayAddInfo_1<::System::Threading::CancellationCallbackInfo*>& dyn_m_registrationInfo();
+    [[deprecated]] ::System::Threading::SparselyPopulatedArrayAddInfo_1<::System::Threading::CancellationCallbackInfo*>& dyn_m_registrationInfo();
     // System.Void .ctor(System.Threading.CancellationCallbackInfo callbackInfo, System.Threading.SparselyPopulatedArrayAddInfo`1<System.Threading.CancellationCallbackInfo> registrationInfo)
-    // Offset: 0xCD5C84
+    // Offset: 0xFF7D74
     // ABORTED: conflicts with another method.  CancellationTokenRegistration(::System::Threading::CancellationCallbackInfo* callbackInfo, ::System::Threading::SparselyPopulatedArrayAddInfo_1<::System::Threading::CancellationCallbackInfo*> registrationInfo);
     // System.Boolean TryDeregister()
-    // Offset: 0xCD5C90
+    // Offset: 0xFF7D80
     bool TryDeregister();
     // public System.Void Dispose()
-    // Offset: 0xCD5D10
+    // Offset: 0xFF7E00
     void Dispose();
     // public System.Boolean Equals(System.Threading.CancellationTokenRegistration other)
-    // Offset: 0xCD5EEC
+    // Offset: 0xFF7FDC
     bool Equals(::System::Threading::CancellationTokenRegistration other);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xCD5E50
+    // Offset: 0xFF7F40
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xCD5F78
+    // Offset: 0xFF8068
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

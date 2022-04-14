@@ -41,14 +41,14 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A33DC
+    // [DescriptionAttribute] Offset: 0x6B7590
     // static field const value: static public Oculus.Platform.MediaContentType Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.MediaContentType Unknown
     static ::Oculus::Platform::MediaContentType _get_Unknown();
     // Set static field: static public Oculus.Platform.MediaContentType Unknown
     static void _set_Unknown(::Oculus::Platform::MediaContentType value);
-    // [DescriptionAttribute] Offset: 0x5A3414
+    // [DescriptionAttribute] Offset: 0x6B75C8
     // static field const value: static public Oculus.Platform.MediaContentType Photo
     static constexpr const int Photo = 1;
     // Get static field: static public Oculus.Platform.MediaContentType Photo
@@ -56,7 +56,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.MediaContentType Photo
     static void _set_Photo(::Oculus::Platform::MediaContentType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.MediaContentType
   #pragma pack(pop)
   static check_size<sizeof(MediaContentType), 0 + sizeof(int)> __Oculus_Platform_MediaContentTypeSizeCheck;

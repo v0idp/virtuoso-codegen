@@ -29,15 +29,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UserProfileDataModel : public ::VROSC::BaseDataModel {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Username
     // Size: 0x8
     // Offset: 0x18
@@ -94,35 +86,35 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String Username
-    ::StringW& dyn_Username();
+    [[deprecated]] ::StringW& dyn_Username();
     // Get instance field reference: public System.String Email
-    ::StringW& dyn_Email();
+    [[deprecated]] ::StringW& dyn_Email();
     // Get instance field reference: public System.String OculusId
-    ::StringW& dyn_OculusId();
+    [[deprecated]] ::StringW& dyn_OculusId();
     // Get instance field reference: public System.String OculusUsername
-    ::StringW& dyn_OculusUsername();
+    [[deprecated]] ::StringW& dyn_OculusUsername();
     // Get instance field reference: public System.String SteamId
-    ::StringW& dyn_SteamId();
+    [[deprecated]] ::StringW& dyn_SteamId();
     // Get instance field reference: public System.String SteamUsername
-    ::StringW& dyn_SteamUsername();
+    [[deprecated]] ::StringW& dyn_SteamUsername();
     // Get instance field reference: public System.String LastLogin
-    ::StringW& dyn_LastLogin();
+    [[deprecated]] ::StringW& dyn_LastLogin();
     // Get instance field reference: public System.String CreationDate
-    ::StringW& dyn_CreationDate();
+    [[deprecated]] ::StringW& dyn_CreationDate();
     // Get instance field reference: public System.String AcceptedEULAVersion
-    ::StringW& dyn_AcceptedEULAVersion();
+    [[deprecated]] ::StringW& dyn_AcceptedEULAVersion();
     // public override System.String get_Key()
-    // Offset: 0x13ABB30
+    // Offset: 0x191FAA4
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
     // public override System.Int32 get_Version()
-    // Offset: 0x13ABB74
+    // Offset: 0x191FAE8
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Int32 BaseDataModel::get_Version()
     int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x13AB2E4
+    // Offset: 0x191F258
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
     // Base method: System.Void Object::.ctor()

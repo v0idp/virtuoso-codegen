@@ -31,15 +31,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionsLibraryUI::$$c__DisplayClass64_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.SessionsLibraryUI <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -54,14 +46,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SessionsLibraryUI::SessionSaveData*) == 0x8);
     public:
     // Get instance field reference: public VROSC.SessionsLibraryUI <>4__this
-    ::VROSC::SessionsLibraryUI*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SessionsLibraryUI*& dyn_$$4__this();
     // Get instance field reference: public VROSC.SessionsLibraryUI/VROSC.SessionSaveData sessionSaveData
-    ::VROSC::SessionsLibraryUI::SessionSaveData*& dyn_sessionSaveData();
-    // System.Void <SaveSession>b__0(VROSC.Error error)
-    // Offset: 0x134A23C
-    void $SaveSession$b__0(::VROSC::Error error);
+    [[deprecated]] ::VROSC::SessionsLibraryUI::SessionSaveData*& dyn_sessionSaveData();
+    // System.Void <SaveSession>b__0()
+    // Offset: 0x8D51B4
+    void $SaveSession$b__0();
+    // System.Void <SaveSession>b__1(VROSC.Error error)
+    // Offset: 0x8D51DC
+    void $SaveSession$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x134A234
+    // Offset: 0x8D51AC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -78,10 +73,18 @@ namespace VROSC {
 // Writing MetadataGetter for method: VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::$SaveSession$b__0
 // Il2CppName: <SaveSession>b__0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::*)(::VROSC::Error)>(&VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::$SaveSession$b__0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::*)()>(&VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::$SaveSession$b__0)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI::$$c__DisplayClass64_0*), "<SaveSession>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::$SaveSession$b__1
+// Il2CppName: <SaveSession>b__1
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::*)(::VROSC::Error)>(&VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::$SaveSession$b__1)> {
   static const MethodInfo* get() {
     static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI::$$c__DisplayClass64_0*), "<SaveSession>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI::$$c__DisplayClass64_0*), "<SaveSession>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
 // Writing MetadataGetter for method: VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::New_ctor

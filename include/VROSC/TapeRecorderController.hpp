@@ -43,15 +43,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TapeRecorderController : public ::VROSC::ToolController {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _closeButton
     // Size: 0x8
     // Offset: 0x70
@@ -78,18 +70,18 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::InfoPanel*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.TapeRecorder _tapeRecorder
-    ::VROSC::TapeRecorder*& dyn__tapeRecorder();
+    [[deprecated]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
     // Get instance field reference: protected VROSC.ControlPanelUI _controlPanelUI
-    ::VROSC::ControlPanelUI*& dyn__controlPanelUI();
+    [[deprecated]] ::VROSC::ControlPanelUI*& dyn__controlPanelUI();
     // Get instance field reference: protected VROSC.InfoPanel _infoPanel
-    ::VROSC::InfoPanel*& dyn__infoPanel();
+    [[deprecated]] ::VROSC::InfoPanel*& dyn__infoPanel();
     // private System.Void CloseButtonPressed()
-    // Offset: 0x13FAC0C
+    // Offset: 0xA22290
     void CloseButtonPressed();
     // public System.Void .ctor()
-    // Offset: 0x13FAC18
+    // Offset: 0xA2229C
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::.ctor()
     // Base method: System.Void WidgetController::.ctor()
@@ -104,17 +96,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TapeRecorderController*, creationType>()));
     }
     // public override System.Void Setup()
-    // Offset: 0x13FA7C4
+    // Offset: 0xA21E38
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::Setup()
     void Setup();
-    // protected override System.Void ResetWidget()
-    // Offset: 0x13FA984
-    // Implemented from: VROSC.WidgetController
-    // Base method: System.Void WidgetController::ResetWidget()
-    void ResetWidget();
     // protected override System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x13FA9EC
+    // Offset: 0xA21FF8
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::UserDataLoaded(VROSC.UserDataControllers user)
     void UserDataLoaded(::VROSC::UserDataControllers* user);
@@ -142,14 +129,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::TapeRecorderController::*)()>(&VROSC::TapeRecorderController::Setup)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::TapeRecorderController*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::TapeRecorderController::ResetWidget
-// Il2CppName: ResetWidget
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::TapeRecorderController::*)()>(&VROSC::TapeRecorderController::ResetWidget)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::TapeRecorderController*), "ResetWidget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::TapeRecorderController::UserDataLoaded

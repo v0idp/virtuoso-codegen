@@ -54,7 +54,7 @@ namespace System::IO::Compression {
     // Set static field: static public System.IO.Compression.ZipVersionMadeByPlatform Unix
     static void _set_Unix(::System::IO::Compression::ZipVersionMadeByPlatform value);
     // Get instance field reference: public System.Byte value__
-    uint8_t& dyn_value__();
+    [[deprecated]] uint8_t& dyn_value__();
   }; // System.IO.Compression.ZipVersionMadeByPlatform
   #pragma pack(pop)
   static check_size<sizeof(ZipVersionMadeByPlatform), 0 + sizeof(uint8_t)> __System_IO_Compression_ZipVersionMadeByPlatformSizeCheck;

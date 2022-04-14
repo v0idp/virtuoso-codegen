@@ -35,15 +35,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class FastEncoder : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.IO.Compression.FastEncoderWindow _inputWindow
     // Size: 0x8
     // Offset: 0x10
@@ -64,58 +56,58 @@ namespace System::IO::Compression {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: private readonly System.IO.Compression.FastEncoderWindow _inputWindow
-    ::System::IO::Compression::FastEncoderWindow*& dyn__inputWindow();
+    [[deprecated]] ::System::IO::Compression::FastEncoderWindow*& dyn__inputWindow();
     // Get instance field reference: private readonly System.IO.Compression.Match _currentMatch
-    ::System::IO::Compression::Match*& dyn__currentMatch();
+    [[deprecated]] ::System::IO::Compression::Match*& dyn__currentMatch();
     // Get instance field reference: private System.Double _lastCompressionRatio
-    double& dyn__lastCompressionRatio();
+    [[deprecated]] double& dyn__lastCompressionRatio();
     // System.Int32 get_BytesInHistory()
-    // Offset: 0x111D924
+    // Offset: 0x1695190
     int get_BytesInHistory();
     // System.IO.Compression.DeflateInput get_UnprocessedInput()
-    // Offset: 0x111D9B0
+    // Offset: 0x169521C
     ::System::IO::Compression::DeflateInput* get_UnprocessedInput();
     // System.Double get_LastCompressionRatio()
-    // Offset: 0x111DAEC
+    // Offset: 0x1695358
     double get_LastCompressionRatio();
     // System.Void FlushInput()
-    // Offset: 0x111D9CC
+    // Offset: 0x1695238
     void FlushInput();
     // System.Void GetBlock(System.IO.Compression.DeflateInput input, System.IO.Compression.OutputBuffer output, System.Int32 maxBytesToCopy)
-    // Offset: 0x111D9E4
+    // Offset: 0x1695250
     void GetBlock(::System::IO::Compression::DeflateInput* input, ::System::IO::Compression::OutputBuffer* output, int maxBytesToCopy);
     // System.Void GetCompressedData(System.IO.Compression.DeflateInput input, System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111D964
+    // Offset: 0x16951D0
     void GetCompressedData(::System::IO::Compression::DeflateInput* input, ::System::IO::Compression::OutputBuffer* output);
     // System.Void GetBlockHeader(System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111D95C
+    // Offset: 0x16951C8
     void GetBlockHeader(::System::IO::Compression::OutputBuffer* output);
     // System.Void GetBlockFooter(System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111D9C8
+    // Offset: 0x1695234
     void GetBlockFooter(::System::IO::Compression::OutputBuffer* output);
     // private System.Void GetCompressedOutput(System.IO.Compression.DeflateInput input, System.IO.Compression.OutputBuffer output, System.Int32 maxBytesToCopy)
-    // Offset: 0x111DB84
+    // Offset: 0x16953F0
     void GetCompressedOutput(::System::IO::Compression::DeflateInput* input, ::System::IO::Compression::OutputBuffer* output, int maxBytesToCopy);
     // private System.Void GetCompressedOutput(System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111DE4C
+    // Offset: 0x16956B8
     void GetCompressedOutput(::System::IO::Compression::OutputBuffer* output);
     // private System.Boolean InputAvailable(System.IO.Compression.DeflateInput input)
-    // Offset: 0x111DF30
+    // Offset: 0x169579C
     bool InputAvailable(::System::IO::Compression::DeflateInput* input);
     // private System.Boolean SafeToWriteTo(System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111DEFC
+    // Offset: 0x1695768
     bool SafeToWriteTo(::System::IO::Compression::OutputBuffer* output);
     // private System.Void WriteEndOfBlock(System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111DD54
+    // Offset: 0x16955C0
     void WriteEndOfBlock(::System::IO::Compression::OutputBuffer* output);
     // static System.Void WriteMatch(System.Int32 matchLen, System.Int32 matchPos, System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111E258
+    // Offset: 0x1695AC4
     static void WriteMatch(int matchLen, int matchPos, ::System::IO::Compression::OutputBuffer* output);
     // static System.Void WriteChar(System.Byte b, System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111E1A8
+    // Offset: 0x1695A14
     static void WriteChar(uint8_t b, ::System::IO::Compression::OutputBuffer* output);
     // static System.Void WriteDeflatePreamble(System.IO.Compression.OutputBuffer output)
-    // Offset: 0x111DAF4
+    // Offset: 0x1695360
     static void WriteDeflatePreamble(::System::IO::Compression::OutputBuffer* output);
   }; // System.IO.Compression.FastEncoder
   #pragma pack(pop)

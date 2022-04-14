@@ -56,15 +56,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ControllerRecordingUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _recText
     // Size: 0x8
     // Offset: 0x18
@@ -149,48 +141,48 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _recText
-    ::TMPro::TextMeshPro*& dyn__recText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__recText();
     // Get instance field reference: private VROSC.AdjustableMesh _recIndicator
-    ::VROSC::AdjustableMesh*& dyn__recIndicator();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__recIndicator();
     // Get instance field reference: private UnityEngine.Color _recordingColor
-    ::UnityEngine::Color& dyn__recordingColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__recordingColor();
     // Get instance field reference: private UnityEngine.Color _waitingColor
-    ::UnityEngine::Color& dyn__waitingColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__waitingColor();
     // Get instance field reference: private UnityEngine.Color _offColor
-    ::UnityEngine::Color& dyn__offColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralArc _arc
-    ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
+    [[deprecated]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralArc _arcBackground
-    ::VROSC::UI::Meshes::ProceduralArc*& dyn__arcBackground();
+    [[deprecated]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arcBackground();
     // Get instance field reference: private UnityEngine.Transform _arcRotator
-    ::UnityEngine::Transform*& dyn__arcRotator();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__arcRotator();
     // Get instance field reference: private VROSC.LoopStationRecordingProgress _recordingProgress
-    ::VROSC::LoopStationRecordingProgress*& dyn__recordingProgress();
+    [[deprecated]] ::VROSC::LoopStationRecordingProgress*& dyn__recordingProgress();
     // Get instance field reference: private System.Boolean _recording
-    bool& dyn__recording();
+    [[deprecated]] bool& dyn__recording();
     // Get instance field reference: private System.Boolean _waiting
-    bool& dyn__waiting();
+    [[deprecated]] bool& dyn__waiting();
     // Get instance field reference: private System.Single _offset
-    float& dyn__offset();
+    [[deprecated]] float& dyn__offset();
     // Get instance field reference: private VROSC.LoopStationRecorder _loopStationRecorder
-    ::VROSC::LoopStationRecorder*& dyn__loopStationRecorder();
+    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn__loopStationRecorder();
     // private System.Void Awake()
-    // Offset: 0x1339FCC
+    // Offset: 0x8DD968
     void Awake();
     // public System.Void LinkToRecorder(VROSC.LoopStationRecorder loopStationRecorder)
-    // Offset: 0x133A024
+    // Offset: 0x8DD9C0
     void LinkToRecorder(::VROSC::LoopStationRecorder* loopStationRecorder);
     // private System.Void RecorderStateChanged(VROSC.LoopStationRecorder/VROSC.RecordingState state)
-    // Offset: 0x133A338
+    // Offset: 0x8DDCD4
     void RecorderStateChanged(::VROSC::LoopStationRecorder::RecordingState state);
     // private System.Void Update()
-    // Offset: 0x133A354
+    // Offset: 0x8DDCF0
     void Update();
     // private System.Void SetRecording(System.Boolean recording)
-    // Offset: 0x133A120
+    // Offset: 0x8DDABC
     void SetRecording(bool recording);
     // public System.Void .ctor()
-    // Offset: 0x133A3F4
+    // Offset: 0x8DDD90
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

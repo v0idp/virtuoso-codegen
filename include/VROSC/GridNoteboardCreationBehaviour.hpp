@@ -56,15 +56,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class GridNoteboardCreationBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.GridNoteboard _gridNoteboard
     // Size: 0x8
     // Offset: 0x10
@@ -121,40 +113,40 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.GridNoteboard _gridNoteboard
-    ::VROSC::GridNoteboard*& dyn__gridNoteboard();
+    [[deprecated]] ::VROSC::GridNoteboard*& dyn__gridNoteboard();
     // Get instance field reference: private UnityEngine.Transform _fromPoint
-    ::UnityEngine::Transform*& dyn__fromPoint();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__fromPoint();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // Get instance field reference: private UnityEngine.Vector3[] _positionOffset
-    ::ArrayW<::UnityEngine::Vector3>& dyn__positionOffset();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__positionOffset();
     // Get instance field reference: private UnityEngine.Quaternion[] _rotationOffset
-    ::ArrayW<::UnityEngine::Quaternion>& dyn__rotationOffset();
+    [[deprecated]] ::ArrayW<::UnityEngine::Quaternion>& dyn__rotationOffset();
     // Get instance field reference: public System.Single StartPoint
-    float& dyn_StartPoint();
+    [[deprecated]] float& dyn_StartPoint();
     // Get instance field reference: public System.Single EndPoint
-    float& dyn_EndPoint();
+    [[deprecated]] float& dyn_EndPoint();
     // Get instance field reference: public UnityEngine.AnimationCurve Clustr
-    ::UnityEngine::AnimationCurve*& dyn_Clustr();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_Clustr();
     // Get instance field reference: public System.Boolean zPos
-    bool& dyn_zPos();
+    [[deprecated]] bool& dyn_zPos();
     // public System.Void Setup(VROSC.GridNoteboard gridNoteboard, UnityEngine.Transform fromPoint, UnityEngine.AnimationCurve curve)
-    // Offset: 0x894E88
+    // Offset: 0x19A813C
     void Setup(::VROSC::GridNoteboard* gridNoteboard, ::UnityEngine::Transform* fromPoint, ::UnityEngine::AnimationCurve* curve);
     // private System.Void X(VROSC.NoteBoardNote[,,] notes, System.Int32 xLength, System.Int32 yLength, System.Int32 zLength)
-    // Offset: 0x8953C8
+    // Offset: 0x19A867C
     void X(::ArrayW<::VROSC::NoteBoardNote*> notes, int xLength, int yLength, int zLength);
     // private System.Void Z(VROSC.NoteBoardNote[,,] notes, System.Int32 xLength, System.Int32 yLength, System.Int32 zLength)
-    // Offset: 0x8951FC
+    // Offset: 0x19A84B0
     void Z(::ArrayW<::VROSC::NoteBoardNote*> notes, int xLength, int yLength, int zLength);
     // private System.Void SetNoteValues(VROSC.NoteBoardNote note, System.Single activationTime, System.Int32 index, System.Single x)
-    // Offset: 0x895588
+    // Offset: 0x19A883C
     void SetNoteValues(::VROSC::NoteBoardNote* note, float activationTime, int index, float x);
     // private System.Void OnPlayableDestroy()
-    // Offset: 0x8959E8
+    // Offset: 0x19A8C9C
     void OnPlayableDestroy();
     // public System.Void .ctor()
-    // Offset: 0x895A90
+    // Offset: 0x19A8D44
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -164,7 +156,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<GridNoteboardCreationBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x8950DC
+    // Offset: 0x19A8390
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

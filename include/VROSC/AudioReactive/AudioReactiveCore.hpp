@@ -16,8 +16,8 @@
 // Forward declaring namespace: VROSC::AudioReactive
 namespace VROSC::AudioReactive {
 }
-// Forward declaring namespace: GlobalNamespace
-namespace GlobalNamespace {
+// Forward declaring namespace: VROSC
+namespace VROSC {
   // Forward declaring type: Environment
   class Environment;
 }
@@ -46,15 +46,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::AudioReactiveCore::BufferValue
     class BufferValue;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _fallSpeed
     // Size: 0x4
     // Offset: 0x18
@@ -67,12 +59,12 @@ namespace VROSC::AudioReactive {
     float coolDown;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // private Environment _environmentSettings
+    // private VROSC.Environment _environmentSettings
     // Size: 0x8
     // Offset: 0x20
-    ::GlobalNamespace::Environment* environmentSettings;
+    ::VROSC::Environment* environmentSettings;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::Environment*) == 0x8);
+    static_assert(sizeof(::VROSC::Environment*) == 0x8);
     // private VROSC.AudioReactive.AudioReactiveCore/VROSC.AudioReactive.BufferValue _bass
     // Size: 0x8
     // Offset: 0x28
@@ -99,46 +91,46 @@ namespace VROSC::AudioReactive {
     // Set static field: static public System.Action`1<System.Int32> OnBeat
     static void _set_OnBeat(::System::Action_1<int>* value);
     // Get instance field reference: private System.Single _fallSpeed
-    float& dyn__fallSpeed();
+    [[deprecated]] float& dyn__fallSpeed();
     // Get instance field reference: private System.Single _coolDown
-    float& dyn__coolDown();
-    // Get instance field reference: private Environment _environmentSettings
-    ::GlobalNamespace::Environment*& dyn__environmentSettings();
+    [[deprecated]] float& dyn__coolDown();
+    // Get instance field reference: private VROSC.Environment _environmentSettings
+    [[deprecated]] ::VROSC::Environment*& dyn__environmentSettings();
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveCore/VROSC.AudioReactive.BufferValue _bass
-    ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__bass();
+    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__bass();
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveCore/VROSC.AudioReactive.BufferValue _mid
-    ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__mid();
+    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__mid();
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveCore/VROSC.AudioReactive.BufferValue _top
-    ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__top();
+    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__top();
     // private System.Void Awake()
-    // Offset: 0x13720AC
+    // Offset: 0x970E40
     void Awake();
     // private System.Void Update()
-    // Offset: 0x13723EC
+    // Offset: 0x971180
     void Update();
-    // private System.Void SetCurrentEnvironment(Environment environmentSettings)
-    // Offset: 0x137256C
-    void SetCurrentEnvironment(::GlobalNamespace::Environment* environmentSettings);
+    // private System.Void SetCurrentEnvironment(VROSC.Environment environmentSettings)
+    // Offset: 0x971300
+    void SetCurrentEnvironment(::VROSC::Environment* environmentSettings);
     // private System.Void SendBeat(System.Int32 beat)
-    // Offset: 0x1372574
+    // Offset: 0x971308
     void SendBeat(int beat);
     // private System.Void SendPlayermadeSound(System.Int32 beat)
-    // Offset: 0x13725F0
+    // Offset: 0x971384
     void SendPlayermadeSound(int beat);
     // private System.Void OnDestroy()
-    // Offset: 0x137266C
+    // Offset: 0x971400
     void OnDestroy();
     // private System.Void <Awake>b__8_0()
-    // Offset: 0x137289C
+    // Offset: 0x971630
     void $Awake$b__8_0();
     // private System.Void <Awake>b__8_1()
-    // Offset: 0x13728A4
+    // Offset: 0x971638
     void $Awake$b__8_1();
     // private System.Void <Awake>b__8_2()
-    // Offset: 0x13728AC
+    // Offset: 0x971640
     void $Awake$b__8_2();
     // public System.Void .ctor()
-    // Offset: 0x1372800
+    // Offset: 0x971594
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -175,9 +167,9 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 // Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveCore::SetCurrentEnvironment
 // Il2CppName: SetCurrentEnvironment
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::AudioReactive::AudioReactiveCore::*)(::GlobalNamespace::Environment*)>(&VROSC::AudioReactive::AudioReactiveCore::SetCurrentEnvironment)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::AudioReactive::AudioReactiveCore::*)(::VROSC::Environment*)>(&VROSC::AudioReactive::AudioReactiveCore::SetCurrentEnvironment)> {
   static const MethodInfo* get() {
-    static auto* environmentSettings = &::il2cpp_utils::GetClassFromName("", "Environment")->byval_arg;
+    static auto* environmentSettings = &::il2cpp_utils::GetClassFromName("VROSC", "Environment")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioReactive::AudioReactiveCore*), "SetCurrentEnvironment", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{environmentSettings});
   }
 };

@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class OrganPipeCreationBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.OrganPipeRow _row
     // Size: 0x8
     // Offset: 0x10
@@ -84,24 +76,24 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: private VROSC.OrganPipeRow _row
-    ::VROSC::OrganPipeRow*& dyn__row();
+    [[deprecated]] ::VROSC::OrganPipeRow*& dyn__row();
     // Get instance field reference: public System.Single Appear
-    float& dyn_Appear();
+    [[deprecated]] float& dyn_Appear();
     // Get instance field reference: private UnityEngine.AnimationCurve _animationStartCurve
-    ::UnityEngine::AnimationCurve*& dyn__animationStartCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__animationStartCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _animateionEndCurve
-    ::UnityEngine::AnimationCurve*& dyn__animateionEndCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__animateionEndCurve();
     // public System.Void Setup(VROSC.OrganPipeRow row, UnityEngine.AnimationCurve animationStartCurve, UnityEngine.AnimationCurve animateionEndCurve)
-    // Offset: 0x91E6A8
+    // Offset: 0xC68C10
     void Setup(::VROSC::OrganPipeRow* row, ::UnityEngine::AnimationCurve* animationStartCurve, ::UnityEngine::AnimationCurve* animateionEndCurve);
     // private System.Single GetAnimationValue(System.Single note, System.Single time)
-    // Offset: 0x91E95C
+    // Offset: 0xC68E44
     float GetAnimationValue(float note, float time);
     // private System.Void OnPlayableDestroy()
-    // Offset: 0x91E9D4
+    // Offset: 0xC68EBC
     void OnPlayableDestroy();
     // public System.Void .ctor()
-    // Offset: 0x91EBF4
+    // Offset: 0xC68F60
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -111,7 +103,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<OrganPipeCreationBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x91E7D8
+    // Offset: 0xC68CE8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

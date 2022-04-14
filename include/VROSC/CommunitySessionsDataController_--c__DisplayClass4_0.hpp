@@ -33,15 +33,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class CommunitySessionsDataController::$$c__DisplayClass4_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.CommunitySessionsDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -56,14 +48,14 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.CommunitySessionsDataController <>4__this
-    ::VROSC::CommunitySessionsDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::CommunitySessionsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action`1<System.String> onSuccess
-    ::System::Action_1<::StringW>*& dyn_onSuccess();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onSuccess();
     // System.Void <SaveSessionToCloud>b__0()
-    // Offset: 0x1360B24
+    // Offset: 0x95D618
     void $SaveSessionToCloud$b__0();
     // public System.Void .ctor()
-    // Offset: 0x1360B1C
+    // Offset: 0x95D610
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

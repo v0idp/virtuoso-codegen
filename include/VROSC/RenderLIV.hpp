@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class RenderLIV : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _livActive
     // Size: 0x1
     // Offset: 0x18
@@ -64,23 +56,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _livActive
-    bool& dyn__livActive();
+    [[deprecated]] bool& dyn__livActive();
     // Get instance field reference: private UnityEngine.Camera _camera
-    ::UnityEngine::Camera*& dyn__camera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn__camera();
     // public System.Void Setup()
-    // Offset: 0x99979C
+    // Offset: 0xB32240
     void Setup();
     // public System.Void Activate()
-    // Offset: 0x9997F0
+    // Offset: 0xB32294
     void Activate();
     // public System.Void Deactivate()
-    // Offset: 0x99982C
+    // Offset: 0xB322D0
     void Deactivate();
     // protected System.Void OnRenderImage(UnityEngine.RenderTexture src, UnityEngine.RenderTexture dest)
-    // Offset: 0x999890
+    // Offset: 0xB32334
     void OnRenderImage(::UnityEngine::RenderTexture* src, ::UnityEngine::RenderTexture* dest);
     // public System.Void .ctor()
-    // Offset: 0x999950
+    // Offset: 0xB323F4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

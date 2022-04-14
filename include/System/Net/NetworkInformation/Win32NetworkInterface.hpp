@@ -39,10 +39,10 @@ namespace System::Net::NetworkInformation {
     // Set static field: static private System.Boolean initialized
     static void _set_initialized(bool value);
     // static public System.Net.NetworkInformation.Win32_FIXED_INFO get_FixedInfo()
-    // Offset: 0xAC3058
+    // Offset: 0xC4E674
     static ::System::Net::NetworkInformation::Win32_FIXED_INFO get_FixedInfo();
     // static private System.Int32 GetNetworkParams(System.IntPtr ptr, ref System.Int32 size)
-    // Offset: 0xAC3194
+    // Offset: 0xC4E7B0
     static int GetNetworkParams(::System::IntPtr ptr, ByRef<int> size);
   }; // System.Net.NetworkInformation.Win32NetworkInterface
   #pragma pack(pop)

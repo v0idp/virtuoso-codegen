@@ -30,7 +30,7 @@ namespace UnityEngine {
   class PlayerPrefsException : public ::System::Exception {
     public:
     // public System.Void .ctor(System.String error)
-    // Offset: 0x9D2B14
+    // Offset: 0xBC78BC
     // Implemented from: System.Exception
     // Base method: System.Void Exception::.ctor(System.String error)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

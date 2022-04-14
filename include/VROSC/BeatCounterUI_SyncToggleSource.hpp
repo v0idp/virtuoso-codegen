@@ -63,7 +63,7 @@ namespace VROSC {
     // Set static field: static public VROSC.BeatCounterUI/VROSC.SyncToggleSource Reset
     static void _set_Reset(::VROSC::BeatCounterUI::SyncToggleSource value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.BeatCounterUI/VROSC.SyncToggleSource
   #pragma pack(pop)
   static check_size<sizeof(BeatCounterUI::SyncToggleSource), 0 + sizeof(int)> __VROSC_BeatCounterUI_SyncToggleSourceSizeCheck;

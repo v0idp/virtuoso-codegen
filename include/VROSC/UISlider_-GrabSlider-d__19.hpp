@@ -37,15 +37,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UISlider::$GrabSlider$d__19 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -98,40 +90,40 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.UISlider <>4__this
-    ::VROSC::UISlider*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UISlider*& dyn_$$4__this();
     // Get instance field reference: public VROSC.InputDevice device
-    ::VROSC::InputDevice*& dyn_device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_device();
     // Get instance field reference: public VROSC.TriggerButton grabbingButton
-    ::VROSC::TriggerButton& dyn_grabbingButton();
+    [[deprecated]] ::VROSC::TriggerButton& dyn_grabbingButton();
     // Get instance field reference: public System.Boolean pointing
-    bool& dyn_pointing();
+    [[deprecated]] bool& dyn_pointing();
     // Get instance field reference: private UnityEngine.Vector3 <point>5__2
-    ::UnityEngine::Vector3& dyn_$point$5__2();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$point$5__2();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x140EE48
+    // Offset: 0xE80F1C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x140EE90
+    // Offset: 0xE80F64
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x140EB80
+    // Offset: 0xE80C54
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISlider::$GrabSlider$d__19* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISlider::$GrabSlider$d__19::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UISlider::$GrabSlider$d__19*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x140EBAC
+    // Offset: 0xE80C80
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x140EBB0
+    // Offset: 0xE80C84
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x140EE50
+    // Offset: 0xE80F24
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.UISlider/VROSC.<GrabSlider>d__19
   #pragma pack(pop)

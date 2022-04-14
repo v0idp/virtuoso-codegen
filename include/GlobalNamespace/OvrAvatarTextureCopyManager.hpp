@@ -111,11 +111,11 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Boolean Initialized
-      bool& dyn_Initialized();
+      [[deprecated]] bool& dyn_Initialized();
       // Get instance field reference: public UnityEngine.Texture2D DiffuseRoughness
-      ::UnityEngine::Texture2D*& dyn_DiffuseRoughness();
+      [[deprecated]] ::UnityEngine::Texture2D*& dyn_DiffuseRoughness();
       // Get instance field reference: public UnityEngine.Texture2D Normal
-      ::UnityEngine::Texture2D*& dyn_Normal();
+      [[deprecated]] ::UnityEngine::Texture2D*& dyn_Normal();
     }; // OvrAvatarTextureCopyManager/FallbackTextureSet
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarTextureCopyManager::FallbackTextureSet), 16 + sizeof(::UnityEngine::Texture2D*)> __GlobalNamespace_OvrAvatarTextureCopyManager_FallbackTextureSetSizeCheck;
@@ -166,17 +166,17 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Texture Src
-      ::UnityEngine::Texture*& dyn_Src();
+      [[deprecated]] ::UnityEngine::Texture*& dyn_Src();
       // Get instance field reference: public UnityEngine.Texture Dst
-      ::UnityEngine::Texture*& dyn_Dst();
+      [[deprecated]] ::UnityEngine::Texture*& dyn_Dst();
       // Get instance field reference: public System.Int32 Mip
-      int& dyn_Mip();
+      [[deprecated]] int& dyn_Mip();
       // Get instance field reference: public System.Int32 SrcSize
-      int& dyn_SrcSize();
+      [[deprecated]] int& dyn_SrcSize();
       // Get instance field reference: public System.Int32 DstElement
-      int& dyn_DstElement();
+      [[deprecated]] int& dyn_DstElement();
       // public System.Void .ctor(UnityEngine.Texture src, UnityEngine.Texture dst, System.Int32 mip, System.Int32 srcSize, System.Int32 dstElement)
-      // Offset: 0x13421C8
+      // Offset: 0x8CD0EC
       // ABORTED: conflicts with another method.  CopyTextureParams(::UnityEngine::Texture* src, ::UnityEngine::Texture* dst, int mip, int srcSize, int dstElement);
     }; // OvrAvatarTextureCopyManager/CopyTextureParams
     #pragma pack(pop)
@@ -210,25 +210,17 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.UInt64,System.Boolean> TextureIDSingleMeshPair
-      ::System::Collections::Generic::Dictionary_2<uint64_t, bool>*& dyn_TextureIDSingleMeshPair();
+      [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, bool>*& dyn_TextureIDSingleMeshPair();
       // Get instance field reference: public System.Boolean IsProcessed
-      bool& dyn_IsProcessed();
+      [[deprecated]] bool& dyn_IsProcessed();
       // public System.Void .ctor(System.Collections.Generic.Dictionary`2<System.UInt64,System.Boolean> textureIDSingleMeshPair, System.Boolean isProcessed)
-      // Offset: 0x13421D8
+      // Offset: 0x8CD0FC
       // ABORTED: conflicts with another method.  TextureSet(::System::Collections::Generic::Dictionary_2<uint64_t, bool>* textureIDSingleMeshPair, bool isProcessed);
     }; // OvrAvatarTextureCopyManager/TextureSet
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarTextureCopyManager::TextureSet), 8 + sizeof(bool)> __GlobalNamespace_OvrAvatarTextureCopyManager_TextureSetSizeCheck;
     static_assert(sizeof(OvrAvatarTextureCopyManager::TextureSet) == 0x9);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OvrAvatarTextureCopyManager/FallbackTextureSet[] FallbackTextureSets
     // Size: 0x8
     // Offset: 0x18
@@ -317,44 +309,44 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 GPU_TEXTURE_COPY_WAIT_TIME
     static void _set_GPU_TEXTURE_COPY_WAIT_TIME(int value);
     // Get instance field reference: public OvrAvatarTextureCopyManager/FallbackTextureSet[] FallbackTextureSets
-    ::ArrayW<::GlobalNamespace::OvrAvatarTextureCopyManager::FallbackTextureSet>& dyn_FallbackTextureSets();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OvrAvatarTextureCopyManager::FallbackTextureSet>& dyn_FallbackTextureSets();
     // Get instance field reference: private System.Collections.Generic.Queue`1<OvrAvatarTextureCopyManager/CopyTextureParams> texturesToCopy
-    ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarTextureCopyManager::CopyTextureParams>*& dyn_texturesToCopy();
+    [[deprecated]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarTextureCopyManager::CopyTextureParams>*& dyn_texturesToCopy();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,OvrAvatarTextureCopyManager/TextureSet> textureSets
-    ::System::Collections::Generic::Dictionary_2<int, ::GlobalNamespace::OvrAvatarTextureCopyManager::TextureSet>*& dyn_textureSets();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::GlobalNamespace::OvrAvatarTextureCopyManager::TextureSet>*& dyn_textureSets();
     // Get instance field reference: private readonly System.String[] FALLBACK_TEXTURE_PATHS_DIFFUSE_ROUGHNESS
-    ::ArrayW<::StringW>& dyn_FALLBACK_TEXTURE_PATHS_DIFFUSE_ROUGHNESS();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_FALLBACK_TEXTURE_PATHS_DIFFUSE_ROUGHNESS();
     // Get instance field reference: private readonly System.String[] FALLBACK_TEXTURE_PATHS_NORMAL
-    ::ArrayW<::StringW>& dyn_FALLBACK_TEXTURE_PATHS_NORMAL();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_FALLBACK_TEXTURE_PATHS_NORMAL();
     // public System.Void Update()
-    // Offset: 0x8F4C54
+    // Offset: 0xAD93DC
     void Update();
     // public System.Int32 GetTextureCount()
-    // Offset: 0x8F4E54
+    // Offset: 0xAD95DC
     int GetTextureCount();
     // public System.Void CopyTexture(UnityEngine.Texture src, UnityEngine.Texture dst, System.Int32 mipLevel, System.Int32 mipSize, System.Int32 dstElement, System.Boolean useQueue)
-    // Offset: 0x8F4EA0
+    // Offset: 0xAD9628
     void CopyTexture(::UnityEngine::Texture* src, ::UnityEngine::Texture* dst, int mipLevel, int mipSize, int dstElement, bool useQueue);
     // private System.Void CopyTexture(OvrAvatarTextureCopyManager/CopyTextureParams copyTextureParams)
-    // Offset: 0x8F4DC8
+    // Offset: 0xAD9550
     void CopyTexture(::GlobalNamespace::OvrAvatarTextureCopyManager::CopyTextureParams copyTextureParams);
     // public System.Void AddTextureIDToTextureSet(System.Int32 gameobjectID, System.UInt64 textureID, System.Boolean isSingleMesh)
-    // Offset: 0x8F504C
+    // Offset: 0xAD97D4
     void AddTextureIDToTextureSet(int gameobjectID, uint64_t textureID, bool isSingleMesh);
     // public System.Void DeleteTextureSet(System.Int32 gameobjectID)
-    // Offset: 0x8F5254
+    // Offset: 0xAD99DC
     void DeleteTextureSet(int gameobjectID);
     // private System.Collections.IEnumerator DeleteTextureSetCoroutine(OvrAvatarTextureCopyManager/TextureSet textureSetToDelete, System.Int32 gameobjectID)
-    // Offset: 0x8F52F8
+    // Offset: 0xAD9A80
     ::System::Collections::IEnumerator* DeleteTextureSetCoroutine(::GlobalNamespace::OvrAvatarTextureCopyManager::TextureSet textureSetToDelete, int gameobjectID);
     // public System.Void CheckFallbackTextureSet(ovrAvatarAssetLevelOfDetail lod)
-    // Offset: 0x8F1880
+    // Offset: 0xAD9B10
     void CheckFallbackTextureSet(::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod);
     // private System.Void InitFallbackTextureSet(ovrAvatarAssetLevelOfDetail lod)
-    // Offset: 0x8F5388
+    // Offset: 0xAD9B5C
     void InitFallbackTextureSet(::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod);
     // public System.Void .ctor()
-    // Offset: 0x8F486C
+    // Offset: 0xAD8FF4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -26,15 +26,7 @@ namespace System::Threading {
   // [TokenAttribute] Offset: FFFFFFFF
   class AtomicBoolean : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 flag
     // Size: 0x4
     // Offset: 0x10
@@ -47,18 +39,18 @@ namespace System::Threading {
       return flag;
     }
     // Get instance field reference: private System.Int32 flag
-    int& dyn_flag();
+    [[deprecated]] int& dyn_flag();
     // public System.Boolean TryRelaxedSet()
-    // Offset: 0xDEEFC8
+    // Offset: 0x1147AC0
     bool TryRelaxedSet();
     // public System.Boolean Exchange(System.Boolean newVal)
-    // Offset: 0xDEEFFC
+    // Offset: 0x1147AF4
     bool Exchange(bool newVal);
     // public System.Boolean Equals(System.Threading.AtomicBoolean rhs)
-    // Offset: 0xDEF024
+    // Offset: 0x1147B1C
     bool Equals(::System::Threading::AtomicBoolean* rhs);
     // public System.Void .ctor()
-    // Offset: 0xDEF0EC
+    // Offset: 0x1147BE4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -67,12 +59,12 @@ namespace System::Threading {
       return THROW_UNLESS((::il2cpp_utils::New<AtomicBoolean*, creationType>()));
     }
     // public override System.Boolean Equals(System.Object rhs)
-    // Offset: 0xDEF048
+    // Offset: 0x1147B40
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object rhs)
     bool Equals(::Il2CppObject* rhs);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xDEF0E0
+    // Offset: 0x1147BD8
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();

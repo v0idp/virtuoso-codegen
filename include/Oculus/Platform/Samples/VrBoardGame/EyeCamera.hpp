@@ -54,15 +54,7 @@ namespace Oculus::Platform::Samples::VrBoardGame {
   // [TokenAttribute] Offset: FFFFFFFF
   class EyeCamera : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.EventSystems.EventSystem m_eventSystem
     // Size: 0x8
     // Offset: 0x18
@@ -103,22 +95,22 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.EventSystems.EventSystem m_eventSystem
-    ::UnityEngine::EventSystems::EventSystem*& dyn_m_eventSystem();
+    [[deprecated]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_eventSystem();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameController m_gameController
-    ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
     // Get instance field reference: private UnityEngine.SphereCollider m_gazeTracker
-    ::UnityEngine::SphereCollider*& dyn_m_gazeTracker();
+    [[deprecated]] ::UnityEngine::SphereCollider*& dyn_m_gazeTracker();
     // Get instance field reference: private UnityEngine.UI.Button m_currentButton
-    ::UnityEngine::UI::Button*& dyn_m_currentButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn_m_currentButton();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_currentPiece
-    ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_currentPiece();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_currentPiece();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.BoardPosition m_boardPosition
-    ::Oculus::Platform::Samples::VrBoardGame::BoardPosition*& dyn_m_boardPosition();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::BoardPosition*& dyn_m_boardPosition();
     // private System.Void Update()
-    // Offset: 0x7E82BC
+    // Offset: 0x92E69C
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x7E8B98
+    // Offset: 0x92EF78
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

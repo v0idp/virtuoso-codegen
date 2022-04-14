@@ -38,15 +38,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class LaunchDetails : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String DeeplinkMessage
     // Size: 0x8
     // Offset: 0x10
@@ -91,7 +83,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::UserList* UsersOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A51B4
+    // [ObsoleteAttribute] Offset: 0x6B9368
     // public readonly Oculus.Platform.Models.UserList Users
     // Size: 0x8
     // Offset: 0x48
@@ -100,23 +92,23 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
     public:
     // Get instance field reference: public readonly System.String DeeplinkMessage
-    ::StringW& dyn_DeeplinkMessage();
+    [[deprecated]] ::StringW& dyn_DeeplinkMessage();
     // Get instance field reference: public readonly System.String DestinationApiName
-    ::StringW& dyn_DestinationApiName();
+    [[deprecated]] ::StringW& dyn_DestinationApiName();
     // Get instance field reference: public readonly System.String LaunchSource
-    ::StringW& dyn_LaunchSource();
+    [[deprecated]] ::StringW& dyn_LaunchSource();
     // Get instance field reference: public readonly Oculus.Platform.LaunchType LaunchType
-    ::Oculus::Platform::LaunchType& dyn_LaunchType();
+    [[deprecated]] ::Oculus::Platform::LaunchType& dyn_LaunchType();
     // Get instance field reference: public readonly System.UInt64 RoomID
-    uint64_t& dyn_RoomID();
+    [[deprecated]] uint64_t& dyn_RoomID();
     // Get instance field reference: public readonly System.String TrackingID
-    ::StringW& dyn_TrackingID();
+    [[deprecated]] ::StringW& dyn_TrackingID();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList UsersOptional
-    ::Oculus::Platform::Models::UserList*& dyn_UsersOptional();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_UsersOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList Users
-    ::Oculus::Platform::Models::UserList*& dyn_Users();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_Users();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x968AE8
+    // Offset: 0xB3AE84
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LaunchDetails* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::LaunchDetails::.ctor");

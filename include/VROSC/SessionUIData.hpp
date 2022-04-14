@@ -96,20 +96,12 @@ namespace VROSC {
       // Set static field: static public VROSC.SessionUIData/VROSC.Type Community
       static void _set_Community(::VROSC::SessionUIData::Type value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.SessionUIData/VROSC.Type
     #pragma pack(pop)
     static check_size<sizeof(SessionUIData::Type), 0 + sizeof(int)> __VROSC_SessionUIData_TypeSizeCheck;
     static_assert(sizeof(SessionUIData::Type) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String <SessionId>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -184,106 +176,106 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String <SessionId>k__BackingField
-    ::StringW& dyn_$SessionId$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$SessionId$k__BackingField();
     // Get instance field reference: private System.DateTime <Date>k__BackingField
-    ::System::DateTime& dyn_$Date$k__BackingField();
+    [[deprecated]] ::System::DateTime& dyn_$Date$k__BackingField();
     // Get instance field reference: private System.String <DisplayName>k__BackingField
-    ::StringW& dyn_$DisplayName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$DisplayName$k__BackingField();
     // Get instance field reference: private System.String <Description>k__BackingField
-    ::StringW& dyn_$Description$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$Description$k__BackingField();
     // Get instance field reference: private System.String <AuthorName>k__BackingField
-    ::StringW& dyn_$AuthorName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$AuthorName$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> <ContributorsNames>k__BackingField
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_$ContributorsNames$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_$ContributorsNames$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> <Tags>k__BackingField
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_$Tags$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_$Tags$k__BackingField();
     // Get instance field reference: private System.Int32 <UpVotesCount>k__BackingField
-    int& dyn_$UpVotesCount$k__BackingField();
+    [[deprecated]] int& dyn_$UpVotesCount$k__BackingField();
     // Get instance field reference: private System.Int32 <FavoritesCount>k__BackingField
-    int& dyn_$FavoritesCount$k__BackingField();
+    [[deprecated]] int& dyn_$FavoritesCount$k__BackingField();
     // Get instance field reference: private System.Int32 <DownloadsCount>k__BackingField
-    int& dyn_$DownloadsCount$k__BackingField();
+    [[deprecated]] int& dyn_$DownloadsCount$k__BackingField();
     // Get instance field reference: private VROSC.SessionUIData/VROSC.Type <SessionType>k__BackingField
-    ::VROSC::SessionUIData::Type& dyn_$SessionType$k__BackingField();
+    [[deprecated]] ::VROSC::SessionUIData::Type& dyn_$SessionType$k__BackingField();
     // Get instance field reference: private System.Boolean <HasPreview>k__BackingField
-    bool& dyn_$HasPreview$k__BackingField();
+    [[deprecated]] bool& dyn_$HasPreview$k__BackingField();
     // public System.String get_SessionId()
-    // Offset: 0x13E8DBC
+    // Offset: 0x19882D4
     ::StringW get_SessionId();
     // private System.Void set_SessionId(System.String value)
-    // Offset: 0x13E8DC4
+    // Offset: 0x19882DC
     void set_SessionId(::StringW value);
     // public System.DateTime get_Date()
-    // Offset: 0x13E8DCC
+    // Offset: 0x19882E4
     ::System::DateTime get_Date();
     // private System.Void set_Date(System.DateTime value)
-    // Offset: 0x13E8DD4
+    // Offset: 0x19882EC
     void set_Date(::System::DateTime value);
     // public System.String get_DisplayName()
-    // Offset: 0x13E8DDC
+    // Offset: 0x19882F4
     ::StringW get_DisplayName();
     // private System.Void set_DisplayName(System.String value)
-    // Offset: 0x13E8DE4
+    // Offset: 0x19882FC
     void set_DisplayName(::StringW value);
     // public System.String get_Description()
-    // Offset: 0x13E8DEC
+    // Offset: 0x1988304
     ::StringW get_Description();
     // private System.Void set_Description(System.String value)
-    // Offset: 0x13E8DF4
+    // Offset: 0x198830C
     void set_Description(::StringW value);
     // public System.String get_AuthorName()
-    // Offset: 0x13E8DFC
+    // Offset: 0x1988314
     ::StringW get_AuthorName();
     // private System.Void set_AuthorName(System.String value)
-    // Offset: 0x13E8E04
+    // Offset: 0x198831C
     void set_AuthorName(::StringW value);
     // public System.Collections.Generic.List`1<System.String> get_ContributorsNames()
-    // Offset: 0x13E8E0C
+    // Offset: 0x1988324
     ::System::Collections::Generic::List_1<::StringW>* get_ContributorsNames();
     // private System.Void set_ContributorsNames(System.Collections.Generic.List`1<System.String> value)
-    // Offset: 0x13E8E14
+    // Offset: 0x198832C
     void set_ContributorsNames(::System::Collections::Generic::List_1<::StringW>* value);
     // public System.Collections.Generic.List`1<System.String> get_Tags()
-    // Offset: 0x13E8E1C
+    // Offset: 0x1988334
     ::System::Collections::Generic::List_1<::StringW>* get_Tags();
     // private System.Void set_Tags(System.Collections.Generic.List`1<System.String> value)
-    // Offset: 0x13E8E24
+    // Offset: 0x198833C
     void set_Tags(::System::Collections::Generic::List_1<::StringW>* value);
     // public System.Int32 get_UpVotesCount()
-    // Offset: 0x13E8E2C
+    // Offset: 0x1988344
     int get_UpVotesCount();
     // private System.Void set_UpVotesCount(System.Int32 value)
-    // Offset: 0x13E8E34
+    // Offset: 0x198834C
     void set_UpVotesCount(int value);
     // public System.Int32 get_FavoritesCount()
-    // Offset: 0x13E8E3C
+    // Offset: 0x1988354
     int get_FavoritesCount();
     // private System.Void set_FavoritesCount(System.Int32 value)
-    // Offset: 0x13E8E44
+    // Offset: 0x198835C
     void set_FavoritesCount(int value);
     // public System.Int32 get_DownloadsCount()
-    // Offset: 0x13E8E4C
+    // Offset: 0x1988364
     int get_DownloadsCount();
     // private System.Void set_DownloadsCount(System.Int32 value)
-    // Offset: 0x13E8E54
+    // Offset: 0x198836C
     void set_DownloadsCount(int value);
     // public VROSC.SessionUIData/VROSC.Type get_SessionType()
-    // Offset: 0x13E8E5C
+    // Offset: 0x1988374
     ::VROSC::SessionUIData::Type get_SessionType();
     // private System.Void set_SessionType(VROSC.SessionUIData/VROSC.Type value)
-    // Offset: 0x13E8E64
+    // Offset: 0x198837C
     void set_SessionType(::VROSC::SessionUIData::Type value);
     // public System.Boolean get_HasPreview()
-    // Offset: 0x13E8E6C
+    // Offset: 0x1988384
     bool get_HasPreview();
     // private System.Void set_HasPreview(System.Boolean value)
-    // Offset: 0x13E8E74
+    // Offset: 0x198838C
     void set_HasPreview(bool value);
     // public System.Int32 get_Popularity()
-    // Offset: 0x13E8E80
+    // Offset: 0x1988398
     int get_Popularity();
     // public System.Void .ctor(VROSC.Session session, System.Boolean isCloudSave, System.Boolean isMySharedSave, System.Boolean isCommunitySave)
-    // Offset: 0x13E8E9C
+    // Offset: 0x19883B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionUIData* New_ctor(::VROSC::Session* session, bool isCloudSave, bool isMySharedSave, bool isCommunitySave) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionUIData::.ctor");

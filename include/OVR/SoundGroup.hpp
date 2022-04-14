@@ -42,15 +42,7 @@ namespace OVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class SoundGroup : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String name
     // Size: 0x8
     // Offset: 0x10
@@ -69,7 +61,7 @@ namespace OVR {
     ::UnityEngine::Audio::AudioMixerGroup* mixerGroup;
     // Field size check
     static_assert(sizeof(::UnityEngine::Audio::AudioMixerGroup*) == 0x8);
-    // [RangeAttribute] Offset: 0x5D553C
+    // [RangeAttribute] Offset: 0x6EE148
     // public System.Int32 maxPlayingSounds
     // Size: 0x4
     // Offset: 0x28
@@ -96,37 +88,37 @@ namespace OVR {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: public OVR.SoundFX[] soundList
-    ::ArrayW<::OVR::SoundFX*>& dyn_soundList();
+    [[deprecated]] ::ArrayW<::OVR::SoundFX*>& dyn_soundList();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup mixerGroup
-    ::UnityEngine::Audio::AudioMixerGroup*& dyn_mixerGroup();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_mixerGroup();
     // Get instance field reference: public System.Int32 maxPlayingSounds
-    int& dyn_maxPlayingSounds();
+    [[deprecated]] int& dyn_maxPlayingSounds();
     // Get instance field reference: public OVR.PreloadSounds preloadAudio
-    ::OVR::PreloadSounds& dyn_preloadAudio();
+    [[deprecated]] ::OVR::PreloadSounds& dyn_preloadAudio();
     // Get instance field reference: public System.Single volumeOverride
-    float& dyn_volumeOverride();
+    [[deprecated]] float& dyn_volumeOverride();
     // Get instance field reference: public System.Int32 playingSoundCount
-    int& dyn_playingSoundCount();
+    [[deprecated]] int& dyn_playingSoundCount();
     // public System.Void .ctor(System.String name)
-    // Offset: 0x12A7D70
+    // Offset: 0x18A5914
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SoundGroup* New_ctor(::StringW name) {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::SoundGroup::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SoundGroup*, creationType>(name)));
     }
     // public System.Void IncrementPlayCount()
-    // Offset: 0x12A6EC4
+    // Offset: 0x18A4A68
     void IncrementPlayCount();
     // public System.Void DecrementPlayCount()
-    // Offset: 0x12A6FB0
+    // Offset: 0x18A4B54
     void DecrementPlayCount();
     // public System.Boolean CanPlaySound()
-    // Offset: 0x12A73F0
+    // Offset: 0x18A4F94
     bool CanPlaySound();
     // public System.Void .ctor()
-    // Offset: 0x12A7E0C
+    // Offset: 0x18A59B0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

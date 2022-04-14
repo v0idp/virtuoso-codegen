@@ -37,15 +37,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class DisablePointingTrigger : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.PointingLaser/VROSC.DisablingReason _disablingReason
     // Size: 0x4
     // Offset: 0x18
@@ -56,15 +48,15 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.PointingLaser/VROSC.DisablingReason _disablingReason
-    ::VROSC::PointingLaser::DisablingReason& dyn__disablingReason();
+    [[deprecated]] ::VROSC::PointingLaser::DisablingReason& dyn__disablingReason();
     // private System.Void OnTriggerEnter(UnityEngine.Collider other)
-    // Offset: 0x130BCF4
+    // Offset: 0x8E4EC4
     void OnTriggerEnter(::UnityEngine::Collider* other);
     // private System.Void OnTriggerExit(UnityEngine.Collider other)
-    // Offset: 0x130BDC8
+    // Offset: 0x8E4F98
     void OnTriggerExit(::UnityEngine::Collider* other);
     // public System.Void .ctor()
-    // Offset: 0x130BE9C
+    // Offset: 0x8E506C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

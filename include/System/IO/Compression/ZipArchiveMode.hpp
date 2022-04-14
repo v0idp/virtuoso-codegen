@@ -60,7 +60,7 @@ namespace System::IO::Compression {
     // Set static field: static public System.IO.Compression.ZipArchiveMode Update
     static void _set_Update(::System::IO::Compression::ZipArchiveMode value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // System.IO.Compression.ZipArchiveMode
   #pragma pack(pop)
   static check_size<sizeof(ZipArchiveMode), 0 + sizeof(int)> __System_IO_Compression_ZipArchiveModeSizeCheck;

@@ -45,30 +45,22 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRLipSyncContextMorphTarget : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x5E2408
+    // [TooltipAttribute] Offset: 0x6F9228
     // public UnityEngine.SkinnedMeshRenderer skinnedMeshRenderer
     // Size: 0x8
     // Offset: 0x18
     ::UnityEngine::SkinnedMeshRenderer* skinnedMeshRenderer;
     // Field size check
     static_assert(sizeof(::UnityEngine::SkinnedMeshRenderer*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5E2440
+    // [TooltipAttribute] Offset: 0x6F9260
     // public System.Int32[] visemeToBlendTargets
     // Size: 0x8
     // Offset: 0x20
     ::ArrayW<int> visemeToBlendTargets;
     // Field size check
     static_assert(sizeof(::ArrayW<int>) == 0x8);
-    // [TooltipAttribute] Offset: 0x5E2478
+    // [TooltipAttribute] Offset: 0x6F9298
     // public System.Boolean enableVisemeTestKeys
     // Size: 0x1
     // Offset: 0x28
@@ -77,45 +69,45 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: enableVisemeTestKeys and: visemeTestKeys
     char __padding2[0x7] = {};
-    // [TooltipAttribute] Offset: 0x5E24B0
+    // [TooltipAttribute] Offset: 0x6F92D0
     // public UnityEngine.KeyCode[] visemeTestKeys
     // Size: 0x8
     // Offset: 0x30
     ::ArrayW<::UnityEngine::KeyCode> visemeTestKeys;
     // Field size check
     static_assert(sizeof(::ArrayW<::UnityEngine::KeyCode>) == 0x8);
-    // [TooltipAttribute] Offset: 0x5E24E8
+    // [TooltipAttribute] Offset: 0x6F9308
     // public UnityEngine.KeyCode laughterKey
     // Size: 0x4
     // Offset: 0x38
     ::UnityEngine::KeyCode laughterKey;
     // Field size check
     static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
-    // [TooltipAttribute] Offset: 0x5E2520
+    // [TooltipAttribute] Offset: 0x6F9340
     // public System.Int32 laughterBlendTarget
     // Size: 0x4
     // Offset: 0x3C
     int laughterBlendTarget;
     // Field size check
     static_assert(sizeof(int) == 0x4);
-    // [TooltipAttribute] Offset: 0x5E2558
-    // [RangeAttribute] Offset: 0x5E2558
+    // [TooltipAttribute] Offset: 0x6F9378
+    // [RangeAttribute] Offset: 0x6F9378
     // public System.Single laughterThreshold
     // Size: 0x4
     // Offset: 0x40
     float laughterThreshold;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [TooltipAttribute] Offset: 0x5E25AC
-    // [RangeAttribute] Offset: 0x5E25AC
+    // [TooltipAttribute] Offset: 0x6F93CC
+    // [RangeAttribute] Offset: 0x6F93CC
     // public System.Single laughterMultiplier
     // Size: 0x4
     // Offset: 0x44
     float laughterMultiplier;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x5E2600
-    // [TooltipAttribute] Offset: 0x5E2600
+    // [RangeAttribute] Offset: 0x6F9420
+    // [TooltipAttribute] Offset: 0x6F9420
     // public System.Int32 smoothAmount
     // Size: 0x4
     // Offset: 0x48
@@ -134,48 +126,48 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.SkinnedMeshRenderer skinnedMeshRenderer
-    ::UnityEngine::SkinnedMeshRenderer*& dyn_skinnedMeshRenderer();
+    [[deprecated]] ::UnityEngine::SkinnedMeshRenderer*& dyn_skinnedMeshRenderer();
     // Get instance field reference: public System.Int32[] visemeToBlendTargets
-    ::ArrayW<int>& dyn_visemeToBlendTargets();
+    [[deprecated]] ::ArrayW<int>& dyn_visemeToBlendTargets();
     // Get instance field reference: public System.Boolean enableVisemeTestKeys
-    bool& dyn_enableVisemeTestKeys();
+    [[deprecated]] bool& dyn_enableVisemeTestKeys();
     // Get instance field reference: public UnityEngine.KeyCode[] visemeTestKeys
-    ::ArrayW<::UnityEngine::KeyCode>& dyn_visemeTestKeys();
+    [[deprecated]] ::ArrayW<::UnityEngine::KeyCode>& dyn_visemeTestKeys();
     // Get instance field reference: public UnityEngine.KeyCode laughterKey
-    ::UnityEngine::KeyCode& dyn_laughterKey();
+    [[deprecated]] ::UnityEngine::KeyCode& dyn_laughterKey();
     // Get instance field reference: public System.Int32 laughterBlendTarget
-    int& dyn_laughterBlendTarget();
+    [[deprecated]] int& dyn_laughterBlendTarget();
     // Get instance field reference: public System.Single laughterThreshold
-    float& dyn_laughterThreshold();
+    [[deprecated]] float& dyn_laughterThreshold();
     // Get instance field reference: public System.Single laughterMultiplier
-    float& dyn_laughterMultiplier();
+    [[deprecated]] float& dyn_laughterMultiplier();
     // Get instance field reference: public System.Int32 smoothAmount
-    int& dyn_smoothAmount();
+    [[deprecated]] int& dyn_smoothAmount();
     // Get instance field reference: private OVRLipSyncContextBase lipsyncContext
-    ::GlobalNamespace::OVRLipSyncContextBase*& dyn_lipsyncContext();
+    [[deprecated]] ::GlobalNamespace::OVRLipSyncContextBase*& dyn_lipsyncContext();
     // private System.Void Start()
-    // Offset: 0x12AC31C
+    // Offset: 0x18AAEC0
     void Start();
     // private System.Void Update()
-    // Offset: 0x12AC48C
+    // Offset: 0x18AB030
     void Update();
     // private System.Void CheckForKeys()
-    // Offset: 0x12AC6E4
+    // Offset: 0x18AB288
     void CheckForKeys();
     // private System.Void SetVisemeToMorphTarget(OVRLipSync/Frame frame)
-    // Offset: 0x12AC594
+    // Offset: 0x18AB138
     void SetVisemeToMorphTarget(::GlobalNamespace::OVRLipSync::Frame* frame);
     // private System.Void SetLaughterToMorphTarget(OVRLipSync/Frame frame)
-    // Offset: 0x12AC648
+    // Offset: 0x18AB1EC
     void SetLaughterToMorphTarget(::GlobalNamespace::OVRLipSync::Frame* frame);
     // private System.Void CheckVisemeKey(UnityEngine.KeyCode key, System.Int32 viseme, System.Int32 amount)
-    // Offset: 0x12AC7B0
+    // Offset: 0x18AB354
     void CheckVisemeKey(::UnityEngine::KeyCode key, int viseme, int amount);
     // private System.Void CheckLaughterKey()
-    // Offset: 0x12AC874
+    // Offset: 0x18AB418
     void CheckLaughterKey();
     // public System.Void .ctor()
-    // Offset: 0x12AC8DC
+    // Offset: 0x18AB480
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

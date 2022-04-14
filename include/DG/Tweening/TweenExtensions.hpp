@@ -45,22 +45,22 @@ namespace DG::Tweening {
   class TweenExtensions : public ::Il2CppObject {
     public:
     // static public System.Void Complete(DG.Tweening.Tween t)
-    // Offset: 0x1037AB4
+    // Offset: 0x15AE4AC
     static void Complete(::DG::Tweening::Tween* t);
     // static public System.Void Complete(DG.Tweening.Tween t, System.Boolean withCallbacks)
-    // Offset: 0x1037ABC
+    // Offset: 0x15AE4B4
     static void Complete(::DG::Tweening::Tween* t, bool withCallbacks);
     // static public System.Void Flip(DG.Tweening.Tween t)
-    // Offset: 0x1037D78
+    // Offset: 0x15AE770
     static void Flip(::DG::Tweening::Tween* t);
     // static public System.Void ForceInit(DG.Tweening.Tween t)
-    // Offset: 0x1037F0C
+    // Offset: 0x15AE904
     static void ForceInit(::DG::Tweening::Tween* t);
     // static public System.Void Goto(DG.Tweening.Tween t, System.Single to, System.Boolean andPlay)
-    // Offset: 0x1037034
+    // Offset: 0x15ADA2C
     static void Goto(::DG::Tweening::Tween* t, float to, bool andPlay);
     // static public System.Void Kill(DG.Tweening.Tween t, System.Boolean complete)
-    // Offset: 0x1038248
+    // Offset: 0x15AEC40
     static void Kill(::DG::Tweening::Tween* t, bool complete);
     // static public T Pause(T t)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -83,88 +83,88 @@ namespace DG::Tweening {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, t);
     }
     // static public System.Void PlayBackwards(DG.Tweening.Tween t)
-    // Offset: 0x1038A2C
+    // Offset: 0x15AF424
     static void PlayBackwards(::DG::Tweening::Tween* t);
     // static public System.Void PlayForward(DG.Tweening.Tween t)
-    // Offset: 0x1038CA0
+    // Offset: 0x15AF698
     static void PlayForward(::DG::Tweening::Tween* t);
     // static public System.Void Restart(DG.Tweening.Tween t, System.Boolean includeDelay, System.Single changeDelayTo)
-    // Offset: 0x1038ED4
+    // Offset: 0x15AF8CC
     static void Restart(::DG::Tweening::Tween* t, bool includeDelay, float changeDelayTo);
     // static public System.Void Rewind(DG.Tweening.Tween t, System.Boolean includeDelay)
-    // Offset: 0x103915C
+    // Offset: 0x15AFB54
     static void Rewind(::DG::Tweening::Tween* t, bool includeDelay);
     // static public System.Void SmoothRewind(DG.Tweening.Tween t)
-    // Offset: 0x1039410
+    // Offset: 0x15AFE08
     static void SmoothRewind(::DG::Tweening::Tween* t);
     // static public System.Void TogglePause(DG.Tweening.Tween t)
-    // Offset: 0x103967C
+    // Offset: 0x15B0074
     static void TogglePause(::DG::Tweening::Tween* t);
     // static public System.Void GotoWaypoint(DG.Tweening.Tween t, System.Int32 waypointIndex, System.Boolean andPlay)
-    // Offset: 0x103987C
+    // Offset: 0x15B0274
     static void GotoWaypoint(::DG::Tweening::Tween* t, int waypointIndex, bool andPlay);
     // static public UnityEngine.YieldInstruction WaitForCompletion(DG.Tweening.Tween t)
-    // Offset: 0x1039BEC
+    // Offset: 0x15B05E4
     static ::UnityEngine::YieldInstruction* WaitForCompletion(::DG::Tweening::Tween* t);
     // static public UnityEngine.YieldInstruction WaitForRewind(DG.Tweening.Tween t)
-    // Offset: 0x1039CD8
+    // Offset: 0x15B06D0
     static ::UnityEngine::YieldInstruction* WaitForRewind(::DG::Tweening::Tween* t);
     // static public UnityEngine.YieldInstruction WaitForKill(DG.Tweening.Tween t)
-    // Offset: 0x1039DC4
+    // Offset: 0x15B07BC
     static ::UnityEngine::YieldInstruction* WaitForKill(::DG::Tweening::Tween* t);
     // static public UnityEngine.YieldInstruction WaitForElapsedLoops(DG.Tweening.Tween t, System.Int32 elapsedLoops)
-    // Offset: 0x1039EB0
+    // Offset: 0x15B08A8
     static ::UnityEngine::YieldInstruction* WaitForElapsedLoops(::DG::Tweening::Tween* t, int elapsedLoops);
     // static public UnityEngine.YieldInstruction WaitForPosition(DG.Tweening.Tween t, System.Single position)
-    // Offset: 0x1039FAC
+    // Offset: 0x15B09A4
     static ::UnityEngine::YieldInstruction* WaitForPosition(::DG::Tweening::Tween* t, float position);
     // static public UnityEngine.Coroutine WaitForStart(DG.Tweening.Tween t)
-    // Offset: 0x103A0A8
+    // Offset: 0x15B0AA0
     static ::UnityEngine::Coroutine* WaitForStart(::DG::Tweening::Tween* t);
     // static public System.Int32 CompletedLoops(DG.Tweening.Tween t)
-    // Offset: 0x103A198
+    // Offset: 0x15B0B90
     static int CompletedLoops(::DG::Tweening::Tween* t);
     // static public System.Single Delay(DG.Tweening.Tween t)
-    // Offset: 0x103A218
+    // Offset: 0x15B0C10
     static float Delay(::DG::Tweening::Tween* t);
     // static public System.Single Duration(DG.Tweening.Tween t, System.Boolean includeLoops)
-    // Offset: 0x103A2A4
+    // Offset: 0x15B0C9C
     static float Duration(::DG::Tweening::Tween* t, bool includeLoops);
     // static public System.Single Elapsed(DG.Tweening.Tween t, System.Boolean includeLoops)
-    // Offset: 0x1036F7C
+    // Offset: 0x15AD974
     static float Elapsed(::DG::Tweening::Tween* t, bool includeLoops);
     // static public System.Single ElapsedPercentage(DG.Tweening.Tween t, System.Boolean includeLoops)
-    // Offset: 0x103A35C
+    // Offset: 0x15B0D54
     static float ElapsedPercentage(::DG::Tweening::Tween* t, bool includeLoops);
     // static public System.Single ElapsedDirectionalPercentage(DG.Tweening.Tween t)
-    // Offset: 0x103A430
+    // Offset: 0x15B0E28
     static float ElapsedDirectionalPercentage(::DG::Tweening::Tween* t);
     // static public System.Boolean IsActive(DG.Tweening.Tween t)
-    // Offset: 0x103A4F8
+    // Offset: 0x15B0EF0
     static bool IsActive(::DG::Tweening::Tween* t);
     // static public System.Boolean IsBackwards(DG.Tweening.Tween t)
-    // Offset: 0x103A510
+    // Offset: 0x15B0F08
     static bool IsBackwards(::DG::Tweening::Tween* t);
     // static public System.Boolean IsComplete(DG.Tweening.Tween t)
-    // Offset: 0x103A598
+    // Offset: 0x15B0F90
     static bool IsComplete(::DG::Tweening::Tween* t);
     // static public System.Boolean IsInitialized(DG.Tweening.Tween t)
-    // Offset: 0x103A620
+    // Offset: 0x15B1018
     static bool IsInitialized(::DG::Tweening::Tween* t);
     // static public System.Boolean IsPlaying(DG.Tweening.Tween t)
-    // Offset: 0x103A6A8
+    // Offset: 0x15B10A0
     static bool IsPlaying(::DG::Tweening::Tween* t);
     // static public System.Int32 Loops(DG.Tweening.Tween t)
-    // Offset: 0x103A730
+    // Offset: 0x15B1128
     static int Loops(::DG::Tweening::Tween* t);
     // static public UnityEngine.Vector3 PathGetPoint(DG.Tweening.Tween t, System.Single pathPercentage)
-    // Offset: 0x103A7B0
+    // Offset: 0x15B11A8
     static ::UnityEngine::Vector3 PathGetPoint(::DG::Tweening::Tween* t, float pathPercentage);
     // static public UnityEngine.Vector3[] PathGetDrawPoints(DG.Tweening.Tween t, System.Int32 subdivisionsXSegment)
-    // Offset: 0x103AA1C
+    // Offset: 0x15B1414
     static ::ArrayW<::UnityEngine::Vector3> PathGetDrawPoints(::DG::Tweening::Tween* t, int subdivisionsXSegment);
     // static public System.Single PathLength(DG.Tweening.Tween t)
-    // Offset: 0x103AC6C
+    // Offset: 0x15B1664
     static float PathLength(::DG::Tweening::Tween* t);
   }; // DG.Tweening.TweenExtensions
   #pragma pack(pop)

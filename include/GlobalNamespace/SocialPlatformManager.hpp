@@ -160,20 +160,12 @@ namespace GlobalNamespace {
       // Set static field: static public SocialPlatformManager/State SHUTDOWN
       static void _set_SHUTDOWN(::GlobalNamespace::SocialPlatformManager::State value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // SocialPlatformManager/State
     #pragma pack(pop)
     static check_size<sizeof(SocialPlatformManager::State), 0 + sizeof(int)> __GlobalNamespace_SocialPlatformManager_StateSizeCheck;
     static_assert(sizeof(SocialPlatformManager::State) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single voiceCurrent
     // Size: 0x4
     // Offset: 0x18
@@ -372,135 +364,135 @@ namespace GlobalNamespace {
     // Set static field: static public readonly System.Single VOIP_SCALE
     static void _set_VOIP_SCALE(float value);
     // Get instance field reference: private System.Single voiceCurrent
-    float& dyn_voiceCurrent();
+    [[deprecated]] float& dyn_voiceCurrent();
     // Get instance field reference: private System.UInt32 packetSequence
-    uint& dyn_packetSequence();
+    [[deprecated]] uint& dyn_packetSequence();
     // Get instance field reference: public OvrAvatar localAvatarPrefab
-    ::GlobalNamespace::OvrAvatar*& dyn_localAvatarPrefab();
+    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_localAvatarPrefab();
     // Get instance field reference: public OvrAvatar remoteAvatarPrefab
-    ::GlobalNamespace::OvrAvatar*& dyn_remoteAvatarPrefab();
+    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_remoteAvatarPrefab();
     // Get instance field reference: public UnityEngine.GameObject helpPanel
-    ::UnityEngine::GameObject*& dyn_helpPanel();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_helpPanel();
     // Get instance field reference: protected UnityEngine.MeshRenderer helpMesh
-    ::UnityEngine::MeshRenderer*& dyn_helpMesh();
+    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_helpMesh();
     // Get instance field reference: public UnityEngine.Material riftMaterial
-    ::UnityEngine::Material*& dyn_riftMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_riftMaterial();
     // Get instance field reference: public UnityEngine.Material gearMaterial
-    ::UnityEngine::Material*& dyn_gearMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_gearMaterial();
     // Get instance field reference: protected OvrAvatar localAvatar
-    ::GlobalNamespace::OvrAvatar*& dyn_localAvatar();
+    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_localAvatar();
     // Get instance field reference: protected UnityEngine.GameObject localTrackingSpace
-    ::UnityEngine::GameObject*& dyn_localTrackingSpace();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_localTrackingSpace();
     // Get instance field reference: protected UnityEngine.GameObject localPlayerHead
-    ::UnityEngine::GameObject*& dyn_localPlayerHead();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_localPlayerHead();
     // Get instance field reference: protected System.Collections.Generic.Dictionary`2<System.UInt64,RemotePlayer> remoteUsers
-    ::System::Collections::Generic::Dictionary_2<uint64_t, ::GlobalNamespace::RemotePlayer*>*& dyn_remoteUsers();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::GlobalNamespace::RemotePlayer*>*& dyn_remoteUsers();
     // Get instance field reference: public UnityEngine.GameObject roomSphere
-    ::UnityEngine::GameObject*& dyn_roomSphere();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_roomSphere();
     // Get instance field reference: protected UnityEngine.MeshRenderer sphereMesh
-    ::UnityEngine::MeshRenderer*& dyn_sphereMesh();
+    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_sphereMesh();
     // Get instance field reference: public UnityEngine.GameObject roomFloor
-    ::UnityEngine::GameObject*& dyn_roomFloor();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_roomFloor();
     // Get instance field reference: protected UnityEngine.MeshRenderer floorMesh
-    ::UnityEngine::MeshRenderer*& dyn_floorMesh();
+    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_floorMesh();
     // Get instance field reference: protected SocialPlatformManager/State currentState
-    ::GlobalNamespace::SocialPlatformManager::State& dyn_currentState();
+    [[deprecated]] ::GlobalNamespace::SocialPlatformManager::State& dyn_currentState();
     // Get instance field reference: protected RoomManager roomManager
-    ::GlobalNamespace::RoomManager*& dyn_roomManager();
+    [[deprecated]] ::GlobalNamespace::RoomManager*& dyn_roomManager();
     // Get instance field reference: protected P2PManager p2pManager
-    ::GlobalNamespace::P2PManager*& dyn_p2pManager();
+    [[deprecated]] ::GlobalNamespace::P2PManager*& dyn_p2pManager();
     // Get instance field reference: protected VoipManager voipManager
-    ::GlobalNamespace::VoipManager*& dyn_voipManager();
+    [[deprecated]] ::GlobalNamespace::VoipManager*& dyn_voipManager();
     // Get instance field reference: protected System.UInt64 myID
-    uint64_t& dyn_myID();
+    [[deprecated]] uint64_t& dyn_myID();
     // Get instance field reference: protected System.String myOculusID
-    ::StringW& dyn_myOculusID();
+    [[deprecated]] ::StringW& dyn_myOculusID();
     // static public SocialPlatformManager/State get_CurrentState()
-    // Offset: 0x13B7DB0
+    // Offset: 0x192AC7C
     static ::GlobalNamespace::SocialPlatformManager::State get_CurrentState();
     // static public System.UInt64 get_MyID()
-    // Offset: 0x13B7E20
+    // Offset: 0x192ACEC
     static uint64_t get_MyID();
     // static public System.String get_MyOculusID()
-    // Offset: 0x13B7F00
+    // Offset: 0x192ADCC
     static ::StringW get_MyOculusID();
     // public System.Void Update()
-    // Offset: 0x13B5FD0
+    // Offset: 0x1928E9C
     void Update();
     // public System.Void Awake()
-    // Offset: 0x13B6360
+    // Offset: 0x192922C
     void Awake();
     // private System.Void InitCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.PlatformInitialize> msg)
-    // Offset: 0x13B6A6C
+    // Offset: 0x1929938
     void InitCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::PlatformInitialize*>* msg);
     // public System.Void Start()
-    // Offset: 0x13B6D8C
+    // Offset: 0x1929C58
     void Start();
     // private System.Void IsEntitledCallback(Oculus.Platform.Message msg)
-    // Offset: 0x13B6D90
+    // Offset: 0x1929C5C
     void IsEntitledCallback(::Oculus::Platform::Message* msg);
     // private System.Void GetLoggedInUserCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.User> msg)
-    // Offset: 0x13B6EB0
+    // Offset: 0x1929D7C
     void GetLoggedInUserCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* msg);
     // private System.Void GetLoggedInUserFriendsAndRoomsCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.UserAndRoomList> msg)
-    // Offset: 0x13B75B8
+    // Offset: 0x192A484
     void GetLoggedInUserFriendsAndRoomsCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::UserAndRoomList*>* msg);
     // public System.Void OnLocalAvatarPacketRecorded(System.Object sender, OvrAvatar/PacketEventArgs args)
-    // Offset: 0x13B79AC
+    // Offset: 0x192A878
     void OnLocalAvatarPacketRecorded(::Il2CppObject* sender, ::GlobalNamespace::OvrAvatar::PacketEventArgs* args);
     // public System.Void OnApplicationQuit()
-    // Offset: 0x13B7BBC
+    // Offset: 0x192AA88
     void OnApplicationQuit();
     // public System.Void AddUser(System.UInt64 userID, ref RemotePlayer remoteUser)
-    // Offset: 0x13B7D44
+    // Offset: 0x192AC10
     void AddUser(uint64_t userID, ByRef<::GlobalNamespace::RemotePlayer*> remoteUser);
     // public System.Void LogOutputLine(System.String line)
-    // Offset: 0x13B66F8
+    // Offset: 0x19295C4
     void LogOutputLine(::StringW line);
     // static public System.Void TerminateWithError(Oculus.Platform.Message msg)
-    // Offset: 0x13B6C14
+    // Offset: 0x1929AE0
     static void TerminateWithError(::Oculus::Platform::Message* msg);
     // static public System.Void TransitionToState(SocialPlatformManager/State newState)
-    // Offset: 0x13B67AC
+    // Offset: 0x1929678
     static void TransitionToState(::GlobalNamespace::SocialPlatformManager::State newState);
     // static private System.Void SetSphereColorForState()
-    // Offset: 0x13B8028
+    // Offset: 0x192AEF4
     static void SetSphereColorForState();
     // static public System.Void SetFloorColorForState(System.Boolean host)
-    // Offset: 0x13B81A4
+    // Offset: 0x192B070
     static void SetFloorColorForState(bool host);
     // static public System.Void MarkAllRemoteUsersAsNotInRoom()
-    // Offset: 0x13B8288
+    // Offset: 0x192B154
     static void MarkAllRemoteUsersAsNotInRoom();
     // static public System.Void MarkRemoteUserInRoom(System.UInt64 userID)
-    // Offset: 0x13B83E4
+    // Offset: 0x192B2B0
     static void MarkRemoteUserInRoom(uint64_t userID);
     // static public System.Void ForgetRemoteUsersNotInRoom()
-    // Offset: 0x13B84C8
+    // Offset: 0x192B394
     static void ForgetRemoteUsersNotInRoom();
     // static public System.Void LogOutput(System.String line)
-    // Offset: 0x13B6CCC
+    // Offset: 0x1929B98
     static void LogOutput(::StringW line);
     // static public System.Boolean IsUserInRoom(System.UInt64 userID)
-    // Offset: 0x13B8A10
+    // Offset: 0x192B8DC
     static bool IsUserInRoom(uint64_t userID);
     // static public System.Void AddRemoteUser(System.UInt64 userID)
-    // Offset: 0x13B8AA4
+    // Offset: 0x192B970
     static void AddRemoteUser(uint64_t userID);
     // static public System.Void RemoveRemoteUser(System.UInt64 userID)
-    // Offset: 0x13B87FC
+    // Offset: 0x192B6C8
     static void RemoveRemoteUser(uint64_t userID);
     // public System.Void UpdateVoiceData(System.Int16[] pcmData, System.Int32 numChannels)
-    // Offset: 0x13B8C94
+    // Offset: 0x192BB60
     void UpdateVoiceData(::ArrayW<int16_t> pcmData, int numChannels);
     // static public System.Void MicFilter(System.Int16[] pcmData, System.UIntPtr pcmDataLength, System.Int32 frequency, System.Int32 numChannels)
-    // Offset: 0x13B5F4C
+    // Offset: 0x1928E18
     static void MicFilter(::ArrayW<int16_t> pcmData, ::System::UIntPtr pcmDataLength, int frequency, int numChannels);
     // static public RemotePlayer GetRemoteUser(System.UInt64 userID)
-    // Offset: 0x13B8DD8
+    // Offset: 0x192BCA4
     static ::GlobalNamespace::RemotePlayer* GetRemoteUser(uint64_t userID);
     // public System.Void .ctor()
-    // Offset: 0x13B8EB4
+    // Offset: 0x192BD80
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -513,7 +505,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<SocialPlatformManager*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x13B8F2C
+    // Offset: 0x192BDF8
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

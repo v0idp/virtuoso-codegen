@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class FloatChanger : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.FloatNode _outputNode
     // Size: 0x8
     // Offset: 0x40
@@ -60,19 +52,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: protected VROSC.FloatNode _outputNode
-    ::VROSC::FloatNode*& dyn__outputNode();
+    [[deprecated]] ::VROSC::FloatNode*& dyn__outputNode();
     // Get instance field reference: protected System.Boolean _continuous
-    bool& dyn__continuous();
+    [[deprecated]] bool& dyn__continuous();
     // protected System.Void SetValueBySignal(VROSC.Signal signal)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetValueBySignal(::VROSC::Signal* signal);
     // protected override System.Int32 get_MaxInputs()
-    // Offset: 0x88E800
+    // Offset: 0x199F6B4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Int32 SignalNode::get_MaxInputs()
     int get_MaxInputs();
     // protected System.Void .ctor()
-    // Offset: 0x88E958
+    // Offset: 0x199F80C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -87,12 +79,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<FloatChanger*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x88E808
+    // Offset: 0x199F6BC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x88E8AC
+    // Offset: 0x199F760
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);

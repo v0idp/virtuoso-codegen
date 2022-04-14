@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionSettingsDataModel : public ::VROSC::BaseDataModel {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean UseExternalSynthesizer
     // Size: 0x1
     // Offset: 0x18
@@ -105,33 +97,33 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Boolean UseExternalSynthesizer
-    bool& dyn_UseExternalSynthesizer();
+    [[deprecated]] bool& dyn_UseExternalSynthesizer();
     // Get instance field reference: public System.Boolean SyncIsInternal
-    bool& dyn_SyncIsInternal();
+    [[deprecated]] bool& dyn_SyncIsInternal();
     // Get instance field reference: public System.Int32 InternalBeatLengthInSamples
-    int& dyn_InternalBeatLengthInSamples();
+    [[deprecated]] int& dyn_InternalBeatLengthInSamples();
     // Get instance field reference: public System.Int32 SelectedScalePresetIndex
-    int& dyn_SelectedScalePresetIndex();
+    [[deprecated]] int& dyn_SelectedScalePresetIndex();
     // Get instance field reference: public VROSC.Note SelectedStartNote
-    ::VROSC::Note& dyn_SelectedStartNote();
+    [[deprecated]] ::VROSC::Note& dyn_SelectedStartNote();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.ScalePreset> ScalePresets
-    ::System::Collections::Generic::List_1<::VROSC::ScalePreset*>*& dyn_ScalePresets();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ScalePreset*>*& dyn_ScalePresets();
     // Get instance field reference: public System.String SelectedEnvironment
-    ::StringW& dyn_SelectedEnvironment();
+    [[deprecated]] ::StringW& dyn_SelectedEnvironment();
     // Get instance field reference: public System.Single EnvironmentEffectsAmount
-    float& dyn_EnvironmentEffectsAmount();
+    [[deprecated]] float& dyn_EnvironmentEffectsAmount();
     // public override System.String get_Key()
-    // Offset: 0x13E8D70
+    // Offset: 0x1988288
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
     // public override System.Int32 get_Version()
-    // Offset: 0x13E8DB4
+    // Offset: 0x19882CC
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Int32 BaseDataModel::get_Version()
     int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x13E80F8
+    // Offset: 0x198737C
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
     // Base method: System.Void Object::.ctor()

@@ -35,15 +35,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class PoseEditHelper : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Transform poseRoot
     // Size: 0x8
     // Offset: 0x18
@@ -54,15 +46,15 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Transform poseRoot
-    ::UnityEngine::Transform*& dyn_poseRoot();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_poseRoot();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x8FE010
+    // Offset: 0xAE2900
     void OnDrawGizmos();
     // private System.Void DrawJoints(UnityEngine.Transform joint)
-    // Offset: 0x8FE098
+    // Offset: 0xAE2988
     void DrawJoints(::UnityEngine::Transform* joint);
     // public System.Void .ctor()
-    // Offset: 0x8FE20C
+    // Offset: 0xAE2AFC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

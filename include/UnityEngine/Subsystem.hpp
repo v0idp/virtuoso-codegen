@@ -39,13 +39,13 @@ namespace UnityEngine {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Stop();
     // public System.Void Destroy()
-    // Offset: 0x12FE18C
+    // Offset: 0x1903B30
     void Destroy();
     // protected System.Void OnDestroy()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnDestroy();
     // protected System.Void .ctor()
-    // Offset: 0x12FE298
+    // Offset: 0x1903C3C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

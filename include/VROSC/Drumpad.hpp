@@ -66,15 +66,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Drumpad : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TransformMover _mover
     // Size: 0x8
     // Offset: 0x18
@@ -167,77 +159,80 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TransformMover _mover
-    ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private VROSC.DrumpadPlayer _player
-    ::VROSC::DrumpadPlayer*& dyn__player();
+    [[deprecated]] ::VROSC::DrumpadPlayer*& dyn__player();
     // Get instance field reference: private VROSC.DrumpadUI _UI
-    ::VROSC::DrumpadUI*& dyn__UI();
+    [[deprecated]] ::VROSC::DrumpadUI*& dyn__UI();
     // Get instance field reference: private UnityEngine.Playables.PlayableDirector _playableDirector
-    ::UnityEngine::Playables::PlayableDirector*& dyn__playableDirector();
+    [[deprecated]] ::UnityEngine::Playables::PlayableDirector*& dyn__playableDirector();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _enterTimeline
-    ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
+    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _exitTimeline
-    ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
+    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
     // Get instance field reference: private UnityEngine.Collider[] _overlaps
-    ::ArrayW<::UnityEngine::Collider*>& dyn__overlaps();
+    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__overlaps();
     // Get instance field reference: private VROSC.DrumpadSpawner _overlappingSpawner
-    ::VROSC::DrumpadSpawner*& dyn__overlappingSpawner();
+    [[deprecated]] ::VROSC::DrumpadSpawner*& dyn__overlappingSpawner();
     // Get instance field reference: private System.Single _spawnerDeleteDistance
-    float& dyn__spawnerDeleteDistance();
+    [[deprecated]] float& dyn__spawnerDeleteDistance();
     // Get instance field reference: private VROSC.DrumpadSpawner _drumpadSpawner
-    ::VROSC::DrumpadSpawner*& dyn__drumpadSpawner();
+    [[deprecated]] ::VROSC::DrumpadSpawner*& dyn__drumpadSpawner();
     // Get instance field reference: private System.Int32 _empadId
-    int& dyn__empadId();
+    [[deprecated]] int& dyn__empadId();
     // Get instance field reference: private UnityEngine.Transform _parent
-    ::UnityEngine::Transform*& dyn__parent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__parent();
     // Get instance field reference: private VROSC.ModularDrumsController _instrumentController
-    ::VROSC::ModularDrumsController*& dyn__instrumentController();
+    [[deprecated]] ::VROSC::ModularDrumsController*& dyn__instrumentController();
     // Get instance field reference: public System.Action`1<VROSC.Drumpad> OnRemoveDrumpad
-    ::System::Action_1<::VROSC::Drumpad*>*& dyn_OnRemoveDrumpad();
+    [[deprecated]] ::System::Action_1<::VROSC::Drumpad*>*& dyn_OnRemoveDrumpad();
     // public VROSC.DrumpadSpawner get_DrumpadSpawner()
-    // Offset: 0x130D414
+    // Offset: 0x8E6F88
     ::VROSC::DrumpadSpawner* get_DrumpadSpawner();
     // public VROSC.DrumpadPlayer get_DrumpadPlayer()
-    // Offset: 0x130D41C
+    // Offset: 0x8E6F90
     ::VROSC::DrumpadPlayer* get_DrumpadPlayer();
+    // public VROSC.TransformMover get_TransformMover()
+    // Offset: 0x8E6F98
+    ::VROSC::TransformMover* get_TransformMover();
     // private System.Void Awake()
-    // Offset: 0x130D424
+    // Offset: 0x8E6FA0
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x130D714
+    // Offset: 0x8E7290
     void OnDestroy();
     // private System.Void SetDrumUseVelocity(System.Boolean useVelocity)
-    // Offset: 0x130DA8C
+    // Offset: 0x8E7608
     void SetDrumUseVelocity(bool useVelocity);
     // private System.Void SetPitch(System.Int32 pitch)
-    // Offset: 0x130DB14
+    // Offset: 0x8E7690
     void SetPitch(int pitch);
     // public System.Void Setup(VROSC.DrumpadSpawner drumpadSpawner, System.Int32 empadId, UnityEngine.Transform parent, VROSC.ModularDrumsController instrumentController)
-    // Offset: 0x130DC60
+    // Offset: 0x8E77DC
     void Setup(::VROSC::DrumpadSpawner* drumpadSpawner, int empadId, ::UnityEngine::Transform* parent, ::VROSC::ModularDrumsController* instrumentController);
     // System.Void SetActive(System.Boolean isActive)
-    // Offset: 0x130E29C
+    // Offset: 0x8E7E18
     void SetActive(bool isActive);
     // public System.Void Grab(VROSC.GrabData grabData, System.Boolean grabbing)
-    // Offset: 0x130E34C
+    // Offset: 0x8E7EC8
     void Grab(::VROSC::GrabData* grabData, bool grabbing);
     // public System.Void GrabEnded(VROSC.TransformMover mover)
-    // Offset: 0x130E370
+    // Offset: 0x8E7EEC
     void GrabEnded(::VROSC::TransformMover* mover);
     // private System.Void SetDrumSampleOrNoteNumber(System.Int32 sampleIdOrNoteNumber, System.Boolean preview)
-    // Offset: 0x130DF90
+    // Offset: 0x8E7B0C
     void SetDrumSampleOrNoteNumber(int sampleIdOrNoteNumber, bool preview);
     // private System.Void Delete()
-    // Offset: 0x130E574
+    // Offset: 0x8E811C
     void Delete();
     // public System.Void Delete(System.Boolean removeFromController)
-    // Offset: 0x130E628
+    // Offset: 0x8E81D0
     void Delete(bool removeFromController);
     // private System.Void SynthesizerChanged(System.Boolean useExternal)
-    // Offset: 0x130E7C8
+    // Offset: 0x8E8370
     void SynthesizerChanged(bool useExternal);
     // public System.Void .ctor()
-    // Offset: 0x130E814
+    // Offset: 0x8E83BC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -269,6 +264,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::DrumpadPlayer* (VROSC::Drumpad::*)()>(&VROSC::Drumpad::get_DrumpadPlayer)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::Drumpad*), "get_DrumpadPlayer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::Drumpad::get_TransformMover
+// Il2CppName: get_TransformMover
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::TransformMover* (VROSC::Drumpad::*)()>(&VROSC::Drumpad::get_TransformMover)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::Drumpad*), "get_TransformMover", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::Drumpad::Awake

@@ -31,15 +31,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class PromiseTimer::$$c__DisplayClass3_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single seconds
     // Size: 0x4
     // Offset: 0x10
@@ -52,12 +44,12 @@ namespace RSG {
       return seconds;
     }
     // Get instance field reference: public System.Single seconds
-    float& dyn_seconds();
+    [[deprecated]] float& dyn_seconds();
     // System.Boolean <WaitFor>b__0(RSG.TimeData t)
-    // Offset: 0x1344864
+    // Offset: 0x8CF7BC
     bool $WaitFor$b__0(::RSG::TimeData t);
     // public System.Void .ctor()
-    // Offset: 0x134485C
+    // Offset: 0x8CF7B4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

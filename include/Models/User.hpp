@@ -27,15 +27,7 @@ namespace Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class User : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 id
     // Size: 0x4
     // Offset: 0x10
@@ -76,19 +68,19 @@ namespace Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Int32 id
-    int& dyn_id();
+    [[deprecated]] int& dyn_id();
     // Get instance field reference: public System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: public System.String username
-    ::StringW& dyn_username();
+    [[deprecated]] ::StringW& dyn_username();
     // Get instance field reference: public System.String email
-    ::StringW& dyn_email();
+    [[deprecated]] ::StringW& dyn_email();
     // Get instance field reference: public System.String phone
-    ::StringW& dyn_phone();
+    [[deprecated]] ::StringW& dyn_phone();
     // Get instance field reference: public System.String website
-    ::StringW& dyn_website();
+    [[deprecated]] ::StringW& dyn_website();
     // public System.Void .ctor()
-    // Offset: 0x13A6018
+    // Offset: 0x1919CE4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -97,7 +89,7 @@ namespace Models {
       return THROW_UNLESS((::il2cpp_utils::New<User*, creationType>()));
     }
     // public override System.String ToString()
-    // Offset: 0x13A600C
+    // Offset: 0x1919CD8
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

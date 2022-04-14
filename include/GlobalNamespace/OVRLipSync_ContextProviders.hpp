@@ -57,7 +57,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRLipSync/ContextProviders Enhanced_with_Laughter
     static void _set_Enhanced_with_Laughter(::GlobalNamespace::OVRLipSync::ContextProviders value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // OVRLipSync/ContextProviders
   #pragma pack(pop)
   static check_size<sizeof(OVRLipSync::ContextProviders), 0 + sizeof(int)> __GlobalNamespace_OVRLipSync_ContextProvidersSizeCheck;

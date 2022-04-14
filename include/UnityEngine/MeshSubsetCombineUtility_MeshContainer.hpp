@@ -65,11 +65,11 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.GameObject gameObject
-    ::UnityEngine::GameObject*& dyn_gameObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_gameObject();
     // Get instance field reference: public UnityEngine.MeshSubsetCombineUtility/UnityEngine.MeshInstance instance
-    ::UnityEngine::MeshSubsetCombineUtility::MeshInstance& dyn_instance();
+    [[deprecated]] ::UnityEngine::MeshSubsetCombineUtility::MeshInstance& dyn_instance();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.MeshSubsetCombineUtility/UnityEngine.SubMeshInstance> subMeshInstances
-    ::System::Collections::Generic::List_1<::UnityEngine::MeshSubsetCombineUtility::SubMeshInstance>*& dyn_subMeshInstances();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::MeshSubsetCombineUtility::SubMeshInstance>*& dyn_subMeshInstances();
   }; // UnityEngine.MeshSubsetCombineUtility/UnityEngine.MeshContainer
   #pragma pack(pop)
   static check_size<sizeof(MeshSubsetCombineUtility::MeshContainer), 120 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::MeshSubsetCombineUtility::SubMeshInstance>*)> __UnityEngine_MeshSubsetCombineUtility_MeshContainerSizeCheck;

@@ -69,15 +69,7 @@ namespace System::Net::Sockets {
     char ___base_padding[0x6] = {};
     // Nested type: ::System::Net::Sockets::SocketAsyncResult::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Net.Sockets.Socket socket
     // Size: 0x8
     // Offset: 0x30
@@ -196,80 +188,80 @@ namespace System::Net::Sockets {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Net.Sockets.Socket socket
-    ::System::Net::Sockets::Socket*& dyn_socket();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_socket();
     // Get instance field reference: public System.Net.Sockets.SocketOperation operation
-    ::System::Net::Sockets::SocketOperation& dyn_operation();
+    [[deprecated]] ::System::Net::Sockets::SocketOperation& dyn_operation();
     // Get instance field reference: private System.Exception DelayedException
-    ::System::Exception*& dyn_DelayedException();
+    [[deprecated]] ::System::Exception*& dyn_DelayedException();
     // Get instance field reference: public System.Net.EndPoint EndPoint
-    ::System::Net::EndPoint*& dyn_EndPoint();
+    [[deprecated]] ::System::Net::EndPoint*& dyn_EndPoint();
     // Get instance field reference: public System.Byte[] Buffer
-    ::ArrayW<uint8_t>& dyn_Buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_Buffer();
     // Get instance field reference: public System.Int32 Offset
-    int& dyn_Offset();
+    [[deprecated]] int& dyn_Offset();
     // Get instance field reference: public System.Int32 Size
-    int& dyn_Size();
+    [[deprecated]] int& dyn_Size();
     // Get instance field reference: public System.Net.Sockets.SocketFlags SockFlags
-    ::System::Net::Sockets::SocketFlags& dyn_SockFlags();
+    [[deprecated]] ::System::Net::Sockets::SocketFlags& dyn_SockFlags();
     // Get instance field reference: public System.Net.Sockets.Socket AcceptSocket
-    ::System::Net::Sockets::Socket*& dyn_AcceptSocket();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_AcceptSocket();
     // Get instance field reference: public System.Net.IPAddress[] Addresses
-    ::ArrayW<::System::Net::IPAddress*>& dyn_Addresses();
+    [[deprecated]] ::ArrayW<::System::Net::IPAddress*>& dyn_Addresses();
     // Get instance field reference: public System.Int32 Port
-    int& dyn_Port();
+    [[deprecated]] int& dyn_Port();
     // Get instance field reference: public System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>> Buffers
-    ::System::Collections::Generic::IList_1<::System::ArraySegment_1<uint8_t>>*& dyn_Buffers();
+    [[deprecated]] ::System::Collections::Generic::IList_1<::System::ArraySegment_1<uint8_t>>*& dyn_Buffers();
     // Get instance field reference: public System.Boolean ReuseSocket
-    bool& dyn_ReuseSocket();
+    [[deprecated]] bool& dyn_ReuseSocket();
     // Get instance field reference: public System.Int32 CurrentAddress
-    int& dyn_CurrentAddress();
+    [[deprecated]] int& dyn_CurrentAddress();
     // Get instance field reference: public System.Net.Sockets.Socket AcceptedSocket
-    ::System::Net::Sockets::Socket*& dyn_AcceptedSocket();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_AcceptedSocket();
     // Get instance field reference: public System.Int32 Total
-    int& dyn_Total();
+    [[deprecated]] int& dyn_Total();
     // Get instance field reference: System.Int32 error
-    int& dyn_error();
+    [[deprecated]] int& dyn_error();
     // Get instance field reference: public System.Int32 EndCalled
-    int& dyn_EndCalled();
+    [[deprecated]] int& dyn_EndCalled();
     // public System.IntPtr get_Handle()
-    // Offset: 0x94C98C
+    // Offset: 0xDA0D94
     ::System::IntPtr get_Handle();
     // public System.Net.Sockets.SocketError get_ErrorCode()
-    // Offset: 0x94E8A4
+    // Offset: 0xDA2CAC
     ::System::Net::Sockets::SocketError get_ErrorCode();
     // public System.Void .ctor(System.Net.Sockets.Socket socket, System.AsyncCallback callback, System.Object state, System.Net.Sockets.SocketOperation operation)
-    // Offset: 0x94C948
+    // Offset: 0xDA0D50
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SocketAsyncResult* New_ctor(::System::Net::Sockets::Socket* socket, ::System::AsyncCallback* callback, ::Il2CppObject* state, ::System::Net::Sockets::SocketOperation operation) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SocketAsyncResult::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SocketAsyncResult*, creationType>(socket, callback, state, operation)));
     }
     // public System.Void CheckIfThrowDelayedException()
-    // Offset: 0x94CD84
+    // Offset: 0xDA118C
     void CheckIfThrowDelayedException();
     // public System.Void Complete()
-    // Offset: 0x950AAC
+    // Offset: 0xDA4EB4
     void Complete();
     // public System.Void Complete(System.Boolean synch)
-    // Offset: 0x94E17C
+    // Offset: 0xDA2584
     void Complete(bool synch);
     // public System.Void Complete(System.Int32 total)
-    // Offset: 0x94F1E0
+    // Offset: 0xDA35E8
     void Complete(int total);
     // public System.Void Complete(System.Exception e, System.Boolean synch)
-    // Offset: 0x94E16C
+    // Offset: 0xDA2574
     void Complete(::System::Exception* e, bool synch);
     // public System.Void Complete(System.Exception e)
-    // Offset: 0x94F1D8
+    // Offset: 0xDA35E0
     void Complete(::System::Exception* e);
     // public System.Void Complete(System.Net.Sockets.Socket s)
-    // Offset: 0x950C98
+    // Offset: 0xDA50A0
     void Complete(::System::Net::Sockets::Socket* s);
     // public System.Void Complete(System.Net.Sockets.Socket s, System.Int32 total)
-    // Offset: 0x950CA0
+    // Offset: 0xDA50A8
     void Complete(::System::Net::Sockets::Socket* s, int total);
     // override System.Void CompleteDisposed()
-    // Offset: 0x950AA8
+    // Offset: 0xDA4EB0
     // Implemented from: System.IOAsyncResult
     // Base method: System.Void IOAsyncResult::CompleteDisposed()
     void CompleteDisposed();

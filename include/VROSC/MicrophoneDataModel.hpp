@@ -30,23 +30,15 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MicrophoneDataModel : public ::VROSC::ToolDataModel {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean MicrophoneIsAttached
     // Size: 0x1
-    // Offset: 0x20
+    // Offset: 0x21
     bool MicrophoneIsAttached;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: MicrophoneIsAttached and: MicrophonePosition
-    char __padding0[0x7] = {};
+    char __padding0[0x6] = {};
     // public System.Single[] MicrophonePosition
     // Size: 0x8
     // Offset: 0x28
@@ -84,34 +76,32 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     public:
-    // Deleting conversion operator: operator ::VROSC::TransformData*
-    constexpr operator ::VROSC::TransformData*() const noexcept = delete;
     // Get instance field reference: public System.Boolean MicrophoneIsAttached
-    bool& dyn_MicrophoneIsAttached();
+    [[deprecated]] bool& dyn_MicrophoneIsAttached();
     // Get instance field reference: public System.Single[] MicrophonePosition
-    ::ArrayW<float>& dyn_MicrophonePosition();
+    [[deprecated]] ::ArrayW<float>& dyn_MicrophonePosition();
     // Get instance field reference: public System.Single[] MicrophoneRotation
-    ::ArrayW<float>& dyn_MicrophoneRotation();
+    [[deprecated]] ::ArrayW<float>& dyn_MicrophoneRotation();
     // Get instance field reference: public System.Single[] MicrophoneScale
-    ::ArrayW<float>& dyn_MicrophoneScale();
+    [[deprecated]] ::ArrayW<float>& dyn_MicrophoneScale();
     // Get instance field reference: public System.Single PreampVolume
-    float& dyn_PreampVolume();
+    [[deprecated]] float& dyn_PreampVolume();
     // Get instance field reference: public System.Single PreampReverb
-    float& dyn_PreampReverb();
+    [[deprecated]] float& dyn_PreampReverb();
     // Get instance field reference: public System.Boolean UseProximity
-    bool& dyn_UseProximity();
+    [[deprecated]] bool& dyn_UseProximity();
     // public override System.String get_Key()
-    // Offset: 0x8B28C4
+    // Offset: 0xAC637C
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
     // public override System.Int32 get_Version()
-    // Offset: 0x8B2908
+    // Offset: 0xAC63C0
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Int32 BaseDataModel::get_Version()
     int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x8B23D8
+    // Offset: 0xAC6088
     // Implemented from: VROSC.ToolDataModel
     // Base method: System.Void ToolDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()

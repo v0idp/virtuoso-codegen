@@ -29,16 +29,8 @@ namespace Firebase {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirebaseException : public ::System::Exception {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x5D8C34
+    // [DebuggerBrowsableAttribute] Offset: 0x6EA778
     // private System.Int32 <ErrorCode>k__BackingField
     // Size: 0x4
     // Offset: 0x88
@@ -51,15 +43,15 @@ namespace Firebase {
       return ErrorCode;
     }
     // Get instance field reference: private System.Int32 <ErrorCode>k__BackingField
-    int& dyn_$ErrorCode$k__BackingField();
+    [[deprecated]] int& dyn_$ErrorCode$k__BackingField();
     // public System.Int32 get_ErrorCode()
-    // Offset: 0x1299AAC
+    // Offset: 0x1888730
     int get_ErrorCode();
     // private System.Void set_ErrorCode(System.Int32 value)
-    // Offset: 0x1299AB4
+    // Offset: 0x1888738
     void set_ErrorCode(int value);
     // public System.Void .ctor(System.Int32 errorCode, System.String message)
-    // Offset: 0x1299A2C
+    // Offset: 0x18886B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseException* New_ctor(int errorCode, ::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::FirebaseException::.ctor");

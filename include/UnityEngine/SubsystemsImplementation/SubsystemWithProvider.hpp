@@ -35,16 +35,8 @@ namespace UnityEngine::SubsystemsImplementation {
   // [TokenAttribute] Offset: FFFFFFFF
   class SubsystemWithProvider : public ::Il2CppObject/*, public ::UnityEngine::ISubsystem*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x5CA1D0
+    // [DebuggerBrowsableAttribute] Offset: 0x6E0558
     // private System.Boolean <running>k__BackingField
     // Size: 0x1
     // Offset: 0x10
@@ -53,7 +45,7 @@ namespace UnityEngine::SubsystemsImplementation {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: running and: providerBase
     char __padding0[0x7] = {};
-    // [DebuggerBrowsableAttribute] Offset: 0x5CA20C
+    // [DebuggerBrowsableAttribute] Offset: 0x6E0594
     // private UnityEngine.SubsystemsImplementation.SubsystemProvider <providerBase>k__BackingField
     // Size: 0x8
     // Offset: 0x18
@@ -66,38 +58,38 @@ namespace UnityEngine::SubsystemsImplementation {
       return *reinterpret_cast<::UnityEngine::ISubsystem*>(this);
     }
     // Get instance field reference: private System.Boolean <running>k__BackingField
-    bool& dyn_$running$k__BackingField();
+    [[deprecated]] bool& dyn_$running$k__BackingField();
     // Get instance field reference: private UnityEngine.SubsystemsImplementation.SubsystemProvider <providerBase>k__BackingField
-    ::UnityEngine::SubsystemsImplementation::SubsystemProvider*& dyn_$providerBase$k__BackingField();
+    [[deprecated]] ::UnityEngine::SubsystemsImplementation::SubsystemProvider*& dyn_$providerBase$k__BackingField();
     // public System.Boolean get_running()
-    // Offset: 0x12FEFD0
+    // Offset: 0x1904974
     bool get_running();
     // private System.Void set_running(System.Boolean value)
-    // Offset: 0x12FEFD8
+    // Offset: 0x190497C
     void set_running(bool value);
     // UnityEngine.SubsystemsImplementation.SubsystemProvider get_providerBase()
-    // Offset: 0x12FEFE4
+    // Offset: 0x1904988
     ::UnityEngine::SubsystemsImplementation::SubsystemProvider* get_providerBase();
     // public System.Void Start()
-    // Offset: 0x12FEEBC
+    // Offset: 0x1904860
     void Start();
     // protected System.Void OnStart()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnStart();
     // public System.Void Stop()
-    // Offset: 0x12FEF04
+    // Offset: 0x19048A8
     void Stop();
     // protected System.Void OnStop()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnStop();
     // public System.Void Destroy()
-    // Offset: 0x12FEF48
+    // Offset: 0x19048EC
     void Destroy();
     // protected System.Void OnDestroy()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnDestroy();
     // protected System.Void .ctor()
-    // Offset: 0x12FEFEC
+    // Offset: 0x1904990
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

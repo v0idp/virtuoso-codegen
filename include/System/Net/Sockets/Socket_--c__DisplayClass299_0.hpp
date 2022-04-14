@@ -38,15 +38,7 @@ namespace System::Net::Sockets {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Socket::$$c__DisplayClass299_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Net.Sockets.Socket <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -67,16 +59,16 @@ namespace System::Net::Sockets {
     static_assert(sizeof(::System::IntPtr) == 0x8);
     public:
     // Get instance field reference: public System.Net.Sockets.Socket <>4__this
-    ::System::Net::Sockets::Socket*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_$$4__this();
     // Get instance field reference: public System.IOSelectorJob job
-    ::System::IOSelectorJob*& dyn_job();
+    [[deprecated]] ::System::IOSelectorJob*& dyn_job();
     // Get instance field reference: public System.IntPtr handle
-    ::System::IntPtr& dyn_handle();
+    [[deprecated]] ::System::IntPtr& dyn_handle();
     // System.Void <QueueIOSelectorJob>b__0(System.Threading.Tasks.Task t)
-    // Offset: 0x8E50F8
+    // Offset: 0xA01BBC
     void $QueueIOSelectorJob$b__0(::System::Threading::Tasks::Task* t);
     // public System.Void .ctor()
-    // Offset: 0x8E50F0
+    // Offset: 0xA01BB4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -36,15 +36,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIRendererColoring : public ::VROSC::UI::UIInteractableColoring {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _renderer
     // Size: 0x8
     // Offset: 0x48
@@ -65,22 +57,22 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: protected System.Boolean _hideWhenNotHovering
-    bool& dyn__hideWhenNotHovering();
+    [[deprecated]] bool& dyn__hideWhenNotHovering();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // private System.Void Awake()
-    // Offset: 0x139F4B8
+    // Offset: 0x1912DE4
     void Awake();
     // private System.Void OnValidate()
-    // Offset: 0x139F6B4
+    // Offset: 0x1912FE0
     void OnValidate();
     // private System.Void OnDestroy()
-    // Offset: 0x139F888
+    // Offset: 0x19131B4
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x139F8A8
+    // Offset: 0x19131D4
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -94,7 +86,7 @@ namespace VROSC::UI {
       return THROW_UNLESS((::il2cpp_utils::New<UIRendererColoring*, creationType>()));
     }
     // public override System.Void UpdateColor()
-    // Offset: 0x139F528
+    // Offset: 0x1912E54
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::UpdateColor()
     void UpdateColor();

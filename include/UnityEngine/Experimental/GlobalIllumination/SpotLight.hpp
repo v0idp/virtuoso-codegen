@@ -125,31 +125,31 @@ namespace UnityEngine::Experimental::GlobalIllumination {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 instanceID
-    int& dyn_instanceID();
+    [[deprecated]] int& dyn_instanceID();
     // Get instance field reference: public System.Boolean shadow
-    bool& dyn_shadow();
+    [[deprecated]] bool& dyn_shadow();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LightMode mode
-    ::UnityEngine::Experimental::GlobalIllumination::LightMode& dyn_mode();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LightMode& dyn_mode();
     // Get instance field reference: public UnityEngine.Vector3 position
-    ::UnityEngine::Vector3& dyn_position();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Quaternion orientation
-    ::UnityEngine::Quaternion& dyn_orientation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_orientation();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LinearColor color
-    ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_color();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_color();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LinearColor indirectColor
-    ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_indirectColor();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_indirectColor();
     // Get instance field reference: public System.Single range
-    float& dyn_range();
+    [[deprecated]] float& dyn_range();
     // Get instance field reference: public System.Single sphereRadius
-    float& dyn_sphereRadius();
+    [[deprecated]] float& dyn_sphereRadius();
     // Get instance field reference: public System.Single coneAngle
-    float& dyn_coneAngle();
+    [[deprecated]] float& dyn_coneAngle();
     // Get instance field reference: public System.Single innerConeAngle
-    float& dyn_innerConeAngle();
+    [[deprecated]] float& dyn_innerConeAngle();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.FalloffType falloff
-    ::UnityEngine::Experimental::GlobalIllumination::FalloffType& dyn_falloff();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::FalloffType& dyn_falloff();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.AngularFalloffType angularFalloff
-    ::UnityEngine::Experimental::GlobalIllumination::AngularFalloffType& dyn_angularFalloff();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::AngularFalloffType& dyn_angularFalloff();
   }; // UnityEngine.Experimental.GlobalIllumination.SpotLight
   #pragma pack(pop)
   static check_size<sizeof(SpotLight), 85 + sizeof(::UnityEngine::Experimental::GlobalIllumination::AngularFalloffType)> __UnityEngine_Experimental_GlobalIllumination_SpotLightSizeCheck;

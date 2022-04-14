@@ -44,15 +44,7 @@ namespace VROSC::UI::Meshes {
   // [TokenAttribute] Offset: FFFFFFFF
   class ProceduralMeshData : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Int32 _meshDataExistsForVertCount
     // Size: 0x4
     // Offset: 0x18
@@ -89,20 +81,20 @@ namespace VROSC::UI::Meshes {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Int32 _meshDataExistsForVertCount
-    int& dyn__meshDataExistsForVertCount();
+    [[deprecated]] int& dyn__meshDataExistsForVertCount();
     // Get instance field reference: protected UnityEngine.Vector3[] _normals
-    ::ArrayW<::UnityEngine::Vector3>& dyn__normals();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__normals();
     // Get instance field reference: protected UnityEngine.Color[] _colors
-    ::ArrayW<::UnityEngine::Color>& dyn__colors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
     // Get instance field reference: protected System.Int32[] _tris
-    ::ArrayW<int>& dyn__tris();
+    [[deprecated]] ::ArrayW<int>& dyn__tris();
     // Get instance field reference: protected UnityEngine.Vector2[] _uv
-    ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
     // protected System.Int32 get_VertCount()
     // Offset: 0xFFFFFFFFFFFFFFFF
     int get_VertCount();
     // public UnityEngine.Mesh GenerateMesh(UnityEngine.Rect rect, System.Single depth, System.Single border)
-    // Offset: 0x98828C
+    // Offset: 0xB24620
     ::UnityEngine::Mesh* GenerateMesh(::UnityEngine::Rect rect, float depth, float border);
     // protected System.Void GetSharedMeshData(UnityEngine.Mesh mesh)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -111,19 +103,19 @@ namespace VROSC::UI::Meshes {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetMeshSize(::UnityEngine::Mesh* mesh, ::UnityEngine::Rect rect, float depth, float border, float appear, ::VROSC::AnimatedAppear::Mode mode);
     // public System.Boolean Verify(UnityEngine.Mesh mesh)
-    // Offset: 0x98895C
+    // Offset: 0xB24788
     bool Verify(::UnityEngine::Mesh* mesh);
     // public UnityEngine.Vector2[] FlatMapUV(UnityEngine.Mesh mesh, UnityEngine.Rect rect)
-    // Offset: 0x9883F4
+    // Offset: 0xB247D4
     ::ArrayW<::UnityEngine::Vector2> FlatMapUV(::UnityEngine::Mesh* mesh, ::UnityEngine::Rect rect);
     // public System.Void RebuildData()
-    // Offset: 0x98CE74
+    // Offset: 0xB2493C
     void RebuildData();
     // protected UnityEngine.Rect AnimateFromCenter(UnityEngine.Rect rect, System.Single appear)
-    // Offset: 0x98B1E8
+    // Offset: 0xB22F8C
     ::UnityEngine::Rect AnimateFromCenter(::UnityEngine::Rect rect, float appear);
     // protected System.Void .ctor()
-    // Offset: 0x989E50
+    // Offset: 0xB230D4
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

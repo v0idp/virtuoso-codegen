@@ -34,15 +34,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class UriBuilder : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _changed
     // Size: 0x1
     // Offset: 0x10
@@ -115,50 +107,50 @@ namespace System {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _changed
-    bool& dyn__changed();
+    [[deprecated]] bool& dyn__changed();
     // Get instance field reference: private System.String _fragment
-    ::StringW& dyn__fragment();
+    [[deprecated]] ::StringW& dyn__fragment();
     // Get instance field reference: private System.String _host
-    ::StringW& dyn__host();
+    [[deprecated]] ::StringW& dyn__host();
     // Get instance field reference: private System.String _password
-    ::StringW& dyn__password();
+    [[deprecated]] ::StringW& dyn__password();
     // Get instance field reference: private System.String _path
-    ::StringW& dyn__path();
+    [[deprecated]] ::StringW& dyn__path();
     // Get instance field reference: private System.Int32 _port
-    int& dyn__port();
+    [[deprecated]] int& dyn__port();
     // Get instance field reference: private System.String _query
-    ::StringW& dyn__query();
+    [[deprecated]] ::StringW& dyn__query();
     // Get instance field reference: private System.String _scheme
-    ::StringW& dyn__scheme();
+    [[deprecated]] ::StringW& dyn__scheme();
     // Get instance field reference: private System.String _schemeDelimiter
-    ::StringW& dyn__schemeDelimiter();
+    [[deprecated]] ::StringW& dyn__schemeDelimiter();
     // Get instance field reference: private System.Uri _uri
-    ::System::Uri*& dyn__uri();
+    [[deprecated]] ::System::Uri*& dyn__uri();
     // Get instance field reference: private System.String _username
-    ::StringW& dyn__username();
+    [[deprecated]] ::StringW& dyn__username();
     // public System.Void set_Host(System.String value)
-    // Offset: 0xAB1B98
+    // Offset: 0xC3CAA8
     void set_Host(::StringW value);
     // public System.Void set_Path(System.String value)
-    // Offset: 0xAB1C90
+    // Offset: 0xC3CBA0
     void set_Path(::StringW value);
     // public System.String get_Query()
-    // Offset: 0xAB1D58
+    // Offset: 0xC3CC68
     ::StringW get_Query();
     // public System.Void set_Query(System.String value)
-    // Offset: 0xAB1D60
+    // Offset: 0xC3CC70
     void set_Query(::StringW value);
     // public System.Void set_Scheme(System.String value)
-    // Offset: 0xAB1E24
+    // Offset: 0xC3CD34
     void set_Scheme(::StringW value);
     // public System.Uri get_Uri()
-    // Offset: 0xAB1F7C
+    // Offset: 0xC3CE8C
     ::System::Uri* get_Uri();
     // private System.Void SetFieldsFromUri(System.Uri uri)
-    // Offset: 0xAB2024
+    // Offset: 0xC3CF34
     void SetFieldsFromUri(::System::Uri* uri);
     // public System.Void .ctor()
-    // Offset: 0xAB1A68
+    // Offset: 0xC3C978
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -167,17 +159,17 @@ namespace System {
       return THROW_UNLESS((::il2cpp_utils::New<UriBuilder*, creationType>()));
     }
     // public override System.Boolean Equals(System.Object rparam)
-    // Offset: 0xAB219C
+    // Offset: 0xC3D0AC
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object rparam)
     bool Equals(::Il2CppObject* rparam);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xAB21FC
+    // Offset: 0xC3D10C
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();
     // public override System.String ToString()
-    // Offset: 0xAB2220
+    // Offset: 0xC3D130
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

@@ -38,20 +38,20 @@ namespace System::Threading {
   class SendOrPostCallback : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xF4AE50
+    // Offset: 0x117783C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SendOrPostCallback* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::SendOrPostCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SendOrPostCallback*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Object state)
-    // Offset: 0xF4AE60
+    // Offset: 0x117784C
     void Invoke(::Il2CppObject* state);
     // public System.IAsyncResult BeginInvoke(System.Object state, System.AsyncCallback callback, System.Object object)
-    // Offset: 0xF4B1D4
+    // Offset: 0x1177BC0
     ::System::IAsyncResult* BeginInvoke(::Il2CppObject* state, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xF4B1F8
+    // Offset: 0x1177BE4
     void EndInvoke(::System::IAsyncResult* result);
   }; // System.Threading.SendOrPostCallback
   #pragma pack(pop)

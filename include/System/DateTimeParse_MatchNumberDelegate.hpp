@@ -37,20 +37,20 @@ namespace System {
   class DateTimeParse::MatchNumberDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xDD17A0
+    // Offset: 0x13AA148
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DateTimeParse::MatchNumberDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::DateTimeParse::MatchNumberDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DateTimeParse::MatchNumberDelegate*, creationType>(object, method)));
     }
     // public System.Boolean Invoke(ref System.__DTString str, System.Int32 digitLen, out System.Int32 result)
-    // Offset: 0xDD17B0
+    // Offset: 0x13AA158
     bool Invoke(ByRef<::System::__DTString> str, int digitLen, ByRef<int> result);
     // public System.IAsyncResult BeginInvoke(ref System.__DTString str, System.Int32 digitLen, out System.Int32 result, System.AsyncCallback callback, System.Object object)
-    // Offset: 0xDD1A24
+    // Offset: 0x13AA3CC
     ::System::IAsyncResult* BeginInvoke(ByRef<::System::__DTString> str, int digitLen, ByRef<int> result, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Boolean EndInvoke(ref System.__DTString str, out System.Int32 result, System.IAsyncResult __result)
-    // Offset: 0xDD1AF8
+    // Offset: 0x13AA4A0
     bool EndInvoke(ByRef<::System::__DTString> str, ByRef<int> result, ::System::IAsyncResult* __result);
   }; // System.DateTimeParse/System.MatchNumberDelegate
   #pragma pack(pop)

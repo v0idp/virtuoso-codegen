@@ -61,39 +61,39 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IEquatable_1<::Firebase::Firestore::GeoPoint>*>(this);
     }
     // Get instance field reference: private readonly System.Double _latitude
-    double& dyn__latitude();
+    [[deprecated]] double& dyn__latitude();
     // Get instance field reference: private readonly System.Double _longitude
-    double& dyn__longitude();
+    [[deprecated]] double& dyn__longitude();
     // public System.Double get_Latitude()
-    // Offset: 0xC3DBE8
+    // Offset: 0xD619F8
     double get_Latitude();
     // public System.Double get_Longitude()
-    // Offset: 0xC3DBF0
+    // Offset: 0xD61A00
     double get_Longitude();
     // public System.Void .ctor(System.Double latitude, System.Double longitude)
-    // Offset: 0xC3DA98
+    // Offset: 0xD618A8
     // ABORTED: conflicts with another method.  GeoPoint(double latitude, double longitude);
     // public System.Boolean Equals(Firebase.Firestore.GeoPoint other)
-    // Offset: 0xC3DC8C
+    // Offset: 0xD61A9C
     bool Equals(::Firebase::Firestore::GeoPoint other);
     // Firebase.Firestore.GeoPointProxy ConvertToProxy()
-    // Offset: 0xC3DE18
+    // Offset: 0xD61C28
     ::Firebase::Firestore::GeoPointProxy* ConvertToProxy();
     // static Firebase.Firestore.GeoPoint ConvertFromProxy(Firebase.Firestore.GeoPointProxy obj)
-    // Offset: 0xC2AFF4
+    // Offset: 0xD4CE64
     static ::Firebase::Firestore::GeoPoint ConvertFromProxy(::Firebase::Firestore::GeoPointProxy* obj);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC3DBF8
+    // Offset: 0xD61A08
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xC3DCB8
+    // Offset: 0xD61AC8
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();
     // public override System.String ToString()
-    // Offset: 0xC3DD6C
+    // Offset: 0xD61B7C
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

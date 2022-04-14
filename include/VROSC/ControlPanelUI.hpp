@@ -55,15 +55,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ControlPanelUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TransformMoverRelay _transformMoverRelay
     // Size: 0x8
     // Offset: 0x18
@@ -104,37 +96,37 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TransformMoverRelay _transformMoverRelay
-    ::VROSC::TransformMoverRelay*& dyn__transformMoverRelay();
+    [[deprecated]] ::VROSC::TransformMoverRelay*& dyn__transformMoverRelay();
     // Get instance field reference: private VROSC.InfoPanel _infoPanelUI
-    ::VROSC::InfoPanel*& dyn__infoPanelUI();
+    [[deprecated]] ::VROSC::InfoPanel*& dyn__infoPanelUI();
     // Get instance field reference: private VROSC.UIToggle _infoButton
-    ::VROSC::UIToggle*& dyn__infoButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__infoButton();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: protected TMPro.TextMeshPro _header
-    ::TMPro::TextMeshPro*& dyn__header();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__header();
     // Get instance field reference: public System.Action OnClosePressed
-    ::System::Action*& dyn_OnClosePressed();
+    [[deprecated]] ::System::Action*& dyn_OnClosePressed();
     // public VROSC.TransformMoverRelay get_TransformMoverRelay()
-    // Offset: 0x1337E68
+    // Offset: 0x94D110
     ::VROSC::TransformMoverRelay* get_TransformMoverRelay();
     // protected System.Void Awake()
-    // Offset: 0x1337E70
+    // Offset: 0x94D118
     void Awake();
     // protected System.Void OnDestroy()
-    // Offset: 0x1337FBC
+    // Offset: 0x94D264
     void OnDestroy();
     // public System.Void Setup(VROSC.WidgetController widgetController)
-    // Offset: 0x1338108
+    // Offset: 0x94D3B0
     void Setup(::VROSC::WidgetController* widgetController);
     // private System.Void InfoButtonToggled(VROSC.InputDevice device, System.Boolean isOn)
-    // Offset: 0x1338220
+    // Offset: 0x94D4C8
     void InfoButtonToggled(::VROSC::InputDevice* device, bool isOn);
     // private System.Void CloseButtonPressed()
-    // Offset: 0x1338244
+    // Offset: 0x94D4EC
     void CloseButtonPressed();
     // public System.Void .ctor()
-    // Offset: 0x1338258
+    // Offset: 0x94D500
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

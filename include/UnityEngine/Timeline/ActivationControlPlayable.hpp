@@ -100,7 +100,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState Revert
       static void _set_Revert(::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState
     #pragma pack(pop)
     static check_size<sizeof(ActivationControlPlayable::PostPlaybackState), 0 + sizeof(int)> __UnityEngine_Timeline_ActivationControlPlayable_PostPlaybackStateSizeCheck;
@@ -148,20 +148,12 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.InitialState Inactive
       static void _set_Inactive(::UnityEngine::Timeline::ActivationControlPlayable::InitialState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.InitialState
     #pragma pack(pop)
     static check_size<sizeof(ActivationControlPlayable::InitialState), 0 + sizeof(int)> __UnityEngine_Timeline_ActivationControlPlayable_InitialStateSizeCheck;
     static_assert(sizeof(ActivationControlPlayable::InitialState) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.GameObject gameObject
     // Size: 0x8
     // Offset: 0x10
@@ -182,16 +174,16 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(::UnityEngine::Timeline::ActivationControlPlayable::InitialState) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.GameObject gameObject
-    ::UnityEngine::GameObject*& dyn_gameObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_gameObject();
     // Get instance field reference: public UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState postPlayback
-    ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState& dyn_postPlayback();
+    [[deprecated]] ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState& dyn_postPlayback();
     // Get instance field reference: private UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.InitialState m_InitialState
-    ::UnityEngine::Timeline::ActivationControlPlayable::InitialState& dyn_m_InitialState();
+    [[deprecated]] ::UnityEngine::Timeline::ActivationControlPlayable::InitialState& dyn_m_InitialState();
     // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.ActivationControlPlayable> Create(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject gameObject, UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState postPlaybackState)
-    // Offset: 0xA71A98
+    // Offset: 0xC68F68
     static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ActivationControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* gameObject, ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState postPlaybackState);
     // public System.Void .ctor()
-    // Offset: 0xA71F4C
+    // Offset: 0xC6941C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -201,27 +193,27 @@ namespace UnityEngine::Timeline {
       return THROW_UNLESS((::il2cpp_utils::New<ActivationControlPlayable*, creationType>()));
     }
     // public override System.Void OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0xA71BF8
+    // Offset: 0xC690C8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPlay(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);
     // public override System.Void OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0xA71C8C
+    // Offset: 0xC6915C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPause(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object userData)
-    // Offset: 0xA71D40
+    // Offset: 0xC69210
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object userData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* userData);
     // public override System.Void OnGraphStart(UnityEngine.Playables.Playable playable)
-    // Offset: 0xA71DD4
+    // Offset: 0xC692A4
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnGraphStart(UnityEngine.Playables.Playable playable)
     void OnGraphStart(::UnityEngine::Playables::Playable playable);
     // public override System.Void OnPlayableDestroy(UnityEngine.Playables.Playable playable)
-    // Offset: 0xA71E74
+    // Offset: 0xC69344
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnPlayableDestroy(UnityEngine.Playables.Playable playable)
     void OnPlayableDestroy(::UnityEngine::Playables::Playable playable);

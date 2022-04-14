@@ -26,8 +26,8 @@ namespace VROSC {
   class LoopStationTrack;
   // Forward declaring type: LoopStationTrackGroup
   class LoopStationTrackGroup;
-  // Forward declaring type: LoopStationLaunchpad
-  class LoopStationLaunchpad;
+  // Forward declaring type: LoopStationLaunchpadData
+  class LoopStationLaunchpadData;
 }
 // Completed forward declares
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
@@ -46,39 +46,39 @@ namespace VROSC {
     static ::VROSC::LoopStationDataController::$$c* _get_$$9();
     // Set static field: static public readonly VROSC.LoopStationDataController/VROSC.<>c <>9
     static void _set_$$9(::VROSC::LoopStationDataController::$$c* value);
-    // Get static field: static public System.Func`2<VROSC.LoopStationTrack,System.Int32> <>9__40_0
-    static ::System::Func_2<::VROSC::LoopStationTrack*, int>* _get_$$9__40_0();
-    // Set static field: static public System.Func`2<VROSC.LoopStationTrack,System.Int32> <>9__40_0
-    static void _set_$$9__40_0(::System::Func_2<::VROSC::LoopStationTrack*, int>* value);
-    // Get static field: static public System.Func`2<VROSC.LoopStationTrack,System.String> <>9__46_0
-    static ::System::Func_2<::VROSC::LoopStationTrack*, ::StringW>* _get_$$9__46_0();
-    // Set static field: static public System.Func`2<VROSC.LoopStationTrack,System.String> <>9__46_0
-    static void _set_$$9__46_0(::System::Func_2<::VROSC::LoopStationTrack*, ::StringW>* value);
-    // Get static field: static public System.Func`2<VROSC.LoopStationTrackGroup,System.String> <>9__79_0
-    static ::System::Func_2<::VROSC::LoopStationTrackGroup*, ::StringW>* _get_$$9__79_0();
-    // Set static field: static public System.Func`2<VROSC.LoopStationTrackGroup,System.String> <>9__79_0
-    static void _set_$$9__79_0(::System::Func_2<::VROSC::LoopStationTrackGroup*, ::StringW>* value);
-    // Get static field: static public System.Func`2<VROSC.LoopStationLaunchpad,System.String> <>9__100_0
-    static ::System::Func_2<::VROSC::LoopStationLaunchpad*, ::StringW>* _get_$$9__100_0();
-    // Set static field: static public System.Func`2<VROSC.LoopStationLaunchpad,System.String> <>9__100_0
-    static void _set_$$9__100_0(::System::Func_2<::VROSC::LoopStationLaunchpad*, ::StringW>* value);
+    // Get static field: static public System.Func`2<VROSC.LoopStationTrack,System.Int32> <>9__37_0
+    static ::System::Func_2<::VROSC::LoopStationTrack*, int>* _get_$$9__37_0();
+    // Set static field: static public System.Func`2<VROSC.LoopStationTrack,System.Int32> <>9__37_0
+    static void _set_$$9__37_0(::System::Func_2<::VROSC::LoopStationTrack*, int>* value);
+    // Get static field: static public System.Func`2<VROSC.LoopStationTrack,System.String> <>9__43_0
+    static ::System::Func_2<::VROSC::LoopStationTrack*, ::StringW>* _get_$$9__43_0();
+    // Set static field: static public System.Func`2<VROSC.LoopStationTrack,System.String> <>9__43_0
+    static void _set_$$9__43_0(::System::Func_2<::VROSC::LoopStationTrack*, ::StringW>* value);
+    // Get static field: static public System.Func`2<VROSC.LoopStationTrackGroup,System.String> <>9__76_0
+    static ::System::Func_2<::VROSC::LoopStationTrackGroup*, ::StringW>* _get_$$9__76_0();
+    // Set static field: static public System.Func`2<VROSC.LoopStationTrackGroup,System.String> <>9__76_0
+    static void _set_$$9__76_0(::System::Func_2<::VROSC::LoopStationTrackGroup*, ::StringW>* value);
+    // Get static field: static public System.Func`2<VROSC.LoopStationLaunchpadData,System.String> <>9__97_0
+    static ::System::Func_2<::VROSC::LoopStationLaunchpadData*, ::StringW>* _get_$$9__97_0();
+    // Set static field: static public System.Func`2<VROSC.LoopStationLaunchpadData,System.String> <>9__97_0
+    static void _set_$$9__97_0(::System::Func_2<::VROSC::LoopStationLaunchpadData*, ::StringW>* value);
     // static private System.Void .cctor()
-    // Offset: 0x13D5D70
+    // Offset: 0x195DA8C
     static void _cctor();
-    // System.Int32 <SaveAudioPreview>b__40_0(VROSC.LoopStationTrack x)
-    // Offset: 0x13D5DD8
-    int $SaveAudioPreview$b__40_0(::VROSC::LoopStationTrack* x);
-    // System.String <GetTrackIds>b__46_0(VROSC.LoopStationTrack t)
-    // Offset: 0x13D5DF0
-    ::StringW $GetTrackIds$b__46_0(::VROSC::LoopStationTrack* t);
-    // System.String <GetGroupIds>b__79_0(VROSC.LoopStationTrackGroup t)
-    // Offset: 0x13D5E08
-    ::StringW $GetGroupIds$b__79_0(::VROSC::LoopStationTrackGroup* t);
-    // System.String <GetLaunchpadIds>b__100_0(VROSC.LoopStationLaunchpad t)
-    // Offset: 0x13D5E20
-    ::StringW $GetLaunchpadIds$b__100_0(::VROSC::LoopStationLaunchpad* t);
+    // System.Int32 <SaveAudioPreview>b__37_0(VROSC.LoopStationTrack x)
+    // Offset: 0x195DAF4
+    int $SaveAudioPreview$b__37_0(::VROSC::LoopStationTrack* x);
+    // System.String <GetTrackIds>b__43_0(VROSC.LoopStationTrack t)
+    // Offset: 0x195DB0C
+    ::StringW $GetTrackIds$b__43_0(::VROSC::LoopStationTrack* t);
+    // System.String <GetGroupIds>b__76_0(VROSC.LoopStationTrackGroup t)
+    // Offset: 0x195DB24
+    ::StringW $GetGroupIds$b__76_0(::VROSC::LoopStationTrackGroup* t);
+    // System.String <GetLaunchpadIds>b__97_0(VROSC.LoopStationLaunchpadData t)
+    // Offset: 0x195DB3C
+    ::StringW $GetLaunchpadIds$b__97_0(::VROSC::LoopStationLaunchpadData* t);
     // public System.Void .ctor()
-    // Offset: 0x13D5DD0
+    // Offset: 0x195DAEC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -98,40 +98,40 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$SaveAudioPreview$b__40_0
-// Il2CppName: <SaveAudioPreview>b__40_0
+// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$SaveAudioPreview$b__37_0
+// Il2CppName: <SaveAudioPreview>b__37_0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC::LoopStationDataController::$$c::*)(::VROSC::LoopStationTrack*)>(&VROSC::LoopStationDataController::$$c::$SaveAudioPreview$b__40_0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC::LoopStationDataController::$$c::*)(::VROSC::LoopStationTrack*)>(&VROSC::LoopStationDataController::$$c::$SaveAudioPreview$b__37_0)> {
   static const MethodInfo* get() {
     static auto* x = &::il2cpp_utils::GetClassFromName("VROSC", "LoopStationTrack")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<SaveAudioPreview>b__40_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<SaveAudioPreview>b__37_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$GetTrackIds$b__46_0
-// Il2CppName: <GetTrackIds>b__46_0
+// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$GetTrackIds$b__43_0
+// Il2CppName: <GetTrackIds>b__43_0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (VROSC::LoopStationDataController::$$c::*)(::VROSC::LoopStationTrack*)>(&VROSC::LoopStationDataController::$$c::$GetTrackIds$b__46_0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (VROSC::LoopStationDataController::$$c::*)(::VROSC::LoopStationTrack*)>(&VROSC::LoopStationDataController::$$c::$GetTrackIds$b__43_0)> {
   static const MethodInfo* get() {
     static auto* t = &::il2cpp_utils::GetClassFromName("VROSC", "LoopStationTrack")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<GetTrackIds>b__46_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<GetTrackIds>b__43_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$GetGroupIds$b__79_0
-// Il2CppName: <GetGroupIds>b__79_0
+// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$GetGroupIds$b__76_0
+// Il2CppName: <GetGroupIds>b__76_0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (VROSC::LoopStationDataController::$$c::*)(::VROSC::LoopStationTrackGroup*)>(&VROSC::LoopStationDataController::$$c::$GetGroupIds$b__79_0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (VROSC::LoopStationDataController::$$c::*)(::VROSC::LoopStationTrackGroup*)>(&VROSC::LoopStationDataController::$$c::$GetGroupIds$b__76_0)> {
   static const MethodInfo* get() {
     static auto* t = &::il2cpp_utils::GetClassFromName("VROSC", "LoopStationTrackGroup")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<GetGroupIds>b__79_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<GetGroupIds>b__76_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$GetLaunchpadIds$b__100_0
-// Il2CppName: <GetLaunchpadIds>b__100_0
+// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$GetLaunchpadIds$b__97_0
+// Il2CppName: <GetLaunchpadIds>b__97_0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (VROSC::LoopStationDataController::$$c::*)(::VROSC::LoopStationLaunchpad*)>(&VROSC::LoopStationDataController::$$c::$GetLaunchpadIds$b__100_0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (VROSC::LoopStationDataController::$$c::*)(::VROSC::LoopStationLaunchpadData*)>(&VROSC::LoopStationDataController::$$c::$GetLaunchpadIds$b__97_0)> {
   static const MethodInfo* get() {
-    static auto* t = &::il2cpp_utils::GetClassFromName("VROSC", "LoopStationLaunchpad")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<GetLaunchpadIds>b__100_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
+    static auto* t = &::il2cpp_utils::GetClassFromName("VROSC", "LoopStationLaunchpadData")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<GetLaunchpadIds>b__97_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
   }
 };
 // Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::New_ctor

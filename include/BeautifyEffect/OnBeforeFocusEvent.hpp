@@ -38,20 +38,20 @@ namespace BeautifyEffect {
   class OnBeforeFocusEvent : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x91D1F0
+    // Offset: 0xC66D08
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OnBeforeFocusEvent* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::BeautifyEffect::OnBeforeFocusEvent::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OnBeforeFocusEvent*, creationType>(object, method)));
     }
     // public System.Single Invoke(System.Single currentFocusDistance)
-    // Offset: 0x91D200
+    // Offset: 0xC66D18
     float Invoke(float currentFocusDistance);
     // public System.IAsyncResult BeginInvoke(System.Single currentFocusDistance, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x91D43C
+    // Offset: 0xC66F54
     ::System::IAsyncResult* BeginInvoke(float currentFocusDistance, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Single EndInvoke(System.IAsyncResult result)
-    // Offset: 0x91D4C4
+    // Offset: 0xC66FDC
     float EndInvoke(::System::IAsyncResult* result);
   }; // BeautifyEffect.OnBeforeFocusEvent
   #pragma pack(pop)

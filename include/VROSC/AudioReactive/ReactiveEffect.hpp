@@ -45,10 +45,10 @@ namespace VROSC::AudioReactive {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Setup(::VROSC::AudioReactive::AudioReactiveBehaviour* behaviour);
     // public System.Void DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
-    // Offset: 0x9966DC
+    // Offset: 0xB2E1C8
     void DrawGizmos(::VROSC::AudioReactive::ReactToBeat* sender);
     // protected System.Void .ctor()
-    // Offset: 0x9966E0
+    // Offset: 0xB2E1CC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

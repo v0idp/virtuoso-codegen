@@ -45,20 +45,20 @@ namespace Oculus::Platform::Samples::VrHoops {
   class MatchmakingManager::OnMatchPlayerAdded : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x1155A00
+    // Offset: 0x17228FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MatchmakingManager::OnMatchPlayerAdded* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MatchmakingManager::OnMatchPlayerAdded*, creationType>(object, method)));
     }
     // public Oculus.Platform.Samples.VrHoops.Player Invoke(System.Int32 slot, Oculus.Platform.Models.User user)
-    // Offset: 0x1155A10
+    // Offset: 0x172290C
     ::Oculus::Platform::Samples::VrHoops::Player* Invoke(int slot, ::Oculus::Platform::Models::User* user);
     // public System.IAsyncResult BeginInvoke(System.Int32 slot, Oculus.Platform.Models.User user, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1155C58
+    // Offset: 0x1722B54
     ::System::IAsyncResult* BeginInvoke(int slot, ::Oculus::Platform::Models::User* user, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public Oculus.Platform.Samples.VrHoops.Player EndInvoke(System.IAsyncResult result)
-    // Offset: 0x1155CEC
+    // Offset: 0x1722BE8
     ::Oculus::Platform::Samples::VrHoops::Player* EndInvoke(::System::IAsyncResult* result);
   }; // Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnMatchPlayerAdded
   #pragma pack(pop)

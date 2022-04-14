@@ -37,15 +37,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class LocalSessionsDataController::$$c__DisplayClass1_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.LocalSessionsDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -72,24 +64,24 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.LocalSessionsDataController <>4__this
-    ::VROSC::LocalSessionsDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::LocalSessionsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public System.Action`1<System.String> <>9__2
-    ::System::Action_1<::StringW>*& dyn_$$9__2();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_$$9__2();
     // System.Void <LoadLocalData>b__0(System.String data)
-    // Offset: 0x13D4CB4
+    // Offset: 0x195C9D0
     void $LoadLocalData$b__0(::StringW data);
     // System.Void <LoadLocalData>b__1(VROSC.Error error)
-    // Offset: 0x13D4F3C
+    // Offset: 0x195CC58
     void $LoadLocalData$b__1(::VROSC::Error error);
     // System.Void <LoadLocalData>b__2(System.String data)
-    // Offset: 0x13D5078
+    // Offset: 0x195CD94
     void $LoadLocalData$b__2(::StringW data);
     // public System.Void .ctor()
-    // Offset: 0x13D4CAC
+    // Offset: 0x195C9C8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

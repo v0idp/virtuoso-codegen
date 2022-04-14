@@ -42,22 +42,14 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InstrumentCreationBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.WidgetController _instrumentController
     // Size: 0x8
     // Offset: 0x10
     ::VROSC::WidgetController* instrumentController;
     // Field size check
     static_assert(sizeof(::VROSC::WidgetController*) == 0x8);
-    // [RangeAttribute] Offset: 0x673870
+    // [RangeAttribute] Offset: 0x789BE4
     // public System.Single Scale
     // Size: 0x4
     // Offset: 0x18
@@ -66,14 +58,14 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.WidgetController _instrumentController
-    ::VROSC::WidgetController*& dyn__instrumentController();
+    [[deprecated]] ::VROSC::WidgetController*& dyn__instrumentController();
     // Get instance field reference: public System.Single Scale
-    float& dyn_Scale();
+    [[deprecated]] float& dyn_Scale();
     // public System.Void Setup(VROSC.WidgetController instrumentController)
-    // Offset: 0x138468C
+    // Offset: 0x1947540
     void Setup(::VROSC::WidgetController* instrumentController);
     // public System.Void .ctor()
-    // Offset: 0x1384714
+    // Offset: 0x19475C8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -83,7 +75,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<InstrumentCreationBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x1384694
+    // Offset: 0x1947548
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

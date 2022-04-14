@@ -43,15 +43,7 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class StarRatingDisplayUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _exactResultText
     // Size: 0x8
     // Offset: 0x18
@@ -70,8 +62,8 @@ namespace VROSC {
     ::VROSC::MinMaxFloat* uvRange;
     // Field size check
     static_assert(sizeof(::VROSC::MinMaxFloat*) == 0x8);
-    // [HeaderAttribute] Offset: 0x67325C
-    // [RangeAttribute] Offset: 0x67325C
+    // [RangeAttribute] Offset: 0x789510
+    // [HeaderAttribute] Offset: 0x789510
     // private System.Single _previewValue
     // Size: 0x4
     // Offset: 0x30
@@ -82,21 +74,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _exactResultText
-    ::TMPro::TextMeshPro*& dyn__exactResultText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__exactResultText();
     // Get instance field reference: private VROSC.AdjustableMesh _starMesh
-    ::VROSC::AdjustableMesh*& dyn__starMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__starMesh();
     // Get instance field reference: private VROSC.MinMaxFloat _uvRange
-    ::VROSC::MinMaxFloat*& dyn__uvRange();
+    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__uvRange();
     // Get instance field reference: private System.Single _previewValue
-    float& dyn__previewValue();
+    [[deprecated]] float& dyn__previewValue();
     // public System.Void SetValue(System.Single value)
-    // Offset: 0x13BC21C
+    // Offset: 0x192F644
     void SetValue(float value);
     // private System.Void UpdateSlider(System.Single value)
-    // Offset: 0x13BC2F4
+    // Offset: 0x192F71C
     void UpdateSlider(float value);
     // public System.Void .ctor()
-    // Offset: 0x13BC3D4
+    // Offset: 0x192F7FC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

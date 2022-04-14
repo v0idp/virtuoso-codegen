@@ -41,15 +41,7 @@ namespace System::Threading {
   // [TokenAttribute] Offset: FFFFFFFF
   class Timer::Scheduler : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.SortedList list
     // Size: 0x8
     // Offset: 0x10
@@ -68,41 +60,41 @@ namespace System::Threading {
     // Set static field: static private System.Threading.Timer/System.Threading.Scheduler instance
     static void _set_instance(::System::Threading::Timer::Scheduler* value);
     // Get instance field reference: private System.Collections.SortedList list
-    ::System::Collections::SortedList*& dyn_list();
+    [[deprecated]] ::System::Collections::SortedList*& dyn_list();
     // Get instance field reference: private System.Threading.ManualResetEvent changed
-    ::System::Threading::ManualResetEvent*& dyn_changed();
+    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_changed();
     // static public System.Threading.Timer/System.Threading.Scheduler get_Instance()
-    // Offset: 0x108CBFC
+    // Offset: 0x18991E4
     static ::System::Threading::Timer::Scheduler* get_Instance();
     // static private System.Void .cctor()
-    // Offset: 0x108CA40
+    // Offset: 0x1899028
     static void _cctor();
     // public System.Void Remove(System.Threading.Timer timer)
-    // Offset: 0x108CC68
+    // Offset: 0x1899250
     void Remove(::System::Threading::Timer* timer);
     // public System.Void Change(System.Threading.Timer timer, System.Int64 new_next_run)
-    // Offset: 0x108CDB0
+    // Offset: 0x1899398
     void Change(::System::Threading::Timer* timer, int64_t new_next_run);
     // private System.Int32 FindByDueTime(System.Int64 nr)
-    // Offset: 0x108D074
+    // Offset: 0x189965C
     int FindByDueTime(int64_t nr);
     // private System.Void Add(System.Threading.Timer timer)
-    // Offset: 0x108CF48
+    // Offset: 0x1899530
     void Add(::System::Threading::Timer* timer);
     // private System.Int32 InternalRemove(System.Threading.Timer timer)
-    // Offset: 0x108CD50
+    // Offset: 0x1899338
     int InternalRemove(::System::Threading::Timer* timer);
     // static private System.Void TimerCB(System.Object o)
-    // Offset: 0x108D1CC
+    // Offset: 0x18997B4
     static void TimerCB(::Il2CppObject* o);
     // private System.Void SchedulerThread()
-    // Offset: 0x108D240
+    // Offset: 0x1899828
     void SchedulerThread();
     // private System.Void ShrinkIfNeeded(System.Collections.Generic.List`1<System.Threading.Timer> list, System.Int32 initial)
-    // Offset: 0x108D830
+    // Offset: 0x1899E18
     void ShrinkIfNeeded(::System::Collections::Generic::List_1<::System::Threading::Timer*>* list, int initial);
     // private System.Void .ctor()
-    // Offset: 0x108CA9C
+    // Offset: 0x1899084
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

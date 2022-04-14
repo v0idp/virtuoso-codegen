@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ControllerHintAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.ControllerHintBehaviour template
     // Size: 0x8
     // Offset: 0x18
@@ -79,13 +71,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.ControllerHintBehaviour template
-    ::VROSC::ControllerHintBehaviour*& dyn_template();
+    [[deprecated]] ::VROSC::ControllerHintBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.HighlightControllerComponents> _highlighting
-    ::UnityEngine::ExposedReference_1<::VROSC::HighlightControllerComponents*>& dyn__highlighting();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::HighlightControllerComponents*>& dyn__highlighting();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.TouchableObjectsController> _touchables
-    ::UnityEngine::ExposedReference_1<::VROSC::TouchableObjectsController*>& dyn__touchables();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::TouchableObjectsController*>& dyn__touchables();
     // public System.Void .ctor()
-    // Offset: 0x1338FB0
+    // Offset: 0x94E280
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -97,7 +89,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ControllerHintAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0x1338E1C
+    // Offset: 0x94E0EC
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

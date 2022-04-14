@@ -31,15 +31,7 @@ namespace TMPro {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class TMP_MaterialManager::$$c__DisplayClass13_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Material baseMaterial
     // Size: 0x8
     // Offset: 0x10
@@ -52,12 +44,12 @@ namespace TMPro {
       return baseMaterial;
     }
     // Get instance field reference: public UnityEngine.Material baseMaterial
-    ::UnityEngine::Material*& dyn_baseMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_baseMaterial();
     // System.Boolean <ReleaseBaseMaterial>b__0(TMPro.TMP_MaterialManager/TMPro.MaskingMaterial item)
-    // Offset: 0x1247044
+    // Offset: 0x18210E0
     bool $ReleaseBaseMaterial$b__0(::TMPro::TMP_MaterialManager::MaskingMaterial* item);
     // public System.Void .ctor()
-    // Offset: 0x124703C
+    // Offset: 0x18210D8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

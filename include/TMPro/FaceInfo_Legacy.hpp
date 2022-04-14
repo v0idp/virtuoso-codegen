@@ -27,15 +27,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class FaceInfo_Legacy : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Name
     // Size: 0x8
     // Offset: 0x10
@@ -164,49 +156,49 @@ namespace TMPro {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.String Name
-    ::StringW& dyn_Name();
+    [[deprecated]] ::StringW& dyn_Name();
     // Get instance field reference: public System.Single PointSize
-    float& dyn_PointSize();
+    [[deprecated]] float& dyn_PointSize();
     // Get instance field reference: public System.Single Scale
-    float& dyn_Scale();
+    [[deprecated]] float& dyn_Scale();
     // Get instance field reference: public System.Int32 CharacterCount
-    int& dyn_CharacterCount();
+    [[deprecated]] int& dyn_CharacterCount();
     // Get instance field reference: public System.Single LineHeight
-    float& dyn_LineHeight();
+    [[deprecated]] float& dyn_LineHeight();
     // Get instance field reference: public System.Single Baseline
-    float& dyn_Baseline();
+    [[deprecated]] float& dyn_Baseline();
     // Get instance field reference: public System.Single Ascender
-    float& dyn_Ascender();
+    [[deprecated]] float& dyn_Ascender();
     // Get instance field reference: public System.Single CapHeight
-    float& dyn_CapHeight();
+    [[deprecated]] float& dyn_CapHeight();
     // Get instance field reference: public System.Single Descender
-    float& dyn_Descender();
+    [[deprecated]] float& dyn_Descender();
     // Get instance field reference: public System.Single CenterLine
-    float& dyn_CenterLine();
+    [[deprecated]] float& dyn_CenterLine();
     // Get instance field reference: public System.Single SuperscriptOffset
-    float& dyn_SuperscriptOffset();
+    [[deprecated]] float& dyn_SuperscriptOffset();
     // Get instance field reference: public System.Single SubscriptOffset
-    float& dyn_SubscriptOffset();
+    [[deprecated]] float& dyn_SubscriptOffset();
     // Get instance field reference: public System.Single SubSize
-    float& dyn_SubSize();
+    [[deprecated]] float& dyn_SubSize();
     // Get instance field reference: public System.Single Underline
-    float& dyn_Underline();
+    [[deprecated]] float& dyn_Underline();
     // Get instance field reference: public System.Single UnderlineThickness
-    float& dyn_UnderlineThickness();
+    [[deprecated]] float& dyn_UnderlineThickness();
     // Get instance field reference: public System.Single strikethrough
-    float& dyn_strikethrough();
+    [[deprecated]] float& dyn_strikethrough();
     // Get instance field reference: public System.Single strikethroughThickness
-    float& dyn_strikethroughThickness();
+    [[deprecated]] float& dyn_strikethroughThickness();
     // Get instance field reference: public System.Single TabWidth
-    float& dyn_TabWidth();
+    [[deprecated]] float& dyn_TabWidth();
     // Get instance field reference: public System.Single Padding
-    float& dyn_Padding();
+    [[deprecated]] float& dyn_Padding();
     // Get instance field reference: public System.Single AtlasWidth
-    float& dyn_AtlasWidth();
+    [[deprecated]] float& dyn_AtlasWidth();
     // Get instance field reference: public System.Single AtlasHeight
-    float& dyn_AtlasHeight();
+    [[deprecated]] float& dyn_AtlasHeight();
     // public System.Void .ctor()
-    // Offset: 0xA4763C
+    // Offset: 0xC2924C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

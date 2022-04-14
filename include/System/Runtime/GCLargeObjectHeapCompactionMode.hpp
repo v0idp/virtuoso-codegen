@@ -54,7 +54,7 @@ namespace System::Runtime {
     // Set static field: static public System.Runtime.GCLargeObjectHeapCompactionMode CompactOnce
     static void _set_CompactOnce(::System::Runtime::GCLargeObjectHeapCompactionMode value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // System.Runtime.GCLargeObjectHeapCompactionMode
   #pragma pack(pop)
   static check_size<sizeof(GCLargeObjectHeapCompactionMode), 0 + sizeof(int)> __System_Runtime_GCLargeObjectHeapCompactionModeSizeCheck;

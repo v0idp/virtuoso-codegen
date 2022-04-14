@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Mallet : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _stick
     // Size: 0x8
     // Offset: 0x18
@@ -115,68 +107,68 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _stick
-    ::UnityEngine::Transform*& dyn__stick();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__stick();
     // Get instance field reference: private VROSC.MalletVisual _malletVisual
-    ::VROSC::MalletVisual*& dyn__malletVisual();
+    [[deprecated]] ::VROSC::MalletVisual*& dyn__malletVisual();
     // Get instance field reference: private VROSC.PredictiveHitter _predictiveHitter
-    ::VROSC::PredictiveHitter*& dyn__predictiveHitter();
+    [[deprecated]] ::VROSC::PredictiveHitter*& dyn__predictiveHitter();
     // Get instance field reference: private VROSC.MalletGrabbing _grabbing
-    ::VROSC::MalletGrabbing*& dyn__grabbing();
+    [[deprecated]] ::VROSC::MalletGrabbing*& dyn__grabbing();
     // Get instance field reference: private VROSC.MalletAnimator _animator
-    ::VROSC::MalletAnimator*& dyn__animator();
+    [[deprecated]] ::VROSC::MalletAnimator*& dyn__animator();
     // Get instance field reference: private VROSC.TriggerButton _holdingButton
-    ::VROSC::TriggerButton& dyn__holdingButton();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__holdingButton();
     // Get instance field reference: private VROSC.InputDevice <InputDevice>k__BackingField
-    ::VROSC::InputDevice*& dyn_$InputDevice$k__BackingField();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_$InputDevice$k__BackingField();
     // Get instance field reference: private System.Boolean <Active>k__BackingField
-    bool& dyn_$Active$k__BackingField();
+    [[deprecated]] bool& dyn_$Active$k__BackingField();
     // public VROSC.InputDevice get_InputDevice()
-    // Offset: 0x8AAD04
+    // Offset: 0x197D2B0
     ::VROSC::InputDevice* get_InputDevice();
     // private System.Void set_InputDevice(VROSC.InputDevice value)
-    // Offset: 0x8AAD0C
+    // Offset: 0x197D2B8
     void set_InputDevice(::VROSC::InputDevice* value);
     // public UnityEngine.Transform get_InteractionPoint()
-    // Offset: 0x8AAD14
+    // Offset: 0x197D2C0
     ::UnityEngine::Transform* get_InteractionPoint();
     // public VROSC.PredictiveHitter get_PredictiveHitter()
-    // Offset: 0x8AAD30
+    // Offset: 0x197D2DC
     ::VROSC::PredictiveHitter* get_PredictiveHitter();
     // public System.Boolean get_Active()
-    // Offset: 0x8AAD38
+    // Offset: 0x197D2E4
     bool get_Active();
     // private System.Void set_Active(System.Boolean value)
-    // Offset: 0x8AAD40
+    // Offset: 0x197D2EC
     void set_Active(bool value);
     // private System.Void Awake()
-    // Offset: 0x8AAD4C
+    // Offset: 0x197D2F8
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x8AAE20
+    // Offset: 0x197D3CC
     void OnDestroy();
     // public System.Void Setup(VROSC.InputDevice inputDevice)
-    // Offset: 0x8AAEF4
+    // Offset: 0x197D4A0
     void Setup(::VROSC::InputDevice* inputDevice);
     // public System.Void SetLength(System.Single length)
-    // Offset: 0x8AAFFC
+    // Offset: 0x197D5AC
     void SetLength(float length);
     // public System.Void SetAngle(System.Single angle)
-    // Offset: 0x8AB0C0
+    // Offset: 0x197D5C8
     void SetAngle(float angle);
     // System.Void Grab(VROSC.ClickData clickData)
-    // Offset: 0x8AB148
+    // Offset: 0x197D5E4
     void Grab(::VROSC::ClickData* clickData);
     // public System.Void Drop(VROSC.ClickData clickData)
-    // Offset: 0x8AB2F4
+    // Offset: 0x197D790
     void Drop(::VROSC::ClickData* clickData);
     // System.Void SetActive(System.Boolean shouldUseMallets)
-    // Offset: 0x8AAF34
+    // Offset: 0x197D4E0
     void SetActive(bool shouldUseMallets);
     // private System.Void AnimationFinished(System.Boolean malletsActive)
-    // Offset: 0x8AB434
+    // Offset: 0x197D828
     void AnimationFinished(bool malletsActive);
     // public System.Void .ctor()
-    // Offset: 0x8AB498
+    // Offset: 0x197D88C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

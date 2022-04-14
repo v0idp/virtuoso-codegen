@@ -31,15 +31,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class SettingsProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -62,39 +54,51 @@ namespace Firebase::Firestore {
     // Set static field: static public readonly System.Int64 kCacheSizeUnlimited
     static void _set_kCacheSizeUnlimited(int64_t value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC3FDF4
+    // Offset: 0xD5F0A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SettingsProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::SettingsProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SettingsProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xC40058
+    // Offset: 0xD645E4
     static void _cctor();
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.SettingsProxy obj)
-    // Offset: 0xC3B3C0
+    // Offset: 0xD5F1F0
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::SettingsProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC3FEC8
+    // Offset: 0xD64454
     void Dispose();
+    // public System.String host()
+    // Offset: 0xD5AD34
+    ::StringW host();
+    // public System.Boolean is_ssl_enabled()
+    // Offset: 0xD5ADD0
+    bool is_ssl_enabled();
+    // public System.Boolean is_persistence_enabled()
+    // Offset: 0xD5AE6C
+    bool is_persistence_enabled();
+    // public System.Int64 cache_size_bytes()
+    // Offset: 0xD5AF08
+    int64_t cache_size_bytes();
     // public System.Void set_host(System.String host)
-    // Offset: 0xC3843C
+    // Offset: 0xD5B450
     void set_host(::StringW host);
     // public System.Void set_ssl_enabled(System.Boolean enabled)
-    // Offset: 0xC384E8
+    // Offset: 0xD5B4F4
     void set_ssl_enabled(bool enabled);
     // public System.Void set_persistence_enabled(System.Boolean enabled)
-    // Offset: 0xC38594
+    // Offset: 0xD5B598
     void set_persistence_enabled(bool enabled);
     // public System.Void set_cache_size_bytes(System.Int64 value)
-    // Offset: 0xC38640
+    // Offset: 0xD5B63C
     void set_cache_size_bytes(int64_t value);
     // public System.Void .ctor()
-    // Offset: 0xC3839C
+    // Offset: 0xD5B3B8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -103,7 +107,7 @@ namespace Firebase::Firestore {
       return THROW_UNLESS((::il2cpp_utils::New<SettingsProxy*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xC3FE58
+    // Offset: 0xD643E4
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
@@ -140,6 +144,38 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Firebase::Firestore::SettingsProxy::*)()>(&Firebase::Firestore::SettingsProxy::Dispose)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::SettingsProxy*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::host
+// Il2CppName: host
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (Firebase::Firestore::SettingsProxy::*)()>(&Firebase::Firestore::SettingsProxy::host)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::SettingsProxy*), "host", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::is_ssl_enabled
+// Il2CppName: is_ssl_enabled
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Firebase::Firestore::SettingsProxy::*)()>(&Firebase::Firestore::SettingsProxy::is_ssl_enabled)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::SettingsProxy*), "is_ssl_enabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::is_persistence_enabled
+// Il2CppName: is_persistence_enabled
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Firebase::Firestore::SettingsProxy::*)()>(&Firebase::Firestore::SettingsProxy::is_persistence_enabled)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::SettingsProxy*), "is_persistence_enabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::cache_size_bytes
+// Il2CppName: cache_size_bytes
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (Firebase::Firestore::SettingsProxy::*)()>(&Firebase::Firestore::SettingsProxy::cache_size_bytes)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::SettingsProxy*), "cache_size_bytes", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::set_host

@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteFieldData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <XFields>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -91,56 +83,56 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::NoteFieldNoteData*>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <XFields>k__BackingField
-    int& dyn_$XFields$k__BackingField();
+    [[deprecated]] int& dyn_$XFields$k__BackingField();
     // Get instance field reference: private System.Int32 <YFields>k__BackingField
-    int& dyn_$YFields$k__BackingField();
+    [[deprecated]] int& dyn_$YFields$k__BackingField();
     // Get instance field reference: private System.Int32 <ZFields>k__BackingField
-    int& dyn_$ZFields$k__BackingField();
+    [[deprecated]] int& dyn_$ZFields$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <FieldSize>k__BackingField
-    ::UnityEngine::Vector3& dyn_$FieldSize$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$FieldSize$k__BackingField();
     // Get instance field reference: private VROSC.NoteFieldNoteData[,,] _noteFieldArray
-    ::ArrayW<::VROSC::NoteFieldNoteData*>& dyn__noteFieldArray();
+    [[deprecated]] ::ArrayW<::VROSC::NoteFieldNoteData*>& dyn__noteFieldArray();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.NoteFieldNoteData> _noteFieldList
-    ::System::Collections::Generic::List_1<::VROSC::NoteFieldNoteData*>*& dyn__noteFieldList();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::NoteFieldNoteData*>*& dyn__noteFieldList();
     // public System.Int32 get_XFields()
-    // Offset: 0xA1517C
+    // Offset: 0xC588F0
     int get_XFields();
     // private System.Void set_XFields(System.Int32 value)
-    // Offset: 0xA15174
+    // Offset: 0xC588E8
     void set_XFields(int value);
     // public System.Int32 get_YFields()
-    // Offset: 0xA1518C
+    // Offset: 0xC58900
     int get_YFields();
     // private System.Void set_YFields(System.Int32 value)
-    // Offset: 0xA15184
+    // Offset: 0xC588F8
     void set_YFields(int value);
     // public System.Int32 get_ZFields()
-    // Offset: 0xA1519C
+    // Offset: 0xC58910
     int get_ZFields();
     // private System.Void set_ZFields(System.Int32 value)
-    // Offset: 0xA15194
+    // Offset: 0xC58908
     void set_ZFields(int value);
     // public UnityEngine.Vector3 get_FieldSize()
-    // Offset: 0xA151B0
+    // Offset: 0xC58924
     ::UnityEngine::Vector3 get_FieldSize();
     // private System.Void set_FieldSize(UnityEngine.Vector3 value)
-    // Offset: 0xA151A4
+    // Offset: 0xC58918
     void set_FieldSize(::UnityEngine::Vector3 value);
     // public System.Void .ctor(VROSC.NoteFieldParameters parameters)
-    // Offset: 0xA12994
+    // Offset: 0xC58930
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteFieldData* New_ctor(::VROSC::NoteFieldParameters* parameters) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteFieldData*, creationType>(parameters)));
     }
     // private System.Void SetFieldSize(VROSC.NoteFieldParameters parameters)
-    // Offset: 0xA151BC
+    // Offset: 0xC58D74
     void SetFieldSize(::VROSC::NoteFieldParameters* parameters);
     // public VROSC.NoteFieldNoteData GetNoteBoardNote(UnityEngine.Vector3 normalizedPoint)
-    // Offset: 0xA12DD8
+    // Offset: 0xC58FF8
     ::VROSC::NoteFieldNoteData* GetNoteBoardNote(::UnityEngine::Vector3 normalizedPoint);
     // public VROSC.NoteFieldNoteData GetNoteBoardNote(System.Int32 x, System.Int32 y, System.Int32 z)
-    // Offset: 0xA15440
+    // Offset: 0xC590EC
     ::VROSC::NoteFieldNoteData* GetNoteBoardNote(int x, int y, int z);
   }; // VROSC.NoteFieldData
   #pragma pack(pop)

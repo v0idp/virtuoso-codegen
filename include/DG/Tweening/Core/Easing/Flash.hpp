@@ -23,19 +23,19 @@ namespace DG::Tweening::Core::Easing {
   class Flash : public ::Il2CppObject {
     public:
     // static public System.Single Ease(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x109D0A4
+    // Offset: 0x15DF6CC
     static float Ease(float time, float duration, float overshootOrAmplitude, float period);
     // static public System.Single EaseIn(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x109D120
+    // Offset: 0x15DF748
     static float EaseIn(float time, float duration, float overshootOrAmplitude, float period);
     // static public System.Single EaseOut(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x109D1A0
+    // Offset: 0x15DF7C8
     static float EaseOut(float time, float duration, float overshootOrAmplitude, float period);
     // static public System.Single EaseInOut(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x109D228
+    // Offset: 0x15DF850
     static float EaseInOut(float time, float duration, float overshootOrAmplitude, float period);
     // static private System.Single WeightedEase(System.Single overshootOrAmplitude, System.Single period, System.Int32 stepIndex, System.Single stepDuration, System.Single dir, System.Single res)
-    // Offset: 0x109D2EC
+    // Offset: 0x15DF914
     static float WeightedEase(float overshootOrAmplitude, float period, int stepIndex, float stepDuration, float dir, float res);
   }; // DG.Tweening.Core.Easing.Flash
   #pragma pack(pop)

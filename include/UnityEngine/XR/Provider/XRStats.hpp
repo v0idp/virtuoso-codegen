@@ -36,10 +36,10 @@ namespace UnityEngine::XR::Provider {
   class XRStats : public ::Il2CppObject {
     public:
     // static public System.Boolean TryGetStat(UnityEngine.IntegratedSubsystem xrSubsystem, System.String tag, out System.Single value)
-    // Offset: 0x12C6E70
+    // Offset: 0x18C7200
     static bool TryGetStat(::UnityEngine::IntegratedSubsystem* xrSubsystem, ::StringW tag, ByRef<float> value);
     // static private System.Boolean TryGetStat_Internal(System.IntPtr ptr, System.String tag, out System.Single value)
-    // Offset: 0x12C6ED0
+    // Offset: 0x18C7260
     static bool TryGetStat_Internal(::System::IntPtr ptr, ::StringW tag, ByRef<float> value);
   }; // UnityEngine.XR.Provider.XRStats
   #pragma pack(pop)

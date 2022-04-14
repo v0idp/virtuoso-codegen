@@ -30,20 +30,20 @@ namespace VROSC {
   class LocalSessionsDataModel : public ::VROSC::SessionsDataModel {
     public:
     // public System.String get_OldKey()
-    // Offset: 0x138E8B8
+    // Offset: 0x19AED0C
     ::StringW get_OldKey();
     // public override System.String get_Key()
-    // Offset: 0x138E874
+    // Offset: 0x19AECC8
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
     // public override System.Int32 get_Version()
-    // Offset: 0x138E8FC
+    // Offset: 0x19AED50
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Int32 BaseDataModel::get_Version()
     int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x138DD98
+    // Offset: 0x19AE1EC
     // Implemented from: VROSC.SessionsDataModel
     // Base method: System.Void SessionsDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()

@@ -46,15 +46,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRDebugConsole : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.ArrayList messages
     // Size: 0x8
     // Offset: 0x18
@@ -97,56 +89,56 @@ namespace GlobalNamespace {
     // Set static field: static private OVRDebugConsole s_Instance
     static void _set_s_Instance(::GlobalNamespace::OVRDebugConsole* value);
     // Get instance field reference: public System.Collections.ArrayList messages
-    ::System::Collections::ArrayList*& dyn_messages();
+    [[deprecated]] ::System::Collections::ArrayList*& dyn_messages();
     // Get instance field reference: public System.Int32 maxMessages
-    int& dyn_maxMessages();
+    [[deprecated]] int& dyn_maxMessages();
     // Get instance field reference: public UnityEngine.UI.Text textMsg
-    ::UnityEngine::UI::Text*& dyn_textMsg();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_textMsg();
     // Get instance field reference: private System.Boolean clearTimeoutOn
-    bool& dyn_clearTimeoutOn();
+    [[deprecated]] bool& dyn_clearTimeoutOn();
     // Get instance field reference: private System.Single clearTimeout
-    float& dyn_clearTimeout();
+    [[deprecated]] float& dyn_clearTimeout();
     // static public OVRDebugConsole get_instance()
-    // Offset: 0xA196E8
+    // Offset: 0xC5E74C
     static ::GlobalNamespace::OVRDebugConsole* get_instance();
     // private System.Void Awake()
-    // Offset: 0xA199E4
+    // Offset: 0xC5EA48
     void Awake();
     // private System.Void Update()
-    // Offset: 0xA19B3C
+    // Offset: 0xC5EBA0
     void Update();
     // public System.Void Init()
-    // Offset: 0xA19A50
+    // Offset: 0xC5EAB4
     void Init();
     // static public System.Void Log(System.String message)
-    // Offset: 0xA19C34
+    // Offset: 0xC5EC98
     static void Log(::StringW message);
     // static public System.Void Log(System.String message, UnityEngine.Color color)
-    // Offset: 0xA19D9C
+    // Offset: 0xC5EE00
     static void Log(::StringW message, ::UnityEngine::Color color);
     // static public System.Void Clear()
-    // Offset: 0xA19BD0
+    // Offset: 0xC5EC34
     static void Clear();
     // static public System.Void ClearTimeout(System.Single timeToClear)
-    // Offset: 0xA19E74
+    // Offset: 0xC5EED8
     static void ClearTimeout(float timeToClear);
     // public System.Void AddMessage(System.String message, UnityEngine.Color color)
-    // Offset: 0xA19CB0
+    // Offset: 0xC5ED14
     void AddMessage(::StringW message, ::UnityEngine::Color color);
     // public System.Void ClearMessages()
-    // Offset: 0xA19E38
+    // Offset: 0xC5EE9C
     void ClearMessages();
     // public System.Void SetClearTimeout(System.Single timeout)
-    // Offset: 0xA19EF0
+    // Offset: 0xC5EF54
     void SetClearTimeout(float timeout);
     // private System.Void Prune()
-    // Offset: 0xA1A104
+    // Offset: 0xC5F168
     void Prune();
     // private System.Void Display()
-    // Offset: 0xA19F00
+    // Offset: 0xC5EF64
     void Display();
     // public System.Void .ctor()
-    // Offset: 0xA1A1B4
+    // Offset: 0xC5F218
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -159,7 +151,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVRDebugConsole*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0xA1A220
+    // Offset: 0xC5F284
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

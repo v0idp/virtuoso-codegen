@@ -51,15 +51,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::VideosPanelUI::$Awake$d__6
     struct $Awake$d__6;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject _loadingIcon
     // Size: 0x8
     // Offset: 0x18
@@ -100,31 +92,31 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _loadingIcon
-    ::UnityEngine::GameObject*& dyn__loadingIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__loadingIcon();
     // Get instance field reference: private UnityEngine.GameObject _noVideosErrorLabel
-    ::UnityEngine::GameObject*& dyn__noVideosErrorLabel();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__noVideosErrorLabel();
     // Get instance field reference: private UnityEngine.GameObject _connectionErrorLabel
-    ::UnityEngine::GameObject*& dyn__connectionErrorLabel();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__connectionErrorLabel();
     // Get instance field reference: private VROSC.PaginatedList _paginatedList
-    ::VROSC::PaginatedList*& dyn__paginatedList();
+    [[deprecated]] ::VROSC::PaginatedList*& dyn__paginatedList();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PaginatedListDataHolder> _dataList
-    ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
     // Get instance field reference: private VROSC.PaginatedListDataHolder _selectedDataHolder
-    ::VROSC::PaginatedListDataHolder*& dyn__selectedDataHolder();
+    [[deprecated]] ::VROSC::PaginatedListDataHolder*& dyn__selectedDataHolder();
     // protected System.Void Awake()
-    // Offset: 0x1351494
+    // Offset: 0x19230A8
     void Awake();
     // private System.Void VideoButtonPressed(VROSC.PaginatedListDataHolder dataHolder)
-    // Offset: 0x1351558
+    // Offset: 0x192316C
     void VideoButtonPressed(::VROSC::PaginatedListDataHolder* dataHolder);
     // private System.Void VideoPlayerClosed()
-    // Offset: 0x135168C
+    // Offset: 0x19232A0
     void VideoPlayerClosed();
     // private System.Boolean IsVersionCompatible(System.String requiredVersion, System.String versionToCheck)
-    // Offset: 0x13516A8
+    // Offset: 0x19232BC
     bool IsVersionCompatible(::StringW requiredVersion, ::StringW versionToCheck);
     // public System.Void .ctor()
-    // Offset: 0x1351AC0
+    // Offset: 0x19236D4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

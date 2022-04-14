@@ -41,35 +41,35 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A25A4
+    // [DescriptionAttribute] Offset: 0x6B6758
     // static field const value: static public Oculus.Platform.ChallengeViewerFilter Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.ChallengeViewerFilter Unknown
     static ::Oculus::Platform::ChallengeViewerFilter _get_Unknown();
     // Set static field: static public Oculus.Platform.ChallengeViewerFilter Unknown
     static void _set_Unknown(::Oculus::Platform::ChallengeViewerFilter value);
-    // [DescriptionAttribute] Offset: 0x5A25DC
+    // [DescriptionAttribute] Offset: 0x6B6790
     // static field const value: static public Oculus.Platform.ChallengeViewerFilter AllVisible
     static constexpr const int AllVisible = 1;
     // Get static field: static public Oculus.Platform.ChallengeViewerFilter AllVisible
     static ::Oculus::Platform::ChallengeViewerFilter _get_AllVisible();
     // Set static field: static public Oculus.Platform.ChallengeViewerFilter AllVisible
     static void _set_AllVisible(::Oculus::Platform::ChallengeViewerFilter value);
-    // [DescriptionAttribute] Offset: 0x5A2614
+    // [DescriptionAttribute] Offset: 0x6B67C8
     // static field const value: static public Oculus.Platform.ChallengeViewerFilter Participating
     static constexpr const int Participating = 2;
     // Get static field: static public Oculus.Platform.ChallengeViewerFilter Participating
     static ::Oculus::Platform::ChallengeViewerFilter _get_Participating();
     // Set static field: static public Oculus.Platform.ChallengeViewerFilter Participating
     static void _set_Participating(::Oculus::Platform::ChallengeViewerFilter value);
-    // [DescriptionAttribute] Offset: 0x5A264C
+    // [DescriptionAttribute] Offset: 0x6B6800
     // static field const value: static public Oculus.Platform.ChallengeViewerFilter Invited
     static constexpr const int Invited = 3;
     // Get static field: static public Oculus.Platform.ChallengeViewerFilter Invited
     static ::Oculus::Platform::ChallengeViewerFilter _get_Invited();
     // Set static field: static public Oculus.Platform.ChallengeViewerFilter Invited
     static void _set_Invited(::Oculus::Platform::ChallengeViewerFilter value);
-    // [DescriptionAttribute] Offset: 0x5A2684
+    // [DescriptionAttribute] Offset: 0x6B6838
     // static field const value: static public Oculus.Platform.ChallengeViewerFilter ParticipatingOrInvited
     static constexpr const int ParticipatingOrInvited = 4;
     // Get static field: static public Oculus.Platform.ChallengeViewerFilter ParticipatingOrInvited
@@ -77,7 +77,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.ChallengeViewerFilter ParticipatingOrInvited
     static void _set_ParticipatingOrInvited(::Oculus::Platform::ChallengeViewerFilter value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.ChallengeViewerFilter
   #pragma pack(pop)
   static check_size<sizeof(ChallengeViewerFilter), 0 + sizeof(int)> __Oculus_Platform_ChallengeViewerFilterSizeCheck;

@@ -23,8 +23,8 @@ namespace VROSC {
   class LoopStationTrack;
   // Forward declaring type: LoopStationTrackGroup
   class LoopStationTrackGroup;
-  // Forward declaring type: LoopStationLaunchpad
-  class LoopStationLaunchpad;
+  // Forward declaring type: LoopStationLaunchpadData
+  class LoopStationLaunchpadData;
 }
 // Forward declaring namespace: System::Collections::Generic
 namespace System::Collections::Generic {
@@ -49,53 +49,47 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationDataModel : public ::VROSC::ToolDataModel {
     public:
-    #ifdef USE_CODEGEN_FIELDS
+    // Writing base type padding for base size: 0x21 to desired offset: 0x24
+    char ___base_padding[0x3] = {};
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single FirstRecordingLengthInBars
     // Size: 0x4
-    // Offset: 0x20
+    // Offset: 0x24
     float FirstRecordingLengthInBars;
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public System.Single FirstRecordingLengthInSamples
     // Size: 0x4
-    // Offset: 0x24
+    // Offset: 0x28
     float FirstRecordingLengthInSamples;
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public System.Single FirstRecordingBeatsPerBar
     // Size: 0x4
-    // Offset: 0x28
+    // Offset: 0x2C
     float FirstRecordingBeatsPerBar;
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public System.Single Volume
     // Size: 0x4
-    // Offset: 0x2C
+    // Offset: 0x30
     float Volume;
     // Field size check
     static_assert(sizeof(float) == 0x4);
     // public System.Boolean AutoSortUserGroups
     // Size: 0x1
-    // Offset: 0x30
+    // Offset: 0x34
     bool AutoSortUserGroups;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     // public System.Boolean RecordButtonIsAttached
     // Size: 0x1
-    // Offset: 0x31
+    // Offset: 0x35
     bool RecordButtonIsAttached;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: RecordButtonIsAttached and: RecordButtonPosition
-    char __padding5[0x6] = {};
+    char __padding5[0x2] = {};
     // public System.Single[] RecordButtonPosition
     // Size: 0x8
     // Offset: 0x38
@@ -132,53 +126,51 @@ namespace VROSC {
     ::System::Collections::Generic::List_1<::VROSC::LoopStationTrackGroup*>* LoopStationTrackGroups;
     // Field size check
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::LoopStationTrackGroup*>*) == 0x8);
-    // public System.Collections.Generic.List`1<VROSC.LoopStationLaunchpad> LoopStationLaunchPads
+    // public System.Collections.Generic.List`1<VROSC.LoopStationLaunchpadData> LoopStationLaunchPads
     // Size: 0x8
     // Offset: 0x68
-    ::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpad*>* LoopStationLaunchPads;
+    ::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpadData*>* LoopStationLaunchPads;
     // Field size check
-    static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpad*>*) == 0x8);
+    static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpadData*>*) == 0x8);
     public:
-    // Deleting conversion operator: operator ::VROSC::TransformData*
-    constexpr operator ::VROSC::TransformData*() const noexcept = delete;
     // Get instance field reference: public System.Single FirstRecordingLengthInBars
-    float& dyn_FirstRecordingLengthInBars();
+    [[deprecated]] float& dyn_FirstRecordingLengthInBars();
     // Get instance field reference: public System.Single FirstRecordingLengthInSamples
-    float& dyn_FirstRecordingLengthInSamples();
+    [[deprecated]] float& dyn_FirstRecordingLengthInSamples();
     // Get instance field reference: public System.Single FirstRecordingBeatsPerBar
-    float& dyn_FirstRecordingBeatsPerBar();
+    [[deprecated]] float& dyn_FirstRecordingBeatsPerBar();
     // Get instance field reference: public System.Single Volume
-    float& dyn_Volume();
+    [[deprecated]] float& dyn_Volume();
     // Get instance field reference: public System.Boolean AutoSortUserGroups
-    bool& dyn_AutoSortUserGroups();
+    [[deprecated]] bool& dyn_AutoSortUserGroups();
     // Get instance field reference: public System.Boolean RecordButtonIsAttached
-    bool& dyn_RecordButtonIsAttached();
+    [[deprecated]] bool& dyn_RecordButtonIsAttached();
     // Get instance field reference: public System.Single[] RecordButtonPosition
-    ::ArrayW<float>& dyn_RecordButtonPosition();
+    [[deprecated]] ::ArrayW<float>& dyn_RecordButtonPosition();
     // Get instance field reference: public System.Single[] RecordButtonRotation
-    ::ArrayW<float>& dyn_RecordButtonRotation();
+    [[deprecated]] ::ArrayW<float>& dyn_RecordButtonRotation();
     // Get instance field reference: public System.Single[] RecordButtonScale
-    ::ArrayW<float>& dyn_RecordButtonScale();
+    [[deprecated]] ::ArrayW<float>& dyn_RecordButtonScale();
     // Get instance field reference: public VROSC.LoopPlaybackConfigData DefaultPlaybackConfig
-    ::VROSC::LoopPlaybackConfigData*& dyn_DefaultPlaybackConfig();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigData*& dyn_DefaultPlaybackConfig();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.LoopStationTrack> LoopStationTracks
-    ::System::Collections::Generic::List_1<::VROSC::LoopStationTrack*>*& dyn_LoopStationTracks();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationTrack*>*& dyn_LoopStationTracks();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.LoopStationTrackGroup> LoopStationTrackGroups
-    ::System::Collections::Generic::List_1<::VROSC::LoopStationTrackGroup*>*& dyn_LoopStationTrackGroups();
-    // Get instance field reference: public System.Collections.Generic.List`1<VROSC.LoopStationLaunchpad> LoopStationLaunchPads
-    ::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpad*>*& dyn_LoopStationLaunchPads();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationTrackGroup*>*& dyn_LoopStationTrackGroups();
+    // Get instance field reference: public System.Collections.Generic.List`1<VROSC.LoopStationLaunchpadData> LoopStationLaunchPads
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpadData*>*& dyn_LoopStationLaunchPads();
     // public override System.String get_Key()
-    // Offset: 0x9130F0
+    // Offset: 0x196E498
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
     // public override System.Int32 get_Version()
-    // Offset: 0x913134
+    // Offset: 0x196E4DC
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Int32 BaseDataModel::get_Version()
     int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x9106D0
+    // Offset: 0x196A410
     // Implemented from: VROSC.ToolDataModel
     // Base method: System.Void ToolDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
@@ -190,7 +182,7 @@ namespace VROSC {
     }
   }; // VROSC.LoopStationDataModel
   #pragma pack(pop)
-  static check_size<sizeof(LoopStationDataModel), 104 + sizeof(::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpad*>*)> __VROSC_LoopStationDataModelSizeCheck;
+  static check_size<sizeof(LoopStationDataModel), 104 + sizeof(::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpadData*>*)> __VROSC_LoopStationDataModelSizeCheck;
   static_assert(sizeof(LoopStationDataModel) == 0x70);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"

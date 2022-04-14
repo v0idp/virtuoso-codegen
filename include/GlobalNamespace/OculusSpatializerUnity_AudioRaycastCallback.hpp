@@ -40,20 +40,20 @@ namespace GlobalNamespace {
   class OculusSpatializerUnity::AudioRaycastCallback : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x11C8214
+    // Offset: 0x176D11C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OculusSpatializerUnity::AudioRaycastCallback* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OculusSpatializerUnity::AudioRaycastCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OculusSpatializerUnity::AudioRaycastCallback*, creationType>(object, method)));
     }
     // public System.Void Invoke(UnityEngine.Vector3 origin, UnityEngine.Vector3 direction, out UnityEngine.Vector3 point, out UnityEngine.Vector3 normal, System.IntPtr data)
-    // Offset: 0x11CC714
+    // Offset: 0x177161C
     void Invoke(::UnityEngine::Vector3 origin, ::UnityEngine::Vector3 direction, ByRef<::UnityEngine::Vector3> point, ByRef<::UnityEngine::Vector3> normal, ::System::IntPtr data);
     // public System.IAsyncResult BeginInvoke(UnityEngine.Vector3 origin, UnityEngine.Vector3 direction, out UnityEngine.Vector3 point, out UnityEngine.Vector3 normal, System.IntPtr data, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x11CCA30
+    // Offset: 0x1771938
     ::System::IAsyncResult* BeginInvoke(::UnityEngine::Vector3 origin, ::UnityEngine::Vector3 direction, ByRef<::UnityEngine::Vector3> point, ByRef<::UnityEngine::Vector3> normal, ::System::IntPtr data, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(out UnityEngine.Vector3 point, out UnityEngine.Vector3 normal, System.IAsyncResult result)
-    // Offset: 0x11CCB3C
+    // Offset: 0x1771A44
     void EndInvoke(ByRef<::UnityEngine::Vector3> point, ByRef<::UnityEngine::Vector3> normal, ::System::IAsyncResult* result);
   }; // OculusSpatializerUnity/AudioRaycastCallback
   #pragma pack(pop)

@@ -26,15 +26,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MinMaxInt : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _min
     // Size: 0x4
     // Offset: 0x10
@@ -49,24 +41,24 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 _min
-    int& dyn__min();
+    [[deprecated]] int& dyn__min();
     // Get instance field reference: private System.Int32 _max
-    int& dyn__max();
+    [[deprecated]] int& dyn__max();
     // public System.Int32 get_Min()
-    // Offset: 0x8B4EA8
+    // Offset: 0xAC8AA8
     int get_Min();
     // public System.Int32 get_Max()
-    // Offset: 0x8B4EB0
+    // Offset: 0xAC8AB0
     int get_Max();
     // public System.Void .ctor(System.Int32 min, System.Int32 max)
-    // Offset: 0x8B0D9C
+    // Offset: 0xAC4708
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MinMaxInt* New_ctor(int min, int max) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MinMaxInt::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MinMaxInt*, creationType>(min, max)));
     }
     // public System.Int32 Random()
-    // Offset: 0x8B4EB8
+    // Offset: 0xAC8AB8
     int Random();
   }; // VROSC.MinMaxInt
   #pragma pack(pop)

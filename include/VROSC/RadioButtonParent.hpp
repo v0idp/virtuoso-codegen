@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class RadioButtonParent : public ::VROSC::Node {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<VROSC.RadioButton> _radioButtons
     // Size: 0x8
     // Offset: 0x18
@@ -66,20 +58,20 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.RadioButton> _radioButtons
-    ::System::Collections::Generic::List_1<::VROSC::RadioButton*>*& dyn__radioButtons();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::RadioButton*>*& dyn__radioButtons();
     // Get instance field reference: private System.Boolean _changedThisFrame
-    bool& dyn__changedThisFrame();
+    [[deprecated]] bool& dyn__changedThisFrame();
     // protected System.Void LateUpdate()
-    // Offset: 0x996000
+    // Offset: 0xB2DAEC
     void LateUpdate();
     // public System.Void RegisterButton(VROSC.RadioButton radioButton)
-    // Offset: 0x995D04
+    // Offset: 0xB2D7F0
     void RegisterButton(::VROSC::RadioButton* radioButton);
     // public System.Void Trigger(VROSC.RadioButton radioButton)
-    // Offset: 0x995DB4
+    // Offset: 0xB2D8A0
     void Trigger(::VROSC::RadioButton* radioButton);
     // public System.Void .ctor()
-    // Offset: 0x996008
+    // Offset: 0xB2DAF4
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

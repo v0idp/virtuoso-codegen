@@ -55,15 +55,7 @@ namespace Firebase::Auth {
     class SWIG_CompletionDelegate;
     // Nested type: ::Firebase::Auth::Future_User::$GetTask$c__AnonStorey0
     class $GetTask$c__AnonStorey0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x28
@@ -96,40 +88,40 @@ namespace Firebase::Auth {
     // Set static field: static private System.Object CallbackLock
     static void _set_CallbackLock(::Il2CppObject* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.IntPtr callbackData
-    ::System::IntPtr& dyn_callbackData();
+    [[deprecated]] ::System::IntPtr& dyn_callbackData();
     // Get instance field reference: private Firebase.Auth.Future_User/Firebase.Auth.SWIG_CompletionDelegate SWIG_CompletionCB
-    ::Firebase::Auth::Future_User::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    [[deprecated]] ::Firebase::Auth::Future_User::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
     // static private System.Void .cctor()
-    // Offset: 0x12B31D8
+    // Offset: 0x18B3104
     static void _cctor();
     // static public System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> GetTask(Firebase.Auth.Future_User fu)
-    // Offset: 0x12B190C
+    // Offset: 0x18B1648
     static ::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* GetTask(::Firebase::Auth::Future_User* fu);
     // private System.Void ThrowIfDisposed()
-    // Offset: 0x12B2CA8
+    // Offset: 0x18B2BD4
     void ThrowIfDisposed();
     // public System.Void SetOnCompletionCallback(Firebase.Auth.Future_User/Firebase.Auth.Action userCompletionCallback)
-    // Offset: 0x12B2A6C
+    // Offset: 0x18B2998
     void SetOnCompletionCallback(::Firebase::Auth::Future_User::Action* userCompletionCallback);
     // private System.Void SetCompletionData(System.IntPtr data)
-    // Offset: 0x12B2A20
+    // Offset: 0x18B27D8
     void SetCompletionData(::System::IntPtr data);
     // static private System.Void SWIG_CompletionDispatcher(System.Int32 key)
-    // Offset: 0x12B2658
+    // Offset: 0x18B2410
     static void SWIG_CompletionDispatcher(int key);
     // System.IntPtr SWIG_OnCompletion(Firebase.Auth.Future_User/Firebase.Auth.SWIG_CompletionDelegate cs_callback, System.Int32 cs_key)
-    // Offset: 0x12B2D50
+    // Offset: 0x18B2C7C
     ::System::IntPtr SWIG_OnCompletion(::Firebase::Auth::Future_User::SWIG_CompletionDelegate* cs_callback, int cs_key);
     // public System.Void SWIG_FreeCompletionData(System.IntPtr data)
-    // Offset: 0x12B2E0C
+    // Offset: 0x18B2D38
     void SWIG_FreeCompletionData(::System::IntPtr data);
     // public Firebase.Auth.FirebaseUser GetResult()
-    // Offset: 0x12B30C4
+    // Offset: 0x18B2FF0
     ::Firebase::Auth::FirebaseUser* GetResult();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0x12B184C
+    // Offset: 0x18B1588
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::.ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -138,12 +130,12 @@ namespace Firebase::Auth {
       return THROW_UNLESS((::il2cpp_utils::New<Future_User*, creationType>(cPtr, cMemoryOwn)));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x12B27FC
+    // Offset: 0x18B25B4
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::Finalize()
     void Finalize();
     // public override System.Void Dispose()
-    // Offset: 0x12B286C
+    // Offset: 0x18B2624
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::Dispose()
     void Dispose();

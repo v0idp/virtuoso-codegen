@@ -41,15 +41,7 @@ namespace AudioHelm {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteRow : public ::Il2CppObject/*, public ::UnityEngine::ISerializationCallbackReceiver*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<AudioHelm.Note> notes
     // Size: 0x8
     // Offset: 0x10
@@ -68,17 +60,17 @@ namespace AudioHelm {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: public System.Collections.Generic.List`1<AudioHelm.Note> notes
-    ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_notes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_notes();
     // Get instance field reference: private System.Collections.Generic.List`1<AudioHelm.Note> oldNotes
-    ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_oldNotes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_oldNotes();
     // public System.Void OnBeforeSerialize()
-    // Offset: 0xA15FCC
+    // Offset: 0xC5AADC
     void OnBeforeSerialize();
     // public System.Void OnAfterDeserialize()
-    // Offset: 0xA1604C
+    // Offset: 0xC5AB5C
     void OnAfterDeserialize();
     // public System.Void .ctor()
-    // Offset: 0xA16280
+    // Offset: 0xC5AD98
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

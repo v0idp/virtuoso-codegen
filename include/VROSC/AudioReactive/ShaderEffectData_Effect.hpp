@@ -91,20 +91,12 @@ namespace VROSC::AudioReactive {
       // Set static field: static public VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect/VROSC.AudioReactive.EffectType Vector
       static void _set_Vector(::VROSC::AudioReactive::ShaderEffectData::Effect::EffectType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect/VROSC.AudioReactive.EffectType
     #pragma pack(pop)
     static check_size<sizeof(ShaderEffectData::Effect::EffectType), 0 + sizeof(int)> __VROSC_AudioReactive_ShaderEffectData_Effect_EffectTypeSizeCheck;
     static_assert(sizeof(ShaderEffectData::Effect::EffectType) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect/VROSC.AudioReactive.EffectType _type
     // Size: 0x4
     // Offset: 0x10
@@ -145,31 +137,31 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect/VROSC.AudioReactive.EffectType _type
-    ::VROSC::AudioReactive::ShaderEffectData::Effect::EffectType& dyn__type();
+    [[deprecated]] ::VROSC::AudioReactive::ShaderEffectData::Effect::EffectType& dyn__type();
     // Get instance field reference: private System.String _propertyName
-    ::StringW& dyn__propertyName();
+    [[deprecated]] ::StringW& dyn__propertyName();
     // Get instance field reference: private VROSC.MinMaxFloat _floatValue
-    ::VROSC::MinMaxFloat*& dyn__floatValue();
+    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__floatValue();
     // Get instance field reference: private UnityEngine.Gradient _colorValue
-    ::UnityEngine::Gradient*& dyn__colorValue();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn__colorValue();
     // Get instance field reference: private VROSC.MinMaxVector4 _vectorValue
-    ::VROSC::MinMaxVector4*& dyn__vectorValue();
+    [[deprecated]] ::VROSC::MinMaxVector4*& dyn__vectorValue();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // public System.Void SetShaderEffects(UnityEngine.MaterialPropertyBlock block, UnityEngine.Renderer renderer, System.Single value)
-    // Offset: 0x134DB14
+    // Offset: 0x8D9D2C
     void SetShaderEffects(::UnityEngine::MaterialPropertyBlock* block, ::UnityEngine::Renderer* renderer, float value);
     // private System.Void SetColorValue(UnityEngine.MaterialPropertyBlock block, UnityEngine.Renderer renderer, System.Single value)
-    // Offset: 0x134DB3C
+    // Offset: 0x8D9D54
     void SetColorValue(::UnityEngine::MaterialPropertyBlock* block, ::UnityEngine::Renderer* renderer, float value);
     // private System.Void SetFloatValue(UnityEngine.MaterialPropertyBlock block, UnityEngine.Renderer renderer, System.Single value)
-    // Offset: 0x134DBB8
+    // Offset: 0x8D9DD0
     void SetFloatValue(::UnityEngine::MaterialPropertyBlock* block, ::UnityEngine::Renderer* renderer, float value);
     // private System.Void SetVectorValue(UnityEngine.MaterialPropertyBlock block, UnityEngine.Renderer renderer, System.Single value)
-    // Offset: 0x134DC34
+    // Offset: 0x8D9E4C
     void SetVectorValue(::UnityEngine::MaterialPropertyBlock* block, ::UnityEngine::Renderer* renderer, float value);
     // public System.Void .ctor()
-    // Offset: 0x134DCB4
+    // Offset: 0x8D9ECC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

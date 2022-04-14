@@ -48,19 +48,19 @@ namespace Oculus::Platform {
     // Nested type: ::Oculus::Platform::WindowsPlatform::UnityLogDelegate
     class UnityLogDelegate;
     // private System.Void CPPLogCallback(System.IntPtr tag, System.IntPtr message)
-    // Offset: 0x1153EA0
+    // Offset: 0x1720D9C
     void CPPLogCallback(::System::IntPtr tag, ::System::IntPtr message);
     // private System.IntPtr getCallbackPointer()
-    // Offset: 0x1153F8C
+    // Offset: 0x1720E88
     ::System::IntPtr getCallbackPointer();
     // public System.Boolean Initialize(System.String appId)
-    // Offset: 0x1153FC8
+    // Offset: 0x1720EC4
     bool Initialize(::StringW appId);
     // public Oculus.Platform.Request`1<Oculus.Platform.Models.PlatformInitialize> AsyncInitialize(System.String appId)
-    // Offset: 0x11540B0
+    // Offset: 0x1720FAC
     ::Oculus::Platform::Request_1<::Oculus::Platform::Models::PlatformInitialize*>* AsyncInitialize(::StringW appId);
     // public System.Void .ctor()
-    // Offset: 0x11541E0
+    // Offset: 0x17210DC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

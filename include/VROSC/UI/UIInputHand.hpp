@@ -57,15 +57,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIInputHand : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _rayPoint
     // Size: 0x8
     // Offset: 0x18
@@ -106,52 +98,58 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _rayPoint
-    ::UnityEngine::Transform*& dyn__rayPoint();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__rayPoint();
     // Get instance field reference: private VROSC.UI.UIInputHandHovering _hovering
-    ::VROSC::UI::UIInputHandHovering*& dyn__hovering();
+    [[deprecated]] ::VROSC::UI::UIInputHandHovering*& dyn__hovering();
     // Get instance field reference: private VROSC.PointingLaser _pointingLaser
-    ::VROSC::PointingLaser*& dyn__pointingLaser();
+    [[deprecated]] ::VROSC::PointingLaser*& dyn__pointingLaser();
     // Get instance field reference: private VROSC.InputDevice _device
-    ::VROSC::InputDevice*& dyn__device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private VROSC.Grabable _currentlyGrabbing
-    ::VROSC::Grabable*& dyn__currentlyGrabbing();
+    [[deprecated]] ::VROSC::Grabable*& dyn__currentlyGrabbing();
     // Get instance field reference: private VROSC.Clickable _currentlyPressing
-    ::VROSC::Clickable*& dyn__currentlyPressing();
+    [[deprecated]] ::VROSC::Clickable*& dyn__currentlyPressing();
     // public VROSC.PointingLaser get_PointingLaser()
-    // Offset: 0x139D0E8
+    // Offset: 0x19109A0
     ::VROSC::PointingLaser* get_PointingLaser();
     // public UnityEngine.Ray get_Ray()
-    // Offset: 0x139D0F0
+    // Offset: 0x19109A8
     ::UnityEngine::Ray get_Ray();
     // public UnityEngine.Transform get_RayStartTransform()
-    // Offset: 0x139D178
+    // Offset: 0x1910A30
     ::UnityEngine::Transform* get_RayStartTransform();
     // public System.Boolean get_LaserIsHovering()
-    // Offset: 0x139D180
+    // Offset: 0x1910A38
     bool get_LaserIsHovering();
+    // public System.Boolean get_IsGrabbing()
+    // Offset: 0x1910A54
+    bool get_IsGrabbing();
+    // public VROSC.Grabable get_CurrentlyGrabbing()
+    // Offset: 0x1910AC0
+    ::VROSC::Grabable* get_CurrentlyGrabbing();
     // public System.Void Setup(VROSC.InputSettings inputSettings, VROSC.InputDevice inputDevice)
-    // Offset: 0x139D19C
+    // Offset: 0x1910AC8
     void Setup(::VROSC::InputSettings* inputSettings, ::VROSC::InputDevice* inputDevice);
     // private System.Void OnDestroy()
-    // Offset: 0x139D458
+    // Offset: 0x1910D84
     void OnDestroy();
     // private System.Void PointingDisabledChanged(System.Boolean disabled, VROSC.PointingLaser/VROSC.DisablingReason reason)
-    // Offset: 0x139D5B0
+    // Offset: 0x1910EDC
     void PointingDisabledChanged(bool disabled, ::VROSC::PointingLaser::DisablingReason reason);
     // System.Void SetLaserDimmedByMallets(System.Boolean dimLaser)
-    // Offset: 0x139D60C
+    // Offset: 0x1910F38
     void SetLaserDimmedByMallets(bool dimLaser);
     // private System.Void ButtonBegin(VROSC.InputDevice device, VROSC.TriggerButton button)
-    // Offset: 0x139D684
+    // Offset: 0x1910FB0
     void ButtonBegin(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
     // private System.Void ButtonEnd(VROSC.InputDevice device, VROSC.TriggerButton button)
-    // Offset: 0x139DA54
+    // Offset: 0x1911380
     void ButtonEnd(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
     // private System.Void LateUpdate()
-    // Offset: 0x139DCE8
+    // Offset: 0x1911614
     void LateUpdate();
     // public System.Void .ctor()
-    // Offset: 0x139DDB0
+    // Offset: 0x19116DC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -199,6 +197,22 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::UI::UIInputHand::*)()>(&VROSC::UI::UIInputHand::get_LaserIsHovering)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInputHand*), "get_LaserIsHovering", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::UI::UIInputHand::get_IsGrabbing
+// Il2CppName: get_IsGrabbing
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::UI::UIInputHand::*)()>(&VROSC::UI::UIInputHand::get_IsGrabbing)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInputHand*), "get_IsGrabbing", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::UI::UIInputHand::get_CurrentlyGrabbing
+// Il2CppName: get_CurrentlyGrabbing
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Grabable* (VROSC::UI::UIInputHand::*)()>(&VROSC::UI::UIInputHand::get_CurrentlyGrabbing)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInputHand*), "get_CurrentlyGrabbing", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::UI::UIInputHand::Setup

@@ -54,49 +54,49 @@ namespace DG::Tweening {
     // Nested type: ::DG::Tweening::DOTweenModuleAudio::$$c__DisplayClass2_0
     class $$c__DisplayClass2_0;
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOFade(UnityEngine.AudioSource target, System.Single endValue, System.Single duration)
-    // Offset: 0x74AC00
+    // Offset: 0x17D985C
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOFade(::UnityEngine::AudioSource* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOPitch(UnityEngine.AudioSource target, System.Single endValue, System.Single duration)
-    // Offset: 0x74ADC0
+    // Offset: 0x17D9A24
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOPitch(::UnityEngine::AudioSource* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOSetFloat(UnityEngine.Audio.AudioMixer target, System.String floatName, System.Single endValue, System.Single duration)
-    // Offset: 0x74AF58
+    // Offset: 0x17D9BC4
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOSetFloat(::UnityEngine::Audio::AudioMixer* target, ::StringW floatName, float endValue, float duration);
     // static public System.Int32 DOComplete(UnityEngine.Audio.AudioMixer target, System.Boolean withCallbacks)
-    // Offset: 0x74B0F4
+    // Offset: 0x17D9D68
     static int DOComplete(::UnityEngine::Audio::AudioMixer* target, bool withCallbacks);
     // static public System.Int32 DOKill(UnityEngine.Audio.AudioMixer target, System.Boolean complete)
-    // Offset: 0x74B168
+    // Offset: 0x17D9DDC
     static int DOKill(::UnityEngine::Audio::AudioMixer* target, bool complete);
     // static public System.Int32 DOFlip(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B1DC
+    // Offset: 0x17D9E50
     static int DOFlip(::UnityEngine::Audio::AudioMixer* target);
     // static public System.Int32 DOGoto(UnityEngine.Audio.AudioMixer target, System.Single to, System.Boolean andPlay)
-    // Offset: 0x74B240
+    // Offset: 0x17D9EB4
     static int DOGoto(::UnityEngine::Audio::AudioMixer* target, float to, bool andPlay);
     // static public System.Int32 DOPause(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B2C4
+    // Offset: 0x17D9F38
     static int DOPause(::UnityEngine::Audio::AudioMixer* target);
     // static public System.Int32 DOPlay(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B328
+    // Offset: 0x17D9F9C
     static int DOPlay(::UnityEngine::Audio::AudioMixer* target);
     // static public System.Int32 DOPlayBackwards(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B38C
+    // Offset: 0x17DA000
     static int DOPlayBackwards(::UnityEngine::Audio::AudioMixer* target);
     // static public System.Int32 DOPlayForward(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B3F0
+    // Offset: 0x17DA064
     static int DOPlayForward(::UnityEngine::Audio::AudioMixer* target);
     // static public System.Int32 DORestart(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B454
+    // Offset: 0x17DA0C8
     static int DORestart(::UnityEngine::Audio::AudioMixer* target);
     // static public System.Int32 DORewind(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B4C0
+    // Offset: 0x17DA134
     static int DORewind(::UnityEngine::Audio::AudioMixer* target);
     // static public System.Int32 DOSmoothRewind(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B528
+    // Offset: 0x17DA19C
     static int DOSmoothRewind(::UnityEngine::Audio::AudioMixer* target);
     // static public System.Int32 DOTogglePause(UnityEngine.Audio.AudioMixer target)
-    // Offset: 0x74B58C
+    // Offset: 0x17DA200
     static int DOTogglePause(::UnityEngine::Audio::AudioMixer* target);
   }; // DG.Tweening.DOTweenModuleAudio
   #pragma pack(pop)

@@ -34,15 +34,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PaginatedListDataHolder : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String <ID>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -57,23 +49,23 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::PaginatedListItemData*) == 0x8);
     public:
     // Get instance field reference: private System.String <ID>k__BackingField
-    ::StringW& dyn_$ID$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$ID$k__BackingField();
     // Get instance field reference: private VROSC.PaginatedListItemData <Data>k__BackingField
-    ::VROSC::PaginatedListItemData*& dyn_$Data$k__BackingField();
+    [[deprecated]] ::VROSC::PaginatedListItemData*& dyn_$Data$k__BackingField();
     // public System.String get_ID()
-    // Offset: 0x8F7D58
+    // Offset: 0xADC530
     ::StringW get_ID();
     // protected System.Void set_ID(System.String value)
-    // Offset: 0x8F7D50
+    // Offset: 0xADC528
     void set_ID(::StringW value);
     // public VROSC.PaginatedListItemData get_Data()
-    // Offset: 0x8F7D68
+    // Offset: 0xADC540
     ::VROSC::PaginatedListItemData* get_Data();
     // protected System.Void set_Data(VROSC.PaginatedListItemData value)
-    // Offset: 0x8F7D60
+    // Offset: 0xADC538
     void set_Data(::VROSC::PaginatedListItemData* value);
     // public System.Void .ctor(System.String id, VROSC.PaginatedListItemData data)
-    // Offset: 0x8F7D70
+    // Offset: 0xADC548
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PaginatedListDataHolder* New_ctor(::StringW id, ::VROSC::PaginatedListItemData* data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PaginatedListDataHolder::.ctor");

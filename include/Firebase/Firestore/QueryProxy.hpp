@@ -25,8 +25,8 @@ namespace System::Threading::Tasks {
 namespace Firebase::Firestore {
   // Forward declaring type: QuerySnapshotProxy
   class QuerySnapshotProxy;
-  // Forward declaring type: Source
-  struct Source;
+  // Forward declaring type: SourceProxy
+  struct SourceProxy;
 }
 // Completed forward declares
 // Type namespace: Firebase.Firestore
@@ -45,15 +45,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class QueryProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -72,24 +64,27 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC2A070
+    // Offset: 0xD4BF10
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static QueryProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::QueryProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<QueryProxy*, creationType>(cPtr, cMemoryOwn)));
     }
+    // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.QueryProxy obj)
+    // Offset: 0xD5BB58
+    static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::QueryProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC2A3C4
+    // Offset: 0xD4C264
     void Dispose();
-    // public System.Threading.Tasks.Task`1<Firebase.Firestore.QuerySnapshotProxy> GetAsync(Firebase.Firestore.Source source)
-    // Offset: 0xC3EBCC
-    ::System::Threading::Tasks::Task_1<::Firebase::Firestore::QuerySnapshotProxy*>* GetAsync(::Firebase::Firestore::Source source);
+    // public System.Threading.Tasks.Task`1<Firebase.Firestore.QuerySnapshotProxy> GetAsync(Firebase.Firestore.SourceProxy source)
+    // Offset: 0xD631B4
+    ::System::Threading::Tasks::Task_1<::Firebase::Firestore::QuerySnapshotProxy*>* GetAsync(::Firebase::Firestore::SourceProxy source);
     // protected override System.Void Finalize()
-    // Offset: 0xC2A13C
+    // Offset: 0xD4BFDC
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
@@ -103,6 +98,15 @@ namespace Firebase::Firestore {
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: Firebase::Firestore::QueryProxy::getCPtr
+// Il2CppName: getCPtr
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Runtime::InteropServices::HandleRef (*)(::Firebase::Firestore::QueryProxy*)>(&Firebase::Firestore::QueryProxy::getCPtr)> {
+  static const MethodInfo* get() {
+    static auto* obj = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "QueryProxy")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::QueryProxy*), "getCPtr", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Firestore::QueryProxy::Dispose
 // Il2CppName: Dispose
 template<>
@@ -114,9 +118,9 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
 // Writing MetadataGetter for method: Firebase::Firestore::QueryProxy::GetAsync
 // Il2CppName: GetAsync
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task_1<::Firebase::Firestore::QuerySnapshotProxy*>* (Firebase::Firestore::QueryProxy::*)(::Firebase::Firestore::Source)>(&Firebase::Firestore::QueryProxy::GetAsync)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task_1<::Firebase::Firestore::QuerySnapshotProxy*>* (Firebase::Firestore::QueryProxy::*)(::Firebase::Firestore::SourceProxy)>(&Firebase::Firestore::QueryProxy::GetAsync)> {
   static const MethodInfo* get() {
-    static auto* source = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "Source")->byval_arg;
+    static auto* source = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "SourceProxy")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::QueryProxy*), "GetAsync", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{source});
   }
 };

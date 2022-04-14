@@ -26,15 +26,7 @@ namespace Firebase {
   // [TokenAttribute] Offset: FFFFFFFF
   class StringList::StringListEnumerator : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::StringW>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Firebase.StringList collectionRef
     // Size: 0x8
     // Offset: 0x10
@@ -67,34 +59,34 @@ namespace Firebase {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::StringW>*>(this);
     }
     // Get instance field reference: private Firebase.StringList collectionRef
-    ::Firebase::StringList*& dyn_collectionRef();
+    [[deprecated]] ::Firebase::StringList*& dyn_collectionRef();
     // Get instance field reference: private System.Int32 currentIndex
-    int& dyn_currentIndex();
+    [[deprecated]] int& dyn_currentIndex();
     // Get instance field reference: private System.Object currentObject
-    ::Il2CppObject*& dyn_currentObject();
+    [[deprecated]] ::Il2CppObject*& dyn_currentObject();
     // Get instance field reference: private System.Int32 currentSize
-    int& dyn_currentSize();
+    [[deprecated]] int& dyn_currentSize();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x129EB60
+    // Offset: 0x188C500
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.String get_Current()
-    // Offset: 0x129EA5C
+    // Offset: 0x188C3FC
     ::StringW get_Current();
     // public System.Void .ctor(Firebase.StringList collection)
-    // Offset: 0x129C76C
+    // Offset: 0x188A654
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StringList::StringListEnumerator* New_ctor(::Firebase::StringList* collection) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::StringList::StringListEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<StringList::StringListEnumerator*, creationType>(collection)));
     }
     // public System.Boolean MoveNext()
-    // Offset: 0x129EB64
+    // Offset: 0x188C504
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0x129EBD4
+    // Offset: 0x188C574
     void Reset();
     // public System.Void Dispose()
-    // Offset: 0x129EC60
+    // Offset: 0x188C600
     void Dispose();
   }; // Firebase.StringList/Firebase.StringListEnumerator
   #pragma pack(pop)

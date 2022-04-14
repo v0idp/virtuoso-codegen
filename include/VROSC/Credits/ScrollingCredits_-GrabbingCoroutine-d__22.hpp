@@ -35,15 +35,7 @@ namespace VROSC::Credits {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ScrollingCredits::$GrabbingCoroutine$d__22 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -82,36 +74,36 @@ namespace VROSC::Credits {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.Credits.ScrollingCredits <>4__this
-    ::VROSC::Credits::ScrollingCredits*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::Credits::ScrollingCredits*& dyn_$$4__this();
     // Get instance field reference: public VROSC.InputDevice device
-    ::VROSC::InputDevice*& dyn_device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_device();
     // Get instance field reference: private UnityEngine.Vector3 <startpos>5__2
-    ::UnityEngine::Vector3& dyn_$startpos$5__2();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$startpos$5__2();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x13498A4
+    // Offset: 0x8D481C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x13498EC
+    // Offset: 0x8D4864
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x13496B0
+    // Offset: 0x8D4628
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScrollingCredits::$GrabbingCoroutine$d__22* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::ScrollingCredits::$GrabbingCoroutine$d__22::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ScrollingCredits::$GrabbingCoroutine$d__22*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x13496DC
+    // Offset: 0x8D4654
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x13496E0
+    // Offset: 0x8D4658
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x13498AC
+    // Offset: 0x8D4824
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.Credits.ScrollingCredits/VROSC.Credits.<GrabbingCoroutine>d__22
   #pragma pack(pop)

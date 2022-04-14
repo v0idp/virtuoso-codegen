@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationButtons : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _stopAllButton
     // Size: 0x8
     // Offset: 0x18
@@ -108,44 +100,44 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _stopAllButton
-    ::VROSC::UIButton*& dyn__stopAllButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__stopAllButton();
     // Get instance field reference: private VROSC.UIButton _playAllButton
-    ::VROSC::UIButton*& dyn__playAllButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__playAllButton();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.UIHoldButton _deleteAllButton
-    ::VROSC::UIHoldButton*& dyn__deleteAllButton();
+    [[deprecated]] ::VROSC::UIHoldButton*& dyn__deleteAllButton();
     // Get instance field reference: public System.Action OnPlayAllPressed
-    ::System::Action*& dyn_OnPlayAllPressed();
+    [[deprecated]] ::System::Action*& dyn_OnPlayAllPressed();
     // Get instance field reference: public System.Action OnStopAllPressed
-    ::System::Action*& dyn_OnStopAllPressed();
+    [[deprecated]] ::System::Action*& dyn_OnStopAllPressed();
     // Get instance field reference: public System.Action OnDeleteAllPressed
-    ::System::Action*& dyn_OnDeleteAllPressed();
+    [[deprecated]] ::System::Action*& dyn_OnDeleteAllPressed();
     // Get instance field reference: public System.Action`1<System.Single> OnGlobalVolumeChanged
-    ::System::Action_1<float>*& dyn_OnGlobalVolumeChanged();
+    [[deprecated]] ::System::Action_1<float>*& dyn_OnGlobalVolumeChanged();
     // private System.Void Awake()
-    // Offset: 0x90FB64
+    // Offset: 0x196985C
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x90FF14
+    // Offset: 0x1969C10
     void OnDestroy();
     // public System.Void SetVolume(System.Single volume)
-    // Offset: 0x90A804
+    // Offset: 0x1969E24
     void SetVolume(float volume);
     // public System.Void PlayAllPressed()
-    // Offset: 0x910128
+    // Offset: 0x1969E50
     void PlayAllPressed();
     // public System.Void StopAllPressed()
-    // Offset: 0x91013C
+    // Offset: 0x1969E64
     void StopAllPressed();
     // private System.Void DeleteAll()
-    // Offset: 0x910150
+    // Offset: 0x1969E78
     void DeleteAll();
     // private System.Void VolumeChanged(System.Single volume)
-    // Offset: 0x910164
+    // Offset: 0x1969E8C
     void VolumeChanged(float volume);
     // public System.Void .ctor()
-    // Offset: 0x9101D4
+    // Offset: 0x1969EFC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

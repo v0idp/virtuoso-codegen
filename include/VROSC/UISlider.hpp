@@ -58,15 +58,7 @@ namespace VROSC {
     class $GrabSliderRemotely$d__17;
     // Nested type: ::VROSC::UISlider::$GrabSlider$d__19
     class $GrabSlider$d__19;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UISliderData _data
     // Size: 0x8
     // Offset: 0xC0
@@ -121,56 +113,56 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::RectTransform*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UISliderData _data
-    ::VROSC::UISliderData*& dyn__data();
+    [[deprecated]] ::VROSC::UISliderData*& dyn__data();
     // Get instance field reference: private UnityEngine.RectTransform _sliderKnob
-    ::UnityEngine::RectTransform*& dyn__sliderKnob();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__sliderKnob();
     // Get instance field reference: private System.Boolean _onlyShowKnobOnHover
-    bool& dyn__onlyShowKnobOnHover();
+    [[deprecated]] bool& dyn__onlyShowKnobOnHover();
     // Get instance field reference: private System.Boolean _showVisualPopout
-    bool& dyn__showVisualPopout();
+    [[deprecated]] bool& dyn__showVisualPopout();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private VROSC.TriggerButton _grabbingButton
-    ::VROSC::TriggerButton& dyn__grabbingButton();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__grabbingButton();
     // Get instance field reference: private System.Boolean _remoteSliderActive
-    bool& dyn__remoteSliderActive();
+    [[deprecated]] bool& dyn__remoteSliderActive();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // public VROSC.UISliderData get_Data()
-    // Offset: 0x13A260C
+    // Offset: 0x1915F40
     ::VROSC::UISliderData* get_Data();
     // private System.Void HoverChanged(System.Boolean hovering)
-    // Offset: 0x13A28A4
+    // Offset: 0x19161D8
     void HoverChanged(bool hovering);
     // private System.Void StopGrabSlider(VROSC.InputDevice device, VROSC.TriggerButton button)
-    // Offset: 0x13A2B50
+    // Offset: 0x1916484
     void StopGrabSlider(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
     // private System.Void ButtonWasPressed(VROSC.ClickData clickData)
-    // Offset: 0x13A2E94
+    // Offset: 0x19167CC
     void ButtonWasPressed(::VROSC::ClickData* clickData);
     // private System.Collections.IEnumerator GrabSliderRemotely(VROSC.InputDevice device, VROSC.TriggerButton grabbingButton)
-    // Offset: 0x13A2FD0
+    // Offset: 0x1916908
     ::System::Collections::IEnumerator* GrabSliderRemotely(::VROSC::InputDevice* device, ::VROSC::TriggerButton grabbingButton);
     // private System.Void StopGrabRemotely(VROSC.InputDevice device)
-    // Offset: 0x13A2DFC
+    // Offset: 0x1916730
     void StopGrabRemotely(::VROSC::InputDevice* device);
     // private System.Collections.IEnumerator GrabSlider(VROSC.InputDevice device, VROSC.TriggerButton grabbingButton, System.Boolean pointing)
-    // Offset: 0x13A3050
+    // Offset: 0x1916988
     ::System::Collections::IEnumerator* GrabSlider(::VROSC::InputDevice* device, ::VROSC::TriggerButton grabbingButton, bool pointing);
     // private System.Single GetValueByPosition(UnityEngine.Vector3 worldPosition)
-    // Offset: 0x13A30EC
+    // Offset: 0x1916A74
     float GetValueByPosition(::UnityEngine::Vector3 worldPosition);
     // private System.Void GetRectTransform()
-    // Offset: 0x13A3298
+    // Offset: 0x1916C20
     void GetRectTransform();
     // public System.Single GetValueInRange(System.Single normalizedValue)
-    // Offset: 0x13A365C
+    // Offset: 0x1916FE4
     float GetValueInRange(float normalizedValue);
     // public System.Single GetNormalizedValue(System.Single valueInRange)
-    // Offset: 0x13A368C
+    // Offset: 0x1917014
     float GetNormalizedValue(float valueInRange);
     // public System.Void .ctor()
-    // Offset: 0x13A36BC
+    // Offset: 0x1917044
     // Implemented from: VROSC.UISliderBase
     // Base method: System.Void UISliderBase::.ctor()
     // Base method: System.Void UIInteractable::.ctor()
@@ -187,32 +179,32 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UISlider*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x13A2614
+    // Offset: 0x1915F48
     // Implemented from: VROSC.UISliderBase
     // Base method: System.Void UISliderBase::Awake()
     void Awake();
     // protected override System.Void OnDestroy()
-    // Offset: 0x13A275C
+    // Offset: 0x1916090
     // Implemented from: VROSC.UISliderBase
     // Base method: System.Void UISliderBase::OnDestroy()
     void OnDestroy();
     // protected override System.Void OnEnable()
-    // Offset: 0x13A28F4
+    // Offset: 0x1916228
     // Implemented from: VROSC.UISliderBase
     // Base method: System.Void UISliderBase::OnEnable()
     void OnEnable();
     // protected override System.Void OnDisable()
-    // Offset: 0x13A2C1C
+    // Offset: 0x1916550
     // Implemented from: VROSC.UISliderBase
     // Base method: System.Void UISliderBase::OnDisable()
     void OnDisable();
     // protected override UnityEngine.Vector2 GetSize()
-    // Offset: 0x13A31A4
+    // Offset: 0x1916B2C
     // Implemented from: VROSC.UISliderBase
     // Base method: UnityEngine.Vector2 UISliderBase::GetSize()
     ::UnityEngine::Vector2 GetSize();
     // public override System.Void SetValue(System.Single value, System.Boolean force, System.Boolean useCallback)
-    // Offset: 0x13A3338
+    // Offset: 0x1916CC0
     // Implemented from: VROSC.UISliderBase
     // Base method: System.Void UISliderBase::SetValue(System.Single value, System.Boolean force, System.Boolean useCallback)
     void SetValue(float value, bool force, bool useCallback);

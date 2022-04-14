@@ -24,15 +24,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class Uri::MoreInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Path
     // Size: 0x8
     // Offset: 0x10
@@ -73,19 +65,19 @@ namespace System {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String Path
-    ::StringW& dyn_Path();
+    [[deprecated]] ::StringW& dyn_Path();
     // Get instance field reference: public System.String Query
-    ::StringW& dyn_Query();
+    [[deprecated]] ::StringW& dyn_Query();
     // Get instance field reference: public System.String Fragment
-    ::StringW& dyn_Fragment();
+    [[deprecated]] ::StringW& dyn_Fragment();
     // Get instance field reference: public System.String AbsoluteUri
-    ::StringW& dyn_AbsoluteUri();
+    [[deprecated]] ::StringW& dyn_AbsoluteUri();
     // Get instance field reference: public System.Int32 Hash
-    int& dyn_Hash();
+    [[deprecated]] int& dyn_Hash();
     // Get instance field reference: public System.String RemoteUrl
-    ::StringW& dyn_RemoteUrl();
+    [[deprecated]] ::StringW& dyn_RemoteUrl();
     // public System.Void .ctor()
-    // Offset: 0x8E7A2C
+    // Offset: 0xA05410
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

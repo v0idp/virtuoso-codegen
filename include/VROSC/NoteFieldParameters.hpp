@@ -46,15 +46,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::NoteFieldParameters::Axis
     class Axis;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteFieldParameters/VROSC.Axis <X>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -113,117 +105,117 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.NoteFieldParameters/VROSC.Axis <X>k__BackingField
-    ::VROSC::NoteFieldParameters::Axis*& dyn_$X$k__BackingField();
+    [[deprecated]] ::VROSC::NoteFieldParameters::Axis*& dyn_$X$k__BackingField();
     // Get instance field reference: private VROSC.NoteFieldParameters/VROSC.Axis <Y>k__BackingField
-    ::VROSC::NoteFieldParameters::Axis*& dyn_$Y$k__BackingField();
+    [[deprecated]] ::VROSC::NoteFieldParameters::Axis*& dyn_$Y$k__BackingField();
     // Get instance field reference: private VROSC.NoteFieldParameters/VROSC.Axis <Z>k__BackingField
-    ::VROSC::NoteFieldParameters::Axis*& dyn_$Z$k__BackingField();
+    [[deprecated]] ::VROSC::NoteFieldParameters::Axis*& dyn_$Z$k__BackingField();
     // Get instance field reference: private System.Int32 <NumberOfFields>k__BackingField
-    int& dyn_$NumberOfFields$k__BackingField();
+    [[deprecated]] int& dyn_$NumberOfFields$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> <PrimaryNoteList>k__BackingField
-    ::System::Collections::Generic::List_1<int>*& dyn_$PrimaryNoteList$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_$PrimaryNoteList$k__BackingField();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.Axis <PrimaryAxis>k__BackingField
-    ::VROSC::NoteBoard::Axis& dyn_$PrimaryAxis$k__BackingField();
+    [[deprecated]] ::VROSC::NoteBoard::Axis& dyn_$PrimaryAxis$k__BackingField();
     // Get instance field reference: private VROSC.Scale <PrimaryScale>k__BackingField
-    ::VROSC::Scale& dyn_$PrimaryScale$k__BackingField();
+    [[deprecated]] ::VROSC::Scale& dyn_$PrimaryScale$k__BackingField();
     // Get instance field reference: private System.Int32 <SecondaryAxisSteps>k__BackingField
-    int& dyn_$SecondaryAxisSteps$k__BackingField();
+    [[deprecated]] int& dyn_$SecondaryAxisSteps$k__BackingField();
     // Get instance field reference: private System.Int32 <TertiaryAxisSteps>k__BackingField
-    int& dyn_$TertiaryAxisSteps$k__BackingField();
+    [[deprecated]] int& dyn_$TertiaryAxisSteps$k__BackingField();
     // public VROSC.NoteFieldParameters/VROSC.Axis get_X()
-    // Offset: 0xA15554
+    // Offset: 0xC59CBC
     ::VROSC::NoteFieldParameters::Axis* get_X();
     // private System.Void set_X(VROSC.NoteFieldParameters/VROSC.Axis value)
-    // Offset: 0xA1554C
+    // Offset: 0xC59CB4
     void set_X(::VROSC::NoteFieldParameters::Axis* value);
     // public VROSC.NoteFieldParameters/VROSC.Axis get_Y()
-    // Offset: 0xA15564
+    // Offset: 0xC59CCC
     ::VROSC::NoteFieldParameters::Axis* get_Y();
     // private System.Void set_Y(VROSC.NoteFieldParameters/VROSC.Axis value)
-    // Offset: 0xA1555C
+    // Offset: 0xC59CC4
     void set_Y(::VROSC::NoteFieldParameters::Axis* value);
     // public VROSC.NoteFieldParameters/VROSC.Axis get_Z()
-    // Offset: 0xA15574
+    // Offset: 0xC59CDC
     ::VROSC::NoteFieldParameters::Axis* get_Z();
     // private System.Void set_Z(VROSC.NoteFieldParameters/VROSC.Axis value)
-    // Offset: 0xA1556C
+    // Offset: 0xC59CD4
     void set_Z(::VROSC::NoteFieldParameters::Axis* value);
     // public System.Int32 get_NumberOfFields()
-    // Offset: 0xA15584
+    // Offset: 0xC59CEC
     int get_NumberOfFields();
     // private System.Void set_NumberOfFields(System.Int32 value)
-    // Offset: 0xA1557C
+    // Offset: 0xC59CE4
     void set_NumberOfFields(int value);
     // public System.Collections.Generic.List`1<System.Int32> get_PrimaryNoteList()
-    // Offset: 0xA15594
+    // Offset: 0xC59CFC
     ::System::Collections::Generic::List_1<int>* get_PrimaryNoteList();
     // private System.Void set_PrimaryNoteList(System.Collections.Generic.List`1<System.Int32> value)
-    // Offset: 0xA1558C
+    // Offset: 0xC59CF4
     void set_PrimaryNoteList(::System::Collections::Generic::List_1<int>* value);
     // public VROSC.NoteBoard/VROSC.Axis get_PrimaryAxis()
-    // Offset: 0xA155A4
+    // Offset: 0xC59D0C
     ::VROSC::NoteBoard::Axis get_PrimaryAxis();
     // private System.Void set_PrimaryAxis(VROSC.NoteBoard/VROSC.Axis value)
-    // Offset: 0xA1559C
+    // Offset: 0xC59D04
     void set_PrimaryAxis(::VROSC::NoteBoard::Axis value);
     // public VROSC.Scale get_PrimaryScale()
-    // Offset: 0xA155B4
+    // Offset: 0xC59D1C
     ::VROSC::Scale get_PrimaryScale();
     // private System.Void set_PrimaryScale(VROSC.Scale value)
-    // Offset: 0xA155AC
+    // Offset: 0xC59D14
     void set_PrimaryScale(::VROSC::Scale value);
     // public System.Int32 get_SecondaryAxisSteps()
-    // Offset: 0xA155C4
+    // Offset: 0xC59D2C
     int get_SecondaryAxisSteps();
     // private System.Void set_SecondaryAxisSteps(System.Int32 value)
-    // Offset: 0xA155BC
+    // Offset: 0xC59D24
     void set_SecondaryAxisSteps(int value);
     // public System.Int32 get_TertiaryAxisSteps()
-    // Offset: 0xA155D4
+    // Offset: 0xC59D3C
     int get_TertiaryAxisSteps();
     // private System.Void set_TertiaryAxisSteps(System.Int32 value)
-    // Offset: 0xA155CC
+    // Offset: 0xC59D34
     void set_TertiaryAxisSteps(int value);
     // public System.Void .ctor(System.Int32 x, System.Int32 y, System.Int32 z)
-    // Offset: 0xA155DC
+    // Offset: 0xC59D44
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteFieldParameters* New_ctor(int x, int y, int z) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldParameters::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteFieldParameters*, creationType>(x, y, z)));
     }
     // public System.Void .ctor(VROSC.NoteBoard/VROSC.NoteAxis[] noteAxes)
-    // Offset: 0xA10AAC
+    // Offset: 0xC59E10
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteFieldParameters* New_ctor(::ArrayW<::VROSC::NoteBoard::NoteAxis*> noteAxes) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldParameters::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteFieldParameters*, creationType>(noteAxes)));
     }
     // public System.Void SetFieldCount(System.Int32 x, System.Int32 y, System.Int32 z)
-    // Offset: 0xA156A8
+    // Offset: 0xC59F90
     void SetFieldCount(int x, int y, int z);
     // public System.Void SetValidNotes(System.Collections.Generic.List`1<System.Int32> validNotesX, System.Collections.Generic.List`1<System.Int32> validNotesY, System.Collections.Generic.List`1<System.Int32> validNotesZ)
-    // Offset: 0xA15720
+    // Offset: 0xC5A008
     void SetValidNotes(::System::Collections::Generic::List_1<int>* validNotesX, ::System::Collections::Generic::List_1<int>* validNotesY, ::System::Collections::Generic::List_1<int>* validNotesZ);
     // public System.Void SetPriorityOfAxes(VROSC.NoteBoard/VROSC.Axis primaryAxis, VROSC.Scale primaryScale, System.Int32 secondaryAxisSteps, System.Int32 tertiaryAxisSteps)
-    // Offset: 0xA15784
+    // Offset: 0xC5A06C
     void SetPriorityOfAxes(::VROSC::NoteBoard::Axis primaryAxis, ::VROSC::Scale primaryScale, int secondaryAxisSteps, int tertiaryAxisSteps);
     // public System.Void SetValidNotes(VROSC.NoteBoard/VROSC.NoteAxis[] noteAxes)
-    // Offset: 0xA10C2C
+    // Offset: 0xC5A0B8
     void SetValidNotes(::ArrayW<::VROSC::NoteBoard::NoteAxis*> noteAxes);
     // public System.Void SetPriorityOfAxes(VROSC.NoteBoard/VROSC.NoteAxis[] noteAxes, VROSC.NoteBoard/VROSC.Axis primaryAxis)
-    // Offset: 0xA10CDC
+    // Offset: 0xC5A168
     void SetPriorityOfAxes(::ArrayW<::VROSC::NoteBoard::NoteAxis*> noteAxes, ::VROSC::NoteBoard::Axis primaryAxis);
     // static private System.Boolean IsOnScale(System.Int32 midiNote, VROSC.Scale scale)
-    // Offset: 0xA157D0
+    // Offset: 0xC5A2CC
     static bool IsOnScale(int midiNote, ::VROSC::Scale scale);
     // static private System.Int32 GetMidiNoteNumber(VROSC.Note note, System.Int32 octave)
-    // Offset: 0xA15808
+    // Offset: 0xC5A304
     static int GetMidiNoteNumber(::VROSC::Note note, int octave);
     // public System.Int32 GetTransposedNote(System.Int32 primaryAxisCurrentValue, System.Int32 secondaryAxisCurrentValue, System.Int32 tertiaryAxisCurrentValue)
-    // Offset: 0xA1521C
+    // Offset: 0xC58DD4
     int GetTransposedNote(int primaryAxisCurrentValue, int secondaryAxisCurrentValue, int tertiaryAxisCurrentValue);
     // private System.Int32 TransposeNoteByScaleSteps(System.Int32 note, System.Int32 steps, VROSC.Scale scale)
-    // Offset: 0xA15840
+    // Offset: 0xC5A33C
     int TransposeNoteByScaleSteps(int note, int steps, ::VROSC::Scale scale);
   }; // VROSC.NoteFieldParameters
   #pragma pack(pop)

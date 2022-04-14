@@ -66,56 +66,56 @@ namespace DG::Tweening::Plugins::Core {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Reset(::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>* t) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::Reset");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Reset", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(t)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, t);
     }
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> t, System.Boolean isRelative)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>* t, bool isRelative) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::SetFrom");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "SetFrom", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(t), ::il2cpp_utils::ExtractType(isRelative)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, t, isRelative);
     }
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> t, T2 fromValue, System.Boolean setImmediately)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>* t, T2 fromValue, bool setImmediately) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::SetFrom");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "SetFrom", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(t), ::il2cpp_utils::ExtractType(fromValue), ::il2cpp_utils::ExtractType(setImmediately)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, t, fromValue, setImmediately);
     }
     // public T2 ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> t, T1 value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     T2 ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>* t, T1 value) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::ConvertToStartValue");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ConvertToStartValue", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(t), ::il2cpp_utils::ExtractType(value)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       return ::il2cpp_utils::RunMethodRethrow<T2, false>(this, ___internal__method, t, value);
     }
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> t)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>* t) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::SetRelativeEndValue");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "SetRelativeEndValue", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(t)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, t);
     }
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> t)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>* t) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::SetChangeValue");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "SetChangeValue", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(t)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, t);
     }
     // public System.Single GetSpeedBasedDuration(TPlugOptions options, System.Single unitsXSecond, T2 changeValue)
     // Offset: 0xFFFFFFFFFFFFFFFF
     float GetSpeedBasedDuration(TPlugOptions options, float unitsXSecond, T2 changeValue) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::GetSpeedBasedDuration");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "GetSpeedBasedDuration", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(options), ::il2cpp_utils::ExtractType(unitsXSecond), ::il2cpp_utils::ExtractType(changeValue)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       return ::il2cpp_utils::RunMethodRethrow<float, false>(this, ___internal__method, options, unitsXSecond, changeValue);
     }
     // public System.Void EvaluateAndApply(TPlugOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<T1> getter, DG.Tweening.Core.DOSetter`1<T1> setter, System.Single elapsed, T2 startValue, T2 changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void EvaluateAndApply(TPlugOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<T1>* getter, ::DG::Tweening::Core::DOSetter_1<T1>* setter, float elapsed, T2 startValue, T2 changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::EvaluateAndApply");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "EvaluateAndApply", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(options), ::il2cpp_utils::ExtractType(t), ::il2cpp_utils::ExtractType(isRelative), ::il2cpp_utils::ExtractType(getter), ::il2cpp_utils::ExtractType(setter), ::il2cpp_utils::ExtractType(elapsed), ::il2cpp_utils::ExtractType(startValue), ::il2cpp_utils::ExtractType(changeValue), ::il2cpp_utils::ExtractType(duration), ::il2cpp_utils::ExtractType(usingInversePosition), ::il2cpp_utils::ExtractType(updateNotice)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, options, t, isRelative, getter, setter, elapsed, startValue, changeValue, duration, usingInversePosition, updateNotice);
     }
     // protected System.Void .ctor()

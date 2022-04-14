@@ -40,25 +40,25 @@ namespace VROSC {
     static ::VROSC::SaveLoadManager::$$c* _get_$$9();
     // Set static field: static public readonly VROSC.SaveLoadManager/VROSC.<>c <>9
     static void _set_$$9(::VROSC::SaveLoadManager::$$c* value);
-    // Get static field: static public System.Action <>9__24_0
-    static ::System::Action* _get_$$9__24_0();
-    // Set static field: static public System.Action <>9__24_0
-    static void _set_$$9__24_0(::System::Action* value);
-    // Get static field: static public System.Action`1<VROSC.Error> <>9__24_1
-    static ::System::Action_1<::VROSC::Error>* _get_$$9__24_1();
-    // Set static field: static public System.Action`1<VROSC.Error> <>9__24_1
-    static void _set_$$9__24_1(::System::Action_1<::VROSC::Error>* value);
+    // Get static field: static public System.Action <>9__23_0
+    static ::System::Action* _get_$$9__23_0();
+    // Set static field: static public System.Action <>9__23_0
+    static void _set_$$9__23_0(::System::Action* value);
+    // Get static field: static public System.Action`1<VROSC.Error> <>9__23_1
+    static ::System::Action_1<::VROSC::Error>* _get_$$9__23_1();
+    // Set static field: static public System.Action`1<VROSC.Error> <>9__23_1
+    static void _set_$$9__23_1(::System::Action_1<::VROSC::Error>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1345780
+    // Offset: 0x8D06D0
     static void _cctor();
-    // System.Void <LoadDefaultSession>b__24_0()
-    // Offset: 0x13457E8
-    void $LoadDefaultSession$b__24_0();
-    // System.Void <LoadDefaultSession>b__24_1(VROSC.Error error)
-    // Offset: 0x1345878
-    void $LoadDefaultSession$b__24_1(::VROSC::Error error);
+    // System.Void <LoadDefaultSession>b__23_0()
+    // Offset: 0x8D0738
+    void $LoadDefaultSession$b__23_0();
+    // System.Void <LoadDefaultSession>b__23_1(VROSC.Error error)
+    // Offset: 0x8D07C8
+    void $LoadDefaultSession$b__23_1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x13457E0
+    // Offset: 0x8D0730
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -78,21 +78,21 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c::$LoadDefaultSession$b__24_0
-// Il2CppName: <LoadDefaultSession>b__24_0
+// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c::$LoadDefaultSession$b__23_0
+// Il2CppName: <LoadDefaultSession>b__23_0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SaveLoadManager::$$c::*)()>(&VROSC::SaveLoadManager::$$c::$LoadDefaultSession$b__24_0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SaveLoadManager::$$c::*)()>(&VROSC::SaveLoadManager::$$c::$LoadDefaultSession$b__23_0)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager::$$c*), "<LoadDefaultSession>b__24_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager::$$c*), "<LoadDefaultSession>b__23_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c::$LoadDefaultSession$b__24_1
-// Il2CppName: <LoadDefaultSession>b__24_1
+// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c::$LoadDefaultSession$b__23_1
+// Il2CppName: <LoadDefaultSession>b__23_1
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SaveLoadManager::$$c::*)(::VROSC::Error)>(&VROSC::SaveLoadManager::$$c::$LoadDefaultSession$b__24_1)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SaveLoadManager::$$c::*)(::VROSC::Error)>(&VROSC::SaveLoadManager::$$c::$LoadDefaultSession$b__23_1)> {
   static const MethodInfo* get() {
     static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager::$$c*), "<LoadDefaultSession>b__24_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager::$$c*), "<LoadDefaultSession>b__23_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
 // Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c::New_ctor

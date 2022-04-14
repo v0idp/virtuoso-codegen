@@ -27,15 +27,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class Authorization : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String m_Message
     // Size: 0x8
     // Offset: 0x10
@@ -58,26 +50,26 @@ namespace System::Net {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String m_Message
-    ::StringW& dyn_m_Message();
+    [[deprecated]] ::StringW& dyn_m_Message();
     // Get instance field reference: private System.Boolean m_Complete
-    bool& dyn_m_Complete();
+    [[deprecated]] bool& dyn_m_Complete();
     // Get instance field reference: System.String ModuleAuthenticationType
-    ::StringW& dyn_ModuleAuthenticationType();
+    [[deprecated]] ::StringW& dyn_ModuleAuthenticationType();
     // public System.String get_Message()
-    // Offset: 0xE68A30
+    // Offset: 0x10D94C8
     ::StringW get_Message();
     // public System.Boolean get_Complete()
-    // Offset: 0xE68A38
+    // Offset: 0x10D94D0
     bool get_Complete();
     // public System.Void .ctor(System.String token)
-    // Offset: 0xE68914
+    // Offset: 0x10D93AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Authorization* New_ctor(::StringW token) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Authorization::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Authorization*, creationType>(token)));
     }
     // public System.Void .ctor(System.String token, System.Boolean finished)
-    // Offset: 0xE689A0
+    // Offset: 0x10D9438
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Authorization* New_ctor(::StringW token, bool finished) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Authorization::.ctor");

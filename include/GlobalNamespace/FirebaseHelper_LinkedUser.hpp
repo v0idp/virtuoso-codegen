@@ -32,15 +32,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirebaseHelper::LinkedUser : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String localId
     // Size: 0x8
     // Offset: 0x10
@@ -105,27 +97,27 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String localId
-    ::StringW& dyn_localId();
+    [[deprecated]] ::StringW& dyn_localId();
     // Get instance field reference: public System.String email
-    ::StringW& dyn_email();
+    [[deprecated]] ::StringW& dyn_email();
     // Get instance field reference: public System.String displayName
-    ::StringW& dyn_displayName();
+    [[deprecated]] ::StringW& dyn_displayName();
     // Get instance field reference: public System.String photoUrl
-    ::StringW& dyn_photoUrl();
+    [[deprecated]] ::StringW& dyn_photoUrl();
     // Get instance field reference: public System.String passwordHash
-    ::StringW& dyn_passwordHash();
+    [[deprecated]] ::StringW& dyn_passwordHash();
     // Get instance field reference: public System.Collections.Generic.List`1<System.Object> providerUserInfo
-    ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn_providerUserInfo();
+    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn_providerUserInfo();
     // Get instance field reference: public System.Boolean emailVerified
-    bool& dyn_emailVerified();
+    [[deprecated]] bool& dyn_emailVerified();
     // Get instance field reference: public System.String idToken
-    ::StringW& dyn_idToken();
+    [[deprecated]] ::StringW& dyn_idToken();
     // Get instance field reference: public System.String refreshToken
-    ::StringW& dyn_refreshToken();
+    [[deprecated]] ::StringW& dyn_refreshToken();
     // Get instance field reference: public System.String expiresIn
-    ::StringW& dyn_expiresIn();
+    [[deprecated]] ::StringW& dyn_expiresIn();
     // public System.Void .ctor()
-    // Offset: 0x13C9660
+    // Offset: 0x1952868
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

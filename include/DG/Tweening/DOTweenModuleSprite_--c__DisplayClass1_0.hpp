@@ -33,15 +33,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOTweenModuleSprite::$$c__DisplayClass1_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.SpriteRenderer target
     // Size: 0x8
     // Offset: 0x10
@@ -54,15 +46,15 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.SpriteRenderer target
-    ::UnityEngine::SpriteRenderer*& dyn_target();
+    [[deprecated]] ::UnityEngine::SpriteRenderer*& dyn_target();
     // UnityEngine.Color <DOFade>b__0()
-    // Offset: 0x1264BCC
+    // Offset: 0x17E30FC
     ::UnityEngine::Color $DOFade$b__0();
     // System.Void <DOFade>b__1(UnityEngine.Color x)
-    // Offset: 0x1264BE8
+    // Offset: 0x17E3118
     void $DOFade$b__1(::UnityEngine::Color x);
     // public System.Void .ctor()
-    // Offset: 0x1264BC4
+    // Offset: 0x17DCA0C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -43,13 +43,13 @@ namespace Oculus::Platform {
     // Nested type: ::Oculus::Platform::StandalonePlatform::UnityLogDelegate
     class UnityLogDelegate;
     // public Oculus.Platform.Request`1<Oculus.Platform.Models.PlatformInitialize> InitializeInEditor()
-    // Offset: 0x114EBA0
+    // Offset: 0x171BA9C
     ::Oculus::Platform::Request_1<::Oculus::Platform::Models::PlatformInitialize*>* InitializeInEditor();
     // public Oculus.Platform.Request`1<Oculus.Platform.Models.PlatformInitialize> AsyncInitialize(System.UInt64 appID, System.String accessToken)
-    // Offset: 0x114ECCC
+    // Offset: 0x171BBC8
     ::Oculus::Platform::Request_1<::Oculus::Platform::Models::PlatformInitialize*>* AsyncInitialize(uint64_t appID, ::StringW accessToken);
     // public System.Void .ctor()
-    // Offset: 0x114EDB0
+    // Offset: 0x171BCAC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

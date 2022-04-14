@@ -98,24 +98,24 @@ namespace Mono::Net::Security {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.IO.Stream> <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::IO::Stream*>& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::IO::Stream*>& dyn_$$t__builder();
     // Get instance field reference: public Mono.Net.Security.MonoTlsStream <>4__this
-    ::Mono::Net::Security::MonoTlsStream*& dyn_$$4__this();
+    [[deprecated]] ::Mono::Net::Security::MonoTlsStream*& dyn_$$4__this();
     // Get instance field reference: private System.Net.Sockets.Socket <socket>5__1
-    ::System::Net::Sockets::Socket*& dyn_$socket$5__1();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_$socket$5__1();
     // Get instance field reference: public System.Net.WebConnectionTunnel tunnel
-    ::System::Net::WebConnectionTunnel*& dyn_tunnel();
+    [[deprecated]] ::System::Net::WebConnectionTunnel*& dyn_tunnel();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8DFF3C
+    // Offset: 0x9FACB8
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8E08E8
+    // Offset: 0x9FB664
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // Mono.Net.Security.MonoTlsStream/Mono.Net.Security.<CreateStream>d__17
   // WARNING Not writing size check since size may be invalid!

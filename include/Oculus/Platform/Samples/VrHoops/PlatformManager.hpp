@@ -115,20 +115,12 @@ namespace Oculus::Platform::Samples::VrHoops {
       // Set static field: static public Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State PLAYING_A_NETWORKED_MATCH
       static void _set_PLAYING_A_NETWORKED_MATCH(::Oculus::Platform::Samples::VrHoops::PlatformManager::State value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State
     #pragma pack(pop)
     static check_size<sizeof(PlatformManager::State), 0 + sizeof(int)> __Oculus_Platform_Samples_VrHoops_PlatformManager_StateSizeCheck;
     static_assert(sizeof(PlatformManager::State) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Samples.VrHoops.MatchmakingManager m_matchmaking
     // Size: 0x8
     // Offset: 0x18
@@ -181,69 +173,69 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private Oculus.Platform.Samples.VrHoops.PlatformManager s_instance
     static void _set_s_instance(::Oculus::Platform::Samples::VrHoops::PlatformManager* value);
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.MatchmakingManager m_matchmaking
-    ::Oculus::Platform::Samples::VrHoops::MatchmakingManager*& dyn_m_matchmaking();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager*& dyn_m_matchmaking();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.P2PManager m_p2p
-    ::Oculus::Platform::Samples::VrHoops::P2PManager*& dyn_m_p2p();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::P2PManager*& dyn_m_p2p();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.LeaderboardManager m_leaderboards
-    ::Oculus::Platform::Samples::VrHoops::LeaderboardManager*& dyn_m_leaderboards();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager*& dyn_m_leaderboards();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.AchievementsManager m_achievements
-    ::Oculus::Platform::Samples::VrHoops::AchievementsManager*& dyn_m_achievements();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::AchievementsManager*& dyn_m_achievements();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State m_currentState
-    ::Oculus::Platform::Samples::VrHoops::PlatformManager::State& dyn_m_currentState();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::PlatformManager::State& dyn_m_currentState();
     // Get instance field reference: private System.UInt64 m_myID
-    uint64_t& dyn_m_myID();
+    [[deprecated]] uint64_t& dyn_m_myID();
     // Get instance field reference: private System.String m_myOculusID
-    ::StringW& dyn_m_myOculusID();
+    [[deprecated]] ::StringW& dyn_m_myOculusID();
     // static public Oculus.Platform.Samples.VrHoops.MatchmakingManager get_Matchmaking()
-    // Offset: 0x96BEA0
+    // Offset: 0xB3E23C
     static ::Oculus::Platform::Samples::VrHoops::MatchmakingManager* get_Matchmaking();
     // static public Oculus.Platform.Samples.VrHoops.P2PManager get_P2P()
-    // Offset: 0x96B8F0
+    // Offset: 0xB3DC8C
     static ::Oculus::Platform::Samples::VrHoops::P2PManager* get_P2P();
     // static public Oculus.Platform.Samples.VrHoops.LeaderboardManager get_Leaderboards()
-    // Offset: 0x96BEF8
+    // Offset: 0xB3E294
     static ::Oculus::Platform::Samples::VrHoops::LeaderboardManager* get_Leaderboards();
     // static public Oculus.Platform.Samples.VrHoops.AchievementsManager get_Achievements()
-    // Offset: 0x96E09C
+    // Offset: 0xB40438
     static ::Oculus::Platform::Samples::VrHoops::AchievementsManager* get_Achievements();
     // static public Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State get_CurrentState()
-    // Offset: 0x96969C
+    // Offset: 0xB3BA38
     static ::Oculus::Platform::Samples::VrHoops::PlatformManager::State get_CurrentState();
     // static public System.UInt64 get_MyID()
-    // Offset: 0x969F5C
+    // Offset: 0xB3C2F8
     static uint64_t get_MyID();
     // static public System.String get_MyOculusID()
-    // Offset: 0x96CE1C
+    // Offset: 0xB3F1B8
     static ::StringW get_MyOculusID();
     // private System.Void Update()
-    // Offset: 0x984B10
+    // Offset: 0xB56EAC
     void Update();
     // private System.Void Awake()
-    // Offset: 0x984B44
+    // Offset: 0xB56EE0
     void Awake();
     // private System.Void Start()
-    // Offset: 0x984D44
+    // Offset: 0xB570E0
     void Start();
     // private System.Void IsEntitledCallback(Oculus.Platform.Message msg)
-    // Offset: 0x984DE4
+    // Offset: 0xB57180
     void IsEntitledCallback(::Oculus::Platform::Message* msg);
     // private System.Void GetLoggedInUserCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.User> msg)
-    // Offset: 0x984ED0
+    // Offset: 0xB5726C
     void GetLoggedInUserCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* msg);
     // static public System.Void TerminateWithError(Oculus.Platform.Message msg)
-    // Offset: 0x9733EC
+    // Offset: 0xB45788
     static void TerminateWithError(::Oculus::Platform::Message* msg);
     // public System.Void QuitButtonPressed()
-    // Offset: 0x984F70
+    // Offset: 0xB5730C
     void QuitButtonPressed();
     // private System.Void OnApplicationQuit()
-    // Offset: 0x984F78
+    // Offset: 0xB57314
     void OnApplicationQuit();
     // static public System.Void TransitionToState(Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State newState)
-    // Offset: 0x96C700
+    // Offset: 0xB3EA9C
     static void TransitionToState(::Oculus::Platform::Samples::VrHoops::PlatformManager::State newState);
     // public System.Void .ctor()
-    // Offset: 0x984FA8
+    // Offset: 0xB57344
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

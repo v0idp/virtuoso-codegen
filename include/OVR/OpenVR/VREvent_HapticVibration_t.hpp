@@ -63,15 +63,15 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt64 containerHandle
-    uint64_t& dyn_containerHandle();
+    [[deprecated]] uint64_t& dyn_containerHandle();
     // Get instance field reference: public System.UInt64 componentHandle
-    uint64_t& dyn_componentHandle();
+    [[deprecated]] uint64_t& dyn_componentHandle();
     // Get instance field reference: public System.Single fDurationSeconds
-    float& dyn_fDurationSeconds();
+    [[deprecated]] float& dyn_fDurationSeconds();
     // Get instance field reference: public System.Single fFrequency
-    float& dyn_fFrequency();
+    [[deprecated]] float& dyn_fFrequency();
     // Get instance field reference: public System.Single fAmplitude
-    float& dyn_fAmplitude();
+    [[deprecated]] float& dyn_fAmplitude();
   }; // OVR.OpenVR.VREvent_HapticVibration_t
   #pragma pack(pop)
   static check_size<sizeof(VREvent_HapticVibration_t), 24 + sizeof(float)> __OVR_OpenVR_VREvent_HapticVibration_tSizeCheck;

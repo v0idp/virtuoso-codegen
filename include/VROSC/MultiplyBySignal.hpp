@@ -36,7 +36,7 @@ namespace VROSC {
   class MultiplyBySignal : public ::VROSC::IntChanger {
     public:
     // public System.Void .ctor()
-    // Offset: 0xA08D60
+    // Offset: 0xACDC3C
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -52,7 +52,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<MultiplyBySignal*, creationType>()));
     }
     // protected override System.Void SetValueBySignal(VROSC.Signal signal)
-    // Offset: 0xA08D08
+    // Offset: 0xACDBE4
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::SetValueBySignal(VROSC.Signal signal)
     void SetValueBySignal(::VROSC::Signal* signal);

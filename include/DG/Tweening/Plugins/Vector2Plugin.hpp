@@ -55,31 +55,31 @@ namespace DG::Tweening::Plugins {
   class Vector2Plugin : public ::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions> {
     public:
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> t)
-    // Offset: 0x12676BC
+    // Offset: 0x185FA60
     void Reset(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* t);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> t, System.Boolean isRelative)
-    // Offset: 0x12676C0
+    // Offset: 0x185FA64
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* t, bool isRelative);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> t, UnityEngine.Vector2 fromValue, System.Boolean setImmediately)
-    // Offset: 0x12678C8
+    // Offset: 0x185FC6C
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* t, ::UnityEngine::Vector2 fromValue, bool setImmediately);
     // public UnityEngine.Vector2 ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> t, UnityEngine.Vector2 value)
-    // Offset: 0x1267AEC
+    // Offset: 0x185FE90
     ::UnityEngine::Vector2 ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* t, ::UnityEngine::Vector2 value);
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> t)
-    // Offset: 0x1267AF0
+    // Offset: 0x185FE94
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* t);
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> t)
-    // Offset: 0x1267B1C
+    // Offset: 0x185FEC0
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* t);
     // public System.Single GetSpeedBasedDuration(DG.Tweening.Plugins.Options.VectorOptions options, System.Single unitsXSecond, UnityEngine.Vector2 changeValue)
-    // Offset: 0x1267B8C
+    // Offset: 0x185FF30
     float GetSpeedBasedDuration(::DG::Tweening::Plugins::Options::VectorOptions options, float unitsXSecond, ::UnityEngine::Vector2 changeValue);
     // public System.Void EvaluateAndApply(DG.Tweening.Plugins.Options.VectorOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<UnityEngine.Vector2> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector2> setter, System.Single elapsed, UnityEngine.Vector2 startValue, UnityEngine.Vector2 changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x1267BBC
+    // Offset: 0x185FF60
     void EvaluateAndApply(::DG::Tweening::Plugins::Options::VectorOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector2>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector2>* setter, float elapsed, ::UnityEngine::Vector2 startValue, ::UnityEngine::Vector2 changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // public System.Void .ctor()
-    // Offset: 0x1267FD8
+    // Offset: 0x186037C
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
     // Base method: System.Void Object::.ctor()

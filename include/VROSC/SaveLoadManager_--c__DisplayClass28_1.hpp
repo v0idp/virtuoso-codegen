@@ -32,15 +32,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SaveLoadManager::$$c__DisplayClass28_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String s
     // Size: 0x8
     // Offset: 0x10
@@ -53,15 +45,15 @@ namespace VROSC {
       return s;
     }
     // Get instance field reference: public System.String s
-    ::StringW& dyn_s();
+    [[deprecated]] ::StringW& dyn_s();
     // System.Void <DeleteSession>b__1()
-    // Offset: 0x134602C
+    // Offset: 0x8D0F6C
     void $DeleteSession$b__1();
     // System.Void <DeleteSession>b__2(VROSC.Error error)
-    // Offset: 0x13460A8
+    // Offset: 0x8D0FE8
     void $DeleteSession$b__2(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1346024
+    // Offset: 0x8D0F64
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

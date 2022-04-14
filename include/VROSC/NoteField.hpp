@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteField : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.Note EnteredValue
     // Size: 0x4
     // Offset: 0x10
@@ -60,14 +52,14 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteNode*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.Note EnteredValue
-    ::VROSC::Note& dyn_EnteredValue();
+    [[deprecated]] ::VROSC::Note& dyn_EnteredValue();
     // Get instance field reference: public VROSC.NoteNode ConnectedValue
-    ::VROSC::NoteNode*& dyn_ConnectedValue();
+    [[deprecated]] ::VROSC::NoteNode*& dyn_ConnectedValue();
     // public System.Int32 get_Value()
-    // Offset: 0xA10A1C
+    // Offset: 0xC58850
     int get_Value();
     // public System.Void .ctor()
-    // Offset: 0xA1516C
+    // Offset: 0xC588E0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

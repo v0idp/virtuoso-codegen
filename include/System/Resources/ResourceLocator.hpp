@@ -54,23 +54,23 @@ namespace System::Resources {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Object _value
-    ::Il2CppObject*& dyn__value();
+    [[deprecated]] ::Il2CppObject*& dyn__value();
     // Get instance field reference: System.Int32 _dataPos
-    int& dyn__dataPos();
+    [[deprecated]] int& dyn__dataPos();
     // System.Int32 get_DataPosition()
-    // Offset: 0xD4A7B0
+    // Offset: 0xCDB37C
     int get_DataPosition();
     // System.Object get_Value()
-    // Offset: 0xD4A7B8
+    // Offset: 0xCDB384
     ::Il2CppObject* get_Value();
     // System.Void set_Value(System.Object value)
-    // Offset: 0xD4A7C0
+    // Offset: 0xCDB38C
     void set_Value(::Il2CppObject* value);
     // System.Void .ctor(System.Int32 dataPos, System.Object value)
-    // Offset: 0xD4A7A4
+    // Offset: 0xCDB370
     ResourceLocator(int dataPos, ::Il2CppObject* value);
     // static System.Boolean CanCache(System.Resources.ResourceTypeCode value)
-    // Offset: 0xD4A7C8
+    // Offset: 0xCDB394
     static bool CanCache(::System::Resources::ResourceTypeCode value);
   }; // System.Resources.ResourceLocator
   #pragma pack(pop)

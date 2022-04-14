@@ -45,10 +45,10 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // static public System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> GetExtraFields(System.IO.BinaryReader reader)
-    // Offset: 0x11283A0
+    // Offset: 0x169FC0C
     static ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>* GetExtraFields(::System::IO::BinaryReader* reader);
     // static public System.Boolean TrySkipBlock(System.IO.BinaryReader reader)
-    // Offset: 0x1127928
+    // Offset: 0x169F194
     static bool TrySkipBlock(::System::IO::BinaryReader* reader);
   }; // System.IO.Compression.ZipLocalFileHeader
   #pragma pack(pop)

@@ -42,13 +42,13 @@ namespace System {
     // Set static field: static private System.Boolean isFreeBSD
     static void _set_isFreeBSD(bool value);
     // static public System.Boolean get_IsMacOS()
-    // Offset: 0xBFB618
+    // Offset: 0x14099BC
     static bool get_IsMacOS();
     // static private System.Int32 uname(System.IntPtr buf)
-    // Offset: 0xBFB36C
+    // Offset: 0x1409710
     static int uname(::System::IntPtr buf);
     // static private System.Void CheckOS()
-    // Offset: 0xBFB3EC
+    // Offset: 0x1409790
     static void CheckOS();
   }; // System.Platform
   #pragma pack(pop)

@@ -42,15 +42,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ToneGenerator::GeneratedTone
     class GeneratedTone;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Double _gain
     // Size: 0x8
     // Offset: 0x18
@@ -75,28 +67,28 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Double _gain
-    double& dyn__gain();
+    [[deprecated]] double& dyn__gain();
     // Get instance field reference: private System.Int32 _sampleRate
-    int& dyn__sampleRate();
+    [[deprecated]] int& dyn__sampleRate();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,VROSC.ToneGenerator/VROSC.GeneratedTone> _tones
-    ::System::Collections::Generic::Dictionary_2<int, ::VROSC::ToneGenerator::GeneratedTone*>*& dyn__tones();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::VROSC::ToneGenerator::GeneratedTone*>*& dyn__tones();
     // protected System.Void Update()
-    // Offset: 0x14002D0
+    // Offset: 0xA28208
     void Update();
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x14002F8
+    // Offset: 0xA28230
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void PlayNote(System.Int32 midiNoteNumber)
-    // Offset: 0x1400660
+    // Offset: 0xA28598
     void PlayNote(int midiNoteNumber);
     // public System.Void StopNote(System.Int32 midiNoteNumber)
-    // Offset: 0x1400734
+    // Offset: 0xA2866C
     void StopNote(int midiNoteNumber);
     // static public System.Double GetFrequencyFromMidiNumber(System.Int32 midiNoteNumber)
-    // Offset: 0x14007D4
+    // Offset: 0xA2870C
     static double GetFrequencyFromMidiNumber(int midiNoteNumber);
     // public System.Void .ctor()
-    // Offset: 0x1400810
+    // Offset: 0xA28748
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

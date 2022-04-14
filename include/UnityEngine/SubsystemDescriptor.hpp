@@ -36,16 +36,8 @@ namespace UnityEngine {
   // [TokenAttribute] Offset: FFFFFFFF
   class SubsystemDescriptor : public ::Il2CppObject/*, public ::UnityEngine::ISubsystemDescriptor*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x5CA068
+    // [DebuggerBrowsableAttribute] Offset: 0x6E03F0
     // private System.String <id>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -62,18 +54,18 @@ namespace UnityEngine {
       return id;
     }
     // Get instance field reference: private System.String <id>k__BackingField
-    ::StringW& dyn_$id$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$id$k__BackingField();
     // public System.String get_id()
-    // Offset: 0x12FE2A0
+    // Offset: 0x1903C44
     ::StringW get_id();
     // private UnityEngine.ISubsystem UnityEngine.ISubsystemDescriptor.Create()
-    // Offset: 0x12FE2A8
+    // Offset: 0x1903C4C
     ::UnityEngine::ISubsystem* UnityEngine_ISubsystemDescriptor_Create();
     // UnityEngine.ISubsystem CreateImpl()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::UnityEngine::ISubsystem* CreateImpl();
     // protected System.Void .ctor()
-    // Offset: 0x12FE2B4
+    // Offset: 0x1903C58
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

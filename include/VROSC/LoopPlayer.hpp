@@ -60,15 +60,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlayer : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopStation _loopStation
     // Size: 0x8
     // Offset: 0x18
@@ -167,163 +159,163 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopPlayerUI _ui
-    ::VROSC::LoopPlayerUI*& dyn__ui();
+    [[deprecated]] ::VROSC::LoopPlayerUI*& dyn__ui();
     // Get instance field reference: private VROSC.InteractionDisabler _disabler
-    ::VROSC::InteractionDisabler*& dyn__disabler();
+    [[deprecated]] ::VROSC::InteractionDisabler*& dyn__disabler();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackController _playBack
-    ::VROSC::LoopPlayerPlaybackController*& dyn__playBack();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackController*& dyn__playBack();
     // Get instance field reference: private VROSC.LoopPlayerMover _mover
-    ::VROSC::LoopPlayerMover*& dyn__mover();
+    [[deprecated]] ::VROSC::LoopPlayerMover*& dyn__mover();
     // Get instance field reference: private VROSC.LoopPlayerAutoMover _autoMover
-    ::VROSC::LoopPlayerAutoMover*& dyn__autoMover();
+    [[deprecated]] ::VROSC::LoopPlayerAutoMover*& dyn__autoMover();
     // Get instance field reference: private System.String <TrackId>k__BackingField
-    ::StringW& dyn_$TrackId$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$TrackId$k__BackingField();
     // Get instance field reference: public System.Action`2<VROSC.LoopPlayer,System.Boolean> OnDelete
-    ::System::Action_2<::VROSC::LoopPlayer*, bool>*& dyn_OnDelete();
+    [[deprecated]] ::System::Action_2<::VROSC::LoopPlayer*, bool>*& dyn_OnDelete();
     // Get instance field reference: public System.Action`2<VROSC.LoopPlayer,System.Boolean> OnSoloChanged
-    ::System::Action_2<::VROSC::LoopPlayer*, bool>*& dyn_OnSoloChanged();
+    [[deprecated]] ::System::Action_2<::VROSC::LoopPlayer*, bool>*& dyn_OnSoloChanged();
     // Get instance field reference: public System.Action`2<VROSC.LoopPlayer,System.Boolean> OnGrabbed
-    ::System::Action_2<::VROSC::LoopPlayer*, bool>*& dyn_OnGrabbed();
+    [[deprecated]] ::System::Action_2<::VROSC::LoopPlayer*, bool>*& dyn_OnGrabbed();
     // Get instance field reference: private System.Boolean <IsShownAsComplete>k__BackingField
-    bool& dyn_$IsShownAsComplete$k__BackingField();
+    [[deprecated]] bool& dyn_$IsShownAsComplete$k__BackingField();
     // Get instance field reference: private System.Boolean <IsBeingRecorded>k__BackingField
-    bool& dyn_$IsBeingRecorded$k__BackingField();
+    [[deprecated]] bool& dyn_$IsBeingRecorded$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationGroup <BelongsToGroup>k__BackingField
-    ::VROSC::LoopStationGroup*& dyn_$BelongsToGroup$k__BackingField();
+    [[deprecated]] ::VROSC::LoopStationGroup*& dyn_$BelongsToGroup$k__BackingField();
     // Get instance field reference: private System.Int32 <PositionInGroup>k__BackingField
-    int& dyn_$PositionInGroup$k__BackingField();
+    [[deprecated]] int& dyn_$PositionInGroup$k__BackingField();
     // Get instance field reference: private System.String <InstrumentName>k__BackingField
-    ::StringW& dyn_$InstrumentName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$InstrumentName$k__BackingField();
     // public System.Boolean get_IsSoloActive()
-    // Offset: 0x9024AC
+    // Offset: 0x19B92C4
     bool get_IsSoloActive();
     // public System.Boolean get_IsMuteActive()
-    // Offset: 0x9024D4
+    // Offset: 0x19B92EC
     bool get_IsMuteActive();
     // public System.Boolean get_IsPlaying()
-    // Offset: 0x9024FC
+    // Offset: 0x19B5BF0
     bool get_IsPlaying();
     // public VROSC.LoopPlayerAutoMover get_AutoMover()
-    // Offset: 0x902540
+    // Offset: 0x19B9330
     ::VROSC::LoopPlayerAutoMover* get_AutoMover();
     // public VROSC.LoopPlayerUI get_UI()
-    // Offset: 0x902548
+    // Offset: 0x19B9338
     ::VROSC::LoopPlayerUI* get_UI();
     // public System.String get_TrackId()
-    // Offset: 0x902550
+    // Offset: 0x19B9340
     ::StringW get_TrackId();
     // private System.Void set_TrackId(System.String value)
-    // Offset: 0x902558
+    // Offset: 0x19B9348
     void set_TrackId(::StringW value);
     // public VROSC.LoopPlayerPlaybackController get_Playback()
-    // Offset: 0x902560
+    // Offset: 0x19B9350
     ::VROSC::LoopPlayerPlaybackController* get_Playback();
     // public System.Boolean get_IsShownAsComplete()
-    // Offset: 0x902568
+    // Offset: 0x19B9358
     bool get_IsShownAsComplete();
     // private System.Void set_IsShownAsComplete(System.Boolean value)
-    // Offset: 0x902570
+    // Offset: 0x19B9360
     void set_IsShownAsComplete(bool value);
     // public System.Boolean get_IsBeingRecorded()
-    // Offset: 0x90257C
+    // Offset: 0x19B936C
     bool get_IsBeingRecorded();
     // private System.Void set_IsBeingRecorded(System.Boolean value)
-    // Offset: 0x902584
+    // Offset: 0x19B9374
     void set_IsBeingRecorded(bool value);
     // public VROSC.LoopStationGroup get_BelongsToGroup()
-    // Offset: 0x902590
+    // Offset: 0x19B9380
     ::VROSC::LoopStationGroup* get_BelongsToGroup();
     // private System.Void set_BelongsToGroup(VROSC.LoopStationGroup value)
-    // Offset: 0x902598
+    // Offset: 0x19B9388
     void set_BelongsToGroup(::VROSC::LoopStationGroup* value);
     // public System.Int32 get_PositionInGroup()
-    // Offset: 0x9025A0
+    // Offset: 0x19B9390
     int get_PositionInGroup();
     // private System.Void set_PositionInGroup(System.Int32 value)
-    // Offset: 0x9025A8
+    // Offset: 0x19B9398
     void set_PositionInGroup(int value);
     // public System.Int32 get_LoopLength()
-    // Offset: 0x9025B0
+    // Offset: 0x19B93A0
     int get_LoopLength();
     // public System.String get_InstrumentName()
-    // Offset: 0x9025E0
+    // Offset: 0x19B93CC
     ::StringW get_InstrumentName();
     // private System.Void set_InstrumentName(System.String value)
-    // Offset: 0x9025E8
+    // Offset: 0x19B93D4
     void set_InstrumentName(::StringW value);
     // public System.Boolean get_IsGrabbed()
-    // Offset: 0x9025F0
+    // Offset: 0x19B93DC
     bool get_IsGrabbed();
     // private System.Void Awake()
-    // Offset: 0x90260C
+    // Offset: 0x19B93F8
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x902960
+    // Offset: 0x19B974C
     void OnDestroy();
     // public System.Void SetGroup(VROSC.LoopStationGroup loopStationGroup, System.Int32 position)
-    // Offset: 0x902CB4
+    // Offset: 0x19B9AA0
     void SetGroup(::VROSC::LoopStationGroup* loopStationGroup, int position);
     // public System.Void SetGroupPosition(System.Int32 position)
-    // Offset: 0x902D28
+    // Offset: 0x19B5504
     void SetGroupPosition(int position);
     // public System.Void Setup(VROSC.LoopStation loopStation, System.String trackId, System.Boolean createdByRecorder, System.Boolean overdub)
-    // Offset: 0x902EF0
+    // Offset: 0x19B9C18
     void Setup(::VROSC::LoopStation* loopStation, ::StringW trackId, bool createdByRecorder, bool overdub);
     // public System.Void SetRecordingCompleted(System.Boolean colorize)
-    // Offset: 0x903818
+    // Offset: 0x19BA250
     void SetRecordingCompleted(bool colorize);
     // public System.Void SetRecordingText(System.String recordingtext)
-    // Offset: 0x903A38
+    // Offset: 0x19BA470
     void SetRecordingText(::StringW recordingtext);
     // private System.Void TogglePlay(System.Boolean play)
-    // Offset: 0x903A9C
+    // Offset: 0x19BA4D4
     void TogglePlay(bool play);
     // private System.Void ToggleMute(System.Boolean mute)
-    // Offset: 0x903B1C
+    // Offset: 0x19BA540
     void ToggleMute(bool mute);
     // private System.Void ToggleSolo(System.Boolean soloOn)
-    // Offset: 0x903D98
+    // Offset: 0x19BA744
     void ToggleSolo(bool soloOn);
     // private System.Void DeleteFromButton()
-    // Offset: 0x903E0C
+    // Offset: 0x19BA7B8
     void DeleteFromButton();
     // System.Void UpdatePlayConfig(VROSC.LoopPlaybackConfigOverride playbackConfig)
-    // Offset: 0x903E70
+    // Offset: 0x19BA81C
     void UpdatePlayConfig(::VROSC::LoopPlaybackConfigOverride* playbackConfig);
     // public System.Void Play(VROSC.LoopPlaybackConfig config)
-    // Offset: 0x903EB8
+    // Offset: 0x19BA864
     void Play(::VROSC::LoopPlaybackConfig* config);
     // public System.Void Stop(System.Boolean instant)
-    // Offset: 0x903EF4
+    // Offset: 0x19BA8A0
     void Stop(bool instant);
     // public System.Void UpdateAudioSourceVolume()
-    // Offset: 0x903FC8
+    // Offset: 0x19BA978
     void UpdateAudioSourceVolume();
     // public System.Void SetInteractableDuringAnimation(System.Boolean interactable)
-    // Offset: 0x903FE0
+    // Offset: 0x19BA990
     void SetInteractableDuringAnimation(bool interactable);
     // public System.Void SetVolume(System.Single volume)
-    // Offset: 0x9037BC
+    // Offset: 0x19BA1F4
     void SetVolume(float volume);
     // private System.Void OnVolumeSliderChanged(System.Single volume)
-    // Offset: 0x904024
+    // Offset: 0x19BA9D4
     void OnVolumeSliderChanged(float volume);
     // public System.Void SetIsMutedByLoad(System.Boolean isMuted)
-    // Offset: 0x9040F4
+    // Offset: 0x19BAA18
     void SetIsMutedByLoad(bool isMuted);
     // public System.Void SetMutedBySolo(System.Boolean isMutedBySolo)
-    // Offset: 0x904138
+    // Offset: 0x19BAA5C
     void SetMutedBySolo(bool isMutedBySolo);
     // public VROSC.PlaybackProgressUIData GetPlaybackProgress()
-    // Offset: 0x904164
+    // Offset: 0x19BAA88
     ::VROSC::PlaybackProgressUIData GetPlaybackProgress();
     // private System.Void SetDisplayName(System.String displayName)
-    // Offset: 0x9042F4
+    // Offset: 0x19BAC10
     void SetDisplayName(::StringW displayName);
     // public System.Void .ctor()
-    // Offset: 0x904414
+    // Offset: 0x19BACA8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

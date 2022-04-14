@@ -54,15 +54,7 @@ namespace VROSC::AudioReactive {
     class ScaleData;
     // Nested type: ::VROSC::AudioReactive::ScaleEffect::$SpecificFlow$d__8
     class $SpecificFlow$d__8;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.ScaleEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -83,25 +75,25 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::VROSC::AudioReactive::ScaleEffect::ScaleData*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ScaleEffectData _data
-    ::VROSC::AudioReactive::ScaleEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::ScaleEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Transform[] _transforms
-    ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
     // Get instance field reference: private VROSC.AudioReactive.ScaleEffect/VROSC.AudioReactive.ScaleData[] _scaleDatas
-    ::ArrayW<::VROSC::AudioReactive::ScaleEffect::ScaleData*>& dyn__scaleDatas();
+    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::ScaleEffect::ScaleData*>& dyn__scaleDatas();
     // public VROSC.AudioReactive.ScaleEffectData get_Data()
-    // Offset: 0xB10B20
+    // Offset: 0xDE2628
     ::VROSC::AudioReactive::ScaleEffectData* get_Data();
     // public UnityEngine.Transform[] get_Transforms()
-    // Offset: 0xB10B28
+    // Offset: 0xDE2630
     ::ArrayW<::UnityEngine::Transform*> get_Transforms();
     // private System.Void SetStartScale()
-    // Offset: 0xB10CEC
+    // Offset: 0xDE27F4
     void SetStartScale();
     // private System.Void GetScaleDatas()
-    // Offset: 0xB10B58
+    // Offset: 0xDE2660
     void GetScaleDatas();
     // public System.Void .ctor()
-    // Offset: 0xB10E64
+    // Offset: 0xDE296C
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -112,17 +104,17 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<ScaleEffect*, creationType>()));
     }
     // public override System.Void Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
-    // Offset: 0xB10B30
+    // Offset: 0xDE2638
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
     void Setup(::VROSC::AudioReactive::AudioReactiveBehaviour* behaviour);
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0xB10C80
+    // Offset: 0xDE2788
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();
     // public override System.Void DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
-    // Offset: 0xB10D68
+    // Offset: 0xDE2870
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
     void DrawGizmos(::VROSC::AudioReactive::ReactToBeat* sender);

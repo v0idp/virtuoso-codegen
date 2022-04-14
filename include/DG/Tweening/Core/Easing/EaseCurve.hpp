@@ -33,15 +33,7 @@ namespace DG::Tweening::Core::Easing {
   // [TokenAttribute] Offset: FFFFFFFF
   class EaseCurve : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly UnityEngine.AnimationCurve _animCurve
     // Size: 0x8
     // Offset: 0x10
@@ -54,16 +46,16 @@ namespace DG::Tweening::Core::Easing {
       return animCurve;
     }
     // Get instance field reference: private readonly UnityEngine.AnimationCurve _animCurve
-    ::UnityEngine::AnimationCurve*& dyn__animCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__animCurve();
     // public System.Void .ctor(UnityEngine.AnimationCurve animCurve)
-    // Offset: 0x109ACA4
+    // Offset: 0x15DD2CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EaseCurve* New_ctor(::UnityEngine::AnimationCurve* animCurve) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::Easing::EaseCurve::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EaseCurve*, creationType>(animCurve)));
     }
     // public System.Single Evaluate(System.Single time, System.Single duration, System.Single unusedOvershoot, System.Single unusedPeriod)
-    // Offset: 0x109B3EC
+    // Offset: 0x15DDA14
     float Evaluate(float time, float duration, float unusedOvershoot, float unusedPeriod);
   }; // DG.Tweening.Core.Easing.EaseCurve
   #pragma pack(pop)

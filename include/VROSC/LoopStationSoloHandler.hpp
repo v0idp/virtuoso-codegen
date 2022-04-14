@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationSoloHandler : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopStation _loopStation
     // Size: 0x8
     // Offset: 0x10
@@ -100,52 +92,52 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopStationLoopHandler _loopHandler
-    ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
+    [[deprecated]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
     // Get instance field reference: private VROSC.LoopStationGroupCore _loopGroupCore
-    ::VROSC::LoopStationGroupCore*& dyn__loopGroupCore();
+    [[deprecated]] ::VROSC::LoopStationGroupCore*& dyn__loopGroupCore();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopPlayer> _soloTracks
-    ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__soloTracks();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__soloTracks();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopPlayer> _loops
-    ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__loops();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__loops();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopStationGroup> _groups
-    ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__groups();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__groups();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopStationGroup> _soloGroups
-    ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__soloGroups();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__soloGroups();
     // public System.Void .ctor(VROSC.LoopStation loopStation)
-    // Offset: 0x8A579C
+    // Offset: 0x197833C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationSoloHandler* New_ctor(::VROSC::LoopStation* loopStation) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationSoloHandler::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationSoloHandler*, creationType>(loopStation)));
     }
     // private System.Void LoopRecorded(VROSC.LoopPlayer newLoop)
-    // Offset: 0x8A5DA0
+    // Offset: 0x1978940
     void LoopRecorded(::VROSC::LoopPlayer* newLoop);
     // private System.Void LoopDestroyed(VROSC.LoopPlayer loopToDestroy, System.Boolean fromReset)
-    // Offset: 0x8A5E98
+    // Offset: 0x1978A38
     void LoopDestroyed(::VROSC::LoopPlayer* loopToDestroy, bool fromReset);
     // private System.Void UpdateAllTracks()
-    // Offset: 0x8A601C
+    // Offset: 0x1978BBC
     void UpdateAllTracks();
     // private System.Void LoopSoloChanged(VROSC.LoopPlayer loopPlayer, System.Boolean soloEnabled)
-    // Offset: 0x8A6368
+    // Offset: 0x1978F08
     void LoopSoloChanged(::VROSC::LoopPlayer* loopPlayer, bool soloEnabled);
     // private System.Void GroupSoloChanged(VROSC.LoopStationGroup group, System.Boolean soloEnabled)
-    // Offset: 0x8A6400
+    // Offset: 0x1978FA0
     void GroupSoloChanged(::VROSC::LoopStationGroup* group, bool soloEnabled);
     // private System.Void GroupCreated(VROSC.LoopStationGroup group)
-    // Offset: 0x8A6498
+    // Offset: 0x1979038
     void GroupCreated(::VROSC::LoopStationGroup* group);
     // private System.Void GroupRemoved(VROSC.LoopStationGroup group)
-    // Offset: 0x8A6590
+    // Offset: 0x1979130
     void GroupRemoved(::VROSC::LoopStationGroup* group);
     // private System.Boolean LoopIsInASoloGroup(VROSC.LoopPlayer loop)
-    // Offset: 0x8A61F4
+    // Offset: 0x1978D94
     bool LoopIsInASoloGroup(::VROSC::LoopPlayer* loop);
     // protected override System.Void Finalize()
-    // Offset: 0x8A5ABC
+    // Offset: 0x197865C
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

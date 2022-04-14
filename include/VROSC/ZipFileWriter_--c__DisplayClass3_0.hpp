@@ -37,15 +37,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ZipFileWriter::$$c__DisplayClass3_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String originPath
     // Size: 0x8
     // Offset: 0x10
@@ -78,20 +70,20 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public System.String originPath
-    ::StringW& dyn_originPath();
+    [[deprecated]] ::StringW& dyn_originPath();
     // Get instance field reference: public System.String destination
-    ::StringW& dyn_destination();
+    [[deprecated]] ::StringW& dyn_destination();
     // Get instance field reference: public VROSC.ZipFileWriter <>4__this
-    ::VROSC::ZipFileWriter*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::ZipFileWriter*& dyn_$$4__this();
     // Get instance field reference: public System.Action successCallback
-    ::System::Action*& dyn_successCallback();
+    [[deprecated]] ::System::Action*& dyn_successCallback();
     // Get instance field reference: public System.Action`1<VROSC.Error> failureCallback
-    ::System::Action_1<::VROSC::Error>*& dyn_failureCallback();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_failureCallback();
     // System.Void <ExtractZipToFolder>b__0()
-    // Offset: 0x14182EC
+    // Offset: 0xE8A56C
     void $ExtractZipToFolder$b__0();
     // public System.Void .ctor()
-    // Offset: 0x14182E4
+    // Offset: 0xE8A564
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

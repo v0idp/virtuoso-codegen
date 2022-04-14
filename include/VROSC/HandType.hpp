@@ -59,8 +59,14 @@ namespace VROSC {
     static ::VROSC::HandType _get_Right();
     // Set static field: static public VROSC.HandType Right
     static void _set_Right(::VROSC::HandType value);
+    // static field const value: static public VROSC.HandType Both
+    static constexpr const int Both = 3;
+    // Get static field: static public VROSC.HandType Both
+    static ::VROSC::HandType _get_Both();
+    // Set static field: static public VROSC.HandType Both
+    static void _set_Both(::VROSC::HandType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.HandType
   #pragma pack(pop)
   static check_size<sizeof(HandType), 0 + sizeof(int)> __VROSC_HandTypeSizeCheck;

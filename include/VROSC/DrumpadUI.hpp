@@ -64,15 +64,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::DrumpadUI::$SpinnerActive$d__10
     struct $SpinnerActive$d__10;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.GrabMalletButton _grabSticksButton
     // Size: 0x8
     // Offset: 0x58
@@ -125,41 +117,41 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_2<int, bool>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.GrabMalletButton _grabSticksButton
-    ::VROSC::GrabMalletButton*& dyn__grabSticksButton();
+    [[deprecated]] ::VROSC::GrabMalletButton*& dyn__grabSticksButton();
     // Get instance field reference: private VROSC.UI.DrumSampleSwitcherUI _switcher
-    ::VROSC::UI::DrumSampleSwitcherUI*& dyn__switcher();
+    [[deprecated]] ::VROSC::UI::DrumSampleSwitcherUI*& dyn__switcher();
     // Get instance field reference: private VROSC.UISlideToggle _useVelocity
-    ::VROSC::UISlideToggle*& dyn__useVelocity();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__useVelocity();
     // Get instance field reference: private VROSC.IntNode _pitch
-    ::VROSC::IntNode*& dyn__pitch();
+    [[deprecated]] ::VROSC::IntNode*& dyn__pitch();
     // Get instance field reference: private System.Boolean _spinnerPressed
-    bool& dyn__spinnerPressed();
+    [[deprecated]] bool& dyn__spinnerPressed();
     // Get instance field reference: public System.Action`1<System.Boolean> OnUseVelocityChanged
-    ::System::Action_1<bool>*& dyn_OnUseVelocityChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnUseVelocityChanged();
     // Get instance field reference: public System.Action`1<System.Int32> OnPitchChanged
-    ::System::Action_1<int>*& dyn_OnPitchChanged();
+    [[deprecated]] ::System::Action_1<int>*& dyn_OnPitchChanged();
     // Get instance field reference: public System.Action`2<System.Int32,System.Boolean> OnSwitcherChanged
-    ::System::Action_2<int, bool>*& dyn_OnSwitcherChanged();
+    [[deprecated]] ::System::Action_2<int, bool>*& dyn_OnSwitcherChanged();
     // public System.Void Setup(UnityEngine.Transform parent, System.Int32 empadId, System.Int32 groupId, VROSC.ModularDrumsDataController controller, System.Boolean useVelocity, System.Int32 pitch)
-    // Offset: 0x130DFAC
+    // Offset: 0x8E7B28
     void Setup(::UnityEngine::Transform* parent, int empadId, int groupId, ::VROSC::ModularDrumsDataController* controller, bool useVelocity, int pitch);
     // private System.Void SpinnerActive(System.Boolean active)
-    // Offset: 0x13105A8
+    // Offset: 0x8EA184
     void SpinnerActive(bool active);
     // public System.Void SetSwitcherActiveSample(System.Boolean select, System.Boolean preview)
-    // Offset: 0x130E7F4
+    // Offset: 0x8E839C
     void SetSwitcherActiveSample(bool select, bool preview);
     // private System.Void SetDrumUseVelocityChanged(VROSC.InputDevice device, System.Boolean toggled)
-    // Offset: 0x13106AC
+    // Offset: 0x8EA288
     void SetDrumUseVelocityChanged(::VROSC::InputDevice* device, bool toggled);
     // private System.Void SetPitchChanged(System.Int32 pitch)
-    // Offset: 0x131071C
+    // Offset: 0x8EA2F8
     void SetPitchChanged(int pitch);
     // private System.Void SwitcherChanged(System.Int32 sampleIdOrNoteNumber, System.Boolean preview)
-    // Offset: 0x131078C
+    // Offset: 0x8EA368
     void SwitcherChanged(int sampleIdOrNoteNumber, bool preview);
     // public System.Void .ctor()
-    // Offset: 0x1310804
+    // Offset: 0x8EA3E0
     // Implemented from: VROSC.PadUI
     // Base method: System.Void PadUI::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -173,12 +165,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<DrumpadUI*, creationType>()));
     }
     // protected override System.Void OnDestroy()
-    // Offset: 0x131031C
+    // Offset: 0x8E9EF8
     // Implemented from: VROSC.PadUI
     // Base method: System.Void PadUI::OnDestroy()
     void OnDestroy();
     // protected override System.Void UpdateHover()
-    // Offset: 0x1310678
+    // Offset: 0x8EA254
     // Implemented from: VROSC.PadUI
     // Base method: System.Void PadUI::UpdateHover()
     void UpdateHover();

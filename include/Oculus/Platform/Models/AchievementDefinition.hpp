@@ -31,15 +31,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class AchievementDefinition : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly Oculus.Platform.AchievementType Type
     // Size: 0x4
     // Offset: 0x10
@@ -70,15 +62,15 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(uint64_t) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.AchievementType Type
-    ::Oculus::Platform::AchievementType& dyn_Type();
+    [[deprecated]] ::Oculus::Platform::AchievementType& dyn_Type();
     // Get instance field reference: public readonly System.String Name
-    ::StringW& dyn_Name();
+    [[deprecated]] ::StringW& dyn_Name();
     // Get instance field reference: public readonly System.UInt32 BitfieldLength
-    uint& dyn_BitfieldLength();
+    [[deprecated]] uint& dyn_BitfieldLength();
     // Get instance field reference: public readonly System.UInt64 Target
-    uint64_t& dyn_Target();
+    [[deprecated]] uint64_t& dyn_Target();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7AF088
+    // Offset: 0x8F5468
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AchievementDefinition* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::AchievementDefinition::.ctor");

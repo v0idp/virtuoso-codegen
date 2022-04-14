@@ -46,13 +46,13 @@ namespace GlobalNamespace {
     // Set static field: static public System.Action`2<Proyecto26.RequestException,System.Int32> <>9__5_1
     static void _set_$$9__5_1(::System::Action_2<::Proyecto26::RequestException*, int>* value);
     // static private System.Void .cctor()
-    // Offset: 0x13D86BC
+    // Offset: 0x19603D8
     static void _cctor();
     // System.Void <Put>b__5_1(Proyecto26.RequestException err, System.Int32 retries)
-    // Offset: 0x13D8724
+    // Offset: 0x1960440
     void $Put$b__5_1(::Proyecto26::RequestException* err, int retries);
     // public System.Void .ctor()
-    // Offset: 0x13D871C
+    // Offset: 0x1960438
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

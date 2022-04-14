@@ -40,7 +40,7 @@ namespace Firebase::Firestore::Converters {
   class BooleanConverter : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
     // System.Void .ctor()
-    // Offset: 0xC29308
+    // Offset: 0xD4B038
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -49,12 +49,12 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<BooleanConverter*, creationType>()));
     }
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC2939C
+    // Offset: 0xD4B0CC
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
     // protected override System.Object DeserializeBoolean(Firebase.Firestore.DeserializationContext context, System.Boolean value)
-    // Offset: 0xC294DC
+    // Offset: 0xD4B204
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeBoolean(Firebase.Firestore.DeserializationContext context, System.Boolean value)
     ::Il2CppObject* DeserializeBoolean(::Firebase::Firestore::DeserializationContext* context, bool value);

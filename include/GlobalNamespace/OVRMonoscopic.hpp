@@ -30,15 +30,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRMonoscopic : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRInput/RawButton toggleButton
     // Size: 0x4
     // Offset: 0x18
@@ -55,14 +47,14 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRInput/RawButton toggleButton
-    ::GlobalNamespace::OVRInput::RawButton& dyn_toggleButton();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_toggleButton();
     // Get instance field reference: private System.Boolean monoscopic
-    bool& dyn_monoscopic();
+    [[deprecated]] bool& dyn_monoscopic();
     // private System.Void Update()
-    // Offset: 0xB2425C
+    // Offset: 0xE249DC
     void Update();
     // public System.Void .ctor()
-    // Offset: 0xB24370
+    // Offset: 0xE24AF0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

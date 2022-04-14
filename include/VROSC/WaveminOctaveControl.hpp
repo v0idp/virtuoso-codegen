@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class WaveminOctaveControl : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IntNode _octave
     // Size: 0x8
     // Offset: 0x18
@@ -72,27 +64,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.IntNode _octave
-    ::VROSC::IntNode*& dyn__octave();
+    [[deprecated]] ::VROSC::IntNode*& dyn__octave();
     // Get instance field reference: private VROSC.IntNode _note
-    ::VROSC::IntNode*& dyn__note();
+    [[deprecated]] ::VROSC::IntNode*& dyn__note();
     // Get instance field reference: private System.Int32 _lastNoteValue
-    int& dyn__lastNoteValue();
+    [[deprecated]] int& dyn__lastNoteValue();
     // Get instance field reference: private System.Int32 _lastOctaveValue
-    int& dyn__lastOctaveValue();
+    [[deprecated]] int& dyn__lastOctaveValue();
     // protected System.Void Awake()
-    // Offset: 0x1354000
+    // Offset: 0x950850
     void Awake();
     // protected System.Void OnDestroy()
-    // Offset: 0x1354150
+    // Offset: 0x9509A0
     void OnDestroy();
     // private System.Void OctaveChanged(System.Int32 octave)
-    // Offset: 0x1354288
+    // Offset: 0x950AD8
     void OctaveChanged(int octave);
     // private System.Void NoteChanged(System.Int32 note)
-    // Offset: 0x13542D0
+    // Offset: 0x950B20
     void NoteChanged(int note);
     // public System.Void .ctor()
-    // Offset: 0x13542D8
+    // Offset: 0x950B28
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

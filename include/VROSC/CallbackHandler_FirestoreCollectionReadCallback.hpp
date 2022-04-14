@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CallbackHandler::FirestoreCollectionReadCallback : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`1<System.Collections.Generic.IEnumerable`1<Firebase.Firestore.DocumentSnapshot>> Action
     // Size: 0x8
     // Offset: 0x10
@@ -65,11 +57,11 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*) == 0x8);
     public:
     // Get instance field reference: public System.Action`1<System.Collections.Generic.IEnumerable`1<Firebase.Firestore.DocumentSnapshot>> Action
-    ::System::Action_1<::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*>*& dyn_Action();
+    [[deprecated]] ::System::Action_1<::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*>*& dyn_Action();
     // Get instance field reference: public System.Collections.Generic.IEnumerable`1<Firebase.Firestore.DocumentSnapshot> Data
-    ::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*& dyn_Data();
+    [[deprecated]] ::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*& dyn_Data();
     // public System.Void .ctor()
-    // Offset: 0x135CE58
+    // Offset: 0x9593C0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

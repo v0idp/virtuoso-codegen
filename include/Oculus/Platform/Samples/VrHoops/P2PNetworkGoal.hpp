@@ -35,15 +35,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class P2PNetworkGoal : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Samples.VrHoops.GoalMover m_goal
     // Size: 0x8
     // Offset: 0x18
@@ -66,28 +58,28 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.GoalMover m_goal
-    ::Oculus::Platform::Samples::VrHoops::GoalMover*& dyn_m_goal();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::GoalMover*& dyn_m_goal();
     // Get instance field reference: private UnityEngine.Vector3 m_lastSentMoveDirection
-    ::UnityEngine::Vector3& dyn_m_lastSentMoveDirection();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_m_lastSentMoveDirection();
     // Get instance field reference: private System.Boolean m_sendUpdates
-    bool& dyn_m_sendUpdates();
+    [[deprecated]] bool& dyn_m_sendUpdates();
     // public System.Void set_SendUpdates(System.Boolean value)
-    // Offset: 0x983F24
+    // Offset: 0xB562C0
     void set_SendUpdates(bool value);
     // private System.Void Awake()
-    // Offset: 0x983F30
+    // Offset: 0xB562CC
     void Awake();
     // private System.Void FixedUpdate()
-    // Offset: 0x983F94
+    // Offset: 0xB56330
     void FixedUpdate();
     // public System.Void SendBackboardUpdate()
-    // Offset: 0x983FF0
+    // Offset: 0xB5638C
     void SendBackboardUpdate();
     // public System.Void RemoteBackboardUpdate(System.Single remoteTime, UnityEngine.Vector3 pos, UnityEngine.Vector3 moveDir, UnityEngine.Vector3 nextMoveDir)
-    // Offset: 0x982658
+    // Offset: 0xB549F4
     void RemoteBackboardUpdate(float remoteTime, ::UnityEngine::Vector3 pos, ::UnityEngine::Vector3 moveDir, ::UnityEngine::Vector3 nextMoveDir);
     // public System.Void .ctor()
-    // Offset: 0x9840AC
+    // Offset: 0xB56448
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

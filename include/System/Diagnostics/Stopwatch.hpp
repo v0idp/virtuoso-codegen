@@ -33,15 +33,7 @@ namespace System::Diagnostics {
   // [TokenAttribute] Offset: FFFFFFFF
   class Stopwatch : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int64 elapsed
     // Size: 0x8
     // Offset: 0x10
@@ -70,34 +62,34 @@ namespace System::Diagnostics {
     // Set static field: static public readonly System.Boolean IsHighResolution
     static void _set_IsHighResolution(bool value);
     // Get instance field reference: private System.Int64 elapsed
-    int64_t& dyn_elapsed();
+    [[deprecated]] int64_t& dyn_elapsed();
     // Get instance field reference: private System.Int64 started
-    int64_t& dyn_started();
+    [[deprecated]] int64_t& dyn_started();
     // Get instance field reference: private System.Boolean is_running
-    bool& dyn_is_running();
+    [[deprecated]] bool& dyn_is_running();
     // public System.TimeSpan get_Elapsed()
-    // Offset: 0x952190
+    // Offset: 0xDA6598
     ::System::TimeSpan get_Elapsed();
     // public System.Int64 get_ElapsedMilliseconds()
-    // Offset: 0x952330
+    // Offset: 0xDA6738
     int64_t get_ElapsedMilliseconds();
     // public System.Int64 get_ElapsedTicks()
-    // Offset: 0x9522B4
+    // Offset: 0xDA66BC
     int64_t get_ElapsedTicks();
     // static private System.Void .cctor()
-    // Offset: 0x952460
+    // Offset: 0xDA6868
     static void _cctor();
     // static public System.Int64 GetTimestamp()
-    // Offset: 0x9520A8
+    // Offset: 0xDA64B0
     static int64_t GetTimestamp();
     // static public System.Diagnostics.Stopwatch StartNew()
-    // Offset: 0x9520AC
+    // Offset: 0xDA64B4
     static ::System::Diagnostics::Stopwatch* StartNew();
     // public System.Void Start()
-    // Offset: 0x95211C
+    // Offset: 0xDA6524
     void Start();
     // public System.Void .ctor()
-    // Offset: 0x952114
+    // Offset: 0xDA651C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

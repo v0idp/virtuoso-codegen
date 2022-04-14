@@ -24,15 +24,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirebaseHelper::LinkUserEmail : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String idToken
     // Size: 0x8
     // Offset: 0x10
@@ -59,15 +51,15 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String idToken
-    ::StringW& dyn_idToken();
+    [[deprecated]] ::StringW& dyn_idToken();
     // Get instance field reference: public System.String email
-    ::StringW& dyn_email();
+    [[deprecated]] ::StringW& dyn_email();
     // Get instance field reference: public System.String password
-    ::StringW& dyn_password();
+    [[deprecated]] ::StringW& dyn_password();
     // Get instance field reference: public System.Boolean returnSecureToken
-    bool& dyn_returnSecureToken();
+    [[deprecated]] bool& dyn_returnSecureToken();
     // public System.Void .ctor()
-    // Offset: 0x13C9658
+    // Offset: 0x1952860
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

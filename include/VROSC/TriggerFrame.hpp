@@ -60,7 +60,7 @@ namespace VROSC {
     // Set static field: static public VROSC.TriggerFrame End
     static void _set_End(::VROSC::TriggerFrame value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.TriggerFrame
   #pragma pack(pop)
   static check_size<sizeof(TriggerFrame), 0 + sizeof(int)> __VROSC_TriggerFrameSizeCheck;

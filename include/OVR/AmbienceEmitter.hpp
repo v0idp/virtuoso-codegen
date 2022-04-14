@@ -45,15 +45,7 @@ namespace OVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class AmbienceEmitter : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVR.SoundFXRef[] ambientSounds
     // Size: 0x8
     // Offset: 0x18
@@ -66,7 +58,7 @@ namespace OVR {
     bool autoActivate;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x5D54A8
+    // [TooltipAttribute] Offset: 0x6EE0B4
     // public System.Boolean autoRetrigger
     // Size: 0x1
     // Offset: 0x21
@@ -75,7 +67,7 @@ namespace OVR {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: autoRetrigger and: randomRetriggerDelaySecs
     char __padding2[0x2] = {};
-    // [MinMaxAttribute] Offset: 0x5D54E0
+    // [MinMaxAttribute] Offset: 0x6EE0EC
     // public UnityEngine.Vector2 randomRetriggerDelaySecs
     // Size: 0x8
     // Offset: 0x24
@@ -84,7 +76,7 @@ namespace OVR {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     // Padding between fields: randomRetriggerDelaySecs and: playPositions
     char __padding3[0x4] = {};
-    // [TooltipAttribute] Offset: 0x5D5504
+    // [TooltipAttribute] Offset: 0x6EE110
     // public UnityEngine.Transform[] playPositions
     // Size: 0x8
     // Offset: 0x30
@@ -127,42 +119,42 @@ namespace OVR {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVR.SoundFXRef[] ambientSounds
-    ::ArrayW<::OVR::SoundFXRef*>& dyn_ambientSounds();
+    [[deprecated]] ::ArrayW<::OVR::SoundFXRef*>& dyn_ambientSounds();
     // Get instance field reference: public System.Boolean autoActivate
-    bool& dyn_autoActivate();
+    [[deprecated]] bool& dyn_autoActivate();
     // Get instance field reference: public System.Boolean autoRetrigger
-    bool& dyn_autoRetrigger();
+    [[deprecated]] bool& dyn_autoRetrigger();
     // Get instance field reference: public UnityEngine.Vector2 randomRetriggerDelaySecs
-    ::UnityEngine::Vector2& dyn_randomRetriggerDelaySecs();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_randomRetriggerDelaySecs();
     // Get instance field reference: public UnityEngine.Transform[] playPositions
-    ::ArrayW<::UnityEngine::Transform*>& dyn_playPositions();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_playPositions();
     // Get instance field reference: private System.Boolean activated
-    bool& dyn_activated();
+    [[deprecated]] bool& dyn_activated();
     // Get instance field reference: private System.Int32 playingIdx
-    int& dyn_playingIdx();
+    [[deprecated]] int& dyn_playingIdx();
     // Get instance field reference: private System.Single nextPlayTime
-    float& dyn_nextPlayTime();
+    [[deprecated]] float& dyn_nextPlayTime();
     // Get instance field reference: private System.Single fadeTime
-    float& dyn_fadeTime();
+    [[deprecated]] float& dyn_fadeTime();
     // Get instance field reference: private System.Int32 lastPosIdx
-    int& dyn_lastPosIdx();
+    [[deprecated]] int& dyn_lastPosIdx();
     // private System.Void Awake()
-    // Offset: 0x129F78C
+    // Offset: 0x189D330
     void Awake();
     // private System.Void Update()
-    // Offset: 0x129F930
+    // Offset: 0x189D4D4
     void Update();
     // public System.Void OnTriggerEnter(UnityEngine.Collider col)
-    // Offset: 0x129FB08
+    // Offset: 0x189D6AC
     void OnTriggerEnter(::UnityEngine::Collider* col);
     // public System.Void Play()
-    // Offset: 0x129F990
+    // Offset: 0x189D534
     void Play();
     // public System.Void EnableEmitter(System.Boolean enable)
-    // Offset: 0x129FC44
+    // Offset: 0x189D7E8
     void EnableEmitter(bool enable);
     // public System.Void .ctor()
-    // Offset: 0x129FDB0
+    // Offset: 0x189D954
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

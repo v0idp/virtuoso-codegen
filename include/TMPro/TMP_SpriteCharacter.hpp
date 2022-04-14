@@ -38,15 +38,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_SpriteCharacter : public ::TMPro::TMP_TextElement {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String m_Name
     // Size: 0x8
     // Offset: 0x30
@@ -61,41 +53,41 @@ namespace TMPro {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String m_Name
-    ::StringW& dyn_m_Name();
+    [[deprecated]] ::StringW& dyn_m_Name();
     // Get instance field reference: private System.Int32 m_HashCode
-    int& dyn_m_HashCode();
+    [[deprecated]] int& dyn_m_HashCode();
     // public System.String get_name()
-    // Offset: 0x85C908
+    // Offset: 0x9B3AA0
     ::StringW get_name();
     // public System.Void set_name(System.String value)
-    // Offset: 0x85C7C0
+    // Offset: 0x9B3958
     void set_name(::StringW value);
     // public System.Int32 get_hashCode()
-    // Offset: 0x85C910
+    // Offset: 0x9B3AA8
     int get_hashCode();
     // public System.Void .ctor(System.UInt32 unicode, TMPro.TMP_SpriteGlyph glyph)
-    // Offset: 0x85C918
+    // Offset: 0x9B3AB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SpriteCharacter* New_ctor(uint unicode, ::TMPro::TMP_SpriteGlyph* glyph) {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SpriteCharacter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_SpriteCharacter*, creationType>(unicode, glyph)));
     }
     // public System.Void .ctor(System.UInt32 unicode, TMPro.TMP_SpriteAsset spriteAsset, TMPro.TMP_SpriteGlyph glyph)
-    // Offset: 0x85C978
+    // Offset: 0x9B3B10
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SpriteCharacter* New_ctor(uint unicode, ::TMPro::TMP_SpriteAsset* spriteAsset, ::TMPro::TMP_SpriteGlyph* glyph) {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SpriteCharacter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_SpriteCharacter*, creationType>(unicode, spriteAsset, glyph)));
     }
     // System.Void .ctor(System.UInt32 unicode, System.UInt32 glyphIndex)
-    // Offset: 0x85C9DC
+    // Offset: 0x9B3B74
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SpriteCharacter* New_ctor(uint unicode, uint glyphIndex) {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SpriteCharacter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_SpriteCharacter*, creationType>(unicode, glyphIndex)));
     }
     // public System.Void .ctor()
-    // Offset: 0x85C794
+    // Offset: 0x9B392C
     // Implemented from: TMPro.TMP_TextElement
     // Base method: System.Void TMP_TextElement::.ctor()
     // Base method: System.Void Object::.ctor()

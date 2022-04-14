@@ -69,15 +69,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class WidgetToggleButton : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIToggle _toggle
     // Size: 0x8
     // Offset: 0x18
@@ -158,55 +150,55 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIToggle _toggle
-    ::VROSC::UIToggle*& dyn__toggle();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__toggle();
     // Get instance field reference: private TMPro.TextMeshPro _name
-    ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private VROSC.WidgetSettings/VROSC.Identifier _id
-    ::VROSC::WidgetSettings::Identifier& dyn__id();
+    [[deprecated]] ::VROSC::WidgetSettings::Identifier& dyn__id();
     // Get instance field reference: private UnityEngine.GameObject _isOnObject
-    ::UnityEngine::GameObject*& dyn__isOnObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__isOnObject();
     // Get instance field reference: private VROSC.UI.WidgetToggleMoverRelay _mover
-    ::VROSC::UI::WidgetToggleMoverRelay*& dyn__mover();
+    [[deprecated]] ::VROSC::UI::WidgetToggleMoverRelay*& dyn__mover();
     // Get instance field reference: private VROSC.UI.UIInteractableColoring[] _icons
-    ::ArrayW<::VROSC::UI::UIInteractableColoring*>& dyn__icons();
+    [[deprecated]] ::ArrayW<::VROSC::UI::UIInteractableColoring*>& dyn__icons();
     // Get instance field reference: private System.Boolean _isActive
-    bool& dyn__isActive();
+    [[deprecated]] bool& dyn__isActive();
     // Get instance field reference: private VROSC.WidgetController _widgetController
-    ::VROSC::WidgetController*& dyn__widgetController();
+    [[deprecated]] ::VROSC::WidgetController*& dyn__widgetController();
     // Get instance field reference: private UnityEngine.Transform _parentPanel
-    ::UnityEngine::Transform*& dyn__parentPanel();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__parentPanel();
     // Get instance field reference: private VROSC.TooltipData _triggerTooltipData
-    ::VROSC::TooltipData*& dyn__triggerTooltipData();
+    [[deprecated]] ::VROSC::TooltipData*& dyn__triggerTooltipData();
     // Get instance field reference: private VROSC.TooltipData _gripTooltipData
-    ::VROSC::TooltipData*& dyn__gripTooltipData();
+    [[deprecated]] ::VROSC::TooltipData*& dyn__gripTooltipData();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _tooltipDatas
-    ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
     // private System.Void Awake()
-    // Offset: 0x1356174
+    // Offset: 0x952A70
     void Awake();
     // private System.Void Start()
-    // Offset: 0x1356260
+    // Offset: 0x952B5C
     void Start();
     // private System.Void OnDestroy()
-    // Offset: 0x1356778
+    // Offset: 0x953074
     void OnDestroy();
     // private System.Void Toggled(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x135690C
+    // Offset: 0x953208
     void Toggled(::VROSC::InputDevice* device, bool active);
     // private System.Void UpdateIsActive(System.Boolean isActive)
-    // Offset: 0x135699C
+    // Offset: 0x953298
     void UpdateIsActive(bool isActive);
     // private System.Void CheckIfActive()
-    // Offset: 0x1356678
+    // Offset: 0x952F74
     void CheckIfActive();
     // private System.Void SynthesizerChanged(System.Boolean isExternalSynth)
-    // Offset: 0x13569C4
+    // Offset: 0x9532C0
     void SynthesizerChanged(bool isExternalSynth);
     // private System.Void UpdateTooltips(System.Boolean unused)
-    // Offset: 0x13566E0
+    // Offset: 0x952FDC
     void UpdateTooltips(bool unused);
     // public System.Void .ctor()
-    // Offset: 0x1356AF0
+    // Offset: 0x9533EC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

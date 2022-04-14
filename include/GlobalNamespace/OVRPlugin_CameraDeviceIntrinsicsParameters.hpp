@@ -114,33 +114,33 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Single fx
-    float& dyn_fx();
+    [[deprecated]] float& dyn_fx();
     // Get instance field reference: private System.Single fy
-    float& dyn_fy();
+    [[deprecated]] float& dyn_fy();
     // Get instance field reference: private System.Single cx
-    float& dyn_cx();
+    [[deprecated]] float& dyn_cx();
     // Get instance field reference: private System.Single cy
-    float& dyn_cy();
+    [[deprecated]] float& dyn_cy();
     // Get instance field reference: private System.Double disto0
-    double& dyn_disto0();
+    [[deprecated]] double& dyn_disto0();
     // Get instance field reference: private System.Double disto1
-    double& dyn_disto1();
+    [[deprecated]] double& dyn_disto1();
     // Get instance field reference: private System.Double disto2
-    double& dyn_disto2();
+    [[deprecated]] double& dyn_disto2();
     // Get instance field reference: private System.Double disto3
-    double& dyn_disto3();
+    [[deprecated]] double& dyn_disto3();
     // Get instance field reference: private System.Double disto4
-    double& dyn_disto4();
+    [[deprecated]] double& dyn_disto4();
     // Get instance field reference: private System.Single v_fov
-    float& dyn_v_fov();
+    [[deprecated]] float& dyn_v_fov();
     // Get instance field reference: private System.Single h_fov
-    float& dyn_h_fov();
+    [[deprecated]] float& dyn_h_fov();
     // Get instance field reference: private System.Single d_fov
-    float& dyn_d_fov();
+    [[deprecated]] float& dyn_d_fov();
     // Get instance field reference: private System.Int32 w
-    int& dyn_w();
+    [[deprecated]] int& dyn_w();
     // Get instance field reference: private System.Int32 h
-    int& dyn_h();
+    [[deprecated]] int& dyn_h();
   }; // OVRPlugin/CameraDeviceIntrinsicsParameters
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::CameraDeviceIntrinsicsParameters), 72 + sizeof(int)> __GlobalNamespace_OVRPlugin_CameraDeviceIntrinsicsParametersSizeCheck;

@@ -41,13 +41,13 @@ namespace UnityEngine::Timeline {
     // Set static field: static public System.Comparison`1<UnityEngine.Timeline.TimeNotificationBehaviour/UnityEngine.Timeline.NotificationEntry> <>9__12_0
     static void _set_$$9__12_0(::System::Comparison_1<::UnityEngine::Timeline::TimeNotificationBehaviour::NotificationEntry>* value);
     // static private System.Void .cctor()
-    // Offset: 0x12D1EFC
+    // Offset: 0x18D5170
     static void _cctor();
     // System.Int32 <SortNotifications>b__12_0(UnityEngine.Timeline.TimeNotificationBehaviour/UnityEngine.Timeline.NotificationEntry x, UnityEngine.Timeline.TimeNotificationBehaviour/UnityEngine.Timeline.NotificationEntry y)
-    // Offset: 0x12D1F64
+    // Offset: 0x18D51D8
     int $SortNotifications$b__12_0(::UnityEngine::Timeline::TimeNotificationBehaviour::NotificationEntry x, ::UnityEngine::Timeline::TimeNotificationBehaviour::NotificationEntry y);
     // public System.Void .ctor()
-    // Offset: 0x12D1F5C
+    // Offset: 0x18D51D0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

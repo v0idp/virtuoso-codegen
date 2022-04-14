@@ -28,15 +28,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_Style : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String m_Name
     // Size: 0x8
     // Offset: 0x10
@@ -93,57 +85,57 @@ namespace TMPro {
     // Set static field: static TMPro.TMP_Style k_NormalStyle
     static void _set_k_NormalStyle(::TMPro::TMP_Style* value);
     // Get instance field reference: private System.String m_Name
-    ::StringW& dyn_m_Name();
+    [[deprecated]] ::StringW& dyn_m_Name();
     // Get instance field reference: private System.Int32 m_HashCode
-    int& dyn_m_HashCode();
+    [[deprecated]] int& dyn_m_HashCode();
     // Get instance field reference: private System.String m_OpeningDefinition
-    ::StringW& dyn_m_OpeningDefinition();
+    [[deprecated]] ::StringW& dyn_m_OpeningDefinition();
     // Get instance field reference: private System.String m_ClosingDefinition
-    ::StringW& dyn_m_ClosingDefinition();
+    [[deprecated]] ::StringW& dyn_m_ClosingDefinition();
     // Get instance field reference: private System.Int32[] m_OpeningTagArray
-    ::ArrayW<int>& dyn_m_OpeningTagArray();
+    [[deprecated]] ::ArrayW<int>& dyn_m_OpeningTagArray();
     // Get instance field reference: private System.Int32[] m_ClosingTagArray
-    ::ArrayW<int>& dyn_m_ClosingTagArray();
+    [[deprecated]] ::ArrayW<int>& dyn_m_ClosingTagArray();
     // Get instance field reference: System.UInt32[] m_OpeningTagUnicodeArray
-    ::ArrayW<uint>& dyn_m_OpeningTagUnicodeArray();
+    [[deprecated]] ::ArrayW<uint>& dyn_m_OpeningTagUnicodeArray();
     // Get instance field reference: System.UInt32[] m_ClosingTagUnicodeArray
-    ::ArrayW<uint>& dyn_m_ClosingTagUnicodeArray();
+    [[deprecated]] ::ArrayW<uint>& dyn_m_ClosingTagUnicodeArray();
     // static public TMPro.TMP_Style get_NormalStyle()
-    // Offset: 0x85CBB8
+    // Offset: 0x9B3D50
     static ::TMPro::TMP_Style* get_NormalStyle();
     // public System.String get_name()
-    // Offset: 0x85CD18
+    // Offset: 0x9B3EB0
     ::StringW get_name();
     // public System.Void set_name(System.String value)
-    // Offset: 0x85CD20
+    // Offset: 0x9B3EB8
     void set_name(::StringW value);
     // public System.Int32 get_hashCode()
-    // Offset: 0x85CD5C
+    // Offset: 0x9B3EF4
     int get_hashCode();
     // public System.Void set_hashCode(System.Int32 value)
-    // Offset: 0x85CD64
+    // Offset: 0x9B3EFC
     void set_hashCode(int value);
     // public System.String get_styleOpeningDefinition()
-    // Offset: 0x85CD78
+    // Offset: 0x9B3F10
     ::StringW get_styleOpeningDefinition();
     // public System.String get_styleClosingDefinition()
-    // Offset: 0x85CD80
+    // Offset: 0x9B3F18
     ::StringW get_styleClosingDefinition();
     // public System.Int32[] get_styleOpeningTagArray()
-    // Offset: 0x85CD88
+    // Offset: 0x9B3F20
     ::ArrayW<int> get_styleOpeningTagArray();
     // public System.Int32[] get_styleClosingTagArray()
-    // Offset: 0x85CD90
+    // Offset: 0x9B3F28
     ::ArrayW<int> get_styleClosingTagArray();
     // System.Void .ctor(System.String styleName, System.String styleOpeningDefinition, System.String styleClosingDefinition)
-    // Offset: 0x85CC78
+    // Offset: 0x9B3E10
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_Style* New_ctor(::StringW styleName, ::StringW styleOpeningDefinition, ::StringW styleClosingDefinition) {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Style::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_Style*, creationType>(styleName, styleOpeningDefinition, styleClosingDefinition)));
     }
     // public System.Void RefreshStyle()
-    // Offset: 0x85CD98
+    // Offset: 0x9B3F30
     void RefreshStyle();
   }; // TMPro.TMP_Style
   #pragma pack(pop)

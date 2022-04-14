@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IntDisplay : public ::VROSC::TextDisplay {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IntNode _intNode
     // Size: 0x8
     // Offset: 0x20
@@ -52,12 +44,12 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::IntNode*) == 0x8);
     public:
     // Get instance field reference: private VROSC.IntNode _intNode
-    ::VROSC::IntNode*& dyn__intNode();
+    [[deprecated]] ::VROSC::IntNode*& dyn__intNode();
     // private System.Void UpdateDisplayInt(System.Int32 value)
-    // Offset: 0x13858C4
+    // Offset: 0x1948B6C
     void UpdateDisplayInt(int value);
     // public System.Void .ctor()
-    // Offset: 0x1385900
+    // Offset: 0x1948BA8
     // Implemented from: VROSC.TextDisplay
     // Base method: System.Void TextDisplay::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -72,7 +64,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<IntDisplay*, creationType>()));
     }
     // protected override System.Void InitDisplay()
-    // Offset: 0x13857B8
+    // Offset: 0x1948A60
     // Implemented from: VROSC.TextDisplay
     // Base method: System.Void TextDisplay::InitDisplay()
     void InitDisplay();

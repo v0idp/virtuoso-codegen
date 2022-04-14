@@ -44,21 +44,21 @@ namespace System::Reflection {
     // Offset: 0xFFFFFFFFFFFFFFFF
     R Invoke() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Reflection::MonoProperty::StaticGetter_1::Invoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Invoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Reflection::MonoProperty::StaticGetter_1<R>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<R, false>(this, ___internal__method);
     }
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Reflection::MonoProperty::StaticGetter_1::BeginInvoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "BeginInvoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(callback), ::il2cpp_utils::ExtractType(object)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Reflection::MonoProperty::StaticGetter_1<R>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::System::IAsyncResult*, false>(this, ___internal__method, callback, object);
     }
     // public R EndInvoke(System.IAsyncResult result)
     // Offset: 0xFFFFFFFFFFFFFFFF
     R EndInvoke(::System::IAsyncResult* result) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Reflection::MonoProperty::StaticGetter_1::EndInvoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "EndInvoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(result)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Reflection::MonoProperty::StaticGetter_1<R>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<R, false>(this, ___internal__method, result);
     }
   }; // System.Reflection.MonoProperty/System.Reflection.StaticGetter`1

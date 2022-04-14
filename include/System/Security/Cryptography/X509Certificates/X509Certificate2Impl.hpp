@@ -70,7 +70,7 @@ namespace System::Security::Cryptography::X509Certificates {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Reset();
     // protected System.Void .ctor()
-    // Offset: 0xAC4B60
+    // Offset: 0xC5017C
     // Implemented from: System.Security.Cryptography.X509Certificates.X509CertificateImpl
     // Base method: System.Void X509CertificateImpl::.ctor()
     // Base method: System.Void Object::.ctor()

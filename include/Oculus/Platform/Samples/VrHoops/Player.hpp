@@ -53,15 +53,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class Player : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt32 m_score
     // Size: 0x4
     // Offset: 0x18
@@ -128,48 +120,48 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.Single RESPAWN_SECONDS
     static void _set_RESPAWN_SECONDS(float value);
     // Get instance field reference: private System.UInt32 m_score
-    uint& dyn_m_score();
+    [[deprecated]] uint& dyn_m_score();
     // Get instance field reference: private UnityEngine.UI.Text m_scoreUI
-    ::UnityEngine::UI::Text*& dyn_m_scoreUI();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_scoreUI();
     // Get instance field reference: private UnityEngine.GameObject m_ballPrefab
-    ::UnityEngine::GameObject*& dyn_m_ballPrefab();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_ballPrefab();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.BallEjector m_ballEjector
-    ::Oculus::Platform::Samples::VrHoops::BallEjector*& dyn_m_ballEjector();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::BallEjector*& dyn_m_ballEjector();
     // Get instance field reference: private System.Collections.Generic.Queue`1<UnityEngine.GameObject> m_balls
-    ::System::Collections::Generic::Queue_1<::UnityEngine::GameObject*>*& dyn_m_balls();
+    [[deprecated]] ::System::Collections::Generic::Queue_1<::UnityEngine::GameObject*>*& dyn_m_balls();
     // Get instance field reference: private UnityEngine.GameObject m_heldBall
-    ::UnityEngine::GameObject*& dyn_m_heldBall();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_heldBall();
     // Get instance field reference: private System.Single m_nextSpawnTime
-    float& dyn_m_nextSpawnTime();
+    [[deprecated]] float& dyn_m_nextSpawnTime();
     // public System.UInt32 get_Score()
-    // Offset: 0x11456C0
+    // Offset: 0x17125BC
     uint get_Score();
     // public System.Void set_Score(System.UInt32 value)
-    // Offset: 0x11456C8
+    // Offset: 0x17125C4
     void set_Score(uint value);
     // public System.Void set_BallPrefab(UnityEngine.GameObject value)
-    // Offset: 0x1145788
+    // Offset: 0x1712684
     void set_BallPrefab(::UnityEngine::GameObject* value);
     // protected System.Boolean get_HasBall()
-    // Offset: 0x1145790
+    // Offset: 0x171268C
     bool get_HasBall();
     // private System.Void Start()
-    // Offset: 0x11457FC
+    // Offset: 0x17126F8
     void Start();
     // public UnityEngine.GameObject CreateBall()
-    // Offset: 0x11458C4
+    // Offset: 0x17127C0
     ::UnityEngine::GameObject* CreateBall();
     // protected UnityEngine.GameObject CheckSpawnBall()
-    // Offset: 0x1145AE8
+    // Offset: 0x17129E4
     ::UnityEngine::GameObject* CheckSpawnBall();
     // protected UnityEngine.GameObject ShootBall()
-    // Offset: 0x1145B68
+    // Offset: 0x1712A64
     ::UnityEngine::GameObject* ShootBall();
     // private System.Void OnDestroy()
-    // Offset: 0x1145CAC
+    // Offset: 0x1712BA8
     void OnDestroy();
     // protected System.Void .ctor()
-    // Offset: 0x1145E04
+    // Offset: 0x1712D00
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -30,15 +30,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PlayBehaviourNode : public ::VROSC::IntNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardPlayer/VROSC.PlayBehaviour _playBehaviour
     // Size: 0x4
     // Offset: 0x30
@@ -47,15 +39,15 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteBoardPlayer::PlayBehaviour) == 0x4);
     public:
     // Get instance field reference: private VROSC.NoteBoardPlayer/VROSC.PlayBehaviour _playBehaviour
-    ::VROSC::NoteBoardPlayer::PlayBehaviour& dyn__playBehaviour();
+    [[deprecated]] ::VROSC::NoteBoardPlayer::PlayBehaviour& dyn__playBehaviour();
     // public VROSC.NoteBoardPlayer/VROSC.PlayBehaviour get_PlayBehaviour()
-    // Offset: 0x8FB734
+    // Offset: 0xADFECC
     ::VROSC::NoteBoardPlayer::PlayBehaviour get_PlayBehaviour();
     // public System.Void set_PlayBehaviour(VROSC.NoteBoardPlayer/VROSC.PlayBehaviour value)
-    // Offset: 0x8FB73C
+    // Offset: 0xADFED4
     void set_PlayBehaviour(::VROSC::NoteBoardPlayer::PlayBehaviour value);
     // public System.Void .ctor()
-    // Offset: 0x8FB794
+    // Offset: 0xADFF2C
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -70,12 +62,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<PlayBehaviourNode*, creationType>()));
     }
     // protected override System.Void OnValidate()
-    // Offset: 0x8FB748
+    // Offset: 0xADFEE0
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::OnValidate()
     void OnValidate();
     // protected override System.Int32 SetValueInRange(System.Int32 value)
-    // Offset: 0x8FB76C
+    // Offset: 0xADFF04
     // Implemented from: VROSC.IntNode
     // Base method: System.Int32 IntNode::SetValueInRange(System.Int32 value)
     int SetValueInRange(int value);

@@ -30,15 +30,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRNativeBuffer : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean disposed
     // Size: 0x1
     // Offset: 0x10
@@ -65,41 +57,41 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Boolean disposed
-    bool& dyn_disposed();
+    [[deprecated]] bool& dyn_disposed();
     // Get instance field reference: private System.Int32 m_numBytes
-    int& dyn_m_numBytes();
+    [[deprecated]] int& dyn_m_numBytes();
     // Get instance field reference: private System.IntPtr m_ptr
-    ::System::IntPtr& dyn_m_ptr();
+    [[deprecated]] ::System::IntPtr& dyn_m_ptr();
     // public System.Void .ctor(System.Int32 numBytes)
-    // Offset: 0xB24380
+    // Offset: 0xE24B00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRNativeBuffer* New_ctor(int numBytes) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRNativeBuffer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRNativeBuffer*, creationType>(numBytes)));
     }
     // public System.Void Reset(System.Int32 numBytes)
-    // Offset: 0xB24534
+    // Offset: 0xE24CB4
     void Reset(int numBytes);
     // public System.Int32 GetCapacity()
-    // Offset: 0xB24538
+    // Offset: 0xE24CB8
     int GetCapacity();
     // public System.IntPtr GetPointer(System.Int32 byteOffset)
-    // Offset: 0xB24540
+    // Offset: 0xE24CC0
     ::System::IntPtr GetPointer(int byteOffset);
     // public System.Void Dispose()
-    // Offset: 0xB245D0
+    // Offset: 0xE24D50
     void Dispose();
     // private System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xB24500
+    // Offset: 0xE24C80
     void Dispose(bool disposing);
     // private System.Void Reallocate(System.Int32 numBytes)
-    // Offset: 0xB243E0
+    // Offset: 0xE24B60
     void Reallocate(int numBytes);
     // private System.Void Release()
-    // Offset: 0xB2464C
+    // Offset: 0xE24DCC
     void Release();
     // protected override System.Void Finalize()
-    // Offset: 0xB24484
+    // Offset: 0xE24C04
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

@@ -83,10 +83,10 @@ namespace VROSC {
     // Set static field: static private System.Random rng
     static void _set_rng(::System::Random* value);
     // static private System.Void .cctor()
-    // Offset: 0x91AAC0
+    // Offset: 0xC65D7C
     static void _cctor();
     // static public System.Int32 GetHashCodeFromFields(System.Object obj, params System.Object[] fields)
-    // Offset: 0x91850C
+    // Offset: 0xC63A8C
     static int GetHashCodeFromFields(::Il2CppObject* obj, ::ArrayW<::Il2CppObject*> fields);
     // static public System.Void Shuffle(System.Collections.Generic.IList`1<T> list)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -98,64 +98,64 @@ namespace VROSC {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, list);
     }
     // static public UnityEngine.Vector3 Multiply(UnityEngine.Vector3 vector, UnityEngine.Vector3 factor)
-    // Offset: 0x9185A0
+    // Offset: 0xC5B510
     static ::UnityEngine::Vector3 Multiply(::UnityEngine::Vector3 vector, ::UnityEngine::Vector3 factor);
     // static public UnityEngine.Vector3 Max(UnityEngine.Vector3 v1, UnityEngine.Vector3 v2)
-    // Offset: 0x9185B0
+    // Offset: 0xC63B20
     static ::UnityEngine::Vector3 Max(::UnityEngine::Vector3 v1, ::UnityEngine::Vector3 v2);
     // static public System.Void Reset(UnityEngine.Transform transform)
-    // Offset: 0x918628
+    // Offset: 0xC63B98
     static void Reset(::UnityEngine::Transform* transform);
     // static public System.Boolean IsPointInside(UnityEngine.Transform transform, UnityEngine.Vector3 worldPosition, UnityEngine.Vector3 size)
-    // Offset: 0x918684
+    // Offset: 0xC63BF4
     static bool IsPointInside(::UnityEngine::Transform* transform, ::UnityEngine::Vector3 worldPosition, ::UnityEngine::Vector3 size);
     // static public VROSC.Scale TransposeScale(VROSC.Scale scale, System.Int32 steps)
-    // Offset: 0x9186FC
+    // Offset: 0xC63C6C
     static ::VROSC::Scale TransposeScale(::VROSC::Scale scale, int steps);
     // static public VROSC.Scale GetStrippedScale(VROSC.Scale scale, VROSC.Note baseNote, System.Int32 numberOfNotesToDrop, System.Boolean keepBase)
-    // Offset: 0x918804
+    // Offset: 0xC63D74
     static ::VROSC::Scale GetStrippedScale(::VROSC::Scale scale, ::VROSC::Note baseNote, int numberOfNotesToDrop, bool keepBase);
     // static public VROSC.Scale ConstructStrippedScale(VROSC.ScalePreset scalePreset, System.Int32 noteCount, VROSC.Note key)
-    // Offset: 0x918B90
+    // Offset: 0xC64100
     static ::VROSC::Scale ConstructStrippedScale(::VROSC::ScalePreset* scalePreset, int noteCount, ::VROSC::Note key);
     // static public VROSC.Scale FitNotesToScale(VROSC.Scale notes, VROSC.Scale oldScale, VROSC.Note oldKey, VROSC.Scale newScale, VROSC.Note newKey)
-    // Offset: 0x919050
+    // Offset: 0xC645C0
     static ::VROSC::Scale FitNotesToScale(::VROSC::Scale notes, ::VROSC::Scale oldScale, ::VROSC::Note oldKey, ::VROSC::Scale newScale, ::VROSC::Note newKey);
     // static public System.Int32 NoteCount(VROSC.Scale scale)
-    // Offset: 0x91992C
+    // Offset: 0xC64E9C
     static int NoteCount(::VROSC::Scale scale);
     // static public VROSC.Note GetRandomNote(VROSC.Scale scale)
-    // Offset: 0x9199E4
+    // Offset: 0xC64F54
     static ::VROSC::Note GetRandomNote(::VROSC::Scale scale);
     // static public System.Boolean ContainsNote(VROSC.Scale scale, VROSC.Note note)
-    // Offset: 0x918B10
+    // Offset: 0xC64080
     static bool ContainsNote(::VROSC::Scale scale, ::VROSC::Note note);
     // static public System.Int32 GetOffsetNote(System.Int32 note, VROSC.Scale scale, System.Int32 offsetSteps, System.Boolean avoidTritone)
-    // Offset: 0x919C04
+    // Offset: 0xC57CCC
     static int GetOffsetNote(int note, ::VROSC::Scale scale, int offsetSteps, bool avoidTritone);
     // static public System.Boolean GetNearestNote(VROSC.Note note, System.Collections.Generic.List`1<VROSC.Scale> insideScales, System.Collections.Generic.List`1<VROSC.Scale> outsideScales, out VROSC.Note nearestNote)
-    // Offset: 0x9194EC
+    // Offset: 0xC64A5C
     static bool GetNearestNote(::VROSC::Note note, ::System::Collections::Generic::List_1<::VROSC::Scale>* insideScales, ::System::Collections::Generic::List_1<::VROSC::Scale>* outsideScales, ByRef<::VROSC::Note> nearestNote);
     // static public VROSC.Note GetRandomNote()
-    // Offset: 0x919E50
+    // Offset: 0xC65208
     static ::VROSC::Note GetRandomNote();
     // static public VROSC.Note GetNote(System.Int32 noteNumber)
-    // Offset: 0x919DBC
+    // Offset: 0xC65174
     static ::VROSC::Note GetNote(int noteNumber);
     // static public System.String GetNoteAndOctave(System.Int32 noteNumber)
-    // Offset: 0x919E60
+    // Offset: 0xC572E8
     static ::StringW GetNoteAndOctave(int noteNumber);
     // static public System.Int32 ToBitMask(VROSC.Note note)
-    // Offset: 0x918B5C
+    // Offset: 0xC640CC
     static int ToBitMask(::VROSC::Note note);
     // static public VROSC.Note Transpose(VROSC.Note note, VROSC.Note fromKey, VROSC.Note toKey)
-    // Offset: 0x918FDC
+    // Offset: 0xC6454C
     static ::VROSC::Note Transpose(::VROSC::Note note, ::VROSC::Note fromKey, ::VROSC::Note toKey);
     // static public System.String ConvertToSentence(System.String text, System.Boolean preserveAcronyms)
-    // Offset: 0x919F5C
+    // Offset: 0xC65218
     static ::StringW ConvertToSentence(::StringW text, bool preserveAcronyms);
     // static public System.Void DrawGizmoWireBox(UnityEngine.Transform transform, UnityEngine.Vector3 size)
-    // Offset: 0x91A1F0
+    // Offset: 0xC654AC
     static void DrawGizmoWireBox(::UnityEngine::Transform* transform, ::UnityEngine::Vector3 size);
     // static public T DeepClone(T original)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -167,28 +167,28 @@ namespace VROSC {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original);
     }
     // static public System.Int32 Modulo(System.Int32 value, System.Int32 mod)
-    // Offset: 0x9187E0
+    // Offset: 0xC63D50
     static int Modulo(int value, int mod);
     // static public System.Single Modulo(System.Single value, System.Single mod)
-    // Offset: 0x91A53C
+    // Offset: 0xC657F8
     static float Modulo(float value, float mod);
     // static public System.Single LinearToDb(System.Single linearVolume, System.Single minDb)
-    // Offset: 0x91A564
+    // Offset: 0xC65820
     static float LinearToDb(float linearVolume, float minDb);
     // static public System.Single GetNormalizeMultiplier(System.Single[] audioData, System.Int32 startIndex, System.Int32 endIndex)
-    // Offset: 0x91A594
+    // Offset: 0xC65850
     static float GetNormalizeMultiplier(::ArrayW<float> audioData, int startIndex, int endIndex);
     // static public System.Void DenormalizeSamples(System.Single[] audioData, System.Single normalizeMultiplier, System.Int32 startIndex, System.Int32 endIndex)
-    // Offset: 0x91A610
+    // Offset: 0xC658CC
     static void DenormalizeSamples(::ArrayW<float> audioData, float normalizeMultiplier, int startIndex, int endIndex);
     // static public System.Void GetTrimSilenceValues(System.Single[] audioData, out System.Int32 startValue, out System.Int32 endValue, System.Int32 lastSample)
-    // Offset: 0x91A688
+    // Offset: 0xC65944
     static void GetTrimSilenceValues(::ArrayW<float> audioData, ByRef<int> startValue, ByRef<int> endValue, int lastSample);
     // static public System.Single[] TrimSilence(System.Single[] audioData, System.Single gateValue)
-    // Offset: 0x91A768
+    // Offset: 0xC65A24
     static ::ArrayW<float> TrimSilence(::ArrayW<float> audioData, float gateValue);
     // static public System.String FormatTimeFraction(System.Single elapsedTime, System.Single totalTime)
-    // Offset: 0x91A854
+    // Offset: 0xC65B10
     static ::StringW FormatTimeFraction(float elapsedTime, float totalTime);
     // static public System.Void LeftShiftArray(T[] arr, System.Int32 shift)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -200,7 +200,7 @@ namespace VROSC {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, arr, shift);
     }
     // static public System.Single SemitoneShiftToPitchFraction(System.Int32 semitone)
-    // Offset: 0x91AAB0
+    // Offset: 0xC65D6C
     static float SemitoneShiftToPitchFraction(int semitone);
   }; // VROSC.ObjectExtensions
   #pragma pack(pop)

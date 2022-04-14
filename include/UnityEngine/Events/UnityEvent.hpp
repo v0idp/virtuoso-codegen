@@ -51,15 +51,7 @@ namespace UnityEngine::Events {
     public:
     // Writing base type padding for base size: 0x21 to desired offset: 0x28
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Object[] m_InvokeArray
     // Size: 0x8
     // Offset: 0x28
@@ -72,21 +64,21 @@ namespace UnityEngine::Events {
       return m_InvokeArray;
     }
     // Get instance field reference: private System.Object[] m_InvokeArray
-    ::ArrayW<::Il2CppObject*>& dyn_m_InvokeArray();
+    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_m_InvokeArray();
     // public System.Void AddListener(UnityEngine.Events.UnityAction call)
-    // Offset: 0x1248908
+    // Offset: 0x183CAD4
     void AddListener(::UnityEngine::Events::UnityAction* call);
     // public System.Void RemoveListener(UnityEngine.Events.UnityAction call)
-    // Offset: 0x12489C0
+    // Offset: 0x183CB8C
     void RemoveListener(::UnityEngine::Events::UnityAction* call);
     // static private UnityEngine.Events.BaseInvokableCall GetDelegate(UnityEngine.Events.UnityAction action)
-    // Offset: 0x1248944
+    // Offset: 0x183CB10
     static ::UnityEngine::Events::BaseInvokableCall* GetDelegate(::UnityEngine::Events::UnityAction* action);
     // public System.Void Invoke()
-    // Offset: 0x1248CB0
+    // Offset: 0x183CE7C
     void Invoke();
     // public System.Void .ctor()
-    // Offset: 0x1248864
+    // Offset: 0x183CA30
     // Implemented from: UnityEngine.Events.UnityEventBase
     // Base method: System.Void UnityEventBase::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -96,12 +88,12 @@ namespace UnityEngine::Events {
       return THROW_UNLESS((::il2cpp_utils::New<UnityEvent*, creationType>()));
     }
     // protected override System.Reflection.MethodInfo FindMethod_Impl(System.String name, System.Type targetObjType)
-    // Offset: 0x1248A28
+    // Offset: 0x183CBF4
     // Implemented from: UnityEngine.Events.UnityEventBase
     // Base method: System.Reflection.MethodInfo UnityEventBase::FindMethod_Impl(System.String name, System.Type targetObjType)
     ::System::Reflection::MethodInfo* FindMethod_Impl(::StringW name, ::System::Type* targetObjType);
     // override UnityEngine.Events.BaseInvokableCall GetDelegate(System.Object target, System.Reflection.MethodInfo theFunction)
-    // Offset: 0x1248C40
+    // Offset: 0x183CE0C
     // Implemented from: UnityEngine.Events.UnityEventBase
     // Base method: UnityEngine.Events.BaseInvokableCall UnityEventBase::GetDelegate(System.Object target, System.Reflection.MethodInfo theFunction)
     ::UnityEngine::Events::BaseInvokableCall* GetDelegate(::Il2CppObject* target, ::System::Reflection::MethodInfo* theFunction);

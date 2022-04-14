@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TextDisplay : public ::VROSC::Node {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.TextMesh _textMesh
     // Size: 0x8
     // Offset: 0x18
@@ -55,18 +47,18 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.TextMesh _textMesh
-    ::UnityEngine::TextMesh*& dyn__textMesh();
+    [[deprecated]] ::UnityEngine::TextMesh*& dyn__textMesh();
     // protected System.Void Start()
-    // Offset: 0x13FCC2C
+    // Offset: 0xA24C2C
     void Start();
     // protected System.Void InitDisplay()
-    // Offset: 0x13FCC38
+    // Offset: 0xA24C38
     void InitDisplay();
     // protected System.Void UpdateDisplay(System.String newText)
-    // Offset: 0x13FCC8C
+    // Offset: 0xA24C8C
     void UpdateDisplay(::StringW newText);
     // public System.Void .ctor()
-    // Offset: 0x13FCD30
+    // Offset: 0xA24D30
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

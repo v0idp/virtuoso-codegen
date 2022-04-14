@@ -35,20 +35,20 @@ namespace Firebase::Firestore {
   class Future_QuerySnapshot::SWIG_CompletionDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xC3D55C
+    // Offset: 0xD61384
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Future_QuerySnapshot::SWIG_CompletionDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Future_QuerySnapshot::SWIG_CompletionDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Future_QuerySnapshot::SWIG_CompletionDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Int32 index)
-    // Offset: 0xC44778
+    // Offset: 0xD6923C
     void Invoke(int index);
     // public System.IAsyncResult BeginInvoke(System.Int32 index, System.AsyncCallback callback, System.Object object)
-    // Offset: 0xC449A4
+    // Offset: 0xD69468
     ::System::IAsyncResult* BeginInvoke(int index, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xC44A2C
+    // Offset: 0xD694F0
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Firestore.Future_QuerySnapshot/Firebase.Firestore.SWIG_CompletionDelegate
   #pragma pack(pop)

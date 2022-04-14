@@ -60,7 +60,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarAssetLevelOfDetail Highest
     static void _set_Highest(::GlobalNamespace::ovrAvatarAssetLevelOfDetail value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // ovrAvatarAssetLevelOfDetail
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarAssetLevelOfDetail), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarAssetLevelOfDetailSizeCheck;

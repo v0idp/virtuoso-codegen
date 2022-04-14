@@ -37,15 +37,7 @@ namespace VROSC::AudioReactive {
     public:
     // Writing base type padding for base size: 0x24 to desired offset: 0x28
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.RotateEffect _rotationAnimation
     // Size: 0x8
     // Offset: 0x28
@@ -54,12 +46,12 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::RotateEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.RotateEffect _rotationAnimation
-    ::VROSC::AudioReactive::RotateEffect*& dyn__rotationAnimation();
+    [[deprecated]] ::VROSC::AudioReactive::RotateEffect*& dyn__rotationAnimation();
     // public VROSC.AudioReactive.RotateEffect get_RotateAnimation()
-    // Offset: 0xB00E14
+    // Offset: 0xB37670
     ::VROSC::AudioReactive::RotateEffect* get_RotateAnimation();
     // public System.Void .ctor()
-    // Offset: 0xB00E90
+    // Offset: 0xB376EC
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -73,12 +65,12 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<RotateOnBeat*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0xB00E1C
+    // Offset: 0xB37678
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::Awake()
     void Awake();
     // protected override System.Void OnBeat(System.Int32 beat)
-    // Offset: 0xB00E58
+    // Offset: 0xB376B4
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::OnBeat(System.Int32 beat)
     void OnBeat(int beat);

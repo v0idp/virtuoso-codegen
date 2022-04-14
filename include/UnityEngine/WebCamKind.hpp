@@ -66,7 +66,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.WebCamKind UltraWideAngle
     static void _set_UltraWideAngle(::UnityEngine::WebCamKind value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.WebCamKind
   #pragma pack(pop)
   static check_size<sizeof(WebCamKind), 0 + sizeof(int)> __UnityEngine_WebCamKindSizeCheck;

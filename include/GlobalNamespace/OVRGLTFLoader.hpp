@@ -76,15 +76,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::OVRGLTFLoader::$$c__DisplayClass16_0
     class $$c__DisplayClass16_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private OVRSimpleJSON.JSONNode m_jsonData
     // Size: 0x8
     // Offset: 0x10
@@ -125,73 +117,73 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Vector3 GLTFToUnityTangent
     static void _set_GLTFToUnityTangent(::UnityEngine::Vector3 value);
     // Get instance field reference: private OVRSimpleJSON.JSONNode m_jsonData
-    ::OVRSimpleJSON::JSONNode*& dyn_m_jsonData();
+    [[deprecated]] ::OVRSimpleJSON::JSONNode*& dyn_m_jsonData();
     // Get instance field reference: private System.IO.Stream m_glbStream
-    ::System::IO::Stream*& dyn_m_glbStream();
+    [[deprecated]] ::System::IO::Stream*& dyn_m_glbStream();
     // Get instance field reference: private OVRBinaryChunk m_binaryChunk
-    ::GlobalNamespace::OVRBinaryChunk& dyn_m_binaryChunk();
+    [[deprecated]] ::GlobalNamespace::OVRBinaryChunk& dyn_m_binaryChunk();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> m_Nodes
-    ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_m_Nodes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_m_Nodes();
     // Get instance field reference: private UnityEngine.Shader m_Shader
-    ::UnityEngine::Shader*& dyn_m_Shader();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_m_Shader();
     // public System.Void .ctor(System.String fileName)
-    // Offset: 0xD2AAA4
+    // Offset: 0xFB83F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRGLTFLoader* New_ctor(::StringW fileName) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGLTFLoader::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRGLTFLoader*, creationType>(fileName)));
     }
     // public System.Void .ctor(System.Byte[] data)
-    // Offset: 0xD2AAE0
+    // Offset: 0xFB8434
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRGLTFLoader* New_ctor(::ArrayW<uint8_t> data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGLTFLoader::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRGLTFLoader*, creationType>(data)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xD2E360
+    // Offset: 0xFBBCB4
     static void _cctor();
     // public OVRGLTFScene LoadGLB()
-    // Offset: 0xD2AB70
+    // Offset: 0xFB84C4
     ::GlobalNamespace::OVRGLTFScene LoadGLB();
     // public System.Void SetModelShader(UnityEngine.Shader shader)
-    // Offset: 0xD2B610
+    // Offset: 0xFB8F64
     void SetModelShader(::UnityEngine::Shader* shader);
     // private System.Boolean ValidateGLB(System.IO.Stream glbStream)
-    // Offset: 0xD2AE08
+    // Offset: 0xFB875C
     bool ValidateGLB(::System::IO::Stream* glbStream);
     // private System.Byte[] ReadChunk(System.IO.Stream glbStream, OVRChunkType type)
-    // Offset: 0xD2B054
+    // Offset: 0xFB89A8
     ::ArrayW<uint8_t> ReadChunk(::System::IO::Stream* glbStream, ::GlobalNamespace::OVRChunkType type);
     // private System.Boolean ValidateChunk(System.IO.Stream glbStream, OVRChunkType type, out System.UInt32 chunkLength)
-    // Offset: 0xD2B104
+    // Offset: 0xFB8A58
     bool ValidateChunk(::System::IO::Stream* glbStream, ::GlobalNamespace::OVRChunkType type, ByRef<uint> chunkLength);
     // private System.Void LoadGLTF()
-    // Offset: 0xD2B260
+    // Offset: 0xFB8BB4
     void LoadGLTF();
     // private System.Void ProcessNode(OVRSimpleJSON.JSONNode node, System.Int32 nodeId)
-    // Offset: 0xD2B618
+    // Offset: 0xFB8F6C
     void ProcessNode(::OVRSimpleJSON::JSONNode* node, int nodeId);
     // private OVRMeshData ProcessMesh(OVRSimpleJSON.JSONNode meshNode)
-    // Offset: 0xD2BF54
+    // Offset: 0xFB98A8
     ::GlobalNamespace::OVRMeshData ProcessMesh(::OVRSimpleJSON::JSONNode* meshNode);
     // static private System.Void FlipTraingleIndices(ref System.Int32[] indices)
-    // Offset: 0xD2E13C
+    // Offset: 0xFBBA90
     static void FlipTraingleIndices(ByRef<::ArrayW<int>> indices);
     // private System.Void ProcessSkin(OVRSimpleJSON.JSONNode skinNode, UnityEngine.SkinnedMeshRenderer renderer)
-    // Offset: 0xD2D5F0
+    // Offset: 0xFBAF44
     void ProcessSkin(::OVRSimpleJSON::JSONNode* skinNode, ::UnityEngine::SkinnedMeshRenderer* renderer);
     // private OVRMaterialData ProcessMaterial(System.Int32 matId)
-    // Offset: 0xD2DAE4
+    // Offset: 0xFBB438
     ::GlobalNamespace::OVRMaterialData ProcessMaterial(int matId);
     // private OVRTextureData ProcessTexture(System.Int32 textureId)
-    // Offset: 0xD2DCF8
+    // Offset: 0xFBB64C
     ::GlobalNamespace::OVRTextureData ProcessTexture(int textureId);
     // private System.Void TranscodeTexture(ref OVRTextureData textureData)
-    // Offset: 0xD2E2C4
+    // Offset: 0xFBBC18
     void TranscodeTexture(ByRef<::GlobalNamespace::OVRTextureData> textureData);
     // private UnityEngine.Material CreateUnityMaterial(OVRMaterialData matData)
-    // Offset: 0xD2E1C4
+    // Offset: 0xFBBB18
     ::UnityEngine::Material* CreateUnityMaterial(::GlobalNamespace::OVRMaterialData matData);
   }; // OVRGLTFLoader
   #pragma pack(pop)

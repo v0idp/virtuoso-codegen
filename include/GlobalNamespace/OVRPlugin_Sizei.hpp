@@ -52,22 +52,22 @@ namespace GlobalNamespace {
     // Set static field: static public readonly OVRPlugin/Sizei zero
     static void _set_zero(::GlobalNamespace::OVRPlugin::Sizei value);
     // Get instance field reference: public System.Int32 w
-    int& dyn_w();
+    [[deprecated]] int& dyn_w();
     // Get instance field reference: public System.Int32 h
-    int& dyn_h();
+    [[deprecated]] int& dyn_h();
     // static private System.Void .cctor()
-    // Offset: 0xF13F34
+    // Offset: 0x13EDF30
     static void _cctor();
     // public System.Boolean Equals(OVRPlugin/Sizei other)
-    // Offset: 0xF13E64
+    // Offset: 0x13EDE60
     bool Equals(::GlobalNamespace::OVRPlugin::Sizei other);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xF13E8C
+    // Offset: 0x13EDE88
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xF13F20
+    // Offset: 0x13EDF1C
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

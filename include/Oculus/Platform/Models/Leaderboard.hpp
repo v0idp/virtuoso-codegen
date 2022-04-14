@@ -36,15 +36,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class Leaderboard : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String ApiName
     // Size: 0x8
     // Offset: 0x10
@@ -57,7 +49,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::Destination* DestinationOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::Destination*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A51EC
+    // [ObsoleteAttribute] Offset: 0x6B93A0
     // public readonly Oculus.Platform.Models.Destination Destination
     // Size: 0x8
     // Offset: 0x20
@@ -72,15 +64,15 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(uint64_t) == 0x8);
     public:
     // Get instance field reference: public readonly System.String ApiName
-    ::StringW& dyn_ApiName();
+    [[deprecated]] ::StringW& dyn_ApiName();
     // Get instance field reference: public readonly Oculus.Platform.Models.Destination DestinationOptional
-    ::Oculus::Platform::Models::Destination*& dyn_DestinationOptional();
+    [[deprecated]] ::Oculus::Platform::Models::Destination*& dyn_DestinationOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.Destination Destination
-    ::Oculus::Platform::Models::Destination*& dyn_Destination();
+    [[deprecated]] ::Oculus::Platform::Models::Destination*& dyn_Destination();
     // Get instance field reference: public readonly System.UInt64 ID
-    uint64_t& dyn_ID();
+    [[deprecated]] uint64_t& dyn_ID();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x968EB8
+    // Offset: 0xB3B254
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Leaderboard* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::Leaderboard::.ctor");

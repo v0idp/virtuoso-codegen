@@ -30,15 +30,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class QuerySnapshotProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -57,27 +49,27 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC3D9B4
+    // Offset: 0xD617C4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static QuerySnapshotProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::QuerySnapshotProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<QuerySnapshotProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.QuerySnapshotProxy obj)
-    // Offset: 0xC395A0
+    // Offset: 0xD5BD28
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::QuerySnapshotProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC3F098
+    // Offset: 0xD63698
     void Dispose();
     // public System.UInt32 size()
-    // Offset: 0xC3F228
+    // Offset: 0xD63828
     uint size();
     // protected override System.Void Finalize()
-    // Offset: 0xC3F028
+    // Offset: 0xD63628
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

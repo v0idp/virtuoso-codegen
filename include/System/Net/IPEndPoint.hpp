@@ -45,15 +45,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class IPEndPoint : public ::System::Net::EndPoint {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.IPAddress m_Address
     // Size: 0x8
     // Offset: 0x10
@@ -94,59 +86,59 @@ namespace System::Net {
     // Set static field: static System.Net.IPEndPoint IPv6Any
     static void _set_IPv6Any(::System::Net::IPEndPoint* value);
     // Get instance field reference: private System.Net.IPAddress m_Address
-    ::System::Net::IPAddress*& dyn_m_Address();
+    [[deprecated]] ::System::Net::IPAddress*& dyn_m_Address();
     // Get instance field reference: private System.Int32 m_Port
-    int& dyn_m_Port();
+    [[deprecated]] int& dyn_m_Port();
     // public System.Net.IPAddress get_Address()
-    // Offset: 0xD95338
+    // Offset: 0x10F3318
     ::System::Net::IPAddress* get_Address();
     // public System.Int32 get_Port()
-    // Offset: 0xD95340
+    // Offset: 0x10F3320
     int get_Port();
     // public System.Void .ctor(System.Int64 address, System.Int32 port)
-    // Offset: 0xD95238
+    // Offset: 0x10F3108
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IPEndPoint* New_ctor(int64_t address, int port) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::IPEndPoint::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<IPEndPoint*, creationType>(address, port)));
     }
     // public System.Void .ctor(System.Net.IPAddress address, System.Int32 port)
-    // Offset: 0xD8798C
+    // Offset: 0x10F3208
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IPEndPoint* New_ctor(::System::Net::IPAddress* address, int port) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::IPEndPoint::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<IPEndPoint*, creationType>(address, port)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xD958B4
+    // Offset: 0x10F3894
     static void _cctor();
     // public override System.Net.Sockets.AddressFamily get_AddressFamily()
-    // Offset: 0xD9521C
+    // Offset: 0x10F30EC
     // Implemented from: System.Net.EndPoint
     // Base method: System.Net.Sockets.AddressFamily EndPoint::get_AddressFamily()
     ::System::Net::Sockets::AddressFamily get_AddressFamily();
     // public override System.String ToString()
-    // Offset: 0xD95348
+    // Offset: 0x10F3328
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();
     // public override System.Net.SocketAddress Serialize()
-    // Offset: 0xD9540C
+    // Offset: 0x10F33EC
     // Implemented from: System.Net.EndPoint
     // Base method: System.Net.SocketAddress EndPoint::Serialize()
     ::System::Net::SocketAddress* Serialize();
     // public override System.Net.EndPoint Create(System.Net.SocketAddress socketAddress)
-    // Offset: 0xD95480
+    // Offset: 0x10F3460
     // Implemented from: System.Net.EndPoint
     // Base method: System.Net.EndPoint EndPoint::Create(System.Net.SocketAddress socketAddress)
     ::System::Net::EndPoint* Create(::System::Net::SocketAddress* socketAddress);
     // public override System.Boolean Equals(System.Object comparand)
-    // Offset: 0xD9578C
+    // Offset: 0x10F376C
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object comparand)
     bool Equals(::Il2CppObject* comparand);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xD95878
+    // Offset: 0x10F3858
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();

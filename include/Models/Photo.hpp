@@ -27,15 +27,7 @@ namespace Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class Photo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 albumId
     // Size: 0x4
     // Offset: 0x10
@@ -68,17 +60,17 @@ namespace Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Int32 albumId
-    int& dyn_albumId();
+    [[deprecated]] int& dyn_albumId();
     // Get instance field reference: public System.Int32 id
-    int& dyn_id();
+    [[deprecated]] int& dyn_id();
     // Get instance field reference: public System.String title
-    ::StringW& dyn_title();
+    [[deprecated]] ::StringW& dyn_title();
     // Get instance field reference: public System.String url
-    ::StringW& dyn_url();
+    [[deprecated]] ::StringW& dyn_url();
     // Get instance field reference: public System.String thumbnailUrl
-    ::StringW& dyn_thumbnailUrl();
+    [[deprecated]] ::StringW& dyn_thumbnailUrl();
     // public System.Void .ctor()
-    // Offset: 0x8FA0F8
+    // Offset: 0xADE890
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -87,7 +79,7 @@ namespace Models {
       return THROW_UNLESS((::il2cpp_utils::New<Photo*, creationType>()));
     }
     // public override System.String ToString()
-    // Offset: 0x8FA0EC
+    // Offset: 0xADE884
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

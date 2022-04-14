@@ -88,24 +88,24 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebResponseStream <>4__this
-    ::System::Net::WebResponseStream*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebResponseStream*& dyn_$$4__this();
     // Get instance field reference: public System.Net.BufferOffsetSize buffer
-    ::System::Net::BufferOffsetSize*& dyn_buffer();
+    [[deprecated]] ::System::Net::BufferOffsetSize*& dyn_buffer();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.String <me>5__1
-    ::StringW& dyn_$me$5__1();
+    [[deprecated]] ::StringW& dyn_$me$5__1();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x127E7C0
+    // Offset: 0x17CCFD8
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x127F064
+    // Offset: 0x17CD87C
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.Net.WebResponseStream/System.Net.<Initialize>d__56
   // WARNING Not writing size check since size may be invalid!

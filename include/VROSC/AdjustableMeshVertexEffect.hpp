@@ -29,15 +29,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AdjustableMeshVertexEffect : public ::VROSC::AdjustableMeshEffect {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 _scale
     // Size: 0xC
     // Offset: 0x20
@@ -54,14 +46,14 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector3>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _scale
-    ::UnityEngine::Vector3& dyn__scale();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__scale();
     // Get instance field reference: private UnityEngine.Vector3[] _originalPositions
-    ::ArrayW<::UnityEngine::Vector3>& dyn__originalPositions();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__originalPositions();
     // public System.Void SetScale(UnityEngine.Vector3 scale)
-    // Offset: 0x136A458
+    // Offset: 0x968D98
     void SetScale(::UnityEngine::Vector3 scale);
     // public System.Void .ctor()
-    // Offset: 0x136A464
+    // Offset: 0x968DA4
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

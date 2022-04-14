@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PassthroughManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private OVRManager _ovrManager
     // Size: 0x8
     // Offset: 0x18
@@ -79,27 +71,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private OVRManager _ovrManager
-    ::GlobalNamespace::OVRManager*& dyn__ovrManager();
+    [[deprecated]] ::GlobalNamespace::OVRManager*& dyn__ovrManager();
     // Get instance field reference: private OVRPassthroughLayer _passthroughLayer
-    ::GlobalNamespace::OVRPassthroughLayer*& dyn__passthroughLayer();
+    [[deprecated]] ::GlobalNamespace::OVRPassthroughLayer*& dyn__passthroughLayer();
     // Get instance field reference: private UnityEngine.Camera _camera
-    ::UnityEngine::Camera*& dyn__camera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn__camera();
     // Get instance field reference: private System.Boolean <IsToggled>k__BackingField
-    bool& dyn_$IsToggled$k__BackingField();
+    [[deprecated]] bool& dyn_$IsToggled$k__BackingField();
     // public System.Boolean get_IsToggled()
-    // Offset: 0x8F8A84
+    // Offset: 0xADD21C
     bool get_IsToggled();
     // private System.Void set_IsToggled(System.Boolean value)
-    // Offset: 0x8F8A8C
+    // Offset: 0xADD224
     void set_IsToggled(bool value);
     // protected System.Void Awake()
-    // Offset: 0x8F8A98
+    // Offset: 0xADD230
     void Awake();
     // public System.Void TogglePassthrough(System.Boolean active)
-    // Offset: 0x8F8934
+    // Offset: 0xADD0CC
     void TogglePassthrough(bool active);
     // public System.Void .ctor()
-    // Offset: 0x8F8AB8
+    // Offset: 0xADD250
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

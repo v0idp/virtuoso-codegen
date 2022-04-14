@@ -29,7 +29,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   class BallEjector : public ::UnityEngine::MonoBehaviour {
     public:
     // public System.Void .ctor()
-    // Offset: 0x7B63B8
+    // Offset: 0x8FC798
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

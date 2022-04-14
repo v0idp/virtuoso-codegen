@@ -56,15 +56,7 @@ namespace RSG {
     class $$c__DisplayClass3_0;
     // Nested type: ::RSG::PromiseTimer::$$c__DisplayClass4_0
     class $$c__DisplayClass4_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single curTime
     // Size: 0x4
     // Offset: 0x10
@@ -89,34 +81,34 @@ namespace RSG {
       return *reinterpret_cast<::RSG::IPromiseTimer*>(this);
     }
     // Get instance field reference: private System.Single curTime
-    float& dyn_curTime();
+    [[deprecated]] float& dyn_curTime();
     // Get instance field reference: private System.Int32 curFrame
-    int& dyn_curFrame();
+    [[deprecated]] int& dyn_curFrame();
     // Get instance field reference: private readonly System.Collections.Generic.LinkedList`1<RSG.PredicateWait> waiting
-    ::System::Collections::Generic::LinkedList_1<::RSG::PredicateWait*>*& dyn_waiting();
+    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::RSG::PredicateWait*>*& dyn_waiting();
     // public RSG.IPromise WaitFor(System.Single seconds)
-    // Offset: 0x992264
+    // Offset: 0xB29D2C
     ::RSG::IPromise* WaitFor(float seconds);
     // public RSG.IPromise WaitWhile(System.Func`2<RSG.TimeData,System.Boolean> predicate)
-    // Offset: 0x992414
+    // Offset: 0xB29EDC
     ::RSG::IPromise* WaitWhile(::System::Func_2<::RSG::TimeData, bool>* predicate);
     // public RSG.IPromise WaitUntil(System.Func`2<RSG.TimeData,System.Boolean> predicate)
-    // Offset: 0x99233C
+    // Offset: 0xB29E04
     ::RSG::IPromise* WaitUntil(::System::Func_2<::RSG::TimeData, bool>* predicate);
     // public System.Boolean Cancel(RSG.IPromise promise)
-    // Offset: 0x9924E4
+    // Offset: 0xB29FAC
     bool Cancel(::RSG::IPromise* promise);
     // private System.Collections.Generic.LinkedListNode`1<RSG.PredicateWait> FindInWaiting(RSG.IPromise promise)
-    // Offset: 0x992634
+    // Offset: 0xB2A0FC
     ::System::Collections::Generic::LinkedListNode_1<::RSG::PredicateWait*>* FindInWaiting(::RSG::IPromise* promise);
     // public System.Void Update(System.Single deltaTime)
-    // Offset: 0x9927F0
+    // Offset: 0xB2A2B8
     void Update(float deltaTime);
     // private System.Collections.Generic.LinkedListNode`1<RSG.PredicateWait> RemoveNode(System.Collections.Generic.LinkedListNode`1<RSG.PredicateWait> node)
-    // Offset: 0x992B18
+    // Offset: 0xB2A5E0
     ::System::Collections::Generic::LinkedListNode_1<::RSG::PredicateWait*>* RemoveNode(::System::Collections::Generic::LinkedListNode_1<::RSG::PredicateWait*>* node);
     // public System.Void .ctor()
-    // Offset: 0x992BB0
+    // Offset: 0xB2A678
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

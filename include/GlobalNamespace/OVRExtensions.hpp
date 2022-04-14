@@ -59,85 +59,85 @@ namespace GlobalNamespace {
   class OVRExtensions : public ::Il2CppObject {
     public:
     // static public OVRPose ToTrackingSpacePose(UnityEngine.Transform transform, UnityEngine.Camera camera)
-    // Offset: 0xD245AC
+    // Offset: 0xFB1F00
     static ::GlobalNamespace::OVRPose ToTrackingSpacePose(::UnityEngine::Transform* transform, ::UnityEngine::Camera* camera);
     // static public OVRPose ToWorldSpacePose(OVRPose trackingSpacePose)
-    // Offset: 0xD247CC
+    // Offset: 0xFB2120
     static ::GlobalNamespace::OVRPose ToWorldSpacePose(::GlobalNamespace::OVRPose trackingSpacePose);
     // static public OVRPose ToHeadSpacePose(UnityEngine.Transform transform, UnityEngine.Camera camera)
-    // Offset: 0xD24714
+    // Offset: 0xFB2068
     static ::GlobalNamespace::OVRPose ToHeadSpacePose(::UnityEngine::Transform* transform, ::UnityEngine::Camera* camera);
     // static public OVRPose ToOVRPose(UnityEngine.Transform t, System.Boolean isLocal)
-    // Offset: 0xD249A4
+    // Offset: 0xFB22F8
     static ::GlobalNamespace::OVRPose ToOVRPose(::UnityEngine::Transform* t, bool isLocal);
     // static public System.Void FromOVRPose(UnityEngine.Transform t, OVRPose pose, System.Boolean isLocal)
-    // Offset: 0xD24A38
+    // Offset: 0xFB238C
     static void FromOVRPose(::UnityEngine::Transform* t, ::GlobalNamespace::OVRPose pose, bool isLocal);
     // static public OVRPose ToOVRPose(OVRPlugin/Posef p)
-    // Offset: 0xD24ABC
+    // Offset: 0xFB2410
     static ::GlobalNamespace::OVRPose ToOVRPose(::GlobalNamespace::OVRPlugin::Posef p);
     // static public OVRTracker/Frustum ToFrustum(OVRPlugin/Frustumf f)
-    // Offset: 0xD24B24
+    // Offset: 0xFB2478
     static ::GlobalNamespace::OVRTracker::Frustum ToFrustum(::GlobalNamespace::OVRPlugin::Frustumf f);
     // static public UnityEngine.Color FromColorf(OVRPlugin/Colorf c)
-    // Offset: 0xD24B38
+    // Offset: 0xFB248C
     static ::UnityEngine::Color FromColorf(::GlobalNamespace::OVRPlugin::Colorf c);
     // static public OVRPlugin/Colorf ToColorf(UnityEngine.Color c)
-    // Offset: 0xD24B3C
+    // Offset: 0xFB2490
     static ::GlobalNamespace::OVRPlugin::Colorf ToColorf(::UnityEngine::Color c);
     // static public UnityEngine.Vector3 FromVector3f(OVRPlugin/Vector3f v)
-    // Offset: 0xD24B40
+    // Offset: 0xFB2494
     static ::UnityEngine::Vector3 FromVector3f(::GlobalNamespace::OVRPlugin::Vector3f v);
     // static public UnityEngine.Vector3 FromFlippedXVector3f(OVRPlugin/Vector3f v)
-    // Offset: 0xD24B44
+    // Offset: 0xFB2498
     static ::UnityEngine::Vector3 FromFlippedXVector3f(::GlobalNamespace::OVRPlugin::Vector3f v);
     // static public UnityEngine.Vector3 FromFlippedZVector3f(OVRPlugin/Vector3f v)
-    // Offset: 0xD24B4C
+    // Offset: 0xFB24A0
     static ::UnityEngine::Vector3 FromFlippedZVector3f(::GlobalNamespace::OVRPlugin::Vector3f v);
     // static public OVRPlugin/Vector3f ToVector3f(UnityEngine.Vector3 v)
-    // Offset: 0xD24B54
+    // Offset: 0xFB24A8
     static ::GlobalNamespace::OVRPlugin::Vector3f ToVector3f(::UnityEngine::Vector3 v);
     // static public OVRPlugin/Vector3f ToFlippedXVector3f(UnityEngine.Vector3 v)
-    // Offset: 0xD24B58
+    // Offset: 0xFB24AC
     static ::GlobalNamespace::OVRPlugin::Vector3f ToFlippedXVector3f(::UnityEngine::Vector3 v);
     // static public OVRPlugin/Vector3f ToFlippedZVector3f(UnityEngine.Vector3 v)
-    // Offset: 0xD24B60
+    // Offset: 0xFB24B4
     static ::GlobalNamespace::OVRPlugin::Vector3f ToFlippedZVector3f(::UnityEngine::Vector3 v);
     // static public UnityEngine.Vector4 FromVector4f(OVRPlugin/Vector4f v)
-    // Offset: 0xD24B68
+    // Offset: 0xFB24BC
     static ::UnityEngine::Vector4 FromVector4f(::GlobalNamespace::OVRPlugin::Vector4f v);
     // static public OVRPlugin/Vector4f ToVector4f(UnityEngine.Vector4 v)
-    // Offset: 0xD24B6C
+    // Offset: 0xFB24C0
     static ::GlobalNamespace::OVRPlugin::Vector4f ToVector4f(::UnityEngine::Vector4 v);
     // static public UnityEngine.Quaternion FromQuatf(OVRPlugin/Quatf q)
-    // Offset: 0xD24B70
+    // Offset: 0xFB24C4
     static ::UnityEngine::Quaternion FromQuatf(::GlobalNamespace::OVRPlugin::Quatf q);
     // static public UnityEngine.Quaternion FromFlippedXQuatf(OVRPlugin/Quatf q)
-    // Offset: 0xD24B74
+    // Offset: 0xFB24C8
     static ::UnityEngine::Quaternion FromFlippedXQuatf(::GlobalNamespace::OVRPlugin::Quatf q);
     // static public UnityEngine.Quaternion FromFlippedZQuatf(OVRPlugin/Quatf q)
-    // Offset: 0xD24B80
+    // Offset: 0xFB24D4
     static ::UnityEngine::Quaternion FromFlippedZQuatf(::GlobalNamespace::OVRPlugin::Quatf q);
     // static public OVRPlugin/Quatf ToQuatf(UnityEngine.Quaternion q)
-    // Offset: 0xD24B8C
+    // Offset: 0xFB24E0
     static ::GlobalNamespace::OVRPlugin::Quatf ToQuatf(::UnityEngine::Quaternion q);
     // static public OVRPlugin/Quatf ToFlippedXQuatf(UnityEngine.Quaternion q)
-    // Offset: 0xD24B90
+    // Offset: 0xFB24E4
     static ::GlobalNamespace::OVRPlugin::Quatf ToFlippedXQuatf(::UnityEngine::Quaternion q);
     // static public OVRPlugin/Quatf ToFlippedZQuatf(UnityEngine.Quaternion q)
-    // Offset: 0xD24B9C
+    // Offset: 0xFB24F0
     static ::GlobalNamespace::OVRPlugin::Quatf ToFlippedZQuatf(::UnityEngine::Quaternion q);
     // static public OVR.OpenVR.HmdMatrix34_t ConvertToHMDMatrix34(UnityEngine.Matrix4x4 m)
-    // Offset: 0xD24BA8
+    // Offset: 0xFB24FC
     static ::OVR::OpenVR::HmdMatrix34_t ConvertToHMDMatrix34(::UnityEngine::Matrix4x4 m);
     // static public UnityEngine.Transform FindChildRecursive(UnityEngine.Transform parent, System.String name)
-    // Offset: 0xD24D38
+    // Offset: 0xFB268C
     static ::UnityEngine::Transform* FindChildRecursive(::UnityEngine::Transform* parent, ::StringW name);
     // static public System.Boolean Equals(UnityEngine.Gradient gradient, UnityEngine.Gradient otherGradient)
-    // Offset: 0xD25088
+    // Offset: 0xFB29DC
     static bool Equals(::UnityEngine::Gradient* gradient, ::UnityEngine::Gradient* otherGradient);
     // static public System.Void CopyFrom(UnityEngine.Gradient gradient, UnityEngine.Gradient otherGradient)
-    // Offset: 0xD252A8
+    // Offset: 0xFB2BFC
     static void CopyFrom(::UnityEngine::Gradient* gradient, ::UnityEngine::Gradient* otherGradient);
   }; // OVRExtensions
   #pragma pack(pop)

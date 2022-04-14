@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AnimatedAppearData::TextMeshAppear : public ::VROSC::AnimatedAppearData::AppearingObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _textMesh
     // Size: 0x8
     // Offset: 0x20
@@ -62,18 +54,18 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _textMesh
-    ::TMPro::TextMeshPro*& dyn__textMesh();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textMesh();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // public System.Void .ctor(TMPro.TextMeshPro textMesh, VROSC.MinMaxVector2 minMax)
-    // Offset: 0x1359C88
+    // Offset: 0x956584
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimatedAppearData::TextMeshAppear* New_ctor(::TMPro::TextMeshPro* textMesh, ::VROSC::MinMaxVector2* minMax) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearData::TextMeshAppear::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearData::TextMeshAppear*, creationType>(textMesh, minMax)));
     }
     // protected override System.Void UpdateObject(VROSC.AnimatedAppear/VROSC.Mode mode, System.Boolean useFlash)
-    // Offset: 0x1359CF4
+    // Offset: 0x9565F0
     // Implemented from: VROSC.AnimatedAppearData/VROSC.AppearingObject
     // Base method: System.Void AppearingObject::UpdateObject(VROSC.AnimatedAppear/VROSC.Mode mode, System.Boolean useFlash)
     void UpdateObject(::VROSC::AnimatedAppear::Mode mode, bool useFlash);

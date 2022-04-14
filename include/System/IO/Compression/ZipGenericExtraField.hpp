@@ -69,34 +69,34 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt16 _tag
-    uint16_t& dyn__tag();
+    [[deprecated]] uint16_t& dyn__tag();
     // Get instance field reference: private System.UInt16 _size
-    uint16_t& dyn__size();
+    [[deprecated]] uint16_t& dyn__size();
     // Get instance field reference: private System.Byte[] _data
-    ::ArrayW<uint8_t>& dyn__data();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__data();
     // public System.UInt16 get_Tag()
-    // Offset: 0x1129904
+    // Offset: 0x16A1170
     uint16_t get_Tag();
     // public System.UInt16 get_Size()
-    // Offset: 0x112990C
+    // Offset: 0x16A1178
     uint16_t get_Size();
     // public System.Byte[] get_Data()
-    // Offset: 0x1129914
+    // Offset: 0x16A1180
     ::ArrayW<uint8_t> get_Data();
     // public System.Void WriteBlock(System.IO.Stream stream)
-    // Offset: 0x112991C
+    // Offset: 0x16A1188
     void WriteBlock(::System::IO::Stream* stream);
     // static public System.Boolean TryReadBlock(System.IO.BinaryReader reader, System.Int64 endExtraField, out System.IO.Compression.ZipGenericExtraField field)
-    // Offset: 0x1122F24
+    // Offset: 0x169A790
     static bool TryReadBlock(::System::IO::BinaryReader* reader, int64_t endExtraField, ByRef<::System::IO::Compression::ZipGenericExtraField> field);
     // static public System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> ParseExtraField(System.IO.Stream extraFieldData)
-    // Offset: 0x1129604
+    // Offset: 0x16A0E70
     static ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>* ParseExtraField(::System::IO::Stream* extraFieldData);
     // static public System.Int32 TotalSize(System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> fields)
-    // Offset: 0x11280A8
+    // Offset: 0x169F914
     static int TotalSize(::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>* fields);
     // static public System.Void WriteAllBlocks(System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> fields, System.IO.Stream stream)
-    // Offset: 0x1128274
+    // Offset: 0x169FAE0
     static void WriteAllBlocks(::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>* fields, ::System::IO::Stream* stream);
   }; // System.IO.Compression.ZipGenericExtraField
   #pragma pack(pop)

@@ -78,21 +78,21 @@ namespace Mono::Globalization::Unicode {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly System.Globalization.CompareOptions Option
-    ::System::Globalization::CompareOptions& dyn_Option();
+    [[deprecated]] ::System::Globalization::CompareOptions& dyn_Option();
     // Get instance field reference: public readonly System.Byte* NeverMatchFlags
-    uint8_t*& dyn_NeverMatchFlags();
+    [[deprecated]] uint8_t*& dyn_NeverMatchFlags();
     // Get instance field reference: public readonly System.Byte* AlwaysMatchFlags
-    uint8_t*& dyn_AlwaysMatchFlags();
+    [[deprecated]] uint8_t*& dyn_AlwaysMatchFlags();
     // Get instance field reference: public System.Byte* Buffer1
-    uint8_t*& dyn_Buffer1();
+    [[deprecated]] uint8_t*& dyn_Buffer1();
     // Get instance field reference: public System.Byte* Buffer2
-    uint8_t*& dyn_Buffer2();
+    [[deprecated]] uint8_t*& dyn_Buffer2();
     // Get instance field reference: public System.Int32 PrevCode
-    int& dyn_PrevCode();
+    [[deprecated]] int& dyn_PrevCode();
     // Get instance field reference: public System.Byte* PrevSortKey
-    uint8_t*& dyn_PrevSortKey();
+    [[deprecated]] uint8_t*& dyn_PrevSortKey();
     // public System.Void .ctor(System.Globalization.CompareOptions opt, System.Byte* alwaysMatchFlags, System.Byte* neverMatchFlags, System.Byte* buffer1, System.Byte* buffer2, System.Byte* prev1)
-    // Offset: 0x1082418
+    // Offset: 0xE5917C
     Context(::System::Globalization::CompareOptions opt, uint8_t* alwaysMatchFlags, uint8_t* neverMatchFlags, uint8_t* buffer1, uint8_t* buffer2, uint8_t* prev1);
   }; // Mono.Globalization.Unicode.SimpleCollator/Mono.Globalization.Unicode.Context
   #pragma pack(pop)

@@ -48,15 +48,7 @@ namespace GlobalNamespace {
     struct BoundaryType;
     // Nested type: ::GlobalNamespace::OVRBoundary::BoundaryTestResult
     struct BoundaryTestResult;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<UnityEngine.Vector3> cachedGeometryList
     // Size: 0x8
     // Offset: 0x10
@@ -81,33 +73,33 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single[] cachedGeometryManagedBuffer
     static void _set_cachedGeometryManagedBuffer(::ArrayW<float> value);
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> cachedGeometryList
-    ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_cachedGeometryList();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_cachedGeometryList();
     // static private System.Void .cctor()
-    // Offset: 0x81A460
+    // Offset: 0x98FA2C
     static void _cctor();
     // public System.Boolean GetConfigured()
-    // Offset: 0x819AB8
+    // Offset: 0x98F084
     bool GetConfigured();
     // public OVRBoundary/BoundaryTestResult TestNode(OVRBoundary/Node node, OVRBoundary/BoundaryType boundaryType)
-    // Offset: 0x819B64
+    // Offset: 0x98F130
     ::GlobalNamespace::OVRBoundary::BoundaryTestResult TestNode(::GlobalNamespace::OVRBoundary::Node node, ::GlobalNamespace::OVRBoundary::BoundaryType boundaryType);
     // public OVRBoundary/BoundaryTestResult TestPoint(UnityEngine.Vector3 point, OVRBoundary/BoundaryType boundaryType)
-    // Offset: 0x819C60
+    // Offset: 0x98F22C
     ::GlobalNamespace::OVRBoundary::BoundaryTestResult TestPoint(::UnityEngine::Vector3 point, ::GlobalNamespace::OVRBoundary::BoundaryType boundaryType);
     // public UnityEngine.Vector3[] GetGeometry(OVRBoundary/BoundaryType boundaryType)
-    // Offset: 0x819D8C
+    // Offset: 0x98F358
     ::ArrayW<::UnityEngine::Vector3> GetGeometry(::GlobalNamespace::OVRBoundary::BoundaryType boundaryType);
     // public UnityEngine.Vector3 GetDimensions(OVRBoundary/BoundaryType boundaryType)
-    // Offset: 0x81A1D0
+    // Offset: 0x98F79C
     ::UnityEngine::Vector3 GetDimensions(::GlobalNamespace::OVRBoundary::BoundaryType boundaryType);
     // public System.Boolean GetVisible()
-    // Offset: 0x81A28C
+    // Offset: 0x98F858
     bool GetVisible();
     // public System.Void SetVisible(System.Boolean value)
-    // Offset: 0x81A338
+    // Offset: 0x98F904
     void SetVisible(bool value);
     // public System.Void .ctor()
-    // Offset: 0x81A3E8
+    // Offset: 0x98F9B4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

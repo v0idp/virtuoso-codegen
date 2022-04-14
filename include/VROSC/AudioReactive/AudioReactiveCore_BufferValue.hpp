@@ -35,15 +35,7 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class AudioReactiveCore::BufferValue : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single <Value>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -88,45 +80,45 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single <Value>k__BackingField
-    float& dyn_$Value$k__BackingField();
+    [[deprecated]] float& dyn_$Value$k__BackingField();
     // Get instance field reference: private System.Single <Buffer>k__BackingField
-    float& dyn_$Buffer$k__BackingField();
+    [[deprecated]] float& dyn_$Buffer$k__BackingField();
     // Get instance field reference: private System.Single <Interpolated>k__BackingField
-    float& dyn_$Interpolated$k__BackingField();
+    [[deprecated]] float& dyn_$Interpolated$k__BackingField();
     // Get instance field reference: private System.Single _peak
-    float& dyn__peak();
+    [[deprecated]] float& dyn__peak();
     // Get instance field reference: private VROSC.MinMaxFloat _interval
-    ::VROSC::MinMaxFloat*& dyn__interval();
+    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__interval();
     // Get instance field reference: public System.Action OnBeat
-    ::System::Action*& dyn_OnBeat();
+    [[deprecated]] ::System::Action*& dyn_OnBeat();
     // Get instance field reference: private System.Single _coolDown
-    float& dyn__coolDown();
+    [[deprecated]] float& dyn__coolDown();
     // public System.Single get_Value()
-    // Offset: 0x135AB18
+    // Offset: 0x957414
     float get_Value();
     // private System.Void set_Value(System.Single value)
-    // Offset: 0x135AB10
+    // Offset: 0x95740C
     void set_Value(float value);
     // public System.Single get_Buffer()
-    // Offset: 0x135AB28
+    // Offset: 0x957424
     float get_Buffer();
     // private System.Void set_Buffer(System.Single value)
-    // Offset: 0x135AB20
+    // Offset: 0x95741C
     void set_Buffer(float value);
     // public System.Single get_Interpolated()
-    // Offset: 0x135AB38
+    // Offset: 0x957434
     float get_Interpolated();
     // private System.Void set_Interpolated(System.Single value)
-    // Offset: 0x135AB30
+    // Offset: 0x95742C
     void set_Interpolated(float value);
     // public System.Void Set(System.Single min, System.Single max)
-    // Offset: 0x135AB40
+    // Offset: 0x95743C
     void Set(float min, float max);
     // public System.Void Update(System.Single modifier, System.Single fallSpeed, System.Single coolDownTime)
-    // Offset: 0x135ABB4
+    // Offset: 0x9574B0
     void Update(float modifier, float fallSpeed, float coolDownTime);
     // public System.Void .ctor()
-    // Offset: 0x135AD20
+    // Offset: 0x95761C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

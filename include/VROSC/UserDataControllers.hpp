@@ -99,15 +99,7 @@ namespace VROSC {
     class $$c__DisplayClass68_1;
     // Nested type: ::VROSC::UserDataControllers::$SaveControllers$d__68
     struct $SaveControllers$d__68;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _loadSaveStepsFinished
     // Size: 0x4
     // Offset: 0x10
@@ -230,158 +222,158 @@ namespace VROSC {
     // Set static field: static public System.Action`2<System.String,System.Single> OnSaveLoadSessionProgress
     static void _set_OnSaveLoadSessionProgress(::System::Action_2<::StringW, float>* value);
     // Get instance field reference: private System.Int32 _loadSaveStepsFinished
-    int& dyn__loadSaveStepsFinished();
+    [[deprecated]] int& dyn__loadSaveStepsFinished();
     // Get instance field reference: private System.Int32 _loadSaveTotalSteps
-    int& dyn__loadSaveTotalSteps();
+    [[deprecated]] int& dyn__loadSaveTotalSteps();
     // Get instance field reference: private System.String _loadSaveSessionId
-    ::StringW& dyn__loadSaveSessionId();
+    [[deprecated]] ::StringW& dyn__loadSaveSessionId();
     // Get instance field reference: private System.Boolean <IsLocalDataLoaded>k__BackingField
-    bool& dyn_$IsLocalDataLoaded$k__BackingField();
+    [[deprecated]] bool& dyn_$IsLocalDataLoaded$k__BackingField();
     // Get instance field reference: private System.Boolean <IsCloudDataLoaded>k__BackingField
-    bool& dyn_$IsCloudDataLoaded$k__BackingField();
+    [[deprecated]] bool& dyn_$IsCloudDataLoaded$k__BackingField();
     // Get instance field reference: private VROSC.SessionsManager <SessionsManager>k__BackingField
-    ::VROSC::SessionsManager*& dyn_$SessionsManager$k__BackingField();
+    [[deprecated]] ::VROSC::SessionsManager*& dyn_$SessionsManager$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.InstrumentDataController> _instrumentsDataControllers
-    ::System::Collections::Generic::Dictionary_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>*& dyn__instrumentsDataControllers();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>*& dyn__instrumentsDataControllers();
     // Get instance field reference: private VROSC.UserProfileDataController <UserProfileDataController>k__BackingField
-    ::VROSC::UserProfileDataController*& dyn_$UserProfileDataController$k__BackingField();
+    [[deprecated]] ::VROSC::UserProfileDataController*& dyn_$UserProfileDataController$k__BackingField();
     // Get instance field reference: private VROSC.UserPreferencesDataController <UserPreferencesDataController>k__BackingField
-    ::VROSC::UserPreferencesDataController*& dyn_$UserPreferencesDataController$k__BackingField();
+    [[deprecated]] ::VROSC::UserPreferencesDataController*& dyn_$UserPreferencesDataController$k__BackingField();
     // Get instance field reference: private VROSC.UserFavoritesDataController <UserFavoritesDataController>k__BackingField
-    ::VROSC::UserFavoritesDataController*& dyn_$UserFavoritesDataController$k__BackingField();
+    [[deprecated]] ::VROSC::UserFavoritesDataController*& dyn_$UserFavoritesDataController$k__BackingField();
     // Get instance field reference: private VROSC.UserUpVotesDataController <UserUpVotesDataController>k__BackingField
-    ::VROSC::UserUpVotesDataController*& dyn_$UserUpVotesDataController$k__BackingField();
+    [[deprecated]] ::VROSC::UserUpVotesDataController*& dyn_$UserUpVotesDataController$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationDataController <LoopStationDataController>k__BackingField
-    ::VROSC::LoopStationDataController*& dyn_$LoopStationDataController$k__BackingField();
+    [[deprecated]] ::VROSC::LoopStationDataController*& dyn_$LoopStationDataController$k__BackingField();
     // Get instance field reference: private VROSC.TapeRecorderDataController <TapeRecorderDataController>k__BackingField
-    ::VROSC::TapeRecorderDataController*& dyn_$TapeRecorderDataController$k__BackingField();
+    [[deprecated]] ::VROSC::TapeRecorderDataController*& dyn_$TapeRecorderDataController$k__BackingField();
     // Get instance field reference: private VROSC.SessionSettingsDataController <SessionSettingsDataController>k__BackingField
-    ::VROSC::SessionSettingsDataController*& dyn_$SessionSettingsDataController$k__BackingField();
+    [[deprecated]] ::VROSC::SessionSettingsDataController*& dyn_$SessionSettingsDataController$k__BackingField();
     // Get instance field reference: private VROSC.SynthsDataController <SynthsDataController>k__BackingField
-    ::VROSC::SynthsDataController*& dyn_$SynthsDataController$k__BackingField();
+    [[deprecated]] ::VROSC::SynthsDataController*& dyn_$SynthsDataController$k__BackingField();
     // Get instance field reference: private VROSC.ModularDrumsDataController <ModularDrumsDataController>k__BackingField
-    ::VROSC::ModularDrumsDataController*& dyn_$ModularDrumsDataController$k__BackingField();
+    [[deprecated]] ::VROSC::ModularDrumsDataController*& dyn_$ModularDrumsDataController$k__BackingField();
     // Get instance field reference: private VROSC.MicrophoneDataController <MicrophoneDataController>k__BackingField
-    ::VROSC::MicrophoneDataController*& dyn_$MicrophoneDataController$k__BackingField();
+    [[deprecated]] ::VROSC::MicrophoneDataController*& dyn_$MicrophoneDataController$k__BackingField();
     // public System.Boolean get_IsLocalDataLoaded()
-    // Offset: 0x13A6020
+    // Offset: 0x1919CEC
     bool get_IsLocalDataLoaded();
     // private System.Void set_IsLocalDataLoaded(System.Boolean value)
-    // Offset: 0x13A6028
+    // Offset: 0x1919CF4
     void set_IsLocalDataLoaded(bool value);
     // public System.Boolean get_IsCloudDataLoaded()
-    // Offset: 0x13A6034
+    // Offset: 0x1919D00
     bool get_IsCloudDataLoaded();
     // private System.Void set_IsCloudDataLoaded(System.Boolean value)
-    // Offset: 0x13A603C
+    // Offset: 0x1919D08
     void set_IsCloudDataLoaded(bool value);
     // public VROSC.SessionsManager get_SessionsManager()
-    // Offset: 0x13A6048
+    // Offset: 0x1919D14
     ::VROSC::SessionsManager* get_SessionsManager();
     // private System.Void set_SessionsManager(VROSC.SessionsManager value)
-    // Offset: 0x13A6050
+    // Offset: 0x1919D1C
     void set_SessionsManager(::VROSC::SessionsManager* value);
     // public VROSC.UserProfileDataController get_UserProfileDataController()
-    // Offset: 0x13A6058
+    // Offset: 0x1919D24
     ::VROSC::UserProfileDataController* get_UserProfileDataController();
     // private System.Void set_UserProfileDataController(VROSC.UserProfileDataController value)
-    // Offset: 0x13A6060
+    // Offset: 0x1919D2C
     void set_UserProfileDataController(::VROSC::UserProfileDataController* value);
     // public VROSC.UserPreferencesDataController get_UserPreferencesDataController()
-    // Offset: 0x13A6068
+    // Offset: 0x1919D34
     ::VROSC::UserPreferencesDataController* get_UserPreferencesDataController();
     // private System.Void set_UserPreferencesDataController(VROSC.UserPreferencesDataController value)
-    // Offset: 0x13A6070
+    // Offset: 0x1919D3C
     void set_UserPreferencesDataController(::VROSC::UserPreferencesDataController* value);
     // public VROSC.UserFavoritesDataController get_UserFavoritesDataController()
-    // Offset: 0x13A6078
+    // Offset: 0x1919D44
     ::VROSC::UserFavoritesDataController* get_UserFavoritesDataController();
     // private System.Void set_UserFavoritesDataController(VROSC.UserFavoritesDataController value)
-    // Offset: 0x13A6080
+    // Offset: 0x1919D4C
     void set_UserFavoritesDataController(::VROSC::UserFavoritesDataController* value);
     // public VROSC.UserUpVotesDataController get_UserUpVotesDataController()
-    // Offset: 0x13A6088
+    // Offset: 0x1919D54
     ::VROSC::UserUpVotesDataController* get_UserUpVotesDataController();
     // private System.Void set_UserUpVotesDataController(VROSC.UserUpVotesDataController value)
-    // Offset: 0x13A6090
+    // Offset: 0x1919D5C
     void set_UserUpVotesDataController(::VROSC::UserUpVotesDataController* value);
     // public VROSC.LoopStationDataController get_LoopStationDataController()
-    // Offset: 0x13A6098
+    // Offset: 0x1919D64
     ::VROSC::LoopStationDataController* get_LoopStationDataController();
     // private System.Void set_LoopStationDataController(VROSC.LoopStationDataController value)
-    // Offset: 0x13A60A0
+    // Offset: 0x1919D6C
     void set_LoopStationDataController(::VROSC::LoopStationDataController* value);
     // public VROSC.TapeRecorderDataController get_TapeRecorderDataController()
-    // Offset: 0x13A60A8
+    // Offset: 0x1919D74
     ::VROSC::TapeRecorderDataController* get_TapeRecorderDataController();
     // private System.Void set_TapeRecorderDataController(VROSC.TapeRecorderDataController value)
-    // Offset: 0x13A60B0
+    // Offset: 0x1919D7C
     void set_TapeRecorderDataController(::VROSC::TapeRecorderDataController* value);
     // public VROSC.SessionSettingsDataController get_SessionSettingsDataController()
-    // Offset: 0x13A60B8
+    // Offset: 0x1919D84
     ::VROSC::SessionSettingsDataController* get_SessionSettingsDataController();
     // private System.Void set_SessionSettingsDataController(VROSC.SessionSettingsDataController value)
-    // Offset: 0x13A60C0
+    // Offset: 0x1919D8C
     void set_SessionSettingsDataController(::VROSC::SessionSettingsDataController* value);
     // public VROSC.SynthsDataController get_SynthsDataController()
-    // Offset: 0x13A60C8
+    // Offset: 0x1919D94
     ::VROSC::SynthsDataController* get_SynthsDataController();
     // private System.Void set_SynthsDataController(VROSC.SynthsDataController value)
-    // Offset: 0x13A60D0
+    // Offset: 0x1919D9C
     void set_SynthsDataController(::VROSC::SynthsDataController* value);
     // public VROSC.ModularDrumsDataController get_ModularDrumsDataController()
-    // Offset: 0x13A60D8
+    // Offset: 0x1919DA4
     ::VROSC::ModularDrumsDataController* get_ModularDrumsDataController();
     // private System.Void set_ModularDrumsDataController(VROSC.ModularDrumsDataController value)
-    // Offset: 0x13A60E0
+    // Offset: 0x1919DAC
     void set_ModularDrumsDataController(::VROSC::ModularDrumsDataController* value);
     // public VROSC.MicrophoneDataController get_MicrophoneDataController()
-    // Offset: 0x13A60E8
+    // Offset: 0x1919DB4
     ::VROSC::MicrophoneDataController* get_MicrophoneDataController();
     // private System.Void set_MicrophoneDataController(VROSC.MicrophoneDataController value)
-    // Offset: 0x13A60F0
+    // Offset: 0x1919DBC
     void set_MicrophoneDataController(::VROSC::MicrophoneDataController* value);
     // public VROSC.InstrumentDataController GetInstrumentDataController(VROSC.WidgetSettings/VROSC.Identifier id)
-    // Offset: 0x13A60F8
+    // Offset: 0x1919DC4
     ::VROSC::InstrumentDataController* GetInstrumentDataController(::VROSC::WidgetSettings::Identifier id);
     // public System.Void Init(VROSC.SaveLoadManager saveLoadManager)
-    // Offset: 0x13A62A4
+    // Offset: 0x1919F70
     void Init(::VROSC::SaveLoadManager* saveLoadManager);
     // private System.Void UserLoggedIn()
-    // Offset: 0x13A6790
+    // Offset: 0x191A4F0
     void UserLoggedIn();
     // public System.Void LoadLocalData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A68FC
+    // Offset: 0x191A65C
     void LoadLocalData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void LoadCloudData()
-    // Offset: 0x13A6794
+    // Offset: 0x191A4F4
     void LoadCloudData();
-    // public System.Void ApplyWidgetsDefaults(System.Collections.Generic.List`1<VROSC.WidgetSettings> widgetsDefaultSettings)
-    // Offset: 0x13A6A30
-    void ApplyWidgetsDefaults(::System::Collections::Generic::List_1<::VROSC::WidgetSettings*>* widgetsDefaultSettings);
+    // public System.Void ApplyWidgetsDefaults(System.Collections.Generic.List`1<VROSC.WidgetSettings> widgetsDefaultSettings, System.Boolean sendEvent)
+    // Offset: 0x191A790
+    void ApplyWidgetsDefaults(::System::Collections::Generic::List_1<::VROSC::WidgetSettings*>* widgetsDefaultSettings, bool sendEvent);
     // public System.Void LoadControllers(System.String sessionId, System.Int32 sessionVersion, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A6DA4
+    // Offset: 0x191AB0C
     void LoadControllers(::StringW sessionId, int sessionVersion, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void SaveControllers(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A6E8C
+    // Offset: 0x191ABF4
     void SaveControllers(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // private System.Void ProgressStepFinished()
-    // Offset: 0x13A6F70
+    // Offset: 0x191ACD8
     void ProgressStepFinished();
     // private System.Void ConvertSynthsData()
-    // Offset: 0x13A700C
+    // Offset: 0x191AD74
     void ConvertSynthsData();
     // private System.Void <LoadCloudData>b__65_0()
-    // Offset: 0x13A7240
+    // Offset: 0x191AFA8
     void $LoadCloudData$b__65_0();
     // private System.Void <LoadCloudData>b__65_2()
-    // Offset: 0x13A73A4
+    // Offset: 0x191B10C
     void $LoadCloudData$b__65_2();
     // private System.Void <LoadCloudData>b__65_4()
-    // Offset: 0x13A7508
+    // Offset: 0x191B270
     void $LoadCloudData$b__65_4();
     // public System.Void .ctor()
-    // Offset: 0x13A615C
+    // Offset: 0x1919E28
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -663,10 +655,11 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 // Writing MetadataGetter for method: VROSC::UserDataControllers::ApplyWidgetsDefaults
 // Il2CppName: ApplyWidgetsDefaults
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::UserDataControllers::*)(::System::Collections::Generic::List_1<::VROSC::WidgetSettings*>*)>(&VROSC::UserDataControllers::ApplyWidgetsDefaults)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::UserDataControllers::*)(::System::Collections::Generic::List_1<::VROSC::WidgetSettings*>*, bool)>(&VROSC::UserDataControllers::ApplyWidgetsDefaults)> {
   static const MethodInfo* get() {
     static auto* widgetsDefaultSettings = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System.Collections.Generic", "List`1"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("VROSC", "WidgetSettings")})->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::UserDataControllers*), "ApplyWidgetsDefaults", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{widgetsDefaultSettings});
+    static auto* sendEvent = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::UserDataControllers*), "ApplyWidgetsDefaults", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{widgetsDefaultSettings, sendEvent});
   }
 };
 // Writing MetadataGetter for method: VROSC::UserDataControllers::LoadControllers

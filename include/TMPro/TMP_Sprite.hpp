@@ -40,15 +40,7 @@ namespace TMPro {
     public:
     // Writing base type padding for base size: 0x34 to desired offset: 0x38
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String name
     // Size: 0x8
     // Offset: 0x38
@@ -81,17 +73,17 @@ namespace TMPro {
     static_assert(sizeof(::UnityEngine::Sprite*) == 0x8);
     public:
     // Get instance field reference: public System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: public System.Int32 hashCode
-    int& dyn_hashCode();
+    [[deprecated]] int& dyn_hashCode();
     // Get instance field reference: public System.Int32 unicode
-    int& dyn_unicode();
+    [[deprecated]] int& dyn_unicode();
     // Get instance field reference: public UnityEngine.Vector2 pivot
-    ::UnityEngine::Vector2& dyn_pivot();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_pivot();
     // Get instance field reference: public UnityEngine.Sprite sprite
-    ::UnityEngine::Sprite*& dyn_sprite();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_sprite();
     // public System.Void .ctor()
-    // Offset: 0x85A98C
+    // Offset: 0x9B1B24
     // Implemented from: TMPro.TMP_TextElement_Legacy
     // Base method: System.Void TMP_TextElement_Legacy::.ctor()
     // Base method: System.Void Object::.ctor()

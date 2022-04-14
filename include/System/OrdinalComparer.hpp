@@ -29,15 +29,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class OrdinalComparer : public ::System::StringComparer {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _ignoreCase
     // Size: 0x1
     // Offset: 0x10
@@ -50,36 +42,36 @@ namespace System {
       return ignoreCase;
     }
     // Get instance field reference: private System.Boolean _ignoreCase
-    bool& dyn__ignoreCase();
+    [[deprecated]] bool& dyn__ignoreCase();
     // System.Void .ctor(System.Boolean ignoreCase)
-    // Offset: 0xEBDE04
+    // Offset: 0x14BF7E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OrdinalComparer* New_ctor(bool ignoreCase) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::OrdinalComparer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OrdinalComparer*, creationType>(ignoreCase)));
     }
     // public override System.Int32 Compare(System.String x, System.String y)
-    // Offset: 0xEBDE80
+    // Offset: 0x14BF860
     // Implemented from: System.StringComparer
     // Base method: System.Int32 StringComparer::Compare(System.String x, System.String y)
     int Compare(::StringW x, ::StringW y);
     // public override System.Boolean Equals(System.String x, System.String y)
-    // Offset: 0xEBDED8
+    // Offset: 0x14BF8B8
     // Implemented from: System.StringComparer
     // Base method: System.Boolean StringComparer::Equals(System.String x, System.String y)
     bool Equals(::StringW x, ::StringW y);
     // public override System.Int32 GetHashCode(System.String obj)
-    // Offset: 0xEBDF58
+    // Offset: 0x14BF938
     // Implemented from: System.StringComparer
     // Base method: System.Int32 StringComparer::GetHashCode(System.String obj)
     int GetHashCode(::StringW obj);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xEBDFD8
+    // Offset: 0x14BF9B8
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xEBE06C
+    // Offset: 0x14BFA4C
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();

@@ -37,15 +37,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class LoginWithEmailState::$$c__DisplayClass20_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.LoginWithEmailState <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -80,29 +72,29 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.LoginWithEmailState <>4__this
-    ::VROSC::LoginWithEmailState*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::LoginWithEmailState*& dyn_$$4__this();
     // Get instance field reference: public System.String userId
-    ::StringW& dyn_userId();
+    [[deprecated]] ::StringW& dyn_userId();
     // Get instance field reference: public System.Boolean isEmailVerified
-    bool& dyn_isEmailVerified();
+    [[deprecated]] bool& dyn_isEmailVerified();
     // Get instance field reference: public System.Action <>9__3
-    ::System::Action*& dyn_$$9__3();
+    [[deprecated]] ::System::Action*& dyn_$$9__3();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__4
-    ::System::Action_1<::VROSC::Error>*& dyn_$$9__4();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__4();
     // System.Void <FirebaseLoginUserWithEmailSuccess>b__0()
-    // Offset: 0x13D5344
+    // Offset: 0x195D060
     void $FirebaseLoginUserWithEmailSuccess$b__0();
     // System.Void <FirebaseLoginUserWithEmailSuccess>b__1(VROSC.Error error)
-    // Offset: 0x13D5598
+    // Offset: 0x195D2B4
     void $FirebaseLoginUserWithEmailSuccess$b__1(::VROSC::Error error);
     // System.Void <FirebaseLoginUserWithEmailSuccess>b__3()
-    // Offset: 0x13D58BC
+    // Offset: 0x195D5D8
     void $FirebaseLoginUserWithEmailSuccess$b__3();
-    // System.Void <FirebaseLoginUserWithEmailSuccess>b__4(VROSC.Error error)
-    // Offset: 0x13D58F0
-    void $FirebaseLoginUserWithEmailSuccess$b__4(::VROSC::Error error);
+    // System.Void <FirebaseLoginUserWithEmailSuccess>b__4(VROSC.Error error2)
+    // Offset: 0x195D60C
+    void $FirebaseLoginUserWithEmailSuccess$b__4(::VROSC::Error error2);
     // public System.Void .ctor()
-    // Offset: 0x13D533C
+    // Offset: 0x195D058
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -146,8 +138,8 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoginWithEmailState::$$c__DisplayClass20_0::*)(::VROSC::Error)>(&VROSC::LoginWithEmailState::$$c__DisplayClass20_0::$FirebaseLoginUserWithEmailSuccess$b__4)> {
   static const MethodInfo* get() {
-    static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoginWithEmailState::$$c__DisplayClass20_0*), "<FirebaseLoginUserWithEmailSuccess>b__4", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+    static auto* error2 = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoginWithEmailState::$$c__DisplayClass20_0*), "<FirebaseLoginUserWithEmailSuccess>b__4", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error2});
   }
 };
 // Writing MetadataGetter for method: VROSC::LoginWithEmailState::$$c__DisplayClass20_0::New_ctor

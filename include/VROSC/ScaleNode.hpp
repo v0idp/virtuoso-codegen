@@ -42,22 +42,14 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScaleNode : public ::VROSC::IntNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action OnScaleSet
     // Size: 0x8
     // Offset: 0x30
     ::System::Action* OnScaleSet;
     // Field size check
     static_assert(sizeof(::System::Action*) == 0x8);
-    // [BitMaskAttribute] Offset: 0x6709A0
+    // [BitMaskAttribute] Offset: 0x786BF4
     // private VROSC.Scale _scale
     // Size: 0x4
     // Offset: 0x38
@@ -66,23 +58,23 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Scale) == 0x4);
     public:
     // Get instance field reference: public System.Action OnScaleSet
-    ::System::Action*& dyn_OnScaleSet();
+    [[deprecated]] ::System::Action*& dyn_OnScaleSet();
     // Get instance field reference: private VROSC.Scale _scale
-    ::VROSC::Scale& dyn__scale();
+    [[deprecated]] ::VROSC::Scale& dyn__scale();
     // public VROSC.Scale get_Scale()
-    // Offset: 0x13DE238
+    // Offset: 0xDE2A58
     ::VROSC::Scale get_Scale();
     // public System.Void set_Scale(VROSC.Scale value)
-    // Offset: 0x13DE240
+    // Offset: 0xDE2A60
     void set_Scale(::VROSC::Scale value);
     // public System.Void SetScale(VROSC.Scale scale)
-    // Offset: 0x13DE290
+    // Offset: 0xDE2AB0
     void SetScale(::VROSC::Scale scale);
     // static public VROSC.Scale RandomScale(out VROSC.Note baseNote)
-    // Offset: 0x13DE2D0
+    // Offset: 0xDE2AF0
     static ::VROSC::Scale RandomScale(ByRef<::VROSC::Note> baseNote);
     // public System.Void .ctor()
-    // Offset: 0x13DE440
+    // Offset: 0xDE2BB4
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -97,12 +89,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ScaleNode*, creationType>()));
     }
     // protected override System.Void OnValidate()
-    // Offset: 0x13DE24C
+    // Offset: 0xDE2A6C
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::OnValidate()
     void OnValidate();
     // protected override System.Int32 SetValueInRange(System.Int32 value)
-    // Offset: 0x13DE268
+    // Offset: 0xDE2A88
     // Implemented from: VROSC.IntNode
     // Base method: System.Int32 IntNode::SetValueInRange(System.Int32 value)
     int SetValueInRange(int value);

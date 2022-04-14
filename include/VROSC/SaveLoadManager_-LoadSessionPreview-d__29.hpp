@@ -98,28 +98,28 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Boolean inCloud
-    bool& dyn_inCloud();
+    [[deprecated]] bool& dyn_inCloud();
     // Get instance field reference: public System.Boolean isCommunity
-    bool& dyn_isCommunity();
+    [[deprecated]] bool& dyn_isCommunity();
     // Get instance field reference: public System.Boolean isOgg
-    bool& dyn_isOgg();
+    [[deprecated]] bool& dyn_isOgg();
     // Get instance field reference: public VROSC.SaveLoadManager <>4__this
-    ::VROSC::SaveLoadManager*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
     // Get instance field reference: public System.String userId
-    ::StringW& dyn_userId();
+    [[deprecated]] ::StringW& dyn_userId();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x1347FF4
+    // Offset: 0x8D2F48
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x1348418
+    // Offset: 0x8D3390
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.SaveLoadManager/VROSC.<LoadSessionPreview>d__29
   #pragma pack(pop)

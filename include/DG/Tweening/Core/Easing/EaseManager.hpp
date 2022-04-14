@@ -53,16 +53,16 @@ namespace DG::Tweening::Core::Easing {
     // Set static field: static private System.Single _TwoPi
     static void _set__TwoPi(float value);
     // static public System.Single Evaluate(DG.Tweening.Tween t, System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x109D084
+    // Offset: 0x15DF6AC
     static float Evaluate(::DG::Tweening::Tween* t, float time, float duration, float overshootOrAmplitude, float period);
     // static public System.Single Evaluate(DG.Tweening.Ease easeType, DG.Tweening.EaseFunction customEase, System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x10923E0
+    // Offset: 0x15D4A08
     static float Evaluate(::DG::Tweening::Ease easeType, ::DG::Tweening::EaseFunction* customEase, float time, float duration, float overshootOrAmplitude, float period);
     // static public DG.Tweening.EaseFunction ToEaseFunction(DG.Tweening.Ease ease)
-    // Offset: 0x109B54C
+    // Offset: 0x15DDB74
     static ::DG::Tweening::EaseFunction* ToEaseFunction(::DG::Tweening::Ease ease);
     // static System.Boolean IsFlashEase(DG.Tweening.Ease ease)
-    // Offset: 0x109D2DC
+    // Offset: 0x15DF904
     static bool IsFlashEase(::DG::Tweening::Ease ease);
   }; // DG.Tweening.Core.Easing.EaseManager
   #pragma pack(pop)

@@ -45,7 +45,7 @@ namespace UnityEngine::UI {
     ::UnityEngine::Sprite* m_PressedSprite;
     // Field size check
     static_assert(sizeof(::UnityEngine::Sprite*) == 0x8);
-    // [FormerlySerializedAsAttribute] Offset: 0x597EE8
+    // [FormerlySerializedAsAttribute] Offset: 0x6AC09C
     // private UnityEngine.Sprite m_SelectedSprite
     // Size: 0x8
     // Offset: 0x10
@@ -70,39 +70,39 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::UI::SpriteState>*>(this);
     }
     // Get instance field reference: private UnityEngine.Sprite m_HighlightedSprite
-    ::UnityEngine::Sprite*& dyn_m_HighlightedSprite();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_HighlightedSprite();
     // Get instance field reference: private UnityEngine.Sprite m_PressedSprite
-    ::UnityEngine::Sprite*& dyn_m_PressedSprite();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_PressedSprite();
     // Get instance field reference: private UnityEngine.Sprite m_SelectedSprite
-    ::UnityEngine::Sprite*& dyn_m_SelectedSprite();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_SelectedSprite();
     // Get instance field reference: private UnityEngine.Sprite m_DisabledSprite
-    ::UnityEngine::Sprite*& dyn_m_DisabledSprite();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_DisabledSprite();
     // public UnityEngine.Sprite get_highlightedSprite()
-    // Offset: 0x11390A8
+    // Offset: 0x16CF840
     ::UnityEngine::Sprite* get_highlightedSprite();
     // public System.Void set_highlightedSprite(UnityEngine.Sprite value)
-    // Offset: 0x11390B0
+    // Offset: 0x16CF848
     void set_highlightedSprite(::UnityEngine::Sprite* value);
     // public UnityEngine.Sprite get_pressedSprite()
-    // Offset: 0x11390B8
+    // Offset: 0x16CF850
     ::UnityEngine::Sprite* get_pressedSprite();
     // public System.Void set_pressedSprite(UnityEngine.Sprite value)
-    // Offset: 0x11390C0
+    // Offset: 0x16CF858
     void set_pressedSprite(::UnityEngine::Sprite* value);
     // public UnityEngine.Sprite get_selectedSprite()
-    // Offset: 0x11390C8
+    // Offset: 0x16CF860
     ::UnityEngine::Sprite* get_selectedSprite();
     // public System.Void set_selectedSprite(UnityEngine.Sprite value)
-    // Offset: 0x11390D0
+    // Offset: 0x16CF868
     void set_selectedSprite(::UnityEngine::Sprite* value);
     // public UnityEngine.Sprite get_disabledSprite()
-    // Offset: 0x11390D8
+    // Offset: 0x16CF870
     ::UnityEngine::Sprite* get_disabledSprite();
     // public System.Void set_disabledSprite(UnityEngine.Sprite value)
-    // Offset: 0x11390E0
+    // Offset: 0x16CF878
     void set_disabledSprite(::UnityEngine::Sprite* value);
     // public System.Boolean Equals(UnityEngine.UI.SpriteState other)
-    // Offset: 0x11390E8
+    // Offset: 0x16CF880
     bool Equals(::UnityEngine::UI::SpriteState other);
   }; // UnityEngine.UI.SpriteState
   #pragma pack(pop)

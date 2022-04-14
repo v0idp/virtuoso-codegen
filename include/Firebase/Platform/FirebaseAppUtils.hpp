@@ -49,22 +49,22 @@ namespace Firebase::Platform {
     // Set static field: static private Firebase.Platform.FirebaseAppUtils instance
     static void _set_instance(::Firebase::Platform::FirebaseAppUtils* value);
     // static public Firebase.Platform.FirebaseAppUtils get_Instance()
-    // Offset: 0x12997EC
+    // Offset: 0x1888470
     static ::Firebase::Platform::FirebaseAppUtils* get_Instance();
     // static private System.Void .cctor()
-    // Offset: 0x12999CC
+    // Offset: 0x1888650
     static void _cctor();
     // public System.Void TranslateDllNotFoundException(System.Action action)
-    // Offset: 0x1299850
+    // Offset: 0x18884D4
     void TranslateDllNotFoundException(::System::Action* action);
     // public System.Void PollCallbacks()
-    // Offset: 0x12998B0
+    // Offset: 0x1888534
     void PollCallbacks();
     // public Firebase.Platform.PlatformLogLevel GetLogLevel()
-    // Offset: 0x12998B4
+    // Offset: 0x1888538
     ::Firebase::Platform::PlatformLogLevel GetLogLevel();
     // public System.Void .ctor()
-    // Offset: 0x12997E4
+    // Offset: 0x1888468
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

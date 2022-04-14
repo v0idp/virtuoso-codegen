@@ -29,10 +29,10 @@ namespace Oculus::Platform::Samples::VrHoops {
   class Camera2DController : public ::UnityEngine::MonoBehaviour {
     public:
     // private System.Void Update()
-    // Offset: 0x7DB2D8
+    // Offset: 0x9216B8
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x7DB500
+    // Offset: 0x9218E0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

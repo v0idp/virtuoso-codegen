@@ -76,29 +76,29 @@ namespace System::Runtime::CompilerServices {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Runtime.CompilerServices.IAsyncStateMachine m_stateMachine
-    ::System::Runtime::CompilerServices::IAsyncStateMachine*& dyn_m_stateMachine();
+    [[deprecated]] ::System::Runtime::CompilerServices::IAsyncStateMachine*& dyn_m_stateMachine();
     // Get instance field reference: System.Action m_defaultContextAction
-    ::System::Action*& dyn_m_defaultContextAction();
+    [[deprecated]] ::System::Action*& dyn_m_defaultContextAction();
     // public System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0xDED970
+    // Offset: 0x1146468
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
     // System.Action GetCompletionAction(System.Threading.Tasks.Task taskForTracing, ref System.Runtime.CompilerServices.AsyncMethodBuilderCore/System.Runtime.CompilerServices.MoveNextRunner runnerToInitialize)
-    // Offset: 0xDEDA2C
+    // Offset: 0x1146524
     ::System::Action* GetCompletionAction(::System::Threading::Tasks::Task* taskForTracing, ByRef<::System::Runtime::CompilerServices::AsyncMethodBuilderCore::MoveNextRunner*> runnerToInitialize);
     // private System.Action OutputAsyncCausalityEvents(System.Threading.Tasks.Task innerTask, System.Action continuation)
-    // Offset: 0xDEDBF4
+    // Offset: 0x11466EC
     ::System::Action* OutputAsyncCausalityEvents(::System::Threading::Tasks::Task* innerTask, ::System::Action* continuation);
     // System.Void PostBoxInitialization(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine, System.Runtime.CompilerServices.AsyncMethodBuilderCore/System.Runtime.CompilerServices.MoveNextRunner runner, System.Threading.Tasks.Task builtTask)
-    // Offset: 0xDEDD64
+    // Offset: 0x114685C
     void PostBoxInitialization(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine, ::System::Runtime::CompilerServices::AsyncMethodBuilderCore::MoveNextRunner* runner, ::System::Threading::Tasks::Task* builtTask);
     // static System.Void ThrowAsync(System.Exception exception, System.Threading.SynchronizationContext targetContext)
-    // Offset: 0xDEDEB0
+    // Offset: 0x11469A8
     static void ThrowAsync(::System::Exception* exception, ::System::Threading::SynchronizationContext* targetContext);
     // static System.Action CreateContinuationWrapper(System.Action continuation, System.Action invokeAction, System.Threading.Tasks.Task innerTask)
-    // Offset: 0xDEDCB0
+    // Offset: 0x11467A8
     static ::System::Action* CreateContinuationWrapper(::System::Action* continuation, ::System::Action* invokeAction, ::System::Threading::Tasks::Task* innerTask);
     // static System.Threading.Tasks.Task TryGetContinuationTask(System.Action action)
-    // Offset: 0xDEE1B8
+    // Offset: 0x1146CB0
     static ::System::Threading::Tasks::Task* TryGetContinuationTask(::System::Action* action);
   }; // System.Runtime.CompilerServices.AsyncMethodBuilderCore
   #pragma pack(pop)

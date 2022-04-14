@@ -48,15 +48,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DrumPadInitializer : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IntNode _noteNode
     // Size: 0x8
     // Offset: 0x40
@@ -83,24 +75,24 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteBoard*) == 0x8);
     public:
     // Get instance field reference: private VROSC.IntNode _noteNode
-    ::VROSC::IntNode*& dyn__noteNode();
+    [[deprecated]] ::VROSC::IntNode*& dyn__noteNode();
     // Get instance field reference: private VROSC.NotePlayer _notePlayer
-    ::VROSC::NotePlayer*& dyn__notePlayer();
+    [[deprecated]] ::VROSC::NotePlayer*& dyn__notePlayer();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.NoteBoard _noteBoard
-    ::VROSC::NoteBoard*& dyn__noteBoard();
+    [[deprecated]] ::VROSC::NoteBoard*& dyn__noteBoard();
     // private System.Void GetNoteBoardRecursive(UnityEngine.Transform t)
-    // Offset: 0x130CB4C
+    // Offset: 0x8E66C0
     void GetNoteBoardRecursive(::UnityEngine::Transform* t);
     // private System.Void CloseButtonPressed()
-    // Offset: 0x130CC14
+    // Offset: 0x8E6788
     void CloseButtonPressed();
     // private System.Void OnDestroy()
-    // Offset: 0x130CC8C
+    // Offset: 0x8E6800
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x130CD4C
+    // Offset: 0x8E68C0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -115,7 +107,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<DrumPadInitializer*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x130C9E4
+    // Offset: 0x8E6558
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);

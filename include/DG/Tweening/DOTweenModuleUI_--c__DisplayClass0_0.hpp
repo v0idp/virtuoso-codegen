@@ -31,15 +31,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOTweenModuleUI::$$c__DisplayClass0_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.CanvasGroup target
     // Size: 0x8
     // Offset: 0x10
@@ -52,15 +44,15 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.CanvasGroup target
-    ::UnityEngine::CanvasGroup*& dyn_target();
+    [[deprecated]] ::UnityEngine::CanvasGroup*& dyn_target();
     // System.Single <DOFade>b__0()
-    // Offset: 0x1264CCC
+    // Offset: 0x17E31EC
     float $DOFade$b__0();
     // System.Void <DOFade>b__1(System.Single x)
-    // Offset: 0x1264CE8
+    // Offset: 0x17E3208
     void $DOFade$b__1(float x);
     // public System.Void .ctor()
-    // Offset: 0x1264CC4
+    // Offset: 0x17DCFEC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

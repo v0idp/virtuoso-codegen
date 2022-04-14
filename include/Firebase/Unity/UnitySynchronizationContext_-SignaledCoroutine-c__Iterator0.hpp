@@ -43,15 +43,7 @@ namespace Firebase::Unity {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UnitySynchronizationContext::$SignaledCoroutine$c__Iterator0 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Func`1<System.Collections.IEnumerator> coroutine
     // Size: 0x8
     // Offset: 0x10
@@ -90,32 +82,32 @@ namespace Firebase::Unity {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: System.Func`1<System.Collections.IEnumerator> coroutine
-    ::System::Func_1<::System::Collections::IEnumerator*>*& dyn_coroutine();
+    [[deprecated]] ::System::Func_1<::System::Collections::IEnumerator*>*& dyn_coroutine();
     // Get instance field reference: System.Threading.ManualResetEvent newSignal
-    ::System::Threading::ManualResetEvent*& dyn_newSignal();
+    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_newSignal();
     // Get instance field reference: System.Object $current
-    ::Il2CppObject*& dyn_$current();
+    [[deprecated]] ::Il2CppObject*& dyn_$current();
     // Get instance field reference: System.Boolean $disposing
-    bool& dyn_$disposing();
+    [[deprecated]] bool& dyn_$disposing();
     // Get instance field reference: System.Int32 $PC
-    int& dyn_$PC();
+    [[deprecated]] int& dyn_$PC();
     // private System.Object System.Collections.Generic.IEnumerator<object>.get_Current()
-    // Offset: 0x12CC538
+    // Offset: 0x18CB8C8
     ::Il2CppObject* System_Collections_Generic_IEnumerator$object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x12CC540
+    // Offset: 0x18CB8D0
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Boolean MoveNext()
-    // Offset: 0x12CC470
+    // Offset: 0x18CB800
     bool MoveNext();
     // public System.Void Dispose()
-    // Offset: 0x12CC548
+    // Offset: 0x18CB8D8
     void Dispose();
     // public System.Void Reset()
-    // Offset: 0x12CC55C
+    // Offset: 0x18CB8EC
     void Reset();
     // public System.Void .ctor()
-    // Offset: 0x12CC468
+    // Offset: 0x18CB7F8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

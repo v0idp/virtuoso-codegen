@@ -62,6 +62,8 @@ namespace VROSC::UI {
 namespace UnityEngine {
   // Forward declaring type: GameObject
   class GameObject;
+  // Forward declaring type: AudioClip
+  class AudioClip;
 }
 // Forward declaring namespace: System
 namespace System {
@@ -156,20 +158,12 @@ namespace VROSC {
       // Set static field: static public VROSC.SessionsLibraryUI/VROSC.State LoggingIn
       static void _set_LoggingIn(::VROSC::SessionsLibraryUI::State value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.SessionsLibraryUI/VROSC.State
     #pragma pack(pop)
     static check_size<sizeof(SessionsLibraryUI::State), 0 + sizeof(int)> __VROSC_SessionsLibraryUI_StateSizeCheck;
     static_assert(sizeof(SessionsLibraryUI::State) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoginUIPopup _loginPopupUI
     // Size: 0x8
     // Offset: 0x18
@@ -382,245 +376,254 @@ namespace VROSC {
     // Set static field: static public System.Action OnNewConfirmed
     static void _set_OnNewConfirmed(::System::Action* value);
     // Get instance field reference: private VROSC.LoginUIPopup _loginPopupUI
-    ::VROSC::LoginUIPopup*& dyn__loginPopupUI();
+    [[deprecated]] ::VROSC::LoginUIPopup*& dyn__loginPopupUI();
     // Get instance field reference: private VROSC.MySessionsPanelUI _mySessionsPanelUI
-    ::VROSC::MySessionsPanelUI*& dyn__mySessionsPanelUI();
+    [[deprecated]] ::VROSC::MySessionsPanelUI*& dyn__mySessionsPanelUI();
     // Get instance field reference: private VROSC.MySharedSessionsPanelUI _mySharedSessionsPanelUI
-    ::VROSC::MySharedSessionsPanelUI*& dyn__mySharedSessionsPanelUI();
+    [[deprecated]] ::VROSC::MySharedSessionsPanelUI*& dyn__mySharedSessionsPanelUI();
     // Get instance field reference: private VROSC.CommunitySessionsPanelUI _communitySessionsPanelUI
-    ::VROSC::CommunitySessionsPanelUI*& dyn__communitySessionsPanelUI();
+    [[deprecated]] ::VROSC::CommunitySessionsPanelUI*& dyn__communitySessionsPanelUI();
     // Get instance field reference: private VROSC.FavoritesSessionsPanelUI _favoritesSessionsPanelUI
-    ::VROSC::FavoritesSessionsPanelUI*& dyn__favoritesSessionsPanelUI();
+    [[deprecated]] ::VROSC::FavoritesSessionsPanelUI*& dyn__favoritesSessionsPanelUI();
     // Get instance field reference: private VROSC.UI.TabController _tabController
-    ::VROSC::UI::TabController*& dyn__tabController();
+    [[deprecated]] ::VROSC::UI::TabController*& dyn__tabController();
     // Get instance field reference: private VROSC.UIButton _profileButton
-    ::VROSC::UIButton*& dyn__profileButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__profileButton();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.UIButton _newSessionButton
-    ::VROSC::UIButton*& dyn__newSessionButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__newSessionButton();
     // Get instance field reference: private VROSC.UIButton _saveSessionButton
-    ::VROSC::UIButton*& dyn__saveSessionButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__saveSessionButton();
     // Get instance field reference: private VROSC.UIButton _saveAsSessionButton
-    ::VROSC::UIButton*& dyn__saveAsSessionButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__saveAsSessionButton();
     // Get instance field reference: private VROSC.UIButton _loadSessionButton
-    ::VROSC::UIButton*& dyn__loadSessionButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__loadSessionButton();
     // Get instance field reference: private VROSC.UIButton _deleteSessionButton
-    ::VROSC::UIButton*& dyn__deleteSessionButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__deleteSessionButton();
     // Get instance field reference: private VROSC.ConfirmationUIPopup _confirmationUIPopup
-    ::VROSC::ConfirmationUIPopup*& dyn__confirmationUIPopup();
+    [[deprecated]] ::VROSC::ConfirmationUIPopup*& dyn__confirmationUIPopup();
     // Get instance field reference: private VROSC.SaveSessionUIPopup _saveSessionUIPopup
-    ::VROSC::SaveSessionUIPopup*& dyn__saveSessionUIPopup();
+    [[deprecated]] ::VROSC::SaveSessionUIPopup*& dyn__saveSessionUIPopup();
     // Get instance field reference: private VROSC.LoadSessionUIPopup _loadSessionUIPopup
-    ::VROSC::LoadSessionUIPopup*& dyn__loadSessionUIPopup();
+    [[deprecated]] ::VROSC::LoadSessionUIPopup*& dyn__loadSessionUIPopup();
     // Get instance field reference: private UnityEngine.GameObject _waitingForDataValidationPopup
-    ::UnityEngine::GameObject*& dyn__waitingForDataValidationPopup();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__waitingForDataValidationPopup();
     // Get instance field reference: private VROSC.UserProfilePopup _userProfilePopup
-    ::VROSC::UserProfilePopup*& dyn__userProfilePopup();
+    [[deprecated]] ::VROSC::UserProfilePopup*& dyn__userProfilePopup();
     // Get instance field reference: private VROSC.SessionInfoPopup _sessionInfoPopup
-    ::VROSC::SessionInfoPopup*& dyn__sessionInfoPopup();
+    [[deprecated]] ::VROSC::SessionInfoPopup*& dyn__sessionInfoPopup();
     // Get instance field reference: private VROSC.SessionsSearchBar _searchBar
-    ::VROSC::SessionsSearchBar*& dyn__searchBar();
+    [[deprecated]] ::VROSC::SessionsSearchBar*& dyn__searchBar();
     // Get instance field reference: private VROSC.ConfirmationUIPopup/VROSC.Data _newSessionConfirmationData
-    ::VROSC::ConfirmationUIPopup::Data*& dyn__newSessionConfirmationData();
+    [[deprecated]] ::VROSC::ConfirmationUIPopup::Data*& dyn__newSessionConfirmationData();
     // Get instance field reference: private VROSC.ConfirmationUIPopup/VROSC.Data _loadSessionConfirmationData
-    ::VROSC::ConfirmationUIPopup::Data*& dyn__loadSessionConfirmationData();
+    [[deprecated]] ::VROSC::ConfirmationUIPopup::Data*& dyn__loadSessionConfirmationData();
     // Get instance field reference: private VROSC.ConfirmationUIPopup/VROSC.Data _deleteSessionConfirmationData
-    ::VROSC::ConfirmationUIPopup::Data*& dyn__deleteSessionConfirmationData();
+    [[deprecated]] ::VROSC::ConfirmationUIPopup::Data*& dyn__deleteSessionConfirmationData();
     // Get instance field reference: private VROSC.PreviewOptionsUI _previewOptionsUI
-    ::VROSC::PreviewOptionsUI*& dyn__previewOptionsUI();
+    [[deprecated]] ::VROSC::PreviewOptionsUI*& dyn__previewOptionsUI();
     // Get instance field reference: private UnityEngine.GameObject _updateNoticeWindow
-    ::UnityEngine::GameObject*& dyn__updateNoticeWindow();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__updateNoticeWindow();
     // Get instance field reference: private UnityEngine.GameObject _mainWindow
-    ::UnityEngine::GameObject*& dyn__mainWindow();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__mainWindow();
     // Get instance field reference: private VROSC.UIButton _updateContinueButton
-    ::VROSC::UIButton*& dyn__updateContinueButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__updateContinueButton();
     // Get instance field reference: private VROSC.SessionsLibraryUI/VROSC.State _currentState
-    ::VROSC::SessionsLibraryUI::State& dyn__currentState();
+    [[deprecated]] ::VROSC::SessionsLibraryUI::State& dyn__currentState();
     // Get instance field reference: private VROSC.SessionsLibraryUI/VROSC.SessionSaveData _cachedSaveData
-    ::VROSC::SessionsLibraryUI::SessionSaveData*& dyn__cachedSaveData();
+    [[deprecated]] ::VROSC::SessionsLibraryUI::SessionSaveData*& dyn__cachedSaveData();
     // Get instance field reference: private System.Boolean _allowOnline
-    bool& dyn__allowOnline();
+    [[deprecated]] bool& dyn__allowOnline();
     // Get instance field reference: private VROSC.SessionsPanelUI _currentSessionsPanel
-    ::VROSC::SessionsPanelUI*& dyn__currentSessionsPanel();
+    [[deprecated]] ::VROSC::SessionsPanelUI*& dyn__currentSessionsPanel();
     // Get instance field reference: private VROSC.SessionItemData _selectedItemData
-    ::VROSC::SessionItemData*& dyn__selectedItemData();
+    [[deprecated]] ::VROSC::SessionItemData*& dyn__selectedItemData();
     // private System.Void Awake()
-    // Offset: 0x13ED4A8
+    // Offset: 0x198CB1C
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0x13EDED8
+    // Offset: 0x198D564
     void OnEnable();
     // private System.Void ForceUpdateDataLoaded()
-    // Offset: 0x13EE08C
+    // Offset: 0x198D718
     void ForceUpdateDataLoaded();
     // private System.Void OpenUpdateNoticeWindow()
-    // Offset: 0x13EE424
+    // Offset: 0x198DC24
     void OpenUpdateNoticeWindow();
     // private System.Void ContinueWithoutUpdating()
-    // Offset: 0x13EE990
+    // Offset: 0x198DC68
     void ContinueWithoutUpdating();
     // private System.Void OpenMainWindow(System.Boolean allowOnline)
-    // Offset: 0x13EE15C
+    // Offset: 0x198D7D8
     void OpenMainWindow(bool allowOnline);
     // private System.Void OnDisable()
-    // Offset: 0x13EF1C0
+    // Offset: 0x198E50C
     void OnDisable();
     // private System.Void OnDestroy()
-    // Offset: 0x13EF32C
+    // Offset: 0x198E798
     void OnDestroy();
     // private System.Void SetButtonsActive(System.Boolean active)
-    // Offset: 0x13EFAB0
+    // Offset: 0x198EF1C
     void SetButtonsActive(bool active);
     // private System.Void SetSelectedSessionButtonsActive(System.Boolean active)
-    // Offset: 0x13EFB88
+    // Offset: 0x198EFF4
     void SetSelectedSessionButtonsActive(bool active);
     // private System.Void TabChanged(VROSC.UI.TabButton tabButton)
-    // Offset: 0x13EEB94
+    // Offset: 0x198DEE0
     void TabChanged(::VROSC::UI::TabButton* tabButton);
     // public System.Void ShowChangeEmailPopup()
-    // Offset: 0x13EFDCC
+    // Offset: 0x198F260
     void ShowChangeEmailPopup();
     // public System.Void ShowChangePasswordPopup()
-    // Offset: 0x13EFDD4
+    // Offset: 0x198F268
     void ShowChangePasswordPopup();
     // public System.Void Refresh()
-    // Offset: 0x13EFDDC
+    // Offset: 0x198F270
     void Refresh();
     // private System.Void SearchFieldChanged(System.String text)
-    // Offset: 0x13EFE4C
+    // Offset: 0x198F350
     void SearchFieldChanged(::StringW text);
     // private System.Void OrderingChanged(VROSC.SessionsLibraryUI/VROSC.OrderingType orderingType, VROSC.SessionsLibraryUI/VROSC.OrderingDirection orderingDirection)
-    // Offset: 0x13EFEB8
+    // Offset: 0x198F3E4
     void OrderingChanged(::VROSC::SessionsLibraryUI::OrderingType orderingType, ::VROSC::SessionsLibraryUI::OrderingDirection orderingDirection);
     // private System.Void ItemSelected(VROSC.SessionItemData itemData)
-    // Offset: 0x13EFF3C
+    // Offset: 0x198F48C
     void ItemSelected(::VROSC::SessionItemData* itemData);
     // private System.Void DeselectItem()
-    // Offset: 0x13EFC74
+    // Offset: 0x198F108
     void DeselectItem();
     // private System.Void ProfileButtonPressed()
-    // Offset: 0x13EFFD4
+    // Offset: 0x198F524
     void ProfileButtonPressed();
     // private System.Void CloseButtonPressed()
-    // Offset: 0x13F0094
+    // Offset: 0x198F5E4
     void CloseButtonPressed();
     // private System.Void NewSessionButtonPressed()
-    // Offset: 0x13F00BC
+    // Offset: 0x198F60C
     void NewSessionButtonPressed();
     // private System.Void SaveSessionButtonPressed()
-    // Offset: 0x13F0300
+    // Offset: 0x198F850
     void SaveSessionButtonPressed();
     // private System.Void SaveAsSessionButtonPressed()
-    // Offset: 0x13F05C0
+    // Offset: 0x198FB10
     void SaveAsSessionButtonPressed();
     // private System.Void LoadSessionButtonPressed()
-    // Offset: 0x13F05EC
+    // Offset: 0x198FB3C
     void LoadSessionButtonPressed();
     // private System.Void DeleteSessionButtonPressed()
-    // Offset: 0x13F06B0
+    // Offset: 0x198FC00
     void DeleteSessionButtonPressed();
     // private System.Void SaveSession(VROSC.SessionsLibraryUI/VROSC.SessionSaveData sessionSaveData, System.Boolean isValidated)
-    // Offset: 0x13EE468
+    // Offset: 0x198FCC4
     void SaveSession(::VROSC::SessionsLibraryUI::SessionSaveData* sessionSaveData, bool isValidated);
     // private System.Void SessionsValidated()
-    // Offset: 0x13F10A0
+    // Offset: 0x1990B4C
     void SessionsValidated();
-    // private System.Void SessionDataUpdated(System.String sessionId)
-    // Offset: 0x13F10A8
-    void SessionDataUpdated(::StringW sessionId);
+    // private System.Void SessionDataUpdateSucceeded(System.String sessionId)
+    // Offset: 0x1990B54
+    void SessionDataUpdateSucceeded(::StringW sessionId);
+    // private System.Void SessionDataUpdateFailed(System.String sessionId, VROSC.Error error)
+    // Offset: 0x1990CDC
+    void SessionDataUpdateFailed(::StringW sessionId, ::VROSC::Error error);
+    // private System.Void SessionPreviewLoadSucceded(System.String sessionId, UnityEngine.AudioClip audioClip, System.Single previewNormalizeMultiplier)
+    // Offset: 0x1990D88
+    void SessionPreviewLoadSucceded(::StringW sessionId, ::UnityEngine::AudioClip* audioClip, float previewNormalizeMultiplier);
+    // private System.Void SessionPreviewLoadFailed(System.String sessionId, VROSC.Error error)
+    // Offset: 0x1990DA0
+    void SessionPreviewLoadFailed(::StringW sessionId, ::VROSC::Error error);
     // private System.Void SaveSessionCanceled()
-    // Offset: 0x13F11E8
+    // Offset: 0x1990DD0
     void SaveSessionCanceled();
     // private System.Void SaveSessionSucceeded(System.String sessionId)
-    // Offset: 0x13F11F4
+    // Offset: 0x1990DDC
     void SaveSessionSucceeded(::StringW sessionId);
     // private System.Void SaveSessionFailed(System.String sessionId, VROSC.Error error)
-    // Offset: 0x13F1520
+    // Offset: 0x1991108
     void SaveSessionFailed(::StringW sessionId, ::VROSC::Error error);
     // private System.Void SaveSessionProgressed(System.String sessionId, System.Single progress)
-    // Offset: 0x13F17EC
+    // Offset: 0x19913D4
     void SaveSessionProgressed(::StringW sessionId, float progress);
     // private System.Void UploadSessionProgressed(System.String sessionId, System.Single progress)
-    // Offset: 0x13F1808
+    // Offset: 0x19913F0
     void UploadSessionProgressed(::StringW sessionId, float progress);
     // private System.Void UploadSessionPreviewProgressed(System.String sessionId, System.Single progress)
-    // Offset: 0x13F1824
+    // Offset: 0x199140C
     void UploadSessionPreviewProgressed(::StringW sessionId, float progress);
     // private System.Void LoadSessionSucceeded(System.String sessionId, System.Boolean isDefaultSession)
-    // Offset: 0x13F1840
+    // Offset: 0x1991428
     void LoadSessionSucceeded(::StringW sessionId, bool isDefaultSession);
     // private System.Void LoadSessionFailed(System.String sessionId, System.Boolean isDefaultSession, VROSC.Error error)
-    // Offset: 0x13F1D70
+    // Offset: 0x1991958
     void LoadSessionFailed(::StringW sessionId, bool isDefaultSession, ::VROSC::Error error);
     // private System.Void LoadSessionProgressed(System.String sessionId, System.Single progress)
-    // Offset: 0x13F203C
+    // Offset: 0x1991C24
     void LoadSessionProgressed(::StringW sessionId, float progress);
     // private System.Void DownloadSessionProgressed(System.String sessionId, System.Single progress)
-    // Offset: 0x13F2058
+    // Offset: 0x1991C40
     void DownloadSessionProgressed(::StringW sessionId, float progress);
     // private System.Void DeleteSessionSucceeded(System.String sessionId)
-    // Offset: 0x13F2074
+    // Offset: 0x1991C5C
     void DeleteSessionSucceeded(::StringW sessionId);
     // private System.Void DeleteSessionFailed(System.String sessionId, VROSC.Error error)
-    // Offset: 0x13F2280
+    // Offset: 0x1991EF4
     void DeleteSessionFailed(::StringW sessionId, ::VROSC::Error error);
     // public System.Void FilterWith(System.String filter)
-    // Offset: 0x13E7370
+    // Offset: 0x1986434
     void FilterWith(::StringW filter);
     // private System.Void SetInConfirmationState(System.Boolean isInConfirmationState, VROSC.ConfirmationUIPopup/VROSC.Data data, System.Action confirmCallback, System.Action cancelCallback)
-    // Offset: 0x13F0180
+    // Offset: 0x198F6D0
     void SetInConfirmationState(bool isInConfirmationState, ::VROSC::ConfirmationUIPopup::Data* data, ::System::Action* confirmCallback, ::System::Action* cancelCallback);
     // private System.Void SetInSavingState(System.Boolean isInSavingState, System.Boolean isNewSave)
-    // Offset: 0x13F03C8
+    // Offset: 0x198F918
     void SetInSavingState(bool isInSavingState, bool isNewSave);
     // private System.Void SetInLoadingState(System.Boolean isInLoadingState)
-    // Offset: 0x13F1B48
+    // Offset: 0x1991730
     void SetInLoadingState(bool isInLoadingState);
     // private System.Void SetIsWaitingForValidationState(System.Boolean isWaiting)
-    // Offset: 0x13EEA14
+    // Offset: 0x198DD60
     void SetIsWaitingForValidationState(bool isWaiting);
     // private System.Void OpenLoginPopup(VROSC.LoginUIPopup/VROSC.Panel panel)
-    // Offset: 0x13EFCE0
+    // Offset: 0x198F174
     void OpenLoginPopup(::VROSC::LoginUIPopup::Panel panel);
     // public System.Void CloseLoginPopup()
-    // Offset: 0x13EFCC4
+    // Offset: 0x198F158
     void CloseLoginPopup();
     // private System.Void LoginPopupClosed()
-    // Offset: 0x13F246C
+    // Offset: 0x19920FC
     void LoginPopupClosed();
     // private System.Void ClosedLoadSessionPopup()
-    // Offset: 0x13F24E8
+    // Offset: 0x1992178
     void ClosedLoadSessionPopup();
     // private System.Void UserLoggedIn(System.String email, System.Boolean isVerified)
-    // Offset: 0x13F24F0
+    // Offset: 0x1992180
     void UserLoggedIn(::StringW email, bool isVerified);
     // private System.Void UserLoggedOut()
-    // Offset: 0x13F2518
+    // Offset: 0x19921A8
     void UserLoggedOut();
     // private System.Void OnApplicationQuit()
-    // Offset: 0x13F2600
+    // Offset: 0x1992290
     void OnApplicationQuit();
     // private System.Void <NewSessionButtonPressed>b__59_0()
-    // Offset: 0x13F2638
+    // Offset: 0x19922C8
     void $NewSessionButtonPressed$b__59_0();
     // private System.Void <NewSessionButtonPressed>b__59_1()
-    // Offset: 0x13F2B20
+    // Offset: 0x19927B0
     void $NewSessionButtonPressed$b__59_1();
     // private System.Void <LoadSessionButtonPressed>b__62_0()
-    // Offset: 0x13F2B70
+    // Offset: 0x1992800
     void $LoadSessionButtonPressed$b__62_0();
     // private System.Void <LoadSessionButtonPressed>b__62_1()
-    // Offset: 0x13F33E8
+    // Offset: 0x1993078
     void $LoadSessionButtonPressed$b__62_1();
     // private System.Void <DeleteSessionButtonPressed>b__63_0()
-    // Offset: 0x13F3438
+    // Offset: 0x19930C8
     void $DeleteSessionButtonPressed$b__63_0();
     // private System.Void <DeleteSessionButtonPressed>b__63_1()
-    // Offset: 0x13F389C
+    // Offset: 0x1993544
     void $DeleteSessionButtonPressed$b__63_1();
     // public System.Void .ctor()
-    // Offset: 0x13F2628
+    // Offset: 0x19922B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -866,13 +869,44 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI*), "SessionsValidated", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::SessionDataUpdated
-// Il2CppName: SessionDataUpdated
+// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::SessionDataUpdateSucceeded
+// Il2CppName: SessionDataUpdateSucceeded
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsLibraryUI::*)(::StringW)>(&VROSC::SessionsLibraryUI::SessionDataUpdated)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsLibraryUI::*)(::StringW)>(&VROSC::SessionsLibraryUI::SessionDataUpdateSucceeded)> {
   static const MethodInfo* get() {
     static auto* sessionId = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI*), "SessionDataUpdated", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionId});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI*), "SessionDataUpdateSucceeded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionId});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::SessionDataUpdateFailed
+// Il2CppName: SessionDataUpdateFailed
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsLibraryUI::*)(::StringW, ::VROSC::Error)>(&VROSC::SessionsLibraryUI::SessionDataUpdateFailed)> {
+  static const MethodInfo* get() {
+    static auto* sessionId = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI*), "SessionDataUpdateFailed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionId, error});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::SessionPreviewLoadSucceded
+// Il2CppName: SessionPreviewLoadSucceded
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsLibraryUI::*)(::StringW, ::UnityEngine::AudioClip*, float)>(&VROSC::SessionsLibraryUI::SessionPreviewLoadSucceded)> {
+  static const MethodInfo* get() {
+    static auto* sessionId = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    static auto* audioClip = &::il2cpp_utils::GetClassFromName("UnityEngine", "AudioClip")->byval_arg;
+    static auto* previewNormalizeMultiplier = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI*), "SessionPreviewLoadSucceded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionId, audioClip, previewNormalizeMultiplier});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::SessionPreviewLoadFailed
+// Il2CppName: SessionPreviewLoadFailed
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsLibraryUI::*)(::StringW, ::VROSC::Error)>(&VROSC::SessionsLibraryUI::SessionPreviewLoadFailed)> {
+  static const MethodInfo* get() {
+    static auto* sessionId = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI*), "SessionPreviewLoadFailed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionId, error});
   }
 };
 // Writing MetadataGetter for method: VROSC::SessionsLibraryUI::SaveSessionCanceled

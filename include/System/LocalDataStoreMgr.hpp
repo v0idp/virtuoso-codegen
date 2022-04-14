@@ -50,15 +50,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class LocalDataStoreMgr : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean[] m_SlotInfoTable
     // Size: 0x8
     // Offset: 0x10
@@ -111,44 +103,44 @@ namespace System {
     // Set static field: static private System.Int32 LargeSlotTableSizeIncrease
     static void _set_LargeSlotTableSizeIncrease(int value);
     // Get instance field reference: private System.Boolean[] m_SlotInfoTable
-    ::ArrayW<bool>& dyn_m_SlotInfoTable();
+    [[deprecated]] ::ArrayW<bool>& dyn_m_SlotInfoTable();
     // Get instance field reference: private System.Int32 m_FirstAvailableSlot
-    int& dyn_m_FirstAvailableSlot();
+    [[deprecated]] int& dyn_m_FirstAvailableSlot();
     // Get instance field reference: private System.Collections.Generic.List`1<System.LocalDataStore> m_ManagedLocalDataStores
-    ::System::Collections::Generic::List_1<::System::LocalDataStore*>*& dyn_m_ManagedLocalDataStores();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::LocalDataStore*>*& dyn_m_ManagedLocalDataStores();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.LocalDataStoreSlot> m_KeyToSlotMap
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::System::LocalDataStoreSlot*>*& dyn_m_KeyToSlotMap();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::LocalDataStoreSlot*>*& dyn_m_KeyToSlotMap();
     // Get instance field reference: private System.Int64 m_CookieGenerator
-    int64_t& dyn_m_CookieGenerator();
+    [[deprecated]] int64_t& dyn_m_CookieGenerator();
     // public System.LocalDataStoreHolder CreateLocalDataStore()
-    // Offset: 0xC5D174
+    // Offset: 0x1079934
     ::System::LocalDataStoreHolder* CreateLocalDataStore();
     // public System.Void DeleteLocalDataStore(System.LocalDataStore store)
-    // Offset: 0xC5CA10
+    // Offset: 0x10791D0
     void DeleteLocalDataStore(::System::LocalDataStore* store);
     // public System.LocalDataStoreSlot AllocateDataSlot()
-    // Offset: 0xC5D2E4
+    // Offset: 0x1079AA4
     ::System::LocalDataStoreSlot* AllocateDataSlot();
     // public System.LocalDataStoreSlot AllocateNamedDataSlot(System.String name)
-    // Offset: 0xC5D578
+    // Offset: 0x1079D38
     ::System::LocalDataStoreSlot* AllocateNamedDataSlot(::StringW name);
     // public System.LocalDataStoreSlot GetNamedDataSlot(System.String name)
-    // Offset: 0xC5D69C
+    // Offset: 0x1079E5C
     ::System::LocalDataStoreSlot* GetNamedDataSlot(::StringW name);
     // public System.Void FreeNamedDataSlot(System.String name)
-    // Offset: 0xC5D7C0
+    // Offset: 0x1079F80
     void FreeNamedDataSlot(::StringW name);
     // System.Void FreeDataSlot(System.Int32 slot, System.Int64 cookie)
-    // Offset: 0xC5D8CC
+    // Offset: 0x107A08C
     void FreeDataSlot(int slot, int64_t cookie);
     // public System.Void ValidateSlot(System.LocalDataStoreSlot slot)
-    // Offset: 0xC5CBF4
+    // Offset: 0x10793B4
     void ValidateSlot(::System::LocalDataStoreSlot* slot);
     // System.Int32 GetSlotTableLength()
-    // Offset: 0xC5D070
+    // Offset: 0x1079830
     int GetSlotTableLength();
     // public System.Void .ctor()
-    // Offset: 0xC5DA70
+    // Offset: 0x107A230
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

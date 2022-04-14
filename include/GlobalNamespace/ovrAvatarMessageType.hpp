@@ -60,7 +60,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarMessageType Count
     static void _set_Count(::GlobalNamespace::ovrAvatarMessageType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // ovrAvatarMessageType
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarMessageType), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarMessageTypeSizeCheck;

@@ -75,15 +75,15 @@ namespace System::Runtime::CompilerServices {
     // Set static field: static private readonly System.Threading.Tasks.Task`1<System.Threading.Tasks.VoidTaskResult> s_cachedCompleted
     static void _set_s_cachedCompleted(::System::Threading::Tasks::Task_1<::System::Threading::Tasks::VoidTaskResult>* value);
     // Get instance field reference: private System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult> m_builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Threading::Tasks::VoidTaskResult>& dyn_m_builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Threading::Tasks::VoidTaskResult>& dyn_m_builder();
     // public System.Threading.Tasks.Task get_Task()
-    // Offset: 0xDEEBD4
+    // Offset: 0x11476CC
     ::System::Threading::Tasks::Task* get_Task();
     // static private System.Void .cctor()
-    // Offset: 0xDEED00
+    // Offset: 0x11477F8
     static void _cctor();
     // static public System.Runtime.CompilerServices.AsyncTaskMethodBuilder Create()
-    // Offset: 0xDEEB6C
+    // Offset: 0x1147664
     static ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder Create();
     // public System.Void Start(ref TStateMachine stateMachine)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -96,7 +96,7 @@ namespace System::Runtime::CompilerServices {
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, byref(stateMachine));
     }
     // public System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0xDEEB78
+    // Offset: 0x1147670
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
     // public System.Void AwaitOnCompleted(ref TAwaiter awaiter, ref TStateMachine stateMachine)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -121,10 +121,10 @@ namespace System::Runtime::CompilerServices {
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, byref(awaiter), byref(stateMachine));
     }
     // public System.Void SetResult()
-    // Offset: 0xDEEC20
+    // Offset: 0x1147718
     void SetResult();
     // public System.Void SetException(System.Exception exception)
-    // Offset: 0xDEECA4
+    // Offset: 0x114779C
     void SetException(::System::Exception* exception);
   }; // System.Runtime.CompilerServices.AsyncTaskMethodBuilder
   // WARNING Not writing size check since size may be invalid!

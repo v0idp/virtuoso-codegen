@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DisplayTooltipOnController : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.HighlightControllerComponents/VROSC.Component _component
     // Size: 0x4
     // Offset: 0x18
@@ -81,27 +73,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.HighlightControllerComponents/VROSC.Component _component
-    ::VROSC::HighlightControllerComponents::Component& dyn__component();
+    [[deprecated]] ::VROSC::HighlightControllerComponents::Component& dyn__component();
     // Get instance field reference: private VROSC.ControllerInputNode _controllerInputNode
-    ::VROSC::ControllerInputNode*& dyn__controllerInputNode();
+    [[deprecated]] ::VROSC::ControllerInputNode*& dyn__controllerInputNode();
     // Get instance field reference: private System.String _text
-    ::StringW& dyn__text();
+    [[deprecated]] ::StringW& dyn__text();
     // Get instance field reference: private VROSC.TooltipData _tooltipData
-    ::VROSC::TooltipData*& dyn__tooltipData();
+    [[deprecated]] ::VROSC::TooltipData*& dyn__tooltipData();
     // protected System.Void Awake()
-    // Offset: 0x130BEA4
+    // Offset: 0x8E5074
     void Awake();
     // private System.Void Setup()
-    // Offset: 0x130BF20
+    // Offset: 0x8E50F0
     void Setup();
     // private System.Void HoverStart(VROSC.InputDevice device)
-    // Offset: 0x130C058
+    // Offset: 0x8E5228
     void HoverStart(::VROSC::InputDevice* device);
     // private System.Void HoverEnd(VROSC.InputDevice device)
-    // Offset: 0x130C0A8
+    // Offset: 0x8E5274
     void HoverEnd(::VROSC::InputDevice* device);
     // public System.Void .ctor()
-    // Offset: 0x130C0F8
+    // Offset: 0x8E52C0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

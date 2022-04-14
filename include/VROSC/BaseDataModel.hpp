@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class BaseDataModel : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.ChangeFlags Flags
     // Size: 0x4
     // Offset: 0x10
@@ -60,23 +52,23 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public VROSC.ChangeFlags Flags
-    ::VROSC::ChangeFlags& dyn_Flags();
+    [[deprecated]] ::VROSC::ChangeFlags& dyn_Flags();
     // Get instance field reference: public System.Int32 SaveVersion
-    int& dyn_SaveVersion();
+    [[deprecated]] int& dyn_SaveVersion();
     // public System.String get_Key()
-    // Offset: 0x137553C
+    // Offset: 0x9744A0
     ::StringW get_Key();
     // public System.Int32 get_Version()
-    // Offset: 0x1375580
+    // Offset: 0x9744E4
     int get_Version();
     // public System.String Serialize()
-    // Offset: 0x1375598
+    // Offset: 0x9744FC
     ::StringW Serialize();
     // public System.Collections.Generic.Dictionary`2<System.String,System.Object> GetFirestoreData()
-    // Offset: 0x13755CC
+    // Offset: 0x974530
     ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* GetFirestoreData();
     // public System.Void .ctor()
-    // Offset: 0x1375588
+    // Offset: 0x9744EC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

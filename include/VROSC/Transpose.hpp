@@ -39,15 +39,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x49 to desired offset: 0x50
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IntField _transposeAmount
     // Size: 0x8
     // Offset: 0x50
@@ -70,13 +62,13 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.IntField _transposeAmount
-    ::VROSC::IntField*& dyn__transposeAmount();
+    [[deprecated]] ::VROSC::IntField*& dyn__transposeAmount();
     // Get instance field reference: private System.Boolean _resetOnNodeEnd
-    bool& dyn__resetOnNodeEnd();
+    [[deprecated]] bool& dyn__resetOnNodeEnd();
     // Get instance field reference: private System.Int32 changeAmount
-    int& dyn_changeAmount();
+    [[deprecated]] int& dyn_changeAmount();
     // public System.Void .ctor()
-    // Offset: 0x14067F4
+    // Offset: 0xA2E478
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -92,12 +84,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<Transpose*, creationType>()));
     }
     // protected override System.Void SetValueBySignal(VROSC.Signal signal)
-    // Offset: 0x14066E8
+    // Offset: 0xA2E36C
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::SetValueBySignal(VROSC.Signal signal)
     void SetValueBySignal(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x1406750
+    // Offset: 0xA2E3D4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

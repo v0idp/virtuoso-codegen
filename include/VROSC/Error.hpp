@@ -107,6 +107,12 @@ namespace VROSC {
     static ::VROSC::Error _get_UserLacksPermission();
     // Set static field: static public VROSC.Error UserLacksPermission
     static void _set_UserLacksPermission(::VROSC::Error value);
+    // static field const value: static public VROSC.Error AlreadyLoadingData
+    static constexpr const int AlreadyLoadingData = 11;
+    // Get static field: static public VROSC.Error AlreadyLoadingData
+    static ::VROSC::Error _get_AlreadyLoadingData();
+    // Set static field: static public VROSC.Error AlreadyLoadingData
+    static void _set_AlreadyLoadingData(::VROSC::Error value);
     // static field const value: static public VROSC.Error HTTPBadRequest
     static constexpr const int HTTPBadRequest = 2000;
     // Get static field: static public VROSC.Error HTTPBadRequest
@@ -167,6 +173,12 @@ namespace VROSC {
     static ::VROSC::Error _get_FileStreamAlreadyOpen();
     // Set static field: static public VROSC.Error FileStreamAlreadyOpen
     static void _set_FileStreamAlreadyOpen(::VROSC::Error value);
+    // static field const value: static public VROSC.Error NotEnoughSpace
+    static constexpr const int NotEnoughSpace = 3005;
+    // Get static field: static public VROSC.Error NotEnoughSpace
+    static ::VROSC::Error _get_NotEnoughSpace();
+    // Set static field: static public VROSC.Error NotEnoughSpace
+    static void _set_NotEnoughSpace(::VROSC::Error value);
     // static field const value: static public VROSC.Error FBEmailAlreadyInUse
     static constexpr const int FBEmailAlreadyInUse = 4000;
     // Get static field: static public VROSC.Error FBEmailAlreadyInUse
@@ -240,7 +252,7 @@ namespace VROSC {
     // Set static field: static public VROSC.Error FBUserNotVerified
     static void _set_FBUserNotVerified(::VROSC::Error value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.Error
   #pragma pack(pop)
   static check_size<sizeof(Error), 0 + sizeof(int)> __VROSC_ErrorSizeCheck;

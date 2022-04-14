@@ -29,15 +29,7 @@ namespace Oculus::Voice::Core::Utilities {
   // [TokenAttribute] Offset: FFFFFFFF
   class ArrayElementTitleAttribute : public ::UnityEngine::PropertyAttribute {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String varname
     // Size: 0x8
     // Offset: 0x10
@@ -52,11 +44,11 @@ namespace Oculus::Voice::Core::Utilities {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String varname
-    ::StringW& dyn_varname();
+    [[deprecated]] ::StringW& dyn_varname();
     // Get instance field reference: public System.String fallbackName
-    ::StringW& dyn_fallbackName();
+    [[deprecated]] ::StringW& dyn_fallbackName();
     // public System.Void .ctor(System.String elementTitleVar, System.String fallbackName)
-    // Offset: 0x1306884
+    // Offset: 0x190EA1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ArrayElementTitleAttribute* New_ctor(::StringW elementTitleVar, ::StringW fallbackName) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Core::Utilities::ArrayElementTitleAttribute::.ctor");

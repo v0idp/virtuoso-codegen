@@ -41,21 +41,21 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A3334
+    // [DescriptionAttribute] Offset: 0x6B74E8
     // static field const value: static public Oculus.Platform.MatchmakingStatApproach Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.MatchmakingStatApproach Unknown
     static ::Oculus::Platform::MatchmakingStatApproach _get_Unknown();
     // Set static field: static public Oculus.Platform.MatchmakingStatApproach Unknown
     static void _set_Unknown(::Oculus::Platform::MatchmakingStatApproach value);
-    // [DescriptionAttribute] Offset: 0x5A336C
+    // [DescriptionAttribute] Offset: 0x6B7520
     // static field const value: static public Oculus.Platform.MatchmakingStatApproach Trailing
     static constexpr const int Trailing = 1;
     // Get static field: static public Oculus.Platform.MatchmakingStatApproach Trailing
     static ::Oculus::Platform::MatchmakingStatApproach _get_Trailing();
     // Set static field: static public Oculus.Platform.MatchmakingStatApproach Trailing
     static void _set_Trailing(::Oculus::Platform::MatchmakingStatApproach value);
-    // [DescriptionAttribute] Offset: 0x5A33A4
+    // [DescriptionAttribute] Offset: 0x6B7558
     // static field const value: static public Oculus.Platform.MatchmakingStatApproach Swingy
     static constexpr const int Swingy = 2;
     // Get static field: static public Oculus.Platform.MatchmakingStatApproach Swingy
@@ -63,7 +63,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.MatchmakingStatApproach Swingy
     static void _set_Swingy(::Oculus::Platform::MatchmakingStatApproach value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.MatchmakingStatApproach
   #pragma pack(pop)
   static check_size<sizeof(MatchmakingStatApproach), 0 + sizeof(int)> __Oculus_Platform_MatchmakingStatApproachSizeCheck;

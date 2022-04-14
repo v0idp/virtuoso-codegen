@@ -41,16 +41,8 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x69 to desired offset: 0x70
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x66E3A0
+    // [HeaderAttribute] Offset: 0x784408
     // private VROSC.UIToggle _overrideOneShot
     // Size: 0x8
     // Offset: 0x70
@@ -95,60 +87,60 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::LoopPlaybackConfigOverride*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIToggle _overrideOneShot
-    ::VROSC::UIToggle*& dyn__overrideOneShot();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideOneShot();
     // Get instance field reference: private VROSC.UIToggle _overrideRetrigger
-    ::VROSC::UIToggle*& dyn__overrideRetrigger();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideRetrigger();
     // Get instance field reference: private VROSC.UIToggle _overrideStart
-    ::VROSC::UIToggle*& dyn__overrideStart();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideStart();
     // Get instance field reference: private VROSC.UIToggle _overrideStop
-    ::VROSC::UIToggle*& dyn__overrideStop();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideStop();
     // Get instance field reference: private VROSC.UIToggle _overrideFadeIn
-    ::VROSC::UIToggle*& dyn__overrideFadeIn();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideFadeIn();
     // Get instance field reference: private VROSC.UIToggle _overrideFadeOut
-    ::VROSC::UIToggle*& dyn__overrideFadeOut();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideFadeOut();
     // Get instance field reference: private VROSC.LoopPlaybackConfigOverride _overrideConfig
-    ::VROSC::LoopPlaybackConfigOverride*& dyn__overrideConfig();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigOverride*& dyn__overrideConfig();
     // public System.Void SetOverrideConfig(VROSC.LoopPlaybackConfigOverride config)
-    // Offset: 0x91FEAC
+    // Offset: 0xF806DC
     void SetOverrideConfig(::VROSC::LoopPlaybackConfigOverride* config);
     // private System.Void OnStartOverriddenChanged(System.Boolean active)
-    // Offset: 0x92046C
+    // Offset: 0xF80C9C
     void OnStartOverriddenChanged(bool active);
     // private System.Void OnStopOverriddenChanged(System.Boolean active)
-    // Offset: 0x9204C4
+    // Offset: 0xF80CF4
     void OnStopOverriddenChanged(bool active);
     // private System.Void OnOneShotOverriddenChanged(System.Boolean active)
-    // Offset: 0x9205CC
+    // Offset: 0xF80DFC
     void OnOneShotOverriddenChanged(bool active);
     // private System.Void OnRetriggerOverriddenChanged(System.Boolean active)
-    // Offset: 0x920624
+    // Offset: 0xF80E54
     void OnRetriggerOverriddenChanged(bool active);
     // private System.Void OnFadeInOverriddenChanged(System.Boolean active)
-    // Offset: 0x92051C
+    // Offset: 0xF80D4C
     void OnFadeInOverriddenChanged(bool active);
     // private System.Void OnFadeOutOverriddenChanged(System.Boolean active)
-    // Offset: 0x920574
+    // Offset: 0xF80DA4
     void OnFadeOutOverriddenChanged(bool active);
     // private System.Void SetOneShotOverridden(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x92067C
+    // Offset: 0xF80EAC
     void SetOneShotOverridden(::VROSC::InputDevice* device, bool active);
     // private System.Void SetRetriggerOverridden(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x92069C
+    // Offset: 0xF80ECC
     void SetRetriggerOverridden(::VROSC::InputDevice* device, bool active);
     // private System.Void SetStartOverridden(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x9206BC
+    // Offset: 0xF80EEC
     void SetStartOverridden(::VROSC::InputDevice* device, bool active);
     // private System.Void SetStopOverridden(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x9206DC
+    // Offset: 0xF80F0C
     void SetStopOverridden(::VROSC::InputDevice* device, bool active);
     // private System.Void SetFadeInOverridden(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x9206FC
+    // Offset: 0xF80F2C
     void SetFadeInOverridden(::VROSC::InputDevice* device, bool active);
     // private System.Void SetFadeOutOverridden(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x92071C
+    // Offset: 0xF80F4C
     void SetFadeOutOverridden(::VROSC::InputDevice* device, bool active);
     // public System.Void .ctor()
-    // Offset: 0x92073C
+    // Offset: 0xF80F6C
     // Implemented from: VROSC.LoopPlaybackSettingsUI
     // Base method: System.Void LoopPlaybackSettingsUI::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -162,12 +154,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<OverridePlaybackSettingsUI*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x91F53C
+    // Offset: 0xF7FD6C
     // Implemented from: VROSC.LoopPlaybackSettingsUI
     // Base method: System.Void LoopPlaybackSettingsUI::Awake()
     void Awake();
     // protected override System.Void OnDestroy()
-    // Offset: 0x91F958
+    // Offset: 0xF80188
     // Implemented from: VROSC.LoopPlaybackSettingsUI
     // Base method: System.Void LoopPlaybackSettingsUI::OnDestroy()
     void OnDestroy();

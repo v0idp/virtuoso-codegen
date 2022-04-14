@@ -25,15 +25,7 @@ namespace GlobalNamespace {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class OVRResources::$$c__DisplayClass2_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String path
     // Size: 0x8
     // Offset: 0x10
@@ -46,12 +38,12 @@ namespace GlobalNamespace {
       return path;
     }
     // Get instance field reference: public System.String path
-    ::StringW& dyn_path();
+    [[deprecated]] ::StringW& dyn_path();
     // System.Boolean <Load>b__0(System.String s)
-    // Offset: 0xF14958
+    // Offset: 0x13EE954
     bool $Load$b__0(::StringW s);
     // public System.Void .ctor()
-    // Offset: 0xF14950
+    // Offset: 0x13EE94C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

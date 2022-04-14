@@ -45,52 +45,52 @@ namespace System::Threading {
   class ThreadPool : public ::Il2CppObject {
     public:
     // static private System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject(System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, System.Object state, System.UInt32 millisecondsTimeOutInterval, System.Boolean executeOnlyOnce, ref System.Threading.StackCrawlMark stackMark, System.Boolean compressStack)
-    // Offset: 0xC8F744
+    // Offset: 0x11DB45C
     static ::System::Threading::RegisteredWaitHandle* RegisterWaitForSingleObject(::System::Threading::WaitHandle* waitObject, ::System::Threading::WaitOrTimerCallback* callBack, ::Il2CppObject* state, uint millisecondsTimeOutInterval, bool executeOnlyOnce, ByRef<::System::Threading::StackCrawlMark> stackMark, bool compressStack);
     // static public System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject(System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, System.Object state, System.TimeSpan timeout, System.Boolean executeOnlyOnce)
-    // Offset: 0xC8FA30
+    // Offset: 0x11DB748
     static ::System::Threading::RegisteredWaitHandle* RegisterWaitForSingleObject(::System::Threading::WaitHandle* waitObject, ::System::Threading::WaitOrTimerCallback* callBack, ::Il2CppObject* state, ::System::TimeSpan timeout, bool executeOnlyOnce);
     // static public System.Boolean QueueUserWorkItem(System.Threading.WaitCallback callBack, System.Object state)
-    // Offset: 0xC8F9D0
+    // Offset: 0x11DB6E8
     static bool QueueUserWorkItem(::System::Threading::WaitCallback* callBack, ::Il2CppObject* state);
     // static public System.Boolean QueueUserWorkItem(System.Threading.WaitCallback callBack)
-    // Offset: 0xC8FC70
+    // Offset: 0x11DB988
     static bool QueueUserWorkItem(::System::Threading::WaitCallback* callBack);
     // static public System.Boolean UnsafeQueueUserWorkItem(System.Threading.WaitCallback callBack, System.Object state)
-    // Offset: 0xC8FA00
+    // Offset: 0x11DB718
     static bool UnsafeQueueUserWorkItem(::System::Threading::WaitCallback* callBack, ::Il2CppObject* state);
     // static private System.Boolean QueueUserWorkItemHelper(System.Threading.WaitCallback callBack, System.Object state, ref System.Threading.StackCrawlMark stackMark, System.Boolean compressStack)
-    // Offset: 0xC8FB4C
+    // Offset: 0x11DB864
     static bool QueueUserWorkItemHelper(::System::Threading::WaitCallback* callBack, ::Il2CppObject* state, ByRef<::System::Threading::StackCrawlMark> stackMark, bool compressStack);
     // static System.Void UnsafeQueueCustomWorkItem(System.Threading.IThreadPoolWorkItem workItem, System.Boolean forceGlobal)
-    // Offset: 0xC8FE8C
+    // Offset: 0x11DBBA4
     static void UnsafeQueueCustomWorkItem(::System::Threading::IThreadPoolWorkItem* workItem, bool forceGlobal);
     // static System.Boolean TryPopCustomWorkItem(System.Threading.IThreadPoolWorkItem workItem)
-    // Offset: 0xC8FF14
+    // Offset: 0x11DBC2C
     static bool TryPopCustomWorkItem(::System::Threading::IThreadPoolWorkItem* workItem);
     // static System.Boolean RequestWorkerThread()
-    // Offset: 0xC90048
+    // Offset: 0x11DBD60
     static bool RequestWorkerThread();
     // static private System.Void EnsureVMInitialized()
-    // Offset: 0xC8FCA4
+    // Offset: 0x11DB9BC
     static void EnsureVMInitialized();
     // static System.Boolean NotifyWorkItemComplete()
-    // Offset: 0xC90050
+    // Offset: 0x11DBD68
     static bool NotifyWorkItemComplete();
     // static System.Void ReportThreadStatus(System.Boolean isWorking)
-    // Offset: 0xC90054
+    // Offset: 0x11DBD6C
     static void ReportThreadStatus(bool isWorking);
     // static System.Void NotifyWorkItemProgress()
-    // Offset: 0xC9005C
+    // Offset: 0x11DBD74
     static void NotifyWorkItemProgress();
     // static System.Void NotifyWorkItemProgressNative()
-    // Offset: 0xC900F0
+    // Offset: 0x11DBE08
     static void NotifyWorkItemProgressNative();
     // static System.Boolean IsThreadPoolHosted()
-    // Offset: 0xC900F4
+    // Offset: 0x11DBE0C
     static bool IsThreadPoolHosted();
     // static private System.Void InitializeVMTp(ref System.Boolean enableWorkerTracking)
-    // Offset: 0xC9004C
+    // Offset: 0x11DBD64
     static void InitializeVMTp(ByRef<bool> enableWorkerTracking);
   }; // System.Threading.ThreadPool
   #pragma pack(pop)

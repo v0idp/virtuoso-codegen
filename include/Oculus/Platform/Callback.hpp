@@ -76,7 +76,7 @@ namespace Oculus::Platform {
     // Set static field: static private Oculus.Platform.Message latestPendingJoinIntentNotifications
     static void _set_latestPendingJoinIntentNotifications(::Oculus::Platform::Message* value);
     // static private System.Void .cctor()
-    // Offset: 0x7DAFAC
+    // Offset: 0x92138C
     static void _cctor();
     // static System.Void SetNotificationCallback(Oculus.Platform.Message/Oculus.Platform.MessageType type, Oculus.Platform.Message`1/Oculus.Platform.Callback<T> callback)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -88,28 +88,28 @@ namespace Oculus::Platform {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, type, callback);
     }
     // static System.Void SetNotificationCallback(Oculus.Platform.Message/Oculus.Platform.MessageType type, Oculus.Platform.Message/Oculus.Platform.Callback callback)
-    // Offset: 0x7DA69C
+    // Offset: 0x920A7C
     static void SetNotificationCallback(::Oculus::Platform::Message::MessageType type, ::Oculus::Platform::Message::Callback* callback);
     // static System.Void AddRequest(Oculus.Platform.Request request)
-    // Offset: 0x7DA7B4
+    // Offset: 0x920B94
     static void AddRequest(::Oculus::Platform::Request* request);
     // static System.Void RunCallbacks()
-    // Offset: 0x7DA8A4
+    // Offset: 0x920C84
     static void RunCallbacks();
     // static System.Void RunLimitedCallbacks(System.UInt32 limit)
-    // Offset: 0x7DABF8
+    // Offset: 0x920FD8
     static void RunLimitedCallbacks(uint limit);
     // static System.Void OnApplicationQuit()
-    // Offset: 0x7DAC90
+    // Offset: 0x921070
     static void OnApplicationQuit();
     // static private System.Void FlushRoomInviteNotificationQueue()
-    // Offset: 0x7DAD40
+    // Offset: 0x921120
     static void FlushRoomInviteNotificationQueue();
     // static private System.Void FlushJoinIntentNotificationQueue()
-    // Offset: 0x7DAEEC
+    // Offset: 0x9212CC
     static void FlushJoinIntentNotificationQueue();
     // static System.Void HandleMessage(Oculus.Platform.Message msg)
-    // Offset: 0x7DA924
+    // Offset: 0x920D04
     static void HandleMessage(::Oculus::Platform::Message* msg);
   }; // Oculus.Platform.Callback
   #pragma pack(pop)

@@ -84,20 +84,12 @@ namespace GlobalNamespace {
       // Set static field: static public OVRControllerHelper/ControllerType Quest2
       static void _set_Quest2(::GlobalNamespace::OVRControllerHelper::ControllerType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRControllerHelper/ControllerType
     #pragma pack(pop)
     static check_size<sizeof(OVRControllerHelper::ControllerType), 0 + sizeof(int)> __GlobalNamespace_OVRControllerHelper_ControllerTypeSizeCheck;
     static_assert(sizeof(OVRControllerHelper::ControllerType) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.GameObject m_modelOculusTouchQuestAndRiftSLeftController
     // Size: 0x8
     // Offset: 0x18
@@ -170,35 +162,35 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject m_modelOculusTouchQuestAndRiftSLeftController
-    ::UnityEngine::GameObject*& dyn_m_modelOculusTouchQuestAndRiftSLeftController();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_modelOculusTouchQuestAndRiftSLeftController();
     // Get instance field reference: public UnityEngine.GameObject m_modelOculusTouchQuestAndRiftSRightController
-    ::UnityEngine::GameObject*& dyn_m_modelOculusTouchQuestAndRiftSRightController();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_modelOculusTouchQuestAndRiftSRightController();
     // Get instance field reference: public UnityEngine.GameObject m_modelOculusTouchRiftLeftController
-    ::UnityEngine::GameObject*& dyn_m_modelOculusTouchRiftLeftController();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_modelOculusTouchRiftLeftController();
     // Get instance field reference: public UnityEngine.GameObject m_modelOculusTouchRiftRightController
-    ::UnityEngine::GameObject*& dyn_m_modelOculusTouchRiftRightController();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_modelOculusTouchRiftRightController();
     // Get instance field reference: public UnityEngine.GameObject m_modelOculusTouchQuest2LeftController
-    ::UnityEngine::GameObject*& dyn_m_modelOculusTouchQuest2LeftController();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_modelOculusTouchQuest2LeftController();
     // Get instance field reference: public UnityEngine.GameObject m_modelOculusTouchQuest2RightController
-    ::UnityEngine::GameObject*& dyn_m_modelOculusTouchQuest2RightController();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_modelOculusTouchQuest2RightController();
     // Get instance field reference: public OVRInput/Controller m_controller
-    ::GlobalNamespace::OVRInput::Controller& dyn_m_controller();
+    [[deprecated]] ::GlobalNamespace::OVRInput::Controller& dyn_m_controller();
     // Get instance field reference: private UnityEngine.Animator m_animator
-    ::UnityEngine::Animator*& dyn_m_animator();
+    [[deprecated]] ::UnityEngine::Animator*& dyn_m_animator();
     // Get instance field reference: private OVRControllerHelper/ControllerType activeControllerType
-    ::GlobalNamespace::OVRControllerHelper::ControllerType& dyn_activeControllerType();
+    [[deprecated]] ::GlobalNamespace::OVRControllerHelper::ControllerType& dyn_activeControllerType();
     // Get instance field reference: private System.Boolean m_prevControllerConnected
-    bool& dyn_m_prevControllerConnected();
+    [[deprecated]] bool& dyn_m_prevControllerConnected();
     // Get instance field reference: private System.Boolean m_prevControllerConnectedCached
-    bool& dyn_m_prevControllerConnectedCached();
+    [[deprecated]] bool& dyn_m_prevControllerConnectedCached();
     // private System.Void Start()
-    // Offset: 0x81D618
+    // Offset: 0x992BE4
     void Start();
     // private System.Void Update()
-    // Offset: 0x81D864
+    // Offset: 0x992E30
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x81DE30
+    // Offset: 0x9933FC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

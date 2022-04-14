@@ -31,22 +31,22 @@ namespace GlobalNamespace {
   class OVRTouchpadHelper : public ::UnityEngine::MonoBehaviour {
     public:
     // private System.Void Awake()
-    // Offset: 0x12AE6C8
+    // Offset: 0x18AD26C
     void Awake();
     // private System.Void Start()
-    // Offset: 0x12AE740
+    // Offset: 0x18AD2E4
     void Start();
     // private System.Void Update()
-    // Offset: 0x12AE7F8
+    // Offset: 0x18AD39C
     void Update();
     // public System.Void OnDisable()
-    // Offset: 0x12AE850
+    // Offset: 0x18AD3F4
     void OnDisable();
     // private System.Void LocalTouchEventCallback(OVRTouchpad/TouchEvent touchEvent)
-    // Offset: 0x12AE8B0
+    // Offset: 0x18AD454
     void LocalTouchEventCallback(::GlobalNamespace::OVRTouchpad::TouchEvent touchEvent);
     // public System.Void .ctor()
-    // Offset: 0x12AE8B4
+    // Offset: 0x18AD458
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -50,7 +50,7 @@ namespace System::Linq {
     template<class TKey>
     ::System::Linq::IOrderedEnumerable_1<TElement>* CreateOrderedEnumerable(::System::Func_2<TElement, TKey>* keySelector, ::System::Collections::Generic::IComparer_1<TKey>* comparer, bool descending) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::IOrderedEnumerable_1::CreateOrderedEnumerable");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "CreateOrderedEnumerable", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TKey>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(keySelector), ::il2cpp_utils::ExtractType(comparer), ::il2cpp_utils::ExtractType(descending)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Linq::IOrderedEnumerable_1<TElement>*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TKey>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::System::Linq::IOrderedEnumerable_1<TElement>*, false>(this, ___generic__method, keySelector, comparer, descending);
     }

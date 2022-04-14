@@ -29,15 +29,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MixerGroupRecorder : public ::VROSC::SourceRecorder {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Single[] _mixerGroupData
     // Size: 0x8
     // Offset: 0x48
@@ -52,17 +44,17 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: protected System.Single[] _mixerGroupData
-    ::ArrayW<float>& dyn__mixerGroupData();
+    [[deprecated]] ::ArrayW<float>& dyn__mixerGroupData();
     // Get instance field reference: protected System.Int32 _routingChannel
-    int& dyn__routingChannel();
+    [[deprecated]] int& dyn__routingChannel();
     // public System.Void Setup(System.Int32 channel)
-    // Offset: 0x8B6624
+    // Offset: 0xACA224
     void Setup(int channel);
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x8AD5A8
+    // Offset: 0xAC0BE4
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void .ctor()
-    // Offset: 0x8AD68C
+    // Offset: 0xAC0CC8
     // Implemented from: VROSC.SourceRecorder
     // Base method: System.Void SourceRecorder::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

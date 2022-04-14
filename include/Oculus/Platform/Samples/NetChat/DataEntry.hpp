@@ -55,15 +55,7 @@ namespace Oculus::Platform::Samples::NetChat {
   // [TokenAttribute] Offset: FFFFFFFF
   class DataEntry : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.UI.Text dataOutput
     // Size: 0x8
     // Offset: 0x18
@@ -112,96 +104,96 @@ namespace Oculus::Platform::Samples::NetChat {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.Text dataOutput
-    ::UnityEngine::UI::Text*& dyn_dataOutput();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_dataOutput();
     // Get instance field reference: private Oculus.Platform.Samples.NetChat.states currentState
-    ::Oculus::Platform::Samples::NetChat::states& dyn_currentState();
+    [[deprecated]] ::Oculus::Platform::Samples::NetChat::states& dyn_currentState();
     // Get instance field reference: private Oculus.Platform.Models.User localUser
-    ::Oculus::Platform::Models::User*& dyn_localUser();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_localUser();
     // Get instance field reference: private Oculus.Platform.Models.User remoteUser
-    ::Oculus::Platform::Models::User*& dyn_remoteUser();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_remoteUser();
     // Get instance field reference: private Oculus.Platform.Models.Room currentRoom
-    ::Oculus::Platform::Models::Room*& dyn_currentRoom();
+    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_currentRoom();
     // Get instance field reference: private System.Int32 lastPacketID
-    int& dyn_lastPacketID();
+    [[deprecated]] int& dyn_lastPacketID();
     // Get instance field reference: private System.Boolean ratedMatchStarted
-    bool& dyn_ratedMatchStarted();
+    [[deprecated]] bool& dyn_ratedMatchStarted();
     // private System.Void Start()
-    // Offset: 0x7DFC00
+    // Offset: 0x925FE0
     void Start();
     // private System.Void Update()
-    // Offset: 0x7DFDBC
+    // Offset: 0x92619C
     void Update();
     // private System.Void SubmitCommand(System.String command)
-    // Offset: 0x7DFE90
+    // Offset: 0x926270
     void SubmitCommand(::StringW command);
     // private System.Void printOutputLine(System.String newLine)
-    // Offset: 0x7E1764
+    // Offset: 0x927B44
     void printOutputLine(::StringW newLine);
     // private System.Void checkEntitlement()
-    // Offset: 0x7DFD20
+    // Offset: 0x926100
     void checkEntitlement();
     // private System.Void getEntitlementCallback(Oculus.Platform.Message msg)
-    // Offset: 0x7E1980
+    // Offset: 0x927D60
     void getEntitlementCallback(::Oculus::Platform::Message* msg);
     // private System.Void init(Oculus.Platform.Message`1<Oculus.Platform.Models.User> msg)
-    // Offset: 0x7E1AAC
+    // Offset: 0x927E8C
     void init(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* msg);
     // private System.Void requestCreateRoom()
-    // Offset: 0x7E0428
+    // Offset: 0x926808
     void requestCreateRoom();
     // private System.Void createRoomResponse(Oculus.Platform.Message`1<Oculus.Platform.Models.MatchmakingEnqueueResultAndRoom> msg)
-    // Offset: 0x7E1C18
+    // Offset: 0x927FF8
     void createRoomResponse(::Oculus::Platform::Message_1<::Oculus::Platform::Models::MatchmakingEnqueueResultAndRoom*>* msg);
     // private System.Void requestCreateFilterRoom()
-    // Offset: 0x7E064C
+    // Offset: 0x926A2C
     void requestCreateFilterRoom();
     // private System.Void requestFindRoom()
-    // Offset: 0x7E0B90
+    // Offset: 0x926F70
     void requestFindRoom();
     // private System.Void requestFindFilteredRoom()
-    // Offset: 0x7E0DAC
+    // Offset: 0x92718C
     void requestFindFilteredRoom();
     // private System.Void foundMatch(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x7E1D8C
+    // Offset: 0x92816C
     void foundMatch(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void joinRoomResponse(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x7E1F20
+    // Offset: 0x928300
     void joinRoomResponse(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void requestFindMatch()
-    // Offset: 0x7E0974
+    // Offset: 0x926D54
     void requestFindMatch();
     // private System.Void searchingStarted(Oculus.Platform.Message msg)
-    // Offset: 0x7E2298
+    // Offset: 0x928678
     void searchingStarted(::Oculus::Platform::Message* msg);
     // private System.Void updateRoom(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x7E2384
+    // Offset: 0x928764
     void updateRoom(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void sendChat(System.String chatMessage)
-    // Offset: 0x7E1158
+    // Offset: 0x927538
     void sendChat(::StringW chatMessage);
     // private System.Void processNetPackets()
-    // Offset: 0x7E0260
+    // Offset: 0x926640
     void processNetPackets();
     // private System.Void requestLeaveRoom()
-    // Offset: 0x7E1278
+    // Offset: 0x927658
     void requestLeaveRoom();
     // private System.Void leaveRoomResponse(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x7E2780
+    // Offset: 0x928B60
     void leaveRoomResponse(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void requestStartRatedMatch()
-    // Offset: 0x7E1400
+    // Offset: 0x9277E0
     void requestStartRatedMatch();
     // private System.Void startRatedMatchResponse(Oculus.Platform.Message msg)
-    // Offset: 0x7E2870
+    // Offset: 0x928C50
     void startRatedMatchResponse(::Oculus::Platform::Message* msg);
     // private System.Void requestReportResults()
-    // Offset: 0x7E1544
+    // Offset: 0x927924
     void requestReportResults();
     // private System.Void reportResultsResponse(Oculus.Platform.Message msg)
-    // Offset: 0x7E295C
+    // Offset: 0x928D3C
     void reportResultsResponse(::Oculus::Platform::Message* msg);
     // public System.Void .ctor()
-    // Offset: 0x7E2A28
+    // Offset: 0x928E08
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

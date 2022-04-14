@@ -41,25 +41,25 @@ namespace VROSC {
     static ::VROSC::AuthenticationManager::$$c* _get_$$9();
     // Set static field: static public readonly VROSC.AuthenticationManager/VROSC.<>c <>9
     static void _set_$$9(::VROSC::AuthenticationManager::$$c* value);
-    // Get static field: static public System.Func`1<System.Boolean> <>9__28_6
-    static ::System::Func_1<bool>* _get_$$9__28_6();
-    // Set static field: static public System.Func`1<System.Boolean> <>9__28_6
-    static void _set_$$9__28_6(::System::Func_1<bool>* value);
-    // Get static field: static public System.Action`1<VROSC.Error> <>9__43_0
-    static ::System::Action_1<::VROSC::Error>* _get_$$9__43_0();
-    // Set static field: static public System.Action`1<VROSC.Error> <>9__43_0
-    static void _set_$$9__43_0(::System::Action_1<::VROSC::Error>* value);
+    // Get static field: static public System.Func`1<System.Boolean> <>9__27_5
+    static ::System::Func_1<bool>* _get_$$9__27_5();
+    // Set static field: static public System.Func`1<System.Boolean> <>9__27_5
+    static void _set_$$9__27_5(::System::Func_1<bool>* value);
+    // Get static field: static public System.Action`1<VROSC.Error> <>9__42_0
+    static ::System::Action_1<::VROSC::Error>* _get_$$9__42_0();
+    // Set static field: static public System.Action`1<VROSC.Error> <>9__42_0
+    static void _set_$$9__42_0(::System::Action_1<::VROSC::Error>* value);
     // static private System.Void .cctor()
-    // Offset: 0x135B008
+    // Offset: 0x957904
     static void _cctor();
-    // System.Boolean <Awake>b__28_6()
-    // Offset: 0x135B070
-    bool $Awake$b__28_6();
-    // System.Void <UserEmailChangeSuccess>b__43_0(VROSC.Error error)
-    // Offset: 0x135B078
-    void $UserEmailChangeSuccess$b__43_0(::VROSC::Error error);
+    // System.Boolean <Awake>b__27_5()
+    // Offset: 0x95796C
+    bool $Awake$b__27_5();
+    // System.Void <UserEmailChangeSuccess>b__42_0(VROSC.Error error)
+    // Offset: 0x957974
+    void $UserEmailChangeSuccess$b__42_0(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x135B068
+    // Offset: 0x957964
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -79,21 +79,21 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AuthenticationManager::$$c::$Awake$b__28_6
-// Il2CppName: <Awake>b__28_6
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$$c::$Awake$b__27_5
+// Il2CppName: <Awake>b__27_5
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AuthenticationManager::$$c::*)()>(&VROSC::AuthenticationManager::$$c::$Awake$b__28_6)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AuthenticationManager::$$c::*)()>(&VROSC::AuthenticationManager::$$c::$Awake$b__27_5)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager::$$c*), "<Awake>b__28_6", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager::$$c*), "<Awake>b__27_5", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AuthenticationManager::$$c::$UserEmailChangeSuccess$b__43_0
-// Il2CppName: <UserEmailChangeSuccess>b__43_0
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$$c::$UserEmailChangeSuccess$b__42_0
+// Il2CppName: <UserEmailChangeSuccess>b__42_0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::AuthenticationManager::$$c::*)(::VROSC::Error)>(&VROSC::AuthenticationManager::$$c::$UserEmailChangeSuccess$b__43_0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::AuthenticationManager::$$c::*)(::VROSC::Error)>(&VROSC::AuthenticationManager::$$c::$UserEmailChangeSuccess$b__42_0)> {
   static const MethodInfo* get() {
     static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager::$$c*), "<UserEmailChangeSuccess>b__43_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager::$$c*), "<UserEmailChangeSuccess>b__42_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
 // Writing MetadataGetter for method: VROSC::AuthenticationManager::$$c::New_ctor

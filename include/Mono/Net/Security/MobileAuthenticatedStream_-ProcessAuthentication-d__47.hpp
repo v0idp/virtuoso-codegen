@@ -118,32 +118,32 @@ namespace Mono::Net::Security {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Boolean serverMode
-    bool& dyn_serverMode();
+    [[deprecated]] bool& dyn_serverMode();
     // Get instance field reference: public System.Security.Cryptography.X509Certificates.X509Certificate serverCertificate
-    ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_serverCertificate();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_serverCertificate();
     // Get instance field reference: public System.String targetHost
-    ::StringW& dyn_targetHost();
+    [[deprecated]] ::StringW& dyn_targetHost();
     // Get instance field reference: public Mono.Net.Security.MobileAuthenticatedStream <>4__this
-    ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$$4__this();
+    [[deprecated]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$$4__this();
     // Get instance field reference: public System.Boolean runSynchronously
-    bool& dyn_runSynchronously();
+    [[deprecated]] bool& dyn_runSynchronously();
     // Get instance field reference: public System.Security.Authentication.SslProtocols enabledProtocols
-    ::System::Security::Authentication::SslProtocols& dyn_enabledProtocols();
+    [[deprecated]] ::System::Security::Authentication::SslProtocols& dyn_enabledProtocols();
     // Get instance field reference: public System.Security.Cryptography.X509Certificates.X509CertificateCollection clientCertificates
-    ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_clientCertificates();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_clientCertificates();
     // Get instance field reference: public System.Boolean clientCertRequired
-    bool& dyn_clientCertRequired();
+    [[deprecated]] bool& dyn_clientCertRequired();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<Mono.Net.Security.AsyncProtocolResult> <>u__1
-    typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::Mono::Net::Security::AsyncProtocolResult*>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::Mono::Net::Security::AsyncProtocolResult*>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8DECAC
+    // Offset: 0x9F9A28
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8DF660
+    // Offset: 0x9FA3DC
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // Mono.Net.Security.MobileAuthenticatedStream/Mono.Net.Security.<ProcessAuthentication>d__47
   // WARNING Not writing size check since size may be invalid!

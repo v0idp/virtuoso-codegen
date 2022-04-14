@@ -31,15 +31,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class TimestampProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -58,42 +50,42 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC36398
+    // Offset: 0xD58474
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TimestampProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::TimestampProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TimestampProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // public System.Void .ctor(System.Int64 seconds, System.Int32 nanoseconds)
-    // Offset: 0xC40850
+    // Offset: 0xD64DDC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TimestampProxy* New_ctor(int64_t seconds, int nanoseconds) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::TimestampProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TimestampProxy*, creationType>(seconds, nanoseconds)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.TimestampProxy obj)
-    // Offset: 0xC3598C
+    // Offset: 0xD57B24
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::TimestampProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC40C3C
+    // Offset: 0xD651B0
     void Dispose();
     // public System.Int64 seconds()
-    // Offset: 0xC40908
+    // Offset: 0xD64E8C
     int64_t seconds();
     // public System.Int32 nanoseconds()
-    // Offset: 0xC409AC
+    // Offset: 0xD64F28
     int nanoseconds();
     // protected override System.Void Finalize()
-    // Offset: 0xC40BCC
+    // Offset: 0xD65140
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
     // public override System.String ToString()
-    // Offset: 0xC40DCC
+    // Offset: 0xD65340
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

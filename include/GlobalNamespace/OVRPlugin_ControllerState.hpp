@@ -92,25 +92,25 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 ConnectedControllers
-    uint& dyn_ConnectedControllers();
+    [[deprecated]] uint& dyn_ConnectedControllers();
     // Get instance field reference: public System.UInt32 Buttons
-    uint& dyn_Buttons();
+    [[deprecated]] uint& dyn_Buttons();
     // Get instance field reference: public System.UInt32 Touches
-    uint& dyn_Touches();
+    [[deprecated]] uint& dyn_Touches();
     // Get instance field reference: public System.UInt32 NearTouches
-    uint& dyn_NearTouches();
+    [[deprecated]] uint& dyn_NearTouches();
     // Get instance field reference: public System.Single LIndexTrigger
-    float& dyn_LIndexTrigger();
+    [[deprecated]] float& dyn_LIndexTrigger();
     // Get instance field reference: public System.Single RIndexTrigger
-    float& dyn_RIndexTrigger();
+    [[deprecated]] float& dyn_RIndexTrigger();
     // Get instance field reference: public System.Single LHandTrigger
-    float& dyn_LHandTrigger();
+    [[deprecated]] float& dyn_LHandTrigger();
     // Get instance field reference: public System.Single RHandTrigger
-    float& dyn_RHandTrigger();
+    [[deprecated]] float& dyn_RHandTrigger();
     // Get instance field reference: public OVRPlugin/Vector2f LThumbstick
-    ::GlobalNamespace::OVRPlugin::Vector2f& dyn_LThumbstick();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector2f& dyn_LThumbstick();
     // Get instance field reference: public OVRPlugin/Vector2f RThumbstick
-    ::GlobalNamespace::OVRPlugin::Vector2f& dyn_RThumbstick();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector2f& dyn_RThumbstick();
   }; // OVRPlugin/ControllerState
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::ControllerState), 40 + sizeof(::GlobalNamespace::OVRPlugin::Vector2f)> __GlobalNamespace_OVRPlugin_ControllerStateSizeCheck;

@@ -49,15 +49,7 @@ namespace UnityEngine::EventSystems {
   // [TokenAttribute] Offset: FFFFFFFF
   class BaseRaycaster : public ::UnityEngine::EventSystems::UIBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.EventSystems.BaseRaycaster m_RootRaycaster
     // Size: 0x8
     // Offset: 0x18
@@ -68,27 +60,27 @@ namespace UnityEngine::EventSystems {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.EventSystems.BaseRaycaster m_RootRaycaster
-    ::UnityEngine::EventSystems::BaseRaycaster*& dyn_m_RootRaycaster();
+    [[deprecated]] ::UnityEngine::EventSystems::BaseRaycaster*& dyn_m_RootRaycaster();
     // public UnityEngine.Camera get_eventCamera()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::UnityEngine::Camera* get_eventCamera();
     // public System.Int32 get_priority()
-    // Offset: 0xBB60F0
+    // Offset: 0xEAC73C
     int get_priority();
     // public System.Int32 get_sortOrderPriority()
-    // Offset: 0xBB60F8
+    // Offset: 0xEAC744
     int get_sortOrderPriority();
     // public System.Int32 get_renderOrderPriority()
-    // Offset: 0xBB6100
+    // Offset: 0xEAC74C
     int get_renderOrderPriority();
     // public UnityEngine.EventSystems.BaseRaycaster get_rootRaycaster()
-    // Offset: 0xBB6108
+    // Offset: 0xEAC754
     ::UnityEngine::EventSystems::BaseRaycaster* get_rootRaycaster();
     // public System.Void Raycast(UnityEngine.EventSystems.PointerEventData eventData, System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult> resultAppendList)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Raycast(::UnityEngine::EventSystems::PointerEventData* eventData, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>* resultAppendList);
     // protected System.Void .ctor()
-    // Offset: 0xBB65D4
+    // Offset: 0xEACC20
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -102,27 +94,27 @@ namespace UnityEngine::EventSystems {
       return THROW_UNLESS((::il2cpp_utils::New<BaseRaycaster*, creationType>()));
     }
     // public override System.String ToString()
-    // Offset: 0xBB61D4
+    // Offset: 0xEAC820
     // Implemented from: UnityEngine.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();
     // protected override System.Void OnEnable()
-    // Offset: 0xBB64A4
+    // Offset: 0xEACAF0
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::OnEnable()
     void OnEnable();
     // protected override System.Void OnDisable()
-    // Offset: 0xBB6514
+    // Offset: 0xEACB60
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::OnDisable()
     void OnDisable();
     // protected override System.Void OnCanvasHierarchyChanged()
-    // Offset: 0xBB6584
+    // Offset: 0xEACBD0
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::OnCanvasHierarchyChanged()
     void OnCanvasHierarchyChanged();
     // protected override System.Void OnTransformParentChanged()
-    // Offset: 0xBB65AC
+    // Offset: 0xEACBF8
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::OnTransformParentChanged()
     void OnTransformParentChanged();

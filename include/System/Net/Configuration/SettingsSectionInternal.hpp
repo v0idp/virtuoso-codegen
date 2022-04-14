@@ -28,15 +28,7 @@ namespace System::Net::Configuration {
   // [TokenAttribute] Offset: FFFFFFFF
   class SettingsSectionInternal : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // readonly System.Boolean HttpListenerUnescapeRequestUrl
     // Size: 0x1
     // Offset: 0x10
@@ -57,20 +49,20 @@ namespace System::Net::Configuration {
     // Set static field: static private readonly System.Net.Configuration.SettingsSectionInternal instance
     static void _set_instance(::System::Net::Configuration::SettingsSectionInternal* value);
     // Get instance field reference: readonly System.Boolean HttpListenerUnescapeRequestUrl
-    bool& dyn_HttpListenerUnescapeRequestUrl();
+    [[deprecated]] bool& dyn_HttpListenerUnescapeRequestUrl();
     // Get instance field reference: readonly System.Net.Sockets.IPProtectionLevel IPProtectionLevel
-    ::System::Net::Sockets::IPProtectionLevel& dyn_IPProtectionLevel();
+    [[deprecated]] ::System::Net::Sockets::IPProtectionLevel& dyn_IPProtectionLevel();
     // static System.Net.Configuration.SettingsSectionInternal get_Section()
-    // Offset: 0x948844
+    // Offset: 0xD9C9D4
     static ::System::Net::Configuration::SettingsSectionInternal* get_Section();
     // System.Boolean get_Ipv6Enabled()
-    // Offset: 0x9488A8
+    // Offset: 0xD9CA38
     bool get_Ipv6Enabled();
     // static private System.Void .cctor()
-    // Offset: 0x9488C8
+    // Offset: 0xD9CA58
     static void _cctor();
     // public System.Void .ctor()
-    // Offset: 0x9488B0
+    // Offset: 0xD9CA40
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

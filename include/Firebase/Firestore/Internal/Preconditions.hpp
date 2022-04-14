@@ -37,10 +37,10 @@ namespace Firebase::Firestore::Internal {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, argument, paramName);
     }
     // static System.String CheckNotNullOrEmpty(System.String argument, System.String paramName)
-    // Offset: 0xC33F50
+    // Offset: 0xD4B994
     static ::StringW CheckNotNullOrEmpty(::StringW argument, ::StringW paramName);
     // static public System.Void CheckState(System.Boolean condition, System.String message)
-    // Offset: 0xC25A94
+    // Offset: 0xD477FC
     static void CheckState(bool condition, ::StringW message);
     // static public System.Void CheckState(System.Boolean condition, System.String format, T arg0)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -70,7 +70,7 @@ namespace Firebase::Firestore::Internal {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, condition, format, arg0, arg1, arg2);
     }
     // static System.Void CheckArgument(System.Boolean condition, System.String paramName, System.String message)
-    // Offset: 0xC33AE4
+    // Offset: 0xD55D80
     static void CheckArgument(bool condition, ::StringW paramName, ::StringW message);
   }; // Firebase.Firestore.Internal.Preconditions
   #pragma pack(pop)

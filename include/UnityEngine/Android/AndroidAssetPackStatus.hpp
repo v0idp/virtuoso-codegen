@@ -96,7 +96,7 @@ namespace UnityEngine::Android {
     // Set static field: static public UnityEngine.Android.AndroidAssetPackStatus NotInstalled
     static void _set_NotInstalled(::UnityEngine::Android::AndroidAssetPackStatus value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.Android.AndroidAssetPackStatus
   #pragma pack(pop)
   static check_size<sizeof(AndroidAssetPackStatus), 0 + sizeof(int)> __UnityEngine_Android_AndroidAssetPackStatusSizeCheck;

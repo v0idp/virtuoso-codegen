@@ -46,13 +46,13 @@ namespace VROSC {
     // Set static field: static public System.Func`2<VROSC.LoopStationGroup,System.Int32> <>9__9_0
     static void _set_$$9__9_0(::System::Func_2<::VROSC::LoopStationGroup*, int>* value);
     // static private System.Void .cctor()
-    // Offset: 0x13CFC78
+    // Offset: 0x19578C4
     static void _cctor();
     // System.Int32 <ArrangeGroups>b__9_0(VROSC.LoopStationGroup i)
-    // Offset: 0x13CFCE0
+    // Offset: 0x195792C
     int $ArrangeGroups$b__9_0(::VROSC::LoopStationGroup* i);
     // public System.Void .ctor()
-    // Offset: 0x13CFCD8
+    // Offset: 0x1957924
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

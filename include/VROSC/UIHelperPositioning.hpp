@@ -50,15 +50,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::UIHelperPositioning::$MoveOutObject$d__8
     class $MoveOutObject$d__8;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _directionOffset
     // Size: 0x4
     // Offset: 0x18
@@ -85,7 +77,7 @@ namespace VROSC {
     float minDistance;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x6744F0
+    // [RangeAttribute] Offset: 0x78A8A4
     // private System.Single _lookAtCamera
     // Size: 0x4
     // Offset: 0x28
@@ -94,14 +86,14 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     // Padding between fields: lookAtCamera and: targetBone
     char __padding4[0x4] = {};
-    // [HeaderAttribute] Offset: 0x674530
+    // [HeaderAttribute] Offset: 0x78A8E4
     // private UnityEngine.Transform _targetBone
     // Size: 0x8
     // Offset: 0x30
     ::UnityEngine::Transform* targetBone;
     // Field size check
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
-    // [HeaderAttribute] Offset: 0x67457C
+    // [HeaderAttribute] Offset: 0x78A930
     // private System.Single _moveDuration
     // Size: 0x4
     // Offset: 0x38
@@ -120,32 +112,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _directionOffset
-    float& dyn__directionOffset();
+    [[deprecated]] float& dyn__directionOffset();
     // Get instance field reference: private System.Single _verticalOffset
-    float& dyn__verticalOffset();
+    [[deprecated]] float& dyn__verticalOffset();
     // Get instance field reference: private System.Boolean _moveTowardsFace
-    bool& dyn__moveTowardsFace();
+    [[deprecated]] bool& dyn__moveTowardsFace();
     // Get instance field reference: private System.Single _minDistance
-    float& dyn__minDistance();
+    [[deprecated]] float& dyn__minDistance();
     // Get instance field reference: private System.Single _lookAtCamera
-    float& dyn__lookAtCamera();
+    [[deprecated]] float& dyn__lookAtCamera();
     // Get instance field reference: private UnityEngine.Transform _targetBone
-    ::UnityEngine::Transform*& dyn__targetBone();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__targetBone();
     // Get instance field reference: private System.Single _moveDuration
-    float& dyn__moveDuration();
+    [[deprecated]] float& dyn__moveDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve _moveCurve
-    ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
     // public System.Collections.IEnumerator MoveOutObject(UnityEngine.Transform target, UnityEngine.Vector3 endPosition, UnityEngine.Vector3 size)
-    // Offset: 0x139BD6C
+    // Offset: 0x190F614
     ::System::Collections::IEnumerator* MoveOutObject(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endPosition, ::UnityEngine::Vector3 size);
     // public System.Void PlaceAtEndPosition(UnityEngine.Transform target, VROSC.InputDevice device)
-    // Offset: 0x139BE20
+    // Offset: 0x190F6C8
     void PlaceAtEndPosition(::UnityEngine::Transform* target, ::VROSC::InputDevice* device);
     // public System.Void PlaceTargetBone(UnityEngine.Transform target, UnityEngine.Vector3 size)
-    // Offset: 0x139C1D8
+    // Offset: 0x190FA80
     void PlaceTargetBone(::UnityEngine::Transform* target, ::UnityEngine::Vector3 size);
     // public System.Void .ctor()
-    // Offset: 0x139C2D4
+    // Offset: 0x190FB7C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

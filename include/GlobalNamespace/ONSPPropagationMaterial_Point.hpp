@@ -30,15 +30,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class ONSPPropagationMaterial::Point : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single frequency
     // Size: 0x4
     // Offset: 0x10
@@ -53,11 +45,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single frequency
-    float& dyn_frequency();
+    [[deprecated]] float& dyn_frequency();
     // Get instance field reference: public System.Single data
-    float& dyn_data();
+    [[deprecated]] float& dyn_data();
     // public System.Void .ctor(System.Single frequency, System.Single data)
-    // Offset: 0x11C7470
+    // Offset: 0x176C378
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ONSPPropagationMaterial::Point* New_ctor(float frequency, float data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagationMaterial::Point::.ctor");

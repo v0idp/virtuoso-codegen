@@ -59,15 +59,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationGroupHandler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Collections.Generic.List`1<VROSC.LoopStationGroup> _groups
     // Size: 0x8
     // Offset: 0x18
@@ -134,45 +126,45 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Collections.Generic.List`1<VROSC.LoopStationGroup> _groups
-    ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__groups();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__groups();
     // Get instance field reference: protected VROSC.LoopStationGroup _groupPrefab
-    ::VROSC::LoopStationGroup*& dyn__groupPrefab();
+    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__groupPrefab();
     // Get instance field reference: protected UnityEngine.Transform _groupParent
-    ::UnityEngine::Transform*& dyn__groupParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__groupParent();
     // Get instance field reference: protected VROSC.GroupArranger _arranger
-    ::VROSC::GroupArranger*& dyn__arranger();
+    [[deprecated]] ::VROSC::GroupArranger*& dyn__arranger();
     // Get instance field reference: protected System.Boolean _autoSorted
-    bool& dyn__autoSorted();
+    [[deprecated]] bool& dyn__autoSorted();
     // Get instance field reference: private System.Boolean _needsSorting
-    bool& dyn__needsSorting();
+    [[deprecated]] bool& dyn__needsSorting();
     // Get instance field reference: protected VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: protected VROSC.LoopStationLoopHandler _loopHandler
-    ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
+    [[deprecated]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
     // Get instance field reference: public System.Action`1<VROSC.LoopStationGroup> OnGroupCreated
-    ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupCreated();
+    [[deprecated]] ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupCreated();
     // Get instance field reference: public System.Action`1<VROSC.LoopStationGroup> OnGroupRemoved
-    ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupRemoved();
+    [[deprecated]] ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupRemoved();
     // public System.Collections.Generic.List`1<VROSC.LoopStationGroup> get_Groups()
-    // Offset: 0x914170
+    // Offset: 0x1970204
     ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>* get_Groups();
     // public System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationLoopHandler loopHandler)
-    // Offset: 0x90E72C
+    // Offset: 0x1968160
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationLoopHandler* loopHandler);
     // protected VROSC.LoopStationGroup CreateGroup(VROSC.LoopStationGroup/VROSC.SetupVariables vars)
-    // Offset: 0x90F120
+    // Offset: 0x1968E20
     ::VROSC::LoopStationGroup* CreateGroup(::VROSC::LoopStationGroup::SetupVariables vars);
     // protected System.Void RemoveGroup(VROSC.LoopStationGroup group, System.Boolean fromReset)
-    // Offset: 0x90F3C4
+    // Offset: 0x19690C4
     void RemoveGroup(::VROSC::LoopStationGroup* group, bool fromReset);
     // private System.Void OnLoopCountChanged()
-    // Offset: 0x914178
+    // Offset: 0x197020C
     void OnLoopCountChanged();
     // private System.Void LateUpdate()
-    // Offset: 0x914184
+    // Offset: 0x1970218
     void LateUpdate();
     // public VROSC.LoopStationGroup GetGroupByID(System.String groupID)
-    // Offset: 0x913E08
+    // Offset: 0x196FD20
     ::VROSC::LoopStationGroup* GetGroupByID(::StringW groupID);
     // public System.Void SortGroups()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -181,7 +173,7 @@ namespace VROSC {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void RemoveAllGroups();
     // protected System.Void .ctor()
-    // Offset: 0x90FAEC
+    // Offset: 0x19697E4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

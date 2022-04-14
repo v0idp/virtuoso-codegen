@@ -50,79 +50,79 @@ namespace Unity::XR::Oculus {
     // Nested type: ::Unity::XR::Oculus::NativeMethods::Internal
     class Internal;
     // static System.Void SetColorScale(System.Single x, System.Single y, System.Single z, System.Single w)
-    // Offset: 0x12D9D28
+    // Offset: 0x18DBF9C
     static void SetColorScale(float x, float y, float z, float w);
     // static System.Void SetColorOffset(System.Single x, System.Single y, System.Single z, System.Single w)
-    // Offset: 0x12D9DD0
+    // Offset: 0x18DC044
     static void SetColorOffset(float x, float y, float z, float w);
     // static System.IntPtr GetOvrJava()
-    // Offset: 0x12D9E74
+    // Offset: 0x18DC0E8
     static ::System::IntPtr GetOvrJava();
     // static System.Void SetPropertyInt(System.IntPtr java, Unity.XR.Oculus.NativeMethods/Unity.XR.Oculus.OvrProperty prop, System.Int32 val)
-    // Offset: 0x12D9EEC
+    // Offset: 0x18DC160
     static void SetPropertyInt(::System::IntPtr java, ::Unity::XR::Oculus::NativeMethods::OvrProperty prop, int val);
     // static System.Boolean GetPropertyInt(System.IntPtr java, Unity.XR.Oculus.NativeMethods/Unity.XR.Oculus.OvrProperty propType, out System.Int32 intVal)
-    // Offset: 0x12D9F88
+    // Offset: 0x18DC1FC
     static bool GetPropertyInt(::System::IntPtr java, ::Unity::XR::Oculus::NativeMethods::OvrProperty propType, ByRef<int> intVal);
     // static System.Boolean GetIsSupportedDevice()
-    // Offset: 0x12DA028
+    // Offset: 0x18DC29C
     static bool GetIsSupportedDevice();
     // static System.Boolean LoadOVRPlugin(System.String ovrpPath)
-    // Offset: 0x12DA0A8
+    // Offset: 0x18DC31C
     static bool LoadOVRPlugin(::StringW ovrpPath);
     // static System.Void UnloadOVRPlugin()
-    // Offset: 0x12DA13C
+    // Offset: 0x18DC3B0
     static void UnloadOVRPlugin();
     // static System.Void SetUserDefinedSettings(Unity.XR.Oculus.NativeMethods/Unity.XR.Oculus.UserDefinedSettings settings)
-    // Offset: 0x12DA1B0
+    // Offset: 0x18DC424
     static void SetUserDefinedSettings(::Unity::XR::Oculus::NativeMethods::UserDefinedSettings settings);
     // static System.Int32 SetCPULevel(System.Int32 cpuLevel)
-    // Offset: 0x12DA270
+    // Offset: 0x18DC4E4
     static int SetCPULevel(int cpuLevel);
     // static System.Int32 SetGPULevel(System.Int32 gpuLevel)
-    // Offset: 0x12DA2F4
+    // Offset: 0x18DC568
     static int SetGPULevel(int gpuLevel);
     // static System.Void GetOVRPVersion(System.Byte[] version)
-    // Offset: 0x12DA378
+    // Offset: 0x18DC5EC
     static void GetOVRPVersion(::ArrayW<uint8_t> version);
     // static System.Void EnablePerfMetrics(System.Boolean enable)
-    // Offset: 0x12DA400
+    // Offset: 0x18DC674
     static void EnablePerfMetrics(bool enable);
     // static System.Void EnableAppMetrics(System.Boolean enable)
-    // Offset: 0x12DA488
+    // Offset: 0x18DC6FC
     static void EnableAppMetrics(bool enable);
     // static System.Boolean SetDeveloperModeStrict(System.Boolean active)
-    // Offset: 0x12D9710
+    // Offset: 0x18DB984
     static bool SetDeveloperModeStrict(bool active);
     // static System.Boolean GetHasInputFocus()
-    // Offset: 0x12D9B84
+    // Offset: 0x18DBDF8
     static bool GetHasInputFocus();
     // static System.Boolean GetBoundaryConfigured()
-    // Offset: 0x12D9558
+    // Offset: 0x18DB7CC
     static bool GetBoundaryConfigured();
     // static System.Boolean GetBoundaryDimensions(Unity.XR.Oculus.Boundary/Unity.XR.Oculus.BoundaryType boundaryType, out UnityEngine.Vector3 dimensions)
-    // Offset: 0x12D9560
+    // Offset: 0x18DB7D4
     static bool GetBoundaryDimensions(::Unity::XR::Oculus::Boundary::BoundaryType boundaryType, ByRef<::UnityEngine::Vector3> dimensions);
     // static System.Boolean GetBoundaryVisible()
-    // Offset: 0x12D9568
+    // Offset: 0x18DB7DC
     static bool GetBoundaryVisible();
     // static System.Void SetBoundaryVisible(System.Boolean boundaryVisible)
-    // Offset: 0x12D9574
+    // Offset: 0x18DB7E8
     static void SetBoundaryVisible(bool boundaryVisible);
     // static System.Boolean GetAppShouldQuit()
-    // Offset: 0x12DA824
+    // Offset: 0x18DCA98
     static bool GetAppShouldQuit();
     // static System.Boolean GetDisplayAvailableFrequencies(System.IntPtr ptr, ref System.Int32 numFrequencies)
-    // Offset: 0x12DA8A4
+    // Offset: 0x18DCB18
     static bool GetDisplayAvailableFrequencies(::System::IntPtr ptr, ByRef<int> numFrequencies);
     // static System.Boolean SetDisplayFrequency(System.Single refreshRate)
-    // Offset: 0x12DA940
+    // Offset: 0x18DCBB4
     static bool SetDisplayFrequency(float refreshRate);
     // static System.Boolean GetDisplayFrequency(out System.Single refreshRate)
-    // Offset: 0x12DA9D4
+    // Offset: 0x18DCC48
     static bool GetDisplayFrequency(ByRef<float> refreshRate);
     // static Unity.XR.Oculus.SystemHeadset GetSystemHeadsetType()
-    // Offset: 0x12DAA60
+    // Offset: 0x18DCCD4
     static ::Unity::XR::Oculus::SystemHeadset GetSystemHeadsetType();
   }; // Unity.XR.Oculus.NativeMethods
   #pragma pack(pop)

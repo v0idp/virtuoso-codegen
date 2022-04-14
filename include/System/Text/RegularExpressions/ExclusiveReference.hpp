@@ -33,15 +33,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class ExclusiveReference : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Text.RegularExpressions.RegexRunner _ref
     // Size: 0x8
     // Offset: 0x10
@@ -62,19 +54,19 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Text.RegularExpressions.RegexRunner _ref
-    ::System::Text::RegularExpressions::RegexRunner*& dyn__ref();
+    [[deprecated]] ::System::Text::RegularExpressions::RegexRunner*& dyn__ref();
     // Get instance field reference: private System.Object _obj
-    ::Il2CppObject*& dyn__obj();
+    [[deprecated]] ::Il2CppObject*& dyn__obj();
     // Get instance field reference: private System.Int32 _locked
-    int& dyn__locked();
+    [[deprecated]] int& dyn__locked();
     // System.Object Get()
-    // Offset: 0xD7EE34
+    // Offset: 0xEFFE10
     ::Il2CppObject* Get();
     // System.Void Release(System.Object obj)
-    // Offset: 0xD7EE84
+    // Offset: 0xEFFE60
     void Release(::Il2CppObject* obj);
     // public System.Void .ctor()
-    // Offset: 0xD7EF98
+    // Offset: 0xEFFF74
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

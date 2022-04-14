@@ -41,28 +41,28 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A233C
+    // [DescriptionAttribute] Offset: 0x6B64F0
     // static field const value: static public Oculus.Platform.AbuseReportVideoMode Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.AbuseReportVideoMode Unknown
     static ::Oculus::Platform::AbuseReportVideoMode _get_Unknown();
     // Set static field: static public Oculus.Platform.AbuseReportVideoMode Unknown
     static void _set_Unknown(::Oculus::Platform::AbuseReportVideoMode value);
-    // [DescriptionAttribute] Offset: 0x5A2374
+    // [DescriptionAttribute] Offset: 0x6B6528
     // static field const value: static public Oculus.Platform.AbuseReportVideoMode Collect
     static constexpr const int Collect = 1;
     // Get static field: static public Oculus.Platform.AbuseReportVideoMode Collect
     static ::Oculus::Platform::AbuseReportVideoMode _get_Collect();
     // Set static field: static public Oculus.Platform.AbuseReportVideoMode Collect
     static void _set_Collect(::Oculus::Platform::AbuseReportVideoMode value);
-    // [DescriptionAttribute] Offset: 0x5A23AC
+    // [DescriptionAttribute] Offset: 0x6B6560
     // static field const value: static public Oculus.Platform.AbuseReportVideoMode Optional
     static constexpr const int Optional = 2;
     // Get static field: static public Oculus.Platform.AbuseReportVideoMode Optional
     static ::Oculus::Platform::AbuseReportVideoMode _get_Optional();
     // Set static field: static public Oculus.Platform.AbuseReportVideoMode Optional
     static void _set_Optional(::Oculus::Platform::AbuseReportVideoMode value);
-    // [DescriptionAttribute] Offset: 0x5A23E4
+    // [DescriptionAttribute] Offset: 0x6B6598
     // static field const value: static public Oculus.Platform.AbuseReportVideoMode Skip
     static constexpr const int Skip = 3;
     // Get static field: static public Oculus.Platform.AbuseReportVideoMode Skip
@@ -70,7 +70,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.AbuseReportVideoMode Skip
     static void _set_Skip(::Oculus::Platform::AbuseReportVideoMode value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.AbuseReportVideoMode
   #pragma pack(pop)
   static check_size<sizeof(AbuseReportVideoMode), 0 + sizeof(int)> __Oculus_Platform_AbuseReportVideoModeSizeCheck;

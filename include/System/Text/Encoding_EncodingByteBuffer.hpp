@@ -32,15 +32,7 @@ namespace System::Text {
   // [TokenAttribute] Offset: FFFFFFFF
   class Encoding::EncodingByteBuffer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte* bytes
     // Size: 0x8
     // Offset: 0x10
@@ -105,58 +97,58 @@ namespace System::Text {
     static_assert(sizeof(::System::Text::EncoderFallbackBuffer*) == 0x8);
     public:
     // Get instance field reference: private System.Byte* bytes
-    uint8_t*& dyn_bytes();
+    [[deprecated]] uint8_t*& dyn_bytes();
     // Get instance field reference: private System.Byte* byteStart
-    uint8_t*& dyn_byteStart();
+    [[deprecated]] uint8_t*& dyn_byteStart();
     // Get instance field reference: private System.Byte* byteEnd
-    uint8_t*& dyn_byteEnd();
+    [[deprecated]] uint8_t*& dyn_byteEnd();
     // Get instance field reference: private System.Char* chars
-    ::Il2CppChar*& dyn_chars();
+    [[deprecated]] ::Il2CppChar*& dyn_chars();
     // Get instance field reference: private System.Char* charStart
-    ::Il2CppChar*& dyn_charStart();
+    [[deprecated]] ::Il2CppChar*& dyn_charStart();
     // Get instance field reference: private System.Char* charEnd
-    ::Il2CppChar*& dyn_charEnd();
+    [[deprecated]] ::Il2CppChar*& dyn_charEnd();
     // Get instance field reference: private System.Int32 byteCountResult
-    int& dyn_byteCountResult();
+    [[deprecated]] int& dyn_byteCountResult();
     // Get instance field reference: private System.Text.Encoding enc
-    ::System::Text::Encoding*& dyn_enc();
+    [[deprecated]] ::System::Text::Encoding*& dyn_enc();
     // Get instance field reference: private System.Text.EncoderNLS encoder
-    ::System::Text::EncoderNLS*& dyn_encoder();
+    [[deprecated]] ::System::Text::EncoderNLS*& dyn_encoder();
     // Get instance field reference: System.Text.EncoderFallbackBuffer fallbackBuffer
-    ::System::Text::EncoderFallbackBuffer*& dyn_fallbackBuffer();
+    [[deprecated]] ::System::Text::EncoderFallbackBuffer*& dyn_fallbackBuffer();
     // System.Boolean get_MoreData()
-    // Offset: 0xDD37E8
+    // Offset: 0xE4FE94
     bool get_MoreData();
     // System.Int32 get_CharsUsed()
-    // Offset: 0xDD3898
+    // Offset: 0xE4FF44
     int get_CharsUsed();
     // System.Int32 get_Count()
-    // Offset: 0xDD38B0
+    // Offset: 0xE4FF5C
     int get_Count();
     // System.Void .ctor(System.Text.Encoding inEncoding, System.Text.EncoderNLS inEncoder, System.Byte* inByteStart, System.Int32 inByteCount, System.Char* inCharStart, System.Int32 inCharCount)
-    // Offset: 0xDD3494
+    // Offset: 0xE4FB40
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Encoding::EncodingByteBuffer* New_ctor(::System::Text::Encoding* inEncoding, ::System::Text::EncoderNLS* inEncoder, uint8_t* inByteStart, int inByteCount, ::Il2CppChar* inCharStart, int inCharCount) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::Encoding::EncodingByteBuffer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Encoding::EncodingByteBuffer*, creationType>(inEncoding, inEncoder, inByteStart, inByteCount, inCharStart, inCharCount)));
     }
     // System.Boolean AddByte(System.Byte b, System.Int32 moreBytesExpected)
-    // Offset: 0xDD36A4
+    // Offset: 0xE4FD50
     bool AddByte(uint8_t b, int moreBytesExpected);
     // System.Boolean AddByte(System.Byte b1)
-    // Offset: 0xDD3780
+    // Offset: 0xE4FE2C
     bool AddByte(uint8_t b1);
     // System.Boolean AddByte(System.Byte b1, System.Byte b2)
-    // Offset: 0xDD3788
+    // Offset: 0xE4FE34
     bool AddByte(uint8_t b1, uint8_t b2);
     // System.Boolean AddByte(System.Byte b1, System.Byte b2, System.Int32 moreBytesExpected)
-    // Offset: 0xDD3790
+    // Offset: 0xE4FE3C
     bool AddByte(uint8_t b1, uint8_t b2, int moreBytesExpected);
     // System.Void MovePrevious(System.Boolean bThrow)
-    // Offset: 0xDD36F8
+    // Offset: 0xE4FDA4
     void MovePrevious(bool bThrow);
     // System.Char GetNextChar()
-    // Offset: 0xDD383C
+    // Offset: 0xE4FEE8
     ::Il2CppChar GetNextChar();
   }; // System.Text.Encoding/System.Text.EncodingByteBuffer
   #pragma pack(pop)

@@ -40,15 +40,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class TransformMover::$MoveInObject$d__48 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -105,42 +97,42 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.GrabbingDevice device
-    ::VROSC::GrabbingDevice*& dyn_device();
+    [[deprecated]] ::VROSC::GrabbingDevice*& dyn_device();
     // Get instance field reference: public VROSC.TransformMover <>4__this
-    ::VROSC::TransformMover*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::TransformMover*& dyn_$$4__this();
     // Get instance field reference: private UnityEngine.Transform <controller>5__2
-    ::UnityEngine::Transform*& dyn_$controller$5__2();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_$controller$5__2();
     // Get instance field reference: private UnityEngine.Vector3 <_moverStartPosition>5__3
-    ::UnityEngine::Vector3& dyn_$_moverStartPosition$5__3();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$_moverStartPosition$5__3();
     // Get instance field reference: private UnityEngine.Vector3 <_moverEndPosition>5__4
-    ::UnityEngine::Vector3& dyn_$_moverEndPosition$5__4();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$_moverEndPosition$5__4();
     // Get instance field reference: private System.Single <time>5__5
-    float& dyn_$time$5__5();
+    [[deprecated]] float& dyn_$time$5__5();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x140D108
+    // Offset: 0x8DD918
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x140D150
+    // Offset: 0x8DD960
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x140CDC0
+    // Offset: 0x8DD5D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransformMover::$MoveInObject$d__48* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TransformMover::$MoveInObject$d__48::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TransformMover::$MoveInObject$d__48*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x140CDEC
+    // Offset: 0x8DD5FC
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x140CDF0
+    // Offset: 0x8DD600
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x140D110
+    // Offset: 0x8DD920
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.TransformMover/VROSC.<MoveInObject>d__48
   #pragma pack(pop)

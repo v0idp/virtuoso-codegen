@@ -57,15 +57,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::OculusSpatializerUnity::AudioRaycastCallback
     class AudioRaycastCallback;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.LayerMask layerMask
     // Size: 0x4
     // Offset: 0x18
@@ -200,88 +192,88 @@ namespace GlobalNamespace {
     // Set static field: static private System.String strOSP
     static void _set_strOSP(::StringW value);
     // Get instance field reference: public UnityEngine.LayerMask layerMask
-    ::UnityEngine::LayerMask& dyn_layerMask();
+    [[deprecated]] ::UnityEngine::LayerMask& dyn_layerMask();
     // Get instance field reference: public System.Boolean visualizeRoom
-    bool& dyn_visualizeRoom();
+    [[deprecated]] bool& dyn_visualizeRoom();
     // Get instance field reference: private System.Boolean roomVisualizationInitialized
-    bool& dyn_roomVisualizationInitialized();
+    [[deprecated]] bool& dyn_roomVisualizationInitialized();
     // Get instance field reference: public System.Int32 raysPerSecond
-    int& dyn_raysPerSecond();
+    [[deprecated]] int& dyn_raysPerSecond();
     // Get instance field reference: public System.Single roomInterpSpeed
-    float& dyn_roomInterpSpeed();
+    [[deprecated]] float& dyn_roomInterpSpeed();
     // Get instance field reference: public System.Single maxWallDistance
-    float& dyn_maxWallDistance();
+    [[deprecated]] float& dyn_maxWallDistance();
     // Get instance field reference: public System.Int32 rayCacheSize
-    int& dyn_rayCacheSize();
+    [[deprecated]] int& dyn_rayCacheSize();
     // Get instance field reference: public System.Boolean dynamicReflectionsEnabled
-    bool& dyn_dynamicReflectionsEnabled();
+    [[deprecated]] bool& dyn_dynamicReflectionsEnabled();
     // Get instance field reference: private System.Single particleSize
-    float& dyn_particleSize();
+    [[deprecated]] float& dyn_particleSize();
     // Get instance field reference: private System.Single particleOffset
-    float& dyn_particleOffset();
+    [[deprecated]] float& dyn_particleOffset();
     // Get instance field reference: private UnityEngine.GameObject room
-    ::UnityEngine::GameObject*& dyn_room();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_room();
     // Get instance field reference: private UnityEngine.Renderer[] wallRenderer
-    ::ArrayW<::UnityEngine::Renderer*>& dyn_wallRenderer();
+    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn_wallRenderer();
     // Get instance field reference: private System.Single[] dims
-    ::ArrayW<float>& dyn_dims();
+    [[deprecated]] ::ArrayW<float>& dyn_dims();
     // Get instance field reference: private System.Single[] coefs
-    ::ArrayW<float>& dyn_coefs();
+    [[deprecated]] ::ArrayW<float>& dyn_coefs();
     // Get instance field reference: private UnityEngine.Vector3[] points
-    ::ArrayW<::UnityEngine::Vector3>& dyn_points();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_points();
     // Get instance field reference: private UnityEngine.Vector3[] normals
-    ::ArrayW<::UnityEngine::Vector3>& dyn_normals();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_normals();
     // Get instance field reference: private UnityEngine.ParticleSystem sys
-    ::UnityEngine::ParticleSystem*& dyn_sys();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_sys();
     // Get instance field reference: private UnityEngine.ParticleSystem/UnityEngine.Particle[] particles
-    ::ArrayW<::UnityEngine::ParticleSystem::Particle>& dyn_particles();
+    [[deprecated]] ::ArrayW<::UnityEngine::ParticleSystem::Particle>& dyn_particles();
     // static private UnityEngine.Vector3 swapHandedness(UnityEngine.Vector3 vec)
-    // Offset: 0x11C815C
+    // Offset: 0x176D064
     static ::UnityEngine::Vector3 swapHandedness(::UnityEngine::Vector3 vec);
     // static private System.Void AudioRaycast(UnityEngine.Vector3 origin, UnityEngine.Vector3 direction, out UnityEngine.Vector3 point, out UnityEngine.Vector3 normal, System.IntPtr data)
-    // Offset: 0x11C7FEC
+    // Offset: 0x176CEF4
     static void AudioRaycast(::UnityEngine::Vector3 origin, ::UnityEngine::Vector3 direction, ByRef<::UnityEngine::Vector3> point, ByRef<::UnityEngine::Vector3> normal, ::System::IntPtr data);
     // private System.Void Start()
-    // Offset: 0x11C8164
+    // Offset: 0x176D06C
     void Start();
     // private System.Void OnDestroy()
-    // Offset: 0x11C82B8
+    // Offset: 0x176D1C0
     void OnDestroy();
     // private System.Void Update()
-    // Offset: 0x11C83B4
+    // Offset: 0x176D2BC
     void Update();
     // private System.Void inititalizeRoomVisualization()
-    // Offset: 0x11C8CD0
+    // Offset: 0x176DBD8
     void inititalizeRoomVisualization();
     // static private System.Int32 OSP_Unity_AssignRaycastCallback(OculusSpatializerUnity/AudioRaycastCallback callback, System.IntPtr data)
-    // Offset: 0x11C8224
+    // Offset: 0x176D12C
     static int OSP_Unity_AssignRaycastCallback(::GlobalNamespace::OculusSpatializerUnity::AudioRaycastCallback* callback, ::System::IntPtr data);
     // static private System.Int32 OSP_Unity_AssignRaycastCallback(System.IntPtr callback, System.IntPtr data)
-    // Offset: 0x11C8324
+    // Offset: 0x176D22C
     static int OSP_Unity_AssignRaycastCallback(::System::IntPtr callback, ::System::IntPtr data);
     // static private System.Int32 OSP_Unity_SetDynamicRoomRaysPerSecond(System.Int32 RaysPerSecond)
-    // Offset: 0x11C8A38
+    // Offset: 0x176D940
     static int OSP_Unity_SetDynamicRoomRaysPerSecond(int RaysPerSecond);
     // static private System.Int32 OSP_Unity_SetDynamicRoomInterpSpeed(System.Single InterpSpeed)
-    // Offset: 0x11C8AB8
+    // Offset: 0x176D9C0
     static int OSP_Unity_SetDynamicRoomInterpSpeed(float InterpSpeed);
     // static private System.Int32 OSP_Unity_SetDynamicRoomMaxWallDistance(System.Single MaxWallDistance)
-    // Offset: 0x11C8B40
+    // Offset: 0x176DA48
     static int OSP_Unity_SetDynamicRoomMaxWallDistance(float MaxWallDistance);
     // static private System.Int32 OSP_Unity_SetDynamicRoomRaysRayCacheSize(System.Int32 RayCacheSize)
-    // Offset: 0x11C8BC8
+    // Offset: 0x176DAD0
     static int OSP_Unity_SetDynamicRoomRaysRayCacheSize(int RayCacheSize);
     // static private System.Int32 OSP_Unity_UpdateRoomModel(System.Single wetLevel)
-    // Offset: 0x11C8C48
+    // Offset: 0x176DB50
     static int OSP_Unity_UpdateRoomModel(float wetLevel);
     // static private System.Int32 OSP_Unity_GetRoomDimensions(System.Single[] roomDimensions, System.Single[] reflectionsCoefs, out UnityEngine.Vector3 position)
-    // Offset: 0x11C9998
+    // Offset: 0x176E8A0
     static int OSP_Unity_GetRoomDimensions(::ArrayW<float> roomDimensions, ::ArrayW<float> reflectionsCoefs, ByRef<::UnityEngine::Vector3> position);
     // static private System.Int32 OSP_Unity_GetRaycastHits(UnityEngine.Vector3[] points, UnityEngine.Vector3[] normals, System.Int32 length)
-    // Offset: 0x11C9A40
+    // Offset: 0x176E948
     static int OSP_Unity_GetRaycastHits(::ArrayW<::UnityEngine::Vector3> points, ::ArrayW<::UnityEngine::Vector3> normals, int length);
     // public System.Void .ctor()
-    // Offset: 0x11C9AE8
+    // Offset: 0x176E9F0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -294,7 +286,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OculusSpatializerUnity*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x11C9C40
+    // Offset: 0x176EB48
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

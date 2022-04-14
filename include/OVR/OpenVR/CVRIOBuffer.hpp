@@ -40,15 +40,7 @@ namespace OVR::OpenVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class CVRIOBuffer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private OVR.OpenVR.IVRIOBuffer FnTable
     // Size: 0x28
     // Offset: 0x10
@@ -61,28 +53,28 @@ namespace OVR::OpenVR {
       return FnTable;
     }
     // Get instance field reference: private OVR.OpenVR.IVRIOBuffer FnTable
-    ::OVR::OpenVR::IVRIOBuffer& dyn_FnTable();
+    [[deprecated]] ::OVR::OpenVR::IVRIOBuffer& dyn_FnTable();
     // System.Void .ctor(System.IntPtr pInterface)
-    // Offset: 0x80E348
+    // Offset: 0x983914
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CVRIOBuffer* New_ctor(::System::IntPtr pInterface) {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::OpenVR::CVRIOBuffer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CVRIOBuffer*, creationType>(pInterface)));
     }
     // public OVR.OpenVR.EIOBufferError Open(System.String pchPath, OVR.OpenVR.EIOBufferMode mode, System.UInt32 unElementSize, System.UInt32 unElements, ref System.UInt64 pulBuffer)
-    // Offset: 0x80E470
+    // Offset: 0x983A3C
     ::OVR::OpenVR::EIOBufferError Open(::StringW pchPath, ::OVR::OpenVR::EIOBufferMode mode, uint unElementSize, uint unElements, ByRef<uint64_t> pulBuffer);
     // public OVR.OpenVR.EIOBufferError Close(System.UInt64 ulBuffer)
-    // Offset: 0x80E490
+    // Offset: 0x983A5C
     ::OVR::OpenVR::EIOBufferError Close(uint64_t ulBuffer);
     // public OVR.OpenVR.EIOBufferError Read(System.UInt64 ulBuffer, System.IntPtr pDst, System.UInt32 unBytes, ref System.UInt32 punRead)
-    // Offset: 0x80E4AC
+    // Offset: 0x983A78
     ::OVR::OpenVR::EIOBufferError Read(uint64_t ulBuffer, ::System::IntPtr pDst, uint unBytes, ByRef<uint> punRead);
     // public OVR.OpenVR.EIOBufferError Write(System.UInt64 ulBuffer, System.IntPtr pSrc, System.UInt32 unBytes)
-    // Offset: 0x80E4CC
+    // Offset: 0x983A98
     ::OVR::OpenVR::EIOBufferError Write(uint64_t ulBuffer, ::System::IntPtr pSrc, uint unBytes);
     // public System.UInt64 PropertyContainer(System.UInt64 ulBuffer)
-    // Offset: 0x80E4E8
+    // Offset: 0x983AB4
     uint64_t PropertyContainer(uint64_t ulBuffer);
   }; // OVR.OpenVR.CVRIOBuffer
   #pragma pack(pop)

@@ -52,22 +52,22 @@ namespace UnityEngine::Android {
     // Set static field: static private UnityEngine.AndroidJavaObject m_Activity
     static void _set_m_Activity(::UnityEngine::AndroidJavaObject* value);
     // static private UnityEngine.AndroidJavaObject GetActivity()
-    // Offset: 0x127BAE0
+    // Offset: 0x1873E84
     static ::UnityEngine::AndroidJavaObject* GetActivity();
     // static private UnityEngine.AndroidJavaObject GetUnityPermissions()
-    // Offset: 0x127BCB4
+    // Offset: 0x1874058
     static ::UnityEngine::AndroidJavaObject* GetUnityPermissions();
     // static public System.Boolean HasUserAuthorizedPermission(System.String permission)
-    // Offset: 0x127BD58
+    // Offset: 0x18740FC
     static bool HasUserAuthorizedPermission(::StringW permission);
     // static public System.Void RequestUserPermission(System.String permission)
-    // Offset: 0x127BE84
+    // Offset: 0x1874228
     static void RequestUserPermission(::StringW permission);
     // static public System.Void RequestUserPermission(System.String permission, UnityEngine.Android.PermissionCallbacks callbacks)
-    // Offset: 0x127C080
+    // Offset: 0x1874424
     static void RequestUserPermission(::StringW permission, ::UnityEngine::Android::PermissionCallbacks* callbacks);
     // static public System.Void RequestUserPermissions(System.String[] permissions, UnityEngine.Android.PermissionCallbacks callbacks)
-    // Offset: 0x127BF30
+    // Offset: 0x18742D4
     static void RequestUserPermissions(::ArrayW<::StringW> permissions, ::UnityEngine::Android::PermissionCallbacks* callbacks);
   }; // UnityEngine.Android.Permission
   #pragma pack(pop)

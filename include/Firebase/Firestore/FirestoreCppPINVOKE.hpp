@@ -48,6 +48,8 @@ namespace Firebase::Firestore {
     class SWIGPendingException;
     // Nested type: ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGStringHelper
     class SWIGStringHelper;
+    // Nested type: ::Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper
+    class FirestoreExceptionHelper;
     // Get static field: static protected Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper swigExceptionHelper
     static ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper* _get_swigExceptionHelper();
     // Set static field: static protected Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper swigExceptionHelper
@@ -56,368 +58,423 @@ namespace Firebase::Firestore {
     static ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGStringHelper* _get_swigStringHelper();
     // Set static field: static protected Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGStringHelper swigStringHelper
     static void _set_swigStringHelper(::Firebase::Firestore::FirestoreCppPINVOKE::SWIGStringHelper* value);
+    // Get static field: static private Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.FirestoreExceptionHelper exceptionHelper
+    static ::Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper* _get_exceptionHelper();
+    // Set static field: static private Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.FirestoreExceptionHelper exceptionHelper
+    static void _set_exceptionHelper(::Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper* value);
     // static private System.Void .cctor()
-    // Offset: 0xC3968C
+    // Offset: 0xD5CBA0
     static void _cctor();
     // static public System.IntPtr new_GeoPointProxy(System.Double jarg1, System.Double jarg2)
-    // Offset: 0xC39744
+    // Offset: 0xD5CC94
     static ::System::IntPtr new_GeoPointProxy(double jarg1, double jarg2);
     // static public System.Double GeoPointProxy_latitude(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC397D4
+    // Offset: 0xD5CD24
     static double GeoPointProxy_latitude(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Double GeoPointProxy_longitude(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39854
+    // Offset: 0xD5CDA4
     static double GeoPointProxy_longitude(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_GeoPointProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC398D4
+    // Offset: 0xD5CE24
     static void delete_GeoPointProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr new_TimestampProxy__SWIG_1(System.Int64 jarg1, System.Int32 jarg2)
-    // Offset: 0xC39954
+    // Offset: 0xD5CEA4
     static ::System::IntPtr new_TimestampProxy__SWIG_1(int64_t jarg1, int jarg2);
     // static public System.Int64 TimestampProxy_seconds(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC399E4
+    // Offset: 0xD5CF34
     static int64_t TimestampProxy_seconds(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Int32 TimestampProxy_nanoseconds(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39A64
+    // Offset: 0xD5CFB4
     static int TimestampProxy_nanoseconds(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String TimestampProxy_ToString(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39AE4
+    // Offset: 0xD5D034
     static ::StringW TimestampProxy_ToString(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_TimestampProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39B7C
+    // Offset: 0xD5D0CC
     static void delete_TimestampProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr Future_QuerySnapshot_SWIG_OnCompletion(System.Runtime.InteropServices.HandleRef jarg1, Firebase.Firestore.Future_QuerySnapshot/Firebase.Firestore.SWIG_CompletionDelegate jarg2, System.Int32 jarg3)
-    // Offset: 0xC39BFC
+    // Offset: 0xD5D14C
     static ::System::IntPtr Future_QuerySnapshot_SWIG_OnCompletion(::System::Runtime::InteropServices::HandleRef jarg1, ::Firebase::Firestore::Future_QuerySnapshot::SWIG_CompletionDelegate* jarg2, int jarg3);
     // static public System.Void Future_QuerySnapshot_SWIG_FreeCompletionData(System.Runtime.InteropServices.HandleRef jarg1, System.IntPtr jarg2)
-    // Offset: 0xC39C98
+    // Offset: 0xD5D1E8
     static void Future_QuerySnapshot_SWIG_FreeCompletionData(::System::Runtime::InteropServices::HandleRef jarg1, ::System::IntPtr jarg2);
     // static public System.IntPtr Future_QuerySnapshot_GetResult(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39D28
+    // Offset: 0xD5D278
     static ::System::IntPtr Future_QuerySnapshot_GetResult(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_Future_QuerySnapshot(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39DA8
+    // Offset: 0xD5D2F8
     static void delete_Future_QuerySnapshot(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr Future_DocumentSnapshot_SWIG_OnCompletion(System.Runtime.InteropServices.HandleRef jarg1, Firebase.Firestore.Future_DocumentSnapshot/Firebase.Firestore.SWIG_CompletionDelegate jarg2, System.Int32 jarg3)
-    // Offset: 0xC39E28
+    // Offset: 0xD5D378
     static ::System::IntPtr Future_DocumentSnapshot_SWIG_OnCompletion(::System::Runtime::InteropServices::HandleRef jarg1, ::Firebase::Firestore::Future_DocumentSnapshot::SWIG_CompletionDelegate* jarg2, int jarg3);
     // static public System.Void Future_DocumentSnapshot_SWIG_FreeCompletionData(System.Runtime.InteropServices.HandleRef jarg1, System.IntPtr jarg2)
-    // Offset: 0xC39EC4
+    // Offset: 0xD5D414
     static void Future_DocumentSnapshot_SWIG_FreeCompletionData(::System::Runtime::InteropServices::HandleRef jarg1, ::System::IntPtr jarg2);
     // static public System.IntPtr Future_DocumentSnapshot_GetResult(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39F54
+    // Offset: 0xD5D4A4
     static ::System::IntPtr Future_DocumentSnapshot_GetResult(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_Future_DocumentSnapshot(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39FD4
+    // Offset: 0xD5D524
     static void delete_Future_DocumentSnapshot(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr Future_FirestoreVoid_SWIG_OnCompletion(System.Runtime.InteropServices.HandleRef jarg1, Firebase.Firestore.Future_FirestoreVoid/Firebase.Firestore.SWIG_CompletionDelegate jarg2, System.Int32 jarg3)
-    // Offset: 0xC3A054
+    // Offset: 0xD5D5A4
     static ::System::IntPtr Future_FirestoreVoid_SWIG_OnCompletion(::System::Runtime::InteropServices::HandleRef jarg1, ::Firebase::Firestore::Future_FirestoreVoid::SWIG_CompletionDelegate* jarg2, int jarg3);
     // static public System.Void Future_FirestoreVoid_SWIG_FreeCompletionData(System.Runtime.InteropServices.HandleRef jarg1, System.IntPtr jarg2)
-    // Offset: 0xC3A0F0
+    // Offset: 0xD5D640
     static void Future_FirestoreVoid_SWIG_FreeCompletionData(::System::Runtime::InteropServices::HandleRef jarg1, ::System::IntPtr jarg2);
     // static public System.Void delete_Future_FirestoreVoid(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3A180
+    // Offset: 0xD5D6D0
     static void delete_Future_FirestoreVoid(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr new_FieldPathProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3456C
+    // Offset: 0xD5671C
     static ::System::IntPtr new_FieldPathProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_FieldPathProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC347EC
+    // Offset: 0xD5699C
     static void delete_FieldPathProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr new_SetOptionsProxy()
-    // Offset: 0xC3A200
+    // Offset: 0xD5D750
     static ::System::IntPtr new_SetOptionsProxy();
     // static public System.Void delete_SetOptionsProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3A274
+    // Offset: 0xD5D7C4
     static void delete_SetOptionsProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_DocumentReferenceProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC30BA0
+    // Offset: 0xD52CA8
     static void delete_DocumentReferenceProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String DocumentReferenceProxy_id(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC30CC4
+    // Offset: 0xD52DC4
     static ::StringW DocumentReferenceProxy_id(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String DocumentReferenceProxy_path(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC30E00
+    // Offset: 0xD52EF8
     static ::StringW DocumentReferenceProxy_path(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr DocumentReferenceProxy_Collection__SWIG_0(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0xC30F7C
+    // Offset: 0xD5306C
     static ::System::IntPtr DocumentReferenceProxy_Collection__SWIG_0(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.IntPtr DocumentReferenceProxy_Get__SWIG_0(System.Runtime.InteropServices.HandleRef jarg1, System.Int32 jarg2)
-    // Offset: 0xC31120
+    // Offset: 0xD53208
     static ::System::IntPtr DocumentReferenceProxy_Get__SWIG_0(::System::Runtime::InteropServices::HandleRef jarg1, int jarg2);
     // static public System.IntPtr DocumentReferenceProxy_Delete(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC314D8
+    // Offset: 0xD535E8
     static ::System::IntPtr DocumentReferenceProxy_Delete(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Boolean DocumentReferenceProxy_is_valid(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC317BC
+    // Offset: 0xD538F4
     static bool DocumentReferenceProxy_is_valid(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_DocumentSnapshotProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC31BCC
+    // Offset: 0xD53E98
     static void delete_DocumentSnapshotProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String DocumentSnapshotProxy_id(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC31CF0
+    // Offset: 0xD53FB4
     static ::StringW DocumentSnapshotProxy_id(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr DocumentSnapshotProxy_reference(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC31E5C
+    // Offset: 0xD54118
     static ::System::IntPtr DocumentSnapshotProxy_reference(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Boolean DocumentSnapshotProxy_exists(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC31F80
+    // Offset: 0xD54234
     static bool DocumentSnapshotProxy_exists(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr DocumentSnapshotProxy_Get__SWIG_4(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2, System.Int32 jarg3)
-    // Offset: 0xC3217C
+    // Offset: 0xD54428
     static ::System::IntPtr DocumentSnapshotProxy_Get__SWIG_4(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2, int jarg3);
     // static public System.Void delete_FieldValueProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC35784
+    // Offset: 0xD5791C
     static void delete_FieldValueProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueProxy_Boolean(System.Boolean jarg1)
-    // Offset: 0xC35804
+    // Offset: 0xD5799C
     static ::System::IntPtr FieldValueProxy_Boolean(bool jarg1);
     // static public System.IntPtr FieldValueProxy_Integer(System.Int64 jarg1)
-    // Offset: 0xC35884
+    // Offset: 0xD57A1C
     static ::System::IntPtr FieldValueProxy_Integer(int64_t jarg1);
     // static public System.IntPtr FieldValueProxy_Double(System.Double jarg1)
-    // Offset: 0xC35904
+    // Offset: 0xD57A9C
     static ::System::IntPtr FieldValueProxy_Double(double jarg1);
     // static public System.IntPtr FieldValueProxy_Timestamp(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC359F8
+    // Offset: 0xD57B90
     static ::System::IntPtr FieldValueProxy_Timestamp(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueProxy_String(System.String jarg1)
-    // Offset: 0xC35B44
+    // Offset: 0xD57CD4
     static ::System::IntPtr FieldValueProxy_String(::StringW jarg1);
     // static public System.IntPtr FieldValueProxy_Blob(System.Runtime.InteropServices.HandleRef jarg1, System.UInt32 jarg2)
-    // Offset: 0xC35BDC
+    // Offset: 0xD57D6C
     static ::System::IntPtr FieldValueProxy_Blob(::System::Runtime::InteropServices::HandleRef jarg1, uint jarg2);
     // static public System.IntPtr FieldValueProxy_Reference(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC35C6C
+    // Offset: 0xD57DFC
     static ::System::IntPtr FieldValueProxy_Reference(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueProxy_GeoPoint(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC35E38
+    // Offset: 0xD57FC0
     static ::System::IntPtr FieldValueProxy_GeoPoint(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Int32 FieldValueProxy_type(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC35EB8
+    // Offset: 0xD58040
     static int FieldValueProxy_type(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Boolean FieldValueProxy_is_null(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC35FDC
+    // Offset: 0xD5815C
     static bool FieldValueProxy_is_null(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Boolean FieldValueProxy_is_map(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36108
+    // Offset: 0xD581E4
     static bool FieldValueProxy_is_map(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Boolean FieldValueProxy_boolean_value(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36190
+    // Offset: 0xD5826C
     static bool FieldValueProxy_boolean_value(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Int64 FieldValueProxy_integer_value(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36218
+    // Offset: 0xD582F4
     static int64_t FieldValueProxy_integer_value(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Double FieldValueProxy_double_value(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36298
+    // Offset: 0xD58374
     static double FieldValueProxy_double_value(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueProxy_timestamp_value(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36318
+    // Offset: 0xD583F4
     static ::System::IntPtr FieldValueProxy_timestamp_value(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String FieldValueProxy_string_value(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC363FC
+    // Offset: 0xD584D8
     static ::StringW FieldValueProxy_string_value(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueProxy_blob_value(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36494
+    // Offset: 0xD58570
     static ::System::IntPtr FieldValueProxy_blob_value(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.UInt32 FieldValueProxy_blob_size(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36514
+    // Offset: 0xD585F0
     static uint FieldValueProxy_blob_size(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueProxy_reference_value(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36594
+    // Offset: 0xD58670
     static ::System::IntPtr FieldValueProxy_reference_value(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueProxy_geo_point_value(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36614
+    // Offset: 0xD586F0
     static ::System::IntPtr FieldValueProxy_geo_point_value(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Boolean FieldValueProxy_is_valid(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3679C
+    // Offset: 0xD58870
     static bool FieldValueProxy_is_valid(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueProxy_Null()
-    // Offset: 0xC368E8
+    // Offset: 0xD589B4
     static ::System::IntPtr FieldValueProxy_Null();
     // static public System.IntPtr FieldValueProxy_Delete()
-    // Offset: 0xC3695C
+    // Offset: 0xD58A28
     static ::System::IntPtr FieldValueProxy_Delete();
     // static public System.IntPtr FieldValueProxy_ServerTimestamp()
-    // Offset: 0xC369D0
+    // Offset: 0xD58A9C
     static ::System::IntPtr FieldValueProxy_ServerTimestamp();
     // static public System.IntPtr FieldValueProxy_IntegerIncrement(System.Int64 jarg1)
-    // Offset: 0xC36A44
+    // Offset: 0xD58B10
     static ::System::IntPtr FieldValueProxy_IntegerIncrement(int64_t jarg1);
     // static public System.Void delete_WriteBatchProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3A2F4
+    // Offset: 0xD5D844
     static void delete_WriteBatchProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr WriteBatchProxy_Delete(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2)
-    // Offset: 0xC3A374
+    // Offset: 0xD5D8C4
     static ::System::IntPtr WriteBatchProxy_Delete(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2);
     // static public System.IntPtr WriteBatchProxy_Commit(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3A404
+    // Offset: 0xD5D954
     static ::System::IntPtr WriteBatchProxy_Commit(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_QueryProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3A484
+    // Offset: 0xD5D9D4
     static void delete_QueryProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr QueryProxy_Get__SWIG_0(System.Runtime.InteropServices.HandleRef jarg1, System.Int32 jarg2)
-    // Offset: 0xC3A504
+    // Offset: 0xD5DA54
     static ::System::IntPtr QueryProxy_Get__SWIG_0(::System::Runtime::InteropServices::HandleRef jarg1, int jarg2);
     // static public System.String CollectionReferenceProxy_path(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC2A5F8
+    // Offset: 0xD4C490
     static ::StringW CollectionReferenceProxy_path(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr CollectionReferenceProxy_Document__SWIG_0(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC2A764
+    // Offset: 0xD4C5F4
     static ::System::IntPtr CollectionReferenceProxy_Document__SWIG_0(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr CollectionReferenceProxy_Document__SWIG_1(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0xC2A92C
+    // Offset: 0xD4C7B4
     static ::System::IntPtr CollectionReferenceProxy_Document__SWIG_1(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.Void delete_CollectionReferenceProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC2A344
+    // Offset: 0xD4C1E4
     static void delete_CollectionReferenceProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_QuerySnapshotProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3A594
+    // Offset: 0xD5DAE4
     static void delete_QuerySnapshotProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.UInt32 QuerySnapshotProxy_size(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3A614
+    // Offset: 0xD5DB64
     static uint QuerySnapshotProxy_size(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Int64 SettingsProxy_kCacheSizeUnlimited_get()
-    // Offset: 0xC3A694
+    // Offset: 0xD5DBE4
     static int64_t SettingsProxy_kCacheSizeUnlimited_get();
     // static public System.IntPtr new_SettingsProxy__SWIG_0()
-    // Offset: 0xC3A708
+    // Offset: 0xD5DC58
     static ::System::IntPtr new_SettingsProxy__SWIG_0();
+    // static public System.String SettingsProxy_host(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5DCCC
+    static ::StringW SettingsProxy_host(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Boolean SettingsProxy_is_ssl_enabled(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5DD64
+    static bool SettingsProxy_is_ssl_enabled(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Boolean SettingsProxy_is_persistence_enabled(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5DDEC
+    static bool SettingsProxy_is_persistence_enabled(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Int64 SettingsProxy_cache_size_bytes(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5DE74
+    static int64_t SettingsProxy_cache_size_bytes(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void SettingsProxy_set_host(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0xC3A77C
+    // Offset: 0xD5DEF4
     static void SettingsProxy_set_host(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.Void SettingsProxy_set_ssl_enabled(System.Runtime.InteropServices.HandleRef jarg1, System.Boolean jarg2)
-    // Offset: 0xC3A820
+    // Offset: 0xD5DF98
     static void SettingsProxy_set_ssl_enabled(::System::Runtime::InteropServices::HandleRef jarg1, bool jarg2);
     // static public System.Void SettingsProxy_set_persistence_enabled(System.Runtime.InteropServices.HandleRef jarg1, System.Boolean jarg2)
-    // Offset: 0xC3A8B0
+    // Offset: 0xD5E028
     static void SettingsProxy_set_persistence_enabled(::System::Runtime::InteropServices::HandleRef jarg1, bool jarg2);
     // static public System.Void SettingsProxy_set_cache_size_bytes(System.Runtime.InteropServices.HandleRef jarg1, System.Int64 jarg2)
-    // Offset: 0xC3A940
+    // Offset: 0xD5E0B8
     static void SettingsProxy_set_cache_size_bytes(::System::Runtime::InteropServices::HandleRef jarg1, int64_t jarg2);
     // static public System.Void delete_SettingsProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3A9D0
+    // Offset: 0xD5E148
     static void delete_SettingsProxy(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Int32 LoadBundleTaskProgressProxy_documents_loaded(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E1C8
+    static int LoadBundleTaskProgressProxy_documents_loaded(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Int32 LoadBundleTaskProgressProxy_total_documents(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E248
+    static int LoadBundleTaskProgressProxy_total_documents(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Int64 LoadBundleTaskProgressProxy_bytes_loaded(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E2C8
+    static int64_t LoadBundleTaskProgressProxy_bytes_loaded(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Int64 LoadBundleTaskProgressProxy_total_bytes(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E348
+    static int64_t LoadBundleTaskProgressProxy_total_bytes(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Int32 LoadBundleTaskProgressProxy_state(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E3C8
+    static int LoadBundleTaskProgressProxy_state(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Void delete_LoadBundleTaskProgressProxy(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E448
+    static void delete_LoadBundleTaskProgressProxy(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.IntPtr FirestoreProxy_GetInstance__SWIG_1(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E4C8
+    static ::System::IntPtr FirestoreProxy_GetInstance__SWIG_1(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Void delete_FirestoreProxy(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E548
+    static void delete_FirestoreProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FirestoreProxy_Collection__SWIG_0(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0xC3AA50
+    // Offset: 0xD5E5C8
     static ::System::IntPtr FirestoreProxy_Collection__SWIG_0(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
+    // static public System.IntPtr FirestoreProxy_settings(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5E674
+    static ::System::IntPtr FirestoreProxy_settings(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void FirestoreProxy_set_settings(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2)
-    // Offset: 0xC3AAFC
+    // Offset: 0xD5E6F4
     static void FirestoreProxy_set_settings(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2);
     // static public System.IntPtr FirestoreProxy_batch(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3AB8C
+    // Offset: 0xD5E784
     static ::System::IntPtr FirestoreProxy_batch(::System::Runtime::InteropServices::HandleRef jarg1);
-    // static public System.IntPtr GetFirestoreInstance(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3897C
-    static ::System::IntPtr GetFirestoreInstance(::System::Runtime::InteropServices::HandleRef jarg1);
-    // static public System.Void ReleaseFirestoreInstance(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC38B74
-    static void ReleaseFirestoreInstance(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Boolean QueryEquals(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2)
+    // Offset: 0xD5BBC4
+    static bool QueryEquals(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2);
+    // static public System.Boolean QuerySnapshotEquals(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2)
+    // Offset: 0xD5BD94
+    static bool QuerySnapshotEquals(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2);
+    // static public System.Boolean DocumentSnapshotEquals(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2)
+    // Offset: 0xD5BE2C
+    static bool DocumentSnapshotEquals(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2);
+    // static public System.Int32 QueryHashCode(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5BF6C
+    static int QueryHashCode(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Int32 QuerySnapshotHashCode(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5C094
+    static int QuerySnapshotHashCode(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.Int32 DocumentSnapshotHashCode(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0xD5C114
+    static int DocumentSnapshotHashCode(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void ApiHeaders_SetClientLanguage(System.String jarg1)
-    // Offset: 0xC25634
+    // Offset: 0xD47230
     static void ApiHeaders_SetClientLanguage(::StringW jarg1);
     // static public System.IntPtr ConvertFieldValueToMap(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC38BF4
+    // Offset: 0xD5C194
     static ::System::IntPtr ConvertFieldValueToMap(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr ConvertMapToFieldValue(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC38C74
+    // Offset: 0xD5C214
     static ::System::IntPtr ConvertMapToFieldValue(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr ConvertSnapshotToFieldValue(System.Runtime.InteropServices.HandleRef jarg1, System.Int32 jarg2)
-    // Offset: 0xC38DE4
+    // Offset: 0xD5C37C
     static ::System::IntPtr ConvertSnapshotToFieldValue(::System::Runtime::InteropServices::HandleRef jarg1, int jarg2);
     // static public System.Void WriteBatchUpdate__SWIG_0(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2, System.Runtime.InteropServices.HandleRef jarg3)
-    // Offset: 0xC38FD0
+    // Offset: 0xD5C560
     static void WriteBatchUpdate__SWIG_0(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2, ::System::Runtime::InteropServices::HandleRef jarg3);
     // static public System.IntPtr DocumentReferenceSet(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2, System.Runtime.InteropServices.HandleRef jarg3)
-    // Offset: 0xC390D4
+    // Offset: 0xD5C664
     static ::System::IntPtr DocumentReferenceSet(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2, ::System::Runtime::InteropServices::HandleRef jarg3);
     // static public System.IntPtr DocumentReferenceUpdate__SWIG_0(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2)
-    // Offset: 0xC3916C
+    // Offset: 0xD5C6FC
     static ::System::IntPtr DocumentReferenceUpdate__SWIG_0(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2);
     // static public System.Void WriteBatchSet(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2, System.Runtime.InteropServices.HandleRef jarg3, System.Runtime.InteropServices.HandleRef jarg4)
-    // Offset: 0xC39318
+    // Offset: 0xD5C8A0
     static void WriteBatchSet(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2, ::System::Runtime::InteropServices::HandleRef jarg3, ::System::Runtime::InteropServices::HandleRef jarg4);
     // static public System.Void delete_TransactionCallbackProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3AC0C
+    // Offset: 0xD5E804
     static void delete_TransactionCallbackProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr new_TransactionManagerProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3AC8C
+    // Offset: 0xD5E884
     static ::System::IntPtr new_TransactionManagerProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_TransactionManagerProxy(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3AD0C
+    // Offset: 0xD5E904
     static void delete_TransactionManagerProxy(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void TransactionManagerProxy_CppDispose(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3AD8C
+    // Offset: 0xD5E984
     static void TransactionManagerProxy_CppDispose(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr new_FieldToValueMap()
-    // Offset: 0xC348D0
+    // Offset: 0xD56A80
     static ::System::IntPtr new_FieldToValueMap();
     // static public System.Void FieldToValueMap_Insert(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2, System.Runtime.InteropServices.HandleRef jarg3)
-    // Offset: 0xC34C9C
+    // Offset: 0xD56E4C
     static void FieldToValueMap_Insert(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2, ::System::Runtime::InteropServices::HandleRef jarg3);
     // static public System.IntPtr FieldToValueMap_Iterator(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC34D48
+    // Offset: 0xD56EF8
     static ::System::IntPtr FieldToValueMap_Iterator(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_FieldToValueMap(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC34BB0
+    // Offset: 0xD56D60
     static void delete_FieldToValueMap(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Boolean FieldToValueMapIterator_HasMore(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC350AC
+    // Offset: 0xD5725C
     static bool FieldToValueMapIterator_HasMore(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void FieldToValueMapIterator_Advance(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC35134
+    // Offset: 0xD572E4
     static void FieldToValueMapIterator_Advance(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String FieldToValueMapIterator_UnsafeKeyView(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC351B4
+    // Offset: 0xD57364
     static ::StringW FieldToValueMapIterator_UnsafeKeyView(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldToValueMapIterator_UnsafeValueView(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3524C
+    // Offset: 0xD573FC
     static ::System::IntPtr FieldToValueMapIterator_UnsafeValueView(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void delete_FieldToValueMapIterator(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3502C
+    // Offset: 0xD571DC
     static void delete_FieldToValueMapIterator(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr ConvertFieldValueToVector(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC393C0
+    // Offset: 0xD5C948
     static ::System::IntPtr ConvertFieldValueToVector(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr ConvertVectorToFieldValue(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC39440
+    // Offset: 0xD5C9C8
     static ::System::IntPtr ConvertVectorToFieldValue(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr QuerySnapshotDocuments(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC3960C
+    // Offset: 0xD5CB20
     static ::System::IntPtr QuerySnapshotDocuments(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr DocumentSnapshotVector_GetCopy(System.Runtime.InteropServices.HandleRef jarg1, System.UInt32 jarg2)
-    // Offset: 0xC3263C
+    // Offset: 0xD548E0
     static ::System::IntPtr DocumentSnapshotVector_GetCopy(::System::Runtime::InteropServices::HandleRef jarg1, uint jarg2);
     // static public System.Void delete_DocumentSnapshotVector(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC324D8
+    // Offset: 0xD54784
     static void delete_DocumentSnapshotVector(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr new_FieldValueVector()
-    // Offset: 0xC36BA8
+    // Offset: 0xD58C74
     static ::System::IntPtr new_FieldValueVector();
     // static public System.UInt32 FieldValueVector_Size(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36F08
+    // Offset: 0xD58FD4
     static uint FieldValueVector_Size(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FieldValueVector_GetUnsafeView(System.Runtime.InteropServices.HandleRef jarg1, System.UInt32 jarg2)
-    // Offset: 0xC36F88
+    // Offset: 0xD59054
     static ::System::IntPtr FieldValueVector_GetUnsafeView(::System::Runtime::InteropServices::HandleRef jarg1, uint jarg2);
     // static public System.Void FieldValueVector_PushBack(System.Runtime.InteropServices.HandleRef jarg1, System.Runtime.InteropServices.HandleRef jarg2)
-    // Offset: 0xC37018
+    // Offset: 0xD590E4
     static void FieldValueVector_PushBack(::System::Runtime::InteropServices::HandleRef jarg1, ::System::Runtime::InteropServices::HandleRef jarg2);
     // static public System.Void delete_FieldValueVector(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0xC36E88
+    // Offset: 0xD58F54
     static void delete_FieldValueVector(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr Future_QuerySnapshot_SWIGUpcast(System.IntPtr jarg1)
-    // Offset: 0xC3AE0C
+    // Offset: 0xD5EA04
     static ::System::IntPtr Future_QuerySnapshot_SWIGUpcast(::System::IntPtr jarg1);
     // static public System.IntPtr Future_DocumentSnapshot_SWIGUpcast(System.IntPtr jarg1)
-    // Offset: 0xC3AE8C
+    // Offset: 0xD5EA84
     static ::System::IntPtr Future_DocumentSnapshot_SWIGUpcast(::System::IntPtr jarg1);
     // static public System.IntPtr Future_FirestoreVoid_SWIGUpcast(System.IntPtr jarg1)
-    // Offset: 0xC3AF0C
+    // Offset: 0xD5EB04
     static ::System::IntPtr Future_FirestoreVoid_SWIGUpcast(::System::IntPtr jarg1);
     // static public System.IntPtr CollectionReferenceProxy_SWIGUpcast(System.IntPtr jarg1)
-    // Offset: 0xC29FF0
+    // Offset: 0xD4BE90
     static ::System::IntPtr CollectionReferenceProxy_SWIGUpcast(::System::IntPtr jarg1);
   }; // Firebase.Firestore.FirestoreCppPINVOKE
   #pragma pack(pop)
@@ -1119,6 +1176,42 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::I
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "new_SettingsProxy__SWIG_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_host
+// Il2CppName: SettingsProxy_host
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_host)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "SettingsProxy_host", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_is_ssl_enabled
+// Il2CppName: SettingsProxy_is_ssl_enabled
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_is_ssl_enabled)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "SettingsProxy_is_ssl_enabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_is_persistence_enabled
+// Il2CppName: SettingsProxy_is_persistence_enabled
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_is_persistence_enabled)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "SettingsProxy_is_persistence_enabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_cache_size_bytes
+// Il2CppName: SettingsProxy_cache_size_bytes
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_cache_size_bytes)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "SettingsProxy_cache_size_bytes", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SettingsProxy_set_host
 // Il2CppName: SettingsProxy_set_host
 template<>
@@ -1168,6 +1261,78 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "delete_SettingsProxy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_documents_loaded
+// Il2CppName: LoadBundleTaskProgressProxy_documents_loaded
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_documents_loaded)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "LoadBundleTaskProgressProxy_documents_loaded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_total_documents
+// Il2CppName: LoadBundleTaskProgressProxy_total_documents
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_total_documents)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "LoadBundleTaskProgressProxy_total_documents", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_bytes_loaded
+// Il2CppName: LoadBundleTaskProgressProxy_bytes_loaded
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_bytes_loaded)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "LoadBundleTaskProgressProxy_bytes_loaded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_total_bytes
+// Il2CppName: LoadBundleTaskProgressProxy_total_bytes
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_total_bytes)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "LoadBundleTaskProgressProxy_total_bytes", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_state
+// Il2CppName: LoadBundleTaskProgressProxy_state
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::LoadBundleTaskProgressProxy_state)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "LoadBundleTaskProgressProxy_state", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::delete_LoadBundleTaskProgressProxy
+// Il2CppName: delete_LoadBundleTaskProgressProxy
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::delete_LoadBundleTaskProgressProxy)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "delete_LoadBundleTaskProgressProxy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::FirestoreProxy_GetInstance__SWIG_1
+// Il2CppName: FirestoreProxy_GetInstance__SWIG_1
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::FirestoreProxy_GetInstance__SWIG_1)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "FirestoreProxy_GetInstance__SWIG_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::delete_FirestoreProxy
+// Il2CppName: delete_FirestoreProxy
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::delete_FirestoreProxy)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "delete_FirestoreProxy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::FirestoreProxy_Collection__SWIG_0
 // Il2CppName: FirestoreProxy_Collection__SWIG_0
 template<>
@@ -1176,6 +1341,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::I
     static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
     static auto* jarg2 = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "FirestoreProxy_Collection__SWIG_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::FirestoreProxy_settings
+// Il2CppName: FirestoreProxy_settings
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::FirestoreProxy_settings)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "FirestoreProxy_settings", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::FirestoreProxy_set_settings
@@ -1197,22 +1371,61 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::I
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "FirestoreProxy_batch", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::GetFirestoreInstance
-// Il2CppName: GetFirestoreInstance
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::QueryEquals
+// Il2CppName: QueryEquals
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::GetFirestoreInstance)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::System::Runtime::InteropServices::HandleRef, ::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::QueryEquals)> {
   static const MethodInfo* get() {
     static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "GetFirestoreInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+    static auto* jarg2 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "QueryEquals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::ReleaseFirestoreInstance
-// Il2CppName: ReleaseFirestoreInstance
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::QuerySnapshotEquals
+// Il2CppName: QuerySnapshotEquals
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::ReleaseFirestoreInstance)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::System::Runtime::InteropServices::HandleRef, ::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::QuerySnapshotEquals)> {
   static const MethodInfo* get() {
     static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "ReleaseFirestoreInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+    static auto* jarg2 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "QuerySnapshotEquals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::DocumentSnapshotEquals
+// Il2CppName: DocumentSnapshotEquals
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::System::Runtime::InteropServices::HandleRef, ::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::DocumentSnapshotEquals)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    static auto* jarg2 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "DocumentSnapshotEquals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::QueryHashCode
+// Il2CppName: QueryHashCode
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::QueryHashCode)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "QueryHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::QuerySnapshotHashCode
+// Il2CppName: QuerySnapshotHashCode
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::QuerySnapshotHashCode)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "QuerySnapshotHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::DocumentSnapshotHashCode
+// Il2CppName: DocumentSnapshotHashCode
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::Firestore::FirestoreCppPINVOKE::DocumentSnapshotHashCode)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE*), "DocumentSnapshotHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::ApiHeaders_SetClientLanguage

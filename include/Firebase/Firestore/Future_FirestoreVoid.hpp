@@ -52,15 +52,7 @@ namespace Firebase::Firestore {
     class SWIG_CompletionDelegate;
     // Nested type: ::Firebase::Firestore::Future_FirestoreVoid::$GetTask$c__AnonStorey0
     class $GetTask$c__AnonStorey0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x28
@@ -93,37 +85,37 @@ namespace Firebase::Firestore {
     // Set static field: static private System.Object CallbackLock
     static void _set_CallbackLock(::Il2CppObject* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.IntPtr callbackData
-    ::System::IntPtr& dyn_callbackData();
+    [[deprecated]] ::System::IntPtr& dyn_callbackData();
     // Get instance field reference: private Firebase.Firestore.Future_FirestoreVoid/Firebase.Firestore.SWIG_CompletionDelegate SWIG_CompletionCB
-    ::Firebase::Firestore::Future_FirestoreVoid::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    [[deprecated]] ::Firebase::Firestore::Future_FirestoreVoid::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
     // static private System.Void .cctor()
-    // Offset: 0xC3CB90
+    // Offset: 0xD60990
     static void _cctor();
     // static public System.Threading.Tasks.Task GetTask(Firebase.Firestore.Future_FirestoreVoid fu)
-    // Offset: 0xC31618
+    // Offset: 0xD53728
     static ::System::Threading::Tasks::Task* GetTask(::Firebase::Firestore::Future_FirestoreVoid* fu);
     // private System.Void ThrowIfDisposed()
-    // Offset: 0xC3C774
+    // Offset: 0xD60584
     void ThrowIfDisposed();
     // public System.Void SetOnCompletionCallback(Firebase.Firestore.Future_FirestoreVoid/Firebase.Firestore.Action userCompletionCallback)
-    // Offset: 0xC3C538
+    // Offset: 0xD60348
     void SetOnCompletionCallback(::Firebase::Firestore::Future_FirestoreVoid::Action* userCompletionCallback);
     // private System.Void SetCompletionData(System.IntPtr data)
-    // Offset: 0xC3C4EC
+    // Offset: 0xD602FC
     void SetCompletionData(::System::IntPtr data);
     // static private System.Void SWIG_CompletionDispatcher(System.Int32 key)
-    // Offset: 0xC3C124
+    // Offset: 0xD5FF34
     static void SWIG_CompletionDispatcher(int key);
     // System.IntPtr SWIG_OnCompletion(Firebase.Firestore.Future_FirestoreVoid/Firebase.Firestore.SWIG_CompletionDelegate cs_callback, System.Int32 cs_key)
-    // Offset: 0xC3C81C
+    // Offset: 0xD6062C
     ::System::IntPtr SWIG_OnCompletion(::Firebase::Firestore::Future_FirestoreVoid::SWIG_CompletionDelegate* cs_callback, int cs_key);
     // public System.Void SWIG_FreeCompletionData(System.IntPtr data)
-    // Offset: 0xC3C8D8
+    // Offset: 0xD606E0
     void SWIG_FreeCompletionData(::System::IntPtr data);
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC31558
+    // Offset: 0xD53668
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::.ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -132,12 +124,12 @@ namespace Firebase::Firestore {
       return THROW_UNLESS((::il2cpp_utils::New<Future_FirestoreVoid*, creationType>(cPtr, cMemoryOwn)));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xC3C2C8
+    // Offset: 0xD600D8
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::Finalize()
     void Finalize();
     // public override System.Void Dispose()
-    // Offset: 0xC3C338
+    // Offset: 0xD60148
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::Dispose()
     void Dispose();

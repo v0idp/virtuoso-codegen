@@ -44,15 +44,7 @@ namespace Firebase::Firestore {
     public:
     // Nested type: ::Firebase::Firestore::DocumentSnapshotProxy::ServerTimestampBehavior
     struct ServerTimestampBehavior;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -71,36 +63,36 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC30590
+    // Offset: 0xD525C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DocumentSnapshotProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::DocumentSnapshotProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DocumentSnapshotProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.DocumentSnapshotProxy obj)
-    // Offset: 0xC31960
+    // Offset: 0xD53C2C
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::DocumentSnapshotProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC31A3C
+    // Offset: 0xD53D08
     void Dispose();
     // public System.String id()
-    // Offset: 0xC31C4C
+    // Offset: 0xD53F18
     ::StringW id();
     // public Firebase.Firestore.DocumentReferenceProxy reference()
-    // Offset: 0xC31D88
+    // Offset: 0xD5404C
     ::Firebase::Firestore::DocumentReferenceProxy* reference();
     // public System.Boolean exists()
-    // Offset: 0xC31EDC
+    // Offset: 0xD54198
     bool exists();
     // public Firebase.Firestore.FieldValueProxy Get(Firebase.Firestore.FieldPathProxy field, Firebase.Firestore.DocumentSnapshotProxy/Firebase.Firestore.ServerTimestampBehavior stb)
-    // Offset: 0xC32008
+    // Offset: 0xD542BC
     ::Firebase::Firestore::FieldValueProxy* Get(::Firebase::Firestore::FieldPathProxy* field, ::Firebase::Firestore::DocumentSnapshotProxy::ServerTimestampBehavior stb);
     // protected override System.Void Finalize()
-    // Offset: 0xC319CC
+    // Offset: 0xD53C98
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

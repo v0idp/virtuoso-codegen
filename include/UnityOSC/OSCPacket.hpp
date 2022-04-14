@@ -36,15 +36,7 @@ namespace UnityOSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class OSCPacket : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Collections.Generic.List`1<System.Object> _data
     // Size: 0x8
     // Offset: 0x10
@@ -71,30 +63,30 @@ namespace UnityOSC {
     static_assert(sizeof(int64_t) == 0x8);
     public:
     // Get instance field reference: protected System.Collections.Generic.List`1<System.Object> _data
-    ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__data();
+    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__data();
     // Get instance field reference: protected System.Byte[] _binaryData
-    ::ArrayW<uint8_t>& dyn__binaryData();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__binaryData();
     // Get instance field reference: protected System.String _address
-    ::StringW& dyn__address();
+    [[deprecated]] ::StringW& dyn__address();
     // Get instance field reference: protected System.Int64 _timeStamp
-    int64_t& dyn__timeStamp();
+    [[deprecated]] int64_t& dyn__timeStamp();
     // public System.String get_Address()
-    // Offset: 0xA18FFC
+    // Offset: 0xC5E060
     ::StringW get_Address();
     // public System.Void set_Address(System.String value)
-    // Offset: 0xA19004
+    // Offset: 0xC5E068
     void set_Address(::StringW value);
     // public System.Collections.Generic.List`1<System.Object> get_Data()
-    // Offset: 0xA1900C
+    // Offset: 0xC5E070
     ::System::Collections::Generic::List_1<::Il2CppObject*>* get_Data();
     // public System.Byte[] get_BinaryData()
-    // Offset: 0xA16C48
+    // Offset: 0xC5BCAC
     ::ArrayW<uint8_t> get_BinaryData();
     // public System.Int64 get_TimeStamp()
-    // Offset: 0xA19014
+    // Offset: 0xC5E078
     int64_t get_TimeStamp();
     // public System.Void set_TimeStamp(System.Int64 value)
-    // Offset: 0xA1901C
+    // Offset: 0xC5E080
     void set_TimeStamp(int64_t value);
     // public System.Boolean IsBundle()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -107,12 +99,12 @@ namespace UnityOSC {
     template<class T>
     void Append(T msgvalue) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCPacket::Append");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Append", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(msgvalue)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::UnityOSC::OSCPacket*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, msgvalue);
     }
     // static protected System.Byte[] SwapEndian(System.Byte[] data)
-    // Offset: 0xA19024
+    // Offset: 0xC5E088
     static ::ArrayW<uint8_t> SwapEndian(::ArrayW<uint8_t> data);
     // static protected System.Byte[] PackValue(T value)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -133,16 +125,16 @@ namespace UnityOSC {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, data, byref(start));
     }
     // static public UnityOSC.OSCPacket Unpack(System.Byte[] data)
-    // Offset: 0xA190E8
+    // Offset: 0xC5E14C
     static ::UnityOSC::OSCPacket* Unpack(::ArrayW<uint8_t> data);
     // static public UnityOSC.OSCPacket Unpack(System.Byte[] data, ref System.Int32 start, System.Int32 end)
-    // Offset: 0xA1688C
+    // Offset: 0xC5B8F0
     static ::UnityOSC::OSCPacket* Unpack(::ArrayW<uint8_t> data, ByRef<int> start, int end);
     // static protected System.Void PadNull(System.Collections.Generic.List`1<System.Byte> data)
-    // Offset: 0xA18B98
+    // Offset: 0xC5DBFC
     static void PadNull(::System::Collections::Generic::List_1<uint8_t>* data);
     // public System.Void .ctor()
-    // Offset: 0xA165EC
+    // Offset: 0xC5B650
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -39,16 +39,16 @@ namespace System::Net {
   class EndPoint : public ::Il2CppObject {
     public:
     // public System.Net.Sockets.AddressFamily get_AddressFamily()
-    // Offset: 0xD7EB64
+    // Offset: 0xEFD498
     ::System::Net::Sockets::AddressFamily get_AddressFamily();
     // public System.Net.SocketAddress Serialize()
-    // Offset: 0xD7EC14
+    // Offset: 0xEFD548
     ::System::Net::SocketAddress* Serialize();
     // public System.Net.EndPoint Create(System.Net.SocketAddress socketAddress)
-    // Offset: 0xD7ECC4
+    // Offset: 0xEFD5F8
     ::System::Net::EndPoint* Create(::System::Net::SocketAddress* socketAddress);
     // protected System.Void .ctor()
-    // Offset: 0xD7ECF0
+    // Offset: 0xEFD624
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

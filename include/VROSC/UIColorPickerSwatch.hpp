@@ -43,15 +43,7 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class UIColorPickerSwatch : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color <Color>k__BackingField
     // Size: 0x10
     // Offset: 0x18
@@ -74,28 +66,28 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // Get instance field reference: private VROSC.ProceduralAdjustableMesh _colorDisplay
-    ::VROSC::ProceduralAdjustableMesh*& dyn__colorDisplay();
+    [[deprecated]] ::VROSC::ProceduralAdjustableMesh*& dyn__colorDisplay();
     // Get instance field reference: private UnityEngine.GameObject _selected
-    ::UnityEngine::GameObject*& dyn__selected();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__selected();
     // public UnityEngine.Color get_Color()
-    // Offset: 0x139B3C0
+    // Offset: 0xA34F50
     ::UnityEngine::Color get_Color();
     // private System.Void set_Color(UnityEngine.Color value)
-    // Offset: 0x139B3B4
+    // Offset: 0xA34F44
     void set_Color(::UnityEngine::Color value);
     // private System.Void Awake()
-    // Offset: 0x139B3CC
+    // Offset: 0xA34F5C
     void Awake();
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x139B40C
+    // Offset: 0xA34F9C
     void SetColor(::UnityEngine::Color color);
     // public System.Void SetHovering(System.Boolean hovering)
-    // Offset: 0x139B3EC
+    // Offset: 0xA34F7C
     void SetHovering(bool hovering);
     // public System.Void .ctor()
-    // Offset: 0x139B490
+    // Offset: 0xA35020
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

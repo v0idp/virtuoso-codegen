@@ -51,23 +51,15 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::OVRScreenFade::$Fade$d__25
     class $Fade$d__25;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x58D524
+    // [TooltipAttribute] Offset: 0x698018
     // public System.Single fadeTime
     // Size: 0x4
     // Offset: 0x18
     float fadeTime;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [TooltipAttribute] Offset: 0x58D55C
+    // [TooltipAttribute] Offset: 0x698050
     // public UnityEngine.Color fadeColor
     // Size: 0x10
     // Offset: 0x1C
@@ -138,68 +130,68 @@ namespace GlobalNamespace {
     // Set static field: static private OVRScreenFade <instance>k__BackingField
     static void _set_$instance$k__BackingField(::GlobalNamespace::OVRScreenFade* value);
     // Get instance field reference: public System.Single fadeTime
-    float& dyn_fadeTime();
+    [[deprecated]] float& dyn_fadeTime();
     // Get instance field reference: public UnityEngine.Color fadeColor
-    ::UnityEngine::Color& dyn_fadeColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_fadeColor();
     // Get instance field reference: public System.Boolean fadeOnStart
-    bool& dyn_fadeOnStart();
+    [[deprecated]] bool& dyn_fadeOnStart();
     // Get instance field reference: public System.Int32 renderQueue
-    int& dyn_renderQueue();
+    [[deprecated]] int& dyn_renderQueue();
     // Get instance field reference: private System.Single explicitFadeAlpha
-    float& dyn_explicitFadeAlpha();
+    [[deprecated]] float& dyn_explicitFadeAlpha();
     // Get instance field reference: private System.Single animatedFadeAlpha
-    float& dyn_animatedFadeAlpha();
+    [[deprecated]] float& dyn_animatedFadeAlpha();
     // Get instance field reference: private System.Single uiFadeAlpha
-    float& dyn_uiFadeAlpha();
+    [[deprecated]] float& dyn_uiFadeAlpha();
     // Get instance field reference: private UnityEngine.MeshRenderer fadeRenderer
-    ::UnityEngine::MeshRenderer*& dyn_fadeRenderer();
+    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_fadeRenderer();
     // Get instance field reference: private UnityEngine.MeshFilter fadeMesh
-    ::UnityEngine::MeshFilter*& dyn_fadeMesh();
+    [[deprecated]] ::UnityEngine::MeshFilter*& dyn_fadeMesh();
     // Get instance field reference: private UnityEngine.Material fadeMaterial
-    ::UnityEngine::Material*& dyn_fadeMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_fadeMaterial();
     // Get instance field reference: private System.Boolean isFading
-    bool& dyn_isFading();
+    [[deprecated]] bool& dyn_isFading();
     // static public OVRScreenFade get_instance()
-    // Offset: 0xBB0608
+    // Offset: 0xE7BE40
     static ::GlobalNamespace::OVRScreenFade* get_instance();
     // static private System.Void set_instance(OVRScreenFade value)
-    // Offset: 0xBB0654
+    // Offset: 0xE7BE8C
     static void set_instance(::GlobalNamespace::OVRScreenFade* value);
     // public System.Single get_currentAlpha()
-    // Offset: 0xBB06A4
+    // Offset: 0xE7BEDC
     float get_currentAlpha();
     // private System.Void Start()
-    // Offset: 0xBB073C
+    // Offset: 0xE7BF74
     void Start();
     // public System.Void FadeIn()
-    // Offset: 0xBB0BC0
+    // Offset: 0xE7C3F8
     void FadeIn();
     // public System.Void FadeOut()
-    // Offset: 0xBB0C74
+    // Offset: 0xE7C4AC
     void FadeOut();
     // private System.Void OnLevelFinishedLoading(System.Int32 level)
-    // Offset: 0xBB0CA8
+    // Offset: 0xE7C4E0
     void OnLevelFinishedLoading(int level);
     // private System.Void OnEnable()
-    // Offset: 0xBB0CDC
+    // Offset: 0xE7C514
     void OnEnable();
     // private System.Void OnDestroy()
-    // Offset: 0xBB0CF4
+    // Offset: 0xE7C52C
     void OnDestroy();
     // public System.Void SetUIFade(System.Single level)
-    // Offset: 0xBB0E88
+    // Offset: 0xE7C6C0
     void SetUIFade(float level);
     // public System.Void SetExplicitFade(System.Single level)
-    // Offset: 0xBB0FC8
+    // Offset: 0xE7C800
     void SetExplicitFade(float level);
     // private System.Collections.IEnumerator Fade(System.Single startAlpha, System.Single endAlpha)
-    // Offset: 0xBB0BF4
+    // Offset: 0xE7C42C
     ::System::Collections::IEnumerator* Fade(float startAlpha, float endAlpha);
     // private System.Void SetMaterialAlpha()
-    // Offset: 0xBB0EB4
+    // Offset: 0xE7C6EC
     void SetMaterialAlpha();
     // public System.Void .ctor()
-    // Offset: 0xBB0FD0
+    // Offset: 0xE7C808
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

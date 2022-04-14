@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupMalletManagerState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.MalletManager _malletManager
     // Size: 0x8
     // Offset: 0x10
@@ -62,25 +54,25 @@ namespace VROSC {
       return malletManager;
     }
     // Get instance field reference: private VROSC.MalletManager _malletManager
-    ::VROSC::MalletManager*& dyn__malletManager();
+    [[deprecated]] ::VROSC::MalletManager*& dyn__malletManager();
     // public System.Void .ctor(VROSC.MalletManager malletManager)
-    // Offset: 0x13B3A18
+    // Offset: 0x19268E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupMalletManagerState* New_ctor(::VROSC::MalletManager* malletManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupMalletManagerState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupMalletManagerState*, creationType>(malletManager)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B3A44
+    // Offset: 0x1926910
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B3A60
+    // Offset: 0x192692C
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B3A64
+    // Offset: 0x1926930
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B3A68
+    // Offset: 0x1926934
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupMalletManagerState
   #pragma pack(pop)

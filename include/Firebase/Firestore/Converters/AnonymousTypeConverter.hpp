@@ -57,15 +57,7 @@ namespace Firebase::Firestore::Converters {
   // [TokenAttribute] Offset: FFFFFFFF
   class AnonymousTypeConverter : public ::Firebase::Firestore::Converters::MapConverterBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Collections.Generic.IList`1<System.Reflection.PropertyInfo> _properties
     // Size: 0x8
     // Offset: 0x18
@@ -76,9 +68,9 @@ namespace Firebase::Firestore::Converters {
     // Deleting conversion operator: operator ::System::Type*
     constexpr operator ::System::Type*() const noexcept = delete;
     // Get instance field reference: private readonly System.Collections.Generic.IList`1<System.Reflection.PropertyInfo> _properties
-    ::System::Collections::Generic::IList_1<::System::Reflection::PropertyInfo*>*& dyn__properties();
+    [[deprecated]] ::System::Collections::Generic::IList_1<::System::Reflection::PropertyInfo*>*& dyn__properties();
     // System.Void .ctor(System.Type targetType)
-    // Offset: 0xC25058
+    // Offset: 0xD46C5C
     // Implemented from: Firebase.Firestore.Converters.MapConverterBase
     // Base method: System.Void MapConverterBase::.ctor(System.Type targetType)
     // Base method: System.Void ConverterBase::.ctor(System.Type targetType)
@@ -88,7 +80,7 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<AnonymousTypeConverter*, creationType>(targetType)));
     }
     // public override System.Void SerializeMap(Firebase.Firestore.SerializationContext context, System.Object value, System.Collections.Generic.IDictionary`2<System.String,Firebase.Firestore.FieldValueProxy> map)
-    // Offset: 0xC25104
+    // Offset: 0xD46D08
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Void ConverterBase::SerializeMap(Firebase.Firestore.SerializationContext context, System.Object value, System.Collections.Generic.IDictionary`2<System.String,Firebase.Firestore.FieldValueProxy> map)
     void SerializeMap(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value, ::System::Collections::Generic::IDictionary_2<::StringW, ::Firebase::Firestore::FieldValueProxy*>* map);

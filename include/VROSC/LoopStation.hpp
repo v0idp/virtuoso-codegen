@@ -71,15 +71,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStation : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.MovementPlane _movementPlane
     // Size: 0x8
     // Offset: 0x18
@@ -188,149 +180,149 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.MovementPlane _movementPlane
-    ::VROSC::MovementPlane*& dyn__movementPlane();
+    [[deprecated]] ::VROSC::MovementPlane*& dyn__movementPlane();
     // Get instance field reference: private VROSC.LoopStationButtons _buttons
-    ::VROSC::LoopStationButtons*& dyn__buttons();
+    [[deprecated]] ::VROSC::LoopStationButtons*& dyn__buttons();
     // Get instance field reference: private VROSC.LoopStationLoopHandler _loopHandler
-    ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
+    [[deprecated]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
     // Get instance field reference: private VROSC.LoopStationRecorder _recorder
-    ::VROSC::LoopStationRecorder*& dyn__recorder();
+    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn__recorder();
     // Get instance field reference: private VROSC.LoopStationRecordingButton _recordingButton
-    ::VROSC::LoopStationRecordingButton*& dyn__recordingButton();
+    [[deprecated]] ::VROSC::LoopStationRecordingButton*& dyn__recordingButton();
     // Get instance field reference: private VROSC.LoopStationGroupCore _groups
-    ::VROSC::LoopStationGroupCore*& dyn__groups();
+    [[deprecated]] ::VROSC::LoopStationGroupCore*& dyn__groups();
     // Get instance field reference: private VROSC.TransformMover _mover
-    ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private UnityEngine.Transform _loopLocation
-    ::UnityEngine::Transform*& dyn__loopLocation();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__loopLocation();
     // Get instance field reference: private UnityEngine.Transform _launchpadParent
-    ::UnityEngine::Transform*& dyn__launchpadParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__launchpadParent();
     // Get instance field reference: private VROSC.SelectionBar _loopLengthSelectionBar
-    ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
+    [[deprecated]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
     // Get instance field reference: private UnityEngine.GameObject _loopLengthUIParent
-    ::UnityEngine::GameObject*& dyn__loopLengthUIParent();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__loopLengthUIParent();
     // Get instance field reference: private VROSC.LoopStationSoloHandler _soloHandler
-    ::VROSC::LoopStationSoloHandler*& dyn__soloHandler();
+    [[deprecated]] ::VROSC::LoopStationSoloHandler*& dyn__soloHandler();
     // Get instance field reference: public System.Action`1<System.Single> OnBPMSet
-    ::System::Action_1<float>*& dyn_OnBPMSet();
+    [[deprecated]] ::System::Action_1<float>*& dyn_OnBPMSet();
     // Get instance field reference: public System.Action`1<System.Single> OnVolumeChanged
-    ::System::Action_1<float>*& dyn_OnVolumeChanged();
+    [[deprecated]] ::System::Action_1<float>*& dyn_OnVolumeChanged();
     // Get instance field reference: private System.Int32 <LongestLoopLengthSamples>k__BackingField
-    int& dyn_$LongestLoopLengthSamples$k__BackingField();
+    [[deprecated]] int& dyn_$LongestLoopLengthSamples$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationDataController <Data>k__BackingField
-    ::VROSC::LoopStationDataController*& dyn_$Data$k__BackingField();
+    [[deprecated]] ::VROSC::LoopStationDataController*& dyn_$Data$k__BackingField();
     // Get instance field reference: private System.Boolean <IsSetup>k__BackingField
-    bool& dyn_$IsSetup$k__BackingField();
+    [[deprecated]] bool& dyn_$IsSetup$k__BackingField();
     // public VROSC.MovementPlane get_MovementPlane()
-    // Offset: 0x909994
+    // Offset: 0x19BF704
     ::VROSC::MovementPlane* get_MovementPlane();
     // public VROSC.LoopStationGroupCore get_Groups()
-    // Offset: 0x90999C
+    // Offset: 0x19BF70C
     ::VROSC::LoopStationGroupCore* get_Groups();
     // public VROSC.LoopStationLoopHandler get_LoopHandler()
-    // Offset: 0x9099A4
+    // Offset: 0x19BF714
     ::VROSC::LoopStationLoopHandler* get_LoopHandler();
     // public VROSC.LoopStationRecordingButton get_RecordingButton()
-    // Offset: 0x9099AC
+    // Offset: 0x19BF71C
     ::VROSC::LoopStationRecordingButton* get_RecordingButton();
     // public VROSC.TransformMover get_Mover()
-    // Offset: 0x9099B4
+    // Offset: 0x19BF724
     ::VROSC::TransformMover* get_Mover();
     // public UnityEngine.Transform get_LaunchPadParent()
-    // Offset: 0x9099BC
+    // Offset: 0x19BF72C
     ::UnityEngine::Transform* get_LaunchPadParent();
     // public System.Int32 get_LongestLoopLengthSamples()
-    // Offset: 0x9099C4
+    // Offset: 0x19BF734
     int get_LongestLoopLengthSamples();
     // private System.Void set_LongestLoopLengthSamples(System.Int32 value)
-    // Offset: 0x9099CC
+    // Offset: 0x19BF73C
     void set_LongestLoopLengthSamples(int value);
     // public VROSC.LoopStationDataController get_Data()
-    // Offset: 0x9099D4
+    // Offset: 0x19BF744
     ::VROSC::LoopStationDataController* get_Data();
     // private System.Void set_Data(VROSC.LoopStationDataController value)
-    // Offset: 0x9099DC
+    // Offset: 0x19BF74C
     void set_Data(::VROSC::LoopStationDataController* value);
     // public System.Boolean get_IsSetup()
-    // Offset: 0x9099E4
+    // Offset: 0x19BF754
     bool get_IsSetup();
     // private System.Void set_IsSetup(System.Boolean value)
-    // Offset: 0x9099EC
+    // Offset: 0x19BF75C
     void set_IsSetup(bool value);
     // private System.Void Awake()
-    // Offset: 0x9099F8
+    // Offset: 0x19BF768
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x909DC4
+    // Offset: 0x19BFB34
     void OnDestroy();
     // protected System.Void OnEnable()
-    // Offset: 0x90A10C
+    // Offset: 0x19BFE7C
     void OnEnable();
     // protected System.Void OnDisable()
-    // Offset: 0x90A1F8
+    // Offset: 0x19BFF48
     void OnDisable();
     // public System.Void Setup(VROSC.LoopStationDataController dataController)
-    // Offset: 0x90A458
+    // Offset: 0x19BFF64
     void Setup(::VROSC::LoopStationDataController* dataController);
     // public System.Void CreateNewLoopByRecording(System.String trackId, System.Int32 globalSyncStartOffset, System.Boolean overdub)
-    // Offset: 0x90A830
+    // Offset: 0x19C0050
     void CreateNewLoopByRecording(::StringW trackId, int globalSyncStartOffset, bool overdub);
     // public System.Void SetRecordingText(System.String text)
-    // Offset: 0x90ABEC
+    // Offset: 0x19C01E0
     void SetRecordingText(::StringW text);
     // public System.Void RecordingOfLoopComplete()
-    // Offset: 0x90ACA8
+    // Offset: 0x19C01FC
     void RecordingOfLoopComplete();
     // public System.Void CancelRecording(System.Boolean restart)
-    // Offset: 0x908960
+    // Offset: 0x19BE8E0
     void CancelRecording(bool restart);
     // public System.Void Rerecord()
-    // Offset: 0x90AE44
+    // Offset: 0x19C0218
     void Rerecord();
     // private System.Void RemoveLoop(VROSC.LoopPlayer loopToRemove, System.Boolean fromReset)
-    // Offset: 0x90AF2C
+    // Offset: 0x19C0264
     void RemoveLoop(::VROSC::LoopPlayer* loopToRemove, bool fromReset);
     // private System.Void ResetLoopStation(System.Boolean keepLoopLength)
-    // Offset: 0x90B2C0
+    // Offset: 0x19C0428
     void ResetLoopStation(bool keepLoopLength);
     // private System.Void SyncSourceChanged(VROSC.BeatCounter/VROSC.SyncSource syncSource)
-    // Offset: 0x90B650
+    // Offset: 0x19C063C
     void SyncSourceChanged(::VROSC::BeatCounter::SyncSource syncSource);
     // public System.Boolean IsEmpty()
-    // Offset: 0x90B294
+    // Offset: 0x19C03F8
     bool IsEmpty();
     // public System.Void ShowAsPlaying()
-    // Offset: 0x90A158
+    // Offset: 0x19BFEC0
     void ShowAsPlaying();
     // public System.Void PlayAll()
-    // Offset: 0x90B70C
+    // Offset: 0x19C06A0
     void PlayAll();
     // public System.Void StopAll()
-    // Offset: 0x90B988
+    // Offset: 0x19C06BC
     void StopAll();
     // private System.Void DeleteAll()
-    // Offset: 0x90BAE0
+    // Offset: 0x19C06F8
     void DeleteAll();
     // private System.Void VolumeChanged(System.Single volume)
-    // Offset: 0x90BC1C
+    // Offset: 0x19C0838
     void VolumeChanged(float volume);
     // public System.Void SetAutoRecordingLength()
-    // Offset: 0x90BCDC
+    // Offset: 0x19C08BC
     void SetAutoRecordingLength();
     // public System.Single GetLoopLengthSetting()
-    // Offset: 0x90BCFC
+    // Offset: 0x19C08DC
     float GetLoopLengthSetting();
     // public System.Void SetRecordingLength(System.Single lengthInBars)
-    // Offset: 0x90BDF0
+    // Offset: 0x19C09D0
     void SetRecordingLength(float lengthInBars);
     // public System.Void LoopStationDataLoaded(VROSC.LoopStationDataController dataController)
-    // Offset: 0x90BF20
+    // Offset: 0x19C0B00
     void LoopStationDataLoaded(::VROSC::LoopStationDataController* dataController);
     // private System.Void LoadLaunchPads()
-    // Offset: 0x90D1C8
+    // Offset: 0x19C0E20
     void LoadLaunchPads();
     // public System.Void .ctor()
-    // Offset: 0x90DB88
+    // Offset: 0x19C10FC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

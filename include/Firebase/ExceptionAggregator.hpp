@@ -42,19 +42,19 @@ namespace Firebase {
     // Set static field: static private System.Collections.Generic.List`1<System.Exception> threadLocalExceptions
     static void _set_threadLocalExceptions(::System::Collections::Generic::List_1<::System::Exception*>* value);
     // static private System.Collections.Generic.List`1<System.Exception> get_Exceptions()
-    // Offset: 0x12C8498
+    // Offset: 0x18C7828
     static ::System::Collections::Generic::List_1<::System::Exception*>* get_Exceptions();
     // static public System.Exception GetAndClearPendingExceptions()
-    // Offset: 0x12C853C
+    // Offset: 0x18C78CC
     static ::System::Exception* GetAndClearPendingExceptions();
     // static public System.Void ThrowAndClearPendingExceptions()
-    // Offset: 0x12C8638
+    // Offset: 0x18C79C8
     static void ThrowAndClearPendingExceptions();
     // static public System.Exception LogException(System.Exception exception)
-    // Offset: 0x12C8678
+    // Offset: 0x18C7A08
     static ::System::Exception* LogException(::System::Exception* exception);
     // static public System.Void Wrap(System.Action action)
-    // Offset: 0x12C83CC
+    // Offset: 0x18C775C
     static void Wrap(::System::Action* action);
   }; // Firebase.ExceptionAggregator
   #pragma pack(pop)

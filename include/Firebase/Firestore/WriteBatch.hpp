@@ -51,15 +51,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class WriteBatch : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly Firebase.Firestore.WriteBatchProxy _proxy
     // Size: 0x8
     // Offset: 0x10
@@ -72,28 +64,28 @@ namespace Firebase::Firestore {
       return proxy;
     }
     // Get instance field reference: private readonly Firebase.Firestore.WriteBatchProxy _proxy
-    ::Firebase::Firestore::WriteBatchProxy*& dyn__proxy();
+    [[deprecated]] ::Firebase::Firestore::WriteBatchProxy*& dyn__proxy();
     // System.Void .ctor(Firebase.Firestore.WriteBatchProxy proxy)
-    // Offset: 0xC381F8
+    // Offset: 0xD5ACC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WriteBatch* New_ctor(::Firebase::Firestore::WriteBatchProxy* proxy) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::WriteBatch::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WriteBatch*, creationType>(proxy)));
     }
     // public Firebase.Firestore.WriteBatch Delete(Firebase.Firestore.DocumentReference documentReference)
-    // Offset: 0xC41B6C
+    // Offset: 0xD660C8
     ::Firebase::Firestore::WriteBatch* Delete(::Firebase::Firestore::DocumentReference* documentReference);
     // public Firebase.Firestore.WriteBatch Update(Firebase.Firestore.DocumentReference documentReference, System.Collections.Generic.IDictionary`2<System.String,System.Object> updates)
-    // Offset: 0xC41BAC
+    // Offset: 0xD66160
     ::Firebase::Firestore::WriteBatch* Update(::Firebase::Firestore::DocumentReference* documentReference, ::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* updates);
     // private Firebase.Firestore.FieldValueProxy ConvertToFieldValue(System.Collections.Generic.IDictionary`2<System.String,System.Object> updates)
-    // Offset: 0xC41BF0
+    // Offset: 0xD66234
     ::Firebase::Firestore::FieldValueProxy* ConvertToFieldValue(::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* updates);
     // public Firebase.Firestore.WriteBatch Set(Firebase.Firestore.DocumentReference documentReference, System.Object documentData, Firebase.Firestore.SetOptions options)
-    // Offset: 0xC41CC0
+    // Offset: 0xD66304
     ::Firebase::Firestore::WriteBatch* Set(::Firebase::Firestore::DocumentReference* documentReference, ::Il2CppObject* documentData, ::Firebase::Firestore::SetOptions* options);
     // public System.Threading.Tasks.Task CommitAsync()
-    // Offset: 0xC41E4C
+    // Offset: 0xD66500
     ::System::Threading::Tasks::Task* CommitAsync();
   }; // Firebase.Firestore.WriteBatch
   #pragma pack(pop)

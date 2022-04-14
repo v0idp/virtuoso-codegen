@@ -56,15 +56,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationUserGroupHandler : public ::VROSC::LoopStationGroupHandler {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopStationBaseGroupHandler _baseGroupHandler
     // Size: 0x8
     // Offset: 0x60
@@ -111,48 +103,48 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.LoopStationBaseGroupHandler _baseGroupHandler
-    ::VROSC::LoopStationBaseGroupHandler*& dyn__baseGroupHandler();
+    [[deprecated]] ::VROSC::LoopStationBaseGroupHandler*& dyn__baseGroupHandler();
     // Get instance field reference: private UnityEngine.RectTransform _sortArea
-    ::UnityEngine::RectTransform*& dyn__sortArea();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__sortArea();
     // Get instance field reference: private System.Single _padding
-    float& dyn__padding();
+    [[deprecated]] float& dyn__padding();
     // Get instance field reference: private UnityEngine.RectTransform _autoGroupHeader
-    ::UnityEngine::RectTransform*& dyn__autoGroupHeader();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__autoGroupHeader();
     // Get instance field reference: private VROSC.UIButton _addGroupButton
-    ::VROSC::UIButton*& dyn__addGroupButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__addGroupButton();
     // Get instance field reference: private VROSC.UISlideToggle _arrangeGroups
-    ::VROSC::UISlideToggle*& dyn__arrangeGroups();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__arrangeGroups();
     // Get instance field reference: private System.Int32 _groupNameCounter
-    int& dyn__groupNameCounter();
+    [[deprecated]] int& dyn__groupNameCounter();
     // private System.Void Awake()
-    // Offset: 0x8A6D70
+    // Offset: 0x19797B4
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0x8A7068
+    // Offset: 0x1979AA8
     void OnEnable();
     // private System.Void UpdateButtonsActiveState()
-    // Offset: 0x8A706C
+    // Offset: 0x1979AAC
     void UpdateButtonsActiveState();
     // private System.Void ArrangeChanged(VROSC.InputDevice device, System.Boolean autoSortActive)
-    // Offset: 0x8A70E4
+    // Offset: 0x1979B24
     void ArrangeChanged(::VROSC::InputDevice* device, bool autoSortActive);
     // private System.Void OnAddGroupButtonClicked()
-    // Offset: 0x8A7244
+    // Offset: 0x1979C80
     void OnAddGroupButtonClicked();
     // public VROSC.LoopStationGroup CreateNewUserGroup(VROSC.LoopPlaybackConfigOverride playbackConfig)
-    // Offset: 0x8A72A4
+    // Offset: 0x1979CE0
     ::VROSC::LoopStationGroup* CreateNewUserGroup(::VROSC::LoopPlaybackConfigOverride* playbackConfig);
     // public System.Void CreateGroupFromLoad(VROSC.LoopStationDataController data, VROSC.LoopStationGroup/VROSC.SetupVariables vars)
-    // Offset: 0x8A7450
+    // Offset: 0x196FB18
     void CreateGroupFromLoad(::VROSC::LoopStationDataController* data, ::VROSC::LoopStationGroup::SetupVariables vars);
     // private System.Void ShowGroupMenu(VROSC.LoopPlayer loopPlayer)
-    // Offset: 0x8A76A8
+    // Offset: 0x1979FCC
     void ShowGroupMenu(::VROSC::LoopPlayer* loopPlayer);
     // public System.Void SetAutoGroupingActive(System.Boolean autoSortUserGroups)
-    // Offset: 0x8A77E0
+    // Offset: 0x197A100
     void SetAutoGroupingActive(bool autoSortUserGroups);
     // public System.Void .ctor()
-    // Offset: 0x8A780C
+    // Offset: 0x197A12C
     // Implemented from: VROSC.LoopStationGroupHandler
     // Base method: System.Void LoopStationGroupHandler::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -166,27 +158,27 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationUserGroupHandler*, creationType>()));
     }
     // public override System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationLoopHandler loopHandler)
-    // Offset: 0x8A6F78
+    // Offset: 0x19799BC
     // Implemented from: VROSC.LoopStationGroupHandler
     // Base method: System.Void LoopStationGroupHandler::Setup(VROSC.LoopStation loopStation, VROSC.LoopStationLoopHandler loopHandler)
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationLoopHandler* loopHandler);
     // protected override VROSC.LoopStationGroup CreateGroup(VROSC.LoopStationGroup/VROSC.SetupVariables vars)
-    // Offset: 0x8A7558
+    // Offset: 0x1979E88
     // Implemented from: VROSC.LoopStationGroupHandler
     // Base method: VROSC.LoopStationGroup LoopStationGroupHandler::CreateGroup(VROSC.LoopStationGroup/VROSC.SetupVariables vars)
     ::VROSC::LoopStationGroup* CreateGroup(::VROSC::LoopStationGroup::SetupVariables vars);
     // protected override System.Void RemoveGroup(VROSC.LoopStationGroup group, System.Boolean fromReset)
-    // Offset: 0x8A75C0
+    // Offset: 0x1979EEC
     // Implemented from: VROSC.LoopStationGroupHandler
     // Base method: System.Void LoopStationGroupHandler::RemoveGroup(VROSC.LoopStationGroup group, System.Boolean fromReset)
     void RemoveGroup(::VROSC::LoopStationGroup* group, bool fromReset);
     // public override System.Void RemoveAllGroups()
-    // Offset: 0x8A76D8
+    // Offset: 0x1979FFC
     // Implemented from: VROSC.LoopStationGroupHandler
     // Base method: System.Void LoopStationGroupHandler::RemoveAllGroups()
     void RemoveAllGroups();
     // public override System.Void SortGroups()
-    // Offset: 0x8A7778
+    // Offset: 0x197A09C
     // Implemented from: VROSC.LoopStationGroupHandler
     // Base method: System.Void LoopStationGroupHandler::SortGroups()
     void SortGroups();

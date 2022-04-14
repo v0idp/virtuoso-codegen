@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class FPSCounter : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.TextMesh _textMesh
     // Size: 0x8
     // Offset: 0x18
@@ -54,15 +46,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.TextMesh _textMesh
-    ::UnityEngine::TextMesh*& dyn__textMesh();
+    [[deprecated]] ::UnityEngine::TextMesh*& dyn__textMesh();
     // private System.Void Start()
-    // Offset: 0x1317224
+    // Offset: 0x8F12D4
     void Start();
     // private System.Void Update()
-    // Offset: 0x131730C
+    // Offset: 0x8F13BC
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x1317398
+    // Offset: 0x8F1448
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

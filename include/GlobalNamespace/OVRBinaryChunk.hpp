@@ -60,11 +60,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IO.Stream chunkStream
-    ::System::IO::Stream*& dyn_chunkStream();
+    [[deprecated]] ::System::IO::Stream*& dyn_chunkStream();
     // Get instance field reference: public System.UInt32 chunkLength
-    uint& dyn_chunkLength();
+    [[deprecated]] uint& dyn_chunkLength();
     // Get instance field reference: public System.Int64 chunkStart
-    int64_t& dyn_chunkStart();
+    [[deprecated]] int64_t& dyn_chunkStart();
   }; // OVRBinaryChunk
   #pragma pack(pop)
   static check_size<sizeof(OVRBinaryChunk), 16 + sizeof(int64_t)> __GlobalNamespace_OVRBinaryChunkSizeCheck;

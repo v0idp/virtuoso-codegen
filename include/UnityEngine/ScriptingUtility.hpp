@@ -30,7 +30,7 @@ namespace UnityEngine {
     // Nested type: ::UnityEngine::ScriptingUtility::TestClass
     struct TestClass;
     // static private System.Boolean IsManagedCodeWorking()
-    // Offset: 0x9DE3A4
+    // Offset: 0xBD31E4
     static bool IsManagedCodeWorking();
   }; // UnityEngine.ScriptingUtility
   #pragma pack(pop)

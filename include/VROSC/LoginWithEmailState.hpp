@@ -44,15 +44,7 @@ namespace VROSC {
     class $$c__DisplayClass20_0;
     // Nested type: ::VROSC::LoginWithEmailState::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AuthenticationManager _authManager
     // Size: 0x8
     // Offset: 0x10
@@ -121,61 +113,61 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.AuthenticationManager _authManager
-    ::VROSC::AuthenticationManager*& dyn__authManager();
+    [[deprecated]] ::VROSC::AuthenticationManager*& dyn__authManager();
     // Get instance field reference: private System.String _email
-    ::StringW& dyn__email();
+    [[deprecated]] ::StringW& dyn__email();
     // Get instance field reference: private System.String _password
-    ::StringW& dyn__password();
+    [[deprecated]] ::StringW& dyn__password();
     // Get instance field reference: private System.Boolean _rememberMe
-    bool& dyn__rememberMe();
+    [[deprecated]] bool& dyn__rememberMe();
     // Get instance field reference: private System.Boolean _isNewUser
-    bool& dyn__isNewUser();
+    [[deprecated]] bool& dyn__isNewUser();
     // Get instance field reference: private System.Single _lastAttemptTimer
-    float& dyn__lastAttemptTimer();
+    [[deprecated]] float& dyn__lastAttemptTimer();
     // Get instance field reference: private System.Int32 _attemptsCount
-    int& dyn__attemptsCount();
+    [[deprecated]] int& dyn__attemptsCount();
     // Get instance field reference: private System.Boolean _waitingForResponse
-    bool& dyn__waitingForResponse();
+    [[deprecated]] bool& dyn__waitingForResponse();
     // Get instance field reference: private System.Boolean _hasSubmittedData
-    bool& dyn__hasSubmittedData();
+    [[deprecated]] bool& dyn__hasSubmittedData();
     // Get instance field reference: private System.Boolean <HasLoggedIn>k__BackingField
-    bool& dyn_$HasLoggedIn$k__BackingField();
+    [[deprecated]] bool& dyn_$HasLoggedIn$k__BackingField();
     // public System.Boolean get_HasLoggedIn()
-    // Offset: 0x1393CFC
+    // Offset: 0x19B4150
     bool get_HasLoggedIn();
     // private System.Void set_HasLoggedIn(System.Boolean value)
-    // Offset: 0x1393D04
+    // Offset: 0x19B4158
     void set_HasLoggedIn(bool value);
     // public System.Void .ctor(VROSC.AuthenticationManager authManager)
-    // Offset: 0x1393D10
+    // Offset: 0x19B4164
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoginWithEmailState* New_ctor(::VROSC::AuthenticationManager* authManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginWithEmailState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LoginWithEmailState*, creationType>(authManager)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x1393D80
+    // Offset: 0x19B41D4
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x1393E70
+    // Offset: 0x19B42C4
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x1393EC8
+    // Offset: 0x19B431C
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13941B4
+    // Offset: 0x19B4608
     void UpdateData(::ArrayW<::Il2CppObject*> values);
     // private System.Void LoginWithEmail(System.String email, System.String password)
-    // Offset: 0x1393F5C
+    // Offset: 0x19B43B0
     void LoginWithEmail(::StringW email, ::StringW password);
     // private System.Void FirebaseCreateUserWithEmailSuccess(System.String userId)
-    // Offset: 0x13942F0
+    // Offset: 0x19B4744
     void FirebaseCreateUserWithEmailSuccess(::StringW userId);
     // private System.Void FirebaseLoginUserWithEmailSuccess(System.String userId, System.Boolean isEmailVerified)
-    // Offset: 0x13942F8
+    // Offset: 0x19B474C
     void FirebaseLoginUserWithEmailSuccess(::StringW userId, bool isEmailVerified);
     // private System.Void FirebaseLoginUserWithEmailFailure(VROSC.Error error)
-    // Offset: 0x1394158
+    // Offset: 0x19B45AC
     void FirebaseLoginUserWithEmailFailure(::VROSC::Error error);
   }; // VROSC.LoginWithEmailState
   #pragma pack(pop)

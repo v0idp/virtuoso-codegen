@@ -48,15 +48,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_TextInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public TMPro.TMP_Text textComponent
     // Size: 0x8
     // Offset: 0x10
@@ -163,80 +155,80 @@ namespace TMPro {
     // Set static field: static UnityEngine.Vector2 k_InfinityVectorNegative
     static void _set_k_InfinityVectorNegative(::UnityEngine::Vector2 value);
     // Get instance field reference: public TMPro.TMP_Text textComponent
-    ::TMPro::TMP_Text*& dyn_textComponent();
+    [[deprecated]] ::TMPro::TMP_Text*& dyn_textComponent();
     // Get instance field reference: public System.Int32 characterCount
-    int& dyn_characterCount();
+    [[deprecated]] int& dyn_characterCount();
     // Get instance field reference: public System.Int32 spriteCount
-    int& dyn_spriteCount();
+    [[deprecated]] int& dyn_spriteCount();
     // Get instance field reference: public System.Int32 spaceCount
-    int& dyn_spaceCount();
+    [[deprecated]] int& dyn_spaceCount();
     // Get instance field reference: public System.Int32 wordCount
-    int& dyn_wordCount();
+    [[deprecated]] int& dyn_wordCount();
     // Get instance field reference: public System.Int32 linkCount
-    int& dyn_linkCount();
+    [[deprecated]] int& dyn_linkCount();
     // Get instance field reference: public System.Int32 lineCount
-    int& dyn_lineCount();
+    [[deprecated]] int& dyn_lineCount();
     // Get instance field reference: public System.Int32 pageCount
-    int& dyn_pageCount();
+    [[deprecated]] int& dyn_pageCount();
     // Get instance field reference: public System.Int32 materialCount
-    int& dyn_materialCount();
+    [[deprecated]] int& dyn_materialCount();
     // Get instance field reference: public TMPro.TMP_CharacterInfo[] characterInfo
-    ::ArrayW<::TMPro::TMP_CharacterInfo>& dyn_characterInfo();
+    [[deprecated]] ::ArrayW<::TMPro::TMP_CharacterInfo>& dyn_characterInfo();
     // Get instance field reference: public TMPro.TMP_WordInfo[] wordInfo
-    ::ArrayW<::TMPro::TMP_WordInfo>& dyn_wordInfo();
+    [[deprecated]] ::ArrayW<::TMPro::TMP_WordInfo>& dyn_wordInfo();
     // Get instance field reference: public TMPro.TMP_LinkInfo[] linkInfo
-    ::ArrayW<::TMPro::TMP_LinkInfo>& dyn_linkInfo();
+    [[deprecated]] ::ArrayW<::TMPro::TMP_LinkInfo>& dyn_linkInfo();
     // Get instance field reference: public TMPro.TMP_LineInfo[] lineInfo
-    ::ArrayW<::TMPro::TMP_LineInfo>& dyn_lineInfo();
+    [[deprecated]] ::ArrayW<::TMPro::TMP_LineInfo>& dyn_lineInfo();
     // Get instance field reference: public TMPro.TMP_PageInfo[] pageInfo
-    ::ArrayW<::TMPro::TMP_PageInfo>& dyn_pageInfo();
+    [[deprecated]] ::ArrayW<::TMPro::TMP_PageInfo>& dyn_pageInfo();
     // Get instance field reference: public TMPro.TMP_MeshInfo[] meshInfo
-    ::ArrayW<::TMPro::TMP_MeshInfo>& dyn_meshInfo();
+    [[deprecated]] ::ArrayW<::TMPro::TMP_MeshInfo>& dyn_meshInfo();
     // Get instance field reference: private TMPro.TMP_MeshInfo[] m_CachedMeshInfo
-    ::ArrayW<::TMPro::TMP_MeshInfo>& dyn_m_CachedMeshInfo();
+    [[deprecated]] ::ArrayW<::TMPro::TMP_MeshInfo>& dyn_m_CachedMeshInfo();
     // System.Void .ctor(System.Int32 characterCount)
-    // Offset: 0xACAFD8
+    // Offset: 0xD0FE2C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_TextInfo* New_ctor(int characterCount) {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_TextInfo::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_TextInfo*, creationType>(characterCount)));
     }
     // public System.Void .ctor(TMPro.TMP_Text textComponent)
-    // Offset: 0xACB0F8
+    // Offset: 0xD0FF4C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_TextInfo* New_ctor(::TMPro::TMP_Text* textComponent) {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_TextInfo::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_TextInfo*, creationType>(textComponent)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xACBD50
+    // Offset: 0xD10BA4
     static void _cctor();
     // public System.Void Clear()
-    // Offset: 0xACB260
+    // Offset: 0xD100B4
     void Clear();
     // System.Void ClearAllData()
-    // Offset: 0xACB2C4
+    // Offset: 0xD10118
     void ClearAllData();
     // public System.Void ClearMeshInfo(System.Boolean updateMesh)
-    // Offset: 0xACB3DC
+    // Offset: 0xD10230
     void ClearMeshInfo(bool updateMesh);
     // public System.Void ClearAllMeshInfo()
-    // Offset: 0xACB45C
+    // Offset: 0xD102B0
     void ClearAllMeshInfo();
     // public System.Void ResetVertexLayout(System.Boolean isVolumetric)
-    // Offset: 0xACB4D8
+    // Offset: 0xD1032C
     void ResetVertexLayout(bool isVolumetric);
     // public System.Void ClearUnusedVertices(TMPro.MaterialReference[] materials)
-    // Offset: 0xACB55C
+    // Offset: 0xD103B0
     void ClearUnusedVertices(::ArrayW<::TMPro::MaterialReference> materials);
     // public System.Void ClearLineInfo()
-    // Offset: 0xACB5D8
+    // Offset: 0xD1042C
     void ClearLineInfo();
     // System.Void ClearPageInfo()
-    // Offset: 0xACB82C
+    // Offset: 0xD10680
     void ClearPageInfo();
     // public TMPro.TMP_MeshInfo[] CopyMeshInfoVertexData()
-    // Offset: 0xACB964
+    // Offset: 0xD107B8
     ::ArrayW<::TMPro::TMP_MeshInfo> CopyMeshInfoVertexData();
     // static public System.Void Resize(ref T[] array, System.Int32 size)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -257,7 +249,7 @@ namespace TMPro {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, byref(array), size, isBlockAllocated);
     }
     // public System.Void .ctor()
-    // Offset: 0xACAEC4
+    // Offset: 0xD0FD18
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

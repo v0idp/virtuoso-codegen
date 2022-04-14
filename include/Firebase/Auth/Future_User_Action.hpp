@@ -35,20 +35,20 @@ namespace Firebase::Auth {
   class Future_User::Action : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x12B2A5C
+    // Offset: 0x18B2988
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Future_User::Action* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::Future_User::Action::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Future_User::Action*, creationType>(object, method)));
     }
     // public System.Void Invoke()
-    // Offset: 0x12B2EB8
+    // Offset: 0x18B2DE4
     void Invoke();
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
-    // Offset: 0x12B49A8
+    // Offset: 0x18B4B98
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x12B49D4
+    // Offset: 0x18B4BC4
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Auth.Future_User/Firebase.Auth.Action
   #pragma pack(pop)

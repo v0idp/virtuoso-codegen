@@ -29,15 +29,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class NetSyncSession : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.Int64 ConnectionId
     // Size: 0x8
     // Offset: 0x10
@@ -72,17 +64,17 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.Int64 ConnectionId
-    int64_t& dyn_ConnectionId();
+    [[deprecated]] int64_t& dyn_ConnectionId();
     // Get instance field reference: public readonly System.Boolean Muted
-    bool& dyn_Muted();
+    [[deprecated]] bool& dyn_Muted();
     // Get instance field reference: public readonly System.UInt64 SessionId
-    uint64_t& dyn_SessionId();
+    [[deprecated]] uint64_t& dyn_SessionId();
     // Get instance field reference: public readonly System.UInt64 UserId
-    uint64_t& dyn_UserId();
+    [[deprecated]] uint64_t& dyn_UserId();
     // Get instance field reference: public readonly System.String VoipGroup
-    ::StringW& dyn_VoipGroup();
+    [[deprecated]] ::StringW& dyn_VoipGroup();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x97FC24
+    // Offset: 0xB51FC0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NetSyncSession* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::NetSyncSession::.ctor");

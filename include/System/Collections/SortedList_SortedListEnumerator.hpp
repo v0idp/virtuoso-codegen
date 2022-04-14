@@ -34,15 +34,7 @@ namespace System::Collections {
   // [TokenAttribute] Offset: FFFFFFFF
   class SortedList::SortedListEnumerator : public ::Il2CppObject/*, public ::System::ICloneable, public ::System::Collections::IDictionaryEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.SortedList sortedList
     // Size: 0x8
     // Offset: 0x10
@@ -109,50 +101,50 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.SortedList sortedList
-    ::System::Collections::SortedList*& dyn_sortedList();
+    [[deprecated]] ::System::Collections::SortedList*& dyn_sortedList();
     // Get instance field reference: private System.Object key
-    ::Il2CppObject*& dyn_key();
+    [[deprecated]] ::Il2CppObject*& dyn_key();
     // Get instance field reference: private System.Object value
-    ::Il2CppObject*& dyn_value();
+    [[deprecated]] ::Il2CppObject*& dyn_value();
     // Get instance field reference: private System.Int32 index
-    int& dyn_index();
+    [[deprecated]] int& dyn_index();
     // Get instance field reference: private System.Int32 startIndex
-    int& dyn_startIndex();
+    [[deprecated]] int& dyn_startIndex();
     // Get instance field reference: private System.Int32 endIndex
-    int& dyn_endIndex();
+    [[deprecated]] int& dyn_endIndex();
     // Get instance field reference: private System.Int32 version
-    int& dyn_version();
+    [[deprecated]] int& dyn_version();
     // Get instance field reference: private System.Boolean current
-    bool& dyn_current();
+    [[deprecated]] bool& dyn_current();
     // Get instance field reference: private System.Int32 getObjectRetType
-    int& dyn_getObjectRetType();
+    [[deprecated]] int& dyn_getObjectRetType();
     // public System.Object get_Key()
-    // Offset: 0x1082E14
+    // Offset: 0xE59B80
     ::Il2CppObject* get_Key();
     // public System.Collections.DictionaryEntry get_Entry()
-    // Offset: 0x1082FB4
+    // Offset: 0xE59D20
     ::System::Collections::DictionaryEntry get_Entry();
     // public System.Object get_Current()
-    // Offset: 0x108306C
+    // Offset: 0xE59DD8
     ::Il2CppObject* get_Current();
     // public System.Object get_Value()
-    // Offset: 0x108315C
+    // Offset: 0xE59EC8
     ::Il2CppObject* get_Value();
     // System.Void .ctor(System.Collections.SortedList sortedList, System.Int32 index, System.Int32 count, System.Int32 getObjRetType)
-    // Offset: 0x1082C0C
+    // Offset: 0xE59978
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SortedList::SortedListEnumerator* New_ctor(::System::Collections::SortedList* sortedList, int index, int count, int getObjRetType) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::SortedList::SortedListEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SortedList::SortedListEnumerator*, creationType>(sortedList, index, count, getObjRetType)));
     }
     // public System.Object Clone()
-    // Offset: 0x1082E0C
+    // Offset: 0xE59B78
     ::Il2CppObject* Clone();
     // public System.Boolean MoveNext()
-    // Offset: 0x1082EB0
+    // Offset: 0xE59C1C
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0x10831F8
+    // Offset: 0xE59F64
     void Reset();
   }; // System.Collections.SortedList/System.Collections.SortedListEnumerator
   #pragma pack(pop)

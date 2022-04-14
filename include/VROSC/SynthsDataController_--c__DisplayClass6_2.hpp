@@ -38,15 +38,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SynthsDataController::$$c__DisplayClass6_2 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.SynthData instrumentData
     // Size: 0x8
     // Offset: 0x10
@@ -67,16 +59,16 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.SynthData instrumentData
-    ::VROSC::SynthData*& dyn_instrumentData();
+    [[deprecated]] ::VROSC::SynthData*& dyn_instrumentData();
     // Get instance field reference: public VROSC.SynthsDataController/VROSC.<>c__DisplayClass6_1 CS$<>8__locals2
-    ::VROSC::SynthsDataController::$$c__DisplayClass6_1*& dyn_CS$$$8__locals2();
+    [[deprecated]] ::VROSC::SynthsDataController::$$c__DisplayClass6_1*& dyn_CS$$$8__locals2();
     // Get instance field reference: public System.Action`1<System.String> <>9__1
-    ::System::Action_1<::StringW>*& dyn_$$9__1();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_$$9__1();
     // System.Void <LoadData>b__1(System.String text)
-    // Offset: 0x134EE20
+    // Offset: 0x8DB038
     void $LoadData$b__1(::StringW text);
     // public System.Void .ctor()
-    // Offset: 0x134EE18
+    // Offset: 0x8DB030
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

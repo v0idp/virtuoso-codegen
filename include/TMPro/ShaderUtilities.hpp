@@ -308,31 +308,31 @@ namespace TMPro {
     // Set static field: static private UnityEngine.Shader k_ShaderRef_MobileBitmap
     static void _set_k_ShaderRef_MobileBitmap(::UnityEngine::Shader* value);
     // static UnityEngine.Shader get_ShaderRef_MobileSDF()
-    // Offset: 0xA49C60
+    // Offset: 0xC2B870
     static ::UnityEngine::Shader* get_ShaderRef_MobileSDF();
     // static UnityEngine.Shader get_ShaderRef_MobileBitmap()
-    // Offset: 0xA49D80
+    // Offset: 0xC2B990
     static ::UnityEngine::Shader* get_ShaderRef_MobileBitmap();
     // static private System.Void .cctor()
-    // Offset: 0xA49EA0
+    // Offset: 0xC2BAB0
     static void _cctor();
     // static public System.Void GetShaderPropertyIDs()
-    // Offset: 0xA4A038
+    // Offset: 0xC2BC48
     static void GetShaderPropertyIDs();
     // static public System.Void UpdateShaderRatios(UnityEngine.Material mat)
-    // Offset: 0xA4AB54
+    // Offset: 0xC2C764
     static void UpdateShaderRatios(::UnityEngine::Material* mat);
     // static public UnityEngine.Vector4 GetFontExtent(UnityEngine.Material material)
-    // Offset: 0xA4B068
+    // Offset: 0xC2CC78
     static ::UnityEngine::Vector4 GetFontExtent(::UnityEngine::Material* material);
     // static public System.Boolean IsMaskingEnabled(UnityEngine.Material material)
-    // Offset: 0xA4B070
+    // Offset: 0xC2CC80
     static bool IsMaskingEnabled(::UnityEngine::Material* material);
     // static public System.Single GetPadding(UnityEngine.Material material, System.Boolean enableExtraPadding, System.Boolean isBold)
-    // Offset: 0xA4B238
+    // Offset: 0xC2CE48
     static float GetPadding(::UnityEngine::Material* material, bool enableExtraPadding, bool isBold);
     // static public System.Single GetPadding(UnityEngine.Material[] materials, System.Boolean enableExtraPadding, System.Boolean isBold)
-    // Offset: 0xA4BA5C
+    // Offset: 0xC2D66C
     static float GetPadding(::ArrayW<::UnityEngine::Material*> materials, bool enableExtraPadding, bool isBold);
   }; // TMPro.ShaderUtilities
   #pragma pack(pop)

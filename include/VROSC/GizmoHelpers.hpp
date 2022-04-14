@@ -35,16 +35,16 @@ namespace VROSC {
   class GizmoHelpers : public ::Il2CppObject {
     public:
     // static public System.String GetParentRecursive(UnityEngine.Transform transform, System.String text)
-    // Offset: 0x890DDC
+    // Offset: 0x19A325C
     static ::StringW GetParentRecursive(::UnityEngine::Transform* transform, ::StringW text);
     // static public System.Void DrawGizmoRect(UnityEngine.Transform transform, UnityEngine.Rect rect)
-    // Offset: 0x890EC8
+    // Offset: 0x19A3348
     static void DrawGizmoRect(::UnityEngine::Transform* transform, ::UnityEngine::Rect rect);
     // static public System.Void DrawGizmoWireBox(UnityEngine.Transform transform, UnityEngine.Vector3 size)
-    // Offset: 0x8910E0
+    // Offset: 0x19A3560
     static void DrawGizmoWireBox(::UnityEngine::Transform* transform, ::UnityEngine::Vector3 size);
     // static public System.Void DrawGizmoWireBox(UnityEngine.Transform transform, UnityEngine.Vector3 size, UnityEngine.Vector3 localOffset)
-    // Offset: 0x89113C
+    // Offset: 0x19A35BC
     static void DrawGizmoWireBox(::UnityEngine::Transform* transform, ::UnityEngine::Vector3 size, ::UnityEngine::Vector3 localOffset);
   }; // VROSC.GizmoHelpers
   #pragma pack(pop)

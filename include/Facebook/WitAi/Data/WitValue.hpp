@@ -41,15 +41,7 @@ namespace Facebook::WitAi::Data {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitValue : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String path
     // Size: 0x8
     // Offset: 0x18
@@ -66,11 +58,11 @@ namespace Facebook::WitAi::Data {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.String path
-    ::StringW& dyn_path();
+    [[deprecated]] ::StringW& dyn_path();
     // Get instance field reference: private Facebook.WitAi.WitResponseReference reference
-    ::Facebook::WitAi::WitResponseReference*& dyn_reference();
+    [[deprecated]] ::Facebook::WitAi::WitResponseReference*& dyn_reference();
     // public Facebook.WitAi.WitResponseReference get_Reference()
-    // Offset: 0x10F9C38
+    // Offset: 0x16704A0
     ::Facebook::WitAi::WitResponseReference* get_Reference();
     // public System.Object GetValue(Facebook.WitAi.Lib.WitResponseNode response)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -79,10 +71,10 @@ namespace Facebook::WitAi::Data {
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool Equals(::Facebook::WitAi::Lib::WitResponseNode* response, ::Il2CppObject* value);
     // public System.String ToString(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1106E44
+    // Offset: 0x167D6B0
     ::StringW ToString(::Facebook::WitAi::Lib::WitResponseNode* response);
     // protected System.Void .ctor()
-    // Offset: 0x10FEA08
+    // Offset: 0x1675270
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

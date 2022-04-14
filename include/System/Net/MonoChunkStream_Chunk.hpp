@@ -24,15 +24,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class MonoChunkStream::Chunk : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Byte[] Bytes
     // Size: 0x8
     // Offset: 0x10
@@ -47,18 +39,18 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Byte[] Bytes
-    ::ArrayW<uint8_t>& dyn_Bytes();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_Bytes();
     // Get instance field reference: public System.Int32 Offset
-    int& dyn_Offset();
+    [[deprecated]] int& dyn_Offset();
     // public System.Void .ctor(System.Byte[] chunk)
-    // Offset: 0x8DFEAC
+    // Offset: 0x9FAC28
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MonoChunkStream::Chunk* New_ctor(::ArrayW<uint8_t> chunk) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::MonoChunkStream::Chunk::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MonoChunkStream::Chunk*, creationType>(chunk)));
     }
     // public System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 size)
-    // Offset: 0x8DFED8
+    // Offset: 0x9FAC54
     int Read(::ArrayW<uint8_t> buffer, int offset, int size);
   }; // System.Net.MonoChunkStream/System.Net.Chunk
   #pragma pack(pop)

@@ -33,15 +33,7 @@ namespace Facebook::WitAi::Configuration {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitConfigurationData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Facebook.WitAi.Data.Configuration.WitConfiguration witConfiguration
     // Size: 0x8
     // Offset: 0x10
@@ -54,9 +46,9 @@ namespace Facebook::WitAi::Configuration {
       return witConfiguration;
     }
     // Get instance field reference: public Facebook.WitAi.Data.Configuration.WitConfiguration witConfiguration
-    ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_witConfiguration();
+    [[deprecated]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_witConfiguration();
     // protected System.Void .ctor()
-    // Offset: 0x10FD964
+    // Offset: 0x16741CC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

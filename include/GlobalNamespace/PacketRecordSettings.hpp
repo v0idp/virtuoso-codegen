@@ -26,15 +26,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class PacketRecordSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Boolean RecordingFrames
     // Size: 0x1
     // Offset: 0x10
@@ -57,13 +49,13 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: System.Boolean RecordingFrames
-    bool& dyn_RecordingFrames();
+    [[deprecated]] bool& dyn_RecordingFrames();
     // Get instance field reference: public System.Single UpdateRate
-    float& dyn_UpdateRate();
+    [[deprecated]] float& dyn_UpdateRate();
     // Get instance field reference: System.Single AccumulatedTime
-    float& dyn_AccumulatedTime();
+    [[deprecated]] float& dyn_AccumulatedTime();
     // public System.Void .ctor()
-    // Offset: 0x8F6A5C
+    // Offset: 0xADB234
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

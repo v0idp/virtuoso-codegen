@@ -42,9 +42,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 SamplesAvailable
-    int& dyn_SamplesAvailable();
+    [[deprecated]] int& dyn_SamplesAvailable();
     // Get instance field reference: public System.Int32 SamplesQueued
-    int& dyn_SamplesQueued();
+    [[deprecated]] int& dyn_SamplesQueued();
   }; // OVRPlugin/HapticsState
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::HapticsState), 4 + sizeof(int)> __GlobalNamespace_OVRPlugin_HapticsStateSizeCheck;

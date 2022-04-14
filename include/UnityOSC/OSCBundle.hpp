@@ -44,17 +44,17 @@ namespace UnityOSC {
     // Set static field: static private System.String BUNDLE
     static void _set_BUNDLE(::StringW value);
     // public System.Void .ctor(System.Int64 timestamp)
-    // Offset: 0xA16668
+    // Offset: 0xC5B6CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OSCBundle* New_ctor(int64_t timestamp) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCBundle::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OSCBundle*, creationType>(timestamp)));
     }
     // static public UnityOSC.OSCBundle Unpack(System.Byte[] data, ref System.Int32 start, System.Int32 end)
-    // Offset: 0xA16724
+    // Offset: 0xC5B788
     static ::UnityOSC::OSCBundle* Unpack(::ArrayW<uint8_t> data, ByRef<int> start, int end);
     // public System.Void .ctor()
-    // Offset: 0xA16598
+    // Offset: 0xC5B5FC
     // Implemented from: UnityOSC.OSCPacket
     // Base method: System.Void OSCPacket::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -64,12 +64,12 @@ namespace UnityOSC {
       return THROW_UNLESS((::il2cpp_utils::New<OSCBundle*, creationType>()));
     }
     // public override System.Boolean IsBundle()
-    // Offset: 0xA166C8
+    // Offset: 0xC5B72C
     // Implemented from: UnityOSC.OSCPacket
     // Base method: System.Boolean OSCPacket::IsBundle()
     bool IsBundle();
     // public override System.Void Pack()
-    // Offset: 0xA166D0
+    // Offset: 0xC5B734
     // Implemented from: UnityOSC.OSCPacket
     // Base method: System.Void OSCPacket::Pack()
     void Pack();
@@ -80,7 +80,7 @@ namespace UnityOSC {
     template<class T>
     void Append(T msgvalue) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCBundle::Append");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Append", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(msgvalue)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::UnityOSC::OSCPacket*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, msgvalue);
     }

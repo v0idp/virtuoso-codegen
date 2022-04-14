@@ -48,15 +48,7 @@ namespace VROSC {
     class ForceUpdates;
     // Nested type: ::VROSC::AppValidityChecker::$ForceUpdatesDataLoadFailure$d__19
     struct $ForceUpdatesDataLoadFailure$d__19;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AppValidityChecker/VROSC.ForceUpdates ForceUpdatesData
     // Size: 0x8
     // Offset: 0x10
@@ -85,7 +77,7 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // static field const value: static private System.Int32 TimeoutRetries
-    static constexpr const int TimeoutRetries = 2147483647;
+    static constexpr const int TimeoutRetries = 3;
     // Get static field: static private System.Int32 TimeoutRetries
     static int _get_TimeoutRetries();
     // Set static field: static private System.Int32 TimeoutRetries
@@ -99,45 +91,45 @@ namespace VROSC {
     // Set static field: static private System.Action`1<VROSC.Error> _onFailureCallback
     static void _set__onFailureCallback(::System::Action_1<::VROSC::Error>* value);
     // Get instance field reference: private VROSC.AppValidityChecker/VROSC.ForceUpdates ForceUpdatesData
-    ::VROSC::AppValidityChecker::ForceUpdates*& dyn_ForceUpdatesData();
+    [[deprecated]] ::VROSC::AppValidityChecker::ForceUpdates*& dyn_ForceUpdatesData();
     // Get instance field reference: private System.Boolean _isDataLoadAttempted
-    bool& dyn__isDataLoadAttempted();
+    [[deprecated]] bool& dyn__isDataLoadAttempted();
     // Get instance field reference: private System.Int32 _retries
-    int& dyn__retries();
+    [[deprecated]] int& dyn__retries();
     // Get instance field reference: private System.Boolean <IsForceUpdateDataLoaded>k__BackingField
-    bool& dyn_$IsForceUpdateDataLoaded$k__BackingField();
+    [[deprecated]] bool& dyn_$IsForceUpdateDataLoaded$k__BackingField();
     // public System.String get_EULATermsVersion()
-    // Offset: 0x136D660
+    // Offset: 0x96BF40
     ::StringW get_EULATermsVersion();
     // public System.Boolean get_IsForceUpdateDataLoaded()
-    // Offset: 0x136D67C
+    // Offset: 0x96BF5C
     bool get_IsForceUpdateDataLoaded();
     // private System.Void set_IsForceUpdateDataLoaded(System.Boolean value)
-    // Offset: 0x136D684
+    // Offset: 0x96BF64
     void set_IsForceUpdateDataLoaded(bool value);
     // public System.Void LoadData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x136D6F8
+    // Offset: 0x96BFD8
     void LoadData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Boolean IsAppValid()
-    // Offset: 0x136D84C
+    // Offset: 0x96BF38
     bool IsAppValid();
     // public System.Boolean HasUserAcceptedTerms()
-    // Offset: 0x136D854
+    // Offset: 0x96C12C
     bool HasUserAcceptedTerms();
     // public System.Boolean CanUserUseLibrary()
-    // Offset: 0x136DBCC
+    // Offset: 0x96C4A4
     bool CanUserUseLibrary();
     // private System.Void ForceUpdatesDataLoadSuccess(System.String jsonData)
-    // Offset: 0x136DC1C
+    // Offset: 0x96C4F4
     void ForceUpdatesDataLoadSuccess(::StringW jsonData);
     // private System.Void ForceUpdatesDataLoadFailure(VROSC.Error error)
-    // Offset: 0x136DCC0
+    // Offset: 0x96C59C
     void ForceUpdatesDataLoadFailure(::VROSC::Error error);
     // private System.Boolean IsVersionCompatible(System.String requiredVersion, System.String versionToCheck)
-    // Offset: 0x136D8E8
+    // Offset: 0x96C1C0
     bool IsVersionCompatible(::StringW requiredVersion, ::StringW versionToCheck);
     // public System.Void .ctor()
-    // Offset: 0x136D690
+    // Offset: 0x96BF70
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

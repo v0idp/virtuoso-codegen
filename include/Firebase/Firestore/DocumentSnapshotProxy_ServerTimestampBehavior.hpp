@@ -63,7 +63,7 @@ namespace Firebase::Firestore {
     // Set static field: static public Firebase.Firestore.DocumentSnapshotProxy/Firebase.Firestore.ServerTimestampBehavior Default
     static void _set_Default(::Firebase::Firestore::DocumentSnapshotProxy::ServerTimestampBehavior value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Firebase.Firestore.DocumentSnapshotProxy/Firebase.Firestore.ServerTimestampBehavior
   #pragma pack(pop)
   static check_size<sizeof(DocumentSnapshotProxy::ServerTimestampBehavior), 0 + sizeof(int)> __Firebase_Firestore_DocumentSnapshotProxy_ServerTimestampBehaviorSizeCheck;

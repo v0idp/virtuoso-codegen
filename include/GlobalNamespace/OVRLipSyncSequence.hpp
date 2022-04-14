@@ -38,15 +38,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRLipSyncSequence : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<OVRLipSync/Frame> entries
     // Size: 0x8
     // Offset: 0x18
@@ -63,14 +55,14 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Collections.Generic.List`1<OVRLipSync/Frame> entries
-    ::System::Collections::Generic::List_1<::GlobalNamespace::OVRLipSync::Frame*>*& dyn_entries();
+    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRLipSync::Frame*>*& dyn_entries();
     // Get instance field reference: public System.Single length
-    float& dyn_length();
+    [[deprecated]] float& dyn_length();
     // public OVRLipSync/Frame GetFrameAtTime(System.Single time)
-    // Offset: 0x12AC1FC
+    // Offset: 0x18AADA0
     ::GlobalNamespace::OVRLipSync::Frame* GetFrameAtTime(float time);
     // public System.Void .ctor()
-    // Offset: 0x12AE2A4
+    // Offset: 0x18ACE48
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

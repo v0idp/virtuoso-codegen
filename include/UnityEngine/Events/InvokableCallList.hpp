@@ -44,15 +44,7 @@ namespace UnityEngine::Events {
   // [TokenAttribute] Offset: FFFFFFFF
   class InvokableCallList : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Collections.Generic.List`1<UnityEngine.Events.BaseInvokableCall> m_PersistentCalls
     // Size: 0x8
     // Offset: 0x10
@@ -79,30 +71,30 @@ namespace UnityEngine::Events {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.Events.BaseInvokableCall> m_PersistentCalls
-    ::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>*& dyn_m_PersistentCalls();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>*& dyn_m_PersistentCalls();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.Events.BaseInvokableCall> m_RuntimeCalls
-    ::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>*& dyn_m_RuntimeCalls();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>*& dyn_m_RuntimeCalls();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.Events.BaseInvokableCall> m_ExecutingCalls
-    ::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>*& dyn_m_ExecutingCalls();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>*& dyn_m_ExecutingCalls();
     // Get instance field reference: private System.Boolean m_NeedsUpdate
-    bool& dyn_m_NeedsUpdate();
+    [[deprecated]] bool& dyn_m_NeedsUpdate();
     // public System.Void AddPersistentInvokableCall(UnityEngine.Events.BaseInvokableCall call)
-    // Offset: 0xE3F194
+    // Offset: 0x112B78C
     void AddPersistentInvokableCall(::UnityEngine::Events::BaseInvokableCall* call);
     // public System.Void AddListener(UnityEngine.Events.BaseInvokableCall call)
-    // Offset: 0xE3F204
+    // Offset: 0x112B7FC
     void AddListener(::UnityEngine::Events::BaseInvokableCall* call);
     // public System.Void RemoveListener(System.Object targetObj, System.Reflection.MethodInfo method)
-    // Offset: 0xE3F274
+    // Offset: 0x112B86C
     void RemoveListener(::Il2CppObject* targetObj, ::System::Reflection::MethodInfo* method);
     // public System.Void ClearPersistent()
-    // Offset: 0xE3F43C
+    // Offset: 0x112BA34
     void ClearPersistent();
     // public System.Collections.Generic.List`1<UnityEngine.Events.BaseInvokableCall> PrepareInvoke()
-    // Offset: 0xE3F49C
+    // Offset: 0x112BA94
     ::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>* PrepareInvoke();
     // public System.Void .ctor()
-    // Offset: 0xE3F540
+    // Offset: 0x112BB38
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

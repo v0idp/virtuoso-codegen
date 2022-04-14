@@ -39,15 +39,7 @@ namespace UnityEngine::Timeline {
     public:
     // Writing base type padding for base size: 0x14 to desired offset: 0x18
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Playables.Playable m_Playable
     // Size: 0xC
     // Offset: 0x18
@@ -62,34 +54,34 @@ namespace UnityEngine::Timeline {
     // Set static field: static private readonly System.Int64 kIntervalEnd
     static void _set_kIntervalEnd(int64_t value);
     // Get instance field reference: private UnityEngine.Playables.Playable m_Playable
-    ::UnityEngine::Playables::Playable& dyn_m_Playable();
+    [[deprecated]] ::UnityEngine::Playables::Playable& dyn_m_Playable();
     // public System.Void .ctor(UnityEngine.Playables.Playable playable)
-    // Offset: 0xA777E0
+    // Offset: 0xC6ECB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InfiniteRuntimeClip* New_ctor(::UnityEngine::Playables::Playable playable) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::InfiniteRuntimeClip::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InfiniteRuntimeClip*, creationType>(playable)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xA805CC
+    // Offset: 0xC77A9C
     static void _cctor();
     // public override System.Int64 get_intervalStart()
-    // Offset: 0xA80480
+    // Offset: 0xC77950
     // Implemented from: UnityEngine.Timeline.RuntimeElement
     // Base method: System.Int64 RuntimeElement::get_intervalStart()
     int64_t get_intervalStart();
     // public override System.Int64 get_intervalEnd()
-    // Offset: 0xA80488
+    // Offset: 0xC77958
     // Implemented from: UnityEngine.Timeline.RuntimeElement
     // Base method: System.Int64 RuntimeElement::get_intervalEnd()
     int64_t get_intervalEnd();
     // public override System.Void set_enable(System.Boolean value)
-    // Offset: 0xA804EC
+    // Offset: 0xC779BC
     // Implemented from: UnityEngine.Timeline.RuntimeElement
     // Base method: System.Void RuntimeElement::set_enable(System.Boolean value)
     void set_enable(bool value);
     // public override System.Void EvaluateAt(System.Double localTime, UnityEngine.Playables.FrameData frameData)
-    // Offset: 0xA80570
+    // Offset: 0xC77A40
     // Implemented from: UnityEngine.Timeline.RuntimeElement
     // Base method: System.Void RuntimeElement::EvaluateAt(System.Double localTime, UnityEngine.Playables.FrameData frameData)
     void EvaluateAt(double localTime, ::UnityEngine::Playables::FrameData frameData);

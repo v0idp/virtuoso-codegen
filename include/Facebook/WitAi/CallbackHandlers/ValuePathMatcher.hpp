@@ -43,30 +43,22 @@ namespace Facebook::WitAi::CallbackHandlers {
   // [TokenAttribute] Offset: FFFFFFFF
   class ValuePathMatcher : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x5B210C
+    // [TooltipAttribute] Offset: 0x6C823C
     // public System.String path
     // Size: 0x8
     // Offset: 0x10
     ::StringW path;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B2144
+    // [TooltipAttribute] Offset: 0x6C8274
     // public Facebook.WitAi.Data.WitValue witValueReference
     // Size: 0x8
     // Offset: 0x18
     ::Facebook::WitAi::Data::WitValue* witValueReference;
     // Field size check
     static_assert(sizeof(::Facebook::WitAi::Data::WitValue*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B217C
+    // [TooltipAttribute] Offset: 0x6C82AC
     // public System.Boolean contentRequired
     // Size: 0x1
     // Offset: 0x20
@@ -75,14 +67,14 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: contentRequired and: matchMethod
     char __padding2[0x3] = {};
-    // [TooltipAttribute] Offset: 0x5B21B4
+    // [TooltipAttribute] Offset: 0x6C82E4
     // public Facebook.WitAi.CallbackHandlers.MatchMethod matchMethod
     // Size: 0x4
     // Offset: 0x24
     ::Facebook::WitAi::CallbackHandlers::MatchMethod matchMethod;
     // Field size check
     static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::MatchMethod) == 0x4);
-    // [TooltipAttribute] Offset: 0x5B21EC
+    // [TooltipAttribute] Offset: 0x6C831C
     // public Facebook.WitAi.CallbackHandlers.ComparisonMethod comparisonMethod
     // Size: 0x4
     // Offset: 0x28
@@ -91,14 +83,14 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::ComparisonMethod) == 0x4);
     // Padding between fields: comparisonMethod and: matchValue
     char __padding4[0x4] = {};
-    // [TooltipAttribute] Offset: 0x5B2224
+    // [TooltipAttribute] Offset: 0x6C8354
     // public System.String matchValue
     // Size: 0x8
     // Offset: 0x30
     ::StringW matchValue;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B225C
+    // [TooltipAttribute] Offset: 0x6C838C
     // public System.Double floatingPointComparisonTolerance
     // Size: 0x8
     // Offset: 0x38
@@ -113,26 +105,26 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::Facebook::WitAi::WitResponseReference*) == 0x8);
     public:
     // Get instance field reference: public System.String path
-    ::StringW& dyn_path();
+    [[deprecated]] ::StringW& dyn_path();
     // Get instance field reference: public Facebook.WitAi.Data.WitValue witValueReference
-    ::Facebook::WitAi::Data::WitValue*& dyn_witValueReference();
+    [[deprecated]] ::Facebook::WitAi::Data::WitValue*& dyn_witValueReference();
     // Get instance field reference: public System.Boolean contentRequired
-    bool& dyn_contentRequired();
+    [[deprecated]] bool& dyn_contentRequired();
     // Get instance field reference: public Facebook.WitAi.CallbackHandlers.MatchMethod matchMethod
-    ::Facebook::WitAi::CallbackHandlers::MatchMethod& dyn_matchMethod();
+    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::MatchMethod& dyn_matchMethod();
     // Get instance field reference: public Facebook.WitAi.CallbackHandlers.ComparisonMethod comparisonMethod
-    ::Facebook::WitAi::CallbackHandlers::ComparisonMethod& dyn_comparisonMethod();
+    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::ComparisonMethod& dyn_comparisonMethod();
     // Get instance field reference: public System.String matchValue
-    ::StringW& dyn_matchValue();
+    [[deprecated]] ::StringW& dyn_matchValue();
     // Get instance field reference: public System.Double floatingPointComparisonTolerance
-    double& dyn_floatingPointComparisonTolerance();
+    [[deprecated]] double& dyn_floatingPointComparisonTolerance();
     // Get instance field reference: private Facebook.WitAi.WitResponseReference pathReference
-    ::Facebook::WitAi::WitResponseReference*& dyn_pathReference();
+    [[deprecated]] ::Facebook::WitAi::WitResponseReference*& dyn_pathReference();
     // public Facebook.WitAi.WitResponseReference get_Reference()
-    // Offset: 0x10F9B74
+    // Offset: 0x16703DC
     ::Facebook::WitAi::WitResponseReference* get_Reference();
     // public System.Void .ctor()
-    // Offset: 0x10F9EA0
+    // Offset: 0x1670708
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

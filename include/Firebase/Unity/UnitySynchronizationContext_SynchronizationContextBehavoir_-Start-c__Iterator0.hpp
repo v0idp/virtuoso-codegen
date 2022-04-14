@@ -39,15 +39,7 @@ namespace Firebase::Unity {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Tuple`2<System.Threading.SendOrPostCallback,System.Object> <entry>__0
     // Size: 0x8
     // Offset: 0x10
@@ -92,34 +84,34 @@ namespace Firebase::Unity {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: System.Tuple`2<System.Threading.SendOrPostCallback,System.Object> <entry>__0
-    ::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*& dyn_$entry$__0();
+    [[deprecated]] ::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*& dyn_$entry$__0();
     // Get instance field reference: System.Object $locvar0
-    ::Il2CppObject*& dyn_$locvar0();
+    [[deprecated]] ::Il2CppObject*& dyn_$locvar0();
     // Get instance field reference: Firebase.Unity.UnitySynchronizationContext/Firebase.Unity.SynchronizationContextBehavoir $this
-    ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir*& dyn_$this();
+    [[deprecated]] ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir*& dyn_$this();
     // Get instance field reference: System.Object $current
-    ::Il2CppObject*& dyn_$current();
+    [[deprecated]] ::Il2CppObject*& dyn_$current();
     // Get instance field reference: System.Boolean $disposing
-    bool& dyn_$disposing();
+    [[deprecated]] bool& dyn_$disposing();
     // Get instance field reference: System.Int32 $PC
-    int& dyn_$PC();
+    [[deprecated]] int& dyn_$PC();
     // private System.Object System.Collections.Generic.IEnumerator<object>.get_Current()
-    // Offset: 0x12CC854
+    // Offset: 0x18CBBE4
     ::Il2CppObject* System_Collections_Generic_IEnumerator$object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x12CC85C
+    // Offset: 0x18CBBEC
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Boolean MoveNext()
-    // Offset: 0x12CC614
+    // Offset: 0x18CB9A4
     bool MoveNext();
     // public System.Void Dispose()
-    // Offset: 0x12CC864
+    // Offset: 0x18CBBF4
     void Dispose();
     // public System.Void Reset()
-    // Offset: 0x12CC878
+    // Offset: 0x18CBC08
     void Reset();
     // public System.Void .ctor()
-    // Offset: 0x12CC60C
+    // Offset: 0x18CB99C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -42,13 +42,13 @@ namespace VROSC {
     // Set static field: static public System.Func`2<System.Object,System.String> <>9__9_2
     static void _set_$$9__9_2(::System::Func_2<::Il2CppObject*, ::StringW>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1413C64
+    // Offset: 0xE85EE4
     static void _cctor();
     // System.String <LoadCloudData>b__9_2(System.Object x)
-    // Offset: 0x1413CCC
+    // Offset: 0xE85F4C
     ::StringW $LoadCloudData$b__9_2(::Il2CppObject* x);
     // public System.Void .ctor()
-    // Offset: 0x1413CC4
+    // Offset: 0xE85F44
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

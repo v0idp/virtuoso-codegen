@@ -44,15 +44,7 @@ namespace NatSuite::Devices::Internal {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class NativeCameraDevice::$$c__DisplayClass60_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Runtime.InteropServices.GCHandle handle
     // Size: 0x4
     // Offset: 0x10
@@ -69,14 +61,14 @@ namespace NatSuite::Devices::Internal {
     static_assert(sizeof(::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*) == 0x8);
     public:
     // Get instance field reference: public System.Runtime.InteropServices.GCHandle handle
-    ::System::Runtime::InteropServices::GCHandle& dyn_handle();
+    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_handle();
     // Get instance field reference: public System.Threading.Tasks.TaskCompletionSource`1<UnityEngine.Texture2D> captureTask
-    ::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*& dyn_captureTask();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*& dyn_captureTask();
     // System.Void <CapturePhoto>b__0(System.IntPtr pixelBuffer, System.Int32 width, System.Int32 height, System.Int64 timestamp)
-    // Offset: 0x133D7EC
+    // Offset: 0x19656DC
     void $CapturePhoto$b__0(::System::IntPtr pixelBuffer, int width, int height, int64_t timestamp);
     // public System.Void .ctor()
-    // Offset: 0x133D7E4
+    // Offset: 0x19656D4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

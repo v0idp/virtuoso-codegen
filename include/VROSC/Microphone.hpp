@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Microphone : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _microphoneHead
     // Size: 0x8
     // Offset: 0x40
@@ -99,49 +91,49 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Transform _microphoneHead
-    ::UnityEngine::Transform*& dyn__microphoneHead();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__microphoneHead();
     // Get instance field reference: private UnityEngine.GameObject _peakLight
-    ::UnityEngine::GameObject*& dyn__peakLight();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__peakLight();
     // Get instance field reference: private UnityEngine.AnimationCurve _falloffCurve
-    ::UnityEngine::AnimationCurve*& dyn__falloffCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__falloffCurve();
     // Get instance field reference: private VROSC.ResetableMover _resetableMover
-    ::VROSC::ResetableMover*& dyn__resetableMover();
+    [[deprecated]] ::VROSC::ResetableMover*& dyn__resetableMover();
     // Get instance field reference: private VROSC.MicrophoneController _microphoneController
-    ::VROSC::MicrophoneController*& dyn__microphoneController();
+    [[deprecated]] ::VROSC::MicrophoneController*& dyn__microphoneController();
     // Get instance field reference: private System.Single _maxMicrophoneDistance
-    float& dyn__maxMicrophoneDistance();
+    [[deprecated]] float& dyn__maxMicrophoneDistance();
     // private System.Void Awake()
-    // Offset: 0x8AF598
+    // Offset: 0xAC2D80
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x8AF6D0
+    // Offset: 0xAC2EB8
     void OnDestroy();
     // public System.Void Setup(VROSC.MicrophoneController microphoneController)
-    // Offset: 0x8AF8E0
+    // Offset: 0xAC30C8
     void Setup(::VROSC::MicrophoneController* microphoneController);
     // protected System.Void Update()
-    // Offset: 0x8AFB74
+    // Offset: 0xAC335C
     void Update();
     // private System.Void CalculateProximity()
-    // Offset: 0x8AFB78
+    // Offset: 0xAC3360
     void CalculateProximity();
     // public System.Void SetPeakLightActive(System.Boolean state)
-    // Offset: 0x8AFB54
+    // Offset: 0xAC333C
     void SetPeakLightActive(bool state);
     // public System.Void SetToPosition(System.Boolean isAttached, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 scale)
-    // Offset: 0x8AFD94
+    // Offset: 0xAC35EC
     void SetToPosition(bool isAttached, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 scale);
     // private System.Void MicrophoneReset(VROSC.ResetableMover mover)
-    // Offset: 0x8AFDD4
+    // Offset: 0xAC362C
     void MicrophoneReset(::VROSC::ResetableMover* mover);
     // private System.Void MicrophoneMoved(VROSC.ResetableMover mover)
-    // Offset: 0x8AFE70
+    // Offset: 0xAC36C8
     void MicrophoneMoved(::VROSC::ResetableMover* mover);
     // private System.Void MicrophoneStationMoved(VROSC.TransformMover mover)
-    // Offset: 0x8B0134
+    // Offset: 0xAC398C
     void MicrophoneStationMoved(::VROSC::TransformMover* mover);
     // public System.Void .ctor()
-    // Offset: 0x8B01B4
+    // Offset: 0xAC3A0C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -156,27 +148,27 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<Microphone*, creationType>()));
     }
     // protected override System.Void OnEnable()
-    // Offset: 0x8AF9F4
+    // Offset: 0xAC31DC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::OnEnable()
     void OnEnable();
     // protected override System.Void OnDisable()
-    // Offset: 0x8AFB08
+    // Offset: 0xAC32F0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::OnDisable()
     void OnDisable();
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x8AFCC8
+    // Offset: 0xAC34B0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x8AFD2C
+    // Offset: 0xAC358C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x8AFD34
+    // Offset: 0xAC3594
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

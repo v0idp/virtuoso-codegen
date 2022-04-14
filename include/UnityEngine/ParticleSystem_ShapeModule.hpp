@@ -39,15 +39,15 @@ namespace UnityEngine {
       return m_ParticleSystem;
     }
     // Get instance field reference: UnityEngine.ParticleSystem m_ParticleSystem
-    ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
     // public System.Void set_enabled(System.Boolean value)
-    // Offset: 0x12FB494
+    // Offset: 0x1900D9C
     void set_enabled(bool value);
     // System.Void .ctor(UnityEngine.ParticleSystem particleSystem)
-    // Offset: 0x12FAD48
+    // Offset: 0x1900650
     // ABORTED: conflicts with another method.  ShapeModule(::UnityEngine::ParticleSystem* particleSystem);
     // static private System.Void set_enabled_Injected(ref UnityEngine.ParticleSystem/UnityEngine.ShapeModule _unity_self, System.Boolean value)
-    // Offset: 0x12FB4E4
+    // Offset: 0x1900DEC
     static void set_enabled_Injected(ByRef<::UnityEngine::ParticleSystem::ShapeModule> _unity_self, bool value);
   }; // UnityEngine.ParticleSystem/UnityEngine.ShapeModule
   #pragma pack(pop)

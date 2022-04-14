@@ -31,23 +31,15 @@ namespace UnityEngine::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class AndroidAssetPackInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x59FBA4
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3D58
     // private readonly System.String <name>k__BackingField
     // Size: 0x8
     // Offset: 0x10
     ::StringW name;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [DebuggerBrowsableAttribute] Offset: 0x59FBE0
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3D94
     // private readonly UnityEngine.Android.AndroidAssetPackStatus <status>k__BackingField
     // Size: 0x4
     // Offset: 0x18
@@ -56,28 +48,28 @@ namespace UnityEngine::Android {
     static_assert(sizeof(::UnityEngine::Android::AndroidAssetPackStatus) == 0x4);
     // Padding between fields: status and: size
     char __padding1[0x4] = {};
-    // [DebuggerBrowsableAttribute] Offset: 0x59FC1C
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3DD0
     // private readonly System.UInt64 <size>k__BackingField
     // Size: 0x8
     // Offset: 0x20
     uint64_t size;
     // Field size check
     static_assert(sizeof(uint64_t) == 0x8);
-    // [DebuggerBrowsableAttribute] Offset: 0x59FC58
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3E0C
     // private readonly System.UInt64 <bytesDownloaded>k__BackingField
     // Size: 0x8
     // Offset: 0x28
     uint64_t bytesDownloaded;
     // Field size check
     static_assert(sizeof(uint64_t) == 0x8);
-    // [DebuggerBrowsableAttribute] Offset: 0x59FC94
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3E48
     // private readonly System.Single <transferProgress>k__BackingField
     // Size: 0x4
     // Offset: 0x30
     float transferProgress;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [DebuggerBrowsableAttribute] Offset: 0x59FCD0
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3E84
     // private readonly UnityEngine.Android.AndroidAssetPackError <error>k__BackingField
     // Size: 0x4
     // Offset: 0x34
@@ -86,19 +78,19 @@ namespace UnityEngine::Android {
     static_assert(sizeof(::UnityEngine::Android::AndroidAssetPackError) == 0x4);
     public:
     // Get instance field reference: private readonly System.String <name>k__BackingField
-    ::StringW& dyn_$name$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$name$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Android.AndroidAssetPackStatus <status>k__BackingField
-    ::UnityEngine::Android::AndroidAssetPackStatus& dyn_$status$k__BackingField();
+    [[deprecated]] ::UnityEngine::Android::AndroidAssetPackStatus& dyn_$status$k__BackingField();
     // Get instance field reference: private readonly System.UInt64 <size>k__BackingField
-    uint64_t& dyn_$size$k__BackingField();
+    [[deprecated]] uint64_t& dyn_$size$k__BackingField();
     // Get instance field reference: private readonly System.UInt64 <bytesDownloaded>k__BackingField
-    uint64_t& dyn_$bytesDownloaded$k__BackingField();
+    [[deprecated]] uint64_t& dyn_$bytesDownloaded$k__BackingField();
     // Get instance field reference: private readonly System.Single <transferProgress>k__BackingField
-    float& dyn_$transferProgress$k__BackingField();
+    [[deprecated]] float& dyn_$transferProgress$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Android.AndroidAssetPackError <error>k__BackingField
-    ::UnityEngine::Android::AndroidAssetPackError& dyn_$error$k__BackingField();
+    [[deprecated]] ::UnityEngine::Android::AndroidAssetPackError& dyn_$error$k__BackingField();
     // System.Void .ctor(System.String name, UnityEngine.Android.AndroidAssetPackStatus status, System.UInt64 size, System.UInt64 bytesDownloaded, System.Single transferProgress, UnityEngine.Android.AndroidAssetPackError error)
-    // Offset: 0x126DE54
+    // Offset: 0x18661F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AndroidAssetPackInfo* New_ctor(::StringW name, ::UnityEngine::Android::AndroidAssetPackStatus status, uint64_t size, uint64_t bytesDownloaded, float transferProgress, ::UnityEngine::Android::AndroidAssetPackError error) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Android::AndroidAssetPackInfo::.ctor");

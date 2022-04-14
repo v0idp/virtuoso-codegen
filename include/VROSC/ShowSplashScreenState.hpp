@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ShowSplashScreenState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.FullScreenFxController _fullScreenFxController
     // Size: 0x8
     // Offset: 0x10
@@ -74,29 +66,29 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.FullScreenFxController _fullScreenFxController
-    ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
+    [[deprecated]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
     // Get instance field reference: private VROSC.IntroVideoPlayer _introVideoPlayer
-    ::VROSC::IntroVideoPlayer*& dyn__introVideoPlayer();
+    [[deprecated]] ::VROSC::IntroVideoPlayer*& dyn__introVideoPlayer();
     // Get instance field reference: private VROSC.PlatformSelector _platformSelector
-    ::VROSC::PlatformSelector*& dyn__platformSelector();
+    [[deprecated]] ::VROSC::PlatformSelector*& dyn__platformSelector();
     // public System.Void .ctor(VROSC.FullScreenFxController fullScreenFxController, VROSC.IntroVideoPlayer introVideoPlayer, VROSC.PlatformSelector platformSelector)
-    // Offset: 0x13B4C28
+    // Offset: 0x1927AF4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ShowSplashScreenState* New_ctor(::VROSC::FullScreenFxController* fullScreenFxController, ::VROSC::IntroVideoPlayer* introVideoPlayer, ::VROSC::PlatformSelector* platformSelector) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ShowSplashScreenState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ShowSplashScreenState*, creationType>(fullScreenFxController, introVideoPlayer, platformSelector)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B4C68
+    // Offset: 0x1927B34
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B4CB4
+    // Offset: 0x1927B80
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B4CB8
+    // Offset: 0x1927B84
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B4CBC
+    // Offset: 0x1927B88
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.ShowSplashScreenState
   #pragma pack(pop)

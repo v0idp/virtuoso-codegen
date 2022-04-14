@@ -33,15 +33,7 @@ namespace Facebook::WitAi::Configuration {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitRequestOptions : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Facebook.WitAi.Interfaces.IDynamicEntitiesProvider dynamicEntities
     // Size: 0x8
     // Offset: 0x10
@@ -56,11 +48,11 @@ namespace Facebook::WitAi::Configuration {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public Facebook.WitAi.Interfaces.IDynamicEntitiesProvider dynamicEntities
-    ::Facebook::WitAi::Interfaces::IDynamicEntitiesProvider*& dyn_dynamicEntities();
+    [[deprecated]] ::Facebook::WitAi::Interfaces::IDynamicEntitiesProvider*& dyn_dynamicEntities();
     // Get instance field reference: public System.Int32 nBestIntents
-    int& dyn_nBestIntents();
+    [[deprecated]] int& dyn_nBestIntents();
     // public System.Void .ctor()
-    // Offset: 0x10FBC50
+    // Offset: 0x16724B8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

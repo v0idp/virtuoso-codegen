@@ -79,42 +79,42 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private VROSC.NoteBoardNote _noteBoardNote
-    ::VROSC::NoteBoardNote*& dyn__noteBoardNote();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__noteBoardNote();
     // Get instance field reference: private UnityEngine.Vector3 _invertedInfluence
-    ::UnityEngine::Vector3& dyn__invertedInfluence();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__invertedInfluence();
     // Get instance field reference: private System.Single _fullInfluence
-    float& dyn__fullInfluence();
+    [[deprecated]] float& dyn__fullInfluence();
     // Get instance field reference: private System.Single _hoverInfluence
-    float& dyn__hoverInfluence();
+    [[deprecated]] float& dyn__hoverInfluence();
     // public System.Void .ctor(VROSC.NoteBoardNote noteBoardNote, UnityEngine.Vector3 invertedInfluence)
-    // Offset: 0x14010C0
+    // Offset: 0xA291E4
     TransmissionData(::VROSC::NoteBoardNote* noteBoardNote, ::UnityEngine::Vector3 invertedInfluence);
     // public System.Void .ctor(VROSC.NoteBoardNote noteBoardNote, UnityEngine.Vector3 influence, System.Single fullInfluence, System.Single hoverInfluence)
-    // Offset: 0x1405574
+    // Offset: 0xA2D1F8
     // ABORTED: conflicts with another method.  TransmissionData(::VROSC::NoteBoardNote* noteBoardNote, ::UnityEngine::Vector3 influence, float fullInfluence, float hoverInfluence);
     // public System.Void Transmit(UnityEngine.Vector3 power, VROSC.NotefieldColorSettings/VROSC.SpreadType spread)
-    // Offset: 0x1405588
+    // Offset: 0xA2D20C
     void Transmit(::UnityEngine::Vector3 power, ::VROSC::NotefieldColorSettings::SpreadType spread);
     // public System.Void TransmitHovering(System.Single hoveringAmount)
-    // Offset: 0x1405674
+    // Offset: 0xA2D2F8
     void TransmitHovering(float hoveringAmount);
     // public System.Void Draw(UnityEngine.Vector3 source)
-    // Offset: 0x14056A8
+    // Offset: 0xA2D32C
     void Draw(::UnityEngine::Vector3 source);
     // static public System.Collections.Generic.List`1<VROSC.TransmissionData> GetTransmissionData(VROSC.NoteBoardNoteController controller, System.Int32 noteNumberX, System.Int32 noteNumberY, System.Int32 noteNumberZ, VROSC.NotefieldColorSettings settings, VROSC.NoteBoardNote[,,] allNotes)
-    // Offset: 0x1405750
+    // Offset: 0xA2D3D4
     static ::System::Collections::Generic::List_1<::VROSC::TransmissionData>* GetTransmissionData(::VROSC::NoteBoardNoteController* controller, int noteNumberX, int noteNumberY, int noteNumberZ, ::VROSC::NotefieldColorSettings* settings, ::ArrayW<::VROSC::NoteBoardNote*> allNotes);
     // static private VROSC.TransmissionData GetSameData(VROSC.NoteBoardNote otherNote, VROSC.NotefieldColorSettings settings, System.Int32 note, System.Int32 index, System.Single step, UnityEngine.Vector3 axis)
-    // Offset: 0x1405DA4
+    // Offset: 0xA2DA28
     static ::VROSC::TransmissionData GetSameData(::VROSC::NoteBoardNote* otherNote, ::VROSC::NotefieldColorSettings* settings, int note, int index, float step, ::UnityEngine::Vector3 axis);
     // static System.Collections.Generic.List`1<VROSC.TransmissionData> GetTransmissionDataXY(VROSC.NetNoteboard controller, System.Int32 noteNumberX, System.Int32 noteNumberY, VROSC.NotefieldColorSettings settings, VROSC.NoteBoardNote[,] XYNotes)
-    // Offset: 0x1405E64
+    // Offset: 0xA2DAE8
     static ::System::Collections::Generic::List_1<::VROSC::TransmissionData>* GetTransmissionDataXY(::VROSC::NetNoteboard* controller, int noteNumberX, int noteNumberY, ::VROSC::NotefieldColorSettings* settings, ::ArrayW<::VROSC::NoteBoardNote*> XYNotes);
     // static System.Collections.Generic.List`1<VROSC.TransmissionData> GetTransmissionDataXZ(VROSC.NetNoteboard controller, System.Int32 noteNumberX, System.Int32 noteNumberZ, VROSC.NotefieldColorSettings settings, VROSC.NoteBoardNote[,] XZNotes)
-    // Offset: 0x1406138
+    // Offset: 0xA2DDBC
     static ::System::Collections::Generic::List_1<::VROSC::TransmissionData>* GetTransmissionDataXZ(::VROSC::NetNoteboard* controller, int noteNumberX, int noteNumberZ, ::VROSC::NotefieldColorSettings* settings, ::ArrayW<::VROSC::NoteBoardNote*> XZNotes);
     // static System.Collections.Generic.List`1<VROSC.TransmissionData> GetTransmissionDataYZ(VROSC.NetNoteboard controller, System.Int32 noteNumberY, System.Int32 noteNumberZ, VROSC.NotefieldColorSettings settings, VROSC.NoteBoardNote[,] YZNotes)
-    // Offset: 0x1406414
+    // Offset: 0xA2E098
     static ::System::Collections::Generic::List_1<::VROSC::TransmissionData>* GetTransmissionDataYZ(::VROSC::NetNoteboard* controller, int noteNumberY, int noteNumberZ, ::VROSC::NotefieldColorSettings* settings, ::ArrayW<::VROSC::NoteBoardNote*> YZNotes);
   }; // VROSC.TransmissionData
   #pragma pack(pop)

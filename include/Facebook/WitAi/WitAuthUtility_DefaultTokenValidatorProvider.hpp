@@ -31,13 +31,13 @@ namespace Facebook::WitAi {
       return *reinterpret_cast<::Facebook::WitAi::WitAuthUtility::ITokenValidationProvider*>(this);
     }
     // public System.Boolean IsTokenValid(System.String appId, System.String token)
-    // Offset: 0x1107358
+    // Offset: 0x167DBC4
     bool IsTokenValid(::StringW appId, ::StringW token);
     // public System.Boolean IsServerTokenValid(System.String serverToken)
-    // Offset: 0x1107374
+    // Offset: 0x167DBE0
     bool IsServerTokenValid(::StringW serverToken);
     // public System.Void .ctor()
-    // Offset: 0x10FDD38
+    // Offset: 0x16745A0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

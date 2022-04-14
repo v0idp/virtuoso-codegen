@@ -33,15 +33,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IntField : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Int32 EnteredValue
     // Size: 0x4
     // Offset: 0x10
@@ -58,24 +50,24 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::IntNode*) == 0x8);
     public:
     // Get instance field reference: protected System.Int32 EnteredValue
-    int& dyn_EnteredValue();
+    [[deprecated]] int& dyn_EnteredValue();
     // Get instance field reference: protected VROSC.IntNode ConnectedValue
-    ::VROSC::IntNode*& dyn_ConnectedValue();
+    [[deprecated]] ::VROSC::IntNode*& dyn_ConnectedValue();
     // public System.Int32 get_Value()
-    // Offset: 0x1385720
+    // Offset: 0x19489C8
     int get_Value();
     // public System.Void .ctor(System.Int32 enteredValue)
-    // Offset: 0x1385908
+    // Offset: 0x1948BB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IntField* New_ctor(int enteredValue) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::IntField::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<IntField*, creationType>(enteredValue)));
     }
     // public VROSC.IntNode GetNode()
-    // Offset: 0x1385934
+    // Offset: 0x1948BDC
     ::VROSC::IntNode* GetNode();
     // public System.Void SetNode(VROSC.IntNode intNode)
-    // Offset: 0x138593C
+    // Offset: 0x1948BE4
     void SetNode(::VROSC::IntNode* intNode);
   }; // VROSC.IntField
   #pragma pack(pop)

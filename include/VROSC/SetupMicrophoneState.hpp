@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupMicrophoneState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.MicrophoneDeviceManager _microphoneManager
     // Size: 0x8
     // Offset: 0x10
@@ -62,25 +54,25 @@ namespace VROSC {
       return microphoneManager;
     }
     // Get instance field reference: private VROSC.MicrophoneDeviceManager _microphoneManager
-    ::VROSC::MicrophoneDeviceManager*& dyn__microphoneManager();
+    [[deprecated]] ::VROSC::MicrophoneDeviceManager*& dyn__microphoneManager();
     // public System.Void .ctor(VROSC.MicrophoneDeviceManager microphoneManager)
-    // Offset: 0x13B3A6C
+    // Offset: 0x1926938
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupMicrophoneState* New_ctor(::VROSC::MicrophoneDeviceManager* microphoneManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupMicrophoneState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupMicrophoneState*, creationType>(microphoneManager)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B3A98
+    // Offset: 0x1926964
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B3AB4
+    // Offset: 0x1926980
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B3AB8
+    // Offset: 0x1926984
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B3ABC
+    // Offset: 0x1926988
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupMicrophoneState
   #pragma pack(pop)

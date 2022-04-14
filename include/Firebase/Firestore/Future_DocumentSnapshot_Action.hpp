@@ -35,20 +35,20 @@ namespace Firebase::Firestore {
   class Future_DocumentSnapshot::Action : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xC3B968
+    // Offset: 0xD5F790
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Future_DocumentSnapshot::Action* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Future_DocumentSnapshot::Action::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Future_DocumentSnapshot::Action*, creationType>(object, method)));
     }
     // public System.Void Invoke()
-    // Offset: 0xC3BDC4
+    // Offset: 0xD5FBDC
     void Invoke();
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
-    // Offset: 0xC43C9C
+    // Offset: 0xD68760
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xC43CC8
+    // Offset: 0xD6878C
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Firestore.Future_DocumentSnapshot/Firebase.Firestore.Action
   #pragma pack(pop)

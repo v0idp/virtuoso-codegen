@@ -31,15 +31,7 @@ namespace Firebase::Platform {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // Firebase.Platform.IFirebaseAppUtils appUtils
     // Size: 0x8
     // Offset: 0x10
@@ -52,12 +44,12 @@ namespace Firebase::Platform {
       return appUtils;
     }
     // Get instance field reference: Firebase.Platform.IFirebaseAppUtils appUtils
-    ::Firebase::Platform::IFirebaseAppUtils*& dyn_appUtils();
+    [[deprecated]] ::Firebase::Platform::IFirebaseAppUtils*& dyn_appUtils();
     // System.Void <>m__0()
-    // Offset: 0x12CC098
+    // Offset: 0x18CB428
     void $$m__0();
     // public System.Void .ctor()
-    // Offset: 0x12CA434
+    // Offset: 0x18C97C4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

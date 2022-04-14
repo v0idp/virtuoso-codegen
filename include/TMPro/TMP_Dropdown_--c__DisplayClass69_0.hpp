@@ -24,15 +24,7 @@ namespace TMPro {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class TMP_Dropdown::$$c__DisplayClass69_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public TMPro.TMP_Dropdown/TMPro.DropdownItem item
     // Size: 0x8
     // Offset: 0x10
@@ -47,14 +39,14 @@ namespace TMPro {
     static_assert(sizeof(::TMPro::TMP_Dropdown*) == 0x8);
     public:
     // Get instance field reference: public TMPro.TMP_Dropdown/TMPro.DropdownItem item
-    ::TMPro::TMP_Dropdown::DropdownItem*& dyn_item();
+    [[deprecated]] ::TMPro::TMP_Dropdown::DropdownItem*& dyn_item();
     // Get instance field reference: public TMPro.TMP_Dropdown <>4__this
-    ::TMPro::TMP_Dropdown*& dyn_$$4__this();
+    [[deprecated]] ::TMPro::TMP_Dropdown*& dyn_$$4__this();
     // System.Void <Show>b__0(System.Boolean x)
-    // Offset: 0x1245ED4
+    // Offset: 0x181FF70
     void $Show$b__0(bool x);
     // public System.Void .ctor()
-    // Offset: 0x1245ECC
+    // Offset: 0x181FF68
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

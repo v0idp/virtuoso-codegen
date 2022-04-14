@@ -299,14 +299,14 @@ namespace UnityEngine {
     static ::UnityEngine::TextureFormat _get_ASTC_12x12();
     // Set static field: static public UnityEngine.TextureFormat ASTC_12x12
     static void _set_ASTC_12x12(::UnityEngine::TextureFormat value);
-    // [ObsoleteAttribute] Offset: 0x56A590
+    // [ObsoleteAttribute] Offset: 0x664774
     // static field const value: static public UnityEngine.TextureFormat ETC_RGB4_3DS
     static constexpr const int ETC_RGB4_3DS = 60;
     // Get static field: static public UnityEngine.TextureFormat ETC_RGB4_3DS
     static ::UnityEngine::TextureFormat _get_ETC_RGB4_3DS();
     // Set static field: static public UnityEngine.TextureFormat ETC_RGB4_3DS
     static void _set_ETC_RGB4_3DS(::UnityEngine::TextureFormat value);
-    // [ObsoleteAttribute] Offset: 0x56A5C8
+    // [ObsoleteAttribute] Offset: 0x6647AC
     // static field const value: static public UnityEngine.TextureFormat ETC_RGBA8_3DS
     static constexpr const int ETC_RGBA8_3DS = 61;
     // Get static field: static public UnityEngine.TextureFormat ETC_RGBA8_3DS
@@ -391,96 +391,96 @@ namespace UnityEngine {
     static ::UnityEngine::TextureFormat _get_RGBA64();
     // Set static field: static public UnityEngine.TextureFormat RGBA64
     static void _set_RGBA64(::UnityEngine::TextureFormat value);
-    // [EditorBrowsableAttribute] Offset: 0x56A600
-    // [ObsoleteAttribute] Offset: 0x56A600
+    // [ObsoleteAttribute] Offset: 0x6647E4
+    // [EditorBrowsableAttribute] Offset: 0x6647E4
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGB_4x4
     static constexpr const int ASTC_RGB_4x4 = 48;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGB_4x4
     static ::UnityEngine::TextureFormat _get_ASTC_RGB_4x4();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGB_4x4
     static void _set_ASTC_RGB_4x4(::UnityEngine::TextureFormat value);
-    // [EditorBrowsableAttribute] Offset: 0x56A650
-    // [ObsoleteAttribute] Offset: 0x56A650
+    // [ObsoleteAttribute] Offset: 0x664834
+    // [EditorBrowsableAttribute] Offset: 0x664834
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGB_5x5
     static constexpr const int ASTC_RGB_5x5 = 49;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGB_5x5
     static ::UnityEngine::TextureFormat _get_ASTC_RGB_5x5();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGB_5x5
     static void _set_ASTC_RGB_5x5(::UnityEngine::TextureFormat value);
-    // [ObsoleteAttribute] Offset: 0x56A6A0
-    // [EditorBrowsableAttribute] Offset: 0x56A6A0
+    // [EditorBrowsableAttribute] Offset: 0x664884
+    // [ObsoleteAttribute] Offset: 0x664884
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGB_6x6
     static constexpr const int ASTC_RGB_6x6 = 50;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGB_6x6
     static ::UnityEngine::TextureFormat _get_ASTC_RGB_6x6();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGB_6x6
     static void _set_ASTC_RGB_6x6(::UnityEngine::TextureFormat value);
-    // [EditorBrowsableAttribute] Offset: 0x56A6F0
-    // [ObsoleteAttribute] Offset: 0x56A6F0
+    // [EditorBrowsableAttribute] Offset: 0x6648D4
+    // [ObsoleteAttribute] Offset: 0x6648D4
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGB_8x8
     static constexpr const int ASTC_RGB_8x8 = 51;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGB_8x8
     static ::UnityEngine::TextureFormat _get_ASTC_RGB_8x8();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGB_8x8
     static void _set_ASTC_RGB_8x8(::UnityEngine::TextureFormat value);
-    // [EditorBrowsableAttribute] Offset: 0x56A740
-    // [ObsoleteAttribute] Offset: 0x56A740
+    // [ObsoleteAttribute] Offset: 0x664924
+    // [EditorBrowsableAttribute] Offset: 0x664924
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGB_10x10
     static constexpr const int ASTC_RGB_10x10 = 52;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGB_10x10
     static ::UnityEngine::TextureFormat _get_ASTC_RGB_10x10();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGB_10x10
     static void _set_ASTC_RGB_10x10(::UnityEngine::TextureFormat value);
-    // [ObsoleteAttribute] Offset: 0x56A790
-    // [EditorBrowsableAttribute] Offset: 0x56A790
+    // [EditorBrowsableAttribute] Offset: 0x664974
+    // [ObsoleteAttribute] Offset: 0x664974
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGB_12x12
     static constexpr const int ASTC_RGB_12x12 = 53;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGB_12x12
     static ::UnityEngine::TextureFormat _get_ASTC_RGB_12x12();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGB_12x12
     static void _set_ASTC_RGB_12x12(::UnityEngine::TextureFormat value);
-    // [EditorBrowsableAttribute] Offset: 0x56A7E0
-    // [ObsoleteAttribute] Offset: 0x56A7E0
+    // [EditorBrowsableAttribute] Offset: 0x6649C4
+    // [ObsoleteAttribute] Offset: 0x6649C4
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGBA_4x4
     static constexpr const int ASTC_RGBA_4x4 = 54;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGBA_4x4
     static ::UnityEngine::TextureFormat _get_ASTC_RGBA_4x4();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGBA_4x4
     static void _set_ASTC_RGBA_4x4(::UnityEngine::TextureFormat value);
-    // [ObsoleteAttribute] Offset: 0x56A830
-    // [EditorBrowsableAttribute] Offset: 0x56A830
+    // [ObsoleteAttribute] Offset: 0x664A14
+    // [EditorBrowsableAttribute] Offset: 0x664A14
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGBA_5x5
     static constexpr const int ASTC_RGBA_5x5 = 55;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGBA_5x5
     static ::UnityEngine::TextureFormat _get_ASTC_RGBA_5x5();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGBA_5x5
     static void _set_ASTC_RGBA_5x5(::UnityEngine::TextureFormat value);
-    // [ObsoleteAttribute] Offset: 0x56A880
-    // [EditorBrowsableAttribute] Offset: 0x56A880
+    // [EditorBrowsableAttribute] Offset: 0x664A64
+    // [ObsoleteAttribute] Offset: 0x664A64
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGBA_6x6
     static constexpr const int ASTC_RGBA_6x6 = 56;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGBA_6x6
     static ::UnityEngine::TextureFormat _get_ASTC_RGBA_6x6();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGBA_6x6
     static void _set_ASTC_RGBA_6x6(::UnityEngine::TextureFormat value);
-    // [EditorBrowsableAttribute] Offset: 0x56A8D0
-    // [ObsoleteAttribute] Offset: 0x56A8D0
+    // [ObsoleteAttribute] Offset: 0x664AB4
+    // [EditorBrowsableAttribute] Offset: 0x664AB4
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGBA_8x8
     static constexpr const int ASTC_RGBA_8x8 = 57;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGBA_8x8
     static ::UnityEngine::TextureFormat _get_ASTC_RGBA_8x8();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGBA_8x8
     static void _set_ASTC_RGBA_8x8(::UnityEngine::TextureFormat value);
-    // [EditorBrowsableAttribute] Offset: 0x56A920
-    // [ObsoleteAttribute] Offset: 0x56A920
+    // [ObsoleteAttribute] Offset: 0x664B04
+    // [EditorBrowsableAttribute] Offset: 0x664B04
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGBA_10x10
     static constexpr const int ASTC_RGBA_10x10 = 58;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGBA_10x10
     static ::UnityEngine::TextureFormat _get_ASTC_RGBA_10x10();
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGBA_10x10
     static void _set_ASTC_RGBA_10x10(::UnityEngine::TextureFormat value);
-    // [ObsoleteAttribute] Offset: 0x56A970
-    // [EditorBrowsableAttribute] Offset: 0x56A970
+    // [EditorBrowsableAttribute] Offset: 0x664B54
+    // [ObsoleteAttribute] Offset: 0x664B54
     // static field const value: static public UnityEngine.TextureFormat ASTC_RGBA_12x12
     static constexpr const int ASTC_RGBA_12x12 = 59;
     // Get static field: static public UnityEngine.TextureFormat ASTC_RGBA_12x12
@@ -488,7 +488,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.TextureFormat ASTC_RGBA_12x12
     static void _set_ASTC_RGBA_12x12(::UnityEngine::TextureFormat value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.TextureFormat
   #pragma pack(pop)
   static check_size<sizeof(TextureFormat), 0 + sizeof(int)> __UnityEngine_TextureFormatSizeCheck;

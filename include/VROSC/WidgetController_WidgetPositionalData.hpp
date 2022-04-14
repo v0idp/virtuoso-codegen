@@ -32,15 +32,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class WidgetController::WidgetPositionalData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Vector3 Size
     // Size: 0xC
     // Offset: 0x10
@@ -61,16 +53,16 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: public UnityEngine.Vector3 Size
-    ::UnityEngine::Vector3& dyn_Size();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_Size();
     // Get instance field reference: public UnityEngine.Vector3 Center
-    ::UnityEngine::Vector3& dyn_Center();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_Center();
     // Get instance field reference: public UnityEngine.Vector3 SpawnPoint
-    ::UnityEngine::Vector3& dyn_SpawnPoint();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_SpawnPoint();
     // public System.Boolean IsPointInside(UnityEngine.Transform transform, UnityEngine.Vector3 worldPosition)
-    // Offset: 0x141812C
+    // Offset: 0xE8A3AC
     bool IsPointInside(::UnityEngine::Transform* transform, ::UnityEngine::Vector3 worldPosition);
     // public System.Void .ctor()
-    // Offset: 0x14181A4
+    // Offset: 0xE8A424
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

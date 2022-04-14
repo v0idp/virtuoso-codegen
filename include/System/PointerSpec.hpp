@@ -41,15 +41,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class PointerSpec : public ::Il2CppObject/*, public ::System::ModifierSpec*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 pointer_level
     // Size: 0x4
     // Offset: 0x10
@@ -66,22 +58,22 @@ namespace System {
       return pointer_level;
     }
     // Get instance field reference: private System.Int32 pointer_level
-    int& dyn_pointer_level();
+    [[deprecated]] int& dyn_pointer_level();
     // System.Void .ctor(System.Int32 pointer_level)
-    // Offset: 0x11316C0
+    // Offset: 0x14D01EC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PointerSpec* New_ctor(int pointer_level) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::PointerSpec::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PointerSpec*, creationType>(pointer_level)));
     }
     // public System.Type Resolve(System.Type type)
-    // Offset: 0x11316EC
+    // Offset: 0x14D0218
     ::System::Type* Resolve(::System::Type* type);
     // public System.Text.StringBuilder Append(System.Text.StringBuilder sb)
-    // Offset: 0x1131744
+    // Offset: 0x14D0270
     ::System::Text::StringBuilder* Append(::System::Text::StringBuilder* sb);
     // public override System.String ToString()
-    // Offset: 0x113176C
+    // Offset: 0x14D0298
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

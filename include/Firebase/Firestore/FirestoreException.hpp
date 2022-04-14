@@ -31,16 +31,8 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirestoreException : public ::System::Exception {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x5C7800
+    // [DebuggerBrowsableAttribute] Offset: 0x6D859C
     // private Firebase.Firestore.FirestoreError <ErrorCode>k__BackingField
     // Size: 0x4
     // Offset: 0x88
@@ -53,19 +45,19 @@ namespace Firebase::Firestore {
       return ErrorCode;
     }
     // Get instance field reference: private Firebase.Firestore.FirestoreError <ErrorCode>k__BackingField
-    ::Firebase::Firestore::FirestoreError& dyn_$ErrorCode$k__BackingField();
+    [[deprecated]] ::Firebase::Firestore::FirestoreError& dyn_$ErrorCode$k__BackingField();
     // private System.Void set_ErrorCode(Firebase.Firestore.FirestoreError value)
-    // Offset: 0xC3B020
+    // Offset: 0xD5EC18
     void set_ErrorCode(::Firebase::Firestore::FirestoreError value);
     // public System.Void .ctor(Firebase.Firestore.FirestoreError errorCode, System.String message)
-    // Offset: 0xC3AF9C
+    // Offset: 0xD5EB94
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirestoreException* New_ctor(::Firebase::Firestore::FirestoreError errorCode, ::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirestoreException*, creationType>(errorCode, message)));
     }
     // System.Void .ctor(System.Int32 errorCode, System.String message)
-    // Offset: 0xC3B01C
+    // Offset: 0xD5EC14
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirestoreException* New_ctor(int errorCode, ::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreException::.ctor");

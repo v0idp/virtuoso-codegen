@@ -129,20 +129,12 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
       // Set static field: static public Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State HANGUP
       static void _set_HANGUP(::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State
     #pragma pack(pop)
     static check_size<sizeof(PlatformManager::State), 0 + sizeof(int)> __Oculus_Platform_Samples_VrVoiceChat_PlatformManager_StateSizeCheck;
     static_assert(sizeof(PlatformManager::State) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject m_invitesList
     // Size: 0x8
     // Offset: 0x18
@@ -213,78 +205,78 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // Set static field: static private Oculus.Platform.Samples.VrVoiceChat.PlatformManager s_instance
     static void _set_s_instance(::Oculus::Platform::Samples::VrVoiceChat::PlatformManager* value);
     // Get instance field reference: private UnityEngine.GameObject m_invitesList
-    ::UnityEngine::GameObject*& dyn_m_invitesList();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_invitesList();
     // Get instance field reference: private UnityEngine.GameObject m_invitePrefab
-    ::UnityEngine::GameObject*& dyn_m_invitePrefab();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_invitePrefab();
     // Get instance field reference: private UnityEngine.Camera m_camera
-    ::UnityEngine::Camera*& dyn_m_camera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn_m_camera();
     // Get instance field reference: private UnityEngine.GameObject m_remoteHead
-    ::UnityEngine::GameObject*& dyn_m_remoteHead();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_remoteHead();
     // Get instance field reference: private Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State m_currentState
-    ::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State& dyn_m_currentState();
+    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State& dyn_m_currentState();
     // Get instance field reference: private Oculus.Platform.Samples.VrVoiceChat.RoomManager m_roomManager
-    ::Oculus::Platform::Samples::VrVoiceChat::RoomManager*& dyn_m_roomManager();
+    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::RoomManager*& dyn_m_roomManager();
     // Get instance field reference: private Oculus.Platform.Samples.VrVoiceChat.P2PManager m_p2pManager
-    ::Oculus::Platform::Samples::VrVoiceChat::P2PManager*& dyn_m_p2pManager();
+    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::P2PManager*& dyn_m_p2pManager();
     // Get instance field reference: private Oculus.Platform.Samples.VrVoiceChat.VoipManager m_voipManager
-    ::Oculus::Platform::Samples::VrVoiceChat::VoipManager*& dyn_m_voipManager();
+    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::VoipManager*& dyn_m_voipManager();
     // Get instance field reference: private System.UInt64 m_myID
-    uint64_t& dyn_m_myID();
+    [[deprecated]] uint64_t& dyn_m_myID();
     // Get instance field reference: private System.String m_myOculusID
-    ::StringW& dyn_m_myOculusID();
+    [[deprecated]] ::StringW& dyn_m_myOculusID();
     // static public Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State get_CurrentState()
-    // Offset: 0x9859D0
+    // Offset: 0xB57D6C
     static ::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State get_CurrentState();
     // static public System.UInt64 get_MyID()
-    // Offset: 0x982F2C
+    // Offset: 0xB552C8
     static uint64_t get_MyID();
     // static public System.String get_MyOculusID()
-    // Offset: 0x985A40
+    // Offset: 0xB57DDC
     static ::StringW get_MyOculusID();
     // private System.Void Update()
-    // Offset: 0x984FB0
+    // Offset: 0xB5734C
     void Update();
     // private System.Void Awake()
-    // Offset: 0x985060
+    // Offset: 0xB573FC
     void Awake();
     // private System.Void Start()
-    // Offset: 0x985620
+    // Offset: 0xB579BC
     void Start();
     // private System.Void IsEntitledCallback(Oculus.Platform.Message msg)
-    // Offset: 0x9856C0
+    // Offset: 0xB57A5C
     void IsEntitledCallback(::Oculus::Platform::Message* msg);
     // private System.Void GetLoggedInUserCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.User> msg)
-    // Offset: 0x98588C
+    // Offset: 0xB57C28
     void GetLoggedInUserCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* msg);
     // private System.Void OnApplicationQuit()
-    // Offset: 0x985978
+    // Offset: 0xB57D14
     void OnApplicationQuit();
     // static public System.Void TerminateWithError(Oculus.Platform.Message msg)
-    // Offset: 0x9857D8
+    // Offset: 0xB57B74
     static void TerminateWithError(::Oculus::Platform::Message* msg);
     // public System.Void CallFriendOnClick()
-    // Offset: 0x985B68
+    // Offset: 0xB57F04
     void CallFriendOnClick();
     // public System.Void HangupOnClick()
-    // Offset: 0x985BEC
+    // Offset: 0xB57F88
     void HangupOnClick();
     // public System.Void QuitOnClick()
-    // Offset: 0x985C08
+    // Offset: 0xB57FA4
     void QuitOnClick();
     // static public System.Void AnswerCallOnClick(System.UInt64 roomID)
-    // Offset: 0x985C10
+    // Offset: 0xB57FAC
     static void AnswerCallOnClick(uint64_t roomID);
     // static public System.Void TransitionToState(Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State newState)
-    // Offset: 0x98529C
+    // Offset: 0xB57638
     static void TransitionToState(::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State newState);
     // static public System.Void SetBackgroundColorForState()
-    // Offset: 0x98341C
+    // Offset: 0xB557B8
     static void SetBackgroundColorForState();
     // static public System.Void SetActiveInvites(System.Collections.Generic.List`1<Oculus.Platform.Samples.VrVoiceChat.RoomManager/Oculus.Platform.Samples.VrVoiceChat.Invite> invites)
-    // Offset: 0x985D0C
+    // Offset: 0xB580A8
     static void SetActiveInvites(::System::Collections::Generic::List_1<::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite>* invites);
     // public System.Void .ctor()
-    // Offset: 0x98649C
+    // Offset: 0xB58838
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -297,7 +289,7 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
       return THROW_UNLESS((::il2cpp_utils::New<PlatformManager*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x9864A4
+    // Offset: 0xB58840
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

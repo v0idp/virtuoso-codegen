@@ -32,15 +32,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class FastEncoderWindow : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte[] _window
     // Size: 0x8
     // Offset: 0x10
@@ -73,50 +65,50 @@ namespace System::IO::Compression {
     static_assert(sizeof(::ArrayW<uint16_t>) == 0x8);
     public:
     // Get instance field reference: private System.Byte[] _window
-    ::ArrayW<uint8_t>& dyn__window();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__window();
     // Get instance field reference: private System.Int32 _bufPos
-    int& dyn__bufPos();
+    [[deprecated]] int& dyn__bufPos();
     // Get instance field reference: private System.Int32 _bufEnd
-    int& dyn__bufEnd();
+    [[deprecated]] int& dyn__bufEnd();
     // Get instance field reference: private System.UInt16[] _prev
-    ::ArrayW<uint16_t>& dyn__prev();
+    [[deprecated]] ::ArrayW<uint16_t>& dyn__prev();
     // Get instance field reference: private System.UInt16[] _lookup
-    ::ArrayW<uint16_t>& dyn__lookup();
+    [[deprecated]] ::ArrayW<uint16_t>& dyn__lookup();
     // public System.Int32 get_BytesAvailable()
-    // Offset: 0x111DA5C
+    // Offset: 0x16952C8
     int get_BytesAvailable();
     // public System.IO.Compression.DeflateInput get_UnprocessedInput()
-    // Offset: 0x111DA68
+    // Offset: 0x16952D4
     ::System::IO::Compression::DeflateInput* get_UnprocessedInput();
     // public System.Int32 get_FreeWindowSpace()
-    // Offset: 0x111DDF0
+    // Offset: 0x169565C
     int get_FreeWindowSpace();
     // public System.Void FlushWindow()
-    // Offset: 0x111DAE8
+    // Offset: 0x1695354
     void FlushWindow();
     // private System.Void ResetWindow()
-    // Offset: 0x111E898
+    // Offset: 0x1696104
     void ResetWindow();
     // public System.Void CopyBytes(System.Byte[] inputBuffer, System.Int32 startIndex, System.Int32 count)
-    // Offset: 0x111DE00
+    // Offset: 0x169566C
     void CopyBytes(::ArrayW<uint8_t> inputBuffer, int startIndex, int count);
     // public System.Void MoveWindows()
-    // Offset: 0x111E928
+    // Offset: 0x1696194
     void MoveWindows();
     // private System.UInt32 HashValue(System.UInt32 hash, System.Byte b)
-    // Offset: 0x111E9F0
+    // Offset: 0x169625C
     uint HashValue(uint hash, uint8_t b);
     // private System.UInt32 InsertString(ref System.UInt32 hash)
-    // Offset: 0x111E9FC
+    // Offset: 0x1696268
     uint InsertString(ByRef<uint> hash);
     // private System.Void InsertStrings(ref System.UInt32 hash, System.Int32 matchLen)
-    // Offset: 0x111EA9C
+    // Offset: 0x1696308
     void InsertStrings(ByRef<uint> hash, int matchLen);
     // System.Boolean GetNextSymbolOrMatch(System.IO.Compression.Match match)
-    // Offset: 0x111DF74
+    // Offset: 0x16957E0
     bool GetNextSymbolOrMatch(::System::IO::Compression::Match* match);
     // private System.Int32 FindMatch(System.Int32 search, out System.Int32 matchPos, System.Int32 searchDepth, System.Int32 niceLength)
-    // Offset: 0x111EB10
+    // Offset: 0x169637C
     int FindMatch(int search, ByRef<int> matchPos, int searchDepth, int niceLength);
   }; // System.IO.Compression.FastEncoderWindow
   #pragma pack(pop)

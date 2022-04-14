@@ -35,20 +35,20 @@ namespace Oculus::Avatar {
   class CAPI::LoggingDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x135C09C
+    // Offset: 0x958604
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CAPI::LoggingDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Avatar::CAPI::LoggingDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CAPI::LoggingDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.IntPtr str)
-    // Offset: 0x135C0AC
+    // Offset: 0x958614
     void Invoke(::System::IntPtr str);
     // public System.IAsyncResult BeginInvoke(System.IntPtr str, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x135C2D8
+    // Offset: 0x958840
     ::System::IAsyncResult* BeginInvoke(::System::IntPtr str, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x135C360
+    // Offset: 0x9588C8
     void EndInvoke(::System::IAsyncResult* result);
   }; // Oculus.Avatar.CAPI/Oculus.Avatar.LoggingDelegate
   #pragma pack(pop)

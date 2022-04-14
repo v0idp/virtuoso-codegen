@@ -42,15 +42,7 @@ namespace System::Runtime::Remoting {
   // [TokenAttribute] Offset: FFFFFFFF
   class DisposerReplySink : public ::Il2CppObject/*, public ::System::Runtime::Remoting::Messaging::IMessageSink*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.Remoting.Messaging.IMessageSink _next
     // Size: 0x8
     // Offset: 0x10
@@ -69,21 +61,21 @@ namespace System::Runtime::Remoting {
       return *reinterpret_cast<::System::Runtime::Remoting::Messaging::IMessageSink*>(this);
     }
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink _next
-    ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__next();
+    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__next();
     // Get instance field reference: private System.IDisposable _disposable
-    ::System::IDisposable*& dyn__disposable();
+    [[deprecated]] ::System::IDisposable*& dyn__disposable();
     // public System.Void .ctor(System.Runtime.Remoting.Messaging.IMessageSink next, System.IDisposable disposable)
-    // Offset: 0xCB2B9C
+    // Offset: 0x129E768
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DisposerReplySink* New_ctor(::System::Runtime::Remoting::Messaging::IMessageSink* next, ::System::IDisposable* disposable) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Remoting::DisposerReplySink::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DisposerReplySink*, creationType>(next, disposable)));
     }
     // public System.Runtime.Remoting.Messaging.IMessage SyncProcessMessage(System.Runtime.Remoting.Messaging.IMessage msg)
-    // Offset: 0xCB2BD4
+    // Offset: 0x129E7A0
     ::System::Runtime::Remoting::Messaging::IMessage* SyncProcessMessage(::System::Runtime::Remoting::Messaging::IMessage* msg);
     // public System.Runtime.Remoting.Messaging.IMessageCtrl AsyncProcessMessage(System.Runtime.Remoting.Messaging.IMessage msg, System.Runtime.Remoting.Messaging.IMessageSink replySink)
-    // Offset: 0xCB2D0C
+    // Offset: 0x129E8D8
     ::System::Runtime::Remoting::Messaging::IMessageCtrl* AsyncProcessMessage(::System::Runtime::Remoting::Messaging::IMessage* msg, ::System::Runtime::Remoting::Messaging::IMessageSink* replySink);
   }; // System.Runtime.Remoting.DisposerReplySink
   #pragma pack(pop)

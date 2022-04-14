@@ -40,15 +40,7 @@ namespace Mono::Net::Security::Private {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class CallbackHelpers::$$c__DisplayClass8_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Mono.Security.Interface.MonoLocalCertificateSelectionCallback callback
     // Size: 0x8
     // Offset: 0x10
@@ -61,12 +53,12 @@ namespace Mono::Net::Security::Private {
       return callback;
     }
     // Get instance field reference: public Mono.Security.Interface.MonoLocalCertificateSelectionCallback callback
-    ::Mono::Security::Interface::MonoLocalCertificateSelectionCallback*& dyn_callback();
+    [[deprecated]] ::Mono::Security::Interface::MonoLocalCertificateSelectionCallback*& dyn_callback();
     // System.Security.Cryptography.X509Certificates.X509Certificate <MonoToInternal>b__0(System.String t, System.Security.Cryptography.X509Certificates.X509CertificateCollection lc, System.Security.Cryptography.X509Certificates.X509Certificate rc, System.String[] ai)
-    // Offset: 0x8D9F78
+    // Offset: 0x9F4CF0
     ::System::Security::Cryptography::X509Certificates::X509Certificate* $MonoToInternal$b__0(::StringW t, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection* lc, ::System::Security::Cryptography::X509Certificates::X509Certificate* rc, ::ArrayW<::StringW> ai);
     // public System.Void .ctor()
-    // Offset: 0x8D9F70
+    // Offset: 0x9F4CE8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

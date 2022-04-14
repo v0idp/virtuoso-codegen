@@ -90,58 +90,58 @@ namespace Firebase::Auth {
     // Set static field: static private Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionArgumentDelegate argumentOutOfRangeDelegate
     static void _set_argumentOutOfRangeDelegate(::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionArgumentDelegate* value);
     // static private System.Void .cctor()
-    // Offset: 0x12B3960
+    // Offset: 0x18B3C58
     static void _cctor();
     // static public System.Void SWIGRegisterExceptionCallbacks_AuthUtil(Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate applicationDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate arithmeticDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate divideByZeroDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate indexOutOfRangeDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate invalidCastDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate invalidOperationDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate ioDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate nullReferenceDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate outOfMemoryDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate overflowDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate systemExceptionDelegate)
-    // Offset: 0x12B3D38
+    // Offset: 0x18B4030
     static void SWIGRegisterExceptionCallbacks_AuthUtil(::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* applicationDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* arithmeticDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* divideByZeroDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* indexOutOfRangeDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidCastDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidOperationDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* ioDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* nullReferenceDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* outOfMemoryDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* overflowDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* systemExceptionDelegate);
     // static public System.Void SWIGRegisterExceptionCallbacksArgument_AuthUtil(Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionArgumentDelegate argumentDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionArgumentDelegate argumentNullDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionArgumentDelegate argumentOutOfRangeDelegate)
-    // Offset: 0x12B3EAC
+    // Offset: 0x18B41A4
     static void SWIGRegisterExceptionCallbacksArgument_AuthUtil(::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionArgumentDelegate* argumentDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionArgumentDelegate* argumentNullDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionArgumentDelegate* argumentOutOfRangeDelegate);
     // static private System.Void SetPendingApplicationException(System.String message)
-    // Offset: 0x12B3258
+    // Offset: 0x18B3550
     static void SetPendingApplicationException(::StringW message);
     // static private System.Void SetPendingArithmeticException(System.String message)
-    // Offset: 0x12B32D0
+    // Offset: 0x18B35C8
     static void SetPendingArithmeticException(::StringW message);
     // static private System.Void SetPendingDivideByZeroException(System.String message)
-    // Offset: 0x12B3348
+    // Offset: 0x18B3640
     static void SetPendingDivideByZeroException(::StringW message);
     // static private System.Void SetPendingIndexOutOfRangeException(System.String message)
-    // Offset: 0x12B33C0
+    // Offset: 0x18B36B8
     static void SetPendingIndexOutOfRangeException(::StringW message);
     // static private System.Void SetPendingInvalidCastException(System.String message)
-    // Offset: 0x12B3438
+    // Offset: 0x18B3730
     static void SetPendingInvalidCastException(::StringW message);
     // static private System.Void SetPendingInvalidOperationException(System.String message)
-    // Offset: 0x12B34B0
+    // Offset: 0x18B37A8
     static void SetPendingInvalidOperationException(::StringW message);
     // static private System.Void SetPendingIOException(System.String message)
-    // Offset: 0x12B3528
+    // Offset: 0x18B3820
     static void SetPendingIOException(::StringW message);
     // static private System.Void SetPendingNullReferenceException(System.String message)
-    // Offset: 0x12B35A0
+    // Offset: 0x18B3898
     static void SetPendingNullReferenceException(::StringW message);
     // static private System.Void SetPendingOutOfMemoryException(System.String message)
-    // Offset: 0x12B3618
+    // Offset: 0x18B3910
     static void SetPendingOutOfMemoryException(::StringW message);
     // static private System.Void SetPendingOverflowException(System.String message)
-    // Offset: 0x12B3690
+    // Offset: 0x18B3988
     static void SetPendingOverflowException(::StringW message);
     // static private System.Void SetPendingSystemException(System.String message)
-    // Offset: 0x12B3708
+    // Offset: 0x18B3A00
     static void SetPendingSystemException(::StringW message);
     // static private System.Void SetPendingArgumentException(System.String message, System.String paramName)
-    // Offset: 0x12B3780
+    // Offset: 0x18B3A78
     static void SetPendingArgumentException(::StringW message, ::StringW paramName);
     // static private System.Void SetPendingArgumentNullException(System.String message, System.String paramName)
-    // Offset: 0x12B3800
+    // Offset: 0x18B3AF8
     static void SetPendingArgumentNullException(::StringW message, ::StringW paramName);
     // static private System.Void SetPendingArgumentOutOfRangeException(System.String message, System.String paramName)
-    // Offset: 0x12B38B0
+    // Offset: 0x18B3BA8
     static void SetPendingArgumentOutOfRangeException(::StringW message, ::StringW paramName);
     // public System.Void .ctor()
-    // Offset: 0x12AEFC0
+    // Offset: 0x18AEB64
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

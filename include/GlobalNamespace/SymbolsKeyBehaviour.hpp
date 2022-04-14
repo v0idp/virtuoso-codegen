@@ -37,15 +37,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class SymbolsKeyBehaviour : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public ShiftKeyBehaviour ShiftBehaviour
     // Size: 0x8
     // Offset: 0x18
@@ -62,20 +54,20 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public ShiftKeyBehaviour ShiftBehaviour
-    ::GlobalNamespace::ShiftKeyBehaviour*& dyn_ShiftBehaviour();
+    [[deprecated]] ::GlobalNamespace::ShiftKeyBehaviour*& dyn_ShiftBehaviour();
     // Get instance field reference: private Key symbolKeyController
-    ::GlobalNamespace::Key*& dyn_symbolKeyController();
+    [[deprecated]] ::GlobalNamespace::Key*& dyn_symbolKeyController();
     // private System.Void Awake()
-    // Offset: 0x13BD9F8
+    // Offset: 0x1930E4C
     void Awake();
     // private System.Void SpecialKeyPressed(Key key)
-    // Offset: 0x13BDB20
+    // Offset: 0x1930F74
     void SpecialKeyPressed(::GlobalNamespace::Key* key);
     // private System.Void OnDisable()
-    // Offset: 0x13BDBEC
+    // Offset: 0x1931040
     void OnDisable();
     // public System.Void .ctor()
-    // Offset: 0x13BDCF0
+    // Offset: 0x1931144
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

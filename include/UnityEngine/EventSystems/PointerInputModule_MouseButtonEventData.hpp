@@ -31,15 +31,7 @@ namespace UnityEngine::EventSystems {
   // [TokenAttribute] Offset: FFFFFFFF
   class PointerInputModule::MouseButtonEventData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.FramePressState buttonState
     // Size: 0x4
     // Offset: 0x10
@@ -56,17 +48,17 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::EventSystems::PointerEventData*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.FramePressState buttonState
-    ::UnityEngine::EventSystems::PointerEventData::FramePressState& dyn_buttonState();
+    [[deprecated]] ::UnityEngine::EventSystems::PointerEventData::FramePressState& dyn_buttonState();
     // Get instance field reference: public UnityEngine.EventSystems.PointerEventData buttonData
-    ::UnityEngine::EventSystems::PointerEventData*& dyn_buttonData();
+    [[deprecated]] ::UnityEngine::EventSystems::PointerEventData*& dyn_buttonData();
     // public System.Boolean PressedThisFrame()
-    // Offset: 0x113B348
+    // Offset: 0x16D1AE0
     bool PressedThisFrame();
     // public System.Boolean ReleasedThisFrame()
-    // Offset: 0x113B35C
+    // Offset: 0x16D1AF4
     bool ReleasedThisFrame();
     // public System.Void .ctor()
-    // Offset: 0x1143364
+    // Offset: 0x16D9AFC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

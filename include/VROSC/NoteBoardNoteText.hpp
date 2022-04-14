@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoardNoteText : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNote _note
     // Size: 0x8
     // Offset: 0x18
@@ -99,46 +91,46 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNote _note
-    ::VROSC::NoteBoardNote*& dyn__note();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__note();
     // Get instance field reference: private UnityEngine.TextMesh _text
-    ::UnityEngine::TextMesh*& dyn__text();
+    [[deprecated]] ::UnityEngine::TextMesh*& dyn__text();
     // Get instance field reference: private System.Single _size
-    float& dyn__size();
+    [[deprecated]] float& dyn__size();
     // Get instance field reference: private System.Boolean _normalized
-    bool& dyn__normalized();
+    [[deprecated]] bool& dyn__normalized();
     // Get instance field reference: private UnityEngine.Vector3 _textStartPosition
-    ::UnityEngine::Vector3& dyn__textStartPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__textStartPosition();
     // Get instance field reference: private UnityEngine.Transform _textTransform
-    ::UnityEngine::Transform*& dyn__textTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__textTransform();
     // private System.Void Awake()
-    // Offset: 0xA13BAC
+    // Offset: 0xC56E98
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0xA13C08
+    // Offset: 0xC56EF4
     void OnEnable();
     // public System.Void Setup(UnityEngine.Vector3 noteScale)
-    // Offset: 0xA11B90
+    // Offset: 0xC56F24
     void Setup(::UnityEngine::Vector3 noteScale);
     // public System.Void SetText(System.Boolean active, VROSC.NoteBoard/VROSC.PlayAxis axis, System.Boolean colorize)
-    // Offset: 0xA13C38
+    // Offset: 0xC56F8C
     void SetText(bool active, ::VROSC::NoteBoard::PlayAxis axis, bool colorize);
     // public System.Void UpdateText(VROSC.NoteBoard/VROSC.PlayAxis axis, System.Boolean colorize)
-    // Offset: 0xA13CAC
+    // Offset: 0xC57000
     void UpdateText(::VROSC::NoteBoard::PlayAxis axis, bool colorize);
     // private System.Void Normalize()
-    // Offset: 0xA13D94
+    // Offset: 0xC570E8
     void Normalize();
     // private System.String GetTextByAxis(VROSC.NoteBoard/VROSC.PlayAxis axis)
-    // Offset: 0xA13E30
+    // Offset: 0xC57184
     ::StringW GetTextByAxis(::VROSC::NoteBoard::PlayAxis axis);
     // private UnityEngine.Color GetTextColor(VROSC.NoteBoard/VROSC.PlayAxis axis)
-    // Offset: 0xA13F60
+    // Offset: 0xC572B0
     ::UnityEngine::Color GetTextColor(::VROSC::NoteBoard::PlayAxis axis);
     // private System.Void OnDrawGizmosSelected()
-    // Offset: 0xA13F98
+    // Offset: 0xC573E4
     void OnDrawGizmosSelected();
     // public System.Void .ctor()
-    // Offset: 0xA13FF0
+    // Offset: 0xC5743C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -14,6 +14,11 @@
 #include "beatsaber-hook/shared/utils/utils.h"
 #include "beatsaber-hook/shared/utils/typedefs-array.hpp"
 // Completed includes
+// Begin forward declares
+// Forward declaring namespace: VROSC
+namespace VROSC {
+}
+// Completed forward declares
 // Type namespace: VROSC
 namespace VROSC {
   // Forward declaring type: CheckAppValidityState
@@ -30,24 +35,26 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CheckAppValidityState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
+    // Nested type: ::VROSC::CheckAppValidityState::$$c
+    class $$c;
     // Creating interface conversion operator: operator ::VROSC::IState
     operator ::VROSC::IState() noexcept {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x1330C44
+    // Offset: 0x9457C8
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x1330CA4
+    // Offset: 0x9458E0
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x1330CA8
+    // Offset: 0x9458E4
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x1330CAC
+    // Offset: 0x9458E8
     void UpdateData(::ArrayW<::Il2CppObject*> values);
     // public System.Void .ctor()
-    // Offset: 0x1330C3C
+    // Offset: 0x9457C0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -42,15 +42,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class RoomManager : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.UInt64 roomID
     // Size: 0x8
     // Offset: 0x10
@@ -77,45 +69,45 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.UInt64 roomID
-    uint64_t& dyn_roomID();
+    [[deprecated]] uint64_t& dyn_roomID();
     // Get instance field reference: private System.UInt64 invitedRoomID
-    uint64_t& dyn_invitedRoomID();
+    [[deprecated]] uint64_t& dyn_invitedRoomID();
     // Get instance field reference: private System.Boolean amIServer
-    bool& dyn_amIServer();
+    [[deprecated]] bool& dyn_amIServer();
     // Get instance field reference: private System.Boolean startupDone
-    bool& dyn_startupDone();
+    [[deprecated]] bool& dyn_startupDone();
     // private System.Void AcceptingInviteCallback(Oculus.Platform.Message`1<System.String> msg)
-    // Offset: 0xAFF91C
+    // Offset: 0xB36180
     void AcceptingInviteCallback(::Oculus::Platform::Message_1<::StringW>* msg);
     // public System.Boolean CheckForInvite()
-    // Offset: 0xAFFA9C
+    // Offset: 0xB36300
     bool CheckForInvite();
     // public System.Void CreateRoom()
-    // Offset: 0xAFFBD8
+    // Offset: 0xB3643C
     void CreateRoom();
     // private System.Void CreateAndJoinPrivateRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0xAFFCAC
+    // Offset: 0xB36510
     void CreateAndJoinPrivateRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void OnLaunchInviteWorkflowComplete(Oculus.Platform.Message msg)
-    // Offset: 0xAFFDE8
+    // Offset: 0xB3664C
     void OnLaunchInviteWorkflowComplete(::Oculus::Platform::Message* msg);
     // public System.Void JoinExistingRoom(System.UInt64 roomID)
-    // Offset: 0xAFFACC
+    // Offset: 0xB36330
     void JoinExistingRoom(uint64_t roomID);
     // private System.Void JoinRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0xAFFE70
+    // Offset: 0xB366D4
     void JoinRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void RoomUpdateCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0xB005C8
+    // Offset: 0xB36E2C
     void RoomUpdateCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // public System.Void LeaveCurrentRoom()
-    // Offset: 0xB008C8
+    // Offset: 0xB3712C
     void LeaveCurrentRoom();
     // private System.Void ProcessRoomData(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0xB00150
+    // Offset: 0xB369B4
     void ProcessRoomData(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // public System.Void .ctor()
-    // Offset: 0xAFF818
+    // Offset: 0xB3607C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

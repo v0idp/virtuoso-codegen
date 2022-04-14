@@ -39,28 +39,28 @@ namespace System::IO::Compression {
     // Set static field: static private readonly System.DateTime s_invalidDateIndicator
     static void _set_s_invalidDateIndicator(::System::DateTime value);
     // static private System.Void .cctor()
-    // Offset: 0x1129B4C
+    // Offset: 0x16A13B8
     static void _cctor();
     // static System.Boolean RequiresUnicode(System.String test)
-    // Offset: 0x1127D38
+    // Offset: 0x169F5A4
     static bool RequiresUnicode(::StringW test);
     // static System.Void ReadBytes(System.IO.Stream stream, System.Byte[] buffer, System.Int32 bytesToRead)
-    // Offset: 0x11285D8
+    // Offset: 0x169FE44
     static void ReadBytes(::System::IO::Stream* stream, ::ArrayW<uint8_t> buffer, int bytesToRead);
     // static System.DateTime DosTimeToDateTime(System.UInt32 dateTime)
-    // Offset: 0x1126B78
+    // Offset: 0x169E3E4
     static ::System::DateTime DosTimeToDateTime(uint dateTime);
     // static System.UInt32 DateTimeToDosTime(System.DateTime dateTime)
-    // Offset: 0x11281C0
+    // Offset: 0x169FA2C
     static uint DateTimeToDosTime(::System::DateTime dateTime);
     // static System.Boolean SeekBackwardsToSignature(System.IO.Stream stream, System.UInt32 signatureToFind)
-    // Offset: 0x1125E10
+    // Offset: 0x169D67C
     static bool SeekBackwardsToSignature(::System::IO::Stream* stream, uint signatureToFind);
     // static System.Void AdvanceToPosition(System.IO.Stream stream, System.Int64 position)
-    // Offset: 0x1129800
+    // Offset: 0x16A106C
     static void AdvanceToPosition(::System::IO::Stream* stream, int64_t position);
     // static private System.Boolean SeekBackwardsAndRead(System.IO.Stream stream, System.Byte[] buffer, out System.Int32 bufferPointer)
-    // Offset: 0x11299CC
+    // Offset: 0x16A1238
     static bool SeekBackwardsAndRead(::System::IO::Stream* stream, ::ArrayW<uint8_t> buffer, ByRef<int> bufferPointer);
   }; // System.IO.Compression.ZipHelper
   #pragma pack(pop)

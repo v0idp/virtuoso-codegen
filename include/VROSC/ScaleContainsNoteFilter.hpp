@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScaleContainsNoteFilter : public ::VROSC::SignalFilter {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ScaleNode _scale
     // Size: 0x8
     // Offset: 0x40
@@ -62,11 +54,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteField*) == 0x8);
     public:
     // Get instance field reference: private VROSC.ScaleNode _scale
-    ::VROSC::ScaleNode*& dyn__scale();
+    [[deprecated]] ::VROSC::ScaleNode*& dyn__scale();
     // Get instance field reference: private VROSC.NoteField _note
-    ::VROSC::NoteField*& dyn__note();
+    [[deprecated]] ::VROSC::NoteField*& dyn__note();
     // public System.Void .ctor()
-    // Offset: 0xB10B10
+    // Offset: 0xDE2618
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -82,7 +74,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ScaleContainsNoteFilter*, creationType>()));
     }
     // protected override System.Void FilterSignal(VROSC.Signal signal)
-    // Offset: 0xB10AA4
+    // Offset: 0xDE25AC
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::FilterSignal(VROSC.Signal signal)
     void FilterSignal(::VROSC::Signal* signal);

@@ -429,31 +429,31 @@ namespace DG::Tweening {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, t, tweenParams);
     }
     // static public DG.Tweening.Sequence Append(DG.Tweening.Sequence s, DG.Tweening.Tween t)
-    // Offset: 0x1032700
+    // Offset: 0x15A90F8
     static ::DG::Tweening::Sequence* Append(::DG::Tweening::Sequence* s, ::DG::Tweening::Tween* t);
     // static public DG.Tweening.Sequence Prepend(DG.Tweening.Sequence s, DG.Tweening.Tween t)
-    // Offset: 0x103F1BC
+    // Offset: 0x15B5BB4
     static ::DG::Tweening::Sequence* Prepend(::DG::Tweening::Sequence* s, ::DG::Tweening::Tween* t);
     // static public DG.Tweening.Sequence Join(DG.Tweening.Sequence s, DG.Tweening.Tween t)
-    // Offset: 0x1032758
+    // Offset: 0x15A9150
     static ::DG::Tweening::Sequence* Join(::DG::Tweening::Sequence* s, ::DG::Tweening::Tween* t);
     // static public DG.Tweening.Sequence Insert(DG.Tweening.Sequence s, System.Single atPosition, DG.Tweening.Tween t)
-    // Offset: 0x103F210
+    // Offset: 0x15B5C08
     static ::DG::Tweening::Sequence* Insert(::DG::Tweening::Sequence* s, float atPosition, ::DG::Tweening::Tween* t);
     // static public DG.Tweening.Sequence AppendInterval(DG.Tweening.Sequence s, System.Single interval)
-    // Offset: 0x103F264
+    // Offset: 0x15B5C5C
     static ::DG::Tweening::Sequence* AppendInterval(::DG::Tweening::Sequence* s, float interval);
     // static public DG.Tweening.Sequence PrependInterval(DG.Tweening.Sequence s, System.Single interval)
-    // Offset: 0x103F2A4
+    // Offset: 0x15B5C9C
     static ::DG::Tweening::Sequence* PrependInterval(::DG::Tweening::Sequence* s, float interval);
     // static public DG.Tweening.Sequence AppendCallback(DG.Tweening.Sequence s, DG.Tweening.TweenCallback callback)
-    // Offset: 0x103F2E4
+    // Offset: 0x15B5CDC
     static ::DG::Tweening::Sequence* AppendCallback(::DG::Tweening::Sequence* s, ::DG::Tweening::TweenCallback* callback);
     // static public DG.Tweening.Sequence PrependCallback(DG.Tweening.Sequence s, DG.Tweening.TweenCallback callback)
-    // Offset: 0x103F32C
+    // Offset: 0x15B5D24
     static ::DG::Tweening::Sequence* PrependCallback(::DG::Tweening::Sequence* s, ::DG::Tweening::TweenCallback* callback);
     // static public DG.Tweening.Sequence InsertCallback(DG.Tweening.Sequence s, System.Single atPosition, DG.Tweening.TweenCallback callback)
-    // Offset: 0x103F374
+    // Offset: 0x15B5D6C
     static ::DG::Tweening::Sequence* InsertCallback(::DG::Tweening::Sequence* s, float atPosition, ::DG::Tweening::TweenCallback* callback);
     // static public T From(T t)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -486,10 +486,10 @@ namespace DG::Tweening {
       return ::il2cpp_utils::RunMethodRethrow<::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, t, fromValue, setImmediately);
     }
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> From(DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> t, System.Single fromAlphaValue, System.Boolean setImmediately)
-    // Offset: 0x103F3B8
+    // Offset: 0x15B5DB0
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* From(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* t, float fromAlphaValue, bool setImmediately);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> From(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> t, System.Single fromValue, System.Boolean setImmediately)
-    // Offset: 0x103F47C
+    // Offset: 0x15B5E74
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* From(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* t, float fromValue, bool setImmediately);
     // static public T SetDelay(T t, System.Single delay)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -542,61 +542,61 @@ namespace DG::Tweening {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, t, isSpeedBased);
     }
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> t, System.Boolean snapping)
-    // Offset: 0x103F51C
+    // Offset: 0x15B5F14
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* t, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> t, System.Boolean snapping)
-    // Offset: 0x103F534
+    // Offset: 0x15B5F2C
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* t, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> t, DG.Tweening.AxisConstraint axisConstraint, System.Boolean snapping)
-    // Offset: 0x103F54C
+    // Offset: 0x15B5F44
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* t, ::DG::Tweening::AxisConstraint axisConstraint, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> t, System.Boolean snapping)
-    // Offset: 0x102EC70
+    // Offset: 0x15A5668
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* t, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> t, DG.Tweening.AxisConstraint axisConstraint, System.Boolean snapping)
-    // Offset: 0x102EE4C
+    // Offset: 0x15A5844
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* t, ::DG::Tweening::AxisConstraint axisConstraint, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector4,UnityEngine.Vector4,DG.Tweening.Plugins.Options.VectorOptions> t, System.Boolean snapping)
-    // Offset: 0x103F568
+    // Offset: 0x15B5F60
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector4, ::UnityEngine::Vector4, ::DG::Tweening::Plugins::Options::VectorOptions>* t, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector4,UnityEngine.Vector4,DG.Tweening.Plugins.Options.VectorOptions> t, DG.Tweening.AxisConstraint axisConstraint, System.Boolean snapping)
-    // Offset: 0x103F580
+    // Offset: 0x15B5F78
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector4, ::UnityEngine::Vector4, ::DG::Tweening::Plugins::Options::VectorOptions>* t, ::DG::Tweening::AxisConstraint axisConstraint, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> t, System.Boolean useShortest360Route)
-    // Offset: 0x103F59C
+    // Offset: 0x15B5F94
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* t, bool useShortest360Route);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> t, System.Boolean alphaOnly)
-    // Offset: 0x103F5B8
+    // Offset: 0x15B5FB0
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* t, bool alphaOnly);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> t, System.Boolean snapping)
-    // Offset: 0x103F5D0
+    // Offset: 0x15B5FC8
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* t, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<System.String,System.String,DG.Tweening.Plugins.Options.StringOptions> t, System.Boolean richTextEnabled, DG.Tweening.ScrambleMode scrambleMode, System.String scrambleChars)
-    // Offset: 0x103F5E8
+    // Offset: 0x15B5FE0
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::StringW, ::StringW, ::DG::Tweening::Plugins::Options::StringOptions>* t, bool richTextEnabled, ::DG::Tweening::ScrambleMode scrambleMode, ::StringW scrambleChars);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> t, System.Boolean snapping)
-    // Offset: 0x1030D8C
+    // Offset: 0x15A7784
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* t, bool snapping);
     // static public DG.Tweening.Tweener SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> t, DG.Tweening.AxisConstraint axisConstraint, System.Boolean snapping)
-    // Offset: 0x103F6D4
+    // Offset: 0x15B60CC
     static ::DG::Tweening::Tweener* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* t, ::DG::Tweening::AxisConstraint axisConstraint, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, DG.Tweening.AxisConstraint lockPosition, DG.Tweening.AxisConstraint lockRotation)
-    // Offset: 0x103F6F0
+    // Offset: 0x15B60E8
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, ::DG::Tweening::AxisConstraint lockPosition, ::DG::Tweening::AxisConstraint lockRotation);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> SetOptions(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, System.Boolean closePath, DG.Tweening.AxisConstraint lockPosition, DG.Tweening.AxisConstraint lockRotation)
-    // Offset: 0x103F70C
+    // Offset: 0x15B6104
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* SetOptions(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, bool closePath, ::DG::Tweening::AxisConstraint lockPosition, ::DG::Tweening::AxisConstraint lockRotation);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> SetLookAt(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, UnityEngine.Vector3 lookAtPosition, System.Nullable`1<UnityEngine.Vector3> forwardDirection, System.Nullable`1<UnityEngine.Vector3> up)
-    // Offset: 0x103F72C
+    // Offset: 0x15B6124
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* SetLookAt(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, ::UnityEngine::Vector3 lookAtPosition, ::System::Nullable_1<::UnityEngine::Vector3> forwardDirection, ::System::Nullable_1<::UnityEngine::Vector3> up);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> SetLookAt(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, UnityEngine.Transform lookAtTransform, System.Nullable`1<UnityEngine.Vector3> forwardDirection, System.Nullable`1<UnityEngine.Vector3> up)
-    // Offset: 0x103F9AC
+    // Offset: 0x15B63A4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* SetLookAt(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, ::UnityEngine::Transform* lookAtTransform, ::System::Nullable_1<::UnityEngine::Vector3> forwardDirection, ::System::Nullable_1<::UnityEngine::Vector3> up);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> SetLookAt(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, System.Single lookAhead, System.Nullable`1<UnityEngine.Vector3> forwardDirection, System.Nullable`1<UnityEngine.Vector3> up)
-    // Offset: 0x103F9FC
+    // Offset: 0x15B63F4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* SetLookAt(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, float lookAhead, ::System::Nullable_1<::UnityEngine::Vector3> forwardDirection, ::System::Nullable_1<::UnityEngine::Vector3> up);
     // static private System.Void SetPathForwardDirection(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, System.Nullable`1<UnityEngine.Vector3> forwardDirection, System.Nullable`1<UnityEngine.Vector3> up)
-    // Offset: 0x103F774
+    // Offset: 0x15B616C
     static void SetPathForwardDirection(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, ::System::Nullable_1<::UnityEngine::Vector3> forwardDirection, ::System::Nullable_1<::UnityEngine::Vector3> up);
   }; // DG.Tweening.TweenSettingsExtensions
   #pragma pack(pop)

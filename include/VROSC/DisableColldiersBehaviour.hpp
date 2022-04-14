@@ -45,15 +45,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DisableColldiersBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean Disable
     // Size: 0x1
     // Offset: 0x10
@@ -82,18 +74,18 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<bool>) == 0x8);
     public:
     // Get instance field reference: public System.Boolean Disable
-    bool& dyn_Disable();
+    [[deprecated]] bool& dyn_Disable();
     // Get instance field reference: private UnityEngine.GameObject _root
-    ::UnityEngine::GameObject*& dyn__root();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__root();
     // Get instance field reference: private UnityEngine.Collider[] _colliders
-    ::ArrayW<::UnityEngine::Collider*>& dyn__colliders();
+    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__colliders();
     // Get instance field reference: private System.Boolean[] _activeAtStart
-    ::ArrayW<bool>& dyn__activeAtStart();
+    [[deprecated]] ::ArrayW<bool>& dyn__activeAtStart();
     // public System.Void Setup(UnityEngine.GameObject root)
-    // Offset: 0x130B83C
+    // Offset: 0x8E4A0C
     void Setup(::UnityEngine::GameObject* root);
     // public System.Void .ctor()
-    // Offset: 0x130BABC
+    // Offset: 0x8E4C8C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -103,7 +95,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<DisableColldiersBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x130B94C
+    // Offset: 0x8E4B1C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

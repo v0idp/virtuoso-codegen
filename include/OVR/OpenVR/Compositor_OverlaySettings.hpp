@@ -120,33 +120,33 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 size
-    uint& dyn_size();
+    [[deprecated]] uint& dyn_size();
     // Get instance field reference: public System.Boolean curved
-    bool& dyn_curved();
+    [[deprecated]] bool& dyn_curved();
     // Get instance field reference: public System.Boolean antialias
-    bool& dyn_antialias();
+    [[deprecated]] bool& dyn_antialias();
     // Get instance field reference: public System.Single scale
-    float& dyn_scale();
+    [[deprecated]] float& dyn_scale();
     // Get instance field reference: public System.Single distance
-    float& dyn_distance();
+    [[deprecated]] float& dyn_distance();
     // Get instance field reference: public System.Single alpha
-    float& dyn_alpha();
+    [[deprecated]] float& dyn_alpha();
     // Get instance field reference: public System.Single uOffset
-    float& dyn_uOffset();
+    [[deprecated]] float& dyn_uOffset();
     // Get instance field reference: public System.Single vOffset
-    float& dyn_vOffset();
+    [[deprecated]] float& dyn_vOffset();
     // Get instance field reference: public System.Single uScale
-    float& dyn_uScale();
+    [[deprecated]] float& dyn_uScale();
     // Get instance field reference: public System.Single vScale
-    float& dyn_vScale();
+    [[deprecated]] float& dyn_vScale();
     // Get instance field reference: public System.Single gridDivs
-    float& dyn_gridDivs();
+    [[deprecated]] float& dyn_gridDivs();
     // Get instance field reference: public System.Single gridWidth
-    float& dyn_gridWidth();
+    [[deprecated]] float& dyn_gridWidth();
     // Get instance field reference: public System.Single gridScale
-    float& dyn_gridScale();
+    [[deprecated]] float& dyn_gridScale();
     // Get instance field reference: public OVR.OpenVR.HmdMatrix44_t transform
-    ::OVR::OpenVR::HmdMatrix44_t& dyn_transform();
+    [[deprecated]] ::OVR::OpenVR::HmdMatrix44_t& dyn_transform();
   }; // OVR.OpenVR.Compositor_OverlaySettings
   #pragma pack(pop)
   static check_size<sizeof(Compositor_OverlaySettings), 48 + sizeof(::OVR::OpenVR::HmdMatrix44_t)> __OVR_OpenVR_Compositor_OverlaySettingsSizeCheck;

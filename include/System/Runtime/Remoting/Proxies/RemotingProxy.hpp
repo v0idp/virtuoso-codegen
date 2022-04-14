@@ -62,15 +62,7 @@ namespace System::Runtime::Remoting::Proxies {
   // [TokenAttribute] Offset: FFFFFFFF
   class RemotingProxy : public ::System::Runtime::Remoting::Proxies::RealProxy/*, public ::System::Runtime::Remoting::IRemotingTypeInfo*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.Remoting.Messaging.IMessageSink _sink
     // Size: 0x8
     // Offset: 0x50
@@ -105,35 +97,35 @@ namespace System::Runtime::Remoting::Proxies {
     // Set static field: static private System.Reflection.MethodInfo _cache_GetHashCodeMethod
     static void _set__cache_GetHashCodeMethod(::System::Reflection::MethodInfo* value);
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink _sink
-    ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__sink();
+    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__sink();
     // Get instance field reference: private System.Boolean _hasEnvoySink
-    bool& dyn__hasEnvoySink();
+    [[deprecated]] bool& dyn__hasEnvoySink();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.ConstructionCall _ctorCall
-    ::System::Runtime::Remoting::Messaging::ConstructionCall*& dyn__ctorCall();
+    [[deprecated]] ::System::Runtime::Remoting::Messaging::ConstructionCall*& dyn__ctorCall();
     // public System.String get_TypeName()
-    // Offset: 0xD45DC0
+    // Offset: 0xCD62D4
     ::StringW get_TypeName();
     // System.Void .ctor(System.Type type, System.String activationUrl, System.Object[] activationAttributes)
-    // Offset: 0xD454FC
+    // Offset: 0xCD57A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RemotingProxy* New_ctor(::System::Type* type, ::StringW activationUrl, ::ArrayW<::Il2CppObject*> activationAttributes) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Remoting::Proxies::RemotingProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RemotingProxy*, creationType>(type, activationUrl, activationAttributes)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xD46434
+    // Offset: 0xCD6954
     static void _cctor();
     // System.Void AttachIdentity(System.Runtime.Remoting.Identity identity)
-    // Offset: 0xD45B80
+    // Offset: 0xCD5FB0
     void AttachIdentity(::System::Runtime::Remoting::Identity* identity);
     // System.Runtime.Remoting.Messaging.IMessage ActivateRemoteObject(System.Runtime.Remoting.Messaging.IMethodMessage request)
-    // Offset: 0xD3F2BC
+    // Offset: 0xCD61F0
     ::System::Runtime::Remoting::Messaging::IMessage* ActivateRemoteObject(::System::Runtime::Remoting::Messaging::IMethodMessage* request);
     // public System.Boolean CanCastTo(System.Type fromType, System.Object o)
-    // Offset: 0xD45F04
+    // Offset: 0xCD641C
     bool CanCastTo(::System::Type* fromType, ::Il2CppObject* o);
     // System.Void .ctor(System.Type type, System.Runtime.Remoting.ClientIdentity identity)
-    // Offset: 0xD454B4
+    // Offset: 0xCD5754
     // Implemented from: System.Runtime.Remoting.Proxies.RealProxy
     // Base method: System.Void RealProxy::.ctor(System.Type type, System.Runtime.Remoting.ClientIdentity identity)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -142,12 +134,12 @@ namespace System::Runtime::Remoting::Proxies {
       return THROW_UNLESS((::il2cpp_utils::New<RemotingProxy*, creationType>(type, identity)));
     }
     // public override System.Runtime.Remoting.Messaging.IMessage Invoke(System.Runtime.Remoting.Messaging.IMessage request)
-    // Offset: 0xD4554C
+    // Offset: 0xCD57F4
     // Implemented from: System.Runtime.Remoting.Proxies.RealProxy
     // Base method: System.Runtime.Remoting.Messaging.IMessage RealProxy::Invoke(System.Runtime.Remoting.Messaging.IMessage request)
     ::System::Runtime::Remoting::Messaging::IMessage* Invoke(::System::Runtime::Remoting::Messaging::IMessage* request);
     // protected override System.Void Finalize()
-    // Offset: 0xD46134
+    // Offset: 0xCD6654
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

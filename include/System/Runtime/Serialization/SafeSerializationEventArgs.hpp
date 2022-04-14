@@ -41,15 +41,7 @@ namespace System::Runtime::Serialization {
   // [TokenAttribute] Offset: FFFFFFFF
   class SafeSerializationEventArgs : public ::System::EventArgs {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.Serialization.StreamingContext m_streamingContext
     // Size: 0xC
     // Offset: 0x10
@@ -66,14 +58,14 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::System::Collections::Generic::List_1<::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: private System.Runtime.Serialization.StreamingContext m_streamingContext
-    ::System::Runtime::Serialization::StreamingContext& dyn_m_streamingContext();
+    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_m_streamingContext();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> m_serializedStates
-    ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn_m_serializedStates();
+    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn_m_serializedStates();
     // System.Collections.Generic.IList`1<System.Object> get_SerializedStates()
-    // Offset: 0xEF1AD8
+    // Offset: 0x11714F8
     ::System::Collections::Generic::IList_1<::Il2CppObject*>* get_SerializedStates();
     // System.Void .ctor(System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xEF1A1C
+    // Offset: 0x117143C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SafeSerializationEventArgs* New_ctor(::System::Runtime::Serialization::StreamingContext streamingContext) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::SafeSerializationEventArgs::.ctor");

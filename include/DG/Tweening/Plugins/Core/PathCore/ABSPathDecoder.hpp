@@ -45,7 +45,7 @@ namespace DG::Tweening::Plugins::Core::PathCore {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::UnityEngine::Vector3 GetPoint(float perc, ::ArrayW<::UnityEngine::Vector3> wps, ::DG::Tweening::Plugins::Core::PathCore::Path* p, ::ArrayW<::DG::Tweening::Plugins::Core::PathCore::ControlPoint> controlPoints);
     // protected System.Void .ctor()
-    // Offset: 0x1090D0C
+    // Offset: 0x15D3334
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

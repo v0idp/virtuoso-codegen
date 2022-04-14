@@ -75,28 +75,28 @@ namespace Proyecto26 {
     // Set static field: static private System.Collections.Generic.Dictionary`2<System.String,System.String> _defaultRequestHeaders
     static void _set__defaultRequestHeaders(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* value);
     // static public System.Version get_Version()
-    // Offset: 0xAFE6D0
+    // Offset: 0xB34CD0
     static ::System::Version* get_Version();
     // static public System.Collections.Generic.Dictionary`2<System.String,System.String> get_DefaultRequestParams()
-    // Offset: 0xAFE780
+    // Offset: 0xB34D80
     static ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* get_DefaultRequestParams();
     // static public System.Void set_DefaultRequestParams(System.Collections.Generic.Dictionary`2<System.String,System.String> value)
-    // Offset: 0xAFE824
+    // Offset: 0xB34E24
     static void set_DefaultRequestParams(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* value);
     // static public System.Collections.Generic.Dictionary`2<System.String,System.String> get_DefaultRequestHeaders()
-    // Offset: 0xAFE8C4
+    // Offset: 0xB34EC4
     static ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* get_DefaultRequestHeaders();
     // static public System.Void set_DefaultRequestHeaders(System.Collections.Generic.Dictionary`2<System.String,System.String> value)
-    // Offset: 0xAFE964
+    // Offset: 0xB34F64
     static void set_DefaultRequestHeaders(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* value);
     // static public System.Void ClearDefaultParams()
-    // Offset: 0xAFE874
+    // Offset: 0xB34E74
     static void ClearDefaultParams();
     // static public System.Void ClearDefaultHeaders()
-    // Offset: 0xAFE9B4
+    // Offset: 0xB34FB4
     static void ClearDefaultHeaders();
     // static public System.Void Request(Proyecto26.RequestHelper options, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEA04
+    // Offset: 0xB35004
     static void Request(::Proyecto26::RequestHelper* options, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Request(Proyecto26.RequestHelper options, System.Action`3<Proyecto26.RequestException,Proyecto26.ResponseHelper,T> callback)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -108,10 +108,10 @@ namespace Proyecto26 {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, options, callback);
     }
     // static public System.Void Get(System.String url, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEA20
+    // Offset: 0xB35020
     static void Get(::StringW url, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Get(Proyecto26.RequestHelper options, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEA98
+    // Offset: 0xB35094
     static void Get(::Proyecto26::RequestHelper* options, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Get(System.String url, System.Action`3<Proyecto26.RequestException,Proyecto26.ResponseHelper,T> callback)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -150,13 +150,13 @@ namespace Proyecto26 {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, options, callback);
     }
     // static public System.Void Post(System.String url, System.Object body, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEB0C
+    // Offset: 0xB35108
     static void Post(::StringW url, ::Il2CppObject* body, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Post(System.String url, System.String bodyString, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEC00
+    // Offset: 0xB351F8
     static void Post(::StringW url, ::StringW bodyString, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Post(Proyecto26.RequestHelper options, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEB8C
+    // Offset: 0xB35184
     static void Post(::Proyecto26::RequestHelper* options, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Post(System.String url, System.Object body, System.Action`3<Proyecto26.RequestException,Proyecto26.ResponseHelper,T> callback)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -213,13 +213,13 @@ namespace Proyecto26 {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, options, callback);
     }
     // static public System.Void Put(System.String url, System.Object body, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEC80
+    // Offset: 0xB35274
     static void Put(::StringW url, ::Il2CppObject* body, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Put(System.String url, System.String bodyString, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFED74
+    // Offset: 0xB35364
     static void Put(::StringW url, ::StringW bodyString, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Put(Proyecto26.RequestHelper options, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFED00
+    // Offset: 0xB352F0
     static void Put(::Proyecto26::RequestHelper* options, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Put(System.String url, System.Object body, System.Action`3<Proyecto26.RequestException,Proyecto26.ResponseHelper,T> callback)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -249,19 +249,19 @@ namespace Proyecto26 {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, options, callback);
     }
     // static public System.Void Delete(System.String url, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEDF4
+    // Offset: 0xB353E0
     static void Delete(::StringW url, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Delete(Proyecto26.RequestHelper options, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEE6C
+    // Offset: 0xB35454
     static void Delete(::Proyecto26::RequestHelper* options, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Head(System.String url, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEEE0
+    // Offset: 0xB354C8
     static void Head(::StringW url, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Void Head(Proyecto26.RequestHelper options, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0xAFEF58
+    // Offset: 0xB3553C
     static void Head(::Proyecto26::RequestHelper* options, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Request(Proyecto26.RequestHelper options)
-    // Offset: 0xAFEFCC
+    // Offset: 0xB355B0
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Request(::Proyecto26::RequestHelper* options);
     // static public RSG.IPromise`1<T> Request(Proyecto26.RequestHelper options)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -273,10 +273,10 @@ namespace Proyecto26 {
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<T>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, options);
     }
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Get(System.String url)
-    // Offset: 0xAFF0B4
+    // Offset: 0xB35698
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Get(::StringW url);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Get(Proyecto26.RequestHelper options)
-    // Offset: 0xAFF11C
+    // Offset: 0xB356FC
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Get(::Proyecto26::RequestHelper* options);
     // static public RSG.IPromise`1<T> Get(System.String url)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -315,13 +315,13 @@ namespace Proyecto26 {
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<::ArrayW<T>>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, options);
     }
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Post(System.String url, System.Object body)
-    // Offset: 0xAFF1F8
+    // Offset: 0xB357D8
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Post(::StringW url, ::Il2CppObject* body);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Post(System.String url, System.String bodyString)
-    // Offset: 0xAFF34C
+    // Offset: 0xB35928
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Post(::StringW url, ::StringW bodyString);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Post(Proyecto26.RequestHelper options)
-    // Offset: 0xAFF270
+    // Offset: 0xB3584C
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Post(::Proyecto26::RequestHelper* options);
     // static public RSG.IPromise`1<T> Post(System.String url, System.Object body)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -378,13 +378,13 @@ namespace Proyecto26 {
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<::ArrayW<T>>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, options);
     }
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Put(System.String url, System.Object body)
-    // Offset: 0xAFF3C4
+    // Offset: 0xB3599C
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Put(::StringW url, ::Il2CppObject* body);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Put(System.String url, System.String bodyString)
-    // Offset: 0xAFF518
+    // Offset: 0xB35AEC
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Put(::StringW url, ::StringW bodyString);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Put(Proyecto26.RequestHelper options)
-    // Offset: 0xAFF43C
+    // Offset: 0xB35A10
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Put(::Proyecto26::RequestHelper* options);
     // static public RSG.IPromise`1<T> Put(System.String url, System.Object body)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -414,16 +414,16 @@ namespace Proyecto26 {
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<T>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, options);
     }
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Delete(System.String url)
-    // Offset: 0xAFF590
+    // Offset: 0xB35B60
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Delete(::StringW url);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Delete(Proyecto26.RequestHelper options)
-    // Offset: 0xAFF5F8
+    // Offset: 0xB35BC4
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Delete(::Proyecto26::RequestHelper* options);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Head(System.String url)
-    // Offset: 0xAFF6D4
+    // Offset: 0xB35CA0
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Head(::StringW url);
     // static public RSG.IPromise`1<Proyecto26.ResponseHelper> Head(Proyecto26.RequestHelper options)
-    // Offset: 0xAFF73C
+    // Offset: 0xB35D04
     static ::RSG::IPromise_1<::Proyecto26::ResponseHelper*>* Head(::Proyecto26::RequestHelper* options);
     // static private System.Void Promisify(RSG.Promise`1<T> promise, Proyecto26.RequestException error, T response)
     // Offset: 0xFFFFFFFFFFFFFFFF

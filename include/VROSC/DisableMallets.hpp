@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DisableMallets : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ControllerInputNode _controllerInputNode
     // Size: 0x8
     // Offset: 0x18
@@ -56,18 +48,18 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ControllerInputNode _controllerInputNode
-    ::VROSC::ControllerInputNode*& dyn__controllerInputNode();
+    [[deprecated]] ::VROSC::ControllerInputNode*& dyn__controllerInputNode();
     // protected System.Void Awake()
-    // Offset: 0x130BAC4
+    // Offset: 0x8E4C94
     void Awake();
     // private System.Void HoverBegin(VROSC.InputDevice device)
-    // Offset: 0x130BBFC
+    // Offset: 0x8E4DCC
     void HoverBegin(::VROSC::InputDevice* device);
     // private System.Void HoverEnd(VROSC.InputDevice device)
-    // Offset: 0x130BC74
+    // Offset: 0x8E4E44
     void HoverEnd(::VROSC::InputDevice* device);
     // public System.Void .ctor()
-    // Offset: 0x130BCEC
+    // Offset: 0x8E4EBC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

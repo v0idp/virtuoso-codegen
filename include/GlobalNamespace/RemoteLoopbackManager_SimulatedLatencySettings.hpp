@@ -31,37 +31,29 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class RemoteLoopbackManager::SimulatedLatencySettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [RangeAttribute] Offset: 0x66C998
+    // [RangeAttribute] Offset: 0x782964
     // public System.Single FakeLatencyMax
     // Size: 0x4
     // Offset: 0x10
     float FakeLatencyMax;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x66C9B0
+    // [RangeAttribute] Offset: 0x78297C
     // public System.Single FakeLatencyMin
     // Size: 0x4
     // Offset: 0x14
     float FakeLatencyMin;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x66C9C8
+    // [RangeAttribute] Offset: 0x782994
     // public System.Single LatencyWeight
     // Size: 0x4
     // Offset: 0x18
     float LatencyWeight;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x66C9E0
+    // [RangeAttribute] Offset: 0x7829AC
     // public System.Int32 MaxSamples
     // Size: 0x4
     // Offset: 0x1C
@@ -88,24 +80,24 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::Generic::LinkedList_1<float>*) == 0x8);
     public:
     // Get instance field reference: public System.Single FakeLatencyMax
-    float& dyn_FakeLatencyMax();
+    [[deprecated]] float& dyn_FakeLatencyMax();
     // Get instance field reference: public System.Single FakeLatencyMin
-    float& dyn_FakeLatencyMin();
+    [[deprecated]] float& dyn_FakeLatencyMin();
     // Get instance field reference: public System.Single LatencyWeight
-    float& dyn_LatencyWeight();
+    [[deprecated]] float& dyn_LatencyWeight();
     // Get instance field reference: public System.Int32 MaxSamples
-    int& dyn_MaxSamples();
+    [[deprecated]] int& dyn_MaxSamples();
     // Get instance field reference: System.Single AverageWindow
-    float& dyn_AverageWindow();
+    [[deprecated]] float& dyn_AverageWindow();
     // Get instance field reference: System.Single LatencySum
-    float& dyn_LatencySum();
+    [[deprecated]] float& dyn_LatencySum();
     // Get instance field reference: System.Collections.Generic.LinkedList`1<System.Single> LatencyValues
-    ::System::Collections::Generic::LinkedList_1<float>*& dyn_LatencyValues();
+    [[deprecated]] ::System::Collections::Generic::LinkedList_1<float>*& dyn_LatencyValues();
     // public System.Single NextValue()
-    // Offset: 0x1345148
+    // Offset: 0x8D0098
     float NextValue();
     // public System.Void .ctor()
-    // Offset: 0x1345280
+    // Offset: 0x8D01D0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

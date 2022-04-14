@@ -31,15 +31,7 @@ namespace GlobalNamespace {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class OVRPassthroughLayer::$$c__DisplayClass9_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.GameObject obj
     // Size: 0x8
     // Offset: 0x10
@@ -52,12 +44,12 @@ namespace GlobalNamespace {
       return obj;
     }
     // Get instance field reference: public UnityEngine.GameObject obj
-    ::UnityEngine::GameObject*& dyn_obj();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_obj();
     // System.Boolean <RemoveSurfaceGeometry>b__0(OVRPassthroughLayer/DeferredPassthroughMeshAddition x)
-    // Offset: 0x73F294
+    // Offset: 0x855998
     bool $RemoveSurfaceGeometry$b__0(::GlobalNamespace::OVRPassthroughLayer::DeferredPassthroughMeshAddition x);
     // public System.Void .ctor()
-    // Offset: 0x73F28C
+    // Offset: 0x855990
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

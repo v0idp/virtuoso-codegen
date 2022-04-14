@@ -54,15 +54,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SpectatorCameraController : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Camera _spectatorCamera
     // Size: 0x8
     // Offset: 0x18
@@ -131,82 +123,85 @@ namespace VROSC {
     // Set static field: static private UnityEngine.LayerMask <PlayerMask>k__BackingField
     static void _set_$PlayerMask$k__BackingField(::UnityEngine::LayerMask value);
     // Get instance field reference: private UnityEngine.Camera _spectatorCamera
-    ::UnityEngine::Camera*& dyn__spectatorCamera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn__spectatorCamera();
     // Get instance field reference: private VROSC.SpectatorCameraAnchor[] _cameraAnchors
-    ::ArrayW<::VROSC::SpectatorCameraAnchor*>& dyn__cameraAnchors();
+    [[deprecated]] ::ArrayW<::VROSC::SpectatorCameraAnchor*>& dyn__cameraAnchors();
     // Get instance field reference: private System.Single _followSmoothDuration
-    float& dyn__followSmoothDuration();
+    [[deprecated]] float& dyn__followSmoothDuration();
     // Get instance field reference: private System.Single _moveSmoothDuration
-    float& dyn__moveSmoothDuration();
+    [[deprecated]] float& dyn__moveSmoothDuration();
     // Get instance field reference: private System.Single _fovSmoothDuration
-    float& dyn__fovSmoothDuration();
+    [[deprecated]] float& dyn__fovSmoothDuration();
     // Get instance field reference: private VROSC.RenderLIV _renderLIV
-    ::VROSC::RenderLIV*& dyn__renderLIV();
+    [[deprecated]] ::VROSC::RenderLIV*& dyn__renderLIV();
     // Get instance field reference: private VROSC.CopyCameraOutputToRenderTexture _renderTextureOutput
-    ::VROSC::CopyCameraOutputToRenderTexture*& dyn__renderTextureOutput();
+    [[deprecated]] ::VROSC::CopyCameraOutputToRenderTexture*& dyn__renderTextureOutput();
     // Get instance field reference: private System.Int32 _activeIndex
-    int& dyn__activeIndex();
+    [[deprecated]] int& dyn__activeIndex();
     // Get instance field reference: private System.Boolean _enabled
-    bool& dyn__enabled();
+    [[deprecated]] bool& dyn__enabled();
     // public UnityEngine.Camera get_Camera()
-    // Offset: 0x13BACF0
+    // Offset: 0x192DDF4
     ::UnityEngine::Camera* get_Camera();
     // static public UnityEngine.LayerMask get_EnvironmentMask()
-    // Offset: 0x13BACF8
+    // Offset: 0x192DDFC
     static ::UnityEngine::LayerMask get_EnvironmentMask();
     // static private System.Void set_EnvironmentMask(UnityEngine.LayerMask value)
-    // Offset: 0x13BAD44
+    // Offset: 0x192DE48
     static void set_EnvironmentMask(::UnityEngine::LayerMask value);
     // static public UnityEngine.LayerMask get_PlayerMask()
-    // Offset: 0x13BAD94
+    // Offset: 0x192DE98
     static ::UnityEngine::LayerMask get_PlayerMask();
     // static private System.Void set_PlayerMask(UnityEngine.LayerMask value)
-    // Offset: 0x13BADE0
+    // Offset: 0x192DEE4
     static void set_PlayerMask(::UnityEngine::LayerMask value);
     // public System.Int32 get_ActiveIndex()
-    // Offset: 0x13BAE30
+    // Offset: 0x192DF34
     int get_ActiveIndex();
     // public VROSC.SpectatorCameraAnchor get_ActiveAnchor()
-    // Offset: 0x13BAE38
+    // Offset: 0x192DF3C
     ::VROSC::SpectatorCameraAnchor* get_ActiveAnchor();
     // protected System.Void Awake()
-    // Offset: 0x13BAE90
+    // Offset: 0x192DFA4
     void Awake();
-    // public System.Void SetMenuOpen(System.Boolean menuOpen)
-    // Offset: 0x13BB0D0
-    void SetMenuOpen(bool menuOpen);
+    // public System.Void SetSpectatorRenderTextureActive(System.Boolean active, System.Object source)
+    // Offset: 0x192E21C
+    void SetSpectatorRenderTextureActive(bool active, ::Il2CppObject* source);
     // public System.Void ChangeCamera(System.Int32 index, System.Boolean hideBackground)
-    // Offset: 0x13BB0F0
+    // Offset: 0x192E23C
     void ChangeCamera(int index, bool hideBackground);
     // public System.Void ApplyAnchorDefaultLayerMask()
-    // Offset: 0x13BB0F4
+    // Offset: 0x192E240
     void ApplyAnchorDefaultLayerMask();
     // private System.Void SetEnabled(System.Boolean isEnabled)
-    // Offset: 0x13BB070
+    // Offset: 0x192E1C4
     void SetEnabled(bool isEnabled);
     // public System.Collections.Generic.List`1<System.String> GetAnchorDisplayNames()
-    // Offset: 0x13BB0F8
+    // Offset: 0x192E244
     ::System::Collections::Generic::List_1<::StringW>* GetAnchorDisplayNames();
     // private System.Void MainStateEntered()
-    // Offset: 0x13BB208
+    // Offset: 0x192E354
     void MainStateEntered();
+    // public System.Void ResetGrabbableCameraPosition()
+    // Offset: 0x192E48C
+    void ResetGrabbableCameraPosition();
     // private System.Void LivActivated()
-    // Offset: 0x13BB340
+    // Offset: 0x192E548
     void LivActivated();
     // private System.Void LivDeactivated()
-    // Offset: 0x13BB384
+    // Offset: 0x192E58C
     void LivDeactivated();
     // private System.Void UpdateHideBackgroundState()
-    // Offset: 0x13BB2D8
+    // Offset: 0x192E424
     void UpdateHideBackgroundState();
     // public System.Void SpectatorHideBackgroundToggled(System.Boolean toggled)
-    // Offset: 0x13BB3C4
+    // Offset: 0x192E5CC
     void SpectatorHideBackgroundToggled(bool toggled);
     // public System.Void SetKeyboardVisible(System.Boolean visible)
-    // Offset: 0x13BB78C
+    // Offset: 0x192E994
     void SetKeyboardVisible(bool visible);
     // public System.Void .ctor()
-    // Offset: 0x13BB964
+    // Offset: 0x192EB6C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -290,13 +285,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraController*), "Awake", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SpectatorCameraController::SetMenuOpen
-// Il2CppName: SetMenuOpen
+// Writing MetadataGetter for method: VROSC::SpectatorCameraController::SetSpectatorRenderTextureActive
+// Il2CppName: SetSpectatorRenderTextureActive
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SpectatorCameraController::*)(bool)>(&VROSC::SpectatorCameraController::SetMenuOpen)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SpectatorCameraController::*)(bool, ::Il2CppObject*)>(&VROSC::SpectatorCameraController::SetSpectatorRenderTextureActive)> {
   static const MethodInfo* get() {
-    static auto* menuOpen = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraController*), "SetMenuOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{menuOpen});
+    static auto* active = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    static auto* source = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraController*), "SetSpectatorRenderTextureActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{active, source});
   }
 };
 // Writing MetadataGetter for method: VROSC::SpectatorCameraController::ChangeCamera
@@ -340,6 +336,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SpectatorCameraController::*)()>(&VROSC::SpectatorCameraController::MainStateEntered)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraController*), "MainStateEntered", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SpectatorCameraController::ResetGrabbableCameraPosition
+// Il2CppName: ResetGrabbableCameraPosition
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SpectatorCameraController::*)()>(&VROSC::SpectatorCameraController::ResetGrabbableCameraPosition)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraController*), "ResetGrabbableCameraPosition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::SpectatorCameraController::LivActivated

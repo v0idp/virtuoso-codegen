@@ -54,7 +54,7 @@ namespace Oculus::Spatializer::Propagation {
     // Set static field: static public Oculus.Spatializer.Propagation.FaceType QUADS
     static void _set_QUADS(::Oculus::Spatializer::Propagation::FaceType value);
     // Get instance field reference: public System.UInt32 value__
-    uint& dyn_value__();
+    [[deprecated]] uint& dyn_value__();
   }; // Oculus.Spatializer.Propagation.FaceType
   #pragma pack(pop)
   static check_size<sizeof(FaceType), 0 + sizeof(uint)> __Oculus_Spatializer_Propagation_FaceTypeSizeCheck;

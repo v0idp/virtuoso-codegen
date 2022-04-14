@@ -40,7 +40,7 @@ namespace Firebase::Firestore::Converters {
   class UInt64Converter : public ::Firebase::Firestore::Converters::IntegerConverterBase {
     public:
     // System.Void .ctor()
-    // Offset: 0xC2EBB0
+    // Offset: 0xD509C0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -49,12 +49,12 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<UInt64Converter*, creationType>()));
     }
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC416A8
+    // Offset: 0xD65C04
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
     // protected override System.Object DeserializeInteger(Firebase.Firestore.DeserializationContext context, System.Int64 value)
-    // Offset: 0xC4171C
+    // Offset: 0xD65C78
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeInteger(Firebase.Firestore.DeserializationContext context, System.Int64 value)
     ::Il2CppObject* DeserializeInteger(::Firebase::Firestore::DeserializationContext* context, int64_t value);

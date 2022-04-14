@@ -33,32 +33,32 @@ namespace Firebase::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class Services : public ::Il2CppObject {
     public:
-    // [DebuggerBrowsableAttribute] Offset: 0x5E0038
+    // [DebuggerBrowsableAttribute] Offset: 0x6F7E58
     // Get static field: static private Firebase.Platform.IAppConfigExtensions <AppConfig>k__BackingField
     static ::Firebase::Platform::IAppConfigExtensions* _get_$AppConfig$k__BackingField();
     // Set static field: static private Firebase.Platform.IAppConfigExtensions <AppConfig>k__BackingField
     static void _set_$AppConfig$k__BackingField(::Firebase::Platform::IAppConfigExtensions* value);
-    // [DebuggerBrowsableAttribute] Offset: 0x5E0074
+    // [DebuggerBrowsableAttribute] Offset: 0x6F7E94
     // Get static field: static private Firebase.Platform.IClockService <Clock>k__BackingField
     static ::Firebase::Platform::IClockService* _get_$Clock$k__BackingField();
     // Set static field: static private Firebase.Platform.IClockService <Clock>k__BackingField
     static void _set_$Clock$k__BackingField(::Firebase::Platform::IClockService* value);
-    // [DebuggerBrowsableAttribute] Offset: 0x5E00B0
+    // [DebuggerBrowsableAttribute] Offset: 0x6F7ED0
     // Get static field: static private Firebase.Platform.ILoggingService <Logging>k__BackingField
     static ::Firebase::Platform::ILoggingService* _get_$Logging$k__BackingField();
     // Set static field: static private Firebase.Platform.ILoggingService <Logging>k__BackingField
     static void _set_$Logging$k__BackingField(::Firebase::Platform::ILoggingService* value);
     // static System.Void set_AppConfig(Firebase.Platform.IAppConfigExtensions value)
-    // Offset: 0x12CB6DC
+    // Offset: 0x18CAA6C
     static void set_AppConfig(::Firebase::Platform::IAppConfigExtensions* value);
     // static System.Void set_Clock(Firebase.Platform.IClockService value)
-    // Offset: 0x12CB744
+    // Offset: 0x18CAAD4
     static void set_Clock(::Firebase::Platform::IClockService* value);
     // static System.Void set_Logging(Firebase.Platform.ILoggingService value)
-    // Offset: 0x12CB7AC
+    // Offset: 0x18CAB3C
     static void set_Logging(::Firebase::Platform::ILoggingService* value);
     // static private System.Void .cctor()
-    // Offset: 0x12CB4BC
+    // Offset: 0x18CA84C
     static void _cctor();
   }; // Firebase.Platform.Services
   #pragma pack(pop)

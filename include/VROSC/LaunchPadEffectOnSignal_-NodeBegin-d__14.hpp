@@ -78,20 +78,20 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public VROSC.Signal signal
-    ::VROSC::Signal*& dyn_signal();
+    [[deprecated]] ::VROSC::Signal*& dyn_signal();
     // Get instance field reference: public VROSC.LaunchPadEffectOnSignal <>4__this
-    ::VROSC::LaunchPadEffectOnSignal*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::LaunchPadEffectOnSignal*& dyn_$$4__this();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x13D3E94
+    // Offset: 0x195BBB0
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x13D4120
+    // Offset: 0x195BE3C
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.LaunchPadEffectOnSignal/VROSC.<NodeBegin>d__14
   #pragma pack(pop)

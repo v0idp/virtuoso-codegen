@@ -50,15 +50,7 @@ namespace UnityEngine::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class VertexHelper : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<UnityEngine.Vector3> m_Positions
     // Size: 0x8
     // Offset: 0x10
@@ -133,88 +125,88 @@ namespace UnityEngine::UI {
     // Set static field: static private readonly UnityEngine.Vector3 s_DefaultNormal
     static void _set_s_DefaultNormal(::UnityEngine::Vector3 value);
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> m_Positions
-    ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_Positions();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_Positions();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Color32> m_Colors
-    ::System::Collections::Generic::List_1<::UnityEngine::Color32>*& dyn_m_Colors();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Color32>*& dyn_m_Colors();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Uv0S
-    ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv0S();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv0S();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Uv1S
-    ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv1S();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv1S();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Uv2S
-    ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv2S();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv2S();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Uv3S
-    ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv3S();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv3S();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> m_Normals
-    ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_Normals();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_Normals();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Tangents
-    ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Tangents();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Tangents();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> m_Indices
-    ::System::Collections::Generic::List_1<int>*& dyn_m_Indices();
+    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_m_Indices();
     // Get instance field reference: private System.Boolean m_ListsInitalized
-    bool& dyn_m_ListsInitalized();
+    [[deprecated]] bool& dyn_m_ListsInitalized();
     // public System.Int32 get_currentVertCount()
-    // Offset: 0x11406C4
+    // Offset: 0x16D6E5C
     int get_currentVertCount();
     // public System.Int32 get_currentIndexCount()
-    // Offset: 0x1140714
+    // Offset: 0x16D6EAC
     int get_currentIndexCount();
     // public System.Void .ctor(UnityEngine.Mesh m)
-    // Offset: 0x11400F8
+    // Offset: 0x16D6890
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VertexHelper* New_ctor(::UnityEngine::Mesh* m) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::VertexHelper::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<VertexHelper*, creationType>(m)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x11412CC
+    // Offset: 0x16D7A64
     static void _cctor();
     // private System.Void InitializeListIfRequired()
-    // Offset: 0x1140338
+    // Offset: 0x16D6AD0
     void InitializeListIfRequired();
     // public System.Void Dispose()
-    // Offset: 0x11404EC
+    // Offset: 0x16D6C84
     void Dispose();
     // public System.Void Clear()
-    // Offset: 0x113D988
+    // Offset: 0x16D4120
     void Clear();
     // public System.Void PopulateUIVertex(ref UnityEngine.UIVertex vertex, System.Int32 i)
-    // Offset: 0x1140764
+    // Offset: 0x16D6EFC
     void PopulateUIVertex(ByRef<::UnityEngine::UIVertex> vertex, int i);
     // public System.Void SetUIVertex(UnityEngine.UIVertex vertex, System.Int32 i)
-    // Offset: 0x1140958
+    // Offset: 0x16D70F0
     void SetUIVertex(::UnityEngine::UIVertex vertex, int i);
     // public System.Void FillMesh(UnityEngine.Mesh mesh)
-    // Offset: 0x1140AC0
+    // Offset: 0x16D7258
     void FillMesh(::UnityEngine::Mesh* mesh);
     // public System.Void AddVert(UnityEngine.Vector3 position, UnityEngine.Color32 color, UnityEngine.Vector4 uv0, UnityEngine.Vector4 uv1, UnityEngine.Vector4 uv2, UnityEngine.Vector4 uv3, UnityEngine.Vector3 normal, UnityEngine.Vector4 tangent)
-    // Offset: 0x1140C2C
+    // Offset: 0x16D73C4
     void AddVert(::UnityEngine::Vector3 position, ::UnityEngine::Color32 color, ::UnityEngine::Vector4 uv0, ::UnityEngine::Vector4 uv1, ::UnityEngine::Vector4 uv2, ::UnityEngine::Vector4 uv3, ::UnityEngine::Vector3 normal, ::UnityEngine::Vector4 tangent);
     // public System.Void AddVert(UnityEngine.Vector3 position, UnityEngine.Color32 color, UnityEngine.Vector4 uv0, UnityEngine.Vector4 uv1, UnityEngine.Vector3 normal, UnityEngine.Vector4 tangent)
-    // Offset: 0x1140E38
+    // Offset: 0x16D75D0
     void AddVert(::UnityEngine::Vector3 position, ::UnityEngine::Color32 color, ::UnityEngine::Vector4 uv0, ::UnityEngine::Vector4 uv1, ::UnityEngine::Vector3 normal, ::UnityEngine::Vector4 tangent);
     // public System.Void AddVert(UnityEngine.Vector3 position, UnityEngine.Color32 color, UnityEngine.Vector4 uv0)
-    // Offset: 0x1140F1C
+    // Offset: 0x16D76B4
     void AddVert(::UnityEngine::Vector3 position, ::UnityEngine::Color32 color, ::UnityEngine::Vector4 uv0);
     // public System.Void AddVert(UnityEngine.UIVertex v)
-    // Offset: 0x1141038
+    // Offset: 0x16D77D0
     void AddVert(::UnityEngine::UIVertex v);
     // public System.Void AddTriangle(System.Int32 idx0, System.Int32 idx1, System.Int32 idx2)
-    // Offset: 0x11410D0
+    // Offset: 0x16D7868
     void AddTriangle(int idx0, int idx1, int idx2);
     // public System.Void AddUIVertexQuad(UnityEngine.UIVertex[] verts)
-    // Offset: 0x113DAB8
+    // Offset: 0x16D4250
     void AddUIVertexQuad(::ArrayW<::UnityEngine::UIVertex> verts);
     // public System.Void AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex> verts, System.Collections.Generic.List`1<System.Int32> indices)
-    // Offset: 0x1141174
+    // Offset: 0x16D790C
     void AddUIVertexStream(::System::Collections::Generic::List_1<::UnityEngine::UIVertex>* verts, ::System::Collections::Generic::List_1<int>* indices);
     // public System.Void AddUIVertexTriangleStream(System.Collections.Generic.List`1<UnityEngine.UIVertex> verts)
-    // Offset: 0x1141224
+    // Offset: 0x16D79BC
     void AddUIVertexTriangleStream(::System::Collections::Generic::List_1<::UnityEngine::UIVertex>* verts);
     // public System.Void GetUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex> stream)
-    // Offset: 0x1141278
+    // Offset: 0x16D7A10
     void GetUIVertexStream(::System::Collections::Generic::List_1<::UnityEngine::UIVertex>* stream);
     // public System.Void .ctor()
-    // Offset: 0x11400F0
+    // Offset: 0x16D6888
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

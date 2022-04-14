@@ -78,7 +78,7 @@ namespace Facebook::WitAi::CallbackHandlers {
     // Set static field: static public Facebook.WitAi.CallbackHandlers.MatchMethod DoubleComparison
     static void _set_DoubleComparison(::Facebook::WitAi::CallbackHandlers::MatchMethod value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Facebook.WitAi.CallbackHandlers.MatchMethod
   #pragma pack(pop)
   static check_size<sizeof(MatchMethod), 0 + sizeof(int)> __Facebook_WitAi_CallbackHandlers_MatchMethodSizeCheck;

@@ -39,15 +39,7 @@ namespace UnityEngine::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class ClipperRegistry : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly UnityEngine.UI.Collections.IndexedSet`1<UnityEngine.UI.IClipper> m_Clippers
     // Size: 0x8
     // Offset: 0x10
@@ -64,21 +56,21 @@ namespace UnityEngine::UI {
     // Set static field: static private UnityEngine.UI.ClipperRegistry s_Instance
     static void _set_s_Instance(::UnityEngine::UI::ClipperRegistry* value);
     // Get instance field reference: private readonly UnityEngine.UI.Collections.IndexedSet`1<UnityEngine.UI.IClipper> m_Clippers
-    ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::IClipper*>*& dyn_m_Clippers();
+    [[deprecated]] ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::IClipper*>*& dyn_m_Clippers();
     // static public UnityEngine.UI.ClipperRegistry get_instance()
-    // Offset: 0xBB7E50
+    // Offset: 0xEAE49C
     static ::UnityEngine::UI::ClipperRegistry* get_instance();
     // public System.Void Cull()
-    // Offset: 0xBB7EC8
+    // Offset: 0xEAE514
     void Cull();
     // static public System.Void Register(UnityEngine.UI.IClipper c)
-    // Offset: 0xBB8AF8
+    // Offset: 0xEAF144
     static void Register(::UnityEngine::UI::IClipper* c);
     // static public System.Void Unregister(UnityEngine.UI.IClipper c)
-    // Offset: 0xBB8B68
+    // Offset: 0xEAF1B4
     static void Unregister(::UnityEngine::UI::IClipper* c);
     // protected System.Void .ctor()
-    // Offset: 0xBB8A80
+    // Offset: 0xEAF0CC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

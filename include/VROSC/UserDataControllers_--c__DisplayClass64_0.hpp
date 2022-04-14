@@ -36,15 +36,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UserDataControllers::$$c__DisplayClass64_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.UserDataControllers <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -89,39 +81,39 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.UserDataControllers <>4__this
-    ::VROSC::UserDataControllers*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UserDataControllers*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public System.Action <>9__2
-    ::System::Action*& dyn_$$9__2();
+    [[deprecated]] ::System::Action*& dyn_$$9__2();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__3
-    ::System::Action_1<::VROSC::Error>*& dyn_$$9__3();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__3();
     // Get instance field reference: public System.Action <>9__4
-    ::System::Action*& dyn_$$9__4();
+    [[deprecated]] ::System::Action*& dyn_$$9__4();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__5
-    ::System::Action_1<::VROSC::Error>*& dyn_$$9__5();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__5();
     // System.Void <LoadLocalData>b__0()
-    // Offset: 0x14103D0
+    // Offset: 0xE82480
     void $LoadLocalData$b__0();
     // System.Void <LoadLocalData>b__2()
-    // Offset: 0x1410524
+    // Offset: 0xE825D4
     void $LoadLocalData$b__2();
     // System.Void <LoadLocalData>b__3(VROSC.Error error)
-    // Offset: 0x1410554
+    // Offset: 0xE82604
     void $LoadLocalData$b__3(::VROSC::Error error);
     // System.Void <LoadLocalData>b__1(VROSC.Error error)
-    // Offset: 0x14105FC
+    // Offset: 0xE826AC
     void $LoadLocalData$b__1(::VROSC::Error error);
     // System.Void <LoadLocalData>b__4()
-    // Offset: 0x141075C
+    // Offset: 0xE8280C
     void $LoadLocalData$b__4();
     // System.Void <LoadLocalData>b__5(VROSC.Error error2)
-    // Offset: 0x141078C
+    // Offset: 0xE8283C
     void $LoadLocalData$b__5(::VROSC::Error error2);
     // public System.Void .ctor()
-    // Offset: 0x14103C8
+    // Offset: 0xE82478
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

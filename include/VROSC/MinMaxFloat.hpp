@@ -26,15 +26,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MinMaxFloat : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _min
     // Size: 0x4
     // Offset: 0x10
@@ -49,39 +41,39 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _min
-    float& dyn__min();
+    [[deprecated]] float& dyn__min();
     // Get instance field reference: private System.Single _max
-    float& dyn__max();
+    [[deprecated]] float& dyn__max();
     // public System.Single get_Min()
-    // Offset: 0x8B4E70
+    // Offset: 0xAC8A00
     float get_Min();
     // public System.Single get_Max()
-    // Offset: 0x8B4E78
+    // Offset: 0xAC8A08
     float get_Max();
     // public System.Single get_Range()
-    // Offset: 0x8B4E80
+    // Offset: 0xAC8A10
     float get_Range();
     // public System.Void .ctor(System.Single min, System.Single max)
-    // Offset: 0x8A7AF8
+    // Offset: 0xAC41B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MinMaxFloat* New_ctor(float min, float max) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MinMaxFloat::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MinMaxFloat*, creationType>(min, max)));
     }
     // public System.Single Random()
-    // Offset: 0x8B4E8C
+    // Offset: 0xAC8A1C
     float Random();
     // public System.Single Lerp(System.Single amount, System.Boolean clamp)
-    // Offset: 0x8AD158
+    // Offset: 0xAC8A28
     float Lerp(float amount, bool clamp);
     // public System.Single InverseLerp(System.Single amount, System.Boolean clamp)
-    // Offset: 0x8ACF54
+    // Offset: 0xAC8A44
     float InverseLerp(float amount, bool clamp);
     // public System.Single Clamp(System.Single value)
-    // Offset: 0x8AC1FC
+    // Offset: 0xAC8A8C
     float Clamp(float value);
     // public System.Void Invert()
-    // Offset: 0x8B4E98
+    // Offset: 0xAC8A98
     void Invert();
   }; // VROSC.MinMaxFloat
   #pragma pack(pop)

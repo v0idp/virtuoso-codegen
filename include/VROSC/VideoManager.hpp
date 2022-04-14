@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class VideoManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.VideoUI _videoUI
     // Size: 0x8
     // Offset: 0x18
@@ -55,18 +47,18 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.VideoUI _videoUI
-    ::VROSC::VideoUI*& dyn__videoUI();
+    [[deprecated]] ::VROSC::VideoUI*& dyn__videoUI();
     // protected System.Void Start()
-    // Offset: 0x13AE708
+    // Offset: 0x1922650
     void Start();
     // public System.Void OpenUI(System.String videoPath, System.String title)
-    // Offset: 0x13AEAC8
+    // Offset: 0x1922A14
     void OpenUI(::StringW videoPath, ::StringW title);
     // public System.Void CloseUI()
-    // Offset: 0x13AECE8
+    // Offset: 0x1922C34
     void CloseUI();
     // public System.Void .ctor()
-    // Offset: 0x13AED8C
+    // Offset: 0x1922CD8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

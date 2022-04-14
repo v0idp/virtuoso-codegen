@@ -50,15 +50,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DashboardTutorialHelper : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject _interactablesParent
     // Size: 0x8
     // Offset: 0x18
@@ -123,81 +115,81 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _interactablesParent
-    ::UnityEngine::GameObject*& dyn__interactablesParent();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__interactablesParent();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _boardButtonBlink
-    ::VROSC::TutorialBlinkingUIElement*& dyn__boardButtonBlink();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__boardButtonBlink();
     // Get instance field reference: private VROSC.Interactable _boardButtonInteractable
-    ::VROSC::Interactable*& dyn__boardButtonInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__boardButtonInteractable();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _empadsButtonBlink
-    ::VROSC::TutorialBlinkingUIElement*& dyn__empadsButtonBlink();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__empadsButtonBlink();
     // Get instance field reference: private VROSC.Interactable _empadsButtonInteractable
-    ::VROSC::Interactable*& dyn__empadsButtonInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__empadsButtonInteractable();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _looperButtonBlink
-    ::VROSC::TutorialBlinkingUIElement*& dyn__looperButtonBlink();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__looperButtonBlink();
     // Get instance field reference: private VROSC.Interactable _looperButtonInteractable
-    ::VROSC::Interactable*& dyn__looperButtonInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__looperButtonInteractable();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _libraryButtonBlink
-    ::VROSC::TutorialBlinkingUIElement*& dyn__libraryButtonBlink();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__libraryButtonBlink();
     // Get instance field reference: private VROSC.Interactable _libraryButtonInteractable
-    ::VROSC::Interactable*& dyn__libraryButtonInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__libraryButtonInteractable();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Interactable> _disabledInteractables
-    ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
     // protected System.Void Start()
-    // Offset: 0x13085C4
+    // Offset: 0x8E1728
     void Start();
     // private System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x1308740
+    // Offset: 0x8E18A4
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
     // private System.Void BoardButtonClicked(System.Boolean clicked)
-    // Offset: 0x1309168
+    // Offset: 0x8E22CC
     void BoardButtonClicked(bool clicked);
     // private System.Void DisableAllInteractables()
-    // Offset: 0x13089CC
+    // Offset: 0x8E1B30
     void DisableAllInteractables();
     // private System.Void DisableBoardButton()
-    // Offset: 0x1308D5C
+    // Offset: 0x8E1EC0
     void DisableBoardButton();
     // private System.Void EnableBoardButton()
-    // Offset: 0x1308AE0
+    // Offset: 0x8E1C44
     void EnableBoardButton();
     // private System.Void EnableEmpadsButton()
-    // Offset: 0x1308DD0
+    // Offset: 0x8E1F34
     void EnableEmpadsButton();
     // private System.Void StartBoardButtonBlinking()
-    // Offset: 0x1308B54
+    // Offset: 0x8E1CB8
     void StartBoardButtonBlinking();
     // private System.Void EnableLooperButton()
-    // Offset: 0x1308E44
+    // Offset: 0x8E1FA8
     void EnableLooperButton();
     // private System.Void EnableLibraryButton()
-    // Offset: 0x1308FE8
+    // Offset: 0x8E214C
     void EnableLibraryButton();
     // private System.Void StartLibraryButtonBlinking()
-    // Offset: 0x13090D8
+    // Offset: 0x8E223C
     void StartLibraryButtonBlinking();
     // private System.Void LooperButtonPressed(System.Boolean enabled)
-    // Offset: 0x1309298
+    // Offset: 0x8E23FC
     void LooperButtonPressed(bool enabled);
     // private System.Void StartLooperButtonBlinking()
-    // Offset: 0x1308F58
+    // Offset: 0x8E20BC
     void StartLooperButtonBlinking();
     // private System.Void StopBoardButtonBlinking()
-    // Offset: 0x1308BE4
+    // Offset: 0x8E1D48
     void StopBoardButtonBlinking();
     // private System.Void EmpadsButtonPressed(System.Boolean enabled)
-    // Offset: 0x13093F0
+    // Offset: 0x8E2554
     void EmpadsButtonPressed(bool enabled);
     // private System.Void LibraryButtonPressed(System.Boolean enabled)
-    // Offset: 0x1309548
+    // Offset: 0x8E26AC
     void LibraryButtonPressed(bool enabled);
     // private System.Void BoardOpenedAgain(System.Boolean enabled)
-    // Offset: 0x13096A0
+    // Offset: 0x8E2804
     void BoardOpenedAgain(bool enabled);
     // private System.Void ResetAll()
-    // Offset: 0x1308C30
+    // Offset: 0x8E1D94
     void ResetAll();
     // public System.Void .ctor()
-    // Offset: 0x1309794
+    // Offset: 0x8E2944
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

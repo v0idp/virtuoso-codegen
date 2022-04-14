@@ -90,20 +90,12 @@ namespace VROSC {
       // Set static field: static public VROSC.GlobalColorSetParticleStartColor/VROSC.Channel Channel4
       static void _set_Channel4(::VROSC::GlobalColorSetParticleStartColor::Channel value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.GlobalColorSetParticleStartColor/VROSC.Channel
     #pragma pack(pop)
     static check_size<sizeof(GlobalColorSetParticleStartColor::Channel), 0 + sizeof(int)> __VROSC_GlobalColorSetParticleStartColor_ChannelSizeCheck;
     static_assert(sizeof(GlobalColorSetParticleStartColor::Channel) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.GlobalColorSetParticleStartColor/VROSC.Channel _channel
     // Size: 0x4
     // Offset: 0x18
@@ -122,20 +114,20 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.GlobalColorSetParticleStartColor/VROSC.Channel _channel
-    ::VROSC::GlobalColorSetParticleStartColor::Channel& dyn__channel();
+    [[deprecated]] ::VROSC::GlobalColorSetParticleStartColor::Channel& dyn__channel();
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
     // private System.Void OnEnable()
-    // Offset: 0x8919F0
+    // Offset: 0x19A3E70
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x891C54
+    // Offset: 0x19A40D4
     void OnDisable();
     // private System.Void ColorChanged(UnityEngine.Color color, System.Single multiplier)
-    // Offset: 0x891EB8
+    // Offset: 0x19A4338
     void ColorChanged(::UnityEngine::Color color, float multiplier);
     // public System.Void .ctor()
-    // Offset: 0x891FB0
+    // Offset: 0x19A4430
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

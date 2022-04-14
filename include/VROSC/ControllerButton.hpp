@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ControllerButton : public ::VROSC::ControllerComponent {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 _pressedPostionOffset
     // Size: 0xC
     // Offset: 0x48
@@ -90,27 +82,27 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Quaternion) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _pressedPostionOffset
-    ::UnityEngine::Vector3& dyn__pressedPostionOffset();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__pressedPostionOffset();
     // Get instance field reference: private UnityEngine.Vector3 _pressedRotaionOffset
-    ::UnityEngine::Vector3& dyn__pressedRotaionOffset();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__pressedRotaionOffset();
     // Get instance field reference: private VROSC.InputDevice _inputDevice
-    ::VROSC::InputDevice*& dyn__inputDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__inputDevice();
     // Get instance field reference: private System.Boolean _trigger
-    bool& dyn__trigger();
+    [[deprecated]] bool& dyn__trigger();
     // Get instance field reference: private System.Boolean _grip
-    bool& dyn__grip();
+    [[deprecated]] bool& dyn__grip();
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private UnityEngine.Quaternion _startRotation
-    ::UnityEngine::Quaternion& dyn__startRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn__startRotation();
     // private System.Void Awake()
-    // Offset: 0x1338560
+    // Offset: 0x94D808
     void Awake();
     // private System.Void LateUpdate()
-    // Offset: 0x13385BC
+    // Offset: 0x94D864
     void LateUpdate();
     // public System.Void .ctor()
-    // Offset: 0x1338774
+    // Offset: 0x94DA1C
     // Implemented from: VROSC.ControllerComponent
     // Base method: System.Void ControllerComponent::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

@@ -41,42 +41,42 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A4A44
+    // [DescriptionAttribute] Offset: 0x6B8BF8
     // static field const value: static public Oculus.Platform.TimeWindow Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.TimeWindow Unknown
     static ::Oculus::Platform::TimeWindow _get_Unknown();
     // Set static field: static public Oculus.Platform.TimeWindow Unknown
     static void _set_Unknown(::Oculus::Platform::TimeWindow value);
-    // [DescriptionAttribute] Offset: 0x5A4A7C
+    // [DescriptionAttribute] Offset: 0x6B8C30
     // static field const value: static public Oculus.Platform.TimeWindow OneHour
     static constexpr const int OneHour = 1;
     // Get static field: static public Oculus.Platform.TimeWindow OneHour
     static ::Oculus::Platform::TimeWindow _get_OneHour();
     // Set static field: static public Oculus.Platform.TimeWindow OneHour
     static void _set_OneHour(::Oculus::Platform::TimeWindow value);
-    // [DescriptionAttribute] Offset: 0x5A4AB4
+    // [DescriptionAttribute] Offset: 0x6B8C68
     // static field const value: static public Oculus.Platform.TimeWindow OneDay
     static constexpr const int OneDay = 2;
     // Get static field: static public Oculus.Platform.TimeWindow OneDay
     static ::Oculus::Platform::TimeWindow _get_OneDay();
     // Set static field: static public Oculus.Platform.TimeWindow OneDay
     static void _set_OneDay(::Oculus::Platform::TimeWindow value);
-    // [DescriptionAttribute] Offset: 0x5A4AEC
+    // [DescriptionAttribute] Offset: 0x6B8CA0
     // static field const value: static public Oculus.Platform.TimeWindow OneWeek
     static constexpr const int OneWeek = 3;
     // Get static field: static public Oculus.Platform.TimeWindow OneWeek
     static ::Oculus::Platform::TimeWindow _get_OneWeek();
     // Set static field: static public Oculus.Platform.TimeWindow OneWeek
     static void _set_OneWeek(::Oculus::Platform::TimeWindow value);
-    // [DescriptionAttribute] Offset: 0x5A4B24
+    // [DescriptionAttribute] Offset: 0x6B8CD8
     // static field const value: static public Oculus.Platform.TimeWindow ThirtyDays
     static constexpr const int ThirtyDays = 4;
     // Get static field: static public Oculus.Platform.TimeWindow ThirtyDays
     static ::Oculus::Platform::TimeWindow _get_ThirtyDays();
     // Set static field: static public Oculus.Platform.TimeWindow ThirtyDays
     static void _set_ThirtyDays(::Oculus::Platform::TimeWindow value);
-    // [DescriptionAttribute] Offset: 0x5A4B5C
+    // [DescriptionAttribute] Offset: 0x6B8D10
     // static field const value: static public Oculus.Platform.TimeWindow NinetyDays
     static constexpr const int NinetyDays = 5;
     // Get static field: static public Oculus.Platform.TimeWindow NinetyDays
@@ -84,7 +84,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.TimeWindow NinetyDays
     static void _set_NinetyDays(::Oculus::Platform::TimeWindow value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.TimeWindow
   #pragma pack(pop)
   static check_size<sizeof(TimeWindow), 0 + sizeof(int)> __Oculus_Platform_TimeWindowSizeCheck;

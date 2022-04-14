@@ -26,12 +26,12 @@ namespace System::IO::Compression {
   class DeflateStreamNative::SafeDeflateStreamHandle : public ::System::Runtime::InteropServices::SafeHandle {
     public:
     // public override System.Boolean get_IsInvalid()
-    // Offset: 0x8DAAA4
+    // Offset: 0x9F581C
     // Implemented from: System.Runtime.InteropServices.SafeHandle
     // Base method: System.Boolean SafeHandle::get_IsInvalid()
     bool get_IsInvalid();
     // private System.Void .ctor()
-    // Offset: 0x8DAAEC
+    // Offset: 0x9F5864
     // Implemented from: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
     // Base method: System.Void CriticalFinalizerObject::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -41,7 +41,7 @@ namespace System::IO::Compression {
       return THROW_UNLESS((::il2cpp_utils::New<DeflateStreamNative::SafeDeflateStreamHandle*, creationType>()));
     }
     // protected override System.Boolean ReleaseHandle()
-    // Offset: 0x8DAB38
+    // Offset: 0x9F58B0
     // Implemented from: System.Runtime.InteropServices.SafeHandle
     // Base method: System.Boolean SafeHandle::ReleaseHandle()
     bool ReleaseHandle();

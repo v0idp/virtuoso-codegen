@@ -51,15 +51,7 @@ namespace System::Net::Sockets {
   // [TokenAttribute] Offset: FFFFFFFF
   class TcpListener : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.IPEndPoint m_ServerSocketEP
     // Size: 0x8
     // Offset: 0x10
@@ -86,37 +78,37 @@ namespace System::Net::Sockets {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Net.IPEndPoint m_ServerSocketEP
-    ::System::Net::IPEndPoint*& dyn_m_ServerSocketEP();
+    [[deprecated]] ::System::Net::IPEndPoint*& dyn_m_ServerSocketEP();
     // Get instance field reference: private System.Net.Sockets.Socket m_ServerSocket
-    ::System::Net::Sockets::Socket*& dyn_m_ServerSocket();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_m_ServerSocket();
     // Get instance field reference: private System.Boolean m_Active
-    bool& dyn_m_Active();
+    [[deprecated]] bool& dyn_m_Active();
     // Get instance field reference: private System.Boolean m_ExclusiveAddressUse
-    bool& dyn_m_ExclusiveAddressUse();
+    [[deprecated]] bool& dyn_m_ExclusiveAddressUse();
     // public System.Net.EndPoint get_LocalEndpoint()
-    // Offset: 0x9535F4
+    // Offset: 0xDA8514
     ::System::Net::EndPoint* get_LocalEndpoint();
     // public System.Void .ctor(System.Net.IPAddress localaddr, System.Int32 port)
-    // Offset: 0x953458
+    // Offset: 0xDA8378
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TcpListener* New_ctor(::System::Net::IPAddress* localaddr, int port) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::TcpListener::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TcpListener*, creationType>(localaddr, port)));
     }
     // public System.Void Start()
-    // Offset: 0x95361C
+    // Offset: 0xDA853C
     void Start();
     // public System.Void Start(System.Int32 backlog)
-    // Offset: 0x953624
+    // Offset: 0xDA8544
     void Start(int backlog);
     // public System.Void Stop()
-    // Offset: 0x9537B0
+    // Offset: 0xDA86D0
     void Stop();
     // public System.IAsyncResult BeginAcceptTcpClient(System.AsyncCallback callback, System.Object state)
-    // Offset: 0x953884
+    // Offset: 0xDA87A4
     ::System::IAsyncResult* BeginAcceptTcpClient(::System::AsyncCallback* callback, ::Il2CppObject* state);
     // public System.Net.Sockets.TcpClient EndAcceptTcpClient(System.IAsyncResult asyncResult)
-    // Offset: 0x953934
+    // Offset: 0xDA8854
     ::System::Net::Sockets::TcpClient* EndAcceptTcpClient(::System::IAsyncResult* asyncResult);
   }; // System.Net.Sockets.TcpListener
   #pragma pack(pop)

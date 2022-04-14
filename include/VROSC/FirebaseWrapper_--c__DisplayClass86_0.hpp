@@ -7,11 +7,12 @@
 #include "beatsaber-hook/shared/utils/byref.hpp"
 // Including type: VROSC.FirebaseWrapper
 #include "VROSC/FirebaseWrapper.hpp"
+// Including type: VROSC.Error
+#include "VROSC/Error.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-properties.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
 #include "beatsaber-hook/shared/utils/utils.h"
-#include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
 // Forward declaring namespace: System
@@ -19,6 +20,13 @@ namespace System {
   // Forward declaring type: Action`1<T>
   template<typename T>
   class Action_1;
+  // Forward declaring type: Action
+  class Action;
+}
+// Forward declaring namespace: System::Threading::Tasks
+namespace System::Threading::Tasks {
+  // Forward declaring type: Task
+  class Task;
 }
 // Completed forward declares
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
@@ -33,40 +41,29 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class FirebaseWrapper::$$c__DisplayClass86_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // public System.Action`1<System.String> onSuccess
+    // public System.Action`1<VROSC.Error> onFailure
     // Size: 0x8
     // Offset: 0x10
-    ::System::Action_1<::StringW>* onSuccess;
+    ::System::Action_1<::VROSC::Error>* onFailure;
     // Field size check
-    static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
-    // public System.String docId
+    static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
+    // public System.Action onSuccess
     // Size: 0x8
     // Offset: 0x18
-    ::StringW docId;
+    ::System::Action* onSuccess;
     // Field size check
-    static_assert(sizeof(::StringW) == 0x8);
+    static_assert(sizeof(::System::Action*) == 0x8);
     public:
-    // Get instance field reference: public System.Action`1<System.String> onSuccess
-    ::System::Action_1<::StringW>*& dyn_onSuccess();
-    // Get instance field reference: public System.String docId
-    ::StringW& dyn_docId();
-    // System.Void <AddSessionUpVote>b__0(System.String id)
-    // Offset: 0x13CC344
-    void $AddSessionUpVote$b__0(::StringW id);
-    // System.Void <AddSessionUpVote>b__1()
-    // Offset: 0x13CC34C
-    void $AddSessionUpVote$b__1();
+    // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    // Get instance field reference: public System.Action onSuccess
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
+    // System.Void <DeleteFirestoreDocument>b__0(System.Threading.Tasks.Task task)
+    // Offset: 0x1955010
+    void $DeleteFirestoreDocument$b__0(::System::Threading::Tasks::Task* task);
     // public System.Void .ctor()
-    // Offset: 0x13CC33C
+    // Offset: 0x1955008
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -76,25 +73,17 @@ namespace VROSC {
     }
   }; // VROSC.FirebaseWrapper/VROSC.<>c__DisplayClass86_0
   #pragma pack(pop)
-  static check_size<sizeof(FirebaseWrapper::$$c__DisplayClass86_0), 24 + sizeof(::StringW)> __VROSC_FirebaseWrapper_$$c__DisplayClass86_0SizeCheck;
+  static check_size<sizeof(FirebaseWrapper::$$c__DisplayClass86_0), 24 + sizeof(::System::Action*)> __VROSC_FirebaseWrapper_$$c__DisplayClass86_0SizeCheck;
   static_assert(sizeof(FirebaseWrapper::$$c__DisplayClass86_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass86_0::$AddSessionUpVote$b__0
-// Il2CppName: <AddSessionUpVote>b__0
+// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass86_0::$DeleteFirestoreDocument$b__0
+// Il2CppName: <DeleteFirestoreDocument>b__0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::FirebaseWrapper::$$c__DisplayClass86_0::*)(::StringW)>(&VROSC::FirebaseWrapper::$$c__DisplayClass86_0::$AddSessionUpVote$b__0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::FirebaseWrapper::$$c__DisplayClass86_0::*)(::System::Threading::Tasks::Task*)>(&VROSC::FirebaseWrapper::$$c__DisplayClass86_0::$DeleteFirestoreDocument$b__0)> {
   static const MethodInfo* get() {
-    static auto* id = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper::$$c__DisplayClass86_0*), "<AddSessionUpVote>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{id});
-  }
-};
-// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass86_0::$AddSessionUpVote$b__1
-// Il2CppName: <AddSessionUpVote>b__1
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::FirebaseWrapper::$$c__DisplayClass86_0::*)()>(&VROSC::FirebaseWrapper::$$c__DisplayClass86_0::$AddSessionUpVote$b__1)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper::$$c__DisplayClass86_0*), "<AddSessionUpVote>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+    static auto* task = &::il2cpp_utils::GetClassFromName("System.Threading.Tasks", "Task")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper::$$c__DisplayClass86_0*), "<DeleteFirestoreDocument>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{task});
   }
 };
 // Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass86_0::New_ctor

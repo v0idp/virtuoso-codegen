@@ -113,20 +113,12 @@ namespace VROSC {
       // Set static field: static public VROSC.VRPlayer/VROSC.ControllerType ValveIndex
       static void _set_ValveIndex(::VROSC::VRPlayer::ControllerType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.VRPlayer/VROSC.ControllerType
     #pragma pack(pop)
     static check_size<sizeof(VRPlayer::ControllerType), 0 + sizeof(int)> __VROSC_VRPlayer_ControllerTypeSizeCheck;
     static_assert(sizeof(VRPlayer::ControllerType) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Camera _camera
     // Size: 0x8
     // Offset: 0x18
@@ -241,97 +233,97 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Camera _camera
-    ::UnityEngine::Camera*& dyn__camera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn__camera();
     // Get instance field reference: private VROSC.ScreenFade _screenFade
-    ::VROSC::ScreenFade*& dyn__screenFade();
+    [[deprecated]] ::VROSC::ScreenFade*& dyn__screenFade();
     // Get instance field reference: private System.Boolean _isDebugPlayer
-    bool& dyn__isDebugPlayer();
+    [[deprecated]] bool& dyn__isDebugPlayer();
     // Get instance field reference: private VROSC.InputDevice _right
-    ::VROSC::InputDevice*& dyn__right();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__right();
     // Get instance field reference: private VROSC.InputDevice _left
-    ::VROSC::InputDevice*& dyn__left();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__left();
     // Get instance field reference: private UnityEngine.Transform _keyboardAnchor
-    ::UnityEngine::Transform*& dyn__keyboardAnchor();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__keyboardAnchor();
     // Get instance field reference: private VROSC.HandPlacedDashboardHelper _handPlacedDashboardHelper
-    ::VROSC::HandPlacedDashboardHelper*& dyn__handPlacedDashboardHelper();
+    [[deprecated]] ::VROSC::HandPlacedDashboardHelper*& dyn__handPlacedDashboardHelper();
     // Get instance field reference: private VROSC.HighlightControllerComponentsManager _highlighting
-    ::VROSC::HighlightControllerComponentsManager*& dyn__highlighting();
+    [[deprecated]] ::VROSC::HighlightControllerComponentsManager*& dyn__highlighting();
     // Get instance field reference: private VROSC.TutorialInputDeviceManager _tutorialInputDeviceManager
-    ::VROSC::TutorialInputDeviceManager*& dyn__tutorialInputDeviceManager();
+    [[deprecated]] ::VROSC::TutorialInputDeviceManager*& dyn__tutorialInputDeviceManager();
     // Get instance field reference: private UnityEngine.Transform _leftControllerParent
-    ::UnityEngine::Transform*& dyn__leftControllerParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__leftControllerParent();
     // Get instance field reference: private UnityEngine.Transform _rightControllerParent
-    ::UnityEngine::Transform*& dyn__rightControllerParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__rightControllerParent();
     // Get instance field reference: private VROSC.InputDevice _leftControllerPrefab
-    ::VROSC::InputDevice*& dyn__leftControllerPrefab();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__leftControllerPrefab();
     // Get instance field reference: private VROSC.InputDevice _rightControllerPrefab
-    ::VROSC::InputDevice*& dyn__rightControllerPrefab();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__rightControllerPrefab();
     // Get instance field reference: private VROSC.UIHelpers _leftUIHelpers
-    ::VROSC::UIHelpers*& dyn__leftUIHelpers();
+    [[deprecated]] ::VROSC::UIHelpers*& dyn__leftUIHelpers();
     // Get instance field reference: private VROSC.UIHelpers _rightUIHelpers
-    ::VROSC::UIHelpers*& dyn__rightUIHelpers();
+    [[deprecated]] ::VROSC::UIHelpers*& dyn__rightUIHelpers();
     // Get instance field reference: private VROSC.VRPlayer/VROSC.OverrideControllerPrefab[] _overrideControllerPrefabs
-    ::ArrayW<::VROSC::VRPlayer::OverrideControllerPrefab*>& dyn__overrideControllerPrefabs();
+    [[deprecated]] ::ArrayW<::VROSC::VRPlayer::OverrideControllerPrefab*>& dyn__overrideControllerPrefabs();
     // Get instance field reference: private System.String _connectedControllerName
-    ::StringW& dyn__connectedControllerName();
+    [[deprecated]] ::StringW& dyn__connectedControllerName();
     // Get instance field reference: private VROSC.VRPlayer/VROSC.ControllerType <Controllers>k__BackingField
-    ::VROSC::VRPlayer::ControllerType& dyn_$Controllers$k__BackingField();
+    [[deprecated]] ::VROSC::VRPlayer::ControllerType& dyn_$Controllers$k__BackingField();
     // public VROSC.InputDevice get_Right()
-    // Offset: 0x13AD3C0
+    // Offset: 0x1921334
     ::VROSC::InputDevice* get_Right();
     // public VROSC.InputDevice get_Left()
-    // Offset: 0x13AD3C8
+    // Offset: 0x192133C
     ::VROSC::InputDevice* get_Left();
     // public UnityEngine.Camera get_Camera()
-    // Offset: 0x13AD3D0
+    // Offset: 0x1921344
     ::UnityEngine::Camera* get_Camera();
     // public VROSC.ScreenFade get_ScreenFade()
-    // Offset: 0x13AD3D8
+    // Offset: 0x192134C
     ::VROSC::ScreenFade* get_ScreenFade();
     // public VROSC.HighlightControllerComponentsManager get_Highlighting()
-    // Offset: 0x13AD3E0
+    // Offset: 0x1921354
     ::VROSC::HighlightControllerComponentsManager* get_Highlighting();
     // public VROSC.TutorialInputDeviceManager get_TutorialInputDevices()
-    // Offset: 0x13AD3E8
+    // Offset: 0x192135C
     ::VROSC::TutorialInputDeviceManager* get_TutorialInputDevices();
     // public VROSC.HandPlacedDashboardHelper get_HandPlacedDashboardHelper()
-    // Offset: 0x13AD3F0
+    // Offset: 0x1921364
     ::VROSC::HandPlacedDashboardHelper* get_HandPlacedDashboardHelper();
     // public System.Boolean get_IsDebugPlayer()
-    // Offset: 0x13AD3F8
+    // Offset: 0x192136C
     bool get_IsDebugPlayer();
     // public UnityEngine.Transform get_KeyboardAnchor()
-    // Offset: 0x13AD400
+    // Offset: 0x1921374
     ::UnityEngine::Transform* get_KeyboardAnchor();
     // public System.Collections.Generic.List`1<VROSC.InputDevice> get_InputDevices()
-    // Offset: 0x13AD408
+    // Offset: 0x192137C
     ::System::Collections::Generic::List_1<::VROSC::InputDevice*>* get_InputDevices();
     // public VROSC.VRPlayer/VROSC.ControllerType get_Controllers()
-    // Offset: 0x13AD4BC
+    // Offset: 0x1921430
     ::VROSC::VRPlayer::ControllerType get_Controllers();
     // private System.Void set_Controllers(VROSC.VRPlayer/VROSC.ControllerType value)
-    // Offset: 0x13AD4C4
+    // Offset: 0x1921438
     void set_Controllers(::VROSC::VRPlayer::ControllerType value);
     // protected System.Void Awake()
-    // Offset: 0x13AD4CC
+    // Offset: 0x1921440
     void Awake();
     // public System.Void Setup(VROSC.InputSettings inputSettings)
-    // Offset: 0x13AD5CC
+    // Offset: 0x1921540
     void Setup(::VROSC::InputSettings* inputSettings);
     // public System.Void UpdateInput()
-    // Offset: 0x13AD780
+    // Offset: 0x19216F4
     void UpdateInput();
     // public VROSC.InputDevice GetControllerByHand(System.Boolean right)
-    // Offset: 0x13AD7CC
+    // Offset: 0x1921740
     ::VROSC::InputDevice* GetControllerByHand(bool right);
     // public UnityEngine.Vector3 GetMouthPosition()
-    // Offset: 0x13AD7E4
+    // Offset: 0x1921758
     ::UnityEngine::Vector3 GetMouthPosition();
     // public System.Void ShowControllers(System.Boolean show)
-    // Offset: 0x13AD878
+    // Offset: 0x19217EC
     void ShowControllers(bool show);
     // public System.Void .ctor()
-    // Offset: 0x13AD904
+    // Offset: 0x192184C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

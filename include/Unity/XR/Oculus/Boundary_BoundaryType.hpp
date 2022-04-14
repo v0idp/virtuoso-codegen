@@ -51,7 +51,7 @@ namespace Unity::XR::Oculus {
     // Set static field: static public Unity.XR.Oculus.Boundary/Unity.XR.Oculus.BoundaryType PlayArea
     static void _set_PlayArea(::Unity::XR::Oculus::Boundary::BoundaryType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Unity.XR.Oculus.Boundary/Unity.XR.Oculus.BoundaryType
   #pragma pack(pop)
   static check_size<sizeof(Boundary::BoundaryType), 0 + sizeof(int)> __Unity_XR_Oculus_Boundary_BoundaryTypeSizeCheck;

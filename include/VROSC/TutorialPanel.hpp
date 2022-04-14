@@ -7,8 +7,8 @@
 #include "beatsaber-hook/shared/utils/byref.hpp"
 // Including type: UnityEngine.MonoBehaviour
 #include "UnityEngine/MonoBehaviour.hpp"
-// Including type: UnityEngine.Color
-#include "UnityEngine/Color.hpp"
+// Including type: UnityEngine.Vector2
+#include "UnityEngine/Vector2.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-properties.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
@@ -24,6 +24,8 @@ namespace VROSC {
   class TutorialBlinkingUIElement;
   // Forward declaring type: Grabable
   class Grabable;
+  // Forward declaring type: TutorialCondition
+  class TutorialCondition;
   // Forward declaring type: TutorialStep
   class TutorialStep;
   // Forward declaring type: TutorialEvent
@@ -33,6 +35,10 @@ namespace VROSC {
 namespace UnityEngine {
   // Forward declaring type: GameObject
   class GameObject;
+  // Forward declaring type: Transform
+  class Transform;
+  // Forward declaring type: RectTransform
+  class RectTransform;
 }
 // Forward declaring namespace: TMPro
 namespace TMPro {
@@ -56,15 +62,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialPanel : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _closeButton
     // Size: 0x8
     // Offset: 0x18
@@ -101,10 +99,10 @@ namespace VROSC {
     ::VROSC::UIButton* continueButton;
     // Field size check
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
-    // private TMPro.TextMeshPro _instructionText
+    // private TMPro.TextMeshPro _tipText
     // Size: 0x8
     // Offset: 0x48
-    ::TMPro::TextMeshPro* instructionText;
+    ::TMPro::TextMeshPro* tipText;
     // Field size check
     static_assert(sizeof(::TMPro::TextMeshPro*) == 0x8);
     // private VROSC.TutorialBlinkingUIElement _blinkContinue
@@ -113,125 +111,152 @@ namespace VROSC {
     ::VROSC::TutorialBlinkingUIElement* blinkContinue;
     // Field size check
     static_assert(sizeof(::VROSC::TutorialBlinkingUIElement*) == 0x8);
-    // private UnityEngine.Color _conditionTextIncompleteColor
-    // Size: 0x10
-    // Offset: 0x58
-    ::UnityEngine::Color conditionTextIncompleteColor;
-    // Field size check
-    static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // private UnityEngine.Color _conditionTextCompleteColor
-    // Size: 0x10
-    // Offset: 0x68
-    ::UnityEngine::Color conditionTextCompleteColor;
-    // Field size check
-    static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // private UnityEngine.GameObject _incompleteIcon
-    // Size: 0x8
-    // Offset: 0x78
-    ::UnityEngine::GameObject* incompleteIcon;
-    // Field size check
-    static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
-    // private UnityEngine.GameObject _completeIcon
-    // Size: 0x8
-    // Offset: 0x80
-    ::UnityEngine::GameObject* completeIcon;
-    // Field size check
-    static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     // private VROSC.Grabable[] _panelGrabables
     // Size: 0x8
-    // Offset: 0x88
+    // Offset: 0x58
     ::ArrayW<::VROSC::Grabable*> panelGrabables;
     // Field size check
     static_assert(sizeof(::ArrayW<::VROSC::Grabable*>) == 0x8);
     // private VROSC.TutorialBlinkingUIElement[] _panelBlinkers
     // Size: 0x8
-    // Offset: 0x90
+    // Offset: 0x60
     ::ArrayW<::VROSC::TutorialBlinkingUIElement*> panelBlinkers;
     // Field size check
     static_assert(sizeof(::ArrayW<::VROSC::TutorialBlinkingUIElement*>) == 0x8);
+    // private VROSC.TutorialCondition _conditionPrefab
+    // Size: 0x8
+    // Offset: 0x68
+    ::VROSC::TutorialCondition* conditionPrefab;
+    // Field size check
+    static_assert(sizeof(::VROSC::TutorialCondition*) == 0x8);
+    // private UnityEngine.Transform _conditionsParent
+    // Size: 0x8
+    // Offset: 0x70
+    ::UnityEngine::Transform* conditionsParent;
+    // Field size check
+    static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
+    // private UnityEngine.RectTransform _mainTransform
+    // Size: 0x8
+    // Offset: 0x78
+    ::UnityEngine::RectTransform* mainTransform;
+    // Field size check
+    static_assert(sizeof(::UnityEngine::RectTransform*) == 0x8);
+    // private System.Single _conditionsStartY
+    // Size: 0x4
+    // Offset: 0x80
+    float conditionsStartY;
+    // Field size check
+    static_assert(sizeof(float) == 0x4);
+    // private System.Single _conditionsSizeY
+    // Size: 0x4
+    // Offset: 0x84
+    float conditionsSizeY;
+    // Field size check
+    static_assert(sizeof(float) == 0x4);
     // private VROSC.TutorialStep _currentTutorialStep
     // Size: 0x8
-    // Offset: 0x98
+    // Offset: 0x88
     ::VROSC::TutorialStep* currentTutorialStep;
     // Field size check
     static_assert(sizeof(::VROSC::TutorialStep*) == 0x8);
+    // private VROSC.TutorialCondition[] _tutorialConditions
+    // Size: 0x8
+    // Offset: 0x90
+    ::ArrayW<::VROSC::TutorialCondition*> tutorialConditions;
+    // Field size check
+    static_assert(sizeof(::ArrayW<::VROSC::TutorialCondition*>) == 0x8);
+    // private UnityEngine.Vector2 _mainSize
+    // Size: 0x8
+    // Offset: 0x98
+    ::UnityEngine::Vector2 mainSize;
+    // Field size check
+    static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.UIButton _closeOKButton
-    ::VROSC::UIButton*& dyn__closeOKButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeOKButton();
     // Get instance field reference: private VROSC.UIButton _closeCancelButton
-    ::VROSC::UIButton*& dyn__closeCancelButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeCancelButton();
     // Get instance field reference: private UnityEngine.GameObject _closeWarningPanel
-    ::UnityEngine::GameObject*& dyn__closeWarningPanel();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__closeWarningPanel();
     // Get instance field reference: private VROSC.UIButton _replayButton
-    ::VROSC::UIButton*& dyn__replayButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__replayButton();
     // Get instance field reference: private VROSC.UIButton _continueButton
-    ::VROSC::UIButton*& dyn__continueButton();
-    // Get instance field reference: private TMPro.TextMeshPro _instructionText
-    ::TMPro::TextMeshPro*& dyn__instructionText();
+    [[deprecated]] ::VROSC::UIButton*& dyn__continueButton();
+    // Get instance field reference: private TMPro.TextMeshPro _tipText
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__tipText();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _blinkContinue
-    ::VROSC::TutorialBlinkingUIElement*& dyn__blinkContinue();
-    // Get instance field reference: private UnityEngine.Color _conditionTextIncompleteColor
-    ::UnityEngine::Color& dyn__conditionTextIncompleteColor();
-    // Get instance field reference: private UnityEngine.Color _conditionTextCompleteColor
-    ::UnityEngine::Color& dyn__conditionTextCompleteColor();
-    // Get instance field reference: private UnityEngine.GameObject _incompleteIcon
-    ::UnityEngine::GameObject*& dyn__incompleteIcon();
-    // Get instance field reference: private UnityEngine.GameObject _completeIcon
-    ::UnityEngine::GameObject*& dyn__completeIcon();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__blinkContinue();
     // Get instance field reference: private VROSC.Grabable[] _panelGrabables
-    ::ArrayW<::VROSC::Grabable*>& dyn__panelGrabables();
+    [[deprecated]] ::ArrayW<::VROSC::Grabable*>& dyn__panelGrabables();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement[] _panelBlinkers
-    ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__panelBlinkers();
+    [[deprecated]] ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__panelBlinkers();
+    // Get instance field reference: private VROSC.TutorialCondition _conditionPrefab
+    [[deprecated]] ::VROSC::TutorialCondition*& dyn__conditionPrefab();
+    // Get instance field reference: private UnityEngine.Transform _conditionsParent
+    [[deprecated]] ::UnityEngine::Transform*& dyn__conditionsParent();
+    // Get instance field reference: private UnityEngine.RectTransform _mainTransform
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__mainTransform();
+    // Get instance field reference: private System.Single _conditionsStartY
+    [[deprecated]] float& dyn__conditionsStartY();
+    // Get instance field reference: private System.Single _conditionsSizeY
+    [[deprecated]] float& dyn__conditionsSizeY();
     // Get instance field reference: private VROSC.TutorialStep _currentTutorialStep
-    ::VROSC::TutorialStep*& dyn__currentTutorialStep();
+    [[deprecated]] ::VROSC::TutorialStep*& dyn__currentTutorialStep();
+    // Get instance field reference: private VROSC.TutorialCondition[] _tutorialConditions
+    [[deprecated]] ::ArrayW<::VROSC::TutorialCondition*>& dyn__tutorialConditions();
+    // Get instance field reference: private UnityEngine.Vector2 _mainSize
+    [[deprecated]] ::UnityEngine::Vector2& dyn__mainSize();
+    // private System.Void Awake()
+    // Offset: 0xA315C0
+    void Awake();
     // public System.Void StartTutorial()
-    // Offset: 0x14084C8
+    // Offset: 0xA305B8
     void StartTutorial();
     // public System.Void TutorialStopped()
-    // Offset: 0x1408940
+    // Offset: 0xA30A30
     void TutorialStopped();
     // private System.Void CloseButtonPressed()
-    // Offset: 0x1409200
+    // Offset: 0xA31628
     void CloseButtonPressed();
     // private System.Void CloseOKButtonPressed()
-    // Offset: 0x1409220
+    // Offset: 0xA31648
     void CloseOKButtonPressed();
     // private System.Void CloseCancelButtonPressed()
-    // Offset: 0x1409278
+    // Offset: 0xA316A0
     void CloseCancelButtonPressed();
     // private System.Void ReplayButtonPressed()
-    // Offset: 0x1409298
+    // Offset: 0xA316C0
     void ReplayButtonPressed();
     // private System.Void ContinueButtonPressed()
-    // Offset: 0x14092B8
+    // Offset: 0xA316E0
     void ContinueButtonPressed();
     // public System.Void ActivateTutorialStep(VROSC.TutorialStep tutorialStep)
-    // Offset: 0x1408DF4
+    // Offset: 0xA30F10
     void ActivateTutorialStep(::VROSC::TutorialStep* tutorialStep);
     // private System.Void TimelineReachedEnd()
-    // Offset: 0x1409310
+    // Offset: 0xA31738
     void TimelineReachedEnd();
     // private System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x14093E8
+    // Offset: 0xA31810
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
     // private System.Void TutorialPanelGrabbed(System.Boolean grabbed)
-    // Offset: 0x14096A8
+    // Offset: 0xA31B14
     void TutorialPanelGrabbed(bool grabbed);
     // private System.Void RevealInstruction()
-    // Offset: 0x140960C
+    // Offset: 0xA31A34
     void RevealInstruction();
     // private System.Void TutorialConditionsCompleted()
-    // Offset: 0x1409B48
+    // Offset: 0xA31DF8
     void TutorialConditionsCompleted();
-    // private System.Void DisplayInstructionText(System.Boolean conditionComplete)
-    // Offset: 0x1409898
-    void DisplayInstructionText(bool conditionComplete);
+    // private System.Void DisplayTipText()
+    // Offset: 0xA31D04
+    void DisplayTipText();
     // public System.Void .ctor()
-    // Offset: 0x1409CB0
+    // Offset: 0xA31F54
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -245,10 +270,18 @@ namespace VROSC {
     }
   }; // VROSC.TutorialPanel
   #pragma pack(pop)
-  static check_size<sizeof(TutorialPanel), 152 + sizeof(::VROSC::TutorialStep*)> __VROSC_TutorialPanelSizeCheck;
+  static check_size<sizeof(TutorialPanel), 152 + sizeof(::UnityEngine::Vector2)> __VROSC_TutorialPanelSizeCheck;
   static_assert(sizeof(TutorialPanel) == 0xA0);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TutorialPanel::Awake
+// Il2CppName: Awake
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::TutorialPanel::*)()>(&VROSC::TutorialPanel::Awake)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialPanel*), "Awake", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::TutorialPanel::StartTutorial
 // Il2CppName: StartTutorial
 template<>
@@ -356,13 +389,12 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialPanel*), "TutorialConditionsCompleted", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::TutorialPanel::DisplayInstructionText
-// Il2CppName: DisplayInstructionText
+// Writing MetadataGetter for method: VROSC::TutorialPanel::DisplayTipText
+// Il2CppName: DisplayTipText
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::TutorialPanel::*)(bool)>(&VROSC::TutorialPanel::DisplayInstructionText)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::TutorialPanel::*)()>(&VROSC::TutorialPanel::DisplayTipText)> {
   static const MethodInfo* get() {
-    static auto* conditionComplete = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialPanel*), "DisplayInstructionText", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{conditionComplete});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialPanel*), "DisplayTipText", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::TutorialPanel::New_ctor

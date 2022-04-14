@@ -42,15 +42,7 @@ namespace System::IO {
   // [TokenAttribute] Offset: FFFFFFFF
   class FileStreamAsyncResult : public ::Il2CppObject/*, public ::System::IAsyncResult*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Object state
     // Size: 0x8
     // Offset: 0x10
@@ -115,44 +107,44 @@ namespace System::IO {
       return *reinterpret_cast<::System::IAsyncResult*>(this);
     }
     // Get instance field reference: private System.Object state
-    ::Il2CppObject*& dyn_state();
+    [[deprecated]] ::Il2CppObject*& dyn_state();
     // Get instance field reference: private System.Boolean completed
-    bool& dyn_completed();
+    [[deprecated]] bool& dyn_completed();
     // Get instance field reference: private System.Threading.ManualResetEvent wh
-    ::System::Threading::ManualResetEvent*& dyn_wh();
+    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_wh();
     // Get instance field reference: private System.AsyncCallback cb
-    ::System::AsyncCallback*& dyn_cb();
+    [[deprecated]] ::System::AsyncCallback*& dyn_cb();
     // Get instance field reference: private System.Boolean completedSynch
-    bool& dyn_completedSynch();
+    [[deprecated]] bool& dyn_completedSynch();
     // Get instance field reference: public System.Int32 Count
-    int& dyn_Count();
+    [[deprecated]] int& dyn_Count();
     // Get instance field reference: public System.Int32 OriginalCount
-    int& dyn_OriginalCount();
+    [[deprecated]] int& dyn_OriginalCount();
     // Get instance field reference: public System.Int32 BytesRead
-    int& dyn_BytesRead();
+    [[deprecated]] int& dyn_BytesRead();
     // Get instance field reference: private System.AsyncCallback realcb
-    ::System::AsyncCallback*& dyn_realcb();
+    [[deprecated]] ::System::AsyncCallback*& dyn_realcb();
     // public System.Object get_AsyncState()
-    // Offset: 0xC1B1B0
+    // Offset: 0x145157C
     ::Il2CppObject* get_AsyncState();
     // public System.Boolean get_CompletedSynchronously()
-    // Offset: 0xC1B1B8
+    // Offset: 0x1451584
     bool get_CompletedSynchronously();
     // public System.Threading.WaitHandle get_AsyncWaitHandle()
-    // Offset: 0xC1B1C0
+    // Offset: 0x145158C
     ::System::Threading::WaitHandle* get_AsyncWaitHandle();
     // public System.Boolean get_IsCompleted()
-    // Offset: 0xC1B1C8
+    // Offset: 0x1451594
     bool get_IsCompleted();
     // public System.Void .ctor(System.AsyncCallback cb, System.Object state)
-    // Offset: 0xC1A3C0
+    // Offset: 0x1450720
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FileStreamAsyncResult* New_ctor(::System::AsyncCallback* cb, ::Il2CppObject* state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::FileStreamAsyncResult::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FileStreamAsyncResult*, creationType>(cb, state)));
     }
     // static private System.Void CBWrapper(System.IAsyncResult ares)
-    // Offset: 0xC1B118
+    // Offset: 0x14514E4
     static void CBWrapper(::System::IAsyncResult* ares);
   }; // System.IO.FileStreamAsyncResult
   #pragma pack(pop)

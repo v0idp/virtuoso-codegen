@@ -48,15 +48,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class ObjectProgress : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Boolean isInitial
     // Size: 0x1
     // Offset: 0x10
@@ -183,57 +175,57 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Set static field: static System.Int32 opRecordIdCount
     static void _set_opRecordIdCount(int value);
     // Get instance field reference: System.Boolean isInitial
-    bool& dyn_isInitial();
+    [[deprecated]] bool& dyn_isInitial();
     // Get instance field reference: System.Int32 count
-    int& dyn_count();
+    [[deprecated]] int& dyn_count();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum expectedType
-    ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_expectedType();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_expectedType();
     // Get instance field reference: System.Object expectedTypeInformation
-    ::Il2CppObject*& dyn_expectedTypeInformation();
+    [[deprecated]] ::Il2CppObject*& dyn_expectedTypeInformation();
     // Get instance field reference: System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalObjectTypeE objectTypeEnum
-    ::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE& dyn_objectTypeEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE& dyn_objectTypeEnum();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalMemberTypeE memberTypeEnum
-    ::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE& dyn_memberTypeEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE& dyn_memberTypeEnum();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalMemberValueE memberValueEnum
-    ::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE& dyn_memberValueEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE& dyn_memberValueEnum();
     // Get instance field reference: System.Type dtType
-    ::System::Type*& dyn_dtType();
+    [[deprecated]] ::System::Type*& dyn_dtType();
     // Get instance field reference: System.Int32 numItems
-    int& dyn_numItems();
+    [[deprecated]] int& dyn_numItems();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum binaryTypeEnum
-    ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_binaryTypeEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_binaryTypeEnum();
     // Get instance field reference: System.Object typeInformation
-    ::Il2CppObject*& dyn_typeInformation();
+    [[deprecated]] ::Il2CppObject*& dyn_typeInformation();
     // Get instance field reference: System.Int32 nullCount
-    int& dyn_nullCount();
+    [[deprecated]] int& dyn_nullCount();
     // Get instance field reference: System.Int32 memberLength
-    int& dyn_memberLength();
+    [[deprecated]] int& dyn_memberLength();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum[] binaryTypeEnumA
-    ::ArrayW<::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum>& dyn_binaryTypeEnumA();
+    [[deprecated]] ::ArrayW<::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum>& dyn_binaryTypeEnumA();
     // Get instance field reference: System.Object[] typeInformationA
-    ::ArrayW<::Il2CppObject*>& dyn_typeInformationA();
+    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_typeInformationA();
     // Get instance field reference: System.String[] memberNames
-    ::ArrayW<::StringW>& dyn_memberNames();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_memberNames();
     // Get instance field reference: System.Type[] memberTypes
-    ::ArrayW<::System::Type*>& dyn_memberTypes();
+    [[deprecated]] ::ArrayW<::System::Type*>& dyn_memberTypes();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.ParseRecord pr
-    ::System::Runtime::Serialization::Formatters::Binary::ParseRecord*& dyn_pr();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::ParseRecord*& dyn_pr();
     // static private System.Void .cctor()
-    // Offset: 0xEB7C08
+    // Offset: 0x1471AD8
     static void _cctor();
     // System.Void Init()
-    // Offset: 0xEB7A84
+    // Offset: 0x1471954
     void Init();
     // System.Void ArrayCountIncrement(System.Int32 value)
-    // Offset: 0xEB7AD4
+    // Offset: 0x14719A4
     void ArrayCountIncrement(int value);
     // System.Boolean GetNext(out System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum outBinaryTypeEnum, out System.Object outTypeInformation)
-    // Offset: 0xEB7AE4
+    // Offset: 0x14719B4
     bool GetNext(ByRef<::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum> outBinaryTypeEnum, ByRef<::Il2CppObject*> outTypeInformation);
     // System.Void .ctor()
-    // Offset: 0xEB7A18
+    // Offset: 0x14718F0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

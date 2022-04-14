@@ -38,15 +38,7 @@ namespace Proyecto26::Common {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Common::$SendWebRequestWithOptions$d__4 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -79,34 +71,34 @@ namespace Proyecto26::Common {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public Proyecto26.RequestHelper options
-    ::Proyecto26::RequestHelper*& dyn_options();
+    [[deprecated]] ::Proyecto26::RequestHelper*& dyn_options();
     // Get instance field reference: public UnityEngine.Networking.UnityWebRequest request
-    ::UnityEngine::Networking::UnityWebRequest*& dyn_request();
+    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_request();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x135F75C
+    // Offset: 0x95C250
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x135F7A4
+    // Offset: 0x95C298
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x135F47C
+    // Offset: 0x95BF70
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Common::$SendWebRequestWithOptions$d__4* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::Common::Common::$SendWebRequestWithOptions$d__4::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Common::$SendWebRequestWithOptions$d__4*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x135F4A8
+    // Offset: 0x95BF9C
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x135F4AC
+    // Offset: 0x95BFA0
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x135F764
+    // Offset: 0x95C258
     void System_Collections_IEnumerator_Reset();
   }; // Proyecto26.Common.Common/Proyecto26.Common.<SendWebRequestWithOptions>d__4
   #pragma pack(pop)

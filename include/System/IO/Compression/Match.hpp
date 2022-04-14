@@ -24,15 +24,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class Match : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IO.Compression.MatchState <State>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -59,36 +51,36 @@ namespace System::IO::Compression {
     static_assert(sizeof(uint8_t) == 0x1);
     public:
     // Get instance field reference: private System.IO.Compression.MatchState <State>k__BackingField
-    ::System::IO::Compression::MatchState& dyn_$State$k__BackingField();
+    [[deprecated]] ::System::IO::Compression::MatchState& dyn_$State$k__BackingField();
     // Get instance field reference: private System.Int32 <Position>k__BackingField
-    int& dyn_$Position$k__BackingField();
+    [[deprecated]] int& dyn_$Position$k__BackingField();
     // Get instance field reference: private System.Int32 <Length>k__BackingField
-    int& dyn_$Length$k__BackingField();
+    [[deprecated]] int& dyn_$Length$k__BackingField();
     // Get instance field reference: private System.Byte <Symbol>k__BackingField
-    uint8_t& dyn_$Symbol$k__BackingField();
+    [[deprecated]] uint8_t& dyn_$Symbol$k__BackingField();
     // System.IO.Compression.MatchState get_State()
-    // Offset: 0x112108C
+    // Offset: 0x16988F8
     ::System::IO::Compression::MatchState get_State();
     // System.Void set_State(System.IO.Compression.MatchState value)
-    // Offset: 0x1121094
+    // Offset: 0x1698900
     void set_State(::System::IO::Compression::MatchState value);
     // System.Int32 get_Position()
-    // Offset: 0x112109C
+    // Offset: 0x1698908
     int get_Position();
     // System.Void set_Position(System.Int32 value)
-    // Offset: 0x11210A4
+    // Offset: 0x1698910
     void set_Position(int value);
     // System.Int32 get_Length()
-    // Offset: 0x11210AC
+    // Offset: 0x1698918
     int get_Length();
     // System.Void set_Length(System.Int32 value)
-    // Offset: 0x11210B4
+    // Offset: 0x1698920
     void set_Length(int value);
     // System.Byte get_Symbol()
-    // Offset: 0x11210BC
+    // Offset: 0x1698928
     uint8_t get_Symbol();
     // System.Void set_Symbol(System.Byte value)
-    // Offset: 0x11210C4
+    // Offset: 0x1698930
     void set_Symbol(uint8_t value);
   }; // System.IO.Compression.Match
   #pragma pack(pop)

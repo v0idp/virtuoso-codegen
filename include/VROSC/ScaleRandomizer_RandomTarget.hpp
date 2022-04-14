@@ -32,15 +32,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScaleRandomizer::RandomTarget : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.ScaleNode Scale
     // Size: 0x8
     // Offset: 0x10
@@ -73,17 +65,17 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public VROSC.ScaleNode Scale
-    ::VROSC::ScaleNode*& dyn_Scale();
+    [[deprecated]] ::VROSC::ScaleNode*& dyn_Scale();
     // Get instance field reference: public VROSC.NoteNode Base
-    ::VROSC::NoteNode*& dyn_Base();
+    [[deprecated]] ::VROSC::NoteNode*& dyn_Base();
     // Get instance field reference: public System.Single ChanceToKeepBase
-    float& dyn_ChanceToKeepBase();
+    [[deprecated]] float& dyn_ChanceToKeepBase();
     // Get instance field reference: public System.Int32 MinDropNotes
-    int& dyn_MinDropNotes();
+    [[deprecated]] int& dyn_MinDropNotes();
     // Get instance field reference: public System.Int32 MaxDropNotes
-    int& dyn_MaxDropNotes();
+    [[deprecated]] int& dyn_MaxDropNotes();
     // public System.Void .ctor()
-    // Offset: 0x134949C
+    // Offset: 0x8D4414
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

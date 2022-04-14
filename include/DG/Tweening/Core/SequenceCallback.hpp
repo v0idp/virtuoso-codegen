@@ -36,7 +36,7 @@ namespace DG::Tweening::Core {
   class SequenceCallback : public ::DG::Tweening::Core::ABSSequentiable {
     public:
     // public System.Void .ctor(System.Single sequencedPosition, DG.Tweening.TweenCallback callback)
-    // Offset: 0x102ADB0
+    // Offset: 0x15A17A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SequenceCallback* New_ctor(float sequencedPosition, ::DG::Tweening::TweenCallback* callback) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::SequenceCallback::.ctor");

@@ -38,15 +38,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class Packet : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.UInt64 size
     // Size: 0x8
     // Offset: 0x10
@@ -65,33 +57,33 @@ namespace Oculus::Platform {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private readonly System.UInt64 size
-    uint64_t& dyn_size();
+    [[deprecated]] uint64_t& dyn_size();
     // Get instance field reference: private readonly System.IntPtr packetHandle
-    ::System::IntPtr& dyn_packetHandle();
+    [[deprecated]] ::System::IntPtr& dyn_packetHandle();
     // public System.UInt64 get_SenderID()
-    // Offset: 0x98069C
+    // Offset: 0xB52A38
     uint64_t get_SenderID();
     // public System.UInt64 get_Size()
-    // Offset: 0x9840B4
+    // Offset: 0xB56450
     uint64_t get_Size();
     // public Oculus.Platform.SendPolicy get_Policy()
-    // Offset: 0x9840BC
+    // Offset: 0xB56458
     ::Oculus::Platform::SendPolicy get_Policy();
     // public System.Void .ctor(System.IntPtr packetHandle)
-    // Offset: 0x97EC4C
+    // Offset: 0xB50FE8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Packet* New_ctor(::System::IntPtr packetHandle) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Packet::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Packet*, creationType>(packetHandle)));
     }
     // public System.UInt64 ReadBytes(System.Byte[] destination)
-    // Offset: 0x980704
+    // Offset: 0xB52AA0
     uint64_t ReadBytes(::ArrayW<uint8_t> destination);
     // public System.Void Dispose()
-    // Offset: 0x98418C
+    // Offset: 0xB56528
     void Dispose();
     // protected override System.Void Finalize()
-    // Offset: 0x984124
+    // Offset: 0xB564C0
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

@@ -31,7 +31,7 @@ namespace Facebook::WitAi::Lib {
   class WitResponseJson : public ::Il2CppObject {
     public:
     // static public Facebook.WitAi.Lib.WitResponseNode Parse(System.String aJSON)
-    // Offset: 0x1100484
+    // Offset: 0x1676CF0
     static ::Facebook::WitAi::Lib::WitResponseNode* Parse(::StringW aJSON);
   }; // Facebook.WitAi.Lib.WitResponseJson
   #pragma pack(pop)

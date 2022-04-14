@@ -28,15 +28,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class HighlightSpawnable::$CoHighlight$d__14 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -89,40 +81,40 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.HighlightSpawnable <>4__this
-    ::VROSC::HighlightSpawnable*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::HighlightSpawnable*& dyn_$$4__this();
     // Get instance field reference: public System.Boolean highlight
-    bool& dyn_highlight();
+    [[deprecated]] bool& dyn_highlight();
     // Get instance field reference: private System.Single <_animationTimer>5__2
-    float& dyn_$_animationTimer$5__2();
+    [[deprecated]] float& dyn_$_animationTimer$5__2();
     // Get instance field reference: private UnityEngine.Vector3 <startScale>5__3
-    ::UnityEngine::Vector3& dyn_$startScale$5__3();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$startScale$5__3();
     // Get instance field reference: private UnityEngine.Vector3 <targetScale>5__4
-    ::UnityEngine::Vector3& dyn_$targetScale$5__4();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$targetScale$5__4();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x13D0400
+    // Offset: 0x195804C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x13D0448
+    // Offset: 0x1958094
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x13D0238
+    // Offset: 0x1957E84
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HighlightSpawnable::$CoHighlight$d__14* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HighlightSpawnable::$CoHighlight$d__14::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<HighlightSpawnable::$CoHighlight$d__14*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x13D0264
+    // Offset: 0x1957EB0
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x13D0268
+    // Offset: 0x1957EB4
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x13D0408
+    // Offset: 0x1958054
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.HighlightSpawnable/VROSC.<CoHighlight>d__14
   #pragma pack(pop)

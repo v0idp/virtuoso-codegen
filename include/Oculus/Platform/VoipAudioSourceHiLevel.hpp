@@ -44,15 +44,7 @@ namespace Oculus::Platform {
     public:
     // Nested type: ::Oculus::Platform::VoipAudioSourceHiLevel::FilterReadDelegate
     class FilterReadDelegate;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 initialPlaybackDelayMS
     // Size: 0x4
     // Offset: 0x18
@@ -93,39 +85,39 @@ namespace Oculus::Platform {
     // Set static field: static private System.Boolean verboseLogging
     static void _set_verboseLogging(bool value);
     // Get instance field reference: private System.Int32 initialPlaybackDelayMS
-    int& dyn_initialPlaybackDelayMS();
+    [[deprecated]] int& dyn_initialPlaybackDelayMS();
     // Get instance field reference: public UnityEngine.AudioSource audioSource
-    ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: public System.Single peakAmplitude
-    float& dyn_peakAmplitude();
+    [[deprecated]] float& dyn_peakAmplitude();
     // Get instance field reference: protected Oculus.Platform.IVoipPCMSource pcmSource
-    ::Oculus::Platform::IVoipPCMSource*& dyn_pcmSource();
+    [[deprecated]] ::Oculus::Platform::IVoipPCMSource*& dyn_pcmSource();
     // public System.Void set_senderID(System.UInt64 value)
-    // Offset: 0x1152B9C
+    // Offset: 0x171FA98
     void set_senderID(uint64_t value);
     // protected System.Void Stop()
-    // Offset: 0x1152C5C
+    // Offset: 0x171FB58
     void Stop();
     // private Oculus.Platform.VoipSampleRate SampleRateToEnum(System.Int32 rate)
-    // Offset: 0x1152C60
+    // Offset: 0x171FB5C
     ::Oculus::Platform::VoipSampleRate SampleRateToEnum(int rate);
     // protected System.Void Awake()
-    // Offset: 0x1152C9C
+    // Offset: 0x171FB98
     void Awake();
     // private System.Void Start()
-    // Offset: 0x1152FAC
+    // Offset: 0x171FEA8
     void Start();
     // protected System.Void CreatePCMSource()
-    // Offset: 0x1152FC8
+    // Offset: 0x171FEC4
     void CreatePCMSource();
     // static protected System.Int32 MSToElements(System.Int32 ms)
-    // Offset: 0x115302C
+    // Offset: 0x171FF28
     static int MSToElements(int ms);
     // private System.Void Update()
-    // Offset: 0x11530B0
+    // Offset: 0x171FFAC
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x11533C0
+    // Offset: 0x17202BC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -138,7 +130,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<VoipAudioSourceHiLevel*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x11533C8
+    // Offset: 0x17202C4
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

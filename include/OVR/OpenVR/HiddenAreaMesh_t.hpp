@@ -46,9 +46,9 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IntPtr pVertexData
-    ::System::IntPtr& dyn_pVertexData();
+    [[deprecated]] ::System::IntPtr& dyn_pVertexData();
     // Get instance field reference: public System.UInt32 unTriangleCount
-    uint& dyn_unTriangleCount();
+    [[deprecated]] uint& dyn_unTriangleCount();
   }; // OVR.OpenVR.HiddenAreaMesh_t
   #pragma pack(pop)
   static check_size<sizeof(HiddenAreaMesh_t), 8 + sizeof(uint)> __OVR_OpenVR_HiddenAreaMesh_tSizeCheck;

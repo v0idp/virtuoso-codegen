@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class GrabData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly VROSC.InputDevice <Device>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -75,27 +67,27 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly VROSC.InputDevice <Device>k__BackingField
-    ::VROSC::InputDevice*& dyn_$Device$k__BackingField();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_$Device$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Collider <GrabbedCollider>k__BackingField
-    ::UnityEngine::Collider*& dyn_$GrabbedCollider$k__BackingField();
+    [[deprecated]] ::UnityEngine::Collider*& dyn_$GrabbedCollider$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Vector3 <Position>k__BackingField
-    ::UnityEngine::Vector3& dyn_$Position$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$Position$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <PointedAt>k__BackingField
-    bool& dyn_$PointedAt$k__BackingField();
+    [[deprecated]] bool& dyn_$PointedAt$k__BackingField();
     // public VROSC.InputDevice get_Device()
-    // Offset: 0x8932F0
+    // Offset: 0x19A57D8
     ::VROSC::InputDevice* get_Device();
     // public UnityEngine.Collider get_GrabbedCollider()
-    // Offset: 0x8932F8
+    // Offset: 0x19A57E0
     ::UnityEngine::Collider* get_GrabbedCollider();
     // public UnityEngine.Vector3 get_Position()
-    // Offset: 0x893300
+    // Offset: 0x19A57E8
     ::UnityEngine::Vector3 get_Position();
     // public System.Boolean get_PointedAt()
-    // Offset: 0x89330C
+    // Offset: 0x19A57F4
     bool get_PointedAt();
     // public System.Void .ctor(VROSC.InputDevice device, UnityEngine.Vector3 position, UnityEngine.Collider grabbedColider, System.Boolean pointedAt)
-    // Offset: 0x893314
+    // Offset: 0x19A57FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GrabData* New_ctor(::VROSC::InputDevice* device, ::UnityEngine::Vector3 position, ::UnityEngine::Collider* grabbedColider, bool pointedAt) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GrabData::.ctor");

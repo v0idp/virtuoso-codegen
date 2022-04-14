@@ -43,15 +43,7 @@ namespace Mono::Http {
   // [TokenAttribute] Offset: FFFFFFFF
   class NtlmSession : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Mono.Security.Protocol.Ntlm.MessageBase message
     // Size: 0x8
     // Offset: 0x10
@@ -64,12 +56,12 @@ namespace Mono::Http {
       return message;
     }
     // Get instance field reference: private Mono.Security.Protocol.Ntlm.MessageBase message
-    ::Mono::Security::Protocol::Ntlm::MessageBase*& dyn_message();
+    [[deprecated]] ::Mono::Security::Protocol::Ntlm::MessageBase*& dyn_message();
     // public System.Net.Authorization Authenticate(System.String challenge, System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
-    // Offset: 0xBF9F78
+    // Offset: 0x1407328
     ::System::Net::Authorization* Authenticate(::StringW challenge, ::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
     // public System.Void .ctor()
-    // Offset: 0xBFA680
+    // Offset: 0x1407A4C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

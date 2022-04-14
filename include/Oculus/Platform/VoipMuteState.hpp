@@ -41,21 +41,21 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A4F14
+    // [DescriptionAttribute] Offset: 0x6B90C8
     // static field const value: static public Oculus.Platform.VoipMuteState Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.VoipMuteState Unknown
     static ::Oculus::Platform::VoipMuteState _get_Unknown();
     // Set static field: static public Oculus.Platform.VoipMuteState Unknown
     static void _set_Unknown(::Oculus::Platform::VoipMuteState value);
-    // [DescriptionAttribute] Offset: 0x5A4F4C
+    // [DescriptionAttribute] Offset: 0x6B9100
     // static field const value: static public Oculus.Platform.VoipMuteState Muted
     static constexpr const int Muted = 1;
     // Get static field: static public Oculus.Platform.VoipMuteState Muted
     static ::Oculus::Platform::VoipMuteState _get_Muted();
     // Set static field: static public Oculus.Platform.VoipMuteState Muted
     static void _set_Muted(::Oculus::Platform::VoipMuteState value);
-    // [DescriptionAttribute] Offset: 0x5A4F84
+    // [DescriptionAttribute] Offset: 0x6B9138
     // static field const value: static public Oculus.Platform.VoipMuteState Unmuted
     static constexpr const int Unmuted = 2;
     // Get static field: static public Oculus.Platform.VoipMuteState Unmuted
@@ -63,7 +63,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.VoipMuteState Unmuted
     static void _set_Unmuted(::Oculus::Platform::VoipMuteState value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.VoipMuteState
   #pragma pack(pop)
   static check_size<sizeof(VoipMuteState), 0 + sizeof(int)> __Oculus_Platform_VoipMuteStateSizeCheck;

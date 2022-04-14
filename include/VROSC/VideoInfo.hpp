@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class VideoInfo : public ::VROSC::PaginatedListItemData {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String VideoId
     // Size: 0x8
     // Offset: 0x10
@@ -77,23 +69,23 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Texture*) == 0x8);
     public:
     // Get instance field reference: public System.String VideoId
-    ::StringW& dyn_VideoId();
+    [[deprecated]] ::StringW& dyn_VideoId();
     // Get instance field reference: public System.String VideoPath
-    ::StringW& dyn_VideoPath();
+    [[deprecated]] ::StringW& dyn_VideoPath();
     // Get instance field reference: public System.String Title
-    ::StringW& dyn_Title();
+    [[deprecated]] ::StringW& dyn_Title();
     // Get instance field reference: public System.String RequiredVersion
-    ::StringW& dyn_RequiredVersion();
+    [[deprecated]] ::StringW& dyn_RequiredVersion();
     // Get instance field reference: private UnityEngine.Texture <Thumbnail>k__BackingField
-    ::UnityEngine::Texture*& dyn_$Thumbnail$k__BackingField();
+    [[deprecated]] ::UnityEngine::Texture*& dyn_$Thumbnail$k__BackingField();
     // public UnityEngine.Texture get_Thumbnail()
-    // Offset: 0x13AE6F0
+    // Offset: 0x1922638
     ::UnityEngine::Texture* get_Thumbnail();
     // public System.Void set_Thumbnail(UnityEngine.Texture value)
-    // Offset: 0x13AE6F8
+    // Offset: 0x1922640
     void set_Thumbnail(::UnityEngine::Texture* value);
     // public System.Void .ctor()
-    // Offset: 0x13AE700
+    // Offset: 0x1922648
     // Implemented from: VROSC.PaginatedListItemData
     // Base method: System.Void PaginatedListItemData::.ctor()
     // Base method: System.Void Object::.ctor()

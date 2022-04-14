@@ -30,7 +30,7 @@ namespace VROSC {
   class LoopPlayerPlaybackStoppedState : public ::VROSC::LoopPlayerPlaybackState {
     public:
     // public System.Void .ctor()
-    // Offset: 0x9075F8
+    // Offset: 0x19BD594
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -40,12 +40,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackStoppedState*, creationType>()));
     }
     // public override System.Single GetCurrentFade(System.Int32 atSample)
-    // Offset: 0x907FD4
+    // Offset: 0x19BDF68
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Single LoopPlayerPlaybackState::GetCurrentFade(System.Int32 atSample)
     float GetCurrentFade(int atSample);
     // public override System.String DebugString()
-    // Offset: 0x907FDC
+    // Offset: 0x19BDF70
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.String LoopPlayerPlaybackState::DebugString()
     ::StringW DebugString();

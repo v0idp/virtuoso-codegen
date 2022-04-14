@@ -37,16 +37,16 @@ namespace System::Net {
     // Set static field: static readonly System.Char[] InvalidParamChars
     static void _set_InvalidParamChars(::ArrayW<::Il2CppChar> value);
     // static private System.Void .cctor()
-    // Offset: 0xAB573C
+    // Offset: 0xC40B30
     static void _cctor();
     // static public System.String MakeStringNull(System.String stringValue)
-    // Offset: 0xAB5700
+    // Offset: 0xC40AF4
     static ::StringW MakeStringNull(::StringW stringValue);
     // static public System.Boolean IsBlankString(System.String stringValue)
-    // Offset: 0xAB5714
+    // Offset: 0xC40B08
     static bool IsBlankString(::StringW stringValue);
     // static public System.Boolean ValidateTcpPort(System.Int32 port)
-    // Offset: 0xAB5730
+    // Offset: 0xC40B24
     static bool ValidateTcpPort(int port);
   }; // System.Net.ValidationHelper
   #pragma pack(pop)

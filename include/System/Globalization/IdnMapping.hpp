@@ -34,15 +34,7 @@ namespace System::Globalization {
   // [TokenAttribute] Offset: FFFFFFFF
   class IdnMapping : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean allow_unassigned
     // Size: 0x1
     // Offset: 0x10
@@ -65,46 +57,46 @@ namespace System::Globalization {
     static_assert(sizeof(::System::Globalization::Punycode*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean allow_unassigned
-    bool& dyn_allow_unassigned();
+    [[deprecated]] bool& dyn_allow_unassigned();
     // Get instance field reference: private System.Boolean use_std3
-    bool& dyn_use_std3();
+    [[deprecated]] bool& dyn_use_std3();
     // Get instance field reference: private System.Globalization.Punycode puny
-    ::System::Globalization::Punycode*& dyn_puny();
+    [[deprecated]] ::System::Globalization::Punycode*& dyn_puny();
     // public System.String GetAscii(System.String unicode)
-    // Offset: 0xC4CF34
+    // Offset: 0x146105C
     ::StringW GetAscii(::StringW unicode);
     // public System.String GetAscii(System.String unicode, System.Int32 index, System.Int32 count)
-    // Offset: 0xC4CF98
+    // Offset: 0x14610C0
     ::StringW GetAscii(::StringW unicode, int index, int count);
     // private System.String Convert(System.String input, System.Int32 index, System.Int32 count, System.Boolean toAscii)
-    // Offset: 0xC4D06C
+    // Offset: 0x1461194
     ::StringW Convert(::StringW input, int index, int count, bool toAscii);
     // private System.String ToAscii(System.String s, System.Int32 offset)
-    // Offset: 0xC4D2B0
+    // Offset: 0x14613D8
     ::StringW ToAscii(::StringW s, int offset);
     // private System.Void VerifyLength(System.String s, System.Int32 offset)
-    // Offset: 0xC4DA04
+    // Offset: 0x1461B2C
     void VerifyLength(::StringW s, int offset);
     // private System.String NamePrep(System.String s, System.Int32 offset)
-    // Offset: 0xC4D6D8
+    // Offset: 0x1461800
     ::StringW NamePrep(::StringW s, int offset);
     // private System.Void VerifyProhibitedCharacters(System.String s, System.Int32 offset)
-    // Offset: 0xC4DAD4
+    // Offset: 0x1461BFC
     void VerifyProhibitedCharacters(::StringW s, int offset);
     // private System.Void VerifyStd3AsciiRules(System.String s, System.Int32 offset)
-    // Offset: 0xC4D830
+    // Offset: 0x1461958
     void VerifyStd3AsciiRules(::StringW s, int offset);
     // public System.String GetUnicode(System.String ascii)
-    // Offset: 0xC4DD1C
+    // Offset: 0x1461E44
     ::StringW GetUnicode(::StringW ascii);
     // public System.String GetUnicode(System.String ascii, System.Int32 index, System.Int32 count)
-    // Offset: 0xC4DD80
+    // Offset: 0x1461EA8
     ::StringW GetUnicode(::StringW ascii, int index, int count);
     // private System.String ToUnicode(System.String s, System.Int32 offset)
-    // Offset: 0xC4D4F0
+    // Offset: 0x1461618
     ::StringW ToUnicode(::StringW s, int offset);
     // public System.Void .ctor()
-    // Offset: 0xC4CE00
+    // Offset: 0x1460F28
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -113,12 +105,12 @@ namespace System::Globalization {
       return THROW_UNLESS((::il2cpp_utils::New<IdnMapping*, creationType>()));
     }
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC4CE64
+    // Offset: 0x1460F8C
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xC4CF18
+    // Offset: 0x1461040
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();

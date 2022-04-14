@@ -62,15 +62,7 @@ namespace VROSC {
     class $$c__DisplayClass12_0;
     // Nested type: ::VROSC::UserFavoritesDataController::$$c__DisplayClass13_0
     class $$c__DisplayClass13_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _isWaitingForData
     // Size: 0x1
     // Offset: 0x28
@@ -83,39 +75,39 @@ namespace VROSC {
       return isWaitingForData;
     }
     // Get instance field reference: private System.Boolean _isWaitingForData
-    bool& dyn__isWaitingForData();
+    [[deprecated]] bool& dyn__isWaitingForData();
     // protected VROSC.UserFavoritesDataModel get_DataModel()
-    // Offset: 0x13A8A38
+    // Offset: 0x191C7A0
     ::VROSC::UserFavoritesDataModel* get_DataModel();
     // public System.Void AddFavorite(System.String sessionId, System.String sessionFavoriteId, VROSC.Session session, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A8B2C
+    // Offset: 0x191C894
     void AddFavorite(::StringW sessionId, ::StringW sessionFavoriteId, ::VROSC::Session* session, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void RemoveFavorite(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A8F40
+    // Offset: 0x191CCA8
     void RemoveFavorite(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void RemoveLocalFavoriteWithId(System.String favoriteId)
-    // Offset: 0x13A92E8
+    // Offset: 0x191D050
     void RemoveLocalFavoriteWithId(::StringW favoriteId);
     // public System.String GetFavoriteIdFromSession(System.String sessionId)
-    // Offset: 0x13A9408
+    // Offset: 0x191D170
     ::StringW GetFavoriteIdFromSession(::StringW sessionId);
     // public System.Boolean HasFavorite(System.String sessionId)
-    // Offset: 0x13A8CF8
+    // Offset: 0x191CA60
     bool HasFavorite(::StringW sessionId);
     // public System.Collections.Generic.List`1<VROSC.SessionUIData> GetFavoritesSessionUIData()
-    // Offset: 0x13A9654
+    // Offset: 0x191D3BC
     ::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* GetFavoritesSessionUIData();
     // private System.Void AddFavoriteToData(VROSC.UserFavoritesDataModel/VROSC.Favorite favorite, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A8D14
+    // Offset: 0x191CA7C
     void AddFavoriteToData(::VROSC::UserFavoritesDataModel::Favorite* favorite, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // private System.Void RemoveFavoriteFromData(VROSC.UserFavoritesDataModel/VROSC.Favorite favorite, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A91AC
+    // Offset: 0x191CF14
     void RemoveFavoriteFromData(::VROSC::UserFavoritesDataModel::Favorite* favorite, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // private VROSC.UserFavoritesDataModel/VROSC.Favorite GetFavorite(System.String sessionId)
-    // Offset: 0x13A9048
+    // Offset: 0x191CDB0
     ::VROSC::UserFavoritesDataModel::Favorite* GetFavorite(::StringW sessionId);
     // public System.Void .ctor()
-    // Offset: 0x13A66C8
+    // Offset: 0x191A428
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -125,12 +117,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UserFavoritesDataController*, creationType>()));
     }
     // public override System.Void LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A9474
+    // Offset: 0x191D1DC
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void LoadCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Void SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13A9650
+    // Offset: 0x191D3B8
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void SaveCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);

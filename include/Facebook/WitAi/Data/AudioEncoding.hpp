@@ -68,20 +68,12 @@ namespace Facebook::WitAi::Data {
       // Set static field: static public Facebook.WitAi.Data.AudioEncoding/Facebook.WitAi.Data.Endian Little
       static void _set_Little(::Facebook::WitAi::Data::AudioEncoding::Endian value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Facebook.WitAi.Data.AudioEncoding/Facebook.WitAi.Data.Endian
     #pragma pack(pop)
     static check_size<sizeof(AudioEncoding::Endian), 0 + sizeof(int)> __Facebook_WitAi_Data_AudioEncoding_EndianSizeCheck;
     static_assert(sizeof(AudioEncoding::Endian) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String encoding
     // Size: 0x8
     // Offset: 0x10
@@ -108,15 +100,15 @@ namespace Facebook::WitAi::Data {
     static_assert(sizeof(::Facebook::WitAi::Data::AudioEncoding::Endian) == 0x4);
     public:
     // Get instance field reference: public System.String encoding
-    ::StringW& dyn_encoding();
+    [[deprecated]] ::StringW& dyn_encoding();
     // Get instance field reference: public System.Int32 bits
-    int& dyn_bits();
+    [[deprecated]] int& dyn_bits();
     // Get instance field reference: public System.Int32 samplerate
-    int& dyn_samplerate();
+    [[deprecated]] int& dyn_samplerate();
     // Get instance field reference: public Facebook.WitAi.Data.AudioEncoding/Facebook.WitAi.Data.Endian endian
-    ::Facebook::WitAi::Data::AudioEncoding::Endian& dyn_endian();
+    [[deprecated]] ::Facebook::WitAi::Data::AudioEncoding::Endian& dyn_endian();
     // public System.Void .ctor()
-    // Offset: 0x10F8094
+    // Offset: 0x166E8FC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -125,7 +117,7 @@ namespace Facebook::WitAi::Data {
       return THROW_UNLESS((::il2cpp_utils::New<AudioEncoding*, creationType>()));
     }
     // public override System.String ToString()
-    // Offset: 0x10F7E90
+    // Offset: 0x166E6F8
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

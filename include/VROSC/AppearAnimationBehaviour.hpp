@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AppearAnimationBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AnimationCurve _positionCurve
     // Size: 0x8
     // Offset: 0x10
@@ -105,26 +97,26 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.AnimationCurve _positionCurve
-    ::UnityEngine::AnimationCurve*& dyn__positionCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__positionCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _rotationCurve
-    ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _scaleCurve
-    ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
     // Get instance field reference: private UnityEngine.Transform _target
-    ::UnityEngine::Transform*& dyn__target();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__target();
     // Get instance field reference: private UnityEngine.Transform _start
-    ::UnityEngine::Transform*& dyn__start();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__start();
     // Get instance field reference: private UnityEngine.Transform _end
-    ::UnityEngine::Transform*& dyn__end();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__end();
     // Get instance field reference: private UnityEngine.Quaternion _randomStartRotation
-    ::UnityEngine::Quaternion& dyn__randomStartRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn__randomStartRotation();
     // Get instance field reference: public System.Single animation
-    float& dyn_animation();
+    [[deprecated]] float& dyn_animation();
     // public System.Void Setup(UnityEngine.Transform target, UnityEngine.Transform start, UnityEngine.Transform end, UnityEngine.AnimationCurve positionCurve, UnityEngine.AnimationCurve rotationCurve, UnityEngine.AnimationCurve scaleCurve, System.Single randomMidPoint)
-    // Offset: 0x136DF28
+    // Offset: 0x96C804
     void Setup(::UnityEngine::Transform* target, ::UnityEngine::Transform* start, ::UnityEngine::Transform* end, ::UnityEngine::AnimationCurve* positionCurve, ::UnityEngine::AnimationCurve* rotationCurve, ::UnityEngine::AnimationCurve* scaleCurve, float randomMidPoint);
     // public System.Void .ctor()
-    // Offset: 0x136E230
+    // Offset: 0x96CB0C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -134,7 +126,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AppearAnimationBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x136DFE8
+    // Offset: 0x96C8C4
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

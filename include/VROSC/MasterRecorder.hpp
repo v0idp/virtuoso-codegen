@@ -30,10 +30,10 @@ namespace VROSC {
   class MasterRecorder : public ::VROSC::MixerGroupRecorder {
     public:
     // private System.Int32 GetMicrophoneLatency()
-    // Offset: 0x8AD2D4
+    // Offset: 0xAC0910
     int GetMicrophoneLatency();
     // public System.Void .ctor()
-    // Offset: 0x8AD688
+    // Offset: 0xAC0CC4
     // Implemented from: VROSC.MixerGroupRecorder
     // Base method: System.Void MixerGroupRecorder::.ctor()
     // Base method: System.Void SourceRecorder::.ctor()
@@ -48,7 +48,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<MasterRecorder*, creationType>()));
     }
     // protected override System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x8AD424
+    // Offset: 0xAC0A60
     // Implemented from: VROSC.MixerGroupRecorder
     // Base method: System.Void MixerGroupRecorder::OnAudioFilterRead(System.Single[] data, System.Int32 channels)
     void OnAudioFilterRead(::ArrayW<float> data, int channels);

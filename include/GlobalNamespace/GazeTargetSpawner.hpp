@@ -35,15 +35,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class GazeTargetSpawner : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.GameObject GazeTargetPrefab
     // Size: 0x8
     // Offset: 0x18
@@ -72,27 +64,27 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject GazeTargetPrefab
-    ::UnityEngine::GameObject*& dyn_GazeTargetPrefab();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_GazeTargetPrefab();
     // Get instance field reference: public System.Int32 NumberOfDummyTargets
-    int& dyn_NumberOfDummyTargets();
+    [[deprecated]] int& dyn_NumberOfDummyTargets();
     // Get instance field reference: public System.Int32 RadiusMultiplier
-    int& dyn_RadiusMultiplier();
+    [[deprecated]] int& dyn_RadiusMultiplier();
     // Get instance field reference: private System.Boolean isVisible
-    bool& dyn_isVisible();
+    [[deprecated]] bool& dyn_isVisible();
     // public System.Boolean get_IsVisible()
-    // Offset: 0x890AB4
+    // Offset: 0x19A2F34
     bool get_IsVisible();
     // public System.Void set_IsVisible(System.Boolean value)
-    // Offset: 0x890ABC
+    // Offset: 0x19A2F3C
     void set_IsVisible(bool value);
     // private System.Void Start()
-    // Offset: 0x890BF8
+    // Offset: 0x19A3078
     void Start();
     // private System.Void OnValidate()
-    // Offset: 0x890DC0
+    // Offset: 0x19A3240
     void OnValidate();
     // public System.Void .ctor()
-    // Offset: 0x890DC8
+    // Offset: 0x19A3248
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

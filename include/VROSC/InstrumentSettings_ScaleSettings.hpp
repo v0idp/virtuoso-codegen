@@ -24,15 +24,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InstrumentSettings::ScaleSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 StartNoteIndex
     // Size: 0x4
     // Offset: 0x10
@@ -61,15 +53,15 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<bool>) == 0x8);
     public:
     // Get instance field reference: public System.Int32 StartNoteIndex
-    int& dyn_StartNoteIndex();
+    [[deprecated]] int& dyn_StartNoteIndex();
     // Get instance field reference: public System.Int32 DefaultIncludeNotes
-    int& dyn_DefaultIncludeNotes();
+    [[deprecated]] int& dyn_DefaultIncludeNotes();
     // Get instance field reference: public System.Boolean OverrideScaleDefaults
-    bool& dyn_OverrideScaleDefaults();
+    [[deprecated]] bool& dyn_OverrideScaleDefaults();
     // Get instance field reference: public System.Boolean[] ScaleNotesToggled
-    ::ArrayW<bool>& dyn_ScaleNotesToggled();
+    [[deprecated]] ::ArrayW<bool>& dyn_ScaleNotesToggled();
     // public System.Void .ctor()
-    // Offset: 0x13D0D74
+    // Offset: 0x19589C0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

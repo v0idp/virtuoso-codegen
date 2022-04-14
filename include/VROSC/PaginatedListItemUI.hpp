@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PaginatedListItemUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.UIToggle _button
     // Size: 0x8
     // Offset: 0x18
@@ -92,44 +84,44 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.UIToggle _button
-    ::VROSC::UIToggle*& dyn__button();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__button();
     // Get instance field reference: private VROSC.PaginatedListDataHolder <DataHolder>k__BackingField
-    ::VROSC::PaginatedListDataHolder*& dyn_$DataHolder$k__BackingField();
+    [[deprecated]] ::VROSC::PaginatedListDataHolder*& dyn_$DataHolder$k__BackingField();
     // Get instance field reference: protected VROSC.PaginatedList _paginatedList
-    ::VROSC::PaginatedList*& dyn__paginatedList();
+    [[deprecated]] ::VROSC::PaginatedList*& dyn__paginatedList();
     // Get instance field reference: protected System.Boolean _selected
-    bool& dyn__selected();
+    [[deprecated]] bool& dyn__selected();
     // Get instance field reference: public System.Action`1<VROSC.PaginatedListDataHolder> OnItemSelected
-    ::System::Action_1<::VROSC::PaginatedListDataHolder*>*& dyn_OnItemSelected();
+    [[deprecated]] ::System::Action_1<::VROSC::PaginatedListDataHolder*>*& dyn_OnItemSelected();
     // public VROSC.PaginatedListDataHolder get_DataHolder()
-    // Offset: 0x8F7DB8
+    // Offset: 0xADC590
     ::VROSC::PaginatedListDataHolder* get_DataHolder();
     // private System.Void set_DataHolder(VROSC.PaginatedListDataHolder value)
-    // Offset: 0x8F7DB0
+    // Offset: 0xADC588
     void set_DataHolder(::VROSC::PaginatedListDataHolder* value);
     // private System.Void Awake()
-    // Offset: 0x8F7DC0
+    // Offset: 0xADC598
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x8F7E84
+    // Offset: 0xADC65C
     void OnDestroy();
     // public System.Void Setup(VROSC.PaginatedList paginatedList)
-    // Offset: 0x8F7F48
+    // Offset: 0xADC720
     void Setup(::VROSC::PaginatedList* paginatedList);
     // public System.Void SetNewData(VROSC.PaginatedListDataHolder dataholder)
-    // Offset: 0x8F7F50
+    // Offset: 0xADC728
     void SetNewData(::VROSC::PaginatedListDataHolder* dataholder);
     // public System.Void SetActive(System.Boolean active)
-    // Offset: 0x8F7BC0
+    // Offset: 0xADC398
     void SetActive(bool active);
     // protected System.Void SetSelected(VROSC.InputDevice inputDevice, System.Boolean shouldBeSelected)
-    // Offset: 0x8F7F58
+    // Offset: 0xADC730
     void SetSelected(::VROSC::InputDevice* inputDevice, bool shouldBeSelected);
     // public System.Void SetIsSelected(System.Boolean selected)
-    // Offset: 0x8F787C
+    // Offset: 0xADC054
     void SetIsSelected(bool selected);
     // protected System.Void .ctor()
-    // Offset: 0x8F7FE4
+    // Offset: 0xADC7BC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

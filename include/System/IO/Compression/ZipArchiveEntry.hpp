@@ -115,7 +115,7 @@ namespace System::IO::Compression {
       // Set static field: static public System.IO.Compression.ZipArchiveEntry/System.IO.Compression.BitFlagValues UnicodeFileName
       static void _set_UnicodeFileName(::System::IO::Compression::ZipArchiveEntry::BitFlagValues value);
       // Get instance field reference: public System.UInt16 value__
-      uint16_t& dyn_value__();
+      [[deprecated]] uint16_t& dyn_value__();
     }; // System.IO.Compression.ZipArchiveEntry/System.IO.Compression.BitFlagValues
     #pragma pack(pop)
     static check_size<sizeof(ZipArchiveEntry::BitFlagValues), 0 + sizeof(uint16_t)> __System_IO_Compression_ZipArchiveEntry_BitFlagValuesSizeCheck;
@@ -175,20 +175,12 @@ namespace System::IO::Compression {
       // Set static field: static public System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues LZMA
       static void _set_LZMA(::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues value);
       // Get instance field reference: public System.UInt16 value__
-      uint16_t& dyn_value__();
+      [[deprecated]] uint16_t& dyn_value__();
     }; // System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues
     #pragma pack(pop)
     static check_size<sizeof(ZipArchiveEntry::CompressionMethodValues), 0 + sizeof(uint16_t)> __System_IO_Compression_ZipArchiveEntry_CompressionMethodValuesSizeCheck;
     static_assert(sizeof(ZipArchiveEntry::CompressionMethodValues) == 0x2);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IO.Compression.ZipArchive _archive
     // Size: 0x8
     // Offset: 0x10
@@ -351,194 +343,194 @@ namespace System::IO::Compression {
     // Set static field: static readonly System.IO.Compression.ZipVersionMadeByPlatform CurrentZipPlatform
     static void _set_CurrentZipPlatform(::System::IO::Compression::ZipVersionMadeByPlatform value);
     // Get instance field reference: private System.IO.Compression.ZipArchive _archive
-    ::System::IO::Compression::ZipArchive*& dyn__archive();
+    [[deprecated]] ::System::IO::Compression::ZipArchive*& dyn__archive();
     // Get instance field reference: private readonly System.Boolean _originallyInArchive
-    bool& dyn__originallyInArchive();
+    [[deprecated]] bool& dyn__originallyInArchive();
     // Get instance field reference: private readonly System.Int32 _diskNumberStart
-    int& dyn__diskNumberStart();
+    [[deprecated]] int& dyn__diskNumberStart();
     // Get instance field reference: private readonly System.IO.Compression.ZipVersionMadeByPlatform _versionMadeByPlatform
-    ::System::IO::Compression::ZipVersionMadeByPlatform& dyn__versionMadeByPlatform();
+    [[deprecated]] ::System::IO::Compression::ZipVersionMadeByPlatform& dyn__versionMadeByPlatform();
     // Get instance field reference: private System.IO.Compression.ZipVersionNeededValues _versionMadeBySpecification
-    ::System::IO::Compression::ZipVersionNeededValues& dyn__versionMadeBySpecification();
+    [[deprecated]] ::System::IO::Compression::ZipVersionNeededValues& dyn__versionMadeBySpecification();
     // Get instance field reference: private System.IO.Compression.ZipVersionNeededValues _versionToExtract
-    ::System::IO::Compression::ZipVersionNeededValues& dyn__versionToExtract();
+    [[deprecated]] ::System::IO::Compression::ZipVersionNeededValues& dyn__versionToExtract();
     // Get instance field reference: private System.IO.Compression.ZipArchiveEntry/System.IO.Compression.BitFlagValues _generalPurposeBitFlag
-    ::System::IO::Compression::ZipArchiveEntry::BitFlagValues& dyn__generalPurposeBitFlag();
+    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry::BitFlagValues& dyn__generalPurposeBitFlag();
     // Get instance field reference: private System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues _storedCompressionMethod
-    ::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues& dyn__storedCompressionMethod();
+    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues& dyn__storedCompressionMethod();
     // Get instance field reference: private System.DateTimeOffset _lastModified
-    ::System::DateTimeOffset& dyn__lastModified();
+    [[deprecated]] ::System::DateTimeOffset& dyn__lastModified();
     // Get instance field reference: private System.Int64 _compressedSize
-    int64_t& dyn__compressedSize();
+    [[deprecated]] int64_t& dyn__compressedSize();
     // Get instance field reference: private System.Int64 _uncompressedSize
-    int64_t& dyn__uncompressedSize();
+    [[deprecated]] int64_t& dyn__uncompressedSize();
     // Get instance field reference: private System.Int64 _offsetOfLocalHeader
-    int64_t& dyn__offsetOfLocalHeader();
+    [[deprecated]] int64_t& dyn__offsetOfLocalHeader();
     // Get instance field reference: private System.Nullable`1<System.Int64> _storedOffsetOfCompressedData
-    ::System::Nullable_1<int64_t>& dyn__storedOffsetOfCompressedData();
+    [[deprecated]] ::System::Nullable_1<int64_t>& dyn__storedOffsetOfCompressedData();
     // Get instance field reference: private System.UInt32 _crc32
-    uint& dyn__crc32();
+    [[deprecated]] uint& dyn__crc32();
     // Get instance field reference: private System.Byte[][] _compressedBytes
-    ::ArrayW<::ArrayW<uint8_t>>& dyn__compressedBytes();
+    [[deprecated]] ::ArrayW<::ArrayW<uint8_t>>& dyn__compressedBytes();
     // Get instance field reference: private System.IO.MemoryStream _storedUncompressedData
-    ::System::IO::MemoryStream*& dyn__storedUncompressedData();
+    [[deprecated]] ::System::IO::MemoryStream*& dyn__storedUncompressedData();
     // Get instance field reference: private System.Boolean _currentlyOpenForWrite
-    bool& dyn__currentlyOpenForWrite();
+    [[deprecated]] bool& dyn__currentlyOpenForWrite();
     // Get instance field reference: private System.Boolean _everOpenedForWrite
-    bool& dyn__everOpenedForWrite();
+    [[deprecated]] bool& dyn__everOpenedForWrite();
     // Get instance field reference: private System.IO.Stream _outstandingWriteStream
-    ::System::IO::Stream*& dyn__outstandingWriteStream();
+    [[deprecated]] ::System::IO::Stream*& dyn__outstandingWriteStream();
     // Get instance field reference: private System.UInt32 _externalFileAttr
-    uint& dyn__externalFileAttr();
+    [[deprecated]] uint& dyn__externalFileAttr();
     // Get instance field reference: private System.String _storedEntryName
-    ::StringW& dyn__storedEntryName();
+    [[deprecated]] ::StringW& dyn__storedEntryName();
     // Get instance field reference: private System.Byte[] _storedEntryNameBytes
-    ::ArrayW<uint8_t>& dyn__storedEntryNameBytes();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__storedEntryNameBytes();
     // Get instance field reference: private System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> _cdUnknownExtraFields
-    ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn__cdUnknownExtraFields();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn__cdUnknownExtraFields();
     // Get instance field reference: private System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> _lhUnknownExtraFields
-    ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn__lhUnknownExtraFields();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn__lhUnknownExtraFields();
     // Get instance field reference: private System.Byte[] _fileComment
-    ::ArrayW<uint8_t>& dyn__fileComment();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__fileComment();
     // Get instance field reference: private System.Nullable`1<System.IO.Compression.CompressionLevel> _compressionLevel
-    ::System::Nullable_1<::System::IO::Compression::CompressionLevel>& dyn__compressionLevel();
+    [[deprecated]] ::System::Nullable_1<::System::IO::Compression::CompressionLevel>& dyn__compressionLevel();
     // public System.String get_FullName()
-    // Offset: 0x1126E48
+    // Offset: 0x169E6B4
     ::StringW get_FullName();
     // private System.Void set_FullName(System.String value)
-    // Offset: 0x1126D04
+    // Offset: 0x169E570
     void set_FullName(::StringW value);
     // public System.DateTimeOffset get_LastWriteTime()
-    // Offset: 0x1127034
+    // Offset: 0x169E8A0
     ::System::DateTimeOffset get_LastWriteTime();
     // public System.Void set_LastWriteTime(System.DateTimeOffset value)
-    // Offset: 0x1127040
+    // Offset: 0x169E8AC
     void set_LastWriteTime(::System::DateTimeOffset value);
     // public System.Int64 get_Length()
-    // Offset: 0x1127208
+    // Offset: 0x169EA74
     int64_t get_Length();
     // public System.String get_Name()
-    // Offset: 0x112726C
+    // Offset: 0x169EAD8
     ::StringW get_Name();
     // System.Boolean get_EverOpenedForWrite()
-    // Offset: 0x11277E0
+    // Offset: 0x169F04C
     bool get_EverOpenedForWrite();
     // private System.Int64 get_OffsetOfCompressedData()
-    // Offset: 0x11277E8
+    // Offset: 0x169F054
     int64_t get_OffsetOfCompressedData();
     // private System.IO.MemoryStream get_UncompressedData()
-    // Offset: 0x1127AB4
+    // Offset: 0x169F320
     ::System::IO::MemoryStream* get_UncompressedData();
     // private System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues get_CompressionMethod()
-    // Offset: 0x1127D30
+    // Offset: 0x169F59C
     ::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues get_CompressionMethod();
     // private System.Void set_CompressionMethod(System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues value)
-    // Offset: 0x1126B0C
+    // Offset: 0x169E378
     void set_CompressionMethod(::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues value);
     // System.Void .ctor(System.IO.Compression.ZipArchive archive, System.IO.Compression.ZipCentralDirectoryFileHeader cd)
-    // Offset: 0x1125674
+    // Offset: 0x169CEE0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ZipArchiveEntry* New_ctor(::System::IO::Compression::ZipArchive* archive, ::System::IO::Compression::ZipCentralDirectoryFileHeader cd) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::ZipArchiveEntry::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ZipArchiveEntry*, creationType>(archive, cd)));
     }
     // System.Void .ctor(System.IO.Compression.ZipArchive archive, System.String entryName, System.IO.Compression.CompressionLevel compressionLevel)
-    // Offset: 0x1124B18
+    // Offset: 0x169C384
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ZipArchiveEntry* New_ctor(::System::IO::Compression::ZipArchive* archive, ::StringW entryName, ::System::IO::Compression::CompressionLevel compressionLevel) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::ZipArchiveEntry::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ZipArchiveEntry*, creationType>(archive, entryName, compressionLevel)));
     }
     // System.Void .ctor(System.IO.Compression.ZipArchive archive, System.String entryName)
-    // Offset: 0x112497C
+    // Offset: 0x169C1E8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ZipArchiveEntry* New_ctor(::System::IO::Compression::ZipArchive* archive, ::StringW entryName) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::ZipArchiveEntry::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ZipArchiveEntry*, creationType>(archive, entryName)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x1129558
+    // Offset: 0x16A0DC4
     static void _cctor();
     // public System.Void Delete()
-    // Offset: 0x112632C
+    // Offset: 0x169DB98
     void Delete();
     // public System.IO.Stream Open()
-    // Offset: 0x112730C
+    // Offset: 0x169EB78
     ::System::IO::Stream* Open();
     // private System.String DecodeEntryName(System.Byte[] entryNameBytes)
-    // Offset: 0x1126CB0
+    // Offset: 0x169E51C
     ::StringW DecodeEntryName(::ArrayW<uint8_t> entryNameBytes);
     // private System.Byte[] EncodeEntryName(System.String entryName, out System.Boolean isUTF8)
-    // Offset: 0x1126E50
+    // Offset: 0x169E6BC
     ::ArrayW<uint8_t> EncodeEntryName(::StringW entryName, ByRef<bool> isUTF8);
     // System.Void WriteAndFinishLocalEntry()
-    // Offset: 0x1124CF8
+    // Offset: 0x169C564
     void WriteAndFinishLocalEntry();
     // System.Void WriteCentralDirectoryFileHeader()
-    // Offset: 0x1126414
+    // Offset: 0x169DC80
     void WriteCentralDirectoryFileHeader();
     // System.Boolean LoadLocalHeaderExtraFieldAndCompressedBytesIfNeeded()
-    // Offset: 0x1126068
+    // Offset: 0x169D8D4
     bool LoadLocalHeaderExtraFieldAndCompressedBytesIfNeeded();
     // System.Void ThrowIfNotOpenable(System.Boolean needToUncompress, System.Boolean needToLoadIntoMemory)
-    // Offset: 0x1125600
+    // Offset: 0x169CE6C
     void ThrowIfNotOpenable(bool needToUncompress, bool needToLoadIntoMemory);
     // private System.IO.Compression.CheckSumAndSizeWriteStream GetDataCompressor(System.IO.Stream backingStream, System.Boolean leaveBackingStreamOpen, System.EventHandler onClose)
-    // Offset: 0x112890C
+    // Offset: 0x16A0178
     ::System::IO::Compression::CheckSumAndSizeWriteStream* GetDataCompressor(::System::IO::Stream* backingStream, bool leaveBackingStreamOpen, ::System::EventHandler* onClose);
     // private System.IO.Stream GetDataDecompressor(System.IO.Stream compressedStreamToRead)
-    // Offset: 0x1128AFC
+    // Offset: 0x16A0368
     ::System::IO::Stream* GetDataDecompressor(::System::IO::Stream* compressedStreamToRead);
     // private System.IO.Stream OpenInReadMode(System.Boolean checkOpenable)
-    // Offset: 0x1127370
+    // Offset: 0x169EBDC
     ::System::IO::Stream* OpenInReadMode(bool checkOpenable);
     // private System.IO.Stream OpenInWriteMode()
-    // Offset: 0x1127424
+    // Offset: 0x169EC90
     ::System::IO::Stream* OpenInWriteMode();
     // private System.IO.Stream OpenInUpdateMode()
-    // Offset: 0x11275FC
+    // Offset: 0x169EE68
     ::System::IO::Stream* OpenInUpdateMode();
     // private System.Boolean IsOpenable(System.Boolean needToUncompress, System.Boolean needToLoadIntoMemory, out System.String message)
-    // Offset: 0x1128694
+    // Offset: 0x169FF00
     bool IsOpenable(bool needToUncompress, bool needToLoadIntoMemory, ByRef<::StringW> message);
     // private System.Boolean SizesTooLarge()
-    // Offset: 0x112807C
+    // Offset: 0x169F8E8
     bool SizesTooLarge();
     // private System.Boolean WriteLocalFileHeader(System.Boolean isEmptyFile)
-    // Offset: 0x1128C40
+    // Offset: 0x16A04AC
     bool WriteLocalFileHeader(bool isEmptyFile);
     // private System.Void WriteLocalFileHeaderAndDataIfNeeded()
-    // Offset: 0x1127DBC
+    // Offset: 0x169F628
     void WriteLocalFileHeaderAndDataIfNeeded();
     // private System.Void WriteCrcAndSizesInLocalHeader(System.Boolean zip64HeaderUsed)
-    // Offset: 0x112900C
+    // Offset: 0x16A0878
     void WriteCrcAndSizesInLocalHeader(bool zip64HeaderUsed);
     // private System.Void WriteDataDescriptor()
-    // Offset: 0x112932C
+    // Offset: 0x16A0B98
     void WriteDataDescriptor();
     // private System.Void UnloadStreams()
-    // Offset: 0x11272D8
+    // Offset: 0x169EB44
     void UnloadStreams();
     // private System.Void CloseStreams()
-    // Offset: 0x1127DA8
+    // Offset: 0x169F614
     void CloseStreams();
     // private System.Void VersionToExtractAtLeast(System.IO.Compression.ZipVersionNeededValues value)
-    // Offset: 0x1127010
+    // Offset: 0x169E87C
     void VersionToExtractAtLeast(::System::IO::Compression::ZipVersionNeededValues value);
     // private System.Void ThrowIfInvalidArchive()
-    // Offset: 0x11271A8
+    // Offset: 0x169EA14
     void ThrowIfInvalidArchive();
     // static private System.String GetFileName_Windows(System.String path)
-    // Offset: 0x1129458
+    // Offset: 0x16A0CC4
     static ::StringW GetFileName_Windows(::StringW path);
     // static private System.String GetFileName_Unix(System.String path)
-    // Offset: 0x11294EC
+    // Offset: 0x16A0D58
     static ::StringW GetFileName_Unix(::StringW path);
     // static System.String ParseFileName(System.String path, System.IO.Compression.ZipVersionMadeByPlatform madeByPlatform)
-    // Offset: 0x1126F3C
+    // Offset: 0x169E7A8
     static ::StringW ParseFileName(::StringW path, ::System::IO::Compression::ZipVersionMadeByPlatform madeByPlatform);
     // public override System.String ToString()
-    // Offset: 0x11277D8
+    // Offset: 0x169F044
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

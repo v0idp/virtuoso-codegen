@@ -32,10 +32,10 @@ namespace Oculus::Avatar {
     // Set static field: static public readonly System.Version version
     static void _set_version(::System::Version* value);
     // static private System.Void .cctor()
-    // Offset: 0x135C448
+    // Offset: 0x9589B0
     static void _cctor();
     // static public Oculus.Avatar.CAPI/Oculus.Avatar.Result ovrp_SendEvent2(System.String name, System.String param, System.String source)
-    // Offset: 0x135C36C
+    // Offset: 0x9588D4
     static ::Oculus::Avatar::CAPI::Result ovrp_SendEvent2(::StringW name, ::StringW param, ::StringW source);
   }; // Oculus.Avatar.CAPI/Oculus.Avatar.OVRP_1_30_0
   #pragma pack(pop)

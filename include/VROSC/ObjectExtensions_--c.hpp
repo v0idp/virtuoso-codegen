@@ -43,13 +43,13 @@ namespace VROSC {
     // Set static field: static public System.Func`2<VROSC.ScalePreset/VROSC.NotePriority,System.Int32> <>9__11_0
     static void _set_$$9__11_0(::System::Func_2<::VROSC::ScalePreset::NotePriority*, int>* value);
     // static private System.Void .cctor()
-    // Offset: 0x133F668
+    // Offset: 0x8CAC88
     static void _cctor();
     // System.Int32 <ConstructStrippedScale>b__11_0(VROSC.ScalePreset/VROSC.NotePriority x)
-    // Offset: 0x133F6D0
+    // Offset: 0x8CACF0
     int $ConstructStrippedScale$b__11_0(::VROSC::ScalePreset::NotePriority* x);
     // public System.Void .ctor()
-    // Offset: 0x133F6C8
+    // Offset: 0x8CACE8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

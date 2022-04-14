@@ -40,19 +40,19 @@ namespace GlobalNamespace {
   class VoipManager : public ::Il2CppObject {
     public:
     // public System.Void ConnectTo(System.UInt64 userID)
-    // Offset: 0x1352CD4
+    // Offset: 0x94F524
     void ConnectTo(uint64_t userID);
     // public System.Void Disconnect(System.UInt64 userID)
-    // Offset: 0x1352DB8
+    // Offset: 0x94F608
     void Disconnect(uint64_t userID);
     // private System.Void VoipConnectRequestCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x1352E38
+    // Offset: 0x94F688
     void VoipConnectRequestCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // private System.Void VoipStateChangedCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x1352FA8
+    // Offset: 0x94F7F8
     void VoipStateChangedCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // public System.Void .ctor()
-    // Offset: 0x1352BF4
+    // Offset: 0x94F444
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

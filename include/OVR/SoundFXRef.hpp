@@ -51,15 +51,7 @@ namespace OVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class SoundFXRef : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String soundFXName
     // Size: 0x8
     // Offset: 0x10
@@ -82,58 +74,58 @@ namespace OVR {
     static_assert(sizeof(::OVR::SoundFX*) == 0x8);
     public:
     // Get instance field reference: public System.String soundFXName
-    ::StringW& dyn_soundFXName();
+    [[deprecated]] ::StringW& dyn_soundFXName();
     // Get instance field reference: private System.Boolean initialized
-    bool& dyn_initialized();
+    [[deprecated]] bool& dyn_initialized();
     // Get instance field reference: private OVR.SoundFX soundFXCached
-    ::OVR::SoundFX*& dyn_soundFXCached();
+    [[deprecated]] ::OVR::SoundFX*& dyn_soundFXCached();
     // public OVR.SoundFX get_soundFX()
-    // Offset: 0x12A798C
+    // Offset: 0x18A5530
     ::OVR::SoundFX* get_soundFX();
     // public System.String get_name()
-    // Offset: 0x12A7A88
+    // Offset: 0x18A562C
     ::StringW get_name();
     // public System.Void set_name(System.String value)
-    // Offset: 0x12A7A90
+    // Offset: 0x18A5634
     void set_name(::StringW value);
     // public System.Int32 get_Length()
-    // Offset: 0x12A7A98
+    // Offset: 0x18A563C
     int get_Length();
     // public System.Boolean get_IsValid()
-    // Offset: 0x12A7ADC
+    // Offset: 0x18A5680
     bool get_IsValid();
     // private System.Void Init()
-    // Offset: 0x12A79BC
+    // Offset: 0x18A5560
     void Init();
     // public UnityEngine.AudioClip GetClip()
-    // Offset: 0x12A7B14
+    // Offset: 0x18A56B8
     ::UnityEngine::AudioClip* GetClip();
     // public System.Single GetClipLength(System.Int32 idx)
-    // Offset: 0x12A7B4C
+    // Offset: 0x18A56F0
     float GetClipLength(int idx);
     // public System.Int32 PlaySound(System.Single delaySecs)
-    // Offset: 0x12A7B8C
+    // Offset: 0x18A5730
     int PlaySound(float delaySecs);
     // public System.Int32 PlaySoundAt(UnityEngine.Vector3 pos, System.Single delaySecs, System.Single volume, System.Single pitchMultiplier)
-    // Offset: 0x129FB18
+    // Offset: 0x189D6BC
     int PlaySoundAt(::UnityEngine::Vector3 pos, float delaySecs, float volume, float pitchMultiplier);
     // public System.Void SetOnFinished(System.Action onFinished)
-    // Offset: 0x12A7BD4
+    // Offset: 0x18A5778
     void SetOnFinished(::System::Action* onFinished);
     // public System.Void SetOnFinished(System.Action`1<System.Object> onFinished, System.Object obj)
-    // Offset: 0x12A7C14
+    // Offset: 0x18A57B8
     void SetOnFinished(::System::Action_1<::Il2CppObject*>* onFinished, ::Il2CppObject* obj);
     // public System.Boolean StopSound()
-    // Offset: 0x12A7C64
+    // Offset: 0x18A5808
     bool StopSound();
     // public System.Void AttachToParent(UnityEngine.Transform parent)
-    // Offset: 0x12A7C9C
+    // Offset: 0x18A5840
     void AttachToParent(::UnityEngine::Transform* parent);
     // public System.Void DetachFromParent()
-    // Offset: 0x12A7CDC
+    // Offset: 0x18A5880
     void DetachFromParent();
     // public System.Void .ctor()
-    // Offset: 0x12A7D14
+    // Offset: 0x18A58B8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

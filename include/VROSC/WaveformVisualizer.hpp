@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class WaveformVisualizer : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _visualizationRenderer
     // Size: 0x8
     // Offset: 0x18
@@ -123,48 +115,48 @@ namespace VROSC {
     // Set static field: static private System.Int32 VisualizationXRes
     static void _set_VisualizationXRes(int value);
     // Get instance field reference: private UnityEngine.Renderer _visualizationRenderer
-    ::UnityEngine::Renderer*& dyn__visualizationRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__visualizationRenderer();
     // Get instance field reference: private System.Single _defaultVisualNormalization
-    float& dyn__defaultVisualNormalization();
+    [[deprecated]] float& dyn__defaultVisualNormalization();
     // Get instance field reference: private System.Single _visualizationWindowLength
-    float& dyn__visualizationWindowLength();
+    [[deprecated]] float& dyn__visualizationWindowLength();
     // Get instance field reference: private System.Int32 _currentVisualizationPixel
-    int& dyn__currentVisualizationPixel();
+    [[deprecated]] int& dyn__currentVisualizationPixel();
     // Get instance field reference: private System.Single _lastMeasuredPeakValue
-    float& dyn__lastMeasuredPeakValue();
+    [[deprecated]] float& dyn__lastMeasuredPeakValue();
     // Get instance field reference: private System.Int32 _visualizationStartIndex
-    int& dyn__visualizationStartIndex();
+    [[deprecated]] int& dyn__visualizationStartIndex();
     // Get instance field reference: private UnityEngine.Texture2D _visualizationTexture
-    ::UnityEngine::Texture2D*& dyn__visualizationTexture();
+    [[deprecated]] ::UnityEngine::Texture2D*& dyn__visualizationTexture();
     // Get instance field reference: private UnityEngine.Color[] _barColorArray
-    ::ArrayW<::UnityEngine::Color>& dyn__barColorArray();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__barColorArray();
     // Get instance field reference: private UnityEngine.Color[] _wipeColorArray
-    ::ArrayW<::UnityEngine::Color>& dyn__wipeColorArray();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__wipeColorArray();
     // Get instance field reference: private System.Single _pixelOverflow
-    float& dyn__pixelOverflow();
+    [[deprecated]] float& dyn__pixelOverflow();
     // public System.Void Setup()
-    // Offset: 0x13538B4
+    // Offset: 0x950104
     void Setup();
     // public System.Void Clear()
-    // Offset: 0x13539E4
+    // Offset: 0x950234
     void Clear();
     // private System.Void WipeTexture()
-    // Offset: 0x13539F0
+    // Offset: 0x950240
     void WipeTexture();
     // public System.Void CreateVisualization(System.Single[] audioData, System.Int32 startIndex, System.Int32 endIndex)
-    // Offset: 0x1353A40
+    // Offset: 0x950290
     void CreateVisualization(::ArrayW<float> audioData, int startIndex, int endIndex);
     // public System.Void UpdateVisualization(System.Single[] newData, System.Single elapsedTimeSeconds)
-    // Offset: 0x1353CE8
+    // Offset: 0x950538
     void UpdateVisualization(::ArrayW<float> newData, float elapsedTimeSeconds);
     // private System.Single GetVisualPower(System.Single[] audioData, System.Int32 startIndex, System.Int32 endIndex, System.Single normalize)
-    // Offset: 0x1353C34
+    // Offset: 0x950484
     float GetVisualPower(::ArrayW<float> audioData, int startIndex, int endIndex, float normalize);
     // private System.Void DrawPixelsToTexture(System.Int32 xPos, UnityEngine.Color[] colors)
-    // Offset: 0x1353CB4
+    // Offset: 0x950504
     void DrawPixelsToTexture(int xPos, ::ArrayW<::UnityEngine::Color> colors);
     // public System.Void .ctor()
-    // Offset: 0x1353F88
+    // Offset: 0x9507D8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

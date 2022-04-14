@@ -51,34 +51,34 @@ namespace VROSC {
     // Nested type: ::VROSC::UserUpVotesDataController::$$c__DisplayClass11_0
     class $$c__DisplayClass11_0;
     // protected VROSC.UserUpVotesDataModel get_DataModel()
-    // Offset: 0x13AC540
+    // Offset: 0x19204B4
     ::VROSC::UserUpVotesDataModel* get_DataModel();
     // public System.Void AddUpVote(System.String sessionId, System.String sessionUpVoteId, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13AC634
+    // Offset: 0x19205A8
     void AddUpVote(::StringW sessionId, ::StringW sessionUpVoteId, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void RemoveUpVote(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13ACA20
+    // Offset: 0x1920994
     void RemoveUpVote(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void RemoveLocalUpVoteWithId(System.String upVoteId)
-    // Offset: 0x13ACDC8
+    // Offset: 0x1920D3C
     void RemoveLocalUpVoteWithId(::StringW upVoteId);
     // public System.String GetUpVoteIdFromSession(System.String sessionId)
-    // Offset: 0x13ACEE8
+    // Offset: 0x1920E5C
     ::StringW GetUpVoteIdFromSession(::StringW sessionId);
     // public System.Boolean HasUpVote(System.String sessionId)
-    // Offset: 0x13AC7D8
+    // Offset: 0x192074C
     bool HasUpVote(::StringW sessionId);
     // private System.Void AddUpVoteToData(VROSC.UserUpVotesDataModel/VROSC.UpVote upVote, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13AC7F4
+    // Offset: 0x1920768
     void AddUpVoteToData(::VROSC::UserUpVotesDataModel::UpVote* upVote, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // private System.Void RemoveUpVoteFromData(VROSC.UserUpVotesDataModel/VROSC.UpVote upVote, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13ACC8C
+    // Offset: 0x1920C00
     void RemoveUpVoteFromData(::VROSC::UserUpVotesDataModel::UpVote* upVote, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // private VROSC.UserUpVotesDataModel/VROSC.UpVote GetUpVote(System.String sessionId)
-    // Offset: 0x13ACB28
+    // Offset: 0x1920A9C
     ::VROSC::UserUpVotesDataModel::UpVote* GetUpVote(::StringW sessionId);
     // public System.Void .ctor()
-    // Offset: 0x13A672C
+    // Offset: 0x191A48C
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -88,12 +88,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UserUpVotesDataController*, creationType>()));
     }
     // public override System.Void LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13ACF54
+    // Offset: 0x1920EC8
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void LoadCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Void SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13AD090
+    // Offset: 0x1921004
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void SaveCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);

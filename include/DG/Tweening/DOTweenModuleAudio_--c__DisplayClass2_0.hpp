@@ -32,15 +32,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOTweenModuleAudio::$$c__DisplayClass2_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Audio.AudioMixer target
     // Size: 0x8
     // Offset: 0x10
@@ -55,17 +47,17 @@ namespace DG::Tweening {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Audio.AudioMixer target
-    ::UnityEngine::Audio::AudioMixer*& dyn_target();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixer*& dyn_target();
     // Get instance field reference: public System.String floatName
-    ::StringW& dyn_floatName();
+    [[deprecated]] ::StringW& dyn_floatName();
     // System.Single <DOSetFloat>b__0()
-    // Offset: 0x1264474
+    // Offset: 0x17E2A34
     float $DOSetFloat$b__0();
     // System.Void <DOSetFloat>b__1(System.Single x)
-    // Offset: 0x12644B4
+    // Offset: 0x17E2A74
     void $DOSetFloat$b__1(float x);
     // public System.Void .ctor()
-    // Offset: 0x126446C
+    // Offset: 0x17D9D60
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

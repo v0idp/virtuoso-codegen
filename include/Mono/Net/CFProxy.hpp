@@ -38,15 +38,7 @@ namespace Mono::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class CFProxy : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Mono.Net.CFDictionary settings
     // Size: 0x8
     // Offset: 0x10
@@ -111,40 +103,40 @@ namespace Mono::Net {
     // Set static field: static private System.IntPtr kCFProxyTypeSOCKS
     static void _set_kCFProxyTypeSOCKS(::System::IntPtr value);
     // Get instance field reference: private Mono.Net.CFDictionary settings
-    ::Mono::Net::CFDictionary*& dyn_settings();
+    [[deprecated]] ::Mono::Net::CFDictionary*& dyn_settings();
     // public System.IntPtr get_AutoConfigurationJavaScript()
-    // Offset: 0xE6D728
+    // Offset: 0x10DF5C0
     ::System::IntPtr get_AutoConfigurationJavaScript();
     // public System.IntPtr get_AutoConfigurationUrl()
-    // Offset: 0xE6D7F0
+    // Offset: 0x10DF688
     ::System::IntPtr get_AutoConfigurationUrl();
     // public System.String get_HostName()
-    // Offset: 0xE6D8B8
+    // Offset: 0x10DF750
     ::StringW get_HostName();
     // public System.String get_Password()
-    // Offset: 0xE6DB2C
+    // Offset: 0x10DF9C4
     ::StringW get_Password();
     // public System.Int32 get_Port()
-    // Offset: 0xE6DBF8
+    // Offset: 0x10DFA90
     int get_Port();
     // public Mono.Net.CFProxyType get_ProxyType()
-    // Offset: 0xE6DCC4
+    // Offset: 0x10DFB5C
     ::Mono::Net::CFProxyType get_ProxyType();
     // public System.String get_Username()
-    // Offset: 0xE6DD90
+    // Offset: 0x10DFC28
     ::StringW get_Username();
     // static private System.Void .cctor()
-    // Offset: 0xE6D2DC
+    // Offset: 0x10DF174
     static void _cctor();
     // System.Void .ctor(Mono.Net.CFDictionary settings)
-    // Offset: 0xE6C114
+    // Offset: 0x10DDFAC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CFProxy* New_ctor(::Mono::Net::CFDictionary* settings) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::CFProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CFProxy*, creationType>(settings)));
     }
     // static private Mono.Net.CFProxyType CFProxyTypeToEnum(System.IntPtr type)
-    // Offset: 0xE6D57C
+    // Offset: 0x10DF414
     static ::Mono::Net::CFProxyType CFProxyTypeToEnum(::System::IntPtr type);
   }; // Mono.Net.CFProxy
   #pragma pack(pop)

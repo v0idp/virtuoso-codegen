@@ -38,15 +38,7 @@ namespace UnityEngine::EventSystems {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRPointerEventData : public ::UnityEngine::EventSystems::PointerEventData {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Ray worldSpaceRay
     // Size: 0x18
     // Offset: 0x138
@@ -61,11 +53,11 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Ray worldSpaceRay
-    ::UnityEngine::Ray& dyn_worldSpaceRay();
+    [[deprecated]] ::UnityEngine::Ray& dyn_worldSpaceRay();
     // Get instance field reference: public UnityEngine.Vector2 swipeStart
-    ::UnityEngine::Vector2& dyn_swipeStart();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_swipeStart();
     // public System.Void .ctor(UnityEngine.EventSystems.EventSystem eventSystem)
-    // Offset: 0xBAC494
+    // Offset: 0xE77CC4
     // Implemented from: UnityEngine.EventSystems.PointerEventData
     // Base method: System.Void PointerEventData::.ctor(UnityEngine.EventSystems.EventSystem eventSystem)
     // Base method: System.Void BaseEventData::.ctor(UnityEngine.EventSystems.EventSystem eventSystem)
@@ -75,7 +67,7 @@ namespace UnityEngine::EventSystems {
       return THROW_UNLESS((::il2cpp_utils::New<OVRPointerEventData*, creationType>(eventSystem)));
     }
     // public override System.String ToString()
-    // Offset: 0xBAC49C
+    // Offset: 0xE77CCC
     // Implemented from: UnityEngine.EventSystems.PointerEventData
     // Base method: System.String PointerEventData::ToString()
     ::StringW ToString();

@@ -36,7 +36,7 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // public System.Void Reset()
-    // Offset: 0x109E3F0
+    // Offset: 0x15E0A18
     void Reset();
   }; // DG.Tweening.Plugins.Options.NoOptions
   #pragma pack(pop)

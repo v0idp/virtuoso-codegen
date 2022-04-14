@@ -89,33 +89,33 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector4 irisColor
-    ::UnityEngine::Vector4& dyn_irisColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_irisColor();
     // Get instance field reference: public UnityEngine.Vector4 scleraColor
-    ::UnityEngine::Vector4& dyn_scleraColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_scleraColor();
     // Get instance field reference: public UnityEngine.Vector4 lashColor
-    ::UnityEngine::Vector4& dyn_lashColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_lashColor();
     // Get instance field reference: public UnityEngine.Vector4 browColor
-    ::UnityEngine::Vector4& dyn_browColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_browColor();
     // Get instance field reference: public UnityEngine.Vector4 lipColor
-    ::UnityEngine::Vector4& dyn_lipColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_lipColor();
     // Get instance field reference: public UnityEngine.Vector4 teethColor
-    ::UnityEngine::Vector4& dyn_teethColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_teethColor();
     // Get instance field reference: public UnityEngine.Vector4 gumColor
-    ::UnityEngine::Vector4& dyn_gumColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_gumColor();
     // Get instance field reference: public System.Single browLashIntensity
-    float& dyn_browLashIntensity();
+    [[deprecated]] float& dyn_browLashIntensity();
     // Get instance field reference: public System.Single lipSmoothness
-    float& dyn_lipSmoothness();
+    [[deprecated]] float& dyn_lipSmoothness();
     // static private System.Boolean VectorEquals(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
-    // Offset: 0x1357F54
+    // Offset: 0x954850
     static bool VectorEquals(::UnityEngine::Vector4 a, ::UnityEngine::Vector4 b);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0x1357F84
+    // Offset: 0x954880
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0x1358214
+    // Offset: 0x954B10
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

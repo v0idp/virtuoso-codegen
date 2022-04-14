@@ -42,12 +42,12 @@ namespace System::Threading {
       return m_count;
     }
     // Get instance field reference: private System.Int32 m_count
-    int& dyn_m_count();
+    [[deprecated]] int& dyn_m_count();
     // public System.Boolean get_NextSpinWillYield()
-    // Offset: 0xFF0480
+    // Offset: 0x12530A4
     bool get_NextSpinWillYield();
     // public System.Void SpinOnce()
-    // Offset: 0xFF03B0
+    // Offset: 0x1252FD4
     void SpinOnce();
   }; // System.Threading.SpinWait
   #pragma pack(pop)

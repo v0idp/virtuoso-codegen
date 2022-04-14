@@ -60,7 +60,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.StackTraceLogType Full
     static void _set_Full(::UnityEngine::StackTraceLogType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.StackTraceLogType
   #pragma pack(pop)
   static check_size<sizeof(StackTraceLogType), 0 + sizeof(int)> __UnityEngine_StackTraceLogTypeSizeCheck;

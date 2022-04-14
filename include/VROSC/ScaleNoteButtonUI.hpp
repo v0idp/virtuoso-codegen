@@ -62,15 +62,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScaleNoteButtonUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Note _note
     // Size: 0x4
     // Offset: 0x18
@@ -131,49 +123,49 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Note _note
-    ::VROSC::Note& dyn__note();
+    [[deprecated]] ::VROSC::Note& dyn__note();
     // Get instance field reference: private VROSC.UIToggle _toggleButton
-    ::VROSC::UIToggle*& dyn__toggleButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__toggleButton();
     // Get instance field reference: private VROSC.UIToggle _startNoteToggle
-    ::VROSC::UIToggle*& dyn__startNoteToggle();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__startNoteToggle();
     // Get instance field reference: private VROSC.ControllerInputNode _inputNode
-    ::VROSC::ControllerInputNode*& dyn__inputNode();
+    [[deprecated]] ::VROSC::ControllerInputNode*& dyn__inputNode();
     // Get instance field reference: private TMPro.TextMeshPro _display
-    ::TMPro::TextMeshPro*& dyn__display();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__display();
     // Get instance field reference: private VROSC.UI.UIScalePanelButtonColoring _backgroundColoring
-    ::VROSC::UI::UIScalePanelButtonColoring*& dyn__backgroundColoring();
+    [[deprecated]] ::VROSC::UI::UIScalePanelButtonColoring*& dyn__backgroundColoring();
     // Get instance field reference: public System.Action`1<VROSC.Note> OnSetAsStartNode
-    ::System::Action_1<::VROSC::Note>*& dyn_OnSetAsStartNode();
+    [[deprecated]] ::System::Action_1<::VROSC::Note>*& dyn_OnSetAsStartNode();
     // Get instance field reference: public System.Action`2<VROSC.Note,System.Boolean> OnSetNoteActive
-    ::System::Action_2<::VROSC::Note, bool>*& dyn_OnSetNoteActive();
+    [[deprecated]] ::System::Action_2<::VROSC::Note, bool>*& dyn_OnSetNoteActive();
     // Get instance field reference: public System.Action`2<VROSC.Note,System.Boolean> OnNoteHovered
-    ::System::Action_2<::VROSC::Note, bool>*& dyn_OnNoteHovered();
+    [[deprecated]] ::System::Action_2<::VROSC::Note, bool>*& dyn_OnNoteHovered();
     // private System.Void Start()
-    // Offset: 0x13DE450
+    // Offset: 0xDE2BC4
     void Start();
     // public System.Void SetAxis(System.Int32 axis)
-    // Offset: 0x13DE774
+    // Offset: 0xDE2EE8
     void SetAxis(int axis);
     // private System.Void AssignStartNote(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x13DE790
+    // Offset: 0xDE2F04
     void AssignStartNote(::VROSC::InputDevice* device, bool active);
     // public System.Void SetToScale(VROSC.Scale scale, VROSC.Note startNote)
-    // Offset: 0x13DE804
+    // Offset: 0xDE2F78
     void SetToScale(::VROSC::Scale scale, ::VROSC::Note startNote);
     // private System.Void Toggle(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x13DE914
+    // Offset: 0xDE3088
     void Toggle(::VROSC::InputDevice* device, bool active);
     // protected System.Void OnDestroy()
-    // Offset: 0x13DE994
+    // Offset: 0xDE3108
     void OnDestroy();
     // private System.Void SetText()
-    // Offset: 0x13DE998
+    // Offset: 0xDE310C
     void SetText();
     // private System.Void IsHovering(System.Boolean hovering)
-    // Offset: 0x13DEB08
+    // Offset: 0xDE327C
     void IsHovering(bool hovering);
     // public System.Void .ctor()
-    // Offset: 0x13DEB7C
+    // Offset: 0xDE32F0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

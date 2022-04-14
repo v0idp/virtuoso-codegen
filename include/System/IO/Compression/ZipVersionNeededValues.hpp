@@ -72,7 +72,7 @@ namespace System::IO::Compression {
     // Set static field: static public System.IO.Compression.ZipVersionNeededValues Zip64
     static void _set_Zip64(::System::IO::Compression::ZipVersionNeededValues value);
     // Get instance field reference: public System.UInt16 value__
-    uint16_t& dyn_value__();
+    [[deprecated]] uint16_t& dyn_value__();
   }; // System.IO.Compression.ZipVersionNeededValues
   #pragma pack(pop)
   static check_size<sizeof(ZipVersionNeededValues), 0 + sizeof(uint16_t)> __System_IO_Compression_ZipVersionNeededValuesSizeCheck;

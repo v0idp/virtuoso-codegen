@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UpdateTouchablesBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TouchableObjectsController _touchables
     // Size: 0x8
     // Offset: 0x10
@@ -63,12 +55,12 @@ namespace VROSC {
       return touchables;
     }
     // Get instance field reference: private VROSC.TouchableObjectsController _touchables
-    ::VROSC::TouchableObjectsController*& dyn__touchables();
+    [[deprecated]] ::VROSC::TouchableObjectsController*& dyn__touchables();
     // public System.Void Setup(VROSC.TouchableObjectsController touchables)
-    // Offset: 0x13A5E90
+    // Offset: 0x1919C9C
     void Setup(::VROSC::TouchableObjectsController* touchables);
     // public System.Void .ctor()
-    // Offset: 0x13A5EC4
+    // Offset: 0x1919CD0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -78,7 +70,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UpdateTouchablesBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x13A5EB0
+    // Offset: 0x1919CBC
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

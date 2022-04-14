@@ -46,104 +46,96 @@ namespace Facebook::WitAi::Events {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoiceEvents : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x5B15B0
-    // [TooltipAttribute] Offset: 0x5B15B0
+    // [HeaderAttribute] Offset: 0x6C76E0
+    // [TooltipAttribute] Offset: 0x6C76E0
     // public Facebook.WitAi.Events.WitResponseEvent OnResponse
     // Size: 0x8
     // Offset: 0x10
     ::Facebook::WitAi::Events::WitResponseEvent* OnResponse;
     // Field size check
     static_assert(sizeof(::Facebook::WitAi::Events::WitResponseEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B1610
+    // [TooltipAttribute] Offset: 0x6C7740
     // public Facebook.WitAi.Events.WitErrorEvent OnError
     // Size: 0x8
     // Offset: 0x18
     ::Facebook::WitAi::Events::WitErrorEvent* OnError;
     // Field size check
     static_assert(sizeof(::Facebook::WitAi::Events::WitErrorEvent*) == 0x8);
-    // [HeaderAttribute] Offset: 0x5B1648
-    // [TooltipAttribute] Offset: 0x5B1648
+    // [HeaderAttribute] Offset: 0x6C7778
+    // [TooltipAttribute] Offset: 0x6C7778
     // public Facebook.WitAi.Events.WitMicLevelChangedEvent OnMicLevelChanged
     // Size: 0x8
     // Offset: 0x20
     ::Facebook::WitAi::Events::WitMicLevelChangedEvent* OnMicLevelChanged;
     // Field size check
     static_assert(sizeof(::Facebook::WitAi::Events::WitMicLevelChangedEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B16A8
-    // [HeaderAttribute] Offset: 0x5B16A8
+    // [TooltipAttribute] Offset: 0x6C77D8
+    // [HeaderAttribute] Offset: 0x6C77D8
     // public Facebook.WitAi.Events.WitRequestCreatedEvent OnRequestCreated
     // Size: 0x8
     // Offset: 0x28
     ::Facebook::WitAi::Events::WitRequestCreatedEvent* OnRequestCreated;
     // Field size check
     static_assert(sizeof(::Facebook::WitAi::Events::WitRequestCreatedEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B1708
+    // [TooltipAttribute] Offset: 0x6C7838
     // public UnityEngine.Events.UnityEvent OnStartListening
     // Size: 0x8
     // Offset: 0x30
     ::UnityEngine::Events::UnityEvent* OnStartListening;
     // Field size check
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B1740
+    // [TooltipAttribute] Offset: 0x6C7870
     // public UnityEngine.Events.UnityEvent OnStoppedListening
     // Size: 0x8
     // Offset: 0x38
     ::UnityEngine::Events::UnityEvent* OnStoppedListening;
     // Field size check
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B1778
+    // [TooltipAttribute] Offset: 0x6C78A8
     // public UnityEngine.Events.UnityEvent OnStoppedListeningDueToInactivity
     // Size: 0x8
     // Offset: 0x40
     ::UnityEngine::Events::UnityEvent* OnStoppedListeningDueToInactivity;
     // Field size check
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B17B0
+    // [TooltipAttribute] Offset: 0x6C78E0
     // public UnityEngine.Events.UnityEvent OnStoppedListeningDueToTimeout
     // Size: 0x8
     // Offset: 0x48
     ::UnityEngine::Events::UnityEvent* OnStoppedListeningDueToTimeout;
     // Field size check
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B17E8
+    // [TooltipAttribute] Offset: 0x6C7918
     // public UnityEngine.Events.UnityEvent OnStoppedListeningDueToDeactivation
     // Size: 0x8
     // Offset: 0x50
     ::UnityEngine::Events::UnityEvent* OnStoppedListeningDueToDeactivation;
     // Field size check
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B1820
+    // [TooltipAttribute] Offset: 0x6C7950
     // public UnityEngine.Events.UnityEvent OnMicDataSent
     // Size: 0x8
     // Offset: 0x58
     ::UnityEngine::Events::UnityEvent* OnMicDataSent;
     // Field size check
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B1858
+    // [TooltipAttribute] Offset: 0x6C7988
     // public UnityEngine.Events.UnityEvent OnMinimumWakeThresholdHit
     // Size: 0x8
     // Offset: 0x60
     ::UnityEngine::Events::UnityEvent* OnMinimumWakeThresholdHit;
     // Field size check
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
-    // [HeaderAttribute] Offset: 0x5B1890
-    // [TooltipAttribute] Offset: 0x5B1890
+    // [HeaderAttribute] Offset: 0x6C79C0
+    // [TooltipAttribute] Offset: 0x6C79C0
     // public Facebook.WitAi.Events.WitTranscriptionEvent OnPartialTranscription
     // Size: 0x8
     // Offset: 0x68
     ::Facebook::WitAi::Events::WitTranscriptionEvent* OnPartialTranscription;
     // Field size check
     static_assert(sizeof(::Facebook::WitAi::Events::WitTranscriptionEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5B18F0
+    // [TooltipAttribute] Offset: 0x6C7A20
     // public Facebook.WitAi.Events.WitTranscriptionEvent OnFullTranscription
     // Size: 0x8
     // Offset: 0x70
@@ -152,33 +144,33 @@ namespace Facebook::WitAi::Events {
     static_assert(sizeof(::Facebook::WitAi::Events::WitTranscriptionEvent*) == 0x8);
     public:
     // Get instance field reference: public Facebook.WitAi.Events.WitResponseEvent OnResponse
-    ::Facebook::WitAi::Events::WitResponseEvent*& dyn_OnResponse();
+    [[deprecated]] ::Facebook::WitAi::Events::WitResponseEvent*& dyn_OnResponse();
     // Get instance field reference: public Facebook.WitAi.Events.WitErrorEvent OnError
-    ::Facebook::WitAi::Events::WitErrorEvent*& dyn_OnError();
+    [[deprecated]] ::Facebook::WitAi::Events::WitErrorEvent*& dyn_OnError();
     // Get instance field reference: public Facebook.WitAi.Events.WitMicLevelChangedEvent OnMicLevelChanged
-    ::Facebook::WitAi::Events::WitMicLevelChangedEvent*& dyn_OnMicLevelChanged();
+    [[deprecated]] ::Facebook::WitAi::Events::WitMicLevelChangedEvent*& dyn_OnMicLevelChanged();
     // Get instance field reference: public Facebook.WitAi.Events.WitRequestCreatedEvent OnRequestCreated
-    ::Facebook::WitAi::Events::WitRequestCreatedEvent*& dyn_OnRequestCreated();
+    [[deprecated]] ::Facebook::WitAi::Events::WitRequestCreatedEvent*& dyn_OnRequestCreated();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStartListening
-    ::UnityEngine::Events::UnityEvent*& dyn_OnStartListening();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStartListening();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStoppedListening
-    ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListening();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListening();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStoppedListeningDueToInactivity
-    ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToInactivity();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToInactivity();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStoppedListeningDueToTimeout
-    ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToTimeout();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToTimeout();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStoppedListeningDueToDeactivation
-    ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToDeactivation();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToDeactivation();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnMicDataSent
-    ::UnityEngine::Events::UnityEvent*& dyn_OnMicDataSent();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnMicDataSent();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnMinimumWakeThresholdHit
-    ::UnityEngine::Events::UnityEvent*& dyn_OnMinimumWakeThresholdHit();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnMinimumWakeThresholdHit();
     // Get instance field reference: public Facebook.WitAi.Events.WitTranscriptionEvent OnPartialTranscription
-    ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_OnPartialTranscription();
+    [[deprecated]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_OnPartialTranscription();
     // Get instance field reference: public Facebook.WitAi.Events.WitTranscriptionEvent OnFullTranscription
-    ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_OnFullTranscription();
+    [[deprecated]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_OnFullTranscription();
     // public System.Void .ctor()
-    // Offset: 0x10F9EC0
+    // Offset: 0x1670728
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

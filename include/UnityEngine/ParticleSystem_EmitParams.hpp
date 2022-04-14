@@ -30,84 +30,84 @@ namespace UnityEngine {
   struct ParticleSystem::EmitParams/*, public ::System::ValueType*/ {
     public:
     public:
-    // [NativeNameAttribute] Offset: 0x5B857C
+    // [NativeNameAttribute] Offset: 0x6CE6AC
     // private UnityEngine.ParticleSystem/UnityEngine.Particle m_Particle
     // Size: 0x84
     // Offset: 0x0
     ::UnityEngine::ParticleSystem::Particle m_Particle;
     // Field size check
     static_assert(sizeof(::UnityEngine::ParticleSystem::Particle) == 0x84);
-    // [NativeNameAttribute] Offset: 0x5B85B4
+    // [NativeNameAttribute] Offset: 0x6CE6E4
     // private System.Boolean m_PositionSet
     // Size: 0x1
     // Offset: 0x84
     bool m_PositionSet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B85EC
+    // [NativeNameAttribute] Offset: 0x6CE71C
     // private System.Boolean m_VelocitySet
     // Size: 0x1
     // Offset: 0x85
     bool m_VelocitySet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B8624
+    // [NativeNameAttribute] Offset: 0x6CE754
     // private System.Boolean m_AxisOfRotationSet
     // Size: 0x1
     // Offset: 0x86
     bool m_AxisOfRotationSet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B865C
+    // [NativeNameAttribute] Offset: 0x6CE78C
     // private System.Boolean m_RotationSet
     // Size: 0x1
     // Offset: 0x87
     bool m_RotationSet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B8694
+    // [NativeNameAttribute] Offset: 0x6CE7C4
     // private System.Boolean m_AngularVelocitySet
     // Size: 0x1
     // Offset: 0x88
     bool m_AngularVelocitySet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B86CC
+    // [NativeNameAttribute] Offset: 0x6CE7FC
     // private System.Boolean m_StartSizeSet
     // Size: 0x1
     // Offset: 0x89
     bool m_StartSizeSet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B8704
+    // [NativeNameAttribute] Offset: 0x6CE834
     // private System.Boolean m_StartColorSet
     // Size: 0x1
     // Offset: 0x8A
     bool m_StartColorSet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B873C
+    // [NativeNameAttribute] Offset: 0x6CE86C
     // private System.Boolean m_RandomSeedSet
     // Size: 0x1
     // Offset: 0x8B
     bool m_RandomSeedSet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B8774
+    // [NativeNameAttribute] Offset: 0x6CE8A4
     // private System.Boolean m_StartLifetimeSet
     // Size: 0x1
     // Offset: 0x8C
     bool m_StartLifetimeSet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B87AC
+    // [NativeNameAttribute] Offset: 0x6CE8DC
     // private System.Boolean m_MeshIndexSet
     // Size: 0x1
     // Offset: 0x8D
     bool m_MeshIndexSet;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [NativeNameAttribute] Offset: 0x5B87E4
+    // [NativeNameAttribute] Offset: 0x6CE914
     // private System.Boolean m_ApplyShapeToPosition
     // Size: 0x1
     // Offset: 0x8E
@@ -122,34 +122,34 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.ParticleSystem/UnityEngine.Particle m_Particle
-    ::UnityEngine::ParticleSystem::Particle& dyn_m_Particle();
+    [[deprecated]] ::UnityEngine::ParticleSystem::Particle& dyn_m_Particle();
     // Get instance field reference: private System.Boolean m_PositionSet
-    bool& dyn_m_PositionSet();
+    [[deprecated]] bool& dyn_m_PositionSet();
     // Get instance field reference: private System.Boolean m_VelocitySet
-    bool& dyn_m_VelocitySet();
+    [[deprecated]] bool& dyn_m_VelocitySet();
     // Get instance field reference: private System.Boolean m_AxisOfRotationSet
-    bool& dyn_m_AxisOfRotationSet();
+    [[deprecated]] bool& dyn_m_AxisOfRotationSet();
     // Get instance field reference: private System.Boolean m_RotationSet
-    bool& dyn_m_RotationSet();
+    [[deprecated]] bool& dyn_m_RotationSet();
     // Get instance field reference: private System.Boolean m_AngularVelocitySet
-    bool& dyn_m_AngularVelocitySet();
+    [[deprecated]] bool& dyn_m_AngularVelocitySet();
     // Get instance field reference: private System.Boolean m_StartSizeSet
-    bool& dyn_m_StartSizeSet();
+    [[deprecated]] bool& dyn_m_StartSizeSet();
     // Get instance field reference: private System.Boolean m_StartColorSet
-    bool& dyn_m_StartColorSet();
+    [[deprecated]] bool& dyn_m_StartColorSet();
     // Get instance field reference: private System.Boolean m_RandomSeedSet
-    bool& dyn_m_RandomSeedSet();
+    [[deprecated]] bool& dyn_m_RandomSeedSet();
     // Get instance field reference: private System.Boolean m_StartLifetimeSet
-    bool& dyn_m_StartLifetimeSet();
+    [[deprecated]] bool& dyn_m_StartLifetimeSet();
     // Get instance field reference: private System.Boolean m_MeshIndexSet
-    bool& dyn_m_MeshIndexSet();
+    [[deprecated]] bool& dyn_m_MeshIndexSet();
     // Get instance field reference: private System.Boolean m_ApplyShapeToPosition
-    bool& dyn_m_ApplyShapeToPosition();
+    [[deprecated]] bool& dyn_m_ApplyShapeToPosition();
     // public System.Void set_position(UnityEngine.Vector3 value)
-    // Offset: 0x12FAF90
+    // Offset: 0x1900898
     void set_position(::UnityEngine::Vector3 value);
     // public System.Void set_startColor(UnityEngine.Color32 value)
-    // Offset: 0x12FAFA4
+    // Offset: 0x19008AC
     void set_startColor(::UnityEngine::Color32 value);
   }; // UnityEngine.ParticleSystem/UnityEngine.EmitParams
   #pragma pack(pop)

@@ -35,21 +35,21 @@ namespace RSG {
     // Offset: 0xFFFFFFFFFFFFFFFF
     int get_Id() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPendingPromise_1::get_Id");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "get_Id", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPendingPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<int, false>(this, ___internal__method);
     }
     // public System.Void Resolve(PromisedT value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Resolve(PromisedT value) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPendingPromise_1::Resolve");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Resolve", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(value)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPendingPromise_1<PromisedT>*), -1));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, value);
     }
     // public System.Void ReportProgress(System.Single progress)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void ReportProgress(float progress) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPendingPromise_1::ReportProgress");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ReportProgress", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(progress)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPendingPromise_1<PromisedT>*), -1));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, progress);
     }
   }; // RSG.IPendingPromise`1

@@ -35,15 +35,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class EffectLightmapping : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject _normalLighting
     // Size: 0x8
     // Offset: 0x18
@@ -60,14 +52,14 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _normalLighting
-    ::UnityEngine::GameObject*& dyn__normalLighting();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__normalLighting();
     // Get instance field reference: private UnityEngine.GameObject _effectLighting
-    ::UnityEngine::GameObject*& dyn__effectLighting();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__effectLighting();
     // public System.Void ShowEffectLighting(System.Boolean showEffects)
-    // Offset: 0x1310FD0
+    // Offset: 0x8EAD50
     void ShowEffectLighting(bool showEffects);
     // public System.Void .ctor()
-    // Offset: 0x131101C
+    // Offset: 0x8EAD9C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

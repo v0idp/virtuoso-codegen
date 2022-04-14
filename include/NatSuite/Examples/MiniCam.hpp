@@ -58,16 +58,8 @@ namespace NatSuite::Examples {
     struct $CapturePhoto$d__8;
     // Nested type: ::NatSuite::Examples::MiniCam::$SwitchCamera$d__9
     struct $SwitchCamera$d__9;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x6782D0
+    // [HeaderAttribute] Offset: 0x78EB44
     // public UnityEngine.UI.RawImage previewPanel
     // Size: 0x8
     // Offset: 0x18
@@ -80,7 +72,7 @@ namespace NatSuite::Examples {
     ::UnityEngine::UI::AspectRatioFitter* previewAspectFitter;
     // Field size check
     static_assert(sizeof(::UnityEngine::UI::AspectRatioFitter*) == 0x8);
-    // [HeaderAttribute] Offset: 0x678308
+    // [HeaderAttribute] Offset: 0x78EB7C
     // public UnityEngine.UI.RawImage photoPanel
     // Size: 0x8
     // Offset: 0x28
@@ -115,36 +107,36 @@ namespace NatSuite::Examples {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.RawImage previewPanel
-    ::UnityEngine::UI::RawImage*& dyn_previewPanel();
+    [[deprecated]] ::UnityEngine::UI::RawImage*& dyn_previewPanel();
     // Get instance field reference: public UnityEngine.UI.AspectRatioFitter previewAspectFitter
-    ::UnityEngine::UI::AspectRatioFitter*& dyn_previewAspectFitter();
+    [[deprecated]] ::UnityEngine::UI::AspectRatioFitter*& dyn_previewAspectFitter();
     // Get instance field reference: public UnityEngine.UI.RawImage photoPanel
-    ::UnityEngine::UI::RawImage*& dyn_photoPanel();
+    [[deprecated]] ::UnityEngine::UI::RawImage*& dyn_photoPanel();
     // Get instance field reference: public UnityEngine.UI.AspectRatioFitter photoAspectFitter
-    ::UnityEngine::UI::AspectRatioFitter*& dyn_photoAspectFitter();
+    [[deprecated]] ::UnityEngine::UI::AspectRatioFitter*& dyn_photoAspectFitter();
     // Get instance field reference: public UnityEngine.UI.Image flashIcon
-    ::UnityEngine::UI::Image*& dyn_flashIcon();
+    [[deprecated]] ::UnityEngine::UI::Image*& dyn_flashIcon();
     // Get instance field reference: public UnityEngine.UI.Image switchIcon
-    ::UnityEngine::UI::Image*& dyn_switchIcon();
+    [[deprecated]] ::UnityEngine::UI::Image*& dyn_switchIcon();
     // Get instance field reference: private NatSuite.Devices.MediaDeviceQuery deviceQuery
-    ::NatSuite::Devices::MediaDeviceQuery*& dyn_deviceQuery();
+    [[deprecated]] ::NatSuite::Devices::MediaDeviceQuery*& dyn_deviceQuery();
     // private System.Void Start()
-    // Offset: 0x8B54A8
+    // Offset: 0xAC90A8
     void Start();
     // public System.Void CapturePhoto()
-    // Offset: 0x8B5568
+    // Offset: 0xAC9168
     void CapturePhoto();
     // public System.Void SwitchCamera()
-    // Offset: 0x8B5628
+    // Offset: 0xAC9228
     void SwitchCamera();
     // public System.Void FocusCamera(UnityEngine.EventSystems.BaseEventData e)
-    // Offset: 0x8B56EC
+    // Offset: 0xAC92EC
     void FocusCamera(::UnityEngine::EventSystems::BaseEventData* e);
     // public System.Void ToggleFlashMode()
-    // Offset: 0x8B592C
+    // Offset: 0xAC952C
     void ToggleFlashMode();
     // public System.Void .ctor()
-    // Offset: 0x8B5A40
+    // Offset: 0xAC9640
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

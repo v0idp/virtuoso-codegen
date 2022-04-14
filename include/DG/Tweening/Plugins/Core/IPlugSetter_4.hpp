@@ -40,28 +40,28 @@ namespace DG::Tweening::Plugins::Core {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::DG::Tweening::Core::DOGetter_1<T1>* Getter() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::IPlugSetter_4::Getter");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Getter", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::IPlugSetter_4<T1, T2, TPlugin, TPlugOptions>*), -1)));
       return ::il2cpp_utils::RunMethodRethrow<::DG::Tweening::Core::DOGetter_1<T1>*, false>(this, ___internal__method);
     }
     // public DG.Tweening.Core.DOSetter`1<T1> Setter()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::DG::Tweening::Core::DOSetter_1<T1>* Setter() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::IPlugSetter_4::Setter");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Setter", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::IPlugSetter_4<T1, T2, TPlugin, TPlugOptions>*), -1)));
       return ::il2cpp_utils::RunMethodRethrow<::DG::Tweening::Core::DOSetter_1<T1>*, false>(this, ___internal__method);
     }
     // public T2 EndValue()
     // Offset: 0xFFFFFFFFFFFFFFFF
     T2 EndValue() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::IPlugSetter_4::EndValue");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "EndValue", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::IPlugSetter_4<T1, T2, TPlugin, TPlugOptions>*), -1)));
       return ::il2cpp_utils::RunMethodRethrow<T2, false>(this, ___internal__method);
     }
     // public TPlugOptions GetOptions()
     // Offset: 0xFFFFFFFFFFFFFFFF
     TPlugOptions GetOptions() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::IPlugSetter_4::GetOptions");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "GetOptions", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::IPlugSetter_4<T1, T2, TPlugin, TPlugOptions>*), -1)));
       return ::il2cpp_utils::RunMethodRethrow<TPlugOptions, false>(this, ___internal__method);
     }
   }; // DG.Tweening.Plugins.Core.IPlugSetter`4

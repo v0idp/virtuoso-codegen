@@ -63,15 +63,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::Key::Type
     struct Type;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private PunchKeyData _data
     // Size: 0x8
     // Offset: 0x18
@@ -200,89 +192,89 @@ namespace GlobalNamespace {
     // Set static field: static public System.Action`2<Key,System.Single> OnKeyHit
     static void _set_OnKeyHit(::System::Action_2<::GlobalNamespace::Key*, float>* value);
     // Get instance field reference: private PunchKeyData _data
-    ::GlobalNamespace::PunchKeyData*& dyn__data();
+    [[deprecated]] ::GlobalNamespace::PunchKeyData*& dyn__data();
     // Get instance field reference: private VROSC.UI.UIInteractableColoring _coloring
-    ::VROSC::UI::UIInteractableColoring*& dyn__coloring();
+    [[deprecated]] ::VROSC::UI::UIInteractableColoring*& dyn__coloring();
     // Get instance field reference: private UnityEngine.Collider _collider
-    ::UnityEngine::Collider*& dyn__collider();
+    [[deprecated]] ::UnityEngine::Collider*& dyn__collider();
     // Get instance field reference: private UnityEngine.Rigidbody _rigidBody
-    ::UnityEngine::Rigidbody*& dyn__rigidBody();
+    [[deprecated]] ::UnityEngine::Rigidbody*& dyn__rigidBody();
     // Get instance field reference: public System.Boolean KeyPressed
-    bool& dyn_KeyPressed();
+    [[deprecated]] bool& dyn_KeyPressed();
     // Get instance field reference: private System.Single _startRepeatedPressesDelay
-    float& dyn__startRepeatedPressesDelay();
+    [[deprecated]] float& dyn__startRepeatedPressesDelay();
     // Get instance field reference: private System.Single _repeatedPressDelay
-    float& dyn__repeatedPressDelay();
+    [[deprecated]] float& dyn__repeatedPressDelay();
     // Get instance field reference: protected UnityEngine.Transform initialPosition
-    ::UnityEngine::Transform*& dyn_initialPosition();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_initialPosition();
     // Get instance field reference: private TMPro.TextMeshPro keyCapText
-    ::TMPro::TextMeshPro*& dyn_keyCapText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn_keyCapText();
     // Get instance field reference: private UnityEngine.Vector3 initialLocalPosition
-    ::UnityEngine::Vector3& dyn_initialLocalPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_initialLocalPosition();
     // Get instance field reference: private UnityEngine.Quaternion initialLocalRotation
-    ::UnityEngine::Quaternion& dyn_initialLocalRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_initialLocalRotation();
     // Get instance field reference: private UnityEngine.Vector3 constrainedPosition
-    ::UnityEngine::Vector3& dyn_constrainedPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_constrainedPosition();
     // Get instance field reference: private UnityEngine.Quaternion constrainedRotation
-    ::UnityEngine::Quaternion& dyn_constrainedRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_constrainedRotation();
     // Get instance field reference: private System.Boolean checkForButton
-    bool& dyn_checkForButton();
+    [[deprecated]] bool& dyn_checkForButton();
     // Get instance field reference: private System.Single currentDistance
-    float& dyn_currentDistance();
+    [[deprecated]] float& dyn_currentDistance();
     // Get instance field reference: private System.Single _pressedTimer
-    float& dyn__pressedTimer();
+    [[deprecated]] float& dyn__pressedTimer();
     // Get instance field reference: private System.Boolean _isRepeating
-    bool& dyn__isRepeating();
+    [[deprecated]] bool& dyn__isRepeating();
     // public Key/Type get_KeyType()
-    // Offset: 0x1387A94
+    // Offset: 0x194B3A8
     ::GlobalNamespace::Key::Type get_KeyType();
     // public System.String get_KeyCapChar()
-    // Offset: 0x1387AB0
+    // Offset: 0x194B3C4
     ::StringW get_KeyCapChar();
     // public System.String get_AlterateKeyCapChar()
-    // Offset: 0x1387ACC
+    // Offset: 0x194B3E0
     ::StringW get_AlterateKeyCapChar();
     // public System.String get_OutputChar()
-    // Offset: 0x1387AE8
+    // Offset: 0x194B3FC
     ::StringW get_OutputChar();
     // private System.Void Start()
-    // Offset: 0x1387B64
+    // Offset: 0x194B478
     void Start();
     // private System.Void OnDestroy()
-    // Offset: 0x1387FB8
+    // Offset: 0x194B8CC
     void OnDestroy();
     // private System.Void FixedUpdate()
-    // Offset: 0x1388090
+    // Offset: 0x194B9A4
     void FixedUpdate();
     // private System.Void Update()
-    // Offset: 0x1388248
+    // Offset: 0x194BB5C
     void Update();
     // private System.Void LateUpdate()
-    // Offset: 0x138843C
+    // Offset: 0x194BD50
     void LateUpdate();
     // private System.Void ChangeKeyColorOnPress()
-    // Offset: 0x13883AC
+    // Offset: 0x194BCC0
     void ChangeKeyColorOnPress();
     // private System.Void ConstrainPosition()
-    // Offset: 0x13881AC
+    // Offset: 0x194BAC0
     void ConstrainPosition();
     // public System.Void SwitchKeycapCharCase()
-    // Offset: 0x1387E84
+    // Offset: 0x194B798
     void SwitchKeycapCharCase();
     // public System.Void SwitchToSymbols()
-    // Offset: 0x1388440
+    // Offset: 0x194BD54
     void SwitchToSymbols();
     // public System.Void HitKey(System.Boolean send)
-    // Offset: 0x1388548
+    // Offset: 0x194BE5C
     void HitKey(bool send);
     // private System.Void SetTextToDefault()
-    // Offset: 0x1388664
+    // Offset: 0x194BF78
     void SetTextToDefault();
     // private System.Void SettingsUpdated()
-    // Offset: 0x1387F58
+    // Offset: 0x194B86C
     void SettingsUpdated();
     // public System.Void .ctor()
-    // Offset: 0x13886E4
+    // Offset: 0x194BFF8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

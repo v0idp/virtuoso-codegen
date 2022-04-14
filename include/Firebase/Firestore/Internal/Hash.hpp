@@ -23,10 +23,10 @@ namespace Firebase::Firestore::Internal {
   class Hash : public ::Il2CppObject {
     public:
     // static System.Int32 LongHash(System.Int64 l)
-    // Offset: 0xC3E38C
+    // Offset: 0xD62184
     static int LongHash(int64_t l);
     // static System.Int32 DoubleBitwiseHash(System.Double d)
-    // Offset: 0xC3DCF4
+    // Offset: 0xD61B04
     static int DoubleBitwiseHash(double d);
   }; // Firebase.Firestore.Internal.Hash
   #pragma pack(pop)

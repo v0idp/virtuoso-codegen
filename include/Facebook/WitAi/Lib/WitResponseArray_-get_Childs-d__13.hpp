@@ -40,15 +40,7 @@ namespace Facebook::WitAi::Lib {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class WitResponseArray::$get_Childs$d__13 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerable_1<::Facebook::WitAi::Lib::WitResponseNode*>, public ::System::Collections::Generic::IEnumerator_1<::Facebook::WitAi::Lib::WitResponseNode*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -87,45 +79,45 @@ namespace Facebook::WitAi::Lib {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Facebook::WitAi::Lib::WitResponseNode*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private Facebook.WitAi.Lib.WitResponseNode <>2__current
-    ::Facebook::WitAi::Lib::WitResponseNode*& dyn_$$2__current();
+    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    int& dyn_$$l__initialThreadId();
+    [[deprecated]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public Facebook.WitAi.Lib.WitResponseArray <>4__this
-    ::Facebook::WitAi::Lib::WitResponseArray*& dyn_$$4__this();
+    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseArray*& dyn_$$4__this();
     // Get instance field reference: private System.Collections.Generic.List`1/System.Collections.Generic.Enumerator<Facebook.WitAi.Lib.WitResponseNode> <>7__wrap1
-    typename ::System::Collections::Generic::List_1<::Facebook::WitAi::Lib::WitResponseNode*>::Enumerator& dyn_$$7__wrap1();
+    [[deprecated]] typename ::System::Collections::Generic::List_1<::Facebook::WitAi::Lib::WitResponseNode*>::Enumerator& dyn_$$7__wrap1();
     // private Facebook.WitAi.Lib.WitResponseNode System.Collections.Generic.IEnumerator<Facebook.WitAi.Lib.WitResponseNode>.get_Current()
-    // Offset: 0x11078A8
+    // Offset: 0x167E114
     ::Facebook::WitAi::Lib::WitResponseNode* System_Collections_Generic_IEnumerator$Facebook_WitAi_Lib_WitResponseNode$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x11078F0
+    // Offset: 0x167E15C
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x1100AC8
+    // Offset: 0x1677334
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseArray::$get_Childs$d__13* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseArray::$get_Childs$d__13::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitResponseArray::$get_Childs$d__13*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x11076C4
+    // Offset: 0x167DF30
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x1107734
+    // Offset: 0x167DFA0
     bool MoveNext();
     // private System.Void <>m__Finally1()
-    // Offset: 0x11076E0
+    // Offset: 0x167DF4C
     void $$m__Finally1();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x11078B0
+    // Offset: 0x167E11C
     void System_Collections_IEnumerator_Reset();
     // private System.Collections.Generic.IEnumerator`1<Facebook.WitAi.Lib.WitResponseNode> System.Collections.Generic.IEnumerable<Facebook.WitAi.Lib.WitResponseNode>.GetEnumerator()
-    // Offset: 0x11078F8
+    // Offset: 0x167E164
     ::System::Collections::Generic::IEnumerator_1<::Facebook::WitAi::Lib::WitResponseNode*>* System_Collections_Generic_IEnumerable$Facebook_WitAi_Lib_WitResponseNode$_GetEnumerator();
     // private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-    // Offset: 0x11079A0
+    // Offset: 0x167E20C
     ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator();
   }; // Facebook.WitAi.Lib.WitResponseArray/Facebook.WitAi.Lib.<get_Childs>d__13
   // WARNING Not writing size check since size may be invalid!

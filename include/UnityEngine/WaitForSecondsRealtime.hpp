@@ -28,16 +28,8 @@ namespace UnityEngine {
   // [TokenAttribute] Offset: FFFFFFFF
   class WaitForSecondsRealtime : public ::UnityEngine::CustomYieldInstruction {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x56B318
+    // [DebuggerBrowsableAttribute] Offset: 0x6654FC
     // private System.Single <waitTime>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -52,29 +44,29 @@ namespace UnityEngine {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single <waitTime>k__BackingField
-    float& dyn_$waitTime$k__BackingField();
+    [[deprecated]] float& dyn_$waitTime$k__BackingField();
     // Get instance field reference: private System.Single m_WaitUntilTime
-    float& dyn_m_WaitUntilTime();
+    [[deprecated]] float& dyn_m_WaitUntilTime();
     // public System.Single get_waitTime()
-    // Offset: 0x124D414
+    // Offset: 0x18415E8
     float get_waitTime();
     // public System.Void set_waitTime(System.Single value)
-    // Offset: 0x124D41C
+    // Offset: 0x18415F0
     void set_waitTime(float value);
     // public System.Void .ctor(System.Single time)
-    // Offset: 0x124D498
+    // Offset: 0x184166C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WaitForSecondsRealtime* New_ctor(float time) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::WaitForSecondsRealtime::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WaitForSecondsRealtime*, creationType>(time)));
     }
     // public override System.Boolean get_keepWaiting()
-    // Offset: 0x124D424
+    // Offset: 0x18415F8
     // Implemented from: UnityEngine.CustomYieldInstruction
     // Base method: System.Boolean CustomYieldInstruction::get_keepWaiting()
     bool get_keepWaiting();
     // public override System.Void Reset()
-    // Offset: 0x124D4D4
+    // Offset: 0x18416A8
     // Implemented from: UnityEngine.CustomYieldInstruction
     // Base method: System.Void CustomYieldInstruction::Reset()
     void Reset();

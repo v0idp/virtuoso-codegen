@@ -53,15 +53,7 @@ namespace VROSC::AudioReactive {
     class $ChangeColor$d__12;
     // Nested type: ::VROSC::AudioReactive::GlobalDrumOnBeat::$AnimateTiming$d__13
     class $AnimateTiming$d__13;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AnimationCurve _powerCurve
     // Size: 0x8
     // Offset: 0x28
@@ -106,39 +98,39 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.AnimationCurve _powerCurve
-    ::UnityEngine::AnimationCurve*& dyn__powerCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
     // Get instance field reference: private VROSC.AudioReactive.ChangeColorEffectData _data
-    ::VROSC::AudioReactive::ChangeColorEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::ChangeColorEffectData*& dyn__data();
     // Get instance field reference: private System.Single _timeIfBPM0
-    float& dyn__timeIfBPM0();
+    [[deprecated]] float& dyn__timeIfBPM0();
     // Get instance field reference: private System.Int32 _currentInt
-    int& dyn__currentInt();
+    [[deprecated]] int& dyn__currentInt();
     // Get instance field reference: private System.Int32 _pingPongDirection
-    int& dyn__pingPongDirection();
+    [[deprecated]] int& dyn__pingPongDirection();
     // Get instance field reference: private UnityEngine.Color _currentColor
-    ::UnityEngine::Color& dyn__currentColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__currentColor();
     // Get instance field reference: private System.Boolean _active
-    bool& dyn__active();
+    [[deprecated]] bool& dyn__active();
     // private System.Void Update()
-    // Offset: 0x892AD0
+    // Offset: 0x19A4F50
     void Update();
     // private System.Void UpdateDrums(System.Single timing)
-    // Offset: 0x892A3C
+    // Offset: 0x19A4EBC
     void UpdateDrums(float timing);
     // private System.Void SetDrumcolor(UnityEngine.Color color)
-    // Offset: 0x8929C4
+    // Offset: 0x19A4E44
     void SetDrumcolor(::UnityEngine::Color color);
     // protected System.Collections.IEnumerator ChangeColor()
-    // Offset: 0x892C60
+    // Offset: 0x19A50E0
     ::System::Collections::IEnumerator* ChangeColor();
     // protected System.Collections.IEnumerator AnimateTiming()
-    // Offset: 0x892CCC
+    // Offset: 0x19A514C
     ::System::Collections::IEnumerator* AnimateTiming();
     // private UnityEngine.Color GetNewColor()
-    // Offset: 0x892778
+    // Offset: 0x19A4BF8
     ::UnityEngine::Color GetNewColor();
     // public System.Void .ctor()
-    // Offset: 0x892D38
+    // Offset: 0x19A51B8
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -152,12 +144,12 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<GlobalDrumOnBeat*, creationType>()));
     }
     // protected override System.Void OnEnable()
-    // Offset: 0x892720
+    // Offset: 0x19A4BA0
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::OnEnable()
     void OnEnable();
     // protected override System.Void OnBeat(System.Int32 beat)
-    // Offset: 0x892BA4
+    // Offset: 0x19A5024
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::OnBeat(System.Int32 beat)
     void OnBeat(int beat);

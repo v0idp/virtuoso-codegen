@@ -40,15 +40,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOTweenModulePhysics::$$c__DisplayClass6_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Rigidbody target
     // Size: 0x8
     // Offset: 0x10
@@ -99,36 +91,36 @@ namespace DG::Tweening {
     static_assert(sizeof(::DG::Tweening::Tween*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Rigidbody target
-    ::UnityEngine::Rigidbody*& dyn_target();
+    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_target();
     // Get instance field reference: public System.Single startPosY
-    float& dyn_startPosY();
+    [[deprecated]] float& dyn_startPosY();
     // Get instance field reference: public System.Boolean offsetYSet
-    bool& dyn_offsetYSet();
+    [[deprecated]] bool& dyn_offsetYSet();
     // Get instance field reference: public System.Single offsetY
-    float& dyn_offsetY();
+    [[deprecated]] float& dyn_offsetY();
     // Get instance field reference: public DG.Tweening.Sequence s
-    ::DG::Tweening::Sequence*& dyn_s();
+    [[deprecated]] ::DG::Tweening::Sequence*& dyn_s();
     // Get instance field reference: public UnityEngine.Vector3 endValue
-    ::UnityEngine::Vector3& dyn_endValue();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_endValue();
     // Get instance field reference: public DG.Tweening.Tween yTween
-    ::DG::Tweening::Tween*& dyn_yTween();
+    [[deprecated]] ::DG::Tweening::Tween*& dyn_yTween();
     // UnityEngine.Vector3 <DOJump>b__0()
-    // Offset: 0x12646DC
+    // Offset: 0x17E2C5C
     ::UnityEngine::Vector3 $DOJump$b__0();
     // System.Void <DOJump>b__1()
-    // Offset: 0x12646F8
+    // Offset: 0x17E2C78
     void $DOJump$b__1();
     // UnityEngine.Vector3 <DOJump>b__2()
-    // Offset: 0x126472C
+    // Offset: 0x17E2CAC
     ::UnityEngine::Vector3 $DOJump$b__2();
     // UnityEngine.Vector3 <DOJump>b__3()
-    // Offset: 0x1264748
+    // Offset: 0x17E2CC8
     ::UnityEngine::Vector3 $DOJump$b__3();
     // System.Void <DOJump>b__4()
-    // Offset: 0x1264764
+    // Offset: 0x17E2CE4
     void $DOJump$b__4();
     // public System.Void .ctor()
-    // Offset: 0x12646D4
+    // Offset: 0x17DB2A4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

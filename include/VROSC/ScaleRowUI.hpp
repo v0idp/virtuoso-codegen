@@ -65,15 +65,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ScaleRowUI::$OnEnableCoroutine$d__23
     class $OnEnableCoroutine$d__23;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteNode _startNoteNode
     // Size: 0x8
     // Offset: 0x18
@@ -184,80 +176,80 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteNode _startNoteNode
-    ::VROSC::NoteNode*& dyn__startNoteNode();
+    [[deprecated]] ::VROSC::NoteNode*& dyn__startNoteNode();
     // Get instance field reference: private VROSC.ScaleNode _scaleNode
-    ::VROSC::ScaleNode*& dyn__scaleNode();
+    [[deprecated]] ::VROSC::ScaleNode*& dyn__scaleNode();
     // Get instance field reference: private VROSC.UIButton _resetButton
-    ::VROSC::UIButton*& dyn__resetButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__resetButton();
     // Get instance field reference: private VROSC.ScaleNoteButtonUI[] _notebuttons
-    ::ArrayW<::VROSC::ScaleNoteButtonUI*>& dyn__notebuttons();
+    [[deprecated]] ::ArrayW<::VROSC::ScaleNoteButtonUI*>& dyn__notebuttons();
     // Get instance field reference: private VROSC.SynthController _instrumentController
-    ::VROSC::SynthController*& dyn__instrumentController();
+    [[deprecated]] ::VROSC::SynthController*& dyn__instrumentController();
     // Get instance field reference: private System.Int32 _scaleRowIndex
-    int& dyn__scaleRowIndex();
+    [[deprecated]] int& dyn__scaleRowIndex();
     // Get instance field reference: private VROSC.Scale _initScale
-    ::VROSC::Scale& dyn__initScale();
+    [[deprecated]] ::VROSC::Scale& dyn__initScale();
     // Get instance field reference: private VROSC.ScalePreset _initGlobalScalePreset
-    ::VROSC::ScalePreset*& dyn__initGlobalScalePreset();
+    [[deprecated]] ::VROSC::ScalePreset*& dyn__initGlobalScalePreset();
     // Get instance field reference: private VROSC.Note _initStartNote
-    ::VROSC::Note& dyn__initStartNote();
+    [[deprecated]] ::VROSC::Note& dyn__initStartNote();
     // Get instance field reference: private VROSC.Note _initGlobalKey
-    ::VROSC::Note& dyn__initGlobalKey();
+    [[deprecated]] ::VROSC::Note& dyn__initGlobalKey();
     // Get instance field reference: private System.Int32 _initNoteCount
-    int& dyn__initNoteCount();
+    [[deprecated]] int& dyn__initNoteCount();
     // Get instance field reference: private VROSC.ScalePreset _lastGlobalScalePreset
-    ::VROSC::ScalePreset*& dyn__lastGlobalScalePreset();
+    [[deprecated]] ::VROSC::ScalePreset*& dyn__lastGlobalScalePreset();
     // Get instance field reference: private VROSC.Note _lastGlobalKey
-    ::VROSC::Note& dyn__lastGlobalKey();
+    [[deprecated]] ::VROSC::Note& dyn__lastGlobalKey();
     // Get instance field reference: private System.Boolean _overrideScaleDefaults
-    bool& dyn__overrideScaleDefaults();
+    [[deprecated]] bool& dyn__overrideScaleDefaults();
     // Get instance field reference: private System.Boolean _locked
-    bool& dyn__locked();
+    [[deprecated]] bool& dyn__locked();
     // Get instance field reference: public System.Boolean _customized
-    bool& dyn__customized();
+    [[deprecated]] bool& dyn__customized();
     // Get instance field reference: public System.Action`2<System.Int32,VROSC.Scale> OnNotesUpdated
-    ::System::Action_2<int, ::VROSC::Scale>*& dyn_OnNotesUpdated();
+    [[deprecated]] ::System::Action_2<int, ::VROSC::Scale>*& dyn_OnNotesUpdated();
     // public System.Void Setup(VROSC.ScalePreset globalScale, VROSC.Note globalKey, VROSC.Scale scale, System.Int32 startNoteOffset, System.Boolean overrideScaleDefaults, VROSC.SynthController instrumentController, System.Int32 scaleRowIndex)
-    // Offset: 0x13DEF98
+    // Offset: 0xDE366C
     void Setup(::VROSC::ScalePreset* globalScale, ::VROSC::Note globalKey, ::VROSC::Scale scale, int startNoteOffset, bool overrideScaleDefaults, ::VROSC::SynthController* instrumentController, int scaleRowIndex);
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x13E00BC
+    // Offset: 0xDE4790
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // public System.Void GlobalScaleChanged(VROSC.ScalePreset globalScalePreset, VROSC.Note globalKey)
-    // Offset: 0x13DF694
+    // Offset: 0xDE3D68
     void GlobalScaleChanged(::VROSC::ScalePreset* globalScalePreset, ::VROSC::Note globalKey);
     // private System.Void ResetToCurrentScaleButtonPressed()
-    // Offset: 0x13E025C
+    // Offset: 0xDE4930
     void ResetToCurrentScaleButtonPressed();
     // private System.Void SetLocked(System.Boolean locked)
-    // Offset: 0x13E02E4
+    // Offset: 0xDE49B8
     void SetLocked(bool locked);
     // private System.Void OnEnable()
-    // Offset: 0x13E032C
+    // Offset: 0xDE4A00
     void OnEnable();
     // private System.Collections.IEnumerator OnEnableCoroutine()
-    // Offset: 0x13E03BC
+    // Offset: 0xDE4A90
     ::System::Collections::IEnumerator* OnEnableCoroutine();
     // private System.Void UpdateButtons()
-    // Offset: 0x13DFFDC
+    // Offset: 0xDE46B0
     void UpdateButtons();
     // private System.Void StartNoteAssigned(VROSC.Note note)
-    // Offset: 0x13E0428
+    // Offset: 0xDE4AFC
     void StartNoteAssigned(::VROSC::Note note);
     // private System.Void SetScaleNoteActive(VROSC.Note note, System.Boolean active)
-    // Offset: 0x13E0544
+    // Offset: 0xDE4C18
     void SetScaleNoteActive(::VROSC::Note note, bool active);
     // private System.Void OnDestroy()
-    // Offset: 0x13E05F0
+    // Offset: 0xDE4CC4
     void OnDestroy();
     // private System.Void GetAllScaleNoteButtonsInChildren()
-    // Offset: 0x13E07BC
+    // Offset: 0xDE4E90
     void GetAllScaleNoteButtonsInChildren();
     // private System.Void CustomizedChanged(System.Boolean saveData)
-    // Offset: 0x13DFF4C
+    // Offset: 0xDE4620
     void CustomizedChanged(bool saveData);
     // public System.Void .ctor()
-    // Offset: 0x13E0810
+    // Offset: 0xDE4EE4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

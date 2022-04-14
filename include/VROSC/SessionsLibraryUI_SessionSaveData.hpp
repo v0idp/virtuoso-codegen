@@ -25,15 +25,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionsLibraryUI::SessionSaveData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Id
     // Size: 0x8
     // Offset: 0x10
@@ -72,19 +64,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String Id
-    ::StringW& dyn_Id();
+    [[deprecated]] ::StringW& dyn_Id();
     // Get instance field reference: public System.String DisplayName
-    ::StringW& dyn_DisplayName();
+    [[deprecated]] ::StringW& dyn_DisplayName();
     // Get instance field reference: public System.String Description
-    ::StringW& dyn_Description();
+    [[deprecated]] ::StringW& dyn_Description();
     // Get instance field reference: public System.String[] Tags
-    ::ArrayW<::StringW>& dyn_Tags();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_Tags();
     // Get instance field reference: public System.Boolean IsCloud
-    bool& dyn_IsCloud();
+    [[deprecated]] bool& dyn_IsCloud();
     // Get instance field reference: public System.Boolean IsShared
-    bool& dyn_IsShared();
+    [[deprecated]] bool& dyn_IsShared();
     // public System.Void .ctor()
-    // Offset: 0x134A26C
+    // Offset: 0x8D520C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

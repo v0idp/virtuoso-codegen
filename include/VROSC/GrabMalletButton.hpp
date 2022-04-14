@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class GrabMalletButton : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _grabSticksButton
     // Size: 0x8
     // Offset: 0x18
@@ -62,20 +54,20 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _grabSticksButton
-    ::VROSC::UIButton*& dyn__grabSticksButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__grabSticksButton();
     // Get instance field reference: private System.Boolean _grabBoth
-    bool& dyn__grabBoth();
+    [[deprecated]] bool& dyn__grabBoth();
     // private System.Void Awake()
-    // Offset: 0x89337C
+    // Offset: 0x19A5864
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x893450
+    // Offset: 0x19A5938
     void OnDestroy();
     // private System.Void GrabSticks(VROSC.ClickData clickData)
-    // Offset: 0x893524
+    // Offset: 0x19A5A0C
     void GrabSticks(::VROSC::ClickData* clickData);
     // public System.Void .ctor()
-    // Offset: 0x893678
+    // Offset: 0x19A5B60
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

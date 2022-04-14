@@ -45,7 +45,7 @@ namespace Unity::XR::Oculus {
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Boolean> thumbTouch
     static void _set_thumbTouch(::UnityEngine::XR::InputFeatureUsage_1<bool> value);
     // static private System.Void .cctor()
-    // Offset: 0x12DB55C
+    // Offset: 0x18DD7D0
     static void _cctor();
   }; // Unity.XR.Oculus.OculusUsages
   #pragma pack(pop)

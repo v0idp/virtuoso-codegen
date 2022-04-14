@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class GameObjectToggler : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject[] _targetGameObjects
     // Size: 0x8
     // Offset: 0x40
@@ -88,22 +80,22 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.GameObject[] _targetGameObjects
-    ::ArrayW<::UnityEngine::GameObject*>& dyn__targetGameObjects();
+    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn__targetGameObjects();
     // Get instance field reference: private System.Boolean _overrideStartState
-    bool& dyn__overrideStartState();
+    [[deprecated]] bool& dyn__overrideStartState();
     // Get instance field reference: private System.Boolean _startEnabled
-    bool& dyn__startEnabled();
+    [[deprecated]] bool& dyn__startEnabled();
     // Get instance field reference: private System.Boolean _onWithSignal
-    bool& dyn__onWithSignal();
+    [[deprecated]] bool& dyn__onWithSignal();
     // Get instance field reference: private System.Boolean _setState
-    bool& dyn__setState();
+    [[deprecated]] bool& dyn__setState();
     // Get instance field reference: private System.Boolean _setStateTo
-    bool& dyn__setStateTo();
+    [[deprecated]] bool& dyn__setStateTo();
     // protected System.Void Start()
-    // Offset: 0x88F834
+    // Offset: 0x19A1B8C
     void Start();
     // public System.Void .ctor()
-    // Offset: 0x88FAB4
+    // Offset: 0x19A1E0C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -118,12 +110,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<GameObjectToggler*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x88F908
+    // Offset: 0x19A1C60
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x88FA3C
+    // Offset: 0x19A1D94
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

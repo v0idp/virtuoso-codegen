@@ -45,15 +45,7 @@ namespace Facebook::WitAi::Interfaces {
   // [TokenAttribute] Offset: FFFFFFFF
   class CustomTranscriptionProvider : public ::UnityEngine::MonoBehaviour/*, public ::Facebook::WitAi::Interfaces::ITranscriptionProvider*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean overrideMicLevel
     // Size: 0x1
     // Offset: 0x18
@@ -106,39 +98,39 @@ namespace Facebook::WitAi::Interfaces {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean overrideMicLevel
-    bool& dyn_overrideMicLevel();
+    [[deprecated]] bool& dyn_overrideMicLevel();
     // Get instance field reference: private Facebook.WitAi.Events.WitTranscriptionEvent onPartialTranscription
-    ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_onPartialTranscription();
+    [[deprecated]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_onPartialTranscription();
     // Get instance field reference: private Facebook.WitAi.Events.WitTranscriptionEvent onFullTranscription
-    ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_onFullTranscription();
+    [[deprecated]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_onFullTranscription();
     // Get instance field reference: private UnityEngine.Events.UnityEvent onStoppedListening
-    ::UnityEngine::Events::UnityEvent*& dyn_onStoppedListening();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_onStoppedListening();
     // Get instance field reference: private UnityEngine.Events.UnityEvent onStartListening
-    ::UnityEngine::Events::UnityEvent*& dyn_onStartListening();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_onStartListening();
     // Get instance field reference: private Facebook.WitAi.Events.WitMicLevelChangedEvent onMicLevelChanged
-    ::Facebook::WitAi::Events::WitMicLevelChangedEvent*& dyn_onMicLevelChanged();
+    [[deprecated]] ::Facebook::WitAi::Events::WitMicLevelChangedEvent*& dyn_onMicLevelChanged();
     // Get instance field reference: private readonly System.String <LastTranscription>k__BackingField
-    ::StringW& dyn_$LastTranscription$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$LastTranscription$k__BackingField();
     // public System.String get_LastTranscription()
-    // Offset: 0x10F80FC
+    // Offset: 0x166E964
     ::StringW get_LastTranscription();
     // public Facebook.WitAi.Events.WitTranscriptionEvent get_OnPartialTranscription()
-    // Offset: 0x10F8104
+    // Offset: 0x166E96C
     ::Facebook::WitAi::Events::WitTranscriptionEvent* get_OnPartialTranscription();
     // public Facebook.WitAi.Events.WitTranscriptionEvent get_OnFullTranscription()
-    // Offset: 0x10F810C
+    // Offset: 0x166E974
     ::Facebook::WitAi::Events::WitTranscriptionEvent* get_OnFullTranscription();
     // public UnityEngine.Events.UnityEvent get_OnStoppedListening()
-    // Offset: 0x10F8114
+    // Offset: 0x166E97C
     ::UnityEngine::Events::UnityEvent* get_OnStoppedListening();
     // public UnityEngine.Events.UnityEvent get_OnStartListening()
-    // Offset: 0x10F811C
+    // Offset: 0x166E984
     ::UnityEngine::Events::UnityEvent* get_OnStartListening();
     // public Facebook.WitAi.Events.WitMicLevelChangedEvent get_OnMicLevelChanged()
-    // Offset: 0x10F8124
+    // Offset: 0x166E98C
     ::Facebook::WitAi::Events::WitMicLevelChangedEvent* get_OnMicLevelChanged();
     // public System.Boolean get_OverrideMicLevel()
-    // Offset: 0x10F812C
+    // Offset: 0x166E994
     bool get_OverrideMicLevel();
     // public System.Void Activate()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -147,7 +139,7 @@ namespace Facebook::WitAi::Interfaces {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Deactivate();
     // protected System.Void .ctor()
-    // Offset: 0x10F8134
+    // Offset: 0x166E99C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

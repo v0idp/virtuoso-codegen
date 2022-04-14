@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ParametricPositionSignalGenerator : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private AudioHelm.Param _paramX
     // Size: 0x4
     // Offset: 0x40
@@ -80,26 +72,26 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private AudioHelm.Param _paramX
-    ::AudioHelm::Param& dyn__paramX();
+    [[deprecated]] ::AudioHelm::Param& dyn__paramX();
     // Get instance field reference: private AudioHelm.Param _paramY
-    ::AudioHelm::Param& dyn__paramY();
+    [[deprecated]] ::AudioHelm::Param& dyn__paramY();
     // Get instance field reference: private AudioHelm.Param _paramZ
-    ::AudioHelm::Param& dyn__paramZ();
+    [[deprecated]] ::AudioHelm::Param& dyn__paramZ();
     // Get instance field reference: private VROSC.InstrumentController _instrument
-    ::VROSC::InstrumentController*& dyn__instrument();
+    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrument();
     // Get instance field reference: private System.Boolean _setup
-    bool& dyn__setup();
+    [[deprecated]] bool& dyn__setup();
     // public System.Void Setup(VROSC.InstrumentController instrument)
-    // Offset: 0x8F8488
+    // Offset: 0xADCC20
     void Setup(::VROSC::InstrumentController* instrument);
     // public System.Void ResetGenerator()
-    // Offset: 0x8F8498
+    // Offset: 0xADCC30
     void ResetGenerator();
     // private System.Void SendPositionalSignal()
-    // Offset: 0x8F849C
+    // Offset: 0xADCC34
     void SendPositionalSignal();
     // public System.Void .ctor()
-    // Offset: 0x8F8720
+    // Offset: 0xADCEB8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -114,7 +106,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ParametricPositionSignalGenerator*, creationType>()));
     }
     // protected override System.Void OnEnable()
-    // Offset: 0x8F8650
+    // Offset: 0xADCDE8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::OnEnable()
     void OnEnable();

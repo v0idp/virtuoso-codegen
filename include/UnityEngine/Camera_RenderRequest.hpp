@@ -61,11 +61,11 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly UnityEngine.Camera/UnityEngine.RenderRequestMode m_CameraRenderMode
-    ::UnityEngine::Camera::RenderRequestMode& dyn_m_CameraRenderMode();
+    [[deprecated]] ::UnityEngine::Camera::RenderRequestMode& dyn_m_CameraRenderMode();
     // Get instance field reference: private readonly UnityEngine.RenderTexture m_ResultRT
-    ::UnityEngine::RenderTexture*& dyn_m_ResultRT();
+    [[deprecated]] ::UnityEngine::RenderTexture*& dyn_m_ResultRT();
     // Get instance field reference: private readonly UnityEngine.Camera/UnityEngine.RenderRequestOutputSpace m_OutputSpace
-    ::UnityEngine::Camera::RenderRequestOutputSpace& dyn_m_OutputSpace();
+    [[deprecated]] ::UnityEngine::Camera::RenderRequestOutputSpace& dyn_m_OutputSpace();
   }; // UnityEngine.Camera/UnityEngine.RenderRequest
   #pragma pack(pop)
   static check_size<sizeof(Camera::RenderRequest), 16 + sizeof(::UnityEngine::Camera::RenderRequestOutputSpace)> __UnityEngine_Camera_RenderRequestSizeCheck;

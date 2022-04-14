@@ -66,15 +66,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::UIScrollableContainer::$MoveBar$d__48
     class $MoveBar$d__48;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _itemsContainer
     // Size: 0x8
     // Offset: 0x18
@@ -175,139 +167,139 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _itemsContainer
-    ::UnityEngine::Transform*& dyn__itemsContainer();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__itemsContainer();
     // Get instance field reference: private VROSC.UIScrollableItem _scrollableItemPrefab
-    ::VROSC::UIScrollableItem*& dyn__scrollableItemPrefab();
+    [[deprecated]] ::VROSC::UIScrollableItem*& dyn__scrollableItemPrefab();
     // Get instance field reference: private System.Single _length
-    float& dyn__length();
+    [[deprecated]] float& dyn__length();
     // Get instance field reference: private System.Boolean _isHorizontal
-    bool& dyn__isHorizontal();
+    [[deprecated]] bool& dyn__isHorizontal();
     // Get instance field reference: private System.Boolean _invert
-    bool& dyn__invert();
+    [[deprecated]] bool& dyn__invert();
     // Get instance field reference: private System.Single _padding
-    float& dyn__padding();
+    [[deprecated]] float& dyn__padding();
     // Get instance field reference: protected System.Int32 _defaultSelection
-    int& dyn__defaultSelection();
+    [[deprecated]] int& dyn__defaultSelection();
     // Get instance field reference: private System.Boolean _supportsMultipleSelection
-    bool& dyn__supportsMultipleSelection();
+    [[deprecated]] bool& dyn__supportsMultipleSelection();
     // Get instance field reference: private System.Boolean _supportsNoSelection
-    bool& dyn__supportsNoSelection();
+    [[deprecated]] bool& dyn__supportsNoSelection();
     // Get instance field reference: private VROSC.UIScrollableContainerInput _selectionInput
-    ::VROSC::UIScrollableContainerInput*& dyn__selectionInput();
+    [[deprecated]] ::VROSC::UIScrollableContainerInput*& dyn__selectionInput();
     // Get instance field reference: private System.Int32 <SelectedItemIndex>k__BackingField
-    int& dyn_$SelectedItemIndex$k__BackingField();
+    [[deprecated]] int& dyn_$SelectedItemIndex$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UIScrollableItem> <Items>k__BackingField
-    ::System::Collections::Generic::List_1<::VROSC::UIScrollableItem*>*& dyn_$Items$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UIScrollableItem*>*& dyn_$Items$k__BackingField();
     // Get instance field reference: public System.Action`1<VROSC.UIScrollableItem> OnItemSelected
-    ::System::Action_1<::VROSC::UIScrollableItem*>*& dyn_OnItemSelected();
+    [[deprecated]] ::System::Action_1<::VROSC::UIScrollableItem*>*& dyn_OnItemSelected();
     // Get instance field reference: public System.Action`1<VROSC.UIScrollableItem> OnItemDeselected
-    ::System::Action_1<::VROSC::UIScrollableItem*>*& dyn_OnItemDeselected();
+    [[deprecated]] ::System::Action_1<::VROSC::UIScrollableItem*>*& dyn_OnItemDeselected();
     // Get instance field reference: protected System.Boolean _valuesSet
-    bool& dyn__valuesSet();
+    [[deprecated]] bool& dyn__valuesSet();
     // public System.Int32 get_SelectedItemIndex()
-    // Offset: 0x139FE78
+    // Offset: 0x19137A4
     int get_SelectedItemIndex();
     // private System.Void set_SelectedItemIndex(System.Int32 value)
-    // Offset: 0x139FE70
+    // Offset: 0x191379C
     void set_SelectedItemIndex(int value);
     // public System.Single get_ItemLength()
-    // Offset: 0x139FE80
+    // Offset: 0x19137AC
     float get_ItemLength();
     // public System.Boolean get_IsHorizontal()
-    // Offset: 0x139FE9C
+    // Offset: 0x19137C8
     bool get_IsHorizontal();
     // public System.Boolean get_IsInverted()
-    // Offset: 0x139FEA4
+    // Offset: 0x19137D0
     bool get_IsInverted();
     // public UnityEngine.Transform get_ItemsContainer()
-    // Offset: 0x139FEAC
+    // Offset: 0x19137D8
     ::UnityEngine::Transform* get_ItemsContainer();
     // public System.Single get_Length()
-    // Offset: 0x139FEB4
+    // Offset: 0x19137E0
     float get_Length();
     // public System.Single get_Padding()
-    // Offset: 0x139FEBC
+    // Offset: 0x19137E8
     float get_Padding();
     // public System.Collections.Generic.List`1<VROSC.UIScrollableItem> get_Items()
-    // Offset: 0x139FECC
+    // Offset: 0x19137F8
     ::System::Collections::Generic::List_1<::VROSC::UIScrollableItem*>* get_Items();
     // private System.Void set_Items(System.Collections.Generic.List`1<VROSC.UIScrollableItem> value)
-    // Offset: 0x139FEC4
+    // Offset: 0x19137F0
     void set_Items(::System::Collections::Generic::List_1<::VROSC::UIScrollableItem*>* value);
     // private System.Void OnEnable()
-    // Offset: 0x139FED4
+    // Offset: 0x1913800
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x13A0098
+    // Offset: 0x19139C4
     void OnDisable();
     // public System.Void SetValues(System.String[] values, System.Int32 selected)
-    // Offset: 0x13A025C
+    // Offset: 0x1913B88
     void SetValues(::ArrayW<::StringW> values, int selected);
     // private System.Void CreateItems(System.String[] values, System.Int32 selection)
-    // Offset: 0x13A0294
+    // Offset: 0x1913BC0
     void CreateItems(::ArrayW<::StringW> values, int selection);
     // private System.Void SetItemPosition(VROSC.UIScrollableItem item, System.Int32 index)
-    // Offset: 0x13A0604
+    // Offset: 0x1913F30
     void SetItemPosition(::VROSC::UIScrollableItem* item, int index);
     // public VROSC.UIScrollableItem AddItem(VROSC.UIScrollableItem itemPrefab, System.String value, System.Boolean select, System.Int32 index)
-    // Offset: 0x13A06C8
+    // Offset: 0x1913FF4
     ::VROSC::UIScrollableItem* AddItem(::VROSC::UIScrollableItem* itemPrefab, ::StringW value, bool select, int index);
     // public VROSC.UIScrollableItem AddItem(System.String value, System.Boolean select, System.Int32 index)
-    // Offset: 0x13A0AE4
+    // Offset: 0x1914410
     ::VROSC::UIScrollableItem* AddItem(::StringW value, bool select, int index);
     // public System.Void RemoveItemAt(System.Int32 index)
-    // Offset: 0x13A0AFC
+    // Offset: 0x1914428
     void RemoveItemAt(int index);
     // private System.Void SortByListOrder()
-    // Offset: 0x13A0A38
+    // Offset: 0x1914364
     void SortByListOrder();
     // public System.Boolean HasItem(System.String value)
-    // Offset: 0x13A08D8
+    // Offset: 0x1914204
     bool HasItem(::StringW value);
     // public VROSC.UIScrollableItem GetItem(System.String value)
-    // Offset: 0x13A0BF0
+    // Offset: 0x191451C
     ::VROSC::UIScrollableItem* GetItem(::StringW value);
     // private System.Void DestroyItems()
-    // Offset: 0x13A0508
+    // Offset: 0x1913E34
     void DestroyItems();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x13A0D50
+    // Offset: 0x191467C
     void OnDrawGizmos();
     // private System.Void ShowItems(System.Boolean animate)
-    // Offset: 0x13A0408
+    // Offset: 0x1913D34
     void ShowItems(bool animate);
     // protected System.Void MoveToSelectedItem(System.Boolean animate)
-    // Offset: 0x13A0DB0
+    // Offset: 0x19146DC
     void MoveToSelectedItem(bool animate);
     // private System.Collections.IEnumerator MoveBar(System.Single duration)
-    // Offset: 0x13A0E40
+    // Offset: 0x191476C
     ::System::Collections::IEnumerator* MoveBar(float duration);
     // private UnityEngine.Vector3 GetSelectedPosition()
-    // Offset: 0x13A0EBC
+    // Offset: 0x19147E8
     ::UnityEngine::Vector3 GetSelectedPosition();
     // private System.Void SetHoveringItem(System.Int32 hoverItem)
-    // Offset: 0x13A0FDC
+    // Offset: 0x1914908
     void SetHoveringItem(int hoverItem);
     // private System.Void SetHovering(System.Boolean hovering)
-    // Offset: 0x13A10F4
+    // Offset: 0x1914A20
     void SetHovering(bool hovering);
     // public VROSC.UIScrollableItem GetSelectedItem()
-    // Offset: 0x13A11A4
+    // Offset: 0x1914AD0
     ::VROSC::UIScrollableItem* GetSelectedItem();
     // public System.Void SetSelectedItem(System.Int32 selectedItem)
-    // Offset: 0x13A121C
+    // Offset: 0x1914B48
     void SetSelectedItem(int selectedItem);
     // public System.Void DeselectItem()
-    // Offset: 0x13A13BC
+    // Offset: 0x1914CE8
     void DeselectItem();
     // public System.Void ResetSelectionBar()
-    // Offset: 0x13A14BC
+    // Offset: 0x1914DE8
     void ResetSelectionBar();
     // public System.Void SetDisabled(UnityEngine.GameObject disabler, System.Boolean state)
-    // Offset: 0x13A14C4
+    // Offset: 0x1914DF0
     void SetDisabled(::UnityEngine::GameObject* disabler, bool state);
     // public System.Void .ctor()
-    // Offset: 0x13A1590
+    // Offset: 0x1914EBC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

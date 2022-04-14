@@ -35,15 +35,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UserFavoritesDataController::$$c__DisplayClass12_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.UserFavoritesDataModel/VROSC.Favorite favorite
     // Size: 0x8
     // Offset: 0x10
@@ -64,16 +56,16 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.UserFavoritesDataModel/VROSC.Favorite favorite
-    ::VROSC::UserFavoritesDataModel::Favorite*& dyn_favorite();
+    [[deprecated]] ::VROSC::UserFavoritesDataModel::Favorite*& dyn_favorite();
     // Get instance field reference: public VROSC.UserFavoritesDataController <>4__this
-    ::VROSC::UserFavoritesDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UserFavoritesDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action`1<System.String> onSuccess
-    ::System::Action_1<::StringW>*& dyn_onSuccess();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onSuccess();
     // System.Void <AddFavoriteToData>b__0(System.String id)
-    // Offset: 0x1413CF4
+    // Offset: 0xE85F74
     void $AddFavoriteToData$b__0(::StringW id);
     // public System.Void .ctor()
-    // Offset: 0x1413CEC
+    // Offset: 0xE85F6C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

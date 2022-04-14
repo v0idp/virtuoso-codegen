@@ -104,7 +104,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRTouchpad/TouchEvent Down
       static void _set_Down(::GlobalNamespace::OVRTouchpad::TouchEvent value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRTouchpad/TouchEvent
     #pragma pack(pop)
     static check_size<sizeof(OVRTouchpad::TouchEvent), 0 + sizeof(int)> __GlobalNamespace_OVRTouchpad_TouchEventSizeCheck;
@@ -126,22 +126,22 @@ namespace GlobalNamespace {
     // Set static field: static private OVRTouchpadHelper touchpadHelper
     static void _set_touchpadHelper(::GlobalNamespace::OVRTouchpadHelper* value);
     // static private System.Void .cctor()
-    // Offset: 0x12AE5FC
+    // Offset: 0x18AD1A0
     static void _cctor();
     // static public System.Void Create()
-    // Offset: 0x12A9C2C
+    // Offset: 0x18A87D0
     static void Create();
     // static public System.Void Update()
-    // Offset: 0x12AE348
+    // Offset: 0x18ACEEC
     static void Update();
     // static public System.Void OnDisable()
-    // Offset: 0x12AE5F8
+    // Offset: 0x18AD19C
     static void OnDisable();
     // static private System.Void HandleInputMouse(ref UnityEngine.Vector3 move)
-    // Offset: 0x12AE468
+    // Offset: 0x18AD00C
     static void HandleInputMouse(ByRef<::UnityEngine::Vector3> move);
     // static public System.Void AddListener(OVRTouchpad/OVRTouchpadCallback`1<OVRTouchpad/TouchEvent> handler)
-    // Offset: 0x12A8A1C
+    // Offset: 0x18A75C0
     static void AddListener(::GlobalNamespace::OVRTouchpad::OVRTouchpadCallback_1<::GlobalNamespace::OVRTouchpad::TouchEvent>* handler);
   }; // OVRTouchpad
   #pragma pack(pop)

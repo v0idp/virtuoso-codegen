@@ -67,15 +67,7 @@ namespace VROSC {
     struct $InitializeNativeMicrophone$d__42;
     // Nested type: ::VROSC::MicrophoneDeviceManager::$InitiateInputAfterBufferReceived$d__51
     struct $InitiateInputAfterBufferReceived$d__51;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AudioSource _audioSource
     // Size: 0x8
     // Offset: 0x18
@@ -236,130 +228,133 @@ namespace VROSC {
     // Set static field: static public System.Action OnSignal
     static void _set_OnSignal(::System::Action* value);
     // Get instance field reference: private UnityEngine.AudioSource _audioSource
-    ::UnityEngine::AudioSource*& dyn__audioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__audioSource();
     // Get instance field reference: private VROSC.MicrophoneEffectsManager _microphoneEffectsManager
-    ::VROSC::MicrophoneEffectsManager*& dyn__microphoneEffectsManager();
+    [[deprecated]] ::VROSC::MicrophoneEffectsManager*& dyn__microphoneEffectsManager();
     // Get instance field reference: private System.Int32 _nativeMicrophoneBufferSize
-    int& dyn__nativeMicrophoneBufferSize();
+    [[deprecated]] int& dyn__nativeMicrophoneBufferSize();
     // Get instance field reference: private NatSuite.Devices.AudioDevice _microphoneDevice
-    ::NatSuite::Devices::AudioDevice*& dyn__microphoneDevice();
+    [[deprecated]] ::NatSuite::Devices::AudioDevice*& dyn__microphoneDevice();
     // Get instance field reference: private System.Single[] _ringBuffer
-    ::ArrayW<float>& dyn__ringBuffer();
+    [[deprecated]] ::ArrayW<float>& dyn__ringBuffer();
     // Get instance field reference: private System.Int32 _ringBufferWriteIndex
-    int& dyn__ringBufferWriteIndex();
+    [[deprecated]] int& dyn__ringBufferWriteIndex();
     // Get instance field reference: private System.Int32 _ringBufferReadIndex
-    int& dyn__ringBufferReadIndex();
+    [[deprecated]] int& dyn__ringBufferReadIndex();
     // Get instance field reference: private System.Boolean _takingInput
-    bool& dyn__takingInput();
+    [[deprecated]] bool& dyn__takingInput();
     // Get instance field reference: private System.Boolean _microphoneEnabled
-    bool& dyn__microphoneEnabled();
+    [[deprecated]] bool& dyn__microphoneEnabled();
     // Get instance field reference: private System.Boolean _microphoneTakingInput
-    bool& dyn__microphoneTakingInput();
+    [[deprecated]] bool& dyn__microphoneTakingInput();
     // Get instance field reference: private System.Boolean _useProximity
-    bool& dyn__useProximity();
+    [[deprecated]] bool& dyn__useProximity();
     // Get instance field reference: private System.Single _microphoneProximity
-    float& dyn__microphoneProximity();
+    [[deprecated]] float& dyn__microphoneProximity();
     // Get instance field reference: private System.Single <StopFadeTime>k__BackingField
-    float& dyn_$StopFadeTime$k__BackingField();
+    [[deprecated]] float& dyn_$StopFadeTime$k__BackingField();
     // Get instance field reference: private System.Boolean <IsInitialized>k__BackingField
-    bool& dyn_$IsInitialized$k__BackingField();
+    [[deprecated]] bool& dyn_$IsInitialized$k__BackingField();
     // Get instance field reference: private System.Single _preampVolume
-    float& dyn__preampVolume();
+    [[deprecated]] float& dyn__preampVolume();
     // Get instance field reference: private System.Single _peakDisplayDuration
-    float& dyn__peakDisplayDuration();
+    [[deprecated]] float& dyn__peakDisplayDuration();
     // Get instance field reference: private System.Single _peakValue
-    float& dyn__peakValue();
+    [[deprecated]] float& dyn__peakValue();
     // Get instance field reference: private System.Single _peakTimer
-    float& dyn__peakTimer();
+    [[deprecated]] float& dyn__peakTimer();
     // Get instance field reference: private System.Boolean _isInPeak
-    bool& dyn__isInPeak();
+    [[deprecated]] bool& dyn__isInPeak();
     // Get instance field reference: private System.Int32 _writeAheadBuffers
-    int& dyn__writeAheadBuffers();
+    [[deprecated]] int& dyn__writeAheadBuffers();
     // Get instance field reference: private System.Int32 _receivedBuffers
-    int& dyn__receivedBuffers();
+    [[deprecated]] int& dyn__receivedBuffers();
     // public NatSuite.Devices.AudioDevice get_MicrophoneDevice()
-    // Offset: 0x8B2910
+    // Offset: 0xAC63C8
     ::NatSuite::Devices::AudioDevice* get_MicrophoneDevice();
     // static public System.Double get_Latency()
-    // Offset: 0x8B2918
+    // Offset: 0xAC63D0
     static double get_Latency();
     // static private System.Void set_Latency(System.Double value)
-    // Offset: 0x8B297C
+    // Offset: 0xAC6434
     static void set_Latency(double value);
     // public System.Single get_StopFadeTime()
-    // Offset: 0x8B29EC
+    // Offset: 0xAC64A4
     float get_StopFadeTime();
     // private System.Void set_StopFadeTime(System.Single value)
-    // Offset: 0x8B29F4
+    // Offset: 0xAC64AC
     void set_StopFadeTime(float value);
     // public System.Boolean get_IsInitialized()
-    // Offset: 0x8B29FC
+    // Offset: 0xAC64B4
     bool get_IsInitialized();
     // private System.Void set_IsInitialized(System.Boolean value)
-    // Offset: 0x8B2A04
+    // Offset: 0xAC64BC
     void set_IsInitialized(bool value);
     // static public System.Boolean get_HasWorkingMicrophone()
-    // Offset: 0x8B2A10
+    // Offset: 0xAC64C8
     static bool get_HasWorkingMicrophone();
     // static private System.Void set_HasWorkingMicrophone(System.Boolean value)
-    // Offset: 0x8B2A74
+    // Offset: 0xAC652C
     static void set_HasWorkingMicrophone(bool value);
     // public System.Void Setup()
-    // Offset: 0x8B2AE0
+    // Offset: 0xAC6598
     void Setup();
     // protected System.Threading.Tasks.Task InitializeNativeMicrophone()
-    // Offset: 0x8B2BA4
+    // Offset: 0xAC665C
     ::System::Threading::Tasks::Task* InitializeNativeMicrophone();
     // public System.Void SetMicrophoneDevice(NatSuite.Devices.AudioDevice device)
-    // Offset: 0x8B0EF0
+    // Offset: 0xAC485C
     void SetMicrophoneDevice(::NatSuite::Devices::AudioDevice* device);
     // protected System.Void Update()
-    // Offset: 0x8B2CA8
+    // Offset: 0xAC6760
     void Update();
     // public System.Void SetUseProximity(System.Boolean state)
-    // Offset: 0x8B1A00
+    // Offset: 0xAC53D4
     void SetUseProximity(bool state);
     // public System.Void SetMicrophoneProximity(System.Single proximity)
-    // Offset: 0x8B1DC8
+    // Offset: 0xAC5984
     void SetMicrophoneProximity(float proximity);
     // public System.Void SetLatencyCompensation(System.Single latency)
-    // Offset: 0x8B175C
+    // Offset: 0xAC5130
     void SetLatencyCompensation(float latency);
     // public System.Void ResetLatency()
-    // Offset: 0x8B1904
+    // Offset: 0xAC52D8
     void ResetLatency();
     // public System.Void MicrophoneEnabled(System.Boolean enabled)
-    // Offset: 0x8B1A24
+    // Offset: 0xAC5688
     void MicrophoneEnabled(bool enabled);
     // private System.Void LoopStationStateChanged(VROSC.LoopStationRecorder/VROSC.RecordingState state)
-    // Offset: 0x8B3080
+    // Offset: 0xAC6B38
     void LoopStationStateChanged(::VROSC::LoopStationRecorder::RecordingState state);
     // private System.Void InitiateInputAfterBufferReceived()
-    // Offset: 0x8B2FBC
+    // Offset: 0xAC6A74
     void InitiateInputAfterBufferReceived();
     // private System.Void InitiateInput()
-    // Offset: 0x8B3138
+    // Offset: 0xAC6BF0
     void InitiateInput();
     // public System.Void MicrophoneTakingInput(System.Boolean takingInput)
-    // Offset: 0x8B1D20
+    // Offset: 0xAC5534
     void MicrophoneTakingInput(bool takingInput);
     // public System.Void ReceiveMicrophoneSamples(System.Single[] sampleBuffer, System.Int64 timestamp)
-    // Offset: 0x8B33B8
+    // Offset: 0xAC6E70
     void ReceiveMicrophoneSamples(::ArrayW<float> sampleBuffer, int64_t timestamp);
     // private System.Void ResetReadIndex()
-    // Offset: 0x8B326C
+    // Offset: 0xAC6D24
     void ResetReadIndex();
     // public System.Void SetPreampVolume(System.Single volume)
-    // Offset: 0x8B3544
+    // Offset: 0xAC6FFC
     void SetPreampVolume(float volume);
     // public System.Void SetPreampReverb(System.Single reverb)
-    // Offset: 0x8B165C
+    // Offset: 0xAC5030
     void SetPreampReverb(float reverb);
+    // public System.Void SetPreviewReverb(System.Boolean state)
+    // Offset: 0xAC566C
+    void SetPreviewReverb(bool state);
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x8B354C
+    // Offset: 0xAC70DC
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void .ctor()
-    // Offset: 0x8B37E8
+    // Offset: 0xAC7378
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -372,7 +367,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<MicrophoneDeviceManager*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x8B385C
+    // Offset: 0xAC73EC
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();
@@ -603,6 +598,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
   static const MethodInfo* get() {
     static auto* reverb = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneDeviceManager*), "SetPreampReverb", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{reverb});
+  }
+};
+// Writing MetadataGetter for method: VROSC::MicrophoneDeviceManager::SetPreviewReverb
+// Il2CppName: SetPreviewReverb
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::MicrophoneDeviceManager::*)(bool)>(&VROSC::MicrophoneDeviceManager::SetPreviewReverb)> {
+  static const MethodInfo* get() {
+    static auto* state = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneDeviceManager*), "SetPreviewReverb", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{state});
   }
 };
 // Writing MetadataGetter for method: VROSC::MicrophoneDeviceManager::OnAudioFilterRead

@@ -28,15 +28,7 @@ namespace VROSC::Credits {
   // [TokenAttribute] Offset: FFFFFFFF
   class CreditsObject : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Single _height
     // Size: 0x4
     // Offset: 0x18
@@ -53,23 +45,23 @@ namespace VROSC::Credits {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Single _height
-    float& dyn__height();
+    [[deprecated]] float& dyn__height();
     // Get instance field reference: private System.Single _visibility
-    float& dyn__visibility();
+    [[deprecated]] float& dyn__visibility();
     // public System.Single get_Height()
-    // Offset: 0x1306BC0
+    // Offset: 0x8DFBB0
     float get_Height();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x1306BC8
+    // Offset: 0x8DFBB8
     void OnDrawGizmos();
     // public System.Void SetVisibility(System.Single visible)
-    // Offset: 0x1306BFC
+    // Offset: 0x8DFBEC
     void SetVisibility(float visible);
     // protected System.Void UpdateVisibility(System.Single visible)
-    // Offset: 0x1306C90
+    // Offset: 0x8DF598
     void UpdateVisibility(float visible);
     // public System.Void .ctor()
-    // Offset: 0x1306C94
+    // Offset: 0x8DF5A4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

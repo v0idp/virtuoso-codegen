@@ -33,15 +33,7 @@ namespace System::IO {
   // [TokenAttribute] Offset: FFFFFFFF
   class TextReader::SyncTextReader : public ::System::IO::TextReader {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.IO.TextReader _in
     // Size: 0x8
     // Offset: 0x18
@@ -52,46 +44,51 @@ namespace System::IO {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: System.IO.TextReader _in
-    ::System::IO::TextReader*& dyn__in();
+    [[deprecated]] ::System::IO::TextReader*& dyn__in();
     // System.Void .ctor(System.IO.TextReader t)
-    // Offset: 0x1088BD8
+    // Offset: 0xE5FB28
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TextReader::SyncTextReader* New_ctor(::System::IO::TextReader* t) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::TextReader::SyncTextReader::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TextReader::SyncTextReader*, creationType>(t)));
     }
+    // public override System.Void Close()
+    // Offset: 0xE5FBA0
+    // Implemented from: System.IO.TextReader
+    // Base method: System.Void TextReader::Close()
+    void Close();
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x1088C50
+    // Offset: 0xE5FBC0
     // Implemented from: System.IO.TextReader
     // Base method: System.Void TextReader::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);
     // public override System.Int32 Peek()
-    // Offset: 0x1088D1C
+    // Offset: 0xE5FC8C
     // Implemented from: System.IO.TextReader
     // Base method: System.Int32 TextReader::Peek()
     int Peek();
     // public override System.Int32 Read()
-    // Offset: 0x1088D3C
+    // Offset: 0xE5FCAC
     // Implemented from: System.IO.TextReader
     // Base method: System.Int32 TextReader::Read()
     int Read();
     // public override System.Int32 Read(in System.Char[] buffer, System.Int32 index, System.Int32 count)
-    // Offset: 0x1088D5C
+    // Offset: 0xE5FCCC
     // Implemented from: System.IO.TextReader
     // Base method: System.Int32 TextReader::Read(in System.Char[] buffer, System.Int32 index, System.Int32 count)
     int Read(ByRef<::ArrayW<::Il2CppChar>> buffer, int index, int count);
     // public override System.String ReadLine()
-    // Offset: 0x1088D7C
+    // Offset: 0xE5FCEC
     // Implemented from: System.IO.TextReader
     // Base method: System.String TextReader::ReadLine()
     ::StringW ReadLine();
     // public override System.String ReadToEnd()
-    // Offset: 0x1088D9C
+    // Offset: 0xE5FD10
     // Implemented from: System.IO.TextReader
     // Base method: System.String TextReader::ReadToEnd()
     ::StringW ReadToEnd();
     // public override System.Threading.Tasks.Task`1<System.String> ReadToEndAsync()
-    // Offset: 0x1088DBC
+    // Offset: 0xE5FD30
     // Implemented from: System.IO.TextReader
     // Base method: System.Threading.Tasks.Task`1<System.String> TextReader::ReadToEndAsync()
     ::System::Threading::Tasks::Task_1<::StringW>* ReadToEndAsync();
@@ -105,6 +102,14 @@ namespace System::IO {
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::IO::TextReader::SyncTextReader::Close
+// Il2CppName: Close
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (System::IO::TextReader::SyncTextReader::*)()>(&System::IO::TextReader::SyncTextReader::Close)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::IO::TextReader::SyncTextReader*), "Close", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::IO::TextReader::SyncTextReader::Dispose
 // Il2CppName: Dispose
 template<>

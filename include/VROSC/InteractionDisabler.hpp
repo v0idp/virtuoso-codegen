@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InteractionDisabler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Interactable[] _interactables
     // Size: 0x8
     // Offset: 0x18
@@ -61,20 +53,20 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Interactable[] _interactables
-    ::ArrayW<::VROSC::Interactable*>& dyn__interactables();
+    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__interactables();
     // Get instance field reference: private System.Boolean _getInteractablesOnAwake
-    bool& dyn__getInteractablesOnAwake();
+    [[deprecated]] bool& dyn__getInteractablesOnAwake();
     // private System.Void Awake()
-    // Offset: 0x1386228
+    // Offset: 0x1949498
     void Awake();
     // private System.Void GetInChildren()
-    // Offset: 0x1386238
+    // Offset: 0x19494A8
     void GetInChildren();
     // public System.Void SetDisabled(System.Boolean disabled, System.Boolean disableVisually)
-    // Offset: 0x1386290
+    // Offset: 0x1949500
     void SetDisabled(bool disabled, bool disableVisually);
     // public System.Void .ctor()
-    // Offset: 0x13863B4
+    // Offset: 0x1949624
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

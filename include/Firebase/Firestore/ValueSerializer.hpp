@@ -32,7 +32,7 @@ namespace Firebase::Firestore {
   class ValueSerializer : public ::Il2CppObject {
     public:
     // static Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC254AC
+    // Offset: 0xD470B0
     static ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
   }; // Firebase.Firestore.ValueSerializer
   #pragma pack(pop)

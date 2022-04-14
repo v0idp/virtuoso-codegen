@@ -41,7 +41,7 @@ namespace Firebase::Firestore::Converters {
   class IntegerConverterBase : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
     // System.Void .ctor(System.Type type)
-    // Offset: 0xC296D4
+    // Offset: 0xD4B3FC
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Void ConverterBase::.ctor(System.Type type)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -50,7 +50,7 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<IntegerConverterBase*, creationType>(type)));
     }
     // protected override System.Object DeserializeDouble(Firebase.Firestore.DeserializationContext context, System.Double value)
-    // Offset: 0xC3E65C
+    // Offset: 0xD62454
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeDouble(Firebase.Firestore.DeserializationContext context, System.Double value)
     ::Il2CppObject* DeserializeDouble(::Firebase::Firestore::DeserializationContext* context, double value);

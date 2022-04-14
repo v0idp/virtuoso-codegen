@@ -44,15 +44,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class ShiftKeyBehaviour : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.GameObject Housing
     // Size: 0x8
     // Offset: 0x18
@@ -87,26 +79,26 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject Housing
-    ::UnityEngine::GameObject*& dyn_Housing();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_Housing();
     // Get instance field reference: private UnityEngine.Renderer keyRenderer
-    ::UnityEngine::Renderer*& dyn_keyRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn_keyRenderer();
     // Get instance field reference: private UnityEngine.BoxCollider keyCollider
-    ::UnityEngine::BoxCollider*& dyn_keyCollider();
+    [[deprecated]] ::UnityEngine::BoxCollider*& dyn_keyCollider();
     // Get instance field reference: private UnityEngine.GameObject keyCap
-    ::UnityEngine::GameObject*& dyn_keyCap();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_keyCap();
     // Get instance field reference: private Key shiftKeyController
-    ::GlobalNamespace::Key*& dyn_shiftKeyController();
+    [[deprecated]] ::GlobalNamespace::Key*& dyn_shiftKeyController();
     // private System.Void Awake()
-    // Offset: 0x13B4964
+    // Offset: 0x1927830
     void Awake();
     // private System.Void ShiftKeyPressed(Key key)
-    // Offset: 0x13B4B04
+    // Offset: 0x19279D0
     void ShiftKeyPressed(::GlobalNamespace::Key* key);
     // public System.Void ShiftVisibilityToggle(System.Boolean state)
-    // Offset: 0x13B4BA0
+    // Offset: 0x1927A6C
     void ShiftVisibilityToggle(bool state);
     // public System.Void .ctor()
-    // Offset: 0x13B4C20
+    // Offset: 0x1927AEC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

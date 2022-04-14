@@ -51,9 +51,9 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Material material
-    ::UnityEngine::Material*& dyn_material();
+    [[deprecated]] ::UnityEngine::Material*& dyn_material();
     // Get instance field reference: public System.Int32 referenceCount
-    int& dyn_referenceCount();
+    [[deprecated]] int& dyn_referenceCount();
   }; // TMPro.TMP_MaterialReference
   #pragma pack(pop)
   static check_size<sizeof(TMP_MaterialReference), 8 + sizeof(int)> __TMPro_TMP_MaterialReferenceSizeCheck;

@@ -810,7 +810,7 @@ namespace VROSC {
     // Set static field: static public VROSC.MidiCC PolyMode
     static void _set_PolyMode(::VROSC::MidiCC value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.MidiCC
   #pragma pack(pop)
   static check_size<sizeof(MidiCC), 0 + sizeof(int)> __VROSC_MidiCCSizeCheck;

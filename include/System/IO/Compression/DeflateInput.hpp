@@ -34,15 +34,7 @@ namespace System::IO::Compression {
     public:
     // Nested type: ::System::IO::Compression::DeflateInput::InputState
     struct InputState;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte[] <Buffer>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -63,40 +55,40 @@ namespace System::IO::Compression {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Byte[] <Buffer>k__BackingField
-    ::ArrayW<uint8_t>& dyn_$Buffer$k__BackingField();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_$Buffer$k__BackingField();
     // Get instance field reference: private System.Int32 <Count>k__BackingField
-    int& dyn_$Count$k__BackingField();
+    [[deprecated]] int& dyn_$Count$k__BackingField();
     // Get instance field reference: private System.Int32 <StartIndex>k__BackingField
-    int& dyn_$StartIndex$k__BackingField();
+    [[deprecated]] int& dyn_$StartIndex$k__BackingField();
     // System.Byte[] get_Buffer()
-    // Offset: 0x111B864
+    // Offset: 0x16930D0
     ::ArrayW<uint8_t> get_Buffer();
     // System.Void set_Buffer(System.Byte[] value)
-    // Offset: 0x111B86C
+    // Offset: 0x16930D8
     void set_Buffer(::ArrayW<uint8_t> value);
     // System.Int32 get_Count()
-    // Offset: 0x111B874
+    // Offset: 0x16930E0
     int get_Count();
     // System.Void set_Count(System.Int32 value)
-    // Offset: 0x111B87C
+    // Offset: 0x16930E8
     void set_Count(int value);
     // System.Int32 get_StartIndex()
-    // Offset: 0x111B884
+    // Offset: 0x16930F0
     int get_StartIndex();
     // System.Void set_StartIndex(System.Int32 value)
-    // Offset: 0x111B88C
+    // Offset: 0x16930F8
     void set_StartIndex(int value);
     // System.Void ConsumeBytes(System.Int32 n)
-    // Offset: 0x111B23C
+    // Offset: 0x1692AA8
     void ConsumeBytes(int n);
     // System.IO.Compression.DeflateInput/System.IO.Compression.InputState DumpState()
-    // Offset: 0x111B894
+    // Offset: 0x1693100
     ::System::IO::Compression::DeflateInput::InputState DumpState();
     // System.Void RestoreState(System.IO.Compression.DeflateInput/System.IO.Compression.InputState state)
-    // Offset: 0x111B8A4
+    // Offset: 0x1693110
     void RestoreState(::System::IO::Compression::DeflateInput::InputState state);
     // public System.Void .ctor()
-    // Offset: 0x111B8B0
+    // Offset: 0x169311C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

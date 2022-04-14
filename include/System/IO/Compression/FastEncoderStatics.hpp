@@ -56,16 +56,16 @@ namespace System::IO::Compression {
     // Set static field: static private readonly System.Byte[] s_distLookup
     static void _set_s_distLookup(::ArrayW<uint8_t> value);
     // static private System.Void .cctor()
-    // Offset: 0x111E674
+    // Offset: 0x1695EE0
     static void _cctor();
     // static private System.Byte[] CreateDistanceLookup()
-    // Offset: 0x111E498
+    // Offset: 0x1695D04
     static ::ArrayW<uint8_t> CreateDistanceLookup();
     // static System.Int32 GetSlot(System.Int32 pos)
-    // Offset: 0x111E3F8
+    // Offset: 0x1695C64
     static int GetSlot(int pos);
     // static public System.UInt32 BitReverse(System.UInt32 code, System.Int32 length)
-    // Offset: 0x111E64C
+    // Offset: 0x1695EB8
     static uint BitReverse(uint code, int length);
   }; // System.IO.Compression.FastEncoderStatics
   #pragma pack(pop)

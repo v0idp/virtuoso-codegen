@@ -32,15 +32,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionsManager::$$c__DisplayClass65_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String userUpVoteId
     // Size: 0x8
     // Offset: 0x10
@@ -55,14 +47,14 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SessionsManager::$$c__DisplayClass65_0*) == 0x8);
     public:
     // Get instance field reference: public System.String userUpVoteId
-    ::StringW& dyn_userUpVoteId();
+    [[deprecated]] ::StringW& dyn_userUpVoteId();
     // Get instance field reference: public VROSC.SessionsManager/VROSC.<>c__DisplayClass65_0 CS$<>8__locals1
-    ::VROSC::SessionsManager::$$c__DisplayClass65_0*& dyn_CS$$$8__locals1();
-    // System.Void <AddSessionUpVote>b__4(VROSC.Error error)
-    // Offset: 0x134B9F8
-    void $AddSessionUpVote$b__4(::VROSC::Error error);
+    [[deprecated]] ::VROSC::SessionsManager::$$c__DisplayClass65_0*& dyn_CS$$$8__locals1();
+    // System.Void <AddSessionUpVote>b__7(VROSC.Error error)
+    // Offset: 0x8D6D64
+    void $AddSessionUpVote$b__7(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x134B964
+    // Offset: 0x8D6A74
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -76,13 +68,13 @@ namespace VROSC {
   static_assert(sizeof(SessionsManager::$$c__DisplayClass65_1) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass65_1::$AddSessionUpVote$b__4
-// Il2CppName: <AddSessionUpVote>b__4
+// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass65_1::$AddSessionUpVote$b__7
+// Il2CppName: <AddSessionUpVote>b__7
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsManager::$$c__DisplayClass65_1::*)(::VROSC::Error)>(&VROSC::SessionsManager::$$c__DisplayClass65_1::$AddSessionUpVote$b__4)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsManager::$$c__DisplayClass65_1::*)(::VROSC::Error)>(&VROSC::SessionsManager::$$c__DisplayClass65_1::$AddSessionUpVote$b__7)> {
   static const MethodInfo* get() {
     static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass65_1*), "<AddSessionUpVote>b__4", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass65_1*), "<AddSessionUpVote>b__7", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
 // Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass65_1::New_ctor

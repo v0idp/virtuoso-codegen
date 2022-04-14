@@ -28,23 +28,15 @@ namespace Oculus::Platform::Samples::VrBoardGame {
   // [TokenAttribute] Offset: FFFFFFFF
   class BoardPosition : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [RangeAttribute] Offset: 0x5A568C
+    // [RangeAttribute] Offset: 0x6B9840
     // public System.Int32 x
     // Size: 0x4
     // Offset: 0x18
     int x;
     // Field size check
     static_assert(sizeof(int) == 0x4);
-    // [RangeAttribute] Offset: 0x5A56CC
+    // [RangeAttribute] Offset: 0x6B9880
     // public System.Int32 y
     // Size: 0x4
     // Offset: 0x1C
@@ -55,11 +47,11 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Int32 x
-    int& dyn_x();
+    [[deprecated]] int& dyn_x();
     // Get instance field reference: public System.Int32 y
-    int& dyn_y();
+    [[deprecated]] int& dyn_y();
     // public System.Void .ctor()
-    // Offset: 0x7B63C0
+    // Offset: 0x8FC7A0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

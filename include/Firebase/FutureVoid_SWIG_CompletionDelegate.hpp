@@ -35,20 +35,20 @@ namespace Firebase {
   class FutureVoid::SWIG_CompletionDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x129B5EC
+    // Offset: 0x18894D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FutureVoid::SWIG_CompletionDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::FutureVoid::SWIG_CompletionDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FutureVoid::SWIG_CompletionDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Int32 index)
-    // Offset: 0x129E48C
+    // Offset: 0x188BE2C
     void Invoke(int index);
     // public System.IAsyncResult BeginInvoke(System.Int32 index, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x129E6B8
+    // Offset: 0x188C058
     ::System::IAsyncResult* BeginInvoke(int index, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x129E740
+    // Offset: 0x188C0E0
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.FutureVoid/Firebase.SWIG_CompletionDelegate
   #pragma pack(pop)

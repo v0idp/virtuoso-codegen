@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialEventBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TutorialEvent _startEvent
     // Size: 0x4
     // Offset: 0x10
@@ -62,17 +54,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TutorialEvent) == 0x4);
     public:
     // Get instance field reference: private VROSC.TutorialEvent _startEvent
-    ::VROSC::TutorialEvent& dyn__startEvent();
+    [[deprecated]] ::VROSC::TutorialEvent& dyn__startEvent();
     // Get instance field reference: private VROSC.TutorialEvent _endEvent
-    ::VROSC::TutorialEvent& dyn__endEvent();
+    [[deprecated]] ::VROSC::TutorialEvent& dyn__endEvent();
     // public System.Void Setup(VROSC.TutorialEvent startEvent, VROSC.TutorialEvent endEvent)
-    // Offset: 0x1406F8C
+    // Offset: 0xA2F068
     void Setup(::VROSC::TutorialEvent startEvent, ::VROSC::TutorialEvent endEvent);
     // private System.Void SentTutorialEvent(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x1406FE4
+    // Offset: 0xA2F0C0
     void SentTutorialEvent(::VROSC::TutorialEvent tutorialEvent);
     // public System.Void .ctor()
-    // Offset: 0x14072BC
+    // Offset: 0xA2F398
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -82,12 +74,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TutorialEventBehaviour*, creationType>()));
     }
     // public override System.Void OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0x1406F9C
+    // Offset: 0xA2F078
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPlay(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);
     // public override System.Void OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0x1407058
+    // Offset: 0xA2F134
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPause(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);

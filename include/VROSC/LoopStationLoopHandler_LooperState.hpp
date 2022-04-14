@@ -7,8 +7,6 @@
 #include "beatsaber-hook/shared/utils/byref.hpp"
 // Including type: VROSC.LoopStationLoopHandler
 #include "VROSC/LoopStationLoopHandler.hpp"
-// Including type: System.Enum
-#include "System/Enum.hpp"
 // Completed includes
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::LoopStationLoopHandler::LooperState, "VROSC", "LoopStationLoopHandler/LooperState");
@@ -57,7 +55,7 @@ namespace VROSC {
     // Set static field: static public VROSC.LoopStationLoopHandler/VROSC.LooperState IsAtMaxNumber
     static void _set_IsAtMaxNumber(::VROSC::LoopStationLoopHandler::LooperState value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.LoopStationLoopHandler/VROSC.LooperState
   #pragma pack(pop)
   static check_size<sizeof(LoopStationLoopHandler::LooperState), 0 + sizeof(int)> __VROSC_LoopStationLoopHandler_LooperStateSizeCheck;

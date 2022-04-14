@@ -27,15 +27,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class Capture : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.String _text
     // Size: 0x8
     // Offset: 0x10
@@ -56,38 +48,38 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.String _text
-    ::StringW& dyn__text();
+    [[deprecated]] ::StringW& dyn__text();
     // Get instance field reference: System.Int32 _index
-    int& dyn__index();
+    [[deprecated]] int& dyn__index();
     // Get instance field reference: System.Int32 _length
-    int& dyn__length();
+    [[deprecated]] int& dyn__length();
     // public System.Int32 get_Index()
-    // Offset: 0xE6E8EC
+    // Offset: 0x10E0784
     int get_Index();
     // public System.Int32 get_Length()
-    // Offset: 0xE6E8F4
+    // Offset: 0x10E078C
     int get_Length();
     // public System.String get_Value()
-    // Offset: 0xE6E8FC
+    // Offset: 0x10E0794
     ::StringW get_Value();
     // System.Void .ctor(System.String text, System.Int32 i, System.Int32 l)
-    // Offset: 0xE6E8AC
+    // Offset: 0x10E0744
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Capture* New_ctor(::StringW text, int i, int l) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Capture::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Capture*, creationType>(text, i, l)));
     }
     // System.String GetOriginalString()
-    // Offset: 0xE6E924
+    // Offset: 0x10E07BC
     ::StringW GetOriginalString();
     // System.String GetLeftSubstring()
-    // Offset: 0xE6E92C
+    // Offset: 0x10E07C4
     ::StringW GetLeftSubstring();
     // System.String GetRightSubstring()
-    // Offset: 0xE6E954
+    // Offset: 0x10E07EC
     ::StringW GetRightSubstring();
     // System.Void .ctor()
-    // Offset: 0xE6E984
+    // Offset: 0x10E081C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -96,7 +88,7 @@ namespace System::Text::RegularExpressions {
       return THROW_UNLESS((::il2cpp_utils::New<Capture*, creationType>()));
     }
     // public override System.String ToString()
-    // Offset: 0xE6E920
+    // Offset: 0x10E07B8
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

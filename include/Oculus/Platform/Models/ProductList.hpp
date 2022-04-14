@@ -37,7 +37,7 @@ namespace Oculus::Platform::Models {
   class ProductList : public ::Oculus::Platform::Models::DeserializableList_1<::Oculus::Platform::Models::Product*> {
     public:
     // public System.Void .ctor(System.IntPtr a)
-    // Offset: 0x1146094
+    // Offset: 0x1712F90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProductList* New_ctor(::System::IntPtr a) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::ProductList::.ctor");

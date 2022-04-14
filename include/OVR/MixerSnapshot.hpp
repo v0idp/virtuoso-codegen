@@ -33,15 +33,7 @@ namespace OVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class MixerSnapshot : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Audio.AudioMixerSnapshot snapshot
     // Size: 0x8
     // Offset: 0x10
@@ -56,11 +48,11 @@ namespace OVR {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.Audio.AudioMixerSnapshot snapshot
-    ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_snapshot();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_snapshot();
     // Get instance field reference: public System.Single transitionTime
-    float& dyn_transitionTime();
+    [[deprecated]] float& dyn_transitionTime();
     // public System.Void .ctor()
-    // Offset: 0x12A6A8C
+    // Offset: 0x18A4630
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

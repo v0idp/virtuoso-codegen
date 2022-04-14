@@ -45,10 +45,10 @@ namespace UnityEngine {
     // Set static field: static Unity.Profiling.ProfilerMarker s_MakeBatchMarker
     static void _set_s_MakeBatchMarker(::Unity::Profiling::ProfilerMarker value);
     // static private System.Void .cctor()
-    // Offset: 0x9E0C98
+    // Offset: 0xBD5B60
     static void _cctor();
     // static public System.Void Combine(UnityEngine.GameObject[] gos, UnityEngine.GameObject staticBatchRoot)
-    // Offset: 0x9E0B50
+    // Offset: 0xBD5A18
     static void Combine(::ArrayW<::UnityEngine::GameObject*> gos, ::UnityEngine::GameObject* staticBatchRoot);
   }; // UnityEngine.StaticBatchingUtility
   #pragma pack(pop)

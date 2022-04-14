@@ -68,7 +68,7 @@ namespace RSG {
       return ::il2cpp_utils::RunMethodRethrow<::RSG::Tuple_4<T1, T2, T3, T4>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, item1, item2, item3, item4);
     }
     // public System.Void .ctor()
-    // Offset: 0x1406AB0
+    // Offset: 0xA2E734
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

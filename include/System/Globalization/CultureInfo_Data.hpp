@@ -66,17 +66,17 @@ namespace System::Globalization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 ansi
-    int& dyn_ansi();
+    [[deprecated]] int& dyn_ansi();
     // Get instance field reference: public System.Int32 ebcdic
-    int& dyn_ebcdic();
+    [[deprecated]] int& dyn_ebcdic();
     // Get instance field reference: public System.Int32 mac
-    int& dyn_mac();
+    [[deprecated]] int& dyn_mac();
     // Get instance field reference: public System.Int32 oem
-    int& dyn_oem();
+    [[deprecated]] int& dyn_oem();
     // Get instance field reference: public System.Boolean right_to_left
-    bool& dyn_right_to_left();
+    [[deprecated]] bool& dyn_right_to_left();
     // Get instance field reference: public System.Byte list_sep
-    uint8_t& dyn_list_sep();
+    [[deprecated]] uint8_t& dyn_list_sep();
   }; // System.Globalization.CultureInfo/System.Globalization.Data
   #pragma pack(pop)
   static check_size<sizeof(CultureInfo::Data), 17 + sizeof(uint8_t)> __System_Globalization_CultureInfo_DataSizeCheck;

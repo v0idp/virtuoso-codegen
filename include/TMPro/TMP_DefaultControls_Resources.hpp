@@ -79,19 +79,19 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Sprite standard
-    ::UnityEngine::Sprite*& dyn_standard();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_standard();
     // Get instance field reference: public UnityEngine.Sprite background
-    ::UnityEngine::Sprite*& dyn_background();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_background();
     // Get instance field reference: public UnityEngine.Sprite inputField
-    ::UnityEngine::Sprite*& dyn_inputField();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_inputField();
     // Get instance field reference: public UnityEngine.Sprite knob
-    ::UnityEngine::Sprite*& dyn_knob();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_knob();
     // Get instance field reference: public UnityEngine.Sprite checkmark
-    ::UnityEngine::Sprite*& dyn_checkmark();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_checkmark();
     // Get instance field reference: public UnityEngine.Sprite dropdown
-    ::UnityEngine::Sprite*& dyn_dropdown();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_dropdown();
     // Get instance field reference: public UnityEngine.Sprite mask
-    ::UnityEngine::Sprite*& dyn_mask();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_mask();
   }; // TMPro.TMP_DefaultControls/TMPro.Resources
   #pragma pack(pop)
   static check_size<sizeof(TMP_DefaultControls::Resources), 48 + sizeof(::UnityEngine::Sprite*)> __TMPro_TMP_DefaultControls_ResourcesSizeCheck;

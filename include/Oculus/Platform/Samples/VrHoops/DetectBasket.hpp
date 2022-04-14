@@ -93,20 +93,12 @@ namespace Oculus::Platform::Samples::VrHoops {
       // Set static field: static public Oculus.Platform.Samples.VrHoops.DetectBasket/Oculus.Platform.Samples.VrHoops.BasketPhase BOTTOM
       static void _set_BOTTOM(::Oculus::Platform::Samples::VrHoops::DetectBasket::BasketPhase value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrHoops.DetectBasket/Oculus.Platform.Samples.VrHoops.BasketPhase
     #pragma pack(pop)
     static check_size<sizeof(DetectBasket::BasketPhase), 0 + sizeof(int)> __Oculus_Platform_Samples_VrHoops_DetectBasket_BasketPhaseSizeCheck;
     static_assert(sizeof(DetectBasket::BasketPhase) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Samples.VrHoops.DetectBasket/Oculus.Platform.Samples.VrHoops.BasketPhase m_phase
     // Size: 0x4
     // Offset: 0x18
@@ -125,20 +117,20 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.DetectBasket/Oculus.Platform.Samples.VrHoops.BasketPhase m_phase
-    ::Oculus::Platform::Samples::VrHoops::DetectBasket::BasketPhase& dyn_m_phase();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::DetectBasket::BasketPhase& dyn_m_phase();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.Player m_owningPlayer
-    ::Oculus::Platform::Samples::VrHoops::Player*& dyn_m_owningPlayer();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::Player*& dyn_m_owningPlayer();
     // public System.Void set_Player(Oculus.Platform.Samples.VrHoops.Player value)
-    // Offset: 0x7E7828
+    // Offset: 0x92DC08
     void set_Player(::Oculus::Platform::Samples::VrHoops::Player* value);
     // private System.Void OnTriggerEnter(UnityEngine.Collider other)
-    // Offset: 0x7E7830
+    // Offset: 0x92DC10
     void OnTriggerEnter(::UnityEngine::Collider* other);
     // private System.Void OnTriggerExit(UnityEngine.Collider other)
-    // Offset: 0x7E7918
+    // Offset: 0x92DCF8
     void OnTriggerExit(::UnityEngine::Collider* other);
     // public System.Void .ctor()
-    // Offset: 0x7E7A8C
+    // Offset: 0x92DE6C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -19,6 +19,11 @@
 #include "beatsaber-hook/shared/utils/utils.h"
 // Completed includes
 // Begin forward declares
+// Forward declaring namespace: System
+namespace System {
+  // Forward declaring type: Uri
+  class Uri;
+}
 // Forward declaring namespace: System::Net
 namespace System::Net {
   // Forward declaring type: WebHeaderCollection
@@ -51,15 +56,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class WebResponse : public ::System::MarshalByRefObject/*, public ::System::IDisposable, public ::System::Runtime::Serialization::ISerializable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean m_IsCacheFresh
     // Size: 0x1
     // Offset: 0x18
@@ -84,39 +81,42 @@ namespace System::Net {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: private System.Boolean m_IsCacheFresh
-    bool& dyn_m_IsCacheFresh();
+    [[deprecated]] bool& dyn_m_IsCacheFresh();
     // Get instance field reference: private System.Boolean m_IsFromCache
-    bool& dyn_m_IsFromCache();
+    [[deprecated]] bool& dyn_m_IsFromCache();
+    // public System.Uri get_ResponseUri()
+    // Offset: 0xC4BCC8
+    ::System::Uri* get_ResponseUri();
     // public System.Net.WebHeaderCollection get_Headers()
-    // Offset: 0xAC06DC
+    // Offset: 0xC4BCF8
     ::System::Net::WebHeaderCollection* get_Headers();
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xAC057C
+    // Offset: 0xC4BB68
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebResponse* New_ctor(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebResponse::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WebResponse*, creationType>(serializationInfo, streamingContext)));
     }
     // private System.Void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xAC0584
+    // Offset: 0xC4BB70
     void System_Runtime_Serialization_ISerializable_GetObjectData(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext);
     // protected System.Void GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xAC0590
+    // Offset: 0xC4BB7C
     void GetObjectData(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext);
     // public System.Void Close()
-    // Offset: 0xAC0594
+    // Offset: 0xC4BB80
     void Close();
     // public System.Void Dispose()
-    // Offset: 0xAC0598
+    // Offset: 0xC4BB84
     void Dispose();
     // protected System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xAC0610
+    // Offset: 0xC4BBFC
     void Dispose(bool disposing);
     // public System.IO.Stream GetResponseStream()
-    // Offset: 0xAC06AC
+    // Offset: 0xC4BC98
     ::System::IO::Stream* GetResponseStream();
     // protected System.Void .ctor()
-    // Offset: 0xAC0574
+    // Offset: 0xC4BB60
     // Implemented from: System.MarshalByRefObject
     // Base method: System.Void MarshalByRefObject::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -131,6 +131,14 @@ namespace System::Net {
   static_assert(sizeof(WebResponse) == 0x1A);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Net::WebResponse::get_ResponseUri
+// Il2CppName: get_ResponseUri
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Uri* (System::Net::WebResponse::*)()>(&System::Net::WebResponse::get_ResponseUri)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Net::WebResponse*), "get_ResponseUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::Net::WebResponse::get_Headers
 // Il2CppName: get_Headers
 template<>

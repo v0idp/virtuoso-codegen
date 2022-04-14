@@ -74,40 +74,40 @@ namespace DG::Tweening::Plugins {
     // Set static field: static private readonly System.Collections.Generic.List`1<System.Char> _OpenedTags
     static void _set__OpenedTags(::System::Collections::Generic::List_1<::Il2CppChar>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1036C58
+    // Offset: 0x15AD650
     static void _cctor();
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<System.String,System.String,DG.Tweening.Plugins.Options.StringOptions> t, System.Boolean isRelative)
-    // Offset: 0x1035AF8
+    // Offset: 0x15AC4F0
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::StringW, ::StringW, ::DG::Tweening::Plugins::Options::StringOptions>* t, bool isRelative);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<System.String,System.String,DG.Tweening.Plugins.Options.StringOptions> t, System.String fromValue, System.Boolean setImmediately)
-    // Offset: 0x1035B84
+    // Offset: 0x15AC57C
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::StringW, ::StringW, ::DG::Tweening::Plugins::Options::StringOptions>* t, ::StringW fromValue, bool setImmediately);
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<System.String,System.String,DG.Tweening.Plugins.Options.StringOptions> t)
-    // Offset: 0x1035C08
+    // Offset: 0x15AC600
     void Reset(::DG::Tweening::Core::TweenerCore_3<::StringW, ::StringW, ::DG::Tweening::Plugins::Options::StringOptions>* t);
     // public System.String ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<System.String,System.String,DG.Tweening.Plugins.Options.StringOptions> t, System.String value)
-    // Offset: 0x1035C24
+    // Offset: 0x15AC61C
     ::StringW ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<::StringW, ::StringW, ::DG::Tweening::Plugins::Options::StringOptions>* t, ::StringW value);
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<System.String,System.String,DG.Tweening.Plugins.Options.StringOptions> t)
-    // Offset: 0x1035C2C
+    // Offset: 0x15AC624
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<::StringW, ::StringW, ::DG::Tweening::Plugins::Options::StringOptions>* t);
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<System.String,System.String,DG.Tweening.Plugins.Options.StringOptions> t)
-    // Offset: 0x1035C30
+    // Offset: 0x15AC628
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<::StringW, ::StringW, ::DG::Tweening::Plugins::Options::StringOptions>* t);
     // public System.Single GetSpeedBasedDuration(DG.Tweening.Plugins.Options.StringOptions options, System.Single unitsXSecond, System.String changeValue)
-    // Offset: 0x1035D0C
+    // Offset: 0x15AC704
     float GetSpeedBasedDuration(::DG::Tweening::Plugins::Options::StringOptions options, float unitsXSecond, ::StringW changeValue);
     // public System.Void EvaluateAndApply(DG.Tweening.Plugins.Options.StringOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<System.String> getter, DG.Tweening.Core.DOSetter`1<System.String> setter, System.Single elapsed, System.String startValue, System.String changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x1035D4C
+    // Offset: 0x15AC744
     void EvaluateAndApply(::DG::Tweening::Plugins::Options::StringOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<::StringW>* getter, ::DG::Tweening::Core::DOSetter_1<::StringW>* setter, float elapsed, ::StringW startValue, ::StringW changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // private System.Text.StringBuilder Append(System.String value, System.Int32 startIndex, System.Int32 length, System.Boolean richTextEnabled)
-    // Offset: 0x1036254
+    // Offset: 0x15ACC4C
     ::System::Text::StringBuilder* Append(::StringW value, int startIndex, int length, bool richTextEnabled);
     // private System.Char[] ScrambledCharsToUse(DG.Tweening.Plugins.Options.StringOptions options)
-    // Offset: 0x103698C
+    // Offset: 0x15AD384
     ::ArrayW<::Il2CppChar> ScrambledCharsToUse(::DG::Tweening::Plugins::Options::StringOptions options);
     // public System.Void .ctor()
-    // Offset: 0x1036C0C
+    // Offset: 0x15AD604
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
     // Base method: System.Void Object::.ctor()

@@ -107,20 +107,12 @@ namespace VROSC {
       // Set static field: static public VROSC.NoteBoard/VROSC.Axis Z
       static void _set_Z(::VROSC::NoteBoard::Axis value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.NoteBoard/VROSC.Axis
     #pragma pack(pop)
     static check_size<sizeof(NoteBoard::Axis), 0 + sizeof(int)> __VROSC_NoteBoard_AxisSizeCheck;
     static_assert(sizeof(NoteBoard::Axis) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ScaleNode _scale
     // Size: 0x8
     // Offset: 0x18
@@ -181,70 +173,70 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ScaleNode _scale
-    ::VROSC::ScaleNode*& dyn__scale();
+    [[deprecated]] ::VROSC::ScaleNode*& dyn__scale();
     // Get instance field reference: private VROSC.NoteField _startNote
-    ::VROSC::NoteField*& dyn__startNote();
+    [[deprecated]] ::VROSC::NoteField*& dyn__startNote();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.NoteAxis _noteAxisX
-    ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisX();
+    [[deprecated]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisX();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.NoteAxis _noteAxisY
-    ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisY();
+    [[deprecated]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisY();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.NoteAxis _noteAxisZ
-    ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisZ();
+    [[deprecated]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisZ();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.NoteAxis[] _noteAxes
-    ::ArrayW<::VROSC::NoteBoard::NoteAxis*>& dyn__noteAxes();
+    [[deprecated]] ::ArrayW<::VROSC::NoteBoard::NoteAxis*>& dyn__noteAxes();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.Axis _primaryAxis
-    ::VROSC::NoteBoard::Axis& dyn__primaryAxis();
+    [[deprecated]] ::VROSC::NoteBoard::Axis& dyn__primaryAxis();
     // Get instance field reference: private VROSC.ControllerInputNode _controllerInputNode
-    ::VROSC::ControllerInputNode*& dyn__controllerInputNode();
+    [[deprecated]] ::VROSC::ControllerInputNode*& dyn__controllerInputNode();
     // Get instance field reference: private VROSC.NoteBoardNoteController _notefieldController
-    ::VROSC::NoteBoardNoteController*& dyn__notefieldController();
+    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__notefieldController();
     // protected System.Void Awake()
-    // Offset: 0xA104BC
+    // Offset: 0xAD4F78
     void Awake();
     // protected System.Void LateUpdate()
-    // Offset: 0xA107CC
+    // Offset: 0xAD5288
     void LateUpdate();
     // private System.Void Setup()
-    // Offset: 0xA104C0
+    // Offset: 0xAD4F7C
     void Setup();
     // private System.Void CheckScaleAndBase()
-    // Offset: 0xA10800
+    // Offset: 0xAD52BC
     void CheckScaleAndBase();
     // private System.Void UpdateScaleAndBase()
-    // Offset: 0xA10834
+    // Offset: 0xAD52F0
     void UpdateScaleAndBase();
     // public System.Boolean UpdateAxisesAndReturnIfDirty()
-    // Offset: 0xA10870
+    // Offset: 0xAD532C
     bool UpdateAxisesAndReturnIfDirty();
     // public VROSC.NoteFieldParameters CreateNoteFieldParameters()
-    // Offset: 0xA10990
+    // Offset: 0xAD5450
     ::VROSC::NoteFieldParameters* CreateNoteFieldParameters();
     // private System.Void HoverBegin(VROSC.InputDevice device)
-    // Offset: 0xA10E40
+    // Offset: 0xAD54E8
     void HoverBegin(::VROSC::InputDevice* device);
     // private System.Void Hover(VROSC.InputDevice device)
-    // Offset: 0xA10EC4
+    // Offset: 0xAD556C
     void Hover(::VROSC::InputDevice* device);
     // private System.Void HoverEnd(VROSC.InputDevice device)
-    // Offset: 0xA11338
+    // Offset: 0xAD59F0
     void HoverEnd(::VROSC::InputDevice* device);
     // public VROSC.NoteFieldNoteData GetNoteField(UnityEngine.Vector3 position)
-    // Offset: 0xA10F18
+    // Offset: 0xAD55C0
     ::VROSC::NoteFieldNoteData* GetNoteField(::UnityEngine::Vector3 position);
     // public System.Int32 GetNote(UnityEngine.Vector3 position, VROSC.NoteBoard/VROSC.PlayAxis playMode)
-    // Offset: 0xA11718
+    // Offset: 0xAD5DD8
     int GetNote(::UnityEngine::Vector3 position, ::VROSC::NoteBoard::PlayAxis playMode);
     // public VROSC.Scale GetScale(VROSC.NoteBoard/VROSC.PlayAxis playAxis)
-    // Offset: 0xA11790
+    // Offset: 0xAD5E50
     ::VROSC::Scale GetScale(::VROSC::NoteBoard::PlayAxis playAxis);
     // static public UnityEngine.Vector3 NoteAxisToVector(VROSC.NoteBoard/VROSC.PlayAxis playAxis)
-    // Offset: 0xA11844
+    // Offset: 0xAD5F04
     static ::UnityEngine::Vector3 NoteAxisToVector(::VROSC::NoteBoard::PlayAxis playAxis);
     // static public UnityEngine.Vector3 NoteAxisToVector(VROSC.NoteBoard/VROSC.PlayAxis playAxis, VROSC.NoteBoardNote/VROSC.Coloring coloring)
-    // Offset: 0xA1187C
+    // Offset: 0xAD5F3C
     static ::UnityEngine::Vector3 NoteAxisToVector(::VROSC::NoteBoard::PlayAxis playAxis, ::VROSC::NoteBoardNote::Coloring coloring);
     // public System.Void .ctor()
-    // Offset: 0xA118B0
+    // Offset: 0xAD5F70
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

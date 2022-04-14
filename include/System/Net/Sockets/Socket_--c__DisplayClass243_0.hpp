@@ -31,15 +31,7 @@ namespace System::Net::Sockets {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Socket::$$c__DisplayClass243_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 sent_so_far
     // Size: 0x4
     // Offset: 0x10
@@ -52,12 +44,12 @@ namespace System::Net::Sockets {
       return sent_so_far;
     }
     // Get instance field reference: public System.Int32 sent_so_far
-    int& dyn_sent_so_far();
+    [[deprecated]] int& dyn_sent_so_far();
     // System.Void <BeginSendCallback>b__0(System.IOAsyncResult s)
-    // Offset: 0x8E5040
+    // Offset: 0xA01B04
     void $BeginSendCallback$b__0(::System::IOAsyncResult* s);
     // public System.Void .ctor()
-    // Offset: 0x8E5038
+    // Offset: 0xA01AFC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

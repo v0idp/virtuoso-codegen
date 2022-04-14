@@ -43,15 +43,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UserProfilePopup : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _usernameText
     // Size: 0x8
     // Offset: 0x18
@@ -98,57 +90,57 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _usernameText
-    ::TMPro::TextMeshPro*& dyn__usernameText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__usernameText();
     // Get instance field reference: private TMPro.TextMeshPro _emailText
-    ::TMPro::TextMeshPro*& dyn__emailText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__emailText();
     // Get instance field reference: private VROSC.UIButton _changeEmailButton
-    ::VROSC::UIButton*& dyn__changeEmailButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__changeEmailButton();
     // Get instance field reference: private VROSC.UIButton _changePasswordButton
-    ::VROSC::UIButton*& dyn__changePasswordButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__changePasswordButton();
     // Get instance field reference: private VROSC.UIButton _logoutButton
-    ::VROSC::UIButton*& dyn__logoutButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__logoutButton();
     // Get instance field reference: private VROSC.UIButton _deleteDataButton
-    ::VROSC::UIButton*& dyn__deleteDataButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__deleteDataButton();
     // Get instance field reference: private VROSC.SessionsLibraryUI _sessionsLibraryUI
-    ::VROSC::SessionsLibraryUI*& dyn__sessionsLibraryUI();
+    [[deprecated]] ::VROSC::SessionsLibraryUI*& dyn__sessionsLibraryUI();
     // private System.Void Awake()
-    // Offset: 0x13ABB7C
+    // Offset: 0x191FAF0
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13ABE9C
+    // Offset: 0x191FE10
     void OnDestroy();
     // public System.Void Setup(VROSC.SessionsLibraryUI sessionsLibraryUI)
-    // Offset: 0x13AC19C
+    // Offset: 0x1920110
     void Setup(::VROSC::SessionsLibraryUI* sessionsLibraryUI);
     // private System.Void OnEnable()
-    // Offset: 0x13AC1A4
+    // Offset: 0x1920118
     void OnEnable();
     // private System.Void PopulateData()
-    // Offset: 0x13AC220
+    // Offset: 0x1920194
     void PopulateData();
     // private System.Void ClearData()
-    // Offset: 0x13AC34C
+    // Offset: 0x19202C0
     void ClearData();
     // private System.Void ChangeEmailButtonPressed()
-    // Offset: 0x13AC428
+    // Offset: 0x192039C
     void ChangeEmailButtonPressed();
     // private System.Void ChangePasswordButtonPressed()
-    // Offset: 0x13AC444
+    // Offset: 0x19203B8
     void ChangePasswordButtonPressed();
     // private System.Void LogoutButtonPressed()
-    // Offset: 0x13AC460
+    // Offset: 0x19203D4
     void LogoutButtonPressed();
     // private System.Void UserLoggedIn(System.String email, System.Boolean isVerified)
-    // Offset: 0x13AC4B8
+    // Offset: 0x192042C
     void UserLoggedIn(::StringW email, bool isVerified);
     // private System.Void UserLoggedOut()
-    // Offset: 0x13AC4BC
+    // Offset: 0x1920430
     void UserLoggedOut();
     // private System.Void UserEmailChanged()
-    // Offset: 0x13AC4C0
+    // Offset: 0x1920434
     void UserEmailChanged();
     // public System.Void .ctor()
-    // Offset: 0x13AC538
+    // Offset: 0x19204AC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

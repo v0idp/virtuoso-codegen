@@ -84,20 +84,12 @@ namespace VROSC {
       // Set static field: static public VROSC.AdjustableMeshTransformUVEffect/VROSC.Channel Uv4
       static void _set_Uv4(::VROSC::AdjustableMeshTransformUVEffect::Channel value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.AdjustableMeshTransformUVEffect/VROSC.Channel
     #pragma pack(pop)
     static check_size<sizeof(AdjustableMeshTransformUVEffect::Channel), 0 + sizeof(int)> __VROSC_AdjustableMeshTransformUVEffect_ChannelSizeCheck;
     static_assert(sizeof(AdjustableMeshTransformUVEffect::Channel) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector2 _offset
     // Size: 0x8
     // Offset: 0x20
@@ -126,18 +118,18 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector2>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector2 _offset
-    ::UnityEngine::Vector2& dyn__offset();
+    [[deprecated]] ::UnityEngine::Vector2& dyn__offset();
     // Get instance field reference: private VROSC.AdjustableMeshTransformUVEffect/VROSC.Channel _channel
-    ::VROSC::AdjustableMeshTransformUVEffect::Channel& dyn__channel();
+    [[deprecated]] ::VROSC::AdjustableMeshTransformUVEffect::Channel& dyn__channel();
     // Get instance field reference: private UnityEngine.Vector2[] _originalUv
-    ::ArrayW<::UnityEngine::Vector2>& dyn__originalUv();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__originalUv();
     // Get instance field reference: private UnityEngine.Vector2[] _uv
-    ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
     // public System.Void SetOffset(UnityEngine.Vector2 offset)
-    // Offset: 0x136A148
+    // Offset: 0x968A88
     void SetOffset(::UnityEngine::Vector2 offset);
     // public System.Void .ctor()
-    // Offset: 0x136A150
+    // Offset: 0x968A90
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

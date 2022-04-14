@@ -41,15 +41,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIProgressBar : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AdjustableMesh _progressBar
     // Size: 0x8
     // Offset: 0x18
@@ -96,39 +88,39 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AdjustableMesh _progressBar
-    ::VROSC::AdjustableMesh*& dyn__progressBar();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__progressBar();
     // Get instance field reference: private VROSC.AdjustableMeshTransformUVEffect _progressBarValue
-    ::VROSC::AdjustableMeshTransformUVEffect*& dyn__progressBarValue();
+    [[deprecated]] ::VROSC::AdjustableMeshTransformUVEffect*& dyn__progressBarValue();
     // Get instance field reference: private VROSC.AdjustableMeshColorChangeEffect _progressBarColor
-    ::VROSC::AdjustableMeshColorChangeEffect*& dyn__progressBarColor();
+    [[deprecated]] ::VROSC::AdjustableMeshColorChangeEffect*& dyn__progressBarColor();
     // Get instance field reference: private UnityEngine.Color _successColor
-    ::UnityEngine::Color& dyn__successColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__successColor();
     // Get instance field reference: private UnityEngine.Color _failureColor
-    ::UnityEngine::Color& dyn__failureColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__failureColor();
     // Get instance field reference: private UnityEngine.Color _inProgressColor
-    ::UnityEngine::Color& dyn__inProgressColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__inProgressColor();
     // Get instance field reference: private System.Single <Progress>k__BackingField
-    float& dyn_$Progress$k__BackingField();
+    [[deprecated]] float& dyn_$Progress$k__BackingField();
     // public System.Single get_Progress()
-    // Offset: 0x139F370
+    // Offset: 0x1912C9C
     float get_Progress();
     // private System.Void set_Progress(System.Single value)
-    // Offset: 0x139F378
+    // Offset: 0x1912CA4
     void set_Progress(float value);
     // private System.Void Awake()
-    // Offset: 0x139F380
+    // Offset: 0x1912CAC
     void Awake();
     // public System.Void StartUpdating()
-    // Offset: 0x139F384
+    // Offset: 0x1912CB0
     void StartUpdating();
     // public System.Void StopUpdating(System.Boolean success)
-    // Offset: 0x139F3CC
+    // Offset: 0x1912CF8
     void StopUpdating(bool success);
     // public System.Void UpdateValue(System.Single value)
-    // Offset: 0x139F440
+    // Offset: 0x1912D6C
     void UpdateValue(float value);
     // public System.Void .ctor()
-    // Offset: 0x139F464
+    // Offset: 0x1912D90
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

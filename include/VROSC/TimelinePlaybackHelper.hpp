@@ -38,15 +38,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TimelinePlaybackHelper : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <IsPlaying>k__BackingField
     // Size: 0x1
     // Offset: 0x10
@@ -75,30 +67,30 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
     // Get instance field reference: private System.Double _endTime
-    double& dyn__endTime();
+    [[deprecated]] double& dyn__endTime();
     // Get instance field reference: private System.Double _startTime
-    double& dyn__startTime();
+    [[deprecated]] double& dyn__startTime();
     // Get instance field reference: public System.Action OnEnd
-    ::System::Action*& dyn_OnEnd();
+    [[deprecated]] ::System::Action*& dyn_OnEnd();
     // public System.Boolean get_IsPlaying()
-    // Offset: 0x13FF6AC
+    // Offset: 0xA275E4
     bool get_IsPlaying();
     // private System.Void set_IsPlaying(System.Boolean value)
-    // Offset: 0x13FF6A0
+    // Offset: 0xA275D8
     void set_IsPlaying(bool value);
     // public System.Void Update()
-    // Offset: 0x13FF6B4
+    // Offset: 0xA275EC
     void Update();
     // public System.Void Start(UnityEngine.Playables.PlayableAsset playable)
-    // Offset: 0x13FF744
+    // Offset: 0xA2767C
     void Start(::UnityEngine::Playables::PlayableAsset* playable);
     // public System.Void Stop()
-    // Offset: 0x13FF70C
+    // Offset: 0xA27644
     void Stop();
     // public System.Void .ctor()
-    // Offset: 0x13FF7B4
+    // Offset: 0xA276EC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

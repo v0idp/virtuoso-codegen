@@ -111,34 +111,34 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 index
-    int& dyn_index();
+    [[deprecated]] int& dyn_index();
     // Get instance field reference: public TMPro.TMP_FontAsset fontAsset
-    ::TMPro::TMP_FontAsset*& dyn_fontAsset();
+    [[deprecated]] ::TMPro::TMP_FontAsset*& dyn_fontAsset();
     // Get instance field reference: public TMPro.TMP_SpriteAsset spriteAsset
-    ::TMPro::TMP_SpriteAsset*& dyn_spriteAsset();
+    [[deprecated]] ::TMPro::TMP_SpriteAsset*& dyn_spriteAsset();
     // Get instance field reference: public UnityEngine.Material material
-    ::UnityEngine::Material*& dyn_material();
+    [[deprecated]] ::UnityEngine::Material*& dyn_material();
     // Get instance field reference: public System.Boolean isDefaultMaterial
-    bool& dyn_isDefaultMaterial();
+    [[deprecated]] bool& dyn_isDefaultMaterial();
     // Get instance field reference: public System.Boolean isFallbackMaterial
-    bool& dyn_isFallbackMaterial();
+    [[deprecated]] bool& dyn_isFallbackMaterial();
     // Get instance field reference: public UnityEngine.Material fallbackMaterial
-    ::UnityEngine::Material*& dyn_fallbackMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_fallbackMaterial();
     // Get instance field reference: public System.Single padding
-    float& dyn_padding();
+    [[deprecated]] float& dyn_padding();
     // Get instance field reference: public System.Int32 referenceCount
-    int& dyn_referenceCount();
+    [[deprecated]] int& dyn_referenceCount();
     // public System.Void .ctor(System.Int32 index, TMPro.TMP_FontAsset fontAsset, TMPro.TMP_SpriteAsset spriteAsset, UnityEngine.Material material, System.Single padding)
-    // Offset: 0xA489E4
+    // Offset: 0xC2A5F4
     MaterialReference(int index, ::TMPro::TMP_FontAsset* fontAsset, ::TMPro::TMP_SpriteAsset* spriteAsset, ::UnityEngine::Material* material, float padding);
     // static public System.Boolean Contains(TMPro.MaterialReference[] materialReferences, TMPro.TMP_FontAsset fontAsset)
-    // Offset: 0xA48A6C
+    // Offset: 0xC2A67C
     static bool Contains(::ArrayW<::TMPro::MaterialReference> materialReferences, ::TMPro::TMP_FontAsset* fontAsset);
     // static public System.Int32 AddMaterialReference(UnityEngine.Material material, TMPro.TMP_FontAsset fontAsset, ref TMPro.MaterialReference[] materialReferences, System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> materialReferenceIndexLookup)
-    // Offset: 0xA48B84
+    // Offset: 0xC2A794
     static int AddMaterialReference(::UnityEngine::Material* material, ::TMPro::TMP_FontAsset* fontAsset, ByRef<::ArrayW<::TMPro::MaterialReference>> materialReferences, ::System::Collections::Generic::Dictionary_2<int, int>* materialReferenceIndexLookup);
     // static public System.Int32 AddMaterialReference(UnityEngine.Material material, TMPro.TMP_SpriteAsset spriteAsset, ref TMPro.MaterialReference[] materialReferences, System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> materialReferenceIndexLookup)
-    // Offset: 0xA48DA8
+    // Offset: 0xC2A9B8
     static int AddMaterialReference(::UnityEngine::Material* material, ::TMPro::TMP_SpriteAsset* spriteAsset, ByRef<::ArrayW<::TMPro::MaterialReference>> materialReferences, ::System::Collections::Generic::Dictionary_2<int, int>* materialReferenceIndexLookup);
   }; // TMPro.MaterialReference
   #pragma pack(pop)

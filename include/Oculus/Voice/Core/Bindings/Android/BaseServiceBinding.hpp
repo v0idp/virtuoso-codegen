@@ -33,15 +33,7 @@ namespace Oculus::Voice::Core::Bindings::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class BaseServiceBinding : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected UnityEngine.AndroidJavaObject binding
     // Size: 0x8
     // Offset: 0x10
@@ -54,16 +46,16 @@ namespace Oculus::Voice::Core::Bindings::Android {
       return binding;
     }
     // Get instance field reference: protected UnityEngine.AndroidJavaObject binding
-    ::UnityEngine::AndroidJavaObject*& dyn_binding();
+    [[deprecated]] ::UnityEngine::AndroidJavaObject*& dyn_binding();
     // protected System.Void .ctor(UnityEngine.AndroidJavaObject sdkInstance)
-    // Offset: 0x13068BC
+    // Offset: 0x190EA54
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BaseServiceBinding* New_ctor(::UnityEngine::AndroidJavaObject* sdkInstance) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Core::Bindings::Android::BaseServiceBinding::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BaseServiceBinding*, creationType>(sdkInstance)));
     }
     // public System.Void Shutdown()
-    // Offset: 0x13068E8
+    // Offset: 0x190EA80
     void Shutdown();
   }; // Oculus.Voice.Core.Bindings.Android.BaseServiceBinding
   #pragma pack(pop)

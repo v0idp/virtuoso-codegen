@@ -32,15 +32,7 @@ namespace Firebase::Auth {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class FirebaseAuth::$ForwardStateChange$c__AnonStorey3 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Action`1<Firebase.Auth.FirebaseAuth> stateChangeClosure
     // Size: 0x8
     // Offset: 0x10
@@ -53,9 +45,9 @@ namespace Firebase::Auth {
       return stateChangeClosure;
     }
     // Get instance field reference: System.Action`1<Firebase.Auth.FirebaseAuth> stateChangeClosure
-    ::System::Action_1<::Firebase::Auth::FirebaseAuth*>*& dyn_stateChangeClosure();
+    [[deprecated]] ::System::Action_1<::Firebase::Auth::FirebaseAuth*>*& dyn_stateChangeClosure();
     // public System.Void .ctor()
-    // Offset: 0x12B0C88
+    // Offset: 0x18B09C4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

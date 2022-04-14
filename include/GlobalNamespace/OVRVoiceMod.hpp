@@ -68,67 +68,67 @@ namespace GlobalNamespace {
     // Set static field: static public OVRVoiceMod sInstance
     static void _set_sInstance(::GlobalNamespace::OVRVoiceMod* value);
     // static private System.Int32 ovrVoiceModDll_Initialize(System.Int32 SampleRate, System.Int32 BufferSize)
-    // Offset: 0xA1BDF0
+    // Offset: 0xC60E54
     static int ovrVoiceModDll_Initialize(int SampleRate, int BufferSize);
     // static private System.Void ovrVoiceModDll_Shutdown()
-    // Offset: 0xA1BE80
+    // Offset: 0xC60EE4
     static void ovrVoiceModDll_Shutdown();
     // static private System.IntPtr ovrVoicemodDll_GetVersion(ref System.Int32 Major, ref System.Int32 Minor, ref System.Int32 Patch)
-    // Offset: 0xA1BEF0
+    // Offset: 0xC60F54
     static ::System::IntPtr ovrVoicemodDll_GetVersion(ByRef<int> Major, ByRef<int> Minor, ByRef<int> Patch);
     // static private System.Int32 ovrVoiceModDll_CreateContext(ref System.UInt32 Context)
-    // Offset: 0xA1BF88
+    // Offset: 0xC60FEC
     static int ovrVoiceModDll_CreateContext(ByRef<uint> Context);
     // static private System.Int32 ovrVoiceModDll_DestroyContext(System.UInt32 Context)
-    // Offset: 0xA1C008
+    // Offset: 0xC6106C
     static int ovrVoiceModDll_DestroyContext(uint Context);
     // static private System.Int32 ovrVoiceModDll_SendParameter(System.UInt32 Context, System.Int32 Parameter, System.Int32 Value)
-    // Offset: 0xA1C088
+    // Offset: 0xC610EC
     static int ovrVoiceModDll_SendParameter(uint Context, int Parameter, int Value);
     // static private System.Int32 ovrVoiceModDll_ProcessFrame(System.UInt32 Context, System.UInt32 Flags, System.Single[] AudioBuffer)
-    // Offset: 0xA1C120
+    // Offset: 0xC61184
     static int ovrVoiceModDll_ProcessFrame(uint Context, uint Flags, ::ArrayW<float> AudioBuffer);
     // static private System.Int32 ovrVoiceModDll_ProcessFrameInterleaved(System.UInt32 Context, System.UInt32 Flags, System.Single[] AudioBuffer)
-    // Offset: 0xA1C1C0
+    // Offset: 0xC61224
     static int ovrVoiceModDll_ProcessFrameInterleaved(uint Context, uint Flags, ::ArrayW<float> AudioBuffer);
     // static private System.Int32 ovrVoiceModDll_GetAverageAbsVolume(System.UInt32 Context, ref System.Single Volume)
-    // Offset: 0xA1C260
+    // Offset: 0xC612C4
     static int ovrVoiceModDll_GetAverageAbsVolume(uint Context, ByRef<float> Volume);
     // private System.Void Awake()
-    // Offset: 0xA1C2F0
+    // Offset: 0xC61354
     void Awake();
     // private System.Void Start()
-    // Offset: 0xA1C6D8
+    // Offset: 0xC6173C
     void Start();
     // private System.Void Update()
-    // Offset: 0xA1C6DC
+    // Offset: 0xC61740
     void Update();
     // private System.Void OnDestroy()
-    // Offset: 0xA1C6E0
+    // Offset: 0xC61744
     void OnDestroy();
     // static public System.Int32 IsInitialized()
-    // Offset: 0xA1C80C
+    // Offset: 0xC61870
     static int IsInitialized();
     // static public System.Int32 CreateContext(ref System.UInt32 context)
-    // Offset: 0xA1C870
+    // Offset: 0xC618D4
     static int CreateContext(ByRef<uint> context);
     // static public System.Int32 DestroyContext(System.UInt32 context)
-    // Offset: 0xA1C948
+    // Offset: 0xC619AC
     static int DestroyContext(uint context);
     // static public System.Int32 SendParameter(System.UInt32 context, System.Int32 parameter, System.Int32 value)
-    // Offset: 0xA1CA20
+    // Offset: 0xC61A84
     static int SendParameter(uint context, int parameter, int value);
     // static public System.Int32 ProcessFrame(System.UInt32 context, System.Single[] audioBuffer)
-    // Offset: 0xA1CB14
+    // Offset: 0xC61B78
     static int ProcessFrame(uint context, ::ArrayW<float> audioBuffer);
     // static public System.Int32 ProcessFrameInterleaved(System.UInt32 context, System.Single[] audioBuffer)
-    // Offset: 0xA1CBF8
+    // Offset: 0xC61C5C
     static int ProcessFrameInterleaved(uint context, ::ArrayW<float> audioBuffer);
     // static public System.Single GetAverageAbsVolume(System.UInt32 context)
-    // Offset: 0xA1CCDC
+    // Offset: 0xC61D40
     static float GetAverageAbsVolume(uint context);
     // public System.Void .ctor()
-    // Offset: 0xA1CDB8
+    // Offset: 0xC61E1C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -141,7 +141,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVRVoiceMod*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0xA1CDC0
+    // Offset: 0xC61E24
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

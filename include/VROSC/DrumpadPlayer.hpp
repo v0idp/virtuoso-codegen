@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DrumpadPlayer : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IntNode _noteNode
     // Size: 0x8
     // Offset: 0x18
@@ -107,39 +99,39 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.IntNode _noteNode
-    ::VROSC::IntNode*& dyn__noteNode();
+    [[deprecated]] ::VROSC::IntNode*& dyn__noteNode();
     // Get instance field reference: private VROSC.NotePlayer _notePlayer
-    ::VROSC::NotePlayer*& dyn__notePlayer();
+    [[deprecated]] ::VROSC::NotePlayer*& dyn__notePlayer();
     // Get instance field reference: private VROSC.ValueSourceSelector _valueSourceSelector
-    ::VROSC::ValueSourceSelector*& dyn__valueSourceSelector();
+    [[deprecated]] ::VROSC::ValueSourceSelector*& dyn__valueSourceSelector();
     // Get instance field reference: private VROSC.PredictiveHittable _hittable
-    ::VROSC::PredictiveHittable*& dyn__hittable();
+    [[deprecated]] ::VROSC::PredictiveHittable*& dyn__hittable();
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal _drumpad
-    ::VROSC::DrumPadEffectOnSignal*& dyn__drumpad();
+    [[deprecated]] ::VROSC::DrumPadEffectOnSignal*& dyn__drumpad();
     // Get instance field reference: private UnityEngine.AudioSource _previewAudioSource
-    ::UnityEngine::AudioSource*& dyn__previewAudioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__previewAudioSource();
     // Get instance field reference: private VROSC.InstrumentController _instrumentController
-    ::VROSC::InstrumentController*& dyn__instrumentController();
+    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrumentController();
     // public System.Void Setup(System.Int32 sampleId, UnityEngine.Color groupColor, VROSC.InstrumentController instrumentController)
-    // Offset: 0x130DF20
+    // Offset: 0x8E7A9C
     void Setup(int sampleId, ::UnityEngine::Color groupColor, ::VROSC::InstrumentController* instrumentController);
     // public System.Void SetSampleIdOrNoteNumber(System.Int32 sampleIdOrNoteNumber, System.Boolean preview)
-    // Offset: 0x130E57C
+    // Offset: 0x8E8124
     void SetSampleIdOrNoteNumber(int sampleIdOrNoteNumber, bool preview);
     // public System.Void SetVelocityDependant(System.Boolean shouldBeVelocityDependant)
-    // Offset: 0x130DAF0
+    // Offset: 0x8E766C
     void SetVelocityDependant(bool shouldBeVelocityDependant);
     // public System.Void SetPitch(System.Int32 pitch, System.Boolean preview)
-    // Offset: 0x130DB6C
+    // Offset: 0x8E76E8
     void SetPitch(int pitch, bool preview);
     // private System.Void PlayPreview(System.Int32 id)
-    // Offset: 0x130EF58
+    // Offset: 0x8E8AFC
     void PlayPreview(int id);
     // private System.Void Colorize(UnityEngine.Color color)
-    // Offset: 0x130EED8
+    // Offset: 0x8E8A7C
     void Colorize(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x130F038
+    // Offset: 0x8E8BDC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

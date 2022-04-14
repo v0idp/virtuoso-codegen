@@ -73,20 +73,20 @@ namespace TMPro {
     // Set static field: static private readonly TMPro.TMP_Vertex k_Zero
     static void _set_k_Zero(::TMPro::TMP_Vertex value);
     // Get instance field reference: public UnityEngine.Vector3 position
-    ::UnityEngine::Vector3& dyn_position();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Vector2 uv
-    ::UnityEngine::Vector2& dyn_uv();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_uv();
     // Get instance field reference: public UnityEngine.Vector2 uv2
-    ::UnityEngine::Vector2& dyn_uv2();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_uv2();
     // Get instance field reference: public UnityEngine.Vector2 uv4
-    ::UnityEngine::Vector2& dyn_uv4();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_uv4();
     // Get instance field reference: public UnityEngine.Color32 color
-    ::UnityEngine::Color32& dyn_color();
+    [[deprecated]] ::UnityEngine::Color32& dyn_color();
     // static public TMPro.TMP_Vertex get_zero()
-    // Offset: 0xAD0AA8
+    // Offset: 0xD158FC
     static ::TMPro::TMP_Vertex get_zero();
     // static private System.Void .cctor()
-    // Offset: 0xAD0B1C
+    // Offset: 0xD15970
     static void _cctor();
   }; // TMPro.TMP_Vertex
   #pragma pack(pop)

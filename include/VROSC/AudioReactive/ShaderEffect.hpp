@@ -54,15 +54,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::ShaderEffect::$SpecificFlow$d__9
     class $SpecificFlow$d__9;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.ShaderEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -89,24 +81,24 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ShaderEffectData _data
-    ::VROSC::AudioReactive::ShaderEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::ShaderEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Renderer[] _renderers
-    ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
+    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock[] _materialBlocks
-    ::ArrayW<::UnityEngine::MaterialPropertyBlock*>& dyn__materialBlocks();
+    [[deprecated]] ::ArrayW<::UnityEngine::MaterialPropertyBlock*>& dyn__materialBlocks();
     // Get instance field reference: private UnityEngine.Color _currentColor
-    ::UnityEngine::Color& dyn__currentColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__currentColor();
     // public VROSC.AudioReactive.ShaderEffectData get_Data()
-    // Offset: 0x13B3E2C
+    // Offset: 0x1926CF8
     ::VROSC::AudioReactive::ShaderEffectData* get_Data();
     // public UnityEngine.Renderer[] get_Renderer()
-    // Offset: 0x13B3E34
+    // Offset: 0x1926D00
     ::ArrayW<::UnityEngine::Renderer*> get_Renderer();
     // private System.Void SetShaderEffects(UnityEngine.Renderer renderer, UnityEngine.MaterialPropertyBlock block, System.Single value)
-    // Offset: 0x13B4000
+    // Offset: 0x1926ECC
     void SetShaderEffects(::UnityEngine::Renderer* renderer, ::UnityEngine::MaterialPropertyBlock* block, float value);
     // public System.Void .ctor()
-    // Offset: 0x13B409C
+    // Offset: 0x1926F68
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -117,12 +109,12 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<ShaderEffect*, creationType>()));
     }
     // public override System.Void Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
-    // Offset: 0x13B3E3C
+    // Offset: 0x1926D08
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
     void Setup(::VROSC::AudioReactive::AudioReactiveBehaviour* behaviour);
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0x13B3F94
+    // Offset: 0x1926E60
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();

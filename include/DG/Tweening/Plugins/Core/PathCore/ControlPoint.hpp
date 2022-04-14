@@ -48,14 +48,14 @@ namespace DG::Tweening::Plugins::Core::PathCore {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 a
-    ::UnityEngine::Vector3& dyn_a();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_a();
     // Get instance field reference: public UnityEngine.Vector3 b
-    ::UnityEngine::Vector3& dyn_b();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_b();
     // public System.Void .ctor(UnityEngine.Vector3 a, UnityEngine.Vector3 b)
-    // Offset: 0x1091074
+    // Offset: 0x15D369C
     // ABORTED: conflicts with another method.  ControlPoint(::UnityEngine::Vector3 a, ::UnityEngine::Vector3 b);
     // public override System.String ToString()
-    // Offset: 0x1093530
+    // Offset: 0x15D5B58
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();
@@ -64,7 +64,7 @@ namespace DG::Tweening::Plugins::Core::PathCore {
   static check_size<sizeof(ControlPoint), 12 + sizeof(::UnityEngine::Vector3)> __DG_Tweening_Plugins_Core_PathCore_ControlPointSizeCheck;
   static_assert(sizeof(ControlPoint) == 0x18);
   // static public DG.Tweening.Plugins.Core.PathCore.ControlPoint op_Addition(DG.Tweening.Plugins.Core.PathCore.ControlPoint cp, UnityEngine.Vector3 v)
-  // Offset: 0x1093500
+  // Offset: 0x15D5B28
   ::DG::Tweening::Plugins::Core::PathCore::ControlPoint operator+(const ::DG::Tweening::Plugins::Core::PathCore::ControlPoint& cp, const ::UnityEngine::Vector3& v);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"

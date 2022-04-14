@@ -35,22 +35,22 @@ namespace UnityEngine {
   class InternalStaticBatchingUtility::StaticBatcherGOSorter : public ::Il2CppObject {
     public:
     // public System.Int64 GetMaterialId(UnityEngine.Renderer renderer)
-    // Offset: 0x124EFA8
+    // Offset: 0x184317C
     int64_t GetMaterialId(::UnityEngine::Renderer* renderer);
     // public System.Int32 GetLightmapIndex(UnityEngine.Renderer renderer)
-    // Offset: 0x124EED8
+    // Offset: 0x18430AC
     int GetLightmapIndex(::UnityEngine::Renderer* renderer);
     // static public UnityEngine.Renderer GetRenderer(UnityEngine.GameObject go)
-    // Offset: 0x124ED34
+    // Offset: 0x1842F08
     static ::UnityEngine::Renderer* GetRenderer(::UnityEngine::GameObject* go);
     // static public UnityEngine.Mesh GetMesh(UnityEngine.GameObject go)
-    // Offset: 0x124EB24
+    // Offset: 0x1842CF8
     static ::UnityEngine::Mesh* GetMesh(::UnityEngine::GameObject* go);
     // public System.Int64 GetRendererId(UnityEngine.Renderer renderer)
-    // Offset: 0x124F08C
+    // Offset: 0x1843260
     int64_t GetRendererId(::UnityEngine::Renderer* renderer);
     // public System.Void .ctor()
-    // Offset: 0x124F11C
+    // Offset: 0x18432F0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

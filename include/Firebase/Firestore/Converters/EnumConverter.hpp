@@ -46,15 +46,7 @@ namespace Firebase::Firestore::Converters {
   // [TokenAttribute] Offset: FFFFFFFF
   class EnumConverter : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.TypeCode _typeCode
     // Size: 0x4
     // Offset: 0x18
@@ -65,15 +57,15 @@ namespace Firebase::Firestore::Converters {
     // Deleting conversion operator: operator ::System::Type*
     constexpr operator ::System::Type*() const noexcept = delete;
     // Get instance field reference: private readonly System.TypeCode _typeCode
-    ::System::TypeCode& dyn__typeCode();
+    [[deprecated]] ::System::TypeCode& dyn__typeCode();
     // private System.Int64 EnumToInt64(System.Object value)
-    // Offset: 0xC32B88
+    // Offset: 0xD54E24
     int64_t EnumToInt64(::Il2CppObject* value);
     // private System.Object Int64ToEnumBaseType(System.Int64 value)
-    // Offset: 0xC32964
+    // Offset: 0xD54C00
     ::Il2CppObject* Int64ToEnumBaseType(int64_t value);
     // System.Void .ctor(System.Type targetType)
-    // Offset: 0xC2CBBC
+    // Offset: 0xD4E9CC
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Void ConverterBase::.ctor(System.Type targetType)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -82,12 +74,12 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<EnumConverter*, creationType>(targetType)));
     }
     // protected override System.Object DeserializeInteger(Firebase.Firestore.DeserializationContext context, System.Int64 value)
-    // Offset: 0xC328D8
+    // Offset: 0xD54B74
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeInteger(Firebase.Firestore.DeserializationContext context, System.Int64 value)
     ::Il2CppObject* DeserializeInteger(::Firebase::Firestore::DeserializationContext* context, int64_t value);
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC32B70
+    // Offset: 0xD54E0C
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);

@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DropZone : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`1<VROSC.Droppable> OnDroppedInto
     // Size: 0x8
     // Offset: 0x18
@@ -60,12 +52,12 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Action`1<VROSC.Droppable> OnDroppedInto
-    ::System::Action_1<::VROSC::Droppable*>*& dyn_OnDroppedInto();
+    [[deprecated]] ::System::Action_1<::VROSC::Droppable*>*& dyn_OnDroppedInto();
     // public System.Void Drop(VROSC.Droppable droppable)
-    // Offset: 0x130C220
+    // Offset: 0x8E53E8
     void Drop(::VROSC::Droppable* droppable);
     // public System.Void .ctor()
-    // Offset: 0x130C290
+    // Offset: 0x8E5458
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationInitializer : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Collider _collider
     // Size: 0x8
     // Offset: 0x40
@@ -67,15 +59,15 @@ namespace VROSC {
     // Set static field: static private System.Int32 MaxLoopStations
     static void _set_MaxLoopStations(int value);
     // Get instance field reference: private UnityEngine.Collider _collider
-    ::UnityEngine::Collider*& dyn__collider();
+    [[deprecated]] ::UnityEngine::Collider*& dyn__collider();
     // private System.Void MoveBackRecursive()
-    // Offset: 0x9162A4
+    // Offset: 0x19728EC
     void MoveBackRecursive();
     // private System.Boolean GetLoopStationParentRecursive(UnityEngine.Transform t)
-    // Offset: 0x9163DC
+    // Offset: 0x1972A24
     bool GetLoopStationParentRecursive(::UnityEngine::Transform* t);
     // public System.Void .ctor()
-    // Offset: 0x91651C
+    // Offset: 0x1972B64
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -90,7 +82,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationInitializer*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x9161DC
+    // Offset: 0x1972824
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);

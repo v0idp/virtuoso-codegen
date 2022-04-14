@@ -50,15 +50,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x2B to desired offset: 0x30
     char ___base_padding[0x5] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _buttonBackground
     // Size: 0x8
     // Offset: 0x30
@@ -91,29 +83,29 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _buttonBackground
-    ::UnityEngine::Renderer*& dyn__buttonBackground();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__buttonBackground();
     // Get instance field reference: private VROSC.UIInteractableColorSettings _backgroundColors
-    ::VROSC::UIInteractableColorSettings*& dyn__backgroundColors();
+    [[deprecated]] ::VROSC::UIInteractableColorSettings*& dyn__backgroundColors();
     // Get instance field reference: private TMPro.TextMeshPro _text
-    ::TMPro::TextMeshPro*& dyn__text();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__text();
     // Get instance field reference: private VROSC.UIInteractableColorSettings _textColors
-    ::VROSC::UIInteractableColorSettings*& dyn__textColors();
+    [[deprecated]] ::VROSC::UIInteractableColorSettings*& dyn__textColors();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // protected System.Void Awake()
-    // Offset: 0x13E28EC
+    // Offset: 0x19819BC
     void Awake();
     // private System.Void SetBackground()
-    // Offset: 0x13E2A90
+    // Offset: 0x1981B60
     void SetBackground();
     // private System.Void Colorize()
-    // Offset: 0x13E2B10
+    // Offset: 0x1981BE0
     void Colorize();
     // private System.Void AutoFind()
-    // Offset: 0x13E2B90
+    // Offset: 0x1981C60
     void AutoFind();
     // public System.Void .ctor()
-    // Offset: 0x13E2BE4
+    // Offset: 0x1981CB4
     // Implemented from: VROSC.UIScrollableItem
     // Base method: System.Void UIScrollableItem::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -127,12 +119,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SelectionBarButton*, creationType>()));
     }
     // public override System.Void Setup(System.Int32 index, System.String value)
-    // Offset: 0x13E295C
+    // Offset: 0x1981A2C
     // Implemented from: VROSC.UIScrollableItem
     // Base method: System.Void UIScrollableItem::Setup(System.Int32 index, System.String value)
     void Setup(int index, ::StringW value);
     // protected override System.Void UpdateColors()
-    // Offset: 0x13E29A4
+    // Offset: 0x1981A74
     // Implemented from: VROSC.UIScrollableItem
     // Base method: System.Void UIScrollableItem::UpdateColors()
     void UpdateColors();

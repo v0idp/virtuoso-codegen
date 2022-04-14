@@ -29,7 +29,7 @@ namespace UnityEngine {
   class ImageEffectAllowedInSceneView : public ::System::Attribute {
     public:
     // public System.Void .ctor()
-    // Offset: 0xE3D0B8
+    // Offset: 0x11296B0
     // Implemented from: System.Attribute
     // Base method: System.Void Attribute::.ctor()
     // Base method: System.Void Object::.ctor()

@@ -24,43 +24,43 @@ namespace System::IO {
   class __Error : public ::Il2CppObject {
     public:
     // static System.Void EndOfFile()
-    // Offset: 0xDC8694
+    // Offset: 0x1399E94
     static void EndOfFile();
     // static System.Void FileNotOpen()
-    // Offset: 0xDC86F0
+    // Offset: 0x139E964
     static void FileNotOpen();
     // static System.Void StreamIsClosed()
-    // Offset: 0xDC8750
+    // Offset: 0x139E9C4
     static void StreamIsClosed();
     // static System.Void MemoryStreamNotExpandable()
-    // Offset: 0xDC87B0
+    // Offset: 0x139EA24
     static void MemoryStreamNotExpandable();
     // static System.Void ReaderClosed()
-    // Offset: 0xDC880C
+    // Offset: 0x139EA80
     static void ReaderClosed();
     // static System.Void ReadNotSupported()
-    // Offset: 0xDC886C
+    // Offset: 0x139EAE0
     static void ReadNotSupported();
     // static System.Void WrongAsyncResult()
-    // Offset: 0xDC88C8
+    // Offset: 0x139EB3C
     static void WrongAsyncResult();
     // static System.Void EndReadCalledTwice()
-    // Offset: 0xDC8924
+    // Offset: 0x139EB98
     static void EndReadCalledTwice();
     // static System.Void EndWriteCalledTwice()
-    // Offset: 0xDC8980
+    // Offset: 0x139EBF4
     static void EndWriteCalledTwice();
     // static System.String GetDisplayablePath(System.String path, System.Boolean isInvalidPath)
-    // Offset: 0xDC89DC
+    // Offset: 0x139EC50
     static ::StringW GetDisplayablePath(::StringW path, bool isInvalidPath);
     // static System.Void WinIOError(System.Int32 errorCode, System.String maybeFullPath)
-    // Offset: 0xDC8B28
+    // Offset: 0x139ED9C
     static void WinIOError(int errorCode, ::StringW maybeFullPath);
     // static System.Void WriteNotSupported()
-    // Offset: 0xDC90A8
+    // Offset: 0x139F31C
     static void WriteNotSupported();
     // static System.Void WriterClosed()
-    // Offset: 0xDC9104
+    // Offset: 0x139F378
     static void WriterClosed();
   }; // System.IO.__Error
   #pragma pack(pop)

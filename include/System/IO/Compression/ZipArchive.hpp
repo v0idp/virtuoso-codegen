@@ -74,15 +74,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class ZipArchive : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IO.Stream _archiveStream
     // Size: 0x8
     // Offset: 0x10
@@ -191,115 +183,115 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.IO.Stream _archiveStream
-    ::System::IO::Stream*& dyn__archiveStream();
+    [[deprecated]] ::System::IO::Stream*& dyn__archiveStream();
     // Get instance field reference: private System.IO.Compression.ZipArchiveEntry _archiveStreamOwner
-    ::System::IO::Compression::ZipArchiveEntry*& dyn__archiveStreamOwner();
+    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry*& dyn__archiveStreamOwner();
     // Get instance field reference: private System.IO.BinaryReader _archiveReader
-    ::System::IO::BinaryReader*& dyn__archiveReader();
+    [[deprecated]] ::System::IO::BinaryReader*& dyn__archiveReader();
     // Get instance field reference: private System.IO.Compression.ZipArchiveMode _mode
-    ::System::IO::Compression::ZipArchiveMode& dyn__mode();
+    [[deprecated]] ::System::IO::Compression::ZipArchiveMode& dyn__mode();
     // Get instance field reference: private System.Collections.Generic.List`1<System.IO.Compression.ZipArchiveEntry> _entries
-    ::System::Collections::Generic::List_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__entries();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__entries();
     // Get instance field reference: private System.Collections.ObjectModel.ReadOnlyCollection`1<System.IO.Compression.ZipArchiveEntry> _entriesCollection
-    ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__entriesCollection();
+    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__entriesCollection();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.IO.Compression.ZipArchiveEntry> _entriesDictionary
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::System::IO::Compression::ZipArchiveEntry*>*& dyn__entriesDictionary();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::IO::Compression::ZipArchiveEntry*>*& dyn__entriesDictionary();
     // Get instance field reference: private System.Boolean _readEntries
-    bool& dyn__readEntries();
+    [[deprecated]] bool& dyn__readEntries();
     // Get instance field reference: private System.Boolean _leaveOpen
-    bool& dyn__leaveOpen();
+    [[deprecated]] bool& dyn__leaveOpen();
     // Get instance field reference: private System.Int64 _centralDirectoryStart
-    int64_t& dyn__centralDirectoryStart();
+    [[deprecated]] int64_t& dyn__centralDirectoryStart();
     // Get instance field reference: private System.Boolean _isDisposed
-    bool& dyn__isDisposed();
+    [[deprecated]] bool& dyn__isDisposed();
     // Get instance field reference: private System.UInt32 _numberOfThisDisk
-    uint& dyn__numberOfThisDisk();
+    [[deprecated]] uint& dyn__numberOfThisDisk();
     // Get instance field reference: private System.Int64 _expectedNumberOfEntries
-    int64_t& dyn__expectedNumberOfEntries();
+    [[deprecated]] int64_t& dyn__expectedNumberOfEntries();
     // Get instance field reference: private System.IO.Stream _backingStream
-    ::System::IO::Stream*& dyn__backingStream();
+    [[deprecated]] ::System::IO::Stream*& dyn__backingStream();
     // Get instance field reference: private System.Byte[] _archiveComment
-    ::ArrayW<uint8_t>& dyn__archiveComment();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__archiveComment();
     // Get instance field reference: private System.Text.Encoding _entryNameEncoding
-    ::System::Text::Encoding*& dyn__entryNameEncoding();
+    [[deprecated]] ::System::Text::Encoding*& dyn__entryNameEncoding();
     // public System.Collections.ObjectModel.ReadOnlyCollection`1<System.IO.Compression.ZipArchiveEntry> get_Entries()
-    // Offset: 0x1123F70
+    // Offset: 0x169B7DC
     ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::IO::Compression::ZipArchiveEntry*>* get_Entries();
     // public System.IO.Compression.ZipArchiveMode get_Mode()
-    // Offset: 0x11240A8
+    // Offset: 0x169B914
     ::System::IO::Compression::ZipArchiveMode get_Mode();
     // System.IO.BinaryReader get_ArchiveReader()
-    // Offset: 0x112495C
+    // Offset: 0x169C1C8
     ::System::IO::BinaryReader* get_ArchiveReader();
     // System.IO.Stream get_ArchiveStream()
-    // Offset: 0x1124964
+    // Offset: 0x169C1D0
     ::System::IO::Stream* get_ArchiveStream();
     // System.UInt32 get_NumberOfThisDisk()
-    // Offset: 0x112496C
+    // Offset: 0x169C1D8
     uint get_NumberOfThisDisk();
     // System.Text.Encoding get_EntryNameEncoding()
-    // Offset: 0x1124974
+    // Offset: 0x169C1E0
     ::System::Text::Encoding* get_EntryNameEncoding();
     // private System.Void set_EntryNameEncoding(System.Text.Encoding value)
-    // Offset: 0x1123814
+    // Offset: 0x169B080
     void set_EntryNameEncoding(::System::Text::Encoding* value);
     // public System.Void .ctor(System.IO.Stream stream, System.IO.Compression.ZipArchiveMode mode, System.Boolean leaveOpen, System.Text.Encoding entryNameEncoding)
-    // Offset: 0x1123768
+    // Offset: 0x169AFD4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ZipArchive* New_ctor(::System::IO::Stream* stream, ::System::IO::Compression::ZipArchiveMode mode, bool leaveOpen, ::System::Text::Encoding* entryNameEncoding) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::ZipArchive::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ZipArchive*, creationType>(stream, mode, leaveOpen, entryNameEncoding)));
     }
     // public System.IO.Compression.ZipArchiveEntry CreateEntry(System.String entryName)
-    // Offset: 0x11240B0
+    // Offset: 0x169B91C
     ::System::IO::Compression::ZipArchiveEntry* CreateEntry(::StringW entryName);
     // public System.IO.Compression.ZipArchiveEntry CreateEntry(System.String entryName, System.IO.Compression.CompressionLevel compressionLevel)
-    // Offset: 0x112428C
+    // Offset: 0x169BAF8
     ::System::IO::Compression::ZipArchiveEntry* CreateEntry(::StringW entryName, ::System::IO::Compression::CompressionLevel compressionLevel);
     // protected System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x112430C
+    // Offset: 0x169BB78
     void Dispose(bool disposing);
     // public System.Void Dispose()
-    // Offset: 0x11248E4
+    // Offset: 0x169C150
     void Dispose();
     // private System.IO.Compression.ZipArchiveEntry DoCreateEntry(System.String entryName, System.Nullable`1<System.IO.Compression.CompressionLevel> compressionLevel)
-    // Offset: 0x11240B8
+    // Offset: 0x169B924
     ::System::IO::Compression::ZipArchiveEntry* DoCreateEntry(::StringW entryName, ::System::Nullable_1<::System::IO::Compression::CompressionLevel> compressionLevel);
     // System.Void AcquireArchiveStream(System.IO.Compression.ZipArchiveEntry entry)
-    // Offset: 0x1124C78
+    // Offset: 0x169C4E4
     void AcquireArchiveStream(::System::IO::Compression::ZipArchiveEntry* entry);
     // private System.Void AddEntry(System.IO.Compression.ZipArchiveEntry entry)
-    // Offset: 0x1124BA4
+    // Offset: 0x169C410
     void AddEntry(::System::IO::Compression::ZipArchiveEntry* entry);
     // System.Void ReleaseArchiveStream(System.IO.Compression.ZipArchiveEntry entry)
-    // Offset: 0x1124D44
+    // Offset: 0x169C5B0
     void ReleaseArchiveStream(::System::IO::Compression::ZipArchiveEntry* entry);
     // System.Void RemoveEntry(System.IO.Compression.ZipArchiveEntry entry)
-    // Offset: 0x1124D4C
+    // Offset: 0x169C5B8
     void RemoveEntry(::System::IO::Compression::ZipArchiveEntry* entry);
     // System.Void ThrowIfDisposed()
-    // Offset: 0x1124000
+    // Offset: 0x169B86C
     void ThrowIfDisposed();
     // private System.Void CloseStreams()
-    // Offset: 0x1124864
+    // Offset: 0x169C0D0
     void CloseStreams();
     // private System.Void EnsureCentralDirectoryRead()
-    // Offset: 0x1124074
+    // Offset: 0x169B8E0
     void EnsureCentralDirectoryRead();
     // private System.Void Init(System.IO.Stream stream, System.IO.Compression.ZipArchiveMode mode, System.Boolean leaveOpen)
-    // Offset: 0x11238D8
+    // Offset: 0x169B144
     void Init(::System::IO::Stream* stream, ::System::IO::Compression::ZipArchiveMode mode, bool leaveOpen);
     // private System.Void ReadCentralDirectory()
-    // Offset: 0x1124DDC
+    // Offset: 0x169C648
     void ReadCentralDirectory();
     // private System.Void ReadEndOfCentralDirectory()
-    // Offset: 0x1125000
+    // Offset: 0x169C86C
     void ReadEndOfCentralDirectory();
     // private System.Void WriteFile()
-    // Offset: 0x112438C
+    // Offset: 0x169BBF8
     void WriteFile();
     // private System.Void WriteArchiveEpilogue(System.Int64 startOfCentralDirectory, System.Int64 sizeOfCentralDirectory)
-    // Offset: 0x112688C
+    // Offset: 0x169E0F8
     void WriteArchiveEpilogue(int64_t startOfCentralDirectory, int64_t sizeOfCentralDirectory);
   }; // System.IO.Compression.ZipArchive
   #pragma pack(pop)

@@ -24,15 +24,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class RemoteLoopbackManager::PacketLatencyPair : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Byte[] PacketData
     // Size: 0x8
     // Offset: 0x10
@@ -47,11 +39,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Byte[] PacketData
-    ::ArrayW<uint8_t>& dyn_PacketData();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_PacketData();
     // Get instance field reference: public System.Single FakeLatency
-    float& dyn_FakeLatency();
+    [[deprecated]] float& dyn_FakeLatency();
     // public System.Void .ctor()
-    // Offset: 0x1345140
+    // Offset: 0x8D0090
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

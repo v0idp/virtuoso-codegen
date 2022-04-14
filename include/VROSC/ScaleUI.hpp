@@ -53,15 +53,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ScaleUI::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _randomizeButton
     // Size: 0x8
     // Offset: 0x18
@@ -94,39 +86,39 @@ namespace VROSC {
     // Set static field: static public System.Action`2<VROSC.ScalePreset,VROSC.Note> OnScalePresetChanged
     static void _set_OnScalePresetChanged(::System::Action_2<::VROSC::ScalePreset*, ::VROSC::Note>* value);
     // Get instance field reference: private VROSC.UIButton _randomizeButton
-    ::VROSC::UIButton*& dyn__randomizeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__randomizeButton();
     // Get instance field reference: private VROSC.UISpinner _noteSpinner
-    ::VROSC::UISpinner*& dyn__noteSpinner();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__noteSpinner();
     // Get instance field reference: private VROSC.UISpinner _scaleSpinner
-    ::VROSC::UISpinner*& dyn__scaleSpinner();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__scaleSpinner();
     // Get instance field reference: private VROSC.ScalePresets _scalePresets
-    ::VROSC::ScalePresets*& dyn__scalePresets();
+    [[deprecated]] ::VROSC::ScalePresets*& dyn__scalePresets();
     // protected System.Void Awake()
-    // Offset: 0x13E0818
+    // Offset: 0xDE4EEC
     void Awake();
     // protected System.Void OnDestroy()
-    // Offset: 0x13E0DE4
+    // Offset: 0xDE54B8
     void OnDestroy();
     // protected System.Void OnEnable()
-    // Offset: 0x13E103C
+    // Offset: 0xDE5710
     void OnEnable();
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x13E107C
+    // Offset: 0xDE5750
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // private System.Void UpdateSpinners()
-    // Offset: 0x13E1080
+    // Offset: 0xDE5754
     void UpdateSpinners();
     // private System.Void RandomizeScaleButtonPressed()
-    // Offset: 0x13E116C
+    // Offset: 0xDE5820
     void RandomizeScaleButtonPressed();
     // private System.Void NoteChanged(System.Int32 selection)
-    // Offset: 0x13E1314
+    // Offset: 0xDE5924
     void NoteChanged(int selection);
     // private System.Void ScaleChanged(System.Int32 selection)
-    // Offset: 0x13E1448
+    // Offset: 0xDE5A28
     void ScaleChanged(int selection);
     // public System.Void .ctor()
-    // Offset: 0x13E157C
+    // Offset: 0xDE5B2C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

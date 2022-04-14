@@ -54,15 +54,7 @@ namespace GlobalNamespace {
     class BoolMonitor;
     // Nested type: ::GlobalNamespace::OVRControllerTest::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.UI.Text uiText
     // Size: 0x8
     // Offset: 0x18
@@ -93,19 +85,19 @@ namespace GlobalNamespace {
     // Set static field: static private OVRControllerTest/BoolMonitor controllers
     static void _set_controllers(::GlobalNamespace::OVRControllerTest::BoolMonitor* value);
     // Get instance field reference: public UnityEngine.UI.Text uiText
-    ::UnityEngine::UI::Text*& dyn_uiText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_uiText();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRControllerTest/BoolMonitor> monitors
-    ::System::Collections::Generic::List_1<::GlobalNamespace::OVRControllerTest::BoolMonitor*>*& dyn_monitors();
+    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRControllerTest::BoolMonitor*>*& dyn_monitors();
     // Get instance field reference: private System.Text.StringBuilder data
-    ::System::Text::StringBuilder*& dyn_data();
+    [[deprecated]] ::System::Text::StringBuilder*& dyn_data();
     // private System.Void Start()
-    // Offset: 0x81DE40
+    // Offset: 0x99340C
     void Start();
     // private System.Void Update()
-    // Offset: 0x81F950
+    // Offset: 0x994F1C
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x8202AC
+    // Offset: 0x995878
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -118,7 +110,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVRControllerTest*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x8202B4
+    // Offset: 0x995880
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

@@ -29,7 +29,7 @@ namespace System {
     // Offset: 0xFFFFFFFFFFFFFFFF
     int CompareTo(T other) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IComparable_1::CompareTo");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "CompareTo", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(other)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::IComparable_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<int, false>(this, ___internal__method, other);
     }
   }; // System.IComparable`1

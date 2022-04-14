@@ -29,15 +29,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class AchievementUpdate : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.Boolean JustUnlocked
     // Size: 0x1
     // Offset: 0x10
@@ -54,11 +46,11 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.Boolean JustUnlocked
-    bool& dyn_JustUnlocked();
+    [[deprecated]] bool& dyn_JustUnlocked();
     // Get instance field reference: public readonly System.String Name
-    ::StringW& dyn_Name();
+    [[deprecated]] ::StringW& dyn_Name();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7AFD50
+    // Offset: 0x8F6130
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AchievementUpdate* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::AchievementUpdate::.ctor");

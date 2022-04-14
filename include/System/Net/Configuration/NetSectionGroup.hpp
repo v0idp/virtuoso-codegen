@@ -29,7 +29,7 @@ namespace System::Net::Configuration {
   class NetSectionGroup : public ::System::Configuration::ConfigurationSectionGroup {
     public:
     // public System.Void .ctor()
-    // Offset: 0xBF75BC
+    // Offset: 0x1103330
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

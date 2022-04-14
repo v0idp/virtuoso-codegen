@@ -38,22 +38,14 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class ApplicationInvite : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly Oculus.Platform.Models.Destination DestinationOptional
     // Size: 0x8
     // Offset: 0x10
     ::Oculus::Platform::Models::Destination* DestinationOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::Destination*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A509C
+    // [ObsoleteAttribute] Offset: 0x6B9250
     // public readonly Oculus.Platform.Models.Destination Destination
     // Size: 0x8
     // Offset: 0x18
@@ -92,7 +84,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::User* RecipientOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::User*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A50D4
+    // [ObsoleteAttribute] Offset: 0x6B9288
     // public readonly Oculus.Platform.Models.User Recipient
     // Size: 0x8
     // Offset: 0x48
@@ -101,23 +93,23 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::User*) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.Models.Destination DestinationOptional
-    ::Oculus::Platform::Models::Destination*& dyn_DestinationOptional();
+    [[deprecated]] ::Oculus::Platform::Models::Destination*& dyn_DestinationOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.Destination Destination
-    ::Oculus::Platform::Models::Destination*& dyn_Destination();
+    [[deprecated]] ::Oculus::Platform::Models::Destination*& dyn_Destination();
     // Get instance field reference: public readonly System.UInt64 ID
-    uint64_t& dyn_ID();
+    [[deprecated]] uint64_t& dyn_ID();
     // Get instance field reference: public readonly System.Boolean IsActive
-    bool& dyn_IsActive();
+    [[deprecated]] bool& dyn_IsActive();
     // Get instance field reference: public readonly System.String LobbySessionId
-    ::StringW& dyn_LobbySessionId();
+    [[deprecated]] ::StringW& dyn_LobbySessionId();
     // Get instance field reference: public readonly System.String MatchSessionId
-    ::StringW& dyn_MatchSessionId();
+    [[deprecated]] ::StringW& dyn_MatchSessionId();
     // Get instance field reference: public readonly Oculus.Platform.Models.User RecipientOptional
-    ::Oculus::Platform::Models::User*& dyn_RecipientOptional();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_RecipientOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.User Recipient
-    ::Oculus::Platform::Models::User*& dyn_Recipient();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_Recipient();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7B25CC
+    // Offset: 0x8F89AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ApplicationInvite* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::ApplicationInvite::.ctor");

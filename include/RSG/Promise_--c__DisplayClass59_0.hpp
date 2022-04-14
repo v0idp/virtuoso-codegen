@@ -40,15 +40,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Promise::$$c__DisplayClass59_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single[] progress
     // Size: 0x8
     // Offset: 0x10
@@ -77,21 +69,21 @@ namespace RSG {
     static_assert(sizeof(::System::Action_1<::System::Exception*>*) == 0x8);
     public:
     // Get instance field reference: public System.Single[] progress
-    ::ArrayW<float>& dyn_progress();
+    [[deprecated]] ::ArrayW<float>& dyn_progress();
     // Get instance field reference: public RSG.Promise resultPromise
-    ::RSG::Promise*& dyn_resultPromise();
+    [[deprecated]] ::RSG::Promise*& dyn_resultPromise();
     // Get instance field reference: public System.Int32 remainingCount
-    int& dyn_remainingCount();
+    [[deprecated]] int& dyn_remainingCount();
     // Get instance field reference: public System.Action`1<System.Exception> <>9__3
-    ::System::Action_1<::System::Exception*>*& dyn_$$9__3();
+    [[deprecated]] ::System::Action_1<::System::Exception*>*& dyn_$$9__3();
     // System.Void <All>b__0(RSG.IPromise promise, System.Int32 index)
-    // Offset: 0x1343A08
+    // Offset: 0x8CE960
     void $All$b__0(::RSG::IPromise* promise, int index);
     // System.Void <All>b__3(System.Exception ex)
-    // Offset: 0x1343D5C
+    // Offset: 0x8CECB4
     void $All$b__3(::System::Exception* ex);
     // public System.Void .ctor()
-    // Offset: 0x1343A00
+    // Offset: 0x8CE958
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

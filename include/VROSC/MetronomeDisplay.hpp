@@ -50,30 +50,22 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::MetronomeDisplay::$StrokeFlow$d__13
     class $StrokeFlow$d__13;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [ColorUsageAttribute] Offset: 0x671E30
+    // [ColorUsageAttribute] Offset: 0x788124
     // private UnityEngine.Color _offColor
     // Size: 0x10
     // Offset: 0x18
     ::UnityEngine::Color offColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x671E70
+    // [ColorUsageAttribute] Offset: 0x788164
     // private UnityEngine.Color _beatColor
     // Size: 0x10
     // Offset: 0x28
     ::UnityEngine::Color beatColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x671EB0
+    // [ColorUsageAttribute] Offset: 0x7881A4
     // private UnityEngine.Color _beatpassedColor
     // Size: 0x10
     // Offset: 0x38
@@ -122,52 +114,52 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color _offColor
-    ::UnityEngine::Color& dyn__offColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private UnityEngine.Color _beatColor
-    ::UnityEngine::Color& dyn__beatColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__beatColor();
     // Get instance field reference: private UnityEngine.Color _beatpassedColor
-    ::UnityEngine::Color& dyn__beatpassedColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__beatpassedColor();
     // Get instance field reference: private UnityEngine.AnimationCurve _strikeCurve
-    ::UnityEngine::AnimationCurve*& dyn__strikeCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__strikeCurve();
     // Get instance field reference: private System.Single _strikeduration
-    float& dyn__strikeduration();
+    [[deprecated]] float& dyn__strikeduration();
     // Get instance field reference: private VROSC.AdjustableMesh _beat01
-    ::VROSC::AdjustableMesh*& dyn__beat01();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beat01();
     // Get instance field reference: private VROSC.AdjustableMesh _beat02
-    ::VROSC::AdjustableMesh*& dyn__beat02();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beat02();
     // Get instance field reference: private VROSC.AdjustableMesh _beat03
-    ::VROSC::AdjustableMesh*& dyn__beat03();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beat03();
     // Get instance field reference: private VROSC.AdjustableMesh _beat04
-    ::VROSC::AdjustableMesh*& dyn__beat04();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beat04();
     // private System.Void OnEnable()
-    // Offset: 0x8AEEF8
+    // Offset: 0xAC26E0
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x8AF1C4
+    // Offset: 0xAC29AC
     void OnDisable();
     // public System.Void SetActive(System.Boolean shouldBeActive)
-    // Offset: 0x8AF2BC
+    // Offset: 0xAC2AA4
     void SetActive(bool shouldBeActive);
     // private System.Void MakeStroke(System.Int32 beat)
-    // Offset: 0x8AF2F0
+    // Offset: 0xAC2AD8
     void MakeStroke(int beat);
     // private System.Collections.IEnumerator StrokeFlow(System.Int32 beat)
-    // Offset: 0x8AF39C
+    // Offset: 0xAC2B84
     ::System::Collections::IEnumerator* StrokeFlow(int beat);
     // private System.Void TurnAllOff()
-    // Offset: 0x8AF338
+    // Offset: 0xAC2B20
     void TurnAllOff();
     // private System.Void CheckIfLightsShouldBeOn()
-    // Offset: 0x8AF008
+    // Offset: 0xAC27F0
     void CheckIfLightsShouldBeOn();
     // private System.Void SetColor(System.Int32 beat, UnityEngine.Color color)
-    // Offset: 0x8AF418
+    // Offset: 0xAC2C00
     void SetColor(int beat, ::UnityEngine::Color color);
     // private VROSC.AdjustableMesh GetAdjustableMeshByBeat(System.Int32 beat)
-    // Offset: 0x8AF544
+    // Offset: 0xAC2D2C
     ::VROSC::AdjustableMesh* GetAdjustableMeshByBeat(int beat);
     // public System.Void .ctor()
-    // Offset: 0x8AF590
+    // Offset: 0xAC2D78
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

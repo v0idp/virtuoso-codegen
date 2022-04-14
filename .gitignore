@@ -16,3 +16,5 @@ qpm_defines.cmake
 
 build/
 *.qmod
+
+*.log

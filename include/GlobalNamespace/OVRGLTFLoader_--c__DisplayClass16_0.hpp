@@ -26,15 +26,7 @@ namespace GlobalNamespace {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class OVRGLTFLoader::$$c__DisplayClass16_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRGLTFLoader <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -49,14 +41,14 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRMaterialData) == 0x28);
     public:
     // Get instance field reference: public OVRGLTFLoader <>4__this
-    ::GlobalNamespace::OVRGLTFLoader*& dyn_$$4__this();
+    [[deprecated]] ::GlobalNamespace::OVRGLTFLoader*& dyn_$$4__this();
     // Get instance field reference: public OVRMaterialData matData
-    ::GlobalNamespace::OVRMaterialData& dyn_matData();
+    [[deprecated]] ::GlobalNamespace::OVRMaterialData& dyn_matData();
     // System.Void <ProcessMesh>b__0()
-    // Offset: 0x7366A8
+    // Offset: 0x84CDAC
     void $ProcessMesh$b__0();
     // public System.Void .ctor()
-    // Offset: 0x7366A0
+    // Offset: 0x84CDA4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

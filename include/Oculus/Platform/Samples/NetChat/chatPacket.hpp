@@ -28,15 +28,7 @@ namespace Oculus::Platform::Samples::NetChat {
   // [TokenAttribute] Offset: FFFFFFFF
   class chatPacket : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <packetID>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -53,29 +45,29 @@ namespace Oculus::Platform::Samples::NetChat {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <packetID>k__BackingField
-    int& dyn_$packetID$k__BackingField();
+    [[deprecated]] int& dyn_$packetID$k__BackingField();
     // Get instance field reference: private System.String <textString>k__BackingField
-    ::StringW& dyn_$textString$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$textString$k__BackingField();
     // public System.Int32 get_packetID()
-    // Offset: 0x11541E8
+    // Offset: 0x17210E4
     int get_packetID();
     // public System.Void set_packetID(System.Int32 value)
-    // Offset: 0x11541F0
+    // Offset: 0x17210EC
     void set_packetID(int value);
     // public System.String get_textString()
-    // Offset: 0x11541F8
+    // Offset: 0x17210F4
     ::StringW get_textString();
     // public System.Void set_textString(System.String value)
-    // Offset: 0x1154200
+    // Offset: 0x17210FC
     void set_textString(::StringW value);
     // public System.Byte[] Serialize()
-    // Offset: 0x1154208
+    // Offset: 0x1721104
     ::ArrayW<uint8_t> Serialize();
     // static public Oculus.Platform.Samples.NetChat.chatPacket Deserialize(System.Byte[] data)
-    // Offset: 0x115452C
+    // Offset: 0x1721428
     static ::Oculus::Platform::Samples::NetChat::chatPacket* Deserialize(::ArrayW<uint8_t> data);
     // public System.Void .ctor()
-    // Offset: 0x11547F8
+    // Offset: 0x17216F4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -99,13 +99,13 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Single UpFov
-      float& dyn_UpFov();
+      [[deprecated]] float& dyn_UpFov();
       // Get instance field reference: public System.Single DownFov
-      float& dyn_DownFov();
+      [[deprecated]] float& dyn_DownFov();
       // Get instance field reference: public System.Single LeftFov
-      float& dyn_LeftFov();
+      [[deprecated]] float& dyn_LeftFov();
       // Get instance field reference: public System.Single RightFov
-      float& dyn_RightFov();
+      [[deprecated]] float& dyn_RightFov();
     }; // OVRDisplay/EyeFov
     #pragma pack(pop)
     static check_size<sizeof(OVRDisplay::EyeFov), 12 + sizeof(float)> __GlobalNamespace_OVRDisplay_EyeFovSizeCheck;
@@ -144,24 +144,16 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Vector2 resolution
-      ::UnityEngine::Vector2& dyn_resolution();
+      [[deprecated]] ::UnityEngine::Vector2& dyn_resolution();
       // Get instance field reference: public UnityEngine.Vector2 fov
-      ::UnityEngine::Vector2& dyn_fov();
+      [[deprecated]] ::UnityEngine::Vector2& dyn_fov();
       // Get instance field reference: public OVRDisplay/EyeFov fullFov
-      ::GlobalNamespace::OVRDisplay::EyeFov& dyn_fullFov();
+      [[deprecated]] ::GlobalNamespace::OVRDisplay::EyeFov& dyn_fullFov();
     }; // OVRDisplay/EyeRenderDesc
     #pragma pack(pop)
     static check_size<sizeof(OVRDisplay::EyeRenderDesc), 16 + sizeof(::GlobalNamespace::OVRDisplay::EyeFov)> __GlobalNamespace_OVRDisplay_EyeRenderDescSizeCheck;
     static_assert(sizeof(OVRDisplay::EyeRenderDesc) == 0x20);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean needsConfigureTexture
     // Size: 0x1
     // Offset: 0x10
@@ -206,70 +198,70 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean needsConfigureTexture
-    bool& dyn_needsConfigureTexture();
+    [[deprecated]] bool& dyn_needsConfigureTexture();
     // Get instance field reference: private OVRDisplay/EyeRenderDesc[] eyeDescs
-    ::ArrayW<::GlobalNamespace::OVRDisplay::EyeRenderDesc>& dyn_eyeDescs();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRDisplay::EyeRenderDesc>& dyn_eyeDescs();
     // Get instance field reference: private System.Boolean recenterRequested
-    bool& dyn_recenterRequested();
+    [[deprecated]] bool& dyn_recenterRequested();
     // Get instance field reference: private System.Int32 recenterRequestedFrameCount
-    int& dyn_recenterRequestedFrameCount();
+    [[deprecated]] int& dyn_recenterRequestedFrameCount();
     // Get instance field reference: private System.Int32 localTrackingSpaceRecenterCount
-    int& dyn_localTrackingSpaceRecenterCount();
+    [[deprecated]] int& dyn_localTrackingSpaceRecenterCount();
     // Get instance field reference: private System.Action RecenteredPose
-    ::System::Action*& dyn_RecenteredPose();
+    [[deprecated]] ::System::Action*& dyn_RecenteredPose();
     // public UnityEngine.Vector3 get_acceleration()
-    // Offset: 0xD23A38
+    // Offset: 0xFB138C
     ::UnityEngine::Vector3 get_acceleration();
     // public UnityEngine.Vector3 get_angularAcceleration()
-    // Offset: 0xD23B20
+    // Offset: 0xFB1474
     ::UnityEngine::Vector3 get_angularAcceleration();
     // public UnityEngine.Vector3 get_velocity()
-    // Offset: 0xD23C08
+    // Offset: 0xFB155C
     ::UnityEngine::Vector3 get_velocity();
     // public UnityEngine.Vector3 get_angularVelocity()
-    // Offset: 0xD23CF0
+    // Offset: 0xFB1644
     ::UnityEngine::Vector3 get_angularVelocity();
     // public OVRDisplay/LatencyData get_latency()
-    // Offset: 0xD23DD8
+    // Offset: 0xFB172C
     ::GlobalNamespace::OVRDisplay::LatencyData get_latency();
     // public System.Single get_appFramerate()
-    // Offset: 0xD23FC4
+    // Offset: 0xFB1918
     float get_appFramerate();
     // public System.Int32 get_recommendedMSAALevel()
-    // Offset: 0xD24068
+    // Offset: 0xFB19BC
     int get_recommendedMSAALevel();
     // public System.Single[] get_displayFrequenciesAvailable()
-    // Offset: 0xD240D0
+    // Offset: 0xFB1A24
     ::ArrayW<float> get_displayFrequenciesAvailable();
     // public System.Single get_displayFrequency()
-    // Offset: 0xD2412C
+    // Offset: 0xFB1A80
     float get_displayFrequency();
     // public System.Void set_displayFrequency(System.Single value)
-    // Offset: 0xD24188
+    // Offset: 0xFB1ADC
     void set_displayFrequency(float value);
     // public System.Void add_RecenteredPose(System.Action value)
-    // Offset: 0xD23874
+    // Offset: 0xFB11C8
     void add_RecenteredPose(::System::Action* value);
     // public System.Void remove_RecenteredPose(System.Action value)
-    // Offset: 0xD23914
+    // Offset: 0xFB1268
     void remove_RecenteredPose(::System::Action* value);
     // public System.Void Update()
-    // Offset: 0xD236CC
+    // Offset: 0xFB1020
     void Update();
     // public System.Void RecenterPose()
-    // Offset: 0xD239B4
+    // Offset: 0xFB1308
     void RecenterPose();
     // public OVRDisplay/EyeRenderDesc GetEyeRenderDesc(UnityEngine.XR.XRNode eye)
-    // Offset: 0xD235C8
+    // Offset: 0xFB0F1C
     ::GlobalNamespace::OVRDisplay::EyeRenderDesc GetEyeRenderDesc(::UnityEngine::XR::XRNode eye);
     // private System.Void UpdateTextures()
-    // Offset: 0xD236A0
+    // Offset: 0xFB0FF4
     void UpdateTextures();
     // private System.Void ConfigureEyeDesc(UnityEngine.XR.XRNode eye)
-    // Offset: 0xD241F4
+    // Offset: 0xFB1B48
     void ConfigureEyeDesc(::UnityEngine::XR::XRNode eye);
     // public System.Void .ctor()
-    // Offset: 0xD23624
+    // Offset: 0xFB0F78
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

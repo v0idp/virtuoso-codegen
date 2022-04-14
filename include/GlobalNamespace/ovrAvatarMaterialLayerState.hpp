@@ -97,33 +97,33 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarMaterialLayerBlendMode blendMode
-    ::GlobalNamespace::ovrAvatarMaterialLayerBlendMode& dyn_blendMode();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialLayerBlendMode& dyn_blendMode();
     // Get instance field reference: public ovrAvatarMaterialLayerSampleMode sampleMode
-    ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode& dyn_sampleMode();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode& dyn_sampleMode();
     // Get instance field reference: public ovrAvatarMaterialMaskType maskType
-    ::GlobalNamespace::ovrAvatarMaterialMaskType& dyn_maskType();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialMaskType& dyn_maskType();
     // Get instance field reference: public UnityEngine.Vector4 layerColor
-    ::UnityEngine::Vector4& dyn_layerColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_layerColor();
     // Get instance field reference: public UnityEngine.Vector4 sampleParameters
-    ::UnityEngine::Vector4& dyn_sampleParameters();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_sampleParameters();
     // Get instance field reference: public System.UInt64 sampleTexture
-    uint64_t& dyn_sampleTexture();
+    [[deprecated]] uint64_t& dyn_sampleTexture();
     // Get instance field reference: public UnityEngine.Vector4 sampleScaleOffset
-    ::UnityEngine::Vector4& dyn_sampleScaleOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_sampleScaleOffset();
     // Get instance field reference: public UnityEngine.Vector4 maskParameters
-    ::UnityEngine::Vector4& dyn_maskParameters();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_maskParameters();
     // Get instance field reference: public UnityEngine.Vector4 maskAxis
-    ::UnityEngine::Vector4& dyn_maskAxis();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_maskAxis();
     // static private System.Boolean VectorEquals(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
-    // Offset: 0x13589C4
+    // Offset: 0x9552C0
     static bool VectorEquals(::UnityEngine::Vector4 a, ::UnityEngine::Vector4 b);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0x13589F4
+    // Offset: 0x9552F0
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0x1358C10
+    // Offset: 0x95550C
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

@@ -53,15 +53,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class WidgetHub : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Collections.Generic.List`1<VROSC.WidgetController> _widgetsPrefabs
     // Size: 0x8
     // Offset: 0x18
@@ -78,29 +70,29 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Collections.Generic.List`1<VROSC.WidgetController> _widgetsPrefabs
-    ::System::Collections::Generic::List_1<::VROSC::WidgetController*>*& dyn__widgetsPrefabs();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::WidgetController*>*& dyn__widgetsPrefabs();
     // Get instance field reference: protected System.Collections.Generic.Dictionary`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.WidgetController> _widgets
-    ::System::Collections::Generic::Dictionary_2<::VROSC::WidgetSettings::Identifier, ::VROSC::WidgetController*>*& dyn__widgets();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::VROSC::WidgetSettings::Identifier, ::VROSC::WidgetController*>*& dyn__widgets();
     // public System.Void ToggleById(VROSC.WidgetSettings/VROSC.Identifier identifier, UnityEngine.Vector3 position, VROSC.InputDevice device, System.Boolean gripping)
-    // Offset: 0x1355C1C
+    // Offset: 0x95250C
     void ToggleById(::VROSC::WidgetSettings::Identifier identifier, ::UnityEngine::Vector3 position, ::VROSC::InputDevice* device, bool gripping);
     // public VROSC.WidgetController GetTogglabeObjectByIdentifier(VROSC.WidgetSettings/VROSC.Identifier identifier)
-    // Offset: 0x1355D6C
+    // Offset: 0x952668
     ::VROSC::WidgetController* GetTogglabeObjectByIdentifier(::VROSC::WidgetSettings::Identifier identifier);
     // public System.Boolean GetIsActive(VROSC.WidgetSettings/VROSC.Identifier identifier)
-    // Offset: 0x1355E08
+    // Offset: 0x952704
     bool GetIsActive(::VROSC::WidgetSettings::Identifier identifier);
     // public System.Collections.Generic.List`1<VROSC.WidgetSettings> GetWidgetsDefaultSettings()
-    // Offset: 0x1355EB4
+    // Offset: 0x9527B0
     ::System::Collections::Generic::List_1<::VROSC::WidgetSettings*>* GetWidgetsDefaultSettings();
     // public VROSC.WidgetController GetWidget(VROSC.WidgetSettings/VROSC.Identifier identifier)
-    // Offset: 0x135603C
+    // Offset: 0x952938
     ::VROSC::WidgetController* GetWidget(::VROSC::WidgetSettings::Identifier identifier);
-    // protected System.Void PlaceWidget(VROSC.WidgetController target, VROSC.InputDevice device, UnityEngine.Vector3 pressPos, System.Boolean gripping)
-    // Offset: 0x13560D8
-    void PlaceWidget(::VROSC::WidgetController* target, ::VROSC::InputDevice* device, ::UnityEngine::Vector3 pressPos, bool gripping);
+    // protected System.Void PlaceWidget(VROSC.WidgetController target, VROSC.InputDevice device, UnityEngine.Vector3 pressPos, System.Boolean gripping, System.Boolean userHasOpenedBefore)
+    // Offset: 0x9529D4
+    void PlaceWidget(::VROSC::WidgetController* target, ::VROSC::InputDevice* device, ::UnityEngine::Vector3 pressPos, bool gripping, bool userHasOpenedBefore);
     // public System.Void .ctor()
-    // Offset: 0x13560DC
+    // Offset: 0x9529D8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -168,13 +160,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Wi
 // Writing MetadataGetter for method: VROSC::WidgetHub::PlaceWidget
 // Il2CppName: PlaceWidget
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::WidgetHub::*)(::VROSC::WidgetController*, ::VROSC::InputDevice*, ::UnityEngine::Vector3, bool)>(&VROSC::WidgetHub::PlaceWidget)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::WidgetHub::*)(::VROSC::WidgetController*, ::VROSC::InputDevice*, ::UnityEngine::Vector3, bool, bool)>(&VROSC::WidgetHub::PlaceWidget)> {
   static const MethodInfo* get() {
     static auto* target = &::il2cpp_utils::GetClassFromName("VROSC", "WidgetController")->byval_arg;
     static auto* device = &::il2cpp_utils::GetClassFromName("VROSC", "InputDevice")->byval_arg;
     static auto* pressPos = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
     static auto* gripping = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetHub*), "PlaceWidget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, device, pressPos, gripping});
+    static auto* userHasOpenedBefore = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetHub*), "PlaceWidget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, device, pressPos, gripping, userHasOpenedBefore});
   }
 };
 // Writing MetadataGetter for method: VROSC::WidgetHub::New_ctor

@@ -38,15 +38,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class LocalDataStore : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.LocalDataStoreElement[] m_DataTable
     // Size: 0x8
     // Offset: 0x10
@@ -61,30 +53,30 @@ namespace System {
     static_assert(sizeof(::System::LocalDataStoreMgr*) == 0x8);
     public:
     // Get instance field reference: private System.LocalDataStoreElement[] m_DataTable
-    ::ArrayW<::System::LocalDataStoreElement*>& dyn_m_DataTable();
+    [[deprecated]] ::ArrayW<::System::LocalDataStoreElement*>& dyn_m_DataTable();
     // Get instance field reference: private System.LocalDataStoreMgr m_Manager
-    ::System::LocalDataStoreMgr*& dyn_m_Manager();
+    [[deprecated]] ::System::LocalDataStoreMgr*& dyn_m_Manager();
     // public System.Void .ctor(System.LocalDataStoreMgr mgr, System.Int32 InitialCapacity)
-    // Offset: 0xC5C980
+    // Offset: 0x1079140
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LocalDataStore* New_ctor(::System::LocalDataStoreMgr* mgr, int InitialCapacity) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::LocalDataStore::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LocalDataStore*, creationType>(mgr, InitialCapacity)));
     }
     // System.Void Dispose()
-    // Offset: 0xC5C9F4
+    // Offset: 0x10791B4
     void Dispose();
     // public System.Object GetData(System.LocalDataStoreSlot slot)
-    // Offset: 0xC5CB1C
+    // Offset: 0x10792DC
     ::Il2CppObject* GetData(::System::LocalDataStoreSlot* slot);
     // public System.Void SetData(System.LocalDataStoreSlot slot, System.Object data)
-    // Offset: 0xC5CC64
+    // Offset: 0x1079424
     void SetData(::System::LocalDataStoreSlot* slot, ::Il2CppObject* data);
     // System.Void FreeData(System.Int32 slot, System.Int64 cookie)
-    // Offset: 0xC5D01C
+    // Offset: 0x10797DC
     void FreeData(int slot, int64_t cookie);
     // private System.LocalDataStoreElement PopulateElement(System.LocalDataStoreSlot slot)
-    // Offset: 0xC5CD50
+    // Offset: 0x1079510
     ::System::LocalDataStoreElement* PopulateElement(::System::LocalDataStoreSlot* slot);
   }; // System.LocalDataStore
   #pragma pack(pop)

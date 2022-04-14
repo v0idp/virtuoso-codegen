@@ -39,7 +39,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.Int64 visemeParams
     static void _set_visemeParams(int64_t value);
     // static private System.Void .cctor()
-    // Offset: 0x135958C
+    // Offset: 0x955E88
     static void _cctor();
   }; // ovrAvatarVisemes_Offsets
   #pragma pack(pop)

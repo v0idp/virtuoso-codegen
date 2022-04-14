@@ -47,15 +47,7 @@ namespace System::IO {
   // [TokenAttribute] Offset: FFFFFFFF
   class CStreamReader : public ::System::IO::StreamReader {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.TermInfoDriver driver
     // Size: 0x8
     // Offset: 0x68
@@ -64,9 +56,9 @@ namespace System::IO {
     static_assert(sizeof(::System::TermInfoDriver*) == 0x8);
     public:
     // Get instance field reference: private System.TermInfoDriver driver
-    ::System::TermInfoDriver*& dyn_driver();
+    [[deprecated]] ::System::TermInfoDriver*& dyn_driver();
     // public System.Void .ctor(System.IO.Stream stream, System.Text.Encoding encoding)
-    // Offset: 0xCD1A6C
+    // Offset: 0xFF3B58
     // Implemented from: System.IO.StreamReader
     // Base method: System.Void StreamReader::.ctor(System.IO.Stream stream, System.Text.Encoding encoding)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -75,27 +67,27 @@ namespace System::IO {
       return THROW_UNLESS((::il2cpp_utils::New<CStreamReader*, creationType>(stream, encoding)));
     }
     // public override System.Int32 Peek()
-    // Offset: 0xCD1B70
+    // Offset: 0xFF3C5C
     // Implemented from: System.IO.StreamReader
     // Base method: System.Int32 StreamReader::Peek()
     int Peek();
     // public override System.Int32 Read()
-    // Offset: 0xCD1C04
+    // Offset: 0xFF3CF0
     // Implemented from: System.IO.StreamReader
     // Base method: System.Int32 StreamReader::Read()
     int Read();
     // public override System.Int32 Read(in System.Char[] dest, System.Int32 index, System.Int32 count)
-    // Offset: 0xCD1CE0
+    // Offset: 0xFF3DCC
     // Implemented from: System.IO.StreamReader
     // Base method: System.Int32 StreamReader::Read(in System.Char[] dest, System.Int32 index, System.Int32 count)
     int Read(ByRef<::ArrayW<::Il2CppChar>> dest, int index, int count);
     // public override System.String ReadLine()
-    // Offset: 0xCD1E84
+    // Offset: 0xFF3F70
     // Implemented from: System.IO.StreamReader
     // Base method: System.String StreamReader::ReadLine()
     ::StringW ReadLine();
     // public override System.String ReadToEnd()
-    // Offset: 0xCD1F28
+    // Offset: 0xFF4014
     // Implemented from: System.IO.StreamReader
     // Base method: System.String StreamReader::ReadToEnd()
     ::StringW ReadToEnd();

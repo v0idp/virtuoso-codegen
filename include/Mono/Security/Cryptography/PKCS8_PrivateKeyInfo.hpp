@@ -43,15 +43,7 @@ namespace Mono::Security::Cryptography {
   // [TokenAttribute] Offset: FFFFFFFF
   class PKCS8::PrivateKeyInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _version
     // Size: 0x4
     // Offset: 0x10
@@ -80,49 +72,49 @@ namespace Mono::Security::Cryptography {
     static_assert(sizeof(::System::Collections::ArrayList*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _version
-    int& dyn__version();
+    [[deprecated]] int& dyn__version();
     // Get instance field reference: private System.String _algorithm
-    ::StringW& dyn__algorithm();
+    [[deprecated]] ::StringW& dyn__algorithm();
     // Get instance field reference: private System.Byte[] _key
-    ::ArrayW<uint8_t>& dyn__key();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__key();
     // Get instance field reference: private System.Collections.ArrayList _list
-    ::System::Collections::ArrayList*& dyn__list();
+    [[deprecated]] ::System::Collections::ArrayList*& dyn__list();
     // public System.Byte[] get_PrivateKey()
-    // Offset: 0x12DF0C0
+    // Offset: 0x18E2334
     ::ArrayW<uint8_t> get_PrivateKey();
     // public System.Void .ctor(System.Byte[] data)
-    // Offset: 0x12DEE30
+    // Offset: 0x18E20A4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PKCS8::PrivateKeyInfo* New_ctor(::ArrayW<uint8_t> data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Cryptography::PKCS8::PrivateKeyInfo::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PKCS8::PrivateKeyInfo*, creationType>(data)));
     }
     // private System.Void Decode(System.Byte[] data)
-    // Offset: 0x12DEE5C
+    // Offset: 0x18E20D0
     void Decode(::ArrayW<uint8_t> data);
     // static private System.Byte[] RemoveLeadingZero(System.Byte[] bigInt)
-    // Offset: 0x12DF138
+    // Offset: 0x18E23AC
     static ::ArrayW<uint8_t> RemoveLeadingZero(::ArrayW<uint8_t> bigInt);
     // static private System.Byte[] Normalize(System.Byte[] bigInt, System.Int32 length)
-    // Offset: 0x12DF1E0
+    // Offset: 0x18E2454
     static ::ArrayW<uint8_t> Normalize(::ArrayW<uint8_t> bigInt, int length);
     // static public System.Security.Cryptography.RSA DecodeRSA(System.Byte[] keypair)
-    // Offset: 0x12DF290
+    // Offset: 0x18E2504
     static ::System::Security::Cryptography::RSA* DecodeRSA(::ArrayW<uint8_t> keypair);
     // static public System.Byte[] Encode(System.Security.Cryptography.RSA rsa)
-    // Offset: 0x12DF658
+    // Offset: 0x18E28CC
     static ::ArrayW<uint8_t> Encode(::System::Security::Cryptography::RSA* rsa);
     // static public System.Security.Cryptography.DSA DecodeDSA(System.Byte[] privateKey, System.Security.Cryptography.DSAParameters dsaParameters)
-    // Offset: 0x12DF858
+    // Offset: 0x18E2ACC
     static ::System::Security::Cryptography::DSA* DecodeDSA(::ArrayW<uint8_t> privateKey, ::System::Security::Cryptography::DSAParameters dsaParameters);
     // static public System.Byte[] Encode(System.Security.Cryptography.DSA dsa)
-    // Offset: 0x12DF984
+    // Offset: 0x18E2BF8
     static ::ArrayW<uint8_t> Encode(::System::Security::Cryptography::DSA* dsa);
     // static public System.Byte[] Encode(System.Security.Cryptography.AsymmetricAlgorithm aa)
-    // Offset: 0x12DF9D4
+    // Offset: 0x18E2C48
     static ::ArrayW<uint8_t> Encode(::System::Security::Cryptography::AsymmetricAlgorithm* aa);
     // public System.Void .ctor()
-    // Offset: 0x12DEDC4
+    // Offset: 0x18E2038
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

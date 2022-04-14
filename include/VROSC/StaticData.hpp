@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class StaticData : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SampleDatabase _drumsSamplesDatabase
     // Size: 0x8
     // Offset: 0x18
@@ -54,12 +46,12 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SampleDatabase _drumsSamplesDatabase
-    ::VROSC::SampleDatabase*& dyn__drumsSamplesDatabase();
+    [[deprecated]] ::VROSC::SampleDatabase*& dyn__drumsSamplesDatabase();
     // public VROSC.SampleDatabase get_DrumSamples()
-    // Offset: 0x13BD9D8
+    // Offset: 0x1930E2C
     ::VROSC::SampleDatabase* get_DrumSamples();
     // public System.Void .ctor()
-    // Offset: 0x13BD9E0
+    // Offset: 0x1930E34
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

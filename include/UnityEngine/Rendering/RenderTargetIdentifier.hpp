@@ -97,40 +97,40 @@ namespace UnityEngine::Rendering {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::Rendering::RenderTargetIdentifier>*>(this);
     }
     // Get instance field reference: private UnityEngine.Rendering.BuiltinRenderTextureType m_Type
-    ::UnityEngine::Rendering::BuiltinRenderTextureType& dyn_m_Type();
+    [[deprecated]] ::UnityEngine::Rendering::BuiltinRenderTextureType& dyn_m_Type();
     // Get instance field reference: private System.Int32 m_NameID
-    int& dyn_m_NameID();
+    [[deprecated]] int& dyn_m_NameID();
     // Get instance field reference: private System.Int32 m_InstanceID
-    int& dyn_m_InstanceID();
+    [[deprecated]] int& dyn_m_InstanceID();
     // Get instance field reference: private System.IntPtr m_BufferPointer
-    ::System::IntPtr& dyn_m_BufferPointer();
+    [[deprecated]] ::System::IntPtr& dyn_m_BufferPointer();
     // Get instance field reference: private System.Int32 m_MipLevel
-    int& dyn_m_MipLevel();
+    [[deprecated]] int& dyn_m_MipLevel();
     // Get instance field reference: private UnityEngine.CubemapFace m_CubeFace
-    ::UnityEngine::CubemapFace& dyn_m_CubeFace();
+    [[deprecated]] ::UnityEngine::CubemapFace& dyn_m_CubeFace();
     // Get instance field reference: private System.Int32 m_DepthSlice
-    int& dyn_m_DepthSlice();
+    [[deprecated]] int& dyn_m_DepthSlice();
     // public System.Void .ctor(UnityEngine.Rendering.BuiltinRenderTextureType type)
-    // Offset: 0x9D85E0
+    // Offset: 0xBCD388
     RenderTargetIdentifier(::UnityEngine::Rendering::BuiltinRenderTextureType type);
     // public System.Void .ctor(UnityEngine.Texture tex)
-    // Offset: 0x9D8644
+    // Offset: 0xBCD3EC
     RenderTargetIdentifier(::UnityEngine::Texture* tex);
     // public System.Boolean Equals(UnityEngine.Rendering.RenderTargetIdentifier rhs)
-    // Offset: 0x9D8B54
+    // Offset: 0xBCD8FC
     bool Equals(::UnityEngine::Rendering::RenderTargetIdentifier rhs);
     // public override System.String ToString()
-    // Offset: 0x9D8848
+    // Offset: 0xBCD5F0
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();
     // public override System.Int32 GetHashCode()
-    // Offset: 0x9D8AFC
+    // Offset: 0xBCD8A4
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0x9D8BF0
+    // Offset: 0xBCD998
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);

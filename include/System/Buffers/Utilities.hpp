@@ -23,10 +23,10 @@ namespace System::Buffers {
   class Utilities : public ::Il2CppObject {
     public:
     // static System.Int32 SelectBucketIndex(System.Int32 bufferSize)
-    // Offset: 0x12EDFDC
+    // Offset: 0x18F51DC
     static int SelectBucketIndex(int bufferSize);
     // static System.Int32 GetMaxSizeForBucket(System.Int32 binIndex)
-    // Offset: 0x12EE058
+    // Offset: 0x18F5258
     static int GetMaxSizeForBucket(int binIndex);
   }; // System.Buffers.Utilities
   #pragma pack(pop)

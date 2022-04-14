@@ -35,15 +35,7 @@ namespace BeautifyEffect {
   // [TokenAttribute] Offset: FFFFFFFF
   class SphereAnimator : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Rigidbody rb
     // Size: 0x8
     // Offset: 0x18
@@ -54,15 +46,15 @@ namespace BeautifyEffect {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Rigidbody rb
-    ::UnityEngine::Rigidbody*& dyn_rb();
+    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_rb();
     // private System.Void Start()
-    // Offset: 0x13BC110
+    // Offset: 0x192F538
     void Start();
     // private System.Void FixedUpdate()
-    // Offset: 0x13BC164
+    // Offset: 0x192F58C
     void FixedUpdate();
     // public System.Void .ctor()
-    // Offset: 0x13BC214
+    // Offset: 0x192F63C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

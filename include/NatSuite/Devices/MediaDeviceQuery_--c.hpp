@@ -48,13 +48,13 @@ namespace NatSuite::Devices {
     // Set static field: static public System.Func`2<UnityEngine.WebCamDevice,NatSuite.Devices.WebCameraDevice> <>9__14_0
     static void _set_$$9__14_0(::System::Func_2<::UnityEngine::WebCamDevice, ::NatSuite::Devices::WebCameraDevice*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x13D94DC
+    // Offset: 0x19611F8
     static void _cctor();
     // NatSuite.Devices.WebCameraDevice <WebCamDevices>b__14_0(UnityEngine.WebCamDevice device)
-    // Offset: 0x13D9544
+    // Offset: 0x1961260
     ::NatSuite::Devices::WebCameraDevice* $WebCamDevices$b__14_0(::UnityEngine::WebCamDevice device);
     // public System.Void .ctor()
-    // Offset: 0x13D953C
+    // Offset: 0x1961258
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

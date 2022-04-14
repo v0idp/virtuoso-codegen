@@ -27,15 +27,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class PingResult : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt64 <ID>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -48,23 +40,23 @@ namespace Oculus::Platform::Models {
     ::System::Nullable_1<uint64_t> pingTimeUsec;
     public:
     // Get instance field reference: private System.UInt64 <ID>k__BackingField
-    uint64_t& dyn_$ID$k__BackingField();
+    [[deprecated]] uint64_t& dyn_$ID$k__BackingField();
     // Get instance field reference: private System.Nullable`1<System.UInt64> pingTimeUsec
-    ::System::Nullable_1<uint64_t>& dyn_pingTimeUsec();
+    [[deprecated]] ::System::Nullable_1<uint64_t>& dyn_pingTimeUsec();
     // public System.UInt64 get_ID()
-    // Offset: 0x9844B0
+    // Offset: 0xB5684C
     uint64_t get_ID();
     // private System.Void set_ID(System.UInt64 value)
-    // Offset: 0x9844B8
+    // Offset: 0xB56854
     void set_ID(uint64_t value);
     // public System.UInt64 get_PingTimeUsec()
-    // Offset: 0x9844C0
+    // Offset: 0xB5685C
     uint64_t get_PingTimeUsec();
     // public System.Boolean get_IsTimeout()
-    // Offset: 0x984530
+    // Offset: 0xB568CC
     bool get_IsTimeout();
     // public System.Void .ctor(System.UInt64 id, System.Nullable`1<System.UInt64> pingTimeUsec)
-    // Offset: 0x97D414
+    // Offset: 0xB4F7B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PingResult* New_ctor(uint64_t id, ::System::Nullable_1<uint64_t> pingTimeUsec) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::PingResult::.ctor");

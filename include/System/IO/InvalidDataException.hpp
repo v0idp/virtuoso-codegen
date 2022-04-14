@@ -41,7 +41,7 @@ namespace System::IO {
   class InvalidDataException : public ::System::SystemException {
     public:
     // public System.Void .ctor()
-    // Offset: 0xBEB878
+    // Offset: 0x10F5DB8
     // Implemented from: System.SystemException
     // Base method: System.Void SystemException::.ctor()
     // Base method: System.Void Exception::.ctor()
@@ -52,7 +52,7 @@ namespace System::IO {
       return THROW_UNLESS((::il2cpp_utils::New<InvalidDataException*, creationType>()));
     }
     // public System.Void .ctor(System.String message)
-    // Offset: 0xBEB8E4
+    // Offset: 0x10F5E24
     // Implemented from: System.SystemException
     // Base method: System.Void SystemException::.ctor(System.String message)
     // Base method: System.Void Exception::.ctor(System.String message)
@@ -62,7 +62,7 @@ namespace System::IO {
       return THROW_UNLESS((::il2cpp_utils::New<InvalidDataException*, creationType>(message)));
     }
     // public System.Void .ctor(System.String message, System.Exception innerException)
-    // Offset: 0xBEB914
+    // Offset: 0x10F5E54
     // Implemented from: System.SystemException
     // Base method: System.Void SystemException::.ctor(System.String message, System.Exception innerException)
     // Base method: System.Void Exception::.ctor(System.String message, System.Exception innerException)
@@ -72,7 +72,7 @@ namespace System::IO {
       return THROW_UNLESS((::il2cpp_utils::New<InvalidDataException*, creationType>(message, innerException)));
     }
     // private System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0xBEB944
+    // Offset: 0x10F5E84
     // Implemented from: System.SystemException
     // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)

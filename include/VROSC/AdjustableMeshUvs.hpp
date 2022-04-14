@@ -89,20 +89,12 @@ namespace VROSC {
       // Set static field: static public VROSC.AdjustableMeshUvs/VROSC.Channel Uv4
       static void _set_Uv4(::VROSC::AdjustableMeshUvs::Channel value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.AdjustableMeshUvs/VROSC.Channel
     #pragma pack(pop)
     static check_size<sizeof(AdjustableMeshUvs::Channel), 0 + sizeof(int)> __VROSC_AdjustableMeshUvs_ChannelSizeCheck;
     static_assert(sizeof(AdjustableMeshUvs::Channel) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AdjustableMeshUvs/VROSC.Channel _channel
     // Size: 0x4
     // Offset: 0x10
@@ -131,31 +123,31 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector2>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AdjustableMeshUvs/VROSC.Channel _channel
-    ::VROSC::AdjustableMeshUvs::Channel& dyn__channel();
+    [[deprecated]] ::VROSC::AdjustableMeshUvs::Channel& dyn__channel();
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private UnityEngine.Vector2[] _originalUv
-    ::ArrayW<::UnityEngine::Vector2>& dyn__originalUv();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__originalUv();
     // Get instance field reference: private UnityEngine.Vector2[] _uv
-    ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh, VROSC.AdjustableMeshUvs/VROSC.Channel channel, System.Boolean useOriginalAsUVSource)
-    // Offset: 0x1367FC8
+    // Offset: 0x966904
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AdjustableMeshUvs* New_ctor(::VROSC::AdjustableMesh* adjustableMesh, ::VROSC::AdjustableMeshUvs::Channel channel, bool useOriginalAsUVSource) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMeshUvs::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshUvs*, creationType>(adjustableMesh, channel, useOriginalAsUVSource)));
     }
     // public System.Void SetOriginalUV(UnityEngine.Vector2[] uv)
-    // Offset: 0x136A290
+    // Offset: 0x968BD0
     void SetOriginalUV(::ArrayW<::UnityEngine::Vector2> uv);
     // public System.Void OffsetUv(UnityEngine.Vector2 offset)
-    // Offset: 0x136A298
+    // Offset: 0x968BD8
     void OffsetUv(::UnityEngine::Vector2 offset);
     // public System.Void SetAllUVs(UnityEngine.Vector2 uv)
-    // Offset: 0x136A388
+    // Offset: 0x968CC8
     void SetAllUVs(::UnityEngine::Vector2 uv);
     // private System.Void SetUVs(UnityEngine.Vector2[] uv)
-    // Offset: 0x136A180
+    // Offset: 0x968AC0
     void SetUVs(::ArrayW<::UnityEngine::Vector2> uv);
   }; // VROSC.AdjustableMeshUvs
   #pragma pack(pop)

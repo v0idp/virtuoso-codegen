@@ -66,7 +66,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarHandGesture Count
     static void _set_Count(::GlobalNamespace::ovrAvatarHandGesture value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // ovrAvatarHandGesture
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarHandGesture), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarHandGestureSizeCheck;

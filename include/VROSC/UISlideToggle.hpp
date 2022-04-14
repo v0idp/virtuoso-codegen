@@ -53,15 +53,7 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class UISlideToggle : public ::VROSC::UIInteractable {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <IsOn>k__BackingField
     // Size: 0x1
     // Offset: 0x88
@@ -128,65 +120,65 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean <IsOn>k__BackingField
-    bool& dyn_$IsOn$k__BackingField();
+    [[deprecated]] bool& dyn_$IsOn$k__BackingField();
     // Get instance field reference: public System.Action`2<VROSC.InputDevice,System.Boolean> OnToggle
-    ::System::Action_2<::VROSC::InputDevice*, bool>*& dyn_OnToggle();
+    [[deprecated]] ::System::Action_2<::VROSC::InputDevice*, bool>*& dyn_OnToggle();
     // Get instance field reference: private System.Boolean _startInOnState
-    bool& dyn__startInOnState();
+    [[deprecated]] bool& dyn__startInOnState();
     // Get instance field reference: private VROSC.AdjustableMesh _base
-    ::VROSC::AdjustableMesh*& dyn__base();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__base();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _baseColorOn
-    ::VROSC::UI::UIColorGetter*& dyn__baseColorOn();
+    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__baseColorOn();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _baseColorOff
-    ::VROSC::UI::UIColorGetter*& dyn__baseColorOff();
+    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__baseColorOff();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _knobColor
-    ::VROSC::UI::UIColorGetter*& dyn__knobColor();
+    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__knobColor();
     // Get instance field reference: private VROSC.AdjustableMesh _knob
-    ::VROSC::AdjustableMesh*& dyn__knob();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__knob();
     // Get instance field reference: private VROSC.SimpleHaptic _hapticFeedBack
-    ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: private System.Boolean _isSet
-    bool& dyn__isSet();
+    [[deprecated]] bool& dyn__isSet();
     // public System.Boolean get_IsOn()
-    // Offset: 0x13A1C7C
+    // Offset: 0x19155A8
     bool get_IsOn();
     // private System.Void set_IsOn(System.Boolean value)
-    // Offset: 0x13A1C70
+    // Offset: 0x191559C
     void set_IsOn(bool value);
     // private System.Void OnEnable()
-    // Offset: 0x13A1C84
+    // Offset: 0x19155B0
     void OnEnable();
     // private System.Void Awake()
-    // Offset: 0x13A1F50
+    // Offset: 0x191587C
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13A22E0
+    // Offset: 0x1915C0C
     void OnDestroy();
     // private System.Void ButtonWasPressed(VROSC.ClickData clickData)
-    // Offset: 0x13A23A0
+    // Offset: 0x1915CCC
     void ButtonWasPressed(::VROSC::ClickData* clickData);
     // public System.Void SetToggled(System.Boolean shouldBeActive, System.Boolean alsoInvoke)
-    // Offset: 0x13A216C
+    // Offset: 0x1915A98
     void SetToggled(bool shouldBeActive, bool alsoInvoke);
     // private System.Void SetColor()
-    // Offset: 0x13A2450
+    // Offset: 0x1915D7C
     void SetColor();
     // private System.Void <Awake>b__17_0(System.Boolean disabled)
-    // Offset: 0x13A2600
+    // Offset: 0x1915F34
     void $Awake$b__17_0(bool disabled);
     // private System.Void <Awake>b__17_1(System.Boolean hovering)
-    // Offset: 0x13A2604
+    // Offset: 0x1915F38
     void $Awake$b__17_1(bool hovering);
     // private System.Void <Awake>b__17_2(System.Boolean interacting)
-    // Offset: 0x13A2608
+    // Offset: 0x1915F3C
     void $Awake$b__17_2(bool interacting);
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x13A1C68
+    // Offset: 0x1915594
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Boolean UIInteractable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x13A25F8
+    // Offset: 0x1915F2C
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
@@ -202,7 +194,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UISlideToggle*, creationType>()));
     }
     // protected override System.Void OnDisable()
-    // Offset: 0x13A1DE4
+    // Offset: 0x1915710
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::OnDisable()
     void OnDisable();

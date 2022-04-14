@@ -27,15 +27,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class BufferOffsetSize : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Byte[] Buffer
     // Size: 0x8
     // Offset: 0x10
@@ -56,20 +48,20 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Byte[] Buffer
-    ::ArrayW<uint8_t>& dyn_Buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_Buffer();
     // Get instance field reference: System.Int32 Offset
-    int& dyn_Offset();
+    [[deprecated]] int& dyn_Offset();
     // Get instance field reference: System.Int32 Size
-    int& dyn_Size();
+    [[deprecated]] int& dyn_Size();
     // System.Void .ctor(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Boolean copyBuffer)
-    // Offset: 0xE69530
+    // Offset: 0x10DB188
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BufferOffsetSize* New_ctor(::ArrayW<uint8_t> buffer, int offset, int size, bool copyBuffer) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::BufferOffsetSize::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BufferOffsetSize*, creationType>(buffer, offset, size, copyBuffer)));
     }
     // System.Void .ctor(System.Byte[] buffer, System.Boolean copyBuffer)
-    // Offset: 0xE695E0
+    // Offset: 0x10DB238
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BufferOffsetSize* New_ctor(::ArrayW<uint8_t> buffer, bool copyBuffer) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::BufferOffsetSize::.ctor");

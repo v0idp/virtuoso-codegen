@@ -46,10 +46,10 @@ namespace Mono::Net::Security::Private {
     // Nested type: ::Mono::Net::Security::Private::CallbackHelpers::$$c__DisplayClass8_0
     class $$c__DisplayClass8_0;
     // static System.Net.Security.RemoteCertificateValidationCallback MonoToPublic(Mono.Security.Interface.MonoRemoteCertificateValidationCallback callback)
-    // Offset: 0xE6E74C
+    // Offset: 0x10E05E4
     static ::System::Net::Security::RemoteCertificateValidationCallback* MonoToPublic(::Mono::Security::Interface::MonoRemoteCertificateValidationCallback* callback);
     // static System.Net.Security.LocalCertSelectionCallback MonoToInternal(Mono.Security.Interface.MonoLocalCertificateSelectionCallback callback)
-    // Offset: 0xE6E7FC
+    // Offset: 0x10E0694
     static ::System::Net::Security::LocalCertSelectionCallback* MonoToInternal(::Mono::Security::Interface::MonoLocalCertificateSelectionCallback* callback);
   }; // Mono.Net.Security.Private.CallbackHelpers
   #pragma pack(pop)

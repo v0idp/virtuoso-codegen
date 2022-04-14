@@ -26,15 +26,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ScalePreset::$$c__DisplayClass4_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.Note note
     // Size: 0x4
     // Offset: 0x10
@@ -47,18 +39,18 @@ namespace VROSC {
       return note;
     }
     // Get instance field reference: public VROSC.Note note
-    ::VROSC::Note& dyn_note();
+    [[deprecated]] ::VROSC::Note& dyn_note();
     // System.Boolean <UpdateNotePriorityList>b__1(VROSC.ScalePreset/VROSC.NotePriority n)
-    // Offset: 0x13493F8
+    // Offset: 0x8D4370
     bool $UpdateNotePriorityList$b__1(::VROSC::ScalePreset::NotePriority* n);
     // System.Boolean <UpdateNotePriorityList>b__2(VROSC.ScalePreset/VROSC.NotePriority n)
-    // Offset: 0x134941C
+    // Offset: 0x8D4394
     bool $UpdateNotePriorityList$b__2(::VROSC::ScalePreset::NotePriority* n);
     // System.Boolean <UpdateNotePriorityList>b__0(VROSC.ScalePreset/VROSC.NotePriority n)
-    // Offset: 0x1349440
+    // Offset: 0x8D43B8
     bool $UpdateNotePriorityList$b__0(::VROSC::ScalePreset::NotePriority* n);
     // public System.Void .ctor()
-    // Offset: 0x13493F0
+    // Offset: 0x8D4368
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

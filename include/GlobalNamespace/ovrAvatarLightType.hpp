@@ -66,7 +66,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarLightType Count
     static void _set_Count(::GlobalNamespace::ovrAvatarLightType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // ovrAvatarLightType
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarLightType), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarLightTypeSizeCheck;

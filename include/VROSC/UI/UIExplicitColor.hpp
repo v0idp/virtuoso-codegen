@@ -28,15 +28,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIExplicitColor : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected UnityEngine.Color _baseColor
     // Size: 0x10
     // Offset: 0x10
@@ -57,29 +49,29 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: protected UnityEngine.Color _baseColor
-    ::UnityEngine::Color& dyn__baseColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__baseColor();
     // Get instance field reference: protected UnityEngine.Color _hoverColor
-    ::UnityEngine::Color& dyn__hoverColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__hoverColor();
     // Get instance field reference: protected UnityEngine.Color _disabledColor
-    ::UnityEngine::Color& dyn__disabledColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__disabledColor();
     // public UnityEngine.Color get_BaseColor()
-    // Offset: 0x139BAD4
+    // Offset: 0x190F340
     ::UnityEngine::Color get_BaseColor();
     // public UnityEngine.Color get_HoverColor()
-    // Offset: 0x139BAE0
+    // Offset: 0x190F34C
     ::UnityEngine::Color get_HoverColor();
     // public UnityEngine.Color get_DisabledColor()
-    // Offset: 0x139BAEC
+    // Offset: 0x190F358
     ::UnityEngine::Color get_DisabledColor();
     // public System.Void .ctor(UnityEngine.Color baseColor, UnityEngine.Color hoverColor, UnityEngine.Color disabledColor)
-    // Offset: 0x139BA14
+    // Offset: 0x190F280
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIExplicitColor* New_ctor(::UnityEngine::Color baseColor, ::UnityEngine::Color hoverColor, ::UnityEngine::Color disabledColor) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIExplicitColor::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UIExplicitColor*, creationType>(baseColor, hoverColor, disabledColor)));
     }
     // System.Void SetColor(VROSC.UI.UIExplicitColor other)
-    // Offset: 0x139A474
+    // Offset: 0x190F364
     void SetColor(::VROSC::UI::UIExplicitColor* other);
   }; // VROSC.UI.UIExplicitColor
   #pragma pack(pop)

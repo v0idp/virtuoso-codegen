@@ -63,15 +63,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class RichPresenceSample : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String DeeplinkMessageOverride
     // Size: 0x8
     // Offset: 0x18
@@ -176,99 +168,99 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.String DeeplinkMessageOverride
-    ::StringW& dyn_DeeplinkMessageOverride();
+    [[deprecated]] ::StringW& dyn_DeeplinkMessageOverride();
     // Get instance field reference: public System.Boolean IsJoinable
-    bool& dyn_IsJoinable();
+    [[deprecated]] bool& dyn_IsJoinable();
     // Get instance field reference: public System.Boolean IsIdle
-    bool& dyn_IsIdle();
+    [[deprecated]] bool& dyn_IsIdle();
     // Get instance field reference: public System.String InstanceID
-    ::StringW& dyn_InstanceID();
+    [[deprecated]] ::StringW& dyn_InstanceID();
     // Get instance field reference: public System.UInt32 CurrentCapacity
-    uint& dyn_CurrentCapacity();
+    [[deprecated]] uint& dyn_CurrentCapacity();
     // Get instance field reference: public System.UInt32 MaxCapacity
-    uint& dyn_MaxCapacity();
+    [[deprecated]] uint& dyn_MaxCapacity();
     // Get instance field reference: public System.DateTime StartTime
-    ::System::DateTime& dyn_StartTime();
+    [[deprecated]] ::System::DateTime& dyn_StartTime();
     // Get instance field reference: public System.DateTime EndTime
-    ::System::DateTime& dyn_EndTime();
+    [[deprecated]] ::System::DateTime& dyn_EndTime();
     // Get instance field reference: public Oculus.Platform.RichPresenceExtraContext ExtraContext
-    ::Oculus::Platform::RichPresenceExtraContext& dyn_ExtraContext();
+    [[deprecated]] ::Oculus::Platform::RichPresenceExtraContext& dyn_ExtraContext();
     // Get instance field reference: public UnityEngine.UI.Text InVRConsole
-    ::UnityEngine::UI::Text*& dyn_InVRConsole();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_InVRConsole();
     // Get instance field reference: public UnityEngine.UI.Text DestinationsConsole
-    ::UnityEngine::UI::Text*& dyn_DestinationsConsole();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_DestinationsConsole();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> DestinationAPINames
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_DestinationAPINames();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_DestinationAPINames();
     // Get instance field reference: private System.UInt64 LoggedInUserID
-    uint64_t& dyn_LoggedInUserID();
+    [[deprecated]] uint64_t& dyn_LoggedInUserID();
     // Get instance field reference: private System.String TrackingID
-    ::StringW& dyn_TrackingID();
+    [[deprecated]] ::StringW& dyn_TrackingID();
     // Get instance field reference: private System.Int32 DestinationIndex
-    int& dyn_DestinationIndex();
+    [[deprecated]] int& dyn_DestinationIndex();
     // Get instance field reference: private System.Boolean OnlyPushUpOnce
-    bool& dyn_OnlyPushUpOnce();
+    [[deprecated]] bool& dyn_OnlyPushUpOnce();
     // private System.Void Start()
-    // Offset: 0x1147878
+    // Offset: 0x1714774
     void Start();
     // private System.Void SetPresence()
-    // Offset: 0x1147A48
+    // Offset: 0x1714944
     void SetPresence();
     // private System.Void ClearPresence()
-    // Offset: 0x1147C54
+    // Offset: 0x1714B50
     void ClearPresence();
     // private System.String GetAppLaunchDetails()
-    // Offset: 0x1147D00
+    // Offset: 0x1714BFC
     ::StringW GetAppLaunchDetails();
     // private System.Void OnLaunchIntentChangeNotif(Oculus.Platform.Message`1<System.String> message)
-    // Offset: 0x11481C0
+    // Offset: 0x17150BC
     void OnLaunchIntentChangeNotif(::Oculus::Platform::Message_1<::StringW>* message);
     // private System.Void OnGetDestinations(Oculus.Platform.Message`1<Oculus.Platform.Models.DestinationList> message)
-    // Offset: 0x1148268
+    // Offset: 0x1715164
     void OnGetDestinations(::Oculus::Platform::Message_1<::Oculus::Platform::Models::DestinationList*>* message);
     // private System.Void Update()
-    // Offset: 0x11486BC
+    // Offset: 0x17155B8
     void Update();
     // private System.Void ScrollThroughDestinations()
-    // Offset: 0x1148788
+    // Offset: 0x1715684
     void ScrollThroughDestinations();
     // private System.Void UpdateDestinationsConsole()
-    // Offset: 0x1148548
+    // Offset: 0x1715444
     void UpdateDestinationsConsole();
     // private System.Void OnLoggedInUser(Oculus.Platform.Message`1<Oculus.Platform.Models.User> message)
-    // Offset: 0x1148878
+    // Offset: 0x1715774
     void OnLoggedInUser(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* message);
     // private System.Void UpdateConsole(System.String value)
-    // Offset: 0x1147990
+    // Offset: 0x171488C
     void UpdateConsole(::StringW value);
     // private System.Boolean PressAButton()
-    // Offset: 0x1148770
+    // Offset: 0x171566C
     bool PressAButton();
     // private System.Boolean PressBButton()
-    // Offset: 0x114877C
+    // Offset: 0x1715678
     bool PressBButton();
     // private System.Boolean PressUp()
-    // Offset: 0x1148860
+    // Offset: 0x171575C
     bool PressUp();
     // private System.Boolean PressDown()
-    // Offset: 0x114886C
+    // Offset: 0x1715768
     bool PressDown();
     // private System.Void <Start>b__14_0(Oculus.Platform.Message`1<Oculus.Platform.Models.PlatformInitialize> message)
-    // Offset: 0x1148A30
+    // Offset: 0x171592C
     void $Start$b__14_0(::Oculus::Platform::Message_1<::Oculus::Platform::Models::PlatformInitialize*>* message);
     // private System.Void <SetPresence>b__15_0(Oculus.Platform.Message message)
-    // Offset: 0x1148DE4
+    // Offset: 0x1715CE0
     void $SetPresence$b__15_0(::Oculus::Platform::Message* message);
     // private System.Void <SetPresence>b__15_1(Oculus.Platform.Message`1<Oculus.Platform.Models.User> message2)
-    // Offset: 0x11490A0
+    // Offset: 0x1715F9C
     void $SetPresence$b__15_1(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* message2);
     // private System.Void <ClearPresence>b__16_0(Oculus.Platform.Message message)
-    // Offset: 0x11492BC
+    // Offset: 0x17161B8
     void $ClearPresence$b__16_0(::Oculus::Platform::Message* message);
     // private System.Void <ClearPresence>b__16_1(Oculus.Platform.Message`1<Oculus.Platform.Models.User> message2)
-    // Offset: 0x11493C8
+    // Offset: 0x17162C4
     void $ClearPresence$b__16_1(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* message2);
     // public System.Void .ctor()
-    // Offset: 0x1148940
+    // Offset: 0x171583C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

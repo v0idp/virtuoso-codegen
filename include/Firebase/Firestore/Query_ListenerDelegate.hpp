@@ -41,20 +41,20 @@ namespace Firebase::Firestore {
   class Query::ListenerDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xC3EAB0
+    // Offset: 0xD63098
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Query::ListenerDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Query::ListenerDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Query::ListenerDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Int32 callbackId, System.IntPtr snapshotPtr, Firebase.Firestore.FirestoreError errorCode, System.String errorMessage)
-    // Offset: 0xC44A38
+    // Offset: 0xD694FC
     void Invoke(int callbackId, ::System::IntPtr snapshotPtr, ::Firebase::Firestore::FirestoreError errorCode, ::StringW errorMessage);
     // public System.IAsyncResult BeginInvoke(System.Int32 callbackId, System.IntPtr snapshotPtr, Firebase.Firestore.FirestoreError errorCode, System.String errorMessage, System.AsyncCallback callback, System.Object object)
-    // Offset: 0xC44CA8
+    // Offset: 0xD6976C
     ::System::IAsyncResult* BeginInvoke(int callbackId, ::System::IntPtr snapshotPtr, ::Firebase::Firestore::FirestoreError errorCode, ::StringW errorMessage, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xC44D8C
+    // Offset: 0xD69850
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Firestore.Query/Firebase.Firestore.ListenerDelegate
   #pragma pack(pop)

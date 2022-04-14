@@ -56,15 +56,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::RotateEffect::$SpecificFlow$d__10
     class $SpecificFlow$d__10;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.RotateEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -85,22 +77,22 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::VROSC::AudioReactive::ConstantRotationData*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.RotateEffectData _data
-    ::VROSC::AudioReactive::RotateEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::RotateEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Transform[] _transforms
-    ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
     // Get instance field reference: private VROSC.AudioReactive.ConstantRotationData[] _constantRotationData
-    ::ArrayW<::VROSC::AudioReactive::ConstantRotationData*>& dyn__constantRotationData();
+    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::ConstantRotationData*>& dyn__constantRotationData();
     // public VROSC.AudioReactive.RotateEffectData get_Data()
-    // Offset: 0xB00940
+    // Offset: 0xB371A4
     ::VROSC::AudioReactive::RotateEffectData* get_Data();
     // public UnityEngine.Transform[] get_Transforms()
-    // Offset: 0xB00948
+    // Offset: 0xB371AC
     ::ArrayW<::UnityEngine::Transform*> get_Transforms();
     // private VROSC.AudioReactive.TriggerRotationData[] GetRotationDatas()
-    // Offset: 0xB00C90
+    // Offset: 0xB374EC
     ::ArrayW<::VROSC::AudioReactive::TriggerRotationData*> GetRotationDatas();
     // public System.Void .ctor()
-    // Offset: 0xB00DC4
+    // Offset: 0xB37620
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -111,22 +103,22 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<RotateEffect*, creationType>()));
     }
     // public override System.Void Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
-    // Offset: 0xB00950
+    // Offset: 0xB371B4
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
     void Setup(::VROSC::AudioReactive::AudioReactiveBehaviour* behaviour);
     // public override System.Void Update()
-    // Offset: 0xB00AA0
+    // Offset: 0xB37304
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Update()
     void Update();
     // public override System.Void DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
-    // Offset: 0xB00B28
+    // Offset: 0xB3738C
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
     void DrawGizmos(::VROSC::AudioReactive::ReactToBeat* sender);
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0xB00C24
+    // Offset: 0xB37480
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();

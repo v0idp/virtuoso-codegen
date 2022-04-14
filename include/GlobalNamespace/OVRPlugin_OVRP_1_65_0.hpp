@@ -33,28 +33,28 @@ namespace GlobalNamespace {
     // Set static field: static public readonly System.Version version
     static void _set_version(::System::Version* value);
     // static private System.Void .cctor()
-    // Offset: 0xF125AC
+    // Offset: 0x13EC5A8
     static void _cctor();
     // static public OVRPlugin/Result ovrp_KtxLoadFromMemory(ref System.IntPtr data, System.UInt32 length, ref System.IntPtr texture)
-    // Offset: 0xF121BC
+    // Offset: 0x13EC1B8
     static ::GlobalNamespace::OVRPlugin::Result ovrp_KtxLoadFromMemory(ByRef<::System::IntPtr> data, uint length, ByRef<::System::IntPtr> texture);
     // static public OVRPlugin/Result ovrp_KtxTextureWidth(System.IntPtr texture, ref System.UInt32 width)
-    // Offset: 0xF12254
+    // Offset: 0x13EC250
     static ::GlobalNamespace::OVRPlugin::Result ovrp_KtxTextureWidth(::System::IntPtr texture, ByRef<uint> width);
     // static public OVRPlugin/Result ovrp_KtxTextureHeight(System.IntPtr texture, ref System.UInt32 height)
-    // Offset: 0xF122E4
+    // Offset: 0x13EC2E0
     static ::GlobalNamespace::OVRPlugin::Result ovrp_KtxTextureHeight(::System::IntPtr texture, ByRef<uint> height);
     // static public OVRPlugin/Result ovrp_KtxTranscode(System.IntPtr texture, System.UInt32 format)
-    // Offset: 0xF12374
+    // Offset: 0x13EC370
     static ::GlobalNamespace::OVRPlugin::Result ovrp_KtxTranscode(::System::IntPtr texture, uint format);
     // static public OVRPlugin/Result ovrp_KtxGetTextureData(System.IntPtr texture, System.IntPtr data, System.UInt32 bufferSize)
-    // Offset: 0xF12404
+    // Offset: 0x13EC400
     static ::GlobalNamespace::OVRPlugin::Result ovrp_KtxGetTextureData(::System::IntPtr texture, ::System::IntPtr data, uint bufferSize);
     // static public OVRPlugin/Result ovrp_KtxTextureSize(System.IntPtr texture, ref System.UInt32 size)
-    // Offset: 0xF1249C
+    // Offset: 0x13EC498
     static ::GlobalNamespace::OVRPlugin::Result ovrp_KtxTextureSize(::System::IntPtr texture, ByRef<uint> size);
     // static public OVRPlugin/Result ovrp_KtxDestroy(System.IntPtr texture)
-    // Offset: 0xF1252C
+    // Offset: 0x13EC528
     static ::GlobalNamespace::OVRPlugin::Result ovrp_KtxDestroy(::System::IntPtr texture);
   }; // OVRPlugin/OVRP_1_65_0
   #pragma pack(pop)

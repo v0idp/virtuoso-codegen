@@ -48,16 +48,8 @@ namespace Facebook::WitAi {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoiceService : public ::UnityEngine::MonoBehaviour/*, public ::Facebook::WitAi::IVoiceService*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x5B13F0
+    // [TooltipAttribute] Offset: 0x6C7520
     // public Facebook.WitAi.Events.VoiceEvents events
     // Size: 0x8
     // Offset: 0x18
@@ -72,7 +64,7 @@ namespace Facebook::WitAi {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public Facebook.WitAi.Events.VoiceEvents events
-    ::Facebook::WitAi::Events::VoiceEvents*& dyn_events();
+    [[deprecated]] ::Facebook::WitAi::Events::VoiceEvents*& dyn_events();
     // public System.Boolean get_Active()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_Active();
@@ -89,10 +81,10 @@ namespace Facebook::WitAi {
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_MicActive();
     // public Facebook.WitAi.Events.VoiceEvents get_VoiceEvents()
-    // Offset: 0x10FA17C
+    // Offset: 0x16709E4
     ::Facebook::WitAi::Events::VoiceEvents* get_VoiceEvents();
     // public System.Void set_VoiceEvents(Facebook.WitAi.Events.VoiceEvents value)
-    // Offset: 0x10FA184
+    // Offset: 0x16709EC
     void set_VoiceEvents(::Facebook::WitAi::Events::VoiceEvents* value);
     // public System.Boolean get_ShouldSendMicData()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -119,7 +111,7 @@ namespace Facebook::WitAi {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Activate(::StringW text, ::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // protected System.Void .ctor()
-    // Offset: 0x10FA18C
+    // Offset: 0x16709F4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

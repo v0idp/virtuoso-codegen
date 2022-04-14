@@ -27,15 +27,7 @@ namespace VROSC::UI::Meshes {
   // [TokenAttribute] Offset: FFFFFFFF
   class RescalableMeshData::VertexData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 _originalPosition
     // Size: 0xC
     // Offset: 0x10
@@ -50,17 +42,17 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _originalPosition
-    ::UnityEngine::Vector3& dyn__originalPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__originalPosition();
     // Get instance field reference: private UnityEngine.Vector2 _scaling
-    ::UnityEngine::Vector2& dyn__scaling();
+    [[deprecated]] ::UnityEngine::Vector2& dyn__scaling();
     // public UnityEngine.Vector3 get_OriginalPosition()
-    // Offset: 0x13453D8
+    // Offset: 0x8D0328
     ::UnityEngine::Vector3 get_OriginalPosition();
     // public UnityEngine.Vector2 get_Scaling()
-    // Offset: 0x13453E4
+    // Offset: 0x8D0334
     ::UnityEngine::Vector2 get_Scaling();
     // public System.Void .ctor(UnityEngine.Vector3 position, UnityEngine.Vector2 scaling)
-    // Offset: 0x13453EC
+    // Offset: 0x8D033C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RescalableMeshData::VertexData* New_ctor(::UnityEngine::Vector3 position, ::UnityEngine::Vector2 scaling) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::RescalableMeshData::VertexData::.ctor");

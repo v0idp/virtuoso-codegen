@@ -36,15 +36,7 @@ namespace Oculus::Voice::Bindings::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoiceSDKListenerBinding : public ::UnityEngine::AndroidJavaProxy {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Facebook.WitAi.Events.VoiceEvents voiceEvents
     // Size: 0x8
     // Offset: 0x20
@@ -57,55 +49,55 @@ namespace Oculus::Voice::Bindings::Android {
       return voiceEvents;
     }
     // Get instance field reference: private Facebook.WitAi.Events.VoiceEvents voiceEvents
-    ::Facebook::WitAi::Events::VoiceEvents*& dyn_voiceEvents();
+    [[deprecated]] ::Facebook::WitAi::Events::VoiceEvents*& dyn_voiceEvents();
     // public Facebook.WitAi.Events.VoiceEvents get_VoiceEvents()
-    // Offset: 0x12E63A8
+    // Offset: 0x18EA61C
     ::Facebook::WitAi::Events::VoiceEvents* get_VoiceEvents();
     // public System.Void .ctor(Facebook.WitAi.Events.VoiceEvents voiceEvents)
-    // Offset: 0x12E6260
+    // Offset: 0x18EA4D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VoiceSDKListenerBinding* New_ctor(::Facebook::WitAi::Events::VoiceEvents* voiceEvents) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Bindings::Android::VoiceSDKListenerBinding::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<VoiceSDKListenerBinding*, creationType>(voiceEvents)));
     }
     // public System.Void onResponse(System.String response)
-    // Offset: 0x12E63B0
+    // Offset: 0x18EA624
     void onResponse(::StringW response);
     // public System.Void onError(System.String error, System.String message)
-    // Offset: 0x12E643C
+    // Offset: 0x18EA6B0
     void onError(::StringW error, ::StringW message);
     // public System.Void onMicLevelChanged(System.Single level)
-    // Offset: 0x12E64C0
+    // Offset: 0x18EA734
     void onMicLevelChanged(float level);
     // public System.Void onRequestCreated()
-    // Offset: 0x12E653C
+    // Offset: 0x18EA7B0
     void onRequestCreated();
     // public System.Void onStartListening()
-    // Offset: 0x12E65A8
+    // Offset: 0x18EA81C
     void onStartListening();
     // public System.Void onStoppedListening()
-    // Offset: 0x12E65D0
+    // Offset: 0x18EA844
     void onStoppedListening();
     // public System.Void onStoppedListeningDueToInactivity()
-    // Offset: 0x12E65F8
+    // Offset: 0x18EA86C
     void onStoppedListeningDueToInactivity();
     // public System.Void onStoppedListeningDueToTimeout()
-    // Offset: 0x12E6620
+    // Offset: 0x18EA894
     void onStoppedListeningDueToTimeout();
     // public System.Void onStoppedListeningDueToDeactivation()
-    // Offset: 0x12E6648
+    // Offset: 0x18EA8BC
     void onStoppedListeningDueToDeactivation();
     // public System.Void onMicDataSent()
-    // Offset: 0x12E6670
+    // Offset: 0x18EA8E4
     void onMicDataSent();
     // public System.Void onMinimumWakeThresholdHit()
-    // Offset: 0x12E6698
+    // Offset: 0x18EA90C
     void onMinimumWakeThresholdHit();
     // public System.Void onPartialTranscription(System.String transcription)
-    // Offset: 0x12E66C0
+    // Offset: 0x18EA934
     void onPartialTranscription(::StringW transcription);
     // public System.Void onFullTranscription(System.String transcription)
-    // Offset: 0x12E673C
+    // Offset: 0x18EA9B0
     void onFullTranscription(::StringW transcription);
   }; // Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding
   #pragma pack(pop)

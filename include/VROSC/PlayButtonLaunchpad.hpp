@@ -57,15 +57,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x84 to desired offset: 0x88
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopPlayButton _loopPlayButton
     // Size: 0x8
     // Offset: 0x88
@@ -116,41 +108,41 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::LoopPlaybackSettingsToggle*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LoopPlayButton _loopPlayButton
-    ::VROSC::LoopPlayButton*& dyn__loopPlayButton();
+    [[deprecated]] ::VROSC::LoopPlayButton*& dyn__loopPlayButton();
     // Get instance field reference: private UnityEngine.Renderer _updaterMesh
-    ::UnityEngine::Renderer*& dyn__updaterMesh();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__updaterMesh();
     // Get instance field reference: private UnityEngine.Renderer _timingMesh
-    ::UnityEngine::Renderer*& dyn__timingMesh();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__timingMesh();
     // Get instance field reference: private UnityEngine.GameObject _startIcon
-    ::UnityEngine::GameObject*& dyn__startIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__startIcon();
     // Get instance field reference: private UnityEngine.GameObject _stopIcon
-    ::UnityEngine::GameObject*& dyn__stopIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__stopIcon();
     // Get instance field reference: private VROSC.OverridePlaybackSettingsUI _overridePlaybackSettingsUI
-    ::VROSC::OverridePlaybackSettingsUI*& dyn__overridePlaybackSettingsUI();
+    [[deprecated]] ::VROSC::OverridePlaybackSettingsUI*& dyn__overridePlaybackSettingsUI();
     // Get instance field reference: private VROSC.LoopPlaybackSettingsUI _loopPlaybackSettingsUI
-    ::VROSC::LoopPlaybackSettingsUI*& dyn__loopPlaybackSettingsUI();
+    [[deprecated]] ::VROSC::LoopPlaybackSettingsUI*& dyn__loopPlaybackSettingsUI();
     // Get instance field reference: private VROSC.LoopPlaybackSettingsToggle _toggleButton
-    ::VROSC::LoopPlaybackSettingsToggle*& dyn__toggleButton();
+    [[deprecated]] ::VROSC::LoopPlaybackSettingsToggle*& dyn__toggleButton();
     // public System.Void AssignConfig(VROSC.LoopPlaybackConfig config)
-    // Offset: 0x8FB980
+    // Offset: 0xAE0118
     void AssignConfig(::VROSC::LoopPlaybackConfig* config);
     // public System.Void Unassign()
-    // Offset: 0x8FBACC
+    // Offset: 0xAE0264
     void Unassign();
     // public System.Void AssignButton(VROSC.LoopPlayButton loopPlayButton)
-    // Offset: 0x8FBC88
+    // Offset: 0xAE0420
     void AssignButton(::VROSC::LoopPlayButton* loopPlayButton);
     // private System.Void UpdateLoopPlayer()
-    // Offset: 0x8FBDE4
+    // Offset: 0xAE057C
     void UpdateLoopPlayer();
     // private System.Void Update()
-    // Offset: 0x8FBF2C
+    // Offset: 0xAE06C4
     void Update();
     // private System.Void LoopIsPlaying(System.Boolean isPlaying)
-    // Offset: 0x8FC124
+    // Offset: 0xAE08BC
     void LoopIsPlaying(bool isPlaying);
     // public System.Void .ctor()
-    // Offset: 0x8FC178
+    // Offset: 0xAE0910
     // Implemented from: VROSC.Launchpad
     // Base method: System.Void Launchpad::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -164,12 +156,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<PlayButtonLaunchpad*, creationType>()));
     }
     // public override System.Void Setup(VROSC.LaunchpadSpawner launchpadSpawner, System.String id, System.String targetID, System.String displayName, UnityEngine.Color color)
-    // Offset: 0x8FB79C
+    // Offset: 0xADFF34
     // Implemented from: VROSC.Launchpad
     // Base method: System.Void Launchpad::Setup(VROSC.LaunchpadSpawner launchpadSpawner, System.String id, System.String targetID, System.String displayName, UnityEngine.Color color)
     void Setup(::VROSC::LaunchpadSpawner* launchpadSpawner, ::StringW id, ::StringW targetID, ::StringW displayName, ::UnityEngine::Color color);
     // protected override System.Void OnDestroy()
-    // Offset: 0x8FB7E8
+    // Offset: 0xADFF80
     // Implemented from: VROSC.Launchpad
     // Base method: System.Void Launchpad::OnDestroy()
     void OnDestroy();

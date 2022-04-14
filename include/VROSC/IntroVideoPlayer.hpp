@@ -61,17 +61,9 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IntroVideoPlayer : public ::UnityEngine::MonoBehaviour {
     public:
-    // Nested type: ::VROSC::IntroVideoPlayer::$PlayVideo$d__10
-    struct $PlayVideo$d__10;
-    #ifdef USE_CODEGEN_FIELDS
+    // Nested type: ::VROSC::IntroVideoPlayer::$PlayVideo$d__11
+    struct $PlayVideo$d__11;
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AudioSource _introAudio
     // Size: 0x8
     // Offset: 0x18
@@ -105,6 +97,12 @@ namespace VROSC {
     public:
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
+    // static field const value: static private System.Single timeOutInSeconds
+    static constexpr const float timeOutInSeconds = 1.5;
+    // Get static field: static private System.Single timeOutInSeconds
+    static float _get_timeOutInSeconds();
+    // Set static field: static private System.Single timeOutInSeconds
+    static void _set_timeOutInSeconds(float value);
     // static field const value: static private System.String SkipIntroPlayerPrefsString
     static constexpr const char* SkipIntroPlayerPrefsString = "SkipIntroVideo";
     // Get static field: static private System.String SkipIntroPlayerPrefsString
@@ -116,29 +114,29 @@ namespace VROSC {
     // Set static field: static public System.Action OnIntroVideoPlaybackFinished
     static void _set_OnIntroVideoPlaybackFinished(::System::Action* value);
     // Get instance field reference: private UnityEngine.AudioSource _introAudio
-    ::UnityEngine::AudioSource*& dyn__introAudio();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__introAudio();
     // Get instance field reference: private UnityEngine.Camera _videoCamera
-    ::UnityEngine::Camera*& dyn__videoCamera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn__videoCamera();
     // Get instance field reference: private UnityEngine.Transform _videoPlane
-    ::UnityEngine::Transform*& dyn__videoPlane();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__videoPlane();
     // Get instance field reference: private System.Boolean _skip
-    bool& dyn__skip();
+    [[deprecated]] bool& dyn__skip();
     // Get instance field reference: private System.Boolean <HasPlaybackFinished>k__BackingField
-    bool& dyn_$HasPlaybackFinished$k__BackingField();
+    [[deprecated]] bool& dyn_$HasPlaybackFinished$k__BackingField();
     // public System.Boolean get_HasPlaybackFinished()
-    // Offset: 0x1387744
+    // Offset: 0x194AFEC
     bool get_HasPlaybackFinished();
     // private System.Void set_HasPlaybackFinished(System.Boolean value)
-    // Offset: 0x138774C
+    // Offset: 0x194AFF4
     void set_HasPlaybackFinished(bool value);
     // public System.Threading.Tasks.Task PlayVideo(VROSC.VRPlayer vrPlayer)
-    // Offset: 0x1387758
+    // Offset: 0x194B000
     ::System::Threading::Tasks::Task* PlayVideo(::VROSC::VRPlayer* vrPlayer);
     // private System.Void SkipVideo(VROSC.InputDevice device, VROSC.TriggerButton button)
-    // Offset: 0x1387868
+    // Offset: 0x194B114
     void SkipVideo(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
     // public System.Void .ctor()
-    // Offset: 0x138787C
+    // Offset: 0x194B190
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

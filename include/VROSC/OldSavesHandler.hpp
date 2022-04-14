@@ -59,15 +59,7 @@ namespace VROSC {
     class $$c;
     // Nested type: ::VROSC::OldSavesHandler::$PackageSession$d__6
     struct $PackageSession$d__6;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LocalSessionsDataController _localSessionsDataController
     // Size: 0x8
     // Offset: 0x10
@@ -82,27 +74,27 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SaveLoadManager*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LocalSessionsDataController _localSessionsDataController
-    ::VROSC::LocalSessionsDataController*& dyn__localSessionsDataController();
+    [[deprecated]] ::VROSC::LocalSessionsDataController*& dyn__localSessionsDataController();
     // Get instance field reference: private VROSC.SaveLoadManager _saveLoadManager
-    ::VROSC::SaveLoadManager*& dyn__saveLoadManager();
+    [[deprecated]] ::VROSC::SaveLoadManager*& dyn__saveLoadManager();
     // public System.Void .ctor(VROSC.SaveLoadManager saveLoadManager, VROSC.LocalSessionsDataController localSessionsDataController)
-    // Offset: 0x91C748
+    // Offset: 0xC66260
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OldSavesHandler* New_ctor(::VROSC::SaveLoadManager* saveLoadManager, ::VROSC::LocalSessionsDataController* localSessionsDataController) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OldSavesHandler::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OldSavesHandler*, creationType>(saveLoadManager, localSessionsDataController)));
     }
     // public System.Void Execute(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x91C780
+    // Offset: 0xC66298
     void Execute(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // private System.Void FindUnresgisteredSessions()
-    // Offset: 0x91C848
+    // Offset: 0xC66360
     void FindUnresgisteredSessions();
     // private System.Threading.Tasks.Task UpdateSessionsFiles()
-    // Offset: 0x91CFC0
+    // Offset: 0xC66AD8
     ::System::Threading::Tasks::Task* UpdateSessionsFiles();
     // private System.Threading.Tasks.Task PackageSession(System.String sessionName)
-    // Offset: 0x91D0D0
+    // Offset: 0xC66BE8
     ::System::Threading::Tasks::Task* PackageSession(::StringW sessionName);
   }; // VROSC.OldSavesHandler
   #pragma pack(pop)

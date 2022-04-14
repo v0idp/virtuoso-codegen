@@ -26,15 +26,7 @@ namespace UnityEngine::Networking::PlayerConnection {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class PlayerEditorConnectionEvents::$$c__DisplayClass7_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Guid messageId
     // Size: 0x10
     // Offset: 0x10
@@ -47,12 +39,12 @@ namespace UnityEngine::Networking::PlayerConnection {
       return messageId;
     }
     // Get instance field reference: public System.Guid messageId
-    ::System::Guid& dyn_messageId();
+    [[deprecated]] ::System::Guid& dyn_messageId();
     // System.Boolean <AddAndCreate>b__0(UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/UnityEngine.Networking.PlayerConnection.MessageTypeSubscribers x)
-    // Offset: 0x124FE28
+    // Offset: 0x1843FFC
     bool $AddAndCreate$b__0(::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::MessageTypeSubscribers* x);
     // public System.Void .ctor()
-    // Offset: 0x124FE20
+    // Offset: 0x1843FF4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

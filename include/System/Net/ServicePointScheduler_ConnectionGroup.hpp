@@ -45,15 +45,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class ServicePointScheduler::ConnectionGroup : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Net.ServicePointScheduler <Scheduler>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -92,45 +84,45 @@ namespace System::Net {
     // Set static field: static private System.Int32 nextId
     static void _set_nextId(int value);
     // Get instance field reference: private readonly System.Net.ServicePointScheduler <Scheduler>k__BackingField
-    ::System::Net::ServicePointScheduler*& dyn_$Scheduler$k__BackingField();
+    [[deprecated]] ::System::Net::ServicePointScheduler*& dyn_$Scheduler$k__BackingField();
     // Get instance field reference: private readonly System.String <Name>k__BackingField
-    ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: public readonly System.Int32 ID
-    int& dyn_ID();
+    [[deprecated]] int& dyn_ID();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.Net.WebConnection> connections
-    ::System::Collections::Generic::LinkedList_1<::System::Net::WebConnection*>*& dyn_connections();
+    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::Net::WebConnection*>*& dyn_connections();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.Net.WebOperation> queue
-    ::System::Collections::Generic::LinkedList_1<::System::Net::WebOperation*>*& dyn_queue();
+    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::Net::WebOperation*>*& dyn_queue();
     // public System.Net.ServicePointScheduler get_Scheduler()
-    // Offset: 0x8E26F8
+    // Offset: 0x9FF1BC
     ::System::Net::ServicePointScheduler* get_Scheduler();
     // public System.Void .ctor(System.Net.ServicePointScheduler scheduler, System.String name)
-    // Offset: 0x8E2700
+    // Offset: 0x9FF1C4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ServicePointScheduler::ConnectionGroup* New_ctor(::System::Net::ServicePointScheduler* scheduler, ::StringW name) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::ServicePointScheduler::ConnectionGroup::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ServicePointScheduler::ConnectionGroup*, creationType>(scheduler, name)));
     }
     // public System.Boolean IsEmpty()
-    // Offset: 0x8E2148
+    // Offset: 0x9FEC0C
     bool IsEmpty();
     // public System.Void RemoveConnection(System.Net.WebConnection connection)
-    // Offset: 0x8E27FC
+    // Offset: 0x9FF2C0
     void RemoveConnection(::System::Net::WebConnection* connection);
     // public System.Void Cleanup()
-    // Offset: 0x8E2884
+    // Offset: 0x9FF348
     void Cleanup();
     // public System.Void EnqueueOperation(System.Net.WebOperation operation)
-    // Offset: 0x8E2974
+    // Offset: 0x9FF438
     void EnqueueOperation(::System::Net::WebOperation* operation);
     // public System.Net.WebOperation GetNextOperation()
-    // Offset: 0x8E29D8
+    // Offset: 0x9FF49C
     ::System::Net::WebOperation* GetNextOperation();
     // public System.Net.WebConnection FindIdleConnection(System.Net.WebOperation operation)
-    // Offset: 0x8E2AD0
+    // Offset: 0x9FF594
     ::System::Net::WebConnection* FindIdleConnection(::System::Net::WebOperation* operation);
     // public System.ValueTuple`2<System.Net.WebConnection,System.Boolean> CreateOrReuseConnection(System.Net.WebOperation operation, System.Boolean force)
-    // Offset: 0x8E2E24
+    // Offset: 0x9FF8E8
     ::System::ValueTuple_2<::System::Net::WebConnection*, bool> CreateOrReuseConnection(::System::Net::WebOperation* operation, bool force);
   }; // System.Net.ServicePointScheduler/System.Net.ConnectionGroup
   #pragma pack(pop)

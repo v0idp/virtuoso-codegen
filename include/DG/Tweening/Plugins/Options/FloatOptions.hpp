@@ -48,9 +48,9 @@ namespace DG::Tweening::Plugins::Options {
       return snapping;
     }
     // Get instance field reference: public System.Boolean snapping
-    bool& dyn_snapping();
+    [[deprecated]] bool& dyn_snapping();
     // public System.Void Reset()
-    // Offset: 0x109D44C
+    // Offset: 0x15DFA74
     void Reset();
   }; // DG.Tweening.Plugins.Options.FloatOptions
   #pragma pack(pop)

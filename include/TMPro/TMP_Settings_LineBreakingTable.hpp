@@ -31,15 +31,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_Settings::LineBreakingTable : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.Dictionary`2<System.Int32,System.Char> leadingCharacters
     // Size: 0x8
     // Offset: 0x10
@@ -54,11 +46,11 @@ namespace TMPro {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.Int32,System.Char> leadingCharacters
-    ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*& dyn_leadingCharacters();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*& dyn_leadingCharacters();
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.Int32,System.Char> followingCharacters
-    ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*& dyn_followingCharacters();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*& dyn_followingCharacters();
     // public System.Void .ctor()
-    // Offset: 0x1247164
+    // Offset: 0x1821200
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

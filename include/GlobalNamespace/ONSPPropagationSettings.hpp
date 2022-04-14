@@ -28,15 +28,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class ONSPPropagationSettings : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single quality
     // Size: 0x4
     // Offset: 0x18
@@ -47,12 +39,12 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single quality
-    float& dyn_quality();
+    [[deprecated]] float& dyn_quality();
     // private System.Void Update()
-    // Offset: 0x11C75C8
+    // Offset: 0x176C4D0
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x11C7694
+    // Offset: 0x176C59C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

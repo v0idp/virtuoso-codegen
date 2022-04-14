@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupBeatCounterState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.BeatCounter _beatCounter
     // Size: 0x8
     // Offset: 0x10
@@ -66,27 +58,27 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.BeatCounter _beatCounter
-    ::VROSC::BeatCounter*& dyn__beatCounter();
+    [[deprecated]] ::VROSC::BeatCounter*& dyn__beatCounter();
     // Get instance field reference: private VROSC.BeatCounterUI _beatCounterUI
-    ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
+    [[deprecated]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
     // public System.Void .ctor(VROSC.BeatCounter beatCounter)
-    // Offset: 0x13B3870
+    // Offset: 0x192673C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupBeatCounterState* New_ctor(::VROSC::BeatCounter* beatCounter) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupBeatCounterState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupBeatCounterState*, creationType>(beatCounter)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B389C
+    // Offset: 0x1926768
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B38C0
+    // Offset: 0x192678C
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B38C4
+    // Offset: 0x1926790
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B38C8
+    // Offset: 0x1926794
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupBeatCounterState
   #pragma pack(pop)

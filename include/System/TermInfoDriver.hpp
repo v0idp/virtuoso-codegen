@@ -57,15 +57,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class TermInfoDriver : public ::Il2CppObject/*, public ::System::IConsoleDriver*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.TermInfoReader reader
     // Size: 0x8
     // Offset: 0x10
@@ -338,190 +330,190 @@ namespace System {
     // Set static field: static private readonly System.Int32[] _consoleColorToAnsiCode
     static void _set__consoleColorToAnsiCode(::ArrayW<int> value);
     // Get instance field reference: private System.TermInfoReader reader
-    ::System::TermInfoReader*& dyn_reader();
+    [[deprecated]] ::System::TermInfoReader*& dyn_reader();
     // Get instance field reference: private System.Int32 cursorLeft
-    int& dyn_cursorLeft();
+    [[deprecated]] int& dyn_cursorLeft();
     // Get instance field reference: private System.Int32 cursorTop
-    int& dyn_cursorTop();
+    [[deprecated]] int& dyn_cursorTop();
     // Get instance field reference: private System.String title
-    ::StringW& dyn_title();
+    [[deprecated]] ::StringW& dyn_title();
     // Get instance field reference: private System.String titleFormat
-    ::StringW& dyn_titleFormat();
+    [[deprecated]] ::StringW& dyn_titleFormat();
     // Get instance field reference: private System.Boolean cursorVisible
-    bool& dyn_cursorVisible();
+    [[deprecated]] bool& dyn_cursorVisible();
     // Get instance field reference: private System.String csrVisible
-    ::StringW& dyn_csrVisible();
+    [[deprecated]] ::StringW& dyn_csrVisible();
     // Get instance field reference: private System.String csrInvisible
-    ::StringW& dyn_csrInvisible();
+    [[deprecated]] ::StringW& dyn_csrInvisible();
     // Get instance field reference: private System.String clear
-    ::StringW& dyn_clear();
+    [[deprecated]] ::StringW& dyn_clear();
     // Get instance field reference: private System.String bell
-    ::StringW& dyn_bell();
+    [[deprecated]] ::StringW& dyn_bell();
     // Get instance field reference: private System.String term
-    ::StringW& dyn_term();
+    [[deprecated]] ::StringW& dyn_term();
     // Get instance field reference: private System.IO.StreamReader stdin
-    ::System::IO::StreamReader*& dyn_stdin();
+    [[deprecated]] ::System::IO::StreamReader*& dyn_stdin();
     // Get instance field reference: private System.IO.CStreamWriter stdout
-    ::System::IO::CStreamWriter*& dyn_stdout();
+    [[deprecated]] ::System::IO::CStreamWriter*& dyn_stdout();
     // Get instance field reference: private System.Int32 windowWidth
-    int& dyn_windowWidth();
+    [[deprecated]] int& dyn_windowWidth();
     // Get instance field reference: private System.Int32 windowHeight
-    int& dyn_windowHeight();
+    [[deprecated]] int& dyn_windowHeight();
     // Get instance field reference: private System.Int32 bufferHeight
-    int& dyn_bufferHeight();
+    [[deprecated]] int& dyn_bufferHeight();
     // Get instance field reference: private System.Int32 bufferWidth
-    int& dyn_bufferWidth();
+    [[deprecated]] int& dyn_bufferWidth();
     // Get instance field reference: private System.Char[] buffer
-    ::ArrayW<::Il2CppChar>& dyn_buffer();
+    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_buffer();
     // Get instance field reference: private System.Int32 readpos
-    int& dyn_readpos();
+    [[deprecated]] int& dyn_readpos();
     // Get instance field reference: private System.Int32 writepos
-    int& dyn_writepos();
+    [[deprecated]] int& dyn_writepos();
     // Get instance field reference: private System.String keypadXmit
-    ::StringW& dyn_keypadXmit();
+    [[deprecated]] ::StringW& dyn_keypadXmit();
     // Get instance field reference: private System.String keypadLocal
-    ::StringW& dyn_keypadLocal();
+    [[deprecated]] ::StringW& dyn_keypadLocal();
     // Get instance field reference: private System.Boolean inited
-    bool& dyn_inited();
+    [[deprecated]] bool& dyn_inited();
     // Get instance field reference: private System.Object initLock
-    ::Il2CppObject*& dyn_initLock();
+    [[deprecated]] ::Il2CppObject*& dyn_initLock();
     // Get instance field reference: private System.Boolean initKeys
-    bool& dyn_initKeys();
+    [[deprecated]] bool& dyn_initKeys();
     // Get instance field reference: private System.String origPair
-    ::StringW& dyn_origPair();
+    [[deprecated]] ::StringW& dyn_origPair();
     // Get instance field reference: private System.String origColors
-    ::StringW& dyn_origColors();
+    [[deprecated]] ::StringW& dyn_origColors();
     // Get instance field reference: private System.String cursorAddress
-    ::StringW& dyn_cursorAddress();
+    [[deprecated]] ::StringW& dyn_cursorAddress();
     // Get instance field reference: private System.ConsoleColor fgcolor
-    ::System::ConsoleColor& dyn_fgcolor();
+    [[deprecated]] ::System::ConsoleColor& dyn_fgcolor();
     // Get instance field reference: private System.String setfgcolor
-    ::StringW& dyn_setfgcolor();
+    [[deprecated]] ::StringW& dyn_setfgcolor();
     // Get instance field reference: private System.String setbgcolor
-    ::StringW& dyn_setbgcolor();
+    [[deprecated]] ::StringW& dyn_setbgcolor();
     // Get instance field reference: private System.Int32 maxColors
-    int& dyn_maxColors();
+    [[deprecated]] int& dyn_maxColors();
     // Get instance field reference: private System.Boolean noGetPosition
-    bool& dyn_noGetPosition();
+    [[deprecated]] bool& dyn_noGetPosition();
     // Get instance field reference: private System.Collections.Hashtable keymap
-    ::System::Collections::Hashtable*& dyn_keymap();
+    [[deprecated]] ::System::Collections::Hashtable*& dyn_keymap();
     // Get instance field reference: private System.ByteMatcher rootmap
-    ::System::ByteMatcher*& dyn_rootmap();
+    [[deprecated]] ::System::ByteMatcher*& dyn_rootmap();
     // Get instance field reference: private System.Int32 rl_startx
-    int& dyn_rl_startx();
+    [[deprecated]] int& dyn_rl_startx();
     // Get instance field reference: private System.Int32 rl_starty
-    int& dyn_rl_starty();
+    [[deprecated]] int& dyn_rl_starty();
     // Get instance field reference: private System.Byte[] control_characters
-    ::ArrayW<uint8_t>& dyn_control_characters();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_control_characters();
     // Get instance field reference: private System.Char[] echobuf
-    ::ArrayW<::Il2CppChar>& dyn_echobuf();
+    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_echobuf();
     // Get instance field reference: private System.Int32 echon
-    int& dyn_echon();
+    [[deprecated]] int& dyn_echon();
     // public System.Boolean get_Initialized()
-    // Offset: 0xF02720
+    // Offset: 0x1276B84
     bool get_Initialized();
     // public System.Int32 get_WindowHeight()
-    // Offset: 0xF03314
+    // Offset: 0x12776D0
     int get_WindowHeight();
     // public System.Int32 get_WindowWidth()
-    // Offset: 0xF032DC
+    // Offset: 0x1277698
     int get_WindowWidth();
     // public System.Void .ctor(System.String term)
-    // Offset: 0xF02050
+    // Offset: 0x12767CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TermInfoDriver* New_ctor(::StringW term) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::TermInfoDriver::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TermInfoDriver*, creationType>(term)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xF06868
+    // Offset: 0x127AB78
     static void _cctor();
     // static private System.String TryTermInfoDir(System.String dir, System.String term)
-    // Offset: 0xF01D58
+    // Offset: 0x12764D4
     static ::StringW TryTermInfoDir(::StringW dir, ::StringW term);
     // static private System.String SearchTerminfo(System.String term)
-    // Offset: 0xF01E90
+    // Offset: 0x127660C
     static ::StringW SearchTerminfo(::StringW term);
     // private System.Void WriteConsole(System.String str)
-    // Offset: 0xF0202C
+    // Offset: 0x12767A8
     void WriteConsole(::StringW str);
     // public System.Void Init()
-    // Offset: 0xF02728
+    // Offset: 0x1276B8C
     void Init();
     // private System.Void IncrementX()
-    // Offset: 0xF0326C
+    // Offset: 0x1277628
     void IncrementX();
     // public System.Void WriteSpecialKey(System.ConsoleKeyInfo key)
-    // Offset: 0xF0334C
+    // Offset: 0x1277708
     void WriteSpecialKey(::System::ConsoleKeyInfo key);
     // public System.Void WriteSpecialKey(System.Char c)
-    // Offset: 0xF03650
+    // Offset: 0x1277A0C
     void WriteSpecialKey(::Il2CppChar c);
     // public System.Boolean IsSpecialKey(System.ConsoleKeyInfo key)
-    // Offset: 0xF03808
+    // Offset: 0x1277BC4
     bool IsSpecialKey(::System::ConsoleKeyInfo key);
     // public System.Boolean IsSpecialKey(System.Char c)
-    // Offset: 0xF03890
+    // Offset: 0x1277C4C
     bool IsSpecialKey(::Il2CppChar c);
     // private System.Void GetCursorPosition()
-    // Offset: 0xF02FB4
+    // Offset: 0x1277370
     void GetCursorPosition();
     // private System.Void CheckWindowDimensions()
-    // Offset: 0xF039D0
+    // Offset: 0x1277D8C
     void CheckWindowDimensions();
     // private System.Void AddToBuffer(System.Int32 b)
-    // Offset: 0xF038C4
+    // Offset: 0x1277C80
     void AddToBuffer(int b);
     // private System.Void AdjustBuffer()
-    // Offset: 0xF03B2C
+    // Offset: 0x1277EF0
     void AdjustBuffer();
     // private System.ConsoleKeyInfo CreateKeyInfoFromInt(System.Int32 n, System.Boolean alt)
-    // Offset: 0xF03684
+    // Offset: 0x1277A40
     ::System::ConsoleKeyInfo CreateKeyInfoFromInt(int n, bool alt);
     // private System.Object GetKeyFromBuffer(System.Boolean cooked)
-    // Offset: 0xF03B40
+    // Offset: 0x1277F04
     ::Il2CppObject* GetKeyFromBuffer(bool cooked);
     // private System.ConsoleKeyInfo ReadKeyInternal(out System.Boolean fresh)
-    // Offset: 0xF03E34
+    // Offset: 0x12781F8
     ::System::ConsoleKeyInfo ReadKeyInternal(ByRef<bool> fresh);
     // private System.Boolean InputPending()
-    // Offset: 0xF04194
+    // Offset: 0x1278558
     bool InputPending();
     // private System.Void QueueEcho(System.Char c)
-    // Offset: 0xF041C4
+    // Offset: 0x1278588
     void QueueEcho(::Il2CppChar c);
     // private System.Void Echo(System.ConsoleKeyInfo key)
-    // Offset: 0xF042B8
+    // Offset: 0x127867C
     void Echo(::System::ConsoleKeyInfo key);
     // private System.Void EchoFlush()
-    // Offset: 0xF0431C
+    // Offset: 0x12786E0
     void EchoFlush();
     // public System.Int32 Read(in System.Char[] dest, System.Int32 index, System.Int32 count)
-    // Offset: 0xF0435C
+    // Offset: 0x1278720
     int Read(ByRef<::ArrayW<::Il2CppChar>> dest, int index, int count);
     // public System.ConsoleKeyInfo ReadKey(System.Boolean intercept)
-    // Offset: 0xF04688
+    // Offset: 0x1278A44
     ::System::ConsoleKeyInfo ReadKey(bool intercept);
     // public System.String ReadLine()
-    // Offset: 0xF046F0
+    // Offset: 0x1278AAC
     ::StringW ReadLine();
     // public System.String ReadToEnd()
-    // Offset: 0xF048DC
+    // Offset: 0x1278C7C
     ::StringW ReadToEnd();
     // private System.String ReadUntilConditionInternal(System.Boolean haltOnNewLine)
-    // Offset: 0xF046F8
+    // Offset: 0x1278AB4
     ::StringW ReadUntilConditionInternal(bool haltOnNewLine);
     // public System.Void SetCursorPosition(System.Int32 left, System.Int32 top)
-    // Offset: 0xF0347C
+    // Offset: 0x1277838
     void SetCursorPosition(int left, int top);
     // private System.Void CreateKeyMap()
-    // Offset: 0xF048E4
+    // Offset: 0x1278C84
     void CreateKeyMap();
     // private System.Void InitKeys()
-    // Offset: 0xF04010
+    // Offset: 0x12783D4
     void InitKeys();
     // private System.Void AddStringMapping(System.TermInfoStrings s)
-    // Offset: 0xF06780
+    // Offset: 0x127AB20
     void AddStringMapping(::System::TermInfoStrings s);
   }; // System.TermInfoDriver
   #pragma pack(pop)

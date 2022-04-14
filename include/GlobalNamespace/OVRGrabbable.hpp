@@ -46,15 +46,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRGrabbable : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Boolean m_allowOffhandGrab
     // Size: 0x1
     // Offset: 0x18
@@ -111,65 +103,65 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Boolean m_allowOffhandGrab
-    bool& dyn_m_allowOffhandGrab();
+    [[deprecated]] bool& dyn_m_allowOffhandGrab();
     // Get instance field reference: protected System.Boolean m_snapPosition
-    bool& dyn_m_snapPosition();
+    [[deprecated]] bool& dyn_m_snapPosition();
     // Get instance field reference: protected System.Boolean m_snapOrientation
-    bool& dyn_m_snapOrientation();
+    [[deprecated]] bool& dyn_m_snapOrientation();
     // Get instance field reference: protected UnityEngine.Transform m_snapOffset
-    ::UnityEngine::Transform*& dyn_m_snapOffset();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_m_snapOffset();
     // Get instance field reference: protected UnityEngine.Collider[] m_grabPoints
-    ::ArrayW<::UnityEngine::Collider*>& dyn_m_grabPoints();
+    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn_m_grabPoints();
     // Get instance field reference: protected System.Boolean m_grabbedKinematic
-    bool& dyn_m_grabbedKinematic();
+    [[deprecated]] bool& dyn_m_grabbedKinematic();
     // Get instance field reference: protected UnityEngine.Collider m_grabbedCollider
-    ::UnityEngine::Collider*& dyn_m_grabbedCollider();
+    [[deprecated]] ::UnityEngine::Collider*& dyn_m_grabbedCollider();
     // Get instance field reference: protected OVRGrabber m_grabbedBy
-    ::GlobalNamespace::OVRGrabber*& dyn_m_grabbedBy();
+    [[deprecated]] ::GlobalNamespace::OVRGrabber*& dyn_m_grabbedBy();
     // public System.Boolean get_allowOffhandGrab()
-    // Offset: 0xD2F53C
+    // Offset: 0xFBCE90
     bool get_allowOffhandGrab();
     // public System.Boolean get_isGrabbed()
-    // Offset: 0xD2F544
+    // Offset: 0xFBCE98
     bool get_isGrabbed();
     // public System.Boolean get_snapPosition()
-    // Offset: 0xD2F5B0
+    // Offset: 0xFBCF04
     bool get_snapPosition();
     // public System.Boolean get_snapOrientation()
-    // Offset: 0xD2F5B8
+    // Offset: 0xFBCF0C
     bool get_snapOrientation();
     // public UnityEngine.Transform get_snapOffset()
-    // Offset: 0xD2F5C0
+    // Offset: 0xFBCF14
     ::UnityEngine::Transform* get_snapOffset();
     // public OVRGrabber get_grabbedBy()
-    // Offset: 0xD2F5C8
+    // Offset: 0xFBCF1C
     ::GlobalNamespace::OVRGrabber* get_grabbedBy();
     // public UnityEngine.Transform get_grabbedTransform()
-    // Offset: 0xD2F5D0
+    // Offset: 0xFBCF24
     ::UnityEngine::Transform* get_grabbedTransform();
     // public UnityEngine.Rigidbody get_grabbedRigidbody()
-    // Offset: 0xD2F5EC
+    // Offset: 0xFBCF40
     ::UnityEngine::Rigidbody* get_grabbedRigidbody();
     // public UnityEngine.Collider[] get_grabPoints()
-    // Offset: 0xD2F608
+    // Offset: 0xFBCF5C
     ::ArrayW<::UnityEngine::Collider*> get_grabPoints();
     // public System.Void GrabBegin(OVRGrabber hand, UnityEngine.Collider grabPoint)
-    // Offset: 0xD2F610
+    // Offset: 0xFBCF64
     void GrabBegin(::GlobalNamespace::OVRGrabber* hand, ::UnityEngine::Collider* grabPoint);
     // public System.Void GrabEnd(UnityEngine.Vector3 linearVelocity, UnityEngine.Vector3 angularVelocity)
-    // Offset: 0xD2F690
+    // Offset: 0xFBCFE4
     void GrabEnd(::UnityEngine::Vector3 linearVelocity, ::UnityEngine::Vector3 angularVelocity);
     // private System.Void Awake()
-    // Offset: 0xD2F768
+    // Offset: 0xFBD0BC
     void Awake();
     // protected System.Void Start()
-    // Offset: 0xD2F8CC
+    // Offset: 0xFBD220
     void Start();
     // private System.Void OnDestroy()
-    // Offset: 0xD2F934
+    // Offset: 0xFBD288
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0xD2FA88
+    // Offset: 0xFBD3DC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

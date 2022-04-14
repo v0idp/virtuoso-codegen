@@ -40,15 +40,7 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
   // [TokenAttribute] Offset: FFFFFFFF
   class TimerDisplay : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Oculus.Voice.Demo.BuiltInDemo.TimerController timer
     // Size: 0x8
     // Offset: 0x18
@@ -65,17 +57,17 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public Oculus.Voice.Demo.BuiltInDemo.TimerController timer
-    ::Oculus::Voice::Demo::BuiltInDemo::TimerController*& dyn_timer();
+    [[deprecated]] ::Oculus::Voice::Demo::BuiltInDemo::TimerController*& dyn_timer();
     // Get instance field reference: private UnityEngine.UI.Text _uiText
-    ::UnityEngine::UI::Text*& dyn__uiText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn__uiText();
     // private System.Void Start()
-    // Offset: 0x14000A4
+    // Offset: 0xA27FDC
     void Start();
     // private System.Void Update()
-    // Offset: 0x14000F8
+    // Offset: 0xA28030
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x1400140
+    // Offset: 0xA28078
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

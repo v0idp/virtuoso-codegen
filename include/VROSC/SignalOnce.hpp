@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SignalOnce : public ::VROSC::SignalFilter {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _triggerTimes
     // Size: 0x4
     // Offset: 0x40
@@ -52,9 +44,9 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 _triggerTimes
-    int& dyn__triggerTimes();
+    [[deprecated]] int& dyn__triggerTimes();
     // public System.Void .ctor()
-    // Offset: 0x13B5778
+    // Offset: 0x1928644
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -70,12 +62,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SignalOnce*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13B5748
+    // Offset: 0x1928614
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void FilterSignal(VROSC.Signal signal)
-    // Offset: 0x13B5764
+    // Offset: 0x1928630
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::FilterSignal(VROSC.Signal signal)
     void FilterSignal(::VROSC::Signal* signal);

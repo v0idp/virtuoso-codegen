@@ -31,15 +31,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Promise::$$c__DisplayClass36_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public RSG.Promise <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -54,14 +46,14 @@ namespace RSG {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public RSG.Promise <>4__this
-    ::RSG::Promise*& dyn_$$4__this();
+    [[deprecated]] ::RSG::Promise*& dyn_$$4__this();
     // Get instance field reference: public System.Single progress
-    float& dyn_progress();
+    [[deprecated]] float& dyn_progress();
     // System.Void <InvokeProgressHandlers>b__0(RSG.ProgressHandler handler)
-    // Offset: 0x13433AC
+    // Offset: 0x8CE304
     void $InvokeProgressHandlers$b__0(::RSG::ProgressHandler handler);
     // public System.Void .ctor()
-    // Offset: 0x13433A4
+    // Offset: 0x8CE2FC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

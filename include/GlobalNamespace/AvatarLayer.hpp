@@ -26,15 +26,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class AvatarLayer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 layerIndex
     // Size: 0x4
     // Offset: 0x10
@@ -47,9 +39,9 @@ namespace GlobalNamespace {
       return layerIndex;
     }
     // Get instance field reference: public System.Int32 layerIndex
-    int& dyn_layerIndex();
+    [[deprecated]] int& dyn_layerIndex();
     // public System.Void .ctor()
-    // Offset: 0x1374978
+    // Offset: 0x9738DC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

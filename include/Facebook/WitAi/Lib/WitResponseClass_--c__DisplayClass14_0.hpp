@@ -38,15 +38,7 @@ namespace Facebook::WitAi::Lib {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class WitResponseClass::$$c__DisplayClass14_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Facebook.WitAi.Lib.WitResponseNode aNode
     // Size: 0x8
     // Offset: 0x10
@@ -59,12 +51,12 @@ namespace Facebook::WitAi::Lib {
       return aNode;
     }
     // Get instance field reference: public Facebook.WitAi.Lib.WitResponseNode aNode
-    ::Facebook::WitAi::Lib::WitResponseNode*& dyn_aNode();
+    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_aNode();
     // System.Boolean <Remove>b__0(System.Collections.Generic.KeyValuePair`2<System.String,Facebook.WitAi.Lib.WitResponseNode> k)
-    // Offset: 0x11079A4
+    // Offset: 0x167E210
     bool $Remove$b__0(::System::Collections::Generic::KeyValuePair_2<::StringW, ::Facebook::WitAi::Lib::WitResponseNode*> k);
     // public System.Void .ctor()
-    // Offset: 0x11019B4
+    // Offset: 0x1678220
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

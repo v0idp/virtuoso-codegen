@@ -32,15 +32,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SaveLoadManager::$$c__DisplayClass26_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean isCloud
     // Size: 0x1
     // Offset: 0x10
@@ -75,23 +67,23 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Boolean isCloud
-    bool& dyn_isCloud();
+    [[deprecated]] bool& dyn_isCloud();
     // Get instance field reference: public System.Boolean isCommunity
-    bool& dyn_isCommunity();
+    [[deprecated]] bool& dyn_isCommunity();
     // Get instance field reference: public VROSC.SaveLoadManager <>4__this
-    ::VROSC::SaveLoadManager*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Boolean hasPreview
-    bool& dyn_hasPreview();
+    [[deprecated]] bool& dyn_hasPreview();
     // System.Void <SaveSession>b__0()
-    // Offset: 0x1345A34
+    // Offset: 0x8D0984
     void $SaveSession$b__0();
     // System.Void <SaveSession>b__1(VROSC.Error error)
-    // Offset: 0x1345D6C
+    // Offset: 0x8D0CBC
     void $SaveSession$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1345A2C
+    // Offset: 0x8D097C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

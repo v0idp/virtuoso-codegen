@@ -44,13 +44,13 @@ namespace Mono::Globalization::Unicode {
     // Set static field: static public readonly Mono.Globalization.Unicode.ContractionComparer Instance
     static void _set_Instance(::Mono::Globalization::Unicode::ContractionComparer* value);
     // static private System.Void .cctor()
-    // Offset: 0xBE0C8C
+    // Offset: 0xE455C4
     static void _cctor();
     // public System.Int32 Compare(Mono.Globalization.Unicode.Contraction c1, Mono.Globalization.Unicode.Contraction c2)
-    // Offset: 0xBE0BE8
+    // Offset: 0xE45520
     int Compare(::Mono::Globalization::Unicode::Contraction* c1, ::Mono::Globalization::Unicode::Contraction* c2);
     // public System.Void .ctor()
-    // Offset: 0xBE0C84
+    // Offset: 0xE455BC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

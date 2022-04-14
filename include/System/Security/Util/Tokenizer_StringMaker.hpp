@@ -32,15 +32,7 @@ namespace System::Security::Util {
   // [TokenAttribute] Offset: FFFFFFFF
   class Tokenizer::StringMaker : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String[] aStrings
     // Size: 0x8
     // Offset: 0x10
@@ -79,31 +71,31 @@ namespace System::Security::Util {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String[] aStrings
-    ::ArrayW<::StringW>& dyn_aStrings();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_aStrings();
     // Get instance field reference: private System.UInt32 cStringsMax
-    uint& dyn_cStringsMax();
+    [[deprecated]] uint& dyn_cStringsMax();
     // Get instance field reference: private System.UInt32 cStringsUsed
-    uint& dyn_cStringsUsed();
+    [[deprecated]] uint& dyn_cStringsUsed();
     // Get instance field reference: public System.Text.StringBuilder _outStringBuilder
-    ::System::Text::StringBuilder*& dyn__outStringBuilder();
+    [[deprecated]] ::System::Text::StringBuilder*& dyn__outStringBuilder();
     // Get instance field reference: public System.Char[] _outChars
-    ::ArrayW<::Il2CppChar>& dyn__outChars();
+    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__outChars();
     // Get instance field reference: public System.Int32 _outIndex
-    int& dyn__outIndex();
+    [[deprecated]] int& dyn__outIndex();
     // static private System.UInt32 HashString(System.String str)
-    // Offset: 0x108DA30
+    // Offset: 0x189A018
     static uint HashString(::StringW str);
     // static private System.UInt32 HashCharArray(System.Char[] a, System.Int32 l)
-    // Offset: 0x108DAA0
+    // Offset: 0x189A088
     static uint HashCharArray(::ArrayW<::Il2CppChar> a, int l);
     // private System.Boolean CompareStringAndChars(System.String str, System.Char[] a, System.Int32 l)
-    // Offset: 0x108DB98
+    // Offset: 0x189A180
     bool CompareStringAndChars(::StringW str, ::ArrayW<::Il2CppChar> a, int l);
     // public System.String MakeString()
-    // Offset: 0x108DC40
+    // Offset: 0x189A228
     ::StringW MakeString();
     // public System.Void .ctor()
-    // Offset: 0x108DB08
+    // Offset: 0x189A0F0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

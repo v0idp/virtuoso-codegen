@@ -43,15 +43,7 @@ namespace VROSC::Credits {
   // [TokenAttribute] Offset: FFFFFFFF
   class CreditsLine : public ::VROSC::Credits::CreditsObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _name
     // Size: 0x8
     // Offset: 0x20
@@ -96,36 +88,36 @@ namespace VROSC::Credits {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _name
-    ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private TMPro.TextMeshPro _title
-    ::TMPro::TextMeshPro*& dyn__title();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__title();
     // Get instance field reference: private TMPro.TextMeshPro _singleLine
-    ::TMPro::TextMeshPro*& dyn__singleLine();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__singleLine();
     // Get instance field reference: private UnityEngine.Color _nameColor
-    ::UnityEngine::Color& dyn__nameColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__nameColor();
     // Get instance field reference: private UnityEngine.Color _titleColor
-    ::UnityEngine::Color& dyn__titleColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__titleColor();
     // Get instance field reference: private UnityEngine.Color _singleLineColor
-    ::UnityEngine::Color& dyn__singleLineColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__singleLineColor();
     // Get instance field reference: private System.Boolean _isSingleLine
-    bool& dyn__isSingleLine();
+    [[deprecated]] bool& dyn__isSingleLine();
     // private System.Void Awake()
-    // Offset: 0x133B9CC
+    // Offset: 0x8DF5AC
     void Awake();
     // public System.Void Setup(System.String text)
-    // Offset: 0x133BA4C
+    // Offset: 0x8DF62C
     void Setup(::StringW text);
     // public System.Void Setup(VROSC.Credits.CreditsNameData data)
-    // Offset: 0x133BAEC
+    // Offset: 0x8DF6CC
     void Setup(::VROSC::Credits::CreditsNameData* data);
     // private System.Void SetupSingleLine(System.String text)
-    // Offset: 0x133BA50
+    // Offset: 0x8DF630
     void SetupSingleLine(::StringW text);
     // private System.Void SetupNameTitle(System.String name, System.String title)
-    // Offset: 0x133BB40
+    // Offset: 0x8DF720
     void SetupNameTitle(::StringW name, ::StringW title);
     // public System.Void .ctor()
-    // Offset: 0x133BCC0
+    // Offset: 0x8DF898
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -139,7 +131,7 @@ namespace VROSC::Credits {
       return THROW_UNLESS((::il2cpp_utils::New<CreditsLine*, creationType>()));
     }
     // protected override System.Void UpdateVisibility(System.Single visible)
-    // Offset: 0x133BBF8
+    // Offset: 0x8DF7D8
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::UpdateVisibility(System.Single visible)
     void UpdateVisibility(float visible);

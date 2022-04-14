@@ -115,41 +115,41 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector4 baseColor
-    ::UnityEngine::Vector4& dyn_baseColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_baseColor();
     // Get instance field reference: public System.UInt64 albedoTextureID
-    uint64_t& dyn_albedoTextureID();
+    [[deprecated]] uint64_t& dyn_albedoTextureID();
     // Get instance field reference: public UnityEngine.Vector4 albedoMultiplier
-    ::UnityEngine::Vector4& dyn_albedoMultiplier();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_albedoMultiplier();
     // Get instance field reference: public System.UInt64 metallicnessTextureID
-    uint64_t& dyn_metallicnessTextureID();
+    [[deprecated]] uint64_t& dyn_metallicnessTextureID();
     // Get instance field reference: public System.Single glossinessScale
-    float& dyn_glossinessScale();
+    [[deprecated]] float& dyn_glossinessScale();
     // Get instance field reference: public System.UInt64 normalTextureID
-    uint64_t& dyn_normalTextureID();
+    [[deprecated]] uint64_t& dyn_normalTextureID();
     // Get instance field reference: public System.UInt64 heightTextureID
-    uint64_t& dyn_heightTextureID();
+    [[deprecated]] uint64_t& dyn_heightTextureID();
     // Get instance field reference: public System.UInt64 occlusionTextureID
-    uint64_t& dyn_occlusionTextureID();
+    [[deprecated]] uint64_t& dyn_occlusionTextureID();
     // Get instance field reference: public System.UInt64 emissionTextureID
-    uint64_t& dyn_emissionTextureID();
+    [[deprecated]] uint64_t& dyn_emissionTextureID();
     // Get instance field reference: public UnityEngine.Vector4 emissionMultiplier
-    ::UnityEngine::Vector4& dyn_emissionMultiplier();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_emissionMultiplier();
     // Get instance field reference: public System.UInt64 detailMaskTextureID
-    uint64_t& dyn_detailMaskTextureID();
+    [[deprecated]] uint64_t& dyn_detailMaskTextureID();
     // Get instance field reference: public System.UInt64 detailAlbedoTextureID
-    uint64_t& dyn_detailAlbedoTextureID();
+    [[deprecated]] uint64_t& dyn_detailAlbedoTextureID();
     // Get instance field reference: public System.UInt64 detailNormalTextureID
-    uint64_t& dyn_detailNormalTextureID();
+    [[deprecated]] uint64_t& dyn_detailNormalTextureID();
     // static private System.Boolean VectorEquals(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
-    // Offset: 0x1359228
+    // Offset: 0x955B24
     static bool VectorEquals(::UnityEngine::Vector4 a, ::UnityEngine::Vector4 b);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0x1359258
+    // Offset: 0x955B54
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0x1359448
+    // Offset: 0x955D44
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

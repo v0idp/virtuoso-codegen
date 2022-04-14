@@ -115,20 +115,12 @@ namespace System::Net {
       // Set static field: static public System.Net.WebConnectionTunnel/System.Net.NtlmAuthState Response
       static void _set_Response(::System::Net::WebConnectionTunnel::NtlmAuthState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // System.Net.WebConnectionTunnel/System.Net.NtlmAuthState
     #pragma pack(pop)
     static check_size<sizeof(WebConnectionTunnel::NtlmAuthState), 0 + sizeof(int)> __System_Net_WebConnectionTunnel_NtlmAuthStateSizeCheck;
     static_assert(sizeof(WebConnectionTunnel::NtlmAuthState) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Net.HttpWebRequest <Request>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -207,95 +199,95 @@ namespace System::Net {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: private readonly System.Net.HttpWebRequest <Request>k__BackingField
-    ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
     // Get instance field reference: private readonly System.Uri <ConnectUri>k__BackingField
-    ::System::Uri*& dyn_$ConnectUri$k__BackingField();
+    [[deprecated]] ::System::Uri*& dyn_$ConnectUri$k__BackingField();
     // Get instance field reference: private System.Net.HttpWebRequest connectRequest
-    ::System::Net::HttpWebRequest*& dyn_connectRequest();
+    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_connectRequest();
     // Get instance field reference: private System.Net.WebConnectionTunnel/System.Net.NtlmAuthState ntlmAuthState
-    ::System::Net::WebConnectionTunnel::NtlmAuthState& dyn_ntlmAuthState();
+    [[deprecated]] ::System::Net::WebConnectionTunnel::NtlmAuthState& dyn_ntlmAuthState();
     // Get instance field reference: private System.Boolean <Success>k__BackingField
-    bool& dyn_$Success$k__BackingField();
+    [[deprecated]] bool& dyn_$Success$k__BackingField();
     // Get instance field reference: private System.Boolean <CloseConnection>k__BackingField
-    bool& dyn_$CloseConnection$k__BackingField();
+    [[deprecated]] bool& dyn_$CloseConnection$k__BackingField();
     // Get instance field reference: private System.Int32 <StatusCode>k__BackingField
-    int& dyn_$StatusCode$k__BackingField();
+    [[deprecated]] int& dyn_$StatusCode$k__BackingField();
     // Get instance field reference: private System.String <StatusDescription>k__BackingField
-    ::StringW& dyn_$StatusDescription$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$StatusDescription$k__BackingField();
     // Get instance field reference: private System.String[] <Challenge>k__BackingField
-    ::ArrayW<::StringW>& dyn_$Challenge$k__BackingField();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_$Challenge$k__BackingField();
     // Get instance field reference: private System.Net.WebHeaderCollection <Headers>k__BackingField
-    ::System::Net::WebHeaderCollection*& dyn_$Headers$k__BackingField();
+    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_$Headers$k__BackingField();
     // Get instance field reference: private System.Version <ProxyVersion>k__BackingField
-    ::System::Version*& dyn_$ProxyVersion$k__BackingField();
+    [[deprecated]] ::System::Version*& dyn_$ProxyVersion$k__BackingField();
     // Get instance field reference: private System.Byte[] <Data>k__BackingField
-    ::ArrayW<uint8_t>& dyn_$Data$k__BackingField();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_$Data$k__BackingField();
     // public System.Net.HttpWebRequest get_Request()
-    // Offset: 0xAB8724
+    // Offset: 0xC43C0C
     ::System::Net::HttpWebRequest* get_Request();
     // public System.Uri get_ConnectUri()
-    // Offset: 0xAB872C
+    // Offset: 0xC43C14
     ::System::Uri* get_ConnectUri();
     // public System.Boolean get_Success()
-    // Offset: 0xAB876C
+    // Offset: 0xC43C54
     bool get_Success();
     // private System.Void set_Success(System.Boolean value)
-    // Offset: 0xAB8774
+    // Offset: 0xC43C5C
     void set_Success(bool value);
     // public System.Boolean get_CloseConnection()
-    // Offset: 0xAB8780
+    // Offset: 0xC43C68
     bool get_CloseConnection();
     // private System.Void set_CloseConnection(System.Boolean value)
-    // Offset: 0xAB8788
+    // Offset: 0xC43C70
     void set_CloseConnection(bool value);
     // public System.Int32 get_StatusCode()
-    // Offset: 0xAB8794
+    // Offset: 0xC43C7C
     int get_StatusCode();
     // private System.Void set_StatusCode(System.Int32 value)
-    // Offset: 0xAB879C
+    // Offset: 0xC43C84
     void set_StatusCode(int value);
     // private System.Void set_StatusDescription(System.String value)
-    // Offset: 0xAB87A4
+    // Offset: 0xC43C8C
     void set_StatusDescription(::StringW value);
     // public System.String[] get_Challenge()
-    // Offset: 0xAB87AC
+    // Offset: 0xC43C94
     ::ArrayW<::StringW> get_Challenge();
     // private System.Void set_Challenge(System.String[] value)
-    // Offset: 0xAB87B4
+    // Offset: 0xC43C9C
     void set_Challenge(::ArrayW<::StringW> value);
     // public System.Net.WebHeaderCollection get_Headers()
-    // Offset: 0xAB87BC
+    // Offset: 0xC43CA4
     ::System::Net::WebHeaderCollection* get_Headers();
     // private System.Void set_Headers(System.Net.WebHeaderCollection value)
-    // Offset: 0xAB87C4
+    // Offset: 0xC43CAC
     void set_Headers(::System::Net::WebHeaderCollection* value);
     // public System.Version get_ProxyVersion()
-    // Offset: 0xAB87CC
+    // Offset: 0xC43CB4
     ::System::Version* get_ProxyVersion();
     // private System.Void set_ProxyVersion(System.Version value)
-    // Offset: 0xAB87D4
+    // Offset: 0xC43CBC
     void set_ProxyVersion(::System::Version* value);
     // public System.Byte[] get_Data()
-    // Offset: 0xAB87DC
+    // Offset: 0xC43CC4
     ::ArrayW<uint8_t> get_Data();
     // private System.Void set_Data(System.Byte[] value)
-    // Offset: 0xAB87E4
+    // Offset: 0xC43CCC
     void set_Data(::ArrayW<uint8_t> value);
     // public System.Void .ctor(System.Net.HttpWebRequest request, System.Uri connectUri)
-    // Offset: 0xAB8734
+    // Offset: 0xC43C1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebConnectionTunnel* New_ctor(::System::Net::HttpWebRequest* request, ::System::Uri* connectUri) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebConnectionTunnel::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WebConnectionTunnel*, creationType>(request, connectUri)));
     }
     // System.Threading.Tasks.Task Initialize(System.IO.Stream stream, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAB87EC
+    // Offset: 0xC43CD4
     ::System::Threading::Tasks::Task* Initialize(::System::IO::Stream* stream, ::System::Threading::CancellationToken cancellationToken);
     // private System.Threading.Tasks.Task`1<System.ValueTuple`3<System.Net.WebHeaderCollection,System.Byte[],System.Int32>> ReadHeaders(System.IO.Stream stream, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAB8910
+    // Offset: 0xC43DF8
     ::System::Threading::Tasks::Task_1<::System::ValueTuple_3<::System::Net::WebHeaderCollection*, ::ArrayW<uint8_t>, int>>* ReadHeaders(::System::IO::Stream* stream, ::System::Threading::CancellationToken cancellationToken);
     // private System.Void FlushContents(System.IO.Stream stream, System.Int32 contentLength)
-    // Offset: 0xAB8A50
+    // Offset: 0xC43F38
     void FlushContents(::System::IO::Stream* stream, int contentLength);
   }; // System.Net.WebConnectionTunnel
   #pragma pack(pop)

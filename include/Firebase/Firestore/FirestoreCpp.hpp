@@ -11,14 +11,16 @@
 // Begin forward declares
 // Forward declaring namespace: Firebase::Firestore
 namespace Firebase::Firestore {
-  // Forward declaring type: FirestoreProxy
-  class FirestoreProxy;
+  // Forward declaring type: QueryProxy
+  class QueryProxy;
+  // Forward declaring type: QuerySnapshotProxy
+  class QuerySnapshotProxy;
+  // Forward declaring type: WriteBatchProxy
+  class WriteBatchProxy;
   // Forward declaring type: FieldToValueMap
   class FieldToValueMap;
   // Forward declaring type: FieldValueProxy
   class FieldValueProxy;
-  // Forward declaring type: WriteBatchProxy
-  class WriteBatchProxy;
   // Forward declaring type: DocumentReferenceProxy
   class DocumentReferenceProxy;
   // Forward declaring type: SetOptionsProxy
@@ -27,13 +29,6 @@ namespace Firebase::Firestore {
   class FieldValueVector;
   // Forward declaring type: DocumentSnapshotVector
   class DocumentSnapshotVector;
-  // Forward declaring type: QuerySnapshotProxy
-  class QuerySnapshotProxy;
-}
-// Forward declaring namespace: Firebase
-namespace Firebase {
-  // Forward declaring type: FirebaseApp
-  class FirebaseApp;
 }
 // Forward declaring namespace: System::Threading::Tasks
 namespace System::Threading::Tasks {
@@ -57,62 +52,113 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirestoreCpp : public ::Il2CppObject {
     public:
-    // static public Firebase.Firestore.FirestoreProxy GetFirestoreInstance(Firebase.FirebaseApp app)
-    // Offset: 0xC37FB0
-    static ::Firebase::Firestore::FirestoreProxy* GetFirestoreInstance(::Firebase::FirebaseApp* app);
-    // static public System.Void ReleaseFirestoreInstance(Firebase.Firestore.FirestoreProxy firestore)
-    // Offset: 0xC38A60
-    static void ReleaseFirestoreInstance(::Firebase::Firestore::FirestoreProxy* firestore);
+    // static public System.Boolean QueryEquals(Firebase.Firestore.QueryProxy lhs, Firebase.Firestore.QueryProxy rhs)
+    // Offset: 0xD5BA8C
+    static bool QueryEquals(::Firebase::Firestore::QueryProxy* lhs, ::Firebase::Firestore::QueryProxy* rhs);
+    // static public System.Boolean QuerySnapshotEquals(Firebase.Firestore.QuerySnapshotProxy lhs, Firebase.Firestore.QuerySnapshotProxy rhs)
+    // Offset: 0xD5BC5C
+    static bool QuerySnapshotEquals(::Firebase::Firestore::QuerySnapshotProxy* lhs, ::Firebase::Firestore::QuerySnapshotProxy* rhs);
+    // static public System.Boolean DocumentSnapshotEquals(Firebase.Firestore.DocumentSnapshotProxy lhs, Firebase.Firestore.DocumentSnapshotProxy rhs)
+    // Offset: 0xD53AB0
+    static bool DocumentSnapshotEquals(::Firebase::Firestore::DocumentSnapshotProxy* lhs, ::Firebase::Firestore::DocumentSnapshotProxy* rhs);
+    // static public System.Int32 QueryHashCode(Firebase.Firestore.QueryProxy query)
+    // Offset: 0xD5BEC4
+    static int QueryHashCode(::Firebase::Firestore::QueryProxy* query);
+    // static public System.Int32 QuerySnapshotHashCode(Firebase.Firestore.QuerySnapshotProxy snapshot)
+    // Offset: 0xD5BFEC
+    static int QuerySnapshotHashCode(::Firebase::Firestore::QuerySnapshotProxy* snapshot);
+    // static public System.Int32 DocumentSnapshotHashCode(Firebase.Firestore.DocumentSnapshotProxy snapshot)
+    // Offset: 0xD53B84
+    static int DocumentSnapshotHashCode(::Firebase::Firestore::DocumentSnapshotProxy* snapshot);
     // static public Firebase.Firestore.FieldToValueMap ConvertFieldValueToMap(Firebase.Firestore.FieldValueProxy fieldValue)
-    // Offset: 0xC28198
+    // Offset: 0xD49EF8
     static ::Firebase::Firestore::FieldToValueMap* ConvertFieldValueToMap(::Firebase::Firestore::FieldValueProxy* fieldValue);
     // static public Firebase.Firestore.FieldValueProxy ConvertMapToFieldValue(Firebase.Firestore.FieldToValueMap wrapper)
-    // Offset: 0xC2BC20
+    // Offset: 0xD4DA60
     static ::Firebase::Firestore::FieldValueProxy* ConvertMapToFieldValue(::Firebase::Firestore::FieldToValueMap* wrapper);
     // static public Firebase.Firestore.FieldValueProxy ConvertSnapshotToFieldValue(Firebase.Firestore.DocumentSnapshotProxy snapshot, Firebase.Firestore.DocumentSnapshotProxy/Firebase.Firestore.ServerTimestampBehavior stb)
-    // Offset: 0xC38CF4
+    // Offset: 0xD5C294
     static ::Firebase::Firestore::FieldValueProxy* ConvertSnapshotToFieldValue(::Firebase::Firestore::DocumentSnapshotProxy* snapshot, ::Firebase::Firestore::DocumentSnapshotProxy::ServerTimestampBehavior stb);
     // static public System.Void WriteBatchUpdate(Firebase.Firestore.WriteBatchProxy batch, Firebase.Firestore.DocumentReferenceProxy doc, Firebase.Firestore.FieldValueProxy fieldValue)
-    // Offset: 0xC38E74
+    // Offset: 0xD5C40C
     static void WriteBatchUpdate(::Firebase::Firestore::WriteBatchProxy* batch, ::Firebase::Firestore::DocumentReferenceProxy* doc, ::Firebase::Firestore::FieldValueProxy* fieldValue);
     // static public System.Threading.Tasks.Task DocumentReferenceSetAsync(Firebase.Firestore.DocumentReferenceProxy doc, Firebase.Firestore.FieldValueProxy fieldValue, Firebase.Firestore.SetOptionsProxy options)
-    // Offset: 0xC303A8
+    // Offset: 0xD52314
     static ::System::Threading::Tasks::Task* DocumentReferenceSetAsync(::Firebase::Firestore::DocumentReferenceProxy* doc, ::Firebase::Firestore::FieldValueProxy* fieldValue, ::Firebase::Firestore::SetOptionsProxy* options);
     // static public System.Threading.Tasks.Task DocumentReferenceUpdateAsync(Firebase.Firestore.DocumentReferenceProxy doc, Firebase.Firestore.FieldValueProxy fieldValue)
-    // Offset: 0xC30210
+    // Offset: 0xD520E0
     static ::System::Threading::Tasks::Task* DocumentReferenceUpdateAsync(::Firebase::Firestore::DocumentReferenceProxy* doc, ::Firebase::Firestore::FieldValueProxy* fieldValue);
     // static public System.Void WriteBatchSet(Firebase.Firestore.WriteBatchProxy writeBatch, Firebase.Firestore.DocumentReferenceProxy document, Firebase.Firestore.FieldValueProxy data, Firebase.Firestore.SetOptionsProxy options)
-    // Offset: 0xC391FC
+    // Offset: 0xD5C78C
     static void WriteBatchSet(::Firebase::Firestore::WriteBatchProxy* writeBatch, ::Firebase::Firestore::DocumentReferenceProxy* document, ::Firebase::Firestore::FieldValueProxy* data, ::Firebase::Firestore::SetOptionsProxy* options);
     // static public Firebase.Firestore.FieldValueVector ConvertFieldValueToVector(Firebase.Firestore.FieldValueProxy value)
-    // Offset: 0xC25AE4
+    // Offset: 0xD4784C
     static ::Firebase::Firestore::FieldValueVector* ConvertFieldValueToVector(::Firebase::Firestore::FieldValueProxy* value);
     // static public Firebase.Firestore.FieldValueProxy ConvertVectorToFieldValue(Firebase.Firestore.FieldValueVector wrapper)
-    // Offset: 0xC2BFE0
+    // Offset: 0xD4DE08
     static ::Firebase::Firestore::FieldValueProxy* ConvertVectorToFieldValue(::Firebase::Firestore::FieldValueVector* wrapper);
     // static public Firebase.Firestore.DocumentSnapshotVector QuerySnapshotDocuments(Firebase.Firestore.QuerySnapshotProxy snapshot)
-    // Offset: 0xC394C0
+    // Offset: 0xD5CA48
     static ::Firebase::Firestore::DocumentSnapshotVector* QuerySnapshotDocuments(::Firebase::Firestore::QuerySnapshotProxy* snapshot);
   }; // Firebase.Firestore.FirestoreCpp
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::GetFirestoreInstance
-// Il2CppName: GetFirestoreInstance
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::QueryEquals
+// Il2CppName: QueryEquals
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase::Firestore::FirestoreProxy* (*)(::Firebase::FirebaseApp*)>(&Firebase::Firestore::FirestoreCpp::GetFirestoreInstance)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::Firebase::Firestore::QueryProxy*, ::Firebase::Firestore::QueryProxy*)>(&Firebase::Firestore::FirestoreCpp::QueryEquals)> {
   static const MethodInfo* get() {
-    static auto* app = &::il2cpp_utils::GetClassFromName("Firebase", "FirebaseApp")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCpp*), "GetFirestoreInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{app});
+    static auto* lhs = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "QueryProxy")->byval_arg;
+    static auto* rhs = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "QueryProxy")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCpp*), "QueryEquals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{lhs, rhs});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::ReleaseFirestoreInstance
-// Il2CppName: ReleaseFirestoreInstance
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::QuerySnapshotEquals
+// Il2CppName: QuerySnapshotEquals
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::Firebase::Firestore::FirestoreProxy*)>(&Firebase::Firestore::FirestoreCpp::ReleaseFirestoreInstance)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::Firebase::Firestore::QuerySnapshotProxy*, ::Firebase::Firestore::QuerySnapshotProxy*)>(&Firebase::Firestore::FirestoreCpp::QuerySnapshotEquals)> {
   static const MethodInfo* get() {
-    static auto* firestore = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "FirestoreProxy")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCpp*), "ReleaseFirestoreInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{firestore});
+    static auto* lhs = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "QuerySnapshotProxy")->byval_arg;
+    static auto* rhs = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "QuerySnapshotProxy")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCpp*), "QuerySnapshotEquals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{lhs, rhs});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::DocumentSnapshotEquals
+// Il2CppName: DocumentSnapshotEquals
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::Firebase::Firestore::DocumentSnapshotProxy*, ::Firebase::Firestore::DocumentSnapshotProxy*)>(&Firebase::Firestore::FirestoreCpp::DocumentSnapshotEquals)> {
+  static const MethodInfo* get() {
+    static auto* lhs = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "DocumentSnapshotProxy")->byval_arg;
+    static auto* rhs = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "DocumentSnapshotProxy")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCpp*), "DocumentSnapshotEquals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{lhs, rhs});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::QueryHashCode
+// Il2CppName: QueryHashCode
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::Firebase::Firestore::QueryProxy*)>(&Firebase::Firestore::FirestoreCpp::QueryHashCode)> {
+  static const MethodInfo* get() {
+    static auto* query = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "QueryProxy")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCpp*), "QueryHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{query});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::QuerySnapshotHashCode
+// Il2CppName: QuerySnapshotHashCode
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::Firebase::Firestore::QuerySnapshotProxy*)>(&Firebase::Firestore::FirestoreCpp::QuerySnapshotHashCode)> {
+  static const MethodInfo* get() {
+    static auto* snapshot = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "QuerySnapshotProxy")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCpp*), "QuerySnapshotHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{snapshot});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::DocumentSnapshotHashCode
+// Il2CppName: DocumentSnapshotHashCode
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::Firebase::Firestore::DocumentSnapshotProxy*)>(&Firebase::Firestore::FirestoreCpp::DocumentSnapshotHashCode)> {
+  static const MethodInfo* get() {
+    static auto* snapshot = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "DocumentSnapshotProxy")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCpp*), "DocumentSnapshotHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{snapshot});
   }
 };
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreCpp::ConvertFieldValueToMap

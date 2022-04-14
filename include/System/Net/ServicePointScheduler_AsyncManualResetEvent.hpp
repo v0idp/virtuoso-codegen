@@ -41,15 +41,7 @@ namespace System::Net {
     struct $WaitAsync$d__3;
     // Nested type: ::System::Net::ServicePointScheduler::AsyncManualResetEvent::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Threading.Tasks.TaskCompletionSource`1<System.Boolean> m_tcs
     // Size: 0x8
     // Offset: 0x10
@@ -62,22 +54,22 @@ namespace System::Net {
       return m_tcs;
     }
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Boolean> m_tcs
-    ::System::Threading::Tasks::TaskCompletionSource_1<bool>*& dyn_m_tcs();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<bool>*& dyn_m_tcs();
     // public System.Void .ctor(System.Boolean state)
-    // Offset: 0x8E2654
+    // Offset: 0x9FF118
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ServicePointScheduler::AsyncManualResetEvent* New_ctor(bool state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::ServicePointScheduler::AsyncManualResetEvent::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ServicePointScheduler::AsyncManualResetEvent*, creationType>(state)));
     }
     // public System.Threading.Tasks.Task`1<System.Boolean> WaitAsync(System.Int32 millisecondTimeout)
-    // Offset: 0x8E228C
+    // Offset: 0x9FED50
     ::System::Threading::Tasks::Task_1<bool>* WaitAsync(int millisecondTimeout);
     // public System.Void Set()
-    // Offset: 0x8E23D8
+    // Offset: 0x9FEE9C
     void Set();
     // public System.Void Reset()
-    // Offset: 0x8E21C0
+    // Offset: 0x9FEC84
     void Reset();
   }; // System.Net.ServicePointScheduler/System.Net.AsyncManualResetEvent
   #pragma pack(pop)

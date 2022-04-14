@@ -28,15 +28,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MinMaxVector3 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 _min
     // Size: 0xC
     // Offset: 0x10
@@ -51,27 +43,27 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _min
-    ::UnityEngine::Vector3& dyn__min();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__min();
     // Get instance field reference: private UnityEngine.Vector3 _max
-    ::UnityEngine::Vector3& dyn__max();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__max();
     // public UnityEngine.Vector3 get_Min()
-    // Offset: 0x8B519C
+    // Offset: 0xAC8D9C
     ::UnityEngine::Vector3 get_Min();
     // public UnityEngine.Vector3 get_Max()
-    // Offset: 0x8B51A8
+    // Offset: 0xAC8DA8
     ::UnityEngine::Vector3 get_Max();
     // public System.Void .ctor(UnityEngine.Vector3 min, UnityEngine.Vector3 max)
-    // Offset: 0x8B51B4
+    // Offset: 0xAC8DB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MinMaxVector3* New_ctor(::UnityEngine::Vector3 min, ::UnityEngine::Vector3 max) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MinMaxVector3::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MinMaxVector3*, creationType>(min, max)));
     }
     // public UnityEngine.Vector3 Random(System.Boolean uniform)
-    // Offset: 0x8B5214
+    // Offset: 0xAC8E14
     ::UnityEngine::Vector3 Random(bool uniform);
     // public UnityEngine.Vector3 Lerp(System.Single amount, System.Boolean clamp)
-    // Offset: 0x8B5298
+    // Offset: 0xAC8E98
     ::UnityEngine::Vector3 Lerp(float amount, bool clamp);
   }; // VROSC.MinMaxVector3
   #pragma pack(pop)

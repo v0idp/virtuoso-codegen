@@ -39,15 +39,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class ByteMatcher : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Hashtable map
     // Size: 0x8
     // Offset: 0x10
@@ -62,23 +54,23 @@ namespace System {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Hashtable map
-    ::System::Collections::Hashtable*& dyn_map();
+    [[deprecated]] ::System::Collections::Hashtable*& dyn_map();
     // Get instance field reference: private System.Collections.Hashtable starts
-    ::System::Collections::Hashtable*& dyn_starts();
+    [[deprecated]] ::System::Collections::Hashtable*& dyn_starts();
     // public System.Void AddMapping(System.TermInfoStrings key, System.Byte[] val)
-    // Offset: 0xCCDFC8
+    // Offset: 0xFF00B4
     void AddMapping(::System::TermInfoStrings key, ::ArrayW<uint8_t> val);
     // public System.Void Sort()
-    // Offset: 0xCCE0F4
+    // Offset: 0xFF01E0
     void Sort();
     // public System.Boolean StartsWith(System.Int32 c)
-    // Offset: 0xCCE0F8
+    // Offset: 0xFF01E4
     bool StartsWith(int c);
     // public System.TermInfoStrings Match(System.Char[] buffer, System.Int32 offset, System.Int32 length, out System.Int32 used)
-    // Offset: 0xCCE184
+    // Offset: 0xFF0270
     ::System::TermInfoStrings Match(::ArrayW<::Il2CppChar> buffer, int offset, int length, ByRef<int> used);
     // public System.Void .ctor()
-    // Offset: 0xCCE5E0
+    // Offset: 0xFF06CC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

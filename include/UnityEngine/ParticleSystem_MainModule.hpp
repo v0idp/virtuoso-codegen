@@ -46,51 +46,51 @@ namespace UnityEngine {
       return m_ParticleSystem;
     }
     // Get instance field reference: UnityEngine.ParticleSystem m_ParticleSystem
-    ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
     // public System.Single get_duration()
-    // Offset: 0x12FAFB4
+    // Offset: 0x19008BC
     float get_duration();
     // public System.Boolean get_loop()
-    // Offset: 0x12FB034
+    // Offset: 0x190093C
     bool get_loop();
     // public System.Void set_loop(System.Boolean value)
-    // Offset: 0x12FB0B4
+    // Offset: 0x19009BC
     void set_loop(bool value);
     // public System.Void set_startColor(UnityEngine.ParticleSystem/UnityEngine.MinMaxGradient value)
-    // Offset: 0x12FB154
+    // Offset: 0x1900A5C
     void set_startColor(::UnityEngine::ParticleSystem::MinMaxGradient value);
     // public System.Void set_simulationSpace(UnityEngine.ParticleSystemSimulationSpace value)
-    // Offset: 0x12FB1F4
+    // Offset: 0x1900AFC
     void set_simulationSpace(::UnityEngine::ParticleSystemSimulationSpace value);
     // public System.Void set_simulationSpeed(System.Single value)
-    // Offset: 0x12FB294
+    // Offset: 0x1900B9C
     void set_simulationSpeed(float value);
     // public System.Void set_playOnAwake(System.Boolean value)
-    // Offset: 0x12FB334
+    // Offset: 0x1900C3C
     void set_playOnAwake(bool value);
     // System.Void .ctor(UnityEngine.ParticleSystem particleSystem)
-    // Offset: 0x12FAD30
+    // Offset: 0x1900638
     // ABORTED: conflicts with another method.  MainModule(::UnityEngine::ParticleSystem* particleSystem);
     // static private System.Single get_duration_Injected(ref UnityEngine.ParticleSystem/UnityEngine.MainModule _unity_self)
-    // Offset: 0x12FAFF4
+    // Offset: 0x19008FC
     static float get_duration_Injected(ByRef<::UnityEngine::ParticleSystem::MainModule> _unity_self);
     // static private System.Boolean get_loop_Injected(ref UnityEngine.ParticleSystem/UnityEngine.MainModule _unity_self)
-    // Offset: 0x12FB074
+    // Offset: 0x190097C
     static bool get_loop_Injected(ByRef<::UnityEngine::ParticleSystem::MainModule> _unity_self);
     // static private System.Void set_loop_Injected(ref UnityEngine.ParticleSystem/UnityEngine.MainModule _unity_self, System.Boolean value)
-    // Offset: 0x12FB104
+    // Offset: 0x1900A0C
     static void set_loop_Injected(ByRef<::UnityEngine::ParticleSystem::MainModule> _unity_self, bool value);
     // static private System.Void set_startColor_Injected(ref UnityEngine.ParticleSystem/UnityEngine.MainModule _unity_self, ref UnityEngine.ParticleSystem/UnityEngine.MinMaxGradient value)
-    // Offset: 0x12FB1A4
+    // Offset: 0x1900AAC
     static void set_startColor_Injected(ByRef<::UnityEngine::ParticleSystem::MainModule> _unity_self, ByRef<::UnityEngine::ParticleSystem::MinMaxGradient> value);
     // static private System.Void set_simulationSpace_Injected(ref UnityEngine.ParticleSystem/UnityEngine.MainModule _unity_self, UnityEngine.ParticleSystemSimulationSpace value)
-    // Offset: 0x12FB244
+    // Offset: 0x1900B4C
     static void set_simulationSpace_Injected(ByRef<::UnityEngine::ParticleSystem::MainModule> _unity_self, ::UnityEngine::ParticleSystemSimulationSpace value);
     // static private System.Void set_simulationSpeed_Injected(ref UnityEngine.ParticleSystem/UnityEngine.MainModule _unity_self, System.Single value)
-    // Offset: 0x12FB2E4
+    // Offset: 0x1900BEC
     static void set_simulationSpeed_Injected(ByRef<::UnityEngine::ParticleSystem::MainModule> _unity_self, float value);
     // static private System.Void set_playOnAwake_Injected(ref UnityEngine.ParticleSystem/UnityEngine.MainModule _unity_self, System.Boolean value)
-    // Offset: 0x12FB384
+    // Offset: 0x1900C8C
     static void set_playOnAwake_Injected(ByRef<::UnityEngine::ParticleSystem::MainModule> _unity_self, bool value);
   }; // UnityEngine.ParticleSystem/UnityEngine.MainModule
   #pragma pack(pop)

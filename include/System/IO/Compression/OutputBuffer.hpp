@@ -30,15 +30,7 @@ namespace System::IO::Compression {
     public:
     // Nested type: ::System::IO::Compression::OutputBuffer::BufferState
     struct BufferState;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte[] _byteBuffer
     // Size: 0x8
     // Offset: 0x10
@@ -65,48 +57,48 @@ namespace System::IO::Compression {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Byte[] _byteBuffer
-    ::ArrayW<uint8_t>& dyn__byteBuffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__byteBuffer();
     // Get instance field reference: private System.Int32 _pos
-    int& dyn__pos();
+    [[deprecated]] int& dyn__pos();
     // Get instance field reference: private System.UInt32 _bitBuf
-    uint& dyn__bitBuf();
+    [[deprecated]] uint& dyn__bitBuf();
     // Get instance field reference: private System.Int32 _bitCount
-    int& dyn__bitCount();
+    [[deprecated]] int& dyn__bitCount();
     // System.Int32 get_BytesWritten()
-    // Offset: 0x11210CC
+    // Offset: 0x1698938
     int get_BytesWritten();
     // System.Int32 get_FreeBytes()
-    // Offset: 0x111B010
+    // Offset: 0x169287C
     int get_FreeBytes();
     // System.Int32 get_BitsInBuffer()
-    // Offset: 0x111B034
+    // Offset: 0x16928A0
     int get_BitsInBuffer();
     // System.Void UpdateBuffer(System.Byte[] output)
-    // Offset: 0x111D944
+    // Offset: 0x16951B0
     void UpdateBuffer(::ArrayW<uint8_t> output);
     // System.Void WriteUInt16(System.UInt16 value)
-    // Offset: 0x111B250
+    // Offset: 0x1692ABC
     void WriteUInt16(uint16_t value);
     // System.Void WriteBits(System.Int32 n, System.UInt32 bits)
-    // Offset: 0x111B050
+    // Offset: 0x16928BC
     void WriteBits(int n, uint bits);
     // System.Void FlushBits()
-    // Offset: 0x111B0F4
+    // Offset: 0x1692960
     void FlushBits();
     // System.Void WriteBytes(System.Byte[] byteArray, System.Int32 offset, System.Int32 count)
-    // Offset: 0x111B1D4
+    // Offset: 0x1692A40
     void WriteBytes(::ArrayW<uint8_t> byteArray, int offset, int count);
     // private System.Void WriteBytesUnaligned(System.Byte[] byteArray, System.Int32 offset, System.Int32 count)
-    // Offset: 0x11210D4
+    // Offset: 0x1698940
     void WriteBytesUnaligned(::ArrayW<uint8_t> byteArray, int offset, int count);
     // private System.Void WriteByteUnaligned(System.Byte b)
-    // Offset: 0x1121170
+    // Offset: 0x16989DC
     void WriteByteUnaligned(uint8_t b);
     // System.IO.Compression.OutputBuffer/System.IO.Compression.BufferState DumpState()
-    // Offset: 0x111D950
+    // Offset: 0x16951BC
     ::System::IO::Compression::OutputBuffer::BufferState DumpState();
     // System.Void RestoreState(System.IO.Compression.OutputBuffer/System.IO.Compression.BufferState state)
-    // Offset: 0x111D97C
+    // Offset: 0x16951E8
     void RestoreState(::System::IO::Compression::OutputBuffer::BufferState state);
   }; // System.IO.Compression.OutputBuffer
   #pragma pack(pop)

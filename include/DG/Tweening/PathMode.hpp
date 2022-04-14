@@ -66,7 +66,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.PathMode Sidescroller2D
     static void _set_Sidescroller2D(::DG::Tweening::PathMode value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.PathMode
   #pragma pack(pop)
   static check_size<sizeof(PathMode), 0 + sizeof(int)> __DG_Tweening_PathModeSizeCheck;

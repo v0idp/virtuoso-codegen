@@ -53,19 +53,19 @@ namespace Firebase::Platform {
     // Set static field: static private System.Func`1<System.Boolean> <>f__mg$cache0
     static void _set_$$f__mg$cache0(::System::Func_1<bool>* value);
     // static System.Boolean get_CanRedirectNativeLogs()
-    // Offset: 0x12CACDC
+    // Offset: 0x18CA06C
     static bool get_CanRedirectNativeLogs();
     // static private System.Void .cctor()
-    // Offset: 0x12CAE68
+    // Offset: 0x18CA1F8
     static void _cctor();
     // static private System.Boolean IsStackTraceLogTypeIncompatibleWithNativeLogs(UnityEngine.StackTraceLogType logType)
-    // Offset: 0x12CAA58
+    // Offset: 0x18C9DE8
     static bool IsStackTraceLogTypeIncompatibleWithNativeLogs(::UnityEngine::StackTraceLogType logType);
     // static private System.Boolean CurrentStackTraceLogTypeIsIncompatibleWithNativeLogs()
-    // Offset: 0x12CAA64
+    // Offset: 0x18C9DF4
     static bool CurrentStackTraceLogTypeIsIncompatibleWithNativeLogs();
     // static System.Void LogMessage(Firebase.Platform.PlatformLogLevel logLevel, System.String message)
-    // Offset: 0x12C8A48
+    // Offset: 0x18C7DD8
     static void LogMessage(::Firebase::Platform::PlatformLogLevel logLevel, ::StringW message);
   }; // Firebase.Platform.FirebaseLogger
   #pragma pack(pop)

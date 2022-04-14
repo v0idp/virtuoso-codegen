@@ -65,15 +65,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class EmpadsTutorialHelper : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject _interactablesParent
     // Size: 0x8
     // Offset: 0x18
@@ -164,95 +156,95 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _interactablesParent
-    ::UnityEngine::GameObject*& dyn__interactablesParent();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__interactablesParent();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement[] _tempoSyncButtonBlinkers
-    ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__tempoSyncButtonBlinkers();
+    [[deprecated]] ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__tempoSyncButtonBlinkers();
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal[] _drumpadEffects
-    ::ArrayW<::VROSC::DrumPadEffectOnSignal*>& dyn__drumpadEffects();
+    [[deprecated]] ::ArrayW<::VROSC::DrumPadEffectOnSignal*>& dyn__drumpadEffects();
     // Get instance field reference: private VROSC.Interactable[] _drumpadSpawners
-    ::ArrayW<::VROSC::Interactable*>& dyn__drumpadSpawners();
+    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__drumpadSpawners();
     // Get instance field reference: private VROSC.Interactable[] _tempoSyncButtonInteractables
-    ::ArrayW<::VROSC::Interactable*>& dyn__tempoSyncButtonInteractables();
+    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__tempoSyncButtonInteractables();
     // Get instance field reference: private VROSC.Interactable _closeButtonInteractable
-    ::VROSC::Interactable*& dyn__closeButtonInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__closeButtonInteractable();
     // Get instance field reference: private VROSC.ModularDrumsController _empadsController
-    ::VROSC::ModularDrumsController*& dyn__empadsController();
+    [[deprecated]] ::VROSC::ModularDrumsController*& dyn__empadsController();
     // Get instance field reference: private VROSC.ModularDrumpads _empads
-    ::VROSC::ModularDrumpads*& dyn__empads();
+    [[deprecated]] ::VROSC::ModularDrumpads*& dyn__empads();
     // Get instance field reference: private UnityEngine.AudioClip _cowbellClip
-    ::UnityEngine::AudioClip*& dyn__cowbellClip();
+    [[deprecated]] ::UnityEngine::AudioClip*& dyn__cowbellClip();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Interactable> _disabledInteractables
-    ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
     // Get instance field reference: private System.Boolean _countSpawnedPads
-    bool& dyn__countSpawnedPads();
+    [[deprecated]] bool& dyn__countSpawnedPads();
     // Get instance field reference: private System.Int32 _waitingForSyncDivider
-    int& dyn__waitingForSyncDivider();
+    [[deprecated]] int& dyn__waitingForSyncDivider();
     // Get instance field reference: private System.Boolean _padsHighlighted
-    bool& dyn__padsHighlighted();
+    [[deprecated]] bool& dyn__padsHighlighted();
     // Get instance field reference: private System.Boolean _recordingFirstRecording
-    bool& dyn__recordingFirstRecording();
+    [[deprecated]] bool& dyn__recordingFirstRecording();
     // protected System.Void Start()
-    // Offset: 0x1311A10
+    // Offset: 0x8EB8B0
     void Start();
     // protected System.Void Update()
-    // Offset: 0x1311BA8
+    // Offset: 0x8EBA48
     void Update();
     // private System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x1311D7C
+    // Offset: 0x8EBC1C
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
     // private System.Void StartHighlightPads()
-    // Offset: 0x13122A0
+    // Offset: 0x8EC140
     void StartHighlightPads();
     // private System.Void StartHighlightPadsWithText()
-    // Offset: 0x131232C
+    // Offset: 0x8EC1CC
     void StartHighlightPadsWithText();
     // private System.Void StopHighlightPads(VROSC.WidgetSettings/VROSC.Identifier id, VROSC.PatchSettings settings)
-    // Offset: 0x1312AE0
+    // Offset: 0x8EC980
     void StopHighlightPads(::VROSC::WidgetSettings::Identifier id, ::VROSC::PatchSettings* settings);
     // private System.Void StopHighlightPads()
-    // Offset: 0x1312BD0
+    // Offset: 0x8ECA70
     void StopHighlightPads();
     // private System.Void StopHighlightPadsWithText()
-    // Offset: 0x1311C74
+    // Offset: 0x8EBB14
     void StopHighlightPadsWithText();
     // private System.Void EnableEmpadExtraction()
-    // Offset: 0x1312458
+    // Offset: 0x8EC2F8
     void EnableEmpadExtraction();
     // private System.Void EnableTempoSync()
-    // Offset: 0x1312524
+    // Offset: 0x8EC3C4
     void EnableTempoSync();
     // private System.Void WaitForQuarterSync()
-    // Offset: 0x13126C8
+    // Offset: 0x8EC568
     void WaitForQuarterSync();
     // private System.Void WaitForSixteenthSync()
-    // Offset: 0x13127F4
+    // Offset: 0x8EC694
     void WaitForSixteenthSync();
     // private System.Void DisableTempoSync()
-    // Offset: 0x1312C34
+    // Offset: 0x8ECAD4
     void DisableTempoSync();
     // private System.Void StartTempoSyncBlinking()
-    // Offset: 0x13125F0
+    // Offset: 0x8EC490
     void StartTempoSyncBlinking();
     // private System.Void StopTempoSyncBlinking()
-    // Offset: 0x1312D00
+    // Offset: 0x8ECBA0
     void StopTempoSyncBlinking();
     // private System.Void TempoSyncButtonsUsed(System.Boolean used)
-    // Offset: 0x1312D88
+    // Offset: 0x8ECC28
     void TempoSyncButtonsUsed(bool used);
     // private System.Void DisableAllInteractables()
-    // Offset: 0x13120E0
+    // Offset: 0x8EBF80
     void DisableAllInteractables();
     // private System.Void ResetAll()
-    // Offset: 0x1312920
+    // Offset: 0x8EC7C0
     void ResetAll();
     // private System.Void LoopStationRecorderStateChanged(VROSC.LoopStationRecorder/VROSC.RecordingState state)
-    // Offset: 0x1312F6C
+    // Offset: 0x8ECE0C
     void LoopStationRecorderStateChanged(::VROSC::LoopStationRecorder::RecordingState state);
     // private System.Void DrumSamplePlayed(UnityEngine.AudioClip audioClip)
-    // Offset: 0x1312F90
+    // Offset: 0x8ECE30
     void DrumSamplePlayed(::UnityEngine::AudioClip* audioClip);
     // public System.Void .ctor()
-    // Offset: 0x1313058
+    // Offset: 0x8ECEF8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

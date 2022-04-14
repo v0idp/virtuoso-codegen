@@ -37,15 +37,7 @@ namespace VROSC::AudioReactive {
     public:
     // Writing base type padding for base size: 0x24 to desired offset: 0x28
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.TranslateEffect _translateAnimation
     // Size: 0x8
     // Offset: 0x28
@@ -54,12 +46,12 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::TranslateEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.TranslateEffect _translateAnimation
-    ::VROSC::AudioReactive::TranslateEffect*& dyn__translateAnimation();
+    [[deprecated]] ::VROSC::AudioReactive::TranslateEffect*& dyn__translateAnimation();
     // public VROSC.AudioReactive.TranslateEffect get_TranslateAnimation()
-    // Offset: 0x14054F0
+    // Offset: 0xA2D174
     ::VROSC::AudioReactive::TranslateEffect* get_TranslateAnimation();
     // public System.Void .ctor()
-    // Offset: 0x140556C
+    // Offset: 0xA2D1F0
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -73,12 +65,12 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<TranslateOnBeat*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x14054F8
+    // Offset: 0xA2D17C
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::Awake()
     void Awake();
     // protected override System.Void OnBeat(System.Int32 beat)
-    // Offset: 0x1405534
+    // Offset: 0xA2D1B8
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::OnBeat(System.Int32 beat)
     void OnBeat(int beat);

@@ -64,14 +64,14 @@ namespace System::Buffers {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::ArrayW<T> Rent(int minimumLength) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Buffers::ArrayPool_1::Rent");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Rent", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(minimumLength)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Buffers::ArrayPool_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::ArrayW<T>, false>(this, ___internal__method, minimumLength);
     }
     // public System.Void Return(T[] array, System.Boolean clearArray)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Return(::ArrayW<T> array, bool clearArray) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Buffers::ArrayPool_1::Return");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Return", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(array), ::il2cpp_utils::ExtractType(clearArray)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Buffers::ArrayPool_1<T>*), -1));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, array, clearArray);
     }
     // protected System.Void .ctor()

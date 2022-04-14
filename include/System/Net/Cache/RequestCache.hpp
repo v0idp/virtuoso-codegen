@@ -23,15 +23,7 @@ namespace System::Net::Cache {
   // [TokenAttribute] Offset: FFFFFFFF
   class RequestCache : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _IsPrivateCache
     // Size: 0x1
     // Offset: 0x10
@@ -50,11 +42,11 @@ namespace System::Net::Cache {
     // Set static field: static readonly System.Char[] LineSplits
     static void _set_LineSplits(::ArrayW<::Il2CppChar> value);
     // Get instance field reference: private System.Boolean _IsPrivateCache
-    bool& dyn__IsPrivateCache();
+    [[deprecated]] bool& dyn__IsPrivateCache();
     // Get instance field reference: private System.Boolean _CanWrite
-    bool& dyn__CanWrite();
+    [[deprecated]] bool& dyn__CanWrite();
     // static private System.Void .cctor()
-    // Offset: 0x944680
+    // Offset: 0xD9827C
     static void _cctor();
   }; // System.Net.Cache.RequestCache
   #pragma pack(pop)

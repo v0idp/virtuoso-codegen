@@ -31,16 +31,8 @@ namespace Firebase {
   // [TokenAttribute] Offset: FFFFFFFF
   class InitializationException : public ::System::Exception {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x5D8BF8
+    // [DebuggerBrowsableAttribute] Offset: 0x6EA73C
     // private Firebase.InitResult <InitResult>k__BackingField
     // Size: 0x4
     // Offset: 0x88
@@ -53,26 +45,26 @@ namespace Firebase {
       return InitResult;
     }
     // Get instance field reference: private Firebase.InitResult <InitResult>k__BackingField
-    ::Firebase::InitResult& dyn_$InitResult$k__BackingField();
+    [[deprecated]] ::Firebase::InitResult& dyn_$InitResult$k__BackingField();
     // private System.Void set_InitResult(Firebase.InitResult value)
-    // Offset: 0x129BA58
+    // Offset: 0x1889940
     void set_InitResult(::Firebase::InitResult value);
     // public System.Void .ctor(Firebase.InitResult result)
-    // Offset: 0x129B9E0
+    // Offset: 0x18898C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InitializationException* New_ctor(::Firebase::InitResult result) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::InitializationException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InitializationException*, creationType>(result)));
     }
     // public System.Void .ctor(Firebase.InitResult result, System.String message)
-    // Offset: 0x1296B54
+    // Offset: 0x1885758
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InitializationException* New_ctor(::Firebase::InitResult result, ::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::InitializationException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InitializationException*, creationType>(result, message)));
     }
     // public System.Void .ctor(Firebase.InitResult result, System.String message, System.Exception inner)
-    // Offset: 0x129909C
+    // Offset: 0x1887CAC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InitializationException* New_ctor(::Firebase::InitResult result, ::StringW message, ::System::Exception* inner) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::InitializationException::.ctor");

@@ -53,52 +53,52 @@ namespace GlobalNamespace {
     // Nested type: ::GlobalNamespace::P2PManager::MessageType
     struct MessageType;
     // public System.Void ConnectTo(System.UInt64 userID)
-    // Offset: 0x8F5774
+    // Offset: 0xAD9F48
     void ConnectTo(uint64_t userID);
     // public System.Void Disconnect(System.UInt64 userID)
-    // Offset: 0x8F5858
+    // Offset: 0xADA02C
     void Disconnect(uint64_t userID);
     // private System.Void PeerConnectRequestCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x8F58D8
+    // Offset: 0xADA0AC
     void PeerConnectRequestCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // private System.Void ConnectionStateChangedCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x8F5A48
+    // Offset: 0xADA21C
     void ConnectionStateChangedCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // public System.Void SendAvatarUpdate(System.UInt64 userID, UnityEngine.Transform rootTransform, System.UInt32 sequence, System.Byte[] avatarPacket)
-    // Offset: 0x8F5C88
+    // Offset: 0xADA45C
     void SendAvatarUpdate(uint64_t userID, ::UnityEngine::Transform* rootTransform, uint sequence, ::ArrayW<uint8_t> avatarPacket);
     // public System.Void GetRemotePackets()
-    // Offset: 0x8F6078
+    // Offset: 0xADA84C
     void GetRemotePackets();
     // public System.Void processAvatarPacket(RemotePlayer remote, ref System.Byte[] packet, ref System.Int32 offset)
-    // Offset: 0x8F6334
+    // Offset: 0xADAB08
     void processAvatarPacket(::GlobalNamespace::RemotePlayer* remote, ByRef<::ArrayW<uint8_t>> packet, ByRef<int> offset);
     // private System.Void PackByte(System.Byte b, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x8F5E54
+    // Offset: 0xADA628
     void PackByte(uint8_t b, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Byte ReadByte(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x8F6268
+    // Offset: 0xADAA3C
     uint8_t ReadByte(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Void PackFloat(System.Single f, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x8F5F38
+    // Offset: 0xADA70C
     void PackFloat(float f, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Single ReadFloat(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x8F6570
+    // Offset: 0xADAD48
     float ReadFloat(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Void PackULong(System.UInt64 u, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x8F5E9C
+    // Offset: 0xADA670
     void PackULong(uint64_t u, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.UInt64 ReadULong(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x8F62AC
+    // Offset: 0xADAA80
     uint64_t ReadULong(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.Void PackUInt32(System.UInt32 u, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x8F5FDC
+    // Offset: 0xADA7B0
     void PackUInt32(uint u, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // private System.UInt32 ReadUInt32(System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x8F65F8
+    // Offset: 0xADADD0
     uint ReadUInt32(::ArrayW<uint8_t> buf, ByRef<int> offset);
     // public System.Void .ctor()
-    // Offset: 0x8F5694
+    // Offset: 0xAD9E68
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

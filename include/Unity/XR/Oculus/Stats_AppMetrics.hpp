@@ -20,28 +20,28 @@ namespace Unity::XR::Oculus {
   class Stats::AppMetrics : public ::Il2CppObject {
     public:
     // static public System.Single get_AppQueueAheadTime()
-    // Offset: 0x12DC7C8
+    // Offset: 0x18DEA3C
     static float get_AppQueueAheadTime();
     // static public System.Single get_AppCPUElapsedTime()
-    // Offset: 0x12DC850
+    // Offset: 0x18DEAC4
     static float get_AppCPUElapsedTime();
     // static public System.Single get_CompositorDroppedFrames()
-    // Offset: 0x12DC8D8
+    // Offset: 0x18DEB4C
     static float get_CompositorDroppedFrames();
     // static public System.Single get_CompositorLatency()
-    // Offset: 0x12DC960
+    // Offset: 0x18DEBD4
     static float get_CompositorLatency();
     // static public System.Single get_CompositorCPUTime()
-    // Offset: 0x12DC9E8
+    // Offset: 0x18DEC5C
     static float get_CompositorCPUTime();
     // static public System.Single get_CPUStartToGPUEnd()
-    // Offset: 0x12DCA70
+    // Offset: 0x18DECE4
     static float get_CPUStartToGPUEnd();
     // static public System.Single get_GPUEndToVsync()
-    // Offset: 0x12DCAF8
+    // Offset: 0x18DED6C
     static float get_GPUEndToVsync();
     // static public System.Void EnableAppMetrics(System.Boolean enable)
-    // Offset: 0x12DCB80
+    // Offset: 0x18DEDF4
     static void EnableAppMetrics(bool enable);
   }; // Unity.XR.Oculus.Stats/Unity.XR.Oculus.AppMetrics
   #pragma pack(pop)

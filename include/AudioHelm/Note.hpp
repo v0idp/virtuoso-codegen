@@ -39,15 +39,7 @@ namespace AudioHelm {
     public:
     // Nested type: ::AudioHelm::Note::NoteAction
     class NoteAction;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private AudioHelm.Note/AudioHelm.NoteAction OnNoteOn
     // Size: 0x8
     // Offset: 0x10
@@ -102,98 +94,98 @@ namespace AudioHelm {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: private AudioHelm.Note/AudioHelm.NoteAction OnNoteOn
-    ::AudioHelm::Note::NoteAction*& dyn_OnNoteOn();
+    [[deprecated]] ::AudioHelm::Note::NoteAction*& dyn_OnNoteOn();
     // Get instance field reference: private AudioHelm.Note/AudioHelm.NoteAction OnNoteOff
-    ::AudioHelm::Note::NoteAction*& dyn_OnNoteOff();
+    [[deprecated]] ::AudioHelm::Note::NoteAction*& dyn_OnNoteOff();
     // Get instance field reference: private System.Int32 note_
-    int& dyn_note_();
+    [[deprecated]] int& dyn_note_();
     // Get instance field reference: private System.Single start_
-    float& dyn_start_();
+    [[deprecated]] float& dyn_start_();
     // Get instance field reference: private System.Single end_
-    float& dyn_end_();
+    [[deprecated]] float& dyn_end_();
     // Get instance field reference: private System.Single velocity_
-    float& dyn_velocity_();
+    [[deprecated]] float& dyn_velocity_();
     // Get instance field reference: public AudioHelm.Sequencer parent
-    ::AudioHelm::Sequencer*& dyn_parent();
+    [[deprecated]] ::AudioHelm::Sequencer*& dyn_parent();
     // Get instance field reference: private System.IntPtr reference
-    ::System::IntPtr& dyn_reference();
+    [[deprecated]] ::System::IntPtr& dyn_reference();
     // public System.Int32 get_note()
-    // Offset: 0xA0FD08
+    // Offset: 0xAD47C4
     int get_note();
     // public System.Void set_note(System.Int32 value)
-    // Offset: 0xA0FD10
+    // Offset: 0xAD47CC
     void set_note(int value);
     // public System.Single get_start()
-    // Offset: 0xA0FE38
+    // Offset: 0xAD48F4
     float get_start();
     // public System.Void set_start(System.Single value)
-    // Offset: 0xA0FE40
+    // Offset: 0xAD48FC
     void set_start(float value);
     // public System.Single get_end()
-    // Offset: 0xA0FF30
+    // Offset: 0xAD49EC
     float get_end();
     // public System.Void set_end(System.Single value)
-    // Offset: 0xA0FF38
+    // Offset: 0xAD49F4
     void set_end(float value);
     // public System.Single get_velocity()
-    // Offset: 0xA10028
+    // Offset: 0xAD4AE4
     float get_velocity();
     // public System.Void set_velocity(System.Single value)
-    // Offset: 0xA10030
+    // Offset: 0xAD4AEC
     void set_velocity(float value);
     // public System.Void add_OnNoteOn(AudioHelm.Note/AudioHelm.NoteAction value)
-    // Offset: 0xA0FA88
+    // Offset: 0xAD4544
     void add_OnNoteOn(::AudioHelm::Note::NoteAction* value);
     // public System.Void remove_OnNoteOn(AudioHelm.Note/AudioHelm.NoteAction value)
-    // Offset: 0xA0FB28
+    // Offset: 0xAD45E4
     void remove_OnNoteOn(::AudioHelm::Note::NoteAction* value);
     // public System.Void add_OnNoteOff(AudioHelm.Note/AudioHelm.NoteAction value)
-    // Offset: 0xA0FBC8
+    // Offset: 0xAD4684
     void add_OnNoteOff(::AudioHelm::Note::NoteAction* value);
     // public System.Void remove_OnNoteOff(AudioHelm.Note/AudioHelm.NoteAction value)
-    // Offset: 0xA0FC68
+    // Offset: 0xAD4724
     void remove_OnNoteOff(::AudioHelm::Note::NoteAction* value);
     // public System.Void OnAfterDeserialize()
-    // Offset: 0xA10084
+    // Offset: 0xAD4B40
     void OnAfterDeserialize();
     // public System.Void OnBeforeSerialize()
-    // Offset: 0xA100F8
+    // Offset: 0xAD4BB4
     void OnBeforeSerialize();
     // private System.Void CopySettingsToNative()
-    // Offset: 0xA100FC
+    // Offset: 0xAD4BB8
     void CopySettingsToNative();
     // private System.Boolean HasNativeNote()
-    // Offset: 0xA10164
+    // Offset: 0xAD4C20
     bool HasNativeNote();
     // private System.Boolean HasNativeSequencer()
-    // Offset: 0xA101AC
+    // Offset: 0xAD4C68
     bool HasNativeSequencer();
     // private System.Boolean FullyNative()
-    // Offset: 0xA0FE00
+    // Offset: 0xAD48BC
     bool FullyNative();
     // public System.Void TriggerNoteOnEvent()
-    // Offset: 0xA10260
+    // Offset: 0xAD4D1C
     void TriggerNoteOnEvent();
     // public System.Void TriggerNoteOffEvent()
-    // Offset: 0xA10278
+    // Offset: 0xAD4D34
     void TriggerNoteOffEvent();
     // public System.Void TryCreate()
-    // Offset: 0xA10088
+    // Offset: 0xAD4B44
     void TryCreate();
     // public System.Void TryDelete()
-    // Offset: 0xA10290
+    // Offset: 0xAD4D4C
     void TryDelete();
     // public System.Boolean OverlapsRange(System.Single rangeStart, System.Single rangeEnd)
-    // Offset: 0xA1030C
+    // Offset: 0xAD4DC8
     bool OverlapsRange(float rangeStart, float rangeEnd);
     // public System.Boolean InsideRange(System.Single rangeStart, System.Single rangeEnd)
-    // Offset: 0xA10398
+    // Offset: 0xAD4E54
     bool InsideRange(float rangeStart, float rangeEnd);
     // public System.Void RemoveRange(System.Single rangeStart, System.Single rangeEnd)
-    // Offset: 0xA103BC
+    // Offset: 0xAD4E78
     void RemoveRange(float rangeStart, float rangeEnd);
     // public System.Void .ctor()
-    // Offset: 0xA10428
+    // Offset: 0xAD4EE4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

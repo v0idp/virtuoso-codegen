@@ -38,15 +38,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class CommunitySessionsDataController::$$c__DisplayClass11_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.Session session
     // Size: 0x8
     // Offset: 0x10
@@ -61,14 +53,14 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.Session session
-    ::VROSC::Session*& dyn_session();
+    [[deprecated]] ::VROSC::Session*& dyn_session();
     // Get instance field reference: public System.Action`1<System.String> onSuccess
-    ::System::Action_1<::StringW>*& dyn_onSuccess();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onSuccess();
     // System.Void <AddSessionPreviewPlay>b__0(System.String id)
-    // Offset: 0x135F8CC
+    // Offset: 0x95C3C0
     void $AddSessionPreviewPlay$b__0(::StringW id);
     // public System.Void .ctor()
-    // Offset: 0x135F8C4
+    // Offset: 0x95C3B8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

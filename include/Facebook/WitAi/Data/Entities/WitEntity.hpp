@@ -37,15 +37,7 @@ namespace Facebook::WitAi::Data::Entities {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitEntity : public ::Facebook::WitAi::Configuration::WitConfigurationData {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String id
     // Size: 0x8
     // Offset: 0x18
@@ -80,17 +72,17 @@ namespace Facebook::WitAi::Data::Entities {
     // Deleting conversion operator: operator ::Facebook::WitAi::Data::Configuration::WitConfiguration*
     constexpr operator ::Facebook::WitAi::Data::Configuration::WitConfiguration*() const noexcept = delete;
     // Get instance field reference: public System.String id
-    ::StringW& dyn_id();
+    [[deprecated]] ::StringW& dyn_id();
     // Get instance field reference: public System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: public System.String[] lookups
-    ::ArrayW<::StringW>& dyn_lookups();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_lookups();
     // Get instance field reference: public System.String[] roles
-    ::ArrayW<::StringW>& dyn_roles();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_roles();
     // Get instance field reference: public Facebook.WitAi.Data.Keywords.WitKeyword[] keywords
-    ::ArrayW<::Facebook::WitAi::Data::Keywords::WitKeyword*>& dyn_keywords();
+    [[deprecated]] ::ArrayW<::Facebook::WitAi::Data::Keywords::WitKeyword*>& dyn_keywords();
     // public System.Void .ctor()
-    // Offset: 0x10FE818
+    // Offset: 0x1675080
     // Implemented from: Facebook.WitAi.Configuration.WitConfigurationData
     // Base method: System.Void WitConfigurationData::.ctor()
     // Base method: System.Void Object::.ctor()

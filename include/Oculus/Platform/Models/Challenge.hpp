@@ -44,15 +44,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class Challenge : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly Oculus.Platform.ChallengeCreationType CreationType
     // Size: 0x4
     // Offset: 0x10
@@ -85,7 +77,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::UserList* InvitedUsersOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A5144
+    // [ObsoleteAttribute] Offset: 0x6B92F8
     // public readonly Oculus.Platform.Models.UserList InvitedUsers
     // Size: 0x8
     // Offset: 0x38
@@ -104,7 +96,7 @@ namespace Oculus::Platform::Models {
     ::Oculus::Platform::Models::UserList* ParticipantsOptional;
     // Field size check
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
-    // [ObsoleteAttribute] Offset: 0x5A517C
+    // [ObsoleteAttribute] Offset: 0x6B9330
     // public readonly Oculus.Platform.Models.UserList Participants
     // Size: 0x8
     // Offset: 0x50
@@ -131,31 +123,31 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::ChallengeVisibility) == 0x4);
     public:
     // Get instance field reference: public readonly Oculus.Platform.ChallengeCreationType CreationType
-    ::Oculus::Platform::ChallengeCreationType& dyn_CreationType();
+    [[deprecated]] ::Oculus::Platform::ChallengeCreationType& dyn_CreationType();
     // Get instance field reference: public readonly System.String Description
-    ::StringW& dyn_Description();
+    [[deprecated]] ::StringW& dyn_Description();
     // Get instance field reference: public readonly System.DateTime EndDate
-    ::System::DateTime& dyn_EndDate();
+    [[deprecated]] ::System::DateTime& dyn_EndDate();
     // Get instance field reference: public readonly System.UInt64 ID
-    uint64_t& dyn_ID();
+    [[deprecated]] uint64_t& dyn_ID();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList InvitedUsersOptional
-    ::Oculus::Platform::Models::UserList*& dyn_InvitedUsersOptional();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsersOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList InvitedUsers
-    ::Oculus::Platform::Models::UserList*& dyn_InvitedUsers();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsers();
     // Get instance field reference: public readonly Oculus.Platform.Models.Leaderboard Leaderboard
-    ::Oculus::Platform::Models::Leaderboard*& dyn_Leaderboard();
+    [[deprecated]] ::Oculus::Platform::Models::Leaderboard*& dyn_Leaderboard();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList ParticipantsOptional
-    ::Oculus::Platform::Models::UserList*& dyn_ParticipantsOptional();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_ParticipantsOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList Participants
-    ::Oculus::Platform::Models::UserList*& dyn_Participants();
+    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_Participants();
     // Get instance field reference: public readonly System.DateTime StartDate
-    ::System::DateTime& dyn_StartDate();
+    [[deprecated]] ::System::DateTime& dyn_StartDate();
     // Get instance field reference: public readonly System.String Title
-    ::StringW& dyn_Title();
+    [[deprecated]] ::StringW& dyn_Title();
     // Get instance field reference: public readonly Oculus.Platform.ChallengeVisibility Visibility
-    ::Oculus::Platform::ChallengeVisibility& dyn_Visibility();
+    [[deprecated]] ::Oculus::Platform::ChallengeVisibility& dyn_Visibility();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7DB508
+    // Offset: 0x9218E8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Challenge* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::Challenge::.ctor");

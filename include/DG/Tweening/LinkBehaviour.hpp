@@ -108,7 +108,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.LinkBehaviour RewindAndKillOnDisable
     static void _set_RewindAndKillOnDisable(::DG::Tweening::LinkBehaviour value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.LinkBehaviour
   #pragma pack(pop)
   static check_size<sizeof(LinkBehaviour), 0 + sizeof(int)> __DG_Tweening_LinkBehaviourSizeCheck;

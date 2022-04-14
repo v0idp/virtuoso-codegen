@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TextSpinnerItem : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _valueText
     // Size: 0x8
     // Offset: 0x18
@@ -145,45 +137,45 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _valueText
-    ::TMPro::TextMeshPro*& dyn__valueText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__valueText();
     // Get instance field reference: private VROSC.AdjustableMesh _background
-    ::VROSC::AdjustableMesh*& dyn__background();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__background();
     // Get instance field reference: private UnityEngine.Color _selectedColor
-    ::UnityEngine::Color& dyn__selectedColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__selectedColor();
     // Get instance field reference: private UnityEngine.Color _inactiveColor
-    ::UnityEngine::Color& dyn__inactiveColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__inactiveColor();
     // Get instance field reference: private UnityEngine.Color _backgroundColor
-    ::UnityEngine::Color& dyn__backgroundColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__backgroundColor();
     // Get instance field reference: private UnityEngine.AnimationCurve _alphaCurve
-    ::UnityEngine::AnimationCurve*& dyn__alphaCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__alphaCurve();
     // Get instance field reference: private UnityEngine.Color _currentTextColor
-    ::UnityEngine::Color& dyn__currentTextColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__currentTextColor();
     // Get instance field reference: private UnityEngine.Color _currentBackgroundColor
-    ::UnityEngine::Color& dyn__currentBackgroundColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__currentBackgroundColor();
     // Get instance field reference: private System.Single _currentAlpha
-    float& dyn__currentAlpha();
+    [[deprecated]] float& dyn__currentAlpha();
     // Get instance field reference: private UnityEngine.Renderer _adjustableMeshRenderer
-    ::UnityEngine::Renderer*& dyn__adjustableMeshRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__adjustableMeshRenderer();
     // Get instance field reference: private UnityEngine.Material _transparentMaterial
-    ::UnityEngine::Material*& dyn__transparentMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__transparentMaterial();
     // Get instance field reference: private UnityEngine.Material _normalMaterial
-    ::UnityEngine::Material*& dyn__normalMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__normalMaterial();
     // Get instance field reference: private System.Boolean _isTransparent
-    bool& dyn__isTransparent();
+    [[deprecated]] bool& dyn__isTransparent();
     // private System.Void Awake()
-    // Offset: 0x13FDA58
+    // Offset: 0xA25A58
     void Awake();
     // private System.Void AddHook()
-    // Offset: 0x13FDB18
+    // Offset: 0xA25B18
     void AddHook();
     // private System.Void SetMaterial(UnityEngine.Color color)
-    // Offset: 0x13FDBF4
+    // Offset: 0xA25BF4
     void SetMaterial(::UnityEngine::Color color);
     // public System.Void Set(System.String text, System.Boolean selected, System.Single valueOffCenter)
-    // Offset: 0x13FD35C
+    // Offset: 0xA2535C
     void Set(::StringW text, bool selected, float valueOffCenter);
     // public System.Void .ctor()
-    // Offset: 0x13FDC58
+    // Offset: 0xA25C58
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

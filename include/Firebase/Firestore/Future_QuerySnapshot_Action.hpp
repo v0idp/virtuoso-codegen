@@ -35,20 +35,20 @@ namespace Firebase::Firestore {
   class Future_QuerySnapshot::Action : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xC3D278
+    // Offset: 0xD610A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Future_QuerySnapshot::Action* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Future_QuerySnapshot::Action::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Future_QuerySnapshot::Action*, creationType>(object, method)));
     }
     // public System.Void Invoke()
-    // Offset: 0xC3D6D4
+    // Offset: 0xD614EC
     void Invoke();
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
-    // Offset: 0xC44740
+    // Offset: 0xD69204
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xC4476C
+    // Offset: 0xD69230
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Firestore.Future_QuerySnapshot/Firebase.Firestore.Action
   #pragma pack(pop)

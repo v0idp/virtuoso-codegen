@@ -53,9 +53,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Mesh mesh
-    ::UnityEngine::Mesh*& dyn_mesh();
+    [[deprecated]] ::UnityEngine::Mesh*& dyn_mesh();
     // Get instance field reference: public UnityEngine.Material material
-    ::UnityEngine::Material*& dyn_material();
+    [[deprecated]] ::UnityEngine::Material*& dyn_material();
   }; // OVRMeshData
   #pragma pack(pop)
   static check_size<sizeof(OVRMeshData), 8 + sizeof(::UnityEngine::Material*)> __GlobalNamespace_OVRMeshDataSizeCheck;

@@ -54,15 +54,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::ShiftColorEffect::$SpecificFlow$d__10
     class $SpecificFlow$d__10;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.ShiftColorEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -83,19 +75,19 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::VROSC::AudioReactive::ShiftColorData*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ShiftColorEffectData _data
-    ::VROSC::AudioReactive::ShiftColorEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::ShiftColorEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Renderer[] _renderers
-    ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
+    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
     // Get instance field reference: private VROSC.AudioReactive.ShiftColorData[] _shiftColorDatas
-    ::ArrayW<::VROSC::AudioReactive::ShiftColorData*>& dyn__shiftColorDatas();
+    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::ShiftColorData*>& dyn__shiftColorDatas();
     // public VROSC.AudioReactive.ShiftColorEffectData get_Data()
-    // Offset: 0x13B45B0
+    // Offset: 0x192747C
     ::VROSC::AudioReactive::ShiftColorEffectData* get_Data();
     // public UnityEngine.Renderer[] get_Renderers()
-    // Offset: 0x13B45B8
+    // Offset: 0x1927484
     ::ArrayW<::UnityEngine::Renderer*> get_Renderers();
     // public System.Void .ctor()
-    // Offset: 0x13B490C
+    // Offset: 0x19277D8
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -106,22 +98,22 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<ShiftColorEffect*, creationType>()));
     }
     // public override System.Void Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
-    // Offset: 0x13B45C0
+    // Offset: 0x192748C
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
     void Setup(::VROSC::AudioReactive::AudioReactiveBehaviour* behaviour);
     // public override System.Void Update()
-    // Offset: 0x13B46FC
+    // Offset: 0x19275C8
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Update()
     void Update();
     // public override System.Void DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
-    // Offset: 0x13B47A4
+    // Offset: 0x1927670
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
     void DrawGizmos(::VROSC::AudioReactive::ReactToBeat* sender);
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0x13B48A0
+    // Offset: 0x192776C
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();

@@ -29,10 +29,10 @@ namespace VROSC {
   class ThereminOctaveControlUI : public ::VROSC::OctaveControlUI {
     public:
     // private System.Int32 GetNoteValue(System.Int32 octave)
-    // Offset: 0x13FDD00
+    // Offset: 0xA25D00
     int GetNoteValue(int octave);
     // public System.Void .ctor()
-    // Offset: 0x13FDD48
+    // Offset: 0xA25D48
     // Implemented from: VROSC.OctaveControlUI
     // Base method: System.Void OctaveControlUI::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -46,7 +46,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ThereminOctaveControlUI*, creationType>()));
     }
     // protected override System.Void UpdateDisplayAndOutput()
-    // Offset: 0x13FDC60
+    // Offset: 0xA25C60
     // Implemented from: VROSC.OctaveControlUI
     // Base method: System.Void OctaveControlUI::UpdateDisplayAndOutput()
     void UpdateDisplayAndOutput();

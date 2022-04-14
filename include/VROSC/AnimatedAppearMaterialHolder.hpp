@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AnimatedAppearMaterialHolder : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _textMesh
     // Size: 0x8
     // Offset: 0x18
@@ -73,22 +65,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _textMesh
-    ::TMPro::TextMeshPro*& dyn__textMesh();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textMesh();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.Material _material
-    ::UnityEngine::Material*& dyn__material();
+    [[deprecated]] ::UnityEngine::Material*& dyn__material();
     // public System.Void Setup(TMPro.TextMeshPro textMesh, UnityEngine.Material material)
-    // Offset: 0x136BFB0
+    // Offset: 0x96A8F0
     void Setup(::TMPro::TextMeshPro* textMesh, ::UnityEngine::Material* material);
     // public System.Void Setup(UnityEngine.Renderer renderer, UnityEngine.Material material)
-    // Offset: 0x136BFBC
+    // Offset: 0x96A8FC
     void Setup(::UnityEngine::Renderer* renderer, ::UnityEngine::Material* material);
     // public System.Void Reset()
-    // Offset: 0x136BFC4
+    // Offset: 0x96A904
     void Reset();
     // public System.Void .ctor()
-    // Offset: 0x136C0D4
+    // Offset: 0x96AA14
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

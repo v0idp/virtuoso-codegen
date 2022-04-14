@@ -57,15 +57,7 @@ namespace GlobalNamespace {
     class $$c__DisplayClass3_0;
     // Nested type: ::GlobalNamespace::MainScript::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.String basePath
     // Size: 0x8
     // Offset: 0x18
@@ -82,50 +74,50 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private readonly System.String basePath
-    ::StringW& dyn_basePath();
+    [[deprecated]] ::StringW& dyn_basePath();
     // Get instance field reference: private Proyecto26.RequestHelper currentRequest
-    ::Proyecto26::RequestHelper*& dyn_currentRequest();
+    [[deprecated]] ::Proyecto26::RequestHelper*& dyn_currentRequest();
     // private System.Void LogMessage(System.String title, System.String message)
-    // Offset: 0x8A92A4
+    // Offset: 0x197B850
     void LogMessage(::StringW title, ::StringW message);
     // public System.Void Get()
-    // Offset: 0x8A9308
+    // Offset: 0x197B8B4
     void Get();
     // public System.Void Post()
-    // Offset: 0x8A98A8
+    // Offset: 0x197BE54
     void Post();
     // public System.Void Put()
-    // Offset: 0x8A9CE4
+    // Offset: 0x197C290
     void Put();
     // public System.Void Delete()
-    // Offset: 0x8A9F38
+    // Offset: 0x197C4E4
     void Delete();
     // public System.Void AbortRequest()
-    // Offset: 0x8AA000
+    // Offset: 0x197C5AC
     void AbortRequest();
     // public System.Void DownloadFile()
-    // Offset: 0x8AA030
+    // Offset: 0x197C5DC
     void DownloadFile();
     // private System.Void <Post>b__4_0(Proyecto26.Models.Post res)
-    // Offset: 0x8AA304
+    // Offset: 0x197C8B0
     void $Post$b__4_0(::Proyecto26::Models::Post* res);
     // private System.Void <Post>b__4_1(System.Exception err)
-    // Offset: 0x8AA35C
+    // Offset: 0x197C908
     void $Post$b__4_1(::System::Exception* err);
     // private System.Void <Put>b__5_0(Proyecto26.RequestException err, Proyecto26.ResponseHelper res, Proyecto26.Models.Post body)
-    // Offset: 0x8AA3B4
+    // Offset: 0x197C960
     void $Put$b__5_0(::Proyecto26::RequestException* err, ::Proyecto26::ResponseHelper* res, ::Proyecto26::Models::Post* body);
     // private System.Void <Delete>b__6_0(Proyecto26.RequestException err, Proyecto26.ResponseHelper res)
-    // Offset: 0x8AA434
+    // Offset: 0x197C9E0
     void $Delete$b__6_0(::Proyecto26::RequestException* err, ::Proyecto26::ResponseHelper* res);
     // private System.Void <DownloadFile>b__8_0(Proyecto26.ResponseHelper res)
-    // Offset: 0x8AA4F8
+    // Offset: 0x197CAA4
     void $DownloadFile$b__8_0(::Proyecto26::ResponseHelper* res);
     // private System.Void <DownloadFile>b__8_1(System.Exception err)
-    // Offset: 0x8AA5C0
+    // Offset: 0x197CB6C
     void $DownloadFile$b__8_1(::System::Exception* err);
     // public System.Void .ctor()
-    // Offset: 0x8AA2B0
+    // Offset: 0x197C85C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

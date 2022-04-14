@@ -46,13 +46,13 @@ namespace OVR {
     // Set static field: static public System.Predicate`1<OVR.SoundEmitter> <>9__77_1
     static void _set_$$9__77_1(::System::Predicate_1<::OVR::SoundEmitter*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x12A7F4C
+    // Offset: 0x18A5AF0
     static void _cctor();
     // System.Boolean <FindFreeEmitter>b__77_1(OVR.SoundEmitter item)
-    // Offset: 0x12A7FB4
+    // Offset: 0x18A5B58
     bool $FindFreeEmitter$b__77_1(::OVR::SoundEmitter* item);
     // public System.Void .ctor()
-    // Offset: 0x12A7FAC
+    // Offset: 0x18A5B50
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -57,10 +57,10 @@ namespace Firebase::Firestore::Internal {
     template<typename U>
     class $MapResult$c__AnonStorey1_1;
     // static System.Void Unreachable()
-    // Offset: 0xC41784
+    // Offset: 0xD65CE0
     static void Unreachable();
     // static System.Void HardAssert(System.Boolean condition, System.String message)
-    // Offset: 0xC2FD48
+    // Offset: 0xD51BE0
     static void HardAssert(bool condition, ::StringW message);
     // static T NotNull(T obj, System.String message)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -90,11 +90,14 @@ namespace Firebase::Firestore::Internal {
       return ::il2cpp_utils::RunMethodRethrow<::System::Threading::Tasks::Task_1<U>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, task, result);
     }
     // static System.Void FlattenAndThrowException(System.Threading.Tasks.Task completedTask)
-    // Offset: 0xC41788
+    // Offset: 0xD65CE4
     static void FlattenAndThrowException(::System::Threading::Tasks::Task* completedTask);
     // static System.Exception FlattenException(System.AggregateException aggregateException)
-    // Offset: 0xC4184C
+    // Offset: 0xD65DA8
     static ::System::Exception* FlattenException(::System::AggregateException* aggregateException);
+    // static System.Void OnPInvokeManagedException(System.Exception exception, System.String methodName)
+    // Offset: 0xD5262C
+    static void OnPInvokeManagedException(::System::Exception* exception, ::StringW methodName);
   }; // Firebase.Firestore.Internal.Util
   #pragma pack(pop)
 }
@@ -142,5 +145,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::E
   static const MethodInfo* get() {
     static auto* aggregateException = &::il2cpp_utils::GetClassFromName("System", "AggregateException")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Internal::Util*), "FlattenException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{aggregateException});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::Internal::Util::OnPInvokeManagedException
+// Il2CppName: OnPInvokeManagedException
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Exception*, ::StringW)>(&Firebase::Firestore::Internal::Util::OnPInvokeManagedException)> {
+  static const MethodInfo* get() {
+    static auto* exception = &::il2cpp_utils::GetClassFromName("System", "Exception")->byval_arg;
+    static auto* methodName = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Internal::Util*), "OnPInvokeManagedException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{exception, methodName});
   }
 };

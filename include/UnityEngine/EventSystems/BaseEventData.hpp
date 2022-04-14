@@ -44,15 +44,7 @@ namespace UnityEngine::EventSystems {
     public:
     // Writing base type padding for base size: 0x11 to desired offset: 0x18
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly UnityEngine.EventSystems.EventSystem m_EventSystem
     // Size: 0x8
     // Offset: 0x18
@@ -63,18 +55,18 @@ namespace UnityEngine::EventSystems {
     // Deleting conversion operator: operator bool
     constexpr operator bool() const noexcept = delete;
     // Get instance field reference: private readonly UnityEngine.EventSystems.EventSystem m_EventSystem
-    ::UnityEngine::EventSystems::EventSystem*& dyn_m_EventSystem();
+    [[deprecated]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_EventSystem();
     // public UnityEngine.EventSystems.BaseInputModule get_currentInputModule()
-    // Offset: 0xBB4944
+    // Offset: 0xEAAF90
     ::UnityEngine::EventSystems::BaseInputModule* get_currentInputModule();
     // public UnityEngine.GameObject get_selectedObject()
-    // Offset: 0xBB4960
+    // Offset: 0xEAAFAC
     ::UnityEngine::GameObject* get_selectedObject();
     // public System.Void set_selectedObject(UnityEngine.GameObject value)
-    // Offset: 0xBB497C
+    // Offset: 0xEAAFC8
     void set_selectedObject(::UnityEngine::GameObject* value);
     // public System.Void .ctor(UnityEngine.EventSystems.EventSystem eventSystem)
-    // Offset: 0xBB4918
+    // Offset: 0xEAAF64
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BaseEventData* New_ctor(::UnityEngine::EventSystems::EventSystem* eventSystem) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::BaseEventData::.ctor");

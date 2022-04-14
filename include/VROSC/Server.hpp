@@ -38,15 +38,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Server : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _serverName
     // Size: 0x8
     // Offset: 0x18
@@ -77,21 +69,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String _serverName
-    ::StringW& dyn__serverName();
+    [[deprecated]] ::StringW& dyn__serverName();
     // Get instance field reference: private System.Int32 _port
-    int& dyn__port();
+    [[deprecated]] int& dyn__port();
     // Get instance field reference: private UnityOSC.OSCServer server
-    ::UnityOSC::OSCServer*& dyn_server();
+    [[deprecated]] ::UnityOSC::OSCServer*& dyn_server();
     // Get instance field reference: private System.Boolean _isStarted
-    bool& dyn__isStarted();
+    [[deprecated]] bool& dyn__isStarted();
     // public System.Void StartOSCServer()
-    // Offset: 0x13E5E24
+    // Offset: 0x1984EF4
     void StartOSCServer();
     // private System.Void OnPacketReceived(UnityOSC.OSCServer server, UnityOSC.OSCPacket packet)
-    // Offset: 0x13E5F58
+    // Offset: 0x1985028
     void OnPacketReceived(::UnityOSC::OSCServer* server, ::UnityOSC::OSCPacket* packet);
     // public System.Void .ctor()
-    // Offset: 0x13E60E4
+    // Offset: 0x19851B4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

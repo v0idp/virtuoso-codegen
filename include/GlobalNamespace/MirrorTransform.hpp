@@ -36,15 +36,7 @@ namespace GlobalNamespace {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class MirrorTransform : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _mirror
     // Size: 0x8
     // Offset: 0x18
@@ -55,15 +47,15 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _mirror
-    ::UnityEngine::Transform*& dyn__mirror();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__mirror();
     // private System.Void Update()
-    // Offset: 0x8B5A48
+    // Offset: 0xAC9648
     void Update();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x8B5BF8
+    // Offset: 0xAC97F8
     void OnDrawGizmos();
     // public System.Void .ctor()
-    // Offset: 0x8B5CFC
+    // Offset: 0xAC98FC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

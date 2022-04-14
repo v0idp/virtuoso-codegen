@@ -37,15 +37,7 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class TranslateEffect::TranslateData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _transform
     // Size: 0x8
     // Offset: 0x10
@@ -72,22 +64,22 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Transform _transform
-    ::UnityEngine::Transform*& dyn__transform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__transform();
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private UnityEngine.Vector3 _endPosition
-    ::UnityEngine::Vector3& dyn__endPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__endPosition();
     // Get instance field reference: private System.Boolean _local
-    bool& dyn__local();
+    [[deprecated]] bool& dyn__local();
     // public System.Void .ctor(UnityEngine.Transform transform, VROSC.AudioReactive.TranslateEffectData data)
-    // Offset: 0x140D808
+    // Offset: 0xE7F8D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TranslateEffect::TranslateData* New_ctor(::UnityEngine::Transform* transform, ::VROSC::AudioReactive::TranslateEffectData* data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::TranslateEffect::TranslateData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TranslateEffect::TranslateData*, creationType>(transform, data)));
     }
     // public System.Void Lerp(System.Single amount)
-    // Offset: 0x140D760
+    // Offset: 0xE7F82C
     void Lerp(float amount);
   }; // VROSC.AudioReactive.TranslateEffect/VROSC.AudioReactive.TranslateData
   #pragma pack(pop)

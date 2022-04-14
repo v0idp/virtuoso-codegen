@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class StateMachine::Transition : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Func`1<System.Boolean> <Condition>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -59,17 +51,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::IState*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Func`1<System.Boolean> <Condition>k__BackingField
-    ::System::Func_1<bool>*& dyn_$Condition$k__BackingField();
+    [[deprecated]] ::System::Func_1<bool>*& dyn_$Condition$k__BackingField();
     // Get instance field reference: private readonly VROSC.IState <To>k__BackingField
-    ::VROSC::IState*& dyn_$To$k__BackingField();
+    [[deprecated]] ::VROSC::IState*& dyn_$To$k__BackingField();
     // public System.Func`1<System.Boolean> get_Condition()
-    // Offset: 0x134E3D4
+    // Offset: 0x8DA5EC
     ::System::Func_1<bool>* get_Condition();
     // public VROSC.IState get_To()
-    // Offset: 0x134E3DC
+    // Offset: 0x8DA5F4
     ::VROSC::IState* get_To();
     // public System.Void .ctor(VROSC.IState to, System.Func`1<System.Boolean> condition)
-    // Offset: 0x134E3E4
+    // Offset: 0x8DA5FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StateMachine::Transition* New_ctor(::VROSC::IState* to, ::System::Func_1<bool>* condition) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StateMachine::Transition::.ctor");

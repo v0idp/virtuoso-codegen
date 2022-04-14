@@ -132,20 +132,12 @@ namespace OVR {
       // Set static field: static public OVR.SoundEmitter/OVR.FadeState Ducking
       static void _set_Ducking(::OVR::SoundEmitter::FadeState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVR.SoundEmitter/OVR.FadeState
     #pragma pack(pop)
     static check_size<sizeof(SoundEmitter::FadeState), 0 + sizeof(int)> __OVR_SoundEmitter_FadeStateSizeCheck;
     static_assert(sizeof(SoundEmitter::FadeState) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVR.EmitterChannel channel
     // Size: 0x4
     // Offset: 0x18
@@ -252,157 +244,157 @@ namespace OVR {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVR.EmitterChannel channel
-    ::OVR::EmitterChannel& dyn_channel();
+    [[deprecated]] ::OVR::EmitterChannel& dyn_channel();
     // Get instance field reference: public System.Boolean disableSpatialization
-    bool& dyn_disableSpatialization();
+    [[deprecated]] bool& dyn_disableSpatialization();
     // Get instance field reference: private OVR.SoundEmitter/OVR.FadeState state
-    ::OVR::SoundEmitter::FadeState& dyn_state();
+    [[deprecated]] ::OVR::SoundEmitter::FadeState& dyn_state();
     // Get instance field reference: public UnityEngine.AudioSource audioSource
-    ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: public OVR.SoundPriority priority
-    ::OVR::SoundPriority& dyn_priority();
+    [[deprecated]] ::OVR::SoundPriority& dyn_priority();
     // Get instance field reference: public ONSPAudioSource osp
-    ::GlobalNamespace::ONSPAudioSource*& dyn_osp();
+    [[deprecated]] ::GlobalNamespace::ONSPAudioSource*& dyn_osp();
     // Get instance field reference: public System.Single endPlayTime
-    float& dyn_endPlayTime();
+    [[deprecated]] float& dyn_endPlayTime();
     // Get instance field reference: private UnityEngine.Transform lastParentTransform
-    ::UnityEngine::Transform*& dyn_lastParentTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_lastParentTransform();
     // Get instance field reference: public System.Single defaultVolume
-    float& dyn_defaultVolume();
+    [[deprecated]] float& dyn_defaultVolume();
     // Get instance field reference: public UnityEngine.Transform defaultParent
-    ::UnityEngine::Transform*& dyn_defaultParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_defaultParent();
     // Get instance field reference: public System.Int32 originalIdx
-    int& dyn_originalIdx();
+    [[deprecated]] int& dyn_originalIdx();
     // Get instance field reference: public System.Action onFinished
-    ::System::Action*& dyn_onFinished();
+    [[deprecated]] ::System::Action*& dyn_onFinished();
     // Get instance field reference: public System.Action`1<System.Object> onFinishedObject
-    ::System::Action_1<::Il2CppObject*>*& dyn_onFinishedObject();
+    [[deprecated]] ::System::Action_1<::Il2CppObject*>*& dyn_onFinishedObject();
     // Get instance field reference: public System.Object onFinishedParam
-    ::Il2CppObject*& dyn_onFinishedParam();
+    [[deprecated]] ::Il2CppObject*& dyn_onFinishedParam();
     // Get instance field reference: public OVR.SoundGroup playingSoundGroup
-    ::OVR::SoundGroup*& dyn_playingSoundGroup();
+    [[deprecated]] ::OVR::SoundGroup*& dyn_playingSoundGroup();
     // public System.Single get_volume()
-    // Offset: 0x12A5040
+    // Offset: 0x18A2BE4
     float get_volume();
     // public System.Void set_volume(System.Single value)
-    // Offset: 0x12A6AE8
+    // Offset: 0x18A468C
     void set_volume(float value);
     // public System.Single get_pitch()
-    // Offset: 0x12A6B04
+    // Offset: 0x18A46A8
     float get_pitch();
     // public System.Void set_pitch(System.Single value)
-    // Offset: 0x12A6B20
+    // Offset: 0x18A46C4
     void set_pitch(float value);
     // public UnityEngine.AudioClip get_clip()
-    // Offset: 0x12A6B3C
+    // Offset: 0x18A46E0
     ::UnityEngine::AudioClip* get_clip();
     // public System.Void set_clip(UnityEngine.AudioClip value)
-    // Offset: 0x12A6B58
+    // Offset: 0x18A46FC
     void set_clip(::UnityEngine::AudioClip* value);
     // public System.Single get_time()
-    // Offset: 0x12A6B74
+    // Offset: 0x18A4718
     float get_time();
     // public System.Void set_time(System.Single value)
-    // Offset: 0x12A2F98
+    // Offset: 0x18A0B3C
     void set_time(float value);
     // public System.Single get_length()
-    // Offset: 0x12A6B90
+    // Offset: 0x18A4734
     float get_length();
     // public System.Boolean get_loop()
-    // Offset: 0x12A6C44
+    // Offset: 0x18A47E8
     bool get_loop();
     // public System.Void set_loop(System.Boolean value)
-    // Offset: 0x12A6C60
+    // Offset: 0x18A4804
     void set_loop(bool value);
     // public System.Boolean get_mute()
-    // Offset: 0x12A6C80
+    // Offset: 0x18A4824
     bool get_mute();
     // public System.Void set_mute(System.Boolean value)
-    // Offset: 0x12A6C9C
+    // Offset: 0x18A4840
     void set_mute(bool value);
     // public UnityEngine.AudioVelocityUpdateMode get_velocityUpdateMode()
-    // Offset: 0x12A6CBC
+    // Offset: 0x18A4860
     ::UnityEngine::AudioVelocityUpdateMode get_velocityUpdateMode();
     // public System.Void set_velocityUpdateMode(UnityEngine.AudioVelocityUpdateMode value)
-    // Offset: 0x12A6CD8
+    // Offset: 0x18A487C
     void set_velocityUpdateMode(::UnityEngine::AudioVelocityUpdateMode value);
     // public System.Boolean get_isPlaying()
-    // Offset: 0x12A6CF4
+    // Offset: 0x18A4898
     bool get_isPlaying();
     // private System.Void Awake()
-    // Offset: 0x12A6D10
+    // Offset: 0x18A48B4
     void Awake();
     // public System.Void SetPlayingSoundGroup(OVR.SoundGroup soundGroup)
-    // Offset: 0x12A4FFC
+    // Offset: 0x18A2BA0
     void SetPlayingSoundGroup(::OVR::SoundGroup* soundGroup);
     // public System.Void SetOnFinished(System.Action onFinished)
-    // Offset: 0x12A6F00
+    // Offset: 0x18A4AA4
     void SetOnFinished(::System::Action* onFinished);
     // public System.Void SetOnFinished(System.Action`1<System.Object> onFinished, System.Object obj)
-    // Offset: 0x12A531C
+    // Offset: 0x18A2EC0
     void SetOnFinished(::System::Action_1<::Il2CppObject*>* onFinished, ::Il2CppObject* obj);
     // public System.Void SetChannel(System.Int32 _channel)
-    // Offset: 0x12A6F08
+    // Offset: 0x18A4AAC
     void SetChannel(int _channel);
     // public System.Void SetDefaultParent(UnityEngine.Transform parent)
-    // Offset: 0x12A6F10
+    // Offset: 0x18A4AB4
     void SetDefaultParent(::UnityEngine::Transform* parent);
     // public System.Void SetAudioMixer(UnityEngine.Audio.AudioMixerGroup _mixer)
-    // Offset: 0x12A5A9C
+    // Offset: 0x18A3640
     void SetAudioMixer(::UnityEngine::Audio::AudioMixerGroup* _mixer);
     // public System.Boolean IsPlaying()
-    // Offset: 0x12A2324
+    // Offset: 0x189FEC8
     bool IsPlaying();
     // public System.Void Play()
-    // Offset: 0x12A6F18
+    // Offset: 0x18A4ABC
     void Play();
     // public System.Void Pause()
-    // Offset: 0x12A6F78
+    // Offset: 0x18A4B1C
     void Pause();
     // public System.Void Stop()
-    // Offset: 0x12A214C
+    // Offset: 0x189FCF0
     void Stop();
     // private System.Int32 GetSampleTime()
-    // Offset: 0x12A6FEC
+    // Offset: 0x18A4B90
     int GetSampleTime();
     // public System.Void ParentTo(UnityEngine.Transform parent)
-    // Offset: 0x12A5548
+    // Offset: 0x18A30EC
     void ParentTo(::UnityEngine::Transform* parent);
     // public System.Void DetachFromParent()
-    // Offset: 0x12A57A8
+    // Offset: 0x18A334C
     void DetachFromParent();
     // public System.Void ResetParent(UnityEngine.Transform parent)
-    // Offset: 0x12A2734
+    // Offset: 0x18A02D8
     void ResetParent(::UnityEngine::Transform* parent);
     // public System.Void SyncTo(OVR.SoundEmitter other, System.Single fadeTime, System.Single toVolume)
-    // Offset: 0x12A7044
+    // Offset: 0x18A4BE8
     void SyncTo(::OVR::SoundEmitter* other, float fadeTime, float toVolume);
     // private System.Collections.IEnumerator DelayedSyncTo(OVR.SoundEmitter other, System.Single fadeTime, System.Single toVolume)
-    // Offset: 0x12A7070
+    // Offset: 0x18A4C14
     ::System::Collections::IEnumerator* DelayedSyncTo(::OVR::SoundEmitter* other, float fadeTime, float toVolume);
     // public System.Void FadeTo(System.Single fadeTime, System.Single toVolume)
-    // Offset: 0x12A7128
+    // Offset: 0x18A4CCC
     void FadeTo(float fadeTime, float toVolume);
     // public System.Void FadeIn(System.Single fadeTime, System.Single defaultVolume)
-    // Offset: 0x12A2B24
+    // Offset: 0x18A06C8
     void FadeIn(float fadeTime, float defaultVolume);
     // public System.Void FadeIn(System.Single fadeTime)
-    // Offset: 0x12A2BA0
+    // Offset: 0x18A0744
     void FadeIn(float fadeTime);
     // public System.Void FadeOut(System.Single fadeTime)
-    // Offset: 0x12A29D8
+    // Offset: 0x18A057C
     void FadeOut(float fadeTime);
     // public System.Void FadeOutDelayed(System.Single delayedSecs, System.Single fadeTime)
-    // Offset: 0x12A2828
+    // Offset: 0x18A03CC
     void FadeOutDelayed(float delayedSecs, float fadeTime);
     // private System.Collections.IEnumerator FadeSoundChannelTo(System.Single fadeTime, System.Single toVolume)
-    // Offset: 0x12A7190
+    // Offset: 0x18A4D34
     ::System::Collections::IEnumerator* FadeSoundChannelTo(float fadeTime, float toVolume);
     // private System.Collections.IEnumerator FadeSoundChannel(System.Single delaySecs, System.Single fadeTime, OVR.Fade fadeType, System.Single defaultVolume)
-    // Offset: 0x12A7210
+    // Offset: 0x18A4DB4
     ::System::Collections::IEnumerator* FadeSoundChannel(float delaySecs, float fadeTime, ::OVR::Fade fadeType, float defaultVolume);
     // public System.Void .ctor()
-    // Offset: 0x12A730C
+    // Offset: 0x18A4EB0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

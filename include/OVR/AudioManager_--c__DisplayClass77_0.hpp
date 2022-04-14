@@ -33,15 +33,7 @@ namespace OVR {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class AudioManager::$$c__DisplayClass77_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVR.SoundPriority priority
     // Size: 0x4
     // Offset: 0x10
@@ -54,12 +46,12 @@ namespace OVR {
       return priority;
     }
     // Get instance field reference: public OVR.SoundPriority priority
-    ::OVR::SoundPriority& dyn_priority();
+    [[deprecated]] ::OVR::SoundPriority& dyn_priority();
     // System.Boolean <FindFreeEmitter>b__0(OVR.SoundEmitter item)
-    // Offset: 0x12A8040
+    // Offset: 0x18A5BE4
     bool $FindFreeEmitter$b__0(::OVR::SoundEmitter* item);
     // public System.Void .ctor()
-    // Offset: 0x12A412C
+    // Offset: 0x18A1CD0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

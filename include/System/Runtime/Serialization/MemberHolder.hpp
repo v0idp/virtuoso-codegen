@@ -35,15 +35,7 @@ namespace System::Runtime::Serialization {
   // [TokenAttribute] Offset: FFFFFFFF
   class MemberHolder : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Type memberType
     // Size: 0x8
     // Offset: 0x10
@@ -58,23 +50,23 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
     public:
     // Get instance field reference: System.Type memberType
-    ::System::Type*& dyn_memberType();
+    [[deprecated]] ::System::Type*& dyn_memberType();
     // Get instance field reference: System.Runtime.Serialization.StreamingContext context
-    ::System::Runtime::Serialization::StreamingContext& dyn_context();
+    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_context();
     // System.Void .ctor(System.Type type, System.Runtime.Serialization.StreamingContext ctx)
-    // Offset: 0xECE548
+    // Offset: 0xFFCB5C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MemberHolder* New_ctor(::System::Type* type, ::System::Runtime::Serialization::StreamingContext ctx) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::MemberHolder::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MemberHolder*, creationType>(type, ctx)));
     }
     // public override System.Int32 GetHashCode()
-    // Offset: 0xECE588
+    // Offset: 0xFFCB9C
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xECE5A8
+    // Offset: 0xFFCBBC
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);

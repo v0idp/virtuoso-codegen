@@ -89,23 +89,23 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Boolean bActive
-    bool& dyn_bActive();
+    [[deprecated]] bool& dyn_bActive();
     // Get instance field reference: public System.UInt64 activeOrigin
-    uint64_t& dyn_activeOrigin();
+    [[deprecated]] uint64_t& dyn_activeOrigin();
     // Get instance field reference: public System.Single x
-    float& dyn_x();
+    [[deprecated]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    float& dyn_y();
+    [[deprecated]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    float& dyn_z();
+    [[deprecated]] float& dyn_z();
     // Get instance field reference: public System.Single deltaX
-    float& dyn_deltaX();
+    [[deprecated]] float& dyn_deltaX();
     // Get instance field reference: public System.Single deltaY
-    float& dyn_deltaY();
+    [[deprecated]] float& dyn_deltaY();
     // Get instance field reference: public System.Single deltaZ
-    float& dyn_deltaZ();
+    [[deprecated]] float& dyn_deltaZ();
     // Get instance field reference: public System.Single fUpdateTime
-    float& dyn_fUpdateTime();
+    [[deprecated]] float& dyn_fUpdateTime();
   }; // OVR.OpenVR.InputAnalogActionData_t
   #pragma pack(pop)
   static check_size<sizeof(InputAnalogActionData_t), 40 + sizeof(float)> __OVR_OpenVR_InputAnalogActionData_tSizeCheck;

@@ -24,15 +24,7 @@ namespace UnityEngine::Experimental::TerrainAPI {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class TerrainUtility::$$c__DisplayClass4_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean onlyAutoConnectedTerrains
     // Size: 0x1
     // Offset: 0x10
@@ -45,9 +37,9 @@ namespace UnityEngine::Experimental::TerrainAPI {
       return onlyAutoConnectedTerrains;
     }
     // Get instance field reference: public System.Boolean onlyAutoConnectedTerrains
-    bool& dyn_onlyAutoConnectedTerrains();
+    [[deprecated]] bool& dyn_onlyAutoConnectedTerrains();
     // public System.Void .ctor()
-    // Offset: 0x12E1A24
+    // Offset: 0x18E5C98
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

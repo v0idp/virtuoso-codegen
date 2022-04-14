@@ -42,15 +42,7 @@ namespace System::Net {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class WebRequest::$$c__DisplayClass79_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Security.Principal.WindowsIdentity currentUser
     // Size: 0x8
     // Offset: 0x10
@@ -65,14 +57,14 @@ namespace System::Net {
     static_assert(sizeof(::System::Net::WebRequest*) == 0x8);
     public:
     // Get instance field reference: public System.Security.Principal.WindowsIdentity currentUser
-    ::System::Security::Principal::WindowsIdentity*& dyn_currentUser();
+    [[deprecated]] ::System::Security::Principal::WindowsIdentity*& dyn_currentUser();
     // Get instance field reference: public System.Net.WebRequest <>4__this
-    ::System::Net::WebRequest*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebRequest*& dyn_$$4__this();
     // System.Threading.Tasks.Task`1<System.Net.WebResponse> <GetResponseAsync>b__1()
-    // Offset: 0x8EB818
+    // Offset: 0xA09384
     ::System::Threading::Tasks::Task_1<::System::Net::WebResponse*>* $GetResponseAsync$b__1();
     // public System.Void .ctor()
-    // Offset: 0x8EB810
+    // Offset: 0xA0937C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

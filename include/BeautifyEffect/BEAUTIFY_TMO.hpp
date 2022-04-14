@@ -54,7 +54,7 @@ namespace BeautifyEffect {
     // Set static field: static public BeautifyEffect.BEAUTIFY_TMO ACES
     static void _set_ACES(::BeautifyEffect::BEAUTIFY_TMO value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // BeautifyEffect.BEAUTIFY_TMO
   #pragma pack(pop)
   static check_size<sizeof(BEAUTIFY_TMO), 0 + sizeof(int)> __BeautifyEffect_BEAUTIFY_TMOSizeCheck;

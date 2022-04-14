@@ -38,15 +38,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class HapticManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<VROSC.HapticRequest> _hapticRequests
     // Size: 0x8
     // Offset: 0x18
@@ -57,15 +49,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.HapticRequest> _hapticRequests
-    ::System::Collections::Generic::List_1<::VROSC::HapticRequest>*& dyn__hapticRequests();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::HapticRequest>*& dyn__hapticRequests();
     // public System.Void RequestHapticFeedback(VROSC.HapticRequest hapticRequest)
-    // Offset: 0x89899C
+    // Offset: 0x19ABB94
     void RequestHapticFeedback(::VROSC::HapticRequest hapticRequest);
     // protected System.Void Update()
-    // Offset: 0x898ADC
+    // Offset: 0x19ABCD4
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x898DE0
+    // Offset: 0x19ABFD8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

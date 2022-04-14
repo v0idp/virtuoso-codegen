@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupInputManagerState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.InputManager _inputManager
     // Size: 0x8
     // Offset: 0x10
@@ -62,25 +54,25 @@ namespace VROSC {
       return inputManager;
     }
     // Get instance field reference: private VROSC.InputManager _inputManager
-    ::VROSC::InputManager*& dyn__inputManager();
+    [[deprecated]] ::VROSC::InputManager*& dyn__inputManager();
     // public System.Void .ctor(VROSC.InputManager inputManager)
-    // Offset: 0x13B3970
+    // Offset: 0x192683C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupInputManagerState* New_ctor(::VROSC::InputManager* inputManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupInputManagerState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupInputManagerState*, creationType>(inputManager)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B399C
+    // Offset: 0x1926868
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B39B8
+    // Offset: 0x1926884
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B39BC
+    // Offset: 0x1926888
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B39C0
+    // Offset: 0x192688C
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupInputManagerState
   #pragma pack(pop)

@@ -27,15 +27,7 @@ namespace UnityEngine::Profiling::Memory::Experimental {
   // [TokenAttribute] Offset: FFFFFFFF
   class MetaData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String content
     // Size: 0x8
     // Offset: 0x10
@@ -50,11 +42,11 @@ namespace UnityEngine::Profiling::Memory::Experimental {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String content
-    ::StringW& dyn_content();
+    [[deprecated]] ::StringW& dyn_content();
     // Get instance field reference: public System.String platform
-    ::StringW& dyn_platform();
+    [[deprecated]] ::StringW& dyn_platform();
     // public System.Void .ctor()
-    // Offset: 0x9C6FC4
+    // Offset: 0xBBBD6C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

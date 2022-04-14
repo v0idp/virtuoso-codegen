@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class BitMaskAttribute : public ::UnityEngine::PropertyAttribute {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Type propType
     // Size: 0x8
     // Offset: 0x10
@@ -56,9 +48,9 @@ namespace VROSC {
       return propType;
     }
     // Get instance field reference: public System.Type propType
-    ::System::Type*& dyn_propType();
+    [[deprecated]] ::System::Type*& dyn_propType();
     // public System.Void .ctor(System.Type aType)
-    // Offset: 0x1323B58
+    // Offset: 0x9376D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BitMaskAttribute* New_ctor(::System::Type* aType) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BitMaskAttribute::.ctor");

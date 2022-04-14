@@ -78,20 +78,12 @@ namespace VROSC {
       // Set static field: static public VROSC.ParameterController/VROSC.TargetParameter MidiCC
       static void _set_MidiCC(::VROSC::ParameterController::TargetParameter value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.ParameterController/VROSC.TargetParameter
     #pragma pack(pop)
     static check_size<sizeof(ParameterController::TargetParameter), 0 + sizeof(int)> __VROSC_ParameterController_TargetParameterSizeCheck;
     static_assert(sizeof(ParameterController::TargetParameter) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ParameterController/VROSC.TargetParameter _targetParameter
     // Size: 0x4
     // Offset: 0x40
@@ -138,28 +130,28 @@ namespace VROSC {
     // Set static field: static private System.Single MaxExternalSendFrequency
     static void _set_MaxExternalSendFrequency(float value);
     // Get instance field reference: private VROSC.ParameterController/VROSC.TargetParameter _targetParameter
-    ::VROSC::ParameterController::TargetParameter& dyn__targetParameter();
+    [[deprecated]] ::VROSC::ParameterController::TargetParameter& dyn__targetParameter();
     // Get instance field reference: private VROSC.MidiCC _midiCC
-    ::VROSC::MidiCC& dyn__midiCC();
+    [[deprecated]] ::VROSC::MidiCC& dyn__midiCC();
     // Get instance field reference: private VROSC.InstrumentController _instrument
-    ::VROSC::InstrumentController*& dyn__instrument();
+    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrument();
     // Get instance field reference: private System.Boolean _handSpecific
-    bool& dyn__handSpecific();
+    [[deprecated]] bool& dyn__handSpecific();
     // Get instance field reference: private System.Boolean _saveToPatch
-    bool& dyn__saveToPatch();
+    [[deprecated]] bool& dyn__saveToPatch();
     // Get instance field reference: private System.Single _lastSendTime
-    float& dyn__lastSendTime();
+    [[deprecated]] float& dyn__lastSendTime();
     // public VROSC.InstrumentController get_Instrument()
-    // Offset: 0x8F8200
+    // Offset: 0xADC9D8
     ::VROSC::InstrumentController* get_Instrument();
     // public System.Void set_Instrument(VROSC.InstrumentController value)
-    // Offset: 0x8F8208
+    // Offset: 0xADC9E0
     void set_Instrument(::VROSC::InstrumentController* value);
     // private System.Void UpdateParameterChange(VROSC.Signal signal)
-    // Offset: 0x8F8214
+    // Offset: 0xADC9EC
     void UpdateParameterChange(::VROSC::Signal* signal);
     // public System.Void .ctor()
-    // Offset: 0x8F8428
+    // Offset: 0xADCBC0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -174,12 +166,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ParameterController*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x8F8210
+    // Offset: 0xADC9E8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x8F8424
+    // Offset: 0xADCBBC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);

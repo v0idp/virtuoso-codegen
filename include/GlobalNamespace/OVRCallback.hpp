@@ -38,20 +38,20 @@ namespace GlobalNamespace {
   class OVRCallback : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xA19494
+    // Offset: 0xC5E4F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRCallback* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRCallback*, creationType>(object, method)));
     }
     // public System.Void Invoke()
-    // Offset: 0xA194A4
+    // Offset: 0xC5E508
     void Invoke();
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
-    // Offset: 0xA196B0
+    // Offset: 0xC5E714
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xA196DC
+    // Offset: 0xC5E740
     void EndInvoke(::System::IAsyncResult* result);
   }; // OVRCallback
   #pragma pack(pop)

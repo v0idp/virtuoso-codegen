@@ -31,15 +31,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ZipFileWriter::$$c__DisplayClass3_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Exception e
     // Size: 0x8
     // Offset: 0x10
@@ -54,14 +46,14 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::ZipFileWriter::$$c__DisplayClass3_0*) == 0x8);
     public:
     // Get instance field reference: public System.Exception e
-    ::System::Exception*& dyn_e();
+    [[deprecated]] ::System::Exception*& dyn_e();
     // Get instance field reference: public VROSC.ZipFileWriter/VROSC.<>c__DisplayClass3_0 CS$<>8__locals1
-    ::VROSC::ZipFileWriter::$$c__DisplayClass3_0*& dyn_CS$$$8__locals1();
+    [[deprecated]] ::VROSC::ZipFileWriter::$$c__DisplayClass3_0*& dyn_CS$$$8__locals1();
     // System.Void <ExtractZipToFolder>b__1()
-    // Offset: 0x141847C
+    // Offset: 0xE8A6FC
     void $ExtractZipToFolder$b__1();
     // public System.Void .ctor()
-    // Offset: 0x1418474
+    // Offset: 0xE8A6F4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

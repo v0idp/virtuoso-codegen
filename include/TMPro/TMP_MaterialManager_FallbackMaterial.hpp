@@ -30,15 +30,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_MaterialManager::FallbackMaterial : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int64 fallbackID
     // Size: 0x8
     // Offset: 0x10
@@ -73,17 +65,17 @@ namespace TMPro {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int64 fallbackID
-    int64_t& dyn_fallbackID();
+    [[deprecated]] int64_t& dyn_fallbackID();
     // Get instance field reference: public UnityEngine.Material sourceMaterial
-    ::UnityEngine::Material*& dyn_sourceMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_sourceMaterial();
     // Get instance field reference: System.Int32 sourceMaterialCRC
-    int& dyn_sourceMaterialCRC();
+    [[deprecated]] int& dyn_sourceMaterialCRC();
     // Get instance field reference: public UnityEngine.Material fallbackMaterial
-    ::UnityEngine::Material*& dyn_fallbackMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_fallbackMaterial();
     // Get instance field reference: public System.Int32 count
-    int& dyn_count();
+    [[deprecated]] int& dyn_count();
     // public System.Void .ctor()
-    // Offset: 0x1247154
+    // Offset: 0x18211F0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

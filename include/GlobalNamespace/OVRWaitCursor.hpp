@@ -28,15 +28,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRWaitCursor : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Vector3 rotateSpeeds
     // Size: 0xC
     // Offset: 0x18
@@ -47,12 +39,12 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Vector3 rotateSpeeds
-    ::UnityEngine::Vector3& dyn_rotateSpeeds();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_rotateSpeeds();
     // private System.Void Update()
-    // Offset: 0x6ECB50
+    // Offset: 0x803254
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x6ECBB8
+    // Offset: 0x8032BC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -79,15 +79,7 @@ namespace Facebook::WitAi {
     class QueryParam;
     // Nested type: ::Facebook::WitAi::WitRequest::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Facebook.WitAi.Data.Configuration.WitConfiguration configuration
     // Size: 0x8
     // Offset: 0x10
@@ -300,111 +292,111 @@ namespace Facebook::WitAi {
     // Set static field: static private System.String deviceName
     static void _set_deviceName(::StringW value);
     // Get instance field reference: private Facebook.WitAi.Data.Configuration.WitConfiguration configuration
-    ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_configuration();
+    [[deprecated]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_configuration();
     // Get instance field reference: private System.IO.Stream activeStream
-    ::System::IO::Stream*& dyn_activeStream();
+    [[deprecated]] ::System::IO::Stream*& dyn_activeStream();
     // Get instance field reference: private System.String command
-    ::StringW& dyn_command();
+    [[deprecated]] ::StringW& dyn_command();
     // Get instance field reference: private System.String path
-    ::StringW& dyn_path();
+    [[deprecated]] ::StringW& dyn_path();
     // Get instance field reference: public Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam[] queryParams
-    ::ArrayW<::Facebook::WitAi::WitRequest::QueryParam*>& dyn_queryParams();
+    [[deprecated]] ::ArrayW<::Facebook::WitAi::WitRequest::QueryParam*>& dyn_queryParams();
     // Get instance field reference: private System.Net.HttpWebRequest request
-    ::System::Net::HttpWebRequest*& dyn_request();
+    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_request();
     // Get instance field reference: private System.Net.HttpWebResponse response
-    ::System::Net::HttpWebResponse*& dyn_response();
+    [[deprecated]] ::System::Net::HttpWebResponse*& dyn_response();
     // Get instance field reference: private System.IO.Stream stream
-    ::System::IO::Stream*& dyn_stream();
+    [[deprecated]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private Facebook.WitAi.Lib.WitResponseNode responseData
-    ::Facebook::WitAi::Lib::WitResponseNode*& dyn_responseData();
+    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_responseData();
     // Get instance field reference: private System.Boolean isActive
-    bool& dyn_isActive();
+    [[deprecated]] bool& dyn_isActive();
     // Get instance field reference: public System.Byte[] postData
-    ::ArrayW<uint8_t>& dyn_postData();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_postData();
     // Get instance field reference: public System.String postContentType
-    ::StringW& dyn_postContentType();
+    [[deprecated]] ::StringW& dyn_postContentType();
     // Get instance field reference: public System.Action`1<Facebook.WitAi.WitRequest> onResponse
-    ::System::Action_1<::Facebook::WitAi::WitRequest*>*& dyn_onResponse();
+    [[deprecated]] ::System::Action_1<::Facebook::WitAi::WitRequest*>*& dyn_onResponse();
     // Get instance field reference: public System.Action`1<Facebook.WitAi.WitRequest> onInputStreamReady
-    ::System::Action_1<::Facebook::WitAi::WitRequest*>*& dyn_onInputStreamReady();
+    [[deprecated]] ::System::Action_1<::Facebook::WitAi::WitRequest*>*& dyn_onInputStreamReady();
     // Get instance field reference: public System.Action`1<System.String> onRawResponse
-    ::System::Action_1<::StringW>*& dyn_onRawResponse();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onRawResponse();
     // Get instance field reference: public System.Action`1<System.String> onPartialTranscription
-    ::System::Action_1<::StringW>*& dyn_onPartialTranscription();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onPartialTranscription();
     // Get instance field reference: public System.Action`1<System.String> onFullTranscription
-    ::System::Action_1<::StringW>*& dyn_onFullTranscription();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onFullTranscription();
     // Get instance field reference: public Facebook.WitAi.Data.AudioEncoding audioEncoding
-    ::Facebook::WitAi::Data::AudioEncoding*& dyn_audioEncoding();
+    [[deprecated]] ::Facebook::WitAi::Data::AudioEncoding*& dyn_audioEncoding();
     // Get instance field reference: private System.Int32 statusCode
-    int& dyn_statusCode();
+    [[deprecated]] int& dyn_statusCode();
     // Get instance field reference: private System.String statusDescription
-    ::StringW& dyn_statusDescription();
+    [[deprecated]] ::StringW& dyn_statusDescription();
     // Get instance field reference: private System.Boolean isRequestStreamActive
-    bool& dyn_isRequestStreamActive();
+    [[deprecated]] bool& dyn_isRequestStreamActive();
     // Get instance field reference: private System.Boolean isServerAuthRequired
-    bool& dyn_isServerAuthRequired();
+    [[deprecated]] bool& dyn_isServerAuthRequired();
     // Get instance field reference: private System.Boolean configurationRequired
-    bool& dyn_configurationRequired();
+    [[deprecated]] bool& dyn_configurationRequired();
     // Get instance field reference: private System.String serverToken
-    ::StringW& dyn_serverToken();
+    [[deprecated]] ::StringW& dyn_serverToken();
     // Get instance field reference: private System.String callingStackTrace
-    ::StringW& dyn_callingStackTrace();
+    [[deprecated]] ::StringW& dyn_callingStackTrace();
     // public System.Boolean get_IsActive()
-    // Offset: 0x10FEBC0
+    // Offset: 0x1675428
     bool get_IsActive();
     // public Facebook.WitAi.Lib.WitResponseNode get_ResponseData()
-    // Offset: 0x10FEBC8
+    // Offset: 0x1675430
     ::Facebook::WitAi::Lib::WitResponseNode* get_ResponseData();
     // public System.Int32 get_StatusCode()
-    // Offset: 0x10FEBD0
+    // Offset: 0x1675438
     int get_StatusCode();
     // public System.Boolean get_IsRequestStreamActive()
-    // Offset: 0x10FB780
+    // Offset: 0x1671FE8
     bool get_IsRequestStreamActive();
     // public System.String get_StatusDescription()
-    // Offset: 0x10FEBD8
+    // Offset: 0x1675440
     ::StringW get_StatusDescription();
     // public System.Void .ctor(Facebook.WitAi.Data.Configuration.WitConfiguration configuration, System.String path, params Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam[] queryParams)
-    // Offset: 0x10FEBE8
+    // Offset: 0x1675450
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitRequest* New_ctor(::Facebook::WitAi::Data::Configuration::WitConfiguration* configuration, ::StringW path, ::ArrayW<::Facebook::WitAi::WitRequest::QueryParam*> queryParams) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitRequest::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitRequest*, creationType>(configuration, path, queryParams)));
     }
     // public System.Void .ctor(Facebook.WitAi.Data.Configuration.WitConfiguration configuration, System.String path, System.Boolean isServerAuthRequired, params Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam[] queryParams)
-    // Offset: 0x10FEDF0
+    // Offset: 0x1675658
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitRequest* New_ctor(::Facebook::WitAi::Data::Configuration::WitConfiguration* configuration, ::StringW path, bool isServerAuthRequired, ::ArrayW<::Facebook::WitAi::WitRequest::QueryParam*> queryParams) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitRequest::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitRequest*, creationType>(configuration, path, isServerAuthRequired, queryParams)));
     }
     // public System.Void .ctor(System.String serverToken, System.String path, params Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam[] queryParams)
-    // Offset: 0x10FEFF8
+    // Offset: 0x1675860
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitRequest* New_ctor(::StringW serverToken, ::StringW path, ::ArrayW<::Facebook::WitAi::WitRequest::QueryParam*> queryParams) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitRequest::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitRequest*, creationType>(serverToken, path, queryParams)));
     }
     // public System.Void Request()
-    // Offset: 0x10FCAD8
+    // Offset: 0x1673340
     void Request();
     // private System.Void StartRequest(System.Uri uri)
-    // Offset: 0x10FF100
+    // Offset: 0x1675968
     void StartRequest(::System::Uri* uri);
     // private System.Void HandleResponse(System.IAsyncResult ar)
-    // Offset: 0x10FF870
+    // Offset: 0x16760D8
     void HandleResponse(::System::IAsyncResult* ar);
     // private System.Void HandleRequestStream(System.IAsyncResult ar)
-    // Offset: 0x11004D4
+    // Offset: 0x1676D40
     void HandleRequestStream(::System::IAsyncResult* ar);
     // public System.Void CloseRequestStream()
-    // Offset: 0x10FCF84
+    // Offset: 0x16737EC
     void CloseRequestStream();
     // public System.Void Write(System.Byte[] data, System.Int32 offset, System.Int32 length)
-    // Offset: 0x10FB7A0
+    // Offset: 0x1672008
     void Write(::ArrayW<uint8_t> data, int offset, int length);
     // public override System.String ToString()
-    // Offset: 0x10FEBE0
+    // Offset: 0x1675448
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

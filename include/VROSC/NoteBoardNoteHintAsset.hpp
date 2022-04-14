@@ -50,15 +50,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoardNoteHintAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.NoteBoardNoteHintBehaviour template
     // Size: 0x8
     // Offset: 0x18
@@ -73,11 +65,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.NoteBoardNoteHintBehaviour template
-    ::VROSC::NoteBoardNoteHintBehaviour*& dyn_template();
+    [[deprecated]] ::VROSC::NoteBoardNoteHintBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Renderer> _target
-    ::UnityEngine::ExposedReference_1<::UnityEngine::Renderer*>& dyn__target();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Renderer*>& dyn__target();
     // public System.Void .ctor()
-    // Offset: 0xA132EC
+    // Offset: 0xC565D8
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -89,7 +81,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteHintAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0xA1318C
+    // Offset: 0xC56478
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

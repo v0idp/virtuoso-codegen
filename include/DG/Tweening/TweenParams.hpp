@@ -55,15 +55,7 @@ namespace DG::Tweening {
   // [TokenAttribute] Offset: FFFFFFFF
   class TweenParams : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Object id
     // Size: 0x8
     // Offset: 0x10
@@ -214,122 +206,122 @@ namespace DG::Tweening {
     // Set static field: static public readonly DG.Tweening.TweenParams Params
     static void _set_Params(::DG::Tweening::TweenParams* value);
     // Get instance field reference: System.Object id
-    ::Il2CppObject*& dyn_id();
+    [[deprecated]] ::Il2CppObject*& dyn_id();
     // Get instance field reference: System.Object target
-    ::Il2CppObject*& dyn_target();
+    [[deprecated]] ::Il2CppObject*& dyn_target();
     // Get instance field reference: DG.Tweening.UpdateType updateType
-    ::DG::Tweening::UpdateType& dyn_updateType();
+    [[deprecated]] ::DG::Tweening::UpdateType& dyn_updateType();
     // Get instance field reference: System.Boolean isIndependentUpdate
-    bool& dyn_isIndependentUpdate();
+    [[deprecated]] bool& dyn_isIndependentUpdate();
     // Get instance field reference: DG.Tweening.TweenCallback onStart
-    ::DG::Tweening::TweenCallback*& dyn_onStart();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onStart();
     // Get instance field reference: DG.Tweening.TweenCallback onPlay
-    ::DG::Tweening::TweenCallback*& dyn_onPlay();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onPlay();
     // Get instance field reference: DG.Tweening.TweenCallback onRewind
-    ::DG::Tweening::TweenCallback*& dyn_onRewind();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onRewind();
     // Get instance field reference: DG.Tweening.TweenCallback onUpdate
-    ::DG::Tweening::TweenCallback*& dyn_onUpdate();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onUpdate();
     // Get instance field reference: DG.Tweening.TweenCallback onStepComplete
-    ::DG::Tweening::TweenCallback*& dyn_onStepComplete();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onStepComplete();
     // Get instance field reference: DG.Tweening.TweenCallback onComplete
-    ::DG::Tweening::TweenCallback*& dyn_onComplete();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onComplete();
     // Get instance field reference: DG.Tweening.TweenCallback onKill
-    ::DG::Tweening::TweenCallback*& dyn_onKill();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onKill();
     // Get instance field reference: DG.Tweening.TweenCallback`1<System.Int32> onWaypointChange
-    ::DG::Tweening::TweenCallback_1<int>*& dyn_onWaypointChange();
+    [[deprecated]] ::DG::Tweening::TweenCallback_1<int>*& dyn_onWaypointChange();
     // Get instance field reference: System.Boolean isRecyclable
-    bool& dyn_isRecyclable();
+    [[deprecated]] bool& dyn_isRecyclable();
     // Get instance field reference: System.Boolean isSpeedBased
-    bool& dyn_isSpeedBased();
+    [[deprecated]] bool& dyn_isSpeedBased();
     // Get instance field reference: System.Boolean autoKill
-    bool& dyn_autoKill();
+    [[deprecated]] bool& dyn_autoKill();
     // Get instance field reference: System.Int32 loops
-    int& dyn_loops();
+    [[deprecated]] int& dyn_loops();
     // Get instance field reference: DG.Tweening.LoopType loopType
-    ::DG::Tweening::LoopType& dyn_loopType();
+    [[deprecated]] ::DG::Tweening::LoopType& dyn_loopType();
     // Get instance field reference: System.Single delay
-    float& dyn_delay();
+    [[deprecated]] float& dyn_delay();
     // Get instance field reference: System.Boolean isRelative
-    bool& dyn_isRelative();
+    [[deprecated]] bool& dyn_isRelative();
     // Get instance field reference: DG.Tweening.Ease easeType
-    ::DG::Tweening::Ease& dyn_easeType();
+    [[deprecated]] ::DG::Tweening::Ease& dyn_easeType();
     // Get instance field reference: DG.Tweening.EaseFunction customEase
-    ::DG::Tweening::EaseFunction*& dyn_customEase();
+    [[deprecated]] ::DG::Tweening::EaseFunction*& dyn_customEase();
     // Get instance field reference: System.Single easeOvershootOrAmplitude
-    float& dyn_easeOvershootOrAmplitude();
+    [[deprecated]] float& dyn_easeOvershootOrAmplitude();
     // Get instance field reference: System.Single easePeriod
-    float& dyn_easePeriod();
+    [[deprecated]] float& dyn_easePeriod();
     // static private System.Void .cctor()
-    // Offset: 0x103F154
+    // Offset: 0x15B5B4C
     static void _cctor();
     // public DG.Tweening.TweenParams Clear()
-    // Offset: 0x103ECD0
+    // Offset: 0x15B56C8
     ::DG::Tweening::TweenParams* Clear();
     // public DG.Tweening.TweenParams SetAutoKill(System.Boolean autoKillOnCompletion)
-    // Offset: 0x103EDB4
+    // Offset: 0x15B57AC
     ::DG::Tweening::TweenParams* SetAutoKill(bool autoKillOnCompletion);
     // public DG.Tweening.TweenParams SetId(System.Object id)
-    // Offset: 0x103EDC0
+    // Offset: 0x15B57B8
     ::DG::Tweening::TweenParams* SetId(::Il2CppObject* id);
     // public DG.Tweening.TweenParams SetTarget(System.Object target)
-    // Offset: 0x103EDC8
+    // Offset: 0x15B57C0
     ::DG::Tweening::TweenParams* SetTarget(::Il2CppObject* target);
     // public DG.Tweening.TweenParams SetLoops(System.Int32 loops, System.Nullable`1<DG.Tweening.LoopType> loopType)
-    // Offset: 0x103EDD0
+    // Offset: 0x15B57C8
     ::DG::Tweening::TweenParams* SetLoops(int loops, ::System::Nullable_1<::DG::Tweening::LoopType> loopType);
     // public DG.Tweening.TweenParams SetEase(DG.Tweening.Ease ease, System.Nullable`1<System.Single> overshootOrAmplitude, System.Nullable`1<System.Single> period)
-    // Offset: 0x103EE6C
+    // Offset: 0x15B5864
     ::DG::Tweening::TweenParams* SetEase(::DG::Tweening::Ease ease, ::System::Nullable_1<float> overshootOrAmplitude, ::System::Nullable_1<float> period);
     // public DG.Tweening.TweenParams SetEase(UnityEngine.AnimationCurve animCurve)
-    // Offset: 0x103EF88
+    // Offset: 0x15B5980
     ::DG::Tweening::TweenParams* SetEase(::UnityEngine::AnimationCurve* animCurve);
     // public DG.Tweening.TweenParams SetEase(DG.Tweening.EaseFunction customEase)
-    // Offset: 0x103F044
+    // Offset: 0x15B5A3C
     ::DG::Tweening::TweenParams* SetEase(::DG::Tweening::EaseFunction* customEase);
     // public DG.Tweening.TweenParams SetRecyclable(System.Boolean recyclable)
-    // Offset: 0x103F054
+    // Offset: 0x15B5A4C
     ::DG::Tweening::TweenParams* SetRecyclable(bool recyclable);
     // public DG.Tweening.TweenParams SetUpdate(System.Boolean isIndependentUpdate)
-    // Offset: 0x103F060
+    // Offset: 0x15B5A58
     ::DG::Tweening::TweenParams* SetUpdate(bool isIndependentUpdate);
     // public DG.Tweening.TweenParams SetUpdate(DG.Tweening.UpdateType updateType, System.Boolean isIndependentUpdate)
-    // Offset: 0x103F0E4
+    // Offset: 0x15B5ADC
     ::DG::Tweening::TweenParams* SetUpdate(::DG::Tweening::UpdateType updateType, bool isIndependentUpdate);
     // public DG.Tweening.TweenParams OnStart(DG.Tweening.TweenCallback action)
-    // Offset: 0x103F0F4
+    // Offset: 0x15B5AEC
     ::DG::Tweening::TweenParams* OnStart(::DG::Tweening::TweenCallback* action);
     // public DG.Tweening.TweenParams OnPlay(DG.Tweening.TweenCallback action)
-    // Offset: 0x103F0FC
+    // Offset: 0x15B5AF4
     ::DG::Tweening::TweenParams* OnPlay(::DG::Tweening::TweenCallback* action);
     // public DG.Tweening.TweenParams OnRewind(DG.Tweening.TweenCallback action)
-    // Offset: 0x103F104
+    // Offset: 0x15B5AFC
     ::DG::Tweening::TweenParams* OnRewind(::DG::Tweening::TweenCallback* action);
     // public DG.Tweening.TweenParams OnUpdate(DG.Tweening.TweenCallback action)
-    // Offset: 0x103F10C
+    // Offset: 0x15B5B04
     ::DG::Tweening::TweenParams* OnUpdate(::DG::Tweening::TweenCallback* action);
     // public DG.Tweening.TweenParams OnStepComplete(DG.Tweening.TweenCallback action)
-    // Offset: 0x103F114
+    // Offset: 0x15B5B0C
     ::DG::Tweening::TweenParams* OnStepComplete(::DG::Tweening::TweenCallback* action);
     // public DG.Tweening.TweenParams OnComplete(DG.Tweening.TweenCallback action)
-    // Offset: 0x103F11C
+    // Offset: 0x15B5B14
     ::DG::Tweening::TweenParams* OnComplete(::DG::Tweening::TweenCallback* action);
     // public DG.Tweening.TweenParams OnKill(DG.Tweening.TweenCallback action)
-    // Offset: 0x103F124
+    // Offset: 0x15B5B1C
     ::DG::Tweening::TweenParams* OnKill(::DG::Tweening::TweenCallback* action);
     // public DG.Tweening.TweenParams OnWaypointChange(DG.Tweening.TweenCallback`1<System.Int32> action)
-    // Offset: 0x103F12C
+    // Offset: 0x15B5B24
     ::DG::Tweening::TweenParams* OnWaypointChange(::DG::Tweening::TweenCallback_1<int>* action);
     // public DG.Tweening.TweenParams SetDelay(System.Single delay)
-    // Offset: 0x103F134
+    // Offset: 0x15B5B2C
     ::DG::Tweening::TweenParams* SetDelay(float delay);
     // public DG.Tweening.TweenParams SetRelative(System.Boolean isRelative)
-    // Offset: 0x103F13C
+    // Offset: 0x15B5B34
     ::DG::Tweening::TweenParams* SetRelative(bool isRelative);
     // public DG.Tweening.TweenParams SetSpeedBased(System.Boolean isSpeedBased)
-    // Offset: 0x103F148
+    // Offset: 0x15B5B40
     ::DG::Tweening::TweenParams* SetSpeedBased(bool isSpeedBased);
     // public System.Void .ctor()
-    // Offset: 0x103ECA8
+    // Offset: 0x15B56A0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

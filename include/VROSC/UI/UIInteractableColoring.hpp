@@ -44,16 +44,8 @@ namespace VROSC::UI {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class UIInteractableColoring : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [FormerlySerializedAsAttribute] Offset: 0x677188
+    // [FormerlySerializedAsAttribute] Offset: 0x78D9DC
     // protected VROSC.Interactable _interactable
     // Size: 0x8
     // Offset: 0x18
@@ -90,55 +82,55 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.Interactable _interactable
-    ::VROSC::Interactable*& dyn__interactable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__interactable();
     // Get instance field reference: protected System.Boolean _reactToHovering
-    bool& dyn__reactToHovering();
+    [[deprecated]] bool& dyn__reactToHovering();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _colorGetter
-    ::VROSC::UI::UIColorGetter*& dyn__colorGetter();
+    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__colorGetter();
     // Get instance field reference: private UnityEngine.Color <CurrentColor>k__BackingField
-    ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
     // Get instance field reference: private System.Nullable`1<System.Boolean> _overrideHovering
-    ::System::Nullable_1<bool>& dyn__overrideHovering();
+    [[deprecated]] ::System::Nullable_1<bool>& dyn__overrideHovering();
     // Get instance field reference: private System.Nullable`1<System.Boolean> _overrideDisabled
-    ::System::Nullable_1<bool>& dyn__overrideDisabled();
+    [[deprecated]] ::System::Nullable_1<bool>& dyn__overrideDisabled();
     // public UnityEngine.Color get_CurrentColor()
-    // Offset: 0x139ECF0
+    // Offset: 0x1912640
     ::UnityEngine::Color get_CurrentColor();
     // private System.Void set_CurrentColor(UnityEngine.Color value)
-    // Offset: 0x139ECE4
+    // Offset: 0x1912634
     void set_CurrentColor(::UnityEngine::Color value);
     // private System.Void OnEnable()
-    // Offset: 0x139ECFC
+    // Offset: 0x191264C
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x139EE78
+    // Offset: 0x19127C8
     void OnDisable();
     // protected System.Void Start()
-    // Offset: 0x139EF68
+    // Offset: 0x19128B8
     void Start();
     // public UnityEngine.Color GetColor()
-    // Offset: 0x139F150
+    // Offset: 0x1912AA0
     ::UnityEngine::Color GetColor();
     // public System.Void SetOvrerride(System.Nullable`1<System.Boolean> overrideHovering, System.Nullable`1<System.Boolean> overrideDisabled)
-    // Offset: 0x139F2F8
+    // Offset: 0x1912C24
     void SetOvrerride(::System::Nullable_1<bool> overrideHovering, ::System::Nullable_1<bool> overrideDisabled);
     // public System.Void UpdateColor()
-    // Offset: 0x139F30C
+    // Offset: 0x1912C38
     void UpdateColor();
     // public System.Void ApplyColor(UnityEngine.Color color)
-    // Offset: 0x139F310
+    // Offset: 0x1912C3C
     void ApplyColor(::UnityEngine::Color color);
     // private System.Void <Start>b__11_0(System.Boolean disabled)
-    // Offset: 0x139F32C
+    // Offset: 0x1912C58
     void $Start$b__11_0(bool disabled);
     // private System.Void <Start>b__11_1(System.Boolean hovering)
-    // Offset: 0x139F338
+    // Offset: 0x1912C64
     void $Start$b__11_1(bool hovering);
     // private System.Void <Start>b__11_2(System.Boolean interacting)
-    // Offset: 0x139F344
+    // Offset: 0x1912C70
     void $Start$b__11_2(bool interacting);
     // public System.Void .ctor()
-    // Offset: 0x139F31C
+    // Offset: 0x1912C48
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

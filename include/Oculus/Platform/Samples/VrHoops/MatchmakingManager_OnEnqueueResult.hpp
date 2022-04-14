@@ -35,20 +35,20 @@ namespace Oculus::Platform::Samples::VrHoops {
   class MatchmakingManager::OnEnqueueResult : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x115572C
+    // Offset: 0x1722628
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MatchmakingManager::OnEnqueueResult* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnEnqueueResult::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MatchmakingManager::OnEnqueueResult*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Boolean successful)
-    // Offset: 0x115573C
+    // Offset: 0x1722638
     void Invoke(bool successful);
     // public System.IAsyncResult BeginInvoke(System.Boolean successful, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1155968
+    // Offset: 0x1722864
     ::System::IAsyncResult* BeginInvoke(bool successful, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x11559F4
+    // Offset: 0x17228F0
     void EndInvoke(::System::IAsyncResult* result);
   }; // Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnEnqueueResult
   #pragma pack(pop)

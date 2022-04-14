@@ -32,15 +32,7 @@ namespace Firebase {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class FutureVoid::$GetTask$c__AnonStorey0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // Firebase.FutureVoid fu
     // Size: 0x8
     // Offset: 0x10
@@ -55,14 +47,14 @@ namespace Firebase {
     static_assert(sizeof(::System::Threading::Tasks::TaskCompletionSource_1<int>*) == 0x8);
     public:
     // Get instance field reference: Firebase.FutureVoid fu
-    ::Firebase::FutureVoid*& dyn_fu();
+    [[deprecated]] ::Firebase::FutureVoid*& dyn_fu();
     // Get instance field reference: System.Threading.Tasks.TaskCompletionSource`1<System.Int32> tcs
-    ::System::Threading::Tasks::TaskCompletionSource_1<int>*& dyn_tcs();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<int>*& dyn_tcs();
     // System.Void <>m__0()
-    // Offset: 0x129E210
+    // Offset: 0x188BBB0
     void $$m__0();
     // public System.Void .ctor()
-    // Offset: 0x129B300
+    // Offset: 0x18891E8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

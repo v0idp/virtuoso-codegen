@@ -30,44 +30,53 @@ namespace System {
     // Set static field: static readonly System.Object EPHEMERON_TOMBSTONE
     static void _set_EPHEMERON_TOMBSTONE(::Il2CppObject* value);
     // static public System.Int32 get_MaxGeneration()
-    // Offset: 0xC1E158
+    // Offset: 0x14545A8
     static int get_MaxGeneration();
     // static private System.Void .cctor()
-    // Offset: 0xC1E26C
+    // Offset: 0x145478C
     static void _cctor();
+    // static private System.Int32 GetCollectionCount(System.Int32 generation)
+    // Offset: 0x1454538
+    static int GetCollectionCount(int generation);
     // static private System.Int32 GetMaxGeneration()
-    // Offset: 0xC1E0EC
+    // Offset: 0x145453C
     static int GetMaxGeneration();
     // static private System.Void InternalCollect(System.Int32 generation)
-    // Offset: 0xC1E0F0
+    // Offset: 0x1454540
     static void InternalCollect(int generation);
     // static System.Void register_ephemeron_array(System.Runtime.CompilerServices.Ephemeron[] array)
-    // Offset: 0xC1E0F4
+    // Offset: 0x1454544
     static void register_ephemeron_array(::ArrayW<::System::Runtime::CompilerServices::Ephemeron> array);
     // static private System.Object get_ephemeron_tombstone()
-    // Offset: 0xC1E0F8
+    // Offset: 0x1454548
     static ::Il2CppObject* get_ephemeron_tombstone();
     // static public System.Void Collect()
-    // Offset: 0xC1E0FC
+    // Offset: 0x145454C
     static void Collect();
+    // static public System.Int32 CollectionCount(System.Int32 generation)
+    // Offset: 0x1454600
+    static int CollectionCount(int generation);
     // static public System.Void KeepAlive(System.Object obj)
-    // Offset: 0xC1E1B0
+    // Offset: 0x14546C8
     static void KeepAlive(::Il2CppObject* obj);
     // static public System.Void WaitForPendingFinalizers()
-    // Offset: 0xC1E1B4
+    // Offset: 0x14546CC
     static void WaitForPendingFinalizers();
     // static private System.Void _SuppressFinalize(System.Object o)
-    // Offset: 0xC1E1B8
+    // Offset: 0x14546D0
     static void _SuppressFinalize(::Il2CppObject* o);
     // static public System.Void SuppressFinalize(System.Object obj)
-    // Offset: 0xC1AF5C
+    // Offset: 0x14512B8
     static void SuppressFinalize(::Il2CppObject* obj);
     // static private System.Void _ReRegisterForFinalize(System.Object o)
-    // Offset: 0xC1E1BC
+    // Offset: 0x14546D4
     static void _ReRegisterForFinalize(::Il2CppObject* o);
     // static public System.Void ReRegisterForFinalize(System.Object obj)
-    // Offset: 0xC1E1C0
+    // Offset: 0x14546D8
     static void ReRegisterForFinalize(::Il2CppObject* obj);
+    // static public System.Int64 GetTotalMemory(System.Boolean forceFullCollection)
+    // Offset: 0x1454784
+    static int64_t GetTotalMemory(bool forceFullCollection);
   }; // System.GC
   #pragma pack(pop)
 }
@@ -86,6 +95,15 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::GC::_cctor)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::GC*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::GC::GetCollectionCount
+// Il2CppName: GetCollectionCount
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(int)>(&System::GC::GetCollectionCount)> {
+  static const MethodInfo* get() {
+    static auto* generation = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::GC*), "GetCollectionCount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{generation});
   }
 };
 // Writing MetadataGetter for method: System::GC::GetMaxGeneration
@@ -128,6 +146,15 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::GC::Collect)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::GC*), "Collect", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::GC::CollectionCount
+// Il2CppName: CollectionCount
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(int)>(&System::GC::CollectionCount)> {
+  static const MethodInfo* get() {
+    static auto* generation = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::GC*), "CollectionCount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{generation});
   }
 };
 // Writing MetadataGetter for method: System::GC::KeepAlive
@@ -181,5 +208,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
   static const MethodInfo* get() {
     static auto* obj = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::GC*), "ReRegisterForFinalize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
+  }
+};
+// Writing MetadataGetter for method: System::GC::GetTotalMemory
+// Il2CppName: GetTotalMemory
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)(bool)>(&System::GC::GetTotalMemory)> {
+  static const MethodInfo* get() {
+    static auto* forceFullCollection = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::GC*), "GetTotalMemory", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{forceFullCollection});
   }
 };

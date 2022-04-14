@@ -85,20 +85,12 @@ namespace GlobalNamespace {
       // Set static field: static public OVRHeadsetEmulator/OpMode AlwaysOn
       static void _set_AlwaysOn(::GlobalNamespace::OVRHeadsetEmulator::OpMode value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRHeadsetEmulator/OpMode
     #pragma pack(pop)
     static check_size<sizeof(OVRHeadsetEmulator::OpMode), 0 + sizeof(int)> __GlobalNamespace_OVRHeadsetEmulator_OpModeSizeCheck;
     static_assert(sizeof(OVRHeadsetEmulator::OpMode) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRHeadsetEmulator/OpMode opMode
     // Size: 0x4
     // Offset: 0x18
@@ -211,43 +203,43 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single MAX_ROLL
     static void _set_MAX_ROLL(float value);
     // Get instance field reference: public OVRHeadsetEmulator/OpMode opMode
-    ::GlobalNamespace::OVRHeadsetEmulator::OpMode& dyn_opMode();
+    [[deprecated]] ::GlobalNamespace::OVRHeadsetEmulator::OpMode& dyn_opMode();
     // Get instance field reference: public System.Boolean resetHmdPoseOnRelease
-    bool& dyn_resetHmdPoseOnRelease();
+    [[deprecated]] bool& dyn_resetHmdPoseOnRelease();
     // Get instance field reference: public System.Boolean resetHmdPoseByMiddleMouseButton
-    bool& dyn_resetHmdPoseByMiddleMouseButton();
+    [[deprecated]] bool& dyn_resetHmdPoseByMiddleMouseButton();
     // Get instance field reference: public UnityEngine.KeyCode[] activateKeys
-    ::ArrayW<::UnityEngine::KeyCode>& dyn_activateKeys();
+    [[deprecated]] ::ArrayW<::UnityEngine::KeyCode>& dyn_activateKeys();
     // Get instance field reference: public UnityEngine.KeyCode[] pitchKeys
-    ::ArrayW<::UnityEngine::KeyCode>& dyn_pitchKeys();
+    [[deprecated]] ::ArrayW<::UnityEngine::KeyCode>& dyn_pitchKeys();
     // Get instance field reference: private OVRManager manager
-    ::GlobalNamespace::OVRManager*& dyn_manager();
+    [[deprecated]] ::GlobalNamespace::OVRManager*& dyn_manager();
     // Get instance field reference: private System.Boolean lastFrameEmulationActivated
-    bool& dyn_lastFrameEmulationActivated();
+    [[deprecated]] bool& dyn_lastFrameEmulationActivated();
     // Get instance field reference: private UnityEngine.Vector3 recordedHeadPoseRelativeOffsetTranslation
-    ::UnityEngine::Vector3& dyn_recordedHeadPoseRelativeOffsetTranslation();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_recordedHeadPoseRelativeOffsetTranslation();
     // Get instance field reference: private UnityEngine.Vector3 recordedHeadPoseRelativeOffsetRotation
-    ::UnityEngine::Vector3& dyn_recordedHeadPoseRelativeOffsetRotation();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_recordedHeadPoseRelativeOffsetRotation();
     // Get instance field reference: private System.Boolean hasSentEvent
-    bool& dyn_hasSentEvent();
+    [[deprecated]] bool& dyn_hasSentEvent();
     // Get instance field reference: private System.Boolean emulatorHasInitialized
-    bool& dyn_emulatorHasInitialized();
+    [[deprecated]] bool& dyn_emulatorHasInitialized();
     // Get instance field reference: private UnityEngine.CursorLockMode previousCursorLockMode
-    ::UnityEngine::CursorLockMode& dyn_previousCursorLockMode();
+    [[deprecated]] ::UnityEngine::CursorLockMode& dyn_previousCursorLockMode();
     // private System.Void Start()
-    // Offset: 0xD34A74
+    // Offset: 0xFC23C8
     void Start();
     // private System.Void Update()
-    // Offset: 0xD34A78
+    // Offset: 0xFC23CC
     void Update();
     // private System.Boolean IsEmulationActivated()
-    // Offset: 0xD34E64
+    // Offset: 0xFC27B8
     bool IsEmulationActivated();
     // private System.Boolean IsTweakingPitch()
-    // Offset: 0xD34F08
+    // Offset: 0xFC285C
     bool IsTweakingPitch();
     // public System.Void .ctor()
-    // Offset: 0xD34F98
+    // Offset: 0xFC28EC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

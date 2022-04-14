@@ -18,6 +18,16 @@ namespace System {
   // Forward declaring type: Type
   class Type;
 }
+// Forward declaring namespace: System::ComponentModel
+namespace System::ComponentModel {
+  // Forward declaring type: ITypeDescriptorContext
+  class ITypeDescriptorContext;
+}
+// Forward declaring namespace: System::Globalization
+namespace System::Globalization {
+  // Forward declaring type: CultureInfo
+  class CultureInfo;
+}
 // Completed forward declares
 // Type namespace: System.ComponentModel
 namespace System::ComponentModel {
@@ -35,15 +45,7 @@ namespace System::ComponentModel {
   // [TokenAttribute] Offset: FFFFFFFF
   class EnumConverter : public ::System::ComponentModel::TypeConverter {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.ComponentModel.TypeConverter/System.ComponentModel.StandardValuesCollection values
     // Size: 0x8
     // Offset: 0x10
@@ -58,16 +60,36 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private System.ComponentModel.TypeConverter/System.ComponentModel.StandardValuesCollection values
-    ::System::ComponentModel::TypeConverter::StandardValuesCollection*& dyn_values();
+    [[deprecated]] ::System::ComponentModel::TypeConverter::StandardValuesCollection*& dyn_values();
     // Get instance field reference: private System.Type type
-    ::System::Type*& dyn_type();
+    [[deprecated]] ::System::Type*& dyn_type();
     // public System.Void .ctor(System.Type type)
-    // Offset: 0xD7ECF8
+    // Offset: 0xEFD62C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EnumConverter* New_ctor(::System::Type* type) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::EnumConverter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EnumConverter*, creationType>(type)));
     }
+    // public override System.Boolean CanConvertFrom(System.ComponentModel.ITypeDescriptorContext context, System.Type sourceType)
+    // Offset: 0xEFD658
+    // Implemented from: System.ComponentModel.TypeConverter
+    // Base method: System.Boolean TypeConverter::CanConvertFrom(System.ComponentModel.ITypeDescriptorContext context, System.Type sourceType)
+    bool CanConvertFrom(::System::ComponentModel::ITypeDescriptorContext* context, ::System::Type* sourceType);
+    // public override System.Boolean CanConvertTo(System.ComponentModel.ITypeDescriptorContext context, System.Type destinationType)
+    // Offset: 0xEFD77C
+    // Implemented from: System.ComponentModel.TypeConverter
+    // Base method: System.Boolean TypeConverter::CanConvertTo(System.ComponentModel.ITypeDescriptorContext context, System.Type destinationType)
+    bool CanConvertTo(::System::ComponentModel::ITypeDescriptorContext* context, ::System::Type* destinationType);
+    // public override System.Object ConvertFrom(System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, System.Object value)
+    // Offset: 0xEFD8A0
+    // Implemented from: System.ComponentModel.TypeConverter
+    // Base method: System.Object TypeConverter::ConvertFrom(System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, System.Object value)
+    ::Il2CppObject* ConvertFrom(::System::ComponentModel::ITypeDescriptorContext* context, ::System::Globalization::CultureInfo* culture, ::Il2CppObject* value);
+    // public override System.Object ConvertTo(System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, System.Object value, System.Type destinationType)
+    // Offset: 0xEFDE34
+    // Implemented from: System.ComponentModel.TypeConverter
+    // Base method: System.Object TypeConverter::ConvertTo(System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, System.Object value, System.Type destinationType)
+    ::Il2CppObject* ConvertTo(::System::ComponentModel::ITypeDescriptorContext* context, ::System::Globalization::CultureInfo* culture, ::Il2CppObject* value, ::System::Type* destinationType);
   }; // System.ComponentModel.EnumConverter
   #pragma pack(pop)
   static check_size<sizeof(EnumConverter), 24 + sizeof(::System::Type*)> __System_ComponentModel_EnumConverterSizeCheck;
@@ -78,3 +100,46 @@ namespace System::ComponentModel {
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::ComponentModel::EnumConverter::CanConvertFrom
+// Il2CppName: CanConvertFrom
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (System::ComponentModel::EnumConverter::*)(::System::ComponentModel::ITypeDescriptorContext*, ::System::Type*)>(&System::ComponentModel::EnumConverter::CanConvertFrom)> {
+  static const MethodInfo* get() {
+    static auto* context = &::il2cpp_utils::GetClassFromName("System.ComponentModel", "ITypeDescriptorContext")->byval_arg;
+    static auto* sourceType = &::il2cpp_utils::GetClassFromName("System", "Type")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::EnumConverter*), "CanConvertFrom", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{context, sourceType});
+  }
+};
+// Writing MetadataGetter for method: System::ComponentModel::EnumConverter::CanConvertTo
+// Il2CppName: CanConvertTo
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (System::ComponentModel::EnumConverter::*)(::System::ComponentModel::ITypeDescriptorContext*, ::System::Type*)>(&System::ComponentModel::EnumConverter::CanConvertTo)> {
+  static const MethodInfo* get() {
+    static auto* context = &::il2cpp_utils::GetClassFromName("System.ComponentModel", "ITypeDescriptorContext")->byval_arg;
+    static auto* destinationType = &::il2cpp_utils::GetClassFromName("System", "Type")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::EnumConverter*), "CanConvertTo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{context, destinationType});
+  }
+};
+// Writing MetadataGetter for method: System::ComponentModel::EnumConverter::ConvertFrom
+// Il2CppName: ConvertFrom
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObject* (System::ComponentModel::EnumConverter::*)(::System::ComponentModel::ITypeDescriptorContext*, ::System::Globalization::CultureInfo*, ::Il2CppObject*)>(&System::ComponentModel::EnumConverter::ConvertFrom)> {
+  static const MethodInfo* get() {
+    static auto* context = &::il2cpp_utils::GetClassFromName("System.ComponentModel", "ITypeDescriptorContext")->byval_arg;
+    static auto* culture = &::il2cpp_utils::GetClassFromName("System.Globalization", "CultureInfo")->byval_arg;
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::EnumConverter*), "ConvertFrom", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{context, culture, value});
+  }
+};
+// Writing MetadataGetter for method: System::ComponentModel::EnumConverter::ConvertTo
+// Il2CppName: ConvertTo
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObject* (System::ComponentModel::EnumConverter::*)(::System::ComponentModel::ITypeDescriptorContext*, ::System::Globalization::CultureInfo*, ::Il2CppObject*, ::System::Type*)>(&System::ComponentModel::EnumConverter::ConvertTo)> {
+  static const MethodInfo* get() {
+    static auto* context = &::il2cpp_utils::GetClassFromName("System.ComponentModel", "ITypeDescriptorContext")->byval_arg;
+    static auto* culture = &::il2cpp_utils::GetClassFromName("System.Globalization", "CultureInfo")->byval_arg;
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
+    static auto* destinationType = &::il2cpp_utils::GetClassFromName("System", "Type")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::EnumConverter*), "ConvertTo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{context, culture, value, destinationType});
+  }
+};

@@ -54,15 +54,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NetNoteboardCreationAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.NetNoteboardCreationBehaviour template
     // Size: 0x8
     // Offset: 0x18
@@ -87,15 +79,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.NetNoteboardCreationBehaviour template
-    ::VROSC::NetNoteboardCreationBehaviour*& dyn_template();
+    [[deprecated]] ::VROSC::NetNoteboardCreationBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Transform> _fromPoint
-    ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__fromPoint();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__fromPoint();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.NetNoteboard> _noteBoard
-    ::UnityEngine::ExposedReference_1<::VROSC::NetNoteboard*>& dyn__noteBoard();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::NetNoteboard*>& dyn__noteBoard();
     // Get instance field reference: public UnityEngine.AnimationCurve _curve
-    ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // public System.Void .ctor()
-    // Offset: 0xA0F084
+    // Offset: 0xAD3EE8
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -107,7 +99,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NetNoteboardCreationAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0xA0ECC4
+    // Offset: 0xAD3B24
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

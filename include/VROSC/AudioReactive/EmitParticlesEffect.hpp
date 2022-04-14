@@ -48,15 +48,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::EmitParticlesEffect::$SpecificFlow$d__6
     class $SpecificFlow$d__6;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.EmitParticlesEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -71,17 +63,17 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::UnityEngine::ParticleSystem*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.EmitParticlesEffectData _data
-    ::VROSC::AudioReactive::EmitParticlesEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::EmitParticlesEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.ParticleSystem[] _particleSystems
-    ::ArrayW<::UnityEngine::ParticleSystem*>& dyn__particleSystems();
+    [[deprecated]] ::ArrayW<::UnityEngine::ParticleSystem*>& dyn__particleSystems();
     // public VROSC.AudioReactive.EmitParticlesEffectData get_Data()
-    // Offset: 0x131189C
+    // Offset: 0x8EB61C
     ::VROSC::AudioReactive::EmitParticlesEffectData* get_Data();
     // public UnityEngine.ParticleSystem[] get_ParticleSystems()
-    // Offset: 0x13118A4
+    // Offset: 0x8EB624
     ::ArrayW<::UnityEngine::ParticleSystem*> get_ParticleSystems();
     // public System.Void .ctor()
-    // Offset: 0x1311918
+    // Offset: 0x8EB698
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -92,7 +84,7 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<EmitParticlesEffect*, creationType>()));
     }
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0x13118AC
+    // Offset: 0x8EB62C
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();

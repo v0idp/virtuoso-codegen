@@ -55,31 +55,31 @@ namespace DG::Tweening::Plugins {
   class RectPlugin : public ::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions> {
     public:
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> t)
-    // Offset: 0x10A2278
+    // Offset: 0x15E48A0
     void Reset(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* t);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> t, System.Boolean isRelative)
-    // Offset: 0x10A227C
+    // Offset: 0x15E48A4
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* t, bool isRelative);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> t, UnityEngine.Rect fromValue, System.Boolean setImmediately)
-    // Offset: 0x10A2694
+    // Offset: 0x15E4CBC
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* t, ::UnityEngine::Rect fromValue, bool setImmediately);
     // public UnityEngine.Rect ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> t, UnityEngine.Rect value)
-    // Offset: 0x10A29B0
+    // Offset: 0x15E4FD8
     ::UnityEngine::Rect ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* t, ::UnityEngine::Rect value);
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> t)
-    // Offset: 0x10A29B4
+    // Offset: 0x15E4FDC
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* t);
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> t)
-    // Offset: 0x10A2A94
+    // Offset: 0x15E50BC
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* t);
     // public System.Single GetSpeedBasedDuration(DG.Tweening.Plugins.Options.RectOptions options, System.Single unitsXSecond, UnityEngine.Rect changeValue)
-    // Offset: 0x10A2B9C
+    // Offset: 0x15E51C4
     float GetSpeedBasedDuration(::DG::Tweening::Plugins::Options::RectOptions options, float unitsXSecond, ::UnityEngine::Rect changeValue);
     // public System.Void EvaluateAndApply(DG.Tweening.Plugins.Options.RectOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<UnityEngine.Rect> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Rect> setter, System.Single elapsed, UnityEngine.Rect startValue, UnityEngine.Rect changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x10A2C5C
+    // Offset: 0x15E5284
     void EvaluateAndApply(::DG::Tweening::Plugins::Options::RectOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<::UnityEngine::Rect>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Rect>* setter, float elapsed, ::UnityEngine::Rect startValue, ::UnityEngine::Rect changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // public System.Void .ctor()
-    // Offset: 0x10A3228
+    // Offset: 0x15E5850
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
     // Base method: System.Void Object::.ctor()

@@ -109,27 +109,27 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVRPlugin/HandStatus Status
-    ::GlobalNamespace::OVRPlugin::HandStatus& dyn_Status();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::HandStatus& dyn_Status();
     // Get instance field reference: public OVRPlugin/Posef RootPose
-    ::GlobalNamespace::OVRPlugin::Posef& dyn_RootPose();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Posef& dyn_RootPose();
     // Get instance field reference: public OVRPlugin/Quatf[] BoneRotations
-    ::ArrayW<::GlobalNamespace::OVRPlugin::Quatf>& dyn_BoneRotations();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRPlugin::Quatf>& dyn_BoneRotations();
     // Get instance field reference: public OVRPlugin/HandFingerPinch Pinches
-    ::GlobalNamespace::OVRPlugin::HandFingerPinch& dyn_Pinches();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::HandFingerPinch& dyn_Pinches();
     // Get instance field reference: public System.Single[] PinchStrength
-    ::ArrayW<float>& dyn_PinchStrength();
+    [[deprecated]] ::ArrayW<float>& dyn_PinchStrength();
     // Get instance field reference: public OVRPlugin/Posef PointerPose
-    ::GlobalNamespace::OVRPlugin::Posef& dyn_PointerPose();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Posef& dyn_PointerPose();
     // Get instance field reference: public System.Single HandScale
-    float& dyn_HandScale();
+    [[deprecated]] float& dyn_HandScale();
     // Get instance field reference: public OVRPlugin/TrackingConfidence HandConfidence
-    ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_HandConfidence();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_HandConfidence();
     // Get instance field reference: public OVRPlugin/TrackingConfidence[] FingerConfidences
-    ::ArrayW<::GlobalNamespace::OVRPlugin::TrackingConfidence>& dyn_FingerConfidences();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRPlugin::TrackingConfidence>& dyn_FingerConfidences();
     // Get instance field reference: public System.Double RequestedTimeStamp
-    double& dyn_RequestedTimeStamp();
+    [[deprecated]] double& dyn_RequestedTimeStamp();
     // Get instance field reference: public System.Double SampleTimeStamp
-    double& dyn_SampleTimeStamp();
+    [[deprecated]] double& dyn_SampleTimeStamp();
   }; // OVRPlugin/HandState
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::HandState), 112 + sizeof(double)> __GlobalNamespace_OVRPlugin_HandStateSizeCheck;

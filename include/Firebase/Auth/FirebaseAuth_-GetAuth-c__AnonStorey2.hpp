@@ -26,15 +26,7 @@ namespace Firebase::Auth {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class FirebaseAuth::$GetAuth$c__AnonStorey2 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // Firebase.InitResult init_result
     // Size: 0x4
     // Offset: 0x10
@@ -51,14 +43,14 @@ namespace Firebase::Auth {
     static_assert(sizeof(::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey1*) == 0x8);
     public:
     // Get instance field reference: Firebase.InitResult init_result
-    ::Firebase::InitResult& dyn_init_result();
+    [[deprecated]] ::Firebase::InitResult& dyn_init_result();
     // Get instance field reference: Firebase.Auth.FirebaseAuth/Firebase.Auth.<GetAuth>c__AnonStorey1 <>f__ref$1
-    ::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey1*& dyn_$$f__ref$1();
+    [[deprecated]] ::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey1*& dyn_$$f__ref$1();
     // System.Void <>m__0()
-    // Offset: 0x12B439C
+    // Offset: 0x18B458C
     void $$m__0();
     // public System.Void .ctor()
-    // Offset: 0x12B0840
+    // Offset: 0x18B057C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -45,10 +45,10 @@ namespace Oculus::Voice {
     // Set static field: static public readonly System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>> apps
     static void _set_apps(::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*>* value);
     // static public System.String[] get_appNames()
-    // Offset: 0x12E3588
+    // Offset: 0x18E77FC
     static ::ArrayW<::StringW> get_appNames();
     // static private System.Void .cctor()
-    // Offset: 0x12E36A0
+    // Offset: 0x18E7914
     static void _cctor();
   }; // Oculus.Voice.AppBuiltIns
   #pragma pack(pop)

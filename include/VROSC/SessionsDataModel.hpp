@@ -45,15 +45,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionsDataModel : public ::VROSC::BaseDataModel {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.Dictionary`2<System.String,VROSC.Session> NewSessions
     // Size: 0x8
     // Offset: 0x18
@@ -68,11 +60,11 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::Session*>*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.String,VROSC.Session> NewSessions
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::Session*>*& dyn_NewSessions();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::Session*>*& dyn_NewSessions();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.Session> Sessions
-    ::System::Collections::Generic::List_1<::VROSC::Session*>*& dyn_Sessions();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Session*>*& dyn_Sessions();
     // public System.Void .ctor()
-    // Offset: 0x13EA75C
+    // Offset: 0x1989D5C
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
     // Base method: System.Void Object::.ctor()

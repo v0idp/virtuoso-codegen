@@ -35,15 +35,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_Asset : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 m_InstanceID
     // Size: 0x4
     // Offset: 0x18
@@ -72,18 +64,18 @@ namespace TMPro {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 m_InstanceID
-    int& dyn_m_InstanceID();
+    [[deprecated]] int& dyn_m_InstanceID();
     // Get instance field reference: public System.Int32 hashCode
-    int& dyn_hashCode();
+    [[deprecated]] int& dyn_hashCode();
     // Get instance field reference: public UnityEngine.Material material
-    ::UnityEngine::Material*& dyn_material();
+    [[deprecated]] ::UnityEngine::Material*& dyn_material();
     // Get instance field reference: public System.Int32 materialHashCode
-    int& dyn_materialHashCode();
+    [[deprecated]] int& dyn_materialHashCode();
     // public System.Int32 get_instanceID()
-    // Offset: 0xA4C458
+    // Offset: 0xC2E068
     int get_instanceID();
     // protected System.Void .ctor()
-    // Offset: 0xA4C48C
+    // Offset: 0xC2E09C
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

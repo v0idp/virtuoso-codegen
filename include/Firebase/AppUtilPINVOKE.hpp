@@ -5,8 +5,6 @@
 // Begin includes
 #include "beatsaber-hook/shared/utils/typedefs.h"
 #include "beatsaber-hook/shared/utils/byref.hpp"
-// Including type: Firebase.FutureString
-#include "Firebase/FutureString.hpp"
 // Including type: Firebase.FutureVoid
 #include "Firebase/FutureVoid.hpp"
 // Including type: Firebase.LogUtil
@@ -57,133 +55,136 @@ namespace Firebase {
     // Set static field: static protected Firebase.AppUtilPINVOKE/Firebase.SWIGStringHelper swigStringHelper
     static void _set_swigStringHelper(::Firebase::AppUtilPINVOKE::SWIGStringHelper* value);
     // static private System.Void .cctor()
-    // Offset: 0x1294B84
+    // Offset: 0x1883A4C
     static void _cctor();
     // static public System.Void delete_FutureBase(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1294C3C
+    // Offset: 0x1883B04
     static void delete_FutureBase(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Int32 FutureBase_status(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1294CBC
+    // Offset: 0x1883B84
     static int FutureBase_status(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Int32 FutureBase_error(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1294D3C
+    // Offset: 0x1883C04
     static int FutureBase_error(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String FutureBase_error_message(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1294DBC
+    // Offset: 0x1883C84
     static ::StringW FutureBase_error_message(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void StringList_Clear(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1294E54
+    // Offset: 0x1883D1C
     static void StringList_Clear(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.Void StringList_Add(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0x1294ED4
+    // Offset: 0x1883D9C
     static void StringList_Add(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.UInt32 StringList_size(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1294F78
+    // Offset: 0x1883E40
     static uint StringList_size(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr new_StringList__SWIG_0()
-    // Offset: 0x1294FF8
+    // Offset: 0x1883EC0
     static ::System::IntPtr new_StringList__SWIG_0();
     // static public System.String StringList_getitemcopy(System.Runtime.InteropServices.HandleRef jarg1, System.Int32 jarg2)
-    // Offset: 0x129506C
+    // Offset: 0x1883F34
     static ::StringW StringList_getitemcopy(::System::Runtime::InteropServices::HandleRef jarg1, int jarg2);
     // static public System.String StringList_getitem(System.Runtime.InteropServices.HandleRef jarg1, System.Int32 jarg2)
-    // Offset: 0x1295114
+    // Offset: 0x1883FDC
     static ::StringW StringList_getitem(::System::Runtime::InteropServices::HandleRef jarg1, int jarg2);
     // static public System.Void StringList_setitem(System.Runtime.InteropServices.HandleRef jarg1, System.Int32 jarg2, System.String jarg3)
-    // Offset: 0x12951BC
+    // Offset: 0x1884084
     static void StringList_setitem(::System::Runtime::InteropServices::HandleRef jarg1, int jarg2, ::StringW jarg3);
     // static public System.Void StringList_Insert(System.Runtime.InteropServices.HandleRef jarg1, System.Int32 jarg2, System.String jarg3)
-    // Offset: 0x1295264
+    // Offset: 0x188412C
     static void StringList_Insert(::System::Runtime::InteropServices::HandleRef jarg1, int jarg2, ::StringW jarg3);
     // static public System.Void StringList_RemoveAt(System.Runtime.InteropServices.HandleRef jarg1, System.Int32 jarg2)
-    // Offset: 0x129530C
+    // Offset: 0x18841D4
     static void StringList_RemoveAt(::System::Runtime::InteropServices::HandleRef jarg1, int jarg2);
     // static public System.Boolean StringList_Contains(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0x129539C
+    // Offset: 0x1884264
     static bool StringList_Contains(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.Int32 StringList_IndexOf(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0x129544C
+    // Offset: 0x1884314
     static int StringList_IndexOf(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.Boolean StringList_Remove(System.Runtime.InteropServices.HandleRef jarg1, System.String jarg2)
-    // Offset: 0x12954F8
+    // Offset: 0x18843C0
     static bool StringList_Remove(::System::Runtime::InteropServices::HandleRef jarg1, ::StringW jarg2);
     // static public System.Void delete_StringList(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12955A8
+    // Offset: 0x1884470
     static void delete_StringList(::System::Runtime::InteropServices::HandleRef jarg1);
-    // static public System.IntPtr FutureString_SWIG_OnCompletion(System.Runtime.InteropServices.HandleRef jarg1, Firebase.FutureString/Firebase.SWIG_CompletionDelegate jarg2, System.Int32 jarg3)
-    // Offset: 0x1295628
-    static ::System::IntPtr FutureString_SWIG_OnCompletion(::System::Runtime::InteropServices::HandleRef jarg1, ::Firebase::FutureString::SWIG_CompletionDelegate* jarg2, int jarg3);
-    // static public System.Void FutureString_SWIG_FreeCompletionData(System.Runtime.InteropServices.HandleRef jarg1, System.IntPtr jarg2)
-    // Offset: 0x12956C4
-    static void FutureString_SWIG_FreeCompletionData(::System::Runtime::InteropServices::HandleRef jarg1, ::System::IntPtr jarg2);
-    // static public System.String FutureString_GetResult(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1295754
-    static ::StringW FutureString_GetResult(::System::Runtime::InteropServices::HandleRef jarg1);
-    // static public System.Void delete_FutureString(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12957EC
-    static void delete_FutureString(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FutureVoid_SWIG_OnCompletion(System.Runtime.InteropServices.HandleRef jarg1, Firebase.FutureVoid/Firebase.SWIG_CompletionDelegate jarg2, System.Int32 jarg3)
-    // Offset: 0x129586C
+    // Offset: 0x18844F0
     static ::System::IntPtr FutureVoid_SWIG_OnCompletion(::System::Runtime::InteropServices::HandleRef jarg1, ::Firebase::FutureVoid::SWIG_CompletionDelegate* jarg2, int jarg3);
     // static public System.Void FutureVoid_SWIG_FreeCompletionData(System.Runtime.InteropServices.HandleRef jarg1, System.IntPtr jarg2)
-    // Offset: 0x1295908
+    // Offset: 0x188458C
     static void FutureVoid_SWIG_FreeCompletionData(::System::Runtime::InteropServices::HandleRef jarg1, ::System::IntPtr jarg2);
     // static public System.Void delete_FutureVoid(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1295998
+    // Offset: 0x188461C
     static void delete_FutureVoid(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static System.String AppOptionsInternal_GetDatabaseUrlInternal(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0x1882E28
+    static ::StringW AppOptionsInternal_GetDatabaseUrlInternal(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.String AppOptionsInternal_AppId_get(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0x1883034
+    static ::StringW AppOptionsInternal_AppId_get(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.String AppOptionsInternal_ApiKey_get(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0x18830CC
+    static ::StringW AppOptionsInternal_ApiKey_get(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.String AppOptionsInternal_MessageSenderId_get(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0x1883164
+    static ::StringW AppOptionsInternal_MessageSenderId_get(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.String AppOptionsInternal_StorageBucket_get(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0x18831FC
+    static ::StringW AppOptionsInternal_StorageBucket_get(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String AppOptionsInternal_ProjectId_get(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12942F0
+    // Offset: 0x1883294
     static ::StringW AppOptionsInternal_ProjectId_get(::System::Runtime::InteropServices::HandleRef jarg1);
+    // static public System.String AppOptionsInternal_PackageName_get(System.Runtime.InteropServices.HandleRef jarg1)
+    // Offset: 0x188332C
+    static ::StringW AppOptionsInternal_PackageName_get(::System::Runtime::InteropServices::HandleRef jarg1);
     // static System.Void delete_AppOptionsInternal(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x12941D4
+    // Offset: 0x1882C24
     static void delete_AppOptionsInternal(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FirebaseApp_options(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1295A18
+    // Offset: 0x188469C
     static ::System::IntPtr FirebaseApp_options(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.String FirebaseApp_NameInternal_get(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1295A98
+    // Offset: 0x188471C
     static ::StringW FirebaseApp_NameInternal_get(::System::Runtime::InteropServices::HandleRef jarg1);
     // static public System.IntPtr FirebaseApp_CreateInternal__SWIG_0()
-    // Offset: 0x1295B30
+    // Offset: 0x18847B4
     static ::System::IntPtr FirebaseApp_CreateInternal__SWIG_0();
     // static System.Void FirebaseApp_ReleaseReferenceInternal(System.Runtime.InteropServices.HandleRef jarg1)
-    // Offset: 0x1295BA4
+    // Offset: 0x1884828
     static void FirebaseApp_ReleaseReferenceInternal(::System::Runtime::InteropServices::HandleRef jarg1);
     // static System.Int32 FirebaseApp_GetLogLevelInternal()
-    // Offset: 0x1295C24
+    // Offset: 0x18848A8
     static int FirebaseApp_GetLogLevelInternal();
     // static System.Void FirebaseApp_RegisterLibraryInternal(System.String jarg1, System.String jarg2)
-    // Offset: 0x1295C98
+    // Offset: 0x188491C
     static void FirebaseApp_RegisterLibraryInternal(::StringW jarg1, ::StringW jarg2);
     // static public System.Void FirebaseApp_AppSetDefaultConfigPath(System.String jarg1)
-    // Offset: 0x1295D50
+    // Offset: 0x18849D4
     static void FirebaseApp_AppSetDefaultConfigPath(::StringW jarg1);
     // static public System.String FirebaseApp_DefaultName_get()
-    // Offset: 0x1295DE0
+    // Offset: 0x1884A64
     static ::StringW FirebaseApp_DefaultName_get();
     // static public System.Void PollCallbacks()
-    // Offset: 0x1294580
+    // Offset: 0x1883448
     static void PollCallbacks();
     // static public System.Void AppEnableLogCallback(System.Boolean jarg1)
-    // Offset: 0x129467C
+    // Offset: 0x1883544
     static void AppEnableLogCallback(bool jarg1);
     // static public System.Void SetEnabledAllAppCallbacks(System.Boolean jarg1)
-    // Offset: 0x1294788
+    // Offset: 0x1883650
     static void SetEnabledAllAppCallbacks(bool jarg1);
     // static public System.Void SetEnabledAppCallbackByName(System.String jarg1, System.Boolean jarg2)
-    // Offset: 0x12948A4
+    // Offset: 0x188376C
     static void SetEnabledAppCallbackByName(::StringW jarg1, bool jarg2);
     // static public System.Boolean GetEnabledAppCallbackByName(System.String jarg1)
-    // Offset: 0x12949D8
+    // Offset: 0x18838A0
     static bool GetEnabledAppCallbackByName(::StringW jarg1);
     // static public System.Void SetLogFunction(Firebase.LogUtil/Firebase.LogMessageDelegate jarg1)
-    // Offset: 0x1294B00
+    // Offset: 0x18839C8
     static void SetLogFunction(::Firebase::LogUtil::LogMessageDelegate* jarg1);
-    // static public System.IntPtr FutureString_SWIGUpcast(System.IntPtr jarg1)
-    // Offset: 0x1295E6C
-    static ::System::IntPtr FutureString_SWIGUpcast(::System::IntPtr jarg1);
     // static public System.IntPtr FutureVoid_SWIGUpcast(System.IntPtr jarg1)
-    // Offset: 0x1295EEC
+    // Offset: 0x1884AF0
     static ::System::IntPtr FutureVoid_SWIGUpcast(::System::IntPtr jarg1);
   }; // Firebase.AppUtilPINVOKE
   #pragma pack(pop)
@@ -360,45 +361,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "delete_StringList", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
-// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::FutureString_SWIG_OnCompletion
-// Il2CppName: FutureString_SWIG_OnCompletion
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::System::Runtime::InteropServices::HandleRef, ::Firebase::FutureString::SWIG_CompletionDelegate*, int)>(&Firebase::AppUtilPINVOKE::FutureString_SWIG_OnCompletion)> {
-  static const MethodInfo* get() {
-    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
-    static auto* jarg2 = &::il2cpp_utils::GetClassFromName("Firebase", "FutureString/SWIG_CompletionDelegate")->byval_arg;
-    static auto* jarg3 = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "FutureString_SWIG_OnCompletion", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2, jarg3});
-  }
-};
-// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::FutureString_SWIG_FreeCompletionData
-// Il2CppName: FutureString_SWIG_FreeCompletionData
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Runtime::InteropServices::HandleRef, ::System::IntPtr)>(&Firebase::AppUtilPINVOKE::FutureString_SWIG_FreeCompletionData)> {
-  static const MethodInfo* get() {
-    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
-    static auto* jarg2 = &::il2cpp_utils::GetClassFromName("System", "IntPtr")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "FutureString_SWIG_FreeCompletionData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1, jarg2});
-  }
-};
-// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::FutureString_GetResult
-// Il2CppName: FutureString_GetResult
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::AppUtilPINVOKE::FutureString_GetResult)> {
-  static const MethodInfo* get() {
-    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "FutureString_GetResult", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
-  }
-};
-// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::delete_FutureString
-// Il2CppName: delete_FutureString
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::AppUtilPINVOKE::delete_FutureString)> {
-  static const MethodInfo* get() {
-    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "delete_FutureString", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
-  }
-};
 // Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::FutureVoid_SWIG_OnCompletion
 // Il2CppName: FutureVoid_SWIG_OnCompletion
 template<>
@@ -429,6 +391,51 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "delete_FutureVoid", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
+// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::AppOptionsInternal_GetDatabaseUrlInternal
+// Il2CppName: AppOptionsInternal_GetDatabaseUrlInternal
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::AppUtilPINVOKE::AppOptionsInternal_GetDatabaseUrlInternal)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "AppOptionsInternal_GetDatabaseUrlInternal", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::AppOptionsInternal_AppId_get
+// Il2CppName: AppOptionsInternal_AppId_get
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::AppUtilPINVOKE::AppOptionsInternal_AppId_get)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "AppOptionsInternal_AppId_get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::AppOptionsInternal_ApiKey_get
+// Il2CppName: AppOptionsInternal_ApiKey_get
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::AppUtilPINVOKE::AppOptionsInternal_ApiKey_get)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "AppOptionsInternal_ApiKey_get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::AppOptionsInternal_MessageSenderId_get
+// Il2CppName: AppOptionsInternal_MessageSenderId_get
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::AppUtilPINVOKE::AppOptionsInternal_MessageSenderId_get)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "AppOptionsInternal_MessageSenderId_get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::AppOptionsInternal_StorageBucket_get
+// Il2CppName: AppOptionsInternal_StorageBucket_get
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::AppUtilPINVOKE::AppOptionsInternal_StorageBucket_get)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "AppOptionsInternal_StorageBucket_get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
 // Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::AppOptionsInternal_ProjectId_get
 // Il2CppName: AppOptionsInternal_ProjectId_get
 template<>
@@ -436,6 +443,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
   static const MethodInfo* get() {
     static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "AppOptionsInternal_ProjectId_get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
+  }
+};
+// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::AppOptionsInternal_PackageName_get
+// Il2CppName: AppOptionsInternal_PackageName_get
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::System::Runtime::InteropServices::HandleRef)>(&Firebase::AppUtilPINVOKE::AppOptionsInternal_PackageName_get)> {
+  static const MethodInfo* get() {
+    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System.Runtime.InteropServices", "HandleRef")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "AppOptionsInternal_PackageName_get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
 // Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::delete_AppOptionsInternal
@@ -569,15 +585,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
   static const MethodInfo* get() {
     static auto* jarg1 = &::il2cpp_utils::GetClassFromName("Firebase", "LogUtil/LogMessageDelegate")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "SetLogFunction", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
-  }
-};
-// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::FutureString_SWIGUpcast
-// Il2CppName: FutureString_SWIGUpcast
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::System::IntPtr)>(&Firebase::AppUtilPINVOKE::FutureString_SWIGUpcast)> {
-  static const MethodInfo* get() {
-    static auto* jarg1 = &::il2cpp_utils::GetClassFromName("System", "IntPtr")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE*), "FutureString_SWIGUpcast", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{jarg1});
   }
 };
 // Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::FutureVoid_SWIGUpcast

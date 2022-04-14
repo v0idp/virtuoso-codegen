@@ -38,15 +38,7 @@ namespace Oculus::Voice::Bindings::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoiceSDKConfigBinding : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Facebook.WitAi.Configuration.WitRuntimeConfiguration configuration
     // Size: 0x8
     // Offset: 0x10
@@ -59,16 +51,16 @@ namespace Oculus::Voice::Bindings::Android {
       return configuration;
     }
     // Get instance field reference: private Facebook.WitAi.Configuration.WitRuntimeConfiguration configuration
-    ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_configuration();
+    [[deprecated]] ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_configuration();
     // public System.Void .ctor(Facebook.WitAi.Configuration.WitRuntimeConfiguration config)
-    // Offset: 0x12E5C34
+    // Offset: 0x18E9EA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VoiceSDKConfigBinding* New_ctor(::Facebook::WitAi::Configuration::WitRuntimeConfiguration* config) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Bindings::Android::VoiceSDKConfigBinding::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<VoiceSDKConfigBinding*, creationType>(config)));
     }
     // public UnityEngine.AndroidJavaObject ToJavaObject()
-    // Offset: 0x12E5C60
+    // Offset: 0x18E9ED4
     ::UnityEngine::AndroidJavaObject* ToJavaObject();
   }; // Oculus.Voice.Bindings.Android.VoiceSDKConfigBinding
   #pragma pack(pop)

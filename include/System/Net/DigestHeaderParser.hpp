@@ -28,15 +28,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class DigestHeaderParser : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String header
     // Size: 0x8
     // Offset: 0x10
@@ -67,49 +59,49 @@ namespace System::Net {
     // Set static field: static private System.String[] keywords
     static void _set_keywords(::ArrayW<::StringW> value);
     // Get instance field reference: private System.String header
-    ::StringW& dyn_header();
+    [[deprecated]] ::StringW& dyn_header();
     // Get instance field reference: private System.Int32 length
-    int& dyn_length();
+    [[deprecated]] int& dyn_length();
     // Get instance field reference: private System.Int32 pos
-    int& dyn_pos();
+    [[deprecated]] int& dyn_pos();
     // Get instance field reference: private System.String[] values
-    ::ArrayW<::StringW>& dyn_values();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_values();
     // public System.String get_Realm()
-    // Offset: 0xE7C3D8
+    // Offset: 0xEFA568
     ::StringW get_Realm();
     // public System.String get_Opaque()
-    // Offset: 0xE7C40C
+    // Offset: 0xEFA59C
     ::StringW get_Opaque();
     // public System.String get_Nonce()
-    // Offset: 0xE7C444
+    // Offset: 0xEFA5D4
     ::StringW get_Nonce();
     // public System.String get_Algorithm()
-    // Offset: 0xE7C47C
+    // Offset: 0xEFA60C
     ::StringW get_Algorithm();
     // public System.String get_QOP()
-    // Offset: 0xE7C4B4
+    // Offset: 0xEFA644
     ::StringW get_QOP();
     // public System.Void .ctor(System.String header)
-    // Offset: 0xE7C318
+    // Offset: 0xEFA4A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DigestHeaderParser* New_ctor(::StringW header) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::DigestHeaderParser::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DigestHeaderParser*, creationType>(header)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xE7C9A4
+    // Offset: 0xEFAB34
     static void _cctor();
     // public System.Boolean Parse()
-    // Offset: 0xE7C4EC
+    // Offset: 0xEFA67C
     bool Parse();
     // private System.Void SkipWhitespace()
-    // Offset: 0xE7C884
+    // Offset: 0xEFAA14
     void SkipWhitespace();
     // private System.String GetKey()
-    // Offset: 0xE7C910
+    // Offset: 0xEFAAA0
     ::StringW GetKey();
     // private System.Boolean GetKeywordAndValue(out System.String key, out System.String value)
-    // Offset: 0xE7C6E8
+    // Offset: 0xEFA878
     bool GetKeywordAndValue(ByRef<::StringW> key, ByRef<::StringW> value);
   }; // System.Net.DigestHeaderParser
   #pragma pack(pop)

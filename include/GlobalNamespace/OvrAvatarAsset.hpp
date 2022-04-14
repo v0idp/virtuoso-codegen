@@ -26,15 +26,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarAsset : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.UInt64 assetID
     // Size: 0x8
     // Offset: 0x10
@@ -47,9 +39,9 @@ namespace GlobalNamespace {
       return assetID;
     }
     // Get instance field reference: public System.UInt64 assetID
-    uint64_t& dyn_assetID();
+    [[deprecated]] uint64_t& dyn_assetID();
     // public System.Void .ctor()
-    // Offset: 0x926198
+    // Offset: 0xF8736C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -31,15 +31,7 @@ namespace Facebook::WitAi {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Wit::$$c__DisplayClass55_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Facebook.WitAi.Wit <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -54,14 +46,14 @@ namespace Facebook::WitAi {
     static_assert(sizeof(::Facebook::WitAi::WitRequest*) == 0x8);
     public:
     // Get instance field reference: public Facebook.WitAi.Wit <>4__this
-    ::Facebook::WitAi::Wit*& dyn_$$4__this();
+    [[deprecated]] ::Facebook::WitAi::Wit*& dyn_$$4__this();
     // Get instance field reference: public Facebook.WitAi.WitRequest request
-    ::Facebook::WitAi::WitRequest*& dyn_request();
+    [[deprecated]] ::Facebook::WitAi::WitRequest*& dyn_request();
     // System.Void <QueueResult>b__0()
-    // Offset: 0x11071B8
+    // Offset: 0x167DA24
     void $QueueResult$b__0();
     // public System.Void .ctor()
-    // Offset: 0x10FD45C
+    // Offset: 0x1673CC4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

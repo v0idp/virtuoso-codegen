@@ -30,15 +30,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PercussionNode : public ::VROSC::IntNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.MidiPercussion _percussionValue
     // Size: 0x4
     // Offset: 0x30
@@ -47,15 +39,15 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::MidiPercussion) == 0x4);
     public:
     // Get instance field reference: private VROSC.MidiPercussion _percussionValue
-    ::VROSC::MidiPercussion& dyn__percussionValue();
+    [[deprecated]] ::VROSC::MidiPercussion& dyn__percussionValue();
     // public VROSC.MidiPercussion get_PercussionValue()
-    // Offset: 0x8FA08C
+    // Offset: 0xADE824
     ::VROSC::MidiPercussion get_PercussionValue();
     // public System.Void set_PercussionValue(VROSC.MidiPercussion value)
-    // Offset: 0x8FA094
+    // Offset: 0xADE82C
     void set_PercussionValue(::VROSC::MidiPercussion value);
     // public System.Void .ctor()
-    // Offset: 0x8FA0E4
+    // Offset: 0xADE87C
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -70,12 +62,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<PercussionNode*, creationType>()));
     }
     // protected override System.Void OnValidate()
-    // Offset: 0x8FA0A0
+    // Offset: 0xADE838
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::OnValidate()
     void OnValidate();
     // protected override System.Int32 SetValueInRange(System.Int32 value)
-    // Offset: 0x8FA0BC
+    // Offset: 0xADE854
     // Implemented from: VROSC.IntNode
     // Base method: System.Int32 IntNode::SetValueInRange(System.Int32 value)
     int SetValueInRange(int value);

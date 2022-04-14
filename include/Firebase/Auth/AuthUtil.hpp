@@ -31,16 +31,16 @@ namespace Firebase::Auth {
   class AuthUtil : public ::Il2CppObject {
     public:
     // static System.IntPtr CreateAuthStateListener(Firebase.Auth.FirebaseAuth auth, Firebase.Auth.FirebaseAuth/Firebase.Auth.StateChangedDelegate state_changed_delegate)
-    // Offset: 0x12AE8BC
+    // Offset: 0x18AE460
     static ::System::IntPtr CreateAuthStateListener(::Firebase::Auth::FirebaseAuth* auth, ::Firebase::Auth::FirebaseAuth::StateChangedDelegate* state_changed_delegate);
     // static System.Void DestroyAuthStateListener(Firebase.Auth.FirebaseAuth auth, System.IntPtr listener)
-    // Offset: 0x12AEAAC
+    // Offset: 0x18AE650
     static void DestroyAuthStateListener(::Firebase::Auth::FirebaseAuth* auth, ::System::IntPtr listener);
     // static System.IntPtr CreateIdTokenListener(Firebase.Auth.FirebaseAuth auth, Firebase.Auth.FirebaseAuth/Firebase.Auth.StateChangedDelegate state_changed_delegate)
-    // Offset: 0x12AEC20
+    // Offset: 0x18AE7C4
     static ::System::IntPtr CreateIdTokenListener(::Firebase::Auth::FirebaseAuth* auth, ::Firebase::Auth::FirebaseAuth::StateChangedDelegate* state_changed_delegate);
     // static System.Void DestroyIdTokenListener(Firebase.Auth.FirebaseAuth auth, System.IntPtr listener)
-    // Offset: 0x12AEDA4
+    // Offset: 0x18AE948
     static void DestroyIdTokenListener(::Firebase::Auth::FirebaseAuth* auth, ::System::IntPtr listener);
   }; // Firebase.Auth.AuthUtil
   #pragma pack(pop)

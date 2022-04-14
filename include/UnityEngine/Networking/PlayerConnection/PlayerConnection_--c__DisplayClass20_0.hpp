@@ -31,15 +31,7 @@ namespace UnityEngine::Networking::PlayerConnection {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class PlayerConnection::$$c__DisplayClass20_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean msgReceived
     // Size: 0x1
     // Offset: 0x10
@@ -52,12 +44,12 @@ namespace UnityEngine::Networking::PlayerConnection {
       return msgReceived;
     }
     // Get instance field reference: public System.Boolean msgReceived
-    bool& dyn_msgReceived();
+    [[deprecated]] bool& dyn_msgReceived();
     // System.Void <BlockUntilRecvMsg>b__0(UnityEngine.Networking.PlayerConnection.MessageEventArgs args)
-    // Offset: 0x124FD5C
+    // Offset: 0x1843F30
     void $BlockUntilRecvMsg$b__0(::UnityEngine::Networking::PlayerConnection::MessageEventArgs* args);
     // public System.Void .ctor()
-    // Offset: 0x124FD54
+    // Offset: 0x1843F28
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

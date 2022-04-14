@@ -60,7 +60,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.LogBehaviour ErrorsOnly
     static void _set_ErrorsOnly(::DG::Tweening::LogBehaviour value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.LogBehaviour
   #pragma pack(pop)
   static check_size<sizeof(LogBehaviour), 0 + sizeof(int)> __DG_Tweening_LogBehaviourSizeCheck;

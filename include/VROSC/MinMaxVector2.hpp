@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MinMaxVector2 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.MinMaxFloat _x
     // Size: 0x8
     // Offset: 0x10
@@ -58,42 +50,42 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::MinMaxFloat*) == 0x8);
     public:
     // Get instance field reference: private VROSC.MinMaxFloat _x
-    ::VROSC::MinMaxFloat*& dyn__x();
+    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__x();
     // Get instance field reference: private VROSC.MinMaxFloat _y
-    ::VROSC::MinMaxFloat*& dyn__y();
+    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__y();
     // public VROSC.MinMaxFloat get_X()
-    // Offset: 0x8B4EC8
+    // Offset: 0xAC8AC8
     ::VROSC::MinMaxFloat* get_X();
     // public VROSC.MinMaxFloat get_Y()
-    // Offset: 0x8B4ED0
+    // Offset: 0xAC8AD0
     ::VROSC::MinMaxFloat* get_Y();
     // public UnityEngine.Vector2 get_Min()
-    // Offset: 0x8B4ED8
+    // Offset: 0xAC8AD8
     ::UnityEngine::Vector2 get_Min();
     // public UnityEngine.Vector2 get_Max()
-    // Offset: 0x8B4F04
+    // Offset: 0xAC8B04
     ::UnityEngine::Vector2 get_Max();
     // public System.Void .ctor(UnityEngine.Vector2 min, UnityEngine.Vector2 max)
-    // Offset: 0x8B4F30
+    // Offset: 0xAC8B30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MinMaxVector2* New_ctor(::UnityEngine::Vector2 min, ::UnityEngine::Vector2 max) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MinMaxVector2::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MinMaxVector2*, creationType>(min, max)));
     }
     // public UnityEngine.Vector2 Random()
-    // Offset: 0x8B4FE0
+    // Offset: 0xAC8BE0
     ::UnityEngine::Vector2 Random();
     // public UnityEngine.Vector2 Lerp(UnityEngine.Vector2 value, System.Boolean clamp)
-    // Offset: 0x8B503C
+    // Offset: 0xAC8C3C
     ::UnityEngine::Vector2 Lerp(::UnityEngine::Vector2 value, bool clamp);
     // public UnityEngine.Vector2 InverseLerp(UnityEngine.Vector2 value, System.Boolean clamp)
-    // Offset: 0x8B509C
+    // Offset: 0xAC8C9C
     ::UnityEngine::Vector2 InverseLerp(::UnityEngine::Vector2 value, bool clamp);
     // public UnityEngine.Vector2 Clamp(UnityEngine.Vector2 value)
-    // Offset: 0x8B50FC
+    // Offset: 0xAC8CFC
     ::UnityEngine::Vector2 Clamp(::UnityEngine::Vector2 value);
     // public System.Void Invert()
-    // Offset: 0x8B5160
+    // Offset: 0xAC8D60
     void Invert();
   }; // VROSC.MinMaxVector2
   #pragma pack(pop)

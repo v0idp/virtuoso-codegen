@@ -46,15 +46,7 @@ namespace GlobalNamespace {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class NGramGenerator::$MakeNgrams$d__11 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerable_1<::StringW>, public ::System::Collections::Generic::IEnumerator_1<::StringW>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -143,56 +135,56 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::StringW>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.String <>2__current
-    ::StringW& dyn_$$2__current();
+    [[deprecated]] ::StringW& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    int& dyn_$$l__initialThreadId();
+    [[deprecated]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: private System.String text
-    ::StringW& dyn_text();
+    [[deprecated]] ::StringW& dyn_text();
     // Get instance field reference: public System.String <>3__text
-    ::StringW& dyn_$$3__text();
+    [[deprecated]] ::StringW& dyn_$$3__text();
     // Get instance field reference: private System.Byte nGramSize
-    uint8_t& dyn_nGramSize();
+    [[deprecated]] uint8_t& dyn_nGramSize();
     // Get instance field reference: public System.Byte <>3__nGramSize
-    uint8_t& dyn_$$3__nGramSize();
+    [[deprecated]] uint8_t& dyn_$$3__nGramSize();
     // Get instance field reference: private System.Text.StringBuilder <nGram>5__2
-    ::System::Text::StringBuilder*& dyn_$nGram$5__2();
+    [[deprecated]] ::System::Text::StringBuilder*& dyn_$nGram$5__2();
     // Get instance field reference: private System.Collections.Generic.Queue`1<System.Int32> <wordLengths>5__3
-    ::System::Collections::Generic::Queue_1<int>*& dyn_$wordLengths$5__3();
+    [[deprecated]] ::System::Collections::Generic::Queue_1<int>*& dyn_$wordLengths$5__3();
     // Get instance field reference: private System.Int32 <wordCount>5__4
-    int& dyn_$wordCount$5__4();
+    [[deprecated]] int& dyn_$wordCount$5__4();
     // Get instance field reference: private System.Int32 <lastWordLen>5__5
-    int& dyn_$lastWordLen$5__5();
+    [[deprecated]] int& dyn_$lastWordLen$5__5();
     // Get instance field reference: private System.Int32 <i>5__6
-    int& dyn_$i$5__6();
+    [[deprecated]] int& dyn_$i$5__6();
     // private System.String System.Collections.Generic.IEnumerator<System.String>.get_Current()
-    // Offset: 0x133D458
+    // Offset: 0x1965348
     ::StringW System_Collections_Generic_IEnumerator$System_String$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x133D4A0
+    // Offset: 0x1965390
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x133CFA8
+    // Offset: 0x1964E98
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NGramGenerator::$MakeNgrams$d__11* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::NGramGenerator::$MakeNgrams$d__11::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NGramGenerator::$MakeNgrams$d__11*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x133CFE0
+    // Offset: 0x1964ED0
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x133CFE4
+    // Offset: 0x1964ED4
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x133D460
+    // Offset: 0x1965350
     void System_Collections_IEnumerator_Reset();
     // private System.Collections.Generic.IEnumerator`1<System.String> System.Collections.Generic.IEnumerable<System.String>.GetEnumerator()
-    // Offset: 0x133D4A8
+    // Offset: 0x1965398
     ::System::Collections::Generic::IEnumerator_1<::StringW>* System_Collections_Generic_IEnumerable$System_String$_GetEnumerator();
     // private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-    // Offset: 0x133D558
+    // Offset: 0x1965448
     ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator();
   }; // NGramGenerator/<MakeNgrams>d__11
   #pragma pack(pop)

@@ -51,15 +51,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScreenFade : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single <Progress>k__BackingField
     // Size: 0x4
     // Offset: 0x18
@@ -122,46 +114,46 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single <Progress>k__BackingField
-    float& dyn_$Progress$k__BackingField();
+    [[deprecated]] float& dyn_$Progress$k__BackingField();
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private UnityEngine.Color _targetColor
-    ::UnityEngine::Color& dyn__targetColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__targetColor();
     // Get instance field reference: private UnityEngine.Color _startColor
-    ::UnityEngine::Color& dyn__startColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__startColor();
     // Get instance field reference: private UnityEngine.Color _currentColor
-    ::UnityEngine::Color& dyn__currentColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__currentColor();
     // Get instance field reference: private UnityEngine.AnimationCurve _fadeCurve
-    ::UnityEngine::AnimationCurve*& dyn__fadeCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__fadeCurve();
     // Get instance field reference: private System.Single _duration
-    float& dyn__duration();
+    [[deprecated]] float& dyn__duration();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnColor
-    ::System::Action_1<::UnityEngine::Color>*& dyn_OnColor();
+    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColor();
     // Get instance field reference: public System.Action`2<System.Boolean,UnityEngine.Color> IsFading
-    ::System::Action_2<bool, ::UnityEngine::Color>*& dyn_IsFading();
+    [[deprecated]] ::System::Action_2<bool, ::UnityEngine::Color>*& dyn_IsFading();
     // public System.Single get_Progress()
-    // Offset: 0x13E158C
+    // Offset: 0x198065C
     float get_Progress();
     // private System.Void set_Progress(System.Single value)
-    // Offset: 0x13E1584
+    // Offset: 0x1980654
     void set_Progress(float value);
     // private System.Void Awake()
-    // Offset: 0x13E1594
+    // Offset: 0x1980664
     void Awake();
     // public System.Void Fade(UnityEngine.Color targetColor, System.Single duration, UnityEngine.AnimationCurve fadeCurve)
-    // Offset: 0x13E1638
+    // Offset: 0x1980708
     void Fade(::UnityEngine::Color targetColor, float duration, ::UnityEngine::AnimationCurve* fadeCurve);
     // public System.Void SetColor(UnityEngine.Color color, System.Boolean alphaCheck)
-    // Offset: 0x13E165C
+    // Offset: 0x198072C
     void SetColor(::UnityEngine::Color color, bool alphaCheck);
     // private System.Void LateUpdate()
-    // Offset: 0x13E17B0
+    // Offset: 0x1980880
     void LateUpdate();
     // private System.Void SetActive(System.Boolean active)
-    // Offset: 0x13E159C
+    // Offset: 0x198066C
     void SetActive(bool active);
     // public System.Void .ctor()
-    // Offset: 0x13E18A8
+    // Offset: 0x1980978
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

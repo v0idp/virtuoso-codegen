@@ -73,17 +73,17 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVR.OpenVR.EVRTrackedCameraFrameType eFrameType
-    ::OVR::OpenVR::EVRTrackedCameraFrameType& dyn_eFrameType();
+    [[deprecated]] ::OVR::OpenVR::EVRTrackedCameraFrameType& dyn_eFrameType();
     // Get instance field reference: public System.UInt32 nWidth
-    uint& dyn_nWidth();
+    [[deprecated]] uint& dyn_nWidth();
     // Get instance field reference: public System.UInt32 nHeight
-    uint& dyn_nHeight();
+    [[deprecated]] uint& dyn_nHeight();
     // Get instance field reference: public System.UInt32 nBytesPerPixel
-    uint& dyn_nBytesPerPixel();
+    [[deprecated]] uint& dyn_nBytesPerPixel();
     // Get instance field reference: public System.UInt32 nFrameSequence
-    uint& dyn_nFrameSequence();
+    [[deprecated]] uint& dyn_nFrameSequence();
     // Get instance field reference: public OVR.OpenVR.TrackedDevicePose_t standingTrackedDevicePose
-    ::OVR::OpenVR::TrackedDevicePose_t& dyn_standingTrackedDevicePose();
+    [[deprecated]] ::OVR::OpenVR::TrackedDevicePose_t& dyn_standingTrackedDevicePose();
   }; // OVR.OpenVR.CameraVideoStreamFrameHeader_t
   #pragma pack(pop)
   static check_size<sizeof(CameraVideoStreamFrameHeader_t), 20 + sizeof(::OVR::OpenVR::TrackedDevicePose_t)> __OVR_OpenVR_CameraVideoStreamFrameHeader_tSizeCheck;

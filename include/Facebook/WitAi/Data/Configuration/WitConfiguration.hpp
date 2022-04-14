@@ -52,15 +52,7 @@ namespace Facebook::WitAi::Data::Configuration {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitConfiguration : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Facebook.WitAi.Data.Configuration.WitApplication application
     // Size: 0x8
     // Offset: 0x18
@@ -101,25 +93,25 @@ namespace Facebook::WitAi::Data::Configuration {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public Facebook.WitAi.Data.Configuration.WitApplication application
-    ::Facebook::WitAi::Data::Configuration::WitApplication*& dyn_application();
+    [[deprecated]] ::Facebook::WitAi::Data::Configuration::WitApplication*& dyn_application();
     // Get instance field reference: public System.String configId
-    ::StringW& dyn_configId();
+    [[deprecated]] ::StringW& dyn_configId();
     // Get instance field reference: public System.String clientAccessToken
-    ::StringW& dyn_clientAccessToken();
+    [[deprecated]] ::StringW& dyn_clientAccessToken();
     // Get instance field reference: public Facebook.WitAi.Data.Entities.WitEntity[] entities
-    ::ArrayW<::Facebook::WitAi::Data::Entities::WitEntity*>& dyn_entities();
+    [[deprecated]] ::ArrayW<::Facebook::WitAi::Data::Entities::WitEntity*>& dyn_entities();
     // Get instance field reference: public Facebook.WitAi.Data.Intents.WitIntent[] intents
-    ::ArrayW<::Facebook::WitAi::Data::Intents::WitIntent*>& dyn_intents();
+    [[deprecated]] ::ArrayW<::Facebook::WitAi::Data::Intents::WitIntent*>& dyn_intents();
     // Get instance field reference: public Facebook.WitAi.Data.Traits.WitTrait[] traits
-    ::ArrayW<::Facebook::WitAi::Data::Traits::WitTrait*>& dyn_traits();
+    [[deprecated]] ::ArrayW<::Facebook::WitAi::Data::Traits::WitTrait*>& dyn_traits();
     // public Facebook.WitAi.Data.Configuration.WitApplication get_Application()
-    // Offset: 0x10FDD40
+    // Offset: 0x16745A8
     ::Facebook::WitAi::Data::Configuration::WitApplication* get_Application();
     // private System.Void OnEnable()
-    // Offset: 0x10FDD48
+    // Offset: 0x16745B0
     void OnEnable();
     // public System.Void .ctor()
-    // Offset: 0x10FDD4C
+    // Offset: 0x16745B4
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

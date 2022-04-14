@@ -39,15 +39,15 @@ namespace UnityEngine {
       return m_ParticleSystem;
     }
     // Get instance field reference: UnityEngine.ParticleSystem m_ParticleSystem
-    ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
     // public System.Void set_enabled(System.Boolean value)
-    // Offset: 0x12FB654
+    // Offset: 0x1900F5C
     void set_enabled(bool value);
     // System.Void .ctor(UnityEngine.ParticleSystem particleSystem)
-    // Offset: 0x12FAD60
+    // Offset: 0x1900668
     // ABORTED: conflicts with another method.  TrailModule(::UnityEngine::ParticleSystem* particleSystem);
     // static private System.Void set_enabled_Injected(ref UnityEngine.ParticleSystem/UnityEngine.TrailModule _unity_self, System.Boolean value)
-    // Offset: 0x12FB6A4
+    // Offset: 0x1900FAC
     static void set_enabled_Injected(ByRef<::UnityEngine::ParticleSystem::TrailModule> _unity_self, bool value);
   }; // UnityEngine.ParticleSystem/UnityEngine.TrailModule
   #pragma pack(pop)

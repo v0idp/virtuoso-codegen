@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TieSizeToInt : public ::VROSC::Node {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IntNode _x
     // Size: 0x8
     // Offset: 0x18
@@ -88,31 +80,31 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.IntNode _x
-    ::VROSC::IntNode*& dyn__x();
+    [[deprecated]] ::VROSC::IntNode*& dyn__x();
     // Get instance field reference: private System.Int32 _previousValueX
-    int& dyn__previousValueX();
+    [[deprecated]] int& dyn__previousValueX();
     // Get instance field reference: private VROSC.IntNode _y
-    ::VROSC::IntNode*& dyn__y();
+    [[deprecated]] ::VROSC::IntNode*& dyn__y();
     // Get instance field reference: private System.Int32 _previousValueY
-    int& dyn__previousValueY();
+    [[deprecated]] int& dyn__previousValueY();
     // Get instance field reference: private VROSC.IntNode _z
-    ::VROSC::IntNode*& dyn__z();
+    [[deprecated]] ::VROSC::IntNode*& dyn__z();
     // Get instance field reference: private System.Int32 _previousValueZ
-    int& dyn__previousValueZ();
+    [[deprecated]] int& dyn__previousValueZ();
     // protected System.Void Start()
-    // Offset: 0x13FE5E8
+    // Offset: 0xA264D0
     void Start();
     // private System.Void ValueChangedX(System.Int32 newValue)
-    // Offset: 0x13FE89C
+    // Offset: 0xA26784
     void ValueChangedX(int newValue);
     // private System.Void ValueChangedY(System.Int32 newValue)
-    // Offset: 0x13FE968
+    // Offset: 0xA26850
     void ValueChangedY(int newValue);
     // private System.Void ValueChangedZ(System.Int32 newValue)
-    // Offset: 0x13FEA34
+    // Offset: 0xA2691C
     void ValueChangedZ(int newValue);
     // public System.Void .ctor()
-    // Offset: 0x13FEB04
+    // Offset: 0xA269EC
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

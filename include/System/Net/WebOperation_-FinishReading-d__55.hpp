@@ -80,22 +80,22 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebOperation <>4__this
-    ::System::Net::WebOperation*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebOperation*& dyn_$$4__this();
     // Get instance field reference: private System.Exception <error>5__1
-    ::System::Exception*& dyn_$error$5__1();
+    [[deprecated]] ::System::Exception*& dyn_$error$5__1();
     // Get instance field reference: private System.Boolean <ok>5__2
-    bool& dyn_$ok$5__2();
+    [[deprecated]] bool& dyn_$ok$5__2();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Boolean> <>u__1
-    typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<bool>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<bool>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8EA8F0
+    // Offset: 0xA0845C
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8EAE6C
+    // Offset: 0xA089D8
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.Net.WebOperation/System.Net.<FinishReading>d__55
   // WARNING Not writing size check since size may be invalid!

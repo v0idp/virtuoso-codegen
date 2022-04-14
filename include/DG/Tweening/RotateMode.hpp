@@ -66,7 +66,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.RotateMode LocalAxisAdd
     static void _set_LocalAxisAdd(::DG::Tweening::RotateMode value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.RotateMode
   #pragma pack(pop)
   static check_size<sizeof(RotateMode), 0 + sizeof(int)> __DG_Tweening_RotateModeSizeCheck;

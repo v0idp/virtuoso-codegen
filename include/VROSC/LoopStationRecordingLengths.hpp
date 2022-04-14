@@ -33,19 +33,19 @@ namespace VROSC {
     // Set static field: static private System.Single[] _parsedLoopLengths
     static void _set__parsedLoopLengths(::ArrayW<float> value);
     // static public System.String[] get_PossibleLoopLengthNames()
-    // Offset: 0x8A4738
+    // Offset: 0x1977834
     static ::ArrayW<::StringW> get_PossibleLoopLengthNames();
     // static public System.Single[] get_PossibleLoopLengths()
-    // Offset: 0x8A479C
+    // Offset: 0x1977898
     static ::ArrayW<float> get_PossibleLoopLengths();
     // static public System.Single get_MaxLoopLengthBars()
-    // Offset: 0x8A4800
+    // Offset: 0x1974A20
     static float get_MaxLoopLengthBars();
     // static private System.Void .cctor()
-    // Offset: 0x8A4974
+    // Offset: 0x19779E0
     static void _cctor();
     // static public System.Int32 GetIndexOfLength(System.Single length)
-    // Offset: 0x8A4890
+    // Offset: 0x19778FC
     static int GetIndexOfLength(float length);
   }; // VROSC.LoopStationRecordingLengths
   #pragma pack(pop)

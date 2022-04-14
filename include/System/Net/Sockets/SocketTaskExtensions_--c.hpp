@@ -57,16 +57,16 @@ namespace System::Net::Sockets {
     // Set static field: static public System.Action`1<System.IAsyncResult> <>9__2_1
     static void _set_$$9__2_1(::System::Action_1<::System::IAsyncResult*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x8E5228
+    // Offset: 0xA01CEC
     static void _cctor();
     // System.IAsyncResult <ConnectAsync>b__2_0(System.Net.EndPoint targetEndPoint, System.AsyncCallback callback, System.Object state)
-    // Offset: 0x8E5290
+    // Offset: 0xA01D54
     ::System::IAsyncResult* $ConnectAsync$b__2_0(::System::Net::EndPoint* targetEndPoint, ::System::AsyncCallback* callback, ::Il2CppObject* state);
     // System.Void <ConnectAsync>b__2_1(System.IAsyncResult asyncResult)
-    // Offset: 0x8E5334
+    // Offset: 0xA01DF8
     void $ConnectAsync$b__2_1(::System::IAsyncResult* asyncResult);
     // public System.Void .ctor()
-    // Offset: 0x8E5288
+    // Offset: 0xA01D4C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

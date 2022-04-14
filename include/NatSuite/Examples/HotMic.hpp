@@ -45,15 +45,7 @@ namespace NatSuite::Examples {
     public:
     // Nested type: ::NatSuite::Examples::HotMic::$Start$d__2
     struct $Start$d__2;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private NatSuite.Devices.IAudioDevice device
     // Size: 0x8
     // Offset: 0x18
@@ -70,20 +62,20 @@ namespace NatSuite::Examples {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private NatSuite.Devices.IAudioDevice device
-    ::NatSuite::Devices::IAudioDevice*& dyn_device();
+    [[deprecated]] ::NatSuite::Devices::IAudioDevice*& dyn_device();
     // Get instance field reference: private NatSuite.Examples.Components.ClipRecorder recorder
-    ::NatSuite::Examples::Components::ClipRecorder*& dyn_recorder();
+    [[deprecated]] ::NatSuite::Examples::Components::ClipRecorder*& dyn_recorder();
     // private System.Void Start()
-    // Offset: 0x89F8A4
+    // Offset: 0x1941D5C
     void Start();
     // public System.Void StartRecording()
-    // Offset: 0x89F968
+    // Offset: 0x1941E20
     void StartRecording();
     // public System.Void StopRecording()
-    // Offset: 0x89FD08
+    // Offset: 0x19421C0
     void StopRecording();
     // public System.Void .ctor()
-    // Offset: 0x89FDE0
+    // Offset: 0x1942298
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

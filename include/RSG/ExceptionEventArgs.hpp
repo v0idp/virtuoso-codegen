@@ -35,15 +35,7 @@ namespace RSG {
   // [TokenAttribute] Offset: FFFFFFFF
   class ExceptionEventArgs : public ::System::EventArgs {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Exception <Exception>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -56,15 +48,15 @@ namespace RSG {
       return Exception;
     }
     // Get instance field reference: private System.Exception <Exception>k__BackingField
-    ::System::Exception*& dyn_$Exception$k__BackingField();
+    [[deprecated]] ::System::Exception*& dyn_$Exception$k__BackingField();
     // public System.Exception get_Exception()
-    // Offset: 0x1316300
+    // Offset: 0x8F03B0
     ::System::Exception* get_Exception();
     // private System.Void set_Exception(System.Exception value)
-    // Offset: 0x1316308
+    // Offset: 0x8F03B8
     void set_Exception(::System::Exception* value);
     // System.Void .ctor(System.Exception exception)
-    // Offset: 0x1316288
+    // Offset: 0x8F0338
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExceptionEventArgs* New_ctor(::System::Exception* exception) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::ExceptionEventArgs::.ctor");

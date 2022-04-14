@@ -44,15 +44,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class InflaterManaged : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.IO.Compression.OutputWindow _output
     // Size: 0x8
     // Offset: 0x10
@@ -223,89 +215,89 @@ namespace System::IO::Compression {
     // Set static field: static private readonly System.Byte[] s_staticDistanceTreeTable
     static void _set_s_staticDistanceTreeTable(::ArrayW<uint8_t> value);
     // Get instance field reference: private readonly System.IO.Compression.OutputWindow _output
-    ::System::IO::Compression::OutputWindow*& dyn__output();
+    [[deprecated]] ::System::IO::Compression::OutputWindow*& dyn__output();
     // Get instance field reference: private readonly System.IO.Compression.InputBuffer _input
-    ::System::IO::Compression::InputBuffer*& dyn__input();
+    [[deprecated]] ::System::IO::Compression::InputBuffer*& dyn__input();
     // Get instance field reference: private System.IO.Compression.HuffmanTree _literalLengthTree
-    ::System::IO::Compression::HuffmanTree*& dyn__literalLengthTree();
+    [[deprecated]] ::System::IO::Compression::HuffmanTree*& dyn__literalLengthTree();
     // Get instance field reference: private System.IO.Compression.HuffmanTree _distanceTree
-    ::System::IO::Compression::HuffmanTree*& dyn__distanceTree();
+    [[deprecated]] ::System::IO::Compression::HuffmanTree*& dyn__distanceTree();
     // Get instance field reference: private System.IO.Compression.InflaterState _state
-    ::System::IO::Compression::InflaterState& dyn__state();
+    [[deprecated]] ::System::IO::Compression::InflaterState& dyn__state();
     // Get instance field reference: private System.Boolean _hasFormatReader
-    bool& dyn__hasFormatReader();
+    [[deprecated]] bool& dyn__hasFormatReader();
     // Get instance field reference: private System.Int32 _bfinal
-    int& dyn__bfinal();
+    [[deprecated]] int& dyn__bfinal();
     // Get instance field reference: private System.IO.Compression.BlockType _blockType
-    ::System::IO::Compression::BlockType& dyn__blockType();
+    [[deprecated]] ::System::IO::Compression::BlockType& dyn__blockType();
     // Get instance field reference: private readonly System.Byte[] _blockLengthBuffer
-    ::ArrayW<uint8_t>& dyn__blockLengthBuffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__blockLengthBuffer();
     // Get instance field reference: private System.Int32 _blockLength
-    int& dyn__blockLength();
+    [[deprecated]] int& dyn__blockLength();
     // Get instance field reference: private System.Int32 _length
-    int& dyn__length();
+    [[deprecated]] int& dyn__length();
     // Get instance field reference: private System.Int32 _distanceCode
-    int& dyn__distanceCode();
+    [[deprecated]] int& dyn__distanceCode();
     // Get instance field reference: private System.Int32 _extraBits
-    int& dyn__extraBits();
+    [[deprecated]] int& dyn__extraBits();
     // Get instance field reference: private System.Int32 _loopCounter
-    int& dyn__loopCounter();
+    [[deprecated]] int& dyn__loopCounter();
     // Get instance field reference: private System.Int32 _literalLengthCodeCount
-    int& dyn__literalLengthCodeCount();
+    [[deprecated]] int& dyn__literalLengthCodeCount();
     // Get instance field reference: private System.Int32 _distanceCodeCount
-    int& dyn__distanceCodeCount();
+    [[deprecated]] int& dyn__distanceCodeCount();
     // Get instance field reference: private System.Int32 _codeLengthCodeCount
-    int& dyn__codeLengthCodeCount();
+    [[deprecated]] int& dyn__codeLengthCodeCount();
     // Get instance field reference: private System.Int32 _codeArraySize
-    int& dyn__codeArraySize();
+    [[deprecated]] int& dyn__codeArraySize();
     // Get instance field reference: private System.Int32 _lengthCode
-    int& dyn__lengthCode();
+    [[deprecated]] int& dyn__lengthCode();
     // Get instance field reference: private readonly System.Byte[] _codeList
-    ::ArrayW<uint8_t>& dyn__codeList();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__codeList();
     // Get instance field reference: private readonly System.Byte[] _codeLengthTreeCodeLength
-    ::ArrayW<uint8_t>& dyn__codeLengthTreeCodeLength();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__codeLengthTreeCodeLength();
     // Get instance field reference: private readonly System.Boolean _deflate64
-    bool& dyn__deflate64();
+    [[deprecated]] bool& dyn__deflate64();
     // Get instance field reference: private System.IO.Compression.HuffmanTree _codeLengthTree
-    ::System::IO::Compression::HuffmanTree*& dyn__codeLengthTree();
+    [[deprecated]] ::System::IO::Compression::HuffmanTree*& dyn__codeLengthTree();
     // Get instance field reference: private System.IO.Compression.IFileFormatReader _formatReader
-    ::System::IO::Compression::IFileFormatReader*& dyn__formatReader();
+    [[deprecated]] ::System::IO::Compression::IFileFormatReader*& dyn__formatReader();
     // System.Void .ctor(System.IO.Compression.IFileFormatReader reader, System.Boolean deflate64)
-    // Offset: 0x111BB40
+    // Offset: 0x16933AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InflaterManaged* New_ctor(::System::IO::Compression::IFileFormatReader* reader, bool deflate64) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::InflaterManaged::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InflaterManaged*, creationType>(reader, deflate64)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x1120DB4
+    // Offset: 0x1698620
     static void _cctor();
     // private System.Void Reset()
-    // Offset: 0x111F72C
+    // Offset: 0x1696F98
     void Reset();
     // public System.Void SetInput(System.Byte[] inputBytes, System.Int32 offset, System.Int32 length)
-    // Offset: 0x111C390
+    // Offset: 0x1693BFC
     void SetInput(::ArrayW<uint8_t> inputBytes, int offset, int length);
     // public System.Boolean Finished()
-    // Offset: 0x111C37C
+    // Offset: 0x1693BE8
     bool Finished();
     // public System.Int32 Inflate(System.Byte[] bytes, System.Int32 offset, System.Int32 length)
-    // Offset: 0x111C1B0
+    // Offset: 0x1693A1C
     int Inflate(::ArrayW<uint8_t> bytes, int offset, int length);
     // private System.Boolean Decode()
-    // Offset: 0x111F820
+    // Offset: 0x169708C
     bool Decode();
     // private System.Boolean DecodeUncompressedBlock(out System.Boolean end_of_block)
-    // Offset: 0x11208C4
+    // Offset: 0x1698130
     bool DecodeUncompressedBlock(ByRef<bool> end_of_block);
     // private System.Boolean DecodeBlock(out System.Boolean end_of_block_code_seen)
-    // Offset: 0x1120484
+    // Offset: 0x1697CF0
     bool DecodeBlock(ByRef<bool> end_of_block_code_seen);
     // private System.Boolean DecodeDynamicBlockHeader()
-    // Offset: 0x111FD44
+    // Offset: 0x16975B0
     bool DecodeDynamicBlockHeader();
     // public System.Void Dispose()
-    // Offset: 0x111D4D8
+    // Offset: 0x1694D44
     void Dispose();
   }; // System.IO.Compression.InflaterManaged
   #pragma pack(pop)

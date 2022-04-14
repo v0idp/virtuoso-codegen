@@ -100,20 +100,12 @@ namespace GlobalNamespace {
       // Set static field: static public ONSPAmbisonicsNative/ovrAmbisonicsNativeStatus MaxStatValue
       static void _set_MaxStatValue(::GlobalNamespace::ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // ONSPAmbisonicsNative/ovrAmbisonicsNativeStatus
     #pragma pack(pop)
     static check_size<sizeof(ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus), 0 + sizeof(int)> __GlobalNamespace_ONSPAmbisonicsNative_ovrAmbisonicsNativeStatusSizeCheck;
     static_assert(sizeof(ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AudioSource source
     // Size: 0x8
     // Offset: 0x18
@@ -138,17 +130,17 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 paramAmbiStat
     static void _set_paramAmbiStat(int value);
     // Get instance field reference: private UnityEngine.AudioSource source
-    ::UnityEngine::AudioSource*& dyn_source();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn_source();
     // Get instance field reference: private ONSPAmbisonicsNative/ovrAmbisonicsNativeStatus currentStatus
-    ::GlobalNamespace::ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus& dyn_currentStatus();
+    [[deprecated]] ::GlobalNamespace::ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus& dyn_currentStatus();
     // private System.Void OnEnable()
-    // Offset: 0x11BA358
+    // Offset: 0x175F260
     void OnEnable();
     // private System.Void Update()
-    // Offset: 0x11BA5DC
+    // Offset: 0x175F4E4
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x11BA830
+    // Offset: 0x175F738
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -161,7 +153,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<ONSPAmbisonicsNative*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x11BA840
+    // Offset: 0x175F748
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

@@ -25,7 +25,7 @@ namespace Firebase::Unity {
   class UnitySynchronizationContext::$SendCoroutine$c__AnonStorey1 : public ::Il2CppObject {
     public:
     // public System.Void .ctor()
-    // Offset: 0x12CC458
+    // Offset: 0x18CB7E8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -33,15 +33,7 @@ namespace NatSuite::Devices {
   // [TokenAttribute] Offset: FFFFFFFF
   class MixerDevice::MixerDeviceAttachment : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public NatSuite.Devices.SampleBufferDelegate delegate
     // Size: 0x8
     // Offset: 0x18
@@ -52,12 +44,12 @@ namespace NatSuite::Devices {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public NatSuite.Devices.SampleBufferDelegate delegate
-    ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
+    [[deprecated]] ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
     // private System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x13DCBF0
+    // Offset: 0x196490C
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void .ctor()
-    // Offset: 0x13DCC08
+    // Offset: 0x1964924
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

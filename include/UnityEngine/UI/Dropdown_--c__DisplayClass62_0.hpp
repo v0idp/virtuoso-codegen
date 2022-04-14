@@ -24,15 +24,7 @@ namespace UnityEngine::UI {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Dropdown::$$c__DisplayClass62_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.UI.Dropdown/UnityEngine.UI.DropdownItem item
     // Size: 0x8
     // Offset: 0x10
@@ -47,14 +39,14 @@ namespace UnityEngine::UI {
     static_assert(sizeof(::UnityEngine::UI::Dropdown*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.UI.Dropdown/UnityEngine.UI.DropdownItem item
-    ::UnityEngine::UI::Dropdown::DropdownItem*& dyn_item();
+    [[deprecated]] ::UnityEngine::UI::Dropdown::DropdownItem*& dyn_item();
     // Get instance field reference: public UnityEngine.UI.Dropdown <>4__this
-    ::UnityEngine::UI::Dropdown*& dyn_$$4__this();
+    [[deprecated]] ::UnityEngine::UI::Dropdown*& dyn_$$4__this();
     // System.Void <Show>b__0(System.Boolean x)
-    // Offset: 0x114163C
+    // Offset: 0x16D7DD4
     void $Show$b__0(bool x);
     // public System.Void .ctor()
-    // Offset: 0x1141634
+    // Offset: 0x16D7DCC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

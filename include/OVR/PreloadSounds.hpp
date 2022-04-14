@@ -60,7 +60,7 @@ namespace OVR {
     // Set static field: static public OVR.PreloadSounds ManualPreload
     static void _set_ManualPreload(::OVR::PreloadSounds value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // OVR.PreloadSounds
   #pragma pack(pop)
   static check_size<sizeof(PreloadSounds), 0 + sizeof(int)> __OVR_PreloadSoundsSizeCheck;

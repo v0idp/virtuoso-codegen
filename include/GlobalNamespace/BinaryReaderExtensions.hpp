@@ -39,19 +39,19 @@ namespace GlobalNamespace {
   class BinaryReaderExtensions : public ::Il2CppObject {
     public:
     // static public OvrAvatarDriver/PoseFrame ReadPoseFrame(System.IO.BinaryReader reader)
-    // Offset: 0x1323444
+    // Offset: 0x936FC4
     static ::GlobalNamespace::OvrAvatarDriver::PoseFrame ReadPoseFrame(::System::IO::BinaryReader* reader);
     // static public UnityEngine.Vector2 ReadVector2(System.IO.BinaryReader reader)
-    // Offset: 0x13237E8
+    // Offset: 0x937368
     static ::UnityEngine::Vector2 ReadVector2(::System::IO::BinaryReader* reader);
     // static public UnityEngine.Vector3 ReadVector3(System.IO.BinaryReader reader)
-    // Offset: 0x13235E4
+    // Offset: 0x937164
     static ::UnityEngine::Vector3 ReadVector3(::System::IO::BinaryReader* reader);
     // static public UnityEngine.Quaternion ReadQuaternion(System.IO.BinaryReader reader)
-    // Offset: 0x132365C
+    // Offset: 0x9371DC
     static ::UnityEngine::Quaternion ReadQuaternion(::System::IO::BinaryReader* reader);
     // static public OvrAvatarDriver/ControllerPose ReadControllerPose(System.IO.BinaryReader reader)
-    // Offset: 0x13236F8
+    // Offset: 0x937278
     static ::GlobalNamespace::OvrAvatarDriver::ControllerPose ReadControllerPose(::System::IO::BinaryReader* reader);
   }; // BinaryReaderExtensions
   #pragma pack(pop)

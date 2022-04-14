@@ -34,6 +34,8 @@ namespace VROSC {
   class LoopStation;
   // Forward declaring type: LoopPlaybackConfigOverride
   class LoopPlaybackConfigOverride;
+  // Forward declaring type: TransformDataController
+  class TransformDataController;
 }
 // Forward declaring namespace: System::Collections::Generic
 namespace System::Collections::Generic {
@@ -50,7 +52,6 @@ namespace UnityEngine {
   // Forward declaring type: RectTransform
   class RectTransform;
   // Skipping declaration: Vector3 because it is already included!
-  // Skipping declaration: Quaternion because it is already included!
 }
 // Forward declaring namespace: System
 namespace System {
@@ -82,15 +83,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::LoopStationGroup::SetupVariables
     struct SetupVariables;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <RowInAutoArrange>k__BackingField
     // Size: 0x4
     // Offset: 0x18
@@ -209,154 +202,154 @@ namespace VROSC {
     // Set static field: static public UnityEngine.Color DefaultGroupColor
     static void _set_DefaultGroupColor(::UnityEngine::Color value);
     // Get instance field reference: private System.Int32 <RowInAutoArrange>k__BackingField
-    int& dyn_$RowInAutoArrange$k__BackingField();
+    [[deprecated]] int& dyn_$RowInAutoArrange$k__BackingField();
     // Get instance field reference: private System.String <GroupID>k__BackingField
-    ::StringW& dyn_$GroupID$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$GroupID$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopPlayer> <LoopPlayers>k__BackingField
-    ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn_$LoopPlayers$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn_$LoopPlayers$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationGroupHandler <Handler>k__BackingField
-    ::VROSC::LoopStationGroupHandler*& dyn_$Handler$k__BackingField();
+    [[deprecated]] ::VROSC::LoopStationGroupHandler*& dyn_$Handler$k__BackingField();
     // Get instance field reference: private UnityEngine.Collider _dropZone
-    ::UnityEngine::Collider*& dyn__dropZone();
+    [[deprecated]] ::UnityEngine::Collider*& dyn__dropZone();
     // Get instance field reference: private UnityEngine.Transform _loopsParent
-    ::UnityEngine::Transform*& dyn__loopsParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__loopsParent();
     // Get instance field reference: private UnityEngine.RectTransform _menuRect
-    ::UnityEngine::RectTransform*& dyn__menuRect();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__menuRect();
     // Get instance field reference: private UnityEngine.RectTransform _dimensions
-    ::UnityEngine::RectTransform*& dyn__dimensions();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__dimensions();
     // Get instance field reference: private VROSC.LoopStationGroupMover _autoMover
-    ::VROSC::LoopStationGroupMover*& dyn__autoMover();
+    [[deprecated]] ::VROSC::LoopStationGroupMover*& dyn__autoMover();
     // Get instance field reference: private VROSC.LoopListArranger _arranger
-    ::VROSC::LoopListArranger*& dyn__arranger();
+    [[deprecated]] ::VROSC::LoopListArranger*& dyn__arranger();
     // Get instance field reference: private VROSC.LoopStationGroupUI _ui
-    ::VROSC::LoopStationGroupUI*& dyn__ui();
+    [[deprecated]] ::VROSC::LoopStationGroupUI*& dyn__ui();
     // Get instance field reference: private VROSC.InteractionDisabler _disabler
-    ::VROSC::InteractionDisabler*& dyn__disabler();
+    [[deprecated]] ::VROSC::InteractionDisabler*& dyn__disabler();
     // Get instance field reference: public System.Action`2<VROSC.LoopStationGroup,System.Boolean> OnGroupRemoved
-    ::System::Action_2<::VROSC::LoopStationGroup*, bool>*& dyn_OnGroupRemoved();
+    [[deprecated]] ::System::Action_2<::VROSC::LoopStationGroup*, bool>*& dyn_OnGroupRemoved();
     // Get instance field reference: public System.Action`1<VROSC.LoopPlayer> OnLoopAdded
-    ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopAdded();
+    [[deprecated]] ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopAdded();
     // Get instance field reference: public System.Action`1<VROSC.LoopPlayer> OnLoopRemoved
-    ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopRemoved();
+    [[deprecated]] ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopRemoved();
     // Get instance field reference: public System.Action OnGroupSizeChanged
-    ::System::Action*& dyn_OnGroupSizeChanged();
+    [[deprecated]] ::System::Action*& dyn_OnGroupSizeChanged();
     // Get instance field reference: public System.Action`2<VROSC.LoopStationGroup,System.Boolean> OnSoloChanged
-    ::System::Action_2<::VROSC::LoopStationGroup*, bool>*& dyn_OnSoloChanged();
+    [[deprecated]] ::System::Action_2<::VROSC::LoopStationGroup*, bool>*& dyn_OnSoloChanged();
     // Get instance field reference: protected VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // public UnityEngine.RectTransform get_Dimensions()
-    // Offset: 0x91315C
+    // Offset: 0x196E504
     ::UnityEngine::RectTransform* get_Dimensions();
     // public System.Int32 get_RowInAutoArrange()
-    // Offset: 0x913164
+    // Offset: 0x196E50C
     int get_RowInAutoArrange();
     // public System.Void set_RowInAutoArrange(System.Int32 value)
-    // Offset: 0x91316C
+    // Offset: 0x196E514
     void set_RowInAutoArrange(int value);
     // public System.String get_GroupID()
-    // Offset: 0x91317C
+    // Offset: 0x196E524
     ::StringW get_GroupID();
     // private System.Void set_GroupID(System.String value)
-    // Offset: 0x913174
+    // Offset: 0x196E51C
     void set_GroupID(::StringW value);
     // public System.Collections.Generic.List`1<VROSC.LoopPlayer> get_LoopPlayers()
-    // Offset: 0x913184
+    // Offset: 0x196E52C
     ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>* get_LoopPlayers();
     // private System.Void set_LoopPlayers(System.Collections.Generic.List`1<VROSC.LoopPlayer> value)
-    // Offset: 0x91318C
+    // Offset: 0x196E534
     void set_LoopPlayers(::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>* value);
     // public VROSC.LoopStationGroupHandler get_Handler()
-    // Offset: 0x913194
+    // Offset: 0x196E53C
     ::VROSC::LoopStationGroupHandler* get_Handler();
     // private System.Void set_Handler(VROSC.LoopStationGroupHandler value)
-    // Offset: 0x91319C
+    // Offset: 0x196E544
     void set_Handler(::VROSC::LoopStationGroupHandler* value);
     // public UnityEngine.Collider get_DropZone()
-    // Offset: 0x9131A4
+    // Offset: 0x196E54C
     ::UnityEngine::Collider* get_DropZone();
     // public System.Int32 get_Loops()
-    // Offset: 0x9131AC
+    // Offset: 0x196E554
     int get_Loops();
     // public System.Boolean get_IsEmpty()
-    // Offset: 0x90E29C
+    // Offset: 0x196E5A0
     bool get_IsEmpty();
     // public System.Single get_Volume()
-    // Offset: 0x9066A8
+    // Offset: 0x1968E08
     float get_Volume();
     // public System.Boolean get_IsMuted()
-    // Offset: 0x9064B0
+    // Offset: 0x196E61C
     bool get_IsMuted();
     // public VROSC.LoopStationGroupMover get_AutoMover()
-    // Offset: 0x913230
+    // Offset: 0x196E65C
     ::VROSC::LoopStationGroupMover* get_AutoMover();
     // public VROSC.LoopPlaybackConfigOverride get_PlaybackConfig()
-    // Offset: 0x90E050
+    // Offset: 0x196E664
     ::VROSC::LoopPlaybackConfigOverride* get_PlaybackConfig();
     // public System.Boolean get_LoopsCanOnlyBeRearranged()
-    // Offset: 0x904F00
+    // Offset: 0x196E6A8
     bool get_LoopsCanOnlyBeRearranged();
     // public System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationGroupHandler handler, VROSC.LoopStationGroup/VROSC.SetupVariables vars)
-    // Offset: 0x90DD04
+    // Offset: 0x196E6C4
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationGroupHandler* handler, ::VROSC::LoopStationGroup::SetupVariables vars);
     // public System.Void SetAutoSorted(System.Boolean autoSorted)
-    // Offset: 0x91325C
+    // Offset: 0x196E890
     void SetAutoSorted(bool autoSorted);
     // public System.Void SetInteractableDuringAnimation(System.Boolean interactable)
-    // Offset: 0x9048C0
+    // Offset: 0x196E894
     void SetInteractableDuringAnimation(bool interactable);
     // public System.Void OnDestroy()
-    // Offset: 0x913260
+    // Offset: 0x196EA04
     void OnDestroy();
     // public System.Void SetHovering(VROSC.LoopPlayer hoveringPlayer)
-    // Offset: 0x9052E4
+    // Offset: 0x196EB20
     void SetHovering(::VROSC::LoopPlayer* hoveringPlayer);
     // public System.Void SetVolumeOfGroup(System.Single volume)
-    // Offset: 0x90E078
+    // Offset: 0x19685F8
     void SetVolumeOfGroup(float volume);
     // public System.Void AddLoop(VROSC.LoopPlayer newPlayer, System.Boolean considerPosition)
-    // Offset: 0x904570
+    // Offset: 0x196835C
     void AddLoop(::VROSC::LoopPlayer* newPlayer, bool considerPosition);
     // public System.Void AddLoopByLoad(VROSC.LoopPlayer newPlayer, System.Int32 position)
-    // Offset: 0x913580
+    // Offset: 0x196ED78
     void AddLoopByLoad(::VROSC::LoopPlayer* newPlayer, int position);
     // private System.Void AddLoopShared(VROSC.LoopPlayer newPlayer, System.Int32 position)
-    // Offset: 0x91345C
+    // Offset: 0x196EC50
     void AddLoopShared(::VROSC::LoopPlayer* newPlayer, int position);
     // public System.Void OnLoadComplete()
-    // Offset: 0x913584
+    // Offset: 0x196ED7C
     void OnLoadComplete();
     // private System.Void OnLoopDeleted(VROSC.LoopPlayer loopPlayer, System.Boolean fromReset)
-    // Offset: 0x9135B4
+    // Offset: 0x196EDAC
     void OnLoopDeleted(::VROSC::LoopPlayer* loopPlayer, bool fromReset);
     // public System.Void RemoveLoop(VROSC.LoopPlayer loopPlayer, System.Boolean byGrab, System.Boolean fromReset)
-    // Offset: 0x90E1CC
+    // Offset: 0x196EDC0
     void RemoveLoop(::VROSC::LoopPlayer* loopPlayer, bool byGrab, bool fromReset);
     // public System.Void UpdateSize()
-    // Offset: 0x91337C
+    // Offset: 0x196EB54
     void UpdateSize();
     // public System.Void SaveGroupPosition()
-    // Offset: 0x9135C8
+    // Offset: 0x196EE90
     void SaveGroupPosition();
     // public System.Boolean HasTrack(System.String trackId)
-    // Offset: 0x913658
+    // Offset: 0x196EF20
     bool HasTrack(::StringW trackId);
     // public System.Void UpdateGroupVisibility(System.Boolean byGrab)
-    // Offset: 0x90E380
+    // Offset: 0x196F080
     void UpdateGroupVisibility(bool byGrab);
     // public UnityEngine.Vector3 GetLooperPositionByOrderInList(System.Int32 order)
-    // Offset: 0x9048A4
+    // Offset: 0x196F0C0
     ::UnityEngine::Vector3 GetLooperPositionByOrderInList(int order);
     // public VROSC.LoopPlayer GetFirstLoop()
-    // Offset: 0x9137B8
+    // Offset: 0x196F0DC
     ::VROSC::LoopPlayer* GetFirstLoop();
     // public VROSC.LoopPlayer GetLoopPlayerWithLongestLoop()
-    // Offset: 0x913828
+    // Offset: 0x196F14C
     ::VROSC::LoopPlayer* GetLoopPlayerWithLongestLoop();
-    // System.Void LoadLaunchPad(System.String padID, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 localScale)
-    // Offset: 0x90D9F4
-    void LoadLaunchPad(::StringW padID, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 localScale);
+    // System.Void LoadLaunchPad(System.String padID, VROSC.TransformDataController transformData)
+    // Offset: 0x196F288
+    void LoadLaunchPad(::StringW padID, ::VROSC::TransformDataController* transformData);
     // public System.Void .ctor()
-    // Offset: 0x90E46C
+    // Offset: 0x196F2C4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -369,7 +362,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationGroup*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x91398C
+    // Offset: 0x196F33C
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();
@@ -695,13 +688,11 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Lo
 // Writing MetadataGetter for method: VROSC::LoopStationGroup::LoadLaunchPad
 // Il2CppName: LoadLaunchPad
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationGroup::*)(::StringW, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Vector3)>(&VROSC::LoopStationGroup::LoadLaunchPad)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationGroup::*)(::StringW, ::VROSC::TransformDataController*)>(&VROSC::LoopStationGroup::LoadLaunchPad)> {
   static const MethodInfo* get() {
     static auto* padID = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    static auto* position = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    static auto* rotation = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
-    static auto* localScale = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroup*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, position, rotation, localScale});
+    static auto* transformData = &::il2cpp_utils::GetClassFromName("VROSC", "TransformDataController")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroup*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, transformData});
   }
 };
 // Writing MetadataGetter for method: VROSC::LoopStationGroup::New_ctor

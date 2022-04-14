@@ -46,15 +46,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::ONSPAudioSource::Parameters
     struct Parameters;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean enableSpatialization
     // Size: 0x1
     // Offset: 0x18
@@ -121,92 +113,92 @@ namespace GlobalNamespace {
     // Set static field: static private ONSPAudioSource RoomReflectionGizmoAS
     static void _set_RoomReflectionGizmoAS(::GlobalNamespace::ONSPAudioSource* value);
     // Get instance field reference: private System.Boolean enableSpatialization
-    bool& dyn_enableSpatialization();
+    [[deprecated]] bool& dyn_enableSpatialization();
     // Get instance field reference: private System.Single gain
-    float& dyn_gain();
+    [[deprecated]] float& dyn_gain();
     // Get instance field reference: private System.Boolean useInvSqr
-    bool& dyn_useInvSqr();
+    [[deprecated]] bool& dyn_useInvSqr();
     // Get instance field reference: private System.Single near
-    float& dyn_near();
+    [[deprecated]] float& dyn_near();
     // Get instance field reference: private System.Single far
-    float& dyn_far();
+    [[deprecated]] float& dyn_far();
     // Get instance field reference: private System.Single volumetricRadius
-    float& dyn_volumetricRadius();
+    [[deprecated]] float& dyn_volumetricRadius();
     // Get instance field reference: private System.Single reverbSend
-    float& dyn_reverbSend();
+    [[deprecated]] float& dyn_reverbSend();
     // Get instance field reference: private System.Boolean enableRfl
-    bool& dyn_enableRfl();
+    [[deprecated]] bool& dyn_enableRfl();
     // public System.Boolean get_EnableSpatialization()
-    // Offset: 0x11BA980
+    // Offset: 0x175F888
     bool get_EnableSpatialization();
     // public System.Void set_EnableSpatialization(System.Boolean value)
-    // Offset: 0x11BA988
+    // Offset: 0x175F890
     void set_EnableSpatialization(bool value);
     // public System.Single get_Gain()
-    // Offset: 0x11BA994
+    // Offset: 0x175F89C
     float get_Gain();
     // public System.Void set_Gain(System.Single value)
-    // Offset: 0x11BA99C
+    // Offset: 0x175F8A4
     void set_Gain(float value);
     // public System.Boolean get_UseInvSqr()
-    // Offset: 0x11BA9CC
+    // Offset: 0x175F8D4
     bool get_UseInvSqr();
     // public System.Void set_UseInvSqr(System.Boolean value)
-    // Offset: 0x11BA9D4
+    // Offset: 0x175F8DC
     void set_UseInvSqr(bool value);
     // public System.Single get_Near()
-    // Offset: 0x11BA9E0
+    // Offset: 0x175F8E8
     float get_Near();
     // public System.Void set_Near(System.Single value)
-    // Offset: 0x11BA9E8
+    // Offset: 0x175F8F0
     void set_Near(float value);
     // public System.Single get_Far()
-    // Offset: 0x11BAA1C
+    // Offset: 0x175F924
     float get_Far();
     // public System.Void set_Far(System.Single value)
-    // Offset: 0x11BAA24
+    // Offset: 0x175F92C
     void set_Far(float value);
     // public System.Single get_VolumetricRadius()
-    // Offset: 0x11BAA58
+    // Offset: 0x175F960
     float get_VolumetricRadius();
     // public System.Void set_VolumetricRadius(System.Single value)
-    // Offset: 0x11BAA60
+    // Offset: 0x175F968
     void set_VolumetricRadius(float value);
     // public System.Single get_ReverbSend()
-    // Offset: 0x11BAA94
+    // Offset: 0x175F99C
     float get_ReverbSend();
     // public System.Void set_ReverbSend(System.Single value)
-    // Offset: 0x11BAA9C
+    // Offset: 0x175F9A4
     void set_ReverbSend(float value);
     // public System.Boolean get_EnableRfl()
-    // Offset: 0x11BAAD0
+    // Offset: 0x175F9D8
     bool get_EnableRfl();
     // public System.Void set_EnableRfl(System.Boolean value)
-    // Offset: 0x11BAAD8
+    // Offset: 0x175F9E0
     void set_EnableRfl(bool value);
     // static private System.Void ONSP_GetGlobalRoomReflectionValues(ref System.Boolean reflOn, ref System.Boolean reverbOn, ref System.Single width, ref System.Single height, ref System.Single length)
-    // Offset: 0x11BA8A0
+    // Offset: 0x175F7A8
     static void ONSP_GetGlobalRoomReflectionValues(ByRef<bool> reflOn, ByRef<bool> reverbOn, ByRef<float> width, ByRef<float> height, ByRef<float> length);
     // private System.Void Awake()
-    // Offset: 0x11BAAE4
+    // Offset: 0x175F9EC
     void Awake();
     // private System.Void Start()
-    // Offset: 0x11BAC54
+    // Offset: 0x175FB5C
     void Start();
     // private System.Void Update()
-    // Offset: 0x11BAC58
+    // Offset: 0x175FB60
     void Update();
     // public System.Void SetParameters(ref UnityEngine.AudioSource source)
-    // Offset: 0x11BAB4C
+    // Offset: 0x175FA54
     void SetParameters(ByRef<::UnityEngine::AudioSource*> source);
     // private System.Void OnDrawGizmos()
-    // Offset: 0x11BAD1C
+    // Offset: 0x175FC24
     void OnDrawGizmos();
     // private System.Void OnDestroy()
-    // Offset: 0x11BB10C
+    // Offset: 0x1760014
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x11BB1E4
+    // Offset: 0x17600EC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -219,7 +211,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<ONSPAudioSource*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x11BB200
+    // Offset: 0x1760108
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

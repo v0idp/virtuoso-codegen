@@ -36,10 +36,10 @@ namespace VROSC {
   class PositionOnSignal : public ::VROSC::SignalNode {
     public:
     // private System.Void SetPosition(VROSC.Signal signal)
-    // Offset: 0x8FE218
+    // Offset: 0xAE2B08
     void SetPosition(::VROSC::Signal* signal);
     // public System.Void .ctor()
-    // Offset: 0x8FE270
+    // Offset: 0xAE2B60
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -54,12 +54,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<PositionOnSignal*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x8FE214
+    // Offset: 0xAE2B04
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x8FE26C
+    // Offset: 0xAE2B5C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);

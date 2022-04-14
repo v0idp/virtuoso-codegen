@@ -56,15 +56,7 @@ namespace GlobalNamespace {
     class $$c;
     // Nested type: ::GlobalNamespace::NGramGenerator::$MakeNgrams$d__11
     class $MakeNgrams$d__11;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.UI.Text[] ButtonLabels
     // Size: 0x8
     // Offset: 0x18
@@ -99,44 +91,44 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.Text[] ButtonLabels
-    ::ArrayW<::UnityEngine::UI::Text*>& dyn_ButtonLabels();
+    [[deprecated]] ::ArrayW<::UnityEngine::UI::Text*>& dyn_ButtonLabels();
     // Get instance field reference: public System.Collections.Generic.List`1<System.String> LevenshteinCorpus
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_LevenshteinCorpus();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_LevenshteinCorpus();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Int32> biGramDict
-    ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_biGramDict();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_biGramDict();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Int32> levenshteinDict
-    ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_levenshteinDict();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_levenshteinDict();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> biGramPredictionCorpus
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_biGramPredictionCorpus();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_biGramPredictionCorpus();
     // private System.Void Awake()
-    // Offset: 0xA09FBC
+    // Offset: 0xACEE98
     void Awake();
     // private System.Collections.Generic.Dictionary`2<System.String,System.Int32> OrderDictionary(System.String filePath)
-    // Offset: 0xA0A108
+    // Offset: 0xACEFE4
     ::System::Collections::Generic::Dictionary_2<::StringW, int>* OrderDictionary(::StringW filePath);
     // private System.Collections.Generic.Dictionary`2<System.String,System.Int32> LoadDictionary(System.String filePath)
-    // Offset: 0xA0A078
+    // Offset: 0xACEF54
     ::System::Collections::Generic::Dictionary_2<::StringW, int>* LoadDictionary(::StringW filePath);
     // private System.Void GenerateBiGrams(System.String corpus)
-    // Offset: 0xA0A610
+    // Offset: 0xACF4EC
     void GenerateBiGrams(::StringW corpus);
     // private System.Void GenerateLevenshteinDict(System.String corpus)
-    // Offset: 0xA0AD14
+    // Offset: 0xACFBF0
     void GenerateLevenshteinDict(::StringW corpus);
     // public System.Void PredictNextWords(System.String input)
-    // Offset: 0xA0B35C
+    // Offset: 0xAD0238
     void PredictNextWords(::StringW input);
     // public System.Collections.Generic.IEnumerable`1<System.String> MakeNgrams(System.String text, System.Byte nGramSize)
-    // Offset: 0xA0AA44
+    // Offset: 0xACF920
     ::System::Collections::Generic::IEnumerable_1<::StringW>* MakeNgrams(::StringW text, uint8_t nGramSize);
     // private System.String GetLine(System.Collections.Generic.Dictionary`2<System.String,System.Int32> d)
-    // Offset: 0xA0AAC0
+    // Offset: 0xACF99C
     ::StringW GetLine(::System::Collections::Generic::Dictionary_2<::StringW, int>* d);
     // private System.Collections.Generic.Dictionary`2<System.String,System.Int32> GetDict(System.String s)
-    // Offset: 0xA0A410
+    // Offset: 0xACF2EC
     ::System::Collections::Generic::Dictionary_2<::StringW, int>* GetDict(::StringW s);
     // public System.Void .ctor()
-    // Offset: 0xA0B7A4
+    // Offset: 0xAD0680
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

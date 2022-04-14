@@ -88,26 +88,26 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebRequestStream <>4__this
-    ::System::Net::WebRequestStream*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebRequestStream*& dyn_$$4__this();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: public System.Int32 size
-    int& dyn_size();
+    [[deprecated]] int& dyn_size();
     // Get instance field reference: public System.Byte[] buffer
-    ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: public System.Int32 offset
-    int& dyn_offset();
+    [[deprecated]] int& dyn_offset();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8EC2C0
+    // Offset: 0xA09E2C
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8EC8E8
+    // Offset: 0xA0A460
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.Net.WebRequestStream/System.Net.<ProcessWrite>d__32
   // WARNING Not writing size check since size may be invalid!

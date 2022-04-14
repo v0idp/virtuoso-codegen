@@ -48,15 +48,7 @@ namespace Mono::Unity {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509ChainImplUnityTls : public ::System::Security::Cryptography::X509Certificates::X509ChainImpl {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Security.Cryptography.X509Certificates.X509ChainElementCollection elements
     // Size: 0x8
     // Offset: 0x10
@@ -83,48 +75,48 @@ namespace Mono::Unity {
     static_assert(sizeof(::System::Collections::Generic::List_1<::System::Security::Cryptography::X509Certificates::X509ChainStatus>*) == 0x8);
     public:
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainElementCollection elements
-    ::System::Security::Cryptography::X509Certificates::X509ChainElementCollection*& dyn_elements();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainElementCollection*& dyn_elements();
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_x509list_ref nativeCertificateChain
-    ::Mono::Unity::UnityTls::unitytls_x509list_ref& dyn_nativeCertificateChain();
+    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_x509list_ref& dyn_nativeCertificateChain();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainPolicy policy
-    ::System::Security::Cryptography::X509Certificates::X509ChainPolicy*& dyn_policy();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainPolicy*& dyn_policy();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Security.Cryptography.X509Certificates.X509ChainStatus> chainStatusList
-    ::System::Collections::Generic::List_1<::System::Security::Cryptography::X509Certificates::X509ChainStatus>*& dyn_chainStatusList();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::Security::Cryptography::X509Certificates::X509ChainStatus>*& dyn_chainStatusList();
     // Mono.Unity.UnityTls/Mono.Unity.unitytls_x509list_ref get_NativeCertificateChain()
-    // Offset: 0xAC8070
+    // Offset: 0xC5368C
     ::Mono::Unity::UnityTls::unitytls_x509list_ref get_NativeCertificateChain();
     // System.Void .ctor(Mono.Unity.UnityTls/Mono.Unity.unitytls_x509list_ref nativeCertificateChain)
-    // Offset: 0xAC7FB8
+    // Offset: 0xC535D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509ChainImplUnityTls* New_ctor(::Mono::Unity::UnityTls::unitytls_x509list_ref nativeCertificateChain) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Unity::X509ChainImplUnityTls::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509ChainImplUnityTls*, creationType>(nativeCertificateChain)));
     }
     // public System.Void AddStatus(System.Security.Cryptography.X509Certificates.X509ChainStatusFlags errorCode)
-    // Offset: 0xAC82D0
+    // Offset: 0xC538EC
     void AddStatus(::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags errorCode);
     // public override System.Boolean get_IsValid()
-    // Offset: 0xAC8038
+    // Offset: 0xC53654
     // Implemented from: System.Security.Cryptography.X509Certificates.X509ChainImpl
     // Base method: System.Boolean X509ChainImpl::get_IsValid()
     bool get_IsValid();
     // public override System.Security.Cryptography.X509Certificates.X509ChainElementCollection get_ChainElements()
-    // Offset: 0xAC8078
+    // Offset: 0xC53694
     // Implemented from: System.Security.Cryptography.X509Certificates.X509ChainImpl
     // Base method: System.Security.Cryptography.X509Certificates.X509ChainElementCollection X509ChainImpl::get_ChainElements()
     ::System::Security::Cryptography::X509Certificates::X509ChainElementCollection* get_ChainElements();
     // public override System.Void set_ChainPolicy(System.Security.Cryptography.X509Certificates.X509ChainPolicy value)
-    // Offset: 0xAC82C8
+    // Offset: 0xC538E4
     // Implemented from: System.Security.Cryptography.X509Certificates.X509ChainImpl
     // Base method: System.Void X509ChainImpl::set_ChainPolicy(System.Security.Cryptography.X509Certificates.X509ChainPolicy value)
     void set_ChainPolicy(::System::Security::Cryptography::X509Certificates::X509ChainPolicy* value);
     // public override System.Void Reset()
-    // Offset: 0xAC83C0
+    // Offset: 0xC539DC
     // Implemented from: System.Security.Cryptography.X509Certificates.X509ChainImpl
     // Base method: System.Void X509ChainImpl::Reset()
     void Reset();
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xAC8420
+    // Offset: 0xC53A3C
     // Implemented from: System.Security.Cryptography.X509Certificates.X509ChainImpl
     // Base method: System.Void X509ChainImpl::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);

@@ -55,15 +55,7 @@ namespace Firebase::Firestore {
     class SWIG_CompletionDelegate;
     // Nested type: ::Firebase::Firestore::Future_QuerySnapshot::$GetTask$c__AnonStorey0
     class $GetTask$c__AnonStorey0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x28
@@ -96,40 +88,40 @@ namespace Firebase::Firestore {
     // Set static field: static private System.Object CallbackLock
     static void _set_CallbackLock(::Il2CppObject* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.IntPtr callbackData
-    ::System::IntPtr& dyn_callbackData();
+    [[deprecated]] ::System::IntPtr& dyn_callbackData();
     // Get instance field reference: private Firebase.Firestore.Future_QuerySnapshot/Firebase.Firestore.SWIG_CompletionDelegate SWIG_CompletionCB
-    ::Firebase::Firestore::Future_QuerySnapshot::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    [[deprecated]] ::Firebase::Firestore::Future_QuerySnapshot::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
     // static private System.Void .cctor()
-    // Offset: 0xC3DA18
+    // Offset: 0xD61828
     static void _cctor();
     // static public System.Threading.Tasks.Task`1<Firebase.Firestore.QuerySnapshotProxy> GetTask(Firebase.Firestore.Future_QuerySnapshot fu)
-    // Offset: 0xC3D0CC
+    // Offset: 0xD60ECC
     static ::System::Threading::Tasks::Task_1<::Firebase::Firestore::QuerySnapshotProxy*>* GetTask(::Firebase::Firestore::Future_QuerySnapshot* fu);
     // private System.Void ThrowIfDisposed()
-    // Offset: 0xC3D4C4
+    // Offset: 0xD612EC
     void ThrowIfDisposed();
     // public System.Void SetOnCompletionCallback(Firebase.Firestore.Future_QuerySnapshot/Firebase.Firestore.Action userCompletionCallback)
-    // Offset: 0xC3D288
+    // Offset: 0xD610B0
     void SetOnCompletionCallback(::Firebase::Firestore::Future_QuerySnapshot::Action* userCompletionCallback);
     // private System.Void SetCompletionData(System.IntPtr data)
-    // Offset: 0xC3D098
+    // Offset: 0xD60E98
     void SetCompletionData(::System::IntPtr data);
     // static private System.Void SWIG_CompletionDispatcher(System.Int32 key)
-    // Offset: 0xC3CC10
+    // Offset: 0xD60A10
     static void SWIG_CompletionDispatcher(int key);
     // System.IntPtr SWIG_OnCompletion(Firebase.Firestore.Future_QuerySnapshot/Firebase.Firestore.SWIG_CompletionDelegate cs_callback, System.Int32 cs_key)
-    // Offset: 0xC3D56C
+    // Offset: 0xD61394
     ::System::IntPtr SWIG_OnCompletion(::Firebase::Firestore::Future_QuerySnapshot::SWIG_CompletionDelegate* cs_callback, int cs_key);
     // public System.Void SWIG_FreeCompletionData(System.IntPtr data)
-    // Offset: 0xC3D628
+    // Offset: 0xD61448
     void SWIG_FreeCompletionData(::System::IntPtr data);
     // public Firebase.Firestore.QuerySnapshotProxy GetResult()
-    // Offset: 0xC3D8E0
+    // Offset: 0xD616F8
     ::Firebase::Firestore::QuerySnapshotProxy* GetResult();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC3CDB4
+    // Offset: 0xD60BB4
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::.ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -138,12 +130,12 @@ namespace Firebase::Firestore {
       return THROW_UNLESS((::il2cpp_utils::New<Future_QuerySnapshot*, creationType>(cPtr, cMemoryOwn)));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xC3CE74
+    // Offset: 0xD60C74
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::Finalize()
     void Finalize();
     // public override System.Void Dispose()
-    // Offset: 0xC3CEE4
+    // Offset: 0xD60CE4
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::Dispose()
     void Dispose();

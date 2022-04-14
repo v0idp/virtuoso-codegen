@@ -68,18 +68,18 @@ namespace System::Threading {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Threading.ExecutionContext/System.Threading.Reader outerEC
-    ::System::Threading::ExecutionContext::Reader& dyn_outerEC();
+    [[deprecated]] ::System::Threading::ExecutionContext::Reader& dyn_outerEC();
     // Get instance field reference: System.Boolean outerECBelongsToScope
-    bool& dyn_outerECBelongsToScope();
+    [[deprecated]] bool& dyn_outerECBelongsToScope();
     // Get instance field reference: System.Object hecsw
-    ::Il2CppObject*& dyn_hecsw();
+    [[deprecated]] ::Il2CppObject*& dyn_hecsw();
     // Get instance field reference: System.Threading.Thread thread
-    ::System::Threading::Thread*& dyn_thread();
+    [[deprecated]] ::System::Threading::Thread*& dyn_thread();
     // System.Boolean UndoNoThrow()
-    // Offset: 0xC12A64
+    // Offset: 0x14FB4A4
     bool UndoNoThrow();
     // System.Void Undo()
-    // Offset: 0xC1293C
+    // Offset: 0x14FB37C
     void Undo();
   }; // System.Threading.ExecutionContextSwitcher
   #pragma pack(pop)

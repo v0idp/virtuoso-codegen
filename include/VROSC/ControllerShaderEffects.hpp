@@ -45,22 +45,14 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ControllerShaderEffects::ShaderSettings
     struct ShaderSettings;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _renderer
     // Size: 0x8
     // Offset: 0x18
     ::UnityEngine::Renderer* renderer;
     // Field size check
     static_assert(sizeof(::UnityEngine::Renderer*) == 0x8);
-    // [HeaderAttribute] Offset: 0x671BF4
+    // [HeaderAttribute] Offset: 0x787ED8
     // private System.Boolean _preview
     // Size: 0x1
     // Offset: 0x20
@@ -123,39 +115,39 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Boolean _preview
-    bool& dyn__preview();
+    [[deprecated]] bool& dyn__preview();
     // Get instance field reference: private UnityEngine.Color _triggerButton
-    ::UnityEngine::Color& dyn__triggerButton();
+    [[deprecated]] ::UnityEngine::Color& dyn__triggerButton();
     // Get instance field reference: private UnityEngine.Color _gripButton
-    ::UnityEngine::Color& dyn__gripButton();
+    [[deprecated]] ::UnityEngine::Color& dyn__gripButton();
     // Get instance field reference: private UnityEngine.Color _topButton
-    ::UnityEngine::Color& dyn__topButton();
+    [[deprecated]] ::UnityEngine::Color& dyn__topButton();
     // Get instance field reference: private UnityEngine.Color _bottomButton
-    ::UnityEngine::Color& dyn__bottomButton();
+    [[deprecated]] ::UnityEngine::Color& dyn__bottomButton();
     // Get instance field reference: private UnityEngine.Color _menuButton
-    ::UnityEngine::Color& dyn__menuButton();
+    [[deprecated]] ::UnityEngine::Color& dyn__menuButton();
     // Get instance field reference: private UnityEngine.Color _thumbstick
-    ::UnityEngine::Color& dyn__thumbstick();
+    [[deprecated]] ::UnityEngine::Color& dyn__thumbstick();
     // Get instance field reference: private UnityEngine.Color _special
-    ::UnityEngine::Color& dyn__special();
+    [[deprecated]] ::UnityEngine::Color& dyn__special();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // private System.Void OnEnable()
-    // Offset: 0x133A458
+    // Offset: 0x8DDDF4
     void OnEnable();
     // private System.Void Update()
-    // Offset: 0x133A640
+    // Offset: 0x8DDFDC
     void Update();
     // private System.Void CreatePropBlock()
-    // Offset: 0x133A734
+    // Offset: 0x8DE0D0
     void CreatePropBlock();
     // public System.Void SetEffectOnShader(VROSC.ControllerShaderEffects/VROSC.ShaderSettings settings)
-    // Offset: 0x133A498
+    // Offset: 0x8DDE34
     void SetEffectOnShader(::VROSC::ControllerShaderEffects::ShaderSettings settings);
     // public System.Void .ctor()
-    // Offset: 0x133A798
+    // Offset: 0x8DE134
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

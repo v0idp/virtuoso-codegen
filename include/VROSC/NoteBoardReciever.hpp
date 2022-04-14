@@ -43,15 +43,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::NoteBoardReciever::Player
     class Player;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<VROSC.NoteBoardReciever/VROSC.Player> _players
     // Size: 0x8
     // Offset: 0x18
@@ -62,15 +54,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.NoteBoardReciever/VROSC.Player> _players
-    ::System::Collections::Generic::List_1<::VROSC::NoteBoardReciever::Player*>*& dyn__players();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::NoteBoardReciever::Player*>*& dyn__players();
     // public System.Void RegisterPlayer(VROSC.NotePlayer source)
-    // Offset: 0xA14AD8
+    // Offset: 0xC581A4
     void RegisterPlayer(::VROSC::NotePlayer* source);
     // private System.Boolean PlayerRegistered(VROSC.NotePlayer source)
-    // Offset: 0xA14B8C
+    // Offset: 0xC58258
     bool PlayerRegistered(::VROSC::NotePlayer* source);
     // public System.Void .ctor()
-    // Offset: 0xA14D14
+    // Offset: 0xC583E0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

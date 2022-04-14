@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class RadioButton : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.RadioButtonParent _radioButtonParent
     // Size: 0x8
     // Offset: 0x40
@@ -79,27 +71,27 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.RadioButtonParent _radioButtonParent
-    ::VROSC::RadioButtonParent*& dyn__radioButtonParent();
+    [[deprecated]] ::VROSC::RadioButtonParent*& dyn__radioButtonParent();
     // Get instance field reference: private System.Boolean _active
-    bool& dyn__active();
+    [[deprecated]] bool& dyn__active();
     // Get instance field reference: private VROSC.Signal _signal
-    ::VROSC::Signal*& dyn__signal();
+    [[deprecated]] ::VROSC::Signal*& dyn__signal();
     // Get instance field reference: private System.Boolean _signalBeganThisFrame
-    bool& dyn__signalBeganThisFrame();
+    [[deprecated]] bool& dyn__signalBeganThisFrame();
     // protected System.Void Awake()
-    // Offset: 0x995BAC
+    // Offset: 0xB2D698
     void Awake();
     // private System.Void GetRadioButtonParentRecursive(UnityEngine.Transform t)
-    // Offset: 0x995BD8
+    // Offset: 0xB2D6C4
     void GetRadioButtonParentRecursive(::UnityEngine::Transform* t);
     // public System.Void Update()
-    // Offset: 0x995F40
+    // Offset: 0xB2DA2C
     void Update();
     // public System.Void SetActive(System.Boolean state)
-    // Offset: 0x995F6C
+    // Offset: 0xB2DA58
     void SetActive(bool state);
     // public System.Void .ctor()
-    // Offset: 0x995F8C
+    // Offset: 0xB2DA78
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -114,7 +106,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<RadioButton*, creationType>()));
     }
     // public override System.Void ReceiveSignal(VROSC.Signal signal)
-    // Offset: 0x995D68
+    // Offset: 0xB2D854
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::ReceiveSignal(VROSC.Signal signal)
     void ReceiveSignal(::VROSC::Signal* signal);

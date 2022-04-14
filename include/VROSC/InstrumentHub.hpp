@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InstrumentHub : public ::VROSC::WidgetHub {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _spawnDistanceFromBoard
     // Size: 0x4
     // Offset: 0x28
@@ -63,7 +55,7 @@ namespace VROSC {
     float spawnDistanceFromController;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x674E54
+    // [RangeAttribute] Offset: 0x78B2D8
     // private System.Single _instrumentSizeMultiplier
     // Size: 0x4
     // Offset: 0x30
@@ -78,24 +70,24 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _spawnDistanceFromBoard
-    float& dyn__spawnDistanceFromBoard();
+    [[deprecated]] float& dyn__spawnDistanceFromBoard();
     // Get instance field reference: private System.Single _spawnDistanceFromController
-    float& dyn__spawnDistanceFromController();
+    [[deprecated]] float& dyn__spawnDistanceFromController();
     // Get instance field reference: private System.Single _instrumentSizeMultiplier
-    float& dyn__instrumentSizeMultiplier();
+    [[deprecated]] float& dyn__instrumentSizeMultiplier();
     // Get instance field reference: private System.Single _gripSpawnHeightOffset
-    float& dyn__gripSpawnHeightOffset();
+    [[deprecated]] float& dyn__gripSpawnHeightOffset();
     // public System.Single get_InstrumentSizeMultiplier()
-    // Offset: 0x13847D0
+    // Offset: 0x1947A3C
     float get_InstrumentSizeMultiplier();
     // public System.Void Setup()
-    // Offset: 0x13847D8
+    // Offset: 0x1947A44
     void Setup();
     // public System.String GetInstrumentName(VROSC.WidgetSettings/VROSC.Identifier instrumentId)
-    // Offset: 0x13853E8
+    // Offset: 0x1948698
     ::StringW GetInstrumentName(::VROSC::WidgetSettings::Identifier instrumentId);
     // public System.Void .ctor()
-    // Offset: 0x13854AC
+    // Offset: 0x194875C
     // Implemented from: VROSC.WidgetHub
     // Base method: System.Void WidgetHub::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -108,11 +100,11 @@ namespace VROSC {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentHub::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InstrumentHub*, creationType>()));
     }
-    // protected override System.Void PlaceWidget(VROSC.WidgetController target, VROSC.InputDevice device, UnityEngine.Vector3 pressPos, System.Boolean gripping)
-    // Offset: 0x1384CFC
+    // protected override System.Void PlaceWidget(VROSC.WidgetController target, VROSC.InputDevice device, UnityEngine.Vector3 pressPos, System.Boolean gripping, System.Boolean userHasOpenedBefore)
+    // Offset: 0x1947F60
     // Implemented from: VROSC.WidgetHub
-    // Base method: System.Void WidgetHub::PlaceWidget(VROSC.WidgetController target, VROSC.InputDevice device, UnityEngine.Vector3 pressPos, System.Boolean gripping)
-    void PlaceWidget(::VROSC::WidgetController* target, ::VROSC::InputDevice* device, ::UnityEngine::Vector3 pressPos, bool gripping);
+    // Base method: System.Void WidgetHub::PlaceWidget(VROSC.WidgetController target, VROSC.InputDevice device, UnityEngine.Vector3 pressPos, System.Boolean gripping, System.Boolean userHasOpenedBefore)
+    void PlaceWidget(::VROSC::WidgetController* target, ::VROSC::InputDevice* device, ::UnityEngine::Vector3 pressPos, bool gripping, bool userHasOpenedBefore);
   }; // VROSC.InstrumentHub
   #pragma pack(pop)
   static check_size<sizeof(InstrumentHub), 52 + sizeof(float)> __VROSC_InstrumentHubSizeCheck;
@@ -151,12 +143,13 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
 // Writing MetadataGetter for method: VROSC::InstrumentHub::PlaceWidget
 // Il2CppName: PlaceWidget
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::InstrumentHub::*)(::VROSC::WidgetController*, ::VROSC::InputDevice*, ::UnityEngine::Vector3, bool)>(&VROSC::InstrumentHub::PlaceWidget)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::InstrumentHub::*)(::VROSC::WidgetController*, ::VROSC::InputDevice*, ::UnityEngine::Vector3, bool, bool)>(&VROSC::InstrumentHub::PlaceWidget)> {
   static const MethodInfo* get() {
     static auto* target = &::il2cpp_utils::GetClassFromName("VROSC", "WidgetController")->byval_arg;
     static auto* device = &::il2cpp_utils::GetClassFromName("VROSC", "InputDevice")->byval_arg;
     static auto* pressPos = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
     static auto* gripping = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentHub*), "PlaceWidget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, device, pressPos, gripping});
+    static auto* userHasOpenedBefore = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentHub*), "PlaceWidget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, device, pressPos, gripping, userHasOpenedBefore});
   }
 };

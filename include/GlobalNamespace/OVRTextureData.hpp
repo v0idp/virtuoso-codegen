@@ -68,15 +68,15 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Byte[] data
-    ::ArrayW<uint8_t>& dyn_data();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_data();
     // Get instance field reference: public System.Int32 width
-    int& dyn_width();
+    [[deprecated]] int& dyn_width();
     // Get instance field reference: public System.Int32 height
-    int& dyn_height();
+    [[deprecated]] int& dyn_height();
     // Get instance field reference: public OVRTextureFormat format
-    ::GlobalNamespace::OVRTextureFormat& dyn_format();
+    [[deprecated]] ::GlobalNamespace::OVRTextureFormat& dyn_format();
     // Get instance field reference: public UnityEngine.TextureFormat transcodedFormat
-    ::UnityEngine::TextureFormat& dyn_transcodedFormat();
+    [[deprecated]] ::UnityEngine::TextureFormat& dyn_transcodedFormat();
   }; // OVRTextureData
   #pragma pack(pop)
   static check_size<sizeof(OVRTextureData), 20 + sizeof(::UnityEngine::TextureFormat)> __GlobalNamespace_OVRTextureDataSizeCheck;

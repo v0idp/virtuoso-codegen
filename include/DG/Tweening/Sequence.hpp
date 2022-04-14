@@ -52,15 +52,7 @@ namespace DG::Tweening {
   // [TokenAttribute] Offset: FFFFFFFF
   class Sequence : public ::DG::Tweening::Tween {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // readonly System.Collections.Generic.List`1<DG.Tweening.Tween> sequencedTweens
     // Size: 0x8
     // Offset: 0x120
@@ -81,46 +73,46 @@ namespace DG::Tweening {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: readonly System.Collections.Generic.List`1<DG.Tweening.Tween> sequencedTweens
-    ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>*& dyn_sequencedTweens();
+    [[deprecated]] ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>*& dyn_sequencedTweens();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<DG.Tweening.Core.ABSSequentiable> _sequencedObjs
-    ::System::Collections::Generic::List_1<::DG::Tweening::Core::ABSSequentiable*>*& dyn__sequencedObjs();
+    [[deprecated]] ::System::Collections::Generic::List_1<::DG::Tweening::Core::ABSSequentiable*>*& dyn__sequencedObjs();
     // Get instance field reference: System.Single lastTweenInsertTime
-    float& dyn_lastTweenInsertTime();
+    [[deprecated]] float& dyn_lastTweenInsertTime();
     // static DG.Tweening.Sequence DoPrepend(DG.Tweening.Sequence inSequence, DG.Tweening.Tween t)
-    // Offset: 0x10A33C0
+    // Offset: 0x15E59E8
     static ::DG::Tweening::Sequence* DoPrepend(::DG::Tweening::Sequence* inSequence, ::DG::Tweening::Tween* t);
     // static DG.Tweening.Sequence DoInsert(DG.Tweening.Sequence inSequence, DG.Tweening.Tween t, System.Single atPosition)
-    // Offset: 0x10A34D0
+    // Offset: 0x15E5AF8
     static ::DG::Tweening::Sequence* DoInsert(::DG::Tweening::Sequence* inSequence, ::DG::Tweening::Tween* t, float atPosition);
     // static DG.Tweening.Sequence DoAppendInterval(DG.Tweening.Sequence inSequence, System.Single interval)
-    // Offset: 0x10A3614
+    // Offset: 0x15E5C3C
     static ::DG::Tweening::Sequence* DoAppendInterval(::DG::Tweening::Sequence* inSequence, float interval);
     // static DG.Tweening.Sequence DoPrependInterval(DG.Tweening.Sequence inSequence, System.Single interval)
-    // Offset: 0x10A3638
+    // Offset: 0x15E5C60
     static ::DG::Tweening::Sequence* DoPrependInterval(::DG::Tweening::Sequence* inSequence, float interval);
     // static DG.Tweening.Sequence DoInsertCallback(DG.Tweening.Sequence inSequence, DG.Tweening.TweenCallback callback, System.Single atPosition)
-    // Offset: 0x10A371C
+    // Offset: 0x15E5D44
     static ::DG::Tweening::Sequence* DoInsertCallback(::DG::Tweening::Sequence* inSequence, ::DG::Tweening::TweenCallback* callback, float atPosition);
     // static System.Void Setup(DG.Tweening.Sequence s)
-    // Offset: 0x10972D0
+    // Offset: 0x15D98F8
     static void Setup(::DG::Tweening::Sequence* s);
     // static System.Boolean DoStartup(DG.Tweening.Sequence s)
-    // Offset: 0x10A3934
+    // Offset: 0x15E5F5C
     static bool DoStartup(::DG::Tweening::Sequence* s);
     // static System.Boolean DoApplyTween(DG.Tweening.Sequence s, System.Single prevPosition, System.Int32 prevCompletedLoops, System.Int32 newCompletedSteps, System.Boolean useInversePosition, DG.Tweening.Core.Enums.UpdateMode updateMode)
-    // Offset: 0x10A3A9C
+    // Offset: 0x15E60C4
     static bool DoApplyTween(::DG::Tweening::Sequence* s, float prevPosition, int prevCompletedLoops, int newCompletedSteps, bool useInversePosition, ::DG::Tweening::Core::Enums::UpdateMode updateMode);
     // static private System.Boolean ApplyInternalCycle(DG.Tweening.Sequence s, System.Single fromPos, System.Single toPos, DG.Tweening.Core.Enums.UpdateMode updateMode, System.Boolean useInverse, System.Boolean prevPosIsInverse, System.Boolean multiCycleStep)
-    // Offset: 0x10A3F68
+    // Offset: 0x15E6590
     static bool ApplyInternalCycle(::DG::Tweening::Sequence* s, float fromPos, float toPos, ::DG::Tweening::Core::Enums::UpdateMode updateMode, bool useInverse, bool prevPosIsInverse, bool multiCycleStep);
     // static private System.Void StableSortSequencedObjs(System.Collections.Generic.List`1<DG.Tweening.Core.ABSSequentiable> list)
-    // Offset: 0x10A3DD8
+    // Offset: 0x15E6400
     static void StableSortSequencedObjs(::System::Collections::Generic::List_1<::DG::Tweening::Core::ABSSequentiable*>* list);
     // static private System.Boolean IsAnyCallbackSet(DG.Tweening.Sequence s)
-    // Offset: 0x10A3D78
+    // Offset: 0x15E63A0
     static bool IsAnyCallbackSet(::DG::Tweening::Sequence* s);
     // System.Void .ctor()
-    // Offset: 0x10A32F0
+    // Offset: 0x15E5918
     // Implemented from: DG.Tweening.Tween
     // Base method: System.Void Tween::.ctor()
     // Base method: System.Void ABSSequentiable::.ctor()
@@ -131,22 +123,22 @@ namespace DG::Tweening {
       return THROW_UNLESS((::il2cpp_utils::New<Sequence*, creationType>()));
     }
     // override System.Void Reset()
-    // Offset: 0x10A37E4
+    // Offset: 0x15E5E0C
     // Implemented from: DG.Tweening.Tween
     // Base method: System.Void Tween::Reset()
     void Reset();
     // override System.Boolean Validate()
-    // Offset: 0x10A3870
+    // Offset: 0x15E5E98
     // Implemented from: DG.Tweening.Tween
     // Base method: System.Boolean Tween::Validate()
     bool Validate();
     // override System.Boolean Startup()
-    // Offset: 0x10A3930
+    // Offset: 0x15E5F58
     // Implemented from: DG.Tweening.Tween
     // Base method: System.Boolean Tween::Startup()
     bool Startup();
     // override System.Boolean ApplyTween(System.Single prevPosition, System.Int32 prevCompletedLoops, System.Int32 newCompletedSteps, System.Boolean useInversePosition, DG.Tweening.Core.Enums.UpdateMode updateMode, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x10A3A94
+    // Offset: 0x15E60BC
     // Implemented from: DG.Tweening.Tween
     // Base method: System.Boolean Tween::ApplyTween(System.Single prevPosition, System.Int32 prevCompletedLoops, System.Int32 newCompletedSteps, System.Boolean useInversePosition, DG.Tweening.Core.Enums.UpdateMode updateMode, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
     bool ApplyTween(float prevPosition, int prevCompletedLoops, int newCompletedSteps, bool useInversePosition, ::DG::Tweening::Core::Enums::UpdateMode updateMode, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);

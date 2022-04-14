@@ -35,20 +35,20 @@ namespace AudioHelm {
   class AudioHelmClock::ResetAction : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x135A298
+    // Offset: 0x956B94
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioHelmClock::ResetAction* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::AudioHelmClock::ResetAction::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AudioHelmClock::ResetAction*, creationType>(object, method)));
     }
     // public System.Void Invoke()
-    // Offset: 0x135A2A8
+    // Offset: 0x956BA4
     void Invoke();
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
-    // Offset: 0x135A4B4
+    // Offset: 0x956DB0
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x135A4E0
+    // Offset: 0x956DDC
     void EndInvoke(::System::IAsyncResult* result);
   }; // AudioHelm.AudioHelmClock/AudioHelm.ResetAction
   #pragma pack(pop)

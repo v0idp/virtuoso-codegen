@@ -35,16 +35,16 @@ namespace GlobalNamespace {
     // Set static field: static public OVRHandTest/BoolMonitor/BoolGenerator <>9__14_0
     static void _set_$$9__14_0(::GlobalNamespace::OVRHandTest::BoolMonitor::BoolGenerator* value);
     // static private System.Void .cctor()
-    // Offset: 0x7366CC
+    // Offset: 0x84CDD0
     static void _cctor();
     // System.Boolean <Start>b__14_0()
-    // Offset: 0x736734
+    // Offset: 0x84CE38
     bool $Start$b__14_0();
     // System.Boolean <.cctor>b__19_0()
-    // Offset: 0x736798
+    // Offset: 0x84CE9C
     bool $_cctor$b__19_0();
     // public System.Void .ctor()
-    // Offset: 0x73672C
+    // Offset: 0x84CE30
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -85,25 +85,17 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.UInt64 RoomID
-      uint64_t& dyn_RoomID();
+      [[deprecated]] uint64_t& dyn_RoomID();
       // Get instance field reference: public readonly System.String OwnerID
-      ::StringW& dyn_OwnerID();
+      [[deprecated]] ::StringW& dyn_OwnerID();
       // public System.Void .ctor(System.UInt64 roomID, System.String owner)
-      // Offset: 0x114B6F4
+      // Offset: 0x17185F0
       // ABORTED: conflicts with another method.  Invite(uint64_t roomID, ::StringW owner);
     }; // Oculus.Platform.Samples.VrVoiceChat.RoomManager/Oculus.Platform.Samples.VrVoiceChat.Invite
     #pragma pack(pop)
     static check_size<sizeof(RoomManager::Invite), 8 + sizeof(::StringW)> __Oculus_Platform_Samples_VrVoiceChat_RoomManager_InviteSizeCheck;
     static_assert(sizeof(RoomManager::Invite) == 0x10);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt64 m_roomID
     // Size: 0x8
     // Offset: 0x10
@@ -142,65 +134,65 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // Set static field: static private readonly System.Single INVITE_POLL_FREQ_SECONDS
     static void _set_INVITE_POLL_FREQ_SECONDS(float value);
     // Get instance field reference: private System.UInt64 m_roomID
-    uint64_t& dyn_m_roomID();
+    [[deprecated]] uint64_t& dyn_m_roomID();
     // Get instance field reference: private Oculus.Platform.Models.User m_remoteUser
-    ::Oculus::Platform::Models::User*& dyn_m_remoteUser();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_m_remoteUser();
     // Get instance field reference: private System.Single m_nextPollTime
-    float& dyn_m_nextPollTime();
+    [[deprecated]] float& dyn_m_nextPollTime();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.UInt64> m_pendingRoomRequests
-    ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_m_pendingRoomRequests();
+    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_m_pendingRoomRequests();
     // Get instance field reference: private System.Collections.Generic.List`1<Oculus.Platform.Samples.VrVoiceChat.RoomManager/Oculus.Platform.Samples.VrVoiceChat.Invite> m_invites
-    ::System::Collections::Generic::List_1<::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite>*& dyn_m_invites();
+    [[deprecated]] ::System::Collections::Generic::List_1<::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite>*& dyn_m_invites();
     // public System.UInt64 get_RemoteUserID()
-    // Offset: 0x114A4F0
+    // Offset: 0x17173EC
     uint64_t get_RemoteUserID();
     // public System.String get_RemoteOculusID()
-    // Offset: 0x114A508
+    // Offset: 0x1717404
     ::StringW get_RemoteOculusID();
     // public System.Boolean get_ShouldPollInviteList()
-    // Offset: 0x114AD78
+    // Offset: 0x1717C74
     bool get_ShouldPollInviteList();
     // static private System.Void .cctor()
-    // Offset: 0x114C524
+    // Offset: 0x1719420
     static void _cctor();
     // private System.Void LaunchedFromAcceptingInviteCallback(Oculus.Platform.Message`1<System.String> msg)
-    // Offset: 0x114A568
+    // Offset: 0x1717464
     void LaunchedFromAcceptingInviteCallback(::Oculus::Platform::Message_1<::StringW>* msg);
     // public System.Boolean CheckForLaunchInvite()
-    // Offset: 0x114A6C8
+    // Offset: 0x17175C4
     bool CheckForLaunchInvite();
     // public System.Void CreateRoomAndLaunchInviteMenu()
-    // Offset: 0x114A7C0
+    // Offset: 0x17176BC
     void CreateRoomAndLaunchInviteMenu();
     // private System.Void CreateAndJoinPrivateRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x114AA38
+    // Offset: 0x1717934
     void CreateAndJoinPrivateRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void OnLaunchInviteWorkflowComplete(Oculus.Platform.Message msg)
-    // Offset: 0x114ACF0
+    // Offset: 0x1717BEC
     void OnLaunchInviteWorkflowComplete(::Oculus::Platform::Message* msg);
     // public System.Void UpdateActiveInvitesList()
-    // Offset: 0x114ADB8
+    // Offset: 0x1717CB4
     void UpdateActiveInvitesList();
     // private System.Void GetRoomInviteNotificationsCallback(Oculus.Platform.Message msg_untyped)
-    // Offset: 0x114AF54
+    // Offset: 0x1717E50
     void GetRoomInviteNotificationsCallback(::Oculus::Platform::Message* msg_untyped);
     // private System.Void GetRoomInfoCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x114B538
+    // Offset: 0x1718434
     void GetRoomInfoCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // public System.Void JoinExistingRoom(System.UInt64 roomID)
-    // Offset: 0x114A6F0
+    // Offset: 0x17175EC
     void JoinExistingRoom(uint64_t roomID);
     // private System.Void JoinRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x114B894
+    // Offset: 0x1718790
     void JoinRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void RoomUpdateCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x114BDD0
+    // Offset: 0x1718CCC
     void RoomUpdateCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // public System.Void LeaveCurrentRoom()
-    // Offset: 0x114C320
+    // Offset: 0x171921C
     void LeaveCurrentRoom();
     // public System.Void .ctor()
-    // Offset: 0x114A2F8
+    // Offset: 0x17171F4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

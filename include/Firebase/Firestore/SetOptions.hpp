@@ -87,20 +87,12 @@ namespace Firebase::Firestore {
       // Set static field: static public Firebase.Firestore.SetOptions/Firebase.Firestore.Type Merge
       static void _set_Merge(::Firebase::Firestore::SetOptions::Type value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Firebase.Firestore.SetOptions/Firebase.Firestore.Type
     #pragma pack(pop)
     static check_size<sizeof(SetOptions::Type), 0 + sizeof(int)> __Firebase_Firestore_SetOptions_TypeSizeCheck;
     static_assert(sizeof(SetOptions::Type) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly Firebase.Firestore.SetOptionsProxy _proxy
     // Size: 0x8
     // Offset: 0x10
@@ -131,45 +123,45 @@ namespace Firebase::Firestore {
     // Set static field: static private System.Func`3<System.Int32,Firebase.Firestore.FieldPath,System.Int32> <>f__am$cache2
     static void _set_$$f__am$cache2(::System::Func_3<int, ::Firebase::Firestore::FieldPath*, int>* value);
     // Get instance field reference: private readonly Firebase.Firestore.SetOptionsProxy _proxy
-    ::Firebase::Firestore::SetOptionsProxy*& dyn__proxy();
+    [[deprecated]] ::Firebase::Firestore::SetOptionsProxy*& dyn__proxy();
     // Get instance field reference: private Firebase.Firestore.SetOptions/Firebase.Firestore.Type setType
-    ::Firebase::Firestore::SetOptions::Type& dyn_setType();
+    [[deprecated]] ::Firebase::Firestore::SetOptions::Type& dyn_setType();
     // Get instance field reference: private Firebase.Firestore.FieldPath[] fields
-    ::ArrayW<::Firebase::Firestore::FieldPath*>& dyn_fields();
+    [[deprecated]] ::ArrayW<::Firebase::Firestore::FieldPath*>& dyn_fields();
     // Firebase.Firestore.SetOptionsProxy get_Proxy()
-    // Offset: 0xC3F5FC
+    // Offset: 0xD63BF4
     ::Firebase::Firestore::SetOptionsProxy* get_Proxy();
     // static public Firebase.Firestore.SetOptions get_Overwrite()
-    // Offset: 0xC302FC
+    // Offset: 0xD521CC
     static ::Firebase::Firestore::SetOptions* get_Overwrite();
     // private System.Void .ctor(Firebase.Firestore.SetOptionsProxy proxy)
-    // Offset: 0xC3F568
+    // Offset: 0xD63B60
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetOptions* New_ctor(::Firebase::Firestore::SetOptionsProxy* proxy) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::SetOptions::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetOptions*, creationType>(proxy)));
     }
     // private System.Boolean Equals(Firebase.Firestore.SetOptions other)
-    // Offset: 0xC3F994
+    // Offset: 0xD63F84
     bool Equals(::Firebase::Firestore::SetOptions* other);
     // static private System.String <ToString>m__1(Firebase.Firestore.FieldPath f)
-    // Offset: 0xC3FB30
+    // Offset: 0xD64120
     static ::StringW $ToString$m__1(::Firebase::Firestore::FieldPath* f);
     // static private System.Int32 <GetHashCode>m__2(System.Int32 current, Firebase.Firestore.FieldPath f)
-    // Offset: 0xC3FB4C
+    // Offset: 0xD6413C
     static int $GetHashCode$m__2(int current, ::Firebase::Firestore::FieldPath* f);
     // public override System.String ToString()
-    // Offset: 0xC3F6A4
+    // Offset: 0xD63C94
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC3F924
+    // Offset: 0xD63F14
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xC3FA18
+    // Offset: 0xD64008
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();

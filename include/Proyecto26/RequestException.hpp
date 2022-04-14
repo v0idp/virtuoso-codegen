@@ -31,15 +31,7 @@ namespace Proyecto26 {
   // [TokenAttribute] Offset: FFFFFFFF
   class RequestException : public ::System::Exception {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _isHttpError
     // Size: 0x1
     // Offset: 0x88
@@ -74,61 +66,61 @@ namespace Proyecto26 {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _isHttpError
-    bool& dyn__isHttpError();
+    [[deprecated]] bool& dyn__isHttpError();
     // Get instance field reference: private System.Boolean _isNetworkError
-    bool& dyn__isNetworkError();
+    [[deprecated]] bool& dyn__isNetworkError();
     // Get instance field reference: private System.Int64 _statusCode
-    int64_t& dyn__statusCode();
+    [[deprecated]] int64_t& dyn__statusCode();
     // Get instance field reference: private System.String _serverMessage
-    ::StringW& dyn__serverMessage();
+    [[deprecated]] ::StringW& dyn__serverMessage();
     // Get instance field reference: private System.String _response
-    ::StringW& dyn__response();
+    [[deprecated]] ::StringW& dyn__response();
     // public System.Boolean get_IsHttpError()
-    // Offset: 0x999B08
+    // Offset: 0xB325AC
     bool get_IsHttpError();
     // private System.Void set_IsHttpError(System.Boolean value)
-    // Offset: 0x999B10
+    // Offset: 0xB325B4
     void set_IsHttpError(bool value);
     // public System.Boolean get_IsNetworkError()
-    // Offset: 0x999B1C
+    // Offset: 0xB325C0
     bool get_IsNetworkError();
     // private System.Void set_IsNetworkError(System.Boolean value)
-    // Offset: 0x999B24
+    // Offset: 0xB325C8
     void set_IsNetworkError(bool value);
     // public System.Int64 get_StatusCode()
-    // Offset: 0x999B30
+    // Offset: 0xB325D4
     int64_t get_StatusCode();
     // private System.Void set_StatusCode(System.Int64 value)
-    // Offset: 0x999B38
+    // Offset: 0xB325DC
     void set_StatusCode(int64_t value);
     // public System.String get_ServerMessage()
-    // Offset: 0x999B40
+    // Offset: 0xB325E4
     ::StringW get_ServerMessage();
     // public System.Void set_ServerMessage(System.String value)
-    // Offset: 0x999B48
+    // Offset: 0xB325EC
     void set_ServerMessage(::StringW value);
     // public System.String get_Response()
-    // Offset: 0x999B50
+    // Offset: 0xB325F4
     ::StringW get_Response();
     // public System.Void set_Response(System.String value)
-    // Offset: 0x999B58
+    // Offset: 0xB325FC
     void set_Response(::StringW value);
     // public System.Void .ctor(System.String format, params System.Object[] args)
-    // Offset: 0x999C38
+    // Offset: 0xB326DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RequestException* New_ctor(::StringW format, ::ArrayW<::Il2CppObject*> args) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RequestException*, creationType>(format, args)));
     }
     // public System.Void .ctor(System.String message, System.Boolean isHttpError, System.Boolean isNetworkError, System.Int64 statusCode, System.String response)
-    // Offset: 0x999CC8
+    // Offset: 0xB3276C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RequestException* New_ctor(::StringW message, bool isHttpError, bool isNetworkError, int64_t statusCode, ::StringW response) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RequestException*, creationType>(message, isHttpError, isNetworkError, statusCode, response)));
     }
     // public System.Void .ctor()
-    // Offset: 0x999B60
+    // Offset: 0xB32604
     // Implemented from: System.Exception
     // Base method: System.Void Exception::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -138,7 +130,7 @@ namespace Proyecto26 {
       return THROW_UNLESS((::il2cpp_utils::New<RequestException*, creationType>()));
     }
     // public System.Void .ctor(System.String message)
-    // Offset: 0x999BC4
+    // Offset: 0xB32668
     // Implemented from: System.Exception
     // Base method: System.Void Exception::.ctor(System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

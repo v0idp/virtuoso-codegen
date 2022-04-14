@@ -24,15 +24,7 @@ namespace Mono::Net::Security {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class MobileAuthenticatedStream::$$c__DisplayClass66_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Mono.Net.Security.MobileAuthenticatedStream <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -47,14 +39,14 @@ namespace Mono::Net::Security {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public Mono.Net.Security.MobileAuthenticatedStream <>4__this
-    ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$$4__this();
+    [[deprecated]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$$4__this();
     // Get instance field reference: public System.Int32 len
-    int& dyn_len();
+    [[deprecated]] int& dyn_len();
     // System.Int32 <InnerRead>b__0()
-    // Offset: 0x8DE4A0
+    // Offset: 0x9F921C
     int $InnerRead$b__0();
     // public System.Void .ctor()
-    // Offset: 0x8DE498
+    // Offset: 0x9F9214
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

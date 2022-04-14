@@ -50,15 +50,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::TutorialInputDevice::BlinkingButton
     class BlinkingButton;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.HighlightControllerComponents _controllerComponents
     // Size: 0x8
     // Offset: 0x18
@@ -75,32 +67,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.HighlightControllerComponents _controllerComponents
-    ::VROSC::HighlightControllerComponents*& dyn__controllerComponents();
+    [[deprecated]] ::VROSC::HighlightControllerComponents*& dyn__controllerComponents();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TutorialInputDevice/VROSC.BlinkingButton> _blinkingButtons
-    ::System::Collections::Generic::List_1<::VROSC::TutorialInputDevice::BlinkingButton*>*& dyn__blinkingButtons();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TutorialInputDevice::BlinkingButton*>*& dyn__blinkingButtons();
     // private System.Void Start()
-    // Offset: 0x14074F4
+    // Offset: 0xA2F5D0
     void Start();
     // private System.Void OnEnable()
-    // Offset: 0x14075F0
+    // Offset: 0xA2F6CC
     void OnEnable();
     // private System.Void LateUpdate()
-    // Offset: 0x1407718
+    // Offset: 0xA2F7F4
     void LateUpdate();
     // public System.Void StopAllBlinking(System.Single fadeTime)
-    // Offset: 0x1407854
+    // Offset: 0xA2F930
     void StopAllBlinking(float fadeTime);
     // public System.Void StartButtonBlinking(VROSC.TriggerButton trigger, UnityEngine.Color color)
-    // Offset: 0x1407988
+    // Offset: 0xA2FA64
     void StartButtonBlinking(::VROSC::TriggerButton trigger, ::UnityEngine::Color color);
     // public System.Void StopButtonBlinking(VROSC.TriggerButton trigger, System.Single fadeTime)
-    // Offset: 0x1407B4C
+    // Offset: 0xA2FC28
     void StopButtonBlinking(::VROSC::TriggerButton trigger, float fadeTime);
     // private VROSC.TutorialInputDevice/VROSC.BlinkingButton GetBlinkingButtonByTrigger(VROSC.TriggerButton trigger)
-    // Offset: 0x14079F4
+    // Offset: 0xA2FAD0
     ::VROSC::TutorialInputDevice::BlinkingButton* GetBlinkingButtonByTrigger(::VROSC::TriggerButton trigger);
     // public System.Void .ctor()
-    // Offset: 0x1407B8C
+    // Offset: 0xA2FC68
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

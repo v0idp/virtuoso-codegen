@@ -49,10 +49,10 @@ namespace GlobalNamespace {
     // Set static field: static private System.UInt32 KTX_TTF_ASTC_4x4_RGBA
     static void _set_KTX_TTF_ASTC_4x4_RGBA(uint value);
     // static public System.Boolean Load(System.Byte[] data, ref OVRTextureData ktxData)
-    // Offset: 0xB14A70
+    // Offset: 0xE151F0
     static bool Load(::ArrayW<uint8_t> data, ByRef<::GlobalNamespace::OVRTextureData> ktxData);
     // public System.Void .ctor()
-    // Offset: 0xB14D00
+    // Offset: 0xE15480
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -46,28 +46,28 @@ namespace Unity::XR::Oculus {
     // Set static field: static private System.Boolean hadInputFocus
     static void _set_hadInputFocus(bool value);
     // static System.Boolean get_hasInputFocus()
-    // Offset: 0x12D9B80
+    // Offset: 0x18DBDF4
     static bool get_hasInputFocus();
     // static public System.Void add_InputFocusAcquired(System.Action value)
-    // Offset: 0x12D97A8
+    // Offset: 0x18DBA1C
     static void add_InputFocusAcquired(::System::Action* value);
     // static public System.Void remove_InputFocusAcquired(System.Action value)
-    // Offset: 0x12D989C
+    // Offset: 0x18DBB10
     static void remove_InputFocusAcquired(::System::Action* value);
     // static public System.Void add_InputFocusLost(System.Action value)
-    // Offset: 0x12D9990
+    // Offset: 0x18DBC04
     static void add_InputFocusLost(::System::Action* value);
     // static public System.Void remove_InputFocusLost(System.Action value)
-    // Offset: 0x12D9A88
+    // Offset: 0x18DBCFC
     static void remove_InputFocusLost(::System::Action* value);
     // static private System.Void .cctor()
-    // Offset: 0x12D9D24
+    // Offset: 0x18DBF98
     static void _cctor();
     // static System.Void Update()
-    // Offset: 0x12D9B88
+    // Offset: 0x18DBDFC
     static void Update();
     // public System.Void .ctor()
-    // Offset: 0x12D9D1C
+    // Offset: 0x18DBF90
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

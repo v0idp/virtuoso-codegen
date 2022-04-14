@@ -27,7 +27,7 @@ namespace UnityEngine {
   class SliderState : public ::Il2CppObject {
     public:
     // public System.Void .ctor()
-    // Offset: 0x1293DB8
+    // Offset: 0x1881328
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

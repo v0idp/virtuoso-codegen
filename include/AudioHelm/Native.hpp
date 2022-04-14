@@ -32,109 +32,109 @@ namespace AudioHelm {
   class Native : public ::Il2CppObject {
     public:
     // static public System.Void HelmNoteOn(System.Int32 channel, System.Int32 note, System.Single velocity)
-    // Offset: 0xA0B89C
+    // Offset: 0xAD0778
     static void HelmNoteOn(int channel, int note, float velocity);
     // static public System.Void HelmNoteOff(System.Int32 channel, System.Int32 note)
-    // Offset: 0xA0B93C
+    // Offset: 0xAD0818
     static void HelmNoteOff(int channel, int note);
     // static public System.Void HelmFrequencyOn(System.Int32 channel, System.Single frequency, System.Single velocity)
-    // Offset: 0xA0B9CC
+    // Offset: 0xAD08A8
     static void HelmFrequencyOn(int channel, float frequency, float velocity);
     // static public System.Void HelmFrequencyOff(System.Int32 channel, System.Single frequency)
-    // Offset: 0xA0BA60
+    // Offset: 0xAD093C
     static void HelmFrequencyOff(int channel, float frequency);
     // static public System.Void HelmAllNotesOff(System.Int32 channel)
-    // Offset: 0xA0BAF0
+    // Offset: 0xAD09CC
     static void HelmAllNotesOff(int channel);
     // static public System.Void HelmSetPitchWheel(System.Int32 channel, System.Single value)
-    // Offset: 0xA0BB6C
+    // Offset: 0xAD0A48
     static void HelmSetPitchWheel(int channel, float value);
     // static public System.Void HelmSetModWheel(System.Int32 channel, System.Single value)
-    // Offset: 0xA0BBFC
+    // Offset: 0xAD0AD8
     static void HelmSetModWheel(int channel, float value);
     // static public System.Void HelmSetAftertouch(System.Int32 channel, System.Int32 note, System.Single value)
-    // Offset: 0xA0BC88
+    // Offset: 0xAD0B64
     static void HelmSetAftertouch(int channel, int note, float value);
     // static public System.Void HelmClearModulations(System.Int32 channel)
-    // Offset: 0xA0BD28
+    // Offset: 0xAD0C04
     static void HelmClearModulations(int channel);
     // static public System.Void HelmAddModulation(System.Int32 channel, System.Int32 index, System.String source, System.String dest, System.Single amount)
-    // Offset: 0xA0BDA8
+    // Offset: 0xAD0C84
     static void HelmAddModulation(int channel, int index, ::StringW source, ::StringW dest, float amount);
     // static public System.Single HelmGetParameterMinimum(System.Int32 index)
-    // Offset: 0xA0BE88
+    // Offset: 0xAD0D64
     static float HelmGetParameterMinimum(int index);
     // static public System.Single HelmGetParameterMaximum(System.Int32 index)
-    // Offset: 0xA0BF08
+    // Offset: 0xAD0DE4
     static float HelmGetParameterMaximum(int index);
     // static public System.Single HelmGetParameterValue(System.Int32 channel, System.Int32 paramIndex)
-    // Offset: 0xA0BF88
+    // Offset: 0xAD0E64
     static float HelmGetParameterValue(int channel, int paramIndex);
     // static public System.Boolean HelmSetParameterValue(System.Int32 channel, System.Int32 paramIndex, System.Single newValue)
-    // Offset: 0xA0C018
+    // Offset: 0xAD0EF4
     static bool HelmSetParameterValue(int channel, int paramIndex, float newValue);
     // static public System.Single HelmGetParameterPercent(System.Int32 channel, System.Int32 paramIndex)
-    // Offset: 0xA0C0C0
+    // Offset: 0xAD0F9C
     static float HelmGetParameterPercent(int channel, int paramIndex);
     // static public System.Boolean HelmSetParameterPercent(System.Int32 channel, System.Int32 paramIndex, System.Single newPercent)
-    // Offset: 0xA0C150
+    // Offset: 0xAD102C
     static bool HelmSetParameterPercent(int channel, int paramIndex, float newPercent);
     // static public System.Boolean HelmSilence(System.Int32 channel, System.Boolean silent)
-    // Offset: 0xA0C1F8
+    // Offset: 0xAD10D4
     static bool HelmSilence(int channel, bool silent);
     // static public System.Boolean HelmGetBufferData(System.Int32 channel, System.Single[] buffer, System.Int32 samples, System.Int32 numAudioChannels)
-    // Offset: 0xA0C290
+    // Offset: 0xAD116C
     static bool HelmGetBufferData(int channel, ::ArrayW<float> buffer, int samples, int numAudioChannels);
     // static public System.Void SetBpm(System.Single bpm)
-    // Offset: 0xA0C348
+    // Offset: 0xAD1224
     static void SetBpm(float bpm);
     // static public System.IntPtr CreateSequencer()
-    // Offset: 0xA0C3CC
+    // Offset: 0xAD12A8
     static ::System::IntPtr CreateSequencer();
     // static public System.Void DeleteSequencer(System.IntPtr sequencer)
-    // Offset: 0xA0C43C
+    // Offset: 0xAD1318
     static void DeleteSequencer(::System::IntPtr sequencer);
     // static public System.Void EnableSequencer(System.IntPtr sequencer, System.Boolean enable)
-    // Offset: 0xA0C4B8
+    // Offset: 0xAD1394
     static void EnableSequencer(::System::IntPtr sequencer, bool enable);
     // static public System.Void ChangeSequencerLength(System.IntPtr sequencer, System.Single length)
-    // Offset: 0xA0C544
+    // Offset: 0xAD1420
     static void ChangeSequencerLength(::System::IntPtr sequencer, float length);
     // static public System.Void LoopSequencer(System.IntPtr sequencer, System.Boolean loop)
-    // Offset: 0xA0C5D4
+    // Offset: 0xAD14B0
     static void LoopSequencer(::System::IntPtr sequencer, bool loop);
     // static public System.Boolean ChangeSequencerChannel(System.IntPtr sequencer, System.Int32 channel)
-    // Offset: 0xA0C664
+    // Offset: 0xAD1540
     static bool ChangeSequencerChannel(::System::IntPtr sequencer, int channel);
     // static public System.Void SetSequencerStart(System.IntPtr sequencer, System.Double startBeat)
-    // Offset: 0xA0C6FC
+    // Offset: 0xAD15D8
     static void SetSequencerStart(::System::IntPtr sequencer, double startBeat);
     // static public System.IntPtr CreateNote(System.IntPtr sequencer, System.Int32 note, System.Single velocity, System.Single start, System.Single end)
-    // Offset: 0xA0C78C
+    // Offset: 0xAD1668
     static ::System::IntPtr CreateNote(::System::IntPtr sequencer, int note, float velocity, float start, float end);
     // static public System.IntPtr DeleteNote(System.IntPtr sequencer, System.IntPtr note)
-    // Offset: 0xA0C844
+    // Offset: 0xAD1720
     static ::System::IntPtr DeleteNote(::System::IntPtr sequencer, ::System::IntPtr note);
     // static public System.IntPtr ChangeNoteStart(System.IntPtr sequencer, System.IntPtr note, System.Single newStart)
-    // Offset: 0xA0C8D4
+    // Offset: 0xAD17B0
     static ::System::IntPtr ChangeNoteStart(::System::IntPtr sequencer, ::System::IntPtr note, float newStart);
     // static public System.IntPtr ChangeNoteEnd(System.IntPtr sequencer, System.IntPtr note, System.Single newEnd)
-    // Offset: 0xA0C970
+    // Offset: 0xAD184C
     static ::System::IntPtr ChangeNoteEnd(::System::IntPtr sequencer, ::System::IntPtr note, float newEnd);
     // static public System.IntPtr ChangeNoteValues(System.IntPtr sequencer, System.IntPtr note, System.Int32 newMidiKey, System.Single newStart, System.Single newEnd, System.Single newVelocity)
-    // Offset: 0xA0CA10
+    // Offset: 0xAD18EC
     static ::System::IntPtr ChangeNoteValues(::System::IntPtr sequencer, ::System::IntPtr note, int newMidiKey, float newStart, float newEnd, float newVelocity);
     // static public System.IntPtr ChangeNoteKey(System.IntPtr sequencer, System.IntPtr note, System.Int32 key)
-    // Offset: 0xA0CAD0
+    // Offset: 0xAD19AC
     static ::System::IntPtr ChangeNoteKey(::System::IntPtr sequencer, ::System::IntPtr note, int key);
     // static public System.IntPtr ChangeNoteVelocity(System.IntPtr note, System.Single velocity)
-    // Offset: 0xA0CB68
+    // Offset: 0xAD1A44
     static ::System::IntPtr ChangeNoteVelocity(::System::IntPtr note, float velocity);
     // static public System.Void SetBeatTime(System.Double time)
-    // Offset: 0xA0CBF8
+    // Offset: 0xAD1AD4
     static void SetBeatTime(double time);
     // static public System.Void Pause(System.Boolean pause)
-    // Offset: 0xA0CC7C
+    // Offset: 0xAD1B58
     static void Pause(bool pause);
   }; // AudioHelm.Native
   #pragma pack(pop)

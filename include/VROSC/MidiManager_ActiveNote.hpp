@@ -23,15 +23,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MidiManager::ActiveNote : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 Note
     // Size: 0x4
     // Offset: 0x10
@@ -62,15 +54,15 @@ namespace VROSC {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 Note
-    int& dyn_Note();
+    [[deprecated]] int& dyn_Note();
     // Get instance field reference: public System.Object Patch
-    ::Il2CppObject*& dyn_Patch();
+    [[deprecated]] ::Il2CppObject*& dyn_Patch();
     // Get instance field reference: public System.Int32 Channel
-    int& dyn_Channel();
+    [[deprecated]] int& dyn_Channel();
     // Get instance field reference: public System.Object Source
-    ::Il2CppObject*& dyn_Source();
+    [[deprecated]] ::Il2CppObject*& dyn_Source();
     // public System.Void .ctor(System.Int32 note, System.Object patch, System.Int32 channel, System.Object source)
-    // Offset: 0x13DB6BC
+    // Offset: 0x19633D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MidiManager::ActiveNote* New_ctor(int note, ::Il2CppObject* patch, int channel, ::Il2CppObject* source) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MidiManager::ActiveNote::.ctor");

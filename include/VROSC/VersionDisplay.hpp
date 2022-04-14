@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class VersionDisplay : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TMP_Text _tmpText
     // Size: 0x8
     // Offset: 0x18
@@ -66,18 +58,18 @@ namespace VROSC {
     // Set static field: static private System.String AndroidBundleNumberFileName
     static void _set_AndroidBundleNumberFileName(::StringW value);
     // Get instance field reference: private TMPro.TMP_Text _tmpText
-    ::TMPro::TMP_Text*& dyn__tmpText();
+    [[deprecated]] ::TMPro::TMP_Text*& dyn__tmpText();
     // static public System.String get_AndroidBundleNumberFilePath()
-    // Offset: 0x13ADFA4
+    // Offset: 0x1921EEC
     static ::StringW get_AndroidBundleNumberFilePath();
     // protected System.Void Awake()
-    // Offset: 0x13AE02C
+    // Offset: 0x1921F74
     void Awake();
     // private System.String GetAndroidBundleNumberFromFile()
-    // Offset: 0x13AE144
+    // Offset: 0x192208C
     ::StringW GetAndroidBundleNumberFromFile();
     // public System.Void .ctor()
-    // Offset: 0x13AE3A0
+    // Offset: 0x19222E8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

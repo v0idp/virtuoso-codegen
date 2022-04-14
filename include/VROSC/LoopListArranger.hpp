@@ -54,15 +54,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::LoopListArranger::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _onlyAllowRearrangeOfLoops
     // Size: 0x1
     // Offset: 0x18
@@ -131,63 +123,63 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _onlyAllowRearrangeOfLoops
-    bool& dyn__onlyAllowRearrangeOfLoops();
+    [[deprecated]] bool& dyn__onlyAllowRearrangeOfLoops();
     // Get instance field reference: private System.Single _loopHeightOffset
-    float& dyn__loopHeightOffset();
+    [[deprecated]] float& dyn__loopHeightOffset();
     // Get instance field reference: private UnityEngine.RectTransform _dropPositionPreview
-    ::UnityEngine::RectTransform*& dyn__dropPositionPreview();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__dropPositionPreview();
     // Get instance field reference: private UnityEngine.Transform _loopsParent
-    ::UnityEngine::Transform*& dyn__loopsParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__loopsParent();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopStationGroup _owner
-    ::VROSC::LoopStationGroup*& dyn__owner();
+    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__owner();
     // Get instance field reference: private VROSC.LoopPlayer _hoveringingPlayer
-    ::VROSC::LoopPlayer*& dyn__hoveringingPlayer();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn__hoveringingPlayer();
     // Get instance field reference: private System.Boolean _sortNeeded
-    bool& dyn__sortNeeded();
+    [[deprecated]] bool& dyn__sortNeeded();
     // Get instance field reference: private System.Boolean _dataShouldUpdate
-    bool& dyn__dataShouldUpdate();
+    [[deprecated]] bool& dyn__dataShouldUpdate();
     // Get instance field reference: public System.Action OnSortComplete
-    ::System::Action*& dyn_OnSortComplete();
+    [[deprecated]] ::System::Action*& dyn_OnSortComplete();
     // public System.Single get_ListHeight()
-    // Offset: 0x13949A4
+    // Offset: 0x19B4C88
     float get_ListHeight();
     // public System.Boolean get_OnlyAllowRearrangeOfLoops()
-    // Offset: 0x1394AA0
+    // Offset: 0x19B4D84
     bool get_OnlyAllowRearrangeOfLoops();
     // public System.Void Setup(VROSC.LoopStationGroup loopStationGroup, VROSC.LoopStation loopStation, UnityEngine.Transform loopsParent)
-    // Offset: 0x1394AA8
+    // Offset: 0x19B4D8C
     void Setup(::VROSC::LoopStationGroup* loopStationGroup, ::VROSC::LoopStation* loopStation, ::UnityEngine::Transform* loopsParent);
     // private System.Void OnDestroy()
-    // Offset: 0x1394C08
+    // Offset: 0x19B4EEC
     void OnDestroy();
     // public System.Void SetHovering(VROSC.LoopPlayer hoveringPlayer)
-    // Offset: 0x1394D34
+    // Offset: 0x19B5018
     void SetHovering(::VROSC::LoopPlayer* hoveringPlayer);
     // private System.Void Update()
-    // Offset: 0x1394D58
+    // Offset: 0x19B503C
     void Update();
     // private System.Void LoopCountChanged(VROSC.LoopPlayer sender)
-    // Offset: 0x13950DC
+    // Offset: 0x19B53B4
     void LoopCountChanged(::VROSC::LoopPlayer* sender);
     // private System.Void Changed(System.Boolean alsoUpdateData)
-    // Offset: 0x1394D44
+    // Offset: 0x19B5028
     void Changed(bool alsoUpdateData);
     // private System.Void SortLoops()
-    // Offset: 0x1394D68
+    // Offset: 0x19B504C
     void SortLoops();
     // private System.Single GetListHeight()
-    // Offset: 0x13949A8
+    // Offset: 0x19B4C8C
     float GetListHeight();
     // public System.Int32 GetListIndexByPosition(VROSC.LoopPlayer loopPlayer)
-    // Offset: 0x13950E8
+    // Offset: 0x19B53C0
     int GetListIndexByPosition(::VROSC::LoopPlayer* loopPlayer);
     // public UnityEngine.Vector3 GetLooperPositionByOrderInList(System.Int32 order)
-    // Offset: 0x13951C0
+    // Offset: 0x19B5498
     ::UnityEngine::Vector3 GetLooperPositionByOrderInList(int order);
     // public System.Void .ctor()
-    // Offset: 0x139522C
+    // Offset: 0x19B550C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -43,23 +43,15 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class GlobalDrumPadEffect : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x67152C
+    // [HeaderAttribute] Offset: 0x787780
     // private VROSC.AdjustableMesh _padRenderer
     // Size: 0x8
     // Offset: 0x18
     ::VROSC::AdjustableMesh* padRenderer;
     // Field size check
     static_assert(sizeof(::VROSC::AdjustableMesh*) == 0x8);
-    // [HeaderAttribute] Offset: 0x671578
+    // [HeaderAttribute] Offset: 0x7877CC
     // private System.Boolean _preview
     // Size: 0x1
     // Offset: 0x20
@@ -74,7 +66,7 @@ namespace VROSC {
     ::UnityEngine::Color previewColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [RangeAttribute] Offset: 0x6715D4
+    // [RangeAttribute] Offset: 0x787828
     // private System.Single _previewTiming
     // Size: 0x4
     // Offset: 0x34
@@ -103,24 +95,24 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AdjustableMesh _padRenderer
-    ::VROSC::AdjustableMesh*& dyn__padRenderer();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__padRenderer();
     // Get instance field reference: private System.Boolean _preview
-    bool& dyn__preview();
+    [[deprecated]] bool& dyn__preview();
     // Get instance field reference: private UnityEngine.Color _previewColor
-    ::UnityEngine::Color& dyn__previewColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__previewColor();
     // Get instance field reference: private System.Single _previewTiming
-    float& dyn__previewTiming();
+    [[deprecated]] float& dyn__previewTiming();
     // Get instance field reference: private UnityEngine.AnimationCurve _powerCurve
-    ::UnityEngine::AnimationCurve*& dyn__powerCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Boolean _meshesVerified
-    bool& dyn__meshesVerified();
+    [[deprecated]] bool& dyn__meshesVerified();
     // public System.Void SetColor(UnityEngine.Color color, System.Boolean affectVisual)
-    // Offset: 0x892D48
+    // Offset: 0x19A51C8
     void SetColor(::UnityEngine::Color color, bool affectVisual);
     // public System.Void .ctor()
-    // Offset: 0x892D4C
+    // Offset: 0x19A51CC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -57,15 +57,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class BoardTutorialHelper : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject _interactablesParent
     // Size: 0x8
     // Offset: 0x18
@@ -130,48 +122,48 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _interactablesParent
-    ::UnityEngine::GameObject*& dyn__interactablesParent();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__interactablesParent();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement[] _soundButtonBlinkers
-    ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__soundButtonBlinkers();
+    [[deprecated]] ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__soundButtonBlinkers();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _closeButtonBlink
-    ::VROSC::TutorialBlinkingUIElement*& dyn__closeButtonBlink();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__closeButtonBlink();
     // Get instance field reference: private VROSC.Interactable[] _soundButtonInteractables
-    ::ArrayW<::VROSC::Interactable*>& dyn__soundButtonInteractables();
+    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__soundButtonInteractables();
     // Get instance field reference: private VROSC.Interactable[] _tempoSyncInteractables
-    ::ArrayW<::VROSC::Interactable*>& dyn__tempoSyncInteractables();
+    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__tempoSyncInteractables();
     // Get instance field reference: private VROSC.Interactable _closeButtonInteractable
-    ::VROSC::Interactable*& dyn__closeButtonInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__closeButtonInteractable();
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteController
-    ::VROSC::NoteBoardNoteController*& dyn__noteController();
+    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteController();
     // Get instance field reference: private VROSC.SynthController _boardController
-    ::VROSC::SynthController*& dyn__boardController();
+    [[deprecated]] ::VROSC::SynthController*& dyn__boardController();
     // Get instance field reference: private VROSC.Grabable _boardGrabable
-    ::VROSC::Grabable*& dyn__boardGrabable();
+    [[deprecated]] ::VROSC::Grabable*& dyn__boardGrabable();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Interactable> _disabledInteractables
-    ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
     // protected System.Void Start()
-    // Offset: 0x132408C
+    // Offset: 0x938B58
     void Start();
     // private System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x132417C
+    // Offset: 0x938C48
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
     // private System.Void SoundButtonsUsed(System.Boolean used)
-    // Offset: 0x13249A0
+    // Offset: 0x93946C
     void SoundButtonsUsed(bool used);
     // private System.Void DisableAllInteractables()
-    // Offset: 0x1324850
+    // Offset: 0x93931C
     void DisableAllInteractables();
     // private System.Void ResetAll()
-    // Offset: 0x1324654
+    // Offset: 0x939120
     void ResetAll();
     // private System.Void BoardToggledAfterCloseEnabled(System.Boolean active)
-    // Offset: 0x1324B24
+    // Offset: 0x9395F0
     void BoardToggledAfterCloseEnabled(bool active);
     // private System.Void BoardGrabbed(System.Boolean grabbed)
-    // Offset: 0x1324C7C
+    // Offset: 0x939748
     void BoardGrabbed(bool grabbed);
     // public System.Void .ctor()
-    // Offset: 0x1324DC4
+    // Offset: 0x939890
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

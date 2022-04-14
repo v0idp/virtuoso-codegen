@@ -93,24 +93,24 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Action`1<System.String> onSuccess
-    ::System::Action_1<::StringW>*& dyn_onSuccess();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onSuccess();
     // Get instance field reference: public System.String sessionName
-    ::StringW& dyn_sessionName();
+    [[deprecated]] ::StringW& dyn_sessionName();
     // Get instance field reference: public System.Action`2<System.String,VROSC.Error> onFailure
-    ::System::Action_2<::StringW, ::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_2<::StringW, ::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public VROSC.SaveLoadManager <>4__this
-    ::VROSC::SaveLoadManager*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x1348D70
+    // Offset: 0x8D3CE8
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x13490F4
+    // Offset: 0x8D406C
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.SaveLoadManager/VROSC.<UpdateOldSaveFiles>d__27
   // WARNING Not writing size check since size may be invalid!

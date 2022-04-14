@@ -25,15 +25,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRInput::OVRControllerBase::VirtualTouchMap : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRInput/RawTouch None
     // Size: 0x4
     // Offset: 0x10
@@ -114,36 +106,36 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRInput::RawTouch) == 0x4);
     public:
     // Get instance field reference: public OVRInput/RawTouch None
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_None();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_None();
     // Get instance field reference: public OVRInput/RawTouch One
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_One();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_One();
     // Get instance field reference: public OVRInput/RawTouch Two
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_Two();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Two();
     // Get instance field reference: public OVRInput/RawTouch Three
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_Three();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Three();
     // Get instance field reference: public OVRInput/RawTouch Four
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_Four();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Four();
     // Get instance field reference: public OVRInput/RawTouch PrimaryIndexTrigger
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryIndexTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawTouch PrimaryThumbstick
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryThumbstick();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryThumbstick();
     // Get instance field reference: public OVRInput/RawTouch PrimaryThumbRest
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryThumbRest();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryThumbRest();
     // Get instance field reference: public OVRInput/RawTouch PrimaryTouchpad
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryTouchpad();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryTouchpad();
     // Get instance field reference: public OVRInput/RawTouch SecondaryIndexTrigger
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryIndexTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawTouch SecondaryThumbstick
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryThumbstick();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryThumbstick();
     // Get instance field reference: public OVRInput/RawTouch SecondaryThumbRest
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryThumbRest();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryThumbRest();
     // Get instance field reference: public OVRInput/RawTouch SecondaryTouchpad
-    ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryTouchpad();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryTouchpad();
     // public OVRInput/RawTouch ToRawMask(OVRInput/Touch virtualMask)
-    // Offset: 0xF183D0
+    // Offset: 0x13F23CC
     ::GlobalNamespace::OVRInput::RawTouch ToRawMask(::GlobalNamespace::OVRInput::Touch virtualMask);
     // public System.Void .ctor()
-    // Offset: 0xF184A4
+    // Offset: 0x13F24A0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

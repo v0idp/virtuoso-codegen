@@ -60,7 +60,7 @@ namespace System::IO::Compression {
     // Set static field: static public System.IO.Compression.MatchState HasSymbolAndMatch
     static void _set_HasSymbolAndMatch(::System::IO::Compression::MatchState value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // System.IO.Compression.MatchState
   #pragma pack(pop)
   static check_size<sizeof(MatchState), 0 + sizeof(int)> __System_IO_Compression_MatchStateSizeCheck;

@@ -38,15 +38,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class ONSPProfiler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean profilerEnabled
     // Size: 0x1
     // Offset: 0x18
@@ -77,23 +69,23 @@ namespace GlobalNamespace {
     // Set static field: static public System.String strONSPS
     static void _set_strONSPS(::StringW value);
     // Get instance field reference: public System.Boolean profilerEnabled
-    bool& dyn_profilerEnabled();
+    [[deprecated]] bool& dyn_profilerEnabled();
     // Get instance field reference: public System.Int32 port
-    int& dyn_port();
+    [[deprecated]] int& dyn_port();
     // private System.Void Start()
-    // Offset: 0x11BB204
+    // Offset: 0x176010C
     void Start();
     // private System.Void Update()
-    // Offset: 0x11BB210
+    // Offset: 0x1760118
     void Update();
     // static private System.Int32 ONSP_SetProfilerEnabled(System.Boolean enabled)
-    // Offset: 0x11BB2C8
+    // Offset: 0x17601D0
     static int ONSP_SetProfilerEnabled(bool enabled);
     // static private System.Int32 ONSP_SetProfilerPort(System.Int32 port)
-    // Offset: 0x11BB248
+    // Offset: 0x1760150
     static int ONSP_SetProfilerPort(int port);
     // public System.Void .ctor()
-    // Offset: 0x11BB348
+    // Offset: 0x1760250
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -41,15 +41,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ErrorMessages::ErrorMessagePair
     class ErrorMessagePair;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<VROSC.ErrorMessages/VROSC.ErrorMessagePair> Errors
     // Size: 0x8
     // Offset: 0x18
@@ -60,9 +52,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.ErrorMessages/VROSC.ErrorMessagePair> Errors
-    ::System::Collections::Generic::List_1<::VROSC::ErrorMessages::ErrorMessagePair*>*& dyn_Errors();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ErrorMessages::ErrorMessagePair*>*& dyn_Errors();
     // public System.Void .ctor()
-    // Offset: 0x1316210
+    // Offset: 0x8F02C0
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

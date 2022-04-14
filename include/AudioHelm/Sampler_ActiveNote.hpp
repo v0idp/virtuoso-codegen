@@ -36,15 +36,7 @@ namespace AudioHelm {
   // [TokenAttribute] Offset: FFFFFFFF
   class Sampler::ActiveNote : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 note
     // Size: 0x4
     // Offset: 0x10
@@ -67,13 +59,13 @@ namespace AudioHelm {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public System.Int32 note
-    int& dyn_note();
+    [[deprecated]] int& dyn_note();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.AudioSource> audioSources
-    ::System::Collections::Generic::List_1<::UnityEngine::AudioSource*>*& dyn_audioSources();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::AudioSource*>*& dyn_audioSources();
     // Get instance field reference: public System.Double startTime
-    double& dyn_startTime();
+    [[deprecated]] double& dyn_startTime();
     // public System.Void .ctor(System.Int32 n, System.Collections.Generic.List`1<UnityEngine.AudioSource> sources, System.Double start)
-    // Offset: 0x1345734
+    // Offset: 0x8D0684
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Sampler::ActiveNote* New_ctor(int n, ::System::Collections::Generic::List_1<::UnityEngine::AudioSource*>* sources, double start) {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Sampler::ActiveNote::.ctor");

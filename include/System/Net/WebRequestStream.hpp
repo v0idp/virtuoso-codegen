@@ -32,15 +32,14 @@ namespace System::Net {
 namespace System::IO {
   // Forward declaring type: MemoryStream
   class MemoryStream;
-  // Skipping declaration: Stream because it is already included!
 }
 // Forward declaring namespace: System::Threading::Tasks
 namespace System::Threading::Tasks {
-  // Forward declaring type: Task
-  class Task;
   // Forward declaring type: Task`1<TResult>
   template<typename TResult>
   class Task_1;
+  // Forward declaring type: Task
+  class Task;
 }
 // Forward declaring namespace: System::Threading
 namespace System::Threading {
@@ -80,15 +79,7 @@ namespace System::Net {
     struct $WriteChunkTrailer_inner$d__37;
     // Nested type: ::System::Net::WebRequestStream::$WriteChunkTrailer$d__38
     struct $WriteChunkTrailer$d__38;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IO.MemoryStream writeBuffer
     // Size: 0x8
     // Offset: 0x68
@@ -173,107 +164,107 @@ namespace System::Net {
     // Set static field: static private System.Byte[] crlf
     static void _set_crlf(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.IO.MemoryStream writeBuffer
-    ::System::IO::MemoryStream*& dyn_writeBuffer();
+    [[deprecated]] ::System::IO::MemoryStream*& dyn_writeBuffer();
     // Get instance field reference: private System.Boolean requestWritten
-    bool& dyn_requestWritten();
+    [[deprecated]] bool& dyn_requestWritten();
     // Get instance field reference: private System.Boolean allowBuffering
-    bool& dyn_allowBuffering();
+    [[deprecated]] bool& dyn_allowBuffering();
     // Get instance field reference: private System.Boolean sendChunked
-    bool& dyn_sendChunked();
+    [[deprecated]] bool& dyn_sendChunked();
     // Get instance field reference: private System.Net.WebCompletionSource pendingWrite
-    ::System::Net::WebCompletionSource*& dyn_pendingWrite();
+    [[deprecated]] ::System::Net::WebCompletionSource*& dyn_pendingWrite();
     // Get instance field reference: private System.Int64 totalWritten
-    int64_t& dyn_totalWritten();
+    [[deprecated]] int64_t& dyn_totalWritten();
     // Get instance field reference: private System.Byte[] headers
-    ::ArrayW<uint8_t>& dyn_headers();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_headers();
     // Get instance field reference: private System.Boolean headersSent
-    bool& dyn_headersSent();
+    [[deprecated]] bool& dyn_headersSent();
     // Get instance field reference: private System.Int32 completeRequestWritten
-    int& dyn_completeRequestWritten();
+    [[deprecated]] int& dyn_completeRequestWritten();
     // Get instance field reference: private System.Int32 chunkTrailerWritten
-    int& dyn_chunkTrailerWritten();
+    [[deprecated]] int& dyn_chunkTrailerWritten();
     // Get instance field reference: readonly System.String ME
-    ::StringW& dyn_ME();
+    [[deprecated]] ::StringW& dyn_ME();
     // Get instance field reference: private readonly System.Boolean <KeepAlive>k__BackingField
-    bool& dyn_$KeepAlive$k__BackingField();
+    [[deprecated]] bool& dyn_$KeepAlive$k__BackingField();
     // public System.Boolean get_KeepAlive()
-    // Offset: 0xABF73C
+    // Offset: 0xC4AD24
     bool get_KeepAlive();
     // System.Boolean get_HasWriteBuffer()
-    // Offset: 0xABF794
+    // Offset: 0xC4AD7C
     bool get_HasWriteBuffer();
     // System.Int32 get_WriteBufferLength()
-    // Offset: 0xABF7C8
+    // Offset: 0xC4ADB0
     int get_WriteBufferLength();
     // public System.Void .ctor(System.Net.WebConnection connection, System.Net.WebOperation operation, System.IO.Stream stream, System.Net.WebConnectionTunnel tunnel)
-    // Offset: 0xABF578
+    // Offset: 0xC4AB60
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebRequestStream* New_ctor(::System::Net::WebConnection* connection, ::System::Net::WebOperation* operation, ::System::IO::Stream* stream, ::System::Net::WebConnectionTunnel* tunnel) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebRequestStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WebRequestStream*, creationType>(connection, operation, stream, tunnel)));
     }
     // System.Net.BufferOffsetSize GetWriteBuffer()
-    // Offset: 0xABF810
+    // Offset: 0xC4ADF8
     ::System::Net::BufferOffsetSize* GetWriteBuffer();
     // private System.Threading.Tasks.Task FinishWriting(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABF8F4
+    // Offset: 0xC4AEDC
     ::System::Threading::Tasks::Task* FinishWriting(::System::Threading::CancellationToken cancellationToken);
     // private System.Threading.Tasks.Task ProcessWrite(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABFB40
+    // Offset: 0xC4B128
     ::System::Threading::Tasks::Task* ProcessWrite(::ArrayW<uint8_t> buffer, int offset, int size, ::System::Threading::CancellationToken cancellationToken);
     // private System.Void CheckWriteOverflow(System.Int64 contentLength, System.Int64 totalWritten, System.Int64 size)
-    // Offset: 0xABFC80
+    // Offset: 0xC4B268
     void CheckWriteOverflow(int64_t contentLength, int64_t totalWritten, int64_t size);
     // System.Threading.Tasks.Task Initialize(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABFD28
+    // Offset: 0xC4B310
     ::System::Threading::Tasks::Task* Initialize(::System::Threading::CancellationToken cancellationToken);
     // private System.Threading.Tasks.Task SetHeadersAsync(System.Boolean setInternalLength, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABFE3C
+    // Offset: 0xC4B424
     ::System::Threading::Tasks::Task* SetHeadersAsync(bool setInternalLength, ::System::Threading::CancellationToken cancellationToken);
     // System.Threading.Tasks.Task WriteRequestAsync(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABFF68
+    // Offset: 0xC4B550
     ::System::Threading::Tasks::Task* WriteRequestAsync(::System::Threading::CancellationToken cancellationToken);
     // private System.Threading.Tasks.Task WriteChunkTrailer_inner(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC007C
+    // Offset: 0xC4B664
     ::System::Threading::Tasks::Task* WriteChunkTrailer_inner(::System::Threading::CancellationToken cancellationToken);
     // private System.Threading.Tasks.Task WriteChunkTrailer()
-    // Offset: 0xAC018C
+    // Offset: 0xC4B774
     ::System::Threading::Tasks::Task* WriteChunkTrailer();
     // System.Void KillBuffer()
-    // Offset: 0xABFD20
+    // Offset: 0xC4B308
     void KillBuffer();
     // public override System.Int64 get_Length()
-    // Offset: 0xABF744
+    // Offset: 0xC4AD2C
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Length()
     int64_t get_Length();
     // public override System.Boolean get_CanRead()
-    // Offset: 0xABF784
+    // Offset: 0xC4AD6C
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanRead()
     bool get_CanRead();
     // public override System.Boolean get_CanWrite()
-    // Offset: 0xABF78C
+    // Offset: 0xC4AD74
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanWrite()
     bool get_CanWrite();
     // static private System.Void .cctor()
-    // Offset: 0xAC04D4
+    // Offset: 0xC4BAC0
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::.cctor()
     static void _cctor();
     // public override System.Threading.Tasks.Task WriteAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xABFA04
+    // Offset: 0xC4AFEC
     // Implemented from: System.IO.Stream
     // Base method: System.Threading.Tasks.Task Stream::WriteAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
     ::System::Threading::Tasks::Task* WriteAsync(::ArrayW<uint8_t> buffer, int offset, int size, ::System::Threading::CancellationToken cancellationToken);
     // public override System.Threading.Tasks.Task`1<System.Int32> ReadAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC029C
+    // Offset: 0xC4B884
     // Implemented from: System.IO.Stream
     // Base method: System.Threading.Tasks.Task`1<System.Int32> Stream::ReadAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
     ::System::Threading::Tasks::Task_1<int>* ReadAsync(::ArrayW<uint8_t> buffer, int offset, int size, ::System::Threading::CancellationToken cancellationToken);
     // protected override System.Void Close_internal(ref System.Boolean disposed)
-    // Offset: 0xAC0350
+    // Offset: 0xC4B938
     // Implemented from: System.Net.WebConnectionStream
     // Base method: System.Void WebConnectionStream::Close_internal(ref System.Boolean disposed)
     void Close_internal(ByRef<bool> disposed);

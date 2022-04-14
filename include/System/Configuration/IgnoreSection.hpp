@@ -18,7 +18,6 @@
 namespace System::Configuration {
   // Forward declaring type: ConfigurationPropertyCollection
   class ConfigurationPropertyCollection;
-  // Skipping declaration: ConfigurationElement because it is already included!
   // Forward declaring type: ConfigurationSaveMode
   struct ConfigurationSaveMode;
 }
@@ -45,12 +44,12 @@ namespace System::Configuration {
   class IgnoreSection : public ::System::Configuration::ConfigurationSection {
     public:
     // protected internal override System.Configuration.ConfigurationPropertyCollection get_Properties()
-    // Offset: 0x130556C
+    // Offset: 0x190D704
     // Implemented from: System.Configuration.ConfigurationElement
     // Base method: System.Configuration.ConfigurationPropertyCollection ConfigurationElement::get_Properties()
     ::System::Configuration::ConfigurationPropertyCollection* get_Properties();
     // public System.Void .ctor()
-    // Offset: 0x1305530
+    // Offset: 0x190D6C8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -59,27 +58,27 @@ namespace System::Configuration {
       return THROW_UNLESS((::il2cpp_utils::New<IgnoreSection*, creationType>()));
     }
     // protected internal override System.Void DeserializeSection(System.Xml.XmlReader xmlReader)
-    // Offset: 0x13055A8
+    // Offset: 0x190D740
     // Implemented from: System.Configuration.ConfigurationSection
     // Base method: System.Void ConfigurationSection::DeserializeSection(System.Xml.XmlReader xmlReader)
     void DeserializeSection(::System::Xml::XmlReader* xmlReader);
     // protected internal override System.Boolean IsModified()
-    // Offset: 0x13055E4
+    // Offset: 0x190D77C
     // Implemented from: System.Configuration.ConfigurationSection
     // Base method: System.Boolean ConfigurationSection::IsModified()
     bool IsModified();
     // protected internal override System.Void Reset(System.Configuration.ConfigurationElement parentSection)
-    // Offset: 0x1305620
+    // Offset: 0x190D7B8
     // Implemented from: System.Configuration.ConfigurationElement
     // Base method: System.Void ConfigurationElement::Reset(System.Configuration.ConfigurationElement parentSection)
     void Reset(::System::Configuration::ConfigurationElement* parentSection);
     // protected internal override System.Void ResetModified()
-    // Offset: 0x130565C
+    // Offset: 0x190D7F4
     // Implemented from: System.Configuration.ConfigurationSection
     // Base method: System.Void ConfigurationSection::ResetModified()
     void ResetModified();
     // protected internal override System.String SerializeSection(System.Configuration.ConfigurationElement parentSection, System.String name, System.Configuration.ConfigurationSaveMode saveMode)
-    // Offset: 0x1305698
+    // Offset: 0x190D830
     // Implemented from: System.Configuration.ConfigurationSection
     // Base method: System.String ConfigurationSection::SerializeSection(System.Configuration.ConfigurationElement parentSection, System.String name, System.Configuration.ConfigurationSaveMode saveMode)
     ::StringW SerializeSection(::System::Configuration::ConfigurationElement* parentSection, ::StringW name, ::System::Configuration::ConfigurationSaveMode saveMode);

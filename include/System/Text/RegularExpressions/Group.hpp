@@ -37,15 +37,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class Group : public ::System::Text::RegularExpressions::Capture {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Int32[] _caps
     // Size: 0x8
     // Offset: 0x20
@@ -66,7 +58,7 @@ namespace System::Text::RegularExpressions {
     ::System::Text::RegularExpressions::CaptureCollection* capcoll;
     // Field size check
     static_assert(sizeof(::System::Text::RegularExpressions::CaptureCollection*) == 0x8);
-    // [OptionalFieldAttribute] Offset: 0x592E8C
+    // [OptionalFieldAttribute] Offset: 0x69E20C
     // System.String _name
     // Size: 0x8
     // Offset: 0x38
@@ -79,28 +71,28 @@ namespace System::Text::RegularExpressions {
     // Set static field: static System.Text.RegularExpressions.Group _emptygroup
     static void _set__emptygroup(::System::Text::RegularExpressions::Group* value);
     // Get instance field reference: System.Int32[] _caps
-    ::ArrayW<int>& dyn__caps();
+    [[deprecated]] ::ArrayW<int>& dyn__caps();
     // Get instance field reference: System.Int32 _capcount
-    int& dyn__capcount();
+    [[deprecated]] int& dyn__capcount();
     // Get instance field reference: System.Text.RegularExpressions.CaptureCollection _capcoll
-    ::System::Text::RegularExpressions::CaptureCollection*& dyn__capcoll();
+    [[deprecated]] ::System::Text::RegularExpressions::CaptureCollection*& dyn__capcoll();
     // Get instance field reference: System.String _name
-    ::StringW& dyn__name();
+    [[deprecated]] ::StringW& dyn__name();
     // public System.Boolean get_Success()
-    // Offset: 0xD8A088
+    // Offset: 0xF0B668
     bool get_Success();
     // System.Void .ctor(System.String text, System.Int32[] caps, System.Int32 capcount, System.String name)
-    // Offset: 0xD89FF0
+    // Offset: 0xF0B5D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Group* New_ctor(::StringW text, ::ArrayW<int> caps, int capcount, ::StringW name) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Group::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Group*, creationType>(text, caps, capcount, name)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xD8A098
+    // Offset: 0xF0B678
     static void _cctor();
     // System.Void .ctor()
-    // Offset: 0xD8A168
+    // Offset: 0xF0B748
     // Implemented from: System.Text.RegularExpressions.Capture
     // Base method: System.Void Capture::.ctor()
     // Base method: System.Void Object::.ctor()

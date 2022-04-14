@@ -30,7 +30,7 @@ namespace Oculus::Platform {
   class Entitlements : public ::Il2CppObject {
     public:
     // static public Oculus.Platform.Request IsUserEntitledToApplication()
-    // Offset: 0x7E1818
+    // Offset: 0x927BF8
     static ::Oculus::Platform::Request* IsUserEntitledToApplication();
   }; // Oculus.Platform.Entitlements
   #pragma pack(pop)

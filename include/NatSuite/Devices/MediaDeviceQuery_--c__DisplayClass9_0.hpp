@@ -32,15 +32,7 @@ namespace NatSuite::Devices {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class MediaDeviceQuery::$$c__DisplayClass9_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public NatSuite.Devices.MediaDeviceQuery/NatSuite.Devices.Criterion[] criteria
     // Size: 0x8
     // Offset: 0x10
@@ -53,12 +45,12 @@ namespace NatSuite::Devices {
       return criteria;
     }
     // Get instance field reference: public NatSuite.Devices.MediaDeviceQuery/NatSuite.Devices.Criterion[] criteria
-    ::ArrayW<::NatSuite::Devices::MediaDeviceQuery::Criterion*>& dyn_criteria();
+    [[deprecated]] ::ArrayW<::NatSuite::Devices::MediaDeviceQuery::Criterion*>& dyn_criteria();
     // System.Boolean <.ctor>b__0(NatSuite.Devices.IMediaDevice device)
-    // Offset: 0x13D95BC
+    // Offset: 0x19612D8
     bool $_ctor$b__0(::NatSuite::Devices::IMediaDevice* device);
     // public System.Void .ctor()
-    // Offset: 0x13D95B4
+    // Offset: 0x19612D0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

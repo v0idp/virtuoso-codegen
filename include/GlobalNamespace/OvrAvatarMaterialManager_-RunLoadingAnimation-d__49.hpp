@@ -34,15 +34,7 @@ namespace GlobalNamespace {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class OvrAvatarMaterialManager::$RunLoadingAnimation$d__49 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -123,50 +115,50 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public OvrAvatarMaterialManager <>4__this
-    ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_$$4__this();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_$$4__this();
     // Get instance field reference: public System.Action callBack
-    ::System::Action*& dyn_callBack();
+    [[deprecated]] ::System::Action*& dyn_callBack();
     // Get instance field reference: private System.Int32 <srcBlend>5__2
-    int& dyn_$srcBlend$5__2();
+    [[deprecated]] int& dyn_$srcBlend$5__2();
     // Get instance field reference: private System.Int32 <dstBlend>5__3
-    int& dyn_$dstBlend$5__3();
+    [[deprecated]] int& dyn_$dstBlend$5__3();
     // Get instance field reference: private System.String <lightModeTag>5__4
-    ::StringW& dyn_$lightModeTag$5__4();
+    [[deprecated]] ::StringW& dyn_$lightModeTag$5__4();
     // Get instance field reference: private System.String <renderTypeTag>5__5
-    ::StringW& dyn_$renderTypeTag$5__5();
+    [[deprecated]] ::StringW& dyn_$renderTypeTag$5__5();
     // Get instance field reference: private System.String <renderQueueTag>5__6
-    ::StringW& dyn_$renderQueueTag$5__6();
+    [[deprecated]] ::StringW& dyn_$renderQueueTag$5__6();
     // Get instance field reference: private System.String <ignoreProjectorTag>5__7
-    ::StringW& dyn_$ignoreProjectorTag$5__7();
+    [[deprecated]] ::StringW& dyn_$ignoreProjectorTag$5__7();
     // Get instance field reference: private System.Int32 <renderQueue>5__8
-    int& dyn_$renderQueue$5__8();
+    [[deprecated]] int& dyn_$renderQueue$5__8();
     // Get instance field reference: private System.Boolean <transparentQueue>5__9
-    bool& dyn_$transparentQueue$5__9();
+    [[deprecated]] bool& dyn_$transparentQueue$5__9();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x1341ADC
+    // Offset: 0x8CCA00
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x1341B24
+    // Offset: 0x8CCA48
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x1341434
+    // Offset: 0x8CC358
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarMaterialManager::$RunLoadingAnimation$d__49* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarMaterialManager::$RunLoadingAnimation$d__49::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarMaterialManager::$RunLoadingAnimation$d__49*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x1341460
+    // Offset: 0x8CC384
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x1341464
+    // Offset: 0x8CC388
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x1341AE4
+    // Offset: 0x8CCA08
     void System_Collections_IEnumerator_Reset();
   }; // OvrAvatarMaterialManager/<RunLoadingAnimation>d__49
   #pragma pack(pop)

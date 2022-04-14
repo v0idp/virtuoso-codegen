@@ -47,15 +47,7 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class LooperProgressSliderUpdater : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _slider
     // Size: 0x8
     // Offset: 0x18
@@ -74,7 +66,7 @@ namespace VROSC {
     ::UnityEngine::Color mutedColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [RangeAttribute] Offset: 0x6727A0
+    // [RangeAttribute] Offset: 0x788A54
     // private System.Single _beatLength
     // Size: 0x4
     // Offset: 0x40
@@ -99,22 +91,22 @@ namespace VROSC {
     ::UnityEngine::Color waitingColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [HeaderAttribute] Offset: 0x672810
-    // [RangeAttribute] Offset: 0x672810
+    // [HeaderAttribute] Offset: 0x788AC4
+    // [RangeAttribute] Offset: 0x788AC4
     // private System.Single _previewValue
     // Size: 0x4
     // Offset: 0x60
     float previewValue;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x672874
+    // [RangeAttribute] Offset: 0x788B28
     // private System.Single _fadeValue
     // Size: 0x4
     // Offset: 0x64
     float fadeValue;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x6728B4
+    // [RangeAttribute] Offset: 0x788B68
     // private System.Single _timingValue
     // Size: 0x4
     // Offset: 0x68
@@ -177,94 +169,94 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Renderer _slider
-    ::UnityEngine::Renderer*& dyn__slider();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__slider();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private UnityEngine.Color _mutedColor
-    ::UnityEngine::Color& dyn__mutedColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__mutedColor();
     // Get instance field reference: private System.Single _beatLength
-    float& dyn__beatLength();
+    [[deprecated]] float& dyn__beatLength();
     // Get instance field reference: private System.Single _length
-    float& dyn__length();
+    [[deprecated]] float& dyn__length();
     // Get instance field reference: private UnityEngine.Renderer _timing
-    ::UnityEngine::Renderer*& dyn__timing();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__timing();
     // Get instance field reference: private UnityEngine.Color _waitingColor
-    ::UnityEngine::Color& dyn__waitingColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__waitingColor();
     // Get instance field reference: private System.Single _previewValue
-    float& dyn__previewValue();
+    [[deprecated]] float& dyn__previewValue();
     // Get instance field reference: private System.Single _fadeValue
-    float& dyn__fadeValue();
+    [[deprecated]] float& dyn__fadeValue();
     // Get instance field reference: private System.Single _timingValue
-    float& dyn__timingValue();
+    [[deprecated]] float& dyn__timingValue();
     // Get instance field reference: private UnityEngine.GameObject _playButtonIcon
-    ::UnityEngine::GameObject*& dyn__playButtonIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__playButtonIcon();
     // Get instance field reference: private UnityEngine.GameObject _stopButtonIcon
-    ::UnityEngine::GameObject*& dyn__stopButtonIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__stopButtonIcon();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // Get instance field reference: private System.Single _progress
-    float& dyn__progress();
+    [[deprecated]] float& dyn__progress();
     // Get instance field reference: private System.Int32 _loops
-    int& dyn__loops();
+    [[deprecated]] int& dyn__loops();
     // Get instance field reference: private System.Boolean _muted
-    bool& dyn__muted();
+    [[deprecated]] bool& dyn__muted();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlockSlider
-    ::UnityEngine::MaterialPropertyBlock*& dyn__propBlockSlider();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlockSlider();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlockTiming
-    ::UnityEngine::MaterialPropertyBlock*& dyn__propBlockTiming();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlockTiming();
     // public UnityEngine.Renderer get_Slider()
-    // Offset: 0x8A7F48
+    // Offset: 0x197A32C
     ::UnityEngine::Renderer* get_Slider();
     // public UnityEngine.Renderer get_Timing()
-    // Offset: 0x8A7F50
+    // Offset: 0x197A334
     ::UnityEngine::Renderer* get_Timing();
     // public UnityEngine.MaterialPropertyBlock get_SliderMaterialPropertyBlock()
-    // Offset: 0x8A7F58
+    // Offset: 0x197A33C
     ::UnityEngine::MaterialPropertyBlock* get_SliderMaterialPropertyBlock();
     // public UnityEngine.MaterialPropertyBlock get_TimingMaterialPropertyBlock()
-    // Offset: 0x8A7F60
+    // Offset: 0x197A344
     ::UnityEngine::MaterialPropertyBlock* get_TimingMaterialPropertyBlock();
     // public UnityEngine.GameObject get_PlayButtonIcon()
-    // Offset: 0x8A7F68
+    // Offset: 0x197A34C
     ::UnityEngine::GameObject* get_PlayButtonIcon();
     // public UnityEngine.GameObject get_StopButtonIcon()
-    // Offset: 0x8A7F70
+    // Offset: 0x197A354
     ::UnityEngine::GameObject* get_StopButtonIcon();
     // protected System.Void Awake()
-    // Offset: 0x8A7F78
+    // Offset: 0x197A35C
     void Awake();
     // public System.Void SetPlaybackActive(System.Boolean playing)
-    // Offset: 0x8A8468
+    // Offset: 0x197A84C
     void SetPlaybackActive(bool playing);
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x8A825C
+    // Offset: 0x197A640
     void SetColor(::UnityEngine::Color color);
     // System.Void SetLoopPlayer(VROSC.LoopPlayer loopPlayer)
-    // Offset: 0x8A8564
+    // Offset: 0x197A948
     void SetLoopPlayer(::VROSC::LoopPlayer* loopPlayer);
     // protected System.Void Update()
-    // Offset: 0x8A860C
+    // Offset: 0x197A9F0
     void Update();
     // private System.Void UpdateRenderers()
-    // Offset: 0x8A838C
+    // Offset: 0x197A770
     void UpdateRenderers();
     // private System.Void CreatePropBlock()
-    // Offset: 0x8A7FEC
+    // Offset: 0x197A3D0
     void CreatePropBlock();
     // private System.Void SetFadeValue(System.Single value, System.Single fadeValue)
-    // Offset: 0x8A810C
+    // Offset: 0x197A4F0
     void SetFadeValue(float value, float fadeValue);
     // private System.Void SetApproachingValue(System.Single value)
-    // Offset: 0x8A87A4
+    // Offset: 0x197AB88
     void SetApproachingValue(float value);
     // private System.Void UpdateIcons(System.Boolean blink, System.Boolean showPlayButton)
-    // Offset: 0x8A849C
+    // Offset: 0x197A880
     void UpdateIcons(bool blink, bool showPlayButton);
     // public System.Void SetMuted(System.Boolean isMuted)
-    // Offset: 0x8A88F4
+    // Offset: 0x197ACD8
     void SetMuted(bool isMuted);
     // public System.Void .ctor()
-    // Offset: 0x8A8908
+    // Offset: 0x197ACEC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

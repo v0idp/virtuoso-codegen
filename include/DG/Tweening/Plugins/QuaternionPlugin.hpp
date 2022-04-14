@@ -57,31 +57,31 @@ namespace DG::Tweening::Plugins {
   class QuaternionPlugin : public ::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions> {
     public:
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> t)
-    // Offset: 0x10A0B4C
+    // Offset: 0x15E3174
     void Reset(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* t);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> t, System.Boolean isRelative)
-    // Offset: 0x10A0B50
+    // Offset: 0x15E3178
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* t, bool isRelative);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> t, UnityEngine.Vector3 fromValue, System.Boolean setImmediately)
-    // Offset: 0x10A0DDC
+    // Offset: 0x15E3404
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* t, ::UnityEngine::Vector3 fromValue, bool setImmediately);
     // public UnityEngine.Vector3 ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> t, UnityEngine.Quaternion value)
-    // Offset: 0x10A0E9C
+    // Offset: 0x15E34C4
     ::UnityEngine::Vector3 ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* t, ::UnityEngine::Quaternion value);
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> t)
-    // Offset: 0x10A0EC8
+    // Offset: 0x15E34F0
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* t);
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> t)
-    // Offset: 0x10A0F00
+    // Offset: 0x15E3528
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* t);
     // public System.Single GetSpeedBasedDuration(DG.Tweening.Plugins.Options.QuaternionOptions options, System.Single unitsXSecond, UnityEngine.Vector3 changeValue)
-    // Offset: 0x10A108C
+    // Offset: 0x15E36B4
     float GetSpeedBasedDuration(::DG::Tweening::Plugins::Options::QuaternionOptions options, float unitsXSecond, ::UnityEngine::Vector3 changeValue);
     // public System.Void EvaluateAndApply(DG.Tweening.Plugins.Options.QuaternionOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<UnityEngine.Quaternion> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Quaternion> setter, System.Single elapsed, UnityEngine.Vector3 startValue, UnityEngine.Vector3 changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x10A10C8
+    // Offset: 0x15E36F0
     void EvaluateAndApply(::DG::Tweening::Plugins::Options::QuaternionOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<::UnityEngine::Quaternion>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Quaternion>* setter, float elapsed, ::UnityEngine::Vector3 startValue, ::UnityEngine::Vector3 changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // public System.Void .ctor()
-    // Offset: 0x10A13BC
+    // Offset: 0x15E39E4
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
     // Base method: System.Void Object::.ctor()

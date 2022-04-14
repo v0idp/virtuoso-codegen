@@ -42,11 +42,11 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: readonly System.Int32 _count
-    int& dyn__count();
+    [[deprecated]] int& dyn__count();
     // Get instance field reference: readonly System.Int32 _startIndex
-    int& dyn__startIndex();
+    [[deprecated]] int& dyn__startIndex();
     // System.Void .ctor(System.Int32 count, System.Int32 startIndex)
-    // Offset: 0x111B89C
+    // Offset: 0x1693108
     // ABORTED: conflicts with another method.  InputState(int count, int startIndex);
   }; // System.IO.Compression.DeflateInput/System.IO.Compression.InputState
   #pragma pack(pop)

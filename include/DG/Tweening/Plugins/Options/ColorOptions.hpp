@@ -48,9 +48,9 @@ namespace DG::Tweening::Plugins::Options {
       return alphaOnly;
     }
     // Get instance field reference: public System.Boolean alphaOnly
-    bool& dyn_alphaOnly();
+    [[deprecated]] bool& dyn_alphaOnly();
     // public System.Void Reset()
-    // Offset: 0x1092F5C
+    // Offset: 0x15D5584
     void Reset();
   }; // DG.Tweening.Plugins.Options.ColorOptions
   #pragma pack(pop)

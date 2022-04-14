@@ -29,12 +29,12 @@ namespace VROSC {
   class UIInteractable : public ::VROSC::Clickable {
     public:
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x139EBB0
+    // Offset: 0x1912500
     // Implemented from: VROSC.Clickable
     // Base method: System.Boolean Clickable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x139A2B4
+    // Offset: 0x191023C
     // Implemented from: VROSC.Clickable
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()

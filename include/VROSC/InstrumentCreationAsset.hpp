@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InstrumentCreationAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.InstrumentCreationBehaviour template
     // Size: 0x8
     // Offset: 0x18
@@ -66,9 +58,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.InstrumentCreationBehaviour template
-    ::VROSC::InstrumentCreationBehaviour*& dyn_template();
+    [[deprecated]] ::VROSC::InstrumentCreationBehaviour*& dyn_template();
     // public System.Void .ctor()
-    // Offset: 0x1384684
+    // Offset: 0x1947538
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -80,7 +72,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<InstrumentCreationAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0x1384558
+    // Offset: 0x194740C
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

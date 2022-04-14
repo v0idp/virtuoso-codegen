@@ -90,58 +90,58 @@ namespace Firebase::Firestore {
     // Set static field: static private Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionArgumentDelegate argumentOutOfRangeDelegate
     static void _set_argumentOutOfRangeDelegate(::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionArgumentDelegate* value);
     // static private System.Void .cctor()
-    // Offset: 0xC43080
+    // Offset: 0xD67DCC
     static void _cctor();
     // static public System.Void SWIGRegisterExceptionCallbacks_FirestoreCpp(Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate applicationDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate arithmeticDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate divideByZeroDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate indexOutOfRangeDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate invalidCastDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate invalidOperationDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate ioDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate nullReferenceDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate outOfMemoryDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate overflowDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate systemExceptionDelegate)
-    // Offset: 0xC43458
+    // Offset: 0xD681A4
     static void SWIGRegisterExceptionCallbacks_FirestoreCpp(::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* applicationDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* arithmeticDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* divideByZeroDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* indexOutOfRangeDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidCastDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidOperationDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* ioDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* nullReferenceDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* outOfMemoryDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* overflowDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* systemExceptionDelegate);
     // static public System.Void SWIGRegisterExceptionCallbacksArgument_FirestoreCpp(Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionArgumentDelegate argumentDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionArgumentDelegate argumentNullDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionArgumentDelegate argumentOutOfRangeDelegate)
-    // Offset: 0xC435CC
+    // Offset: 0xD68318
     static void SWIGRegisterExceptionCallbacksArgument_FirestoreCpp(::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionArgumentDelegate* argumentDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionArgumentDelegate* argumentNullDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionArgumentDelegate* argumentOutOfRangeDelegate);
     // static private System.Void SetPendingApplicationException(System.String message)
-    // Offset: 0xC42978
+    // Offset: 0xD676C4
     static void SetPendingApplicationException(::StringW message);
     // static private System.Void SetPendingArithmeticException(System.String message)
-    // Offset: 0xC429F0
+    // Offset: 0xD6773C
     static void SetPendingArithmeticException(::StringW message);
     // static private System.Void SetPendingDivideByZeroException(System.String message)
-    // Offset: 0xC42A68
+    // Offset: 0xD677B4
     static void SetPendingDivideByZeroException(::StringW message);
     // static private System.Void SetPendingIndexOutOfRangeException(System.String message)
-    // Offset: 0xC42AE0
+    // Offset: 0xD6782C
     static void SetPendingIndexOutOfRangeException(::StringW message);
     // static private System.Void SetPendingInvalidCastException(System.String message)
-    // Offset: 0xC42B58
+    // Offset: 0xD678A4
     static void SetPendingInvalidCastException(::StringW message);
     // static private System.Void SetPendingInvalidOperationException(System.String message)
-    // Offset: 0xC42BD0
+    // Offset: 0xD6791C
     static void SetPendingInvalidOperationException(::StringW message);
     // static private System.Void SetPendingIOException(System.String message)
-    // Offset: 0xC42C48
+    // Offset: 0xD67994
     static void SetPendingIOException(::StringW message);
     // static private System.Void SetPendingNullReferenceException(System.String message)
-    // Offset: 0xC42CC0
+    // Offset: 0xD67A0C
     static void SetPendingNullReferenceException(::StringW message);
     // static private System.Void SetPendingOutOfMemoryException(System.String message)
-    // Offset: 0xC42D38
+    // Offset: 0xD67A84
     static void SetPendingOutOfMemoryException(::StringW message);
     // static private System.Void SetPendingOverflowException(System.String message)
-    // Offset: 0xC42DB0
+    // Offset: 0xD67AFC
     static void SetPendingOverflowException(::StringW message);
     // static private System.Void SetPendingSystemException(System.String message)
-    // Offset: 0xC42E28
+    // Offset: 0xD67B74
     static void SetPendingSystemException(::StringW message);
     // static private System.Void SetPendingArgumentException(System.String message, System.String paramName)
-    // Offset: 0xC42EA0
+    // Offset: 0xD67BEC
     static void SetPendingArgumentException(::StringW message, ::StringW paramName);
     // static private System.Void SetPendingArgumentNullException(System.String message, System.String paramName)
-    // Offset: 0xC42F20
+    // Offset: 0xD67C6C
     static void SetPendingArgumentNullException(::StringW message, ::StringW paramName);
     // static private System.Void SetPendingArgumentOutOfRangeException(System.String message, System.String paramName)
-    // Offset: 0xC42FD0
+    // Offset: 0xD67D1C
     static void SetPendingArgumentOutOfRangeException(::StringW message, ::StringW paramName);
     // public System.Void .ctor()
-    // Offset: 0xC39734
+    // Offset: 0xD5CC7C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

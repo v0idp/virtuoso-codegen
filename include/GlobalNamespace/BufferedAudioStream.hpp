@@ -38,15 +38,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class BufferedAudioStream : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AudioSource audio
     // Size: 0x8
     // Offset: 0x10
@@ -109,30 +101,30 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single playbackDelayTimeSeconds
     static void _set_playbackDelayTimeSeconds(float value);
     // Get instance field reference: private UnityEngine.AudioSource audio
-    ::UnityEngine::AudioSource*& dyn_audio();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audio();
     // Get instance field reference: private System.Single[] audioBuffer
-    ::ArrayW<float>& dyn_audioBuffer();
+    [[deprecated]] ::ArrayW<float>& dyn_audioBuffer();
     // Get instance field reference: private System.Int32 writePos
-    int& dyn_writePos();
+    [[deprecated]] int& dyn_writePos();
     // Get instance field reference: private System.Single playbackDelayRemaining
-    float& dyn_playbackDelayRemaining();
+    [[deprecated]] float& dyn_playbackDelayRemaining();
     // Get instance field reference: private System.Single remainingBufferTime
-    float& dyn_remainingBufferTime();
+    [[deprecated]] float& dyn_remainingBufferTime();
     // public System.Void .ctor(UnityEngine.AudioSource audio)
-    // Offset: 0x7B63C8
+    // Offset: 0x8FC7A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BufferedAudioStream* New_ctor(::UnityEngine::AudioSource* audio) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BufferedAudioStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BufferedAudioStream*, creationType>(audio)));
     }
     // public System.Void Update()
-    // Offset: 0x7B64E0
+    // Offset: 0x8FC8C0
     void Update();
     // private System.Void Stop()
-    // Offset: 0x7B6490
+    // Offset: 0x8FC870
     void Stop();
     // public System.Void AddData(System.Single[] samples)
-    // Offset: 0x7B66D4
+    // Offset: 0x8FCAB4
     void AddData(::ArrayW<float> samples);
   }; // BufferedAudioStream
   #pragma pack(pop)

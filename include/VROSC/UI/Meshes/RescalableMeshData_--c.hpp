@@ -53,22 +53,22 @@ namespace VROSC::UI::Meshes {
     // Set static field: static public System.Func`2<VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.VertexData,System.Single> <>9__14_3
     static void _set_$$9__14_3(::System::Func_2<::VROSC::UI::Meshes::RescalableMeshData::VertexData*, float>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1345310
+    // Offset: 0x8D0260
     static void _cctor();
     // System.Single <Analyze>b__14_0(VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.VertexData o)
-    // Offset: 0x1345378
+    // Offset: 0x8D02C8
     float $Analyze$b__14_0(::VROSC::UI::Meshes::RescalableMeshData::VertexData* o);
     // System.Single <Analyze>b__14_1(VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.VertexData o)
-    // Offset: 0x1345390
+    // Offset: 0x8D02E0
     float $Analyze$b__14_1(::VROSC::UI::Meshes::RescalableMeshData::VertexData* o);
     // System.Single <Analyze>b__14_2(VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.VertexData o)
-    // Offset: 0x13453A8
+    // Offset: 0x8D02F8
     float $Analyze$b__14_2(::VROSC::UI::Meshes::RescalableMeshData::VertexData* o);
     // System.Single <Analyze>b__14_3(VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.VertexData o)
-    // Offset: 0x13453C0
+    // Offset: 0x8D0310
     float $Analyze$b__14_3(::VROSC::UI::Meshes::RescalableMeshData::VertexData* o);
     // public System.Void .ctor()
-    // Offset: 0x1345370
+    // Offset: 0x8D02C0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

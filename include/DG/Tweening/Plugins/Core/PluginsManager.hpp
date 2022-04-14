@@ -151,7 +151,7 @@ namespace DG::Tweening::Plugins::Core {
       return ::il2cpp_utils::RunMethodRethrow<::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method);
     }
     // static System.Void PurgeAll()
-    // Offset: 0x1095284
+    // Offset: 0x15D78AC
     static void PurgeAll();
   }; // DG.Tweening.Plugins.Core.PluginsManager
   #pragma pack(pop)

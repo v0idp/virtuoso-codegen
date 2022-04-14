@@ -44,14 +44,14 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 start
-    int& dyn_start();
+    [[deprecated]] int& dyn_start();
     // Get instance field reference: public System.Int32 length
-    int& dyn_length();
+    [[deprecated]] int& dyn_length();
     // public System.Int32 get_end()
-    // Offset: 0x9D47C0
+    // Offset: 0xBC9568
     int get_end();
     // public System.Void .ctor(System.Int32 start, System.Int32 length)
-    // Offset: 0x9D47CC
+    // Offset: 0xBC9574
     // ABORTED: conflicts with another method.  RangeInt(int start, int length);
   }; // UnityEngine.RangeInt
   #pragma pack(pop)

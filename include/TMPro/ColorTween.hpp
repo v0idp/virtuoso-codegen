@@ -89,7 +89,7 @@ namespace TMPro {
       // Set static field: static public TMPro.ColorTween/TMPro.ColorTweenMode Alpha
       static void _set_Alpha(::TMPro::ColorTween::ColorTweenMode value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // TMPro.ColorTween/TMPro.ColorTweenMode
     #pragma pack(pop)
     static check_size<sizeof(ColorTween::ColorTweenMode), 0 + sizeof(int)> __TMPro_ColorTween_ColorTweenModeSizeCheck;
@@ -143,61 +143,61 @@ namespace TMPro {
       return *reinterpret_cast<::TMPro::ITweenValue*>(this);
     }
     // Get instance field reference: private TMPro.ColorTween/TMPro.ColorTweenCallback m_Target
-    ::TMPro::ColorTween::ColorTweenCallback*& dyn_m_Target();
+    [[deprecated]] ::TMPro::ColorTween::ColorTweenCallback*& dyn_m_Target();
     // Get instance field reference: private UnityEngine.Color m_StartColor
-    ::UnityEngine::Color& dyn_m_StartColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_m_StartColor();
     // Get instance field reference: private UnityEngine.Color m_TargetColor
-    ::UnityEngine::Color& dyn_m_TargetColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_m_TargetColor();
     // Get instance field reference: private TMPro.ColorTween/TMPro.ColorTweenMode m_TweenMode
-    ::TMPro::ColorTween::ColorTweenMode& dyn_m_TweenMode();
+    [[deprecated]] ::TMPro::ColorTween::ColorTweenMode& dyn_m_TweenMode();
     // Get instance field reference: private System.Single m_Duration
-    float& dyn_m_Duration();
+    [[deprecated]] float& dyn_m_Duration();
     // Get instance field reference: private System.Boolean m_IgnoreTimeScale
-    bool& dyn_m_IgnoreTimeScale();
+    [[deprecated]] bool& dyn_m_IgnoreTimeScale();
     // public UnityEngine.Color get_startColor()
-    // Offset: 0xA4709C
+    // Offset: 0xC28CAC
     ::UnityEngine::Color get_startColor();
     // public System.Void set_startColor(UnityEngine.Color value)
-    // Offset: 0xA470A8
+    // Offset: 0xC28CB8
     void set_startColor(::UnityEngine::Color value);
     // public UnityEngine.Color get_targetColor()
-    // Offset: 0xA470B4
+    // Offset: 0xC28CC4
     ::UnityEngine::Color get_targetColor();
     // public System.Void set_targetColor(UnityEngine.Color value)
-    // Offset: 0xA470C0
+    // Offset: 0xC28CD0
     void set_targetColor(::UnityEngine::Color value);
     // public TMPro.ColorTween/TMPro.ColorTweenMode get_tweenMode()
-    // Offset: 0xA470CC
+    // Offset: 0xC28CDC
     ::TMPro::ColorTween::ColorTweenMode get_tweenMode();
     // public System.Void set_tweenMode(TMPro.ColorTween/TMPro.ColorTweenMode value)
-    // Offset: 0xA470D4
+    // Offset: 0xC28CE4
     void set_tweenMode(::TMPro::ColorTween::ColorTweenMode value);
     // public System.Single get_duration()
-    // Offset: 0xA470DC
+    // Offset: 0xC28CEC
     float get_duration();
     // public System.Void set_duration(System.Single value)
-    // Offset: 0xA470E4
+    // Offset: 0xC28CF4
     void set_duration(float value);
     // public System.Boolean get_ignoreTimeScale()
-    // Offset: 0xA470EC
+    // Offset: 0xC28CFC
     bool get_ignoreTimeScale();
     // public System.Void set_ignoreTimeScale(System.Boolean value)
-    // Offset: 0xA470F4
+    // Offset: 0xC28D04
     void set_ignoreTimeScale(bool value);
     // public System.Void TweenValue(System.Single floatPercentage)
-    // Offset: 0xA47100
+    // Offset: 0xC28D10
     void TweenValue(float floatPercentage);
     // public System.Void AddOnChangedCallback(UnityEngine.Events.UnityAction`1<UnityEngine.Color> callback)
-    // Offset: 0xA471D4
+    // Offset: 0xC28DE4
     void AddOnChangedCallback(::UnityEngine::Events::UnityAction_1<::UnityEngine::Color>* callback);
     // public System.Boolean GetIgnoreTimescale()
-    // Offset: 0xA4726C
+    // Offset: 0xC28E7C
     bool GetIgnoreTimescale();
     // public System.Single GetDuration()
-    // Offset: 0xA47274
+    // Offset: 0xC28E84
     float GetDuration();
     // public System.Boolean ValidTarget()
-    // Offset: 0xA471C4
+    // Offset: 0xC28DD4
     bool ValidTarget();
   }; // TMPro.ColorTween
   #pragma pack(pop)

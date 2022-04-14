@@ -48,15 +48,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SettingsPanelUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UISlideToggle _internalSoundsButton
     // Size: 0x8
     // Offset: 0x18
@@ -91,44 +83,44 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UISlideToggle _internalSoundsButton
-    ::VROSC::UISlideToggle*& dyn__internalSoundsButton();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__internalSoundsButton();
     // Get instance field reference: private VROSC.UISlideToggle _midiButton
-    ::VROSC::UISlideToggle*& dyn__midiButton();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__midiButton();
     // Get instance field reference: private TMPro.TextMeshPro _midiDownloadInfo
-    ::TMPro::TextMeshPro*& dyn__midiDownloadInfo();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__midiDownloadInfo();
     // Get instance field reference: private VROSC.BeatCounterUI _beatCounterUI
-    ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
+    [[deprecated]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
     // Get instance field reference: private VROSC.UIButton _allNotesOffButton
-    ::VROSC::UIButton*& dyn__allNotesOffButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__allNotesOffButton();
     // public System.Boolean get_IsOpen()
-    // Offset: 0x13B2F50
+    // Offset: 0x1925DF4
     bool get_IsOpen();
     // protected System.Void Awake()
-    // Offset: 0x13B2F74
+    // Offset: 0x1925E18
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13B32A4
+    // Offset: 0x1926148
     void OnDestroy();
     // private System.Void OnEnable()
-    // Offset: 0x13B34FC
+    // Offset: 0x19263A0
     void OnEnable();
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x13B3550
+    // Offset: 0x19263F4
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // private System.Void MidiButtonPressed(VROSC.InputDevice arg1, System.Boolean arg2)
-    // Offset: 0x13B361C
+    // Offset: 0x19264E8
     void MidiButtonPressed(::VROSC::InputDevice* arg1, bool arg2);
     // private System.Void InternalSoundsButtonPressed(VROSC.InputDevice arg1, System.Boolean arg2)
-    // Offset: 0x13B375C
+    // Offset: 0x1926628
     void InternalSoundsButtonPressed(::VROSC::InputDevice* arg1, bool arg2);
     // private System.Void RefreshSoundMidiState(System.Boolean useExternal)
-    // Offset: 0x13B3674
+    // Offset: 0x1926540
     void RefreshSoundMidiState(bool useExternal);
     // private System.Void AllNotesOffButtonPressed()
-    // Offset: 0x13B37BC
+    // Offset: 0x1926688
     void AllNotesOffButtonPressed();
     // public System.Void .ctor()
-    // Offset: 0x13B3814
+    // Offset: 0x19266E0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -38,15 +38,7 @@ namespace MiniJSON {
   // [TokenAttribute] Offset: FFFFFFFF
   class Json::Serializer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Text.StringBuilder builder
     // Size: 0x8
     // Offset: 0x10
@@ -59,27 +51,27 @@ namespace MiniJSON {
       return builder;
     }
     // Get instance field reference: private System.Text.StringBuilder builder
-    ::System::Text::StringBuilder*& dyn_builder();
+    [[deprecated]] ::System::Text::StringBuilder*& dyn_builder();
     // static public System.String Serialize(System.Object obj)
-    // Offset: 0x13D2A8C
+    // Offset: 0x195A7A8
     static ::StringW Serialize(::Il2CppObject* obj);
     // private System.Void SerializeValue(System.Object value)
-    // Offset: 0x13D2B04
+    // Offset: 0x195A820
     void SerializeValue(::Il2CppObject* value);
     // private System.Void SerializeObject(System.Collections.IDictionary obj)
-    // Offset: 0x13D32C0
+    // Offset: 0x195AFDC
     void SerializeObject(::System::Collections::IDictionary* obj);
     // private System.Void SerializeArray(System.Collections.IList anArray)
-    // Offset: 0x13D2FB8
+    // Offset: 0x195ACD4
     void SerializeArray(::System::Collections::IList* anArray);
     // private System.Void SerializeString(System.String str)
-    // Offset: 0x13D2CF0
+    // Offset: 0x195AA0C
     void SerializeString(::StringW str);
     // private System.Void SerializeOther(System.Object value)
-    // Offset: 0x13D3700
+    // Offset: 0x195B41C
     void SerializeOther(::Il2CppObject* value);
     // private System.Void .ctor()
-    // Offset: 0x13D2A24
+    // Offset: 0x195A740
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

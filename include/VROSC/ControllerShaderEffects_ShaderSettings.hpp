@@ -73,42 +73,42 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly UnityEngine.Color <Trigger>k__BackingField
-    ::UnityEngine::Color& dyn_$Trigger$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Trigger$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Grip>k__BackingField
-    ::UnityEngine::Color& dyn_$Grip$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Grip$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Top>k__BackingField
-    ::UnityEngine::Color& dyn_$Top$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Top$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Bottom>k__BackingField
-    ::UnityEngine::Color& dyn_$Bottom$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Bottom$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Menu>k__BackingField
-    ::UnityEngine::Color& dyn_$Menu$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Menu$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Stick>k__BackingField
-    ::UnityEngine::Color& dyn_$Stick$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Stick$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Special>k__BackingField
-    ::UnityEngine::Color& dyn_$Special$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Special$k__BackingField();
     // public UnityEngine.Color get_Trigger()
-    // Offset: 0x1361144
+    // Offset: 0x95DC38
     ::UnityEngine::Color get_Trigger();
     // public UnityEngine.Color get_Grip()
-    // Offset: 0x1361150
+    // Offset: 0x95DC44
     ::UnityEngine::Color get_Grip();
     // public UnityEngine.Color get_Top()
-    // Offset: 0x136115C
+    // Offset: 0x95DC50
     ::UnityEngine::Color get_Top();
     // public UnityEngine.Color get_Bottom()
-    // Offset: 0x1361168
+    // Offset: 0x95DC5C
     ::UnityEngine::Color get_Bottom();
     // public UnityEngine.Color get_Menu()
-    // Offset: 0x1361174
+    // Offset: 0x95DC68
     ::UnityEngine::Color get_Menu();
     // public UnityEngine.Color get_Stick()
-    // Offset: 0x1361180
+    // Offset: 0x95DC74
     ::UnityEngine::Color get_Stick();
     // public UnityEngine.Color get_Special()
-    // Offset: 0x136118C
+    // Offset: 0x95DC80
     ::UnityEngine::Color get_Special();
     // public System.Void .ctor(UnityEngine.Color trigger, UnityEngine.Color grip, UnityEngine.Color top, UnityEngine.Color bottom, UnityEngine.Color menu, UnityEngine.Color stick, UnityEngine.Color special)
-    // Offset: 0x1361198
+    // Offset: 0x95DC8C
     // ABORTED: conflicts with another method.  ShaderSettings(::UnityEngine::Color trigger, ::UnityEngine::Color grip, ::UnityEngine::Color top, ::UnityEngine::Color bottom, ::UnityEngine::Color menu, ::UnityEngine::Color stick, ::UnityEngine::Color special);
   }; // VROSC.ControllerShaderEffects/VROSC.ShaderSettings
   #pragma pack(pop)

@@ -51,15 +51,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::HighlightSpawnable::$CoHighlight$d__14
     class $CoHighlight$d__14;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Grabable _grabable
     // Size: 0x8
     // Offset: 0x18
@@ -126,45 +118,45 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Grabable _grabable
-    ::VROSC::Grabable*& dyn__grabable();
+    [[deprecated]] ::VROSC::Grabable*& dyn__grabable();
     // Get instance field reference: private UnityEngine.AnimationCurve _highlightAnimationCurve
-    ::UnityEngine::AnimationCurve*& dyn__highlightAnimationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__highlightAnimationCurve();
     // Get instance field reference: private System.Single _highlightAnimationDuration
-    float& dyn__highlightAnimationDuration();
+    [[deprecated]] float& dyn__highlightAnimationDuration();
     // Get instance field reference: private System.Single _hoverLengthToAnimate
-    float& dyn__hoverLengthToAnimate();
+    [[deprecated]] float& dyn__hoverLengthToAnimate();
     // Get instance field reference: private System.Single _hoverScale
-    float& dyn__hoverScale();
+    [[deprecated]] float& dyn__hoverScale();
     // Get instance field reference: private UnityEngine.GameObject _hint
-    ::UnityEngine::GameObject*& dyn__hint();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__hint();
     // Get instance field reference: private UnityEngine.Vector3 _startScale
-    ::UnityEngine::Vector3& dyn__startScale();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__startScale();
     // Get instance field reference: private System.Single _hoveringTimer
-    float& dyn__hoveringTimer();
+    [[deprecated]] float& dyn__hoveringTimer();
     // Get instance field reference: private UnityEngine.Coroutine _highlightRoutine
-    ::UnityEngine::Coroutine*& dyn__highlightRoutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn__highlightRoutine();
     // Get instance field reference: private System.Boolean _isHighlighted
-    bool& dyn__isHighlighted();
+    [[deprecated]] bool& dyn__isHighlighted();
     // private System.Void Awake()
-    // Offset: 0x89F548
+    // Offset: 0x1941A00
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0x89F584
+    // Offset: 0x1941A3C
     void OnEnable();
     // private System.Void Update()
-    // Offset: 0x89F668
+    // Offset: 0x1941B20
     void Update();
     // private System.Void Highlight(System.Boolean highlight)
-    // Offset: 0x89F6F0
+    // Offset: 0x1941BA8
     void Highlight(bool highlight);
     // private System.Collections.IEnumerator CoHighlight(System.Boolean highlight)
-    // Offset: 0x89F760
+    // Offset: 0x1941C18
     ::System::Collections::IEnumerator* CoHighlight(bool highlight);
     // private System.Void ShowHint(System.Boolean show)
-    // Offset: 0x89F5C8
+    // Offset: 0x1941A80
     void ShowHint(bool show);
     // public System.Void .ctor()
-    // Offset: 0x89F7E0
+    // Offset: 0x1941C98
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

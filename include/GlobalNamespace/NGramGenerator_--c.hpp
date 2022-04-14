@@ -76,37 +76,37 @@ namespace GlobalNamespace {
     // Set static field: static public System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.Int32>,System.Int32> <>9__9_2
     static void _set_$$9__9_2(::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::StringW, int>, int>* value);
     // static private System.Void .cctor()
-    // Offset: 0x13DCEAC
+    // Offset: 0x1964BF0
     static void _cctor();
     // System.Int32 <OrderDictionary>b__6_0(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> entry)
-    // Offset: 0x13DCF14
+    // Offset: 0x1964C58
     int $OrderDictionary$b__6_0(::System::Collections::Generic::KeyValuePair_2<::StringW, int> entry);
     // System.String <OrderDictionary>b__6_1(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> pair)
-    // Offset: 0x13DCF54
+    // Offset: 0x1964C98
     ::StringW $OrderDictionary$b__6_1(::System::Collections::Generic::KeyValuePair_2<::StringW, int> pair);
     // System.Int32 <OrderDictionary>b__6_2(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> pair)
-    // Offset: 0x13DCF94
+    // Offset: 0x1964CD8
     int $OrderDictionary$b__6_2(::System::Collections::Generic::KeyValuePair_2<::StringW, int> pair);
     // System.Int32 <GenerateBiGrams>b__8_0(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> entry)
-    // Offset: 0x13DCFD4
+    // Offset: 0x1964D18
     int $GenerateBiGrams$b__8_0(::System::Collections::Generic::KeyValuePair_2<::StringW, int> entry);
     // System.String <GenerateBiGrams>b__8_1(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> pair)
-    // Offset: 0x13DD014
+    // Offset: 0x1964D58
     ::StringW $GenerateBiGrams$b__8_1(::System::Collections::Generic::KeyValuePair_2<::StringW, int> pair);
     // System.Int32 <GenerateBiGrams>b__8_2(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> pair)
-    // Offset: 0x13DD054
+    // Offset: 0x1964D98
     int $GenerateBiGrams$b__8_2(::System::Collections::Generic::KeyValuePair_2<::StringW, int> pair);
     // System.Int32 <GenerateLevenshteinDict>b__9_0(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> entry)
-    // Offset: 0x13DD094
+    // Offset: 0x1964DD8
     int $GenerateLevenshteinDict$b__9_0(::System::Collections::Generic::KeyValuePair_2<::StringW, int> entry);
     // System.String <GenerateLevenshteinDict>b__9_1(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> pair)
-    // Offset: 0x13DD0D4
+    // Offset: 0x1964E18
     ::StringW $GenerateLevenshteinDict$b__9_1(::System::Collections::Generic::KeyValuePair_2<::StringW, int> pair);
     // System.Int32 <GenerateLevenshteinDict>b__9_2(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> pair)
-    // Offset: 0x13DD114
+    // Offset: 0x1964E58
     int $GenerateLevenshteinDict$b__9_2(::System::Collections::Generic::KeyValuePair_2<::StringW, int> pair);
     // public System.Void .ctor()
-    // Offset: 0x13DCF0C
+    // Offset: 0x1964C50
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

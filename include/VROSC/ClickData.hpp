@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ClickData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly VROSC.InputDevice <Device>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -72,27 +64,27 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly VROSC.InputDevice <Device>k__BackingField
-    ::VROSC::InputDevice*& dyn_$Device$k__BackingField();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_$Device$k__BackingField();
     // Get instance field reference: private readonly VROSC.TriggerButton <Button>k__BackingField
-    ::VROSC::TriggerButton& dyn_$Button$k__BackingField();
+    [[deprecated]] ::VROSC::TriggerButton& dyn_$Button$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Vector3 <Position>k__BackingField
-    ::UnityEngine::Vector3& dyn_$Position$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$Position$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <PointedAt>k__BackingField
-    bool& dyn_$PointedAt$k__BackingField();
+    [[deprecated]] bool& dyn_$PointedAt$k__BackingField();
     // public VROSC.InputDevice get_Device()
-    // Offset: 0x1330EE4
+    // Offset: 0x945B20
     ::VROSC::InputDevice* get_Device();
     // public VROSC.TriggerButton get_Button()
-    // Offset: 0x1330EEC
+    // Offset: 0x945B28
     ::VROSC::TriggerButton get_Button();
     // public UnityEngine.Vector3 get_Position()
-    // Offset: 0x1330EF4
+    // Offset: 0x945B30
     ::UnityEngine::Vector3 get_Position();
     // public System.Boolean get_PointedAt()
-    // Offset: 0x1330F00
+    // Offset: 0x945B3C
     bool get_PointedAt();
     // public System.Void .ctor(VROSC.InputDevice device, VROSC.TriggerButton button, UnityEngine.Vector3 position, System.Boolean pointedAt)
-    // Offset: 0x1330F08
+    // Offset: 0x945B44
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ClickData* New_ctor(::VROSC::InputDevice* device, ::VROSC::TriggerButton button, ::UnityEngine::Vector3 position, bool pointedAt) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ClickData::.ctor");

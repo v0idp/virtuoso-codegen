@@ -45,16 +45,16 @@ namespace DG::Tweening::Plugins::Core::PathCore {
     // Set static field: static private readonly UnityEngine.Vector3[] _PartialWps
     static void _set__PartialWps(::ArrayW<::UnityEngine::Vector3> value);
     // static private System.Void .cctor()
-    // Offset: 0x1091888
+    // Offset: 0x15D3EB0
     static void _cctor();
     // System.Void SetTimeToLengthTables(DG.Tweening.Plugins.Core.PathCore.Path p, System.Int32 subdivisions)
-    // Offset: 0x1091084
+    // Offset: 0x15D36AC
     void SetTimeToLengthTables(::DG::Tweening::Plugins::Core::PathCore::Path* p, int subdivisions);
     // System.Void SetWaypointsLengths(DG.Tweening.Plugins.Core.PathCore.Path p, System.Int32 subdivisions)
-    // Offset: 0x1091234
+    // Offset: 0x15D385C
     void SetWaypointsLengths(::DG::Tweening::Plugins::Core::PathCore::Path* p, int subdivisions);
     // public System.Void .ctor()
-    // Offset: 0x1091880
+    // Offset: 0x15D3EA8
     // Implemented from: DG.Tweening.Plugins.Core.PathCore.ABSPathDecoder
     // Base method: System.Void ABSPathDecoder::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -64,12 +64,12 @@ namespace DG::Tweening::Plugins::Core::PathCore {
       return THROW_UNLESS((::il2cpp_utils::New<CatmullRomDecoder*, creationType>()));
     }
     // override System.Void FinalizePath(DG.Tweening.Plugins.Core.PathCore.Path p, UnityEngine.Vector3[] wps, System.Boolean isClosedPath)
-    // Offset: 0x1090E54
+    // Offset: 0x15D347C
     // Implemented from: DG.Tweening.Plugins.Core.PathCore.ABSPathDecoder
     // Base method: System.Void ABSPathDecoder::FinalizePath(DG.Tweening.Plugins.Core.PathCore.Path p, UnityEngine.Vector3[] wps, System.Boolean isClosedPath)
     void FinalizePath(::DG::Tweening::Plugins::Core::PathCore::Path* p, ::ArrayW<::UnityEngine::Vector3> wps, bool isClosedPath);
     // override UnityEngine.Vector3 GetPoint(System.Single perc, UnityEngine.Vector3[] wps, DG.Tweening.Plugins.Core.PathCore.Path p, DG.Tweening.Plugins.Core.PathCore.ControlPoint[] controlPoints)
-    // Offset: 0x10915F4
+    // Offset: 0x15D3C1C
     // Implemented from: DG.Tweening.Plugins.Core.PathCore.ABSPathDecoder
     // Base method: UnityEngine.Vector3 ABSPathDecoder::GetPoint(System.Single perc, UnityEngine.Vector3[] wps, DG.Tweening.Plugins.Core.PathCore.Path p, DG.Tweening.Plugins.Core.PathCore.ControlPoint[] controlPoints)
     ::UnityEngine::Vector3 GetPoint(float perc, ::ArrayW<::UnityEngine::Vector3> wps, ::DG::Tweening::Plugins::Core::PathCore::Path* p, ::ArrayW<::DG::Tweening::Plugins::Core::PathCore::ControlPoint> controlPoints);

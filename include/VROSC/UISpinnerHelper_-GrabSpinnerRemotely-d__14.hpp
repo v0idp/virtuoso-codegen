@@ -37,15 +37,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UISpinnerHelper::$GrabSpinnerRemotely$d__14 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -102,42 +94,42 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.UISpinner target
-    ::VROSC::UISpinner*& dyn_target();
+    [[deprecated]] ::VROSC::UISpinner*& dyn_target();
     // Get instance field reference: public VROSC.InputDevice device
-    ::VROSC::InputDevice*& dyn_device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_device();
     // Get instance field reference: public VROSC.UISpinnerHelper <>4__this
-    ::VROSC::UISpinnerHelper*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UISpinnerHelper*& dyn_$$4__this();
     // Get instance field reference: private System.Single <startValue>5__2
-    float& dyn_$startValue$5__2();
+    [[deprecated]] float& dyn_$startValue$5__2();
     // Get instance field reference: private UnityEngine.Vector3 <size>5__3
-    ::UnityEngine::Vector3& dyn_$size$5__3();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$size$5__3();
     // Get instance field reference: private UnityEngine.Vector3 <startpos>5__4
-    ::UnityEngine::Vector3& dyn_$startpos$5__4();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$startpos$5__4();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x1410134
+    // Offset: 0xE821E4
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x141017C
+    // Offset: 0xE8222C
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x140FCDC
+    // Offset: 0xE81D8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISpinnerHelper::$GrabSpinnerRemotely$d__14* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISpinnerHelper::$GrabSpinnerRemotely$d__14::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UISpinnerHelper::$GrabSpinnerRemotely$d__14*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x140FD08
+    // Offset: 0xE81DB8
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x140FD0C
+    // Offset: 0xE81DBC
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x141013C
+    // Offset: 0xE821EC
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.UISpinnerHelper/VROSC.<GrabSpinnerRemotely>d__14
   #pragma pack(pop)

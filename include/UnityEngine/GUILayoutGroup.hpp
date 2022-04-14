@@ -46,15 +46,7 @@ namespace UnityEngine {
   // [VisibleToOtherModulesAttribute] Offset: FFFFFFFF
   class GUILayoutGroup : public ::UnityEngine::GUILayoutEntry {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<UnityEngine.GUILayoutEntry> entries
     // Size: 0x8
     // Offset: 0x48
@@ -187,70 +179,70 @@ namespace UnityEngine {
     // Set static field: static private readonly UnityEngine.GUILayoutEntry none
     static void _set_none(::UnityEngine::GUILayoutEntry* value);
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GUILayoutEntry> entries
-    ::System::Collections::Generic::List_1<::UnityEngine::GUILayoutEntry*>*& dyn_entries();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GUILayoutEntry*>*& dyn_entries();
     // Get instance field reference: public System.Boolean isVertical
-    bool& dyn_isVertical();
+    [[deprecated]] bool& dyn_isVertical();
     // Get instance field reference: public System.Boolean resetCoords
-    bool& dyn_resetCoords();
+    [[deprecated]] bool& dyn_resetCoords();
     // Get instance field reference: public System.Single spacing
-    float& dyn_spacing();
+    [[deprecated]] float& dyn_spacing();
     // Get instance field reference: public System.Boolean sameSize
-    bool& dyn_sameSize();
+    [[deprecated]] bool& dyn_sameSize();
     // Get instance field reference: public System.Boolean isWindow
-    bool& dyn_isWindow();
+    [[deprecated]] bool& dyn_isWindow();
     // Get instance field reference: public System.Int32 windowID
-    int& dyn_windowID();
+    [[deprecated]] int& dyn_windowID();
     // Get instance field reference: private System.Int32 m_Cursor
-    int& dyn_m_Cursor();
+    [[deprecated]] int& dyn_m_Cursor();
     // Get instance field reference: protected System.Int32 m_StretchableCountX
-    int& dyn_m_StretchableCountX();
+    [[deprecated]] int& dyn_m_StretchableCountX();
     // Get instance field reference: protected System.Int32 m_StretchableCountY
-    int& dyn_m_StretchableCountY();
+    [[deprecated]] int& dyn_m_StretchableCountY();
     // Get instance field reference: protected System.Boolean m_UserSpecifiedWidth
-    bool& dyn_m_UserSpecifiedWidth();
+    [[deprecated]] bool& dyn_m_UserSpecifiedWidth();
     // Get instance field reference: protected System.Boolean m_UserSpecifiedHeight
-    bool& dyn_m_UserSpecifiedHeight();
+    [[deprecated]] bool& dyn_m_UserSpecifiedHeight();
     // Get instance field reference: protected System.Single m_ChildMinWidth
-    float& dyn_m_ChildMinWidth();
+    [[deprecated]] float& dyn_m_ChildMinWidth();
     // Get instance field reference: protected System.Single m_ChildMaxWidth
-    float& dyn_m_ChildMaxWidth();
+    [[deprecated]] float& dyn_m_ChildMaxWidth();
     // Get instance field reference: protected System.Single m_ChildMinHeight
-    float& dyn_m_ChildMinHeight();
+    [[deprecated]] float& dyn_m_ChildMinHeight();
     // Get instance field reference: protected System.Single m_ChildMaxHeight
-    float& dyn_m_ChildMaxHeight();
+    [[deprecated]] float& dyn_m_ChildMaxHeight();
     // Get instance field reference: protected System.Int32 m_MarginLeft
-    int& dyn_m_MarginLeft();
+    [[deprecated]] int& dyn_m_MarginLeft();
     // Get instance field reference: protected System.Int32 m_MarginRight
-    int& dyn_m_MarginRight();
+    [[deprecated]] int& dyn_m_MarginRight();
     // Get instance field reference: protected System.Int32 m_MarginTop
-    int& dyn_m_MarginTop();
+    [[deprecated]] int& dyn_m_MarginTop();
     // Get instance field reference: protected System.Int32 m_MarginBottom
-    int& dyn_m_MarginBottom();
+    [[deprecated]] int& dyn_m_MarginBottom();
     // public System.Void ResetCursor()
-    // Offset: 0x128D7AC
+    // Offset: 0x187AD1C
     void ResetCursor();
     // public override System.Int32 get_marginLeft()
-    // Offset: 0x128D4D0
+    // Offset: 0x187AA40
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Int32 GUILayoutEntry::get_marginLeft()
     int get_marginLeft();
     // public override System.Int32 get_marginRight()
-    // Offset: 0x128D4D8
+    // Offset: 0x187AA48
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Int32 GUILayoutEntry::get_marginRight()
     int get_marginRight();
     // public override System.Int32 get_marginTop()
-    // Offset: 0x128D4E0
+    // Offset: 0x187AA50
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Int32 GUILayoutEntry::get_marginTop()
     int get_marginTop();
     // public override System.Int32 get_marginBottom()
-    // Offset: 0x128D4E8
+    // Offset: 0x187AA58
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Int32 GUILayoutEntry::get_marginBottom()
     int get_marginBottom();
     // public System.Void .ctor()
-    // Offset: 0x128D4F0
+    // Offset: 0x187AA60
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -259,42 +251,42 @@ namespace UnityEngine {
       return THROW_UNLESS((::il2cpp_utils::New<GUILayoutGroup*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x128F97C
+    // Offset: 0x187CEEC
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Void GUILayoutEntry::.cctor()
     static void _cctor();
     // public override System.Void ApplyOptions(UnityEngine.GUILayoutOption[] options)
-    // Offset: 0x128D608
+    // Offset: 0x187AB78
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Void GUILayoutEntry::ApplyOptions(UnityEngine.GUILayoutOption[] options)
     void ApplyOptions(::ArrayW<::UnityEngine::GUILayoutOption*> options);
     // protected override System.Void ApplyStyleSettings(UnityEngine.GUIStyle style)
-    // Offset: 0x128D734
+    // Offset: 0x187ACA4
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Void GUILayoutEntry::ApplyStyleSettings(UnityEngine.GUIStyle style)
     void ApplyStyleSettings(::UnityEngine::GUIStyle* style);
     // public override System.Void CalcWidth()
-    // Offset: 0x128D7B4
+    // Offset: 0x187AD24
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Void GUILayoutEntry::CalcWidth()
     void CalcWidth();
     // public override System.Void SetHorizontal(System.Single x, System.Single width)
-    // Offset: 0x128DEF0
+    // Offset: 0x187B460
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Void GUILayoutEntry::SetHorizontal(System.Single x, System.Single width)
     void SetHorizontal(float x, float width);
     // public override System.Void CalcHeight()
-    // Offset: 0x128E734
+    // Offset: 0x187BCA4
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Void GUILayoutEntry::CalcHeight()
     void CalcHeight();
     // public override System.Void SetVertical(System.Single y, System.Single height)
-    // Offset: 0x128ED34
+    // Offset: 0x187C2A4
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Void GUILayoutEntry::SetVertical(System.Single y, System.Single height)
     void SetVertical(float y, float height);
     // public override System.String ToString()
-    // Offset: 0x128F574
+    // Offset: 0x187CAE4
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.String GUILayoutEntry::ToString()
     ::StringW ToString();

@@ -28,15 +28,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class GoalMover : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single MAX_OFFSET
     // Size: 0x4
     // Offset: 0x18
@@ -77,41 +69,41 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.Single MOVE_TOLERANCE
     static void _set_MOVE_TOLERANCE(float value);
     // Get instance field reference: private System.Single MAX_OFFSET
-    float& dyn_MAX_OFFSET();
+    [[deprecated]] float& dyn_MAX_OFFSET();
     // Get instance field reference: private System.Single m_speed
-    float& dyn_m_speed();
+    [[deprecated]] float& dyn_m_speed();
     // Get instance field reference: private UnityEngine.Vector3 m_expectedPosition
-    ::UnityEngine::Vector3& dyn_m_expectedPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_m_expectedPosition();
     // Get instance field reference: private UnityEngine.Vector3 m_moveDirection
-    ::UnityEngine::Vector3& dyn_m_moveDirection();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_m_moveDirection();
     // Get instance field reference: private UnityEngine.Vector3 m_nextMoveDirection
-    ::UnityEngine::Vector3& dyn_m_nextMoveDirection();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_m_nextMoveDirection();
     // public UnityEngine.Vector3 get_ExpectedPosition()
-    // Offset: 0x7EAA3C
+    // Offset: 0x930E1C
     ::UnityEngine::Vector3 get_ExpectedPosition();
     // public System.Void set_ExpectedPosition(UnityEngine.Vector3 value)
-    // Offset: 0x7EAA48
+    // Offset: 0x930E28
     void set_ExpectedPosition(::UnityEngine::Vector3 value);
     // public UnityEngine.Vector3 get_MoveDirection()
-    // Offset: 0x7EAA54
+    // Offset: 0x930E34
     ::UnityEngine::Vector3 get_MoveDirection();
     // public System.Void set_MoveDirection(UnityEngine.Vector3 value)
-    // Offset: 0x7EAA60
+    // Offset: 0x930E40
     void set_MoveDirection(::UnityEngine::Vector3 value);
     // public UnityEngine.Vector3 get_NextMoveDirection()
-    // Offset: 0x7EAA6C
+    // Offset: 0x930E4C
     ::UnityEngine::Vector3 get_NextMoveDirection();
     // public System.Void set_NextMoveDirection(UnityEngine.Vector3 value)
-    // Offset: 0x7EAA78
+    // Offset: 0x930E58
     void set_NextMoveDirection(::UnityEngine::Vector3 value);
     // private System.Void Start()
-    // Offset: 0x7EAA84
+    // Offset: 0x930E64
     void Start();
     // private System.Void FixedUpdate()
-    // Offset: 0x7EAB90
+    // Offset: 0x930F70
     void FixedUpdate();
     // public System.Void .ctor()
-    // Offset: 0x7EADD0
+    // Offset: 0x9311B0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

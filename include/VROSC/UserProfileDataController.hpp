@@ -47,58 +47,58 @@ namespace VROSC {
     // Nested type: ::VROSC::UserProfileDataController::$$c__DisplayClass29_0
     class $$c__DisplayClass29_0;
     // protected VROSC.UserProfileDataModel get_DataModel()
-    // Offset: 0x13AB268
+    // Offset: 0x191F1DC
     ::VROSC::UserProfileDataModel* get_DataModel();
     // public System.String get_Username()
-    // Offset: 0x13AB388
+    // Offset: 0x191F2FC
     ::StringW get_Username();
     // public System.Void set_Username(System.String value)
-    // Offset: 0x13AB3A8
+    // Offset: 0x191F31C
     void set_Username(::StringW value);
     // public System.String get_Email()
-    // Offset: 0x13AB3E0
+    // Offset: 0x191F354
     ::StringW get_Email();
     // public System.Void set_Email(System.String value)
-    // Offset: 0x13AB400
+    // Offset: 0x191F374
     void set_Email(::StringW value);
     // public System.Void set_OculusId(System.String value)
-    // Offset: 0x13AB438
+    // Offset: 0x191F3AC
     void set_OculusId(::StringW value);
     // public System.Void set_OculusUsername(System.String value)
-    // Offset: 0x13AB470
+    // Offset: 0x191F3E4
     void set_OculusUsername(::StringW value);
     // public System.String get_SteamId()
-    // Offset: 0x13AB4D0
+    // Offset: 0x191F444
     ::StringW get_SteamId();
     // public System.Void set_SteamId(System.String value)
-    // Offset: 0x13AB4F0
+    // Offset: 0x191F464
     void set_SteamId(::StringW value);
     // public System.String get_SteamUsername()
-    // Offset: 0x13AB528
+    // Offset: 0x191F49C
     ::StringW get_SteamUsername();
     // public System.Void set_SteamUsername(System.String value)
-    // Offset: 0x13AB548
+    // Offset: 0x191F4BC
     void set_SteamUsername(::StringW value);
     // public System.String get_LastLogin()
-    // Offset: 0x13AB5A8
+    // Offset: 0x191F51C
     ::StringW get_LastLogin();
     // public System.Void set_LastLogin(System.String value)
-    // Offset: 0x13AB5C8
+    // Offset: 0x191F53C
     void set_LastLogin(::StringW value);
     // public System.String get_CreationDate()
-    // Offset: 0x13AB600
+    // Offset: 0x191F574
     ::StringW get_CreationDate();
     // public System.Void set_CreationDate(System.String value)
-    // Offset: 0x13AB620
+    // Offset: 0x191F594
     void set_CreationDate(::StringW value);
     // public System.String get_AcceptedEULAVersion()
-    // Offset: 0x13AB658
+    // Offset: 0x191F5CC
     ::StringW get_AcceptedEULAVersion();
     // public System.Void set_AcceptedEULAVersion(System.String value)
-    // Offset: 0x13AB678
+    // Offset: 0x191F5EC
     void set_AcceptedEULAVersion(::StringW value);
     // public System.Void .ctor()
-    // Offset: 0x13A6600
+    // Offset: 0x191A2CC
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -108,12 +108,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UserProfileDataController*, creationType>()));
     }
     // public override System.Void SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13AB6B0
+    // Offset: 0x191F624
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void SaveCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Void LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13AB9F4
+    // Offset: 0x191F968
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void LoadCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);

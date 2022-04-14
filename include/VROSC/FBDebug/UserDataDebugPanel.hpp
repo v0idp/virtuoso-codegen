@@ -54,15 +54,7 @@ namespace VROSC::FBDebug {
   // [TokenAttribute] Offset: FFFFFFFF
   class UserDataDebugPanel : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.UI.Button _getNewDataButton
     // Size: 0x8
     // Offset: 0x18
@@ -87,14 +79,14 @@ namespace VROSC::FBDebug {
     ::TMPro::TextMeshProUGUI* dataText;
     // Field size check
     static_assert(sizeof(::TMPro::TextMeshProUGUI*) == 0x8);
-    // [HeaderAttribute] Offset: 0x676E60
+    // [HeaderAttribute] Offset: 0x78D704
     // private System.String _sessionId
     // Size: 0x8
     // Offset: 0x38
     ::StringW sessionId;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [HeaderAttribute] Offset: 0x676EAC
+    // [HeaderAttribute] Offset: 0x78D750
     // private System.Boolean _alwaysHoldMallets
     // Size: 0x1
     // Offset: 0x40
@@ -149,97 +141,97 @@ namespace VROSC::FBDebug {
     // Set static field: static private System.String _data
     static void _set__data(::StringW value);
     // Get instance field reference: private UnityEngine.UI.Button _getNewDataButton
-    ::UnityEngine::UI::Button*& dyn__getNewDataButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__getNewDataButton();
     // Get instance field reference: private UnityEngine.UI.Button _writeDataButton
-    ::UnityEngine::UI::Button*& dyn__writeDataButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__writeDataButton();
     // Get instance field reference: private UnityEngine.UI.Button _deleteDataButton
-    ::UnityEngine::UI::Button*& dyn__deleteDataButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__deleteDataButton();
     // Get instance field reference: private TMPro.TextMeshProUGUI _dataText
-    ::TMPro::TextMeshProUGUI*& dyn__dataText();
+    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn__dataText();
     // Get instance field reference: private System.String _sessionId
-    ::StringW& dyn__sessionId();
+    [[deprecated]] ::StringW& dyn__sessionId();
     // Get instance field reference: private System.Boolean _alwaysHoldMallets
-    bool& dyn__alwaysHoldMallets();
+    [[deprecated]] bool& dyn__alwaysHoldMallets();
     // Get instance field reference: private System.Single _malletAngle
-    float& dyn__malletAngle();
+    [[deprecated]] float& dyn__malletAngle();
     // Get instance field reference: private System.Single _malletLength
-    float& dyn__malletLength();
+    [[deprecated]] float& dyn__malletLength();
     // Get instance field reference: private VROSC.CommunitySessionsDataController _communitySessionsDataController
-    ::VROSC::CommunitySessionsDataController*& dyn__communitySessionsDataController();
+    [[deprecated]] ::VROSC::CommunitySessionsDataController*& dyn__communitySessionsDataController();
     // Get instance field reference: private VROSC.CloudSessionsDataController _cloudSessionsDataController
-    ::VROSC::CloudSessionsDataController*& dyn__cloudSessionsDataController();
+    [[deprecated]] ::VROSC::CloudSessionsDataController*& dyn__cloudSessionsDataController();
     // Get instance field reference: private VROSC.UserPreferencesDataController _userPreferencesDataController
-    ::VROSC::UserPreferencesDataController*& dyn__userPreferencesDataController();
+    [[deprecated]] ::VROSC::UserPreferencesDataController*& dyn__userPreferencesDataController();
     // Get instance field reference: private VROSC.UserFavoritesDataController _userFavoritesDataController
-    ::VROSC::UserFavoritesDataController*& dyn__userFavoritesDataController();
+    [[deprecated]] ::VROSC::UserFavoritesDataController*& dyn__userFavoritesDataController();
     // private System.Void Awake()
-    // Offset: 0x13A758C
+    // Offset: 0x191B2F4
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13A77A0
+    // Offset: 0x191B508
     void OnDestroy();
     // private System.Void Update()
-    // Offset: 0x13A78DC
+    // Offset: 0x191B644
     void Update();
     // private System.Void OnValidate()
-    // Offset: 0x13A7960
+    // Offset: 0x191B6C8
     void OnValidate();
     // private System.Void GetNewDataButtonPressed()
-    // Offset: 0x13A7A28
+    // Offset: 0x191B790
     void GetNewDataButtonPressed();
     // private System.Void WriteDataButtonPressed()
-    // Offset: 0x13A7B3C
+    // Offset: 0x191B8A4
     void WriteDataButtonPressed();
     // private System.Void DeleteDataButtonPressed()
-    // Offset: 0x13A7DCC
+    // Offset: 0x191BB34
     void DeleteDataButtonPressed();
     // private System.Void LoadSessionsSuccess()
-    // Offset: 0x13A7F74
+    // Offset: 0x191BCDC
     void LoadSessionsSuccess();
     // private System.Void LoadSessionsFailure(VROSC.Error error)
-    // Offset: 0x13A8128
+    // Offset: 0x191BE90
     void LoadSessionsFailure(::VROSC::Error error);
     // private System.Void RemoveSessionSuccess()
-    // Offset: 0x13A81E4
+    // Offset: 0x191BF4C
     void RemoveSessionSuccess();
     // private System.Void RemoveSessionFailure(VROSC.Error error)
-    // Offset: 0x13A8258
+    // Offset: 0x191BFC0
     void RemoveSessionFailure(::VROSC::Error error);
     // private System.Void LoadPreferencesSuccess()
-    // Offset: 0x13A8340
+    // Offset: 0x191C0A8
     void LoadPreferencesSuccess();
     // private System.Void LoadPreferencesFailure(VROSC.Error error)
-    // Offset: 0x13A83C0
+    // Offset: 0x191C128
     void LoadPreferencesFailure(::VROSC::Error error);
     // private System.Void LoadFavoritesSuccess()
-    // Offset: 0x13A847C
+    // Offset: 0x191C1E4
     void LoadFavoritesSuccess();
     // private System.Void LoadFavoritesFailure(VROSC.Error error)
-    // Offset: 0x13A84FC
+    // Offset: 0x191C264
     void LoadFavoritesFailure(::VROSC::Error error);
     // private System.Void SaveSessionsSuccess()
-    // Offset: 0x13A85B8
+    // Offset: 0x191C320
     void SaveSessionsSuccess();
     // private System.Void SaveSessionsFailure(VROSC.Error error)
-    // Offset: 0x13A862C
+    // Offset: 0x191C394
     void SaveSessionsFailure(::VROSC::Error error);
     // private System.Void SaveMalletsPreferencesSuccess()
-    // Offset: 0x13A8714
+    // Offset: 0x191C47C
     void SaveMalletsPreferencesSuccess();
     // private System.Void SaveMalletsPreferencesFailure(VROSC.Error error)
-    // Offset: 0x13A8788
+    // Offset: 0x191C4F0
     void SaveMalletsPreferencesFailure(::VROSC::Error error);
     // private System.Void SaveFavoritesSuccess()
-    // Offset: 0x13A8870
+    // Offset: 0x191C5D8
     void SaveFavoritesSuccess();
     // private System.Void SaveFavoritesFailure(VROSC.Error error)
-    // Offset: 0x13A88E4
+    // Offset: 0x191C64C
     void SaveFavoritesFailure(::VROSC::Error error);
     // static public System.Void PrintData(System.String data, System.Boolean clear)
-    // Offset: 0x13A7FE8
+    // Offset: 0x191BD50
     static void PrintData(::StringW data, bool clear);
     // public System.Void .ctor()
-    // Offset: 0x13A89CC
+    // Offset: 0x191C734
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -252,7 +244,7 @@ namespace VROSC::FBDebug {
       return THROW_UNLESS((::il2cpp_utils::New<UserDataDebugPanel*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x13A89D4
+    // Offset: 0x191C73C
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

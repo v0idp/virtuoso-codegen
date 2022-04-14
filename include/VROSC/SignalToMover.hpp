@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SignalToMover : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TransformMover transformMover
     // Size: 0x8
     // Offset: 0x40
@@ -54,9 +46,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TransformMover*) == 0x8);
     public:
     // Get instance field reference: private VROSC.TransformMover transformMover
-    ::VROSC::TransformMover*& dyn_transformMover();
+    [[deprecated]] ::VROSC::TransformMover*& dyn_transformMover();
     // public System.Void .ctor()
-    // Offset: 0x13B5918
+    // Offset: 0x19287E4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -71,12 +63,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SignalToMover*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13B5780
+    // Offset: 0x192864C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x13B584C
+    // Offset: 0x1928718
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

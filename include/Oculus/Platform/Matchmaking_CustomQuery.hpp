@@ -80,27 +80,19 @@ namespace Oculus::Platform {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.String key
-      ::StringW& dyn_key();
+      [[deprecated]] ::StringW& dyn_key();
       // Get instance field reference: public Oculus.Platform.MatchmakingCriterionImportance importance
-      ::Oculus::Platform::MatchmakingCriterionImportance& dyn_importance();
+      [[deprecated]] ::Oculus::Platform::MatchmakingCriterionImportance& dyn_importance();
       // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.String,System.Object> parameters
-      ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*& dyn_parameters();
+      [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*& dyn_parameters();
       // public System.Void .ctor(System.String key_, Oculus.Platform.MatchmakingCriterionImportance importance_)
-      // Offset: 0x1157260
+      // Offset: 0x172415C
       Criterion(::StringW key_, ::Oculus::Platform::MatchmakingCriterionImportance importance_);
     }; // Oculus.Platform.Matchmaking/Oculus.Platform.CustomQuery/Oculus.Platform.Criterion
     #pragma pack(pop)
     static check_size<sizeof(Matchmaking::CustomQuery::Criterion), 16 + sizeof(::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*)> __Oculus_Platform_Matchmaking_CustomQuery_CriterionSizeCheck;
     static_assert(sizeof(Matchmaking::CustomQuery::Criterion) == 0x18);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.Dictionary`2<System.String,System.Object> data
     // Size: 0x8
     // Offset: 0x10
@@ -115,14 +107,14 @@ namespace Oculus::Platform {
     static_assert(sizeof(::ArrayW<::Oculus::Platform::Matchmaking::CustomQuery::Criterion>) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.String,System.Object> data
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*& dyn_data();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*& dyn_data();
     // Get instance field reference: public Oculus.Platform.Matchmaking/Oculus.Platform.CustomQuery/Oculus.Platform.Criterion[] criteria
-    ::ArrayW<::Oculus::Platform::Matchmaking::CustomQuery::Criterion>& dyn_criteria();
+    [[deprecated]] ::ArrayW<::Oculus::Platform::Matchmaking::CustomQuery::Criterion>& dyn_criteria();
     // public System.IntPtr ToUnmanaged()
-    // Offset: 0x11553A8
+    // Offset: 0x17222A4
     ::System::IntPtr ToUnmanaged();
     // public System.Void .ctor()
-    // Offset: 0x1155724
+    // Offset: 0x1722620
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

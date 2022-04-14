@@ -97,9 +97,9 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.MeshFilter meshFilter
-      ::UnityEngine::MeshFilter*& dyn_meshFilter();
+      [[deprecated]] ::UnityEngine::MeshFilter*& dyn_meshFilter();
       // Get instance field reference: public ONSPPropagationMaterial[] materials
-      ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>& dyn_materials();
+      [[deprecated]] ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>& dyn_materials();
     }; // ONSPPropagationGeometry/MeshMaterial
     #pragma pack(pop)
     static check_size<sizeof(ONSPPropagationGeometry::MeshMaterial), 8 + sizeof(::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>)> __GlobalNamespace_ONSPPropagationGeometry_MeshMaterialSizeCheck;
@@ -138,24 +138,16 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Terrain terrain
-      ::UnityEngine::Terrain*& dyn_terrain();
+      [[deprecated]] ::UnityEngine::Terrain*& dyn_terrain();
       // Get instance field reference: public ONSPPropagationMaterial[] materials
-      ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>& dyn_materials();
+      [[deprecated]] ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>& dyn_materials();
       // Get instance field reference: public UnityEngine.Mesh[] treePrototypeMeshes
-      ::ArrayW<::UnityEngine::Mesh*>& dyn_treePrototypeMeshes();
+      [[deprecated]] ::ArrayW<::UnityEngine::Mesh*>& dyn_treePrototypeMeshes();
     }; // ONSPPropagationGeometry/TerrainMaterial
     #pragma pack(pop)
     static check_size<sizeof(ONSPPropagationGeometry::TerrainMaterial), 16 + sizeof(::ArrayW<::UnityEngine::Mesh*>)> __GlobalNamespace_ONSPPropagationGeometry_TerrainMaterialSizeCheck;
     static_assert(sizeof(ONSPPropagationGeometry::TerrainMaterial) == 0x18);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String filePathRelative
     // Size: 0x8
     // Offset: 0x18
@@ -204,60 +196,60 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 terrainDecimation
     static void _set_terrainDecimation(int value);
     // Get instance field reference: public System.String filePathRelative
-    ::StringW& dyn_filePathRelative();
+    [[deprecated]] ::StringW& dyn_filePathRelative();
     // Get instance field reference: public System.Boolean fileEnabled
-    bool& dyn_fileEnabled();
+    [[deprecated]] bool& dyn_fileEnabled();
     // Get instance field reference: public System.Boolean includeChildMeshes
-    bool& dyn_includeChildMeshes();
+    [[deprecated]] bool& dyn_includeChildMeshes();
     // Get instance field reference: private System.IntPtr geometryHandle
-    ::System::IntPtr& dyn_geometryHandle();
+    [[deprecated]] ::System::IntPtr& dyn_geometryHandle();
     // static public System.String get_GeometryAssetPath()
-    // Offset: 0x11BB838
+    // Offset: 0x1760740
     static ::StringW get_GeometryAssetPath();
     // public System.String get_filePath()
-    // Offset: 0x11BB8CC
+    // Offset: 0x17607D4
     ::StringW get_filePath();
     // static private System.String GetPath(UnityEngine.Transform current)
-    // Offset: 0x11BB94C
+    // Offset: 0x1760854
     static ::StringW GetPath(::UnityEngine::Transform* current);
     // private System.Void Awake()
-    // Offset: 0x11BBAB4
+    // Offset: 0x17609BC
     void Awake();
     // private System.Void CreatePropagationGeometry()
-    // Offset: 0x11BBAB8
+    // Offset: 0x17609C0
     void CreatePropagationGeometry();
     // private System.Void Update()
-    // Offset: 0x11BC090
+    // Offset: 0x1760F98
     void Update();
     // private System.Void OnDestroy()
-    // Offset: 0x11BC43C
+    // Offset: 0x1761344
     void OnDestroy();
     // static private System.Void traverseMeshHierarchy(UnityEngine.GameObject obj, ONSPPropagationMaterial[] currentMaterials, System.Boolean includeChildren, System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial> meshMaterials, System.Collections.Generic.List`1<ONSPPropagationGeometry/TerrainMaterial> terrainMaterials, System.Boolean ignoreStatic, ref System.Int32 ignoredMeshCount)
-    // Offset: 0x11BC5B8
+    // Offset: 0x17614C0
     static void traverseMeshHierarchy(::UnityEngine::GameObject* obj, ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*> currentMaterials, bool includeChildren, ::System::Collections::Generic::List_1<::GlobalNamespace::ONSPPropagationGeometry::MeshMaterial>* meshMaterials, ::System::Collections::Generic::List_1<::GlobalNamespace::ONSPPropagationGeometry::TerrainMaterial>* terrainMaterials, bool ignoreStatic, ByRef<int> ignoredMeshCount);
     // private System.Int32 uploadMesh(System.IntPtr geometryHandle, UnityEngine.GameObject meshObject, UnityEngine.Matrix4x4 worldToLocal)
-    // Offset: 0x11BCD5C
+    // Offset: 0x1761C64
     int uploadMesh(::System::IntPtr geometryHandle, ::UnityEngine::GameObject* meshObject, ::UnityEngine::Matrix4x4 worldToLocal);
     // private System.Int32 uploadMesh(System.IntPtr geometryHandle, UnityEngine.GameObject meshObject, UnityEngine.Matrix4x4 worldToLocal, System.Boolean ignoreStatic, ref System.Int32 ignoredMeshCount)
-    // Offset: 0x11BCD98
+    // Offset: 0x1761CA0
     int uploadMesh(::System::IntPtr geometryHandle, ::UnityEngine::GameObject* meshObject, ::UnityEngine::Matrix4x4 worldToLocal, bool ignoreStatic, ByRef<int> ignoredMeshCount);
     // static private System.Void uploadMeshFilter(System.Collections.Generic.List`1<UnityEngine.Vector3> tempVertices, System.Collections.Generic.List`1<System.Int32> tempIndices, Oculus.Spatializer.Propagation.MeshGroup[] groups, System.Single[] vertices, System.Int32[] indices, ref System.Int32 vertexOffset, ref System.Int32 indexOffset, ref System.Int32 groupOffset, UnityEngine.Mesh mesh, ONSPPropagationMaterial[] materials, UnityEngine.Matrix4x4 matrix)
-    // Offset: 0x11BE604
+    // Offset: 0x176350C
     static void uploadMeshFilter(::System::Collections::Generic::List_1<::UnityEngine::Vector3>* tempVertices, ::System::Collections::Generic::List_1<int>* tempIndices, ::ArrayW<::Oculus::Spatializer::Propagation::MeshGroup> groups, ::ArrayW<float> vertices, ::ArrayW<int> indices, ByRef<int> vertexOffset, ByRef<int> indexOffset, ByRef<int> groupOffset, ::UnityEngine::Mesh* mesh, ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*> materials, ::UnityEngine::Matrix4x4 matrix);
     // static private System.Void updateCountsForMesh(ref System.Int32 totalVertexCount, ref System.UInt32 totalIndexCount, ref System.Int32 totalFaceCount, ref System.Int32 totalMaterialCount, UnityEngine.Mesh mesh)
-    // Offset: 0x11BE348
+    // Offset: 0x1763250
     static void updateCountsForMesh(ByRef<int> totalVertexCount, ByRef<uint> totalIndexCount, ByRef<int> totalFaceCount, ByRef<int> totalMaterialCount, ::UnityEngine::Mesh* mesh);
     // public System.Void UploadGeometry()
-    // Offset: 0x11BBEA8
+    // Offset: 0x1760DB0
     void UploadGeometry();
     // public System.Boolean ReadFile()
-    // Offset: 0x11BBCB0
+    // Offset: 0x1760BB8
     bool ReadFile();
     // public System.Boolean WriteToObj()
-    // Offset: 0x11BEC8C
+    // Offset: 0x1763B94
     bool WriteToObj();
     // public System.Void .ctor()
-    // Offset: 0x11BF124
+    // Offset: 0x176402C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -270,7 +262,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagationGeometry*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x11BF190
+    // Offset: 0x1764098
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

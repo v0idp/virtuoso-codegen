@@ -73,15 +73,15 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarTransform localTransform
-    ::GlobalNamespace::ovrAvatarTransform& dyn_localTransform();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_localTransform();
     // Get instance field reference: public ovrAvatarVisibilityFlags visibilityMask
-    ::GlobalNamespace::ovrAvatarVisibilityFlags& dyn_visibilityMask();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarVisibilityFlags& dyn_visibilityMask();
     // Get instance field reference: public System.UInt64 meshAssetID
-    uint64_t& dyn_meshAssetID();
+    [[deprecated]] uint64_t& dyn_meshAssetID();
     // Get instance field reference: public ovrAvatarMaterialState materialState
-    ::GlobalNamespace::ovrAvatarMaterialState& dyn_materialState();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialState& dyn_materialState();
     // Get instance field reference: public ovrAvatarSkinnedMeshPose skinnedPose
-    ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedPose();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedPose();
   }; // ovrAvatarRenderPart_SkinnedMeshRender
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarRenderPart_SkinnedMeshRender), 224 + sizeof(::GlobalNamespace::ovrAvatarSkinnedMeshPose)> __GlobalNamespace_ovrAvatarRenderPart_SkinnedMeshRenderSizeCheck;

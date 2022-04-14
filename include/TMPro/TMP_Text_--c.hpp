@@ -46,13 +46,13 @@ namespace TMPro {
     // Set static field: static public System.Action`1<TMPro.TMP_TextInfo> <>9__622_0
     static void _set_$$9__622_0(::System::Action_1<::TMPro::TMP_TextInfo*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1247B5C
+    // Offset: 0x1821BF8
     static void _cctor();
     // System.Void <.ctor>b__622_0(TMPro.TMP_TextInfo <p0>)
-    // Offset: 0x1247BC4
+    // Offset: 0x1821C60
     void $_ctor$b__622_0(::TMPro::TMP_TextInfo* $p0$);
     // public System.Void .ctor()
-    // Offset: 0x1247BBC
+    // Offset: 0x1821C58
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

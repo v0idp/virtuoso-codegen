@@ -161,22 +161,14 @@ namespace RSG {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Action callback
-      ::System::Action*& dyn_callback();
+      [[deprecated]] ::System::Action*& dyn_callback();
       // Get instance field reference: public RSG.IRejectable rejectable
-      ::RSG::IRejectable*& dyn_rejectable();
+      [[deprecated]] ::RSG::IRejectable*& dyn_rejectable();
     }; // RSG.Promise/RSG.ResolveHandler
     #pragma pack(pop)
     static check_size<sizeof(Promise::ResolveHandler), 8 + sizeof(::RSG::IRejectable*)> __RSG_Promise_ResolveHandlerSizeCheck;
     static_assert(sizeof(Promise::ResolveHandler) == 0x10);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Exception rejectionException
     // Size: 0x8
     // Offset: 0x10
@@ -251,247 +243,247 @@ namespace RSG {
     // Set static field: static readonly System.Collections.Generic.HashSet`1<RSG.IPromiseInfo> PendingPromises
     static void _set_PendingPromises(::System::Collections::Generic::HashSet_1<::RSG::IPromiseInfo*>* value);
     // Get instance field reference: private System.Exception rejectionException
-    ::System::Exception*& dyn_rejectionException();
+    [[deprecated]] ::System::Exception*& dyn_rejectionException();
     // Get instance field reference: private System.Collections.Generic.List`1<RSG.RejectHandler> rejectHandlers
-    ::System::Collections::Generic::List_1<::RSG::RejectHandler>*& dyn_rejectHandlers();
+    [[deprecated]] ::System::Collections::Generic::List_1<::RSG::RejectHandler>*& dyn_rejectHandlers();
     // Get instance field reference: private System.Collections.Generic.List`1<RSG.Promise/RSG.ResolveHandler> resolveHandlers
-    ::System::Collections::Generic::List_1<::RSG::Promise::ResolveHandler>*& dyn_resolveHandlers();
+    [[deprecated]] ::System::Collections::Generic::List_1<::RSG::Promise::ResolveHandler>*& dyn_resolveHandlers();
     // Get instance field reference: private System.Collections.Generic.List`1<RSG.ProgressHandler> progressHandlers
-    ::System::Collections::Generic::List_1<::RSG::ProgressHandler>*& dyn_progressHandlers();
+    [[deprecated]] ::System::Collections::Generic::List_1<::RSG::ProgressHandler>*& dyn_progressHandlers();
     // Get instance field reference: private readonly System.Int32 id
-    int& dyn_id();
+    [[deprecated]] int& dyn_id();
     // Get instance field reference: private System.String <Name>k__BackingField
-    ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private RSG.PromiseState <CurState>k__BackingField
-    ::RSG::PromiseState& dyn_$CurState$k__BackingField();
+    [[deprecated]] ::RSG::PromiseState& dyn_$CurState$k__BackingField();
     // public System.Int32 get_Id()
-    // Offset: 0x98F5A0
+    // Offset: 0xB27068
     int get_Id();
     // public System.String get_Name()
-    // Offset: 0x98F5A8
+    // Offset: 0xB27070
     ::StringW get_Name();
     // private System.Void set_Name(System.String value)
-    // Offset: 0x98F5B0
+    // Offset: 0xB27078
     void set_Name(::StringW value);
     // public RSG.PromiseState get_CurState()
-    // Offset: 0x98F5B8
+    // Offset: 0xB27080
     ::RSG::PromiseState get_CurState();
     // private System.Void set_CurState(RSG.PromiseState value)
-    // Offset: 0x98F5C0
+    // Offset: 0xB27088
     void set_CurState(::RSG::PromiseState value);
     // static public System.Void add_UnhandledException(System.EventHandler`1<RSG.ExceptionEventArgs> value)
-    // Offset: 0x98F3E4
+    // Offset: 0xB26EAC
     static void add_UnhandledException(::System::EventHandler_1<::RSG::ExceptionEventArgs*>* value);
     // static public System.Void remove_UnhandledException(System.EventHandler`1<RSG.ExceptionEventArgs> value)
-    // Offset: 0x98F490
+    // Offset: 0xB26F58
     static void remove_UnhandledException(::System::EventHandler_1<::RSG::ExceptionEventArgs*>* value);
     // public System.Void .ctor(System.Action`2<System.Action,System.Action`1<System.Exception>> resolver)
-    // Offset: 0x98F708
+    // Offset: 0xB271D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Promise* New_ctor(::System::Action_2<::System::Action*, ::System::Action_1<::System::Exception*>*>* resolver) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Promise*, creationType>(resolver)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x991E48
+    // Offset: 0xB29910
     static void _cctor();
     // static public System.Collections.Generic.IEnumerable`1<RSG.IPromiseInfo> GetPendingPromises()
-    // Offset: 0x98F53C
+    // Offset: 0xB27004
     static ::System::Collections::Generic::IEnumerable_1<::RSG::IPromiseInfo*>* GetPendingPromises();
     // static System.Int32 NextId()
-    // Offset: 0x98F69C
+    // Offset: 0xB27164
     static int NextId();
     // private System.Void AddRejectHandler(System.Action`1<System.Exception> onRejected, RSG.IRejectable rejectable)
-    // Offset: 0x98FAE8
+    // Offset: 0xB275B0
     void AddRejectHandler(::System::Action_1<::System::Exception*>* onRejected, ::RSG::IRejectable* rejectable);
     // private System.Void AddResolveHandler(System.Action onResolved, RSG.IRejectable rejectable)
-    // Offset: 0x98FB9C
+    // Offset: 0xB27664
     void AddResolveHandler(::System::Action* onResolved, ::RSG::IRejectable* rejectable);
     // private System.Void AddProgressHandler(System.Action`1<System.Single> onProgress, RSG.IRejectable rejectable)
-    // Offset: 0x98FC50
+    // Offset: 0xB27718
     void AddProgressHandler(::System::Action_1<float>* onProgress, ::RSG::IRejectable* rejectable);
     // private System.Void InvokeRejectHandler(System.Action`1<System.Exception> callback, RSG.IRejectable rejectable, System.Exception value)
-    // Offset: 0x98FD04
+    // Offset: 0xB277CC
     void InvokeRejectHandler(::System::Action_1<::System::Exception*>* callback, ::RSG::IRejectable* rejectable, ::System::Exception* value);
     // private System.Void InvokeResolveHandler(System.Action callback, RSG.IRejectable rejectable)
-    // Offset: 0x98FE64
+    // Offset: 0xB2792C
     void InvokeResolveHandler(::System::Action* callback, ::RSG::IRejectable* rejectable);
     // private System.Void InvokeProgressHandler(System.Action`1<System.Single> callback, RSG.IRejectable rejectable, System.Single progress)
-    // Offset: 0x98FF84
+    // Offset: 0xB27A4C
     void InvokeProgressHandler(::System::Action_1<float>* callback, ::RSG::IRejectable* rejectable, float progress);
     // private System.Void ClearHandlers()
-    // Offset: 0x9900F0
+    // Offset: 0xB27BB8
     void ClearHandlers();
     // private System.Void InvokeRejectHandlers(System.Exception ex)
-    // Offset: 0x9900FC
+    // Offset: 0xB27BC4
     void InvokeRejectHandlers(::System::Exception* ex);
     // private System.Void InvokeResolveHandlers()
-    // Offset: 0x9901F8
+    // Offset: 0xB27CC0
     void InvokeResolveHandlers();
     // private System.Void InvokeProgressHandlers(System.Single progress)
-    // Offset: 0x9902BC
+    // Offset: 0xB27D84
     void InvokeProgressHandlers(float progress);
     // public System.Void Reject(System.Exception ex)
-    // Offset: 0x98F918
+    // Offset: 0xB273E0
     void Reject(::System::Exception* ex);
     // public System.Void Resolve()
-    // Offset: 0x9903D0
+    // Offset: 0xB27E98
     void Resolve();
     // public System.Void ReportProgress(System.Single progress)
-    // Offset: 0x990594
+    // Offset: 0xB2805C
     void ReportProgress(float progress);
     // public System.Void Done(System.Action onResolved, System.Action`1<System.Exception> onRejected)
-    // Offset: 0x9906B0
+    // Offset: 0xB28178
     void Done(::System::Action* onResolved, ::System::Action_1<::System::Exception*>* onRejected);
     // public System.Void Done(System.Action onResolved)
-    // Offset: 0x9907EC
+    // Offset: 0xB282B4
     void Done(::System::Action* onResolved);
     // public System.Void Done()
-    // Offset: 0x990928
+    // Offset: 0xB283F0
     void Done();
     // public RSG.IPromise WithName(System.String name)
-    // Offset: 0x990B84
+    // Offset: 0xB2864C
     ::RSG::IPromise* WithName(::StringW name);
     // public RSG.IPromise Catch(System.Action`1<System.Exception> onRejected)
-    // Offset: 0x9909B8
+    // Offset: 0xB28480
     ::RSG::IPromise* Catch(::System::Action_1<::System::Exception*>* onRejected);
     // public RSG.IPromise`1<ConvertedT> Then(System.Func`1<RSG.IPromise`1<ConvertedT>> onResolved)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* Then(::System::Func_1<::RSG::IPromise_1<ConvertedT>*>* onResolved) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::Promise*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, onResolved);
     }
     // public RSG.IPromise Then(System.Func`1<RSG.IPromise> onResolved)
-    // Offset: 0x990C38
+    // Offset: 0xB28700
     ::RSG::IPromise* Then(::System::Func_1<::RSG::IPromise*>* onResolved);
     // public RSG.IPromise Then(System.Action onResolved)
-    // Offset: 0x99091C
+    // Offset: 0xB283E4
     ::RSG::IPromise* Then(::System::Action* onResolved);
     // public RSG.IPromise`1<ConvertedT> Then(System.Func`1<RSG.IPromise`1<ConvertedT>> onResolved, System.Func`2<System.Exception,RSG.IPromise`1<ConvertedT>> onRejected)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* Then(::System::Func_1<::RSG::IPromise_1<ConvertedT>*>* onResolved, ::System::Func_2<::System::Exception*, ::RSG::IPromise_1<ConvertedT>*>* onRejected) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::Promise*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, onResolved, onRejected);
     }
     // public RSG.IPromise Then(System.Func`1<RSG.IPromise> onResolved, System.Action`1<System.Exception> onRejected)
-    // Offset: 0x990F54
+    // Offset: 0xB28A1C
     ::RSG::IPromise* Then(::System::Func_1<::RSG::IPromise*>* onResolved, ::System::Action_1<::System::Exception*>* onRejected);
     // public RSG.IPromise Then(System.Action onResolved, System.Action`1<System.Exception> onRejected)
-    // Offset: 0x9907E4
+    // Offset: 0xB282AC
     ::RSG::IPromise* Then(::System::Action* onResolved, ::System::Action_1<::System::Exception*>* onRejected);
     // public RSG.IPromise`1<ConvertedT> Then(System.Func`1<RSG.IPromise`1<ConvertedT>> onResolved, System.Func`2<System.Exception,RSG.IPromise`1<ConvertedT>> onRejected, System.Action`1<System.Single> onProgress)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* Then(::System::Func_1<::RSG::IPromise_1<ConvertedT>*>* onResolved, ::System::Func_2<::System::Exception*, ::RSG::IPromise_1<ConvertedT>*>* onRejected, ::System::Action_1<float>* onProgress) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected), ::il2cpp_utils::ExtractType(onProgress)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::Promise*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, onResolved, onRejected, onProgress);
     }
     // public RSG.IPromise Then(System.Func`1<RSG.IPromise> onResolved, System.Action`1<System.Exception> onRejected, System.Action`1<System.Single> onProgress)
-    // Offset: 0x990C44
+    // Offset: 0xB2870C
     ::RSG::IPromise* Then(::System::Func_1<::RSG::IPromise*>* onResolved, ::System::Action_1<::System::Exception*>* onRejected, ::System::Action_1<float>* onProgress);
     // public RSG.IPromise Then(System.Action onResolved, System.Action`1<System.Exception> onRejected, System.Action`1<System.Single> onProgress)
-    // Offset: 0x990DCC
+    // Offset: 0xB28894
     ::RSG::IPromise* Then(::System::Action* onResolved, ::System::Action_1<::System::Exception*>* onRejected, ::System::Action_1<float>* onProgress);
     // private System.Void ActionHandlers(RSG.IRejectable resultPromise, System.Action resolveHandler, System.Action`1<System.Exception> rejectHandler)
-    // Offset: 0x990B8C
+    // Offset: 0xB28654
     void ActionHandlers(::RSG::IRejectable* resultPromise, ::System::Action* resolveHandler, ::System::Action_1<::System::Exception*>* rejectHandler);
     // private System.Void ProgressHandlers(RSG.IRejectable resultPromise, System.Action`1<System.Single> progressHandler)
-    // Offset: 0x990C1C
+    // Offset: 0xB286E4
     void ProgressHandlers(::RSG::IRejectable* resultPromise, ::System::Action_1<float>* progressHandler);
     // public RSG.IPromise ThenAll(System.Func`1<System.Collections.Generic.IEnumerable`1<RSG.IPromise>> chain)
-    // Offset: 0x990F5C
+    // Offset: 0xB28A24
     ::RSG::IPromise* ThenAll(::System::Func_1<::System::Collections::Generic::IEnumerable_1<::RSG::IPromise*>*>* chain);
     // public RSG.IPromise`1<System.Collections.Generic.IEnumerable`1<ConvertedT>> ThenAll(System.Func`1<System.Collections.Generic.IEnumerable`1<RSG.IPromise`1<ConvertedT>>> chain)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class ConvertedT>
     ::RSG::IPromise_1<::System::Collections::Generic::IEnumerable_1<ConvertedT>*>* ThenAll(::System::Func_1<::System::Collections::Generic::IEnumerable_1<::RSG::IPromise_1<ConvertedT>*>*>* chain) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::ThenAll");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ThenAll", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(chain)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::Promise*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<::System::Collections::Generic::IEnumerable_1<ConvertedT>*>*, false>(this, ___generic__method, chain);
     }
     // static public RSG.IPromise All(params RSG.IPromise[] promises)
-    // Offset: 0x991034
+    // Offset: 0xB28AFC
     static ::RSG::IPromise* All(::ArrayW<::RSG::IPromise*> promises);
     // static public RSG.IPromise All(System.Collections.Generic.IEnumerable`1<RSG.IPromise> promises)
-    // Offset: 0x991094
+    // Offset: 0xB28B5C
     static ::RSG::IPromise* All(::System::Collections::Generic::IEnumerable_1<::RSG::IPromise*>* promises);
     // public RSG.IPromise ThenSequence(System.Func`1<System.Collections.Generic.IEnumerable`1<System.Func`1<RSG.IPromise>>> chain)
-    // Offset: 0x9912B0
+    // Offset: 0xB28D78
     ::RSG::IPromise* ThenSequence(::System::Func_1<::System::Collections::Generic::IEnumerable_1<::System::Func_1<::RSG::IPromise*>*>*>* chain);
     // static public RSG.IPromise Sequence(params System.Func`1<RSG.IPromise>[] fns)
-    // Offset: 0x991388
+    // Offset: 0xB28E50
     static ::RSG::IPromise* Sequence(::ArrayW<::System::Func_1<::RSG::IPromise*>*> fns);
     // static public RSG.IPromise Sequence(System.Collections.Generic.IEnumerable`1<System.Func`1<RSG.IPromise>> fns)
-    // Offset: 0x9913E8
+    // Offset: 0xB28EB0
     static ::RSG::IPromise* Sequence(::System::Collections::Generic::IEnumerable_1<::System::Func_1<::RSG::IPromise*>*>* fns);
     // public RSG.IPromise ThenRace(System.Func`1<System.Collections.Generic.IEnumerable`1<RSG.IPromise>> chain)
-    // Offset: 0x9916BC
+    // Offset: 0xB29184
     ::RSG::IPromise* ThenRace(::System::Func_1<::System::Collections::Generic::IEnumerable_1<::RSG::IPromise*>*>* chain);
     // public RSG.IPromise`1<ConvertedT> ThenRace(System.Func`1<System.Collections.Generic.IEnumerable`1<RSG.IPromise`1<ConvertedT>>> chain)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* ThenRace(::System::Func_1<::System::Collections::Generic::IEnumerable_1<::RSG::IPromise_1<ConvertedT>*>*>* chain) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::ThenRace");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ThenRace", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(chain)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::Promise*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, chain);
     }
     // static public RSG.IPromise Race(params RSG.IPromise[] promises)
-    // Offset: 0x991794
+    // Offset: 0xB2925C
     static ::RSG::IPromise* Race(::ArrayW<::RSG::IPromise*> promises);
     // static public RSG.IPromise Race(System.Collections.Generic.IEnumerable`1<RSG.IPromise> promises)
-    // Offset: 0x9917F4
+    // Offset: 0xB292BC
     static ::RSG::IPromise* Race(::System::Collections::Generic::IEnumerable_1<::RSG::IPromise*>* promises);
     // static public RSG.IPromise Resolved()
-    // Offset: 0x99124C
+    // Offset: 0xB28D14
     static ::RSG::IPromise* Resolved();
     // static public RSG.IPromise Rejected(System.Exception ex)
-    // Offset: 0x9919C0
+    // Offset: 0xB29488
     static ::RSG::IPromise* Rejected(::System::Exception* ex);
     // public RSG.IPromise Finally(System.Action onComplete)
-    // Offset: 0x991A2C
+    // Offset: 0xB294F4
     ::RSG::IPromise* Finally(::System::Action* onComplete);
     // public RSG.IPromise ContinueWith(System.Func`1<RSG.IPromise> onComplete)
-    // Offset: 0x991BA0
+    // Offset: 0xB29668
     ::RSG::IPromise* ContinueWith(::System::Func_1<::RSG::IPromise*>* onComplete);
     // public RSG.IPromise`1<ConvertedT> ContinueWith(System.Func`1<RSG.IPromise`1<ConvertedT>> onComplete)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* ContinueWith(::System::Func_1<::RSG::IPromise_1<ConvertedT>*>* onComplete) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::ContinueWith");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ContinueWith", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onComplete)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::Promise*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, onComplete);
     }
     // public RSG.IPromise Progress(System.Action`1<System.Single> onProgress)
-    // Offset: 0x991D10
+    // Offset: 0xB297D8
     ::RSG::IPromise* Progress(::System::Action_1<float>* onProgress);
     // static System.Void PropagateUnhandledException(System.Object sender, System.Exception ex)
-    // Offset: 0x991D48
+    // Offset: 0xB29810
     static void PropagateUnhandledException(::Il2CppObject* sender, ::System::Exception* ex);
     // private System.Void <InvokeResolveHandlers>b__35_0(RSG.Promise/RSG.ResolveHandler handler)
-    // Offset: 0x991EDC
+    // Offset: 0xB299A4
     void $InvokeResolveHandlers$b__35_0(::RSG::Promise::ResolveHandler handler);
     // private System.Void <Done>b__40_0(System.Exception ex)
-    // Offset: 0x991EE0
+    // Offset: 0xB299A8
     void $Done$b__40_0(::System::Exception* ex);
     // private System.Void <Done>b__41_0(System.Exception ex)
-    // Offset: 0x991F50
+    // Offset: 0xB29A18
     void $Done$b__41_0(::System::Exception* ex);
     // private System.Void <Done>b__42_0(System.Exception ex)
-    // Offset: 0x991FC0
+    // Offset: 0xB29A88
     void $Done$b__42_0(::System::Exception* ex);
     // public System.Void .ctor()
-    // Offset: 0x98F5C8
+    // Offset: 0xB27090
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

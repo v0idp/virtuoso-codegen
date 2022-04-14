@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AdjustableMeshColors32 : public ::VROSC::AdjustableMeshColors {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color32[] _colors
     // Size: 0x8
     // Offset: 0x20
@@ -71,13 +63,13 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Color32>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Color32[] _colors
-    ::ArrayW<::UnityEngine::Color32>& dyn__colors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn__colors();
     // Get instance field reference: private UnityEngine.Color32[] _originalColors
-    ::ArrayW<::UnityEngine::Color32>& dyn__originalColors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn__originalColors();
     // Get instance field reference: private UnityEngine.Color32[] _shownColors
-    ::ArrayW<::UnityEngine::Color32>& dyn__shownColors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn__shownColors();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh)
-    // Offset: 0x1367E84
+    // Offset: 0x9667C0
     // Implemented from: VROSC.AdjustableMeshColors
     // Base method: System.Void AdjustableMeshColors::.ctor(VROSC.AdjustableMesh adjustableMesh)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -86,12 +78,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshColors32*, creationType>(adjustableMesh)));
     }
     // public override System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x1368A0C
+    // Offset: 0x96734C
     // Implemented from: VROSC.AdjustableMeshColors
     // Base method: System.Void AdjustableMeshColors::SetColor(UnityEngine.Color color)
     void SetColor(::UnityEngine::Color color);
     // public override System.Void Tint(UnityEngine.Color color, System.Single amount)
-    // Offset: 0x1368C0C
+    // Offset: 0x96754C
     // Implemented from: VROSC.AdjustableMeshColors
     // Base method: System.Void AdjustableMeshColors::Tint(UnityEngine.Color color, System.Single amount)
     void Tint(::UnityEngine::Color color, float amount);

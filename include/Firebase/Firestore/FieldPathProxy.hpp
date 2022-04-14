@@ -37,15 +37,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FieldPathProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -64,31 +56,31 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC34508
+    // Offset: 0xD566B8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldPathProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldPathProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FieldPathProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // public System.Void .ctor(Firebase.StringList fieldNames)
-    // Offset: 0xC342B8
+    // Offset: 0xD56470
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldPathProxy* New_ctor(::Firebase::StringList* fieldNames) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldPathProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FieldPathProxy*, creationType>(fieldNames)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.FieldPathProxy obj)
-    // Offset: 0xC32110
+    // Offset: 0xD543BC
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::FieldPathProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC3465C
+    // Offset: 0xD5680C
     void Dispose();
     // protected override System.Void Finalize()
-    // Offset: 0xC345EC
+    // Offset: 0xD5679C
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

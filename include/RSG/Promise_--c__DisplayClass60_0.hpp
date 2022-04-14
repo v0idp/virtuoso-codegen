@@ -43,15 +43,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Promise::$$c__DisplayClass60_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Func`1<System.Collections.Generic.IEnumerable`1<System.Func`1<RSG.IPromise>>> chain
     // Size: 0x8
     // Offset: 0x10
@@ -64,12 +56,12 @@ namespace RSG {
       return chain;
     }
     // Get instance field reference: public System.Func`1<System.Collections.Generic.IEnumerable`1<System.Func`1<RSG.IPromise>>> chain
-    ::System::Func_1<::System::Collections::Generic::IEnumerable_1<::System::Func_1<::RSG::IPromise*>*>*>*& dyn_chain();
+    [[deprecated]] ::System::Func_1<::System::Collections::Generic::IEnumerable_1<::System::Func_1<::RSG::IPromise*>*>*>*& dyn_chain();
     // RSG.IPromise <ThenSequence>b__0()
-    // Offset: 0x1343EA4
+    // Offset: 0x8CEDFC
     ::RSG::IPromise* $ThenSequence$b__0();
     // public System.Void .ctor()
-    // Offset: 0x1343E9C
+    // Offset: 0x8CEDF4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

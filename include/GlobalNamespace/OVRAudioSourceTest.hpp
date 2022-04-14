@@ -28,15 +28,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRAudioSourceTest : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single period
     // Size: 0x4
     // Offset: 0x18
@@ -53,17 +45,17 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single period
-    float& dyn_period();
+    [[deprecated]] float& dyn_period();
     // Get instance field reference: private System.Single nextActionTime
-    float& dyn_nextActionTime();
+    [[deprecated]] float& dyn_nextActionTime();
     // private System.Void Start()
-    // Offset: 0x819584
+    // Offset: 0x98EB50
     void Start();
     // private System.Void Update()
-    // Offset: 0x81968C
+    // Offset: 0x98EC58
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x81987C
+    // Offset: 0x98EE48
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

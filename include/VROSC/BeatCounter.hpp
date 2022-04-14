@@ -93,20 +93,12 @@ namespace VROSC {
       // Set static field: static public VROSC.BeatCounter/VROSC.SyncSource BeatCounter
       static void _set_BeatCounter(::VROSC::BeatCounter::SyncSource value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.BeatCounter/VROSC.SyncSource
     #pragma pack(pop)
     static check_size<sizeof(BeatCounter::SyncSource), 0 + sizeof(int)> __VROSC_BeatCounter_SyncSourceSizeCheck;
     static_assert(sizeof(BeatCounter::SyncSource) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Metronome _metronome
     // Size: 0x8
     // Offset: 0x18
@@ -261,187 +253,187 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Int32> OnVisualBeat
     static void _set_OnVisualBeat(::System::Action_1<int>* value);
     // Get instance field reference: private VROSC.Metronome _metronome
-    ::VROSC::Metronome*& dyn__metronome();
+    [[deprecated]] ::VROSC::Metronome*& dyn__metronome();
     // Get instance field reference: private VROSC.BeatCounterUI _beatCounterUI
-    ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
+    [[deprecated]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
     // Get instance field reference: private UnityEngine.AudioSource _beatCounterAudioSource
-    ::UnityEngine::AudioSource*& dyn__beatCounterAudioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__beatCounterAudioSource();
     // Get instance field reference: private System.Single _lastFrameVisualBarProgress
-    float& dyn__lastFrameVisualBarProgress();
+    [[deprecated]] float& dyn__lastFrameVisualBarProgress();
     // Get instance field reference: private System.Single <BPM>k__BackingField
-    float& dyn_$BPM$k__BackingField();
+    [[deprecated]] float& dyn_$BPM$k__BackingField();
     // Get instance field reference: private System.Int32 <BeatsPerBar>k__BackingField
-    int& dyn_$BeatsPerBar$k__BackingField();
+    [[deprecated]] int& dyn_$BeatsPerBar$k__BackingField();
     // Get instance field reference: private System.Int32 <BeatLengthInSamples>k__BackingField
-    int& dyn_$BeatLengthInSamples$k__BackingField();
+    [[deprecated]] int& dyn_$BeatLengthInSamples$k__BackingField();
     // Get instance field reference: private VROSC.BeatCounter/VROSC.SyncSource <CurrentSyncSource>k__BackingField
-    ::VROSC::BeatCounter::SyncSource& dyn_$CurrentSyncSource$k__BackingField();
+    [[deprecated]] ::VROSC::BeatCounter::SyncSource& dyn_$CurrentSyncSource$k__BackingField();
     // Get instance field reference: private System.Int32 <CurrentSyncSample>k__BackingField
-    int& dyn_$CurrentSyncSample$k__BackingField();
+    [[deprecated]] int& dyn_$CurrentSyncSample$k__BackingField();
     // Get instance field reference: private System.Single <AudioBarProgress>k__BackingField
-    float& dyn_$AudioBarProgress$k__BackingField();
+    [[deprecated]] float& dyn_$AudioBarProgress$k__BackingField();
     // Get instance field reference: private System.Int32 <AudioBarNumber>k__BackingField
-    int& dyn_$AudioBarNumber$k__BackingField();
+    [[deprecated]] int& dyn_$AudioBarNumber$k__BackingField();
     // Get instance field reference: private System.Single <VisualBarProgress>k__BackingField
-    float& dyn_$VisualBarProgress$k__BackingField();
+    [[deprecated]] float& dyn_$VisualBarProgress$k__BackingField();
     // Get instance field reference: private System.Int32 <VisualBarNumber>k__BackingField
-    int& dyn_$VisualBarNumber$k__BackingField();
+    [[deprecated]] int& dyn_$VisualBarNumber$k__BackingField();
     // Get instance field reference: private System.Boolean <IsVisualBeatFrame>k__BackingField
-    bool& dyn_$IsVisualBeatFrame$k__BackingField();
+    [[deprecated]] bool& dyn_$IsVisualBeatFrame$k__BackingField();
     // Get instance field reference: private System.Int32 <VisualCurrentBeat>k__BackingField
-    int& dyn_$VisualCurrentBeat$k__BackingField();
+    [[deprecated]] int& dyn_$VisualCurrentBeat$k__BackingField();
     // Get instance field reference: private System.Single <LooperMaxBPM>k__BackingField
-    float& dyn_$LooperMaxBPM$k__BackingField();
+    [[deprecated]] float& dyn_$LooperMaxBPM$k__BackingField();
     // Get instance field reference: private System.Boolean <IsSetup>k__BackingField
-    bool& dyn_$IsSetup$k__BackingField();
+    [[deprecated]] bool& dyn_$IsSetup$k__BackingField();
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
     // public VROSC.Metronome get_Metronome()
-    // Offset: 0x1375924
+    // Offset: 0x974888
     ::VROSC::Metronome* get_Metronome();
     // public System.Single get_BPM()
-    // Offset: 0x137592C
+    // Offset: 0x974890
     float get_BPM();
     // private System.Void set_BPM(System.Single value)
-    // Offset: 0x1375934
+    // Offset: 0x974898
     void set_BPM(float value);
     // public System.Int32 get_BeatsPerBar()
-    // Offset: 0x137593C
+    // Offset: 0x9748A0
     int get_BeatsPerBar();
     // private System.Void set_BeatsPerBar(System.Int32 value)
-    // Offset: 0x1375944
+    // Offset: 0x9748A8
     void set_BeatsPerBar(int value);
     // public System.Int32 get_BeatLengthInSamples()
-    // Offset: 0x137594C
+    // Offset: 0x9748B0
     int get_BeatLengthInSamples();
     // private System.Void set_BeatLengthInSamples(System.Int32 value)
-    // Offset: 0x1375954
+    // Offset: 0x9748B8
     void set_BeatLengthInSamples(int value);
     // public System.Int32 get_BarLengthInSamples()
-    // Offset: 0x137595C
+    // Offset: 0x9748C0
     int get_BarLengthInSamples();
     // public VROSC.BeatCounter/VROSC.SyncSource get_CurrentSyncSource()
-    // Offset: 0x1375968
+    // Offset: 0x9748CC
     ::VROSC::BeatCounter::SyncSource get_CurrentSyncSource();
     // private System.Void set_CurrentSyncSource(VROSC.BeatCounter/VROSC.SyncSource value)
-    // Offset: 0x1375970
+    // Offset: 0x9748D4
     void set_CurrentSyncSource(::VROSC::BeatCounter::SyncSource value);
     // public System.Int32 get_CurrentSyncSample()
-    // Offset: 0x1375978
+    // Offset: 0x9748DC
     int get_CurrentSyncSample();
     // private System.Void set_CurrentSyncSample(System.Int32 value)
-    // Offset: 0x1375980
+    // Offset: 0x9748E4
     void set_CurrentSyncSample(int value);
     // public System.Single get_AudioBarProgress()
-    // Offset: 0x1375988
+    // Offset: 0x9748EC
     float get_AudioBarProgress();
     // private System.Void set_AudioBarProgress(System.Single value)
-    // Offset: 0x1375990
+    // Offset: 0x9748F4
     void set_AudioBarProgress(float value);
     // public System.Int32 get_AudioBarNumber()
-    // Offset: 0x1375998
+    // Offset: 0x9748FC
     int get_AudioBarNumber();
     // private System.Void set_AudioBarNumber(System.Int32 value)
-    // Offset: 0x13759A0
+    // Offset: 0x974904
     void set_AudioBarNumber(int value);
     // public System.Single get_VisualBarProgress()
-    // Offset: 0x13759A8
+    // Offset: 0x97490C
     float get_VisualBarProgress();
     // private System.Void set_VisualBarProgress(System.Single value)
-    // Offset: 0x13759B0
+    // Offset: 0x974914
     void set_VisualBarProgress(float value);
     // public System.Int32 get_VisualBarNumber()
-    // Offset: 0x13759B8
+    // Offset: 0x97491C
     int get_VisualBarNumber();
     // private System.Void set_VisualBarNumber(System.Int32 value)
-    // Offset: 0x13759C0
+    // Offset: 0x974924
     void set_VisualBarNumber(int value);
     // public System.Boolean get_IsVisualBeatFrame()
-    // Offset: 0x13759C8
+    // Offset: 0x97492C
     bool get_IsVisualBeatFrame();
     // private System.Void set_IsVisualBeatFrame(System.Boolean value)
-    // Offset: 0x13759D0
+    // Offset: 0x974934
     void set_IsVisualBeatFrame(bool value);
     // public System.Int32 get_VisualCurrentBeat()
-    // Offset: 0x13759DC
+    // Offset: 0x974940
     int get_VisualCurrentBeat();
     // private System.Void set_VisualCurrentBeat(System.Int32 value)
-    // Offset: 0x13759E4
+    // Offset: 0x974948
     void set_VisualCurrentBeat(int value);
     // public System.Single get_LooperMaxBPM()
-    // Offset: 0x13759EC
+    // Offset: 0x974950
     float get_LooperMaxBPM();
     // private System.Void set_LooperMaxBPM(System.Single value)
-    // Offset: 0x13759F4
+    // Offset: 0x974958
     void set_LooperMaxBPM(float value);
     // public System.Boolean get_IsSetup()
-    // Offset: 0x13759FC
+    // Offset: 0x974960
     bool get_IsSetup();
     // private System.Void set_IsSetup(System.Boolean value)
-    // Offset: 0x1375A04
+    // Offset: 0x974968
     void set_IsSetup(bool value);
     // public System.Boolean get_IsPlaying()
-    // Offset: 0x1375A10
+    // Offset: 0x974974
     bool get_IsPlaying();
     // private System.Void set_IsPlaying(System.Boolean value)
-    // Offset: 0x1375A18
+    // Offset: 0x97497C
     void set_IsPlaying(bool value);
     // private System.Void Awake()
-    // Offset: 0x1375A24
+    // Offset: 0x974988
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x1375B10
+    // Offset: 0x974A74
     void OnDestroy();
     // public System.Void Setup(VROSC.BeatCounterUI beatCounterUI)
-    // Offset: 0x1375BFC
+    // Offset: 0x974B60
     void Setup(::VROSC::BeatCounterUI* beatCounterUI);
     // protected System.Void Update()
-    // Offset: 0x1375FDC
+    // Offset: 0x974EEC
     void Update();
     // private System.Void UpdateBarProgress()
-    // Offset: 0x13760EC
+    // Offset: 0x974FFC
     void UpdateBarProgress();
     // private System.Void SetSyncSampleFromBarProgress()
-    // Offset: 0x1376294
+    // Offset: 0x9751A4
     void SetSyncSampleFromBarProgress();
     // private System.Void VisualBeat(System.Int32 beatNumber)
-    // Offset: 0x13761FC
+    // Offset: 0x97510C
     void VisualBeat(int beatNumber);
     // public System.Double GetNextQuantizeDspTime(System.Int32 beatDivision, System.Double predictedDspTime)
-    // Offset: 0x13762F4
+    // Offset: 0x975204
     double GetNextQuantizeDspTime(int beatDivision, double predictedDspTime);
     // public System.Single GetQuantizeLength(System.Int32 beatDivision)
-    // Offset: 0x137648C
+    // Offset: 0x97539C
     float GetQuantizeLength(int beatDivision);
     // private System.Single GetBarLength()
-    // Offset: 0x1376470
+    // Offset: 0x975380
     float GetBarLength();
     // public System.Void SetBPM(System.Single bpm, VROSC.BeatCounter/VROSC.SyncSource syncSource, System.Boolean restartBar)
-    // Offset: 0x13764D0
+    // Offset: 0x9753E0
     void SetBPM(float bpm, ::VROSC::BeatCounter::SyncSource syncSource, bool restartBar);
     // public System.Void SetBeatLength(System.Int32 beatLengthInSamples, VROSC.BeatCounter/VROSC.SyncSource syncSource, System.Boolean restartBar)
-    // Offset: 0x13765AC
+    // Offset: 0x9754BC
     void SetBeatLength(int beatLengthInSamples, ::VROSC::BeatCounter::SyncSource syncSource, bool restartBar);
     // public System.Void SetBeatsPerBar(System.Int32 beatsPerBar)
-    // Offset: 0x13767C4
+    // Offset: 0x9756D4
     void SetBeatsPerBar(int beatsPerBar);
     // public System.Int32 GetCurrentVisualSubdivision(System.Int32 subdivision)
-    // Offset: 0x1376854
+    // Offset: 0x975764
     int GetCurrentVisualSubdivision(int subdivision);
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x137688C
+    // Offset: 0x97579C
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void FastForward(System.Int32 samples)
-    // Offset: 0x13768BC
+    // Offset: 0x9757CC
     void FastForward(int samples);
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x13768CC
+    // Offset: 0x9757DC
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // public System.Int32 GetNextQuantizePointAfterSample(System.Int32 sample, System.Int32 barDivision)
-    // Offset: 0x1376A18
+    // Offset: 0x975928
     int GetNextQuantizePointAfterSample(int sample, int barDivision);
     // public System.Void .ctor()
-    // Offset: 0x1376AA8
+    // Offset: 0x9759B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

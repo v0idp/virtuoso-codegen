@@ -51,15 +51,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Interactable : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <IsHovering>k__BackingField
     // Size: 0x1
     // Offset: 0x18
@@ -140,76 +132,76 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean <IsHovering>k__BackingField
-    bool& dyn_$IsHovering$k__BackingField();
+    [[deprecated]] bool& dyn_$IsHovering$k__BackingField();
     // Get instance field reference: private System.Boolean <IsInteracting>k__BackingField
-    bool& dyn_$IsInteracting$k__BackingField();
+    [[deprecated]] bool& dyn_$IsInteracting$k__BackingField();
     // Get instance field reference: public System.Action OnHoverStay
-    ::System::Action*& dyn_OnHoverStay();
+    [[deprecated]] ::System::Action*& dyn_OnHoverStay();
     // Get instance field reference: public System.Action`1<System.Boolean> OnHover
-    ::System::Action_1<bool>*& dyn_OnHover();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnHover();
     // Get instance field reference: public System.Action`1<System.Boolean> OnInteraction
-    ::System::Action_1<bool>*& dyn_OnInteraction();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnInteraction();
     // Get instance field reference: public System.Action`1<System.Boolean> OnInteractableDisabled
-    ::System::Action_1<bool>*& dyn_OnInteractableDisabled();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnInteractableDisabled();
     // Get instance field reference: protected UnityEngine.Vector3 _lastHoverPosition
-    ::UnityEngine::Vector3& dyn__lastHoverPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__lastHoverPosition();
     // Get instance field reference: protected System.Boolean _lastPointedAt
-    bool& dyn__lastPointedAt();
+    [[deprecated]] bool& dyn__lastPointedAt();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.InputDevice> _hoveringControllers
-    ::System::Collections::Generic::List_1<::VROSC::InputDevice*>*& dyn__hoveringControllers();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::InputDevice*>*& dyn__hoveringControllers();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _tooltipDatas
-    ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> _disablingObjects
-    ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__disablingObjects();
+    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__disablingObjects();
     // Get instance field reference: private System.Boolean _canBeinteractedWith
-    bool& dyn__canBeinteractedWith();
+    [[deprecated]] bool& dyn__canBeinteractedWith();
     // public System.Boolean get_IsHovering()
-    // Offset: 0x1385A8C
+    // Offset: 0x1948D28
     bool get_IsHovering();
     // private System.Void set_IsHovering(System.Boolean value)
-    // Offset: 0x1385A80
+    // Offset: 0x1948D1C
     void set_IsHovering(bool value);
     // public System.Boolean get_IsDisabled()
-    // Offset: 0x1385A94
+    // Offset: 0x1948D30
     bool get_IsDisabled();
     // public System.Boolean get_IsInteracting()
-    // Offset: 0x1385AF4
+    // Offset: 0x1948D90
     bool get_IsInteracting();
     // protected System.Void set_IsInteracting(System.Boolean value)
-    // Offset: 0x1385AE8
+    // Offset: 0x1948D84
     void set_IsInteracting(bool value);
     // public System.Boolean get_CanBeInteractedWith()
-    // Offset: 0x1385AFC
+    // Offset: 0x1948D98
     bool get_CanBeInteractedWith();
     // public System.Void SetDisabled(System.Object disabler, System.Boolean shouldBeDisabled)
-    // Offset: 0x1385B34
+    // Offset: 0x1948DD0
     void SetDisabled(::Il2CppObject* disabler, bool shouldBeDisabled);
     // public System.Void SetCanBeInteractedWith(System.Boolean canBeInteractedWith)
-    // Offset: 0x1385C40
+    // Offset: 0x1948EDC
     void SetCanBeInteractedWith(bool canBeInteractedWith);
     // public System.Void SetHovering(VROSC.InputDevice device, UnityEngine.Vector3 position, System.Boolean pointedAt, System.Boolean controllerIsHovering)
-    // Offset: 0x1385C4C
+    // Offset: 0x1948EE8
     void SetHovering(::VROSC::InputDevice* device, ::UnityEngine::Vector3 position, bool pointedAt, bool controllerIsHovering);
     // public System.Void ContinousHovering(VROSC.InputDevice device, UnityEngine.Vector3 position, System.Boolean pointedAt, System.Boolean v)
-    // Offset: 0x1385E5C
+    // Offset: 0x19490F8
     void ContinousHovering(::VROSC::InputDevice* device, ::UnityEngine::Vector3 position, bool pointedAt, bool v);
     // protected System.Void UpdateHovering(System.Boolean hovering)
-    // Offset: 0x1385FD8
+    // Offset: 0x1949274
     void UpdateHovering(bool hovering);
     // protected System.Void OnDisable()
-    // Offset: 0x1386060
+    // Offset: 0x19492FC
     void OnDisable();
     // public System.Void SetTooltipData(VROSC.TooltipData tooltipData)
-    // Offset: 0x1386070
+    // Offset: 0x1942F20
     void SetTooltipData(::VROSC::TooltipData* tooltipData);
     // public System.Void SetTooltipData(System.Collections.Generic.List`1<VROSC.TooltipData> tooltipDatas)
-    // Offset: 0x1386118
+    // Offset: 0x194930C
     void SetTooltipData(::System::Collections::Generic::List_1<::VROSC::TooltipData*>* tooltipDatas);
     // public System.Collections.Generic.List`1<VROSC.TooltipData> GetTooltipDatas()
-    // Offset: 0x1386120
+    // Offset: 0x1949314
     ::System::Collections::Generic::List_1<::VROSC::TooltipData*>* GetTooltipDatas();
     // protected System.Void .ctor()
-    // Offset: 0x1386128
+    // Offset: 0x1949398
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -54,15 +54,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class BlinkControllerButtonAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.BlinkControllerButtonBehaviour settings
     // Size: 0x8
     // Offset: 0x18
@@ -121,25 +113,25 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.BlinkControllerButtonBehaviour settings
-    ::VROSC::BlinkControllerButtonBehaviour*& dyn_settings();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour*& dyn_settings();
     // Get instance field reference: private VROSC.HandType _hand
-    ::VROSC::HandType& dyn__hand();
+    [[deprecated]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private VROSC.TriggerButton _button
-    ::VROSC::TriggerButton& dyn__button();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__button();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Single _fadeTime
-    float& dyn__fadeTime();
+    [[deprecated]] float& dyn__fadeTime();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onAssetStartAction
-    ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStartAction();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStartAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onAssetStopAction
-    ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStopAction();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStopAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onTimelineStartAction
-    ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStartAction();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStartAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onTimelineStopAction
-    ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStopAction();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStopAction();
     // public System.Void .ctor()
-    // Offset: 0x1323CB0
+    // Offset: 0x937830
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -151,7 +143,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<BlinkControllerButtonAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0x1323B84
+    // Offset: 0x937704
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

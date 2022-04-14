@@ -62,15 +62,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 meshInstanceID
-    int& dyn_meshInstanceID();
+    [[deprecated]] int& dyn_meshInstanceID();
     // Get instance field reference: public System.Int32 vertexOffset
-    int& dyn_vertexOffset();
+    [[deprecated]] int& dyn_vertexOffset();
     // Get instance field reference: public System.Int32 gameObjectInstanceID
-    int& dyn_gameObjectInstanceID();
+    [[deprecated]] int& dyn_gameObjectInstanceID();
     // Get instance field reference: public System.Int32 subMeshIndex
-    int& dyn_subMeshIndex();
+    [[deprecated]] int& dyn_subMeshIndex();
     // Get instance field reference: public UnityEngine.Matrix4x4 transform
-    ::UnityEngine::Matrix4x4& dyn_transform();
+    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_transform();
   }; // UnityEngine.MeshSubsetCombineUtility/UnityEngine.SubMeshInstance
   #pragma pack(pop)
   static check_size<sizeof(MeshSubsetCombineUtility::SubMeshInstance), 16 + sizeof(::UnityEngine::Matrix4x4)> __UnityEngine_MeshSubsetCombineUtility_SubMeshInstanceSizeCheck;

@@ -41,22 +41,14 @@ namespace Facebook::WitAi::CallbackHandlers {
   // [TokenAttribute] Offset: FFFFFFFF
   class SimpleIntentHandler : public ::Facebook::WitAi::CallbackHandlers::WitResponseHandler {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String intent
     // Size: 0x8
     // Offset: 0x20
     ::StringW intent;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [RangeAttribute] Offset: 0x5B1E78
+    // [RangeAttribute] Offset: 0x6C7FA8
     // public System.Single confidence
     // Size: 0x4
     // Offset: 0x28
@@ -73,16 +65,16 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
     public:
     // Get instance field reference: public System.String intent
-    ::StringW& dyn_intent();
+    [[deprecated]] ::StringW& dyn_intent();
     // Get instance field reference: public System.Single confidence
-    float& dyn_confidence();
+    [[deprecated]] float& dyn_confidence();
     // Get instance field reference: private UnityEngine.Events.UnityEvent onIntentTriggered
-    ::UnityEngine::Events::UnityEvent*& dyn_onIntentTriggered();
+    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_onIntentTriggered();
     // public UnityEngine.Events.UnityEvent get_OnIntentTriggered()
-    // Offset: 0x10F965C
+    // Offset: 0x166FEC4
     ::UnityEngine::Events::UnityEvent* get_OnIntentTriggered();
     // public System.Void .ctor()
-    // Offset: 0x10F97E0
+    // Offset: 0x1670048
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -96,7 +88,7 @@ namespace Facebook::WitAi::CallbackHandlers {
       return THROW_UNLESS((::il2cpp_utils::New<SimpleIntentHandler*, creationType>()));
     }
     // protected override System.Void OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x10F9664
+    // Offset: 0x166FECC
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
     void OnHandleResponse(::Facebook::WitAi::Lib::WitResponseNode* response);

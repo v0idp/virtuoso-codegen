@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupMidiManagerState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.MidiManager _midiManager
     // Size: 0x8
     // Offset: 0x10
@@ -62,25 +54,25 @@ namespace VROSC {
       return midiManager;
     }
     // Get instance field reference: private VROSC.MidiManager _midiManager
-    ::VROSC::MidiManager*& dyn__midiManager();
+    [[deprecated]] ::VROSC::MidiManager*& dyn__midiManager();
     // public System.Void .ctor(VROSC.MidiManager midiManager)
-    // Offset: 0x13B3AC0
+    // Offset: 0x192698C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupMidiManagerState* New_ctor(::VROSC::MidiManager* midiManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupMidiManagerState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupMidiManagerState*, creationType>(midiManager)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B3AEC
+    // Offset: 0x19269B8
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B3B08
+    // Offset: 0x19269D4
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B3B0C
+    // Offset: 0x19269D8
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B3B10
+    // Offset: 0x19269DC
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupMidiManagerState
   #pragma pack(pop)

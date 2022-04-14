@@ -39,15 +39,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class ChallengeEntry : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String DisplayScore
     // Size: 0x8
     // Offset: 0x10
@@ -94,21 +86,21 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::User*) == 0x8);
     public:
     // Get instance field reference: public readonly System.String DisplayScore
-    ::StringW& dyn_DisplayScore();
+    [[deprecated]] ::StringW& dyn_DisplayScore();
     // Get instance field reference: public readonly System.Byte[] ExtraData
-    ::ArrayW<uint8_t>& dyn_ExtraData();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_ExtraData();
     // Get instance field reference: public readonly System.UInt64 ID
-    uint64_t& dyn_ID();
+    [[deprecated]] uint64_t& dyn_ID();
     // Get instance field reference: public readonly System.Int32 Rank
-    int& dyn_Rank();
+    [[deprecated]] int& dyn_Rank();
     // Get instance field reference: public readonly System.Int64 Score
-    int64_t& dyn_Score();
+    [[deprecated]] int64_t& dyn_Score();
     // Get instance field reference: public readonly System.DateTime Timestamp
-    ::System::DateTime& dyn_Timestamp();
+    [[deprecated]] ::System::DateTime& dyn_Timestamp();
     // Get instance field reference: public readonly Oculus.Platform.Models.User User
-    ::Oculus::Platform::Models::User*& dyn_User();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_User();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7DB708
+    // Offset: 0x921AE8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ChallengeEntry* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::ChallengeEntry::.ctor");

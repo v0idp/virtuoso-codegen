@@ -38,20 +38,20 @@ namespace DG::Tweening {
   class TweenCallback : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x10326F0
+    // Offset: 0x15A90E8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TweenCallback* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::TweenCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TweenCallback*, creationType>(object, method)));
     }
     // public System.Void Invoke()
-    // Offset: 0x103784C
+    // Offset: 0x15AE244
     void Invoke();
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1037A7C
+    // Offset: 0x15AE474
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x1037AA8
+    // Offset: 0x15AE4A0
     void EndInvoke(::System::IAsyncResult* result);
   }; // DG.Tweening.TweenCallback
   #pragma pack(pop)

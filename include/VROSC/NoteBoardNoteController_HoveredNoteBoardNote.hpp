@@ -32,15 +32,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoardNoteController::HoveredNoteBoardNote : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.NoteFieldNoteData NoteBoardNote
     // Size: 0x8
     // Offset: 0x10
@@ -55,11 +47,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::InputDevice*) == 0x8);
     public:
     // Get instance field reference: public VROSC.NoteFieldNoteData NoteBoardNote
-    ::VROSC::NoteFieldNoteData*& dyn_NoteBoardNote();
+    [[deprecated]] ::VROSC::NoteFieldNoteData*& dyn_NoteBoardNote();
     // Get instance field reference: public VROSC.InputDevice Device
-    ::VROSC::InputDevice*& dyn_Device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_Device();
     // public System.Void .ctor(VROSC.NoteFieldNoteData noteBoardNote, VROSC.InputDevice device)
-    // Offset: 0x133E0D8
+    // Offset: 0x1965FC8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoardNoteController::HoveredNoteBoardNote* New_ctor(::VROSC::NoteFieldNoteData* noteBoardNote, ::VROSC::InputDevice* device) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteController::HoveredNoteBoardNote::.ctor");

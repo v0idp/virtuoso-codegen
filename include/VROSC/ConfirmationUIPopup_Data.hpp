@@ -24,15 +24,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ConfirmationUIPopup::Data : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String HeaderText
     // Size: 0x8
     // Offset: 0x10
@@ -47,11 +39,11 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String HeaderText
-    ::StringW& dyn_HeaderText();
+    [[deprecated]] ::StringW& dyn_HeaderText();
     // Get instance field reference: public System.String BodyText
-    ::StringW& dyn_BodyText();
+    [[deprecated]] ::StringW& dyn_BodyText();
     // public System.Void .ctor()
-    // Offset: 0x1360EB8
+    // Offset: 0x95D9AC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

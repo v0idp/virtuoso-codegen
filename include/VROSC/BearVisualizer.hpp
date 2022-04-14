@@ -36,22 +36,14 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::BearVisualizer::BeatGradient
     class BeatGradient;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.BearVisualizer/VROSC.BeatGradient[] _beatGradients
     // Size: 0x8
     // Offset: 0x18
     ::ArrayW<::VROSC::BearVisualizer::BeatGradient*> beatGradients;
     // Field size check
     static_assert(sizeof(::ArrayW<::VROSC::BearVisualizer::BeatGradient*>) == 0x8);
-    // [RangeAttribute] Offset: 0x675D64
+    // [RangeAttribute] Offset: 0x78C608
     // private System.Single _darkenOnMirror
     // Size: 0x4
     // Offset: 0x20
@@ -62,20 +54,20 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.BearVisualizer/VROSC.BeatGradient[] _beatGradients
-    ::ArrayW<::VROSC::BearVisualizer::BeatGradient*>& dyn__beatGradients();
+    [[deprecated]] ::ArrayW<::VROSC::BearVisualizer::BeatGradient*>& dyn__beatGradients();
     // Get instance field reference: private System.Single _darkenOnMirror
-    float& dyn__darkenOnMirror();
+    [[deprecated]] float& dyn__darkenOnMirror();
     // private System.Void OnEnable()
-    // Offset: 0x137560C
+    // Offset: 0x974570
     void OnEnable();
     // private System.Void SendBeat(System.Int32 beat)
-    // Offset: 0x13756F8
+    // Offset: 0x97465C
     void SendBeat(int beat);
     // private System.Void OnDisable()
-    // Offset: 0x1375828
+    // Offset: 0x97478C
     void OnDisable();
     // public System.Void .ctor()
-    // Offset: 0x1375914
+    // Offset: 0x974878
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -41,21 +41,21 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A4C3C
+    // [DescriptionAttribute] Offset: 0x6B8DF0
     // static field const value: static public Oculus.Platform.UserPresenceStatus Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.UserPresenceStatus Unknown
     static ::Oculus::Platform::UserPresenceStatus _get_Unknown();
     // Set static field: static public Oculus.Platform.UserPresenceStatus Unknown
     static void _set_Unknown(::Oculus::Platform::UserPresenceStatus value);
-    // [DescriptionAttribute] Offset: 0x5A4C74
+    // [DescriptionAttribute] Offset: 0x6B8E28
     // static field const value: static public Oculus.Platform.UserPresenceStatus Online
     static constexpr const int Online = 1;
     // Get static field: static public Oculus.Platform.UserPresenceStatus Online
     static ::Oculus::Platform::UserPresenceStatus _get_Online();
     // Set static field: static public Oculus.Platform.UserPresenceStatus Online
     static void _set_Online(::Oculus::Platform::UserPresenceStatus value);
-    // [DescriptionAttribute] Offset: 0x5A4CAC
+    // [DescriptionAttribute] Offset: 0x6B8E60
     // static field const value: static public Oculus.Platform.UserPresenceStatus Offline
     static constexpr const int Offline = 2;
     // Get static field: static public Oculus.Platform.UserPresenceStatus Offline
@@ -63,7 +63,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.UserPresenceStatus Offline
     static void _set_Offline(::Oculus::Platform::UserPresenceStatus value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.UserPresenceStatus
   #pragma pack(pop)
   static check_size<sizeof(UserPresenceStatus), 0 + sizeof(int)> __Oculus_Platform_UserPresenceStatusSizeCheck;

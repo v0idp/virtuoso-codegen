@@ -27,15 +27,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRSystemPerfMetrics::OVRSystemPerfMetricsTcpServer : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private OVRNetwork/OVRNetworkTcpServer tcpServer
     // Size: 0x8
     // Offset: 0x18
@@ -56,23 +48,23 @@ namespace GlobalNamespace {
     // Set static field: static public OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer singleton
     static void _set_singleton(::GlobalNamespace::OVRSystemPerfMetrics::OVRSystemPerfMetricsTcpServer* value);
     // Get instance field reference: private OVRNetwork/OVRNetworkTcpServer tcpServer
-    ::GlobalNamespace::OVRNetwork::OVRNetworkTcpServer*& dyn_tcpServer();
+    [[deprecated]] ::GlobalNamespace::OVRNetwork::OVRNetworkTcpServer*& dyn_tcpServer();
     // Get instance field reference: public System.Int32 listeningPort
-    int& dyn_listeningPort();
+    [[deprecated]] int& dyn_listeningPort();
     // private System.Void OnEnable()
-    // Offset: 0xF15A70
+    // Offset: 0x13EFA6C
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0xF15BCC
+    // Offset: 0x13EFBC8
     void OnDisable();
     // private System.Void Update()
-    // Offset: 0xF15C90
+    // Offset: 0x13EFC8C
     void Update();
     // private OVRSystemPerfMetrics/PerfMetrics GatherPerfMetrics()
-    // Offset: 0xF15D18
+    // Offset: 0x13EFD14
     ::GlobalNamespace::OVRSystemPerfMetrics::PerfMetrics* GatherPerfMetrics();
     // public System.Void .ctor()
-    // Offset: 0xF164BC
+    // Offset: 0x13F04B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -85,7 +77,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVRSystemPerfMetrics::OVRSystemPerfMetricsTcpServer*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0xF16528
+    // Offset: 0x13F0524
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

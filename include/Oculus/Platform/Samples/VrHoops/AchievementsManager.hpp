@@ -45,15 +45,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class AchievementsManager : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean m_likesToWinUnlocked
     // Size: 0x1
     // Offset: 0x10
@@ -72,21 +64,21 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.String LIKES_TO_WIN
     static void _set_LIKES_TO_WIN(::StringW value);
     // Get instance field reference: private System.Boolean m_likesToWinUnlocked
-    bool& dyn_m_likesToWinUnlocked();
+    [[deprecated]] bool& dyn_m_likesToWinUnlocked();
     // public System.Boolean get_LikesToWin()
-    // Offset: 0x7B1464
+    // Offset: 0x8F7844
     bool get_LikesToWin();
     // public System.Void CheckForAchievmentUpdates()
-    // Offset: 0x7B146C
+    // Offset: 0x8F784C
     void CheckForAchievmentUpdates();
     // public System.Void RecordWinForLocalUser()
-    // Offset: 0x7B15B0
+    // Offset: 0x8F7990
     void RecordWinForLocalUser();
     // private System.Void <CheckForAchievmentUpdates>b__4_0(Oculus.Platform.Message`1<Oculus.Platform.Models.AchievementProgressList> msg)
-    // Offset: 0x7B160C
+    // Offset: 0x8F79EC
     void $CheckForAchievmentUpdates$b__4_0(::Oculus::Platform::Message_1<::Oculus::Platform::Models::AchievementProgressList*>* msg);
     // public System.Void .ctor()
-    // Offset: 0x7B1604
+    // Offset: 0x8F79E4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

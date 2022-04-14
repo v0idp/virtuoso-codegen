@@ -52,34 +52,34 @@ namespace System::IO::Compression {
   class ZipFile : public ::Il2CppObject {
     public:
     // static public System.IO.Compression.ZipArchive Open(System.String archiveFileName, System.IO.Compression.ZipArchiveMode mode)
-    // Offset: 0x12EE064
+    // Offset: 0x18F5264
     static ::System::IO::Compression::ZipArchive* Open(::StringW archiveFileName, ::System::IO::Compression::ZipArchiveMode mode);
     // static public System.IO.Compression.ZipArchive Open(System.String archiveFileName, System.IO.Compression.ZipArchiveMode mode, System.Text.Encoding entryNameEncoding)
-    // Offset: 0x12EE06C
+    // Offset: 0x18F526C
     static ::System::IO::Compression::ZipArchive* Open(::StringW archiveFileName, ::System::IO::Compression::ZipArchiveMode mode, ::System::Text::Encoding* entryNameEncoding);
     // static public System.Void CreateFromDirectory(System.String sourceDirectoryName, System.String destinationArchiveFileName)
-    // Offset: 0x12EE240
+    // Offset: 0x18F5440
     static void CreateFromDirectory(::StringW sourceDirectoryName, ::StringW destinationArchiveFileName);
     // static public System.Void ExtractToDirectory(System.String sourceArchiveFileName, System.String destinationDirectoryName)
-    // Offset: 0x12EEAA4
+    // Offset: 0x18F5CA4
     static void ExtractToDirectory(::StringW sourceArchiveFileName, ::StringW destinationDirectoryName);
     // static public System.Void ExtractToDirectory(System.String sourceArchiveFileName, System.String destinationDirectoryName, System.Text.Encoding entryNameEncoding)
-    // Offset: 0x12EEAB0
+    // Offset: 0x18F5CB0
     static void ExtractToDirectory(::StringW sourceArchiveFileName, ::StringW destinationDirectoryName, ::System::Text::Encoding* entryNameEncoding);
     // static public System.Void ExtractToDirectory(System.String sourceArchiveFileName, System.String destinationDirectoryName, System.Text.Encoding entryNameEncoding, System.Boolean overwrite)
-    // Offset: 0x12EEAB8
+    // Offset: 0x18F5CB8
     static void ExtractToDirectory(::StringW sourceArchiveFileName, ::StringW destinationDirectoryName, ::System::Text::Encoding* entryNameEncoding, bool overwrite);
     // static private System.Void DoCreateFromDirectory(System.String sourceDirectoryName, System.String destinationArchiveFileName, System.Nullable`1<System.IO.Compression.CompressionLevel> compressionLevel, System.Boolean includeBaseDirectory, System.Text.Encoding entryNameEncoding)
-    // Offset: 0x12EE250
+    // Offset: 0x18F5450
     static void DoCreateFromDirectory(::StringW sourceDirectoryName, ::StringW destinationArchiveFileName, ::System::Nullable_1<::System::IO::Compression::CompressionLevel> compressionLevel, bool includeBaseDirectory, ::System::Text::Encoding* entryNameEncoding);
     // static private System.String EntryFromPath(System.String entry, System.Int32 offset, System.Int32 length, ref System.Char[] buffer, System.Boolean appendPathSeparator)
-    // Offset: 0x12EF164
+    // Offset: 0x18F6364
     static ::StringW EntryFromPath(::StringW entry, int offset, int length, ByRef<::ArrayW<::Il2CppChar>> buffer, bool appendPathSeparator);
     // static private System.Void EnsureCapacity(ref System.Char[] buffer, System.Int32 min)
-    // Offset: 0x12EFAB4
+    // Offset: 0x18F6CB4
     static void EnsureCapacity(ByRef<::ArrayW<::Il2CppChar>> buffer, int min);
     // static private System.Boolean IsDirEmpty(System.IO.DirectoryInfo possiblyEmptyDir)
-    // Offset: 0x12EF868
+    // Offset: 0x18F6A68
     static bool IsDirEmpty(::System::IO::DirectoryInfo* possiblyEmptyDir);
   }; // System.IO.Compression.ZipFile
   #pragma pack(pop)

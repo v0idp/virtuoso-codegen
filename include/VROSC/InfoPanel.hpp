@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InfoPanel : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AnimatedPanel _animation
     // Size: 0x8
     // Offset: 0x18
@@ -54,15 +46,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AnimatedPanel _animation
-    ::VROSC::AnimatedPanel*& dyn__animation();
+    [[deprecated]] ::VROSC::AnimatedPanel*& dyn__animation();
     // public System.Void Setup()
-    // Offset: 0x8A0828
+    // Offset: 0x19433C0
     void Setup();
     // public System.Void SetActive(System.Boolean shouldBeOpen, System.Boolean animate)
-    // Offset: 0x8A0834
+    // Offset: 0x19433CC
     void SetActive(bool shouldBeOpen, bool animate);
     // public System.Void .ctor()
-    // Offset: 0x8A0888
+    // Offset: 0x1943420
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

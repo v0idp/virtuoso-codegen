@@ -40,15 +40,7 @@ namespace System::Net {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class WebResponseStream::$$c__DisplayClass48_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Net.WebResponseStream <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -75,21 +67,21 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Net.WebResponseStream <>4__this
-    ::System::Net::WebResponseStream*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebResponseStream*& dyn_$$4__this();
     // Get instance field reference: public System.Byte[] buffer
-    ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: public System.Int32 offset
-    int& dyn_offset();
+    [[deprecated]] int& dyn_offset();
     // Get instance field reference: public System.Int32 size
-    int& dyn_size();
+    [[deprecated]] int& dyn_size();
     // System.Threading.Tasks.Task`1<System.ValueTuple`2<System.Int32,System.Int32>> <ReadAsync>b__0(System.Threading.CancellationToken ct)
-    // Offset: 0x8EE5D0
+    // Offset: 0x17CC39C
     ::System::Threading::Tasks::Task_1<::System::ValueTuple_2<int, int>>* $ReadAsync$b__0(::System::Threading::CancellationToken ct);
     // System.Void <ReadAsync>b__1()
-    // Offset: 0x8EE5FC
+    // Offset: 0x17CC3C8
     void $ReadAsync$b__1();
     // public System.Void .ctor()
-    // Offset: 0x8EE5C8
+    // Offset: 0x17CC394
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

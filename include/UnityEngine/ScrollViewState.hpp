@@ -27,7 +27,7 @@ namespace UnityEngine {
   class ScrollViewState : public ::Il2CppObject {
     public:
     // public System.Void .ctor()
-    // Offset: 0x1293DB0
+    // Offset: 0x1881320
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

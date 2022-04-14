@@ -44,15 +44,7 @@ namespace Oculus::Platform::Samples::VrBoardGame {
   // [TokenAttribute] Offset: FFFFFFFF
   class PlatformManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt64 m_myID
     // Size: 0x8
     // Offset: 0x18
@@ -73,32 +65,32 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Set static field: static private Oculus.Platform.Samples.VrBoardGame.PlatformManager s_instance
     static void _set_s_instance(::Oculus::Platform::Samples::VrBoardGame::PlatformManager* value);
     // Get instance field reference: private System.UInt64 m_myID
-    uint64_t& dyn_m_myID();
+    [[deprecated]] uint64_t& dyn_m_myID();
     // Get instance field reference: private System.String m_myOculusID
-    ::StringW& dyn_m_myOculusID();
+    [[deprecated]] ::StringW& dyn_m_myOculusID();
     // static public System.UInt64 get_MyID()
-    // Offset: 0x971000
+    // Offset: 0xB4339C
     static uint64_t get_MyID();
     // static public System.String get_MyOculusID()
-    // Offset: 0x9724D8
+    // Offset: 0xB44874
     static ::StringW get_MyOculusID();
     // private System.Void Awake()
-    // Offset: 0x984740
+    // Offset: 0xB56ADC
     void Awake();
     // private System.Void Start()
-    // Offset: 0x984894
+    // Offset: 0xB56C30
     void Start();
     // private System.Void IsEntitledCallback(Oculus.Platform.Message msg)
-    // Offset: 0x984934
+    // Offset: 0xB56CD0
     void IsEntitledCallback(::Oculus::Platform::Message* msg);
     // private System.Void GetLoggedInUserCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.User> msg)
-    // Offset: 0x984A20
+    // Offset: 0xB56DBC
     void GetLoggedInUserCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* msg);
     // static public System.Void TerminateWithError(Oculus.Platform.Message msg)
-    // Offset: 0x967A34
+    // Offset: 0xB39DD0
     static void TerminateWithError(::Oculus::Platform::Message* msg);
     // public System.Void .ctor()
-    // Offset: 0x984B08
+    // Offset: 0xB56EA4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

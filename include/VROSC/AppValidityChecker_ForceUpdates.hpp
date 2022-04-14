@@ -24,15 +24,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AppValidityChecker::ForceUpdates : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String EULATermsVersion
     // Size: 0x8
     // Offset: 0x10
@@ -53,13 +45,13 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String EULATermsVersion
-    ::StringW& dyn_EULATermsVersion();
+    [[deprecated]] ::StringW& dyn_EULATermsVersion();
     // Get instance field reference: public System.String MinVersionForApp
-    ::StringW& dyn_MinVersionForApp();
+    [[deprecated]] ::StringW& dyn_MinVersionForApp();
     // Get instance field reference: public System.String MinVersionForLibrary
-    ::StringW& dyn_MinVersionForLibrary();
+    [[deprecated]] ::StringW& dyn_MinVersionForLibrary();
     // public System.Void .ctor()
-    // Offset: 0x135A240
+    // Offset: 0x956B3C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

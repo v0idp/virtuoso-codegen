@@ -63,15 +63,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::TapeRecorderUI::$DisplayTextAlert$d__45
     struct $DisplayTextAlert$d__45;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TapeRecorder _tapeRecorder
     // Size: 0x8
     // Offset: 0x18
@@ -190,123 +182,123 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TapeRecorder _tapeRecorder
-    ::VROSC::TapeRecorder*& dyn__tapeRecorder();
+    [[deprecated]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
     // Get instance field reference: private UnityEngine.GameObject _mainPanel
-    ::UnityEngine::GameObject*& dyn__mainPanel();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__mainPanel();
     // Get instance field reference: private UnityEngine.GameObject _warningPopup
-    ::UnityEngine::GameObject*& dyn__warningPopup();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__warningPopup();
     // Get instance field reference: private VROSC.UIButton _recordButton
-    ::VROSC::UIButton*& dyn__recordButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__recordButton();
     // Get instance field reference: private VROSC.UIButton _playButton
-    ::VROSC::UIButton*& dyn__playButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__playButton();
     // Get instance field reference: private VROSC.UIButton _saveButton
-    ::VROSC::UIButton*& dyn__saveButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__saveButton();
     // Get instance field reference: private VROSC.UIButton _warningCancelButton
-    ::VROSC::UIButton*& dyn__warningCancelButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__warningCancelButton();
     // Get instance field reference: private VROSC.UIButton _warningOKButton
-    ::VROSC::UIButton*& dyn__warningOKButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__warningOKButton();
     // Get instance field reference: private VROSC.UISlideToggle _previewToggle
-    ::VROSC::UISlideToggle*& dyn__previewToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__previewToggle();
     // Get instance field reference: private UnityEngine.GameObject _recordIcon
-    ::UnityEngine::GameObject*& dyn__recordIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__recordIcon();
     // Get instance field reference: private UnityEngine.GameObject _stopIcon
-    ::UnityEngine::GameObject*& dyn__stopIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__stopIcon();
     // Get instance field reference: private UnityEngine.GameObject _playIcon
-    ::UnityEngine::GameObject*& dyn__playIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__playIcon();
     // Get instance field reference: private UnityEngine.GameObject _pauseIcon
-    ::UnityEngine::GameObject*& dyn__pauseIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__pauseIcon();
     // Get instance field reference: private TMPro.TextMeshPro _textAlert
-    ::TMPro::TextMeshPro*& dyn__textAlert();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textAlert();
     // Get instance field reference: private TMPro.TextMeshPro _timeCounter
-    ::TMPro::TextMeshPro*& dyn__timeCounter();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__timeCounter();
     // Get instance field reference: private VROSC.WaveformVisualizer _waveformVisualizer
-    ::VROSC::WaveformVisualizer*& dyn__waveformVisualizer();
+    [[deprecated]] ::VROSC::WaveformVisualizer*& dyn__waveformVisualizer();
     // Get instance field reference: private UnityEngine.RectTransform _playHead
-    ::UnityEngine::RectTransform*& dyn__playHead();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__playHead();
     // Get instance field reference: private VROSC.TimeSlider _timeSlider
-    ::VROSC::TimeSlider*& dyn__timeSlider();
+    [[deprecated]] ::VROSC::TimeSlider*& dyn__timeSlider();
     // Get instance field reference: private System.Single _playHeadFullWidth
-    float& dyn__playHeadFullWidth();
+    [[deprecated]] float& dyn__playHeadFullWidth();
     // public VROSC.TimeSlider get_TimeSlider()
-    // Offset: 0x13FB9EC
+    // Offset: 0xA22DD4
     ::VROSC::TimeSlider* get_TimeSlider();
     // public System.Void Setup(VROSC.TapeRecorder tapeRecorder)
-    // Offset: 0x13F8F30
+    // Offset: 0xA22DDC
     void Setup(::VROSC::TapeRecorder* tapeRecorder);
     // protected System.Void OnDestroy()
-    // Offset: 0x13FB9F4
+    // Offset: 0xA23448
     void OnDestroy();
     // public System.Void Clear()
-    // Offset: 0x13F9E5C
+    // Offset: 0xA232E8
     void Clear();
     // private System.Void RecordButtonPressed()
-    // Offset: 0x13FBE28
+    // Offset: 0xA2387C
     void RecordButtonPressed();
     // private System.Void PlayButtonPressed()
-    // Offset: 0x13FBEB8
+    // Offset: 0xA23928
     void PlayButtonPressed();
     // private System.Void SaveButtonPressed()
-    // Offset: 0x13FBEDC
+    // Offset: 0xA23954
     void SaveButtonPressed();
     // private System.Void WarningCancelPressed()
-    // Offset: 0x13FBF10
+    // Offset: 0xA239A0
     void WarningCancelPressed();
     // private System.Void WarningOKPressed()
-    // Offset: 0x13FBF14
+    // Offset: 0xA239A4
     void WarningOKPressed();
     // private System.Void PreviewToggleChanged(VROSC.InputDevice inputDevice, System.Boolean toggled)
-    // Offset: 0x13FBF40
+    // Offset: 0xA239D4
     void PreviewToggleChanged(::VROSC::InputDevice* inputDevice, bool toggled);
     // public System.Void UpdateVisualization(System.Single[] audioData, System.Single elapsedTimeSeconds)
-    // Offset: 0x13F969C
+    // Offset: 0xA239F4
     void UpdateVisualization(::ArrayW<float> audioData, float elapsedTimeSeconds);
     // public System.Void UpdateTimeLabel(System.Boolean useSliderValue)
-    // Offset: 0x13FBF68
+    // Offset: 0xA23A2C
     void UpdateTimeLabel(bool useSliderValue);
     // private System.Void ShowWarningPopup()
-    // Offset: 0x13FBE74
+    // Offset: 0xA238E4
     void ShowWarningPopup();
     // private System.Void HideWarningPopup()
-    // Offset: 0x13FBDE4
+    // Offset: 0xA23838
     void HideWarningPopup();
     // public System.Void ShowAsRecording()
-    // Offset: 0x13F9850
+    // Offset: 0xA23AE8
     void ShowAsRecording();
     // public System.Void ShowAsPlaying()
-    // Offset: 0x13F95F4
+    // Offset: 0xA23B5C
     void ShowAsPlaying();
     // public System.Void ShowAsPaused()
-    // Offset: 0x13F9590
+    // Offset: 0xA23BF4
     void ShowAsPaused();
     // public System.Void ShowAsConcluded()
-    // Offset: 0x13F9C74
+    // Offset: 0xA23C58
     void ShowAsConcluded();
     // public System.Void ShowAsSaving()
-    // Offset: 0x13FA1C8
+    // Offset: 0xA23C9C
     void ShowAsSaving();
     // public System.Void SaveSucceeded()
-    // Offset: 0x13FA5B4
+    // Offset: 0xA23E04
     void SaveSucceeded();
     // public System.Void SaveFailed(VROSC.Error error)
-    // Offset: 0x13FA6D0
+    // Offset: 0xA23E90
     void SaveFailed(::VROSC::Error error);
     // private System.Void TimeSliderChanged(System.Single newValue)
-    // Offset: 0x13FC154
+    // Offset: 0xA23F84
     void TimeSliderChanged(float newValue);
     // private System.Void SessionSaveBegun()
-    // Offset: 0x13FC1CC
+    // Offset: 0xA23FFC
     void SessionSaveBegun();
     // public System.Void DisplayLoadedRecording(System.Single[] audioData, System.Int32 startIndex, System.Int32 endIndex)
-    // Offset: 0x13F9CB8
+    // Offset: 0xA24024
     void DisplayLoadedRecording(::ArrayW<float> audioData, int startIndex, int endIndex);
     // public System.Void SetUseAsPreviewToggled(System.Boolean state)
-    // Offset: 0x13FA34C
+    // Offset: 0xA24290
     void SetUseAsPreviewToggled(bool state);
     // private System.Void DisplayTextAlert(System.String text, System.Single displayTime)
-    // Offset: 0x13FC078
+    // Offset: 0xA23D28
     void DisplayTextAlert(::StringW text, float displayTime);
     // public System.Void .ctor()
-    // Offset: 0x13FC2B4
+    // Offset: 0xA242B4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

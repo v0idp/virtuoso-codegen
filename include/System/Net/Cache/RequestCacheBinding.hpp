@@ -33,15 +33,7 @@ namespace System::Net::Cache {
   // [TokenAttribute] Offset: FFFFFFFF
   class RequestCacheBinding : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.Cache.RequestCache m_RequestCache
     // Size: 0x8
     // Offset: 0x10
@@ -62,14 +54,36 @@ namespace System::Net::Cache {
     static_assert(sizeof(::System::Net::Cache::RequestCachePolicy*) == 0x8);
     public:
     // Get instance field reference: private System.Net.Cache.RequestCache m_RequestCache
-    ::System::Net::Cache::RequestCache*& dyn_m_RequestCache();
+    [[deprecated]] ::System::Net::Cache::RequestCache*& dyn_m_RequestCache();
     // Get instance field reference: private System.Net.Cache.RequestCacheValidator m_CacheValidator
-    ::System::Net::Cache::RequestCacheValidator*& dyn_m_CacheValidator();
+    [[deprecated]] ::System::Net::Cache::RequestCacheValidator*& dyn_m_CacheValidator();
     // Get instance field reference: private System.Net.Cache.RequestCachePolicy m_Policy
-    ::System::Net::Cache::RequestCachePolicy*& dyn_m_Policy();
+    [[deprecated]] ::System::Net::Cache::RequestCachePolicy*& dyn_m_Policy();
+    // System.Net.Cache.RequestCache get_Cache()
+    // Offset: 0xD9831C
+    ::System::Net::Cache::RequestCache* get_Cache();
+    // System.Net.Cache.RequestCacheValidator get_Validator()
+    // Offset: 0xD98324
+    ::System::Net::Cache::RequestCacheValidator* get_Validator();
   }; // System.Net.Cache.RequestCacheBinding
   #pragma pack(pop)
   static check_size<sizeof(RequestCacheBinding), 32 + sizeof(::System::Net::Cache::RequestCachePolicy*)> __System_Net_Cache_RequestCacheBindingSizeCheck;
   static_assert(sizeof(RequestCacheBinding) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Net::Cache::RequestCacheBinding::get_Cache
+// Il2CppName: get_Cache
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Net::Cache::RequestCache* (System::Net::Cache::RequestCacheBinding::*)()>(&System::Net::Cache::RequestCacheBinding::get_Cache)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Net::Cache::RequestCacheBinding*), "get_Cache", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::Net::Cache::RequestCacheBinding::get_Validator
+// Il2CppName: get_Validator
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Net::Cache::RequestCacheValidator* (System::Net::Cache::RequestCacheBinding::*)()>(&System::Net::Cache::RequestCacheBinding::get_Validator)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Net::Cache::RequestCacheBinding*), "get_Validator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};

@@ -31,16 +31,16 @@ namespace GlobalNamespace {
     // Set static field: static public readonly System.Version version
     static void _set_version(::System::Version* value);
     // static private System.Void .cctor()
-    // Offset: 0xF0A384
+    // Offset: 0x13E4380
     static void _cctor();
     // static public System.Single ovrp_GetAppFramerate()
-    // Offset: 0xF0A1EC
+    // Offset: 0x13E41E8
     static float ovrp_GetAppFramerate();
     // static public OVRPlugin/PoseStatef ovrp_GetNodePoseState(OVRPlugin/Step stepId, OVRPlugin/Node nodeId)
-    // Offset: 0xF0A25C
+    // Offset: 0x13E4258
     static ::GlobalNamespace::OVRPlugin::PoseStatef ovrp_GetNodePoseState(::GlobalNamespace::OVRPlugin::Step stepId, ::GlobalNamespace::OVRPlugin::Node nodeId);
     // static public OVRPlugin/ControllerState2 ovrp_GetControllerState2(System.UInt32 controllerMask)
-    // Offset: 0xF0A2F4
+    // Offset: 0x13E42F0
     static ::GlobalNamespace::OVRPlugin::ControllerState2 ovrp_GetControllerState2(uint controllerMask);
   }; // OVRPlugin/OVRP_1_12_0
   #pragma pack(pop)

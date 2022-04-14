@@ -35,15 +35,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class BinaryObject : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Int32 objectId
     // Size: 0x4
     // Offset: 0x10
@@ -58,23 +50,23 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 objectId
-    int& dyn_objectId();
+    [[deprecated]] int& dyn_objectId();
     // Get instance field reference: System.Int32 mapId
-    int& dyn_mapId();
+    [[deprecated]] int& dyn_mapId();
     // System.Void Set(System.Int32 objectId, System.Int32 mapId)
-    // Offset: 0xCC7140
+    // Offset: 0xFE84D4
     void Set(int objectId, int mapId);
     // public System.Void Write(System.Runtime.Serialization.Formatters.Binary.__BinaryWriter sout)
-    // Offset: 0xCC7148
+    // Offset: 0xFE84DC
     void Write(::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter* sout);
     // public System.Void Read(System.Runtime.Serialization.Formatters.Binary.__BinaryParser input)
-    // Offset: 0xCC719C
+    // Offset: 0xFE8530
     void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input);
     // public System.Void Dump()
-    // Offset: 0xCC71E4
+    // Offset: 0xFE8578
     void Dump();
     // System.Void .ctor()
-    // Offset: 0xCC7138
+    // Offset: 0xFE84CC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

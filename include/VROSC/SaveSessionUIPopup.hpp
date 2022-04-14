@@ -64,15 +64,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SaveSessionUIPopup : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _headerText
     // Size: 0x8
     // Offset: 0x18
@@ -173,96 +165,96 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _headerText
-    ::TMPro::TextMeshPro*& dyn__headerText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__headerText();
     // Get instance field reference: private UIInputField _nameInputField
-    ::GlobalNamespace::UIInputField*& dyn__nameInputField();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__nameInputField();
     // Get instance field reference: private UIInputField _descriptionInputField
-    ::GlobalNamespace::UIInputField*& dyn__descriptionInputField();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__descriptionInputField();
     // Get instance field reference: private UIInputField _tagsInputField
-    ::GlobalNamespace::UIInputField*& dyn__tagsInputField();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__tagsInputField();
     // Get instance field reference: private VROSC.UIButton _saveButton
-    ::VROSC::UIButton*& dyn__saveButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__saveButton();
     // Get instance field reference: private VROSC.UIButton _cancelButton
-    ::VROSC::UIButton*& dyn__cancelButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__cancelButton();
     // Get instance field reference: private VROSC.SessionItemUI _previewUI
-    ::VROSC::SessionItemUI*& dyn__previewUI();
+    [[deprecated]] ::VROSC::SessionItemUI*& dyn__previewUI();
     // Get instance field reference: private TMPro.TextMeshPro _savingStateText
-    ::TMPro::TextMeshPro*& dyn__savingStateText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__savingStateText();
     // Get instance field reference: private VROSC.UISlideToggle _cloudSaveToggle
-    ::VROSC::UISlideToggle*& dyn__cloudSaveToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__cloudSaveToggle();
     // Get instance field reference: private VROSC.UISlideToggle _shareToggle
-    ::VROSC::UISlideToggle*& dyn__shareToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__shareToggle();
     // Get instance field reference: public System.Action`2<VROSC.SessionsLibraryUI/VROSC.SessionSaveData,System.Boolean> OnSaveConfirmed
-    ::System::Action_2<::VROSC::SessionsLibraryUI::SessionSaveData*, bool>*& dyn_OnSaveConfirmed();
+    [[deprecated]] ::System::Action_2<::VROSC::SessionsLibraryUI::SessionSaveData*, bool>*& dyn_OnSaveConfirmed();
     // Get instance field reference: public System.Action OnSaveCanceled
-    ::System::Action*& dyn_OnSaveCanceled();
+    [[deprecated]] ::System::Action*& dyn_OnSaveCanceled();
     // Get instance field reference: private UIInputField _selectedInputField
-    ::GlobalNamespace::UIInputField*& dyn__selectedInputField();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__selectedInputField();
     // Get instance field reference: private System.String _sessionId
-    ::StringW& dyn__sessionId();
+    [[deprecated]] ::StringW& dyn__sessionId();
     // Get instance field reference: private System.String _sessionDisplayName
-    ::StringW& dyn__sessionDisplayName();
+    [[deprecated]] ::StringW& dyn__sessionDisplayName();
     // Get instance field reference: private System.Boolean <IsNewSave>k__BackingField
-    bool& dyn_$IsNewSave$k__BackingField();
+    [[deprecated]] bool& dyn_$IsNewSave$k__BackingField();
     // public System.Boolean get_IsNewSave()
-    // Offset: 0xB0F004
+    // Offset: 0xDE0650
     bool get_IsNewSave();
     // private System.Void set_IsNewSave(System.Boolean value)
-    // Offset: 0xB0F00C
+    // Offset: 0xDE0658
     void set_IsNewSave(bool value);
     // private System.Void Awake()
-    // Offset: 0xB0F018
+    // Offset: 0xDE0664
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0xB0F3EC
+    // Offset: 0xDE0A38
     void OnDestroy();
     // public System.Void SetActive(System.Boolean isActive, System.Boolean isNewSave, System.Boolean allowOnline, System.Boolean keepData)
-    // Offset: 0xB0F7C0
+    // Offset: 0xDE0E0C
     void SetActive(bool isActive, bool isNewSave, bool allowOnline, bool keepData);
     // private System.Void PopulateData(System.Boolean isNewSave, System.Boolean allowOnline, System.Boolean keepData)
-    // Offset: 0xB0FA34
+    // Offset: 0xDE1080
     void PopulateData(bool isNewSave, bool allowOnline, bool keepData);
     // public System.Void UpdateSavingState(VROSC.Error error)
-    // Offset: 0xB100E8
+    // Offset: 0xDE1734
     void UpdateSavingState(::VROSC::Error error);
     // public System.Void UpdateSavingState(System.Single progress)
-    // Offset: 0xB10208
+    // Offset: 0xDE1854
     void UpdateSavingState(float progress);
     // public System.Void UpdateUploadingState(System.Single progress)
-    // Offset: 0xB1033C
+    // Offset: 0xDE1988
     void UpdateUploadingState(float progress);
     // public System.Void UpdatePreviewUploadingState(System.Single progress)
-    // Offset: 0xB10424
+    // Offset: 0xDE1A70
     void UpdatePreviewUploadingState(float progress);
     // private System.Int32 GetProgressPercent(System.Single progress)
-    // Offset: 0xB102F0
+    // Offset: 0xDE193C
     int GetProgressPercent(float progress);
     // private System.Void EnableInput(System.Boolean enable)
-    // Offset: 0xB0F888
+    // Offset: 0xDE0ED4
     void EnableInput(bool enable);
     // private System.Void SaveButtonPressed()
-    // Offset: 0xB1050C
+    // Offset: 0xDE1B58
     void SaveButtonPressed();
     // private System.Void CancelButtonPressed()
-    // Offset: 0xB106BC
+    // Offset: 0xDE1D08
     void CancelButtonPressed();
     // private System.Void SaveNameChanged(System.String saveName)
-    // Offset: 0xB106FC
+    // Offset: 0xDE1D48
     void SaveNameChanged(::StringW saveName);
     // private System.Void CloudSaveToggled(VROSC.InputDevice inputDevice, System.Boolean isToggled)
-    // Offset: 0xB10704
+    // Offset: 0xDE1D50
     void CloudSaveToggled(::VROSC::InputDevice* inputDevice, bool isToggled);
     // private System.Void ShareToggled(VROSC.InputDevice inputDevice, System.Boolean isToggled)
-    // Offset: 0xB10744
+    // Offset: 0xDE1D90
     void ShareToggled(::VROSC::InputDevice* inputDevice, bool isToggled);
     // private System.Void InputFieldSelected(UIInputField inputField)
-    // Offset: 0xB10784
+    // Offset: 0xDE1DD0
     void InputFieldSelected(::GlobalNamespace::UIInputField* inputField);
     // private System.Void UpdatePreview()
-    // Offset: 0xB0FFC4
+    // Offset: 0xDE1610
     void UpdatePreview();
     // public System.Void .ctor()
-    // Offset: 0xB107BC
+    // Offset: 0xDE1E08
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

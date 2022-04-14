@@ -32,15 +32,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CallbackHandler::UserLoginAnonymouslyCallback : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`3<System.String,System.String,System.String> Action
     // Size: 0x8
     // Offset: 0x10
@@ -67,15 +59,15 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Action`3<System.String,System.String,System.String> Action
-    ::System::Action_3<::StringW, ::StringW, ::StringW>*& dyn_Action();
+    [[deprecated]] ::System::Action_3<::StringW, ::StringW, ::StringW>*& dyn_Action();
     // Get instance field reference: public System.String UserId
-    ::StringW& dyn_UserId();
+    [[deprecated]] ::StringW& dyn_UserId();
     // Get instance field reference: public System.String AccessToken
-    ::StringW& dyn_AccessToken();
+    [[deprecated]] ::StringW& dyn_AccessToken();
     // Get instance field reference: public System.String RefreshToken
-    ::StringW& dyn_RefreshToken();
+    [[deprecated]] ::StringW& dyn_RefreshToken();
     // public System.Void .ctor()
-    // Offset: 0x135CE78
+    // Offset: 0x9593E0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

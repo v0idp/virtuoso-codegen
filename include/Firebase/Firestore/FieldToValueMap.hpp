@@ -40,15 +40,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FieldToValueMap : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -67,30 +59,30 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC3486C
+    // Offset: 0xD56A1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldToValueMap* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldToValueMap::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FieldToValueMap*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.FieldToValueMap obj)
-    // Offset: 0xC34944
+    // Offset: 0xD56AF4
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::FieldToValueMap* obj);
     // public System.Void Dispose()
-    // Offset: 0xC34A20
+    // Offset: 0xD56BD0
     void Dispose();
     // public System.Void Insert(System.String key, Firebase.Firestore.FieldValueProxy value)
-    // Offset: 0xC2BB50
+    // Offset: 0xD4D998
     void Insert(::StringW key, ::Firebase::Firestore::FieldValueProxy* value);
     // public Firebase.Firestore.FieldToValueMapIterator Iterator()
-    // Offset: 0xC28278
+    // Offset: 0xD49FD0
     ::Firebase::Firestore::FieldToValueMapIterator* Iterator();
     // public System.Void .ctor()
-    // Offset: 0xC2BAB0
+    // Offset: 0xD4D900
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -99,7 +91,7 @@ namespace Firebase::Firestore {
       return THROW_UNLESS((::il2cpp_utils::New<FieldToValueMap*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xC349B0
+    // Offset: 0xD56B60
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

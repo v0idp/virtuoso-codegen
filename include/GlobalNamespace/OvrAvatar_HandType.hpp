@@ -57,7 +57,7 @@ namespace GlobalNamespace {
     // Set static field: static public OvrAvatar/HandType Max
     static void _set_Max(::GlobalNamespace::OvrAvatar::HandType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // OvrAvatar/HandType
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatar::HandType), 0 + sizeof(int)> __GlobalNamespace_OvrAvatar_HandTypeSizeCheck;

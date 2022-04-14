@@ -36,15 +36,7 @@ namespace Facebook::WitAi::Lib {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitResponseData : public ::Facebook::WitAi::Lib::WitResponseNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String m_Data
     // Size: 0x8
     // Offset: 0x10
@@ -57,64 +49,64 @@ namespace Facebook::WitAi::Lib {
       return m_Data;
     }
     // Get instance field reference: private System.String m_Data
-    ::StringW& dyn_m_Data();
+    [[deprecated]] ::StringW& dyn_m_Data();
     // public System.Void .ctor(System.String aData)
-    // Offset: 0x10FE73C
+    // Offset: 0x1674FA4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseData* New_ctor(::StringW aData) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitResponseData*, creationType>(aData)));
     }
     // public System.Void .ctor(System.Single aData)
-    // Offset: 0x1102720
+    // Offset: 0x1678F8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseData* New_ctor(float aData) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitResponseData*, creationType>(aData)));
     }
     // public System.Void .ctor(System.Double aData)
-    // Offset: 0x1102764
+    // Offset: 0x1678FD0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseData* New_ctor(double aData) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitResponseData*, creationType>(aData)));
     }
     // public System.Void .ctor(System.Boolean aData)
-    // Offset: 0x11027A8
+    // Offset: 0x1679014
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseData* New_ctor(bool aData) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitResponseData*, creationType>(aData)));
     }
     // public System.Void .ctor(System.Int32 aData)
-    // Offset: 0x11027E4
+    // Offset: 0x1679050
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseData* New_ctor(int aData) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitResponseData*, creationType>(aData)));
     }
     // public override System.String get_Value()
-    // Offset: 0x1102710
+    // Offset: 0x1678F7C
     // Implemented from: Facebook.WitAi.Lib.WitResponseNode
     // Base method: System.String WitResponseNode::get_Value()
     ::StringW get_Value();
     // public override System.Void set_Value(System.String value)
-    // Offset: 0x1102718
+    // Offset: 0x1678F84
     // Implemented from: Facebook.WitAi.Lib.WitResponseNode
     // Base method: System.Void WitResponseNode::set_Value(System.String value)
     void set_Value(::StringW value);
     // public override System.String ToString()
-    // Offset: 0x1102820
+    // Offset: 0x167908C
     // Implemented from: Facebook.WitAi.Lib.WitResponseNode
     // Base method: System.String WitResponseNode::ToString()
     ::StringW ToString();
     // public override System.String ToString(System.String aPrefix)
-    // Offset: 0x110287C
+    // Offset: 0x16790E8
     // Implemented from: Facebook.WitAi.Lib.WitResponseNode
     // Base method: System.String WitResponseNode::ToString(System.String aPrefix)
     ::StringW ToString(::StringW aPrefix);
     // public override System.Void Serialize(System.IO.BinaryWriter aWriter)
-    // Offset: 0x11028D8
+    // Offset: 0x1679144
     // Implemented from: Facebook.WitAi.Lib.WitResponseNode
     // Base method: System.Void WitResponseNode::Serialize(System.IO.BinaryWriter aWriter)
     void Serialize(::System::IO::BinaryWriter* aWriter);

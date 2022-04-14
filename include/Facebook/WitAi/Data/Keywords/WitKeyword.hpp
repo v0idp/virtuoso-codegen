@@ -28,15 +28,7 @@ namespace Facebook::WitAi::Data::Keywords {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitKeyword : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String keyword
     // Size: 0x8
     // Offset: 0x10
@@ -51,11 +43,11 @@ namespace Facebook::WitAi::Data::Keywords {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: public System.String keyword
-    ::StringW& dyn_keyword();
+    [[deprecated]] ::StringW& dyn_keyword();
     // Get instance field reference: public System.String[] synonyms
-    ::ArrayW<::StringW>& dyn_synonyms();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_synonyms();
     // public System.Void .ctor()
-    // Offset: 0x10FEBB8
+    // Offset: 0x1675420
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -77,19 +77,19 @@ namespace TMPro::SpriteAssetUtilities {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String app
-    ::StringW& dyn_app();
+    [[deprecated]] ::StringW& dyn_app();
     // Get instance field reference: public System.String version
-    ::StringW& dyn_version();
+    [[deprecated]] ::StringW& dyn_version();
     // Get instance field reference: public System.String image
-    ::StringW& dyn_image();
+    [[deprecated]] ::StringW& dyn_image();
     // Get instance field reference: public System.String format
-    ::StringW& dyn_format();
+    [[deprecated]] ::StringW& dyn_format();
     // Get instance field reference: public TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.SpriteSize size
-    ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteSize& dyn_size();
+    [[deprecated]] ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteSize& dyn_size();
     // Get instance field reference: public System.Single scale
-    float& dyn_scale();
+    [[deprecated]] float& dyn_scale();
     // Get instance field reference: public System.String smartupdate
-    ::StringW& dyn_smartupdate();
+    [[deprecated]] ::StringW& dyn_smartupdate();
   }; // TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.Meta
   #pragma pack(pop)
   static check_size<sizeof(TexturePacker_JsonArray::Meta), 48 + sizeof(::StringW)> __TMPro_SpriteAssetUtilities_TexturePacker_JsonArray_MetaSizeCheck;

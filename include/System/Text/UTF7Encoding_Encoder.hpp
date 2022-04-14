@@ -32,15 +32,7 @@ namespace System::Text {
   // [TokenAttribute] Offset: FFFFFFFF
   class UTF7Encoding::Encoder : public ::System::Text::EncoderNLS {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Int32 bits
     // Size: 0x4
     // Offset: 0x38
@@ -55,21 +47,26 @@ namespace System::Text {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 bits
-    int& dyn_bits();
+    [[deprecated]] int& dyn_bits();
     // Get instance field reference: System.Int32 bitCount
-    int& dyn_bitCount();
+    [[deprecated]] int& dyn_bitCount();
     // public System.Void .ctor(System.Text.UTF7Encoding encoding)
-    // Offset: 0x108E70C
+    // Offset: 0x189AD00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UTF7Encoding::Encoder* New_ctor(::System::Text::UTF7Encoding* encoding) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::UTF7Encoding::Encoder::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UTF7Encoding::Encoder*, creationType>(encoding)));
     }
     // private System.Void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0x108E950
+    // Offset: 0x189AF44
     void System_Runtime_Serialization_ISerializable_GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context);
+    // override System.Boolean get_HasState()
+    // Offset: 0x189B064
+    // Implemented from: System.Text.EncoderNLS
+    // Base method: System.Boolean EncoderNLS::get_HasState()
+    bool get_HasState();
     // System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0x108E714
+    // Offset: 0x189AD08
     // Implemented from: System.Text.EncoderNLS
     // Base method: System.Void EncoderNLS::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -78,7 +75,7 @@ namespace System::Text {
       return THROW_UNLESS((::il2cpp_utils::New<UTF7Encoding::Encoder*, creationType>(info, context)));
     }
     // public override System.Void Reset()
-    // Offset: 0x108EA4C
+    // Offset: 0x189B040
     // Implemented from: System.Text.EncoderNLS
     // Base method: System.Void EncoderNLS::Reset()
     void Reset();
@@ -100,6 +97,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     static auto* info = &::il2cpp_utils::GetClassFromName("System.Runtime.Serialization", "SerializationInfo")->byval_arg;
     static auto* context = &::il2cpp_utils::GetClassFromName("System.Runtime.Serialization", "StreamingContext")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Text::UTF7Encoding::Encoder*), "System.Runtime.Serialization.ISerializable.GetObjectData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{info, context});
+  }
+};
+// Writing MetadataGetter for method: System::Text::UTF7Encoding::Encoder::get_HasState
+// Il2CppName: get_HasState
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (System::Text::UTF7Encoding::Encoder::*)()>(&System::Text::UTF7Encoding::Encoder::get_HasState)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Text::UTF7Encoding::Encoder*), "get_HasState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: System::Text::UTF7Encoding::Encoder::New_ctor

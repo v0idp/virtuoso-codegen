@@ -30,15 +30,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class PunchKeyboard::HitKey : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Key Key
     // Size: 0x8
     // Offset: 0x10
@@ -53,11 +45,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public Key Key
-    ::GlobalNamespace::Key*& dyn_Key();
+    [[deprecated]] ::GlobalNamespace::Key*& dyn_Key();
     // Get instance field reference: public System.Single Strength
-    float& dyn_Strength();
+    [[deprecated]] float& dyn_Strength();
     // public System.Void .ctor()
-    // Offset: 0x1344AD8
+    // Offset: 0x8CFA30
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

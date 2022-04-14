@@ -15,6 +15,11 @@
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
+// Forward declaring namespace: System::Text
+namespace System::Text {
+  // Forward declaring type: Encoding
+  class Encoding;
+}
 // Forward declaring namespace: System
 namespace System {
   // Forward declaring type: IFormatProvider
@@ -37,15 +42,7 @@ namespace System::IO {
   // [TokenAttribute] Offset: FFFFFFFF
   class TextWriter::SyncTextWriter : public ::System::IO::TextWriter {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IO.TextWriter _out
     // Size: 0x8
     // Offset: 0x28
@@ -54,86 +51,96 @@ namespace System::IO {
     static_assert(sizeof(::System::IO::TextWriter*) == 0x8);
     public:
     // Get instance field reference: private System.IO.TextWriter _out
-    ::System::IO::TextWriter*& dyn__out();
+    [[deprecated]] ::System::IO::TextWriter*& dyn__out();
     // System.Void .ctor(System.IO.TextWriter t)
-    // Offset: 0x108946C
+    // Offset: 0xE603EC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TextWriter::SyncTextWriter* New_ctor(::System::IO::TextWriter* t) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::TextWriter::SyncTextWriter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TextWriter::SyncTextWriter*, creationType>(t)));
     }
+    // public override System.Text.Encoding get_Encoding()
+    // Offset: 0xE60480
+    // Implemented from: System.IO.TextWriter
+    // Base method: System.Text.Encoding TextWriter::get_Encoding()
+    ::System::Text::Encoding* get_Encoding();
     // public override System.IFormatProvider get_FormatProvider()
-    // Offset: 0x1089500
+    // Offset: 0xE604A0
     // Implemented from: System.IO.TextWriter
     // Base method: System.IFormatProvider TextWriter::get_FormatProvider()
     ::System::IFormatProvider* get_FormatProvider();
+    // public override System.String get_NewLine()
+    // Offset: 0xE604C0
+    // Implemented from: System.IO.TextWriter
+    // Base method: System.String TextWriter::get_NewLine()
+    ::StringW get_NewLine();
     // public override System.Void Close()
-    // Offset: 0x1089520
+    // Offset: 0xE604E0
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Close()
     void Close();
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x1089540
+    // Offset: 0xE60500
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);
     // public override System.Void Flush()
-    // Offset: 0x108960C
+    // Offset: 0xE605CC
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Flush()
     void Flush();
     // public override System.Void Write(System.Char value)
-    // Offset: 0x108962C
+    // Offset: 0xE605EC
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Write(System.Char value)
     void Write(::Il2CppChar value);
     // public override System.Void Write(System.Char[] buffer)
-    // Offset: 0x108964C
+    // Offset: 0xE60610
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Write(System.Char[] buffer)
     void Write(::ArrayW<::Il2CppChar> buffer);
     // public override System.Void Write(System.Char[] buffer, System.Int32 index, System.Int32 count)
-    // Offset: 0x108966C
+    // Offset: 0xE60634
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Write(System.Char[] buffer, System.Int32 index, System.Int32 count)
     void Write(::ArrayW<::Il2CppChar> buffer, int index, int count);
     // public override System.Void Write(System.String value)
-    // Offset: 0x1089690
+    // Offset: 0xE60658
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Write(System.String value)
     void Write(::StringW value);
     // public override System.Void WriteLine()
-    // Offset: 0x10896B4
+    // Offset: 0xE6067C
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::WriteLine()
     void WriteLine();
     // public override System.Void WriteLine(System.Char value)
-    // Offset: 0x10896D8
+    // Offset: 0xE606A0
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::WriteLine(System.Char value)
     void WriteLine(::Il2CppChar value);
     // public override System.Void WriteLine(System.Char[] buffer, System.Int32 index, System.Int32 count)
-    // Offset: 0x10896FC
+    // Offset: 0xE606C4
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::WriteLine(System.Char[] buffer, System.Int32 index, System.Int32 count)
     void WriteLine(::ArrayW<::Il2CppChar> buffer, int index, int count);
     // public override System.Void WriteLine(System.String value)
-    // Offset: 0x1089720
+    // Offset: 0xE606E8
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::WriteLine(System.String value)
     void WriteLine(::StringW value);
     // public override System.Void WriteLine(System.String format, System.Object arg0)
-    // Offset: 0x1089744
+    // Offset: 0xE6070C
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::WriteLine(System.String format, System.Object arg0)
     void WriteLine(::StringW format, ::Il2CppObject* arg0);
     // public override System.Void WriteLine(System.String format, System.Object arg0, System.Object arg1)
-    // Offset: 0x1089768
+    // Offset: 0xE60730
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::WriteLine(System.String format, System.Object arg0, System.Object arg1)
     void WriteLine(::StringW format, ::Il2CppObject* arg0, ::Il2CppObject* arg1);
     // public override System.Threading.Tasks.Task WriteAsync(System.String value)
-    // Offset: 0x108978C
+    // Offset: 0xE60754
     // Implemented from: System.IO.TextWriter
     // Base method: System.Threading.Tasks.Task TextWriter::WriteAsync(System.String value)
     ::System::Threading::Tasks::Task* WriteAsync(::StringW value);
@@ -147,12 +154,28 @@ namespace System::IO {
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::IO::TextWriter::SyncTextWriter::get_Encoding
+// Il2CppName: get_Encoding
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Text::Encoding* (System::IO::TextWriter::SyncTextWriter::*)()>(&System::IO::TextWriter::SyncTextWriter::get_Encoding)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::IO::TextWriter::SyncTextWriter*), "get_Encoding", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::IO::TextWriter::SyncTextWriter::get_FormatProvider
 // Il2CppName: get_FormatProvider
 template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IFormatProvider* (System::IO::TextWriter::SyncTextWriter::*)()>(&System::IO::TextWriter::SyncTextWriter::get_FormatProvider)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::IO::TextWriter::SyncTextWriter*), "get_FormatProvider", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::IO::TextWriter::SyncTextWriter::get_NewLine
+// Il2CppName: get_NewLine
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (System::IO::TextWriter::SyncTextWriter::*)()>(&System::IO::TextWriter::SyncTextWriter::get_NewLine)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::IO::TextWriter::SyncTextWriter*), "get_NewLine", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: System::IO::TextWriter::SyncTextWriter::Close

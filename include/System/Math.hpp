@@ -11,6 +11,13 @@
 #include "System/Double.hpp"
 #include "beatsaber-hook/shared/utils/typedefs-array.hpp"
 // Completed includes
+// Begin forward declares
+// Forward declaring namespace: System
+namespace System {
+  // Forward declaring type: Decimal
+  struct Decimal;
+}
+// Completed forward declares
 // Type namespace: System
 namespace System {
   // Forward declaring type: Math
@@ -54,106 +61,157 @@ namespace System {
     // Set static field: static public System.Double E
     static void _set_E(double value);
     // static private System.Void .cctor()
-    // Offset: 0xECDFE8
+    // Offset: 0xFFC5FC
     static void _cctor();
     // static public System.Double Acos(System.Double d)
-    // Offset: 0xECDA20
+    // Offset: 0xFFBC38
     static double Acos(double d);
     // static public System.Double Asin(System.Double d)
-    // Offset: 0xECDA24
+    // Offset: 0xFFBC3C
     static double Asin(double d);
     // static public System.Double Atan(System.Double d)
-    // Offset: 0xECDA28
+    // Offset: 0xFFBC40
     static double Atan(double d);
     // static public System.Double Atan2(System.Double y, System.Double x)
-    // Offset: 0xECDA2C
+    // Offset: 0xFFBC44
     static double Atan2(double y, double x);
     // static public System.Double Ceiling(System.Double a)
-    // Offset: 0xECDA30
+    // Offset: 0xFFBC48
     static double Ceiling(double a);
     // static public System.Double Cos(System.Double d)
-    // Offset: 0xECDA38
+    // Offset: 0xFFBC50
     static double Cos(double d);
     // static public System.Double Floor(System.Double d)
-    // Offset: 0xECDA3C
+    // Offset: 0xFFBC54
     static double Floor(double d);
     // static private System.Double InternalTruncate(System.Double d)
-    // Offset: 0xECDA44
+    // Offset: 0xFFBC5C
     static double InternalTruncate(double d);
     // static public System.Double Sin(System.Double a)
-    // Offset: 0xECDAB0
+    // Offset: 0xFFBCC8
     static double Sin(double a);
     // static public System.Double Tan(System.Double a)
-    // Offset: 0xECDAB4
+    // Offset: 0xFFBCCC
     static double Tan(double a);
     // static public System.Double Tanh(System.Double value)
-    // Offset: 0xECDAB8
+    // Offset: 0xFFBCD0
     static double Tanh(double value);
     // static public System.Double Round(System.Double a)
-    // Offset: 0xECDABC
+    // Offset: 0xFFBCD4
     static double Round(double a);
+    // static public System.Decimal Round(System.Decimal d)
+    // Offset: 0xFFBD54
+    static ::System::Decimal Round(::System::Decimal d);
     // static private System.Double SplitFractionDouble(System.Double* value)
-    // Offset: 0xECDAAC
+    // Offset: 0xFFBCC4
     static double SplitFractionDouble(double* value);
+    // static public System.Decimal Truncate(System.Decimal d)
+    // Offset: 0xFFBDCC
+    static ::System::Decimal Truncate(::System::Decimal d);
     // static public System.Double Truncate(System.Double d)
-    // Offset: 0xECDB3C
+    // Offset: 0xFFBE40
     static double Truncate(double d);
     // static public System.Double Sqrt(System.Double d)
-    // Offset: 0xECDBA4
+    // Offset: 0xFFBEA8
     static double Sqrt(double d);
     // static public System.Double Log(System.Double d)
-    // Offset: 0xECDBBC
+    // Offset: 0xFFBEC0
     static double Log(double d);
     // static public System.Double Log10(System.Double d)
-    // Offset: 0xECDBC0
+    // Offset: 0xFFBEC4
     static double Log10(double d);
-    // static public System.Double Exp(System.Double d)
-    // Offset: 0xECDBC4
-    static double Exp(double d);
     // static public System.Double Pow(System.Double x, System.Double y)
-    // Offset: 0xECDBC8
+    // Offset: 0xFFBEC8
     static double Pow(double x, double y);
     // static public System.Int32 Abs(System.Int32 value)
-    // Offset: 0xECDBCC
+    // Offset: 0xFFBECC
     static int Abs(int value);
     // static private System.Int32 AbsHelper(System.Int32 value)
-    // Offset: 0xECDC40
+    // Offset: 0xFFBF40
     static int AbsHelper(int value);
+    // static public System.Int64 Abs(System.Int64 value)
+    // Offset: 0xFFBFB0
+    static int64_t Abs(int64_t value);
+    // static private System.Int64 AbsHelper(System.Int64 value)
+    // Offset: 0xFFC024
+    static int64_t AbsHelper(int64_t value);
     // static public System.Single Abs(System.Single value)
-    // Offset: 0xECDCB0
+    // Offset: 0xFFC094
     static float Abs(float value);
     // static public System.Double Abs(System.Double value)
-    // Offset: 0xECDCB8
+    // Offset: 0xFFC09C
     static double Abs(double value);
+    // static public System.Decimal Abs(System.Decimal value)
+    // Offset: 0xFFC0A4
+    static ::System::Decimal Abs(::System::Decimal value);
+    // static public System.SByte Max(System.SByte val1, System.SByte val2)
+    // Offset: 0xFFC118
+    static int8_t Max(int8_t val1, int8_t val2);
+    // static public System.Byte Max(System.Byte val1, System.Byte val2)
+    // Offset: 0xFFC128
+    static uint8_t Max(uint8_t val1, uint8_t val2);
+    // static public System.Int16 Max(System.Int16 val1, System.Int16 val2)
+    // Offset: 0xFFC138
+    static int16_t Max(int16_t val1, int16_t val2);
+    // static public System.UInt16 Max(System.UInt16 val1, System.UInt16 val2)
+    // Offset: 0xFFC148
+    static uint16_t Max(uint16_t val1, uint16_t val2);
     // static public System.Int32 Max(System.Int32 val1, System.Int32 val2)
-    // Offset: 0xECDCC0
+    // Offset: 0xFFC158
     static int Max(int val1, int val2);
     // static public System.UInt32 Max(System.UInt32 val1, System.UInt32 val2)
-    // Offset: 0xECDCCC
+    // Offset: 0xFFC164
     static uint Max(uint val1, uint val2);
     // static public System.Int64 Max(System.Int64 val1, System.Int64 val2)
-    // Offset: 0xECDCD8
+    // Offset: 0xFFC170
     static int64_t Max(int64_t val1, int64_t val2);
+    // static public System.UInt64 Max(System.UInt64 val1, System.UInt64 val2)
+    // Offset: 0xFFC17C
+    static uint64_t Max(uint64_t val1, uint64_t val2);
     // static public System.Single Max(System.Single val1, System.Single val2)
-    // Offset: 0xECDCE4
+    // Offset: 0xFFC188
     static float Max(float val1, float val2);
     // static public System.Double Max(System.Double val1, System.Double val2)
-    // Offset: 0xECDD28
+    // Offset: 0xFFC1CC
     static double Max(double val1, double val2);
+    // static public System.Decimal Max(System.Decimal val1, System.Decimal val2)
+    // Offset: 0xFFC258
+    static ::System::Decimal Max(::System::Decimal val1, ::System::Decimal val2);
+    // static public System.SByte Min(System.SByte val1, System.SByte val2)
+    // Offset: 0xFFC2E4
+    static int8_t Min(int8_t val1, int8_t val2);
+    // static public System.Byte Min(System.Byte val1, System.Byte val2)
+    // Offset: 0xFFC2F4
+    static uint8_t Min(uint8_t val1, uint8_t val2);
+    // static public System.Int16 Min(System.Int16 val1, System.Int16 val2)
+    // Offset: 0xFFC304
+    static int16_t Min(int16_t val1, int16_t val2);
+    // static public System.UInt16 Min(System.UInt16 val1, System.UInt16 val2)
+    // Offset: 0xFFC314
+    static uint16_t Min(uint16_t val1, uint16_t val2);
     // static public System.Int32 Min(System.Int32 val1, System.Int32 val2)
-    // Offset: 0xECDDB4
+    // Offset: 0xFFC324
     static int Min(int val1, int val2);
+    // static public System.UInt32 Min(System.UInt32 val1, System.UInt32 val2)
+    // Offset: 0xFFC330
+    static uint Min(uint val1, uint val2);
     // static public System.Int64 Min(System.Int64 val1, System.Int64 val2)
-    // Offset: 0xECDDC0
+    // Offset: 0xFFC33C
     static int64_t Min(int64_t val1, int64_t val2);
+    // static public System.UInt64 Min(System.UInt64 val1, System.UInt64 val2)
+    // Offset: 0xFFC348
+    static uint64_t Min(uint64_t val1, uint64_t val2);
     // static public System.Single Min(System.Single val1, System.Single val2)
-    // Offset: 0xECDDCC
+    // Offset: 0xFFC354
     static float Min(float val1, float val2);
     // static public System.Double Min(System.Double val1, System.Double val2)
-    // Offset: 0xECDE10
+    // Offset: 0xFFC398
     static double Min(double val1, double val2);
+    // static public System.Decimal Min(System.Decimal val1, System.Decimal val2)
+    // Offset: 0xFFC424
+    static ::System::Decimal Min(::System::Decimal val1, ::System::Decimal val2);
     // static public System.Double Log(System.Double a, System.Double newBase)
-    // Offset: 0xECDE9C
+    // Offset: 0xFFC4B0
     static double Log(double a, double newBase);
   }; // System.Math
   #pragma pack(pop)
@@ -276,6 +334,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(
     return ::il2cpp_utils::FindMethod(classof(System::Math*), "Round", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{a});
   }
 };
+// Writing MetadataGetter for method: System::Math::Round
+// Il2CppName: Round
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Decimal (*)(::System::Decimal)>(&System::Math::Round)> {
+  static const MethodInfo* get() {
+    static auto* d = &::il2cpp_utils::GetClassFromName("System", "Decimal")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Round", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{d});
+  }
+};
 // Writing MetadataGetter for method: System::Math::SplitFractionDouble
 // Il2CppName: SplitFractionDouble
 template<>
@@ -283,6 +350,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(
   static const MethodInfo* get() {
     static auto* value = &il2cpp_functions::Class_GetPtrClass(::il2cpp_utils::GetClassFromName("System", "Double"))->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Math*), "SplitFractionDouble", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Truncate
+// Il2CppName: Truncate
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Decimal (*)(::System::Decimal)>(&System::Math::Truncate)> {
+  static const MethodInfo* get() {
+    static auto* d = &::il2cpp_utils::GetClassFromName("System", "Decimal")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Truncate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{d});
   }
 };
 // Writing MetadataGetter for method: System::Math::Truncate
@@ -321,15 +397,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(
     return ::il2cpp_utils::FindMethod(classof(System::Math*), "Log10", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{d});
   }
 };
-// Writing MetadataGetter for method: System::Math::Exp
-// Il2CppName: Exp
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(double)>(&System::Math::Exp)> {
-  static const MethodInfo* get() {
-    static auto* d = &::il2cpp_utils::GetClassFromName("System", "Double")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Exp", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{d});
-  }
-};
 // Writing MetadataGetter for method: System::Math::Pow
 // Il2CppName: Pow
 template<>
@@ -361,6 +428,24 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(int
 // Writing MetadataGetter for method: System::Math::Abs
 // Il2CppName: Abs
 template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)(int64_t)>(&System::Math::Abs)> {
+  static const MethodInfo* get() {
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "Int64")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Abs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: System::Math::AbsHelper
+// Il2CppName: AbsHelper
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)(int64_t)>(&System::Math::AbsHelper)> {
+  static const MethodInfo* get() {
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "Int64")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "AbsHelper", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Abs
+// Il2CppName: Abs
+template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (*)(float)>(&System::Math::Abs)> {
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
@@ -374,6 +459,55 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "Double")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Math*), "Abs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Abs
+// Il2CppName: Abs
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Decimal (*)(::System::Decimal)>(&System::Math::Abs)> {
+  static const MethodInfo* get() {
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "Decimal")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Abs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Max
+// Il2CppName: Max
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int8_t (*)(int8_t, int8_t)>(&System::Math::Max)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "SByte")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "SByte")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Max", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Max
+// Il2CppName: Max
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint8_t (*)(uint8_t, uint8_t)>(&System::Math::Max)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Byte")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "Byte")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Max", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Max
+// Il2CppName: Max
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int16_t (*)(int16_t, int16_t)>(&System::Math::Max)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Int16")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "Int16")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Max", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Max
+// Il2CppName: Max
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint16_t (*)(uint16_t, uint16_t)>(&System::Math::Max)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "UInt16")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "UInt16")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Max", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
   }
 };
 // Writing MetadataGetter for method: System::Math::Max
@@ -409,6 +543,16 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)
 // Writing MetadataGetter for method: System::Math::Max
 // Il2CppName: Max
 template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint64_t (*)(uint64_t, uint64_t)>(&System::Math::Max)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "UInt64")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "UInt64")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Max", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Max
+// Il2CppName: Max
+template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (*)(float, float)>(&System::Math::Max)> {
   static const MethodInfo* get() {
     static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
@@ -426,6 +570,56 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(
     return ::il2cpp_utils::FindMethod(classof(System::Math*), "Max", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
   }
 };
+// Writing MetadataGetter for method: System::Math::Max
+// Il2CppName: Max
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Decimal (*)(::System::Decimal, ::System::Decimal)>(&System::Math::Max)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Decimal")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "Decimal")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Max", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Min
+// Il2CppName: Min
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int8_t (*)(int8_t, int8_t)>(&System::Math::Min)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "SByte")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "SByte")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Min
+// Il2CppName: Min
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint8_t (*)(uint8_t, uint8_t)>(&System::Math::Min)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Byte")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "Byte")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Min
+// Il2CppName: Min
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int16_t (*)(int16_t, int16_t)>(&System::Math::Min)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Int16")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "Int16")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Min
+// Il2CppName: Min
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint16_t (*)(uint16_t, uint16_t)>(&System::Math::Min)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "UInt16")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "UInt16")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
 // Writing MetadataGetter for method: System::Math::Min
 // Il2CppName: Min
 template<>
@@ -439,10 +633,30 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(int
 // Writing MetadataGetter for method: System::Math::Min
 // Il2CppName: Min
 template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint (*)(uint, uint)>(&System::Math::Min)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "UInt32")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "UInt32")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Min
+// Il2CppName: Min
+template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)(int64_t, int64_t)>(&System::Math::Min)> {
   static const MethodInfo* get() {
     static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Int64")->byval_arg;
     static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "Int64")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Min
+// Il2CppName: Min
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint64_t (*)(uint64_t, uint64_t)>(&System::Math::Min)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "UInt64")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "UInt64")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
   }
 };
@@ -463,6 +677,16 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(
   static const MethodInfo* get() {
     static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Double")->byval_arg;
     static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "Double")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
+  }
+};
+// Writing MetadataGetter for method: System::Math::Min
+// Il2CppName: Min
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Decimal (*)(::System::Decimal, ::System::Decimal)>(&System::Math::Min)> {
+  static const MethodInfo* get() {
+    static auto* val1 = &::il2cpp_utils::GetClassFromName("System", "Decimal")->byval_arg;
+    static auto* val2 = &::il2cpp_utils::GetClassFromName("System", "Decimal")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Math*), "Min", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{val1, val2});
   }
 };

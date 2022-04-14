@@ -160,47 +160,47 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int16 vt
-    int16_t& dyn_vt();
+    [[deprecated]] int16_t& dyn_vt();
     // Get instance field reference: public System.UInt16 wReserved1
-    uint16_t& dyn_wReserved1();
+    [[deprecated]] uint16_t& dyn_wReserved1();
     // Get instance field reference: public System.UInt16 wReserved2
-    uint16_t& dyn_wReserved2();
+    [[deprecated]] uint16_t& dyn_wReserved2();
     // Get instance field reference: public System.UInt16 wReserved3
-    uint16_t& dyn_wReserved3();
+    [[deprecated]] uint16_t& dyn_wReserved3();
     // Get instance field reference: public System.Int64 llVal
-    int64_t& dyn_llVal();
+    [[deprecated]] int64_t& dyn_llVal();
     // Get instance field reference: public System.Int32 lVal
-    int& dyn_lVal();
+    [[deprecated]] int& dyn_lVal();
     // Get instance field reference: public System.Byte bVal
-    uint8_t& dyn_bVal();
+    [[deprecated]] uint8_t& dyn_bVal();
     // Get instance field reference: public System.Int16 iVal
-    int16_t& dyn_iVal();
+    [[deprecated]] int16_t& dyn_iVal();
     // Get instance field reference: public System.Single fltVal
-    float& dyn_fltVal();
+    [[deprecated]] float& dyn_fltVal();
     // Get instance field reference: public System.Double dblVal
-    double& dyn_dblVal();
+    [[deprecated]] double& dyn_dblVal();
     // Get instance field reference: public System.Int16 boolVal
-    int16_t& dyn_boolVal();
+    [[deprecated]] int16_t& dyn_boolVal();
     // Get instance field reference: public System.IntPtr bstrVal
-    ::System::IntPtr& dyn_bstrVal();
+    [[deprecated]] ::System::IntPtr& dyn_bstrVal();
     // Get instance field reference: public System.SByte cVal
-    int8_t& dyn_cVal();
+    [[deprecated]] int8_t& dyn_cVal();
     // Get instance field reference: public System.UInt16 uiVal
-    uint16_t& dyn_uiVal();
+    [[deprecated]] uint16_t& dyn_uiVal();
     // Get instance field reference: public System.UInt32 ulVal
-    uint& dyn_ulVal();
+    [[deprecated]] uint& dyn_ulVal();
     // Get instance field reference: public System.UInt64 ullVal
-    uint64_t& dyn_ullVal();
+    [[deprecated]] uint64_t& dyn_ullVal();
     // Get instance field reference: public System.Int32 intVal
-    int& dyn_intVal();
+    [[deprecated]] int& dyn_intVal();
     // Get instance field reference: public System.UInt32 uintVal
-    uint& dyn_uintVal();
+    [[deprecated]] uint& dyn_uintVal();
     // Get instance field reference: public System.IntPtr pdispVal
-    ::System::IntPtr& dyn_pdispVal();
+    [[deprecated]] ::System::IntPtr& dyn_pdispVal();
     // Get instance field reference: public System.BRECORD bRecord
-    ::System::BRECORD& dyn_bRecord();
+    [[deprecated]] ::System::BRECORD& dyn_bRecord();
     // public System.Void Clear()
-    // Offset: 0xCEF7D4
+    // Offset: 0x120DB70
     void Clear();
   }; // System.Variant
   #pragma pack(pop)

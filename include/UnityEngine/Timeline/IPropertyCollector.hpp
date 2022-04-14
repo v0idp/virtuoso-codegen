@@ -63,7 +63,7 @@ namespace UnityEngine::Timeline {
     void AddFromName(::StringW name) {
       static_assert(std::is_convertible_v<T, ::UnityEngine::Component*>);
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::IPropertyCollector::AddFromName");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "AddFromName", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(name)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::UnityEngine::Timeline::IPropertyCollector*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, name);
     }
@@ -82,7 +82,7 @@ namespace UnityEngine::Timeline {
     void AddFromName(::UnityEngine::GameObject* obj, ::StringW name) {
       static_assert(std::is_convertible_v<T, ::UnityEngine::Component*>);
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::IPropertyCollector::AddFromName");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "AddFromName", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(obj), ::il2cpp_utils::ExtractType(name)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::UnityEngine::Timeline::IPropertyCollector*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, obj, name);
     }

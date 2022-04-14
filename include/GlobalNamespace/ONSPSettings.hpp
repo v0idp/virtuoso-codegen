@@ -28,15 +28,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class ONSPSettings : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 voiceLimit
     // Size: 0x4
     // Offset: 0x18
@@ -51,12 +43,12 @@ namespace GlobalNamespace {
     // Set static field: static private ONSPSettings instance
     static void _set_instance(::GlobalNamespace::ONSPSettings* value);
     // Get instance field reference: public System.Int32 voiceLimit
-    int& dyn_voiceLimit();
+    [[deprecated]] int& dyn_voiceLimit();
     // static public ONSPSettings get_Instance()
-    // Offset: 0x11C7CD4
+    // Offset: 0x176CBDC
     static ::GlobalNamespace::ONSPSettings* get_Instance();
     // public System.Void .ctor()
-    // Offset: 0x11C7E14
+    // Offset: 0x176CD1C
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

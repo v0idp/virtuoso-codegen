@@ -41,7 +41,7 @@ namespace Firebase::Firestore::Converters {
   class ByteArrayConverter : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
     // System.Void .ctor()
-    // Offset: 0xC29538
+    // Offset: 0xD4B260
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -50,12 +50,12 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<ByteArrayConverter*, creationType>()));
     }
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC295CC
+    // Offset: 0xD4B2F4
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
     // protected override System.Object DeserializeBytes(Firebase.Firestore.DeserializationContext context, System.Byte[] value)
-    // Offset: 0xC29638
+    // Offset: 0xD4B360
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeBytes(Firebase.Firestore.DeserializationContext context, System.Byte[] value)
     ::Il2CppObject* DeserializeBytes(::Firebase::Firestore::DeserializationContext* context, ::ArrayW<uint8_t> value);

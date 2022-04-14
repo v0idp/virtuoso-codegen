@@ -51,15 +51,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class PunchKeyboardSettings : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UISlideToggle _usePointAndClick
     // Size: 0x8
     // Offset: 0x18
@@ -120,49 +112,49 @@ namespace GlobalNamespace {
     // Set static field: static public System.Action OnSettingsUpdated
     static void _set_OnSettingsUpdated(::System::Action* value);
     // Get instance field reference: private VROSC.UISlideToggle _usePointAndClick
-    ::VROSC::UISlideToggle*& dyn__usePointAndClick();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__usePointAndClick();
     // Get instance field reference: private VROSC.UISlideToggle _useTouchables
-    ::VROSC::UISlideToggle*& dyn__useTouchables();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__useTouchables();
     // Get instance field reference: private VROSC.UISlideToggle _allowExternalKeyboard
-    ::VROSC::UISlideToggle*& dyn__allowExternalKeyboard();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__allowExternalKeyboard();
     // Get instance field reference: private VROSC.UISlideToggle _keySounds
-    ::VROSC::UISlideToggle*& dyn__keySounds();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__keySounds();
     // Get instance field reference: private VROSC.UIToggle _settingsButton
-    ::VROSC::UIToggle*& dyn__settingsButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__settingsButton();
     // Get instance field reference: private UnityEngine.GameObject _panelObject
-    ::UnityEngine::GameObject*& dyn__panelObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__panelObject();
     // private System.Void Awake()
-    // Offset: 0x994618
+    // Offset: 0xB2C0E0
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x994924
+    // Offset: 0xB2C410
     void OnDestroy();
     // private System.Void OnEnable()
-    // Offset: 0x994C30
+    // Offset: 0xB2C71C
     void OnEnable();
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x994C84
+    // Offset: 0xB2C770
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // private System.Void OnDisable()
-    // Offset: 0x994E00
+    // Offset: 0xB2C8EC
     void OnDisable();
     // private System.Void TogglePanel(VROSC.InputDevice device, System.Boolean toggled)
-    // Offset: 0x994E54
+    // Offset: 0xB2C940
     void TogglePanel(::VROSC::InputDevice* device, bool toggled);
     // private System.Void UseExternalKeyboardToggled(VROSC.InputDevice arg1, System.Boolean toggled)
-    // Offset: 0x994E74
+    // Offset: 0xB2C960
     void UseExternalKeyboardToggled(::VROSC::InputDevice* arg1, bool toggled);
     // private System.Void UseTouchablesToggled(VROSC.InputDevice arg1, System.Boolean toggled)
-    // Offset: 0x994F24
+    // Offset: 0xB2CA10
     void UseTouchablesToggled(::VROSC::InputDevice* arg1, bool toggled);
     // private System.Void UsePointAndClickToggled(VROSC.InputDevice arg1, System.Boolean toggled)
-    // Offset: 0x994FD4
+    // Offset: 0xB2CAC0
     void UsePointAndClickToggled(::VROSC::InputDevice* arg1, bool toggled);
     // private System.Void KeySoundsToggled(VROSC.InputDevice arg1, System.Boolean toggled)
-    // Offset: 0x995084
+    // Offset: 0xB2CB70
     void KeySoundsToggled(::VROSC::InputDevice* arg1, bool toggled);
     // public System.Void .ctor()
-    // Offset: 0x995134
+    // Offset: 0xB2CC20
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

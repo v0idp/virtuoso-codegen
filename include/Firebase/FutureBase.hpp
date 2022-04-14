@@ -38,15 +38,7 @@ namespace Firebase {
   // [TokenAttribute] Offset: FFFFFFFF
   class FutureBase : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -65,30 +57,30 @@ namespace Firebase {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0x1299ABC
+    // Offset: 0x1888740
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FutureBase* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::FutureBase::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FutureBase*, creationType>(cPtr, cMemoryOwn)));
     }
     // public System.Void Dispose()
-    // Offset: 0x1299B90
+    // Offset: 0x1888814
     void Dispose();
     // public Firebase.FutureStatus status()
-    // Offset: 0x1299D20
+    // Offset: 0x18889A4
     ::Firebase::FutureStatus status();
     // public System.Int32 error()
-    // Offset: 0x1299DBC
+    // Offset: 0x1888A40
     int error();
     // public System.String error_message()
-    // Offset: 0x1299E58
+    // Offset: 0x1888ADC
     ::StringW error_message();
     // protected override System.Void Finalize()
-    // Offset: 0x1299B20
+    // Offset: 0x18887A4
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

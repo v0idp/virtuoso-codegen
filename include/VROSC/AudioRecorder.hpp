@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AudioRecorder : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.HelmRecorder _helmRecorder
     // Size: 0x8
     // Offset: 0x18
@@ -131,54 +123,54 @@ namespace VROSC {
     // Set static field: static public System.Single AudioLatency
     static void _set_AudioLatency(float value);
     // Get instance field reference: private VROSC.HelmRecorder _helmRecorder
-    ::VROSC::HelmRecorder*& dyn__helmRecorder();
+    [[deprecated]] ::VROSC::HelmRecorder*& dyn__helmRecorder();
     // Get instance field reference: private VROSC.MicrophoneRecorder _microphoneRecorder
-    ::VROSC::MicrophoneRecorder*& dyn__microphoneRecorder();
+    [[deprecated]] ::VROSC::MicrophoneRecorder*& dyn__microphoneRecorder();
     // Get instance field reference: private VROSC.MixerGroupRecorder _samplerRecorder
-    ::VROSC::MixerGroupRecorder*& dyn__samplerRecorder();
+    [[deprecated]] ::VROSC::MixerGroupRecorder*& dyn__samplerRecorder();
     // Get instance field reference: private VROSC.MasterRecorder _masterRecorder
-    ::VROSC::MasterRecorder*& dyn__masterRecorder();
+    [[deprecated]] ::VROSC::MasterRecorder*& dyn__masterRecorder();
     // static public System.Int32 get_Channels()
-    // Offset: 0x1372B04
+    // Offset: 0x971898
     static int get_Channels();
     // static private System.Void set_Channels(System.Int32 value)
-    // Offset: 0x1372B68
+    // Offset: 0x9718FC
     static void set_Channels(int value);
     // public System.Void Setup()
-    // Offset: 0x136D1C4
+    // Offset: 0x96BA60
     void Setup();
     // private System.Void ResetAudioBufferSize()
-    // Offset: 0x1372BD0
+    // Offset: 0x971964
     void ResetAudioBufferSize();
     // public System.Void StartRecording(VROSC.SoundSource soundSource, System.Action`1<System.Single[]> recordingFilledCallback, System.Int32 samples, System.Single[] fillArray, System.Boolean overdub, System.Int32 callbackAfterLength)
-    // Offset: 0x1372C90
+    // Offset: 0x971A24
     void StartRecording(::VROSC::SoundSource soundSource, ::System::Action_1<::ArrayW<float>>* recordingFilledCallback, int samples, ::ArrayW<float> fillArray, bool overdub, int callbackAfterLength);
     // public System.Single[] StealRecording(VROSC.SoundSource soundSource, System.Boolean clear, System.Boolean stealEvenIfNotRecording)
-    // Offset: 0x1372DB8
+    // Offset: 0x971B4C
     ::ArrayW<float> StealRecording(::VROSC::SoundSource soundSource, bool clear, bool stealEvenIfNotRecording);
     // public System.Single[] GetRecordingSpan(VROSC.SoundSource soundSource, System.Int32 startIndex, System.Int32 endIndex, out System.Int32 currentIndex)
-    // Offset: 0x1372E34
+    // Offset: 0x971BC8
     ::ArrayW<float> GetRecordingSpan(::VROSC::SoundSource soundSource, int startIndex, int endIndex, ByRef<int> currentIndex);
     // public System.Single[] StopRecording(VROSC.SoundSource soundSource)
-    // Offset: 0x1372EB8
+    // Offset: 0x971C4C
     ::ArrayW<float> StopRecording(::VROSC::SoundSource soundSource);
     // public System.Void SetMicrophoneSamples(System.Single[] buffer)
-    // Offset: 0x1372F24
+    // Offset: 0x971CB8
     void SetMicrophoneSamples(::ArrayW<float> buffer);
     // public System.Void ClearMicrophoneBuffer()
-    // Offset: 0x1372F40
+    // Offset: 0x971CD4
     void ClearMicrophoneBuffer();
     // public System.Single[] GetRawMicrophoneRecordingData()
-    // Offset: 0x1372F5C
+    // Offset: 0x971CF0
     ::ArrayW<float> GetRawMicrophoneRecordingData();
     // public System.Boolean IsRecording(VROSC.SoundSource soundSource)
-    // Offset: 0x1372F78
+    // Offset: 0x971D0C
     bool IsRecording(::VROSC::SoundSource soundSource);
     // public System.Boolean IsRecording()
-    // Offset: 0x1373060
+    // Offset: 0x971DF4
     bool IsRecording();
     // public System.Void .ctor()
-    // Offset: 0x13730C0
+    // Offset: 0x971E54
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -191,7 +183,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AudioRecorder*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x13730C8
+    // Offset: 0x971E5C
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

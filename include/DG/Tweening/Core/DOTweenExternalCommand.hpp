@@ -47,13 +47,13 @@ namespace DG::Tweening::Core {
     // Set static field: static private System.Action`4<DG.Tweening.Plugins.Options.PathOptions,DG.Tweening.Tween,UnityEngine.Quaternion,UnityEngine.Transform> SetOrientationOnPath
     static void _set_SetOrientationOnPath(::System::Action_4<::DG::Tweening::Plugins::Options::PathOptions, ::DG::Tweening::Tween*, ::UnityEngine::Quaternion, ::UnityEngine::Transform*>* value);
     // static public System.Void add_SetOrientationOnPath(System.Action`4<DG.Tweening.Plugins.Options.PathOptions,DG.Tweening.Tween,UnityEngine.Quaternion,UnityEngine.Transform> value)
-    // Offset: 0x109A4D0
+    // Offset: 0x15DCAF8
     static void add_SetOrientationOnPath(::System::Action_4<::DG::Tweening::Plugins::Options::PathOptions, ::DG::Tweening::Tween*, ::UnityEngine::Quaternion, ::UnityEngine::Transform*>* value);
     // static public System.Void remove_SetOrientationOnPath(System.Action`4<DG.Tweening.Plugins.Options.PathOptions,DG.Tweening.Tween,UnityEngine.Quaternion,UnityEngine.Transform> value)
-    // Offset: 0x109A58C
+    // Offset: 0x15DCBB4
     static void remove_SetOrientationOnPath(::System::Action_4<::DG::Tweening::Plugins::Options::PathOptions, ::DG::Tweening::Tween*, ::UnityEngine::Quaternion, ::UnityEngine::Transform*>* value);
     // static System.Void Dispatch_SetOrientationOnPath(DG.Tweening.Plugins.Options.PathOptions options, DG.Tweening.Tween t, UnityEngine.Quaternion newRot, UnityEngine.Transform trans)
-    // Offset: 0x109A648
+    // Offset: 0x15DCC70
     static void Dispatch_SetOrientationOnPath(::DG::Tweening::Plugins::Options::PathOptions options, ::DG::Tweening::Tween* t, ::UnityEngine::Quaternion newRot, ::UnityEngine::Transform* trans);
   }; // DG.Tweening.Core.DOTweenExternalCommand
   #pragma pack(pop)

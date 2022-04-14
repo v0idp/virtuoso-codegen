@@ -48,15 +48,7 @@ namespace Firebase {
     public:
     // Nested type: ::Firebase::LogUtil::LogMessageDelegate
     class LogMessageDelegate;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _disposed
     // Size: 0x1
     // Offset: 0x10
@@ -85,33 +77,33 @@ namespace Firebase {
     // Set static field: static private Firebase.LogUtil/Firebase.LogMessageDelegate <>f__mg$cache0
     static void _set_$$f__mg$cache0(::Firebase::LogUtil::LogMessageDelegate* value);
     // Get instance field reference: private System.Boolean _disposed
-    bool& dyn__disposed();
+    [[deprecated]] bool& dyn__disposed();
     // static private System.Void .cctor()
-    // Offset: 0x129BB18
+    // Offset: 0x1889A00
     static void _cctor();
     // static public System.Void InitializeLogging()
-    // Offset: 0x129644C
+    // Offset: 0x1885050
     static void InitializeLogging();
     // static Firebase.Platform.PlatformLogLevel ConvertLogLevel(Firebase.LogLevel logLevel)
-    // Offset: 0x12999C0
+    // Offset: 0x1888644
     static ::Firebase::Platform::PlatformLogLevel ConvertLogLevel(::Firebase::LogLevel logLevel);
     // static System.Void LogMessage(Firebase.LogLevel logLevel, System.String message)
-    // Offset: 0x1298DAC
+    // Offset: 0x1887920
     static void LogMessage(::Firebase::LogLevel logLevel, ::StringW message);
     // static System.Void LogMessageFromCallback(Firebase.LogLevel logLevel, System.String message)
-    // Offset: 0x129BA60
+    // Offset: 0x1889948
     static void LogMessageFromCallback(::Firebase::LogLevel logLevel, ::StringW message);
     // public System.Void Dispose()
-    // Offset: 0x129BDE8
+    // Offset: 0x1889CD0
     void Dispose();
     // protected System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x129BDB0
+    // Offset: 0x1889C98
     void Dispose(bool disposing);
     // private System.Void <LogUtil>m__0(System.Object sender, System.EventArgs e)
-    // Offset: 0x129BE64
+    // Offset: 0x1889D4C
     void $LogUtil$m__0(::Il2CppObject* sender, ::System::EventArgs* e);
     // public System.Void .ctor()
-    // Offset: 0x129BBB0
+    // Offset: 0x1889A98
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -120,7 +112,7 @@ namespace Firebase {
       return THROW_UNLESS((::il2cpp_utils::New<LogUtil*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x129BD34
+    // Offset: 0x1889C1C
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

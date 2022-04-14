@@ -75,15 +75,7 @@ namespace Firebase::Unity {
     class $Send$c__AnonStorey3;
     // Nested type: ::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey4
     class $Send$c__AnonStorey4;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.Queue`1<System.Tuple`2<System.Threading.SendOrPostCallback,System.Object>> queue
     // Size: 0x8
     // Offset: 0x18
@@ -114,37 +106,37 @@ namespace Firebase::Unity {
     // Set static field: static private System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.ManualResetEvent> signalDictionary
     static void _set_signalDictionary(::System::Collections::Generic::Dictionary_2<int, ::System::Threading::ManualResetEvent*>* value);
     // Get instance field reference: private System.Collections.Generic.Queue`1<System.Tuple`2<System.Threading.SendOrPostCallback,System.Object>> queue
-    ::System::Collections::Generic::Queue_1<::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*>*& dyn_queue();
+    [[deprecated]] ::System::Collections::Generic::Queue_1<::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*>*& dyn_queue();
     // Get instance field reference: private Firebase.Unity.UnitySynchronizationContext/Firebase.Unity.SynchronizationContextBehavoir behavior
-    ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir*& dyn_behavior();
+    [[deprecated]] ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir*& dyn_behavior();
     // Get instance field reference: private System.Int32 mainThreadId
-    int& dyn_mainThreadId();
+    [[deprecated]] int& dyn_mainThreadId();
     // private System.Void .ctor(UnityEngine.GameObject gameObject)
-    // Offset: 0x12CBA6C
+    // Offset: 0x18CADFC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnitySynchronizationContext* New_ctor(::UnityEngine::GameObject* gameObject) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Unity::UnitySynchronizationContext::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UnitySynchronizationContext*, creationType>(gameObject)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12CC004
+    // Offset: 0x18CB394
     static void _cctor();
     // static public System.Void Create(UnityEngine.GameObject gameObject)
-    // Offset: 0x12CA200
+    // Offset: 0x18C9590
     static void Create(::UnityEngine::GameObject* gameObject);
     // static public System.Void Destroy()
-    // Offset: 0x12CA998
+    // Offset: 0x18C9D28
     static void Destroy();
     // private System.Threading.ManualResetEvent GetThreadEvent()
-    // Offset: 0x12CBB80
+    // Offset: 0x18CAF10
     ::System::Threading::ManualResetEvent* GetThreadEvent();
     // public override System.Void Post(System.Threading.SendOrPostCallback d, System.Object state)
-    // Offset: 0x12CBD7C
+    // Offset: 0x18CB10C
     // Implemented from: System.Threading.SynchronizationContext
     // Base method: System.Void SynchronizationContext::Post(System.Threading.SendOrPostCallback d, System.Object state)
     void Post(::System::Threading::SendOrPostCallback* d, ::Il2CppObject* state);
     // public override System.Void Send(System.Threading.SendOrPostCallback d, System.Object state)
-    // Offset: 0x12CBE98
+    // Offset: 0x18CB228
     // Implemented from: System.Threading.SynchronizationContext
     // Base method: System.Void SynchronizationContext::Send(System.Threading.SendOrPostCallback d, System.Object state)
     void Send(::System::Threading::SendOrPostCallback* d, ::Il2CppObject* state);

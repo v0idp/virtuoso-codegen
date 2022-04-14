@@ -64,15 +64,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class WriteObjectInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Int32 objectInfoId
     // Size: 0x4
     // Offset: 0x10
@@ -183,92 +175,92 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: System.Int32 objectInfoId
-    int& dyn_objectInfoId();
+    [[deprecated]] int& dyn_objectInfoId();
     // Get instance field reference: System.Object obj
-    ::Il2CppObject*& dyn_obj();
+    [[deprecated]] ::Il2CppObject*& dyn_obj();
     // Get instance field reference: System.Type objectType
-    ::System::Type*& dyn_objectType();
+    [[deprecated]] ::System::Type*& dyn_objectType();
     // Get instance field reference: System.Boolean isSi
-    bool& dyn_isSi();
+    [[deprecated]] bool& dyn_isSi();
     // Get instance field reference: System.Boolean isNamed
-    bool& dyn_isNamed();
+    [[deprecated]] bool& dyn_isNamed();
     // Get instance field reference: System.Boolean isTyped
-    bool& dyn_isTyped();
+    [[deprecated]] bool& dyn_isTyped();
     // Get instance field reference: System.Boolean isArray
-    bool& dyn_isArray();
+    [[deprecated]] bool& dyn_isArray();
     // Get instance field reference: System.Runtime.Serialization.SerializationInfo si
-    ::System::Runtime::Serialization::SerializationInfo*& dyn_si();
+    [[deprecated]] ::System::Runtime::Serialization::SerializationInfo*& dyn_si();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.SerObjectInfoCache cache
-    ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache*& dyn_cache();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache*& dyn_cache();
     // Get instance field reference: System.Object[] memberData
-    ::ArrayW<::Il2CppObject*>& dyn_memberData();
+    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_memberData();
     // Get instance field reference: System.Runtime.Serialization.ISerializationSurrogate serializationSurrogate
-    ::System::Runtime::Serialization::ISerializationSurrogate*& dyn_serializationSurrogate();
+    [[deprecated]] ::System::Runtime::Serialization::ISerializationSurrogate*& dyn_serializationSurrogate();
     // Get instance field reference: System.Runtime.Serialization.StreamingContext context
-    ::System::Runtime::Serialization::StreamingContext& dyn_context();
+    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_context();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit
-    ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit*& dyn_serObjectInfoInit();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit*& dyn_serObjectInfoInit();
     // Get instance field reference: System.Int64 objectId
-    int64_t& dyn_objectId();
+    [[deprecated]] int64_t& dyn_objectId();
     // Get instance field reference: System.Int64 assemId
-    int64_t& dyn_assemId();
+    [[deprecated]] int64_t& dyn_assemId();
     // Get instance field reference: private System.String binderTypeName
-    ::StringW& dyn_binderTypeName();
+    [[deprecated]] ::StringW& dyn_binderTypeName();
     // Get instance field reference: private System.String binderAssemblyString
-    ::StringW& dyn_binderAssemblyString();
+    [[deprecated]] ::StringW& dyn_binderAssemblyString();
     // System.Void ObjectEnd()
-    // Offset: 0xCF518C
+    // Offset: 0x121360C
     void ObjectEnd();
     // private System.Void InternalInit()
-    // Offset: 0xCF51BC
+    // Offset: 0x121363C
     void InternalInit();
     // static System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo Serialize(System.Object obj, System.Runtime.Serialization.ISurrogateSelector surrogateSelector, System.Runtime.Serialization.StreamingContext context, System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit, System.Runtime.Serialization.IFormatterConverter converter, System.Runtime.Serialization.Formatters.Binary.ObjectWriter objectWriter, System.Runtime.Serialization.SerializationBinder binder)
-    // Offset: 0xCF51D8
+    // Offset: 0x1213658
     static ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo* Serialize(::Il2CppObject* obj, ::System::Runtime::Serialization::ISurrogateSelector* surrogateSelector, ::System::Runtime::Serialization::StreamingContext context, ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit* serObjectInfoInit, ::System::Runtime::Serialization::IFormatterConverter* converter, ::System::Runtime::Serialization::Formatters::Binary::ObjectWriter* objectWriter, ::System::Runtime::Serialization::SerializationBinder* binder);
     // System.Void InitSerialize(System.Object obj, System.Runtime.Serialization.ISurrogateSelector surrogateSelector, System.Runtime.Serialization.StreamingContext context, System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit, System.Runtime.Serialization.IFormatterConverter converter, System.Runtime.Serialization.Formatters.Binary.ObjectWriter objectWriter, System.Runtime.Serialization.SerializationBinder binder)
-    // Offset: 0xCF5354
+    // Offset: 0x12137D4
     void InitSerialize(::Il2CppObject* obj, ::System::Runtime::Serialization::ISurrogateSelector* surrogateSelector, ::System::Runtime::Serialization::StreamingContext context, ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit* serObjectInfoInit, ::System::Runtime::Serialization::IFormatterConverter* converter, ::System::Runtime::Serialization::Formatters::Binary::ObjectWriter* objectWriter, ::System::Runtime::Serialization::SerializationBinder* binder);
     // static System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo Serialize(System.Type objectType, System.Runtime.Serialization.ISurrogateSelector surrogateSelector, System.Runtime.Serialization.StreamingContext context, System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit, System.Runtime.Serialization.IFormatterConverter converter, System.Runtime.Serialization.SerializationBinder binder)
-    // Offset: 0xCF60DC
+    // Offset: 0x121455C
     static ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo* Serialize(::System::Type* objectType, ::System::Runtime::Serialization::ISurrogateSelector* surrogateSelector, ::System::Runtime::Serialization::StreamingContext context, ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit* serObjectInfoInit, ::System::Runtime::Serialization::IFormatterConverter* converter, ::System::Runtime::Serialization::SerializationBinder* binder);
     // System.Void InitSerialize(System.Type objectType, System.Runtime.Serialization.ISurrogateSelector surrogateSelector, System.Runtime.Serialization.StreamingContext context, System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit, System.Runtime.Serialization.IFormatterConverter converter, System.Runtime.Serialization.SerializationBinder binder)
-    // Offset: 0xCF6168
+    // Offset: 0x12145E8
     void InitSerialize(::System::Type* objectType, ::System::Runtime::Serialization::ISurrogateSelector* surrogateSelector, ::System::Runtime::Serialization::StreamingContext context, ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit* serObjectInfoInit, ::System::Runtime::Serialization::IFormatterConverter* converter, ::System::Runtime::Serialization::SerializationBinder* binder);
     // private System.Void InitSiWrite()
-    // Offset: 0xCF5968
+    // Offset: 0x1213DE8
     void InitSiWrite();
     // static private System.Void CheckTypeForwardedFrom(System.Runtime.Serialization.Formatters.Binary.SerObjectInfoCache cache, System.Type objectType, System.String binderAssemblyString)
-    // Offset: 0xCF5C88
+    // Offset: 0x1214108
     static void CheckTypeForwardedFrom(::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache* cache, ::System::Type* objectType, ::StringW binderAssemblyString);
     // private System.Void InitNoMembers()
-    // Offset: 0xCF5858
+    // Offset: 0x1213CD8
     void InitNoMembers();
     // private System.Void InitMemberInfo()
-    // Offset: 0xCF5DEC
+    // Offset: 0x121426C
     void InitMemberInfo();
     // System.String GetTypeFullName()
-    // Offset: 0xCF65DC
+    // Offset: 0x1214A5C
     ::StringW GetTypeFullName();
     // System.String GetAssemblyString()
-    // Offset: 0xCF6608
+    // Offset: 0x1214A88
     ::StringW GetAssemblyString();
     // private System.Void InvokeSerializationBinder(System.Runtime.Serialization.SerializationBinder binder)
-    // Offset: 0xCF5940
+    // Offset: 0x1213DC0
     void InvokeSerializationBinder(::System::Runtime::Serialization::SerializationBinder* binder);
     // System.Type GetMemberType(System.Reflection.MemberInfo objMember)
-    // Offset: 0xCF6470
+    // Offset: 0x12148F0
     ::System::Type* GetMemberType(::System::Reflection::MemberInfo* objMember);
     // System.Void GetMemberInfo(out System.String[] outMemberNames, out System.Type[] outMemberTypes, out System.Object[] outMemberData)
-    // Offset: 0xCF6634
+    // Offset: 0x1214AB4
     void GetMemberInfo(ByRef<::ArrayW<::StringW>> outMemberNames, ByRef<::ArrayW<::System::Type*>> outMemberTypes, ByRef<::ArrayW<::Il2CppObject*>> outMemberData);
     // static private System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo GetObjectInfo(System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit)
-    // Offset: 0xCF5274
+    // Offset: 0x12136F4
     static ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo* GetObjectInfo(::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit* serObjectInfoInit);
     // static private System.Void PutObjectInfo(System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit, System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo objectInfo)
-    // Offset: 0xCF5198
+    // Offset: 0x1213618
     static void PutObjectInfo(::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit* serObjectInfoInit, ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo* objectInfo);
     // System.Void .ctor()
-    // Offset: 0xCF5184
+    // Offset: 0x1213604
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CheckLocalDataState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AuthenticationManager _authManager
     // Size: 0x8
     // Offset: 0x10
@@ -64,33 +56,33 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.AuthenticationManager _authManager
-    ::VROSC::AuthenticationManager*& dyn__authManager();
+    [[deprecated]] ::VROSC::AuthenticationManager*& dyn__authManager();
     // Get instance field reference: private System.Boolean <HasCheckedForData>k__BackingField
-    bool& dyn_$HasCheckedForData$k__BackingField();
+    [[deprecated]] bool& dyn_$HasCheckedForData$k__BackingField();
     // public System.Boolean get_HasCheckedForData()
-    // Offset: 0x1330CB0
+    // Offset: 0x9458EC
     bool get_HasCheckedForData();
     // private System.Void set_HasCheckedForData(System.Boolean value)
-    // Offset: 0x1330CB8
+    // Offset: 0x9458F4
     void set_HasCheckedForData(bool value);
     // public System.Void .ctor(VROSC.AuthenticationManager authManager)
-    // Offset: 0x1330CC4
+    // Offset: 0x945900
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CheckLocalDataState* New_ctor(::VROSC::AuthenticationManager* authManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CheckLocalDataState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CheckLocalDataState*, creationType>(authManager)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x1330CF0
+    // Offset: 0x94592C
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x1330ED8
+    // Offset: 0x945B14
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x1330EDC
+    // Offset: 0x945B18
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x1330EE0
+    // Offset: 0x945B1C
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.CheckLocalDataState
   #pragma pack(pop)

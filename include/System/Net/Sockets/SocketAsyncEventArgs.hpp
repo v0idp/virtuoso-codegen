@@ -46,15 +46,7 @@ namespace System::Net::Sockets {
   // [TokenAttribute] Offset: FFFFFFFF
   class SocketAsyncEventArgs : public ::System::EventArgs/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean disposed
     // Size: 0x1
     // Offset: 0x10
@@ -111,44 +103,44 @@ namespace System::Net::Sockets {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Boolean disposed
-    bool& dyn_disposed();
+    [[deprecated]] bool& dyn_disposed();
     // Get instance field reference: System.Int32 in_progress
-    int& dyn_in_progress();
+    [[deprecated]] int& dyn_in_progress();
     // Get instance field reference: System.Net.EndPoint remote_ep
-    ::System::Net::EndPoint*& dyn_remote_ep();
+    [[deprecated]] ::System::Net::EndPoint*& dyn_remote_ep();
     // Get instance field reference: System.Net.Sockets.Socket current_socket
-    ::System::Net::Sockets::Socket*& dyn_current_socket();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_current_socket();
     // Get instance field reference: private System.Net.Sockets.Socket <AcceptSocket>k__BackingField
-    ::System::Net::Sockets::Socket*& dyn_$AcceptSocket$k__BackingField();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_$AcceptSocket$k__BackingField();
     // Get instance field reference: private System.Int32 <BytesTransferred>k__BackingField
-    int& dyn_$BytesTransferred$k__BackingField();
+    [[deprecated]] int& dyn_$BytesTransferred$k__BackingField();
     // Get instance field reference: private System.Net.Sockets.SocketError <SocketError>k__BackingField
-    ::System::Net::Sockets::SocketError& dyn_$SocketError$k__BackingField();
+    [[deprecated]] ::System::Net::Sockets::SocketError& dyn_$SocketError$k__BackingField();
     // Get instance field reference: private System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> Completed
-    ::System::EventHandler_1<::System::Net::Sockets::SocketAsyncEventArgs*>*& dyn_Completed();
+    [[deprecated]] ::System::EventHandler_1<::System::Net::Sockets::SocketAsyncEventArgs*>*& dyn_Completed();
     // public System.Net.Sockets.Socket get_AcceptSocket()
-    // Offset: 0x950984
+    // Offset: 0xDA4D8C
     ::System::Net::Sockets::Socket* get_AcceptSocket();
     // public System.Void set_AcceptSocket(System.Net.Sockets.Socket value)
-    // Offset: 0x95098C
+    // Offset: 0xDA4D94
     void set_AcceptSocket(::System::Net::Sockets::Socket* value);
     // System.Void set_BytesTransferred(System.Int32 value)
-    // Offset: 0x950994
+    // Offset: 0xDA4D9C
     void set_BytesTransferred(int value);
     // public System.Void set_SocketError(System.Net.Sockets.SocketError value)
-    // Offset: 0x95099C
+    // Offset: 0xDA4DA4
     void set_SocketError(::System::Net::Sockets::SocketError value);
     // private System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x9509A4
+    // Offset: 0xDA4DAC
     void Dispose(bool disposing);
     // public System.Void Dispose()
-    // Offset: 0x9509B8
+    // Offset: 0xDA4DC0
     void Dispose();
     // System.Void Complete()
-    // Offset: 0x950A28
+    // Offset: 0xDA4E30
     void Complete();
     // protected System.Void OnCompleted(System.Net.Sockets.SocketAsyncEventArgs e)
-    // Offset: 0x950A38
+    // Offset: 0xDA4E40
     void OnCompleted(::System::Net::Sockets::SocketAsyncEventArgs* e);
   }; // System.Net.Sockets.SocketAsyncEventArgs
   #pragma pack(pop)

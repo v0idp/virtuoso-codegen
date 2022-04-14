@@ -99,25 +99,17 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Collections.Generic.List`1<System.String> scenes
-      ::System::Collections::Generic::List_1<::StringW>*& dyn_scenes();
+      [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_scenes();
       // Get instance field reference: public System.Int64 version
-      int64_t& dyn_version();
+      [[deprecated]] int64_t& dyn_version();
       // public System.Void .ctor(System.Collections.Generic.List`1<System.String> sceneList, System.Int64 currentSceneEpochVersion)
-      // Offset: 0xF14E74
+      // Offset: 0x13EEE70
       // ABORTED: conflicts with another method.  SceneInfo(::System::Collections::Generic::List_1<::StringW>* sceneList, int64_t currentSceneEpochVersion);
     }; // OVRSceneLoader/SceneInfo
     #pragma pack(pop)
     static check_size<sizeof(OVRSceneLoader::SceneInfo), 8 + sizeof(int64_t)> __GlobalNamespace_OVRSceneLoader_SceneInfoSizeCheck;
     static_assert(sizeof(OVRSceneLoader::SceneInfo) == 0x10);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single sceneCheckIntervalSeconds
     // Size: 0x4
     // Offset: 0x18
@@ -220,63 +212,63 @@ namespace GlobalNamespace {
     // Set static field: static public System.String resourceBundleName
     static void _set_resourceBundleName(::StringW value);
     // Get instance field reference: public System.Single sceneCheckIntervalSeconds
-    float& dyn_sceneCheckIntervalSeconds();
+    [[deprecated]] float& dyn_sceneCheckIntervalSeconds();
     // Get instance field reference: public System.Single logCloseTime
-    float& dyn_logCloseTime();
+    [[deprecated]] float& dyn_logCloseTime();
     // Get instance field reference: public UnityEngine.Canvas mainCanvas
-    ::UnityEngine::Canvas*& dyn_mainCanvas();
+    [[deprecated]] ::UnityEngine::Canvas*& dyn_mainCanvas();
     // Get instance field reference: public UnityEngine.UI.Text logTextBox
-    ::UnityEngine::UI::Text*& dyn_logTextBox();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_logTextBox();
     // Get instance field reference: private UnityEngine.AsyncOperation loadSceneOperation
-    ::UnityEngine::AsyncOperation*& dyn_loadSceneOperation();
+    [[deprecated]] ::UnityEngine::AsyncOperation*& dyn_loadSceneOperation();
     // Get instance field reference: private System.String formattedLogText
-    ::StringW& dyn_formattedLogText();
+    [[deprecated]] ::StringW& dyn_formattedLogText();
     // Get instance field reference: private System.Single closeLogTimer
-    float& dyn_closeLogTimer();
+    [[deprecated]] float& dyn_closeLogTimer();
     // Get instance field reference: private System.Boolean closeLogDialogue
-    bool& dyn_closeLogDialogue();
+    [[deprecated]] bool& dyn_closeLogDialogue();
     // Get instance field reference: private System.Boolean canvasPosUpdated
-    bool& dyn_canvasPosUpdated();
+    [[deprecated]] bool& dyn_canvasPosUpdated();
     // Get instance field reference: private System.String scenePath
-    ::StringW& dyn_scenePath();
+    [[deprecated]] ::StringW& dyn_scenePath();
     // Get instance field reference: private System.String sceneLoadDataPath
-    ::StringW& dyn_sceneLoadDataPath();
+    [[deprecated]] ::StringW& dyn_sceneLoadDataPath();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.AssetBundle> loadedAssetBundles
-    ::System::Collections::Generic::List_1<::UnityEngine::AssetBundle*>*& dyn_loadedAssetBundles();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::AssetBundle*>*& dyn_loadedAssetBundles();
     // Get instance field reference: private OVRSceneLoader/SceneInfo currentSceneInfo
-    ::GlobalNamespace::OVRSceneLoader::SceneInfo& dyn_currentSceneInfo();
+    [[deprecated]] ::GlobalNamespace::OVRSceneLoader::SceneInfo& dyn_currentSceneInfo();
     // private System.Void Awake()
-    // Offset: 0xBAEA74
+    // Offset: 0xE7A2A4
     void Awake();
     // private System.Void Start()
-    // Offset: 0xBAEAEC
+    // Offset: 0xE7A31C
     void Start();
     // private System.Void LoadScene(OVRSceneLoader/SceneInfo sceneInfo)
-    // Offset: 0xBAEEF4
+    // Offset: 0xE7A72C
     void LoadScene(::GlobalNamespace::OVRSceneLoader::SceneInfo sceneInfo);
     // private System.Void LoadSceneOperation_completed(UnityEngine.AsyncOperation obj)
-    // Offset: 0xBAF7C4
+    // Offset: 0xE7AFFC
     void LoadSceneOperation_completed(::UnityEngine::AsyncOperation* obj);
     // public System.Void Update()
-    // Offset: 0xBAF910
+    // Offset: 0xE7B148
     void Update();
     // private System.Void UpdateCanvasPosition()
-    // Offset: 0xBAFB8C
+    // Offset: 0xE7B3C4
     void UpdateCanvasPosition();
     // private OVRSceneLoader/SceneInfo GetSceneInfo()
-    // Offset: 0xBAECAC
+    // Offset: 0xE7A4DC
     ::GlobalNamespace::OVRSceneLoader::SceneInfo GetSceneInfo();
     // private System.Collections.IEnumerator DelayCanvasPosUpdate()
-    // Offset: 0xBAEC40
+    // Offset: 0xE7A470
     ::System::Collections::IEnumerator* DelayCanvasPosUpdate();
     // private System.Collections.IEnumerator onCheckSceneCoroutine()
-    // Offset: 0xBAF8A4
+    // Offset: 0xE7B0DC
     ::System::Collections::IEnumerator* onCheckSceneCoroutine();
     // private System.Void DestroyAllGameObjects()
-    // Offset: 0xBAFDA0
+    // Offset: 0xE7B5D8
     void DestroyAllGameObjects();
     // public System.Void .ctor()
-    // Offset: 0xBAFED4
+    // Offset: 0xE7B70C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

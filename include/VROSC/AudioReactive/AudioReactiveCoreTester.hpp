@@ -40,16 +40,8 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::AudioReactiveCoreTester::$TestAudioReactions$d__3
     class $TestAudioReactions$d__3;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [RangeAttribute] Offset: 0x676400
+    // [RangeAttribute] Offset: 0x78CCA4
     // private System.Single _bpm
     // Size: 0x4
     // Offset: 0x18
@@ -60,18 +52,18 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _bpm
-    float& dyn__bpm();
+    [[deprecated]] float& dyn__bpm();
     // private System.Void Start()
-    // Offset: 0x13728B4
+    // Offset: 0x971648
     void Start();
     // private System.Void BeatRecieved(System.Single obj)
-    // Offset: 0x1372A24
+    // Offset: 0x9717B8
     void BeatRecieved(float obj);
     // private System.Collections.IEnumerator TestAudioReactions()
-    // Offset: 0x13729B8
+    // Offset: 0x97174C
     ::System::Collections::IEnumerator* TestAudioReactions();
     // public System.Void .ctor()
-    // Offset: 0x1372AB0
+    // Offset: 0x971844
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

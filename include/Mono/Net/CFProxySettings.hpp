@@ -35,15 +35,7 @@ namespace Mono::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class CFProxySettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Mono.Net.CFDictionary settings
     // Size: 0x8
     // Offset: 0x10
@@ -80,15 +72,15 @@ namespace Mono::Net {
     // Set static field: static private System.IntPtr kCFNetworkProxiesProxyAutoConfigURLString
     static void _set_kCFNetworkProxiesProxyAutoConfigURLString(::System::IntPtr value);
     // Get instance field reference: private Mono.Net.CFDictionary settings
-    ::Mono::Net::CFDictionary*& dyn_settings();
+    [[deprecated]] ::Mono::Net::CFDictionary*& dyn_settings();
     // public Mono.Net.CFDictionary get_Dictionary()
-    // Offset: 0xE6DFC8
+    // Offset: 0x10DFE60
     ::Mono::Net::CFDictionary* get_Dictionary();
     // static private System.Void .cctor()
-    // Offset: 0xE6DE5C
+    // Offset: 0x10DFCF4
     static void _cctor();
     // public System.Void .ctor(Mono.Net.CFDictionary settings)
-    // Offset: 0xE6CD78
+    // Offset: 0x10DEC10
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CFProxySettings* New_ctor(::Mono::Net::CFDictionary* settings) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::CFProxySettings::.ctor");

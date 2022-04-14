@@ -41,15 +41,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class BinaryMethodReturn : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Object returnValue
     // Size: 0x8
     // Offset: 0x10
@@ -100,30 +92,30 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Set static field: static private System.Object instanceOfVoid
     static void _set_instanceOfVoid(::Il2CppObject* value);
     // Get instance field reference: private System.Object returnValue
-    ::Il2CppObject*& dyn_returnValue();
+    [[deprecated]] ::Il2CppObject*& dyn_returnValue();
     // Get instance field reference: private System.Object[] args
-    ::ArrayW<::Il2CppObject*>& dyn_args();
+    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_args();
     // Get instance field reference: private System.Object callContext
-    ::Il2CppObject*& dyn_callContext();
+    [[deprecated]] ::Il2CppObject*& dyn_callContext();
     // Get instance field reference: private System.Type[] argTypes
-    ::ArrayW<::System::Type*>& dyn_argTypes();
+    [[deprecated]] ::ArrayW<::System::Type*>& dyn_argTypes();
     // Get instance field reference: private System.Boolean bArgsPrimitive
-    bool& dyn_bArgsPrimitive();
+    [[deprecated]] bool& dyn_bArgsPrimitive();
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.MessageEnum messageEnum
-    ::System::Runtime::Serialization::Formatters::Binary::MessageEnum& dyn_messageEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::MessageEnum& dyn_messageEnum();
     // Get instance field reference: private System.Type returnType
-    ::System::Type*& dyn_returnType();
+    [[deprecated]] ::System::Type*& dyn_returnType();
     // static private System.Void .cctor()
-    // Offset: 0xCC6EF8
+    // Offset: 0xFE828C
     static void _cctor();
     // public System.Void Write(System.Runtime.Serialization.Formatters.Binary.__BinaryWriter sout)
-    // Offset: 0xCC6FC8
+    // Offset: 0xFE835C
     void Write(::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter* sout);
     // public System.Void Dump()
-    // Offset: 0xCC7134
+    // Offset: 0xFE84C8
     void Dump();
     // System.Void .ctor()
-    // Offset: 0xCC6FB8
+    // Offset: 0xFE834C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

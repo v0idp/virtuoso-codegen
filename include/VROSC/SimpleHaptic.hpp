@@ -33,15 +33,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SimpleHaptic : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _useHapticFeedBack
     // Size: 0x1
     // Offset: 0x10
@@ -64,16 +56,16 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Boolean _useHapticFeedBack
-    bool& dyn__useHapticFeedBack();
+    [[deprecated]] bool& dyn__useHapticFeedBack();
     // Get instance field reference: private System.Single _amplitude
-    float& dyn__amplitude();
+    [[deprecated]] float& dyn__amplitude();
     // Get instance field reference: private System.Single _frequency
-    float& dyn__frequency();
+    [[deprecated]] float& dyn__frequency();
     // public System.Void Play(VROSC.HandType Hand, System.Single amplitudeMultiplier, System.Single frequencyMultiplier)
-    // Offset: 0x13B5AB8
+    // Offset: 0x1928984
     void Play(::VROSC::HandType Hand, float amplitudeMultiplier, float frequencyMultiplier);
     // public System.Void .ctor()
-    // Offset: 0x13B5B74
+    // Offset: 0x1928A40
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

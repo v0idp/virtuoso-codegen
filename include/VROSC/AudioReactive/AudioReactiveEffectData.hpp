@@ -29,7 +29,7 @@ namespace VROSC::AudioReactive {
   class AudioReactiveEffectData : public ::UnityEngine::ScriptableObject {
     public:
     // protected System.Void .ctor()
-    // Offset: 0x1372AB8
+    // Offset: 0x97184C
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

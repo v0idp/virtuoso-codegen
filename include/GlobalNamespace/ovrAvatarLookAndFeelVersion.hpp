@@ -60,7 +60,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarLookAndFeelVersion Two
     static void _set_Two(::GlobalNamespace::ovrAvatarLookAndFeelVersion value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // ovrAvatarLookAndFeelVersion
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarLookAndFeelVersion), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarLookAndFeelVersionSizeCheck;

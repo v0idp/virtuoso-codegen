@@ -61,15 +61,7 @@ namespace UnityEngine::Timeline {
     public:
     // Nested type: ::UnityEngine::Timeline::AudioPlayableAsset::$get_outputs$d__16
     class $get_outputs$d__16;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AudioClip m_Clip
     // Size: 0x8
     // Offset: 0x18
@@ -104,46 +96,46 @@ namespace UnityEngine::Timeline {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.AudioClip m_Clip
-    ::UnityEngine::AudioClip*& dyn_m_Clip();
+    [[deprecated]] ::UnityEngine::AudioClip*& dyn_m_Clip();
     // Get instance field reference: private System.Boolean m_Loop
-    bool& dyn_m_Loop();
+    [[deprecated]] bool& dyn_m_Loop();
     // Get instance field reference: private System.Single m_bufferingTime
-    float& dyn_m_bufferingTime();
+    [[deprecated]] float& dyn_m_bufferingTime();
     // Get instance field reference: private UnityEngine.Timeline.AudioClipProperties m_ClipProperties
-    ::UnityEngine::Timeline::AudioClipProperties*& dyn_m_ClipProperties();
+    [[deprecated]] ::UnityEngine::Timeline::AudioClipProperties*& dyn_m_ClipProperties();
     // System.Single get_bufferingTime()
-    // Offset: 0xA78BF0
+    // Offset: 0xC700C0
     float get_bufferingTime();
     // System.Void set_bufferingTime(System.Single value)
-    // Offset: 0xA78BF8
+    // Offset: 0xC700C8
     void set_bufferingTime(float value);
     // public UnityEngine.AudioClip get_clip()
-    // Offset: 0xA78C00
+    // Offset: 0xC700D0
     ::UnityEngine::AudioClip* get_clip();
     // public System.Void set_clip(UnityEngine.AudioClip value)
-    // Offset: 0xA78C08
+    // Offset: 0xC700D8
     void set_clip(::UnityEngine::AudioClip* value);
     // public System.Boolean get_loop()
-    // Offset: 0xA78C10
+    // Offset: 0xC700E0
     bool get_loop();
     // public System.Void set_loop(System.Boolean value)
-    // Offset: 0xA78C18
+    // Offset: 0xC700E8
     void set_loop(bool value);
     // public UnityEngine.Timeline.ClipCaps get_clipCaps()
-    // Offset: 0xA78E84
+    // Offset: 0xC70354
     ::UnityEngine::Timeline::ClipCaps get_clipCaps();
     // public override System.Double get_duration()
-    // Offset: 0xA78C24
+    // Offset: 0xC700F4
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Double PlayableAsset::get_duration()
     double get_duration();
     // public override System.Collections.Generic.IEnumerable`1<UnityEngine.Playables.PlayableBinding> get_outputs()
-    // Offset: 0xA78CE4
+    // Offset: 0xC701B4
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Collections.Generic.IEnumerable`1<UnityEngine.Playables.PlayableBinding> PlayableAsset::get_outputs()
     ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>* get_outputs();
     // public System.Void .ctor()
-    // Offset: 0xA78E90
+    // Offset: 0xC70360
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -155,7 +147,7 @@ namespace UnityEngine::Timeline {
       return THROW_UNLESS((::il2cpp_utils::New<AudioPlayableAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject go)
-    // Offset: 0xA78D50
+    // Offset: 0xC70220
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject go)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* go);

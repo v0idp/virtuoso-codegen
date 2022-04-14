@@ -51,15 +51,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PreferencesPanelUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SpectatorCameraUI _spectatorCameraUI
     // Size: 0x8
     // Offset: 0x18
@@ -120,67 +112,67 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SpectatorCameraUI _spectatorCameraUI
-    ::VROSC::SpectatorCameraUI*& dyn__spectatorCameraUI();
+    [[deprecated]] ::VROSC::SpectatorCameraUI*& dyn__spectatorCameraUI();
     // Get instance field reference: private VROSC.UIHoldButton _resetAllButton
-    ::VROSC::UIHoldButton*& dyn__resetAllButton();
+    [[deprecated]] ::VROSC::UIHoldButton*& dyn__resetAllButton();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.UISlideToggle _audioWhenUnfocusedButton
-    ::VROSC::UISlideToggle*& dyn__audioWhenUnfocusedButton();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__audioWhenUnfocusedButton();
     // Get instance field reference: private VROSC.UISlideToggle _useClassicControls
-    ::VROSC::UISlideToggle*& dyn__useClassicControls();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__useClassicControls();
     // Get instance field reference: private VROSC.UIButton _resetMalletsButton
-    ::VROSC::UIButton*& dyn__resetMalletsButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__resetMalletsButton();
     // Get instance field reference: private VROSC.UISlideToggle _autoDimLasersToggle
-    ::VROSC::UISlideToggle*& dyn__autoDimLasersToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__autoDimLasersToggle();
     // Get instance field reference: private System.Boolean _spectatorCameraEnabled
-    bool& dyn__spectatorCameraEnabled();
+    [[deprecated]] bool& dyn__spectatorCameraEnabled();
     // Get instance field reference: private VROSC.PassthroughManager _passthroughManager
-    ::VROSC::PassthroughManager*& dyn__passthroughManager();
+    [[deprecated]] ::VROSC::PassthroughManager*& dyn__passthroughManager();
     // public System.Boolean get_IsOpen()
-    // Offset: 0x8FFCE8
+    // Offset: 0xAE4648
     bool get_IsOpen();
     // protected System.Void Awake()
-    // Offset: 0x8FFD0C
+    // Offset: 0xAE466C
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x900210
+    // Offset: 0xAE4B70
     void OnDestroy();
     // private System.Void OnEnable()
-    // Offset: 0x900580
+    // Offset: 0xAE4EE0
     void OnEnable();
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x9005D4
+    // Offset: 0xAE4F34
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // private System.Void SetVolume(System.Single volume)
-    // Offset: 0x90074C
+    // Offset: 0xAE50AC
     void SetVolume(float volume);
     // public System.Void Open()
-    // Offset: 0x9007F8
+    // Offset: 0xAE5158
     void Open();
     // public System.Void Close()
-    // Offset: 0x900820
+    // Offset: 0xAE5180
     void Close();
     // private System.Void ResetAllButtonPressed()
-    // Offset: 0x900848
+    // Offset: 0xAE51A8
     void ResetAllButtonPressed();
     // private System.Void AudioWhenUnfocusedToggled(VROSC.InputDevice inputDevice, System.Boolean state)
-    // Offset: 0x90084C
+    // Offset: 0xAE51AC
     void AudioWhenUnfocusedToggled(::VROSC::InputDevice* inputDevice, bool state);
     // private System.Void UseClassicControlsToggled(VROSC.InputDevice inputDevice, System.Boolean state)
-    // Offset: 0x9008B4
+    // Offset: 0xAE5214
     void UseClassicControlsToggled(::VROSC::InputDevice* inputDevice, bool state);
     // private System.Void ResetMalletsToDefault(VROSC.ClickData obj)
-    // Offset: 0x90091C
+    // Offset: 0xAE527C
     void ResetMalletsToDefault(::VROSC::ClickData* obj);
     // private System.Void AutoDimLaserToggled(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x900974
+    // Offset: 0xAE52D4
     void AutoDimLaserToggled(::VROSC::InputDevice* device, bool active);
     // private System.Void TogglePassthrough(VROSC.InputDevice device, System.Boolean active)
-    // Offset: 0x9009D4
+    // Offset: 0xAE5334
     void TogglePassthrough(::VROSC::InputDevice* device, bool active);
     // public System.Void .ctor()
-    // Offset: 0x900AA4
+    // Offset: 0xAE5404
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

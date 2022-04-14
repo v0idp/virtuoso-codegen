@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlayerPlaybackLoopingState : public ::VROSC::LoopPlayerPlaybackState {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <Looping>k__BackingField
     // Size: 0x1
     // Offset: 0x25
@@ -57,18 +49,18 @@ namespace VROSC {
       return Looping;
     }
     // Get instance field reference: private System.Boolean <Looping>k__BackingField
-    bool& dyn_$Looping$k__BackingField();
+    [[deprecated]] bool& dyn_$Looping$k__BackingField();
     // public System.Boolean get_Looping()
-    // Offset: 0x90738C
+    // Offset: 0x19BD344
     bool get_Looping();
     // private System.Void set_Looping(System.Boolean value)
-    // Offset: 0x907380
+    // Offset: 0x19BD338
     void set_Looping(bool value);
     // System.Void Set(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 startStateBegin, System.Int32 startStateEnd)
-    // Offset: 0x907454
+    // Offset: 0x19BD40C
     void Set(::VROSC::LoopPlayerPlaybackSettings* settings, int startStateBegin, int startStateEnd);
     // public System.Void .ctor()
-    // Offset: 0x9074EC
+    // Offset: 0x19BD488
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -78,17 +70,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackLoopingState*, creationType>()));
     }
     // public override System.String DebugString()
-    // Offset: 0x907394
+    // Offset: 0x19BD34C
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.String LoopPlayerPlaybackState::DebugString()
     ::StringW DebugString();
     // public override System.Single GetCurrentFade(System.Int32 atSample)
-    // Offset: 0x90744C
+    // Offset: 0x19BD404
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Single LoopPlayerPlaybackState::GetCurrentFade(System.Int32 atSample)
     float GetCurrentFade(int atSample);
     // public override System.Void SetExplicit(System.Int32 startSample, System.Int32 stopSample)
-    // Offset: 0x9074D8
+    // Offset: 0x19BD474
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::SetExplicit(System.Int32 startSample, System.Int32 stopSample)
     void SetExplicit(int startSample, int stopSample);

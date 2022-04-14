@@ -111,11 +111,11 @@ namespace AudioHelm {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Single position_
-      float& dyn_position_();
+      [[deprecated]] float& dyn_position_();
       // Get instance field reference: public System.Int32 note_
-      int& dyn_note_();
+      [[deprecated]] int& dyn_note_();
       // public System.Void .ctor(System.Single position, System.Int32 note)
-      // Offset: 0x134A054
+      // Offset: 0x8D4FCC
       // ABORTED: conflicts with another method.  NotePosition(float position, int note);
     }; // AudioHelm.Sequencer/AudioHelm.NotePosition
     #pragma pack(pop)
@@ -170,20 +170,12 @@ namespace AudioHelm {
       // Set static field: static public AudioHelm.Sequencer/AudioHelm.Division kThirtySecond
       static void _set_kThirtySecond(::AudioHelm::Sequencer::Division value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // AudioHelm.Sequencer/AudioHelm.Division
     #pragma pack(pop)
     static check_size<sizeof(Sequencer::Division), 0 + sizeof(int)> __AudioHelm_Sequencer_DivisionSizeCheck;
     static_assert(sizeof(Sequencer::Division) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private AudioHelm.Sequencer/AudioHelm.NoteAction OnNoteOn
     // Size: 0x8
     // Offset: 0x18
@@ -202,21 +194,21 @@ namespace AudioHelm {
     ::AudioHelm::Sequencer::BeatAction* OnBeat;
     // Field size check
     static_assert(sizeof(::AudioHelm::Sequencer::BeatAction*) == 0x8);
-    // [TooltipAttribute] Offset: 0x67ADB0
+    // [TooltipAttribute] Offset: 0x791624
     // public AudioHelm.Sequencer/AudioHelm.NoteEvent noteOnEvent
     // Size: 0x8
     // Offset: 0x30
     ::AudioHelm::Sequencer::NoteEvent* noteOnEvent;
     // Field size check
     static_assert(sizeof(::AudioHelm::Sequencer::NoteEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x67ADE8
+    // [TooltipAttribute] Offset: 0x79165C
     // public AudioHelm.Sequencer/AudioHelm.NoteEvent noteOffEvent
     // Size: 0x8
     // Offset: 0x38
     ::AudioHelm::Sequencer::NoteEvent* noteOffEvent;
     // Field size check
     static_assert(sizeof(::AudioHelm::Sequencer::NoteEvent*) == 0x8);
-    // [TooltipAttribute] Offset: 0x67AE20
+    // [TooltipAttribute] Offset: 0x791694
     // public AudioHelm.Sequencer/AudioHelm.BeatEvent beatEvent
     // Size: 0x8
     // Offset: 0x40
@@ -229,7 +221,7 @@ namespace AudioHelm {
     ::System::Collections::Generic::List_1<::AudioHelm::Note*>* activeNotes;
     // Field size check
     static_assert(sizeof(::System::Collections::Generic::List_1<::AudioHelm::Note*>*) == 0x8);
-    // [TooltipAttribute] Offset: 0x67AE58
+    // [TooltipAttribute] Offset: 0x7916CC
     // public System.Int32 length
     // Size: 0x4
     // Offset: 0x50
@@ -276,7 +268,7 @@ namespace AudioHelm {
     ::UnityEngine::Vector2 scrollPosition;
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
-    // [TooltipAttribute] Offset: 0x67AE90
+    // [TooltipAttribute] Offset: 0x791704
     // public System.Boolean autoScroll
     // Size: 0x1
     // Offset: 0x80
@@ -285,14 +277,14 @@ namespace AudioHelm {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: autoScroll and: division
     char __padding14[0x3] = {};
-    // [TooltipAttribute] Offset: 0x67AEC8
+    // [TooltipAttribute] Offset: 0x79173C
     // public AudioHelm.Sequencer/AudioHelm.Division division
     // Size: 0x4
     // Offset: 0x84
     ::AudioHelm::Sequencer::Division division;
     // Field size check
     static_assert(sizeof(::AudioHelm::Sequencer::Division) == 0x4);
-    // [TooltipAttribute] Offset: 0x67AF00
+    // [TooltipAttribute] Offset: 0x791774
     // public System.Single zoom
     // Size: 0x4
     // Offset: 0x88
@@ -353,69 +345,69 @@ namespace AudioHelm {
     // Set static field: static private AudioHelm.Sequencer/AudioHelm.NotePositionComparer notePositionComparer
     static void _set_notePositionComparer(::AudioHelm::Sequencer::NotePositionComparer* value);
     // Get instance field reference: private AudioHelm.Sequencer/AudioHelm.NoteAction OnNoteOn
-    ::AudioHelm::Sequencer::NoteAction*& dyn_OnNoteOn();
+    [[deprecated]] ::AudioHelm::Sequencer::NoteAction*& dyn_OnNoteOn();
     // Get instance field reference: private AudioHelm.Sequencer/AudioHelm.NoteAction OnNoteOff
-    ::AudioHelm::Sequencer::NoteAction*& dyn_OnNoteOff();
+    [[deprecated]] ::AudioHelm::Sequencer::NoteAction*& dyn_OnNoteOff();
     // Get instance field reference: private AudioHelm.Sequencer/AudioHelm.BeatAction OnBeat
-    ::AudioHelm::Sequencer::BeatAction*& dyn_OnBeat();
+    [[deprecated]] ::AudioHelm::Sequencer::BeatAction*& dyn_OnBeat();
     // Get instance field reference: public AudioHelm.Sequencer/AudioHelm.NoteEvent noteOnEvent
-    ::AudioHelm::Sequencer::NoteEvent*& dyn_noteOnEvent();
+    [[deprecated]] ::AudioHelm::Sequencer::NoteEvent*& dyn_noteOnEvent();
     // Get instance field reference: public AudioHelm.Sequencer/AudioHelm.NoteEvent noteOffEvent
-    ::AudioHelm::Sequencer::NoteEvent*& dyn_noteOffEvent();
+    [[deprecated]] ::AudioHelm::Sequencer::NoteEvent*& dyn_noteOffEvent();
     // Get instance field reference: public AudioHelm.Sequencer/AudioHelm.BeatEvent beatEvent
-    ::AudioHelm::Sequencer::BeatEvent*& dyn_beatEvent();
+    [[deprecated]] ::AudioHelm::Sequencer::BeatEvent*& dyn_beatEvent();
     // Get instance field reference: private System.Collections.Generic.List`1<AudioHelm.Note> activeNotes
-    ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_activeNotes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_activeNotes();
     // Get instance field reference: public System.Int32 length
-    int& dyn_length();
+    [[deprecated]] int& dyn_length();
     // Get instance field reference: public System.Int32 currentIndex
-    int& dyn_currentIndex();
+    [[deprecated]] int& dyn_currentIndex();
     // Get instance field reference: public System.Boolean loop
-    bool& dyn_loop();
+    [[deprecated]] bool& dyn_loop();
     // Get instance field reference: protected System.Double beatTime
-    double& dyn_beatTime();
+    [[deprecated]] double& dyn_beatTime();
     // Get instance field reference: protected System.Boolean paused
-    bool& dyn_paused();
+    [[deprecated]] bool& dyn_paused();
     // Get instance field reference: public AudioHelm.NoteRow[] allNotes
-    ::ArrayW<::AudioHelm::NoteRow*>& dyn_allNotes();
+    [[deprecated]] ::ArrayW<::AudioHelm::NoteRow*>& dyn_allNotes();
     // Get instance field reference: public UnityEngine.Vector2 scrollPosition
-    ::UnityEngine::Vector2& dyn_scrollPosition();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_scrollPosition();
     // Get instance field reference: public System.Boolean autoScroll
-    bool& dyn_autoScroll();
+    [[deprecated]] bool& dyn_autoScroll();
     // Get instance field reference: public AudioHelm.Sequencer/AudioHelm.Division division
-    ::AudioHelm::Sequencer::Division& dyn_division();
+    [[deprecated]] ::AudioHelm::Sequencer::Division& dyn_division();
     // Get instance field reference: public System.Single zoom
-    float& dyn_zoom();
+    [[deprecated]] float& dyn_zoom();
     // Get instance field reference: private System.Collections.Generic.SortedList`2<AudioHelm.Sequencer/AudioHelm.NotePosition,AudioHelm.Note> sortedNoteOns
-    ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>*& dyn_sortedNoteOns();
+    [[deprecated]] ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>*& dyn_sortedNoteOns();
     // Get instance field reference: private System.Collections.Generic.SortedList`2<AudioHelm.Sequencer/AudioHelm.NotePosition,AudioHelm.Note> sortedNoteOffs
-    ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>*& dyn_sortedNoteOffs();
+    [[deprecated]] ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>*& dyn_sortedNoteOffs();
     // Get instance field reference: private System.Single lastSequencerPosition
-    float& dyn_lastSequencerPosition();
+    [[deprecated]] float& dyn_lastSequencerPosition();
     // Get instance field reference: private System.Boolean waitTillNextCycle
-    bool& dyn_waitTillNextCycle();
+    [[deprecated]] bool& dyn_waitTillNextCycle();
     // Get instance field reference: private System.Int32 numCycles
-    int& dyn_numCycles();
+    [[deprecated]] int& dyn_numCycles();
     // public System.Void add_OnNoteOn(AudioHelm.Sequencer/AudioHelm.NoteAction value)
-    // Offset: 0x13E3368
+    // Offset: 0x1982438
     void add_OnNoteOn(::AudioHelm::Sequencer::NoteAction* value);
     // public System.Void remove_OnNoteOn(AudioHelm.Sequencer/AudioHelm.NoteAction value)
-    // Offset: 0x13E3408
+    // Offset: 0x19824D8
     void remove_OnNoteOn(::AudioHelm::Sequencer::NoteAction* value);
     // public System.Void add_OnNoteOff(AudioHelm.Sequencer/AudioHelm.NoteAction value)
-    // Offset: 0x13E34A8
+    // Offset: 0x1982578
     void add_OnNoteOff(::AudioHelm::Sequencer::NoteAction* value);
     // public System.Void remove_OnNoteOff(AudioHelm.Sequencer/AudioHelm.NoteAction value)
-    // Offset: 0x13E3548
+    // Offset: 0x1982618
     void remove_OnNoteOff(::AudioHelm::Sequencer::NoteAction* value);
     // public System.Void add_OnBeat(AudioHelm.Sequencer/AudioHelm.BeatAction value)
-    // Offset: 0x13E35E8
+    // Offset: 0x19826B8
     void add_OnBeat(::AudioHelm::Sequencer::BeatAction* value);
     // public System.Void remove_OnBeat(AudioHelm.Sequencer/AudioHelm.BeatAction value)
-    // Offset: 0x13E3688
+    // Offset: 0x1982758
     void remove_OnBeat(::AudioHelm::Sequencer::BeatAction* value);
     // public System.Void AllNotesOff()
-    // Offset: 0x13E3728
+    // Offset: 0x19827F8
     void AllNotesOff();
     // public System.Void NoteOn(System.Int32 note, System.Single velocity)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -424,133 +416,133 @@ namespace AudioHelm {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void NoteOff(int note);
     // public System.Void StartScheduled(System.Double dspTime)
-    // Offset: 0x13E38B4
+    // Offset: 0x1982984
     void StartScheduled(double dspTime);
     // public System.Void StartOnNextCycle()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void StartOnNextCycle();
     // public System.Void OnBeforeSerialize()
-    // Offset: 0x13E38B8
+    // Offset: 0x1982988
     void OnBeforeSerialize();
     // public System.Void OnAfterDeserialize()
-    // Offset: 0x13E38BC
+    // Offset: 0x198298C
     void OnAfterDeserialize();
     // protected System.Void OnEnable()
-    // Offset: 0x13E3B2C
+    // Offset: 0x1982BFC
     void OnEnable();
     // protected System.Void OnDisable()
-    // Offset: 0x13E4010
+    // Offset: 0x19830E0
     void OnDisable();
     // protected System.Void WaitForNextCycle()
-    // Offset: 0x13E414C
+    // Offset: 0x198321C
     void WaitForNextCycle();
     // protected System.Boolean WaitingForNextCycle()
-    // Offset: 0x13E419C
+    // Offset: 0x198326C
     bool WaitingForNextCycle();
     // private AudioHelm.Sequencer/AudioHelm.NotePosition NoteOnPosition(AudioHelm.Note note)
-    // Offset: 0x13E41A4
+    // Offset: 0x1983274
     ::AudioHelm::Sequencer::NotePosition NoteOnPosition(::AudioHelm::Note* note);
     // private AudioHelm.Sequencer/AudioHelm.NotePosition NoteOffPosition(AudioHelm.Note note)
-    // Offset: 0x13E41E0
+    // Offset: 0x19832B0
     ::AudioHelm::Sequencer::NotePosition NoteOffPosition(::AudioHelm::Note* note);
     // protected System.Void RemoveSortedNoteEvents(AudioHelm.Note note)
-    // Offset: 0x13E421C
+    // Offset: 0x19832EC
     void RemoveSortedNoteEvents(::AudioHelm::Note* note);
     // protected System.Void AddSortedNoteEvents(AudioHelm.Note note)
-    // Offset: 0x13E42AC
+    // Offset: 0x198337C
     void AddSortedNoteEvents(::AudioHelm::Note* note);
     // public System.IntPtr Reference()
-    // Offset: 0x13E43B4
+    // Offset: 0x1983484
     ::System::IntPtr Reference();
     // protected System.Void InitNoteRows()
-    // Offset: 0x13E38C0
+    // Offset: 0x1982990
     void InitNoteRows();
     // public System.Single GetDivisionLength()
-    // Offset: 0x13E43F0
+    // Offset: 0x19834C0
     float GetDivisionLength();
     // public System.Void NotifyNoteKeyChanged(AudioHelm.Note note, System.Int32 oldKey)
-    // Offset: 0x13E4420
+    // Offset: 0x19834F0
     void NotifyNoteKeyChanged(::AudioHelm::Note* note, int oldKey);
     // public System.Void NotifyNoteStartChanged(AudioHelm.Note note, System.Single oldStart)
-    // Offset: 0x13E4598
+    // Offset: 0x1983668
     void NotifyNoteStartChanged(::AudioHelm::Note* note, float oldStart);
     // public System.Void NotifyNoteEndChanged(AudioHelm.Note note, System.Single oldEnd)
-    // Offset: 0x13E467C
+    // Offset: 0x198374C
     void NotifyNoteEndChanged(::AudioHelm::Note* note, float oldEnd);
     // public System.Void RemoveNote(AudioHelm.Note note)
-    // Offset: 0x13E4760
+    // Offset: 0x1983830
     void RemoveNote(::AudioHelm::Note* note);
     // public System.Boolean NoteExistsInRange(System.Int32 note, System.Single start, System.Single end)
-    // Offset: 0x13E4818
+    // Offset: 0x19838E8
     bool NoteExistsInRange(int note, float start, float end);
     // public AudioHelm.Note GetNoteInRange(System.Int32 note, System.Single start, System.Single end, AudioHelm.Note ignore)
-    // Offset: 0x13E4838
+    // Offset: 0x1983908
     ::AudioHelm::Note* GetNoteInRange(int note, float start, float end, ::AudioHelm::Note* ignore);
     // public System.Collections.Generic.List`1<AudioHelm.Note> GetAllNotes()
-    // Offset: 0x13E49E8
+    // Offset: 0x1983AB8
     ::System::Collections::Generic::List_1<::AudioHelm::Note*>* GetAllNotes();
     // public System.Collections.Generic.List`1<AudioHelm.Note> GetAllNoteOnsInRange(System.Single start, System.Single end)
-    // Offset: 0x13E4A8C
+    // Offset: 0x1983B5C
     ::System::Collections::Generic::List_1<::AudioHelm::Note*>* GetAllNoteOnsInRange(float start, float end);
     // public System.Collections.Generic.List`1<AudioHelm.Note> GetAllNoteOffsInRange(System.Single start, System.Single end)
-    // Offset: 0x13E4D14
+    // Offset: 0x1983DE4
     ::System::Collections::Generic::List_1<::AudioHelm::Note*>* GetAllNoteOffsInRange(float start, float end);
     // public System.Void RemoveNotesInRange(System.Int32 note, System.Single start, System.Single end)
-    // Offset: 0x13E4D1C
+    // Offset: 0x1983DEC
     void RemoveNotesInRange(int note, float start, float end);
     // public System.Void RemoveNotesContainedInRange(System.Int32 note, System.Single start, System.Single end, AudioHelm.Note ignore)
-    // Offset: 0x13E5014
+    // Offset: 0x19840E4
     void RemoveNotesContainedInRange(int note, float start, float end, ::AudioHelm::Note* ignore);
     // public System.Void ClampNotesInRange(System.Int32 note, System.Single start, System.Single end, AudioHelm.Note ignore)
-    // Offset: 0x13E5324
+    // Offset: 0x19843F4
     void ClampNotesInRange(int note, float start, float end, ::AudioHelm::Note* ignore);
     // public AudioHelm.Note AddNote(System.Int32 note, System.Single start, System.Single end, System.Single velocity)
-    // Offset: 0x13E3054
+    // Offset: 0x1982124
     ::AudioHelm::Note* AddNote(int note, float start, float end, float velocity);
     // public System.Void TransposeNotes(System.Int32 transpose)
-    // Offset: 0x13E5394
+    // Offset: 0x1984464
     void TransposeNotes(int transpose);
     // private System.Void ReadMidiData(AudioHelm.MidiFile/AudioHelm.MidiData midiData)
-    // Offset: 0x13E550C
+    // Offset: 0x19845DC
     void ReadMidiData(::AudioHelm::MidiFile::MidiData* midiData);
     // public System.Void ReadMidiFile(System.IO.Stream midiStream)
-    // Offset: 0x13E5658
+    // Offset: 0x1984728
     void ReadMidiFile(::System::IO::Stream* midiStream);
     // public System.Void ReadMidiFile(AudioHelm.MidiFile midiFile)
-    // Offset: 0x13E5688
+    // Offset: 0x1984758
     void ReadMidiFile(::AudioHelm::MidiFile* midiFile);
     // public System.Void Clear()
-    // Offset: 0x13E2E04
+    // Offset: 0x1981ED4
     void Clear();
     // public System.Single GetSixteenthTime()
-    // Offset: 0x13E5724
+    // Offset: 0x19847F4
     float GetSixteenthTime();
     // protected System.Double GetSequencerTime()
-    // Offset: 0x13E418C
+    // Offset: 0x198325C
     double GetSequencerTime();
     // public System.Double GetSequencerPosition()
-    // Offset: 0x13E57D4
+    // Offset: 0x19848A4
     double GetSequencerPosition();
     // private System.Collections.Generic.List`1<AudioHelm.Note> GetAllNoteEventsInRange(System.Single start, System.Single end, System.Collections.Generic.SortedList`2<AudioHelm.Sequencer/AudioHelm.NotePosition,AudioHelm.Note> events)
-    // Offset: 0x13E4A94
+    // Offset: 0x1983B64
     ::System::Collections::Generic::List_1<::AudioHelm::Note*>* GetAllNoteEventsInRange(float start, float end, ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>* events);
     // private System.Void UpdateIndex()
-    // Offset: 0x13E581C
+    // Offset: 0x19848EC
     void UpdateIndex();
     // protected System.Void UpdateBeatTime()
-    // Offset: 0x13E592C
+    // Offset: 0x19849FC
     void UpdateBeatTime();
     // private System.Void SendNoteOff(AudioHelm.Note note)
-    // Offset: 0x13E5A8C
+    // Offset: 0x1984B5C
     void SendNoteOff(::AudioHelm::Note* note);
     // private System.Void SendNoteOn(AudioHelm.Note note)
-    // Offset: 0x13E5B3C
+    // Offset: 0x1984C0C
     void SendNoteOn(::AudioHelm::Note* note);
     // protected System.Void UpdatePosition(System.Boolean sendEvents)
-    // Offset: 0x13E3CA0
+    // Offset: 0x1982D70
     void UpdatePosition(bool sendEvents);
     // protected System.Void .ctor()
-    // Offset: 0x13E5BEC
+    // Offset: 0x1984CBC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -563,7 +555,7 @@ namespace AudioHelm {
       return THROW_UNLESS((::il2cpp_utils::New<Sequencer*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x13E5D7C
+    // Offset: 0x1984E4C
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

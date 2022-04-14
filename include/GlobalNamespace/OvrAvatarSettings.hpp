@@ -29,15 +29,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarSettings : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String ovrAppID
     // Size: 0x8
     // Offset: 0x18
@@ -58,29 +50,29 @@ namespace GlobalNamespace {
     // Set static field: static private OvrAvatarSettings instance
     static void _set_instance(::GlobalNamespace::OvrAvatarSettings* value);
     // Get instance field reference: private System.String ovrAppID
-    ::StringW& dyn_ovrAppID();
+    [[deprecated]] ::StringW& dyn_ovrAppID();
     // Get instance field reference: private System.String ovrGearAppID
-    ::StringW& dyn_ovrGearAppID();
+    [[deprecated]] ::StringW& dyn_ovrGearAppID();
     // static public System.String get_AppID()
-    // Offset: 0x8F1BB4
+    // Offset: 0xF91D08
     static ::StringW get_AppID();
     // static public System.Void set_AppID(System.String value)
-    // Offset: 0x8F1DCC
+    // Offset: 0xF91EA0
     static void set_AppID(::StringW value);
     // static public System.String get_MobileAppID()
-    // Offset: 0x8F1BD4
+    // Offset: 0xF91D28
     static ::StringW get_MobileAppID();
     // static public System.Void set_MobileAppID(System.String value)
-    // Offset: 0x8F1DF8
+    // Offset: 0xF91ECC
     static void set_MobileAppID(::StringW value);
     // static public OvrAvatarSettings get_Instance()
-    // Offset: 0x8F1C8C
+    // Offset: 0xF91D60
     static ::GlobalNamespace::OvrAvatarSettings* get_Instance();
     // static public System.Void set_Instance(OvrAvatarSettings value)
-    // Offset: 0x8F1E24
+    // Offset: 0xF91EF8
     static void set_Instance(::GlobalNamespace::OvrAvatarSettings* value);
     // public System.Void .ctor()
-    // Offset: 0x8F1E74
+    // Offset: 0xF91F48
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

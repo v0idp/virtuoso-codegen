@@ -49,15 +49,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::CoroutineDrivenEffect::$Reaction$d__7
     class $Reaction$d__7;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Single _delay
     // Size: 0x4
     // Offset: 0x10
@@ -86,21 +78,21 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::WaitForSeconds*) == 0x8);
     public:
     // Get instance field reference: protected System.Single _delay
-    float& dyn__delay();
+    [[deprecated]] float& dyn__delay();
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveBehaviour _behaviour
-    ::VROSC::AudioReactive::AudioReactiveBehaviour*& dyn__behaviour();
+    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveBehaviour*& dyn__behaviour();
     // Get instance field reference: private UnityEngine.Coroutine _coroutine
-    ::UnityEngine::Coroutine*& dyn__coroutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn__coroutine();
     // Get instance field reference: protected UnityEngine.WaitForSeconds _waitDelay
-    ::UnityEngine::WaitForSeconds*& dyn__waitDelay();
+    [[deprecated]] ::UnityEngine::WaitForSeconds*& dyn__waitDelay();
     // private System.Collections.IEnumerator Reaction()
-    // Offset: 0x133B7F0
+    // Offset: 0x8DF3CC
     ::System::Collections::IEnumerator* Reaction();
     // protected System.Collections.IEnumerator SpecificFlow()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Collections::IEnumerator* SpecificFlow();
     // protected System.Void .ctor()
-    // Offset: 0x133B85C
+    // Offset: 0x8DF438
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -110,17 +102,17 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<CoroutineDrivenEffect*, creationType>()));
     }
     // public override System.Void Update()
-    // Offset: 0x133B714
+    // Offset: 0x8DF2F0
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::Update()
     void Update();
     // public override System.Void Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
-    // Offset: 0x133B718
+    // Offset: 0x8DF2F4
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
     void Setup(::VROSC::AudioReactive::AudioReactiveBehaviour* behaviour);
     // public override System.Void Trigger()
-    // Offset: 0x133B794
+    // Offset: 0x8DF370
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::Trigger()
     void Trigger();

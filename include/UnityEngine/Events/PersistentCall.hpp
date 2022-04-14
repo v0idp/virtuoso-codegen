@@ -54,16 +54,8 @@ namespace UnityEngine::Events {
   // [TokenAttribute] Offset: FFFFFFFF
   class PersistentCall : public ::Il2CppObject/*, public ::UnityEngine::ISerializationCallbackReceiver*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [FormerlySerializedAsAttribute] Offset: 0x56BA18
+    // [FormerlySerializedAsAttribute] Offset: 0x665BFC
     // private UnityEngine.Object m_Target
     // Size: 0x8
     // Offset: 0x10
@@ -76,14 +68,14 @@ namespace UnityEngine::Events {
     ::StringW m_TargetAssemblyTypeName;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [FormerlySerializedAsAttribute] Offset: 0x56BA74
+    // [FormerlySerializedAsAttribute] Offset: 0x665C58
     // private System.String m_MethodName
     // Size: 0x8
     // Offset: 0x20
     ::StringW m_MethodName;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [FormerlySerializedAsAttribute] Offset: 0x56BAC0
+    // [FormerlySerializedAsAttribute] Offset: 0x665CA4
     // private UnityEngine.Events.PersistentListenerMode m_Mode
     // Size: 0x4
     // Offset: 0x28
@@ -92,15 +84,15 @@ namespace UnityEngine::Events {
     static_assert(sizeof(::UnityEngine::Events::PersistentListenerMode) == 0x4);
     // Padding between fields: m_Mode and: m_Arguments
     char __padding3[0x4] = {};
-    // [FormerlySerializedAsAttribute] Offset: 0x56BB0C
+    // [FormerlySerializedAsAttribute] Offset: 0x665CF0
     // private UnityEngine.Events.ArgumentCache m_Arguments
     // Size: 0x8
     // Offset: 0x30
     ::UnityEngine::Events::ArgumentCache* m_Arguments;
     // Field size check
     static_assert(sizeof(::UnityEngine::Events::ArgumentCache*) == 0x8);
-    // [FormerlySerializedAsAttribute] Offset: 0x56BB58
-    // [FormerlySerializedAsAttribute] Offset: 0x56BB58
+    // [FormerlySerializedAsAttribute] Offset: 0x665D3C
+    // [FormerlySerializedAsAttribute] Offset: 0x665D3C
     // private UnityEngine.Events.UnityEventCallState m_CallState
     // Size: 0x4
     // Offset: 0x38
@@ -113,49 +105,49 @@ namespace UnityEngine::Events {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: private UnityEngine.Object m_Target
-    ::UnityEngine::Object*& dyn_m_Target();
+    [[deprecated]] ::UnityEngine::Object*& dyn_m_Target();
     // Get instance field reference: private System.String m_TargetAssemblyTypeName
-    ::StringW& dyn_m_TargetAssemblyTypeName();
+    [[deprecated]] ::StringW& dyn_m_TargetAssemblyTypeName();
     // Get instance field reference: private System.String m_MethodName
-    ::StringW& dyn_m_MethodName();
+    [[deprecated]] ::StringW& dyn_m_MethodName();
     // Get instance field reference: private UnityEngine.Events.PersistentListenerMode m_Mode
-    ::UnityEngine::Events::PersistentListenerMode& dyn_m_Mode();
+    [[deprecated]] ::UnityEngine::Events::PersistentListenerMode& dyn_m_Mode();
     // Get instance field reference: private UnityEngine.Events.ArgumentCache m_Arguments
-    ::UnityEngine::Events::ArgumentCache*& dyn_m_Arguments();
+    [[deprecated]] ::UnityEngine::Events::ArgumentCache*& dyn_m_Arguments();
     // Get instance field reference: private UnityEngine.Events.UnityEventCallState m_CallState
-    ::UnityEngine::Events::UnityEventCallState& dyn_m_CallState();
+    [[deprecated]] ::UnityEngine::Events::UnityEventCallState& dyn_m_CallState();
     // public UnityEngine.Object get_target()
-    // Offset: 0x9CC5BC
+    // Offset: 0xBC1364
     ::UnityEngine::Object* get_target();
     // public System.String get_targetAssemblyTypeName()
-    // Offset: 0x9CC5C4
+    // Offset: 0xBC136C
     ::StringW get_targetAssemblyTypeName();
     // public System.String get_methodName()
-    // Offset: 0x9CC67C
+    // Offset: 0xBC1424
     ::StringW get_methodName();
     // public UnityEngine.Events.PersistentListenerMode get_mode()
-    // Offset: 0x9CC684
+    // Offset: 0xBC142C
     ::UnityEngine::Events::PersistentListenerMode get_mode();
     // public UnityEngine.Events.ArgumentCache get_arguments()
-    // Offset: 0x9CC68C
+    // Offset: 0xBC1434
     ::UnityEngine::Events::ArgumentCache* get_arguments();
     // public System.Boolean IsValid()
-    // Offset: 0x9CC694
+    // Offset: 0xBC143C
     bool IsValid();
     // public UnityEngine.Events.BaseInvokableCall GetRuntimeCall(UnityEngine.Events.UnityEventBase theEvent)
-    // Offset: 0x9CC6DC
+    // Offset: 0xBC1484
     ::UnityEngine::Events::BaseInvokableCall* GetRuntimeCall(::UnityEngine::Events::UnityEventBase* theEvent);
     // static private UnityEngine.Events.BaseInvokableCall GetObjectCall(UnityEngine.Object target, System.Reflection.MethodInfo method, UnityEngine.Events.ArgumentCache arguments)
-    // Offset: 0x9CC9F4
+    // Offset: 0xBC179C
     static ::UnityEngine::Events::BaseInvokableCall* GetObjectCall(::UnityEngine::Object* target, ::System::Reflection::MethodInfo* method, ::UnityEngine::Events::ArgumentCache* arguments);
     // public System.Void OnBeforeSerialize()
-    // Offset: 0x9CCE78
+    // Offset: 0xBC1C20
     void OnBeforeSerialize();
     // public System.Void OnAfterDeserialize()
-    // Offset: 0x9CCEA4
+    // Offset: 0xBC1C4C
     void OnAfterDeserialize();
     // public System.Void .ctor()
-    // Offset: 0x9CCED0
+    // Offset: 0xBC1C78
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

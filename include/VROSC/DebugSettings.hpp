@@ -36,16 +36,16 @@ namespace VROSC {
     // Set static field: static public System.Boolean ShowLoopData
     static void _set_ShowLoopData(bool value);
     // static public System.Void SaveValues()
-    // Offset: 0x130A76C
+    // Offset: 0x8E393C
     static void SaveValues();
     // static private System.Void WriteBool(System.String key, System.Boolean value)
-    // Offset: 0x130A82C
+    // Offset: 0x8E39FC
     static void WriteBool(::StringW key, bool value);
     // static private System.Boolean ReadBool(System.String key)
-    // Offset: 0x130A838
+    // Offset: 0x8E3A08
     static bool ReadBool(::StringW key);
     // static public System.Void LoadValues()
-    // Offset: 0x130A858
+    // Offset: 0x8E3A28
     static void LoadValues();
   }; // VROSC.DebugSettings
   #pragma pack(pop)

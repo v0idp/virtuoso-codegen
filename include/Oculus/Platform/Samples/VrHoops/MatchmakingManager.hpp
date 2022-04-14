@@ -62,15 +62,7 @@ namespace Oculus::Platform::Samples::VrHoops {
     class OnEnqueueResult;
     // Nested type: ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded
     class OnMatchPlayerAdded;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt64 m_matchRoom
     // Size: 0x8
     // Offset: 0x10
@@ -103,48 +95,48 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.String NORMAL_POOL
     static void _set_NORMAL_POOL(::StringW value);
     // Get instance field reference: private System.UInt64 m_matchRoom
-    uint64_t& dyn_m_matchRoom();
+    [[deprecated]] uint64_t& dyn_m_matchRoom();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt64,Oculus.Platform.Models.User> m_remotePlayers
-    ::System::Collections::Generic::Dictionary_2<uint64_t, ::Oculus::Platform::Models::User*>*& dyn_m_remotePlayers();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::Oculus::Platform::Models::User*>*& dyn_m_remotePlayers();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnEnqueueResult m_enqueueCallback
-    ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnEnqueueResult*& dyn_m_enqueueCallback();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnEnqueueResult*& dyn_m_enqueueCallback();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnMatchPlayerAdded m_playerCallback
-    ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded*& dyn_m_playerCallback();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded*& dyn_m_playerCallback();
     // private Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnEnqueueResult get_EnqueueResultCallback()
-    // Offset: 0x9727B0
+    // Offset: 0xB44B4C
     ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnEnqueueResult* get_EnqueueResultCallback();
     // public System.Void set_EnqueueResultCallback(Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnEnqueueResult value)
-    // Offset: 0x9727B8
+    // Offset: 0xB44B54
     void set_EnqueueResultCallback(::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnEnqueueResult* value);
     // private Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnMatchPlayerAdded get_MatchPlayerAddedCallback()
-    // Offset: 0x9727C0
+    // Offset: 0xB44B5C
     ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded* get_MatchPlayerAddedCallback();
     // public System.Void set_MatchPlayerAddedCallback(Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnMatchPlayerAdded value)
-    // Offset: 0x9727C8
+    // Offset: 0xB44B64
     void set_MatchPlayerAddedCallback(::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded* value);
     // public System.Void QueueForMatch()
-    // Offset: 0x96D27C
+    // Offset: 0xB3F618
     void QueueForMatch();
     // private System.Void MatchmakingEnqueueCallback(Oculus.Platform.Message msg)
-    // Offset: 0x9727D0
+    // Offset: 0xB44B6C
     void MatchmakingEnqueueCallback(::Oculus::Platform::Message* msg);
     // private System.Void MatchFoundCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x972890
+    // Offset: 0xB44C2C
     void MatchFoundCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void MatchmakingJoinRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x972988
+    // Offset: 0xB44D24
     void MatchmakingJoinRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void MatchmakingRoomUpdateCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x972FF4
+    // Offset: 0xB45390
     void MatchmakingRoomUpdateCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // public System.Void EndMatch()
-    // Offset: 0x96CDA4
+    // Offset: 0xB3F140
     void EndMatch();
     // public System.Void LeaveQueue()
-    // Offset: 0x96D35C
+    // Offset: 0xB3F6F8
     void LeaveQueue();
     // public System.Void .ctor()
-    // Offset: 0x972694
+    // Offset: 0xB44A30
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

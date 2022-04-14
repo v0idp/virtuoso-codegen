@@ -38,15 +38,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ModularDrumpads::SpawnerSample
     class SpawnerSample;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ModularDrumpads/VROSC.SpawnerSample[] _spawnersSamples
     // Size: 0x8
     // Offset: 0x18
@@ -63,32 +55,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ModularDrumpads/VROSC.SpawnerSample[] _spawnersSamples
-    ::ArrayW<::VROSC::ModularDrumpads::SpawnerSample*>& dyn__spawnersSamples();
+    [[deprecated]] ::ArrayW<::VROSC::ModularDrumpads::SpawnerSample*>& dyn__spawnersSamples();
     // Get instance field reference: private System.Boolean <IsSetup>k__BackingField
-    bool& dyn_$IsSetup$k__BackingField();
+    [[deprecated]] bool& dyn_$IsSetup$k__BackingField();
     // public System.Int32 get_SpawnedPadsCount()
-    // Offset: 0x8B6630
+    // Offset: 0xACA230
     int get_SpawnedPadsCount();
     // public System.Boolean get_IsSetup()
-    // Offset: 0x8B66C0
+    // Offset: 0xACA2C0
     bool get_IsSetup();
     // private System.Void set_IsSetup(System.Boolean value)
-    // Offset: 0x8B66C8
+    // Offset: 0xACA2C8
     void set_IsSetup(bool value);
     // public System.Void Setup(VROSC.ModularDrumsController instrumentController)
-    // Offset: 0x8B66D4
+    // Offset: 0xACA2D4
     void Setup(::VROSC::ModularDrumsController* instrumentController);
     // public System.Void RefreshSpawners(VROSC.ModularDrumsController instrumentController)
-    // Offset: 0x8B6770
+    // Offset: 0xACA370
     void RefreshSpawners(::VROSC::ModularDrumsController* instrumentController);
     // public System.Void DeleteAll()
-    // Offset: 0x8B6A90
+    // Offset: 0xACA68C
     void DeleteAll();
     // System.Void SetActive(System.Boolean isActive)
-    // Offset: 0x8B6B04
+    // Offset: 0xACA700
     void SetActive(bool isActive);
     // public System.Void .ctor()
-    // Offset: 0x8B6B88
+    // Offset: 0xACA784
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

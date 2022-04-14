@@ -26,7 +26,7 @@ namespace UnityEngine::UI {
   class InputField::SubmitEvent : public ::UnityEngine::Events::UnityEvent_1<::StringW> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x11426DC
+    // Offset: 0x16D8E74
     // Implemented from: UnityEngine.Events.UnityEvent`1
     // Base method: System.Void UnityEvent_1::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

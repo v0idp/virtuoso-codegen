@@ -32,15 +32,7 @@ namespace Firebase::Firestore {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Future_FirestoreVoid::$GetTask$c__AnonStorey0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // Firebase.Firestore.Future_FirestoreVoid fu
     // Size: 0x8
     // Offset: 0x10
@@ -55,14 +47,14 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::System::Threading::Tasks::TaskCompletionSource_1<int>*) == 0x8);
     public:
     // Get instance field reference: Firebase.Firestore.Future_FirestoreVoid fu
-    ::Firebase::Firestore::Future_FirestoreVoid*& dyn_fu();
+    [[deprecated]] ::Firebase::Firestore::Future_FirestoreVoid*& dyn_fu();
     // Get instance field reference: System.Threading.Tasks.TaskCompletionSource`1<System.Int32> tcs
-    ::System::Threading::Tasks::TaskCompletionSource_1<int>*& dyn_tcs();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<int>*& dyn_tcs();
     // System.Void <>m__0()
-    // Offset: 0xC43F94
+    // Offset: 0xD68A58
     void $$m__0();
     // public System.Void .ctor()
-    // Offset: 0xC3C520
+    // Offset: 0xD60330
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

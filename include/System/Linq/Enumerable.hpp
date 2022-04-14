@@ -17,6 +17,9 @@ namespace System::Linq {
   // Forward declaring type: IOrderedEnumerable`1<TElement>
   template<typename TElement>
   class IOrderedEnumerable_1;
+  // Forward declaring type: IGrouping`2<TKey, TElement>
+  template<typename TKey, typename TElement>
+  class IGrouping_2;
 }
 // Forward declaring namespace: System::Collections::Generic
 namespace System::Collections::Generic {
@@ -86,21 +89,24 @@ namespace System::Linq {
     // Nested type: ::System::Linq::Enumerable::WhereSelectListIterator_2<TSource, TResult>
     template<typename TSource, typename TResult>
     class WhereSelectListIterator_2;
-    // Nested type: ::System::Linq::Enumerable::$SelectIterator$d__5_2<TSource, TResult>
-    template<typename TSource, typename TResult>
-    class $SelectIterator$d__5_2;
     // Nested type: ::System::Linq::Enumerable::$$c__DisplayClass6_0_1<TSource>
     template<typename TSource>
     class $$c__DisplayClass6_0_1;
     // Nested type: ::System::Linq::Enumerable::$$c__DisplayClass7_0_3<TSource, TMiddle, TResult>
     template<typename TSource, typename TMiddle, typename TResult>
     class $$c__DisplayClass7_0_3;
+    // Nested type: ::System::Linq::Enumerable::$SelectManyIterator$d__17_2<TSource, TResult>
+    template<typename TSource, typename TResult>
+    class $SelectManyIterator$d__17_2;
     // Nested type: ::System::Linq::Enumerable::$TakeIterator$d__25_1<TSource>
     template<typename TSource>
     class $TakeIterator$d__25_1;
     // Nested type: ::System::Linq::Enumerable::$ConcatIterator$d__59_1<TSource>
     template<typename TSource>
     class $ConcatIterator$d__59_1;
+    // Nested type: ::System::Linq::Enumerable::$UnionIterator$d__71_1<TSource>
+    template<typename TSource>
+    class $UnionIterator$d__71_1;
     // Nested type: ::System::Linq::Enumerable::$CastIterator$d__99_1<TResult>
     template<typename TResult>
     class $CastIterator$d__99_1;
@@ -124,24 +130,6 @@ namespace System::Linq {
       static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()})));
       return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<TResult>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, selector);
     }
-    // static public System.Collections.Generic.IEnumerable`1<TResult> Select(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`3<TSource,System.Int32,TResult> selector)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    template<class TSource, class TResult>
-    static ::System::Collections::Generic::IEnumerable_1<TResult>* Select(::System::Collections::Generic::IEnumerable_1<TSource>* source, ::System::Func_3<TSource, int, TResult>* selector) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::Select");
-      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "Select", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source), ::il2cpp_utils::ExtractType(selector)})));
-      static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()})));
-      return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<TResult>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, selector);
-    }
-    // static private System.Collections.Generic.IEnumerable`1<TResult> SelectIterator(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`3<TSource,System.Int32,TResult> selector)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    template<class TSource, class TResult>
-    static ::System::Collections::Generic::IEnumerable_1<TResult>* SelectIterator(::System::Collections::Generic::IEnumerable_1<TSource>* source, ::System::Func_3<TSource, int, TResult>* selector) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::SelectIterator");
-      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "SelectIterator", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source), ::il2cpp_utils::ExtractType(selector)})));
-      static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()})));
-      return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<TResult>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, selector);
-    }
     // static private System.Func`2<TSource,System.Boolean> CombinePredicates(System.Func`2<TSource,System.Boolean> predicate1, System.Func`2<TSource,System.Boolean> predicate2)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class TSource>
@@ -159,6 +147,24 @@ namespace System::Linq {
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "CombineSelectors", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TMiddle>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(selector1), ::il2cpp_utils::ExtractType(selector2)})));
       static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TMiddle>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()})));
       return ::il2cpp_utils::RunMethodRethrow<::System::Func_2<TSource, TResult>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, selector1, selector2);
+    }
+    // static public System.Collections.Generic.IEnumerable`1<TResult> SelectMany(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`2<TSource,System.Collections.Generic.IEnumerable`1<TResult>> selector)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource, class TResult>
+    static ::System::Collections::Generic::IEnumerable_1<TResult>* SelectMany(::System::Collections::Generic::IEnumerable_1<TSource>* source, ::System::Func_2<TSource, ::System::Collections::Generic::IEnumerable_1<TResult>*>* selector) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::SelectMany");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "SelectMany", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source), ::il2cpp_utils::ExtractType(selector)})));
+      static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()})));
+      return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<TResult>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, selector);
+    }
+    // static private System.Collections.Generic.IEnumerable`1<TResult> SelectManyIterator(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`2<TSource,System.Collections.Generic.IEnumerable`1<TResult>> selector)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource, class TResult>
+    static ::System::Collections::Generic::IEnumerable_1<TResult>* SelectManyIterator(::System::Collections::Generic::IEnumerable_1<TSource>* source, ::System::Func_2<TSource, ::System::Collections::Generic::IEnumerable_1<TResult>*>* selector) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::SelectManyIterator");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "SelectManyIterator", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source), ::il2cpp_utils::ExtractType(selector)})));
+      static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TResult>::get()})));
+      return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<TResult>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, selector);
     }
     // static public System.Collections.Generic.IEnumerable`1<TSource> Take(System.Collections.Generic.IEnumerable`1<TSource> source, System.Int32 count)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -205,6 +211,15 @@ namespace System::Linq {
       static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TKey>::get()})));
       return ::il2cpp_utils::RunMethodRethrow<::System::Linq::IOrderedEnumerable_1<TSource>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, keySelector);
     }
+    // static public System.Collections.Generic.IEnumerable`1<System.Linq.IGrouping`2<TKey,TSource>> GroupBy(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`2<TSource,TKey> keySelector)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource, class TKey>
+    static ::System::Collections::Generic::IEnumerable_1<::System::Linq::IGrouping_2<TKey, TSource>*>* GroupBy(::System::Collections::Generic::IEnumerable_1<TSource>* source, ::System::Func_2<TSource, TKey>* keySelector) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::GroupBy");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "GroupBy", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TKey>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source), ::il2cpp_utils::ExtractType(keySelector)})));
+      static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TKey>::get()})));
+      return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<::System::Linq::IGrouping_2<TKey, TSource>*>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, keySelector);
+    }
     // static public System.Collections.Generic.IEnumerable`1<TSource> Concat(System.Collections.Generic.IEnumerable`1<TSource> first, System.Collections.Generic.IEnumerable`1<TSource> second)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class TSource>
@@ -222,6 +237,24 @@ namespace System::Linq {
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "ConcatIterator", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(first), ::il2cpp_utils::ExtractType(second)})));
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<TSource>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, first, second);
+    }
+    // static public System.Collections.Generic.IEnumerable`1<TSource> Union(System.Collections.Generic.IEnumerable`1<TSource> first, System.Collections.Generic.IEnumerable`1<TSource> second)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource>
+    static ::System::Collections::Generic::IEnumerable_1<TSource>* Union(::System::Collections::Generic::IEnumerable_1<TSource>* first, ::System::Collections::Generic::IEnumerable_1<TSource>* second) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::Union");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "Union", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(first), ::il2cpp_utils::ExtractType(second)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<TSource>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, first, second);
+    }
+    // static private System.Collections.Generic.IEnumerable`1<TSource> UnionIterator(System.Collections.Generic.IEnumerable`1<TSource> first, System.Collections.Generic.IEnumerable`1<TSource> second, System.Collections.Generic.IEqualityComparer`1<TSource> comparer)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource>
+    static ::System::Collections::Generic::IEnumerable_1<TSource>* UnionIterator(::System::Collections::Generic::IEnumerable_1<TSource>* first, ::System::Collections::Generic::IEnumerable_1<TSource>* second, ::System::Collections::Generic::IEqualityComparer_1<TSource>* comparer) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::UnionIterator");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "UnionIterator", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(first), ::il2cpp_utils::ExtractType(second), ::il2cpp_utils::ExtractType(comparer)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<TSource>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, first, second, comparer);
     }
     // static public System.Boolean SequenceEqual(System.Collections.Generic.IEnumerable`1<TSource> first, System.Collections.Generic.IEnumerable`1<TSource> second)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -331,6 +364,42 @@ namespace System::Linq {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<TSource, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source);
     }
+    // static public TSource LastOrDefault(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`2<TSource,System.Boolean> predicate)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource>
+    static TSource LastOrDefault(::System::Collections::Generic::IEnumerable_1<TSource>* source, ::System::Func_2<TSource, bool>* predicate) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::LastOrDefault");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "LastOrDefault", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source), ::il2cpp_utils::ExtractType(predicate)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<TSource, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, predicate);
+    }
+    // static public TSource Single(System.Collections.Generic.IEnumerable`1<TSource> source)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource>
+    static TSource Single(::System::Collections::Generic::IEnumerable_1<TSource>* source) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::Single");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "Single", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<TSource, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source);
+    }
+    // static public TSource Single(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`2<TSource,System.Boolean> predicate)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource>
+    static TSource Single(::System::Collections::Generic::IEnumerable_1<TSource>* source, ::System::Func_2<TSource, bool>* predicate) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::Single");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "Single", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source), ::il2cpp_utils::ExtractType(predicate)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<TSource, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, predicate);
+    }
+    // static public TSource SingleOrDefault(System.Collections.Generic.IEnumerable`1<TSource> source)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class TSource>
+    static TSource SingleOrDefault(::System::Collections::Generic::IEnumerable_1<TSource>* source) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Enumerable::SingleOrDefault");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("System.Linq", "Enumerable", "SingleOrDefault", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(source)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TSource>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<TSource, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source);
+    }
     // static public TSource SingleOrDefault(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`2<TSource,System.Boolean> predicate)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class TSource>
@@ -350,10 +419,10 @@ namespace System::Linq {
       return ::il2cpp_utils::RunMethodRethrow<TSource, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, index);
     }
     // static public System.Collections.Generic.IEnumerable`1<System.Int32> Range(System.Int32 start, System.Int32 count)
-    // Offset: 0x12C3094
+    // Offset: 0x11FD2B0
     static ::System::Collections::Generic::IEnumerable_1<int>* Range(int start, int count);
     // static private System.Collections.Generic.IEnumerable`1<System.Int32> RangeIterator(System.Int32 start, System.Int32 count)
-    // Offset: 0x12C3148
+    // Offset: 0x11FD364
     static ::System::Collections::Generic::IEnumerable_1<int>* RangeIterator(int start, int count);
     // static public System.Collections.Generic.IEnumerable`1<TResult> Empty()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -428,7 +497,7 @@ namespace System::Linq {
       return ::il2cpp_utils::RunMethodRethrow<TAccumulate, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, seed, func);
     }
     // static public System.Single Min(System.Collections.Generic.IEnumerable`1<System.Single> source)
-    // Offset: 0x12C320C
+    // Offset: 0x11FD3E0
     static float Min(::System::Collections::Generic::IEnumerable_1<float>* source);
     // static public System.Single Min(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`2<TSource,System.Single> selector)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -440,10 +509,10 @@ namespace System::Linq {
       return ::il2cpp_utils::RunMethodRethrow<float, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, selector);
     }
     // static public System.Int32 Max(System.Collections.Generic.IEnumerable`1<System.Int32> source)
-    // Offset: 0x12C3604
+    // Offset: 0x11FD7D8
     static int Max(::System::Collections::Generic::IEnumerable_1<int>* source);
     // static public System.Single Max(System.Collections.Generic.IEnumerable`1<System.Single> source)
-    // Offset: 0x12C3900
+    // Offset: 0x11FDAD4
     static float Max(::System::Collections::Generic::IEnumerable_1<float>* source);
     // static public System.Int32 Max(System.Collections.Generic.IEnumerable`1<TSource> source, System.Func`2<TSource,System.Int32> selector)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -464,7 +533,7 @@ namespace System::Linq {
       return ::il2cpp_utils::RunMethodRethrow<float, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, source, selector);
     }
     // static public System.Single Average(System.Collections.Generic.IEnumerable`1<System.Single> source)
-    // Offset: 0x12C3C64
+    // Offset: 0x11FDE38
     static float Average(::System::Collections::Generic::IEnumerable_1<float>* source);
   }; // System.Linq.Enumerable
   #pragma pack(pop)
@@ -476,17 +545,17 @@ namespace System::Linq {
 // Writing MetadataGetter for method: System::Linq::Enumerable::Select
 // Il2CppName: Select
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: System::Linq::Enumerable::Select
-// Il2CppName: Select
-// Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: System::Linq::Enumerable::SelectIterator
-// Il2CppName: SelectIterator
-// Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Linq::Enumerable::CombinePredicates
 // Il2CppName: CombinePredicates
 // Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Linq::Enumerable::CombineSelectors
 // Il2CppName: CombineSelectors
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::SelectMany
+// Il2CppName: SelectMany
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::SelectManyIterator
+// Il2CppName: SelectManyIterator
 // Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Linq::Enumerable::Take
 // Il2CppName: Take
@@ -503,11 +572,20 @@ namespace System::Linq {
 // Writing MetadataGetter for method: System::Linq::Enumerable::ThenBy
 // Il2CppName: ThenBy
 // Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::GroupBy
+// Il2CppName: GroupBy
+// Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Linq::Enumerable::Concat
 // Il2CppName: Concat
 // Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Linq::Enumerable::ConcatIterator
 // Il2CppName: ConcatIterator
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::Union
+// Il2CppName: Union
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::UnionIterator
+// Il2CppName: UnionIterator
 // Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Linq::Enumerable::SequenceEqual
 // Il2CppName: SequenceEqual
@@ -544,6 +622,18 @@ namespace System::Linq {
 // Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Linq::Enumerable::Last
 // Il2CppName: Last
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::LastOrDefault
+// Il2CppName: LastOrDefault
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::Single
+// Il2CppName: Single
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::Single
+// Il2CppName: Single
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: System::Linq::Enumerable::SingleOrDefault
+// Il2CppName: SingleOrDefault
 // Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: System::Linq::Enumerable::SingleOrDefault
 // Il2CppName: SingleOrDefault

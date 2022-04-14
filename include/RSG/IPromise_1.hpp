@@ -59,49 +59,49 @@ namespace RSG {
     // Offset: 0xFFFFFFFFFFFFFFFF
     int get_Id() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::get_Id");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "get_Id", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<int, false>(this, ___internal__method);
     }
     // public RSG.IPromise`1<PromisedT> WithName(System.String name)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise_1<PromisedT>* WithName(::StringW name) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::WithName");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "WithName", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(name)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<PromisedT>*, false>(this, ___internal__method, name);
     }
     // public System.Void Done(System.Action`1<PromisedT> onResolved, System.Action`1<System.Exception> onRejected)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Done(::System::Action_1<PromisedT>* onResolved, ::System::Action_1<::System::Exception*>* onRejected) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Done");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Done", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, onResolved, onRejected);
     }
     // public System.Void Done(System.Action`1<PromisedT> onResolved)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Done(::System::Action_1<PromisedT>* onResolved) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Done");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Done", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, onResolved);
     }
     // public System.Void Done()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Done() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Done");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Done", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method);
     }
     // public RSG.IPromise Catch(System.Action`1<System.Exception> onRejected)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* Catch(::System::Action_1<::System::Exception*>* onRejected) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Catch");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Catch", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onRejected)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, onRejected);
     }
     // public RSG.IPromise`1<PromisedT> Catch(System.Func`2<System.Exception,PromisedT> onRejected)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise_1<PromisedT>* Catch(::System::Func_2<::System::Exception*, PromisedT>* onRejected) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Catch");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Catch", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onRejected)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<PromisedT>*, false>(this, ___internal__method, onRejected);
     }
     // public RSG.IPromise`1<ConvertedT> Then(System.Func`2<PromisedT,RSG.IPromise`1<ConvertedT>> onResolved)
@@ -109,7 +109,7 @@ namespace RSG {
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* Then(::System::Func_2<PromisedT, ::RSG::IPromise_1<ConvertedT>*>* onResolved) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, onResolved);
     }
@@ -117,14 +117,14 @@ namespace RSG {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* Then(::System::Func_2<PromisedT, ::RSG::IPromise*>* onResolved) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, onResolved);
     }
     // public RSG.IPromise Then(System.Action`1<PromisedT> onResolved)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* Then(::System::Action_1<PromisedT>* onResolved) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, onResolved);
     }
     // public RSG.IPromise`1<ConvertedT> Then(System.Func`2<PromisedT,RSG.IPromise`1<ConvertedT>> onResolved, System.Func`2<System.Exception,RSG.IPromise`1<ConvertedT>> onRejected)
@@ -132,7 +132,7 @@ namespace RSG {
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* Then(::System::Func_2<PromisedT, ::RSG::IPromise_1<ConvertedT>*>* onResolved, ::System::Func_2<::System::Exception*, ::RSG::IPromise_1<ConvertedT>*>* onRejected) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, onResolved, onRejected);
     }
@@ -140,14 +140,14 @@ namespace RSG {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* Then(::System::Func_2<PromisedT, ::RSG::IPromise*>* onResolved, ::System::Action_1<::System::Exception*>* onRejected) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, onResolved, onRejected);
     }
     // public RSG.IPromise Then(System.Action`1<PromisedT> onResolved, System.Action`1<System.Exception> onRejected)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* Then(::System::Action_1<PromisedT>* onResolved, ::System::Action_1<::System::Exception*>* onRejected) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, onResolved, onRejected);
     }
     // public RSG.IPromise`1<ConvertedT> Then(System.Func`2<PromisedT,RSG.IPromise`1<ConvertedT>> onResolved, System.Func`2<System.Exception,RSG.IPromise`1<ConvertedT>> onRejected, System.Action`1<System.Single> onProgress)
@@ -155,7 +155,7 @@ namespace RSG {
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* Then(::System::Func_2<PromisedT, ::RSG::IPromise_1<ConvertedT>*>* onResolved, ::System::Func_2<::System::Exception*, ::RSG::IPromise_1<ConvertedT>*>* onRejected, ::System::Action_1<float>* onProgress) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected), ::il2cpp_utils::ExtractType(onProgress)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, onResolved, onRejected, onProgress);
     }
@@ -163,14 +163,14 @@ namespace RSG {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* Then(::System::Func_2<PromisedT, ::RSG::IPromise*>* onResolved, ::System::Action_1<::System::Exception*>* onRejected, ::System::Action_1<float>* onProgress) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected), ::il2cpp_utils::ExtractType(onProgress)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, onResolved, onRejected, onProgress);
     }
     // public RSG.IPromise Then(System.Action`1<PromisedT> onResolved, System.Action`1<System.Exception> onRejected, System.Action`1<System.Single> onProgress)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* Then(::System::Action_1<PromisedT>* onResolved, ::System::Action_1<::System::Exception*>* onRejected, ::System::Action_1<float>* onProgress) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved), ::il2cpp_utils::ExtractType(onRejected), ::il2cpp_utils::ExtractType(onProgress)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, onResolved, onRejected, onProgress);
     }
     // public RSG.IPromise`1<ConvertedT> Then(System.Func`2<PromisedT,ConvertedT> transform)
@@ -178,7 +178,7 @@ namespace RSG {
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* Then(::System::Func_2<PromisedT, ConvertedT>* transform) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Then");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Then", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(transform)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, transform);
     }
@@ -187,7 +187,7 @@ namespace RSG {
     template<class ConvertedT>
     ::RSG::IPromise_1<::System::Collections::Generic::IEnumerable_1<ConvertedT>*>* ThenAll(::System::Func_2<PromisedT, ::System::Collections::Generic::IEnumerable_1<::RSG::IPromise_1<ConvertedT>*>*>* chain) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::ThenAll");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ThenAll", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(chain)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<::System::Collections::Generic::IEnumerable_1<ConvertedT>*>*, false>(this, ___generic__method, chain);
     }
@@ -195,7 +195,7 @@ namespace RSG {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* ThenAll(::System::Func_2<PromisedT, ::System::Collections::Generic::IEnumerable_1<::RSG::IPromise*>*>* chain) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::ThenAll");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ThenAll", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(chain)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, chain);
     }
     // public RSG.IPromise`1<ConvertedT> ThenRace(System.Func`2<PromisedT,System.Collections.Generic.IEnumerable`1<RSG.IPromise`1<ConvertedT>>> chain)
@@ -203,7 +203,7 @@ namespace RSG {
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* ThenRace(::System::Func_2<PromisedT, ::System::Collections::Generic::IEnumerable_1<::RSG::IPromise_1<ConvertedT>*>*>* chain) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::ThenRace");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ThenRace", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(chain)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, chain);
     }
@@ -211,21 +211,21 @@ namespace RSG {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* ThenRace(::System::Func_2<PromisedT, ::System::Collections::Generic::IEnumerable_1<::RSG::IPromise*>*>* chain) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::ThenRace");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ThenRace", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(chain)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, chain);
     }
     // public RSG.IPromise`1<PromisedT> Finally(System.Action onComplete)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise_1<PromisedT>* Finally(::System::Action* onComplete) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Finally");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Finally", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onComplete)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<PromisedT>*, false>(this, ___internal__method, onComplete);
     }
     // public RSG.IPromise ContinueWith(System.Func`1<RSG.IPromise> onResolved)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise* ContinueWith(::System::Func_1<::RSG::IPromise*>* onResolved) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::ContinueWith");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ContinueWith", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onResolved)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise*, false>(this, ___internal__method, onResolved);
     }
     // public RSG.IPromise`1<ConvertedT> ContinueWith(System.Func`1<RSG.IPromise`1<ConvertedT>> onComplete)
@@ -233,7 +233,7 @@ namespace RSG {
     template<class ConvertedT>
     ::RSG::IPromise_1<ConvertedT>* ContinueWith(::System::Func_1<::RSG::IPromise_1<ConvertedT>*>* onComplete) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::ContinueWith");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "ContinueWith", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onComplete)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ConvertedT>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<ConvertedT>*, false>(this, ___generic__method, onComplete);
     }
@@ -241,7 +241,7 @@ namespace RSG {
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::IPromise_1<PromisedT>* Progress(::System::Action_1<float>* onProgress) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::IPromise_1::Progress");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Progress", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(onProgress)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::RSG::IPromise_1<PromisedT>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::IPromise_1<PromisedT>*, false>(this, ___internal__method, onProgress);
     }
   }; // RSG.IPromise`1

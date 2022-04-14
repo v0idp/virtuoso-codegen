@@ -39,15 +39,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::SynthParameterController::TargetParameter
     struct TargetParameter;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SynthController _synthController
     // Size: 0x8
     // Offset: 0x40
@@ -56,9 +48,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SynthController*) == 0x8);
     public:
     // Get instance field reference: private VROSC.SynthController _synthController
-    ::VROSC::SynthController*& dyn__synthController();
+    [[deprecated]] ::VROSC::SynthController*& dyn__synthController();
     // public System.Void .ctor()
-    // Offset: 0x13C1D84
+    // Offset: 0x19353D4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -73,12 +65,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SynthParameterController*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13C1D54
+    // Offset: 0x19353A4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13C1D6C
+    // Offset: 0x19353BC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);

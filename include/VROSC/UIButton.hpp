@@ -53,15 +53,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIButton : public ::VROSC::UIInteractable {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.TextMesh _label
     // Size: 0x8
     // Offset: 0x88
@@ -88,32 +80,32 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.TextMesh _label
-    ::UnityEngine::TextMesh*& dyn__label();
+    [[deprecated]] ::UnityEngine::TextMesh*& dyn__label();
     // Get instance field reference: private TMPro.TextMeshPro _tmpLabel
-    ::TMPro::TextMeshPro*& dyn__tmpLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__tmpLabel();
     // Get instance field reference: protected VROSC.SimpleHaptic _hapticFeedBack
-    ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: public System.Action OnButtonPress
-    ::System::Action*& dyn_OnButtonPress();
+    [[deprecated]] ::System::Action*& dyn_OnButtonPress();
     // public System.String get_Text()
-    // Offset: 0x1399FF0
+    // Offset: 0xA33BB0
     ::StringW get_Text();
     // private System.Void Start()
-    // Offset: 0x139A094
+    // Offset: 0xA33C54
     void Start();
     // protected System.Void ButtonWasPressed(VROSC.ClickData clickData)
-    // Offset: 0x139A14C
+    // Offset: 0xA33D0C
     void ButtonWasPressed(::VROSC::ClickData* clickData);
     // public System.Void SetText(System.String text)
-    // Offset: 0x139A1BC
+    // Offset: 0xA33D7C
     void SetText(::StringW text);
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x1399FE8
+    // Offset: 0xA33BA8
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Boolean UIInteractable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x139A2AC
+    // Offset: 0xA33E6C
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()

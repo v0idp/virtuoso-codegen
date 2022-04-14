@@ -67,20 +67,20 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.Boolean,System.Net.WebOperation>> <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebOperation <>4__this
-    ::System::Net::WebOperation*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebOperation*& dyn_$$4__this();
     // Get instance field reference: public System.Boolean ignoreErrors
-    bool& dyn_ignoreErrors();
+    [[deprecated]] bool& dyn_ignoreErrors();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.ValueTuple`2<System.Boolean,System.Net.WebOperation>> <>u__1
-    typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8EB488
+    // Offset: 0xA08FF4
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8EB7B4
+    // Offset: 0xA09320
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.Net.WebOperation/System.Net.<WaitForCompletion>d__53
   // WARNING Not writing size check since size may be invalid!

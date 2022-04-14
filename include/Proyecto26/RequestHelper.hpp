@@ -69,15 +69,7 @@ namespace Proyecto26 {
   // [TokenAttribute] Offset: FFFFFFFF
   class RequestHelper : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _uri
     // Size: 0x8
     // Offset: 0x10
@@ -230,233 +222,233 @@ namespace Proyecto26 {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String _uri
-    ::StringW& dyn__uri();
+    [[deprecated]] ::StringW& dyn__uri();
     // Get instance field reference: private System.String _method
-    ::StringW& dyn__method();
+    [[deprecated]] ::StringW& dyn__method();
     // Get instance field reference: private System.Object _body
-    ::Il2CppObject*& dyn__body();
+    [[deprecated]] ::Il2CppObject*& dyn__body();
     // Get instance field reference: private System.String _bodyString
-    ::StringW& dyn__bodyString();
+    [[deprecated]] ::StringW& dyn__bodyString();
     // Get instance field reference: private System.Byte[] _bodyRaw
-    ::ArrayW<uint8_t>& dyn__bodyRaw();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__bodyRaw();
     // Get instance field reference: private System.Nullable`1<System.Int32> _timeout
-    ::System::Nullable_1<int>& dyn__timeout();
+    [[deprecated]] ::System::Nullable_1<int>& dyn__timeout();
     // Get instance field reference: private System.String _contentType
-    ::StringW& dyn__contentType();
+    [[deprecated]] ::StringW& dyn__contentType();
     // Get instance field reference: private System.Int32 _retries
-    int& dyn__retries();
+    [[deprecated]] int& dyn__retries();
     // Get instance field reference: private System.Single _retrySecondsDelay
-    float& dyn__retrySecondsDelay();
+    [[deprecated]] float& dyn__retrySecondsDelay();
     // Get instance field reference: private System.Action`2<Proyecto26.RequestException,System.Int32> _retryCallback
-    ::System::Action_2<::Proyecto26::RequestException*, int>*& dyn__retryCallback();
+    [[deprecated]] ::System::Action_2<::Proyecto26::RequestException*, int>*& dyn__retryCallback();
     // Get instance field reference: private System.Boolean _enableDebug
-    bool& dyn__enableDebug();
+    [[deprecated]] bool& dyn__enableDebug();
     // Get instance field reference: private System.Nullable`1<System.Boolean> _useHttpContinue
-    ::System::Nullable_1<bool>& dyn__useHttpContinue();
+    [[deprecated]] ::System::Nullable_1<bool>& dyn__useHttpContinue();
     // Get instance field reference: private System.Nullable`1<System.Int32> _redirectLimit
-    ::System::Nullable_1<int>& dyn__redirectLimit();
+    [[deprecated]] ::System::Nullable_1<int>& dyn__redirectLimit();
     // Get instance field reference: private System.Boolean _ignoreHttpException
-    bool& dyn__ignoreHttpException();
+    [[deprecated]] bool& dyn__ignoreHttpException();
     // Get instance field reference: private UnityEngine.WWWForm _formData
-    ::UnityEngine::WWWForm*& dyn__formData();
+    [[deprecated]] ::UnityEngine::WWWForm*& dyn__formData();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.String> _simpleForm
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__simpleForm();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__simpleForm();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection> _formSections
-    ::System::Collections::Generic::List_1<::UnityEngine::Networking::IMultipartFormSection*>*& dyn__formSections();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Networking::IMultipartFormSection*>*& dyn__formSections();
     // Get instance field reference: private UnityEngine.Networking.CertificateHandler _certificateHandler
-    ::UnityEngine::Networking::CertificateHandler*& dyn__certificateHandler();
+    [[deprecated]] ::UnityEngine::Networking::CertificateHandler*& dyn__certificateHandler();
     // Get instance field reference: private UnityEngine.Networking.UploadHandler _uploadHandler
-    ::UnityEngine::Networking::UploadHandler*& dyn__uploadHandler();
+    [[deprecated]] ::UnityEngine::Networking::UploadHandler*& dyn__uploadHandler();
     // Get instance field reference: private UnityEngine.Networking.DownloadHandler _downloadHandler
-    ::UnityEngine::Networking::DownloadHandler*& dyn__downloadHandler();
+    [[deprecated]] ::UnityEngine::Networking::DownloadHandler*& dyn__downloadHandler();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.String> _headers
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__headers();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__headers();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.String> _params
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__params();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__params();
     // Get instance field reference: private System.Boolean _parseResponseBody
-    bool& dyn__parseResponseBody();
+    [[deprecated]] bool& dyn__parseResponseBody();
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequest <Request>k__BackingField
-    ::UnityEngine::Networking::UnityWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$Request$k__BackingField();
     // Get instance field reference: private System.Boolean _isAborted
-    bool& dyn__isAborted();
+    [[deprecated]] bool& dyn__isAborted();
     // Get instance field reference: private System.Boolean _defaultContentType
-    bool& dyn__defaultContentType();
+    [[deprecated]] bool& dyn__defaultContentType();
     // public System.String get_Uri()
-    // Offset: 0x999D78
+    // Offset: 0xB3281C
     ::StringW get_Uri();
     // public System.Void set_Uri(System.String value)
-    // Offset: 0x999D80
+    // Offset: 0xB32824
     void set_Uri(::StringW value);
     // public System.String get_Method()
-    // Offset: 0x999D88
+    // Offset: 0xB3282C
     ::StringW get_Method();
     // public System.Void set_Method(System.String value)
-    // Offset: 0x999D90
+    // Offset: 0xB32834
     void set_Method(::StringW value);
     // public System.Object get_Body()
-    // Offset: 0x999D98
+    // Offset: 0xB3283C
     ::Il2CppObject* get_Body();
     // public System.Void set_Body(System.Object value)
-    // Offset: 0x999DA0
+    // Offset: 0xB32844
     void set_Body(::Il2CppObject* value);
     // public System.String get_BodyString()
-    // Offset: 0x999DA8
+    // Offset: 0xB3284C
     ::StringW get_BodyString();
     // public System.Void set_BodyString(System.String value)
-    // Offset: 0x999DB0
+    // Offset: 0xB32854
     void set_BodyString(::StringW value);
     // public System.Byte[] get_BodyRaw()
-    // Offset: 0x999DB8
+    // Offset: 0xB3285C
     ::ArrayW<uint8_t> get_BodyRaw();
     // public System.Void set_BodyRaw(System.Byte[] value)
-    // Offset: 0x999DC0
+    // Offset: 0xB32864
     void set_BodyRaw(::ArrayW<uint8_t> value);
     // public System.Nullable`1<System.Int32> get_Timeout()
-    // Offset: 0x999DC8
+    // Offset: 0xB3286C
     ::System::Nullable_1<int> get_Timeout();
     // public System.Void set_Timeout(System.Nullable`1<System.Int32> value)
-    // Offset: 0x999DD0
+    // Offset: 0xB32874
     void set_Timeout(::System::Nullable_1<int> value);
     // public System.String get_ContentType()
-    // Offset: 0x999DD8
+    // Offset: 0xB3287C
     ::StringW get_ContentType();
     // public System.Void set_ContentType(System.String value)
-    // Offset: 0x999DE0
+    // Offset: 0xB32884
     void set_ContentType(::StringW value);
     // public System.Int32 get_Retries()
-    // Offset: 0x999DE8
+    // Offset: 0xB3288C
     int get_Retries();
     // public System.Void set_Retries(System.Int32 value)
-    // Offset: 0x999DF0
+    // Offset: 0xB32894
     void set_Retries(int value);
     // public System.Single get_RetrySecondsDelay()
-    // Offset: 0x999DF8
+    // Offset: 0xB3289C
     float get_RetrySecondsDelay();
     // public System.Void set_RetrySecondsDelay(System.Single value)
-    // Offset: 0x999E00
+    // Offset: 0xB328A4
     void set_RetrySecondsDelay(float value);
     // public System.Action`2<Proyecto26.RequestException,System.Int32> get_RetryCallback()
-    // Offset: 0x999E08
+    // Offset: 0xB328AC
     ::System::Action_2<::Proyecto26::RequestException*, int>* get_RetryCallback();
     // public System.Void set_RetryCallback(System.Action`2<Proyecto26.RequestException,System.Int32> value)
-    // Offset: 0x999E10
+    // Offset: 0xB328B4
     void set_RetryCallback(::System::Action_2<::Proyecto26::RequestException*, int>* value);
     // public System.Boolean get_EnableDebug()
-    // Offset: 0x999E18
+    // Offset: 0xB328BC
     bool get_EnableDebug();
     // public System.Void set_EnableDebug(System.Boolean value)
-    // Offset: 0x999E20
+    // Offset: 0xB328C4
     void set_EnableDebug(bool value);
     // public System.Nullable`1<System.Boolean> get_UseHttpContinue()
-    // Offset: 0x999E2C
+    // Offset: 0xB328D0
     ::System::Nullable_1<bool> get_UseHttpContinue();
     // public System.Void set_UseHttpContinue(System.Nullable`1<System.Boolean> value)
-    // Offset: 0x999E34
+    // Offset: 0xB328D8
     void set_UseHttpContinue(::System::Nullable_1<bool> value);
     // public System.Nullable`1<System.Int32> get_RedirectLimit()
-    // Offset: 0x999E3C
+    // Offset: 0xB328E0
     ::System::Nullable_1<int> get_RedirectLimit();
     // public System.Void set_RedirectLimit(System.Nullable`1<System.Int32> value)
-    // Offset: 0x999E44
+    // Offset: 0xB328E8
     void set_RedirectLimit(::System::Nullable_1<int> value);
     // public System.Boolean get_IgnoreHttpException()
-    // Offset: 0x999E4C
+    // Offset: 0xB328F0
     bool get_IgnoreHttpException();
     // public System.Void set_IgnoreHttpException(System.Boolean value)
-    // Offset: 0x999E54
+    // Offset: 0xB328F8
     void set_IgnoreHttpException(bool value);
     // public UnityEngine.WWWForm get_FormData()
-    // Offset: 0x999E60
+    // Offset: 0xB32904
     ::UnityEngine::WWWForm* get_FormData();
     // public System.Void set_FormData(UnityEngine.WWWForm value)
-    // Offset: 0x999E68
+    // Offset: 0xB3290C
     void set_FormData(::UnityEngine::WWWForm* value);
     // public System.Collections.Generic.Dictionary`2<System.String,System.String> get_SimpleForm()
-    // Offset: 0x999E70
+    // Offset: 0xB32914
     ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* get_SimpleForm();
     // public System.Void set_SimpleForm(System.Collections.Generic.Dictionary`2<System.String,System.String> value)
-    // Offset: 0x999E78
+    // Offset: 0xB3291C
     void set_SimpleForm(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* value);
     // public System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection> get_FormSections()
-    // Offset: 0x999E80
+    // Offset: 0xB32924
     ::System::Collections::Generic::List_1<::UnityEngine::Networking::IMultipartFormSection*>* get_FormSections();
     // public System.Void set_FormSections(System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection> value)
-    // Offset: 0x999E88
+    // Offset: 0xB3292C
     void set_FormSections(::System::Collections::Generic::List_1<::UnityEngine::Networking::IMultipartFormSection*>* value);
     // public UnityEngine.Networking.CertificateHandler get_CertificateHandler()
-    // Offset: 0x999E90
+    // Offset: 0xB32934
     ::UnityEngine::Networking::CertificateHandler* get_CertificateHandler();
     // public System.Void set_CertificateHandler(UnityEngine.Networking.CertificateHandler value)
-    // Offset: 0x999E98
+    // Offset: 0xB3293C
     void set_CertificateHandler(::UnityEngine::Networking::CertificateHandler* value);
     // public UnityEngine.Networking.UploadHandler get_UploadHandler()
-    // Offset: 0x999EA0
+    // Offset: 0xB32944
     ::UnityEngine::Networking::UploadHandler* get_UploadHandler();
     // public System.Void set_UploadHandler(UnityEngine.Networking.UploadHandler value)
-    // Offset: 0x999EA8
+    // Offset: 0xB3294C
     void set_UploadHandler(::UnityEngine::Networking::UploadHandler* value);
     // public UnityEngine.Networking.DownloadHandler get_DownloadHandler()
-    // Offset: 0x999EB0
+    // Offset: 0xB32954
     ::UnityEngine::Networking::DownloadHandler* get_DownloadHandler();
     // public System.Void set_DownloadHandler(UnityEngine.Networking.DownloadHandler value)
-    // Offset: 0x999EB8
+    // Offset: 0xB3295C
     void set_DownloadHandler(::UnityEngine::Networking::DownloadHandler* value);
     // public System.Collections.Generic.Dictionary`2<System.String,System.String> get_Headers()
-    // Offset: 0x999EC0
+    // Offset: 0xB32964
     ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* get_Headers();
     // public System.Void set_Headers(System.Collections.Generic.Dictionary`2<System.String,System.String> value)
-    // Offset: 0x999F3C
+    // Offset: 0xB329E0
     void set_Headers(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* value);
     // public System.Collections.Generic.Dictionary`2<System.String,System.String> get_Params()
-    // Offset: 0x999F44
+    // Offset: 0xB329E8
     ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* get_Params();
     // public System.Void set_Params(System.Collections.Generic.Dictionary`2<System.String,System.String> value)
-    // Offset: 0x999FC0
+    // Offset: 0xB32A64
     void set_Params(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* value);
     // public System.Boolean get_ParseResponseBody()
-    // Offset: 0x999FC8
+    // Offset: 0xB32A6C
     bool get_ParseResponseBody();
     // public System.Void set_ParseResponseBody(System.Boolean value)
-    // Offset: 0x999FD0
+    // Offset: 0xB32A74
     void set_ParseResponseBody(bool value);
     // private UnityEngine.Networking.UnityWebRequest get_Request()
-    // Offset: 0x999FDC
+    // Offset: 0xB32A80
     ::UnityEngine::Networking::UnityWebRequest* get_Request();
     // public System.Void set_Request(UnityEngine.Networking.UnityWebRequest value)
-    // Offset: 0x999FE4
+    // Offset: 0xB32A88
     void set_Request(::UnityEngine::Networking::UnityWebRequest* value);
     // public System.Single get_UploadProgress()
-    // Offset: 0x999FEC
+    // Offset: 0xB32A90
     float get_UploadProgress();
     // public System.UInt64 get_UploadedBytes()
-    // Offset: 0x99A004
+    // Offset: 0xB32AA8
     uint64_t get_UploadedBytes();
     // public System.Single get_DownloadProgress()
-    // Offset: 0x99A018
+    // Offset: 0xB32ABC
     float get_DownloadProgress();
     // public System.UInt64 get_DownloadedBytes()
-    // Offset: 0x99A030
+    // Offset: 0xB32AD4
     uint64_t get_DownloadedBytes();
     // public System.Boolean get_IsAborted()
-    // Offset: 0x99A0D8
+    // Offset: 0xB32B7C
     bool get_IsAborted();
     // public System.Void set_IsAborted(System.Boolean value)
-    // Offset: 0x99A0E0
+    // Offset: 0xB32B84
     void set_IsAborted(bool value);
     // public System.Boolean get_DefaultContentType()
-    // Offset: 0x99A0EC
+    // Offset: 0xB32B90
     bool get_DefaultContentType();
     // public System.Void set_DefaultContentType(System.Boolean value)
-    // Offset: 0x99A0F4
+    // Offset: 0xB32B98
     void set_DefaultContentType(bool value);
     // public System.String GetHeader(System.String name)
-    // Offset: 0x99A044
+    // Offset: 0xB32AE8
     ::StringW GetHeader(::StringW name);
     // public System.Void Abort()
-    // Offset: 0x99A100
+    // Offset: 0xB32BA4
     void Abort();
     // public System.Void .ctor()
-    // Offset: 0x99A16C
+    // Offset: 0xB32C10
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

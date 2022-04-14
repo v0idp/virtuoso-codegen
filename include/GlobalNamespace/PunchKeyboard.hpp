@@ -73,15 +73,7 @@ namespace GlobalNamespace {
     class HitKey;
     // Nested type: ::GlobalNamespace::PunchKeyboard::$Animate$d__35
     class $Animate$d__35;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private PunchKeyboardInputField _previewInputField
     // Size: 0x8
     // Offset: 0x18
@@ -200,83 +192,83 @@ namespace GlobalNamespace {
     // Set static field: static public System.String KeyboardLayerName
     static void _set_KeyboardLayerName(::StringW value);
     // Get instance field reference: private PunchKeyboardInputField _previewInputField
-    ::GlobalNamespace::PunchKeyboardInputField*& dyn__previewInputField();
+    [[deprecated]] ::GlobalNamespace::PunchKeyboardInputField*& dyn__previewInputField();
     // Get instance field reference: private KeySoundController _keySoundController
-    ::GlobalNamespace::KeySoundController*& dyn__keySoundController();
+    [[deprecated]] ::GlobalNamespace::KeySoundController*& dyn__keySoundController();
     // Get instance field reference: private System.Single _simultaneousKeyPressFilterDuration
-    float& dyn__simultaneousKeyPressFilterDuration();
+    [[deprecated]] float& dyn__simultaneousKeyPressFilterDuration();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.UIButton _clearButton
-    ::VROSC::UIButton*& dyn__clearButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__clearButton();
     // Get instance field reference: private VROSC.ObjectActivation _objectActivation
-    ::VROSC::ObjectActivation*& dyn__objectActivation();
+    [[deprecated]] ::VROSC::ObjectActivation*& dyn__objectActivation();
     // Get instance field reference: private System.Single _openAnimationDuration
-    float& dyn__openAnimationDuration();
+    [[deprecated]] float& dyn__openAnimationDuration();
     // Get instance field reference: private System.Single _closeAnimationDuration
-    float& dyn__closeAnimationDuration();
+    [[deprecated]] float& dyn__closeAnimationDuration();
     // Get instance field reference: private Key[] _keys
-    ::ArrayW<::GlobalNamespace::Key*>& dyn__keys();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::Key*>& dyn__keys();
     // Get instance field reference: private System.Collections.Generic.List`1<PunchKeyboard/HitKey> _hitKeys
-    ::System::Collections::Generic::List_1<::GlobalNamespace::PunchKeyboard::HitKey*>*& dyn__hitKeys();
+    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::PunchKeyboard::HitKey*>*& dyn__hitKeys();
     // Get instance field reference: private System.Boolean _isActive
-    bool& dyn__isActive();
+    [[deprecated]] bool& dyn__isActive();
     // Get instance field reference: private System.Single _filterTimer
-    float& dyn__filterTimer();
+    [[deprecated]] float& dyn__filterTimer();
     // Get instance field reference: private System.Boolean _hasSubmitted
-    bool& dyn__hasSubmitted();
+    [[deprecated]] bool& dyn__hasSubmitted();
     // Get instance field reference: private System.Boolean _isMultiline
-    bool& dyn__isMultiline();
+    [[deprecated]] bool& dyn__isMultiline();
     // private System.Void Awake()
-    // Offset: 0x992DEC
+    // Offset: 0xB2A8B4
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x993060
+    // Offset: 0xB2AB28
     void OnDestroy();
     // public System.Void Request(System.String startText, System.String infoText, System.Boolean multiline, System.Boolean secret)
-    // Offset: 0x993290
+    // Offset: 0xB2AD58
     void Request(::StringW startText, ::StringW infoText, bool multiline, bool secret);
     // public System.Void Release()
-    // Offset: 0x993650
+    // Offset: 0xB2B118
     void Release();
     // private System.Void Toggle()
-    // Offset: 0x9933D8
+    // Offset: 0xB2AEA0
     void Toggle();
     // private System.Void SetKeyHittersActive(System.Boolean active)
-    // Offset: 0x993660
+    // Offset: 0xB2B128
     void SetKeyHittersActive(bool active);
     // private System.Void MoveToFront()
-    // Offset: 0x993508
+    // Offset: 0xB2AFD0
     void MoveToFront();
     // private System.Void Update()
-    // Offset: 0x993814
+    // Offset: 0xB2B2DC
     void Update();
     // private System.Void KeyHit(Key hitKey, System.Single strength)
-    // Offset: 0x993BB8
+    // Offset: 0xB2B680
     void KeyHit(::GlobalNamespace::Key* hitKey, float strength);
     // private System.Void PressKey(Key pressedKey)
-    // Offset: 0x993984
+    // Offset: 0xB2B44C
     void PressKey(::GlobalNamespace::Key* pressedKey);
     // private System.Void SubmitText()
-    // Offset: 0x993C60
+    // Offset: 0xB2B728
     void SubmitText();
     // private System.Void EnterPressed()
-    // Offset: 0x993DC4
+    // Offset: 0xB2B88C
     void EnterPressed();
     // private System.Void CloseButtonPressed()
-    // Offset: 0x993D1C
+    // Offset: 0xB2B7E4
     void CloseButtonPressed();
     // private System.Void ClearButtonPressed()
-    // Offset: 0x993DD4
+    // Offset: 0xB2B89C
     void ClearButtonPressed();
     // private System.Collections.IEnumerator Animate(System.Boolean open, System.Action callback)
-    // Offset: 0x993790
+    // Offset: 0xB2B258
     ::System::Collections::IEnumerator* Animate(bool open, ::System::Action* callback);
     // private System.Void <Toggle>b__25_0()
-    // Offset: 0x993F08
+    // Offset: 0xB2B9D0
     void $Toggle$b__25_0();
     // public System.Void .ctor()
-    // Offset: 0x993E50
+    // Offset: 0xB2B918
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -289,7 +281,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<PunchKeyboard*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x993F04
+    // Offset: 0xB2B9CC
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

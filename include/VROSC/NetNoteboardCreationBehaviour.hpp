@@ -56,15 +56,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NetNoteboardCreationBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NetNoteboard _netNoteboard
     // Size: 0x8
     // Offset: 0x10
@@ -109,30 +101,30 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.NetNoteboard _netNoteboard
-    ::VROSC::NetNoteboard*& dyn__netNoteboard();
+    [[deprecated]] ::VROSC::NetNoteboard*& dyn__netNoteboard();
     // Get instance field reference: private UnityEngine.Transform _fromPoint
-    ::UnityEngine::Transform*& dyn__fromPoint();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__fromPoint();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // Get instance field reference: private UnityEngine.Vector3[] _positionOffset
-    ::ArrayW<::UnityEngine::Vector3>& dyn__positionOffset();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__positionOffset();
     // Get instance field reference: private UnityEngine.Quaternion[] _rotationOffset
-    ::ArrayW<::UnityEngine::Quaternion>& dyn__rotationOffset();
+    [[deprecated]] ::ArrayW<::UnityEngine::Quaternion>& dyn__rotationOffset();
     // Get instance field reference: public System.Single StartPoint
-    float& dyn_StartPoint();
+    [[deprecated]] float& dyn_StartPoint();
     // Get instance field reference: public System.Single EndPoint
-    float& dyn_EndPoint();
+    [[deprecated]] float& dyn_EndPoint();
     // public System.Void Setup(VROSC.NetNoteboard netNoteboard, UnityEngine.Transform fromPoint, UnityEngine.AnimationCurve curve)
-    // Offset: 0xA0EE3C
+    // Offset: 0xAD3C9C
     void Setup(::VROSC::NetNoteboard* netNoteboard, ::UnityEngine::Transform* fromPoint, ::UnityEngine::AnimationCurve* curve);
     // private System.Void SetNoteValues(VROSC.NoteBoardNote note, System.Single activationTime, System.Int32 index, System.Single x)
-    // Offset: 0xA0F594
+    // Offset: 0xAD4050
     void SetNoteValues(::VROSC::NoteBoardNote* note, float activationTime, int index, float x);
     // private System.Void OnPlayableDestroy()
-    // Offset: 0xA0F9D0
+    // Offset: 0xAD448C
     void OnPlayableDestroy();
     // public System.Void .ctor()
-    // Offset: 0xA0FA78
+    // Offset: 0xAD4534
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -142,7 +134,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NetNoteboardCreationBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0xA0F3C0
+    // Offset: 0xAD3EF0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

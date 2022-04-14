@@ -31,15 +31,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UserFavoritesDataModel::Favorite : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Id
     // Size: 0x8
     // Offset: 0x10
@@ -72,17 +64,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Session*) == 0x8);
     public:
     // Get instance field reference: public System.String Id
-    ::StringW& dyn_Id();
+    [[deprecated]] ::StringW& dyn_Id();
     // Get instance field reference: public System.String SessionId
-    ::StringW& dyn_SessionId();
+    [[deprecated]] ::StringW& dyn_SessionId();
     // Get instance field reference: public System.String SessionFavoriteId
-    ::StringW& dyn_SessionFavoriteId();
+    [[deprecated]] ::StringW& dyn_SessionFavoriteId();
     // Get instance field reference: public System.String Date
-    ::StringW& dyn_Date();
+    [[deprecated]] ::StringW& dyn_Date();
     // Get instance field reference: public VROSC.Session Session
-    ::VROSC::Session*& dyn_Session();
+    [[deprecated]] ::VROSC::Session*& dyn_Session();
     // public System.Void .ctor()
-    // Offset: 0x1415234
+    // Offset: 0xE874B4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

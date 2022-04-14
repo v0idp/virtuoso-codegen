@@ -24,7 +24,7 @@ namespace Firebase::Firestore {
   class ApiHeaders : public ::Il2CppObject {
     public:
     // static public System.Void SetClientLanguage(System.String languageToken)
-    // Offset: 0xC255A0
+    // Offset: 0xD471A4
     static void SetClientLanguage(::StringW languageToken);
   }; // Firebase.Firestore.ApiHeaders
   #pragma pack(pop)

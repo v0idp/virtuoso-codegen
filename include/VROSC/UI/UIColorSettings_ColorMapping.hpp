@@ -32,15 +32,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIColorSettings::ColorMapping : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UI.UIColorGetter _colorGetter
     // Size: 0x8
     // Offset: 0x10
@@ -55,14 +47,14 @@ namespace VROSC::UI {
     static_assert(sizeof(::VROSC::UI::UIExplicitColor*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UI.UIColorGetter _colorGetter
-    ::VROSC::UI::UIColorGetter*& dyn__colorGetter();
+    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__colorGetter();
     // Get instance field reference: private VROSC.UI.UIExplicitColor _color
-    ::VROSC::UI::UIExplicitColor*& dyn__color();
+    [[deprecated]] ::VROSC::UI::UIExplicitColor*& dyn__color();
     // public System.Void UpdateColor()
-    // Offset: 0x140E454
+    // Offset: 0xE80528
     void UpdateColor();
     // public System.Void .ctor()
-    // Offset: 0x140E4E8
+    // Offset: 0xE805BC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

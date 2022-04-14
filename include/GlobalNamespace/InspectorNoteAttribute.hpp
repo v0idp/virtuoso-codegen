@@ -29,15 +29,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class InspectorNoteAttribute : public ::UnityEngine::PropertyAttribute {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String header
     // Size: 0x8
     // Offset: 0x10
@@ -52,11 +44,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String header
-    ::StringW& dyn_header();
+    [[deprecated]] ::StringW& dyn_header();
     // Get instance field reference: public readonly System.String message
-    ::StringW& dyn_message();
+    [[deprecated]] ::StringW& dyn_message();
     // public System.Void .ctor(System.String header, System.String message)
-    // Offset: 0x12A69F8
+    // Offset: 0x18A459C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InspectorNoteAttribute* New_ctor(::StringW header, ::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::InspectorNoteAttribute::.ctor");

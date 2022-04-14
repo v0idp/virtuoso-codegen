@@ -61,7 +61,7 @@ namespace VROSC {
     // Set static field: static public VROSC.NoteBoard/VROSC.PlayAxis Z
     static void _set_Z(::VROSC::NoteBoard::PlayAxis value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.NoteBoard/VROSC.PlayAxis
   #pragma pack(pop)
   static check_size<sizeof(NoteBoard::PlayAxis), 0 + sizeof(int)> __VROSC_NoteBoard_PlayAxisSizeCheck;

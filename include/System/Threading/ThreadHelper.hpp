@@ -40,15 +40,7 @@ namespace System::Threading {
   // [TokenAttribute] Offset: FFFFFFFF
   class ThreadHelper : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Delegate _start
     // Size: 0x8
     // Offset: 0x10
@@ -73,32 +65,32 @@ namespace System::Threading {
     // Set static field: static System.Threading.ContextCallback _ccb
     static void _set__ccb(::System::Threading::ContextCallback* value);
     // Get instance field reference: private System.Delegate _start
-    ::System::Delegate*& dyn__start();
+    [[deprecated]] ::System::Delegate*& dyn__start();
     // Get instance field reference: private System.Object _startArg
-    ::Il2CppObject*& dyn__startArg();
+    [[deprecated]] ::Il2CppObject*& dyn__startArg();
     // Get instance field reference: private System.Threading.ExecutionContext _executionContext
-    ::System::Threading::ExecutionContext*& dyn__executionContext();
+    [[deprecated]] ::System::Threading::ExecutionContext*& dyn__executionContext();
     // static private System.Void .cctor()
-    // Offset: 0xC8F110
+    // Offset: 0x11DAE28
     static void _cctor();
     // System.Void .ctor(System.Delegate start)
-    // Offset: 0xC8EB24
+    // Offset: 0x11DA814
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ThreadHelper* New_ctor(::System::Delegate* start) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::ThreadHelper::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ThreadHelper*, creationType>(start)));
     }
     // System.Void SetExecutionContextHelper(System.Threading.ExecutionContext ec)
-    // Offset: 0xC8F1A0
+    // Offset: 0x11DAEB8
     void SetExecutionContextHelper(::System::Threading::ExecutionContext* ec);
     // static private System.Void ThreadStart_Context(System.Object state)
-    // Offset: 0xC8F1A8
+    // Offset: 0x11DAEC0
     static void ThreadStart_Context(::Il2CppObject* state);
     // System.Void ThreadStart(System.Object obj)
-    // Offset: 0xC8F4AC
+    // Offset: 0x11DB1C4
     void ThreadStart(::Il2CppObject* obj);
     // System.Void ThreadStart()
-    // Offset: 0xC8F5B8
+    // Offset: 0x11DB2D0
     void ThreadStart();
   }; // System.Threading.ThreadHelper
   #pragma pack(pop)

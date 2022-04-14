@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Dashboard : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected UnityEngine.GameObject _dashboardObject
     // Size: 0x8
     // Offset: 0x18
@@ -104,52 +96,58 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Boolean> DashboardVisibilityChanged
     static void _set_DashboardVisibilityChanged(::System::Action_1<bool>* value);
     // Get instance field reference: protected UnityEngine.GameObject _dashboardObject
-    ::UnityEngine::GameObject*& dyn__dashboardObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__dashboardObject();
     // Get instance field reference: protected System.Boolean _showingDashboard
-    bool& dyn__showingDashboard();
+    [[deprecated]] bool& dyn__showingDashboard();
     // Get instance field reference: private System.Boolean <KeepFromClosing>k__BackingField
-    bool& dyn_$KeepFromClosing$k__BackingField();
+    [[deprecated]] bool& dyn_$KeepFromClosing$k__BackingField();
     // Get instance field reference: protected System.Boolean _allowOpenWhenPlaying
-    bool& dyn__allowOpenWhenPlaying();
+    [[deprecated]] bool& dyn__allowOpenWhenPlaying();
     // Get instance field reference: protected System.Boolean _freeFloating
-    bool& dyn__freeFloating();
+    [[deprecated]] bool& dyn__freeFloating();
     // Get instance field reference: protected System.Boolean _inHand
-    bool& dyn__inHand();
+    [[deprecated]] bool& dyn__inHand();
     // Get instance field reference: protected System.Boolean _disabled
-    bool& dyn__disabled();
+    [[deprecated]] bool& dyn__disabled();
     // private System.Boolean get_KeepFromClosing()
-    // Offset: 0x1307658
+    // Offset: 0x8E0634
     bool get_KeepFromClosing();
     // public System.Void set_KeepFromClosing(System.Boolean value)
-    // Offset: 0x1307660
+    // Offset: 0x8E063C
     void set_KeepFromClosing(bool value);
     // public System.Boolean get_Disabled()
-    // Offset: 0x130766C
+    // Offset: 0x8E0648
     bool get_Disabled();
     // protected System.Void Awake()
-    // Offset: 0x1307674
+    // Offset: 0x8E0650
     void Awake();
     // protected System.Void Update()
-    // Offset: 0x1307694
+    // Offset: 0x8E0670
     void Update();
+    // protected System.Void SetFreeFloating()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    void SetFreeFloating();
     // public System.Void SetActive(System.Boolean shouldBeActive)
-    // Offset: 0x13077F8
+    // Offset: 0x8E07F4
     void SetActive(bool shouldBeActive);
     // public System.Void SetDisabled(System.Boolean disabled)
-    // Offset: 0x1307940
+    // Offset: 0x8E0940
     void SetDisabled(bool disabled);
     // protected System.Void MoveToHand()
-    // Offset: 0x130794C
+    // Offset: 0x8E094C
     void MoveToHand();
     // protected System.Void ReturnToFreeFloat()
-    // Offset: 0x1307950
+    // Offset: 0x8E0950
     void ReturnToFreeFloat();
     // protected System.Void UpdateVisibility(System.Boolean show)
-    // Offset: 0x1307954
+    // Offset: 0x8E0954
     void UpdateVisibility(bool show);
     // protected System.Boolean EvaluateActivationCondition()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool EvaluateActivationCondition();
+    // protected System.Boolean EvaluateDropCondition()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    bool EvaluateDropCondition();
     // protected System.Boolean EvaluateDeactivationCondition()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool EvaluateDeactivationCondition();
@@ -157,7 +155,7 @@ namespace VROSC {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void PlaceDashboard();
     // protected System.Void .ctor()
-    // Offset: 0x1307974
+    // Offset: 0x8E0974
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -216,6 +214,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Dashboard*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::Dashboard::SetFreeFloating
+// Il2CppName: SetFreeFloating
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::Dashboard::*)()>(&VROSC::Dashboard::SetFreeFloating)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::Dashboard*), "SetFreeFloating", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::Dashboard::SetActive
 // Il2CppName: SetActive
 template<>
@@ -265,6 +271,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::Dashboard::*)()>(&VROSC::Dashboard::EvaluateActivationCondition)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::Dashboard*), "EvaluateActivationCondition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::Dashboard::EvaluateDropCondition
+// Il2CppName: EvaluateDropCondition
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::Dashboard::*)()>(&VROSC::Dashboard::EvaluateDropCondition)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::Dashboard*), "EvaluateDropCondition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::Dashboard::EvaluateDeactivationCondition

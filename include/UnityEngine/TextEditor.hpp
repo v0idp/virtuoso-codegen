@@ -80,20 +80,12 @@ namespace UnityEngine {
       // Set static field: static public UnityEngine.TextEditor/UnityEngine.DblClickSnapping PARAGRAPHS
       static void _set_PARAGRAPHS(::UnityEngine::TextEditor::DblClickSnapping value);
       // Get instance field reference: public System.Byte value__
-      uint8_t& dyn_value__();
+      [[deprecated]] uint8_t& dyn_value__();
     }; // UnityEngine.TextEditor/UnityEngine.DblClickSnapping
     #pragma pack(pop)
     static check_size<sizeof(TextEditor::DblClickSnapping), 0 + sizeof(uint8_t)> __UnityEngine_TextEditor_DblClickSnappingSizeCheck;
     static_assert(sizeof(TextEditor::DblClickSnapping) == 0x1);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.TouchScreenKeyboard keyboardOnScreen
     // Size: 0x8
     // Offset: 0x10
@@ -202,39 +194,39 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.TouchScreenKeyboard keyboardOnScreen
-    ::UnityEngine::TouchScreenKeyboard*& dyn_keyboardOnScreen();
+    [[deprecated]] ::UnityEngine::TouchScreenKeyboard*& dyn_keyboardOnScreen();
     // Get instance field reference: public System.Int32 controlID
-    int& dyn_controlID();
+    [[deprecated]] int& dyn_controlID();
     // Get instance field reference: public UnityEngine.GUIStyle style
-    ::UnityEngine::GUIStyle*& dyn_style();
+    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_style();
     // Get instance field reference: public System.Boolean multiline
-    bool& dyn_multiline();
+    [[deprecated]] bool& dyn_multiline();
     // Get instance field reference: public System.Boolean hasHorizontalCursorPos
-    bool& dyn_hasHorizontalCursorPos();
+    [[deprecated]] bool& dyn_hasHorizontalCursorPos();
     // Get instance field reference: public System.Boolean isPasswordField
-    bool& dyn_isPasswordField();
+    [[deprecated]] bool& dyn_isPasswordField();
     // Get instance field reference: public UnityEngine.Vector2 scrollOffset
-    ::UnityEngine::Vector2& dyn_scrollOffset();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_scrollOffset();
     // Get instance field reference: private UnityEngine.GUIContent m_Content
-    ::UnityEngine::GUIContent*& dyn_m_Content();
+    [[deprecated]] ::UnityEngine::GUIContent*& dyn_m_Content();
     // Get instance field reference: private System.Int32 m_CursorIndex
-    int& dyn_m_CursorIndex();
+    [[deprecated]] int& dyn_m_CursorIndex();
     // Get instance field reference: private System.Int32 m_SelectIndex
-    int& dyn_m_SelectIndex();
+    [[deprecated]] int& dyn_m_SelectIndex();
     // Get instance field reference: private System.Boolean m_RevealCursor
-    bool& dyn_m_RevealCursor();
+    [[deprecated]] bool& dyn_m_RevealCursor();
     // Get instance field reference: private System.Boolean m_MouseDragSelectsWholeWords
-    bool& dyn_m_MouseDragSelectsWholeWords();
+    [[deprecated]] bool& dyn_m_MouseDragSelectsWholeWords();
     // Get instance field reference: private System.Int32 m_DblClickInitPos
-    int& dyn_m_DblClickInitPos();
+    [[deprecated]] int& dyn_m_DblClickInitPos();
     // Get instance field reference: private UnityEngine.TextEditor/UnityEngine.DblClickSnapping m_DblClickSnap
-    ::UnityEngine::TextEditor::DblClickSnapping& dyn_m_DblClickSnap();
+    [[deprecated]] ::UnityEngine::TextEditor::DblClickSnapping& dyn_m_DblClickSnap();
     // Get instance field reference: private System.Boolean m_bJustSelected
-    bool& dyn_m_bJustSelected();
+    [[deprecated]] bool& dyn_m_bJustSelected();
     // Get instance field reference: private System.Int32 m_iAltCursorPos
-    int& dyn_m_iAltCursorPos();
+    [[deprecated]] int& dyn_m_iAltCursorPos();
     // public System.Void .ctor()
-    // Offset: 0x1293DC0
+    // Offset: 0x1881330
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

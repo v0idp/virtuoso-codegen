@@ -20,6 +20,8 @@
 namespace Firebase {
   // Forward declaring type: LogLevel
   struct LogLevel;
+  // Forward declaring type: AppOptions
+  class AppOptions;
   // Forward declaring type: AppOptionsInternal
   class AppOptionsInternal;
 }
@@ -32,6 +34,10 @@ namespace System {
   class Func_1;
   // Forward declaring type: Action
   class Action;
+  // Forward declaring type: Uri
+  class Uri;
+  // Forward declaring type: WeakReference
+  class WeakReference;
 }
 // Forward declaring namespace: System::Collections::Generic
 namespace System::Collections::Generic {
@@ -60,15 +66,7 @@ namespace Firebase {
     class EnableModuleParams;
     // Nested type: ::Firebase::FirebaseApp::CreateDelegate
     class CreateDelegate;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -145,109 +143,118 @@ namespace Firebase {
     // Set static field: static private System.Func`1<System.Boolean> <>f__am$cache1
     static void _set_$$f__am$cache1(::System::Func_1<bool>* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // Get instance field reference: private System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: private System.EventHandler AppDisposed
-    ::System::EventHandler*& dyn_AppDisposed();
+    [[deprecated]] ::System::EventHandler*& dyn_AppDisposed();
     // static public Firebase.FirebaseApp get_DefaultInstance()
-    // Offset: 0x1296BD4
+    // Offset: 0x18857D8
     static ::Firebase::FirebaseApp* get_DefaultInstance();
     // public System.String get_Name()
-    // Offset: 0x1297B30
+    // Offset: 0x1886734
     ::StringW get_Name();
     // static public Firebase.LogLevel get_LogLevel()
-    // Offset: 0x1297C00
+    // Offset: 0x1886804
     static ::Firebase::LogLevel get_LogLevel();
+    // public Firebase.AppOptions get_Options()
+    // Offset: 0x18881A0
+    ::Firebase::AppOptions* get_Options();
     // System.String get_NameInternal()
-    // Offset: 0x1296684
+    // Offset: 0x1885288
     ::StringW get_NameInternal();
     // static public System.String get_DefaultName()
-    // Offset: 0x1296C5C
+    // Offset: 0x1885860
     static ::StringW get_DefaultName();
     // System.Void add_AppDisposed(System.EventHandler value)
-    // Offset: 0x1297C58
+    // Offset: 0x188685C
     void add_AppDisposed(::System::EventHandler* value);
     // System.Void remove_AppDisposed(System.EventHandler value)
-    // Offset: 0x1297CF8
+    // Offset: 0x18868FC
     void remove_AppDisposed(::System::EventHandler* value);
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0x129624C
+    // Offset: 0x1884E50
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseApp* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::FirebaseApp::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseApp*, creationType>(cPtr, cMemoryOwn)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12962B0
+    // Offset: 0x1884EB4
     static void _cctor();
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.FirebaseApp obj)
-    // Offset: 0x129650C
+    // Offset: 0x1885110
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::FirebaseApp* obj);
     // public System.Void Dispose()
-    // Offset: 0x12965E0
+    // Offset: 0x18851E4
     void Dispose();
     // static System.Void TranslateDllNotFoundException(System.Action closureToExecute)
-    // Offset: 0x12969D8
+    // Offset: 0x18855DC
     static void TranslateDllNotFoundException(::System::Action* closureToExecute);
     // static public Firebase.FirebaseApp GetInstance(System.String name)
-    // Offset: 0x1296CE8
+    // Offset: 0x18858EC
     static ::Firebase::FirebaseApp* GetInstance(::StringW name);
     // static public Firebase.FirebaseApp Create()
-    // Offset: 0x1296E84
+    // Offset: 0x1885A88
     static ::Firebase::FirebaseApp* Create();
     // private System.Void AddReference()
-    // Offset: 0x1297D98
+    // Offset: 0x188699C
     void AddReference();
     // private System.Void RemoveReference()
-    // Offset: 0x1296720
+    // Offset: 0x1885324
     void RemoveReference();
     // private System.Void ThrowIfNull()
-    // Offset: 0x1297B68
+    // Offset: 0x188676C
     void ThrowIfNull();
     // static private System.Void InitializeAppUtilCallbacks()
-    // Offset: 0x1298164
+    // Offset: 0x1886D68
     static void InitializeAppUtilCallbacks();
     // static private System.Void OnAllAppsDestroyed()
-    // Offset: 0x1297FD4
+    // Offset: 0x1886BD8
     static void OnAllAppsDestroyed();
+    // static System.Uri UrlStringToUri(System.String urlString)
+    // Offset: 0x1882D40
+    static ::System::Uri* UrlStringToUri(::StringW urlString);
+    // static System.Object WeakReferenceGetTarget(System.WeakReference weakReference)
+    // Offset: 0x18879C8
+    static ::Il2CppObject* WeakReferenceGetTarget(::System::WeakReference* weakReference);
     // static private System.Boolean InitializeCrashlyticsIfPresent()
-    // Offset: 0x1298E54
+    // Offset: 0x1887A64
     static bool InitializeCrashlyticsIfPresent();
     // static private Firebase.FirebaseApp CreateAndTrack(Firebase.FirebaseApp/Firebase.CreateDelegate createDelegate, Firebase.FirebaseApp existingProxy)
-    // Offset: 0x1297118
+    // Offset: 0x1885D1C
     static ::Firebase::FirebaseApp* CreateAndTrack(::Firebase::FirebaseApp::CreateDelegate* createDelegate, ::Firebase::FirebaseApp* existingProxy);
     // static private System.Void ThrowIfCheckDependenciesRunning()
-    // Offset: 0x1296F84
+    // Offset: 0x1885B88
     static void ThrowIfCheckDependenciesRunning();
     // static private System.Boolean IsCheckDependenciesRunning()
-    // Offset: 0x12994AC
+    // Offset: 0x18880BC
     static bool IsCheckDependenciesRunning();
     // Firebase.AppOptionsInternal options()
-    // Offset: 0x1299590
+    // Offset: 0x1888214
     ::Firebase::AppOptionsInternal* options();
     // static Firebase.FirebaseApp CreateInternal()
-    // Offset: 0x129965C
+    // Offset: 0x18882E0
     static ::Firebase::FirebaseApp* CreateInternal();
     // static System.Void ReleaseReferenceInternal(Firebase.FirebaseApp app)
-    // Offset: 0x1297F08
+    // Offset: 0x1886B0C
     static void ReleaseReferenceInternal(::Firebase::FirebaseApp* app);
     // static System.Void RegisterLibraryInternal(System.String library, System.String version)
-    // Offset: 0x1299410
+    // Offset: 0x1888020
     static void RegisterLibraryInternal(::StringW library, ::StringW version);
     // static System.Void AppSetDefaultConfigPath(System.String path)
-    // Offset: 0x129912C
+    // Offset: 0x1887D3C
     static void AppSetDefaultConfigPath(::StringW path);
     // static private Firebase.FirebaseApp <Create>m__0()
-    // Offset: 0x1299734
+    // Offset: 0x18883B8
     static ::Firebase::FirebaseApp* $Create$m__0();
     // static private System.Boolean <CreateAndTrack>m__1()
-    // Offset: 0x129978C
+    // Offset: 0x1888410
     static bool $CreateAndTrack$m__1();
     // protected override System.Void Finalize()
-    // Offset: 0x1296578
+    // Offset: 0x188517C
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
@@ -279,6 +286,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase::LogLevel (*)()>(&Firebase::FirebaseApp::get_LogLevel)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Firebase::FirebaseApp*), "get_LogLevel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Firebase::FirebaseApp::get_Options
+// Il2CppName: get_Options
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase::AppOptions* (Firebase::FirebaseApp::*)()>(&Firebase::FirebaseApp::get_Options)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::FirebaseApp*), "get_Options", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Firebase::FirebaseApp::get_NameInternal
@@ -408,6 +423,24 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Firebase::FirebaseApp::OnAllAppsDestroyed)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Firebase::FirebaseApp*), "OnAllAppsDestroyed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Firebase::FirebaseApp::UrlStringToUri
+// Il2CppName: UrlStringToUri
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Uri* (*)(::StringW)>(&Firebase::FirebaseApp::UrlStringToUri)> {
+  static const MethodInfo* get() {
+    static auto* urlString = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::FirebaseApp*), "UrlStringToUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{urlString});
+  }
+};
+// Writing MetadataGetter for method: Firebase::FirebaseApp::WeakReferenceGetTarget
+// Il2CppName: WeakReferenceGetTarget
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObject* (*)(::System::WeakReference*)>(&Firebase::FirebaseApp::WeakReferenceGetTarget)> {
+  static const MethodInfo* get() {
+    static auto* weakReference = &::il2cpp_utils::GetClassFromName("System", "WeakReference")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::FirebaseApp*), "WeakReferenceGetTarget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{weakReference});
   }
 };
 // Writing MetadataGetter for method: Firebase::FirebaseApp::InitializeCrashlyticsIfPresent

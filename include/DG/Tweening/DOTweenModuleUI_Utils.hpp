@@ -29,7 +29,7 @@ namespace DG::Tweening {
   class DOTweenModuleUI::Utils : public ::Il2CppObject {
     public:
     // static public UnityEngine.Vector2 SwitchToRectTransform(UnityEngine.RectTransform from, UnityEngine.RectTransform to)
-    // Offset: 0x1265C00
+    // Offset: 0x17E3FF0
     static ::UnityEngine::Vector2 SwitchToRectTransform(::UnityEngine::RectTransform* from, ::UnityEngine::RectTransform* to);
   }; // DG.Tweening.DOTweenModuleUI/DG.Tweening.Utils
   #pragma pack(pop)

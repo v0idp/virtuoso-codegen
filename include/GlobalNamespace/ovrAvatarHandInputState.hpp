@@ -87,21 +87,21 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarTransform transform
-    ::GlobalNamespace::ovrAvatarTransform& dyn_transform();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_transform();
     // Get instance field reference: public ovrAvatarButton buttonMask
-    ::GlobalNamespace::ovrAvatarButton& dyn_buttonMask();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarButton& dyn_buttonMask();
     // Get instance field reference: public ovrAvatarTouch touchMask
-    ::GlobalNamespace::ovrAvatarTouch& dyn_touchMask();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarTouch& dyn_touchMask();
     // Get instance field reference: public System.Single joystickX
-    float& dyn_joystickX();
+    [[deprecated]] float& dyn_joystickX();
     // Get instance field reference: public System.Single joystickY
-    float& dyn_joystickY();
+    [[deprecated]] float& dyn_joystickY();
     // Get instance field reference: public System.Single indexTrigger
-    float& dyn_indexTrigger();
+    [[deprecated]] float& dyn_indexTrigger();
     // Get instance field reference: public System.Single handTrigger
-    float& dyn_handTrigger();
+    [[deprecated]] float& dyn_handTrigger();
     // Get instance field reference: public System.Boolean isActive
-    bool& dyn_isActive();
+    [[deprecated]] bool& dyn_isActive();
   }; // ovrAvatarHandInputState
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarHandInputState), 64 + sizeof(bool)> __GlobalNamespace_ovrAvatarHandInputStateSizeCheck;

@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ValueTransformer : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AnimationCurve _transformationCurve
     // Size: 0x8
     // Offset: 0x40
@@ -57,12 +49,12 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.AnimationCurve _transformationCurve
-    ::UnityEngine::AnimationCurve*& dyn__transformationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__transformationCurve();
     // private VROSC.Signal TransformValue(VROSC.Signal signal)
-    // Offset: 0x13ADF44
+    // Offset: 0x1921E8C
     ::VROSC::Signal* TransformValue(::VROSC::Signal* signal);
     // public System.Void .ctor()
-    // Offset: 0x13ADF9C
+    // Offset: 0x1921EE4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -77,17 +69,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ValueTransformer*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13ADF40
+    // Offset: 0x1921E88
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13ADF94
+    // Offset: 0x1921EDC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x13ADF98
+    // Offset: 0x1921EE0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

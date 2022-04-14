@@ -48,15 +48,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class DrumSampleSwitcherUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`2<System.Int32,System.Boolean> OnNewDataSet
     // Size: 0x8
     // Offset: 0x18
@@ -97,40 +89,40 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Action`2<System.Int32,System.Boolean> OnNewDataSet
-    ::System::Action_2<int, bool>*& dyn_OnNewDataSet();
+    [[deprecated]] ::System::Action_2<int, bool>*& dyn_OnNewDataSet();
     // Get instance field reference: private VROSC.UISpinner _spinner
-    ::VROSC::UISpinner*& dyn__spinner();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__spinner();
     // Get instance field reference: private TMPro.TextMeshPro _currentName
-    ::TMPro::TextMeshPro*& dyn__currentName();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__currentName();
     // Get instance field reference: private VROSC.ModularDrumsDataController _dataController
-    ::VROSC::ModularDrumsDataController*& dyn__dataController();
+    [[deprecated]] ::VROSC::ModularDrumsDataController*& dyn__dataController();
     // Get instance field reference: private System.Int32 _empadId
-    int& dyn__empadId();
+    [[deprecated]] int& dyn__empadId();
     // Get instance field reference: private System.Int32 _groupId
-    int& dyn__groupId();
+    [[deprecated]] int& dyn__groupId();
     // public VROSC.UISpinner get_Spinner()
-    // Offset: 0x130CD54
+    // Offset: 0x8E68C8
     ::VROSC::UISpinner* get_Spinner();
     // private System.Void Awake()
-    // Offset: 0x130CD5C
+    // Offset: 0x8E68D0
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x130CE30
+    // Offset: 0x8E69A4
     void OnDestroy();
     // public System.Void SetSample(System.Int32 index)
-    // Offset: 0x130CF04
+    // Offset: 0x8E6A78
     void SetSample(int index);
     // public System.Void Setup(System.Int32 empadId, VROSC.ModularDrumsDataController dataController, System.Int32 groupId)
-    // Offset: 0x130D3D8
+    // Offset: 0x8E6F4C
     void Setup(int empadId, ::VROSC::ModularDrumsDataController* dataController, int groupId);
     // public System.Void SetActiveSample(System.Boolean select, System.Boolean preview)
-    // Offset: 0x130CFB8
+    // Offset: 0x8E6B2C
     void SetActiveSample(bool select, bool preview);
     // public System.Void IncrementSample()
-    // Offset: 0x130D3F0
+    // Offset: 0x8E6F64
     void IncrementSample();
     // public System.Void .ctor()
-    // Offset: 0x130D40C
+    // Offset: 0x8E6F80
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

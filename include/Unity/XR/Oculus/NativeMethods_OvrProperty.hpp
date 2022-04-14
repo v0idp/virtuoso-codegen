@@ -51,7 +51,7 @@ namespace Unity::XR::Oculus {
     // Set static field: static public Unity.XR.Oculus.NativeMethods/Unity.XR.Oculus.OvrProperty DynamicFoveationEnabled
     static void _set_DynamicFoveationEnabled(::Unity::XR::Oculus::NativeMethods::OvrProperty value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Unity.XR.Oculus.NativeMethods/Unity.XR.Oculus.OvrProperty
   #pragma pack(pop)
   static check_size<sizeof(NativeMethods::OvrProperty), 0 + sizeof(int)> __Unity_XR_Oculus_NativeMethods_OvrPropertySizeCheck;

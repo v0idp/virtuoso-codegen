@@ -58,15 +58,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlayButton : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopPlayer <ConnectedPlayer>k__BackingField
     // Size: 0x8
     // Offset: 0x18
@@ -119,68 +111,68 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoopPlayer <ConnectedPlayer>k__BackingField
-    ::VROSC::LoopPlayer*& dyn_$ConnectedPlayer$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn_$ConnectedPlayer$k__BackingField();
     // Get instance field reference: private VROSC.UIToggle _playButton
-    ::VROSC::UIToggle*& dyn__playButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__playButton();
     // Get instance field reference: private VROSC.LooperProgressSliderUpdater _progressUpdater
-    ::VROSC::LooperProgressSliderUpdater*& dyn__progressUpdater();
+    [[deprecated]] ::VROSC::LooperProgressSliderUpdater*& dyn__progressUpdater();
     // Get instance field reference: private VROSC.LaunchPadEffectOnSignal _padVisual
-    ::VROSC::LaunchPadEffectOnSignal*& dyn__padVisual();
+    [[deprecated]] ::VROSC::LaunchPadEffectOnSignal*& dyn__padVisual();
     // Get instance field reference: public System.Action`1<System.Boolean> OnPlayToggleChanged
-    ::System::Action_1<bool>*& dyn_OnPlayToggleChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnPlayToggleChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnPlayingChanged
-    ::System::Action_1<bool>*& dyn_OnPlayingChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnPlayingChanged();
     // Get instance field reference: public System.Action OnNewLoopPlayerAssigned
-    ::System::Action*& dyn_OnNewLoopPlayerAssigned();
+    [[deprecated]] ::System::Action*& dyn_OnNewLoopPlayerAssigned();
     // Get instance field reference: private System.Boolean _playing
-    bool& dyn__playing();
+    [[deprecated]] bool& dyn__playing();
     // public VROSC.LooperProgressSliderUpdater get_ProgressUpdater()
-    // Offset: 0x1395234
+    // Offset: 0x19B5514
     ::VROSC::LooperProgressSliderUpdater* get_ProgressUpdater();
     // public VROSC.LoopPlayer get_ConnectedPlayer()
-    // Offset: 0x1395244
+    // Offset: 0x19B5524
     ::VROSC::LoopPlayer* get_ConnectedPlayer();
     // private System.Void set_ConnectedPlayer(VROSC.LoopPlayer value)
-    // Offset: 0x139523C
+    // Offset: 0x19B551C
     void set_ConnectedPlayer(::VROSC::LoopPlayer* value);
     // private System.Void Awake()
-    // Offset: 0x139524C
+    // Offset: 0x19B552C
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x1395414
+    // Offset: 0x19B56F4
     void OnDestroy();
     // private System.Void OnButtonPressed(VROSC.InputDevice device, System.Boolean play)
-    // Offset: 0x13954E8
+    // Offset: 0x19B57C8
     void OnButtonPressed(::VROSC::InputDevice* device, bool play);
     // public System.Void TogglePlay()
-    // Offset: 0x13954EC
+    // Offset: 0x19B57CC
     void TogglePlay();
     // System.Void LaunchpadHit(VROSC.Launchpad launchpad)
-    // Offset: 0x1395554
+    // Offset: 0x19B5834
     void LaunchpadHit(::VROSC::Launchpad* launchpad);
     // public System.Void TrackLoopPlayer(VROSC.LoopPlayer loopPlayer)
-    // Offset: 0x13955D0
+    // Offset: 0x19B58B4
     void TrackLoopPlayer(::VROSC::LoopPlayer* loopPlayer);
     // System.Void SetDisabled(System.Boolean disabled)
-    // Offset: 0x13957EC
+    // Offset: 0x19B5AB8
     void SetDisabled(bool disabled);
     // public System.Void ShowAsMuted(System.Boolean muted)
-    // Offset: 0x139585C
+    // Offset: 0x19B5B28
     void ShowAsMuted(bool muted);
     // private System.Void Update()
-    // Offset: 0x139587C
+    // Offset: 0x19B5B48
     void Update();
     // private System.Void UpdatePlaying(System.Boolean isPlaying, System.Boolean force)
-    // Offset: 0x13956F8
+    // Offset: 0x19B59D8
     void UpdatePlaying(bool isPlaying, bool force);
     // private System.Boolean GetIsPlaying()
-    // Offset: 0x1395654
+    // Offset: 0x19B5938
     bool GetIsPlaying();
     // System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x1395924
+    // Offset: 0x19B5C18
     void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x13959CC
+    // Offset: 0x19B5C9C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

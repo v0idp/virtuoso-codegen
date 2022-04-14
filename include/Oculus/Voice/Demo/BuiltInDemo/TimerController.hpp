@@ -42,15 +42,7 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
   // [TokenAttribute] Offset: FFFFFFFF
   class TimerController : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _time
     // Size: 0x4
     // Offset: 0x18
@@ -71,14 +63,14 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: timerRunning and: logText
     char __padding2[0x2] = {};
-    // [TooltipAttribute] Offset: 0x677E2C
+    // [TooltipAttribute] Offset: 0x78E6A0
     // public UnityEngine.UI.Text logText
     // Size: 0x8
     // Offset: 0x20
     ::UnityEngine::UI::Text* logText;
     // Field size check
     static_assert(sizeof(::UnityEngine::UI::Text*) == 0x8);
-    // [TooltipAttribute] Offset: 0x677E64
+    // [TooltipAttribute] Offset: 0x78E6D8
     // public UnityEngine.AudioClip buzzSound
     // Size: 0x8
     // Offset: 0x28
@@ -89,56 +81,56 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _time
-    float& dyn__time();
+    [[deprecated]] float& dyn__time();
     // Get instance field reference: private System.Boolean _timerExist
-    bool& dyn__timerExist();
+    [[deprecated]] bool& dyn__timerExist();
     // Get instance field reference: private System.Boolean _timerRunning
-    bool& dyn__timerRunning();
+    [[deprecated]] bool& dyn__timerRunning();
     // Get instance field reference: public UnityEngine.UI.Text logText
-    ::UnityEngine::UI::Text*& dyn_logText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_logText();
     // Get instance field reference: public UnityEngine.AudioClip buzzSound
-    ::UnityEngine::AudioClip*& dyn_buzzSound();
+    [[deprecated]] ::UnityEngine::AudioClip*& dyn_buzzSound();
     // private System.Void Update()
-    // Offset: 0x13FF7BC
+    // Offset: 0xA276F4
     void Update();
     // private System.Void Log(System.String msg)
-    // Offset: 0x13FF88C
+    // Offset: 0xA277C4
     void Log(::StringW msg);
     // private System.Void OnElapsedTime()
-    // Offset: 0x13FF820
+    // Offset: 0xA27758
     void OnElapsedTime();
     // public System.Void DeleteTimer()
-    // Offset: 0x13FF91C
+    // Offset: 0xA27854
     void DeleteTimer();
     // public System.Void CreateTimer(System.String[] entityValues)
-    // Offset: 0x13FF990
+    // Offset: 0xA278C8
     void CreateTimer(::ArrayW<::StringW> entityValues);
     // public System.Void GetTimerIntent()
-    // Offset: 0x13FFD1C
+    // Offset: 0xA27C54
     void GetTimerIntent();
     // public System.Void PauseTimer()
-    // Offset: 0x13FFDCC
+    // Offset: 0xA27D04
     void PauseTimer();
     // public System.Void ResumeTimer()
-    // Offset: 0x13FFE1C
+    // Offset: 0xA27D54
     void ResumeTimer();
     // public System.Void SubtractTimeTimer(System.String[] entityValues)
-    // Offset: 0x13FFE70
+    // Offset: 0xA27DA8
     void SubtractTimeTimer(::ArrayW<::StringW> entityValues);
     // public System.Void AddTimeToTimer(System.String[] entityValues)
-    // Offset: 0x13FFF88
+    // Offset: 0xA27EC0
     void AddTimeToTimer(::ArrayW<::StringW> entityValues);
     // public System.Single GetRemainingTime()
-    // Offset: 0x1400094
+    // Offset: 0xA27FCC
     float GetRemainingTime();
     // public System.String GetFormattedTimeFromSeconds()
-    // Offset: 0x13FFD44
+    // Offset: 0xA27C7C
     ::StringW GetFormattedTimeFromSeconds();
     // private System.Boolean ParseTime(System.String[] entityValues, out System.Single time)
-    // Offset: 0x13FFBA8
+    // Offset: 0xA27AE0
     bool ParseTime(::ArrayW<::StringW> entityValues, ByRef<float> time);
     // public System.Void .ctor()
-    // Offset: 0x140009C
+    // Offset: 0xA27FD4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

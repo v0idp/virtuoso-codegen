@@ -27,7 +27,7 @@ namespace VROSC {
   class PaginatedListItemData : public ::Il2CppObject {
     public:
     // protected System.Void .ctor()
-    // Offset: 0x8F7DA8
+    // Offset: 0xADC580
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -38,20 +38,20 @@ namespace GlobalNamespace {
   class combinedMeshLoadedCallback : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x1357774
+    // Offset: 0x954070
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static combinedMeshLoadedCallback* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::combinedMeshLoadedCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<combinedMeshLoadedCallback*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.IntPtr asset)
-    // Offset: 0x1357784
+    // Offset: 0x954080
     void Invoke(::System::IntPtr asset);
     // public System.IAsyncResult BeginInvoke(System.IntPtr asset, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x13579B0
+    // Offset: 0x9542AC
     ::System::IAsyncResult* BeginInvoke(::System::IntPtr asset, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x1357A38
+    // Offset: 0x954334
     void EndInvoke(::System::IAsyncResult* result);
   }; // combinedMeshLoadedCallback
   #pragma pack(pop)

@@ -247,41 +247,33 @@ namespace GlobalNamespace {
       // Set static field: static public ONSPPropagationMaterial/Preset WoodOnConcrete
       static void _set_WoodOnConcrete(::GlobalNamespace::ONSPPropagationMaterial::Preset value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // ONSPPropagationMaterial/Preset
     #pragma pack(pop)
     static check_size<sizeof(ONSPPropagationMaterial::Preset), 0 + sizeof(int)> __GlobalNamespace_ONSPPropagationMaterial_PresetSizeCheck;
     static_assert(sizeof(ONSPPropagationMaterial::Preset) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.IntPtr materialHandle
     // Size: 0x8
     // Offset: 0x18
     ::System::IntPtr materialHandle;
     // Field size check
     static_assert(sizeof(::System::IntPtr) == 0x8);
-    // [TooltipAttribute] Offset: 0x5EA54C
+    // [TooltipAttribute] Offset: 0x7015A8
     // public ONSPPropagationMaterial/Spectrum absorption
     // Size: 0x8
     // Offset: 0x20
     ::GlobalNamespace::ONSPPropagationMaterial::Spectrum* absorption;
     // Field size check
     static_assert(sizeof(::GlobalNamespace::ONSPPropagationMaterial::Spectrum*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5EA584
+    // [TooltipAttribute] Offset: 0x7015E0
     // public ONSPPropagationMaterial/Spectrum transmission
     // Size: 0x8
     // Offset: 0x28
     ::GlobalNamespace::ONSPPropagationMaterial::Spectrum* transmission;
     // Field size check
     static_assert(sizeof(::GlobalNamespace::ONSPPropagationMaterial::Spectrum*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5EA5BC
+    // [TooltipAttribute] Offset: 0x701618
     // public ONSPPropagationMaterial/Spectrum scattering
     // Size: 0x8
     // Offset: 0x30
@@ -298,128 +290,128 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.IntPtr materialHandle
-    ::System::IntPtr& dyn_materialHandle();
+    [[deprecated]] ::System::IntPtr& dyn_materialHandle();
     // Get instance field reference: public ONSPPropagationMaterial/Spectrum absorption
-    ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_absorption();
+    [[deprecated]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_absorption();
     // Get instance field reference: public ONSPPropagationMaterial/Spectrum transmission
-    ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_transmission();
+    [[deprecated]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_transmission();
     // Get instance field reference: public ONSPPropagationMaterial/Spectrum scattering
-    ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_scattering();
+    [[deprecated]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_scattering();
     // Get instance field reference: private ONSPPropagationMaterial/Preset preset_
-    ::GlobalNamespace::ONSPPropagationMaterial::Preset& dyn_preset_();
+    [[deprecated]] ::GlobalNamespace::ONSPPropagationMaterial::Preset& dyn_preset_();
     // public ONSPPropagationMaterial/Preset get_preset()
-    // Offset: 0x11BF20C
+    // Offset: 0x1764114
     ::GlobalNamespace::ONSPPropagationMaterial::Preset get_preset();
     // public System.Void set_preset(ONSPPropagationMaterial/Preset value)
-    // Offset: 0x11BF214
+    // Offset: 0x176411C
     void set_preset(::GlobalNamespace::ONSPPropagationMaterial::Preset value);
     // private System.Void Start()
-    // Offset: 0x11BF23C
+    // Offset: 0x1764144
     void Start();
     // public System.Void StartInternal()
-    // Offset: 0x11BEB00
+    // Offset: 0x1763A08
     void StartInternal();
     // private System.Void OnDestroy()
-    // Offset: 0x11BF8AC
+    // Offset: 0x17647B4
     void OnDestroy();
     // public System.Void DestroyInternal()
-    // Offset: 0x11BF8B0
+    // Offset: 0x17647B8
     void DestroyInternal();
     // public System.Void UploadMaterial()
-    // Offset: 0x11BF240
+    // Offset: 0x1764148
     void UploadMaterial();
     // public System.Void SetPreset(ONSPPropagationMaterial/Preset preset)
-    // Offset: 0x11BE470
+    // Offset: 0x1763378
     void SetPreset(::GlobalNamespace::ONSPPropagationMaterial::Preset preset);
     // static private System.Void AcousticTile(ref ONSPPropagationMaterial material)
-    // Offset: 0x11BF99C
+    // Offset: 0x17648A4
     static void AcousticTile(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Brick(ref ONSPPropagationMaterial material)
-    // Offset: 0x11BFE1C
+    // Offset: 0x1764D24
     static void Brick(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void BrickPainted(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C029C
+    // Offset: 0x17651A4
     static void BrickPainted(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Carpet(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C071C
+    // Offset: 0x1765624
     static void Carpet(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void CarpetHeavy(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C0B9C
+    // Offset: 0x1765AA4
     static void CarpetHeavy(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void CarpetHeavyPadded(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C101C
+    // Offset: 0x1765F24
     static void CarpetHeavyPadded(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void CeramicTile(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C149C
+    // Offset: 0x17663A4
     static void CeramicTile(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Concrete(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C191C
+    // Offset: 0x1766824
     static void Concrete(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void ConcreteRough(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C1D9C
+    // Offset: 0x1766CA4
     static void ConcreteRough(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void ConcreteBlock(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C221C
+    // Offset: 0x1767124
     static void ConcreteBlock(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void ConcreteBlockPainted(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C269C
+    // Offset: 0x17675A4
     static void ConcreteBlockPainted(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Curtain(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C2B1C
+    // Offset: 0x1767A24
     static void Curtain(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Foliage(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C2F9C
+    // Offset: 0x1767EA4
     static void Foliage(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Glass(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C341C
+    // Offset: 0x1768324
     static void Glass(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void GlassHeavy(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C3894
+    // Offset: 0x176879C
     static void GlassHeavy(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Grass(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C3D14
+    // Offset: 0x1768C1C
     static void Grass(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Gravel(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C4070
+    // Offset: 0x1768F78
     static void Gravel(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void GypsumBoard(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C43CC
+    // Offset: 0x17692D4
     static void GypsumBoard(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void PlasterOnBrick(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C484C
+    // Offset: 0x1769754
     static void PlasterOnBrick(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void PlasterOnConcreteBlock(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C4CCC
+    // Offset: 0x1769BD4
     static void PlasterOnConcreteBlock(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Soil(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C514C
+    // Offset: 0x176A054
     static void Soil(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void SoundProof(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C54A8
+    // Offset: 0x176A3B0
     static void SoundProof(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Snow(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C5624
+    // Offset: 0x176A52C
     static void Snow(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Steel(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C5980
+    // Offset: 0x176A888
     static void Steel(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void Water(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C5DF8
+    // Offset: 0x176AD00
     static void Water(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void WoodThin(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C6278
+    // Offset: 0x176B180
     static void WoodThin(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void WoodThick(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C66F0
+    // Offset: 0x176B5F8
     static void WoodThick(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void WoodFloor(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C6B70
+    // Offset: 0x176BA78
     static void WoodFloor(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // static private System.Void WoodOnConcrete(ref ONSPPropagationMaterial material)
-    // Offset: 0x11C6FF0
+    // Offset: 0x176BEF8
     static void WoodOnConcrete(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
     // public System.Void .ctor()
-    // Offset: 0x11C74A8
+    // Offset: 0x176C3B0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

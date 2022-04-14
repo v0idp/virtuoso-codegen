@@ -52,15 +52,7 @@ namespace System::Runtime::Remoting::Lifetime {
     public:
     // Nested type: ::System::Runtime::Remoting::Lifetime::Lease::RenewalDelegate
     class RenewalDelegate;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.DateTime _leaseExpireTime
     // Size: 0x8
     // Offset: 0x18
@@ -119,50 +111,50 @@ namespace System::Runtime::Remoting::Lifetime {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: private System.DateTime _leaseExpireTime
-    ::System::DateTime& dyn__leaseExpireTime();
+    [[deprecated]] ::System::DateTime& dyn__leaseExpireTime();
     // Get instance field reference: private System.Runtime.Remoting.Lifetime.LeaseState _currentState
-    ::System::Runtime::Remoting::Lifetime::LeaseState& dyn__currentState();
+    [[deprecated]] ::System::Runtime::Remoting::Lifetime::LeaseState& dyn__currentState();
     // Get instance field reference: private System.TimeSpan _initialLeaseTime
-    ::System::TimeSpan& dyn__initialLeaseTime();
+    [[deprecated]] ::System::TimeSpan& dyn__initialLeaseTime();
     // Get instance field reference: private System.TimeSpan _renewOnCallTime
-    ::System::TimeSpan& dyn__renewOnCallTime();
+    [[deprecated]] ::System::TimeSpan& dyn__renewOnCallTime();
     // Get instance field reference: private System.TimeSpan _sponsorshipTimeout
-    ::System::TimeSpan& dyn__sponsorshipTimeout();
+    [[deprecated]] ::System::TimeSpan& dyn__sponsorshipTimeout();
     // Get instance field reference: private System.Collections.ArrayList _sponsors
-    ::System::Collections::ArrayList*& dyn__sponsors();
+    [[deprecated]] ::System::Collections::ArrayList*& dyn__sponsors();
     // Get instance field reference: private System.Collections.Queue _renewingSponsors
-    ::System::Collections::Queue*& dyn__renewingSponsors();
+    [[deprecated]] ::System::Collections::Queue*& dyn__renewingSponsors();
     // Get instance field reference: private System.Runtime.Remoting.Lifetime.Lease/System.Runtime.Remoting.Lifetime.RenewalDelegate _renewalDelegate
-    ::System::Runtime::Remoting::Lifetime::Lease::RenewalDelegate*& dyn__renewalDelegate();
+    [[deprecated]] ::System::Runtime::Remoting::Lifetime::Lease::RenewalDelegate*& dyn__renewalDelegate();
     // public System.TimeSpan get_CurrentLeaseTime()
-    // Offset: 0xC5A9AC
+    // Offset: 0x107705C
     ::System::TimeSpan get_CurrentLeaseTime();
     // public System.Runtime.Remoting.Lifetime.LeaseState get_CurrentState()
-    // Offset: 0xC5AA20
+    // Offset: 0x10770D0
     ::System::Runtime::Remoting::Lifetime::LeaseState get_CurrentState();
     // public System.TimeSpan get_RenewOnCallTime()
-    // Offset: 0xC5AA34
+    // Offset: 0x10770E4
     ::System::TimeSpan get_RenewOnCallTime();
     // public System.Void Activate()
-    // Offset: 0xC5AA28
+    // Offset: 0x10770D8
     void Activate();
     // public System.TimeSpan Renew(System.TimeSpan renewalTime)
-    // Offset: 0xC5AA3C
+    // Offset: 0x10770EC
     ::System::TimeSpan Renew(::System::TimeSpan renewalTime);
     // public System.Void Unregister(System.Runtime.Remoting.Lifetime.ISponsor obj)
-    // Offset: 0xC5AAD4
+    // Offset: 0x1077184
     void Unregister(::System::Runtime::Remoting::Lifetime::ISponsor* obj);
     // System.Void UpdateState()
-    // Offset: 0xC5AC1C
+    // Offset: 0x10772CC
     void UpdateState();
     // private System.Void CheckNextSponsor()
-    // Offset: 0xC5ADAC
+    // Offset: 0x107745C
     void CheckNextSponsor();
     // private System.Void ProcessSponsorResponse(System.Object state, System.Boolean timedOut)
-    // Offset: 0xC5B010
+    // Offset: 0x10776C0
     void ProcessSponsorResponse(::Il2CppObject* state, bool timedOut);
     // public System.Void .ctor()
-    // Offset: 0xC5A820
+    // Offset: 0x1076ED0
     // Implemented from: System.MarshalByRefObject
     // Base method: System.Void MarshalByRefObject::.ctor()
     // Base method: System.Void Object::.ctor()

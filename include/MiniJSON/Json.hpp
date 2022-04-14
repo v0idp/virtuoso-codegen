@@ -33,10 +33,10 @@ namespace MiniJSON {
     // Nested type: ::MiniJSON::Json::Serializer
     class Serializer;
     // static public System.Object Deserialize(System.String json)
-    // Offset: 0x1387A7C
+    // Offset: 0x194B390
     static ::Il2CppObject* Deserialize(::StringW json);
     // static public System.String Serialize(System.Object obj)
-    // Offset: 0x1387A8C
+    // Offset: 0x194B3A0
     static ::StringW Serialize(::Il2CppObject* obj);
   }; // MiniJSON.Json
   #pragma pack(pop)

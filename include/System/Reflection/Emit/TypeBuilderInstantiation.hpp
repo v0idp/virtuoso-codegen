@@ -32,7 +32,7 @@ namespace System::Reflection::Emit {
   class TypeBuilderInstantiation : public ::System::Reflection::TypeInfo {
     public:
     // static System.Type MakeGenericType(System.Type type, System.Type[] typeArguments)
-    // Offset: 0x106D948
+    // Offset: 0x12B17FC
     static ::System::Type* MakeGenericType(::System::Type* type, ::ArrayW<::System::Type*> typeArguments);
   }; // System.Reflection.Emit.TypeBuilderInstantiation
   #pragma pack(pop)

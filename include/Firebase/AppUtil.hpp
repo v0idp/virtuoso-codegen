@@ -26,22 +26,22 @@ namespace Firebase {
   class AppUtil : public ::Il2CppObject {
     public:
     // static System.Void PollCallbacks()
-    // Offset: 0x12944FC
+    // Offset: 0x18833C4
     static void PollCallbacks();
     // static System.Void AppEnableLogCallback(System.Boolean arg0)
-    // Offset: 0x12945F0
+    // Offset: 0x18834B8
     static void AppEnableLogCallback(bool arg0);
     // static System.Void SetEnabledAllAppCallbacks(System.Boolean arg0)
-    // Offset: 0x12946FC
+    // Offset: 0x18835C4
     static void SetEnabledAllAppCallbacks(bool arg0);
     // static System.Void SetEnabledAppCallbackByName(System.String arg0, System.Boolean arg1)
-    // Offset: 0x1294808
+    // Offset: 0x18836D0
     static void SetEnabledAppCallbackByName(::StringW arg0, bool arg1);
     // static System.Boolean GetEnabledAppCallbackByName(System.String arg0)
-    // Offset: 0x1294944
+    // Offset: 0x188380C
     static bool GetEnabledAppCallbackByName(::StringW arg0);
     // static System.Void SetLogFunction(Firebase.LogUtil/Firebase.LogMessageDelegate arg0)
-    // Offset: 0x1294A74
+    // Offset: 0x188393C
     static void SetLogFunction(::Firebase::LogUtil::LogMessageDelegate* arg0);
   }; // Firebase.AppUtil
   #pragma pack(pop)

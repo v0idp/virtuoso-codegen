@@ -49,15 +49,7 @@ namespace TMPro {
     class $$c__DisplayClass5_0;
     // Nested type: ::TMPro::KerningTable::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<TMPro.KerningPair> kerningPairs
     // Size: 0x8
     // Offset: 0x10
@@ -70,27 +62,27 @@ namespace TMPro {
       return kerningPairs;
     }
     // Get instance field reference: public System.Collections.Generic.List`1<TMPro.KerningPair> kerningPairs
-    ::System::Collections::Generic::List_1<::TMPro::KerningPair*>*& dyn_kerningPairs();
+    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::KerningPair*>*& dyn_kerningPairs();
     // public System.Void AddKerningPair()
-    // Offset: 0xA481A0
+    // Offset: 0xC29DB0
     void AddKerningPair();
     // public System.Int32 AddKerningPair(System.UInt32 first, System.UInt32 second, System.Single offset)
-    // Offset: 0xA482E8
+    // Offset: 0xC29EF8
     int AddKerningPair(uint first, uint second, float offset);
     // public System.Int32 AddGlyphPairAdjustmentRecord(System.UInt32 first, TMPro.GlyphValueRecord_Legacy firstAdjustments, System.UInt32 second, TMPro.GlyphValueRecord_Legacy secondAdjustments)
-    // Offset: 0xA48464
+    // Offset: 0xC2A074
     int AddGlyphPairAdjustmentRecord(uint first, ::TMPro::GlyphValueRecord_Legacy firstAdjustments, uint second, ::TMPro::GlyphValueRecord_Legacy secondAdjustments);
     // public System.Void RemoveKerningPair(System.Int32 left, System.Int32 right)
-    // Offset: 0xA48620
+    // Offset: 0xC2A230
     void RemoveKerningPair(int left, int right);
     // public System.Void RemoveKerningPair(System.Int32 index)
-    // Offset: 0xA48754
+    // Offset: 0xC2A364
     void RemoveKerningPair(int index);
     // public System.Void SortKerningPairs()
-    // Offset: 0xA487B8
+    // Offset: 0xC2A3C8
     void SortKerningPairs();
     // public System.Void .ctor()
-    // Offset: 0xA48124
+    // Offset: 0xC29D34
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

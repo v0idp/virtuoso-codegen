@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlayerMover : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <IsGrabbed>k__BackingField
     // Size: 0x1
     // Offset: 0x18
@@ -109,50 +101,50 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean <IsGrabbed>k__BackingField
-    bool& dyn_$IsGrabbed$k__BackingField();
+    [[deprecated]] bool& dyn_$IsGrabbed$k__BackingField();
     // Get instance field reference: private VROSC.MoveOnPlane _mover
-    ::VROSC::MoveOnPlane*& dyn__mover();
+    [[deprecated]] ::VROSC::MoveOnPlane*& dyn__mover();
     // Get instance field reference: private UnityEngine.Collider _checkvolume
-    ::UnityEngine::Collider*& dyn__checkvolume();
+    [[deprecated]] ::UnityEngine::Collider*& dyn__checkvolume();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // Get instance field reference: private VROSC.LoopStationGroup _belongsToGroup
-    ::VROSC::LoopStationGroup*& dyn__belongsToGroup();
+    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__belongsToGroup();
     // Get instance field reference: private VROSC.LoopStationGroup _hoveredGroup
-    ::VROSC::LoopStationGroup*& dyn__hoveredGroup();
+    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__hoveredGroup();
     // Get instance field reference: private System.Boolean _onlyAllowDropOnOwnGroupOrUserGroups
-    bool& dyn__onlyAllowDropOnOwnGroupOrUserGroups();
+    [[deprecated]] bool& dyn__onlyAllowDropOnOwnGroupOrUserGroups();
     // public System.Boolean get_IsGrabbed()
-    // Offset: 0x904EEC
+    // Offset: 0x19BB414
     bool get_IsGrabbed();
     // System.Void set_IsGrabbed(System.Boolean value)
-    // Offset: 0x904EF4
+    // Offset: 0x19BB41C
     void set_IsGrabbed(bool value);
     // public System.Void Setup(VROSC.LoopPlayer loopPlayer, VROSC.LoopStation loopStation)
-    // Offset: 0x903460
+    // Offset: 0x19B9F0C
     void Setup(::VROSC::LoopPlayer* loopPlayer, ::VROSC::LoopStation* loopStation);
     // public System.Void SetGroup(VROSC.LoopStationGroup loopStationGroup)
-    // Offset: 0x902D30
+    // Offset: 0x19B9B18
     void SetGroup(::VROSC::LoopStationGroup* loopStationGroup);
     // private System.Void GrabBegin()
-    // Offset: 0x904F1C
+    // Offset: 0x19BB428
     void GrabBegin();
     // private System.Void Update()
-    // Offset: 0x904FA8
+    // Offset: 0x19BB4B4
     void Update();
     // private VROSC.LoopStationGroup GetHoveredGroup()
-    // Offset: 0x9050C8
+    // Offset: 0x19BB5DC
     ::VROSC::LoopStationGroup* GetHoveredGroup();
     // private System.Boolean IsGroupValid(VROSC.LoopStationGroup closestGroup)
-    // Offset: 0x905318
+    // Offset: 0x19BB7F8
     bool IsGroupValid(::VROSC::LoopStationGroup* closestGroup);
     // private System.Void GrabEnd()
-    // Offset: 0x905414
+    // Offset: 0x19BB8F4
     void GrabEnd();
     // public System.Void .ctor()
-    // Offset: 0x9055E4
+    // Offset: 0x19BBAB0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

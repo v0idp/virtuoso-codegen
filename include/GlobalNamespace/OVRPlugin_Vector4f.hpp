@@ -59,18 +59,18 @@ namespace GlobalNamespace {
     // Set static field: static public readonly OVRPlugin/Vector4f zero
     static void _set_zero(::GlobalNamespace::OVRPlugin::Vector4f value);
     // Get instance field reference: public System.Single x
-    float& dyn_x();
+    [[deprecated]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    float& dyn_y();
+    [[deprecated]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    float& dyn_z();
+    [[deprecated]] float& dyn_z();
     // Get instance field reference: public System.Single w
-    float& dyn_w();
+    [[deprecated]] float& dyn_w();
     // static private System.Void .cctor()
-    // Offset: 0xF145F8
+    // Offset: 0x13EE5F4
     static void _cctor();
     // public override System.String ToString()
-    // Offset: 0xF143F8
+    // Offset: 0x13EE3F4
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

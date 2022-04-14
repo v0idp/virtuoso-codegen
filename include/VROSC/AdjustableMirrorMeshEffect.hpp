@@ -36,15 +36,7 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class AdjustableMirrorMeshEffect : public ::VROSC::AdjustableMeshEffect {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _flipped
     // Size: 0x1
     // Offset: 0x20
@@ -53,15 +45,15 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean _flipped
-    bool& dyn__flipped();
+    [[deprecated]] bool& dyn__flipped();
     // private System.Void Flip(UnityEngine.Mesh mesh)
-    // Offset: 0x136A704
+    // Offset: 0x969044
     void Flip(::UnityEngine::Mesh* mesh);
     // private System.Void FlipNormals(UnityEngine.Mesh mesh)
-    // Offset: 0x136A7AC
+    // Offset: 0x9690EC
     void FlipNormals(::UnityEngine::Mesh* mesh);
     // public System.Void .ctor()
-    // Offset: 0x136A8BC
+    // Offset: 0x9691FC
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -75,7 +67,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AdjustableMirrorMeshEffect*, creationType>()));
     }
     // protected override System.Void OnMeshVisible()
-    // Offset: 0x136A6C4
+    // Offset: 0x969004
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::OnMeshVisible()
     void OnMeshVisible();

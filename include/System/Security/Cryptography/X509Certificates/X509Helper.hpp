@@ -50,40 +50,40 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static private System.Security.Cryptography.X509Certificates.INativeCertificateHelper nativeHelper
     static void _set_nativeHelper(::System::Security::Cryptography::X509Certificates::INativeCertificateHelper* value);
     // static System.Void InstallNativeHelper(System.Security.Cryptography.X509Certificates.INativeCertificateHelper helper)
-    // Offset: 0xCFAA14
+    // Offset: 0x1218E94
     static void InstallNativeHelper(::System::Security::Cryptography::X509Certificates::INativeCertificateHelper* helper);
     // static private System.Security.Cryptography.X509Certificates.X509CertificateImpl Import(System.Byte[] rawData)
-    // Offset: 0xCFAA7C
+    // Offset: 0x1218EFC
     static ::System::Security::Cryptography::X509Certificates::X509CertificateImpl* Import(::ArrayW<uint8_t> rawData);
     // static public System.Security.Cryptography.X509Certificates.X509CertificateImpl InitFromCertificate(System.Security.Cryptography.X509Certificates.X509CertificateImpl impl)
-    // Offset: 0xCF8C44
+    // Offset: 0x12170C4
     static ::System::Security::Cryptography::X509Certificates::X509CertificateImpl* InitFromCertificate(::System::Security::Cryptography::X509Certificates::X509CertificateImpl* impl);
     // static public System.Boolean IsValid(System.Security.Cryptography.X509Certificates.X509CertificateImpl impl)
-    // Offset: 0xCF8DE0
+    // Offset: 0x1217260
     static bool IsValid(::System::Security::Cryptography::X509Certificates::X509CertificateImpl* impl);
     // static System.Void ThrowIfContextInvalid(System.Security.Cryptography.X509Certificates.X509CertificateImpl impl)
-    // Offset: 0xCF8D7C
+    // Offset: 0x12171FC
     static void ThrowIfContextInvalid(::System::Security::Cryptography::X509Certificates::X509CertificateImpl* impl);
     // static System.Exception GetInvalidContextException()
-    // Offset: 0xCF99B0
+    // Offset: 0x1217E30
     static ::System::Exception* GetInvalidContextException();
     // static Mono.Security.X509.X509Certificate ImportPkcs12(System.Byte[] rawData, System.String password)
-    // Offset: 0xCFAC54
-    static ::Mono::Security::X509::X509Certificate* ImportPkcs12(::ArrayW<uint8_t> rawData, ::StringW password);
+    // Offset: 0x12190D4
+    static ::Mono::Security::X509::X509Certificate_* ImportPkcs12(::ArrayW<uint8_t> rawData, ::StringW password);
     // static private System.Byte[] PEM(System.String type, System.Byte[] data)
-    // Offset: 0xCFB01C
+    // Offset: 0x121949C
     static ::ArrayW<uint8_t> PEM(::StringW type, ::ArrayW<uint8_t> data);
     // static private System.Byte[] ConvertData(System.Byte[] data)
-    // Offset: 0xCFB15C
+    // Offset: 0x12195DC
     static ::ArrayW<uint8_t> ConvertData(::ArrayW<uint8_t> data);
     // static private System.Security.Cryptography.X509Certificates.X509CertificateImpl ImportCore(System.Byte[] rawData)
-    // Offset: 0xCFAA80
+    // Offset: 0x1218F00
     static ::System::Security::Cryptography::X509Certificates::X509CertificateImpl* ImportCore(::ArrayW<uint8_t> rawData);
     // static public System.Security.Cryptography.X509Certificates.X509CertificateImpl Import(System.Byte[] rawData, System.String password, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags keyStorageFlags)
-    // Offset: 0xCF94AC
+    // Offset: 0x121792C
     static ::System::Security::Cryptography::X509Certificates::X509CertificateImpl* Import(::ArrayW<uint8_t> rawData, ::StringW password, ::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);
     // static public System.String ToHexString(System.Byte[] data)
-    // Offset: 0xCF8F48
+    // Offset: 0x12173C8
     static ::StringW ToHexString(::ArrayW<uint8_t> data);
   }; // System.Security.Cryptography.X509Certificates.X509Helper
   #pragma pack(pop)
@@ -145,7 +145,7 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::E
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Helper::ImportPkcs12
 // Il2CppName: ImportPkcs12
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Mono::Security::X509::X509Certificate* (*)(::ArrayW<uint8_t>, ::StringW)>(&System::Security::Cryptography::X509Certificates::X509Helper::ImportPkcs12)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Mono::Security::X509::X509Certificate_* (*)(::ArrayW<uint8_t>, ::StringW)>(&System::Security::Cryptography::X509Certificates::X509Helper::ImportPkcs12)> {
   static const MethodInfo* get() {
     static auto* rawData = &il2cpp_functions::array_class_get(::il2cpp_utils::GetClassFromName("System", "Byte"), 1)->byval_arg;
     static auto* password = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;

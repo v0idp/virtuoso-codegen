@@ -44,11 +44,11 @@ namespace Mono::Globalization::Unicode {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 Code
-    int& dyn_Code();
+    [[deprecated]] int& dyn_Code();
     // Get instance field reference: public System.Byte* SortKey
-    uint8_t*& dyn_SortKey();
+    [[deprecated]] uint8_t*& dyn_SortKey();
     // public System.Void .ctor(System.Boolean dummy)
-    // Offset: 0x1082434
+    // Offset: 0xE59198
     PreviousInfo(bool dummy);
   }; // Mono.Globalization.Unicode.SimpleCollator/Mono.Globalization.Unicode.PreviousInfo
   #pragma pack(pop)

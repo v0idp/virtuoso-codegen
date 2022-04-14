@@ -38,62 +38,54 @@ namespace Facebook::WitAi::Configuration {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitRuntimeConfiguration : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x5B1938
+    // [TooltipAttribute] Offset: 0x6C7A68
     // public Facebook.WitAi.Data.Configuration.WitConfiguration witConfiguration
     // Size: 0x8
     // Offset: 0x10
     ::Facebook::WitAi::Data::Configuration::WitConfiguration* witConfiguration;
     // Field size check
     static_assert(sizeof(::Facebook::WitAi::Data::Configuration::WitConfiguration*) == 0x8);
-    // [HeaderAttribute] Offset: 0x5B1984
-    // [TooltipAttribute] Offset: 0x5B1984
+    // [HeaderAttribute] Offset: 0x6C7AB4
+    // [TooltipAttribute] Offset: 0x6C7AB4
     // public System.Single minKeepAliveVolume
     // Size: 0x4
     // Offset: 0x18
     float minKeepAliveVolume;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [FormerlySerializedAsAttribute] Offset: 0x5B19F4
-    // [TooltipAttribute] Offset: 0x5B19F4
+    // [FormerlySerializedAsAttribute] Offset: 0x6C7B24
+    // [TooltipAttribute] Offset: 0x6C7B24
     // public System.Single minKeepAliveTimeInSeconds
     // Size: 0x4
     // Offset: 0x1C
     float minKeepAliveTimeInSeconds;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [FormerlySerializedAsAttribute] Offset: 0x5B1A64
-    // [TooltipAttribute] Offset: 0x5B1A64
+    // [FormerlySerializedAsAttribute] Offset: 0x6C7B94
+    // [TooltipAttribute] Offset: 0x6C7B94
     // public System.Single minTranscriptionKeepAliveTimeInSeconds
     // Size: 0x4
     // Offset: 0x20
     float minTranscriptionKeepAliveTimeInSeconds;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x5B1AD4
-    // [TooltipAttribute] Offset: 0x5B1AD4
+    // [RangeAttribute] Offset: 0x6C7C04
+    // [TooltipAttribute] Offset: 0x6C7C04
     // public System.Single maxRecordingTime
     // Size: 0x4
     // Offset: 0x24
     float maxRecordingTime;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [HeaderAttribute] Offset: 0x5B1B38
+    // [HeaderAttribute] Offset: 0x6C7C68
     // public System.Single soundWakeThreshold
     // Size: 0x4
     // Offset: 0x28
     float soundWakeThreshold;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x5B1B84
+    // [RangeAttribute] Offset: 0x6C7CB4
     // public System.Int32 sampleLengthInMs
     // Size: 0x4
     // Offset: 0x2C
@@ -106,8 +98,8 @@ namespace Facebook::WitAi::Configuration {
     float micBufferLengthInSeconds;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [HeaderAttribute] Offset: 0x5B1BD8
-    // [TooltipAttribute] Offset: 0x5B1BD8
+    // [HeaderAttribute] Offset: 0x6C7D08
+    // [TooltipAttribute] Offset: 0x6C7D08
     // public System.Boolean sendAudioToWit
     // Size: 0x1
     // Offset: 0x34
@@ -124,27 +116,27 @@ namespace Facebook::WitAi::Configuration {
     static_assert(sizeof(::Facebook::WitAi::Interfaces::CustomTranscriptionProvider*) == 0x8);
     public:
     // Get instance field reference: public Facebook.WitAi.Data.Configuration.WitConfiguration witConfiguration
-    ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_witConfiguration();
+    [[deprecated]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_witConfiguration();
     // Get instance field reference: public System.Single minKeepAliveVolume
-    float& dyn_minKeepAliveVolume();
+    [[deprecated]] float& dyn_minKeepAliveVolume();
     // Get instance field reference: public System.Single minKeepAliveTimeInSeconds
-    float& dyn_minKeepAliveTimeInSeconds();
+    [[deprecated]] float& dyn_minKeepAliveTimeInSeconds();
     // Get instance field reference: public System.Single minTranscriptionKeepAliveTimeInSeconds
-    float& dyn_minTranscriptionKeepAliveTimeInSeconds();
+    [[deprecated]] float& dyn_minTranscriptionKeepAliveTimeInSeconds();
     // Get instance field reference: public System.Single maxRecordingTime
-    float& dyn_maxRecordingTime();
+    [[deprecated]] float& dyn_maxRecordingTime();
     // Get instance field reference: public System.Single soundWakeThreshold
-    float& dyn_soundWakeThreshold();
+    [[deprecated]] float& dyn_soundWakeThreshold();
     // Get instance field reference: public System.Int32 sampleLengthInMs
-    int& dyn_sampleLengthInMs();
+    [[deprecated]] int& dyn_sampleLengthInMs();
     // Get instance field reference: public System.Single micBufferLengthInSeconds
-    float& dyn_micBufferLengthInSeconds();
+    [[deprecated]] float& dyn_micBufferLengthInSeconds();
     // Get instance field reference: public System.Boolean sendAudioToWit
-    bool& dyn_sendAudioToWit();
+    [[deprecated]] bool& dyn_sendAudioToWit();
     // Get instance field reference: public Facebook.WitAi.Interfaces.CustomTranscriptionProvider customTranscriptionProvider
-    ::Facebook::WitAi::Interfaces::CustomTranscriptionProvider*& dyn_customTranscriptionProvider();
+    [[deprecated]] ::Facebook::WitAi::Interfaces::CustomTranscriptionProvider*& dyn_customTranscriptionProvider();
     // public System.Void .ctor()
-    // Offset: 0x10FD6B8
+    // Offset: 0x1673F20
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

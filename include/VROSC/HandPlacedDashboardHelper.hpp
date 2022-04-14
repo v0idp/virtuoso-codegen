@@ -38,16 +38,8 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class HandPlacedDashboardHelper : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x672240
+    // [HeaderAttribute] Offset: 0x788544
     // private VROSC.DashboardSpawnPoint/VROSC.TriggerCondition _condition
     // Size: 0x4
     // Offset: 0x18
@@ -84,44 +76,47 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.DashboardSpawnPoint/VROSC.TriggerCondition _condition
-    ::VROSC::DashboardSpawnPoint::TriggerCondition& dyn__condition();
+    [[deprecated]] ::VROSC::DashboardSpawnPoint::TriggerCondition& dyn__condition();
     // Get instance field reference: private VROSC.DashboardSpawnPoint _leftHand
-    ::VROSC::DashboardSpawnPoint*& dyn__leftHand();
+    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn__leftHand();
     // Get instance field reference: private VROSC.DashboardSpawnPoint _rightHand
-    ::VROSC::DashboardSpawnPoint*& dyn__rightHand();
+    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn__rightHand();
     // Get instance field reference: private VROSC.DashboardSpawnPoint <MostActivePoint>k__BackingField
-    ::VROSC::DashboardSpawnPoint*& dyn_$MostActivePoint$k__BackingField();
+    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn_$MostActivePoint$k__BackingField();
     // Get instance field reference: private VROSC.DashboardSpawnPoint <DashBoardAtHand>k__BackingField
-    ::VROSC::DashboardSpawnPoint*& dyn_$DashBoardAtHand$k__BackingField();
+    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn_$DashBoardAtHand$k__BackingField();
     // public VROSC.DashboardSpawnPoint get_MostActivePoint()
-    // Offset: 0x898678
+    // Offset: 0x19AB870
     ::VROSC::DashboardSpawnPoint* get_MostActivePoint();
     // private System.Void set_MostActivePoint(VROSC.DashboardSpawnPoint value)
-    // Offset: 0x898670
+    // Offset: 0x19AB868
     void set_MostActivePoint(::VROSC::DashboardSpawnPoint* value);
     // public VROSC.DashboardSpawnPoint get_DashBoardAtHand()
-    // Offset: 0x898688
+    // Offset: 0x19AB880
     ::VROSC::DashboardSpawnPoint* get_DashBoardAtHand();
     // private System.Void set_DashBoardAtHand(VROSC.DashboardSpawnPoint value)
-    // Offset: 0x898680
+    // Offset: 0x19AB878
     void set_DashBoardAtHand(::VROSC::DashboardSpawnPoint* value);
     // public System.Void Setup(VROSC.InputDevice left, VROSC.InputDevice right)
-    // Offset: 0x898690
+    // Offset: 0x19AB888
     void Setup(::VROSC::InputDevice* left, ::VROSC::InputDevice* right);
     // public System.Void SetDashboardIsInHand(System.Boolean inHands)
-    // Offset: 0x8981B0
+    // Offset: 0x19AB2D4
     void SetDashboardIsInHand(bool inHands);
     // public System.Void UpdateInput()
-    // Offset: 0x8986F4
+    // Offset: 0x19AB8EC
     void UpdateInput();
     // public System.Boolean EvaluateActivationCondition()
-    // Offset: 0x89844C
+    // Offset: 0x19AB644
     bool EvaluateActivationCondition();
     // public System.Boolean EvaluateDeactivationCondition()
-    // Offset: 0x8984D0
+    // Offset: 0x19AB6C8
     bool EvaluateDeactivationCondition();
+    // System.Boolean EvaluateDropCondition()
+    // Offset: 0x19AB588
+    bool EvaluateDropCondition();
     // public System.Void .ctor()
-    // Offset: 0x8987E4
+    // Offset: 0x19AB9DC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -214,6 +209,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::HandPlacedDashboardHelper::*)()>(&VROSC::HandPlacedDashboardHelper::EvaluateDeactivationCondition)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboardHelper*), "EvaluateDeactivationCondition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::HandPlacedDashboardHelper::EvaluateDropCondition
+// Il2CppName: EvaluateDropCondition
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::HandPlacedDashboardHelper::*)()>(&VROSC::HandPlacedDashboardHelper::EvaluateDropCondition)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboardHelper*), "EvaluateDropCondition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::HandPlacedDashboardHelper::New_ctor

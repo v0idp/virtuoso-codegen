@@ -62,15 +62,7 @@ namespace VROSC {
     class $FadeInWorldVisually$d__10;
     // Nested type: ::VROSC::MainState::$RecenterPlayer$d__17
     struct $RecenterPlayer$d__17;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.FullScreenFxController _fullScreenFxController
     // Size: 0x8
     // Offset: 0x10
@@ -105,55 +97,55 @@ namespace VROSC {
     // Set static field: static public System.Action OnMainStateEntered
     static void _set_OnMainStateEntered(::System::Action* value);
     // Get instance field reference: private VROSC.FullScreenFxController _fullScreenFxController
-    ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
+    [[deprecated]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
     // Get instance field reference: private VROSC.StartMenu _startMenuPrefab
-    ::VROSC::StartMenu*& dyn__startMenuPrefab();
+    [[deprecated]] ::VROSC::StartMenu*& dyn__startMenuPrefab();
     // Get instance field reference: private UnityEngine.AudioSource _startMenuMusic
-    ::UnityEngine::AudioSource*& dyn__startMenuMusic();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__startMenuMusic();
     // Get instance field reference: private System.Boolean _steamHasInputFocus
-    bool& dyn__steamHasInputFocus();
+    [[deprecated]] bool& dyn__steamHasInputFocus();
     // public System.Void .ctor(VROSC.FullScreenFxController fullScreenFxController, VROSC.StartMenu startMenuPrefab, UnityEngine.AudioSource startMenuMusic)
-    // Offset: 0x8AA618
+    // Offset: 0x197CBC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MainState* New_ctor(::VROSC::FullScreenFxController* fullScreenFxController, ::VROSC::StartMenu* startMenuPrefab, ::UnityEngine::AudioSource* startMenuMusic) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MainState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MainState*, creationType>(fullScreenFxController, startMenuPrefab, startMenuMusic)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x8AA660
+    // Offset: 0x197CC0C
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x8AA724
+    // Offset: 0x197CCD0
     void OnExit();
     // private System.Void StartMenuClosed()
-    // Offset: 0x8AA728
+    // Offset: 0x197CCD4
     void StartMenuClosed();
     // private System.Collections.IEnumerator StopMenuMusicCoroutine()
-    // Offset: 0x8AA860
+    // Offset: 0x197CE0C
     ::System::Collections::IEnumerator* StopMenuMusicCoroutine();
     // private System.Collections.IEnumerator FadeInWorldVisually()
-    // Offset: 0x8AA8CC
+    // Offset: 0x197CE78
     ::System::Collections::IEnumerator* FadeInWorldVisually();
     // static public System.Void SetWorldVisuallyFaded(System.Single amount)
-    // Offset: 0x8AA928
+    // Offset: 0x197CED4
     static void SetWorldVisuallyFaded(float amount);
     // public System.Void Tick()
-    // Offset: 0x8AA980
+    // Offset: 0x197CF2C
     void Tick();
     // private System.Boolean HasFocus()
-    // Offset: 0x8AAB1C
+    // Offset: 0x197D0C8
     bool HasFocus();
     // private System.Void OnInputFocus(System.Boolean hasFocus)
-    // Offset: 0x8AABAC
+    // Offset: 0x197D158
     void OnInputFocus(bool hasFocus);
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x8AABB8
+    // Offset: 0x197D164
     void UpdateData(::ArrayW<::Il2CppObject*> values);
     // private System.Void CheckForPlayerOutOfBounds()
-    // Offset: 0x8AABBC
+    // Offset: 0x197D168
     void CheckForPlayerOutOfBounds();
     // private System.Void RecenterPlayer()
-    // Offset: 0x8AAC40
+    // Offset: 0x197D1EC
     void RecenterPlayer();
   }; // VROSC.MainState
   #pragma pack(pop)

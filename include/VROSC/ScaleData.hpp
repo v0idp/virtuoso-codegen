@@ -28,15 +28,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScaleData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 StartNoteOffset
     // Size: 0x4
     // Offset: 0x10
@@ -63,15 +55,15 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Int32 StartNoteOffset
-    int& dyn_StartNoteOffset();
+    [[deprecated]] int& dyn_StartNoteOffset();
     // Get instance field reference: public VROSC.Scale Scale
-    ::VROSC::Scale& dyn_Scale();
+    [[deprecated]] ::VROSC::Scale& dyn_Scale();
     // Get instance field reference: public System.Boolean Locked
-    bool& dyn_Locked();
+    [[deprecated]] bool& dyn_Locked();
     // Get instance field reference: public System.Boolean Customized
-    bool& dyn_Customized();
+    [[deprecated]] bool& dyn_Customized();
     // public System.Void .ctor()
-    // Offset: 0xB10B18
+    // Offset: 0xDE2620
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

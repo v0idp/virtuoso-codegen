@@ -47,7 +47,7 @@ namespace GlobalNamespace {
     static ::GlobalNamespace::OVRManager_VirtualGreenScreenType _get_Off();
     // Set static field: static public OVRManager/VirtualGreenScreenType Off
     static void _set_Off(::GlobalNamespace::OVRManager_VirtualGreenScreenType value);
-    // [ObsoleteAttribute] Offset: 0x58CC54
+    // [ObsoleteAttribute] Offset: 0x697748
     // static field const value: static public OVRManager/VirtualGreenScreenType OuterBoundary
     static constexpr const int OuterBoundary = 1;
     // Get static field: static public OVRManager/VirtualGreenScreenType OuterBoundary
@@ -61,7 +61,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRManager/VirtualGreenScreenType PlayArea
     static void _set_PlayArea(::GlobalNamespace::OVRManager_VirtualGreenScreenType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // OVRManager/VirtualGreenScreenType
   #pragma pack(pop)
   static check_size<sizeof(OVRManager_VirtualGreenScreenType), 0 + sizeof(int)> __GlobalNamespace_OVRManager_VirtualGreenScreenTypeSizeCheck;

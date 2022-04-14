@@ -26,15 +26,7 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class PlatformManager::$$c__DisplayClass31_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Oculus.Platform.Samples.VrVoiceChat.RoomManager/Oculus.Platform.Samples.VrVoiceChat.Invite invite
     // Size: 0x10
     // Offset: 0x10
@@ -47,12 +39,12 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
       return invite;
     }
     // Get instance field reference: public Oculus.Platform.Samples.VrVoiceChat.RoomManager/Oculus.Platform.Samples.VrVoiceChat.Invite invite
-    ::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite& dyn_invite();
+    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite& dyn_invite();
     // System.Void <SetActiveInvites>b__0()
-    // Offset: 0x1156620
+    // Offset: 0x172351C
     void $SetActiveInvites$b__0();
     // public System.Void .ctor()
-    // Offset: 0x1156618
+    // Offset: 0x1723514
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

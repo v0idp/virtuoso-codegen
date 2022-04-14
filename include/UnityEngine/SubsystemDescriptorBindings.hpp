@@ -31,10 +31,10 @@ namespace UnityEngine {
   class SubsystemDescriptorBindings : public ::Il2CppObject {
     public:
     // static public System.IntPtr Create(System.IntPtr descriptorPtr)
-    // Offset: 0x12FE2BC
+    // Offset: 0x1903C60
     static ::System::IntPtr Create(::System::IntPtr descriptorPtr);
     // static public System.String GetId(System.IntPtr descriptorPtr)
-    // Offset: 0x12FE054
+    // Offset: 0x19039F8
     static ::StringW GetId(::System::IntPtr descriptorPtr);
   }; // UnityEngine.SubsystemDescriptorBindings
   #pragma pack(pop)

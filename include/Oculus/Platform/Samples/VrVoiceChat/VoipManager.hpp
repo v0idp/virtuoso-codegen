@@ -46,15 +46,7 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoipManager : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt64 m_remoteID
     // Size: 0x8
     // Offset: 0x10
@@ -77,32 +69,32 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     public:
     // Get instance field reference: private System.UInt64 m_remoteID
-    uint64_t& dyn_m_remoteID();
+    [[deprecated]] uint64_t& dyn_m_remoteID();
     // Get instance field reference: private Oculus.Platform.PeerConnectionState m_state
-    ::Oculus::Platform::PeerConnectionState& dyn_m_state();
+    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_m_state();
     // Get instance field reference: private readonly UnityEngine.GameObject m_remoteHead
-    ::UnityEngine::GameObject*& dyn_m_remoteHead();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_remoteHead();
     // public System.Boolean get_Connected()
-    // Offset: 0x1153624
+    // Offset: 0x1720520
     bool get_Connected();
     // public System.Void .ctor(UnityEngine.GameObject remoteHead)
-    // Offset: 0x11533CC
+    // Offset: 0x17202C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VoipManager* New_ctor(::UnityEngine::GameObject* remoteHead) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrVoiceChat::VoipManager::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<VoipManager*, creationType>(remoteHead)));
     }
     // public System.Void ConnectTo(System.UInt64 userID)
-    // Offset: 0x11534AC
+    // Offset: 0x17203A8
     void ConnectTo(uint64_t userID);
     // public System.Void Disconnect()
-    // Offset: 0x1153574
+    // Offset: 0x1720470
     void Disconnect();
     // private System.Void VoipConnectRequestCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x1153634
+    // Offset: 0x1720530
     void VoipConnectRequestCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // private System.Void VoipStateChangedCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x11537D8
+    // Offset: 0x17206D4
     void VoipStateChangedCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
   }; // Oculus.Platform.Samples.VrVoiceChat.VoipManager
   #pragma pack(pop)

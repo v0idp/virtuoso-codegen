@@ -48,21 +48,21 @@ namespace GlobalNamespace {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Invoke(T arg1, U arg2) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCallback_2::Invoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Invoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(arg1), ::il2cpp_utils::ExtractType(arg2)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::GlobalNamespace::OVRCallback_2<T, U>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, arg1, arg2);
     }
     // public System.IAsyncResult BeginInvoke(T arg1, U arg2, System.AsyncCallback callback, System.Object object)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::IAsyncResult* BeginInvoke(T arg1, U arg2, ::System::AsyncCallback* callback, ::Il2CppObject* object) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCallback_2::BeginInvoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "BeginInvoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(arg1), ::il2cpp_utils::ExtractType(arg2), ::il2cpp_utils::ExtractType(callback), ::il2cpp_utils::ExtractType(object)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::GlobalNamespace::OVRCallback_2<T, U>*), -1)));
       return ::il2cpp_utils::RunMethodRethrow<::System::IAsyncResult*, false>(this, ___internal__method, arg1, arg2, callback, object);
     }
     // public System.Void EndInvoke(System.IAsyncResult result)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void EndInvoke(::System::IAsyncResult* result) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCallback_2::EndInvoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "EndInvoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(result)})));
+      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::GlobalNamespace::OVRCallback_2<T, U>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, result);
     }
   }; // OVRCallback`2

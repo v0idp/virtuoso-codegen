@@ -63,15 +63,7 @@ namespace DG::Tweening {
   // [TokenAttribute] Offset: FFFFFFFF
   class Tween : public ::DG::Tweening::Core::ABSSequentiable {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single timeScale
     // Size: 0x4
     // Offset: 0x28
@@ -392,143 +384,143 @@ namespace DG::Tweening {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Single timeScale
-    float& dyn_timeScale();
+    [[deprecated]] float& dyn_timeScale();
     // Get instance field reference: public System.Boolean isBackwards
-    bool& dyn_isBackwards();
+    [[deprecated]] bool& dyn_isBackwards();
     // Get instance field reference: public System.Object id
-    ::Il2CppObject*& dyn_id();
+    [[deprecated]] ::Il2CppObject*& dyn_id();
     // Get instance field reference: public System.String stringId
-    ::StringW& dyn_stringId();
+    [[deprecated]] ::StringW& dyn_stringId();
     // Get instance field reference: public System.Int32 intId
-    int& dyn_intId();
+    [[deprecated]] int& dyn_intId();
     // Get instance field reference: public System.Object target
-    ::Il2CppObject*& dyn_target();
+    [[deprecated]] ::Il2CppObject*& dyn_target();
     // Get instance field reference: DG.Tweening.UpdateType updateType
-    ::DG::Tweening::UpdateType& dyn_updateType();
+    [[deprecated]] ::DG::Tweening::UpdateType& dyn_updateType();
     // Get instance field reference: System.Boolean isIndependentUpdate
-    bool& dyn_isIndependentUpdate();
+    [[deprecated]] bool& dyn_isIndependentUpdate();
     // Get instance field reference: public DG.Tweening.TweenCallback onPlay
-    ::DG::Tweening::TweenCallback*& dyn_onPlay();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onPlay();
     // Get instance field reference: public DG.Tweening.TweenCallback onPause
-    ::DG::Tweening::TweenCallback*& dyn_onPause();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onPause();
     // Get instance field reference: public DG.Tweening.TweenCallback onRewind
-    ::DG::Tweening::TweenCallback*& dyn_onRewind();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onRewind();
     // Get instance field reference: public DG.Tweening.TweenCallback onUpdate
-    ::DG::Tweening::TweenCallback*& dyn_onUpdate();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onUpdate();
     // Get instance field reference: public DG.Tweening.TweenCallback onStepComplete
-    ::DG::Tweening::TweenCallback*& dyn_onStepComplete();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onStepComplete();
     // Get instance field reference: public DG.Tweening.TweenCallback onComplete
-    ::DG::Tweening::TweenCallback*& dyn_onComplete();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onComplete();
     // Get instance field reference: public DG.Tweening.TweenCallback onKill
-    ::DG::Tweening::TweenCallback*& dyn_onKill();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onKill();
     // Get instance field reference: public DG.Tweening.TweenCallback`1<System.Int32> onWaypointChange
-    ::DG::Tweening::TweenCallback_1<int>*& dyn_onWaypointChange();
+    [[deprecated]] ::DG::Tweening::TweenCallback_1<int>*& dyn_onWaypointChange();
     // Get instance field reference: System.Boolean isFrom
-    bool& dyn_isFrom();
+    [[deprecated]] bool& dyn_isFrom();
     // Get instance field reference: System.Boolean isBlendable
-    bool& dyn_isBlendable();
+    [[deprecated]] bool& dyn_isBlendable();
     // Get instance field reference: System.Boolean isRecyclable
-    bool& dyn_isRecyclable();
+    [[deprecated]] bool& dyn_isRecyclable();
     // Get instance field reference: System.Boolean isSpeedBased
-    bool& dyn_isSpeedBased();
+    [[deprecated]] bool& dyn_isSpeedBased();
     // Get instance field reference: System.Boolean autoKill
-    bool& dyn_autoKill();
+    [[deprecated]] bool& dyn_autoKill();
     // Get instance field reference: System.Single duration
-    float& dyn_duration();
+    [[deprecated]] float& dyn_duration();
     // Get instance field reference: System.Int32 loops
-    int& dyn_loops();
+    [[deprecated]] int& dyn_loops();
     // Get instance field reference: DG.Tweening.LoopType loopType
-    ::DG::Tweening::LoopType& dyn_loopType();
+    [[deprecated]] ::DG::Tweening::LoopType& dyn_loopType();
     // Get instance field reference: System.Single delay
-    float& dyn_delay();
+    [[deprecated]] float& dyn_delay();
     // Get instance field reference: private System.Boolean <isRelative>k__BackingField
-    bool& dyn_$isRelative$k__BackingField();
+    [[deprecated]] bool& dyn_$isRelative$k__BackingField();
     // Get instance field reference: DG.Tweening.Ease easeType
-    ::DG::Tweening::Ease& dyn_easeType();
+    [[deprecated]] ::DG::Tweening::Ease& dyn_easeType();
     // Get instance field reference: DG.Tweening.EaseFunction customEase
-    ::DG::Tweening::EaseFunction*& dyn_customEase();
+    [[deprecated]] ::DG::Tweening::EaseFunction*& dyn_customEase();
     // Get instance field reference: public System.Single easeOvershootOrAmplitude
-    float& dyn_easeOvershootOrAmplitude();
+    [[deprecated]] float& dyn_easeOvershootOrAmplitude();
     // Get instance field reference: public System.Single easePeriod
-    float& dyn_easePeriod();
+    [[deprecated]] float& dyn_easePeriod();
     // Get instance field reference: public System.String debugTargetId
-    ::StringW& dyn_debugTargetId();
+    [[deprecated]] ::StringW& dyn_debugTargetId();
     // Get instance field reference: System.Type typeofT1
-    ::System::Type*& dyn_typeofT1();
+    [[deprecated]] ::System::Type*& dyn_typeofT1();
     // Get instance field reference: System.Type typeofT2
-    ::System::Type*& dyn_typeofT2();
+    [[deprecated]] ::System::Type*& dyn_typeofT2();
     // Get instance field reference: System.Type typeofTPlugOptions
-    ::System::Type*& dyn_typeofTPlugOptions();
+    [[deprecated]] ::System::Type*& dyn_typeofTPlugOptions();
     // Get instance field reference: private System.Boolean <active>k__BackingField
-    bool& dyn_$active$k__BackingField();
+    [[deprecated]] bool& dyn_$active$k__BackingField();
     // Get instance field reference: System.Boolean isSequenced
-    bool& dyn_isSequenced();
+    [[deprecated]] bool& dyn_isSequenced();
     // Get instance field reference: DG.Tweening.Sequence sequenceParent
-    ::DG::Tweening::Sequence*& dyn_sequenceParent();
+    [[deprecated]] ::DG::Tweening::Sequence*& dyn_sequenceParent();
     // Get instance field reference: System.Int32 activeId
-    int& dyn_activeId();
+    [[deprecated]] int& dyn_activeId();
     // Get instance field reference: DG.Tweening.Core.Enums.SpecialStartupMode specialStartupMode
-    ::DG::Tweening::Core::Enums::SpecialStartupMode& dyn_specialStartupMode();
+    [[deprecated]] ::DG::Tweening::Core::Enums::SpecialStartupMode& dyn_specialStartupMode();
     // Get instance field reference: System.Boolean creationLocked
-    bool& dyn_creationLocked();
+    [[deprecated]] bool& dyn_creationLocked();
     // Get instance field reference: System.Boolean startupDone
-    bool& dyn_startupDone();
+    [[deprecated]] bool& dyn_startupDone();
     // Get instance field reference: private System.Boolean <playedOnce>k__BackingField
-    bool& dyn_$playedOnce$k__BackingField();
+    [[deprecated]] bool& dyn_$playedOnce$k__BackingField();
     // Get instance field reference: private System.Single <position>k__BackingField
-    float& dyn_$position$k__BackingField();
+    [[deprecated]] float& dyn_$position$k__BackingField();
     // Get instance field reference: System.Single fullDuration
-    float& dyn_fullDuration();
+    [[deprecated]] float& dyn_fullDuration();
     // Get instance field reference: System.Int32 completedLoops
-    int& dyn_completedLoops();
+    [[deprecated]] int& dyn_completedLoops();
     // Get instance field reference: System.Boolean isPlaying
-    bool& dyn_isPlaying();
+    [[deprecated]] bool& dyn_isPlaying();
     // Get instance field reference: System.Boolean isComplete
-    bool& dyn_isComplete();
+    [[deprecated]] bool& dyn_isComplete();
     // Get instance field reference: System.Single elapsedDelay
-    float& dyn_elapsedDelay();
+    [[deprecated]] float& dyn_elapsedDelay();
     // Get instance field reference: System.Boolean delayComplete
-    bool& dyn_delayComplete();
+    [[deprecated]] bool& dyn_delayComplete();
     // Get instance field reference: System.Int32 miscInt
-    int& dyn_miscInt();
+    [[deprecated]] int& dyn_miscInt();
     // public System.Boolean get_isRelative()
-    // Offset: 0x1036F4C
+    // Offset: 0x15AD944
     bool get_isRelative();
     // System.Void set_isRelative(System.Boolean value)
-    // Offset: 0x1036F54
+    // Offset: 0x15AD94C
     void set_isRelative(bool value);
     // public System.Boolean get_active()
-    // Offset: 0x1036F60
+    // Offset: 0x15AD958
     bool get_active();
     // System.Void set_active(System.Boolean value)
-    // Offset: 0x1036F68
+    // Offset: 0x15AD960
     void set_active(bool value);
     // public System.Single get_fullPosition()
-    // Offset: 0x1036F74
+    // Offset: 0x15AD96C
     float get_fullPosition();
     // public System.Void set_fullPosition(System.Single value)
-    // Offset: 0x103702C
+    // Offset: 0x15ADA24
     void set_fullPosition(float value);
     // public System.Boolean get_playedOnce()
-    // Offset: 0x1037224
+    // Offset: 0x15ADC1C
     bool get_playedOnce();
     // private System.Void set_playedOnce(System.Boolean value)
-    // Offset: 0x103722C
+    // Offset: 0x15ADC24
     void set_playedOnce(bool value);
     // public System.Single get_position()
-    // Offset: 0x1037238
+    // Offset: 0x15ADC30
     float get_position();
     // System.Void set_position(System.Single value)
-    // Offset: 0x1037240
+    // Offset: 0x15ADC38
     void set_position(float value);
     // System.Void Reset()
-    // Offset: 0x1037248
+    // Offset: 0x15ADC40
     void Reset();
     // System.Boolean Validate()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool Validate();
     // System.Single UpdateDelay(System.Single elapsed)
-    // Offset: 0x10372D4
+    // Offset: 0x15ADCCC
     float UpdateDelay(float elapsed);
     // System.Boolean Startup()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -537,10 +529,10 @@ namespace DG::Tweening {
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool ApplyTween(float prevPosition, int prevCompletedLoops, int newCompletedSteps, bool useInversePosition, ::DG::Tweening::Core::Enums::UpdateMode updateMode, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // static System.Boolean DoGoto(DG.Tweening.Tween t, System.Single toPosition, System.Int32 toCompletedLoops, DG.Tweening.Core.Enums.UpdateMode updateMode)
-    // Offset: 0x10372DC
+    // Offset: 0x15ADCD4
     static bool DoGoto(::DG::Tweening::Tween* t, float toPosition, int toCompletedLoops, ::DG::Tweening::Core::Enums::UpdateMode updateMode);
     // static System.Boolean OnTweenCallback(DG.Tweening.TweenCallback callback, DG.Tweening.Tween t)
-    // Offset: 0x1037638
+    // Offset: 0x15AE030
     static bool OnTweenCallback(::DG::Tweening::TweenCallback* callback, ::DG::Tweening::Tween* t);
     // static System.Boolean OnTweenCallback(DG.Tweening.TweenCallback`1<T> callback, DG.Tweening.Tween t, T param)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -552,7 +544,7 @@ namespace DG::Tweening {
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, callback, t, param);
     }
     // protected System.Void .ctor()
-    // Offset: 0x1037A58
+    // Offset: 0x15AE450
     // Implemented from: DG.Tweening.Core.ABSSequentiable
     // Base method: System.Void ABSSequentiable::.ctor()
     // Base method: System.Void Object::.ctor()

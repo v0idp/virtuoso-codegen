@@ -61,22 +61,22 @@ namespace TMPro {
     // Set static field: static private readonly System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_FontAsset> s_FontAssetReferenceLookup
     static void _set_s_FontAssetReferenceLookup(::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_FontAsset*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x85964C
+    // Offset: 0x9B07E4
     static void _cctor();
     // static TMPro.TMP_Settings GetTextSettings()
-    // Offset: 0x859744
+    // Offset: 0x9B08DC
     static ::TMPro::TMP_Settings* GetTextSettings();
     // static public System.Void AddFontAsset(TMPro.TMP_FontAsset fontAsset)
-    // Offset: 0x859878
+    // Offset: 0x9B0A10
     static void AddFontAsset(::TMPro::TMP_FontAsset* fontAsset);
     // static public System.Boolean TryGetFontAsset(System.Int32 hashcode, out TMPro.TMP_FontAsset fontAsset)
-    // Offset: 0x8599A4
+    // Offset: 0x9B0B3C
     static bool TryGetFontAsset(int hashcode, ByRef<::TMPro::TMP_FontAsset*> fontAsset);
     // static System.Void RebuildFontAssetCache(System.Int32 instanceID)
-    // Offset: 0x859A44
+    // Offset: 0x9B0BDC
     static void RebuildFontAssetCache(int instanceID);
     // public System.Void .ctor()
-    // Offset: 0x85973C
+    // Offset: 0x9B08D4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

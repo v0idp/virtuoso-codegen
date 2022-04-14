@@ -74,20 +74,12 @@ namespace AudioHelm {
       // Set static field: static public AudioHelm.HelmParameter/AudioHelm.ScaleType kByPercent
       static void _set_kByPercent(::AudioHelm::HelmParameter::ScaleType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // AudioHelm.HelmParameter/AudioHelm.ScaleType
     #pragma pack(pop)
     static check_size<sizeof(HelmParameter::ScaleType), 0 + sizeof(int)> __AudioHelm_HelmParameter_ScaleTypeSizeCheck;
     static_assert(sizeof(HelmParameter::ScaleType) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private AudioHelm.Param parameter_
     // Size: 0x4
     // Offset: 0x10
@@ -132,59 +124,59 @@ namespace AudioHelm {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private AudioHelm.Param parameter_
-    ::AudioHelm::Param& dyn_parameter_();
+    [[deprecated]] ::AudioHelm::Param& dyn_parameter_();
     // Get instance field reference: public AudioHelm.HelmParameter/AudioHelm.ScaleType scaleType
-    ::AudioHelm::HelmParameter::ScaleType& dyn_scaleType();
+    [[deprecated]] ::AudioHelm::HelmParameter::ScaleType& dyn_scaleType();
     // Get instance field reference: public AudioHelm.HelmController parent
-    ::AudioHelm::HelmController*& dyn_parent();
+    [[deprecated]] ::AudioHelm::HelmController*& dyn_parent();
     // Get instance field reference: private System.Single lastValue
-    float& dyn_lastValue();
+    [[deprecated]] float& dyn_lastValue();
     // Get instance field reference: private System.Single minimumRange
-    float& dyn_minimumRange();
+    [[deprecated]] float& dyn_minimumRange();
     // Get instance field reference: private System.Single maximumRange
-    float& dyn_maximumRange();
+    [[deprecated]] float& dyn_maximumRange();
     // Get instance field reference: private System.Single paramValue_
-    float& dyn_paramValue_();
+    [[deprecated]] float& dyn_paramValue_();
     // public AudioHelm.Param get_parameter()
-    // Offset: 0x89A984
+    // Offset: 0x193D130
     ::AudioHelm::Param get_parameter();
     // public System.Void set_parameter(AudioHelm.Param value)
-    // Offset: 0x89A98C
+    // Offset: 0x193D138
     void set_parameter(::AudioHelm::Param value);
     // public System.Single get_paramValue()
-    // Offset: 0x89AA38
+    // Offset: 0x193D1E4
     float get_paramValue();
     // public System.Void set_paramValue(System.Single value)
-    // Offset: 0x899F58
+    // Offset: 0x193C560
     void set_paramValue(float value);
     // public System.Void .ctor(AudioHelm.HelmController par)
-    // Offset: 0x89A12C
+    // Offset: 0x193C734
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HelmParameter* New_ctor(::AudioHelm::HelmController* par) {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmParameter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<HelmParameter*, creationType>(par)));
     }
     // public System.Void .ctor(AudioHelm.HelmController par, AudioHelm.Param param)
-    // Offset: 0x89A230
+    // Offset: 0x193C838
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HelmParameter* New_ctor(::AudioHelm::HelmController* par, ::AudioHelm::Param param) {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmParameter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<HelmParameter*, creationType>(par, param)));
     }
     // public System.Single GetMinimumRange()
-    // Offset: 0x89AB70
+    // Offset: 0x193D31C
     float GetMinimumRange();
     // public System.Single GetMaximumRange()
-    // Offset: 0x89AB78
+    // Offset: 0x193D324
     float GetMaximumRange();
     // private System.Void UpdateMinMax()
-    // Offset: 0x89A9A4
+    // Offset: 0x193D150
     void UpdateMinMax();
     // private System.Void UpdateNative()
-    // Offset: 0x89AA40
+    // Offset: 0x193D1EC
     void UpdateNative();
     // public System.Void .ctor()
-    // Offset: 0x89AB30
+    // Offset: 0x193D2DC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

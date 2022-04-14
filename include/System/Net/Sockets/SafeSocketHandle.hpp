@@ -51,15 +51,7 @@ namespace System::Net::Sockets {
     public:
     // Writing base type padding for base size: 0x1E to desired offset: 0x20
     char ___base_padding[0x2] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<System.Threading.Thread> blocking_threads
     // Size: 0x8
     // Offset: 0x20
@@ -96,22 +88,22 @@ namespace System::Net::Sockets {
     // Set static field: static private System.Boolean THROW_ON_ABORT_RETRIES
     static void _set_THROW_ON_ABORT_RETRIES(bool value);
     // Get instance field reference: private System.Collections.Generic.List`1<System.Threading.Thread> blocking_threads
-    ::System::Collections::Generic::List_1<::System::Threading::Thread*>*& dyn_blocking_threads();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::Threading::Thread*>*& dyn_blocking_threads();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Threading.Thread,System.Diagnostics.StackTrace> threads_stacktraces
-    ::System::Collections::Generic::Dictionary_2<::System::Threading::Thread*, ::System::Diagnostics::StackTrace*>*& dyn_threads_stacktraces();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Threading::Thread*, ::System::Diagnostics::StackTrace*>*& dyn_threads_stacktraces();
     // Get instance field reference: private System.Boolean in_cleanup
-    bool& dyn_in_cleanup();
+    [[deprecated]] bool& dyn_in_cleanup();
     // static private System.Void .cctor()
-    // Offset: 0x9454A0
+    // Offset: 0xD99450
     static void _cctor();
     // public System.Void RegisterForBlockingSyscall()
-    // Offset: 0x944F44
+    // Offset: 0xD98EF4
     void RegisterForBlockingSyscall();
     // public System.Void UnRegisterForBlockingSyscall()
-    // Offset: 0x9452A4
+    // Offset: 0xD99254
     void UnRegisterForBlockingSyscall();
     // public System.Void .ctor(System.IntPtr preexistingHandle, System.Boolean ownsHandle)
-    // Offset: 0x9448A8
+    // Offset: 0xD98858
     // Implemented from: System.Runtime.InteropServices.SafeHandle
     // Base method: System.Void SafeHandle::.ctor(System.IntPtr preexistingHandle, System.Boolean ownsHandle)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -120,7 +112,7 @@ namespace System::Net::Sockets {
       return THROW_UNLESS((::il2cpp_utils::New<SafeSocketHandle*, creationType>(preexistingHandle, ownsHandle)));
     }
     // protected override System.Boolean ReleaseHandle()
-    // Offset: 0x944978
+    // Offset: 0xD98928
     // Implemented from: System.Runtime.InteropServices.SafeHandle
     // Base method: System.Boolean SafeHandle::ReleaseHandle()
     bool ReleaseHandle();

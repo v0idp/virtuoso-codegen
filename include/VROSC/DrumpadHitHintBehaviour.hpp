@@ -44,36 +44,28 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class DrumpadHitHintBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.DrumPadEffectOnSignal _drumEffect
     // Size: 0x8
     // Offset: 0x10
     ::VROSC::DrumPadEffectOnSignal* drumEffect;
     // Field size check
     static_assert(sizeof(::VROSC::DrumPadEffectOnSignal*) == 0x8);
-    // [RangeAttribute] Offset: 0x6737C8
+    // [RangeAttribute] Offset: 0x789B3C
     // public System.Single CurrentTime
     // Size: 0x4
     // Offset: 0x18
     float CurrentTime;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x6737E0
+    // [RangeAttribute] Offset: 0x789B54
     // public System.Single HitPower
     // Size: 0x4
     // Offset: 0x1C
     float HitPower;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [ColorUsageAttribute] Offset: 0x6737F8
+    // [ColorUsageAttribute] Offset: 0x789B6C
     // public UnityEngine.Color Color
     // Size: 0x10
     // Offset: 0x20
@@ -82,18 +74,18 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal _drumEffect
-    ::VROSC::DrumPadEffectOnSignal*& dyn__drumEffect();
+    [[deprecated]] ::VROSC::DrumPadEffectOnSignal*& dyn__drumEffect();
     // Get instance field reference: public System.Single CurrentTime
-    float& dyn_CurrentTime();
+    [[deprecated]] float& dyn_CurrentTime();
     // Get instance field reference: public System.Single HitPower
-    float& dyn_HitPower();
+    [[deprecated]] float& dyn_HitPower();
     // Get instance field reference: public UnityEngine.Color Color
-    ::UnityEngine::Color& dyn_Color();
+    [[deprecated]] ::UnityEngine::Color& dyn_Color();
     // public System.Void Setup(VROSC.DrumPadEffectOnSignal drumEffect)
-    // Offset: 0x130EE74
+    // Offset: 0x8E8A18
     void Setup(::VROSC::DrumPadEffectOnSignal* drumEffect);
     // public System.Void .ctor()
-    // Offset: 0x130EED0
+    // Offset: 0x8E8A74
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -103,7 +95,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<DrumpadHitHintBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x130EEA8
+    // Offset: 0x8E8A4C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

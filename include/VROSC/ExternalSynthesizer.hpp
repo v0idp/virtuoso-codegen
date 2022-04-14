@@ -58,15 +58,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ExternalSynthesizer::$$c__DisplayClass6_0
     class $$c__DisplayClass6_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _printToLog
     // Size: 0x1
     // Offset: 0x18
@@ -111,23 +103,23 @@ namespace VROSC {
     // Set static field: static public System.Int32 MaxEmpadMidiNotes
     static void _set_MaxEmpadMidiNotes(int value);
     // Get instance field reference: private System.Boolean _printToLog
-    bool& dyn__printToLog();
+    [[deprecated]] bool& dyn__printToLog();
     // Get instance field reference: private System.String _clientName
-    ::StringW& dyn__clientName();
+    [[deprecated]] ::StringW& dyn__clientName();
     // Get instance field reference: private System.Int32 _oscServerPort
-    int& dyn__oscServerPort();
+    [[deprecated]] int& dyn__oscServerPort();
     // Get instance field reference: private System.Threading.CancellationTokenSource _udpThreadCancellationTokenSource
-    ::System::Threading::CancellationTokenSource*& dyn__udpThreadCancellationTokenSource();
+    [[deprecated]] ::System::Threading::CancellationTokenSource*& dyn__udpThreadCancellationTokenSource();
     // Get instance field reference: private System.Boolean _isSetup
-    bool& dyn__isSetup();
+    [[deprecated]] bool& dyn__isSetup();
     // protected System.Void OnDestroy()
-    // Offset: 0x1316968
+    // Offset: 0x8F0A18
     void OnDestroy();
     // private System.Void CreateClient(System.Net.IPAddress ipAddress)
-    // Offset: 0x13169A4
+    // Offset: 0x8F0A54
     void CreateClient(::System::Net::IPAddress* ipAddress);
     // public System.Void AllNotesOff(System.Int32 channel)
-    // Offset: 0x1317058
+    // Offset: 0x8F1108
     void AllNotesOff(int channel);
     // public System.Void Send(VROSC.OscMessage message, T data, params System.Object[] arguments)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -148,7 +140,7 @@ namespace VROSC {
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, message, data, arguments);
     }
     // public System.Void .ctor()
-    // Offset: 0x131719C
+    // Offset: 0x8F124C
     // Implemented from: VROSC.MidiInterface
     // Base method: System.Void MidiInterface::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -162,32 +154,32 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ExternalSynthesizer*, creationType>()));
     }
     // public override System.Void Setup()
-    // Offset: 0x1316700
+    // Offset: 0x8F07B0
     // Implemented from: VROSC.MidiInterface
     // Base method: System.Void MidiInterface::Setup()
     void Setup();
     // public override System.Void PlayNote(System.Int32 note, System.Int32 channel, System.Single velocity)
-    // Offset: 0x1316AB0
+    // Offset: 0x8F0B60
     // Implemented from: VROSC.MidiInterface
     // Base method: System.Void MidiInterface::PlayNote(System.Int32 note, System.Int32 channel, System.Single velocity)
     void PlayNote(int note, int channel, float velocity);
     // public override System.Void StopNote(System.Int32 note, System.Int32 channel)
-    // Offset: 0x1316C2C
+    // Offset: 0x8F0CDC
     // Implemented from: VROSC.MidiInterface
     // Base method: System.Void MidiInterface::StopNote(System.Int32 note, System.Int32 channel)
     void StopNote(int note, int channel);
     // public override System.Void SetMidiCC(System.Single midiCCValue, System.Int32 midiCC, System.Int32 channel)
-    // Offset: 0x1316D70
+    // Offset: 0x8F0E20
     // Implemented from: VROSC.MidiInterface
     // Base method: System.Void MidiInterface::SetMidiCC(System.Single midiCCValue, System.Int32 midiCC, System.Int32 channel)
     void SetMidiCC(float midiCCValue, int midiCC, int channel);
     // public override System.Void SetPitchBend(System.Single pitchBendValue, System.Int32 channel)
-    // Offset: 0x1316EEC
+    // Offset: 0x8F0F9C
     // Implemented from: VROSC.MidiInterface
     // Base method: System.Void MidiInterface::SetPitchBend(System.Single pitchBendValue, System.Int32 channel)
     void SetPitchBend(float pitchBendValue, int channel);
     // public override System.Void AllNotesOff()
-    // Offset: 0x1317020
+    // Offset: 0x8F10D0
     // Implemented from: VROSC.MidiInterface
     // Base method: System.Void MidiInterface::AllNotesOff()
     void AllNotesOff();

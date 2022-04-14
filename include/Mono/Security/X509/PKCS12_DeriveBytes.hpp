@@ -25,15 +25,7 @@ namespace Mono::Security::X509 {
   // [TokenAttribute] Offset: FFFFFFFF
   class PKCS12::DeriveBytes : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _hashName
     // Size: 0x8
     // Offset: 0x10
@@ -74,45 +66,45 @@ namespace Mono::Security::X509 {
     // Set static field: static private System.Byte[] macDiversifier
     static void _set_macDiversifier(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.String _hashName
-    ::StringW& dyn__hashName();
+    [[deprecated]] ::StringW& dyn__hashName();
     // Get instance field reference: private System.Int32 _iterations
-    int& dyn__iterations();
+    [[deprecated]] int& dyn__iterations();
     // Get instance field reference: private System.Byte[] _password
-    ::ArrayW<uint8_t>& dyn__password();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__password();
     // Get instance field reference: private System.Byte[] _salt
-    ::ArrayW<uint8_t>& dyn__salt();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__salt();
     // public System.Void set_HashName(System.String value)
-    // Offset: 0x12DD9B8
+    // Offset: 0x18E0C2C
     void set_HashName(::StringW value);
     // public System.Void set_IterationCount(System.Int32 value)
-    // Offset: 0x12DD9C0
+    // Offset: 0x18E0C34
     void set_IterationCount(int value);
     // public System.Void set_Password(System.Byte[] value)
-    // Offset: 0x12DD9C8
+    // Offset: 0x18E0C3C
     void set_Password(::ArrayW<uint8_t> value);
     // public System.Void set_Salt(System.Byte[] value)
-    // Offset: 0x12DDA64
+    // Offset: 0x18E0CD8
     void set_Salt(::ArrayW<uint8_t> value);
     // static private System.Void .cctor()
-    // Offset: 0x12DE1A4
+    // Offset: 0x18E1418
     static void _cctor();
     // private System.Void Adjust(System.Byte[] a, System.Int32 aOff, System.Byte[] b)
-    // Offset: 0x12DDAF4
+    // Offset: 0x18E0D68
     void Adjust(::ArrayW<uint8_t> a, int aOff, ::ArrayW<uint8_t> b);
     // private System.Byte[] Derive(System.Byte[] diversifier, System.Int32 n)
-    // Offset: 0x12DDBDC
+    // Offset: 0x18E0E50
     ::ArrayW<uint8_t> Derive(::ArrayW<uint8_t> diversifier, int n);
     // public System.Byte[] DeriveKey(System.Int32 size)
-    // Offset: 0x12DE030
+    // Offset: 0x18E12A4
     ::ArrayW<uint8_t> DeriveKey(int size);
     // public System.Byte[] DeriveIV(System.Int32 size)
-    // Offset: 0x12DE0AC
+    // Offset: 0x18E1320
     ::ArrayW<uint8_t> DeriveIV(int size);
     // public System.Byte[] DeriveMAC(System.Int32 size)
-    // Offset: 0x12DE128
+    // Offset: 0x18E139C
     ::ArrayW<uint8_t> DeriveMAC(int size);
     // public System.Void .ctor()
-    // Offset: 0x12DD9B0
+    // Offset: 0x18E0C24
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

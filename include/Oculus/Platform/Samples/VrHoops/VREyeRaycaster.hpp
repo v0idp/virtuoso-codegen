@@ -40,15 +40,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class VREyeRaycaster : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.EventSystems.EventSystem m_eventSystem
     // Size: 0x8
     // Offset: 0x18
@@ -65,14 +57,14 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.EventSystems.EventSystem m_eventSystem
-    ::UnityEngine::EventSystems::EventSystem*& dyn_m_eventSystem();
+    [[deprecated]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_eventSystem();
     // Get instance field reference: private UnityEngine.UI.Button m_currentButton
-    ::UnityEngine::UI::Button*& dyn_m_currentButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn_m_currentButton();
     // private System.Void Update()
-    // Offset: 0x1151778
+    // Offset: 0x171E674
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x1151980
+    // Offset: 0x171E87C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

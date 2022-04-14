@@ -45,9 +45,15 @@ namespace VROSC {
     ::VROSC::NoteBoardPlayer* $$4__this;
     // Field size check
     static_assert(sizeof(::VROSC::NoteBoardPlayer*) == 0x8);
-    // public System.Boolean immediate
+    // public System.Boolean linkHands
     // Size: 0x1
     // Offset: 0x28
+    bool linkHands;
+    // Field size check
+    static_assert(sizeof(bool) == 0x1);
+    // public System.Boolean immediate
+    // Size: 0x1
+    // Offset: 0x29
     bool immediate;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
@@ -65,7 +71,7 @@ namespace VROSC {
     static_assert(sizeof(::System::Runtime::CompilerServices::TaskAwaiter) == 0x8);
     public:
     // Creating value type constructor for type: $Stop$d__20
-    constexpr $Stop$d__20(int $$1__state_ = {}, ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder $$t__builder_ = {}, ::VROSC::NoteBoardPlayer* $$4__this_ = {}, bool immediate_ = {}, ::VROSC::HandType handType_ = {}, ::System::Runtime::CompilerServices::TaskAwaiter $$u__1_ = {}) noexcept : $$1__state{$$1__state_}, $$t__builder{$$t__builder_}, $$4__this{$$4__this_}, immediate{immediate_}, handType{handType_}, $$u__1{$$u__1_} {}
+    constexpr $Stop$d__20(int $$1__state_ = {}, ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder $$t__builder_ = {}, ::VROSC::NoteBoardPlayer* $$4__this_ = {}, bool linkHands_ = {}, bool immediate_ = {}, ::VROSC::HandType handType_ = {}, ::System::Runtime::CompilerServices::TaskAwaiter $$u__1_ = {}) noexcept : $$1__state{$$1__state_}, $$t__builder{$$t__builder_}, $$4__this{$$4__this_}, linkHands{linkHands_}, immediate{immediate_}, handType{handType_}, $$u__1{$$u__1_} {}
     // Creating interface conversion operator: operator ::System::ValueType
     operator ::System::ValueType() noexcept {
       return *reinterpret_cast<::System::ValueType*>(this);
@@ -75,22 +81,24 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public VROSC.NoteBoardPlayer <>4__this
-    ::VROSC::NoteBoardPlayer*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::NoteBoardPlayer*& dyn_$$4__this();
+    // Get instance field reference: public System.Boolean linkHands
+    [[deprecated]] bool& dyn_linkHands();
     // Get instance field reference: public System.Boolean immediate
-    bool& dyn_immediate();
+    [[deprecated]] bool& dyn_immediate();
     // Get instance field reference: public VROSC.HandType handType
-    ::VROSC::HandType& dyn_handType();
+    [[deprecated]] ::VROSC::HandType& dyn_handType();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x133E5B0
+    // Offset: 0x19664A0
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x133E770
+    // Offset: 0x19666D4
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.NoteBoardPlayer/VROSC.<Stop>d__20
   // WARNING Not writing size check since size may be invalid!

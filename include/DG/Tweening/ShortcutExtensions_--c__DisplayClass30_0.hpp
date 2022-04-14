@@ -33,15 +33,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ShortcutExtensions::$$c__DisplayClass30_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.TrailRenderer target
     // Size: 0x8
     // Offset: 0x10
@@ -54,15 +46,15 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.TrailRenderer target
-    ::UnityEngine::TrailRenderer*& dyn_target();
+    [[deprecated]] ::UnityEngine::TrailRenderer*& dyn_target();
     // UnityEngine.Vector2 <DOResize>b__0()
-    // Offset: 0x126C6EC
+    // Offset: 0x1864A90
     ::UnityEngine::Vector2 $DOResize$b__0();
     // System.Void <DOResize>b__1(UnityEngine.Vector2 x)
-    // Offset: 0x126C740
+    // Offset: 0x1864AE4
     void $DOResize$b__1(::UnityEngine::Vector2 x);
     // public System.Void .ctor()
-    // Offset: 0x126C6E4
+    // Offset: 0x1864A88
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -38,15 +38,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class RegexMatchTimeoutException : public ::System::TimeoutException {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String regexInput
     // Size: 0x8
     // Offset: 0x88
@@ -67,26 +59,26 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(::System::TimeSpan) == 0x8);
     public:
     // Get instance field reference: private System.String regexInput
-    ::StringW& dyn_regexInput();
+    [[deprecated]] ::StringW& dyn_regexInput();
     // Get instance field reference: private System.String regexPattern
-    ::StringW& dyn_regexPattern();
+    [[deprecated]] ::StringW& dyn_regexPattern();
     // Get instance field reference: private System.TimeSpan matchTimeout
-    ::System::TimeSpan& dyn_matchTimeout();
+    [[deprecated]] ::System::TimeSpan& dyn_matchTimeout();
     // public System.Void .ctor(System.String regexInput, System.String regexPattern, System.TimeSpan matchTimeout)
-    // Offset: 0x12547A4
+    // Offset: 0x1849978
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RegexMatchTimeoutException* New_ctor(::StringW regexInput, ::StringW regexPattern, ::System::TimeSpan matchTimeout) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexMatchTimeoutException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RegexMatchTimeoutException*, creationType>(regexInput, regexPattern, matchTimeout)));
     }
     // private System.Void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0x1254AA0
+    // Offset: 0x1849C74
     void System_Runtime_Serialization_ISerializable_GetObjectData(::System::Runtime::Serialization::SerializationInfo* si, ::System::Runtime::Serialization::StreamingContext context);
     // private System.Void Init(System.String input, System.String pattern, System.TimeSpan timeout)
-    // Offset: 0x1254864
+    // Offset: 0x1849A38
     void Init(::StringW input, ::StringW pattern, ::System::TimeSpan timeout);
     // public System.Void .ctor()
-    // Offset: 0x1254870
+    // Offset: 0x1849A44
     // Implemented from: System.TimeoutException
     // Base method: System.Void TimeoutException::.ctor()
     // Base method: System.Void SystemException::.ctor()
@@ -98,7 +90,7 @@ namespace System::Text::RegularExpressions {
       return THROW_UNLESS((::il2cpp_utils::New<RegexMatchTimeoutException*, creationType>()));
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0x1254974
+    // Offset: 0x1849B48
     // Implemented from: System.TimeoutException
     // Base method: System.Void TimeoutException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
@@ -109,7 +101,7 @@ namespace System::Text::RegularExpressions {
       return THROW_UNLESS((::il2cpp_utils::New<RegexMatchTimeoutException*, creationType>(info, context)));
     }
     // private System.Void Init()
-    // Offset: 0x12548EC
+    // Offset: 0x1849AC0
     // Implemented from: System.Exception
     // Base method: System.Void Exception::Init()
     void Init();

@@ -47,15 +47,7 @@ namespace Firebase::Firestore::Converters {
   // [TokenAttribute] Offset: FFFFFFFF
   class AttributedTypeConverter::AttributedProperty : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Reflection.PropertyInfo _propertyInfo
     // Size: 0x8
     // Offset: 0x10
@@ -82,34 +74,34 @@ namespace Firebase::Firestore::Converters {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private readonly System.Reflection.PropertyInfo _propertyInfo
-    ::System::Reflection::PropertyInfo*& dyn__propertyInfo();
+    [[deprecated]] ::System::Reflection::PropertyInfo*& dyn__propertyInfo();
     // Get instance field reference: private Firebase.Firestore.FieldValueProxy _sentinelValue
-    ::Firebase::Firestore::FieldValueProxy*& dyn__sentinelValue();
+    [[deprecated]] ::Firebase::Firestore::FieldValueProxy*& dyn__sentinelValue();
     // Get instance field reference: private readonly Firebase.Firestore.Converters.IFirestoreInternalConverter _converter
-    ::Firebase::Firestore::Converters::IFirestoreInternalConverter*& dyn__converter();
+    [[deprecated]] ::Firebase::Firestore::Converters::IFirestoreInternalConverter*& dyn__converter();
     // Get instance field reference: readonly System.String FirestoreName
-    ::StringW& dyn_FirestoreName();
+    [[deprecated]] ::StringW& dyn_FirestoreName();
     // System.Boolean get_CanRead()
-    // Offset: 0xC27884
+    // Offset: 0xD495E4
     bool get_CanRead();
     // System.Boolean get_CanWrite()
-    // Offset: 0xC278A8
+    // Offset: 0xD49608
     bool get_CanWrite();
     // System.Boolean get_IsNullableValue()
-    // Offset: 0xC2778C
+    // Offset: 0xD494EC
     bool get_IsNullableValue();
     // System.Void .ctor(System.Reflection.PropertyInfo property, Firebase.Firestore.FirestorePropertyAttribute attribute)
-    // Offset: 0xC274A0
+    // Offset: 0xD491FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AttributedTypeConverter::AttributedProperty* New_ctor(::System::Reflection::PropertyInfo* property, ::Firebase::Firestore::FirestorePropertyAttribute* attribute) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AttributedTypeConverter::AttributedProperty*, creationType>(property, attribute)));
     }
     // Firebase.Firestore.FieldValueProxy GetSerializedValue(Firebase.Firestore.SerializationContext context, System.Object obj)
-    // Offset: 0xC28940
+    // Offset: 0xD4A670
     ::Firebase::Firestore::FieldValueProxy* GetSerializedValue(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* obj);
     // System.Void SetValue(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy value, System.Object target)
-    // Offset: 0xC28560
+    // Offset: 0xD4A298
     void SetValue(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::FieldValueProxy* value, ::Il2CppObject* target);
   }; // Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.AttributedProperty
   #pragma pack(pop)

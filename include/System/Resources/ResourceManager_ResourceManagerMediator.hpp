@@ -23,15 +23,7 @@ namespace System::Resources {
   // [TokenAttribute] Offset: FFFFFFFF
   class ResourceManager::ResourceManagerMediator : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Resources.ResourceManager _rm
     // Size: 0x8
     // Offset: 0x10
@@ -44,9 +36,9 @@ namespace System::Resources {
       return rm;
     }
     // Get instance field reference: private System.Resources.ResourceManager _rm
-    ::System::Resources::ResourceManager*& dyn__rm();
+    [[deprecated]] ::System::Resources::ResourceManager*& dyn__rm();
     // System.Void .ctor(System.Resources.ResourceManager rm)
-    // Offset: 0x1081398
+    // Offset: 0xE580FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ResourceManager::ResourceManagerMediator* New_ctor(::System::Resources::ResourceManager* rm) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Resources::ResourceManager::ResourceManagerMediator::.ctor");

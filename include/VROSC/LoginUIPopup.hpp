@@ -54,15 +54,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::LoginUIPopup::Panel
     struct Panel;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoginUIPopupLoginPanel _loginPanel
     // Size: 0x8
     // Offset: 0x18
@@ -129,51 +121,51 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoginUIPopupLoginPanel _loginPanel
-    ::VROSC::LoginUIPopupLoginPanel*& dyn__loginPanel();
+    [[deprecated]] ::VROSC::LoginUIPopupLoginPanel*& dyn__loginPanel();
     // Get instance field reference: private VROSC.LoginUIPopupEmailVerificationPanel _waitingForVerificationPanel
-    ::VROSC::LoginUIPopupEmailVerificationPanel*& dyn__waitingForVerificationPanel();
+    [[deprecated]] ::VROSC::LoginUIPopupEmailVerificationPanel*& dyn__waitingForVerificationPanel();
     // Get instance field reference: private VROSC.LoginUIPopupChangeEmailPanel _changeEmailPanel
-    ::VROSC::LoginUIPopupChangeEmailPanel*& dyn__changeEmailPanel();
+    [[deprecated]] ::VROSC::LoginUIPopupChangeEmailPanel*& dyn__changeEmailPanel();
     // Get instance field reference: private VROSC.LoginUIPopupChangePasswordPanel _changePasswordPanel
-    ::VROSC::LoginUIPopupChangePasswordPanel*& dyn__changePasswordPanel();
+    [[deprecated]] ::VROSC::LoginUIPopupChangePasswordPanel*& dyn__changePasswordPanel();
     // Get instance field reference: private VROSC.LoginUIPopupAcceptTermsPanel _acceptTermsPanel
-    ::VROSC::LoginUIPopupAcceptTermsPanel*& dyn__acceptTermsPanel();
+    [[deprecated]] ::VROSC::LoginUIPopupAcceptTermsPanel*& dyn__acceptTermsPanel();
     // Get instance field reference: private VROSC.UIButton _privacyPolicyButton
-    ::VROSC::UIButton*& dyn__privacyPolicyButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__privacyPolicyButton();
     // Get instance field reference: private VROSC.LoginUIPopupPanelBase _previousPanel
-    ::VROSC::LoginUIPopupPanelBase*& dyn__previousPanel();
+    [[deprecated]] ::VROSC::LoginUIPopupPanelBase*& dyn__previousPanel();
     // Get instance field reference: private VROSC.LoginUIPopupPanelBase _currentPanel
-    ::VROSC::LoginUIPopupPanelBase*& dyn__currentPanel();
+    [[deprecated]] ::VROSC::LoginUIPopupPanelBase*& dyn__currentPanel();
     // Get instance field reference: private System.Boolean <IsOpen>k__BackingField
-    bool& dyn_$IsOpen$k__BackingField();
+    [[deprecated]] bool& dyn_$IsOpen$k__BackingField();
     // Get instance field reference: public System.Action OnLoginPopupClosed
-    ::System::Action*& dyn_OnLoginPopupClosed();
+    [[deprecated]] ::System::Action*& dyn_OnLoginPopupClosed();
     // public System.Boolean get_IsOpen()
-    // Offset: 0x138F460
+    // Offset: 0x19AF8B4
     bool get_IsOpen();
     // private System.Void set_IsOpen(System.Boolean value)
-    // Offset: 0x138F468
+    // Offset: 0x19AF8BC
     void set_IsOpen(bool value);
     // private System.Void Awake()
-    // Offset: 0x138F474
+    // Offset: 0x19AF8C8
     void Awake();
     // public System.Void Setup()
-    // Offset: 0x138F5D4
+    // Offset: 0x19AFA28
     void Setup();
     // public System.Void OpenPanel(VROSC.LoginUIPopup/VROSC.Panel panel)
-    // Offset: 0x138F668
+    // Offset: 0x19AFABC
     void OpenPanel(::VROSC::LoginUIPopup::Panel panel);
     // public System.Void ClosePanel()
-    // Offset: 0x138F928
+    // Offset: 0x19AFD7C
     void ClosePanel();
     // public System.Void ClosePopup()
-    // Offset: 0x138F8B8
+    // Offset: 0x19AFD0C
     void ClosePopup();
     // private System.Void PrivacyPolicyPressed()
-    // Offset: 0x138F9C4
+    // Offset: 0x19AFE18
     void PrivacyPolicyPressed();
     // public System.Void .ctor()
-    // Offset: 0x138FA0C
+    // Offset: 0x19AFE60
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

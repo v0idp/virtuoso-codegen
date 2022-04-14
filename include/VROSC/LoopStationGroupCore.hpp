@@ -60,15 +60,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationGroupCore : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopStationBaseGroupHandler _baseGroups
     // Size: 0x8
     // Offset: 0x18
@@ -103,62 +95,62 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoopStationBaseGroupHandler _baseGroups
-    ::VROSC::LoopStationBaseGroupHandler*& dyn__baseGroups();
+    [[deprecated]] ::VROSC::LoopStationBaseGroupHandler*& dyn__baseGroups();
     // Get instance field reference: private VROSC.LoopStationUserGroupHandler _userGroups
-    ::VROSC::LoopStationUserGroupHandler*& dyn__userGroups();
+    [[deprecated]] ::VROSC::LoopStationUserGroupHandler*& dyn__userGroups();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopStationGroup> <Groups>k__BackingField
-    ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn_$Groups$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn_$Groups$k__BackingField();
     // Get instance field reference: public System.Action`1<VROSC.LoopStationGroup> OnGroupCreated
-    ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupCreated();
+    [[deprecated]] ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupCreated();
     // Get instance field reference: public System.Action`1<VROSC.LoopStationGroup> OnGroupRemoved
-    ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupRemoved();
+    [[deprecated]] ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupRemoved();
     // public VROSC.LoopStationBaseGroupHandler get_BaseGroups()
-    // Offset: 0x913A0C
+    // Offset: 0x196F3BC
     ::VROSC::LoopStationBaseGroupHandler* get_BaseGroups();
     // public VROSC.LoopStationUserGroupHandler get_UserGroups()
-    // Offset: 0x913A14
+    // Offset: 0x196F3C4
     ::VROSC::LoopStationUserGroupHandler* get_UserGroups();
     // public System.Collections.Generic.List`1<VROSC.LoopStationGroup> get_Groups()
-    // Offset: 0x913A1C
+    // Offset: 0x196F3CC
     ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>* get_Groups();
     // protected System.Void set_Groups(System.Collections.Generic.List`1<VROSC.LoopStationGroup> value)
-    // Offset: 0x913A24
+    // Offset: 0x196F3D4
     void set_Groups(::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>* value);
     // public VROSC.LoopStationGroup get_BaseGroup()
-    // Offset: 0x913A2C
+    // Offset: 0x196F3DC
     ::VROSC::LoopStationGroup* get_BaseGroup();
     // private System.Void Awake()
-    // Offset: 0x913A48
+    // Offset: 0x196F3F8
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x913C28
+    // Offset: 0x196F5D8
     void OnDestroy();
     // public System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationLoopHandler loopHandler)
-    // Offset: 0x90A7A8
+    // Offset: 0x196F7B8
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationLoopHandler* loopHandler);
     // public System.Void AddToBaseGroup(VROSC.LoopPlayer newPlayer)
-    // Offset: 0x9055CC
+    // Offset: 0x196F814
     void AddToBaseGroup(::VROSC::LoopPlayer* newPlayer);
     // public System.Void CreateGroups(VROSC.LoopStationDataController data)
-    // Offset: 0x90C9E4
+    // Offset: 0x196F82C
     void CreateGroups(::VROSC::LoopStationDataController* data);
     // public VROSC.LoopStationGroup GetGroupByID(System.String groupID, System.Boolean defaultToBaseGroup)
-    // Offset: 0x90D8F0
+    // Offset: 0x196FC1C
     ::VROSC::LoopStationGroup* GetGroupByID(::StringW groupID, bool defaultToBaseGroup);
     // public System.Void RemoveAllGroups()
-    // Offset: 0x90B57C
+    // Offset: 0x196FE80
     void RemoveAllGroups();
     // private System.Void GroupRemoved(VROSC.LoopStationGroup group)
-    // Offset: 0x913F68
+    // Offset: 0x196FEC4
     void GroupRemoved(::VROSC::LoopStationGroup* group);
     // private System.Void GroupCreated(VROSC.LoopStationGroup group)
-    // Offset: 0x914030
+    // Offset: 0x196FF8C
     void GroupCreated(::VROSC::LoopStationGroup* group);
     // public System.Void AllLoopsLoaded()
-    // Offset: 0x90D090
+    // Offset: 0x1970054
     void AllLoopsLoaded();
     // public System.Void .ctor()
-    // Offset: 0x9140F8
+    // Offset: 0x197018C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

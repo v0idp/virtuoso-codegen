@@ -45,15 +45,7 @@ namespace System::Net::Sockets {
     public:
     // Writing base type padding for base size: 0x8C to desired offset: 0x90
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.EndPoint m_EndPoint
     // Size: 0x8
     // Offset: 0x90
@@ -64,27 +56,27 @@ namespace System::Net::Sockets {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private System.Net.EndPoint m_EndPoint
-    ::System::Net::EndPoint*& dyn_m_EndPoint();
+    [[deprecated]] ::System::Net::EndPoint*& dyn_m_EndPoint();
     // public System.Net.Sockets.SocketError get_SocketErrorCode()
-    // Offset: 0x950AA0
+    // Offset: 0xDA4EA8
     ::System::Net::Sockets::SocketError get_SocketErrorCode();
     // System.Void .ctor(System.Net.Sockets.SocketError socketError)
-    // Offset: 0x949F10
+    // Offset: 0xD9E318
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SocketException* New_ctor(::System::Net::Sockets::SocketError socketError) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SocketException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SocketException*, creationType>(socketError)));
     }
     // static private System.Int32 WSAGetLastError_internal()
-    // Offset: 0x950D24
+    // Offset: 0xDA512C
     static int WSAGetLastError_internal();
     // public override System.String get_Message()
-    // Offset: 0x950E30
+    // Offset: 0xDA5238
     // Implemented from: System.Exception
     // Base method: System.String Exception::get_Message()
     ::StringW get_Message();
     // public System.Void .ctor()
-    // Offset: 0x948F80
+    // Offset: 0xD9D388
     // Implemented from: System.ComponentModel.Win32Exception
     // Base method: System.Void Win32Exception::.ctor()
     // Base method: System.Void ExternalException::.ctor()
@@ -97,7 +89,7 @@ namespace System::Net::Sockets {
       return THROW_UNLESS((::il2cpp_utils::New<SocketException*, creationType>()));
     }
     // System.Void .ctor(System.Int32 error, System.String message)
-    // Offset: 0x950D28
+    // Offset: 0xDA5130
     // Implemented from: System.ComponentModel.Win32Exception
     // Base method: System.Void Win32Exception::.ctor(System.Int32 error, System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -106,7 +98,7 @@ namespace System::Net::Sockets {
       return THROW_UNLESS((::il2cpp_utils::New<SocketException*, creationType>(error, message)));
     }
     // public System.Void .ctor(System.Int32 errorCode)
-    // Offset: 0x945230
+    // Offset: 0xD991E0
     // Implemented from: System.ComponentModel.Win32Exception
     // Base method: System.Void Win32Exception::.ctor(System.Int32 errorCode)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -115,7 +107,7 @@ namespace System::Net::Sockets {
       return THROW_UNLESS((::il2cpp_utils::New<SocketException*, creationType>(errorCode)));
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0x950DA4
+    // Offset: 0xDA51AC
     // Implemented from: System.ComponentModel.Win32Exception
     // Base method: System.Void Win32Exception::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     // Base method: System.Void ExternalException::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)

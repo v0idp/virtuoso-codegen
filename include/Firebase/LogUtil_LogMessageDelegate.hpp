@@ -41,20 +41,20 @@ namespace Firebase {
   class LogUtil::LogMessageDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x129BD24
+    // Offset: 0x1889C0C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LogUtil::LogMessageDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::LogUtil::LogMessageDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LogUtil::LogMessageDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(Firebase.LogLevel log_level, System.String message)
-    // Offset: 0x129E74C
+    // Offset: 0x188C0EC
     void Invoke(::Firebase::LogLevel log_level, ::StringW message);
     // public System.IAsyncResult BeginInvoke(Firebase.LogLevel log_level, System.String message, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x129E9BC
+    // Offset: 0x188C35C
     ::System::IAsyncResult* BeginInvoke(::Firebase::LogLevel log_level, ::StringW message, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x129EA50
+    // Offset: 0x188C3F0
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.LogUtil/Firebase.LogMessageDelegate
   #pragma pack(pop)

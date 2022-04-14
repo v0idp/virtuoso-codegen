@@ -37,15 +37,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class PlayerController : public ::GlobalNamespace::SocialPlatformManager {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Camera spyCamera
     // Size: 0x8
     // Offset: 0xC0
@@ -66,22 +58,22 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public UnityEngine.Camera spyCamera
-    ::UnityEngine::Camera*& dyn_spyCamera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn_spyCamera();
     // Get instance field reference: private UnityEngine.GameObject cameraRig
-    ::UnityEngine::GameObject*& dyn_cameraRig();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_cameraRig();
     // Get instance field reference: private System.Boolean showUI
-    bool& dyn_showUI();
+    [[deprecated]] bool& dyn_showUI();
     // private System.Void checkInput()
-    // Offset: 0x8FD53C
+    // Offset: 0xAE1E2C
     void checkInput();
     // private System.Void ToggleCamera()
-    // Offset: 0x8FD6D8
+    // Offset: 0xAE1FC8
     void ToggleCamera();
     // private System.Void ToggleUI()
-    // Offset: 0x8FD758
+    // Offset: 0xAE2048
     void ToggleUI();
     // public System.Void .ctor()
-    // Offset: 0x8FD7AC
+    // Offset: 0xAE209C
     // Implemented from: SocialPlatformManager
     // Base method: System.Void SocialPlatformManager::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -95,17 +87,17 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<PlayerController*, creationType>()));
     }
     // public override System.Void Awake()
-    // Offset: 0x8FD4A0
+    // Offset: 0xAE1D90
     // Implemented from: SocialPlatformManager
     // Base method: System.Void SocialPlatformManager::Awake()
     void Awake();
     // public override System.Void Start()
-    // Offset: 0x8FD4DC
+    // Offset: 0xAE1DCC
     // Implemented from: SocialPlatformManager
     // Base method: System.Void SocialPlatformManager::Start()
     void Start();
     // public override System.Void Update()
-    // Offset: 0x8FD514
+    // Offset: 0xAE1E04
     // Implemented from: SocialPlatformManager
     // Base method: System.Void SocialPlatformManager::Update()
     void Update();

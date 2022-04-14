@@ -52,16 +52,16 @@ namespace Proyecto26::Common {
     // Nested type: ::Proyecto26::Common::Extensions::$$c
     class $$c;
     // static public Proyecto26.ResponseHelper CreateWebResponse(UnityEngine.Networking.UnityWebRequest request)
-    // Offset: 0x1316310
+    // Offset: 0x8F03C0
     static ::Proyecto26::ResponseHelper* CreateWebResponse(::UnityEngine::Networking::UnityWebRequest* request);
     // static public System.Boolean IsValidRequest(UnityEngine.Networking.UnityWebRequest request, Proyecto26.RequestHelper options)
-    // Offset: 0x1316370
+    // Offset: 0x8F0420
     static bool IsValidRequest(::UnityEngine::Networking::UnityWebRequest* request, ::Proyecto26::RequestHelper* options);
     // static public System.String EscapeURL(System.String queryParam)
-    // Offset: 0x13163E4
+    // Offset: 0x8F0494
     static ::StringW EscapeURL(::StringW queryParam);
     // static public System.String BuildUrl(System.String uri, System.Collections.Generic.Dictionary`2<System.String,System.String> queryParams)
-    // Offset: 0x13163EC
+    // Offset: 0x8F049C
     static ::StringW BuildUrl(::StringW uri, ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* queryParams);
   }; // Proyecto26.Common.Extensions
   #pragma pack(pop)

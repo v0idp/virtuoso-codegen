@@ -68,28 +68,28 @@ namespace UnityEngine::UI {
     // Set static field: static public UnityEngine.Events.UnityAction`1<UnityEngine.Component> <>9__12_3
     static void _set_$$9__12_3(::UnityEngine::Events::UnityAction_1<::UnityEngine::Component*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1142840
+    // Offset: 0x16D8FD8
     static void _cctor();
     // System.Void <.cctor>b__5_0(UnityEngine.UI.LayoutRebuilder x)
-    // Offset: 0x11428A8
+    // Offset: 0x16D9040
     void $_cctor$b__5_0(::UnityEngine::UI::LayoutRebuilder* x);
     // System.Boolean <StripDisabledBehavioursFromList>b__10_0(UnityEngine.Component e)
-    // Offset: 0x11428C4
+    // Offset: 0x16D905C
     bool $StripDisabledBehavioursFromList$b__10_0(::UnityEngine::Component* e);
     // System.Void <Rebuild>b__12_0(UnityEngine.Component e)
-    // Offset: 0x1142954
+    // Offset: 0x16D90EC
     void $Rebuild$b__12_0(::UnityEngine::Component* e);
     // System.Void <Rebuild>b__12_1(UnityEngine.Component e)
-    // Offset: 0x1142A1C
+    // Offset: 0x16D91B4
     void $Rebuild$b__12_1(::UnityEngine::Component* e);
     // System.Void <Rebuild>b__12_2(UnityEngine.Component e)
-    // Offset: 0x1142AE4
+    // Offset: 0x16D927C
     void $Rebuild$b__12_2(::UnityEngine::Component* e);
     // System.Void <Rebuild>b__12_3(UnityEngine.Component e)
-    // Offset: 0x1142BB0
+    // Offset: 0x16D9348
     void $Rebuild$b__12_3(::UnityEngine::Component* e);
     // public System.Void .ctor()
-    // Offset: 0x11428A0
+    // Offset: 0x16D9038
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

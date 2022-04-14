@@ -48,34 +48,34 @@ namespace System {
     // Set static field: static private System.Boolean called_isatty
     static void _set_called_isatty(bool value);
     // static public System.Boolean get_IsConsole()
-    // Offset: 0xBDB8D4
+    // Offset: 0xE40300
     static bool get_IsConsole();
     // static private System.Void .cctor()
-    // Offset: 0xBDC864
+    // Offset: 0xE41290
     static void _cctor();
     // static private System.IConsoleDriver CreateNullConsoleDriver()
-    // Offset: 0xBDC938
+    // Offset: 0xE41364
     static ::System::IConsoleDriver* CreateNullConsoleDriver();
     // static private System.IConsoleDriver CreateWindowsConsoleDriver()
-    // Offset: 0xBDC990
+    // Offset: 0xE413BC
     static ::System::IConsoleDriver* CreateWindowsConsoleDriver();
     // static private System.IConsoleDriver CreateTermInfoDriver(System.String term)
-    // Offset: 0xBDC9E8
+    // Offset: 0xE41414
     static ::System::IConsoleDriver* CreateTermInfoDriver(::StringW term);
     // static public System.ConsoleKeyInfo ReadKey(System.Boolean intercept)
-    // Offset: 0xBDC0B4
+    // Offset: 0xE40AE0
     static ::System::ConsoleKeyInfo ReadKey(bool intercept);
     // static private System.Boolean Isatty(System.IntPtr handle)
-    // Offset: 0xBDCA48
+    // Offset: 0xE41474
     static bool Isatty(::System::IntPtr handle);
     // static System.Int32 InternalKeyAvailable(System.Int32 ms_timeout)
-    // Offset: 0xBDCA4C
+    // Offset: 0xE41478
     static int InternalKeyAvailable(int ms_timeout);
     // static System.Boolean TtySetup(System.String keypadXmit, System.String teardown, out System.Byte[] control_characters, out System.Int32* address)
-    // Offset: 0xBDCA50
+    // Offset: 0xE4147C
     static bool TtySetup(::StringW keypadXmit, ::StringW teardown, ByRef<::ArrayW<uint8_t>> control_characters, ByRef<int*> address);
     // static System.Boolean SetEcho(System.Boolean wantEcho)
-    // Offset: 0xBDCA54
+    // Offset: 0xE41480
     static bool SetEcho(bool wantEcho);
   }; // System.ConsoleDriver
   #pragma pack(pop)

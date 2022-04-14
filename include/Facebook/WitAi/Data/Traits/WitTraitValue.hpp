@@ -27,15 +27,7 @@ namespace Facebook::WitAi::Data::Traits {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitTraitValue : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String id
     // Size: 0x8
     // Offset: 0x10
@@ -50,11 +42,11 @@ namespace Facebook::WitAi::Data::Traits {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String id
-    ::StringW& dyn_id();
+    [[deprecated]] ::StringW& dyn_id();
     // Get instance field reference: public System.String value
-    ::StringW& dyn_value();
+    [[deprecated]] ::StringW& dyn_value();
     // public System.Void .ctor()
-    // Offset: 0x1106C04
+    // Offset: 0x167D470
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

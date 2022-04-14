@@ -55,16 +55,16 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 localPosition
-    ::LIV::SDK::Unity::SDKVector3& dyn_localPosition();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_localPosition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion localRotation
-    ::LIV::SDK::Unity::SDKQuaternion& dyn_localRotation();
+    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_localRotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 localScale
-    ::LIV::SDK::Unity::SDKVector3& dyn_localScale();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_localScale();
     // static public LIV.SDK.Unity.SDKTransform get_empty()
-    // Offset: 0xB02ECC
+    // Offset: 0xDD4474
     static ::LIV::SDK::Unity::SDKTransform get_empty();
     // public override System.String ToString()
-    // Offset: 0xB09A30
+    // Offset: 0xDDAFD8
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

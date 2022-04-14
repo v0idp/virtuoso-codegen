@@ -47,15 +47,7 @@ namespace System::Runtime::Remoting::Messaging {
   // [TokenAttribute] Offset: FFFFFFFF
   class ErrorMessage : public ::Il2CppObject/*, public ::System::Runtime::Remoting::Messaging::IMethodCallMessage*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _uri
     // Size: 0x8
     // Offset: 0x10
@@ -72,39 +64,39 @@ namespace System::Runtime::Remoting::Messaging {
       return uri;
     }
     // Get instance field reference: private System.String _uri
-    ::StringW& dyn__uri();
+    [[deprecated]] ::StringW& dyn__uri();
     // public System.Int32 get_ArgCount()
-    // Offset: 0xC0F200
+    // Offset: 0x14F7D48
     int get_ArgCount();
     // public System.Object[] get_Args()
-    // Offset: 0xC0F208
+    // Offset: 0x14F7D50
     ::ArrayW<::Il2CppObject*> get_Args();
     // public System.Reflection.MethodBase get_MethodBase()
-    // Offset: 0xC0F210
+    // Offset: 0x14F7D58
     ::System::Reflection::MethodBase* get_MethodBase();
     // public System.String get_MethodName()
-    // Offset: 0xC0F218
+    // Offset: 0x14F7D60
     ::StringW get_MethodName();
     // public System.Object get_MethodSignature()
-    // Offset: 0xC0F25C
+    // Offset: 0x14F7DA4
     ::Il2CppObject* get_MethodSignature();
     // public System.Collections.IDictionary get_Properties()
-    // Offset: 0xC0F264
+    // Offset: 0x14F7DAC
     ::System::Collections::IDictionary* get_Properties();
     // public System.String get_TypeName()
-    // Offset: 0xC0F26C
+    // Offset: 0x14F7DB4
     ::StringW get_TypeName();
     // public System.String get_Uri()
-    // Offset: 0xC0F2B0
+    // Offset: 0x14F7DF8
     ::StringW get_Uri();
     // public System.Runtime.Remoting.Messaging.LogicalCallContext get_LogicalCallContext()
-    // Offset: 0xC0F2C0
+    // Offset: 0x14F7E08
     ::System::Runtime::Remoting::Messaging::LogicalCallContext* get_LogicalCallContext();
     // public System.Object GetArg(System.Int32 arg_num)
-    // Offset: 0xC0F2B8
+    // Offset: 0x14F7E00
     ::Il2CppObject* GetArg(int arg_num);
     // public System.Void .ctor()
-    // Offset: 0xC0F1AC
+    // Offset: 0x14F7CF4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

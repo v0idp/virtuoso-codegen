@@ -46,16 +46,16 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 BUFFER_SIZE
     static void _set_BUFFER_SIZE(int value);
     // static public System.Void Save(System.String filename, System.Single[] samples, System.Int32 sampleRate, System.Int32 channels, System.Single normalizeMultiplier, System.Int32 startIndex, System.Int32 endIndex)
-    // Offset: 0xB0C958
+    // Offset: 0xDDDF00
     static void Save(::StringW filename, ::ArrayW<float> samples, int sampleRate, int channels, float normalizeMultiplier, int startIndex, int endIndex);
     // static private System.IO.FileStream CreateEmpty(System.String filepath)
-    // Offset: 0xB0CB80
+    // Offset: 0xDDE128
     static ::System::IO::FileStream* CreateEmpty(::StringW filepath);
     // static private System.Void ConvertAndWrite(System.IO.FileStream fileStream, System.Single[] samples, System.Single normalizeMultiplier, System.Int32 startIndex, System.Int32 length)
-    // Offset: 0xB0CC20
+    // Offset: 0xDDE1C8
     static void ConvertAndWrite(::System::IO::FileStream* fileStream, ::ArrayW<float> samples, float normalizeMultiplier, int startIndex, int length);
     // static private System.Void WriteHeader(System.IO.FileStream fileStream, System.Int32 length, System.Int32 hz, System.Int32 channels)
-    // Offset: 0xB0CD84
+    // Offset: 0xDDE32C
     static void WriteHeader(::System::IO::FileStream* fileStream, int length, int hz, int channels);
   }; // SavWav
   #pragma pack(pop)

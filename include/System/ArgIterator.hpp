@@ -60,20 +60,20 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.IntPtr sig
-    ::System::IntPtr& dyn_sig();
+    [[deprecated]] ::System::IntPtr& dyn_sig();
     // Get instance field reference: private System.IntPtr args
-    ::System::IntPtr& dyn_args();
+    [[deprecated]] ::System::IntPtr& dyn_args();
     // Get instance field reference: private System.Int32 next_arg
-    int& dyn_next_arg();
+    [[deprecated]] int& dyn_next_arg();
     // Get instance field reference: private System.Int32 num_args
-    int& dyn_num_args();
+    [[deprecated]] int& dyn_num_args();
     // public override System.Boolean Equals(System.Object o)
-    // Offset: 0xDE5360
+    // Offset: 0x113DAB8
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object o)
     bool Equals(::Il2CppObject* o);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xDE53BC
+    // Offset: 0x113DB14
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

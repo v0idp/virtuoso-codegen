@@ -84,36 +84,36 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Guid parsedGuid
-    ::System::Guid& dyn_parsedGuid();
+    [[deprecated]] ::System::Guid& dyn_parsedGuid();
     // Get instance field reference: System.Guid/System.GuidParseThrowStyle throwStyle
-    ::System::Guid::GuidParseThrowStyle& dyn_throwStyle();
+    [[deprecated]] ::System::Guid::GuidParseThrowStyle& dyn_throwStyle();
     // Get instance field reference: System.Guid/System.ParseFailureKind m_failure
-    ::System::Guid::ParseFailureKind& dyn_m_failure();
+    [[deprecated]] ::System::Guid::ParseFailureKind& dyn_m_failure();
     // Get instance field reference: System.String m_failureMessageID
-    ::StringW& dyn_m_failureMessageID();
+    [[deprecated]] ::StringW& dyn_m_failureMessageID();
     // Get instance field reference: System.Object m_failureMessageFormatArgument
-    ::Il2CppObject*& dyn_m_failureMessageFormatArgument();
+    [[deprecated]] ::Il2CppObject*& dyn_m_failureMessageFormatArgument();
     // Get instance field reference: System.String m_failureArgumentName
-    ::StringW& dyn_m_failureArgumentName();
+    [[deprecated]] ::StringW& dyn_m_failureArgumentName();
     // Get instance field reference: System.Exception m_innerException
-    ::System::Exception*& dyn_m_innerException();
+    [[deprecated]] ::System::Exception*& dyn_m_innerException();
     // System.Void Init(System.Guid/System.GuidParseThrowStyle canThrow)
-    // Offset: 0xDD5070
+    // Offset: 0xE5171C
     void Init(::System::Guid::GuidParseThrowStyle canThrow);
     // System.Void SetFailure(System.Exception nativeException)
-    // Offset: 0xDD50EC
+    // Offset: 0xE51798
     void SetFailure(::System::Exception* nativeException);
     // System.Void SetFailure(System.Guid/System.ParseFailureKind failure, System.String failureMessageID)
-    // Offset: 0xDD50FC
+    // Offset: 0xE517A8
     void SetFailure(::System::Guid::ParseFailureKind failure, ::StringW failureMessageID);
     // System.Void SetFailure(System.Guid/System.ParseFailureKind failure, System.String failureMessageID, System.Object failureMessageFormatArgument)
-    // Offset: 0xDD5150
+    // Offset: 0xE517FC
     void SetFailure(::System::Guid::ParseFailureKind failure, ::StringW failureMessageID, ::Il2CppObject* failureMessageFormatArgument);
     // System.Void SetFailure(System.Guid/System.ParseFailureKind failure, System.String failureMessageID, System.Object failureMessageFormatArgument, System.String failureArgumentName, System.Exception innerException)
-    // Offset: 0xDD510C
+    // Offset: 0xE517B8
     void SetFailure(::System::Guid::ParseFailureKind failure, ::StringW failureMessageID, ::Il2CppObject* failureMessageFormatArgument, ::StringW failureArgumentName, ::System::Exception* innerException);
     // System.Exception GetGuidParseException()
-    // Offset: 0xDD515C
+    // Offset: 0xE51808
     ::System::Exception* GetGuidParseException();
   }; // System.Guid/System.GuidResult
   #pragma pack(pop)

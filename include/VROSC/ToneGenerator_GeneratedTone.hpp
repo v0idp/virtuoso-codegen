@@ -23,15 +23,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ToneGenerator::GeneratedTone : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Double Frequency
     // Size: 0x8
     // Offset: 0x10
@@ -52,13 +44,13 @@ namespace VROSC {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public System.Double Frequency
-    double& dyn_Frequency();
+    [[deprecated]] double& dyn_Frequency();
     // Get instance field reference: public System.Double Increment
-    double& dyn_Increment();
+    [[deprecated]] double& dyn_Increment();
     // Get instance field reference: public System.Double Phase
-    double& dyn_Phase();
+    [[deprecated]] double& dyn_Phase();
     // public System.Void .ctor(System.Int32 midiNumber)
-    // Offset: 0x140C9B8
+    // Offset: 0x8DD1C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ToneGenerator::GeneratedTone* New_ctor(int midiNumber) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ToneGenerator::GeneratedTone::.ctor");

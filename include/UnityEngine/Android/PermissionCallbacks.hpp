@@ -37,30 +37,22 @@ namespace UnityEngine::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class PermissionCallbacks : public ::UnityEngine::AndroidJavaProxy {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x59FDFC
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3FB0
     // private System.Action`1<System.String> PermissionGranted
     // Size: 0x8
     // Offset: 0x20
     ::System::Action_1<::StringW>* PermissionGranted;
     // Field size check
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
-    // [DebuggerBrowsableAttribute] Offset: 0x59FE38
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3FEC
     // private System.Action`1<System.String> PermissionDenied
     // Size: 0x8
     // Offset: 0x28
     ::System::Action_1<::StringW>* PermissionDenied;
     // Field size check
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
-    // [DebuggerBrowsableAttribute] Offset: 0x59FE74
+    // [DebuggerBrowsableAttribute] Offset: 0x6B4028
     // private System.Action`1<System.String> PermissionDeniedAndDontAskAgain
     // Size: 0x8
     // Offset: 0x30
@@ -69,40 +61,40 @@ namespace UnityEngine::Android {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: private System.Action`1<System.String> PermissionGranted
-    ::System::Action_1<::StringW>*& dyn_PermissionGranted();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_PermissionGranted();
     // Get instance field reference: private System.Action`1<System.String> PermissionDenied
-    ::System::Action_1<::StringW>*& dyn_PermissionDenied();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_PermissionDenied();
     // Get instance field reference: private System.Action`1<System.String> PermissionDeniedAndDontAskAgain
-    ::System::Action_1<::StringW>*& dyn_PermissionDeniedAndDontAskAgain();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_PermissionDeniedAndDontAskAgain();
     // public System.Void add_PermissionGranted(System.Action`1<System.String> value)
-    // Offset: 0x127C13C
+    // Offset: 0x18744E0
     void add_PermissionGranted(::System::Action_1<::StringW>* value);
     // public System.Void remove_PermissionGranted(System.Action`1<System.String> value)
-    // Offset: 0x127C1DC
+    // Offset: 0x1874580
     void remove_PermissionGranted(::System::Action_1<::StringW>* value);
     // public System.Void add_PermissionDenied(System.Action`1<System.String> value)
-    // Offset: 0x127C27C
+    // Offset: 0x1874620
     void add_PermissionDenied(::System::Action_1<::StringW>* value);
     // public System.Void remove_PermissionDenied(System.Action`1<System.String> value)
-    // Offset: 0x127C31C
+    // Offset: 0x18746C0
     void remove_PermissionDenied(::System::Action_1<::StringW>* value);
     // public System.Void add_PermissionDeniedAndDontAskAgain(System.Action`1<System.String> value)
-    // Offset: 0x127C3BC
+    // Offset: 0x1874760
     void add_PermissionDeniedAndDontAskAgain(::System::Action_1<::StringW>* value);
     // public System.Void remove_PermissionDeniedAndDontAskAgain(System.Action`1<System.String> value)
-    // Offset: 0x127C45C
+    // Offset: 0x1874800
     void remove_PermissionDeniedAndDontAskAgain(::System::Action_1<::StringW>* value);
     // private System.Void onPermissionGranted(System.String permissionName)
-    // Offset: 0x127C574
+    // Offset: 0x1874918
     void onPermissionGranted(::StringW permissionName);
     // private System.Void onPermissionDenied(System.String permissionName)
-    // Offset: 0x127C5E4
+    // Offset: 0x1874988
     void onPermissionDenied(::StringW permissionName);
     // private System.Void onPermissionDeniedAndDontAskAgain(System.String permissionName)
-    // Offset: 0x127C654
+    // Offset: 0x18749F8
     void onPermissionDeniedAndDontAskAgain(::StringW permissionName);
     // public System.Void .ctor()
-    // Offset: 0x127C4FC
+    // Offset: 0x18748A0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

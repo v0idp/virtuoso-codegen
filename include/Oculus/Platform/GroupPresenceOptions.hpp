@@ -29,15 +29,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class GroupPresenceOptions : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IntPtr Handle
     // Size: 0x8
     // Offset: 0x10
@@ -50,24 +42,24 @@ namespace Oculus::Platform {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr Handle
-    ::System::IntPtr& dyn_Handle();
+    [[deprecated]] ::System::IntPtr& dyn_Handle();
     // public System.Void SetDestinationApiName(System.String value)
-    // Offset: 0x7EC770
+    // Offset: 0x932B50
     void SetDestinationApiName(::StringW value);
     // public System.Void SetIsJoinable(System.Boolean value)
-    // Offset: 0x7EC7E4
+    // Offset: 0x932BC4
     void SetIsJoinable(bool value);
     // public System.Void SetLobbySessionId(System.String value)
-    // Offset: 0x7EC858
+    // Offset: 0x932C38
     void SetLobbySessionId(::StringW value);
     // public System.Void SetMatchSessionId(System.String value)
-    // Offset: 0x7EC8CC
+    // Offset: 0x932CAC
     void SetMatchSessionId(::StringW value);
     // static public System.IntPtr op_Explicit(Oculus.Platform.GroupPresenceOptions options)
-    // Offset: 0x7EBC04
+    // Offset: 0x931FE4
     // ABORTED: conflicts with another method.  explicit operator ::System::IntPtr();
     // public System.Void .ctor()
-    // Offset: 0x7EC700
+    // Offset: 0x932AE0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -76,7 +68,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<GroupPresenceOptions*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x7EC940
+    // Offset: 0x932D20
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

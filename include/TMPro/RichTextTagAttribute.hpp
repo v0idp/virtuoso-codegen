@@ -73,17 +73,17 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 nameHashCode
-    int& dyn_nameHashCode();
+    [[deprecated]] int& dyn_nameHashCode();
     // Get instance field reference: public System.Int32 valueHashCode
-    int& dyn_valueHashCode();
+    [[deprecated]] int& dyn_valueHashCode();
     // Get instance field reference: public TMPro.TagValueType valueType
-    ::TMPro::TagValueType& dyn_valueType();
+    [[deprecated]] ::TMPro::TagValueType& dyn_valueType();
     // Get instance field reference: public System.Int32 valueStartIndex
-    int& dyn_valueStartIndex();
+    [[deprecated]] int& dyn_valueStartIndex();
     // Get instance field reference: public System.Int32 valueLength
-    int& dyn_valueLength();
+    [[deprecated]] int& dyn_valueLength();
     // Get instance field reference: public TMPro.TagUnitType unitType
-    ::TMPro::TagUnitType& dyn_unitType();
+    [[deprecated]] ::TMPro::TagUnitType& dyn_unitType();
   }; // TMPro.RichTextTagAttribute
   #pragma pack(pop)
   static check_size<sizeof(RichTextTagAttribute), 20 + sizeof(::TMPro::TagUnitType)> __TMPro_RichTextTagAttributeSizeCheck;

@@ -44,15 +44,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Promise::$$c__DisplayClass52_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Func`1<RSG.IPromise> onResolved
     // Size: 0x8
     // Offset: 0x10
@@ -91,34 +83,34 @@ namespace RSG {
     static_assert(sizeof(::System::Action_1<::System::Exception*>*) == 0x8);
     public:
     // Get instance field reference: public System.Func`1<RSG.IPromise> onResolved
-    ::System::Func_1<::RSG::IPromise*>*& dyn_onResolved();
+    [[deprecated]] ::System::Func_1<::RSG::IPromise*>*& dyn_onResolved();
     // Get instance field reference: public RSG.Promise resultPromise
-    ::RSG::Promise*& dyn_resultPromise();
+    [[deprecated]] ::RSG::Promise*& dyn_resultPromise();
     // Get instance field reference: public System.Action`1<System.Exception> onRejected
-    ::System::Action_1<::System::Exception*>*& dyn_onRejected();
+    [[deprecated]] ::System::Action_1<::System::Exception*>*& dyn_onRejected();
     // Get instance field reference: public System.Action`1<System.Single> <>9__2
-    ::System::Action_1<float>*& dyn_$$9__2();
+    [[deprecated]] ::System::Action_1<float>*& dyn_$$9__2();
     // Get instance field reference: public System.Action <>9__3
-    ::System::Action*& dyn_$$9__3();
+    [[deprecated]] ::System::Action*& dyn_$$9__3();
     // Get instance field reference: public System.Action`1<System.Exception> <>9__4
-    ::System::Action_1<::System::Exception*>*& dyn_$$9__4();
+    [[deprecated]] ::System::Action_1<::System::Exception*>*& dyn_$$9__4();
     // System.Void <Then>b__0()
-    // Offset: 0x134352C
+    // Offset: 0x8CE484
     void $Then$b__0();
     // System.Void <Then>b__2(System.Single progress)
-    // Offset: 0x13437C0
+    // Offset: 0x8CE718
     void $Then$b__2(float progress);
     // System.Void <Then>b__3()
-    // Offset: 0x13437DC
+    // Offset: 0x8CE734
     void $Then$b__3();
     // System.Void <Then>b__4(System.Exception ex)
-    // Offset: 0x13437F8
+    // Offset: 0x8CE750
     void $Then$b__4(::System::Exception* ex);
     // System.Void <Then>b__1(System.Exception ex)
-    // Offset: 0x1343814
+    // Offset: 0x8CE76C
     void $Then$b__1(::System::Exception* ex);
     // public System.Void .ctor()
-    // Offset: 0x1343524
+    // Offset: 0x8CE47C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -28,15 +28,7 @@ namespace VROSC::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class UITwoToneColor : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected UnityEngine.Color _startColor
     // Size: 0x10
     // Offset: 0x10
@@ -51,30 +43,30 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: protected UnityEngine.Color _startColor
-    ::UnityEngine::Color& dyn__startColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__startColor();
     // Get instance field reference: protected UnityEngine.Color _endColor
-    ::UnityEngine::Color& dyn__endColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__endColor();
     // public UnityEngine.Color get_StartColor()
-    // Offset: 0x13A5B88
+    // Offset: 0x1919AB8
     ::UnityEngine::Color get_StartColor();
     // public UnityEngine.Color get_EndColor()
-    // Offset: 0x13A5B94
+    // Offset: 0x1919AC4
     ::UnityEngine::Color get_EndColor();
     // public System.Void .ctor(UnityEngine.Color startColor, UnityEngine.Color endColor)
-    // Offset: 0x13A5AF0
+    // Offset: 0x1919A20
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UITwoToneColor* New_ctor(::UnityEngine::Color startColor, ::UnityEngine::Color endColor) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UITwoToneColor::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UITwoToneColor*, creationType>(startColor, endColor)));
     }
     // static public VROSC.UI.UITwoToneColor MultiplyColor(VROSC.UI.UITwoToneColor color, System.Single multiplier)
-    // Offset: 0x139B6F4
+    // Offset: 0x190EF60
     static ::VROSC::UI::UITwoToneColor* MultiplyColor(::VROSC::UI::UITwoToneColor* color, float multiplier);
     // static public VROSC.UI.UITwoToneColor DesaturateColor(VROSC.UI.UITwoToneColor color, System.Single desaturation, System.Single darken)
-    // Offset: 0x139B7E4
+    // Offset: 0x190F050
     static ::VROSC::UI::UITwoToneColor* DesaturateColor(::VROSC::UI::UITwoToneColor* color, float desaturation, float darken);
     // static public UnityEngine.Color DesaturateColor(UnityEngine.Color color, System.Single desaturation, System.Single darken)
-    // Offset: 0x13A5BA0
+    // Offset: 0x1919AD0
     static ::UnityEngine::Color DesaturateColor(::UnityEngine::Color color, float desaturation, float darken);
   }; // VROSC.UI.UITwoToneColor
   #pragma pack(pop)

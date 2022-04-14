@@ -59,15 +59,7 @@ namespace VROSC {
     class $$c__DisplayClass32_0;
     // Nested type: ::VROSC::SessionSettingsDataController::$$c__DisplayClass33_0
     class $$c__DisplayClass33_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`1<VROSC.SessionSettingsDataController> OnDataLoaded
     // Size: 0x8
     // Offset: 0x28
@@ -82,80 +74,80 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::SessionSettingsDataController*>*) == 0x8);
     public:
     // Get instance field reference: public System.Action`1<VROSC.SessionSettingsDataController> OnDataLoaded
-    ::System::Action_1<::VROSC::SessionSettingsDataController*>*& dyn_OnDataLoaded();
+    [[deprecated]] ::System::Action_1<::VROSC::SessionSettingsDataController*>*& dyn_OnDataLoaded();
     // Get instance field reference: public System.Action`1<VROSC.SessionSettingsDataController> OnDataSaved
-    ::System::Action_1<::VROSC::SessionSettingsDataController*>*& dyn_OnDataSaved();
+    [[deprecated]] ::System::Action_1<::VROSC::SessionSettingsDataController*>*& dyn_OnDataSaved();
     // protected VROSC.SessionSettingsDataModel get_DataModel()
-    // Offset: 0x13E8018
+    // Offset: 0x198729C
     ::VROSC::SessionSettingsDataModel* get_DataModel();
     // public System.Boolean get_UseExternalSynthesizer()
-    // Offset: 0x13E86BC
+    // Offset: 0x1987944
     bool get_UseExternalSynthesizer();
     // public System.Void set_UseExternalSynthesizer(System.Boolean value)
-    // Offset: 0x13E851C
+    // Offset: 0x19877A4
     void set_UseExternalSynthesizer(bool value);
     // public System.Boolean get_SyncIsInternal()
-    // Offset: 0x13E86DC
+    // Offset: 0x1987964
     bool get_SyncIsInternal();
     // public System.Void set_SyncIsInternal(System.Boolean value)
-    // Offset: 0x13E86FC
+    // Offset: 0x1987984
     void set_SyncIsInternal(bool value);
     // public System.Int32 get_InternalBeatLengthInSamples()
-    // Offset: 0x13E8738
+    // Offset: 0x19879C0
     int get_InternalBeatLengthInSamples();
     // public System.Void set_InternalBeatLengthInSamples(System.Int32 value)
-    // Offset: 0x13E8758
+    // Offset: 0x19879E0
     void set_InternalBeatLengthInSamples(int value);
     // public System.Int32 get_SelectedScalePresetIndex()
-    // Offset: 0x13E114C
+    // Offset: 0x1987A18
     int get_SelectedScalePresetIndex();
     // public System.Void set_SelectedScalePresetIndex(System.Int32 value)
-    // Offset: 0x13E1544
+    // Offset: 0x1987A38
     void set_SelectedScalePresetIndex(int value);
     // public VROSC.Note get_SelectedStartNote()
-    // Offset: 0x13DEF78
+    // Offset: 0x1987A70
     ::VROSC::Note get_SelectedStartNote();
     // public System.Void set_SelectedStartNote(VROSC.Note value)
-    // Offset: 0x13E1410
+    // Offset: 0x1987A90
     void set_SelectedStartNote(::VROSC::Note value);
     // public System.String get_SelectedEnvironment()
-    // Offset: 0x13E8790
+    // Offset: 0x1987AC8
     ::StringW get_SelectedEnvironment();
     // public System.Void set_SelectedEnvironment(System.String value)
-    // Offset: 0x13E87B0
+    // Offset: 0x1987AE8
     void set_SelectedEnvironment(::StringW value);
     // public System.Single get_EnvironmentEffectsAmount()
-    // Offset: 0x13E87E8
+    // Offset: 0x1987B20
     float get_EnvironmentEffectsAmount();
     // public System.Void set_EnvironmentEffectsAmount(System.Single value)
-    // Offset: 0x13E8808
+    // Offset: 0x1987B40
     void set_EnvironmentEffectsAmount(float value);
     // public System.Void ApplyDefaults(VROSC.SettingsDataDefaults settingsDefaults)
-    // Offset: 0x13E818C
+    // Offset: 0x1987410
     void ApplyDefaults(::VROSC::SettingsDataDefaults* settingsDefaults);
     // public VROSC.ScalePreset GetSelectedScalePreset()
-    // Offset: 0x13DEEF4
+    // Offset: 0x1987B80
     ::VROSC::ScalePreset* GetSelectedScalePreset();
     // private System.Void SetScalePresets(VROSC.ScalePresets scalePresets)
-    // Offset: 0x13E81C4
+    // Offset: 0x1987448
     void SetScalePresets(::VROSC::ScalePresets* scalePresets);
     // public VROSC.Scale GetRandomScale()
-    // Offset: 0x13DE390
+    // Offset: 0x1987C04
     ::VROSC::Scale GetRandomScale();
     // public VROSC.Note GetSelectedScaleNoteAt(System.Int32 index)
-    // Offset: 0x13E8848
+    // Offset: 0x1987CB4
     ::VROSC::Note GetSelectedScaleNoteAt(int index);
     // public VROSC.Scale FilterSelectedScale(System.Boolean[] toggledNotes)
-    // Offset: 0x13E8A74
+    // Offset: 0x1987EE0
     ::VROSC::Scale FilterSelectedScale(::ArrayW<bool> toggledNotes);
     // public System.Void RandomizeScale()
-    // Offset: 0x13E1268
+    // Offset: 0x1988154
     void RandomizeScale();
     // private System.Void <LoadData>b__6_0(System.String data)
-    // Offset: 0x13E8CE8
+    // Offset: 0x1988200
     void $LoadData$b__6_0(::StringW data);
     // public System.Void .ctor()
-    // Offset: 0x13E8094
+    // Offset: 0x1987318
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -165,12 +157,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SessionSettingsDataController*, creationType>()));
     }
     // public override System.Void LoadData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13E8558
+    // Offset: 0x19877E0
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::LoadData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void LoadData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Void SaveData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13E8654
+    // Offset: 0x19878DC
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::SaveData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void SaveData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);

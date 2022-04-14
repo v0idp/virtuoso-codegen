@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ChannelControlUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _label
     // Size: 0x8
     // Offset: 0x18
@@ -79,33 +71,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _label
-    ::TMPro::TextMeshPro*& dyn__label();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__label();
     // Get instance field reference: private VROSC.UISpinner _uISpinner
-    ::VROSC::UISpinner*& dyn__uISpinner();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__uISpinner();
     // Get instance field reference: private VROSC.SynthController _instrument
-    ::VROSC::SynthController*& dyn__instrument();
+    [[deprecated]] ::VROSC::SynthController*& dyn__instrument();
     // Get instance field reference: private System.Boolean _usingMidi
-    bool& dyn__usingMidi();
+    [[deprecated]] bool& dyn__usingMidi();
     // private System.Void Start()
-    // Offset: 0x1330518
+    // Offset: 0x9450A0
     void Start();
     // public System.Void Setup(VROSC.SynthController instrument)
-    // Offset: 0x13305EC
+    // Offset: 0x945174
     void Setup(::VROSC::SynthController* instrument);
     // private System.Void UseMidiChanged(System.Boolean usingMidi)
-    // Offset: 0x1330728
+    // Offset: 0x9452B0
     void UseMidiChanged(bool usingMidi);
     // private System.Void Toggled(System.Boolean isActive)
-    // Offset: 0x1330B48
+    // Offset: 0x9456CC
     void Toggled(bool isActive);
     // private System.Void SetData(System.Boolean usingMidi)
-    // Offset: 0x13307C0
+    // Offset: 0x945348
     void SetData(bool usingMidi);
     // private System.Void UpdateSelection(System.Int32 selectedIndex)
-    // Offset: 0x1330BD8
+    // Offset: 0x94575C
     void UpdateSelection(int selectedIndex);
     // public System.Void .ctor()
-    // Offset: 0x1330C34
+    // Offset: 0x9457B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

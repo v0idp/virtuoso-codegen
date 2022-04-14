@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteSwitchMaterialController : public ::VROSC::NoteBoardNoteVisualController {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _renderer
     // Size: 0x8
     // Offset: 0x20
@@ -89,19 +81,19 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.Material _restingOctaveMaterial
-    ::UnityEngine::Material*& dyn__restingOctaveMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__restingOctaveMaterial();
     // Get instance field reference: private UnityEngine.Material _restingOddMaterial
-    ::UnityEngine::Material*& dyn__restingOddMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__restingOddMaterial();
     // Get instance field reference: private UnityEngine.Material _restingEvenMaterial
-    ::UnityEngine::Material*& dyn__restingEvenMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__restingEvenMaterial();
     // Get instance field reference: private UnityEngine.Material _playingMaterial
-    ::UnityEngine::Material*& dyn__playingMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__playingMaterial();
     // Get instance field reference: private UnityEngine.Material _restingMaterial
-    ::UnityEngine::Material*& dyn__restingMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__restingMaterial();
     // public System.Void .ctor()
-    // Offset: 0xA16384
+    // Offset: 0xC5AE9C
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -115,12 +107,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NoteSwitchMaterialController*, creationType>()));
     }
     // public override System.Void Setup(VROSC.NoteBoardNote noteField, System.Boolean octave, System.Boolean isOdd)
-    // Offset: 0xA16318
+    // Offset: 0xC5AE30
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::Setup(VROSC.NoteBoardNote noteField, System.Boolean octave, System.Boolean isOdd)
     void Setup(::VROSC::NoteBoardNote* noteField, bool octave, bool isOdd);
     // public override System.Void SetPlaying(System.Boolean isPlaying)
-    // Offset: 0xA16350
+    // Offset: 0xC5AE68
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::SetPlaying(System.Boolean isPlaying)
     void SetPlaying(bool isPlaying);

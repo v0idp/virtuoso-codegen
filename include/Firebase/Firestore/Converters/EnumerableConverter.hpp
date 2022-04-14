@@ -45,15 +45,7 @@ namespace Firebase::Firestore::Converters {
   // [TokenAttribute] Offset: FFFFFFFF
   class EnumerableConverter : public ::Firebase::Firestore::Converters::EnumerableConverterBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Type _elementType
     // Size: 0x8
     // Offset: 0x18
@@ -68,12 +60,12 @@ namespace Firebase::Firestore::Converters {
     // Set static field: static private System.Func`2<System.Type,System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::System::Type*, bool>* value);
     // Get instance field reference: private readonly System.Type _elementType
-    ::System::Type*& dyn__elementType();
+    [[deprecated]] ::System::Type*& dyn__elementType();
     // static private System.Boolean <EnumerableConverter>m__0(System.Type iface)
-    // Offset: 0xC3330C
+    // Offset: 0xD555A8
     static bool $EnumerableConverter$m__0(::System::Type* iface);
     // System.Void .ctor(System.Type targetType)
-    // Offset: 0xC2CF18
+    // Offset: 0xD4ED28
     // Implemented from: Firebase.Firestore.Converters.EnumerableConverterBase
     // Base method: System.Void EnumerableConverterBase::.ctor(System.Type targetType)
     // Base method: System.Void ConverterBase::.ctor(System.Type targetType)
@@ -83,7 +75,7 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<EnumerableConverter*, creationType>(targetType)));
     }
     // protected override System.Object DeserializeArray(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy arrayValue)
-    // Offset: 0xC32E90
+    // Offset: 0xD5512C
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeArray(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy arrayValue)
     ::Il2CppObject* DeserializeArray(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::FieldValueProxy* arrayValue);

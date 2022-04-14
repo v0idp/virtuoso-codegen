@@ -97,28 +97,20 @@ namespace VROSC {
       // Set static field: static public VROSC.HapticClipPlayer/VROSC.HapticHand Both
       static void _set_Both(::VROSC::HapticClipPlayer::HapticHand value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.HapticClipPlayer/VROSC.HapticHand
     #pragma pack(pop)
     static check_size<sizeof(HapticClipPlayer::HapticHand), 0 + sizeof(int)> __VROSC_HapticClipPlayer_HapticHandSizeCheck;
     static_assert(sizeof(HapticClipPlayer::HapticHand) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [RangeAttribute] Offset: 0x670B40
+    // [RangeAttribute] Offset: 0x786D94
     // private System.Single _amplitude
     // Size: 0x4
     // Offset: 0x40
     float amplitude;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x670B80
+    // [RangeAttribute] Offset: 0x786DD4
     // private System.Single _frequency
     // Size: 0x4
     // Offset: 0x44
@@ -165,32 +157,32 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::HandType) == 0x4);
     public:
     // Get instance field reference: private System.Single _amplitude
-    float& dyn__amplitude();
+    [[deprecated]] float& dyn__amplitude();
     // Get instance field reference: private System.Single _frequency
-    float& dyn__frequency();
+    [[deprecated]] float& dyn__frequency();
     // Get instance field reference: private System.Single _decayTime
-    float& dyn__decayTime();
+    [[deprecated]] float& dyn__decayTime();
     // Get instance field reference: private UnityEngine.AnimationCurve _decayCurve
-    ::UnityEngine::AnimationCurve*& dyn__decayCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__decayCurve();
     // Get instance field reference: private VROSC.HapticClipPlayer/VROSC.HapticHand _playOnHand
-    ::VROSC::HapticClipPlayer::HapticHand& dyn__playOnHand();
+    [[deprecated]] ::VROSC::HapticClipPlayer::HapticHand& dyn__playOnHand();
     // Get instance field reference: private System.Single _decayCounter
-    float& dyn__decayCounter();
+    [[deprecated]] float& dyn__decayCounter();
     // Get instance field reference: private System.Single _lastSignalAmplitude
-    float& dyn__lastSignalAmplitude();
+    [[deprecated]] float& dyn__lastSignalAmplitude();
     // Get instance field reference: private VROSC.HandType _lastHand
-    ::VROSC::HandType& dyn__lastHand();
+    [[deprecated]] ::VROSC::HandType& dyn__lastHand();
     // private System.Void StartHaptics(System.Single signalAmplitude, VROSC.SignalControllerInfo signalControllerInfo, System.Double dspTime)
-    // Offset: 0x898810
+    // Offset: 0x19ABA08
     void StartHaptics(float signalAmplitude, ::VROSC::SignalControllerInfo* signalControllerInfo, double dspTime);
     // private System.Void GenerateHaptics(System.Single amplitude, System.Single frequency, VROSC.HandType hand)
-    // Offset: 0x898918
+    // Offset: 0x19ABB10
     void GenerateHaptics(float amplitude, float frequency, ::VROSC::HandType hand);
     // protected System.Void Update()
-    // Offset: 0x898A08
+    // Offset: 0x19ABC00
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x898A88
+    // Offset: 0x19ABC80
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -205,12 +197,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<HapticClipPlayer*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x8987EC
+    // Offset: 0x19AB9E4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x8988F4
+    // Offset: 0x19ABAEC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);

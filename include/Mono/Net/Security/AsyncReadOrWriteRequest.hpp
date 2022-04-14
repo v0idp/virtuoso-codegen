@@ -39,15 +39,7 @@ namespace Mono::Net::Security {
   // [TokenAttribute] Offset: FFFFFFFF
   class AsyncReadOrWriteRequest : public ::Mono::Net::Security::AsyncProtocolRequest {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly Mono.Net.Security.BufferOffsetSize <UserBuffer>k__BackingField
     // Size: 0x8
     // Offset: 0x38
@@ -62,27 +54,27 @@ namespace Mono::Net::Security {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly Mono.Net.Security.BufferOffsetSize <UserBuffer>k__BackingField
-    ::Mono::Net::Security::BufferOffsetSize*& dyn_$UserBuffer$k__BackingField();
+    [[deprecated]] ::Mono::Net::Security::BufferOffsetSize*& dyn_$UserBuffer$k__BackingField();
     // Get instance field reference: private System.Int32 <CurrentSize>k__BackingField
-    int& dyn_$CurrentSize$k__BackingField();
+    [[deprecated]] int& dyn_$CurrentSize$k__BackingField();
     // protected Mono.Net.Security.BufferOffsetSize get_UserBuffer()
-    // Offset: 0xE67558
+    // Offset: 0x10D722C
     ::Mono::Net::Security::BufferOffsetSize* get_UserBuffer();
     // protected System.Int32 get_CurrentSize()
-    // Offset: 0xE67560
+    // Offset: 0x10D7234
     int get_CurrentSize();
     // protected System.Void set_CurrentSize(System.Int32 value)
-    // Offset: 0xE67568
+    // Offset: 0x10D723C
     void set_CurrentSize(int value);
     // public System.Void .ctor(Mono.Net.Security.MobileAuthenticatedStream parent, System.Boolean sync, System.Byte[] buffer, System.Int32 offset, System.Int32 size)
-    // Offset: 0xE67570
+    // Offset: 0x10D7244
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AsyncReadOrWriteRequest* New_ctor(::Mono::Net::Security::MobileAuthenticatedStream* parent, bool sync, ::ArrayW<uint8_t> buffer, int offset, int size) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::Security::AsyncReadOrWriteRequest::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AsyncReadOrWriteRequest*, creationType>(parent, sync, buffer, offset, size)));
     }
     // public override System.String ToString()
-    // Offset: 0xE6770C
+    // Offset: 0x10D73E0
     // Implemented from: Mono.Net.Security.AsyncProtocolRequest
     // Base method: System.String AsyncProtocolRequest::ToString()
     ::StringW ToString();

@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PreviewOptionsUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UISlideToggle _autoPlayToggle
     // Size: 0x8
     // Offset: 0x18
@@ -107,51 +99,51 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UISlideToggle _autoPlayToggle
-    ::VROSC::UISlideToggle*& dyn__autoPlayToggle();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__autoPlayToggle();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.UIButton _playButton
-    ::VROSC::UIButton*& dyn__playButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__playButton();
     // Get instance field reference: private VROSC.SessionsLibraryPreviewPlayer _previewPlayer
-    ::VROSC::SessionsLibraryPreviewPlayer*& dyn__previewPlayer();
+    [[deprecated]] ::VROSC::SessionsLibraryPreviewPlayer*& dyn__previewPlayer();
     // Get instance field reference: private VROSC.TimeSlider _timeSlider
-    ::VROSC::TimeSlider*& dyn__timeSlider();
+    [[deprecated]] ::VROSC::TimeSlider*& dyn__timeSlider();
     // Get instance field reference: private UnityEngine.GameObject _playIcon
-    ::UnityEngine::GameObject*& dyn__playIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__playIcon();
     // Get instance field reference: private UnityEngine.GameObject _pauseIcon
-    ::UnityEngine::GameObject*& dyn__pauseIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__pauseIcon();
     // private System.Void Awake()
-    // Offset: 0x900AAC
+    // Offset: 0xAE540C
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x900DB8
+    // Offset: 0xAE5718
     void OnDestroy();
     // private System.Void OnEnable()
-    // Offset: 0x9010C4
+    // Offset: 0xAE5A24
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x901190
+    // Offset: 0xAE5AF0
     void OnDisable();
     // public System.Void PreviewChanged(System.Boolean hasPreview)
-    // Offset: 0x9011F8
+    // Offset: 0xAE5B58
     void PreviewChanged(bool hasPreview);
     // private System.Void AutoPlayToggled(VROSC.InputDevice device, System.Boolean isOn)
-    // Offset: 0x901270
+    // Offset: 0xAE5BD0
     void AutoPlayToggled(::VROSC::InputDevice* device, bool isOn);
     // private System.Void VolumeValueChanged(System.Single value)
-    // Offset: 0x9012D8
+    // Offset: 0xAE5C38
     void VolumeValueChanged(float value);
     // private System.Void PlayButtonPressed()
-    // Offset: 0x901360
+    // Offset: 0xAE5CC0
     void PlayButtonPressed();
     // private System.Void PlayingStateChanged(System.Boolean playing)
-    // Offset: 0x90138C
+    // Offset: 0xAE5CEC
     void PlayingStateChanged(bool playing);
     // private System.Void PreferencesDataLoaded(VROSC.UserDataControllers userDataControllers)
-    // Offset: 0x901418
+    // Offset: 0xAE5D78
     void PreferencesDataLoaded(::VROSC::UserDataControllers* userDataControllers);
     // public System.Void .ctor()
-    // Offset: 0x9014A4
+    // Offset: 0xAE5E04
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -36,6 +36,10 @@ namespace VROSC {
     static ::VROSC::AppController::$$c* _get_$$9();
     // Set static field: static public readonly VROSC.AppController/VROSC.<>c <>9
     static void _set_$$9(::VROSC::AppController::$$c* value);
+    // Get static field: static public System.Func`1<System.Boolean> <>9__25_7
+    static ::System::Func_1<bool>* _get_$$9__25_7();
+    // Set static field: static public System.Func`1<System.Boolean> <>9__25_7
+    static void _set_$$9__25_7(::System::Func_1<bool>* value);
     // Get static field: static public System.Func`1<System.Boolean> <>9__25_8
     static ::System::Func_1<bool>* _get_$$9__25_8();
     // Set static field: static public System.Func`1<System.Boolean> <>9__25_8
@@ -44,38 +48,34 @@ namespace VROSC {
     static ::System::Func_1<bool>* _get_$$9__25_9();
     // Set static field: static public System.Func`1<System.Boolean> <>9__25_9
     static void _set_$$9__25_9(::System::Func_1<bool>* value);
-    // Get static field: static public System.Func`1<System.Boolean> <>9__25_10
-    static ::System::Func_1<bool>* _get_$$9__25_10();
-    // Set static field: static public System.Func`1<System.Boolean> <>9__25_10
-    static void _set_$$9__25_10(::System::Func_1<bool>* value);
+    // Get static field: static public System.Func`1<System.Boolean> <>9__25_11
+    static ::System::Func_1<bool>* _get_$$9__25_11();
+    // Set static field: static public System.Func`1<System.Boolean> <>9__25_11
+    static void _set_$$9__25_11(::System::Func_1<bool>* value);
     // Get static field: static public System.Func`1<System.Boolean> <>9__25_12
     static ::System::Func_1<bool>* _get_$$9__25_12();
     // Set static field: static public System.Func`1<System.Boolean> <>9__25_12
     static void _set_$$9__25_12(::System::Func_1<bool>* value);
-    // Get static field: static public System.Func`1<System.Boolean> <>9__25_14
-    static ::System::Func_1<bool>* _get_$$9__25_14();
-    // Set static field: static public System.Func`1<System.Boolean> <>9__25_14
-    static void _set_$$9__25_14(::System::Func_1<bool>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1359D68
+    // Offset: 0x956664
     static void _cctor();
+    // System.Boolean <Awake>b__25_7()
+    // Offset: 0x9566CC
+    bool $Awake$b__25_7();
     // System.Boolean <Awake>b__25_8()
-    // Offset: 0x1359DD0
+    // Offset: 0x9566D4
     bool $Awake$b__25_8();
     // System.Boolean <Awake>b__25_9()
-    // Offset: 0x1359DD8
+    // Offset: 0x95672C
     bool $Awake$b__25_9();
-    // System.Boolean <Awake>b__25_10()
-    // Offset: 0x1359E30
-    bool $Awake$b__25_10();
+    // System.Boolean <Awake>b__25_11()
+    // Offset: 0x956784
+    bool $Awake$b__25_11();
     // System.Boolean <Awake>b__25_12()
-    // Offset: 0x1359E88
+    // Offset: 0x9567DC
     bool $Awake$b__25_12();
-    // System.Boolean <Awake>b__25_14()
-    // Offset: 0x1359EE0
-    bool $Awake$b__25_14();
     // public System.Void .ctor()
-    // Offset: 0x1359DC8
+    // Offset: 0x9566C4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -95,6 +95,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::AppController::$$c::$Awake$b__25_7
+// Il2CppName: <Awake>b__25_7
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AppController::$$c::*)()>(&VROSC::AppController::$$c::$Awake$b__25_7)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), "<Awake>b__25_7", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::AppController::$$c::$Awake$b__25_8
 // Il2CppName: <Awake>b__25_8
 template<>
@@ -111,12 +119,12 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), "<Awake>b__25_9", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AppController::$$c::$Awake$b__25_10
-// Il2CppName: <Awake>b__25_10
+// Writing MetadataGetter for method: VROSC::AppController::$$c::$Awake$b__25_11
+// Il2CppName: <Awake>b__25_11
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AppController::$$c::*)()>(&VROSC::AppController::$$c::$Awake$b__25_10)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AppController::$$c::*)()>(&VROSC::AppController::$$c::$Awake$b__25_11)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), "<Awake>b__25_10", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), "<Awake>b__25_11", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::AppController::$$c::$Awake$b__25_12
@@ -125,14 +133,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AppController::$$c::*)()>(&VROSC::AppController::$$c::$Awake$b__25_12)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), "<Awake>b__25_12", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::AppController::$$c::$Awake$b__25_14
-// Il2CppName: <Awake>b__25_14
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::AppController::$$c::*)()>(&VROSC::AppController::$$c::$Awake$b__25_14)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), "<Awake>b__25_14", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::AppController::$$c::New_ctor

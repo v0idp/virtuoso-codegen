@@ -29,15 +29,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class HelmRecorder : public ::VROSC::SourceRecorder {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single[] _secondaryHelmData
     // Size: 0x8
     // Offset: 0x48
@@ -46,12 +38,12 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<float>) == 0x8);
     public:
     // Get instance field reference: private System.Single[] _secondaryHelmData
-    ::ArrayW<float>& dyn__secondaryHelmData();
+    [[deprecated]] ::ArrayW<float>& dyn__secondaryHelmData();
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x89D7F0
+    // Offset: 0x193FF9C
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void .ctor()
-    // Offset: 0x89D8EC
+    // Offset: 0x1940098
     // Implemented from: VROSC.SourceRecorder
     // Base method: System.Void SourceRecorder::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

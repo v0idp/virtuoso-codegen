@@ -32,15 +32,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class BaseDataController::$$c__DisplayClass14_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.BaseDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -55,14 +47,14 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public VROSC.BaseDataController <>4__this
-    ::VROSC::BaseDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::BaseDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // System.Void <LoadLocalData>b__0(System.String data)
-    // Offset: 0x135B67C
+    // Offset: 0x957BE4
     void $LoadLocalData$b__0(::StringW data);
     // public System.Void .ctor()
-    // Offset: 0x135B674
+    // Offset: 0x957BDC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

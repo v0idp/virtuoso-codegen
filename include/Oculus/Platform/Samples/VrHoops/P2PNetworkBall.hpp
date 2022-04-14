@@ -38,15 +38,7 @@ namespace Oculus::Platform::Samples::VrHoops {
   // [TokenAttribute] Offset: FFFFFFFF
   class P2PNetworkBall : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single lastCollisionTime
     // Size: 0x4
     // Offset: 0x18
@@ -65,35 +57,35 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single lastCollisionTime
-    float& dyn_lastCollisionTime();
+    [[deprecated]] float& dyn_lastCollisionTime();
     // Get instance field reference: private UnityEngine.Rigidbody rigidBody
-    ::UnityEngine::Rigidbody*& dyn_rigidBody();
+    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_rigidBody();
     // public UnityEngine.Vector3 get_velocity()
-    // Offset: 0x98292C
+    // Offset: 0xB54CC8
     ::UnityEngine::Vector3 get_velocity();
     // private System.Void Awake()
-    // Offset: 0x983D38
+    // Offset: 0xB560D4
     void Awake();
     // public System.Boolean IsHeld()
-    // Offset: 0x98281C
+    // Offset: 0xB54BB8
     bool IsHeld();
     // public System.Void ProcessRemoteUpdate(System.Single remoteTime, System.Boolean isHeld, UnityEngine.Vector3 pos, UnityEngine.Vector3 vel)
-    // Offset: 0x982A1C
+    // Offset: 0xB54DB8
     void ProcessRemoteUpdate(float remoteTime, bool isHeld, ::UnityEngine::Vector3 pos, ::UnityEngine::Vector3 vel);
     // private UnityEngine.Vector3 estimatePosition(UnityEngine.Vector3 startPosition, UnityEngine.Vector3 startVelocty, System.Single time)
-    // Offset: 0x983D9C
+    // Offset: 0xB56138
     ::UnityEngine::Vector3 estimatePosition(::UnityEngine::Vector3 startPosition, ::UnityEngine::Vector3 startVelocty, float time);
     // private UnityEngine.Vector3 estimateVelocity(UnityEngine.Vector3 startVelocity, System.Single time)
-    // Offset: 0x983E14
+    // Offset: 0xB561B0
     ::UnityEngine::Vector3 estimateVelocity(::UnityEngine::Vector3 startVelocity, float time);
     // private System.Void OnCollisionEnter(UnityEngine.Collision collision)
-    // Offset: 0x983EB4
+    // Offset: 0xB56250
     void OnCollisionEnter(::UnityEngine::Collision* collision);
     // private System.Void OnDestroy()
-    // Offset: 0x983EDC
+    // Offset: 0xB56278
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x983F1C
+    // Offset: 0xB562B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

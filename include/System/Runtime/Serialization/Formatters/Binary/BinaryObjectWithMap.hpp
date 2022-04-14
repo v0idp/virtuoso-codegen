@@ -39,15 +39,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class BinaryObjectWithMap : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Runtime.Serialization.Formatters.Binary.BinaryHeaderEnum binaryHeaderEnum
     // Size: 0x4
     // Offset: 0x10
@@ -88,38 +80,38 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryHeaderEnum binaryHeaderEnum
-    ::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum& dyn_binaryHeaderEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum& dyn_binaryHeaderEnum();
     // Get instance field reference: System.Int32 objectId
-    int& dyn_objectId();
+    [[deprecated]] int& dyn_objectId();
     // Get instance field reference: System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // Get instance field reference: System.Int32 numMembers
-    int& dyn_numMembers();
+    [[deprecated]] int& dyn_numMembers();
     // Get instance field reference: System.String[] memberNames
-    ::ArrayW<::StringW>& dyn_memberNames();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_memberNames();
     // Get instance field reference: System.Int32 assemId
-    int& dyn_assemId();
+    [[deprecated]] int& dyn_assemId();
     // System.Void .ctor(System.Runtime.Serialization.Formatters.Binary.BinaryHeaderEnum binaryHeaderEnum)
-    // Offset: 0xCC72A4
+    // Offset: 0xFE8638
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BinaryObjectWithMap* New_ctor(::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum binaryHeaderEnum) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMap::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BinaryObjectWithMap*, creationType>(binaryHeaderEnum)));
     }
     // System.Void Set(System.Int32 objectId, System.String name, System.Int32 numMembers, System.String[] memberNames, System.Int32 assemId)
-    // Offset: 0xCC72D0
+    // Offset: 0xFE8664
     void Set(int objectId, ::StringW name, int numMembers, ::ArrayW<::StringW> memberNames, int assemId);
     // public System.Void Write(System.Runtime.Serialization.Formatters.Binary.__BinaryWriter sout)
-    // Offset: 0xCC72F4
+    // Offset: 0xFE8688
     void Write(::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter* sout);
     // public System.Void Read(System.Runtime.Serialization.Formatters.Binary.__BinaryParser input)
-    // Offset: 0xCC73DC
+    // Offset: 0xFE8770
     void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input);
     // public System.Void Dump()
-    // Offset: 0xCC752C
+    // Offset: 0xFE88C0
     void Dump();
     // System.Void .ctor()
-    // Offset: 0xCC729C
+    // Offset: 0xFE8630
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

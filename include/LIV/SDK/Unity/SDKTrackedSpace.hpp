@@ -69,20 +69,20 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 trackedSpaceWorldPosition
-    ::LIV::SDK::Unity::SDKVector3& dyn_trackedSpaceWorldPosition();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_trackedSpaceWorldPosition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion trackedSpaceWorldRotation
-    ::LIV::SDK::Unity::SDKQuaternion& dyn_trackedSpaceWorldRotation();
+    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_trackedSpaceWorldRotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 trackedSpaceLocalScale
-    ::LIV::SDK::Unity::SDKVector3& dyn_trackedSpaceLocalScale();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_trackedSpaceLocalScale();
     // Get instance field reference: public LIV.SDK.Unity.SDKMatrix4x4 trackedSpaceLocalToWorldMatrix
-    ::LIV::SDK::Unity::SDKMatrix4x4& dyn_trackedSpaceLocalToWorldMatrix();
+    [[deprecated]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_trackedSpaceLocalToWorldMatrix();
     // Get instance field reference: public LIV.SDK.Unity.SDKMatrix4x4 trackedSpaceWorldToLocalMatrix
-    ::LIV::SDK::Unity::SDKMatrix4x4& dyn_trackedSpaceWorldToLocalMatrix();
+    [[deprecated]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_trackedSpaceWorldToLocalMatrix();
     // static public LIV.SDK.Unity.SDKTrackedSpace get_empty()
-    // Offset: 0xB03BA4
+    // Offset: 0xDD514C
     static ::LIV::SDK::Unity::SDKTrackedSpace get_empty();
     // public override System.String ToString()
-    // Offset: 0xB097D0
+    // Offset: 0xDDAD78
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

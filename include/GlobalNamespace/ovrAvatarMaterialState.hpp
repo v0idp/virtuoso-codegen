@@ -134,45 +134,45 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector4 baseColor
-    ::UnityEngine::Vector4& dyn_baseColor();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_baseColor();
     // Get instance field reference: public ovrAvatarMaterialMaskType baseMaskType
-    ::GlobalNamespace::ovrAvatarMaterialMaskType& dyn_baseMaskType();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialMaskType& dyn_baseMaskType();
     // Get instance field reference: public UnityEngine.Vector4 baseMaskParameters
-    ::UnityEngine::Vector4& dyn_baseMaskParameters();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_baseMaskParameters();
     // Get instance field reference: public UnityEngine.Vector4 baseMaskAxis
-    ::UnityEngine::Vector4& dyn_baseMaskAxis();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_baseMaskAxis();
     // Get instance field reference: public ovrAvatarMaterialLayerSampleMode sampleMode
-    ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode& dyn_sampleMode();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode& dyn_sampleMode();
     // Get instance field reference: public System.UInt64 alphaMaskTextureID
-    uint64_t& dyn_alphaMaskTextureID();
+    [[deprecated]] uint64_t& dyn_alphaMaskTextureID();
     // Get instance field reference: public UnityEngine.Vector4 alphaMaskScaleOffset
-    ::UnityEngine::Vector4& dyn_alphaMaskScaleOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_alphaMaskScaleOffset();
     // Get instance field reference: public System.UInt64 normalMapTextureID
-    uint64_t& dyn_normalMapTextureID();
+    [[deprecated]] uint64_t& dyn_normalMapTextureID();
     // Get instance field reference: public UnityEngine.Vector4 normalMapScaleOffset
-    ::UnityEngine::Vector4& dyn_normalMapScaleOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_normalMapScaleOffset();
     // Get instance field reference: public System.UInt64 parallaxMapTextureID
-    uint64_t& dyn_parallaxMapTextureID();
+    [[deprecated]] uint64_t& dyn_parallaxMapTextureID();
     // Get instance field reference: public UnityEngine.Vector4 parallaxMapScaleOffset
-    ::UnityEngine::Vector4& dyn_parallaxMapScaleOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_parallaxMapScaleOffset();
     // Get instance field reference: public System.UInt64 roughnessMapTextureID
-    uint64_t& dyn_roughnessMapTextureID();
+    [[deprecated]] uint64_t& dyn_roughnessMapTextureID();
     // Get instance field reference: public UnityEngine.Vector4 roughnessMapScaleOffset
-    ::UnityEngine::Vector4& dyn_roughnessMapScaleOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_roughnessMapScaleOffset();
     // Get instance field reference: public System.UInt32 layerCount
-    uint& dyn_layerCount();
+    [[deprecated]] uint& dyn_layerCount();
     // Get instance field reference: public ovrAvatarMaterialLayerState[] layers
-    ::ArrayW<::GlobalNamespace::ovrAvatarMaterialLayerState>& dyn_layers();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarMaterialLayerState>& dyn_layers();
     // static private System.Boolean VectorEquals(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
-    // Offset: 0x1358CF4
+    // Offset: 0x9555F0
     static bool VectorEquals(::UnityEngine::Vector4 a, ::UnityEngine::Vector4 b);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0x1358D24
+    // Offset: 0x955620
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0x13590C0
+    // Offset: 0x9559BC
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

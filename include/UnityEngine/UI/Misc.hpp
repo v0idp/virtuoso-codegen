@@ -30,10 +30,10 @@ namespace UnityEngine::UI {
   class Misc : public ::Il2CppObject {
     public:
     // static public System.Void Destroy(UnityEngine.Object obj)
-    // Offset: 0xF350E8
+    // Offset: 0x14267C8
     static void Destroy(::UnityEngine::Object* obj);
     // static public System.Void DestroyImmediate(UnityEngine.Object obj)
-    // Offset: 0xF35204
+    // Offset: 0x14268E4
     static void DestroyImmediate(::UnityEngine::Object* obj);
   }; // UnityEngine.UI.Misc
   #pragma pack(pop)

@@ -24,7 +24,7 @@ namespace Firebase {
   class VersionInfo : public ::Il2CppObject {
     public:
     // static System.String get_SdkVersion()
-    // Offset: 0x12993CC
+    // Offset: 0x1887FDC
     static ::StringW get_SdkVersion();
   }; // Firebase.VersionInfo
   #pragma pack(pop)

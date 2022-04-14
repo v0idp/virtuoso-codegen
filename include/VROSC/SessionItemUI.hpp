@@ -48,15 +48,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionItemUI : public ::VROSC::PaginatedListItemUI {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _nameLabel
     // Size: 0x8
     // Offset: 0x40
@@ -95,22 +87,22 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _nameLabel
-    ::TMPro::TextMeshPro*& dyn__nameLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__nameLabel();
     // Get instance field reference: private TMPro.TextMeshPro _authorLabel
-    ::TMPro::TextMeshPro*& dyn__authorLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__authorLabel();
     // Get instance field reference: private TMPro.TextMeshPro _dateLabel
-    ::TMPro::TextMeshPro*& dyn__dateLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__dateLabel();
     // Get instance field reference: private UnityEngine.GameObject _cloudIcon
-    ::UnityEngine::GameObject*& dyn__cloudIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__cloudIcon();
     // Get instance field reference: private UnityEngine.GameObject _mySharedIcon
-    ::UnityEngine::GameObject*& dyn__mySharedIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__mySharedIcon();
     // Get instance field reference: private UnityEngine.GameObject _communityIcon
-    ::UnityEngine::GameObject*& dyn__communityIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__communityIcon();
     // public System.Void SetUIData(System.String displayName, System.String authorName, System.String dateText, VROSC.SessionUIData/VROSC.Type sessionType)
-    // Offset: 0x13E7F48
+    // Offset: 0x19871CC
     void SetUIData(::StringW displayName, ::StringW authorName, ::StringW dateText, ::VROSC::SessionUIData::Type sessionType);
     // public System.Void .ctor()
-    // Offset: 0x13E8010
+    // Offset: 0x1987294
     // Implemented from: VROSC.PaginatedListItemUI
     // Base method: System.Void PaginatedListItemUI::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -124,7 +116,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SessionItemUI*, creationType>()));
     }
     // public override System.Void SetNewData(VROSC.PaginatedListDataHolder dataholder)
-    // Offset: 0x13E7DA4
+    // Offset: 0x1987028
     // Implemented from: VROSC.PaginatedListItemUI
     // Base method: System.Void PaginatedListItemUI::SetNewData(VROSC.PaginatedListDataHolder dataholder)
     void SetNewData(::VROSC::PaginatedListDataHolder* dataholder);

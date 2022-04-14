@@ -43,15 +43,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SourceRecorder : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Collections.Generic.List`1<System.Single> _fullRecording
     // Size: 0x8
     // Offset: 0x18
@@ -120,60 +112,60 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Collections.Generic.List`1<System.Single> _fullRecording
-    ::System::Collections::Generic::List_1<float>*& dyn__fullRecording();
+    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn__fullRecording();
     // Get instance field reference: protected System.Int32 _fullRecordingWriteIndex
-    int& dyn__fullRecordingWriteIndex();
+    [[deprecated]] int& dyn__fullRecordingWriteIndex();
     // Get instance field reference: protected System.Int32 _fullRecordingMaxLength
-    int& dyn__fullRecordingMaxLength();
+    [[deprecated]] int& dyn__fullRecordingMaxLength();
     // Get instance field reference: public System.Action`1<System.Single[]> OnRecordingFilled
-    ::System::Action_1<::ArrayW<float>>*& dyn_OnRecordingFilled();
+    [[deprecated]] ::System::Action_1<::ArrayW<float>>*& dyn_OnRecordingFilled();
     // Get instance field reference: protected System.Boolean _performRecordingFilledCallback
-    bool& dyn__performRecordingFilledCallback();
+    [[deprecated]] bool& dyn__performRecordingFilledCallback();
     // Get instance field reference: protected System.Int32 _callbackAfterLength
-    int& dyn__callbackAfterLength();
+    [[deprecated]] int& dyn__callbackAfterLength();
     // Get instance field reference: protected System.Boolean _recording
-    bool& dyn__recording();
+    [[deprecated]] bool& dyn__recording();
     // Get instance field reference: protected System.Boolean _overdub
-    bool& dyn__overdub();
+    [[deprecated]] bool& dyn__overdub();
     // Get instance field reference: protected System.Boolean _useArrayReference
-    bool& dyn__useArrayReference();
+    [[deprecated]] bool& dyn__useArrayReference();
     // Get instance field reference: protected System.Single[] _arrayReference
-    ::ArrayW<float>& dyn__arrayReference();
+    [[deprecated]] ::ArrayW<float>& dyn__arrayReference();
     // public System.Boolean get_Recording()
-    // Offset: 0x13B9B54
+    // Offset: 0x192CBC8
     bool get_Recording();
     // static protected System.Void RoutingDemo_GetData(System.Int32 target, System.Single[] data, System.Int32 numsamples, System.Int32 numchannels)
-    // Offset: 0x13B9AA4
+    // Offset: 0x192CB18
     static void RoutingDemo_GetData(int target, ::ArrayW<float> data, int numsamples, int numchannels);
     // public System.Void Setup()
-    // Offset: 0x13B9B5C
+    // Offset: 0x192CBD0
     void Setup();
     // protected System.Void Update()
-    // Offset: 0x13B9BE8
+    // Offset: 0x192CC5C
     void Update();
     // public System.Void StartRecording(System.Action`1<System.Single[]> recordingFilledCallback, System.Int32 length, System.Single[] arrayReference, System.Boolean overdub, System.Int32 callbackAfterLength)
-    // Offset: 0x13B9C8C
+    // Offset: 0x192CD00
     void StartRecording(::System::Action_1<::ArrayW<float>>* recordingFilledCallback, int length, ::ArrayW<float> arrayReference, bool overdub, int callbackAfterLength);
     // public System.Single[] StopRecording()
-    // Offset: 0x13B9E70
+    // Offset: 0x192CEE4
     ::ArrayW<float> StopRecording();
     // public System.Single[] StealRecording(System.Boolean clear, System.Boolean stealEvenIfNotRecording)
-    // Offset: 0x13B9EA8
+    // Offset: 0x192CF1C
     ::ArrayW<float> StealRecording(bool clear, bool stealEvenIfNotRecording);
     // public System.Single[] GetRecordingSpan(System.Int32 startIndex, System.Int32 endIndex, out System.Int32 currentIndex)
-    // Offset: 0x13BA074
+    // Offset: 0x192D0E8
     ::ArrayW<float> GetRecordingSpan(int startIndex, int endIndex, ByRef<int> currentIndex);
     // private System.Void CheckBuffer()
-    // Offset: 0x13B9BEC
+    // Offset: 0x192CC60
     void CheckBuffer();
     // protected System.Single[] CreateRecordingCopy()
-    // Offset: 0x13BA1FC
+    // Offset: 0x192D270
     ::ArrayW<float> CreateRecordingCopy();
     // protected System.Void AddDataToRecording(System.Single[] data, System.Int32 channels)
-    // Offset: 0x13BA2B4
+    // Offset: 0x192D328
     void AddDataToRecording(::ArrayW<float> data, int channels);
     // public System.Void .ctor()
-    // Offset: 0x13BA5E8
+    // Offset: 0x192D65C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

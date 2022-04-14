@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class WidgetHoveringNode : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.WidgetHoveringController _parent
     // Size: 0x8
     // Offset: 0x18
@@ -62,23 +54,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.WidgetHoveringController _parent
-    ::VROSC::WidgetHoveringController*& dyn__parent();
+    [[deprecated]] ::VROSC::WidgetHoveringController*& dyn__parent();
     // Get instance field reference: private VROSC.Interactable _reactTo
-    ::VROSC::Interactable*& dyn__reactTo();
+    [[deprecated]] ::VROSC::Interactable*& dyn__reactTo();
     // private System.Void Awake()
-    // Offset: 0x1355944
+    // Offset: 0x952234
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x1355A58
+    // Offset: 0x952348
     void OnDestroy();
     // public System.Void Setup(VROSC.WidgetHoveringController parent)
-    // Offset: 0x1355B6C
+    // Offset: 0x95245C
     void Setup(::VROSC::WidgetHoveringController* parent);
     // public System.Void SetHovering(System.Boolean hovering)
-    // Offset: 0x1355B74
+    // Offset: 0x952464
     void SetHovering(bool hovering);
     // public System.Void .ctor()
-    // Offset: 0x1355C14
+    // Offset: 0x952504
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -82,54 +82,54 @@ namespace Firebase::Firestore {
     // Set static field: static private readonly System.DateTime s_unixEpoch
     static void _set_s_unixEpoch(::System::DateTime value);
     // Get instance field reference: private readonly System.Int64 _seconds
-    int64_t& dyn__seconds();
+    [[deprecated]] int64_t& dyn__seconds();
     // Get instance field reference: private readonly System.Int32 _nanoseconds
-    int& dyn__nanoseconds();
+    [[deprecated]] int& dyn__nanoseconds();
     // System.Void .ctor(System.Int64 seconds, System.Int32 nanoseconds)
-    // Offset: 0xC40280
+    // Offset: 0xD6480C
     // ABORTED: conflicts with another method.  Timestamp(int64_t seconds, int nanoseconds);
     // static private System.Void .cctor()
-    // Offset: 0xC40A50
+    // Offset: 0xD64FC4
     static void _cctor();
     // public System.DateTime ToDateTime()
-    // Offset: 0xC2F5C4
+    // Offset: 0xD513CC
     ::System::DateTime ToDateTime();
     // public System.DateTimeOffset ToDateTimeOffset()
-    // Offset: 0xC2F82C
+    // Offset: 0xD51634
     ::System::DateTimeOffset ToDateTimeOffset();
     // static public Firebase.Firestore.Timestamp FromDateTime(System.DateTime dateTime)
-    // Offset: 0xC2F384
+    // Offset: 0xD51194
     static ::Firebase::Firestore::Timestamp FromDateTime(::System::DateTime dateTime);
     // static public Firebase.Firestore.Timestamp FromDateTimeOffset(System.DateTimeOffset dateTimeOffset)
-    // Offset: 0xC2F744
+    // Offset: 0xD5154C
     static ::Firebase::Firestore::Timestamp FromDateTimeOffset(::System::DateTimeOffset dateTimeOffset);
     // public System.Boolean Equals(Firebase.Firestore.Timestamp other)
-    // Offset: 0xC40408
+    // Offset: 0xD64994
     bool Equals(::Firebase::Firestore::Timestamp other);
     // public System.Int32 CompareTo(Firebase.Firestore.Timestamp other)
-    // Offset: 0xC40448
+    // Offset: 0xD649D4
     int CompareTo(::Firebase::Firestore::Timestamp other);
     // public System.Int32 CompareTo(System.Object obj)
-    // Offset: 0xC404A4
+    // Offset: 0xD64A30
     int CompareTo(::Il2CppObject* obj);
     // Firebase.Firestore.TimestampProxy ConvertToProxy()
-    // Offset: 0xC2F40C
+    // Offset: 0xD5121C
     ::Firebase::Firestore::TimestampProxy* ConvertToProxy();
     // static Firebase.Firestore.Timestamp ConvertFromProxy(Firebase.Firestore.TimestampProxy obj)
-    // Offset: 0xC2B368
+    // Offset: 0xD4D1B8
     static ::Firebase::Firestore::Timestamp ConvertFromProxy(::Firebase::Firestore::TimestampProxy* obj);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC40374
+    // Offset: 0xD64900
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xC4042C
+    // Offset: 0xD649B8
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();
     // public override System.String ToString()
-    // Offset: 0xC40588
+    // Offset: 0xD64B14
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

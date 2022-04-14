@@ -48,19 +48,19 @@ namespace Oculus::Avatar {
     // Set static field: static public System.String Tab
     static void _set_Tab(::StringW value);
     // static public System.Void Log(System.String logMsg)
-    // Offset: 0x1374980
+    // Offset: 0x9738E4
     static void Log(::StringW logMsg);
     // static public System.Void Log(System.String logMsg, UnityEngine.Object context)
-    // Offset: 0x1374A10
+    // Offset: 0x973974
     static void Log(::StringW logMsg, ::UnityEngine::Object* context);
     // static public System.Void LogWarning(System.String logMsg)
-    // Offset: 0x1374AB0
+    // Offset: 0x973A14
     static void LogWarning(::StringW logMsg);
     // static public System.Void LogError(System.String logMsg)
-    // Offset: 0x1374B40
+    // Offset: 0x973AA4
     static void LogError(::StringW logMsg);
     // static public System.Void LogError(System.String logMsg, UnityEngine.Object context)
-    // Offset: 0x1374BD0
+    // Offset: 0x973B34
     static void LogError(::StringW logMsg, ::UnityEngine::Object* context);
   }; // Oculus.Avatar.AvatarLogger
   #pragma pack(pop)

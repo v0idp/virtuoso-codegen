@@ -34,16 +34,27 @@ namespace Firebase::Auth {
     static int _get_numExceptionsPending();
     // Set static field: static private System.Int32 numExceptionsPending
     static void _set_numExceptionsPending(int value);
+    // static public System.Boolean get_Pending()
+    // Offset: 0x18B2814
+    static bool get_Pending();
     // static public System.Void Set(System.Exception e)
-    // Offset: 0x12B406C
+    // Offset: 0x18B425C
     static void Set(::System::Exception* e);
     // static public System.Exception Retrieve()
-    // Offset: 0x12B3F64
+    // Offset: 0x18B2880
     static ::System::Exception* Retrieve();
   }; // Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGPendingException
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::SWIGPendingException::get_Pending
+// Il2CppName: get_Pending
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)()>(&Firebase::Auth::AuthUtilPINVOKE::SWIGPendingException::get_Pending)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE::SWIGPendingException*), "get_Pending", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::SWIGPendingException::Set
 // Il2CppName: Set
 template<>

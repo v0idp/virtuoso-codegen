@@ -40,15 +40,7 @@ namespace Facebook::WitAi::CallbackHandlers {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitResponseHandler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Facebook.WitAi.VoiceService wit
     // Size: 0x8
     // Offset: 0x18
@@ -59,21 +51,21 @@ namespace Facebook::WitAi::CallbackHandlers {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public Facebook.WitAi.VoiceService wit
-    ::Facebook::WitAi::VoiceService*& dyn_wit();
+    [[deprecated]] ::Facebook::WitAi::VoiceService*& dyn_wit();
     // private System.Void OnValidate()
-    // Offset: 0x1102B9C
+    // Offset: 0x1679408
     void OnValidate();
     // private System.Void OnEnable()
-    // Offset: 0x1102C4C
+    // Offset: 0x16794B8
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x1102E80
+    // Offset: 0x16796EC
     void OnDisable();
     // protected System.Void OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnHandleResponse(::Facebook::WitAi::Lib::WitResponseNode* response);
     // protected System.Void .ctor()
-    // Offset: 0x10F9850
+    // Offset: 0x16700B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

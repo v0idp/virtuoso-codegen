@@ -27,15 +27,7 @@ namespace System::Runtime::Remoting::Channels {
   // [TokenAttribute] Offset: FFFFFFFF
   class CrossAppDomainData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Object _ContextID
     // Size: 0x8
     // Offset: 0x10
@@ -58,19 +50,19 @@ namespace System::Runtime::Remoting::Channels {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Object _ContextID
-    ::Il2CppObject*& dyn__ContextID();
+    [[deprecated]] ::Il2CppObject*& dyn__ContextID();
     // Get instance field reference: private System.Int32 _DomainID
-    int& dyn__DomainID();
+    [[deprecated]] int& dyn__DomainID();
     // Get instance field reference: private System.String _processGuid
-    ::StringW& dyn__processGuid();
+    [[deprecated]] ::StringW& dyn__processGuid();
     // System.Int32 get_DomainID()
-    // Offset: 0xFDBCA4
+    // Offset: 0x13F4F58
     int get_DomainID();
     // System.String get_ProcessID()
-    // Offset: 0xFDBCAC
+    // Offset: 0x13F4F60
     ::StringW get_ProcessID();
     // System.Void .ctor(System.Int32 domainId)
-    // Offset: 0xFDBBF8
+    // Offset: 0x13F49E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CrossAppDomainData* New_ctor(int domainId) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Remoting::Channels::CrossAppDomainData::.ctor");

@@ -32,15 +32,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SaveLoadManager::$$c__DisplayClass32_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String sessionName
     // Size: 0x8
     // Offset: 0x10
@@ -61,19 +53,19 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String sessionName
-    ::StringW& dyn_sessionName();
+    [[deprecated]] ::StringW& dyn_sessionName();
     // Get instance field reference: public VROSC.SaveLoadManager <>4__this
-    ::VROSC::SaveLoadManager*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
     // Get instance field reference: public System.String origin
-    ::StringW& dyn_origin();
+    [[deprecated]] ::StringW& dyn_origin();
     // System.Void <LoadSessionFromCloudSuccess>b__0()
-    // Offset: 0x13463D8
+    // Offset: 0x8D1318
     void $LoadSessionFromCloudSuccess$b__0();
     // System.Void <LoadSessionFromCloudSuccess>b__1(VROSC.Error error)
-    // Offset: 0x134646C
+    // Offset: 0x8D13AC
     void $LoadSessionFromCloudSuccess$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x13463D0
+    // Offset: 0x8D1310
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

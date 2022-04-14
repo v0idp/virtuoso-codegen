@@ -24,15 +24,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIColorPicker::UIColorPickerData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _displayName
     // Size: 0x8
     // Offset: 0x10
@@ -45,15 +37,15 @@ namespace VROSC {
       return displayName;
     }
     // Get instance field reference: private System.String _displayName
-    ::StringW& dyn__displayName();
+    [[deprecated]] ::StringW& dyn__displayName();
     // public System.String get_DisplayName()
-    // Offset: 0x140DFDC
+    // Offset: 0xE800B0
     ::StringW get_DisplayName();
     // public System.Void SetDisplayName(System.String displayName)
-    // Offset: 0x140DFE4
+    // Offset: 0xE800B8
     void SetDisplayName(::StringW displayName);
     // public System.Void .ctor()
-    // Offset: 0x140DFEC
+    // Offset: 0xE800C0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

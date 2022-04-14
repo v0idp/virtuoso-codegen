@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SignalCombiner : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<VROSC.Signal> _signals
     // Size: 0x8
     // Offset: 0x40
@@ -58,20 +50,20 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::Signal*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Signal> _signals
-    ::System::Collections::Generic::List_1<::VROSC::Signal*>*& dyn__signals();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Signal*>*& dyn__signals();
     // private System.Void AddSignal(VROSC.Signal signal)
-    // Offset: 0x13B52D4
+    // Offset: 0x19281A0
     void AddSignal(::VROSC::Signal* signal);
     // private VROSC.Signal GetCombinedSignal(System.Collections.Generic.List`1<VROSC.Signal> signals)
-    // Offset: 0x13B4EC4
+    // Offset: 0x1927D90
     ::VROSC::Signal* GetCombinedSignal(::System::Collections::Generic::List_1<::VROSC::Signal*>* signals);
     // protected override System.Int32 get_MaxInputs()
-    // Offset: 0x13B4D88
+    // Offset: 0x1927C54
     // Implemented from: VROSC.SignalNode
     // Base method: System.Int32 SignalNode::get_MaxInputs()
     int get_MaxInputs();
     // public System.Void .ctor()
-    // Offset: 0x13B5338
+    // Offset: 0x1928204
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -86,17 +78,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SignalCombiner*, creationType>()));
     }
     // protected override System.Void LateUpdate()
-    // Offset: 0x13B4D90
+    // Offset: 0x1927C5C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::LateUpdate()
     void LateUpdate();
     // protected override System.Void OnDisable()
-    // Offset: 0x13B5148
+    // Offset: 0x1928014
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::OnDisable()
     void OnDisable();
     // public override System.Void ReceiveSignal(VROSC.Signal signal)
-    // Offset: 0x13B521C
+    // Offset: 0x19280E8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::ReceiveSignal(VROSC.Signal signal)
     void ReceiveSignal(::VROSC::Signal* signal);

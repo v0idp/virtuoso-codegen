@@ -99,20 +99,12 @@ namespace VROSC {
       // Set static field: static public VROSC.TimeSlider/VROSC.SourceType TapeRecorder
       static void _set_TapeRecorder(::VROSC::TimeSlider::SourceType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.TimeSlider/VROSC.SourceType
     #pragma pack(pop)
     static check_size<sizeof(TimeSlider::SourceType), 0 + sizeof(int)> __VROSC_TimeSlider_SourceTypeSizeCheck;
     static_assert(sizeof(TimeSlider::SourceType) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UISlider _timeSlider
     // Size: 0x8
     // Offset: 0x18
@@ -171,82 +163,82 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UISlider _timeSlider
-    ::VROSC::UISlider*& dyn__timeSlider();
+    [[deprecated]] ::VROSC::UISlider*& dyn__timeSlider();
     // Get instance field reference: private TMPro.TextMeshPro _timeText
-    ::TMPro::TextMeshPro*& dyn__timeText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__timeText();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer _videoPlayer
-    ::UnityEngine::Video::VideoPlayer*& dyn__videoPlayer();
+    [[deprecated]] ::UnityEngine::Video::VideoPlayer*& dyn__videoPlayer();
     // Get instance field reference: private UnityEngine.AudioSource _audioSource
-    ::UnityEngine::AudioSource*& dyn__audioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__audioSource();
     // Get instance field reference: private VROSC.TapeRecorder _tapeRecorder
-    ::VROSC::TapeRecorder*& dyn__tapeRecorder();
+    [[deprecated]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
     // Get instance field reference: private VROSC.TimeSlider/VROSC.SourceType _source
-    ::VROSC::TimeSlider::SourceType& dyn__source();
+    [[deprecated]] ::VROSC::TimeSlider::SourceType& dyn__source();
     // Get instance field reference: private System.Boolean <Seeking>k__BackingField
-    bool& dyn_$Seeking$k__BackingField();
+    [[deprecated]] bool& dyn_$Seeking$k__BackingField();
     // Get instance field reference: private System.Boolean _sliderFollowsTime
-    bool& dyn__sliderFollowsTime();
+    [[deprecated]] bool& dyn__sliderFollowsTime();
     // Get instance field reference: private System.Boolean _sourceIsPlaying
-    bool& dyn__sourceIsPlaying();
+    [[deprecated]] bool& dyn__sourceIsPlaying();
     // public VROSC.UISlider get_Slider()
-    // Offset: 0x13FEB14
+    // Offset: 0xA269FC
     ::VROSC::UISlider* get_Slider();
     // public System.Boolean get_Seeking()
-    // Offset: 0x13FEB1C
+    // Offset: 0xA26A04
     bool get_Seeking();
     // public System.Void set_Seeking(System.Boolean value)
-    // Offset: 0x13FEB24
+    // Offset: 0xA26A0C
     void set_Seeking(bool value);
     // public System.Boolean get_SourceIsPlaying()
-    // Offset: 0x13FEB30
+    // Offset: 0xA26A18
     bool get_SourceIsPlaying();
     // public System.Void set_SourceIsPlaying(System.Boolean value)
-    // Offset: 0x13FC048
+    // Offset: 0xA23BC4
     void set_SourceIsPlaying(bool value);
     // protected System.Void Start()
-    // Offset: 0x13FEC88
+    // Offset: 0xA26B70
     void Start();
     // public System.Void Init(System.Single sourceLength)
-    // Offset: 0x13FC1F0
+    // Offset: 0xA241C8
     void Init(float sourceLength);
     // protected System.Void Update()
-    // Offset: 0x13FEE38
+    // Offset: 0xA26D20
     void Update();
     // public System.Void Disable(System.Boolean disable)
-    // Offset: 0x13FEEA4
+    // Offset: 0xA26D8C
     void Disable(bool disable);
     // private System.Void UpdateTimeSlider()
-    // Offset: 0x13FEE3C
+    // Offset: 0xA26D24
     void UpdateTimeSlider();
     // private System.Void UpdateSlider()
-    // Offset: 0x13FEB38
+    // Offset: 0xA26A20
     void UpdateSlider();
     // private System.Void UpdateLabel(System.Boolean useSliderValue)
-    // Offset: 0x13FEBA4
+    // Offset: 0xA26A8C
     void UpdateLabel(bool useSliderValue);
     // private System.Single GetTime()
-    // Offset: 0x13FF050
+    // Offset: 0xA26F3C
     float GetTime();
     // private System.Single GetLength()
-    // Offset: 0x13FEF48
+    // Offset: 0xA26E30
     float GetLength();
     // private System.Void TimeSliderGrabbed(System.Boolean isGrabbed)
-    // Offset: 0x13FF0B8
+    // Offset: 0xA26FA8
     void TimeSliderGrabbed(bool isGrabbed);
     // private System.Void PauseSource()
-    // Offset: 0x13FF13C
+    // Offset: 0xA2702C
     void PauseSource();
     // private System.Void PlaySource()
-    // Offset: 0x13FF250
+    // Offset: 0xA27148
     void PlaySource();
     // private System.Void SetTime(System.Single time)
-    // Offset: 0x13FF1E8
+    // Offset: 0xA270DC
     void SetTime(float time);
     // private System.Void SeekCompleted(UnityEngine.Video.VideoPlayer videoPlayer)
-    // Offset: 0x13FF2B4
+    // Offset: 0xA271B0
     void SeekCompleted(::UnityEngine::Video::VideoPlayer* videoPlayer);
     // public System.Void .ctor()
-    // Offset: 0x13FF2BC
+    // Offset: 0xA271B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -39,15 +39,7 @@ namespace Mono::Net {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class CFNetwork::$$c__DisplayClass13_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Mono.Net.CFProxy[] proxies
     // Size: 0x8
     // Offset: 0x10
@@ -62,14 +54,14 @@ namespace Mono::Net {
     static_assert(sizeof(::Mono::Net::CFRunLoop*) == 0x8);
     public:
     // Get instance field reference: public Mono.Net.CFProxy[] proxies
-    ::ArrayW<::Mono::Net::CFProxy*>& dyn_proxies();
+    [[deprecated]] ::ArrayW<::Mono::Net::CFProxy*>& dyn_proxies();
     // Get instance field reference: public Mono.Net.CFRunLoop runLoop
-    ::Mono::Net::CFRunLoop*& dyn_runLoop();
+    [[deprecated]] ::Mono::Net::CFRunLoop*& dyn_runLoop();
     // System.Void <ExecuteProxyAutoConfigurationURL>b__0(System.IntPtr client, System.IntPtr proxyList, System.IntPtr error)
-    // Offset: 0x8D9190
+    // Offset: 0x9F3F08
     void $ExecuteProxyAutoConfigurationURL$b__0(::System::IntPtr client, ::System::IntPtr proxyList, ::System::IntPtr error);
     // public System.Void .ctor()
-    // Offset: 0x8D9188
+    // Offset: 0x9F3F00
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -35,15 +35,7 @@ namespace DG::Tweening::Core {
   // [TokenAttribute] Offset: FFFFFFFF
   class ABSSequentiable : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // DG.Tweening.TweenType tweenType
     // Size: 0x4
     // Offset: 0x10
@@ -72,15 +64,15 @@ namespace DG::Tweening::Core {
     static_assert(sizeof(::DG::Tweening::TweenCallback*) == 0x8);
     public:
     // Get instance field reference: DG.Tweening.TweenType tweenType
-    ::DG::Tweening::TweenType& dyn_tweenType();
+    [[deprecated]] ::DG::Tweening::TweenType& dyn_tweenType();
     // Get instance field reference: System.Single sequencedPosition
-    float& dyn_sequencedPosition();
+    [[deprecated]] float& dyn_sequencedPosition();
     // Get instance field reference: System.Single sequencedEndPosition
-    float& dyn_sequencedEndPosition();
+    [[deprecated]] float& dyn_sequencedEndPosition();
     // Get instance field reference: DG.Tweening.TweenCallback onStart
-    ::DG::Tweening::TweenCallback*& dyn_onStart();
+    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onStart();
     // protected System.Void .ctor()
-    // Offset: 0x1090D14
+    // Offset: 0x15D333C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

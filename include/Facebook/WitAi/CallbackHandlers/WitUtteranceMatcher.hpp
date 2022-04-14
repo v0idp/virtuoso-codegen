@@ -46,15 +46,7 @@ namespace Facebook::WitAi::CallbackHandlers {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitUtteranceMatcher : public ::Facebook::WitAi::CallbackHandlers::WitResponseHandler {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String searchText
     // Size: 0x8
     // Offset: 0x20
@@ -89,17 +81,17 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::System::Text::RegularExpressions::Regex*) == 0x8);
     public:
     // Get instance field reference: private System.String searchText
-    ::StringW& dyn_searchText();
+    [[deprecated]] ::StringW& dyn_searchText();
     // Get instance field reference: private System.Boolean exactMatch
-    bool& dyn_exactMatch();
+    [[deprecated]] bool& dyn_exactMatch();
     // Get instance field reference: private System.Boolean useRegex
-    bool& dyn_useRegex();
+    [[deprecated]] bool& dyn_useRegex();
     // Get instance field reference: private Facebook.WitAi.Utilities.StringEvent onUtteranceMatched
-    ::Facebook::WitAi::Utilities::StringEvent*& dyn_onUtteranceMatched();
+    [[deprecated]] ::Facebook::WitAi::Utilities::StringEvent*& dyn_onUtteranceMatched();
     // Get instance field reference: private System.Text.RegularExpressions.Regex regex
-    ::System::Text::RegularExpressions::Regex*& dyn_regex();
+    [[deprecated]] ::System::Text::RegularExpressions::Regex*& dyn_regex();
     // public System.Void .ctor()
-    // Offset: 0x1106DDC
+    // Offset: 0x167D648
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -113,7 +105,7 @@ namespace Facebook::WitAi::CallbackHandlers {
       return THROW_UNLESS((::il2cpp_utils::New<WitUtteranceMatcher*, creationType>()));
     }
     // protected override System.Void OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1106C0C
+    // Offset: 0x167D478
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
     void OnHandleResponse(::Facebook::WitAi::Lib::WitResponseNode* response);

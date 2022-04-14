@@ -31,15 +31,7 @@ namespace Firebase::Unity {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UnitySynchronizationContext::$Send$c__AnonStorey3 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Threading.SendOrPostCallback d
     // Size: 0x8
     // Offset: 0x10
@@ -52,9 +44,9 @@ namespace Firebase::Unity {
       return d;
     }
     // Get instance field reference: System.Threading.SendOrPostCallback d
-    ::System::Threading::SendOrPostCallback*& dyn_d();
+    [[deprecated]] ::System::Threading::SendOrPostCallback*& dyn_d();
     // public System.Void .ctor()
-    // Offset: 0x12CBFF4
+    // Offset: 0x18CB384
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

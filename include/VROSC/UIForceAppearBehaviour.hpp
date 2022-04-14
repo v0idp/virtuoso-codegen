@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIForceAppearBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject _target
     // Size: 0x8
     // Offset: 0x10
@@ -65,14 +57,14 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.GameObject _target
-    ::UnityEngine::GameObject*& dyn__target();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__target();
     // Get instance field reference: private System.Boolean _appear
-    bool& dyn__appear();
+    [[deprecated]] bool& dyn__appear();
     // public System.Void Setup(UnityEngine.GameObject target, System.Boolean appear)
-    // Offset: 0x139BC08
+    // Offset: 0x190F4A0
     void Setup(::UnityEngine::GameObject* target, bool appear);
     // public System.Void .ctor()
-    // Offset: 0x139BD64
+    // Offset: 0x190F5FC
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -82,7 +74,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UIForceAppearBehaviour*, creationType>()));
     }
     // public override System.Void OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0x139BC20
+    // Offset: 0x190F4B8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPlay(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);

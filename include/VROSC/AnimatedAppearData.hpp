@@ -64,15 +64,7 @@ namespace VROSC {
     class AdjustableMeshAppear;
     // Nested type: ::VROSC::AnimatedAppearData::SimpleAppear
     class SimpleAppear;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.RectTransform _rectTransform
     // Size: 0x8
     // Offset: 0x10
@@ -123,54 +115,54 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::AnimatedAppearData::SimpleAppear*>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private VROSC.Interactable[] _interactables
-    ::ArrayW<::VROSC::Interactable*>& dyn__interactables();
+    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__interactables();
     // Get instance field reference: private VROSC.AdjustableMesh[] _adjustableMeshes
-    ::ArrayW<::VROSC::AdjustableMesh*>& dyn__adjustableMeshes();
+    [[deprecated]] ::ArrayW<::VROSC::AdjustableMesh*>& dyn__adjustableMeshes();
     // Get instance field reference: private TMPro.TextMeshPro[] _textMeshPros
-    ::ArrayW<::TMPro::TextMeshPro*>& dyn__textMeshPros();
+    [[deprecated]] ::ArrayW<::TMPro::TextMeshPro*>& dyn__textMeshPros();
     // Get instance field reference: private VROSC.SimpleAppearObject[] _simpleAppearObjects
-    ::ArrayW<::VROSC::SimpleAppearObject*>& dyn__simpleAppearObjects();
+    [[deprecated]] ::ArrayW<::VROSC::SimpleAppearObject*>& dyn__simpleAppearObjects();
     // Get instance field reference: private VROSC.AnimatedAppearData/VROSC.TextMeshAppear[] _textAppears
-    ::ArrayW<::VROSC::AnimatedAppearData::TextMeshAppear*>& dyn__textAppears();
+    [[deprecated]] ::ArrayW<::VROSC::AnimatedAppearData::TextMeshAppear*>& dyn__textAppears();
     // Get instance field reference: private VROSC.AnimatedAppearData/VROSC.AdjustableMeshAppear[] _meshAppears
-    ::ArrayW<::VROSC::AnimatedAppearData::AdjustableMeshAppear*>& dyn__meshAppears();
+    [[deprecated]] ::ArrayW<::VROSC::AnimatedAppearData::AdjustableMeshAppear*>& dyn__meshAppears();
     // Get instance field reference: private VROSC.AnimatedAppearData/VROSC.SimpleAppear[] _simpleAppears
-    ::ArrayW<::VROSC::AnimatedAppearData::SimpleAppear*>& dyn__simpleAppears();
+    [[deprecated]] ::ArrayW<::VROSC::AnimatedAppearData::SimpleAppear*>& dyn__simpleAppears();
     // public System.Void .ctor(UnityEngine.GameObject parent, UnityEngine.RectTransform rectTransform)
-    // Offset: 0x136AC34
+    // Offset: 0x969574
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimatedAppearData* New_ctor(::UnityEngine::GameObject* parent, ::UnityEngine::RectTransform* rectTransform) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearData*, creationType>(parent, rectTransform)));
     }
     // private System.Void SetAppearData(UnityEngine.RectTransform reference)
-    // Offset: 0x136B820
+    // Offset: 0x96A160
     void SetAppearData(::UnityEngine::RectTransform* reference);
     // public System.Void UpdateAppearAmount(System.Single amount, VROSC.AnimatedAppear/VROSC.Mode mode, System.Boolean useFlash, System.Boolean force)
-    // Offset: 0x136AF10
+    // Offset: 0x969850
     void UpdateAppearAmount(float amount, ::VROSC::AnimatedAppear::Mode mode, bool useFlash, bool force);
     // public System.Void SetAppearActive(System.Boolean appearing)
-    // Offset: 0x136B344
+    // Offset: 0x969C84
     void SetAppearActive(bool appearing);
     // public System.Void Clear()
-    // Offset: 0x136B68C
+    // Offset: 0x969FCC
     void Clear();
     // private System.Void SetInteractablesDisabled(System.Boolean disabled)
-    // Offset: 0x136BEB0
+    // Offset: 0x96A7F0
     void SetInteractablesDisabled(bool disabled);
     // private VROSC.MinMaxVector2 GetAppearData(UnityEngine.RectTransform reference, VROSC.SimpleAppearObject target)
-    // Offset: 0x136BDAC
+    // Offset: 0x96A6EC
     ::VROSC::MinMaxVector2* GetAppearData(::UnityEngine::RectTransform* reference, ::VROSC::SimpleAppearObject* target);
     // private VROSC.MinMaxVector2 GetAppearData(UnityEngine.RectTransform reference, VROSC.AdjustableMesh target)
-    // Offset: 0x136BC24
+    // Offset: 0x96A564
     ::VROSC::MinMaxVector2* GetAppearData(::UnityEngine::RectTransform* reference, ::VROSC::AdjustableMesh* target);
     // private VROSC.MinMaxVector2 GetAppearData(UnityEngine.RectTransform reference, UnityEngine.RectTransform target)
-    // Offset: 0x136BB60
+    // Offset: 0x96A4A0
     ::VROSC::MinMaxVector2* GetAppearData(::UnityEngine::RectTransform* reference, ::UnityEngine::RectTransform* target);
     // private UnityEngine.Vector2 GetLocalPos(UnityEngine.RectTransform reference, UnityEngine.RectTransform target, UnityEngine.Vector2 pos)
-    // Offset: 0x136BF1C
+    // Offset: 0x96A85C
     ::UnityEngine::Vector2 GetLocalPos(::UnityEngine::RectTransform* reference, ::UnityEngine::RectTransform* target, ::UnityEngine::Vector2 pos);
   }; // VROSC.AnimatedAppearData
   #pragma pack(pop)

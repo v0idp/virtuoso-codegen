@@ -39,7 +39,7 @@ namespace VROSC {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void FilterSignal(::VROSC::Signal* signal);
     // protected System.Void .ctor()
-    // Offset: 0x13B5458
+    // Offset: 0x1928324
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -54,12 +54,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SignalFilter*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13B5438
+    // Offset: 0x1928304
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13B5448
+    // Offset: 0x1928314
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);

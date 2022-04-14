@@ -31,28 +31,28 @@ namespace GlobalNamespace {
   class OVRPlugin::Ktx : public ::Il2CppObject {
     public:
     // static public System.IntPtr LoadKtxFromMemory(System.IntPtr dataPtr, System.UInt32 length)
-    // Offset: 0x73F4C8
+    // Offset: 0x855BCC
     static ::System::IntPtr LoadKtxFromMemory(::System::IntPtr dataPtr, uint length);
     // static public System.UInt32 GetKtxTextureWidth(System.IntPtr texture)
-    // Offset: 0x73F688
+    // Offset: 0x855D8C
     static uint GetKtxTextureWidth(::System::IntPtr texture);
     // static public System.UInt32 GetKtxTextureHeight(System.IntPtr texture)
-    // Offset: 0x73F82C
+    // Offset: 0x855F30
     static uint GetKtxTextureHeight(::System::IntPtr texture);
     // static public System.Boolean TranscodeKtxTexture(System.IntPtr texture, System.UInt32 format)
-    // Offset: 0x73F9D0
+    // Offset: 0x8560D4
     static bool TranscodeKtxTexture(::System::IntPtr texture, uint format);
     // static public System.UInt32 GetKtxTextureSize(System.IntPtr texture)
-    // Offset: 0x73FB74
+    // Offset: 0x856278
     static uint GetKtxTextureSize(::System::IntPtr texture);
     // static public System.Boolean GetKtxTextureData(System.IntPtr texture, System.IntPtr textureData, System.UInt32 bufferSize)
-    // Offset: 0x73FD18
+    // Offset: 0x85641C
     static bool GetKtxTextureData(::System::IntPtr texture, ::System::IntPtr textureData, uint bufferSize);
     // static public System.Boolean DestroyKtxTexture(System.IntPtr texture)
-    // Offset: 0x73FEC4
+    // Offset: 0x8565C8
     static bool DestroyKtxTexture(::System::IntPtr texture);
     // public System.Void .ctor()
-    // Offset: 0x740058
+    // Offset: 0x85675C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

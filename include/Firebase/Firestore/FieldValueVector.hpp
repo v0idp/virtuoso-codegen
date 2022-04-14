@@ -37,15 +37,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FieldValueVector : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -64,33 +56,33 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC36B44
+    // Offset: 0xD58C10
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldValueVector* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldValueVector::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FieldValueVector*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.FieldValueVector obj)
-    // Offset: 0xC36C1C
+    // Offset: 0xD58CE8
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::FieldValueVector* obj);
     // public System.Void Dispose()
-    // Offset: 0xC36CF8
+    // Offset: 0xD58DC4
     void Dispose();
     // public System.UInt32 Size()
-    // Offset: 0xC25BC4
+    // Offset: 0xD47924
     uint Size();
     // public Firebase.Firestore.FieldValueProxy GetUnsafeView(System.UInt32 i)
-    // Offset: 0xC25C68
+    // Offset: 0xD479C0
     ::Firebase::Firestore::FieldValueProxy* GetUnsafeView(uint i);
     // public System.Void PushBack(Firebase.Firestore.FieldValueProxy value)
-    // Offset: 0xC2BF20
+    // Offset: 0xD4DD50
     void PushBack(::Firebase::Firestore::FieldValueProxy* value);
     // public System.Void .ctor()
-    // Offset: 0xC2BE80
+    // Offset: 0xD4DCB8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -99,7 +91,7 @@ namespace Firebase::Firestore {
       return THROW_UNLESS((::il2cpp_utils::New<FieldValueVector*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xC36C88
+    // Offset: 0xD58D54
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

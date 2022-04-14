@@ -54,15 +54,7 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class UISliderBase : public ::VROSC::UIInteractable {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single <Value>k__BackingField
     // Size: 0x4
     // Offset: 0x88
@@ -101,7 +93,7 @@ namespace VROSC {
     ::VROSC::MinMaxFloat* uvRange;
     // Field size check
     static_assert(sizeof(::VROSC::MinMaxFloat*) == 0x8);
-    // [RangeAttribute] Offset: 0x673F18
+    // [RangeAttribute] Offset: 0x78A2AC
     // private System.Single _preview
     // Size: 0x4
     // Offset: 0xB8
@@ -110,56 +102,56 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single <Value>k__BackingField
-    float& dyn_$Value$k__BackingField();
+    [[deprecated]] float& dyn_$Value$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Single> OnValueChanged
-    ::System::Action_1<float>*& dyn_OnValueChanged();
+    [[deprecated]] ::System::Action_1<float>*& dyn_OnValueChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnGrabbed
-    ::System::Action_1<bool>*& dyn_OnGrabbed();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnGrabbed();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _sliderColor
-    ::VROSC::UI::UIColorGetter*& dyn__sliderColor();
+    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__sliderColor();
     // Get instance field reference: protected VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: protected VROSC.MinMaxFloat _uvRange
-    ::VROSC::MinMaxFloat*& dyn__uvRange();
+    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__uvRange();
     // Get instance field reference: private System.Single _preview
-    float& dyn__preview();
+    [[deprecated]] float& dyn__preview();
     // public System.Single get_Value()
-    // Offset: 0x13A36E4
+    // Offset: 0x191706C
     float get_Value();
     // private System.Void set_Value(System.Single value)
-    // Offset: 0x13A36DC
+    // Offset: 0x1917064
     void set_Value(float value);
     // public UnityEngine.Vector2 get_Size()
-    // Offset: 0x13A3194
+    // Offset: 0x1916B1C
     ::UnityEngine::Vector2 get_Size();
     // protected System.Void Awake()
-    // Offset: 0x13A2758
+    // Offset: 0x191608C
     void Awake();
     // protected System.Void OnEnable()
-    // Offset: 0x13A29E8
+    // Offset: 0x191631C
     void OnEnable();
     // protected System.Void OnDestroy()
-    // Offset: 0x13A28A0
+    // Offset: 0x19161D4
     void OnDestroy();
     // public System.Void SetValue(System.Single value, System.Boolean force, System.Boolean useCallback)
-    // Offset: 0x13A3524
+    // Offset: 0x1916EAC
     void SetValue(float value, bool force, bool useCallback);
     // private System.Void SetColor()
-    // Offset: 0x13A36EC
+    // Offset: 0x1917074
     void SetColor();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x13A387C
+    // Offset: 0x1917208
     void OnDrawGizmos();
     // protected UnityEngine.Vector2 GetSize()
-    // Offset: 0x13A3330
+    // Offset: 0x1916CB8
     ::UnityEngine::Vector2 GetSize();
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x13A36D4
+    // Offset: 0x191705C
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Boolean UIInteractable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x13A36CC
+    // Offset: 0x1917054
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
@@ -175,12 +167,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UISliderBase*, creationType>()));
     }
     // protected override System.Void OnDisable()
-    // Offset: 0x13A2D30
+    // Offset: 0x1916664
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::OnDisable()
     void OnDisable();
     // public override System.Void SetDisabled(System.Object disabler, System.Boolean shouldBeDisabled)
-    // Offset: 0x13A3850
+    // Offset: 0x19171DC
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::SetDisabled(System.Object disabler, System.Boolean shouldBeDisabled)
     void SetDisabled(::Il2CppObject* disabler, bool shouldBeDisabled);

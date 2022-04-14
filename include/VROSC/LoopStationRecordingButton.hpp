@@ -9,8 +9,6 @@
 #include "VROSC/SignalNode.hpp"
 // Including type: VROSC.LoopStationLoopHandler/VROSC.LooperState
 #include "VROSC/LoopStationLoopHandler_LooperState.hpp"
-// Including type: VROSC.LoopStationRecorder/VROSC.RecordingState
-#include "VROSC/LoopStationRecorder.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-properties.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
@@ -79,15 +77,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationRecordingButton : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single <RecordingProgressValue>k__BackingField
     // Size: 0x4
     // Offset: 0x40
@@ -96,7 +86,7 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     // Padding between fields: RecordingProgressValue and: recorder
     char __padding0[0x4] = {};
-    // [HeaderAttribute] Offset: 0x66E874
+    // [HeaderAttribute] Offset: 0x7848DC
     // private VROSC.LoopStationRecorder _recorder
     // Size: 0x8
     // Offset: 0x48
@@ -121,7 +111,7 @@ namespace VROSC {
     ::VROSC::ResetableMover* resetableMover;
     // Field size check
     static_assert(sizeof(::VROSC::ResetableMover*) == 0x8);
-    // [HeaderAttribute] Offset: 0x66E8F0
+    // [HeaderAttribute] Offset: 0x784958
     // private VROSC.DrumPadEffectOnSignal _drumPadEffect
     // Size: 0x8
     // Offset: 0x68
@@ -192,96 +182,96 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::LoopStationRecorder::RecordingState) == 0x4);
     public:
     // Get instance field reference: private System.Single <RecordingProgressValue>k__BackingField
-    float& dyn_$RecordingProgressValue$k__BackingField();
+    [[deprecated]] float& dyn_$RecordingProgressValue$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationRecorder _recorder
-    ::VROSC::LoopStationRecorder*& dyn__recorder();
+    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn__recorder();
     // Get instance field reference: private VROSC.SelectionBar _loopLengthSelectionBar
-    ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
+    [[deprecated]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
     // Get instance field reference: private UnityEngine.GameObject _loopLengthSelectionBarHolder
-    ::UnityEngine::GameObject*& dyn__loopLengthSelectionBarHolder();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__loopLengthSelectionBarHolder();
     // Get instance field reference: private VROSC.ResetableMover _resetableMover
-    ::VROSC::ResetableMover*& dyn__resetableMover();
+    [[deprecated]] ::VROSC::ResetableMover*& dyn__resetableMover();
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal _drumPadEffect
-    ::VROSC::DrumPadEffectOnSignal*& dyn__drumPadEffect();
+    [[deprecated]] ::VROSC::DrumPadEffectOnSignal*& dyn__drumPadEffect();
     // Get instance field reference: private VROSC.LooperButtonProgressUpdater _slider
-    ::VROSC::LooperButtonProgressUpdater*& dyn__slider();
+    [[deprecated]] ::VROSC::LooperButtonProgressUpdater*& dyn__slider();
     // Get instance field reference: private TMPro.TextMeshPro _buttonText
-    ::TMPro::TextMeshPro*& dyn__buttonText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__buttonText();
     // Get instance field reference: private VROSC.LoopStationRecordingButtonVisual _visual
-    ::VROSC::LoopStationRecordingButtonVisual*& dyn__visual();
+    [[deprecated]] ::VROSC::LoopStationRecordingButtonVisual*& dyn__visual();
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralArc _arc
-    ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
+    [[deprecated]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
     // Get instance field reference: private VROSC.LoopStationRecordingButtonPlayback _playback
-    ::VROSC::LoopStationRecordingButtonPlayback*& dyn__playback();
+    [[deprecated]] ::VROSC::LoopStationRecordingButtonPlayback*& dyn__playback();
     // Get instance field reference: private System.Single _offset
-    float& dyn__offset();
+    [[deprecated]] float& dyn__offset();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopStationRecordingProgress _recordingProgress
-    ::VROSC::LoopStationRecordingProgress*& dyn__recordingProgress();
+    [[deprecated]] ::VROSC::LoopStationRecordingProgress*& dyn__recordingProgress();
     // Get instance field reference: private VROSC.LoopStationLoopHandler/VROSC.LooperState _looperState
-    ::VROSC::LoopStationLoopHandler::LooperState& dyn__looperState();
+    [[deprecated]] ::VROSC::LoopStationLoopHandler::LooperState& dyn__looperState();
     // Get instance field reference: private VROSC.LoopStationRecorder/VROSC.RecordingState _recordingState
-    ::VROSC::LoopStationRecorder::RecordingState& dyn__recordingState();
+    [[deprecated]] ::VROSC::LoopStationRecorder::RecordingState& dyn__recordingState();
     // public System.Single get_RecordingProgressValue()
-    // Offset: 0x8A305C
+    // Offset: 0x1976174
     float get_RecordingProgressValue();
     // private System.Void set_RecordingProgressValue(System.Single value)
-    // Offset: 0x8A3054
+    // Offset: 0x197616C
     void set_RecordingProgressValue(float value);
     // public VROSC.LoopPlaybackConfig get_LoopPlaybackConfig()
-    // Offset: 0x8A3064
+    // Offset: 0x197617C
     ::VROSC::LoopPlaybackConfig* get_LoopPlaybackConfig();
     // private System.Void Awake()
-    // Offset: 0x8A3080
+    // Offset: 0x1976198
     void Awake();
     // private System.Void Start()
-    // Offset: 0x8A32F8
+    // Offset: 0x1976410
     void Start();
     // private System.Void OnDestroy()
-    // Offset: 0x8A33E0
+    // Offset: 0x19764F8
     void OnDestroy();
     // public System.Void Setup(VROSC.LoopStation loopStation)
-    // Offset: 0x8A3724
+    // Offset: 0x197683C
     void Setup(::VROSC::LoopStation* loopStation);
     // public System.Void Reset(VROSC.LoopPlaybackConfig loopPlaybackConfig)
-    // Offset: 0x8A383C
+    // Offset: 0x1976954
     void Reset(::VROSC::LoopPlaybackConfig* loopPlaybackConfig);
     // private System.Void MultiplierChanged(VROSC.UIScrollableItem obj)
-    // Offset: 0x8A3930
+    // Offset: 0x1976A44
     void MultiplierChanged(::VROSC::UIScrollableItem* obj);
     // public System.Void UpdateLooperState(VROSC.LoopStationLoopHandler/VROSC.LooperState state)
-    // Offset: 0x8A3954
+    // Offset: 0x1976A68
     void UpdateLooperState(::VROSC::LoopStationLoopHandler::LooperState state);
     // private System.Void RecorderStateChanged(VROSC.LoopStationRecorder/VROSC.RecordingState recordingState)
-    // Offset: 0x8A3A80
+    // Offset: 0x1976B94
     void RecorderStateChanged(::VROSC::LoopStationRecorder::RecordingState recordingState);
     // private System.Void Update()
-    // Offset: 0x8A3AA4
+    // Offset: 0x1976BB4
     void Update();
     // private System.Void UpdateArc()
-    // Offset: 0x8A3F20
+    // Offset: 0x1977030
     void UpdateArc();
     // private System.Void UpdateVisually()
-    // Offset: 0x8A395C
+    // Offset: 0x1976A70
     void UpdateVisually();
     // private System.Void SetValue(System.Single value, System.Single flashValue)
-    // Offset: 0x8A3DFC
+    // Offset: 0x1976F0C
     void SetValue(float value, float flashValue);
     // private System.Void ButtonReset(VROSC.ResetableMover mover)
-    // Offset: 0x8A4318
+    // Offset: 0x1977428
     void ButtonReset(::VROSC::ResetableMover* mover);
     // private System.Void ButtonMoved(VROSC.ResetableMover mover)
-    // Offset: 0x8A4344
+    // Offset: 0x1977450
     void ButtonMoved(::VROSC::ResetableMover* mover);
     // public System.Void SetToPosition(System.Boolean isAttached, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 scale)
-    // Offset: 0x8A4430
+    // Offset: 0x1977534
     void SetToPosition(bool isAttached, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 scale);
     // private System.Void LoopStationMoved(VROSC.TransformMover mover)
-    // Offset: 0x8A4470
+    // Offset: 0x1977574
     void LoopStationMoved(::VROSC::TransformMover* mover);
     // public System.Void .ctor()
-    // Offset: 0x8A44F0
+    // Offset: 0x19775F4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -296,12 +286,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopStationRecordingButton*, creationType>()));
     }
     // protected override System.Void OnEnable()
-    // Offset: 0x8A33D8
+    // Offset: 0x19764F0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::OnEnable()
     void OnEnable();
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x8A3A88
+    // Offset: 0x1976B9C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);

@@ -72,7 +72,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarGazeTargetType Count
     static void _set_Count(::GlobalNamespace::ovrAvatarGazeTargetType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // ovrAvatarGazeTargetType
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarGazeTargetType), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarGazeTargetTypeSizeCheck;

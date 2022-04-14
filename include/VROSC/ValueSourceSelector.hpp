@@ -137,20 +137,12 @@ namespace VROSC {
       // Set static field: static public VROSC.ValueSourceSelector/VROSC.ValueSource DistanceBetweenControllers
       static void _set_DistanceBetweenControllers(::VROSC::ValueSourceSelector::ValueSource value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.ValueSourceSelector/VROSC.ValueSource
     #pragma pack(pop)
     static check_size<sizeof(ValueSourceSelector::ValueSource), 0 + sizeof(int)> __VROSC_ValueSourceSelector_ValueSourceSizeCheck;
     static_assert(sizeof(ValueSourceSelector::ValueSource) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ValueSourceSelector/VROSC.ValueSource _valueSource
     // Size: 0x4
     // Offset: 0x40
@@ -159,12 +151,12 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::ValueSourceSelector::ValueSource) == 0x4);
     public:
     // Get instance field reference: private VROSC.ValueSourceSelector/VROSC.ValueSource _valueSource
-    ::VROSC::ValueSourceSelector::ValueSource& dyn__valueSource();
+    [[deprecated]] ::VROSC::ValueSourceSelector::ValueSource& dyn__valueSource();
     // static public System.Single GetSignalValue(VROSC.Signal signal, VROSC.ValueSourceSelector/VROSC.ValueSource valueSource)
-    // Offset: 0x13ADC1C
+    // Offset: 0x1921B64
     static float GetSignalValue(::VROSC::Signal* signal, ::VROSC::ValueSourceSelector::ValueSource valueSource);
     // public System.Void .ctor()
-    // Offset: 0x13ADF38
+    // Offset: 0x1921E80
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -179,17 +171,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ValueSourceSelector*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13ADBE4
+    // Offset: 0x1921B2C
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13ADEC8
+    // Offset: 0x1921E10
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x13ADF00
+    // Offset: 0x1921E48
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

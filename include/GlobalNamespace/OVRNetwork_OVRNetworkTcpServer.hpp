@@ -44,15 +44,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRNetwork::OVRNetworkTcpServer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Net.Sockets.TcpListener tcpListener
     // Size: 0x8
     // Offset: 0x10
@@ -73,31 +65,31 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::Generic::List_1<::System::Net::Sockets::TcpClient*>*) == 0x8);
     public:
     // Get instance field reference: public System.Net.Sockets.TcpListener tcpListener
-    ::System::Net::Sockets::TcpListener*& dyn_tcpListener();
+    [[deprecated]] ::System::Net::Sockets::TcpListener*& dyn_tcpListener();
     // Get instance field reference: private readonly System.Object clientsLock
-    ::Il2CppObject*& dyn_clientsLock();
+    [[deprecated]] ::Il2CppObject*& dyn_clientsLock();
     // Get instance field reference: public readonly System.Collections.Generic.List`1<System.Net.Sockets.TcpClient> clients
-    ::System::Collections::Generic::List_1<::System::Net::Sockets::TcpClient*>*& dyn_clients();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::Net::Sockets::TcpClient*>*& dyn_clients();
     // public System.Void StartListening(System.Int32 listeningPort)
-    // Offset: 0x73D8E8
+    // Offset: 0x853FEC
     void StartListening(int listeningPort);
     // public System.Void StopListening()
-    // Offset: 0x73DE84
+    // Offset: 0x854588
     void StopListening();
     // private System.Void DoAcceptTcpClientCallback(System.IAsyncResult ar)
-    // Offset: 0x73E034
+    // Offset: 0x854738
     void DoAcceptTcpClientCallback(::System::IAsyncResult* ar);
     // public System.Boolean HasConnectedClient()
-    // Offset: 0x73E5F4
+    // Offset: 0x854CF8
     bool HasConnectedClient();
     // public System.Void Broadcast(System.Int32 payloadType, System.Byte[] payload)
-    // Offset: 0x73E814
+    // Offset: 0x854F18
     void Broadcast(int payloadType, ::ArrayW<uint8_t> payload);
     // private System.Void DoWriteDataCallback(System.IAsyncResult ar)
-    // Offset: 0x73EE14
+    // Offset: 0x855518
     void DoWriteDataCallback(::System::IAsyncResult* ar);
     // public System.Void .ctor()
-    // Offset: 0x73EF14
+    // Offset: 0x855618
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

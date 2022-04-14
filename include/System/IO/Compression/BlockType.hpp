@@ -60,7 +60,7 @@ namespace System::IO::Compression {
     // Set static field: static public System.IO.Compression.BlockType Dynamic
     static void _set_Dynamic(::System::IO::Compression::BlockType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // System.IO.Compression.BlockType
   #pragma pack(pop)
   static check_size<sizeof(BlockType), 0 + sizeof(int)> __System_IO_Compression_BlockTypeSizeCheck;

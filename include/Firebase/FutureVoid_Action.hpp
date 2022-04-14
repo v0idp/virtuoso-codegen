@@ -35,20 +35,20 @@ namespace Firebase {
   class FutureVoid::Action : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x129B308
+    // Offset: 0x18891F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FutureVoid::Action* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::FutureVoid::Action::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FutureVoid::Action*, creationType>(object, method)));
     }
     // public System.Void Invoke()
-    // Offset: 0x129B754
+    // Offset: 0x188963C
     void Invoke();
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
-    // Offset: 0x129E454
+    // Offset: 0x188BDF4
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x129E480
+    // Offset: 0x188BE20
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.FutureVoid/Firebase.Action
   #pragma pack(pop)

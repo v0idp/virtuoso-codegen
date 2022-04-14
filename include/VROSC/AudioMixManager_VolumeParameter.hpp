@@ -47,15 +47,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::AudioMixManager::VolumeParameter::FadeSource
     class FadeSource;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Name
     // Size: 0x8
     // Offset: 0x10
@@ -84,28 +76,28 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::AudioMixManager::VolumeParameter::FadeSource*>*) == 0x8);
     public:
     // Get instance field reference: public System.String Name
-    ::StringW& dyn_Name();
+    [[deprecated]] ::StringW& dyn_Name();
     // Get instance field reference: public System.Single UnfadedVolume
-    float& dyn_UnfadedVolume();
+    [[deprecated]] float& dyn_UnfadedVolume();
     // Get instance field reference: public UnityEngine.Coroutine FadingCoroutine
-    ::UnityEngine::Coroutine*& dyn_FadingCoroutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn_FadingCoroutine();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.AudioMixManager/VROSC.VolumeParameter/VROSC.FadeSource> _fadeSources
-    ::System::Collections::Generic::List_1<::VROSC::AudioMixManager::VolumeParameter::FadeSource*>*& dyn__fadeSources();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::AudioMixManager::VolumeParameter::FadeSource*>*& dyn__fadeSources();
     // public System.Void .ctor(System.String name, UnityEngine.Audio.AudioMixer audioMixer)
-    // Offset: 0x135A6B8
+    // Offset: 0x956FB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioMixManager::VolumeParameter* New_ctor(::StringW name, ::UnityEngine::Audio::AudioMixer* audioMixer) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioMixManager::VolumeParameter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AudioMixManager::VolumeParameter*, creationType>(name, audioMixer)));
     }
     // public System.Void RegisterFade(System.Object source, System.Single volume)
-    // Offset: 0x135A760
+    // Offset: 0x95705C
     void RegisterFade(::Il2CppObject* source, float volume);
     // public System.Void UnregisterFade(System.Object source)
-    // Offset: 0x135A900
+    // Offset: 0x9571FC
     void UnregisterFade(::Il2CppObject* source);
     // public System.Single GetFadeVolume()
-    // Offset: 0x135A9E4
+    // Offset: 0x9572E0
     float GetFadeVolume();
   }; // VROSC.AudioMixManager/VROSC.VolumeParameter
   #pragma pack(pop)

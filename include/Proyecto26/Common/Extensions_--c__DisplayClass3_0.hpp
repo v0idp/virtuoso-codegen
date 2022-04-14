@@ -33,15 +33,7 @@ namespace Proyecto26::Common {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Extensions::$$c__DisplayClass3_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.Dictionary`2/System.Collections.Generic.KeyCollection<System.String,System.String> urlParamKeys
     // Size: 0x8
     // Offset: 0x10
@@ -54,12 +46,12 @@ namespace Proyecto26::Common {
       return urlParamKeys;
     }
     // Get instance field reference: public System.Collections.Generic.Dictionary`2/System.Collections.Generic.KeyCollection<System.String,System.String> urlParamKeys
-    typename ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>::KeyCollection*& dyn_urlParamKeys();
+    [[deprecated]] typename ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>::KeyCollection*& dyn_urlParamKeys();
     // System.Boolean <BuildUrl>b__0(System.Collections.Generic.KeyValuePair`2<System.String,System.String> p)
-    // Offset: 0x1362D88
+    // Offset: 0x95F87C
     bool $BuildUrl$b__0(::System::Collections::Generic::KeyValuePair_2<::StringW, ::StringW> p);
     // public System.Void .ctor()
-    // Offset: 0x1362D80
+    // Offset: 0x95F874
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

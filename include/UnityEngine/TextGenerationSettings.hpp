@@ -166,49 +166,49 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Font font
-    ::UnityEngine::Font*& dyn_font();
+    [[deprecated]] ::UnityEngine::Font*& dyn_font();
     // Get instance field reference: public UnityEngine.Color color
-    ::UnityEngine::Color& dyn_color();
+    [[deprecated]] ::UnityEngine::Color& dyn_color();
     // Get instance field reference: public System.Int32 fontSize
-    int& dyn_fontSize();
+    [[deprecated]] int& dyn_fontSize();
     // Get instance field reference: public System.Single lineSpacing
-    float& dyn_lineSpacing();
+    [[deprecated]] float& dyn_lineSpacing();
     // Get instance field reference: public System.Boolean richText
-    bool& dyn_richText();
+    [[deprecated]] bool& dyn_richText();
     // Get instance field reference: public System.Single scaleFactor
-    float& dyn_scaleFactor();
+    [[deprecated]] float& dyn_scaleFactor();
     // Get instance field reference: public UnityEngine.FontStyle fontStyle
-    ::UnityEngine::FontStyle& dyn_fontStyle();
+    [[deprecated]] ::UnityEngine::FontStyle& dyn_fontStyle();
     // Get instance field reference: public UnityEngine.TextAnchor textAnchor
-    ::UnityEngine::TextAnchor& dyn_textAnchor();
+    [[deprecated]] ::UnityEngine::TextAnchor& dyn_textAnchor();
     // Get instance field reference: public System.Boolean alignByGeometry
-    bool& dyn_alignByGeometry();
+    [[deprecated]] bool& dyn_alignByGeometry();
     // Get instance field reference: public System.Boolean resizeTextForBestFit
-    bool& dyn_resizeTextForBestFit();
+    [[deprecated]] bool& dyn_resizeTextForBestFit();
     // Get instance field reference: public System.Int32 resizeTextMinSize
-    int& dyn_resizeTextMinSize();
+    [[deprecated]] int& dyn_resizeTextMinSize();
     // Get instance field reference: public System.Int32 resizeTextMaxSize
-    int& dyn_resizeTextMaxSize();
+    [[deprecated]] int& dyn_resizeTextMaxSize();
     // Get instance field reference: public System.Boolean updateBounds
-    bool& dyn_updateBounds();
+    [[deprecated]] bool& dyn_updateBounds();
     // Get instance field reference: public UnityEngine.VerticalWrapMode verticalOverflow
-    ::UnityEngine::VerticalWrapMode& dyn_verticalOverflow();
+    [[deprecated]] ::UnityEngine::VerticalWrapMode& dyn_verticalOverflow();
     // Get instance field reference: public UnityEngine.HorizontalWrapMode horizontalOverflow
-    ::UnityEngine::HorizontalWrapMode& dyn_horizontalOverflow();
+    [[deprecated]] ::UnityEngine::HorizontalWrapMode& dyn_horizontalOverflow();
     // Get instance field reference: public UnityEngine.Vector2 generationExtents
-    ::UnityEngine::Vector2& dyn_generationExtents();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_generationExtents();
     // Get instance field reference: public UnityEngine.Vector2 pivot
-    ::UnityEngine::Vector2& dyn_pivot();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_pivot();
     // Get instance field reference: public System.Boolean generateOutOfBounds
-    bool& dyn_generateOutOfBounds();
+    [[deprecated]] bool& dyn_generateOutOfBounds();
     // private System.Boolean CompareColors(UnityEngine.Color left, UnityEngine.Color right)
-    // Offset: 0x12F4CA8
+    // Offset: 0x18FBEA8
     bool CompareColors(::UnityEngine::Color left, ::UnityEngine::Color right);
     // private System.Boolean CompareVector2(UnityEngine.Vector2 left, UnityEngine.Vector2 right)
-    // Offset: 0x12F4D44
+    // Offset: 0x18FBF44
     bool CompareVector2(::UnityEngine::Vector2 left, ::UnityEngine::Vector2 right);
     // public System.Boolean Equals(UnityEngine.TextGenerationSettings other)
-    // Offset: 0x12F4D90
+    // Offset: 0x18FBF90
     bool Equals(::UnityEngine::TextGenerationSettings other);
   }; // UnityEngine.TextGenerationSettings
   #pragma pack(pop)

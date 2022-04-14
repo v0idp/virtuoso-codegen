@@ -17,13 +17,14 @@
 #include "beatsaber-hook/shared/utils/il2cpp-utils-properties.hpp"
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
 #include "beatsaber-hook/shared/utils/utils.h"
-#include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
 // Forward declaring namespace: VROSC
 namespace VROSC {
   // Forward declaring type: ControllerHintUI
   class ControllerHintUI;
+  // Forward declaring type: TooltipData
+  class TooltipData;
 }
 // Forward declaring namespace: System::Collections::Generic
 namespace System::Collections::Generic {
@@ -50,15 +51,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ControllerComponent::TooltipRequest
     class TooltipRequest;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color <CurrentColor>k__BackingField
     // Size: 0x10
     // Offset: 0x18
@@ -107,54 +100,54 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color <CurrentColor>k__BackingField
-    ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
     // Get instance field reference: private VROSC.ControllerHintUI _hintUI
-    ::VROSC::ControllerHintUI*& dyn__hintUI();
+    [[deprecated]] ::VROSC::ControllerHintUI*& dyn__hintUI();
     // Get instance field reference: private VROSC.HighlightControllerComponents/VROSC.Component _componentType
-    ::VROSC::HighlightControllerComponents::Component& dyn__componentType();
+    [[deprecated]] ::VROSC::HighlightControllerComponents::Component& dyn__componentType();
     // Get instance field reference: private VROSC.TriggerButton _triggerButton
-    ::VROSC::TriggerButton& dyn__triggerButton();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__triggerButton();
     // Get instance field reference: private System.Boolean _tooltipActive
-    bool& dyn__tooltipActive();
+    [[deprecated]] bool& dyn__tooltipActive();
     // Get instance field reference: protected System.Single _pressing
-    float& dyn__pressing();
+    [[deprecated]] float& dyn__pressing();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.ControllerComponent/VROSC.TooltipRequest> _tooltipRequests
-    ::System::Collections::Generic::List_1<::VROSC::ControllerComponent::TooltipRequest*>*& dyn__tooltipRequests();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ControllerComponent::TooltipRequest*>*& dyn__tooltipRequests();
     // public UnityEngine.Color get_CurrentColor()
-    // Offset: 0x13387FC
+    // Offset: 0x94DAA4
     ::UnityEngine::Color get_CurrentColor();
     // private System.Void set_CurrentColor(UnityEngine.Color value)
-    // Offset: 0x13387F0
+    // Offset: 0x94DA98
     void set_CurrentColor(::UnityEngine::Color value);
     // public VROSC.HighlightControllerComponents/VROSC.Component get_ComponentType()
-    // Offset: 0x1338808
+    // Offset: 0x94DAB0
     ::VROSC::HighlightControllerComponents::Component get_ComponentType();
     // public VROSC.TriggerButton get_TriggerButton()
-    // Offset: 0x1338810
+    // Offset: 0x94DAB8
     ::VROSC::TriggerButton get_TriggerButton();
-    // public System.Void SetTooltipActive(System.Boolean active, System.String tooltip, System.Object requester)
-    // Offset: 0x1338818
-    void SetTooltipActive(bool active, ::StringW tooltip, ::Il2CppObject* requester);
+    // public System.Void SetTooltipActive(System.Boolean active, VROSC.TooltipData tooltip, System.Object requester)
+    // Offset: 0x94DAC0
+    void SetTooltipActive(bool active, ::VROSC::TooltipData* tooltip, ::Il2CppObject* requester);
     // public System.Void ClearTooltip()
-    // Offset: 0x1338C18
+    // Offset: 0x94DE98
     void ClearTooltip();
     // private System.Void UpdateTooltipDisplay()
-    // Offset: 0x1338AB4
+    // Offset: 0x94DD48
     void UpdateTooltipDisplay();
     // public System.Void SetButtonColor(UnityEngine.Color color)
-    // Offset: 0x1338DDC
+    // Offset: 0x94E0AC
     void SetButtonColor(::UnityEngine::Color color);
     // public System.Void SetPressing(System.Single pressing)
-    // Offset: 0x1338DE8
+    // Offset: 0x94E0B8
     void SetPressing(float pressing);
     // public UnityEngine.Color GetColor()
-    // Offset: 0x1338D70
+    // Offset: 0x94E040
     ::UnityEngine::Color GetColor();
     // public System.Void SetType(VROSC.HighlightControllerComponents/VROSC.Component componentType, VROSC.TriggerButton triggerButton)
-    // Offset: 0x1338E14
+    // Offset: 0x94E0E4
     void SetType(::VROSC::HighlightControllerComponents::Component componentType, ::VROSC::TriggerButton triggerButton);
     // public System.Void .ctor()
-    // Offset: 0x1338778
+    // Offset: 0x94DA20
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -208,10 +201,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Tr
 // Writing MetadataGetter for method: VROSC::ControllerComponent::SetTooltipActive
 // Il2CppName: SetTooltipActive
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::ControllerComponent::*)(bool, ::StringW, ::Il2CppObject*)>(&VROSC::ControllerComponent::SetTooltipActive)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::ControllerComponent::*)(bool, ::VROSC::TooltipData*, ::Il2CppObject*)>(&VROSC::ControllerComponent::SetTooltipActive)> {
   static const MethodInfo* get() {
     static auto* active = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    static auto* tooltip = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    static auto* tooltip = &::il2cpp_utils::GetClassFromName("VROSC", "TooltipData")->byval_arg;
     static auto* requester = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::ControllerComponent*), "SetTooltipActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{active, tooltip, requester});
   }

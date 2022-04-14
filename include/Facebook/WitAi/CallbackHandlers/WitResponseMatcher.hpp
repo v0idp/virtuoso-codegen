@@ -51,24 +51,16 @@ namespace Facebook::WitAi::CallbackHandlers {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitResponseMatcher : public ::Facebook::WitAi::CallbackHandlers::WitResponseHandler {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x5B1F58
+    // [HeaderAttribute] Offset: 0x6C8088
     // public System.String intent
     // Size: 0x8
     // Offset: 0x20
     ::StringW intent;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [RangeAttribute] Offset: 0x5B1FA4
-    // [FormerlySerializedAsAttribute] Offset: 0x5B1FA4
+    // [RangeAttribute] Offset: 0x6C80D4
+    // [FormerlySerializedAsAttribute] Offset: 0x6C80D4
     // public System.Single confidenceThreshold
     // Size: 0x4
     // Offset: 0x28
@@ -77,15 +69,15 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(float) == 0x4);
     // Padding between fields: confidenceThreshold and: valueMatchers
     char __padding1[0x4] = {};
-    // [FormerlySerializedAsAttribute] Offset: 0x5B2008
-    // [HeaderAttribute] Offset: 0x5B2008
+    // [FormerlySerializedAsAttribute] Offset: 0x6C8138
+    // [HeaderAttribute] Offset: 0x6C8138
     // public Facebook.WitAi.CallbackHandlers.ValuePathMatcher[] valueMatchers
     // Size: 0x8
     // Offset: 0x30
     ::ArrayW<::Facebook::WitAi::CallbackHandlers::ValuePathMatcher*> valueMatchers;
     // Field size check
     static_assert(sizeof(::ArrayW<::Facebook::WitAi::CallbackHandlers::ValuePathMatcher*>) == 0x8);
-    // [HeaderAttribute] Offset: 0x5B2078
+    // [HeaderAttribute] Offset: 0x6C81A8
     // private Facebook.WitAi.CallbackHandlers.FormattedValueEvents[] formattedValueEvents
     // Size: 0x8
     // Offset: 0x38
@@ -104,32 +96,32 @@ namespace Facebook::WitAi::CallbackHandlers {
     // Set static field: static private System.Text.RegularExpressions.Regex valueRegex
     static void _set_valueRegex(::System::Text::RegularExpressions::Regex* value);
     // Get instance field reference: public System.String intent
-    ::StringW& dyn_intent();
+    [[deprecated]] ::StringW& dyn_intent();
     // Get instance field reference: public System.Single confidenceThreshold
-    float& dyn_confidenceThreshold();
+    [[deprecated]] float& dyn_confidenceThreshold();
     // Get instance field reference: public Facebook.WitAi.CallbackHandlers.ValuePathMatcher[] valueMatchers
-    ::ArrayW<::Facebook::WitAi::CallbackHandlers::ValuePathMatcher*>& dyn_valueMatchers();
+    [[deprecated]] ::ArrayW<::Facebook::WitAi::CallbackHandlers::ValuePathMatcher*>& dyn_valueMatchers();
     // Get instance field reference: private Facebook.WitAi.CallbackHandlers.FormattedValueEvents[] formattedValueEvents
-    ::ArrayW<::Facebook::WitAi::CallbackHandlers::FormattedValueEvents*>& dyn_formattedValueEvents();
+    [[deprecated]] ::ArrayW<::Facebook::WitAi::CallbackHandlers::FormattedValueEvents*>& dyn_formattedValueEvents();
     // Get instance field reference: private Facebook.WitAi.CallbackHandlers.MultiValueEvent onMultiValueEvent
-    ::Facebook::WitAi::CallbackHandlers::MultiValueEvent*& dyn_onMultiValueEvent();
+    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::MultiValueEvent*& dyn_onMultiValueEvent();
     // private System.Boolean ValueMatches(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1104650
+    // Offset: 0x167AEBC
     bool ValueMatches(::Facebook::WitAi::Lib::WitResponseNode* response);
     // private System.Boolean CompareDouble(System.String value, Facebook.WitAi.CallbackHandlers.ValuePathMatcher matcher)
-    // Offset: 0x1104A24
+    // Offset: 0x167B290
     bool CompareDouble(::StringW value, ::Facebook::WitAi::CallbackHandlers::ValuePathMatcher* matcher);
     // private System.Boolean CompareFloat(System.String value, Facebook.WitAi.CallbackHandlers.ValuePathMatcher matcher)
-    // Offset: 0x11048C8
+    // Offset: 0x167B134
     bool CompareFloat(::StringW value, ::Facebook::WitAi::CallbackHandlers::ValuePathMatcher* matcher);
     // private System.Boolean CompareInt(System.String value, Facebook.WitAi.CallbackHandlers.ValuePathMatcher matcher)
-    // Offset: 0x11047F4
+    // Offset: 0x167B060
     bool CompareInt(::StringW value, ::Facebook::WitAi::CallbackHandlers::ValuePathMatcher* matcher);
     // private System.Boolean IntentMatches(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1104334
+    // Offset: 0x167ABA0
     bool IntentMatches(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public System.Void .ctor()
-    // Offset: 0x1104BB8
+    // Offset: 0x167B424
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -143,12 +135,12 @@ namespace Facebook::WitAi::CallbackHandlers {
       return THROW_UNLESS((::il2cpp_utils::New<WitResponseMatcher*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x1104C24
+    // Offset: 0x167B490
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();
     // protected override System.Void OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1103F70
+    // Offset: 0x167A7DC
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
     void OnHandleResponse(::Facebook::WitAi::Lib::WitResponseNode* response);

@@ -54,25 +54,25 @@ namespace System::Net {
     // Set static field: static private readonly System.Collections.Hashtable cache
     static void _set_cache(::System::Collections::Hashtable* value);
     // static private System.Collections.Hashtable get_Cache()
-    // Offset: 0xE7AD1C
+    // Offset: 0xEF8EA0
     static ::System::Collections::Hashtable* get_Cache();
     // public System.String get_AuthenticationType()
-    // Offset: 0xE7C254
+    // Offset: 0xEFA3DC
     ::StringW get_AuthenticationType();
     // static private System.Void .cctor()
-    // Offset: 0xE7C298
+    // Offset: 0xEFA428
     static void _cctor();
     // static private System.Void CheckExpired(System.Int32 count)
-    // Offset: 0xE7AEA4
+    // Offset: 0xEF9028
     static void CheckExpired(int count);
     // public System.Net.Authorization Authenticate(System.String challenge, System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
-    // Offset: 0xE7B6B8
+    // Offset: 0xEF983C
     ::System::Net::Authorization* Authenticate(::StringW challenge, ::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
     // public System.Net.Authorization PreAuthenticate(System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
-    // Offset: 0xE7C0B4
+    // Offset: 0xEFA23C
     ::System::Net::Authorization* PreAuthenticate(::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
     // public System.Void .ctor()
-    // Offset: 0xE67E20
+    // Offset: 0xEFA420
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

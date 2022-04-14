@@ -51,15 +51,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::GlobalColorController::BeatGradient::$PerformBeat$d__8
     class $PerformBeat$d__8;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _beat
     // Size: 0x4
     // Offset: 0x10
@@ -102,25 +94,25 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Coroutine*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _beat
-    int& dyn__beat();
+    [[deprecated]] int& dyn__beat();
     // Get instance field reference: private UnityEngine.Gradient _gradient
-    ::UnityEngine::Gradient*& dyn__gradient();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn__gradient();
     // Get instance field reference: private System.Single _beatTime
-    float& dyn__beatTime();
+    [[deprecated]] float& dyn__beatTime();
     // Get instance field reference: private System.String _value
-    ::StringW& dyn__value();
+    [[deprecated]] ::StringW& dyn__value();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnColorChange
-    ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorChange();
+    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorChange();
     // Get instance field reference: public UnityEngine.Coroutine BeatCoroutine
-    ::UnityEngine::Coroutine*& dyn_BeatCoroutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn_BeatCoroutine();
     // public System.Int32 get_Beat()
-    // Offset: 0x13CF458
+    // Offset: 0x19570A4
     int get_Beat();
     // public System.Collections.IEnumerator PerformBeat(System.Single multiplier)
-    // Offset: 0x13CF460
+    // Offset: 0x19570AC
     ::System::Collections::IEnumerator* PerformBeat(float multiplier);
     // public System.Void .ctor()
-    // Offset: 0x13CF4DC
+    // Offset: 0x1957128
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

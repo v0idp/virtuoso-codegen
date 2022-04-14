@@ -37,15 +37,7 @@ namespace AudioHelm {
   // [TokenAttribute] Offset: FFFFFFFF
   class HelmPatchSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single amp_attack
     // Size: 0x4
     // Offset: 0x10
@@ -930,308 +922,308 @@ namespace AudioHelm {
     // Set static field: static public readonly System.String[] kShortenNames
     static void _set_kShortenNames(::ArrayW<::StringW> value);
     // Get instance field reference: public System.Single amp_attack
-    float& dyn_amp_attack();
+    [[deprecated]] float& dyn_amp_attack();
     // Get instance field reference: public System.Single amp_decay
-    float& dyn_amp_decay();
+    [[deprecated]] float& dyn_amp_decay();
     // Get instance field reference: public System.Single amp_release
-    float& dyn_amp_release();
+    [[deprecated]] float& dyn_amp_release();
     // Get instance field reference: public System.Single amp_sustain
-    float& dyn_amp_sustain();
+    [[deprecated]] float& dyn_amp_sustain();
     // Get instance field reference: public System.Single arp_frequency
-    float& dyn_arp_frequency();
+    [[deprecated]] float& dyn_arp_frequency();
     // Get instance field reference: public System.Single arp_gate
-    float& dyn_arp_gate();
+    [[deprecated]] float& dyn_arp_gate();
     // Get instance field reference: public System.Single arp_octaves
-    float& dyn_arp_octaves();
+    [[deprecated]] float& dyn_arp_octaves();
     // Get instance field reference: public System.Single arp_on
-    float& dyn_arp_on();
+    [[deprecated]] float& dyn_arp_on();
     // Get instance field reference: public System.Single arp_pattern
-    float& dyn_arp_pattern();
+    [[deprecated]] float& dyn_arp_pattern();
     // Get instance field reference: public System.Single arp_sync
-    float& dyn_arp_sync();
+    [[deprecated]] float& dyn_arp_sync();
     // Get instance field reference: public System.Single arp_tempo
-    float& dyn_arp_tempo();
+    [[deprecated]] float& dyn_arp_tempo();
     // Get instance field reference: public System.Single beats_per_minute
-    float& dyn_beats_per_minute();
+    [[deprecated]] float& dyn_beats_per_minute();
     // Get instance field reference: public System.Single cross_modulation
-    float& dyn_cross_modulation();
+    [[deprecated]] float& dyn_cross_modulation();
     // Get instance field reference: public System.Single cutoff
-    float& dyn_cutoff();
+    [[deprecated]] float& dyn_cutoff();
     // Get instance field reference: public System.Single delay_dry_wet
-    float& dyn_delay_dry_wet();
+    [[deprecated]] float& dyn_delay_dry_wet();
     // Get instance field reference: public System.Single delay_feedback
-    float& dyn_delay_feedback();
+    [[deprecated]] float& dyn_delay_feedback();
     // Get instance field reference: public System.Single delay_frequency
-    float& dyn_delay_frequency();
+    [[deprecated]] float& dyn_delay_frequency();
     // Get instance field reference: public System.Single delay_on
-    float& dyn_delay_on();
+    [[deprecated]] float& dyn_delay_on();
     // Get instance field reference: public System.Single delay_sync
-    float& dyn_delay_sync();
+    [[deprecated]] float& dyn_delay_sync();
     // Get instance field reference: public System.Single delay_tempo
-    float& dyn_delay_tempo();
+    [[deprecated]] float& dyn_delay_tempo();
     // Get instance field reference: public System.Single distortion_drive
-    float& dyn_distortion_drive();
+    [[deprecated]] float& dyn_distortion_drive();
     // Get instance field reference: public System.Single distortion_mix
-    float& dyn_distortion_mix();
+    [[deprecated]] float& dyn_distortion_mix();
     // Get instance field reference: public System.Single distortion_on
-    float& dyn_distortion_on();
+    [[deprecated]] float& dyn_distortion_on();
     // Get instance field reference: public System.Single distortion_type
-    float& dyn_distortion_type();
+    [[deprecated]] float& dyn_distortion_type();
     // Get instance field reference: public System.Single fil_attack
-    float& dyn_fil_attack();
+    [[deprecated]] float& dyn_fil_attack();
     // Get instance field reference: public System.Single fil_decay
-    float& dyn_fil_decay();
+    [[deprecated]] float& dyn_fil_decay();
     // Get instance field reference: public System.Single fil_env_depth
-    float& dyn_fil_env_depth();
+    [[deprecated]] float& dyn_fil_env_depth();
     // Get instance field reference: public System.Single fil_release
-    float& dyn_fil_release();
+    [[deprecated]] float& dyn_fil_release();
     // Get instance field reference: public System.Single fil_sustain
-    float& dyn_fil_sustain();
+    [[deprecated]] float& dyn_fil_sustain();
     // Get instance field reference: public System.Single filter_blend
-    float& dyn_filter_blend();
+    [[deprecated]] float& dyn_filter_blend();
     // Get instance field reference: public System.Single filter_drive
-    float& dyn_filter_drive();
+    [[deprecated]] float& dyn_filter_drive();
     // Get instance field reference: public System.Single filter_on
-    float& dyn_filter_on();
+    [[deprecated]] float& dyn_filter_on();
     // Get instance field reference: public System.Single filter_saturation
-    float& dyn_filter_saturation();
+    [[deprecated]] float& dyn_filter_saturation();
     // Get instance field reference: public System.Single filter_shelf
-    float& dyn_filter_shelf();
+    [[deprecated]] float& dyn_filter_shelf();
     // Get instance field reference: public System.Single filter_style
-    float& dyn_filter_style();
+    [[deprecated]] float& dyn_filter_style();
     // Get instance field reference: public System.Single filter_type
-    float& dyn_filter_type();
+    [[deprecated]] float& dyn_filter_type();
     // Get instance field reference: public System.Single formant_on
-    float& dyn_formant_on();
+    [[deprecated]] float& dyn_formant_on();
     // Get instance field reference: public System.Single formant_x
-    float& dyn_formant_x();
+    [[deprecated]] float& dyn_formant_x();
     // Get instance field reference: public System.Single formant_y
-    float& dyn_formant_y();
+    [[deprecated]] float& dyn_formant_y();
     // Get instance field reference: public System.Single keytrack
-    float& dyn_keytrack();
+    [[deprecated]] float& dyn_keytrack();
     // Get instance field reference: public System.Single legato
-    float& dyn_legato();
+    [[deprecated]] float& dyn_legato();
     // Get instance field reference: public System.Single mod_attack
-    float& dyn_mod_attack();
+    [[deprecated]] float& dyn_mod_attack();
     // Get instance field reference: public System.Single mod_decay
-    float& dyn_mod_decay();
+    [[deprecated]] float& dyn_mod_decay();
     // Get instance field reference: public System.Single mod_release
-    float& dyn_mod_release();
+    [[deprecated]] float& dyn_mod_release();
     // Get instance field reference: public System.Single mod_sustain
-    float& dyn_mod_sustain();
+    [[deprecated]] float& dyn_mod_sustain();
     // Get instance field reference: public System.Single mono_lfo_1_amplitude
-    float& dyn_mono_lfo_1_amplitude();
+    [[deprecated]] float& dyn_mono_lfo_1_amplitude();
     // Get instance field reference: public System.Single mono_lfo_1_frequency
-    float& dyn_mono_lfo_1_frequency();
+    [[deprecated]] float& dyn_mono_lfo_1_frequency();
     // Get instance field reference: public System.Single mono_lfo_1_retrigger
-    float& dyn_mono_lfo_1_retrigger();
+    [[deprecated]] float& dyn_mono_lfo_1_retrigger();
     // Get instance field reference: public System.Single mono_lfo_1_sync
-    float& dyn_mono_lfo_1_sync();
+    [[deprecated]] float& dyn_mono_lfo_1_sync();
     // Get instance field reference: public System.Single mono_lfo_1_tempo
-    float& dyn_mono_lfo_1_tempo();
+    [[deprecated]] float& dyn_mono_lfo_1_tempo();
     // Get instance field reference: public System.Single mono_lfo_1_waveform
-    float& dyn_mono_lfo_1_waveform();
+    [[deprecated]] float& dyn_mono_lfo_1_waveform();
     // Get instance field reference: public System.Single mono_lfo_2_amplitude
-    float& dyn_mono_lfo_2_amplitude();
+    [[deprecated]] float& dyn_mono_lfo_2_amplitude();
     // Get instance field reference: public System.Single mono_lfo_2_frequency
-    float& dyn_mono_lfo_2_frequency();
+    [[deprecated]] float& dyn_mono_lfo_2_frequency();
     // Get instance field reference: public System.Single mono_lfo_2_retrigger
-    float& dyn_mono_lfo_2_retrigger();
+    [[deprecated]] float& dyn_mono_lfo_2_retrigger();
     // Get instance field reference: public System.Single mono_lfo_2_sync
-    float& dyn_mono_lfo_2_sync();
+    [[deprecated]] float& dyn_mono_lfo_2_sync();
     // Get instance field reference: public System.Single mono_lfo_2_tempo
-    float& dyn_mono_lfo_2_tempo();
+    [[deprecated]] float& dyn_mono_lfo_2_tempo();
     // Get instance field reference: public System.Single mono_lfo_2_waveform
-    float& dyn_mono_lfo_2_waveform();
+    [[deprecated]] float& dyn_mono_lfo_2_waveform();
     // Get instance field reference: public System.Single noise_volume
-    float& dyn_noise_volume();
+    [[deprecated]] float& dyn_noise_volume();
     // Get instance field reference: public System.Single num_steps
-    float& dyn_num_steps();
+    [[deprecated]] float& dyn_num_steps();
     // Get instance field reference: public System.Single osc_1_transpose
-    float& dyn_osc_1_transpose();
+    [[deprecated]] float& dyn_osc_1_transpose();
     // Get instance field reference: public System.Single osc_1_tune
-    float& dyn_osc_1_tune();
+    [[deprecated]] float& dyn_osc_1_tune();
     // Get instance field reference: public System.Single osc_1_unison_detune
-    float& dyn_osc_1_unison_detune();
+    [[deprecated]] float& dyn_osc_1_unison_detune();
     // Get instance field reference: public System.Single osc_1_unison_voices
-    float& dyn_osc_1_unison_voices();
+    [[deprecated]] float& dyn_osc_1_unison_voices();
     // Get instance field reference: public System.Single osc_1_volume
-    float& dyn_osc_1_volume();
+    [[deprecated]] float& dyn_osc_1_volume();
     // Get instance field reference: public System.Single osc_1_waveform
-    float& dyn_osc_1_waveform();
+    [[deprecated]] float& dyn_osc_1_waveform();
     // Get instance field reference: public System.Single osc_2_transpose
-    float& dyn_osc_2_transpose();
+    [[deprecated]] float& dyn_osc_2_transpose();
     // Get instance field reference: public System.Single osc_2_tune
-    float& dyn_osc_2_tune();
+    [[deprecated]] float& dyn_osc_2_tune();
     // Get instance field reference: public System.Single osc_2_unison_detune
-    float& dyn_osc_2_unison_detune();
+    [[deprecated]] float& dyn_osc_2_unison_detune();
     // Get instance field reference: public System.Single osc_2_unison_voices
-    float& dyn_osc_2_unison_voices();
+    [[deprecated]] float& dyn_osc_2_unison_voices();
     // Get instance field reference: public System.Single osc_2_volume
-    float& dyn_osc_2_volume();
+    [[deprecated]] float& dyn_osc_2_volume();
     // Get instance field reference: public System.Single osc_2_waveform
-    float& dyn_osc_2_waveform();
+    [[deprecated]] float& dyn_osc_2_waveform();
     // Get instance field reference: public System.Single osc_feedback_amount
-    float& dyn_osc_feedback_amount();
+    [[deprecated]] float& dyn_osc_feedback_amount();
     // Get instance field reference: public System.Single osc_feedback_transpose
-    float& dyn_osc_feedback_transpose();
+    [[deprecated]] float& dyn_osc_feedback_transpose();
     // Get instance field reference: public System.Single osc_feedback_tune
-    float& dyn_osc_feedback_tune();
+    [[deprecated]] float& dyn_osc_feedback_tune();
     // Get instance field reference: public System.Single osc_mix
-    float& dyn_osc_mix();
+    [[deprecated]] float& dyn_osc_mix();
     // Get instance field reference: public System.Single pitch_bend_range
-    float& dyn_pitch_bend_range();
+    [[deprecated]] float& dyn_pitch_bend_range();
     // Get instance field reference: public System.Single poly_lfo_amplitude
-    float& dyn_poly_lfo_amplitude();
+    [[deprecated]] float& dyn_poly_lfo_amplitude();
     // Get instance field reference: public System.Single poly_lfo_frequency
-    float& dyn_poly_lfo_frequency();
+    [[deprecated]] float& dyn_poly_lfo_frequency();
     // Get instance field reference: public System.Single poly_lfo_sync
-    float& dyn_poly_lfo_sync();
+    [[deprecated]] float& dyn_poly_lfo_sync();
     // Get instance field reference: public System.Single poly_lfo_tempo
-    float& dyn_poly_lfo_tempo();
+    [[deprecated]] float& dyn_poly_lfo_tempo();
     // Get instance field reference: public System.Single poly_lfo_waveform
-    float& dyn_poly_lfo_waveform();
+    [[deprecated]] float& dyn_poly_lfo_waveform();
     // Get instance field reference: public System.Single polyphony
-    float& dyn_polyphony();
+    [[deprecated]] float& dyn_polyphony();
     // Get instance field reference: public System.Single portamento
-    float& dyn_portamento();
+    [[deprecated]] float& dyn_portamento();
     // Get instance field reference: public System.Single portamento_type
-    float& dyn_portamento_type();
+    [[deprecated]] float& dyn_portamento_type();
     // Get instance field reference: public System.Single resonance
-    float& dyn_resonance();
+    [[deprecated]] float& dyn_resonance();
     // Get instance field reference: public System.Single reverb_damping
-    float& dyn_reverb_damping();
+    [[deprecated]] float& dyn_reverb_damping();
     // Get instance field reference: public System.Single reverb_dry_wet
-    float& dyn_reverb_dry_wet();
+    [[deprecated]] float& dyn_reverb_dry_wet();
     // Get instance field reference: public System.Single reverb_feedback
-    float& dyn_reverb_feedback();
+    [[deprecated]] float& dyn_reverb_feedback();
     // Get instance field reference: public System.Single reverb_on
-    float& dyn_reverb_on();
+    [[deprecated]] float& dyn_reverb_on();
     // Get instance field reference: public System.Single step_frequency
-    float& dyn_step_frequency();
+    [[deprecated]] float& dyn_step_frequency();
     // Get instance field reference: public System.Single step_seq_00
-    float& dyn_step_seq_00();
+    [[deprecated]] float& dyn_step_seq_00();
     // Get instance field reference: public System.Single step_seq_01
-    float& dyn_step_seq_01();
+    [[deprecated]] float& dyn_step_seq_01();
     // Get instance field reference: public System.Single step_seq_02
-    float& dyn_step_seq_02();
+    [[deprecated]] float& dyn_step_seq_02();
     // Get instance field reference: public System.Single step_seq_03
-    float& dyn_step_seq_03();
+    [[deprecated]] float& dyn_step_seq_03();
     // Get instance field reference: public System.Single step_seq_04
-    float& dyn_step_seq_04();
+    [[deprecated]] float& dyn_step_seq_04();
     // Get instance field reference: public System.Single step_seq_05
-    float& dyn_step_seq_05();
+    [[deprecated]] float& dyn_step_seq_05();
     // Get instance field reference: public System.Single step_seq_06
-    float& dyn_step_seq_06();
+    [[deprecated]] float& dyn_step_seq_06();
     // Get instance field reference: public System.Single step_seq_07
-    float& dyn_step_seq_07();
+    [[deprecated]] float& dyn_step_seq_07();
     // Get instance field reference: public System.Single step_seq_08
-    float& dyn_step_seq_08();
+    [[deprecated]] float& dyn_step_seq_08();
     // Get instance field reference: public System.Single step_seq_09
-    float& dyn_step_seq_09();
+    [[deprecated]] float& dyn_step_seq_09();
     // Get instance field reference: public System.Single step_seq_10
-    float& dyn_step_seq_10();
+    [[deprecated]] float& dyn_step_seq_10();
     // Get instance field reference: public System.Single step_seq_11
-    float& dyn_step_seq_11();
+    [[deprecated]] float& dyn_step_seq_11();
     // Get instance field reference: public System.Single step_seq_12
-    float& dyn_step_seq_12();
+    [[deprecated]] float& dyn_step_seq_12();
     // Get instance field reference: public System.Single step_seq_13
-    float& dyn_step_seq_13();
+    [[deprecated]] float& dyn_step_seq_13();
     // Get instance field reference: public System.Single step_seq_14
-    float& dyn_step_seq_14();
+    [[deprecated]] float& dyn_step_seq_14();
     // Get instance field reference: public System.Single step_seq_15
-    float& dyn_step_seq_15();
+    [[deprecated]] float& dyn_step_seq_15();
     // Get instance field reference: public System.Single step_seq_16
-    float& dyn_step_seq_16();
+    [[deprecated]] float& dyn_step_seq_16();
     // Get instance field reference: public System.Single step_seq_17
-    float& dyn_step_seq_17();
+    [[deprecated]] float& dyn_step_seq_17();
     // Get instance field reference: public System.Single step_seq_18
-    float& dyn_step_seq_18();
+    [[deprecated]] float& dyn_step_seq_18();
     // Get instance field reference: public System.Single step_seq_19
-    float& dyn_step_seq_19();
+    [[deprecated]] float& dyn_step_seq_19();
     // Get instance field reference: public System.Single step_seq_20
-    float& dyn_step_seq_20();
+    [[deprecated]] float& dyn_step_seq_20();
     // Get instance field reference: public System.Single step_seq_21
-    float& dyn_step_seq_21();
+    [[deprecated]] float& dyn_step_seq_21();
     // Get instance field reference: public System.Single step_seq_22
-    float& dyn_step_seq_22();
+    [[deprecated]] float& dyn_step_seq_22();
     // Get instance field reference: public System.Single step_seq_23
-    float& dyn_step_seq_23();
+    [[deprecated]] float& dyn_step_seq_23();
     // Get instance field reference: public System.Single step_seq_24
-    float& dyn_step_seq_24();
+    [[deprecated]] float& dyn_step_seq_24();
     // Get instance field reference: public System.Single step_seq_25
-    float& dyn_step_seq_25();
+    [[deprecated]] float& dyn_step_seq_25();
     // Get instance field reference: public System.Single step_seq_26
-    float& dyn_step_seq_26();
+    [[deprecated]] float& dyn_step_seq_26();
     // Get instance field reference: public System.Single step_seq_27
-    float& dyn_step_seq_27();
+    [[deprecated]] float& dyn_step_seq_27();
     // Get instance field reference: public System.Single step_seq_28
-    float& dyn_step_seq_28();
+    [[deprecated]] float& dyn_step_seq_28();
     // Get instance field reference: public System.Single step_seq_29
-    float& dyn_step_seq_29();
+    [[deprecated]] float& dyn_step_seq_29();
     // Get instance field reference: public System.Single step_seq_30
-    float& dyn_step_seq_30();
+    [[deprecated]] float& dyn_step_seq_30();
     // Get instance field reference: public System.Single step_seq_31
-    float& dyn_step_seq_31();
+    [[deprecated]] float& dyn_step_seq_31();
     // Get instance field reference: public System.Single step_sequencer_retrigger
-    float& dyn_step_sequencer_retrigger();
+    [[deprecated]] float& dyn_step_sequencer_retrigger();
     // Get instance field reference: public System.Single step_sequencer_sync
-    float& dyn_step_sequencer_sync();
+    [[deprecated]] float& dyn_step_sequencer_sync();
     // Get instance field reference: public System.Single step_sequencer_tempo
-    float& dyn_step_sequencer_tempo();
+    [[deprecated]] float& dyn_step_sequencer_tempo();
     // Get instance field reference: public System.Single step_smoothing
-    float& dyn_step_smoothing();
+    [[deprecated]] float& dyn_step_smoothing();
     // Get instance field reference: public System.Single stutter_frequency
-    float& dyn_stutter_frequency();
+    [[deprecated]] float& dyn_stutter_frequency();
     // Get instance field reference: public System.Single stutter_on
-    float& dyn_stutter_on();
+    [[deprecated]] float& dyn_stutter_on();
     // Get instance field reference: public System.Single stutter_resample_frequency
-    float& dyn_stutter_resample_frequency();
+    [[deprecated]] float& dyn_stutter_resample_frequency();
     // Get instance field reference: public System.Single stutter_resample_sync
-    float& dyn_stutter_resample_sync();
+    [[deprecated]] float& dyn_stutter_resample_sync();
     // Get instance field reference: public System.Single stutter_resample_tempo
-    float& dyn_stutter_resample_tempo();
+    [[deprecated]] float& dyn_stutter_resample_tempo();
     // Get instance field reference: public System.Single stutter_softness
-    float& dyn_stutter_softness();
+    [[deprecated]] float& dyn_stutter_softness();
     // Get instance field reference: public System.Single stutter_sync
-    float& dyn_stutter_sync();
+    [[deprecated]] float& dyn_stutter_sync();
     // Get instance field reference: public System.Single stutter_tempo
-    float& dyn_stutter_tempo();
+    [[deprecated]] float& dyn_stutter_tempo();
     // Get instance field reference: public System.Single sub_octave
-    float& dyn_sub_octave();
+    [[deprecated]] float& dyn_sub_octave();
     // Get instance field reference: public System.Single sub_shuffle
-    float& dyn_sub_shuffle();
+    [[deprecated]] float& dyn_sub_shuffle();
     // Get instance field reference: public System.Single sub_volume
-    float& dyn_sub_volume();
+    [[deprecated]] float& dyn_sub_volume();
     // Get instance field reference: public System.Single sub_waveform
-    float& dyn_sub_waveform();
+    [[deprecated]] float& dyn_sub_waveform();
     // Get instance field reference: public System.Single unison_1_harmonize
-    float& dyn_unison_1_harmonize();
+    [[deprecated]] float& dyn_unison_1_harmonize();
     // Get instance field reference: public System.Single unison_2_harmonize
-    float& dyn_unison_2_harmonize();
+    [[deprecated]] float& dyn_unison_2_harmonize();
     // Get instance field reference: public System.Single velocity_track
-    float& dyn_velocity_track();
+    [[deprecated]] float& dyn_velocity_track();
     // Get instance field reference: public System.Single volume
-    float& dyn_volume();
+    [[deprecated]] float& dyn_volume();
     // Get instance field reference: public AudioHelm.HelmModulationSetting[] modulations
-    ::ArrayW<::AudioHelm::HelmModulationSetting*>& dyn_modulations();
+    [[deprecated]] ::ArrayW<::AudioHelm::HelmModulationSetting*>& dyn_modulations();
     // static private System.Void .cctor()
-    // Offset: 0x89B158
+    // Offset: 0x193D904
     static void _cctor();
     // static public System.String ConvertToPlugin(System.String name)
-    // Offset: 0x89ABF8
+    // Offset: 0x193D3A4
     static ::StringW ConvertToPlugin(::StringW name);
     // static public System.Int32 GetSourceIndex(System.String source)
-    // Offset: 0x89AD60
+    // Offset: 0x193D50C
     static int GetSourceIndex(::StringW source);
     // static public System.Int32 GetDestinationIndex(System.String dest)
-    // Offset: 0x89AE4C
+    // Offset: 0x193D5F8
     static int GetDestinationIndex(::StringW dest);
     // static public AudioHelm.HelmPatchSettings Clone(AudioHelm.HelmPatchSettings other)
-    // Offset: 0x89AF38
+    // Offset: 0x193D6E4
     static ::AudioHelm::HelmPatchSettings* Clone(::AudioHelm::HelmPatchSettings* other);
     // public System.Void .ctor()
-    // Offset: 0x89B150
+    // Offset: 0x193D8FC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

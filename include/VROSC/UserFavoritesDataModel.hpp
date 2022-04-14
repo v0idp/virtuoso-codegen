@@ -42,15 +42,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::UserFavoritesDataModel::Favorite
     class Favorite;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<VROSC.UserFavoritesDataModel/VROSC.Favorite> Favorites
     // Size: 0x8
     // Offset: 0x18
@@ -63,19 +55,19 @@ namespace VROSC {
       return Favorites;
     }
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.UserFavoritesDataModel/VROSC.Favorite> Favorites
-    ::System::Collections::Generic::List_1<::VROSC::UserFavoritesDataModel::Favorite*>*& dyn_Favorites();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UserFavoritesDataModel::Favorite*>*& dyn_Favorites();
     // public override System.String get_Key()
-    // Offset: 0x13A982C
+    // Offset: 0x191D594
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
     // public override System.Int32 get_Version()
-    // Offset: 0x13A9870
+    // Offset: 0x191D5D8
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Int32 BaseDataModel::get_Version()
     int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x13A8AB4
+    // Offset: 0x191C81C
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
     // Base method: System.Void Object::.ctor()

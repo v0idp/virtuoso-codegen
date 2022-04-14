@@ -61,15 +61,7 @@ namespace Oculus::Platform::Samples::VrBoardGame {
   // [TokenAttribute] Offset: FFFFFFFF
   class IAPManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Samples.VrBoardGame.GameController m_gameController
     // Size: 0x8
     // Offset: 0x18
@@ -92,32 +84,32 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Set static field: static private System.String CONSUMABLE_1
     static void _set_CONSUMABLE_1(::StringW value);
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameController m_gameController
-    ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
     // Get instance field reference: private UnityEngine.UI.Text m_priceText
-    ::UnityEngine::UI::Text*& dyn_m_priceText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_priceText();
     // private System.Void Start()
-    // Offset: 0x9673A0
+    // Offset: 0xB3973C
     void Start();
     // public System.Void FetchProductPrices()
-    // Offset: 0x9673C4
+    // Offset: 0xB39760
     void FetchProductPrices();
     // private System.Void GetProductsBySKUCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.ProductList> msg)
-    // Offset: 0x9675CC
+    // Offset: 0xB39968
     void GetProductsBySKUCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::ProductList*>* msg);
     // public System.Void FetchPurchasedProducts()
-    // Offset: 0x967508
+    // Offset: 0xB398A4
     void FetchPurchasedProducts();
     // private System.Void GetViewerPurchasesCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.PurchaseList> msg)
-    // Offset: 0x967AE8
+    // Offset: 0xB39E84
     void GetViewerPurchasesCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::PurchaseList*>* msg);
     // public System.Void BuyPowerBallsPressed()
-    // Offset: 0x967F14
+    // Offset: 0xB3A2B0
     void BuyPowerBallsPressed();
     // private System.Void LaunchCheckoutFlowCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Purchase> msg)
-    // Offset: 0x967FF0
+    // Offset: 0xB3A38C
     void LaunchCheckoutFlowCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Purchase*>* msg);
     // public System.Void .ctor()
-    // Offset: 0x9680DC
+    // Offset: 0xB3A478
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -48,15 +48,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class DocumentSnapshot : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly Firebase.Firestore.DocumentSnapshotProxy _proxy
     // Size: 0x8
     // Offset: 0x10
@@ -71,27 +63,27 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::Firebase::Firestore::FirebaseFirestore*) == 0x8);
     public:
     // Get instance field reference: private readonly Firebase.Firestore.DocumentSnapshotProxy _proxy
-    ::Firebase::Firestore::DocumentSnapshotProxy*& dyn__proxy();
+    [[deprecated]] ::Firebase::Firestore::DocumentSnapshotProxy*& dyn__proxy();
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestore _firestore
-    ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
+    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
     // public Firebase.Firestore.DocumentReference get_Reference()
-    // Offset: 0xC2F948
+    // Offset: 0xD51750
     ::Firebase::Firestore::DocumentReference* get_Reference();
     // public System.String get_Id()
-    // Offset: 0xC31844
+    // Offset: 0xD5397C
     ::StringW get_Id();
     // public System.Boolean get_Exists()
-    // Offset: 0xC31864
+    // Offset: 0xD5399C
     bool get_Exists();
     // System.Void .ctor(Firebase.Firestore.DocumentSnapshotProxy proxy, Firebase.Firestore.FirebaseFirestore firestore)
-    // Offset: 0xC30748
+    // Offset: 0xD52858
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DocumentSnapshot* New_ctor(::Firebase::Firestore::DocumentSnapshotProxy* proxy, ::Firebase::Firestore::FirebaseFirestore* firestore) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::DocumentSnapshot::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DocumentSnapshot*, creationType>(proxy, firestore)));
     }
     // public System.Collections.Generic.Dictionary`2<System.String,System.Object> ToDictionary(Firebase.Firestore.ServerTimestampBehavior serverTimestampBehavior)
-    // Offset: 0xC31884
+    // Offset: 0xD539BC
     ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* ToDictionary(::Firebase::Firestore::ServerTimestampBehavior serverTimestampBehavior);
     // public T ConvertTo(Firebase.Firestore.ServerTimestampBehavior serverTimestampBehavior)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -129,16 +121,19 @@ namespace Firebase::Firestore {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(this, ___generic__method, path, byref(value), serverTimestampBehavior);
     }
-    // public override System.Int32 GetHashCode()
-    // Offset: 0xC318E0
-    // Implemented from: System.Object
-    // Base method: System.Int32 Object::GetHashCode()
-    int GetHashCode();
+    // public System.Boolean Equals(Firebase.Firestore.DocumentSnapshot other)
+    // Offset: 0xD53A98
+    bool Equals(::Firebase::Firestore::DocumentSnapshot* other);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC31920
+    // Offset: 0xD53A18
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
+    // public override System.Int32 GetHashCode()
+    // Offset: 0xD53B7C
+    // Implemented from: System.Object
+    // Base method: System.Int32 Object::GetHashCode()
+    int GetHashCode();
   }; // Firebase.Firestore.DocumentSnapshot
   #pragma pack(pop)
   static check_size<sizeof(DocumentSnapshot), 24 + sizeof(::Firebase::Firestore::FirebaseFirestore*)> __Firebase_Firestore_DocumentSnapshotSizeCheck;
@@ -194,12 +189,13 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
 // Writing MetadataGetter for method: Firebase::Firestore::DocumentSnapshot::TryGetValue
 // Il2CppName: TryGetValue
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: Firebase::Firestore::DocumentSnapshot::GetHashCode
-// Il2CppName: GetHashCode
+// Writing MetadataGetter for method: Firebase::Firestore::DocumentSnapshot::Equals
+// Il2CppName: Equals
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Firebase::Firestore::DocumentSnapshot::*)()>(&Firebase::Firestore::DocumentSnapshot::GetHashCode)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Firebase::Firestore::DocumentSnapshot::*)(::Firebase::Firestore::DocumentSnapshot*)>(&Firebase::Firestore::DocumentSnapshot::Equals)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::DocumentSnapshot*), "GetHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+    static auto* other = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "DocumentSnapshot")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::DocumentSnapshot*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
   }
 };
 // Writing MetadataGetter for method: Firebase::Firestore::DocumentSnapshot::Equals
@@ -209,5 +205,13 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Fireb
   static const MethodInfo* get() {
     static auto* obj = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::DocumentSnapshot*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::DocumentSnapshot::GetHashCode
+// Il2CppName: GetHashCode
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Firebase::Firestore::DocumentSnapshot::*)()>(&Firebase::Firestore::DocumentSnapshot::GetHashCode)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::DocumentSnapshot*), "GetHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

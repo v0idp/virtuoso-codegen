@@ -35,20 +35,20 @@ namespace AudioHelm {
   class Sequencer::BeatAction : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x13498F4
+    // Offset: 0x8D486C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Sequencer::BeatAction* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Sequencer::BeatAction::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Sequencer::BeatAction*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Int32 index)
-    // Offset: 0x1349904
+    // Offset: 0x8D487C
     void Invoke(int index);
     // public System.IAsyncResult BeginInvoke(System.Int32 index, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1349B30
+    // Offset: 0x8D4AA8
     ::System::IAsyncResult* BeginInvoke(int index, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x1349BB8
+    // Offset: 0x8D4B30
     void EndInvoke(::System::IAsyncResult* result);
   }; // AudioHelm.Sequencer/AudioHelm.BeatAction
   #pragma pack(pop)

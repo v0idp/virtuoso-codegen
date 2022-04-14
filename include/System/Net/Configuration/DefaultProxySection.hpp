@@ -17,7 +17,6 @@
 namespace System::Configuration {
   // Forward declaring type: ConfigurationPropertyCollection
   class ConfigurationPropertyCollection;
-  // Skipping declaration: ConfigurationElement because it is already included!
 }
 // Completed forward declares
 // Type namespace: System.Net.Configuration
@@ -37,12 +36,12 @@ namespace System::Net::Configuration {
   class DefaultProxySection : public ::System::Configuration::ConfigurationSection {
     public:
     // protected override System.Configuration.ConfigurationPropertyCollection get_Properties()
-    // Offset: 0xE78BBC
+    // Offset: 0x10EC3DC
     // Implemented from: System.Configuration.ConfigurationElement
     // Base method: System.Configuration.ConfigurationPropertyCollection ConfigurationElement::get_Properties()
     ::System::Configuration::ConfigurationPropertyCollection* get_Properties();
     // public System.Void .ctor()
-    // Offset: 0xE78B80
+    // Offset: 0x10EC3A0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -51,7 +50,7 @@ namespace System::Net::Configuration {
       return THROW_UNLESS((::il2cpp_utils::New<DefaultProxySection*, creationType>()));
     }
     // protected override System.Void Reset(System.Configuration.ConfigurationElement parentElement)
-    // Offset: 0xE78BF8
+    // Offset: 0x10EC418
     // Implemented from: System.Configuration.ConfigurationElement
     // Base method: System.Void ConfigurationElement::Reset(System.Configuration.ConfigurationElement parentElement)
     void Reset(::System::Configuration::ConfigurationElement* parentElement);

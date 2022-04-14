@@ -32,16 +32,8 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x69 to desired offset: 0x70
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x672C90
+    // [HeaderAttribute] Offset: 0x788F44
     // private System.String[] _values
     // Size: 0x8
     // Offset: 0x70
@@ -50,12 +42,12 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: private System.String[] _values
-    ::ArrayW<::StringW>& dyn__values();
+    [[deprecated]] ::ArrayW<::StringW>& dyn__values();
     // private System.Void Awake()
-    // Offset: 0x13E28C8
+    // Offset: 0x1981998
     void Awake();
     // public System.Void .ctor()
-    // Offset: 0x13E28E4
+    // Offset: 0x19819B4
     // Implemented from: VROSC.UIScrollableContainer
     // Base method: System.Void UIScrollableContainer::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

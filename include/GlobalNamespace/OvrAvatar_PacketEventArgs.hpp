@@ -32,15 +32,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatar::PacketEventArgs : public ::System::EventArgs {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly OvrAvatarPacket Packet
     // Size: 0x8
     // Offset: 0x10
@@ -53,9 +45,9 @@ namespace GlobalNamespace {
       return Packet;
     }
     // Get instance field reference: public readonly OvrAvatarPacket Packet
-    ::GlobalNamespace::OvrAvatarPacket*& dyn_Packet();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarPacket*& dyn_Packet();
     // public System.Void .ctor(OvrAvatarPacket packet)
-    // Offset: 0x1340FDC
+    // Offset: 0x8CBF00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatar::PacketEventArgs* New_ctor(::GlobalNamespace::OvrAvatarPacket* packet) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatar::PacketEventArgs::.ctor");

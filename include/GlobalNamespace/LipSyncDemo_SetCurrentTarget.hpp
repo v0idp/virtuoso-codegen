@@ -38,15 +38,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class LipSyncDemo_SetCurrentTarget : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public EnableSwitch[] SwitchTargets
     // Size: 0x8
     // Offset: 0x18
@@ -75,27 +67,27 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public EnableSwitch[] SwitchTargets
-    ::ArrayW<::GlobalNamespace::EnableSwitch*>& dyn_SwitchTargets();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::EnableSwitch*>& dyn_SwitchTargets();
     // Get instance field reference: private System.Int32 targetSet
-    int& dyn_targetSet();
+    [[deprecated]] int& dyn_targetSet();
     // Get instance field reference: private System.Int32 maxTarget
-    int& dyn_maxTarget();
+    [[deprecated]] int& dyn_maxTarget();
     // Get instance field reference: private System.Boolean XRButtonBeingPressed
-    bool& dyn_XRButtonBeingPressed();
+    [[deprecated]] bool& dyn_XRButtonBeingPressed();
     // private System.Void Start()
-    // Offset: 0x12A88F0
+    // Offset: 0x18A7494
     void Start();
     // private System.Void Update()
-    // Offset: 0x12A8AE4
+    // Offset: 0x18A7688
     void Update();
     // private System.Void SetCurrentTarget()
-    // Offset: 0x12A8E3C
+    // Offset: 0x18A79E0
     void SetCurrentTarget();
     // private System.Void LocalTouchEventCallback(OVRTouchpad/TouchEvent touchEvent)
-    // Offset: 0x12A913C
+    // Offset: 0x18A7CE0
     void LocalTouchEventCallback(::GlobalNamespace::OVRTouchpad::TouchEvent touchEvent);
     // public System.Void .ctor()
-    // Offset: 0x12A918C
+    // Offset: 0x18A7D30
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

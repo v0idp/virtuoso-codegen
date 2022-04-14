@@ -24,15 +24,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class MidiManager::$$c__DisplayClass20_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 channel
     // Size: 0x4
     // Offset: 0x10
@@ -47,17 +39,17 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 channel
-    int& dyn_channel();
+    [[deprecated]] int& dyn_channel();
     // Get instance field reference: public System.Int32 note
-    int& dyn_note();
+    [[deprecated]] int& dyn_note();
     // System.Boolean <StopNote>b__0(VROSC.MidiManager/VROSC.ActiveNote a)
-    // Offset: 0x13DB434
+    // Offset: 0x1963150
     bool $StopNote$b__0(::VROSC::MidiManager::ActiveNote* a);
     // System.Boolean <StopNote>b__1(VROSC.MidiManager/VROSC.ActiveNote a)
-    // Offset: 0x13DB458
+    // Offset: 0x1963174
     bool $StopNote$b__1(::VROSC::MidiManager::ActiveNote* a);
     // public System.Void .ctor()
-    // Offset: 0x13DB42C
+    // Offset: 0x1963148
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

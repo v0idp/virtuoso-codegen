@@ -19,9 +19,6 @@
 namespace VROSC {
   // Forward declaring type: FullScreenFxController
   class FullScreenFxController;
-}
-// Forward declaring namespace: GlobalNamespace
-namespace GlobalNamespace {
   // Forward declaring type: EnvironmentController
   class EnvironmentController;
 }
@@ -42,58 +39,50 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoadScenesState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.FullScreenFxController _fullScreenFxController
     // Size: 0x8
     // Offset: 0x10
     ::VROSC::FullScreenFxController* fullScreenFxController;
     // Field size check
     static_assert(sizeof(::VROSC::FullScreenFxController*) == 0x8);
-    // private EnvironmentController _environmentController
+    // private VROSC.EnvironmentController _environmentController
     // Size: 0x8
     // Offset: 0x18
-    ::GlobalNamespace::EnvironmentController* environmentController;
+    ::VROSC::EnvironmentController* environmentController;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::EnvironmentController*) == 0x8);
+    static_assert(sizeof(::VROSC::EnvironmentController*) == 0x8);
     public:
     // Creating interface conversion operator: operator ::VROSC::IState
     operator ::VROSC::IState() noexcept {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.FullScreenFxController _fullScreenFxController
-    ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
-    // Get instance field reference: private EnvironmentController _environmentController
-    ::GlobalNamespace::EnvironmentController*& dyn__environmentController();
-    // public System.Void .ctor(VROSC.FullScreenFxController fullScreenFxController, EnvironmentController environmentController)
-    // Offset: 0x138D758
+    [[deprecated]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
+    // Get instance field reference: private VROSC.EnvironmentController _environmentController
+    [[deprecated]] ::VROSC::EnvironmentController*& dyn__environmentController();
+    // public System.Void .ctor(VROSC.FullScreenFxController fullScreenFxController, VROSC.EnvironmentController environmentController)
+    // Offset: 0x1951280
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoadScenesState* New_ctor(::VROSC::FullScreenFxController* fullScreenFxController, ::GlobalNamespace::EnvironmentController* environmentController) {
+    static LoadScenesState* New_ctor(::VROSC::FullScreenFxController* fullScreenFxController, ::VROSC::EnvironmentController* environmentController) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoadScenesState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LoadScenesState*, creationType>(fullScreenFxController, environmentController)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x138D790
+    // Offset: 0x19512B8
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x138D7AC
+    // Offset: 0x19512D4
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x138D7B0
+    // Offset: 0x19512D8
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x138D7B4
+    // Offset: 0x19512DC
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.LoadScenesState
   #pragma pack(pop)
-  static check_size<sizeof(LoadScenesState), 24 + sizeof(::GlobalNamespace::EnvironmentController*)> __VROSC_LoadScenesStateSizeCheck;
+  static check_size<sizeof(LoadScenesState), 24 + sizeof(::VROSC::EnvironmentController*)> __VROSC_LoadScenesStateSizeCheck;
   static_assert(sizeof(LoadScenesState) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"

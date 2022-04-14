@@ -59,25 +59,25 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.Error> <>9__68_3
     static void _set_$$9__68_3(::System::Action_1<::VROSC::Error>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1410184
+    // Offset: 0xE82234
     static void _cctor();
     // System.Void <LoadCloudData>b__65_5(VROSC.Error error)
-    // Offset: 0x14101EC
+    // Offset: 0xE8229C
     void $LoadCloudData$b__65_5(::VROSC::Error error);
     // System.Void <LoadCloudData>b__65_3(VROSC.Error error)
-    // Offset: 0x14101F0
+    // Offset: 0xE822A0
     void $LoadCloudData$b__65_3(::VROSC::Error error);
     // System.Void <LoadCloudData>b__65_1(VROSC.Error error)
-    // Offset: 0x14101F4
+    // Offset: 0xE822A4
     void $LoadCloudData$b__65_1(::VROSC::Error error);
     // System.Void <SaveControllers>b__68_1(VROSC.Error error)
-    // Offset: 0x14101F8
+    // Offset: 0xE822A8
     void $SaveControllers$b__68_1(::VROSC::Error error);
     // System.Void <SaveControllers>b__68_3(VROSC.Error error)
-    // Offset: 0x14102E0
+    // Offset: 0xE82390
     void $SaveControllers$b__68_3(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x14101E4
+    // Offset: 0xE82294
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

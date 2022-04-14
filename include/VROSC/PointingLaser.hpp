@@ -135,20 +135,12 @@ namespace VROSC {
       // Set static field: static public VROSC.PointingLaser/VROSC.DisablingReason UsingUIHelper
       static void _set_UsingUIHelper(::VROSC::PointingLaser::DisablingReason value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.PointingLaser/VROSC.DisablingReason
     #pragma pack(pop)
     static check_size<sizeof(PointingLaser::DisablingReason), 0 + sizeof(int)> __VROSC_PointingLaser_DisablingReasonSizeCheck;
     static_assert(sizeof(PointingLaser::DisablingReason) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject _endDot
     // Size: 0x8
     // Offset: 0x18
@@ -245,70 +237,70 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _endDot
-    ::UnityEngine::GameObject*& dyn__endDot();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__endDot();
     // Get instance field reference: private UnityEngine.LineRenderer _laser
-    ::UnityEngine::LineRenderer*& dyn__laser();
+    [[deprecated]] ::UnityEngine::LineRenderer*& dyn__laser();
     // Get instance field reference: private VROSC.SmoothMovement _smoothMovement
-    ::VROSC::SmoothMovement*& dyn__smoothMovement();
+    [[deprecated]] ::VROSC::SmoothMovement*& dyn__smoothMovement();
     // Get instance field reference: private VROSC.InputDevice _device
-    ::VROSC::InputDevice*& dyn__device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private VROSC.InputSettings _settings
-    ::VROSC::InputSettings*& dyn__settings();
+    [[deprecated]] ::VROSC::InputSettings*& dyn__settings();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PointingLaser/VROSC.DisablingReason> _disablingReasons
-    ::System::Collections::Generic::List_1<::VROSC::PointingLaser::DisablingReason>*& dyn__disablingReasons();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PointingLaser::DisablingReason>*& dyn__disablingReasons();
     // Get instance field reference: public System.Action`2<System.Boolean,VROSC.PointingLaser/VROSC.DisablingReason> OnPointingDisabledChanged
-    ::System::Action_2<bool, ::VROSC::PointingLaser::DisablingReason>*& dyn_OnPointingDisabledChanged();
+    [[deprecated]] ::System::Action_2<bool, ::VROSC::PointingLaser::DisablingReason>*& dyn_OnPointingDisabledChanged();
     // Get instance field reference: private System.Boolean <PointingDisabled>k__BackingField
-    bool& dyn_$PointingDisabled$k__BackingField();
+    [[deprecated]] bool& dyn_$PointingDisabled$k__BackingField();
     // Get instance field reference: private System.Boolean <Dimmed>k__BackingField
-    bool& dyn_$Dimmed$k__BackingField();
+    [[deprecated]] bool& dyn_$Dimmed$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3[] _laserPositions
-    ::ArrayW<::UnityEngine::Vector3>& dyn__laserPositions();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__laserPositions();
     // Get instance field reference: private UnityEngine.Gradient _normalGradient
-    ::UnityEngine::Gradient*& dyn__normalGradient();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn__normalGradient();
     // Get instance field reference: private UnityEngine.Gradient _dimGradient
-    ::UnityEngine::Gradient*& dyn__dimGradient();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn__dimGradient();
     // Get instance field reference: private UnityEngine.Gradient _fadingGradient
-    ::UnityEngine::Gradient*& dyn__fadingGradient();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn__fadingGradient();
     // Get instance field reference: private System.Single _fadeTime
-    float& dyn__fadeTime();
+    [[deprecated]] float& dyn__fadeTime();
     // Get instance field reference: private System.Single _fadingTimer
-    float& dyn__fadingTimer();
+    [[deprecated]] float& dyn__fadingTimer();
     // public System.Boolean get_PointingDisabled()
-    // Offset: 0x8FD818
+    // Offset: 0xAE2108
     bool get_PointingDisabled();
     // private System.Void set_PointingDisabled(System.Boolean value)
-    // Offset: 0x8FD820
+    // Offset: 0xAE2110
     void set_PointingDisabled(bool value);
     // public System.Boolean get_Dimmed()
-    // Offset: 0x8FD82C
+    // Offset: 0xAE211C
     bool get_Dimmed();
     // private System.Void set_Dimmed(System.Boolean value)
-    // Offset: 0x8FD834
+    // Offset: 0xAE2124
     void set_Dimmed(bool value);
     // public System.Void SetPointingDisabled(System.Boolean disabled, VROSC.PointingLaser/VROSC.DisablingReason reason)
-    // Offset: 0x8FD840
+    // Offset: 0xAE2130
     void SetPointingDisabled(bool disabled, ::VROSC::PointingLaser::DisablingReason reason);
     // public System.Void Setup(VROSC.InputDevice controller, VROSC.InputSettings settings)
-    // Offset: 0x8FDA4C
+    // Offset: 0xAE233C
     void Setup(::VROSC::InputDevice* controller, ::VROSC::InputSettings* settings);
     // private System.Void UpdatePointingDisabled(System.Boolean disabled, VROSC.PointingLaser/VROSC.DisablingReason reason)
-    // Offset: 0x8FD938
+    // Offset: 0xAE2228
     void UpdatePointingDisabled(bool disabled, ::VROSC::PointingLaser::DisablingReason reason);
     // public System.Void SetDotPosition(UnityEngine.Vector3 position)
-    // Offset: 0x8FDB64
+    // Offset: 0xAE2454
     void SetDotPosition(::UnityEngine::Vector3 position);
     // public System.Void SetDimmed(System.Boolean dimmed)
-    // Offset: 0x8FDC74
+    // Offset: 0xAE2564
     void SetDimmed(bool dimmed);
     // private System.Void Update()
-    // Offset: 0x8FDD04
+    // Offset: 0xAE25F4
     void Update();
     // private UnityEngine.GradientAlphaKey LerpAlphaKey(UnityEngine.Gradient a, UnityEngine.Gradient b, System.Int32 key, System.Single value)
-    // Offset: 0x8FDE48
+    // Offset: 0xAE2738
     ::UnityEngine::GradientAlphaKey LerpAlphaKey(::UnityEngine::Gradient* a, ::UnityEngine::Gradient* b, int key, float value);
     // public System.Void .ctor()
-    // Offset: 0x8FDF74
+    // Offset: 0xAE2864
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

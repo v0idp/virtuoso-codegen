@@ -31,10 +31,10 @@ namespace VROSC {
   class DebugHelpers : public ::Il2CppObject {
     public:
     // static public System.String GetTransformPath(UnityEngine.Transform transform)
-    // Offset: 0x130A3AC
+    // Offset: 0x8E357C
     static ::StringW GetTransformPath(::UnityEngine::Transform* transform);
     // static private System.String GetParentPathRecursive(UnityEngine.Transform transform, System.String text)
-    // Offset: 0x130A3F0
+    // Offset: 0x8E35C0
     static ::StringW GetParentPathRecursive(::UnityEngine::Transform* transform, ::StringW text);
   }; // VROSC.DebugHelpers
   #pragma pack(pop)

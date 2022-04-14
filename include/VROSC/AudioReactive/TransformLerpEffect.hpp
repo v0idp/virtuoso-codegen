@@ -47,15 +47,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::TransformLerpEffect::$SpecificFlow$d__12
     class $SpecificFlow$d__12;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.TransformEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -82,27 +74,27 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.TransformEffectData _data
-    ::VROSC::AudioReactive::TransformEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::TransformEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Transform _target
-    ::UnityEngine::Transform*& dyn__target();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__target();
     // Get instance field reference: private UnityEngine.Transform _from
-    ::UnityEngine::Transform*& dyn__from();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__from();
     // Get instance field reference: private UnityEngine.Transform _to
-    ::UnityEngine::Transform*& dyn__to();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__to();
     // public VROSC.AudioReactive.TransformEffectData get_Data()
-    // Offset: 0x1402564
+    // Offset: 0xA2A844
     ::VROSC::AudioReactive::TransformEffectData* get_Data();
     // public UnityEngine.Transform get_Target()
-    // Offset: 0x140256C
+    // Offset: 0xA2A84C
     ::UnityEngine::Transform* get_Target();
     // public UnityEngine.Transform get_From()
-    // Offset: 0x1402574
+    // Offset: 0xA2A854
     ::UnityEngine::Transform* get_From();
     // public UnityEngine.Transform get_To()
-    // Offset: 0x140257C
+    // Offset: 0xA2A85C
     ::UnityEngine::Transform* get_To();
     // public System.Void .ctor()
-    // Offset: 0x14025F0
+    // Offset: 0xA2A8D0
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -113,7 +105,7 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<TransformLerpEffect*, creationType>()));
     }
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0x1402584
+    // Offset: 0xA2A864
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();

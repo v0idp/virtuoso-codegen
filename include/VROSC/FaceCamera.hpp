@@ -29,13 +29,13 @@ namespace VROSC {
   class FaceCamera : public ::UnityEngine::MonoBehaviour {
     public:
     // private System.Void Update()
-    // Offset: 0x13173A0
+    // Offset: 0x8F1450
     void Update();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x1317464
+    // Offset: 0x8F1510
     void OnDrawGizmos();
     // public System.Void .ctor()
-    // Offset: 0x1317610
+    // Offset: 0x8F16B4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

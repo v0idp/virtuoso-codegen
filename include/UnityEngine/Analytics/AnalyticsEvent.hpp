@@ -65,43 +65,39 @@ namespace UnityEngine::Analytics {
     static ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* _get_enumRenameTable();
     // Set static field: static private System.Collections.Generic.Dictionary`2<System.String,System.String> enumRenameTable
     static void _set_enumRenameTable(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* value);
-    // Get static field: static private System.Action`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>> CS$<>9__CachedAnonymousMethodDelegate2
-    static ::System::Action_1<::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>*>* _get_CS$$$9__CachedAnonymousMethodDelegate2();
-    // Set static field: static private System.Action`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>> CS$<>9__CachedAnonymousMethodDelegate2
-    static void _set_CS$$$9__CachedAnonymousMethodDelegate2(::System::Action_1<::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>*>* value);
     // static public System.Boolean get_debugMode()
-    // Offset: 0x1300B5C
+    // Offset: 0x1907500
     static bool get_debugMode();
     // static private System.Void .cctor()
-    // Offset: 0x1301FB4
+    // Offset: 0x1908958
     static void _cctor();
     // static private System.Void OnValidationFailed(System.String message)
-    // Offset: 0x1300BC0
+    // Offset: 0x1907564
     static void OnValidationFailed(::StringW message);
     // static private System.Void AddCustomEventData(System.Collections.Generic.IDictionary`2<System.String,System.Object> eventData)
-    // Offset: 0x1300C08
+    // Offset: 0x19075AC
     static void AddCustomEventData(::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* eventData);
     // static public UnityEngine.Analytics.AnalyticsResult Custom(System.String eventName, System.Collections.Generic.IDictionary`2<System.String,System.Object> eventData)
-    // Offset: 0x1300FA0
+    // Offset: 0x1907944
     static ::UnityEngine::Analytics::AnalyticsResult Custom(::StringW eventName, ::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* eventData);
     // static public UnityEngine.Analytics.AnalyticsResult ScreenVisit(System.String screenName, System.Collections.Generic.IDictionary`2<System.String,System.Object> eventData)
-    // Offset: 0x13018AC
+    // Offset: 0x1908250
     static ::UnityEngine::Analytics::AnalyticsResult ScreenVisit(::StringW screenName, ::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* eventData);
     // static public UnityEngine.Analytics.AnalyticsResult TutorialComplete(System.String tutorialId, System.Collections.Generic.IDictionary`2<System.String,System.Object> eventData)
-    // Offset: 0x1301A18
+    // Offset: 0x19083BC
     static ::UnityEngine::Analytics::AnalyticsResult TutorialComplete(::StringW tutorialId, ::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* eventData);
     // static public UnityEngine.Analytics.AnalyticsResult TutorialSkip(System.String tutorialId, System.Collections.Generic.IDictionary`2<System.String,System.Object> eventData)
-    // Offset: 0x1301B64
+    // Offset: 0x1908508
     static ::UnityEngine::Analytics::AnalyticsResult TutorialSkip(::StringW tutorialId, ::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* eventData);
     // static public UnityEngine.Analytics.AnalyticsResult TutorialStart(System.String tutorialId, System.Collections.Generic.IDictionary`2<System.String,System.Object> eventData)
-    // Offset: 0x1301CB0
+    // Offset: 0x1908654
     static ::UnityEngine::Analytics::AnalyticsResult TutorialStart(::StringW tutorialId, ::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* eventData);
     // static public UnityEngine.Analytics.AnalyticsResult TutorialStep(System.Int32 stepIndex, System.String tutorialId, System.Collections.Generic.IDictionary`2<System.String,System.Object> eventData)
-    // Offset: 0x1301DFC
+    // Offset: 0x19087A0
     static ::UnityEngine::Analytics::AnalyticsResult TutorialStep(int stepIndex, ::StringW tutorialId, ::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* eventData);
-    // static private System.Void <.cctor>b__1(System.Collections.Generic.IDictionary`2<System.String,System.Object> param0)
-    // Offset: 0x130233C
-    static void $_cctor$b__1(::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* param0);
+    // static private System.Void <s_StandardEventCallback>m__0(System.Collections.Generic.IDictionary`2<System.String,System.Object> param_0000dea8)
+    // Offset: 0x1908CBC
+    static void $s_StandardEventCallback$m__0(::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>* param_0000dea8);
   }; // UnityEngine.Analytics.AnalyticsEvent
   #pragma pack(pop)
 }
@@ -201,12 +197,12 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Analytics::AnalyticsEvent*), "TutorialStep", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{stepIndex, tutorialId, eventData});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Analytics::AnalyticsEvent::$_cctor$b__1
-// Il2CppName: <.cctor>b__1
+// Writing MetadataGetter for method: UnityEngine::Analytics::AnalyticsEvent::$s_StandardEventCallback$m__0
+// Il2CppName: <s_StandardEventCallback>m__0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>*)>(&UnityEngine::Analytics::AnalyticsEvent::$_cctor$b__1)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>*)>(&UnityEngine::Analytics::AnalyticsEvent::$s_StandardEventCallback$m__0)> {
   static const MethodInfo* get() {
-    static auto* param0 = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System.Collections.Generic", "IDictionary`2"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("System", "String"), ::il2cpp_utils::GetClassFromName("System", "Object")})->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::Analytics::AnalyticsEvent*), "<.cctor>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{param0});
+    static auto* param_0000dea8 = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System.Collections.Generic", "IDictionary`2"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("System", "String"), ::il2cpp_utils::GetClassFromName("System", "Object")})->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::Analytics::AnalyticsEvent*), "<s_StandardEventCallback>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{param_0000dea8});
   }
 };

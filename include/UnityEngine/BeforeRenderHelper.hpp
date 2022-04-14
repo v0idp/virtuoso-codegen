@@ -69,9 +69,9 @@ namespace UnityEngine {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Int32 order
-      int& dyn_order();
+      [[deprecated]] int& dyn_order();
       // Get instance field reference: UnityEngine.Events.UnityAction callback
-      ::UnityEngine::Events::UnityAction*& dyn_callback();
+      [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_callback();
     }; // UnityEngine.BeforeRenderHelper/UnityEngine.OrderBlock
     #pragma pack(pop)
     static check_size<sizeof(BeforeRenderHelper::OrderBlock), 8 + sizeof(::UnityEngine::Events::UnityAction*)> __UnityEngine_BeforeRenderHelper_OrderBlockSizeCheck;
@@ -81,19 +81,19 @@ namespace UnityEngine {
     // Set static field: static private System.Collections.Generic.List`1<UnityEngine.BeforeRenderHelper/UnityEngine.OrderBlock> s_OrderBlocks
     static void _set_s_OrderBlocks(::System::Collections::Generic::List_1<::UnityEngine::BeforeRenderHelper::OrderBlock>* value);
     // static private System.Void .cctor()
-    // Offset: 0xE31C9C
+    // Offset: 0x111E260
     static void _cctor();
     // static private System.Int32 GetUpdateOrder(UnityEngine.Events.UnityAction callback)
-    // Offset: 0xE31B74
+    // Offset: 0x111E138
     static int GetUpdateOrder(::UnityEngine::Events::UnityAction* callback);
     // static public System.Void RegisterCallback(UnityEngine.Events.UnityAction callback)
-    // Offset: 0xE2FBE8
+    // Offset: 0x111C1AC
     static void RegisterCallback(::UnityEngine::Events::UnityAction* callback);
     // static public System.Void UnregisterCallback(UnityEngine.Events.UnityAction callback)
-    // Offset: 0xE2FFBC
+    // Offset: 0x111C580
     static void UnregisterCallback(::UnityEngine::Events::UnityAction* callback);
     // static public System.Void Invoke()
-    // Offset: 0xE308F0
+    // Offset: 0x111CEB4
     static void Invoke();
   }; // UnityEngine.BeforeRenderHelper
   #pragma pack(pop)

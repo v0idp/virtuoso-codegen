@@ -89,7 +89,7 @@ namespace UnityEngine {
     static ::UnityEngine::TouchScreenKeyboardType _get_EmailAddress();
     // Set static field: static public UnityEngine.TouchScreenKeyboardType EmailAddress
     static void _set_EmailAddress(::UnityEngine::TouchScreenKeyboardType value);
-    // [ObsoleteAttribute] Offset: 0x56B354
+    // [ObsoleteAttribute] Offset: 0x665538
     // static field const value: static public UnityEngine.TouchScreenKeyboardType NintendoNetworkAccount
     static constexpr const int NintendoNetworkAccount = 8;
     // Get static field: static public UnityEngine.TouchScreenKeyboardType NintendoNetworkAccount
@@ -121,7 +121,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.TouchScreenKeyboardType OneTimeCode
     static void _set_OneTimeCode(::UnityEngine::TouchScreenKeyboardType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.TouchScreenKeyboardType
   #pragma pack(pop)
   static check_size<sizeof(TouchScreenKeyboardType), 0 + sizeof(int)> __UnityEngine_TouchScreenKeyboardTypeSizeCheck;

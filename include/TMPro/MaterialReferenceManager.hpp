@@ -48,15 +48,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class MaterialReferenceManager : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material> m_FontMaterialReferenceLookup
     // Size: 0x8
     // Offset: 0x10
@@ -87,78 +79,78 @@ namespace TMPro {
     // Set static field: static private TMPro.MaterialReferenceManager s_Instance
     static void _set_s_Instance(::TMPro::MaterialReferenceManager* value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material> m_FontMaterialReferenceLookup
-    ::System::Collections::Generic::Dictionary_2<int, ::UnityEngine::Material*>*& dyn_m_FontMaterialReferenceLookup();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::UnityEngine::Material*>*& dyn_m_FontMaterialReferenceLookup();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_FontAsset> m_FontAssetReferenceLookup
-    ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_FontAsset*>*& dyn_m_FontAssetReferenceLookup();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_FontAsset*>*& dyn_m_FontAssetReferenceLookup();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_SpriteAsset> m_SpriteAssetReferenceLookup
-    ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_SpriteAsset*>*& dyn_m_SpriteAssetReferenceLookup();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_SpriteAsset*>*& dyn_m_SpriteAssetReferenceLookup();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_ColorGradient> m_ColorGradientReferenceLookup
-    ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_ColorGradient*>*& dyn_m_ColorGradientReferenceLookup();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_ColorGradient*>*& dyn_m_ColorGradientReferenceLookup();
     // static public TMPro.MaterialReferenceManager get_instance()
-    // Offset: 0xA48FBC
+    // Offset: 0xC2ABCC
     static ::TMPro::MaterialReferenceManager* get_instance();
     // static public System.Void AddFontAsset(TMPro.TMP_FontAsset fontAsset)
-    // Offset: 0xA4916C
+    // Offset: 0xC2AD7C
     static void AddFontAsset(::TMPro::TMP_FontAsset* fontAsset);
     // private System.Void AddFontAssetInternal(TMPro.TMP_FontAsset fontAsset)
-    // Offset: 0xA49198
+    // Offset: 0xC2ADA8
     void AddFontAssetInternal(::TMPro::TMP_FontAsset* fontAsset);
     // static public System.Void AddSpriteAsset(TMPro.TMP_SpriteAsset spriteAsset)
-    // Offset: 0xA4926C
+    // Offset: 0xC2AE7C
     static void AddSpriteAsset(::TMPro::TMP_SpriteAsset* spriteAsset);
     // private System.Void AddSpriteAssetInternal(TMPro.TMP_SpriteAsset spriteAsset)
-    // Offset: 0xA49298
+    // Offset: 0xC2AEA8
     void AddSpriteAssetInternal(::TMPro::TMP_SpriteAsset* spriteAsset);
     // static public System.Void AddSpriteAsset(System.Int32 hashCode, TMPro.TMP_SpriteAsset spriteAsset)
-    // Offset: 0xA4936C
+    // Offset: 0xC2AF7C
     static void AddSpriteAsset(int hashCode, ::TMPro::TMP_SpriteAsset* spriteAsset);
     // private System.Void AddSpriteAssetInternal(System.Int32 hashCode, TMPro.TMP_SpriteAsset spriteAsset)
-    // Offset: 0xA493A0
+    // Offset: 0xC2AFB0
     void AddSpriteAssetInternal(int hashCode, ::TMPro::TMP_SpriteAsset* spriteAsset);
     // static public System.Void AddFontMaterial(System.Int32 hashCode, UnityEngine.Material material)
-    // Offset: 0xA49478
+    // Offset: 0xC2B088
     static void AddFontMaterial(int hashCode, ::UnityEngine::Material* material);
     // private System.Void AddFontMaterialInternal(System.Int32 hashCode, UnityEngine.Material material)
-    // Offset: 0xA494AC
+    // Offset: 0xC2B0BC
     void AddFontMaterialInternal(int hashCode, ::UnityEngine::Material* material);
     // static public System.Void AddColorGradientPreset(System.Int32 hashCode, TMPro.TMP_ColorGradient spriteAsset)
-    // Offset: 0xA49518
+    // Offset: 0xC2B128
     static void AddColorGradientPreset(int hashCode, ::TMPro::TMP_ColorGradient* spriteAsset);
     // private System.Void AddColorGradientPreset_Internal(System.Int32 hashCode, TMPro.TMP_ColorGradient spriteAsset)
-    // Offset: 0xA4954C
+    // Offset: 0xC2B15C
     void AddColorGradientPreset_Internal(int hashCode, ::TMPro::TMP_ColorGradient* spriteAsset);
     // public System.Boolean Contains(TMPro.TMP_FontAsset font)
-    // Offset: 0xA495F4
+    // Offset: 0xC2B204
     bool Contains(::TMPro::TMP_FontAsset* font);
     // public System.Boolean Contains(TMPro.TMP_SpriteAsset sprite)
-    // Offset: 0xA4965C
+    // Offset: 0xC2B26C
     bool Contains(::TMPro::TMP_SpriteAsset* sprite);
     // static public System.Boolean TryGetFontAsset(System.Int32 hashCode, out TMPro.TMP_FontAsset fontAsset)
-    // Offset: 0xA496C4
+    // Offset: 0xC2B2D4
     static bool TryGetFontAsset(int hashCode, ByRef<::TMPro::TMP_FontAsset*> fontAsset);
     // private System.Boolean TryGetFontAssetInternal(System.Int32 hashCode, out TMPro.TMP_FontAsset fontAsset)
-    // Offset: 0xA496F8
+    // Offset: 0xC2B308
     bool TryGetFontAssetInternal(int hashCode, ByRef<::TMPro::TMP_FontAsset*> fontAsset);
     // static public System.Boolean TryGetSpriteAsset(System.Int32 hashCode, out TMPro.TMP_SpriteAsset spriteAsset)
-    // Offset: 0xA49768
+    // Offset: 0xC2B378
     static bool TryGetSpriteAsset(int hashCode, ByRef<::TMPro::TMP_SpriteAsset*> spriteAsset);
     // private System.Boolean TryGetSpriteAssetInternal(System.Int32 hashCode, out TMPro.TMP_SpriteAsset spriteAsset)
-    // Offset: 0xA4979C
+    // Offset: 0xC2B3AC
     bool TryGetSpriteAssetInternal(int hashCode, ByRef<::TMPro::TMP_SpriteAsset*> spriteAsset);
     // static public System.Boolean TryGetColorGradientPreset(System.Int32 hashCode, out TMPro.TMP_ColorGradient gradientPreset)
-    // Offset: 0xA4980C
+    // Offset: 0xC2B41C
     static bool TryGetColorGradientPreset(int hashCode, ByRef<::TMPro::TMP_ColorGradient*> gradientPreset);
     // private System.Boolean TryGetColorGradientPresetInternal(System.Int32 hashCode, out TMPro.TMP_ColorGradient gradientPreset)
-    // Offset: 0xA49840
+    // Offset: 0xC2B450
     bool TryGetColorGradientPresetInternal(int hashCode, ByRef<::TMPro::TMP_ColorGradient*> gradientPreset);
     // static public System.Boolean TryGetMaterial(System.Int32 hashCode, out UnityEngine.Material material)
-    // Offset: 0xA498B0
+    // Offset: 0xC2B4C0
     static bool TryGetMaterial(int hashCode, ByRef<::UnityEngine::Material*> material);
     // private System.Boolean TryGetMaterialInternal(System.Int32 hashCode, out UnityEngine.Material material)
-    // Offset: 0xA498E4
+    // Offset: 0xC2B4F4
     bool TryGetMaterialInternal(int hashCode, ByRef<::UnityEngine::Material*> material);
     // public System.Void .ctor()
-    // Offset: 0xA49034
+    // Offset: 0xC2AC44
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

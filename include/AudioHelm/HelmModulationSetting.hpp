@@ -27,15 +27,7 @@ namespace AudioHelm {
   // [TokenAttribute] Offset: FFFFFFFF
   class HelmModulationSetting : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String source
     // Size: 0x8
     // Offset: 0x10
@@ -56,13 +48,13 @@ namespace AudioHelm {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.String source
-    ::StringW& dyn_source();
+    [[deprecated]] ::StringW& dyn_source();
     // Get instance field reference: public System.String destination
-    ::StringW& dyn_destination();
+    [[deprecated]] ::StringW& dyn_destination();
     // Get instance field reference: public System.Single amount
-    float& dyn_amount();
+    [[deprecated]] float& dyn_amount();
     // public System.Void .ctor()
-    // Offset: 0x89A97C
+    // Offset: 0x193D128
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

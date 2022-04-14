@@ -38,15 +38,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOTweenModuleUI::$$c__DisplayClass29_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.RectTransform target
     // Size: 0x8
     // Offset: 0x10
@@ -89,37 +81,37 @@ namespace DG::Tweening {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.RectTransform target
-    ::UnityEngine::RectTransform*& dyn_target();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn_target();
     // Get instance field reference: public System.Single startPosY
-    float& dyn_startPosY();
+    [[deprecated]] float& dyn_startPosY();
     // Get instance field reference: public System.Boolean offsetYSet
-    bool& dyn_offsetYSet();
+    [[deprecated]] bool& dyn_offsetYSet();
     // Get instance field reference: public System.Single offsetY
-    float& dyn_offsetY();
+    [[deprecated]] float& dyn_offsetY();
     // Get instance field reference: public DG.Tweening.Sequence s
-    ::DG::Tweening::Sequence*& dyn_s();
+    [[deprecated]] ::DG::Tweening::Sequence*& dyn_s();
     // Get instance field reference: public UnityEngine.Vector2 endValue
-    ::UnityEngine::Vector2& dyn_endValue();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_endValue();
     // UnityEngine.Vector2 <DOJumpAnchorPos>b__0()
-    // Offset: 0x1265248
+    // Offset: 0x17E36C0
     ::UnityEngine::Vector2 $DOJumpAnchorPos$b__0();
     // System.Void <DOJumpAnchorPos>b__1(UnityEngine.Vector2 x)
-    // Offset: 0x1265264
+    // Offset: 0x17E36DC
     void $DOJumpAnchorPos$b__1(::UnityEngine::Vector2 x);
     // System.Void <DOJumpAnchorPos>b__2()
-    // Offset: 0x1265280
+    // Offset: 0x17E36F8
     void $DOJumpAnchorPos$b__2();
     // UnityEngine.Vector2 <DOJumpAnchorPos>b__3()
-    // Offset: 0x12652B4
+    // Offset: 0x17E372C
     ::UnityEngine::Vector2 $DOJumpAnchorPos$b__3();
     // System.Void <DOJumpAnchorPos>b__4(UnityEngine.Vector2 x)
-    // Offset: 0x12652D0
+    // Offset: 0x17E3748
     void $DOJumpAnchorPos$b__4(::UnityEngine::Vector2 x);
     // System.Void <DOJumpAnchorPos>b__5()
-    // Offset: 0x12652EC
+    // Offset: 0x17E3764
     void $DOJumpAnchorPos$b__5();
     // public System.Void .ctor()
-    // Offset: 0x1265240
+    // Offset: 0x17E053C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

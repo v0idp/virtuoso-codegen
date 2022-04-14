@@ -34,16 +34,8 @@ namespace Facebook::WitAi::CallbackHandlers {
   // [TokenAttribute] Offset: FFFFFFFF
   class FormattedValueEvents : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x5B20D4
+    // [TooltipAttribute] Offset: 0x6C8204
     // public System.String format
     // Size: 0x8
     // Offset: 0x10
@@ -58,11 +50,11 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::ValueEvent*) == 0x8);
     public:
     // Get instance field reference: public System.String format
-    ::StringW& dyn_format();
+    [[deprecated]] ::StringW& dyn_format();
     // Get instance field reference: public Facebook.WitAi.CallbackHandlers.ValueEvent onFormattedValueEvent
-    ::Facebook::WitAi::CallbackHandlers::ValueEvent*& dyn_onFormattedValueEvent();
+    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::ValueEvent*& dyn_onFormattedValueEvent();
     // public System.Void .ctor()
-    // Offset: 0x10F83FC
+    // Offset: 0x166EC64
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

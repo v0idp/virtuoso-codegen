@@ -29,15 +29,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class InspectorCommentAttribute : public ::UnityEngine::PropertyAttribute {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String message
     // Size: 0x8
     // Offset: 0x10
@@ -50,9 +42,9 @@ namespace GlobalNamespace {
       return message;
     }
     // Get instance field reference: public readonly System.String message
-    ::StringW& dyn_message();
+    [[deprecated]] ::StringW& dyn_message();
     // public System.Void .ctor(System.String message)
-    // Offset: 0x12A69CC
+    // Offset: 0x18A4570
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InspectorCommentAttribute* New_ctor(::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::InspectorCommentAttribute::.ctor");

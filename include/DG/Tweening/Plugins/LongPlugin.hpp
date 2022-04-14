@@ -53,31 +53,31 @@ namespace DG::Tweening::Plugins {
   class LongPlugin : public ::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<int64_t, int64_t, ::DG::Tweening::Plugins::Options::NoOptions> {
     public:
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<System.Int64,System.Int64,DG.Tweening.Plugins.Options.NoOptions> t)
-    // Offset: 0x109E048
+    // Offset: 0x15E0670
     void Reset(::DG::Tweening::Core::TweenerCore_3<int64_t, int64_t, ::DG::Tweening::Plugins::Options::NoOptions>* t);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<System.Int64,System.Int64,DG.Tweening.Plugins.Options.NoOptions> t, System.Boolean isRelative)
-    // Offset: 0x109E04C
+    // Offset: 0x15E0674
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<int64_t, int64_t, ::DG::Tweening::Plugins::Options::NoOptions>* t, bool isRelative);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<System.Int64,System.Int64,DG.Tweening.Plugins.Options.NoOptions> t, System.Int64 fromValue, System.Boolean setImmediately)
-    // Offset: 0x109E0EC
+    // Offset: 0x15E0714
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<int64_t, int64_t, ::DG::Tweening::Plugins::Options::NoOptions>* t, int64_t fromValue, bool setImmediately);
     // public System.Int64 ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<System.Int64,System.Int64,DG.Tweening.Plugins.Options.NoOptions> t, System.Int64 value)
-    // Offset: 0x109E170
+    // Offset: 0x15E0798
     int64_t ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<int64_t, int64_t, ::DG::Tweening::Plugins::Options::NoOptions>* t, int64_t value);
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<System.Int64,System.Int64,DG.Tweening.Plugins.Options.NoOptions> t)
-    // Offset: 0x109E178
+    // Offset: 0x15E07A0
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<int64_t, int64_t, ::DG::Tweening::Plugins::Options::NoOptions>* t);
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<System.Int64,System.Int64,DG.Tweening.Plugins.Options.NoOptions> t)
-    // Offset: 0x109E198
+    // Offset: 0x15E07C0
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<int64_t, int64_t, ::DG::Tweening::Plugins::Options::NoOptions>* t);
     // public System.Single GetSpeedBasedDuration(DG.Tweening.Plugins.Options.NoOptions options, System.Single unitsXSecond, System.Int64 changeValue)
-    // Offset: 0x109E1B8
+    // Offset: 0x15E07E0
     float GetSpeedBasedDuration(::DG::Tweening::Plugins::Options::NoOptions options, float unitsXSecond, int64_t changeValue);
     // public System.Void EvaluateAndApply(DG.Tweening.Plugins.Options.NoOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<System.Int64> getter, DG.Tweening.Core.DOSetter`1<System.Int64> setter, System.Single elapsed, System.Int64 startValue, System.Int64 changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x109E1D0
+    // Offset: 0x15E07F8
     void EvaluateAndApply(::DG::Tweening::Plugins::Options::NoOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<int64_t>* getter, ::DG::Tweening::Core::DOSetter_1<int64_t>* setter, float elapsed, int64_t startValue, int64_t changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // public System.Void .ctor()
-    // Offset: 0x109E3A4
+    // Offset: 0x15E09CC
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
     // Base method: System.Void Object::.ctor()

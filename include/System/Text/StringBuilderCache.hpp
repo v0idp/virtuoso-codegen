@@ -35,13 +35,13 @@ namespace System::Text {
     // Set static field: static private System.Text.StringBuilder CachedInstance
     static void _set_CachedInstance(::System::Text::StringBuilder* value);
     // static public System.Text.StringBuilder Acquire(System.Int32 capacity)
-    // Offset: 0xEF3658
+    // Offset: 0x126766C
     static ::System::Text::StringBuilder* Acquire(int capacity);
     // static public System.Void Release(System.Text.StringBuilder sb)
-    // Offset: 0xEF371C
+    // Offset: 0x1267738
     static void Release(::System::Text::StringBuilder* sb);
     // static public System.String GetStringAndRelease(System.Text.StringBuilder sb)
-    // Offset: 0xEF3788
+    // Offset: 0x12677AC
     static ::StringW GetStringAndRelease(::System::Text::StringBuilder* sb);
   }; // System.Text.StringBuilderCache
   #pragma pack(pop)

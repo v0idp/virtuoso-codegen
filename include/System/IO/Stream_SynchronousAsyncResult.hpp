@@ -49,15 +49,7 @@ namespace System::IO {
     public:
     // Nested type: ::System::IO::Stream::SynchronousAsyncResult::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Object _stateObject
     // Size: 0x8
     // Offset: 0x10
@@ -104,58 +96,58 @@ namespace System::IO {
       return *reinterpret_cast<::System::IAsyncResult*>(this);
     }
     // Get instance field reference: private readonly System.Object _stateObject
-    ::Il2CppObject*& dyn__stateObject();
+    [[deprecated]] ::Il2CppObject*& dyn__stateObject();
     // Get instance field reference: private readonly System.Boolean _isWrite
-    bool& dyn__isWrite();
+    [[deprecated]] bool& dyn__isWrite();
     // Get instance field reference: private System.Threading.ManualResetEvent _waitHandle
-    ::System::Threading::ManualResetEvent*& dyn__waitHandle();
+    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn__waitHandle();
     // Get instance field reference: private System.Runtime.ExceptionServices.ExceptionDispatchInfo _exceptionInfo
-    ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn__exceptionInfo();
+    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn__exceptionInfo();
     // Get instance field reference: private System.Boolean _endXxxCalled
-    bool& dyn__endXxxCalled();
+    [[deprecated]] bool& dyn__endXxxCalled();
     // Get instance field reference: private System.Int32 _bytesRead
-    int& dyn__bytesRead();
+    [[deprecated]] int& dyn__bytesRead();
     // public System.Boolean get_IsCompleted()
-    // Offset: 0x108597C
+    // Offset: 0xE5C8C8
     bool get_IsCompleted();
     // public System.Threading.WaitHandle get_AsyncWaitHandle()
-    // Offset: 0x1085984
+    // Offset: 0xE5C8D0
     ::System::Threading::WaitHandle* get_AsyncWaitHandle();
     // public System.Object get_AsyncState()
-    // Offset: 0x1085AA0
+    // Offset: 0xE5C9EC
     ::Il2CppObject* get_AsyncState();
     // public System.Boolean get_CompletedSynchronously()
-    // Offset: 0x1085AA8
+    // Offset: 0xE5C9F4
     bool get_CompletedSynchronously();
     // System.Void .ctor(System.Int32 bytesRead, System.Object asyncStateObject)
-    // Offset: 0x10858B8
+    // Offset: 0xE5C804
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Stream::SynchronousAsyncResult* New_ctor(int bytesRead, ::Il2CppObject* asyncStateObject) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Stream::SynchronousAsyncResult::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Stream::SynchronousAsyncResult*, creationType>(bytesRead, asyncStateObject)));
     }
     // System.Void .ctor(System.Object asyncStateObject)
-    // Offset: 0x10858F4
+    // Offset: 0xE5C840
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Stream::SynchronousAsyncResult* New_ctor(::Il2CppObject* asyncStateObject) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Stream::SynchronousAsyncResult::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Stream::SynchronousAsyncResult*, creationType>(asyncStateObject)));
     }
     // System.Void .ctor(System.Exception ex, System.Object asyncStateObject, System.Boolean isWrite)
-    // Offset: 0x1085928
+    // Offset: 0xE5C874
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Stream::SynchronousAsyncResult* New_ctor(::System::Exception* ex, ::Il2CppObject* asyncStateObject, bool isWrite) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Stream::SynchronousAsyncResult::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Stream::SynchronousAsyncResult*, creationType>(ex, asyncStateObject, isWrite)));
     }
     // System.Void ThrowIfError()
-    // Offset: 0x1085AB0
+    // Offset: 0xE5C9FC
     void ThrowIfError();
     // static System.Int32 EndRead(System.IAsyncResult asyncResult)
-    // Offset: 0x1085AC4
+    // Offset: 0xE5CA10
     static int EndRead(::System::IAsyncResult* asyncResult);
     // static System.Void EndWrite(System.IAsyncResult asyncResult)
-    // Offset: 0x1085B64
+    // Offset: 0xE5CAB0
     static void EndWrite(::System::IAsyncResult* asyncResult);
   }; // System.IO.Stream/System.IO.SynchronousAsyncResult
   #pragma pack(pop)

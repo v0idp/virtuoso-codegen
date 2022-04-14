@@ -39,7 +39,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.Int64 targets
     static void _set_targets(int64_t value);
     // static private System.Void .cctor()
-    // Offset: 0x1358424
+    // Offset: 0x954D20
     static void _cctor();
   }; // ovrAvatarGazeTargets_Offsets
   #pragma pack(pop)

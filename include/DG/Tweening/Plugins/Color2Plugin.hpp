@@ -55,31 +55,31 @@ namespace DG::Tweening::Plugins {
   class Color2Plugin : public ::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<::DG::Tweening::Color2, ::DG::Tweening::Color2, ::DG::Tweening::Plugins::Options::ColorOptions> {
     public:
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<DG.Tweening.Color2,DG.Tweening.Color2,DG.Tweening.Plugins.Options.ColorOptions> t)
-    // Offset: 0x1091ADC
+    // Offset: 0x15D4104
     void Reset(::DG::Tweening::Core::TweenerCore_3<::DG::Tweening::Color2, ::DG::Tweening::Color2, ::DG::Tweening::Plugins::Options::ColorOptions>* t);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<DG.Tweening.Color2,DG.Tweening.Color2,DG.Tweening.Plugins.Options.ColorOptions> t, System.Boolean isRelative)
-    // Offset: 0x1091AE0
+    // Offset: 0x15D4108
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::DG::Tweening::Color2, ::DG::Tweening::Color2, ::DG::Tweening::Plugins::Options::ColorOptions>* t, bool isRelative);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<DG.Tweening.Color2,DG.Tweening.Color2,DG.Tweening.Plugins.Options.ColorOptions> t, DG.Tweening.Color2 fromValue, System.Boolean setImmediately)
-    // Offset: 0x1091D18
+    // Offset: 0x15D4340
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::DG::Tweening::Color2, ::DG::Tweening::Color2, ::DG::Tweening::Plugins::Options::ColorOptions>* t, ::DG::Tweening::Color2 fromValue, bool setImmediately);
     // public DG.Tweening.Color2 ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<DG.Tweening.Color2,DG.Tweening.Color2,DG.Tweening.Plugins.Options.ColorOptions> t, DG.Tweening.Color2 value)
-    // Offset: 0x1091E80
+    // Offset: 0x15D44A8
     ::DG::Tweening::Color2 ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<::DG::Tweening::Color2, ::DG::Tweening::Color2, ::DG::Tweening::Plugins::Options::ColorOptions>* t, ::DG::Tweening::Color2 value);
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<DG.Tweening.Color2,DG.Tweening.Color2,DG.Tweening.Plugins.Options.ColorOptions> t)
-    // Offset: 0x1091E8C
+    // Offset: 0x15D44B4
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<::DG::Tweening::Color2, ::DG::Tweening::Color2, ::DG::Tweening::Plugins::Options::ColorOptions>* t);
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<DG.Tweening.Color2,DG.Tweening.Color2,DG.Tweening.Plugins.Options.ColorOptions> t)
-    // Offset: 0x1091EF8
+    // Offset: 0x15D4520
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<::DG::Tweening::Color2, ::DG::Tweening::Color2, ::DG::Tweening::Plugins::Options::ColorOptions>* t);
     // public System.Single GetSpeedBasedDuration(DG.Tweening.Plugins.Options.ColorOptions options, System.Single unitsXSecond, DG.Tweening.Color2 changeValue)
-    // Offset: 0x1091F70
+    // Offset: 0x15D4598
     float GetSpeedBasedDuration(::DG::Tweening::Plugins::Options::ColorOptions options, float unitsXSecond, ::DG::Tweening::Color2 changeValue);
     // public System.Void EvaluateAndApply(DG.Tweening.Plugins.Options.ColorOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<DG.Tweening.Color2> getter, DG.Tweening.Core.DOSetter`1<DG.Tweening.Color2> setter, System.Single elapsed, DG.Tweening.Color2 startValue, DG.Tweening.Color2 changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x1091F7C
+    // Offset: 0x15D45A4
     void EvaluateAndApply(::DG::Tweening::Plugins::Options::ColorOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<::DG::Tweening::Color2>* getter, ::DG::Tweening::Core::DOSetter_1<::DG::Tweening::Color2>* setter, float elapsed, ::DG::Tweening::Color2 startValue, ::DG::Tweening::Color2 changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // public System.Void .ctor()
-    // Offset: 0x1092F10
+    // Offset: 0x15D5538
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
     // Base method: System.Void Object::.ctor()

@@ -103,42 +103,42 @@ namespace System::Globalization {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.String AppCompatLiteral
-      ::StringW& dyn_AppCompatLiteral();
+      [[deprecated]] ::StringW& dyn_AppCompatLiteral();
       // Get instance field reference: System.Int32 dd
-      int& dyn_dd();
+      [[deprecated]] int& dyn_dd();
       // Get instance field reference: System.Int32 hh
-      int& dyn_hh();
+      [[deprecated]] int& dyn_hh();
       // Get instance field reference: System.Int32 mm
-      int& dyn_mm();
+      [[deprecated]] int& dyn_mm();
       // Get instance field reference: System.Int32 ss
-      int& dyn_ss();
+      [[deprecated]] int& dyn_ss();
       // Get instance field reference: System.Int32 ff
-      int& dyn_ff();
+      [[deprecated]] int& dyn_ff();
       // Get instance field reference: private System.String[] literals
-      ::ArrayW<::StringW>& dyn_literals();
+      [[deprecated]] ::ArrayW<::StringW>& dyn_literals();
       // System.String get_Start()
-      // Offset: 0x108A88C
+      // Offset: 0xE61854
       ::StringW get_Start();
       // System.String get_DayHourSep()
-      // Offset: 0x108A8C0
+      // Offset: 0xE61888
       ::StringW get_DayHourSep();
       // System.String get_HourMinuteSep()
-      // Offset: 0x108A8F8
+      // Offset: 0xE618C0
       ::StringW get_HourMinuteSep();
       // System.String get_MinuteSecondSep()
-      // Offset: 0x108A930
+      // Offset: 0xE618F8
       ::StringW get_MinuteSecondSep();
       // System.String get_SecondFractionSep()
-      // Offset: 0x108A968
+      // Offset: 0xE61930
       ::StringW get_SecondFractionSep();
       // System.String get_End()
-      // Offset: 0x108A9A0
+      // Offset: 0xE61968
       ::StringW get_End();
       // static System.Globalization.TimeSpanFormat/System.Globalization.FormatLiterals InitInvariant(System.Boolean isNegative)
-      // Offset: 0x108A9D8
+      // Offset: 0xE619A0
       static ::System::Globalization::TimeSpanFormat::FormatLiterals InitInvariant(bool isNegative);
       // System.Void Init(System.String format, System.Boolean useInvariantFieldLengths)
-      // Offset: 0x108ABFC
+      // Offset: 0xE61BC4
       void Init(::StringW format, bool useInvariantFieldLengths);
     }; // System.Globalization.TimeSpanFormat/System.Globalization.FormatLiterals
     #pragma pack(pop)
@@ -153,19 +153,19 @@ namespace System::Globalization {
     // Set static field: static readonly System.Globalization.TimeSpanFormat/System.Globalization.FormatLiterals NegativeInvariantFormatLiterals
     static void _set_NegativeInvariantFormatLiterals(::System::Globalization::TimeSpanFormat::FormatLiterals value);
     // static private System.Void .cctor()
-    // Offset: 0xC937A4
+    // Offset: 0x11DF9BC
     static void _cctor();
     // static private System.String IntToString(System.Int32 n, System.Int32 digits)
-    // Offset: 0xC92A68
+    // Offset: 0x11DEC80
     static ::StringW IntToString(int n, int digits);
     // static System.String Format(System.TimeSpan value, System.String format, System.IFormatProvider formatProvider)
-    // Offset: 0xC92478
+    // Offset: 0x11DE690
     static ::StringW Format(::System::TimeSpan value, ::StringW format, ::System::IFormatProvider* formatProvider);
     // static private System.String FormatStandard(System.TimeSpan value, System.Boolean isInvariant, System.String format, System.Globalization.TimeSpanFormat/System.Globalization.Pattern pattern)
-    // Offset: 0xC92A80
+    // Offset: 0x11DEC98
     static ::StringW FormatStandard(::System::TimeSpan value, bool isInvariant, ::StringW format, ::System::Globalization::TimeSpanFormat::Pattern pattern);
     // static System.String FormatCustomized(System.TimeSpan value, System.String format, System.Globalization.DateTimeFormatInfo dtfi)
-    // Offset: 0xC92FD8
+    // Offset: 0x11DF1F0
     static ::StringW FormatCustomized(::System::TimeSpan value, ::StringW format, ::System::Globalization::DateTimeFormatInfo* dtfi);
   }; // System.Globalization.TimeSpanFormat
   #pragma pack(pop)

@@ -60,29 +60,21 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::UISpinnerHelper::$GrabSpinnerRemotely$d__14
     class $GrabSpinnerRemotely$d__14;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TextSpinner _spinner
     // Size: 0x8
     // Offset: 0x18
     ::VROSC::TextSpinner* spinner;
     // Field size check
     static_assert(sizeof(::VROSC::TextSpinner*) == 0x8);
-    // [HeaderAttribute] Offset: 0x674884
+    // [HeaderAttribute] Offset: 0x78AC48
     // private TMPro.TextMeshPro _name
     // Size: 0x8
     // Offset: 0x20
     ::TMPro::TextMeshPro* name;
     // Field size check
     static_assert(sizeof(::TMPro::TextMeshPro*) == 0x8);
-    // [HeaderAttribute] Offset: 0x6748D0
+    // [HeaderAttribute] Offset: 0x78AC94
     // private System.Single _inputHeightPerTick
     // Size: 0x4
     // Offset: 0x28
@@ -103,7 +95,7 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: continuous and: visual
     char __padding4[0x7] = {};
-    // [HeaderAttribute] Offset: 0x67493C
+    // [HeaderAttribute] Offset: 0x78AD00
     // private UnityEngine.GameObject _visual
     // Size: 0x8
     // Offset: 0x38
@@ -132,46 +124,46 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TextSpinner _spinner
-    ::VROSC::TextSpinner*& dyn__spinner();
+    [[deprecated]] ::VROSC::TextSpinner*& dyn__spinner();
     // Get instance field reference: private TMPro.TextMeshPro _name
-    ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private System.Single _inputHeightPerTick
-    float& dyn__inputHeightPerTick();
+    [[deprecated]] float& dyn__inputHeightPerTick();
     // Get instance field reference: private System.Single _thumbStickInputSpeed
-    float& dyn__thumbStickInputSpeed();
+    [[deprecated]] float& dyn__thumbStickInputSpeed();
     // Get instance field reference: private System.Boolean _continuous
-    bool& dyn__continuous();
+    [[deprecated]] bool& dyn__continuous();
     // Get instance field reference: private UnityEngine.GameObject _visual
-    ::UnityEngine::GameObject*& dyn__visual();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__visual();
     // Get instance field reference: private VROSC.UIHelperPositioning _positioning
-    ::VROSC::UIHelperPositioning*& dyn__positioning();
+    [[deprecated]] ::VROSC::UIHelperPositioning*& dyn__positioning();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private System.Single _thumbstickInput
-    float& dyn__thumbstickInput();
+    [[deprecated]] float& dyn__thumbstickInput();
     // private System.Void Awake()
-    // Offset: 0x13A4DC4
+    // Offset: 0x1918CF4
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0x13A4DE4
+    // Offset: 0x1918D14
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x13A4ED4
+    // Offset: 0x1918E04
     void OnDisable();
     // public System.Void Grab(VROSC.UISpinner target, VROSC.InputDevice inputDevice)
-    // Offset: 0x13A4FC0
+    // Offset: 0x1918EF0
     void Grab(::VROSC::UISpinner* target, ::VROSC::InputDevice* inputDevice);
     // public System.Void StopGrab(VROSC.InputDevice device)
-    // Offset: 0x13A4A00
+    // Offset: 0x1918930
     void StopGrab(::VROSC::InputDevice* device);
     // private System.Collections.IEnumerator GrabSpinnerRemotely(VROSC.UISpinner target, VROSC.InputDevice device)
-    // Offset: 0x13A5034
+    // Offset: 0x1918F64
     ::System::Collections::IEnumerator* GrabSpinnerRemotely(::VROSC::UISpinner* target, ::VROSC::InputDevice* device);
     // private System.Void EvaluateThumbstickInput(VROSC.InputDevice device, UnityEngine.Vector2 vector)
-    // Offset: 0x13A50B4
+    // Offset: 0x1918FE4
     void EvaluateThumbstickInput(::VROSC::InputDevice* device, ::UnityEngine::Vector2 vector);
     // public System.Void .ctor()
-    // Offset: 0x13A5160
+    // Offset: 0x1919090
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

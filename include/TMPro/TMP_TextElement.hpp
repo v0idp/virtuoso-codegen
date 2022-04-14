@@ -40,15 +40,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_TextElement : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected TMPro.TextElementType m_ElementType
     // Size: 0x1
     // Offset: 0x10
@@ -89,52 +81,52 @@ namespace TMPro {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: protected TMPro.TextElementType m_ElementType
-    ::TMPro::TextElementType& dyn_m_ElementType();
+    [[deprecated]] ::TMPro::TextElementType& dyn_m_ElementType();
     // Get instance field reference: System.UInt32 m_Unicode
-    uint& dyn_m_Unicode();
+    [[deprecated]] uint& dyn_m_Unicode();
     // Get instance field reference: TMPro.TMP_Asset m_TextAsset
-    ::TMPro::TMP_Asset*& dyn_m_TextAsset();
+    [[deprecated]] ::TMPro::TMP_Asset*& dyn_m_TextAsset();
     // Get instance field reference: UnityEngine.TextCore.Glyph m_Glyph
-    ::UnityEngine::TextCore::Glyph*& dyn_m_Glyph();
+    [[deprecated]] ::UnityEngine::TextCore::Glyph*& dyn_m_Glyph();
     // Get instance field reference: System.UInt32 m_GlyphIndex
-    uint& dyn_m_GlyphIndex();
+    [[deprecated]] uint& dyn_m_GlyphIndex();
     // Get instance field reference: System.Single m_Scale
-    float& dyn_m_Scale();
+    [[deprecated]] float& dyn_m_Scale();
     // public TMPro.TextElementType get_elementType()
-    // Offset: 0xACAE5C
+    // Offset: 0xD0FCB0
     ::TMPro::TextElementType get_elementType();
     // public System.UInt32 get_unicode()
-    // Offset: 0xACAE64
+    // Offset: 0xD0FCB8
     uint get_unicode();
     // public System.Void set_unicode(System.UInt32 value)
-    // Offset: 0xACAE6C
+    // Offset: 0xD0FCC0
     void set_unicode(uint value);
     // public TMPro.TMP_Asset get_textAsset()
-    // Offset: 0xACAE74
+    // Offset: 0xD0FCC8
     ::TMPro::TMP_Asset* get_textAsset();
     // public System.Void set_textAsset(TMPro.TMP_Asset value)
-    // Offset: 0xACAE7C
+    // Offset: 0xD0FCD0
     void set_textAsset(::TMPro::TMP_Asset* value);
     // public UnityEngine.TextCore.Glyph get_glyph()
-    // Offset: 0xACAE84
+    // Offset: 0xD0FCD8
     ::UnityEngine::TextCore::Glyph* get_glyph();
     // public System.Void set_glyph(UnityEngine.TextCore.Glyph value)
-    // Offset: 0xACAE8C
+    // Offset: 0xD0FCE0
     void set_glyph(::UnityEngine::TextCore::Glyph* value);
     // public System.UInt32 get_glyphIndex()
-    // Offset: 0xACAE94
+    // Offset: 0xD0FCE8
     uint get_glyphIndex();
     // public System.Void set_glyphIndex(System.UInt32 value)
-    // Offset: 0xACAE9C
+    // Offset: 0xD0FCF0
     void set_glyphIndex(uint value);
     // public System.Single get_scale()
-    // Offset: 0xACAEA4
+    // Offset: 0xD0FCF8
     float get_scale();
     // public System.Void set_scale(System.Single value)
-    // Offset: 0xACAEAC
+    // Offset: 0xD0FD00
     void set_scale(float value);
     // public System.Void .ctor()
-    // Offset: 0xACAEB4
+    // Offset: 0xD0FD08
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

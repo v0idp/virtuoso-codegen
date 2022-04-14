@@ -29,15 +29,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoipPCMSourceNative : public ::Il2CppObject/*, public ::Oculus::Platform::IVoipPCMSource*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt64 senderID
     // Size: 0x8
     // Offset: 0x10
@@ -54,21 +46,21 @@ namespace Oculus::Platform {
       return senderID;
     }
     // Get instance field reference: private System.UInt64 senderID
-    uint64_t& dyn_senderID();
+    [[deprecated]] uint64_t& dyn_senderID();
     // public System.Int32 GetPCM(System.Single[] dest, System.Int32 length)
-    // Offset: 0x1153C24
+    // Offset: 0x1720B20
     int GetPCM(::ArrayW<float> dest, int length);
     // public System.Void SetSenderID(System.UInt64 senderID)
-    // Offset: 0x1153CEC
+    // Offset: 0x1720BE8
     void SetSenderID(uint64_t senderID);
     // public System.Int32 PeekSizeElements()
-    // Offset: 0x1153CF4
+    // Offset: 0x1720BF0
     int PeekSizeElements();
     // public System.Void Update()
-    // Offset: 0x1153D9C
+    // Offset: 0x1720C98
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x1153024
+    // Offset: 0x171FF20
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

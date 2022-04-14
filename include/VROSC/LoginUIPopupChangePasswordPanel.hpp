@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoginUIPopupChangePasswordPanel : public ::VROSC::LoginUIPopupPanelBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UIInputField _currentPasswordInput
     // Size: 0x8
     // Offset: 0x30
@@ -85,35 +77,35 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private UIInputField _currentPasswordInput
-    ::GlobalNamespace::UIInputField*& dyn__currentPasswordInput();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__currentPasswordInput();
     // Get instance field reference: private UIInputField _newPasswordInput
-    ::GlobalNamespace::UIInputField*& dyn__newPasswordInput();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__newPasswordInput();
     // Get instance field reference: private UIInputField _repeatPasswordInput
-    ::GlobalNamespace::UIInputField*& dyn__repeatPasswordInput();
+    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__repeatPasswordInput();
     // Get instance field reference: private VROSC.UIButton _confirmButton
-    ::VROSC::UIButton*& dyn__confirmButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__confirmButton();
     // Get instance field reference: private VROSC.UIButton _cancelButton
-    ::VROSC::UIButton*& dyn__cancelButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__cancelButton();
     // private System.Void Awake()
-    // Offset: 0x13909B4
+    // Offset: 0x19B0E08
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x1390C0C
+    // Offset: 0x19B1060
     void OnDestroy();
     // private System.Void ConfirmButtonPressed()
-    // Offset: 0x13910CC
+    // Offset: 0x19B1520
     void ConfirmButtonPressed();
     // private System.Void CancelButtonPressed()
-    // Offset: 0x139136C
+    // Offset: 0x19B17C0
     void CancelButtonPressed();
     // private System.Void PasswordChangeSucceeded()
-    // Offset: 0x1391384
+    // Offset: 0x19B17D8
     void PasswordChangeSucceeded();
     // private System.Void PasswordChangeFailed(VROSC.Error error)
-    // Offset: 0x139150C
+    // Offset: 0x19B1960
     void PasswordChangeFailed(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1391710
+    // Offset: 0x19B1B64
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -127,12 +119,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopupChangePasswordPanel*, creationType>()));
     }
     // public override System.Void Open(params System.Object[] parameters)
-    // Offset: 0x1390E64
+    // Offset: 0x19B12B8
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::Open(params System.Object[] parameters)
     void Open(::ArrayW<::Il2CppObject*> parameters);
     // protected override System.Void EnableUI(System.Boolean enable)
-    // Offset: 0x1390F80
+    // Offset: 0x19B13D4
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::EnableUI(System.Boolean enable)
     void EnableUI(bool enable);

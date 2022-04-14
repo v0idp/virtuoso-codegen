@@ -58,15 +58,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::WidgetController::WidgetPositionalData
     class WidgetPositionalData;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.WidgetSettings _widgetSettings
     // Size: 0x8
     // Offset: 0x18
@@ -103,8 +95,14 @@ namespace VROSC {
     bool IsActive;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // Padding between fields: IsActive and: InitalLocalScale
-    char __padding5[0x3] = {};
+    // private System.Boolean <UserHasOpened>k__BackingField
+    // Size: 0x1
+    // Offset: 0x41
+    bool UserHasOpened;
+    // Field size check
+    static_assert(sizeof(bool) == 0x1);
+    // Padding between fields: UserHasOpened and: InitalLocalScale
+    char __padding6[0x2] = {};
     // private UnityEngine.Vector3 <InitalLocalScale>k__BackingField
     // Size: 0xC
     // Offset: 0x44
@@ -118,7 +116,7 @@ namespace VROSC {
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     // Padding between fields: UserMoverScale and: OnToggled
-    char __padding7[0x4] = {};
+    char __padding8[0x4] = {};
     // public System.Action`1<System.Boolean> OnToggled
     // Size: 0x8
     // Offset: 0x60
@@ -133,91 +131,99 @@ namespace VROSC {
     // Set static field: static public System.Action`2<VROSC.WidgetSettings,System.Boolean> OnWidgetActivationChange
     static void _set_OnWidgetActivationChange(::System::Action_2<::VROSC::WidgetSettings*, bool>* value);
     // Get instance field reference: protected VROSC.WidgetSettings _widgetSettings
-    ::VROSC::WidgetSettings*& dyn__widgetSettings();
+    [[deprecated]] ::VROSC::WidgetSettings*& dyn__widgetSettings();
     // Get instance field reference: private UnityEngine.GameObject _toggleObject
-    ::UnityEngine::GameObject*& dyn__toggleObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__toggleObject();
     // Get instance field reference: private VROSC.TimelineInstrumentActivation _timelineActivation
-    ::VROSC::TimelineInstrumentActivation*& dyn__timelineActivation();
+    [[deprecated]] ::VROSC::TimelineInstrumentActivation*& dyn__timelineActivation();
     // Get instance field reference: private VROSC.WidgetController/VROSC.WidgetPositionalData _positionalData
-    ::VROSC::WidgetController::WidgetPositionalData*& dyn__positionalData();
+    [[deprecated]] ::VROSC::WidgetController::WidgetPositionalData*& dyn__positionalData();
     // Get instance field reference: protected VROSC.TransformMover _transformMover
-    ::VROSC::TransformMover*& dyn__transformMover();
+    [[deprecated]] ::VROSC::TransformMover*& dyn__transformMover();
     // Get instance field reference: private System.Boolean <IsActive>k__BackingField
-    bool& dyn_$IsActive$k__BackingField();
+    [[deprecated]] bool& dyn_$IsActive$k__BackingField();
+    // Get instance field reference: private System.Boolean <UserHasOpened>k__BackingField
+    [[deprecated]] bool& dyn_$UserHasOpened$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <InitalLocalScale>k__BackingField
-    ::UnityEngine::Vector3& dyn_$InitalLocalScale$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$InitalLocalScale$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <UserMoverScale>k__BackingField
-    ::UnityEngine::Vector3& dyn_$UserMoverScale$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$UserMoverScale$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Boolean> OnToggled
-    ::System::Action_1<bool>*& dyn_OnToggled();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnToggled();
     // public VROSC.WidgetController/VROSC.WidgetPositionalData get_PositionalData()
-    // Offset: 0x1354844
+    // Offset: 0x951094
     ::VROSC::WidgetController::WidgetPositionalData* get_PositionalData();
     // public VROSC.WidgetSettings/VROSC.Identifier get_ID()
-    // Offset: 0x135484C
+    // Offset: 0x95109C
     ::VROSC::WidgetSettings::Identifier get_ID();
     // public VROSC.WidgetSettings get_DefaultSettings()
-    // Offset: 0x1354868
+    // Offset: 0x9510B8
     ::VROSC::WidgetSettings* get_DefaultSettings();
     // public System.String get_DisplayName()
-    // Offset: 0x1354870
+    // Offset: 0x9510C0
     ::StringW get_DisplayName();
     // public System.Boolean get_IsActive()
-    // Offset: 0x1354898
+    // Offset: 0x9510E8
     bool get_IsActive();
     // private System.Void set_IsActive(System.Boolean value)
-    // Offset: 0x135488C
+    // Offset: 0x9510DC
     void set_IsActive(bool value);
+    // public System.Boolean get_UserHasOpened()
+    // Offset: 0x9510FC
+    bool get_UserHasOpened();
+    // protected System.Void set_UserHasOpened(System.Boolean value)
+    // Offset: 0x9510F0
+    void set_UserHasOpened(bool value);
     // public VROSC.TransformMover get_TransformMover()
-    // Offset: 0x13548A0
+    // Offset: 0x951104
     ::VROSC::TransformMover* get_TransformMover();
     // public System.Single get_SpawnHeightModifier()
-    // Offset: 0x13548A8
+    // Offset: 0x95110C
     float get_SpawnHeightModifier();
     // public UnityEngine.Vector3 get_InitalLocalScale()
-    // Offset: 0x13548D0
+    // Offset: 0x951134
     ::UnityEngine::Vector3 get_InitalLocalScale();
     // private System.Void set_InitalLocalScale(UnityEngine.Vector3 value)
-    // Offset: 0x13548C4
+    // Offset: 0x951128
     void set_InitalLocalScale(::UnityEngine::Vector3 value);
     // public UnityEngine.Vector3 get_UserMoverScale()
-    // Offset: 0x13548E8
+    // Offset: 0x95114C
     ::UnityEngine::Vector3 get_UserMoverScale();
     // private System.Void set_UserMoverScale(UnityEngine.Vector3 value)
-    // Offset: 0x13548DC
+    // Offset: 0x951140
     void set_UserMoverScale(::UnityEngine::Vector3 value);
     // protected System.Void Awake()
-    // Offset: 0x13548F4
+    // Offset: 0x951158
     void Awake();
     // protected System.Void OnDestroy()
-    // Offset: 0x1354B78
+    // Offset: 0x951328
     void OnDestroy();
+    // private System.Void OnApplicationQuit()
+    // Offset: 0x9514C8
+    void OnApplicationQuit();
     // public System.Void Toggle()
-    // Offset: 0x1354D94
+    // Offset: 0x951688
     void Toggle();
     // public System.Void SetActive(System.Boolean shouldBeActive, System.Boolean forceImmediate)
-    // Offset: 0x1354DB0
+    // Offset: 0x9516A4
     void SetActive(bool shouldBeActive, bool forceImmediate);
     // public System.Void SetActivationPositions(UnityEngine.Vector3 pressPos, System.Boolean active)
-    // Offset: 0x1354F14
+    // Offset: 0x951828
     void SetActivationPositions(::UnityEngine::Vector3 pressPos, bool active);
     // public System.Void TransformChanged(VROSC.TransformMover mover)
-    // Offset: 0x1354F18
+    // Offset: 0x95182C
     void TransformChanged(::VROSC::TransformMover* mover);
-    // public System.Void ScaleChanged(System.Single scale)
-    // Offset: 0x1354F1C
-    void ScaleChanged(float scale);
-    // protected System.Void ResetWidget()
-    // Offset: 0x1354F20
-    void ResetWidget();
     // protected System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x1354F40
+    // Offset: 0x951830
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // protected System.Void OnDrawGizmosSelected()
-    // Offset: 0x1354F44
+    // Offset: 0x951834
     void OnDrawGizmosSelected();
+    // private System.Void SendToAnalytics(VROSC.WidgetSettings/VROSC.Identifier id, System.Boolean isActive)
+    // Offset: 0x9514F4
+    void SendToAnalytics(::VROSC::WidgetSettings::Identifier id, bool isActive);
     // public System.Void .ctor()
-    // Offset: 0x1355000
+    // Offset: 0x9518F0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -282,6 +288,23 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "set_IsActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: VROSC::WidgetController::get_UserHasOpened
+// Il2CppName: get_UserHasOpened
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::WidgetController::*)()>(&VROSC::WidgetController::get_UserHasOpened)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "get_UserHasOpened", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::WidgetController::set_UserHasOpened
+// Il2CppName: set_UserHasOpened
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::WidgetController::*)(bool)>(&VROSC::WidgetController::set_UserHasOpened)> {
+  static const MethodInfo* get() {
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "set_UserHasOpened", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
 // Writing MetadataGetter for method: VROSC::WidgetController::get_TransformMover
@@ -350,6 +373,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::WidgetController::OnApplicationQuit
+// Il2CppName: OnApplicationQuit
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::WidgetController::*)()>(&VROSC::WidgetController::OnApplicationQuit)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "OnApplicationQuit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::WidgetController::Toggle
 // Il2CppName: Toggle
 template<>
@@ -387,23 +418,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "TransformChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mover});
   }
 };
-// Writing MetadataGetter for method: VROSC::WidgetController::ScaleChanged
-// Il2CppName: ScaleChanged
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::WidgetController::*)(float)>(&VROSC::WidgetController::ScaleChanged)> {
-  static const MethodInfo* get() {
-    static auto* scale = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "ScaleChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{scale});
-  }
-};
-// Writing MetadataGetter for method: VROSC::WidgetController::ResetWidget
-// Il2CppName: ResetWidget
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::WidgetController::*)()>(&VROSC::WidgetController::ResetWidget)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "ResetWidget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: VROSC::WidgetController::UserDataLoaded
 // Il2CppName: UserDataLoaded
 template<>
@@ -419,6 +433,16 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::WidgetController::*)()>(&VROSC::WidgetController::OnDrawGizmosSelected)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "OnDrawGizmosSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::WidgetController::SendToAnalytics
+// Il2CppName: SendToAnalytics
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::WidgetController::*)(::VROSC::WidgetSettings::Identifier, bool)>(&VROSC::WidgetController::SendToAnalytics)> {
+  static const MethodInfo* get() {
+    static auto* id = &::il2cpp_utils::GetClassFromName("VROSC", "WidgetSettings/Identifier")->byval_arg;
+    static auto* isActive = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "SendToAnalytics", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{id, isActive});
   }
 };
 // Writing MetadataGetter for method: VROSC::WidgetController::New_ctor

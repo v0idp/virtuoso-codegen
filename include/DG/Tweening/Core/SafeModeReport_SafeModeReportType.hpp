@@ -63,7 +63,7 @@ namespace DG::Tweening::Core {
     // Set static field: static public DG.Tweening.Core.SafeModeReport/DG.Tweening.Core.SafeModeReportType StartupFailure
     static void _set_StartupFailure(::DG::Tweening::Core::SafeModeReport::SafeModeReportType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.Core.SafeModeReport/DG.Tweening.Core.SafeModeReportType
   #pragma pack(pop)
   static check_size<sizeof(SafeModeReport::SafeModeReportType), 0 + sizeof(int)> __DG_Tweening_Core_SafeModeReport_SafeModeReportTypeSizeCheck;

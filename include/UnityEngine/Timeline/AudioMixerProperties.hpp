@@ -37,30 +37,22 @@ namespace UnityEngine::Timeline {
   // [TokenAttribute] Offset: FFFFFFFF
   class AudioMixerProperties : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [RangeAttribute] Offset: 0x59ADC4
+    // [RangeAttribute] Offset: 0x6AEE78
     // public System.Single volume
     // Size: 0x4
     // Offset: 0x10
     float volume;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x59ADDC
+    // [RangeAttribute] Offset: 0x6AEE90
     // public System.Single stereoPan
     // Size: 0x4
     // Offset: 0x14
     float stereoPan;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x59ADF4
+    // [RangeAttribute] Offset: 0x6AEEA8
     // public System.Single spatialBlend
     // Size: 0x4
     // Offset: 0x18
@@ -69,13 +61,13 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single volume
-    float& dyn_volume();
+    [[deprecated]] float& dyn_volume();
     // Get instance field reference: public System.Single stereoPan
-    float& dyn_stereoPan();
+    [[deprecated]] float& dyn_stereoPan();
     // Get instance field reference: public System.Single spatialBlend
-    float& dyn_spatialBlend();
+    [[deprecated]] float& dyn_spatialBlend();
     // public System.Void .ctor()
-    // Offset: 0xA78BE0
+    // Offset: 0xC700B0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -85,7 +77,7 @@ namespace UnityEngine::Timeline {
       return THROW_UNLESS((::il2cpp_utils::New<AudioMixerProperties*, creationType>()));
     }
     // public override System.Void PrepareFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0xA789B4
+    // Offset: 0xC6FE84
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::PrepareFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void PrepareFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);

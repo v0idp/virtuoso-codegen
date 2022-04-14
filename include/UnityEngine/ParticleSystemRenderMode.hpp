@@ -78,7 +78,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.ParticleSystemRenderMode None
     static void _set_None(::UnityEngine::ParticleSystemRenderMode value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.ParticleSystemRenderMode
   #pragma pack(pop)
   static check_size<sizeof(ParticleSystemRenderMode), 0 + sizeof(int)> __UnityEngine_ParticleSystemRenderModeSizeCheck;

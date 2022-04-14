@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IndividualHintNoteBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TouchableObject _touchable
     // Size: 0x8
     // Offset: 0x10
@@ -65,7 +57,7 @@ namespace VROSC {
     ::VROSC::NoteBoard::PlayAxis Axis;
     // Field size check
     static_assert(sizeof(::VROSC::NoteBoard::PlayAxis) == 0x4);
-    // [RangeAttribute] Offset: 0x673810
+    // [RangeAttribute] Offset: 0x789B84
     // public System.Single Pressed
     // Size: 0x4
     // Offset: 0x1C
@@ -74,16 +66,16 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.TouchableObject _touchable
-    ::VROSC::TouchableObject*& dyn__touchable();
+    [[deprecated]] ::VROSC::TouchableObject*& dyn__touchable();
     // Get instance field reference: public VROSC.NoteBoard/VROSC.PlayAxis Axis
-    ::VROSC::NoteBoard::PlayAxis& dyn_Axis();
+    [[deprecated]] ::VROSC::NoteBoard::PlayAxis& dyn_Axis();
     // Get instance field reference: public System.Single Pressed
-    float& dyn_Pressed();
+    [[deprecated]] float& dyn_Pressed();
     // public System.Void Setup(VROSC.TouchableObject touchable)
-    // Offset: 0x8A0770
+    // Offset: 0x1943308
     void Setup(::VROSC::TouchableObject* touchable);
     // public System.Void .ctor()
-    // Offset: 0x8A0820
+    // Offset: 0x19433B8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -93,7 +85,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<IndividualHintNoteBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x8A0778
+    // Offset: 0x1943310
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

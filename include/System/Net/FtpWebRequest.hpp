@@ -170,20 +170,12 @@ namespace System::Net {
       // Set static field: static public System.Net.FtpWebRequest/System.Net.RequestState Error
       static void _set_Error(::System::Net::FtpWebRequest::RequestState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // System.Net.FtpWebRequest/System.Net.RequestState
     #pragma pack(pop)
     static check_size<sizeof(FtpWebRequest::RequestState), 0 + sizeof(int)> __System_Net_FtpWebRequest_RequestStateSizeCheck;
     static_assert(sizeof(FtpWebRequest::RequestState) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Uri requestUri
     // Size: 0x8
     // Offset: 0x38
@@ -362,295 +354,300 @@ namespace System::Net {
     // Set static field: static private readonly System.String[] supportedCommands
     static void _set_supportedCommands(::ArrayW<::StringW> value);
     // Get instance field reference: private System.Uri requestUri
-    ::System::Uri*& dyn_requestUri();
+    [[deprecated]] ::System::Uri*& dyn_requestUri();
     // Get instance field reference: private System.String file_name
-    ::StringW& dyn_file_name();
+    [[deprecated]] ::StringW& dyn_file_name();
     // Get instance field reference: private System.Net.ServicePoint servicePoint
-    ::System::Net::ServicePoint*& dyn_servicePoint();
+    [[deprecated]] ::System::Net::ServicePoint*& dyn_servicePoint();
     // Get instance field reference: private System.IO.Stream origDataStream
-    ::System::IO::Stream*& dyn_origDataStream();
+    [[deprecated]] ::System::IO::Stream*& dyn_origDataStream();
     // Get instance field reference: private System.IO.Stream dataStream
-    ::System::IO::Stream*& dyn_dataStream();
+    [[deprecated]] ::System::IO::Stream*& dyn_dataStream();
     // Get instance field reference: private System.IO.Stream controlStream
-    ::System::IO::Stream*& dyn_controlStream();
+    [[deprecated]] ::System::IO::Stream*& dyn_controlStream();
     // Get instance field reference: private System.IO.StreamReader controlReader
-    ::System::IO::StreamReader*& dyn_controlReader();
+    [[deprecated]] ::System::IO::StreamReader*& dyn_controlReader();
     // Get instance field reference: private System.Net.NetworkCredential credentials
-    ::System::Net::NetworkCredential*& dyn_credentials();
+    [[deprecated]] ::System::Net::NetworkCredential*& dyn_credentials();
     // Get instance field reference: private System.Net.IPHostEntry hostEntry
-    ::System::Net::IPHostEntry*& dyn_hostEntry();
+    [[deprecated]] ::System::Net::IPHostEntry*& dyn_hostEntry();
     // Get instance field reference: private System.Net.IPEndPoint localEndPoint
-    ::System::Net::IPEndPoint*& dyn_localEndPoint();
+    [[deprecated]] ::System::Net::IPEndPoint*& dyn_localEndPoint();
     // Get instance field reference: private System.Net.IPEndPoint remoteEndPoint
-    ::System::Net::IPEndPoint*& dyn_remoteEndPoint();
+    [[deprecated]] ::System::Net::IPEndPoint*& dyn_remoteEndPoint();
     // Get instance field reference: private System.Net.IWebProxy proxy
-    ::System::Net::IWebProxy*& dyn_proxy();
+    [[deprecated]] ::System::Net::IWebProxy*& dyn_proxy();
     // Get instance field reference: private System.Int32 timeout
-    int& dyn_timeout();
+    [[deprecated]] int& dyn_timeout();
     // Get instance field reference: private System.Int32 rwTimeout
-    int& dyn_rwTimeout();
+    [[deprecated]] int& dyn_rwTimeout();
     // Get instance field reference: private System.Int64 offset
-    int64_t& dyn_offset();
+    [[deprecated]] int64_t& dyn_offset();
     // Get instance field reference: private System.Boolean binary
-    bool& dyn_binary();
+    [[deprecated]] bool& dyn_binary();
     // Get instance field reference: private System.Boolean enableSsl
-    bool& dyn_enableSsl();
+    [[deprecated]] bool& dyn_enableSsl();
     // Get instance field reference: private System.Boolean usePassive
-    bool& dyn_usePassive();
+    [[deprecated]] bool& dyn_usePassive();
     // Get instance field reference: private System.Boolean keepAlive
-    bool& dyn_keepAlive();
+    [[deprecated]] bool& dyn_keepAlive();
     // Get instance field reference: private System.String method
-    ::StringW& dyn_method();
+    [[deprecated]] ::StringW& dyn_method();
     // Get instance field reference: private System.String renameTo
-    ::StringW& dyn_renameTo();
+    [[deprecated]] ::StringW& dyn_renameTo();
     // Get instance field reference: private System.Object locker
-    ::Il2CppObject*& dyn_locker();
+    [[deprecated]] ::Il2CppObject*& dyn_locker();
     // Get instance field reference: private System.Net.FtpWebRequest/System.Net.RequestState requestState
-    ::System::Net::FtpWebRequest::RequestState& dyn_requestState();
+    [[deprecated]] ::System::Net::FtpWebRequest::RequestState& dyn_requestState();
     // Get instance field reference: private System.Net.FtpAsyncResult asyncResult
-    ::System::Net::FtpAsyncResult*& dyn_asyncResult();
+    [[deprecated]] ::System::Net::FtpAsyncResult*& dyn_asyncResult();
     // Get instance field reference: private System.Net.FtpWebResponse ftpResponse
-    ::System::Net::FtpWebResponse*& dyn_ftpResponse();
+    [[deprecated]] ::System::Net::FtpWebResponse*& dyn_ftpResponse();
     // Get instance field reference: private System.IO.Stream requestStream
-    ::System::IO::Stream*& dyn_requestStream();
+    [[deprecated]] ::System::IO::Stream*& dyn_requestStream();
     // Get instance field reference: private System.String initial_path
-    ::StringW& dyn_initial_path();
+    [[deprecated]] ::StringW& dyn_initial_path();
     // Get instance field reference: private System.Text.Encoding dataEncoding
-    ::System::Text::Encoding*& dyn_dataEncoding();
+    [[deprecated]] ::System::Text::Encoding*& dyn_dataEncoding();
     // public System.Boolean get_EnableSsl()
-    // Offset: 0xD84160
+    // Offset: 0xF0594C
     bool get_EnableSsl();
     // public System.Int32 get_ReadWriteTimeout()
-    // Offset: 0xD8431C
+    // Offset: 0xF05B30
     int get_ReadWriteTimeout();
     // public System.Net.ServicePoint get_ServicePoint()
-    // Offset: 0xD8432C
+    // Offset: 0xF05B40
     ::System::Net::ServicePoint* get_ServicePoint();
     // private System.String get_DataType()
-    // Offset: 0xD84424
+    // Offset: 0xF05C38
     ::StringW get_DataType();
     // private System.Net.FtpWebRequest/System.Net.RequestState get_State()
-    // Offset: 0xD8448C
+    // Offset: 0xF05CA0
     ::System::Net::FtpWebRequest::RequestState get_State();
     // private System.Void set_State(System.Net.FtpWebRequest/System.Net.RequestState value)
-    // Offset: 0xD84554
+    // Offset: 0xF05D68
     void set_State(::System::Net::FtpWebRequest::RequestState value);
     // System.Void .ctor(System.Uri uri)
-    // Offset: 0xD83D6C
+    // Offset: 0xF05558
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FtpWebRequest* New_ctor(::System::Uri* uri) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::FtpWebRequest::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FtpWebRequest*, creationType>(uri)));
     }
     // static private System.Exception GetMustImplement()
-    // Offset: 0xD83F6C
+    // Offset: 0xF05758
     static ::System::Exception* GetMustImplement();
     // private System.Net.ServicePoint GetServicePoint()
-    // Offset: 0xD84330
+    // Offset: 0xF05B44
     ::System::Net::ServicePoint* GetServicePoint();
     // private System.Void ResolveHost()
-    // Offset: 0xD85530
+    // Offset: 0xF06D44
     void ResolveHost();
     // private System.Void ProcessRequest()
-    // Offset: 0xD8564C
+    // Offset: 0xF06E60
     void ProcessRequest();
     // private System.Void SetType()
-    // Offset: 0xD86144
+    // Offset: 0xF07960
     void SetType();
     // private System.String GetRemoteFolderPath(System.Uri uri)
-    // Offset: 0xD8635C
+    // Offset: 0xF07B78
     ::StringW GetRemoteFolderPath(::System::Uri* uri);
     // private System.Void CWDAndSetFileName(System.Uri uri)
-    // Offset: 0xD8655C
+    // Offset: 0xF07D78
     void CWDAndSetFileName(::System::Uri* uri);
     // private System.Void ProcessMethod()
-    // Offset: 0xD85900
+    // Offset: 0xF07114
     void ProcessMethod();
     // private System.Void CloseControlConnection()
-    // Offset: 0xD873D4
+    // Offset: 0xF08BF4
     void CloseControlConnection();
     // System.Void CloseDataConnection()
-    // Offset: 0xD82FC4
+    // Offset: 0xF047B0
     void CloseDataConnection();
     // private System.Void CloseConnection()
-    // Offset: 0xD874F0
+    // Offset: 0xF08D10
     void CloseConnection();
     // private System.Void ProcessSimpleMethod()
-    // Offset: 0xD86DA8
+    // Offset: 0xF085C8
     void ProcessSimpleMethod();
     // private System.Void UploadData()
-    // Offset: 0xD86D08
+    // Offset: 0xF08528
     void UploadData();
     // private System.Void DownloadData()
-    // Offset: 0xD86C6C
+    // Offset: 0xF0848C
     void DownloadData();
     // private System.Void CheckRequestStarted()
-    // Offset: 0xD840F8
+    // Offset: 0xF058E4
     void CheckRequestStarted();
     // private System.Void OpenControlConnection()
-    // Offset: 0xD866FC
+    // Offset: 0xF07F18
     void OpenControlConnection();
     // static private System.String GetInitialPath(System.Net.FtpStatus status)
-    // Offset: 0xD87F24
+    // Offset: 0xF09634
     static ::StringW GetInitialPath(::System::Net::FtpStatus* status);
     // private System.Net.Sockets.Socket SetupPassiveConnection(System.String statusDescription, System.Boolean ipv6)
-    // Offset: 0xD880AC
+    // Offset: 0xF097BC
     ::System::Net::Sockets::Socket* SetupPassiveConnection(::StringW statusDescription, bool ipv6);
     // private System.Int32 GetPortV4(System.String responseString)
-    // Offset: 0xD8828C
+    // Offset: 0xF099A0
     int GetPortV4(::StringW responseString);
     // private System.Int32 GetPortV6(System.String responseString)
-    // Offset: 0xD884F4
+    // Offset: 0xF09C08
     int GetPortV6(::StringW responseString);
     // private System.String FormatAddress(System.Net.IPAddress address, System.Int32 Port)
-    // Offset: 0xD886E4
+    // Offset: 0xF09DF8
     ::StringW FormatAddress(::System::Net::IPAddress* address, int Port);
     // private System.String FormatAddressV6(System.Net.IPAddress address, System.Int32 port)
-    // Offset: 0xD88964
+    // Offset: 0xF09F38
     ::StringW FormatAddressV6(::System::Net::IPAddress* address, int port);
     // private System.Exception CreateExceptionFromResponse(System.Net.FtpStatus status)
-    // Offset: 0xD8626C
+    // Offset: 0xF07A88
     ::System::Exception* CreateExceptionFromResponse(::System::Net::FtpStatus* status);
     // System.Void SetTransferCompleted()
-    // Offset: 0xD82FFC
+    // Offset: 0xF047E8
     void SetTransferCompleted();
     // System.Void OperationCompleted()
-    // Offset: 0xD88A98
+    // Offset: 0xF0A06C
     void OperationCompleted();
     // private System.Void SetCompleteWithError(System.Exception exc)
-    // Offset: 0xD85E50
+    // Offset: 0xF07664
     void SetCompleteWithError(::System::Exception* exc);
     // private System.Net.Sockets.Socket InitDataConnection()
-    // Offset: 0xD88AA8
+    // Offset: 0xF0A07C
     ::System::Net::Sockets::Socket* InitDataConnection();
     // private System.Void OpenDataConnection()
-    // Offset: 0xD8752C
+    // Offset: 0xF08D4C
     void OpenDataConnection();
     // private System.Void Authenticate()
-    // Offset: 0xD87A9C
+    // Offset: 0xF091AC
     void Authenticate();
     // private System.Net.FtpStatus SendCommand(System.String command, params System.String[] parameters)
-    // Offset: 0xD8625C
+    // Offset: 0xF07A78
     ::System::Net::FtpStatus* SendCommand(::StringW command, ::ArrayW<::StringW> parameters);
     // private System.Net.FtpStatus SendCommand(System.Boolean waitResponse, System.String command, params System.String[] parameters)
-    // Offset: 0xD848BC
+    // Offset: 0xF060D0
     ::System::Net::FtpStatus* SendCommand(bool waitResponse, ::StringW command, ::ArrayW<::StringW> parameters);
     // static System.Net.FtpStatus ServiceNotAvailable()
-    // Offset: 0xD89238
+    // Offset: 0xF0A810
     static ::System::Net::FtpStatus* ServiceNotAvailable();
     // System.Net.FtpStatus GetResponseStatus()
-    // Offset: 0xD85EA8
+    // Offset: 0xF076BC
     ::System::Net::FtpStatus* GetResponseStatus();
     // private System.Void InitiateSecureConnection(ref System.IO.Stream stream)
-    // Offset: 0xD89118
+    // Offset: 0xF0A6F0
     void InitiateSecureConnection(ByRef<::System::IO::Stream*> stream);
     // System.Boolean ChangeToSSLSocket(ref System.IO.Stream stream)
-    // Offset: 0xD88F24
+    // Offset: 0xF0A4FC
     bool ChangeToSSLSocket(ByRef<::System::IO::Stream*> stream);
     // private System.Boolean InFinalState()
-    // Offset: 0xD84AAC
+    // Offset: 0xF062C0
     bool InFinalState();
     // private System.Boolean InProgress()
-    // Offset: 0xD85E6C
+    // Offset: 0xF07680
     bool InProgress();
     // System.Void CheckIfAborted()
-    // Offset: 0xD82F54
+    // Offset: 0xF04740
     void CheckIfAborted();
     // private System.Void CheckFinalState()
-    // Offset: 0xD84628
+    // Offset: 0xF05E3C
     void CheckFinalState();
     // public override System.Void set_ContentType(System.String value)
-    // Offset: 0xD83FC4
+    // Offset: 0xF057B0
     // Implemented from: System.Net.WebRequest
     // Base method: System.Void WebRequest::set_ContentType(System.String value)
     void set_ContentType(::StringW value);
     // public override System.Int64 get_ContentLength()
-    // Offset: 0xD84004
+    // Offset: 0xF057F0
     // Implemented from: System.Net.WebRequest
     // Base method: System.Int64 WebRequest::get_ContentLength()
     int64_t get_ContentLength();
     // public override System.Void set_ContentLength(System.Int64 value)
-    // Offset: 0xD8400C
+    // Offset: 0xF057F8
     // Implemented from: System.Net.WebRequest
     // Base method: System.Void WebRequest::set_ContentLength(System.Int64 value)
     void set_ContentLength(int64_t value);
     // public override System.Net.ICredentials get_Credentials()
-    // Offset: 0xD84010
+    // Offset: 0xF057FC
     // Implemented from: System.Net.WebRequest
     // Base method: System.Net.ICredentials WebRequest::get_Credentials()
     ::System::Net::ICredentials* get_Credentials();
     // public override System.Void set_Credentials(System.Net.ICredentials value)
-    // Offset: 0xD84018
+    // Offset: 0xF05804
     // Implemented from: System.Net.WebRequest
     // Base method: System.Void WebRequest::set_Credentials(System.Net.ICredentials value)
     void set_Credentials(::System::Net::ICredentials* value);
     // public override System.Net.WebHeaderCollection get_Headers()
-    // Offset: 0xD84168
+    // Offset: 0xF05954
     // Implemented from: System.Net.WebRequest
     // Base method: System.Net.WebHeaderCollection WebRequest::get_Headers()
     ::System::Net::WebHeaderCollection* get_Headers();
     // public override System.String get_Method()
-    // Offset: 0xD841CC
+    // Offset: 0xF059B8
     // Implemented from: System.Net.WebRequest
     // Base method: System.String WebRequest::get_Method()
     ::StringW get_Method();
     // public override System.Void set_Method(System.String value)
-    // Offset: 0xD841D4
+    // Offset: 0xF059C0
     // Implemented from: System.Net.WebRequest
     // Base method: System.Void WebRequest::set_Method(System.String value)
     void set_Method(::StringW value);
     // public override System.Net.IWebProxy get_Proxy()
-    // Offset: 0xD84314
+    // Offset: 0xF05B00
     // Implemented from: System.Net.WebRequest
     // Base method: System.Net.IWebProxy WebRequest::get_Proxy()
     ::System::Net::IWebProxy* get_Proxy();
+    // public override System.Void set_Proxy(System.Net.IWebProxy value)
+    // Offset: 0xF05B08
+    // Implemented from: System.Net.WebRequest
+    // Base method: System.Void WebRequest::set_Proxy(System.Net.IWebProxy value)
+    void set_Proxy(::System::Net::IWebProxy* value);
     // public override System.Uri get_RequestUri()
-    // Offset: 0xD84324
+    // Offset: 0xF05B38
     // Implemented from: System.Net.WebRequest
     // Base method: System.Uri WebRequest::get_RequestUri()
     ::System::Uri* get_RequestUri();
     // public override System.Boolean get_UseDefaultCredentials()
-    // Offset: 0xD843B8
+    // Offset: 0xF05BCC
     // Implemented from: System.Net.WebRequest
     // Base method: System.Boolean WebRequest::get_UseDefaultCredentials()
     bool get_UseDefaultCredentials();
     // public override System.Int32 get_Timeout()
-    // Offset: 0xD8441C
+    // Offset: 0xF05C30
     // Implemented from: System.Net.WebRequest
     // Base method: System.Int32 WebRequest::get_Timeout()
     int get_Timeout();
     // static private System.Void .cctor()
-    // Offset: 0xD892C4
+    // Offset: 0xF0A89C
     // Implemented from: System.Net.WebRequest
     // Base method: System.Void WebRequest::.cctor()
     static void _cctor();
     // public override System.Void Abort()
-    // Offset: 0xD84690
+    // Offset: 0xF05EA4
     // Implemented from: System.Net.WebRequest
     // Base method: System.Void WebRequest::Abort()
     void Abort();
     // public override System.IAsyncResult BeginGetResponse(System.AsyncCallback callback, System.Object state)
-    // Offset: 0xD84BF4
+    // Offset: 0xF06408
     // Implemented from: System.Net.WebRequest
     // Base method: System.IAsyncResult WebRequest::BeginGetResponse(System.AsyncCallback callback, System.Object state)
     ::System::IAsyncResult* BeginGetResponse(::System::AsyncCallback* callback, ::Il2CppObject* state);
     // public override System.Net.WebResponse EndGetResponse(System.IAsyncResult asyncResult)
-    // Offset: 0xD84E64
+    // Offset: 0xF06678
     // Implemented from: System.Net.WebRequest
     // Base method: System.Net.WebResponse WebRequest::EndGetResponse(System.IAsyncResult asyncResult)
     ::System::Net::WebResponse* EndGetResponse(::System::IAsyncResult* asyncResult);
     // public override System.Net.WebResponse GetResponse()
-    // Offset: 0xD84FF8
+    // Offset: 0xF0680C
     // Implemented from: System.Net.WebRequest
     // Base method: System.Net.WebResponse WebRequest::GetResponse()
     ::System::Net::WebResponse* GetResponse();
     // public override System.IAsyncResult BeginGetRequestStream(System.AsyncCallback callback, System.Object state)
-    // Offset: 0xD85040
+    // Offset: 0xF06854
     // Implemented from: System.Net.WebRequest
     // Base method: System.IAsyncResult WebRequest::BeginGetRequestStream(System.AsyncCallback callback, System.Object state)
     ::System::IAsyncResult* BeginGetRequestStream(::System::AsyncCallback* callback, ::Il2CppObject* state);
     // public override System.IO.Stream EndGetRequestStream(System.IAsyncResult asyncResult)
-    // Offset: 0xD8530C
+    // Offset: 0xF06B20
     // Implemented from: System.Net.WebRequest
     // Base method: System.IO.Stream WebRequest::EndGetRequestStream(System.IAsyncResult asyncResult)
     ::System::IO::Stream* EndGetRequestStream(::System::IAsyncResult* asyncResult);
@@ -1121,6 +1118,15 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Net::IWebProxy* (System::Net::FtpWebRequest::*)()>(&System::Net::FtpWebRequest::get_Proxy)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::Net::FtpWebRequest*), "get_Proxy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::Net::FtpWebRequest::set_Proxy
+// Il2CppName: set_Proxy
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (System::Net::FtpWebRequest::*)(::System::Net::IWebProxy*)>(&System::Net::FtpWebRequest::set_Proxy)> {
+  static const MethodInfo* get() {
+    static auto* value = &::il2cpp_utils::GetClassFromName("System.Net", "IWebProxy")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Net::FtpWebRequest*), "set_Proxy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
 // Writing MetadataGetter for method: System::Net::FtpWebRequest::get_RequestUri

@@ -50,15 +50,7 @@ namespace VROSC::AudioReactive {
     class TranslateData;
     // Nested type: ::VROSC::AudioReactive::TranslateEffect::$SpecificFlow$d__6
     class $SpecificFlow$d__6;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.TranslateEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -73,20 +65,20 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::UnityEngine::Transform*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.TranslateEffectData _data
-    ::VROSC::AudioReactive::TranslateEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::TranslateEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Transform[] _transforms
-    ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
     // public VROSC.AudioReactive.TranslateEffectData get_Data()
-    // Offset: 0x140524C
+    // Offset: 0xA2CED0
     ::VROSC::AudioReactive::TranslateEffectData* get_Data();
     // public UnityEngine.Transform[] get_Transforms()
-    // Offset: 0x1405254
+    // Offset: 0xA2CED8
     ::ArrayW<::UnityEngine::Transform*> get_Transforms();
     // private VROSC.AudioReactive.TranslateEffect/VROSC.AudioReactive.TranslateData[] GetTranslationDatas()
-    // Offset: 0x14052C8
+    // Offset: 0xA2CF4C
     ::ArrayW<::VROSC::AudioReactive::TranslateEffect::TranslateData*> GetTranslationDatas();
     // public System.Void .ctor()
-    // Offset: 0x14053FC
+    // Offset: 0xA2D080
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -97,7 +89,7 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<TranslateEffect*, creationType>()));
     }
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0x140525C
+    // Offset: 0xA2CEE0
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();

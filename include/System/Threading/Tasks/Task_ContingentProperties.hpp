@@ -50,15 +50,7 @@ namespace System::Threading::Tasks {
   // [TokenAttribute] Offset: FFFFFFFF
   class Task::ContingentProperties : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Threading.ExecutionContext m_capturedContext
     // Size: 0x8
     // Offset: 0x10
@@ -109,29 +101,29 @@ namespace System::Threading::Tasks {
     static_assert(sizeof(::System::Collections::Generic::List_1<::System::Threading::Tasks::Task*>*) == 0x8);
     public:
     // Get instance field reference: System.Threading.ExecutionContext m_capturedContext
-    ::System::Threading::ExecutionContext*& dyn_m_capturedContext();
+    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_capturedContext();
     // Get instance field reference: System.Threading.ManualResetEventSlim m_completionEvent
-    ::System::Threading::ManualResetEventSlim*& dyn_m_completionEvent();
+    [[deprecated]] ::System::Threading::ManualResetEventSlim*& dyn_m_completionEvent();
     // Get instance field reference: System.Threading.Tasks.TaskExceptionHolder m_exceptionsHolder
-    ::System::Threading::Tasks::TaskExceptionHolder*& dyn_m_exceptionsHolder();
+    [[deprecated]] ::System::Threading::Tasks::TaskExceptionHolder*& dyn_m_exceptionsHolder();
     // Get instance field reference: System.Threading.CancellationToken m_cancellationToken
-    ::System::Threading::CancellationToken& dyn_m_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_m_cancellationToken();
     // Get instance field reference: System.Threading.Tasks.Shared`1<System.Threading.CancellationTokenRegistration> m_cancellationRegistration
-    ::System::Threading::Tasks::Shared_1<::System::Threading::CancellationTokenRegistration>*& dyn_m_cancellationRegistration();
+    [[deprecated]] ::System::Threading::Tasks::Shared_1<::System::Threading::CancellationTokenRegistration>*& dyn_m_cancellationRegistration();
     // Get instance field reference: System.Int32 m_internalCancellationRequested
-    int& dyn_m_internalCancellationRequested();
+    [[deprecated]] int& dyn_m_internalCancellationRequested();
     // Get instance field reference: System.Int32 m_completionCountdown
-    int& dyn_m_completionCountdown();
+    [[deprecated]] int& dyn_m_completionCountdown();
     // Get instance field reference: System.Collections.Generic.List`1<System.Threading.Tasks.Task> m_exceptionalChildren
-    ::System::Collections::Generic::List_1<::System::Threading::Tasks::Task*>*& dyn_m_exceptionalChildren();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::Threading::Tasks::Task*>*& dyn_m_exceptionalChildren();
     // System.Void SetCompleted()
-    // Offset: 0x1087D68
+    // Offset: 0xE5ECB4
     void SetCompleted();
     // System.Void DeregisterCancellationCallback()
-    // Offset: 0x1087DA0
+    // Offset: 0xE5ECEC
     void DeregisterCancellationCallback();
     // public System.Void .ctor()
-    // Offset: 0x1087918
+    // Offset: 0xE5E864
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

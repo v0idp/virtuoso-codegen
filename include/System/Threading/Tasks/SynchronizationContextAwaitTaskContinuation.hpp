@@ -51,15 +51,7 @@ namespace System::Threading::Tasks {
     public:
     // Nested type: ::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Threading.SynchronizationContext m_syncContext
     // Size: 0x8
     // Offset: 0x20
@@ -80,25 +72,25 @@ namespace System::Threading::Tasks {
     // Set static field: static private System.Threading.ContextCallback s_postActionCallback
     static void _set_s_postActionCallback(::System::Threading::ContextCallback* value);
     // Get instance field reference: private readonly System.Threading.SynchronizationContext m_syncContext
-    ::System::Threading::SynchronizationContext*& dyn_m_syncContext();
+    [[deprecated]] ::System::Threading::SynchronizationContext*& dyn_m_syncContext();
     // System.Void .ctor(System.Threading.SynchronizationContext context, System.Action action, System.Boolean flowExecutionContext, ref System.Threading.StackCrawlMark stackMark)
-    // Offset: 0xEF6B34
+    // Offset: 0x126B2D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynchronizationContextAwaitTaskContinuation* New_ctor(::System::Threading::SynchronizationContext* context, ::System::Action* action, bool flowExecutionContext, ByRef<::System::Threading::StackCrawlMark> stackMark) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SynchronizationContextAwaitTaskContinuation*, creationType>(context, action, flowExecutionContext, byref(stackMark))));
     }
     // static private System.Void .cctor()
-    // Offset: 0xEF6F28
+    // Offset: 0x126B6CC
     static void _cctor();
     // static private System.Void PostAction(System.Object state)
-    // Offset: 0xEF6DAC
+    // Offset: 0x126B550
     static void PostAction(::Il2CppObject* state);
     // static private System.Threading.ContextCallback GetPostActionCallback()
-    // Offset: 0xEF6E54
+    // Offset: 0x126B5F8
     static ::System::Threading::ContextCallback* GetPostActionCallback();
     // override System.Void Run(System.Threading.Tasks.Task task, System.Boolean canInlineContinuationTask)
-    // Offset: 0xEF6B70
+    // Offset: 0x126B314
     // Implemented from: System.Threading.Tasks.AwaitTaskContinuation
     // Base method: System.Void AwaitTaskContinuation::Run(System.Threading.Tasks.Task task, System.Boolean canInlineContinuationTask)
     void Run(::System::Threading::Tasks::Task* task, bool canInlineContinuationTask);

@@ -69,49 +69,49 @@ namespace UnityEngine {
     // Set static field: static private System.Byte[] qpForbidden
     static void _set_qpForbidden(::ArrayW<uint8_t> value);
     // static private System.Void .cctor()
-    // Offset: 0x12BC60C
+    // Offset: 0x18C0DDC
     static void _cctor();
     // static private System.Byte Hex2Byte(System.Byte[] b, System.Int32 offset)
-    // Offset: 0x12BBB7C
+    // Offset: 0x18C034C
     static uint8_t Hex2Byte(::ArrayW<uint8_t> b, int offset);
     // static private System.Byte[] Byte2Hex(System.Byte b, System.Byte[] hexChars)
-    // Offset: 0x12BBC3C
+    // Offset: 0x18C040C
     static ::ArrayW<uint8_t> Byte2Hex(uint8_t b, ::ArrayW<uint8_t> hexChars);
     // static public System.Byte[] URLEncode(System.Byte[] toEncode)
-    // Offset: 0x12BA8A8
+    // Offset: 0x18BF3C4
     static ::ArrayW<uint8_t> URLEncode(::ArrayW<uint8_t> toEncode);
     // static public System.String DataEncode(System.String toEncode)
-    // Offset: 0x12BB418
+    // Offset: 0x18BFF34
     static ::StringW DataEncode(::StringW toEncode);
     // static public System.String DataEncode(System.String toEncode, System.Text.Encoding e)
-    // Offset: 0x12BC098
+    // Offset: 0x18C0868
     static ::StringW DataEncode(::StringW toEncode, ::System::Text::Encoding* e);
     // static public System.Byte[] DataEncode(System.Byte[] toEncode)
-    // Offset: 0x12BBB08
+    // Offset: 0x18C02D8
     static ::ArrayW<uint8_t> DataEncode(::ArrayW<uint8_t> toEncode);
     // static public System.String QPEncode(System.String toEncode, System.Text.Encoding e)
-    // Offset: 0x12BBA30
+    // Offset: 0x18C0200
     static ::StringW QPEncode(::StringW toEncode, ::System::Text::Encoding* e);
     // static public System.Byte[] Encode(System.Byte[] input, System.Byte escapeChar, System.Byte[] space, System.Byte[] forbidden, System.Boolean uppercase)
-    // Offset: 0x12BBCFC
+    // Offset: 0x18C04CC
     static ::ArrayW<uint8_t> Encode(::ArrayW<uint8_t> input, uint8_t escapeChar, ::ArrayW<uint8_t> space, ::ArrayW<uint8_t> forbidden, bool uppercase);
     // static private System.Boolean ByteArrayContains(System.Byte[] array, System.Byte b)
-    // Offset: 0x12BC170
+    // Offset: 0x18C0940
     static bool ByteArrayContains(::ArrayW<uint8_t> array, uint8_t b);
     // static public System.Byte[] URLDecode(System.Byte[] toEncode)
-    // Offset: 0x12BC1BC
+    // Offset: 0x18C098C
     static ::ArrayW<uint8_t> URLDecode(::ArrayW<uint8_t> toEncode);
     // static private System.Boolean ByteSubArrayEquals(System.Byte[] array, System.Int32 index, System.Byte[] comperand)
-    // Offset: 0x12BC51C
+    // Offset: 0x18C0CEC
     static bool ByteSubArrayEquals(::ArrayW<uint8_t> array, int index, ::ArrayW<uint8_t> comperand);
     // static public System.Byte[] Decode(System.Byte[] input, System.Byte escapeChar, System.Byte[] space)
-    // Offset: 0x12BC22C
+    // Offset: 0x18C09FC
     static ::ArrayW<uint8_t> Decode(::ArrayW<uint8_t> input, uint8_t escapeChar, ::ArrayW<uint8_t> space);
     // static public System.Boolean SevenBitClean(System.String s, System.Text.Encoding e)
-    // Offset: 0x12BB99C
+    // Offset: 0x18C016C
     static bool SevenBitClean(::StringW s, ::System::Text::Encoding* e);
     // static public System.Boolean SevenBitClean(System.Byte[] input)
-    // Offset: 0x12BC5A4
+    // Offset: 0x18C0D74
     static bool SevenBitClean(::ArrayW<uint8_t> input);
   }; // UnityEngine.WWWTranscoder
   #pragma pack(pop)

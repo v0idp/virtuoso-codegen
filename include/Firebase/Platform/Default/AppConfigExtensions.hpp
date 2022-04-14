@@ -67,13 +67,13 @@ namespace Firebase::Platform::Default {
     // Set static field: static private readonly System.Collections.Generic.Dictionary`2<System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>> SStringState
     static void _set_SStringState(::System::Collections::Generic::Dictionary_2<int, ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*>* value);
     // static public Firebase.Platform.IAppConfigExtensions get_Instance()
-    // Offset: 0x12C7F30
+    // Offset: 0x18C72C0
     static ::Firebase::Platform::IAppConfigExtensions* get_Instance();
     // static private System.Void .cctor()
-    // Offset: 0x12C7F94
+    // Offset: 0x18C7324
     static void _cctor();
     // protected System.Void .ctor()
-    // Offset: 0x12C7F28
+    // Offset: 0x18C72B8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

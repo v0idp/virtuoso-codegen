@@ -35,15 +35,7 @@ namespace System::Security::Cryptography {
   // [TokenAttribute] Offset: FFFFFFFF
   class OidEnumerator : public ::Il2CppObject/*, public ::System::Collections::IEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Security.Cryptography.OidCollection m_oids
     // Size: 0x8
     // Offset: 0x10
@@ -62,24 +54,24 @@ namespace System::Security::Cryptography {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Security.Cryptography.OidCollection m_oids
-    ::System::Security::Cryptography::OidCollection*& dyn_m_oids();
+    [[deprecated]] ::System::Security::Cryptography::OidCollection*& dyn_m_oids();
     // Get instance field reference: private System.Int32 m_current
-    int& dyn_m_current();
+    [[deprecated]] int& dyn_m_current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0xBFAC08
+    // Offset: 0x1407FD4
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // System.Void .ctor(System.Security.Cryptography.OidCollection oids)
-    // Offset: 0xBFA9EC
+    // Offset: 0x1407DB8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OidEnumerator* New_ctor(::System::Security::Cryptography::OidCollection* oids) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::OidEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OidEnumerator*, creationType>(oids)));
     }
     // public System.Boolean MoveNext()
-    // Offset: 0xBFAC28
+    // Offset: 0x1407FF4
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0xBFAC90
+    // Offset: 0x140805C
     void Reset();
   }; // System.Security.Cryptography.OidEnumerator
   #pragma pack(pop)

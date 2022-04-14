@@ -25,15 +25,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRInput::OVRControllerBase::VirtualNearTouchMap : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRInput/RawNearTouch None
     // Size: 0x4
     // Offset: 0x10
@@ -66,20 +58,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRInput::RawNearTouch) == 0x4);
     public:
     // Get instance field reference: public OVRInput/RawNearTouch None
-    ::GlobalNamespace::OVRInput::RawNearTouch& dyn_None();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_None();
     // Get instance field reference: public OVRInput/RawNearTouch PrimaryIndexTrigger
-    ::GlobalNamespace::OVRInput::RawNearTouch& dyn_PrimaryIndexTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_PrimaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawNearTouch PrimaryThumbButtons
-    ::GlobalNamespace::OVRInput::RawNearTouch& dyn_PrimaryThumbButtons();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_PrimaryThumbButtons();
     // Get instance field reference: public OVRInput/RawNearTouch SecondaryIndexTrigger
-    ::GlobalNamespace::OVRInput::RawNearTouch& dyn_SecondaryIndexTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_SecondaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawNearTouch SecondaryThumbButtons
-    ::GlobalNamespace::OVRInput::RawNearTouch& dyn_SecondaryThumbButtons();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_SecondaryThumbButtons();
     // public OVRInput/RawNearTouch ToRawMask(OVRInput/NearTouch virtualMask)
-    // Offset: 0xF18374
+    // Offset: 0x13F2370
     ::GlobalNamespace::OVRInput::RawNearTouch ToRawMask(::GlobalNamespace::OVRInput::NearTouch virtualMask);
     // public System.Void .ctor()
-    // Offset: 0xF183C8
+    // Offset: 0x13F23C4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

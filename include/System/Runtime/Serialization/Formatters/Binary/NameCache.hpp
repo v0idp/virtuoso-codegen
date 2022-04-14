@@ -35,15 +35,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class NameCache : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String name
     // Size: 0x8
     // Offset: 0x10
@@ -60,18 +52,18 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Set static field: static private System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.Object> ht
     static void _set_ht(::System::Collections::Concurrent::ConcurrentDictionary_2<::StringW, ::Il2CppObject*>* value);
     // Get instance field reference: private System.String name
-    ::StringW& dyn_name();
+    [[deprecated]] ::StringW& dyn_name();
     // static private System.Void .cctor()
-    // Offset: 0xFCE738
+    // Offset: 0x1011178
     static void _cctor();
     // System.Object GetCachedValue(System.String name)
-    // Offset: 0xFCE5E4
+    // Offset: 0x1011020
     ::Il2CppObject* GetCachedValue(::StringW name);
     // System.Void SetCachedValue(System.Object value)
-    // Offset: 0xFCE698
+    // Offset: 0x10110D4
     void SetCachedValue(::Il2CppObject* value);
     // public System.Void .ctor()
-    // Offset: 0xFCE734
+    // Offset: 0x1011170
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

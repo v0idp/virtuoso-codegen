@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IconSwitcher : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _startsActive
     // Size: 0x1
     // Offset: 0x18
@@ -52,7 +44,7 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: startsActive and: normalMesh
     char __padding0[0x7] = {};
-    // [HeaderAttribute] Offset: 0x6725D0
+    // [HeaderAttribute] Offset: 0x788884
     // private UnityEngine.GameObject _normalMesh
     // Size: 0x8
     // Offset: 0x20
@@ -75,21 +67,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _startsActive
-    bool& dyn__startsActive();
+    [[deprecated]] bool& dyn__startsActive();
     // Get instance field reference: private UnityEngine.GameObject _normalMesh
-    ::UnityEngine::GameObject*& dyn__normalMesh();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__normalMesh();
     // Get instance field reference: private UnityEngine.GameObject _activeMesh
-    ::UnityEngine::GameObject*& dyn__activeMesh();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__activeMesh();
     // Get instance field reference: private System.Boolean _isHovering
-    bool& dyn__isHovering();
+    [[deprecated]] bool& dyn__isHovering();
     // private System.Void Awake()
-    // Offset: 0x8A01E0
+    // Offset: 0x1942CB8
     void Awake();
     // public System.Void SetActive(System.Boolean shouldBeActive)
-    // Offset: 0x8A01E8
+    // Offset: 0x1942CC0
     void SetActive(bool shouldBeActive);
     // public System.Void .ctor()
-    // Offset: 0x8A024C
+    // Offset: 0x1942D24
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -44,10 +44,10 @@ namespace Proyecto26 {
     // Set static field: static private Proyecto26.StaticCoroutine/Proyecto26.CoroutineHolder _runner
     static void _set__runner(::Proyecto26::StaticCoroutine::CoroutineHolder* value);
     // static private Proyecto26.StaticCoroutine/Proyecto26.CoroutineHolder get_Runner()
-    // Offset: 0x13BD864
+    // Offset: 0x1930CB8
     static ::Proyecto26::StaticCoroutine::CoroutineHolder* get_Runner();
     // static public UnityEngine.Coroutine StartCoroutine(System.Collections.IEnumerator coroutine)
-    // Offset: 0x13BD9A8
+    // Offset: 0x1930DFC
     static ::UnityEngine::Coroutine* StartCoroutine(::System::Collections::IEnumerator* coroutine);
   }; // Proyecto26.StaticCoroutine
   #pragma pack(pop)

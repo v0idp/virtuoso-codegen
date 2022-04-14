@@ -75,15 +75,7 @@ namespace System::IO::Compression {
     struct $ReadAsyncCore$d__40;
     // Nested type: ::System::IO::Compression::DeflateManagedStream::$WriteAsyncCore$d__47
     struct $WriteAsyncCore$d__47;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IO.Stream _stream
     // Size: 0x8
     // Offset: 0x28
@@ -150,166 +142,166 @@ namespace System::IO::Compression {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.IO.Stream _stream
-    ::System::IO::Stream*& dyn__stream();
+    [[deprecated]] ::System::IO::Stream*& dyn__stream();
     // Get instance field reference: private System.IO.Compression.CompressionMode _mode
-    ::System::IO::Compression::CompressionMode& dyn__mode();
+    [[deprecated]] ::System::IO::Compression::CompressionMode& dyn__mode();
     // Get instance field reference: private System.Boolean _leaveOpen
-    bool& dyn__leaveOpen();
+    [[deprecated]] bool& dyn__leaveOpen();
     // Get instance field reference: private System.IO.Compression.InflaterManaged _inflater
-    ::System::IO::Compression::InflaterManaged*& dyn__inflater();
+    [[deprecated]] ::System::IO::Compression::InflaterManaged*& dyn__inflater();
     // Get instance field reference: private System.IO.Compression.DeflaterManaged _deflater
-    ::System::IO::Compression::DeflaterManaged*& dyn__deflater();
+    [[deprecated]] ::System::IO::Compression::DeflaterManaged*& dyn__deflater();
     // Get instance field reference: private System.Byte[] _buffer
-    ::ArrayW<uint8_t>& dyn__buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__buffer();
     // Get instance field reference: private System.Int32 _asyncOperations
-    int& dyn__asyncOperations();
+    [[deprecated]] int& dyn__asyncOperations();
     // Get instance field reference: private System.IO.Compression.IFileFormatWriter _formatWriter
-    ::System::IO::Compression::IFileFormatWriter*& dyn__formatWriter();
+    [[deprecated]] ::System::IO::Compression::IFileFormatWriter*& dyn__formatWriter();
     // Get instance field reference: private System.Boolean _wroteHeader
-    bool& dyn__wroteHeader();
+    [[deprecated]] bool& dyn__wroteHeader();
     // Get instance field reference: private System.Boolean _wroteBytes
-    bool& dyn__wroteBytes();
+    [[deprecated]] bool& dyn__wroteBytes();
     // System.Void .ctor(System.IO.Stream stream, System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues method)
-    // Offset: 0x111B8B8
+    // Offset: 0x1693124
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DeflateManagedStream* New_ctor(::System::IO::Stream* stream, ::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::DeflateManagedStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DeflateManagedStream*, creationType>(stream, method)));
     }
     // System.Void InitializeInflater(System.IO.Stream stream, System.Boolean leaveOpen, System.IO.Compression.IFileFormatReader reader, System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues method)
-    // Offset: 0x111BA04
+    // Offset: 0x1693270
     void InitializeInflater(::System::IO::Stream* stream, bool leaveOpen, ::System::IO::Compression::IFileFormatReader* reader, ::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues method);
     // private System.Void ValidateParameters(System.Byte[] array, System.Int32 offset, System.Int32 count)
-    // Offset: 0x111C0AC
+    // Offset: 0x1693918
     void ValidateParameters(::ArrayW<uint8_t> array, int offset, int count);
     // private System.Void EnsureNotDisposed()
-    // Offset: 0x111BDD0
+    // Offset: 0x169363C
     void EnsureNotDisposed();
     // static private System.Void ThrowStreamClosedException()
-    // Offset: 0x111C3B4
+    // Offset: 0x1693C20
     static void ThrowStreamClosedException();
     // private System.Void EnsureDecompressionMode()
-    // Offset: 0x111C094
+    // Offset: 0x1693900
     void EnsureDecompressionMode();
     // static private System.Void ThrowCannotReadFromDeflateManagedStreamException()
-    // Offset: 0x111C40C
+    // Offset: 0x1693C78
     static void ThrowCannotReadFromDeflateManagedStreamException();
     // private System.Void EnsureCompressionMode()
-    // Offset: 0x111C460
+    // Offset: 0x1693CCC
     void EnsureCompressionMode();
     // static private System.Void ThrowCannotWriteToDeflateManagedStreamException()
-    // Offset: 0x111C47C
+    // Offset: 0x1693CE8
     static void ThrowCannotWriteToDeflateManagedStreamException();
     // private System.Threading.Tasks.Task`1<System.Int32> ReadAsyncCore(System.Threading.Tasks.Task`1<System.Int32> readTask, System.Byte[] array, System.Int32 offset, System.Int32 count, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0x111CA34
+    // Offset: 0x16942A0
     ::System::Threading::Tasks::Task_1<int>* ReadAsyncCore(::System::Threading::Tasks::Task_1<int>* readTask, ::ArrayW<uint8_t> array, int offset, int count, ::System::Threading::CancellationToken cancellationToken);
     // private System.Void WriteDeflaterOutput()
-    // Offset: 0x111CDCC
+    // Offset: 0x1694638
     void WriteDeflaterOutput();
     // private System.Void DoMaintenance(System.Byte[] array, System.Int32 offset, System.Int32 count)
-    // Offset: 0x111CC28
+    // Offset: 0x1694494
     void DoMaintenance(::ArrayW<uint8_t> array, int offset, int count);
     // private System.Void PurgeBuffers(System.Boolean disposing)
-    // Offset: 0x111D160
+    // Offset: 0x16949CC
     void PurgeBuffers(bool disposing);
     // private System.Threading.Tasks.Task WriteAsyncCore(System.Byte[] array, System.Int32 offset, System.Int32 count, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0x111D624
+    // Offset: 0x1694E90
     ::System::Threading::Tasks::Task* WriteAsyncCore(::ArrayW<uint8_t> array, int offset, int count, ::System::Threading::CancellationToken cancellationToken);
     // private System.Threading.Tasks.Task <>n__0(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0x111D91C
+    // Offset: 0x1695188
     ::System::Threading::Tasks::Task* $$n__0(::ArrayW<uint8_t> buffer, int offset, int count, ::System::Threading::CancellationToken cancellationToken);
     // public override System.Boolean get_CanRead()
-    // Offset: 0x111BC60
+    // Offset: 0x16934CC
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanRead()
     bool get_CanRead();
     // public override System.Boolean get_CanWrite()
-    // Offset: 0x111BC88
+    // Offset: 0x16934F4
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanWrite()
     bool get_CanWrite();
     // public override System.Boolean get_CanSeek()
-    // Offset: 0x111BCB4
+    // Offset: 0x1693520
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanSeek()
     bool get_CanSeek();
     // public override System.Int64 get_Length()
-    // Offset: 0x111BCBC
+    // Offset: 0x1693528
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Length()
     int64_t get_Length();
     // public override System.Int64 get_Position()
-    // Offset: 0x111BD10
+    // Offset: 0x169357C
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Position()
     int64_t get_Position();
     // public override System.Void set_Position(System.Int64 value)
-    // Offset: 0x111BD64
+    // Offset: 0x16935D0
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::set_Position(System.Int64 value)
     void set_Position(int64_t value);
     // public override System.Void Flush()
-    // Offset: 0x111BDB8
+    // Offset: 0x1693624
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Flush()
     void Flush();
     // public override System.Threading.Tasks.Task FlushAsync(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0x111BDE8
+    // Offset: 0x1693654
     // Implemented from: System.IO.Stream
     // Base method: System.Threading.Tasks.Task Stream::FlushAsync(System.Threading.CancellationToken cancellationToken)
     ::System::Threading::Tasks::Task* FlushAsync(::System::Threading::CancellationToken cancellationToken);
     // public override System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
-    // Offset: 0x111BEA0
+    // Offset: 0x169370C
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::Seek(System.Int64 offset, System.IO.SeekOrigin origin)
     int64_t Seek(int64_t offset, ::System::IO::SeekOrigin origin);
     // public override System.Void SetLength(System.Int64 value)
-    // Offset: 0x111BEF4
+    // Offset: 0x1693760
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::SetLength(System.Int64 value)
     void SetLength(int64_t value);
     // public override System.Int32 Read(System.Byte[] array, System.Int32 offset, System.Int32 count)
-    // Offset: 0x111BF48
+    // Offset: 0x16937B4
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::Read(System.Byte[] array, System.Int32 offset, System.Int32 count)
     int Read(::ArrayW<uint8_t> array, int offset, int count);
     // public override System.IAsyncResult BeginRead(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback asyncCallback, System.Object asyncState)
-    // Offset: 0x111C4D0
+    // Offset: 0x1693D3C
     // Implemented from: System.IO.Stream
     // Base method: System.IAsyncResult Stream::BeginRead(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback asyncCallback, System.Object asyncState)
     ::System::IAsyncResult* BeginRead(::ArrayW<uint8_t> buffer, int offset, int count, ::System::AsyncCallback* asyncCallback, ::Il2CppObject* asyncState);
     // public override System.Int32 EndRead(System.IAsyncResult asyncResult)
-    // Offset: 0x111C684
+    // Offset: 0x1693EF0
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::EndRead(System.IAsyncResult asyncResult)
     int EndRead(::System::IAsyncResult* asyncResult);
     // public override System.Threading.Tasks.Task`1<System.Int32> ReadAsync(System.Byte[] array, System.Int32 offset, System.Int32 count, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0x111C6D0
+    // Offset: 0x1693F3C
     // Implemented from: System.IO.Stream
     // Base method: System.Threading.Tasks.Task`1<System.Int32> Stream::ReadAsync(System.Byte[] array, System.Int32 offset, System.Int32 count, System.Threading.CancellationToken cancellationToken)
     ::System::Threading::Tasks::Task_1<int>* ReadAsync(::ArrayW<uint8_t> array, int offset, int count, ::System::Threading::CancellationToken cancellationToken);
     // public override System.Void Write(System.Byte[] array, System.Int32 offset, System.Int32 count)
-    // Offset: 0x111CB9C
+    // Offset: 0x1694408
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Write(System.Byte[] array, System.Int32 offset, System.Int32 count)
     void Write(::ArrayW<uint8_t> array, int offset, int count);
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x111D370
+    // Offset: 0x1694BDC
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);
     // public override System.Threading.Tasks.Task WriteAsync(System.Byte[] array, System.Int32 offset, System.Int32 count, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0x111D4DC
+    // Offset: 0x1694D48
     // Implemented from: System.IO.Stream
     // Base method: System.Threading.Tasks.Task Stream::WriteAsync(System.Byte[] array, System.Int32 offset, System.Int32 count, System.Threading.CancellationToken cancellationToken)
     ::System::Threading::Tasks::Task* WriteAsync(::ArrayW<uint8_t> array, int offset, int count, ::System::Threading::CancellationToken cancellationToken);
     // public override System.IAsyncResult BeginWrite(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback asyncCallback, System.Object asyncState)
-    // Offset: 0x111D75C
+    // Offset: 0x1694FC8
     // Implemented from: System.IO.Stream
     // Base method: System.IAsyncResult Stream::BeginWrite(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback asyncCallback, System.Object asyncState)
     ::System::IAsyncResult* BeginWrite(::ArrayW<uint8_t> buffer, int offset, int count, ::System::AsyncCallback* asyncCallback, ::Il2CppObject* asyncState);
     // public override System.Void EndWrite(System.IAsyncResult asyncResult)
-    // Offset: 0x111D818
+    // Offset: 0x1695084
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::EndWrite(System.IAsyncResult asyncResult)
     void EndWrite(::System::IAsyncResult* asyncResult);

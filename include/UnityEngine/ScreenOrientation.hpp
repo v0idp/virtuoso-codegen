@@ -41,7 +41,7 @@ namespace UnityEngine {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [ObsoleteAttribute] Offset: 0x56A554
+    // [ObsoleteAttribute] Offset: 0x664738
     // static field const value: static public UnityEngine.ScreenOrientation Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public UnityEngine.ScreenOrientation Unknown
@@ -85,7 +85,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.ScreenOrientation Landscape
     static void _set_Landscape(::UnityEngine::ScreenOrientation value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.ScreenOrientation
   #pragma pack(pop)
   static check_size<sizeof(ScreenOrientation), 0 + sizeof(int)> __UnityEngine_ScreenOrientationSizeCheck;

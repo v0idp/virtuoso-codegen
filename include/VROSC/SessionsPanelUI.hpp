@@ -26,6 +26,8 @@ namespace VROSC {
   class SessionItemData;
   // Forward declaring type: SessionUIData
   class SessionUIData;
+  // Forward declaring type: Error
+  struct Error;
 }
 // Forward declaring namespace: TMPro
 namespace TMPro {
@@ -66,15 +68,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionsPanelUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.SessionsItemsContainer _sessionsItemsContainer
     // Size: 0x8
     // Offset: 0x18
@@ -139,84 +133,90 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.SessionsItemsContainer _sessionsItemsContainer
-    ::VROSC::SessionsItemsContainer*& dyn__sessionsItemsContainer();
+    [[deprecated]] ::VROSC::SessionsItemsContainer*& dyn__sessionsItemsContainer();
     // Get instance field reference: protected TMPro.TextMeshPro _messageText
-    ::TMPro::TextMeshPro*& dyn__messageText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__messageText();
     // Get instance field reference: private TMPro.TextMeshPro _errorText
-    ::TMPro::TextMeshPro*& dyn__errorText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__errorText();
     // Get instance field reference: private VROSC.SessionsLibraryPreviewPlayer _previewPlayer
-    ::VROSC::SessionsLibraryPreviewPlayer*& dyn__previewPlayer();
+    [[deprecated]] ::VROSC::SessionsLibraryPreviewPlayer*& dyn__previewPlayer();
     // Get instance field reference: private UnityEngine.GameObject _listView
-    ::UnityEngine::GameObject*& dyn__listView();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__listView();
     // Get instance field reference: protected System.String _noSessionsMessage
-    ::StringW& dyn__noSessionsMessage();
+    [[deprecated]] ::StringW& dyn__noSessionsMessage();
     // Get instance field reference: protected System.String _disabledMessage
-    ::StringW& dyn__disabledMessage();
+    [[deprecated]] ::StringW& dyn__disabledMessage();
     // Get instance field reference: protected System.String _loadingMessage
-    ::StringW& dyn__loadingMessage();
+    [[deprecated]] ::StringW& dyn__loadingMessage();
     // Get instance field reference: public System.Action`1<VROSC.SessionItemData> OnSessionSelected
-    ::System::Action_1<::VROSC::SessionItemData*>*& dyn_OnSessionSelected();
+    [[deprecated]] ::System::Action_1<::VROSC::SessionItemData*>*& dyn_OnSessionSelected();
     // Get instance field reference: protected System.Boolean _isEnabled
-    bool& dyn__isEnabled();
+    [[deprecated]] bool& dyn__isEnabled();
     // protected System.Void Awake()
-    // Offset: 0x13B015C
+    // Offset: 0x1996A74
     void Awake();
     // protected System.Void OnEnable()
-    // Offset: 0x13B0430
+    // Offset: 0x1996D24
     void OnEnable();
     // protected System.Void OnDisable()
-    // Offset: 0x13B050C
+    // Offset: 0x1996E00
     void OnDisable();
     // protected System.Void OnDestroy()
-    // Offset: 0x13B05EC
+    // Offset: 0x1996EDC
     void OnDestroy();
     // public System.Void Setup()
-    // Offset: 0x13B0414
+    // Offset: 0x198D53C
     void Setup();
     // public System.Void Refresh()
-    // Offset: 0x13B0744
+    // Offset: 0x1997034
     void Refresh();
     // public System.Void AddSessionList(System.Collections.Generic.List`1<VROSC.SessionUIData> sessionsUIDatas, System.Boolean clear)
-    // Offset: 0x13B0748
+    // Offset: 0x1997038
     void AddSessionList(::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* sessionsUIDatas, bool clear);
     // public System.Void AddSession(System.String sessionId, VROSC.SessionUIData sessionUIData, System.Boolean isNewSave)
-    // Offset: 0x13B091C
+    // Offset: 0x1997200
     void AddSession(::StringW sessionId, ::VROSC::SessionUIData* sessionUIData, bool isNewSave);
     // public System.Boolean HasSession(System.String sessionId)
-    // Offset: 0x13B093C
+    // Offset: 0x199721C
     bool HasSession(::StringW sessionId);
     // public System.Void RemoveSession(System.String sessionId)
-    // Offset: 0x13B0958
+    // Offset: 0x1991E58
     void RemoveSession(::StringW sessionId);
     // public System.Void FilterBy(System.String text)
-    // Offset: 0x13B09FC
+    // Offset: 0x198F3CC
     void FilterBy(::StringW text);
     // public System.Void OrderBy(VROSC.SessionsLibraryUI/VROSC.OrderingType orderingType, VROSC.SessionsLibraryUI/VROSC.OrderingDirection orderingDirection)
-    // Offset: 0x13B0A18
+    // Offset: 0x198F470
     void OrderBy(::VROSC::SessionsLibraryUI::OrderingType orderingType, ::VROSC::SessionsLibraryUI::OrderingDirection orderingDirection);
     // public System.Void SelectSession(VROSC.SessionItemData sessionItemData)
-    // Offset: 0x13B0A34
+    // Offset: 0x198F0E0
     void SelectSession(::VROSC::SessionItemData* sessionItemData);
     // public System.Void SetEnabled(System.Boolean enabled)
-    // Offset: 0x13B0A50
+    // Offset: 0x198DCEC
     void SetEnabled(bool enabled);
     // public System.Void Clear()
-    // Offset: 0x13B0AC4
+    // Offset: 0x198F2D0
     void Clear();
+    // public System.Void ShowError(VROSC.Error error)
+    // Offset: 0x1990D0C
+    void ShowError(::VROSC::Error error);
+    // public System.Void ClearErrorMessage()
+    // Offset: 0x1990C90
+    void ClearErrorMessage();
     // protected System.Void UpdateMessage(System.String message)
-    // Offset: 0x13B026C
+    // Offset: 0x1996B7C
     void UpdateMessage(::StringW message);
     // protected System.Void UpdateErrorMessage(System.String errorMessage)
-    // Offset: 0x13B0340
+    // Offset: 0x1996C50
     void UpdateErrorMessage(::StringW errorMessage);
     // private System.Void SessionSelected(VROSC.SessionItemData item)
-    // Offset: 0x13B0B48
+    // Offset: 0x1997234
     void SessionSelected(::VROSC::SessionItemData* item);
     // protected System.Void UserLoggedOut()
-    // Offset: 0x13B0BC0
+    // Offset: 0x19972A8
     void UserLoggedOut();
     // public System.Void .ctor()
-    // Offset: 0x13B0C38
+    // Offset: 0x1997320
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -364,6 +364,23 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsPanelUI::*)()>(&VROSC::SessionsPanelUI::Clear)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsPanelUI*), "Clear", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SessionsPanelUI::ShowError
+// Il2CppName: ShowError
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsPanelUI::*)(::VROSC::Error)>(&VROSC::SessionsPanelUI::ShowError)> {
+  static const MethodInfo* get() {
+    static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsPanelUI*), "ShowError", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SessionsPanelUI::ClearErrorMessage
+// Il2CppName: ClearErrorMessage
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsPanelUI::*)()>(&VROSC::SessionsPanelUI::ClearErrorMessage)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsPanelUI*), "ClearErrorMessage", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::SessionsPanelUI::UpdateMessage

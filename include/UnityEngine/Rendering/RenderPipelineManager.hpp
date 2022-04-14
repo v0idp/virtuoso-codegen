@@ -65,42 +65,42 @@ namespace UnityEngine::Rendering {
     static int _get_s_CameraCapacity();
     // Set static field: static private System.Int32 s_CameraCapacity
     static void _set_s_CameraCapacity(int value);
-    // [DebuggerBrowsableAttribute] Offset: 0x56C134
+    // [DebuggerBrowsableAttribute] Offset: 0x666318
     // Get static field: static private UnityEngine.Rendering.RenderPipeline <currentPipeline>k__BackingField
     static ::UnityEngine::Rendering::RenderPipeline* _get_$currentPipeline$k__BackingField();
     // Set static field: static private UnityEngine.Rendering.RenderPipeline <currentPipeline>k__BackingField
     static void _set_$currentPipeline$k__BackingField(::UnityEngine::Rendering::RenderPipeline* value);
-    // [DebuggerBrowsableAttribute] Offset: 0x56C170
+    // [DebuggerBrowsableAttribute] Offset: 0x666354
     // Get static field: static private System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera> beginCameraRendering
     static ::System::Action_2<::UnityEngine::Rendering::ScriptableRenderContext, ::UnityEngine::Camera*>* _get_beginCameraRendering();
     // Set static field: static private System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera> beginCameraRendering
     static void _set_beginCameraRendering(::System::Action_2<::UnityEngine::Rendering::ScriptableRenderContext, ::UnityEngine::Camera*>* value);
     // static public UnityEngine.Rendering.RenderPipeline get_currentPipeline()
-    // Offset: 0x9D7BE0
+    // Offset: 0xBCC988
     static ::UnityEngine::Rendering::RenderPipeline* get_currentPipeline();
     // static private System.Void set_currentPipeline(UnityEngine.Rendering.RenderPipeline value)
-    // Offset: 0x9D7C44
+    // Offset: 0xBCC9EC
     static void set_currentPipeline(::UnityEngine::Rendering::RenderPipeline* value);
     // static public System.Void add_beginCameraRendering(System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera> value)
-    // Offset: 0x9D7CAC
+    // Offset: 0xBCCA54
     static void add_beginCameraRendering(::System::Action_2<::UnityEngine::Rendering::ScriptableRenderContext, ::UnityEngine::Camera*>* value);
     // static public System.Void remove_beginCameraRendering(System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera> value)
-    // Offset: 0x9D7DA4
+    // Offset: 0xBCCB4C
     static void remove_beginCameraRendering(::System::Action_2<::UnityEngine::Rendering::ScriptableRenderContext, ::UnityEngine::Camera*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x9D8340
+    // Offset: 0xBCD0E8
     static void _cctor();
     // static System.Void CleanupRenderPipeline()
-    // Offset: 0x9D7754
+    // Offset: 0xBCC4FC
     static void CleanupRenderPipeline();
     // static private System.Void GetCameras(UnityEngine.Rendering.ScriptableRenderContext context)
-    // Offset: 0x9D7F98
+    // Offset: 0xBCCD40
     static void GetCameras(::UnityEngine::Rendering::ScriptableRenderContext context);
     // static private System.Void DoRenderLoop_Internal(UnityEngine.Rendering.RenderPipelineAsset pipe, System.IntPtr loopPtr, System.Collections.Generic.List`1<UnityEngine.Camera/UnityEngine.RenderRequest> renderRequests)
-    // Offset: 0x9D8124
+    // Offset: 0xBCCECC
     static void DoRenderLoop_Internal(::UnityEngine::Rendering::RenderPipelineAsset* pipe, ::System::IntPtr loopPtr, ::System::Collections::Generic::List_1<::UnityEngine::Camera::RenderRequest>* renderRequests);
     // static System.Void PrepareRenderPipeline(UnityEngine.Rendering.RenderPipelineAsset pipelineAsset)
-    // Offset: 0x9D7950
+    // Offset: 0xBCC6F8
     static void PrepareRenderPipeline(::UnityEngine::Rendering::RenderPipelineAsset* pipelineAsset);
   }; // UnityEngine.Rendering.RenderPipelineManager
   #pragma pack(pop)

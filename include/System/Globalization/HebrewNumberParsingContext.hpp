@@ -47,11 +47,11 @@ namespace System::Globalization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Globalization.HebrewNumber/System.Globalization.HS state
-    ::System::Globalization::HebrewNumber::HS& dyn_state();
+    [[deprecated]] ::System::Globalization::HebrewNumber::HS& dyn_state();
     // Get instance field reference: System.Int32 result
-    int& dyn_result();
+    [[deprecated]] int& dyn_result();
     // public System.Void .ctor(System.Int32 result)
-    // Offset: 0xC4C8FC
+    // Offset: 0x1460AD0
     HebrewNumberParsingContext(int result);
   }; // System.Globalization.HebrewNumberParsingContext
   #pragma pack(pop)

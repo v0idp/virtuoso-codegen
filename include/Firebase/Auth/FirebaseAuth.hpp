@@ -86,15 +86,7 @@ namespace Firebase::Auth {
     class $SignInWithEmailAndPasswordAsync$c__AnonStoreyA;
     // Nested type: ::Firebase::Auth::FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB
     class $CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -183,124 +175,124 @@ namespace Firebase::Auth {
     // Set static field: static private System.Action`1<Firebase.Auth.FirebaseAuth> <>f__am$cache1
     static void _set_$$f__am$cache1(::System::Action_1<::Firebase::Auth::FirebaseAuth*>* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // Get instance field reference: private Firebase.FirebaseApp appProxy
-    ::Firebase::FirebaseApp*& dyn_appProxy();
+    [[deprecated]] ::Firebase::FirebaseApp*& dyn_appProxy();
     // Get instance field reference: private System.IntPtr appCPtr
-    ::System::IntPtr& dyn_appCPtr();
+    [[deprecated]] ::System::IntPtr& dyn_appCPtr();
     // Get instance field reference: private System.IntPtr authStateListener
-    ::System::IntPtr& dyn_authStateListener();
+    [[deprecated]] ::System::IntPtr& dyn_authStateListener();
     // Get instance field reference: private System.IntPtr idTokenListener
-    ::System::IntPtr& dyn_idTokenListener();
+    [[deprecated]] ::System::IntPtr& dyn_idTokenListener();
     // Get instance field reference: private Firebase.Auth.FirebaseUser currentUser
-    ::Firebase::Auth::FirebaseUser*& dyn_currentUser();
+    [[deprecated]] ::Firebase::Auth::FirebaseUser*& dyn_currentUser();
     // Get instance field reference: private System.EventHandler stateChangedImpl
-    ::System::EventHandler*& dyn_stateChangedImpl();
+    [[deprecated]] ::System::EventHandler*& dyn_stateChangedImpl();
     // Get instance field reference: private System.EventHandler idTokenChangedImpl
-    ::System::EventHandler*& dyn_idTokenChangedImpl();
+    [[deprecated]] ::System::EventHandler*& dyn_idTokenChangedImpl();
     // Get instance field reference: private System.Boolean persistentLoaded
-    bool& dyn_persistentLoaded();
+    [[deprecated]] bool& dyn_persistentLoaded();
     // static public Firebase.Auth.FirebaseAuth get_DefaultInstance()
-    // Offset: 0x12B0C98
+    // Offset: 0x18B09D4
     static ::Firebase::Auth::FirebaseAuth* get_DefaultInstance();
     // public Firebase.Auth.FirebaseUser get_CurrentUser()
-    // Offset: 0x12B10B8
+    // Offset: 0x18B0DF4
     ::Firebase::Auth::FirebaseUser* get_CurrentUser();
     // Firebase.Auth.FirebaseUser get_CurrentUserInternal()
-    // Offset: 0x12B111C
+    // Offset: 0x18B0E58
     ::Firebase::Auth::FirebaseUser* get_CurrentUserInternal();
     // public System.Void add_StateChanged(System.EventHandler value)
-    // Offset: 0x12B0D30
+    // Offset: 0x18B0A6C
     void add_StateChanged(::System::EventHandler* value);
     // public System.Void remove_StateChanged(System.EventHandler value)
-    // Offset: 0x12B0E7C
+    // Offset: 0x18B0BB8
     void remove_StateChanged(::System::EventHandler* value);
     // private System.Void add_stateChangedImpl(System.EventHandler value)
-    // Offset: 0x12B0DDC
+    // Offset: 0x18B0B18
     void add_stateChangedImpl(::System::EventHandler* value);
     // private System.Void remove_stateChangedImpl(System.EventHandler value)
-    // Offset: 0x12B0E80
+    // Offset: 0x18B0BBC
     void remove_stateChangedImpl(::System::EventHandler* value);
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0x12AFD78
+    // Offset: 0x18AFAB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseAuth* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::FirebaseAuth::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseAuth*, creationType>(cPtr, cMemoryOwn)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12B1E08
+    // Offset: 0x18B1B6C
     static void _cctor();
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Auth.FirebaseAuth obj)
-    // Offset: 0x12AE9A8
+    // Offset: 0x18AE54C
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Auth::FirebaseAuth* obj);
     // public System.Void Dispose()
-    // Offset: 0x12AFE44
+    // Offset: 0x18AFB80
     void Dispose();
     // static private Firebase.Auth.FirebaseAuth ProxyFromAppCPtr(System.IntPtr appCPtr)
-    // Offset: 0x12B01FC
+    // Offset: 0x18AFF38
     static ::Firebase::Auth::FirebaseAuth* ProxyFromAppCPtr(::System::IntPtr appCPtr);
     // private System.Void ThrowIfNull()
-    // Offset: 0x12B0328
+    // Offset: 0x18B0064
     void ThrowIfNull();
     // static public Firebase.Auth.FirebaseAuth GetAuth(Firebase.FirebaseApp app)
-    // Offset: 0x12B03AC
+    // Offset: 0x18B00E8
     static ::Firebase::Auth::FirebaseAuth* GetAuth(::Firebase::FirebaseApp* app);
     // private System.Void OnAppDisposed(System.Object sender, System.EventArgs eventArgs)
-    // Offset: 0x12B0858
+    // Offset: 0x18B0594
     void OnAppDisposed(::Il2CppObject* sender, ::System::EventArgs* eventArgs);
     // private System.Void DisposeInternal()
-    // Offset: 0x12AFE48
+    // Offset: 0x18AFB84
     void DisposeInternal();
     // static private System.Void ForwardStateChange(System.IntPtr appCPtr, System.Action`1<Firebase.Auth.FirebaseAuth> stateChangeClosure)
-    // Offset: 0x12B0AC0
+    // Offset: 0x18B07FC
     static void ForwardStateChange(::System::IntPtr appCPtr, ::System::Action_1<::Firebase::Auth::FirebaseAuth*>* stateChangeClosure);
     // static System.Void StateChangedFunction(System.IntPtr appCPtr)
-    // Offset: 0x12AFB50
+    // Offset: 0x18AF88C
     static void StateChangedFunction(::System::IntPtr appCPtr);
     // static System.Void IdTokenChangedFunction(System.IntPtr appCPtr)
-    // Offset: 0x12AFC64
+    // Offset: 0x18AF9A0
     static void IdTokenChangedFunction(::System::IntPtr appCPtr);
     // private Firebase.Auth.FirebaseUser UpdateCurrentUser(Firebase.Auth.FirebaseUser proxy)
-    // Offset: 0x12B0F20
+    // Offset: 0x18B0C5C
     ::Firebase::Auth::FirebaseUser* UpdateCurrentUser(::Firebase::Auth::FirebaseUser* proxy);
     // public System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> SignInWithEmailAndPasswordAsync(System.String email, System.String password)
-    // Offset: 0x12B1230
+    // Offset: 0x18B0F6C
     ::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* SignInWithEmailAndPasswordAsync(::StringW email, ::StringW password);
     // public System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> CreateUserWithEmailAndPasswordAsync(System.String email, System.String password)
-    // Offset: 0x12B14AC
+    // Offset: 0x18B11E8
     ::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* CreateUserWithEmailAndPasswordAsync(::StringW email, ::StringW password);
     // private System.Void CompleteFirebaseUserTask(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> task, System.Threading.Tasks.TaskCompletionSource`1<Firebase.Auth.FirebaseUser> taskCompletionSource)
-    // Offset: 0x12B1728
+    // Offset: 0x18B1464
     void CompleteFirebaseUserTask(::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* task, ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Auth::FirebaseUser*>* taskCompletionSource);
     // System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> SignInWithEmailAndPasswordInternalAsync(System.String email, System.String password)
-    // Offset: 0x12B13AC
+    // Offset: 0x18B10E8
     ::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* SignInWithEmailAndPasswordInternalAsync(::StringW email, ::StringW password);
     // System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> CreateUserWithEmailAndPasswordInternalAsync(System.String email, System.String password)
-    // Offset: 0x12B1628
+    // Offset: 0x18B1364
     ::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* CreateUserWithEmailAndPasswordInternalAsync(::StringW email, ::StringW password);
     // public System.Void SignOut()
-    // Offset: 0x12B1AB0
+    // Offset: 0x18B1814
     void SignOut();
     // public System.Threading.Tasks.Task SendPasswordResetEmailAsync(System.String email)
-    // Offset: 0x12B1B4C
+    // Offset: 0x18B18B0
     ::System::Threading::Tasks::Task* SendPasswordResetEmailAsync(::StringW email);
     // static Firebase.Auth.FirebaseAuth GetAuthInternal(Firebase.FirebaseApp app, out Firebase.InitResult init_result_out)
-    // Offset: 0x12B1C20
+    // Offset: 0x18B1984
     static ::Firebase::Auth::FirebaseAuth* GetAuthInternal(::Firebase::FirebaseApp* app, ByRef<::Firebase::InitResult> init_result_out);
     // static System.Void ReleaseReferenceInternal(Firebase.Auth.FirebaseAuth instance)
-    // Offset: 0x12B09EC
+    // Offset: 0x18B0728
     static void ReleaseReferenceInternal(::Firebase::Auth::FirebaseAuth* instance);
     // static private System.Void <StateChangedFunction>m__0(Firebase.Auth.FirebaseAuth auth)
-    // Offset: 0x12B1E90
+    // Offset: 0x18B1BF4
     static void $StateChangedFunction$m__0(::Firebase::Auth::FirebaseAuth* auth);
     // static private System.Void <IdTokenChangedFunction>m__1(Firebase.Auth.FirebaseAuth auth)
-    // Offset: 0x12B1FCC
+    // Offset: 0x18B1D30
     static void $IdTokenChangedFunction$m__1(::Firebase::Auth::FirebaseAuth* auth);
     // protected override System.Void Finalize()
-    // Offset: 0x12AFDDC
+    // Offset: 0x18AFB18
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

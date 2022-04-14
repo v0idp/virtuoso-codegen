@@ -43,7 +43,7 @@ namespace System::Net::Sockets {
     // Nested type: ::System::Net::Sockets::SocketTaskExtensions::$$c
     class $$c;
     // static public System.Threading.Tasks.Task ConnectAsync(System.Net.Sockets.Socket socket, System.Net.EndPoint remoteEP)
-    // Offset: 0x950ED0
+    // Offset: 0xDA52D8
     static ::System::Threading::Tasks::Task* ConnectAsync(::System::Net::Sockets::Socket* socket, ::System::Net::EndPoint* remoteEP);
   }; // System.Net.Sockets.SocketTaskExtensions
   #pragma pack(pop)

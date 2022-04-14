@@ -41,28 +41,28 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A241C
+    // [DescriptionAttribute] Offset: 0x6B65D0
     // static field const value: static public Oculus.Platform.AchievementType Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.AchievementType Unknown
     static ::Oculus::Platform::AchievementType _get_Unknown();
     // Set static field: static public Oculus.Platform.AchievementType Unknown
     static void _set_Unknown(::Oculus::Platform::AchievementType value);
-    // [DescriptionAttribute] Offset: 0x5A2454
+    // [DescriptionAttribute] Offset: 0x6B6608
     // static field const value: static public Oculus.Platform.AchievementType Simple
     static constexpr const int Simple = 1;
     // Get static field: static public Oculus.Platform.AchievementType Simple
     static ::Oculus::Platform::AchievementType _get_Simple();
     // Set static field: static public Oculus.Platform.AchievementType Simple
     static void _set_Simple(::Oculus::Platform::AchievementType value);
-    // [DescriptionAttribute] Offset: 0x5A248C
+    // [DescriptionAttribute] Offset: 0x6B6640
     // static field const value: static public Oculus.Platform.AchievementType Bitfield
     static constexpr const int Bitfield = 2;
     // Get static field: static public Oculus.Platform.AchievementType Bitfield
     static ::Oculus::Platform::AchievementType _get_Bitfield();
     // Set static field: static public Oculus.Platform.AchievementType Bitfield
     static void _set_Bitfield(::Oculus::Platform::AchievementType value);
-    // [DescriptionAttribute] Offset: 0x5A24C4
+    // [DescriptionAttribute] Offset: 0x6B6678
     // static field const value: static public Oculus.Platform.AchievementType Count
     static constexpr const int Count = 3;
     // Get static field: static public Oculus.Platform.AchievementType Count
@@ -70,7 +70,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.AchievementType Count
     static void _set_Count(::Oculus::Platform::AchievementType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.AchievementType
   #pragma pack(pop)
   static check_size<sizeof(AchievementType), 0 + sizeof(int)> __Oculus_Platform_AchievementTypeSizeCheck;

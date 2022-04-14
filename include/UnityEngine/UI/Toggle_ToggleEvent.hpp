@@ -25,7 +25,7 @@ namespace UnityEngine::UI {
   class Toggle::ToggleEvent : public ::UnityEngine::Events::UnityEvent_1<bool> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x113E090
+    // Offset: 0x16D4828
     // Implemented from: UnityEngine.Events.UnityEvent`1
     // Base method: System.Void UnityEvent_1::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

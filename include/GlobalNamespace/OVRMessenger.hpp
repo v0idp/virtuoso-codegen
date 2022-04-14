@@ -76,34 +76,34 @@ namespace GlobalNamespace {
     // Set static field: static public System.Collections.Generic.List`1<System.String> permanentMessages
     static void _set_permanentMessages(::System::Collections::Generic::List_1<::StringW>* value);
     // static private System.Void .cctor()
-    // Offset: 0xA1B3B8
+    // Offset: 0xC6041C
     static void _cctor();
     // static public System.Void MarkAsPermanent(System.String eventType)
-    // Offset: 0xA1A224
+    // Offset: 0xC5F288
     static void MarkAsPermanent(::StringW eventType);
     // static public System.Void Cleanup()
-    // Offset: 0xA1A2B0
+    // Offset: 0xC5F314
     static void Cleanup();
     // static public System.Void PrintEventTable()
-    // Offset: 0xA1A788
+    // Offset: 0xC5F7EC
     static void PrintEventTable();
     // static public System.Void OnListenerAdding(System.String eventType, System.Delegate listenerBeingAdded)
-    // Offset: 0xA1AA20
+    // Offset: 0xC5FA84
     static void OnListenerAdding(::StringW eventType, ::System::Delegate* listenerBeingAdded);
     // static public System.Void OnListenerRemoving(System.String eventType, System.Delegate listenerBeingRemoved)
-    // Offset: 0xA1AC84
+    // Offset: 0xC5FCE8
     static void OnListenerRemoving(::StringW eventType, ::System::Delegate* listenerBeingRemoved);
     // static public System.Void OnListenerRemoved(System.String eventType)
-    // Offset: 0xA1AEC4
+    // Offset: 0xC5FF28
     static void OnListenerRemoved(::StringW eventType);
     // static public System.Void OnBroadcasting(System.String eventType)
-    // Offset: 0xA1AFA8
+    // Offset: 0xC6000C
     static void OnBroadcasting(::StringW eventType);
     // static public OVRMessenger/BroadcastException CreateBroadcastSignatureException(System.String eventType)
-    // Offset: 0xA1AFAC
+    // Offset: 0xC60010
     static ::GlobalNamespace::OVRMessenger::BroadcastException* CreateBroadcastSignatureException(::StringW eventType);
     // static public System.Void AddListener(System.String eventType, OVRCallback handler)
-    // Offset: 0xA1B038
+    // Offset: 0xC6009C
     static void AddListener(::StringW eventType, ::GlobalNamespace::OVRCallback* handler);
     // static public System.Void AddListener(System.String eventType, OVRCallback`1<T> handler)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -133,7 +133,7 @@ namespace GlobalNamespace {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, eventType, handler);
     }
     // static public System.Void RemoveListener(System.String eventType, OVRCallback handler)
-    // Offset: 0xA1B15C
+    // Offset: 0xC601C0
     static void RemoveListener(::StringW eventType, ::GlobalNamespace::OVRCallback* handler);
     // static public System.Void RemoveListener(System.String eventType, OVRCallback`1<T> handler)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -163,7 +163,7 @@ namespace GlobalNamespace {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, eventType, handler);
     }
     // static public System.Void Broadcast(System.String eventType)
-    // Offset: 0xA1B288
+    // Offset: 0xC602EC
     static void Broadcast(::StringW eventType);
     // static public System.Void Broadcast(System.String eventType, T arg1)
     // Offset: 0xFFFFFFFFFFFFFFFF

@@ -45,15 +45,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0xB9 to desired offset: 0xC0
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String[] _statesText
     // Size: 0x8
     // Offset: 0xC0
@@ -76,19 +68,19 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.String[] _statesText
-    ::ArrayW<::StringW>& dyn__statesText();
+    [[deprecated]] ::ArrayW<::StringW>& dyn__statesText();
     // Get instance field reference: private System.Int32 <CurrentState>k__BackingField
-    int& dyn_$CurrentState$k__BackingField();
+    [[deprecated]] int& dyn_$CurrentState$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Int32> OnStateChanged
-    ::System::Action_1<int>*& dyn_OnStateChanged();
+    [[deprecated]] ::System::Action_1<int>*& dyn_OnStateChanged();
     // public System.Int32 get_CurrentState()
-    // Offset: 0x91E0B8
+    // Offset: 0xC685A4
     int get_CurrentState();
     // private System.Void set_CurrentState(System.Int32 value)
-    // Offset: 0x91E0C0
+    // Offset: 0xC685AC
     void set_CurrentState(int value);
     // public System.Void .ctor()
-    // Offset: 0x91E254
+    // Offset: 0xC68740
     // Implemented from: VROSC.UIToggle
     // Base method: System.Void UIToggle::.ctor()
     // Base method: System.Void UIInteractable::.ctor()
@@ -105,12 +97,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<OrderToggleButton*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x91E0C8
+    // Offset: 0xC685B4
     // Implemented from: VROSC.UIToggle
     // Base method: System.Void UIToggle::Awake()
     void Awake();
     // protected override System.Void ButtonWasPressed(VROSC.ClickData clickData)
-    // Offset: 0x91E128
+    // Offset: 0xC68614
     // Implemented from: VROSC.UIToggle
     // Base method: System.Void UIToggle::ButtonWasPressed(VROSC.ClickData clickData)
     void ButtonWasPressed(::VROSC::ClickData* clickData);

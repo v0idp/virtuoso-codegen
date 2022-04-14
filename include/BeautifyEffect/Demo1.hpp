@@ -37,15 +37,7 @@ namespace BeautifyEffect {
   // [TokenAttribute] Offset: FFFFFFFF
   class Demo1 : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single deltaTime
     // Size: 0x4
     // Offset: 0x18
@@ -76,24 +68,24 @@ namespace BeautifyEffect {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single deltaTime
-    float& dyn_deltaTime();
+    [[deprecated]] float& dyn_deltaTime();
     // Get instance field reference: private System.Boolean benchmarkEnabled
-    bool& dyn_benchmarkEnabled();
+    [[deprecated]] bool& dyn_benchmarkEnabled();
     // Get instance field reference: private UnityEngine.GUIStyle style
-    ::UnityEngine::GUIStyle*& dyn_style();
+    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_style();
     // Get instance field reference: private UnityEngine.Rect rect
-    ::UnityEngine::Rect& dyn_rect();
+    [[deprecated]] ::UnityEngine::Rect& dyn_rect();
     // private System.Void Update()
-    // Offset: 0x130A9E4
+    // Offset: 0x8E3BB4
     void Update();
     // private System.Void UpdateText()
-    // Offset: 0x130AB18
+    // Offset: 0x8E3CE8
     void UpdateText();
     // private System.Void OnGUI()
-    // Offset: 0x130ABEC
+    // Offset: 0x8E3DBC
     void OnGUI();
     // public System.Void .ctor()
-    // Offset: 0x130AE08
+    // Offset: 0x8E3FD8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

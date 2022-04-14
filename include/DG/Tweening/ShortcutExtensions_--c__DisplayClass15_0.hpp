@@ -33,15 +33,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ShortcutExtensions::$$c__DisplayClass15_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public DG.Tweening.Color2 startValue
     // Size: 0x20
     // Offset: 0x10
@@ -56,17 +48,17 @@ namespace DG::Tweening {
     static_assert(sizeof(::UnityEngine::LineRenderer*) == 0x8);
     public:
     // Get instance field reference: public DG.Tweening.Color2 startValue
-    ::DG::Tweening::Color2& dyn_startValue();
+    [[deprecated]] ::DG::Tweening::Color2& dyn_startValue();
     // Get instance field reference: public UnityEngine.LineRenderer target
-    ::UnityEngine::LineRenderer*& dyn_target();
+    [[deprecated]] ::UnityEngine::LineRenderer*& dyn_target();
     // DG.Tweening.Color2 <DOColor>b__0()
-    // Offset: 0x126C20C
+    // Offset: 0x18645B0
     ::DG::Tweening::Color2 $DOColor$b__0();
     // System.Void <DOColor>b__1(DG.Tweening.Color2 x)
-    // Offset: 0x126C218
+    // Offset: 0x18645BC
     void $DOColor$b__1(::DG::Tweening::Color2 x);
     // public System.Void .ctor()
-    // Offset: 0x126C204
+    // Offset: 0x18645A8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -34,15 +34,7 @@ namespace System::Security::Cryptography::X509Certificates {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509Store : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Security.Cryptography.X509Certificates.X509Certificate2Collection list
     // Size: 0x8
     // Offset: 0x10
@@ -57,11 +49,11 @@ namespace System::Security::Cryptography::X509Certificates {
     static_assert(sizeof(::Mono::Security::X509::X509Store*) == 0x8);
     public:
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate2Collection list
-    ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_list();
+    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_list();
     // Get instance field reference: private Mono.Security.X509.X509Store store
-    ::Mono::Security::X509::X509Store*& dyn_store();
+    [[deprecated]] ::Mono::Security::X509::X509Store*& dyn_store();
     // public System.Void Close()
-    // Offset: 0x8D73AC
+    // Offset: 0x9F2124
     void Close();
   }; // System.Security.Cryptography.X509Certificates.X509Store
   #pragma pack(pop)

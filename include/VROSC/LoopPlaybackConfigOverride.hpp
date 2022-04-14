@@ -45,15 +45,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlaybackConfigOverride : public ::VROSC::LoopPlaybackConfig {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopPlaybackConfigOverrideFlags <OverrideFlags>k__BackingField
     // Size: 0x8
     // Offset: 0x60
@@ -104,61 +96,61 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LoopPlaybackConfigOverrideFlags <OverrideFlags>k__BackingField
-    ::VROSC::LoopPlaybackConfigOverrideFlags*& dyn_$OverrideFlags$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigOverrideFlags*& dyn_$OverrideFlags$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Boolean> OnOneShotOverriddenChanged
-    ::System::Action_1<bool>*& dyn_OnOneShotOverriddenChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnOneShotOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnRetriggerOverriddenChanged
-    ::System::Action_1<bool>*& dyn_OnRetriggerOverriddenChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnRetriggerOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnStartOverriddenChanged
-    ::System::Action_1<bool>*& dyn_OnStartOverriddenChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnStartOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnStopOverriddenChanged
-    ::System::Action_1<bool>*& dyn_OnStopOverriddenChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnStopOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnFadeInOverriddenChanged
-    ::System::Action_1<bool>*& dyn_OnFadeInOverriddenChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnFadeInOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnFadeOutOverriddenChanged
-    ::System::Action_1<bool>*& dyn_OnFadeOutOverriddenChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnFadeOutOverriddenChanged();
     // Get instance field reference: public System.Action OnOverrideConfigChanged
-    ::System::Action*& dyn_OnOverrideConfigChanged();
+    [[deprecated]] ::System::Action*& dyn_OnOverrideConfigChanged();
     // public VROSC.LoopPlaybackConfigOverrideFlags get_OverrideFlags()
-    // Offset: 0x1396D24
+    // Offset: 0x19B6FF4
     ::VROSC::LoopPlaybackConfigOverrideFlags* get_OverrideFlags();
     // private System.Void set_OverrideFlags(VROSC.LoopPlaybackConfigOverrideFlags value)
-    // Offset: 0x1396D1C
+    // Offset: 0x19B6FEC
     void set_OverrideFlags(::VROSC::LoopPlaybackConfigOverrideFlags* value);
     // public System.Void .ctor(VROSC.LoopPlaybackConfigOverrideFlags overrideFlags, VROSC.LoopPlaybackConfigData data)
-    // Offset: 0x1396DF0
+    // Offset: 0x19B70C0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlaybackConfigOverride* New_ctor(::VROSC::LoopPlaybackConfigOverrideFlags* overrideFlags, ::VROSC::LoopPlaybackConfigData* data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlaybackConfigOverride::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LoopPlaybackConfigOverride*, creationType>(overrideFlags, data)));
     }
     // public System.Void .ctor(VROSC.LoopPlaybackConfigOverride other)
-    // Offset: 0x1396E98
+    // Offset: 0x19B7168
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlaybackConfigOverride* New_ctor(::VROSC::LoopPlaybackConfigOverride* other) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlaybackConfigOverride::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LoopPlaybackConfigOverride*, creationType>(other)));
     }
     // public System.Void SetOneShotOverridden(System.Boolean state)
-    // Offset: 0x1396F6C
+    // Offset: 0x19B723C
     void SetOneShotOverridden(bool state);
     // public System.Void SetStartOverridden(System.Boolean state)
-    // Offset: 0x1396FFC
+    // Offset: 0x19B72CC
     void SetStartOverridden(bool state);
     // public System.Void SetStopOverridden(System.Boolean state)
-    // Offset: 0x139708C
+    // Offset: 0x19B735C
     void SetStopOverridden(bool state);
     // public System.Void SetFadeInOverridden(System.Boolean state)
-    // Offset: 0x139711C
+    // Offset: 0x19B73EC
     void SetFadeInOverridden(bool state);
     // public System.Void SetFadeOutOverridden(System.Boolean state)
-    // Offset: 0x13971AC
+    // Offset: 0x19B747C
     void SetFadeOutOverridden(bool state);
     // public System.Void SetRetriggerOverridden(System.Boolean state)
-    // Offset: 0x139723C
+    // Offset: 0x19B750C
     void SetRetriggerOverridden(bool state);
     // public System.Void .ctor()
-    // Offset: 0x1396D2C
+    // Offset: 0x19B6FFC
     // Implemented from: VROSC.LoopPlaybackConfig
     // Base method: System.Void LoopPlaybackConfig::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -168,7 +160,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopPlaybackConfigOverride*, creationType>()));
     }
     // public override System.Void ApplyTo(VROSC.LoopPlaybackConfig other)
-    // Offset: 0x13972CC
+    // Offset: 0x19B759C
     // Implemented from: VROSC.LoopPlaybackConfig
     // Base method: System.Void LoopPlaybackConfig::ApplyTo(VROSC.LoopPlaybackConfig other)
     void ApplyTo(::VROSC::LoopPlaybackConfig* other);

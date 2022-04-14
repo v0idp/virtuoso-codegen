@@ -105,7 +105,7 @@ namespace TMPro {
     // Set static field: static public TMPro.TMP_Compatibility/TMPro.AnchorPositions None
     static void _set_None(::TMPro::TMP_Compatibility::AnchorPositions value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // TMPro.TMP_Compatibility/TMPro.AnchorPositions
   #pragma pack(pop)
   static check_size<sizeof(TMP_Compatibility::AnchorPositions), 0 + sizeof(int)> __TMPro_TMP_Compatibility_AnchorPositionsSizeCheck;

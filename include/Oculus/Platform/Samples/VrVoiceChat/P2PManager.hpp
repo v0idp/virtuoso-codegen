@@ -51,15 +51,7 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
   // [TokenAttribute] Offset: FFFFFFFF
   class P2PManager : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.UInt64 m_remoteID
     // Size: 0x8
     // Offset: 0x10
@@ -134,61 +126,61 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // Set static field: static private readonly System.Byte PACKET_FORMAT
     static void _set_PACKET_FORMAT(uint8_t value);
     // Get instance field reference: private System.UInt64 m_remoteID
-    uint64_t& dyn_m_remoteID();
+    [[deprecated]] uint64_t& dyn_m_remoteID();
     // Get instance field reference: private Oculus.Platform.PeerConnectionState m_state
-    ::Oculus::Platform::PeerConnectionState& dyn_m_state();
+    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_m_state();
     // Get instance field reference: private System.Single m_timeForNextUpdate
-    float& dyn_m_timeForNextUpdate();
+    [[deprecated]] float& dyn_m_timeForNextUpdate();
     // Get instance field reference: private readonly System.Byte[] sendTransformBuffer
-    ::ArrayW<uint8_t>& dyn_sendTransformBuffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_sendTransformBuffer();
     // Get instance field reference: private readonly System.Byte[] receiveTransformBuffer
-    ::ArrayW<uint8_t>& dyn_receiveTransformBuffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_receiveTransformBuffer();
     // Get instance field reference: private UnityEngine.Vector3 receivedPosition
-    ::UnityEngine::Vector3& dyn_receivedPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_receivedPosition();
     // Get instance field reference: private UnityEngine.Vector3 receivedPositionPrior
-    ::UnityEngine::Vector3& dyn_receivedPositionPrior();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_receivedPositionPrior();
     // Get instance field reference: private UnityEngine.Quaternion receivedRotation
-    ::UnityEngine::Quaternion& dyn_receivedRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_receivedRotation();
     // Get instance field reference: private UnityEngine.Quaternion receivedRotationPrior
-    ::UnityEngine::Quaternion& dyn_receivedRotationPrior();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_receivedRotationPrior();
     // Get instance field reference: private System.Single receivedTime
-    float& dyn_receivedTime();
+    [[deprecated]] float& dyn_receivedTime();
     // public System.Boolean get_Connected()
-    // Offset: 0x98303C
+    // Offset: 0xB553D8
     bool get_Connected();
     // public System.Boolean get_ShouldSendHeadUpdate()
-    // Offset: 0x983664
+    // Offset: 0xB55A00
     bool get_ShouldSendHeadUpdate();
     // public System.Void .ctor(UnityEngine.Transform initialHeadTransform)
-    // Offset: 0x982D18
+    // Offset: 0xB550B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static P2PManager* New_ctor(::UnityEngine::Transform* initialHeadTransform) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrVoiceChat::P2PManager::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<P2PManager*, creationType>(initialHeadTransform)));
     }
     // static private System.Void .cctor()
-    // Offset: 0x983CC8
+    // Offset: 0xB56064
     static void _cctor();
     // public System.Void ConnectTo(System.UInt64 userID)
-    // Offset: 0x982EA0
+    // Offset: 0xB5523C
     void ConnectTo(uint64_t userID);
     // public System.Void Disconnect()
-    // Offset: 0x98300C
+    // Offset: 0xB553A8
     void Disconnect();
     // private System.Void PeerConnectRequestCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x98304C
+    // Offset: 0xB553E8
     void PeerConnectRequestCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // private System.Void ConnectionStateChangedCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
-    // Offset: 0x9831F0
+    // Offset: 0xB5558C
     void ConnectionStateChangedCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
     // public System.Void SendHeadTransform(UnityEngine.Transform headTransform)
-    // Offset: 0x9836A8
+    // Offset: 0xB55A44
     void SendHeadTransform(::UnityEngine::Transform* headTransform);
     // private System.Void PackFloat(System.Single f, System.Byte[] buf, ref System.Int32 offset)
-    // Offset: 0x983848
+    // Offset: 0xB55BE4
     void PackFloat(float f, ::ArrayW<uint8_t> buf, ByRef<int> offset);
     // public System.Void GetRemoteHeadTransform(UnityEngine.Transform headTransform)
-    // Offset: 0x9838EC
+    // Offset: 0xB55C88
     void GetRemoteHeadTransform(::UnityEngine::Transform* headTransform);
   }; // Oculus.Platform.Samples.VrVoiceChat.P2PManager
   #pragma pack(pop)

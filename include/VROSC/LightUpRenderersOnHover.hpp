@@ -52,15 +52,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::LightUpRenderersOnHover::$HoverFlow$d__9
     class $HoverFlow$d__9;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer[] _renderers
     // Size: 0x8
     // Offset: 0x18
@@ -111,33 +103,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Renderer[] _renderers
-    ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
+    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
     // Get instance field reference: private VROSC.Interactable _interactable
-    ::VROSC::Interactable*& dyn__interactable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__interactable();
     // Get instance field reference: private UnityEngine.Color _lightUp
-    ::UnityEngine::Color& dyn__lightUp();
+    [[deprecated]] ::UnityEngine::Color& dyn__lightUp();
     // Get instance field reference: private System.Single _fallSpeed
-    float& dyn__fallSpeed();
+    [[deprecated]] float& dyn__fallSpeed();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock[] _materialBlocks
-    ::ArrayW<::UnityEngine::MaterialPropertyBlock*>& dyn__materialBlocks();
+    [[deprecated]] ::ArrayW<::UnityEngine::MaterialPropertyBlock*>& dyn__materialBlocks();
     // Get instance field reference: private System.Boolean _hovering
-    bool& dyn__hovering();
+    [[deprecated]] bool& dyn__hovering();
     // Get instance field reference: private UnityEngine.Color[] _startColor
-    ::ArrayW<::UnityEngine::Color>& dyn__startColor();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__startColor();
     // private System.Void Awake()
-    // Offset: 0x138D0AC
+    // Offset: 0x1950BD0
     void Awake();
     // private System.Void LightUp(System.Boolean hovering)
-    // Offset: 0x138D2AC
+    // Offset: 0x1950DD0
     void LightUp(bool hovering);
     // private System.Collections.IEnumerator HoverFlow()
-    // Offset: 0x138D2FC
+    // Offset: 0x1950E20
     ::System::Collections::IEnumerator* HoverFlow();
     // private System.Void SetColor(System.Single amount)
-    // Offset: 0x138D368
+    // Offset: 0x1950E8C
     void SetColor(float amount);
     // public System.Void .ctor()
-    // Offset: 0x138D4A8
+    // Offset: 0x1950FCC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

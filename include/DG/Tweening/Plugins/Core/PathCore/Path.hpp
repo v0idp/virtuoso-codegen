@@ -54,15 +54,7 @@ namespace DG::Tweening::Plugins::Core::PathCore {
   // [TokenAttribute] Offset: FFFFFFFF
   class Path : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single[] wpLengths
     // Size: 0x8
     // Offset: 0x10
@@ -201,92 +193,92 @@ namespace DG::Tweening::Plugins::Core::PathCore {
     // Set static field: static private DG.Tweening.Plugins.Core.PathCore.CubicBezierDecoder _cubicBezierDecoder
     static void _set__cubicBezierDecoder(::DG::Tweening::Plugins::Core::PathCore::CubicBezierDecoder* value);
     // Get instance field reference: public System.Single[] wpLengths
-    ::ArrayW<float>& dyn_wpLengths();
+    [[deprecated]] ::ArrayW<float>& dyn_wpLengths();
     // Get instance field reference: DG.Tweening.PathType type
-    ::DG::Tweening::PathType& dyn_type();
+    [[deprecated]] ::DG::Tweening::PathType& dyn_type();
     // Get instance field reference: System.Int32 subdivisionsXSegment
-    int& dyn_subdivisionsXSegment();
+    [[deprecated]] int& dyn_subdivisionsXSegment();
     // Get instance field reference: System.Int32 subdivisions
-    int& dyn_subdivisions();
+    [[deprecated]] int& dyn_subdivisions();
     // Get instance field reference: UnityEngine.Vector3[] wps
-    ::ArrayW<::UnityEngine::Vector3>& dyn_wps();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_wps();
     // Get instance field reference: DG.Tweening.Plugins.Core.PathCore.ControlPoint[] controlPoints
-    ::ArrayW<::DG::Tweening::Plugins::Core::PathCore::ControlPoint>& dyn_controlPoints();
+    [[deprecated]] ::ArrayW<::DG::Tweening::Plugins::Core::PathCore::ControlPoint>& dyn_controlPoints();
     // Get instance field reference: System.Single length
-    float& dyn_length();
+    [[deprecated]] float& dyn_length();
     // Get instance field reference: System.Boolean isFinalized
-    bool& dyn_isFinalized();
+    [[deprecated]] bool& dyn_isFinalized();
     // Get instance field reference: System.Single[] timesTable
-    ::ArrayW<float>& dyn_timesTable();
+    [[deprecated]] ::ArrayW<float>& dyn_timesTable();
     // Get instance field reference: System.Single[] lengthsTable
-    ::ArrayW<float>& dyn_lengthsTable();
+    [[deprecated]] ::ArrayW<float>& dyn_lengthsTable();
     // Get instance field reference: System.Int32 linearWPIndex
-    int& dyn_linearWPIndex();
+    [[deprecated]] int& dyn_linearWPIndex();
     // Get instance field reference: System.Boolean addedExtraStartWp
-    bool& dyn_addedExtraStartWp();
+    [[deprecated]] bool& dyn_addedExtraStartWp();
     // Get instance field reference: System.Boolean addedExtraEndWp
-    bool& dyn_addedExtraEndWp();
+    [[deprecated]] bool& dyn_addedExtraEndWp();
     // Get instance field reference: private DG.Tweening.Plugins.Core.PathCore.Path _incrementalClone
-    ::DG::Tweening::Plugins::Core::PathCore::Path*& dyn__incrementalClone();
+    [[deprecated]] ::DG::Tweening::Plugins::Core::PathCore::Path*& dyn__incrementalClone();
     // Get instance field reference: private System.Int32 _incrementalIndex
-    int& dyn__incrementalIndex();
+    [[deprecated]] int& dyn__incrementalIndex();
     // Get instance field reference: private DG.Tweening.Plugins.Core.PathCore.ABSPathDecoder _decoder
-    ::DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder*& dyn__decoder();
+    [[deprecated]] ::DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder*& dyn__decoder();
     // Get instance field reference: private System.Boolean _changed
-    bool& dyn__changed();
+    [[deprecated]] bool& dyn__changed();
     // Get instance field reference: UnityEngine.Vector3[] nonLinearDrawWps
-    ::ArrayW<::UnityEngine::Vector3>& dyn_nonLinearDrawWps();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_nonLinearDrawWps();
     // Get instance field reference: UnityEngine.Vector3 targetPosition
-    ::UnityEngine::Vector3& dyn_targetPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_targetPosition();
     // Get instance field reference: System.Nullable`1<UnityEngine.Vector3> lookAtPosition
-    ::System::Nullable_1<::UnityEngine::Vector3>& dyn_lookAtPosition();
+    [[deprecated]] ::System::Nullable_1<::UnityEngine::Vector3>& dyn_lookAtPosition();
     // Get instance field reference: UnityEngine.Color gizmoColor
-    ::UnityEngine::Color& dyn_gizmoColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_gizmoColor();
     // public System.Void .ctor(DG.Tweening.PathType type, UnityEngine.Vector3[] waypoints, System.Int32 subdivisionsXSegment, System.Nullable`1<UnityEngine.Color> gizmoColor)
-    // Offset: 0x109E3F4
+    // Offset: 0x15E0A1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Path* New_ctor(::DG::Tweening::PathType type, ::ArrayW<::UnityEngine::Vector3> waypoints, int subdivisionsXSegment, ::System::Nullable_1<::UnityEngine::Color> gizmoColor) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::PathCore::Path::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Path*, creationType>(type, waypoints, subdivisionsXSegment, gizmoColor)));
     }
     // System.Void FinalizePath(System.Boolean isClosedPath, DG.Tweening.AxisConstraint lockPositionAxes, UnityEngine.Vector3 currTargetVal)
-    // Offset: 0x109E864
+    // Offset: 0x15E0E8C
     void FinalizePath(bool isClosedPath, ::DG::Tweening::AxisConstraint lockPositionAxes, ::UnityEngine::Vector3 currTargetVal);
     // UnityEngine.Vector3 GetPoint(System.Single perc, System.Boolean convertToConstantPerc)
-    // Offset: 0x109E91C
+    // Offset: 0x15E0F44
     ::UnityEngine::Vector3 GetPoint(float perc, bool convertToConstantPerc);
     // System.Single ConvertToConstantPathPerc(System.Single perc)
-    // Offset: 0x109E960
+    // Offset: 0x15E0F88
     float ConvertToConstantPathPerc(float perc);
     // System.Int32 GetWaypointIndexFromPerc(System.Single perc, System.Boolean isMovingForward)
-    // Offset: 0x109EA7C
+    // Offset: 0x15E10A4
     int GetWaypointIndexFromPerc(float perc, bool isMovingForward);
     // static UnityEngine.Vector3[] GetDrawPoints(DG.Tweening.Plugins.Core.PathCore.Path p, System.Int32 drawSubdivisionsXSegment)
-    // Offset: 0x109EB28
+    // Offset: 0x15E1150
     static ::ArrayW<::UnityEngine::Vector3> GetDrawPoints(::DG::Tweening::Plugins::Core::PathCore::Path* p, int drawSubdivisionsXSegment);
     // static System.Void RefreshNonLinearDrawWps(DG.Tweening.Plugins.Core.PathCore.Path p)
-    // Offset: 0x109EC18
+    // Offset: 0x15E1240
     static void RefreshNonLinearDrawWps(::DG::Tweening::Plugins::Core::PathCore::Path* p);
     // System.Void Destroy()
-    // Offset: 0x109ED1C
+    // Offset: 0x15E1344
     void Destroy();
     // DG.Tweening.Plugins.Core.PathCore.Path CloneIncremental(System.Int32 loopIncrement)
-    // Offset: 0x109EE4C
+    // Offset: 0x15E1474
     ::DG::Tweening::Plugins::Core::PathCore::Path* CloneIncremental(int loopIncrement);
     // System.Void AssignWaypoints(UnityEngine.Vector3[] newWps, System.Boolean cloneWps)
-    // Offset: 0x109E5CC
+    // Offset: 0x15E0BF4
     void AssignWaypoints(::ArrayW<::UnityEngine::Vector3> newWps, bool cloneWps);
     // System.Void AssignDecoder(DG.Tweening.PathType pathType)
-    // Offset: 0x109E6B4
+    // Offset: 0x15E0CDC
     void AssignDecoder(::DG::Tweening::PathType pathType);
     // System.Void Draw()
-    // Offset: 0x109F2EC
+    // Offset: 0x15E1914
     void Draw();
     // static private System.Void Draw(DG.Tweening.Plugins.Core.PathCore.Path p)
-    // Offset: 0x109F2F0
+    // Offset: 0x15E1918
     static void Draw(::DG::Tweening::Plugins::Core::PathCore::Path* p);
     // System.Void .ctor()
-    // Offset: 0x109E800
+    // Offset: 0x15E0E28
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

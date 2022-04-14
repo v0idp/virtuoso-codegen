@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIDataButton : public ::VROSC::UIButton {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Object _data
     // Size: 0x8
     // Offset: 0xA8
@@ -64,14 +56,14 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: private System.Object _data
-    ::Il2CppObject*& dyn__data();
+    [[deprecated]] ::Il2CppObject*& dyn__data();
     // Get instance field reference: public System.Action`1<System.Object> OnButtonPress
-    ::System::Action_1<::Il2CppObject*>*& dyn_OnButtonPress();
+    [[deprecated]] ::System::Action_1<::Il2CppObject*>*& dyn_OnButtonPress();
     // public System.Void SetData(System.Object data)
-    // Offset: 0x139B95C
+    // Offset: 0x190F1C8
     void SetData(::Il2CppObject* data);
     // public System.Void .ctor()
-    // Offset: 0x139BA0C
+    // Offset: 0x190F278
     // Implemented from: VROSC.UIButton
     // Base method: System.Void UIButton::.ctor()
     // Base method: System.Void UIInteractable::.ctor()
@@ -88,7 +80,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UIDataButton*, creationType>()));
     }
     // protected override System.Void ButtonWasPressed(VROSC.ClickData clickData)
-    // Offset: 0x139B964
+    // Offset: 0x190F1D0
     // Implemented from: VROSC.UIButton
     // Base method: System.Void UIButton::ButtonWasPressed(VROSC.ClickData clickData)
     void ButtonWasPressed(::VROSC::ClickData* clickData);

@@ -35,15 +35,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class IPHostEntry : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String hostName
     // Size: 0x8
     // Offset: 0x10
@@ -70,30 +62,30 @@ namespace System::Net {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String hostName
-    ::StringW& dyn_hostName();
+    [[deprecated]] ::StringW& dyn_hostName();
     // Get instance field reference: private System.String[] aliases
-    ::ArrayW<::StringW>& dyn_aliases();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_aliases();
     // Get instance field reference: private System.Net.IPAddress[] addressList
-    ::ArrayW<::System::Net::IPAddress*>& dyn_addressList();
+    [[deprecated]] ::ArrayW<::System::Net::IPAddress*>& dyn_addressList();
     // Get instance field reference: System.Boolean isTrustedHost
-    bool& dyn_isTrustedHost();
+    [[deprecated]] bool& dyn_isTrustedHost();
     // public System.String get_HostName()
-    // Offset: 0xD95AB0
+    // Offset: 0x10F3BF4
     ::StringW get_HostName();
     // public System.Void set_HostName(System.String value)
-    // Offset: 0xD95AB8
+    // Offset: 0x10F3BFC
     void set_HostName(::StringW value);
     // public System.Void set_Aliases(System.String[] value)
-    // Offset: 0xD95AC0
+    // Offset: 0x10F3C04
     void set_Aliases(::ArrayW<::StringW> value);
     // public System.Net.IPAddress[] get_AddressList()
-    // Offset: 0xD95AC8
+    // Offset: 0x10F3C0C
     ::ArrayW<::System::Net::IPAddress*> get_AddressList();
     // public System.Void set_AddressList(System.Net.IPAddress[] value)
-    // Offset: 0xD95AD0
+    // Offset: 0x10F3C14
     void set_AddressList(::ArrayW<::System::Net::IPAddress*> value);
     // public System.Void .ctor()
-    // Offset: 0xD95AD8
+    // Offset: 0x10F3C1C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

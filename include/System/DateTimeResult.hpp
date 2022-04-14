@@ -147,48 +147,48 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Int32 Year
-    int& dyn_Year();
+    [[deprecated]] int& dyn_Year();
     // Get instance field reference: System.Int32 Month
-    int& dyn_Month();
+    [[deprecated]] int& dyn_Month();
     // Get instance field reference: System.Int32 Day
-    int& dyn_Day();
+    [[deprecated]] int& dyn_Day();
     // Get instance field reference: System.Int32 Hour
-    int& dyn_Hour();
+    [[deprecated]] int& dyn_Hour();
     // Get instance field reference: System.Int32 Minute
-    int& dyn_Minute();
+    [[deprecated]] int& dyn_Minute();
     // Get instance field reference: System.Int32 Second
-    int& dyn_Second();
+    [[deprecated]] int& dyn_Second();
     // Get instance field reference: System.Double fraction
-    double& dyn_fraction();
+    [[deprecated]] double& dyn_fraction();
     // Get instance field reference: System.Int32 era
-    int& dyn_era();
+    [[deprecated]] int& dyn_era();
     // Get instance field reference: System.ParseFlags flags
-    ::System::ParseFlags& dyn_flags();
+    [[deprecated]] ::System::ParseFlags& dyn_flags();
     // Get instance field reference: System.TimeSpan timeZoneOffset
-    ::System::TimeSpan& dyn_timeZoneOffset();
+    [[deprecated]] ::System::TimeSpan& dyn_timeZoneOffset();
     // Get instance field reference: System.Globalization.Calendar calendar
-    ::System::Globalization::Calendar*& dyn_calendar();
+    [[deprecated]] ::System::Globalization::Calendar*& dyn_calendar();
     // Get instance field reference: System.DateTime parsedDate
-    ::System::DateTime& dyn_parsedDate();
+    [[deprecated]] ::System::DateTime& dyn_parsedDate();
     // Get instance field reference: System.ParseFailureKind failure
-    ::System::ParseFailureKind& dyn_failure();
+    [[deprecated]] ::System::ParseFailureKind& dyn_failure();
     // Get instance field reference: System.String failureMessageID
-    ::StringW& dyn_failureMessageID();
+    [[deprecated]] ::StringW& dyn_failureMessageID();
     // Get instance field reference: System.Object failureMessageFormatArgument
-    ::Il2CppObject*& dyn_failureMessageFormatArgument();
+    [[deprecated]] ::Il2CppObject*& dyn_failureMessageFormatArgument();
     // Get instance field reference: System.String failureArgumentName
-    ::StringW& dyn_failureArgumentName();
+    [[deprecated]] ::StringW& dyn_failureArgumentName();
     // System.Void Init()
-    // Offset: 0xCA50C8
+    // Offset: 0x128FA18
     void Init();
     // System.Void SetDate(System.Int32 year, System.Int32 month, System.Int32 day)
-    // Offset: 0xCA50E8
+    // Offset: 0x128FA38
     void SetDate(int year, int month, int day);
     // System.Void SetFailure(System.ParseFailureKind failure, System.String failureMessageID, System.Object failureMessageFormatArgument)
-    // Offset: 0xCA50F4
+    // Offset: 0x128FA44
     void SetFailure(::System::ParseFailureKind failure, ::StringW failureMessageID, ::Il2CppObject* failureMessageFormatArgument);
     // System.Void SetFailure(System.ParseFailureKind failure, System.String failureMessageID, System.Object failureMessageFormatArgument, System.String failureArgumentName)
-    // Offset: 0xCA5100
+    // Offset: 0x128FA50
     void SetFailure(::System::ParseFailureKind failure, ::StringW failureMessageID, ::Il2CppObject* failureMessageFormatArgument, ::StringW failureArgumentName);
   }; // System.DateTimeResult
   #pragma pack(pop)

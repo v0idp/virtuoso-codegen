@@ -32,15 +32,7 @@ namespace UnityEngine::Timeline {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class TimelineCreateUtilities::$$c__DisplayClass0_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String result
     // Size: 0x8
     // Offset: 0x10
@@ -53,12 +45,12 @@ namespace UnityEngine::Timeline {
       return result;
     }
     // Get instance field reference: public System.String result
-    ::StringW& dyn_result();
+    [[deprecated]] ::StringW& dyn_result();
     // System.Boolean <GenerateUniqueActorName>b__1(UnityEngine.ScriptableObject x)
-    // Offset: 0x12D2A80
+    // Offset: 0x18D5CF4
     bool $GenerateUniqueActorName$b__1(::UnityEngine::ScriptableObject* x);
     // public System.Void .ctor()
-    // Offset: 0x12D2A78
+    // Offset: 0x18D5CEC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -42,7 +42,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.Int32 type
     static void _set_type(int value);
     // static private System.Void .cctor()
-    // Offset: 0x13582F8
+    // Offset: 0x954BF4
     static void _cctor();
   }; // ovrAvatarGazeTarget_Offsets
   #pragma pack(pop)

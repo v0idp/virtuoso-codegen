@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ResetableMover : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TransformMover _mover
     // Size: 0x8
     // Offset: 0x18
@@ -73,7 +65,7 @@ namespace VROSC {
     ::UnityEngine::Transform* freeMoveParent;
     // Field size check
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
-    // [HeaderAttribute] Offset: 0x6723DC
+    // [HeaderAttribute] Offset: 0x7886E0
     // private UnityEngine.Transform _snapToObject
     // Size: 0x8
     // Offset: 0x28
@@ -88,7 +80,7 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     // Padding between fields: snapBackDistance and: resetButton
     char __padding3[0x4] = {};
-    // [HeaderAttribute] Offset: 0x672438
+    // [HeaderAttribute] Offset: 0x78873C
     // private VROSC.UIButton _resetButton
     // Size: 0x8
     // Offset: 0x38
@@ -137,59 +129,59 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TransformMover _mover
-    ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private UnityEngine.Transform _freeMoveParent
-    ::UnityEngine::Transform*& dyn__freeMoveParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__freeMoveParent();
     // Get instance field reference: private UnityEngine.Transform _snapToObject
-    ::UnityEngine::Transform*& dyn__snapToObject();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__snapToObject();
     // Get instance field reference: private System.Single _snapBackDistance
-    float& dyn__snapBackDistance();
+    [[deprecated]] float& dyn__snapBackDistance();
     // Get instance field reference: private VROSC.UIButton _resetButton
-    ::VROSC::UIButton*& dyn__resetButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__resetButton();
     // Get instance field reference: private UnityEngine.GameObject _resetButtonParent
-    ::UnityEngine::GameObject*& dyn__resetButtonParent();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__resetButtonParent();
     // Get instance field reference: private UnityEngine.Transform _originalParent
-    ::UnityEngine::Transform*& dyn__originalParent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__originalParent();
     // Get instance field reference: private System.Boolean _isAttached
-    bool& dyn__isAttached();
+    [[deprecated]] bool& dyn__isAttached();
     // Get instance field reference: public System.Single InstrumentScaleMultiplier
-    float& dyn_InstrumentScaleMultiplier();
+    [[deprecated]] float& dyn_InstrumentScaleMultiplier();
     // Get instance field reference: public System.Action`1<VROSC.ResetableMover> OnMoved
-    ::System::Action_1<::VROSC::ResetableMover*>*& dyn_OnMoved();
+    [[deprecated]] ::System::Action_1<::VROSC::ResetableMover*>*& dyn_OnMoved();
     // Get instance field reference: public System.Action`1<VROSC.ResetableMover> OnReset
-    ::System::Action_1<::VROSC::ResetableMover*>*& dyn_OnReset();
+    [[deprecated]] ::System::Action_1<::VROSC::ResetableMover*>*& dyn_OnReset();
     // public UnityEngine.Vector3 get_Position()
-    // Offset: 0x99AEB4
+    // Offset: 0xB33B48
     ::UnityEngine::Vector3 get_Position();
     // public UnityEngine.Quaternion get_Rotation()
-    // Offset: 0x99AEE0
+    // Offset: 0xB33B74
     ::UnityEngine::Quaternion get_Rotation();
     // public UnityEngine.Vector3 get_Scale()
-    // Offset: 0x99AF0C
+    // Offset: 0xB33BA0
     ::UnityEngine::Vector3 get_Scale();
     // private System.Void Awake()
-    // Offset: 0x99AF38
+    // Offset: 0xB33BCC
     void Awake();
     // private System.Void GrabEnded(VROSC.TransformMover mover)
-    // Offset: 0x99B108
+    // Offset: 0xB33D9C
     void GrabEnded(::VROSC::TransformMover* mover);
     // public System.Void SetToPosition(UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 scale)
-    // Offset: 0x99B244
+    // Offset: 0xB33ED8
     void SetToPosition(::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 scale);
     // public System.Void ResetTransform()
-    // Offset: 0x99B44C
+    // Offset: 0xB340E0
     void ResetTransform();
     // private System.Void ResetPressed()
-    // Offset: 0x99B4F0
+    // Offset: 0xB34184
     void ResetPressed();
     // private System.Void OnDestroy()
-    // Offset: 0x99B574
+    // Offset: 0xB34208
     void OnDestroy();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x99B700
+    // Offset: 0xB34394
     void OnDrawGizmos();
     // public System.Void .ctor()
-    // Offset: 0x99B884
+    // Offset: 0xB34518
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

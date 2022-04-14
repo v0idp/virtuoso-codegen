@@ -32,15 +32,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionsManager::$$c__DisplayClass73_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean isDefaultSession
     // Size: 0x1
     // Offset: 0x10
@@ -63,19 +55,19 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Boolean isDefaultSession
-    bool& dyn_isDefaultSession();
+    [[deprecated]] bool& dyn_isDefaultSession();
     // Get instance field reference: public VROSC.SessionsManager <>4__this
-    ::VROSC::SessionsManager*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SessionsManager*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
     // System.Void <LoadSessionDataSuccess>b__0()
-    // Offset: 0x134D1F8
+    // Offset: 0x8D9220
     void $LoadSessionDataSuccess$b__0();
     // System.Void <LoadSessionDataSuccess>b__1(VROSC.Error error)
-    // Offset: 0x134D2D4
+    // Offset: 0x8D9420
     void $LoadSessionDataSuccess$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x134D1F0
+    // Offset: 0x8D9218
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

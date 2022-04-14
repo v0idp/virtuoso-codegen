@@ -52,16 +52,16 @@ namespace Unity::XR::Oculus {
     // Set static field: static private System.String m_PluginVersion
     static void _set_m_PluginVersion(::StringW value);
     // static public System.String get_PluginVersion()
-    // Offset: 0x12DB9CC
+    // Offset: 0x18DDC40
     static ::StringW get_PluginVersion();
     // static private System.Void .cctor()
-    // Offset: 0x12DBE84
+    // Offset: 0x18DE0F8
     static void _cctor();
     // static private UnityEngine.IntegratedSubsystem GetOculusDisplaySubsystem()
-    // Offset: 0x12DBB3C
+    // Offset: 0x18DDDB0
     static ::UnityEngine::IntegratedSubsystem* GetOculusDisplaySubsystem();
     // public System.Void .ctor()
-    // Offset: 0x12DBE7C
+    // Offset: 0x18DE0F0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

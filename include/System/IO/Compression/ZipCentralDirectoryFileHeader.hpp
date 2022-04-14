@@ -169,45 +169,45 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Byte VersionMadeByCompatibility
-    uint8_t& dyn_VersionMadeByCompatibility();
+    [[deprecated]] uint8_t& dyn_VersionMadeByCompatibility();
     // Get instance field reference: public System.Byte VersionMadeBySpecification
-    uint8_t& dyn_VersionMadeBySpecification();
+    [[deprecated]] uint8_t& dyn_VersionMadeBySpecification();
     // Get instance field reference: public System.UInt16 VersionNeededToExtract
-    uint16_t& dyn_VersionNeededToExtract();
+    [[deprecated]] uint16_t& dyn_VersionNeededToExtract();
     // Get instance field reference: public System.UInt16 GeneralPurposeBitFlag
-    uint16_t& dyn_GeneralPurposeBitFlag();
+    [[deprecated]] uint16_t& dyn_GeneralPurposeBitFlag();
     // Get instance field reference: public System.UInt16 CompressionMethod
-    uint16_t& dyn_CompressionMethod();
+    [[deprecated]] uint16_t& dyn_CompressionMethod();
     // Get instance field reference: public System.UInt32 LastModified
-    uint& dyn_LastModified();
+    [[deprecated]] uint& dyn_LastModified();
     // Get instance field reference: public System.UInt32 Crc32
-    uint& dyn_Crc32();
+    [[deprecated]] uint& dyn_Crc32();
     // Get instance field reference: public System.Int64 CompressedSize
-    int64_t& dyn_CompressedSize();
+    [[deprecated]] int64_t& dyn_CompressedSize();
     // Get instance field reference: public System.Int64 UncompressedSize
-    int64_t& dyn_UncompressedSize();
+    [[deprecated]] int64_t& dyn_UncompressedSize();
     // Get instance field reference: public System.UInt16 FilenameLength
-    uint16_t& dyn_FilenameLength();
+    [[deprecated]] uint16_t& dyn_FilenameLength();
     // Get instance field reference: public System.UInt16 ExtraFieldLength
-    uint16_t& dyn_ExtraFieldLength();
+    [[deprecated]] uint16_t& dyn_ExtraFieldLength();
     // Get instance field reference: public System.UInt16 FileCommentLength
-    uint16_t& dyn_FileCommentLength();
+    [[deprecated]] uint16_t& dyn_FileCommentLength();
     // Get instance field reference: public System.Int32 DiskNumberStart
-    int& dyn_DiskNumberStart();
+    [[deprecated]] int& dyn_DiskNumberStart();
     // Get instance field reference: public System.UInt16 InternalFileAttributes
-    uint16_t& dyn_InternalFileAttributes();
+    [[deprecated]] uint16_t& dyn_InternalFileAttributes();
     // Get instance field reference: public System.UInt32 ExternalFileAttributes
-    uint& dyn_ExternalFileAttributes();
+    [[deprecated]] uint& dyn_ExternalFileAttributes();
     // Get instance field reference: public System.Int64 RelativeOffsetOfLocalHeader
-    int64_t& dyn_RelativeOffsetOfLocalHeader();
+    [[deprecated]] int64_t& dyn_RelativeOffsetOfLocalHeader();
     // Get instance field reference: public System.Byte[] Filename
-    ::ArrayW<uint8_t>& dyn_Filename();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_Filename();
     // Get instance field reference: public System.Byte[] FileComment
-    ::ArrayW<uint8_t>& dyn_FileComment();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_FileComment();
     // Get instance field reference: public System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> ExtraFields
-    ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn_ExtraFields();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn_ExtraFields();
     // static public System.Boolean TryReadBlock(System.IO.BinaryReader reader, System.Boolean saveExtraFieldsAndComments, out System.IO.Compression.ZipCentralDirectoryFileHeader header)
-    // Offset: 0x11257C0
+    // Offset: 0x169D02C
     static bool TryReadBlock(::System::IO::BinaryReader* reader, bool saveExtraFieldsAndComments, ByRef<::System::IO::Compression::ZipCentralDirectoryFileHeader> header);
   }; // System.IO.Compression.ZipCentralDirectoryFileHeader
   #pragma pack(pop)

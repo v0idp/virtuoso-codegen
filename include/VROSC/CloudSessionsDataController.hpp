@@ -58,15 +58,7 @@ namespace VROSC {
     class $$c__DisplayClass6_0;
     // Nested type: ::VROSC::CloudSessionsDataController::$$c__DisplayClass7_0
     class $$c__DisplayClass7_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _isWaitingForData
     // Size: 0x1
     // Offset: 0x30
@@ -77,12 +69,12 @@ namespace VROSC {
     // Deleting conversion operator: operator ::VROSC::Session*
     constexpr operator ::VROSC::Session*() const noexcept = delete;
     // Get instance field reference: private System.Boolean _isWaitingForData
-    bool& dyn__isWaitingForData();
+    [[deprecated]] bool& dyn__isWaitingForData();
     // public System.Void SaveSessionToCloud(System.String sessionId, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1332620
+    // Offset: 0x946624
     void SaveSessionToCloud(::StringW sessionId, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void .ctor()
-    // Offset: 0x1332038
+    // Offset: 0x94603C
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Void SessionsDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
@@ -93,37 +85,37 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<CloudSessionsDataController*, creationType>()));
     }
     // public override System.Collections.Generic.List`1<VROSC.SessionUIData> GetSessionsUIData()
-    // Offset: 0x13320A8
+    // Offset: 0x9460AC
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Collections.Generic.List`1<VROSC.SessionUIData> SessionsDataController::GetSessionsUIData()
     ::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* GetSessionsUIData();
     // public override VROSC.SessionUIData GetSessionUIData(System.String sessionId)
-    // Offset: 0x133229C
+    // Offset: 0x9462A0
     // Implemented from: VROSC.SessionsDataController
     // Base method: VROSC.SessionUIData SessionsDataController::GetSessionUIData(System.String sessionId)
     ::VROSC::SessionUIData* GetSessionUIData(::StringW sessionId);
     // public override System.Void LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13323EC
+    // Offset: 0x9463F0
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void LoadCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Void SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x133261C
+    // Offset: 0x946620
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void SaveCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Void RemoveSession(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1332C8C
+    // Offset: 0x946C7C
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Void SessionsDataController::RemoveSession(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void RemoveSession(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // protected override System.String GenerateNewSessionId()
-    // Offset: 0x1332E24
+    // Offset: 0x946E14
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.String SessionsDataController::GenerateNewSessionId()
     ::StringW GenerateNewSessionId();
     // protected override System.Void UserLoggedOut()
-    // Offset: 0x1332EAC
+    // Offset: 0x946E9C
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Void SessionsDataController::UserLoggedOut()
     void UserLoggedOut();

@@ -50,21 +50,21 @@ namespace System::Collections::Generic {
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool Invoke(typename ::System::Collections::Generic::SortedSet_1<T>::Node* node) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Generic::TreeWalkPredicate_1::Invoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Invoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(node)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Collections::Generic::TreeWalkPredicate_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(this, ___internal__method, node);
     }
     // public System.IAsyncResult BeginInvoke(System.Collections.Generic.SortedSet`1/System.Collections.Generic.Node<T> node, System.AsyncCallback callback, System.Object object)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::IAsyncResult* BeginInvoke(typename ::System::Collections::Generic::SortedSet_1<T>::Node* node, ::System::AsyncCallback* callback, ::Il2CppObject* object) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Generic::TreeWalkPredicate_1::BeginInvoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "BeginInvoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(node), ::il2cpp_utils::ExtractType(callback), ::il2cpp_utils::ExtractType(object)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Collections::Generic::TreeWalkPredicate_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::System::IAsyncResult*, false>(this, ___internal__method, node, callback, object);
     }
     // public System.Boolean EndInvoke(System.IAsyncResult result)
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool EndInvoke(::System::IAsyncResult* result) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Generic::TreeWalkPredicate_1::EndInvoke");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "EndInvoke", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(result)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Collections::Generic::TreeWalkPredicate_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(this, ___internal__method, result);
     }
   }; // System.Collections.Generic.TreeWalkPredicate`1

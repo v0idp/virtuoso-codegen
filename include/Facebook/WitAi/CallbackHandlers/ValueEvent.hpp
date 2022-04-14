@@ -29,7 +29,7 @@ namespace Facebook::WitAi::CallbackHandlers {
   class ValueEvent : public ::UnityEngine::Events::UnityEvent_1<::StringW> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x10F845C
+    // Offset: 0x166ECC4
     // Implemented from: UnityEngine.Events.UnityEvent`1
     // Base method: System.Void UnityEvent_1::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

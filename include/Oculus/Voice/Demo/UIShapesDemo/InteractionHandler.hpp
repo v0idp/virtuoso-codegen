@@ -51,24 +51,16 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
   // [TokenAttribute] Offset: FFFFFFFF
   class InteractionHandler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [MultilineAttribute] Offset: 0x677D18
-    // [HeaderAttribute] Offset: 0x677D18
+    // [HeaderAttribute] Offset: 0x78E58C
+    // [MultilineAttribute] Offset: 0x78E58C
     // private System.String freshStateText
     // Size: 0x8
     // Offset: 0x18
     ::StringW freshStateText;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [HeaderAttribute] Offset: 0x677D74
+    // [HeaderAttribute] Offset: 0x78E5E8
     // private UnityEngine.UI.Text textArea
     // Size: 0x8
     // Offset: 0x20
@@ -83,7 +75,7 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: showJson and: appVoiceExperience
     char __padding2[0x7] = {};
-    // [HeaderAttribute] Offset: 0x677DD0
+    // [HeaderAttribute] Offset: 0x78E644
     // private Oculus.Voice.AppVoiceExperience appVoiceExperience
     // Size: 0x8
     // Offset: 0x30
@@ -100,41 +92,41 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String freshStateText
-    ::StringW& dyn_freshStateText();
+    [[deprecated]] ::StringW& dyn_freshStateText();
     // Get instance field reference: private UnityEngine.UI.Text textArea
-    ::UnityEngine::UI::Text*& dyn_textArea();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_textArea();
     // Get instance field reference: private System.Boolean showJson
-    bool& dyn_showJson();
+    [[deprecated]] bool& dyn_showJson();
     // Get instance field reference: private Oculus.Voice.AppVoiceExperience appVoiceExperience
-    ::Oculus::Voice::AppVoiceExperience*& dyn_appVoiceExperience();
+    [[deprecated]] ::Oculus::Voice::AppVoiceExperience*& dyn_appVoiceExperience();
     // Get instance field reference: private System.String pendingText
-    ::StringW& dyn_pendingText();
+    [[deprecated]] ::StringW& dyn_pendingText();
     // private System.Void OnEnable()
-    // Offset: 0x13863BC
+    // Offset: 0x194962C
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x1386488
+    // Offset: 0x19496F8
     void OnDisable();
     // private System.Void OnRequestStarted(Facebook.WitAi.WitRequest r)
-    // Offset: 0x1386554
+    // Offset: 0x19497C4
     void OnRequestStarted(::Facebook::WitAi::WitRequest* r);
     // private System.Void Update()
-    // Offset: 0x13865FC
+    // Offset: 0x194986C
     void Update();
     // public System.Void OnResponse(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1386640
+    // Offset: 0x19498B0
     void OnResponse(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public System.Void OnError(System.String error, System.String message)
-    // Offset: 0x1386730
+    // Offset: 0x19499A0
     void OnError(::StringW error, ::StringW message);
     // public System.Void ToggleActivation()
-    // Offset: 0x13868F0
+    // Offset: 0x1949B60
     void ToggleActivation();
     // private System.Void <OnRequestStarted>b__7_0(System.String response)
-    // Offset: 0x13869A4
+    // Offset: 0x1949C14
     void $OnRequestStarted$b__7_0(::StringW response);
     // public System.Void .ctor()
-    // Offset: 0x1386950
+    // Offset: 0x1949BC0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

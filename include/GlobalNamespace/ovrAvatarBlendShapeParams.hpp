@@ -47,9 +47,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 blendShapeParamCount
-    uint& dyn_blendShapeParamCount();
+    [[deprecated]] uint& dyn_blendShapeParamCount();
     // Get instance field reference: public System.Single[] blendShapeParams
-    ::ArrayW<float>& dyn_blendShapeParams();
+    [[deprecated]] ::ArrayW<float>& dyn_blendShapeParams();
   }; // ovrAvatarBlendShapeParams
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarBlendShapeParams), 8 + sizeof(::ArrayW<float>)> __GlobalNamespace_ovrAvatarBlendShapeParamsSizeCheck;

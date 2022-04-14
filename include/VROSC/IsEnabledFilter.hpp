@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IsEnabledFilter : public ::VROSC::SignalFilter {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.MonoBehaviour _enablableToCheck
     // Size: 0x8
     // Offset: 0x40
@@ -62,11 +54,11 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.MonoBehaviour _enablableToCheck
-    ::UnityEngine::MonoBehaviour*& dyn__enablableToCheck();
+    [[deprecated]] ::UnityEngine::MonoBehaviour*& dyn__enablableToCheck();
     // Get instance field reference: private System.Boolean _passOnFalse
-    bool& dyn__passOnFalse();
+    [[deprecated]] bool& dyn__passOnFalse();
     // public System.Void .ctor()
-    // Offset: 0x1387A6C
+    // Offset: 0x194B380
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -82,7 +74,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<IsEnabledFilter*, creationType>()));
     }
     // protected override System.Void FilterSignal(VROSC.Signal signal)
-    // Offset: 0x138797C
+    // Offset: 0x194B290
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::FilterSignal(VROSC.Signal signal)
     void FilterSignal(::VROSC::Signal* signal);

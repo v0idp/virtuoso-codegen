@@ -48,13 +48,13 @@ namespace GlobalNamespace {
     // Set static field: static private ONSPPropagation/PropagationInterface CachedInterface
     static void _set_CachedInterface(::GlobalNamespace::ONSPPropagation::PropagationInterface* value);
     // static public ONSPPropagation/PropagationInterface get_Interface()
-    // Offset: 0x11BB358
+    // Offset: 0x1760260
     static ::GlobalNamespace::ONSPPropagation::PropagationInterface* get_Interface();
     // static private ONSPPropagation/PropagationInterface FindInterface()
-    // Offset: 0x11BB3C4
+    // Offset: 0x17602CC
     static ::GlobalNamespace::ONSPPropagation::PropagationInterface* FindInterface();
     // public System.Void .ctor()
-    // Offset: 0x11BB830
+    // Offset: 0x1760738
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

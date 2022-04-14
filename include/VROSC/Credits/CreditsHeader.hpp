@@ -38,15 +38,7 @@ namespace VROSC::Credits {
   // [TokenAttribute] Offset: FFFFFFFF
   class CreditsHeader : public ::VROSC::Credits::CreditsObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _name
     // Size: 0x8
     // Offset: 0x20
@@ -61,17 +53,17 @@ namespace VROSC::Credits {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _name
-    ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private UnityEngine.Color _nameColor
-    ::UnityEngine::Color& dyn__nameColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__nameColor();
     // private System.Void Awake()
-    // Offset: 0x133B8B4
+    // Offset: 0x8DF490
     void Awake();
     // public System.Void Setup(System.String name)
-    // Offset: 0x133B8F4
+    // Offset: 0x8DF4D0
     void Setup(::StringW name);
     // public System.Void .ctor()
-    // Offset: 0x133B9C4
+    // Offset: 0x8DF59C
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -85,7 +77,7 @@ namespace VROSC::Credits {
       return THROW_UNLESS((::il2cpp_utils::New<CreditsHeader*, creationType>()));
     }
     // protected override System.Void UpdateVisibility(System.Single visible)
-    // Offset: 0x133B954
+    // Offset: 0x8DF530
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::UpdateVisibility(System.Single visible)
     void UpdateVisibility(float visible);

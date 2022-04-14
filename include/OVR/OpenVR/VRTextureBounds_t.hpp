@@ -56,13 +56,13 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single uMin
-    float& dyn_uMin();
+    [[deprecated]] float& dyn_uMin();
     // Get instance field reference: public System.Single vMin
-    float& dyn_vMin();
+    [[deprecated]] float& dyn_vMin();
     // Get instance field reference: public System.Single uMax
-    float& dyn_uMax();
+    [[deprecated]] float& dyn_uMax();
     // Get instance field reference: public System.Single vMax
-    float& dyn_vMax();
+    [[deprecated]] float& dyn_vMax();
   }; // OVR.OpenVR.VRTextureBounds_t
   #pragma pack(pop)
   static check_size<sizeof(VRTextureBounds_t), 12 + sizeof(float)> __OVR_OpenVR_VRTextureBounds_tSizeCheck;

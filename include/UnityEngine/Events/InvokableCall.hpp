@@ -41,16 +41,8 @@ namespace UnityEngine::Events {
   // [TokenAttribute] Offset: FFFFFFFF
   class InvokableCall : public ::UnityEngine::Events::BaseInvokableCall {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x56B8EC
+    // [DebuggerBrowsableAttribute] Offset: 0x665AD0
     // private UnityEngine.Events.UnityAction Delegate
     // Size: 0x8
     // Offset: 0x10
@@ -63,25 +55,25 @@ namespace UnityEngine::Events {
       return Delegate;
     }
     // Get instance field reference: private UnityEngine.Events.UnityAction Delegate
-    ::UnityEngine::Events::UnityAction*& dyn_Delegate();
+    [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_Delegate();
     // private System.Void add_Delegate(UnityEngine.Events.UnityAction value)
-    // Offset: 0xE3EE54
+    // Offset: 0x112B44C
     void add_Delegate(::UnityEngine::Events::UnityAction* value);
     // private System.Void remove_Delegate(UnityEngine.Events.UnityAction value)
-    // Offset: 0xE3EEF4
+    // Offset: 0x112B4EC
     void remove_Delegate(::UnityEngine::Events::UnityAction* value);
     // public System.Void .ctor(UnityEngine.Events.UnityAction action)
-    // Offset: 0xE3F080
+    // Offset: 0x112B678
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InvokableCall* New_ctor(::UnityEngine::Events::UnityAction* action) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::InvokableCall::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InvokableCall*, creationType>(action)));
     }
     // public System.Void Invoke()
-    // Offset: 0xE3F0F4
+    // Offset: 0x112B6EC
     void Invoke();
     // public System.Void .ctor(System.Object target, System.Reflection.MethodInfo theFunction)
-    // Offset: 0xE3EF94
+    // Offset: 0x112B58C
     // Implemented from: UnityEngine.Events.BaseInvokableCall
     // Base method: System.Void BaseInvokableCall::.ctor(System.Object target, System.Reflection.MethodInfo theFunction)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -90,12 +82,12 @@ namespace UnityEngine::Events {
       return THROW_UNLESS((::il2cpp_utils::New<InvokableCall*, creationType>(target, theFunction)));
     }
     // public override System.Void Invoke(System.Object[] args)
-    // Offset: 0xE3F0B0
+    // Offset: 0x112B6A8
     // Implemented from: UnityEngine.Events.BaseInvokableCall
     // Base method: System.Void BaseInvokableCall::Invoke(System.Object[] args)
     void Invoke(::ArrayW<::Il2CppObject*> args);
     // public override System.Boolean Find(System.Object targetObj, System.Reflection.MethodInfo method)
-    // Offset: 0xE3F138
+    // Offset: 0x112B730
     // Implemented from: UnityEngine.Events.BaseInvokableCall
     // Base method: System.Boolean BaseInvokableCall::Find(System.Object targetObj, System.Reflection.MethodInfo method)
     bool Find(::Il2CppObject* targetObj, ::System::Reflection::MethodInfo* method);

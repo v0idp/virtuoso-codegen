@@ -59,15 +59,7 @@ namespace Mono::Xml {
     class IAttrList;
     // Nested type: ::Mono::Xml::SmallXmlParser::AttrListImpl
     class AttrListImpl;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Mono.Xml.SmallXmlParser/Mono.Xml.IContentHandler handler
     // Size: 0x8
     // Offset: 0x10
@@ -144,97 +136,97 @@ namespace Mono::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private Mono.Xml.SmallXmlParser/Mono.Xml.IContentHandler handler
-    ::Mono::Xml::SmallXmlParser::IContentHandler*& dyn_handler();
+    [[deprecated]] ::Mono::Xml::SmallXmlParser::IContentHandler*& dyn_handler();
     // Get instance field reference: private System.IO.TextReader reader
-    ::System::IO::TextReader*& dyn_reader();
+    [[deprecated]] ::System::IO::TextReader*& dyn_reader();
     // Get instance field reference: private System.Collections.Stack elementNames
-    ::System::Collections::Stack*& dyn_elementNames();
+    [[deprecated]] ::System::Collections::Stack*& dyn_elementNames();
     // Get instance field reference: private System.Collections.Stack xmlSpaces
-    ::System::Collections::Stack*& dyn_xmlSpaces();
+    [[deprecated]] ::System::Collections::Stack*& dyn_xmlSpaces();
     // Get instance field reference: private System.String xmlSpace
-    ::StringW& dyn_xmlSpace();
+    [[deprecated]] ::StringW& dyn_xmlSpace();
     // Get instance field reference: private System.Text.StringBuilder buffer
-    ::System::Text::StringBuilder*& dyn_buffer();
+    [[deprecated]] ::System::Text::StringBuilder*& dyn_buffer();
     // Get instance field reference: private System.Char[] nameBuffer
-    ::ArrayW<::Il2CppChar>& dyn_nameBuffer();
+    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_nameBuffer();
     // Get instance field reference: private System.Boolean isWhitespace
-    bool& dyn_isWhitespace();
+    [[deprecated]] bool& dyn_isWhitespace();
     // Get instance field reference: private Mono.Xml.SmallXmlParser/Mono.Xml.AttrListImpl attributes
-    ::Mono::Xml::SmallXmlParser::AttrListImpl*& dyn_attributes();
+    [[deprecated]] ::Mono::Xml::SmallXmlParser::AttrListImpl*& dyn_attributes();
     // Get instance field reference: private System.Int32 line
-    int& dyn_line();
+    [[deprecated]] int& dyn_line();
     // Get instance field reference: private System.Int32 column
-    int& dyn_column();
+    [[deprecated]] int& dyn_column();
     // Get instance field reference: private System.Boolean resetColumn
-    bool& dyn_resetColumn();
+    [[deprecated]] bool& dyn_resetColumn();
     // private System.Exception Error(System.String msg)
-    // Offset: 0xF57CBC
+    // Offset: 0x124C5F8
     ::System::Exception* Error(::StringW msg);
     // private System.Exception UnexpectedEndError()
-    // Offset: 0xF57E00
+    // Offset: 0x124C75C
     ::System::Exception* UnexpectedEndError();
     // private System.Boolean IsNameChar(System.Char c, System.Boolean start)
-    // Offset: 0xF57EE8
+    // Offset: 0x124C920
     bool IsNameChar(::Il2CppChar c, bool start);
     // private System.Boolean IsWhitespace(System.Int32 c)
-    // Offset: 0xF57FF8
+    // Offset: 0x124CA30
     bool IsWhitespace(int c);
     // public System.Void SkipWhitespaces()
-    // Offset: 0xF58028
+    // Offset: 0x124CA60
     void SkipWhitespaces();
     // private System.Void HandleWhitespaces()
-    // Offset: 0xF580E0
+    // Offset: 0x124CB18
     void HandleWhitespaces();
     // public System.Void SkipWhitespaces(System.Boolean expected)
-    // Offset: 0xF58030
+    // Offset: 0x124CA68
     void SkipWhitespaces(bool expected);
     // private System.Int32 Peek()
-    // Offset: 0xF58218
+    // Offset: 0x124CC50
     int Peek();
     // private System.Int32 Read()
-    // Offset: 0xF581A4
+    // Offset: 0x124CBDC
     int Read();
     // public System.Void Expect(System.Int32 c)
-    // Offset: 0xF58238
+    // Offset: 0x124CC70
     void Expect(int c);
     // private System.String ReadUntil(System.Char until, System.Boolean handleReferences)
-    // Offset: 0xF58304
+    // Offset: 0x124CD88
     ::StringW ReadUntil(::Il2CppChar until, bool handleReferences);
     // public System.String ReadName()
-    // Offset: 0xF585B8
+    // Offset: 0x124D028
     ::StringW ReadName();
     // public System.Void Parse(System.IO.TextReader input, Mono.Xml.SmallXmlParser/Mono.Xml.IContentHandler handler)
-    // Offset: 0xF49440
+    // Offset: 0x124D1D4
     void Parse(::System::IO::TextReader* input, ::Mono::Xml::SmallXmlParser::IContentHandler* handler);
     // private System.Void Cleanup()
-    // Offset: 0xF58FC0
+    // Offset: 0x124DBE8
     void Cleanup();
     // public System.Void ReadContent()
-    // Offset: 0xF58768
+    // Offset: 0x124D3AC
     void ReadContent();
     // private System.Void HandleBufferedContent()
-    // Offset: 0xF58E74
+    // Offset: 0x124DA9C
     void HandleBufferedContent();
     // private System.Void ReadCharacters()
-    // Offset: 0xF59348
+    // Offset: 0x124E070
     void ReadCharacters();
     // private System.Void ReadReference()
-    // Offset: 0xF583EC
+    // Offset: 0x124CE70
     void ReadReference();
     // private System.Int32 ReadCharacterReference()
-    // Offset: 0xF593D4
+    // Offset: 0x124E0FC
     int ReadCharacterReference();
     // private System.Void ReadAttribute(Mono.Xml.SmallXmlParser/Mono.Xml.AttrListImpl a)
-    // Offset: 0xF591DC
+    // Offset: 0x124DF08
     void ReadAttribute(::Mono::Xml::SmallXmlParser::AttrListImpl* a);
     // private System.Void ReadCDATASection()
-    // Offset: 0xF59044
+    // Offset: 0x124DC88
     void ReadCDATASection();
     // private System.Void ReadComment()
-    // Offset: 0xF59148
+    // Offset: 0x124DD8C
     void ReadComment();
     // public System.Void .ctor()
-    // Offset: 0xF49334
+    // Offset: 0x124C494
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

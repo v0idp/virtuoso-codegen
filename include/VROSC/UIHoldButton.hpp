@@ -61,15 +61,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::UIHoldButton::$Pressing$d__20
     class $Pressing$d__20;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _inProgressText
     // Size: 0x8
     // Offset: 0x88
@@ -90,15 +82,15 @@ namespace VROSC {
     ::VROSC::AdjustableMesh* adjustableMesh;
     // Field size check
     static_assert(sizeof(::VROSC::AdjustableMesh*) == 0x8);
-    // [ColorUsageAttribute] Offset: 0x673D28
+    // [ColorUsageAttribute] Offset: 0x78A0BC
     // private UnityEngine.Color _color
     // Size: 0x10
     // Offset: 0xA0
     ::UnityEngine::Color color;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [HeaderAttribute] Offset: 0x673D68
-    // [RangeAttribute] Offset: 0x673D68
+    // [RangeAttribute] Offset: 0x78A0FC
+    // [HeaderAttribute] Offset: 0x78A0FC
     // private System.Single _previewValue
     // Size: 0x4
     // Offset: 0xB0
@@ -107,7 +99,7 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     // Padding between fields: previewValue and: hapticFeedBack
     char __padding4[0x4] = {};
-    // [HeaderAttribute] Offset: 0x673DCC
+    // [HeaderAttribute] Offset: 0x78A160
     // private VROSC.SimpleHaptic _hapticFeedBack
     // Size: 0x8
     // Offset: 0xB8
@@ -156,60 +148,60 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _inProgressText
-    ::TMPro::TextMeshPro*& dyn__inProgressText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__inProgressText();
     // Get instance field reference: private System.Single _pressTime
-    float& dyn__pressTime();
+    [[deprecated]] float& dyn__pressTime();
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Single _previewValue
-    float& dyn__previewValue();
+    [[deprecated]] float& dyn__previewValue();
     // Get instance field reference: private VROSC.SimpleHaptic _hapticFeedBack
-    ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: private System.Single _pressedFor
-    float& dyn__pressedFor();
+    [[deprecated]] float& dyn__pressedFor();
     // Get instance field reference: private System.Boolean _pressing
-    bool& dyn__pressing();
+    [[deprecated]] bool& dyn__pressing();
     // Get instance field reference: private System.Boolean _pressCompleteToken
-    bool& dyn__pressCompleteToken();
+    [[deprecated]] bool& dyn__pressCompleteToken();
     // Get instance field reference: private VROSC.InputDevice _heldBy
-    ::VROSC::InputDevice*& dyn__heldBy();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__heldBy();
     // Get instance field reference: private VROSC.TriggerButton _heldByButton
-    ::VROSC::TriggerButton& dyn__heldByButton();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__heldByButton();
     // Get instance field reference: public System.Action OnPressCompleted
-    ::System::Action*& dyn_OnPressCompleted();
+    [[deprecated]] ::System::Action*& dyn_OnPressCompleted();
     // private System.Void OnEnable()
-    // Offset: 0x139C30C
+    // Offset: 0x190FBBC
     void OnEnable();
     // private System.Void Update()
-    // Offset: 0x139C46C
+    // Offset: 0x190FD1C
     void Update();
     // private System.Void Start()
-    // Offset: 0x139C4A4
+    // Offset: 0x190FD54
     void Start();
     // private System.Void OnDestroy()
-    // Offset: 0x139C614
+    // Offset: 0x190FEC4
     void OnDestroy();
     // private System.Void OnAnyPressEnd(VROSC.InputDevice device, VROSC.TriggerButton button)
-    // Offset: 0x139C784
+    // Offset: 0x1910034
     void OnAnyPressEnd(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
     // private System.Void ButtonWasPressed(VROSC.ClickData clickData, System.Boolean pressed)
-    // Offset: 0x139C820
+    // Offset: 0x19100D0
     void ButtonWasPressed(::VROSC::ClickData* clickData, bool pressed);
     // private System.Collections.IEnumerator Pressing(VROSC.ClickData clickData)
-    // Offset: 0x139C8B0
+    // Offset: 0x1910160
     ::System::Collections::IEnumerator* Pressing(::VROSC::ClickData* clickData);
     // private System.Void SetValue(System.Single value)
-    // Offset: 0x139C38C
+    // Offset: 0x190FC3C
     void SetValue(float value);
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x139C304
+    // Offset: 0x190FBB4
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Boolean UIInteractable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x139C928
+    // Offset: 0x19101D8
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()

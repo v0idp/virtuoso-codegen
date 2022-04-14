@@ -36,15 +36,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class PasswordField : public ::GlobalNamespace::UIInputField {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _hiddenText
     // Size: 0x8
     // Offset: 0xC0
@@ -53,12 +45,12 @@ namespace GlobalNamespace {
     static_assert(sizeof(::TMPro::TextMeshPro*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _hiddenText
-    ::TMPro::TextMeshPro*& dyn__hiddenText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__hiddenText();
     // private System.Void EnteredPasswordChanged(System.String password)
-    // Offset: 0x8F8CA4
+    // Offset: 0xADD43C
     void EnteredPasswordChanged(::StringW password);
     // public System.Void .ctor()
-    // Offset: 0x8F8CF4
+    // Offset: 0xADD48C
     // Implemented from: UIInputField
     // Base method: System.Void UIInputField::.ctor()
     // Base method: System.Void UIInteractable::.ctor()
@@ -75,12 +67,12 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<PasswordField*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x8F8AC0
+    // Offset: 0xADD258
     // Implemented from: UIInputField
     // Base method: System.Void UIInputField::Awake()
     void Awake();
     // protected override System.Void OnDestroy()
-    // Offset: 0x8F8BDC
+    // Offset: 0xADD374
     // Implemented from: UIInputField
     // Base method: System.Void UIInputField::OnDestroy()
     void OnDestroy();

@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InputVisualizer : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Material _restingMaterial
     // Size: 0x8
     // Offset: 0x18
@@ -79,21 +71,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Material _restingMaterial
-    ::UnityEngine::Material*& dyn__restingMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__restingMaterial();
     // Get instance field reference: private UnityEngine.Material _activeMaterial
-    ::UnityEngine::Material*& dyn__activeMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__activeMaterial();
     // Get instance field reference: private VROSC.InputDevice _device
-    ::VROSC::InputDevice*& dyn__device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // public System.Void Update()
-    // Offset: 0x13831B0
+    // Offset: 0x1945E14
     void Update();
     // public System.Void Setup(VROSC.InputDevice device)
-    // Offset: 0x1383294
+    // Offset: 0x1943E84
     void Setup(::VROSC::InputDevice* device);
     // public System.Void .ctor()
-    // Offset: 0x13833B8
+    // Offset: 0x1945EF8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

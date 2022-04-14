@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TransformRotator : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _targetTransform
     // Size: 0x8
     // Offset: 0x40
@@ -87,24 +79,24 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Transform _targetTransform
-    ::UnityEngine::Transform*& dyn__targetTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__targetTransform();
     // Get instance field reference: private UnityEngine.Transform _sourceTransform
-    ::UnityEngine::Transform*& dyn__sourceTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__sourceTransform();
     // Get instance field reference: private UnityEngine.Quaternion _relativeStartRotation
-    ::UnityEngine::Quaternion& dyn__relativeStartRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn__relativeStartRotation();
     // Get instance field reference: private System.Boolean _lockX
-    bool& dyn__lockX();
+    [[deprecated]] bool& dyn__lockX();
     // Get instance field reference: private System.Boolean _lockY
-    bool& dyn__lockY();
+    [[deprecated]] bool& dyn__lockY();
     // Get instance field reference: private System.Boolean _lockZ
-    bool& dyn__lockZ();
+    [[deprecated]] bool& dyn__lockZ();
     // protected override System.Boolean get_RequireOrigin()
-    // Offset: 0x1404F74
+    // Offset: 0xA2CBF8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Boolean SignalNode::get_RequireOrigin()
     bool get_RequireOrigin();
     // public System.Void .ctor()
-    // Offset: 0x1405244
+    // Offset: 0xA2CEC8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -119,17 +111,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TransformRotator*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x1404F7C
+    // Offset: 0xA2CC00
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x1405090
+    // Offset: 0xA2CD14
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x140523C
+    // Offset: 0xA2CEC0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

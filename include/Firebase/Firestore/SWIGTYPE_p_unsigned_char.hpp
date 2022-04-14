@@ -28,15 +28,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class SWIGTYPE_p_unsigned_char : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -49,16 +41,16 @@ namespace Firebase::Firestore {
       return swigCPtr;
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean futureUse)
-    // Offset: 0xC2C2E4
+    // Offset: 0xD4E0F4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SWIGTYPE_p_unsigned_char* New_ctor(::System::IntPtr cPtr, bool futureUse) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::SWIGTYPE_p_unsigned_char::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SWIGTYPE_p_unsigned_char*, creationType>(cPtr, futureUse)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.SWIGTYPE_p_unsigned_char obj)
-    // Offset: 0xC2C1D4
+    // Offset: 0xD4DFEC
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::SWIGTYPE_p_unsigned_char* obj);
   }; // Firebase.Firestore.SWIGTYPE_p_unsigned_char
   #pragma pack(pop)

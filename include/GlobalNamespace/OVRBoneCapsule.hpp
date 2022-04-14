@@ -35,15 +35,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRBoneCapsule : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int16 <BoneIndex>k__BackingField
     // Size: 0x2
     // Offset: 0x10
@@ -66,38 +58,38 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::CapsuleCollider*) == 0x8);
     public:
     // Get instance field reference: private System.Int16 <BoneIndex>k__BackingField
-    int16_t& dyn_$BoneIndex$k__BackingField();
+    [[deprecated]] int16_t& dyn_$BoneIndex$k__BackingField();
     // Get instance field reference: private UnityEngine.Rigidbody <CapsuleRigidbody>k__BackingField
-    ::UnityEngine::Rigidbody*& dyn_$CapsuleRigidbody$k__BackingField();
+    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_$CapsuleRigidbody$k__BackingField();
     // Get instance field reference: private UnityEngine.CapsuleCollider <CapsuleCollider>k__BackingField
-    ::UnityEngine::CapsuleCollider*& dyn_$CapsuleCollider$k__BackingField();
+    [[deprecated]] ::UnityEngine::CapsuleCollider*& dyn_$CapsuleCollider$k__BackingField();
     // public System.Int16 get_BoneIndex()
-    // Offset: 0x819A40
+    // Offset: 0x98F00C
     int16_t get_BoneIndex();
     // public System.Void set_BoneIndex(System.Int16 value)
-    // Offset: 0x819A48
+    // Offset: 0x98F014
     void set_BoneIndex(int16_t value);
     // public UnityEngine.Rigidbody get_CapsuleRigidbody()
-    // Offset: 0x819A50
+    // Offset: 0x98F01C
     ::UnityEngine::Rigidbody* get_CapsuleRigidbody();
     // public System.Void set_CapsuleRigidbody(UnityEngine.Rigidbody value)
-    // Offset: 0x819A58
+    // Offset: 0x98F024
     void set_CapsuleRigidbody(::UnityEngine::Rigidbody* value);
     // public UnityEngine.CapsuleCollider get_CapsuleCollider()
-    // Offset: 0x819A60
+    // Offset: 0x98F02C
     ::UnityEngine::CapsuleCollider* get_CapsuleCollider();
     // public System.Void set_CapsuleCollider(UnityEngine.CapsuleCollider value)
-    // Offset: 0x819A68
+    // Offset: 0x98F034
     void set_CapsuleCollider(::UnityEngine::CapsuleCollider* value);
     // public System.Void .ctor(System.Int16 boneIndex, UnityEngine.Rigidbody capsuleRigidBody, UnityEngine.CapsuleCollider capsuleCollider)
-    // Offset: 0x819A78
+    // Offset: 0x98F044
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRBoneCapsule* New_ctor(int16_t boneIndex, ::UnityEngine::Rigidbody* capsuleRigidBody, ::UnityEngine::CapsuleCollider* capsuleCollider) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRBoneCapsule::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRBoneCapsule*, creationType>(boneIndex, capsuleRigidBody, capsuleCollider)));
     }
     // public System.Void .ctor()
-    // Offset: 0x819A70
+    // Offset: 0x98F03C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -29,7 +29,7 @@ namespace UnityEngineInternal {
   class GenericStack : public ::System::Collections::Stack {
     public:
     // public System.Void .ctor()
-    // Offset: 0xE3BA6C
+    // Offset: 0x1128064
     // Implemented from: System.Collections.Stack
     // Base method: System.Void Stack::.ctor()
     // Base method: System.Void Object::.ctor()

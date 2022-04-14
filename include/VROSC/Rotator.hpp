@@ -28,15 +28,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Rotator : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 _rotation
     // Size: 0xC
     // Offset: 0x18
@@ -47,12 +39,12 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Vector3 _rotation
-    ::UnityEngine::Vector3& dyn__rotation();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__rotation();
     // protected System.Void Update()
-    // Offset: 0xB01138
+    // Offset: 0xDD26E0
     void Update();
     // public System.Void .ctor()
-    // Offset: 0xB011A0
+    // Offset: 0xDD2748
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

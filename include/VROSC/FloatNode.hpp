@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class FloatNode : public ::VROSC::Node {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Single _minValue
     // Size: 0x4
     // Offset: 0x18
@@ -75,30 +67,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Single _minValue
-    float& dyn__minValue();
+    [[deprecated]] float& dyn__minValue();
     // Get instance field reference: protected System.Single _maxValue
-    float& dyn__maxValue();
+    [[deprecated]] float& dyn__maxValue();
     // Get instance field reference: private System.Single _value
-    float& dyn__value();
+    [[deprecated]] float& dyn__value();
     // Get instance field reference: public System.Action`1<System.Single> OnValueChanged
-    ::System::Action_1<float>*& dyn_OnValueChanged();
+    [[deprecated]] ::System::Action_1<float>*& dyn_OnValueChanged();
     // public System.Single get_MinValue()
-    // Offset: 0x88EA34
+    // Offset: 0x199F8E8
     float get_MinValue();
     // public System.Single get_MaxValue()
-    // Offset: 0x88EA3C
+    // Offset: 0x199F8F0
     float get_MaxValue();
     // public System.Single get_Value()
-    // Offset: 0x88EA44
+    // Offset: 0x199F8F8
     float get_Value();
     // public System.Void set_Value(System.Single value)
-    // Offset: 0x88EA4C
+    // Offset: 0x199F900
     void set_Value(float value);
     // protected System.Single SetValueInRange(System.Single value)
-    // Offset: 0x88EA58
+    // Offset: 0x199F90C
     float SetValueInRange(float value);
     // public System.Void .ctor()
-    // Offset: 0x88EAF0
+    // Offset: 0x199F9A4
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

@@ -98,20 +98,12 @@ namespace VROSC {
       // Set static field: static public VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction InstantStop
       static void _set_InstantStop(::VROSC::BlinkControllerButtonBehaviour::EventAction value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction
     #pragma pack(pop)
     static check_size<sizeof(BlinkControllerButtonBehaviour::EventAction), 0 + sizeof(int)> __VROSC_BlinkControllerButtonBehaviour_EventActionSizeCheck;
     static_assert(sizeof(BlinkControllerButtonBehaviour::EventAction) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.HandType _hand
     // Size: 0x4
     // Offset: 0x10
@@ -168,37 +160,37 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.HandType _hand
-    ::VROSC::HandType& dyn__hand();
+    [[deprecated]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private VROSC.TriggerButton _button
-    ::VROSC::TriggerButton& dyn__button();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__button();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Single _fadeTime
-    float& dyn__fadeTime();
+    [[deprecated]] float& dyn__fadeTime();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onAssetStartAction
-    ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStartAction();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStartAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onAssetStopAction
-    ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStopAction();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStopAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onTimelineStartAction
-    ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStartAction();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStartAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onTimelineStopAction
-    ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStopAction();
+    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStopAction();
     // Get instance field reference: private System.Boolean _playing
-    bool& dyn__playing();
+    [[deprecated]] bool& dyn__playing();
     // public System.Void Setup(VROSC.HandType hand, VROSC.TriggerButton button, UnityEngine.Color color, System.Single fadeTime, VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction onAssetStartAction, VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction onAssetStopAction, VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction onTimelineStartAction, VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction onTimelineStopAction)
-    // Offset: 0x1323C94
+    // Offset: 0x937814
     void Setup(::VROSC::HandType hand, ::VROSC::TriggerButton button, ::UnityEngine::Color color, float fadeTime, ::VROSC::BlinkControllerButtonBehaviour::EventAction onAssetStartAction, ::VROSC::BlinkControllerButtonBehaviour::EventAction onAssetStopAction, ::VROSC::BlinkControllerButtonBehaviour::EventAction onTimelineStartAction, ::VROSC::BlinkControllerButtonBehaviour::EventAction onTimelineStopAction);
     // private System.Void StartBlinking()
-    // Offset: 0x1323F5C
+    // Offset: 0x937ADC
     void StartBlinking();
     // private System.Void StopBlinking(System.Single time)
-    // Offset: 0x132401C
+    // Offset: 0x937B48
     void StopBlinking(float time);
     // private System.Void ProcessEventAction(VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction eventAction)
-    // Offset: 0x1323D1C
+    // Offset: 0x93789C
     void ProcessEventAction(::VROSC::BlinkControllerButtonBehaviour::EventAction eventAction);
     // public System.Void .ctor()
-    // Offset: 0x1324078
+    // Offset: 0x937BA8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -208,27 +200,27 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<BlinkControllerButtonBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x1323CD0
+    // Offset: 0x937850
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);
     // public override System.Void OnGraphStart(UnityEngine.Playables.Playable playable)
-    // Offset: 0x1323D44
+    // Offset: 0x9378C4
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnGraphStart(UnityEngine.Playables.Playable playable)
     void OnGraphStart(::UnityEngine::Playables::Playable playable);
     // public override System.Void OnGraphStop(UnityEngine.Playables.Playable playable)
-    // Offset: 0x1323D70
+    // Offset: 0x9378F0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnGraphStop(UnityEngine.Playables.Playable playable)
     void OnGraphStop(::UnityEngine::Playables::Playable playable);
     // public override System.Void OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0x1323D9C
+    // Offset: 0x93791C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPlay(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);
     // public override System.Void OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0x1323DE8
+    // Offset: 0x937968
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPause(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);

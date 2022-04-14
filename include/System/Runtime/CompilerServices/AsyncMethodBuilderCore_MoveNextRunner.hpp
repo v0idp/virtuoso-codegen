@@ -37,15 +37,7 @@ namespace System::Runtime::CompilerServices {
   // [TokenAttribute] Offset: FFFFFFFF
   class AsyncMethodBuilderCore::MoveNextRunner : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Threading.ExecutionContext m_context
     // Size: 0x8
     // Offset: 0x10
@@ -64,21 +56,21 @@ namespace System::Runtime::CompilerServices {
     // Set static field: static private System.Threading.ContextCallback s_invokeMoveNext
     static void _set_s_invokeMoveNext(::System::Threading::ContextCallback* value);
     // Get instance field reference: private readonly System.Threading.ExecutionContext m_context
-    ::System::Threading::ExecutionContext*& dyn_m_context();
+    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_context();
     // Get instance field reference: System.Runtime.CompilerServices.IAsyncStateMachine m_stateMachine
-    ::System::Runtime::CompilerServices::IAsyncStateMachine*& dyn_m_stateMachine();
+    [[deprecated]] ::System::Runtime::CompilerServices::IAsyncStateMachine*& dyn_m_stateMachine();
     // System.Void .ctor(System.Threading.ExecutionContext context, System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0xDCC5FC
+    // Offset: 0x13A4D28
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AsyncMethodBuilderCore::MoveNextRunner* New_ctor(::System::Threading::ExecutionContext* context, ::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::CompilerServices::AsyncMethodBuilderCore::MoveNextRunner::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AsyncMethodBuilderCore::MoveNextRunner*, creationType>(context, stateMachine)));
     }
     // System.Void Run()
-    // Offset: 0xDCC634
+    // Offset: 0x13A4D60
     void Run();
     // static private System.Void InvokeMoveNext(System.Object stateMachine)
-    // Offset: 0xDCC838
+    // Offset: 0x13A4F64
     static void InvokeMoveNext(::Il2CppObject* stateMachine);
   }; // System.Runtime.CompilerServices.AsyncMethodBuilderCore/System.Runtime.CompilerServices.MoveNextRunner
   #pragma pack(pop)

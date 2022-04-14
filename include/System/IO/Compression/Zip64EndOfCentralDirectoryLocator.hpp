@@ -62,16 +62,16 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 NumberOfDiskWithZip64EOCD
-    uint& dyn_NumberOfDiskWithZip64EOCD();
+    [[deprecated]] uint& dyn_NumberOfDiskWithZip64EOCD();
     // Get instance field reference: public System.UInt64 OffsetOfZip64EOCD
-    uint64_t& dyn_OffsetOfZip64EOCD();
+    [[deprecated]] uint64_t& dyn_OffsetOfZip64EOCD();
     // Get instance field reference: public System.UInt32 TotalNumberOfDisks
-    uint& dyn_TotalNumberOfDisks();
+    [[deprecated]] uint& dyn_TotalNumberOfDisks();
     // static public System.Boolean TryReadBlock(System.IO.BinaryReader reader, out System.IO.Compression.Zip64EndOfCentralDirectoryLocator zip64EOCDLocator)
-    // Offset: 0x1122258
+    // Offset: 0x1699AC4
     static bool TryReadBlock(::System::IO::BinaryReader* reader, ByRef<::System::IO::Compression::Zip64EndOfCentralDirectoryLocator> zip64EOCDLocator);
     // static public System.Void WriteBlock(System.IO.Stream stream, System.Int64 zip64EOCDRecordStart)
-    // Offset: 0x11222FC
+    // Offset: 0x1699B68
     static void WriteBlock(::System::IO::Stream* stream, int64_t zip64EOCDRecordStart);
   }; // System.IO.Compression.Zip64EndOfCentralDirectoryLocator
   #pragma pack(pop)

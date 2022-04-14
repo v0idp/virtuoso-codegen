@@ -32,15 +32,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarAssetMaterial : public ::GlobalNamespace::OvrAvatarAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public ovrAvatarMaterialState material
     // Size: 0xA8
     // Offset: 0x18
@@ -51,9 +43,9 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator uint64_t
     constexpr operator uint64_t() const noexcept = delete;
     // Get instance field reference: public ovrAvatarMaterialState material
-    ::GlobalNamespace::ovrAvatarMaterialState& dyn_material();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialState& dyn_material();
     // public System.Void .ctor(System.UInt64 id, System.IntPtr mat)
-    // Offset: 0x9261A0
+    // Offset: 0xF87374
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarAssetMaterial* New_ctor(uint64_t id, ::System::IntPtr mat) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarAssetMaterial::.ctor");

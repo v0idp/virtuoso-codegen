@@ -60,15 +60,7 @@ namespace UnityEngine::XR::Management {
   // [TokenAttribute] Offset: FFFFFFFF
   class XRLoaderHelper : public ::UnityEngine::XR::Management::XRLoader {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Collections.Generic.Dictionary`2<System.Type,UnityEngine.ISubsystem> m_SubsystemInstanceMap
     // Size: 0x8
     // Offset: 0x18
@@ -79,7 +71,7 @@ namespace UnityEngine::XR::Management {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Collections.Generic.Dictionary`2<System.Type,UnityEngine.ISubsystem> m_SubsystemInstanceMap
-    ::System::Collections::Generic::Dictionary_2<::System::Type*, ::UnityEngine::ISubsystem*>*& dyn_m_SubsystemInstanceMap();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::UnityEngine::ISubsystem*>*& dyn_m_SubsystemInstanceMap();
     // protected System.Void StartSubsystem()
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
@@ -144,7 +136,7 @@ namespace UnityEngine::XR::Management {
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, descriptors, id);
     }
     // protected System.Void .ctor()
-    // Offset: 0x12F3BD0
+    // Offset: 0x18FADD0
     // Implemented from: UnityEngine.XR.Management.XRLoader
     // Base method: System.Void XRLoader::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -163,12 +155,12 @@ namespace UnityEngine::XR::Management {
     T GetLoadedSubsystem() {
       static_assert(std::is_convertible_v<std::remove_pointer_t<T>, ::UnityEngine::ISubsystem>);
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRLoaderHelper::GetLoadedSubsystem");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "GetLoadedSubsystem", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::UnityEngine::XR::Management::XRLoader*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___generic__method);
     }
     // public override System.Boolean Deinitialize()
-    // Offset: 0x12F3B74
+    // Offset: 0x18FAD74
     // Implemented from: UnityEngine.XR.Management.XRLoader
     // Base method: System.Boolean XRLoader::Deinitialize()
     bool Deinitialize();

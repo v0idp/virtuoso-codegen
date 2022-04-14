@@ -43,15 +43,7 @@ namespace VROSC::UI::Meshes {
   // [TokenAttribute] Offset: FFFFFFFF
   class RescalableMesh : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.MeshFilter _meshFilter
     // Size: 0x8
     // Offset: 0x18
@@ -92,40 +84,40 @@ namespace VROSC::UI::Meshes {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.MeshFilter _meshFilter
-    ::UnityEngine::MeshFilter*& dyn__meshFilter();
+    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
     // Get instance field reference: private VROSC.UI.Meshes.RescalableMeshData _data
-    ::VROSC::UI::Meshes::RescalableMeshData*& dyn__data();
+    [[deprecated]] ::VROSC::UI::Meshes::RescalableMeshData*& dyn__data();
     // Get instance field reference: private System.Single _width
-    float& dyn__width();
+    [[deprecated]] float& dyn__width();
     // Get instance field reference: private System.Single _height
-    float& dyn__height();
+    [[deprecated]] float& dyn__height();
     // Get instance field reference: private UnityEngine.Mesh _mesh
-    ::UnityEngine::Mesh*& dyn__mesh();
+    [[deprecated]] ::UnityEngine::Mesh*& dyn__mesh();
     // Get instance field reference: private UnityEngine.Vector3[] _positions
-    ::ArrayW<::UnityEngine::Vector3>& dyn__positions();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__positions();
     // public System.Single get_Width()
-    // Offset: 0x99A6AC
+    // Offset: 0xB33340
     float get_Width();
     // public System.Single get_Height()
-    // Offset: 0x99A6B4
+    // Offset: 0xB33348
     float get_Height();
     // public VROSC.UI.Meshes.RescalableMeshData get_Data()
-    // Offset: 0x99A6BC
+    // Offset: 0xB33350
     ::VROSC::UI::Meshes::RescalableMeshData* get_Data();
     // private System.Void Awake()
-    // Offset: 0x99A6C4
+    // Offset: 0xB33358
     void Awake();
     // public System.Void GetValuesFromData()
-    // Offset: 0x99A7AC
+    // Offset: 0xB33440
     void GetValuesFromData();
     // private System.Void Update()
-    // Offset: 0x99A7D4
+    // Offset: 0xB33468
     void Update();
     // private System.Void OnDrawGizmos()
-    // Offset: 0x99A914
+    // Offset: 0xB335A8
     void OnDrawGizmos();
     // public System.Void .ctor()
-    // Offset: 0x99A958
+    // Offset: 0xB335EC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

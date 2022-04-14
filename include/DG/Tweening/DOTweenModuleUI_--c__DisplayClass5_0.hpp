@@ -31,15 +31,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOTweenModuleUI::$$c__DisplayClass5_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.UI.Image target
     // Size: 0x8
     // Offset: 0x10
@@ -52,15 +44,15 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.UI.Image target
-    ::UnityEngine::UI::Image*& dyn_target();
+    [[deprecated]] ::UnityEngine::UI::Image*& dyn_target();
     // System.Single <DOFillAmount>b__0()
-    // Offset: 0x1265970
+    // Offset: 0x17E3D78
     float $DOFillAmount$b__0();
     // System.Void <DOFillAmount>b__1(System.Single x)
-    // Offset: 0x126598C
+    // Offset: 0x17E3D94
     void $DOFillAmount$b__1(float x);
     // public System.Void .ctor()
-    // Offset: 0x1265968
+    // Offset: 0x17DD880
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -38,20 +38,20 @@ namespace DG::Tweening {
   class EaseFunction : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x109ACD0
+    // Offset: 0x15DD2F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EaseFunction* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::EaseFunction::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EaseFunction*, creationType>(object, method)));
     }
     // public System.Single Invoke(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x109CD18
+    // Offset: 0x15DF340
     float Invoke(float time, float duration, float overshootOrAmplitude, float period);
     // public System.IAsyncResult BeginInvoke(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x109CF8C
+    // Offset: 0x15DF5B4
     ::System::IAsyncResult* BeginInvoke(float time, float duration, float overshootOrAmplitude, float period, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Single EndInvoke(System.IAsyncResult result)
-    // Offset: 0x109D058
+    // Offset: 0x15DF680
     float EndInvoke(::System::IAsyncResult* result);
   }; // DG.Tweening.EaseFunction
   #pragma pack(pop)

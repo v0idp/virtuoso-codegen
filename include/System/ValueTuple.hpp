@@ -73,47 +73,47 @@ namespace System {
       return *reinterpret_cast<::System::IComparable*>(this);
     }
     // public System.Boolean Equals(System.ValueTuple other)
-    // Offset: 0xCEEEA4
+    // Offset: 0x120D240
     bool Equals(::System::ValueTuple other);
     // private System.Boolean System.Collections.IStructuralEquatable.Equals(System.Object other, System.Collections.IEqualityComparer comparer)
-    // Offset: 0xCEEEAC
+    // Offset: 0x120D248
     bool System_Collections_IStructuralEquatable_Equals(::Il2CppObject* other, ::System::Collections::IEqualityComparer* comparer);
     // private System.Int32 System.IComparable.CompareTo(System.Object other)
-    // Offset: 0xCEEF0C
+    // Offset: 0x120D2A8
     int System_IComparable_CompareTo(::Il2CppObject* other);
     // public System.Int32 CompareTo(System.ValueTuple other)
-    // Offset: 0xCEF030
+    // Offset: 0x120D3CC
     int CompareTo(::System::ValueTuple other);
     // private System.Int32 System.Collections.IStructuralComparable.CompareTo(System.Object other, System.Collections.IComparer comparer)
-    // Offset: 0xCEF038
+    // Offset: 0x120D3D4
     int System_Collections_IStructuralComparable_CompareTo(::Il2CppObject* other, ::System::Collections::IComparer* comparer);
     // private System.Int32 System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer comparer)
-    // Offset: 0xCEF164
+    // Offset: 0x120D500
     int System_Collections_IStructuralEquatable_GetHashCode(::System::Collections::IEqualityComparer* comparer);
     // static System.Int32 CombineHashCodes(System.Int32 h1, System.Int32 h2)
-    // Offset: 0xCEF1B0
+    // Offset: 0x120D54C
     static int CombineHashCodes(int h1, int h2);
     // static System.Int32 CombineHashCodes(System.Int32 h1, System.Int32 h2, System.Int32 h3)
-    // Offset: 0xCEF238
+    // Offset: 0x120D5D4
     static int CombineHashCodes(int h1, int h2, int h3);
     // static System.Int32 CombineHashCodes(System.Int32 h1, System.Int32 h2, System.Int32 h3, System.Int32 h4)
-    // Offset: 0xCEF2C4
+    // Offset: 0x120D660
     static int CombineHashCodes(int h1, int h2, int h3, int h4);
     // static System.Int32 CombineHashCodes(System.Int32 h1, System.Int32 h2, System.Int32 h3, System.Int32 h4, System.Int32 h5)
-    // Offset: 0xCEF360
+    // Offset: 0x120D6FC
     static int CombineHashCodes(int h1, int h2, int h3, int h4, int h5);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xCEEE44
+    // Offset: 0x120D1E0
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xCEF15C
+    // Offset: 0x120D4F8
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();
     // public override System.String ToString()
-    // Offset: 0xCEF16C
+    // Offset: 0x120D508
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

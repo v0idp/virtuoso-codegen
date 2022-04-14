@@ -69,7 +69,7 @@ namespace GlobalNamespace {
     // Set static field: static public Key/Type SYMBOL
     static void _set_SYMBOL(::GlobalNamespace::Key::Type value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Key/Type
   #pragma pack(pop)
   static check_size<sizeof(Key::Type), 0 + sizeof(int)> __GlobalNamespace_Key_TypeSizeCheck;

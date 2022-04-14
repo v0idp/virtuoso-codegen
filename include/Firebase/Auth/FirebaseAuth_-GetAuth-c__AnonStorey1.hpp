@@ -31,15 +31,7 @@ namespace Firebase::Auth {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class FirebaseAuth::$GetAuth$c__AnonStorey1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // Firebase.FirebaseApp app
     // Size: 0x8
     // Offset: 0x10
@@ -54,11 +46,11 @@ namespace Firebase::Auth {
     static_assert(sizeof(::Firebase::Auth::FirebaseAuth*) == 0x8);
     public:
     // Get instance field reference: Firebase.FirebaseApp app
-    ::Firebase::FirebaseApp*& dyn_app();
+    [[deprecated]] ::Firebase::FirebaseApp*& dyn_app();
     // Get instance field reference: Firebase.Auth.FirebaseAuth auth
-    ::Firebase::Auth::FirebaseAuth*& dyn_auth();
+    [[deprecated]] ::Firebase::Auth::FirebaseAuth*& dyn_auth();
     // public System.Void .ctor()
-    // Offset: 0x12B0838
+    // Offset: 0x18B0574
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

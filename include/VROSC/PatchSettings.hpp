@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PatchSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public AudioHelm.HelmPatchFormat Patch
     // Size: 0x8
     // Offset: 0x10
@@ -56,24 +48,24 @@ namespace VROSC {
       return Patch;
     }
     // Get instance field reference: public AudioHelm.HelmPatchFormat Patch
-    ::AudioHelm::HelmPatchFormat*& dyn_Patch();
+    [[deprecated]] ::AudioHelm::HelmPatchFormat*& dyn_Patch();
     // static public System.Single GetVirtuosoAdjustedPercentValue(AudioHelm.Param parameter, System.Single percent)
-    // Offset: 0x8F8E4C
+    // Offset: 0xADD5E4
     static float GetVirtuosoAdjustedPercentValue(::AudioHelm::Param parameter, float percent);
     // public System.Void SetParameterPercent(AudioHelm.Param parameter, System.Single percent)
-    // Offset: 0x8F8E74
+    // Offset: 0xADD60C
     void SetParameterPercent(::AudioHelm::Param parameter, float percent);
     // public System.Single GetParameterPercent(AudioHelm.Param parameter)
-    // Offset: 0x8F8678
+    // Offset: 0xADCE10
     float GetParameterPercent(::AudioHelm::Param parameter);
     // public System.Void SetParameterValue(AudioHelm.Param parameter, System.Single newValue)
-    // Offset: 0x8F8F04
+    // Offset: 0xADD69C
     void SetParameterValue(::AudioHelm::Param parameter, float newValue);
     // public System.Single GetParameterValue(AudioHelm.Param parameter)
-    // Offset: 0x8F9928
+    // Offset: 0xADE0C0
     float GetParameterValue(::AudioHelm::Param parameter);
     // public System.Void .ctor()
-    // Offset: 0x8FA084
+    // Offset: 0xADE81C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

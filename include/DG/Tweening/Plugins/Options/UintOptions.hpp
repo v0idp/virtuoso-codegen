@@ -48,9 +48,9 @@ namespace DG::Tweening::Plugins::Options {
       return isNegativeChangeValue;
     }
     // Get instance field reference: public System.Boolean isNegativeChangeValue
-    bool& dyn_isNegativeChangeValue();
+    [[deprecated]] bool& dyn_isNegativeChangeValue();
     // public System.Void Reset()
-    // Offset: 0x1266874
+    // Offset: 0x185EC18
     void Reset();
   }; // DG.Tweening.Plugins.Options.UintOptions
   #pragma pack(pop)

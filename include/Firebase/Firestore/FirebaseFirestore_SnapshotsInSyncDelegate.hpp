@@ -35,20 +35,20 @@ namespace Firebase::Firestore {
   class FirebaseFirestore::SnapshotsInSyncDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0xC3838C
+    // Offset: 0xD5AC28
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseFirestore::SnapshotsInSyncDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirebaseFirestore::SnapshotsInSyncDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseFirestore::SnapshotsInSyncDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Int32 callbackId)
-    // Offset: 0xC426B8
+    // Offset: 0xD670F8
     void Invoke(int callbackId);
     // public System.IAsyncResult BeginInvoke(System.Int32 callbackId, System.AsyncCallback callback, System.Object object)
-    // Offset: 0xC428E4
+    // Offset: 0xD67324
     ::System::IAsyncResult* BeginInvoke(int callbackId, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0xC4296C
+    // Offset: 0xD673AC
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Firestore.FirebaseFirestore/Firebase.Firestore.SnapshotsInSyncDelegate
   #pragma pack(pop)

@@ -51,15 +51,7 @@ namespace System::Net {
     class Result;
     // Nested type: ::System::Net::WebCompletionSource::$WaitForCompletion$d__8
     struct $WaitForCompletion$d__8;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebCompletionSource/System.Net.Result> completion
     // Size: 0x8
     // Offset: 0x10
@@ -72,27 +64,27 @@ namespace System::Net {
       return completion;
     }
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebCompletionSource/System.Net.Result> completion
-    ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource::Result*>*& dyn_completion();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource::Result*>*& dyn_completion();
     // public System.Boolean get_IsCompleted()
-    // Offset: 0xAB5AB8
+    // Offset: 0xC40FA0
     bool get_IsCompleted();
     // public System.Boolean TrySetCompleted()
-    // Offset: 0xAB58B8
+    // Offset: 0xC40DA0
     bool TrySetCompleted();
     // public System.Boolean TrySetCanceled()
-    // Offset: 0xAB5944
+    // Offset: 0xC40E2C
     bool TrySetCanceled();
     // public System.Boolean TrySetException(System.Exception error)
-    // Offset: 0xAB5A10
+    // Offset: 0xC40EF8
     bool TrySetException(::System::Exception* error);
     // public System.Void ThrowOnError()
-    // Offset: 0xAB5B0C
+    // Offset: 0xC40FF4
     void ThrowOnError();
     // public System.Threading.Tasks.Task`1<System.Boolean> WaitForCompletion(System.Boolean throwOnError)
-    // Offset: 0xAB5BB0
+    // Offset: 0xC41098
     ::System::Threading::Tasks::Task_1<bool>* WaitForCompletion(bool throwOnError);
     // public System.Void .ctor()
-    // Offset: 0xAB583C
+    // Offset: 0xC40D24
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

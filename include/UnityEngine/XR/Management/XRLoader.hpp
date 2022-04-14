@@ -44,16 +44,16 @@ namespace UnityEngine::XR::Management {
   class XRLoader : public ::UnityEngine::ScriptableObject {
     public:
     // public System.Boolean Initialize()
-    // Offset: 0x12F3AE0
+    // Offset: 0x18FACE0
     bool Initialize();
     // public System.Boolean Start()
-    // Offset: 0x12F3AE8
+    // Offset: 0x18FACE8
     bool Start();
     // public System.Boolean Stop()
-    // Offset: 0x12F3AF0
+    // Offset: 0x18FACF0
     bool Stop();
     // public System.Boolean Deinitialize()
-    // Offset: 0x12F3AF8
+    // Offset: 0x18FACF8
     bool Deinitialize();
     // public T GetLoadedSubsystem()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -61,15 +61,15 @@ namespace UnityEngine::XR::Management {
     T GetLoadedSubsystem() {
       static_assert(std::is_convertible_v<std::remove_pointer_t<T>, ::UnityEngine::ISubsystem>);
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRLoader::GetLoadedSubsystem");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "GetLoadedSubsystem", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::UnityEngine::XR::Management::XRLoader*), -1));
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___generic__method);
     }
     // public System.Collections.Generic.List`1<UnityEngine.Rendering.GraphicsDeviceType> GetSupportedGraphicsDeviceTypes(System.Boolean buildingPlayer)
-    // Offset: 0x12F3B00
+    // Offset: 0x18FAD00
     ::System::Collections::Generic::List_1<::UnityEngine::Rendering::GraphicsDeviceType>* GetSupportedGraphicsDeviceTypes(bool buildingPlayer);
     // protected System.Void .ctor()
-    // Offset: 0x12F3B6C
+    // Offset: 0x18FAD6C
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

@@ -49,15 +49,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialEventAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.TutorialEventBehaviour settings
     // Size: 0x8
     // Offset: 0x18
@@ -80,13 +72,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.TutorialEventBehaviour settings
-    ::VROSC::TutorialEventBehaviour*& dyn_settings();
+    [[deprecated]] ::VROSC::TutorialEventBehaviour*& dyn_settings();
     // Get instance field reference: private VROSC.TutorialEvent _startEvent
-    ::VROSC::TutorialEvent& dyn__startEvent();
+    [[deprecated]] ::VROSC::TutorialEvent& dyn__startEvent();
     // Get instance field reference: private VROSC.TutorialEvent _endEvent
-    ::VROSC::TutorialEvent& dyn__endEvent();
+    [[deprecated]] ::VROSC::TutorialEvent& dyn__endEvent();
     // public System.Void .ctor()
-    // Offset: 0x1406F94
+    // Offset: 0xA2F070
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -98,7 +90,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TutorialEventAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0x1406E8C
+    // Offset: 0xA2EF68
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

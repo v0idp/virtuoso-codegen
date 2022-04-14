@@ -32,15 +32,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOVirtual::$$c__DisplayClass0_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single val
     // Size: 0x4
     // Offset: 0x10
@@ -57,20 +49,20 @@ namespace DG::Tweening {
     static_assert(sizeof(::DG::Tweening::TweenCallback_1<float>*) == 0x8);
     public:
     // Get instance field reference: public System.Single val
-    float& dyn_val();
+    [[deprecated]] float& dyn_val();
     // Get instance field reference: public DG.Tweening.TweenCallback`1<System.Single> onVirtualUpdate
-    ::DG::Tweening::TweenCallback_1<float>*& dyn_onVirtualUpdate();
+    [[deprecated]] ::DG::Tweening::TweenCallback_1<float>*& dyn_onVirtualUpdate();
     // System.Single <Float>b__0()
-    // Offset: 0x126B09C
+    // Offset: 0x1863440
     float $Float$b__0();
     // System.Void <Float>b__1(System.Single x)
-    // Offset: 0x126B0A4
+    // Offset: 0x1863448
     void $Float$b__1(float x);
     // System.Void <Float>b__2()
-    // Offset: 0x126B0AC
+    // Offset: 0x1863450
     void $Float$b__2();
     // public System.Void .ctor()
-    // Offset: 0x126B094
+    // Offset: 0x1863438
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

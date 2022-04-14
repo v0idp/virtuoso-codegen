@@ -58,15 +58,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OSCHandler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.Dictionary`2<System.String,ClientLog> _clients
     // Size: 0x8
     // Offset: 0x18
@@ -93,32 +85,32 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 _loglength
     static void _set__loglength(int value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,ClientLog> _clients
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ClientLog>*& dyn__clients();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ClientLog>*& dyn__clients();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,ServerLog> _servers
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ServerLog>*& dyn__servers();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ServerLog>*& dyn__servers();
     // static public OSCHandler get_Instance()
-    // Offset: 0xA16D30
+    // Offset: 0xC5BD94
     static ::GlobalNamespace::OSCHandler* get_Instance();
     // public System.Collections.Generic.Dictionary`2<System.String,ClientLog> get_Clients()
-    // Offset: 0xA16E94
+    // Offset: 0xC5BEF8
     ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ClientLog>* get_Clients();
     // public System.Collections.Generic.Dictionary`2<System.String,ServerLog> get_Servers()
-    // Offset: 0xA16E9C
+    // Offset: 0xC5BF00
     ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ServerLog>* get_Servers();
     // public System.Void Init()
-    // Offset: 0xA16E90
+    // Offset: 0xC5BEF4
     void Init();
     // private System.Void OnApplicationQuit()
-    // Offset: 0xA16EA4
+    // Offset: 0xC5BF08
     void OnApplicationQuit();
     // public System.Void CreateClient(System.String clientId, System.Net.IPAddress destination, System.Int32 port)
-    // Offset: 0xA171C0
+    // Offset: 0xC5C224
     void CreateClient(::StringW clientId, ::System::Net::IPAddress* destination, int port);
     // public System.Void CreateServer(System.String serverId, System.Int32 port)
-    // Offset: 0xA1793C
+    // Offset: 0xC5C9A0
     void CreateServer(::StringW serverId, int port);
     // private System.Void OnPacketReceived(UnityOSC.OSCServer server, UnityOSC.OSCPacket packet)
-    // Offset: 0xA17C70
+    // Offset: 0xC5CCD4
     void OnPacketReceived(::UnityOSC::OSCServer* server, ::UnityOSC::OSCPacket* packet);
     // public System.Void SendMessageToClient(System.String clientId, System.String address, T value)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -139,21 +131,21 @@ namespace GlobalNamespace {
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, clientId, address, values);
     }
     // public System.Void UpdateLogs()
-    // Offset: 0xA17C74
+    // Offset: 0xC5CCD8
     void UpdateLogs();
     // private System.String DataToString(System.Collections.Generic.List`1<System.Object> data)
-    // Offset: 0xA17834
+    // Offset: 0xC5C898
     ::StringW DataToString(::System::Collections::Generic::List_1<::Il2CppObject*>* data);
     // private System.String FormatMilliseconds(System.Int32 milliseconds)
-    // Offset: 0xA17794
+    // Offset: 0xC5C7F8
     ::StringW FormatMilliseconds(int milliseconds);
     // static private System.Void .cctor()
-    // Offset: 0xA16C74
+    // Offset: 0xC5BCD8
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();
     // private System.Void .ctor()
-    // Offset: 0xA16C78
+    // Offset: 0xC5BCDC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

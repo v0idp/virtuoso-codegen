@@ -87,27 +87,27 @@ namespace UnityEngine::Playables {
     // Set static field: static public readonly System.Double DefaultDuration
     static void _set_DefaultDuration(double value);
     // Get instance field reference: private System.String m_StreamName
-    ::StringW& dyn_m_StreamName();
+    [[deprecated]] ::StringW& dyn_m_StreamName();
     // Get instance field reference: private UnityEngine.Object m_SourceObject
-    ::UnityEngine::Object*& dyn_m_SourceObject();
+    [[deprecated]] ::UnityEngine::Object*& dyn_m_SourceObject();
     // Get instance field reference: private System.Type m_SourceBindingType
-    ::System::Type*& dyn_m_SourceBindingType();
+    [[deprecated]] ::System::Type*& dyn_m_SourceBindingType();
     // Get instance field reference: private UnityEngine.Playables.PlayableBinding/UnityEngine.Playables.CreateOutputMethod m_CreateOutputMethod
-    ::UnityEngine::Playables::PlayableBinding::CreateOutputMethod*& dyn_m_CreateOutputMethod();
+    [[deprecated]] ::UnityEngine::Playables::PlayableBinding::CreateOutputMethod*& dyn_m_CreateOutputMethod();
     // public UnityEngine.Object get_sourceObject()
-    // Offset: 0x9CDB4C
+    // Offset: 0xBC28F4
     ::UnityEngine::Object* get_sourceObject();
     // public System.Type get_outputTargetType()
-    // Offset: 0x9CDB54
+    // Offset: 0xBC28FC
     ::System::Type* get_outputTargetType();
     // static private System.Void .cctor()
-    // Offset: 0x9CDC60
+    // Offset: 0xBC2A08
     static void _cctor();
     // UnityEngine.Playables.PlayableOutput CreateOutput(UnityEngine.Playables.PlayableGraph graph)
-    // Offset: 0x9CDB5C
+    // Offset: 0xBC2904
     ::UnityEngine::Playables::PlayableOutput CreateOutput(::UnityEngine::Playables::PlayableGraph graph);
     // static UnityEngine.Playables.PlayableBinding CreateInternal(System.String name, UnityEngine.Object sourceObject, System.Type sourceType, UnityEngine.Playables.PlayableBinding/UnityEngine.Playables.CreateOutputMethod createFunction)
-    // Offset: 0x9CDC54
+    // Offset: 0xBC29FC
     static ::UnityEngine::Playables::PlayableBinding CreateInternal(::StringW name, ::UnityEngine::Object* sourceObject, ::System::Type* sourceType, ::UnityEngine::Playables::PlayableBinding::CreateOutputMethod* createFunction);
   }; // UnityEngine.Playables.PlayableBinding
   #pragma pack(pop)

@@ -36,16 +36,16 @@ namespace Firebase {
     // Set static field: static private Firebase.AppUtilPINVOKE/Firebase.SWIGStringHelper/Firebase.SWIGStringDelegate stringDelegate
     static void _set_stringDelegate(::Firebase::AppUtilPINVOKE::SWIGStringHelper::SWIGStringDelegate* value);
     // static private System.Void .cctor()
-    // Offset: 0x129DB30
+    // Offset: 0x188BA18
     static void _cctor();
     // static public System.Void SWIGRegisterStringCallback_AppUtil(Firebase.AppUtilPINVOKE/Firebase.SWIGStringHelper/Firebase.SWIGStringDelegate stringDelegate)
-    // Offset: 0x129DBD8
+    // Offset: 0x188BAC0
     static void SWIGRegisterStringCallback_AppUtil(::Firebase::AppUtilPINVOKE::SWIGStringHelper::SWIGStringDelegate* stringDelegate);
     // static private System.String CreateString(System.String cString)
-    // Offset: 0x129DB2C
+    // Offset: 0x188BA14
     static ::StringW CreateString(::StringW cString);
     // public System.Void .ctor()
-    // Offset: 0x1294C34
+    // Offset: 0x1883AFC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

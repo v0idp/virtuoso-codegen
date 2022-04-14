@@ -51,7 +51,7 @@ namespace VROSC {
     // Set static field: static public VROSC.SynthParameterController/VROSC.TargetParameter MidiCC
     static void _set_MidiCC(::VROSC::SynthParameterController::TargetParameter value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.SynthParameterController/VROSC.TargetParameter
   #pragma pack(pop)
   static check_size<sizeof(SynthParameterController::TargetParameter), 0 + sizeof(int)> __VROSC_SynthParameterController_TargetParameterSizeCheck;

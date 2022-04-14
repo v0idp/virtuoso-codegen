@@ -53,23 +53,23 @@ namespace Mono {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private readonly System.String str
-    ::StringW& dyn_str();
+    [[deprecated]] ::StringW& dyn_str();
     // Get instance field reference: private System.IntPtr marshaled_string
-    ::System::IntPtr& dyn_marshaled_string();
+    [[deprecated]] ::System::IntPtr& dyn_marshaled_string();
     // public System.IntPtr get_Value()
-    // Offset: 0xF45BA0
+    // Offset: 0x1172868
     ::System::IntPtr get_Value();
     // public System.Void .ctor(System.String str)
-    // Offset: 0xF45B54
+    // Offset: 0x117281C
     SafeStringMarshal(::StringW str);
     // static public System.IntPtr StringToUtf8(System.String str)
-    // Offset: 0xF45B4C
+    // Offset: 0x1172814
     static ::System::IntPtr StringToUtf8(::StringW str);
     // static public System.Void GFree(System.IntPtr ptr)
-    // Offset: 0xF45B50
+    // Offset: 0x1172818
     static void GFree(::System::IntPtr ptr);
     // public System.Void Dispose()
-    // Offset: 0xF45C04
+    // Offset: 0x11728CC
     void Dispose();
   }; // Mono.SafeStringMarshal
   #pragma pack(pop)

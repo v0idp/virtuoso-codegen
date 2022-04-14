@@ -48,15 +48,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::ConfirmationUIPopup::Data
     class Data;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _headerText
     // Size: 0x8
     // Offset: 0x18
@@ -103,42 +95,42 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _headerText
-    ::TMPro::TextMeshPro*& dyn__headerText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__headerText();
     // Get instance field reference: private TMPro.TextMeshPro _bodyText
-    ::TMPro::TextMeshPro*& dyn__bodyText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__bodyText();
     // Get instance field reference: private TMPro.TextMeshPro _errorText
-    ::TMPro::TextMeshPro*& dyn__errorText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__errorText();
     // Get instance field reference: private VROSC.UIButton _confirmButton
-    ::VROSC::UIButton*& dyn__confirmButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__confirmButton();
     // Get instance field reference: private VROSC.UIButton _cancelButton
-    ::VROSC::UIButton*& dyn__cancelButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__cancelButton();
     // Get instance field reference: private System.Action _onConfirmedCallback
-    ::System::Action*& dyn__onConfirmedCallback();
+    [[deprecated]] ::System::Action*& dyn__onConfirmedCallback();
     // Get instance field reference: private System.Action _onCanceledCallback
-    ::System::Action*& dyn__onCanceledCallback();
+    [[deprecated]] ::System::Action*& dyn__onCanceledCallback();
     // private System.Void Awake()
-    // Offset: 0x13374C8
+    // Offset: 0x94C770
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13375EC
+    // Offset: 0x94C894
     void OnDestroy();
     // public System.Void SetActive(System.Boolean isActive, VROSC.ConfirmationUIPopup/VROSC.Data data, System.Action confirmCallback, System.Action cancelCallback)
-    // Offset: 0x1337710
+    // Offset: 0x94C9B8
     void SetActive(bool isActive, ::VROSC::ConfirmationUIPopup::Data* data, ::System::Action* confirmCallback, ::System::Action* cancelCallback);
     // public System.Void ShowError(System.String errorMessage)
-    // Offset: 0x13378E0
+    // Offset: 0x94CB88
     void ShowError(::StringW errorMessage);
     // private System.Void EnableButtons(System.Boolean enable)
-    // Offset: 0x133785C
+    // Offset: 0x94CB04
     void EnableButtons(bool enable);
     // private System.Void ConfirmButtonPressed()
-    // Offset: 0x1337920
+    // Offset: 0x94CBC8
     void ConfirmButtonPressed();
     // private System.Void CancelButtonPressed()
-    // Offset: 0x133799C
+    // Offset: 0x94CC44
     void CancelButtonPressed();
     // public System.Void .ctor()
-    // Offset: 0x13379D0
+    // Offset: 0x94CC78
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

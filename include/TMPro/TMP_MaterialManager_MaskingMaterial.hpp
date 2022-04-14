@@ -30,15 +30,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_MaterialManager::MaskingMaterial : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Material baseMaterial
     // Size: 0x8
     // Offset: 0x10
@@ -65,15 +57,15 @@ namespace TMPro {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.Material baseMaterial
-    ::UnityEngine::Material*& dyn_baseMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_baseMaterial();
     // Get instance field reference: public UnityEngine.Material stencilMaterial
-    ::UnityEngine::Material*& dyn_stencilMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_stencilMaterial();
     // Get instance field reference: public System.Int32 count
-    int& dyn_count();
+    [[deprecated]] int& dyn_count();
     // Get instance field reference: public System.Int32 stencilID
-    int& dyn_stencilID();
+    [[deprecated]] int& dyn_stencilID();
     // public System.Void .ctor()
-    // Offset: 0x124715C
+    // Offset: 0x18211F8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

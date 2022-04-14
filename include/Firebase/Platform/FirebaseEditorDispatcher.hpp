@@ -54,28 +54,28 @@ namespace Firebase::Platform {
     // Set static field: static private System.Action <>f__mg$cache2
     static void _set_$$f__mg$cache2(::System::Action* value);
     // static private System.Type get_EditorApplicationType()
-    // Offset: 0x12C8D38
+    // Offset: 0x18C80C8
     static ::System::Type* get_EditorApplicationType();
     // static public System.Boolean get_EditorIsPlaying()
-    // Offset: 0x12C8DD8
+    // Offset: 0x18C8168
     static bool get_EditorIsPlaying();
     // static public System.Boolean get_EditorIsPlayingOrWillChangePlaymode()
-    // Offset: 0x12C8E98
+    // Offset: 0x18C8228
     static bool get_EditorIsPlayingOrWillChangePlaymode();
     // static public System.Void StartEditorUpdate()
-    // Offset: 0x12C8F58
+    // Offset: 0x18C82E8
     static void StartEditorUpdate();
     // static public System.Void StopEditorUpdate()
-    // Offset: 0x12C9250
+    // Offset: 0x18C85E0
     static void StopEditorUpdate();
     // static public System.Void Update()
-    // Offset: 0x12C934C
+    // Offset: 0x18C86DC
     static void Update();
     // static public System.Void ListenToPlayState(System.Boolean start)
-    // Offset: 0x12C95F4
+    // Offset: 0x18C8984
     static void ListenToPlayState(bool start);
     // static private System.Void PlayModeStateChanged()
-    // Offset: 0x12C9900
+    // Offset: 0x18C8C90
     static void PlayModeStateChanged();
     // static private System.Void PlayModeStateChangedWithArg(T t)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -87,7 +87,7 @@ namespace Firebase::Platform {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, t);
     }
     // static private System.Void AddRemoveCallbackToField(System.Reflection.FieldInfo eventField, System.Action callback, System.Object target, System.Boolean add, System.String errorMessage)
-    // Offset: 0x12C906C
+    // Offset: 0x18C83FC
     static void AddRemoveCallbackToField(::System::Reflection::FieldInfo* eventField, ::System::Action* callback, ::Il2CppObject* target, bool add, ::StringW errorMessage);
   }; // Firebase.Platform.FirebaseEditorDispatcher
   #pragma pack(pop)

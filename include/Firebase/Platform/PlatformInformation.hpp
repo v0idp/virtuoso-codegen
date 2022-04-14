@@ -35,7 +35,7 @@ namespace Firebase::Platform {
     static ::StringW _get_runtimeVersion();
     // Set static field: static private System.String runtimeVersion
     static void _set_runtimeVersion(::StringW value);
-    // [DebuggerBrowsableAttribute] Offset: 0x5DFFCC
+    // [DebuggerBrowsableAttribute] Offset: 0x6F7DEC
     // Get static field: static private System.Single <RealtimeSinceStartupSafe>k__BackingField
     static float _get_$RealtimeSinceStartupSafe$k__BackingField();
     // Set static field: static private System.Single <RealtimeSinceStartupSafe>k__BackingField
@@ -49,31 +49,31 @@ namespace Firebase::Platform {
     // Set static field: static private System.Func`1<System.String> <>f__am$cache1
     static void _set_$$f__am$cache1(::System::Func_1<::StringW>* value);
     // static System.Boolean get_IsAndroid()
-    // Offset: 0x12CB19C
+    // Offset: 0x18CA52C
     static bool get_IsAndroid();
     // static System.Boolean get_IsIOS()
-    // Offset: 0x12CB1BC
+    // Offset: 0x18CA54C
     static bool get_IsIOS();
     // static System.String get_DefaultConfigLocation()
-    // Offset: 0x12CB1DC
+    // Offset: 0x18CA56C
     static ::StringW get_DefaultConfigLocation();
     // static System.Single get_RealtimeSinceStartup()
-    // Offset: 0x12CB100
+    // Offset: 0x18CA490
     static float get_RealtimeSinceStartup();
     // static System.Void set_RealtimeSinceStartupSafe(System.Single value)
-    // Offset: 0x12CB2E4
+    // Offset: 0x18CA674
     static void set_RealtimeSinceStartupSafe(float value);
     // static System.String get_RuntimeName()
-    // Offset: 0x12CB33C
+    // Offset: 0x18CA6CC
     static ::StringW get_RuntimeName();
     // static System.String get_RuntimeVersion()
-    // Offset: 0x12CB380
+    // Offset: 0x18CA710
     static ::StringW get_RuntimeVersion();
     // static private System.String <get_DefaultConfigLocation>m__0()
-    // Offset: 0x12CB4AC
+    // Offset: 0x18CA83C
     static ::StringW $get_DefaultConfigLocation$m__0();
     // static private System.String <get_RuntimeVersion>m__1()
-    // Offset: 0x12CB4B4
+    // Offset: 0x18CA844
     static ::StringW $get_RuntimeVersion$m__1();
   }; // Firebase.Platform.PlatformInformation
   #pragma pack(pop)

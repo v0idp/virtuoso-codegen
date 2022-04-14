@@ -26,15 +26,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class OctaveData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 SelectedOctave
     // Size: 0x4
     // Offset: 0x10
@@ -55,13 +47,13 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 SelectedOctave
-    int& dyn_SelectedOctave();
+    [[deprecated]] int& dyn_SelectedOctave();
     // Get instance field reference: public System.Int32 MinOctave
-    int& dyn_MinOctave();
+    [[deprecated]] int& dyn_MinOctave();
     // Get instance field reference: public System.Int32 MaxOctave
-    int& dyn_MaxOctave();
+    [[deprecated]] int& dyn_MaxOctave();
     // public System.Void .ctor()
-    // Offset: 0x91AF90
+    // Offset: 0xC6624C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

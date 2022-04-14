@@ -27,15 +27,7 @@ namespace System::Runtime::Serialization {
   // [TokenAttribute] Offset: FFFFFFFF
   class LongList : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int64[] m_values
     // Size: 0x8
     // Offset: 0x10
@@ -62,43 +54,43 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int64[] m_values
-    ::ArrayW<int64_t>& dyn_m_values();
+    [[deprecated]] ::ArrayW<int64_t>& dyn_m_values();
     // Get instance field reference: private System.Int32 m_count
-    int& dyn_m_count();
+    [[deprecated]] int& dyn_m_count();
     // Get instance field reference: private System.Int32 m_totalItems
-    int& dyn_m_totalItems();
+    [[deprecated]] int& dyn_m_totalItems();
     // Get instance field reference: private System.Int32 m_currentItem
-    int& dyn_m_currentItem();
+    [[deprecated]] int& dyn_m_currentItem();
     // System.Int32 get_Count()
-    // Offset: 0xC5F034
+    // Offset: 0x107BB2C
     int get_Count();
     // System.Int64 get_Current()
-    // Offset: 0xC5F0B0
+    // Offset: 0x107BBA8
     int64_t get_Current();
     // System.Void .ctor(System.Int32 startingSize)
-    // Offset: 0xC5EEAC
+    // Offset: 0x107B9A4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LongList* New_ctor(int startingSize) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::LongList::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LongList*, creationType>(startingSize)));
     }
     // System.Void Add(System.Int64 value)
-    // Offset: 0xC5EF1C
+    // Offset: 0x107BA14
     void Add(int64_t value);
     // System.Void StartEnumeration()
-    // Offset: 0xC5F03C
+    // Offset: 0x107BB34
     void StartEnumeration();
     // System.Boolean MoveNext()
-    // Offset: 0xC5F048
+    // Offset: 0x107BB40
     bool MoveNext();
     // System.Boolean RemoveElement(System.Int64 value)
-    // Offset: 0xC5F0F0
+    // Offset: 0x107BBE8
     bool RemoveElement(int64_t value);
     // private System.Void EnlargeArray()
-    // Offset: 0xC5EFA8
+    // Offset: 0x107BAA0
     void EnlargeArray();
     // System.Void .ctor()
-    // Offset: 0xC5EEA4
+    // Offset: 0x107B99C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

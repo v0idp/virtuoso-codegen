@@ -39,15 +39,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class WaitForEmailVerificationState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AuthenticationManager _authManager
     // Size: 0x8
     // Offset: 0x10
@@ -72,35 +64,35 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.AuthenticationManager _authManager
-    ::VROSC::AuthenticationManager*& dyn__authManager();
+    [[deprecated]] ::VROSC::AuthenticationManager*& dyn__authManager();
     // Get instance field reference: private System.Single _reloadTimer
-    float& dyn__reloadTimer();
+    [[deprecated]] float& dyn__reloadTimer();
     // Get instance field reference: private System.Boolean _attemptedSendingVerificationEmail
-    bool& dyn__attemptedSendingVerificationEmail();
+    [[deprecated]] bool& dyn__attemptedSendingVerificationEmail();
     // public System.Void .ctor(VROSC.AuthenticationManager authManager)
-    // Offset: 0x1353428
+    // Offset: 0x94FC78
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WaitForEmailVerificationState* New_ctor(::VROSC::AuthenticationManager* authManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WaitForEmailVerificationState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WaitForEmailVerificationState*, creationType>(authManager)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x1353454
+    // Offset: 0x94FCA4
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x1353460
+    // Offset: 0x94FCB0
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x1353464
+    // Offset: 0x94FCB4
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x1353648
+    // Offset: 0x94FE98
     void UpdateData(::ArrayW<::Il2CppObject*> values);
     // private System.Void FirebaseSendVerificationEmailSuccess()
-    // Offset: 0x135364C
+    // Offset: 0x94FE9C
     void FirebaseSendVerificationEmailSuccess();
     // private System.Void FirebaseSendVerificationEmailFailure(VROSC.Error error)
-    // Offset: 0x13537C4
+    // Offset: 0x950014
     void FirebaseSendVerificationEmailFailure(::VROSC::Error error);
   }; // VROSC.WaitForEmailVerificationState
   #pragma pack(pop)

@@ -84,7 +84,7 @@ namespace VROSC {
     // Set static field: static public VROSC.TriggerButton ThumbStickDown
     static void _set_ThumbStickDown(::VROSC::TriggerButton value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.TriggerButton
   #pragma pack(pop)
   static check_size<sizeof(TriggerButton), 0 + sizeof(int)> __VROSC_TriggerButtonSizeCheck;

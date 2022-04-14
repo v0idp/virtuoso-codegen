@@ -25,15 +25,7 @@ namespace UnityEngine {
   // [TokenAttribute] Offset: FFFFFFFF
   class Transform::Enumerator : public ::Il2CppObject/*, public ::System::Collections::IEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform outer
     // Size: 0x8
     // Offset: 0x10
@@ -52,24 +44,24 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private UnityEngine.Transform outer
-    ::UnityEngine::Transform*& dyn_outer();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_outer();
     // Get instance field reference: private System.Int32 currentIndex
-    int& dyn_currentIndex();
+    [[deprecated]] int& dyn_currentIndex();
     // public System.Object get_Current()
-    // Offset: 0x1250A98
+    // Offset: 0x1844C6C
     ::Il2CppObject* get_Current();
     // System.Void .ctor(UnityEngine.Transform outer)
-    // Offset: 0x1250A64
+    // Offset: 0x1844C38
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Transform::Enumerator* New_ctor(::UnityEngine::Transform* outer) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Transform::Enumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Transform::Enumerator*, creationType>(outer)));
     }
     // public System.Boolean MoveNext()
-    // Offset: 0x1250ABC
+    // Offset: 0x1844C90
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0x1250B00
+    // Offset: 0x1844CD4
     void Reset();
   }; // UnityEngine.Transform/UnityEngine.Enumerator
   #pragma pack(pop)

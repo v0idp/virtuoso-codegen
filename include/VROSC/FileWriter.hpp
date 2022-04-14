@@ -58,40 +58,40 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class FileWriter : public ::Il2CppObject {
     public:
-    // Nested type: ::VROSC::FileWriter::$GetTextFile$d__15
-    struct $GetTextFile$d__15;
-    // Nested type: ::VROSC::FileWriter::$SavePatchToFile$d__16
-    struct $SavePatchToFile$d__16;
-    // Nested type: ::VROSC::FileWriter::$LoadPatchFile$d__17
-    struct $LoadPatchFile$d__17;
-    // Nested type: ::VROSC::FileWriter::$$c__DisplayClass18_0
-    class $$c__DisplayClass18_0;
-    // Nested type: ::VROSC::FileWriter::$SaveSampleToFile$d__18
-    struct $SaveSampleToFile$d__18;
-    // Nested type: ::VROSC::FileWriter::$LoadSampleFile$d__19
-    struct $LoadSampleFile$d__19;
+    // Nested type: ::VROSC::FileWriter::$GetTextFile$d__14
+    struct $GetTextFile$d__14;
+    // Nested type: ::VROSC::FileWriter::$SavePatchToFile$d__15
+    struct $SavePatchToFile$d__15;
+    // Nested type: ::VROSC::FileWriter::$LoadPatchFile$d__16
+    struct $LoadPatchFile$d__16;
+    // Nested type: ::VROSC::FileWriter::$$c__DisplayClass17_0
+    class $$c__DisplayClass17_0;
+    // Nested type: ::VROSC::FileWriter::$SaveSampleToFile$d__17
+    struct $SaveSampleToFile$d__17;
+    // Nested type: ::VROSC::FileWriter::$LoadSampleFile$d__18
+    struct $LoadSampleFile$d__18;
+    // Nested type: ::VROSC::FileWriter::$$c__DisplayClass19_0
+    class $$c__DisplayClass19_0;
+    // Nested type: ::VROSC::FileWriter::$ExportTapeRecording$d__19
+    struct $ExportTapeRecording$d__19;
     // Nested type: ::VROSC::FileWriter::$$c__DisplayClass20_0
     class $$c__DisplayClass20_0;
-    // Nested type: ::VROSC::FileWriter::$ExportTapeRecording$d__20
-    struct $ExportTapeRecording$d__20;
+    // Nested type: ::VROSC::FileWriter::$SaveAudioToFile$d__20
+    struct $SaveAudioToFile$d__20;
     // Nested type: ::VROSC::FileWriter::$$c__DisplayClass21_0
     class $$c__DisplayClass21_0;
-    // Nested type: ::VROSC::FileWriter::$SaveAudioToFile$d__21
-    struct $SaveAudioToFile$d__21;
+    // Nested type: ::VROSC::FileWriter::$LoadAudioFromFile$d__21
+    struct $LoadAudioFromFile$d__21;
     // Nested type: ::VROSC::FileWriter::$$c__DisplayClass22_0
     class $$c__DisplayClass22_0;
-    // Nested type: ::VROSC::FileWriter::$LoadAudioFromFile$d__22
-    struct $LoadAudioFromFile$d__22;
+    // Nested type: ::VROSC::FileWriter::$SavePreviewToFile$d__22
+    struct $SavePreviewToFile$d__22;
     // Nested type: ::VROSC::FileWriter::$$c__DisplayClass23_0
     class $$c__DisplayClass23_0;
-    // Nested type: ::VROSC::FileWriter::$SavePreviewToFile$d__23
-    struct $SavePreviewToFile$d__23;
-    // Nested type: ::VROSC::FileWriter::$$c__DisplayClass24_0
-    class $$c__DisplayClass24_0;
-    // Nested type: ::VROSC::FileWriter::$LoadPreviewFromFile$d__24
-    struct $LoadPreviewFromFile$d__24;
-    // Nested type: ::VROSC::FileWriter::$GetAudioClip$d__30
-    struct $GetAudioClip$d__30;
+    // Nested type: ::VROSC::FileWriter::$LoadPreviewFromFile$d__23
+    struct $LoadPreviewFromFile$d__23;
+    // Nested type: ::VROSC::FileWriter::$GetAudioClip$d__29
+    struct $GetAudioClip$d__29;
     // static field const value: static public System.String PreviewFilePrefix
     static constexpr const char* PreviewFilePrefix = "Preview_";
     // Get static field: static public System.String PreviewFilePrefix
@@ -134,12 +134,6 @@ namespace VROSC {
     static ::StringW _get_PatchesFileExtension();
     // Set static field: static public System.String PatchesFileExtension
     static void _set_PatchesFileExtension(::StringW value);
-    // static field const value: static public System.String PreviewFileExtension
-    static constexpr const char* PreviewFileExtension = "wav";
-    // Get static field: static public System.String PreviewFileExtension
-    static ::StringW _get_PreviewFileExtension();
-    // Set static field: static public System.String PreviewFileExtension
-    static void _set_PreviewFileExtension(::StringW value);
     // static field const value: static public System.String AudioDataFileExtension
     static constexpr const char* AudioDataFileExtension = "wav";
     // Get static field: static public System.String AudioDataFileExtension
@@ -169,88 +163,88 @@ namespace VROSC {
     // Set static field: static private UnityEngine.AudioClip _cachedClip
     static void _set__cachedClip(::UnityEngine::AudioClip* value);
     // static public System.Void RemoveAllPatchesFiles(System.String folderName, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13183B8
+    // Offset: 0x8F20A4
     static void RemoveAllPatchesFiles(::StringW folderName, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Void RemoveAllSamplesFiles(System.String folderName, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13185B0
+    // Offset: 0x8F229C
     static void RemoveAllSamplesFiles(::StringW folderName, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static private System.Threading.Tasks.Task GetTextFile(System.String filePath, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13187A8
+    // Offset: 0x8F2494
     static ::System::Threading::Tasks::Task* GetTextFile(::StringW filePath, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Threading.Tasks.Task SavePatchToFile(System.String folderName, System.String fileName, System.String text, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13188CC
+    // Offset: 0x8F25B8
     static ::System::Threading::Tasks::Task* SavePatchToFile(::StringW folderName, ::StringW fileName, ::StringW text, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Threading.Tasks.Task LoadPatchFile(System.String folderName, System.String fileName, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1318A04
+    // Offset: 0x8F26F0
     static ::System::Threading::Tasks::Task* LoadPatchFile(::StringW folderName, ::StringW fileName, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Threading.Tasks.Task SaveSampleToFile(System.String folderName, System.String fileName, UnityEngine.AudioClip audioClip, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1318B30
+    // Offset: 0x8F281C
     static ::System::Threading::Tasks::Task* SaveSampleToFile(::StringW folderName, ::StringW fileName, ::UnityEngine::AudioClip* audioClip, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Threading.Tasks.Task LoadSampleFile(System.String folderName, System.String fileName, System.Action`1<UnityEngine.AudioClip> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1318C68
+    // Offset: 0x8F2954
     static ::System::Threading::Tasks::Task* LoadSampleFile(::StringW folderName, ::StringW fileName, ::System::Action_1<::UnityEngine::AudioClip*>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Void ExportTapeRecording(System.String songName, System.Single[] samples, System.Int32 startIndex, System.Int32 endIndex, System.Int32 sampleRate, System.Int32 channels, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1318D94
+    // Offset: 0x8F2A80
     static void ExportTapeRecording(::StringW songName, ::ArrayW<float> samples, int startIndex, int endIndex, int sampleRate, int channels, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Threading.Tasks.Task SaveAudioToFile(System.String folderName, System.String fileName, System.Single[] samples, System.Int32 sampleRate, System.Int32 channels, System.Single normalizeMultiplier, System.Int32 startIndex, System.Int32 endIndex, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1318E98
+    // Offset: 0x8F2B84
     static ::System::Threading::Tasks::Task* SaveAudioToFile(::StringW folderName, ::StringW fileName, ::ArrayW<float> samples, int sampleRate, int channels, float normalizeMultiplier, int startIndex, int endIndex, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Threading.Tasks.Task LoadAudioFromFile(System.String folderName, System.String fileName, System.Action`2<System.Single[],System.Int32> onSuccess, System.Action`1<VROSC.Error> onFailure, System.Single[] loadIntoArray)
-    // Offset: 0x1319008
+    // Offset: 0x8F2CF4
     static ::System::Threading::Tasks::Task* LoadAudioFromFile(::StringW folderName, ::StringW fileName, ::System::Action_2<::ArrayW<float>, int>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure, ::ArrayW<float> loadIntoArray);
     // static public System.Threading.Tasks.Task SavePreviewToFile(System.String fileName, System.Single[] samples, System.Int32 sampleRate, System.Int32 channels, System.Single normalizeMultiplier, System.Int32 startIndex, System.Int32 endIndex, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1319140
+    // Offset: 0x8F2E2C
     static ::System::Threading::Tasks::Task* SavePreviewToFile(::StringW fileName, ::ArrayW<float> samples, int sampleRate, int channels, float normalizeMultiplier, int startIndex, int endIndex, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
-    // static public System.Threading.Tasks.Task LoadPreviewFromFile(System.String fileName, System.Boolean isTemp, System.Action`1<UnityEngine.AudioClip> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13192A8
-    static ::System::Threading::Tasks::Task* LoadPreviewFromFile(::StringW fileName, bool isTemp, ::System::Action_1<::UnityEngine::AudioClip*>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
+    // static public System.Threading.Tasks.Task LoadPreviewFromFile(System.String fileName, System.Boolean isTemp, System.Boolean isOgg, System.Action`1<UnityEngine.AudioClip> onSuccess, System.Action`1<VROSC.Error> onFailure)
+    // Offset: 0x8F2F94
+    static ::System::Threading::Tasks::Task* LoadPreviewFromFile(::StringW fileName, bool isTemp, bool isOgg, ::System::Action_1<::UnityEngine::AudioClip*>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Boolean DoesPreviewExist(System.String fileName, System.Boolean isTemp, System.Boolean isOgg)
-    // Offset: 0x13193DC
+    // Offset: 0x8F30DC
     static bool DoesPreviewExist(::StringW fileName, bool isTemp, bool isOgg);
     // static public System.Void DeleteSave(System.String filename, System.Action`1<System.String> onSuccess, System.Action`2<System.String,VROSC.Error> onFailure)
-    // Offset: 0x13194DC
+    // Offset: 0x8F31FC
     static void DeleteSave(::StringW filename, ::System::Action_1<::StringW>* onSuccess, ::System::Action_2<::StringW, ::VROSC::Error>* onFailure);
-    // static public System.Void DeletePreview(System.String filename, System.Boolean isTemp, System.Boolean isOgg, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1319714
-    static void DeletePreview(::StringW filename, bool isTemp, bool isOgg, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
+    // static public System.Void DeletePreview(System.String filename, System.Boolean isTemp, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
+    // Offset: 0x8F3434
+    static void DeletePreview(::StringW filename, bool isTemp, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static public System.Void MoveSessionToSavesFolder(System.String filename)
-    // Offset: 0x131985C
+    // Offset: 0x8F35CC
     static void MoveSessionToSavesFolder(::StringW filename);
     // static public System.Void MovePreviewToSavesFolder(System.String filename)
-    // Offset: 0x1319A7C
+    // Offset: 0x8F37EC
     static void MovePreviewToSavesFolder(::StringW filename);
     // static private System.Threading.Tasks.Task GetAudioClip(System.String filePath, System.Action`1<UnityEngine.AudioClip> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1319C0C
+    // Offset: 0x8F397C
     static ::System::Threading::Tasks::Task* GetAudioClip(::StringW filePath, ::System::Action_1<::UnityEngine::AudioClip*>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // static private System.String GetSaveFilePath(System.String filename, System.Boolean isTemp)
-    // Offset: 0x1319648
+    // Offset: 0x8F3368
     static ::StringW GetSaveFilePath(::StringW filename, bool isTemp);
     // static private System.String GetPreviewsFolderPath(System.Boolean isTemp)
-    // Offset: 0x1319D30
+    // Offset: 0x8F3AA0
     static ::StringW GetPreviewsFolderPath(bool isTemp);
     // static private System.String GetPreviewsFilePath(System.String filename, System.Boolean isTemp, System.Boolean useOgg)
-    // Offset: 0x13193FC
+    // Offset: 0x8F30FC
     static ::StringW GetPreviewsFilePath(::StringW filename, bool isTemp, bool useOgg);
     // static private System.String GetPatchesFolderPath(System.String folderName)
-    // Offset: 0x1318520
+    // Offset: 0x8F220C
     static ::StringW GetPatchesFolderPath(::StringW folderName);
     // static private System.String GetPatchesFilePath(System.String folderName, System.String filename)
-    // Offset: 0x1319DC4
+    // Offset: 0x8F3B34
     static ::StringW GetPatchesFilePath(::StringW folderName, ::StringW filename);
     // static private System.String GetSamplesFolderPath(System.String folderName)
-    // Offset: 0x1318718
+    // Offset: 0x8F2404
     static ::StringW GetSamplesFolderPath(::StringW folderName);
     // static private System.String GetSamplesFilePath(System.String folderName, System.String filename)
-    // Offset: 0x1319E8C
+    // Offset: 0x8F3BFC
     static ::StringW GetSamplesFilePath(::StringW folderName, ::StringW filename);
     // static private System.String GetAudioDataFolderPath(System.String folderName)
-    // Offset: 0x1319F54
+    // Offset: 0x8F3CC4
     static ::StringW GetAudioDataFolderPath(::StringW folderName);
     // static private System.String GetAudioDataFilePath(System.String folderName, System.String filename)
-    // Offset: 0x1319FE4
+    // Offset: 0x8F3D54
     static ::StringW GetAudioDataFilePath(::StringW folderName, ::StringW filename);
     // public System.Void .ctor()
-    // Offset: 0x131A0AC
+    // Offset: 0x8F3E1C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -412,13 +406,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
 // Writing MetadataGetter for method: VROSC::FileWriter::LoadPreviewFromFile
 // Il2CppName: LoadPreviewFromFile
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task* (*)(::StringW, bool, ::System::Action_1<::UnityEngine::AudioClip*>*, ::System::Action_1<::VROSC::Error>*)>(&VROSC::FileWriter::LoadPreviewFromFile)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task* (*)(::StringW, bool, bool, ::System::Action_1<::UnityEngine::AudioClip*>*, ::System::Action_1<::VROSC::Error>*)>(&VROSC::FileWriter::LoadPreviewFromFile)> {
   static const MethodInfo* get() {
     static auto* fileName = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     static auto* isTemp = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    static auto* isOgg = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     static auto* onSuccess = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System", "Action`1"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("UnityEngine", "AudioClip")})->byval_arg;
     static auto* onFailure = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System", "Action`1"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("VROSC", "Error")})->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::FileWriter*), "LoadPreviewFromFile", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{fileName, isTemp, onSuccess, onFailure});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::FileWriter*), "LoadPreviewFromFile", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{fileName, isTemp, isOgg, onSuccess, onFailure});
   }
 };
 // Writing MetadataGetter for method: VROSC::FileWriter::DoesPreviewExist
@@ -446,14 +441,13 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
 // Writing MetadataGetter for method: VROSC::FileWriter::DeletePreview
 // Il2CppName: DeletePreview
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::StringW, bool, bool, ::System::Action*, ::System::Action_1<::VROSC::Error>*)>(&VROSC::FileWriter::DeletePreview)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::StringW, bool, ::System::Action*, ::System::Action_1<::VROSC::Error>*)>(&VROSC::FileWriter::DeletePreview)> {
   static const MethodInfo* get() {
     static auto* filename = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     static auto* isTemp = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    static auto* isOgg = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     static auto* onSuccess = &::il2cpp_utils::GetClassFromName("System", "Action")->byval_arg;
     static auto* onFailure = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System", "Action`1"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("VROSC", "Error")})->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::FileWriter*), "DeletePreview", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{filename, isTemp, isOgg, onSuccess, onFailure});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::FileWriter*), "DeletePreview", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{filename, isTemp, onSuccess, onFailure});
   }
 };
 // Writing MetadataGetter for method: VROSC::FileWriter::MoveSessionToSavesFolder

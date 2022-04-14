@@ -34,15 +34,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Promise::$$c__DisplayClass44_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public RSG.Promise resultPromise
     // Size: 0x8
     // Offset: 0x10
@@ -57,20 +49,20 @@ namespace RSG {
     static_assert(sizeof(::System::Action_1<::System::Exception*>*) == 0x8);
     public:
     // Get instance field reference: public RSG.Promise resultPromise
-    ::RSG::Promise*& dyn_resultPromise();
+    [[deprecated]] ::RSG::Promise*& dyn_resultPromise();
     // Get instance field reference: public System.Action`1<System.Exception> onRejected
-    ::System::Action_1<::System::Exception*>*& dyn_onRejected();
+    [[deprecated]] ::System::Action_1<::System::Exception*>*& dyn_onRejected();
     // System.Void <Catch>b__0()
-    // Offset: 0x13433D8
+    // Offset: 0x8CE330
     void $Catch$b__0();
     // System.Void <Catch>b__1(System.Exception ex)
-    // Offset: 0x13433F4
+    // Offset: 0x8CE34C
     void $Catch$b__1(::System::Exception* ex);
     // System.Void <Catch>b__2(System.Single v)
-    // Offset: 0x1343508
+    // Offset: 0x8CE460
     void $Catch$b__2(float v);
     // public System.Void .ctor()
-    // Offset: 0x13433D0
+    // Offset: 0x8CE328
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

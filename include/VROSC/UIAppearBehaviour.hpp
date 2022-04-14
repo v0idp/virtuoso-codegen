@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIAppearBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AnimatedAppear _target
     // Size: 0x8
     // Offset: 0x10
@@ -73,14 +65,14 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: colorEffect and: Appear
     char __padding2[0x2] = {};
-    // [RangeAttribute] Offset: 0x673B98
+    // [RangeAttribute] Offset: 0x789F0C
     // public System.Single Appear
     // Size: 0x4
     // Offset: 0x1C
     float Appear;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x673BB0
+    // [RangeAttribute] Offset: 0x789F24
     // public System.Single Move
     // Size: 0x4
     // Offset: 0x20
@@ -101,24 +93,24 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private VROSC.AnimatedAppear _target
-    ::VROSC::AnimatedAppear*& dyn__target();
+    [[deprecated]] ::VROSC::AnimatedAppear*& dyn__target();
     // Get instance field reference: private System.Boolean _enter
-    bool& dyn__enter();
+    [[deprecated]] bool& dyn__enter();
     // Get instance field reference: private System.Boolean _colorEffect
-    bool& dyn__colorEffect();
+    [[deprecated]] bool& dyn__colorEffect();
     // Get instance field reference: public System.Single Appear
-    float& dyn_Appear();
+    [[deprecated]] float& dyn_Appear();
     // Get instance field reference: public System.Single Move
-    float& dyn_Move();
+    [[deprecated]] float& dyn_Move();
     // Get instance field reference: private UnityEngine.Vector3 _targetStart
-    ::UnityEngine::Vector3& dyn__targetStart();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__targetStart();
     // Get instance field reference: private UnityEngine.Vector3 _targetEnd
-    ::UnityEngine::Vector3& dyn__targetEnd();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__targetEnd();
     // public System.Void Setup(VROSC.AnimatedAppear target, System.Boolean enter)
-    // Offset: 0x140B258
+    // Offset: 0xA33790
     void Setup(::VROSC::AnimatedAppear* target, bool enter);
     // public System.Void .ctor()
-    // Offset: 0x140B668
+    // Offset: 0xA33BA0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -128,27 +120,27 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UIAppearBehaviour*, creationType>()));
     }
     // public override System.Void OnGraphStart(UnityEngine.Playables.Playable playable)
-    // Offset: 0x140B31C
+    // Offset: 0xA33854
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnGraphStart(UnityEngine.Playables.Playable playable)
     void OnGraphStart(::UnityEngine::Playables::Playable playable);
     // public override System.Void OnGraphStop(UnityEngine.Playables.Playable playable)
-    // Offset: 0x140B358
+    // Offset: 0xA33890
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnGraphStop(UnityEngine.Playables.Playable playable)
     void OnGraphStop(::UnityEngine::Playables::Playable playable);
     // public override System.Void OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0x140B394
+    // Offset: 0xA338CC
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPlay(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);
     // public override System.Void OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
-    // Offset: 0x140B3E8
+    // Offset: 0xA33920
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     void OnBehaviourPause(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0x140B564
+    // Offset: 0xA33A9C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

@@ -36,22 +36,14 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::GlobalColorController::BeatGradient
     class BeatGradient;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.GlobalColorController/VROSC.BeatGradient[] _beatGradients
     // Size: 0x8
     // Offset: 0x18
     ::ArrayW<::VROSC::GlobalColorController::BeatGradient*> beatGradients;
     // Field size check
     static_assert(sizeof(::ArrayW<::VROSC::GlobalColorController::BeatGradient*>) == 0x8);
-    // [RangeAttribute] Offset: 0x675DF4
+    // [RangeAttribute] Offset: 0x78C698
     // private System.Single _darkenOnMirror
     // Size: 0x4
     // Offset: 0x20
@@ -62,23 +54,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.GlobalColorController/VROSC.BeatGradient[] _beatGradients
-    ::ArrayW<::VROSC::GlobalColorController::BeatGradient*>& dyn__beatGradients();
+    [[deprecated]] ::ArrayW<::VROSC::GlobalColorController::BeatGradient*>& dyn__beatGradients();
     // Get instance field reference: private System.Single _darkenOnMirror
-    float& dyn__darkenOnMirror();
+    [[deprecated]] float& dyn__darkenOnMirror();
     // public VROSC.GlobalColorController/VROSC.BeatGradient[] get_BeatGradients()
-    // Offset: 0x89163C
+    // Offset: 0x19A3ABC
     ::ArrayW<::VROSC::GlobalColorController::BeatGradient*> get_BeatGradients();
     // private System.Void Start()
-    // Offset: 0x891644
+    // Offset: 0x19A3AC4
     void Start();
     // private System.Void SendBeat(System.Int32 beat)
-    // Offset: 0x891730
+    // Offset: 0x19A3BB0
     void SendBeat(int beat);
     // private System.Void OnDestroy()
-    // Offset: 0x891860
+    // Offset: 0x19A3CE0
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x89194C
+    // Offset: 0x19A3DCC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

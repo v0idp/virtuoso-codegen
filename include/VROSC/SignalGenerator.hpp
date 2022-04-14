@@ -79,20 +79,12 @@ namespace VROSC {
       // Set static field: static public VROSC.SignalGenerator/VROSC.Type Beat
       static void _set_Beat(::VROSC::SignalGenerator::Type value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.SignalGenerator/VROSC.Type
     #pragma pack(pop)
     static check_size<sizeof(SignalGenerator::Type), 0 + sizeof(int)> __VROSC_SignalGenerator_TypeSizeCheck;
     static_assert(sizeof(SignalGenerator::Type) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean _bypass
     // Size: 0x1
     // Offset: 0x18
@@ -123,18 +115,18 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean _bypass
-    bool& dyn__bypass();
+    [[deprecated]] bool& dyn__bypass();
     // Get instance field reference: protected VROSC.SignalNode[] _output
-    ::ArrayW<::VROSC::SignalNode*>& dyn__output();
+    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__output();
     // Get instance field reference: private VROSC.Signal _signal
-    ::VROSC::Signal*& dyn__signal();
+    [[deprecated]] ::VROSC::Signal*& dyn__signal();
     // Get instance field reference: private VROSC.SignalGenerator/VROSC.Type _type
-    ::VROSC::SignalGenerator::Type& dyn__type();
+    [[deprecated]] ::VROSC::SignalGenerator::Type& dyn__type();
     // protected System.Void Update()
-    // Offset: 0x13B5460
+    // Offset: 0x192832C
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x13B55C0
+    // Offset: 0x192848C
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

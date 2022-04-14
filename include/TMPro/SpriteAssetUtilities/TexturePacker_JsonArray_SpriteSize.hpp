@@ -43,11 +43,11 @@ namespace TMPro::SpriteAssetUtilities {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single w
-    float& dyn_w();
+    [[deprecated]] float& dyn_w();
     // Get instance field reference: public System.Single h
-    float& dyn_h();
+    [[deprecated]] float& dyn_h();
     // public override System.String ToString()
-    // Offset: 0x124838C
+    // Offset: 0x1822428
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class EffectsPanel : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ArpeggiatorWrapper _arpeggiatorWrapper
     // Size: 0x8
     // Offset: 0x18
@@ -87,32 +79,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ArpeggiatorWrapper _arpeggiatorWrapper
-    ::VROSC::ArpeggiatorWrapper*& dyn__arpeggiatorWrapper();
+    [[deprecated]] ::VROSC::ArpeggiatorWrapper*& dyn__arpeggiatorWrapper();
     // Get instance field reference: private VROSC.AnimatedPanel _animation
-    ::VROSC::AnimatedPanel*& dyn__animation();
+    [[deprecated]] ::VROSC::AnimatedPanel*& dyn__animation();
     // Get instance field reference: private VROSC.ParameterController[] _parameterControllers
-    ::ArrayW<::VROSC::ParameterController*>& dyn__parameterControllers();
+    [[deprecated]] ::ArrayW<::VROSC::ParameterController*>& dyn__parameterControllers();
     // Get instance field reference: private VROSC.ParametricPositionSignalGenerator[] _parametricPositionSignalGenerators
-    ::ArrayW<::VROSC::ParametricPositionSignalGenerator*>& dyn__parametricPositionSignalGenerators();
+    [[deprecated]] ::ArrayW<::VROSC::ParametricPositionSignalGenerator*>& dyn__parametricPositionSignalGenerators();
     // Get instance field reference: private VROSC.SynthController _instrument
-    ::VROSC::SynthController*& dyn__instrument();
+    [[deprecated]] ::VROSC::SynthController*& dyn__instrument();
     // public System.Void Setup(VROSC.SynthController synthController)
-    // Offset: 0x1311024
+    // Offset: 0x8EADA4
     void Setup(::VROSC::SynthController* synthController);
     // private System.Void ResetPanel()
-    // Offset: 0x13112E8
+    // Offset: 0x8EB068
     void ResetPanel();
     // private System.Void SynthesizerChanged(System.Boolean useExternal)
-    // Offset: 0x131136C
+    // Offset: 0x8EB0EC
     void SynthesizerChanged(bool useExternal);
     // public System.Void SetActive(System.Boolean shouldBeOpen, System.Boolean animate)
-    // Offset: 0x1311294
+    // Offset: 0x8EB014
     void SetActive(bool shouldBeOpen, bool animate);
     // protected System.Void OnDestroy()
-    // Offset: 0x1311394
+    // Offset: 0x8EB114
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x1311540
+    // Offset: 0x8EB2C0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

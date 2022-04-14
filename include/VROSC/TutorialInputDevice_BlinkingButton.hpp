@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialInputDevice::BlinkingButton : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ControllerComponent <Component>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -60,36 +52,36 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TutorialVisualBlinking*) == 0x8);
     public:
     // Get instance field reference: private VROSC.ControllerComponent <Component>k__BackingField
-    ::VROSC::ControllerComponent*& dyn_$Component$k__BackingField();
+    [[deprecated]] ::VROSC::ControllerComponent*& dyn_$Component$k__BackingField();
     // Get instance field reference: private VROSC.TutorialVisualBlinking <Blinking>k__BackingField
-    ::VROSC::TutorialVisualBlinking*& dyn_$Blinking$k__BackingField();
+    [[deprecated]] ::VROSC::TutorialVisualBlinking*& dyn_$Blinking$k__BackingField();
     // public VROSC.ControllerComponent get_Component()
-    // Offset: 0x140D8C0
+    // Offset: 0xE7F98C
     ::VROSC::ControllerComponent* get_Component();
     // private System.Void set_Component(VROSC.ControllerComponent value)
-    // Offset: 0x140D8B8
+    // Offset: 0xE7F984
     void set_Component(::VROSC::ControllerComponent* value);
     // public VROSC.TutorialVisualBlinking get_Blinking()
-    // Offset: 0x140D8D0
+    // Offset: 0xE7F99C
     ::VROSC::TutorialVisualBlinking* get_Blinking();
     // private System.Void set_Blinking(VROSC.TutorialVisualBlinking value)
-    // Offset: 0x140D8C8
+    // Offset: 0xE7F994
     void set_Blinking(::VROSC::TutorialVisualBlinking* value);
     // public System.Void .ctor(VROSC.ControllerComponent component)
-    // Offset: 0x140D8D8
+    // Offset: 0xE7F9A4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TutorialInputDevice::BlinkingButton* New_ctor(::VROSC::ControllerComponent* component) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialInputDevice::BlinkingButton::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TutorialInputDevice::BlinkingButton*, creationType>(component)));
     }
     // public System.Boolean Update()
-    // Offset: 0x140D9F8
+    // Offset: 0xE7FAC4
     bool Update();
     // private UnityEngine.Color GetCurrentColor()
-    // Offset: 0x140DA50
+    // Offset: 0xE7FB1C
     ::UnityEngine::Color GetCurrentColor();
     // private UnityEngine.Color GetNormalColor()
-    // Offset: 0x140DA70
+    // Offset: 0xE7FB3C
     ::UnityEngine::Color GetNormalColor();
   }; // VROSC.TutorialInputDevice/VROSC.BlinkingButton
   #pragma pack(pop)

@@ -67,18 +67,18 @@ namespace NatSuite::Examples {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public NatSuite.Examples.MiniCam <>4__this
-    ::NatSuite::Examples::MiniCam*& dyn_$$4__this();
+    [[deprecated]] ::NatSuite::Examples::MiniCam*& dyn_$$4__this();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter`1<UnityEngine.Texture2D> <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter_1<::UnityEngine::Texture2D*>& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter_1<::UnityEngine::Texture2D*>& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x13DC368
+    // Offset: 0x1964084
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x13DC76C
+    // Offset: 0x1964488
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // NatSuite.Examples.MiniCam/NatSuite.Examples.<SwitchCamera>d__9
   // WARNING Not writing size check since size may be invalid!

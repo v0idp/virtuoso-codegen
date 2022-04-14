@@ -43,15 +43,7 @@ namespace VROSC::Credits {
   // [TokenAttribute] Offset: FFFFFFFF
   class CreditsMultiObject : public ::VROSC::Credits::CreditsObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro[] _lines
     // Size: 0x8
     // Offset: 0x20
@@ -72,16 +64,16 @@ namespace VROSC::Credits {
     static_assert(sizeof(::ArrayW<::UnityEngine::Color>) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro[] _lines
-    ::ArrayW<::TMPro::TextMeshPro*>& dyn__lines();
+    [[deprecated]] ::ArrayW<::TMPro::TextMeshPro*>& dyn__lines();
     // Get instance field reference: private VROSC.AdjustableMesh[] _meshes
-    ::ArrayW<::VROSC::AdjustableMesh*>& dyn__meshes();
+    [[deprecated]] ::ArrayW<::VROSC::AdjustableMesh*>& dyn__meshes();
     // Get instance field reference: private UnityEngine.Color[] _linesColors
-    ::ArrayW<::UnityEngine::Color>& dyn__linesColors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__linesColors();
     // private System.Void Awake()
-    // Offset: 0x133BCC8
+    // Offset: 0x8DF8A0
     void Awake();
     // public System.Void .ctor()
-    // Offset: 0x133BFA0
+    // Offset: 0x8DFB70
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -95,7 +87,7 @@ namespace VROSC::Credits {
       return THROW_UNLESS((::il2cpp_utils::New<CreditsMultiObject*, creationType>()));
     }
     // protected override System.Void UpdateVisibility(System.Single visible)
-    // Offset: 0x133BE0C
+    // Offset: 0x8DF9E4
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::UpdateVisibility(System.Single visible)
     void UpdateVisibility(float visible);

@@ -44,11 +44,11 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 Point1
-    ::UnityEngine::Vector3& dyn_Point1();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_Point1();
     // Get instance field reference: public UnityEngine.Vector3 Point2
-    ::UnityEngine::Vector3& dyn_Point2();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_Point2();
     // public System.Void .ctor(UnityEngine.Vector3 p1, UnityEngine.Vector3 p2)
-    // Offset: 0x1247E70
+    // Offset: 0x1821F0C
     // ABORTED: conflicts with another method.  LineSegment(::UnityEngine::Vector3 p1, ::UnityEngine::Vector3 p2);
   }; // TMPro.TMP_TextUtilities/TMPro.LineSegment
   #pragma pack(pop)

@@ -48,10 +48,10 @@ namespace VROSC {
     // Set static field: static public System.Action`2<VROSC.InputDevice,System.Boolean> OnGrab
     static void _set_OnGrab(::System::Action_2<::VROSC::InputDevice*, bool>* value);
     // public System.Void Grab(VROSC.GrabData grabData, System.Boolean grabbing)
-    // Offset: 0x893680
+    // Offset: 0x19A5B68
     void Grab(::VROSC::GrabData* grabData, bool grabbing);
     // protected System.Void .ctor()
-    // Offset: 0x89374C
+    // Offset: 0x19A5C34
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

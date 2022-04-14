@@ -97,23 +97,23 @@ namespace UnityEngine::Experimental::GlobalIllumination {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 instanceID
-    int& dyn_instanceID();
+    [[deprecated]] int& dyn_instanceID();
     // Get instance field reference: public System.Boolean shadow
-    bool& dyn_shadow();
+    [[deprecated]] bool& dyn_shadow();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LightMode mode
-    ::UnityEngine::Experimental::GlobalIllumination::LightMode& dyn_mode();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LightMode& dyn_mode();
     // Get instance field reference: public UnityEngine.Vector3 position
-    ::UnityEngine::Vector3& dyn_position();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LinearColor color
-    ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_color();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_color();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LinearColor indirectColor
-    ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_indirectColor();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_indirectColor();
     // Get instance field reference: public System.Single range
-    float& dyn_range();
+    [[deprecated]] float& dyn_range();
     // Get instance field reference: public System.Single sphereRadius
-    float& dyn_sphereRadius();
+    [[deprecated]] float& dyn_sphereRadius();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.FalloffType falloff
-    ::UnityEngine::Experimental::GlobalIllumination::FalloffType& dyn_falloff();
+    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::FalloffType& dyn_falloff();
   }; // UnityEngine.Experimental.GlobalIllumination.PointLight
   #pragma pack(pop)
   static check_size<sizeof(PointLight), 60 + sizeof(::UnityEngine::Experimental::GlobalIllumination::FalloffType)> __UnityEngine_Experimental_GlobalIllumination_PointLightSizeCheck;

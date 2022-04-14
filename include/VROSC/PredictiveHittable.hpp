@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PredictiveHittable : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color <Color>k__BackingField
     // Size: 0x10
     // Offset: 0x18
@@ -91,49 +83,49 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // Get instance field reference: private System.Boolean <HasColor>k__BackingField
-    bool& dyn_$HasColor$k__BackingField();
+    [[deprecated]] bool& dyn_$HasColor$k__BackingField();
     // Get instance field reference: private VROSC.SignalNode[] _outputNodes
-    ::ArrayW<::VROSC::SignalNode*>& dyn__outputNodes();
+    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__outputNodes();
     // Get instance field reference: private System.Boolean _cullWeakHits
-    bool& dyn__cullWeakHits();
+    [[deprecated]] bool& dyn__cullWeakHits();
     // Get instance field reference: private System.Boolean _preferMallet
-    bool& dyn__preferMallet();
+    [[deprecated]] bool& dyn__preferMallet();
     // Get instance field reference: private System.Boolean _hitDimsLaser
-    bool& dyn__hitDimsLaser();
+    [[deprecated]] bool& dyn__hitDimsLaser();
     // public UnityEngine.Color get_Color()
-    // Offset: 0x8FE428
+    // Offset: 0xAE2D18
     ::UnityEngine::Color get_Color();
     // private System.Void set_Color(UnityEngine.Color value)
-    // Offset: 0x8FE41C
+    // Offset: 0xAE2D0C
     void set_Color(::UnityEngine::Color value);
     // public System.Boolean get_HasColor()
-    // Offset: 0x8FE440
+    // Offset: 0xAE2D30
     bool get_HasColor();
     // private System.Void set_HasColor(System.Boolean value)
-    // Offset: 0x8FE434
+    // Offset: 0xAE2D24
     void set_HasColor(bool value);
     // public System.Boolean get_CullWeakHits()
-    // Offset: 0x8FE448
+    // Offset: 0xAE2D38
     bool get_CullWeakHits();
     // public System.Boolean get_PreferMallet()
-    // Offset: 0x8FE450
+    // Offset: 0xAE2D40
     bool get_PreferMallet();
     // public System.Boolean get_HitDimsLaser()
-    // Offset: 0x8FE458
+    // Offset: 0xAE2D48
     bool get_HitDimsLaser();
     // protected System.Void Start()
-    // Offset: 0x8FE460
+    // Offset: 0xAE2D50
     void Start();
     // public System.Void SendScheduledHit(VROSC.Signal signal)
-    // Offset: 0x8FE488
+    // Offset: 0xAE2D78
     void SendScheduledHit(::VROSC::Signal* signal);
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x8FE57C
+    // Offset: 0xAE2E6C
     void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x8FE590
+    // Offset: 0xAE2E80
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

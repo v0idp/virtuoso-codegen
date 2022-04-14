@@ -42,15 +42,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class GazeTarget : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public ovrAvatarGazeTargetType Type
     // Size: 0x4
     // Offset: 0x18
@@ -65,29 +57,29 @@ namespace GlobalNamespace {
     // Set static field: static private ovrAvatarGazeTargets RuntimeTargetList
     static void _set_RuntimeTargetList(::GlobalNamespace::ovrAvatarGazeTargets value);
     // Get instance field reference: public ovrAvatarGazeTargetType Type
-    ::GlobalNamespace::ovrAvatarGazeTargetType& dyn_Type();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarGazeTargetType& dyn_Type();
     // private System.Void Start()
-    // Offset: 0x8907F8
+    // Offset: 0x19A2C78
     void Start();
     // private System.Void Update()
-    // Offset: 0x89096C
+    // Offset: 0x19A2DEC
     void Update();
     // private System.Void OnDestroy()
-    // Offset: 0x8909D0
+    // Offset: 0x19A2E50
     void OnDestroy();
     // private System.Void UpdateGazeTarget()
-    // Offset: 0x890834
+    // Offset: 0x19A2CB4
     void UpdateGazeTarget();
     // private ovrAvatarGazeTarget CreateOvrGazeTarget(System.UInt32 targetId, UnityEngine.Vector3 targetPosition, ovrAvatarGazeTargetType targetType)
-    // Offset: 0x890A94
+    // Offset: 0x19A2F14
     ::GlobalNamespace::ovrAvatarGazeTarget CreateOvrGazeTarget(uint targetId, ::UnityEngine::Vector3 targetPosition, ::GlobalNamespace::ovrAvatarGazeTargetType targetType);
     // static private System.Void .cctor()
-    // Offset: 0x890780
+    // Offset: 0x19A2C00
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();
     // public System.Void .ctor()
-    // Offset: 0x890AAC
+    // Offset: 0x19A2F2C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

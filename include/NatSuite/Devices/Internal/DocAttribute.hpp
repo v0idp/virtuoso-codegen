@@ -30,14 +30,14 @@ namespace NatSuite::Devices::Internal {
   class DocAttribute : public ::System::Attribute {
     public:
     // public System.Void .ctor(System.String descriptionKey)
-    // Offset: 0x130C100
+    // Offset: 0x8E52C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DocAttribute* New_ctor(::StringW descriptionKey) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::DocAttribute::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DocAttribute*, creationType>(descriptionKey)));
     }
     // public System.Void .ctor(System.String summaryKey, System.String descriptionKey)
-    // Offset: 0x130C108
+    // Offset: 0x8E52D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DocAttribute* New_ctor(::StringW summaryKey, ::StringW descriptionKey) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::DocAttribute::.ctor");

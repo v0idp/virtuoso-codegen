@@ -24,15 +24,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SynthsDataController::$$c__DisplayClass6_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 patchCountToLoad
     // Size: 0x4
     // Offset: 0x10
@@ -49,11 +41,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SynthsDataController::$$c__DisplayClass6_0*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 patchCountToLoad
-    int& dyn_patchCountToLoad();
+    [[deprecated]] int& dyn_patchCountToLoad();
     // Get instance field reference: public VROSC.SynthsDataController/VROSC.<>c__DisplayClass6_0 CS$<>8__locals1
-    ::VROSC::SynthsDataController::$$c__DisplayClass6_0*& dyn_CS$$$8__locals1();
+    [[deprecated]] ::VROSC::SynthsDataController::$$c__DisplayClass6_0*& dyn_CS$$$8__locals1();
     // public System.Void .ctor()
-    // Offset: 0x134EE10
+    // Offset: 0x8DB028
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -43,15 +43,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AnimatedAppearSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _play
     // Size: 0x1
     // Offset: 0x10
@@ -82,42 +74,42 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Playables::PlayableDirector*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _play
-    bool& dyn__play();
+    [[deprecated]] bool& dyn__play();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _timeline
-    ::UnityEngine::Playables::PlayableAsset*& dyn__timeline();
+    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__timeline();
     // Get instance field reference: private VROSC.AnimatedAppear/VROSC.Mode _mode
-    ::VROSC::AnimatedAppear::Mode& dyn__mode();
+    [[deprecated]] ::VROSC::AnimatedAppear::Mode& dyn__mode();
     // Get instance field reference: private UnityEngine.Playables.PlayableDirector _director
-    ::UnityEngine::Playables::PlayableDirector*& dyn__director();
+    [[deprecated]] ::UnityEngine::Playables::PlayableDirector*& dyn__director();
     // public UnityEngine.Playables.PlayableAsset get_Timeline()
-    // Offset: 0x136C0DC
+    // Offset: 0x96AA1C
     ::UnityEngine::Playables::PlayableAsset* get_Timeline();
     // public VROSC.AnimatedAppear/VROSC.Mode get_Mode()
-    // Offset: 0x136C0E4
+    // Offset: 0x96AA24
     ::VROSC::AnimatedAppear::Mode get_Mode();
     // public System.Boolean get_Play()
-    // Offset: 0x136C0EC
+    // Offset: 0x96AA2C
     bool get_Play();
     // public System.Boolean get_IsPlaying()
-    // Offset: 0x136A91C
+    // Offset: 0x96925C
     bool get_IsPlaying();
     // public System.Void Stop()
-    // Offset: 0x136B270
+    // Offset: 0x969BB0
     void Stop();
     // public System.Void SetTimelineActive(UnityEngine.GameObject target, System.Boolean play)
-    // Offset: 0x136B12C
+    // Offset: 0x969A6C
     void SetTimelineActive(::UnityEngine::GameObject* target, bool play);
     // private System.Void GetOrAddDirector(UnityEngine.GameObject target)
-    // Offset: 0x136C0F4
+    // Offset: 0x96AA34
     void GetOrAddDirector(::UnityEngine::GameObject* target);
     // System.Void Unload(UnityEngine.GameObject target)
-    // Offset: 0x136B6A0
+    // Offset: 0x969FE0
     void Unload(::UnityEngine::GameObject* target);
     // UnityEngine.Vector3 GetDir()
-    // Offset: 0x136B454
+    // Offset: 0x969D94
     ::UnityEngine::Vector3 GetDir();
     // public System.Void .ctor()
-    // Offset: 0x136C1C0
+    // Offset: 0x96AB00
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

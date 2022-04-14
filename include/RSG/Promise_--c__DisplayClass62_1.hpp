@@ -37,15 +37,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Promise::$$c__DisplayClass62_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 itemSequence
     // Size: 0x4
     // Offset: 0x10
@@ -68,19 +60,19 @@ namespace RSG {
     static_assert(sizeof(::RSG::Promise::$$c__DisplayClass62_0*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 itemSequence
-    int& dyn_itemSequence();
+    [[deprecated]] int& dyn_itemSequence();
     // Get instance field reference: public System.Func`1<RSG.IPromise> fn
-    ::System::Func_1<::RSG::IPromise*>*& dyn_fn();
+    [[deprecated]] ::System::Func_1<::RSG::IPromise*>*& dyn_fn();
     // Get instance field reference: public RSG.Promise/RSG.<>c__DisplayClass62_0 CS$<>8__locals1
-    ::RSG::Promise::$$c__DisplayClass62_0*& dyn_CS$$$8__locals1();
+    [[deprecated]] ::RSG::Promise::$$c__DisplayClass62_0*& dyn_CS$$$8__locals1();
     // RSG.IPromise <Sequence>b__2()
-    // Offset: 0x134418C
+    // Offset: 0x8CF0E4
     ::RSG::IPromise* $Sequence$b__2();
     // System.Void <Sequence>b__3(System.Single v)
-    // Offset: 0x1344214
+    // Offset: 0x8CF16C
     void $Sequence$b__3(float v);
     // public System.Void .ctor()
-    // Offset: 0x1344168
+    // Offset: 0x8CF0C0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

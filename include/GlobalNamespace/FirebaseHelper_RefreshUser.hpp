@@ -24,15 +24,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirebaseHelper::RefreshUser : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String refresh_token
     // Size: 0x8
     // Offset: 0x10
@@ -47,11 +39,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String refresh_token
-    ::StringW& dyn_refresh_token();
+    [[deprecated]] ::StringW& dyn_refresh_token();
     // Get instance field reference: public System.String grant_type
-    ::StringW& dyn_grant_type();
+    [[deprecated]] ::StringW& dyn_grant_type();
     // public System.Void .ctor()
-    // Offset: 0x13C9670
+    // Offset: 0x1952878
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

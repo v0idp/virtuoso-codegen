@@ -107,20 +107,12 @@ namespace System::IO::Compression {
       // Set static field: static public System.IO.Compression.DeflaterManaged/System.IO.Compression.DeflaterState HandlingSmallData
       static void _set_HandlingSmallData(::System::IO::Compression::DeflaterManaged::DeflaterState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // System.IO.Compression.DeflaterManaged/System.IO.Compression.DeflaterState
     #pragma pack(pop)
     static check_size<sizeof(DeflaterManaged::DeflaterState), 0 + sizeof(int)> __System_IO_Compression_DeflaterManaged_DeflaterStateSizeCheck;
     static_assert(sizeof(DeflaterManaged::DeflaterState) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.IO.Compression.FastEncoder _deflateEncoder
     // Size: 0x8
     // Offset: 0x10
@@ -161,40 +153,40 @@ namespace System::IO::Compression {
     static_assert(sizeof(::System::IO::Compression::DeflateInput*) == 0x8);
     public:
     // Get instance field reference: private readonly System.IO.Compression.FastEncoder _deflateEncoder
-    ::System::IO::Compression::FastEncoder*& dyn__deflateEncoder();
+    [[deprecated]] ::System::IO::Compression::FastEncoder*& dyn__deflateEncoder();
     // Get instance field reference: private readonly System.IO.Compression.CopyEncoder _copyEncoder
-    ::System::IO::Compression::CopyEncoder*& dyn__copyEncoder();
+    [[deprecated]] ::System::IO::Compression::CopyEncoder*& dyn__copyEncoder();
     // Get instance field reference: private readonly System.IO.Compression.DeflateInput _input
-    ::System::IO::Compression::DeflateInput*& dyn__input();
+    [[deprecated]] ::System::IO::Compression::DeflateInput*& dyn__input();
     // Get instance field reference: private readonly System.IO.Compression.OutputBuffer _output
-    ::System::IO::Compression::OutputBuffer*& dyn__output();
+    [[deprecated]] ::System::IO::Compression::OutputBuffer*& dyn__output();
     // Get instance field reference: private System.IO.Compression.DeflaterManaged/System.IO.Compression.DeflaterState _processingState
-    ::System::IO::Compression::DeflaterManaged::DeflaterState& dyn__processingState();
+    [[deprecated]] ::System::IO::Compression::DeflaterManaged::DeflaterState& dyn__processingState();
     // Get instance field reference: private System.IO.Compression.DeflateInput _inputFromHistory
-    ::System::IO::Compression::DeflateInput*& dyn__inputFromHistory();
+    [[deprecated]] ::System::IO::Compression::DeflateInput*& dyn__inputFromHistory();
     // System.Boolean NeedsInput()
-    // Offset: 0x111D118
+    // Offset: 0x1694984
     bool NeedsInput();
     // System.Void SetInput(System.Byte[] inputBuffer, System.Int32 startIndex, System.Int32 count)
-    // Offset: 0x111CE40
+    // Offset: 0x16946AC
     void SetInput(::ArrayW<uint8_t> inputBuffer, int startIndex, int count);
     // System.Int32 GetDeflateOutput(System.Byte[] outputBuffer)
-    // Offset: 0x111CEAC
+    // Offset: 0x1694718
     int GetDeflateOutput(::ArrayW<uint8_t> outputBuffer);
     // System.Boolean Finish(System.Byte[] outputBuffer, out System.Int32 bytesRead)
-    // Offset: 0x111D2E8
+    // Offset: 0x1694B54
     bool Finish(::ArrayW<uint8_t> outputBuffer, ByRef<int> bytesRead);
     // private System.Boolean UseCompressed(System.Double ratio)
-    // Offset: 0x111D96C
+    // Offset: 0x16951D8
     bool UseCompressed(double ratio);
     // private System.Void FlushInputWindows()
-    // Offset: 0x111D98C
+    // Offset: 0x16951F8
     void FlushInputWindows();
     // private System.Void WriteFinal()
-    // Offset: 0x111DA34
+    // Offset: 0x16952A0
     void WriteFinal();
     // public System.Void Dispose()
-    // Offset: 0x111D4D4
+    // Offset: 0x1694D40
     void Dispose();
   }; // System.IO.Compression.DeflaterManaged
   #pragma pack(pop)

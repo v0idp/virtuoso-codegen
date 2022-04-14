@@ -180,118 +180,118 @@ namespace DG::Tweening::Core::Easing {
     // Set static field: static public DG.Tweening.EaseFunction <>9__4_35
     static void _set_$$9__4_35(::DG::Tweening::EaseFunction* value);
     // static private System.Void .cctor()
-    // Offset: 0x126B180
+    // Offset: 0x1863524
     static void _cctor();
     // System.Single <ToEaseFunction>b__4_0(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B1E8
+    // Offset: 0x186358C
     float $ToEaseFunction$b__4_0(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_1(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B1F0
+    // Offset: 0x1863594
     float $ToEaseFunction$b__4_1(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_2(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B27C
+    // Offset: 0x1863620
     float $ToEaseFunction$b__4_2(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_3(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B300
+    // Offset: 0x18636A4
     float $ToEaseFunction$b__4_3(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_4(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B394
+    // Offset: 0x1863738
     float $ToEaseFunction$b__4_4(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_5(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B3A0
+    // Offset: 0x1863744
     float $ToEaseFunction$b__4_5(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_6(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B3B4
+    // Offset: 0x1863758
     float $ToEaseFunction$b__4_6(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_7(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B3F8
+    // Offset: 0x186379C
     float $ToEaseFunction$b__4_7(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_8(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B408
+    // Offset: 0x18637AC
     float $ToEaseFunction$b__4_8(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_9(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B428
+    // Offset: 0x18637CC
     float $ToEaseFunction$b__4_9(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_10(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B470
+    // Offset: 0x1863814
     float $ToEaseFunction$b__4_10(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_11(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B484
+    // Offset: 0x1863828
     float $ToEaseFunction$b__4_11(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_12(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B4A8
+    // Offset: 0x186384C
     float $ToEaseFunction$b__4_12(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_13(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B4F4
+    // Offset: 0x1863898
     float $ToEaseFunction$b__4_13(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_14(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B50C
+    // Offset: 0x18638B0
     float $ToEaseFunction$b__4_14(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_15(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B534
+    // Offset: 0x18638D8
     float $ToEaseFunction$b__4_15(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_16(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B58C
+    // Offset: 0x1863930
     float $ToEaseFunction$b__4_16(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_17(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B62C
+    // Offset: 0x18639D0
     float $ToEaseFunction$b__4_17(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_18(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B6CC
+    // Offset: 0x1863A70
     float $ToEaseFunction$b__4_18(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_19(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B7E0
+    // Offset: 0x1863B84
     float $ToEaseFunction$b__4_19(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_20(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B878
+    // Offset: 0x1863C1C
     float $ToEaseFunction$b__4_20(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_21(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B918
+    // Offset: 0x1863CBC
     float $ToEaseFunction$b__4_21(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_22(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B9F8
+    // Offset: 0x1863D9C
     float $ToEaseFunction$b__4_22(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_23(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BB64
+    // Offset: 0x1863F08
     float $ToEaseFunction$b__4_23(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_24(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BCCC
+    // Offset: 0x1864070
     float $ToEaseFunction$b__4_24(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_25(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BEC0
+    // Offset: 0x1864264
     float $ToEaseFunction$b__4_25(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_26(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BEE0
+    // Offset: 0x1864284
     float $ToEaseFunction$b__4_26(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_27(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BF0C
+    // Offset: 0x18642B0
     float $ToEaseFunction$b__4_27(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_28(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BF78
+    // Offset: 0x186431C
     float $ToEaseFunction$b__4_28(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_29(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BF80
+    // Offset: 0x1864324
     float $ToEaseFunction$b__4_29(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_30(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BF88
+    // Offset: 0x186432C
     float $ToEaseFunction$b__4_30(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_31(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BF90
+    // Offset: 0x1864334
     float $ToEaseFunction$b__4_31(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_32(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BF98
+    // Offset: 0x186433C
     float $ToEaseFunction$b__4_32(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_33(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BFA0
+    // Offset: 0x1864344
     float $ToEaseFunction$b__4_33(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_34(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BFA8
+    // Offset: 0x186434C
     float $ToEaseFunction$b__4_34(float time, float duration, float overshootOrAmplitude, float period);
     // System.Single <ToEaseFunction>b__4_35(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126BFB0
+    // Offset: 0x1864354
     float $ToEaseFunction$b__4_35(float time, float duration, float overshootOrAmplitude, float period);
     // public System.Void .ctor()
-    // Offset: 0x126B1E0
+    // Offset: 0x1863584
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

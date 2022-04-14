@@ -51,22 +51,22 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Color32 color
-    ::UnityEngine::Color32& dyn_color();
+    [[deprecated]] ::UnityEngine::Color32& dyn_color();
     // Get instance field reference: public TMPro.TMP_Offset padding
-    ::TMPro::TMP_Offset& dyn_padding();
+    [[deprecated]] ::TMPro::TMP_Offset& dyn_padding();
     // public System.Void .ctor(UnityEngine.Color32 color, TMPro.TMP_Offset padding)
-    // Offset: 0xA47C48
+    // Offset: 0xC29858
     // ABORTED: conflicts with another method.  HighlightState(::UnityEngine::Color32 color, ::TMPro::TMP_Offset padding);
     // public System.Boolean Equals(TMPro.HighlightState other)
-    // Offset: 0xA47E9C
+    // Offset: 0xC29AAC
     bool Equals(::TMPro::HighlightState other);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xA47D98
+    // Offset: 0xC299A8
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xA47E10
+    // Offset: 0xC29A20
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
@@ -75,10 +75,10 @@ namespace TMPro {
   static check_size<sizeof(HighlightState), 4 + sizeof(::TMPro::TMP_Offset)> __TMPro_HighlightStateSizeCheck;
   static_assert(sizeof(HighlightState) == 0x14);
   // static public System.Boolean op_Equality(TMPro.HighlightState lhs, TMPro.HighlightState rhs)
-  // Offset: 0xA47C58
+  // Offset: 0xC29868
   bool operator ==(const ::TMPro::HighlightState& lhs, const ::TMPro::HighlightState& rhs);
   // static public System.Boolean op_Inequality(TMPro.HighlightState lhs, TMPro.HighlightState rhs)
-  // Offset: 0xA47D4C
+  // Offset: 0xC2995C
   bool operator !=(const ::TMPro::HighlightState& lhs, const ::TMPro::HighlightState& rhs);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"

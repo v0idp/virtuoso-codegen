@@ -35,15 +35,7 @@ namespace UnityEngine::Timeline {
   // [TokenAttribute] Offset: FFFFFFFF
   class RuntimeElement : public ::Il2CppObject/*, public ::UnityEngine::Timeline::IInterval*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <intervalBit>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -60,7 +52,7 @@ namespace UnityEngine::Timeline {
       return intervalBit;
     }
     // Get instance field reference: private System.Int32 <intervalBit>k__BackingField
-    int& dyn_$intervalBit$k__BackingField();
+    [[deprecated]] int& dyn_$intervalBit$k__BackingField();
     // public System.Int64 get_intervalStart()
     // Offset: 0xFFFFFFFFFFFFFFFF
     int64_t get_intervalStart();
@@ -68,10 +60,10 @@ namespace UnityEngine::Timeline {
     // Offset: 0xFFFFFFFFFFFFFFFF
     int64_t get_intervalEnd();
     // public System.Int32 get_intervalBit()
-    // Offset: 0xA83DD8
+    // Offset: 0xC7B2A8
     int get_intervalBit();
     // public System.Void set_intervalBit(System.Int32 value)
-    // Offset: 0xA83DE0
+    // Offset: 0xC7B2B0
     void set_intervalBit(int value);
     // public System.Void set_enable(System.Boolean value)
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -80,10 +72,10 @@ namespace UnityEngine::Timeline {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void EvaluateAt(double localTime, ::UnityEngine::Playables::FrameData frameData);
     // public System.Void Reset()
-    // Offset: 0xA83DE8
+    // Offset: 0xC7B2B8
     void Reset();
     // protected System.Void .ctor()
-    // Offset: 0xA80478
+    // Offset: 0xC77948
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

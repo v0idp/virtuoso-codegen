@@ -47,26 +47,26 @@ namespace System::Net {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt16[] address
-    ::ArrayW<uint16_t>& dyn_address();
+    [[deprecated]] ::ArrayW<uint16_t>& dyn_address();
     // Get instance field reference: private System.Int64 scopeId
-    int64_t& dyn_scopeId();
+    [[deprecated]] int64_t& dyn_scopeId();
     // public System.Void .ctor(System.UInt16[] addr, System.Int64 scopeId)
-    // Offset: 0xD94874
+    // Offset: 0x10F2744
     // ABORTED: conflicts with another method.  IPv6AddressFormatter(::ArrayW<uint16_t> addr, int64_t scopeId);
     // static private System.UInt16 SwapUShort(System.UInt16 number)
-    // Offset: 0xD96060
+    // Offset: 0x10F41A4
     static uint16_t SwapUShort(uint16_t number);
     // private System.UInt32 AsIPv4Int()
-    // Offset: 0xD9606C
+    // Offset: 0x10F41B0
     uint AsIPv4Int();
     // private System.Boolean IsIPv4Compatible()
-    // Offset: 0xD960B8
+    // Offset: 0x10F41FC
     bool IsIPv4Compatible();
     // private System.Boolean IsIPv4Mapped()
-    // Offset: 0xD96130
+    // Offset: 0x10F4274
     bool IsIPv4Mapped();
     // public override System.String ToString()
-    // Offset: 0xD9487C
+    // Offset: 0x10F274C
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

@@ -33,15 +33,7 @@ namespace DG::Tweening::Core {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class DOTweenComponent::$WaitForCompletion$d__15 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -68,32 +60,32 @@ namespace DG::Tweening::Core {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public DG.Tweening.Tween t
-    ::DG::Tweening::Tween*& dyn_t();
+    [[deprecated]] ::DG::Tweening::Tween*& dyn_t();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x126ABCC
+    // Offset: 0x1862F70
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x126AC14
+    // Offset: 0x1862FB8
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x126AB48
+    // Offset: 0x1862EEC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DOTweenComponent::$WaitForCompletion$d__15* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::DOTweenComponent::$WaitForCompletion$d__15::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DOTweenComponent::$WaitForCompletion$d__15*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x126AB74
+    // Offset: 0x1862F18
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x126AB78
+    // Offset: 0x1862F1C
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x126ABD4
+    // Offset: 0x1862F78
     void System_Collections_IEnumerator_Reset();
   }; // DG.Tweening.Core.DOTweenComponent/DG.Tweening.Core.<WaitForCompletion>d__15
   #pragma pack(pop)

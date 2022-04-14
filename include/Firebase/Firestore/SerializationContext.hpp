@@ -49,15 +49,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class SerializationContext : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Collections.Generic.IDictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter> _customConverters
     // Size: 0x8
     // Offset: 0x10
@@ -69,28 +61,28 @@ namespace Firebase::Firestore {
     constexpr operator ::System::Collections::Generic::IDictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*() const noexcept {
       return customConverters;
     }
-    // [DebuggerBrowsableAttribute] Offset: 0x5C76EC
+    // [DebuggerBrowsableAttribute] Offset: 0x6D835C
     // Get static field: static private readonly Firebase.Firestore.SerializationContext <Default>k__BackingField
     static ::Firebase::Firestore::SerializationContext* _get_$Default$k__BackingField();
     // Set static field: static private readonly Firebase.Firestore.SerializationContext <Default>k__BackingField
     static void _set_$Default$k__BackingField(::Firebase::Firestore::SerializationContext* value);
     // Get instance field reference: private readonly System.Collections.Generic.IDictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter> _customConverters
-    ::System::Collections::Generic::IDictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*& dyn__customConverters();
+    [[deprecated]] ::System::Collections::Generic::IDictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*& dyn__customConverters();
     // static Firebase.Firestore.SerializationContext get_Default()
-    // Offset: 0xC3F40C
+    // Offset: 0xD63A04
     static ::Firebase::Firestore::SerializationContext* get_Default();
     // System.Void .ctor(Firebase.Firestore.ConverterRegistry converterRegistry)
-    // Offset: 0xC3F3C4
+    // Offset: 0xD639BC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SerializationContext* New_ctor(::Firebase::Firestore::ConverterRegistry* converterRegistry) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::SerializationContext::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SerializationContext*, creationType>(converterRegistry)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xC3F470
+    // Offset: 0xD63A68
     static void _cctor();
     // Firebase.Firestore.Converters.IFirestoreInternalConverter GetConverter(System.Type targetType)
-    // Offset: 0xC2FA88
+    // Offset: 0xD51890
     ::Firebase::Firestore::Converters::IFirestoreInternalConverter* GetConverter(::System::Type* targetType);
   }; // Firebase.Firestore.SerializationContext
   #pragma pack(pop)

@@ -36,15 +36,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRDebugInfo : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.GameObject debugUIManager
     // Size: 0x8
     // Offset: 0x18
@@ -219,114 +211,114 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject debugUIManager
-    ::UnityEngine::GameObject*& dyn_debugUIManager();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_debugUIManager();
     // Get instance field reference: private UnityEngine.GameObject debugUIObject
-    ::UnityEngine::GameObject*& dyn_debugUIObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_debugUIObject();
     // Get instance field reference: private UnityEngine.GameObject riftPresent
-    ::UnityEngine::GameObject*& dyn_riftPresent();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_riftPresent();
     // Get instance field reference: private UnityEngine.GameObject fps
-    ::UnityEngine::GameObject*& dyn_fps();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_fps();
     // Get instance field reference: private UnityEngine.GameObject ipd
-    ::UnityEngine::GameObject*& dyn_ipd();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_ipd();
     // Get instance field reference: private UnityEngine.GameObject fov
-    ::UnityEngine::GameObject*& dyn_fov();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_fov();
     // Get instance field reference: private UnityEngine.GameObject height
-    ::UnityEngine::GameObject*& dyn_height();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_height();
     // Get instance field reference: private UnityEngine.GameObject depth
-    ::UnityEngine::GameObject*& dyn_depth();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_depth();
     // Get instance field reference: private UnityEngine.GameObject resolutionEyeTexture
-    ::UnityEngine::GameObject*& dyn_resolutionEyeTexture();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_resolutionEyeTexture();
     // Get instance field reference: private UnityEngine.GameObject latencies
-    ::UnityEngine::GameObject*& dyn_latencies();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_latencies();
     // Get instance field reference: private UnityEngine.GameObject texts
-    ::UnityEngine::GameObject*& dyn_texts();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_texts();
     // Get instance field reference: private System.String strRiftPresent
-    ::StringW& dyn_strRiftPresent();
+    [[deprecated]] ::StringW& dyn_strRiftPresent();
     // Get instance field reference: private System.String strFPS
-    ::StringW& dyn_strFPS();
+    [[deprecated]] ::StringW& dyn_strFPS();
     // Get instance field reference: private System.String strIPD
-    ::StringW& dyn_strIPD();
+    [[deprecated]] ::StringW& dyn_strIPD();
     // Get instance field reference: private System.String strFOV
-    ::StringW& dyn_strFOV();
+    [[deprecated]] ::StringW& dyn_strFOV();
     // Get instance field reference: private System.String strHeight
-    ::StringW& dyn_strHeight();
+    [[deprecated]] ::StringW& dyn_strHeight();
     // Get instance field reference: private System.String strDepth
-    ::StringW& dyn_strDepth();
+    [[deprecated]] ::StringW& dyn_strDepth();
     // Get instance field reference: private System.String strResolutionEyeTexture
-    ::StringW& dyn_strResolutionEyeTexture();
+    [[deprecated]] ::StringW& dyn_strResolutionEyeTexture();
     // Get instance field reference: private System.String strLatencies
-    ::StringW& dyn_strLatencies();
+    [[deprecated]] ::StringW& dyn_strLatencies();
     // Get instance field reference: private System.Single updateInterval
-    float& dyn_updateInterval();
+    [[deprecated]] float& dyn_updateInterval();
     // Get instance field reference: private System.Single accum
-    float& dyn_accum();
+    [[deprecated]] float& dyn_accum();
     // Get instance field reference: private System.Int32 frames
-    int& dyn_frames();
+    [[deprecated]] int& dyn_frames();
     // Get instance field reference: private System.Single timeLeft
-    float& dyn_timeLeft();
+    [[deprecated]] float& dyn_timeLeft();
     // Get instance field reference: private System.Boolean initUIComponent
-    bool& dyn_initUIComponent();
+    [[deprecated]] bool& dyn_initUIComponent();
     // Get instance field reference: private System.Boolean isInited
-    bool& dyn_isInited();
+    [[deprecated]] bool& dyn_isInited();
     // Get instance field reference: private System.Single offsetY
-    float& dyn_offsetY();
+    [[deprecated]] float& dyn_offsetY();
     // Get instance field reference: private System.Single riftPresentTimeout
-    float& dyn_riftPresentTimeout();
+    [[deprecated]] float& dyn_riftPresentTimeout();
     // Get instance field reference: private System.Boolean showVRVars
-    bool& dyn_showVRVars();
+    [[deprecated]] bool& dyn_showVRVars();
     // private System.Void Awake()
-    // Offset: 0xD21FF8
+    // Offset: 0xFAF94C
     void Awake();
     // private System.Void Update()
-    // Offset: 0xD221B0
+    // Offset: 0xFAFB04
     void Update();
     // private System.Void OnDestroy()
-    // Offset: 0xD228F0
+    // Offset: 0xFB0244
     void OnDestroy();
     // private System.Void InitUIComponents()
-    // Offset: 0xD22278
+    // Offset: 0xFAFBCC
     void InitUIComponents();
     // private System.Void UpdateVariable()
-    // Offset: 0xD22640
+    // Offset: 0xFAFF94
     void UpdateVariable();
     // private System.Void UpdateStrings()
-    // Offset: 0xD22684
+    // Offset: 0xFAFFD8
     void UpdateStrings();
     // private System.Void RiftPresentGUI(UnityEngine.GameObject guiMainOBj)
-    // Offset: 0xD230EC
+    // Offset: 0xFB0A40
     void RiftPresentGUI(::UnityEngine::GameObject* guiMainOBj);
     // private System.Void UpdateDeviceDetection()
-    // Offset: 0xD22600
+    // Offset: 0xFAFF54
     void UpdateDeviceDetection();
     // private UnityEngine.GameObject VariableObjectManager(UnityEngine.GameObject gameObject, System.String name, System.Single posY, System.String str, System.Int32 fontSize)
-    // Offset: 0xD228F8
+    // Offset: 0xFB024C
     ::UnityEngine::GameObject* VariableObjectManager(::UnityEngine::GameObject* gameObject, ::StringW name, float posY, ::StringW str, int fontSize);
     // private UnityEngine.GameObject ComponentComposition(UnityEngine.GameObject GO)
-    // Offset: 0xD2324C
+    // Offset: 0xFB0BA0
     ::UnityEngine::GameObject* ComponentComposition(::UnityEngine::GameObject* GO);
     // private System.Void UpdateIPD()
-    // Offset: 0xD22A78
+    // Offset: 0xFB03CC
     void UpdateIPD();
     // private System.Void UpdateEyeHeightOffset()
-    // Offset: 0xD22B50
+    // Offset: 0xFB04A4
     void UpdateEyeHeightOffset();
     // private System.Void UpdateEyeDepthOffset()
-    // Offset: 0xD22C1C
+    // Offset: 0xFB0570
     void UpdateEyeDepthOffset();
     // private System.Void UpdateFOV()
-    // Offset: 0xD22CE8
+    // Offset: 0xFB063C
     void UpdateFOV();
     // private System.Void UpdateResolutionEyeTexture()
-    // Offset: 0xD22E00
+    // Offset: 0xFB0754
     void UpdateResolutionEyeTexture();
     // private System.Void UpdateLatencyValues()
-    // Offset: 0xD22FFC
+    // Offset: 0xFB0950
     void UpdateLatencyValues();
     // private System.Void UpdateFPS()
-    // Offset: 0xD23000
+    // Offset: 0xFB0954
     void UpdateFPS();
     // public System.Void .ctor()
-    // Offset: 0xD2360C
+    // Offset: 0xFB0F60
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

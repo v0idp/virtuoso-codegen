@@ -37,15 +37,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class DocumentSnapshotVector : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -64,24 +56,24 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC32274
+    // Offset: 0xD54520
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DocumentSnapshotVector* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::DocumentSnapshotVector::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DocumentSnapshotVector*, creationType>(cPtr, cMemoryOwn)));
     }
     // public System.Void Dispose()
-    // Offset: 0xC32348
+    // Offset: 0xD545F4
     void Dispose();
     // public Firebase.Firestore.DocumentSnapshotProxy GetCopy(System.UInt32 i)
-    // Offset: 0xC32558
+    // Offset: 0xD54804
     ::Firebase::Firestore::DocumentSnapshotProxy* GetCopy(uint i);
     // protected override System.Void Finalize()
-    // Offset: 0xC322D8
+    // Offset: 0xD54584
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

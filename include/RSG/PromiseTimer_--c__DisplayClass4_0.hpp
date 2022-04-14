@@ -34,15 +34,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class PromiseTimer::$$c__DisplayClass4_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Func`2<RSG.TimeData,System.Boolean> predicate
     // Size: 0x8
     // Offset: 0x10
@@ -55,12 +47,12 @@ namespace RSG {
       return predicate;
     }
     // Get instance field reference: public System.Func`2<RSG.TimeData,System.Boolean> predicate
-    ::System::Func_2<::RSG::TimeData, bool>*& dyn_predicate();
+    [[deprecated]] ::System::Func_2<::RSG::TimeData, bool>*& dyn_predicate();
     // System.Boolean <WaitWhile>b__0(RSG.TimeData t)
-    // Offset: 0x1344880
+    // Offset: 0x8CF7D8
     bool $WaitWhile$b__0(::RSG::TimeData t);
     // public System.Void .ctor()
-    // Offset: 0x1344878
+    // Offset: 0x8CF7D0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -23,7 +23,7 @@ namespace Mono::Net::Security {
   class NoReflectionHelper : public ::Il2CppObject {
     public:
     // static System.Object GetInternalValidator(System.Object provider, System.Object settings)
-    // Offset: 0xBF9AF8
+    // Offset: 0x110586C
     static ::Il2CppObject* GetInternalValidator(::Il2CppObject* provider, ::Il2CppObject* settings);
   }; // Mono.Net.Security.NoReflectionHelper
   #pragma pack(pop)

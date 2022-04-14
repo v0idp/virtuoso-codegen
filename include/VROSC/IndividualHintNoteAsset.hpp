@@ -50,15 +50,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IndividualHintNoteAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.IndividualHintNoteBehaviour template
     // Size: 0x8
     // Offset: 0x18
@@ -73,11 +65,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.IndividualHintNoteBehaviour template
-    ::VROSC::IndividualHintNoteBehaviour*& dyn_template();
+    [[deprecated]] ::VROSC::IndividualHintNoteBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.TouchableObject> _target
-    ::UnityEngine::ExposedReference_1<::VROSC::TouchableObject*>& dyn__target();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::TouchableObject*>& dyn__target();
     // public System.Void .ctor()
-    // Offset: 0x8A0768
+    // Offset: 0x1943300
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -89,7 +81,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<IndividualHintNoteAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0x8A0634
+    // Offset: 0x19431CC
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

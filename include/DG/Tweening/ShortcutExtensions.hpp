@@ -256,304 +256,304 @@ namespace DG::Tweening {
     // Nested type: ::DG::Tweening::ShortcutExtensions::$$c__DisplayClass75_0
     class $$c__DisplayClass75_0;
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOAspect(UnityEngine.Camera target, System.Single endValue, System.Single duration)
-    // Offset: 0x102ADF4
+    // Offset: 0x15A17EC
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOAspect(::UnityEngine::Camera* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOColor(UnityEngine.Camera target, UnityEngine.Color endValue, System.Single duration)
-    // Offset: 0x102AF8C
+    // Offset: 0x15A1984
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOColor(::UnityEngine::Camera* target, ::UnityEngine::Color endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOFarClipPlane(UnityEngine.Camera target, System.Single endValue, System.Single duration)
-    // Offset: 0x102B14C
+    // Offset: 0x15A1B44
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOFarClipPlane(::UnityEngine::Camera* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOFieldOfView(UnityEngine.Camera target, System.Single endValue, System.Single duration)
-    // Offset: 0x102B2E4
+    // Offset: 0x15A1CDC
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOFieldOfView(::UnityEngine::Camera* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DONearClipPlane(UnityEngine.Camera target, System.Single endValue, System.Single duration)
-    // Offset: 0x102B47C
+    // Offset: 0x15A1E74
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DONearClipPlane(::UnityEngine::Camera* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOOrthoSize(UnityEngine.Camera target, System.Single endValue, System.Single duration)
-    // Offset: 0x102B614
+    // Offset: 0x15A200C
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOOrthoSize(::UnityEngine::Camera* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> DOPixelRect(UnityEngine.Camera target, UnityEngine.Rect endValue, System.Single duration)
-    // Offset: 0x102B7AC
+    // Offset: 0x15A21A4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* DOPixelRect(::UnityEngine::Camera* target, ::UnityEngine::Rect endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Rect,UnityEngine.Rect,DG.Tweening.Plugins.Options.RectOptions> DORect(UnityEngine.Camera target, UnityEngine.Rect endValue, System.Single duration)
-    // Offset: 0x102B96C
+    // Offset: 0x15A2364
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Rect, ::UnityEngine::Rect, ::DG::Tweening::Plugins::Options::RectOptions>* DORect(::UnityEngine::Camera* target, ::UnityEngine::Rect endValue, float duration);
     // static public DG.Tweening.Tweener DOShakePosition(UnityEngine.Camera target, System.Single duration, System.Single strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x102BB2C
+    // Offset: 0x15A2524
     static ::DG::Tweening::Tweener* DOShakePosition(::UnityEngine::Camera* target, float duration, float strength, int vibrato, float randomness, bool fadeOut);
     // static public DG.Tweening.Tweener DOShakePosition(UnityEngine.Camera target, System.Single duration, UnityEngine.Vector3 strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x102BDA0
+    // Offset: 0x15A2798
     static ::DG::Tweening::Tweener* DOShakePosition(::UnityEngine::Camera* target, float duration, ::UnityEngine::Vector3 strength, int vibrato, float randomness, bool fadeOut);
     // static public DG.Tweening.Tweener DOShakeRotation(UnityEngine.Camera target, System.Single duration, System.Single strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x102C028
+    // Offset: 0x15A2A20
     static ::DG::Tweening::Tweener* DOShakeRotation(::UnityEngine::Camera* target, float duration, float strength, int vibrato, float randomness, bool fadeOut);
     // static public DG.Tweening.Tweener DOShakeRotation(UnityEngine.Camera target, System.Single duration, UnityEngine.Vector3 strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x102C29C
+    // Offset: 0x15A2C94
     static ::DG::Tweening::Tweener* DOShakeRotation(::UnityEngine::Camera* target, float duration, ::UnityEngine::Vector3 strength, int vibrato, float randomness, bool fadeOut);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOColor(UnityEngine.Light target, UnityEngine.Color endValue, System.Single duration)
-    // Offset: 0x102C524
+    // Offset: 0x15A2F1C
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOColor(::UnityEngine::Light* target, ::UnityEngine::Color endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOIntensity(UnityEngine.Light target, System.Single endValue, System.Single duration)
-    // Offset: 0x102C6E4
+    // Offset: 0x15A30DC
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOIntensity(::UnityEngine::Light* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOShadowStrength(UnityEngine.Light target, System.Single endValue, System.Single duration)
-    // Offset: 0x102C87C
+    // Offset: 0x15A3274
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOShadowStrength(::UnityEngine::Light* target, float endValue, float duration);
     // static public DG.Tweening.Tweener DOColor(UnityEngine.LineRenderer target, DG.Tweening.Color2 startValue, DG.Tweening.Color2 endValue, System.Single duration)
-    // Offset: 0x102CA14
+    // Offset: 0x15A340C
     static ::DG::Tweening::Tweener* DOColor(::UnityEngine::LineRenderer* target, ::DG::Tweening::Color2 startValue, ::DG::Tweening::Color2 endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOColor(UnityEngine.Material target, UnityEngine.Color endValue, System.Single duration)
-    // Offset: 0x102CBD0
+    // Offset: 0x15A35C8
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOColor(::UnityEngine::Material* target, ::UnityEngine::Color endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOColor(UnityEngine.Material target, UnityEngine.Color endValue, System.String property, System.Single duration)
-    // Offset: 0x102CD90
+    // Offset: 0x15A3788
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOColor(::UnityEngine::Material* target, ::UnityEngine::Color endValue, ::StringW property, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOColor(UnityEngine.Material target, UnityEngine.Color endValue, System.Int32 propertyID, System.Single duration)
-    // Offset: 0x102CFBC
+    // Offset: 0x15A39B4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOColor(::UnityEngine::Material* target, ::UnityEngine::Color endValue, int propertyID, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOFade(UnityEngine.Material target, System.Single endValue, System.Single duration)
-    // Offset: 0x102D1EC
+    // Offset: 0x15A3BE4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOFade(::UnityEngine::Material* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOFade(UnityEngine.Material target, System.Single endValue, System.String property, System.Single duration)
-    // Offset: 0x102D384
+    // Offset: 0x15A3D7C
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOFade(::UnityEngine::Material* target, float endValue, ::StringW property, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions> DOFade(UnityEngine.Material target, System.Single endValue, System.Int32 propertyID, System.Single duration)
-    // Offset: 0x102D588
+    // Offset: 0x15A3F80
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Color, ::UnityEngine::Color, ::DG::Tweening::Plugins::Options::ColorOptions>* DOFade(::UnityEngine::Material* target, float endValue, int propertyID, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOFloat(UnityEngine.Material target, System.Single endValue, System.String property, System.Single duration)
-    // Offset: 0x102D790
+    // Offset: 0x15A4188
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOFloat(::UnityEngine::Material* target, float endValue, ::StringW property, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOFloat(UnityEngine.Material target, System.Single endValue, System.Int32 propertyID, System.Single duration)
-    // Offset: 0x102D994
+    // Offset: 0x15A438C
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOFloat(::UnityEngine::Material* target, float endValue, int propertyID, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOOffset(UnityEngine.Material target, UnityEngine.Vector2 endValue, System.Single duration)
-    // Offset: 0x102DB9C
+    // Offset: 0x15A4594
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOOffset(::UnityEngine::Material* target, ::UnityEngine::Vector2 endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOOffset(UnityEngine.Material target, UnityEngine.Vector2 endValue, System.String property, System.Single duration)
-    // Offset: 0x102DD44
+    // Offset: 0x15A473C
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOOffset(::UnityEngine::Material* target, ::UnityEngine::Vector2 endValue, ::StringW property, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOTiling(UnityEngine.Material target, UnityEngine.Vector2 endValue, System.Single duration)
-    // Offset: 0x102DF58
+    // Offset: 0x15A4950
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOTiling(::UnityEngine::Material* target, ::UnityEngine::Vector2 endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOTiling(UnityEngine.Material target, UnityEngine.Vector2 endValue, System.String property, System.Single duration)
-    // Offset: 0x102E100
+    // Offset: 0x15A4AF8
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOTiling(::UnityEngine::Material* target, ::UnityEngine::Vector2 endValue, ::StringW property, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector4,UnityEngine.Vector4,DG.Tweening.Plugins.Options.VectorOptions> DOVector(UnityEngine.Material target, UnityEngine.Vector4 endValue, System.String property, System.Single duration)
-    // Offset: 0x102E314
+    // Offset: 0x15A4D0C
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector4, ::UnityEngine::Vector4, ::DG::Tweening::Plugins::Options::VectorOptions>* DOVector(::UnityEngine::Material* target, ::UnityEngine::Vector4 endValue, ::StringW property, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector4,UnityEngine.Vector4,DG.Tweening.Plugins.Options.VectorOptions> DOVector(UnityEngine.Material target, UnityEngine.Vector4 endValue, System.Int32 propertyID, System.Single duration)
-    // Offset: 0x102E540
+    // Offset: 0x15A4F38
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector4, ::UnityEngine::Vector4, ::DG::Tweening::Plugins::Options::VectorOptions>* DOVector(::UnityEngine::Material* target, ::UnityEngine::Vector4 endValue, int propertyID, float duration);
     // static public DG.Tweening.Tweener DOResize(UnityEngine.TrailRenderer target, System.Single toStartWidth, System.Single toEndWidth, System.Single duration)
-    // Offset: 0x102E770
+    // Offset: 0x15A5168
     static ::DG::Tweening::Tweener* DOResize(::UnityEngine::TrailRenderer* target, float toStartWidth, float toEndWidth, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOTime(UnityEngine.TrailRenderer target, System.Single endValue, System.Single duration)
-    // Offset: 0x102E90C
+    // Offset: 0x15A5304
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOTime(::UnityEngine::TrailRenderer* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOMove(UnityEngine.Transform target, UnityEngine.Vector3 endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x102EAA4
+    // Offset: 0x15A549C
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOMove(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOMoveX(UnityEngine.Transform target, System.Single endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x102EC88
+    // Offset: 0x15A5680
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOMoveX(::UnityEngine::Transform* target, float endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOMoveY(UnityEngine.Transform target, System.Single endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x102EE68
+    // Offset: 0x15A5860
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOMoveY(::UnityEngine::Transform* target, float endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOMoveZ(UnityEngine.Transform target, System.Single endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x102F02C
+    // Offset: 0x15A5A24
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOMoveZ(::UnityEngine::Transform* target, float endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOLocalMove(UnityEngine.Transform target, UnityEngine.Vector3 endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x102F1F0
+    // Offset: 0x15A5BE8
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOLocalMove(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOLocalMoveX(UnityEngine.Transform target, System.Single endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x102F3BC
+    // Offset: 0x15A5DB4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOLocalMoveX(::UnityEngine::Transform* target, float endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOLocalMoveY(UnityEngine.Transform target, System.Single endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x102F580
+    // Offset: 0x15A5F78
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOLocalMoveY(::UnityEngine::Transform* target, float endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOLocalMoveZ(UnityEngine.Transform target, System.Single endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x102F744
+    // Offset: 0x15A613C
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOLocalMoveZ(::UnityEngine::Transform* target, float endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> DORotate(UnityEngine.Transform target, UnityEngine.Vector3 endValue, System.Single duration, DG.Tweening.RotateMode mode)
-    // Offset: 0x102F908
+    // Offset: 0x15A6300
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* DORotate(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endValue, float duration, ::DG::Tweening::RotateMode mode);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Quaternion,DG.Tweening.Plugins.Options.NoOptions> DORotateQuaternion(UnityEngine.Transform target, UnityEngine.Quaternion endValue, System.Single duration)
-    // Offset: 0x102FAC4
+    // Offset: 0x15A64BC
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Quaternion, ::DG::Tweening::Plugins::Options::NoOptions>* DORotateQuaternion(::UnityEngine::Transform* target, ::UnityEngine::Quaternion endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> DOLocalRotate(UnityEngine.Transform target, UnityEngine.Vector3 endValue, System.Single duration, DG.Tweening.RotateMode mode)
-    // Offset: 0x102FCAC
+    // Offset: 0x15A66A4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* DOLocalRotate(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endValue, float duration, ::DG::Tweening::RotateMode mode);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Quaternion,DG.Tweening.Plugins.Options.NoOptions> DOLocalRotateQuaternion(UnityEngine.Transform target, UnityEngine.Quaternion endValue, System.Single duration)
-    // Offset: 0x102FE68
+    // Offset: 0x15A6860
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Quaternion, ::DG::Tweening::Plugins::Options::NoOptions>* DOLocalRotateQuaternion(::UnityEngine::Transform* target, ::UnityEngine::Quaternion endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOScale(UnityEngine.Transform target, UnityEngine.Vector3 endValue, System.Single duration)
-    // Offset: 0x1030050
+    // Offset: 0x15A6A48
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOScale(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOScale(UnityEngine.Transform target, System.Single endValue, System.Single duration)
-    // Offset: 0x1030200
+    // Offset: 0x15A6BF8
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOScale(::UnityEngine::Transform* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOScaleX(UnityEngine.Transform target, System.Single endValue, System.Single duration)
-    // Offset: 0x10303A0
+    // Offset: 0x15A6D98
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOScaleX(::UnityEngine::Transform* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOScaleY(UnityEngine.Transform target, System.Single endValue, System.Single duration)
-    // Offset: 0x103055C
+    // Offset: 0x15A6F54
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOScaleY(::UnityEngine::Transform* target, float endValue, float duration);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions> DOScaleZ(UnityEngine.Transform target, System.Single endValue, System.Single duration)
-    // Offset: 0x1030718
+    // Offset: 0x15A7110
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::VectorOptions>* DOScaleZ(::UnityEngine::Transform* target, float endValue, float duration);
     // static public DG.Tweening.Tweener DOLookAt(UnityEngine.Transform target, UnityEngine.Vector3 towards, System.Single duration, DG.Tweening.AxisConstraint axisConstraint, System.Nullable`1<UnityEngine.Vector3> up)
-    // Offset: 0x10308D4
+    // Offset: 0x15A72CC
     static ::DG::Tweening::Tweener* DOLookAt(::UnityEngine::Transform* target, ::UnityEngine::Vector3 towards, float duration, ::DG::Tweening::AxisConstraint axisConstraint, ::System::Nullable_1<::UnityEngine::Vector3> up);
     // static public DG.Tweening.Tweener DOPunchPosition(UnityEngine.Transform target, UnityEngine.Vector3 punch, System.Single duration, System.Int32 vibrato, System.Single elasticity, System.Boolean snapping)
-    // Offset: 0x1030B14
+    // Offset: 0x15A750C
     static ::DG::Tweening::Tweener* DOPunchPosition(::UnityEngine::Transform* target, ::UnityEngine::Vector3 punch, float duration, int vibrato, float elasticity, bool snapping);
     // static public DG.Tweening.Tweener DOPunchScale(UnityEngine.Transform target, UnityEngine.Vector3 punch, System.Single duration, System.Int32 vibrato, System.Single elasticity)
-    // Offset: 0x1030DA4
+    // Offset: 0x15A779C
     static ::DG::Tweening::Tweener* DOPunchScale(::UnityEngine::Transform* target, ::UnityEngine::Vector3 punch, float duration, int vibrato, float elasticity);
     // static public DG.Tweening.Tweener DOPunchRotation(UnityEngine.Transform target, UnityEngine.Vector3 punch, System.Single duration, System.Int32 vibrato, System.Single elasticity)
-    // Offset: 0x1030FFC
+    // Offset: 0x15A79F4
     static ::DG::Tweening::Tweener* DOPunchRotation(::UnityEngine::Transform* target, ::UnityEngine::Vector3 punch, float duration, int vibrato, float elasticity);
     // static public DG.Tweening.Tweener DOShakePosition(UnityEngine.Transform target, System.Single duration, System.Single strength, System.Int32 vibrato, System.Single randomness, System.Boolean snapping, System.Boolean fadeOut)
-    // Offset: 0x1031254
+    // Offset: 0x15A7C4C
     static ::DG::Tweening::Tweener* DOShakePosition(::UnityEngine::Transform* target, float duration, float strength, int vibrato, float randomness, bool snapping, bool fadeOut);
     // static public DG.Tweening.Tweener DOShakePosition(UnityEngine.Transform target, System.Single duration, UnityEngine.Vector3 strength, System.Int32 vibrato, System.Single randomness, System.Boolean snapping, System.Boolean fadeOut)
-    // Offset: 0x10314E0
+    // Offset: 0x15A7ED8
     static ::DG::Tweening::Tweener* DOShakePosition(::UnityEngine::Transform* target, float duration, ::UnityEngine::Vector3 strength, int vibrato, float randomness, bool snapping, bool fadeOut);
     // static public DG.Tweening.Tweener DOShakeRotation(UnityEngine.Transform target, System.Single duration, System.Single strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x1031780
+    // Offset: 0x15A8178
     static ::DG::Tweening::Tweener* DOShakeRotation(::UnityEngine::Transform* target, float duration, float strength, int vibrato, float randomness, bool fadeOut);
     // static public DG.Tweening.Tweener DOShakeRotation(UnityEngine.Transform target, System.Single duration, UnityEngine.Vector3 strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x10319F4
+    // Offset: 0x15A83EC
     static ::DG::Tweening::Tweener* DOShakeRotation(::UnityEngine::Transform* target, float duration, ::UnityEngine::Vector3 strength, int vibrato, float randomness, bool fadeOut);
     // static public DG.Tweening.Tweener DOShakeScale(UnityEngine.Transform target, System.Single duration, System.Single strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x1031C7C
+    // Offset: 0x15A8674
     static ::DG::Tweening::Tweener* DOShakeScale(::UnityEngine::Transform* target, float duration, float strength, int vibrato, float randomness, bool fadeOut);
     // static public DG.Tweening.Tweener DOShakeScale(UnityEngine.Transform target, System.Single duration, UnityEngine.Vector3 strength, System.Int32 vibrato, System.Single randomness, System.Boolean fadeOut)
-    // Offset: 0x1031F70
+    // Offset: 0x15A8968
     static ::DG::Tweening::Tweener* DOShakeScale(::UnityEngine::Transform* target, float duration, ::UnityEngine::Vector3 strength, int vibrato, float randomness, bool fadeOut);
     // static public DG.Tweening.Sequence DOJump(UnityEngine.Transform target, UnityEngine.Vector3 endValue, System.Single jumpPower, System.Int32 numJumps, System.Single duration, System.Boolean snapping)
-    // Offset: 0x10321F8
+    // Offset: 0x15A8BF0
     static ::DG::Tweening::Sequence* DOJump(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endValue, float jumpPower, int numJumps, float duration, bool snapping);
     // static public DG.Tweening.Sequence DOLocalJump(UnityEngine.Transform target, UnityEngine.Vector3 endValue, System.Single jumpPower, System.Int32 numJumps, System.Single duration, System.Boolean snapping)
-    // Offset: 0x10327B0
+    // Offset: 0x15A91A8
     static ::DG::Tweening::Sequence* DOLocalJump(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endValue, float jumpPower, int numJumps, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> DOPath(UnityEngine.Transform target, UnityEngine.Vector3[] path, System.Single duration, DG.Tweening.PathType pathType, DG.Tweening.PathMode pathMode, System.Int32 resolution, System.Nullable`1<UnityEngine.Color> gizmoColor)
-    // Offset: 0x1032C64
+    // Offset: 0x15A965C
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* DOPath(::UnityEngine::Transform* target, ::ArrayW<::UnityEngine::Vector3> path, float duration, ::DG::Tweening::PathType pathType, ::DG::Tweening::PathMode pathMode, int resolution, ::System::Nullable_1<::UnityEngine::Color> gizmoColor);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> DOLocalPath(UnityEngine.Transform target, UnityEngine.Vector3[] path, System.Single duration, DG.Tweening.PathType pathType, DG.Tweening.PathMode pathMode, System.Int32 resolution, System.Nullable`1<UnityEngine.Color> gizmoColor)
-    // Offset: 0x1032EA4
+    // Offset: 0x15A989C
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* DOLocalPath(::UnityEngine::Transform* target, ::ArrayW<::UnityEngine::Vector3> path, float duration, ::DG::Tweening::PathType pathType, ::DG::Tweening::PathMode pathMode, int resolution, ::System::Nullable_1<::UnityEngine::Color> gizmoColor);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> DOPath(UnityEngine.Transform target, DG.Tweening.Plugins.Core.PathCore.Path path, System.Single duration, DG.Tweening.PathMode pathMode)
-    // Offset: 0x10330EC
+    // Offset: 0x15A9AE4
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* DOPath(::UnityEngine::Transform* target, ::DG::Tweening::Plugins::Core::PathCore::Path* path, float duration, ::DG::Tweening::PathMode pathMode);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> DOLocalPath(UnityEngine.Transform target, DG.Tweening.Plugins.Core.PathCore.Path path, System.Single duration, DG.Tweening.PathMode pathMode)
-    // Offset: 0x10332B8
+    // Offset: 0x15A9CB0
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* DOLocalPath(::UnityEngine::Transform* target, ::DG::Tweening::Plugins::Core::PathCore::Path* path, float duration, ::DG::Tweening::PathMode pathMode);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DOTimeScale(DG.Tweening.Tween target, System.Single endValue, System.Single duration)
-    // Offset: 0x103348C
+    // Offset: 0x15A9E84
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DOTimeScale(::DG::Tweening::Tween* target, float endValue, float duration);
     // static public DG.Tweening.Tweener DOBlendableColor(UnityEngine.Light target, UnityEngine.Color endValue, System.Single duration)
-    // Offset: 0x1033624
+    // Offset: 0x15AA01C
     static ::DG::Tweening::Tweener* DOBlendableColor(::UnityEngine::Light* target, ::UnityEngine::Color endValue, float duration);
     // static public DG.Tweening.Tweener DOBlendableColor(UnityEngine.Material target, UnityEngine.Color endValue, System.Single duration)
-    // Offset: 0x1033870
+    // Offset: 0x15AA268
     static ::DG::Tweening::Tweener* DOBlendableColor(::UnityEngine::Material* target, ::UnityEngine::Color endValue, float duration);
     // static public DG.Tweening.Tweener DOBlendableColor(UnityEngine.Material target, UnityEngine.Color endValue, System.String property, System.Single duration)
-    // Offset: 0x1033ABC
+    // Offset: 0x15AA4B4
     static ::DG::Tweening::Tweener* DOBlendableColor(::UnityEngine::Material* target, ::UnityEngine::Color endValue, ::StringW property, float duration);
     // static public DG.Tweening.Tweener DOBlendableColor(UnityEngine.Material target, UnityEngine.Color endValue, System.Int32 propertyID, System.Single duration)
-    // Offset: 0x1033D78
+    // Offset: 0x15AA770
     static ::DG::Tweening::Tweener* DOBlendableColor(::UnityEngine::Material* target, ::UnityEngine::Color endValue, int propertyID, float duration);
     // static public DG.Tweening.Tweener DOBlendableMoveBy(UnityEngine.Transform target, UnityEngine.Vector3 byValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x1034038
+    // Offset: 0x15AAA30
     static ::DG::Tweening::Tweener* DOBlendableMoveBy(::UnityEngine::Transform* target, ::UnityEngine::Vector3 byValue, float duration, bool snapping);
     // static public DG.Tweening.Tweener DOBlendableLocalMoveBy(UnityEngine.Transform target, UnityEngine.Vector3 byValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x1034220
+    // Offset: 0x15AAC18
     static ::DG::Tweening::Tweener* DOBlendableLocalMoveBy(::UnityEngine::Transform* target, ::UnityEngine::Vector3 byValue, float duration, bool snapping);
     // static public DG.Tweening.Tweener DOBlendableRotateBy(UnityEngine.Transform target, UnityEngine.Vector3 byValue, System.Single duration, DG.Tweening.RotateMode mode)
-    // Offset: 0x1034408
+    // Offset: 0x15AAE00
     static ::DG::Tweening::Tweener* DOBlendableRotateBy(::UnityEngine::Transform* target, ::UnityEngine::Vector3 byValue, float duration, ::DG::Tweening::RotateMode mode);
     // static public DG.Tweening.Tweener DOBlendableLocalRotateBy(UnityEngine.Transform target, UnityEngine.Vector3 byValue, System.Single duration, DG.Tweening.RotateMode mode)
-    // Offset: 0x10345E8
+    // Offset: 0x15AAFE0
     static ::DG::Tweening::Tweener* DOBlendableLocalRotateBy(::UnityEngine::Transform* target, ::UnityEngine::Vector3 byValue, float duration, ::DG::Tweening::RotateMode mode);
     // static public DG.Tweening.Tweener DOBlendablePunchRotation(UnityEngine.Transform target, UnityEngine.Vector3 punch, System.Single duration, System.Int32 vibrato, System.Single elasticity)
-    // Offset: 0x10347C8
+    // Offset: 0x15AB1C0
     static ::DG::Tweening::Tweener* DOBlendablePunchRotation(::UnityEngine::Transform* target, ::UnityEngine::Vector3 punch, float duration, int vibrato, float elasticity);
     // static public DG.Tweening.Tweener DOBlendableScaleBy(UnityEngine.Transform target, UnityEngine.Vector3 byValue, System.Single duration)
-    // Offset: 0x1034A4C
+    // Offset: 0x15AB444
     static ::DG::Tweening::Tweener* DOBlendableScaleBy(::UnityEngine::Transform* target, ::UnityEngine::Vector3 byValue, float duration);
     // static public System.Int32 DOComplete(UnityEngine.Component target, System.Boolean withCallbacks)
-    // Offset: 0x1034C1C
+    // Offset: 0x15AB614
     static int DOComplete(::UnityEngine::Component* target, bool withCallbacks);
     // static public System.Int32 DOComplete(UnityEngine.Material target, System.Boolean withCallbacks)
-    // Offset: 0x1034C90
+    // Offset: 0x15AB688
     static int DOComplete(::UnityEngine::Material* target, bool withCallbacks);
     // static public System.Int32 DOKill(UnityEngine.Component target, System.Boolean complete)
-    // Offset: 0x1034D04
+    // Offset: 0x15AB6FC
     static int DOKill(::UnityEngine::Component* target, bool complete);
     // static public System.Int32 DOKill(UnityEngine.Material target, System.Boolean complete)
-    // Offset: 0x1034D78
+    // Offset: 0x15AB770
     static int DOKill(::UnityEngine::Material* target, bool complete);
     // static public System.Int32 DOFlip(UnityEngine.Component target)
-    // Offset: 0x1034DEC
+    // Offset: 0x15AB7E4
     static int DOFlip(::UnityEngine::Component* target);
     // static public System.Int32 DOFlip(UnityEngine.Material target)
-    // Offset: 0x1034E50
+    // Offset: 0x15AB848
     static int DOFlip(::UnityEngine::Material* target);
     // static public System.Int32 DOGoto(UnityEngine.Component target, System.Single to, System.Boolean andPlay)
-    // Offset: 0x1034EB4
+    // Offset: 0x15AB8AC
     static int DOGoto(::UnityEngine::Component* target, float to, bool andPlay);
     // static public System.Int32 DOGoto(UnityEngine.Material target, System.Single to, System.Boolean andPlay)
-    // Offset: 0x1034F38
+    // Offset: 0x15AB930
     static int DOGoto(::UnityEngine::Material* target, float to, bool andPlay);
     // static public System.Int32 DOPause(UnityEngine.Component target)
-    // Offset: 0x1034FBC
+    // Offset: 0x15AB9B4
     static int DOPause(::UnityEngine::Component* target);
     // static public System.Int32 DOPause(UnityEngine.Material target)
-    // Offset: 0x1035020
+    // Offset: 0x15ABA18
     static int DOPause(::UnityEngine::Material* target);
     // static public System.Int32 DOPlay(UnityEngine.Component target)
-    // Offset: 0x1035084
+    // Offset: 0x15ABA7C
     static int DOPlay(::UnityEngine::Component* target);
     // static public System.Int32 DOPlay(UnityEngine.Material target)
-    // Offset: 0x10350E8
+    // Offset: 0x15ABAE0
     static int DOPlay(::UnityEngine::Material* target);
     // static public System.Int32 DOPlayBackwards(UnityEngine.Component target)
-    // Offset: 0x103514C
+    // Offset: 0x15ABB44
     static int DOPlayBackwards(::UnityEngine::Component* target);
     // static public System.Int32 DOPlayBackwards(UnityEngine.Material target)
-    // Offset: 0x10351B0
+    // Offset: 0x15ABBA8
     static int DOPlayBackwards(::UnityEngine::Material* target);
     // static public System.Int32 DOPlayForward(UnityEngine.Component target)
-    // Offset: 0x1035214
+    // Offset: 0x15ABC0C
     static int DOPlayForward(::UnityEngine::Component* target);
     // static public System.Int32 DOPlayForward(UnityEngine.Material target)
-    // Offset: 0x1035278
+    // Offset: 0x15ABC70
     static int DOPlayForward(::UnityEngine::Material* target);
     // static public System.Int32 DORestart(UnityEngine.Component target, System.Boolean includeDelay)
-    // Offset: 0x10352DC
+    // Offset: 0x15ABCD4
     static int DORestart(::UnityEngine::Component* target, bool includeDelay);
     // static public System.Int32 DORestart(UnityEngine.Material target, System.Boolean includeDelay)
-    // Offset: 0x1035354
+    // Offset: 0x15ABD4C
     static int DORestart(::UnityEngine::Material* target, bool includeDelay);
     // static public System.Int32 DORewind(UnityEngine.Component target, System.Boolean includeDelay)
-    // Offset: 0x10353CC
+    // Offset: 0x15ABDC4
     static int DORewind(::UnityEngine::Component* target, bool includeDelay);
     // static public System.Int32 DORewind(UnityEngine.Material target, System.Boolean includeDelay)
-    // Offset: 0x1035440
+    // Offset: 0x15ABE38
     static int DORewind(::UnityEngine::Material* target, bool includeDelay);
     // static public System.Int32 DOSmoothRewind(UnityEngine.Component target)
-    // Offset: 0x10354B4
+    // Offset: 0x15ABEAC
     static int DOSmoothRewind(::UnityEngine::Component* target);
     // static public System.Int32 DOSmoothRewind(UnityEngine.Material target)
-    // Offset: 0x1035518
+    // Offset: 0x15ABF10
     static int DOSmoothRewind(::UnityEngine::Material* target);
     // static public System.Int32 DOTogglePause(UnityEngine.Component target)
-    // Offset: 0x103557C
+    // Offset: 0x15ABF74
     static int DOTogglePause(::UnityEngine::Component* target);
     // static public System.Int32 DOTogglePause(UnityEngine.Material target)
-    // Offset: 0x10355E0
+    // Offset: 0x15ABFD8
     static int DOTogglePause(::UnityEngine::Material* target);
   }; // DG.Tweening.ShortcutExtensions
   #pragma pack(pop)

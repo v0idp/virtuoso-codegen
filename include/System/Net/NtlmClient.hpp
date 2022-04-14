@@ -40,15 +40,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class NtlmClient : public ::Il2CppObject/*, public ::System::Net::IAuthenticationModule*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.IAuthenticationModule authObject
     // Size: 0x8
     // Offset: 0x10
@@ -65,18 +57,18 @@ namespace System::Net {
       return authObject;
     }
     // Get instance field reference: private System.Net.IAuthenticationModule authObject
-    ::System::Net::IAuthenticationModule*& dyn_authObject();
+    [[deprecated]] ::System::Net::IAuthenticationModule*& dyn_authObject();
     // public System.String get_AuthenticationType()
-    // Offset: 0xBFA63C
+    // Offset: 0x1407A08
     ::StringW get_AuthenticationType();
     // public System.Net.Authorization Authenticate(System.String challenge, System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
-    // Offset: 0xBFA54C
+    // Offset: 0x1407918
     ::System::Net::Authorization* Authenticate(::StringW challenge, ::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
     // public System.Net.Authorization PreAuthenticate(System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
-    // Offset: 0xBFA634
+    // Offset: 0x1407A00
     ::System::Net::Authorization* PreAuthenticate(::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
     // public System.Void .ctor()
-    // Offset: 0xBFA4E4
+    // Offset: 0x14078B0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

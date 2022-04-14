@@ -56,17 +56,17 @@ namespace TMPro {
     // Set static field: static TMPro.Extents uninitialized
     static void _set_uninitialized(::TMPro::Extents value);
     // Get instance field reference: public UnityEngine.Vector2 min
-    ::UnityEngine::Vector2& dyn_min();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_min();
     // Get instance field reference: public UnityEngine.Vector2 max
-    ::UnityEngine::Vector2& dyn_max();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_max();
     // public System.Void .ctor(UnityEngine.Vector2 min, UnityEngine.Vector2 max)
-    // Offset: 0xA472F4
+    // Offset: 0xC28F04
     // ABORTED: conflicts with another method.  Extents(::UnityEngine::Vector2 min, ::UnityEngine::Vector2 max);
     // static private System.Void .cctor()
-    // Offset: 0xA475B8
+    // Offset: 0xC291C8
     static void _cctor();
     // public override System.String ToString()
-    // Offset: 0xA47300
+    // Offset: 0xC28F10
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

@@ -49,15 +49,7 @@ namespace NatSuite::Devices {
     public:
     // Nested type: ::NatSuite::Devices::MediaDeviceQuery::MediaDeviceQueryPermissionsHelper::$RequestiOS$d__7
     class $RequestiOS$d__7;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Action`1<System.Boolean> _androidCompletionHandler
     // Size: 0x8
     // Offset: 0x18
@@ -74,29 +66,29 @@ namespace NatSuite::Devices {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Action`1<System.Boolean> _androidCompletionHandler
-    ::System::Action_1<bool>*& dyn__androidCompletionHandler();
+    [[deprecated]] ::System::Action_1<bool>*& dyn__androidCompletionHandler();
     // Get instance field reference: private UnityEngine.Android.PermissionCallbacks _androidPermissionCallbacks
-    ::UnityEngine::Android::PermissionCallbacks*& dyn__androidPermissionCallbacks();
+    [[deprecated]] ::UnityEngine::Android::PermissionCallbacks*& dyn__androidPermissionCallbacks();
     // private System.Void Awake()
-    // Offset: 0x13D9D14
+    // Offset: 0x1961A30
     void Awake();
     // public System.Void Request(System.Boolean camera, System.Action`1<System.Boolean> completionHandler)
-    // Offset: 0x13D9D8C
+    // Offset: 0x1961AA8
     void Request(bool camera, ::System::Action_1<bool>* completionHandler);
     // private System.Void RequestAndroid(System.Boolean camera, System.Action`1<System.Boolean> completionHandler)
-    // Offset: 0x13D9E64
+    // Offset: 0x1961B80
     void RequestAndroid(bool camera, ::System::Action_1<bool>* completionHandler);
     // private System.Void AndroidPermissionGranted(System.String permission)
-    // Offset: 0x13DA0B8
+    // Offset: 0x1961DD4
     void AndroidPermissionGranted(::StringW permission);
     // private System.Void AndroidPermissionDenied(System.String permission)
-    // Offset: 0x13DA220
+    // Offset: 0x1961F3C
     void AndroidPermissionDenied(::StringW permission);
     // private System.Collections.IEnumerator RequestiOS(System.Boolean camera, System.Action`1<System.Boolean> completionHandler)
-    // Offset: 0x13DA038
+    // Offset: 0x1961D54
     ::System::Collections::IEnumerator* RequestiOS(bool camera, ::System::Action_1<bool>* completionHandler);
     // public System.Void .ctor()
-    // Offset: 0x13DA388
+    // Offset: 0x19620A4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

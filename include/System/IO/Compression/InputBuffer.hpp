@@ -27,15 +27,7 @@ namespace System::IO::Compression {
   // [TokenAttribute] Offset: FFFFFFFF
   class InputBuffer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte[] _buffer
     // Size: 0x8
     // Offset: 0x10
@@ -68,50 +60,50 @@ namespace System::IO::Compression {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Byte[] _buffer
-    ::ArrayW<uint8_t>& dyn__buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__buffer();
     // Get instance field reference: private System.Int32 _start
-    int& dyn__start();
+    [[deprecated]] int& dyn__start();
     // Get instance field reference: private System.Int32 _end
-    int& dyn__end();
+    [[deprecated]] int& dyn__end();
     // Get instance field reference: private System.UInt32 _bitBuffer
-    uint& dyn__bitBuffer();
+    [[deprecated]] uint& dyn__bitBuffer();
     // Get instance field reference: private System.Int32 _bitsInBuffer
-    int& dyn__bitsInBuffer();
+    [[deprecated]] int& dyn__bitsInBuffer();
     // public System.Int32 get_AvailableBits()
-    // Offset: 0x1120F50
+    // Offset: 0x16987BC
     int get_AvailableBits();
     // public System.Int32 get_AvailableBytes()
-    // Offset: 0x1120F58
+    // Offset: 0x16987C4
     int get_AvailableBytes();
     // public System.Boolean EnsureBitsAvailable(System.Int32 count)
-    // Offset: 0x111FC40
+    // Offset: 0x16974AC
     bool EnsureBitsAvailable(int count);
     // public System.UInt32 TryLoad16Bits()
-    // Offset: 0x111F518
+    // Offset: 0x1696D84
     uint TryLoad16Bits();
     // private System.UInt32 GetBitMask(System.Int32 count)
-    // Offset: 0x1120F88
+    // Offset: 0x16987F4
     uint GetBitMask(int count);
     // public System.Int32 GetBits(System.Int32 count)
-    // Offset: 0x111FCFC
+    // Offset: 0x1697568
     int GetBits(int count);
     // public System.Int32 CopyTo(System.Byte[] output, System.Int32 offset, System.Int32 length)
-    // Offset: 0x1120F98
+    // Offset: 0x1698804
     int CopyTo(::ArrayW<uint8_t> output, int offset, int length);
     // public System.Boolean NeedsInput()
-    // Offset: 0x1120F78
+    // Offset: 0x16987E4
     bool NeedsInput();
     // public System.Void SetInput(System.Byte[] buffer, System.Int32 offset, System.Int32 length)
-    // Offset: 0x111F754
+    // Offset: 0x1696FC0
     void SetInput(::ArrayW<uint8_t> buffer, int offset, int length);
     // public System.Void SkipBits(System.Int32 n)
-    // Offset: 0x111F614
+    // Offset: 0x1696E80
     void SkipBits(int n);
     // public System.Void SkipToByteBoundary()
-    // Offset: 0x1120AC4
+    // Offset: 0x1698330
     void SkipToByteBoundary();
     // public System.Void .ctor()
-    // Offset: 0x111F724
+    // Offset: 0x1696F90
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

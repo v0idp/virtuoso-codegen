@@ -41,15 +41,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class AutocompleteWordPicker : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.UI.InputField TextField
     // Size: 0x8
     // Offset: 0x18
@@ -66,17 +58,17 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.InputField TextField
-    ::UnityEngine::UI::InputField*& dyn_TextField();
+    [[deprecated]] ::UnityEngine::UI::InputField*& dyn_TextField();
     // Get instance field reference: public NGramGenerator WordPredictor
-    ::GlobalNamespace::NGramGenerator*& dyn_WordPredictor();
+    [[deprecated]] ::GlobalNamespace::NGramGenerator*& dyn_WordPredictor();
     // public System.Void ReplaceWord(System.String correctWord)
-    // Offset: 0x1366E5C
+    // Offset: 0x965668
     void ReplaceWord(::StringW correctWord);
     // static public System.String ReverseString(System.String s)
-    // Offset: 0x1374930
+    // Offset: 0x973894
     static ::StringW ReverseString(::StringW s);
     // public System.Void .ctor()
-    // Offset: 0x1374970
+    // Offset: 0x9738D4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

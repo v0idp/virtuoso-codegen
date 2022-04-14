@@ -37,15 +37,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class UserOptions : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IntPtr Handle
     // Size: 0x8
     // Offset: 0x10
@@ -58,24 +50,24 @@ namespace Oculus::Platform {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr Handle
-    ::System::IntPtr& dyn_Handle();
+    [[deprecated]] ::System::IntPtr& dyn_Handle();
     // public System.Void SetMaxUsers(System.UInt32 value)
-    // Offset: 0x1150210
+    // Offset: 0x171D10C
     void SetMaxUsers(uint value);
     // public System.Void AddServiceProvider(Oculus.Platform.ServiceProvider value)
-    // Offset: 0x1150288
+    // Offset: 0x171D184
     void AddServiceProvider(::Oculus::Platform::ServiceProvider value);
     // public System.Void ClearServiceProviders()
-    // Offset: 0x1150300
+    // Offset: 0x171D1FC
     void ClearServiceProviders();
     // public System.Void SetTimeWindow(Oculus.Platform.TimeWindow value)
-    // Offset: 0x1150368
+    // Offset: 0x171D264
     void SetTimeWindow(::Oculus::Platform::TimeWindow value);
     // static public System.IntPtr op_Explicit(Oculus.Platform.UserOptions options)
-    // Offset: 0x11503E0
+    // Offset: 0x171D2DC
     // ABORTED: conflicts with another method.  explicit operator ::System::IntPtr();
     // public System.Void .ctor()
-    // Offset: 0x115019C
+    // Offset: 0x171D098
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -84,7 +76,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<UserOptions*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x115042C
+    // Offset: 0x171D328
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

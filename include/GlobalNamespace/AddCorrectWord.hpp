@@ -35,15 +35,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class AddCorrectWord : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private AutocompleteWordPicker wordPicker
     // Size: 0x8
     // Offset: 0x18
@@ -54,15 +46,15 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private AutocompleteWordPicker wordPicker
-    ::GlobalNamespace::AutocompleteWordPicker*& dyn_wordPicker();
+    [[deprecated]] ::GlobalNamespace::AutocompleteWordPicker*& dyn_wordPicker();
     // private System.Void Start()
-    // Offset: 0x1366D74
+    // Offset: 0x965580
     void Start();
     // public System.Void WordChosen()
-    // Offset: 0x1366DD8
+    // Offset: 0x9655E4
     void WordChosen();
     // public System.Void .ctor()
-    // Offset: 0x13671A4
+    // Offset: 0x9659B0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

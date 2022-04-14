@@ -81,7 +81,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRVoiceMod/ovrVoiceModError UndefinedFunction
     static void _set_UndefinedFunction(::GlobalNamespace::OVRVoiceMod::ovrVoiceModError value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // OVRVoiceMod/ovrVoiceModError
   #pragma pack(pop)
   static check_size<sizeof(OVRVoiceMod::ovrVoiceModError), 0 + sizeof(int)> __GlobalNamespace_OVRVoiceMod_ovrVoiceModErrorSizeCheck;

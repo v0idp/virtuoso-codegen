@@ -26,16 +26,8 @@ namespace UnityEngine::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class AndroidAssetPackUseMobileDataRequestResult : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x59FDC0
+    // [DebuggerBrowsableAttribute] Offset: 0x6B3F74
     // private readonly System.Boolean <allowed>k__BackingField
     // Size: 0x1
     // Offset: 0x10
@@ -48,9 +40,9 @@ namespace UnityEngine::Android {
       return allowed;
     }
     // Get instance field reference: private readonly System.Boolean <allowed>k__BackingField
-    bool& dyn_$allowed$k__BackingField();
+    [[deprecated]] bool& dyn_$allowed$k__BackingField();
     // System.Void .ctor(System.Boolean allowed)
-    // Offset: 0x126DEFC
+    // Offset: 0x18662A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AndroidAssetPackUseMobileDataRequestResult* New_ctor(bool allowed) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult::.ctor");

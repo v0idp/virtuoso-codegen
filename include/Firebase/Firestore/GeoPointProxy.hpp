@@ -30,15 +30,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class GeoPointProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -57,37 +49,37 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC36694
+    // Offset: 0xD58770
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GeoPointProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::GeoPointProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GeoPointProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // public System.Void .ctor(System.Double latitude, System.Double longitude)
-    // Offset: 0xC3DE84
+    // Offset: 0xD61C94
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GeoPointProxy* New_ctor(double latitude, double longitude) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::GeoPointProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GeoPointProxy*, creationType>(latitude, longitude)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.GeoPointProxy obj)
-    // Offset: 0xC35DCC
+    // Offset: 0xD57F54
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::GeoPointProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC3E1FC
+    // Offset: 0xD61FF4
     void Dispose();
     // public System.Double latitude()
-    // Offset: 0xC3DF3C
+    // Offset: 0xD61D44
     double latitude();
     // public System.Double longitude()
-    // Offset: 0xC3DFE8
+    // Offset: 0xD61DE8
     double longitude();
     // protected override System.Void Finalize()
-    // Offset: 0xC3E18C
+    // Offset: 0xD61F84
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

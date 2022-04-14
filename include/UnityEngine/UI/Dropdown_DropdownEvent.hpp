@@ -25,7 +25,7 @@ namespace UnityEngine::UI {
   class Dropdown::DropdownEvent : public ::UnityEngine::Events::UnityEvent_1<int> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x1141798
+    // Offset: 0x16D7F30
     // Implemented from: UnityEngine.Events.UnityEvent`1
     // Base method: System.Void UnityEvent_1::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

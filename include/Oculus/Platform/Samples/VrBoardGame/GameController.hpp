@@ -107,20 +107,12 @@ namespace Oculus::Platform::Samples::VrBoardGame {
       // Set static field: static public Oculus.Platform.Samples.VrBoardGame.GameController/Oculus.Platform.Samples.VrBoardGame.GameState OnlineMatchRemoteTurn
       static void _set_OnlineMatchRemoteTurn(::Oculus::Platform::Samples::VrBoardGame::GameController::GameState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrBoardGame.GameController/Oculus.Platform.Samples.VrBoardGame.GameState
     #pragma pack(pop)
     static check_size<sizeof(GameController::GameState), 0 + sizeof(int)> __Oculus_Platform_Samples_VrBoardGame_GameController_GameStateSizeCheck;
     static_assert(sizeof(GameController::GameState) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Samples.VrBoardGame.MatchmakingManager m_matchmaking
     // Size: 0x8
     // Offset: 0x18
@@ -237,106 +229,106 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.MatchmakingManager m_matchmaking
-    ::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager*& dyn_m_matchmaking();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager*& dyn_m_matchmaking();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameBoard m_board
-    ::Oculus::Platform::Samples::VrBoardGame::GameBoard*& dyn_m_board();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameBoard*& dyn_m_board();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_pieceA
-    ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_pieceA();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_pieceA();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_pieceB
-    ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_pieceB();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_pieceB();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_powerPiece
-    ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_powerPiece();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_powerPiece();
     // Get instance field reference: private UnityEngine.Color m_unusableColor
-    ::UnityEngine::Color& dyn_m_unusableColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_m_unusableColor();
     // Get instance field reference: private UnityEngine.Color m_unselectedColor
-    ::UnityEngine::Color& dyn_m_unselectedColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_m_unselectedColor();
     // Get instance field reference: private UnityEngine.Color m_selectedColor
-    ::UnityEngine::Color& dyn_m_selectedColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_m_selectedColor();
     // Get instance field reference: private UnityEngine.Color m_highlightedColor
-    ::UnityEngine::Color& dyn_m_highlightedColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_m_highlightedColor();
     // Get instance field reference: private UnityEngine.UI.Text m_ballCountText
-    ::UnityEngine::UI::Text*& dyn_m_ballCountText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_ballCountText();
     // Get instance field reference: private UnityEngine.UI.Text m_player0Text
-    ::UnityEngine::UI::Text*& dyn_m_player0Text();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_player0Text();
     // Get instance field reference: private UnityEngine.UI.Text m_player1Text
-    ::UnityEngine::UI::Text*& dyn_m_player1Text();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_player1Text();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameController/Oculus.Platform.Samples.VrBoardGame.GameState m_state
-    ::Oculus::Platform::Samples::VrBoardGame::GameController::GameState& dyn_m_state();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameController::GameState& dyn_m_state();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_interestedPiece
-    ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_interestedPiece();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_interestedPiece();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_selectedPiece
-    ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_selectedPiece();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_selectedPiece();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_proposedPiece
-    ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_proposedPiece();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_proposedPiece();
     // Get instance field reference: private System.UInt32 m_powerBallcount
-    uint& dyn_m_powerBallcount();
+    [[deprecated]] uint& dyn_m_powerBallcount();
     // Get instance field reference: private System.String m_opponentName
-    ::StringW& dyn_m_opponentName();
+    [[deprecated]] ::StringW& dyn_m_opponentName();
     // private System.Void Start()
-    // Offset: 0x7E9B58
+    // Offset: 0x92FF38
     void Start();
     // private System.Void Update()
-    // Offset: 0x7E9CC0
+    // Offset: 0x9300A0
     void Update();
     // private System.Void TransitionToState(Oculus.Platform.Samples.VrBoardGame.GameController/Oculus.Platform.Samples.VrBoardGame.GameState state)
-    // Offset: 0x7E9B80
+    // Offset: 0x92FF60
     void TransitionToState(::Oculus::Platform::Samples::VrBoardGame::GameController::GameState state);
     // private System.Void TransitionToNextState()
-    // Offset: 0x7EA0EC
+    // Offset: 0x9304CC
     void TransitionToNextState();
     // private System.Void PerFrameStateUpdate()
-    // Offset: 0x7E9CC4
+    // Offset: 0x9300A4
     void PerFrameStateUpdate();
     // public System.Void PracticeButtonPressed()
-    // Offset: 0x7EA674
+    // Offset: 0x930A54
     void PracticeButtonPressed();
     // private System.Void MakeAIMove(System.Int32 player)
-    // Offset: 0x7EA1D4
+    // Offset: 0x9305B4
     void MakeAIMove(int player);
     // public System.Void StartOnlineMatch(System.String opponentName, System.Boolean localUserGoesFirst)
-    // Offset: 0x7EA79C
+    // Offset: 0x930B7C
     void StartOnlineMatch(::StringW opponentName, bool localUserGoesFirst);
     // public System.Void MakeRemoteMove(Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece piece, System.Int32 x, System.Int32 y)
-    // Offset: 0x7EA7FC
+    // Offset: 0x930BDC
     void MakeRemoteMove(::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece piece, int x, int y);
     // public System.Void MarkRemoteTurnComplete()
-    // Offset: 0x7EA8A0
+    // Offset: 0x930C80
     void MarkRemoteTurnComplete();
     // public System.Void RemoteMatchEnded()
-    // Offset: 0x7EA8B4
+    // Offset: 0x930C94
     void RemoteMatchEnded();
     // public System.Void StartedLookingAtPiece(Oculus.Platform.Samples.VrBoardGame.GamePiece piece)
-    // Offset: 0x7E8850
+    // Offset: 0x92EC30
     void StartedLookingAtPiece(::Oculus::Platform::Samples::VrBoardGame::GamePiece* piece);
     // public System.Void StoppedLookingAtPiece()
-    // Offset: 0x7E8848
+    // Offset: 0x92EC28
     void StoppedLookingAtPiece();
     // public System.Void StartedLookingAtPosition(Oculus.Platform.Samples.VrBoardGame.BoardPosition position)
-    // Offset: 0x7E8858
+    // Offset: 0x92EC38
     void StartedLookingAtPosition(::Oculus::Platform::Samples::VrBoardGame::BoardPosition* position);
     // public System.Void ClearProposedMove()
-    // Offset: 0x7E8AD0
+    // Offset: 0x92EEB0
     void ClearProposedMove();
     // public System.Void TrySelectPiece()
-    // Offset: 0x7EA3E4
+    // Offset: 0x9307C4
     void TrySelectPiece();
     // public System.Void TryPlacePiece()
-    // Offset: 0x7EA4EC
+    // Offset: 0x9308CC
     void TryPlacePiece();
     // public System.Void QuitButtonPressed()
-    // Offset: 0x7EA914
+    // Offset: 0x930CF4
     void QuitButtonPressed();
     // public System.Void AddPowerballs(System.UInt32 count)
-    // Offset: 0x7EA91C
+    // Offset: 0x930CFC
     void AddPowerballs(uint count);
     // private System.Void UpdateScores()
-    // Offset: 0x7E9B88
+    // Offset: 0x92FF68
     void UpdateScores();
     // private System.Void UpdateGamePieceColors()
-    // Offset: 0x7E9D78
+    // Offset: 0x930158
     void UpdateGamePieceColors();
     // public System.Void .ctor()
-    // Offset: 0x7EA9B8
+    // Offset: 0x930D98
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

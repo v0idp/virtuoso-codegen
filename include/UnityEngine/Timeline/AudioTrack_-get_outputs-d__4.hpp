@@ -36,15 +36,7 @@ namespace UnityEngine::Timeline {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class AudioTrack::$get_outputs$d__4 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>, public ::System::Collections::Generic::IEnumerator_1<::UnityEngine::Playables::PlayableBinding>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -83,40 +75,40 @@ namespace UnityEngine::Timeline {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::UnityEngine::Playables::PlayableBinding>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private UnityEngine.Playables.PlayableBinding <>2__current
-    ::UnityEngine::Playables::PlayableBinding& dyn_$$2__current();
+    [[deprecated]] ::UnityEngine::Playables::PlayableBinding& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    int& dyn_$$l__initialThreadId();
+    [[deprecated]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public UnityEngine.Timeline.AudioTrack <>4__this
-    ::UnityEngine::Timeline::AudioTrack*& dyn_$$4__this();
+    [[deprecated]] ::UnityEngine::Timeline::AudioTrack*& dyn_$$4__this();
     // private UnityEngine.Playables.PlayableBinding System.Collections.Generic.IEnumerator<UnityEngine.Playables.PlayableBinding>.get_Current()
-    // Offset: 0x12D16C8
+    // Offset: 0x18D493C
     ::UnityEngine::Playables::PlayableBinding System_Collections_Generic_IEnumerator$UnityEngine_Playables_PlayableBinding$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x12D1718
+    // Offset: 0x18D498C
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x12D15FC
+    // Offset: 0x18D4870
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioTrack::$get_outputs$d__4* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AudioTrack::$get_outputs$d__4::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AudioTrack::$get_outputs$d__4*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x12D1634
+    // Offset: 0x18D48A8
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x12D1638
+    // Offset: 0x18D48AC
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x12D16D8
+    // Offset: 0x18D494C
     void System_Collections_IEnumerator_Reset();
     // private System.Collections.Generic.IEnumerator`1<UnityEngine.Playables.PlayableBinding> System.Collections.Generic.IEnumerable<UnityEngine.Playables.PlayableBinding>.GetEnumerator()
-    // Offset: 0x12D177C
+    // Offset: 0x18D49F0
     ::System::Collections::Generic::IEnumerator_1<::UnityEngine::Playables::PlayableBinding>* System_Collections_Generic_IEnumerable$UnityEngine_Playables_PlayableBinding$_GetEnumerator();
     // private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-    // Offset: 0x12D1824
+    // Offset: 0x18D4A98
     ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator();
   }; // UnityEngine.Timeline.AudioTrack/UnityEngine.Timeline.<get_outputs>d__4
   #pragma pack(pop)

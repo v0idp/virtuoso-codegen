@@ -46,15 +46,7 @@ namespace Firebase::Firestore {
     public:
     // Nested type: ::Firebase::Firestore::FieldValueProxy::Type
     struct Type;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -73,99 +65,99 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC32210
+    // Offset: 0xD544BC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldValueProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldValueProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FieldValueProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.FieldValueProxy obj)
-    // Offset: 0xC34C30
+    // Offset: 0xD56DE0
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::FieldValueProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC355F4
+    // Offset: 0xD5778C
     void Dispose();
     // static public Firebase.Firestore.FieldValueProxy Boolean(System.Boolean value)
-    // Offset: 0xC29410
+    // Offset: 0xD4B140
     static ::Firebase::Firestore::FieldValueProxy* Boolean(bool value);
     // static public Firebase.Firestore.FieldValueProxy Integer(System.Int64 value)
-    // Offset: 0xC29774
+    // Offset: 0xD4B49C
     static ::Firebase::Firestore::FieldValueProxy* Integer(int64_t value);
     // static public Firebase.Firestore.FieldValueProxy Double(System.Double value)
-    // Offset: 0xC32740
+    // Offset: 0xD549E4
     static ::Firebase::Firestore::FieldValueProxy* Double(double value);
     // static public Firebase.Firestore.FieldValueProxy Timestamp(Firebase.Firestore.TimestampProxy value)
-    // Offset: 0xC2F47C
+    // Offset: 0xD5128C
     static ::Firebase::Firestore::FieldValueProxy* Timestamp(::Firebase::Firestore::TimestampProxy* value);
     // static public Firebase.Firestore.FieldValueProxy String(System.String value)
-    // Offset: 0xC35A78
+    // Offset: 0xD57C10
     static ::Firebase::Firestore::FieldValueProxy* String(::StringW value);
     // static public Firebase.Firestore.FieldValueProxy Blob(Firebase.Firestore.SWIGTYPE_p_unsigned_char value, System.UInt32 size)
-    // Offset: 0xC2C334
+    // Offset: 0xD4E144
     static ::Firebase::Firestore::FieldValueProxy* Blob(::Firebase::Firestore::SWIGTYPE_p_unsigned_char* value, uint size);
     // static public Firebase.Firestore.FieldValueProxy Reference(Firebase.Firestore.DocumentReferenceProxy value)
-    // Offset: 0xC3084C
+    // Offset: 0xD5295C
     static ::Firebase::Firestore::FieldValueProxy* Reference(::Firebase::Firestore::DocumentReferenceProxy* value);
     // static public Firebase.Firestore.FieldValueProxy GeoPoint(Firebase.Firestore.GeoPointProxy value)
-    // Offset: 0xC35CEC
+    // Offset: 0xD57E7C
     static ::Firebase::Firestore::FieldValueProxy* GeoPoint(::Firebase::Firestore::GeoPointProxy* value);
     // public Firebase.Firestore.FieldValueProxy/Firebase.Firestore.Type type()
-    // Offset: 0xC259F0
+    // Offset: 0xD47760
     ::Firebase::Firestore::FieldValueProxy::Type type();
     // public System.Boolean is_null()
-    // Offset: 0xC35F38
+    // Offset: 0xD580C0
     bool is_null();
     // public System.Boolean is_map()
-    // Offset: 0xC36064
+    // Offset: 0xD52278
     bool is_map();
     // public System.Boolean boolean_value()
-    // Offset: 0xC2AD00
+    // Offset: 0xD4CB88
     bool boolean_value();
     // public System.Int64 integer_value()
-    // Offset: 0xC2B050
+    // Offset: 0xD4CEC0
     int64_t integer_value();
     // public System.Double double_value()
-    // Offset: 0xC2AE74
+    // Offset: 0xD4CCF4
     double double_value();
     // public Firebase.Firestore.TimestampProxy timestamp_value()
-    // Offset: 0xC2B294
+    // Offset: 0xD4D0EC
     ::Firebase::Firestore::TimestampProxy* timestamp_value();
     // public System.String string_value()
-    // Offset: 0xC2B1F0
+    // Offset: 0xD4D050
     ::StringW string_value();
     // public Firebase.Firestore.SWIGTYPE_p_unsigned_char blob_value()
-    // Offset: 0xC2C0C0
+    // Offset: 0xD4DEE0
     ::Firebase::Firestore::SWIGTYPE_p_unsigned_char* blob_value();
     // public System.UInt32 blob_size()
-    // Offset: 0xC2C240
+    // Offset: 0xD4E058
     uint blob_size();
     // public Firebase.Firestore.DocumentReferenceProxy reference_value()
-    // Offset: 0xC2B0F4
+    // Offset: 0xD4CF5C
     ::Firebase::Firestore::DocumentReferenceProxy* reference_value();
     // public Firebase.Firestore.GeoPointProxy geo_point_value()
-    // Offset: 0xC2AF20
+    // Offset: 0xD4CD98
     ::Firebase::Firestore::GeoPointProxy* geo_point_value();
     // public System.Boolean is_valid()
-    // Offset: 0xC366F8
+    // Offset: 0xD587D4
     bool is_valid();
     // static public Firebase.Firestore.FieldValueProxy Null()
-    // Offset: 0xC36824
+    // Offset: 0xD588F8
     static ::Firebase::Firestore::FieldValueProxy* Null();
     // static public Firebase.Firestore.FieldValueProxy Delete()
-    // Offset: 0xC354C0
+    // Offset: 0xD57660
     static ::Firebase::Firestore::FieldValueProxy* Delete();
     // static public Firebase.Firestore.FieldValueProxy ServerTimestamp()
-    // Offset: 0xC353FC
+    // Offset: 0xD575A4
     static ::Firebase::Firestore::FieldValueProxy* ServerTimestamp();
     // static public Firebase.Firestore.FieldValueProxy IntegerIncrement(System.Int64 byValue)
-    // Offset: 0xC352D0
+    // Offset: 0xD57480
     static ::Firebase::Firestore::FieldValueProxy* IntegerIncrement(int64_t byValue);
     // protected override System.Void Finalize()
-    // Offset: 0xC35584
+    // Offset: 0xD5771C
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

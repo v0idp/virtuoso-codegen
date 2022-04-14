@@ -30,17 +30,12 @@ namespace VROSC {
   class CloudSessionsDataModel : public ::VROSC::SessionsDataModel {
     public:
     // public override System.String get_Key()
-    // Offset: 0x1332F08
+    // Offset: 0x946EF8
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
-    // public override System.Int32 get_Version()
-    // Offset: 0x1332F4C
-    // Implemented from: VROSC.BaseDataModel
-    // Base method: System.Int32 BaseDataModel::get_Version()
-    int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x13320A0
+    // Offset: 0x9460A4
     // Implemented from: VROSC.SessionsDataModel
     // Base method: System.Void SessionsDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
@@ -60,14 +55,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (VROSC::CloudSessionsDataModel::*)()>(&VROSC::CloudSessionsDataModel::get_Key)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::CloudSessionsDataModel*), "get_Key", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::CloudSessionsDataModel::get_Version
-// Il2CppName: get_Version
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC::CloudSessionsDataModel::*)()>(&VROSC::CloudSessionsDataModel::get_Version)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::CloudSessionsDataModel*), "get_Version", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::CloudSessionsDataModel::New_ctor

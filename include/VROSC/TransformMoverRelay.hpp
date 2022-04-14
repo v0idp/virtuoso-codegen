@@ -45,15 +45,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x69 to desired offset: 0x70
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TransformMover _target
     // Size: 0x8
     // Offset: 0x70
@@ -62,21 +54,21 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TransformMover*) == 0x8);
     public:
     // Get instance field reference: private VROSC.TransformMover _target
-    ::VROSC::TransformMover*& dyn__target();
+    [[deprecated]] ::VROSC::TransformMover*& dyn__target();
     // public VROSC.TransformMover get_Target()
-    // Offset: 0x1404940
+    // Offset: 0xA2C5C4
     ::VROSC::TransformMover* get_Target();
     // private System.Void Start()
-    // Offset: 0x1404948
+    // Offset: 0xA2C5CC
     void Start();
     // public System.Void ResetRelay()
-    // Offset: 0x14049D4
+    // Offset: 0xA2C658
     void ResetRelay();
     // public System.Void SetTarget(VROSC.TransformMover transformMover)
-    // Offset: 0x1404C30
+    // Offset: 0xA2C8B4
     void SetTarget(::VROSC::TransformMover* transformMover);
     // public System.Void .ctor()
-    // Offset: 0x1404CC8
+    // Offset: 0xA2C94C
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
@@ -91,12 +83,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TransformMoverRelay*, creationType>()));
     }
     // public override System.Void Grab(VROSC.GrabData grabData, System.Boolean grabbing)
-    // Offset: 0x1404A5C
+    // Offset: 0xA2C6E0
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::Grab(VROSC.GrabData grabData, System.Boolean grabbing)
     void Grab(::VROSC::GrabData* grabData, bool grabbing);
     // public override System.Void SetHovering(VROSC.InputDevice device, UnityEngine.Vector3 position, System.Boolean pointedAt, System.Boolean controllerIsHovering)
-    // Offset: 0x1404B1C
+    // Offset: 0xA2C7A0
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::SetHovering(VROSC.InputDevice device, UnityEngine.Vector3 position, System.Boolean pointedAt, System.Boolean controllerIsHovering)
     void SetHovering(::VROSC::InputDevice* device, ::UnityEngine::Vector3 position, bool pointedAt, bool controllerIsHovering);

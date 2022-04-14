@@ -31,15 +31,7 @@ namespace TMPro {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class KerningTable::$$c__DisplayClass5_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 left
     // Size: 0x4
     // Offset: 0x10
@@ -54,14 +46,14 @@ namespace TMPro {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 left
-    int& dyn_left();
+    [[deprecated]] int& dyn_left();
     // Get instance field reference: public System.Int32 right
-    int& dyn_right();
+    [[deprecated]] int& dyn_right();
     // System.Boolean <RemoveKerningPair>b__0(TMPro.KerningPair item)
-    // Offset: 0x1245E90
+    // Offset: 0x181FF2C
     bool $RemoveKerningPair$b__0(::TMPro::KerningPair* item);
     // public System.Void .ctor()
-    // Offset: 0x1245E88
+    // Offset: 0x181FF24
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

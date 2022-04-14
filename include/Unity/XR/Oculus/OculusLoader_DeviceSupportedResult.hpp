@@ -57,7 +57,7 @@ namespace Unity::XR::Oculus {
     // Set static field: static public Unity.XR.Oculus.OculusLoader/Unity.XR.Oculus.DeviceSupportedResult ExitApplication
     static void _set_ExitApplication(::Unity::XR::Oculus::OculusLoader::DeviceSupportedResult value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Unity.XR.Oculus.OculusLoader/Unity.XR.Oculus.DeviceSupportedResult
   #pragma pack(pop)
   static check_size<sizeof(OculusLoader::DeviceSupportedResult), 0 + sizeof(int)> __Unity_XR_Oculus_OculusLoader_DeviceSupportedResultSizeCheck;

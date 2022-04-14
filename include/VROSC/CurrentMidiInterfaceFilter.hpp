@@ -76,20 +76,12 @@ namespace VROSC {
       // Set static field: static public VROSC.CurrentMidiInterfaceFilter/VROSC.MidiInterfaceType External
       static void _set_External(::VROSC::CurrentMidiInterfaceFilter::MidiInterfaceType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.CurrentMidiInterfaceFilter/VROSC.MidiInterfaceType
     #pragma pack(pop)
     static check_size<sizeof(CurrentMidiInterfaceFilter::MidiInterfaceType), 0 + sizeof(int)> __VROSC_CurrentMidiInterfaceFilter_MidiInterfaceTypeSizeCheck;
     static_assert(sizeof(CurrentMidiInterfaceFilter::MidiInterfaceType) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.CurrentMidiInterfaceFilter/VROSC.MidiInterfaceType _allowType
     // Size: 0x4
     // Offset: 0x40
@@ -98,9 +90,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::CurrentMidiInterfaceFilter::MidiInterfaceType) == 0x4);
     public:
     // Get instance field reference: private VROSC.CurrentMidiInterfaceFilter/VROSC.MidiInterfaceType _allowType
-    ::VROSC::CurrentMidiInterfaceFilter::MidiInterfaceType& dyn__allowType();
+    [[deprecated]] ::VROSC::CurrentMidiInterfaceFilter::MidiInterfaceType& dyn__allowType();
     // public System.Void .ctor()
-    // Offset: 0x1307650
+    // Offset: 0x8E062C
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -116,7 +108,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<CurrentMidiInterfaceFilter*, creationType>()));
     }
     // protected override System.Void FilterSignal(VROSC.Signal signal)
-    // Offset: 0x13075D0
+    // Offset: 0x8E05AC
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::FilterSignal(VROSC.Signal signal)
     void FilterSignal(::VROSC::Signal* signal);

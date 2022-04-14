@@ -29,10 +29,10 @@ namespace VROSC {
   class CopyVRCameraPosition : public ::UnityEngine::MonoBehaviour {
     public:
     // protected System.Void LateUpdate()
-    // Offset: 0x133B1A4
+    // Offset: 0x8DED04
     void LateUpdate();
     // public System.Void .ctor()
-    // Offset: 0x133B2BC
+    // Offset: 0x8DEE74
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -47,15 +47,7 @@ namespace UnityOSC {
     public:
     // Nested type: ::UnityOSC::OSCServer::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityOSC.PacketReceivedEventHandler PacketReceivedEvent
     // Size: 0x8
     // Offset: 0x10
@@ -96,62 +88,62 @@ namespace UnityOSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private UnityOSC.PacketReceivedEventHandler PacketReceivedEvent
-    ::UnityOSC::PacketReceivedEventHandler*& dyn_PacketReceivedEvent();
+    [[deprecated]] ::UnityOSC::PacketReceivedEventHandler*& dyn_PacketReceivedEvent();
     // Get instance field reference: private System.Net.Sockets.UdpClient _udpClient
-    ::System::Net::Sockets::UdpClient*& dyn__udpClient();
+    [[deprecated]] ::System::Net::Sockets::UdpClient*& dyn__udpClient();
     // Get instance field reference: private System.Int32 _localPort
-    int& dyn__localPort();
+    [[deprecated]] int& dyn__localPort();
     // Get instance field reference: private System.Threading.Thread _receiverThread
-    ::System::Threading::Thread*& dyn__receiverThread();
+    [[deprecated]] ::System::Threading::Thread*& dyn__receiverThread();
     // Get instance field reference: private UnityOSC.OSCPacket _lastReceivedPacket
-    ::UnityOSC::OSCPacket*& dyn__lastReceivedPacket();
+    [[deprecated]] ::UnityOSC::OSCPacket*& dyn__lastReceivedPacket();
     // Get instance field reference: private System.Int32 _sleepMilliseconds
-    int& dyn__sleepMilliseconds();
+    [[deprecated]] int& dyn__sleepMilliseconds();
     // public System.Net.Sockets.UdpClient get_UDPClient()
-    // Offset: 0xA19350
+    // Offset: 0xC5E3B4
     ::System::Net::Sockets::UdpClient* get_UDPClient();
     // public System.Void set_UDPClient(System.Net.Sockets.UdpClient value)
-    // Offset: 0xA19358
+    // Offset: 0xC5E3BC
     void set_UDPClient(::System::Net::Sockets::UdpClient* value);
     // public System.Int32 get_LocalPort()
-    // Offset: 0xA19360
+    // Offset: 0xC5E3C4
     int get_LocalPort();
     // public System.Void set_LocalPort(System.Int32 value)
-    // Offset: 0xA19368
+    // Offset: 0xC5E3CC
     void set_LocalPort(int value);
     // public UnityOSC.OSCPacket get_LastReceivedPacket()
-    // Offset: 0xA19370
+    // Offset: 0xC5E3D4
     ::UnityOSC::OSCPacket* get_LastReceivedPacket();
     // public System.Int32 get_SleepMilliseconds()
-    // Offset: 0xA19378
+    // Offset: 0xC5E3DC
     int get_SleepMilliseconds();
     // public System.Void set_SleepMilliseconds(System.Int32 value)
-    // Offset: 0xA19380
+    // Offset: 0xC5E3E4
     void set_SleepMilliseconds(int value);
     // public System.Void add_PacketReceivedEvent(UnityOSC.PacketReceivedEventHandler value)
-    // Offset: 0xA17BD0
+    // Offset: 0xC5CC34
     void add_PacketReceivedEvent(::UnityOSC::PacketReceivedEventHandler* value);
     // public System.Void remove_PacketReceivedEvent(UnityOSC.PacketReceivedEventHandler value)
-    // Offset: 0xA19118
+    // Offset: 0xC5E17C
     void remove_PacketReceivedEvent(::UnityOSC::PacketReceivedEventHandler* value);
     // public System.Void .ctor(System.Int32 localPort)
-    // Offset: 0xA17AB8
+    // Offset: 0xC5CB1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OSCServer* New_ctor(int localPort) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCServer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OSCServer*, creationType>(localPort)));
     }
     // public System.Void Connect()
-    // Offset: 0xA191B8
+    // Offset: 0xC5E21C
     void Connect();
     // public System.Void Close()
-    // Offset: 0xA17178
+    // Offset: 0xC5C1DC
     void Close();
     // private System.Void Receive()
-    // Offset: 0xA19388
+    // Offset: 0xC5E3EC
     void Receive();
     // private System.Void ReceivePool()
-    // Offset: 0xA1946C
+    // Offset: 0xC5E4D0
     void ReceivePool();
   }; // UnityOSC.OSCServer
   #pragma pack(pop)

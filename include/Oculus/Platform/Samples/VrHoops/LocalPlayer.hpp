@@ -29,15 +29,15 @@ namespace Oculus::Platform::Samples::VrHoops {
   class LocalPlayer : public ::Oculus::Platform::Samples::VrHoops::Player {
     public:
     // private System.Void Update()
-    // Offset: 0x96BB00
+    // Offset: 0xB3DE9C
     void Update();
     // public override System.Void set_Score(System.UInt32 value)
-    // Offset: 0x96B8A4
+    // Offset: 0xB3DC40
     // Implemented from: Oculus.Platform.Samples.VrHoops.Player
     // Base method: System.Void Player::set_Score(System.UInt32 value)
     void set_Score(uint value);
     // public System.Void .ctor()
-    // Offset: 0x96BC9C
+    // Offset: 0xB3E038
     // Implemented from: Oculus.Platform.Samples.VrHoops.Player
     // Base method: System.Void Player::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

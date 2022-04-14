@@ -53,37 +53,37 @@ namespace VROSC {
     // Set static field: static private System.Collections.Generic.List`1<System.String> _dateFormats
     static void _set__dateFormats(::System::Collections::Generic::List_1<::StringW>* value);
     // static private System.Void .cctor()
-    // Offset: 0x130A094
+    // Offset: 0x8E3244
     static void _cctor();
     // static public System.String GetEpochTime()
-    // Offset: 0x130980C
+    // Offset: 0x8E29BC
     static ::StringW GetEpochTime();
     // static public System.DateTime GetSyncedDate()
-    // Offset: 0x13098A8
+    // Offset: 0x8E2A58
     static ::System::DateTime GetSyncedDate();
     // static public System.DateTime GetDate()
-    // Offset: 0x1309904
+    // Offset: 0x8E2AB4
     static ::System::DateTime GetDate();
     // static public System.String GetSyncedDateString()
-    // Offset: 0x1309960
+    // Offset: 0x8E2B10
     static ::StringW GetSyncedDateString();
     // static public System.DateTime ParseDate(System.String date)
-    // Offset: 0x1309A10
+    // Offset: 0x8E2BC0
     static ::System::DateTime ParseDate(::StringW date);
     // static public System.String FormatDateForDisplay(System.DateTime date)
-    // Offset: 0x1309CA4
+    // Offset: 0x8E2E54
     static ::StringW FormatDateForDisplay(::System::DateTime date);
     // static public System.String GetDateForFilePath()
-    // Offset: 0x1309CCC
+    // Offset: 0x8E2E7C
     static ::StringW GetDateForFilePath();
     // static public System.String GetDateForLocalSessionId()
-    // Offset: 0x1309D7C
+    // Offset: 0x8E2F2C
     static ::StringW GetDateForLocalSessionId();
     // static public System.String GetDateForLogs()
-    // Offset: 0x1309E2C
+    // Offset: 0x8E2FDC
     static ::StringW GetDateForLogs();
     // static public System.String ConvertOldDateString(System.String date)
-    // Offset: 0x1309EDC
+    // Offset: 0x8E308C
     static ::StringW ConvertOldDateString(::StringW date);
   }; // VROSC.DateUtil
   #pragma pack(pop)

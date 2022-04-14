@@ -62,34 +62,34 @@ namespace DG::Tweening::Plugins {
     // Set static field: static private UnityEngine.RectOffset _r
     static void _set__r(::UnityEngine::RectOffset* value);
     // static private System.Void .cctor()
-    // Offset: 0x10A21FC
+    // Offset: 0x15E4824
     static void _cctor();
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<UnityEngine.RectOffset,UnityEngine.RectOffset,DG.Tweening.Plugins.Options.NoOptions> t)
-    // Offset: 0x10A1408
+    // Offset: 0x15E3A30
     void Reset(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::RectOffset*, ::UnityEngine::RectOffset*, ::DG::Tweening::Plugins::Options::NoOptions>* t);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.RectOffset,UnityEngine.RectOffset,DG.Tweening.Plugins.Options.NoOptions> t, System.Boolean isRelative)
-    // Offset: 0x10A1424
+    // Offset: 0x15E3A4C
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::RectOffset*, ::UnityEngine::RectOffset*, ::DG::Tweening::Plugins::Options::NoOptions>* t, bool isRelative);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.RectOffset,UnityEngine.RectOffset,DG.Tweening.Plugins.Options.NoOptions> t, UnityEngine.RectOffset fromValue, System.Boolean setImmediately)
-    // Offset: 0x10A15A8
+    // Offset: 0x15E3BD0
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::RectOffset*, ::UnityEngine::RectOffset*, ::DG::Tweening::Plugins::Options::NoOptions>* t, ::UnityEngine::RectOffset* fromValue, bool setImmediately);
     // public UnityEngine.RectOffset ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.RectOffset,UnityEngine.RectOffset,DG.Tweening.Plugins.Options.NoOptions> t, UnityEngine.RectOffset value)
-    // Offset: 0x10A162C
+    // Offset: 0x15E3C54
     ::UnityEngine::RectOffset* ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::RectOffset*, ::UnityEngine::RectOffset*, ::DG::Tweening::Plugins::Options::NoOptions>* t, ::UnityEngine::RectOffset* value);
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.RectOffset,UnityEngine.RectOffset,DG.Tweening.Plugins.Options.NoOptions> t)
-    // Offset: 0x10A16F4
+    // Offset: 0x15E3D1C
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::RectOffset*, ::UnityEngine::RectOffset*, ::DG::Tweening::Plugins::Options::NoOptions>* t);
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.RectOffset,UnityEngine.RectOffset,DG.Tweening.Plugins.Options.NoOptions> t)
-    // Offset: 0x10A180C
+    // Offset: 0x15E3E34
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::RectOffset*, ::UnityEngine::RectOffset*, ::DG::Tweening::Plugins::Options::NoOptions>* t);
     // public System.Single GetSpeedBasedDuration(DG.Tweening.Plugins.Options.NoOptions options, System.Single unitsXSecond, UnityEngine.RectOffset changeValue)
-    // Offset: 0x10A1960
+    // Offset: 0x15E3F88
     float GetSpeedBasedDuration(::DG::Tweening::Plugins::Options::NoOptions options, float unitsXSecond, ::UnityEngine::RectOffset* changeValue);
     // public System.Void EvaluateAndApply(DG.Tweening.Plugins.Options.NoOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<UnityEngine.RectOffset> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.RectOffset> setter, System.Single elapsed, UnityEngine.RectOffset startValue, UnityEngine.RectOffset changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x10A1A38
+    // Offset: 0x15E4060
     void EvaluateAndApply(::DG::Tweening::Plugins::Options::NoOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<::UnityEngine::RectOffset*>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::RectOffset*>* setter, float elapsed, ::UnityEngine::RectOffset* startValue, ::UnityEngine::RectOffset* changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // public System.Void .ctor()
-    // Offset: 0x10A21B0
+    // Offset: 0x15E47D8
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
     // Base method: System.Void Object::.ctor()

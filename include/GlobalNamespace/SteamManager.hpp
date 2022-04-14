@@ -30,10 +30,10 @@ namespace GlobalNamespace {
   class SteamManager : public ::UnityEngine::MonoBehaviour {
     public:
     // static public System.Boolean get_Initialized()
-    // Offset: 0x13BD9E8
+    // Offset: 0x1930E3C
     static bool get_Initialized();
     // public System.Void .ctor()
-    // Offset: 0x13BD9F0
+    // Offset: 0x1930E44
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -47,15 +47,7 @@ namespace System::Net::Sockets {
   // [TokenAttribute] Offset: FFFFFFFF
   class UdpClient : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.Sockets.Socket m_ClientSocket
     // Size: 0x8
     // Offset: 0x10
@@ -106,76 +98,76 @@ namespace System::Net::Sockets {
     // Set static field: static private System.Int32 MaxUDPSize
     static void _set_MaxUDPSize(int value);
     // Get instance field reference: private System.Net.Sockets.Socket m_ClientSocket
-    ::System::Net::Sockets::Socket*& dyn_m_ClientSocket();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_m_ClientSocket();
     // Get instance field reference: private System.Boolean m_Active
-    bool& dyn_m_Active();
+    [[deprecated]] bool& dyn_m_Active();
     // Get instance field reference: private System.Byte[] m_Buffer
-    ::ArrayW<uint8_t>& dyn_m_Buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_Buffer();
     // Get instance field reference: private System.Net.Sockets.AddressFamily m_Family
-    ::System::Net::Sockets::AddressFamily& dyn_m_Family();
+    [[deprecated]] ::System::Net::Sockets::AddressFamily& dyn_m_Family();
     // Get instance field reference: private System.Boolean m_CleanedUp
-    bool& dyn_m_CleanedUp();
+    [[deprecated]] bool& dyn_m_CleanedUp();
     // Get instance field reference: private System.Boolean m_IsBroadcast
-    bool& dyn_m_IsBroadcast();
+    [[deprecated]] bool& dyn_m_IsBroadcast();
     // public System.Net.Sockets.Socket get_Client()
-    // Offset: 0x954688
+    // Offset: 0xDB342C
     ::System::Net::Sockets::Socket* get_Client();
     // public System.Void set_Client(System.Net.Sockets.Socket value)
-    // Offset: 0x954690
+    // Offset: 0xDB3434
     void set_Client(::System::Net::Sockets::Socket* value);
     // public System.Void .ctor(System.Net.Sockets.AddressFamily family)
-    // Offset: 0x9542B4
+    // Offset: 0xDB3058
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UdpClient* New_ctor(::System::Net::Sockets::AddressFamily family) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::UdpClient::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UdpClient*, creationType>(family)));
     }
     // public System.Void .ctor(System.Int32 port)
-    // Offset: 0x954464
+    // Offset: 0xDB3208
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UdpClient* New_ctor(int port) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::UdpClient::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UdpClient*, creationType>(port)));
     }
     // public System.Void .ctor(System.Int32 port, System.Net.Sockets.AddressFamily family)
-    // Offset: 0x95446C
+    // Offset: 0xDB3210
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UdpClient* New_ctor(int port, ::System::Net::Sockets::AddressFamily family) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::UdpClient::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UdpClient*, creationType>(port, family)));
     }
     // public System.Void Close()
-    // Offset: 0x954698
+    // Offset: 0xDB343C
     void Close();
     // private System.Void FreeResources()
-    // Offset: 0x9546A8
+    // Offset: 0xDB344C
     void FreeResources();
     // public System.Void Dispose()
-    // Offset: 0x9546FC
+    // Offset: 0xDB34A0
     void Dispose();
     // protected System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x95470C
+    // Offset: 0xDB34B0
     void Dispose(bool disposing);
     // public System.Void Connect(System.Net.IPAddress addr, System.Int32 port)
-    // Offset: 0x954798
+    // Offset: 0xDB353C
     void Connect(::System::Net::IPAddress* addr, int port);
     // public System.Void Connect(System.Net.IPEndPoint endPoint)
-    // Offset: 0x954938
+    // Offset: 0xDB36DC
     void Connect(::System::Net::IPEndPoint* endPoint);
     // private System.Void CheckForBroadcast(System.Net.IPAddress ipAddress)
-    // Offset: 0x954A38
+    // Offset: 0xDB37DC
     void CheckForBroadcast(::System::Net::IPAddress* ipAddress);
     // public System.Int32 Send(System.Byte[] dgram, System.Int32 bytes)
-    // Offset: 0x954AA4
+    // Offset: 0xDB3848
     int Send(::ArrayW<uint8_t> dgram, int bytes);
     // public System.Byte[] Receive(ref System.Net.IPEndPoint remoteEP)
-    // Offset: 0x954BC4
+    // Offset: 0xDB3968
     ::ArrayW<uint8_t> Receive(ByRef<::System::Net::IPEndPoint*> remoteEP);
     // private System.Void createClientSocket()
-    // Offset: 0x9543F4
+    // Offset: 0xDB3198
     void createClientSocket();
     // public System.Void .ctor()
-    // Offset: 0x9542AC
+    // Offset: 0xDB3050
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

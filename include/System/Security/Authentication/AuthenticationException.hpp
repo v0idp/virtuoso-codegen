@@ -41,7 +41,7 @@ namespace System::Security::Authentication {
   class AuthenticationException : public ::System::SystemException {
     public:
     // public System.Void .ctor()
-    // Offset: 0xE67B24
+    // Offset: 0x10D85C4
     // Implemented from: System.SystemException
     // Base method: System.Void SystemException::.ctor()
     // Base method: System.Void Exception::.ctor()
@@ -52,7 +52,7 @@ namespace System::Security::Authentication {
       return THROW_UNLESS((::il2cpp_utils::New<AuthenticationException*, creationType>()));
     }
     // public System.Void .ctor(System.String message, System.Exception innerException)
-    // Offset: 0xE67B80
+    // Offset: 0x10D8620
     // Implemented from: System.SystemException
     // Base method: System.Void SystemException::.ctor(System.String message, System.Exception innerException)
     // Base method: System.Void Exception::.ctor(System.String message, System.Exception innerException)
@@ -62,7 +62,7 @@ namespace System::Security::Authentication {
       return THROW_UNLESS((::il2cpp_utils::New<AuthenticationException*, creationType>(message, innerException)));
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xE67B88
+    // Offset: 0x10D8628
     // Implemented from: System.SystemException
     // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)

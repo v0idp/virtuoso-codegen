@@ -52,15 +52,7 @@ namespace MiniJSON {
     public:
     // Nested type: ::MiniJSON::Json::Parser::TOKEN
     struct TOKEN;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IO.StringReader json
     // Size: 0x8
     // Offset: 0x10
@@ -83,55 +75,55 @@ namespace MiniJSON {
     // Set static field: static private System.String WORD_BREAK
     static void _set_WORD_BREAK(::StringW value);
     // Get instance field reference: private System.IO.StringReader json
-    ::System::IO::StringReader*& dyn_json();
+    [[deprecated]] ::System::IO::StringReader*& dyn_json();
     // private System.Char get_PeekChar()
-    // Offset: 0x13D29A0
+    // Offset: 0x195A6BC
     ::Il2CppChar get_PeekChar();
     // private System.Char get_NextChar()
-    // Offset: 0x13D27B4
+    // Offset: 0x195A4D0
     ::Il2CppChar get_NextChar();
     // private System.String get_NextWord()
-    // Offset: 0x13D2838
+    // Offset: 0x195A554
     ::StringW get_NextWord();
     // private MiniJSON.Json/MiniJSON.Parser/MiniJSON.TOKEN get_NextToken()
-    // Offset: 0x13D20B8
+    // Offset: 0x1959DD4
     ::MiniJSON::Json::Parser::TOKEN get_NextToken();
     // private System.Void .ctor(System.String jsonString)
-    // Offset: 0x13D1D4C
+    // Offset: 0x1959A68
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Json::Parser* New_ctor(::StringW jsonString) {
       static auto ___internal__logger = ::Logger::get().WithContext("::MiniJSON::Json::Parser::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Json::Parser*, creationType>(jsonString)));
     }
     // static public System.Boolean IsWordBreak(System.Char c)
-    // Offset: 0x13D1CA4
+    // Offset: 0x19599C0
     static bool IsWordBreak(::Il2CppChar c);
     // static public System.Object Parse(System.String jsonString)
-    // Offset: 0x13D1DC4
+    // Offset: 0x1959AE0
     static ::Il2CppObject* Parse(::StringW jsonString);
     // public System.Void Dispose()
-    // Offset: 0x13D1F5C
+    // Offset: 0x1959C78
     void Dispose();
     // private System.Collections.Generic.Dictionary`2<System.String,System.Object> ParseObject()
-    // Offset: 0x13D1F90
+    // Offset: 0x1959CAC
     ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* ParseObject();
     // private System.Collections.Generic.List`1<System.Object> ParseArray()
-    // Offset: 0x13D2510
+    // Offset: 0x195A22C
     ::System::Collections::Generic::List_1<::Il2CppObject*>* ParseArray();
     // private System.Object ParseValue()
-    // Offset: 0x13D1F34
+    // Offset: 0x1959C50
     ::Il2CppObject* ParseValue();
     // private System.Object ParseByToken(MiniJSON.Json/MiniJSON.Parser/MiniJSON.TOKEN token)
-    // Offset: 0x13D25F8
+    // Offset: 0x195A314
     ::Il2CppObject* ParseByToken(::MiniJSON::Json::Parser::TOKEN token);
     // private System.String ParseString()
-    // Offset: 0x13D227C
+    // Offset: 0x1959F98
     ::StringW ParseString();
     // private System.Object ParseNumber()
-    // Offset: 0x13D26D0
+    // Offset: 0x195A3EC
     ::Il2CppObject* ParseNumber();
     // private System.Void EatWhitespace()
-    // Offset: 0x13D28F0
+    // Offset: 0x195A60C
     void EatWhitespace();
   }; // MiniJSON.Json/MiniJSON.Parser
   #pragma pack(pop)

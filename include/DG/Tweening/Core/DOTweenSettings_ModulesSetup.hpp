@@ -23,15 +23,7 @@ namespace DG::Tweening::Core {
   // [TokenAttribute] Offset: FFFFFFFF
   class DOTweenSettings::ModulesSetup : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean showPanel
     // Size: 0x1
     // Offset: 0x10
@@ -82,23 +74,23 @@ namespace DG::Tweening::Core {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Boolean showPanel
-    bool& dyn_showPanel();
+    [[deprecated]] bool& dyn_showPanel();
     // Get instance field reference: public System.Boolean audioEnabled
-    bool& dyn_audioEnabled();
+    [[deprecated]] bool& dyn_audioEnabled();
     // Get instance field reference: public System.Boolean physicsEnabled
-    bool& dyn_physicsEnabled();
+    [[deprecated]] bool& dyn_physicsEnabled();
     // Get instance field reference: public System.Boolean physics2DEnabled
-    bool& dyn_physics2DEnabled();
+    [[deprecated]] bool& dyn_physics2DEnabled();
     // Get instance field reference: public System.Boolean spriteEnabled
-    bool& dyn_spriteEnabled();
+    [[deprecated]] bool& dyn_spriteEnabled();
     // Get instance field reference: public System.Boolean uiEnabled
-    bool& dyn_uiEnabled();
+    [[deprecated]] bool& dyn_uiEnabled();
     // Get instance field reference: public System.Boolean textMeshProEnabled
-    bool& dyn_textMeshProEnabled();
+    [[deprecated]] bool& dyn_textMeshProEnabled();
     // Get instance field reference: public System.Boolean tk2DEnabled
-    bool& dyn_tk2DEnabled();
+    [[deprecated]] bool& dyn_tk2DEnabled();
     // public System.Void .ctor()
-    // Offset: 0x126B074
+    // Offset: 0x1863418
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

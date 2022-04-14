@@ -66,19 +66,19 @@ namespace Proyecto26 {
     template<typename TResponse>
     class $$c__DisplayClass6_0_1;
     // static public System.Collections.IEnumerator CreateRequestAndRetry(Proyecto26.RequestHelper options, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0x89FDE8
+    // Offset: 0x19422A0
     static ::System::Collections::IEnumerator* CreateRequestAndRetry(::Proyecto26::RequestHelper* options, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static private UnityEngine.Networking.UnityWebRequest CreateRequest(Proyecto26.RequestHelper options)
-    // Offset: 0x89FE60
+    // Offset: 0x1942318
     static ::UnityEngine::Networking::UnityWebRequest* CreateRequest(::Proyecto26::RequestHelper* options);
     // static private Proyecto26.RequestException CreateException(Proyecto26.RequestHelper options, UnityEngine.Networking.UnityWebRequest request)
-    // Offset: 0x8A0038
+    // Offset: 0x19424F0
     static ::Proyecto26::RequestException* CreateException(::Proyecto26::RequestHelper* options, ::UnityEngine::Networking::UnityWebRequest* request);
     // static private System.Void DebugLog(System.Boolean debugEnabled, System.Object message, System.Boolean isError)
-    // Offset: 0x89FF84
+    // Offset: 0x194243C
     static void DebugLog(bool debugEnabled, ::Il2CppObject* message, bool isError);
     // static public System.Collections.IEnumerator DefaultUnityWebRequest(Proyecto26.RequestHelper options, System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback)
-    // Offset: 0x8A0148
+    // Offset: 0x1942600
     static ::System::Collections::IEnumerator* DefaultUnityWebRequest(::Proyecto26::RequestHelper* options, ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>* callback);
     // static public System.Collections.IEnumerator DefaultUnityWebRequest(Proyecto26.RequestHelper options, System.Action`3<Proyecto26.RequestException,Proyecto26.ResponseHelper,TResponse> callback)
     // Offset: 0xFFFFFFFFFFFFFFFF

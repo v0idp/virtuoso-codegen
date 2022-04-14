@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SignalNode : public ::VROSC::Node {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean _bypass
     // Size: 0x1
     // Offset: 0x18
@@ -91,49 +83,49 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean _bypass
-    bool& dyn__bypass();
+    [[deprecated]] bool& dyn__bypass();
     // Get instance field reference: protected VROSC.SignalNode[] _output
-    ::ArrayW<::VROSC::SignalNode*>& dyn__output();
+    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__output();
     // Get instance field reference: protected System.Boolean _blockPassOnThisFrame
-    bool& dyn__blockPassOnThisFrame();
+    [[deprecated]] bool& dyn__blockPassOnThisFrame();
     // Get instance field reference: protected System.Int32 _receivedSignalsThisFrame
-    int& dyn__receivedSignalsThisFrame();
+    [[deprecated]] int& dyn__receivedSignalsThisFrame();
     // Get instance field reference: protected System.Boolean _nodeProcessingSignal
-    bool& dyn__nodeProcessingSignal();
+    [[deprecated]] bool& dyn__nodeProcessingSignal();
     // Get instance field reference: private VROSC.Signal _cachedSignal
-    ::VROSC::Signal*& dyn__cachedSignal();
+    [[deprecated]] ::VROSC::Signal*& dyn__cachedSignal();
     // protected System.Int32 get_MaxInputs()
-    // Offset: 0x13B5638
+    // Offset: 0x1928504
     int get_MaxInputs();
     // protected System.Boolean get_RequireOrigin()
-    // Offset: 0x13B5640
+    // Offset: 0x192850C
     bool get_RequireOrigin();
     // protected System.Void OnDisable()
-    // Offset: 0x13B51D0
+    // Offset: 0x192809C
     void OnDisable();
     // protected System.Void OnEnable()
-    // Offset: 0x13B5648
+    // Offset: 0x1928514
     void OnEnable();
     // public System.Void ReceiveSignal(VROSC.Signal signal)
-    // Offset: 0x13B5650
+    // Offset: 0x192851C
     void ReceiveSignal(::VROSC::Signal* signal);
     // protected System.Void PassOnSignal(VROSC.Signal signal)
-    // Offset: 0x13B5054
+    // Offset: 0x1927F20
     void PassOnSignal(::VROSC::Signal* signal);
     // protected System.Void LateUpdate()
-    // Offset: 0x13B4E6C
+    // Offset: 0x1927D38
     void LateUpdate();
     // protected System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13B573C
+    // Offset: 0x1928608
     void NodeBegin(::VROSC::Signal* signal);
     // protected System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13B5740
+    // Offset: 0x192860C
     void NodeStay(::VROSC::Signal* signal);
     // protected System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x13B5744
+    // Offset: 0x1928610
     void NodeEnd(::VROSC::Signal* signal);
     // public System.Void .ctor()
-    // Offset: 0x13B2DE8
+    // Offset: 0x1925C8C
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

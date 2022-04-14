@@ -36,15 +36,7 @@ namespace System::Runtime::Remoting {
   // [TokenAttribute] Offset: FFFFFFFF
   class ProviderData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.String Ref
     // Size: 0x8
     // Offset: 0x10
@@ -77,20 +69,20 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::System::Collections::IList*) == 0x8);
     public:
     // Get instance field reference: System.String Ref
-    ::StringW& dyn_Ref();
+    [[deprecated]] ::StringW& dyn_Ref();
     // Get instance field reference: System.String Type
-    ::StringW& dyn_Type();
+    [[deprecated]] ::StringW& dyn_Type();
     // Get instance field reference: System.String Id
-    ::StringW& dyn_Id();
+    [[deprecated]] ::StringW& dyn_Id();
     // Get instance field reference: System.Collections.Hashtable CustomProperties
-    ::System::Collections::Hashtable*& dyn_CustomProperties();
+    [[deprecated]] ::System::Collections::Hashtable*& dyn_CustomProperties();
     // Get instance field reference: System.Collections.IList CustomData
-    ::System::Collections::IList*& dyn_CustomData();
+    [[deprecated]] ::System::Collections::IList*& dyn_CustomData();
     // public System.Void CopyFrom(System.Runtime.Remoting.ProviderData other)
-    // Offset: 0x1133310
+    // Offset: 0x160945C
     void CopyFrom(::System::Runtime::Remoting::ProviderData* other);
     // public System.Void .ctor()
-    // Offset: 0x11339A8
+    // Offset: 0x1609AF4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

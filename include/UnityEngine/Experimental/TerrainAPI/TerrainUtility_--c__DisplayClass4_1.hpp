@@ -31,15 +31,7 @@ namespace UnityEngine::Experimental::TerrainAPI {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class TerrainUtility::$$c__DisplayClass4_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Terrain t
     // Size: 0x8
     // Offset: 0x10
@@ -54,14 +46,14 @@ namespace UnityEngine::Experimental::TerrainAPI {
     static_assert(sizeof(::UnityEngine::Experimental::TerrainAPI::TerrainUtility::$$c__DisplayClass4_0*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Terrain t
-    ::UnityEngine::Terrain*& dyn_t();
+    [[deprecated]] ::UnityEngine::Terrain*& dyn_t();
     // Get instance field reference: public UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.<>c__DisplayClass4_0 CS$<>8__locals1
-    ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::$$c__DisplayClass4_0*& dyn_CS$$$8__locals1();
+    [[deprecated]] ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::$$c__DisplayClass4_0*& dyn_CS$$$8__locals1();
     // System.Boolean <CollectTerrains>b__0(UnityEngine.Terrain x)
-    // Offset: 0x12E24D0
+    // Offset: 0x18E6744
     bool $CollectTerrains$b__0(::UnityEngine::Terrain* x);
     // public System.Void .ctor()
-    // Offset: 0x12E1A78
+    // Offset: 0x18E5CEC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

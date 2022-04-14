@@ -240,48 +240,48 @@ namespace UnityEngine::XR {
     static ::UnityEngine::XR::InputFeatureUsage_1<::UnityEngine::XR::Eyes> _get_eyesData();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Eyes> eyesData
     static void _set_eyesData(::UnityEngine::XR::InputFeatureUsage_1<::UnityEngine::XR::Eyes> value);
-    // [ObsoleteAttribute] Offset: 0x5B3754
+    // [ObsoleteAttribute] Offset: 0x6C9884
     // Get static field: static public UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector2> dPad
     static ::UnityEngine::XR::InputFeatureUsage_1<::UnityEngine::Vector2> _get_dPad();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector2> dPad
     static void _set_dPad(::UnityEngine::XR::InputFeatureUsage_1<::UnityEngine::Vector2> value);
-    // [ObsoleteAttribute] Offset: 0x5B378C
+    // [ObsoleteAttribute] Offset: 0x6C98BC
     // Get static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> indexFinger
     static ::UnityEngine::XR::InputFeatureUsage_1<float> _get_indexFinger();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> indexFinger
     static void _set_indexFinger(::UnityEngine::XR::InputFeatureUsage_1<float> value);
-    // [ObsoleteAttribute] Offset: 0x5B37C4
+    // [ObsoleteAttribute] Offset: 0x6C98F4
     // Get static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> middleFinger
     static ::UnityEngine::XR::InputFeatureUsage_1<float> _get_middleFinger();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> middleFinger
     static void _set_middleFinger(::UnityEngine::XR::InputFeatureUsage_1<float> value);
-    // [ObsoleteAttribute] Offset: 0x5B37FC
+    // [ObsoleteAttribute] Offset: 0x6C992C
     // Get static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> ringFinger
     static ::UnityEngine::XR::InputFeatureUsage_1<float> _get_ringFinger();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> ringFinger
     static void _set_ringFinger(::UnityEngine::XR::InputFeatureUsage_1<float> value);
-    // [ObsoleteAttribute] Offset: 0x5B3834
+    // [ObsoleteAttribute] Offset: 0x6C9964
     // Get static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> pinkyFinger
     static ::UnityEngine::XR::InputFeatureUsage_1<float> _get_pinkyFinger();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> pinkyFinger
     static void _set_pinkyFinger(::UnityEngine::XR::InputFeatureUsage_1<float> value);
-    // [ObsoleteAttribute] Offset: 0x5B386C
+    // [ObsoleteAttribute] Offset: 0x6C999C
     // Get static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Boolean> thumbrest
     static ::UnityEngine::XR::InputFeatureUsage_1<bool> _get_thumbrest();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Boolean> thumbrest
     static void _set_thumbrest(::UnityEngine::XR::InputFeatureUsage_1<bool> value);
-    // [ObsoleteAttribute] Offset: 0x5B38A4
+    // [ObsoleteAttribute] Offset: 0x6C99D4
     // Get static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> indexTouch
     static ::UnityEngine::XR::InputFeatureUsage_1<float> _get_indexTouch();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> indexTouch
     static void _set_indexTouch(::UnityEngine::XR::InputFeatureUsage_1<float> value);
-    // [ObsoleteAttribute] Offset: 0x5B38DC
+    // [ObsoleteAttribute] Offset: 0x6C9A0C
     // Get static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> thumbTouch
     static ::UnityEngine::XR::InputFeatureUsage_1<float> _get_thumbTouch();
     // Set static field: static public UnityEngine.XR.InputFeatureUsage`1<System.Single> thumbTouch
     static void _set_thumbTouch(::UnityEngine::XR::InputFeatureUsage_1<float> value);
     // static private System.Void .cctor()
-    // Offset: 0x12C42F8
+    // Offset: 0x18C4688
     static void _cctor();
   }; // UnityEngine.XR.CommonUsages
   #pragma pack(pop)

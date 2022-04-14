@@ -32,15 +32,7 @@ namespace DG::Tweening {
   // [TokenAttribute] Offset: FFFFFFFF
   class DOTweenCYInstruction::WaitForPosition : public ::UnityEngine::CustomYieldInstruction {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly DG.Tweening.Tween t
     // Size: 0x8
     // Offset: 0x10
@@ -55,18 +47,18 @@ namespace DG::Tweening {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private readonly DG.Tweening.Tween t
-    ::DG::Tweening::Tween*& dyn_t();
+    [[deprecated]] ::DG::Tweening::Tween*& dyn_t();
     // Get instance field reference: private readonly System.Single position
-    float& dyn_position();
+    [[deprecated]] float& dyn_position();
     // public System.Void .ctor(DG.Tweening.Tween tween, System.Single position)
-    // Offset: 0x12642C0
+    // Offset: 0x17E214C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DOTweenCYInstruction::WaitForPosition* New_ctor(::DG::Tweening::Tween* tween, float position) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenCYInstruction::WaitForPosition::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DOTweenCYInstruction::WaitForPosition*, creationType>(tween, position)));
     }
     // public override System.Boolean get_keepWaiting()
-    // Offset: 0x126425C
+    // Offset: 0x17E28C8
     // Implemented from: UnityEngine.CustomYieldInstruction
     // Base method: System.Boolean CustomYieldInstruction::get_keepWaiting()
     bool get_keepWaiting();

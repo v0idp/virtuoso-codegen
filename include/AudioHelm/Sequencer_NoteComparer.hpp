@@ -37,10 +37,10 @@ namespace AudioHelm {
       return *reinterpret_cast<::System::Collections::Generic::IComparer_1<::AudioHelm::Note*>*>(this);
     }
     // public System.Int32 Compare(AudioHelm.Note left, AudioHelm.Note right)
-    // Offset: 0x1349FC4
+    // Offset: 0x8D4F3C
     int Compare(::AudioHelm::Note* left, ::AudioHelm::Note* right);
     // public System.Void .ctor()
-    // Offset: 0x134A000
+    // Offset: 0x8D4F78
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -47,15 +47,7 @@ namespace VROSC::UI {
     public:
     // Nested type: ::VROSC::UI::ControlPanel::$ModifyPosition$d__9
     class $ModifyPosition$d__9;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _heightPercentage
     // Size: 0x4
     // Offset: 0x18
@@ -104,30 +96,30 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _heightPercentage
-    float& dyn__heightPercentage();
+    [[deprecated]] float& dyn__heightPercentage();
     // Get instance field reference: private System.Single _distanceTolerance
-    float& dyn__distanceTolerance();
+    [[deprecated]] float& dyn__distanceTolerance();
     // Get instance field reference: private System.Single _moveSpeed
-    float& dyn__moveSpeed();
+    [[deprecated]] float& dyn__moveSpeed();
     // Get instance field reference: private UnityEngine.AnimationCurve _moveCurve
-    ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
     // Get instance field reference: private UnityEngine.Camera _mainCamera
-    ::UnityEngine::Camera*& dyn__mainCamera();
+    [[deprecated]] ::UnityEngine::Camera*& dyn__mainCamera();
     // Get instance field reference: private UnityEngine.Vector3 _currentPosition
-    ::UnityEngine::Vector3& dyn__currentPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__currentPosition();
     // Get instance field reference: private UnityEngine.Vector3 _targetPosition
-    ::UnityEngine::Vector3& dyn__targetPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__targetPosition();
     // private UnityEngine.Vector3 GetCorrectPosition()
-    // Offset: 0x1337C30
+    // Offset: 0x94CED8
     ::UnityEngine::Vector3 GetCorrectPosition();
     // private System.Void Update()
-    // Offset: 0x1337D24
+    // Offset: 0x94CFCC
     void Update();
     // private System.Collections.IEnumerator ModifyPosition(UnityEngine.Vector3 correctPosition)
-    // Offset: 0x1337DBC
+    // Offset: 0x94D064
     ::System::Collections::IEnumerator* ModifyPosition(::UnityEngine::Vector3 correctPosition);
     // public System.Void .ctor()
-    // Offset: 0x1337E4C
+    // Offset: 0x94D0F4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

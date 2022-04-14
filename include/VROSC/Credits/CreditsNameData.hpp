@@ -27,15 +27,7 @@ namespace VROSC::Credits {
   // [TokenAttribute] Offset: FFFFFFFF
   class CreditsNameData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _name
     // Size: 0x8
     // Offset: 0x10
@@ -50,17 +42,17 @@ namespace VROSC::Credits {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _name
-    ::StringW& dyn__name();
+    [[deprecated]] ::StringW& dyn__name();
     // Get instance field reference: private System.String _title
-    ::StringW& dyn__title();
+    [[deprecated]] ::StringW& dyn__title();
     // public System.String get_Name()
-    // Offset: 0x1306B88
+    // Offset: 0x8DFB78
     ::StringW get_Name();
     // public System.String get_Title()
-    // Offset: 0x1306B90
+    // Offset: 0x8DFB80
     ::StringW get_Title();
     // public System.Void .ctor()
-    // Offset: 0x1306B98
+    // Offset: 0x8DFB88
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

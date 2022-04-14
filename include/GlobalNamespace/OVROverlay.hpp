@@ -153,7 +153,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVROverlay/OverlayShape Fisheye
       static void _set_Fisheye(::GlobalNamespace::OVROverlay::OverlayShape value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVROverlay/OverlayShape
     #pragma pack(pop)
     static check_size<sizeof(OVROverlay::OverlayShape), 0 + sizeof(int)> __GlobalNamespace_OVROverlay_OverlayShapeSizeCheck;
@@ -201,7 +201,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVROverlay/OverlayType Overlay
       static void _set_Overlay(::GlobalNamespace::OVROverlay::OverlayType value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVROverlay/OverlayType
     #pragma pack(pop)
     static check_size<sizeof(OVROverlay::OverlayType), 0 + sizeof(int)> __GlobalNamespace_OVROverlay_OverlayTypeSizeCheck;
@@ -246,41 +246,33 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Texture appTexture
-      ::UnityEngine::Texture*& dyn_appTexture();
+      [[deprecated]] ::UnityEngine::Texture*& dyn_appTexture();
       // Get instance field reference: public System.IntPtr appTexturePtr
-      ::System::IntPtr& dyn_appTexturePtr();
+      [[deprecated]] ::System::IntPtr& dyn_appTexturePtr();
       // Get instance field reference: public UnityEngine.Texture[] swapChain
-      ::ArrayW<::UnityEngine::Texture*>& dyn_swapChain();
+      [[deprecated]] ::ArrayW<::UnityEngine::Texture*>& dyn_swapChain();
       // Get instance field reference: public System.IntPtr[] swapChainPtr
-      ::ArrayW<::System::IntPtr>& dyn_swapChainPtr();
+      [[deprecated]] ::ArrayW<::System::IntPtr>& dyn_swapChainPtr();
     }; // OVROverlay/LayerTexture
     #pragma pack(pop)
     static check_size<sizeof(OVROverlay::LayerTexture), 24 + sizeof(::ArrayW<::System::IntPtr>)> __GlobalNamespace_OVROverlay_LayerTextureSizeCheck;
     static_assert(sizeof(OVROverlay::LayerTexture) == 0x20);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x58CC90
+    // [TooltipAttribute] Offset: 0x697784
     // public OVROverlay/OverlayType currentOverlayType
     // Size: 0x4
     // Offset: 0x18
     ::GlobalNamespace::OVROverlay::OverlayType currentOverlayType;
     // Field size check
     static_assert(sizeof(::GlobalNamespace::OVROverlay::OverlayType) == 0x4);
-    // [TooltipAttribute] Offset: 0x58CCC8
+    // [TooltipAttribute] Offset: 0x6977BC
     // public System.Boolean isDynamic
     // Size: 0x1
     // Offset: 0x1C
     bool isDynamic;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x58CD00
+    // [TooltipAttribute] Offset: 0x6977F4
     // public System.Boolean isProtectedContent
     // Size: 0x1
     // Offset: 0x1D
@@ -365,7 +357,7 @@ namespace GlobalNamespace {
     bool hidden;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x58CD38
+    // [TooltipAttribute] Offset: 0x69782C
     // public System.Boolean isExternalSurface
     // Size: 0x1
     // Offset: 0xCA
@@ -374,21 +366,21 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: isExternalSurface and: externalSurfaceWidth
     char __padding15[0x1] = {};
-    // [TooltipAttribute] Offset: 0x58CD70
+    // [TooltipAttribute] Offset: 0x697864
     // public System.Int32 externalSurfaceWidth
     // Size: 0x4
     // Offset: 0xCC
     int externalSurfaceWidth;
     // Field size check
     static_assert(sizeof(int) == 0x4);
-    // [TooltipAttribute] Offset: 0x58CDA8
+    // [TooltipAttribute] Offset: 0x69789C
     // public System.Int32 externalSurfaceHeight
     // Size: 0x4
     // Offset: 0xD0
     int externalSurfaceHeight;
     // Field size check
     static_assert(sizeof(int) == 0x4);
-    // [TooltipAttribute] Offset: 0x58CDE0
+    // [TooltipAttribute] Offset: 0x6978D4
     // public System.Int32 compositionDepth
     // Size: 0x4
     // Offset: 0xD4
@@ -401,7 +393,7 @@ namespace GlobalNamespace {
     int layerCompositionDepth;
     // Field size check
     static_assert(sizeof(int) == 0x4);
-    // [TooltipAttribute] Offset: 0x58CE18
+    // [TooltipAttribute] Offset: 0x69790C
     // public System.Boolean noDepthBufferTesting
     // Size: 0x1
     // Offset: 0xDC
@@ -416,7 +408,7 @@ namespace GlobalNamespace {
     ::GlobalNamespace::OVRPlugin::EyeTextureFormat layerTextureFormat;
     // Field size check
     static_assert(sizeof(::GlobalNamespace::OVRPlugin::EyeTextureFormat) == 0x4);
-    // [TooltipAttribute] Offset: 0x58CE50
+    // [TooltipAttribute] Offset: 0x697944
     // public OVROverlay/OverlayShape currentOverlayShape
     // Size: 0x4
     // Offset: 0xE4
@@ -431,21 +423,21 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVROverlay::OverlayShape) == 0x4);
     // Padding between fields: prevOverlayShape and: textures
     char __padding23[0x4] = {};
-    // [TooltipAttribute] Offset: 0x58CE88
+    // [TooltipAttribute] Offset: 0x69797C
     // public UnityEngine.Texture[] textures
     // Size: 0x8
     // Offset: 0xF0
     ::ArrayW<::UnityEngine::Texture*> textures;
     // Field size check
     static_assert(sizeof(::ArrayW<::UnityEngine::Texture*>) == 0x8);
-    // [TooltipAttribute] Offset: 0x58CEC0
+    // [TooltipAttribute] Offset: 0x6979B4
     // public System.Boolean isAlphaPremultiplied
     // Size: 0x1
     // Offset: 0xF8
     bool isAlphaPremultiplied;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x58CEF8
+    // [TooltipAttribute] Offset: 0x6979EC
     // public System.Boolean useBicubicFiltering
     // Size: 0x1
     // Offset: 0xF9
@@ -602,197 +594,197 @@ namespace GlobalNamespace {
     // Set static field: static private UnityEngine.Material cubeMaterial
     static void _set_cubeMaterial(::UnityEngine::Material* value);
     // Get instance field reference: public OVROverlay/OverlayType currentOverlayType
-    ::GlobalNamespace::OVROverlay::OverlayType& dyn_currentOverlayType();
+    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayType& dyn_currentOverlayType();
     // Get instance field reference: public System.Boolean isDynamic
-    bool& dyn_isDynamic();
+    [[deprecated]] bool& dyn_isDynamic();
     // Get instance field reference: public System.Boolean isProtectedContent
-    bool& dyn_isProtectedContent();
+    [[deprecated]] bool& dyn_isProtectedContent();
     // Get instance field reference: public UnityEngine.Rect srcRectLeft
-    ::UnityEngine::Rect& dyn_srcRectLeft();
+    [[deprecated]] ::UnityEngine::Rect& dyn_srcRectLeft();
     // Get instance field reference: public UnityEngine.Rect srcRectRight
-    ::UnityEngine::Rect& dyn_srcRectRight();
+    [[deprecated]] ::UnityEngine::Rect& dyn_srcRectRight();
     // Get instance field reference: public UnityEngine.Rect destRectLeft
-    ::UnityEngine::Rect& dyn_destRectLeft();
+    [[deprecated]] ::UnityEngine::Rect& dyn_destRectLeft();
     // Get instance field reference: public UnityEngine.Rect destRectRight
-    ::UnityEngine::Rect& dyn_destRectRight();
+    [[deprecated]] ::UnityEngine::Rect& dyn_destRectRight();
     // Get instance field reference: public System.Boolean invertTextureRects
-    bool& dyn_invertTextureRects();
+    [[deprecated]] bool& dyn_invertTextureRects();
     // Get instance field reference: private OVRPlugin/TextureRectMatrixf textureRectMatrix
-    ::GlobalNamespace::OVRPlugin::TextureRectMatrixf& dyn_textureRectMatrix();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::TextureRectMatrixf& dyn_textureRectMatrix();
     // Get instance field reference: public System.Boolean overrideTextureRectMatrix
-    bool& dyn_overrideTextureRectMatrix();
+    [[deprecated]] bool& dyn_overrideTextureRectMatrix();
     // Get instance field reference: public System.Boolean overridePerLayerColorScaleAndOffset
-    bool& dyn_overridePerLayerColorScaleAndOffset();
+    [[deprecated]] bool& dyn_overridePerLayerColorScaleAndOffset();
     // Get instance field reference: public UnityEngine.Vector4 colorScale
-    ::UnityEngine::Vector4& dyn_colorScale();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_colorScale();
     // Get instance field reference: public UnityEngine.Vector4 colorOffset
-    ::UnityEngine::Vector4& dyn_colorOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_colorOffset();
     // Get instance field reference: public System.Boolean useExpensiveSuperSample
-    bool& dyn_useExpensiveSuperSample();
+    [[deprecated]] bool& dyn_useExpensiveSuperSample();
     // Get instance field reference: public System.Boolean hidden
-    bool& dyn_hidden();
+    [[deprecated]] bool& dyn_hidden();
     // Get instance field reference: public System.Boolean isExternalSurface
-    bool& dyn_isExternalSurface();
+    [[deprecated]] bool& dyn_isExternalSurface();
     // Get instance field reference: public System.Int32 externalSurfaceWidth
-    int& dyn_externalSurfaceWidth();
+    [[deprecated]] int& dyn_externalSurfaceWidth();
     // Get instance field reference: public System.Int32 externalSurfaceHeight
-    int& dyn_externalSurfaceHeight();
+    [[deprecated]] int& dyn_externalSurfaceHeight();
     // Get instance field reference: public System.Int32 compositionDepth
-    int& dyn_compositionDepth();
+    [[deprecated]] int& dyn_compositionDepth();
     // Get instance field reference: private System.Int32 layerCompositionDepth
-    int& dyn_layerCompositionDepth();
+    [[deprecated]] int& dyn_layerCompositionDepth();
     // Get instance field reference: public System.Boolean noDepthBufferTesting
-    bool& dyn_noDepthBufferTesting();
+    [[deprecated]] bool& dyn_noDepthBufferTesting();
     // Get instance field reference: public OVRPlugin/EyeTextureFormat layerTextureFormat
-    ::GlobalNamespace::OVRPlugin::EyeTextureFormat& dyn_layerTextureFormat();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::EyeTextureFormat& dyn_layerTextureFormat();
     // Get instance field reference: public OVROverlay/OverlayShape currentOverlayShape
-    ::GlobalNamespace::OVROverlay::OverlayShape& dyn_currentOverlayShape();
+    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayShape& dyn_currentOverlayShape();
     // Get instance field reference: private OVROverlay/OverlayShape prevOverlayShape
-    ::GlobalNamespace::OVROverlay::OverlayShape& dyn_prevOverlayShape();
+    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayShape& dyn_prevOverlayShape();
     // Get instance field reference: public UnityEngine.Texture[] textures
-    ::ArrayW<::UnityEngine::Texture*>& dyn_textures();
+    [[deprecated]] ::ArrayW<::UnityEngine::Texture*>& dyn_textures();
     // Get instance field reference: public System.Boolean isAlphaPremultiplied
-    bool& dyn_isAlphaPremultiplied();
+    [[deprecated]] bool& dyn_isAlphaPremultiplied();
     // Get instance field reference: public System.Boolean useBicubicFiltering
-    bool& dyn_useBicubicFiltering();
+    [[deprecated]] bool& dyn_useBicubicFiltering();
     // Get instance field reference: private System.Boolean _previewInEditor
-    bool& dyn__previewInEditor();
+    [[deprecated]] bool& dyn__previewInEditor();
     // Get instance field reference: protected System.IntPtr[] texturePtrs
-    ::ArrayW<::System::IntPtr>& dyn_texturePtrs();
+    [[deprecated]] ::ArrayW<::System::IntPtr>& dyn_texturePtrs();
     // Get instance field reference: public System.IntPtr externalSurfaceObject
-    ::System::IntPtr& dyn_externalSurfaceObject();
+    [[deprecated]] ::System::IntPtr& dyn_externalSurfaceObject();
     // Get instance field reference: public OVROverlay/ExternalSurfaceObjectCreated externalSurfaceObjectCreated
-    ::GlobalNamespace::OVROverlay::ExternalSurfaceObjectCreated*& dyn_externalSurfaceObjectCreated();
+    [[deprecated]] ::GlobalNamespace::OVROverlay::ExternalSurfaceObjectCreated*& dyn_externalSurfaceObjectCreated();
     // Get instance field reference: protected System.Boolean isOverridePending
-    bool& dyn_isOverridePending();
+    [[deprecated]] bool& dyn_isOverridePending();
     // Get instance field reference: private System.Int32 <layerId>k__BackingField
-    int& dyn_$layerId$k__BackingField();
+    [[deprecated]] int& dyn_$layerId$k__BackingField();
     // Get instance field reference: private OVROverlay/LayerTexture[] layerTextures
-    ::ArrayW<::GlobalNamespace::OVROverlay::LayerTexture>& dyn_layerTextures();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OVROverlay::LayerTexture>& dyn_layerTextures();
     // Get instance field reference: private OVRPlugin/LayerDesc layerDesc
-    ::GlobalNamespace::OVRPlugin::LayerDesc& dyn_layerDesc();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::LayerDesc& dyn_layerDesc();
     // Get instance field reference: private System.Int32 stageCount
-    int& dyn_stageCount();
+    [[deprecated]] int& dyn_stageCount();
     // Get instance field reference: private System.Int32 layerIndex
-    int& dyn_layerIndex();
+    [[deprecated]] int& dyn_layerIndex();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle layerIdHandle
-    ::System::Runtime::InteropServices::GCHandle& dyn_layerIdHandle();
+    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_layerIdHandle();
     // Get instance field reference: private System.IntPtr layerIdPtr
-    ::System::IntPtr& dyn_layerIdPtr();
+    [[deprecated]] ::System::IntPtr& dyn_layerIdPtr();
     // Get instance field reference: private System.Int32 frameIndex
-    int& dyn_frameIndex();
+    [[deprecated]] int& dyn_frameIndex();
     // Get instance field reference: private System.Int32 prevFrameIndex
-    int& dyn_prevFrameIndex();
+    [[deprecated]] int& dyn_prevFrameIndex();
     // Get instance field reference: private UnityEngine.Renderer rend
-    ::UnityEngine::Renderer*& dyn_rend();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn_rend();
     // Get instance field reference: private System.UInt64 OpenVROverlayHandle
-    uint64_t& dyn_OpenVROverlayHandle();
+    [[deprecated]] uint64_t& dyn_OpenVROverlayHandle();
     // Get instance field reference: private UnityEngine.Vector4 OpenVRUVOffsetAndScale
-    ::UnityEngine::Vector4& dyn_OpenVRUVOffsetAndScale();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_OpenVRUVOffsetAndScale();
     // Get instance field reference: private UnityEngine.Vector2 OpenVRMouseScale
-    ::UnityEngine::Vector2& dyn_OpenVRMouseScale();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_OpenVRMouseScale();
     // Get instance field reference: private OVRManager/XRDevice constructedOverlayXRDevice
-    ::GlobalNamespace::OVRManager_XRDevice& dyn_constructedOverlayXRDevice();
+    [[deprecated]] ::GlobalNamespace::OVRManager_XRDevice& dyn_constructedOverlayXRDevice();
     // Get instance field reference: private System.Boolean xrDeviceConstructed
-    bool& dyn_xrDeviceConstructed();
+    [[deprecated]] bool& dyn_xrDeviceConstructed();
     // public System.Boolean get_previewInEditor()
-    // Offset: 0xB251A4
+    // Offset: 0xE25924
     bool get_previewInEditor();
     // public System.Void set_previewInEditor(System.Boolean value)
-    // Offset: 0xB251AC
+    // Offset: 0xE2592C
     void set_previewInEditor(bool value);
     // public System.Int32 get_layerId()
-    // Offset: 0xB25298
+    // Offset: 0xE25A18
     int get_layerId();
     // private System.Void set_layerId(System.Int32 value)
-    // Offset: 0xB252A0
+    // Offset: 0xE25A20
     void set_layerId(int value);
     // private OVRPlugin/LayerLayout get_layout()
-    // Offset: 0xB252A8
+    // Offset: 0xE25A28
     ::GlobalNamespace::OVRPlugin::LayerLayout get_layout();
     // private System.Int32 get_texturesPerStage()
-    // Offset: 0xB25398
+    // Offset: 0xE25B18
     int get_texturesPerStage();
     // static public System.String get_OpenVROverlayKey()
-    // Offset: 0xB28424
+    // Offset: 0xE28BA4
     static ::StringW get_OpenVROverlayKey();
     // public System.Void OverrideOverlayTextureInfo(UnityEngine.Texture srcTexture, System.IntPtr nativePtr, UnityEngine.XR.XRNode node)
-    // Offset: 0xB251D0
+    // Offset: 0xE25950
     void OverrideOverlayTextureInfo(::UnityEngine::Texture* srcTexture, ::System::IntPtr nativePtr, ::UnityEngine::XR::XRNode node);
     // static private System.Boolean NeedsTexturesForShape(OVROverlay/OverlayShape shape)
-    // Offset: 0xB253B8
+    // Offset: 0xE25B38
     static bool NeedsTexturesForShape(::GlobalNamespace::OVROverlay::OverlayShape shape);
     // private System.Boolean CreateLayer(System.Int32 mipLevels, System.Int32 sampleCount, OVRPlugin/EyeTextureFormat etFormat, System.Int32 flags, OVRPlugin/Sizei size, OVRPlugin/OverlayShape shape)
-    // Offset: 0xB25430
+    // Offset: 0xE25BB0
     bool CreateLayer(int mipLevels, int sampleCount, ::GlobalNamespace::OVRPlugin::EyeTextureFormat etFormat, int flags, ::GlobalNamespace::OVRPlugin::Sizei size, ::GlobalNamespace::OVRPlugin::OverlayShape shape);
     // private System.Boolean CreateLayerTextures(System.Boolean useMipmaps, OVRPlugin/Sizei size, System.Boolean isHdr)
-    // Offset: 0xB25878
+    // Offset: 0xE25FF8
     bool CreateLayerTextures(bool useMipmaps, ::GlobalNamespace::OVRPlugin::Sizei size, bool isHdr);
     // private System.Void DestroyLayerTextures()
-    // Offset: 0xB25DBC
+    // Offset: 0xE2653C
     void DestroyLayerTextures();
     // private System.Void DestroyLayer()
-    // Offset: 0xB25EF4
+    // Offset: 0xE26674
     void DestroyLayer();
     // public System.Void SetSrcDestRects(UnityEngine.Rect srcLeft, UnityEngine.Rect srcRight, UnityEngine.Rect destLeft, UnityEngine.Rect destRight)
-    // Offset: 0xB26170
+    // Offset: 0xE268F0
     void SetSrcDestRects(::UnityEngine::Rect srcLeft, ::UnityEngine::Rect srcRight, ::UnityEngine::Rect destLeft, ::UnityEngine::Rect destRight);
     // public System.Void UpdateTextureRectMatrix()
-    // Offset: 0xB2618C
+    // Offset: 0xE2690C
     void UpdateTextureRectMatrix();
     // public System.Void SetPerLayerColorScaleAndOffset(UnityEngine.Vector4 scale, UnityEngine.Vector4 offset)
-    // Offset: 0xB26628
+    // Offset: 0xE26DA8
     void SetPerLayerColorScaleAndOffset(::UnityEngine::Vector4 scale, ::UnityEngine::Vector4 offset);
     // private System.Boolean LatchLayerTextures()
-    // Offset: 0xB2663C
+    // Offset: 0xE26DBC
     bool LatchLayerTextures();
     // private OVRPlugin/LayerDesc GetCurrentLayerDesc()
-    // Offset: 0xB26ABC
+    // Offset: 0xE2723C
     ::GlobalNamespace::OVRPlugin::LayerDesc GetCurrentLayerDesc();
     // private UnityEngine.Rect GetBlitRect(System.Int32 eyeId)
-    // Offset: 0xB27010
+    // Offset: 0xE27790
     ::UnityEngine::Rect GetBlitRect(int eyeId);
     // private System.Void BlitSubImage(UnityEngine.Texture src, UnityEngine.RenderTexture dst, UnityEngine.Material mat, UnityEngine.Rect rect)
-    // Offset: 0xB271C0
+    // Offset: 0xE27940
     void BlitSubImage(::UnityEngine::Texture* src, ::UnityEngine::RenderTexture* dst, ::UnityEngine::Material* mat, ::UnityEngine::Rect rect);
     // private System.Boolean PopulateLayer(System.Int32 mipLevels, System.Boolean isHdr, OVRPlugin/Sizei size, System.Int32 sampleCount, System.Int32 stage)
-    // Offset: 0xB275D0
+    // Offset: 0xE27D50
     bool PopulateLayer(int mipLevels, bool isHdr, ::GlobalNamespace::OVRPlugin::Sizei size, int sampleCount, int stage);
     // private System.Boolean SubmitLayer(System.Boolean overlay, System.Boolean headLocked, System.Boolean noDepthBufferTesting, OVRPose pose, UnityEngine.Vector3 scale, System.Int32 frameIndex)
-    // Offset: 0xB27D98
+    // Offset: 0xE28518
     bool SubmitLayer(bool overlay, bool headLocked, bool noDepthBufferTesting, ::GlobalNamespace::OVRPose pose, ::UnityEngine::Vector3 scale, int frameIndex);
     // private System.Void SetupEditorPreview()
-    // Offset: 0xB251CC
+    // Offset: 0xE2594C
     void SetupEditorPreview();
     // static public System.Boolean IsPassthroughShape(OVROverlay/OverlayShape shape)
-    // Offset: 0xB25420
+    // Offset: 0xE25BA0
     static bool IsPassthroughShape(::GlobalNamespace::OVROverlay::OverlayShape shape);
     // private System.Void Awake()
-    // Offset: 0xB28094
+    // Offset: 0xE28814
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0xB284A4
+    // Offset: 0xE28C24
     void OnEnable();
     // private System.Void InitOVROverlay()
-    // Offset: 0xB28520
+    // Offset: 0xE28CA0
     void InitOVROverlay();
     // private System.Void OnDisable()
-    // Offset: 0xB286DC
+    // Offset: 0xE28E5C
     void OnDisable();
     // private System.Void OnDestroy()
-    // Offset: 0xB28850
+    // Offset: 0xE28FD0
     void OnDestroy();
     // private System.Boolean ComputeSubmit(ref OVRPose pose, ref UnityEngine.Vector3 scale, ref System.Boolean overlay, ref System.Boolean headLocked)
-    // Offset: 0xB28874
+    // Offset: 0xE28FF4
     bool ComputeSubmit(ByRef<::GlobalNamespace::OVRPose> pose, ByRef<::UnityEngine::Vector3> scale, ByRef<bool> overlay, ByRef<bool> headLocked);
     // private System.Void OpenVROverlayUpdate(UnityEngine.Vector3 scale, OVRPose pose)
-    // Offset: 0xB28D68
+    // Offset: 0xE294E8
     void OpenVROverlayUpdate(::UnityEngine::Vector3 scale, ::GlobalNamespace::OVRPose pose);
     // private System.Void LateUpdate()
-    // Offset: 0xB29084
+    // Offset: 0xE29804
     void LateUpdate();
     // public System.Void .ctor()
-    // Offset: 0xB295F0
+    // Offset: 0xE29D70
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -805,7 +797,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVROverlay*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0xB29778
+    // Offset: 0xE29EF8
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

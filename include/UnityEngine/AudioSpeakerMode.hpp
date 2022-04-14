@@ -41,7 +41,7 @@ namespace UnityEngine {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [ObsoleteAttribute] Offset: 0x5ABE38
+    // [ObsoleteAttribute] Offset: 0x6C1F68
     // static field const value: static public UnityEngine.AudioSpeakerMode Raw
     static constexpr const int Raw = 0;
     // Get static field: static public UnityEngine.AudioSpeakerMode Raw
@@ -91,7 +91,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.AudioSpeakerMode Prologic
     static void _set_Prologic(::UnityEngine::AudioSpeakerMode value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.AudioSpeakerMode
   #pragma pack(pop)
   static check_size<sizeof(AudioSpeakerMode), 0 + sizeof(int)> __UnityEngine_AudioSpeakerModeSizeCheck;

@@ -34,15 +34,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class InternalFE : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Runtime.Serialization.Formatters.FormatterTypeStyle FEtypeFormat
     // Size: 0x4
     // Offset: 0x10
@@ -69,15 +61,15 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE) == 0x4);
     public:
     // Get instance field reference: System.Runtime.Serialization.Formatters.FormatterTypeStyle FEtypeFormat
-    ::System::Runtime::Serialization::Formatters::FormatterTypeStyle& dyn_FEtypeFormat();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::FormatterTypeStyle& dyn_FEtypeFormat();
     // Get instance field reference: System.Runtime.Serialization.Formatters.FormatterAssemblyStyle FEassemblyFormat
-    ::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle& dyn_FEassemblyFormat();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle& dyn_FEassemblyFormat();
     // Get instance field reference: System.Runtime.Serialization.Formatters.TypeFilterLevel FEsecurityLevel
-    ::System::Runtime::Serialization::Formatters::TypeFilterLevel& dyn_FEsecurityLevel();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::TypeFilterLevel& dyn_FEsecurityLevel();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalSerializerTypeE FEserializerTypeEnum
-    ::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE& dyn_FEserializerTypeEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE& dyn_FEserializerTypeEnum();
     // public System.Void .ctor()
-    // Offset: 0xC51744
+    // Offset: 0x106DBD8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

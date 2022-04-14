@@ -24,15 +24,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRSystemPerfMetrics::PerfMetrics : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 frameCount
     // Size: 0x4
     // Offset: 0x10
@@ -221,67 +213,67 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 frameCount
-    int& dyn_frameCount();
+    [[deprecated]] int& dyn_frameCount();
     // Get instance field reference: public System.Single frameTime
-    float& dyn_frameTime();
+    [[deprecated]] float& dyn_frameTime();
     // Get instance field reference: public System.Single deltaFrameTime
-    float& dyn_deltaFrameTime();
+    [[deprecated]] float& dyn_deltaFrameTime();
     // Get instance field reference: public System.Boolean appCpuTime_IsValid
-    bool& dyn_appCpuTime_IsValid();
+    [[deprecated]] bool& dyn_appCpuTime_IsValid();
     // Get instance field reference: public System.Single appCpuTime
-    float& dyn_appCpuTime();
+    [[deprecated]] float& dyn_appCpuTime();
     // Get instance field reference: public System.Boolean appGpuTime_IsValid
-    bool& dyn_appGpuTime_IsValid();
+    [[deprecated]] bool& dyn_appGpuTime_IsValid();
     // Get instance field reference: public System.Single appGpuTime
-    float& dyn_appGpuTime();
+    [[deprecated]] float& dyn_appGpuTime();
     // Get instance field reference: public System.Boolean compositorCpuTime_IsValid
-    bool& dyn_compositorCpuTime_IsValid();
+    [[deprecated]] bool& dyn_compositorCpuTime_IsValid();
     // Get instance field reference: public System.Single compositorCpuTime
-    float& dyn_compositorCpuTime();
+    [[deprecated]] float& dyn_compositorCpuTime();
     // Get instance field reference: public System.Boolean compositorGpuTime_IsValid
-    bool& dyn_compositorGpuTime_IsValid();
+    [[deprecated]] bool& dyn_compositorGpuTime_IsValid();
     // Get instance field reference: public System.Single compositorGpuTime
-    float& dyn_compositorGpuTime();
+    [[deprecated]] float& dyn_compositorGpuTime();
     // Get instance field reference: public System.Boolean compositorDroppedFrameCount_IsValid
-    bool& dyn_compositorDroppedFrameCount_IsValid();
+    [[deprecated]] bool& dyn_compositorDroppedFrameCount_IsValid();
     // Get instance field reference: public System.Int32 compositorDroppedFrameCount
-    int& dyn_compositorDroppedFrameCount();
+    [[deprecated]] int& dyn_compositorDroppedFrameCount();
     // Get instance field reference: public System.Boolean systemGpuUtilPercentage_IsValid
-    bool& dyn_systemGpuUtilPercentage_IsValid();
+    [[deprecated]] bool& dyn_systemGpuUtilPercentage_IsValid();
     // Get instance field reference: public System.Single systemGpuUtilPercentage
-    float& dyn_systemGpuUtilPercentage();
+    [[deprecated]] float& dyn_systemGpuUtilPercentage();
     // Get instance field reference: public System.Boolean systemCpuUtilAveragePercentage_IsValid
-    bool& dyn_systemCpuUtilAveragePercentage_IsValid();
+    [[deprecated]] bool& dyn_systemCpuUtilAveragePercentage_IsValid();
     // Get instance field reference: public System.Single systemCpuUtilAveragePercentage
-    float& dyn_systemCpuUtilAveragePercentage();
+    [[deprecated]] float& dyn_systemCpuUtilAveragePercentage();
     // Get instance field reference: public System.Boolean systemCpuUtilWorstPercentage_IsValid
-    bool& dyn_systemCpuUtilWorstPercentage_IsValid();
+    [[deprecated]] bool& dyn_systemCpuUtilWorstPercentage_IsValid();
     // Get instance field reference: public System.Single systemCpuUtilWorstPercentage
-    float& dyn_systemCpuUtilWorstPercentage();
+    [[deprecated]] float& dyn_systemCpuUtilWorstPercentage();
     // Get instance field reference: public System.Boolean deviceCpuClockFrequencyInMHz_IsValid
-    bool& dyn_deviceCpuClockFrequencyInMHz_IsValid();
+    [[deprecated]] bool& dyn_deviceCpuClockFrequencyInMHz_IsValid();
     // Get instance field reference: public System.Single deviceCpuClockFrequencyInMHz
-    float& dyn_deviceCpuClockFrequencyInMHz();
+    [[deprecated]] float& dyn_deviceCpuClockFrequencyInMHz();
     // Get instance field reference: public System.Boolean deviceGpuClockFrequencyInMHz_IsValid
-    bool& dyn_deviceGpuClockFrequencyInMHz_IsValid();
+    [[deprecated]] bool& dyn_deviceGpuClockFrequencyInMHz_IsValid();
     // Get instance field reference: public System.Single deviceGpuClockFrequencyInMHz
-    float& dyn_deviceGpuClockFrequencyInMHz();
+    [[deprecated]] float& dyn_deviceGpuClockFrequencyInMHz();
     // Get instance field reference: public System.Boolean deviceCpuClockLevel_IsValid
-    bool& dyn_deviceCpuClockLevel_IsValid();
+    [[deprecated]] bool& dyn_deviceCpuClockLevel_IsValid();
     // Get instance field reference: public System.Int32 deviceCpuClockLevel
-    int& dyn_deviceCpuClockLevel();
+    [[deprecated]] int& dyn_deviceCpuClockLevel();
     // Get instance field reference: public System.Boolean deviceGpuClockLevel_IsValid
-    bool& dyn_deviceGpuClockLevel_IsValid();
+    [[deprecated]] bool& dyn_deviceGpuClockLevel_IsValid();
     // Get instance field reference: public System.Int32 deviceGpuClockLevel
-    int& dyn_deviceGpuClockLevel();
+    [[deprecated]] int& dyn_deviceGpuClockLevel();
     // public System.String ToJSON()
-    // Offset: 0xF15F48
+    // Offset: 0x13EFF44
     ::StringW ToJSON();
     // public System.Boolean LoadFromJSON(System.String json)
-    // Offset: 0xF1652C
+    // Offset: 0x13F0528
     bool LoadFromJSON(::StringW json);
     // public System.Void .ctor()
-    // Offset: 0xF164B4
+    // Offset: 0x13F04B0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

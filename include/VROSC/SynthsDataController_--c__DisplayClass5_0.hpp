@@ -36,15 +36,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SynthsDataController::$$c__DisplayClass5_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.SynthsDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -71,21 +63,21 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.SynthsDataController <>4__this
-    ::VROSC::SynthsDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SynthsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public System.Action <>9__0
-    ::System::Action*& dyn_$$9__0();
+    [[deprecated]] ::System::Action*& dyn_$$9__0();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__1
-    ::System::Action_1<::VROSC::Error>*& dyn_$$9__1();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__1();
     // System.Void <SaveData>b__0()
-    // Offset: 0x134ECA4
+    // Offset: 0x8DAEBC
     void $SaveData$b__0();
     // System.Void <SaveData>b__1(VROSC.Error error)
-    // Offset: 0x134ECCC
+    // Offset: 0x8DAEE4
     void $SaveData$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x134EC9C
+    // Offset: 0x8DAEB4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

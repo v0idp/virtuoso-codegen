@@ -37,15 +37,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class CaptureEnumerator : public ::Il2CppObject/*, public ::System::Collections::IEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Text.RegularExpressions.CaptureCollection _rcc
     // Size: 0x8
     // Offset: 0x10
@@ -64,27 +56,27 @@ namespace System::Text::RegularExpressions {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: System.Text.RegularExpressions.CaptureCollection _rcc
-    ::System::Text::RegularExpressions::CaptureCollection*& dyn__rcc();
+    [[deprecated]] ::System::Text::RegularExpressions::CaptureCollection*& dyn__rcc();
     // Get instance field reference: System.Int32 _curindex
-    int& dyn__curindex();
+    [[deprecated]] int& dyn__curindex();
     // public System.Object get_Current()
-    // Offset: 0xE6EDA4
+    // Offset: 0x10E0C3C
     ::Il2CppObject* get_Current();
     // public System.Text.RegularExpressions.Capture get_Capture()
-    // Offset: 0xE6EDA8
+    // Offset: 0x10E0C40
     ::System::Text::RegularExpressions::Capture* get_Capture();
     // System.Void .ctor(System.Text.RegularExpressions.CaptureCollection rcc)
-    // Offset: 0xE6ECF4
+    // Offset: 0x10E0B8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CaptureEnumerator* New_ctor(::System::Text::RegularExpressions::CaptureCollection* rcc) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::CaptureEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CaptureEnumerator*, creationType>(rcc)));
     }
     // public System.Boolean MoveNext()
-    // Offset: 0xE6ED64
+    // Offset: 0x10E0BFC
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0xE6EE30
+    // Offset: 0x10E0CC8
     void Reset();
   }; // System.Text.RegularExpressions.CaptureEnumerator
   #pragma pack(pop)

@@ -20,12 +20,11 @@
 namespace Firebase::Auth {
   // Forward declaring type: FirebaseAuth
   class FirebaseAuth;
+  // Forward declaring type: UserProfile
+  class UserProfile;
 }
 // Forward declaring namespace: System::Threading::Tasks
 namespace System::Threading::Tasks {
-  // Forward declaring type: Task`1<TResult>
-  template<typename TResult>
-  class Task_1;
   // Forward declaring type: Task
   class Task;
 }
@@ -46,15 +45,7 @@ namespace Firebase::Auth {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirebaseUser : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean swigCMemOwn
     // Size: 0x1
     // Offset: 0x10
@@ -81,47 +72,47 @@ namespace Firebase::Auth {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: Firebase.Auth.FirebaseAuth authProxy
-    ::Firebase::Auth::FirebaseAuth*& dyn_authProxy();
+    [[deprecated]] ::Firebase::Auth::FirebaseAuth*& dyn_authProxy();
     // public System.Boolean get_IsEmailVerified()
-    // Offset: 0x12B2510
+    // Offset: 0x18B22C8
     bool get_IsEmailVerified();
     // public System.String get_UserId()
-    // Offset: 0x12B25B4
+    // Offset: 0x18B236C
     ::StringW get_UserId();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0x12B1DB8
+    // Offset: 0x18B1B1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseUser* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::FirebaseUser::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseUser*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Auth.FirebaseUser obj)
-    // Offset: 0x12B104C
+    // Offset: 0x18B0D88
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Auth::FirebaseUser* obj);
     // public System.Void Dispose()
-    // Offset: 0x12B085C
+    // Offset: 0x18B0598
     void Dispose();
-    // public System.Threading.Tasks.Task`1<System.String> TokenAsync(System.Boolean forceRefresh)
-    // Offset: 0x12B20D0
-    ::System::Threading::Tasks::Task_1<::StringW>* TokenAsync(bool forceRefresh);
     // public System.Threading.Tasks.Task UpdateEmailAsync(System.String email)
-    // Offset: 0x12B21D0
+    // Offset: 0x18B1E34
     ::System::Threading::Tasks::Task* UpdateEmailAsync(::StringW email);
     // public System.Threading.Tasks.Task UpdatePasswordAsync(System.String password)
-    // Offset: 0x12B22A4
+    // Offset: 0x18B1F08
     ::System::Threading::Tasks::Task* UpdatePasswordAsync(::StringW password);
     // public System.Threading.Tasks.Task SendEmailVerificationAsync()
-    // Offset: 0x12B2378
+    // Offset: 0x18B1FDC
     ::System::Threading::Tasks::Task* SendEmailVerificationAsync();
+    // public System.Threading.Tasks.Task UpdateUserProfileAsync(Firebase.Auth.UserProfile profile)
+    // Offset: 0x18B20A8
+    ::System::Threading::Tasks::Task* UpdateUserProfileAsync(::Firebase::Auth::UserProfile* profile);
     // public System.Threading.Tasks.Task ReloadAsync()
-    // Offset: 0x12B2444
+    // Offset: 0x18B21FC
     ::System::Threading::Tasks::Task* ReloadAsync();
     // protected override System.Void Finalize()
-    // Offset: 0x12B2068
+    // Offset: 0x18B1DCC
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
@@ -168,15 +159,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::FirebaseUser*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Auth::FirebaseUser::TokenAsync
-// Il2CppName: TokenAsync
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task_1<::StringW>* (Firebase::Auth::FirebaseUser::*)(bool)>(&Firebase::Auth::FirebaseUser::TokenAsync)> {
-  static const MethodInfo* get() {
-    static auto* forceRefresh = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::FirebaseUser*), "TokenAsync", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{forceRefresh});
-  }
-};
 // Writing MetadataGetter for method: Firebase::Auth::FirebaseUser::UpdateEmailAsync
 // Il2CppName: UpdateEmailAsync
 template<>
@@ -201,6 +183,15 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task* (Firebase::Auth::FirebaseUser::*)()>(&Firebase::Auth::FirebaseUser::SendEmailVerificationAsync)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::FirebaseUser*), "SendEmailVerificationAsync", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Auth::FirebaseUser::UpdateUserProfileAsync
+// Il2CppName: UpdateUserProfileAsync
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task* (Firebase::Auth::FirebaseUser::*)(::Firebase::Auth::UserProfile*)>(&Firebase::Auth::FirebaseUser::UpdateUserProfileAsync)> {
+  static const MethodInfo* get() {
+    static auto* profile = &::il2cpp_utils::GetClassFromName("Firebase.Auth", "UserProfile")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::FirebaseUser*), "UpdateUserProfileAsync", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{profile});
   }
 };
 // Writing MetadataGetter for method: Firebase::Auth::FirebaseUser::ReloadAsync

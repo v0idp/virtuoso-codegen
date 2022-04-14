@@ -60,15 +60,7 @@ namespace Firebase {
     // Nested type: ::Firebase::Dispatcher::$RunAsync$c__AnonStorey1_1<TResult>
     template<typename TResult>
     class $RunAsync$c__AnonStorey1_1;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 ownerThreadId
     // Size: 0x4
     // Offset: 0x10
@@ -85,9 +77,9 @@ namespace Firebase {
     static_assert(sizeof(::System::Collections::Generic::Queue_1<::System::Action*>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 ownerThreadId
-    int& dyn_ownerThreadId();
+    [[deprecated]] int& dyn_ownerThreadId();
     // Get instance field reference: private System.Collections.Generic.Queue`1<System.Action> queue
-    ::System::Collections::Generic::Queue_1<::System::Action*>*& dyn_queue();
+    [[deprecated]] ::System::Collections::Generic::Queue_1<::System::Action*>*& dyn_queue();
     // public TResult Run(System.Func`1<TResult> callback)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class TResult>
@@ -116,13 +108,13 @@ namespace Firebase {
       return ::il2cpp_utils::RunMethodRethrow<::System::Threading::Tasks::Task_1<TResult>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, callback);
     }
     // System.Boolean ManagesThisThread()
-    // Offset: 0x12C8240
+    // Offset: 0x18C75D0
     bool ManagesThisThread();
     // public System.Void PollJobs()
-    // Offset: 0x12C8280
+    // Offset: 0x18C7610
     void PollJobs();
     // public System.Void .ctor()
-    // Offset: 0x12C81A8
+    // Offset: 0x18C7538
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

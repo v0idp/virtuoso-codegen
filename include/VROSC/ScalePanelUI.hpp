@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ScalePanelUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ScaleRowUI[] _scaleRows
     // Size: 0x8
     // Offset: 0x18
@@ -77,31 +69,31 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ScaleRowUI[] _scaleRows
-    ::ArrayW<::VROSC::ScaleRowUI*>& dyn__scaleRows();
+    [[deprecated]] ::ArrayW<::VROSC::ScaleRowUI*>& dyn__scaleRows();
     // Get instance field reference: private VROSC.AnimatedPanel _animation
-    ::VROSC::AnimatedPanel*& dyn__animation();
+    [[deprecated]] ::VROSC::AnimatedPanel*& dyn__animation();
     // Get instance field reference: private VROSC.SynthController _instrumentController
-    ::VROSC::SynthController*& dyn__instrumentController();
+    [[deprecated]] ::VROSC::SynthController*& dyn__instrumentController();
     // private System.Void Awake()
-    // Offset: 0x13DEC08
+    // Offset: 0xDE337C
     void Awake();
     // public System.Void Setup(VROSC.SynthController instrumentController)
-    // Offset: 0x13DED20
+    // Offset: 0xDE3494
     void Setup(::VROSC::SynthController* instrumentController);
     // public System.Void SetActive(System.Boolean shouldBeOpen, System.Boolean animate)
-    // Offset: 0x13DF464
+    // Offset: 0xDE3B38
     void SetActive(bool shouldBeOpen, bool animate);
     // protected System.Void OnDestroy()
-    // Offset: 0x13DF4B8
+    // Offset: 0xDE3B8C
     void OnDestroy();
     // private System.Void RowNotesUpdated(System.Int32 axis, VROSC.Scale scale)
-    // Offset: 0x13DF5D0
+    // Offset: 0xDE3CA4
     void RowNotesUpdated(int axis, ::VROSC::Scale scale);
     // public System.Void GlobalScaleChanged(VROSC.ScalePreset scalePreset, VROSC.Note key)
-    // Offset: 0x13DF614
+    // Offset: 0xDE3CE8
     void GlobalScaleChanged(::VROSC::ScalePreset* scalePreset, ::VROSC::Note key);
     // public System.Void .ctor()
-    // Offset: 0x13DF964
+    // Offset: 0xDE4038
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

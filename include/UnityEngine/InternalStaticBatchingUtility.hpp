@@ -49,16 +49,16 @@ namespace UnityEngine {
     // Nested type: ::UnityEngine::InternalStaticBatchingUtility::$$c
     class $$c;
     // static private System.UInt32 GetMeshFormatHash(UnityEngine.Mesh mesh)
-    // Offset: 0xE3D0C0
+    // Offset: 0x11296B8
     static uint GetMeshFormatHash(::UnityEngine::Mesh* mesh);
     // static private UnityEngine.GameObject[] SortGameObjectsForStaticBatching(UnityEngine.GameObject[] gos, UnityEngine.InternalStaticBatchingUtility/UnityEngine.StaticBatcherGOSorter sorter)
-    // Offset: 0xE3D1B4
+    // Offset: 0x11297AC
     static ::ArrayW<::UnityEngine::GameObject*> SortGameObjectsForStaticBatching(::ArrayW<::UnityEngine::GameObject*> gos, ::UnityEngine::InternalStaticBatchingUtility::StaticBatcherGOSorter* sorter);
     // static public System.Void CombineGameObjects(UnityEngine.GameObject[] gos, UnityEngine.GameObject staticBatchRoot, System.Boolean isEditorPostprocessScene, UnityEngine.InternalStaticBatchingUtility/UnityEngine.StaticBatcherGOSorter sorter)
-    // Offset: 0xE3D498
+    // Offset: 0x1129A90
     static void CombineGameObjects(::ArrayW<::UnityEngine::GameObject*> gos, ::UnityEngine::GameObject* staticBatchRoot, bool isEditorPostprocessScene, ::UnityEngine::InternalStaticBatchingUtility::StaticBatcherGOSorter* sorter);
     // static private System.Void MakeBatch(System.Collections.Generic.List`1<UnityEngine.MeshSubsetCombineUtility/UnityEngine.MeshContainer> meshes, UnityEngine.Transform staticBatchRootTransform, System.Int32 batchIndex)
-    // Offset: 0xE3E4E4
+    // Offset: 0x112AADC
     static void MakeBatch(::System::Collections::Generic::List_1<::UnityEngine::MeshSubsetCombineUtility::MeshContainer>* meshes, ::UnityEngine::Transform* staticBatchRootTransform, int batchIndex);
   }; // UnityEngine.InternalStaticBatchingUtility
   #pragma pack(pop)

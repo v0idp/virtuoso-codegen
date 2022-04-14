@@ -63,15 +63,7 @@ namespace Firebase::Firestore {
     public:
     // Nested type: ::Firebase::Firestore::Query::ListenerDelegate
     class ListenerDelegate;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // readonly Firebase.Firestore.QueryProxy _proxy
     // Size: 0x8
     // Offset: 0x10
@@ -94,47 +86,47 @@ namespace Firebase::Firestore {
     // Set static field: static private Firebase.Firestore.Query/Firebase.Firestore.ListenerDelegate querySnapshotsHandler
     static void _set_querySnapshotsHandler(::Firebase::Firestore::Query::ListenerDelegate* value);
     // Get instance field reference: readonly Firebase.Firestore.QueryProxy _proxy
-    ::Firebase::Firestore::QueryProxy*& dyn__proxy();
+    [[deprecated]] ::Firebase::Firestore::QueryProxy*& dyn__proxy();
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestore _firestore
-    ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
+    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
     // public Firebase.Firestore.FirebaseFirestore get_Firestore()
-    // Offset: 0xC3E8BC
+    // Offset: 0xD62E3C
     ::Firebase::Firestore::FirebaseFirestore* get_Firestore();
     // System.Void .ctor(Firebase.Firestore.QueryProxy proxy, Firebase.Firestore.FirebaseFirestore firestore)
-    // Offset: 0xC2993C
+    // Offset: 0xD4B65C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Query* New_ctor(::Firebase::Firestore::QueryProxy* proxy, ::Firebase::Firestore::FirebaseFirestore* firestore) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Query::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Query*, creationType>(proxy, firestore)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xC3E9DC
+    // Offset: 0xD62FC4
     static void _cctor();
     // static System.Void ClearCallbacksForOwner(Firebase.Firestore.FirebaseFirestore owner)
-    // Offset: 0xC37B1C
+    // Offset: 0xD59D4C
     static void ClearCallbacksForOwner(::Firebase::Firestore::FirebaseFirestore* owner);
     // public System.Threading.Tasks.Task`1<Firebase.Firestore.QuerySnapshot> GetSnapshotAsync(Firebase.Firestore.Source source)
-    // Offset: 0xC3E8C4
+    // Offset: 0xD62E44
     ::System::Threading::Tasks::Task_1<::Firebase::Firestore::QuerySnapshot*>* GetSnapshotAsync(::Firebase::Firestore::Source source);
-    // static private System.Void QuerySnapshotsHandler(System.Int32 callbackId, System.IntPtr snapshotPtr, Firebase.Firestore.FirestoreError errorCode, System.String errorMessage)
-    // Offset: 0xC3E7A4
-    static void QuerySnapshotsHandler(int callbackId, ::System::IntPtr snapshotPtr, ::Firebase::Firestore::FirestoreError errorCode, ::StringW errorMessage);
     // public System.Boolean Equals(Firebase.Firestore.Query other)
-    // Offset: 0xC29F00
+    // Offset: 0xD4BDC8
     bool Equals(::Firebase::Firestore::Query* other);
+    // static private System.Void QuerySnapshotsHandler(System.Int32 callbackId, System.IntPtr snapshotPtr, Firebase.Firestore.FirestoreError errorCode, System.String errorMessage)
+    // Offset: 0xD62C8C
+    static void QuerySnapshotsHandler(int callbackId, ::System::IntPtr snapshotPtr, ::Firebase::Firestore::FirestoreError errorCode, ::StringW errorMessage);
     // private Firebase.Firestore.QuerySnapshot <GetSnapshotAsync>m__0(Firebase.Firestore.QuerySnapshotProxy taskResult)
-    // Offset: 0xC3EAC0
+    // Offset: 0xD630A8
     ::Firebase::Firestore::QuerySnapshot* $GetSnapshotAsync$m__0(::Firebase::Firestore::QuerySnapshotProxy* taskResult);
-    // public override System.Int32 GetHashCode()
-    // Offset: 0xC29E48
-    // Implemented from: System.Object
-    // Base method: System.Int32 Object::GetHashCode()
-    int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0xC3E99C
+    // Offset: 0xD62F28
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
+    // public override System.Int32 GetHashCode()
+    // Offset: 0xD4BD28
+    // Implemented from: System.Object
+    // Base method: System.Int32 Object::GetHashCode()
+    int GetHashCode();
   }; // Firebase.Firestore.Query
   #pragma pack(pop)
   static check_size<sizeof(Query), 24 + sizeof(::Firebase::Firestore::FirebaseFirestore*)> __Firebase_Firestore_QuerySizeCheck;
@@ -179,6 +171,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Query*), "GetSnapshotAsync", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{source});
   }
 };
+// Writing MetadataGetter for method: Firebase::Firestore::Query::Equals
+// Il2CppName: Equals
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Firebase::Firestore::Query::*)(::Firebase::Firestore::Query*)>(&Firebase::Firestore::Query::Equals)> {
+  static const MethodInfo* get() {
+    static auto* other = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "Query")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Query*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Firestore::Query::QuerySnapshotsHandler
 // Il2CppName: QuerySnapshotsHandler
 template<>
@@ -191,15 +192,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(in
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Query*), "QuerySnapshotsHandler", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{callbackId, snapshotPtr, errorCode, errorMessage});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::Query::Equals
-// Il2CppName: Equals
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Firebase::Firestore::Query::*)(::Firebase::Firestore::Query*)>(&Firebase::Firestore::Query::Equals)> {
-  static const MethodInfo* get() {
-    static auto* other = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "Query")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Query*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
-  }
-};
 // Writing MetadataGetter for method: Firebase::Firestore::Query::$GetSnapshotAsync$m__0
 // Il2CppName: <GetSnapshotAsync>m__0
 template<>
@@ -209,14 +201,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Query*), "<GetSnapshotAsync>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{taskResult});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::Query::GetHashCode
-// Il2CppName: GetHashCode
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Firebase::Firestore::Query::*)()>(&Firebase::Firestore::Query::GetHashCode)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Query*), "GetHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: Firebase::Firestore::Query::Equals
 // Il2CppName: Equals
 template<>
@@ -224,5 +208,13 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Fireb
   static const MethodInfo* get() {
     static auto* obj = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Query*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::Query::GetHashCode
+// Il2CppName: GetHashCode
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Firebase::Firestore::Query::*)()>(&Firebase::Firestore::Query::GetHashCode)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Query*), "GetHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

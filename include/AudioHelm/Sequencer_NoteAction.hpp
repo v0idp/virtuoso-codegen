@@ -40,20 +40,20 @@ namespace AudioHelm {
   class Sequencer::NoteAction : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x1349C10
+    // Offset: 0x8D4B88
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Sequencer::NoteAction* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Sequencer::NoteAction::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Sequencer::NoteAction*, creationType>(object, method)));
     }
     // public System.Void Invoke(AudioHelm.Note note)
-    // Offset: 0x1349C20
+    // Offset: 0x8D4B98
     void Invoke(::AudioHelm::Note* note);
     // public System.IAsyncResult BeginInvoke(AudioHelm.Note note, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1349F94
+    // Offset: 0x8D4F0C
     ::System::IAsyncResult* BeginInvoke(::AudioHelm::Note* note, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x1349FB8
+    // Offset: 0x8D4F30
     void EndInvoke(::System::IAsyncResult* result);
   }; // AudioHelm.Sequencer/AudioHelm.NoteAction
   #pragma pack(pop)

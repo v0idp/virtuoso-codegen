@@ -88,26 +88,26 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.IO.Compression.DeflateManagedStream <>4__this
-    ::System::IO::Compression::DeflateManagedStream*& dyn_$$4__this();
+    [[deprecated]] ::System::IO::Compression::DeflateManagedStream*& dyn_$$4__this();
     // Get instance field reference: public System.Byte[] array
-    ::ArrayW<uint8_t>& dyn_array();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_array();
     // Get instance field reference: public System.Int32 offset
-    int& dyn_offset();
+    [[deprecated]] int& dyn_offset();
     // Get instance field reference: public System.Int32 count
-    int& dyn_count();
+    [[deprecated]] int& dyn_count();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x112A0B0
+    // Offset: 0x16A191C
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x112A320
+    // Offset: 0x16A1B8C
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.IO.Compression.DeflateManagedStream/System.IO.Compression.<WriteAsyncCore>d__47
   // WARNING Not writing size check since size may be invalid!

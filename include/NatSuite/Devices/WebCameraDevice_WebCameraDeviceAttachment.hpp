@@ -32,15 +32,7 @@ namespace NatSuite::Devices {
   // [TokenAttribute] Offset: FFFFFFFF
   class WebCameraDevice::WebCameraDeviceAttachment : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action delegate
     // Size: 0x8
     // Offset: 0x18
@@ -51,15 +43,15 @@ namespace NatSuite::Devices {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Action delegate
-    ::System::Action*& dyn_delegate();
+    [[deprecated]] ::System::Action*& dyn_delegate();
     // private System.Void Awake()
-    // Offset: 0x1418098
+    // Offset: 0xE8A318
     void Awake();
     // private System.Void Update()
-    // Offset: 0x1418110
+    // Offset: 0xE8A390
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x1418124
+    // Offset: 0xE8A3A4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

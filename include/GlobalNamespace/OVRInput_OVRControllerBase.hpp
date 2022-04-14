@@ -40,15 +40,7 @@ namespace GlobalNamespace {
     class VirtualAxis1DMap;
     // Nested type: ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualAxis2DMap
     class VirtualAxis2DMap;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRInput/Controller controllerType
     // Size: 0x4
     // Offset: 0x10
@@ -107,34 +99,34 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public OVRInput/Controller controllerType
-    ::GlobalNamespace::OVRInput::Controller& dyn_controllerType();
+    [[deprecated]] ::GlobalNamespace::OVRInput::Controller& dyn_controllerType();
     // Get instance field reference: public OVRInput/OVRControllerBase/VirtualButtonMap buttonMap
-    ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualButtonMap*& dyn_buttonMap();
+    [[deprecated]] ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualButtonMap*& dyn_buttonMap();
     // Get instance field reference: public OVRInput/OVRControllerBase/VirtualTouchMap touchMap
-    ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualTouchMap*& dyn_touchMap();
+    [[deprecated]] ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualTouchMap*& dyn_touchMap();
     // Get instance field reference: public OVRInput/OVRControllerBase/VirtualNearTouchMap nearTouchMap
-    ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualNearTouchMap*& dyn_nearTouchMap();
+    [[deprecated]] ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualNearTouchMap*& dyn_nearTouchMap();
     // Get instance field reference: public OVRInput/OVRControllerBase/VirtualAxis1DMap axis1DMap
-    ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualAxis1DMap*& dyn_axis1DMap();
+    [[deprecated]] ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualAxis1DMap*& dyn_axis1DMap();
     // Get instance field reference: public OVRInput/OVRControllerBase/VirtualAxis2DMap axis2DMap
-    ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualAxis2DMap*& dyn_axis2DMap();
+    [[deprecated]] ::GlobalNamespace::OVRInput::OVRControllerBase::VirtualAxis2DMap*& dyn_axis2DMap();
     // Get instance field reference: public OVRPlugin/ControllerState4 previousState
-    ::GlobalNamespace::OVRPlugin::ControllerState4& dyn_previousState();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::ControllerState4& dyn_previousState();
     // Get instance field reference: public OVRPlugin/ControllerState4 currentState
-    ::GlobalNamespace::OVRPlugin::ControllerState4& dyn_currentState();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::ControllerState4& dyn_currentState();
     // Get instance field reference: public System.Boolean shouldApplyDeadzone
-    bool& dyn_shouldApplyDeadzone();
+    [[deprecated]] bool& dyn_shouldApplyDeadzone();
     // public OVRInput/Controller Update()
-    // Offset: 0x73866C
+    // Offset: 0x84ED70
     ::GlobalNamespace::OVRInput::Controller Update();
     // private OVRPlugin/ControllerState4 GetOpenVRControllerState(OVRInput/Controller controllerType)
-    // Offset: 0x738B54
+    // Offset: 0x84F258
     ::GlobalNamespace::OVRPlugin::ControllerState4 GetOpenVRControllerState(::GlobalNamespace::OVRInput::Controller controllerType);
     // public System.Void SetControllerVibration(System.Single frequency, System.Single amplitude)
-    // Offset: 0x73909C
+    // Offset: 0x84F7A0
     void SetControllerVibration(float frequency, float amplitude);
     // public System.Byte GetBatteryPercentRemaining()
-    // Offset: 0x73911C
+    // Offset: 0x84F820
     uint8_t GetBatteryPercentRemaining();
     // public System.Void ConfigureButtonMap()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -152,22 +144,22 @@ namespace GlobalNamespace {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void ConfigureAxis2DMap();
     // public OVRInput/RawButton ResolveToRawMask(OVRInput/Button virtualMask)
-    // Offset: 0x739124
+    // Offset: 0x84F828
     ::GlobalNamespace::OVRInput::RawButton ResolveToRawMask(::GlobalNamespace::OVRInput::Button virtualMask);
     // public OVRInput/RawTouch ResolveToRawMask(OVRInput/Touch virtualMask)
-    // Offset: 0x739140
+    // Offset: 0x84F844
     ::GlobalNamespace::OVRInput::RawTouch ResolveToRawMask(::GlobalNamespace::OVRInput::Touch virtualMask);
     // public OVRInput/RawNearTouch ResolveToRawMask(OVRInput/NearTouch virtualMask)
-    // Offset: 0x73915C
+    // Offset: 0x84F860
     ::GlobalNamespace::OVRInput::RawNearTouch ResolveToRawMask(::GlobalNamespace::OVRInput::NearTouch virtualMask);
     // public OVRInput/RawAxis1D ResolveToRawMask(OVRInput/Axis1D virtualMask)
-    // Offset: 0x739178
+    // Offset: 0x84F87C
     ::GlobalNamespace::OVRInput::RawAxis1D ResolveToRawMask(::GlobalNamespace::OVRInput::Axis1D virtualMask);
     // public OVRInput/RawAxis2D ResolveToRawMask(OVRInput/Axis2D virtualMask)
-    // Offset: 0x739194
+    // Offset: 0x84F898
     ::GlobalNamespace::OVRInput::RawAxis2D ResolveToRawMask(::GlobalNamespace::OVRInput::Axis2D virtualMask);
     // public System.Void .ctor()
-    // Offset: 0x738500
+    // Offset: 0x84EC04
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

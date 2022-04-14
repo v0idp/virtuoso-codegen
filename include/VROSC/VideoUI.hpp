@@ -66,15 +66,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::VideoUI::$Play$d__19
     struct $Play$d__19;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Video.VideoPlayer _videoPlayer
     // Size: 0x8
     // Offset: 0x18
@@ -167,68 +159,68 @@ namespace VROSC {
     // Set static field: static public System.Action OnClose
     static void _set_OnClose(::System::Action* value);
     // Get instance field reference: private UnityEngine.Video.VideoPlayer _videoPlayer
-    ::UnityEngine::Video::VideoPlayer*& dyn__videoPlayer();
+    [[deprecated]] ::UnityEngine::Video::VideoPlayer*& dyn__videoPlayer();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.UIButton _playPauseButton
-    ::VROSC::UIButton*& dyn__playPauseButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__playPauseButton();
     // Get instance field reference: private VROSC.UIButton _videoAreaButton
-    ::VROSC::UIButton*& dyn__videoAreaButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__videoAreaButton();
     // Get instance field reference: private UnityEngine.GameObject _playIcon
-    ::UnityEngine::GameObject*& dyn__playIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__playIcon();
     // Get instance field reference: private UnityEngine.GameObject _pauseIcon
-    ::UnityEngine::GameObject*& dyn__pauseIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__pauseIcon();
     // Get instance field reference: private UnityEngine.GameObject _loadingIcon
-    ::UnityEngine::GameObject*& dyn__loadingIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__loadingIcon();
     // Get instance field reference: private UnityEngine.GameObject _videoSurface
-    ::UnityEngine::GameObject*& dyn__videoSurface();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__videoSurface();
     // Get instance field reference: private TMPro.TextMeshPro _header
-    ::TMPro::TextMeshPro*& dyn__header();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__header();
     // Get instance field reference: private TMPro.TextMeshPro _timeText
-    ::TMPro::TextMeshPro*& dyn__timeText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__timeText();
     // Get instance field reference: private UnityEngine.AudioSource _audioSource
-    ::UnityEngine::AudioSource*& dyn__audioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__audioSource();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.TimeSlider _timeSlider
-    ::VROSC::TimeSlider*& dyn__timeSlider();
+    [[deprecated]] ::VROSC::TimeSlider*& dyn__timeSlider();
     // Get instance field reference: private System.Boolean _shouldPlay
-    bool& dyn__shouldPlay();
+    [[deprecated]] bool& dyn__shouldPlay();
     // protected System.Void Awake()
-    // Offset: 0x13AED94
+    // Offset: 0x1922CE0
     void Awake();
     // public System.Void Setup()
-    // Offset: 0x13AE720
+    // Offset: 0x1922668
     void Setup();
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x13AEE80
+    // Offset: 0x1922DCC
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // private System.Void TogglePlay()
-    // Offset: 0x13AEEF8
+    // Offset: 0x1922E44
     void TogglePlay();
     // private System.Void Play()
-    // Offset: 0x13AEF08
+    // Offset: 0x1922E54
     void Play();
     // private System.Void Pause()
-    // Offset: 0x13AEFCC
+    // Offset: 0x1922F18
     void Pause();
     // private System.Void Stop()
-    // Offset: 0x13AF038
+    // Offset: 0x1922F84
     void Stop();
     // public System.Void Open(System.String videoPath, System.String title)
-    // Offset: 0x13AEAE0
+    // Offset: 0x1922A2C
     void Open(::StringW videoPath, ::StringW title);
     // public System.Void Close()
-    // Offset: 0x13AED00
+    // Offset: 0x1922C4C
     void Close();
     // private System.Void VolumeChanged(System.Single newVolume)
-    // Offset: 0x13AF0CC
+    // Offset: 0x1923018
     void VolumeChanged(float newVolume);
     // private System.Void EndReached(UnityEngine.Video.VideoPlayer videoPlayer)
-    // Offset: 0x13AF150
+    // Offset: 0x192309C
     void EndReached(::UnityEngine::Video::VideoPlayer* videoPlayer);
     // public System.Void .ctor()
-    // Offset: 0x13AF154
+    // Offset: 0x19230A0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

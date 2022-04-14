@@ -31,15 +31,7 @@ namespace Mono::Security::Cryptography {
     public:
     // Writing base type padding for base size: 0x25 to desired offset: 0x28
     char ___base_padding[0x3] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte[] state
     // Size: 0x8
     // Offset: 0x28
@@ -78,26 +70,26 @@ namespace Mono::Security::Cryptography {
     // Set static field: static private readonly System.Byte[] PI_SUBST
     static void _set_PI_SUBST(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.Byte[] state
-    ::ArrayW<uint8_t>& dyn_state();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_state();
     // Get instance field reference: private System.Byte[] checksum
-    ::ArrayW<uint8_t>& dyn_checksum();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_checksum();
     // Get instance field reference: private System.Byte[] buffer
-    ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: private System.Int32 count
-    int& dyn_count();
+    [[deprecated]] int& dyn_count();
     // Get instance field reference: private System.Byte[] x
-    ::ArrayW<uint8_t>& dyn_x();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_x();
     // static private System.Void .cctor()
-    // Offset: 0x10E8ECC
+    // Offset: 0x163AD88
     static void _cctor();
     // private System.Byte[] Padding(System.Int32 nLength)
-    // Offset: 0x10E8964
+    // Offset: 0x163A820
     ::ArrayW<uint8_t> Padding(int nLength);
     // private System.Void MD2Transform(System.Byte[] state, System.Byte[] checksum, System.Byte[] block, System.Int32 index)
-    // Offset: 0x10E8B4C
+    // Offset: 0x163AA08
     void MD2Transform(::ArrayW<uint8_t> state, ::ArrayW<uint8_t> checksum, ::ArrayW<uint8_t> block, int index);
     // public System.Void .ctor()
-    // Offset: 0x10E88BC
+    // Offset: 0x163A778
     // Implemented from: Mono.Security.Cryptography.MD2
     // Base method: System.Void MD2::.ctor()
     // Base method: System.Void HashAlgorithm::.ctor()
@@ -108,17 +100,17 @@ namespace Mono::Security::Cryptography {
       return THROW_UNLESS((::il2cpp_utils::New<MD2Managed*, creationType>()));
     }
     // public override System.Void Initialize()
-    // Offset: 0x10E8A0C
+    // Offset: 0x163A8C8
     // Implemented from: System.Security.Cryptography.HashAlgorithm
     // Base method: System.Void HashAlgorithm::Initialize()
     void Initialize();
     // protected override System.Void HashCore(System.Byte[] array, System.Int32 ibStart, System.Int32 cbSize)
-    // Offset: 0x10E8A78
+    // Offset: 0x163A934
     // Implemented from: System.Security.Cryptography.HashAlgorithm
     // Base method: System.Void HashAlgorithm::HashCore(System.Byte[] array, System.Int32 ibStart, System.Int32 cbSize)
     void HashCore(::ArrayW<uint8_t> array, int ibStart, int cbSize);
     // protected override System.Byte[] HashFinal()
-    // Offset: 0x10E8DD8
+    // Offset: 0x163AC94
     // Implemented from: System.Security.Cryptography.HashAlgorithm
     // Base method: System.Byte[] HashAlgorithm::HashFinal()
     ::ArrayW<uint8_t> HashFinal();

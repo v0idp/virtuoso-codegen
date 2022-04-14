@@ -55,15 +55,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MalletAnimator : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`1<System.Boolean> OnFinished
     // Size: 0x8
     // Offset: 0x18
@@ -110,36 +102,36 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Action`1<System.Boolean> OnFinished
-    ::System::Action_1<bool>*& dyn_OnFinished();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnFinished();
     // Get instance field reference: private UnityEngine.Playables.PlayableDirector _playableDirector
-    ::UnityEngine::Playables::PlayableDirector*& dyn__playableDirector();
+    [[deprecated]] ::UnityEngine::Playables::PlayableDirector*& dyn__playableDirector();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _enterTimeline
-    ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
+    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _exitTimeline
-    ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
+    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
     // Get instance field reference: private UnityEngine.Transform _startPosition
-    ::UnityEngine::Transform*& dyn__startPosition();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__startPosition();
     // Get instance field reference: private VROSC.LocalTransformData _defaultStartPosition
-    ::VROSC::LocalTransformData*& dyn__defaultStartPosition();
+    [[deprecated]] ::VROSC::LocalTransformData*& dyn__defaultStartPosition();
     // Get instance field reference: private System.Boolean _isActive
-    bool& dyn__isActive();
+    [[deprecated]] bool& dyn__isActive();
     // private System.Void Awake()
-    // Offset: 0x8AB4A0
+    // Offset: 0x197D894
     void Awake();
     // public System.Void SetActive(System.Boolean active)
-    // Offset: 0x8AB3D8
+    // Offset: 0x197D7CC
     void SetActive(bool active);
     // System.Void GrabbedAt(VROSC.ClickData clickData)
-    // Offset: 0x8AB28C
+    // Offset: 0x197D728
     void GrabbedAt(::VROSC::ClickData* clickData);
     // private System.Void OnDestroy()
-    // Offset: 0x8AB57C
+    // Offset: 0x197D970
     void OnDestroy();
     // private System.Void OnPlayableDirectorStopped(UnityEngine.Playables.PlayableDirector aDirector)
-    // Offset: 0x8AB624
+    // Offset: 0x197DA18
     void OnPlayableDirectorStopped(::UnityEngine::Playables::PlayableDirector* aDirector);
     // public System.Void .ctor()
-    // Offset: 0x8AB6D8
+    // Offset: 0x197DACC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

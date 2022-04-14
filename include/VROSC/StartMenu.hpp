@@ -58,15 +58,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::StartMenu::$Recenter$d__18
     class $Recenter$d__18;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AnimationCurve _recenterCurve
     // Size: 0x8
     // Offset: 0x18
@@ -159,56 +151,56 @@ namespace VROSC {
     // Set static field: static public System.Action OnStartMenuClosed
     static void _set_OnStartMenuClosed(::System::Action* value);
     // Get instance field reference: private UnityEngine.AnimationCurve _recenterCurve
-    ::UnityEngine::AnimationCurve*& dyn__recenterCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__recenterCurve();
     // Get instance field reference: private UnityEngine.Transform _vrCameraTransform
-    ::UnityEngine::Transform*& dyn__vrCameraTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__vrCameraTransform();
     // Get instance field reference: private System.Single _recenterTime
-    float& dyn__recenterTime();
+    [[deprecated]] float& dyn__recenterTime();
     // Get instance field reference: private System.Single _distanceTolerance
-    float& dyn__distanceTolerance();
+    [[deprecated]] float& dyn__distanceTolerance();
     // Get instance field reference: private System.Single _angleTolereance
-    float& dyn__angleTolereance();
+    [[deprecated]] float& dyn__angleTolereance();
     // Get instance field reference: private UnityEngine.Vector3 _targetPosition
-    ::UnityEngine::Vector3& dyn__targetPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__targetPosition();
     // Get instance field reference: private UnityEngine.Quaternion _targetRotation
-    ::UnityEngine::Quaternion& dyn__targetRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn__targetRotation();
     // Get instance field reference: private UnityEngine.Coroutine _recenterCoroutine
-    ::UnityEngine::Coroutine*& dyn__recenterCoroutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn__recenterCoroutine();
     // Get instance field reference: private VROSC.UIButton _startTutorialButton
-    ::VROSC::UIButton*& dyn__startTutorialButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__startTutorialButton();
     // Get instance field reference: private VROSC.UIButton _startCreatingButton
-    ::VROSC::UIButton*& dyn__startCreatingButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__startCreatingButton();
     // Get instance field reference: private UnityEngine.Transform _menuTransform
-    ::UnityEngine::Transform*& dyn__menuTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__menuTransform();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _tutorialBlink
-    ::VROSC::TutorialBlinkingUIElement*& dyn__tutorialBlink();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__tutorialBlink();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _creatingBlink
-    ::VROSC::TutorialBlinkingUIElement*& dyn__creatingBlink();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__creatingBlink();
     // Get instance field reference: private System.Boolean _alwaysUpright
-    bool& dyn__alwaysUpright();
+    [[deprecated]] bool& dyn__alwaysUpright();
     // public System.Void Setup()
-    // Offset: 0x13BC3DC
+    // Offset: 0x192F804
     void Setup();
     // private System.Void OnDestroy()
-    // Offset: 0x13BC6B0
+    // Offset: 0x192FAD8
     void OnDestroy();
     // protected System.Void Update()
-    // Offset: 0x13BC7D4
+    // Offset: 0x192FBFC
     void Update();
     // private System.Collections.IEnumerator Recenter()
-    // Offset: 0x13BC8FC
+    // Offset: 0x192FD24
     ::System::Collections::IEnumerator* Recenter();
     // private UnityEngine.Quaternion GetRotationWithoutZ(UnityEngine.Quaternion rotation)
-    // Offset: 0x13BC644
+    // Offset: 0x192FA6C
     ::UnityEngine::Quaternion GetRotationWithoutZ(::UnityEngine::Quaternion rotation);
     // private System.Void StartTutorialPressed()
-    // Offset: 0x13BC968
+    // Offset: 0x192FD90
     void StartTutorialPressed();
     // private System.Void StartCreatingPressed()
-    // Offset: 0x13BCA8C
+    // Offset: 0x192FEB4
     void StartCreatingPressed();
     // public System.Void .ctor()
-    // Offset: 0x13BCBB4
+    // Offset: 0x1930008
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

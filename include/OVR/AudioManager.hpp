@@ -92,30 +92,22 @@ namespace OVR {
     class $$c__DisplayClass77_0;
     // Nested type: ::OVR::AudioManager::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x5D5568
+    // [TooltipAttribute] Offset: 0x6EE174
     // public System.Boolean makePersistent
     // Size: 0x1
     // Offset: 0x18
     bool makePersistent;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x5D55A0
+    // [TooltipAttribute] Offset: 0x6EE1AC
     // public System.Boolean enableSpatializedAudio
     // Size: 0x1
     // Offset: 0x19
     bool enableSpatializedAudio;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x5D55D8
+    // [TooltipAttribute] Offset: 0x6EE1E4
     // public System.Boolean enableSpatializedFastOverride
     // Size: 0x1
     // Offset: 0x1A
@@ -124,35 +116,35 @@ namespace OVR {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: enableSpatializedFastOverride and: audioMixer
     char __padding2[0x5] = {};
-    // [TooltipAttribute] Offset: 0x5D5610
+    // [TooltipAttribute] Offset: 0x6EE21C
     // public UnityEngine.Audio.AudioMixer audioMixer
     // Size: 0x8
     // Offset: 0x20
     ::UnityEngine::Audio::AudioMixer* audioMixer;
     // Field size check
     static_assert(sizeof(::UnityEngine::Audio::AudioMixer*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5648
+    // [TooltipAttribute] Offset: 0x6EE254
     // public UnityEngine.Audio.AudioMixerGroup defaultMixerGroup
     // Size: 0x8
     // Offset: 0x28
     ::UnityEngine::Audio::AudioMixerGroup* defaultMixerGroup;
     // Field size check
     static_assert(sizeof(::UnityEngine::Audio::AudioMixerGroup*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D5680
+    // [TooltipAttribute] Offset: 0x6EE28C
     // public UnityEngine.Audio.AudioMixerGroup reservedMixerGroup
     // Size: 0x8
     // Offset: 0x30
     ::UnityEngine::Audio::AudioMixerGroup* reservedMixerGroup;
     // Field size check
     static_assert(sizeof(::UnityEngine::Audio::AudioMixerGroup*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D56B8
+    // [TooltipAttribute] Offset: 0x6EE2C4
     // public UnityEngine.Audio.AudioMixerGroup voiceChatMixerGroup
     // Size: 0x8
     // Offset: 0x38
     ::UnityEngine::Audio::AudioMixerGroup* voiceChatMixerGroup;
     // Field size check
     static_assert(sizeof(::UnityEngine::Audio::AudioMixerGroup*) == 0x8);
-    // [TooltipAttribute] Offset: 0x5D56F0
+    // [TooltipAttribute] Offset: 0x6EE2FC
     // public System.Boolean verboseLogging
     // Size: 0x1
     // Offset: 0x40
@@ -161,21 +153,21 @@ namespace OVR {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: verboseLogging and: maxSoundEmitters
     char __padding7[0x3] = {};
-    // [TooltipAttribute] Offset: 0x5D5728
+    // [TooltipAttribute] Offset: 0x6EE334
     // public System.Int32 maxSoundEmitters
     // Size: 0x4
     // Offset: 0x44
     int maxSoundEmitters;
     // Field size check
     static_assert(sizeof(int) == 0x4);
-    // [TooltipAttribute] Offset: 0x5D5760
+    // [TooltipAttribute] Offset: 0x6EE36C
     // public System.Single volumeSoundFX
     // Size: 0x4
     // Offset: 0x48
     float volumeSoundFX;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [TooltipAttribute] Offset: 0x5D5798
+    // [TooltipAttribute] Offset: 0x6EE3A4
     // public System.Single soundFxFadeSecs
     // Size: 0x4
     // Offset: 0x4C
@@ -286,200 +278,200 @@ namespace OVR {
     // Set static field: static private readonly UnityEngine.AnimationCurve defaultReverbZoneMix
     static void _set_defaultReverbZoneMix(::UnityEngine::AnimationCurve* value);
     // Get instance field reference: public System.Boolean makePersistent
-    bool& dyn_makePersistent();
+    [[deprecated]] bool& dyn_makePersistent();
     // Get instance field reference: public System.Boolean enableSpatializedAudio
-    bool& dyn_enableSpatializedAudio();
+    [[deprecated]] bool& dyn_enableSpatializedAudio();
     // Get instance field reference: public System.Boolean enableSpatializedFastOverride
-    bool& dyn_enableSpatializedFastOverride();
+    [[deprecated]] bool& dyn_enableSpatializedFastOverride();
     // Get instance field reference: public UnityEngine.Audio.AudioMixer audioMixer
-    ::UnityEngine::Audio::AudioMixer*& dyn_audioMixer();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixer*& dyn_audioMixer();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup defaultMixerGroup
-    ::UnityEngine::Audio::AudioMixerGroup*& dyn_defaultMixerGroup();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_defaultMixerGroup();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup reservedMixerGroup
-    ::UnityEngine::Audio::AudioMixerGroup*& dyn_reservedMixerGroup();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_reservedMixerGroup();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup voiceChatMixerGroup
-    ::UnityEngine::Audio::AudioMixerGroup*& dyn_voiceChatMixerGroup();
+    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_voiceChatMixerGroup();
     // Get instance field reference: public System.Boolean verboseLogging
-    bool& dyn_verboseLogging();
+    [[deprecated]] bool& dyn_verboseLogging();
     // Get instance field reference: public System.Int32 maxSoundEmitters
-    int& dyn_maxSoundEmitters();
+    [[deprecated]] int& dyn_maxSoundEmitters();
     // Get instance field reference: public System.Single volumeSoundFX
-    float& dyn_volumeSoundFX();
+    [[deprecated]] float& dyn_volumeSoundFX();
     // Get instance field reference: public System.Single soundFxFadeSecs
-    float& dyn_soundFxFadeSecs();
+    [[deprecated]] float& dyn_soundFxFadeSecs();
     // Get instance field reference: public System.Single audioMinFallOffDistance
-    float& dyn_audioMinFallOffDistance();
+    [[deprecated]] float& dyn_audioMinFallOffDistance();
     // Get instance field reference: public System.Single audioMaxFallOffDistance
-    float& dyn_audioMaxFallOffDistance();
+    [[deprecated]] float& dyn_audioMaxFallOffDistance();
     // Get instance field reference: public OVR.SoundGroup[] soundGroupings
-    ::ArrayW<::OVR::SoundGroup*>& dyn_soundGroupings();
+    [[deprecated]] ::ArrayW<::OVR::SoundGroup*>& dyn_soundGroupings();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,OVR.SoundFX> soundFXCache
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::OVR::SoundFX*>*& dyn_soundFXCache();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::OVR::SoundFX*>*& dyn_soundFXCache();
     // Get instance field reference: private System.Single audioMaxFallOffDistanceSqr
-    float& dyn_audioMaxFallOffDistanceSqr();
+    [[deprecated]] float& dyn_audioMaxFallOffDistanceSqr();
     // Get instance field reference: private OVR.SoundEmitter[] soundEmitters
-    ::ArrayW<::OVR::SoundEmitter*>& dyn_soundEmitters();
+    [[deprecated]] ::ArrayW<::OVR::SoundEmitter*>& dyn_soundEmitters();
     // Get instance field reference: private FastList`1<OVR.SoundEmitter> playingEmitters
-    ::GlobalNamespace::FastList_1<::OVR::SoundEmitter*>*& dyn_playingEmitters();
+    [[deprecated]] ::GlobalNamespace::FastList_1<::OVR::SoundEmitter*>*& dyn_playingEmitters();
     // Get instance field reference: private FastList`1<OVR.SoundEmitter> nextFreeEmitters
-    ::GlobalNamespace::FastList_1<::OVR::SoundEmitter*>*& dyn_nextFreeEmitters();
+    [[deprecated]] ::GlobalNamespace::FastList_1<::OVR::SoundEmitter*>*& dyn_nextFreeEmitters();
     // Get instance field reference: private OVR.MixerSnapshot currentSnapshot
-    ::OVR::MixerSnapshot*& dyn_currentSnapshot();
+    [[deprecated]] ::OVR::MixerSnapshot*& dyn_currentSnapshot();
     // static public System.Boolean get_enableSpatialization()
-    // Offset: 0x129FE58
+    // Offset: 0x189D9FC
     static bool get_enableSpatialization();
     // static public OVR.AudioManager get_Instance()
-    // Offset: 0x129FF40
+    // Offset: 0x189DAE4
     static ::OVR::AudioManager* get_Instance();
     // static public System.Single get_NearFallOff()
-    // Offset: 0x129FFA4
+    // Offset: 0x189DB48
     static float get_NearFallOff();
     // static public System.Single get_FarFallOff()
-    // Offset: 0x12A0014
+    // Offset: 0x189DBB8
     static float get_FarFallOff();
     // static public UnityEngine.Audio.AudioMixerGroup get_EmitterGroup()
-    // Offset: 0x12A0084
+    // Offset: 0x189DC28
     static ::UnityEngine::Audio::AudioMixerGroup* get_EmitterGroup();
     // static public UnityEngine.Audio.AudioMixerGroup get_ReservedGroup()
-    // Offset: 0x12A00F4
+    // Offset: 0x189DC98
     static ::UnityEngine::Audio::AudioMixerGroup* get_ReservedGroup();
     // static public UnityEngine.Audio.AudioMixerGroup get_VoipGroup()
-    // Offset: 0x12A0164
+    // Offset: 0x189DD08
     static ::UnityEngine::Audio::AudioMixerGroup* get_VoipGroup();
     // static public System.Boolean get_SoundEnabled()
-    // Offset: 0x12A2000
+    // Offset: 0x189FBA4
     static bool get_SoundEnabled();
     // private System.Void Awake()
-    // Offset: 0x12A01D4
+    // Offset: 0x189DD78
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x12A0410
+    // Offset: 0x189DFB4
     void OnDestroy();
     // private System.Void Init()
-    // Offset: 0x12A01D8
+    // Offset: 0x189DD7C
     void Init();
     // private System.Void Update()
-    // Offset: 0x12A1064
+    // Offset: 0x189EC08
     void Update();
     // private System.Void RebuildSoundFXCache()
-    // Offset: 0x12A0570
+    // Offset: 0x189E114
     void RebuildSoundFXCache();
     // static public OVR.SoundFX FindSoundFX(System.String name, System.Boolean rebuildCache)
-    // Offset: 0x12A1708
+    // Offset: 0x189F2AC
     static ::OVR::SoundFX* FindSoundFX(::StringW name, bool rebuildCache);
     // static private System.Boolean FindAudioManager()
-    // Offset: 0x12A189C
+    // Offset: 0x189F440
     static bool FindAudioManager();
     // static public UnityEngine.GameObject GetGameObject()
-    // Offset: 0x12A1A70
+    // Offset: 0x189F614
     static ::UnityEngine::GameObject* GetGameObject();
     // static public System.String NameMinusGroup(System.String name)
-    // Offset: 0x12A1B78
+    // Offset: 0x189F71C
     static ::StringW NameMinusGroup(::StringW name);
     // static public System.String[] GetSoundFXNames(System.String currentValue, out System.Int32 currentIdx)
-    // Offset: 0x12A1C04
+    // Offset: 0x189F7A8
     static ::ArrayW<::StringW> GetSoundFXNames(::StringW currentValue, ByRef<int> currentIdx);
     // static private System.Int32 CalculateMaxEmittersSize()
-    // Offset: 0x12A2064
+    // Offset: 0x189FC08
     static int CalculateMaxEmittersSize();
     // static private System.Boolean ValidateEmitterIndex(System.Int32 index)
-    // Offset: 0x12A20D8
+    // Offset: 0x189FC7C
     static bool ValidateEmitterIndex(int index);
     // private System.Void InitializeSoundSystem()
-    // Offset: 0x12A0A24
+    // Offset: 0x189E5C8
     void InitializeSoundSystem();
     // private System.Void UpdateFreeEmitters()
-    // Offset: 0x12A1068
+    // Offset: 0x189EC0C
     void UpdateFreeEmitters();
     // private System.String Fmt(System.Int32 count)
-    // Offset: 0x12A2390
+    // Offset: 0x189FF34
     ::StringW Fmt(int count);
     // private System.String FmtFree(System.Int32 count)
-    // Offset: 0x12A24C0
+    // Offset: 0x18A0064
     ::StringW FmtFree(int count);
     // private System.Void OnPreSceneLoad()
-    // Offset: 0x12A25F4
+    // Offset: 0x18A0198
     void OnPreSceneLoad();
     // private System.Void ResetFreeEmitters()
-    // Offset: 0x12A2250
+    // Offset: 0x189FDF4
     void ResetFreeEmitters();
     // static public System.Void FadeOutSoundChannel(System.Int32 channel, System.Single delaySecs, System.Single fadeTime)
-    // Offset: 0x12A2774
+    // Offset: 0x18A0318
     static void FadeOutSoundChannel(int channel, float delaySecs, float fadeTime);
     // static public System.Boolean StopSound(System.Int32 idx, System.Boolean fadeOut, System.Boolean stopReserved)
-    // Offset: 0x12A28C4
+    // Offset: 0x18A0468
     static bool StopSound(int idx, bool fadeOut, bool stopReserved);
     // static public System.Void FadeInSound(System.Int32 idx, System.Single fadeTime, System.Single volume)
-    // Offset: 0x12A2A70
+    // Offset: 0x18A0614
     static void FadeInSound(int idx, float fadeTime, float volume);
     // static public System.Void FadeInSound(System.Int32 idx, System.Single fadeTime)
-    // Offset: 0x129FB98
+    // Offset: 0x189D73C
     static void FadeInSound(int idx, float fadeTime);
     // static public System.Void FadeOutSound(System.Int32 idx, System.Single fadeTime)
-    // Offset: 0x129FD04
+    // Offset: 0x189D8A8
     static void FadeOutSound(int idx, float fadeTime);
     // static public System.Void StopAllSounds(System.Boolean fadeOut, System.Boolean stopReserved)
-    // Offset: 0x12A2C18
+    // Offset: 0x18A07BC
     static void StopAllSounds(bool fadeOut, bool stopReserved);
     // public System.Void MuteAllSounds(System.Boolean mute, System.Boolean muteReserved)
-    // Offset: 0x12A2CE0
+    // Offset: 0x18A0884
     void MuteAllSounds(bool mute, bool muteReserved);
     // public System.Void UnMuteAllSounds(System.Boolean unmute, System.Boolean unmuteReserved)
-    // Offset: 0x12A2D74
+    // Offset: 0x18A0918
     void UnMuteAllSounds(bool unmute, bool unmuteReserved);
     // static public System.Single GetEmitterEndTime(System.Int32 idx)
-    // Offset: 0x12A2E38
+    // Offset: 0x18A09DC
     static float GetEmitterEndTime(int idx);
     // static public System.Single SetEmitterTime(System.Int32 idx, System.Single time)
-    // Offset: 0x12A2ED8
+    // Offset: 0x18A0A7C
     static float SetEmitterTime(int idx, float time);
     // static public System.Int32 PlaySound(UnityEngine.AudioClip clip, System.Single volume, OVR.EmitterChannel src, System.Single delay, System.Single pitchVariance, System.Boolean loop)
-    // Offset: 0x12A2FB4
+    // Offset: 0x18A0B58
     static int PlaySound(::UnityEngine::AudioClip* clip, float volume, ::OVR::EmitterChannel src, float delay, float pitchVariance, bool loop);
     // static private System.Int32 FindFreeEmitter(OVR.EmitterChannel src, OVR.SoundPriority priority)
-    // Offset: 0x12A3A38
+    // Offset: 0x18A15DC
     static int FindFreeEmitter(::OVR::EmitterChannel src, ::OVR::SoundPriority priority);
     // static public System.Int32 PlaySound(OVR.SoundFX soundFX, OVR.EmitterChannel src, System.Single delay)
-    // Offset: 0x12A4134
+    // Offset: 0x18A1CD8
     static int PlaySound(::OVR::SoundFX* soundFX, ::OVR::EmitterChannel src, float delay);
     // static public System.Int32 PlaySoundAt(UnityEngine.Vector3 position, OVR.SoundFX soundFX, OVR.EmitterChannel src, System.Single delay, System.Single volumeOverride, System.Single pitchMultiplier)
-    // Offset: 0x12A42F8
+    // Offset: 0x18A1E9C
     static int PlaySoundAt(::UnityEngine::Vector3 position, ::OVR::SoundFX* soundFX, ::OVR::EmitterChannel src, float delay, float volumeOverride, float pitchMultiplier);
     // static public System.Int32 PlayRandomSoundAt(UnityEngine.Vector3 position, UnityEngine.AudioClip[] clips, System.Single volume, OVR.EmitterChannel src, System.Single delay, System.Single pitch, System.Boolean loop)
-    // Offset: 0x12A505C
+    // Offset: 0x18A2C00
     static int PlayRandomSoundAt(::UnityEngine::Vector3 position, ::ArrayW<::UnityEngine::AudioClip*> clips, float volume, ::OVR::EmitterChannel src, float delay, float pitch, bool loop);
     // static public System.Int32 PlaySoundAt(UnityEngine.Vector3 position, UnityEngine.AudioClip clip, System.Single volume, OVR.EmitterChannel src, System.Single delay, System.Single pitch, System.Boolean loop)
-    // Offset: 0x12A31A0
+    // Offset: 0x18A0D44
     static int PlaySoundAt(::UnityEngine::Vector3 position, ::UnityEngine::AudioClip* clip, float volume, ::OVR::EmitterChannel src, float delay, float pitch, bool loop);
     // static public System.Void SetOnFinished(System.Int32 emitterIdx, System.Action onFinished)
-    // Offset: 0x12A5178
+    // Offset: 0x18A2D1C
     static void SetOnFinished(int emitterIdx, ::System::Action* onFinished);
     // static public System.Void SetOnFinished(System.Int32 emitterIdx, System.Action`1<System.Object> onFinished, System.Object obj)
-    // Offset: 0x12A5248
+    // Offset: 0x18A2DEC
     static void SetOnFinished(int emitterIdx, ::System::Action_1<::Il2CppObject*>* onFinished, ::Il2CppObject* obj);
     // static public System.Void AttachSoundToParent(System.Int32 idx, UnityEngine.Transform parent)
-    // Offset: 0x12A5324
+    // Offset: 0x18A2EC8
     static void AttachSoundToParent(int idx, ::UnityEngine::Transform* parent);
     // static public System.Void DetachSoundFromParent(System.Int32 idx)
-    // Offset: 0x12A5658
+    // Offset: 0x18A31FC
     static void DetachSoundFromParent(int idx);
     // static public System.Void DetachSoundsFromParent(OVR.SoundEmitter[] emitters, System.Boolean stopSounds)
-    // Offset: 0x12A585C
+    // Offset: 0x18A3400
     static void DetachSoundsFromParent(::ArrayW<::OVR::SoundEmitter*> emitters, bool stopSounds);
     // static public System.Void SetEmitterMixerGroup(System.Int32 idx, UnityEngine.Audio.AudioMixerGroup mixerGroup)
-    // Offset: 0x12A5974
+    // Offset: 0x18A3518
     static void SetEmitterMixerGroup(int idx, ::UnityEngine::Audio::AudioMixerGroup* mixerGroup);
     // static public OVR.MixerSnapshot GetActiveSnapshot()
-    // Offset: 0x12A5B40
+    // Offset: 0x18A36E4
     static ::OVR::MixerSnapshot* GetActiveSnapshot();
     // static public System.Void SetCurrentSnapshot(OVR.MixerSnapshot mixerSnapshot)
-    // Offset: 0x12A5C20
+    // Offset: 0x18A37C4
     static void SetCurrentSnapshot(::OVR::MixerSnapshot* mixerSnapshot);
     // static public System.Void BlendWithCurrentSnapshot(OVR.MixerSnapshot blendSnapshot, System.Single weight, System.Single blendTime)
-    // Offset: 0x12A5D5C
+    // Offset: 0x18A3900
     static void BlendWithCurrentSnapshot(::OVR::MixerSnapshot* blendSnapshot, float weight, float blendTime);
     // public System.Void .ctor()
-    // Offset: 0x12A6160
+    // Offset: 0x18A3D04
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -492,7 +484,7 @@ namespace OVR {
       return THROW_UNLESS((::il2cpp_utils::New<AudioManager*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12A6244
+    // Offset: 0x18A3DE8
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

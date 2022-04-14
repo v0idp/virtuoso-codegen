@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IntComparer : public ::VROSC::SignalFilter {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.IntField _intA
     // Size: 0x8
     // Offset: 0x40
@@ -60,11 +52,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::IntField*) == 0x8);
     public:
     // Get instance field reference: private VROSC.IntField _intA
-    ::VROSC::IntField*& dyn__intA();
+    [[deprecated]] ::VROSC::IntField*& dyn__intA();
     // Get instance field reference: private VROSC.IntField _intB
-    ::VROSC::IntField*& dyn__intB();
+    [[deprecated]] ::VROSC::IntField*& dyn__intB();
     // public System.Void .ctor()
-    // Offset: 0x13857B0
+    // Offset: 0x1948A58
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -80,7 +72,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<IntComparer*, creationType>()));
     }
     // protected override System.Void FilterSignal(VROSC.Signal signal)
-    // Offset: 0x13856D4
+    // Offset: 0x194897C
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::FilterSignal(VROSC.Signal signal)
     void FilterSignal(::VROSC::Signal* signal);

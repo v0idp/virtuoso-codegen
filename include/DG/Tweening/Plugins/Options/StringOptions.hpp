@@ -74,17 +74,17 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public System.Boolean richTextEnabled
-    bool& dyn_richTextEnabled();
+    [[deprecated]] bool& dyn_richTextEnabled();
     // Get instance field reference: public DG.Tweening.ScrambleMode scrambleMode
-    ::DG::Tweening::ScrambleMode& dyn_scrambleMode();
+    [[deprecated]] ::DG::Tweening::ScrambleMode& dyn_scrambleMode();
     // Get instance field reference: public System.Char[] scrambledChars
-    ::ArrayW<::Il2CppChar>& dyn_scrambledChars();
+    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_scrambledChars();
     // Get instance field reference: System.Int32 startValueStrippedLength
-    int& dyn_startValueStrippedLength();
+    [[deprecated]] int& dyn_startValueStrippedLength();
     // Get instance field reference: System.Int32 changeValueStrippedLength
-    int& dyn_changeValueStrippedLength();
+    [[deprecated]] int& dyn_changeValueStrippedLength();
     // public System.Void Reset()
-    // Offset: 0x1035AE4
+    // Offset: 0x15AC4DC
     void Reset();
   }; // DG.Tweening.Plugins.Options.StringOptions
   #pragma pack(pop)

@@ -65,15 +65,15 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 LayerId
-    int& dyn_LayerId();
+    [[deprecated]] int& dyn_LayerId();
     // Get instance field reference: private System.Int32 TextureStage
-    int& dyn_TextureStage();
+    [[deprecated]] int& dyn_TextureStage();
     // Get instance field reference: private OVRPlugin/Recti[] ViewportRect
-    ::ArrayW<::GlobalNamespace::OVRPlugin::Recti>& dyn_ViewportRect();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRPlugin::Recti>& dyn_ViewportRect();
     // Get instance field reference: private OVRPlugin/Posef Pose
-    ::GlobalNamespace::OVRPlugin::Posef& dyn_Pose();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Posef& dyn_Pose();
     // Get instance field reference: private System.Int32 LayerSubmitFlags
-    int& dyn_LayerSubmitFlags();
+    [[deprecated]] int& dyn_LayerSubmitFlags();
   }; // OVRPlugin/LayerSubmit
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::LayerSubmit), 44 + sizeof(int)> __GlobalNamespace_OVRPlugin_LayerSubmitSizeCheck;

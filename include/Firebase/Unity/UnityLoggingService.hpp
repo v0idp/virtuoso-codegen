@@ -37,13 +37,13 @@ namespace Firebase::Unity {
     // Set static field: static private Firebase.Unity.UnityLoggingService _instance
     static void _set__instance(::Firebase::Unity::UnityLoggingService* value);
     // static public Firebase.Unity.UnityLoggingService get_Instance()
-    // Offset: 0x12CB9A8
+    // Offset: 0x18CAD38
     static ::Firebase::Unity::UnityLoggingService* get_Instance();
     // static private System.Void .cctor()
-    // Offset: 0x12CBA0C
+    // Offset: 0x18CAD9C
     static void _cctor();
     // public System.Void .ctor()
-    // Offset: 0x12CB9A0
+    // Offset: 0x18CAD30
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

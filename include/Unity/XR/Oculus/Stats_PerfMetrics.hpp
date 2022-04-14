@@ -20,34 +20,34 @@ namespace Unity::XR::Oculus {
   class Stats::PerfMetrics : public ::Il2CppObject {
     public:
     // static public System.Single get_AppCPUTime()
-    // Offset: 0x12DCB88
+    // Offset: 0x18DEDFC
     static float get_AppCPUTime();
     // static public System.Single get_AppGPUTime()
-    // Offset: 0x12DCC10
+    // Offset: 0x18DEE84
     static float get_AppGPUTime();
     // static public System.Single get_CompositorCPUTime()
-    // Offset: 0x12DCC98
+    // Offset: 0x18DEF0C
     static float get_CompositorCPUTime();
     // static public System.Single get_CompositorGPUTime()
-    // Offset: 0x12DCD20
+    // Offset: 0x18DEF94
     static float get_CompositorGPUTime();
     // static public System.Single get_GPUUtilization()
-    // Offset: 0x12DCDA8
+    // Offset: 0x18DF01C
     static float get_GPUUtilization();
     // static public System.Single get_CPUUtilizationAverage()
-    // Offset: 0x12DCE30
+    // Offset: 0x18DF0A4
     static float get_CPUUtilizationAverage();
     // static public System.Single get_CPUUtilizationWorst()
-    // Offset: 0x12DCEB8
+    // Offset: 0x18DF12C
     static float get_CPUUtilizationWorst();
     // static public System.Single get_CPUClockFrequency()
-    // Offset: 0x12DCF40
+    // Offset: 0x18DF1B4
     static float get_CPUClockFrequency();
     // static public System.Single get_GPUClockFrequency()
-    // Offset: 0x12DCFC8
+    // Offset: 0x18DF23C
     static float get_GPUClockFrequency();
     // static public System.Void EnablePerfMetrics(System.Boolean enable)
-    // Offset: 0x12DD050
+    // Offset: 0x18DF2C4
     static void EnablePerfMetrics(bool enable);
   }; // Unity.XR.Oculus.Stats/Unity.XR.Oculus.PerfMetrics
   #pragma pack(pop)

@@ -23,13 +23,13 @@ namespace Unity::XR::Oculus {
   class RegisterUpdateCallback : public ::Il2CppObject {
     public:
     // static System.Void Initialize()
-    // Offset: 0x12DAF7C
+    // Offset: 0x18DD1F0
     static void Initialize();
     // static System.Void Deinitialize()
-    // Offset: 0x12DB1B4
+    // Offset: 0x18DD428
     static void Deinitialize();
     // static private System.Void Update()
-    // Offset: 0x12DB974
+    // Offset: 0x18DDBE8
     static void Update();
   }; // Unity.XR.Oculus.RegisterUpdateCallback
   #pragma pack(pop)

@@ -31,15 +31,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class LocalSessionsDataController::$$c__DisplayClass2_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.LocalSessionsDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -54,14 +46,14 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public VROSC.LocalSessionsDataController <>4__this
-    ::VROSC::LocalSessionsDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::LocalSessionsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // System.Void <SaveLocalData>b__0()
-    // Offset: 0x13D50DC
+    // Offset: 0x195CDF8
     void $SaveLocalData$b__0();
     // public System.Void .ctor()
-    // Offset: 0x13D50D4
+    // Offset: 0x195CDF0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

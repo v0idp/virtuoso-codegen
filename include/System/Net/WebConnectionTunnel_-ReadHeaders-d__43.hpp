@@ -114,30 +114,30 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`3<System.Net.WebHeaderCollection,System.Byte[],System.Int32>> <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::ValueTuple_3<::System::Net::WebHeaderCollection*, ::ArrayW<uint8_t>, int>>& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::ValueTuple_3<::System::Net::WebHeaderCollection*, ::ArrayW<uint8_t>, int>>& dyn_$$t__builder();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: public System.IO.Stream stream
-    ::System::IO::Stream*& dyn_stream();
+    [[deprecated]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private System.Byte[] <buffer>5__1
-    ::ArrayW<uint8_t>& dyn_$buffer$5__1();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_$buffer$5__1();
     // Get instance field reference: private System.IO.MemoryStream <ms>5__2
-    ::System::IO::MemoryStream*& dyn_$ms$5__2();
+    [[deprecated]] ::System::IO::MemoryStream*& dyn_$ms$5__2();
     // Get instance field reference: public System.Net.WebConnectionTunnel <>4__this
-    ::System::Net::WebConnectionTunnel*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebConnectionTunnel*& dyn_$$4__this();
     // Get instance field reference: private System.Byte[] <retBuffer>5__3
-    ::ArrayW<uint8_t>& dyn_$retBuffer$5__3();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_$retBuffer$5__3();
     // Get instance field reference: private System.Int32 <status>5__4
-    int& dyn_$status$5__4();
+    [[deprecated]] int& dyn_$status$5__4();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Int32> <>u__1
-    typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x8EA05C
+    // Offset: 0xA07BC8
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x8EA894
+    // Offset: 0xA08400
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.Net.WebConnectionTunnel/System.Net.<ReadHeaders>d__43
   // WARNING Not writing size check since size may be invalid!

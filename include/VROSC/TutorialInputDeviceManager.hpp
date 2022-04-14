@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TutorialInputDeviceManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TutorialInputDevice _left
     // Size: 0x8
     // Offset: 0x18
@@ -71,29 +63,29 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TutorialInputDevice _left
-    ::VROSC::TutorialInputDevice*& dyn__left();
+    [[deprecated]] ::VROSC::TutorialInputDevice*& dyn__left();
     // Get instance field reference: private VROSC.TutorialInputDevice _right
-    ::VROSC::TutorialInputDevice*& dyn__right();
+    [[deprecated]] ::VROSC::TutorialInputDevice*& dyn__right();
     // public System.Void Setup(VROSC.InputDevice left, VROSC.InputDevice right)
-    // Offset: 0x1407C04
+    // Offset: 0xA2FCE0
     void Setup(::VROSC::InputDevice* left, ::VROSC::InputDevice* right);
     // public System.Void StartButtonBlinking(VROSC.HandType hand, VROSC.TriggerButton trigger, UnityEngine.Color color)
-    // Offset: 0x1407C30
+    // Offset: 0xA2FD0C
     void StartButtonBlinking(::VROSC::HandType hand, ::VROSC::TriggerButton trigger, ::UnityEngine::Color color);
     // public System.Void StopButtonBlinking(VROSC.HandType hand, VROSC.TriggerButton trigger, System.Single fadeTime)
-    // Offset: 0x1407E10
+    // Offset: 0xA2FEEC
     void StopButtonBlinking(::VROSC::HandType hand, ::VROSC::TriggerButton trigger, float fadeTime);
     // public System.Void StopAllBlinking(VROSC.HandType hand, System.Single fadeTime)
-    // Offset: 0x1407E9C
+    // Offset: 0xA2FF78
     void StopAllBlinking(::VROSC::HandType hand, float fadeTime);
     // private System.Boolean IsLeftValid(VROSC.HandType hand)
-    // Offset: 0x1407CEC
+    // Offset: 0xA2FDC8
     bool IsLeftValid(::VROSC::HandType hand);
     // private System.Boolean IsRightValid(VROSC.HandType hand)
-    // Offset: 0x1407D7C
+    // Offset: 0xA2FE58
     bool IsRightValid(::VROSC::HandType hand);
     // public System.Void .ctor()
-    // Offset: 0x1407F10
+    // Offset: 0xA2FFEC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

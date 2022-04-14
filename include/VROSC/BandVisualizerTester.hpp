@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class BandVisualizerTester : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _numberOfBands
     // Size: 0x4
     // Offset: 0x18
@@ -69,19 +61,19 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 _numberOfBands
-    int& dyn__numberOfBands();
+    [[deprecated]] int& dyn__numberOfBands();
     // Get instance field reference: private System.Boolean _currentPlayingOnly
-    bool& dyn__currentPlayingOnly();
+    [[deprecated]] bool& dyn__currentPlayingOnly();
     // Get instance field reference: private UnityEngine.Transform[] _bandTransforms
-    ::ArrayW<::UnityEngine::Transform*>& dyn__bandTransforms();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__bandTransforms();
     // protected System.Void Awake()
-    // Offset: 0x1374C70
+    // Offset: 0x973BD4
     void Awake();
     // protected System.Void Update()
-    // Offset: 0x1374E48
+    // Offset: 0x973DAC
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x1374F8C
+    // Offset: 0x973EF0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

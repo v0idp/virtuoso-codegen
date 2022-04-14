@@ -44,22 +44,22 @@ namespace VROSC {
   class MySharedSessionsPanelUI : public ::VROSC::SessionsPanelUI {
     public:
     // private System.Void UserLoggedIn()
-    // Offset: 0xA09C84
+    // Offset: 0xACEB60
     void UserLoggedIn();
     // private System.Void CommunitySessionsDataLoadSucceeded(System.Collections.Generic.List`1<VROSC.SessionUIData> sessionUIDatas)
-    // Offset: 0xA09978
+    // Offset: 0xACE854
     void CommunitySessionsDataLoadSucceeded(::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* sessionUIDatas);
     // private System.Void CommunitySessionsDataLoadFailed(VROSC.Error error)
-    // Offset: 0xA09E24
+    // Offset: 0xACED00
     void CommunitySessionsDataLoadFailed(::VROSC::Error error);
     // private System.Void <Refresh>b__1_0()
-    // Offset: 0xA09ED4
+    // Offset: 0xACEDB0
     void $Refresh$b__1_0();
     // private System.Void <UserLoggedIn>b__3_0()
-    // Offset: 0xA09F48
+    // Offset: 0xACEE24
     void $UserLoggedIn$b__3_0();
     // public System.Void .ctor()
-    // Offset: 0xA09ECC
+    // Offset: 0xACEDA8
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -73,17 +73,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<MySharedSessionsPanelUI*, creationType>()));
     }
     // protected System.Void Awake()
-    // Offset: 0xA09678
+    // Offset: 0xACE554
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::Awake()
     void Awake();
     // public override System.Void Refresh()
-    // Offset: 0xA096B8
+    // Offset: 0xACE594
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::Refresh()
     void Refresh();
     // protected System.Void OnDisable()
-    // Offset: 0xA09BA0
+    // Offset: 0xACEA7C
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::OnDisable()
     void OnDisable();

@@ -26,15 +26,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationRecordingProgress : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single <FullLengthProgress>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -61,36 +53,36 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Single <FullLengthProgress>k__BackingField
-    float& dyn_$FullLengthProgress$k__BackingField();
+    [[deprecated]] float& dyn_$FullLengthProgress$k__BackingField();
     // Get instance field reference: private System.Single <SingleBarProgress>k__BackingField
-    float& dyn_$SingleBarProgress$k__BackingField();
+    [[deprecated]] float& dyn_$SingleBarProgress$k__BackingField();
     // Get instance field reference: private System.Single _lastProgress
-    float& dyn__lastProgress();
+    [[deprecated]] float& dyn__lastProgress();
     // Get instance field reference: private System.Int32 _barCount
-    int& dyn__barCount();
+    [[deprecated]] int& dyn__barCount();
     // public System.Single get_FullLengthProgress()
-    // Offset: 0x8A4C98
+    // Offset: 0x1977D04
     float get_FullLengthProgress();
     // private System.Void set_FullLengthProgress(System.Single value)
-    // Offset: 0x8A4C90
+    // Offset: 0x1977CFC
     void set_FullLengthProgress(float value);
     // public System.Single get_SingleBarProgress()
-    // Offset: 0x8A4CA8
+    // Offset: 0x1977D14
     float get_SingleBarProgress();
     // private System.Void set_SingleBarProgress(System.Single value)
-    // Offset: 0x8A4CA0
+    // Offset: 0x1977D0C
     void set_SingleBarProgress(float value);
     // public System.Void Reset()
-    // Offset: 0x8A394C
+    // Offset: 0x1976A60
     void Reset();
     // public System.Void Update(System.Single recordingLengthInBars)
-    // Offset: 0x8A3D28
+    // Offset: 0x1976E38
     void Update(float recordingLengthInBars);
     // private System.Void SetValue(System.Single recordingProgress, System.Single visualProgress)
-    // Offset: 0x8A4CB0
+    // Offset: 0x1977D1C
     void SetValue(float recordingProgress, float visualProgress);
     // public System.Void .ctor()
-    // Offset: 0x8A4554
+    // Offset: 0x1977658
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

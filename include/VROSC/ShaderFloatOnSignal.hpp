@@ -45,15 +45,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ShaderFloatOnSignal : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _outputRenderer
     // Size: 0x8
     // Offset: 0x40
@@ -80,27 +72,27 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _outputRenderer
-    ::UnityEngine::Renderer*& dyn__outputRenderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__outputRenderer();
     // Get instance field reference: private System.String _valueName
-    ::StringW& dyn__valueName();
+    [[deprecated]] ::StringW& dyn__valueName();
     // Get instance field reference: private VROSC.FloatField _startValue
-    ::VROSC::FloatField*& dyn__startValue();
+    [[deprecated]] ::VROSC::FloatField*& dyn__startValue();
     // Get instance field reference: private UnityEngine.Material _materialInstance
-    ::UnityEngine::Material*& dyn__materialInstance();
+    [[deprecated]] ::UnityEngine::Material*& dyn__materialInstance();
     // protected System.Void Awake()
-    // Offset: 0x13B40BC
+    // Offset: 0x1926F88
     void Awake();
     // private System.Void TurnOn(VROSC.Signal signal)
-    // Offset: 0x13B4144
+    // Offset: 0x1927010
     void TurnOn(::VROSC::Signal* signal);
     // private System.Void StayOn(VROSC.Signal signal)
-    // Offset: 0x13B4174
+    // Offset: 0x1927040
     void StayOn(::VROSC::Signal* signal);
     // private System.Void SetValue(System.Single value)
-    // Offset: 0x13B4108
+    // Offset: 0x1926FD4
     void SetValue(float value);
     // public System.Void .ctor()
-    // Offset: 0x13B418C
+    // Offset: 0x1927058
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -115,12 +107,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ShaderFloatOnSignal*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13B412C
+    // Offset: 0x1926FF8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13B415C
+    // Offset: 0x1927028
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);

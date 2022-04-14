@@ -35,10 +35,10 @@ namespace Oculus::Platform {
   class MessageWithSdkAccountList : public ::Oculus::Platform::Message_1<::Oculus::Platform::Models::SdkAccountList*> {
     public:
     // protected Oculus.Platform.Models.SdkAccountList GetDataFromMessage(System.IntPtr c_message)
-    // Offset: 0x97DF0C
+    // Offset: 0xB502A8
     ::Oculus::Platform::Models::SdkAccountList* GetDataFromMessage(::System::IntPtr c_message);
     // public System.Void .ctor(System.IntPtr c_message)
-    // Offset: 0x97767C
+    // Offset: 0xB49A18
     // Implemented from: Oculus.Platform.Message`1
     // Base method: System.Void Message_1::.ctor(System.IntPtr c_message)
     // Base method: System.Void Message::.ctor(System.IntPtr c_message)
@@ -48,7 +48,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<MessageWithSdkAccountList*, creationType>(c_message)));
     }
     // public override Oculus.Platform.Models.SdkAccountList GetSdkAccountList()
-    // Offset: 0x97DECC
+    // Offset: 0xB50268
     // Implemented from: Oculus.Platform.Message
     // Base method: Oculus.Platform.Models.SdkAccountList Message::GetSdkAccountList()
     ::Oculus::Platform::Models::SdkAccountList* GetSdkAccountList();

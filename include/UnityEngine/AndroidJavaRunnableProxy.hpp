@@ -35,15 +35,7 @@ namespace UnityEngine {
   // [TokenAttribute] Offset: FFFFFFFF
   class AndroidJavaRunnableProxy : public ::UnityEngine::AndroidJavaProxy {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AndroidJavaRunnable mRunnable
     // Size: 0x8
     // Offset: 0x20
@@ -56,16 +48,16 @@ namespace UnityEngine {
       return mRunnable;
     }
     // Get instance field reference: private UnityEngine.AndroidJavaRunnable mRunnable
-    ::UnityEngine::AndroidJavaRunnable*& dyn_mRunnable();
+    [[deprecated]] ::UnityEngine::AndroidJavaRunnable*& dyn_mRunnable();
     // public System.Void .ctor(UnityEngine.AndroidJavaRunnable runnable)
-    // Offset: 0x127AE28
+    // Offset: 0x18731CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AndroidJavaRunnableProxy* New_ctor(::UnityEngine::AndroidJavaRunnable* runnable) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AndroidJavaRunnableProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AndroidJavaRunnableProxy*, creationType>(runnable)));
     }
     // public System.Void run()
-    // Offset: 0x127AEB4
+    // Offset: 0x1873258
     void run();
   }; // UnityEngine.AndroidJavaRunnableProxy
   #pragma pack(pop)

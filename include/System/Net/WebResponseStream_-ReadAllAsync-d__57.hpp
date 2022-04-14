@@ -153,42 +153,42 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebResponseStream <>4__this
-    ::System::Net::WebResponseStream*& dyn_$$4__this();
+    [[deprecated]] ::System::Net::WebResponseStream*& dyn_$$4__this();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Net.WebCompletionSource <completion>5__1
-    ::System::Net::WebCompletionSource*& dyn_$completion$5__1();
+    [[deprecated]] ::System::Net::WebCompletionSource*& dyn_$completion$5__1();
     // Get instance field reference: private System.Threading.Tasks.Task <timeoutTask>5__2
-    ::System::Threading::Tasks::Task*& dyn_$timeoutTask$5__2();
+    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_$timeoutTask$5__2();
     // Get instance field reference: public System.Boolean resending
-    bool& dyn_resending();
+    [[deprecated]] bool& dyn_resending();
     // Get instance field reference: private System.IO.MemoryStream <ms>5__3
-    ::System::IO::MemoryStream*& dyn_$ms$5__3();
+    [[deprecated]] ::System::IO::MemoryStream*& dyn_$ms$5__3();
     // Get instance field reference: private System.Net.BufferOffsetSize <buffer>5__4
-    ::System::Net::BufferOffsetSize*& dyn_$buffer$5__4();
+    [[deprecated]] ::System::Net::BufferOffsetSize*& dyn_$buffer$5__4();
     // Get instance field reference: private System.Int32 <read>5__5
-    int& dyn_$read$5__5();
+    [[deprecated]] int& dyn_$read$5__5();
     // Get instance field reference: private System.Byte[] <b>5__6
-    ::ArrayW<uint8_t>& dyn_$b$5__6();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_$b$5__6();
     // Get instance field reference: private System.Int32 <remaining>5__7
-    int& dyn_$remaining$5__7();
+    [[deprecated]] int& dyn_$remaining$5__7();
     // Get instance field reference: private System.Int32 <readSize>5__8
-    int& dyn_$readSize$5__8();
+    [[deprecated]] int& dyn_$readSize$5__8();
     // Get instance field reference: private System.Int32 <new_size>5__9
-    int& dyn_$new_size$5__9();
+    [[deprecated]] int& dyn_$new_size$5__9();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Threading.Tasks.Task> <>u__1
-    typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Threading::Tasks::Task*>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Threading::Tasks::Task*>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter`1<System.Int32> <>u__2
-    ::System::Runtime::CompilerServices::TaskAwaiter_1<int>& dyn_$$u__2();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter_1<int>& dyn_$$u__2();
     // private System.Void MoveNext()
-    // Offset: 0x127FB98
+    // Offset: 0x17CE3B0
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x12807B0
+    // Offset: 0x17CEFC8
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // System.Net.WebResponseStream/System.Net.<ReadAllAsync>d__57
   // WARNING Not writing size check since size may be invalid!

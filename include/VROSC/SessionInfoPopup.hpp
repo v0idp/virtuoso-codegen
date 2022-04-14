@@ -64,15 +64,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionInfoPopup : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _songNameText
     // Size: 0x8
     // Offset: 0x18
@@ -179,95 +171,95 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _songNameText
-    ::TMPro::TextMeshPro*& dyn__songNameText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__songNameText();
     // Get instance field reference: private TMPro.TextMeshPro _songDescriptionText
-    ::TMPro::TextMeshPro*& dyn__songDescriptionText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__songDescriptionText();
     // Get instance field reference: private UnityEngine.Transform _contributorsList
-    ::UnityEngine::Transform*& dyn__contributorsList();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__contributorsList();
     // Get instance field reference: private VROSC.UIDataButton _contributorButtonPrefab
-    ::VROSC::UIDataButton*& dyn__contributorButtonPrefab();
+    [[deprecated]] ::VROSC::UIDataButton*& dyn__contributorButtonPrefab();
     // Get instance field reference: private UnityEngine.Transform _tagsList
-    ::UnityEngine::Transform*& dyn__tagsList();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__tagsList();
     // Get instance field reference: private VROSC.UIDataButton _tagButtonPrefab
-    ::VROSC::UIDataButton*& dyn__tagButtonPrefab();
+    [[deprecated]] ::VROSC::UIDataButton*& dyn__tagButtonPrefab();
     // Get instance field reference: private UnityEngine.GameObject _songRatingSection
-    ::UnityEngine::GameObject*& dyn__songRatingSection();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__songRatingSection();
     // Get instance field reference: private TMPro.TextMeshPro _songUpVotesText
-    ::TMPro::TextMeshPro*& dyn__songUpVotesText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__songUpVotesText();
     // Get instance field reference: private TMPro.TextMeshPro _songDownloadsText
-    ::TMPro::TextMeshPro*& dyn__songDownloadsText();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__songDownloadsText();
     // Get instance field reference: private VROSC.UIToggle _upVoteButton
-    ::VROSC::UIToggle*& dyn__upVoteButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__upVoteButton();
     // Get instance field reference: private VROSC.UIToggle _favoriteButton
-    ::VROSC::UIToggle*& dyn__favoriteButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__favoriteButton();
     // Get instance field reference: private System.Int32 _maxContributors
-    int& dyn__maxContributors();
+    [[deprecated]] int& dyn__maxContributors();
     // Get instance field reference: private System.Int32 _maxTags
-    int& dyn__maxTags();
+    [[deprecated]] int& dyn__maxTags();
     // Get instance field reference: private VROSC.SessionsLibraryUI _sessionsLibraryUI
-    ::VROSC::SessionsLibraryUI*& dyn__sessionsLibraryUI();
+    [[deprecated]] ::VROSC::SessionsLibraryUI*& dyn__sessionsLibraryUI();
     // Get instance field reference: private VROSC.SessionUIData _sessionUIData
-    ::VROSC::SessionUIData*& dyn__sessionUIData();
+    [[deprecated]] ::VROSC::SessionUIData*& dyn__sessionUIData();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UIDataButton> _contributorButtons
-    ::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*& dyn__contributorButtons();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*& dyn__contributorButtons();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UIDataButton> _tagsButtons
-    ::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*& dyn__tagsButtons();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*& dyn__tagsButtons();
     // private System.Void Awake()
-    // Offset: 0x13E64A0
+    // Offset: 0x1985570
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13E65D8
+    // Offset: 0x19856A8
     void OnDestroy();
     // public System.Void Setup(VROSC.SessionsLibraryUI sessionsLibraryUI)
-    // Offset: 0x13E6710
+    // Offset: 0x19857E0
     void Setup(::VROSC::SessionsLibraryUI* sessionsLibraryUI);
     // public System.Void UpdateInfo(VROSC.SessionUIData sessionUIData)
-    // Offset: 0x13E6718
+    // Offset: 0x19857E8
     void UpdateInfo(::VROSC::SessionUIData* sessionUIData);
     // private System.Void SetupContributorButtons(System.Collections.Generic.List`1<System.String> contributorNames)
-    // Offset: 0x13E6A40
+    // Offset: 0x1985B10
     void SetupContributorButtons(::System::Collections::Generic::List_1<::StringW>* contributorNames);
     // private System.Void SetupTagsButtons(System.Collections.Generic.List`1<System.String> tags)
-    // Offset: 0x13E6ED8
+    // Offset: 0x1985FA8
     void SetupTagsButtons(::System::Collections::Generic::List_1<::StringW>* tags);
     // private System.Void ContributorButtonPressed(System.Object data)
-    // Offset: 0x13E72E8
+    // Offset: 0x19863B8
     void ContributorButtonPressed(::Il2CppObject* data);
     // private System.Void TagButtonPressed(System.Object data)
-    // Offset: 0x13E738C
+    // Offset: 0x198645C
     void TagButtonPressed(::Il2CppObject* data);
     // private System.Void UpVoteButtonToggled(VROSC.InputDevice device, System.Boolean isOn)
-    // Offset: 0x13E7414
+    // Offset: 0x19864D8
     void UpVoteButtonToggled(::VROSC::InputDevice* device, bool isOn);
     // private System.Void FavoriteButtonToggled(VROSC.InputDevice device, System.Boolean isOn)
-    // Offset: 0x13E77DC
+    // Offset: 0x1986950
     void FavoriteButtonToggled(::VROSC::InputDevice* device, bool isOn);
     // private System.Void <UpVoteButtonToggled>b__25_0()
-    // Offset: 0x13E7C44
+    // Offset: 0x1986E68
     void $UpVoteButtonToggled$b__25_0();
     // private System.Void <UpVoteButtonToggled>b__25_1(VROSC.Error error)
-    // Offset: 0x13E7C64
+    // Offset: 0x1986E88
     void $UpVoteButtonToggled$b__25_1(::VROSC::Error error);
     // private System.Void <UpVoteButtonToggled>b__25_2()
-    // Offset: 0x13E7C84
+    // Offset: 0x1986EC0
     void $UpVoteButtonToggled$b__25_2();
     // private System.Void <UpVoteButtonToggled>b__25_3(VROSC.Error error)
-    // Offset: 0x13E7CA4
+    // Offset: 0x1986EE0
     void $UpVoteButtonToggled$b__25_3(::VROSC::Error error);
     // private System.Void <FavoriteButtonToggled>b__26_0()
-    // Offset: 0x13E7CC4
+    // Offset: 0x1986F18
     void $FavoriteButtonToggled$b__26_0();
     // private System.Void <FavoriteButtonToggled>b__26_1(VROSC.Error error)
-    // Offset: 0x13E7CE4
+    // Offset: 0x1986F38
     void $FavoriteButtonToggled$b__26_1(::VROSC::Error error);
     // private System.Void <FavoriteButtonToggled>b__26_2()
-    // Offset: 0x13E7D04
+    // Offset: 0x1986F70
     void $FavoriteButtonToggled$b__26_2();
     // private System.Void <FavoriteButtonToggled>b__26_3(VROSC.Error error)
-    // Offset: 0x13E7D24
+    // Offset: 0x1986F90
     void $FavoriteButtonToggled$b__26_3(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x13E7BA4
+    // Offset: 0x1986DC8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

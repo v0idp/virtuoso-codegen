@@ -26,15 +26,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_TextElement_Legacy : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 id
     // Size: 0x4
     // Offset: 0x10
@@ -91,25 +83,25 @@ namespace TMPro {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Int32 id
-    int& dyn_id();
+    [[deprecated]] int& dyn_id();
     // Get instance field reference: public System.Single x
-    float& dyn_x();
+    [[deprecated]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    float& dyn_y();
+    [[deprecated]] float& dyn_y();
     // Get instance field reference: public System.Single width
-    float& dyn_width();
+    [[deprecated]] float& dyn_width();
     // Get instance field reference: public System.Single height
-    float& dyn_height();
+    [[deprecated]] float& dyn_height();
     // Get instance field reference: public System.Single xOffset
-    float& dyn_xOffset();
+    [[deprecated]] float& dyn_xOffset();
     // Get instance field reference: public System.Single yOffset
-    float& dyn_yOffset();
+    [[deprecated]] float& dyn_yOffset();
     // Get instance field reference: public System.Single xAdvance
-    float& dyn_xAdvance();
+    [[deprecated]] float& dyn_xAdvance();
     // Get instance field reference: public System.Single scale
-    float& dyn_scale();
+    [[deprecated]] float& dyn_scale();
     // public System.Void .ctor()
-    // Offset: 0xACAEBC
+    // Offset: 0xD0FD10
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -84,24 +84,16 @@ namespace Oculus::Platform::Samples::VrBoardGame {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.GameObject piece
-      ::UnityEngine::GameObject*& dyn_piece();
+      [[deprecated]] ::UnityEngine::GameObject*& dyn_piece();
       // Get instance field reference: public System.Int32 pieceOwner
-      int& dyn_pieceOwner();
+      [[deprecated]] int& dyn_pieceOwner();
       // Get instance field reference: public System.Int32 powerPieceOwner
-      int& dyn_powerPieceOwner();
+      [[deprecated]] int& dyn_powerPieceOwner();
     }; // Oculus.Platform.Samples.VrBoardGame.GameBoard/Oculus.Platform.Samples.VrBoardGame.PositionInfo
     #pragma pack(pop)
     static check_size<sizeof(GameBoard::PositionInfo), 12 + sizeof(int)> __Oculus_Platform_Samples_VrBoardGame_GameBoard_PositionInfoSizeCheck;
     static_assert(sizeof(GameBoard::PositionInfo) == 0x10);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color[] m_playerColors
     // Size: 0x8
     // Offset: 0x18
@@ -154,50 +146,50 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Set static field: static public System.Int32 MAX_PLAYERS
     static void _set_MAX_PLAYERS(int value);
     // Get instance field reference: private UnityEngine.Color[] m_playerColors
-    ::ArrayW<::UnityEngine::Color>& dyn_m_playerColors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn_m_playerColors();
     // Get instance field reference: private UnityEngine.Color m_proposedMoveColor
-    ::UnityEngine::Color& dyn_m_proposedMoveColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_m_proposedMoveColor();
     // Get instance field reference: private System.Int32[] m_scores
-    ::ArrayW<int>& dyn_m_scores();
+    [[deprecated]] ::ArrayW<int>& dyn_m_scores();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.BoardPosition[] m_positions
-    ::ArrayW<::Oculus::Platform::Samples::VrBoardGame::BoardPosition*>& dyn_m_positions();
+    [[deprecated]] ::ArrayW<::Oculus::Platform::Samples::VrBoardGame::BoardPosition*>& dyn_m_positions();
     // Get instance field reference: private readonly Oculus.Platform.Samples.VrBoardGame.GameBoard/Oculus.Platform.Samples.VrBoardGame.PositionInfo[,] m_pieces
-    ::ArrayW<::Oculus::Platform::Samples::VrBoardGame::GameBoard::PositionInfo>& dyn_m_pieces();
+    [[deprecated]] ::ArrayW<::Oculus::Platform::Samples::VrBoardGame::GameBoard::PositionInfo>& dyn_m_pieces();
     // public System.Void Reset()
-    // Offset: 0x7E8D50
+    // Offset: 0x92F130
     void Reset();
     // public System.Boolean IsFull()
-    // Offset: 0x7E8F20
+    // Offset: 0x92F300
     bool IsFull();
     // public System.Boolean CanPlayerMoveToPostion(System.Int32 x, System.Int32 y)
-    // Offset: 0x7E9010
+    // Offset: 0x92F3F0
     bool CanPlayerMoveToPostion(int x, int y);
     // public System.Boolean CanPlayerPowerUpPosition(System.Int32 x, System.Int32 y)
-    // Offset: 0x7E90D0
+    // Offset: 0x92F4B0
     bool CanPlayerPowerUpPosition(int x, int y);
     // public System.Void AddPiece(System.Int32 player, UnityEngine.GameObject prefab, System.Int32 x, System.Int32 y)
-    // Offset: 0x7E9190
+    // Offset: 0x92F570
     void AddPiece(int player, ::UnityEngine::GameObject* prefab, int x, int y);
     // public Oculus.Platform.Samples.VrBoardGame.GamePiece AddProposedPiece(UnityEngine.GameObject prefab, Oculus.Platform.Samples.VrBoardGame.BoardPosition pos)
-    // Offset: 0x7E96E8
+    // Offset: 0x92FAC8
     ::Oculus::Platform::Samples::VrBoardGame::GamePiece* AddProposedPiece(::UnityEngine::GameObject* prefab, ::Oculus::Platform::Samples::VrBoardGame::BoardPosition* pos);
     // public System.Void AddPowerPiece(System.Int32 player, UnityEngine.GameObject prefab, System.Int32 x, System.Int32 y)
-    // Offset: 0x7E97A0
+    // Offset: 0x92FB80
     void AddPowerPiece(int player, ::UnityEngine::GameObject* prefab, int x, int y);
     // public Oculus.Platform.Samples.VrBoardGame.GamePiece AddProposedPowerPiece(UnityEngine.GameObject prefab, Oculus.Platform.Samples.VrBoardGame.BoardPosition pos)
-    // Offset: 0x7E9928
+    // Offset: 0x92FD08
     ::Oculus::Platform::Samples::VrBoardGame::GamePiece* AddProposedPowerPiece(::UnityEngine::GameObject* prefab, ::Oculus::Platform::Samples::VrBoardGame::BoardPosition* pos);
     // private Oculus.Platform.Samples.VrBoardGame.GamePiece Create(UnityEngine.GameObject prefab, UnityEngine.GameObject parent, Oculus.Platform.Samples.VrBoardGame.BoardPosition pos, UnityEngine.Vector3 off)
-    // Offset: 0x7E935C
+    // Offset: 0x92F73C
     ::Oculus::Platform::Samples::VrBoardGame::GamePiece* Create(::UnityEngine::GameObject* prefab, ::UnityEngine::GameObject* parent, ::Oculus::Platform::Samples::VrBoardGame::BoardPosition* pos, ::UnityEngine::Vector3 off);
     // public System.Int32 GetPlayerScore(System.Int32 player)
-    // Offset: 0x7E9A28
+    // Offset: 0x92FE08
     int GetPlayerScore(int player);
     // private System.Void UpdateScores()
-    // Offset: 0x7E949C
+    // Offset: 0x92F87C
     void UpdateScores();
     // public System.Void .ctor()
-    // Offset: 0x7E9A64
+    // Offset: 0x92FE44
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

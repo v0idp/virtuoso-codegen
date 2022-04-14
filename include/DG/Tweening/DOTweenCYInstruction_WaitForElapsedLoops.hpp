@@ -32,15 +32,7 @@ namespace DG::Tweening {
   // [TokenAttribute] Offset: FFFFFFFF
   class DOTweenCYInstruction::WaitForElapsedLoops : public ::UnityEngine::CustomYieldInstruction {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly DG.Tweening.Tween t
     // Size: 0x8
     // Offset: 0x10
@@ -55,18 +47,18 @@ namespace DG::Tweening {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly DG.Tweening.Tween t
-    ::DG::Tweening::Tween*& dyn_t();
+    [[deprecated]] ::DG::Tweening::Tween*& dyn_t();
     // Get instance field reference: private readonly System.Int32 elapsedLoops
-    int& dyn_elapsedLoops();
+    [[deprecated]] int& dyn_elapsedLoops();
     // public System.Void .ctor(DG.Tweening.Tween tween, System.Int32 elapsedLoops)
-    // Offset: 0x12641D8
+    // Offset: 0x17E2040
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DOTweenCYInstruction::WaitForElapsedLoops* New_ctor(::DG::Tweening::Tween* tween, int elapsedLoops) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenCYInstruction::WaitForElapsedLoops::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DOTweenCYInstruction::WaitForElapsedLoops*, creationType>(tween, elapsedLoops)));
     }
     // public override System.Boolean get_keepWaiting()
-    // Offset: 0x126418C
+    // Offset: 0x17E2860
     // Implemented from: UnityEngine.CustomYieldInstruction
     // Base method: System.Boolean CustomYieldInstruction::get_keepWaiting()
     bool get_keepWaiting();

@@ -35,20 +35,20 @@ namespace Firebase::Auth {
   class Future_User::SWIG_CompletionDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x12B2D40
+    // Offset: 0x18B2C6C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Future_User::SWIG_CompletionDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::Future_User::SWIG_CompletionDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Future_User::SWIG_CompletionDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Int32 index)
-    // Offset: 0x12B49E0
+    // Offset: 0x18B4BD0
     void Invoke(int index);
     // public System.IAsyncResult BeginInvoke(System.Int32 index, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x12B4C0C
+    // Offset: 0x18B4DFC
     ::System::IAsyncResult* BeginInvoke(int index, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x12B4C94
+    // Offset: 0x18B4E84
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.Auth.Future_User/Firebase.Auth.SWIG_CompletionDelegate
   #pragma pack(pop)

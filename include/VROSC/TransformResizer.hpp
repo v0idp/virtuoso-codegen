@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TransformResizer : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _resizeTransform
     // Size: 0x8
     // Offset: 0x40
@@ -95,26 +87,26 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Transform _resizeTransform
-    ::UnityEngine::Transform*& dyn__resizeTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__resizeTransform();
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private UnityEngine.Vector3 _startScale
-    ::UnityEngine::Vector3& dyn__startScale();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__startScale();
     // Get instance field reference: private System.Boolean _invertX
-    bool& dyn__invertX();
+    [[deprecated]] bool& dyn__invertX();
     // Get instance field reference: private System.Boolean _invertY
-    bool& dyn__invertY();
+    [[deprecated]] bool& dyn__invertY();
     // Get instance field reference: private System.Boolean _invertZ
-    bool& dyn__invertZ();
+    [[deprecated]] bool& dyn__invertZ();
     // Get instance field reference: private System.Single _minSize
-    float& dyn__minSize();
+    [[deprecated]] float& dyn__minSize();
     // protected override System.Boolean get_RequireOrigin()
-    // Offset: 0x1404D54
+    // Offset: 0xA2C9D8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Boolean SignalNode::get_RequireOrigin()
     bool get_RequireOrigin();
     // public System.Void .ctor()
-    // Offset: 0x1404F60
+    // Offset: 0xA2CBE4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -129,17 +121,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<TransformResizer*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x1404D5C
+    // Offset: 0xA2C9E0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x1404DCC
+    // Offset: 0xA2CA50
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x1404F58
+    // Offset: 0xA2CBDC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

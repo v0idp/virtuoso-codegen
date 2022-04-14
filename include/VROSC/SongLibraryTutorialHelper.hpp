@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SongLibraryTutorialHelper : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Interactable[] _interactablesToDisable
     // Size: 0x8
     // Offset: 0x18
@@ -107,47 +99,47 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Interactable[] _interactablesToDisable
-    ::ArrayW<::VROSC::Interactable*>& dyn__interactablesToDisable();
+    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__interactablesToDisable();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _saveButtonBlinker
-    ::VROSC::TutorialBlinkingUIElement*& dyn__saveButtonBlinker();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__saveButtonBlinker();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _songNameBlinker
-    ::VROSC::TutorialBlinkingUIElement*& dyn__songNameBlinker();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__songNameBlinker();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _saveAsButtonBlinker
-    ::VROSC::TutorialBlinkingUIElement*& dyn__saveAsButtonBlinker();
+    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__saveAsButtonBlinker();
     // Get instance field reference: private VROSC.Interactable _saveButtonInteractable
-    ::VROSC::Interactable*& dyn__saveButtonInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__saveButtonInteractable();
     // Get instance field reference: private VROSC.Interactable _songNameInteractable
-    ::VROSC::Interactable*& dyn__songNameInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__songNameInteractable();
     // Get instance field reference: private VROSC.Interactable _saveAsButtonInteractable
-    ::VROSC::Interactable*& dyn__saveAsButtonInteractable();
+    [[deprecated]] ::VROSC::Interactable*& dyn__saveAsButtonInteractable();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Interactable> _disabledInteractables
-    ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
     // protected System.Void Start()
-    // Offset: 0x13B9110
+    // Offset: 0x192BFDC
     void Start();
     // private System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
-    // Offset: 0x13B9200
+    // Offset: 0x192C0CC
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
     // private System.Void DisableInteractables()
-    // Offset: 0x13B93D8
+    // Offset: 0x192C2A4
     void DisableInteractables();
     // private System.Void StartBlinkSaveButtons()
-    // Offset: 0x13B94C8
+    // Offset: 0x192C394
     void StartBlinkSaveButtons();
     // private System.Void SaveButtonClicked(System.Boolean enabled)
-    // Offset: 0x13B975C
+    // Offset: 0x192C628
     void SaveButtonClicked(bool enabled);
     // private System.Void SongNameClicked(System.Boolean enabled)
-    // Offset: 0x13B984C
+    // Offset: 0x192C718
     void SongNameClicked(bool enabled);
     // private System.Void SaveAsButtonClicked(System.Boolean enabled)
-    // Offset: 0x13B993C
+    // Offset: 0x192C808
     void SaveAsButtonClicked(bool enabled);
     // private System.Void ResetAll()
-    // Offset: 0x13B922C
+    // Offset: 0x192C0F8
     void ResetAll();
     // public System.Void .ctor()
-    // Offset: 0x13B9A2C
+    // Offset: 0x192C8F8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

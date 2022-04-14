@@ -52,15 +52,7 @@ namespace UnityEngine::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class Dropdown::DropdownItem : public ::UnityEngine::MonoBehaviour/*, public ::UnityEngine::EventSystems::ICancelHandler, public ::UnityEngine::EventSystems::IPointerEnterHandler*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.UI.Text m_Text
     // Size: 0x8
     // Offset: 0x18
@@ -97,45 +89,45 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.UI.Text m_Text
-    ::UnityEngine::UI::Text*& dyn_m_Text();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_Text();
     // Get instance field reference: private UnityEngine.UI.Image m_Image
-    ::UnityEngine::UI::Image*& dyn_m_Image();
+    [[deprecated]] ::UnityEngine::UI::Image*& dyn_m_Image();
     // Get instance field reference: private UnityEngine.RectTransform m_RectTransform
-    ::UnityEngine::RectTransform*& dyn_m_RectTransform();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
     // Get instance field reference: private UnityEngine.UI.Toggle m_Toggle
-    ::UnityEngine::UI::Toggle*& dyn_m_Toggle();
+    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_m_Toggle();
     // public UnityEngine.UI.Text get_text()
-    // Offset: 0x11417E4
+    // Offset: 0x16D7F7C
     ::UnityEngine::UI::Text* get_text();
     // public System.Void set_text(UnityEngine.UI.Text value)
-    // Offset: 0x11417EC
+    // Offset: 0x16D7F84
     void set_text(::UnityEngine::UI::Text* value);
     // public UnityEngine.UI.Image get_image()
-    // Offset: 0x11417F4
+    // Offset: 0x16D7F8C
     ::UnityEngine::UI::Image* get_image();
     // public System.Void set_image(UnityEngine.UI.Image value)
-    // Offset: 0x11417FC
+    // Offset: 0x16D7F94
     void set_image(::UnityEngine::UI::Image* value);
     // public UnityEngine.RectTransform get_rectTransform()
-    // Offset: 0x1141804
+    // Offset: 0x16D7F9C
     ::UnityEngine::RectTransform* get_rectTransform();
     // public System.Void set_rectTransform(UnityEngine.RectTransform value)
-    // Offset: 0x114180C
+    // Offset: 0x16D7FA4
     void set_rectTransform(::UnityEngine::RectTransform* value);
     // public UnityEngine.UI.Toggle get_toggle()
-    // Offset: 0x1141814
+    // Offset: 0x16D7FAC
     ::UnityEngine::UI::Toggle* get_toggle();
     // public System.Void set_toggle(UnityEngine.UI.Toggle value)
-    // Offset: 0x114181C
+    // Offset: 0x16D7FB4
     void set_toggle(::UnityEngine::UI::Toggle* value);
     // public System.Void OnPointerEnter(UnityEngine.EventSystems.PointerEventData eventData)
-    // Offset: 0x1141824
+    // Offset: 0x16D7FBC
     void OnPointerEnter(::UnityEngine::EventSystems::PointerEventData* eventData);
     // public System.Void OnCancel(UnityEngine.EventSystems.BaseEventData eventData)
-    // Offset: 0x11418AC
+    // Offset: 0x16D8044
     void OnCancel(::UnityEngine::EventSystems::BaseEventData* eventData);
     // public System.Void .ctor()
-    // Offset: 0x114195C
+    // Offset: 0x16D80F4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -76,28 +76,20 @@ namespace VROSC::AudioReactive {
       // Set static field: static public VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter Beat4
       static void _set_Beat4(::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter
     #pragma pack(pop)
     static check_size<sizeof(AudioReactiveFilter::FilterSettings::BeatFilter), 0 + sizeof(int)> __VROSC_AudioReactive_AudioReactiveFilter_FilterSettings_BeatFilterSizeCheck;
     static_assert(sizeof(AudioReactiveFilter::FilterSettings::BeatFilter) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [BitMaskAttribute] Offset: 0x676468
+    // [BitMaskAttribute] Offset: 0x78CD0C
     // private VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter _reactOn
     // Size: 0x4
     // Offset: 0x10
     ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter reactOn;
     // Field size check
     static_assert(sizeof(::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter) == 0x4);
-    // [RangeAttribute] Offset: 0x6764D8
+    // [RangeAttribute] Offset: 0x78CD7C
     // private System.Int32 _chance
     // Size: 0x4
     // Offset: 0x14
@@ -118,25 +110,25 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter _reactOn
-    ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter& dyn__reactOn();
+    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter& dyn__reactOn();
     // Get instance field reference: private System.Int32 _chance
-    int& dyn__chance();
+    [[deprecated]] int& dyn__chance();
     // Get instance field reference: private System.Int32 _cooldown
-    int& dyn__cooldown();
+    [[deprecated]] int& dyn__cooldown();
     // Get instance field reference: private System.Int32 _onCoolDown
-    int& dyn__onCoolDown();
+    [[deprecated]] int& dyn__onCoolDown();
     // private System.Void .ctor(VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter reactOn, System.Int32 chance, System.Int32 cooldown)
-    // Offset: 0x135AF3C
+    // Offset: 0x957838
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioReactiveFilter::FilterSettings* New_ctor(::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter reactOn, int chance, int cooldown) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AudioReactiveFilter::FilterSettings*, creationType>(reactOn, chance, cooldown)));
     }
     // public System.Boolean Filter(System.Int32 beat)
-    // Offset: 0x135AED0
+    // Offset: 0x9577CC
     bool Filter(int beat);
     // public VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings Instantiate()
-    // Offset: 0x135AF88
+    // Offset: 0x957884
     ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings* Instantiate();
   }; // VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings
   #pragma pack(pop)

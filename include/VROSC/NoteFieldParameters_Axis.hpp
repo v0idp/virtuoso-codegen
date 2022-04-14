@@ -33,15 +33,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteFieldParameters::Axis : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <FieldCount>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -58,36 +50,36 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <FieldCount>k__BackingField
-    int& dyn_$FieldCount$k__BackingField();
+    [[deprecated]] int& dyn_$FieldCount$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> <ValidNotes>k__BackingField
-    ::System::Collections::Generic::List_1<int>*& dyn_$ValidNotes$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_$ValidNotes$k__BackingField();
     // public System.Int32 get_FieldCount()
-    // Offset: 0x133EAB4
+    // Offset: 0x1966D3C
     int get_FieldCount();
     // private System.Void set_FieldCount(System.Int32 value)
-    // Offset: 0x133EAAC
+    // Offset: 0x1966D34
     void set_FieldCount(int value);
     // public System.Collections.Generic.List`1<System.Int32> get_ValidNotes()
-    // Offset: 0x133EAC4
+    // Offset: 0x1966D4C
     ::System::Collections::Generic::List_1<int>* get_ValidNotes();
     // private System.Void set_ValidNotes(System.Collections.Generic.List`1<System.Int32> value)
-    // Offset: 0x133EABC
+    // Offset: 0x1966D44
     void set_ValidNotes(::System::Collections::Generic::List_1<int>* value);
     // public System.Void .ctor(System.Int32 fieldCount)
-    // Offset: 0x133EA20
+    // Offset: 0x1966CA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteFieldParameters::Axis* New_ctor(int fieldCount) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldParameters::Axis::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteFieldParameters::Axis*, creationType>(fieldCount)));
     }
     // public System.Void SetCount(System.Int32 count)
-    // Offset: 0x133EACC
+    // Offset: 0x1966D54
     void SetCount(int count);
     // public System.Void SetValidNotes(System.Collections.Generic.List`1<System.Int32> validNotes)
-    // Offset: 0x133EAD4
+    // Offset: 0x1966D5C
     void SetValidNotes(::System::Collections::Generic::List_1<int>* validNotes);
     // public System.Void FindValidNotes(VROSC.NoteBoard/VROSC.NoteAxis noteAxis)
-    // Offset: 0x133EADC
+    // Offset: 0x1966D64
     void FindValidNotes(::VROSC::NoteBoard::NoteAxis* noteAxis);
   }; // VROSC.NoteFieldParameters/VROSC.Axis
   #pragma pack(pop)

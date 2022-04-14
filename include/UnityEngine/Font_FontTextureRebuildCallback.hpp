@@ -35,20 +35,20 @@ namespace UnityEngine {
   class Font::FontTextureRebuildCallback : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x12F66E4
+    // Offset: 0x18FD8E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Font::FontTextureRebuildCallback* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Font::FontTextureRebuildCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Font::FontTextureRebuildCallback*, creationType>(object, method)));
     }
     // public System.Void Invoke()
-    // Offset: 0x12F49FC
+    // Offset: 0x18FBBFC
     void Invoke();
     // public System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
-    // Offset: 0x12F66F4
+    // Offset: 0x18FD8F4
     ::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x12F6720
+    // Offset: 0x18FD920
     void EndInvoke(::System::IAsyncResult* result);
   }; // UnityEngine.Font/UnityEngine.FontTextureRebuildCallback
   #pragma pack(pop)

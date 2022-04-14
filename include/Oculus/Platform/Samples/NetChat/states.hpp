@@ -96,7 +96,7 @@ namespace Oculus::Platform::Samples::NetChat {
     // Set static field: static public Oculus.Platform.Samples.NetChat.states IN_FULL_ROOM
     static void _set_IN_FULL_ROOM(::Oculus::Platform::Samples::NetChat::states value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.Samples.NetChat.states
   #pragma pack(pop)
   static check_size<sizeof(states), 0 + sizeof(int)> __Oculus_Platform_Samples_NetChat_statesSizeCheck;

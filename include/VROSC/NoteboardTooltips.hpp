@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteboardTooltips : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNoteController _noteboardController
     // Size: 0x8
     // Offset: 0x18
@@ -72,15 +64,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteboardController
-    ::VROSC::NoteBoardNoteController*& dyn__noteboardController();
+    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteboardController();
     // Get instance field reference: private System.Boolean _xAxis
-    bool& dyn__xAxis();
+    [[deprecated]] bool& dyn__xAxis();
     // Get instance field reference: private System.Boolean _yAxis
-    bool& dyn__yAxis();
+    [[deprecated]] bool& dyn__yAxis();
     // Get instance field reference: private System.Boolean _zAxis
-    bool& dyn__zAxis();
+    [[deprecated]] bool& dyn__zAxis();
     // public System.Void .ctor()
-    // Offset: 0xA164A4
+    // Offset: 0xC5AFBC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

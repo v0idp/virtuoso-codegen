@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SaveLoadPanelUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIToggle _songsLibraryButton
     // Size: 0x8
     // Offset: 0x18
@@ -56,21 +48,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIToggle _songsLibraryButton
-    ::VROSC::UIToggle*& dyn__songsLibraryButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__songsLibraryButton();
     // protected System.Void Awake()
-    // Offset: 0xB0ED04
+    // Offset: 0xDE0350
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0xB0EE34
+    // Offset: 0xDE0480
     void OnDestroy();
     // private System.Void OnEnable()
-    // Offset: 0xB0EF08
+    // Offset: 0xDE0554
     void OnEnable();
     // private System.Void ToggleSongsLibraryButtonPressed(VROSC.InputDevice inputDevice, System.Boolean toggled)
-    // Offset: 0xB0EF94
+    // Offset: 0xDE05E0
     void ToggleSongsLibraryButtonPressed(::VROSC::InputDevice* inputDevice, bool toggled);
     // public System.Void .ctor()
-    // Offset: 0xB0EFFC
+    // Offset: 0xDE0648
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -46,15 +46,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x49 to desired offset: 0x4C
     char ___base_padding[0x3] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Axis _slideAxis
     // Size: 0x4
     // Offset: 0x4C
@@ -87,22 +79,22 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private VROSC.Axis _slideAxis
-    ::VROSC::Axis& dyn__slideAxis();
+    [[deprecated]] ::VROSC::Axis& dyn__slideAxis();
     // Get instance field reference: private VROSC.IntField _sensitivity
-    ::VROSC::IntField*& dyn__sensitivity();
+    [[deprecated]] ::VROSC::IntField*& dyn__sensitivity();
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private System.Int32 _startValue
-    int& dyn__startValue();
+    [[deprecated]] int& dyn__startValue();
     // Get instance field reference: private UnityEngine.Transform _affectingTransform
-    ::UnityEngine::Transform*& dyn__affectingTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__affectingTransform();
     // protected override System.Boolean get_RequireOrigin()
-    // Offset: 0x13B5B7C
+    // Offset: 0x1928A48
     // Implemented from: VROSC.SignalNode
     // Base method: System.Boolean SignalNode::get_RequireOrigin()
     bool get_RequireOrigin();
     // public System.Void .ctor()
-    // Offset: 0x13B5D7C
+    // Offset: 0x1928C48
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -118,17 +110,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<SlideValueByController*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13B5B84
+    // Offset: 0x1928A50
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13B5BF8
+    // Offset: 0x1928AC4
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void SetValueBySignal(VROSC.Signal signal)
-    // Offset: 0x13B5CB8
+    // Offset: 0x1928B84
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::SetValueBySignal(VROSC.Signal signal)
     void SetValueBySignal(::VROSC::Signal* signal);

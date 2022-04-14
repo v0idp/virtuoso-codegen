@@ -62,15 +62,7 @@ namespace System::Net::Sockets {
   // [TokenAttribute] Offset: FFFFFFFF
   class NetworkStream : public ::System::IO::Stream {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.Sockets.Socket m_StreamSocket
     // Size: 0x8
     // Offset: 0x28
@@ -125,149 +117,149 @@ namespace System::Net::Sockets {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Net.Sockets.Socket m_StreamSocket
-    ::System::Net::Sockets::Socket*& dyn_m_StreamSocket();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_m_StreamSocket();
     // Get instance field reference: private System.Boolean m_Readable
-    bool& dyn_m_Readable();
+    [[deprecated]] bool& dyn_m_Readable();
     // Get instance field reference: private System.Boolean m_Writeable
-    bool& dyn_m_Writeable();
+    [[deprecated]] bool& dyn_m_Writeable();
     // Get instance field reference: private System.Boolean m_OwnsSocket
-    bool& dyn_m_OwnsSocket();
+    [[deprecated]] bool& dyn_m_OwnsSocket();
     // Get instance field reference: private System.Int32 m_CloseTimeout
-    int& dyn_m_CloseTimeout();
+    [[deprecated]] int& dyn_m_CloseTimeout();
     // Get instance field reference: private System.Boolean m_CleanedUp
-    bool& dyn_m_CleanedUp();
+    [[deprecated]] bool& dyn_m_CleanedUp();
     // Get instance field reference: private System.Int32 m_CurrentReadTimeout
-    int& dyn_m_CurrentReadTimeout();
+    [[deprecated]] int& dyn_m_CurrentReadTimeout();
     // Get instance field reference: private System.Int32 m_CurrentWriteTimeout
-    int& dyn_m_CurrentWriteTimeout();
+    [[deprecated]] int& dyn_m_CurrentWriteTimeout();
     // System.Net.Sockets.Socket get_InternalSocket()
-    // Offset: 0xBF7C4C
+    // Offset: 0x11039C0
     ::System::Net::Sockets::Socket* get_InternalSocket();
     // public System.Boolean get_DataAvailable()
-    // Offset: 0xBF7F68
+    // Offset: 0x1103CDC
     bool get_DataAvailable();
     // public System.Void .ctor(System.Net.Sockets.Socket socket)
-    // Offset: 0xBF79AC
+    // Offset: 0x1103720
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NetworkStream* New_ctor(::System::Net::Sockets::Socket* socket) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::NetworkStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NetworkStream*, creationType>(socket)));
     }
     // public System.Void .ctor(System.Net.Sockets.Socket socket, System.Boolean ownsSocket)
-    // Offset: 0xBF7B60
+    // Offset: 0x11038D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NetworkStream* New_ctor(::System::Net::Sockets::Socket* socket, bool ownsSocket) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::NetworkStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NetworkStream*, creationType>(socket, ownsSocket)));
     }
     // System.Void InitNetworkStream(System.Net.Sockets.Socket socket, System.IO.FileAccess Access)
-    // Offset: 0xBF7A88
+    // Offset: 0x11037FC
     void InitNetworkStream(::System::Net::Sockets::Socket* socket, ::System::IO::FileAccess Access);
     // System.Void SetSocketTimeoutOption(System.Net.Sockets.SocketShutdown mode, System.Int32 timeout, System.Boolean silent)
-    // Offset: 0xBF7E24
+    // Offset: 0x1103B98
     void SetSocketTimeoutOption(::System::Net::Sockets::SocketShutdown mode, int timeout, bool silent);
     // public override System.Boolean get_CanRead()
-    // Offset: 0xBF7CEC
+    // Offset: 0x1103A60
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanRead()
     bool get_CanRead();
     // public override System.Boolean get_CanSeek()
-    // Offset: 0xBF7CF4
+    // Offset: 0x1103A68
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanSeek()
     bool get_CanSeek();
     // public override System.Boolean get_CanWrite()
-    // Offset: 0xBF7CFC
+    // Offset: 0x1103A70
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanWrite()
     bool get_CanWrite();
     // public override System.Int32 get_ReadTimeout()
-    // Offset: 0xBF7D04
+    // Offset: 0x1103A78
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::get_ReadTimeout()
     int get_ReadTimeout();
     // public override System.Void set_ReadTimeout(System.Int32 value)
-    // Offset: 0xBF7D94
+    // Offset: 0x1103B08
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::set_ReadTimeout(System.Int32 value)
     void set_ReadTimeout(int value);
     // public override System.Int32 get_WriteTimeout()
-    // Offset: 0xBF7ED8
+    // Offset: 0x1103C4C
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::get_WriteTimeout()
     int get_WriteTimeout();
     // public override System.Int64 get_Length()
-    // Offset: 0xBF80A0
+    // Offset: 0x1103E14
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Length()
     int64_t get_Length();
     // public override System.Int64 get_Position()
-    // Offset: 0xBF80FC
+    // Offset: 0x1103E70
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Position()
     int64_t get_Position();
     // public override System.Void set_Position(System.Int64 value)
-    // Offset: 0xBF8158
+    // Offset: 0x1103ECC
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::set_Position(System.Int64 value)
     void set_Position(int64_t value);
     // public override System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
-    // Offset: 0xBF81B4
+    // Offset: 0x1103F28
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::Seek(System.Int64 offset, System.IO.SeekOrigin origin)
     int64_t Seek(int64_t offset, ::System::IO::SeekOrigin origin);
     // public override System.Int32 Read(in System.Byte[] buffer, System.Int32 offset, System.Int32 size)
-    // Offset: 0xBF8210
+    // Offset: 0x1103F84
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::Read(in System.Byte[] buffer, System.Int32 offset, System.Int32 size)
     int Read(ByRef<::ArrayW<uint8_t>> buffer, int offset, int size);
     // public override System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 size)
-    // Offset: 0xBF8630
+    // Offset: 0x11043A4
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Write(System.Byte[] buffer, System.Int32 offset, System.Int32 size)
     void Write(::ArrayW<uint8_t> buffer, int offset, int size);
     // protected override System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xBF8A50
+    // Offset: 0x11047C4
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Dispose(System.Boolean disposing)
     void Dispose(bool disposing);
     // protected override System.Void Finalize()
-    // Offset: 0xBF8AD4
+    // Offset: 0x1104848
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
     // public override System.IAsyncResult BeginRead(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.AsyncCallback callback, System.Object state)
-    // Offset: 0xBF8B4C
+    // Offset: 0x11048C0
     // Implemented from: System.IO.Stream
     // Base method: System.IAsyncResult Stream::BeginRead(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.AsyncCallback callback, System.Object state)
     ::System::IAsyncResult* BeginRead(::ArrayW<uint8_t> buffer, int offset, int size, ::System::AsyncCallback* callback, ::Il2CppObject* state);
     // public override System.Int32 EndRead(System.IAsyncResult asyncResult)
-    // Offset: 0xBF8F84
+    // Offset: 0x1104CF8
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::EndRead(System.IAsyncResult asyncResult)
     int EndRead(::System::IAsyncResult* asyncResult);
     // public override System.IAsyncResult BeginWrite(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.AsyncCallback callback, System.Object state)
-    // Offset: 0xBF92C4
+    // Offset: 0x1105038
     // Implemented from: System.IO.Stream
     // Base method: System.IAsyncResult Stream::BeginWrite(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.AsyncCallback callback, System.Object state)
     ::System::IAsyncResult* BeginWrite(::ArrayW<uint8_t> buffer, int offset, int size, ::System::AsyncCallback* callback, ::Il2CppObject* state);
     // public override System.Void EndWrite(System.IAsyncResult asyncResult)
-    // Offset: 0xBF96FC
+    // Offset: 0x1105470
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::EndWrite(System.IAsyncResult asyncResult)
     void EndWrite(::System::IAsyncResult* asyncResult);
     // public override System.Void Flush()
-    // Offset: 0xBF9A3C
+    // Offset: 0x11057B0
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::Flush()
     void Flush();
     // public override System.Threading.Tasks.Task FlushAsync(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xBF9A40
+    // Offset: 0x11057B4
     // Implemented from: System.IO.Stream
     // Base method: System.Threading.Tasks.Task Stream::FlushAsync(System.Threading.CancellationToken cancellationToken)
     ::System::Threading::Tasks::Task* FlushAsync(::System::Threading::CancellationToken cancellationToken);
     // public override System.Void SetLength(System.Int64 value)
-    // Offset: 0xBF9A9C
+    // Offset: 0x1105810
     // Implemented from: System.IO.Stream
     // Base method: System.Void Stream::SetLength(System.Int64 value)
     void SetLength(int64_t value);

@@ -28,15 +28,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class InviteOptions : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IntPtr Handle
     // Size: 0x8
     // Offset: 0x10
@@ -49,18 +41,18 @@ namespace Oculus::Platform {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr Handle
-    ::System::IntPtr& dyn_Handle();
+    [[deprecated]] ::System::IntPtr& dyn_Handle();
     // public System.Void AddSuggestedUser(System.UInt64 userID)
-    // Offset: 0x968430
+    // Offset: 0xB3A7CC
     void AddSuggestedUser(uint64_t userID);
     // public System.Void ClearSuggestedUsers()
-    // Offset: 0x9684A8
+    // Offset: 0xB3A844
     void ClearSuggestedUsers();
     // static public System.IntPtr op_Explicit(Oculus.Platform.InviteOptions options)
-    // Offset: 0x968510
+    // Offset: 0xB3A8AC
     // ABORTED: conflicts with another method.  explicit operator ::System::IntPtr();
     // public System.Void .ctor()
-    // Offset: 0x9683BC
+    // Offset: 0xB3A758
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -69,7 +61,7 @@ namespace Oculus::Platform {
       return THROW_UNLESS((::il2cpp_utils::New<InviteOptions*, creationType>()));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x96855C
+    // Offset: 0xB3A8F8
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

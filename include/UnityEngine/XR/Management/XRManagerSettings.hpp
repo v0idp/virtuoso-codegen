@@ -54,15 +54,7 @@ namespace UnityEngine::XR::Management {
     public:
     // Nested type: ::UnityEngine::XR::Management::XRManagerSettings::$InitializeLoader$d__24
     class $InitializeLoader$d__24;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean m_InitializationComplete
     // Size: 0x1
     // Offset: 0x18
@@ -75,16 +67,16 @@ namespace UnityEngine::XR::Management {
     bool m_RequiresSettingsUpdate;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x5E2B74
-    // [FormerlySerializedAsAttribute] Offset: 0x5E2B74
+    // [TooltipAttribute] Offset: 0x6F9994
+    // [FormerlySerializedAsAttribute] Offset: 0x6F9994
     // private System.Boolean m_AutomaticLoading
     // Size: 0x1
     // Offset: 0x1A
     bool m_AutomaticLoading;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [FormerlySerializedAsAttribute] Offset: 0x5E2BE4
-    // [TooltipAttribute] Offset: 0x5E2BE4
+    // [FormerlySerializedAsAttribute] Offset: 0x6F9A04
+    // [TooltipAttribute] Offset: 0x6F9A04
     // private System.Boolean m_AutomaticRunning
     // Size: 0x1
     // Offset: 0x1B
@@ -93,8 +85,8 @@ namespace UnityEngine::XR::Management {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: m_AutomaticRunning and: m_Loaders
     char __padding3[0x4] = {};
-    // [FormerlySerializedAsAttribute] Offset: 0x5E2C54
-    // [TooltipAttribute] Offset: 0x5E2C54
+    // [FormerlySerializedAsAttribute] Offset: 0x6F9A74
+    // [TooltipAttribute] Offset: 0x6F9A74
     // private System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> m_Loaders
     // Size: 0x8
     // Offset: 0x20
@@ -117,54 +109,54 @@ namespace UnityEngine::XR::Management {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean m_InitializationComplete
-    bool& dyn_m_InitializationComplete();
+    [[deprecated]] bool& dyn_m_InitializationComplete();
     // Get instance field reference: private System.Boolean m_RequiresSettingsUpdate
-    bool& dyn_m_RequiresSettingsUpdate();
+    [[deprecated]] bool& dyn_m_RequiresSettingsUpdate();
     // Get instance field reference: private System.Boolean m_AutomaticLoading
-    bool& dyn_m_AutomaticLoading();
+    [[deprecated]] bool& dyn_m_AutomaticLoading();
     // Get instance field reference: private System.Boolean m_AutomaticRunning
-    bool& dyn_m_AutomaticRunning();
+    [[deprecated]] bool& dyn_m_AutomaticRunning();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> m_Loaders
-    ::System::Collections::Generic::List_1<::UnityEngine::XR::Management::XRLoader*>*& dyn_m_Loaders();
+    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Management::XRLoader*>*& dyn_m_Loaders();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<UnityEngine.XR.Management.XRLoader> m_RegisteredLoaders
-    ::System::Collections::Generic::HashSet_1<::UnityEngine::XR::Management::XRLoader*>*& dyn_m_RegisteredLoaders();
+    [[deprecated]] ::System::Collections::Generic::HashSet_1<::UnityEngine::XR::Management::XRLoader*>*& dyn_m_RegisteredLoaders();
     // Get instance field reference: private UnityEngine.XR.Management.XRLoader <activeLoader>k__BackingField
-    ::UnityEngine::XR::Management::XRLoader*& dyn_$activeLoader$k__BackingField();
+    [[deprecated]] ::UnityEngine::XR::Management::XRLoader*& dyn_$activeLoader$k__BackingField();
     // public System.Boolean get_automaticLoading()
-    // Offset: 0x12F3CB0
+    // Offset: 0x18FAEB0
     bool get_automaticLoading();
     // public System.Void set_automaticLoading(System.Boolean value)
-    // Offset: 0x12F3CB8
+    // Offset: 0x18FAEB8
     void set_automaticLoading(bool value);
     // public System.Boolean get_automaticRunning()
-    // Offset: 0x12F3CC4
+    // Offset: 0x18FAEC4
     bool get_automaticRunning();
     // public System.Void set_automaticRunning(System.Boolean value)
-    // Offset: 0x12F3CCC
+    // Offset: 0x18FAECC
     void set_automaticRunning(bool value);
     // public System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> get_loaders()
-    // Offset: 0x12F3CD8
+    // Offset: 0x18FAED8
     ::System::Collections::Generic::List_1<::UnityEngine::XR::Management::XRLoader*>* get_loaders();
     // public System.Collections.Generic.IReadOnlyList`1<UnityEngine.XR.Management.XRLoader> get_activeLoaders()
-    // Offset: 0x12F3CE0
+    // Offset: 0x18FAEE0
     ::System::Collections::Generic::IReadOnlyList_1<::UnityEngine::XR::Management::XRLoader*>* get_activeLoaders();
     // public System.Boolean get_isInitializationComplete()
-    // Offset: 0x12F3CE8
+    // Offset: 0x18FAEE8
     bool get_isInitializationComplete();
     // public UnityEngine.XR.Management.XRLoader get_activeLoader()
-    // Offset: 0x12F3CF0
+    // Offset: 0x18FAEF0
     ::UnityEngine::XR::Management::XRLoader* get_activeLoader();
     // private System.Void set_activeLoader(UnityEngine.XR.Management.XRLoader value)
-    // Offset: 0x12F3CF8
+    // Offset: 0x18FAEF8
     void set_activeLoader(::UnityEngine::XR::Management::XRLoader* value);
     // System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> get_currentLoaders()
-    // Offset: 0x12F42EC
+    // Offset: 0x18FB4EC
     ::System::Collections::Generic::List_1<::UnityEngine::XR::Management::XRLoader*>* get_currentLoaders();
     // System.Void set_currentLoaders(System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> value)
-    // Offset: 0x12F42F4
+    // Offset: 0x18FB4F4
     void set_currentLoaders(::System::Collections::Generic::List_1<::UnityEngine::XR::Management::XRLoader*>* value);
     // System.Collections.Generic.HashSet`1<UnityEngine.XR.Management.XRLoader> get_registeredLoaders()
-    // Offset: 0x12F42FC
+    // Offset: 0x18FB4FC
     ::System::Collections::Generic::HashSet_1<::UnityEngine::XR::Management::XRLoader*>* get_registeredLoaders();
     // public T ActiveLoaderAs()
     // Offset: 0xFFFFFFFFFFFFFFFF
@@ -177,43 +169,43 @@ namespace UnityEngine::XR::Management {
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___generic__method);
     }
     // public System.Void InitializeLoaderSync()
-    // Offset: 0x12F348C
+    // Offset: 0x18FA68C
     void InitializeLoaderSync();
     // public System.Collections.IEnumerator InitializeLoader()
-    // Offset: 0x12F3E74
+    // Offset: 0x18FB074
     ::System::Collections::IEnumerator* InitializeLoader();
     // public System.Boolean TryAddLoader(UnityEngine.XR.Management.XRLoader loader, System.Int32 index)
-    // Offset: 0x12F3F0C
+    // Offset: 0x18FB10C
     bool TryAddLoader(::UnityEngine::XR::Management::XRLoader* loader, int index);
     // public System.Boolean TryRemoveLoader(UnityEngine.XR.Management.XRLoader loader)
-    // Offset: 0x12F4064
+    // Offset: 0x18FB264
     bool TryRemoveLoader(::UnityEngine::XR::Management::XRLoader* loader);
     // public System.Boolean TrySetLoaders(System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> reorderedLoaders)
-    // Offset: 0x12F4108
+    // Offset: 0x18FB308
     bool TrySetLoaders(::System::Collections::Generic::List_1<::UnityEngine::XR::Management::XRLoader*>* reorderedLoaders);
     // private System.Boolean CheckGraphicsAPICompatibility(UnityEngine.XR.Management.XRLoader loader)
-    // Offset: 0x12F3D00
+    // Offset: 0x18FAF00
     bool CheckGraphicsAPICompatibility(::UnityEngine::XR::Management::XRLoader* loader);
     // public System.Void StartSubsystems()
-    // Offset: 0x12F36C0
+    // Offset: 0x18FA8C0
     void StartSubsystems();
     // public System.Void StopSubsystems()
-    // Offset: 0x12F3878
+    // Offset: 0x18FAA78
     void StopSubsystems();
     // public System.Void DeinitializeLoader()
-    // Offset: 0x12F3968
+    // Offset: 0x18FAB68
     void DeinitializeLoader();
     // private System.Void Start()
-    // Offset: 0x12F42AC
+    // Offset: 0x18FB4AC
     void Start();
     // private System.Void OnDisable()
-    // Offset: 0x12F42C4
+    // Offset: 0x18FB4C4
     void OnDisable();
     // private System.Void OnDestroy()
-    // Offset: 0x12F42DC
+    // Offset: 0x18FB4DC
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x12F4304
+    // Offset: 0x18FB504
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

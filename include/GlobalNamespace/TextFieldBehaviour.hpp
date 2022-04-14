@@ -54,15 +54,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::TextFieldBehaviour::$DisableHighlight$d__5
     class $DisableHighlight$d__5;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public NGramGenerator NGramHandler
     // Size: 0x8
     // Offset: 0x18
@@ -83,26 +75,26 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public NGramGenerator NGramHandler
-    ::GlobalNamespace::NGramGenerator*& dyn_NGramHandler();
+    [[deprecated]] ::GlobalNamespace::NGramGenerator*& dyn_NGramHandler();
     // Get instance field reference: private UnityEngine.UI.InputField inputField
-    ::UnityEngine::UI::InputField*& dyn_inputField();
+    [[deprecated]] ::UnityEngine::UI::InputField*& dyn_inputField();
     // private System.Void Start()
-    // Offset: 0x13FCD38
+    // Offset: 0xA24D38
     void Start();
     // public System.Void OnSelect(UnityEngine.EventSystems.BaseEventData eventData)
-    // Offset: 0x13FCD9C
+    // Offset: 0xA24D9C
     void OnSelect(::UnityEngine::EventSystems::BaseEventData* eventData);
     // public System.Void MoveCaretToEnd()
-    // Offset: 0x13FCE34
+    // Offset: 0xA24E34
     void MoveCaretToEnd();
     // private System.Collections.IEnumerator DisableHighlight()
-    // Offset: 0x13FCDC8
+    // Offset: 0xA24DC8
     ::System::Collections::IEnumerator* DisableHighlight();
     // private System.Void Update()
-    // Offset: 0x13FCE60
+    // Offset: 0xA24E60
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x13FCFFC
+    // Offset: 0xA24FFC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

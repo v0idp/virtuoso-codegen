@@ -57,30 +57,30 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Char _keyChar
-    ::Il2CppChar& dyn__keyChar();
+    [[deprecated]] ::Il2CppChar& dyn__keyChar();
     // Get instance field reference: private System.ConsoleKey _key
-    ::System::ConsoleKey& dyn__key();
+    [[deprecated]] ::System::ConsoleKey& dyn__key();
     // Get instance field reference: private System.ConsoleModifiers _mods
-    ::System::ConsoleModifiers& dyn__mods();
+    [[deprecated]] ::System::ConsoleModifiers& dyn__mods();
     // public System.Char get_KeyChar()
-    // Offset: 0xBDCB04
+    // Offset: 0xE41530
     ::Il2CppChar get_KeyChar();
     // public System.ConsoleKey get_Key()
-    // Offset: 0xBDCB0C
+    // Offset: 0xE41538
     ::System::ConsoleKey get_Key();
     // public System.Void .ctor(System.Char keyChar, System.ConsoleKey key, System.Boolean shift, System.Boolean alt, System.Boolean control)
-    // Offset: 0xBDCA5C
+    // Offset: 0xE41488
     ConsoleKeyInfo(::Il2CppChar keyChar, ::System::ConsoleKey key, bool shift, bool alt, bool control);
     // public System.Boolean Equals(System.ConsoleKeyInfo obj)
-    // Offset: 0xBDCBB8
+    // Offset: 0xE415E4
     bool Equals(::System::ConsoleKeyInfo obj);
     // public override System.Boolean Equals(System.Object value)
-    // Offset: 0xBDCB14
+    // Offset: 0xE41540
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object value)
     bool Equals(::Il2CppObject* value);
     // public override System.Int32 GetHashCode()
-    // Offset: 0xBDCBEC
+    // Offset: 0xE41618
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();

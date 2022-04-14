@@ -33,15 +33,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class BinaryCrossAppDomainMap : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Int32 crossAppDomainArrayIndex
     // Size: 0x4
     // Offset: 0x10
@@ -54,15 +46,15 @@ namespace System::Runtime::Serialization::Formatters::Binary {
       return crossAppDomainArrayIndex;
     }
     // Get instance field reference: System.Int32 crossAppDomainArrayIndex
-    int& dyn_crossAppDomainArrayIndex();
+    [[deprecated]] int& dyn_crossAppDomainArrayIndex();
     // public System.Void Read(System.Runtime.Serialization.Formatters.Binary.__BinaryParser input)
-    // Offset: 0xCC64B4
+    // Offset: 0xFE7848
     void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input);
     // public System.Void Dump()
-    // Offset: 0xCC64E8
+    // Offset: 0xFE787C
     void Dump();
     // System.Void .ctor()
-    // Offset: 0xCC64AC
+    // Offset: 0xFE7840
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

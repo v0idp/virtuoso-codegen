@@ -38,15 +38,7 @@ namespace Firebase::Firestore {
     public:
     // Writing base type padding for base size: 0x21 to desired offset: 0x28
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x28
@@ -59,18 +51,18 @@ namespace Firebase::Firestore {
       return swigCPtr;
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // public System.String path()
-    // Offset: 0xC2A554
+    // Offset: 0xD4C3F4
     ::StringW path();
     // public Firebase.Firestore.DocumentReferenceProxy Document()
-    // Offset: 0xC2A690
+    // Offset: 0xD4C528
     ::Firebase::Firestore::DocumentReferenceProxy* Document();
     // public Firebase.Firestore.DocumentReferenceProxy Document(System.String documentPath)
-    // Offset: 0xC2A848
+    // Offset: 0xD4C6D8
     ::Firebase::Firestore::DocumentReferenceProxy* Document(::StringW documentPath);
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC29F44
+    // Offset: 0xD4BDE4
     // Implemented from: Firebase.Firestore.QueryProxy
     // Base method: System.Void QueryProxy::.ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -79,12 +71,12 @@ namespace Firebase::Firestore {
       return THROW_UNLESS((::il2cpp_utils::New<CollectionReferenceProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // protected override System.Void Finalize()
-    // Offset: 0xC2A0D4
+    // Offset: 0xD4BF74
     // Implemented from: Firebase.Firestore.QueryProxy
     // Base method: System.Void QueryProxy::Finalize()
     void Finalize();
     // public override System.Void Dispose()
-    // Offset: 0xC2A1AC
+    // Offset: 0xD4C04C
     // Implemented from: Firebase.Firestore.QueryProxy
     // Base method: System.Void QueryProxy::Dispose()
     void Dispose();

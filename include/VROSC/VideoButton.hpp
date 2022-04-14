@@ -57,15 +57,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::VideoButton::$DownloadThumbnail$d__5
     struct $DownloadThumbnail$d__5;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.MeshRenderer _thumbnailMesh
     // Size: 0x8
     // Offset: 0x40
@@ -86,22 +78,22 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.MeshRenderer _thumbnailMesh
-    ::UnityEngine::MeshRenderer*& dyn__thumbnailMesh();
+    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__thumbnailMesh();
     // Get instance field reference: private TMPro.TextMeshPro _titleUI
-    ::TMPro::TextMeshPro*& dyn__titleUI();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__titleUI();
     // Get instance field reference: private UnityEngine.GameObject _playIcon
-    ::UnityEngine::GameObject*& dyn__playIcon();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__playIcon();
     // private System.Void DownloadThumbnail(VROSC.VideoInfo videoInfo)
-    // Offset: 0x13AE5BC
+    // Offset: 0x1922504
     void DownloadThumbnail(::VROSC::VideoInfo* videoInfo);
     // private System.Void SetThumbnail(UnityEngine.Texture thumbnail)
-    // Offset: 0x13AE688
+    // Offset: 0x19225D0
     void SetThumbnail(::UnityEngine::Texture* thumbnail);
     // private System.Void Toggled(VROSC.InputDevice inputDevice, System.Boolean toggledOn)
-    // Offset: 0x13AE6C4
+    // Offset: 0x192260C
     void Toggled(::VROSC::InputDevice* inputDevice, bool toggledOn);
     // public System.Void .ctor()
-    // Offset: 0x13AE6E8
+    // Offset: 0x1922630
     // Implemented from: VROSC.PaginatedListItemUI
     // Base method: System.Void PaginatedListItemUI::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -115,12 +107,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<VideoButton*, creationType>()));
     }
     // public override System.Void Setup(VROSC.PaginatedList paginatedList)
-    // Offset: 0x13AE3A8
+    // Offset: 0x19222F0
     // Implemented from: VROSC.PaginatedListItemUI
     // Base method: System.Void PaginatedListItemUI::Setup(VROSC.PaginatedList paginatedList)
     void Setup(::VROSC::PaginatedList* paginatedList);
     // public override System.Void SetNewData(VROSC.PaginatedListDataHolder dataholder)
-    // Offset: 0x13AE498
+    // Offset: 0x19223E0
     // Implemented from: VROSC.PaginatedListItemUI
     // Base method: System.Void PaginatedListItemUI::SetNewData(VROSC.PaginatedListDataHolder dataholder)
     void SetNewData(::VROSC::PaginatedListDataHolder* dataholder);

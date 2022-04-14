@@ -31,15 +31,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Promise::$$c__DisplayClass70_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public RSG.Promise promise
     // Size: 0x8
     // Offset: 0x10
@@ -52,15 +44,15 @@ namespace RSG {
       return promise;
     }
     // Get instance field reference: public RSG.Promise promise
-    ::RSG::Promise*& dyn_promise();
+    [[deprecated]] ::RSG::Promise*& dyn_promise();
     // System.Void <ContinueWith>b__0()
-    // Offset: 0x1344824
+    // Offset: 0x8CF77C
     void $ContinueWith$b__0();
     // System.Void <ContinueWith>b__1(System.Exception e)
-    // Offset: 0x1344840
+    // Offset: 0x8CF798
     void $ContinueWith$b__1(::System::Exception* e);
     // public System.Void .ctor()
-    // Offset: 0x134481C
+    // Offset: 0x8CF774
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

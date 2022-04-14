@@ -30,15 +30,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PredictiveHitter::PredictedHit : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.PredictiveHittable PredictiveHittable
     // Size: 0x8
     // Offset: 0x10
@@ -53,11 +45,11 @@ namespace VROSC {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public VROSC.PredictiveHittable PredictiveHittable
-    ::VROSC::PredictiveHittable*& dyn_PredictiveHittable();
+    [[deprecated]] ::VROSC::PredictiveHittable*& dyn_PredictiveHittable();
     // Get instance field reference: public System.Double PredictedDSPTime
-    double& dyn_PredictedDSPTime();
+    [[deprecated]] double& dyn_PredictedDSPTime();
     // public System.Void .ctor(VROSC.PredictiveHittable predictiveHittable, System.Double predictedDspTime)
-    // Offset: 0x134333C
+    // Offset: 0x8CE294
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PredictiveHitter::PredictedHit* New_ctor(::VROSC::PredictiveHittable* predictiveHittable, double predictedDspTime) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PredictiveHitter::PredictedHit::.ctor");

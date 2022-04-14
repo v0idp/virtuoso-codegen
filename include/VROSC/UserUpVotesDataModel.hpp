@@ -42,15 +42,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::UserUpVotesDataModel::UpVote
     class UpVote;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<VROSC.UserUpVotesDataModel/VROSC.UpVote> UpVotes
     // Size: 0x8
     // Offset: 0x18
@@ -63,19 +55,19 @@ namespace VROSC {
       return UpVotes;
     }
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.UserUpVotesDataModel/VROSC.UpVote> UpVotes
-    ::System::Collections::Generic::List_1<::VROSC::UserUpVotesDataModel::UpVote*>*& dyn_UpVotes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UserUpVotesDataModel::UpVote*>*& dyn_UpVotes();
     // public override System.String get_Key()
-    // Offset: 0x13AD094
+    // Offset: 0x1921008
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
     // public override System.Int32 get_Version()
-    // Offset: 0x13AD0D8
+    // Offset: 0x192104C
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Int32 BaseDataModel::get_Version()
     int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x13AC5BC
+    // Offset: 0x1920530
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
     // Base method: System.Void Object::.ctor()

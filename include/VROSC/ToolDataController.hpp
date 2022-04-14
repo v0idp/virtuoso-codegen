@@ -13,15 +13,10 @@
 #include "beatsaber-hook/shared/utils/utils.h"
 // Completed includes
 // Begin forward declares
-// Forward declaring namespace: UnityEngine
-namespace UnityEngine {
-  // Forward declaring type: Vector3
-  struct Vector3;
-  // Forward declaring type: Quaternion
-  struct Quaternion;
-}
 // Forward declaring namespace: VROSC
 namespace VROSC {
+  // Forward declaring type: TransformDataController
+  class TransformDataController;
   // Forward declaring type: WidgetSettings
   class WidgetSettings;
 }
@@ -48,29 +43,20 @@ namespace VROSC {
     // public System.Void set_IsOpen(System.Boolean value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void set_IsOpen(bool value);
-    // public UnityEngine.Vector3 get_Position()
+    // public System.Boolean get_HasBeenOpened()
     // Offset: 0xFFFFFFFFFFFFFFFF
-    ::UnityEngine::Vector3 get_Position();
-    // public System.Void set_Position(UnityEngine.Vector3 value)
+    bool get_HasBeenOpened();
+    // public System.Void set_HasBeenOpened(System.Boolean value)
     // Offset: 0xFFFFFFFFFFFFFFFF
-    void set_Position(::UnityEngine::Vector3 value);
-    // public UnityEngine.Quaternion get_Rotation()
+    void set_HasBeenOpened(bool value);
+    // public VROSC.TransformDataController get_TransformData()
     // Offset: 0xFFFFFFFFFFFFFFFF
-    ::UnityEngine::Quaternion get_Rotation();
-    // public System.Void set_Rotation(UnityEngine.Quaternion value)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    void set_Rotation(::UnityEngine::Quaternion value);
-    // public UnityEngine.Vector3 get_Scale()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    ::UnityEngine::Vector3 get_Scale();
-    // public System.Void set_Scale(UnityEngine.Vector3 value)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    void set_Scale(::UnityEngine::Vector3 value);
+    ::VROSC::TransformDataController* get_TransformData();
     // public System.Void ApplyDefaults(VROSC.WidgetSettings widgetDefaultSettings)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void ApplyDefaults(::VROSC::WidgetSettings* widgetDefaultSettings);
     // protected System.Void .ctor()
-    // Offset: 0x13FADC8
+    // Offset: 0xA224E4
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -100,55 +86,29 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "set_IsOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: VROSC::ToolDataController::get_Position
-// Il2CppName: get_Position
+// Writing MetadataGetter for method: VROSC::ToolDataController::get_HasBeenOpened
+// Il2CppName: get_HasBeenOpened
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Vector3 (VROSC::ToolDataController::*)()>(&VROSC::ToolDataController::get_Position)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::ToolDataController::*)()>(&VROSC::ToolDataController::get_HasBeenOpened)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "get_Position", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "get_HasBeenOpened", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::ToolDataController::set_Position
-// Il2CppName: set_Position
+// Writing MetadataGetter for method: VROSC::ToolDataController::set_HasBeenOpened
+// Il2CppName: set_HasBeenOpened
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::ToolDataController::*)(::UnityEngine::Vector3)>(&VROSC::ToolDataController::set_Position)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::ToolDataController::*)(bool)>(&VROSC::ToolDataController::set_HasBeenOpened)> {
   static const MethodInfo* get() {
-    static auto* value = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "set_Position", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "set_HasBeenOpened", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: VROSC::ToolDataController::get_Rotation
-// Il2CppName: get_Rotation
+// Writing MetadataGetter for method: VROSC::ToolDataController::get_TransformData
+// Il2CppName: get_TransformData
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Quaternion (VROSC::ToolDataController::*)()>(&VROSC::ToolDataController::get_Rotation)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::TransformDataController* (VROSC::ToolDataController::*)()>(&VROSC::ToolDataController::get_TransformData)> {
   static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "get_Rotation", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::ToolDataController::set_Rotation
-// Il2CppName: set_Rotation
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::ToolDataController::*)(::UnityEngine::Quaternion)>(&VROSC::ToolDataController::set_Rotation)> {
-  static const MethodInfo* get() {
-    static auto* value = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "set_Rotation", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
-  }
-};
-// Writing MetadataGetter for method: VROSC::ToolDataController::get_Scale
-// Il2CppName: get_Scale
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Vector3 (VROSC::ToolDataController::*)()>(&VROSC::ToolDataController::get_Scale)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "get_Scale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::ToolDataController::set_Scale
-// Il2CppName: set_Scale
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::ToolDataController::*)(::UnityEngine::Vector3)>(&VROSC::ToolDataController::set_Scale)> {
-  static const MethodInfo* get() {
-    static auto* value = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "set_Scale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolDataController*), "get_TransformData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::ToolDataController::ApplyDefaults

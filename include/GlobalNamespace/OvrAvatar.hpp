@@ -84,7 +84,7 @@ namespace GlobalNamespace {
   // Forward declaring type: ovrAvatarGazeTargetType
   struct ovrAvatarGazeTargetType;
   // Forward declaring type: OvrAvatarComponent
-  class OvrAvatarComponent;
+  class OvrAvatarComponent_;
   // Skipping declaration: ovrAvatarLight because it is already included!
 }
 // Forward declaring namespace: System
@@ -149,16 +149,8 @@ namespace GlobalNamespace {
     struct HandJoint;
     // Nested type: ::GlobalNamespace::OvrAvatar::$WaitForMouthAudioSource$d__137
     class $WaitForMouthAudioSource$d__137;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x66C9F8
+    // [HeaderAttribute] Offset: 0x7829C4
     // public System.IntPtr sdkAvatar
     // Size: 0x8
     // Offset: 0x18
@@ -177,7 +169,7 @@ namespace GlobalNamespace {
     ::GlobalNamespace::OvrAvatarDriver* Driver;
     // Field size check
     static_assert(sizeof(::GlobalNamespace::OvrAvatarDriver*) == 0x8);
-    // [HeaderAttribute] Offset: 0x66CA30
+    // [HeaderAttribute] Offset: 0x7829FC
     // public System.Boolean EnableBody
     // Size: 0x1
     // Offset: 0x30
@@ -202,7 +194,7 @@ namespace GlobalNamespace {
     bool EnableExpressive;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [HeaderAttribute] Offset: 0x66CA68
+    // [HeaderAttribute] Offset: 0x782A34
     // public System.Boolean RecordPackets
     // Size: 0x1
     // Offset: 0x34
@@ -223,7 +215,7 @@ namespace GlobalNamespace {
     ::GlobalNamespace::PacketRecordSettings* PacketSettings;
     // Field size check
     static_assert(sizeof(::GlobalNamespace::PacketRecordSettings*) == 0x8);
-    // [HeaderAttribute] Offset: 0x66CAA0
+    // [HeaderAttribute] Offset: 0x782A6C
     // public System.Boolean StartWithControllers
     // Size: 0x1
     // Offset: 0x40
@@ -264,22 +256,22 @@ namespace GlobalNamespace {
     ::GlobalNamespace::ovrAvatarCapabilities Capabilities;
     // Field size check
     static_assert(sizeof(::GlobalNamespace::ovrAvatarCapabilities) == 0x4);
-    // [TooltipAttribute] Offset: 0x66CAD8
-    // [HeaderAttribute] Offset: 0x66CAD8
+    // [TooltipAttribute] Offset: 0x782AA4
+    // [HeaderAttribute] Offset: 0x782AA4
     // ovrAvatarAssetLevelOfDetail LevelOfDetail
     // Size: 0x4
     // Offset: 0x60
     ::GlobalNamespace::ovrAvatarAssetLevelOfDetail LevelOfDetail;
     // Field size check
     static_assert(sizeof(::GlobalNamespace::ovrAvatarAssetLevelOfDetail) == 0x4);
-    // [TooltipAttribute] Offset: 0x66CB48
+    // [TooltipAttribute] Offset: 0x782B14
     // private System.Boolean CombineMeshes
     // Size: 0x1
     // Offset: 0x64
     bool CombineMeshes;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x66CB80
+    // [TooltipAttribute] Offset: 0x782B4C
     // public System.Boolean UseTransparentRenderQueue
     // Size: 0x1
     // Offset: 0x65
@@ -288,7 +280,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: UseTransparentRenderQueue and: Monochrome_SurfaceShader
     char __padding18[0x2] = {};
-    // [HeaderAttribute] Offset: 0x66CBB8
+    // [HeaderAttribute] Offset: 0x782B84
     // public UnityEngine.Shader Monochrome_SurfaceShader
     // Size: 0x8
     // Offset: 0x68
@@ -361,14 +353,14 @@ namespace GlobalNamespace {
     ::UnityEngine::Shader* ControllerShader;
     // Field size check
     static_assert(sizeof(::UnityEngine::Shader*) == 0x8);
-    // [HeaderAttribute] Offset: 0x66CBF0
+    // [HeaderAttribute] Offset: 0x782BBC
     // public System.Boolean CanOwnMicrophone
     // Size: 0x1
     // Offset: 0xC8
     bool CanOwnMicrophone;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [TooltipAttribute] Offset: 0x66CC28
+    // [TooltipAttribute] Offset: 0x782BF4
     // public System.Boolean EnableLaughter
     // Size: 0x1
     // Offset: 0xC9
@@ -699,309 +691,309 @@ namespace GlobalNamespace {
     // Set static field: static private ovrAvatarLights ovrLights
     static void _set_ovrLights(::GlobalNamespace::ovrAvatarLights value);
     // Get instance field reference: public System.IntPtr sdkAvatar
-    ::System::IntPtr& dyn_sdkAvatar();
+    [[deprecated]] ::System::IntPtr& dyn_sdkAvatar();
     // Get instance field reference: public System.String oculusUserID
-    ::StringW& dyn_oculusUserID();
+    [[deprecated]] ::StringW& dyn_oculusUserID();
     // Get instance field reference: public OvrAvatarDriver Driver
-    ::GlobalNamespace::OvrAvatarDriver*& dyn_Driver();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarDriver*& dyn_Driver();
     // Get instance field reference: public System.Boolean EnableBody
-    bool& dyn_EnableBody();
+    [[deprecated]] bool& dyn_EnableBody();
     // Get instance field reference: public System.Boolean EnableHands
-    bool& dyn_EnableHands();
+    [[deprecated]] bool& dyn_EnableHands();
     // Get instance field reference: public System.Boolean EnableBase
-    bool& dyn_EnableBase();
+    [[deprecated]] bool& dyn_EnableBase();
     // Get instance field reference: public System.Boolean EnableExpressive
-    bool& dyn_EnableExpressive();
+    [[deprecated]] bool& dyn_EnableExpressive();
     // Get instance field reference: public System.Boolean RecordPackets
-    bool& dyn_RecordPackets();
+    [[deprecated]] bool& dyn_RecordPackets();
     // Get instance field reference: public System.Boolean UseSDKPackets
-    bool& dyn_UseSDKPackets();
+    [[deprecated]] bool& dyn_UseSDKPackets();
     // Get instance field reference: public PacketRecordSettings PacketSettings
-    ::GlobalNamespace::PacketRecordSettings*& dyn_PacketSettings();
+    [[deprecated]] ::GlobalNamespace::PacketRecordSettings*& dyn_PacketSettings();
     // Get instance field reference: public System.Boolean StartWithControllers
-    bool& dyn_StartWithControllers();
+    [[deprecated]] bool& dyn_StartWithControllers();
     // Get instance field reference: public AvatarLayer FirstPersonLayer
-    ::GlobalNamespace::AvatarLayer*& dyn_FirstPersonLayer();
+    [[deprecated]] ::GlobalNamespace::AvatarLayer*& dyn_FirstPersonLayer();
     // Get instance field reference: public AvatarLayer ThirdPersonLayer
-    ::GlobalNamespace::AvatarLayer*& dyn_ThirdPersonLayer();
+    [[deprecated]] ::GlobalNamespace::AvatarLayer*& dyn_ThirdPersonLayer();
     // Get instance field reference: public System.Boolean ShowFirstPerson
-    bool& dyn_ShowFirstPerson();
+    [[deprecated]] bool& dyn_ShowFirstPerson();
     // Get instance field reference: public System.Boolean ShowThirdPerson
-    bool& dyn_ShowThirdPerson();
+    [[deprecated]] bool& dyn_ShowThirdPerson();
     // Get instance field reference: ovrAvatarCapabilities Capabilities
-    ::GlobalNamespace::ovrAvatarCapabilities& dyn_Capabilities();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarCapabilities& dyn_Capabilities();
     // Get instance field reference: ovrAvatarAssetLevelOfDetail LevelOfDetail
-    ::GlobalNamespace::ovrAvatarAssetLevelOfDetail& dyn_LevelOfDetail();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarAssetLevelOfDetail& dyn_LevelOfDetail();
     // Get instance field reference: private System.Boolean CombineMeshes
-    bool& dyn_CombineMeshes();
+    [[deprecated]] bool& dyn_CombineMeshes();
     // Get instance field reference: public System.Boolean UseTransparentRenderQueue
-    bool& dyn_UseTransparentRenderQueue();
+    [[deprecated]] bool& dyn_UseTransparentRenderQueue();
     // Get instance field reference: public UnityEngine.Shader Monochrome_SurfaceShader
-    ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader();
     // Get instance field reference: public UnityEngine.Shader Monochrome_SurfaceShader_SelfOccluding
-    ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader_SelfOccluding();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader_SelfOccluding();
     // Get instance field reference: public UnityEngine.Shader Monochrome_SurfaceShader_PBS
-    ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader_PBS();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader_PBS();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_SurfaceShader_SingleComponent
-    ::UnityEngine::Shader*& dyn_Skinshaded_SurfaceShader_SingleComponent();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_SurfaceShader_SingleComponent();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_VertFrag_SingleComponent
-    ::UnityEngine::Shader*& dyn_Skinshaded_VertFrag_SingleComponent();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_VertFrag_SingleComponent();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_VertFrag_CombinedMesh
-    ::UnityEngine::Shader*& dyn_Skinshaded_VertFrag_CombinedMesh();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_VertFrag_CombinedMesh();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_Expressive_SurfaceShader_SingleComponent
-    ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_SurfaceShader_SingleComponent();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_SurfaceShader_SingleComponent();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_Expressive_VertFrag_SingleComponent
-    ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_VertFrag_SingleComponent();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_VertFrag_SingleComponent();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_Expressive_VertFrag_CombinedMesh
-    ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_VertFrag_CombinedMesh();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_VertFrag_CombinedMesh();
     // Get instance field reference: public UnityEngine.Shader Loader_VertFrag_CombinedMesh
-    ::UnityEngine::Shader*& dyn_Loader_VertFrag_CombinedMesh();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_Loader_VertFrag_CombinedMesh();
     // Get instance field reference: public UnityEngine.Shader EyeLens
-    ::UnityEngine::Shader*& dyn_EyeLens();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_EyeLens();
     // Get instance field reference: public UnityEngine.Shader ControllerShader
-    ::UnityEngine::Shader*& dyn_ControllerShader();
+    [[deprecated]] ::UnityEngine::Shader*& dyn_ControllerShader();
     // Get instance field reference: public System.Boolean CanOwnMicrophone
-    bool& dyn_CanOwnMicrophone();
+    [[deprecated]] bool& dyn_CanOwnMicrophone();
     // Get instance field reference: public System.Boolean EnableLaughter
-    bool& dyn_EnableLaughter();
+    [[deprecated]] bool& dyn_EnableLaughter();
     // Get instance field reference: public UnityEngine.GameObject MouthAnchor
-    ::UnityEngine::GameObject*& dyn_MouthAnchor();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_MouthAnchor();
     // Get instance field reference: public UnityEngine.Transform LeftHandCustomPose
-    ::UnityEngine::Transform*& dyn_LeftHandCustomPose();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_LeftHandCustomPose();
     // Get instance field reference: public UnityEngine.Transform RightHandCustomPose
-    ::UnityEngine::Transform*& dyn_RightHandCustomPose();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_RightHandCustomPose();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.UInt64> assetLoadingIds
-    ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_assetLoadingIds();
+    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_assetLoadingIds();
     // Get instance field reference: private System.Boolean assetsFinishedLoading
-    bool& dyn_assetsFinishedLoading();
+    [[deprecated]] bool& dyn_assetsFinishedLoading();
     // Get instance field reference: private OvrAvatarMaterialManager materialManager
-    ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_materialManager();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_materialManager();
     // Get instance field reference: private System.Boolean waitingForCombinedMesh
-    bool& dyn_waitingForCombinedMesh();
+    [[deprecated]] bool& dyn_waitingForCombinedMesh();
     // Get instance field reference: private UnityEngine.Vector4 clothingAlphaOffset
-    ::UnityEngine::Vector4& dyn_clothingAlphaOffset();
+    [[deprecated]] ::UnityEngine::Vector4& dyn_clothingAlphaOffset();
     // Get instance field reference: private System.UInt64 clothingAlphaTexture
-    uint64_t& dyn_clothingAlphaTexture();
+    [[deprecated]] uint64_t& dyn_clothingAlphaTexture();
     // Get instance field reference: private OVRLipSyncMicInput micInput
-    ::GlobalNamespace::OVRLipSyncMicInput*& dyn_micInput();
+    [[deprecated]] ::GlobalNamespace::OVRLipSyncMicInput*& dyn_micInput();
     // Get instance field reference: private OVRLipSyncContext lipsyncContext
-    ::GlobalNamespace::OVRLipSyncContext*& dyn_lipsyncContext();
+    [[deprecated]] ::GlobalNamespace::OVRLipSyncContext*& dyn_lipsyncContext();
     // Get instance field reference: private OVRLipSync/Frame currentFrame
-    ::GlobalNamespace::OVRLipSync::Frame*& dyn_currentFrame();
+    [[deprecated]] ::GlobalNamespace::OVRLipSync::Frame*& dyn_currentFrame();
     // Get instance field reference: private System.Single[] visemes
-    ::ArrayW<float>& dyn_visemes();
+    [[deprecated]] ::ArrayW<float>& dyn_visemes();
     // Get instance field reference: private UnityEngine.AudioSource audioSource
-    ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: private ONSPAudioSource spatializedSource
-    ::GlobalNamespace::ONSPAudioSource*& dyn_spatializedSource();
+    [[deprecated]] ::GlobalNamespace::ONSPAudioSource*& dyn_spatializedSource();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single[]> voiceUpdates
-    ::System::Collections::Generic::List_1<::ArrayW<float>>*& dyn_voiceUpdates();
+    [[deprecated]] ::System::Collections::Generic::List_1<::ArrayW<float>>*& dyn_voiceUpdates();
     // Get instance field reference: private UnityEngine.Transform cachedLeftHandCustomPose
-    ::UnityEngine::Transform*& dyn_cachedLeftHandCustomPose();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_cachedLeftHandCustomPose();
     // Get instance field reference: private UnityEngine.Transform[] cachedCustomLeftHandJoints
-    ::ArrayW<::UnityEngine::Transform*>& dyn_cachedCustomLeftHandJoints();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_cachedCustomLeftHandJoints();
     // Get instance field reference: private ovrAvatarTransform[] cachedLeftHandTransforms
-    ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_cachedLeftHandTransforms();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_cachedLeftHandTransforms();
     // Get instance field reference: private UnityEngine.Transform cachedRightHandCustomPose
-    ::UnityEngine::Transform*& dyn_cachedRightHandCustomPose();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_cachedRightHandCustomPose();
     // Get instance field reference: private UnityEngine.Transform[] cachedCustomRightHandJoints
-    ::ArrayW<::UnityEngine::Transform*>& dyn_cachedCustomRightHandJoints();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_cachedCustomRightHandJoints();
     // Get instance field reference: private ovrAvatarTransform[] cachedRightHandTransforms
-    ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_cachedRightHandTransforms();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_cachedRightHandTransforms();
     // Get instance field reference: private System.Boolean showLeftController
-    bool& dyn_showLeftController();
+    [[deprecated]] bool& dyn_showLeftController();
     // Get instance field reference: private System.Boolean showRightController
-    bool& dyn_showRightController();
+    [[deprecated]] bool& dyn_showRightController();
     // Get instance field reference: System.UInt64 oculusUserIDInternal
-    uint64_t& dyn_oculusUserIDInternal();
+    [[deprecated]] uint64_t& dyn_oculusUserIDInternal();
     // Get instance field reference: OvrAvatarBase Base
-    ::GlobalNamespace::OvrAvatarBase*& dyn_Base();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarBase*& dyn_Base();
     // Get instance field reference: OvrAvatarTouchController ControllerLeft
-    ::GlobalNamespace::OvrAvatarTouchController*& dyn_ControllerLeft();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarTouchController*& dyn_ControllerLeft();
     // Get instance field reference: OvrAvatarTouchController ControllerRight
-    ::GlobalNamespace::OvrAvatarTouchController*& dyn_ControllerRight();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarTouchController*& dyn_ControllerRight();
     // Get instance field reference: OvrAvatarBody Body
-    ::GlobalNamespace::OvrAvatarBody*& dyn_Body();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarBody*& dyn_Body();
     // Get instance field reference: OvrAvatarHand HandLeft
-    ::GlobalNamespace::OvrAvatarHand*& dyn_HandLeft();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarHand*& dyn_HandLeft();
     // Get instance field reference: OvrAvatarHand HandRight
-    ::GlobalNamespace::OvrAvatarHand*& dyn_HandRight();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarHand*& dyn_HandRight();
     // Get instance field reference: ovrAvatarLookAndFeelVersion LookAndFeelVersion
-    ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn_LookAndFeelVersion();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn_LookAndFeelVersion();
     // Get instance field reference: ovrAvatarLookAndFeelVersion FallbackLookAndFeelVersion
-    ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn_FallbackLookAndFeelVersion();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn_FallbackLookAndFeelVersion();
     // Get instance field reference: private OvrAvatarPacket CurrentUnityPacket
-    ::GlobalNamespace::OvrAvatarPacket*& dyn_CurrentUnityPacket();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarPacket*& dyn_CurrentUnityPacket();
     // Get instance field reference: public System.EventHandler`1<OvrAvatar/PacketEventArgs> PacketRecorded
-    ::System::EventHandler_1<::GlobalNamespace::OvrAvatar::PacketEventArgs*>*& dyn_PacketRecorded();
+    [[deprecated]] ::System::EventHandler_1<::GlobalNamespace::OvrAvatar::PacketEventArgs*>*& dyn_PacketRecorded();
     // Get instance field reference: public System.Single VoiceAmplitude
-    float& dyn_VoiceAmplitude();
+    [[deprecated]] float& dyn_VoiceAmplitude();
     // Get instance field reference: public System.Boolean EnableMouthVertexAnimation
-    bool& dyn_EnableMouthVertexAnimation();
+    [[deprecated]] bool& dyn_EnableMouthVertexAnimation();
     // private System.Void OnDestroy()
-    // Offset: 0x920BA0
+    // Offset: 0xF813D0
     void OnDestroy();
     // public System.Void AssetLoadedCallback(OvrAvatarAsset asset)
-    // Offset: 0x920C34
+    // Offset: 0xF81464
     void AssetLoadedCallback(::GlobalNamespace::OvrAvatarAsset* asset);
     // public System.Void CombinedMeshLoadedCallback(System.IntPtr assetPtr)
-    // Offset: 0x920C9C
+    // Offset: 0xF814CC
     void CombinedMeshLoadedCallback(::System::IntPtr assetPtr);
     // private OvrAvatarSkinnedMeshRenderComponent AddSkinnedMeshRenderComponent(UnityEngine.GameObject gameObject, ovrAvatarRenderPart_SkinnedMeshRender skinnedMeshRender)
-    // Offset: 0x920DCC
+    // Offset: 0xF815FC
     ::GlobalNamespace::OvrAvatarSkinnedMeshRenderComponent* AddSkinnedMeshRenderComponent(::UnityEngine::GameObject* gameObject, ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRender skinnedMeshRender);
     // private OvrAvatarSkinnedMeshRenderPBSComponent AddSkinnedMeshRenderPBSComponent(UnityEngine.GameObject gameObject, ovrAvatarRenderPart_SkinnedMeshRenderPBS skinnedMeshRenderPBS)
-    // Offset: 0x920EAC
+    // Offset: 0xF816DC
     ::GlobalNamespace::OvrAvatarSkinnedMeshRenderPBSComponent* AddSkinnedMeshRenderPBSComponent(::UnityEngine::GameObject* gameObject, ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS skinnedMeshRenderPBS);
     // private OvrAvatarSkinnedMeshPBSV2RenderComponent AddSkinnedMeshRenderPBSV2Component(System.IntPtr renderPart, UnityEngine.GameObject go, ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRenderPBSV2, System.Boolean isBodyPartZero, System.Boolean isControllerModel)
-    // Offset: 0x920F88
+    // Offset: 0xF817B8
     ::GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent* AddSkinnedMeshRenderPBSV2Component(::System::IntPtr renderPart, ::UnityEngine::GameObject* go, ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRenderPBSV2, bool isBodyPartZero, bool isControllerModel);
     // static public System.IntPtr GetRenderPart(ovrAvatarComponent component, System.UInt32 renderPartIndex)
-    // Offset: 0x92116C
+    // Offset: 0xF81D84
     static ::System::IntPtr GetRenderPart(::GlobalNamespace::ovrAvatarComponent component, uint renderPartIndex);
     // static private System.String GetRenderPartName(ovrAvatarComponent component, System.UInt32 renderPartIndex)
-    // Offset: 0x921248
+    // Offset: 0xF81E60
     static ::StringW GetRenderPartName(::GlobalNamespace::ovrAvatarComponent component, uint renderPartIndex);
     // static System.Void ConvertTransform(System.Single[] transform, ref ovrAvatarTransform target)
-    // Offset: 0x9212C0
+    // Offset: 0xF81ED8
     static void ConvertTransform(::ArrayW<float> transform, ByRef<::GlobalNamespace::ovrAvatarTransform> target);
     // static System.Void ConvertTransform(ovrAvatarTransform transform, UnityEngine.Transform target)
-    // Offset: 0x9213A8
+    // Offset: 0xF81FC0
     static void ConvertTransform(::GlobalNamespace::ovrAvatarTransform transform, ::UnityEngine::Transform* target);
     // static public ovrAvatarTransform CreateOvrAvatarTransform(UnityEngine.Vector3 position, UnityEngine.Quaternion orientation)
-    // Offset: 0x921434
+    // Offset: 0xF8204C
     static ::GlobalNamespace::ovrAvatarTransform CreateOvrAvatarTransform(::UnityEngine::Vector3 position, ::UnityEngine::Quaternion orientation);
     // static private ovrAvatarGazeTarget CreateOvrGazeTarget(System.UInt32 targetId, UnityEngine.Vector3 targetPosition, ovrAvatarGazeTargetType targetType)
-    // Offset: 0x9214BC
+    // Offset: 0xF820D4
     static ::GlobalNamespace::ovrAvatarGazeTarget CreateOvrGazeTarget(uint targetId, ::UnityEngine::Vector3 targetPosition, ::GlobalNamespace::ovrAvatarGazeTargetType targetType);
     // private System.Void BuildRenderComponents()
-    // Offset: 0x9214D4
+    // Offset: 0xF820EC
     void BuildRenderComponents();
     // private System.Void AddAvatarComponent(ref T root, ovrAvatarComponent nativeComponent)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
     void AddAvatarComponent(ByRef<T> root, ::GlobalNamespace::ovrAvatarComponent nativeComponent) {
-      static_assert(std::is_convertible_v<T, ::GlobalNamespace::OvrAvatarComponent*>);
+      static_assert(std::is_convertible_v<T, ::GlobalNamespace::OvrAvatarComponent_*>);
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatar::AddAvatarComponent");
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "AddAvatarComponent", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(root), ::il2cpp_utils::ExtractType(nativeComponent)})));
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___generic__method, byref(root), nativeComponent);
     }
     // private System.Void UpdateCustomPoses()
-    // Offset: 0x921984
+    // Offset: 0xF8259C
     void UpdateCustomPoses();
     // static private System.Boolean UpdatePoseRoot(UnityEngine.Transform poseRoot, ref UnityEngine.Transform cachedPoseRoot, ref UnityEngine.Transform[] cachedPoseJoints, ref ovrAvatarTransform[] transforms)
-    // Offset: 0x921D04
+    // Offset: 0xF8291C
     static bool UpdatePoseRoot(::UnityEngine::Transform* poseRoot, ByRef<::UnityEngine::Transform*> cachedPoseRoot, ByRef<::ArrayW<::UnityEngine::Transform*>> cachedPoseJoints, ByRef<::ArrayW<::GlobalNamespace::ovrAvatarTransform>> transforms);
     // static private System.Boolean UpdateTransforms(UnityEngine.Transform[] joints, ovrAvatarTransform[] transforms)
-    // Offset: 0x921EAC
+    // Offset: 0xF82AC4
     static bool UpdateTransforms(::ArrayW<::UnityEngine::Transform*> joints, ::ArrayW<::GlobalNamespace::ovrAvatarTransform> transforms);
     // static private System.Void OrderJoints(UnityEngine.Transform transform, System.Collections.Generic.List`1<UnityEngine.Transform> joints)
-    // Offset: 0x9220F8
+    // Offset: 0xF82D10
     static void OrderJoints(::UnityEngine::Transform* transform, ::System::Collections::Generic::List_1<::UnityEngine::Transform*>* joints);
     // private System.Void AvatarSpecificationCallback(System.IntPtr avatarSpecification)
-    // Offset: 0x9221EC
+    // Offset: 0xF82E04
     void AvatarSpecificationCallback(::System::IntPtr avatarSpecification);
     // private System.Void Start()
-    // Offset: 0x922858
+    // Offset: 0xF838F4
     void Start();
     // private System.Void Update()
-    // Offset: 0x922B84
+    // Offset: 0xF83D00
     void Update();
     // static public ovrAvatarHandInputState CreateInputState(ovrAvatarTransform transform, OvrAvatarDriver/ControllerPose pose)
-    // Offset: 0x9235A8
+    // Offset: 0xF8477C
     static ::GlobalNamespace::ovrAvatarHandInputState CreateInputState(::GlobalNamespace::ovrAvatarTransform transform, ::GlobalNamespace::OvrAvatarDriver::ControllerPose pose);
     // public System.Void ShowControllers(System.Boolean show)
-    // Offset: 0x9235FC
+    // Offset: 0xF847D0
     void ShowControllers(bool show);
     // public System.Void ShowLeftController(System.Boolean show)
-    // Offset: 0x9224A8
+    // Offset: 0xF830AC
     void ShowLeftController(bool show);
     // public System.Void ShowRightController(System.Boolean show)
-    // Offset: 0x92254C
+    // Offset: 0xF83150
     void ShowRightController(bool show);
     // public System.Void UpdateVoiceVisualization(System.Single[] voiceSamples)
-    // Offset: 0x92362C
+    // Offset: 0xF84800
     void UpdateVoiceVisualization(::ArrayW<float> voiceSamples);
     // private System.Void RecordFrame()
-    // Offset: 0x922F5C
+    // Offset: 0xF840CC
     void RecordFrame();
     // private System.Void RecordUnityFrame()
-    // Offset: 0x92389C
+    // Offset: 0xF84A70
     void RecordUnityFrame();
     // private System.Void RecordSDKFrame()
-    // Offset: 0x923690
+    // Offset: 0xF84864
     void RecordSDKFrame();
     // private System.Void AddRenderParts(OvrAvatarComponent ovrComponent, ovrAvatarComponent component, UnityEngine.Transform parent)
-    // Offset: 0x923FB0
-    void AddRenderParts(::GlobalNamespace::OvrAvatarComponent* ovrComponent, ::GlobalNamespace::ovrAvatarComponent component, ::UnityEngine::Transform* parent);
+    // Offset: 0xF85184
+    void AddRenderParts(::GlobalNamespace::OvrAvatarComponent_* ovrComponent, ::GlobalNamespace::ovrAvatarComponent component, ::UnityEngine::Transform* parent);
     // public System.Void RefreshBodyParts()
-    // Offset: 0x92442C
+    // Offset: 0xF85600
     void RefreshBodyParts();
     // public System.Nullable`1<ovrAvatarBodyComponent> GetBodyComponent()
-    // Offset: 0x924830
+    // Offset: 0xF85A04
     ::System::Nullable_1<::GlobalNamespace::ovrAvatarBodyComponent> GetBodyComponent();
     // public UnityEngine.Transform GetHandTransform(OvrAvatar/HandType hand, OvrAvatar/HandJoint joint)
-    // Offset: 0x924984
+    // Offset: 0xF85B58
     ::UnityEngine::Transform* GetHandTransform(::GlobalNamespace::OvrAvatar::HandType hand, ::GlobalNamespace::OvrAvatar::HandJoint joint);
     // public System.Void GetPointingDirection(OvrAvatar/HandType hand, ref UnityEngine.Vector3 forward, ref UnityEngine.Vector3 up)
-    // Offset: 0x924B68
+    // Offset: 0xF85D3C
     void GetPointingDirection(::GlobalNamespace::OvrAvatar::HandType hand, ByRef<::UnityEngine::Vector3> forward, ByRef<::UnityEngine::Vector3> up);
     // private System.Void UpdateVoiceBehavior()
-    // Offset: 0x923128
+    // Offset: 0xF842FC
     void UpdateVoiceBehavior();
     // private System.Boolean IsValidMic()
-    // Offset: 0x924C3C
+    // Offset: 0xF85E10
     bool IsValidMic();
     // private System.Void InitPostLoad()
-    // Offset: 0x922F6C
+    // Offset: 0xF840DC
     void InitPostLoad();
     // static private System.Void ExpressiveGlobalInit()
-    // Offset: 0x924D2C
+    // Offset: 0xF85F00
     static void ExpressiveGlobalInit();
     // static private System.Void InitializeLights()
-    // Offset: 0x925384
+    // Offset: 0xF86558
     static void InitializeLights();
     // static private ovrAvatarLight CreateLightDirectional(System.UInt32 id, UnityEngine.Vector3 direction, System.Single intensity, ref ovrAvatarLight light)
-    // Offset: 0x925868
+    // Offset: 0xF86A3C
     static ::GlobalNamespace::ovrAvatarLight CreateLightDirectional(uint id, ::UnityEngine::Vector3 direction, float intensity, ByRef<::GlobalNamespace::ovrAvatarLight> light);
     // static private ovrAvatarLight CreateLightPoint(System.UInt32 id, UnityEngine.Vector3 position, System.Single range, System.Single intensity, ref ovrAvatarLight light)
-    // Offset: 0x925890
+    // Offset: 0xF86A64
     static ::GlobalNamespace::ovrAvatarLight CreateLightPoint(uint id, ::UnityEngine::Vector3 position, float range, float intensity, ByRef<::GlobalNamespace::ovrAvatarLight> light);
     // static private ovrAvatarLight CreateLightSpot(System.UInt32 id, UnityEngine.Vector3 position, UnityEngine.Vector3 direction, System.Single spotAngleDeg, System.Single range, System.Single intensity, ref ovrAvatarLight light)
-    // Offset: 0x9258B8
+    // Offset: 0xF86A8C
     static ::GlobalNamespace::ovrAvatarLight CreateLightSpot(uint id, ::UnityEngine::Vector3 position, ::UnityEngine::Vector3 direction, float spotAngleDeg, float range, float intensity, ByRef<::GlobalNamespace::ovrAvatarLight> light);
     // private System.Void UpdateExpressive()
-    // Offset: 0x923434
+    // Offset: 0xF84608
     void UpdateExpressive();
     // private System.Void ConfigureHelpers()
-    // Offset: 0x924DF0
+    // Offset: 0xF85FC4
     void ConfigureHelpers();
     // private System.Collections.IEnumerator WaitForMouthAudioSource()
-    // Offset: 0x925CD8
+    // Offset: 0xF86EAC
     ::System::Collections::IEnumerator* WaitForMouthAudioSource();
     // public System.Void DestroyHelperObjects()
-    // Offset: 0x925D44
+    // Offset: 0xF86F18
     void DestroyHelperObjects();
     // public UnityEngine.GameObject CreateHelperObject(UnityEngine.Transform parent, UnityEngine.Vector3 localPositionOffset, System.String helperName, System.String helperTag)
-    // Offset: 0x925B98
+    // Offset: 0xF86D6C
     ::UnityEngine::GameObject* CreateHelperObject(::UnityEngine::Transform* parent, ::UnityEngine::Vector3 localPositionOffset, ::StringW helperName, ::StringW helperTag);
     // public System.Void UpdateVoiceData(System.Int16[] pcmData, System.Int32 numChannels)
-    // Offset: 0x925E08
+    // Offset: 0xF86FDC
     void UpdateVoiceData(::ArrayW<int16_t> pcmData, int numChannels);
     // public System.Void UpdateVoiceData(System.Single[] pcmData, System.Int32 numChannels)
-    // Offset: 0x925EF0
+    // Offset: 0xF870C4
     void UpdateVoiceData(::ArrayW<float> pcmData, int numChannels);
     // private System.Void UpdateFacewave()
-    // Offset: 0x9258F4
+    // Offset: 0xF86AC8
     void UpdateFacewave();
     // static private System.Void .cctor()
-    // Offset: 0x9207B4
+    // Offset: 0xF80FE4
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();
     // public System.Void .ctor()
-    // Offset: 0x925FD8
+    // Offset: 0xF871AC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -1288,7 +1280,7 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::AddRenderParts
 // Il2CppName: AddRenderParts
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatar::*)(::GlobalNamespace::OvrAvatarComponent*, ::GlobalNamespace::ovrAvatarComponent, ::UnityEngine::Transform*)>(&GlobalNamespace::OvrAvatar::AddRenderParts)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatar::*)(::GlobalNamespace::OvrAvatarComponent_*, ::GlobalNamespace::ovrAvatarComponent, ::UnityEngine::Transform*)>(&GlobalNamespace::OvrAvatar::AddRenderParts)> {
   static const MethodInfo* get() {
     static auto* ovrComponent = &::il2cpp_utils::GetClassFromName("", "OvrAvatarComponent")->byval_arg;
     static auto* component = &::il2cpp_utils::GetClassFromName("", "ovrAvatarComponent")->byval_arg;

@@ -33,15 +33,7 @@ namespace Mono::Net::Security {
   // [TokenAttribute] Offset: FFFFFFFF
   class AsyncProtocolResult : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Int32 <UserResult>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -58,24 +50,24 @@ namespace Mono::Net::Security {
     static_assert(sizeof(::System::Runtime::ExceptionServices::ExceptionDispatchInfo*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Int32 <UserResult>k__BackingField
-    int& dyn_$UserResult$k__BackingField();
+    [[deprecated]] int& dyn_$UserResult$k__BackingField();
     // Get instance field reference: private readonly System.Runtime.ExceptionServices.ExceptionDispatchInfo <Error>k__BackingField
-    ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_$Error$k__BackingField();
+    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_$Error$k__BackingField();
     // public System.Int32 get_UserResult()
-    // Offset: 0xE674F0
+    // Offset: 0x10D71C4
     int get_UserResult();
     // public System.Runtime.ExceptionServices.ExceptionDispatchInfo get_Error()
-    // Offset: 0xE674F8
+    // Offset: 0x10D71CC
     ::System::Runtime::ExceptionServices::ExceptionDispatchInfo* get_Error();
     // public System.Void .ctor(System.Int32 result)
-    // Offset: 0xE67500
+    // Offset: 0x10D71D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AsyncProtocolResult* New_ctor(int result) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::Security::AsyncProtocolResult::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AsyncProtocolResult*, creationType>(result)));
     }
     // public System.Void .ctor(System.Runtime.ExceptionServices.ExceptionDispatchInfo error)
-    // Offset: 0xE6752C
+    // Offset: 0x10D7200
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AsyncProtocolResult* New_ctor(::System::Runtime::ExceptionServices::ExceptionDispatchInfo* error) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::Security::AsyncProtocolResult::.ctor");

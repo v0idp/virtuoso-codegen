@@ -88,20 +88,12 @@ namespace VROSC {
       // Set static field: static public VROSC.Session/VROSC.PreviewSource TapeRecorder
       static void _set_TapeRecorder(::VROSC::Session::PreviewSource value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.Session/VROSC.PreviewSource
     #pragma pack(pop)
     static check_size<sizeof(Session::PreviewSource), 0 + sizeof(int)> __VROSC_Session_PreviewSourceSizeCheck;
     static_assert(sizeof(Session::PreviewSource) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 Version
     // Size: 0x4
     // Offset: 0x10
@@ -216,49 +208,49 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::Session::Contributor*>*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 Version
-    int& dyn_Version();
+    [[deprecated]] int& dyn_Version();
     // Get instance field reference: public System.String SessionName
-    ::StringW& dyn_SessionName();
+    [[deprecated]] ::StringW& dyn_SessionName();
     // Get instance field reference: public System.String SessionId
-    ::StringW& dyn_SessionId();
+    [[deprecated]] ::StringW& dyn_SessionId();
     // Get instance field reference: public System.String DisplayName
-    ::StringW& dyn_DisplayName();
+    [[deprecated]] ::StringW& dyn_DisplayName();
     // Get instance field reference: public System.String AuthorName
-    ::StringW& dyn_AuthorName();
+    [[deprecated]] ::StringW& dyn_AuthorName();
     // Get instance field reference: public System.String PlatformName
-    ::StringW& dyn_PlatformName();
+    [[deprecated]] ::StringW& dyn_PlatformName();
     // Get instance field reference: public System.String Date
-    ::StringW& dyn_Date();
+    [[deprecated]] ::StringW& dyn_Date();
     // Get instance field reference: public System.Int32 TrackCount
-    int& dyn_TrackCount();
+    [[deprecated]] int& dyn_TrackCount();
     // Get instance field reference: public System.Boolean HasPreview
-    bool& dyn_HasPreview();
+    [[deprecated]] bool& dyn_HasPreview();
     // Get instance field reference: public System.Single PreviewNormalizeMultiplier
-    float& dyn_PreviewNormalizeMultiplier();
+    [[deprecated]] float& dyn_PreviewNormalizeMultiplier();
     // Get instance field reference: public VROSC.Session/VROSC.PreviewSource PreviewType
-    ::VROSC::Session::PreviewSource& dyn_PreviewType();
+    [[deprecated]] ::VROSC::Session::PreviewSource& dyn_PreviewType();
     // Get instance field reference: public System.String Description
-    ::StringW& dyn_Description();
+    [[deprecated]] ::StringW& dyn_Description();
     // Get instance field reference: public System.Int32 UpVotesCount
-    int& dyn_UpVotesCount();
+    [[deprecated]] int& dyn_UpVotesCount();
     // Get instance field reference: public System.Int32 FavoritesCount
-    int& dyn_FavoritesCount();
+    [[deprecated]] int& dyn_FavoritesCount();
     // Get instance field reference: public System.Int32 DownloadsCount
-    int& dyn_DownloadsCount();
+    [[deprecated]] int& dyn_DownloadsCount();
     // Get instance field reference: public System.Int32 PreviewPlaysCount
-    int& dyn_PreviewPlaysCount();
+    [[deprecated]] int& dyn_PreviewPlaysCount();
     // Get instance field reference: public System.Collections.Generic.List`1<System.String> Tags
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_Tags();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_Tags();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.Session/VROSC.Contributor> Contributors
-    ::System::Collections::Generic::List_1<::VROSC::Session::Contributor*>*& dyn_Contributors();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Session::Contributor*>*& dyn_Contributors();
     // public VROSC.Session Clone()
-    // Offset: 0x13E6140
+    // Offset: 0x1985210
     ::VROSC::Session* Clone();
     // public System.Void SetHasPreview(System.Boolean hasPreview, System.Single multiplier, VROSC.Session/VROSC.PreviewSource previewSource)
-    // Offset: 0x13E639C
+    // Offset: 0x198546C
     void SetHasPreview(bool hasPreview, float multiplier, ::VROSC::Session::PreviewSource previewSource);
     // public System.Void .ctor()
-    // Offset: 0x13E63B0
+    // Offset: 0x1985480
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

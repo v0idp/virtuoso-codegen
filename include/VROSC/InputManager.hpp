@@ -61,15 +61,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InputManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TriggerButton[] _allTriggerButtons
     // Size: 0x8
     // Offset: 0x18
@@ -134,42 +126,42 @@ namespace VROSC {
     // Set static field: static public System.Action`2<VROSC.InputDevice,UnityEngine.Vector2> OnThumbStickDirection
     static void _set_OnThumbStickDirection(::System::Action_2<::VROSC::InputDevice*, ::UnityEngine::Vector2>* value);
     // Get instance field reference: private VROSC.TriggerButton[] _allTriggerButtons
-    ::ArrayW<::VROSC::TriggerButton>& dyn__allTriggerButtons();
+    [[deprecated]] ::ArrayW<::VROSC::TriggerButton>& dyn__allTriggerButtons();
     // Get instance field reference: private VROSC.InputSettings _inputSettings
-    ::VROSC::InputSettings*& dyn__inputSettings();
+    [[deprecated]] ::VROSC::InputSettings*& dyn__inputSettings();
     // Get instance field reference: private System.Boolean _setupComplete
-    bool& dyn__setupComplete();
+    [[deprecated]] bool& dyn__setupComplete();
     // Get instance field reference: private HandMover _debugHandMover
-    ::GlobalNamespace::HandMover*& dyn__debugHandMover();
+    [[deprecated]] ::GlobalNamespace::HandMover*& dyn__debugHandMover();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TriggerButton> triggerButtonsBeginning
-    ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsBeginning();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsBeginning();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TriggerButton> triggerButtonsStaying
-    ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsStaying();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsStaying();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TriggerButton> triggerButtonsEnding
-    ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsEnding();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsEnding();
     // public VROSC.InputSettings get_InputSettings()
-    // Offset: 0x8A28F0
+    // Offset: 0x19455FC
     ::VROSC::InputSettings* get_InputSettings();
     // protected System.Void Update()
-    // Offset: 0x8A28F8
+    // Offset: 0x1945604
     void Update();
     // public System.Void Setup()
-    // Offset: 0x8A297C
+    // Offset: 0x1945688
     void Setup();
     // public System.Void CheckForButtonInteractions(VROSC.InputDevice inputDevice)
-    // Offset: 0x8A1DA8
+    // Offset: 0x1944AB4
     void CheckForButtonInteractions(::VROSC::InputDevice* inputDevice);
     // private System.Boolean ButtonIsTriggering(VROSC.InputDevice inputDevice, VROSC.TriggerButton triggerButton, VROSC.TriggerFrame triggerFrame)
-    // Offset: 0x8A29BC
+    // Offset: 0x19456C8
     bool ButtonIsTriggering(::VROSC::InputDevice* inputDevice, ::VROSC::TriggerButton triggerButton, ::VROSC::TriggerFrame triggerFrame);
     // private System.Void ThumbStickInput(VROSC.InputDevice inputDevice)
-    // Offset: 0x8A2D80
+    // Offset: 0x1945A8C
     void ThumbStickInput(::VROSC::InputDevice* inputDevice);
     // public System.Boolean IsPlayerLookingDown(System.Single angleThreshhold)
-    // Offset: 0x8A2E58
+    // Offset: 0x1945B64
     bool IsPlayerLookingDown(float angleThreshhold);
     // public System.Void .ctor()
-    // Offset: 0x8A2F5C
+    // Offset: 0x1945C68
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

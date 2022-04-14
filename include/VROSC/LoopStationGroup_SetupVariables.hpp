@@ -83,66 +83,66 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.String <GroupID>k__BackingField
-    ::StringW& dyn_$GroupID$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$GroupID$k__BackingField();
     // Get instance field reference: private System.String <DisplayName>k__BackingField
-    ::StringW& dyn_$DisplayName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$DisplayName$k__BackingField();
     // Get instance field reference: private System.Single <Volume>k__BackingField
-    float& dyn_$Volume$k__BackingField();
+    [[deprecated]] float& dyn_$Volume$k__BackingField();
     // Get instance field reference: private System.Boolean <Muted>k__BackingField
-    bool& dyn_$Muted$k__BackingField();
+    [[deprecated]] bool& dyn_$Muted$k__BackingField();
     // Get instance field reference: private System.Boolean <Solo>k__BackingField
-    bool& dyn_$Solo$k__BackingField();
+    [[deprecated]] bool& dyn_$Solo$k__BackingField();
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlaybackConfigOverride <PlaybackConfig>k__BackingField
-    ::VROSC::LoopPlaybackConfigOverride*& dyn_$PlaybackConfig$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigOverride*& dyn_$PlaybackConfig$k__BackingField();
     // public System.String get_GroupID()
-    // Offset: 0x13D727C
+    // Offset: 0x195EF98
     ::StringW get_GroupID();
     // private System.Void set_GroupID(System.String value)
-    // Offset: 0x13D7274
+    // Offset: 0x195EF90
     void set_GroupID(::StringW value);
     // public System.String get_DisplayName()
-    // Offset: 0x13D728C
+    // Offset: 0x195EFA8
     ::StringW get_DisplayName();
     // private System.Void set_DisplayName(System.String value)
-    // Offset: 0x13D7284
+    // Offset: 0x195EFA0
     void set_DisplayName(::StringW value);
     // public System.Single get_Volume()
-    // Offset: 0x13D729C
+    // Offset: 0x195EFB8
     float get_Volume();
     // private System.Void set_Volume(System.Single value)
-    // Offset: 0x13D7294
+    // Offset: 0x195EFB0
     void set_Volume(float value);
     // public System.Boolean get_Muted()
-    // Offset: 0x13D72B0
+    // Offset: 0x195EFCC
     bool get_Muted();
     // private System.Void set_Muted(System.Boolean value)
-    // Offset: 0x13D72A4
+    // Offset: 0x195EFC0
     void set_Muted(bool value);
     // public System.Boolean get_Solo()
-    // Offset: 0x13D72C4
+    // Offset: 0x195EFE0
     bool get_Solo();
     // private System.Void set_Solo(System.Boolean value)
-    // Offset: 0x13D72B8
+    // Offset: 0x195EFD4
     void set_Solo(bool value);
     // public UnityEngine.Color get_Color()
-    // Offset: 0x13D72D8
+    // Offset: 0x195EFF4
     ::UnityEngine::Color get_Color();
     // private System.Void set_Color(UnityEngine.Color value)
-    // Offset: 0x13D72CC
+    // Offset: 0x195EFE8
     void set_Color(::UnityEngine::Color value);
     // public VROSC.LoopPlaybackConfigOverride get_PlaybackConfig()
-    // Offset: 0x13D72EC
+    // Offset: 0x195F008
     ::VROSC::LoopPlaybackConfigOverride* get_PlaybackConfig();
     // private System.Void set_PlaybackConfig(VROSC.LoopPlaybackConfigOverride value)
-    // Offset: 0x13D72E4
+    // Offset: 0x195F000
     void set_PlaybackConfig(::VROSC::LoopPlaybackConfigOverride* value);
     // public System.Void .ctor(System.String groupID, System.String displayName, System.Single volume)
-    // Offset: 0x13D72F4
+    // Offset: 0x195F010
     SetupVariables(::StringW groupID, ::StringW displayName, float volume);
     // public System.Void .ctor(System.String groupID, System.String displayName, System.Single volume, System.Boolean muted, System.Boolean solo, VROSC.LoopPlaybackConfigOverride playbackConfig, UnityEngine.Color color)
-    // Offset: 0x13D73B4
+    // Offset: 0x195F0D0
     SetupVariables(::StringW groupID, ::StringW displayName, float volume, bool muted, bool solo, ::VROSC::LoopPlaybackConfigOverride* playbackConfig, ::UnityEngine::Color color);
   }; // VROSC.LoopStationGroup/VROSC.SetupVariables
   #pragma pack(pop)

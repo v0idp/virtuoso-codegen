@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupUiState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Dashboard _dashboardPrefab
     // Size: 0x8
     // Offset: 0x10
@@ -85,31 +77,31 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.Dashboard _dashboardPrefab
-    ::VROSC::Dashboard*& dyn__dashboardPrefab();
+    [[deprecated]] ::VROSC::Dashboard*& dyn__dashboardPrefab();
     // Get instance field reference: private PunchKeyboard _keyboardPrefab
-    ::GlobalNamespace::PunchKeyboard*& dyn__keyboardPrefab();
+    [[deprecated]] ::GlobalNamespace::PunchKeyboard*& dyn__keyboardPrefab();
     // Get instance field reference: private VROSC.UISchemeController _uiSchemeController
-    ::VROSC::UISchemeController*& dyn__uiSchemeController();
+    [[deprecated]] ::VROSC::UISchemeController*& dyn__uiSchemeController();
     // Get instance field reference: private VROSC.SetupBeatCounterState _beatCounterState
-    ::VROSC::SetupBeatCounterState*& dyn__beatCounterState();
+    [[deprecated]] ::VROSC::SetupBeatCounterState*& dyn__beatCounterState();
     // public System.Void .ctor(VROSC.Dashboard dashboardPrefab, PunchKeyboard keyboardPrefab, VROSC.UISchemeController uiSchemeController)
-    // Offset: 0x13B3B68
+    // Offset: 0x1926A34
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupUiState* New_ctor(::VROSC::Dashboard* dashboardPrefab, ::GlobalNamespace::PunchKeyboard* keyboardPrefab, ::VROSC::UISchemeController* uiSchemeController) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupUiState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupUiState*, creationType>(dashboardPrefab, keyboardPrefab, uiSchemeController)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B3BA8
+    // Offset: 0x1926A74
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B3C84
+    // Offset: 0x1926B50
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B3D80
+    // Offset: 0x1926C4C
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B3D84
+    // Offset: 0x1926C50
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupUiState
   #pragma pack(pop)

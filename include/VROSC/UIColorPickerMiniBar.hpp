@@ -87,20 +87,12 @@ namespace VROSC {
       // Set static field: static public VROSC.UIColorPickerMiniBar/VROSC.Type Value
       static void _set_Value(::VROSC::UIColorPickerMiniBar::Type value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.UIColorPickerMiniBar/VROSC.Type
     #pragma pack(pop)
     static check_size<sizeof(UIColorPickerMiniBar::Type), 0 + sizeof(int)> __VROSC_UIColorPickerMiniBar_TypeSizeCheck;
     static_assert(sizeof(UIColorPickerMiniBar::Type) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIColorPickerMiniBar/VROSC.Type _type
     // Size: 0x4
     // Offset: 0x18
@@ -131,27 +123,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIColorPickerMiniBar/VROSC.Type _type
-    ::VROSC::UIColorPickerMiniBar::Type& dyn__type();
+    [[deprecated]] ::VROSC::UIColorPickerMiniBar::Type& dyn__type();
     // Get instance field reference: private VROSC.UI.Meshes.ColorPickerMesh _mesh
-    ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__mesh();
+    [[deprecated]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__mesh();
     // Get instance field reference: private UnityEngine.Transform _marker
-    ::UnityEngine::Transform*& dyn__marker();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__marker();
     // Get instance field reference: private System.Single _width
-    float& dyn__width();
+    [[deprecated]] float& dyn__width();
     // private System.Void Awake()
-    // Offset: 0x139B360
+    // Offset: 0xA34EF0
     void Awake();
     // public System.Void Verify(System.Boolean forceUpdate)
-    // Offset: 0x139B04C
+    // Offset: 0xA34BDC
     void Verify(bool forceUpdate);
     // public System.Void Set(System.Single hue, System.Single saturation, System.Single value)
-    // Offset: 0x139B264
+    // Offset: 0xA34DF4
     void Set(float hue, float saturation, float value);
     // private System.Void SetMarker(System.Single value)
-    // Offset: 0x139B368
+    // Offset: 0xA34EF8
     void SetMarker(float value);
     // public System.Void .ctor()
-    // Offset: 0x139B3AC
+    // Offset: 0xA34F3C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -35,15 +35,7 @@ namespace TMPro::SpriteAssetUtilities {
   // [TokenAttribute] Offset: FFFFFFFF
   class TexturePacker_JsonArray::SpriteDataObject : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.List`1<TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.Frame> frames
     // Size: 0x8
     // Offset: 0x10
@@ -58,11 +50,11 @@ namespace TMPro::SpriteAssetUtilities {
     static_assert(sizeof(::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Meta) == 0x38);
     public:
     // Get instance field reference: public System.Collections.Generic.List`1<TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.Frame> frames
-    ::System::Collections::Generic::List_1<::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Frame>*& dyn_frames();
+    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Frame>*& dyn_frames();
     // Get instance field reference: public TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.Meta meta
-    ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Meta& dyn_meta();
+    [[deprecated]] ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Meta& dyn_meta();
     // public System.Void .ctor()
-    // Offset: 0x1248100
+    // Offset: 0x182219C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

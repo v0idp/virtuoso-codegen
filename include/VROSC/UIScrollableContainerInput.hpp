@@ -47,15 +47,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIScrollableContainerInput : public ::VROSC::UIInteractable {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIScrollableContainer _scrollableContainer
     // Size: 0x8
     // Offset: 0x88
@@ -76,30 +68,30 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<int>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIScrollableContainer _scrollableContainer
-    ::VROSC::UIScrollableContainer*& dyn__scrollableContainer();
+    [[deprecated]] ::VROSC::UIScrollableContainer*& dyn__scrollableContainer();
     // Get instance field reference: public System.Action`1<System.Int32> OnItemClicked
-    ::System::Action_1<int>*& dyn_OnItemClicked();
+    [[deprecated]] ::System::Action_1<int>*& dyn_OnItemClicked();
     // Get instance field reference: public System.Action`1<System.Int32> OnItemHoverChanged
-    ::System::Action_1<int>*& dyn_OnItemHoverChanged();
+    [[deprecated]] ::System::Action_1<int>*& dyn_OnItemHoverChanged();
     // private System.Void OnEnable()
-    // Offset: 0x13A1620
+    // Offset: 0x1914F4C
     void OnEnable();
     // private System.Void HoverStayChanged()
-    // Offset: 0x13A1888
+    // Offset: 0x19151B4
     void HoverStayChanged();
     // private System.Void ItemWasPressed(VROSC.ClickData clickData)
-    // Offset: 0x13A1A80
+    // Offset: 0x19153AC
     void ItemWasPressed(::VROSC::ClickData* clickData);
     // private System.Int32 GetItemByPosition(UnityEngine.Vector3 worldPosition)
-    // Offset: 0x13A18FC
+    // Offset: 0x1915228
     int GetItemByPosition(::UnityEngine::Vector3 worldPosition);
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x13A1618
+    // Offset: 0x1914F44
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Boolean UIInteractable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x13A1B0C
+    // Offset: 0x1915438
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
@@ -115,7 +107,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<UIScrollableContainerInput*, creationType>()));
     }
     // protected override System.Void OnDisable()
-    // Offset: 0x13A1750
+    // Offset: 0x191507C
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::OnDisable()
     void OnDisable();

@@ -33,15 +33,7 @@ namespace System::Text {
   // [TokenAttribute] Offset: FFFFFFFF
   class EncoderFallbackBuffer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Char* charStart
     // Size: 0x8
     // Offset: 0x10
@@ -88,19 +80,19 @@ namespace System::Text {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Char* charStart
-    ::Il2CppChar*& dyn_charStart();
+    [[deprecated]] ::Il2CppChar*& dyn_charStart();
     // Get instance field reference: System.Char* charEnd
-    ::Il2CppChar*& dyn_charEnd();
+    [[deprecated]] ::Il2CppChar*& dyn_charEnd();
     // Get instance field reference: System.Text.EncoderNLS encoder
-    ::System::Text::EncoderNLS*& dyn_encoder();
+    [[deprecated]] ::System::Text::EncoderNLS*& dyn_encoder();
     // Get instance field reference: System.Boolean setEncoder
-    bool& dyn_setEncoder();
+    [[deprecated]] bool& dyn_setEncoder();
     // Get instance field reference: System.Boolean bUsedEncoder
-    bool& dyn_bUsedEncoder();
+    [[deprecated]] bool& dyn_bUsedEncoder();
     // Get instance field reference: System.Boolean bFallingBack
-    bool& dyn_bFallingBack();
+    [[deprecated]] bool& dyn_bFallingBack();
     // Get instance field reference: System.Int32 iRecursionCount
-    int& dyn_iRecursionCount();
+    [[deprecated]] int& dyn_iRecursionCount();
     // public System.Int32 get_Remaining()
     // Offset: 0xFFFFFFFFFFFFFFFF
     int get_Remaining();
@@ -117,25 +109,25 @@ namespace System::Text {
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool MovePrevious();
     // public System.Void Reset()
-    // Offset: 0xCB6A0C
+    // Offset: 0x12A2C98
     void Reset();
     // System.Void InternalReset()
-    // Offset: 0xCB6A40
+    // Offset: 0x12A2CCC
     void InternalReset();
     // System.Void InternalInitialize(System.Char* charStart, System.Char* charEnd, System.Text.EncoderNLS encoder, System.Boolean setEncoder)
-    // Offset: 0xCB6A58
+    // Offset: 0x12A2CE4
     void InternalInitialize(::Il2CppChar* charStart, ::Il2CppChar* charEnd, ::System::Text::EncoderNLS* encoder, bool setEncoder);
     // System.Char InternalGetNextChar()
-    // Offset: 0xCB6A74
+    // Offset: 0x12A2D00
     ::Il2CppChar InternalGetNextChar();
     // System.Boolean InternalFallback(System.Char ch, ref System.Char* chars)
-    // Offset: 0xCB6AB4
+    // Offset: 0x12A2D40
     bool InternalFallback(::Il2CppChar ch, ByRef<::Il2CppChar*> chars);
     // System.Void ThrowLastCharRecursive(System.Int32 charRecursive)
-    // Offset: 0xCB6C80
+    // Offset: 0x12A2F0C
     void ThrowLastCharRecursive(int charRecursive);
     // protected System.Void .ctor()
-    // Offset: 0xCB5FC0
+    // Offset: 0x12A224C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

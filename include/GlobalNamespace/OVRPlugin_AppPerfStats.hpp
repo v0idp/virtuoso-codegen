@@ -59,13 +59,13 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVRPlugin/AppPerfFrameStats[] FrameStats
-    ::ArrayW<::GlobalNamespace::OVRPlugin::AppPerfFrameStats>& dyn_FrameStats();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRPlugin::AppPerfFrameStats>& dyn_FrameStats();
     // Get instance field reference: public System.Int32 FrameStatsCount
-    int& dyn_FrameStatsCount();
+    [[deprecated]] int& dyn_FrameStatsCount();
     // Get instance field reference: public OVRPlugin/Bool AnyFrameStatsDropped
-    ::GlobalNamespace::OVRPlugin::Bool& dyn_AnyFrameStatsDropped();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Bool& dyn_AnyFrameStatsDropped();
     // Get instance field reference: public System.Single AdaptiveGpuPerformanceScale
-    float& dyn_AdaptiveGpuPerformanceScale();
+    [[deprecated]] float& dyn_AdaptiveGpuPerformanceScale();
   }; // OVRPlugin/AppPerfStats
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::AppPerfStats), 16 + sizeof(float)> __GlobalNamespace_OVRPlugin_AppPerfStatsSizeCheck;

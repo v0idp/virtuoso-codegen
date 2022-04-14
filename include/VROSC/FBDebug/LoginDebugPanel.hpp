@@ -43,15 +43,7 @@ namespace VROSC::FBDebug {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoginDebugPanel : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TMP_InputField _emailInput
     // Size: 0x8
     // Offset: 0x18
@@ -120,60 +112,60 @@ namespace VROSC::FBDebug {
     // Set static field: static private System.String _message
     static void _set__message(::StringW value);
     // Get instance field reference: private TMPro.TMP_InputField _emailInput
-    ::TMPro::TMP_InputField*& dyn__emailInput();
+    [[deprecated]] ::TMPro::TMP_InputField*& dyn__emailInput();
     // Get instance field reference: private TMPro.TMP_InputField _passwordInput
-    ::TMPro::TMP_InputField*& dyn__passwordInput();
+    [[deprecated]] ::TMPro::TMP_InputField*& dyn__passwordInput();
     // Get instance field reference: private UnityEngine.UI.Button _loginButton
-    ::UnityEngine::UI::Button*& dyn__loginButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__loginButton();
     // Get instance field reference: private UnityEngine.UI.Button _logoutButton
-    ::UnityEngine::UI::Button*& dyn__logoutButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__logoutButton();
     // Get instance field reference: private UnityEngine.UI.Button _createAccountButton
-    ::UnityEngine::UI::Button*& dyn__createAccountButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__createAccountButton();
     // Get instance field reference: private UnityEngine.UI.Button _sendVerificationEmailButton
-    ::UnityEngine::UI::Button*& dyn__sendVerificationEmailButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__sendVerificationEmailButton();
     // Get instance field reference: private UnityEngine.UI.Button _changeUserEmailButton
-    ::UnityEngine::UI::Button*& dyn__changeUserEmailButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__changeUserEmailButton();
     // Get instance field reference: private UnityEngine.UI.Button _changeUserPasswordButton
-    ::UnityEngine::UI::Button*& dyn__changeUserPasswordButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__changeUserPasswordButton();
     // Get instance field reference: private UnityEngine.UI.Button _resetPasswordButton
-    ::UnityEngine::UI::Button*& dyn__resetPasswordButton();
+    [[deprecated]] ::UnityEngine::UI::Button*& dyn__resetPasswordButton();
     // Get instance field reference: private TMPro.TextMeshProUGUI _messageText
-    ::TMPro::TextMeshProUGUI*& dyn__messageText();
+    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn__messageText();
     // private System.Void Awake()
-    // Offset: 0x138EA24
+    // Offset: 0x19AEE78
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x138ECD0
+    // Offset: 0x19AF124
     void OnDestroy();
     // private System.Void Update()
-    // Offset: 0x138EF4C
+    // Offset: 0x19AF3A0
     void Update();
     // private System.Void LoginButtonPressed()
-    // Offset: 0x138EFD0
+    // Offset: 0x19AF424
     void LoginButtonPressed();
     // private System.Void LogoutButtonPressed()
-    // Offset: 0x138F048
+    // Offset: 0x19AF49C
     void LogoutButtonPressed();
     // private System.Void CreateAccountPressed()
-    // Offset: 0x138F0A0
+    // Offset: 0x19AF4F4
     void CreateAccountPressed();
     // private System.Void SendVerificationEmailPressed()
-    // Offset: 0x138F118
+    // Offset: 0x19AF56C
     void SendVerificationEmailPressed();
     // private System.Void ChangeUserEmailPressed()
-    // Offset: 0x138F170
+    // Offset: 0x19AF5C4
     void ChangeUserEmailPressed();
     // private System.Void ChangeUserPasswordPressed()
-    // Offset: 0x138F1D8
+    // Offset: 0x19AF62C
     void ChangeUserPasswordPressed();
     // private System.Void ResetPasswordPressed()
-    // Offset: 0x138F24C
+    // Offset: 0x19AF6A0
     void ResetPasswordPressed();
     // static public System.Void AddMessage(System.String message, System.Boolean clear)
-    // Offset: 0x138F2B4
+    // Offset: 0x19AF708
     static void AddMessage(::StringW message, bool clear);
     // public System.Void .ctor()
-    // Offset: 0x138F3F4
+    // Offset: 0x19AF848
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -186,7 +178,7 @@ namespace VROSC::FBDebug {
       return THROW_UNLESS((::il2cpp_utils::New<LoginDebugPanel*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x138F3FC
+    // Offset: 0x19AF850
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

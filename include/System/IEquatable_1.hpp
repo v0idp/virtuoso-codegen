@@ -29,7 +29,7 @@ namespace System {
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool Equals(T other) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::IEquatable_1::Equals");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "Equals", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(other)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::IEquatable_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(this, ___internal__method, other);
     }
   }; // System.IEquatable`1

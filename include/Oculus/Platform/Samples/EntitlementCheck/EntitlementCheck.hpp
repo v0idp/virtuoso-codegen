@@ -40,15 +40,7 @@ namespace Oculus::Platform::Samples::EntitlementCheck {
   // [TokenAttribute] Offset: FFFFFFFF
   class EntitlementCheck : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean exitAppOnFailure
     // Size: 0x1
     // Offset: 0x18
@@ -67,30 +59,30 @@ namespace Oculus::Platform::Samples::EntitlementCheck {
     // Set static field: static private System.Action UserPassedEntitlementCheck
     static void _set_UserPassedEntitlementCheck(::System::Action* value);
     // Get instance field reference: public System.Boolean exitAppOnFailure
-    bool& dyn_exitAppOnFailure();
+    [[deprecated]] bool& dyn_exitAppOnFailure();
     // static public System.Void add_UserFailedEntitlementCheck(System.Action value)
-    // Offset: 0x7E7A94
+    // Offset: 0x92DE74
     static void add_UserFailedEntitlementCheck(::System::Action* value);
     // static public System.Void remove_UserFailedEntitlementCheck(System.Action value)
-    // Offset: 0x7E7B50
+    // Offset: 0x92DF30
     static void remove_UserFailedEntitlementCheck(::System::Action* value);
     // static public System.Void add_UserPassedEntitlementCheck(System.Action value)
-    // Offset: 0x7E7C0C
+    // Offset: 0x92DFEC
     static void add_UserPassedEntitlementCheck(::System::Action* value);
     // static public System.Void remove_UserPassedEntitlementCheck(System.Action value)
-    // Offset: 0x7E7CCC
+    // Offset: 0x92E0AC
     static void remove_UserPassedEntitlementCheck(::System::Action* value);
     // private System.Void Start()
-    // Offset: 0x7E7D8C
+    // Offset: 0x92E16C
     void Start();
     // private System.Void EntitlementCheckCallback(Oculus.Platform.Message msg)
-    // Offset: 0x7E8230
+    // Offset: 0x92E610
     void EntitlementCheckCallback(::Oculus::Platform::Message* msg);
     // private System.Void HandleEntitlementCheckResult(System.Boolean result)
-    // Offset: 0x7E7F54
+    // Offset: 0x92E334
     void HandleEntitlementCheckResult(bool result);
     // public System.Void .ctor()
-    // Offset: 0x7E826C
+    // Offset: 0x92E64C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -42,16 +42,8 @@ namespace UnityEngine::Rendering {
   // [TokenAttribute] Offset: FFFFFFFF
   class RenderPipeline : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x56C0F8
+    // [DebuggerBrowsableAttribute] Offset: 0x6662DC
     // private System.Boolean <disposed>k__BackingField
     // Size: 0x1
     // Offset: 0x10
@@ -64,30 +56,30 @@ namespace UnityEngine::Rendering {
       return disposed;
     }
     // Get instance field reference: private System.Boolean <disposed>k__BackingField
-    bool& dyn_$disposed$k__BackingField();
+    [[deprecated]] bool& dyn_$disposed$k__BackingField();
     // public System.Boolean get_disposed()
-    // Offset: 0x9D7214
+    // Offset: 0xBCBFBC
     bool get_disposed();
     // private System.Void set_disposed(System.Boolean value)
-    // Offset: 0x9D721C
+    // Offset: 0xBCBFC4
     void set_disposed(bool value);
     // protected System.Void Render(UnityEngine.Rendering.ScriptableRenderContext context, UnityEngine.Camera[] cameras)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Render(::UnityEngine::Rendering::ScriptableRenderContext context, ::ArrayW<::UnityEngine::Camera*> cameras);
     // protected System.Void ProcessRenderRequests(UnityEngine.Rendering.ScriptableRenderContext context, UnityEngine.Camera camera, System.Collections.Generic.List`1<UnityEngine.Camera/UnityEngine.RenderRequest> renderRequests)
-    // Offset: 0x9D70E8
+    // Offset: 0xBCBE90
     void ProcessRenderRequests(::UnityEngine::Rendering::ScriptableRenderContext context, ::UnityEngine::Camera* camera, ::System::Collections::Generic::List_1<::UnityEngine::Camera::RenderRequest>* renderRequests);
     // System.Void InternalRender(UnityEngine.Rendering.ScriptableRenderContext context, UnityEngine.Camera[] cameras)
-    // Offset: 0x9D70EC
+    // Offset: 0xBCBE94
     void InternalRender(::UnityEngine::Rendering::ScriptableRenderContext context, ::ArrayW<::UnityEngine::Camera*> cameras);
     // System.Void InternalRenderWithRequests(UnityEngine.Rendering.ScriptableRenderContext context, UnityEngine.Camera[] cameras, System.Collections.Generic.List`1<UnityEngine.Camera/UnityEngine.RenderRequest> renderRequests)
-    // Offset: 0x9D7168
+    // Offset: 0xBCBF10
     void InternalRenderWithRequests(::UnityEngine::Rendering::ScriptableRenderContext context, ::ArrayW<::UnityEngine::Camera*> cameras, ::System::Collections::Generic::List_1<::UnityEngine::Camera::RenderRequest>* renderRequests);
     // System.Void Dispose()
-    // Offset: 0x9D7228
+    // Offset: 0xBCBFD0
     void Dispose();
     // protected System.Void Dispose(System.Boolean disposing)
-    // Offset: 0x9D72AC
+    // Offset: 0xBCC054
     void Dispose(bool disposing);
   }; // UnityEngine.Rendering.RenderPipeline
   #pragma pack(pop)

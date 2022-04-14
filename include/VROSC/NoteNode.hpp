@@ -30,15 +30,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteNode : public ::VROSC::IntNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Note _note
     // Size: 0x4
     // Offset: 0x30
@@ -47,15 +39,15 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Note) == 0x4);
     public:
     // Get instance field reference: private VROSC.Note _note
-    ::VROSC::Note& dyn__note();
+    [[deprecated]] ::VROSC::Note& dyn__note();
     // public VROSC.Note get_Note()
-    // Offset: 0xA15D28
+    // Offset: 0xC5A824
     ::VROSC::Note get_Note();
     // public System.Void set_Note(VROSC.Note value)
-    // Offset: 0xA15D30
+    // Offset: 0xC5A82C
     void set_Note(::VROSC::Note value);
     // public System.Void .ctor()
-    // Offset: 0xA15D88
+    // Offset: 0xC5A884
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -70,12 +62,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NoteNode*, creationType>()));
     }
     // protected override System.Void OnValidate()
-    // Offset: 0xA15D3C
+    // Offset: 0xC5A838
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::OnValidate()
     void OnValidate();
     // protected override System.Int32 SetValueInRange(System.Int32 value)
-    // Offset: 0xA15D60
+    // Offset: 0xC5A85C
     // Implemented from: VROSC.IntNode
     // Base method: System.Int32 IntNode::SetValueInRange(System.Int32 value)
     int SetValueInRange(int value);

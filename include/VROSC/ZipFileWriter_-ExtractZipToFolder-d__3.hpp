@@ -98,26 +98,26 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.String destination
-    ::StringW& dyn_destination();
+    [[deprecated]] ::StringW& dyn_destination();
     // Get instance field reference: public VROSC.ZipFileWriter <>4__this
-    ::VROSC::ZipFileWriter*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::ZipFileWriter*& dyn_$$4__this();
     // Get instance field reference: public System.Action successCallback
-    ::System::Action*& dyn_successCallback();
+    [[deprecated]] ::System::Action*& dyn_successCallback();
     // Get instance field reference: public System.Action`1<VROSC.Error> failureCallback
-    ::System::Action_1<::VROSC::Error>*& dyn_failureCallback();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_failureCallback();
     // Get instance field reference: public System.String origin
-    ::StringW& dyn_origin();
+    [[deprecated]] ::StringW& dyn_origin();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x1418A54
+    // Offset: 0xE8ACD4
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x1418D44
+    // Offset: 0xE8AFC4
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.ZipFileWriter/VROSC.<ExtractZipToFolder>d__3
   // WARNING Not writing size check since size may be invalid!

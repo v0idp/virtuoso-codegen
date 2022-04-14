@@ -56,15 +56,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarRenderComponent : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean firstSkinnedUpdate
     // Size: 0x1
     // Offset: 0x18
@@ -95,27 +87,27 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean firstSkinnedUpdate
-    bool& dyn_firstSkinnedUpdate();
+    [[deprecated]] bool& dyn_firstSkinnedUpdate();
     // Get instance field reference: public UnityEngine.SkinnedMeshRenderer mesh
-    ::UnityEngine::SkinnedMeshRenderer*& dyn_mesh();
+    [[deprecated]] ::UnityEngine::SkinnedMeshRenderer*& dyn_mesh();
     // Get instance field reference: public UnityEngine.Transform[] bones
-    ::ArrayW<::UnityEngine::Transform*>& dyn_bones();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_bones();
     // Get instance field reference: private System.Boolean isBodyComponent
-    bool& dyn_isBodyComponent();
+    [[deprecated]] bool& dyn_isBodyComponent();
     // protected System.Void UpdateActive(OvrAvatar avatar, ovrAvatarVisibilityFlags mask)
-    // Offset: 0x8F003C
+    // Offset: 0xF907E4
     void UpdateActive(::GlobalNamespace::OvrAvatar* avatar, ::GlobalNamespace::ovrAvatarVisibilityFlags mask);
     // protected UnityEngine.SkinnedMeshRenderer CreateSkinnedMesh(System.UInt64 assetID, ovrAvatarVisibilityFlags visibilityMask, System.Int32 thirdPersonLayer, System.Int32 firstPersonLayer)
-    // Offset: 0x8F0120
+    // Offset: 0xF908C8
     ::UnityEngine::SkinnedMeshRenderer* CreateSkinnedMesh(uint64_t assetID, ::GlobalNamespace::ovrAvatarVisibilityFlags visibilityMask, int thirdPersonLayer, int firstPersonLayer);
     // protected System.Void UpdateSkinnedMesh(OvrAvatar avatar, UnityEngine.Transform[] bones, ovrAvatarTransform localTransform, ovrAvatarVisibilityFlags visibilityMask, System.IntPtr renderPart)
-    // Offset: 0x8F0568
+    // Offset: 0xF90ABC
     void UpdateSkinnedMesh(::GlobalNamespace::OvrAvatar* avatar, ::ArrayW<::UnityEngine::Transform*> bones, ::GlobalNamespace::ovrAvatarTransform localTransform, ::GlobalNamespace::ovrAvatarVisibilityFlags visibilityMask, ::System::IntPtr renderPart);
     // protected UnityEngine.Material CreateAvatarMaterial(System.String name, UnityEngine.Shader shader)
-    // Offset: 0x8EF434
+    // Offset: 0xF8FC04
     ::UnityEngine::Material* CreateAvatarMaterial(::StringW name, ::UnityEngine::Shader* shader);
     // public System.Void .ctor()
-    // Offset: 0x8EFB80
+    // Offset: 0xF90348
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

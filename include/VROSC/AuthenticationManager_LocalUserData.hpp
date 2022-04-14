@@ -26,15 +26,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AuthenticationManager::LocalUserData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String Email
     // Size: 0x8
     // Offset: 0x10
@@ -67,20 +59,20 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String Email
-    ::StringW& dyn_Email();
+    [[deprecated]] ::StringW& dyn_Email();
     // Get instance field reference: public System.String Password
-    ::StringW& dyn_Password();
+    [[deprecated]] ::StringW& dyn_Password();
     // Get instance field reference: public System.DateTime LastLoginDate
-    ::System::DateTime& dyn_LastLoginDate();
+    [[deprecated]] ::System::DateTime& dyn_LastLoginDate();
     // Get instance field reference: public System.Boolean RememberMe
-    bool& dyn_RememberMe();
+    [[deprecated]] bool& dyn_RememberMe();
     // Get instance field reference: public System.Boolean SentVerificationEmail
-    bool& dyn_SentVerificationEmail();
+    [[deprecated]] bool& dyn_SentVerificationEmail();
     // public System.Boolean get_HasData()
-    // Offset: 0x135B5C4
+    // Offset: 0x957B2C
     bool get_HasData();
     // public System.Void .ctor()
-    // Offset: 0x135B5E8
+    // Offset: 0x957B50
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

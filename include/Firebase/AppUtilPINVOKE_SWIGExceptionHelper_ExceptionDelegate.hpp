@@ -36,20 +36,20 @@ namespace Firebase {
   class AppUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x129D760
+    // Offset: 0x188B648
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AppUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::AppUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AppUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.String message)
-    // Offset: 0x129F03C
+    // Offset: 0x188C9DC
     void Invoke(::StringW message);
     // public System.IAsyncResult BeginInvoke(System.String message, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x129F3B0
+    // Offset: 0x188CD50
     ::System::IAsyncResult* BeginInvoke(::StringW message, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x129F3D4
+    // Offset: 0x188CD74
     void EndInvoke(::System::IAsyncResult* result);
   }; // Firebase.AppUtilPINVOKE/Firebase.SWIGExceptionHelper/Firebase.ExceptionDelegate
   #pragma pack(pop)

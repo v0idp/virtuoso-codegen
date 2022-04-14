@@ -37,15 +37,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x49 to desired offset: 0x4C
     char ___base_padding[0x3] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _amount
     // Size: 0x4
     // Offset: 0x4C
@@ -54,9 +46,9 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 _amount
-    int& dyn__amount();
+    [[deprecated]] int& dyn__amount();
     // public System.Void .ctor()
-    // Offset: 0x130A960
+    // Offset: 0x8E3B30
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -72,7 +64,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<Decrement*, creationType>()));
     }
     // protected override System.Void SetValueBySignal(VROSC.Signal signal)
-    // Offset: 0x130A934
+    // Offset: 0x8E3B04
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::SetValueBySignal(VROSC.Signal signal)
     void SetValueBySignal(::VROSC::Signal* signal);

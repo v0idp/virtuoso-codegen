@@ -46,15 +46,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoardNoteHintBehaviour : public ::UnityEngine::Playables::PlayableBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Renderer _renderer
     // Size: 0x8
     // Offset: 0x10
@@ -67,21 +59,21 @@ namespace VROSC {
     ::UnityEngine::MaterialPropertyBlock* materialBlock;
     // Field size check
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
-    // [RangeAttribute] Offset: 0x673828
+    // [RangeAttribute] Offset: 0x789B9C
     // public System.Single Playing
     // Size: 0x4
     // Offset: 0x20
     float Playing;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [ColorUsageAttribute] Offset: 0x673840
+    // [ColorUsageAttribute] Offset: 0x789BB4
     // public UnityEngine.Color UnPlayedColor
     // Size: 0x10
     // Offset: 0x24
     ::UnityEngine::Color UnPlayedColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x673858
+    // [ColorUsageAttribute] Offset: 0x789BCC
     // public UnityEngine.Color PlayedColor
     // Size: 0x10
     // Offset: 0x34
@@ -90,23 +82,23 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // Get instance field reference: public System.Single Playing
-    float& dyn_Playing();
+    [[deprecated]] float& dyn_Playing();
     // Get instance field reference: public UnityEngine.Color UnPlayedColor
-    ::UnityEngine::Color& dyn_UnPlayedColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_UnPlayedColor();
     // Get instance field reference: public UnityEngine.Color PlayedColor
-    ::UnityEngine::Color& dyn_PlayedColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_PlayedColor();
     // public System.Void Setup(UnityEngine.Renderer renderer)
-    // Offset: 0xA132C4
+    // Offset: 0xC565B0
     void Setup(::UnityEngine::Renderer* renderer);
     // private System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0xA1333C
+    // Offset: 0xC56628
     void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0xA1342C
+    // Offset: 0xC56718
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -116,7 +108,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteHintBehaviour*, creationType>()));
     }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
-    // Offset: 0xA132F4
+    // Offset: 0xC565E0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
     // Base method: System.Void PlayableBehaviour::ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     void ProcessFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info, ::Il2CppObject* playerData);

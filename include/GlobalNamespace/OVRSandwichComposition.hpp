@@ -27,7 +27,7 @@ namespace GlobalNamespace {
   class OVRSandwichComposition : public ::Il2CppObject {
     public:
     // public System.Void .ctor()
-    // Offset: 0xBAEA6C
+    // Offset: 0xE7A29C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

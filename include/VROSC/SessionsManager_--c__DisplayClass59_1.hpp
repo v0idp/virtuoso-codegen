@@ -24,15 +24,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionsManager::$$c__DisplayClass59_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean isOgg
     // Size: 0x1
     // Offset: 0x10
@@ -49,14 +41,14 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SessionsManager::$$c__DisplayClass59_0*) == 0x8);
     public:
     // Get instance field reference: public System.Boolean isOgg
-    bool& dyn_isOgg();
+    [[deprecated]] bool& dyn_isOgg();
     // Get instance field reference: public VROSC.SessionsManager/VROSC.<>c__DisplayClass59_0 CS$<>8__locals1
-    ::VROSC::SessionsManager::$$c__DisplayClass59_0*& dyn_CS$$$8__locals1();
+    [[deprecated]] ::VROSC::SessionsManager::$$c__DisplayClass59_0*& dyn_CS$$$8__locals1();
     // System.Void <DeleteSession>b__0()
-    // Offset: 0x134B320
+    // Offset: 0x8D62C0
     void $DeleteSession$b__0();
     // public System.Void .ctor()
-    // Offset: 0x134B318
+    // Offset: 0x8D62B8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

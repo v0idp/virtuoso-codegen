@@ -47,15 +47,7 @@ namespace VROSC::AudioReactive {
     public:
     // Nested type: ::VROSC::AudioReactive::GlobalColorShiftEffect::$SpecificFlow$d__8
     class $SpecificFlow$d__8;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.GlobalColorEffectData _data
     // Size: 0x8
     // Offset: 0x30
@@ -76,19 +68,19 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData _data
-    ::VROSC::AudioReactive::GlobalColorEffectData*& dyn__data();
+    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData*& dyn__data();
     // Get instance field reference: private VROSC.AudioReactive.GlobalShiftColorData[] _shiftColorDatas
-    ::ArrayW<::VROSC::AudioReactive::GlobalShiftColorData*>& dyn__shiftColorDatas();
+    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::GlobalShiftColorData*>& dyn__shiftColorDatas();
     // Get instance field reference: private System.Int32 _currentColorSet
-    int& dyn__currentColorSet();
+    [[deprecated]] int& dyn__currentColorSet();
     // public VROSC.AudioReactive.GlobalColorEffectData get_Data()
-    // Offset: 0x891FB8
+    // Offset: 0x19A4438
     ::VROSC::AudioReactive::GlobalColorEffectData* get_Data();
     // public System.Void SetNewGlobalColors()
-    // Offset: 0x89218C
+    // Offset: 0x19A460C
     void SetNewGlobalColors();
     // public System.Void .ctor()
-    // Offset: 0x892538
+    // Offset: 0x19A49B8
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
@@ -99,17 +91,17 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<GlobalColorShiftEffect*, creationType>()));
     }
     // public override System.Void Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
-    // Offset: 0x891FC0
+    // Offset: 0x19A4440
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Setup(VROSC.AudioReactive.AudioReactiveBehaviour behaviour)
     void Setup(::VROSC::AudioReactive::AudioReactiveBehaviour* behaviour);
     // public override System.Void Update()
-    // Offset: 0x892360
+    // Offset: 0x19A47E0
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::Update()
     void Update();
     // protected override System.Collections.IEnumerator SpecificFlow()
-    // Offset: 0x8924CC
+    // Offset: 0x19A494C
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Collections.IEnumerator CoroutineDrivenEffect::SpecificFlow()
     ::System::Collections::IEnumerator* SpecificFlow();

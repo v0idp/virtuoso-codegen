@@ -56,15 +56,7 @@ namespace System::Net {
     public:
     // Writing base type padding for base size: 0x1A to desired offset: 0x20
     char ___base_padding[0x6] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.IO.Stream stream
     // Size: 0x8
     // Offset: 0x20
@@ -143,86 +135,91 @@ namespace System::Net {
     static_assert(sizeof(int64_t) == 0x8);
     public:
     // Get instance field reference: private System.IO.Stream stream
-    ::System::IO::Stream*& dyn_stream();
+    [[deprecated]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private System.Uri uri
-    ::System::Uri*& dyn_uri();
+    [[deprecated]] ::System::Uri*& dyn_uri();
     // Get instance field reference: private System.Net.FtpStatusCode statusCode
-    ::System::Net::FtpStatusCode& dyn_statusCode();
+    [[deprecated]] ::System::Net::FtpStatusCode& dyn_statusCode();
     // Get instance field reference: private System.DateTime lastModified
-    ::System::DateTime& dyn_lastModified();
+    [[deprecated]] ::System::DateTime& dyn_lastModified();
     // Get instance field reference: private System.String bannerMessage
-    ::StringW& dyn_bannerMessage();
+    [[deprecated]] ::StringW& dyn_bannerMessage();
     // Get instance field reference: private System.String welcomeMessage
-    ::StringW& dyn_welcomeMessage();
+    [[deprecated]] ::StringW& dyn_welcomeMessage();
     // Get instance field reference: private System.String exitMessage
-    ::StringW& dyn_exitMessage();
+    [[deprecated]] ::StringW& dyn_exitMessage();
     // Get instance field reference: private System.String statusDescription
-    ::StringW& dyn_statusDescription();
+    [[deprecated]] ::StringW& dyn_statusDescription();
     // Get instance field reference: private System.String method
-    ::StringW& dyn_method();
+    [[deprecated]] ::StringW& dyn_method();
     // Get instance field reference: private System.Boolean disposed
-    bool& dyn_disposed();
+    [[deprecated]] bool& dyn_disposed();
     // Get instance field reference: private System.Net.FtpWebRequest request
-    ::System::Net::FtpWebRequest*& dyn_request();
+    [[deprecated]] ::System::Net::FtpWebRequest*& dyn_request();
     // Get instance field reference: System.Int64 contentLength
-    int64_t& dyn_contentLength();
+    [[deprecated]] int64_t& dyn_contentLength();
     // System.Void set_LastModified(System.DateTime value)
-    // Offset: 0xD896E8
+    // Offset: 0xF0ACC8
     void set_LastModified(::System::DateTime value);
     // System.Void set_BannerMessage(System.String value)
-    // Offset: 0xD896F0
+    // Offset: 0xF0ACD0
     void set_BannerMessage(::StringW value);
     // System.Void set_WelcomeMessage(System.String value)
-    // Offset: 0xD896F8
+    // Offset: 0xF0ACD8
     void set_WelcomeMessage(::StringW value);
     // System.Void set_StatusCode(System.Net.FtpStatusCode value)
-    // Offset: 0xD89700
+    // Offset: 0xF0ACE0
     void set_StatusCode(::System::Net::FtpStatusCode value);
     // System.Void set_Stream(System.IO.Stream value)
-    // Offset: 0xD89910
+    // Offset: 0xF0AEF0
     void set_Stream(::System::IO::Stream* value);
     // System.Void .ctor(System.Net.FtpWebRequest request, System.Uri uri, System.String method, System.Boolean keepAlive)
-    // Offset: 0xD8581C
+    // Offset: 0xF07030
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FtpWebResponse* New_ctor(::System::Net::FtpWebRequest* request, ::System::Uri* uri, ::StringW method, bool keepAlive) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::FtpWebResponse::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FtpWebResponse*, creationType>(request, uri, method, keepAlive)));
     }
     // System.Void .ctor(System.Net.FtpWebRequest request, System.Uri uri, System.String method, System.Net.FtpStatusCode statusCode, System.String statusDescription)
-    // Offset: 0xD84AFC
+    // Offset: 0xF06310
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FtpWebResponse* New_ctor(::System::Net::FtpWebRequest* request, ::System::Uri* uri, ::StringW method, ::System::Net::FtpStatusCode statusCode, ::StringW statusDescription) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::FtpWebResponse::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FtpWebResponse*, creationType>(request, uri, method, statusCode, statusDescription)));
     }
     // System.Void .ctor(System.Net.FtpWebRequest request, System.Uri uri, System.String method, System.Net.FtpStatus status)
-    // Offset: 0xD88A78
+    // Offset: 0xF0A04C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FtpWebResponse* New_ctor(::System::Net::FtpWebRequest* request, ::System::Uri* uri, ::StringW method, ::System::Net::FtpStatus* status) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::FtpWebResponse::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FtpWebResponse*, creationType>(request, uri, method, status)));
     }
     // System.Void UpdateStatus(System.Net.FtpStatus status)
-    // Offset: 0xD85628
+    // Offset: 0xF06E3C
     void UpdateStatus(::System::Net::FtpStatus* status);
     // private System.Void CheckDisposed()
-    // Offset: 0xD89898
+    // Offset: 0xF0AE78
     void CheckDisposed();
     // System.Boolean IsFinal()
-    // Offset: 0xD86134
+    // Offset: 0xF07950
     bool IsFinal();
     // public override System.Net.WebHeaderCollection get_Headers()
-    // Offset: 0xD89690
+    // Offset: 0xF0AC68
     // Implemented from: System.Net.WebResponse
     // Base method: System.Net.WebHeaderCollection WebResponse::get_Headers()
     ::System::Net::WebHeaderCollection* get_Headers();
+    // public override System.Uri get_ResponseUri()
+    // Offset: 0xF0ACC0
+    // Implemented from: System.Net.WebResponse
+    // Base method: System.Uri WebResponse::get_ResponseUri()
+    ::System::Uri* get_ResponseUri();
     // public override System.Void Close()
-    // Offset: 0xD89708
+    // Offset: 0xF0ACE8
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::Close()
     void Close();
     // public override System.IO.Stream GetResponseStream()
-    // Offset: 0xD897C8
+    // Offset: 0xF0ADA8
     // Implemented from: System.Net.WebResponse
     // Base method: System.IO.Stream WebResponse::GetResponseStream()
     ::System::IO::Stream* GetResponseStream();
@@ -320,6 +317,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Net::WebHeaderCollection* (System::Net::FtpWebResponse::*)()>(&System::Net::FtpWebResponse::get_Headers)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::Net::FtpWebResponse*), "get_Headers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::Net::FtpWebResponse::get_ResponseUri
+// Il2CppName: get_ResponseUri
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Uri* (System::Net::FtpWebResponse::*)()>(&System::Net::FtpWebResponse::get_ResponseUri)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Net::FtpWebResponse*), "get_ResponseUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: System::Net::FtpWebResponse::Close

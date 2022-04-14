@@ -13,8 +13,8 @@
 #include "beatsaber-hook/shared/utils/utils.h"
 // Completed includes
 // Begin forward declares
-// Forward declaring namespace: GlobalNamespace
-namespace GlobalNamespace {
+// Forward declaring namespace: VROSC
+namespace VROSC {
   // Forward declaring type: Environment
   class Environment;
 }
@@ -35,34 +35,26 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PassthroughEnabler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // private Environment _environment
+    // private VROSC.Environment _environment
     // Size: 0x8
     // Offset: 0x18
-    ::GlobalNamespace::Environment* environment;
+    ::VROSC::Environment* environment;
     // Field size check
-    static_assert(sizeof(::GlobalNamespace::Environment*) == 0x8);
+    static_assert(sizeof(::VROSC::Environment*) == 0x8);
     public:
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
-    // Get instance field reference: private Environment _environment
-    ::GlobalNamespace::Environment*& dyn__environment();
+    // Get instance field reference: private VROSC.Environment _environment
+    [[deprecated]] ::VROSC::Environment*& dyn__environment();
     // protected System.Void Awake()
-    // Offset: 0x8F8728
+    // Offset: 0xADCEC0
     void Awake();
-    // private System.Void NewEnvironmentSelected(Environment environment)
-    // Offset: 0x8F8838
-    void NewEnvironmentSelected(::GlobalNamespace::Environment* environment);
+    // private System.Void NewEnvironmentSelected(VROSC.Environment environment)
+    // Offset: 0xADCFD0
+    void NewEnvironmentSelected(::VROSC::Environment* environment);
     // public System.Void .ctor()
-    // Offset: 0x8F8A7C
+    // Offset: 0xADD214
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -76,7 +68,7 @@ namespace VROSC {
     }
   }; // VROSC.PassthroughEnabler
   #pragma pack(pop)
-  static check_size<sizeof(PassthroughEnabler), 24 + sizeof(::GlobalNamespace::Environment*)> __VROSC_PassthroughEnablerSizeCheck;
+  static check_size<sizeof(PassthroughEnabler), 24 + sizeof(::VROSC::Environment*)> __VROSC_PassthroughEnablerSizeCheck;
   static_assert(sizeof(PassthroughEnabler) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
@@ -91,9 +83,9 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 // Writing MetadataGetter for method: VROSC::PassthroughEnabler::NewEnvironmentSelected
 // Il2CppName: NewEnvironmentSelected
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::PassthroughEnabler::*)(::GlobalNamespace::Environment*)>(&VROSC::PassthroughEnabler::NewEnvironmentSelected)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::PassthroughEnabler::*)(::VROSC::Environment*)>(&VROSC::PassthroughEnabler::NewEnvironmentSelected)> {
   static const MethodInfo* get() {
-    static auto* environment = &::il2cpp_utils::GetClassFromName("", "Environment")->byval_arg;
+    static auto* environment = &::il2cpp_utils::GetClassFromName("VROSC", "Environment")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::PassthroughEnabler*), "NewEnvironmentSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{environment});
   }
 };

@@ -62,15 +62,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MalletManager : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.MalletSettings _malletSettings
     // Size: 0x8
     // Offset: 0x18
@@ -163,110 +155,110 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.MalletSettings _malletSettings
-    ::VROSC::MalletSettings*& dyn__malletSettings();
+    [[deprecated]] ::VROSC::MalletSettings*& dyn__malletSettings();
     // Get instance field reference: private VROSC.Mallet _leftMallet
-    ::VROSC::Mallet*& dyn__leftMallet();
+    [[deprecated]] ::VROSC::Mallet*& dyn__leftMallet();
     // Get instance field reference: private VROSC.Mallet _rightMallet
-    ::VROSC::Mallet*& dyn__rightMallet();
+    [[deprecated]] ::VROSC::Mallet*& dyn__rightMallet();
     // Get instance field reference: private System.Single <CurrentAngle>k__BackingField
-    float& dyn_$CurrentAngle$k__BackingField();
+    [[deprecated]] float& dyn_$CurrentAngle$k__BackingField();
     // Get instance field reference: private System.Single <CurrentLength>k__BackingField
-    float& dyn_$CurrentLength$k__BackingField();
+    [[deprecated]] float& dyn_$CurrentLength$k__BackingField();
     // Get instance field reference: private System.Boolean <AutoDimLaserWithMallets>k__BackingField
-    bool& dyn_$AutoDimLaserWithMallets$k__BackingField();
+    [[deprecated]] bool& dyn_$AutoDimLaserWithMallets$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Single> OnCurrentAngleChanged
-    ::System::Action_1<float>*& dyn_OnCurrentAngleChanged();
+    [[deprecated]] ::System::Action_1<float>*& dyn_OnCurrentAngleChanged();
     // Get instance field reference: public System.Action`1<System.Single> OnCurrentLengthChanged
-    ::System::Action_1<float>*& dyn_OnCurrentLengthChanged();
+    [[deprecated]] ::System::Action_1<float>*& dyn_OnCurrentLengthChanged();
     // Get instance field reference: private System.Boolean _isLeftMalletToggled
-    bool& dyn__isLeftMalletToggled();
+    [[deprecated]] bool& dyn__isLeftMalletToggled();
     // Get instance field reference: private System.Boolean _isRightMalletToggled
-    bool& dyn__isRightMalletToggled();
+    [[deprecated]] bool& dyn__isRightMalletToggled();
     // Get instance field reference: private System.Boolean <IsLeftMalletGrabbed>k__BackingField
-    bool& dyn_$IsLeftMalletGrabbed$k__BackingField();
+    [[deprecated]] bool& dyn_$IsLeftMalletGrabbed$k__BackingField();
     // Get instance field reference: private System.Boolean <IsRightMalletGrabbed>k__BackingField
-    bool& dyn_$IsRightMalletGrabbed$k__BackingField();
+    [[deprecated]] bool& dyn_$IsRightMalletGrabbed$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> _leftDisableSources
-    ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__leftDisableSources();
+    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__leftDisableSources();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> _rightDisableSources
-    ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__rightDisableSources();
+    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__rightDisableSources();
     // public System.Single get_CurrentAngle()
-    // Offset: 0x8ABB20
+    // Offset: 0x197DF14
     float get_CurrentAngle();
     // private System.Void set_CurrentAngle(System.Single value)
-    // Offset: 0x8ABB18
+    // Offset: 0x197DF0C
     void set_CurrentAngle(float value);
     // public System.Single get_CurrentLength()
-    // Offset: 0x8ABB30
+    // Offset: 0x197DF24
     float get_CurrentLength();
     // private System.Void set_CurrentLength(System.Single value)
-    // Offset: 0x8ABB28
+    // Offset: 0x197DF1C
     void set_CurrentLength(float value);
     // public System.Boolean get_AutoDimLaserWithMallets()
-    // Offset: 0x8ABB44
+    // Offset: 0x197DF38
     bool get_AutoDimLaserWithMallets();
     // private System.Void set_AutoDimLaserWithMallets(System.Boolean value)
-    // Offset: 0x8ABB38
+    // Offset: 0x197DF2C
     void set_AutoDimLaserWithMallets(bool value);
     // public VROSC.MinMaxFloat get_MinMaxMalletAngle()
-    // Offset: 0x8ABB4C
+    // Offset: 0x197DF40
     ::VROSC::MinMaxFloat* get_MinMaxMalletAngle();
     // public VROSC.MinMaxFloat get_MinMaxMalletLength()
-    // Offset: 0x8ABB68
+    // Offset: 0x197DF5C
     ::VROSC::MinMaxFloat* get_MinMaxMalletLength();
     // public UnityEngine.Color get_DefaultColor()
-    // Offset: 0x8AB310
+    // Offset: 0x197D7AC
     ::UnityEngine::Color get_DefaultColor();
     // public System.Boolean get_IsLeftMalletGrabbed()
-    // Offset: 0x8ABB84
+    // Offset: 0x197DF78
     bool get_IsLeftMalletGrabbed();
     // private System.Void set_IsLeftMalletGrabbed(System.Boolean value)
-    // Offset: 0x8ABB8C
+    // Offset: 0x197DF80
     void set_IsLeftMalletGrabbed(bool value);
     // public System.Boolean get_IsRightMalletGrabbed()
-    // Offset: 0x8ABB98
+    // Offset: 0x197DF8C
     bool get_IsRightMalletGrabbed();
     // private System.Void set_IsRightMalletGrabbed(System.Boolean value)
-    // Offset: 0x8ABBA0
+    // Offset: 0x197DF94
     void set_IsRightMalletGrabbed(bool value);
     // public System.Void Setup()
-    // Offset: 0x8ABBAC
+    // Offset: 0x197DFA0
     void Setup();
     // private System.Void OnDestroy()
-    // Offset: 0x8ABE3C
+    // Offset: 0x197E230
     void OnDestroy();
     // public System.Void ToggleMallet(VROSC.ClickData clickData, System.Boolean toggle)
-    // Offset: 0x8ABF28
+    // Offset: 0x197E31C
     void ToggleMallet(::VROSC::ClickData* clickData, bool toggle);
     // public System.Void GrabMallet(System.Boolean isLeftHand, System.Boolean grab)
-    // Offset: 0x8ABFF8
+    // Offset: 0x197E3EC
     void GrabMallet(bool isLeftHand, bool grab);
     // public System.Void SetMalletLength(System.Single length)
-    // Offset: 0x8AC100
+    // Offset: 0x197E4F4
     void SetMalletLength(float length);
     // System.Void SetLaserAutoDimWhenHoldingMallets(System.Boolean active)
-    // Offset: 0x8AC208
+    // Offset: 0x197E5F4
     void SetLaserAutoDimWhenHoldingMallets(bool active);
     // public System.Void SetDrumpadsActive(System.Boolean isActive)
-    // Offset: 0x8ABDF8
+    // Offset: 0x197E1EC
     void SetDrumpadsActive(bool isActive);
     // public System.Void DisableMallets(System.Boolean disable, VROSC.HandType handType, System.Object source)
-    // Offset: 0x8AC2E8
+    // Offset: 0x197E6D4
     void DisableMallets(bool disable, ::VROSC::HandType handType, ::Il2CppObject* source);
     // private System.Void DisableMallet(System.Boolean disable, System.Object source, System.Boolean left)
-    // Offset: 0x8AC37C
+    // Offset: 0x197E768
     void DisableMallet(bool disable, ::Il2CppObject* source, bool left);
     // public System.Void SetMalletAngle(System.Single angle)
-    // Offset: 0x8AC494
+    // Offset: 0x197E880
     void SetMalletAngle(float angle);
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x8AC590
+    // Offset: 0x197E980
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // System.Void ResetValuesToDefault()
-    // Offset: 0x8AC650
+    // Offset: 0x197EA40
     void ResetValuesToDefault();
     // public System.Void .ctor()
-    // Offset: 0x8AC690
+    // Offset: 0x197EA80
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

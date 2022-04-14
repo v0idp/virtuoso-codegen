@@ -64,32 +64,32 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly System.Boolean <ShowPlayButton>k__BackingField
-    bool& dyn_$ShowPlayButton$k__BackingField();
+    [[deprecated]] bool& dyn_$ShowPlayButton$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <WaitingToStart>k__BackingField
-    bool& dyn_$WaitingToStart$k__BackingField();
+    [[deprecated]] bool& dyn_$WaitingToStart$k__BackingField();
     // Get instance field reference: private readonly System.Single <PlayBackProgress>k__BackingField
-    float& dyn_$PlayBackProgress$k__BackingField();
+    [[deprecated]] float& dyn_$PlayBackProgress$k__BackingField();
     // Get instance field reference: private readonly System.Single <BeginningProgress>k__BackingField
-    float& dyn_$BeginningProgress$k__BackingField();
+    [[deprecated]] float& dyn_$BeginningProgress$k__BackingField();
     // Get instance field reference: private readonly System.Single <Fade>k__BackingField
-    float& dyn_$Fade$k__BackingField();
+    [[deprecated]] float& dyn_$Fade$k__BackingField();
     // public System.Boolean get_ShowPlayButton()
-    // Offset: 0x8FD45C
+    // Offset: 0xAE1D4C
     bool get_ShowPlayButton();
     // public System.Boolean get_WaitingToStart()
-    // Offset: 0x8FD464
+    // Offset: 0xAE1D54
     bool get_WaitingToStart();
     // public System.Single get_PlayBackProgress()
-    // Offset: 0x8FD46C
+    // Offset: 0xAE1D5C
     float get_PlayBackProgress();
     // public System.Single get_BeginningProgress()
-    // Offset: 0x8FD474
+    // Offset: 0xAE1D64
     float get_BeginningProgress();
     // public System.Single get_Fade()
-    // Offset: 0x8FD47C
+    // Offset: 0xAE1D6C
     float get_Fade();
     // public System.Void .ctor(System.Boolean showPlayButton, System.Boolean waitingToStart, System.Single playBackProgress, System.Single beginProgress, System.Single fade)
-    // Offset: 0x8FD484
+    // Offset: 0xAE1D74
     // ABORTED: conflicts with another method.  PlaybackProgressUIData(bool showPlayButton, bool waitingToStart, float playBackProgress, float beginProgress, float fade);
   }; // VROSC.PlaybackProgressUIData
   #pragma pack(pop)

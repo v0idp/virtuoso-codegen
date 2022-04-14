@@ -42,15 +42,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CommunitySessionsDataModel : public ::VROSC::SessionsDataModel {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.Dictionary`2<System.String,VROSC.Session> FavoriteSessions
     // Size: 0x8
     // Offset: 0x28
@@ -63,19 +55,14 @@ namespace VROSC {
       return FavoriteSessions;
     }
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.String,VROSC.Session> FavoriteSessions
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::Session*>*& dyn_FavoriteSessions();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::Session*>*& dyn_FavoriteSessions();
     // public override System.String get_Key()
-    // Offset: 0x1336CF4
+    // Offset: 0x94B930
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.String BaseDataModel::get_Key()
     ::StringW get_Key();
-    // public override System.Int32 get_Version()
-    // Offset: 0x1336D38
-    // Implemented from: VROSC.BaseDataModel
-    // Base method: System.Int32 BaseDataModel::get_Version()
-    int get_Version();
     // public System.Void .ctor()
-    // Offset: 0x1334C70
+    // Offset: 0x9498C4
     // Implemented from: VROSC.SessionsDataModel
     // Base method: System.Void SessionsDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
@@ -97,14 +84,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (VROSC::CommunitySessionsDataModel::*)()>(&VROSC::CommunitySessionsDataModel::get_Key)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::CommunitySessionsDataModel*), "get_Key", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: VROSC::CommunitySessionsDataModel::get_Version
-// Il2CppName: get_Version
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC::CommunitySessionsDataModel::*)()>(&VROSC::CommunitySessionsDataModel::get_Version)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::CommunitySessionsDataModel*), "get_Version", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::CommunitySessionsDataModel::New_ctor

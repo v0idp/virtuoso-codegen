@@ -48,16 +48,8 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x69 to desired offset: 0x6C
     char ___base_padding[0x3] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [BitMaskAttribute] Offset: 0x66E014
+    // [BitMaskAttribute] Offset: 0x78407C
     // private VROSC.TriggerButton _reactsTo
     // Size: 0x4
     // Offset: 0x6C
@@ -86,30 +78,30 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::ClickData*>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.TriggerButton _reactsTo
-    ::VROSC::TriggerButton& dyn__reactsTo();
+    [[deprecated]] ::VROSC::TriggerButton& dyn__reactsTo();
     // Get instance field reference: private System.Boolean <IsPressed>k__BackingField
-    bool& dyn_$IsPressed$k__BackingField();
+    [[deprecated]] bool& dyn_$IsPressed$k__BackingField();
     // Get instance field reference: public System.Action`2<VROSC.ClickData,System.Boolean> OnPressed
-    ::System::Action_2<::VROSC::ClickData*, bool>*& dyn_OnPressed();
+    [[deprecated]] ::System::Action_2<::VROSC::ClickData*, bool>*& dyn_OnPressed();
     // Get instance field reference: public System.Action`1<VROSC.ClickData> OnClick
-    ::System::Action_1<::VROSC::ClickData*>*& dyn_OnClick();
+    [[deprecated]] ::System::Action_1<::VROSC::ClickData*>*& dyn_OnClick();
     // public System.Boolean get_InteractionStopsLaser()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_InteractionStopsLaser();
     // public System.Boolean get_IsPressed()
-    // Offset: 0x1330F80
+    // Offset: 0x945BBC
     bool get_IsPressed();
     // private System.Void set_IsPressed(System.Boolean value)
-    // Offset: 0x1330F74
+    // Offset: 0x945BB0
     void set_IsPressed(bool value);
     // public System.Void PressBegin(VROSC.ClickData clickData)
-    // Offset: 0x1330F88
+    // Offset: 0x945BC4
     void PressBegin(::VROSC::ClickData* clickData);
     // public System.Void PressEnd(VROSC.ClickData clickData)
-    // Offset: 0x1331070
+    // Offset: 0x945CAC
     void PressEnd(::VROSC::ClickData* clickData);
     // protected System.Void .ctor()
-    // Offset: 0x1331134
+    // Offset: 0x945D70
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

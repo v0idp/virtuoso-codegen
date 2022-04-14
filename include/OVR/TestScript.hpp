@@ -35,16 +35,8 @@ namespace OVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class TestScript : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [InspectorNoteAttribute] Offset: 0x5D545C
+    // [InspectorNoteAttribute] Offset: 0x6EE068
     // public OVR.SoundFXRef testSound1
     // Size: 0x8
     // Offset: 0x18
@@ -61,17 +53,17 @@ namespace OVR {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVR.SoundFXRef testSound1
-    ::OVR::SoundFXRef*& dyn_testSound1();
+    [[deprecated]] ::OVR::SoundFXRef*& dyn_testSound1();
     // Get instance field reference: public OVR.SoundFXRef testSound2
-    ::OVR::SoundFXRef*& dyn_testSound2();
+    [[deprecated]] ::OVR::SoundFXRef*& dyn_testSound2();
     // private System.Void Start()
-    // Offset: 0x12A7EA0
+    // Offset: 0x18A5A44
     void Start();
     // private System.Void Update()
-    // Offset: 0x12A7EA4
+    // Offset: 0x18A5A48
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x12A7F44
+    // Offset: 0x18A5AE8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

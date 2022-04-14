@@ -25,7 +25,7 @@ namespace AudioHelm {
   class Sequencer::BeatEvent : public ::UnityEngine::Events::UnityEvent_1<int> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x1349BC4
+    // Offset: 0x8D4B3C
     // Implemented from: UnityEngine.Events.UnityEvent`1
     // Base method: System.Void UnityEvent_1::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

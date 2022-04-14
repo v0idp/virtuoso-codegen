@@ -40,15 +40,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class SerObjectInfoCache : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.String fullTypeName
     // Size: 0x8
     // Offset: 0x10
@@ -89,26 +81,26 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::ArrayW<::System::Type*>) == 0x8);
     public:
     // Get instance field reference: System.String fullTypeName
-    ::StringW& dyn_fullTypeName();
+    [[deprecated]] ::StringW& dyn_fullTypeName();
     // Get instance field reference: System.String assemblyString
-    ::StringW& dyn_assemblyString();
+    [[deprecated]] ::StringW& dyn_assemblyString();
     // Get instance field reference: System.Boolean hasTypeForwardedFrom
-    bool& dyn_hasTypeForwardedFrom();
+    [[deprecated]] bool& dyn_hasTypeForwardedFrom();
     // Get instance field reference: System.Reflection.MemberInfo[] memberInfos
-    ::ArrayW<::System::Reflection::MemberInfo*>& dyn_memberInfos();
+    [[deprecated]] ::ArrayW<::System::Reflection::MemberInfo*>& dyn_memberInfos();
     // Get instance field reference: System.String[] memberNames
-    ::ArrayW<::StringW>& dyn_memberNames();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_memberNames();
     // Get instance field reference: System.Type[] memberTypes
-    ::ArrayW<::System::Type*>& dyn_memberTypes();
+    [[deprecated]] ::ArrayW<::System::Type*>& dyn_memberTypes();
     // System.Void .ctor(System.String typeName, System.String assemblyName, System.Boolean hasTypeForwardedFrom)
-    // Offset: 0xF4B5B0
+    // Offset: 0x1177F9C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SerObjectInfoCache* New_ctor(::StringW typeName, ::StringW assemblyName, bool hasTypeForwardedFrom) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SerObjectInfoCache*, creationType>(typeName, assemblyName, hasTypeForwardedFrom)));
     }
     // System.Void .ctor(System.Type type)
-    // Offset: 0xF4B5F4
+    // Offset: 0x1177FE0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SerObjectInfoCache* New_ctor(::System::Type* type) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache::.ctor");

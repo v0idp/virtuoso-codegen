@@ -122,35 +122,35 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 m_nPid
-    uint& dyn_m_nPid();
+    [[deprecated]] uint& dyn_m_nPid();
     // Get instance field reference: public System.UInt32 m_nNumFramePresents
-    uint& dyn_m_nNumFramePresents();
+    [[deprecated]] uint& dyn_m_nNumFramePresents();
     // Get instance field reference: public System.UInt32 m_nNumDroppedFrames
-    uint& dyn_m_nNumDroppedFrames();
+    [[deprecated]] uint& dyn_m_nNumDroppedFrames();
     // Get instance field reference: public System.UInt32 m_nNumReprojectedFrames
-    uint& dyn_m_nNumReprojectedFrames();
+    [[deprecated]] uint& dyn_m_nNumReprojectedFrames();
     // Get instance field reference: public System.UInt32 m_nNumFramePresentsOnStartup
-    uint& dyn_m_nNumFramePresentsOnStartup();
+    [[deprecated]] uint& dyn_m_nNumFramePresentsOnStartup();
     // Get instance field reference: public System.UInt32 m_nNumDroppedFramesOnStartup
-    uint& dyn_m_nNumDroppedFramesOnStartup();
+    [[deprecated]] uint& dyn_m_nNumDroppedFramesOnStartup();
     // Get instance field reference: public System.UInt32 m_nNumReprojectedFramesOnStartup
-    uint& dyn_m_nNumReprojectedFramesOnStartup();
+    [[deprecated]] uint& dyn_m_nNumReprojectedFramesOnStartup();
     // Get instance field reference: public System.UInt32 m_nNumLoading
-    uint& dyn_m_nNumLoading();
+    [[deprecated]] uint& dyn_m_nNumLoading();
     // Get instance field reference: public System.UInt32 m_nNumFramePresentsLoading
-    uint& dyn_m_nNumFramePresentsLoading();
+    [[deprecated]] uint& dyn_m_nNumFramePresentsLoading();
     // Get instance field reference: public System.UInt32 m_nNumDroppedFramesLoading
-    uint& dyn_m_nNumDroppedFramesLoading();
+    [[deprecated]] uint& dyn_m_nNumDroppedFramesLoading();
     // Get instance field reference: public System.UInt32 m_nNumReprojectedFramesLoading
-    uint& dyn_m_nNumReprojectedFramesLoading();
+    [[deprecated]] uint& dyn_m_nNumReprojectedFramesLoading();
     // Get instance field reference: public System.UInt32 m_nNumTimedOut
-    uint& dyn_m_nNumTimedOut();
+    [[deprecated]] uint& dyn_m_nNumTimedOut();
     // Get instance field reference: public System.UInt32 m_nNumFramePresentsTimedOut
-    uint& dyn_m_nNumFramePresentsTimedOut();
+    [[deprecated]] uint& dyn_m_nNumFramePresentsTimedOut();
     // Get instance field reference: public System.UInt32 m_nNumDroppedFramesTimedOut
-    uint& dyn_m_nNumDroppedFramesTimedOut();
+    [[deprecated]] uint& dyn_m_nNumDroppedFramesTimedOut();
     // Get instance field reference: public System.UInt32 m_nNumReprojectedFramesTimedOut
-    uint& dyn_m_nNumReprojectedFramesTimedOut();
+    [[deprecated]] uint& dyn_m_nNumReprojectedFramesTimedOut();
   }; // OVR.OpenVR.Compositor_CumulativeStats
   #pragma pack(pop)
   static check_size<sizeof(Compositor_CumulativeStats), 56 + sizeof(uint)> __OVR_OpenVR_Compositor_CumulativeStatsSizeCheck;

@@ -53,15 +53,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TapeRecorder : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TapeRecorderUI _ui
     // Size: 0x8
     // Offset: 0x18
@@ -140,102 +132,102 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.Error> OnSaveFailure
     static void _set_OnSaveFailure(::System::Action_1<::VROSC::Error>* value);
     // Get instance field reference: private VROSC.TapeRecorderUI _ui
-    ::VROSC::TapeRecorderUI*& dyn__ui();
+    [[deprecated]] ::VROSC::TapeRecorderUI*& dyn__ui();
     // Get instance field reference: private UnityEngine.AudioSource _audioSource
-    ::UnityEngine::AudioSource*& dyn__audioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__audioSource();
     // Get instance field reference: private VROSC.TapeRecorderDataController _dataController
-    ::VROSC::TapeRecorderDataController*& dyn__dataController();
+    [[deprecated]] ::VROSC::TapeRecorderDataController*& dyn__dataController();
     // Get instance field reference: private System.Double _recordingStartTime
-    double& dyn__recordingStartTime();
+    [[deprecated]] double& dyn__recordingStartTime();
     // Get instance field reference: private System.Int32 _lastFetchedRecordingIndex
-    int& dyn__lastFetchedRecordingIndex();
+    [[deprecated]] int& dyn__lastFetchedRecordingIndex();
     // Get instance field reference: private System.Boolean _recording
-    bool& dyn__recording();
+    [[deprecated]] bool& dyn__recording();
     // Get instance field reference: private System.Boolean _wasPlaying
-    bool& dyn__wasPlaying();
+    [[deprecated]] bool& dyn__wasPlaying();
     // Get instance field reference: private System.Boolean _playing
-    bool& dyn__playing();
+    [[deprecated]] bool& dyn__playing();
     // Get instance field reference: private System.Int32 _currentPlaybackPosition
-    int& dyn__currentPlaybackPosition();
+    [[deprecated]] int& dyn__currentPlaybackPosition();
     // Get instance field reference: private System.Boolean <IsSetup>k__BackingField
-    bool& dyn_$IsSetup$k__BackingField();
+    [[deprecated]] bool& dyn_$IsSetup$k__BackingField();
     // public System.Single get_MaxRecordingLengthSeconds()
-    // Offset: 0x13F8CC0
+    // Offset: 0x193AD84
     float get_MaxRecordingLengthSeconds();
     // public System.Boolean get_Recording()
-    // Offset: 0x13F8CDC
+    // Offset: 0x193ADA0
     bool get_Recording();
     // public System.Boolean get_Playing()
-    // Offset: 0x13F8CE4
+    // Offset: 0x193ADA8
     bool get_Playing();
     // public System.Boolean get_HasRecording()
-    // Offset: 0x13F8CEC
+    // Offset: 0x193ADB0
     bool get_HasRecording();
     // public System.Single get_CurrentPlaybackTimeSeconds()
-    // Offset: 0x13F8D08
+    // Offset: 0x193ADCC
     float get_CurrentPlaybackTimeSeconds();
     // public System.Single get_RecordingLengthSeconds()
-    // Offset: 0x13F8DF0
+    // Offset: 0x193AEB4
     float get_RecordingLengthSeconds();
     // public System.Boolean get_IsSetup()
-    // Offset: 0x13F8ED4
+    // Offset: 0x193AF98
     bool get_IsSetup();
     // private System.Void set_IsSetup(System.Boolean value)
-    // Offset: 0x13F8EDC
+    // Offset: 0x193AFA0
     void set_IsSetup(bool value);
     // public System.Void Setup(VROSC.TapeRecorderDataController dataController)
-    // Offset: 0x13F8EE8
+    // Offset: 0x193AFAC
     void Setup(::VROSC::TapeRecorderDataController* dataController);
     // protected System.Void Update()
-    // Offset: 0x13F943C
+    // Offset: 0x193AFF8
     void Update();
     // public System.Void StartRecording()
-    // Offset: 0x13F96D4
+    // Offset: 0x193B198
     void StartRecording();
     // public System.Single GetElapsedRecordingTime()
-    // Offset: 0x13F965C
+    // Offset: 0x193B158
     float GetElapsedRecordingTime();
     // private System.Void RecordingReachedEnd(System.Single[] recordingData)
-    // Offset: 0x13F98C4
+    // Offset: 0x193B2E0
     void RecordingReachedEnd(::ArrayW<float> recordingData);
     // public System.Void StopRecording()
-    // Offset: 0x13F99A0
+    // Offset: 0x193B344
     void StopRecording();
     // private System.Void ConcludeRecording()
-    // Offset: 0x13F9944
+    // Offset: 0x193B2E4
     void ConcludeRecording();
     // private System.Void UpdateLoadedRecording(System.Boolean trim, System.Single recordedLengthSeconds)
-    // Offset: 0x13F9A54
+    // Offset: 0x193B3AC
     void UpdateLoadedRecording(bool trim, float recordedLengthSeconds);
     // public System.Void SaveRecording()
-    // Offset: 0x13F9FBC
+    // Offset: 0x193B5D4
     void SaveRecording();
     // public System.Void StartPlayback()
-    // Offset: 0x13FA254
+    // Offset: 0x193B7E4
     void StartPlayback();
     // public System.Void PausePlayback()
-    // Offset: 0x13F97F0
+    // Offset: 0x193B2BC
     void PausePlayback();
     // public System.Void SetUseAsPreview(System.Boolean useAsPreview)
-    // Offset: 0x13FA278
+    // Offset: 0x193B80C
     void SetUseAsPreview(bool useAsPreview);
     // public System.Void UserDataLoaded(VROSC.TapeRecorderDataController dataController)
-    // Offset: 0x13FA2D0
+    // Offset: 0x193B82C
     void UserDataLoaded(::VROSC::TapeRecorderDataController* dataController);
     // public System.Void SetPlaybackTime(System.Single time)
-    // Offset: 0x13FA370
+    // Offset: 0x193B894
     void SetPlaybackTime(float time);
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x13FA478
+    // Offset: 0x193B99C
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // private System.Void <SaveRecording>b__36_0()
-    // Offset: 0x13FA54C
+    // Offset: 0x193BA70
     void $SaveRecording$b__36_0();
     // private System.Void <SaveRecording>b__36_1(VROSC.Error error)
-    // Offset: 0x13FA640
+    // Offset: 0x193BADC
     void $SaveRecording$b__36_1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x13FA544
+    // Offset: 0x193BA68
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

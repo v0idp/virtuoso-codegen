@@ -59,145 +59,145 @@ namespace NatSuite::Devices::Internal {
     // Set static field: static private System.String Assembly
     static void _set_Assembly(::StringW value);
     // static public System.Void Dispose(System.IntPtr device)
-    // Offset: 0x13251A4
+    // Offset: 0x939C70
     static void Dispose(::System::IntPtr device);
     // static public System.Void UniqueID(System.IntPtr device, System.Text.StringBuilder dest)
-    // Offset: 0x1325220
+    // Offset: 0x939CEC
     static void UniqueID(::System::IntPtr device, ::System::Text::StringBuilder* dest);
     // static public System.Boolean Running(System.IntPtr camera)
-    // Offset: 0x13252D0
+    // Offset: 0x939D9C
     static bool Running(::System::IntPtr camera);
     // static public System.Boolean StartRunning(System.IntPtr device, NatSuite.Devices.Internal.Bridge/NatSuite.Devices.Internal.SampleBufferDelegate callback, System.IntPtr context)
-    // Offset: 0x1325354
+    // Offset: 0x939E20
     static bool StartRunning(::System::IntPtr device, ::NatSuite::Devices::Internal::Bridge::SampleBufferDelegate* callback, ::System::IntPtr context);
     // static public System.Void StopRunning(System.IntPtr device)
-    // Offset: 0x13253FC
+    // Offset: 0x939EC8
     static void StopRunning(::System::IntPtr device);
     // static public System.Void AudioDevices(out System.IntPtr outDevicesArray, out System.Int32 outDevicesArrayCount)
-    // Offset: 0x132547C
+    // Offset: 0x939F48
     static void AudioDevices(ByRef<::System::IntPtr> outDevicesArray, ByRef<int> outDevicesArrayCount);
     // static public System.Void Name(System.IntPtr device, System.Text.StringBuilder dest)
-    // Offset: 0x132550C
+    // Offset: 0x939FD8
     static void Name(::System::IntPtr device, ::System::Text::StringBuilder* dest);
     // static public System.Boolean EchoCancellation(System.IntPtr device)
-    // Offset: 0x13255BC
+    // Offset: 0x93A088
     static bool EchoCancellation(::System::IntPtr device);
     // static public System.Int32 SampleRate(System.IntPtr device)
-    // Offset: 0x1325644
+    // Offset: 0x93A110
     static int SampleRate(::System::IntPtr device);
     // static public System.Void SampleRate(System.IntPtr device, System.Int32 sampleRate)
-    // Offset: 0x13256C4
+    // Offset: 0x93A190
     static void SampleRate(::System::IntPtr device, int sampleRate);
     // static public System.Int32 ChannelCount(System.IntPtr device)
-    // Offset: 0x1325754
+    // Offset: 0x93A220
     static int ChannelCount(::System::IntPtr device);
     // static public System.Void ChannelCount(System.IntPtr device, System.Int32 sampleRate)
-    // Offset: 0x13257D4
+    // Offset: 0x93A2A0
     static void ChannelCount(::System::IntPtr device, int sampleRate);
     // static public System.Void CameraDevices(out System.IntPtr outDevicesArray, out System.Int32 outDevicesArrayCount)
-    // Offset: 0x1325864
+    // Offset: 0x93A330
     static void CameraDevices(ByRef<::System::IntPtr> outDevicesArray, ByRef<int> outDevicesArrayCount);
     // static public System.Boolean FrontFacing(System.IntPtr device)
-    // Offset: 0x13258F4
+    // Offset: 0x93A3C0
     static bool FrontFacing(::System::IntPtr device);
     // static public System.Boolean FlashSupported(System.IntPtr device)
-    // Offset: 0x132597C
+    // Offset: 0x93A448
     static bool FlashSupported(::System::IntPtr device);
     // static public System.Boolean TorchSupported(System.IntPtr device)
-    // Offset: 0x1325A04
+    // Offset: 0x93A4D0
     static bool TorchSupported(::System::IntPtr device);
     // static public System.Boolean ExposureLockSupported(System.IntPtr device)
-    // Offset: 0x1325A8C
+    // Offset: 0x93A558
     static bool ExposureLockSupported(::System::IntPtr device);
     // static public System.Boolean FocusLockSupported(System.IntPtr device)
-    // Offset: 0x1325B14
+    // Offset: 0x93A5E0
     static bool FocusLockSupported(::System::IntPtr device);
     // static public System.Boolean WhiteBalanceLockSupported(System.IntPtr device)
-    // Offset: 0x1325B9C
+    // Offset: 0x93A668
     static bool WhiteBalanceLockSupported(::System::IntPtr device);
     // static public System.Void FieldOfView(System.IntPtr device, out System.Single x, out System.Single y)
-    // Offset: 0x1325C24
+    // Offset: 0x93A6F0
     static void FieldOfView(::System::IntPtr device, ByRef<float> x, ByRef<float> y);
     // static public System.Void ExposureRange(System.IntPtr device, out System.Single min, out System.Single max)
-    // Offset: 0x1325CBC
+    // Offset: 0x93A788
     static void ExposureRange(::System::IntPtr device, ByRef<float> min, ByRef<float> max);
     // static public System.Void ZoomRange(System.IntPtr device, out System.Single min, out System.Single max)
-    // Offset: 0x1325D54
+    // Offset: 0x93A820
     static void ZoomRange(::System::IntPtr device, ByRef<float> min, ByRef<float> max);
     // static public System.Void PreviewResolution(System.IntPtr device, out System.Int32 width, out System.Int32 height)
-    // Offset: 0x1325DEC
+    // Offset: 0x93A8B8
     static void PreviewResolution(::System::IntPtr device, ByRef<int> width, ByRef<int> height);
     // static public System.Void PreviewResolution(System.IntPtr device, System.Int32 width, System.Int32 height)
-    // Offset: 0x1325E84
+    // Offset: 0x93A950
     static void PreviewResolution_(::System::IntPtr device, int width, int height);
     // static public System.Void PhotoResolution(System.IntPtr device, out System.Int32 width, out System.Int32 height)
-    // Offset: 0x1325F1C
+    // Offset: 0x93A9E8
     static void PhotoResolution(::System::IntPtr device, ByRef<int> width, ByRef<int> height);
     // static public System.Void PhotoResolution(System.IntPtr device, System.Int32 width, System.Int32 height)
-    // Offset: 0x1325FB4
+    // Offset: 0x93AA80
     static void PhotoResolution_(::System::IntPtr device, int width, int height);
     // static public System.Int32 Framerate(System.IntPtr device)
-    // Offset: 0x132604C
+    // Offset: 0x93AB18
     static int Framerate(::System::IntPtr device);
     // static public System.Void Framerate(System.IntPtr device, System.Int32 framerate)
-    // Offset: 0x13260CC
+    // Offset: 0x93AB98
     static void Framerate(::System::IntPtr device, int framerate);
     // static public System.Single ExposureBias(System.IntPtr device)
-    // Offset: 0x132615C
+    // Offset: 0x93AC28
     static float ExposureBias(::System::IntPtr device);
     // static public System.Void ExposureBias(System.IntPtr device, System.Single bias)
-    // Offset: 0x13261DC
+    // Offset: 0x93ACA8
     static void ExposureBias(::System::IntPtr device, float bias);
     // static public System.Void ExposurePoint(System.IntPtr device, System.Single x, System.Single y)
-    // Offset: 0x132626C
+    // Offset: 0x93AD38
     static void ExposurePoint(::System::IntPtr device, float x, float y);
     // static public System.Boolean ExposureLock(System.IntPtr device)
-    // Offset: 0x1326304
+    // Offset: 0x93ADD0
     static bool ExposureLock(::System::IntPtr device);
     // static public System.Void ExposureLock(System.IntPtr device, System.Boolean locked)
-    // Offset: 0x132638C
+    // Offset: 0x93AE58
     static void ExposureLock(::System::IntPtr device, bool locked);
     // static public NatSuite.Devices.FlashMode FlashMode(System.IntPtr device)
-    // Offset: 0x132641C
+    // Offset: 0x93AEE8
     static ::NatSuite::Devices::FlashMode FlashMode(::System::IntPtr device);
     // static public System.Void FlashMode(System.IntPtr device, NatSuite.Devices.FlashMode state)
-    // Offset: 0x132649C
+    // Offset: 0x93AF68
     static void FlashMode(::System::IntPtr device, ::NatSuite::Devices::FlashMode state);
     // static public System.Boolean FocusLock(System.IntPtr device)
-    // Offset: 0x132652C
+    // Offset: 0x93AFF8
     static bool FocusLock(::System::IntPtr device);
     // static public System.Void FocusLock(System.IntPtr device, System.Boolean locked)
-    // Offset: 0x13265B4
+    // Offset: 0x93B080
     static void FocusLock(::System::IntPtr device, bool locked);
     // static public System.Void FocusPoint(System.IntPtr device, System.Single x, System.Single y)
-    // Offset: 0x1326644
+    // Offset: 0x93B110
     static void FocusPoint(::System::IntPtr device, float x, float y);
     // static public System.Boolean TorchEnabled(System.IntPtr device)
-    // Offset: 0x13266DC
+    // Offset: 0x93B1A8
     static bool TorchEnabled(::System::IntPtr device);
     // static public System.Void TorchEnabled(System.IntPtr device, System.Boolean enabled)
-    // Offset: 0x1326764
+    // Offset: 0x93B230
     static void TorchEnabled(::System::IntPtr device, bool enabled);
     // static public System.Boolean WhiteBalanceLock(System.IntPtr device)
-    // Offset: 0x13267F4
+    // Offset: 0x93B2C0
     static bool WhiteBalanceLock(::System::IntPtr device);
     // static public System.Void WhiteBalanceLock(System.IntPtr device, System.Boolean locked)
-    // Offset: 0x132687C
+    // Offset: 0x93B348
     static void WhiteBalanceLock(::System::IntPtr device, bool locked);
     // static public System.Single ZoomRatio(System.IntPtr device)
-    // Offset: 0x132690C
+    // Offset: 0x93B3D8
     static float ZoomRatio(::System::IntPtr device);
     // static public System.Void ZoomRatio(System.IntPtr device, System.Single ratio)
-    // Offset: 0x132698C
+    // Offset: 0x93B458
     static void ZoomRatio(::System::IntPtr device, float ratio);
     // static public System.Void Orientation(System.IntPtr device, NatSuite.Devices.FrameOrientation orentation)
-    // Offset: 0x1326A1C
+    // Offset: 0x93B4E8
     static void Orientation(::System::IntPtr device, ::NatSuite::Devices::FrameOrientation orentation);
     // static public System.Void StartRunning(System.IntPtr device, NatSuite.Devices.Internal.Bridge/NatSuite.Devices.Internal.FrameDelegate handler, System.IntPtr context)
-    // Offset: 0x1326AAC
+    // Offset: 0x93B578
     static void StartRunning(::System::IntPtr device, ::NatSuite::Devices::Internal::Bridge::FrameDelegate* handler, ::System::IntPtr context);
     // static public System.Void CapturePhoto(System.IntPtr device, NatSuite.Devices.Internal.Bridge/NatSuite.Devices.Internal.FrameDelegate handler, System.IntPtr context)
-    // Offset: 0x1326B4C
+    // Offset: 0x93B618
     static void CapturePhoto(::System::IntPtr device, ::NatSuite::Devices::Internal::Bridge::FrameDelegate* handler, ::System::IntPtr context);
   }; // NatSuite.Devices.Internal.Bridge
   #pragma pack(pop)

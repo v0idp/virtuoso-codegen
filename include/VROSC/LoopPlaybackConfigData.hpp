@@ -30,15 +30,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlaybackConfigData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.LoopPlaybackConfig/VROSC.TriggerSync StartMode
     // Size: 0x4
     // Offset: 0x10
@@ -85,30 +77,30 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public VROSC.LoopPlaybackConfig/VROSC.TriggerSync StartMode
-    ::VROSC::LoopPlaybackConfig::TriggerSync& dyn_StartMode();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig::TriggerSync& dyn_StartMode();
     // Get instance field reference: public System.Boolean IsStartModeLocked
-    bool& dyn_IsStartModeLocked();
+    [[deprecated]] bool& dyn_IsStartModeLocked();
     // Get instance field reference: public VROSC.LoopPlaybackConfig/VROSC.TriggerSync StopMode
-    ::VROSC::LoopPlaybackConfig::TriggerSync& dyn_StopMode();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig::TriggerSync& dyn_StopMode();
     // Get instance field reference: public VROSC.LoopPlaybackConfig/VROSC.FadeDuration FadeIn
-    ::VROSC::LoopPlaybackConfig::FadeDuration& dyn_FadeIn();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig::FadeDuration& dyn_FadeIn();
     // Get instance field reference: public VROSC.LoopPlaybackConfig/VROSC.FadeDuration FadeOut
-    ::VROSC::LoopPlaybackConfig::FadeDuration& dyn_FadeOut();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig::FadeDuration& dyn_FadeOut();
     // Get instance field reference: public System.Boolean OneShot
-    bool& dyn_OneShot();
+    [[deprecated]] bool& dyn_OneShot();
     // Get instance field reference: public System.Boolean Retrigger
-    bool& dyn_Retrigger();
+    [[deprecated]] bool& dyn_Retrigger();
     // public VROSC.LoopPlaybackConfig/VROSC.Sync get_SyncMode()
-    // Offset: 0x1396CD4
+    // Offset: 0x19B6FA4
     ::VROSC::LoopPlaybackConfig::Sync get_SyncMode();
     // public VROSC.LoopPlaybackConfig/VROSC.LoopMode get_Looping()
-    // Offset: 0x1396CF4
+    // Offset: 0x19B6FC4
     ::VROSC::LoopPlaybackConfig::LoopMode get_Looping();
     // public System.Boolean get_RetriggeringOneshot()
-    // Offset: 0x1396CFC
+    // Offset: 0x19B6FCC
     bool get_RetriggeringOneshot();
     // public System.Void .ctor()
-    // Offset: 0x1395AB0
+    // Offset: 0x19B5D80
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

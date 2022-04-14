@@ -48,15 +48,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class IngameConsole : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _text
     // Size: 0x8
     // Offset: 0x18
@@ -113,38 +105,38 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _text
-    ::TMPro::TextMeshPro*& dyn__text();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__text();
     // Get instance field reference: private System.String[] _excludes
-    ::ArrayW<::StringW>& dyn__excludes();
+    [[deprecated]] ::ArrayW<::StringW>& dyn__excludes();
     // Get instance field reference: private System.Boolean _showErrors
-    bool& dyn__showErrors();
+    [[deprecated]] bool& dyn__showErrors();
     // Get instance field reference: private System.Boolean _showWarnings
-    bool& dyn__showWarnings();
+    [[deprecated]] bool& dyn__showWarnings();
     // Get instance field reference: private System.Boolean _showLogs
-    bool& dyn__showLogs();
+    [[deprecated]] bool& dyn__showLogs();
     // Get instance field reference: private System.Int32 _lines
-    int& dyn__lines();
+    [[deprecated]] int& dyn__lines();
     // Get instance field reference: private System.Int32 _maxLines
-    int& dyn__maxLines();
+    [[deprecated]] int& dyn__maxLines();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _loggedErrorStacks
-    ::System::Collections::Generic::List_1<::StringW>*& dyn__loggedErrorStacks();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__loggedErrorStacks();
     // protected System.Void Awake()
-    // Offset: 0x8A0890
+    // Offset: 0x1943428
     void Awake();
     // protected System.Void OnEnable()
-    // Offset: 0x8A08FC
+    // Offset: 0x1943494
     void OnEnable();
     // protected System.Void OnDisable()
-    // Offset: 0x8A0978
+    // Offset: 0x1943510
     void OnDisable();
     // private System.Void LogReceived(System.String logString, System.String stackTrace, UnityEngine.LogType logType)
-    // Offset: 0x8A09F4
+    // Offset: 0x194358C
     void LogReceived(::StringW logString, ::StringW stackTrace, ::UnityEngine::LogType logType);
     // private System.Void LogErrorToFirebase(System.String message, System.String stack)
-    // Offset: 0x8A0C80
+    // Offset: 0x1943818
     void LogErrorToFirebase(::StringW message, ::StringW stack);
     // public System.Void .ctor()
-    // Offset: 0x8A0E4C
+    // Offset: 0x19439D8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

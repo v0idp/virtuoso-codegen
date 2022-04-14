@@ -166,41 +166,41 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public DG.Tweening.PathMode mode
-    ::DG::Tweening::PathMode& dyn_mode();
+    [[deprecated]] ::DG::Tweening::PathMode& dyn_mode();
     // Get instance field reference: public DG.Tweening.Plugins.Options.OrientType orientType
-    ::DG::Tweening::Plugins::Options::OrientType& dyn_orientType();
+    [[deprecated]] ::DG::Tweening::Plugins::Options::OrientType& dyn_orientType();
     // Get instance field reference: public DG.Tweening.AxisConstraint lockPositionAxis
-    ::DG::Tweening::AxisConstraint& dyn_lockPositionAxis();
+    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_lockPositionAxis();
     // Get instance field reference: public DG.Tweening.AxisConstraint lockRotationAxis
-    ::DG::Tweening::AxisConstraint& dyn_lockRotationAxis();
+    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_lockRotationAxis();
     // Get instance field reference: public System.Boolean isClosedPath
-    bool& dyn_isClosedPath();
+    [[deprecated]] bool& dyn_isClosedPath();
     // Get instance field reference: public UnityEngine.Vector3 lookAtPosition
-    ::UnityEngine::Vector3& dyn_lookAtPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_lookAtPosition();
     // Get instance field reference: public UnityEngine.Transform lookAtTransform
-    ::UnityEngine::Transform*& dyn_lookAtTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_lookAtTransform();
     // Get instance field reference: public System.Single lookAhead
-    float& dyn_lookAhead();
+    [[deprecated]] float& dyn_lookAhead();
     // Get instance field reference: public System.Boolean hasCustomForwardDirection
-    bool& dyn_hasCustomForwardDirection();
+    [[deprecated]] bool& dyn_hasCustomForwardDirection();
     // Get instance field reference: public UnityEngine.Quaternion forward
-    ::UnityEngine::Quaternion& dyn_forward();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_forward();
     // Get instance field reference: public System.Boolean useLocalPosition
-    bool& dyn_useLocalPosition();
+    [[deprecated]] bool& dyn_useLocalPosition();
     // Get instance field reference: public UnityEngine.Transform parent
-    ::UnityEngine::Transform*& dyn_parent();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_parent();
     // Get instance field reference: public System.Boolean isRigidbody
-    bool& dyn_isRigidbody();
+    [[deprecated]] bool& dyn_isRigidbody();
     // Get instance field reference: UnityEngine.Quaternion startupRot
-    ::UnityEngine::Quaternion& dyn_startupRot();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_startupRot();
     // Get instance field reference: System.Single startupZRot
-    float& dyn_startupZRot();
+    [[deprecated]] float& dyn_startupZRot();
     // Get instance field reference: System.Boolean addedExtraStartWp
-    bool& dyn_addedExtraStartWp();
+    [[deprecated]] bool& dyn_addedExtraStartWp();
     // Get instance field reference: System.Boolean addedExtraEndWp
-    bool& dyn_addedExtraEndWp();
+    [[deprecated]] bool& dyn_addedExtraEndWp();
     // public System.Void Reset()
-    // Offset: 0x109F604
+    // Offset: 0x15E1C2C
     void Reset();
   }; // DG.Tweening.Plugins.Options.PathOptions
   #pragma pack(pop)

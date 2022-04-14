@@ -88,25 +88,25 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Byte cNewInput0
-    uint8_t& dyn_cNewInput0();
+    [[deprecated]] uint8_t& dyn_cNewInput0();
     // Get instance field reference: public System.Byte cNewInput1
-    uint8_t& dyn_cNewInput1();
+    [[deprecated]] uint8_t& dyn_cNewInput1();
     // Get instance field reference: public System.Byte cNewInput2
-    uint8_t& dyn_cNewInput2();
+    [[deprecated]] uint8_t& dyn_cNewInput2();
     // Get instance field reference: public System.Byte cNewInput3
-    uint8_t& dyn_cNewInput3();
+    [[deprecated]] uint8_t& dyn_cNewInput3();
     // Get instance field reference: public System.Byte cNewInput4
-    uint8_t& dyn_cNewInput4();
+    [[deprecated]] uint8_t& dyn_cNewInput4();
     // Get instance field reference: public System.Byte cNewInput5
-    uint8_t& dyn_cNewInput5();
+    [[deprecated]] uint8_t& dyn_cNewInput5();
     // Get instance field reference: public System.Byte cNewInput6
-    uint8_t& dyn_cNewInput6();
+    [[deprecated]] uint8_t& dyn_cNewInput6();
     // Get instance field reference: public System.Byte cNewInput7
-    uint8_t& dyn_cNewInput7();
+    [[deprecated]] uint8_t& dyn_cNewInput7();
     // Get instance field reference: public System.UInt64 uUserValue
-    uint64_t& dyn_uUserValue();
+    [[deprecated]] uint64_t& dyn_uUserValue();
     // public System.String get_cNewInput()
-    // Offset: 0x6EE1F4
+    // Offset: 0x8048F8
     ::StringW get_cNewInput();
   }; // OVR.OpenVR.VREvent_Keyboard_t
   #pragma pack(pop)

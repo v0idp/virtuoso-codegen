@@ -40,15 +40,7 @@ namespace VROSC::Credits {
   // [TokenAttribute] Offset: FFFFFFFF
   class CreditsNameListData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _header
     // Size: 0x8
     // Offset: 0x10
@@ -69,22 +61,22 @@ namespace VROSC::Credits {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _header
-    ::StringW& dyn__header();
+    [[deprecated]] ::StringW& dyn__header();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Credits.CreditsNameData> _names
-    ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameData*>*& dyn__names();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameData*>*& dyn__names();
     // Get instance field reference: private System.String _footer
-    ::StringW& dyn__footer();
+    [[deprecated]] ::StringW& dyn__footer();
     // public System.String get_Header()
-    // Offset: 0x1306BA0
+    // Offset: 0x8DFB90
     ::StringW get_Header();
     // public System.String get_Footer()
-    // Offset: 0x1306BA8
+    // Offset: 0x8DFB98
     ::StringW get_Footer();
     // public System.Collections.Generic.List`1<VROSC.Credits.CreditsNameData> get_Names()
-    // Offset: 0x1306BB0
+    // Offset: 0x8DFBA0
     ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameData*>* get_Names();
     // public System.Void .ctor()
-    // Offset: 0x1306BB8
+    // Offset: 0x8DFBA8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

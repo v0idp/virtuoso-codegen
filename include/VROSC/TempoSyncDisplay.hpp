@@ -49,23 +49,15 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::TempoSyncDisplay::$StrokeFlow$d__14
     class $StrokeFlow$d__14;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [ColorUsageAttribute] Offset: 0x674D34
+    // [ColorUsageAttribute] Offset: 0x78B188
     // private UnityEngine.Color _offColor
     // Size: 0x10
     // Offset: 0x18
     ::UnityEngine::Color offColor;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [ColorUsageAttribute] Offset: 0x674D74
+    // [ColorUsageAttribute] Offset: 0x78B1C8
     // private UnityEngine.Color _beatColor
     // Size: 0x10
     // Offset: 0x28
@@ -112,47 +104,47 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color _offColor
-    ::UnityEngine::Color& dyn__offColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private UnityEngine.Color _beatColor
-    ::UnityEngine::Color& dyn__beatColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__beatColor();
     // Get instance field reference: private UnityEngine.AnimationCurve _strikeCurve
-    ::UnityEngine::AnimationCurve*& dyn__strikeCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__strikeCurve();
     // Get instance field reference: private VROSC.AdjustableMesh _beatVisual
-    ::VROSC::AdjustableMesh*& dyn__beatVisual();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beatVisual();
     // Get instance field reference: private System.Int32 _beatDivision
-    int& dyn__beatDivision();
+    [[deprecated]] int& dyn__beatDivision();
     // Get instance field reference: private System.Int32 _lastSubdivision
-    int& dyn__lastSubdivision();
+    [[deprecated]] int& dyn__lastSubdivision();
     // Get instance field reference: private System.Single _strikeduration
-    float& dyn__strikeduration();
+    [[deprecated]] float& dyn__strikeduration();
     // Get instance field reference: private System.Boolean _isOn
-    bool& dyn__isOn();
+    [[deprecated]] bool& dyn__isOn();
     // protected System.Void Awake()
-    // Offset: 0x13FC2C8
+    // Offset: 0xA242C8
     void Awake();
     // protected System.Void Update()
-    // Offset: 0x13FC3B8
+    // Offset: 0xA243B8
     void Update();
     // protected System.Void OnDestroy()
-    // Offset: 0x13FC540
+    // Offset: 0xA24540
     void OnDestroy();
     // public System.Void SetBeatDivision(System.Int32 beatDivision)
-    // Offset: 0x13FC54C
+    // Offset: 0xA2454C
     void SetBeatDivision(int beatDivision);
     // public System.Void SetActive(System.Boolean shouldBeActive)
-    // Offset: 0x13FC5EC
+    // Offset: 0xA245EC
     void SetActive(bool shouldBeActive);
     // private System.Void MakeStroke()
-    // Offset: 0x13FC49C
+    // Offset: 0xA2449C
     void MakeStroke();
     // private System.Collections.IEnumerator StrokeFlow()
-    // Offset: 0x13FC620
+    // Offset: 0xA24620
     ::System::Collections::IEnumerator* StrokeFlow();
     // private System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x13FC2D4
+    // Offset: 0xA242D4
     void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x13FC68C
+    // Offset: 0xA2468C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

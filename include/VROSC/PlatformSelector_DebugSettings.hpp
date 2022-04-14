@@ -24,15 +24,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PlatformSelector::DebugSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean DisableVR
     // Size: 0x1
     // Offset: 0x10
@@ -69,17 +61,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::PlatformSelector::Platform) == 0x4);
     public:
     // Get instance field reference: public System.Boolean DisableVR
-    bool& dyn_DisableVR();
+    [[deprecated]] bool& dyn_DisableVR();
     // Get instance field reference: public System.String DummyOculusId
-    ::StringW& dyn_DummyOculusId();
+    [[deprecated]] ::StringW& dyn_DummyOculusId();
     // Get instance field reference: public System.String DummyUsername
-    ::StringW& dyn_DummyUsername();
+    [[deprecated]] ::StringW& dyn_DummyUsername();
     // Get instance field reference: public System.Boolean PassEntitlements
-    bool& dyn_PassEntitlements();
+    [[deprecated]] bool& dyn_PassEntitlements();
     // Get instance field reference: public VROSC.PlatformSelector/VROSC.Platform Platform
-    ::VROSC::PlatformSelector::Platform& dyn_Platform();
+    [[deprecated]] ::VROSC::PlatformSelector::Platform& dyn_Platform();
     // public System.Void .ctor()
-    // Offset: 0x1342B70
+    // Offset: 0x8CDAC8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

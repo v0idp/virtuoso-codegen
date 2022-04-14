@@ -36,15 +36,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UserDataControllers::$$c__DisplayClass67_1 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Collections.Generic.KeyValuePair`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.InstrumentDataController> instrumentDataController
     // Size: 0xFFFFFFFF
     // Offset: 0x10
@@ -57,17 +49,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UserDataControllers::$$c__DisplayClass67_0*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.KeyValuePair`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.InstrumentDataController> instrumentDataController
-    ::System::Collections::Generic::KeyValuePair_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>& dyn_instrumentDataController();
+    [[deprecated]] ::System::Collections::Generic::KeyValuePair_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>& dyn_instrumentDataController();
     // Get instance field reference: public VROSC.UserDataControllers/VROSC.<>c__DisplayClass67_0 CS$<>8__locals1
-    ::VROSC::UserDataControllers::$$c__DisplayClass67_0*& dyn_CS$$$8__locals1();
+    [[deprecated]] ::VROSC::UserDataControllers::$$c__DisplayClass67_0*& dyn_CS$$$8__locals1();
     // System.Void <LoadControllers>b__10()
-    // Offset: 0x1411030
+    // Offset: 0xE830E0
     void $LoadControllers$b__10();
     // System.Void <LoadControllers>b__11(VROSC.Error error)
-    // Offset: 0x1411108
+    // Offset: 0xE831B8
     void $LoadControllers$b__11(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1411028
+    // Offset: 0xE830D8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

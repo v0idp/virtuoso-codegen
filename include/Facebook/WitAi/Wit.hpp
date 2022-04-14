@@ -84,18 +84,10 @@ namespace Facebook::WitAi {
     class $$c__DisplayClass47_1;
     // Nested type: ::Facebook::WitAi::Wit::$$c__DisplayClass55_0
     class $$c__DisplayClass55_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x5B143C
-    // [FormerlySerializedAsAttribute] Offset: 0x5B143C
-    // [TooltipAttribute] Offset: 0x5B143C
+    // [HeaderAttribute] Offset: 0x6C756C
+    // [FormerlySerializedAsAttribute] Offset: 0x6C756C
+    // [TooltipAttribute] Offset: 0x6C756C
     // private Facebook.WitAi.Configuration.WitRuntimeConfiguration runtimeConfiguration
     // Size: 0x8
     // Offset: 0x20
@@ -220,142 +212,142 @@ namespace Facebook::WitAi {
       return *reinterpret_cast<::Facebook::WitAi::IWitRuntimeConfigProvider*>(this);
     }
     // Get instance field reference: private Facebook.WitAi.Configuration.WitRuntimeConfiguration runtimeConfiguration
-    ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_runtimeConfiguration();
+    [[deprecated]] ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_runtimeConfiguration();
     // Get instance field reference: private System.Single activationTime
-    float& dyn_activationTime();
+    [[deprecated]] float& dyn_activationTime();
     // Get instance field reference: private Facebook.WitAi.Interfaces.IAudioInputSource micInput
-    ::Facebook::WitAi::Interfaces::IAudioInputSource*& dyn_micInput();
+    [[deprecated]] ::Facebook::WitAi::Interfaces::IAudioInputSource*& dyn_micInput();
     // Get instance field reference: private Facebook.WitAi.Configuration.WitRequestOptions currentRequestOptions
-    ::Facebook::WitAi::Configuration::WitRequestOptions*& dyn_currentRequestOptions();
+    [[deprecated]] ::Facebook::WitAi::Configuration::WitRequestOptions*& dyn_currentRequestOptions();
     // Get instance field reference: private System.Single lastMinVolumeLevelTime
-    float& dyn_lastMinVolumeLevelTime();
+    [[deprecated]] float& dyn_lastMinVolumeLevelTime();
     // Get instance field reference: private Facebook.WitAi.WitRequest activeRequest
-    ::Facebook::WitAi::WitRequest*& dyn_activeRequest();
+    [[deprecated]] ::Facebook::WitAi::WitRequest*& dyn_activeRequest();
     // Get instance field reference: private System.Collections.Concurrent.ConcurrentQueue`1<System.Action> updateQueue
-    ::System::Collections::Concurrent::ConcurrentQueue_1<::System::Action*>*& dyn_updateQueue();
+    [[deprecated]] ::System::Collections::Concurrent::ConcurrentQueue_1<::System::Action*>*& dyn_updateQueue();
     // Get instance field reference: private System.Boolean isSoundWakeActive
-    bool& dyn_isSoundWakeActive();
+    [[deprecated]] bool& dyn_isSoundWakeActive();
     // Get instance field reference: private Facebook.WitAi.Data.RingBuffer`1<System.Byte> micDataBuffer
-    ::Facebook::WitAi::Data::RingBuffer_1<uint8_t>*& dyn_micDataBuffer();
+    [[deprecated]] ::Facebook::WitAi::Data::RingBuffer_1<uint8_t>*& dyn_micDataBuffer();
     // Get instance field reference: private Facebook.WitAi.Data.RingBuffer`1/Facebook.WitAi.Data.Marker<System.Byte> lastSampleMarker
-    typename ::Facebook::WitAi::Data::RingBuffer_1<uint8_t>::Marker*& dyn_lastSampleMarker();
+    [[deprecated]] typename ::Facebook::WitAi::Data::RingBuffer_1<uint8_t>::Marker*& dyn_lastSampleMarker();
     // Get instance field reference: private System.Byte[] writeBuffer
-    ::ArrayW<uint8_t>& dyn_writeBuffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_writeBuffer();
     // Get instance field reference: private System.Boolean minKeepAliveWasHit
-    bool& dyn_minKeepAliveWasHit();
+    [[deprecated]] bool& dyn_minKeepAliveWasHit();
     // Get instance field reference: private System.Boolean isActive
-    bool& dyn_isActive();
+    [[deprecated]] bool& dyn_isActive();
     // Get instance field reference: private System.Byte[] byteDataBuffer
-    ::ArrayW<uint8_t>& dyn_byteDataBuffer();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_byteDataBuffer();
     // Get instance field reference: private Facebook.WitAi.Interfaces.ITranscriptionProvider activeTranscriptionProvider
-    ::Facebook::WitAi::Interfaces::ITranscriptionProvider*& dyn_activeTranscriptionProvider();
+    [[deprecated]] ::Facebook::WitAi::Interfaces::ITranscriptionProvider*& dyn_activeTranscriptionProvider();
     // Get instance field reference: private UnityEngine.Coroutine timeLimitCoroutine
-    ::UnityEngine::Coroutine*& dyn_timeLimitCoroutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn_timeLimitCoroutine();
     // Get instance field reference: private System.Boolean receivedTranscription
-    bool& dyn_receivedTranscription();
+    [[deprecated]] bool& dyn_receivedTranscription();
     // Get instance field reference: private System.Single lastWordTime
-    float& dyn_lastWordTime();
+    [[deprecated]] float& dyn_lastWordTime();
     // public Facebook.WitAi.Configuration.WitRuntimeConfiguration get_RuntimeConfiguration()
-    // Offset: 0x10FA22C
+    // Offset: 0x1670A94
     ::Facebook::WitAi::Configuration::WitRuntimeConfiguration* get_RuntimeConfiguration();
     // public System.Void set_RuntimeConfiguration(Facebook.WitAi.Configuration.WitRuntimeConfiguration value)
-    // Offset: 0x10FA234
+    // Offset: 0x1670A9C
     void set_RuntimeConfiguration(::Facebook::WitAi::Configuration::WitRuntimeConfiguration* value);
     // private System.Void Awake()
-    // Offset: 0x10FAB78
+    // Offset: 0x16713E0
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0x10FAC74
+    // Offset: 0x16714DC
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x10FAEE0
+    // Offset: 0x1671748
     void OnDisable();
     // private System.Void OnSampleReady(System.Int32 sampleCount, System.Single[] sample, System.Single levelMax)
-    // Offset: 0x10FB150
+    // Offset: 0x16719B8
     void OnSampleReady(int sampleCount, ::ArrayW<float> sample, float levelMax);
     // private System.Void OnFullTranscription(System.String transcription)
-    // Offset: 0x10FBB44
+    // Offset: 0x16723AC
     void OnFullTranscription(::StringW transcription);
     // private System.Void OnPartialTranscription(System.String transcription)
-    // Offset: 0x10FBD64
+    // Offset: 0x16725CC
     void OnPartialTranscription(::StringW transcription);
     // private System.Void OnTranscriptionMicLevelChanged(System.Single level)
-    // Offset: 0x10FBDE4
+    // Offset: 0x167264C
     void OnTranscriptionMicLevelChanged(float level);
     // private System.Void OnMicLevelChanged(System.Single level)
-    // Offset: 0x10FB598
+    // Offset: 0x1671E00
     void OnMicLevelChanged(float level);
     // private System.Void OnStoppedListening()
-    // Offset: 0x10FBEEC
+    // Offset: 0x1672754
     void OnStoppedListening();
     // private System.Void OnStartListening()
-    // Offset: 0x10FBF08
+    // Offset: 0x1672770
     void OnStartListening();
     // private System.Void Update()
-    // Offset: 0x10FBF24
+    // Offset: 0x167278C
     void Update();
     // private System.Collections.IEnumerator DeactivateDueToTimeLimit()
-    // Offset: 0x10FC074
+    // Offset: 0x16728DC
     ::System::Collections::IEnumerator* DeactivateDueToTimeLimit();
     // private System.Void OnWitReadyForData()
-    // Offset: 0x10FCD40
+    // Offset: 0x16735A8
     void OnWitReadyForData();
     // private System.Void DeactivateRequest()
-    // Offset: 0x10FB8F4
+    // Offset: 0x167215C
     void DeactivateRequest();
     // private System.Byte[] Convert(System.Single[] samples)
-    // Offset: 0x10FB63C
+    // Offset: 0x1671EA4
     ::ArrayW<uint8_t> Convert(::ArrayW<float> samples);
     // private System.Void SendTranscription(System.String transcription, Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x10FBC60
+    // Offset: 0x16724C8
     void SendTranscription(::StringW transcription, ::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // private System.Void QueueResult(Facebook.WitAi.WitRequest request)
-    // Offset: 0x10FD380
+    // Offset: 0x1673BE8
     void QueueResult(::Facebook::WitAi::WitRequest* request);
     // private System.Void HandleResult(Facebook.WitAi.WitRequest request)
-    // Offset: 0x10FD464
+    // Offset: 0x1673CCC
     void HandleResult(::Facebook::WitAi::WitRequest* request);
     // private System.Void <ActivateImmediately>b__47_0(System.String s)
-    // Offset: 0x10FD6EC
+    // Offset: 0x1673F54
     void $ActivateImmediately$b__47_0(::StringW s);
     // private System.Void <ActivateImmediately>b__47_1(System.String s)
-    // Offset: 0x10FD7D0
+    // Offset: 0x1674038
     void $ActivateImmediately$b__47_1(::StringW s);
     // private System.Void <ActivateImmediately>b__47_2(Facebook.WitAi.WitRequest r)
-    // Offset: 0x10FD8B4
+    // Offset: 0x167411C
     void $ActivateImmediately$b__47_2(::Facebook::WitAi::WitRequest* r);
     // public override System.Boolean get_Active()
-    // Offset: 0x10FA1EC
+    // Offset: 0x1670A54
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Boolean VoiceService::get_Active()
     bool get_Active();
     // public override System.Boolean get_IsRequestActive()
-    // Offset: 0x10FA20C
+    // Offset: 0x1670A74
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Boolean VoiceService::get_IsRequestActive()
     bool get_IsRequestActive();
     // public override Facebook.WitAi.Interfaces.ITranscriptionProvider get_TranscriptionProvider()
-    // Offset: 0x10FA23C
+    // Offset: 0x1670AA4
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: Facebook.WitAi.Interfaces.ITranscriptionProvider VoiceService::get_TranscriptionProvider()
     ::Facebook::WitAi::Interfaces::ITranscriptionProvider* get_TranscriptionProvider();
     // public override System.Void set_TranscriptionProvider(Facebook.WitAi.Interfaces.ITranscriptionProvider value)
-    // Offset: 0x10FA244
+    // Offset: 0x1670AAC
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::set_TranscriptionProvider(Facebook.WitAi.Interfaces.ITranscriptionProvider value)
     void set_TranscriptionProvider(::Facebook::WitAi::Interfaces::ITranscriptionProvider* value);
     // public override System.Boolean get_MicActive()
-    // Offset: 0x10FAA94
+    // Offset: 0x16712FC
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Boolean VoiceService::get_MicActive()
     bool get_MicActive();
     // public override System.Boolean get_ShouldSendMicData()
-    // Offset: 0x10FAB44
+    // Offset: 0x16713AC
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Boolean VoiceService::get_ShouldSendMicData()
     bool get_ShouldSendMicData();
     // public System.Void .ctor()
-    // Offset: 0x10FD5EC
+    // Offset: 0x1673E54
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -369,37 +361,37 @@ namespace Facebook::WitAi {
       return THROW_UNLESS((::il2cpp_utils::New<Wit*, creationType>()));
     }
     // public override System.Void Activate()
-    // Offset: 0x10FC10C
+    // Offset: 0x1672974
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::Activate()
     void Activate();
     // public override System.Void Activate(Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x10FC180
+    // Offset: 0x16729E8
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::Activate(Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
     void Activate(::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // public override System.Void ActivateImmediately()
-    // Offset: 0x10FC50C
+    // Offset: 0x1672D74
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::ActivateImmediately()
     void ActivateImmediately();
     // public override System.Void ActivateImmediately(Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x10FC580
+    // Offset: 0x1672DE8
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::ActivateImmediately(Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
     void ActivateImmediately(::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // public override System.Void Deactivate()
-    // Offset: 0x10FCEA0
+    // Offset: 0x1673708
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::Deactivate()
     void Deactivate();
     // public override System.Void Activate(System.String text, Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x10FD064
+    // Offset: 0x16738CC
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::Activate(System.String text, Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
     void Activate(::StringW text, ::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // public override System.Void Activate(System.String text)
-    // Offset: 0x10FD0C4
+    // Offset: 0x167392C
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::Activate(System.String text)
     void Activate(::StringW text);

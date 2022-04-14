@@ -85,7 +85,7 @@ namespace Unity::Profiling::LowLevel {
     // Set static field: static public Unity.Profiling.LowLevel.MarkerFlags Counter
     static void _set_Counter(::Unity::Profiling::LowLevel::MarkerFlags value);
     // Get instance field reference: public System.UInt16 value__
-    uint16_t& dyn_value__();
+    [[deprecated]] uint16_t& dyn_value__();
   }; // Unity.Profiling.LowLevel.MarkerFlags
   #pragma pack(pop)
   static check_size<sizeof(MarkerFlags), 0 + sizeof(uint16_t)> __Unity_Profiling_LowLevel_MarkerFlagsSizeCheck;

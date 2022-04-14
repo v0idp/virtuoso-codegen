@@ -37,15 +37,7 @@ namespace Mono::Globalization::Unicode {
   // [TokenAttribute] Offset: FFFFFFFF
   class SortKeyBuffer : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte[] l1b
     // Size: 0x8
     // Offset: 0x10
@@ -180,85 +172,85 @@ namespace Mono::Globalization::Unicode {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Byte[] l1b
-    ::ArrayW<uint8_t>& dyn_l1b();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_l1b();
     // Get instance field reference: private System.Byte[] l2b
-    ::ArrayW<uint8_t>& dyn_l2b();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_l2b();
     // Get instance field reference: private System.Byte[] l3b
-    ::ArrayW<uint8_t>& dyn_l3b();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_l3b();
     // Get instance field reference: private System.Byte[] l4sb
-    ::ArrayW<uint8_t>& dyn_l4sb();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_l4sb();
     // Get instance field reference: private System.Byte[] l4tb
-    ::ArrayW<uint8_t>& dyn_l4tb();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_l4tb();
     // Get instance field reference: private System.Byte[] l4kb
-    ::ArrayW<uint8_t>& dyn_l4kb();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_l4kb();
     // Get instance field reference: private System.Byte[] l4wb
-    ::ArrayW<uint8_t>& dyn_l4wb();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_l4wb();
     // Get instance field reference: private System.Byte[] l5b
-    ::ArrayW<uint8_t>& dyn_l5b();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_l5b();
     // Get instance field reference: private System.String source
-    ::StringW& dyn_source();
+    [[deprecated]] ::StringW& dyn_source();
     // Get instance field reference: private System.Int32 l1
-    int& dyn_l1();
+    [[deprecated]] int& dyn_l1();
     // Get instance field reference: private System.Int32 l2
-    int& dyn_l2();
+    [[deprecated]] int& dyn_l2();
     // Get instance field reference: private System.Int32 l3
-    int& dyn_l3();
+    [[deprecated]] int& dyn_l3();
     // Get instance field reference: private System.Int32 l4s
-    int& dyn_l4s();
+    [[deprecated]] int& dyn_l4s();
     // Get instance field reference: private System.Int32 l4t
-    int& dyn_l4t();
+    [[deprecated]] int& dyn_l4t();
     // Get instance field reference: private System.Int32 l4k
-    int& dyn_l4k();
+    [[deprecated]] int& dyn_l4k();
     // Get instance field reference: private System.Int32 l4w
-    int& dyn_l4w();
+    [[deprecated]] int& dyn_l4w();
     // Get instance field reference: private System.Int32 l5
-    int& dyn_l5();
+    [[deprecated]] int& dyn_l5();
     // Get instance field reference: private System.Int32 lcid
-    int& dyn_lcid();
+    [[deprecated]] int& dyn_lcid();
     // Get instance field reference: private System.Globalization.CompareOptions options
-    ::System::Globalization::CompareOptions& dyn_options();
+    [[deprecated]] ::System::Globalization::CompareOptions& dyn_options();
     // Get instance field reference: private System.Boolean processLevel2
-    bool& dyn_processLevel2();
+    [[deprecated]] bool& dyn_processLevel2();
     // Get instance field reference: private System.Boolean frenchSort
-    bool& dyn_frenchSort();
+    [[deprecated]] bool& dyn_frenchSort();
     // Get instance field reference: private System.Boolean frenchSorted
-    bool& dyn_frenchSorted();
+    [[deprecated]] bool& dyn_frenchSorted();
     // public System.Void .ctor(System.Int32 lcid)
-    // Offset: 0xF51CC8
+    // Offset: 0x125049C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SortKeyBuffer* New_ctor(int lcid) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Globalization::Unicode::SortKeyBuffer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SortKeyBuffer*, creationType>(lcid)));
     }
     // public System.Void Reset()
-    // Offset: 0xF5B288
+    // Offset: 0x12504A4
     void Reset();
     // System.Void Initialize(System.Globalization.CompareOptions options, System.Int32 lcid, System.String s, System.Boolean frenchSort)
-    // Offset: 0xF51CD0
+    // Offset: 0x12504B4
     void Initialize(::System::Globalization::CompareOptions options, int lcid, ::StringW s, bool frenchSort);
     // System.Void AppendCJKExtension(System.Byte lv1msb, System.Byte lv1lsb)
-    // Offset: 0xF52750
+    // Offset: 0x1250668
     void AppendCJKExtension(uint8_t lv1msb, uint8_t lv1lsb);
     // System.Void AppendKana(System.Byte category, System.Byte lv1, System.Byte lv2, System.Byte lv3, System.Boolean isSmallKana, System.Byte markType, System.Boolean isKatakana, System.Boolean isHalfWidth)
-    // Offset: 0xF528A8
+    // Offset: 0x12507DC
     void AppendKana(uint8_t category, uint8_t lv1, uint8_t lv2, uint8_t lv3, bool isSmallKana, uint8_t markType, bool isKatakana, bool isHalfWidth);
     // System.Void AppendNormal(System.Byte category, System.Byte lv1, System.Byte lv2, System.Byte lv3)
-    // Offset: 0xF52600
+    // Offset: 0x1250874
     void AppendNormal(uint8_t category, uint8_t lv1, uint8_t lv2, uint8_t lv3);
     // private System.Void AppendLevel5(System.Byte category, System.Byte lv1)
-    // Offset: 0xF5B36C
+    // Offset: 0x12509C4
     void AppendLevel5(uint8_t category, uint8_t lv1);
     // private System.Void AppendBufferPrimitive(System.Byte value, ref System.Byte[] buf, ref System.Int32 bidx)
-    // Offset: 0xF5B298
+    // Offset: 0x1250708
     void AppendBufferPrimitive(uint8_t value, ByRef<::ArrayW<uint8_t>> buf, ByRef<int> bidx);
     // public System.Globalization.SortKey GetResultAndReset()
-    // Offset: 0xF52240
+    // Offset: 0x1250A68
     ::System::Globalization::SortKey* GetResultAndReset();
     // private System.Int32 GetOptimizedLength(System.Byte[] data, System.Int32 len, System.Byte defaultValue)
-    // Offset: 0xF5B86C
+    // Offset: 0x1250EF0
     int GetOptimizedLength(::ArrayW<uint8_t> data, int len, uint8_t defaultValue);
     // public System.Globalization.SortKey GetResult()
-    // Offset: 0xF5B410
+    // Offset: 0x1250A94
     ::System::Globalization::SortKey* GetResult();
   }; // Mono.Globalization.Unicode.SortKeyBuffer
   #pragma pack(pop)

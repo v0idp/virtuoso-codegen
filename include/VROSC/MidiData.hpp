@@ -26,15 +26,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class MidiData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 SelectedMidiChannel
     // Size: 0x4
     // Offset: 0x10
@@ -55,13 +47,13 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 SelectedMidiChannel
-    int& dyn_SelectedMidiChannel();
+    [[deprecated]] int& dyn_SelectedMidiChannel();
     // Get instance field reference: public System.Int32 MinMidiChannel
-    int& dyn_MinMidiChannel();
+    [[deprecated]] int& dyn_MinMidiChannel();
     // Get instance field reference: public System.Int32 MaxMidiChannel
-    int& dyn_MaxMidiChannel();
+    [[deprecated]] int& dyn_MaxMidiChannel();
     // public System.Void .ctor()
-    // Offset: 0x8B3AC4
+    // Offset: 0xAC7654
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

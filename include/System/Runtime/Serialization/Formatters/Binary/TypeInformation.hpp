@@ -27,15 +27,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class TypeInformation : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String fullTypeName
     // Size: 0x8
     // Offset: 0x10
@@ -56,22 +48,22 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String fullTypeName
-    ::StringW& dyn_fullTypeName();
+    [[deprecated]] ::StringW& dyn_fullTypeName();
     // Get instance field reference: private System.String assemblyString
-    ::StringW& dyn_assemblyString();
+    [[deprecated]] ::StringW& dyn_assemblyString();
     // Get instance field reference: private System.Boolean hasTypeForwardedFrom
-    bool& dyn_hasTypeForwardedFrom();
+    [[deprecated]] bool& dyn_hasTypeForwardedFrom();
     // System.String get_FullTypeName()
-    // Offset: 0x106E5CC
+    // Offset: 0x12B245C
     ::StringW get_FullTypeName();
     // System.String get_AssemblyString()
-    // Offset: 0x106E5D4
+    // Offset: 0x12B2464
     ::StringW get_AssemblyString();
     // System.Boolean get_HasTypeForwardedFrom()
-    // Offset: 0x106E5DC
+    // Offset: 0x12B246C
     bool get_HasTypeForwardedFrom();
     // System.Void .ctor(System.String fullTypeName, System.String assemblyString, System.Boolean hasTypeForwardedFrom)
-    // Offset: 0x106E5E4
+    // Offset: 0x12B2474
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TypeInformation* New_ctor(::StringW fullTypeName, ::StringW assemblyString, bool hasTypeForwardedFrom) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::Serialization::Formatters::Binary::TypeInformation::.ctor");

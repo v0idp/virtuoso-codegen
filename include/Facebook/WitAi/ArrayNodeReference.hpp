@@ -36,15 +36,7 @@ namespace Facebook::WitAi {
   // [TokenAttribute] Offset: FFFFFFFF
   class ArrayNodeReference : public ::Facebook::WitAi::WitResponseReference {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 index
     // Size: 0x4
     // Offset: 0x20
@@ -57,9 +49,9 @@ namespace Facebook::WitAi {
       return index;
     }
     // Get instance field reference: public System.Int32 index
-    int& dyn_index();
+    [[deprecated]] int& dyn_index();
     // public System.Void .ctor()
-    // Offset: 0x10F7E80
+    // Offset: 0x166E6E8
     // Implemented from: Facebook.WitAi.WitResponseReference
     // Base method: System.Void WitResponseReference::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -69,17 +61,17 @@ namespace Facebook::WitAi {
       return THROW_UNLESS((::il2cpp_utils::New<ArrayNodeReference*, creationType>()));
     }
     // public override System.String GetStringValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x10F7CFC
+    // Offset: 0x166E564
     // Implemented from: Facebook.WitAi.WitResponseReference
     // Base method: System.String WitResponseReference::GetStringValue(Facebook.WitAi.Lib.WitResponseNode response)
     ::StringW GetStringValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public override System.Int32 GetIntValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x10F7D78
+    // Offset: 0x166E5E0
     // Implemented from: Facebook.WitAi.WitResponseReference
     // Base method: System.Int32 WitResponseReference::GetIntValue(Facebook.WitAi.Lib.WitResponseNode response)
     int GetIntValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public override System.Single GetFloatValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x10F7DF8
+    // Offset: 0x166E660
     // Implemented from: Facebook.WitAi.WitResponseReference
     // Base method: System.Single WitResponseReference::GetFloatValue(Facebook.WitAi.Lib.WitResponseNode response)
     float GetFloatValue(::Facebook::WitAi::Lib::WitResponseNode* response);

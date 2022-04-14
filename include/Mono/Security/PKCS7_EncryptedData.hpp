@@ -31,15 +31,7 @@ namespace Mono::Security {
   // [TokenAttribute] Offset: FFFFFFFF
   class PKCS7::EncryptedData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Byte _version
     // Size: 0x1
     // Offset: 0x10
@@ -68,28 +60,28 @@ namespace Mono::Security {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: private System.Byte _version
-    uint8_t& dyn__version();
+    [[deprecated]] uint8_t& dyn__version();
     // Get instance field reference: private Mono.Security.PKCS7/Mono.Security.ContentInfo _content
-    ::Mono::Security::PKCS7::ContentInfo*& dyn__content();
+    [[deprecated]] ::Mono::Security::PKCS7::ContentInfo*& dyn__content();
     // Get instance field reference: private Mono.Security.PKCS7/Mono.Security.ContentInfo _encryptionAlgorithm
-    ::Mono::Security::PKCS7::ContentInfo*& dyn__encryptionAlgorithm();
+    [[deprecated]] ::Mono::Security::PKCS7::ContentInfo*& dyn__encryptionAlgorithm();
     // Get instance field reference: private System.Byte[] _encrypted
-    ::ArrayW<uint8_t>& dyn__encrypted();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__encrypted();
     // public Mono.Security.PKCS7/Mono.Security.ContentInfo get_EncryptionAlgorithm()
-    // Offset: 0x12DE914
+    // Offset: 0x18E1B88
     ::Mono::Security::PKCS7::ContentInfo* get_EncryptionAlgorithm();
     // public System.Byte[] get_EncryptedContent()
-    // Offset: 0x12DE91C
+    // Offset: 0x18E1B90
     ::ArrayW<uint8_t> get_EncryptedContent();
     // public System.Void .ctor(Mono.Security.ASN1 asn1)
-    // Offset: 0x12DE620
+    // Offset: 0x18E1894
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PKCS7::EncryptedData* New_ctor(::Mono::Security::ASN1* asn1) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::PKCS7::EncryptedData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PKCS7::EncryptedData*, creationType>(asn1)));
     }
     // public System.Void .ctor()
-    // Offset: 0x12DE5F8
+    // Offset: 0x18E186C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

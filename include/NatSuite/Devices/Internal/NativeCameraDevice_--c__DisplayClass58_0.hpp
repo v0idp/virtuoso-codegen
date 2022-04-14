@@ -42,15 +42,7 @@ namespace NatSuite::Devices::Internal {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class NativeCameraDevice::$$c__DisplayClass58_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public NatSuite.Devices.Internal.NativeCameraDevice <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -65,14 +57,14 @@ namespace NatSuite::Devices::Internal {
     static_assert(sizeof(::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*) == 0x8);
     public:
     // Get instance field reference: public NatSuite.Devices.Internal.NativeCameraDevice <>4__this
-    ::NatSuite::Devices::Internal::NativeCameraDevice*& dyn_$$4__this();
+    [[deprecated]] ::NatSuite::Devices::Internal::NativeCameraDevice*& dyn_$$4__this();
     // Get instance field reference: public System.Threading.Tasks.TaskCompletionSource`1<UnityEngine.Texture2D> startTask
-    ::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*& dyn_startTask();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*& dyn_startTask();
     // System.Void <StartRunning>b__0(System.IntPtr pixelBuffer, System.Int32 width, System.Int32 height, System.Int64 timestamp)
-    // Offset: 0x133D670
+    // Offset: 0x1965560
     void $StartRunning$b__0(::System::IntPtr pixelBuffer, int width, int height, int64_t timestamp);
     // public System.Void .ctor()
-    // Offset: 0x133D668
+    // Offset: 0x1965558
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -63,36 +63,36 @@ namespace UnityEngine::Experimental::GlobalIllumination {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Single m_red
-    float& dyn_m_red();
+    [[deprecated]] float& dyn_m_red();
     // Get instance field reference: private System.Single m_green
-    float& dyn_m_green();
+    [[deprecated]] float& dyn_m_green();
     // Get instance field reference: private System.Single m_blue
-    float& dyn_m_blue();
+    [[deprecated]] float& dyn_m_blue();
     // Get instance field reference: private System.Single m_intensity
-    float& dyn_m_intensity();
+    [[deprecated]] float& dyn_m_intensity();
     // public System.Single get_red()
-    // Offset: 0xE405A0
+    // Offset: 0x112CB98
     float get_red();
     // public System.Void set_red(System.Single value)
-    // Offset: 0xE405A8
+    // Offset: 0x112CBA0
     void set_red(float value);
     // public System.Single get_green()
-    // Offset: 0xE40660
+    // Offset: 0x112CC58
     float get_green();
     // public System.Void set_green(System.Single value)
-    // Offset: 0xE40668
+    // Offset: 0x112CC60
     void set_green(float value);
     // public System.Single get_blue()
-    // Offset: 0xE40720
+    // Offset: 0x112CD18
     float get_blue();
     // public System.Void set_blue(System.Single value)
-    // Offset: 0xE40728
+    // Offset: 0x112CD20
     void set_blue(float value);
     // static public UnityEngine.Experimental.GlobalIllumination.LinearColor Convert(UnityEngine.Color color, System.Single intensity)
-    // Offset: 0xE40184
+    // Offset: 0x112C77C
     static ::UnityEngine::Experimental::GlobalIllumination::LinearColor Convert(::UnityEngine::Color color, float intensity);
     // static public UnityEngine.Experimental.GlobalIllumination.LinearColor Black()
-    // Offset: 0xE41CEC
+    // Offset: 0x112E2E4
     static ::UnityEngine::Experimental::GlobalIllumination::LinearColor Black();
   }; // UnityEngine.Experimental.GlobalIllumination.LinearColor
   #pragma pack(pop)

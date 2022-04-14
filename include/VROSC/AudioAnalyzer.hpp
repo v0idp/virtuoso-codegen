@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AudioAnalyzer : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single[] _currentlyPlayingData
     // Size: 0x8
     // Offset: 0x18
@@ -167,65 +159,65 @@ namespace VROSC {
     // Set static field: static private System.Boolean _hasCachedBandsPlaying
     static void _set__hasCachedBandsPlaying(bool value);
     // Get instance field reference: private System.Single[] _currentlyPlayingData
-    ::ArrayW<float>& dyn__currentlyPlayingData();
+    [[deprecated]] ::ArrayW<float>& dyn__currentlyPlayingData();
     // Get instance field reference: private UnityEngine.AudioSource _currentlyPlayingAudioSource
-    ::UnityEngine::AudioSource*& dyn__currentlyPlayingAudioSource();
+    [[deprecated]] ::UnityEngine::AudioSource*& dyn__currentlyPlayingAudioSource();
     // Get instance field reference: private UnityEngine.FFTWindow _fftWindow
-    ::UnityEngine::FFTWindow& dyn__fftWindow();
+    [[deprecated]] ::UnityEngine::FFTWindow& dyn__fftWindow();
     // Get instance field reference: private System.Single[] _leftMasterSamplesRaw
-    ::ArrayW<float>& dyn__leftMasterSamplesRaw();
+    [[deprecated]] ::ArrayW<float>& dyn__leftMasterSamplesRaw();
     // Get instance field reference: private System.Single[] _rightMasterSamplesRaw
-    ::ArrayW<float>& dyn__rightMasterSamplesRaw();
+    [[deprecated]] ::ArrayW<float>& dyn__rightMasterSamplesRaw();
     // Get instance field reference: private System.Single[] _leftPlayingSamplesRaw
-    ::ArrayW<float>& dyn__leftPlayingSamplesRaw();
+    [[deprecated]] ::ArrayW<float>& dyn__leftPlayingSamplesRaw();
     // Get instance field reference: private System.Single[] _rightPlayingSamplesRaw
-    ::ArrayW<float>& dyn__rightPlayingSamplesRaw();
+    [[deprecated]] ::ArrayW<float>& dyn__rightPlayingSamplesRaw();
     // Get instance field reference: private System.Single _normalizeFloor
-    float& dyn__normalizeFloor();
+    [[deprecated]] float& dyn__normalizeFloor();
     // Get instance field reference: private System.Single _normalizeCeiling
-    float& dyn__normalizeCeiling();
+    [[deprecated]] float& dyn__normalizeCeiling();
     // Get instance field reference: private System.Single _smoothingSpeed
-    float& dyn__smoothingSpeed();
+    [[deprecated]] float& dyn__smoothingSpeed();
     // Get instance field reference: private System.Boolean _masterIsMono
-    bool& dyn__masterIsMono();
+    [[deprecated]] bool& dyn__masterIsMono();
     // static protected System.Void RoutingDemo_GetData(System.Int32 target, System.Single[] data, System.Int32 numsamples, System.Int32 numchannels)
-    // Offset: 0x136F4FC
+    // Offset: 0x96E180
     static void RoutingDemo_GetData(int target, ::ArrayW<float> data, int numsamples, int numchannels);
     // protected System.Void Start()
-    // Offset: 0x136F5AC
+    // Offset: 0x96E230
     void Start();
     // protected System.Void Update()
-    // Offset: 0x136F6B0
+    // Offset: 0x96E334
     void Update();
     // private System.Void GetSpectrumAudioSource()
-    // Offset: 0x136F6B4
+    // Offset: 0x96E338
     void GetSpectrumAudioSource();
     // private System.Single Normalize(System.Single rawValue)
-    // Offset: 0x136FADC
+    // Offset: 0x96E760
     float Normalize(float rawValue);
     // private System.Single Smooth(System.Single newValue, System.Single oldValue)
-    // Offset: 0x136FB1C
+    // Offset: 0x96E7A0
     float Smooth(float newValue, float oldValue);
     // static public System.Single GetAmplitude(System.Single minFrequency, System.Single maxFrequency, System.Boolean currentlyPlayingOnly, System.Boolean usePeakInsteadOfAverage, System.Boolean smoothed)
-    // Offset: 0x136FB60
+    // Offset: 0x96E7E4
     static float GetAmplitude(float minFrequency, float maxFrequency, bool currentlyPlayingOnly, bool usePeakInsteadOfAverage, bool smoothed);
     // static public System.Single GetAmplitude(System.Single[] samples, System.Single minFrequency, System.Single maxFrequency, System.Boolean usePeakInsteadOfAverage)
-    // Offset: 0x136FC7C
+    // Offset: 0x96E900
     static float GetAmplitude(::ArrayW<float> samples, float minFrequency, float maxFrequency, bool usePeakInsteadOfAverage);
     // static public System.Single[] GetBands(System.Int32 numberOfBands, System.Boolean currentPlayingOnly)
-    // Offset: 0x136FFE0
+    // Offset: 0x96EC64
     static ::ArrayW<float> GetBands(int numberOfBands, bool currentPlayingOnly);
     // static private System.Int32 FrequencyToSpectrumIndex(System.Single frequency)
-    // Offset: 0x136FE98
+    // Offset: 0x96EB1C
     static int FrequencyToSpectrumIndex(float frequency);
     // static private System.Single SpectrumIndexToFrequency(System.Int32 index)
-    // Offset: 0x136FF4C
+    // Offset: 0x96EBD0
     static float SpectrumIndexToFrequency(int index);
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x1370354
+    // Offset: 0x96EFD8
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void .ctor()
-    // Offset: 0x1370448
+    // Offset: 0x96F0CC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -238,7 +230,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AudioAnalyzer*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x1370500
+    // Offset: 0x96F184
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

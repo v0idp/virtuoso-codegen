@@ -36,15 +36,7 @@ namespace RSG {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Promise::$$c__DisplayClass34_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public RSG.Promise <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -59,14 +51,14 @@ namespace RSG {
     static_assert(sizeof(::System::Exception*) == 0x8);
     public:
     // Get instance field reference: public RSG.Promise <>4__this
-    ::RSG::Promise*& dyn_$$4__this();
+    [[deprecated]] ::RSG::Promise*& dyn_$$4__this();
     // Get instance field reference: public System.Exception ex
-    ::System::Exception*& dyn_ex();
+    [[deprecated]] ::System::Exception*& dyn_ex();
     // System.Void <InvokeRejectHandlers>b__0(RSG.RejectHandler handler)
-    // Offset: 0x1343380
+    // Offset: 0x8CE2D8
     void $InvokeRejectHandlers$b__0(::RSG::RejectHandler handler);
     // public System.Void .ctor()
-    // Offset: 0x1343378
+    // Offset: 0x8CE2D0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

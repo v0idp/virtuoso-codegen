@@ -53,11 +53,11 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public DG.Tweening.AxisConstraint axisConstraint
-    ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
+    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
     // Get instance field reference: public System.Boolean snapping
-    bool& dyn_snapping();
+    [[deprecated]] bool& dyn_snapping();
     // public System.Void Reset()
-    // Offset: 0x126AAC4
+    // Offset: 0x1862E68
     void Reset();
   }; // DG.Tweening.Plugins.Options.VectorOptions
   #pragma pack(pop)

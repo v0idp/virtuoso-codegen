@@ -51,15 +51,7 @@ namespace TMPro {
     public:
     // Nested type: ::TMPro::TMP_SpriteAnimator::$DoSpriteAnimationInternal$d__7
     class $DoSpriteAnimationInternal$d__7;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean> m_animations
     // Size: 0x8
     // Offset: 0x18
@@ -76,29 +68,29 @@ namespace TMPro {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean> m_animations
-    ::System::Collections::Generic::Dictionary_2<int, bool>*& dyn_m_animations();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, bool>*& dyn_m_animations();
     // Get instance field reference: private TMPro.TMP_Text m_TextComponent
-    ::TMPro::TMP_Text*& dyn_m_TextComponent();
+    [[deprecated]] ::TMPro::TMP_Text*& dyn_m_TextComponent();
     // private System.Void Awake()
-    // Offset: 0x85A994
+    // Offset: 0x9B1B2C
     void Awake();
     // private System.Void OnEnable()
-    // Offset: 0x85A9E8
+    // Offset: 0x9B1B80
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x85A9EC
+    // Offset: 0x9B1B84
     void OnDisable();
     // public System.Void StopAllAnimations()
-    // Offset: 0x85A9F0
+    // Offset: 0x9B1B88
     void StopAllAnimations();
     // public System.Void DoSpriteAnimation(System.Int32 currentCharacter, TMPro.TMP_SpriteAsset spriteAsset, System.Int32 start, System.Int32 end, System.Int32 framerate)
-    // Offset: 0x85AA50
+    // Offset: 0x9B1BE8
     void DoSpriteAnimation(int currentCharacter, ::TMPro::TMP_SpriteAsset* spriteAsset, int start, int end, int framerate);
     // private System.Collections.IEnumerator DoSpriteAnimationInternal(System.Int32 currentCharacter, TMPro.TMP_SpriteAsset spriteAsset, System.Int32 start, System.Int32 end, System.Int32 framerate)
-    // Offset: 0x85AB3C
+    // Offset: 0x9B1CD4
     ::System::Collections::IEnumerator* DoSpriteAnimationInternal(int currentCharacter, ::TMPro::TMP_SpriteAsset* spriteAsset, int start, int end, int framerate);
     // public System.Void .ctor()
-    // Offset: 0x85ABE0
+    // Offset: 0x9B1D78
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

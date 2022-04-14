@@ -99,21 +99,13 @@ namespace VROSC::AudioReactive {
       // Set static field: static public VROSC.AudioReactive.AudioReactiveBehaviour/VROSC.AudioReactive.ReactiveBeat PlayerTop
       static void _set_PlayerTop(::VROSC::AudioReactive::AudioReactiveBehaviour::ReactiveBeat value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.AudioReactive.AudioReactiveBehaviour/VROSC.AudioReactive.ReactiveBeat
     #pragma pack(pop)
     static check_size<sizeof(AudioReactiveBehaviour::ReactiveBeat), 0 + sizeof(int)> __VROSC_AudioReactive_AudioReactiveBehaviour_ReactiveBeatSizeCheck;
     static_assert(sizeof(AudioReactiveBehaviour::ReactiveBeat) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [BitMaskAttribute] Offset: 0x676330
+    // [BitMaskAttribute] Offset: 0x78CBD4
     // private VROSC.AudioReactive.AudioReactiveBehaviour/VROSC.AudioReactive.ReactiveBeat _reactOn
     // Size: 0x4
     // Offset: 0x18
@@ -136,28 +128,28 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveBehaviour/VROSC.AudioReactive.ReactiveBeat _reactOn
-    ::VROSC::AudioReactive::AudioReactiveBehaviour::ReactiveBeat& dyn__reactOn();
+    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveBehaviour::ReactiveBeat& dyn__reactOn();
     // Get instance field reference: private System.Int32 _coolDown
-    int& dyn__coolDown();
+    [[deprecated]] int& dyn__coolDown();
     // Get instance field reference: private System.Int32 _onCoolDown
-    int& dyn__onCoolDown();
+    [[deprecated]] int& dyn__onCoolDown();
     // protected System.Void Awake()
-    // Offset: 0x1371E74
+    // Offset: 0x970C08
     void Awake();
     // protected System.Void OnEnable()
-    // Offset: 0x1371E78
+    // Offset: 0x970C0C
     void OnEnable();
     // protected System.Void OnDisable()
-    // Offset: 0x1371F64
+    // Offset: 0x970CF8
     void OnDisable();
     // private System.Void FilterBeat(System.Int32 beat)
-    // Offset: 0x1372050
+    // Offset: 0x970DE4
     void FilterBeat(int beat);
     // protected System.Void OnBeat(System.Int32 beat)
-    // Offset: 0x13720A0
+    // Offset: 0x970E34
     void OnBeat(int beat);
     // public System.Void .ctor()
-    // Offset: 0x13720A4
+    // Offset: 0x970E38
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

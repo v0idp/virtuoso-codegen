@@ -57,15 +57,7 @@ namespace DG::Tweening {
   // [TokenAttribute] Offset: FFFFFFFF
   class Tweener : public ::DG::Tweening::Tween {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Boolean hasManuallySetStartValue
     // Size: 0x1
     // Offset: 0x120
@@ -80,9 +72,9 @@ namespace DG::Tweening {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Boolean hasManuallySetStartValue
-    bool& dyn_hasManuallySetStartValue();
+    [[deprecated]] bool& dyn_hasManuallySetStartValue();
     // Get instance field reference: System.Boolean isFromAllowed
-    bool& dyn_isFromAllowed();
+    [[deprecated]] bool& dyn_isFromAllowed();
     // public DG.Tweening.Tweener ChangeStartValue(System.Object newStartValue, System.Single newDuration)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::DG::Tweening::Tweener* ChangeStartValue(::Il2CppObject* newStartValue, float newDuration);
@@ -179,7 +171,7 @@ namespace DG::Tweening {
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, t);
     }
     // System.Void .ctor()
-    // Offset: 0x103FA48
+    // Offset: 0x15B6440
     // Implemented from: DG.Tweening.Tween
     // Base method: System.Void Tween::.ctor()
     // Base method: System.Void ABSSequentiable::.ctor()

@@ -58,15 +58,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class FileWebResponse : public ::System::Net::WebResponse/*, public ::System::Net::ICloseEx*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean m_closed
     // Size: 0x1
     // Offset: 0x1A
@@ -113,40 +105,45 @@ namespace System::Net {
       return *reinterpret_cast<::System::Net::ICloseEx*>(this);
     }
     // Get instance field reference: private System.Boolean m_closed
-    bool& dyn_m_closed();
+    [[deprecated]] bool& dyn_m_closed();
     // Get instance field reference: private System.Int64 m_contentLength
-    int64_t& dyn_m_contentLength();
+    [[deprecated]] int64_t& dyn_m_contentLength();
     // Get instance field reference: private System.IO.FileAccess m_fileAccess
-    ::System::IO::FileAccess& dyn_m_fileAccess();
+    [[deprecated]] ::System::IO::FileAccess& dyn_m_fileAccess();
     // Get instance field reference: private System.Net.WebHeaderCollection m_headers
-    ::System::Net::WebHeaderCollection*& dyn_m_headers();
+    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_m_headers();
     // Get instance field reference: private System.IO.Stream m_stream
-    ::System::IO::Stream*& dyn_m_stream();
+    [[deprecated]] ::System::IO::Stream*& dyn_m_stream();
     // Get instance field reference: private System.Uri m_uri
-    ::System::Uri*& dyn_m_uri();
+    [[deprecated]] ::System::Uri*& dyn_m_uri();
     // System.Void .ctor(System.Net.FileWebRequest request, System.Uri uri, System.IO.FileAccess access, System.Boolean asyncHint)
-    // Offset: 0xD81044
+    // Offset: 0xF0280C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FileWebResponse* New_ctor(::System::Net::FileWebRequest* request, ::System::Uri* uri, ::System::IO::FileAccess access, bool asyncHint) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::FileWebResponse::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FileWebResponse*, creationType>(request, uri, access, asyncHint)));
     }
     // private System.Void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xD81BC8
+    // Offset: 0xF03390
     void System_Runtime_Serialization_ISerializable_GetObjectData(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext);
     // private System.Void CheckDisposed()
-    // Offset: 0xD81DB4
+    // Offset: 0xF0357C
     void CheckDisposed();
     // private System.Void System.Net.ICloseEx.CloseEx(System.Net.CloseExState closeState)
-    // Offset: 0xD81ED0
+    // Offset: 0xF036BC
     void System_Net_ICloseEx_CloseEx(::System::Net::CloseExState closeState);
     // public override System.Net.WebHeaderCollection get_Headers()
-    // Offset: 0xD81D90
+    // Offset: 0xF03558
     // Implemented from: System.Net.WebResponse
     // Base method: System.Net.WebHeaderCollection WebResponse::get_Headers()
     ::System::Net::WebHeaderCollection* get_Headers();
+    // public override System.Uri get_ResponseUri()
+    // Offset: 0xF035F4
+    // Implemented from: System.Net.WebResponse
+    // Base method: System.Uri WebResponse::get_ResponseUri()
+    ::System::Uri* get_ResponseUri();
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xD819B8
+    // Offset: 0xF03180
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -155,17 +152,17 @@ namespace System::Net {
       return THROW_UNLESS((::il2cpp_utils::New<FileWebResponse*, creationType>(serializationInfo, streamingContext)));
     }
     // protected override System.Void GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Offset: 0xD81BD4
+    // Offset: 0xF0339C
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::GetObjectData(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     void GetObjectData(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext);
     // public override System.Void Close()
-    // Offset: 0xD81E2C
+    // Offset: 0xF03618
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::Close()
     void Close();
     // public override System.IO.Stream GetResponseStream()
-    // Offset: 0xD82044
+    // Offset: 0xF03830
     // Implemented from: System.Net.WebResponse
     // Base method: System.IO.Stream WebResponse::GetResponseStream()
     ::System::IO::Stream* GetResponseStream();
@@ -212,6 +209,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Net::WebHeaderCollection* (System::Net::FileWebResponse::*)()>(&System::Net::FileWebResponse::get_Headers)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::Net::FileWebResponse*), "get_Headers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::Net::FileWebResponse::get_ResponseUri
+// Il2CppName: get_ResponseUri
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Uri* (System::Net::FileWebResponse::*)()>(&System::Net::FileWebResponse::get_ResponseUri)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Net::FileWebResponse*), "get_ResponseUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: System::Net::FileWebResponse::New_ctor

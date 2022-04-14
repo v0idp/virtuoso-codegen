@@ -39,15 +39,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class RegexFC : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Text.RegularExpressions.RegexCharClass _cc
     // Size: 0x8
     // Offset: 0x10
@@ -68,40 +60,40 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Text.RegularExpressions.RegexCharClass _cc
-    ::System::Text::RegularExpressions::RegexCharClass*& dyn__cc();
+    [[deprecated]] ::System::Text::RegularExpressions::RegexCharClass*& dyn__cc();
     // Get instance field reference: System.Boolean _nullable
-    bool& dyn__nullable();
+    [[deprecated]] bool& dyn__nullable();
     // Get instance field reference: System.Boolean _caseInsensitive
-    bool& dyn__caseInsensitive();
+    [[deprecated]] bool& dyn__caseInsensitive();
     // System.Void .ctor(System.Boolean nullable)
-    // Offset: 0x1250D64
+    // Offset: 0x1845F38
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RegexFC* New_ctor(bool nullable) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexFC::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RegexFC*, creationType>(nullable)));
     }
     // System.Void .ctor(System.Char ch, System.Boolean not, System.Boolean nullable, System.Boolean caseInsensitive)
-    // Offset: 0x1250DE0
+    // Offset: 0x1845FB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RegexFC* New_ctor(::Il2CppChar ch, bool _not, bool nullable, bool caseInsensitive) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexFC::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RegexFC*, creationType>(ch, _not, nullable, caseInsensitive)));
     }
     // System.Void .ctor(System.String charClass, System.Boolean nullable, System.Boolean caseInsensitive)
-    // Offset: 0x1250EDC
+    // Offset: 0x18460B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RegexFC* New_ctor(::StringW charClass, bool nullable, bool caseInsensitive) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexFC::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RegexFC*, creationType>(charClass, nullable, caseInsensitive)));
     }
     // System.Boolean AddFC(System.Text.RegularExpressions.RegexFC fc, System.Boolean concatenate)
-    // Offset: 0x1250F80
+    // Offset: 0x1846154
     bool AddFC(::System::Text::RegularExpressions::RegexFC* fc, bool concatenate);
     // System.String GetFirstChars(System.Globalization.CultureInfo culture)
-    // Offset: 0x1251038
+    // Offset: 0x184620C
     ::StringW GetFirstChars(::System::Globalization::CultureInfo* culture);
     // System.Boolean IsCaseInsensitive()
-    // Offset: 0x125107C
+    // Offset: 0x1846250
     bool IsCaseInsensitive();
   }; // System.Text.RegularExpressions.RegexFC
   #pragma pack(pop)

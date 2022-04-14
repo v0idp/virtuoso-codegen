@@ -38,15 +38,7 @@ namespace OVR::OpenVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class CVRResources : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private OVR.OpenVR.IVRResources FnTable
     // Size: 0x10
     // Offset: 0x10
@@ -59,19 +51,19 @@ namespace OVR::OpenVR {
       return FnTable;
     }
     // Get instance field reference: private OVR.OpenVR.IVRResources FnTable
-    ::OVR::OpenVR::IVRResources& dyn_FnTable();
+    [[deprecated]] ::OVR::OpenVR::IVRResources& dyn_FnTable();
     // System.Void .ctor(System.IntPtr pInterface)
-    // Offset: 0x80FB24
+    // Offset: 0x9850F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CVRResources* New_ctor(::System::IntPtr pInterface) {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::OpenVR::CVRResources::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CVRResources*, creationType>(pInterface)));
     }
     // public System.UInt32 LoadSharedResource(System.String pchResourceName, System.String pchBuffer, System.UInt32 unBufferLen)
-    // Offset: 0x80FC44
+    // Offset: 0x985210
     uint LoadSharedResource(::StringW pchResourceName, ::StringW pchBuffer, uint unBufferLen);
     // public System.UInt32 GetResourceFullPath(System.String pchResourceName, System.String pchResourceTypeDirectory, System.Text.StringBuilder pchPathBuffer, System.UInt32 unBufferLen)
-    // Offset: 0x80FC60
+    // Offset: 0x98522C
     uint GetResourceFullPath(::StringW pchResourceName, ::StringW pchResourceTypeDirectory, ::System::Text::StringBuilder* pchPathBuffer, uint unBufferLen);
   }; // OVR.OpenVR.CVRResources
   #pragma pack(pop)

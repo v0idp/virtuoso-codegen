@@ -26,15 +26,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlaybackConfigOverrideFlags : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean OverrideStartMode
     // Size: 0x1
     // Offset: 0x10
@@ -73,19 +65,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Boolean OverrideStartMode
-    bool& dyn_OverrideStartMode();
+    [[deprecated]] bool& dyn_OverrideStartMode();
     // Get instance field reference: public System.Boolean OverrideStopMode
-    bool& dyn_OverrideStopMode();
+    [[deprecated]] bool& dyn_OverrideStopMode();
     // Get instance field reference: public System.Boolean OverrideFadeIn
-    bool& dyn_OverrideFadeIn();
+    [[deprecated]] bool& dyn_OverrideFadeIn();
     // Get instance field reference: public System.Boolean OverrideFadeOut
-    bool& dyn_OverrideFadeOut();
+    [[deprecated]] bool& dyn_OverrideFadeOut();
     // Get instance field reference: public System.Boolean OverrideOneShot
-    bool& dyn_OverrideOneShot();
+    [[deprecated]] bool& dyn_OverrideOneShot();
     // Get instance field reference: public System.Boolean OverrideRetrigger
-    bool& dyn_OverrideRetrigger();
+    [[deprecated]] bool& dyn_OverrideRetrigger();
     // public System.Void .ctor()
-    // Offset: 0x1396DE8
+    // Offset: 0x19B70B8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

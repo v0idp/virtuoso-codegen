@@ -24,13 +24,13 @@ namespace System::Runtime {
   // [TokenAttribute] Offset: FFFFFFFF
   class GCSettings : public ::Il2CppObject {
     public:
-    // [CompilerGeneratedAttribute] Offset: 0x57FE6C
+    // [CompilerGeneratedAttribute] Offset: 0x689138
     // Get static field: static private System.Runtime.GCLargeObjectHeapCompactionMode <LargeObjectHeapCompactionMode>k__BackingField
     static ::System::Runtime::GCLargeObjectHeapCompactionMode _get_$LargeObjectHeapCompactionMode$k__BackingField();
     // Set static field: static private System.Runtime.GCLargeObjectHeapCompactionMode <LargeObjectHeapCompactionMode>k__BackingField
     static void _set_$LargeObjectHeapCompactionMode$k__BackingField(::System::Runtime::GCLargeObjectHeapCompactionMode value);
     // static public System.Void set_LargeObjectHeapCompactionMode(System.Runtime.GCLargeObjectHeapCompactionMode value)
-    // Offset: 0xC1E778
+    // Offset: 0x1454C98
     static void set_LargeObjectHeapCompactionMode(::System::Runtime::GCLargeObjectHeapCompactionMode value);
   }; // System.Runtime.GCSettings
   #pragma pack(pop)

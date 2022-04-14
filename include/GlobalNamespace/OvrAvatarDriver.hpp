@@ -90,7 +90,7 @@ namespace GlobalNamespace {
       // Set static field: static public OvrAvatarDriver/PacketMode Unity
       static void _set_Unity(::GlobalNamespace::OvrAvatarDriver::PacketMode value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OvrAvatarDriver/PacketMode
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarDriver::PacketMode), 0 + sizeof(int)> __GlobalNamespace_OvrAvatarDriver_PacketModeSizeCheck;
@@ -147,19 +147,19 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public ovrAvatarButton buttons
-      ::GlobalNamespace::ovrAvatarButton& dyn_buttons();
+      [[deprecated]] ::GlobalNamespace::ovrAvatarButton& dyn_buttons();
       // Get instance field reference: public ovrAvatarTouch touches
-      ::GlobalNamespace::ovrAvatarTouch& dyn_touches();
+      [[deprecated]] ::GlobalNamespace::ovrAvatarTouch& dyn_touches();
       // Get instance field reference: public UnityEngine.Vector2 joystickPosition
-      ::UnityEngine::Vector2& dyn_joystickPosition();
+      [[deprecated]] ::UnityEngine::Vector2& dyn_joystickPosition();
       // Get instance field reference: public System.Single indexTrigger
-      float& dyn_indexTrigger();
+      [[deprecated]] float& dyn_indexTrigger();
       // Get instance field reference: public System.Single handTrigger
-      float& dyn_handTrigger();
+      [[deprecated]] float& dyn_handTrigger();
       // Get instance field reference: public System.Boolean isActive
-      bool& dyn_isActive();
+      [[deprecated]] bool& dyn_isActive();
       // static public OvrAvatarDriver/ControllerPose Interpolate(OvrAvatarDriver/ControllerPose a, OvrAvatarDriver/ControllerPose b, System.Single t)
-      // Offset: 0x1341054
+      // Offset: 0x8CBF78
       static ::GlobalNamespace::OvrAvatarDriver::ControllerPose Interpolate(::GlobalNamespace::OvrAvatarDriver::ControllerPose a, ::GlobalNamespace::OvrAvatarDriver::ControllerPose b, float t);
     }; // OvrAvatarDriver/ControllerPose
     #pragma pack(pop)
@@ -237,39 +237,31 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Vector3 headPosition
-      ::UnityEngine::Vector3& dyn_headPosition();
+      [[deprecated]] ::UnityEngine::Vector3& dyn_headPosition();
       // Get instance field reference: public UnityEngine.Quaternion headRotation
-      ::UnityEngine::Quaternion& dyn_headRotation();
+      [[deprecated]] ::UnityEngine::Quaternion& dyn_headRotation();
       // Get instance field reference: public UnityEngine.Vector3 handLeftPosition
-      ::UnityEngine::Vector3& dyn_handLeftPosition();
+      [[deprecated]] ::UnityEngine::Vector3& dyn_handLeftPosition();
       // Get instance field reference: public UnityEngine.Quaternion handLeftRotation
-      ::UnityEngine::Quaternion& dyn_handLeftRotation();
+      [[deprecated]] ::UnityEngine::Quaternion& dyn_handLeftRotation();
       // Get instance field reference: public UnityEngine.Vector3 handRightPosition
-      ::UnityEngine::Vector3& dyn_handRightPosition();
+      [[deprecated]] ::UnityEngine::Vector3& dyn_handRightPosition();
       // Get instance field reference: public UnityEngine.Quaternion handRightRotation
-      ::UnityEngine::Quaternion& dyn_handRightRotation();
+      [[deprecated]] ::UnityEngine::Quaternion& dyn_handRightRotation();
       // Get instance field reference: public System.Single voiceAmplitude
-      float& dyn_voiceAmplitude();
+      [[deprecated]] float& dyn_voiceAmplitude();
       // Get instance field reference: public OvrAvatarDriver/ControllerPose controllerLeftPose
-      ::GlobalNamespace::OvrAvatarDriver::ControllerPose& dyn_controllerLeftPose();
+      [[deprecated]] ::GlobalNamespace::OvrAvatarDriver::ControllerPose& dyn_controllerLeftPose();
       // Get instance field reference: public OvrAvatarDriver/ControllerPose controllerRightPose
-      ::GlobalNamespace::OvrAvatarDriver::ControllerPose& dyn_controllerRightPose();
+      [[deprecated]] ::GlobalNamespace::OvrAvatarDriver::ControllerPose& dyn_controllerRightPose();
       // static public OvrAvatarDriver/PoseFrame Interpolate(OvrAvatarDriver/PoseFrame a, OvrAvatarDriver/PoseFrame b, System.Single t)
-      // Offset: 0x1341130
+      // Offset: 0x8CC054
       static ::GlobalNamespace::OvrAvatarDriver::PoseFrame Interpolate(::GlobalNamespace::OvrAvatarDriver::PoseFrame a, ::GlobalNamespace::OvrAvatarDriver::PoseFrame b, float t);
     }; // OvrAvatarDriver/PoseFrame
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarDriver::PoseFrame), 116 + sizeof(::GlobalNamespace::OvrAvatarDriver::ControllerPose)> __GlobalNamespace_OvrAvatarDriver_PoseFrameSizeCheck;
     static_assert(sizeof(OvrAvatarDriver::PoseFrame) == 0x8D);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OvrAvatarDriver/PacketMode Mode
     // Size: 0x4
     // Offset: 0x18
@@ -294,28 +286,28 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OvrAvatarDriver/PacketMode Mode
-    ::GlobalNamespace::OvrAvatarDriver::PacketMode& dyn_Mode();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarDriver::PacketMode& dyn_Mode();
     // Get instance field reference: protected OvrAvatarDriver/PoseFrame CurrentPose
-    ::GlobalNamespace::OvrAvatarDriver::PoseFrame& dyn_CurrentPose();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarDriver::PoseFrame& dyn_CurrentPose();
     // Get instance field reference: private ovrAvatarControllerType ControllerType
-    ::GlobalNamespace::ovrAvatarControllerType& dyn_ControllerType();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarControllerType& dyn_ControllerType();
     // public OvrAvatarDriver/PoseFrame GetCurrentPose()
-    // Offset: 0x92A2D4
+    // Offset: 0xF8B6D4
     ::GlobalNamespace::OvrAvatarDriver::PoseFrame GetCurrentPose();
     // public System.Void UpdateTransforms(System.IntPtr sdkAvatar)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void UpdateTransforms(::System::IntPtr sdkAvatar);
     // private System.Void Start()
-    // Offset: 0x92A2E4
+    // Offset: 0xF8B6E4
     void Start();
     // public System.Void UpdateTransformsFromPose(System.IntPtr sdkAvatar)
-    // Offset: 0x9225F0
+    // Offset: 0xF831F4
     void UpdateTransformsFromPose(::System::IntPtr sdkAvatar);
     // static public System.Boolean GetIsTrackedRemote()
-    // Offset: 0x92A36C
+    // Offset: 0xF8B76C
     static bool GetIsTrackedRemote();
     // protected System.Void .ctor()
-    // Offset: 0x92A374
+    // Offset: 0xF8B774
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -25,15 +25,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRInput::OVRControllerBase::VirtualAxis1DMap : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRInput/RawAxis1D None
     // Size: 0x4
     // Offset: 0x10
@@ -66,20 +58,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRInput::RawAxis1D) == 0x4);
     public:
     // Get instance field reference: public OVRInput/RawAxis1D None
-    ::GlobalNamespace::OVRInput::RawAxis1D& dyn_None();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis1D& dyn_None();
     // Get instance field reference: public OVRInput/RawAxis1D PrimaryIndexTrigger
-    ::GlobalNamespace::OVRInput::RawAxis1D& dyn_PrimaryIndexTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis1D& dyn_PrimaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawAxis1D PrimaryHandTrigger
-    ::GlobalNamespace::OVRInput::RawAxis1D& dyn_PrimaryHandTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis1D& dyn_PrimaryHandTrigger();
     // Get instance field reference: public OVRInput/RawAxis1D SecondaryIndexTrigger
-    ::GlobalNamespace::OVRInput::RawAxis1D& dyn_SecondaryIndexTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis1D& dyn_SecondaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawAxis1D SecondaryHandTrigger
-    ::GlobalNamespace::OVRInput::RawAxis1D& dyn_SecondaryHandTrigger();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawAxis1D& dyn_SecondaryHandTrigger();
     // public OVRInput/RawAxis1D ToRawMask(OVRInput/Axis1D virtualMask)
-    // Offset: 0xF180A0
+    // Offset: 0x13F209C
     ::GlobalNamespace::OVRInput::RawAxis1D ToRawMask(::GlobalNamespace::OVRInput::Axis1D virtualMask);
     // public System.Void .ctor()
-    // Offset: 0xF180F4
+    // Offset: 0x13F20F0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

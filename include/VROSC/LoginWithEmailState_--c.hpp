@@ -43,13 +43,13 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.Error> <>9__20_2
     static void _set_$$9__20_2(::System::Action_1<::VROSC::Error>* value);
     // static private System.Void .cctor()
-    // Offset: 0x13D5208
+    // Offset: 0x195CF24
     static void _cctor();
     // System.Void <FirebaseLoginUserWithEmailSuccess>b__20_2(VROSC.Error error)
-    // Offset: 0x13D5270
+    // Offset: 0x195CF8C
     void $FirebaseLoginUserWithEmailSuccess$b__20_2(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x13D5268
+    // Offset: 0x195CF84
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

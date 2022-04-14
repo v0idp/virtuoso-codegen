@@ -91,7 +91,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRMeshRenderer/ConfidenceBehavior ToggleRenderer
       static void _set_ToggleRenderer(::GlobalNamespace::OVRMeshRenderer::ConfidenceBehavior value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRMeshRenderer/ConfidenceBehavior
     #pragma pack(pop)
     static check_size<sizeof(OVRMeshRenderer::ConfidenceBehavior), 0 + sizeof(int)> __GlobalNamespace_OVRMeshRenderer_ConfidenceBehaviorSizeCheck;
@@ -133,20 +133,12 @@ namespace GlobalNamespace {
       // Set static field: static public OVRMeshRenderer/SystemGestureBehavior SwapMaterial
       static void _set_SwapMaterial(::GlobalNamespace::OVRMeshRenderer::SystemGestureBehavior value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRMeshRenderer/SystemGestureBehavior
     #pragma pack(pop)
     static check_size<sizeof(OVRMeshRenderer::SystemGestureBehavior), 0 + sizeof(int)> __GlobalNamespace_OVRMeshRenderer_SystemGestureBehaviorSizeCheck;
     static_assert(sizeof(OVRMeshRenderer::SystemGestureBehavior) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private OVRMeshRenderer/IOVRMeshRendererDataProvider _dataProvider
     // Size: 0x8
     // Offset: 0x18
@@ -223,70 +215,70 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private OVRMeshRenderer/IOVRMeshRendererDataProvider _dataProvider
-    ::GlobalNamespace::OVRMeshRenderer::IOVRMeshRendererDataProvider*& dyn__dataProvider();
+    [[deprecated]] ::GlobalNamespace::OVRMeshRenderer::IOVRMeshRendererDataProvider*& dyn__dataProvider();
     // Get instance field reference: private OVRMesh _ovrMesh
-    ::GlobalNamespace::OVRMesh*& dyn__ovrMesh();
+    [[deprecated]] ::GlobalNamespace::OVRMesh*& dyn__ovrMesh();
     // Get instance field reference: private OVRSkeleton _ovrSkeleton
-    ::GlobalNamespace::OVRSkeleton*& dyn__ovrSkeleton();
+    [[deprecated]] ::GlobalNamespace::OVRSkeleton*& dyn__ovrSkeleton();
     // Get instance field reference: private OVRMeshRenderer/ConfidenceBehavior _confidenceBehavior
-    ::GlobalNamespace::OVRMeshRenderer::ConfidenceBehavior& dyn__confidenceBehavior();
+    [[deprecated]] ::GlobalNamespace::OVRMeshRenderer::ConfidenceBehavior& dyn__confidenceBehavior();
     // Get instance field reference: private OVRMeshRenderer/SystemGestureBehavior _systemGestureBehavior
-    ::GlobalNamespace::OVRMeshRenderer::SystemGestureBehavior& dyn__systemGestureBehavior();
+    [[deprecated]] ::GlobalNamespace::OVRMeshRenderer::SystemGestureBehavior& dyn__systemGestureBehavior();
     // Get instance field reference: private UnityEngine.Material _systemGestureMaterial
-    ::UnityEngine::Material*& dyn__systemGestureMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__systemGestureMaterial();
     // Get instance field reference: private UnityEngine.Material _originalMaterial
-    ::UnityEngine::Material*& dyn__originalMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__originalMaterial();
     // Get instance field reference: private UnityEngine.SkinnedMeshRenderer _skinnedMeshRenderer
-    ::UnityEngine::SkinnedMeshRenderer*& dyn__skinnedMeshRenderer();
+    [[deprecated]] ::UnityEngine::SkinnedMeshRenderer*& dyn__skinnedMeshRenderer();
     // Get instance field reference: private System.Boolean <IsInitialized>k__BackingField
-    bool& dyn_$IsInitialized$k__BackingField();
+    [[deprecated]] bool& dyn_$IsInitialized$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataValid>k__BackingField
-    bool& dyn_$IsDataValid$k__BackingField();
+    [[deprecated]] bool& dyn_$IsDataValid$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataHighConfidence>k__BackingField
-    bool& dyn_$IsDataHighConfidence$k__BackingField();
+    [[deprecated]] bool& dyn_$IsDataHighConfidence$k__BackingField();
     // Get instance field reference: private System.Boolean <ShouldUseSystemGestureMaterial>k__BackingField
-    bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
+    [[deprecated]] bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
     // public System.Boolean get_IsInitialized()
-    // Offset: 0xB220F0
+    // Offset: 0xE22870
     bool get_IsInitialized();
     // private System.Void set_IsInitialized(System.Boolean value)
-    // Offset: 0xB220F8
+    // Offset: 0xE22878
     void set_IsInitialized(bool value);
     // public System.Boolean get_IsDataValid()
-    // Offset: 0xB22104
+    // Offset: 0xE22884
     bool get_IsDataValid();
     // private System.Void set_IsDataValid(System.Boolean value)
-    // Offset: 0xB2210C
+    // Offset: 0xE2288C
     void set_IsDataValid(bool value);
     // public System.Boolean get_IsDataHighConfidence()
-    // Offset: 0xB22118
+    // Offset: 0xE22898
     bool get_IsDataHighConfidence();
     // private System.Void set_IsDataHighConfidence(System.Boolean value)
-    // Offset: 0xB22120
+    // Offset: 0xE228A0
     void set_IsDataHighConfidence(bool value);
     // public System.Boolean get_ShouldUseSystemGestureMaterial()
-    // Offset: 0xB2212C
+    // Offset: 0xE228AC
     bool get_ShouldUseSystemGestureMaterial();
     // private System.Void set_ShouldUseSystemGestureMaterial(System.Boolean value)
-    // Offset: 0xB22134
+    // Offset: 0xE228B4
     void set_ShouldUseSystemGestureMaterial(bool value);
     // private System.Void Awake()
-    // Offset: 0xB22140
+    // Offset: 0xE228C0
     void Awake();
     // private System.Void Start()
-    // Offset: 0xB22260
+    // Offset: 0xE229E0
     void Start();
     // private System.Boolean ShouldInitialize()
-    // Offset: 0xB22308
+    // Offset: 0xE22A88
     bool ShouldInitialize();
     // private System.Void Initialize()
-    // Offset: 0xB2241C
+    // Offset: 0xE22B9C
     void Initialize();
     // private System.Void Update()
-    // Offset: 0xB228DC
+    // Offset: 0xE2305C
     void Update();
     // public System.Void .ctor()
-    // Offset: 0xB22BC0
+    // Offset: 0xE23340
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -51,15 +51,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class QuantizeUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UISpinner _quantize
     // Size: 0x8
     // Offset: 0x18
@@ -120,52 +112,52 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UISpinner _quantize
-    ::VROSC::UISpinner*& dyn__quantize();
+    [[deprecated]] ::VROSC::UISpinner*& dyn__quantize();
     // Get instance field reference: private VROSC.UISlideToggle _quantizeLateHits
-    ::VROSC::UISlideToggle*& dyn__quantizeLateHits();
+    [[deprecated]] ::VROSC::UISlideToggle*& dyn__quantizeLateHits();
     // Get instance field reference: private VROSC.TempoSyncDisplay _tempoSyncDisplay
-    ::VROSC::TempoSyncDisplay*& dyn__tempoSyncDisplay();
+    [[deprecated]] ::VROSC::TempoSyncDisplay*& dyn__tempoSyncDisplay();
     // Get instance field reference: private VROSC.InstrumentController _instrument
-    ::VROSC::InstrumentController*& dyn__instrument();
+    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrument();
     // Get instance field reference: private System.Int32 _setQuantization
-    int& dyn__setQuantization();
+    [[deprecated]] int& dyn__setQuantization();
     // Get instance field reference: private System.Boolean _setupDone
-    bool& dyn__setupDone();
+    [[deprecated]] bool& dyn__setupDone();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _quantizeSelectionValues
-    ::System::Collections::Generic::List_1<::StringW>*& dyn__quantizeSelectionValues();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__quantizeSelectionValues();
     // Get instance field reference: private System.Int32[] _quantizeMap
-    ::ArrayW<int>& dyn__quantizeMap();
+    [[deprecated]] ::ArrayW<int>& dyn__quantizeMap();
     // Get instance field reference: private System.Boolean _hasStartedBeatCounter
-    bool& dyn__hasStartedBeatCounter();
+    [[deprecated]] bool& dyn__hasStartedBeatCounter();
     // public System.Void Setup(VROSC.InstrumentController instrument)
-    // Offset: 0x99513C
+    // Offset: 0xB2CC28
     void Setup(::VROSC::InstrumentController* instrument);
     // private System.Void OnEnable()
-    // Offset: 0x9954CC
+    // Offset: 0xB2CFB8
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x9955C0
+    // Offset: 0xB2D0AC
     void OnDisable();
     // private System.Void CheckIfQuantizationCanBeSet(System.Single BPM)
-    // Offset: 0x9956AC
+    // Offset: 0xB2D198
     void CheckIfQuantizationCanBeSet(float BPM);
     // protected System.Void ApplyInstrumentQuantizeValues()
-    // Offset: 0x9953D8
+    // Offset: 0xB2CEC4
     void ApplyInstrumentQuantizeValues();
     // private System.Void ChangeQuantizeLateHits(VROSC.InputDevice inputDevice, System.Boolean quantizeLateHits)
-    // Offset: 0x9957C8
+    // Offset: 0xB2D2B4
     void ChangeQuantizeLateHits(::VROSC::InputDevice* inputDevice, bool quantizeLateHits);
     // private System.Void QuantizeSelectionChanged(System.Int32 selection)
-    // Offset: 0x9957F4
+    // Offset: 0xB2D2E0
     void QuantizeSelectionChanged(int selection);
     // private System.Boolean ShouldDisableBeatCounter()
-    // Offset: 0x995918
+    // Offset: 0xB2D404
     bool ShouldDisableBeatCounter();
     // private System.Void SetQuantize(System.Int32 quantize)
-    // Offset: 0x9956CC
+    // Offset: 0xB2D1B8
     void SetQuantize(int quantize);
     // public System.Void .ctor()
-    // Offset: 0x9959CC
+    // Offset: 0xB2D4B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -72,23 +72,15 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::UIColorPickerHelper::$GrabRemotely$d__22
     class $GrabRemotely$d__22;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [HeaderAttribute] Offset: 0x6741F4
+    // [HeaderAttribute] Offset: 0x78A588
     // private TMPro.TextMeshPro _name
     // Size: 0x8
     // Offset: 0x18
     ::TMPro::TextMeshPro* name;
     // Field size check
     static_assert(sizeof(::TMPro::TextMeshPro*) == 0x8);
-    // [HeaderAttribute] Offset: 0x674240
+    // [HeaderAttribute] Offset: 0x78A5D4
     // private VROSC.ProceduralAdjustableMesh _colorDisplay
     // Size: 0x8
     // Offset: 0x20
@@ -169,14 +161,14 @@ namespace VROSC {
     float valueSphereScaleAdjust;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [HeaderAttribute] Offset: 0x67434C
+    // [HeaderAttribute] Offset: 0x78A6E0
     // private UnityEngine.Vector3 _inputSensitivity
     // Size: 0xC
     // Offset: 0x7C
     ::UnityEngine::Vector3 inputSensitivity;
     // Field size check
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
-    // [HeaderAttribute] Offset: 0x674398
+    // [HeaderAttribute] Offset: 0x78A72C
     // private UnityEngine.GameObject _visual
     // Size: 0x8
     // Offset: 0x88
@@ -189,7 +181,7 @@ namespace VROSC {
     ::VROSC::UIHelperPositioning* positioning;
     // Field size check
     static_assert(sizeof(::VROSC::UIHelperPositioning*) == 0x8);
-    // [HeaderAttribute] Offset: 0x6743F4
+    // [HeaderAttribute] Offset: 0x78A788
     // private UnityEngine.Color _testColor
     // Size: 0x10
     // Offset: 0x98
@@ -206,63 +198,63 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _name
-    ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private VROSC.ProceduralAdjustableMesh _colorDisplay
-    ::VROSC::ProceduralAdjustableMesh*& dyn__colorDisplay();
+    [[deprecated]] ::VROSC::ProceduralAdjustableMesh*& dyn__colorDisplay();
     // Get instance field reference: private VROSC.UI.Meshes.ColorPickerMesh _hueDisplay
-    ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__hueDisplay();
+    [[deprecated]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__hueDisplay();
     // Get instance field reference: private VROSC.UI.Meshes.ColorPickerMesh _saturationDisplay
-    ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__saturationDisplay();
+    [[deprecated]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__saturationDisplay();
     // Get instance field reference: private VROSC.UIColorPickerMiniBar _miniHue
-    ::VROSC::UIColorPickerMiniBar*& dyn__miniHue();
+    [[deprecated]] ::VROSC::UIColorPickerMiniBar*& dyn__miniHue();
     // Get instance field reference: private VROSC.UIColorPickerMiniBar _miniSaturation
-    ::VROSC::UIColorPickerMiniBar*& dyn__miniSaturation();
+    [[deprecated]] ::VROSC::UIColorPickerMiniBar*& dyn__miniSaturation();
     // Get instance field reference: private VROSC.UIColorPickerMiniBar _miniValue
-    ::VROSC::UIColorPickerMiniBar*& dyn__miniValue();
+    [[deprecated]] ::VROSC::UIColorPickerMiniBar*& dyn__miniValue();
     // Get instance field reference: private UnityEngine.Transform _saturationDot
-    ::UnityEngine::Transform*& dyn__saturationDot();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__saturationDot();
     // Get instance field reference: private System.Single _saturationHeight
-    float& dyn__saturationHeight();
+    [[deprecated]] float& dyn__saturationHeight();
     // Get instance field reference: private UnityEngine.Transform _valueDot
-    ::UnityEngine::Transform*& dyn__valueDot();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__valueDot();
     // Get instance field reference: private System.Single _valueHeight
-    float& dyn__valueHeight();
+    [[deprecated]] float& dyn__valueHeight();
     // Get instance field reference: private System.Single _hueRange
-    float& dyn__hueRange();
+    [[deprecated]] float& dyn__hueRange();
     // Get instance field reference: private VROSC.AdjustableMesh _valueSphere
-    ::VROSC::AdjustableMesh*& dyn__valueSphere();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__valueSphere();
     // Get instance field reference: private System.Single _valueSphereScaleAdjust
-    float& dyn__valueSphereScaleAdjust();
+    [[deprecated]] float& dyn__valueSphereScaleAdjust();
     // Get instance field reference: private UnityEngine.Vector3 _inputSensitivity
-    ::UnityEngine::Vector3& dyn__inputSensitivity();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__inputSensitivity();
     // Get instance field reference: private UnityEngine.GameObject _visual
-    ::UnityEngine::GameObject*& dyn__visual();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__visual();
     // Get instance field reference: private VROSC.UIHelperPositioning _positioning
-    ::VROSC::UIHelperPositioning*& dyn__positioning();
+    [[deprecated]] ::VROSC::UIHelperPositioning*& dyn__positioning();
     // Get instance field reference: private UnityEngine.Color _testColor
-    ::UnityEngine::Color& dyn__testColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__testColor();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // private System.Void Awake()
-    // Offset: 0x139AE50
+    // Offset: 0xA349E0
     void Awake();
     // public System.Void Grab(VROSC.UIColorPicker target, VROSC.InputDevice inputDevice)
-    // Offset: 0x139AF58
+    // Offset: 0xA34AE8
     void Grab(::VROSC::UIColorPicker* target, ::VROSC::InputDevice* inputDevice);
     // public System.Void StopGrab(VROSC.InputDevice device)
-    // Offset: 0x139AD90
+    // Offset: 0xA34920
     void StopGrab(::VROSC::InputDevice* device);
     // private System.Collections.IEnumerator GrabRemotely(VROSC.UIColorPicker target, VROSC.InputDevice device)
-    // Offset: 0x139AFCC
+    // Offset: 0xA34B5C
     ::System::Collections::IEnumerator* GrabRemotely(::VROSC::UIColorPicker* target, ::VROSC::InputDevice* device);
     // private System.Void Verify(System.Boolean forceUpdate)
-    // Offset: 0x139AE8C
+    // Offset: 0xA34A1C
     void Verify(bool forceUpdate);
     // private System.Void SetColor(System.Single hue, System.Single saturation, System.Single value, UnityEngine.Color color)
-    // Offset: 0x139B0CC
+    // Offset: 0xA34C5C
     void SetColor(float hue, float saturation, float value, ::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x139B350
+    // Offset: 0xA34EE0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

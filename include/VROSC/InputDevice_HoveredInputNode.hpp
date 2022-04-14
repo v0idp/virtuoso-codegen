@@ -30,15 +30,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InputDevice::HoveredInputNode : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.ControllerInputNode InputNode
     // Size: 0x8
     // Offset: 0x10
@@ -53,11 +45,11 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public VROSC.ControllerInputNode InputNode
-    ::VROSC::ControllerInputNode*& dyn_InputNode();
+    [[deprecated]] ::VROSC::ControllerInputNode*& dyn_InputNode();
     // Get instance field reference: public System.Boolean HoveredThisFrame
-    bool& dyn_HoveredThisFrame();
+    [[deprecated]] bool& dyn_HoveredThisFrame();
     // public System.Void .ctor(VROSC.ControllerInputNode inputNode, System.Boolean hoveredThisFrame)
-    // Offset: 0x13D0D34
+    // Offset: 0x1958980
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InputDevice::HoveredInputNode* New_ctor(::VROSC::ControllerInputNode* inputNode, bool hoveredThisFrame) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputDevice::HoveredInputNode::.ctor");

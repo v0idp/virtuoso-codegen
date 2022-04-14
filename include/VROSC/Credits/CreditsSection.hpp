@@ -50,15 +50,7 @@ namespace VROSC::Credits {
   // [TokenAttribute] Offset: FFFFFFFF
   class CreditsSection : public ::VROSC::Credits::CreditsObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Credits.CreditsLine _linePrefab
     // Size: 0x8
     // Offset: 0x20
@@ -85,33 +77,33 @@ namespace VROSC::Credits {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.Credits.CreditsLine _linePrefab
-    ::VROSC::Credits::CreditsLine*& dyn__linePrefab();
+    [[deprecated]] ::VROSC::Credits::CreditsLine*& dyn__linePrefab();
     // Get instance field reference: private VROSC.Credits.CreditsHeader _headerPrefab
-    ::VROSC::Credits::CreditsHeader*& dyn__headerPrefab();
+    [[deprecated]] ::VROSC::Credits::CreditsHeader*& dyn__headerPrefab();
     // Get instance field reference: private VROSC.Credits.CreditsData _creditsData
-    ::VROSC::Credits::CreditsData*& dyn__creditsData();
+    [[deprecated]] ::VROSC::Credits::CreditsData*& dyn__creditsData();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Credits.CreditsObject> _objects
-    ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*& dyn__objects();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*& dyn__objects();
     // public System.Collections.Generic.List`1<VROSC.Credits.CreditsObject> get_Objects()
-    // Offset: 0x1306ED4
+    // Offset: 0x8DFEB8
     ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>* get_Objects();
     // public System.Void Setup(VROSC.Credits.CreditsData creditsData, VROSC.Credits.CreditsSectionData sectionData)
-    // Offset: 0x1306EDC
+    // Offset: 0x8DFEC0
     void Setup(::VROSC::Credits::CreditsData* creditsData, ::VROSC::Credits::CreditsSectionData* sectionData);
     // private System.Void CreateNameList(VROSC.Credits.CreditsNameListData creditsNameList)
-    // Offset: 0x1307290
+    // Offset: 0x8E0270
     void CreateNameList(::VROSC::Credits::CreditsNameListData* creditsNameList);
     // private System.Void CreateObject(VROSC.Credits.CreditsObject prefab)
-    // Offset: 0x13070D4
+    // Offset: 0x8E00B8
     void CreateObject(::VROSC::Credits::CreditsObject* prefab);
     // private System.Void CreateHeaderStyle(System.String headerText)
-    // Offset: 0x13071AC
+    // Offset: 0x8E0190
     void CreateHeaderStyle(::StringW headerText);
     // private System.Void PlaceAndAddObjectToList(VROSC.Credits.CreditsObject creditsObject)
-    // Offset: 0x1307468
+    // Offset: 0x8E0444
     void PlaceAndAddObjectToList(::VROSC::Credits::CreditsObject* creditsObject);
     // public System.Void .ctor()
-    // Offset: 0x1307528
+    // Offset: 0x8E0504
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

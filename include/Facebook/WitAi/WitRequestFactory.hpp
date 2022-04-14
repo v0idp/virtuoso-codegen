@@ -39,13 +39,13 @@ namespace Facebook::WitAi {
   class WitRequestFactory : public ::Il2CppObject {
     public:
     // static private Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam QueryParam(System.String key, System.String value)
-    // Offset: 0x1100590
+    // Offset: 0x1676DFC
     static ::Facebook::WitAi::WitRequest::QueryParam* QueryParam(::StringW key, ::StringW value);
     // static public Facebook.WitAi.WitRequest MessageRequest(Facebook.WitAi.Data.Configuration.WitConfiguration config, System.String query, Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x10FD148
+    // Offset: 0x16739B0
     static ::Facebook::WitAi::WitRequest* MessageRequest(::Facebook::WitAi::Data::Configuration::WitConfiguration* config, ::StringW query, ::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // static public Facebook.WitAi.WitRequest SpeechRequest(Facebook.WitAi.Data.Configuration.WitConfiguration config, Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x10FC8C0
+    // Offset: 0x1673128
     static ::Facebook::WitAi::WitRequest* SpeechRequest(::Facebook::WitAi::Data::Configuration::WitConfiguration* config, ::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
   }; // Facebook.WitAi.WitRequestFactory
   #pragma pack(pop)

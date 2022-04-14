@@ -56,13 +56,13 @@ namespace System::IO::Compression {
     // Set static field: static private readonly System.UInt32[] s_crcTable_7
     static void _set_s_crcTable_7(::ArrayW<uint> value);
     // static private System.Void .cctor()
-    // Offset: 0x111B628
+    // Offset: 0x1692E94
     static void _cctor();
     // static public System.UInt32 UpdateCrc32(System.UInt32 crc32, System.Byte[] buffer, System.Int32 offset, System.Int32 length)
-    // Offset: 0x111AD1C
+    // Offset: 0x1692588
     static uint UpdateCrc32(uint crc32, ::ArrayW<uint8_t> buffer, int offset, int length);
     // static private System.UInt32 ManagedCrc32(System.UInt32 crc32, System.Byte[] buffer, System.Int32 offset, System.Int32 length)
-    // Offset: 0x111B2C4
+    // Offset: 0x1692B30
     static uint ManagedCrc32(uint crc32, ::ArrayW<uint8_t> buffer, int offset, int length);
   }; // System.IO.Compression.Crc32Helper
   #pragma pack(pop)

@@ -55,11 +55,11 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.DateTimeParse/System.DTT dtt
-    ::System::DateTimeParse::DTT& dyn_dtt();
+    [[deprecated]] ::System::DateTimeParse::DTT& dyn_dtt();
     // Get instance field reference: System.TokenType suffix
-    ::System::TokenType& dyn_suffix();
+    [[deprecated]] ::System::TokenType& dyn_suffix();
     // Get instance field reference: System.Int32 num
-    int& dyn_num();
+    [[deprecated]] int& dyn_num();
   }; // System.DateTimeToken
   #pragma pack(pop)
   static check_size<sizeof(DateTimeToken), 8 + sizeof(int)> __System_DateTimeTokenSizeCheck;

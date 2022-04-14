@@ -30,30 +30,22 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class LipSyncDemo_Control : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [TooltipAttribute] Offset: 0x5E20F8
+    // [TooltipAttribute] Offset: 0x6F8F18
     // public UnityEngine.KeyCode rotateLeftKey
     // Size: 0x4
     // Offset: 0x18
     ::UnityEngine::KeyCode rotateLeftKey;
     // Field size check
     static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
-    // [TooltipAttribute] Offset: 0x5E2130
+    // [TooltipAttribute] Offset: 0x6F8F50
     // public UnityEngine.KeyCode rotateRightKey
     // Size: 0x4
     // Offset: 0x1C
     ::UnityEngine::KeyCode rotateRightKey;
     // Field size check
     static_assert(sizeof(::UnityEngine::KeyCode) == 0x4);
-    // [TooltipAttribute] Offset: 0x5E2168
+    // [TooltipAttribute] Offset: 0x6F8F88
     // public UnityEngine.KeyCode resetRotationKey
     // Size: 0x4
     // Offset: 0x20
@@ -82,28 +74,28 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.KeyCode rotateLeftKey
-    ::UnityEngine::KeyCode& dyn_rotateLeftKey();
+    [[deprecated]] ::UnityEngine::KeyCode& dyn_rotateLeftKey();
     // Get instance field reference: public UnityEngine.KeyCode rotateRightKey
-    ::UnityEngine::KeyCode& dyn_rotateRightKey();
+    [[deprecated]] ::UnityEngine::KeyCode& dyn_rotateRightKey();
     // Get instance field reference: public UnityEngine.KeyCode resetRotationKey
-    ::UnityEngine::KeyCode& dyn_resetRotationKey();
+    [[deprecated]] ::UnityEngine::KeyCode& dyn_resetRotationKey();
     // Get instance field reference: private System.Single resetRotation
-    float& dyn_resetRotation();
+    [[deprecated]] float& dyn_resetRotation();
     // Get instance field reference: private System.Single rotationAmount
-    float& dyn_rotationAmount();
+    [[deprecated]] float& dyn_rotationAmount();
     // Get instance field reference: private System.Single rotationMax
-    float& dyn_rotationMax();
+    [[deprecated]] float& dyn_rotationMax();
     // private System.Void Start()
-    // Offset: 0x12A8630
+    // Offset: 0x18A71D4
     void Start();
     // private System.Void Update()
-    // Offset: 0x12A8634
+    // Offset: 0x18A71D8
     void Update();
     // private System.Void RotateObject(System.Single amountDegrees, System.Boolean absolute)
-    // Offset: 0x12A86B4
+    // Offset: 0x18A7258
     void RotateObject(float amountDegrees, bool absolute);
     // public System.Void .ctor()
-    // Offset: 0x12A88C0
+    // Offset: 0x18A7464
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

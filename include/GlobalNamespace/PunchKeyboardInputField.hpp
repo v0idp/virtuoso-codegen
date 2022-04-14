@@ -58,15 +58,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::PunchKeyboardInputField::$UpdateCursorPosition$d__15
     class $UpdateCursorPosition$d__15;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _infoLabel
     // Size: 0x8
     // Offset: 0x18
@@ -113,60 +105,60 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _infoLabel
-    ::TMPro::TextMeshPro*& dyn__infoLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__infoLabel();
     // Get instance field reference: private TMPro.TextMeshPro _textField
-    ::TMPro::TextMeshPro*& dyn__textField();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textField();
     // Get instance field reference: private UnityEngine.GameObject _cursor
-    ::UnityEngine::GameObject*& dyn__cursor();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__cursor();
     // Get instance field reference: private System.Single _cursorOffset
-    float& dyn__cursorOffset();
+    [[deprecated]] float& dyn__cursorOffset();
     // Get instance field reference: private UnityEngine.Vector3 _cursorStartPosition
-    ::UnityEngine::Vector3& dyn__cursorStartPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__cursorStartPosition();
     // Get instance field reference: public System.Action OnEnterPressed
-    ::System::Action*& dyn_OnEnterPressed();
+    [[deprecated]] ::System::Action*& dyn_OnEnterPressed();
     // Get instance field reference: private System.Boolean _isMultiline
-    bool& dyn__isMultiline();
+    [[deprecated]] bool& dyn__isMultiline();
     // public System.String get_Text()
-    // Offset: 0x993DA0
+    // Offset: 0xB2B868
     ::StringW get_Text();
     // public System.Void set_Text(System.String value)
-    // Offset: 0x993F3C
+    // Offset: 0xB2BA04
     void set_Text(::StringW value);
     // private System.Void Awake()
-    // Offset: 0x99401C
+    // Offset: 0xB2BAE4
     void Awake();
     // protected System.Void OnEnable()
-    // Offset: 0x994148
+    // Offset: 0xB2BC10
     void OnEnable();
     // private System.Void OnDestroy()
-    // Offset: 0x994174
+    // Offset: 0xB2BC3C
     void OnDestroy();
     // public System.Void Set(System.String startText, System.String infoText, System.Boolean multiline)
-    // Offset: 0x993390
+    // Offset: 0xB2AE58
     void Set(::StringW startText, ::StringW infoText, bool multiline);
     // public System.Void ClearText()
-    // Offset: 0x993E04
+    // Offset: 0xB2B8CC
     void ClearText();
     // private System.Collections.IEnumerator UpdateCursorPosition()
-    // Offset: 0x993FB0
+    // Offset: 0xB2BA78
     ::System::Collections::IEnumerator* UpdateCursorPosition();
     // private System.Void KeyPressed(Key key)
-    // Offset: 0x994278
+    // Offset: 0xB2BD40
     void KeyPressed(::GlobalNamespace::Key* key);
     // private System.Void BacksspacePressed()
-    // Offset: 0x994358
+    // Offset: 0xB2BE20
     void BacksspacePressed();
     // private System.Void EnterPressed()
-    // Offset: 0x99440C
+    // Offset: 0xB2BED4
     void EnterPressed();
     // private System.Void Update()
-    // Offset: 0x9944A4
+    // Offset: 0xB2BF6C
     void Update();
     // private System.Void GetExternalKeyboardInput()
-    // Offset: 0x994508
+    // Offset: 0xB2BFD0
     void GetExternalKeyboardInput();
     // public System.Void .ctor()
-    // Offset: 0x994604
+    // Offset: 0xB2C0CC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

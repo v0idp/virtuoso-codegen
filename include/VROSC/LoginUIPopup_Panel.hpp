@@ -75,7 +75,7 @@ namespace VROSC {
     // Set static field: static public VROSC.LoginUIPopup/VROSC.Panel AcceptTerms
     static void _set_AcceptTerms(::VROSC::LoginUIPopup::Panel value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.LoginUIPopup/VROSC.Panel
   #pragma pack(pop)
   static check_size<sizeof(LoginUIPopup::Panel), 0 + sizeof(int)> __VROSC_LoginUIPopup_PanelSizeCheck;

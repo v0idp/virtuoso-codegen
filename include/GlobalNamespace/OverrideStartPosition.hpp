@@ -28,15 +28,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OverrideStartPosition : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 _startPosition
     // Size: 0xC
     // Offset: 0x18
@@ -53,14 +45,14 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private UnityEngine.Vector3 _startRotation
-    ::UnityEngine::Vector3& dyn__startRotation();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__startRotation();
     // protected System.Void Start()
-    // Offset: 0x920744
+    // Offset: 0xF80F74
     void Start();
     // public System.Void .ctor()
-    // Offset: 0x9207AC
+    // Offset: 0xF80FDC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

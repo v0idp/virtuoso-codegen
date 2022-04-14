@@ -36,15 +36,7 @@ namespace Facebook::WitAi::Utilities {
   // [TokenAttribute] Offset: FFFFFFFF
   class FloatToStringEvent : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String format
     // Size: 0x8
     // Offset: 0x18
@@ -61,14 +53,14 @@ namespace Facebook::WitAi::Utilities {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String format
-    ::StringW& dyn_format();
+    [[deprecated]] ::StringW& dyn_format();
     // Get instance field reference: private Facebook.WitAi.Utilities.StringEvent onFloatToString
-    ::Facebook::WitAi::Utilities::StringEvent*& dyn_onFloatToString();
+    [[deprecated]] ::Facebook::WitAi::Utilities::StringEvent*& dyn_onFloatToString();
     // public System.Void ConvertFloatToString(System.Single value)
-    // Offset: 0x10F82B4
+    // Offset: 0x166EB1C
     void ConvertFloatToString(float value);
     // public System.Void .ctor()
-    // Offset: 0x10F8350
+    // Offset: 0x166EBB8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

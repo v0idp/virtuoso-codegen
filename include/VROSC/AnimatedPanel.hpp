@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AnimatedPanel : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AnimatedAppear _animation
     // Size: 0x8
     // Offset: 0x18
@@ -60,26 +52,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AnimatedAppear _animation
-    ::VROSC::AnimatedAppear*& dyn__animation();
+    [[deprecated]] ::VROSC::AnimatedAppear*& dyn__animation();
     // Get instance field reference: private System.Boolean _isClosing
-    bool& dyn__isClosing();
+    [[deprecated]] bool& dyn__isClosing();
     // public System.Boolean get_IsAnimating()
-    // Offset: 0x136C1D0
+    // Offset: 0x96AB10
     bool get_IsAnimating();
     // public System.Void SetActive(System.Boolean shouldBeOpen)
-    // Offset: 0x136C1E8
+    // Offset: 0x96AB28
     void SetActive(bool shouldBeOpen);
     // private System.Void Update()
-    // Offset: 0x136C2C0
+    // Offset: 0x96AC00
     void Update();
     // private System.Void FinishClosing()
-    // Offset: 0x136C278
+    // Offset: 0x96ABB8
     void FinishClosing();
     // private System.Void OnDisable()
-    // Offset: 0x136C310
+    // Offset: 0x96AC50
     void OnDisable();
     // public System.Void .ctor()
-    // Offset: 0x136C320
+    // Offset: 0x96AC60
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

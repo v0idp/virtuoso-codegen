@@ -33,15 +33,7 @@ namespace VRVisuals {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetSpectrogramShaderValues::TimestampedValues : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single <Life>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -58,36 +50,36 @@ namespace VRVisuals {
     static_assert(sizeof(::System::Collections::Generic::List_1<float>*) == 0x8);
     public:
     // Get instance field reference: private System.Single <Life>k__BackingField
-    float& dyn_$Life$k__BackingField();
+    [[deprecated]] float& dyn_$Life$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single> <Values>k__BackingField
-    ::System::Collections::Generic::List_1<float>*& dyn_$Values$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn_$Values$k__BackingField();
     // public System.Single get_Life()
-    // Offset: 0x134D6D8
+    // Offset: 0x8D98F0
     float get_Life();
     // private System.Void set_Life(System.Single value)
-    // Offset: 0x134D6D0
+    // Offset: 0x8D98E8
     void set_Life(float value);
     // public System.Collections.Generic.List`1<System.Single> get_Values()
-    // Offset: 0x134D6E8
+    // Offset: 0x8D9900
     ::System::Collections::Generic::List_1<float>* get_Values();
     // private System.Void set_Values(System.Collections.Generic.List`1<System.Single> value)
-    // Offset: 0x134D6E0
+    // Offset: 0x8D98F8
     void set_Values(::System::Collections::Generic::List_1<float>* value);
     // public System.Void .ctor(System.Collections.Generic.List`1<System.Single> values)
-    // Offset: 0x134D6F0
+    // Offset: 0x8D9908
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetSpectrogramShaderValues::TimestampedValues* New_ctor(::System::Collections::Generic::List_1<float>* values) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VRVisuals::SetSpectrogramShaderValues::TimestampedValues::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetSpectrogramShaderValues::TimestampedValues*, creationType>(values)));
     }
     // public System.Void Age(System.Single decay)
-    // Offset: 0x134D724
+    // Offset: 0x8D993C
     void Age(float decay);
     // public System.Collections.Generic.List`1<UnityEngine.Vector3> GetAsCircle(System.Single minRange, System.Single maxRange, System.Single scale)
-    // Offset: 0x134D734
+    // Offset: 0x8D994C
     ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* GetAsCircle(float minRange, float maxRange, float scale);
     // private UnityEngine.Vector3 ArcVector(System.Single yaw, System.Single radius)
-    // Offset: 0x134D91C
+    // Offset: 0x8D9B34
     ::UnityEngine::Vector3 ArcVector(float yaw, float radius);
   }; // VRVisuals.SetSpectrogramShaderValues/VRVisuals.TimestampedValues
   #pragma pack(pop)

@@ -31,15 +31,7 @@ namespace Oculus::Platform::Models {
   // [TokenAttribute] Offset: FFFFFFFF
   class CloudStorageUpdateResponse : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String Bucket
     // Size: 0x8
     // Offset: 0x10
@@ -68,15 +60,15 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String Bucket
-    ::StringW& dyn_Bucket();
+    [[deprecated]] ::StringW& dyn_Bucket();
     // Get instance field reference: public readonly System.String Key
-    ::StringW& dyn_Key();
+    [[deprecated]] ::StringW& dyn_Key();
     // Get instance field reference: public readonly Oculus.Platform.CloudStorageUpdateStatus Status
-    ::Oculus::Platform::CloudStorageUpdateStatus& dyn_Status();
+    [[deprecated]] ::Oculus::Platform::CloudStorageUpdateStatus& dyn_Status();
     // Get instance field reference: public readonly System.String VersionHandle
-    ::StringW& dyn_VersionHandle();
+    [[deprecated]] ::StringW& dyn_VersionHandle();
     // public System.Void .ctor(System.IntPtr o)
-    // Offset: 0x7DF1D4
+    // Offset: 0x9255B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CloudStorageUpdateResponse* New_ctor(::System::IntPtr o) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Models::CloudStorageUpdateResponse::.ctor");

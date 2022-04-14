@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PreviewScaleOnNoteboard : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNoteController _noteboard
     // Size: 0x8
     // Offset: 0x18
@@ -95,56 +87,56 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteboard
-    ::VROSC::NoteBoardNoteController*& dyn__noteboard();
+    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteboard();
     // Get instance field reference: private VROSC.ScaleRowUI _scaleRow
-    ::VROSC::ScaleRowUI*& dyn__scaleRow();
+    [[deprecated]] ::VROSC::ScaleRowUI*& dyn__scaleRow();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.PlayAxis _axis
-    ::VROSC::NoteBoard::PlayAxis& dyn__axis();
+    [[deprecated]] ::VROSC::NoteBoard::PlayAxis& dyn__axis();
     // Get instance field reference: private System.Single _highLightPower
-    float& dyn__highLightPower();
+    [[deprecated]] float& dyn__highLightPower();
     // Get instance field reference: private VROSC.ScaleNoteButtonUI[] _noteButtons
-    ::ArrayW<::VROSC::ScaleNoteButtonUI*>& dyn__noteButtons();
+    [[deprecated]] ::ArrayW<::VROSC::ScaleNoteButtonUI*>& dyn__noteButtons();
     // private System.Boolean get_Valid()
-    // Offset: 0x9874A8
+    // Offset: 0xAE5E0C
     bool get_Valid();
     // private System.Void Awake()
-    // Offset: 0x98753C
+    // Offset: 0xAE5EA0
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x987714
+    // Offset: 0xAE6078
     void OnDestroy();
     // private System.Void LateUpdate()
-    // Offset: 0x9878C4
+    // Offset: 0xAE6228
     void LateUpdate();
     // private System.Void Hover(VROSC.Note note, System.Boolean hovering)
-    // Offset: 0x9878C8
+    // Offset: 0xAE622C
     void Hover(::VROSC::Note note, bool hovering);
     // private System.Void NotesChanged(System.Int32 axis, VROSC.Scale scale)
-    // Offset: 0x987AC0
+    // Offset: 0xAE6424
     void NotesChanged(int axis, ::VROSC::Scale scale);
     // private System.Void ShowNote(VROSC.Note note, System.Boolean hovering)
-    // Offset: 0x987918
+    // Offset: 0xAE627C
     void ShowNote(::VROSC::Note note, bool hovering);
     // private System.Void UpdateNoteTexts()
-    // Offset: 0x987AF4
+    // Offset: 0xAE6458
     void UpdateNoteTexts();
     // private System.Void HideAll()
-    // Offset: 0x987D64
+    // Offset: 0xAE66C8
     void HideAll();
     // private System.Boolean ShouldHighlight(VROSC.NoteFieldNoteData data, VROSC.Note note)
-    // Offset: 0x987C2C
+    // Offset: 0xAE6590
     bool ShouldHighlight(::VROSC::NoteFieldNoteData* data, ::VROSC::Note note);
     // private UnityEngine.Vector3 HighlightColor()
-    // Offset: 0x987D1C
+    // Offset: 0xAE6680
     ::UnityEngine::Vector3 HighlightColor();
     // private System.Void OnEnable()
-    // Offset: 0x987EF8
+    // Offset: 0xAE685C
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x987EFC
+    // Offset: 0xAE6860
     void OnDisable();
     // public System.Void .ctor()
-    // Offset: 0x987F00
+    // Offset: 0xAE6864
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -39,15 +39,15 @@ namespace UnityEngine {
       return m_ParticleSystem;
     }
     // Get instance field reference: UnityEngine.ParticleSystem m_ParticleSystem
-    ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
     // public System.Void set_enabled(System.Boolean value)
-    // Offset: 0x12FAEF0
+    // Offset: 0x19007F8
     void set_enabled(bool value);
     // System.Void .ctor(UnityEngine.ParticleSystem particleSystem)
-    // Offset: 0x12FAD3C
+    // Offset: 0x1900644
     // ABORTED: conflicts with another method.  EmissionModule(::UnityEngine::ParticleSystem* particleSystem);
     // static private System.Void set_enabled_Injected(ref UnityEngine.ParticleSystem/UnityEngine.EmissionModule _unity_self, System.Boolean value)
-    // Offset: 0x12FAF40
+    // Offset: 0x1900848
     static void set_enabled_Injected(ByRef<::UnityEngine::ParticleSystem::EmissionModule> _unity_self, bool value);
   }; // UnityEngine.ParticleSystem/UnityEngine.EmissionModule
   #pragma pack(pop)

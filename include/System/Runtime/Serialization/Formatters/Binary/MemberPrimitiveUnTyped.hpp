@@ -37,15 +37,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class MemberPrimitiveUnTyped : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE typeInformation
     // Size: 0x4
     // Offset: 0x10
@@ -62,26 +54,26 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE typeInformation
-    ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_typeInformation();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_typeInformation();
     // Get instance field reference: System.Object value
-    ::Il2CppObject*& dyn_value();
+    [[deprecated]] ::Il2CppObject*& dyn_value();
     // System.Void Set(System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE typeInformation, System.Object value)
-    // Offset: 0xECFE88
+    // Offset: 0xFFE49C
     void Set(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE typeInformation, ::Il2CppObject* value);
     // System.Void Set(System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE typeInformation)
-    // Offset: 0xECFE94
+    // Offset: 0xFFE4A8
     void Set(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE typeInformation);
     // public System.Void Write(System.Runtime.Serialization.Formatters.Binary.__BinaryWriter sout)
-    // Offset: 0xECFE9C
+    // Offset: 0xFFE4B0
     void Write(::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter* sout);
     // public System.Void Read(System.Runtime.Serialization.Formatters.Binary.__BinaryParser input)
-    // Offset: 0xECFEC4
+    // Offset: 0xFFE4D8
     void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input);
     // public System.Void Dump()
-    // Offset: 0xECFF00
+    // Offset: 0xFFE514
     void Dump();
     // System.Void .ctor()
-    // Offset: 0xECFE80
+    // Offset: 0xFFE494
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

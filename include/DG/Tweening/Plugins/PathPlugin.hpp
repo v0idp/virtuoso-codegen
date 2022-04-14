@@ -66,37 +66,37 @@ namespace DG::Tweening::Plugins {
     // Set static field: static public System.Single MinLookAhead
     static void _set_MinLookAhead(float value);
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t)
-    // Offset: 0x109F670
+    // Offset: 0x15E1C98
     void Reset(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, System.Boolean isRelative)
-    // Offset: 0x109F6A8
+    // Offset: 0x15E1CD0
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, bool isRelative);
     // public System.Void SetFrom(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, DG.Tweening.Plugins.Core.PathCore.Path fromValue, System.Boolean setImmediately)
-    // Offset: 0x109F6AC
+    // Offset: 0x15E1CD4
     void SetFrom(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, ::DG::Tweening::Plugins::Core::PathCore::Path* fromValue, bool setImmediately);
     // static public DG.Tweening.Plugins.Core.ABSTweenPlugin`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> Get()
-    // Offset: 0x109F6B0
+    // Offset: 0x15E1CD8
     static ::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* Get();
     // public DG.Tweening.Plugins.Core.PathCore.Path ConvertToStartValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t, UnityEngine.Vector3 value)
-    // Offset: 0x109F6F4
+    // Offset: 0x15E1D1C
     ::DG::Tweening::Plugins::Core::PathCore::Path* ConvertToStartValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t, ::UnityEngine::Vector3 value);
     // public System.Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t)
-    // Offset: 0x109F70C
+    // Offset: 0x15E1D34
     void SetRelativeEndValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t);
     // public System.Void SetChangeValue(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions> t)
-    // Offset: 0x109F7F8
+    // Offset: 0x15E1E20
     void SetChangeValue(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::DG::Tweening::Plugins::Core::PathCore::Path*, ::DG::Tweening::Plugins::Options::PathOptions>* t);
     // public System.Single GetSpeedBasedDuration(DG.Tweening.Plugins.Options.PathOptions options, System.Single unitsXSecond, DG.Tweening.Plugins.Core.PathCore.Path changeValue)
-    // Offset: 0x109FBE4
+    // Offset: 0x15E220C
     float GetSpeedBasedDuration(::DG::Tweening::Plugins::Options::PathOptions options, float unitsXSecond, ::DG::Tweening::Plugins::Core::PathCore::Path* changeValue);
     // public System.Void EvaluateAndApply(DG.Tweening.Plugins.Options.PathOptions options, DG.Tweening.Tween t, System.Boolean isRelative, DG.Tweening.Core.DOGetter`1<UnityEngine.Vector3> getter, DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3> setter, System.Single elapsed, DG.Tweening.Plugins.Core.PathCore.Path startValue, DG.Tweening.Plugins.Core.PathCore.Path changeValue, System.Single duration, System.Boolean usingInversePosition, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x109FC00
+    // Offset: 0x15E2228
     void EvaluateAndApply(::DG::Tweening::Plugins::Options::PathOptions options, ::DG::Tweening::Tween* t, bool isRelative, ::DG::Tweening::Core::DOGetter_1<::UnityEngine::Vector3>* getter, ::DG::Tweening::Core::DOSetter_1<::UnityEngine::Vector3>* setter, float elapsed, ::DG::Tweening::Plugins::Core::PathCore::Path* startValue, ::DG::Tweening::Plugins::Core::PathCore::Path* changeValue, float duration, bool usingInversePosition, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // public System.Void SetOrientation(DG.Tweening.Plugins.Options.PathOptions options, DG.Tweening.Tween t, DG.Tweening.Plugins.Core.PathCore.Path path, System.Single pathPerc, UnityEngine.Vector3 tPos, DG.Tweening.Core.Enums.UpdateNotice updateNotice)
-    // Offset: 0x109FEB0
+    // Offset: 0x15E24D8
     void SetOrientation(::DG::Tweening::Plugins::Options::PathOptions options, ::DG::Tweening::Tween* t, ::DG::Tweening::Plugins::Core::PathCore::Path* path, float pathPerc, ::UnityEngine::Vector3 tPos, ::DG::Tweening::Core::Enums::UpdateNotice updateNotice);
     // public System.Void .ctor()
-    // Offset: 0x10A0688
+    // Offset: 0x15E2CB0
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
     // Base method: System.Void Object::.ctor()

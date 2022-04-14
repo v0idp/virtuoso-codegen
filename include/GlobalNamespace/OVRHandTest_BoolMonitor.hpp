@@ -36,15 +36,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::OVRHandTest::BoolMonitor::BoolGenerator
     class BoolGenerator;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String m_name
     // Size: 0x8
     // Offset: 0x10
@@ -91,31 +83,31 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.String m_name
-    ::StringW& dyn_m_name();
+    [[deprecated]] ::StringW& dyn_m_name();
     // Get instance field reference: private OVRHandTest/BoolMonitor/BoolGenerator m_generator
-    ::GlobalNamespace::OVRHandTest::BoolMonitor::BoolGenerator*& dyn_m_generator();
+    [[deprecated]] ::GlobalNamespace::OVRHandTest::BoolMonitor::BoolGenerator*& dyn_m_generator();
     // Get instance field reference: private System.Boolean m_prevValue
-    bool& dyn_m_prevValue();
+    [[deprecated]] bool& dyn_m_prevValue();
     // Get instance field reference: private System.Boolean m_currentValue
-    bool& dyn_m_currentValue();
+    [[deprecated]] bool& dyn_m_currentValue();
     // Get instance field reference: private System.Boolean m_currentValueRecentlyChanged
-    bool& dyn_m_currentValueRecentlyChanged();
+    [[deprecated]] bool& dyn_m_currentValueRecentlyChanged();
     // Get instance field reference: private System.Single m_displayTimeout
-    float& dyn_m_displayTimeout();
+    [[deprecated]] float& dyn_m_displayTimeout();
     // Get instance field reference: private System.Single m_displayTimer
-    float& dyn_m_displayTimer();
+    [[deprecated]] float& dyn_m_displayTimer();
     // public System.Void .ctor(System.String name, OVRHandTest/BoolMonitor/BoolGenerator generator, System.Single displayTimeout)
-    // Offset: 0x7368D8
+    // Offset: 0x84CFDC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRHandTest::BoolMonitor* New_ctor(::StringW name, ::GlobalNamespace::OVRHandTest::BoolMonitor::BoolGenerator* generator, float displayTimeout) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRHandTest::BoolMonitor::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRHandTest::BoolMonitor*, creationType>(name, generator, displayTimeout)));
     }
     // public System.Void Update()
-    // Offset: 0x736954
+    // Offset: 0x84D058
     void Update();
     // public System.Void AppendToStringBuilder(ref System.Text.StringBuilder sb)
-    // Offset: 0x7369FC
+    // Offset: 0x84D100
     void AppendToStringBuilder(ByRef<::System::Text::StringBuilder*> sb);
   }; // OVRHandTest/BoolMonitor
   #pragma pack(pop)

@@ -67,17 +67,9 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Launchpad : public ::UnityEngine::MonoBehaviour {
     public:
-    // Nested type: ::VROSC::Launchpad::$LaunchpadHit$d__25
-    struct $LaunchpadHit$d__25;
-    #ifdef USE_CODEGEN_FIELDS
+    // Nested type: ::VROSC::Launchpad::$LaunchpadHit$d__27
+    struct $LaunchpadHit$d__27;
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.TransformMover _mover
     // Size: 0x8
     // Offset: 0x18
@@ -166,77 +158,80 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TransformMover _mover
-    ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private VROSC.PadUI _UI
-    ::VROSC::PadUI*& dyn__UI();
+    [[deprecated]] ::VROSC::PadUI*& dyn__UI();
     // Get instance field reference: protected VROSC.LaunchPadEffectOnSignal _visual
-    ::VROSC::LaunchPadEffectOnSignal*& dyn__visual();
+    [[deprecated]] ::VROSC::LaunchPadEffectOnSignal*& dyn__visual();
     // Get instance field reference: private VROSC.PredictiveHittable _hittable
-    ::VROSC::PredictiveHittable*& dyn__hittable();
+    [[deprecated]] ::VROSC::PredictiveHittable*& dyn__hittable();
     // Get instance field reference: private TMPro.TextMeshPro _trackName
-    ::TMPro::TextMeshPro*& dyn__trackName();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__trackName();
     // Get instance field reference: private VROSC.LaunchpadSpawner _launchpadSpawner
-    ::VROSC::LaunchpadSpawner*& dyn__launchpadSpawner();
+    [[deprecated]] ::VROSC::LaunchpadSpawner*& dyn__launchpadSpawner();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadHit
-    ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadHit();
+    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadHit();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadMoved
-    ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadMoved();
+    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadMoved();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadDeletedByUser
-    ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadDeletedByUser();
+    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadDeletedByUser();
     // Get instance field reference: private System.String <ID>k__BackingField
-    ::StringW& dyn_$ID$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$ID$k__BackingField();
     // Get instance field reference: private System.String <TargetID>k__BackingField
-    ::StringW& dyn_$TargetID$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$TargetID$k__BackingField();
     // Get instance field reference: private UnityEngine.Collider[] _overlaps
-    ::ArrayW<::UnityEngine::Collider*>& dyn__overlaps();
+    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__overlaps();
     // Get instance field reference: private VROSC.LaunchpadSpawner _overlappingSpawner
-    ::VROSC::LaunchpadSpawner*& dyn__overlappingSpawner();
+    [[deprecated]] ::VROSC::LaunchpadSpawner*& dyn__overlappingSpawner();
     // Get instance field reference: private System.Single _spawnerDeleteDistance
-    float& dyn__spawnerDeleteDistance();
+    [[deprecated]] float& dyn__spawnerDeleteDistance();
+    // public VROSC.TransformMover get_Mover()
+    // Offset: 0x194E140
+    ::VROSC::TransformMover* get_Mover();
     // public System.String get_ID()
-    // Offset: 0x138A87C
+    // Offset: 0x194E150
     ::StringW get_ID();
     // private System.Void set_ID(System.String value)
-    // Offset: 0x138A874
+    // Offset: 0x194E148
     void set_ID(::StringW value);
     // public System.String get_TargetID()
-    // Offset: 0x138A88C
+    // Offset: 0x194E160
     ::StringW get_TargetID();
     // private System.Void set_TargetID(System.String value)
-    // Offset: 0x138A884
+    // Offset: 0x194E158
     void set_TargetID(::StringW value);
     // private System.Void Awake()
-    // Offset: 0x138A894
+    // Offset: 0x194E168
     void Awake();
     // protected System.Void OnDestroy()
-    // Offset: 0x138A9E0
+    // Offset: 0x194E2B4
     void OnDestroy();
     // public System.Void Setup(VROSC.LaunchpadSpawner launchpadSpawner, System.String id, System.String targetID, System.String displayName, UnityEngine.Color color)
-    // Offset: 0x138AC44
+    // Offset: 0x194E518
     void Setup(::VROSC::LaunchpadSpawner* launchpadSpawner, ::StringW id, ::StringW targetID, ::StringW displayName, ::UnityEngine::Color color);
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x138AE40
+    // Offset: 0x194E714
     void SetColor(::UnityEngine::Color color);
     // public System.Void SetDisplayName(System.String newName)
-    // Offset: 0x138AE1C
+    // Offset: 0x194E6F0
     void SetDisplayName(::StringW newName);
     // public System.Void LaunchpadHit(VROSC.Signal signal)
-    // Offset: 0x138AEAC
+    // Offset: 0x194E780
     void LaunchpadHit(::VROSC::Signal* signal);
     // public System.Void Grab(VROSC.GrabData grabData, System.Boolean grabbing)
-    // Offset: 0x138AF74
+    // Offset: 0x194E848
     void Grab(::VROSC::GrabData* grabData, bool grabbing);
     // public System.Void GrabEnded(VROSC.TransformMover mover)
-    // Offset: 0x138AF98
+    // Offset: 0x194E86C
     void GrabEnded(::VROSC::TransformMover* mover);
     // private System.Void DeletePressed()
-    // Offset: 0x138B224
+    // Offset: 0x194EAF8
     void DeletePressed();
     // public System.Void Delete()
-    // Offset: 0x138B0E4
+    // Offset: 0x194E9B8
     void Delete();
     // public System.Void .ctor()
-    // Offset: 0x138B284
+    // Offset: 0x194EB54
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -254,6 +249,14 @@ namespace VROSC {
   static_assert(sizeof(Launchpad) == 0x84);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::Launchpad::get_Mover
+// Il2CppName: get_Mover
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::TransformMover* (VROSC::Launchpad::*)()>(&VROSC::Launchpad::get_Mover)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::Launchpad*), "get_Mover", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::Launchpad::get_ID
 // Il2CppName: get_ID
 template<>

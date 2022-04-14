@@ -78,7 +78,7 @@ namespace TMPro {
     // Set static field: static public TMPro.VerticalAlignmentOptions Capline
     static void _set_Capline(::TMPro::VerticalAlignmentOptions value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // TMPro.VerticalAlignmentOptions
   #pragma pack(pop)
   static check_size<sizeof(VerticalAlignmentOptions), 0 + sizeof(int)> __TMPro_VerticalAlignmentOptionsSizeCheck;

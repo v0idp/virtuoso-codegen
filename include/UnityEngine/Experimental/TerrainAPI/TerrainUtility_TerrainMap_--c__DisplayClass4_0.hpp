@@ -31,15 +31,7 @@ namespace UnityEngine::Experimental::TerrainAPI {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class TerrainUtility::TerrainMap::$$c__DisplayClass4_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Int32 groupID
     // Size: 0x4
     // Offset: 0x10
@@ -52,12 +44,12 @@ namespace UnityEngine::Experimental::TerrainAPI {
       return groupID;
     }
     // Get instance field reference: public System.Int32 groupID
-    int& dyn_groupID();
+    [[deprecated]] int& dyn_groupID();
     // System.Boolean <CreateFromPlacement>b__0(UnityEngine.Terrain x)
-    // Offset: 0x12E34D4
+    // Offset: 0x18E7748
     bool $CreateFromPlacement$b__0(::UnityEngine::Terrain* x);
     // public System.Void .ctor()
-    // Offset: 0x12E25C4
+    // Offset: 0x18E6838
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

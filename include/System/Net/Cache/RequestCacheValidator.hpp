@@ -22,7 +22,18 @@ namespace System::Net::Cache {
   // [TokenAttribute] Offset: FFFFFFFF
   class RequestCacheValidator : public ::Il2CppObject {
     public:
+    // public System.Object CreateValidator()
+    // Offset: 0xD9837C
+    ::Il2CppObject* CreateValidator();
   }; // System.Net.Cache.RequestCacheValidator
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Net::Cache::RequestCacheValidator::CreateValidator
+// Il2CppName: CreateValidator
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObject* (System::Net::Cache::RequestCacheValidator::*)()>(&System::Net::Cache::RequestCacheValidator::CreateValidator)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Net::Cache::RequestCacheValidator*), "CreateValidator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};

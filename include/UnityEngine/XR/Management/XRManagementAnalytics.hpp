@@ -66,10 +66,10 @@ namespace UnityEngine::XR::Management {
     // Set static field: static private System.Boolean s_Initialized
     static void _set_s_Initialized(bool value);
     // static private System.Void .cctor()
-    // Offset: 0x12F3CAC
+    // Offset: 0x18FAEAC
     static void _cctor();
     // static private System.Boolean Initialize()
-    // Offset: 0x12F3C48
+    // Offset: 0x18FAE48
     static bool Initialize();
   }; // UnityEngine.XR.Management.XRManagementAnalytics
   #pragma pack(pop)

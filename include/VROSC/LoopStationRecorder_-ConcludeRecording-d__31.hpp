@@ -77,22 +77,22 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public VROSC.LoopStationRecorder <>4__this
-    ::VROSC::LoopStationRecorder*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn_$$4__this();
     // Get instance field reference: private System.Double <concludeTime>5__2
-    double& dyn_$concludeTime$5__2();
+    [[deprecated]] double& dyn_$concludeTime$5__2();
     // Get instance field reference: private System.Double <fadeOverlapSeconds>5__3
-    double& dyn_$fadeOverlapSeconds$5__3();
+    [[deprecated]] double& dyn_$fadeOverlapSeconds$5__3();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
-    // Offset: 0x13D7798
+    // Offset: 0x195F4B4
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
-    // Offset: 0x13D839C
+    // Offset: 0x19600B8
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
   }; // VROSC.LoopStationRecorder/VROSC.<ConcludeRecording>d__31
   #pragma pack(pop)

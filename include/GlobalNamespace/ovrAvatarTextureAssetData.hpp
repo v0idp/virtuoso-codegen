@@ -73,17 +73,17 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarTextureFormat format
-    ::GlobalNamespace::ovrAvatarTextureFormat& dyn_format();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarTextureFormat& dyn_format();
     // Get instance field reference: public System.UInt32 sizeX
-    uint& dyn_sizeX();
+    [[deprecated]] uint& dyn_sizeX();
     // Get instance field reference: public System.UInt32 sizeY
-    uint& dyn_sizeY();
+    [[deprecated]] uint& dyn_sizeY();
     // Get instance field reference: public System.UInt32 mipCount
-    uint& dyn_mipCount();
+    [[deprecated]] uint& dyn_mipCount();
     // Get instance field reference: public System.UInt64 textureDataSize
-    uint64_t& dyn_textureDataSize();
+    [[deprecated]] uint64_t& dyn_textureDataSize();
     // Get instance field reference: public System.IntPtr textureData
-    ::System::IntPtr& dyn_textureData();
+    [[deprecated]] ::System::IntPtr& dyn_textureData();
   }; // ovrAvatarTextureAssetData
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarTextureAssetData), 24 + sizeof(::System::IntPtr)> __GlobalNamespace_ovrAvatarTextureAssetDataSizeCheck;

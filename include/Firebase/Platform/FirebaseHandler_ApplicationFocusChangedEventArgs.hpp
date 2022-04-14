@@ -25,16 +25,8 @@ namespace Firebase::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirebaseHandler::ApplicationFocusChangedEventArgs : public ::System::EventArgs {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x5DFF80
+    // [DebuggerBrowsableAttribute] Offset: 0x6F7DA0
     // private System.Boolean <HasFocus>k__BackingField
     // Size: 0x1
     // Offset: 0x10
@@ -47,12 +39,12 @@ namespace Firebase::Platform {
       return HasFocus;
     }
     // Get instance field reference: private System.Boolean <HasFocus>k__BackingField
-    bool& dyn_$HasFocus$k__BackingField();
+    [[deprecated]] bool& dyn_$HasFocus$k__BackingField();
     // public System.Void set_HasFocus(System.Boolean value)
-    // Offset: 0x12CC32C
+    // Offset: 0x18CB6BC
     void set_HasFocus(bool value);
     // public System.Void .ctor()
-    // Offset: 0x12CA718
+    // Offset: 0x18C9AA8
     // Implemented from: System.EventArgs
     // Base method: System.Void EventArgs::.ctor()
     // Base method: System.Void Object::.ctor()

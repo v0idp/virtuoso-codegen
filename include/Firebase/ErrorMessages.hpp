@@ -48,13 +48,13 @@ namespace Firebase {
     // Set static field: static private System.String DLL_NOT_FOUND_ERROR_GENERIC
     static void _set_DLL_NOT_FOUND_ERROR_GENERIC(::StringW value);
     // static System.String get_DependencyNotFoundErrorMessage()
-    // Offset: 0x1295F6C
+    // Offset: 0x1884B70
     static ::StringW get_DependencyNotFoundErrorMessage();
     // static System.String get_DllNotFoundExceptionErrorMessage()
-    // Offset: 0x1296040
+    // Offset: 0x1884C44
     static ::StringW get_DllNotFoundExceptionErrorMessage();
     // static private System.Void .cctor()
-    // Offset: 0x1296144
+    // Offset: 0x1884D48
     static void _cctor();
   }; // Firebase.ErrorMessages
   #pragma pack(pop)

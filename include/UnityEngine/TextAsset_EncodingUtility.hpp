@@ -38,7 +38,7 @@ namespace UnityEngine {
     // Set static field: static readonly System.Text.Encoding targetEncoding
     static void _set_targetEncoding(::System::Text::Encoding* value);
     // static private System.Void .cctor()
-    // Offset: 0x12506E8
+    // Offset: 0x18448BC
     static void _cctor();
   }; // UnityEngine.TextAsset/UnityEngine.EncodingUtility
   #pragma pack(pop)

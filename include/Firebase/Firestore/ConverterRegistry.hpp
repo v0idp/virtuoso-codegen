@@ -43,15 +43,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class ConverterRegistry : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Collections.Generic.Dictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter> _converters
     // Size: 0x8
     // Offset: 0x10
@@ -64,9 +56,9 @@ namespace Firebase::Firestore {
       return converters;
     }
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter> _converters
-    ::System::Collections::Generic::Dictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*& dyn__converters();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*& dyn__converters();
     // System.Collections.Generic.IDictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter> ToConverterDictionary()
-    // Offset: 0xC2F184
+    // Offset: 0xD50F94
     ::System::Collections::Generic::IDictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>* ToConverterDictionary();
   }; // Firebase.Firestore.ConverterRegistry
   #pragma pack(pop)

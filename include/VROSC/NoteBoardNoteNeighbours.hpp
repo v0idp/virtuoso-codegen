@@ -36,15 +36,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::NoteBoardNoteNeighbours::Axis
     class Axis;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNoteNeighbours/VROSC.Axis _x
     // Size: 0x8
     // Offset: 0x10
@@ -71,22 +63,22 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::NoteBoardNote*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteBoardNoteNeighbours/VROSC.Axis _x
-    ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__x();
+    [[deprecated]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__x();
     // Get instance field reference: private VROSC.NoteBoardNoteNeighbours/VROSC.Axis _y
-    ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__y();
+    [[deprecated]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__y();
     // Get instance field reference: private VROSC.NoteBoardNoteNeighbours/VROSC.Axis _z
-    ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__z();
+    [[deprecated]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__z();
     // Get instance field reference: public VROSC.NoteBoardNote[] AllNeighbours
-    ::ArrayW<::VROSC::NoteBoardNote*>& dyn_AllNeighbours();
+    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_AllNeighbours();
     // public System.Void .ctor(VROSC.NoteBoardNote xUp, VROSC.NoteBoardNote xDown, VROSC.NoteBoardNote yUp, VROSC.NoteBoardNote yDown, VROSC.NoteBoardNote zUp, VROSC.NoteBoardNote zDown)
-    // Offset: 0xA134A0
+    // Offset: 0xC5678C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoardNoteNeighbours* New_ctor(::VROSC::NoteBoardNote* xUp, ::VROSC::NoteBoardNote* xDown, ::VROSC::NoteBoardNote* yUp, ::VROSC::NoteBoardNote* yDown, ::VROSC::NoteBoardNote* zUp, ::VROSC::NoteBoardNote* zDown) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteNeighbours::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteNeighbours*, creationType>(xUp, xDown, yUp, yDown, zUp, zDown)));
     }
     // public VROSC.NoteBoardNote[] GetNeighbours(System.Int32 axis, System.Boolean inverted)
-    // Offset: 0xA136C0
+    // Offset: 0xC569AC
     ::ArrayW<::VROSC::NoteBoardNote*> GetNeighbours(int axis, bool inverted);
   }; // VROSC.NoteBoardNoteNeighbours
   #pragma pack(pop)

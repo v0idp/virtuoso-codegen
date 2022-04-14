@@ -125,40 +125,40 @@ namespace VROSC {
     // Set static field: static private System.Collections.Concurrent.ConcurrentQueue`1<VROSC.CallbackHandler/VROSC.ErrorCallback> _errorCallbacks
     static void _set__errorCallbacks(::System::Collections::Concurrent::ConcurrentQueue_1<::VROSC::CallbackHandler::ErrorCallback*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x132FA5C
+    // Offset: 0x944560
     static void _cctor();
     // static public System.Void Init()
-    // Offset: 0x132F308
+    // Offset: 0x943E0C
     static void Init();
     // static public System.Void RegisterCallback(System.Action action)
-    // Offset: 0x132F408
+    // Offset: 0x943F0C
     static void RegisterCallback(::System::Action* action);
     // static public System.Void RegisterStringCallback(System.Action`1<System.String> action, System.String argument)
-    // Offset: 0x132F494
+    // Offset: 0x943F98
     static void RegisterStringCallback(::System::Action_1<::StringW>* action, ::StringW argument);
     // static public System.Void RegisterErrorCallback(System.Action`1<VROSC.Error> action, VROSC.Error error)
-    // Offset: 0x132F560
+    // Offset: 0x944064
     static void RegisterErrorCallback(::System::Action_1<::VROSC::Error>* action, ::VROSC::Error error);
     // static public System.Void RegisterLoginUserWithEmailCallback(System.Action`2<System.String,System.Boolean> action, System.String userId, System.Boolean isVerified)
-    // Offset: 0x132F630
+    // Offset: 0x944134
     static void RegisterLoginUserWithEmailCallback(::System::Action_2<::StringW, bool>* action, ::StringW userId, bool isVerified);
     // static public System.Void RegisterUserLoginAnonymouslyCallback(System.Action`3<System.String,System.String,System.String> action, System.String userId, System.String accessToken, System.String refreshToken)
-    // Offset: 0x132F710
+    // Offset: 0x944214
     static void RegisterUserLoginAnonymouslyCallback(::System::Action_3<::StringW, ::StringW, ::StringW>* action, ::StringW userId, ::StringW accessToken, ::StringW refreshToken);
     // static public System.Void RegisterFirestoreCollectionReadCallback(System.Action`1<System.Collections.Generic.IEnumerable`1<Firebase.Firestore.DocumentSnapshot>> action, System.Collections.Generic.IEnumerable`1<Firebase.Firestore.DocumentSnapshot> data)
-    // Offset: 0x132F7F0
+    // Offset: 0x9442F4
     static void RegisterFirestoreCollectionReadCallback(::System::Action_1<::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*>* action, ::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>* data);
     // static public System.Void RegisterFirestoreCollectionDictionaryReadCallback(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>>> action, System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>> data)
-    // Offset: 0x132F8BC
+    // Offset: 0x9443C0
     static void RegisterFirestoreCollectionDictionaryReadCallback(::System::Action_1<::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>*>* action, ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>* data);
     // static public System.Void RegisterFirestoreDocumentReadCallback(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>> action, System.Collections.Generic.Dictionary`2<System.String,System.Object> data)
-    // Offset: 0x132F988
+    // Offset: 0x94448C
     static void RegisterFirestoreDocumentReadCallback(::System::Action_1<::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>* action, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* data);
     // static private System.Void PollInProgressRequests()
-    // Offset: 0x132F360
+    // Offset: 0x943E64
     static void PollInProgressRequests();
     // public System.Void .ctor()
-    // Offset: 0x132FA54
+    // Offset: 0x944558
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

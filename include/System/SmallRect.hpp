@@ -57,13 +57,13 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int16 Left
-    int16_t& dyn_Left();
+    [[deprecated]] int16_t& dyn_Left();
     // Get instance field reference: public System.Int16 Top
-    int16_t& dyn_Top();
+    [[deprecated]] int16_t& dyn_Top();
     // Get instance field reference: public System.Int16 Right
-    int16_t& dyn_Right();
+    [[deprecated]] int16_t& dyn_Right();
     // Get instance field reference: public System.Int16 Bottom
-    int16_t& dyn_Bottom();
+    [[deprecated]] int16_t& dyn_Bottom();
   }; // System.SmallRect
   #pragma pack(pop)
   static check_size<sizeof(SmallRect), 6 + sizeof(int16_t)> __System_SmallRectSizeCheck;

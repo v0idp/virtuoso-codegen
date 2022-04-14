@@ -41,15 +41,7 @@ namespace Proyecto26 {
   // [TokenAttribute] Offset: FFFFFFFF
   class ResponseHelper : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Networking.UnityWebRequest <Request>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -62,40 +54,40 @@ namespace Proyecto26 {
       return Request;
     }
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequest <Request>k__BackingField
-    ::UnityEngine::Networking::UnityWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$Request$k__BackingField();
     // public UnityEngine.Networking.UnityWebRequest get_Request()
-    // Offset: 0xAFE498
+    // Offset: 0xB34A98
     ::UnityEngine::Networking::UnityWebRequest* get_Request();
     // private System.Void set_Request(UnityEngine.Networking.UnityWebRequest value)
-    // Offset: 0xAFE4A0
+    // Offset: 0xB34AA0
     void set_Request(::UnityEngine::Networking::UnityWebRequest* value);
     // public System.Int64 get_StatusCode()
-    // Offset: 0xAFE4D4
+    // Offset: 0xB34AD4
     int64_t get_StatusCode();
     // public System.Byte[] get_Data()
-    // Offset: 0xAFE4F0
+    // Offset: 0xB34AF0
     ::ArrayW<uint8_t> get_Data();
     // public System.String get_Text()
-    // Offset: 0xAFE5A8
+    // Offset: 0xB34BA8
     ::StringW get_Text();
     // public System.String get_Error()
-    // Offset: 0xAFE670
+    // Offset: 0xB34C70
     ::StringW get_Error();
     // public System.Collections.Generic.Dictionary`2<System.String,System.String> get_Headers()
-    // Offset: 0xAFE68C
+    // Offset: 0xB34C8C
     ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* get_Headers();
     // public System.Void .ctor(UnityEngine.Networking.UnityWebRequest request)
-    // Offset: 0xAFE4A8
+    // Offset: 0xB34AA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ResponseHelper* New_ctor(::UnityEngine::Networking::UnityWebRequest* request) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::ResponseHelper::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ResponseHelper*, creationType>(request)));
     }
     // public System.String GetHeader(System.String name)
-    // Offset: 0xAFE6A8
+    // Offset: 0xB34CA8
     ::StringW GetHeader(::StringW name);
     // public override System.String ToString()
-    // Offset: 0xAFE6C4
+    // Offset: 0xB34CC4
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

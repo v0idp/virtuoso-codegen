@@ -56,15 +56,7 @@ namespace Oculus::Voice::Bindings::Android {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoiceSDKImpl : public ::Oculus::Voice::Core::Bindings::Android::BaseAndroidConnectionImpl_1<::Oculus::Voice::Bindings::Android::VoiceSDKBinding*>/*, public ::Oculus::Voice::Interfaces::IPlatformVoiceService*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding eventBinding
     // Size: 0x8
     // Offset: 0x28
@@ -83,59 +75,59 @@ namespace Oculus::Voice::Bindings::Android {
       return *reinterpret_cast<::Oculus::Voice::Interfaces::IPlatformVoiceService*>(this);
     }
     // Get instance field reference: private Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding eventBinding
-    ::Oculus::Voice::Bindings::Android::VoiceSDKListenerBinding*& dyn_eventBinding();
+    [[deprecated]] ::Oculus::Voice::Bindings::Android::VoiceSDKListenerBinding*& dyn_eventBinding();
     // Get instance field reference: private Facebook.WitAi.Interfaces.ITranscriptionProvider <TranscriptionProvider>k__BackingField
-    ::Facebook::WitAi::Interfaces::ITranscriptionProvider*& dyn_$TranscriptionProvider$k__BackingField();
+    [[deprecated]] ::Facebook::WitAi::Interfaces::ITranscriptionProvider*& dyn_$TranscriptionProvider$k__BackingField();
     // public System.Boolean get_PlatformSupportsWit()
-    // Offset: 0x12E6154
+    // Offset: 0x18EA3C8
     bool get_PlatformSupportsWit();
     // public System.Boolean get_Active()
-    // Offset: 0x12E616C
+    // Offset: 0x18EA3E0
     bool get_Active();
     // public System.Boolean get_IsRequestActive()
-    // Offset: 0x12E6184
+    // Offset: 0x18EA3F8
     bool get_IsRequestActive();
     // public System.Boolean get_MicActive()
-    // Offset: 0x12E619C
+    // Offset: 0x18EA410
     bool get_MicActive();
     // public Facebook.WitAi.Events.VoiceEvents get_VoiceEvents()
-    // Offset: 0x12E61CC
+    // Offset: 0x18EA440
     ::Facebook::WitAi::Events::VoiceEvents* get_VoiceEvents();
     // public System.Void set_VoiceEvents(Facebook.WitAi.Events.VoiceEvents value)
-    // Offset: 0x12E61E8
+    // Offset: 0x18EA45C
     void set_VoiceEvents(::Facebook::WitAi::Events::VoiceEvents* value);
     // public Facebook.WitAi.Interfaces.ITranscriptionProvider get_TranscriptionProvider()
-    // Offset: 0x12E62F0
+    // Offset: 0x18EA564
     ::Facebook::WitAi::Interfaces::ITranscriptionProvider* get_TranscriptionProvider();
     // public System.Void set_TranscriptionProvider(Facebook.WitAi.Interfaces.ITranscriptionProvider value)
-    // Offset: 0x12E62F8
+    // Offset: 0x18EA56C
     void set_TranscriptionProvider(::Facebook::WitAi::Interfaces::ITranscriptionProvider* value);
     // public System.Void SetRuntimeConfiguration(Facebook.WitAi.Configuration.WitRuntimeConfiguration configuration)
-    // Offset: 0x12E61B4
+    // Offset: 0x18EA428
     void SetRuntimeConfiguration(::Facebook::WitAi::Configuration::WitRuntimeConfiguration* configuration);
     // public System.Void Activate(System.String text)
-    // Offset: 0x12E6300
+    // Offset: 0x18EA574
     void Activate(::StringW text);
     // public System.Void Activate(System.String text, Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x12E6318
+    // Offset: 0x18EA58C
     void Activate(::StringW text, ::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // public System.Void Activate()
-    // Offset: 0x12E6330
+    // Offset: 0x18EA5A4
     void Activate();
     // public System.Void Activate(Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x12E6348
+    // Offset: 0x18EA5BC
     void Activate(::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // public System.Void ActivateImmediately()
-    // Offset: 0x12E6360
+    // Offset: 0x18EA5D4
     void ActivateImmediately();
     // public System.Void ActivateImmediately(Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
-    // Offset: 0x12E6378
+    // Offset: 0x18EA5EC
     void ActivateImmediately(::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
     // public System.Void Deactivate()
-    // Offset: 0x12E6390
+    // Offset: 0x18EA604
     void Deactivate();
     // public System.Void .ctor()
-    // Offset: 0x12E4E88
+    // Offset: 0x18E90FC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

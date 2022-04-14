@@ -54,10 +54,10 @@ namespace Firebase::Firestore::Converters {
     // Set static field: static private readonly System.Reflection.MethodInfo _method
     static void _set__method(::System::Reflection::MethodInfo* value);
     // static private System.Void .cctor()
-    // Offset: 0xC2F1FC
+    // Offset: 0xD5100C
     static void _cctor();
     // static Firebase.Firestore.Converters.IFirestoreInternalConverter ForConverterType(System.Type converterType, System.Type targetType)
-    // Offset: 0xC27AA0
+    // Offset: 0xD49800
     static ::Firebase::Firestore::Converters::IFirestoreInternalConverter* ForConverterType(::System::Type* converterType, ::System::Type* targetType);
     // static Firebase.Firestore.Converters.IFirestoreInternalConverter CreateInstance(Firebase.Firestore.FirestoreConverter`1<T> wrappedConverter)
     // Offset: 0xFFFFFFFFFFFFFFFF

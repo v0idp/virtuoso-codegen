@@ -37,22 +37,22 @@ namespace Firebase::Platform {
   class FirebaseMonoBehaviour : public ::UnityEngine::MonoBehaviour {
     public:
     // private Firebase.Platform.FirebaseHandler GetFirebaseHandlerOrDestroyGameObject()
-    // Offset: 0x12CAF80
+    // Offset: 0x18CA310
     ::Firebase::Platform::FirebaseHandler* GetFirebaseHandlerOrDestroyGameObject();
     // private System.Void OnEnable()
-    // Offset: 0x12CB07C
+    // Offset: 0x18CA40C
     void OnEnable();
     // private System.Void Update()
-    // Offset: 0x12CB080
+    // Offset: 0x18CA410
     void Update();
     // private System.Void OnApplicationFocus(System.Boolean hasFocus)
-    // Offset: 0x12CB108
+    // Offset: 0x18CA498
     void OnApplicationFocus(bool hasFocus);
     // private System.Void OnDestroy()
-    // Offset: 0x12CB13C
+    // Offset: 0x18CA4CC
     void OnDestroy();
     // public System.Void .ctor()
-    // Offset: 0x12CAF78
+    // Offset: 0x18CA308
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

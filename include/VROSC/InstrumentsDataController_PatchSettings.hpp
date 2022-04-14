@@ -25,15 +25,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InstrumentsDataController::PatchSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.WidgetSettings/VROSC.Identifier InstrumentId
     // Size: 0x4
     // Offset: 0x10
@@ -50,11 +42,11 @@ namespace VROSC {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: public VROSC.WidgetSettings/VROSC.Identifier InstrumentId
-    ::VROSC::WidgetSettings::Identifier& dyn_InstrumentId();
+    [[deprecated]] ::VROSC::WidgetSettings::Identifier& dyn_InstrumentId();
     // Get instance field reference: public System.Object Patch
-    ::Il2CppObject*& dyn_Patch();
+    [[deprecated]] ::Il2CppObject*& dyn_Patch();
     // public System.Void .ctor()
-    // Offset: 0x13D0DD8
+    // Offset: 0x1958A24
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

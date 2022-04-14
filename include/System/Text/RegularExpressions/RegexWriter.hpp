@@ -58,15 +58,7 @@ namespace System::Text::RegularExpressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class RegexWriter : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Int32[] _intStack
     // Size: 0x8
     // Offset: 0x10
@@ -137,69 +129,69 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: System.Int32[] _intStack
-    ::ArrayW<int>& dyn__intStack();
+    [[deprecated]] ::ArrayW<int>& dyn__intStack();
     // Get instance field reference: System.Int32 _depth
-    int& dyn__depth();
+    [[deprecated]] int& dyn__depth();
     // Get instance field reference: System.Int32[] _emitted
-    ::ArrayW<int>& dyn__emitted();
+    [[deprecated]] ::ArrayW<int>& dyn__emitted();
     // Get instance field reference: System.Int32 _curpos
-    int& dyn__curpos();
+    [[deprecated]] int& dyn__curpos();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.String,System.Int32> _stringhash
-    ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn__stringhash();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn__stringhash();
     // Get instance field reference: System.Collections.Generic.List`1<System.String> _stringtable
-    ::System::Collections::Generic::List_1<::StringW>*& dyn__stringtable();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__stringtable();
     // Get instance field reference: System.Boolean _counting
-    bool& dyn__counting();
+    [[deprecated]] bool& dyn__counting();
     // Get instance field reference: System.Int32 _count
-    int& dyn__count();
+    [[deprecated]] int& dyn__count();
     // Get instance field reference: System.Int32 _trackcount
-    int& dyn__trackcount();
+    [[deprecated]] int& dyn__trackcount();
     // Get instance field reference: System.Collections.Hashtable _caps
-    ::System::Collections::Hashtable*& dyn__caps();
+    [[deprecated]] ::System::Collections::Hashtable*& dyn__caps();
     // static System.Text.RegularExpressions.RegexCode Write(System.Text.RegularExpressions.RegexTree t)
-    // Offset: 0x125CF1C
+    // Offset: 0x18520F0
     static ::System::Text::RegularExpressions::RegexCode* Write(::System::Text::RegularExpressions::RegexTree* t);
     // System.Void PushInt(System.Int32 I)
-    // Offset: 0x125D448
+    // Offset: 0x185261C
     void PushInt(int I);
     // System.Boolean EmptyStack()
-    // Offset: 0x125D524
+    // Offset: 0x18526F8
     bool EmptyStack();
     // System.Int32 PopInt()
-    // Offset: 0x125D534
+    // Offset: 0x1852708
     int PopInt();
     // System.Int32 CurPos()
-    // Offset: 0x125D57C
+    // Offset: 0x1852750
     int CurPos();
     // System.Void PatchJump(System.Int32 Offset, System.Int32 jumpDest)
-    // Offset: 0x125D584
+    // Offset: 0x1852758
     void PatchJump(int Offset, int jumpDest);
     // System.Void Emit(System.Int32 op)
-    // Offset: 0x125D5C4
+    // Offset: 0x1852798
     void Emit(int op);
     // System.Void Emit(System.Int32 op, System.Int32 opd1)
-    // Offset: 0x125D65C
+    // Offset: 0x1852830
     void Emit(int op, int opd1);
     // System.Void Emit(System.Int32 op, System.Int32 opd1, System.Int32 opd2)
-    // Offset: 0x125D71C
+    // Offset: 0x18528F0
     void Emit(int op, int opd1, int opd2);
     // System.Int32 StringCode(System.String str)
-    // Offset: 0x125D804
+    // Offset: 0x18529D8
     int StringCode(::StringW str);
     // System.ArgumentException MakeException(System.String message)
-    // Offset: 0x125D948
+    // Offset: 0x1852B1C
     ::System::ArgumentException* MakeException(::StringW message);
     // System.Int32 MapCapnum(System.Int32 capnum)
-    // Offset: 0x125D9A8
+    // Offset: 0x1852B7C
     int MapCapnum(int capnum);
     // System.Text.RegularExpressions.RegexCode RegexCodeFromRegexTree(System.Text.RegularExpressions.RegexTree tree)
-    // Offset: 0x125D070
+    // Offset: 0x1852244
     ::System::Text::RegularExpressions::RegexCode* RegexCodeFromRegexTree(::System::Text::RegularExpressions::RegexTree* tree);
     // System.Void EmitFragment(System.Int32 nodetype, System.Text.RegularExpressions.RegexNode node, System.Int32 CurIndex)
-    // Offset: 0x125DA60
+    // Offset: 0x1852C34
     void EmitFragment(int nodetype, ::System::Text::RegularExpressions::RegexNode* node, int CurIndex);
     // private System.Void .ctor()
-    // Offset: 0x125CF80
+    // Offset: 0x1852154
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

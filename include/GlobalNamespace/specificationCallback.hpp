@@ -38,20 +38,20 @@ namespace GlobalNamespace {
   class specificationCallback : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x13596CC
+    // Offset: 0x955FC8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static specificationCallback* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::specificationCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<specificationCallback*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.IntPtr specification)
-    // Offset: 0x13596DC
+    // Offset: 0x955FD8
     void Invoke(::System::IntPtr specification);
     // public System.IAsyncResult BeginInvoke(System.IntPtr specification, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1359908
+    // Offset: 0x956204
     ::System::IAsyncResult* BeginInvoke(::System::IntPtr specification, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x1359990
+    // Offset: 0x95628C
     void EndInvoke(::System::IAsyncResult* result);
   }; // specificationCallback
   #pragma pack(pop)

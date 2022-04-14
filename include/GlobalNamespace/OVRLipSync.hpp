@@ -129,7 +129,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRLipSync/Result UndefinedFunction
       static void _set_UndefinedFunction(::GlobalNamespace::OVRLipSync::Result value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRLipSync/Result
     #pragma pack(pop)
     static check_size<sizeof(OVRLipSync::Result), 0 + sizeof(int)> __GlobalNamespace_OVRLipSync_ResultSizeCheck;
@@ -157,73 +157,73 @@ namespace GlobalNamespace {
     // Set static field: static public OVRLipSync sInstance
     static void _set_sInstance(::GlobalNamespace::OVRLipSync* value);
     // static private System.Int32 ovrLipSyncDll_Initialize(System.Int32 samplerate, System.Int32 buffersize)
-    // Offset: 0x12A919C
+    // Offset: 0x18A7D40
     static int ovrLipSyncDll_Initialize(int samplerate, int buffersize);
     // static private System.Void ovrLipSyncDll_Shutdown()
-    // Offset: 0x12A922C
+    // Offset: 0x18A7DD0
     static void ovrLipSyncDll_Shutdown();
     // static private System.IntPtr ovrLipSyncDll_GetVersion(ref System.Int32 Major, ref System.Int32 Minor, ref System.Int32 Patch)
-    // Offset: 0x12A929C
+    // Offset: 0x18A7E40
     static ::System::IntPtr ovrLipSyncDll_GetVersion(ByRef<int> Major, ByRef<int> Minor, ByRef<int> Patch);
     // static private System.Int32 ovrLipSyncDll_CreateContextEx(ref System.UInt32 context, OVRLipSync/ContextProviders provider, System.Int32 sampleRate, System.Boolean enableAcceleration)
-    // Offset: 0x12A9330
+    // Offset: 0x18A7ED4
     static int ovrLipSyncDll_CreateContextEx(ByRef<uint> context, ::GlobalNamespace::OVRLipSync::ContextProviders provider, int sampleRate, bool enableAcceleration);
     // static private System.Int32 ovrLipSyncDll_CreateContextWithModelFile(ref System.UInt32 context, OVRLipSync/ContextProviders provider, System.String modelPath, System.Int32 sampleRate, System.Boolean enableAcceleration)
-    // Offset: 0x12A93D8
+    // Offset: 0x18A7F7C
     static int ovrLipSyncDll_CreateContextWithModelFile(ByRef<uint> context, ::GlobalNamespace::OVRLipSync::ContextProviders provider, ::StringW modelPath, int sampleRate, bool enableAcceleration);
     // static private System.Int32 ovrLipSyncDll_DestroyContext(System.UInt32 context)
-    // Offset: 0x12A94A4
+    // Offset: 0x18A8048
     static int ovrLipSyncDll_DestroyContext(uint context);
     // static private System.Int32 ovrLipSyncDll_ResetContext(System.UInt32 context)
-    // Offset: 0x12A9524
+    // Offset: 0x18A80C8
     static int ovrLipSyncDll_ResetContext(uint context);
     // static private System.Int32 ovrLipSyncDll_SendSignal(System.UInt32 context, OVRLipSync/Signals signal, System.Int32 arg1, System.Int32 arg2)
-    // Offset: 0x12A95A4
+    // Offset: 0x18A8148
     static int ovrLipSyncDll_SendSignal(uint context, ::GlobalNamespace::OVRLipSync::Signals signal, int arg1, int arg2);
     // static private System.Int32 ovrLipSyncDll_ProcessFrameEx(System.UInt32 context, System.IntPtr audioBuffer, System.UInt32 bufferSize, OVRLipSync/AudioDataType dataType, ref System.Int32 frameNumber, ref System.Int32 frameDelay, System.Single[] visemes, System.Int32 visemeCount, ref System.Single laughterScore, System.Single[] laughterCategories, System.Int32 laughterCategoriesLength)
-    // Offset: 0x12A964C
+    // Offset: 0x18A81F0
     static int ovrLipSyncDll_ProcessFrameEx(uint context, ::System::IntPtr audioBuffer, uint bufferSize, ::GlobalNamespace::OVRLipSync::AudioDataType dataType, ByRef<int> frameNumber, ByRef<int> frameDelay, ::ArrayW<float> visemes, int visemeCount, ByRef<float> laughterScore, ::ArrayW<float> laughterCategories, int laughterCategoriesLength);
     // private System.Void Awake()
-    // Offset: 0x12A9754
+    // Offset: 0x18A82F8
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x12A9C30
+    // Offset: 0x18A87D4
     void OnDestroy();
     // static public OVRLipSync/Result Initialize()
-    // Offset: 0x12A9AD4
+    // Offset: 0x18A8678
     static ::GlobalNamespace::OVRLipSync::Result Initialize();
     // static public OVRLipSync/Result Initialize(System.Int32 sampleRate, System.Int32 bufferSize)
-    // Offset: 0x12A9D30
+    // Offset: 0x18A88D4
     static ::GlobalNamespace::OVRLipSync::Result Initialize(int sampleRate, int bufferSize);
     // static public System.Void Shutdown()
-    // Offset: 0x12A9E64
+    // Offset: 0x18A8A08
     static void Shutdown();
     // static public OVRLipSync/Result IsInitialized()
-    // Offset: 0x12A9ED0
+    // Offset: 0x18A8A74
     static ::GlobalNamespace::OVRLipSync::Result IsInitialized();
     // static public OVRLipSync/Result CreateContext(ref System.UInt32 context, OVRLipSync/ContextProviders provider, System.Int32 sampleRate, System.Boolean enableAcceleration)
-    // Offset: 0x12A9F34
+    // Offset: 0x18A8AD8
     static ::GlobalNamespace::OVRLipSync::Result CreateContext(ByRef<uint> context, ::GlobalNamespace::OVRLipSync::ContextProviders provider, int sampleRate, bool enableAcceleration);
     // static public OVRLipSync/Result CreateContextWithModelFile(ref System.UInt32 context, OVRLipSync/ContextProviders provider, System.String modelPath, System.Int32 sampleRate, System.Boolean enableAcceleration)
-    // Offset: 0x12AA050
+    // Offset: 0x18A8BF4
     static ::GlobalNamespace::OVRLipSync::Result CreateContextWithModelFile(ByRef<uint> context, ::GlobalNamespace::OVRLipSync::ContextProviders provider, ::StringW modelPath, int sampleRate, bool enableAcceleration);
     // static public OVRLipSync/Result DestroyContext(System.UInt32 context)
-    // Offset: 0x12AA180
+    // Offset: 0x18A8D24
     static ::GlobalNamespace::OVRLipSync::Result DestroyContext(uint context);
     // static public OVRLipSync/Result ResetContext(System.UInt32 context)
-    // Offset: 0x12AA258
+    // Offset: 0x18A8DFC
     static ::GlobalNamespace::OVRLipSync::Result ResetContext(uint context);
     // static public OVRLipSync/Result SendSignal(System.UInt32 context, OVRLipSync/Signals signal, System.Int32 arg1, System.Int32 arg2)
-    // Offset: 0x12AA330
+    // Offset: 0x18A8ED4
     static ::GlobalNamespace::OVRLipSync::Result SendSignal(uint context, ::GlobalNamespace::OVRLipSync::Signals signal, int arg1, int arg2);
     // static public OVRLipSync/Result ProcessFrame(System.UInt32 context, System.Single[] audioBuffer, OVRLipSync/Frame frame, System.Boolean stereo)
-    // Offset: 0x12AA42C
+    // Offset: 0x18A8FD0
     static ::GlobalNamespace::OVRLipSync::Result ProcessFrame(uint context, ::ArrayW<float> audioBuffer, ::GlobalNamespace::OVRLipSync::Frame* frame, bool stereo);
     // static public OVRLipSync/Result ProcessFrame(System.UInt32 context, System.Int16[] audioBuffer, OVRLipSync/Frame frame, System.Boolean stereo)
-    // Offset: 0x12AA5C8
+    // Offset: 0x18A916C
     static ::GlobalNamespace::OVRLipSync::Result ProcessFrame(uint context, ::ArrayW<int16_t> audioBuffer, ::GlobalNamespace::OVRLipSync::Frame* frame, bool stereo);
     // public System.Void .ctor()
-    // Offset: 0x12AA75C
+    // Offset: 0x18A9300
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -236,7 +236,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVRLipSync*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12AA764
+    // Offset: 0x18A9308
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

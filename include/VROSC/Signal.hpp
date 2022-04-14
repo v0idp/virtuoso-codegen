@@ -34,15 +34,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Signal : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single Value
     // Size: 0x4
     // Offset: 0x10
@@ -67,15 +59,15 @@ namespace VROSC {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public System.Single Value
-    float& dyn_Value();
+    [[deprecated]] float& dyn_Value();
     // Get instance field reference: public VROSC.SignalControllerInfo ControllerInfo
-    ::VROSC::SignalControllerInfo*& dyn_ControllerInfo();
+    [[deprecated]] ::VROSC::SignalControllerInfo*& dyn_ControllerInfo();
     // Get instance field reference: public System.Nullable`1<System.Boolean> FirstFrameOfSignal
-    ::System::Nullable_1<bool>& dyn_FirstFrameOfSignal();
+    [[deprecated]] ::System::Nullable_1<bool>& dyn_FirstFrameOfSignal();
     // Get instance field reference: public System.Double PredictedDSPTime
-    double& dyn_PredictedDSPTime();
+    [[deprecated]] double& dyn_PredictedDSPTime();
     // public System.Void .ctor(System.Single value, VROSC.SignalControllerInfo controllerInfo, System.Nullable`1<System.Boolean> firstFrameOfSignal, System.Double predictedDspTime)
-    // Offset: 0x13B4CC0
+    // Offset: 0x1927B8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Signal* New_ctor(float value, ::VROSC::SignalControllerInfo* controllerInfo, ::System::Nullable_1<bool> firstFrameOfSignal, double predictedDspTime) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Signal::.ctor");

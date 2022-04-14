@@ -96,32 +96,32 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKPose pose
-    ::LIV::SDK::Unity::SDKPose& dyn_pose();
+    [[deprecated]] ::LIV::SDK::Unity::SDKPose& dyn_pose();
     // Get instance field reference: public LIV.SDK.Unity.SDKClipPlane clipPlane
-    ::LIV::SDK::Unity::SDKClipPlane& dyn_clipPlane();
+    [[deprecated]] ::LIV::SDK::Unity::SDKClipPlane& dyn_clipPlane();
     // Get instance field reference: public LIV.SDK.Unity.SDKTransform stageTransform
-    ::LIV::SDK::Unity::SDKTransform& dyn_stageTransform();
+    [[deprecated]] ::LIV::SDK::Unity::SDKTransform& dyn_stageTransform();
     // Get instance field reference: public LIV.SDK.Unity.FEATURES features
-    ::LIV::SDK::Unity::FEATURES& dyn_features();
+    [[deprecated]] ::LIV::SDK::Unity::FEATURES& dyn_features();
     // Get instance field reference: public LIV.SDK.Unity.SDKClipPlane groundClipPlane
-    ::LIV::SDK::Unity::SDKClipPlane& dyn_groundClipPlane();
+    [[deprecated]] ::LIV::SDK::Unity::SDKClipPlane& dyn_groundClipPlane();
     // Get instance field reference: public System.UInt64 frameid
-    uint64_t& dyn_frameid();
+    [[deprecated]] uint64_t& dyn_frameid();
     // Get instance field reference: public System.UInt64 referenceframe
-    uint64_t& dyn_referenceframe();
+    [[deprecated]] uint64_t& dyn_referenceframe();
     // Get instance field reference: public LIV.SDK.Unity.SDKPriority priority
-    ::LIV::SDK::Unity::SDKPriority& dyn_priority();
+    [[deprecated]] ::LIV::SDK::Unity::SDKPriority& dyn_priority();
     // static public LIV.SDK.Unity.SDKInputFrame get_empty()
-    // Offset: 0xB01F54
+    // Offset: 0xDD34FC
     static ::LIV::SDK::Unity::SDKInputFrame get_empty();
     // public System.Void ReleaseControl()
-    // Offset: 0xB02EEC
+    // Offset: 0xDD4494
     void ReleaseControl();
     // public System.Void ObtainControl()
-    // Offset: 0xB02EFC
+    // Offset: 0xDD44A4
     void ObtainControl();
     // public override System.String ToString()
-    // Offset: 0xB02F10
+    // Offset: 0xDD44B8
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

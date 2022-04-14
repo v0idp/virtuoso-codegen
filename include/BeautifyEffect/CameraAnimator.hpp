@@ -29,10 +29,10 @@ namespace BeautifyEffect {
   class CameraAnimator : public ::UnityEngine::MonoBehaviour {
     public:
     // private System.Void Update()
-    // Offset: 0x132FCDC
+    // Offset: 0x9447E0
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x132FD2C
+    // Offset: 0x944830
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

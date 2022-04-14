@@ -60,7 +60,7 @@ namespace System::Globalization {
     // Set static field: static public readonly System.Char[] range_a722_a78b
     static void _set_range_a722_a78b(::ArrayW<::Il2CppChar> value);
     // static private System.Void .cctor()
-    // Offset: 0xC8C858
+    // Offset: 0x11D84B0
     static void _cctor();
   }; // System.Globalization.TextInfoToLowerData
   #pragma pack(pop)

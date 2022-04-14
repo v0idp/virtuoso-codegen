@@ -29,6 +29,10 @@ namespace System::Reflection {
 namespace System {
   // Forward declaring type: RuntimeType
   class RuntimeType;
+  // Forward declaring type: Delegate
+  class Delegate;
+  // Forward declaring type: Type
+  class Type;
 }
 // Forward declaring namespace: System::Runtime::Serialization
 namespace System::Runtime::Serialization {
@@ -59,27 +63,27 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // System.Reflection.BindingFlags get_BindingFlags()
-    // Offset: 0xEDF1EC
+    // Offset: 0xCE5708
     ::System::Reflection::BindingFlags get_BindingFlags();
     // private System.RuntimeType get_ReflectedTypeInternal()
-    // Offset: 0xEDF284
+    // Offset: 0xCE57A4
     ::System::RuntimeType* get_ReflectedTypeInternal();
     // System.Reflection.RuntimeModule GetRuntimeModule()
-    // Offset: 0xEDF1F8
+    // Offset: 0xCE5714
     ::System::Reflection::RuntimeModule* GetRuntimeModule();
     // public System.Void GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0xEDF4F8
+    // Offset: 0xCE5A44
     void GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context);
     // System.String SerializationToString()
-    // Offset: 0xEDF624
+    // Offset: 0xCE5B70
     ::StringW SerializationToString();
     // public override System.Reflection.Module get_Module()
-    // Offset: 0xEDF1F4
+    // Offset: 0xCE5710
     // Implemented from: System.Reflection.MemberInfo
     // Base method: System.Reflection.Module MemberInfo::get_Module()
     ::System::Reflection::Module* get_Module();
     // protected System.Void .ctor()
-    // Offset: 0xEDF6C4
+    // Offset: 0xCE5C10
     // Implemented from: System.Reflection.MethodInfo
     // Base method: System.Void MethodInfo::.ctor()
     // Base method: System.Void MethodBase::.ctor()
@@ -91,12 +95,22 @@ namespace System::Reflection {
       return THROW_UNLESS((::il2cpp_utils::New<RuntimeMethodInfo*, creationType>()));
     }
     // override System.String FormatNameAndSig(System.Boolean serialization)
-    // Offset: 0xEDF30C
+    // Offset: 0xCE582C
     // Implemented from: System.Reflection.MethodBase
     // Base method: System.String MethodBase::FormatNameAndSig(System.Boolean serialization)
     ::StringW FormatNameAndSig(bool serialization);
+    // public override System.Delegate CreateDelegate(System.Type delegateType)
+    // Offset: 0xCE5984
+    // Implemented from: System.Reflection.MethodInfo
+    // Base method: System.Delegate MethodInfo::CreateDelegate(System.Type delegateType)
+    ::System::Delegate* CreateDelegate(::System::Type* delegateType);
+    // public override System.Delegate CreateDelegate(System.Type delegateType, System.Object target)
+    // Offset: 0xCE5998
+    // Implemented from: System.Reflection.MethodInfo
+    // Base method: System.Delegate MethodInfo::CreateDelegate(System.Type delegateType, System.Object target)
+    ::System::Delegate* CreateDelegate(::System::Type* delegateType, ::Il2CppObject* target);
     // public override System.String ToString()
-    // Offset: 0xEDF464
+    // Offset: 0xCE59B0
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();
@@ -165,6 +179,25 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
   static const MethodInfo* get() {
     static auto* serialization = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Reflection::RuntimeMethodInfo*), "FormatNameAndSig", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{serialization});
+  }
+};
+// Writing MetadataGetter for method: System::Reflection::RuntimeMethodInfo::CreateDelegate
+// Il2CppName: CreateDelegate
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Delegate* (System::Reflection::RuntimeMethodInfo::*)(::System::Type*)>(&System::Reflection::RuntimeMethodInfo::CreateDelegate)> {
+  static const MethodInfo* get() {
+    static auto* delegateType = &::il2cpp_utils::GetClassFromName("System", "Type")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Reflection::RuntimeMethodInfo*), "CreateDelegate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{delegateType});
+  }
+};
+// Writing MetadataGetter for method: System::Reflection::RuntimeMethodInfo::CreateDelegate
+// Il2CppName: CreateDelegate
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Delegate* (System::Reflection::RuntimeMethodInfo::*)(::System::Type*, ::Il2CppObject*)>(&System::Reflection::RuntimeMethodInfo::CreateDelegate)> {
+  static const MethodInfo* get() {
+    static auto* delegateType = &::il2cpp_utils::GetClassFromName("System", "Type")->byval_arg;
+    static auto* target = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Reflection::RuntimeMethodInfo*), "CreateDelegate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{delegateType, target});
   }
 };
 // Writing MetadataGetter for method: System::Reflection::RuntimeMethodInfo::ToString

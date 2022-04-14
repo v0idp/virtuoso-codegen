@@ -90,7 +90,7 @@ namespace Unity::IO::LowLevel::Unsafe {
     // Set static field: static public Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem EntitiesStreamBinaryReader
     static void _set_EntitiesStreamBinaryReader(::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem
   #pragma pack(pop)
   static check_size<sizeof(AssetLoadingSubsystem), 0 + sizeof(int)> __Unity_IO_LowLevel_Unsafe_AssetLoadingSubsystemSizeCheck;

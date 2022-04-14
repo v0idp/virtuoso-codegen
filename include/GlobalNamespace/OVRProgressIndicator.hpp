@@ -35,22 +35,14 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRProgressIndicator : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.MeshRenderer progressImage
     // Size: 0x8
     // Offset: 0x18
     ::UnityEngine::MeshRenderer* progressImage;
     // Field size check
     static_assert(sizeof(::UnityEngine::MeshRenderer*) == 0x8);
-    // [RangeAttribute] Offset: 0x58D4C4
+    // [RangeAttribute] Offset: 0x697FB8
     // public System.Single currentProgress
     // Size: 0x4
     // Offset: 0x20
@@ -61,17 +53,17 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.MeshRenderer progressImage
-    ::UnityEngine::MeshRenderer*& dyn_progressImage();
+    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_progressImage();
     // Get instance field reference: public System.Single currentProgress
-    float& dyn_currentProgress();
+    [[deprecated]] float& dyn_currentProgress();
     // private System.Void Awake()
-    // Offset: 0xBACE40
+    // Offset: 0xE78670
     void Awake();
     // private System.Void Update()
-    // Offset: 0xBACE60
+    // Offset: 0xE78690
     void Update();
     // public System.Void .ctor()
-    // Offset: 0xBACED0
+    // Offset: 0xE78700
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

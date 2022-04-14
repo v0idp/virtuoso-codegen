@@ -49,15 +49,7 @@ namespace VROSC {
     struct $FadeToBlack$d__5;
     // Nested type: ::VROSC::FullScreenFxController::$FadeFromBlack$d__6
     struct $FadeFromBlack$d__6;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.AnimationCurve _screenFadeCurve
     // Size: 0x8
     // Offset: 0x18
@@ -80,25 +72,25 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.AnimationCurve _screenFadeCurve
-    ::UnityEngine::AnimationCurve*& dyn__screenFadeCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__screenFadeCurve();
     // Get instance field reference: private System.Single _screenFadeTime
-    float& dyn__screenFadeTime();
+    [[deprecated]] float& dyn__screenFadeTime();
     // Get instance field reference: private System.Boolean _isRecentering
-    bool& dyn__isRecentering();
+    [[deprecated]] bool& dyn__isRecentering();
     // public System.Threading.Tasks.Task Recenter(System.Boolean useFade)
-    // Offset: 0x88F30C
+    // Offset: 0x19A1664
     ::System::Threading::Tasks::Task* Recenter(bool useFade);
     // private System.Void RecenterSteam()
-    // Offset: 0x88F434
+    // Offset: 0x19A178C
     void RecenterSteam();
     // public System.Threading.Tasks.Task FadeToBlack(System.Boolean instant)
-    // Offset: 0x88F500
+    // Offset: 0x19A1858
     ::System::Threading::Tasks::Task* FadeToBlack(bool instant);
     // public System.Threading.Tasks.Task FadeFromBlack(System.Boolean instant)
-    // Offset: 0x88F628
+    // Offset: 0x19A1980
     ::System::Threading::Tasks::Task* FadeFromBlack(bool instant);
     // public System.Void .ctor()
-    // Offset: 0x88F750
+    // Offset: 0x19A1AA8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

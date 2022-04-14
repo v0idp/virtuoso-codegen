@@ -56,13 +56,13 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single r
-    float& dyn_r();
+    [[deprecated]] float& dyn_r();
     // Get instance field reference: public System.Single g
-    float& dyn_g();
+    [[deprecated]] float& dyn_g();
     // Get instance field reference: public System.Single b
-    float& dyn_b();
+    [[deprecated]] float& dyn_b();
     // Get instance field reference: public System.Single a
-    float& dyn_a();
+    [[deprecated]] float& dyn_a();
   }; // OVR.OpenVR.HmdColor_t
   #pragma pack(pop)
   static check_size<sizeof(HmdColor_t), 12 + sizeof(float)> __OVR_OpenVR_HmdColor_tSizeCheck;

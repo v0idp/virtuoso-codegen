@@ -38,6 +38,10 @@ namespace System::Threading::Tasks {
   // Forward declaring type: Task
   class Task;
 }
+// Forward declaring namespace: UnityEngine
+namespace UnityEngine {
+  // Skipping declaration: Vector3 because it is already included!
+}
 // Completed forward declares
 // Type namespace: VROSC
 namespace VROSC {
@@ -61,15 +65,7 @@ namespace VROSC {
     struct PlayBehaviour;
     // Nested type: ::VROSC::NoteBoardPlayer::$Stop$d__20
     struct $Stop$d__20;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoard _noteBoard
     // Size: 0x8
     // Offset: 0x88
@@ -112,7 +108,7 @@ namespace VROSC {
     bool avoidTritone;
     // Field size check
     static_assert(sizeof(bool) == 0x1);
-    // [HeaderAttribute] Offset: 0x670C70
+    // [HeaderAttribute] Offset: 0x786EC4
     // private System.Boolean _isMultiNote
     // Size: 0x1
     // Offset: 0xB1
@@ -143,40 +139,40 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteFieldNoteData*) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteBoard _noteBoard
-    ::VROSC::NoteBoard*& dyn__noteBoard();
+    [[deprecated]] ::VROSC::NoteBoard*& dyn__noteBoard();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.PlayAxis _playAxis
-    ::VROSC::NoteBoard::PlayAxis& dyn__playAxis();
+    [[deprecated]] ::VROSC::NoteBoard::PlayAxis& dyn__playAxis();
     // Get instance field reference: private VROSC.NoteBoardNote/VROSC.Coloring _coloring
-    ::VROSC::NoteBoardNote::Coloring& dyn__coloring();
+    [[deprecated]] ::VROSC::NoteBoardNote::Coloring& dyn__coloring();
     // Get instance field reference: private VROSC.IntField _octave
-    ::VROSC::IntField*& dyn__octave();
+    [[deprecated]] ::VROSC::IntField*& dyn__octave();
     // Get instance field reference: private VROSC.PlayBehaviourField _playBehaviour
-    ::VROSC::PlayBehaviourField*& dyn__playBehaviour();
+    [[deprecated]] ::VROSC::PlayBehaviourField*& dyn__playBehaviour();
     // Get instance field reference: private VROSC.IntField _scaleOffset
-    ::VROSC::IntField*& dyn__scaleOffset();
+    [[deprecated]] ::VROSC::IntField*& dyn__scaleOffset();
     // Get instance field reference: private System.Boolean _avoidTritone
-    bool& dyn__avoidTritone();
+    [[deprecated]] bool& dyn__avoidTritone();
     // Get instance field reference: private System.Boolean _isMultiNote
-    bool& dyn__isMultiNote();
+    [[deprecated]] bool& dyn__isMultiNote();
     // Get instance field reference: private System.Int32 _multiNote
-    int& dyn__multiNote();
+    [[deprecated]] int& dyn__multiNote();
     // Get instance field reference: private System.Single _multiNoteValue
-    float& dyn__multiNoteValue();
+    [[deprecated]] float& dyn__multiNoteValue();
     // Get instance field reference: private VROSC.NoteFieldNoteData _currentPlayingNoteField
-    ::VROSC::NoteFieldNoteData*& dyn__currentPlayingNoteField();
+    [[deprecated]] ::VROSC::NoteFieldNoteData*& dyn__currentPlayingNoteField();
     // public VROSC.InstrumentController get_Instrument()
-    // Offset: 0xA14024
+    // Offset: 0xC57470
     ::VROSC::InstrumentController* get_Instrument();
-    // private System.Threading.Tasks.Task <>n__0(System.Boolean immediate, VROSC.HandType handType)
-    // Offset: 0xA14998
-    ::System::Threading::Tasks::Task* $$n__0(bool immediate, ::VROSC::HandType handType);
+    // private System.Threading.Tasks.Task <>n__0(System.Boolean immediate, VROSC.HandType handType, System.Boolean linkHands)
+    // Offset: 0xC58064
+    ::System::Threading::Tasks::Task* $$n__0(bool immediate, ::VROSC::HandType handType, bool linkHands);
     // protected override System.Boolean get_RequireOrigin()
-    // Offset: 0xA1401C
+    // Offset: 0xC57468
     // Implemented from: VROSC.SignalNode
     // Base method: System.Boolean SignalNode::get_RequireOrigin()
     bool get_RequireOrigin();
     // public System.Void .ctor()
-    // Offset: 0xA148FC
+    // Offset: 0xC57FC8
     // Implemented from: VROSC.NotePlayer
     // Base method: System.Void NotePlayer::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -192,30 +188,30 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<NoteBoardPlayer*, creationType>()));
     }
     // protected override System.Void Update()
-    // Offset: 0xA1402C
+    // Offset: 0xC57478
     // Implemented from: VROSC.NotePlayer
     // Base method: System.Void NotePlayer::Update()
     void Update();
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0xA1420C
+    // Offset: 0xC5765C
     // Implemented from: VROSC.NotePlayer
     // Base method: System.Void NotePlayer::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
-    // protected override System.Void Play(VROSC.Signal signal)
-    // Offset: 0xA14264
+    // protected override System.Void Play(VROSC.Signal signal, System.Boolean linkHands)
+    // Offset: 0xC576B8
     // Implemented from: VROSC.NotePlayer
-    // Base method: System.Void NotePlayer::Play(VROSC.Signal signal)
-    void Play(::VROSC::Signal* signal);
-    // protected override System.Int32 GetNote(VROSC.Signal signal)
-    // Offset: 0xA146A4
+    // Base method: System.Void NotePlayer::Play(VROSC.Signal signal, System.Boolean linkHands)
+    void Play(::VROSC::Signal* signal, bool linkHands);
+    // public override System.Int32 GetNote(UnityEngine.Vector3 position)
+    // Offset: 0xC57BAC
     // Implemented from: VROSC.NotePlayer
-    // Base method: System.Int32 NotePlayer::GetNote(VROSC.Signal signal)
-    int GetNote(::VROSC::Signal* signal);
-    // protected override System.Threading.Tasks.Task Stop(System.Boolean immediate, VROSC.HandType handType)
-    // Offset: 0xA147C4
+    // Base method: System.Int32 NotePlayer::GetNote(UnityEngine.Vector3 position)
+    int GetNote(::UnityEngine::Vector3 position);
+    // protected override System.Threading.Tasks.Task Stop(System.Boolean immediate, VROSC.HandType handType, System.Boolean linkHands)
+    // Offset: 0xC57E84
     // Implemented from: VROSC.NotePlayer
-    // Base method: System.Threading.Tasks.Task NotePlayer::Stop(System.Boolean immediate, VROSC.HandType handType)
-    ::System::Threading::Tasks::Task* Stop(bool immediate, ::VROSC::HandType handType);
+    // Base method: System.Threading.Tasks.Task NotePlayer::Stop(System.Boolean immediate, VROSC.HandType handType, System.Boolean linkHands)
+    ::System::Threading::Tasks::Task* Stop(bool immediate, ::VROSC::HandType handType, bool linkHands);
   }; // VROSC.NoteBoardPlayer
   #pragma pack(pop)
   static check_size<sizeof(NoteBoardPlayer), 192 + sizeof(::VROSC::NoteFieldNoteData*)> __VROSC_NoteBoardPlayerSizeCheck;
@@ -233,11 +229,12 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::In
 // Writing MetadataGetter for method: VROSC::NoteBoardPlayer::$$n__0
 // Il2CppName: <>n__0
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task* (VROSC::NoteBoardPlayer::*)(bool, ::VROSC::HandType)>(&VROSC::NoteBoardPlayer::$$n__0)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task* (VROSC::NoteBoardPlayer::*)(bool, ::VROSC::HandType, bool)>(&VROSC::NoteBoardPlayer::$$n__0)> {
   static const MethodInfo* get() {
     static auto* immediate = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     static auto* handType = &::il2cpp_utils::GetClassFromName("VROSC", "HandType")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardPlayer*), "<>n__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{immediate, handType});
+    static auto* linkHands = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardPlayer*), "<>n__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{immediate, handType, linkHands});
   }
 };
 // Writing MetadataGetter for method: VROSC::NoteBoardPlayer::get_RequireOrigin
@@ -272,28 +269,30 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 // Writing MetadataGetter for method: VROSC::NoteBoardPlayer::Play
 // Il2CppName: Play
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::NoteBoardPlayer::*)(::VROSC::Signal*)>(&VROSC::NoteBoardPlayer::Play)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::NoteBoardPlayer::*)(::VROSC::Signal*, bool)>(&VROSC::NoteBoardPlayer::Play)> {
   static const MethodInfo* get() {
     static auto* signal = &::il2cpp_utils::GetClassFromName("VROSC", "Signal")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardPlayer*), "Play", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{signal});
+    static auto* linkHands = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardPlayer*), "Play", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{signal, linkHands});
   }
 };
 // Writing MetadataGetter for method: VROSC::NoteBoardPlayer::GetNote
 // Il2CppName: GetNote
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC::NoteBoardPlayer::*)(::VROSC::Signal*)>(&VROSC::NoteBoardPlayer::GetNote)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC::NoteBoardPlayer::*)(::UnityEngine::Vector3)>(&VROSC::NoteBoardPlayer::GetNote)> {
   static const MethodInfo* get() {
-    static auto* signal = &::il2cpp_utils::GetClassFromName("VROSC", "Signal")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardPlayer*), "GetNote", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{signal});
+    static auto* position = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardPlayer*), "GetNote", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{position});
   }
 };
 // Writing MetadataGetter for method: VROSC::NoteBoardPlayer::Stop
 // Il2CppName: Stop
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task* (VROSC::NoteBoardPlayer::*)(bool, ::VROSC::HandType)>(&VROSC::NoteBoardPlayer::Stop)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task* (VROSC::NoteBoardPlayer::*)(bool, ::VROSC::HandType, bool)>(&VROSC::NoteBoardPlayer::Stop)> {
   static const MethodInfo* get() {
     static auto* immediate = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     static auto* handType = &::il2cpp_utils::GetClassFromName("VROSC", "HandType")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardPlayer*), "Stop", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{immediate, handType});
+    static auto* linkHands = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardPlayer*), "Stop", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{immediate, handType, linkHands});
   }
 };

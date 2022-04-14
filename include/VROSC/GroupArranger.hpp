@@ -50,15 +50,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::GroupArranger::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.RectTransform _sortArea
     // Size: 0x8
     // Offset: 0x18
@@ -71,7 +63,7 @@ namespace VROSC {
     float padding;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x66EBBC
+    // [RangeAttribute] Offset: 0x784C24
     // private System.Single _keepGroupIfLargerThanPercent
     // Size: 0x4
     // Offset: 0x24
@@ -116,29 +108,29 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.RectTransform _sortArea
-    ::UnityEngine::RectTransform*& dyn__sortArea();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__sortArea();
     // Get instance field reference: private System.Single _padding
-    float& dyn__padding();
+    [[deprecated]] float& dyn__padding();
     // Get instance field reference: private System.Single _keepGroupIfLargerThanPercent
-    float& dyn__keepGroupIfLargerThanPercent();
+    [[deprecated]] float& dyn__keepGroupIfLargerThanPercent();
     // Get instance field reference: private System.Boolean _rightToLeft
-    bool& dyn__rightToLeft();
+    [[deprecated]] bool& dyn__rightToLeft();
     // Get instance field reference: private System.Boolean _bySize
-    bool& dyn__bySize();
+    [[deprecated]] bool& dyn__bySize();
     // Get instance field reference: private System.Int32 _currentRowCount
-    int& dyn__currentRowCount();
+    [[deprecated]] int& dyn__currentRowCount();
     // Get instance field reference: private System.Single _groupWidth
-    float& dyn__groupWidth();
+    [[deprecated]] float& dyn__groupWidth();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // public System.Void Setup(VROSC.LoopStation loopStation, System.Single groupWidth)
-    // Offset: 0x8975F8
+    // Offset: 0x19AA710
     void Setup(::VROSC::LoopStation* loopStation, float groupWidth);
     // public System.Void ArrangeGroups(System.Collections.Generic.List`1<VROSC.LoopStationGroup> groups, System.Boolean allowRowChange)
-    // Offset: 0x897604
+    // Offset: 0x19AA71C
     void ArrangeGroups(::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>* groups, bool allowRowChange);
     // public System.Void .ctor()
-    // Offset: 0x897B40
+    // Offset: 0x19AAC58
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

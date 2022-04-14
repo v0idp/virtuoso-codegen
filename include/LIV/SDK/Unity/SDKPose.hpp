@@ -87,26 +87,26 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKMatrix4x4 projectionMatrix
-    ::LIV::SDK::Unity::SDKMatrix4x4& dyn_projectionMatrix();
+    [[deprecated]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_projectionMatrix();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 localPosition
-    ::LIV::SDK::Unity::SDKVector3& dyn_localPosition();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_localPosition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion localRotation
-    ::LIV::SDK::Unity::SDKQuaternion& dyn_localRotation();
+    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_localRotation();
     // Get instance field reference: public System.Single verticalFieldOfView
-    float& dyn_verticalFieldOfView();
+    [[deprecated]] float& dyn_verticalFieldOfView();
     // Get instance field reference: public System.Single nearClipPlane
-    float& dyn_nearClipPlane();
+    [[deprecated]] float& dyn_nearClipPlane();
     // Get instance field reference: public System.Single farClipPlane
-    float& dyn_farClipPlane();
+    [[deprecated]] float& dyn_farClipPlane();
     // Get instance field reference: public System.Int32 unused0
-    int& dyn_unused0();
+    [[deprecated]] int& dyn_unused0();
     // Get instance field reference: public System.Int32 unused1
-    int& dyn_unused1();
+    [[deprecated]] int& dyn_unused1();
     // static public LIV.SDK.Unity.SDKPose get_empty()
-    // Offset: 0xB02E50
+    // Offset: 0xDD43F8
     static ::LIV::SDK::Unity::SDKPose get_empty();
     // public override System.String ToString()
-    // Offset: 0xB03E08
+    // Offset: 0xDD53B0
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

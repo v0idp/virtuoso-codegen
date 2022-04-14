@@ -62,13 +62,13 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public DG.Tweening.AxisConstraint axisConstraint
-    ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
+    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
     // Get instance field reference: public System.Boolean snapping
-    bool& dyn_snapping();
+    [[deprecated]] bool& dyn_snapping();
     // Get instance field reference: System.Single[] durations
-    ::ArrayW<float>& dyn_durations();
+    [[deprecated]] ::ArrayW<float>& dyn_durations();
     // public System.Void Reset()
-    // Offset: 0x1268024
+    // Offset: 0x18603C8
     void Reset();
   }; // DG.Tweening.Plugins.Options.Vector3ArrayOptions
   #pragma pack(pop)

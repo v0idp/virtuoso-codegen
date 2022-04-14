@@ -30,15 +30,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRRuntimeSettings : public ::UnityEngine::ScriptableObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRManager/ColorSpace colorSpace
     // Size: 0x4
     // Offset: 0x18
@@ -49,12 +41,12 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRManager/ColorSpace colorSpace
-    ::GlobalNamespace::OVRManager_ColorSpace& dyn_colorSpace();
+    [[deprecated]] ::GlobalNamespace::OVRManager_ColorSpace& dyn_colorSpace();
     // static public OVRRuntimeSettings GetRuntimeSettings()
-    // Offset: 0xBAE940
+    // Offset: 0xE7A170
     static ::GlobalNamespace::OVRRuntimeSettings* GetRuntimeSettings();
     // public System.Void .ctor()
-    // Offset: 0xBAEA5C
+    // Offset: 0xE7A28C
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
     // Base method: System.Void Object::.ctor()

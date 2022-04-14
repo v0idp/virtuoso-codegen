@@ -47,9 +47,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt64 assetID
-    uint64_t& dyn_assetID();
+    [[deprecated]] uint64_t& dyn_assetID();
     // Get instance field reference: public System.IntPtr asset
-    ::System::IntPtr& dyn_asset();
+    [[deprecated]] ::System::IntPtr& dyn_asset();
   }; // ovrAvatarMessage_AssetLoaded
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarMessage_AssetLoaded), 8 + sizeof(::System::IntPtr)> __GlobalNamespace_ovrAvatarMessage_AssetLoadedSizeCheck;

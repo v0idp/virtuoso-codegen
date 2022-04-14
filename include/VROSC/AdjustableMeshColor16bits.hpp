@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AdjustableMeshColor16bits : public ::VROSC::AdjustableMeshColors {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color[] _colors
     // Size: 0x8
     // Offset: 0x20
@@ -77,20 +69,20 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Color[] _colors
-    ::ArrayW<::UnityEngine::Color>& dyn__colors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
     // Get instance field reference: private UnityEngine.Color[] _originalColors
-    ::ArrayW<::UnityEngine::Color>& dyn__originalColors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__originalColors();
     // Get instance field reference: private UnityEngine.Color[] _adjustedColors
-    ::ArrayW<::UnityEngine::Color>& dyn__adjustedColors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__adjustedColors();
     // Get instance field reference: private UnityEngine.Color[] _shownColors
-    ::ArrayW<::UnityEngine::Color>& dyn__shownColors();
+    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__shownColors();
     // Get instance field reference: private System.Single _multiplyValue
-    float& dyn__multiplyValue();
+    [[deprecated]] float& dyn__multiplyValue();
     // private System.Void CalculateColorMultiplication()
-    // Offset: 0x1368514
+    // Offset: 0x966E54
     void CalculateColorMultiplication();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh)
-    // Offset: 0x1367C7C
+    // Offset: 0x9665B8
     // Implemented from: VROSC.AdjustableMeshColors
     // Base method: System.Void AdjustableMeshColors::.ctor(VROSC.AdjustableMesh adjustableMesh)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -99,12 +91,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshColor16bits*, creationType>(adjustableMesh)));
     }
     // public override System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x1368614
+    // Offset: 0x966F54
     // Implemented from: VROSC.AdjustableMeshColors
     // Base method: System.Void AdjustableMeshColors::SetColor(UnityEngine.Color color)
     void SetColor(::UnityEngine::Color color);
     // public override System.Void Tint(UnityEngine.Color color, System.Single amount)
-    // Offset: 0x13687C0
+    // Offset: 0x967100
     // Implemented from: VROSC.AdjustableMeshColors
     // Base method: System.Void AdjustableMeshColors::Tint(UnityEngine.Color color, System.Single amount)
     void Tint(::UnityEngine::Color color, float amount);

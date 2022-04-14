@@ -49,46 +49,46 @@ namespace Oculus::Voice::Bindings::Android {
   class VoiceSDKBinding : public ::Oculus::Voice::Core::Bindings::Android::BaseServiceBinding {
     public:
     // public System.Boolean get_Active()
-    // Offset: 0x12E5058
+    // Offset: 0x18E92CC
     bool get_Active();
     // public System.Boolean get_IsRequestActive()
-    // Offset: 0x12E5168
+    // Offset: 0x18E93DC
     bool get_IsRequestActive();
     // public System.Boolean get_MicActive()
-    // Offset: 0x12E5278
+    // Offset: 0x18E94EC
     bool get_MicActive();
     // public System.Boolean get_PlatformSupportsWit()
-    // Offset: 0x12E5388
+    // Offset: 0x18E95FC
     bool get_PlatformSupportsWit();
     // public System.Void Activate(System.String text)
-    // Offset: 0x12E5498
+    // Offset: 0x18E970C
     void Activate(::StringW text);
     // public System.Void Activate(System.String text, Facebook.WitAi.Configuration.WitRequestOptions options)
-    // Offset: 0x12E5568
+    // Offset: 0x18E97DC
     void Activate(::StringW text, ::Facebook::WitAi::Configuration::WitRequestOptions* options);
     // public System.Void Activate()
-    // Offset: 0x12E5638
+    // Offset: 0x18E98AC
     void Activate();
     // public System.Void Activate(Facebook.WitAi.Configuration.WitRequestOptions options)
-    // Offset: 0x12E5734
+    // Offset: 0x18E99A8
     void Activate(::Facebook::WitAi::Configuration::WitRequestOptions* options);
     // public System.Void ActivateImmediately()
-    // Offset: 0x12E5830
+    // Offset: 0x18E9AA4
     void ActivateImmediately();
     // public System.Void ActivateImmediately(Facebook.WitAi.Configuration.WitRequestOptions options)
-    // Offset: 0x12E592C
+    // Offset: 0x18E9BA0
     void ActivateImmediately(::Facebook::WitAi::Configuration::WitRequestOptions* options);
     // public System.Void Deactivate()
-    // Offset: 0x12E5A28
+    // Offset: 0x18E9C9C
     void Deactivate();
     // public System.Void SetRuntimeConfiguration(Facebook.WitAi.Configuration.WitRuntimeConfiguration configuration)
-    // Offset: 0x12E5B24
+    // Offset: 0x18E9D98
     void SetRuntimeConfiguration(::Facebook::WitAi::Configuration::WitRuntimeConfiguration* configuration);
     // public System.Void SetListener(Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding listener)
-    // Offset: 0x12E6084
+    // Offset: 0x18EA2F8
     void SetListener(::Oculus::Voice::Bindings::Android::VoiceSDKListenerBinding* listener);
     // public System.Void .ctor(UnityEngine.AndroidJavaObject sdkInstance)
-    // Offset: 0x12E5050
+    // Offset: 0x18E92C4
     // Implemented from: Oculus.Voice.Core.Bindings.Android.BaseServiceBinding
     // Base method: System.Void BaseServiceBinding::.ctor(UnityEngine.AndroidJavaObject sdkInstance)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

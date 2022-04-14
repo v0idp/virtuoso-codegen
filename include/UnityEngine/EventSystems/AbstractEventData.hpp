@@ -26,15 +26,7 @@ namespace UnityEngine::EventSystems {
   // [TokenAttribute] Offset: FFFFFFFF
   class AbstractEventData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.Boolean m_Used
     // Size: 0x1
     // Offset: 0x10
@@ -47,18 +39,18 @@ namespace UnityEngine::EventSystems {
       return m_Used;
     }
     // Get instance field reference: protected System.Boolean m_Used
-    bool& dyn_m_Used();
+    [[deprecated]] bool& dyn_m_Used();
     // public System.Boolean get_used()
-    // Offset: 0xBB3E68
+    // Offset: 0xEAA4B4
     bool get_used();
     // public System.Void Reset()
-    // Offset: 0xBB3E54
+    // Offset: 0xEAA4A0
     void Reset();
     // public System.Void Use()
-    // Offset: 0xBB3E5C
+    // Offset: 0xEAA4A8
     void Use();
     // protected System.Void .ctor()
-    // Offset: 0xBB3E70
+    // Offset: 0xEAA4BC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

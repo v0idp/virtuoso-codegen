@@ -35,15 +35,7 @@ namespace Mono::Xml {
   // [TokenAttribute] Offset: FFFFFFFF
   class SmallXmlParser::AttrListImpl : public ::Il2CppObject/*, public ::Mono::Xml::SmallXmlParser::IAttrList*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<System.String> attrNames
     // Size: 0x8
     // Offset: 0x10
@@ -62,35 +54,35 @@ namespace Mono::Xml {
       return *reinterpret_cast<::Mono::Xml::SmallXmlParser::IAttrList*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> attrNames
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_attrNames();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_attrNames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> attrValues
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_attrValues();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_attrValues();
     // public System.Int32 get_Length()
-    // Offset: 0x1082444
+    // Offset: 0xE591A8
     int get_Length();
     // public System.String[] get_Names()
-    // Offset: 0x1082654
+    // Offset: 0xE593B8
     ::ArrayW<::StringW> get_Names();
     // public System.String[] get_Values()
-    // Offset: 0x10826A8
+    // Offset: 0xE5940C
     ::ArrayW<::StringW> get_Values();
     // public System.String GetName(System.Int32 i)
-    // Offset: 0x1082490
+    // Offset: 0xE591F4
     ::StringW GetName(int i);
     // public System.String GetValue(System.Int32 i)
-    // Offset: 0x1082504
+    // Offset: 0xE59268
     ::StringW GetValue(int i);
     // public System.String GetValue(System.String name)
-    // Offset: 0x1082578
+    // Offset: 0xE592DC
     ::StringW GetValue(::StringW name);
     // System.Void Clear()
-    // Offset: 0x10826FC
+    // Offset: 0xE59460
     void Clear();
     // System.Void Add(System.String name, System.String value)
-    // Offset: 0x1082760
+    // Offset: 0xE594C4
     void Add(::StringW name, ::StringW value);
     // public System.Void .ctor()
-    // Offset: 0x10827DC
+    // Offset: 0xE59540
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

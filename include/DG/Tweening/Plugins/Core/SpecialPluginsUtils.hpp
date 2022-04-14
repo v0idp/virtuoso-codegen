@@ -40,16 +40,16 @@ namespace DG::Tweening::Plugins::Core {
   class SpecialPluginsUtils : public ::Il2CppObject {
     public:
     // static System.Boolean SetLookAt(DG.Tweening.Core.TweenerCore`3<UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions> t)
-    // Offset: 0x1035644
+    // Offset: 0x15AC03C
     static bool SetLookAt(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::DG::Tweening::Plugins::Options::QuaternionOptions>* t);
     // static System.Boolean SetPunch(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> t)
-    // Offset: 0x1035768
+    // Offset: 0x15AC160
     static bool SetPunch(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* t);
     // static System.Boolean SetShake(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> t)
-    // Offset: 0x10358D0
+    // Offset: 0x15AC2C8
     static bool SetShake(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* t);
     // static System.Boolean SetCameraShakePosition(DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3[],DG.Tweening.Plugins.Options.Vector3ArrayOptions> t)
-    // Offset: 0x103590C
+    // Offset: 0x15AC304
     static bool SetCameraShakePosition(::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector3, ::ArrayW<::UnityEngine::Vector3>, ::DG::Tweening::Plugins::Options::Vector3ArrayOptions>* t);
   }; // DG.Tweening.Plugins.Core.SpecialPluginsUtils
   #pragma pack(pop)

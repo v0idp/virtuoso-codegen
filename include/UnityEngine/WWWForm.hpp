@@ -5,10 +5,6 @@
 // Begin includes
 #include "beatsaber-hook/shared/utils/typedefs.h"
 #include "beatsaber-hook/shared/utils/byref.hpp"
-#include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-#include "beatsaber-hook/shared/utils/il2cpp-utils-properties.hpp"
-#include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
-#include "beatsaber-hook/shared/utils/utils.h"
 #include "beatsaber-hook/shared/utils/typedefs-array.hpp"
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
@@ -44,15 +40,7 @@ namespace UnityEngine {
   // [TokenAttribute] Offset: FFFFFFFF
   class WWWForm : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<System.Byte[]> formData
     // Size: 0x8
     // Offset: 0x10
@@ -91,38 +79,26 @@ namespace UnityEngine {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<System.Byte[]> formData
-    ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_formData();
+    [[deprecated]] ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_formData();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> fieldNames
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_fieldNames();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fieldNames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> fileNames
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_fileNames();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fileNames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> types
-    ::System::Collections::Generic::List_1<::StringW>*& dyn_types();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_types();
     // Get instance field reference: private System.Byte[] boundary
-    ::ArrayW<uint8_t>& dyn_boundary();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_boundary();
     // Get instance field reference: private System.Boolean containsFiles
-    bool& dyn_containsFiles();
+    [[deprecated]] bool& dyn_containsFiles();
     // static System.Text.Encoding get_DefaultEncoding()
-    // Offset: 0x12BB0FC
+    // Offset: 0x18BFC18
     static ::System::Text::Encoding* get_DefaultEncoding();
     // public System.Collections.Generic.Dictionary`2<System.String,System.String> get_headers()
-    // Offset: 0x12BA62C
+    // Offset: 0x18BF148
     ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* get_headers();
     // public System.Byte[] get_data()
-    // Offset: 0x12B93FC
+    // Offset: 0x18BDF18
     ::ArrayW<uint8_t> get_data();
-    // public System.Void AddBinaryData(System.String fieldName, System.Byte[] contents, System.String fileName, System.String mimeType)
-    // Offset: 0x12BB7C8
-    void AddBinaryData(::StringW fieldName, ::ArrayW<uint8_t> contents, ::StringW fileName, ::StringW mimeType);
-    // public System.Void .ctor()
-    // Offset: 0x12BB648
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WWWForm* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::WWWForm::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WWWForm*, creationType>()));
-    }
   }; // UnityEngine.WWWForm
   #pragma pack(pop)
   static check_size<sizeof(WWWForm), 56 + sizeof(bool)> __UnityEngine_WWWFormSizeCheck;
@@ -153,19 +129,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::WWWForm*), "get_data", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::WWWForm::AddBinaryData
-// Il2CppName: AddBinaryData
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (UnityEngine::WWWForm::*)(::StringW, ::ArrayW<uint8_t>, ::StringW, ::StringW)>(&UnityEngine::WWWForm::AddBinaryData)> {
-  static const MethodInfo* get() {
-    static auto* fieldName = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    static auto* contents = &il2cpp_functions::array_class_get(::il2cpp_utils::GetClassFromName("System", "Byte"), 1)->byval_arg;
-    static auto* fileName = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    static auto* mimeType = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::WWWForm*), "AddBinaryData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{fieldName, contents, fileName, mimeType});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::WWWForm::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

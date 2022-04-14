@@ -136,37 +136,29 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.UInt64 _userId
-      uint64_t& dyn__userId();
+      [[deprecated]] uint64_t& dyn__userId();
       // Get instance field reference: public specificationCallback _callback
-      ::GlobalNamespace::specificationCallback*& dyn__callback();
+      [[deprecated]] ::GlobalNamespace::specificationCallback*& dyn__callback();
       // Get instance field reference: public System.Boolean _useCombinedMesh
-      bool& dyn__useCombinedMesh();
+      [[deprecated]] bool& dyn__useCombinedMesh();
       // Get instance field reference: public ovrAvatarAssetLevelOfDetail _lod
-      ::GlobalNamespace::ovrAvatarAssetLevelOfDetail& dyn__lod();
+      [[deprecated]] ::GlobalNamespace::ovrAvatarAssetLevelOfDetail& dyn__lod();
       // Get instance field reference: public System.Boolean _forceMobileTextureFormat
-      bool& dyn__forceMobileTextureFormat();
+      [[deprecated]] bool& dyn__forceMobileTextureFormat();
       // Get instance field reference: public ovrAvatarLookAndFeelVersion _lookVersion
-      ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn__lookVersion();
+      [[deprecated]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn__lookVersion();
       // Get instance field reference: public ovrAvatarLookAndFeelVersion _fallbackVersion
-      ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn__fallbackVersion();
+      [[deprecated]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn__fallbackVersion();
       // Get instance field reference: public System.Boolean _enableExpressive
-      bool& dyn__enableExpressive();
+      [[deprecated]] bool& dyn__enableExpressive();
       // public System.Void .ctor(System.UInt64 userId, specificationCallback callback, System.Boolean useCombinedMesh, ovrAvatarAssetLevelOfDetail lod, System.Boolean forceMobileTextureFormat, ovrAvatarLookAndFeelVersion lookVersion, ovrAvatarLookAndFeelVersion fallbackVersion, System.Boolean enableExpressive)
-      // Offset: 0x1341B34
+      // Offset: 0x8CCA58
       // ABORTED: conflicts with another method.  AvatarSpecRequestParams(uint64_t userId, ::GlobalNamespace::specificationCallback* callback, bool useCombinedMesh, ::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod, bool forceMobileTextureFormat, ::GlobalNamespace::ovrAvatarLookAndFeelVersion lookVersion, ::GlobalNamespace::ovrAvatarLookAndFeelVersion fallbackVersion, bool enableExpressive);
     }; // OvrAvatarSDKManager/AvatarSpecRequestParams
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarSDKManager::AvatarSpecRequestParams), 36 + sizeof(bool)> __GlobalNamespace_OvrAvatarSDKManager_AvatarSpecRequestParamsSizeCheck;
     static_assert(sizeof(OvrAvatarSDKManager::AvatarSpecRequestParams) == 0x25);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean initialized
     // Size: 0x1
     // Offset: 0x18
@@ -253,77 +245,77 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single AVATAR_SPEC_REQUEST_TIMEOUT
     static void _set_AVATAR_SPEC_REQUEST_TIMEOUT(float value);
     // Get instance field reference: private System.Boolean initialized
-    bool& dyn_initialized();
+    [[deprecated]] bool& dyn_initialized();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.UInt64,System.Collections.Generic.HashSet`1<specificationCallback>> specificationCallbacks
-    ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::HashSet_1<::GlobalNamespace::specificationCallback*>*>*& dyn_specificationCallbacks();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::HashSet_1<::GlobalNamespace::specificationCallback*>*>*& dyn_specificationCallbacks();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.UInt64,System.Collections.Generic.HashSet`1<assetLoadedCallback>> assetLoadedCallbacks
-    ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::HashSet_1<::GlobalNamespace::assetLoadedCallback*>*>*& dyn_assetLoadedCallbacks();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::HashSet_1<::GlobalNamespace::assetLoadedCallback*>*>*& dyn_assetLoadedCallbacks();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.IntPtr,combinedMeshLoadedCallback> combinedMeshLoadedCallbacks
-    ::System::Collections::Generic::Dictionary_2<::System::IntPtr, ::GlobalNamespace::combinedMeshLoadedCallback*>*& dyn_combinedMeshLoadedCallbacks();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::IntPtr, ::GlobalNamespace::combinedMeshLoadedCallback*>*& dyn_combinedMeshLoadedCallbacks();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.UInt64,OvrAvatarAsset> assetCache
-    ::System::Collections::Generic::Dictionary_2<uint64_t, ::GlobalNamespace::OvrAvatarAsset*>*& dyn_assetCache();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::GlobalNamespace::OvrAvatarAsset*>*& dyn_assetCache();
     // Get instance field reference: private OvrAvatarTextureCopyManager textureCopyManager
-    ::GlobalNamespace::OvrAvatarTextureCopyManager*& dyn_textureCopyManager();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarTextureCopyManager*& dyn_textureCopyManager();
     // Get instance field reference: public ovrAvatarLogLevel LoggingLevel
-    ::GlobalNamespace::ovrAvatarLogLevel& dyn_LoggingLevel();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarLogLevel& dyn_LoggingLevel();
     // Get instance field reference: private System.Collections.Generic.Queue`1<OvrAvatarSDKManager/AvatarSpecRequestParams> avatarSpecificationQueue
-    ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarSDKManager::AvatarSpecRequestParams>*& dyn_avatarSpecificationQueue();
+    [[deprecated]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarSDKManager::AvatarSpecRequestParams>*& dyn_avatarSpecificationQueue();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> loadingAvatars
-    ::System::Collections::Generic::List_1<int>*& dyn_loadingAvatars();
+    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_loadingAvatars();
     // Get instance field reference: private System.Boolean avatarSpecRequestAvailable
-    bool& dyn_avatarSpecRequestAvailable();
+    [[deprecated]] bool& dyn_avatarSpecRequestAvailable();
     // Get instance field reference: private System.Single lastDispatchedAvatarSpecRequestTime
-    float& dyn_lastDispatchedAvatarSpecRequestTime();
+    [[deprecated]] float& dyn_lastDispatchedAvatarSpecRequestTime();
     // static public OvrAvatarSDKManager get_Instance()
-    // Offset: 0x8F0318
+    // Offset: 0xF8345C
     static ::GlobalNamespace::OvrAvatarSDKManager* get_Instance();
     // private System.Boolean Initialize()
-    // Offset: 0x8F0928
+    // Offset: 0xF90E74
     bool Initialize();
     // private System.Void OnDestroy()
-    // Offset: 0x8F0C30
+    // Offset: 0xF9117C
     void OnDestroy();
     // private System.Void Update()
-    // Offset: 0x8F0CA0
+    // Offset: 0xF911EC
     void Update();
     // public System.Boolean IsAvatarSpecWaiting()
-    // Offset: 0x8F1680
+    // Offset: 0xF91BC0
     bool IsAvatarSpecWaiting();
     // public System.Boolean IsAvatarLoading()
-    // Offset: 0x8F16D4
+    // Offset: 0xF91C14
     bool IsAvatarLoading();
     // public System.Void AddLoadingAvatar(System.Int32 gameobjectID)
-    // Offset: 0x8F1728
+    // Offset: 0xF83C9C
     void AddLoadingAvatar(int gameobjectID);
     // public System.Void RemoveLoadingAvatar(System.Int32 gameobjectID)
-    // Offset: 0x8F178C
+    // Offset: 0xF84298
     void RemoveLoadingAvatar(int gameobjectID);
     // public System.Void RequestAvatarSpecification(OvrAvatarSDKManager/AvatarSpecRequestParams avatarSpecRequest)
-    // Offset: 0x8F17F0
+    // Offset: 0xF83C0C
     void RequestAvatarSpecification(::GlobalNamespace::OvrAvatarSDKManager::AvatarSpecRequestParams avatarSpecRequest);
     // private System.Void DispatchAvatarSpecificationRequest(OvrAvatarSDKManager/AvatarSpecRequestParams avatarSpecRequest)
-    // Offset: 0x8F1480
+    // Offset: 0xF919BC
     void DispatchAvatarSpecificationRequest(::GlobalNamespace::OvrAvatarSDKManager::AvatarSpecRequestParams avatarSpecRequest);
     // public System.Void BeginLoadingAsset(System.UInt64 assetId, ovrAvatarAssetLevelOfDetail lod, assetLoadedCallback callback)
-    // Offset: 0x8F18CC
+    // Offset: 0xF836AC
     void BeginLoadingAsset(uint64_t assetId, ::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod, ::GlobalNamespace::assetLoadedCallback* callback);
     // public System.Void RegisterCombinedMeshCallback(System.IntPtr sdkAvatar, combinedMeshLoadedCallback callback)
-    // Offset: 0x8F1A20
+    // Offset: 0xF83800
     void RegisterCombinedMeshCallback(::System::IntPtr sdkAvatar, ::GlobalNamespace::combinedMeshLoadedCallback* callback);
     // public OvrAvatarAsset GetAsset(System.UInt64 assetId)
-    // Offset: 0x8F04EC
+    // Offset: 0xF83630
     ::GlobalNamespace::OvrAvatarAsset* GetAsset(uint64_t assetId);
     // public System.Void DeleteAssetFromCache(System.UInt64 assetId)
-    // Offset: 0x8F1B14
+    // Offset: 0xF91C68
     void DeleteAssetFromCache(uint64_t assetId);
     // public System.String GetAppId()
-    // Offset: 0x8F0BE4
+    // Offset: 0xF91130
     ::StringW GetAppId();
     // public OvrAvatarTextureCopyManager GetTextureCopyManager()
-    // Offset: 0x8F1BF4
+    // Offset: 0xF8CA60
     ::GlobalNamespace::OvrAvatarTextureCopyManager* GetTextureCopyManager();
     // public System.Void .ctor()
-    // Offset: 0x8F1C74
+    // Offset: 0xF91D48
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

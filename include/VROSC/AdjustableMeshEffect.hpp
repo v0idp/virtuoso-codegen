@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AdjustableMeshEffect : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.AdjustableMesh _adjustableMesh
     // Size: 0x8
     // Offset: 0x18
@@ -54,21 +46,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // private System.Void OnEnable()
-    // Offset: 0x136977C
+    // Offset: 0x9680BC
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x13698C0
+    // Offset: 0x968200
     void OnDisable();
     // protected System.Void OnCreation()
-    // Offset: 0x1369A04
+    // Offset: 0x968344
     void OnCreation();
     // protected System.Void OnMeshVisible()
-    // Offset: 0x1368990
+    // Offset: 0x9672D0
     void OnMeshVisible();
     // protected System.Void .ctor()
-    // Offset: 0x1368A04
+    // Offset: 0x967344
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

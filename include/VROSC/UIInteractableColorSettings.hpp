@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIInteractableColorSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color _activeColor
     // Size: 0x10
     // Offset: 0x10
@@ -70,33 +62,33 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Color _activeColor
-    ::UnityEngine::Color& dyn__activeColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__activeColor();
     // Get instance field reference: private UnityEngine.Color _inactiveColor
-    ::UnityEngine::Color& dyn__inactiveColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__inactiveColor();
     // Get instance field reference: private UnityEngine.Color _hoverColor
-    ::UnityEngine::Color& dyn__hoverColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__hoverColor();
     // Get instance field reference: private UnityEngine.Color _disabledColor
-    ::UnityEngine::Color& dyn__disabledColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__disabledColor();
     // public UnityEngine.Color get_ActiveColor()
-    // Offset: 0x139EBB8
+    // Offset: 0x1912508
     ::UnityEngine::Color get_ActiveColor();
     // public UnityEngine.Color get_InactiveColor()
-    // Offset: 0x139EBC4
+    // Offset: 0x1912514
     ::UnityEngine::Color get_InactiveColor();
     // public UnityEngine.Color get_HoverColor()
-    // Offset: 0x139EBD0
+    // Offset: 0x1912520
     ::UnityEngine::Color get_HoverColor();
     // public UnityEngine.Color get_DisabledColor()
-    // Offset: 0x139EBDC
+    // Offset: 0x191252C
     ::UnityEngine::Color get_DisabledColor();
     // public UnityEngine.Color GetColor(System.Boolean isHovering, System.Boolean isActive, System.Boolean isDisabled)
-    // Offset: 0x139EBE8
+    // Offset: 0x1912538
     ::UnityEngine::Color GetColor(bool isHovering, bool isActive, bool isDisabled);
     // public UnityEngine.Color GetColor(VROSC.UIScrollableItem selectionBarButton)
-    // Offset: 0x139EC54
+    // Offset: 0x19125A4
     ::UnityEngine::Color GetColor(::VROSC::UIScrollableItem* selectionBarButton);
     // public System.Void .ctor()
-    // Offset: 0x139ECDC
+    // Offset: 0x191262C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -39,15 +39,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarAssetTexture : public ::GlobalNamespace::OvrAvatarAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Texture2D texture
     // Size: 0x8
     // Offset: 0x18
@@ -64,9 +56,9 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 ASTCHeaderSize
     static void _set_ASTCHeaderSize(int value);
     // Get instance field reference: public UnityEngine.Texture2D texture
-    ::UnityEngine::Texture2D*& dyn_texture();
+    [[deprecated]] ::UnityEngine::Texture2D*& dyn_texture();
     // public System.Void .ctor(System.UInt64 _assetId, System.IntPtr asset)
-    // Offset: 0x927CF8
+    // Offset: 0xF88ECC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarAssetTexture* New_ctor(uint64_t _assetId, ::System::IntPtr asset) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarAssetTexture::.ctor");

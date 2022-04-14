@@ -61,19 +61,19 @@ namespace System::IO::Compression {
     // Set static field: static public System.Action`1<System.IO.Compression.ZipArchiveEntry> <>9__71_0
     static void _set_$$9__71_0(::System::Action_1<::System::IO::Compression::ZipArchiveEntry*>* value);
     // static private System.Void .cctor()
-    // Offset: 0x112A42C
+    // Offset: 0x16A1C98
     static void _cctor();
     // System.Void <GetDataCompressor>b__67_0(System.Int64 initialPosition, System.Int64 currentPosition, System.UInt32 checkSum, System.IO.Stream backing, System.IO.Compression.ZipArchiveEntry thisRef, System.EventHandler closeHandler)
-    // Offset: 0x112A494
+    // Offset: 0x16A1D00
     void $GetDataCompressor$b__67_0(int64_t initialPosition, int64_t currentPosition, uint checkSum, ::System::IO::Stream* backing, ::System::IO::Compression::ZipArchiveEntry* thisRef, ::System::EventHandler* closeHandler);
     // System.Void <OpenInWriteMode>b__70_0(System.Object o, System.EventArgs e)
-    // Offset: 0x112A57C
+    // Offset: 0x16A1DE8
     void $OpenInWriteMode$b__70_0(::Il2CppObject* o, ::System::EventArgs* e);
     // System.Void <OpenInUpdateMode>b__71_0(System.IO.Compression.ZipArchiveEntry thisRef)
-    // Offset: 0x112A60C
+    // Offset: 0x16A1E78
     void $OpenInUpdateMode$b__71_0(::System::IO::Compression::ZipArchiveEntry* thisRef);
     // public System.Void .ctor()
-    // Offset: 0x112A48C
+    // Offset: 0x16A1CF8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

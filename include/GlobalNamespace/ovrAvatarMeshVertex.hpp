@@ -118,33 +118,33 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single x
-    float& dyn_x();
+    [[deprecated]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    float& dyn_y();
+    [[deprecated]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    float& dyn_z();
+    [[deprecated]] float& dyn_z();
     // Get instance field reference: public System.Single nx
-    float& dyn_nx();
+    [[deprecated]] float& dyn_nx();
     // Get instance field reference: public System.Single ny
-    float& dyn_ny();
+    [[deprecated]] float& dyn_ny();
     // Get instance field reference: public System.Single nz
-    float& dyn_nz();
+    [[deprecated]] float& dyn_nz();
     // Get instance field reference: public System.Single tx
-    float& dyn_tx();
+    [[deprecated]] float& dyn_tx();
     // Get instance field reference: public System.Single ty
-    float& dyn_ty();
+    [[deprecated]] float& dyn_ty();
     // Get instance field reference: public System.Single tz
-    float& dyn_tz();
+    [[deprecated]] float& dyn_tz();
     // Get instance field reference: public System.Single tw
-    float& dyn_tw();
+    [[deprecated]] float& dyn_tw();
     // Get instance field reference: public System.Single u
-    float& dyn_u();
+    [[deprecated]] float& dyn_u();
     // Get instance field reference: public System.Single v
-    float& dyn_v();
+    [[deprecated]] float& dyn_v();
     // Get instance field reference: public System.Byte[] blendIndices
-    ::ArrayW<uint8_t>& dyn_blendIndices();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_blendIndices();
     // Get instance field reference: public System.Single[] blendWeights
-    ::ArrayW<float>& dyn_blendWeights();
+    [[deprecated]] ::ArrayW<float>& dyn_blendWeights();
   }; // ovrAvatarMeshVertex
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarMeshVertex), 56 + sizeof(::ArrayW<float>)> __GlobalNamespace_ovrAvatarMeshVertexSizeCheck;

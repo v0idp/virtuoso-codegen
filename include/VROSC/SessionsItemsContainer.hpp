@@ -60,15 +60,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SessionsItemsContainer : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.PaginatedList _paginatedList
     // Size: 0x8
     // Offset: 0x18
@@ -121,86 +113,86 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.PaginatedList _paginatedList
-    ::VROSC::PaginatedList*& dyn__paginatedList();
+    [[deprecated]] ::VROSC::PaginatedList*& dyn__paginatedList();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PaginatedListDataHolder> _dataList
-    ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
     // Get instance field reference: private VROSC.PaginatedListDataHolder _selectedDataHolder
-    ::VROSC::PaginatedListDataHolder*& dyn__selectedDataHolder();
+    [[deprecated]] ::VROSC::PaginatedListDataHolder*& dyn__selectedDataHolder();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _currentFilterWords
-    ::System::Collections::Generic::List_1<::StringW>*& dyn__currentFilterWords();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__currentFilterWords();
     // Get instance field reference: private VROSC.SessionsLibraryUI/VROSC.OrderingType _orderingType
-    ::VROSC::SessionsLibraryUI::OrderingType& dyn__orderingType();
+    [[deprecated]] ::VROSC::SessionsLibraryUI::OrderingType& dyn__orderingType();
     // Get instance field reference: private VROSC.SessionsLibraryUI/VROSC.OrderingDirection _orderingDirection
-    ::VROSC::SessionsLibraryUI::OrderingDirection& dyn__orderingDirection();
+    [[deprecated]] ::VROSC::SessionsLibraryUI::OrderingDirection& dyn__orderingDirection();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.SessionItemData> <SessionItems>k__BackingField
-    ::System::Collections::Generic::List_1<::VROSC::SessionItemData*>*& dyn_$SessionItems$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::SessionItemData*>*& dyn_$SessionItems$k__BackingField();
     // Get instance field reference: public System.Action`1<VROSC.SessionItemData> OnDataSelected
-    ::System::Action_1<::VROSC::SessionItemData*>*& dyn_OnDataSelected();
+    [[deprecated]] ::System::Action_1<::VROSC::SessionItemData*>*& dyn_OnDataSelected();
     // private VROSC.SessionItemData get__selectedData()
-    // Offset: 0x13EA814
+    // Offset: 0x1989E14
     ::VROSC::SessionItemData* get__selectedData();
     // public System.Collections.Generic.List`1<VROSC.SessionItemData> get_SessionItems()
-    // Offset: 0x13EA89C
+    // Offset: 0x1989E9C
     ::System::Collections::Generic::List_1<::VROSC::SessionItemData*>* get_SessionItems();
     // private System.Void set_SessionItems(System.Collections.Generic.List`1<VROSC.SessionItemData> value)
-    // Offset: 0x13EA8A4
+    // Offset: 0x1989EA4
     void set_SessionItems(::System::Collections::Generic::List_1<::VROSC::SessionItemData*>* value);
     // public System.Boolean get_HasSessions()
-    // Offset: 0x13EA8AC
+    // Offset: 0x1989EAC
     bool get_HasSessions();
     // private System.Void Awake()
-    // Offset: 0x13EA900
+    // Offset: 0x1989F00
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13EA9D4
+    // Offset: 0x1989FD4
     void OnDestroy();
     // protected System.Void OnDisable()
-    // Offset: 0x13EAAA8
+    // Offset: 0x198A0A8
     void OnDisable();
     // public System.Void Setup()
-    // Offset: 0x13EAAB0
+    // Offset: 0x198A0B0
     void Setup();
     // public System.Void AddSession(System.String id, VROSC.SessionUIData data, System.Boolean newSave)
-    // Offset: 0x13EAACC
+    // Offset: 0x198A0CC
     void AddSession(::StringW id, ::VROSC::SessionUIData* data, bool newSave);
     // public System.Void RemoveSession(System.String sessionId)
-    // Offset: 0x13EAEA4
+    // Offset: 0x198A4A4
     void RemoveSession(::StringW sessionId);
     // public System.Boolean HasSession(System.String sessionId)
-    // Offset: 0x13EB254
+    // Offset: 0x198A854
     bool HasSession(::StringW sessionId);
     // public System.Void UpdateList()
-    // Offset: 0x13EAC58
+    // Offset: 0x198A258
     void UpdateList();
     // public System.Void FilterList(System.String filter)
-    // Offset: 0x13EC018
+    // Offset: 0x198B618
     void FilterList(::StringW filter);
     // public System.Void OrderListBy(VROSC.SessionsLibraryUI/VROSC.OrderingType orderingType, VROSC.SessionsLibraryUI/VROSC.OrderingDirection orderingDirection)
-    // Offset: 0x13EC19C
+    // Offset: 0x198B79C
     void OrderListBy(::VROSC::SessionsLibraryUI::OrderingType orderingType, ::VROSC::SessionsLibraryUI::OrderingDirection orderingDirection);
     // public System.Void SelectItem(VROSC.PaginatedListItemData itemData)
-    // Offset: 0x13EC1A4
+    // Offset: 0x198B7A4
     void SelectItem(::VROSC::PaginatedListItemData* itemData);
     // private System.Void ItemSelected(VROSC.PaginatedListDataHolder dataHolder)
-    // Offset: 0x13EB1D4
+    // Offset: 0x198A7D4
     void ItemSelected(::VROSC::PaginatedListDataHolder* dataHolder);
     // private System.Boolean IsSessionFiltered(VROSC.SessionUIData sessionUIData)
-    // Offset: 0x13EB3B4
+    // Offset: 0x198A9B4
     bool IsSessionFiltered(::VROSC::SessionUIData* sessionUIData);
     // private System.Void OrderDataList()
-    // Offset: 0x13EBEDC
+    // Offset: 0x198B4DC
     void OrderDataList();
     // private System.Int32 <OrderDataList>b__28_0(VROSC.PaginatedListDataHolder p1, VROSC.PaginatedListDataHolder p2)
-    // Offset: 0x13EC2B8
+    // Offset: 0x198B8B8
     int $OrderDataList$b__28_0(::VROSC::PaginatedListDataHolder* p1, ::VROSC::PaginatedListDataHolder* p2);
     // private System.Int32 <OrderDataList>b__28_1(VROSC.PaginatedListDataHolder p1, VROSC.PaginatedListDataHolder p2)
-    // Offset: 0x13EC3D4
+    // Offset: 0x198B9D4
     int $OrderDataList$b__28_1(::VROSC::PaginatedListDataHolder* p1, ::VROSC::PaginatedListDataHolder* p2);
     // private System.Int32 <OrderDataList>b__28_2(VROSC.PaginatedListDataHolder p1, VROSC.PaginatedListDataHolder p2)
-    // Offset: 0x13EC4DC
+    // Offset: 0x198BADC
     int $OrderDataList$b__28_2(::VROSC::PaginatedListDataHolder* p1, ::VROSC::PaginatedListDataHolder* p2);
     // public System.Void .ctor()
-    // Offset: 0x13EC1C0
+    // Offset: 0x198B7C0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

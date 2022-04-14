@@ -30,7 +30,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return *reinterpret_cast<::System::Security::Cryptography::X509Certificates::INativeCertificateHelper*>(this);
     }
     // public System.Void .ctor()
-    // Offset: 0x12816D0
+    // Offset: 0x17CFEE8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

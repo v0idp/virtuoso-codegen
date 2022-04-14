@@ -47,15 +47,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class DeserializationContext : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // readonly Firebase.Firestore.DocumentSnapshot Snapshot
     // Size: 0x8
     // Offset: 0x10
@@ -68,22 +60,22 @@ namespace Firebase::Firestore {
       return Snapshot;
     }
     // Get instance field reference: readonly Firebase.Firestore.DocumentSnapshot Snapshot
-    ::Firebase::Firestore::DocumentSnapshot*& dyn_Snapshot();
+    [[deprecated]] ::Firebase::Firestore::DocumentSnapshot*& dyn_Snapshot();
     // Firebase.Firestore.FirebaseFirestore get_Firestore()
-    // Offset: 0xC2B1C8
+    // Offset: 0xD4D028
     ::Firebase::Firestore::FirebaseFirestore* get_Firestore();
     // Firebase.Firestore.DocumentReference get_DocumentReference()
-    // Offset: 0xC28744
+    // Offset: 0xD4A474
     ::Firebase::Firestore::DocumentReference* get_DocumentReference();
     // System.Void .ctor(Firebase.Firestore.DocumentSnapshot snapshot)
-    // Offset: 0xC2F8C4
+    // Offset: 0xD516CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DeserializationContext* New_ctor(::Firebase::Firestore::DocumentSnapshot* snapshot) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::DeserializationContext::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DeserializationContext*, creationType>(snapshot)));
     }
     // Firebase.Firestore.Converters.IFirestoreInternalConverter GetConverter(System.Type targetType)
-    // Offset: 0xC2F9D4
+    // Offset: 0xD517DC
     ::Firebase::Firestore::Converters::IFirestoreInternalConverter* GetConverter(::System::Type* targetType);
   }; // Firebase.Firestore.DeserializationContext
   #pragma pack(pop)

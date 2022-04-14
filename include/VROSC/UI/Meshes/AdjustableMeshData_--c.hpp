@@ -55,22 +55,22 @@ namespace VROSC::UI::Meshes {
     // Set static field: static public System.Func`2<UnityEngine.Vector3,System.Single> <>9__24_3
     static void _set_$$9__24_3(::System::Func_2<::UnityEngine::Vector3, float>* value);
     // static private System.Void .cctor()
-    // Offset: 0x135999C
+    // Offset: 0x956298
     static void _cctor();
     // System.Single <GetDimensions>b__24_0(UnityEngine.Vector3 o)
-    // Offset: 0x1359A04
+    // Offset: 0x956300
     float $GetDimensions$b__24_0(::UnityEngine::Vector3 o);
     // System.Single <GetDimensions>b__24_1(UnityEngine.Vector3 o)
-    // Offset: 0x1359A08
+    // Offset: 0x956304
     float $GetDimensions$b__24_1(::UnityEngine::Vector3 o);
     // System.Single <GetDimensions>b__24_2(UnityEngine.Vector3 o)
-    // Offset: 0x1359A0C
+    // Offset: 0x956308
     float $GetDimensions$b__24_2(::UnityEngine::Vector3 o);
     // System.Single <GetDimensions>b__24_3(UnityEngine.Vector3 o)
-    // Offset: 0x1359A14
+    // Offset: 0x956310
     float $GetDimensions$b__24_3(::UnityEngine::Vector3 o);
     // public System.Void .ctor()
-    // Offset: 0x13599FC
+    // Offset: 0x9562F8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

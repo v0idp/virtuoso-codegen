@@ -57,15 +57,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x69 to desired offset: 0x70
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.RectTransform _constrain
     // Size: 0x8
     // Offset: 0x70
@@ -150,60 +142,60 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.RectTransform _constrain
-    ::UnityEngine::RectTransform*& dyn__constrain();
+    [[deprecated]] ::UnityEngine::RectTransform*& dyn__constrain();
     // Get instance field reference: private System.Single _liftAmount
-    float& dyn__liftAmount();
+    [[deprecated]] float& dyn__liftAmount();
     // Get instance field reference: private System.Single _smoothing
-    float& dyn__smoothing();
+    [[deprecated]] float& dyn__smoothing();
     // Get instance field reference: private VROSC.MovementPlane _plane
-    ::VROSC::MovementPlane*& dyn__plane();
+    [[deprecated]] ::VROSC::MovementPlane*& dyn__plane();
     // Get instance field reference: private UnityEngine.Transform _target
-    ::UnityEngine::Transform*& dyn__target();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__target();
     // Get instance field reference: private UnityEngine.Vector3 _lastPlaneHit
-    ::UnityEngine::Vector3& dyn__lastPlaneHit();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__lastPlaneHit();
     // Get instance field reference: private VROSC.SmoothMovement _smoothMovement
-    ::VROSC::SmoothMovement*& dyn__smoothMovement();
+    [[deprecated]] ::VROSC::SmoothMovement*& dyn__smoothMovement();
     // Get instance field reference: private VROSC.InputDevice _grabber
-    ::VROSC::InputDevice*& dyn__grabber();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__grabber();
     // Get instance field reference: private UnityEngine.Vector3 _grabOffset
-    ::UnityEngine::Vector3& dyn__grabOffset();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__grabOffset();
     // Get instance field reference: private UnityEngine.Quaternion _grabRotation
-    ::UnityEngine::Quaternion& dyn__grabRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn__grabRotation();
     // Get instance field reference: public System.Action OnGrabBegin
-    ::System::Action*& dyn_OnGrabBegin();
+    [[deprecated]] ::System::Action*& dyn_OnGrabBegin();
     // Get instance field reference: public System.Action OnGrabEnd
-    ::System::Action*& dyn_OnGrabEnd();
+    [[deprecated]] ::System::Action*& dyn_OnGrabEnd();
     // Get instance field reference: public System.Action OnPositioningComplete
-    ::System::Action*& dyn_OnPositioningComplete();
+    [[deprecated]] ::System::Action*& dyn_OnPositioningComplete();
     // public System.Void Setup(UnityEngine.Transform target, VROSC.MovementPlane movementPlane)
-    // Offset: 0xA07E00
+    // Offset: 0xACCCDC
     void Setup(::UnityEngine::Transform* target, ::VROSC::MovementPlane* movementPlane);
     // private System.Void OnEnable()
-    // Offset: 0xA07EAC
+    // Offset: 0xACCD88
     void OnEnable();
     // private System.Void ButtonEnd(VROSC.InputDevice inputDevice, VROSC.TriggerButton button)
-    // Offset: 0xA08084
+    // Offset: 0xACCF60
     void ButtonEnd(::VROSC::InputDevice* inputDevice, ::VROSC::TriggerButton button);
     // private System.Void LateUpdate()
-    // Offset: 0xA0814C
+    // Offset: 0xACD028
     void LateUpdate();
     // public System.Void StopGrab()
-    // Offset: 0xA08130
+    // Offset: 0xACD00C
     void StopGrab();
     // private System.Void GrabBegin(VROSC.InputDevice grabber)
-    // Offset: 0xA082F8
+    // Offset: 0xACD1D4
     void GrabBegin(::VROSC::InputDevice* grabber);
     // protected System.Void UpdateGrab()
-    // Offset: 0xA085A4
+    // Offset: 0xACD480
     void UpdateGrab();
     // private UnityEngine.Vector3 BeamPositionOnGrid()
-    // Offset: 0xA0844C
+    // Offset: 0xACD328
     ::UnityEngine::Vector3 BeamPositionOnGrid();
     // private System.Void OnDrawGizmos()
-    // Offset: 0xA08AD4
+    // Offset: 0xACD9B0
     void OnDrawGizmos();
     // public System.Void .ctor()
-    // Offset: 0xA08B8C
+    // Offset: 0xACDA68
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
@@ -218,12 +210,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<MoveOnPlane*, creationType>()));
     }
     // protected override System.Void OnDisable()
-    // Offset: 0xA07F98
+    // Offset: 0xACCE74
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::OnDisable()
     void OnDisable();
     // public override System.Void Grab(VROSC.GrabData data, System.Boolean grabbing)
-    // Offset: 0xA081D8
+    // Offset: 0xACD0B4
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::Grab(VROSC.GrabData data, System.Boolean grabbing)
     void Grab(::VROSC::GrabData* data, bool grabbing);

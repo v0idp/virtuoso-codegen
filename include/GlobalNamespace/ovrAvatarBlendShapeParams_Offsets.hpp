@@ -39,7 +39,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.Int64 blendShapeParams
     static void _set_blendShapeParams(int64_t value);
     // static private System.Void .cctor()
-    // Offset: 0x1357A44
+    // Offset: 0x954340
     static void _cctor();
   }; // ovrAvatarBlendShapeParams_Offsets
   #pragma pack(pop)

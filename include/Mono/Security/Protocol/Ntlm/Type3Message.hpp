@@ -39,15 +39,7 @@ namespace Mono::Security::Protocol::Ntlm {
   // [TokenAttribute] Offset: FFFFFFFF
   class Type3Message : public ::Mono::Security::Protocol::Ntlm::MessageBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Mono.Security.Protocol.Ntlm.NtlmAuthLevel _level
     // Size: 0x4
     // Offset: 0x18
@@ -106,57 +98,57 @@ namespace Mono::Security::Protocol::Ntlm {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: private Mono.Security.Protocol.Ntlm.NtlmAuthLevel _level
-    ::Mono::Security::Protocol::Ntlm::NtlmAuthLevel& dyn__level();
+    [[deprecated]] ::Mono::Security::Protocol::Ntlm::NtlmAuthLevel& dyn__level();
     // Get instance field reference: private System.Byte[] _challenge
-    ::ArrayW<uint8_t>& dyn__challenge();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__challenge();
     // Get instance field reference: private System.String _host
-    ::StringW& dyn__host();
+    [[deprecated]] ::StringW& dyn__host();
     // Get instance field reference: private System.String _domain
-    ::StringW& dyn__domain();
+    [[deprecated]] ::StringW& dyn__domain();
     // Get instance field reference: private System.String _username
-    ::StringW& dyn__username();
+    [[deprecated]] ::StringW& dyn__username();
     // Get instance field reference: private System.String _password
-    ::StringW& dyn__password();
+    [[deprecated]] ::StringW& dyn__password();
     // Get instance field reference: private Mono.Security.Protocol.Ntlm.Type2Message _type2
-    ::Mono::Security::Protocol::Ntlm::Type2Message*& dyn__type2();
+    [[deprecated]] ::Mono::Security::Protocol::Ntlm::Type2Message*& dyn__type2();
     // Get instance field reference: private System.Byte[] _lm
-    ::ArrayW<uint8_t>& dyn__lm();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__lm();
     // Get instance field reference: private System.Byte[] _nt
-    ::ArrayW<uint8_t>& dyn__nt();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn__nt();
     // public System.Void set_Domain(System.String value)
-    // Offset: 0x10F43D4
+    // Offset: 0x1646290
     void set_Domain(::StringW value);
     // public System.Void set_Password(System.String value)
-    // Offset: 0x10F4458
+    // Offset: 0x1646314
     void set_Password(::StringW value);
     // public System.Void set_Username(System.String value)
-    // Offset: 0x10F4460
+    // Offset: 0x164631C
     void set_Username(::StringW value);
     // public System.Void .ctor(Mono.Security.Protocol.Ntlm.Type2Message type2)
-    // Offset: 0x10F4108
+    // Offset: 0x1645FC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Type3Message* New_ctor(::Mono::Security::Protocol::Ntlm::Type2Message* type2) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Protocol::Ntlm::Type3Message::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Type3Message*, creationType>(type2)));
     }
     // private System.String DecodeString(System.Byte[] buffer, System.Int32 offset, System.Int32 len)
-    // Offset: 0x10F468C
+    // Offset: 0x1646548
     ::StringW DecodeString(::ArrayW<uint8_t> buffer, int offset, int len);
     // private System.Byte[] EncodeString(System.String text)
-    // Offset: 0x10F46F0
+    // Offset: 0x16465AC
     ::ArrayW<uint8_t> EncodeString(::StringW text);
     // protected override System.Void Finalize()
-    // Offset: 0x10F4320
+    // Offset: 0x16461DC
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
     // protected override System.Void Decode(System.Byte[] message)
-    // Offset: 0x10F4468
+    // Offset: 0x1646324
     // Implemented from: Mono.Security.Protocol.Ntlm.MessageBase
     // Base method: System.Void MessageBase::Decode(System.Byte[] message)
     void Decode(::ArrayW<uint8_t> message);
     // public override System.Byte[] GetBytes()
-    // Offset: 0x10F4790
+    // Offset: 0x164664C
     // Implemented from: Mono.Security.Protocol.Ntlm.MessageBase
     // Base method: System.Byte[] MessageBase::GetBytes()
     ::ArrayW<uint8_t> GetBytes();

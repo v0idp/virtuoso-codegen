@@ -29,7 +29,7 @@ namespace Facebook::WitAi::CallbackHandlers {
   class StringEntityMatchEvent : public ::UnityEngine::Events::UnityEvent_1<::StringW> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x10F9B28
+    // Offset: 0x1670390
     // Implemented from: UnityEngine.Events.UnityEvent`1
     // Base method: System.Void UnityEvent_1::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

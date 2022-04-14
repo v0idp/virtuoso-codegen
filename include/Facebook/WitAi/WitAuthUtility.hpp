@@ -50,34 +50,34 @@ namespace Facebook::WitAi {
     // Set static field: static private System.String serverToken
     static void _set_serverToken(::StringW value);
     // static public System.String get_ServerToken()
-    // Offset: 0x10FDA7C
+    // Offset: 0x16742E4
     static ::StringW get_ServerToken();
     // static private System.Void .cctor()
-    // Offset: 0x10FDCC4
+    // Offset: 0x167452C
     static void _cctor();
     // static public System.Boolean IsServerTokenValid()
-    // Offset: 0x10FD96C
+    // Offset: 0x16741D4
     static bool IsServerTokenValid();
     // static public System.Boolean IsServerTokenValid(System.String token)
-    // Offset: 0x10FDAC0
+    // Offset: 0x1674328
     static bool IsServerTokenValid(::StringW token);
     // static public System.String GetAppServerToken(Facebook.WitAi.Data.Configuration.WitConfiguration configuration, System.String defaultValue)
-    // Offset: 0x10FDBA8
+    // Offset: 0x1674410
     static ::StringW GetAppServerToken(::Facebook::WitAi::Data::Configuration::WitConfiguration* configuration, ::StringW defaultValue);
     // static public System.String GetAppServerToken(System.String appId, System.String defaultValue)
-    // Offset: 0x10FDC2C
+    // Offset: 0x1674494
     static ::StringW GetAppServerToken(::StringW appId, ::StringW defaultValue);
     // static public System.String GetAppId(System.String serverToken, System.String defaultValue)
-    // Offset: 0x10FDC70
+    // Offset: 0x16744D8
     static ::StringW GetAppId(::StringW serverToken, ::StringW defaultValue);
     // static public System.Void SetAppServerToken(System.String appId, System.String token)
-    // Offset: 0x10FDCB4
+    // Offset: 0x167451C
     static void SetAppServerToken(::StringW appId, ::StringW token);
     // static private System.Void SavePrefs()
-    // Offset: 0x10FDCB8
+    // Offset: 0x1674520
     static void SavePrefs();
     // public System.Void .ctor()
-    // Offset: 0x10FDCBC
+    // Offset: 0x1674524
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

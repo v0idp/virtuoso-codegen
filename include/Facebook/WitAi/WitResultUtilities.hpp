@@ -38,28 +38,28 @@ namespace Facebook::WitAi {
   class WitResultUtilities : public ::Il2CppObject {
     public:
     // static public System.String GetFirstEntityValue(Facebook.WitAi.Lib.WitResponseNode witResponse, System.String name)
-    // Offset: 0x10F99E4
+    // Offset: 0x167024C
     static ::StringW GetFirstEntityValue(::Facebook::WitAi::Lib::WitResponseNode* witResponse, ::StringW name);
     // static public Facebook.WitAi.Lib.WitResponseNode GetFirstEntity(Facebook.WitAi.Lib.WitResponseNode witResponse, System.String name)
-    // Offset: 0x1106384
+    // Offset: 0x167CBF0
     static ::Facebook::WitAi::Lib::WitResponseNode* GetFirstEntity(::Facebook::WitAi::Lib::WitResponseNode* witResponse, ::StringW name);
     // static public System.String GetIntentName(Facebook.WitAi.Lib.WitResponseNode witResponse)
-    // Offset: 0x1106428
+    // Offset: 0x167CC94
     static ::StringW GetIntentName(::Facebook::WitAi::Lib::WitResponseNode* witResponse);
     // static public Facebook.WitAi.Lib.WitResponseNode GetFirstIntent(Facebook.WitAi.Lib.WitResponseNode witResponse)
-    // Offset: 0x10F9764
+    // Offset: 0x166FFCC
     static ::Facebook::WitAi::Lib::WitResponseNode* GetFirstIntent(::Facebook::WitAi::Lib::WitResponseNode* witResponse);
     // static public System.String GetPathValue(Facebook.WitAi.Lib.WitResponseNode response, System.String path)
-    // Offset: 0x11064DC
+    // Offset: 0x167CD48
     static ::StringW GetPathValue(::Facebook::WitAi::Lib::WitResponseNode* response, ::StringW path);
     // static public Facebook.WitAi.WitResponseReference GetWitResponseReference(System.String path)
-    // Offset: 0x10F9C68
+    // Offset: 0x16704D0
     static ::Facebook::WitAi::WitResponseReference* GetWitResponseReference(::StringW path);
     // static public System.String GetCodeFromPath(System.String path)
-    // Offset: 0x11067CC
+    // Offset: 0x167D038
     static ::StringW GetCodeFromPath(::StringW path);
     // static private System.String[] SplitArrays(System.String nodeName)
-    // Offset: 0x110668C
+    // Offset: 0x167CEF8
     static ::ArrayW<::StringW> SplitArrays(::StringW nodeName);
   }; // Facebook.WitAi.WitResultUtilities
   #pragma pack(pop)

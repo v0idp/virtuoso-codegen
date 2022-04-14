@@ -42,13 +42,13 @@ namespace UnityOSC {
     // Set static field: static public UnityOSC.PacketReceivedEventHandler <>9__3_0
     static void _set_$$9__3_0(::UnityOSC::PacketReceivedEventHandler* value);
     // static private System.Void .cctor()
-    // Offset: 0x133F514
+    // Offset: 0x8CAB34
     static void _cctor();
     // System.Void <.ctor>b__3_0(UnityOSC.OSCServer s, UnityOSC.OSCPacket p)
-    // Offset: 0x133F57C
+    // Offset: 0x8CAB9C
     void $_ctor$b__3_0(::UnityOSC::OSCServer* s, ::UnityOSC::OSCPacket* p);
     // public System.Void .ctor()
-    // Offset: 0x133F574
+    // Offset: 0x8CAB94
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

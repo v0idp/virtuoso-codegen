@@ -24,6 +24,8 @@ namespace VROSC {
   class LoopStation;
   // Forward declaring type: LoopPlaybackConfig
   class LoopPlaybackConfig;
+  // Forward declaring type: TransformDataController
+  class TransformDataController;
   // Forward declaring type: Launchpad
   class Launchpad;
   // Forward declaring type: PlayButtonLaunchpad
@@ -33,8 +35,6 @@ namespace VROSC {
 namespace UnityEngine {
   // Forward declaring type: Color
   struct Color;
-  // Skipping declaration: Vector3 because it is already included!
-  // Skipping declaration: Quaternion because it is already included!
 }
 // Completed forward declares
 // Type namespace: VROSC
@@ -53,15 +53,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationLaunchpadHandler : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LaunchpadSpawner _launchpadSpawner
     // Size: 0x8
     // Offset: 0x18
@@ -98,53 +90,53 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LaunchpadSpawner _launchpadSpawner
-    ::VROSC::LaunchpadSpawner*& dyn__launchpadSpawner();
+    [[deprecated]] ::VROSC::LaunchpadSpawner*& dyn__launchpadSpawner();
     // Get instance field reference: private VROSC.LoopPlayButton _playButton
-    ::VROSC::LoopPlayButton*& dyn__playButton();
+    [[deprecated]] ::VROSC::LoopPlayButton*& dyn__playButton();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private System.Boolean _isGroup
-    bool& dyn__isGroup();
+    [[deprecated]] bool& dyn__isGroup();
     // Get instance field reference: private VROSC.LoopPlaybackConfig _config
-    ::VROSC::LoopPlaybackConfig*& dyn__config();
+    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn__config();
     // public VROSC.LaunchpadSpawner get_LaunchpadSpawner()
-    // Offset: 0x916524
+    // Offset: 0x1972B6C
     ::VROSC::LaunchpadSpawner* get_LaunchpadSpawner();
     // private System.Void Awake()
-    // Offset: 0x91652C
+    // Offset: 0x1972B74
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x91672C
+    // Offset: 0x1972D74
     void OnDestroy();
     // public System.Void Setup(System.String targetID, System.Boolean isGroup, VROSC.LoopStation loopStation, System.String displayName, VROSC.LoopPlaybackConfig config)
-    // Offset: 0x91693C
+    // Offset: 0x1972F84
     void Setup(::StringW targetID, bool isGroup, ::VROSC::LoopStation* loopStation, ::StringW displayName, ::VROSC::LoopPlaybackConfig* config);
     // public System.Void SetName(System.String text)
-    // Offset: 0x909534
+    // Offset: 0x19724EC
     void SetName(::StringW text);
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x9092B4
+    // Offset: 0x197273C
     void SetColor(::UnityEngine::Color color);
-    // System.Void LoadLaunchPad(System.String padID, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 localScale)
-    // Offset: 0x909870
-    void LoadLaunchPad(::StringW padID, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 localScale);
+    // System.Void LoadLaunchPad(System.String padID, VROSC.TransformDataController transformData)
+    // Offset: 0x1972688
+    void LoadLaunchPad(::StringW padID, ::VROSC::TransformDataController* transformData);
     // private System.Void LaunchPadDeleted(VROSC.Launchpad launchpad)
-    // Offset: 0x9169BC
+    // Offset: 0x1973004
     void LaunchPadDeleted(::VROSC::Launchpad* launchpad);
     // private System.Void LaunchPadMoved(VROSC.Launchpad launchpad)
-    // Offset: 0x9169E8
+    // Offset: 0x1973030
     void LaunchPadMoved(::VROSC::Launchpad* launchpad);
     // private System.Void LaunchPadCreated(VROSC.Launchpad launchpad)
-    // Offset: 0x916AE4
+    // Offset: 0x1973060
     void LaunchPadCreated(::VROSC::Launchpad* launchpad);
     // private System.Void AssignToPlayButtonLaunchpad(VROSC.PlayButtonLaunchpad launchpad)
-    // Offset: 0x916978
+    // Offset: 0x1972FC0
     void AssignToPlayButtonLaunchpad(::VROSC::PlayButtonLaunchpad* launchpad);
     // private System.Void LaunchPadHit(VROSC.Launchpad launchpad)
-    // Offset: 0x916BA0
+    // Offset: 0x197311C
     void LaunchPadHit(::VROSC::Launchpad* launchpad);
     // public System.Void .ctor()
-    // Offset: 0x916BBC
+    // Offset: 0x1973138
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -220,13 +212,11 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 // Writing MetadataGetter for method: VROSC::LoopStationLaunchpadHandler::LoadLaunchPad
 // Il2CppName: LoadLaunchPad
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationLaunchpadHandler::*)(::StringW, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Vector3)>(&VROSC::LoopStationLaunchpadHandler::LoadLaunchPad)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationLaunchpadHandler::*)(::StringW, ::VROSC::TransformDataController*)>(&VROSC::LoopStationLaunchpadHandler::LoadLaunchPad)> {
   static const MethodInfo* get() {
     static auto* padID = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    static auto* position = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    static auto* rotation = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
-    static auto* localScale = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationLaunchpadHandler*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, position, rotation, localScale});
+    static auto* transformData = &::il2cpp_utils::GetClassFromName("VROSC", "TransformDataController")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationLaunchpadHandler*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, transformData});
   }
 };
 // Writing MetadataGetter for method: VROSC::LoopStationLaunchpadHandler::LaunchPadDeleted

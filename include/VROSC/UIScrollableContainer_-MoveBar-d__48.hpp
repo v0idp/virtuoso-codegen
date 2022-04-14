@@ -28,15 +28,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UIScrollableContainer::$MoveBar$d__48 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -87,40 +79,40 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.UIScrollableContainer <>4__this
-    ::VROSC::UIScrollableContainer*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UIScrollableContainer*& dyn_$$4__this();
     // Get instance field reference: public System.Single duration
-    float& dyn_duration();
+    [[deprecated]] float& dyn_duration();
     // Get instance field reference: private System.Single <time>5__2
-    float& dyn_$time$5__2();
+    [[deprecated]] float& dyn_$time$5__2();
     // Get instance field reference: private UnityEngine.Vector3 <targetPos>5__3
-    ::UnityEngine::Vector3& dyn_$targetPos$5__3();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$targetPos$5__3();
     // Get instance field reference: private UnityEngine.Vector3 <startPos>5__4
-    ::UnityEngine::Vector3& dyn_$startPos$5__4();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$startPos$5__4();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x140EB30
+    // Offset: 0xE80C04
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x140EB78
+    // Offset: 0xE80C4C
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x140E96C
+    // Offset: 0xE80A40
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIScrollableContainer::$MoveBar$d__48* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIScrollableContainer::$MoveBar$d__48::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UIScrollableContainer::$MoveBar$d__48*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x140E998
+    // Offset: 0xE80A6C
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x140E99C
+    // Offset: 0xE80A70
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x140EB38
+    // Offset: 0xE80C0C
     void System_Collections_IEnumerator_Reset();
   }; // VROSC.UIScrollableContainer/VROSC.<MoveBar>d__48
   #pragma pack(pop)

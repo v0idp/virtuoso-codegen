@@ -43,19 +43,19 @@ namespace GlobalNamespace {
     // Set static field: static public System.String strONSPS
     static void _set_strONSPS(::StringW value);
     // static private System.Void ONSP_GetVersion(ref System.Int32 Major, ref System.Int32 Minor, ref System.Int32 Patch)
-    // Offset: 0x11C7E24
+    // Offset: 0x176CD2C
     static void ONSP_GetVersion(ByRef<int> Major, ByRef<int> Minor, ByRef<int> Patch);
     // private System.Void Awake()
-    // Offset: 0x11C7EBC
+    // Offset: 0x176CDC4
     void Awake();
     // private System.Void Start()
-    // Offset: 0x11C7FDC
+    // Offset: 0x176CEE4
     void Start();
     // private System.Void Update()
-    // Offset: 0x11C7FE0
+    // Offset: 0x176CEE8
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x11C7FE4
+    // Offset: 0x176CEEC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

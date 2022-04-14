@@ -52,15 +52,7 @@ namespace Firebase {
     class SWIG_CompletionDelegate;
     // Nested type: ::Firebase::FutureVoid::$GetTask$c__AnonStorey0
     class $GetTask$c__AnonStorey0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x28
@@ -93,37 +85,37 @@ namespace Firebase {
     // Set static field: static private System.Object CallbackLock
     static void _set_CallbackLock(::Il2CppObject* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.IntPtr callbackData
-    ::System::IntPtr& dyn_callbackData();
+    [[deprecated]] ::System::IntPtr& dyn_callbackData();
     // Get instance field reference: private Firebase.FutureVoid/Firebase.SWIG_CompletionDelegate SWIG_CompletionCB
-    ::Firebase::FutureVoid::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    [[deprecated]] ::Firebase::FutureVoid::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
     // static private System.Void .cctor()
-    // Offset: 0x129B960
+    // Offset: 0x1889848
     static void _cctor();
     // static public System.Threading.Tasks.Task GetTask(Firebase.FutureVoid fu)
-    // Offset: 0x129B164
+    // Offset: 0x1889024
     static ::System::Threading::Tasks::Task* GetTask(::Firebase::FutureVoid* fu);
     // private System.Void ThrowIfDisposed()
-    // Offset: 0x129B554
+    // Offset: 0x188943C
     void ThrowIfDisposed();
     // public System.Void SetOnCompletionCallback(Firebase.FutureVoid/Firebase.Action userCompletionCallback)
-    // Offset: 0x129B318
+    // Offset: 0x1889200
     void SetOnCompletionCallback(::Firebase::FutureVoid::Action* userCompletionCallback);
     // private System.Void SetCompletionData(System.IntPtr data)
-    // Offset: 0x129B130
+    // Offset: 0x1888FF0
     void SetCompletionData(::System::IntPtr data);
     // static private System.Void SWIG_CompletionDispatcher(System.Int32 key)
-    // Offset: 0x129ACB8
+    // Offset: 0x1888B78
     static void SWIG_CompletionDispatcher(int key);
     // System.IntPtr SWIG_OnCompletion(Firebase.FutureVoid/Firebase.SWIG_CompletionDelegate cs_callback, System.Int32 cs_key)
-    // Offset: 0x129B5FC
+    // Offset: 0x18894E4
     ::System::IntPtr SWIG_OnCompletion(::Firebase::FutureVoid::SWIG_CompletionDelegate* cs_callback, int cs_key);
     // public System.Void SWIG_FreeCompletionData(System.IntPtr data)
-    // Offset: 0x129B6B0
+    // Offset: 0x1889598
     void SWIG_FreeCompletionData(::System::IntPtr data);
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0x129AE5C
+    // Offset: 0x1888D1C
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::.ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -132,12 +124,12 @@ namespace Firebase {
       return THROW_UNLESS((::il2cpp_utils::New<FutureVoid*, creationType>(cPtr, cMemoryOwn)));
     }
     // protected override System.Void Finalize()
-    // Offset: 0x129AF18
+    // Offset: 0x1888DD8
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::Finalize()
     void Finalize();
     // public override System.Void Dispose()
-    // Offset: 0x129AF80
+    // Offset: 0x1888E40
     // Implemented from: Firebase.FutureBase
     // Base method: System.Void FutureBase::Dispose()
     void Dispose();

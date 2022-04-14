@@ -44,15 +44,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopVolumeController : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIToggle _muteButton
     // Size: 0x8
     // Offset: 0x10
@@ -91,52 +83,52 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<bool>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIToggle _muteButton
-    ::VROSC::UIToggle*& dyn__muteButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__muteButton();
     // Get instance field reference: private VROSC.UIToggle _soloButton
-    ::VROSC::UIToggle*& dyn__soloButton();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__soloButton();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: public System.Action`1<System.Single> OnVolumeChanged
-    ::System::Action_1<float>*& dyn_OnVolumeChanged();
+    [[deprecated]] ::System::Action_1<float>*& dyn_OnVolumeChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnMuteChanged
-    ::System::Action_1<bool>*& dyn_OnMuteChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnMuteChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnSoloChanged
-    ::System::Action_1<bool>*& dyn_OnSoloChanged();
+    [[deprecated]] ::System::Action_1<bool>*& dyn_OnSoloChanged();
     // public System.Boolean get_IsSoloToggled()
-    // Offset: 0x8A7814
+    // Offset: 0x197A130
     bool get_IsSoloToggled();
     // public System.Boolean get_IsMuteToggled()
-    // Offset: 0x8A7830
+    // Offset: 0x1971208
     bool get_IsMuteToggled();
     // public System.Single get_Volume()
-    // Offset: 0x8A784C
+    // Offset: 0x19711EC
     float get_Volume();
     // public System.Void Setup(System.String sliderHeaderText)
-    // Offset: 0x8A7868
+    // Offset: 0x1971514
     void Setup(::StringW sliderHeaderText);
     // public System.Void Dispose()
-    // Offset: 0x8A7B30
+    // Offset: 0x1971B50
     void Dispose();
     // public System.Void ToggleMute(VROSC.InputDevice device, System.Boolean mute)
-    // Offset: 0x8A7CF4
+    // Offset: 0x197A14C
     void ToggleMute(::VROSC::InputDevice* device, bool mute);
     // private System.Void ToggleSolo(VROSC.InputDevice arg1, System.Boolean arg2)
-    // Offset: 0x8A7D60
+    // Offset: 0x197A1B8
     void ToggleSolo(::VROSC::InputDevice* arg1, bool arg2);
     // public System.Void SetVolume(System.Single volume)
-    // Offset: 0x8A7DCC
+    // Offset: 0x1972020
     void SetVolume(float volume);
     // private System.Void OnVolumeSliderChanged(System.Single volume)
-    // Offset: 0x8A7DF8
+    // Offset: 0x197A224
     void OnVolumeSliderChanged(float volume);
     // public System.Void SetIsMuted(System.Boolean isMuted)
-    // Offset: 0x8A7E68
+    // Offset: 0x1971FB0
     void SetIsMuted(bool isMuted);
     // public System.Void SetIsSolo(System.Boolean isMuted)
-    // Offset: 0x8A7E8C
+    // Offset: 0x1971FD4
     void SetIsSolo(bool isMuted);
     // public System.Void .ctor()
-    // Offset: 0x8A7EB0
+    // Offset: 0x197A294
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

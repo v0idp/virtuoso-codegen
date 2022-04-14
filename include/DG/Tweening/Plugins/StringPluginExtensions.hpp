@@ -52,13 +52,13 @@ namespace DG::Tweening::Plugins {
     // Set static field: static private System.Int32 _lastRndSeed
     static void _set__lastRndSeed(int value);
     // static private System.Void .cctor()
-    // Offset: 0x1036D14
+    // Offset: 0x15AD70C
     static void _cctor();
     // static System.Void ScrambleChars(System.Char[] chars)
-    // Offset: 0x1036E98
+    // Offset: 0x15AD890
     static void ScrambleChars(::ArrayW<::Il2CppChar> chars);
     // static System.Text.StringBuilder AppendScrambledChars(System.Text.StringBuilder buffer, System.Int32 length, System.Char[] chars)
-    // Offset: 0x1036AB0
+    // Offset: 0x15AD4A8
     static ::System::Text::StringBuilder* AppendScrambledChars(::System::Text::StringBuilder* buffer, int length, ::ArrayW<::Il2CppChar> chars);
   }; // DG.Tweening.Plugins.StringPluginExtensions
   #pragma pack(pop)

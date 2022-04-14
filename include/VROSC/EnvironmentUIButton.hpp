@@ -51,15 +51,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class EnvironmentUIButton : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIToggle _toggle
     // Size: 0x8
     // Offset: 0x18
@@ -94,35 +86,35 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIToggle _toggle
-    ::VROSC::UIToggle*& dyn__toggle();
+    [[deprecated]] ::VROSC::UIToggle*& dyn__toggle();
     // Get instance field reference: private VROSC.EnvironmentData _target
-    ::VROSC::EnvironmentData*& dyn__target();
+    [[deprecated]] ::VROSC::EnvironmentData*& dyn__target();
     // Get instance field reference: private UnityEngine.Renderer _preview
-    ::UnityEngine::Renderer*& dyn__preview();
+    [[deprecated]] ::UnityEngine::Renderer*& dyn__preview();
     // Get instance field reference: private TMPro.TextMeshPro _nameLabel
-    ::TMPro::TextMeshPro*& dyn__nameLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__nameLabel();
     // Get instance field reference: private VROSC.EnvironmentPanelUI _environmentPanelUI
-    ::VROSC::EnvironmentPanelUI*& dyn__environmentPanelUI();
+    [[deprecated]] ::VROSC::EnvironmentPanelUI*& dyn__environmentPanelUI();
     // public VROSC.EnvironmentData get_EnvironmentData()
-    // Offset: 0x1315610
+    // Offset: 0x8EF670
     ::VROSC::EnvironmentData* get_EnvironmentData();
     // private System.Void Awake()
-    // Offset: 0x1315618
+    // Offset: 0x8EF678
     void Awake();
     // public System.Void Setup(VROSC.EnvironmentPanelUI environmentPanelUI)
-    // Offset: 0x13157A8
+    // Offset: 0x8EF808
     void Setup(::VROSC::EnvironmentPanelUI* environmentPanelUI);
     // public System.Void SetActive(VROSC.EnvironmentData activeEnvironment)
-    // Offset: 0x1315274
+    // Offset: 0x8EF2D4
     void SetActive(::VROSC::EnvironmentData* activeEnvironment);
     // private System.Void OnDestroy()
-    // Offset: 0x13157B0
+    // Offset: 0x8EF810
     void OnDestroy();
     // private System.Void ButtonPressed(VROSC.InputDevice device, System.Boolean toggled)
-    // Offset: 0x1315884
+    // Offset: 0x8EF8E4
     void ButtonPressed(::VROSC::InputDevice* device, bool toggled);
     // public System.Void .ctor()
-    // Offset: 0x13158A4
+    // Offset: 0x8EF904
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

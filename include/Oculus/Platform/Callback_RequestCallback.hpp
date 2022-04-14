@@ -25,15 +25,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class Callback::RequestCallback : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Message/Oculus.Platform.Callback messageCallback
     // Size: 0x8
     // Offset: 0x10
@@ -46,19 +38,19 @@ namespace Oculus::Platform {
       return messageCallback;
     }
     // Get instance field reference: private Oculus.Platform.Message/Oculus.Platform.Callback messageCallback
-    ::Oculus::Platform::Message::Callback*& dyn_messageCallback();
+    [[deprecated]] ::Oculus::Platform::Message::Callback*& dyn_messageCallback();
     // public System.Void .ctor(Oculus.Platform.Message/Oculus.Platform.Callback callback)
-    // Offset: 0x1154C04
+    // Offset: 0x1721B00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Callback::RequestCallback* New_ctor(::Oculus::Platform::Message::Callback* callback) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Callback::RequestCallback::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Callback::RequestCallback*, creationType>(callback)));
     }
     // public System.Void HandleMessage(Oculus.Platform.Message msg)
-    // Offset: 0x1154C30
+    // Offset: 0x1721B2C
     void HandleMessage(::Oculus::Platform::Message* msg);
     // public System.Void .ctor()
-    // Offset: 0x1154BFC
+    // Offset: 0x1721AF8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

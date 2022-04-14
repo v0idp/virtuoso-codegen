@@ -22,15 +22,7 @@ namespace UnityEngine::SubsystemsImplementation {
   // [TokenAttribute] Offset: FFFFFFFF
   class SubsystemProvider : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.Boolean m_Running
     // Size: 0x1
     // Offset: 0x10
@@ -43,7 +35,7 @@ namespace UnityEngine::SubsystemsImplementation {
       return m_Running;
     }
     // Get instance field reference: System.Boolean m_Running
-    bool& dyn_m_Running();
+    [[deprecated]] bool& dyn_m_Running();
   }; // UnityEngine.SubsystemsImplementation.SubsystemProvider
   #pragma pack(pop)
   static check_size<sizeof(SubsystemProvider), 16 + sizeof(bool)> __UnityEngine_SubsystemsImplementation_SubsystemProviderSizeCheck;

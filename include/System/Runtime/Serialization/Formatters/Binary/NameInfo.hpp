@@ -38,15 +38,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
   // [TokenAttribute] Offset: FFFFFFFF
   class NameInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // System.String NIFullName
     // Size: 0x8
     // Offset: 0x10
@@ -131,45 +123,45 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.String NIFullName
-    ::StringW& dyn_NIFullName();
+    [[deprecated]] ::StringW& dyn_NIFullName();
     // Get instance field reference: System.Int64 NIobjectId
-    int64_t& dyn_NIobjectId();
+    [[deprecated]] int64_t& dyn_NIobjectId();
     // Get instance field reference: System.Int64 NIassemId
-    int64_t& dyn_NIassemId();
+    [[deprecated]] int64_t& dyn_NIassemId();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE NIprimitiveTypeEnum
-    ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_NIprimitiveTypeEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_NIprimitiveTypeEnum();
     // Get instance field reference: System.Type NItype
-    ::System::Type*& dyn_NItype();
+    [[deprecated]] ::System::Type*& dyn_NItype();
     // Get instance field reference: System.Boolean NIisSealed
-    bool& dyn_NIisSealed();
+    [[deprecated]] bool& dyn_NIisSealed();
     // Get instance field reference: System.Boolean NIisArray
-    bool& dyn_NIisArray();
+    [[deprecated]] bool& dyn_NIisArray();
     // Get instance field reference: System.Boolean NIisArrayItem
-    bool& dyn_NIisArrayItem();
+    [[deprecated]] bool& dyn_NIisArrayItem();
     // Get instance field reference: System.Boolean NItransmitTypeOnObject
-    bool& dyn_NItransmitTypeOnObject();
+    [[deprecated]] bool& dyn_NItransmitTypeOnObject();
     // Get instance field reference: System.Boolean NItransmitTypeOnMember
-    bool& dyn_NItransmitTypeOnMember();
+    [[deprecated]] bool& dyn_NItransmitTypeOnMember();
     // Get instance field reference: System.Boolean NIisParentTypeOnObject
-    bool& dyn_NIisParentTypeOnObject();
+    [[deprecated]] bool& dyn_NIisParentTypeOnObject();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalArrayTypeE NIarrayEnum
-    ::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE& dyn_NIarrayEnum();
+    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE& dyn_NIarrayEnum();
     // Get instance field reference: private System.Boolean NIsealedStatusChecked
-    bool& dyn_NIsealedStatusChecked();
+    [[deprecated]] bool& dyn_NIsealedStatusChecked();
     // public System.Boolean get_IsSealed()
-    // Offset: 0xFCE7E4
+    // Offset: 0x1011228
     bool get_IsSealed();
     // public System.String get_NIname()
-    // Offset: 0xFCE83C
+    // Offset: 0x1011280
     ::StringW get_NIname();
     // public System.Void set_NIname(System.String value)
-    // Offset: 0xFCE880
+    // Offset: 0x10112C4
     void set_NIname(::StringW value);
     // System.Void Init()
-    // Offset: 0xFCE7C4
+    // Offset: 0x1011208
     void Init();
     // System.Void .ctor()
-    // Offset: 0xFCE7C0
+    // Offset: 0x1011200
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -38,16 +38,16 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
   class ColorChanger : public ::UnityEngine::MonoBehaviour {
     public:
     // public System.Void UpdateColor(Facebook.WitAi.Lib.WitResponseNode commandResult)
-    // Offset: 0x1333678
+    // Offset: 0x9482CC
     void UpdateColor(::Facebook::WitAi::Lib::WitResponseNode* commandResult);
     // public System.Void UpdateColor(System.String[] results)
-    // Offset: 0x13338F8
+    // Offset: 0x94854C
     void UpdateColor(::ArrayW<::StringW> results);
     // public System.Void UpdateColor(System.String colorName, System.String shape)
-    // Offset: 0x133370C
+    // Offset: 0x948360
     void UpdateColor(::StringW colorName, ::StringW shape);
     // public System.Void .ctor()
-    // Offset: 0x1333934
+    // Offset: 0x948588
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

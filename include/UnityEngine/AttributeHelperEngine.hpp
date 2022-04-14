@@ -58,22 +58,22 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.RequireComponent[] _requireComponentArray
     static void _set__requireComponentArray(::ArrayW<::UnityEngine::RequireComponent*> value);
     // static private System.Void .cctor()
-    // Offset: 0xE31668
+    // Offset: 0x111DC2C
     static void _cctor();
     // static private System.Type GetParentTypeDisallowingMultipleInclusion(System.Type type)
-    // Offset: 0xE30F3C
+    // Offset: 0x111D500
     static ::System::Type* GetParentTypeDisallowingMultipleInclusion(::System::Type* type);
     // static private System.Type[] GetRequiredComponents(System.Type klass)
-    // Offset: 0xE31050
+    // Offset: 0x111D614
     static ::ArrayW<::System::Type*> GetRequiredComponents(::System::Type* klass);
     // static private System.Int32 GetExecuteMode(System.Type klass)
-    // Offset: 0xE313C0
+    // Offset: 0x111D984
     static int GetExecuteMode(::System::Type* klass);
     // static private System.Int32 CheckIsEditorScript(System.Type klass)
-    // Offset: 0xE314E0
+    // Offset: 0x111DAA4
     static int CheckIsEditorScript(::System::Type* klass);
     // static private System.Int32 GetDefaultExecutionOrderFor(System.Type klass)
-    // Offset: 0xE315DC
+    // Offset: 0x111DBA0
     static int GetDefaultExecutionOrderFor(::System::Type* klass);
     // static private T GetCustomAttributeOfType(System.Type klass)
     // Offset: 0xFFFFFFFFFFFFFFFF

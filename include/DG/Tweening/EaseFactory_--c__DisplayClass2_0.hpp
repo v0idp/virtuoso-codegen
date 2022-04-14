@@ -31,15 +31,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class EaseFactory::$$c__DisplayClass2_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Single motionDelay
     // Size: 0x4
     // Offset: 0x10
@@ -56,14 +48,14 @@ namespace DG::Tweening {
     static_assert(sizeof(::DG::Tweening::EaseFunction*) == 0x8);
     public:
     // Get instance field reference: public System.Single motionDelay
-    float& dyn_motionDelay();
+    [[deprecated]] float& dyn_motionDelay();
     // Get instance field reference: public DG.Tweening.EaseFunction customEase
-    ::DG::Tweening::EaseFunction*& dyn_customEase();
+    [[deprecated]] ::DG::Tweening::EaseFunction*& dyn_customEase();
     // System.Single <StopMotion>b__0(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x126B10C
+    // Offset: 0x18634B0
     float $StopMotion$b__0(float time, float duration, float overshootOrAmplitude, float period);
     // public System.Void .ctor()
-    // Offset: 0x126B104
+    // Offset: 0x18634A8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

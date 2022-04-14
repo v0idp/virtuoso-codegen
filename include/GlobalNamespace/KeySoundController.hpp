@@ -47,15 +47,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::KeySoundController::$PlayKeySound$d__2
     class $PlayKeySound$d__2;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.GameObject KeySoundPlayer
     // Size: 0x8
     // Offset: 0x18
@@ -66,15 +58,15 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject KeySoundPlayer
-    ::UnityEngine::GameObject*& dyn_KeySoundPlayer();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_KeySoundPlayer();
     // public System.Void StartKeySound(UnityEngine.Transform keyTransform)
-    // Offset: 0x1388B88
+    // Offset: 0x194C454
     void StartKeySound(::UnityEngine::Transform* keyTransform);
     // private System.Collections.IEnumerator PlayKeySound(UnityEngine.Transform keyTransform)
-    // Offset: 0x1388C1C
+    // Offset: 0x194C4E8
     ::System::Collections::IEnumerator* PlayKeySound(::UnityEngine::Transform* keyTransform);
     // public System.Void .ctor()
-    // Offset: 0x1388C94
+    // Offset: 0x194C560
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

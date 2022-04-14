@@ -74,17 +74,17 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVRPlugin/InsightPassthroughStyleFlags Flags
-    ::GlobalNamespace::OVRPlugin::InsightPassthroughStyleFlags& dyn_Flags();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::InsightPassthroughStyleFlags& dyn_Flags();
     // Get instance field reference: public System.Single TextureOpacityFactor
-    float& dyn_TextureOpacityFactor();
+    [[deprecated]] float& dyn_TextureOpacityFactor();
     // Get instance field reference: public OVRPlugin/Colorf EdgeColor
-    ::GlobalNamespace::OVRPlugin::Colorf& dyn_EdgeColor();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Colorf& dyn_EdgeColor();
     // Get instance field reference: public OVRPlugin/InsightPassthroughColorMapType TextureColorMapType
-    ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType& dyn_TextureColorMapType();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType& dyn_TextureColorMapType();
     // Get instance field reference: public System.UInt32 TextureColorMapDataSize
-    uint& dyn_TextureColorMapDataSize();
+    [[deprecated]] uint& dyn_TextureColorMapDataSize();
     // Get instance field reference: public System.IntPtr TextureColorMapData
-    ::System::IntPtr& dyn_TextureColorMapData();
+    [[deprecated]] ::System::IntPtr& dyn_TextureColorMapData();
   }; // OVRPlugin/InsightPassthroughStyle
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::InsightPassthroughStyle), 32 + sizeof(::System::IntPtr)> __GlobalNamespace_OVRPlugin_InsightPassthroughStyleSizeCheck;

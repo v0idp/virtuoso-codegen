@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AdjustableMeshTintAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.AdjustableMeshTintBehaviour template
     // Size: 0x8
     // Offset: 0x18
@@ -81,13 +73,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.AdjustableMeshTintBehaviour template
-    ::VROSC::AdjustableMeshTintBehaviour*& dyn_template();
+    [[deprecated]] ::VROSC::AdjustableMeshTintBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.AdjustableMesh> _mesh
-    ::UnityEngine::ExposedReference_1<::VROSC::AdjustableMesh*>& dyn__mesh();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::AdjustableMesh*>& dyn__mesh();
     // Get instance field reference: public VROSC.AnimatedAppear/VROSC.Mode mode
-    ::VROSC::AnimatedAppear::Mode& dyn_mode();
+    [[deprecated]] ::VROSC::AnimatedAppear::Mode& dyn_mode();
     // public System.Void .ctor()
-    // Offset: 0x136A080
+    // Offset: 0x9689C0
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -99,7 +91,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshTintAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0x1369F04
+    // Offset: 0x968844
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

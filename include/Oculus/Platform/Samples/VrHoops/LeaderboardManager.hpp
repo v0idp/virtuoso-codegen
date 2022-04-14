@@ -64,15 +64,7 @@ namespace Oculus::Platform::Samples::VrHoops {
     class OnMostWinsLeaderboardUpdated;
     // Nested type: ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated
     class OnHighScoreLeaderboardUpdated;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single m_nextCheckTime
     // Size: 0x4
     // Offset: 0x10
@@ -153,47 +145,47 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.Single LEADERBOARD_POLL_FREQ
     static void _set_LEADERBOARD_POLL_FREQ(float value);
     // Get instance field reference: private System.Single m_nextCheckTime
-    float& dyn_m_nextCheckTime();
+    [[deprecated]] float& dyn_m_nextCheckTime();
     // Get instance field reference: private System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry> m_mostWins
-    ::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>*& dyn_m_mostWins();
+    [[deprecated]] ::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>*& dyn_m_mostWins();
     // Get instance field reference: private System.Boolean m_foundLocalUserMostWinsEntry
-    bool& dyn_m_foundLocalUserMostWinsEntry();
+    [[deprecated]] bool& dyn_m_foundLocalUserMostWinsEntry();
     // Get instance field reference: private System.Int64 m_numWins
-    int64_t& dyn_m_numWins();
+    [[deprecated]] int64_t& dyn_m_numWins();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnMostWinsLeaderboardUpdated m_mostWinsCallback
-    ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnMostWinsLeaderboardUpdated*& dyn_m_mostWinsCallback();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnMostWinsLeaderboardUpdated*& dyn_m_mostWinsCallback();
     // Get instance field reference: private System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry> m_highScores
-    ::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>*& dyn_m_highScores();
+    [[deprecated]] ::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>*& dyn_m_highScores();
     // Get instance field reference: private System.Boolean m_foundLocalUserHighScore
-    bool& dyn_m_foundLocalUserHighScore();
+    [[deprecated]] bool& dyn_m_foundLocalUserHighScore();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnHighScoreLeaderboardUpdated m_highScoreCallback
-    ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated*& dyn_m_highScoreCallback();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated*& dyn_m_highScoreCallback();
     // public System.Void set_MostWinsLeaderboardUpdatedCallback(Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnMostWinsLeaderboardUpdated value)
-    // Offset: 0x96998C
+    // Offset: 0xB3BD28
     void set_MostWinsLeaderboardUpdatedCallback(::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnMostWinsLeaderboardUpdated* value);
     // public System.Void set_HighScoreLeaderboardUpdatedCallback(Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnHighScoreLeaderboardUpdated value)
-    // Offset: 0x96A1B8
+    // Offset: 0xB3C554
     void set_HighScoreLeaderboardUpdatedCallback(::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated* value);
     // public System.Void CheckForUpdates()
-    // Offset: 0x969634
+    // Offset: 0xB3B9D0
     void CheckForUpdates();
     // private System.Void QueryMostWinsLeaderboard()
-    // Offset: 0x9696F4
+    // Offset: 0xB3BA90
     void QueryMostWinsLeaderboard();
     // private System.Void MostWinsGetEntriesCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.LeaderboardEntryList> msg)
-    // Offset: 0x969B44
+    // Offset: 0xB3BEE0
     void MostWinsGetEntriesCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::LeaderboardEntryList*>* msg);
     // private System.Void QueryHighScoreLeaderboard()
-    // Offset: 0x969840
+    // Offset: 0xB3BBDC
     void QueryHighScoreLeaderboard();
     // private System.Void HighestScoreGetEntriesCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.LeaderboardEntryList> msg)
-    // Offset: 0x96A1C0
+    // Offset: 0xB3C55C
     void HighestScoreGetEntriesCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::LeaderboardEntryList*>* msg);
     // public System.Void SubmitMatchScores(System.Boolean wonMatch, System.UInt32 score)
-    // Offset: 0x96A5D0
+    // Offset: 0xB3C96C
     void SubmitMatchScores(bool wonMatch, uint score);
     // public System.Void .ctor()
-    // Offset: 0x96A848
+    // Offset: 0xB3CBE4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

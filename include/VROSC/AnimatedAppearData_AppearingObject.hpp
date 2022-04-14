@@ -34,15 +34,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AnimatedAppearData::AppearingObject : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.MinMaxVector2 _minMax
     // Size: 0x8
     // Offset: 0x10
@@ -57,18 +49,18 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: protected VROSC.MinMaxVector2 _minMax
-    ::VROSC::MinMaxVector2*& dyn__minMax();
+    [[deprecated]] ::VROSC::MinMaxVector2*& dyn__minMax();
     // Get instance field reference: protected UnityEngine.Vector2 _appear
-    ::UnityEngine::Vector2& dyn__appear();
+    [[deprecated]] ::UnityEngine::Vector2& dyn__appear();
     // protected System.Void .ctor(VROSC.MinMaxVector2 minMax)
-    // Offset: 0x1359AD4
+    // Offset: 0x9563D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimatedAppearData::AppearingObject* New_ctor(::VROSC::MinMaxVector2* minMax) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearData::AppearingObject::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearData::AppearingObject*, creationType>(minMax)));
     }
     // public System.Void Update(UnityEngine.Vector2 amount, System.Boolean useFlash, System.Boolean force, VROSC.AnimatedAppear/VROSC.Mode mode)
-    // Offset: 0x1359B48
+    // Offset: 0x956444
     void Update(::UnityEngine::Vector2 amount, bool useFlash, bool force, ::VROSC::AnimatedAppear::Mode mode);
     // protected System.Void UpdateObject(VROSC.AnimatedAppear/VROSC.Mode mode, System.Boolean useFlash)
     // Offset: 0xFFFFFFFFFFFFFFFF

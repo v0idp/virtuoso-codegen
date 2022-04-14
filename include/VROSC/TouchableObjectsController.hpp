@@ -51,15 +51,7 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class TouchableObjectsController : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<VROSC.TouchableObject> _notes
     // Size: 0x8
     // Offset: 0x18
@@ -96,7 +88,7 @@ namespace VROSC {
     float size;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [BitMaskAttribute] Offset: 0x6739C8
+    // [BitMaskAttribute] Offset: 0x789D3C
     // private VROSC.Scale previewScale
     // Size: 0x4
     // Offset: 0x38
@@ -107,33 +99,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TouchableObject> _notes
-    ::System::Collections::Generic::List_1<::VROSC::TouchableObject*>*& dyn__notes();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TouchableObject*>*& dyn__notes();
     // Get instance field reference: private UnityEngine.Transform _checkPosition
-    ::UnityEngine::Transform*& dyn__checkPosition();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__checkPosition();
     // Get instance field reference: private System.Int32 _height
-    int& dyn__height();
+    [[deprecated]] int& dyn__height();
     // Get instance field reference: private System.Int32 _width
-    int& dyn__width();
+    [[deprecated]] int& dyn__width();
     // Get instance field reference: private System.Int32 _depth
-    int& dyn__depth();
+    [[deprecated]] int& dyn__depth();
     // Get instance field reference: private System.Single _size
-    float& dyn__size();
+    [[deprecated]] float& dyn__size();
     // Get instance field reference: private VROSC.Scale previewScale
-    ::VROSC::Scale& dyn_previewScale();
+    [[deprecated]] ::VROSC::Scale& dyn_previewScale();
     // public System.Void Setup()
-    // Offset: 0x1401A00
+    // Offset: 0xA29B24
     void Setup();
     // public System.Void ProcessFrame(System.Boolean updatePlaying, System.Boolean playing, VROSC.NoteBoard/VROSC.PlayAxis playAxis)
-    // Offset: 0x1401E08
+    // Offset: 0xA29F2C
     void ProcessFrame(bool updatePlaying, bool playing, ::VROSC::NoteBoard::PlayAxis playAxis);
     // public System.Void UpdateAll()
-    // Offset: 0x1402120
+    // Offset: 0xA2A244
     void UpdateAll();
     // private System.Void OnDrawGizmosSelected()
-    // Offset: 0x1402234
+    // Offset: 0xA2A358
     void OnDrawGizmosSelected();
     // public System.Void .ctor()
-    // Offset: 0x14022E4
+    // Offset: 0xA2A408
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

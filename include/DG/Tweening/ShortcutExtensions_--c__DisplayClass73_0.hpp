@@ -33,15 +33,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ShortcutExtensions::$$c__DisplayClass73_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Quaternion to
     // Size: 0x10
     // Offset: 0x10
@@ -56,17 +48,17 @@ namespace DG::Tweening {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Quaternion to
-    ::UnityEngine::Quaternion& dyn_to();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_to();
     // Get instance field reference: public UnityEngine.Transform target
-    ::UnityEngine::Transform*& dyn_target();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_target();
     // UnityEngine.Quaternion <DOBlendableLocalRotateBy>b__0()
-    // Offset: 0x126D990
+    // Offset: 0x1865D34
     ::UnityEngine::Quaternion $DOBlendableLocalRotateBy$b__0();
     // System.Void <DOBlendableLocalRotateBy>b__1(UnityEngine.Quaternion x)
-    // Offset: 0x126D99C
+    // Offset: 0x1865D40
     void $DOBlendableLocalRotateBy$b__1(::UnityEngine::Quaternion x);
     // public System.Void .ctor()
-    // Offset: 0x126D988
+    // Offset: 0x1865D2C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -90,7 +90,7 @@ namespace UnityEngine::Analytics {
     // Set static field: static public UnityEngine.Analytics.AnalyticsResult UnsupportedPlatform
     static void _set_UnsupportedPlatform(::UnityEngine::Analytics::AnalyticsResult value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // UnityEngine.Analytics.AnalyticsResult
   #pragma pack(pop)
   static check_size<sizeof(AnalyticsResult), 0 + sizeof(int)> __UnityEngine_Analytics_AnalyticsResultSizeCheck;

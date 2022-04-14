@@ -29,15 +29,7 @@ namespace UnityEngine {
   // [TokenAttribute] Offset: FFFFFFFF
   class AddComponentMenu : public ::System::Attribute {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String m_AddComponentMenu
     // Size: 0x8
     // Offset: 0x10
@@ -52,18 +44,18 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String m_AddComponentMenu
-    ::StringW& dyn_m_AddComponentMenu();
+    [[deprecated]] ::StringW& dyn_m_AddComponentMenu();
     // Get instance field reference: private System.Int32 m_Ordering
-    int& dyn_m_Ordering();
+    [[deprecated]] int& dyn_m_Ordering();
     // public System.Void .ctor(System.String menuName)
-    // Offset: 0xE2EB54
+    // Offset: 0x111B014
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AddComponentMenu* New_ctor(::StringW menuName) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AddComponentMenu::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AddComponentMenu*, creationType>(menuName)));
     }
     // public System.Void .ctor(System.String menuName, System.Int32 order)
-    // Offset: 0xE2EB84
+    // Offset: 0x111B044
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AddComponentMenu* New_ctor(::StringW menuName, int order) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AddComponentMenu::.ctor");

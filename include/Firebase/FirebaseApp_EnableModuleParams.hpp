@@ -24,30 +24,22 @@ namespace Firebase {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirebaseApp::EnableModuleParams : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
-    // [DebuggerBrowsableAttribute] Offset: 0x5D8B34
+    // [DebuggerBrowsableAttribute] Offset: 0x6EA678
     // private System.String <CppModuleName>k__BackingField
     // Size: 0x8
     // Offset: 0x10
     ::StringW CppModuleName;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [DebuggerBrowsableAttribute] Offset: 0x5D8B70
+    // [DebuggerBrowsableAttribute] Offset: 0x6EA6B4
     // private System.String <CSharpClassName>k__BackingField
     // Size: 0x8
     // Offset: 0x18
     ::StringW CSharpClassName;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [DebuggerBrowsableAttribute] Offset: 0x5D8BAC
+    // [DebuggerBrowsableAttribute] Offset: 0x6EA6F0
     // private System.Boolean <AlwaysEnable>k__BackingField
     // Size: 0x1
     // Offset: 0x20
@@ -56,31 +48,31 @@ namespace Firebase {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String <CppModuleName>k__BackingField
-    ::StringW& dyn_$CppModuleName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$CppModuleName$k__BackingField();
     // Get instance field reference: private System.String <CSharpClassName>k__BackingField
-    ::StringW& dyn_$CSharpClassName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$CSharpClassName$k__BackingField();
     // Get instance field reference: private System.Boolean <AlwaysEnable>k__BackingField
-    bool& dyn_$AlwaysEnable$k__BackingField();
+    [[deprecated]] bool& dyn_$AlwaysEnable$k__BackingField();
     // public System.String get_CppModuleName()
-    // Offset: 0x129DC94
+    // Offset: 0x188BB7C
     ::StringW get_CppModuleName();
     // public System.Void set_CppModuleName(System.String value)
-    // Offset: 0x129DC9C
+    // Offset: 0x188BB84
     void set_CppModuleName(::StringW value);
     // public System.String get_CSharpClassName()
-    // Offset: 0x129DCA4
+    // Offset: 0x188BB8C
     ::StringW get_CSharpClassName();
     // public System.Void set_CSharpClassName(System.String value)
-    // Offset: 0x129DCAC
+    // Offset: 0x188BB94
     void set_CSharpClassName(::StringW value);
     // public System.Boolean get_AlwaysEnable()
-    // Offset: 0x129DCB4
+    // Offset: 0x188BB9C
     bool get_AlwaysEnable();
     // public System.Void set_AlwaysEnable(System.Boolean value)
-    // Offset: 0x129DCBC
+    // Offset: 0x188BBA4
     void set_AlwaysEnable(bool value);
     // public System.Void .ctor(System.String csharp, System.String cpp, System.Boolean always)
-    // Offset: 0x1298D68
+    // Offset: 0x18878DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseApp::EnableModuleParams* New_ctor(::StringW csharp, ::StringW cpp, bool always) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::FirebaseApp::EnableModuleParams::.ctor");

@@ -79,7 +79,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarCapabilities All
     static void _set_All(::GlobalNamespace::ovrAvatarCapabilities value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // ovrAvatarCapabilities
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarCapabilities), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarCapabilitiesSizeCheck;

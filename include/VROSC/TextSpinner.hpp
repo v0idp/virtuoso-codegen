@@ -55,15 +55,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TextSpinner : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <SelectedValue>k__BackingField
     // Size: 0x4
     // Offset: 0x18
@@ -126,7 +118,7 @@ namespace VROSC {
     ::UnityEngine::AnimationCurve* scaleCurve;
     // Field size check
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
-    // [HeaderAttribute] Offset: 0x674118
+    // [HeaderAttribute] Offset: 0x78A4AC
     // private VROSC.SimpleHaptic _hapticFeedBack
     // Size: 0x8
     // Offset: 0x58
@@ -155,53 +147,53 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 <SelectedValue>k__BackingField
-    int& dyn_$SelectedValue$k__BackingField();
+    [[deprecated]] int& dyn_$SelectedValue$k__BackingField();
     // Get instance field reference: private System.Int32 _maxDisplay
-    int& dyn__maxDisplay();
+    [[deprecated]] int& dyn__maxDisplay();
     // Get instance field reference: private VROSC.TextSpinnerItem _valuePrefab
-    ::VROSC::TextSpinnerItem*& dyn__valuePrefab();
+    [[deprecated]] ::VROSC::TextSpinnerItem*& dyn__valuePrefab();
     // Get instance field reference: private VROSC.MinMaxFloat _rotationRange
-    ::VROSC::MinMaxFloat*& dyn__rotationRange();
+    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__rotationRange();
     // Get instance field reference: private System.Single _maxVisibleAngle
-    float& dyn__maxVisibleAngle();
+    [[deprecated]] float& dyn__maxVisibleAngle();
     // Get instance field reference: private System.Single _valueDistance
-    float& dyn__valueDistance();
+    [[deprecated]] float& dyn__valueDistance();
     // Get instance field reference: private System.Single _valueTickAngle
-    float& dyn__valueTickAngle();
+    [[deprecated]] float& dyn__valueTickAngle();
     // Get instance field reference: private UnityEngine.Transform _rotator
-    ::UnityEngine::Transform*& dyn__rotator();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__rotator();
     // Get instance field reference: private UnityEngine.AnimationCurve _rotationCurve
-    ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _scaleCurve
-    ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
     // Get instance field reference: private VROSC.SimpleHaptic _hapticFeedBack
-    ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TextSpinnerItem> _textLines
-    ::System::Collections::Generic::List_1<::VROSC::TextSpinnerItem*>*& dyn__textLines();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TextSpinnerItem*>*& dyn__textLines();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _textValues
-    ::System::Collections::Generic::List_1<::StringW>*& dyn__textValues();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__textValues();
     // Get instance field reference: private VROSC.InputDevice _inputDevice
-    ::VROSC::InputDevice*& dyn__inputDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__inputDevice();
     // public System.Int32 get_SelectedValue()
-    // Offset: 0x13FD00C
+    // Offset: 0xA2500C
     int get_SelectedValue();
     // private System.Void set_SelectedValue(System.Int32 value)
-    // Offset: 0x13FD004
+    // Offset: 0xA25004
     void set_SelectedValue(int value);
     // public System.Void SetValues(System.Collections.Generic.List`1<System.String> texts, VROSC.InputDevice inputDevice)
-    // Offset: 0x13FD014
+    // Offset: 0xA25014
     void SetValues(::System::Collections::Generic::List_1<::StringW>* texts, ::VROSC::InputDevice* inputDevice);
     // private System.Void ClearTextLines()
-    // Offset: 0x13FD194
+    // Offset: 0xA25194
     void ClearTextLines();
     // public System.Void UpdateValues(System.Single currentValue)
-    // Offset: 0x13FD458
+    // Offset: 0xA25458
     void UpdateValues(float currentValue);
     // private System.Void SetSelectedValue(System.Int32 newSelectedValue)
-    // Offset: 0x13FD8E8
+    // Offset: 0xA258E8
     void SetSelectedValue(int newSelectedValue);
     // public System.Void .ctor()
-    // Offset: 0x13FD9A0
+    // Offset: 0xA259A0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

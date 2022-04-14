@@ -32,28 +32,31 @@ namespace System {
   class ParseNumbers : public ::Il2CppObject {
     public:
     // static public System.Int32 StringToInt(System.String value, System.Int32 fromBase, System.Int32 flags)
-    // Offset: 0x112AB24
+    // Offset: 0x14C8768
     static int StringToInt(::StringW value, int fromBase, int flags);
     // static public System.Int32 StringToInt(System.String value, System.Int32 fromBase, System.Int32 flags, System.Int32* parsePos)
-    // Offset: 0x112AB2C
+    // Offset: 0x14C8770
     static int StringToInt(::StringW value, int fromBase, int flags, int* parsePos);
+    // static public System.Int64 StringToLong(System.String value, System.Int32 fromBase, System.Int32 flags)
+    // Offset: 0x14C8B94
+    static int64_t StringToLong(::StringW value, int fromBase, int flags);
     // static public System.Int64 StringToLong(System.String value, System.Int32 fromBase, System.Int32 flags, System.Int32* parsePos)
-    // Offset: 0x112AF58
+    // Offset: 0x14C8B9C
     static int64_t StringToLong(::StringW value, int fromBase, int flags, int* parsePos);
     // static public System.String IntToString(System.Int32 value, System.Int32 toBase, System.Int32 width, System.Char paddingChar, System.Int32 flags)
-    // Offset: 0x112B3B0
+    // Offset: 0x14C8FEC
     static ::StringW IntToString(int value, int toBase, int width, ::Il2CppChar paddingChar, int flags);
     // static private System.Void EndianSwap(ref System.Byte[] value)
-    // Offset: 0x112BAEC
+    // Offset: 0x14C9728
     static void EndianSwap(ByRef<::ArrayW<uint8_t>> value);
     // static private System.Text.StringBuilder ConvertToBase2(System.Byte[] value)
-    // Offset: 0x112B5F0
+    // Offset: 0x14C922C
     static ::System::Text::StringBuilder* ConvertToBase2(::ArrayW<uint8_t> value);
     // static private System.Text.StringBuilder ConvertToBase8(System.Byte[] value)
-    // Offset: 0x112B73C
+    // Offset: 0x14C9378
     static ::System::Text::StringBuilder* ConvertToBase8(::ArrayW<uint8_t> value);
     // static private System.Text.StringBuilder ConvertToBase16(System.Byte[] value)
-    // Offset: 0x112B928
+    // Offset: 0x14C9564
     static ::System::Text::StringBuilder* ConvertToBase16(::ArrayW<uint8_t> value);
   }; // System.ParseNumbers
   #pragma pack(pop)
@@ -80,6 +83,17 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::S
     static auto* flags = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     static auto* parsePos = &il2cpp_functions::Class_GetPtrClass(::il2cpp_utils::GetClassFromName("System", "Int32"))->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::ParseNumbers*), "StringToInt", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value, fromBase, flags, parsePos});
+  }
+};
+// Writing MetadataGetter for method: System::ParseNumbers::StringToLong
+// Il2CppName: StringToLong
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int64_t (*)(::StringW, int, int)>(&System::ParseNumbers::StringToLong)> {
+  static const MethodInfo* get() {
+    static auto* value = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    static auto* fromBase = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
+    static auto* flags = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::ParseNumbers*), "StringToLong", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value, fromBase, flags});
   }
 };
 // Writing MetadataGetter for method: System::ParseNumbers::StringToLong

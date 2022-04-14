@@ -30,10 +30,10 @@ namespace UnityEngine {
   class GUILayout : public ::Il2CppObject {
     public:
     // static public UnityEngine.GUILayoutOption Width(System.Single width)
-    // Offset: 0x128B8D8
+    // Offset: 0x1878E48
     static ::UnityEngine::GUILayoutOption* Width(float width);
     // static public UnityEngine.GUILayoutOption Height(System.Single height)
-    // Offset: 0x128B970
+    // Offset: 0x1878EE0
     static ::UnityEngine::GUILayoutOption* Height(float height);
   }; // UnityEngine.GUILayout
   #pragma pack(pop)

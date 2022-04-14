@@ -35,15 +35,7 @@ namespace System::Threading {
   // [TokenAttribute] Offset: FFFFFFFF
   class ThreadPoolWorkQueueThreadLocals : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.Threading.ThreadPoolWorkQueue workQueue
     // Size: 0x8
     // Offset: 0x10
@@ -68,23 +60,23 @@ namespace System::Threading {
     // Set static field: static public System.Threading.ThreadPoolWorkQueueThreadLocals threadLocals
     static void _set_threadLocals(::System::Threading::ThreadPoolWorkQueueThreadLocals* value);
     // Get instance field reference: public readonly System.Threading.ThreadPoolWorkQueue workQueue
-    ::System::Threading::ThreadPoolWorkQueue*& dyn_workQueue();
+    [[deprecated]] ::System::Threading::ThreadPoolWorkQueue*& dyn_workQueue();
     // Get instance field reference: public readonly System.Threading.ThreadPoolWorkQueue/System.Threading.WorkStealingQueue workStealingQueue
-    ::System::Threading::ThreadPoolWorkQueue::WorkStealingQueue*& dyn_workStealingQueue();
+    [[deprecated]] ::System::Threading::ThreadPoolWorkQueue::WorkStealingQueue*& dyn_workStealingQueue();
     // Get instance field reference: public readonly System.Random random
-    ::System::Random*& dyn_random();
+    [[deprecated]] ::System::Random*& dyn_random();
     // public System.Void .ctor(System.Threading.ThreadPoolWorkQueue tpq)
-    // Offset: 0xC90610
+    // Offset: 0x11DC328
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ThreadPoolWorkQueueThreadLocals* New_ctor(::System::Threading::ThreadPoolWorkQueue* tpq) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::ThreadPoolWorkQueueThreadLocals::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ThreadPoolWorkQueueThreadLocals*, creationType>(tpq)));
     }
     // private System.Void CleanUp()
-    // Offset: 0xC910AC
+    // Offset: 0x11DCDC4
     void CleanUp();
     // protected override System.Void Finalize()
-    // Offset: 0xC911F0
+    // Offset: 0x11DCF08
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

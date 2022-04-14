@@ -32,15 +32,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InputDevice::HeldInputNode : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.ControllerInputNode InputNode
     // Size: 0x8
     // Offset: 0x10
@@ -55,11 +47,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     public:
     // Get instance field reference: public VROSC.ControllerInputNode InputNode
-    ::VROSC::ControllerInputNode*& dyn_InputNode();
+    [[deprecated]] ::VROSC::ControllerInputNode*& dyn_InputNode();
     // Get instance field reference: public VROSC.TriggerButton HoldingButton
-    ::VROSC::TriggerButton& dyn_HoldingButton();
+    [[deprecated]] ::VROSC::TriggerButton& dyn_HoldingButton();
     // public System.Void .ctor(VROSC.ControllerInputNode inputNode, VROSC.TriggerButton holdingButton)
-    // Offset: 0x13D0CF8
+    // Offset: 0x1958944
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InputDevice::HeldInputNode* New_ctor(::VROSC::ControllerInputNode* inputNode, ::VROSC::TriggerButton holdingButton) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputDevice::HeldInputNode::.ctor");

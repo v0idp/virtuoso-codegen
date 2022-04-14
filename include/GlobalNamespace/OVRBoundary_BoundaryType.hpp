@@ -38,7 +38,7 @@ namespace GlobalNamespace {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [ObsoleteAttribute] Offset: 0x58BD40
+    // [ObsoleteAttribute] Offset: 0x696834
     // static field const value: static public OVRBoundary/BoundaryType OuterBoundary
     static constexpr const int OuterBoundary = 1;
     // Get static field: static public OVRBoundary/BoundaryType OuterBoundary
@@ -52,7 +52,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRBoundary/BoundaryType PlayArea
     static void _set_PlayArea(::GlobalNamespace::OVRBoundary::BoundaryType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // OVRBoundary/BoundaryType
   #pragma pack(pop)
   static check_size<sizeof(OVRBoundary::BoundaryType), 0 + sizeof(int)> __GlobalNamespace_OVRBoundary_BoundaryTypeSizeCheck;

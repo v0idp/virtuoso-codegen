@@ -90,15 +90,7 @@ namespace VROSC {
     class HeldInputNode;
     // Nested type: ::VROSC::InputDevice::HoveredInputNode
     class HoveredInputNode;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UI.UIInputHand _uIInput
     // Size: 0x8
     // Offset: 0x18
@@ -297,210 +289,210 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Boolean> GrabDisabledChanged
     static void _set_GrabDisabledChanged(::System::Action_1<bool>* value);
     // Get instance field reference: private VROSC.UI.UIInputHand _uIInput
-    ::VROSC::UI::UIInputHand*& dyn__uIInput();
+    [[deprecated]] ::VROSC::UI::UIInputHand*& dyn__uIInput();
     // Get instance field reference: private VROSC.InputVisualizer _inputVisualizer
-    ::VROSC::InputVisualizer*& dyn__inputVisualizer();
+    [[deprecated]] ::VROSC::InputVisualizer*& dyn__inputVisualizer();
     // Get instance field reference: private UnityEngine.Transform _centerPoint
-    ::UnityEngine::Transform*& dyn__centerPoint();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__centerPoint();
     // Get instance field reference: private VROSC.PredictiveHitter _predictiveHitter
-    ::VROSC::PredictiveHitter*& dyn__predictiveHitter();
+    [[deprecated]] ::VROSC::PredictiveHitter*& dyn__predictiveHitter();
     // Get instance field reference: private VROSC.KeyHitter _keyBoardHitter
-    ::VROSC::KeyHitter*& dyn__keyBoardHitter();
+    [[deprecated]] ::VROSC::KeyHitter*& dyn__keyBoardHitter();
     // Get instance field reference: private VROSC.HighlightControllerComponents _highLight
-    ::VROSC::HighlightControllerComponents*& dyn__highLight();
+    [[deprecated]] ::VROSC::HighlightControllerComponents*& dyn__highLight();
     // Get instance field reference: private VROSC.TutorialInputDevice _tutorial
-    ::VROSC::TutorialInputDevice*& dyn__tutorial();
+    [[deprecated]] ::VROSC::TutorialInputDevice*& dyn__tutorial();
     // Get instance field reference: private VROSC.DashboardSpawnPoint _dashboardSpawnPoint
-    ::VROSC::DashboardSpawnPoint*& dyn__dashboardSpawnPoint();
+    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn__dashboardSpawnPoint();
     // Get instance field reference: private VROSC.ControllerRecordingUI _recordingUI
-    ::VROSC::ControllerRecordingUI*& dyn__recordingUI();
+    [[deprecated]] ::VROSC::ControllerRecordingUI*& dyn__recordingUI();
     // Get instance field reference: private VROSC.UIHelpers <UIHelpers>k__BackingField
-    ::VROSC::UIHelpers*& dyn_$UIHelpers$k__BackingField();
+    [[deprecated]] ::VROSC::UIHelpers*& dyn_$UIHelpers$k__BackingField();
     // Get instance field reference: private VROSC.InputSettings _inputSettings
-    ::VROSC::InputSettings*& dyn__inputSettings();
+    [[deprecated]] ::VROSC::InputSettings*& dyn__inputSettings();
     // Get instance field reference: private System.Int32 _overlapColliderAllocSize
-    int& dyn__overlapColliderAllocSize();
+    [[deprecated]] int& dyn__overlapColliderAllocSize();
     // Get instance field reference: private System.Single _overlapSize
-    float& dyn__overlapSize();
+    [[deprecated]] float& dyn__overlapSize();
     // Get instance field reference: private VROSC.HandType <HandType>k__BackingField
-    ::VROSC::HandType& dyn_$HandType$k__BackingField();
+    [[deprecated]] ::VROSC::HandType& dyn_$HandType$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <TouchPointTransform>k__BackingField
-    ::UnityEngine::Transform*& dyn_$TouchPointTransform$k__BackingField();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_$TouchPointTransform$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <InteractionPointTransform>k__BackingField
-    ::UnityEngine::Transform*& dyn_$InteractionPointTransform$k__BackingField();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_$InteractionPointTransform$k__BackingField();
     // Get instance field reference: private UnityEngine.Collider[] _hoveredColliders
-    ::ArrayW<::UnityEngine::Collider*>& dyn__hoveredColliders();
+    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__hoveredColliders();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.InputDevice/VROSC.HoveredInputNode> <HoveredInputNodes>k__BackingField
-    ::System::Collections::Generic::List_1<::VROSC::InputDevice::HoveredInputNode*>*& dyn_$HoveredInputNodes$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::InputDevice::HoveredInputNode*>*& dyn_$HoveredInputNodes$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.InputDevice/VROSC.HeldInputNode> <HeldInputNodes>k__BackingField
-    ::System::Collections::Generic::List_1<::VROSC::InputDevice::HeldInputNode*>*& dyn_$HeldInputNodes$k__BackingField();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::InputDevice::HeldInputNode*>*& dyn_$HeldInputNodes$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 <StickPadValue>k__BackingField
-    ::UnityEngine::Vector2& dyn_$StickPadValue$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector2& dyn_$StickPadValue$k__BackingField();
     // Get instance field reference: private System.Single <IndexTriggerValue>k__BackingField
-    float& dyn_$IndexTriggerValue$k__BackingField();
+    [[deprecated]] float& dyn_$IndexTriggerValue$k__BackingField();
     // Get instance field reference: private System.Single <GripTriggerValue>k__BackingField
-    float& dyn_$GripTriggerValue$k__BackingField();
+    [[deprecated]] float& dyn_$GripTriggerValue$k__BackingField();
     // Get instance field reference: private System.Boolean <IndexAsButtonPressed>k__BackingField
-    bool& dyn_$IndexAsButtonPressed$k__BackingField();
+    [[deprecated]] bool& dyn_$IndexAsButtonPressed$k__BackingField();
     // Get instance field reference: private System.Boolean <LastIndexAsButtonPressed>k__BackingField
-    bool& dyn_$LastIndexAsButtonPressed$k__BackingField();
+    [[deprecated]] bool& dyn_$LastIndexAsButtonPressed$k__BackingField();
     // Get instance field reference: private System.Single <IndexAsButtonEdgeValue>k__BackingField
-    float& dyn_$IndexAsButtonEdgeValue$k__BackingField();
+    [[deprecated]] float& dyn_$IndexAsButtonEdgeValue$k__BackingField();
     // Get instance field reference: private VROSC.InputDevice <OtherController>k__BackingField
-    ::VROSC::InputDevice*& dyn_$OtherController$k__BackingField();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_$OtherController$k__BackingField();
     // Get instance field reference: private System.Boolean <AnyButtonTriggering>k__BackingField
-    bool& dyn_$AnyButtonTriggering$k__BackingField();
+    [[deprecated]] bool& dyn_$AnyButtonTriggering$k__BackingField();
     // Get instance field reference: private VROSC.InputDeviceTransformData <Data>k__BackingField
-    ::VROSC::InputDeviceTransformData*& dyn_$Data$k__BackingField();
+    [[deprecated]] ::VROSC::InputDeviceTransformData*& dyn_$Data$k__BackingField();
     // public VROSC.UI.UIInputHand get_UIInputHand()
-    // Offset: 0x8A0ECC
+    // Offset: 0x1943A58
     ::VROSC::UI::UIInputHand* get_UIInputHand();
     // public VROSC.UIHelpers get_UIHelpers()
-    // Offset: 0x8A0ED4
+    // Offset: 0x1943A60
     ::VROSC::UIHelpers* get_UIHelpers();
     // private System.Void set_UIHelpers(VROSC.UIHelpers value)
-    // Offset: 0x8A0EDC
+    // Offset: 0x1943A68
     void set_UIHelpers(::VROSC::UIHelpers* value);
     // public VROSC.HighlightControllerComponents get_HighLighting()
-    // Offset: 0x8A0EE4
+    // Offset: 0x1943A70
     ::VROSC::HighlightControllerComponents* get_HighLighting();
     // public VROSC.TutorialInputDevice get_Tutorial()
-    // Offset: 0x8A0EEC
+    // Offset: 0x1943A78
     ::VROSC::TutorialInputDevice* get_Tutorial();
     // public VROSC.DashboardSpawnPoint get_DashboardSpawnPoint()
-    // Offset: 0x8A0EF4
+    // Offset: 0x1943A80
     ::VROSC::DashboardSpawnPoint* get_DashboardSpawnPoint();
     // public VROSC.ControllerRecordingUI get_RecordingUI()
-    // Offset: 0x8A0EFC
+    // Offset: 0x1943A88
     ::VROSC::ControllerRecordingUI* get_RecordingUI();
     // public UnityEngine.Transform get_InteractionPoint()
-    // Offset: 0x8A0F04
+    // Offset: 0x1943A90
     ::UnityEngine::Transform* get_InteractionPoint();
     // public UnityEngine.Transform get_RayPoint()
-    // Offset: 0x893F94
+    // Offset: 0x1943AAC
     ::UnityEngine::Transform* get_RayPoint();
     // static public System.Boolean get_GrabDisabled()
-    // Offset: 0x8A0F20
+    // Offset: 0x1943AC8
     static bool get_GrabDisabled();
     // static private System.Void set_GrabDisabled(System.Boolean value)
-    // Offset: 0x8A0F6C
+    // Offset: 0x1943B14
     static void set_GrabDisabled(bool value);
     // public VROSC.HandType get_HandType()
-    // Offset: 0x8A0FC8
+    // Offset: 0x1943B70
     ::VROSC::HandType get_HandType();
     // private System.Void set_HandType(VROSC.HandType value)
-    // Offset: 0x8A0FC0
+    // Offset: 0x1943B68
     void set_HandType(::VROSC::HandType value);
     // public UnityEngine.Transform get_TouchPointTransform()
-    // Offset: 0x8A0FD8
+    // Offset: 0x1943B80
     ::UnityEngine::Transform* get_TouchPointTransform();
     // private System.Void set_TouchPointTransform(UnityEngine.Transform value)
-    // Offset: 0x8A0FD0
+    // Offset: 0x1943B78
     void set_TouchPointTransform(::UnityEngine::Transform* value);
     // public UnityEngine.Transform get_TrackedHandTransform()
-    // Offset: 0x8A0FE0
+    // Offset: 0x1943B88
     ::UnityEngine::Transform* get_TrackedHandTransform();
     // public UnityEngine.Transform get_InteractionPointTransform()
-    // Offset: 0x8A0FF0
+    // Offset: 0x1943B98
     ::UnityEngine::Transform* get_InteractionPointTransform();
     // private System.Void set_InteractionPointTransform(UnityEngine.Transform value)
-    // Offset: 0x8A0FE8
+    // Offset: 0x1943B90
     void set_InteractionPointTransform(::UnityEngine::Transform* value);
     // public System.Collections.Generic.List`1<VROSC.InputDevice/VROSC.HoveredInputNode> get_HoveredInputNodes()
-    // Offset: 0x8A1000
+    // Offset: 0x1943BA8
     ::System::Collections::Generic::List_1<::VROSC::InputDevice::HoveredInputNode*>* get_HoveredInputNodes();
     // private System.Void set_HoveredInputNodes(System.Collections.Generic.List`1<VROSC.InputDevice/VROSC.HoveredInputNode> value)
-    // Offset: 0x8A0FF8
+    // Offset: 0x1943BA0
     void set_HoveredInputNodes(::System::Collections::Generic::List_1<::VROSC::InputDevice::HoveredInputNode*>* value);
     // public System.Collections.Generic.List`1<VROSC.InputDevice/VROSC.HeldInputNode> get_HeldInputNodes()
-    // Offset: 0x8A1010
+    // Offset: 0x1943BB8
     ::System::Collections::Generic::List_1<::VROSC::InputDevice::HeldInputNode*>* get_HeldInputNodes();
     // private System.Void set_HeldInputNodes(System.Collections.Generic.List`1<VROSC.InputDevice/VROSC.HeldInputNode> value)
-    // Offset: 0x8A1008
+    // Offset: 0x1943BB0
     void set_HeldInputNodes(::System::Collections::Generic::List_1<::VROSC::InputDevice::HeldInputNode*>* value);
     // public UnityEngine.Vector2 get_StickPadValue()
-    // Offset: 0x8A1020
+    // Offset: 0x1943BC8
     ::UnityEngine::Vector2 get_StickPadValue();
     // private System.Void set_StickPadValue(UnityEngine.Vector2 value)
-    // Offset: 0x8A1018
+    // Offset: 0x1943BC0
     void set_StickPadValue(::UnityEngine::Vector2 value);
     // public System.Single get_IndexTriggerValue()
-    // Offset: 0x8A1030
+    // Offset: 0x1943BD8
     float get_IndexTriggerValue();
     // private System.Void set_IndexTriggerValue(System.Single value)
-    // Offset: 0x8A1028
+    // Offset: 0x1943BD0
     void set_IndexTriggerValue(float value);
     // public System.Single get_GripTriggerValue()
-    // Offset: 0x8A1040
+    // Offset: 0x1943BE8
     float get_GripTriggerValue();
     // private System.Void set_GripTriggerValue(System.Single value)
-    // Offset: 0x8A1038
+    // Offset: 0x1943BE0
     void set_GripTriggerValue(float value);
     // public System.Boolean get_IndexAsButtonPressed()
-    // Offset: 0x8A1054
+    // Offset: 0x1943BFC
     bool get_IndexAsButtonPressed();
     // private System.Void set_IndexAsButtonPressed(System.Boolean value)
-    // Offset: 0x8A1048
+    // Offset: 0x1943BF0
     void set_IndexAsButtonPressed(bool value);
     // public System.Boolean get_LastIndexAsButtonPressed()
-    // Offset: 0x8A1068
+    // Offset: 0x1943C10
     bool get_LastIndexAsButtonPressed();
     // private System.Void set_LastIndexAsButtonPressed(System.Boolean value)
-    // Offset: 0x8A105C
+    // Offset: 0x1943C04
     void set_LastIndexAsButtonPressed(bool value);
     // public System.Single get_IndexAsButtonEdgeValue()
-    // Offset: 0x8A1078
+    // Offset: 0x1943C20
     float get_IndexAsButtonEdgeValue();
     // private System.Void set_IndexAsButtonEdgeValue(System.Single value)
-    // Offset: 0x8A1070
+    // Offset: 0x1943C18
     void set_IndexAsButtonEdgeValue(float value);
     // public VROSC.InputDevice get_OtherController()
-    // Offset: 0x8A1088
+    // Offset: 0x1943C30
     ::VROSC::InputDevice* get_OtherController();
     // private System.Void set_OtherController(VROSC.InputDevice value)
-    // Offset: 0x8A1080
+    // Offset: 0x1943C28
     void set_OtherController(::VROSC::InputDevice* value);
     // public System.Boolean get_AnyButtonTriggering()
-    // Offset: 0x8A109C
+    // Offset: 0x1943C44
     bool get_AnyButtonTriggering();
     // public System.Void set_AnyButtonTriggering(System.Boolean value)
-    // Offset: 0x8A1090
+    // Offset: 0x1943C38
     void set_AnyButtonTriggering(bool value);
     // public VROSC.InputDeviceTransformData get_Data()
-    // Offset: 0x8A10AC
+    // Offset: 0x1943C54
     ::VROSC::InputDeviceTransformData* get_Data();
     // private System.Void set_Data(VROSC.InputDeviceTransformData value)
-    // Offset: 0x8A10A4
+    // Offset: 0x1943C4C
     void set_Data(::VROSC::InputDeviceTransformData* value);
     // public System.Void Setup(VROSC.VRPlayer player, VROSC.InputSettings inputSettings, VROSC.InputDevice other, VROSC.HandType handtype, VROSC.UIHelpers uiHelpers)
-    // Offset: 0x8A10B4
+    // Offset: 0x1943C5C
     void Setup(::VROSC::VRPlayer* player, ::VROSC::InputSettings* inputSettings, ::VROSC::InputDevice* other, ::VROSC::HandType handtype, ::VROSC::UIHelpers* uiHelpers);
     // public System.Void UpdateDevice()
-    // Offset: 0x8A132C
+    // Offset: 0x1944038
     void UpdateDevice();
     // private System.Void UpdateButtonValues()
-    // Offset: 0x8A136C
+    // Offset: 0x1944078
     void UpdateButtonValues();
     // private System.Void UpdateInputNodes()
-    // Offset: 0x8A1598
+    // Offset: 0x19442A4
     void UpdateInputNodes();
     // private System.Boolean CheckForTouchedNodes()
-    // Offset: 0x8A1750
+    // Offset: 0x194445C
     bool CheckForTouchedNodes();
     // public System.Void SetMalletActive(System.Boolean enabled, VROSC.Mallet mallet, System.Boolean endOfAnimation)
-    // Offset: 0x8A2624
+    // Offset: 0x1945330
     void SetMalletActive(bool enabled, ::VROSC::Mallet* mallet, bool endOfAnimation);
     // System.Void SetKeyHittersActive(System.Boolean active)
-    // Offset: 0x8A12E4
+    // Offset: 0x1943FF0
     void SetKeyHittersActive(bool active);
     // public System.Boolean ShouldHoveredNodesDisableGrab()
-    // Offset: 0x8A2668
+    // Offset: 0x1945374
     bool ShouldHoveredNodesDisableGrab();
     // static public System.Void DisableGrab(System.Boolean disable)
-    // Offset: 0x8A27B0
+    // Offset: 0x19454BC
     static void DisableGrab(bool disable);
     // public System.Void .ctor()
-    // Offset: 0x8A2890
+    // Offset: 0x194559C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

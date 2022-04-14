@@ -56,15 +56,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIToggle : public ::VROSC::UIInteractable {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean <IsOn>k__BackingField
     // Size: 0x1
     // Offset: 0x88
@@ -113,47 +105,47 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean <IsOn>k__BackingField
-    bool& dyn_$IsOn$k__BackingField();
+    [[deprecated]] bool& dyn_$IsOn$k__BackingField();
     // Get instance field reference: public System.Action`2<VROSC.InputDevice,System.Boolean> OnToggle
-    ::System::Action_2<::VROSC::InputDevice*, bool>*& dyn_OnToggle();
+    [[deprecated]] ::System::Action_2<::VROSC::InputDevice*, bool>*& dyn_OnToggle();
     // Get instance field reference: private TMPro.TextMeshPro _tmpLabel
-    ::TMPro::TextMeshPro*& dyn__tmpLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__tmpLabel();
     // Get instance field reference: private System.Boolean _startInOnState
-    bool& dyn__startInOnState();
+    [[deprecated]] bool& dyn__startInOnState();
     // Get instance field reference: private UnityEngine.GameObject _toggleObject
-    ::UnityEngine::GameObject*& dyn__toggleObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__toggleObject();
     // Get instance field reference: protected VROSC.SimpleHaptic _hapticFeedBack
-    ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: private System.Boolean _isSet
-    bool& dyn__isSet();
+    [[deprecated]] bool& dyn__isSet();
     // public System.Boolean get_IsOn()
-    // Offset: 0x13A56A8
+    // Offset: 0x19195D8
     bool get_IsOn();
     // private System.Void set_IsOn(System.Boolean value)
-    // Offset: 0x13A569C
+    // Offset: 0x19195CC
     void set_IsOn(bool value);
     // protected System.Void Awake()
-    // Offset: 0x13A56B0
+    // Offset: 0x19195E0
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x13A5868
+    // Offset: 0x1919798
     void OnDestroy();
     // protected System.Void ButtonWasPressed(VROSC.ClickData clickData)
-    // Offset: 0x13A5920
+    // Offset: 0x1919850
     void ButtonWasPressed(::VROSC::ClickData* clickData);
     // public System.Void SetToggled(System.Boolean shouldBeActive, System.Boolean alsoInvoke)
-    // Offset: 0x13A5778
+    // Offset: 0x19196A8
     void SetToggled(bool shouldBeActive, bool alsoInvoke);
     // public System.Void SetText(System.String text)
-    // Offset: 0x13A59D8
+    // Offset: 0x1919908
     void SetText(::StringW text);
     // public override System.Boolean get_InteractionStopsLaser()
-    // Offset: 0x13A5694
+    // Offset: 0x19195C4
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Boolean UIInteractable::get_InteractionStopsLaser()
     bool get_InteractionStopsLaser();
     // public System.Void .ctor()
-    // Offset: 0x13A5A84
+    // Offset: 0x19199B4
     // Implemented from: VROSC.UIInteractable
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()

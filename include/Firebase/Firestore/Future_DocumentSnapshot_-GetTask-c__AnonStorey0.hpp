@@ -37,15 +37,7 @@ namespace Firebase::Firestore {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Future_DocumentSnapshot::$GetTask$c__AnonStorey0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // Firebase.Firestore.Future_DocumentSnapshot fu
     // Size: 0x8
     // Offset: 0x10
@@ -60,14 +52,14 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Firestore::DocumentSnapshotProxy*>*) == 0x8);
     public:
     // Get instance field reference: Firebase.Firestore.Future_DocumentSnapshot fu
-    ::Firebase::Firestore::Future_DocumentSnapshot*& dyn_fu();
+    [[deprecated]] ::Firebase::Firestore::Future_DocumentSnapshot*& dyn_fu();
     // Get instance field reference: System.Threading.Tasks.TaskCompletionSource`1<Firebase.Firestore.DocumentSnapshotProxy> tcs
-    ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Firestore::DocumentSnapshotProxy*>*& dyn_tcs();
+    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Firestore::DocumentSnapshotProxy*>*& dyn_tcs();
     // System.Void <>m__0()
-    // Offset: 0xC43A3C
+    // Offset: 0xD68500
     void $$m__0();
     // public System.Void .ctor()
-    // Offset: 0xC3B960
+    // Offset: 0xD5F788
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

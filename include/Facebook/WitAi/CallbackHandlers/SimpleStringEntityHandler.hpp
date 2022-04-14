@@ -41,15 +41,7 @@ namespace Facebook::WitAi::CallbackHandlers {
   // [TokenAttribute] Offset: FFFFFFFF
   class SimpleStringEntityHandler : public ::Facebook::WitAi::CallbackHandlers::WitResponseHandler {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String intent
     // Size: 0x8
     // Offset: 0x20
@@ -62,7 +54,7 @@ namespace Facebook::WitAi::CallbackHandlers {
     ::StringW entity;
     // Field size check
     static_assert(sizeof(::StringW) == 0x8);
-    // [RangeAttribute] Offset: 0x5B1EE8
+    // [RangeAttribute] Offset: 0x6C8018
     // public System.Single confidence
     // Size: 0x4
     // Offset: 0x30
@@ -85,20 +77,20 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::StringEntityMatchEvent*) == 0x8);
     public:
     // Get instance field reference: public System.String intent
-    ::StringW& dyn_intent();
+    [[deprecated]] ::StringW& dyn_intent();
     // Get instance field reference: public System.String entity
-    ::StringW& dyn_entity();
+    [[deprecated]] ::StringW& dyn_entity();
     // Get instance field reference: public System.Single confidence
-    float& dyn_confidence();
+    [[deprecated]] float& dyn_confidence();
     // Get instance field reference: public System.String format
-    ::StringW& dyn_format();
+    [[deprecated]] ::StringW& dyn_format();
     // Get instance field reference: private Facebook.WitAi.CallbackHandlers.StringEntityMatchEvent onIntentEntityTriggered
-    ::Facebook::WitAi::CallbackHandlers::StringEntityMatchEvent*& dyn_onIntentEntityTriggered();
+    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::StringEntityMatchEvent*& dyn_onIntentEntityTriggered();
     // public Facebook.WitAi.CallbackHandlers.StringEntityMatchEvent get_OnIntentEntityTriggered()
-    // Offset: 0x10F9858
+    // Offset: 0x16700C0
     ::Facebook::WitAi::CallbackHandlers::StringEntityMatchEvent* get_OnIntentEntityTriggered();
     // public System.Void .ctor()
-    // Offset: 0x10F9ABC
+    // Offset: 0x1670324
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -112,7 +104,7 @@ namespace Facebook::WitAi::CallbackHandlers {
       return THROW_UNLESS((::il2cpp_utils::New<SimpleStringEntityHandler*, creationType>()));
     }
     // protected override System.Void OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x10F9860
+    // Offset: 0x16700C8
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
     void OnHandleResponse(::Facebook::WitAi::Lib::WitResponseNode* response);

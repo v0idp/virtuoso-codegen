@@ -46,20 +46,20 @@ namespace Oculus::Platform::Samples::VrHoops {
   class LeaderboardManager::OnHighScoreLeaderboardUpdated : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x1154C40
+    // Offset: 0x1721B3C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LeaderboardManager::OnHighScoreLeaderboardUpdated* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LeaderboardManager::OnHighScoreLeaderboardUpdated*, creationType>(object, method)));
     }
     // public System.Void Invoke(System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry> entries)
-    // Offset: 0x1154C50
+    // Offset: 0x1721B4C
     void Invoke(::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>* entries);
     // public System.IAsyncResult BeginInvoke(System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry> entries, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1154FC4
+    // Offset: 0x1721EC0
     ::System::IAsyncResult* BeginInvoke(::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>* entries, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Void EndInvoke(System.IAsyncResult result)
-    // Offset: 0x1154FE8
+    // Offset: 0x1721EE4
     void EndInvoke(::System::IAsyncResult* result);
   }; // Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnHighScoreLeaderboardUpdated
   #pragma pack(pop)

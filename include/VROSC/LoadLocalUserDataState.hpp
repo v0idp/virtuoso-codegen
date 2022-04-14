@@ -41,15 +41,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::LoadLocalUserDataState::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SettingsDataDefaults _settingsDataDefaults
     // Size: 0x8
     // Offset: 0x10
@@ -68,30 +60,30 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.SettingsDataDefaults _settingsDataDefaults
-    ::VROSC::SettingsDataDefaults*& dyn__settingsDataDefaults();
+    [[deprecated]] ::VROSC::SettingsDataDefaults*& dyn__settingsDataDefaults();
     // Get instance field reference: private VROSC.InstrumentHub _instrumentHub
-    ::VROSC::InstrumentHub*& dyn__instrumentHub();
+    [[deprecated]] ::VROSC::InstrumentHub*& dyn__instrumentHub();
     // public System.Void .ctor(VROSC.SettingsDataDefaults settingsDataDefaults, VROSC.InstrumentHub instrumentHub)
-    // Offset: 0x138D4BC
+    // Offset: 0x1950FE0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoadLocalUserDataState* New_ctor(::VROSC::SettingsDataDefaults* settingsDataDefaults, ::VROSC::InstrumentHub* instrumentHub) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoadLocalUserDataState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LoadLocalUserDataState*, creationType>(settingsDataDefaults, instrumentHub)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x138D4F4
+    // Offset: 0x1951018
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x138D6B8
+    // Offset: 0x19511DC
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x138D6BC
+    // Offset: 0x19511E0
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x138D6C0
+    // Offset: 0x19511E4
     void UpdateData(::ArrayW<::Il2CppObject*> values);
     // private System.Void <OnEnter>b__3_0()
-    // Offset: 0x138D6C4
+    // Offset: 0x19511E8
     void $OnEnter$b__3_0();
   }; // VROSC.LoadLocalUserDataState
   #pragma pack(pop)

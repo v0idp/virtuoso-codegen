@@ -67,15 +67,7 @@ namespace VROSC {
     class $$c__DisplayClass4_1;
     // Nested type: ::VROSC::ZipFileWriter::$CompressFolderToZip$d__4
     struct $CompressFolderToZip$d__4;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.List`1<System.Action> _zipCallbacks
     // Size: 0x8
     // Offset: 0x10
@@ -94,21 +86,21 @@ namespace VROSC {
     // Set static field: static public System.String ZipExtension
     static void _set_ZipExtension(::StringW value);
     // Get instance field reference: private System.Collections.Generic.List`1<System.Action> _zipCallbacks
-    ::System::Collections::Generic::List_1<::System::Action*>*& dyn__zipCallbacks();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::Action*>*& dyn__zipCallbacks();
     // public System.Void Tick()
-    // Offset: 0x1356F84
+    // Offset: 0x953880
     void Tick();
     // public System.Threading.Tasks.Task ExtractZipToFolder(System.String origin, System.String destination, System.Action successCallback, System.Action`1<VROSC.Error> failureCallback)
-    // Offset: 0x1357044
+    // Offset: 0x953940
     ::System::Threading::Tasks::Task* ExtractZipToFolder(::StringW origin, ::StringW destination, ::System::Action* successCallback, ::System::Action_1<::VROSC::Error>* failureCallback);
     // public System.Threading.Tasks.Task CompressFolderToZip(System.String origin, System.String destination, System.Action successCallback, System.Action`1<VROSC.Error> failureCallback)
-    // Offset: 0x1357180
+    // Offset: 0x953A7C
     ::System::Threading::Tasks::Task* CompressFolderToZip(::StringW origin, ::StringW destination, ::System::Action* successCallback, ::System::Action_1<::VROSC::Error>* failureCallback);
     // public System.Void DeleteZip(System.String path)
-    // Offset: 0x13572B8
+    // Offset: 0x953BB4
     void DeleteZip(::StringW path);
     // public System.Void .ctor()
-    // Offset: 0x1357348
+    // Offset: 0x953C44
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

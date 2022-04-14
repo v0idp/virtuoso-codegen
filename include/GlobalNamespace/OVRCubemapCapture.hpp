@@ -41,15 +41,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRCubemapCapture : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean autoTriggerAfterLaunch
     // Size: 0x1
     // Offset: 0x18
@@ -92,31 +84,31 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean autoTriggerAfterLaunch
-    bool& dyn_autoTriggerAfterLaunch();
+    [[deprecated]] bool& dyn_autoTriggerAfterLaunch();
     // Get instance field reference: public System.Single autoTriggerDelay
-    float& dyn_autoTriggerDelay();
+    [[deprecated]] float& dyn_autoTriggerDelay();
     // Get instance field reference: private System.Single autoTriggerElapse
-    float& dyn_autoTriggerElapse();
+    [[deprecated]] float& dyn_autoTriggerElapse();
     // Get instance field reference: public UnityEngine.KeyCode triggeredByKey
-    ::UnityEngine::KeyCode& dyn_triggeredByKey();
+    [[deprecated]] ::UnityEngine::KeyCode& dyn_triggeredByKey();
     // Get instance field reference: public System.String pathName
-    ::StringW& dyn_pathName();
+    [[deprecated]] ::StringW& dyn_pathName();
     // Get instance field reference: public System.Int32 cubemapSize
-    int& dyn_cubemapSize();
+    [[deprecated]] int& dyn_cubemapSize();
     // private System.Void Update()
-    // Offset: 0x8203F0
+    // Offset: 0x9959BC
     void Update();
     // static public System.Void TriggerCubemapCapture(UnityEngine.Vector3 capturePos, System.Int32 cubemapSize, System.String pathName)
-    // Offset: 0x8204A8
+    // Offset: 0x995A74
     static void TriggerCubemapCapture(::UnityEngine::Vector3 capturePos, int cubemapSize, ::StringW pathName);
     // static public System.Void RenderIntoCubemap(UnityEngine.Camera ownerCamera, UnityEngine.Cubemap outCubemap)
-    // Offset: 0x820740
+    // Offset: 0x995D0C
     static void RenderIntoCubemap(::UnityEngine::Camera* ownerCamera, ::UnityEngine::Cubemap* outCubemap);
     // static public System.Boolean SaveCubemapCapture(UnityEngine.Cubemap cubemap, System.String pathName)
-    // Offset: 0x820CDC
+    // Offset: 0x9962A8
     static bool SaveCubemapCapture(::UnityEngine::Cubemap* cubemap, ::StringW pathName);
     // public System.Void .ctor()
-    // Offset: 0x8214E8
+    // Offset: 0x996AB4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

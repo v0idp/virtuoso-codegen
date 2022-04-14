@@ -34,15 +34,7 @@ namespace Mono::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class CFNetwork::GetProxyData : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.IntPtr script
     // Size: 0x8
     // Offset: 0x10
@@ -79,20 +71,20 @@ namespace Mono::Net {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: public System.IntPtr script
-    ::System::IntPtr& dyn_script();
+    [[deprecated]] ::System::IntPtr& dyn_script();
     // Get instance field reference: public System.IntPtr targetUri
-    ::System::IntPtr& dyn_targetUri();
+    [[deprecated]] ::System::IntPtr& dyn_targetUri();
     // Get instance field reference: public System.IntPtr error
-    ::System::IntPtr& dyn_error();
+    [[deprecated]] ::System::IntPtr& dyn_error();
     // Get instance field reference: public System.IntPtr result
-    ::System::IntPtr& dyn_result();
+    [[deprecated]] ::System::IntPtr& dyn_result();
     // Get instance field reference: public System.Threading.ManualResetEvent evt
-    ::System::Threading::ManualResetEvent*& dyn_evt();
+    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_evt();
     // public System.Void Dispose()
-    // Offset: 0x8D9EBC
+    // Offset: 0x9F4C34
     void Dispose();
     // public System.Void .ctor()
-    // Offset: 0x8D9EE0
+    // Offset: 0x9F4C58
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

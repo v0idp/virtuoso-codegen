@@ -54,15 +54,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRGLTFAccessor : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 byteOffset
     // Size: 0x4
     // Offset: 0x10
@@ -119,71 +111,71 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 byteOffset
-    int& dyn_byteOffset();
+    [[deprecated]] int& dyn_byteOffset();
     // Get instance field reference: private System.Int32 byteLength
-    int& dyn_byteLength();
+    [[deprecated]] int& dyn_byteLength();
     // Get instance field reference: private System.Int32 byteStride
-    int& dyn_byteStride();
+    [[deprecated]] int& dyn_byteStride();
     // Get instance field reference: private System.Int32 bufferId
-    int& dyn_bufferId();
+    [[deprecated]] int& dyn_bufferId();
     // Get instance field reference: private System.Int32 bufferLength
-    int& dyn_bufferLength();
+    [[deprecated]] int& dyn_bufferLength();
     // Get instance field reference: private System.Int32 additionalOffset
-    int& dyn_additionalOffset();
+    [[deprecated]] int& dyn_additionalOffset();
     // Get instance field reference: private OVRGLTFType dataType
-    ::GlobalNamespace::OVRGLTFType& dyn_dataType();
+    [[deprecated]] ::GlobalNamespace::OVRGLTFType& dyn_dataType();
     // Get instance field reference: private OVRGLTFComponentType componentType
-    ::GlobalNamespace::OVRGLTFComponentType& dyn_componentType();
+    [[deprecated]] ::GlobalNamespace::OVRGLTFComponentType& dyn_componentType();
     // Get instance field reference: private System.Int32 dataCount
-    int& dyn_dataCount();
+    [[deprecated]] int& dyn_dataCount();
     // public System.Void .ctor(OVRSimpleJSON.JSONNode node, OVRSimpleJSON.JSONNode root, System.Boolean bufferViewOnly)
-    // Offset: 0xD28924
+    // Offset: 0xFB6278
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRGLTFAccessor* New_ctor(::OVRSimpleJSON::JSONNode* node, ::OVRSimpleJSON::JSONNode* root, bool bufferViewOnly) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGLTFAccessor::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRGLTFAccessor*, creationType>(node, root, bufferViewOnly)));
     }
     // public System.Int32 GetDataCount()
-    // Offset: 0xD28DE4
+    // Offset: 0xFB6738
     int GetDataCount();
     // static private OVRGLTFType ToOVRType(System.String type)
-    // Offset: 0xD28C70
+    // Offset: 0xFB65C4
     static ::GlobalNamespace::OVRGLTFType ToOVRType(::StringW type);
     // public System.Void ReadAsInt(OVRBinaryChunk chunk, ref System.Int32[] data, System.Int32 offset)
-    // Offset: 0xD28DEC
+    // Offset: 0xFB6740
     void ReadAsInt(::GlobalNamespace::OVRBinaryChunk chunk, ByRef<::ArrayW<int>> data, int offset);
     // public System.Void ReadAsVector2(OVRBinaryChunk chunk, ref UnityEngine.Vector2[] data, System.Int32 offset)
-    // Offset: 0xD2928C
+    // Offset: 0xFB6BE0
     void ReadAsVector2(::GlobalNamespace::OVRBinaryChunk chunk, ByRef<::ArrayW<::UnityEngine::Vector2>> data, int offset);
     // public System.Void ReadAsVector3(OVRBinaryChunk chunk, ref UnityEngine.Vector3[] data, System.Int32 offset, UnityEngine.Vector3 conversionScale)
-    // Offset: 0xD2958C
+    // Offset: 0xFB6EE0
     void ReadAsVector3(::GlobalNamespace::OVRBinaryChunk chunk, ByRef<::ArrayW<::UnityEngine::Vector3>> data, int offset, ::UnityEngine::Vector3 conversionScale);
     // public System.Void ReadAsVector4(OVRBinaryChunk chunk, ref UnityEngine.Vector4[] data, System.Int32 offset, UnityEngine.Vector4 conversionScale)
-    // Offset: 0xD2996C
+    // Offset: 0xFB72C0
     void ReadAsVector4(::GlobalNamespace::OVRBinaryChunk chunk, ByRef<::ArrayW<::UnityEngine::Vector4>> data, int offset, ::UnityEngine::Vector4 conversionScale);
     // public System.Void ReadAsColor(OVRBinaryChunk chunk, ref UnityEngine.Color[] data, System.Int32 offset)
-    // Offset: 0xD29DA8
+    // Offset: 0xFB76FC
     void ReadAsColor(::GlobalNamespace::OVRBinaryChunk chunk, ByRef<::ArrayW<::UnityEngine::Color>> data, int offset);
     // public System.Void ReadAsMatrix4x4(OVRBinaryChunk chunk, ref UnityEngine.Matrix4x4[] data, System.Int32 offset, UnityEngine.Vector3 conversionScale)
-    // Offset: 0xD2A288
+    // Offset: 0xFB7BDC
     void ReadAsMatrix4x4(::GlobalNamespace::OVRBinaryChunk chunk, ByRef<::ArrayW<::UnityEngine::Matrix4x4>> data, int offset, ::UnityEngine::Vector3 conversionScale);
     // public System.Byte[] ReadAsKtxTexture(OVRBinaryChunk chunk)
-    // Offset: 0xD2A604
+    // Offset: 0xFB7F58
     ::ArrayW<uint8_t> ReadAsKtxTexture(::GlobalNamespace::OVRBinaryChunk chunk);
     // public System.Void ReadAsBoneWeights(OVRBinaryChunk chunk, ref UnityEngine.Vector4[] data, System.Int32 offset)
-    // Offset: 0xD2A728
+    // Offset: 0xFB807C
     void ReadAsBoneWeights(::GlobalNamespace::OVRBinaryChunk chunk, ByRef<::ArrayW<::UnityEngine::Vector4>> data, int offset);
     // private System.Int32 GetStrideForType(OVRGLTFComponentType type)
-    // Offset: 0xD29028
+    // Offset: 0xFB697C
     int GetStrideForType(::GlobalNamespace::OVRGLTFComponentType type);
     // private System.Single GetMaxValueForType(OVRGLTFComponentType type)
-    // Offset: 0xD2A260
+    // Offset: 0xFB7BB4
     float GetMaxValueForType(::GlobalNamespace::OVRGLTFComponentType type);
     // private System.UInt32 ReadElementAsUint(System.Byte[] data, System.Int32 index, OVRGLTFComponentType type)
-    // Offset: 0xD29050
+    // Offset: 0xFB69A4
     uint ReadElementAsUint(::ArrayW<uint8_t> data, int index, ::GlobalNamespace::OVRGLTFComponentType type);
     // private System.Single ReadElementAsFloat(System.Byte[] data, System.Int32 index)
-    // Offset: 0xD29518
+    // Offset: 0xFB6E6C
     float ReadElementAsFloat(::ArrayW<uint8_t> data, int index);
   }; // OVRGLTFAccessor
   #pragma pack(pop)

@@ -48,15 +48,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarSkinnedMeshRenderPBSComponent : public ::GlobalNamespace::OvrAvatarRenderComponent {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean isMaterialInitilized
     // Size: 0x1
     // Offset: 0x31
@@ -65,15 +57,15 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean isMaterialInitilized
-    bool& dyn_isMaterialInitilized();
+    [[deprecated]] bool& dyn_isMaterialInitilized();
     // System.Void Initialize(ovrAvatarRenderPart_SkinnedMeshRenderPBS skinnedMeshRenderPBS, UnityEngine.Shader shader, System.Int32 thirdPersonLayer, System.Int32 firstPersonLayer)
-    // Offset: 0x8F3E28
+    // Offset: 0xAD85A8
     void Initialize(::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS skinnedMeshRenderPBS, ::UnityEngine::Shader* shader, int thirdPersonLayer, int firstPersonLayer);
     // System.Void UpdateSkinnedMeshRenderPBS(OvrAvatar avatar, System.IntPtr renderPart, UnityEngine.Material mat)
-    // Offset: 0x8F3F6C
+    // Offset: 0xAD86F8
     void UpdateSkinnedMeshRenderPBS(::GlobalNamespace::OvrAvatar* avatar, ::System::IntPtr renderPart, ::UnityEngine::Material* mat);
     // public System.Void .ctor()
-    // Offset: 0x8F4144
+    // Offset: 0xAD88D4
     // Implemented from: OvrAvatarRenderComponent
     // Base method: System.Void OvrAvatarRenderComponent::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

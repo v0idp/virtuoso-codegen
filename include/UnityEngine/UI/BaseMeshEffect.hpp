@@ -45,15 +45,7 @@ namespace UnityEngine::UI {
   // [ExecuteAlways] Offset: FFFFFFFF
   class BaseMeshEffect : public ::UnityEngine::EventSystems::UIBehaviour/*, public ::UnityEngine::UI::IMeshModifier*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.UI.Graphic m_Graphic
     // Size: 0x8
     // Offset: 0x18
@@ -68,18 +60,18 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.UI.Graphic m_Graphic
-    ::UnityEngine::UI::Graphic*& dyn_m_Graphic();
+    [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_m_Graphic();
     // protected UnityEngine.UI.Graphic get_graphic()
-    // Offset: 0xBB5CCC
+    // Offset: 0xEAC318
     ::UnityEngine::UI::Graphic* get_graphic();
     // public System.Void ModifyMesh(UnityEngine.Mesh mesh)
-    // Offset: 0xBB5F70
+    // Offset: 0xEAC5BC
     void ModifyMesh(::UnityEngine::Mesh* mesh);
     // public System.Void ModifyMesh(UnityEngine.UI.VertexHelper vh)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void ModifyMesh(::UnityEngine::UI::VertexHelper* vh);
     // protected System.Void .ctor()
-    // Offset: 0xBB60E8
+    // Offset: 0xEAC734
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -93,17 +85,17 @@ namespace UnityEngine::UI {
       return THROW_UNLESS((::il2cpp_utils::New<BaseMeshEffect*, creationType>()));
     }
     // protected override System.Void OnEnable()
-    // Offset: 0xBB5D6C
+    // Offset: 0xEAC3B8
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::OnEnable()
     void OnEnable();
     // protected override System.Void OnDisable()
-    // Offset: 0xBB5E20
+    // Offset: 0xEAC46C
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::OnDisable()
     void OnDisable();
     // protected override System.Void OnDidApplyAnimationProperties()
-    // Offset: 0xBB5EC8
+    // Offset: 0xEAC514
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::OnDidApplyAnimationProperties()
     void OnDidApplyAnimationProperties();

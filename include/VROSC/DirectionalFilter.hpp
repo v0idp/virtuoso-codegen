@@ -82,20 +82,12 @@ namespace VROSC {
       // Set static field: static public VROSC.DirectionalFilter/VROSC.Space World
       static void _set_World(::VROSC::DirectionalFilter::Space value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.DirectionalFilter/VROSC.Space
     #pragma pack(pop)
     static check_size<sizeof(DirectionalFilter::Space), 0 + sizeof(int)> __VROSC_DirectionalFilter_SpaceSizeCheck;
     static_assert(sizeof(DirectionalFilter::Space) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 _filterDirection
     // Size: 0xC
     // Offset: 0x40
@@ -128,17 +120,17 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _filterDirection
-    ::UnityEngine::Vector3& dyn__filterDirection();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__filterDirection();
     // Get instance field reference: private VROSC.DirectionalFilter/VROSC.Space _relativeTo
-    ::VROSC::DirectionalFilter::Space& dyn__relativeTo();
+    [[deprecated]] ::VROSC::DirectionalFilter::Space& dyn__relativeTo();
     // Get instance field reference: private System.Single _filterAngle
-    float& dyn__filterAngle();
+    [[deprecated]] float& dyn__filterAngle();
     // Get instance field reference: private System.Boolean _checkFirstFrameOnly
-    bool& dyn__checkFirstFrameOnly();
+    [[deprecated]] bool& dyn__checkFirstFrameOnly();
     // Get instance field reference: private System.Boolean _firstFramePassed
-    bool& dyn__firstFramePassed();
+    [[deprecated]] bool& dyn__firstFramePassed();
     // public System.Void .ctor()
-    // Offset: 0x130B720
+    // Offset: 0x8E48F0
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -154,12 +146,12 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<DirectionalFilter*, creationType>()));
     }
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x130B5A0
+    // Offset: 0x8E4770
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);
     // protected override System.Void FilterSignal(VROSC.Signal signal)
-    // Offset: 0x130B5AC
+    // Offset: 0x8E477C
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::FilterSignal(VROSC.Signal signal)
     void FilterSignal(::VROSC::Signal* signal);

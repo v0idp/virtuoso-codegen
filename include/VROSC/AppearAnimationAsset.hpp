@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AppearAnimationAsset : public ::UnityEngine::Playables::PlayableAsset {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.AppearAnimationBehaviour template
     // Size: 0x8
     // Offset: 0x18
@@ -107,23 +99,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.AppearAnimationBehaviour template
-    ::VROSC::AppearAnimationBehaviour*& dyn_template();
+    [[deprecated]] ::VROSC::AppearAnimationBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Transform> _target
-    ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__target();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__target();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Transform> _start
-    ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__start();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__start();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Transform> _end
-    ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__end();
+    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__end();
     // Get instance field reference: public UnityEngine.AnimationCurve _positionCurve
-    ::UnityEngine::AnimationCurve*& dyn__positionCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__positionCurve();
     // Get instance field reference: public UnityEngine.AnimationCurve _rotationCurve
-    ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
     // Get instance field reference: public UnityEngine.AnimationCurve _scaleCurve
-    ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
+    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
     // Get instance field reference: public System.Single _randomStartRotation
-    float& dyn__randomStartRotation();
+    [[deprecated]] float& dyn__randomStartRotation();
     // public System.Void .ctor()
-    // Offset: 0x136DFE0
+    // Offset: 0x96C8BC
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Void PlayableAsset::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -135,7 +127,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<AppearAnimationAsset*, creationType>()));
     }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
-    // Offset: 0x136DD8C
+    // Offset: 0x96C668
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: UnityEngine.Playables.Playable PlayableAsset::CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);

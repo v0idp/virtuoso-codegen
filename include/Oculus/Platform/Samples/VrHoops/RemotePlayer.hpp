@@ -42,15 +42,7 @@ namespace Oculus::Platform::Samples::VrHoops {
     public:
     // Writing base type padding for base size: 0x4C to desired offset: 0x50
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Models.User m_user
     // Size: 0x8
     // Offset: 0x50
@@ -65,31 +57,31 @@ namespace Oculus::Platform::Samples::VrHoops {
     static_assert(sizeof(::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal*) == 0x8);
     public:
     // Get instance field reference: private Oculus.Platform.Models.User m_user
-    ::Oculus::Platform::Models::User*& dyn_m_user();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_m_user();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.P2PNetworkGoal m_goal
-    ::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal*& dyn_m_goal();
+    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal*& dyn_m_goal();
     // public System.Void set_User(Oculus.Platform.Models.User value)
-    // Offset: 0x1146658
+    // Offset: 0x1713554
     void set_User(::Oculus::Platform::Models::User* value);
     // public System.UInt64 get_ID()
-    // Offset: 0x1146660
+    // Offset: 0x171355C
     uint64_t get_ID();
     // public Oculus.Platform.Samples.VrHoops.P2PNetworkGoal get_Goal()
-    // Offset: 0x114667C
+    // Offset: 0x1713578
     ::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal* get_Goal();
     // public System.Void set_Goal(Oculus.Platform.Samples.VrHoops.P2PNetworkGoal value)
-    // Offset: 0x1146684
+    // Offset: 0x1713580
     void set_Goal(::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal* value);
     // public System.Void ReceiveRemoteScore(System.UInt32 score)
-    // Offset: 0x1146690
+    // Offset: 0x171358C
     void ReceiveRemoteScore(uint score);
     // public override System.Void set_Score(System.UInt32 value)
-    // Offset: 0x114668C
+    // Offset: 0x1713588
     // Implemented from: Oculus.Platform.Samples.VrHoops.Player
     // Base method: System.Void Player::set_Score(System.UInt32 value)
     void set_Score(uint value);
     // public System.Void .ctor()
-    // Offset: 0x1146694
+    // Offset: 0x1713590
     // Implemented from: Oculus.Platform.Samples.VrHoops.Player
     // Base method: System.Void Player::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()

@@ -43,7 +43,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.Int64 lights
     static void _set_lights(int64_t value);
     // static private System.Void .cctor()
-    // Offset: 0x1358824
+    // Offset: 0x955120
     static void _cctor();
   }; // ovrAvatarLights_Offsets
   #pragma pack(pop)

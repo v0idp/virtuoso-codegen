@@ -75,7 +75,7 @@ namespace System::Collections::Generic {
     // Base method: System.Boolean SortedSet_1::AddIfNotPresent(T item)
     bool AddIfNotPresent(T item) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Generic::TreeSet_1::AddIfNotPresent");
-      auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "AddIfNotPresent", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(item)})));
+      auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Collections::Generic::SortedSet_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(this, ___internal__method, item);
     }
   }; // System.Collections.Generic.TreeSet`1

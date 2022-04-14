@@ -35,15 +35,7 @@ namespace System::Threading::Tasks {
   // [TokenAttribute] Offset: FFFFFFFF
   class ContinuationTaskFromTask : public ::System::Threading::Tasks::Task {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Threading.Tasks.Task m_antecedent
     // Size: 0x8
     // Offset: 0x50
@@ -56,16 +48,16 @@ namespace System::Threading::Tasks {
       return m_antecedent;
     }
     // Get instance field reference: private System.Threading.Tasks.Task m_antecedent
-    ::System::Threading::Tasks::Task*& dyn_m_antecedent();
+    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_antecedent();
     // public System.Void .ctor(System.Threading.Tasks.Task antecedent, System.Delegate action, System.Object state, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.InternalTaskOptions internalOptions, ref System.Threading.StackCrawlMark stackMark)
-    // Offset: 0xBE09CC
+    // Offset: 0xE45304
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ContinuationTaskFromTask* New_ctor(::System::Threading::Tasks::Task* antecedent, ::System::Delegate* action, ::Il2CppObject* state, ::System::Threading::Tasks::TaskCreationOptions creationOptions, ::System::Threading::Tasks::InternalTaskOptions internalOptions, ByRef<::System::Threading::StackCrawlMark> stackMark) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::Tasks::ContinuationTaskFromTask::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ContinuationTaskFromTask*, creationType>(antecedent, action, state, creationOptions, internalOptions, byref(stackMark))));
     }
     // override System.Void InnerInvoke()
-    // Offset: 0xBE0AA4
+    // Offset: 0xE453DC
     // Implemented from: System.Threading.Tasks.Task
     // Base method: System.Void Task::InnerInvoke()
     void InnerInvoke();

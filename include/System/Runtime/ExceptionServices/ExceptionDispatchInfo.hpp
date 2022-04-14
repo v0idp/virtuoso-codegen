@@ -33,15 +33,7 @@ namespace System::Runtime::ExceptionServices {
   // [TokenAttribute] Offset: FFFFFFFF
   class ExceptionDispatchInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Exception m_Exception
     // Size: 0x8
     // Offset: 0x10
@@ -56,28 +48,31 @@ namespace System::Runtime::ExceptionServices {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Exception m_Exception
-    ::System::Exception*& dyn_m_Exception();
+    [[deprecated]] ::System::Exception*& dyn_m_Exception();
     // Get instance field reference: private System.Object m_stackTrace
-    ::Il2CppObject*& dyn_m_stackTrace();
+    [[deprecated]] ::Il2CppObject*& dyn_m_stackTrace();
     // System.Object get_BinaryStackTraceArray()
-    // Offset: 0xC118AC
+    // Offset: 0x14FA2CC
     ::Il2CppObject* get_BinaryStackTraceArray();
     // public System.Exception get_SourceException()
-    // Offset: 0xC11970
+    // Offset: 0x14FA390
     ::System::Exception* get_SourceException();
     // private System.Void .ctor(System.Exception exception)
-    // Offset: 0xC11778
+    // Offset: 0x14FA198
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExceptionDispatchInfo* New_ctor(::System::Exception* exception) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::ExceptionServices::ExceptionDispatchInfo::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ExceptionDispatchInfo*, creationType>(exception)));
     }
     // static public System.Runtime.ExceptionServices.ExceptionDispatchInfo Capture(System.Exception source)
-    // Offset: 0xC118B4
+    // Offset: 0x14FA2D4
     static ::System::Runtime::ExceptionServices::ExceptionDispatchInfo* Capture(::System::Exception* source);
     // public System.Void Throw()
-    // Offset: 0xC11978
+    // Offset: 0x14FA398
     void Throw();
+    // static public System.Void Throw(System.Exception source)
+    // Offset: 0x14FA3DC
+    static void Throw(::System::Exception* source);
   }; // System.Runtime.ExceptionServices.ExceptionDispatchInfo
   #pragma pack(pop)
   static check_size<sizeof(ExceptionDispatchInfo), 24 + sizeof(::Il2CppObject*)> __System_Runtime_ExceptionServices_ExceptionDispatchInfoSizeCheck;
@@ -119,5 +114,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (System::Runtime::ExceptionServices::ExceptionDispatchInfo::*)()>(&System::Runtime::ExceptionServices::ExceptionDispatchInfo::Throw)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::Runtime::ExceptionServices::ExceptionDispatchInfo*), "Throw", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: System::Runtime::ExceptionServices::ExceptionDispatchInfo::Throw
+// Il2CppName: Throw
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::System::Exception*)>(&System::Runtime::ExceptionServices::ExceptionDispatchInfo::Throw)> {
+  static const MethodInfo* get() {
+    static auto* source = &::il2cpp_utils::GetClassFromName("System", "Exception")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(System::Runtime::ExceptionServices::ExceptionDispatchInfo*), "Throw", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{source});
   }
 };

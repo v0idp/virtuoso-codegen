@@ -116,15 +116,7 @@ namespace VROSC {
     class $$c__DisplayClass73_0;
     // Nested type: ::VROSC::SessionsManager::$$c__DisplayClass78_0
     class $$c__DisplayClass78_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UserDataControllers _userDataControllers
     // Size: 0x8
     // Offset: 0x10
@@ -267,200 +259,200 @@ namespace VROSC {
     // Set static field: static public System.Action OnFavoritesChanged
     static void _set_OnFavoritesChanged(::System::Action* value);
     // Get instance field reference: private VROSC.UserDataControllers _userDataControllers
-    ::VROSC::UserDataControllers*& dyn__userDataControllers();
+    [[deprecated]] ::VROSC::UserDataControllers*& dyn__userDataControllers();
     // Get instance field reference: private VROSC.SaveLoadManager _saveLoadManager
-    ::VROSC::SaveLoadManager*& dyn__saveLoadManager();
+    [[deprecated]] ::VROSC::SaveLoadManager*& dyn__saveLoadManager();
     // Get instance field reference: private VROSC.OldSavesHandler _oldSavesHandler
-    ::VROSC::OldSavesHandler*& dyn__oldSavesHandler();
+    [[deprecated]] ::VROSC::OldSavesHandler*& dyn__oldSavesHandler();
     // Get instance field reference: private VROSC.LocalSessionsDataController _localSessionsDataController
-    ::VROSC::LocalSessionsDataController*& dyn__localSessionsDataController();
+    [[deprecated]] ::VROSC::LocalSessionsDataController*& dyn__localSessionsDataController();
     // Get instance field reference: private VROSC.CloudSessionsDataController _cloudSessionsDataController
-    ::VROSC::CloudSessionsDataController*& dyn__cloudSessionsDataController();
+    [[deprecated]] ::VROSC::CloudSessionsDataController*& dyn__cloudSessionsDataController();
     // Get instance field reference: private VROSC.CommunitySessionsDataController _communitySessionsDataController
-    ::VROSC::CommunitySessionsDataController*& dyn__communitySessionsDataController();
+    [[deprecated]] ::VROSC::CommunitySessionsDataController*& dyn__communitySessionsDataController();
     // Get instance field reference: private System.String _loadedSessionId
-    ::StringW& dyn__loadedSessionId();
+    [[deprecated]] ::StringW& dyn__loadedSessionId();
     // Get instance field reference: private System.Boolean <IsSessionDataValidated>k__BackingField
-    bool& dyn_$IsSessionDataValidated$k__BackingField();
+    [[deprecated]] bool& dyn_$IsSessionDataValidated$k__BackingField();
     // Get instance field reference: private System.String <CurrentSessionDisplayName>k__BackingField
-    ::StringW& dyn_$CurrentSessionDisplayName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$CurrentSessionDisplayName$k__BackingField();
     // public System.Boolean get_IsSessionDataValidated()
-    // Offset: 0x13F38EC
+    // Offset: 0x1993594
     bool get_IsSessionDataValidated();
     // private System.Void set_IsSessionDataValidated(System.Boolean value)
-    // Offset: 0x13F38F4
+    // Offset: 0x199359C
     void set_IsSessionDataValidated(bool value);
     // public System.Boolean get_HasLoadedSession()
-    // Offset: 0x13F039C
+    // Offset: 0x198F8EC
     bool get_HasLoadedSession();
     // public System.Boolean get_IsLoadedSessionMine()
-    // Offset: 0x13F03C0
+    // Offset: 0x198F910
     bool get_IsLoadedSessionMine();
     // public System.String get_CurrentSessionDisplayName()
-    // Offset: 0x13F3900
+    // Offset: 0x19935A8
     ::StringW get_CurrentSessionDisplayName();
     // private System.Void set_CurrentSessionDisplayName(System.String value)
-    // Offset: 0x13F3908
+    // Offset: 0x19935B0
     void set_CurrentSessionDisplayName(::StringW value);
     // public System.Boolean get_AreCloudSessionsLoaded()
-    // Offset: 0x13F3910
+    // Offset: 0x19935B8
     bool get_AreCloudSessionsLoaded();
     // public System.Boolean get_AreCommunitySessionsLoaded()
-    // Offset: 0x13F392C
+    // Offset: 0x19935D4
     bool get_AreCommunitySessionsLoaded();
     // public System.Void .ctor(VROSC.UserDataControllers userDataControllers, VROSC.SaveLoadManager saveLoadManager)
-    // Offset: 0x13F3948
+    // Offset: 0x19935F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionsManager* New_ctor(::VROSC::UserDataControllers* userDataControllers, ::VROSC::SaveLoadManager* saveLoadManager) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsManager::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SessionsManager*, creationType>(userDataControllers, saveLoadManager)));
     }
     // public System.Void ValidateSessionsFiles()
-    // Offset: 0x13F3EEC
+    // Offset: 0x1993B94
     void ValidateSessionsFiles();
     // public VROSC.SessionUIData GetSessionUIData(System.String sessionId)
-    // Offset: 0x13F11A8
+    // Offset: 0x1990C50
     ::VROSC::SessionUIData* GetSessionUIData(::StringW sessionId);
     // public VROSC.SessionUIData GetLoadedSessionUIData()
-    // Offset: 0x13F3648
+    // Offset: 0x19932D8
     ::VROSC::SessionUIData* GetLoadedSessionUIData();
     // public System.Collections.Generic.List`1<VROSC.SessionUIData> GetLocalSessionsUIData()
-    // Offset: 0x13F4288
+    // Offset: 0x1993F30
     ::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* GetLocalSessionsUIData();
     // public System.Collections.Generic.List`1<VROSC.SessionUIData> GetCloudSessionsUIData()
-    // Offset: 0x13F42AC
+    // Offset: 0x1993F54
     ::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* GetCloudSessionsUIData();
     // public System.Collections.Generic.List`1<VROSC.SessionUIData> GetCommunitySessionsUIData(System.Boolean onlyMine)
-    // Offset: 0x13F42D0
+    // Offset: 0x1993F78
     ::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* GetCommunitySessionsUIData(bool onlyMine);
     // public System.Void LoadLocalSessions(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13F4514
+    // Offset: 0x19941BC
     void LoadLocalSessions(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void LoadCloudSessions(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13F4644
+    // Offset: 0x19942EC
     void LoadCloudSessions(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void LoadCommunitySessions(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13F4774
+    // Offset: 0x199441C
     void LoadCommunitySessions(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void LoadDefaultSession()
-    // Offset: 0x13F2990
+    // Offset: 0x1992620
     void LoadDefaultSession();
     // public System.Void LoadSession(System.String sessionId)
-    // Offset: 0x13F2ED4
+    // Offset: 0x1992B64
     void LoadSession(::StringW sessionId);
     // public System.Void SaveSession(System.String sessionId, System.String displayName, System.String description, System.String[] tags)
-    // Offset: 0x13F0774
+    // Offset: 0x19901EC
     void SaveSession(::StringW sessionId, ::StringW displayName, ::StringW description, ::ArrayW<::StringW> tags);
     // public System.Void SaveSessionAs(System.String displayName, System.String description, System.String[] tags, System.Boolean isInCloud, System.Boolean isCommunity)
-    // Offset: 0x13F0AA0
+    // Offset: 0x1990534
     void SaveSessionAs(::StringW displayName, ::StringW description, ::ArrayW<::StringW> tags, bool isInCloud, bool isCommunity);
     // public System.Void DeleteSession(System.String sessionId)
-    // Offset: 0x13F36A4
+    // Offset: 0x1993334
     void DeleteSession(::StringW sessionId);
     // public System.Void UpdateSavedSessionsVersion()
-    // Offset: 0x13F496C
+    // Offset: 0x1994614
     void UpdateSavedSessionsVersion();
     // public System.Void GetSessionPreview(System.String sessionId)
-    // Offset: 0x13ECCC4
+    // Offset: 0x198C2C4
     void GetSessionPreview(::StringW sessionId);
     // public System.Void SetPreview(System.String sessionId, System.Boolean hasPreview, System.Single previewMultiplier, VROSC.Session/VROSC.PreviewSource previewSource)
-    // Offset: 0x13F49B8
+    // Offset: 0x1994660
     void SetPreview(::StringW sessionId, bool hasPreview, float previewMultiplier, ::VROSC::Session::PreviewSource previewSource);
     // public System.Boolean IsSessionMine(System.String sessionId)
-    // Offset: 0x13E7208
+    // Offset: 0x19862D8
     bool IsSessionMine(::StringW sessionId);
     // public System.Boolean HasSessionWithDisplayName(System.String displayName, System.Boolean isCommunity)
-    // Offset: 0x13F48A4
+    // Offset: 0x199454C
     bool HasSessionWithDisplayName(::StringW displayName, bool isCommunity);
     // public System.Void AddSessionUpVote(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13E75E4
+    // Offset: 0x19866A8
     void AddSessionUpVote(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void RemoveSessionUpVote(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13E76E0
+    // Offset: 0x19867FC
     void RemoveSessionUpVote(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddSessionFavorite(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13E79AC
+    // Offset: 0x1986B20
     void AddSessionFavorite(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void RemoveSessionFavorite(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13E7AA8
+    // Offset: 0x1986C74
     void RemoveSessionFavorite(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddSessionDownload(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13F4A1C
+    // Offset: 0x19946C4
     void AddSessionDownload(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddSessionPreviewPlay(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13ECFB8
+    // Offset: 0x198C5D0
     void AddSessionPreviewPlay(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddFavoriteSessionToCommunityList(VROSC.Session session)
-    // Offset: 0x13F4B18
+    // Offset: 0x1994818
     void AddFavoriteSessionToCommunityList(::VROSC::Session* session);
     // public System.Void RemoveFavoriteSessionFromCommunityList(System.String sessionId)
-    // Offset: 0x13F4B34
+    // Offset: 0x1994834
     void RemoveFavoriteSessionFromCommunityList(::StringW sessionId);
     // private System.Void LoadSessionDataSuccess(System.String sessionId, System.Boolean isDefaultSession)
-    // Offset: 0x13F4B50
+    // Offset: 0x1994850
     void LoadSessionDataSuccess(::StringW sessionId, bool isDefaultSession);
     // private System.Void LoadSessionDataFailure(System.String sessionId, System.Boolean isDefaultSession, VROSC.Error error)
-    // Offset: 0x13F4E30
+    // Offset: 0x1994B78
     void LoadSessionDataFailure(::StringW sessionId, bool isDefaultSession, ::VROSC::Error error);
     // private System.Void SessionDownloadSuccess(System.String sessionId)
-    // Offset: 0x13F507C
+    // Offset: 0x1994DC4
     void SessionDownloadSuccess(::StringW sessionId);
     // private System.Void SessionDownloadFailure(System.String sessionId, VROSC.Error error)
-    // Offset: 0x13F528C
+    // Offset: 0x1994FD4
     void SessionDownloadFailure(::StringW sessionId, ::VROSC::Error error);
     // private System.Void SessionDownloadProgress(System.String sessionId, System.Single progress)
-    // Offset: 0x13F549C
+    // Offset: 0x19951E4
     void SessionDownloadProgress(::StringW sessionId, float progress);
     // private System.Void SaveSessionSuccess(System.String sessionId)
-    // Offset: 0x13F552C
+    // Offset: 0x1995274
     void SaveSessionSuccess(::StringW sessionId);
     // private System.Void SaveSessionFailure(System.String sessionId, VROSC.Error error)
-    // Offset: 0x13F5AB0
+    // Offset: 0x19957F8
     void SaveSessionFailure(::StringW sessionId, ::VROSC::Error error);
     // private System.Void SessionUploadSuccess(System.String sessionId)
-    // Offset: 0x13F5D10
+    // Offset: 0x1995A58
     void SessionUploadSuccess(::StringW sessionId);
     // private System.Void SessionUploadFailure(System.String sessionId, VROSC.Error error)
-    // Offset: 0x13F5F84
+    // Offset: 0x1995CCC
     void SessionUploadFailure(::StringW sessionId, ::VROSC::Error error);
     // private System.Void SessionUploadProgress(System.String sessionId, System.Single progress)
-    // Offset: 0x13F61F8
+    // Offset: 0x1995F40
     void SessionUploadProgress(::StringW sessionId, float progress);
     // private System.Void SessionPreviewUploadProgress(System.String sessionId, System.Single progress)
-    // Offset: 0x13F6288
+    // Offset: 0x1995FD0
     void SessionPreviewUploadProgress(::StringW sessionId, float progress);
     // private System.Void DeleteSessionSuccess(System.String sessionId)
-    // Offset: 0x13F6318
+    // Offset: 0x1996060
     void DeleteSessionSuccess(::StringW sessionId);
     // private System.Void DeleteSessionFailure(System.String sessionId, VROSC.Error error)
-    // Offset: 0x13F6524
+    // Offset: 0x199626C
     void DeleteSessionFailure(::StringW sessionId, ::VROSC::Error error);
     // private System.Void PreviewLoadSuccess(System.String sessionId, UnityEngine.AudioClip audioClip)
-    // Offset: 0x13F670C
+    // Offset: 0x1996454
     void PreviewLoadSuccess(::StringW sessionId, ::UnityEngine::AudioClip* audioClip);
     // private System.Void PreviewLoadFailure(System.String sessionId, VROSC.Error error)
-    // Offset: 0x13F680C
+    // Offset: 0x1996554
     void PreviewLoadFailure(::StringW sessionId, ::VROSC::Error error);
     // private System.Void PreviewDownloadProgress(System.String sessionId, System.Single progress)
-    // Offset: 0x13F6914
+    // Offset: 0x19966A4
     void PreviewDownloadProgress(::StringW sessionId, float progress);
     // private VROSC.SessionsDataController GetSessionDataController(System.String sessionId)
-    // Offset: 0x13F3FDC
+    // Offset: 0x1993C84
     ::VROSC::SessionsDataController* GetSessionDataController(::StringW sessionId);
     // private System.Void <ValidateSessionsFiles>b__46_0()
-    // Offset: 0x13F69A4
+    // Offset: 0x1996734
     void $ValidateSessionsFiles$b__46_0();
     // private System.Void <ValidateSessionsFiles>b__46_2()
-    // Offset: 0x13F6A98
+    // Offset: 0x1996828
     void $ValidateSessionsFiles$b__46_2();
     // private System.Void <ValidateSessionsFiles>b__46_3(VROSC.Error error)
-    // Offset: 0x13F6B04
+    // Offset: 0x1996894
     void $ValidateSessionsFiles$b__46_3(::VROSC::Error error);
     // private System.Void <ValidateSessionsFiles>b__46_1(VROSC.Error error)
-    // Offset: 0x13F6BF4
+    // Offset: 0x1996984
     void $ValidateSessionsFiles$b__46_1(::VROSC::Error error);
     // protected override System.Void Finalize()
-    // Offset: 0x13F3C5C
+    // Offset: 0x1993904
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

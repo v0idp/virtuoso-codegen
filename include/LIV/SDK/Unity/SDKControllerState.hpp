@@ -97,30 +97,30 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 hmdposition
-    ::LIV::SDK::Unity::SDKVector3& dyn_hmdposition();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_hmdposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion hmdrotation
-    ::LIV::SDK::Unity::SDKQuaternion& dyn_hmdrotation();
+    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_hmdrotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 calibrationcameraposition
-    ::LIV::SDK::Unity::SDKVector3& dyn_calibrationcameraposition();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_calibrationcameraposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion calibrationcamerarotation
-    ::LIV::SDK::Unity::SDKQuaternion& dyn_calibrationcamerarotation();
+    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_calibrationcamerarotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 cameraposition
-    ::LIV::SDK::Unity::SDKVector3& dyn_cameraposition();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_cameraposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion camerarotation
-    ::LIV::SDK::Unity::SDKQuaternion& dyn_camerarotation();
+    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_camerarotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 leftposition
-    ::LIV::SDK::Unity::SDKVector3& dyn_leftposition();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_leftposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion leftrotation
-    ::LIV::SDK::Unity::SDKQuaternion& dyn_leftrotation();
+    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_leftrotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 rightposition
-    ::LIV::SDK::Unity::SDKVector3& dyn_rightposition();
+    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_rightposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion rightrotation
-    ::LIV::SDK::Unity::SDKQuaternion& dyn_rightrotation();
+    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_rightrotation();
     // static public LIV.SDK.Unity.SDKControllerState get_empty()
-    // Offset: 0xB02A64
+    // Offset: 0xDD400C
     static ::LIV::SDK::Unity::SDKControllerState get_empty();
     // public override System.String ToString()
-    // Offset: 0xB02AD4
+    // Offset: 0xDD407C
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

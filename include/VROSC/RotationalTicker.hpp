@@ -81,20 +81,12 @@ namespace VROSC {
       // Set static field: static public VROSC.RotationalTicker/VROSC.TrackedDirection CounterClockwise
       static void _set_CounterClockwise(::VROSC::RotationalTicker::TrackedDirection value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.RotationalTicker/VROSC.TrackedDirection
     #pragma pack(pop)
     static check_size<sizeof(RotationalTicker::TrackedDirection), 0 + sizeof(int)> __VROSC_RotationalTicker_TrackedDirectionSizeCheck;
     static_assert(sizeof(RotationalTicker::TrackedDirection) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.RotationalTicker/VROSC.TrackedDirection _trackedDirection
     // Size: 0x4
     // Offset: 0x40
@@ -115,7 +107,7 @@ namespace VROSC {
     ::UnityEngine::Transform* lastTrackedTransform;
     // Field size check
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
-    // [RangeAttribute] Offset: 0x67121C
+    // [RangeAttribute] Offset: 0x787470
     // private System.Single _tickDegrees
     // Size: 0x4
     // Offset: 0x58
@@ -154,31 +146,31 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.RotationalTicker/VROSC.TrackedDirection _trackedDirection
-    ::VROSC::RotationalTicker::TrackedDirection& dyn__trackedDirection();
+    [[deprecated]] ::VROSC::RotationalTicker::TrackedDirection& dyn__trackedDirection();
     // Get instance field reference: private UnityEngine.Transform _transformToTrack
-    ::UnityEngine::Transform*& dyn__transformToTrack();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__transformToTrack();
     // Get instance field reference: private UnityEngine.Transform _lastTrackedTransform
-    ::UnityEngine::Transform*& dyn__lastTrackedTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__lastTrackedTransform();
     // Get instance field reference: private System.Single _tickDegrees
-    float& dyn__tickDegrees();
+    [[deprecated]] float& dyn__tickDegrees();
     // Get instance field reference: private UnityEngine.Vector3 _rotationalAxis
-    ::UnityEngine::Vector3& dyn__rotationalAxis();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__rotationalAxis();
     // Get instance field reference: private UnityEngine.Vector3 _lastFrameLookDirection
-    ::UnityEngine::Vector3& dyn__lastFrameLookDirection();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__lastFrameLookDirection();
     // Get instance field reference: private UnityEngine.Vector3 _currentFrameLookDirection
-    ::UnityEngine::Vector3& dyn__currentFrameLookDirection();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__currentFrameLookDirection();
     // Get instance field reference: private System.Single _angleDifference
-    float& dyn__angleDifference();
+    [[deprecated]] float& dyn__angleDifference();
     // Get instance field reference: private System.Boolean _tickedLastFrame
-    bool& dyn__tickedLastFrame();
+    [[deprecated]] bool& dyn__tickedLastFrame();
     // private System.Void TickCounterClockwise()
-    // Offset: 0xB010F0
+    // Offset: 0xB3794C
     void TickCounterClockwise();
     // private System.Void TickClockwise()
-    // Offset: 0xB0110C
+    // Offset: 0xB37968
     void TickClockwise();
     // public System.Void .ctor()
-    // Offset: 0xB01128
+    // Offset: 0xB37984
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
@@ -194,7 +186,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<RotationalTicker*, creationType>()));
     }
     // protected override System.Void FilterSignal(VROSC.Signal signal)
-    // Offset: 0xB00E98
+    // Offset: 0xB376F4
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::FilterSignal(VROSC.Signal signal)
     void FilterSignal(::VROSC::Signal* signal);

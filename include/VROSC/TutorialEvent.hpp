@@ -77,12 +77,12 @@ namespace VROSC {
     static ::VROSC::TutorialEvent _get_ResetAll();
     // Set static field: static public VROSC.TutorialEvent ResetAll
     static void _set_ResetAll(::VROSC::TutorialEvent value);
-    // static field const value: static public VROSC.TutorialEvent BoardFirstOpened
-    static constexpr const int BoardFirstOpened = 6;
-    // Get static field: static public VROSC.TutorialEvent BoardFirstOpened
-    static ::VROSC::TutorialEvent _get_BoardFirstOpened();
-    // Set static field: static public VROSC.TutorialEvent BoardFirstOpened
-    static void _set_BoardFirstOpened(::VROSC::TutorialEvent value);
+    // static field const value: static public VROSC.TutorialEvent BoardOpened
+    static constexpr const int BoardOpened = 6;
+    // Get static field: static public VROSC.TutorialEvent BoardOpened
+    static ::VROSC::TutorialEvent _get_BoardOpened();
+    // Set static field: static public VROSC.TutorialEvent BoardOpened
+    static void _set_BoardOpened(::VROSC::TutorialEvent value);
     // static field const value: static public VROSC.TutorialEvent DisableDashboardButton
     static constexpr const int DisableDashboardButton = 7;
     // Get static field: static public VROSC.TutorialEvent DisableDashboardButton
@@ -311,8 +311,14 @@ namespace VROSC {
     static ::VROSC::TutorialEvent _get_BlinkTutorialPanel();
     // Set static field: static public VROSC.TutorialEvent BlinkTutorialPanel
     static void _set_BlinkTutorialPanel(::VROSC::TutorialEvent value);
+    // static field const value: static public VROSC.TutorialEvent RerecordPressed
+    static constexpr const int RerecordPressed = 45;
+    // Get static field: static public VROSC.TutorialEvent RerecordPressed
+    static ::VROSC::TutorialEvent _get_RerecordPressed();
+    // Set static field: static public VROSC.TutorialEvent RerecordPressed
+    static void _set_RerecordPressed(::VROSC::TutorialEvent value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // VROSC.TutorialEvent
   #pragma pack(pop)
   static check_size<sizeof(TutorialEvent), 0 + sizeof(int)> __VROSC_TutorialEventSizeCheck;

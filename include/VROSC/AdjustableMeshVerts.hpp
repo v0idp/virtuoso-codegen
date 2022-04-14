@@ -38,15 +38,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AdjustableMeshVerts : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AdjustableMesh _adjustableMesh
     // Size: 0x8
     // Offset: 0x10
@@ -59,16 +51,16 @@ namespace VROSC {
       return adjustableMesh;
     }
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh)
-    // Offset: 0x13681B4
+    // Offset: 0x966AF0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AdjustableMeshVerts* New_ctor(::VROSC::AdjustableMesh* adjustableMesh) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMeshVerts::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshVerts*, creationType>(adjustableMesh)));
     }
     // public System.Void SetScale(UnityEngine.Vector3 scale)
-    // Offset: 0x136A498
+    // Offset: 0x968DD8
     void SetScale(::UnityEngine::Vector3 scale);
   }; // VROSC.AdjustableMeshVerts
   #pragma pack(pop)

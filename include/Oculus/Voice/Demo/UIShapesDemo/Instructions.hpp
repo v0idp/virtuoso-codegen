@@ -113,20 +113,12 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
       // Set static field: static public Oculus.Voice.Demo.UIShapesDemo.Instructions/Oculus.Voice.Demo.UIShapesDemo.Step Ready
       static void _set_Ready(::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Oculus.Voice.Demo.UIShapesDemo.Instructions/Oculus.Voice.Demo.UIShapesDemo.Step
     #pragma pack(pop)
     static check_size<sizeof(Instructions::Step), 0 + sizeof(int)> __Oculus_Voice_Demo_UIShapesDemo_Instructions_StepSizeCheck;
     static_assert(sizeof(Instructions::Step) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.UI.Text instructionText
     // Size: 0x8
     // Offset: 0x18
@@ -147,29 +139,29 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
     // Set static field: static private readonly System.String[] steps
     static void _set_steps(::ArrayW<::StringW> value);
     // Get instance field reference: private UnityEngine.UI.Text instructionText
-    ::UnityEngine::UI::Text*& dyn_instructionText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_instructionText();
     // Get instance field reference: private Oculus.Voice.Demo.UIShapesDemo.Instructions/Oculus.Voice.Demo.UIShapesDemo.Step currentStep
-    ::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step& dyn_currentStep();
+    [[deprecated]] ::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step& dyn_currentStep();
     // Oculus.Voice.Demo.UIShapesDemo.Instructions/Oculus.Voice.Demo.UIShapesDemo.Step get_CurrentStep()
-    // Offset: 0x13833C0
+    // Offset: 0x1945F00
     ::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step get_CurrentStep();
     // System.String get_CurrentStepText()
-    // Offset: 0x13833C8
+    // Offset: 0x1945F08
     ::StringW get_CurrentStepText();
     // private System.Void OnValidate()
-    // Offset: 0x138345C
+    // Offset: 0x1945F9C
     void OnValidate();
     // private System.Void OnEnable()
-    // Offset: 0x1383464
+    // Offset: 0x1945FA4
     void OnEnable();
     // private System.Void Update()
-    // Offset: 0x1383468
+    // Offset: 0x1945FA8
     void Update();
     // private System.Void UpdateStep()
-    // Offset: 0x1383460
+    // Offset: 0x1945FA0
     void UpdateStep();
     // public System.Void .ctor()
-    // Offset: 0x138346C
+    // Offset: 0x1945FAC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -182,7 +174,7 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
       return THROW_UNLESS((::il2cpp_utils::New<Instructions*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x138347C
+    // Offset: 0x1945FBC
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

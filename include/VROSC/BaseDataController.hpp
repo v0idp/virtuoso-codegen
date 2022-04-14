@@ -50,15 +50,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::BaseDataController::$$c__DisplayClass14_0
     class $$c__DisplayClass14_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.BaseDataModel _dataModel
     // Size: 0x8
     // Offset: 0x10
@@ -87,81 +79,81 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.BaseDataModel _dataModel
-    ::VROSC::BaseDataModel*& dyn__dataModel();
+    [[deprecated]] ::VROSC::BaseDataModel*& dyn__dataModel();
     // Get instance field reference: private System.Boolean <IsLoaded>k__BackingField
-    bool& dyn_$IsLoaded$k__BackingField();
+    [[deprecated]] bool& dyn_$IsLoaded$k__BackingField();
     // Get instance field reference: private System.Boolean <IsSaved>k__BackingField
-    bool& dyn_$IsSaved$k__BackingField();
+    [[deprecated]] bool& dyn_$IsSaved$k__BackingField();
     // Get instance field reference: public System.Action OnProgressStepFinished
-    ::System::Action*& dyn_OnProgressStepFinished();
+    [[deprecated]] ::System::Action*& dyn_OnProgressStepFinished();
     // public System.Type get_ModelType()
-    // Offset: 0x1374F9C
+    // Offset: 0x973F00
     ::System::Type* get_ModelType();
     // public System.Boolean get_IsLoaded()
-    // Offset: 0x1374FB8
+    // Offset: 0x973F1C
     bool get_IsLoaded();
     // protected System.Void set_IsLoaded(System.Boolean value)
-    // Offset: 0x1374FC0
+    // Offset: 0x973F24
     void set_IsLoaded(bool value);
     // public System.Boolean get_IsSaved()
-    // Offset: 0x1374FCC
+    // Offset: 0x973F30
     bool get_IsSaved();
     // protected System.Void set_IsSaved(System.Boolean value)
-    // Offset: 0x1374FD4
+    // Offset: 0x973F38
     void set_IsSaved(bool value);
     // public System.Boolean get_HasChanged()
-    // Offset: 0x1374FE0
+    // Offset: 0x973F44
     bool get_HasChanged();
     // public System.Void LoadLocalData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1375004
+    // Offset: 0x973F68
     void LoadLocalData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void SaveLocalData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x137512C
+    // Offset: 0x974090
     void SaveLocalData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13751FC
+    // Offset: 0x974160
     void LoadCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x137523C
+    // Offset: 0x9741A0
     void SaveCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void LoadLocalData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x137527C
+    // Offset: 0x9741E0
     void LoadLocalData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void SaveLocalData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13752BC
+    // Offset: 0x974220
     void SaveLocalData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void LoadCloudData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x137537C
+    // Offset: 0x9742E0
     void LoadCloudData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void SaveCloudData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13753BC
+    // Offset: 0x974320
     void SaveCloudData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.String GetModelJson()
-    // Offset: 0x13751DC
+    // Offset: 0x974140
     ::StringW GetModelJson();
     // public System.Void Changed()
-    // Offset: 0x13753FC
+    // Offset: 0x974360
     void Changed();
     // protected System.Void SetChangeFlags(VROSC.ChangeFlags changeFlags)
-    // Offset: 0x1375420
+    // Offset: 0x974384
     void SetChangeFlags(::VROSC::ChangeFlags changeFlags);
     // public System.Void UpdateSaveVersion()
-    // Offset: 0x1375444
+    // Offset: 0x9743A8
     void UpdateSaveVersion();
     // public System.Int32 GetLoadSteps()
-    // Offset: 0x137547C
+    // Offset: 0x9743E0
     int GetLoadSteps();
     // public System.Int32 GetSaveSteps()
-    // Offset: 0x1375484
+    // Offset: 0x9743E8
     int GetSaveSteps();
     // public System.Void LoadData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x137548C
+    // Offset: 0x9743F0
     void LoadData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void SaveData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13754E0
+    // Offset: 0x974444
     void SaveData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void .ctor()
-    // Offset: 0x1375534
+    // Offset: 0x974498
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

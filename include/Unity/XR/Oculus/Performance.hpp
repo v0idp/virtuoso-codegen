@@ -28,22 +28,22 @@ namespace Unity::XR::Oculus {
     // Set static field: static private System.Single[] cachedDisplayAvailableFrequencies
     static void _set_cachedDisplayAvailableFrequencies(::ArrayW<float> value);
     // static private System.Void .cctor()
-    // Offset: 0x12DB970
+    // Offset: 0x18DDBE4
     static void _cctor();
     // static public System.Boolean TrySetCPULevel(System.Int32 level)
-    // Offset: 0x12DB6D0
+    // Offset: 0x18DD944
     static bool TrySetCPULevel(int level);
     // static public System.Boolean TrySetGPULevel(System.Int32 level)
-    // Offset: 0x12DB6EC
+    // Offset: 0x18DD960
     static bool TrySetGPULevel(int level);
     // static public System.Boolean TryGetAvailableDisplayRefreshRates(out System.Single[] refreshRates)
-    // Offset: 0x12DB708
+    // Offset: 0x18DD97C
     static bool TryGetAvailableDisplayRefreshRates(ByRef<::ArrayW<float>> refreshRates);
     // static public System.Boolean TrySetDisplayRefreshRate(System.Single refreshRate)
-    // Offset: 0x12DB968
+    // Offset: 0x18DDBDC
     static bool TrySetDisplayRefreshRate(float refreshRate);
     // static public System.Boolean TryGetDisplayRefreshRate(out System.Single refreshRate)
-    // Offset: 0x12DB96C
+    // Offset: 0x18DDBE0
     static bool TryGetDisplayRefreshRate(ByRef<float> refreshRate);
   }; // Unity.XR.Oculus.Performance
   #pragma pack(pop)

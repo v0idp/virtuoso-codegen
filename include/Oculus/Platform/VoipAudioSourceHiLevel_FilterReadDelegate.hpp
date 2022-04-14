@@ -26,15 +26,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoipAudioSourceHiLevel::FilterReadDelegate : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Oculus.Platform.VoipAudioSourceHiLevel parent
     // Size: 0x8
     // Offset: 0x18
@@ -51,17 +43,17 @@ namespace Oculus::Platform {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public Oculus.Platform.VoipAudioSourceHiLevel parent
-    ::Oculus::Platform::VoipAudioSourceHiLevel*& dyn_parent();
+    [[deprecated]] ::Oculus::Platform::VoipAudioSourceHiLevel*& dyn_parent();
     // Get instance field reference: private System.Single[] scratchBuffer
-    ::ArrayW<float>& dyn_scratchBuffer();
+    [[deprecated]] ::ArrayW<float>& dyn_scratchBuffer();
     // private System.Void Awake()
-    // Offset: 0x1156980
+    // Offset: 0x172387C
     void Awake();
     // private System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x1156A4C
+    // Offset: 0x1723948
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
     // public System.Void .ctor()
-    // Offset: 0x1156F60
+    // Offset: 0x1723E5C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

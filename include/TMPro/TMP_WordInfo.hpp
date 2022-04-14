@@ -64,15 +64,15 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public TMPro.TMP_Text textComponent
-    ::TMPro::TMP_Text*& dyn_textComponent();
+    [[deprecated]] ::TMPro::TMP_Text*& dyn_textComponent();
     // Get instance field reference: public System.Int32 firstCharacterIndex
-    int& dyn_firstCharacterIndex();
+    [[deprecated]] int& dyn_firstCharacterIndex();
     // Get instance field reference: public System.Int32 lastCharacterIndex
-    int& dyn_lastCharacterIndex();
+    [[deprecated]] int& dyn_lastCharacterIndex();
     // Get instance field reference: public System.Int32 characterCount
-    int& dyn_characterCount();
+    [[deprecated]] int& dyn_characterCount();
     // public System.String GetWord()
-    // Offset: 0xAD0B20
+    // Offset: 0xD15974
     ::StringW GetWord();
   }; // TMPro.TMP_WordInfo
   #pragma pack(pop)

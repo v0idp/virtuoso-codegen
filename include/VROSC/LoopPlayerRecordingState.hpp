@@ -52,15 +52,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlayerRecordingState : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.UI.UIColorGetter _sliderColor
     // Size: 0x8
     // Offset: 0x18
@@ -107,48 +99,48 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.UI.UIColorGetter _sliderColor
-    ::VROSC::UI::UIColorGetter*& dyn__sliderColor();
+    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__sliderColor();
     // Get instance field reference: protected VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: protected VROSC.MinMaxFloat _uvRange
-    ::VROSC::MinMaxFloat*& dyn__uvRange();
+    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__uvRange();
     // Get instance field reference: private TMPro.TextMeshPro _recordingLabel
-    ::TMPro::TextMeshPro*& dyn__recordingLabel();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__recordingLabel();
     // Get instance field reference: private VROSC.UIButton _cancelButton
-    ::VROSC::UIButton*& dyn__cancelButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__cancelButton();
     // Get instance field reference: private VROSC.UIButton _restartButton
-    ::VROSC::UIButton*& dyn__restartButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__restartButton();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // protected System.Void Awake()
-    // Offset: 0x908630
+    // Offset: 0x19BE5B0
     void Awake();
     // private System.Void RestartRecordingButtonPressed()
-    // Offset: 0x908944
+    // Offset: 0x19BE8C4
     void RestartRecordingButtonPressed();
     // private System.Void CancelRecordingButtonPressed()
-    // Offset: 0x90899C
+    // Offset: 0x19BE924
     void CancelRecordingButtonPressed();
     // public System.Void Setup(VROSC.LoopStation loopStation, System.Boolean firstLoop)
-    // Offset: 0x9089B8
+    // Offset: 0x19BE940
     void Setup(::VROSC::LoopStation* loopStation, bool firstLoop);
     // public System.Void SetActive(System.Boolean active)
-    // Offset: 0x908A18
+    // Offset: 0x19BE9A0
     void SetActive(bool active);
     // private System.Void SetColor()
-    // Offset: 0x908768
+    // Offset: 0x19BE6E8
     void SetColor();
     // private System.Void SetRecordProgressValue(System.Single value)
-    // Offset: 0x908868
+    // Offset: 0x19BE7E8
     void SetRecordProgressValue(float value);
     // private System.Void Update()
-    // Offset: 0x908A4C
+    // Offset: 0x19BE9D4
     void Update();
     // public System.Void SetRecordingText(System.String recordingtext)
-    // Offset: 0x908A74
+    // Offset: 0x19BE9FC
     void SetRecordingText(::StringW recordingtext);
     // public System.Void .ctor()
-    // Offset: 0x908A98
+    // Offset: 0x19BEA20
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

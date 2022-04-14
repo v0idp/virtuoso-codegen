@@ -60,7 +60,7 @@ namespace GlobalNamespace {
     // Set static field: static public System.UInt32 FrameHeaderMagicIdentifier
     static void _set_FrameHeaderMagicIdentifier(uint value);
     // public System.Void .ctor()
-    // Offset: 0xB246E0
+    // Offset: 0xE24E60
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -39,15 +39,7 @@ namespace Mono::Security::X509 {
   // [TokenAttribute] Offset: FFFFFFFF
   class X509Extension : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected System.String extnOid
     // Size: 0x8
     // Offset: 0x10
@@ -70,36 +62,36 @@ namespace Mono::Security::X509 {
     static_assert(sizeof(::Mono::Security::ASN1*) == 0x8);
     public:
     // Get instance field reference: protected System.String extnOid
-    ::StringW& dyn_extnOid();
+    [[deprecated]] ::StringW& dyn_extnOid();
     // Get instance field reference: protected System.Boolean extnCritical
-    bool& dyn_extnCritical();
+    [[deprecated]] bool& dyn_extnCritical();
     // Get instance field reference: protected Mono.Security.ASN1 extnValue
-    ::Mono::Security::ASN1*& dyn_extnValue();
+    [[deprecated]] ::Mono::Security::ASN1*& dyn_extnValue();
     // public System.Void .ctor(Mono.Security.ASN1 asn1)
-    // Offset: 0x10F6EFC
+    // Offset: 0x1648DB8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509Extension* New_ctor(::Mono::Security::ASN1* asn1) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::X509Extension::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509Extension*, creationType>(asn1)));
     }
     // protected System.Void Decode()
-    // Offset: 0x10F71C8
+    // Offset: 0x1649084
     void Decode();
     // private System.Void WriteLine(System.Text.StringBuilder sb, System.Int32 n, System.Int32 pos)
-    // Offset: 0x10F7340
+    // Offset: 0x16491FC
     void WriteLine(::System::Text::StringBuilder* sb, int n, int pos);
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0x10F71CC
+    // Offset: 0x1649088
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
     // public override System.Int32 GetHashCode()
-    // Offset: 0x10F7320
+    // Offset: 0x16491DC
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();
     // public override System.String ToString()
-    // Offset: 0x10F758C
+    // Offset: 0x1649448
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();

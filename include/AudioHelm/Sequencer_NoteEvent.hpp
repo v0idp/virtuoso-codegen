@@ -32,7 +32,7 @@ namespace AudioHelm {
   class Sequencer::NoteEvent : public ::UnityEngine::Events::UnityEvent_1<::AudioHelm::Note*> {
     public:
     // public System.Void .ctor()
-    // Offset: 0x134A008
+    // Offset: 0x8D4F80
     // Implemented from: UnityEngine.Events.UnityEvent`1
     // Base method: System.Void UnityEvent_1::.ctor()
     // Base method: System.Void UnityEventBase::.ctor()

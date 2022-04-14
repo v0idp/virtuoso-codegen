@@ -74,15 +74,7 @@ namespace VROSC {
     class $$c__DisplayClass10_0;
     // Nested type: ::VROSC::CommunitySessionsDataController::$$c__DisplayClass11_0
     class $$c__DisplayClass11_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Boolean _isWaitingForData
     // Size: 0x1
     // Offset: 0x30
@@ -93,36 +85,36 @@ namespace VROSC {
     // Deleting conversion operator: operator ::VROSC::Session*
     constexpr operator ::VROSC::Session*() const noexcept = delete;
     // Get instance field reference: private System.Boolean _isWaitingForData
-    bool& dyn__isWaitingForData();
+    [[deprecated]] bool& dyn__isWaitingForData();
     // public System.Void SaveSessionToCloud(System.String sessionId, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1334EE8
+    // Offset: 0x949B38
     void SaveSessionToCloud(::StringW sessionId, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddSessionUpVote(System.String sessionId, System.String userId, System.String userName, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1335740
+    // Offset: 0x94A37C
     void AddSessionUpVote(::StringW sessionId, ::StringW userId, ::StringW userName, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void RemoveSessionUpVote(System.String sessionId, System.String upVoteId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1335A1C
+    // Offset: 0x94A658
     void RemoveSessionUpVote(::StringW sessionId, ::StringW upVoteId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddSessionFavorite(System.String sessionId, System.String userId, System.String userName, System.Action`2<System.String,VROSC.Session> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1335BD0
+    // Offset: 0x94A80C
     void AddSessionFavorite(::StringW sessionId, ::StringW userId, ::StringW userName, ::System::Action_2<::StringW, ::VROSC::Session*>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void RemoveSessionFavorite(System.String sessionId, System.String favoriteId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1335EAC
+    // Offset: 0x94AAE8
     void RemoveSessionFavorite(::StringW sessionId, ::StringW favoriteId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddSessionDownload(System.String sessionId, System.String userId, System.String userName, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1336034
+    // Offset: 0x94AC70
     void AddSessionDownload(::StringW sessionId, ::StringW userId, ::StringW userName, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddSessionPreviewPlay(System.String sessionId, System.String userId, System.String userName, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1336310
+    // Offset: 0x94AF4C
     void AddSessionPreviewPlay(::StringW sessionId, ::StringW userId, ::StringW userName, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public System.Void AddFavoriteSession(VROSC.Session session)
-    // Offset: 0x13365EC
+    // Offset: 0x94B228
     void AddFavoriteSession(::VROSC::Session* session);
     // public System.Void RemoveFavoriteSession(System.String sessionId)
-    // Offset: 0x1336714
+    // Offset: 0x94B350
     void RemoveFavoriteSession(::StringW sessionId);
     // public System.Void .ctor()
-    // Offset: 0x1334C0C
+    // Offset: 0x949860
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Void SessionsDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
@@ -133,42 +125,42 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<CommunitySessionsDataController*, creationType>()));
     }
     // public override System.Void LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1334CE8
+    // Offset: 0x94993C
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::LoadCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void LoadCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Void SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x1334EE4
+    // Offset: 0x949B34
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::SaveCloudData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void SaveCloudData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Void RemoveSession(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
-    // Offset: 0x13355DC
+    // Offset: 0x94A218
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Void SessionsDataController::RemoveSession(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     void RemoveSession(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
     // public override System.Collections.Generic.List`1<VROSC.SessionUIData> GetSessionsUIData()
-    // Offset: 0x1336718
+    // Offset: 0x94B354
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Collections.Generic.List`1<VROSC.SessionUIData> SessionsDataController::GetSessionsUIData()
     ::System::Collections::Generic::List_1<::VROSC::SessionUIData*>* GetSessionsUIData();
     // public override VROSC.SessionUIData GetSessionUIData(System.String sessionId)
-    // Offset: 0x13369A8
+    // Offset: 0x94B5E4
     // Implemented from: VROSC.SessionsDataController
     // Base method: VROSC.SessionUIData SessionsDataController::GetSessionUIData(System.String sessionId)
     ::VROSC::SessionUIData* GetSessionUIData(::StringW sessionId);
     // protected override System.String GenerateNewSessionId()
-    // Offset: 0x1336B4C
+    // Offset: 0x94B788
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.String SessionsDataController::GenerateNewSessionId()
     ::StringW GenerateNewSessionId();
     // protected override System.Void UserLoggedOut()
-    // Offset: 0x1336BA4
+    // Offset: 0x94B7E0
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Void SessionsDataController::UserLoggedOut()
     void UserLoggedOut();
     // protected override VROSC.Session GetSession(System.String sessionId)
-    // Offset: 0x1336BFC
+    // Offset: 0x94B838
     // Implemented from: VROSC.SessionsDataController
     // Base method: VROSC.Session SessionsDataController::GetSession(System.String sessionId)
     ::VROSC::Session* GetSession(::StringW sessionId);

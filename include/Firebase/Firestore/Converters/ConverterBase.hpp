@@ -61,15 +61,7 @@ namespace Firebase::Firestore::Converters {
   // [TokenAttribute] Offset: FFFFFFFF
   class ConverterBase : public ::Il2CppObject/*, public ::Firebase::Firestore::Converters::IFirestoreInternalConverter*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected readonly System.Type TargetType
     // Size: 0x8
     // Offset: 0x10
@@ -86,64 +78,64 @@ namespace Firebase::Firestore::Converters {
       return TargetType;
     }
     // Get instance field reference: protected readonly System.Type TargetType
-    ::System::Type*& dyn_TargetType();
+    [[deprecated]] ::System::Type*& dyn_TargetType();
     // protected System.Void .ctor(System.Type targetType)
-    // Offset: 0xC28FEC
+    // Offset: 0xD4AD1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ConverterBase* New_ctor(::System::Type* targetType) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Converters::ConverterBase::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ConverterBase*, creationType>(targetType)));
     }
     // public System.Object DeserializeMap(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy mapValue)
-    // Offset: 0xC2A9D8
+    // Offset: 0xD4C860
     ::Il2CppObject* DeserializeMap(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::FieldValueProxy* mapValue);
     // public System.Object DeserializeValue(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy value)
-    // Offset: 0xC2AA3C
+    // Offset: 0xD4C8C4
     ::Il2CppObject* DeserializeValue(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::FieldValueProxy* value);
     // public Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
     // public System.Void SerializeMap(Firebase.Firestore.SerializationContext context, System.Object value, System.Collections.Generic.IDictionary`2<System.String,Firebase.Firestore.FieldValueProxy> map)
-    // Offset: 0xC2B3BC
+    // Offset: 0xD4D20C
     void SerializeMap(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value, ::System::Collections::Generic::IDictionary_2<::StringW, ::Firebase::Firestore::FieldValueProxy*>* map);
     // protected System.Object DeserializeArray(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy arrayValue)
-    // Offset: 0xC2B420
+    // Offset: 0xD4D270
     ::Il2CppObject* DeserializeArray(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::FieldValueProxy* arrayValue);
     // protected System.Object DeserializeBoolean(Firebase.Firestore.DeserializationContext context, System.Boolean value)
-    // Offset: 0xC2B484
+    // Offset: 0xD4D2D4
     ::Il2CppObject* DeserializeBoolean(::Firebase::Firestore::DeserializationContext* context, bool value);
     // protected System.Object DeserializeBytes(Firebase.Firestore.DeserializationContext context, System.Byte[] value)
-    // Offset: 0xC2B4E8
+    // Offset: 0xD4D338
     ::Il2CppObject* DeserializeBytes(::Firebase::Firestore::DeserializationContext* context, ::ArrayW<uint8_t> value);
     // protected System.Object DeserializeDouble(Firebase.Firestore.DeserializationContext context, System.Double value)
-    // Offset: 0xC2B54C
+    // Offset: 0xD4D39C
     ::Il2CppObject* DeserializeDouble(::Firebase::Firestore::DeserializationContext* context, double value);
     // protected System.Object DeserializeGeoPoint(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.GeoPoint value)
-    // Offset: 0xC2B5B0
+    // Offset: 0xD4D400
     ::Il2CppObject* DeserializeGeoPoint(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::GeoPoint value);
     // protected System.Object DeserializeInteger(Firebase.Firestore.DeserializationContext context, System.Int64 value)
-    // Offset: 0xC2B614
+    // Offset: 0xD4D464
     ::Il2CppObject* DeserializeInteger(::Firebase::Firestore::DeserializationContext* context, int64_t value);
     // protected System.Object DeserializeReference(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.DocumentReference value)
-    // Offset: 0xC2B678
+    // Offset: 0xD4D4C8
     ::Il2CppObject* DeserializeReference(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::DocumentReference* value);
     // protected System.Object DeserializeString(Firebase.Firestore.DeserializationContext context, System.String value)
-    // Offset: 0xC2B6DC
+    // Offset: 0xD4D52C
     ::Il2CppObject* DeserializeString(::Firebase::Firestore::DeserializationContext* context, ::StringW value);
     // protected System.Object DeserializeTimestamp(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.Timestamp value)
-    // Offset: 0xC2B740
+    // Offset: 0xD4D590
     ::Il2CppObject* DeserializeTimestamp(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::Timestamp value);
     // static Firebase.Firestore.FieldValueProxy ConvertToProxyMap(System.Collections.Generic.IDictionary`2<System.String,Firebase.Firestore.FieldValueProxy> map)
-    // Offset: 0xC2B7A4
+    // Offset: 0xD4D5F4
     static ::Firebase::Firestore::FieldValueProxy* ConvertToProxyMap(::System::Collections::Generic::IDictionary_2<::StringW, ::Firebase::Firestore::FieldValueProxy*>* map);
     // static Firebase.Firestore.FieldValueProxy ConvertToProxyArray(System.Collections.Generic.IList`1<Firebase.Firestore.FieldValueProxy> list)
-    // Offset: 0xC2BD00
+    // Offset: 0xD4DB38
     static ::Firebase::Firestore::FieldValueProxy* ConvertToProxyArray(::System::Collections::Generic::IList_1<::Firebase::Firestore::FieldValueProxy*>* list);
     // static System.Byte[] ConvertFromProxyBlob(Firebase.Firestore.FieldValueProxy internalValue)
-    // Offset: 0xC2ADA4
+    // Offset: 0xD4CC24
     static ::ArrayW<uint8_t> ConvertFromProxyBlob(::Firebase::Firestore::FieldValueProxy* internalValue);
     // static Firebase.Firestore.FieldValueProxy ConvertToProxyBlob(System.Byte[] value)
-    // Offset: 0xC290A8
+    // Offset: 0xD4ADD8
     static ::Firebase::Firestore::FieldValueProxy* ConvertToProxyBlob(::ArrayW<uint8_t> value);
   }; // Firebase.Firestore.Converters.ConverterBase
   #pragma pack(pop)

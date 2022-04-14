@@ -14,6 +14,13 @@
 #include "beatsaber-hook/shared/utils/typedefs-array.hpp"
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
+// Begin forward declares
+// Forward declaring namespace: System::Text
+namespace System::Text {
+  // Forward declaring type: Encoding
+  class Encoding;
+}
+// Completed forward declares
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 NEED_NO_BOX(::System::IO::TextWriter::NullTextWriter);
 DEFINE_IL2CPP_ARG_TYPE(::System::IO::TextWriter::NullTextWriter*, "System.IO", "TextWriter/NullTextWriter");
@@ -25,8 +32,13 @@ namespace System::IO {
   // [TokenAttribute] Offset: FFFFFFFF
   class TextWriter::NullTextWriter : public ::System::IO::TextWriter {
     public:
+    // public override System.Text.Encoding get_Encoding()
+    // Offset: 0xE603D4
+    // Implemented from: System.IO.TextWriter
+    // Base method: System.Text.Encoding TextWriter::get_Encoding()
+    ::System::Text::Encoding* get_Encoding();
     // System.Void .ctor()
-    // Offset: 0x10893B8
+    // Offset: 0xE60330
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::.ctor()
     // Base method: System.Void MarshalByRefObject::.ctor()
@@ -37,22 +49,22 @@ namespace System::IO {
       return THROW_UNLESS((::il2cpp_utils::New<TextWriter::NullTextWriter*, creationType>()));
     }
     // public override System.Void Write(System.Char[] buffer, System.Int32 index, System.Int32 count)
-    // Offset: 0x108945C
+    // Offset: 0xE603DC
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Write(System.Char[] buffer, System.Int32 index, System.Int32 count)
     void Write(::ArrayW<::Il2CppChar> buffer, int index, int count);
     // public override System.Void Write(System.String value)
-    // Offset: 0x1089460
+    // Offset: 0xE603E0
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::Write(System.String value)
     void Write(::StringW value);
     // public override System.Void WriteLine()
-    // Offset: 0x1089464
+    // Offset: 0xE603E4
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::WriteLine()
     void WriteLine();
     // public override System.Void WriteLine(System.String value)
-    // Offset: 0x1089468
+    // Offset: 0xE603E8
     // Implemented from: System.IO.TextWriter
     // Base method: System.Void TextWriter::WriteLine(System.String value)
     void WriteLine(::StringW value);
@@ -60,6 +72,14 @@ namespace System::IO {
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::IO::TextWriter::NullTextWriter::get_Encoding
+// Il2CppName: get_Encoding
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Text::Encoding* (System::IO::TextWriter::NullTextWriter::*)()>(&System::IO::TextWriter::NullTextWriter::get_Encoding)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::IO::TextWriter::NullTextWriter*), "get_Encoding", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::IO::TextWriter::NullTextWriter::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!

@@ -38,15 +38,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CallbackHandler::FirestoreDocumentReadCallback : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>> Action
     // Size: 0x8
     // Offset: 0x10
@@ -61,11 +53,11 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: public System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>> Action
-    ::System::Action_1<::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>*& dyn_Action();
+    [[deprecated]] ::System::Action_1<::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>*& dyn_Action();
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.String,System.Object> Data
-    ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*& dyn_Data();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*& dyn_Data();
     // public System.Void .ctor()
-    // Offset: 0x135CE60
+    // Offset: 0x9593C8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

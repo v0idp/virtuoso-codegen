@@ -41,35 +41,35 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A4504
+    // [DescriptionAttribute] Offset: 0x6B86B8
     // static field const value: static public Oculus.Platform.RoomType Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.RoomType Unknown
     static ::Oculus::Platform::RoomType _get_Unknown();
     // Set static field: static public Oculus.Platform.RoomType Unknown
     static void _set_Unknown(::Oculus::Platform::RoomType value);
-    // [DescriptionAttribute] Offset: 0x5A453C
+    // [DescriptionAttribute] Offset: 0x6B86F0
     // static field const value: static public Oculus.Platform.RoomType Matchmaking
     static constexpr const int Matchmaking = 1;
     // Get static field: static public Oculus.Platform.RoomType Matchmaking
     static ::Oculus::Platform::RoomType _get_Matchmaking();
     // Set static field: static public Oculus.Platform.RoomType Matchmaking
     static void _set_Matchmaking(::Oculus::Platform::RoomType value);
-    // [DescriptionAttribute] Offset: 0x5A4574
+    // [DescriptionAttribute] Offset: 0x6B8728
     // static field const value: static public Oculus.Platform.RoomType Moderated
     static constexpr const int Moderated = 2;
     // Get static field: static public Oculus.Platform.RoomType Moderated
     static ::Oculus::Platform::RoomType _get_Moderated();
     // Set static field: static public Oculus.Platform.RoomType Moderated
     static void _set_Moderated(::Oculus::Platform::RoomType value);
-    // [DescriptionAttribute] Offset: 0x5A45AC
+    // [DescriptionAttribute] Offset: 0x6B8760
     // static field const value: static public Oculus.Platform.RoomType Private
     static constexpr const int Private = 3;
     // Get static field: static public Oculus.Platform.RoomType Private
     static ::Oculus::Platform::RoomType _get_Private();
     // Set static field: static public Oculus.Platform.RoomType Private
     static void _set_Private(::Oculus::Platform::RoomType value);
-    // [DescriptionAttribute] Offset: 0x5A45E4
+    // [DescriptionAttribute] Offset: 0x6B8798
     // static field const value: static public Oculus.Platform.RoomType Solo
     static constexpr const int Solo = 4;
     // Get static field: static public Oculus.Platform.RoomType Solo
@@ -77,7 +77,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.RoomType Solo
     static void _set_Solo(::Oculus::Platform::RoomType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.RoomType
   #pragma pack(pop)
   static check_size<sizeof(RoomType), 0 + sizeof(int)> __Oculus_Platform_RoomTypeSizeCheck;

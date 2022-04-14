@@ -32,15 +32,7 @@ namespace NatSuite::Devices {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class MixerDevice::$$c__DisplayClass10_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public NatSuite.Devices.MixerDevice <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -61,19 +53,19 @@ namespace NatSuite::Devices {
     static_assert(sizeof(::NatSuite::Devices::SampleBufferDelegate*) == 0x8);
     public:
     // Get instance field reference: public NatSuite.Devices.MixerDevice <>4__this
-    ::NatSuite::Devices::MixerDevice*& dyn_$$4__this();
+    [[deprecated]] ::NatSuite::Devices::MixerDevice*& dyn_$$4__this();
     // Get instance field reference: public System.Single[] copyBuffer
-    ::ArrayW<float>& dyn_copyBuffer();
+    [[deprecated]] ::ArrayW<float>& dyn_copyBuffer();
     // Get instance field reference: public NatSuite.Devices.SampleBufferDelegate delegate
-    ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
+    [[deprecated]] ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
     // System.Void <StartRunning>b__0(System.Single[] sampleBuffer, System.Int64 timestamp)
-    // Offset: 0x13DC780
+    // Offset: 0x196449C
     void $StartRunning$b__0(::ArrayW<float> sampleBuffer, int64_t timestamp);
     // System.Void <StartRunning>b__1(System.Single[] sampleBuffer, System.Int64 timestamp)
-    // Offset: 0x13DC920
+    // Offset: 0x196463C
     void $StartRunning$b__1(::ArrayW<float> sampleBuffer, int64_t timestamp);
     // public System.Void .ctor()
-    // Offset: 0x13DC778
+    // Offset: 0x1964494
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

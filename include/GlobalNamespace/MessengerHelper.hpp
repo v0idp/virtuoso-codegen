@@ -29,13 +29,13 @@ namespace GlobalNamespace {
   class MessengerHelper : public ::UnityEngine::MonoBehaviour {
     public:
     // private System.Void Awake()
-    // Offset: 0x8AE548
+    // Offset: 0xAC1C50
     void Awake();
     // public System.Void OnDisable()
-    // Offset: 0x8AE5C0
+    // Offset: 0xAC1CC8
     void OnDisable();
     // public System.Void .ctor()
-    // Offset: 0x8AE61C
+    // Offset: 0xAC1D24
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

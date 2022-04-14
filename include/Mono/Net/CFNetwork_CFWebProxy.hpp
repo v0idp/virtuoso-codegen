@@ -47,15 +47,7 @@ namespace Mono::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class CFNetwork::CFWebProxy : public ::Il2CppObject/*, public ::System::Net::IWebProxy*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.ICredentials credentials
     // Size: 0x8
     // Offset: 0x10
@@ -74,32 +66,32 @@ namespace Mono::Net {
       return *reinterpret_cast<::System::Net::IWebProxy*>(this);
     }
     // Get instance field reference: private System.Net.ICredentials credentials
-    ::System::Net::ICredentials*& dyn_credentials();
+    [[deprecated]] ::System::Net::ICredentials*& dyn_credentials();
     // Get instance field reference: private System.Boolean userSpecified
-    bool& dyn_userSpecified();
+    [[deprecated]] bool& dyn_userSpecified();
     // public System.Net.ICredentials get_Credentials()
-    // Offset: 0x8D9694
+    // Offset: 0x9F440C
     ::System::Net::ICredentials* get_Credentials();
     // static private System.Uri GetProxyUri(Mono.Net.CFProxy proxy, out System.Net.NetworkCredential credentials)
-    // Offset: 0x8D969C
+    // Offset: 0x9F4414
     static ::System::Uri* GetProxyUri(::Mono::Net::CFProxy* proxy, ByRef<::System::Net::NetworkCredential*> credentials);
     // static private System.Uri GetProxyUriFromScript(System.IntPtr script, System.Uri targetUri, out System.Net.NetworkCredential credentials)
-    // Offset: 0x8D9880
+    // Offset: 0x9F45F8
     static ::System::Uri* GetProxyUriFromScript(::System::IntPtr script, ::System::Uri* targetUri, ByRef<::System::Net::NetworkCredential*> credentials);
     // static private System.Uri ExecuteProxyAutoConfigurationURL(System.IntPtr proxyAutoConfigURL, System.Uri targetUri, out System.Net.NetworkCredential credentials)
-    // Offset: 0x8D99D0
+    // Offset: 0x9F4748
     static ::System::Uri* ExecuteProxyAutoConfigurationURL(::System::IntPtr proxyAutoConfigURL, ::System::Uri* targetUri, ByRef<::System::Net::NetworkCredential*> credentials);
     // static private System.Uri SelectProxy(Mono.Net.CFProxy[] proxies, System.Uri targetUri, out System.Net.NetworkCredential credentials)
-    // Offset: 0x8D9904
+    // Offset: 0x9F467C
     static ::System::Uri* SelectProxy(::ArrayW<::Mono::Net::CFProxy*> proxies, ::System::Uri* targetUri, ByRef<::System::Net::NetworkCredential*> credentials);
     // public System.Uri GetProxy(System.Uri targetUri)
-    // Offset: 0x8D9A54
+    // Offset: 0x9F47CC
     ::System::Uri* GetProxy(::System::Uri* targetUri);
     // public System.Boolean IsBypassed(System.Uri targetUri)
-    // Offset: 0x8D9DC0
+    // Offset: 0x9F4B38
     bool IsBypassed(::System::Uri* targetUri);
     // public System.Void .ctor()
-    // Offset: 0x8D968C
+    // Offset: 0x9F4404
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

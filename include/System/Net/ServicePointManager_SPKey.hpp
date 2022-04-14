@@ -30,15 +30,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class ServicePointManager::SPKey : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Uri uri
     // Size: 0x8
     // Offset: 0x10
@@ -59,28 +51,28 @@ namespace System::Net {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Uri uri
-    ::System::Uri*& dyn_uri();
+    [[deprecated]] ::System::Uri*& dyn_uri();
     // Get instance field reference: private System.Uri proxy
-    ::System::Uri*& dyn_proxy();
+    [[deprecated]] ::System::Uri*& dyn_proxy();
     // Get instance field reference: private System.Boolean use_connect
-    bool& dyn_use_connect();
+    [[deprecated]] bool& dyn_use_connect();
     // public System.Boolean get_UsesProxy()
-    // Offset: 0x8E144C
+    // Offset: 0x9FDF10
     bool get_UsesProxy();
     // public System.Void .ctor(System.Uri uri, System.Uri proxy, System.Boolean use_connect)
-    // Offset: 0x8E1408
+    // Offset: 0x9FDECC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ServicePointManager::SPKey* New_ctor(::System::Uri* uri, ::System::Uri* proxy, bool use_connect) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::ServicePointManager::SPKey::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ServicePointManager::SPKey*, creationType>(uri, proxy, use_connect)));
     }
     // public override System.Int32 GetHashCode()
-    // Offset: 0x8E14B8
+    // Offset: 0x9FDF7C
     // Implemented from: System.Object
     // Base method: System.Int32 Object::GetHashCode()
     int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0x8E1598
+    // Offset: 0x9FE05C
     // Implemented from: System.Object
     // Base method: System.Boolean Object::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);

@@ -61,26 +61,26 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IFormattable*>(this);
     }
     // Get instance field reference: private UnityEngine.Vector3 m_Origin
-    ::UnityEngine::Vector3& dyn_m_Origin();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Origin();
     // Get instance field reference: private UnityEngine.Vector3 m_Direction
-    ::UnityEngine::Vector3& dyn_m_Direction();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Direction();
     // public UnityEngine.Vector3 get_origin()
-    // Offset: 0x9CD2D4
+    // Offset: 0xBC207C
     ::UnityEngine::Vector3 get_origin();
     // public UnityEngine.Vector3 get_direction()
-    // Offset: 0x9CD2C8
+    // Offset: 0xBC2070
     ::UnityEngine::Vector3 get_direction();
     // public System.Void .ctor(UnityEngine.Vector3 origin, UnityEngine.Vector3 direction)
-    // Offset: 0x9D47D4
+    // Offset: 0xBC957C
     // ABORTED: conflicts with another method.  Ray(::UnityEngine::Vector3 origin, ::UnityEngine::Vector3 direction);
     // public UnityEngine.Vector3 GetPoint(System.Single distance)
-    // Offset: 0x9D481C
+    // Offset: 0xBC95C4
     ::UnityEngine::Vector3 GetPoint(float distance);
     // public System.String ToString(System.String format, System.IFormatProvider formatProvider)
-    // Offset: 0x9D48CC
+    // Offset: 0xBC9674
     ::StringW ToString(::StringW format, ::System::IFormatProvider* formatProvider);
     // public override System.String ToString()
-    // Offset: 0x9D4844
+    // Offset: 0xBC95EC
     // Implemented from: System.ValueType
     // Base method: System.String ValueType::ToString()
     ::StringW ToString();

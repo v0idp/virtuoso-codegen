@@ -30,16 +30,16 @@ namespace VROSC {
   class MushroomColors : public ::UnityEngine::MonoBehaviour {
     public:
     // private System.Void OnEnable()
-    // Offset: 0xA08D68
+    // Offset: 0xACDC44
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0xA08E24
+    // Offset: 0xACDD00
     void OnDisable();
     // private System.Void Clear()
-    // Offset: 0xA08D6C
+    // Offset: 0xACDC48
     void Clear();
     // public System.Void .ctor()
-    // Offset: 0xA08E28
+    // Offset: 0xACDD04
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

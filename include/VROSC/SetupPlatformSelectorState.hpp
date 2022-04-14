@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SetupPlatformSelectorState : public ::Il2CppObject/*, public ::VROSC::IState*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.PlatformSelector _platformSelector
     // Size: 0x8
     // Offset: 0x10
@@ -62,25 +54,25 @@ namespace VROSC {
       return platformSelector;
     }
     // Get instance field reference: private VROSC.PlatformSelector _platformSelector
-    ::VROSC::PlatformSelector*& dyn__platformSelector();
+    [[deprecated]] ::VROSC::PlatformSelector*& dyn__platformSelector();
     // public System.Void .ctor(VROSC.PlatformSelector platformSelector)
-    // Offset: 0x13B3B14
+    // Offset: 0x19269E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetupPlatformSelectorState* New_ctor(::VROSC::PlatformSelector* platformSelector) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetupPlatformSelectorState::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetupPlatformSelectorState*, creationType>(platformSelector)));
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13B3B40
+    // Offset: 0x1926A0C
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13B3B5C
+    // Offset: 0x1926A28
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13B3B60
+    // Offset: 0x1926A2C
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13B3B64
+    // Offset: 0x1926A30
     void UpdateData(::ArrayW<::Il2CppObject*> values);
   }; // VROSC.SetupPlatformSelectorState
   #pragma pack(pop)

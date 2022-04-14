@@ -22,8 +22,8 @@ namespace Firebase::Firestore {
   class CollectionReferenceProxy;
   // Forward declaring type: DocumentSnapshotProxy
   class DocumentSnapshotProxy;
-  // Forward declaring type: Source
-  struct Source;
+  // Forward declaring type: SourceProxy
+  struct SourceProxy;
 }
 // Forward declaring namespace: System::Threading::Tasks
 namespace System::Threading::Tasks {
@@ -50,15 +50,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class DocumentReferenceProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -77,42 +69,42 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC2A7E4
+    // Offset: 0xD4C674
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DocumentReferenceProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::DocumentReferenceProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DocumentReferenceProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.DocumentReferenceProxy obj)
-    // Offset: 0xC30934
+    // Offset: 0xD52A3C
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::DocumentReferenceProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC30A10
+    // Offset: 0xD52B18
     void Dispose();
     // public System.String id()
-    // Offset: 0xC30C20
+    // Offset: 0xD52D28
     ::StringW id();
     // public System.String path()
-    // Offset: 0xC30D5C
+    // Offset: 0xD52E5C
     ::StringW path();
     // public Firebase.Firestore.CollectionReferenceProxy Collection(System.String collectionPath)
-    // Offset: 0xC30E98
+    // Offset: 0xD52F90
     ::Firebase::Firestore::CollectionReferenceProxy* Collection(::StringW collectionPath);
-    // public System.Threading.Tasks.Task`1<Firebase.Firestore.DocumentSnapshotProxy> GetAsync(Firebase.Firestore.Source source)
-    // Offset: 0xC31028
-    ::System::Threading::Tasks::Task_1<::Firebase::Firestore::DocumentSnapshotProxy*>* GetAsync(::Firebase::Firestore::Source source);
+    // public System.Threading.Tasks.Task`1<Firebase.Firestore.DocumentSnapshotProxy> GetAsync(Firebase.Firestore.SourceProxy source)
+    // Offset: 0xD53118
+    ::System::Threading::Tasks::Task_1<::Firebase::Firestore::DocumentSnapshotProxy*>* GetAsync(::Firebase::Firestore::SourceProxy source);
     // public System.Threading.Tasks.Task DeleteAsync()
-    // Offset: 0xC31414
+    // Offset: 0xD53524
     ::System::Threading::Tasks::Task* DeleteAsync();
     // public System.Boolean is_valid()
-    // Offset: 0xC2FCA4
+    // Offset: 0xD51B44
     bool is_valid();
     // protected override System.Void Finalize()
-    // Offset: 0xC309A0
+    // Offset: 0xD52AA8
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
@@ -171,9 +163,9 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
 // Writing MetadataGetter for method: Firebase::Firestore::DocumentReferenceProxy::GetAsync
 // Il2CppName: GetAsync
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task_1<::Firebase::Firestore::DocumentSnapshotProxy*>* (Firebase::Firestore::DocumentReferenceProxy::*)(::Firebase::Firestore::Source)>(&Firebase::Firestore::DocumentReferenceProxy::GetAsync)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Threading::Tasks::Task_1<::Firebase::Firestore::DocumentSnapshotProxy*>* (Firebase::Firestore::DocumentReferenceProxy::*)(::Firebase::Firestore::SourceProxy)>(&Firebase::Firestore::DocumentReferenceProxy::GetAsync)> {
   static const MethodInfo* get() {
-    static auto* source = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "Source")->byval_arg;
+    static auto* source = &::il2cpp_utils::GetClassFromName("Firebase.Firestore", "SourceProxy")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::DocumentReferenceProxy*), "GetAsync", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{source});
   }
 };

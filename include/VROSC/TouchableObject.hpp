@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class TouchableObject : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNote _note
     // Size: 0x8
     // Offset: 0x18
@@ -139,62 +131,62 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNote _note
-    ::VROSC::NoteBoardNote*& dyn__note();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__note();
     // Get instance field reference: private VROSC.NoteBoardNote _xUp
-    ::VROSC::NoteBoardNote*& dyn__xUp();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__xUp();
     // Get instance field reference: private VROSC.NoteBoardNote _xDown
-    ::VROSC::NoteBoardNote*& dyn__xDown();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__xDown();
     // Get instance field reference: private VROSC.NoteBoardNote _yUp
-    ::VROSC::NoteBoardNote*& dyn__yUp();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__yUp();
     // Get instance field reference: private VROSC.NoteBoardNote _yDown
-    ::VROSC::NoteBoardNote*& dyn__yDown();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__yDown();
     // Get instance field reference: private VROSC.NoteBoardNote _zUp
-    ::VROSC::NoteBoardNote*& dyn__zUp();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__zUp();
     // Get instance field reference: private VROSC.NoteBoardNote _zDown
-    ::VROSC::NoteBoardNote*& dyn__zDown();
+    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__zDown();
     // Get instance field reference: private System.Int32 _x
-    int& dyn__x();
+    [[deprecated]] int& dyn__x();
     // Get instance field reference: private System.Int32 _y
-    int& dyn__y();
+    [[deprecated]] int& dyn__y();
     // Get instance field reference: private System.Int32 _z
-    int& dyn__z();
+    [[deprecated]] int& dyn__z();
     // Get instance field reference: private System.Int32 _3d
-    int& dyn__3d();
+    [[deprecated]] int& dyn__3d();
     // Get instance field reference: private UnityEngine.Vector3 _playingPower
-    ::UnityEngine::Vector3& dyn__playingPower();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__playingPower();
     // Get instance field reference: private System.Boolean _playing
-    bool& dyn__playing();
+    [[deprecated]] bool& dyn__playing();
     // Get instance field reference: private System.Single _height
-    float& dyn__height();
+    [[deprecated]] float& dyn__height();
     // public VROSC.NoteBoardNote get_Note()
-    // Offset: 0x1400D00
+    // Offset: 0xA28E24
     ::VROSC::NoteBoardNote* get_Note();
     // public System.Void Setup(VROSC.NoteFieldParameters parameters, VROSC.NoteFieldData noteFieldData, UnityEngine.Vector3 fieldSize)
-    // Offset: 0x1400D08
+    // Offset: 0xA28E2C
     void Setup(::VROSC::NoteFieldParameters* parameters, ::VROSC::NoteFieldData* noteFieldData, ::UnityEngine::Vector3 fieldSize);
     // public System.Void UpdateHovering(System.Boolean isInside)
-    // Offset: 0x1401118
+    // Offset: 0xA2923C
     void UpdateHovering(bool isInside);
     // public System.Void UpdatePlaying(System.Boolean isInside, System.Boolean playing, VROSC.NoteBoard/VROSC.PlayAxis playAxis)
-    // Offset: 0x1401140
+    // Offset: 0xA29264
     void UpdatePlaying(bool isInside, bool playing, ::VROSC::NoteBoard::PlayAxis playAxis);
     // public System.Void SetHeight(System.Single height)
-    // Offset: 0x14011E4
+    // Offset: 0xA29308
     void SetHeight(float height);
     // public System.Void UpdateVisuals()
-    // Offset: 0x14011EC
+    // Offset: 0xA29310
     void UpdateVisuals();
     // private System.Void AutoSetup()
-    // Offset: 0x14012C8
+    // Offset: 0xA293EC
     void AutoSetup();
     // private System.Void AutoSetupNeighbours()
-    // Offset: 0x140131C
+    // Offset: 0xA29440
     void AutoSetupNeighbours();
     // private System.Void OnDrawGizmosSelected()
-    // Offset: 0x140160C
+    // Offset: 0xA29730
     void OnDrawGizmosSelected();
     // public System.Void .ctor()
-    // Offset: 0x14019F8
+    // Offset: 0xA29B1C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

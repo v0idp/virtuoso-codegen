@@ -32,15 +32,7 @@ namespace System::Net {
   // [TokenAttribute] Offset: FFFFFFFF
   class WebCompletionSource::Result : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Net.WebCompletionSource/System.Net.State <State>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -57,17 +49,17 @@ namespace System::Net {
     static_assert(sizeof(::System::Runtime::ExceptionServices::ExceptionDispatchInfo*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Net.WebCompletionSource/System.Net.State <State>k__BackingField
-    ::System::Net::WebCompletionSource::State& dyn_$State$k__BackingField();
+    [[deprecated]] ::System::Net::WebCompletionSource::State& dyn_$State$k__BackingField();
     // Get instance field reference: private readonly System.Runtime.ExceptionServices.ExceptionDispatchInfo <Error>k__BackingField
-    ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_$Error$k__BackingField();
+    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_$Error$k__BackingField();
     // public System.Net.WebCompletionSource/System.Net.State get_State()
-    // Offset: 0x8E7D7C
+    // Offset: 0xA058E8
     ::System::Net::WebCompletionSource::State get_State();
     // public System.Runtime.ExceptionServices.ExceptionDispatchInfo get_Error()
-    // Offset: 0x8E7D84
+    // Offset: 0xA058F0
     ::System::Runtime::ExceptionServices::ExceptionDispatchInfo* get_Error();
     // public System.Void .ctor(System.Net.WebCompletionSource/System.Net.State state, System.Runtime.ExceptionServices.ExceptionDispatchInfo error)
-    // Offset: 0x8E7D8C
+    // Offset: 0xA058F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebCompletionSource::Result* New_ctor(::System::Net::WebCompletionSource::State state, ::System::Runtime::ExceptionServices::ExceptionDispatchInfo* error) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebCompletionSource::Result::.ctor");

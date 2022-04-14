@@ -42,7 +42,7 @@ namespace TMPro::SpriteAssetUtilities {
     // Nested type: ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteDataObject
     class SpriteDataObject;
     // public System.Void .ctor()
-    // Offset: 0x1245C88
+    // Offset: 0x181FD24
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

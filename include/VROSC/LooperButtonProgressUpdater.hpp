@@ -40,15 +40,7 @@ namespace VROSC {
   // [ExecuteInEditMode] Offset: FFFFFFFF
   class LooperButtonProgressUpdater : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AdjustableMesh _adjustableMesh
     // Size: 0x8
     // Offset: 0x18
@@ -61,22 +53,22 @@ namespace VROSC {
     ::UnityEngine::Color color;
     // Field size check
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
-    // [RangeAttribute] Offset: 0x67268C
+    // [RangeAttribute] Offset: 0x788940
     // private System.Single _beatLength
     // Size: 0x4
     // Offset: 0x30
     float beatLength;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [HeaderAttribute] Offset: 0x6726CC
-    // [RangeAttribute] Offset: 0x6726CC
+    // [RangeAttribute] Offset: 0x788980
+    // [HeaderAttribute] Offset: 0x788980
     // private System.Single _previewValue
     // Size: 0x4
     // Offset: 0x34
     float previewValue;
     // Field size check
     static_assert(sizeof(float) == 0x4);
-    // [RangeAttribute] Offset: 0x672730
+    // [RangeAttribute] Offset: 0x7889E4
     // private System.Single _flashValue
     // Size: 0x4
     // Offset: 0x38
@@ -115,34 +107,34 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Single _beatLength
-    float& dyn__beatLength();
+    [[deprecated]] float& dyn__beatLength();
     // Get instance field reference: private System.Single _previewValue
-    float& dyn__previewValue();
+    [[deprecated]] float& dyn__previewValue();
     // Get instance field reference: private System.Single _flashValue
-    float& dyn__flashValue();
+    [[deprecated]] float& dyn__flashValue();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // Get instance field reference: private System.Boolean _playing
-    bool& dyn__playing();
+    [[deprecated]] bool& dyn__playing();
     // Get instance field reference: private System.Single _progress
-    float& dyn__progress();
+    [[deprecated]] float& dyn__progress();
     // Get instance field reference: private System.Int32 _loops
-    int& dyn__loops();
+    [[deprecated]] int& dyn__loops();
     // protected System.Void Awake()
-    // Offset: 0x8A7EB8
+    // Offset: 0x197A29C
     void Awake();
     // public System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x8A40FC
+    // Offset: 0x197720C
     void SetColor(::UnityEngine::Color color);
     // public System.Void SetValue(System.Single value, System.Single flashValue)
-    // Offset: 0x8A41E0
+    // Offset: 0x19772F0
     void SetValue(float value, float flashValue);
     // public System.Void .ctor()
-    // Offset: 0x8A7EEC
+    // Offset: 0x197A2D0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ValueMultiplier : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.FloatField _factor
     // Size: 0x8
     // Offset: 0x40
@@ -60,14 +52,14 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.FloatField _factor
-    ::VROSC::FloatField*& dyn__factor();
+    [[deprecated]] ::VROSC::FloatField*& dyn__factor();
     // Get instance field reference: private System.Boolean _centerOnHalf
-    bool& dyn__centerOnHalf();
+    [[deprecated]] bool& dyn__centerOnHalf();
     // private VROSC.Signal TransformValue(VROSC.Signal signal)
-    // Offset: 0x13AD910
+    // Offset: 0x1921858
     ::VROSC::Signal* TransformValue(::VROSC::Signal* signal);
     // public System.Void .ctor()
-    // Offset: 0x13AD998
+    // Offset: 0x19218E0
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -82,17 +74,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ValueMultiplier*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x13AD90C
+    // Offset: 0x1921854
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);
     // protected override System.Void NodeStay(VROSC.Signal signal)
-    // Offset: 0x13AD990
+    // Offset: 0x19218D8
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeStay(VROSC.Signal signal)
     void NodeStay(::VROSC::Signal* signal);
     // protected override System.Void NodeEnd(VROSC.Signal signal)
-    // Offset: 0x13AD994
+    // Offset: 0x19218DC
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeEnd(VROSC.Signal signal)
     void NodeEnd(::VROSC::Signal* signal);

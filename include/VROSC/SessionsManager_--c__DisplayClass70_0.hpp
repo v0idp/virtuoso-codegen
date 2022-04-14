@@ -37,15 +37,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SessionsManager::$$c__DisplayClass70_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.SessionsManager <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -70,42 +62,45 @@ namespace VROSC {
     ::System::Action_1<::VROSC::Error>* onFailure;
     // Field size check
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
-    // public System.Action`1<System.String> <>9__1
+    // public System.Action`1<System.String> <>9__2
     // Size: 0x8
     // Offset: 0x30
-    ::System::Action_1<::StringW>* $$9__1;
+    ::System::Action_1<::StringW>* $$9__2;
     // Field size check
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
-    // public System.Action`1<VROSC.Error> <>9__2
+    // public System.Action`1<VROSC.Error> <>9__3
     // Size: 0x8
     // Offset: 0x38
-    ::System::Action_1<::VROSC::Error>* $$9__2;
+    ::System::Action_1<::VROSC::Error>* $$9__3;
     // Field size check
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.SessionsManager <>4__this
-    ::VROSC::SessionsManager*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SessionsManager*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
-    // Get instance field reference: public System.Action`1<System.String> <>9__1
-    ::System::Action_1<::StringW>*& dyn_$$9__1();
-    // Get instance field reference: public System.Action`1<VROSC.Error> <>9__2
-    ::System::Action_1<::VROSC::Error>*& dyn_$$9__2();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    // Get instance field reference: public System.Action`1<System.String> <>9__2
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_$$9__2();
+    // Get instance field reference: public System.Action`1<VROSC.Error> <>9__3
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__3();
     // System.Void <AddSessionPreviewPlay>b__0()
-    // Offset: 0x134CE54
+    // Offset: 0x8D8D4C
     void $AddSessionPreviewPlay$b__0();
-    // System.Void <AddSessionPreviewPlay>b__1(System.String previewPlayId)
-    // Offset: 0x134D0AC
-    void $AddSessionPreviewPlay$b__1(::StringW previewPlayId);
-    // System.Void <AddSessionPreviewPlay>b__2(VROSC.Error error)
-    // Offset: 0x134D138
-    void $AddSessionPreviewPlay$b__2(::VROSC::Error error);
+    // System.Void <AddSessionPreviewPlay>b__2(System.String previewPlayId)
+    // Offset: 0x8D8FEC
+    void $AddSessionPreviewPlay$b__2(::StringW previewPlayId);
+    // System.Void <AddSessionPreviewPlay>b__3(VROSC.Error error)
+    // Offset: 0x8D90A8
+    void $AddSessionPreviewPlay$b__3(::VROSC::Error error);
+    // System.Void <AddSessionPreviewPlay>b__1(VROSC.Error error)
+    // Offset: 0x8D9160
+    void $AddSessionPreviewPlay$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x134CE4C
+    // Offset: 0x8D8D44
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -127,22 +122,31 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass70_0*), "<AddSessionPreviewPlay>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__1
-// Il2CppName: <AddSessionPreviewPlay>b__1
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsManager::$$c__DisplayClass70_0::*)(::StringW)>(&VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__1)> {
-  static const MethodInfo* get() {
-    static auto* previewPlayId = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass70_0*), "<AddSessionPreviewPlay>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{previewPlayId});
-  }
-};
 // Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__2
 // Il2CppName: <AddSessionPreviewPlay>b__2
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsManager::$$c__DisplayClass70_0::*)(::VROSC::Error)>(&VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__2)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsManager::$$c__DisplayClass70_0::*)(::StringW)>(&VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__2)> {
+  static const MethodInfo* get() {
+    static auto* previewPlayId = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass70_0*), "<AddSessionPreviewPlay>b__2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{previewPlayId});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__3
+// Il2CppName: <AddSessionPreviewPlay>b__3
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsManager::$$c__DisplayClass70_0::*)(::VROSC::Error)>(&VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__3)> {
   static const MethodInfo* get() {
     static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass70_0*), "<AddSessionPreviewPlay>b__2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass70_0*), "<AddSessionPreviewPlay>b__3", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
+  }
+};
+// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__1
+// Il2CppName: <AddSessionPreviewPlay>b__1
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::SessionsManager::$$c__DisplayClass70_0::*)(::VROSC::Error)>(&VROSC::SessionsManager::$$c__DisplayClass70_0::$AddSessionPreviewPlay$b__1)> {
+  static const MethodInfo* get() {
+    static auto* error = &::il2cpp_utils::GetClassFromName("VROSC", "Error")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass70_0*), "<AddSessionPreviewPlay>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
 // Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass70_0::New_ctor

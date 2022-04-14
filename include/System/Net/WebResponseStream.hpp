@@ -91,15 +91,7 @@ namespace System::Net {
     struct $ReadAllAsync$d__57;
     // Nested type: ::System::Net::WebResponseStream::$InitReadAsync$d__61
     struct $InitReadAsync$d__61;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.BufferOffsetSize readBuffer
     // Size: 0x8
     // Offset: 0x68
@@ -220,153 +212,153 @@ namespace System::Net {
     static_assert(sizeof(::System::Net::MonoChunkStream*) == 0x8);
     public:
     // Get instance field reference: private System.Net.BufferOffsetSize readBuffer
-    ::System::Net::BufferOffsetSize*& dyn_readBuffer();
+    [[deprecated]] ::System::Net::BufferOffsetSize*& dyn_readBuffer();
     // Get instance field reference: private System.Int64 contentLength
-    int64_t& dyn_contentLength();
+    [[deprecated]] int64_t& dyn_contentLength();
     // Get instance field reference: private System.Int64 totalRead
-    int64_t& dyn_totalRead();
+    [[deprecated]] int64_t& dyn_totalRead();
     // Get instance field reference: private System.Boolean nextReadCalled
-    bool& dyn_nextReadCalled();
+    [[deprecated]] bool& dyn_nextReadCalled();
     // Get instance field reference: private System.Int32 stream_length
-    int& dyn_stream_length();
+    [[deprecated]] int& dyn_stream_length();
     // Get instance field reference: private System.Net.WebCompletionSource pendingRead
-    ::System::Net::WebCompletionSource*& dyn_pendingRead();
+    [[deprecated]] ::System::Net::WebCompletionSource*& dyn_pendingRead();
     // Get instance field reference: private System.Object locker
-    ::Il2CppObject*& dyn_locker();
+    [[deprecated]] ::Il2CppObject*& dyn_locker();
     // Get instance field reference: private System.Int32 nestedRead
-    int& dyn_nestedRead();
+    [[deprecated]] int& dyn_nestedRead();
     // Get instance field reference: private System.Boolean read_eof
-    bool& dyn_read_eof();
+    [[deprecated]] bool& dyn_read_eof();
     // Get instance field reference: private readonly System.Net.WebRequestStream <RequestStream>k__BackingField
-    ::System::Net::WebRequestStream*& dyn_$RequestStream$k__BackingField();
+    [[deprecated]] ::System::Net::WebRequestStream*& dyn_$RequestStream$k__BackingField();
     // Get instance field reference: private System.Net.WebHeaderCollection <Headers>k__BackingField
-    ::System::Net::WebHeaderCollection*& dyn_$Headers$k__BackingField();
+    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_$Headers$k__BackingField();
     // Get instance field reference: private System.Net.HttpStatusCode <StatusCode>k__BackingField
-    ::System::Net::HttpStatusCode& dyn_$StatusCode$k__BackingField();
+    [[deprecated]] ::System::Net::HttpStatusCode& dyn_$StatusCode$k__BackingField();
     // Get instance field reference: private System.String <StatusDescription>k__BackingField
-    ::StringW& dyn_$StatusDescription$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$StatusDescription$k__BackingField();
     // Get instance field reference: private System.Version <Version>k__BackingField
-    ::System::Version*& dyn_$Version$k__BackingField();
+    [[deprecated]] ::System::Version*& dyn_$Version$k__BackingField();
     // Get instance field reference: private System.Boolean <KeepAlive>k__BackingField
-    bool& dyn_$KeepAlive$k__BackingField();
+    [[deprecated]] bool& dyn_$KeepAlive$k__BackingField();
     // Get instance field reference: readonly System.String ME
-    ::StringW& dyn_ME();
+    [[deprecated]] ::StringW& dyn_ME();
     // Get instance field reference: private System.Boolean <ChunkedRead>k__BackingField
-    bool& dyn_$ChunkedRead$k__BackingField();
+    [[deprecated]] bool& dyn_$ChunkedRead$k__BackingField();
     // Get instance field reference: private System.Net.MonoChunkStream <ChunkStream>k__BackingField
-    ::System::Net::MonoChunkStream*& dyn_$ChunkStream$k__BackingField();
+    [[deprecated]] ::System::Net::MonoChunkStream*& dyn_$ChunkStream$k__BackingField();
     // public System.Net.WebRequestStream get_RequestStream()
-    // Offset: 0xAC070C
+    // Offset: 0xC4BD28
     ::System::Net::WebRequestStream* get_RequestStream();
     // public System.Net.WebHeaderCollection get_Headers()
-    // Offset: 0xAC0714
+    // Offset: 0xC4BD30
     ::System::Net::WebHeaderCollection* get_Headers();
     // private System.Void set_Headers(System.Net.WebHeaderCollection value)
-    // Offset: 0xAC071C
+    // Offset: 0xC4BD38
     void set_Headers(::System::Net::WebHeaderCollection* value);
     // public System.Net.HttpStatusCode get_StatusCode()
-    // Offset: 0xAC0724
+    // Offset: 0xC4BD40
     ::System::Net::HttpStatusCode get_StatusCode();
     // private System.Void set_StatusCode(System.Net.HttpStatusCode value)
-    // Offset: 0xAC072C
+    // Offset: 0xC4BD48
     void set_StatusCode(::System::Net::HttpStatusCode value);
     // public System.String get_StatusDescription()
-    // Offset: 0xAC0734
+    // Offset: 0xC4BD50
     ::StringW get_StatusDescription();
     // private System.Void set_StatusDescription(System.String value)
-    // Offset: 0xAC073C
+    // Offset: 0xC4BD58
     void set_StatusDescription(::StringW value);
     // public System.Version get_Version()
-    // Offset: 0xAC0744
+    // Offset: 0xC4BD60
     ::System::Version* get_Version();
     // private System.Void set_Version(System.Version value)
-    // Offset: 0xAC074C
+    // Offset: 0xC4BD68
     void set_Version(::System::Version* value);
     // public System.Boolean get_KeepAlive()
-    // Offset: 0xAC0754
+    // Offset: 0xC4BD70
     bool get_KeepAlive();
     // private System.Void set_KeepAlive(System.Boolean value)
-    // Offset: 0xAC075C
+    // Offset: 0xC4BD78
     void set_KeepAlive(bool value);
     // protected System.Boolean get_ChunkedRead()
-    // Offset: 0xAC0834
+    // Offset: 0xC4BE50
     bool get_ChunkedRead();
     // private System.Void set_ChunkedRead(System.Boolean value)
-    // Offset: 0xAC083C
+    // Offset: 0xC4BE58
     void set_ChunkedRead(bool value);
     // protected System.Net.MonoChunkStream get_ChunkStream()
-    // Offset: 0xAC0848
+    // Offset: 0xC4BE64
     ::System::Net::MonoChunkStream* get_ChunkStream();
     // private System.Void set_ChunkStream(System.Net.MonoChunkStream value)
-    // Offset: 0xAC0850
+    // Offset: 0xC4BE6C
     void set_ChunkStream(::System::Net::MonoChunkStream* value);
     // private System.Boolean get_ExpectContent()
-    // Offset: 0xAC0FC4
+    // Offset: 0xC4C5E0
     bool get_ExpectContent();
     // public System.Void .ctor(System.Net.WebRequestStream request)
-    // Offset: 0xAC0768
+    // Offset: 0xC4BD84
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebResponseStream* New_ctor(::System::Net::WebRequestStream* request) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebResponseStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WebResponseStream*, creationType>(request)));
     }
     // private System.Threading.Tasks.Task`1<System.ValueTuple`2<System.Int32,System.Int32>> ProcessRead(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC09B8
+    // Offset: 0xC4BFD4
     ::System::Threading::Tasks::Task_1<::System::ValueTuple_2<int, int>>* ProcessRead(::ArrayW<uint8_t> buffer, int offset, int size, ::System::Threading::CancellationToken cancellationToken);
     // System.Threading.Tasks.Task`1<System.Int32> InnerReadAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC0B20
+    // Offset: 0xC4C13C
     ::System::Threading::Tasks::Task_1<int>* InnerReadAsync(::ArrayW<uint8_t> buffer, int offset, int size, ::System::Threading::CancellationToken cancellationToken);
     // private System.Threading.Tasks.Task`1<System.Int32> EnsureReadAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC0C84
+    // Offset: 0xC4C2A0
     ::System::Threading::Tasks::Task_1<int>* EnsureReadAsync(::ArrayW<uint8_t> buffer, int offset, int size, ::System::Threading::CancellationToken cancellationToken);
     // private System.Boolean CheckAuthHeader(System.String headerName)
-    // Offset: 0xAC0DE8
+    // Offset: 0xC4C404
     bool CheckAuthHeader(::StringW headerName);
     // private System.Boolean IsNtlmAuth()
-    // Offset: 0xAC0E6C
+    // Offset: 0xC4C488
     bool IsNtlmAuth();
     // private System.Threading.Tasks.Task Initialize(System.Net.BufferOffsetSize buffer, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC1058
+    // Offset: 0xC4C674
     ::System::Threading::Tasks::Task* Initialize(::System::Net::BufferOffsetSize* buffer, ::System::Threading::CancellationToken cancellationToken);
     // System.Threading.Tasks.Task ReadAllAsync(System.Boolean resending, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC117C
+    // Offset: 0xC4C798
     ::System::Threading::Tasks::Task* ReadAllAsync(bool resending, ::System::Threading::CancellationToken cancellationToken);
     // private System.Net.WebException GetReadException(System.Net.WebExceptionStatus status, System.Exception error, System.String where)
-    // Offset: 0xAC13B4
+    // Offset: 0xC4C9D0
     ::System::Net::WebException* GetReadException(::System::Net::WebExceptionStatus status, ::System::Exception* error, ::StringW where);
     // System.Threading.Tasks.Task InitReadAsync(System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC1664
+    // Offset: 0xC4CC80
     ::System::Threading::Tasks::Task* InitReadAsync(::System::Threading::CancellationToken cancellationToken);
     // private System.Boolean GetResponse(System.Net.BufferOffsetSize buffer, ref System.Int32 pos, ref System.Net.ReadState state)
-    // Offset: 0xAC1778
+    // Offset: 0xC4CD94
     bool GetResponse(::System::Net::BufferOffsetSize* buffer, ByRef<int> pos, ByRef<::System::Net::ReadState> state);
     // public override System.Int64 get_Length()
-    // Offset: 0xAC081C
+    // Offset: 0xC4BE38
     // Implemented from: System.IO.Stream
     // Base method: System.Int64 Stream::get_Length()
     int64_t get_Length();
     // public override System.Boolean get_CanRead()
-    // Offset: 0xAC0824
+    // Offset: 0xC4BE40
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanRead()
     bool get_CanRead();
     // public override System.Boolean get_CanWrite()
-    // Offset: 0xAC082C
+    // Offset: 0xC4BE48
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanWrite()
     bool get_CanWrite();
     // public override System.Threading.Tasks.Task`1<System.Int32> ReadAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC0858
+    // Offset: 0xC4BE74
     // Implemented from: System.IO.Stream
     // Base method: System.Threading.Tasks.Task`1<System.Int32> Stream::ReadAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
     ::System::Threading::Tasks::Task_1<int>* ReadAsync(::ArrayW<uint8_t> buffer, int offset, int size, ::System::Threading::CancellationToken cancellationToken);
     // public override System.Threading.Tasks.Task WriteAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAC12A8
+    // Offset: 0xC4C8C4
     // Implemented from: System.IO.Stream
     // Base method: System.Threading.Tasks.Task Stream::WriteAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
     ::System::Threading::Tasks::Task* WriteAsync(::ArrayW<uint8_t> buffer, int offset, int size, ::System::Threading::CancellationToken cancellationToken);
     // protected override System.Void Close_internal(ref System.Boolean disposed)
-    // Offset: 0xAC1348
+    // Offset: 0xC4C964
     // Implemented from: System.Net.WebConnectionStream
     // Base method: System.Void WebConnectionStream::Close_internal(ref System.Boolean disposed)
     void Close_internal(ByRef<bool> disposed);

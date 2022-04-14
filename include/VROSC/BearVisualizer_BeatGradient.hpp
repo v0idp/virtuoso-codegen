@@ -43,15 +43,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::BearVisualizer::BeatGradient::$PerformBeat$d__7
     class $PerformBeat$d__7;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 _beat
     // Size: 0x4
     // Offset: 0x10
@@ -88,23 +80,23 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Coroutine*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _beat
-    int& dyn__beat();
+    [[deprecated]] int& dyn__beat();
     // Get instance field reference: private UnityEngine.Gradient _gradient
-    ::UnityEngine::Gradient*& dyn__gradient();
+    [[deprecated]] ::UnityEngine::Gradient*& dyn__gradient();
     // Get instance field reference: private System.Single _beatTime
-    float& dyn__beatTime();
+    [[deprecated]] float& dyn__beatTime();
     // Get instance field reference: private System.String _value
-    ::StringW& dyn__value();
+    [[deprecated]] ::StringW& dyn__value();
     // Get instance field reference: public UnityEngine.Coroutine BeatCoroutine
-    ::UnityEngine::Coroutine*& dyn_BeatCoroutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn_BeatCoroutine();
     // public System.Int32 get_Beat()
-    // Offset: 0x135B6CC
+    // Offset: 0x957C34
     int get_Beat();
     // public System.Collections.IEnumerator PerformBeat(System.Single multiplier)
-    // Offset: 0x135B6D4
+    // Offset: 0x957C3C
     ::System::Collections::IEnumerator* PerformBeat(float multiplier);
     // public System.Void .ctor()
-    // Offset: 0x135B750
+    // Offset: 0x957CB8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

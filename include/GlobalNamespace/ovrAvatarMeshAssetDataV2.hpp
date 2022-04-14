@@ -71,15 +71,15 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 vertexCount
-    uint& dyn_vertexCount();
+    [[deprecated]] uint& dyn_vertexCount();
     // Get instance field reference: public System.IntPtr vertexBuffer
-    ::System::IntPtr& dyn_vertexBuffer();
+    [[deprecated]] ::System::IntPtr& dyn_vertexBuffer();
     // Get instance field reference: public System.UInt32 indexCount
-    uint& dyn_indexCount();
+    [[deprecated]] uint& dyn_indexCount();
     // Get instance field reference: public System.IntPtr indexBuffer
-    ::System::IntPtr& dyn_indexBuffer();
+    [[deprecated]] ::System::IntPtr& dyn_indexBuffer();
     // Get instance field reference: public ovrAvatarSkinnedMeshPose skinnedBindPose
-    ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedBindPose();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedBindPose();
   }; // ovrAvatarMeshAssetDataV2
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarMeshAssetDataV2), 32 + sizeof(::GlobalNamespace::ovrAvatarSkinnedMeshPose)> __GlobalNamespace_ovrAvatarMeshAssetDataV2SizeCheck;

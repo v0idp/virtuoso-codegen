@@ -23,15 +23,7 @@ namespace UnityEngine::Timeline {
   // [TokenAttribute] Offset: FFFFFFFF
   class TimelineAsset::EditorSettings : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single m_Framerate
     // Size: 0x4
     // Offset: 0x10
@@ -58,26 +50,26 @@ namespace UnityEngine::Timeline {
     // Set static field: static readonly System.Single kDefaultFps
     static void _set_kDefaultFps(float value);
     // Get instance field reference: private System.Single m_Framerate
-    float& dyn_m_Framerate();
+    [[deprecated]] float& dyn_m_Framerate();
     // Get instance field reference: private System.Boolean m_ScenePreview
-    bool& dyn_m_ScenePreview();
+    [[deprecated]] bool& dyn_m_ScenePreview();
     // public System.Single get_fps()
-    // Offset: 0x12D2890
+    // Offset: 0x18D5B04
     float get_fps();
     // public System.Void set_fps(System.Single value)
-    // Offset: 0x12D2898
+    // Offset: 0x18D5B0C
     void set_fps(float value);
     // public System.Boolean get_scenePreview()
-    // Offset: 0x12D28C0
+    // Offset: 0x18D5B34
     bool get_scenePreview();
     // public System.Void set_scenePreview(System.Boolean value)
-    // Offset: 0x12D28C8
+    // Offset: 0x18D5B3C
     void set_scenePreview(bool value);
     // static private System.Void .cctor()
-    // Offset: 0x12D2950
+    // Offset: 0x18D5BC4
     static void _cctor();
     // public System.Void .ctor()
-    // Offset: 0x12D28D4
+    // Offset: 0x18D5B48
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

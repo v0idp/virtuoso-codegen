@@ -52,15 +52,7 @@ namespace Firebase::Firestore::Converters {
   // [TokenAttribute] Offset: FFFFFFFF
   class AttributedIdAssigner : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Collections.Generic.List`1<System.Reflection.PropertyInfo> _idProperties
     // Size: 0x8
     // Offset: 0x10
@@ -79,27 +71,27 @@ namespace Firebase::Firestore::Converters {
     // Set static field: static private readonly System.Collections.Generic.Dictionary`2<System.Type,Firebase.Firestore.Converters.AttributedIdAssigner> s_assigners
     static void _set_s_assigners(::System::Collections::Generic::Dictionary_2<::System::Type*, ::Firebase::Firestore::Converters::AttributedIdAssigner*>* value);
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Reflection.PropertyInfo> _idProperties
-    ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>*& dyn__idProperties();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>*& dyn__idProperties();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Reflection.PropertyInfo> _referenceProperties
-    ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>*& dyn__referenceProperties();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>*& dyn__referenceProperties();
     // private System.Void .ctor(System.Collections.Generic.List`1<System.Reflection.PropertyInfo> idProperties, System.Collections.Generic.List`1<System.Reflection.PropertyInfo> referenceProperties)
-    // Offset: 0xC2607C
+    // Offset: 0xD47DCC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AttributedIdAssigner* New_ctor(::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>* idProperties, ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>* referenceProperties) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Converters::AttributedIdAssigner::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AttributedIdAssigner*, creationType>(idProperties, referenceProperties)));
     }
     // static private System.Void .cctor()
-    // Offset: 0xC26B88
+    // Offset: 0xD488E4
     static void _cctor();
     // private System.Void AssignId(System.Object value, Firebase.Firestore.DocumentReference reference)
-    // Offset: 0xC260B4
+    // Offset: 0xD47E04
     void AssignId(::Il2CppObject* value, ::Firebase::Firestore::DocumentReference* reference);
     // static System.Void MaybeAssignId(System.Object value, Firebase.Firestore.DocumentReference reference)
-    // Offset: 0xC26344
+    // Offset: 0xD48094
     static void MaybeAssignId(::Il2CppObject* value, ::Firebase::Firestore::DocumentReference* reference);
     // static private Firebase.Firestore.Converters.AttributedIdAssigner MaybeCreateAssigner(System.Type type)
-    // Offset: 0xC26524
+    // Offset: 0xD48274
     static ::Firebase::Firestore::Converters::AttributedIdAssigner* MaybeCreateAssigner(::System::Type* type);
   }; // Firebase.Firestore.Converters.AttributedIdAssigner
   #pragma pack(pop)

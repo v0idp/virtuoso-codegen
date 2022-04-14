@@ -38,15 +38,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SaveLoadManager::$$c__DisplayClass27_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String origin
     // Size: 0x8
     // Offset: 0x10
@@ -73,21 +65,21 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_2<::StringW, ::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public System.String origin
-    ::StringW& dyn_origin();
+    [[deprecated]] ::StringW& dyn_origin();
     // Get instance field reference: public System.Action`1<System.String> onSuccess
-    ::System::Action_1<::StringW>*& dyn_onSuccess();
+    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onSuccess();
     // Get instance field reference: public System.String sessionName
-    ::StringW& dyn_sessionName();
+    [[deprecated]] ::StringW& dyn_sessionName();
     // Get instance field reference: public System.Action`2<System.String,VROSC.Error> onFailure
-    ::System::Action_2<::StringW, ::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_2<::StringW, ::VROSC::Error>*& dyn_onFailure();
     // System.Void <UpdateOldSaveFiles>b__0()
-    // Offset: 0x1345E04
+    // Offset: 0x8D0D54
     void $UpdateOldSaveFiles$b__0();
     // System.Void <UpdateOldSaveFiles>b__1(VROSC.Error error)
-    // Offset: 0x1345E74
+    // Offset: 0x8D0DC4
     void $UpdateOldSaveFiles$b__1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1345DFC
+    // Offset: 0x8D0D4C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

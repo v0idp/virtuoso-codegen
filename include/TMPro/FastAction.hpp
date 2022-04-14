@@ -45,15 +45,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class FastAction : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.Generic.LinkedList`1<System.Action> delegates
     // Size: 0x8
     // Offset: 0x10
@@ -68,20 +60,20 @@ namespace TMPro {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.Action> delegates
-    ::System::Collections::Generic::LinkedList_1<::System::Action*>*& dyn_delegates();
+    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::Action*>*& dyn_delegates();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Action,System.Collections.Generic.LinkedListNode`1<System.Action>> lookup
-    ::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>*& dyn_lookup();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>*& dyn_lookup();
     // public System.Void Add(System.Action rhs)
-    // Offset: 0xA47644
+    // Offset: 0xC29254
     void Add(::System::Action* rhs);
     // public System.Void Remove(System.Action rhs)
-    // Offset: 0xA47714
+    // Offset: 0xC29324
     void Remove(::System::Action* rhs);
     // public System.Void Call()
-    // Offset: 0xA477D8
+    // Offset: 0xC293E8
     void Call();
     // public System.Void .ctor()
-    // Offset: 0xA4786C
+    // Offset: 0xC2947C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

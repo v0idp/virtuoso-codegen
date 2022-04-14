@@ -23,7 +23,7 @@ namespace Firebase::Unity {
   class UnityPlatformServices : public ::Il2CppObject {
     public:
     // static public System.Void SetupServices()
-    // Offset: 0x12CA4A0
+    // Offset: 0x18C9830
     static void SetupServices();
   }; // Firebase.Unity.UnityPlatformServices
   #pragma pack(pop)

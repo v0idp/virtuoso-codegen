@@ -32,15 +32,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class CallbackHandler::LoginUserWithEmailCallback : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action`2<System.String,System.Boolean> Action
     // Size: 0x8
     // Offset: 0x10
@@ -61,13 +53,13 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Action`2<System.String,System.Boolean> Action
-    ::System::Action_2<::StringW, bool>*& dyn_Action();
+    [[deprecated]] ::System::Action_2<::StringW, bool>*& dyn_Action();
     // Get instance field reference: public System.String UserId
-    ::StringW& dyn_UserId();
+    [[deprecated]] ::StringW& dyn_UserId();
     // Get instance field reference: public System.Boolean IsVerified
-    bool& dyn_IsVerified();
+    [[deprecated]] bool& dyn_IsVerified();
     // public System.Void .ctor()
-    // Offset: 0x135CE68
+    // Offset: 0x9593D0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

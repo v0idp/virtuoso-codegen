@@ -63,71 +63,71 @@ namespace TMPro {
     // Set static field: static private readonly TMPro.TMP_Offset k_ZeroOffset
     static void _set_k_ZeroOffset(::TMPro::TMP_Offset value);
     // Get instance field reference: private System.Single m_Left
-    float& dyn_m_Left();
+    [[deprecated]] float& dyn_m_Left();
     // Get instance field reference: private System.Single m_Right
-    float& dyn_m_Right();
+    [[deprecated]] float& dyn_m_Right();
     // Get instance field reference: private System.Single m_Top
-    float& dyn_m_Top();
+    [[deprecated]] float& dyn_m_Top();
     // Get instance field reference: private System.Single m_Bottom
-    float& dyn_m_Bottom();
+    [[deprecated]] float& dyn_m_Bottom();
     // public System.Single get_left()
-    // Offset: 0x859270
+    // Offset: 0x9B0408
     float get_left();
     // public System.Void set_left(System.Single value)
-    // Offset: 0x859278
+    // Offset: 0x9B0410
     void set_left(float value);
     // public System.Single get_right()
-    // Offset: 0x859280
+    // Offset: 0x9B0418
     float get_right();
     // public System.Void set_right(System.Single value)
-    // Offset: 0x859288
+    // Offset: 0x9B0420
     void set_right(float value);
     // public System.Single get_top()
-    // Offset: 0x859290
+    // Offset: 0x9B0428
     float get_top();
     // public System.Void set_top(System.Single value)
-    // Offset: 0x859298
+    // Offset: 0x9B0430
     void set_top(float value);
     // public System.Single get_bottom()
-    // Offset: 0x8592A0
+    // Offset: 0x9B0438
     float get_bottom();
     // public System.Void set_bottom(System.Single value)
-    // Offset: 0x8592A8
+    // Offset: 0x9B0440
     void set_bottom(float value);
     // public System.Single get_horizontal()
-    // Offset: 0x8592B0
+    // Offset: 0x9B0448
     float get_horizontal();
     // public System.Void set_horizontal(System.Single value)
-    // Offset: 0x8592B8
+    // Offset: 0x9B0450
     void set_horizontal(float value);
     // public System.Single get_vertical()
-    // Offset: 0x8592C0
+    // Offset: 0x9B0458
     float get_vertical();
     // public System.Void set_vertical(System.Single value)
-    // Offset: 0x8592C8
+    // Offset: 0x9B0460
     void set_vertical(float value);
     // static public TMPro.TMP_Offset get_zero()
-    // Offset: 0x8592D0
+    // Offset: 0x9B0468
     static ::TMPro::TMP_Offset get_zero();
     // public System.Void .ctor(System.Single left, System.Single right, System.Single top, System.Single bottom)
-    // Offset: 0x859338
+    // Offset: 0x9B04D0
     // ABORTED: conflicts with another method.  TMP_Offset(float left, float right, float top, float bottom);
     // public System.Void .ctor(System.Single horizontal, System.Single vertical)
-    // Offset: 0x859344
+    // Offset: 0x9B04DC
     TMP_Offset(float horizontal, float vertical);
     // static private System.Void .cctor()
-    // Offset: 0x859600
+    // Offset: 0x9B0798
     static void _cctor();
     // public System.Boolean Equals(TMPro.TMP_Offset other)
-    // Offset: 0x85954C
+    // Offset: 0x9B06E4
     bool Equals(::TMPro::TMP_Offset other);
     // public override System.Int32 GetHashCode()
-    // Offset: 0x859458
+    // Offset: 0x9B05F0
     // Implemented from: System.ValueType
     // Base method: System.Int32 ValueType::GetHashCode()
     int GetHashCode();
     // public override System.Boolean Equals(System.Object obj)
-    // Offset: 0x8594C8
+    // Offset: 0x9B0660
     // Implemented from: System.ValueType
     // Base method: System.Boolean ValueType::Equals(System.Object obj)
     bool Equals(::Il2CppObject* obj);
@@ -136,13 +136,13 @@ namespace TMPro {
   static check_size<sizeof(TMP_Offset), 12 + sizeof(float)> __TMPro_TMP_OffsetSizeCheck;
   static_assert(sizeof(TMP_Offset) == 0x10);
   // static public System.Boolean op_Equality(TMPro.TMP_Offset lhs, TMPro.TMP_Offset rhs)
-  // Offset: 0x859350
+  // Offset: 0x9B04E8
   bool operator ==(const ::TMPro::TMP_Offset& lhs, const ::TMPro::TMP_Offset& rhs);
   // static public System.Boolean op_Inequality(TMPro.TMP_Offset lhs, TMPro.TMP_Offset rhs)
-  // Offset: 0x859380
+  // Offset: 0x9B0518
   bool operator !=(const ::TMPro::TMP_Offset& lhs, const ::TMPro::TMP_Offset& rhs);
   // static public TMPro.TMP_Offset op_Multiply(TMPro.TMP_Offset a, System.Single b)
-  // Offset: 0x859444
+  // Offset: 0x9B05DC
   ::TMPro::TMP_Offset operator*(const ::TMPro::TMP_Offset& a, const float& b);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"

@@ -40,15 +40,7 @@ namespace VROSC::UI {
   // [ExecuteAlways] Offset: FFFFFFFF
   class UITextColoring : public ::VROSC::UI::UIInteractableColoring {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private TMPro.TextMeshPro _textMeshPro
     // Size: 0x8
     // Offset: 0x48
@@ -63,26 +55,26 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _textMeshPro
-    ::TMPro::TextMeshPro*& dyn__textMeshPro();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textMeshPro();
     // Get instance field reference: private UnityEngine.Color _colorFromScheme
-    ::UnityEngine::Color& dyn__colorFromScheme();
+    [[deprecated]] ::UnityEngine::Color& dyn__colorFromScheme();
     // private System.Void Awake()
-    // Offset: 0x13A5168
+    // Offset: 0x1919098
     void Awake();
     // private System.Void SetTextSettings()
-    // Offset: 0x13A516C
+    // Offset: 0x191909C
     void SetTextSettings();
     // private System.Void RemoveDumbMargins()
-    // Offset: 0x13A538C
+    // Offset: 0x19192BC
     void RemoveDumbMargins();
     // private System.Void OnValidate()
-    // Offset: 0x13A5520
+    // Offset: 0x1919450
     void OnValidate();
     // public System.Void SetData(VROSC.UI.UITextSetting setting)
-    // Offset: 0x13A564C
+    // Offset: 0x191957C
     void SetData(::VROSC::UI::UITextSetting* setting);
     // public System.Void .ctor()
-    // Offset: 0x13A5654
+    // Offset: 0x1919584
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -96,12 +88,12 @@ namespace VROSC::UI {
       return THROW_UNLESS((::il2cpp_utils::New<UITextColoring*, creationType>()));
     }
     // public override System.Void UpdateColor()
-    // Offset: 0x13A542C
+    // Offset: 0x191935C
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::UpdateColor()
     void UpdateColor();
     // public override System.Void ApplyColor(UnityEngine.Color color)
-    // Offset: 0x13A5454
+    // Offset: 0x1919384
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::ApplyColor(UnityEngine.Color color)
     void ApplyColor(::UnityEngine::Color color);

@@ -37,10 +37,10 @@ namespace Facebook::WitAi::Data {
   class WitStringValue : public ::Facebook::WitAi::Data::WitValue {
     public:
     // public System.String GetStringValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1106AE0
+    // Offset: 0x167D34C
     ::StringW GetStringValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public System.Void .ctor()
-    // Offset: 0x1106BF4
+    // Offset: 0x167D460
     // Implemented from: Facebook.WitAi.Data.WitValue
     // Base method: System.Void WitValue::.ctor()
     // Base method: System.Void ScriptableObject::.ctor()
@@ -52,12 +52,12 @@ namespace Facebook::WitAi::Data {
       return THROW_UNLESS((::il2cpp_utils::New<WitStringValue*, creationType>()));
     }
     // public override System.Object GetValue(Facebook.WitAi.Lib.WitResponseNode response)
-    // Offset: 0x1106ADC
+    // Offset: 0x167D348
     // Implemented from: Facebook.WitAi.Data.WitValue
     // Base method: System.Object WitValue::GetValue(Facebook.WitAi.Lib.WitResponseNode response)
     ::Il2CppObject* GetValue(::Facebook::WitAi::Lib::WitResponseNode* response);
     // public override System.Boolean Equals(Facebook.WitAi.Lib.WitResponseNode response, System.Object value)
-    // Offset: 0x1106B28
+    // Offset: 0x167D394
     // Implemented from: Facebook.WitAi.Data.WitValue
     // Base method: System.Boolean WitValue::Equals(Facebook.WitAi.Lib.WitResponseNode response, System.Object value)
     bool Equals(::Facebook::WitAi::Lib::WitResponseNode* response, ::Il2CppObject* value);

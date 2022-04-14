@@ -51,16 +51,16 @@ namespace VROSC {
     // Set static field: static public System.Action`2<System.String,VROSC.Error> <>9__6_1
     static void _set_$$9__6_1(::System::Action_2<::StringW, ::VROSC::Error>* value);
     // static private System.Void .cctor()
-    // Offset: 0x133FDE4
+    // Offset: 0x8CAD08
     static void _cctor();
     // System.Void <PackageSession>b__6_0(System.String s)
-    // Offset: 0x133FE4C
+    // Offset: 0x8CAD70
     void $PackageSession$b__6_0(::StringW s);
     // System.Void <PackageSession>b__6_1(System.String s, VROSC.Error error)
-    // Offset: 0x133FEDC
+    // Offset: 0x8CAE00
     void $PackageSession$b__6_1(::StringW s, ::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x133FE44
+    // Offset: 0x8CAD68
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

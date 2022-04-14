@@ -84,20 +84,12 @@ namespace VROSC {
       // Set static field: static public VROSC.LoopPlayerPlaybackState/VROSC.Activity Ended
       static void _set_Ended(::VROSC::LoopPlayerPlaybackState::Activity value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.LoopPlayerPlaybackState/VROSC.Activity
     #pragma pack(pop)
     static check_size<sizeof(LoopPlayerPlaybackState::Activity), 0 + sizeof(int)> __VROSC_LoopPlayerPlaybackState_ActivitySizeCheck;
     static_assert(sizeof(LoopPlayerPlaybackState::Activity) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopPlayerPlaybackState <NextState>k__BackingField
     // Size: 0x8
     // Offset: 0x10
@@ -136,83 +128,83 @@ namespace VROSC {
     // Set static field: static public System.Int32 AntiClickFadeLength
     static void _set_AntiClickFadeLength(int value);
     // Get instance field reference: private VROSC.LoopPlayerPlaybackState <NextState>k__BackingField
-    ::VROSC::LoopPlayerPlaybackState*& dyn_$NextState$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackState*& dyn_$NextState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackState/VROSC.Activity <CurrentActivity>k__BackingField
-    ::VROSC::LoopPlayerPlaybackState::Activity& dyn_$CurrentActivity$k__BackingField();
+    [[deprecated]] ::VROSC::LoopPlayerPlaybackState::Activity& dyn_$CurrentActivity$k__BackingField();
     // Get instance field reference: private System.Int32 <StateBeginSample>k__BackingField
-    int& dyn_$StateBeginSample$k__BackingField();
+    [[deprecated]] int& dyn_$StateBeginSample$k__BackingField();
     // Get instance field reference: private System.Int32 <StateEndSample>k__BackingField
-    int& dyn_$StateEndSample$k__BackingField();
+    [[deprecated]] int& dyn_$StateEndSample$k__BackingField();
     // Get instance field reference: private System.Boolean <Fading>k__BackingField
-    bool& dyn_$Fading$k__BackingField();
+    [[deprecated]] bool& dyn_$Fading$k__BackingField();
     // public VROSC.LoopPlayerPlaybackState get_NextState()
-    // Offset: 0x907F18
+    // Offset: 0x19BDEAC
     ::VROSC::LoopPlayerPlaybackState* get_NextState();
     // protected System.Void set_NextState(VROSC.LoopPlayerPlaybackState value)
-    // Offset: 0x907F10
+    // Offset: 0x19BDEA4
     void set_NextState(::VROSC::LoopPlayerPlaybackState* value);
     // public VROSC.LoopPlayerPlaybackState/VROSC.Activity get_CurrentActivity()
-    // Offset: 0x907F28
+    // Offset: 0x19BDEBC
     ::VROSC::LoopPlayerPlaybackState::Activity get_CurrentActivity();
     // protected System.Void set_CurrentActivity(VROSC.LoopPlayerPlaybackState/VROSC.Activity value)
-    // Offset: 0x907F20
+    // Offset: 0x19BDEB4
     void set_CurrentActivity(::VROSC::LoopPlayerPlaybackState::Activity value);
     // public System.Int32 get_StateBeginSample()
-    // Offset: 0x907F38
+    // Offset: 0x19BDECC
     int get_StateBeginSample();
     // protected System.Void set_StateBeginSample(System.Int32 value)
-    // Offset: 0x907F30
+    // Offset: 0x19BDEC4
     void set_StateBeginSample(int value);
     // public System.Int32 get_StateEndSample()
-    // Offset: 0x907F48
+    // Offset: 0x19BDEDC
     int get_StateEndSample();
     // protected System.Void set_StateEndSample(System.Int32 value)
-    // Offset: 0x907F40
+    // Offset: 0x19BDED4
     void set_StateEndSample(int value);
     // public System.Boolean get_Fading()
-    // Offset: 0x907F5C
+    // Offset: 0x19BDEF0
     bool get_Fading();
     // protected System.Void set_Fading(System.Boolean value)
-    // Offset: 0x907F50
+    // Offset: 0x19BDEE4
     void set_Fading(bool value);
     // public System.Boolean get_Playing()
-    // Offset: 0x907F64
+    // Offset: 0x19BDEF8
     bool get_Playing();
     // public System.Boolean get_HasEnded()
-    // Offset: 0x907F6C
+    // Offset: 0x19BDF00
     bool get_HasEnded();
     // public System.Boolean get_WaitingToBegin()
-    // Offset: 0x9075B8
+    // Offset: 0x19BD554
     bool get_WaitingToBegin();
     // public System.Single GetCurrentFade(System.Int32 atSample)
     // Offset: 0xFFFFFFFFFFFFFFFF
     float GetCurrentFade(int atSample);
     // public System.Void SetExplicit(System.Int32 startSample, System.Int32 stopSample)
-    // Offset: 0x9074E4
+    // Offset: 0x19BD480
     void SetExplicit(int startSample, int stopSample);
     // public System.Void SetNextState(VROSC.LoopPlayerPlaybackState nextState)
-    // Offset: 0x907634
+    // Offset: 0x19BD5D0
     void SetNextState(::VROSC::LoopPlayerPlaybackState* nextState);
     // public System.Boolean CheckActivityChangeBeforeSample(System.Int32 sample)
-    // Offset: 0x907CF8
+    // Offset: 0x19BDC90
     bool CheckActivityChangeBeforeSample(int sample);
     // public System.Boolean EvaluateRunningAndFlagActivityChangeAtSample(System.Int32 sample)
-    // Offset: 0x907DD8
+    // Offset: 0x19BDD70
     bool EvaluateRunningAndFlagActivityChangeAtSample(int sample);
     // private System.Void SetActivity(System.Int32 sample)
-    // Offset: 0x907F7C
+    // Offset: 0x19BDF10
     void SetActivity(int sample);
     // public System.Void SetStateActive(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 atSample)
-    // Offset: 0x907FA8
+    // Offset: 0x19BDF3C
     void SetStateActive(::VROSC::LoopPlayerPlaybackSettings* settings, int atSample);
     // public System.String DebugString()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::StringW DebugString();
     // System.Single GetBeginProgress(System.Int32 startSample, System.Int32 currentSyncSample)
-    // Offset: 0x906788
+    // Offset: 0x19BC75C
     float GetBeginProgress(int startSample, int currentSyncSample);
     // protected System.Void .ctor()
-    // Offset: 0x90736C
+    // Offset: 0x19BD324
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

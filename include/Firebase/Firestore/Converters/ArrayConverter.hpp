@@ -42,15 +42,7 @@ namespace Firebase::Firestore::Converters {
   // [TokenAttribute] Offset: FFFFFFFF
   class ArrayConverter : public ::Firebase::Firestore::Converters::EnumerableConverterBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Type _elementType
     // Size: 0x8
     // Offset: 0x18
@@ -61,9 +53,9 @@ namespace Firebase::Firestore::Converters {
     // Deleting conversion operator: operator ::System::Type*
     constexpr operator ::System::Type*() const noexcept = delete;
     // Get instance field reference: private readonly System.Type _elementType
-    ::System::Type*& dyn__elementType();
+    [[deprecated]] ::System::Type*& dyn__elementType();
     // System.Void .ctor(System.Type elementType)
-    // Offset: 0xC256C4
+    // Offset: 0xD47434
     // Implemented from: Firebase.Firestore.Converters.EnumerableConverterBase
     // Base method: System.Void EnumerableConverterBase::.ctor(System.Type elementType)
     // Base method: System.Void ConverterBase::.ctor(System.Type elementType)
@@ -73,7 +65,7 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<ArrayConverter*, creationType>(elementType)));
     }
     // protected override System.Object DeserializeArray(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy arrayValue)
-    // Offset: 0xC25748
+    // Offset: 0xD474B8
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeArray(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy arrayValue)
     ::Il2CppObject* DeserializeArray(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::FieldValueProxy* arrayValue);

@@ -64,15 +64,15 @@ namespace Mono::Net {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IntPtr Version
-    ::System::IntPtr& dyn_Version();
+    [[deprecated]] ::System::IntPtr& dyn_Version();
     // Get instance field reference: public System.IntPtr Info
-    ::System::IntPtr& dyn_Info();
+    [[deprecated]] ::System::IntPtr& dyn_Info();
     // Get instance field reference: public System.IntPtr Retain
-    ::System::IntPtr& dyn_Retain();
+    [[deprecated]] ::System::IntPtr& dyn_Retain();
     // Get instance field reference: public System.IntPtr Release
-    ::System::IntPtr& dyn_Release();
+    [[deprecated]] ::System::IntPtr& dyn_Release();
     // Get instance field reference: public System.IntPtr CopyDescription
-    ::System::IntPtr& dyn_CopyDescription();
+    [[deprecated]] ::System::IntPtr& dyn_CopyDescription();
   }; // Mono.Net.CFStreamClientContext
   #pragma pack(pop)
   static check_size<sizeof(CFStreamClientContext), 32 + sizeof(::System::IntPtr)> __Mono_Net_CFStreamClientContextSizeCheck;

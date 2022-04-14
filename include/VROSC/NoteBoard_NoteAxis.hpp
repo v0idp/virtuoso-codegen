@@ -38,15 +38,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class NoteBoard::NoteAxis : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.Scale <Scale>k__BackingField
     // Size: 0x4
     // Offset: 0x10
@@ -135,59 +127,59 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.Scale <Scale>k__BackingField
-    ::VROSC::Scale& dyn_$Scale$k__BackingField();
+    [[deprecated]] ::VROSC::Scale& dyn_$Scale$k__BackingField();
     // Get instance field reference: private VROSC.Note <StartNote>k__BackingField
-    ::VROSC::Note& dyn_$StartNote$k__BackingField();
+    [[deprecated]] ::VROSC::Note& dyn_$StartNote$k__BackingField();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.Axis <Axis>k__BackingField
-    ::VROSC::NoteBoard::Axis& dyn_$Axis$k__BackingField();
+    [[deprecated]] ::VROSC::NoteBoard::Axis& dyn_$Axis$k__BackingField();
     // Get instance field reference: public System.Boolean OverrideBoard
-    bool& dyn_OverrideBoard();
+    [[deprecated]] bool& dyn_OverrideBoard();
     // Get instance field reference: public VROSC.ScaleNode OverrideScale
-    ::VROSC::ScaleNode*& dyn_OverrideScale();
+    [[deprecated]] ::VROSC::ScaleNode*& dyn_OverrideScale();
     // Get instance field reference: public VROSC.NoteField OverrideStartNote
-    ::VROSC::NoteField*& dyn_OverrideStartNote();
+    [[deprecated]] ::VROSC::NoteField*& dyn_OverrideStartNote();
     // Get instance field reference: public VROSC.IntField StartOctave
-    ::VROSC::IntField*& dyn_StartOctave();
+    [[deprecated]] ::VROSC::IntField*& dyn_StartOctave();
     // Get instance field reference: public VROSC.IntField NumberOfNotes
-    ::VROSC::IntField*& dyn_NumberOfNotes();
+    [[deprecated]] ::VROSC::IntField*& dyn_NumberOfNotes();
     // Get instance field reference: public VROSC.IntField IntervalBetweenNotes
-    ::VROSC::IntField*& dyn_IntervalBetweenNotes();
+    [[deprecated]] ::VROSC::IntField*& dyn_IntervalBetweenNotes();
     // Get instance field reference: private VROSC.Scale _lastScale
-    ::VROSC::Scale& dyn__lastScale();
+    [[deprecated]] ::VROSC::Scale& dyn__lastScale();
     // Get instance field reference: private VROSC.Note _lastStartNote
-    ::VROSC::Note& dyn__lastStartNote();
+    [[deprecated]] ::VROSC::Note& dyn__lastStartNote();
     // Get instance field reference: private System.Int32 _lastStartOctave
-    int& dyn__lastStartOctave();
+    [[deprecated]] int& dyn__lastStartOctave();
     // Get instance field reference: private System.Int32 _lastNumberOfNotes
-    int& dyn__lastNumberOfNotes();
+    [[deprecated]] int& dyn__lastNumberOfNotes();
     // Get instance field reference: private System.Int32 _lastIntervalBetweenNotes
-    int& dyn__lastIntervalBetweenNotes();
+    [[deprecated]] int& dyn__lastIntervalBetweenNotes();
     // public VROSC.Scale get_Scale()
-    // Offset: 0x133DC88
+    // Offset: 0x1965B78
     ::VROSC::Scale get_Scale();
     // private System.Void set_Scale(VROSC.Scale value)
-    // Offset: 0x133DC90
+    // Offset: 0x1965B80
     void set_Scale(::VROSC::Scale value);
     // public VROSC.Note get_StartNote()
-    // Offset: 0x133DC98
+    // Offset: 0x1965B88
     ::VROSC::Note get_StartNote();
     // private System.Void set_StartNote(VROSC.Note value)
-    // Offset: 0x133DCA0
+    // Offset: 0x1965B90
     void set_StartNote(::VROSC::Note value);
     // public VROSC.NoteBoard/VROSC.Axis get_Axis()
-    // Offset: 0x133DCA8
+    // Offset: 0x1965B98
     ::VROSC::NoteBoard::Axis get_Axis();
     // private System.Void set_Axis(VROSC.NoteBoard/VROSC.Axis value)
-    // Offset: 0x133DCB0
+    // Offset: 0x1965BA0
     void set_Axis(::VROSC::NoteBoard::Axis value);
     // public System.Void Init(VROSC.NoteBoard/VROSC.Axis axis)
-    // Offset: 0x133DC80
+    // Offset: 0x1965B70
     void Init(::VROSC::NoteBoard::Axis axis);
     // public System.Boolean UpdateAndReturnIsDirty(VROSC.Scale noteBoardScale, VROSC.Note noteBoardStartNote)
-    // Offset: 0x133DCB8
+    // Offset: 0x1965BA8
     bool UpdateAndReturnIsDirty(::VROSC::Scale noteBoardScale, ::VROSC::Note noteBoardStartNote);
     // public System.Void .ctor()
-    // Offset: 0x133DE6C
+    // Offset: 0x1965D5C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

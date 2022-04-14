@@ -115,20 +115,12 @@ namespace VROSC {
       // Set static field: static public VROSC.LoopStationRecorder/VROSC.RecordingState Playing
       static void _set_Playing(::VROSC::LoopStationRecorder::RecordingState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.LoopStationRecorder/VROSC.RecordingState
     #pragma pack(pop)
     static check_size<sizeof(LoopStationRecorder::RecordingState), 0 + sizeof(int)> __VROSC_LoopStationRecorder_RecordingStateSizeCheck;
     static_assert(sizeof(LoopStationRecorder::RecordingState) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.LoopStation <LoopStation>k__BackingField
     // Size: 0x8
     // Offset: 0x18
@@ -217,100 +209,100 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.LoopStationRecorder/VROSC.RecordingState> OnStateChanged
     static void _set_OnStateChanged(::System::Action_1<::VROSC::LoopStationRecorder::RecordingState>* value);
     // Get instance field reference: private VROSC.LoopStation <LoopStation>k__BackingField
-    ::VROSC::LoopStation*& dyn_$LoopStation$k__BackingField();
+    [[deprecated]] ::VROSC::LoopStation*& dyn_$LoopStation$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationRecorder/VROSC.RecordingState <State>k__BackingField
-    ::VROSC::LoopStationRecorder::RecordingState& dyn_$State$k__BackingField();
+    [[deprecated]] ::VROSC::LoopStationRecorder::RecordingState& dyn_$State$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationRecordingUI _ui
-    ::VROSC::LoopStationRecordingUI*& dyn__ui();
+    [[deprecated]] ::VROSC::LoopStationRecordingUI*& dyn__ui();
     // Get instance field reference: private System.Int32 _recordingMaxLength
-    int& dyn__recordingMaxLength();
+    [[deprecated]] int& dyn__recordingMaxLength();
     // Get instance field reference: private System.String _currentTrackId
-    ::StringW& dyn__currentTrackId();
+    [[deprecated]] ::StringW& dyn__currentTrackId();
     // Get instance field reference: private System.Boolean _buttonPressScheduled
-    bool& dyn__buttonPressScheduled();
+    [[deprecated]] bool& dyn__buttonPressScheduled();
     // Get instance field reference: private VROSC.SoundSource _currentRecordingSoundSource
-    ::VROSC::SoundSource& dyn__currentRecordingSoundSource();
+    [[deprecated]] ::VROSC::SoundSource& dyn__currentRecordingSoundSource();
     // Get instance field reference: private System.Int32 _recordingStartSample
-    int& dyn__recordingStartSample();
+    [[deprecated]] int& dyn__recordingStartSample();
     // Get instance field reference: private System.Boolean _currentRecordingIsOverdub
-    bool& dyn__currentRecordingIsOverdub();
+    [[deprecated]] bool& dyn__currentRecordingIsOverdub();
     // Get instance field reference: private System.Single _fadeOverlapSeconds
-    float& dyn__fadeOverlapSeconds();
+    [[deprecated]] float& dyn__fadeOverlapSeconds();
     // Get instance field reference: private System.Int32 _fadeOverlapLength
-    int& dyn__fadeOverlapLength();
+    [[deprecated]] int& dyn__fadeOverlapLength();
     // Get instance field reference: private System.Int32 _setBpmRecordingOffset
-    int& dyn__setBpmRecordingOffset();
+    [[deprecated]] int& dyn__setBpmRecordingOffset();
     // public VROSC.LoopStation get_LoopStation()
-    // Offset: 0x917014
+    // Offset: 0x19743E4
     ::VROSC::LoopStation* get_LoopStation();
     // private System.Void set_LoopStation(VROSC.LoopStation value)
-    // Offset: 0x91701C
+    // Offset: 0x19743EC
     void set_LoopStation(::VROSC::LoopStation* value);
     // public VROSC.LoopStationRecorder/VROSC.RecordingState get_State()
-    // Offset: 0x917024
+    // Offset: 0x19743F4
     ::VROSC::LoopStationRecorder::RecordingState get_State();
     // private System.Void set_State(VROSC.LoopStationRecorder/VROSC.RecordingState value)
-    // Offset: 0x91702C
+    // Offset: 0x19743FC
     void set_State(::VROSC::LoopStationRecorder::RecordingState value);
     // public System.Void Setup(VROSC.LoopStation loopStation)
-    // Offset: 0x90A558
+    // Offset: 0x1974404
     void Setup(::VROSC::LoopStation* loopStation);
     // protected System.Void OnDestroy()
-    // Offset: 0x917034
+    // Offset: 0x1974AB0
     void OnDestroy();
     // public System.Void UpdateLooperState()
-    // Offset: 0x90A1DC
+    // Offset: 0x1974CC8
     void UpdateLooperState();
     // public System.Void RecordOrStop(VROSC.Signal signal)
-    // Offset: 0x91724C
+    // Offset: 0x1974DA4
     void RecordOrStop(::VROSC::Signal* signal);
     // private System.Void ScheduleButtonPress(System.Double dspTime)
-    // Offset: 0x917270
+    // Offset: 0x1974DC8
     void ScheduleButtonPress(double dspTime);
     // public System.Void StopRecordingByUser(System.Boolean restart)
-    // Offset: 0x90ADB8
+    // Offset: 0x1974E9C
     void StopRecordingByUser(bool restart);
     // private System.Void PrepareForRecording()
-    // Offset: 0x91756C
+    // Offset: 0x1975394
     void PrepareForRecording();
     // public System.Void CancelPreparingForRecording()
-    // Offset: 0x9173D0
+    // Offset: 0x19751F8
     void CancelPreparingForRecording();
     // private System.Void StartRecordingMicrophone()
-    // Offset: 0x91773C
+    // Offset: 0x19755F4
     void StartRecordingMicrophone();
     // private System.Void StartRecording(VROSC.WidgetSettings/VROSC.Identifier instrumentId, VROSC.PatchSettings patchSettings)
-    // Offset: 0x917748
+    // Offset: 0x1975600
     void StartRecording(::VROSC::WidgetSettings::Identifier instrumentId, ::VROSC::PatchSettings* patchSettings);
     // public System.Void CancelRecording()
-    // Offset: 0x90A210
+    // Offset: 0x1974F28
     void CancelRecording();
     // private System.Void ConcludeRecording()
-    // Offset: 0x917F30
+    // Offset: 0x1975E38
     void ConcludeRecording();
     // private System.Void ReceiveRecording(System.Single[] audioData)
-    // Offset: 0x917FF0
+    // Offset: 0x1975EF8
     void ReceiveRecording(::ArrayW<float> audioData);
     // private System.Void Finish()
-    // Offset: 0x918084
+    // Offset: 0x1975F8C
     void Finish();
     // private System.Void CopyAudioDataToLoopTrack(System.Single[] sourceData)
-    // Offset: 0x9180E4
+    // Offset: 0x1976014
     void CopyAudioDataToLoopTrack(::ArrayW<float> sourceData);
     // private System.Int32 CalculateGlobalSyncOffset(System.Int32 recordingLength)
-    // Offset: 0x917D98
+    // Offset: 0x1975CA0
     int CalculateGlobalSyncOffset(int recordingLength);
     // private System.Void PlayAll()
-    // Offset: 0x918168
+    // Offset: 0x1976098
     void PlayAll();
     // private System.Void SetToIdle()
-    // Offset: 0x917344
+    // Offset: 0x1975170
     void SetToIdle();
     // public System.Void SetState(VROSC.LoopStationRecorder/VROSC.RecordingState state)
-    // Offset: 0x90B5C0
+    // Offset: 0x1975564
     void SetState(::VROSC::LoopStationRecorder::RecordingState state);
     // public System.Void .ctor()
-    // Offset: 0x9181A4
+    // Offset: 0x19760D0
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -38,15 +38,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ShortcutExtensions::$$c__DisplayClass60_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Transform target
     // Size: 0x8
     // Offset: 0x10
@@ -87,40 +79,40 @@ namespace DG::Tweening {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.Transform target
-    ::UnityEngine::Transform*& dyn_target();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_target();
     // Get instance field reference: public System.Boolean offsetYSet
-    bool& dyn_offsetYSet();
+    [[deprecated]] bool& dyn_offsetYSet();
     // Get instance field reference: public System.Single offsetY
-    float& dyn_offsetY();
+    [[deprecated]] float& dyn_offsetY();
     // Get instance field reference: public DG.Tweening.Sequence s
-    ::DG::Tweening::Sequence*& dyn_s();
+    [[deprecated]] ::DG::Tweening::Sequence*& dyn_s();
     // Get instance field reference: public UnityEngine.Vector3 endValue
-    ::UnityEngine::Vector3& dyn_endValue();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_endValue();
     // Get instance field reference: public System.Single startPosY
-    float& dyn_startPosY();
+    [[deprecated]] float& dyn_startPosY();
     // UnityEngine.Vector3 <DOLocalJump>b__0()
-    // Offset: 0x126D140
+    // Offset: 0x18654E4
     ::UnityEngine::Vector3 $DOLocalJump$b__0();
     // System.Void <DOLocalJump>b__1(UnityEngine.Vector3 x)
-    // Offset: 0x126D15C
+    // Offset: 0x1865500
     void $DOLocalJump$b__1(::UnityEngine::Vector3 x);
     // UnityEngine.Vector3 <DOLocalJump>b__2()
-    // Offset: 0x126D178
+    // Offset: 0x186551C
     ::UnityEngine::Vector3 $DOLocalJump$b__2();
     // System.Void <DOLocalJump>b__3(UnityEngine.Vector3 x)
-    // Offset: 0x126D194
+    // Offset: 0x1865538
     void $DOLocalJump$b__3(::UnityEngine::Vector3 x);
     // UnityEngine.Vector3 <DOLocalJump>b__4()
-    // Offset: 0x126D1B0
+    // Offset: 0x1865554
     ::UnityEngine::Vector3 $DOLocalJump$b__4();
     // System.Void <DOLocalJump>b__5(UnityEngine.Vector3 x)
-    // Offset: 0x126D1CC
+    // Offset: 0x1865570
     void $DOLocalJump$b__5(::UnityEngine::Vector3 x);
     // System.Void <DOLocalJump>b__6()
-    // Offset: 0x126D1E8
+    // Offset: 0x186558C
     void $DOLocalJump$b__6();
     // public System.Void .ctor()
-    // Offset: 0x126D138
+    // Offset: 0x18654DC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

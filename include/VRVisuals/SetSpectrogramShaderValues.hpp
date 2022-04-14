@@ -49,15 +49,7 @@ namespace VRVisuals {
     public:
     // Nested type: ::VRVisuals::SetSpectrogramShaderValues::TimestampedValues
     class TimestampedValues;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _life
     // Size: 0x4
     // Offset: 0x18
@@ -104,39 +96,39 @@ namespace VRVisuals {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _life
-    float& dyn__life();
+    [[deprecated]] float& dyn__life();
     // Get instance field reference: private System.Single _minRange
-    float& dyn__minRange();
+    [[deprecated]] float& dyn__minRange();
     // Get instance field reference: private System.Single _maxRange
-    float& dyn__maxRange();
+    [[deprecated]] float& dyn__maxRange();
     // Get instance field reference: private System.Single _scale
-    float& dyn__scale();
+    [[deprecated]] float& dyn__scale();
     // Get instance field reference: private UnityEngine.MeshFilter[] _meshFilters
-    ::ArrayW<::UnityEngine::MeshFilter*>& dyn__meshFilters();
+    [[deprecated]] ::ArrayW<::UnityEngine::MeshFilter*>& dyn__meshFilters();
     // Get instance field reference: private UnityEngine.Mesh _mesh
-    ::UnityEngine::Mesh*& dyn__mesh();
+    [[deprecated]] ::UnityEngine::Mesh*& dyn__mesh();
     // Get instance field reference: private System.Collections.Generic.List`1<VRVisuals.SetSpectrogramShaderValues/VRVisuals.TimestampedValues> _timestampedValues
-    ::System::Collections::Generic::List_1<::VRVisuals::SetSpectrogramShaderValues::TimestampedValues*>*& dyn__timestampedValues();
+    [[deprecated]] ::System::Collections::Generic::List_1<::VRVisuals::SetSpectrogramShaderValues::TimestampedValues*>*& dyn__timestampedValues();
     // private System.Void Awake()
-    // Offset: 0x13B1F88
+    // Offset: 0x1924E2C
     void Awake();
     // private System.Void Update()
-    // Offset: 0x13B2054
+    // Offset: 0x1924EF8
     void Update();
     // private System.Void GetValuesFromAudioPeer()
-    // Offset: 0x13B2078
+    // Offset: 0x1924F1C
     void GetValuesFromAudioPeer();
     // private System.Void Generate()
-    // Offset: 0x13B23AC
+    // Offset: 0x1925250
     void Generate();
     // private System.Collections.Generic.List`1<System.Single> Get64Values()
-    // Offset: 0x13B27A0
+    // Offset: 0x1925644
     ::System::Collections::Generic::List_1<float>* Get64Values();
     // private System.Void OnDrawGizmosSelected()
-    // Offset: 0x13B28CC
+    // Offset: 0x1925770
     void OnDrawGizmosSelected();
     // public System.Void .ctor()
-    // Offset: 0x13B2B50
+    // Offset: 0x19259F4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

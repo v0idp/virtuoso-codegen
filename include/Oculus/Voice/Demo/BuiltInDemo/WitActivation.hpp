@@ -35,15 +35,7 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitActivation : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Voice.AppVoiceExperience voiceExperience
     // Size: 0x8
     // Offset: 0x18
@@ -54,21 +46,21 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Oculus.Voice.AppVoiceExperience voiceExperience
-    ::Oculus::Voice::AppVoiceExperience*& dyn_voiceExperience();
+    [[deprecated]] ::Oculus::Voice::AppVoiceExperience*& dyn_voiceExperience();
     // private System.Void OnValidate()
-    // Offset: 0x1356C7C
+    // Offset: 0x953578
     void OnValidate();
     // private System.Void Start()
-    // Offset: 0x1356D10
+    // Offset: 0x95360C
     void Start();
     // private System.Void Update()
-    // Offset: 0x1356D64
+    // Offset: 0x953660
     void Update();
     // public System.Void ActivateWit()
-    // Offset: 0x1356DE8
+    // Offset: 0x9536E4
     void ActivateWit();
     // public System.Void .ctor()
-    // Offset: 0x1356E0C
+    // Offset: 0x953708
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

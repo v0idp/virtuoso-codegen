@@ -43,15 +43,7 @@ namespace NatSuite::Devices::Internal {
     public:
     // Nested type: ::NatSuite::Devices::Internal::NativeAudioDevice::$$c__DisplayClass14_0
     class $$c__DisplayClass14_0;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.IntPtr device
     // Size: 0x8
     // Offset: 0x10
@@ -64,69 +56,69 @@ namespace NatSuite::Devices::Internal {
       return device;
     }
     // Get instance field reference: private readonly System.IntPtr device
-    ::System::IntPtr& dyn_device();
+    [[deprecated]] ::System::IntPtr& dyn_device();
     // public System.Void .ctor(System.IntPtr device)
-    // Offset: 0xA0D0B4
+    // Offset: 0xAC1B80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NativeAudioDevice* New_ctor(::System::IntPtr device) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::NativeAudioDevice::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NativeAudioDevice*, creationType>(device)));
     }
     // static private System.Void OnSampleBuffer(System.IntPtr context, System.IntPtr sampleBuffer, System.Int32 sampleCount, System.Int64 timestamp)
-    // Offset: 0xA0CCFC
+    // Offset: 0xAD1BD8
     static void OnSampleBuffer(::System::IntPtr context, ::System::IntPtr sampleBuffer, int sampleCount, int64_t timestamp);
     // public override System.String get_uniqueID()
-    // Offset: 0xA0CE24
+    // Offset: 0xAD1D00
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.String AudioDevice::get_uniqueID()
     ::StringW get_uniqueID();
     // public override System.String get_name()
-    // Offset: 0xA0CEA4
+    // Offset: 0xAD1D80
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.String AudioDevice::get_name()
     ::StringW get_name();
     // public override System.Boolean get_echoCancellation()
-    // Offset: 0xA0CF24
+    // Offset: 0xAD1E00
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.Boolean AudioDevice::get_echoCancellation()
     bool get_echoCancellation();
     // public override System.Int32 get_sampleRate()
-    // Offset: 0xA0CF30
+    // Offset: 0xAD1E0C
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.Int32 AudioDevice::get_sampleRate()
     int get_sampleRate();
     // public override System.Void set_sampleRate(System.Int32 value)
-    // Offset: 0xA0CF3C
+    // Offset: 0xAD1E18
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.Void AudioDevice::set_sampleRate(System.Int32 value)
     void set_sampleRate(int value);
     // public override System.Int32 get_channelCount()
-    // Offset: 0xA0CF48
+    // Offset: 0xAD1E24
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.Int32 AudioDevice::get_channelCount()
     int get_channelCount();
     // public override System.Void set_channelCount(System.Int32 value)
-    // Offset: 0xA0CF54
+    // Offset: 0xAD1E30
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.Void AudioDevice::set_channelCount(System.Int32 value)
     void set_channelCount(int value);
     // public override System.Boolean get_running()
-    // Offset: 0xA0CF60
+    // Offset: 0xAD1E3C
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.Boolean AudioDevice::get_running()
     bool get_running();
     // public override System.Void StartRunning(NatSuite.Devices.SampleBufferDelegate delegate)
-    // Offset: 0xA0CF6C
+    // Offset: 0xAD1E48
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.Void AudioDevice::StartRunning(NatSuite.Devices.SampleBufferDelegate delegate)
     void StartRunning(::NatSuite::Devices::SampleBufferDelegate* delegate);
     // public override System.Void StopRunning()
-    // Offset: 0xA0D0A8
+    // Offset: 0xAD1F84
     // Implemented from: NatSuite.Devices.AudioDevice
     // Base method: System.Void AudioDevice::StopRunning()
     void StopRunning();
     // protected override System.Void Finalize()
-    // Offset: 0xA0D0E0
+    // Offset: 0xAD1F90
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();

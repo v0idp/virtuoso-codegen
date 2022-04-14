@@ -44,13 +44,13 @@ namespace VROSC {
     // Set static field: static public System.Func`2<VROSC.Note,System.String> <>9__5_0
     static void _set_$$9__5_0(::System::Func_2<::VROSC::Note, ::StringW>* value);
     // static private System.Void .cctor()
-    // Offset: 0x13495C8
+    // Offset: 0x8D4540
     static void _cctor();
     // System.String <Awake>b__5_0(VROSC.Note x)
-    // Offset: 0x1349630
+    // Offset: 0x8D45A8
     ::StringW $Awake$b__5_0(::VROSC::Note x);
     // public System.Void .ctor()
-    // Offset: 0x1349628
+    // Offset: 0x8D45A0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -428,135 +428,135 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 previous_WordBreak
-    int& dyn_previous_WordBreak();
+    [[deprecated]] int& dyn_previous_WordBreak();
     // Get instance field reference: public System.Int32 total_CharacterCount
-    int& dyn_total_CharacterCount();
+    [[deprecated]] int& dyn_total_CharacterCount();
     // Get instance field reference: public System.Int32 visible_CharacterCount
-    int& dyn_visible_CharacterCount();
+    [[deprecated]] int& dyn_visible_CharacterCount();
     // Get instance field reference: public System.Int32 visible_SpriteCount
-    int& dyn_visible_SpriteCount();
+    [[deprecated]] int& dyn_visible_SpriteCount();
     // Get instance field reference: public System.Int32 visible_LinkCount
-    int& dyn_visible_LinkCount();
+    [[deprecated]] int& dyn_visible_LinkCount();
     // Get instance field reference: public System.Int32 firstCharacterIndex
-    int& dyn_firstCharacterIndex();
+    [[deprecated]] int& dyn_firstCharacterIndex();
     // Get instance field reference: public System.Int32 firstVisibleCharacterIndex
-    int& dyn_firstVisibleCharacterIndex();
+    [[deprecated]] int& dyn_firstVisibleCharacterIndex();
     // Get instance field reference: public System.Int32 lastCharacterIndex
-    int& dyn_lastCharacterIndex();
+    [[deprecated]] int& dyn_lastCharacterIndex();
     // Get instance field reference: public System.Int32 lastVisibleCharIndex
-    int& dyn_lastVisibleCharIndex();
+    [[deprecated]] int& dyn_lastVisibleCharIndex();
     // Get instance field reference: public System.Int32 lineNumber
-    int& dyn_lineNumber();
+    [[deprecated]] int& dyn_lineNumber();
     // Get instance field reference: public System.Single maxCapHeight
-    float& dyn_maxCapHeight();
+    [[deprecated]] float& dyn_maxCapHeight();
     // Get instance field reference: public System.Single maxAscender
-    float& dyn_maxAscender();
+    [[deprecated]] float& dyn_maxAscender();
     // Get instance field reference: public System.Single maxDescender
-    float& dyn_maxDescender();
+    [[deprecated]] float& dyn_maxDescender();
     // Get instance field reference: public System.Single startOfLineAscender
-    float& dyn_startOfLineAscender();
+    [[deprecated]] float& dyn_startOfLineAscender();
     // Get instance field reference: public System.Single maxLineAscender
-    float& dyn_maxLineAscender();
+    [[deprecated]] float& dyn_maxLineAscender();
     // Get instance field reference: public System.Single maxLineDescender
-    float& dyn_maxLineDescender();
+    [[deprecated]] float& dyn_maxLineDescender();
     // Get instance field reference: public System.Single pageAscender
-    float& dyn_pageAscender();
+    [[deprecated]] float& dyn_pageAscender();
     // Get instance field reference: public TMPro.HorizontalAlignmentOptions horizontalAlignment
-    ::TMPro::HorizontalAlignmentOptions& dyn_horizontalAlignment();
+    [[deprecated]] ::TMPro::HorizontalAlignmentOptions& dyn_horizontalAlignment();
     // Get instance field reference: public System.Single marginLeft
-    float& dyn_marginLeft();
+    [[deprecated]] float& dyn_marginLeft();
     // Get instance field reference: public System.Single marginRight
-    float& dyn_marginRight();
+    [[deprecated]] float& dyn_marginRight();
     // Get instance field reference: public System.Single xAdvance
-    float& dyn_xAdvance();
+    [[deprecated]] float& dyn_xAdvance();
     // Get instance field reference: public System.Single preferredWidth
-    float& dyn_preferredWidth();
+    [[deprecated]] float& dyn_preferredWidth();
     // Get instance field reference: public System.Single preferredHeight
-    float& dyn_preferredHeight();
+    [[deprecated]] float& dyn_preferredHeight();
     // Get instance field reference: public System.Single previousLineScale
-    float& dyn_previousLineScale();
+    [[deprecated]] float& dyn_previousLineScale();
     // Get instance field reference: public System.Int32 wordCount
-    int& dyn_wordCount();
+    [[deprecated]] int& dyn_wordCount();
     // Get instance field reference: public TMPro.FontStyles fontStyle
-    ::TMPro::FontStyles& dyn_fontStyle();
+    [[deprecated]] ::TMPro::FontStyles& dyn_fontStyle();
     // Get instance field reference: public System.Int32 italicAngle
-    int& dyn_italicAngle();
+    [[deprecated]] int& dyn_italicAngle();
     // Get instance field reference: public System.Single fontScaleMultiplier
-    float& dyn_fontScaleMultiplier();
+    [[deprecated]] float& dyn_fontScaleMultiplier();
     // Get instance field reference: public System.Single currentFontSize
-    float& dyn_currentFontSize();
+    [[deprecated]] float& dyn_currentFontSize();
     // Get instance field reference: public System.Single baselineOffset
-    float& dyn_baselineOffset();
+    [[deprecated]] float& dyn_baselineOffset();
     // Get instance field reference: public System.Single lineOffset
-    float& dyn_lineOffset();
+    [[deprecated]] float& dyn_lineOffset();
     // Get instance field reference: public System.Boolean isDrivenLineSpacing
-    bool& dyn_isDrivenLineSpacing();
+    [[deprecated]] bool& dyn_isDrivenLineSpacing();
     // Get instance field reference: public System.Single glyphHorizontalAdvanceAdjustment
-    float& dyn_glyphHorizontalAdvanceAdjustment();
+    [[deprecated]] float& dyn_glyphHorizontalAdvanceAdjustment();
     // Get instance field reference: public System.Single cSpace
-    float& dyn_cSpace();
+    [[deprecated]] float& dyn_cSpace();
     // Get instance field reference: public System.Single mSpace
-    float& dyn_mSpace();
+    [[deprecated]] float& dyn_mSpace();
     // Get instance field reference: public TMPro.TMP_TextInfo textInfo
-    ::TMPro::TMP_TextInfo*& dyn_textInfo();
+    [[deprecated]] ::TMPro::TMP_TextInfo*& dyn_textInfo();
     // Get instance field reference: public TMPro.TMP_LineInfo lineInfo
-    ::TMPro::TMP_LineInfo& dyn_lineInfo();
+    [[deprecated]] ::TMPro::TMP_LineInfo& dyn_lineInfo();
     // Get instance field reference: public UnityEngine.Color32 vertexColor
-    ::UnityEngine::Color32& dyn_vertexColor();
+    [[deprecated]] ::UnityEngine::Color32& dyn_vertexColor();
     // Get instance field reference: public UnityEngine.Color32 underlineColor
-    ::UnityEngine::Color32& dyn_underlineColor();
+    [[deprecated]] ::UnityEngine::Color32& dyn_underlineColor();
     // Get instance field reference: public UnityEngine.Color32 strikethroughColor
-    ::UnityEngine::Color32& dyn_strikethroughColor();
+    [[deprecated]] ::UnityEngine::Color32& dyn_strikethroughColor();
     // Get instance field reference: public UnityEngine.Color32 highlightColor
-    ::UnityEngine::Color32& dyn_highlightColor();
+    [[deprecated]] ::UnityEngine::Color32& dyn_highlightColor();
     // Get instance field reference: public TMPro.TMP_FontStyleStack basicStyleStack
-    ::TMPro::TMP_FontStyleStack& dyn_basicStyleStack();
+    [[deprecated]] ::TMPro::TMP_FontStyleStack& dyn_basicStyleStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<System.Int32> italicAngleStack
-    ::TMPro::TMP_TextProcessingStack_1<int>& dyn_italicAngleStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<int>& dyn_italicAngleStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<UnityEngine.Color32> colorStack
-    ::TMPro::TMP_TextProcessingStack_1<::UnityEngine::Color32>& dyn_colorStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::UnityEngine::Color32>& dyn_colorStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<UnityEngine.Color32> underlineColorStack
-    ::TMPro::TMP_TextProcessingStack_1<::UnityEngine::Color32>& dyn_underlineColorStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::UnityEngine::Color32>& dyn_underlineColorStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<UnityEngine.Color32> strikethroughColorStack
-    ::TMPro::TMP_TextProcessingStack_1<::UnityEngine::Color32>& dyn_strikethroughColorStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::UnityEngine::Color32>& dyn_strikethroughColorStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<UnityEngine.Color32> highlightColorStack
-    ::TMPro::TMP_TextProcessingStack_1<::UnityEngine::Color32>& dyn_highlightColorStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::UnityEngine::Color32>& dyn_highlightColorStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<TMPro.HighlightState> highlightStateStack
-    ::TMPro::TMP_TextProcessingStack_1<::TMPro::HighlightState>& dyn_highlightStateStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::TMPro::HighlightState>& dyn_highlightStateStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<TMPro.TMP_ColorGradient> colorGradientStack
-    ::TMPro::TMP_TextProcessingStack_1<::TMPro::TMP_ColorGradient*>& dyn_colorGradientStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::TMPro::TMP_ColorGradient*>& dyn_colorGradientStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<System.Single> sizeStack
-    ::TMPro::TMP_TextProcessingStack_1<float>& dyn_sizeStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<float>& dyn_sizeStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<System.Single> indentStack
-    ::TMPro::TMP_TextProcessingStack_1<float>& dyn_indentStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<float>& dyn_indentStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<TMPro.FontWeight> fontWeightStack
-    ::TMPro::TMP_TextProcessingStack_1<::TMPro::FontWeight>& dyn_fontWeightStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::TMPro::FontWeight>& dyn_fontWeightStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<System.Int32> styleStack
-    ::TMPro::TMP_TextProcessingStack_1<int>& dyn_styleStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<int>& dyn_styleStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<System.Single> baselineStack
-    ::TMPro::TMP_TextProcessingStack_1<float>& dyn_baselineStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<float>& dyn_baselineStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<System.Int32> actionStack
-    ::TMPro::TMP_TextProcessingStack_1<int>& dyn_actionStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<int>& dyn_actionStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<TMPro.MaterialReference> materialReferenceStack
-    ::TMPro::TMP_TextProcessingStack_1<::TMPro::MaterialReference>& dyn_materialReferenceStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::TMPro::MaterialReference>& dyn_materialReferenceStack();
     // Get instance field reference: public TMPro.TMP_TextProcessingStack`1<TMPro.HorizontalAlignmentOptions> lineJustificationStack
-    ::TMPro::TMP_TextProcessingStack_1<::TMPro::HorizontalAlignmentOptions>& dyn_lineJustificationStack();
+    [[deprecated]] ::TMPro::TMP_TextProcessingStack_1<::TMPro::HorizontalAlignmentOptions>& dyn_lineJustificationStack();
     // Get instance field reference: public System.Int32 spriteAnimationID
-    int& dyn_spriteAnimationID();
+    [[deprecated]] int& dyn_spriteAnimationID();
     // Get instance field reference: public TMPro.TMP_FontAsset currentFontAsset
-    ::TMPro::TMP_FontAsset*& dyn_currentFontAsset();
+    [[deprecated]] ::TMPro::TMP_FontAsset*& dyn_currentFontAsset();
     // Get instance field reference: public TMPro.TMP_SpriteAsset currentSpriteAsset
-    ::TMPro::TMP_SpriteAsset*& dyn_currentSpriteAsset();
+    [[deprecated]] ::TMPro::TMP_SpriteAsset*& dyn_currentSpriteAsset();
     // Get instance field reference: public UnityEngine.Material currentMaterial
-    ::UnityEngine::Material*& dyn_currentMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_currentMaterial();
     // Get instance field reference: public System.Int32 currentMaterialIndex
-    int& dyn_currentMaterialIndex();
+    [[deprecated]] int& dyn_currentMaterialIndex();
     // Get instance field reference: public TMPro.Extents meshExtents
-    ::TMPro::Extents& dyn_meshExtents();
+    [[deprecated]] ::TMPro::Extents& dyn_meshExtents();
     // Get instance field reference: public System.Boolean tagNoParsing
-    bool& dyn_tagNoParsing();
+    [[deprecated]] bool& dyn_tagNoParsing();
     // Get instance field reference: public System.Boolean isNonBreakingSpace
-    bool& dyn_isNonBreakingSpace();
+    [[deprecated]] bool& dyn_isNonBreakingSpace();
   }; // TMPro.WordWrapState
   // WARNING Not writing size check since size may be invalid!
 }

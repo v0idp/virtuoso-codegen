@@ -42,15 +42,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::SynthsDataController::$$c__DisplayClass6_0::$$LoadData$b__0$d
     struct $$LoadData$b__0$d;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.SynthsDataController <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -77,18 +69,18 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.SynthsDataController <>4__this
-    ::VROSC::SynthsDataController*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::SynthsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Action onSuccess
-    ::System::Action*& dyn_onSuccess();
+    [[deprecated]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // System.Void <LoadData>b__0(System.String data)
-    // Offset: 0x134ED44
+    // Offset: 0x8DAF5C
     void $LoadData$b__0(::StringW data);
     // public System.Void .ctor()
-    // Offset: 0x134ED3C
+    // Offset: 0x8DAF54
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

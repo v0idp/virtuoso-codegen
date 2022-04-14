@@ -156,7 +156,7 @@ namespace AudioHelm {
     // Set static field: static public AudioHelm.CommonParam kDelayTempo
     static void _set_kDelayTempo(::AudioHelm::CommonParam value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // AudioHelm.CommonParam
   #pragma pack(pop)
   static check_size<sizeof(CommonParam), 0 + sizeof(int)> __AudioHelm_CommonParamSizeCheck;

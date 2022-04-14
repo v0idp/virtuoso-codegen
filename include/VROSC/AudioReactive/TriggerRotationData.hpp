@@ -40,15 +40,7 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class TriggerRotationData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Transform _transform
     // Size: 0x8
     // Offset: 0x10
@@ -75,22 +67,22 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Transform _transform
-    ::UnityEngine::Transform*& dyn__transform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__transform();
     // Get instance field reference: private UnityEngine.Quaternion _startRotation
-    ::UnityEngine::Quaternion& dyn__startRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn__startRotation();
     // Get instance field reference: private UnityEngine.Quaternion _endRotation
-    ::UnityEngine::Quaternion& dyn__endRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn__endRotation();
     // Get instance field reference: private System.Boolean _local
-    bool& dyn__local();
+    [[deprecated]] bool& dyn__local();
     // public System.Void .ctor(UnityEngine.Transform transform, VROSC.AudioReactive.RotateEffectData data)
-    // Offset: 0x14067FC
+    // Offset: 0xA2E480
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TriggerRotationData* New_ctor(::UnityEngine::Transform* transform, ::VROSC::AudioReactive::RotateEffectData* data) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::TriggerRotationData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TriggerRotationData*, creationType>(transform, data)));
     }
     // public System.Void Lerp(System.Single amount)
-    // Offset: 0x14068C0
+    // Offset: 0xA2E544
     void Lerp(float amount);
   }; // VROSC.AudioReactive.TriggerRotationData
   #pragma pack(pop)

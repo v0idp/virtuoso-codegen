@@ -32,15 +32,7 @@ namespace DG::Tweening {
   // [TokenAttribute] Offset: FFFFFFFF
   class DOTweenCYInstruction::WaitForRewind : public ::UnityEngine::CustomYieldInstruction {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly DG.Tweening.Tween t
     // Size: 0x8
     // Offset: 0x10
@@ -53,16 +45,16 @@ namespace DG::Tweening {
       return t;
     }
     // Get instance field reference: private readonly DG.Tweening.Tween t
-    ::DG::Tweening::Tween*& dyn_t();
+    [[deprecated]] ::DG::Tweening::Tween*& dyn_t();
     // public System.Void .ctor(DG.Tweening.Tween tween)
-    // Offset: 0x1264360
+    // Offset: 0x17E1E58
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DOTweenCYInstruction::WaitForRewind* New_ctor(::DG::Tweening::Tween* tween) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenCYInstruction::WaitForRewind::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DOTweenCYInstruction::WaitForRewind*, creationType>(tween)));
     }
     // public override System.Boolean get_keepWaiting()
-    // Offset: 0x12642FC
+    // Offset: 0x17E292C
     // Implemented from: UnityEngine.CustomYieldInstruction
     // Base method: System.Boolean CustomYieldInstruction::get_keepWaiting()
     bool get_keepWaiting();

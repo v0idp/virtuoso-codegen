@@ -32,7 +32,7 @@ namespace TMPro {
     // Nested type: ::TMPro::TMP_Compatibility::AnchorPositions
     struct AnchorPositions;
     // static public TMPro.TextAlignmentOptions ConvertTextAlignmentEnumValues(TMPro.TextAlignmentOptions oldValue)
-    // Offset: 0xA4C7F0
+    // Offset: 0xC2E400
     static ::TMPro::TextAlignmentOptions ConvertTextAlignmentEnumValues(::TMPro::TextAlignmentOptions oldValue);
   }; // TMPro.TMP_Compatibility
   #pragma pack(pop)

@@ -42,30 +42,30 @@ namespace UnityEngine::Experimental::GlobalIllumination {
     class RequestLightsDelegate;
     // Nested type: ::UnityEngine::Experimental::GlobalIllumination::Lightmapping::$$c
     class $$c;
-    // [RequiredByNativeCodeAttribute] Offset: 0x56C83C
+    // [RequiredByNativeCodeAttribute] Offset: 0x666A20
     // Get static field: static private readonly UnityEngine.Experimental.GlobalIllumination.Lightmapping/UnityEngine.Experimental.GlobalIllumination.RequestLightsDelegate s_DefaultDelegate
     static ::UnityEngine::Experimental::GlobalIllumination::Lightmapping::RequestLightsDelegate* _get_s_DefaultDelegate();
     // Set static field: static private readonly UnityEngine.Experimental.GlobalIllumination.Lightmapping/UnityEngine.Experimental.GlobalIllumination.RequestLightsDelegate s_DefaultDelegate
     static void _set_s_DefaultDelegate(::UnityEngine::Experimental::GlobalIllumination::Lightmapping::RequestLightsDelegate* value);
-    // [RequiredByNativeCodeAttribute] Offset: 0x56C84C
+    // [RequiredByNativeCodeAttribute] Offset: 0x666A30
     // Get static field: static private UnityEngine.Experimental.GlobalIllumination.Lightmapping/UnityEngine.Experimental.GlobalIllumination.RequestLightsDelegate s_RequestLightsDelegate
     static ::UnityEngine::Experimental::GlobalIllumination::Lightmapping::RequestLightsDelegate* _get_s_RequestLightsDelegate();
     // Set static field: static private UnityEngine.Experimental.GlobalIllumination.Lightmapping/UnityEngine.Experimental.GlobalIllumination.RequestLightsDelegate s_RequestLightsDelegate
     static void _set_s_RequestLightsDelegate(::UnityEngine::Experimental::GlobalIllumination::Lightmapping::RequestLightsDelegate* value);
     // static private System.Void .cctor()
-    // Offset: 0xE41700
+    // Offset: 0x112DCF8
     static void _cctor();
     // static public System.Void SetDelegate(UnityEngine.Experimental.GlobalIllumination.Lightmapping/UnityEngine.Experimental.GlobalIllumination.RequestLightsDelegate del)
-    // Offset: 0xE414E0
+    // Offset: 0x112DAD8
     static void SetDelegate(::UnityEngine::Experimental::GlobalIllumination::Lightmapping::RequestLightsDelegate* del);
     // static public UnityEngine.Experimental.GlobalIllumination.Lightmapping/UnityEngine.Experimental.GlobalIllumination.RequestLightsDelegate GetDelegate()
-    // Offset: 0xE4156C
+    // Offset: 0x112DB64
     static ::UnityEngine::Experimental::GlobalIllumination::Lightmapping::RequestLightsDelegate* GetDelegate();
     // static public System.Void ResetDelegate()
-    // Offset: 0xE415D0
+    // Offset: 0x112DBC8
     static void ResetDelegate();
     // static System.Void RequestLights(UnityEngine.Light[] lights, System.IntPtr outLightsPtr, System.Int32 outLightsCount)
-    // Offset: 0xE41638
+    // Offset: 0x112DC30
     static void RequestLights(::ArrayW<::UnityEngine::Light*> lights, ::System::IntPtr outLightsPtr, int outLightsCount);
   }; // UnityEngine.Experimental.GlobalIllumination.Lightmapping
   #pragma pack(pop)

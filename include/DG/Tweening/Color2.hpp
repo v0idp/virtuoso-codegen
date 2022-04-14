@@ -46,24 +46,24 @@ namespace DG::Tweening {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Color ca
-    ::UnityEngine::Color& dyn_ca();
+    [[deprecated]] ::UnityEngine::Color& dyn_ca();
     // Get instance field reference: public UnityEngine.Color cb
-    ::UnityEngine::Color& dyn_cb();
+    [[deprecated]] ::UnityEngine::Color& dyn_cb();
     // public System.Void .ctor(UnityEngine.Color ca, UnityEngine.Color cb)
-    // Offset: 0x1091920
+    // Offset: 0x15D3F48
     // ABORTED: conflicts with another method.  Color2(::UnityEngine::Color ca, ::UnityEngine::Color cb);
   }; // DG.Tweening.Color2
   #pragma pack(pop)
   static check_size<sizeof(Color2), 16 + sizeof(::UnityEngine::Color)> __DG_Tweening_Color2SizeCheck;
   static_assert(sizeof(Color2) == 0x20);
   // static public DG.Tweening.Color2 op_Addition(DG.Tweening.Color2 c1, DG.Tweening.Color2 c2)
-  // Offset: 0x1091934
+  // Offset: 0x15D3F5C
   ::DG::Tweening::Color2 operator+(const ::DG::Tweening::Color2& c1, const ::DG::Tweening::Color2& c2);
   // static public DG.Tweening.Color2 op_Subtraction(DG.Tweening.Color2 c1, DG.Tweening.Color2 c2)
-  // Offset: 0x10919C4
+  // Offset: 0x15D3FEC
   ::DG::Tweening::Color2 operator-(const ::DG::Tweening::Color2& c1, const ::DG::Tweening::Color2& c2);
   // static public DG.Tweening.Color2 op_Multiply(DG.Tweening.Color2 c1, System.Single f)
-  // Offset: 0x1091A54
+  // Offset: 0x15D407C
   ::DG::Tweening::Color2 operator*(const ::DG::Tweening::Color2& c1, const float& f);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"

@@ -36,15 +36,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OvrAvatarTestDriver : public ::GlobalNamespace::OvrAvatarDriver {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 headPos
     // Size: 0xC
     // Offset: 0xB0
@@ -65,22 +57,22 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Vector3 headPos
-    ::UnityEngine::Vector3& dyn_headPos();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_headPos();
     // Get instance field reference: private UnityEngine.Quaternion headRot
-    ::UnityEngine::Quaternion& dyn_headRot();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn_headRot();
     // Get instance field reference: private System.Single voiceAmplitude
-    float& dyn_voiceAmplitude();
+    [[deprecated]] float& dyn_voiceAmplitude();
     // private OvrAvatarDriver/ControllerPose GetMalibuControllerPose(OVRInput/Controller controller)
-    // Offset: 0x8F4154
+    // Offset: 0xAD88DC
     ::GlobalNamespace::OvrAvatarDriver::ControllerPose GetMalibuControllerPose(::GlobalNamespace::OVRInput::Controller controller);
     // private OvrAvatarDriver/ControllerPose GetControllerPose(OVRInput/Controller controller)
-    // Offset: 0x8F42B8
+    // Offset: 0xAD8A40
     ::GlobalNamespace::OvrAvatarDriver::ControllerPose GetControllerPose(::GlobalNamespace::OVRInput::Controller controller);
     // private System.Void CalculateCurrentPose()
-    // Offset: 0x8F4654
+    // Offset: 0xAD8DDC
     void CalculateCurrentPose();
     // public System.Void .ctor()
-    // Offset: 0x8F4828
+    // Offset: 0xAD8FB0
     // Implemented from: OvrAvatarDriver
     // Base method: System.Void OvrAvatarDriver::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -94,7 +86,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarTestDriver*, creationType>()));
     }
     // public override System.Void UpdateTransforms(System.IntPtr sdkAvatar)
-    // Offset: 0x8F47F8
+    // Offset: 0xAD8F80
     // Implemented from: OvrAvatarDriver
     // Base method: System.Void OvrAvatarDriver::UpdateTransforms(System.IntPtr sdkAvatar)
     void UpdateTransforms(::System::IntPtr sdkAvatar);

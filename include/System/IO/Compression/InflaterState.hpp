@@ -180,7 +180,7 @@ namespace System::IO::Compression {
     // Set static field: static public System.IO.Compression.InflaterState Done
     static void _set_Done(::System::IO::Compression::InflaterState value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // System.IO.Compression.InflaterState
   #pragma pack(pop)
   static check_size<sizeof(InflaterState), 0 + sizeof(int)> __System_IO_Compression_InflaterStateSizeCheck;

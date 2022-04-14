@@ -34,15 +34,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class PredictiveHitWisp::ParticleEffect : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.ParticleSystem _particleSystem
     // Size: 0x8
     // Offset: 0x10
@@ -57,17 +49,17 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
     // Get instance field reference: private System.Int32 _emitAmount
-    int& dyn__emitAmount();
+    [[deprecated]] int& dyn__emitAmount();
     // public System.Void Trigger(UnityEngine.Vector3 hitpoint, UnityEngine.Vector3 lookDirection)
-    // Offset: 0x134320C
+    // Offset: 0x8CE164
     void Trigger(::UnityEngine::Vector3 hitpoint, ::UnityEngine::Vector3 lookDirection);
     // System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x1343114
+    // Offset: 0x8CE06C
     void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
-    // Offset: 0x1343334
+    // Offset: 0x8CE28C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

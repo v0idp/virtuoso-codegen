@@ -45,7 +45,7 @@ namespace GlobalNamespace {
     // Set static field: static public P2PManager/MessageType Update
     static void _set_Update(::GlobalNamespace::P2PManager::MessageType value);
     // Get instance field reference: public System.Byte value__
-    uint8_t& dyn_value__();
+    [[deprecated]] uint8_t& dyn_value__();
   }; // P2PManager/MessageType
   #pragma pack(pop)
   static check_size<sizeof(P2PManager::MessageType), 0 + sizeof(uint8_t)> __GlobalNamespace_P2PManager_MessageTypeSizeCheck;

@@ -47,15 +47,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoiceModDemo_Logic : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public OVRVoiceModContext[] contexts
     // Size: 0x8
     // Offset: 0x18
@@ -108,38 +100,38 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRVoiceModContext[] contexts
-    ::ArrayW<::GlobalNamespace::OVRVoiceModContext*>& dyn_contexts();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRVoiceModContext*>& dyn_contexts();
     // Get instance field reference: public UnityEngine.Material material
-    ::UnityEngine::Material*& dyn_material();
+    [[deprecated]] ::UnityEngine::Material*& dyn_material();
     // Get instance field reference: public UnityEngine.Transform[] xfrms
-    ::ArrayW<::UnityEngine::Transform*>& dyn_xfrms();
+    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_xfrms();
     // Get instance field reference: public VoiceModEnableSwitch SwitchTarget
-    ::GlobalNamespace::VoiceModEnableSwitch*& dyn_SwitchTarget();
+    [[deprecated]] ::GlobalNamespace::VoiceModEnableSwitch*& dyn_SwitchTarget();
     // Get instance field reference: private System.Int32 targetSet
-    int& dyn_targetSet();
+    [[deprecated]] int& dyn_targetSet();
     // Get instance field reference: private UnityEngine.Vector3 scale
-    ::UnityEngine::Vector3& dyn_scale();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_scale();
     // Get instance field reference: private System.Single scaleMax
-    float& dyn_scaleMax();
+    [[deprecated]] float& dyn_scaleMax();
     // Get instance field reference: private System.Int32 currentPreset
-    int& dyn_currentPreset();
+    [[deprecated]] int& dyn_currentPreset();
     // private System.Void Start()
-    // Offset: 0x135212C
+    // Offset: 0x1923D40
     void Start();
     // private System.Void Update()
-    // Offset: 0x1352374
+    // Offset: 0x1923EC8
     void Update();
     // private System.Void SetCurrentTarget()
-    // Offset: 0x1352710
+    // Offset: 0x1924264
     void SetCurrentTarget();
     // private System.Void LocalTouchEventCallback(OVRTouchpad/TouchEvent touchEvent)
-    // Offset: 0x135281C
+    // Offset: 0x1924378
     void LocalTouchEventCallback(::GlobalNamespace::OVRTouchpad::TouchEvent touchEvent);
     // private System.Void UpdateModelScale()
-    // Offset: 0x1352638
+    // Offset: 0x192418C
     void UpdateModelScale();
     // public System.Void .ctor()
-    // Offset: 0x1352BD8
+    // Offset: 0x1924734
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

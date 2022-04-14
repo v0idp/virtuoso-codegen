@@ -37,15 +37,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class SaveLoadManager::$$c__DisplayClass29_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String sessionId
     // Size: 0x8
     // Offset: 0x10
@@ -58,21 +50,21 @@ namespace VROSC {
       return sessionId;
     }
     // Get instance field reference: public System.String sessionId
-    ::StringW& dyn_sessionId();
+    [[deprecated]] ::StringW& dyn_sessionId();
     // System.Void <LoadSessionPreview>b__0(UnityEngine.AudioClip audioClip)
-    // Offset: 0x1346190
+    // Offset: 0x8D10D0
     void $LoadSessionPreview$b__0(::UnityEngine::AudioClip* audioClip);
     // System.Void <LoadSessionPreview>b__1(VROSC.Error error)
-    // Offset: 0x1346220
+    // Offset: 0x8D1160
     void $LoadSessionPreview$b__1(::VROSC::Error error);
     // System.Void <LoadSessionPreview>b__2(UnityEngine.AudioClip audioClip)
-    // Offset: 0x13462B0
+    // Offset: 0x8D11F0
     void $LoadSessionPreview$b__2(::UnityEngine::AudioClip* audioClip);
     // System.Void <LoadSessionPreview>b__3(VROSC.Error error)
-    // Offset: 0x1346340
+    // Offset: 0x8D1280
     void $LoadSessionPreview$b__3(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1346188
+    // Offset: 0x8D10C8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

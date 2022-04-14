@@ -28,15 +28,7 @@ namespace Oculus::Platform {
   // [TokenAttribute] Offset: FFFFFFFF
   class CallbackRunner : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Boolean IsPersistantBetweenSceneLoads
     // Size: 0x1
     // Offset: 0x18
@@ -47,24 +39,24 @@ namespace Oculus::Platform {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean IsPersistantBetweenSceneLoads
-    bool& dyn_IsPersistantBetweenSceneLoads();
+    [[deprecated]] bool& dyn_IsPersistantBetweenSceneLoads();
     // static private System.Void ovr_UnityResetTestPlatform()
-    // Offset: 0x7DB0D4
+    // Offset: 0x9214B4
     static void ovr_UnityResetTestPlatform();
     // private System.Void Awake()
-    // Offset: 0x7DB144
+    // Offset: 0x921524
     void Awake();
     // private System.Void Update()
-    // Offset: 0x7DB260
+    // Offset: 0x921640
     void Update();
     // private System.Void OnDestroy()
-    // Offset: 0x7DB26C
+    // Offset: 0x92164C
     void OnDestroy();
     // private System.Void OnApplicationQuit()
-    // Offset: 0x7DB270
+    // Offset: 0x921650
     void OnApplicationQuit();
     // public System.Void .ctor()
-    // Offset: 0x7DB2C8
+    // Offset: 0x9216A8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

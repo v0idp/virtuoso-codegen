@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ControllerStick : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Single _limits
     // Size: 0x4
     // Offset: 0x18
@@ -73,22 +65,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _limits
-    float& dyn__limits();
+    [[deprecated]] float& dyn__limits();
     // Get instance field reference: private VROSC.InputDevice _device
-    ::VROSC::InputDevice*& dyn__device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private UnityEngine.Quaternion _startRotation
-    ::UnityEngine::Quaternion& dyn__startRotation();
+    [[deprecated]] ::UnityEngine::Quaternion& dyn__startRotation();
     // private System.Void OnEnable()
-    // Offset: 0x133A7A0
+    // Offset: 0x8DE13C
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x133A8B0
+    // Offset: 0x8DE24C
     void OnDisable();
     // private System.Void EvaluateThumbstickInput(VROSC.InputDevice device, UnityEngine.Vector2 vector)
-    // Offset: 0x133A99C
+    // Offset: 0x8DE338
     void EvaluateThumbstickInput(::VROSC::InputDevice* device, ::UnityEngine::Vector2 vector);
     // public System.Void .ctor()
-    // Offset: 0x133AAC8
+    // Offset: 0x8DE464
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

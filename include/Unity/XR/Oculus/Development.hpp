@@ -69,7 +69,7 @@ namespace Unity::XR::Oculus {
       // Set static field: static public Unity.XR.Oculus.Development/Unity.XR.Oculus.UserDeveloperModeSettingCache UserSettingTrue
       static void _set_UserSettingTrue(::Unity::XR::Oculus::Development::UserDeveloperModeSettingCache value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Unity.XR.Oculus.Development/Unity.XR.Oculus.UserDeveloperModeSettingCache
     #pragma pack(pop)
     static check_size<sizeof(Development::UserDeveloperModeSettingCache), 0 + sizeof(int)> __Unity_XR_Oculus_Development_UserDeveloperModeSettingCacheSizeCheck;
@@ -79,16 +79,16 @@ namespace Unity::XR::Oculus {
     // Set static field: static private Unity.XR.Oculus.Development/Unity.XR.Oculus.UserDeveloperModeSettingCache s_CachedMode
     static void _set_s_CachedMode(::Unity::XR::Oculus::Development::UserDeveloperModeSettingCache value);
     // static private System.Void .cctor()
-    // Offset: 0x12D97A4
+    // Offset: 0x18DBA18
     static void _cctor();
     // static public System.Void TrySetDeveloperMode(System.Boolean active)
-    // Offset: 0x12D957C
+    // Offset: 0x18DB7F0
     static void TrySetDeveloperMode(bool active);
     // static System.Void OverrideDeveloperModeStart()
-    // Offset: 0x12D95F0
+    // Offset: 0x18DB864
     static void OverrideDeveloperModeStart();
     // static System.Void OverrideDeveloperModeStop()
-    // Offset: 0x12D9718
+    // Offset: 0x18DB98C
     static void OverrideDeveloperModeStop();
   }; // Unity.XR.Oculus.Development
   #pragma pack(pop)

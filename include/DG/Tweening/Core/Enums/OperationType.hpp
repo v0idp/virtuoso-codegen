@@ -120,7 +120,7 @@ namespace DG::Tweening::Core::Enums {
     // Set static field: static public DG.Tweening.Core.Enums.OperationType IsTweening
     static void _set_IsTweening(::DG::Tweening::Core::Enums::OperationType value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // DG.Tweening.Core.Enums.OperationType
   #pragma pack(pop)
   static check_size<sizeof(OperationType), 0 + sizeof(int)> __DG_Tweening_Core_Enums_OperationTypeSizeCheck;

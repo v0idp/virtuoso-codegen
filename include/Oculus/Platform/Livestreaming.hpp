@@ -32,7 +32,7 @@ namespace Oculus::Platform {
   class Livestreaming : public ::Il2CppObject {
     public:
     // static public System.Void SetStatusUpdateNotificationCallback(Oculus.Platform.Message`1/Oculus.Platform.Callback<Oculus.Platform.Models.LivestreamingStatus> callback)
-    // Offset: 0x96B5A0
+    // Offset: 0xB3D93C
     static void SetStatusUpdateNotificationCallback(typename ::Oculus::Platform::Message_1<::Oculus::Platform::Models::LivestreamingStatus*>::Callback* callback);
   }; // Oculus.Platform.Livestreaming
   #pragma pack(pop)

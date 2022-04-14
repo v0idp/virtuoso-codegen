@@ -37,10 +37,10 @@ namespace Firebase::Firestore {
   class ValueDeserializer : public ::Il2CppObject {
     public:
     // static System.Object Deserialize(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.FieldValueProxy value, System.Type targetType)
-    // Offset: 0xC25D4C
+    // Offset: 0xD47A9C
     static ::Il2CppObject* Deserialize(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::FieldValueProxy* value, ::System::Type* targetType);
     // static private System.Type GetTargetType(Firebase.Firestore.FieldValueProxy value)
-    // Offset: 0xC418F4
+    // Offset: 0xD65E50
     static ::System::Type* GetTargetType(::Firebase::Firestore::FieldValueProxy* value);
   }; // Firebase.Firestore.ValueDeserializer
   #pragma pack(pop)

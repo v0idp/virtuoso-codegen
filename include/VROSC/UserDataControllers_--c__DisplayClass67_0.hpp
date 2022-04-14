@@ -34,15 +34,7 @@ namespace VROSC {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class UserDataControllers::$$c__DisplayClass67_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.UserDataControllers <>4__this
     // Size: 0x8
     // Offset: 0x10
@@ -57,41 +49,41 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.UserDataControllers <>4__this
-    ::VROSC::UserDataControllers*& dyn_$$4__this();
+    [[deprecated]] ::VROSC::UserDataControllers*& dyn_$$4__this();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // System.Void <LoadControllers>b__0()
-    // Offset: 0x141083C
+    // Offset: 0xE828EC
     void $LoadControllers$b__0();
     // System.Void <LoadControllers>b__1(VROSC.Error error)
-    // Offset: 0x1410858
+    // Offset: 0xE82908
     void $LoadControllers$b__1(::VROSC::Error error);
     // System.Void <LoadControllers>b__2()
-    // Offset: 0x14108C8
+    // Offset: 0xE82978
     void $LoadControllers$b__2();
     // System.Void <LoadControllers>b__3(VROSC.Error error)
-    // Offset: 0x1410990
+    // Offset: 0xE82A40
     void $LoadControllers$b__3(::VROSC::Error error);
     // System.Void <LoadControllers>b__4()
-    // Offset: 0x1410AA0
+    // Offset: 0xE82B50
     void $LoadControllers$b__4();
     // System.Void <LoadControllers>b__5(VROSC.Error error)
-    // Offset: 0x1410B68
+    // Offset: 0xE82C18
     void $LoadControllers$b__5(::VROSC::Error error);
     // System.Void <LoadControllers>b__6()
-    // Offset: 0x1410C78
+    // Offset: 0xE82D28
     void $LoadControllers$b__6();
     // System.Void <LoadControllers>b__7(VROSC.Error error)
-    // Offset: 0x1410D40
+    // Offset: 0xE82DF0
     void $LoadControllers$b__7(::VROSC::Error error);
     // System.Void <LoadControllers>b__8()
-    // Offset: 0x1410E50
+    // Offset: 0xE82F00
     void $LoadControllers$b__8();
     // System.Void <LoadControllers>b__9(VROSC.Error error)
-    // Offset: 0x1410F18
+    // Offset: 0xE82FC8
     void $LoadControllers$b__9(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x1410834
+    // Offset: 0xE828E4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

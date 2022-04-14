@@ -41,15 +41,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ToolController : public ::VROSC::WidgetController {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // protected VROSC.ToolDataController _dataController
     // Size: 0x8
     // Offset: 0x68
@@ -58,18 +50,18 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::ToolDataController*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.ToolDataController _dataController
-    ::VROSC::ToolDataController*& dyn__dataController();
+    [[deprecated]] ::VROSC::ToolDataController*& dyn__dataController();
     // public VROSC.ToolSettings get_ToolSettings()
-    // Offset: 0x14008A0
+    // Offset: 0xA287D8
     ::VROSC::ToolSettings* get_ToolSettings();
     // public System.Void Setup()
-    // Offset: 0x140091C
+    // Offset: 0xA28854
     void Setup();
     // protected System.Void SynthesizerSourceChanged(System.Boolean useMidi)
-    // Offset: 0x1400CE4
+    // Offset: 0xA28DBC
     void SynthesizerSourceChanged(bool useMidi);
     // public System.Void .ctor()
-    // Offset: 0x13FAC20
+    // Offset: 0xA222A4
     // Implemented from: VROSC.WidgetController
     // Base method: System.Void WidgetController::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -83,30 +75,25 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ToolController*, creationType>()));
     }
     // protected System.Void OnDestroy()
-    // Offset: 0x1400A00
+    // Offset: 0xA28938
     // Implemented from: VROSC.WidgetController
     // Base method: System.Void WidgetController::OnDestroy()
     void OnDestroy();
     // protected override System.Void UserDataLoaded(VROSC.UserDataControllers user)
-    // Offset: 0x13FAA44
+    // Offset: 0xA22054
     // Implemented from: VROSC.WidgetController
     // Base method: System.Void WidgetController::UserDataLoaded(VROSC.UserDataControllers user)
     void UserDataLoaded(::VROSC::UserDataControllers* user);
     // public override System.Void Toggle()
-    // Offset: 0x1400B94
+    // Offset: 0xA28B14
     // Implemented from: VROSC.WidgetController
     // Base method: System.Void WidgetController::Toggle()
     void Toggle();
     // public override System.Void TransformChanged(VROSC.TransformMover mover)
-    // Offset: 0x1400BD4
+    // Offset: 0xA28B84
     // Implemented from: VROSC.WidgetController
     // Base method: System.Void WidgetController::TransformChanged(VROSC.TransformMover mover)
     void TransformChanged(::VROSC::TransformMover* mover);
-    // public override System.Void ScaleChanged(System.Single scale)
-    // Offset: 0x1400C7C
-    // Implemented from: VROSC.WidgetController
-    // Base method: System.Void WidgetController::ScaleChanged(System.Single scale)
-    void ScaleChanged(float scale);
   }; // VROSC.ToolController
   #pragma pack(pop)
   static check_size<sizeof(ToolController), 104 + sizeof(::VROSC::ToolDataController*)> __VROSC_ToolControllerSizeCheck;
@@ -174,14 +161,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
   static const MethodInfo* get() {
     static auto* mover = &::il2cpp_utils::GetClassFromName("VROSC", "TransformMover")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::ToolController*), "TransformChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mover});
-  }
-};
-// Writing MetadataGetter for method: VROSC::ToolController::ScaleChanged
-// Il2CppName: ScaleChanged
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::ToolController::*)(float)>(&VROSC::ToolController::ScaleChanged)> {
-  static const MethodInfo* get() {
-    static auto* scale = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::ToolController*), "ScaleChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{scale});
   }
 };

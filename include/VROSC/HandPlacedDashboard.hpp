@@ -45,15 +45,7 @@ namespace VROSC {
     public:
     // Writing base type padding for base size: 0x26 to desired offset: 0x28
     char ___base_padding[0x2] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.DashboardPositioning _lookAtBehaviour
     // Size: 0x8
     // Offset: 0x28
@@ -86,26 +78,26 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private VROSC.DashboardPositioning _lookAtBehaviour
-    ::VROSC::DashboardPositioning*& dyn__lookAtBehaviour();
+    [[deprecated]] ::VROSC::DashboardPositioning*& dyn__lookAtBehaviour();
     // Get instance field reference: private VROSC.TransformMover _mover
-    ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private VROSC.UIButton _closeFloatingButton
-    ::VROSC::UIButton*& dyn__closeFloatingButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__closeFloatingButton();
     // Get instance field reference: private VROSC.WorldTransformData freeFloatData
-    ::VROSC::WorldTransformData*& dyn_freeFloatData();
+    [[deprecated]] ::VROSC::WorldTransformData*& dyn_freeFloatData();
     // Get instance field reference: private UnityEngine.Vector3 _dashboardOriginalScale
-    ::UnityEngine::Vector3& dyn__dashboardOriginalScale();
-    // private System.Void SetFreeFloating(VROSC.TransformMover mover)
-    // Offset: 0x8980F8
-    void SetFreeFloating(::VROSC::TransformMover* mover);
+    [[deprecated]] ::UnityEngine::Vector3& dyn__dashboardOriginalScale();
+    // private System.Void Grab(VROSC.TransformMover mover)
+    // Offset: 0x19AB210
+    void Grab(::VROSC::TransformMover* mover);
     // private System.Void SetHandheld(VROSC.ClickData clickData)
-    // Offset: 0x8980B0
+    // Offset: 0x19AB1C8
     void SetHandheld(::VROSC::ClickData* clickData);
     // private System.Void DashboardToggled(System.Boolean toggled)
-    // Offset: 0x898564
+    // Offset: 0x19AB75C
     void DashboardToggled(bool toggled);
     // public System.Void .ctor()
-    // Offset: 0x898668
+    // Offset: 0x19AB860
     // Implemented from: VROSC.Dashboard
     // Base method: System.Void Dashboard::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -119,37 +111,47 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<HandPlacedDashboard*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x897E28
+    // Offset: 0x19AAF40
     // Implemented from: VROSC.Dashboard
     // Base method: System.Void Dashboard::Awake()
     void Awake();
+    // protected override System.Void SetFreeFloating()
+    // Offset: 0x19AB21C
+    // Implemented from: VROSC.Dashboard
+    // Base method: System.Void Dashboard::SetFreeFloating()
+    void SetFreeFloating();
     // protected override System.Void Update()
-    // Offset: 0x898268
+    // Offset: 0x19AB38C
     // Implemented from: VROSC.Dashboard
     // Base method: System.Void Dashboard::Update()
     void Update();
     // protected override System.Void MoveToHand()
-    // Offset: 0x8982C4
+    // Offset: 0x19AB3EC
     // Implemented from: VROSC.Dashboard
     // Base method: System.Void Dashboard::MoveToHand()
     void MoveToHand();
     // protected override System.Void ReturnToFreeFloat()
-    // Offset: 0x89838C
+    // Offset: 0x19AB4B4
     // Implemented from: VROSC.Dashboard
     // Base method: System.Void Dashboard::ReturnToFreeFloat()
     void ReturnToFreeFloat();
+    // protected override System.Boolean EvaluateDropCondition()
+    // Offset: 0x19AB54C
+    // Implemented from: VROSC.Dashboard
+    // Base method: System.Boolean Dashboard::EvaluateDropCondition()
+    bool EvaluateDropCondition();
     // protected override System.Boolean EvaluateActivationCondition()
-    // Offset: 0x898424
+    // Offset: 0x19AB61C
     // Implemented from: VROSC.Dashboard
     // Base method: System.Boolean Dashboard::EvaluateActivationCondition()
     bool EvaluateActivationCondition();
     // protected override System.Boolean EvaluateDeactivationCondition()
-    // Offset: 0x898494
+    // Offset: 0x19AB68C
     // Implemented from: VROSC.Dashboard
     // Base method: System.Boolean Dashboard::EvaluateDeactivationCondition()
     bool EvaluateDeactivationCondition();
     // protected override System.Void PlaceDashboard()
-    // Offset: 0x898608
+    // Offset: 0x19AB800
     // Implemented from: VROSC.Dashboard
     // Base method: System.Void Dashboard::PlaceDashboard()
     void PlaceDashboard();
@@ -159,13 +161,13 @@ namespace VROSC {
   static_assert(sizeof(HandPlacedDashboard) == 0x54);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-// Writing MetadataGetter for method: VROSC::HandPlacedDashboard::SetFreeFloating
-// Il2CppName: SetFreeFloating
+// Writing MetadataGetter for method: VROSC::HandPlacedDashboard::Grab
+// Il2CppName: Grab
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::HandPlacedDashboard::*)(::VROSC::TransformMover*)>(&VROSC::HandPlacedDashboard::SetFreeFloating)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::HandPlacedDashboard::*)(::VROSC::TransformMover*)>(&VROSC::HandPlacedDashboard::Grab)> {
   static const MethodInfo* get() {
     static auto* mover = &::il2cpp_utils::GetClassFromName("VROSC", "TransformMover")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboard*), "SetFreeFloating", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mover});
+    return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboard*), "Grab", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mover});
   }
 };
 // Writing MetadataGetter for method: VROSC::HandPlacedDashboard::SetHandheld
@@ -198,6 +200,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboard*), "Awake", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::HandPlacedDashboard::SetFreeFloating
+// Il2CppName: SetFreeFloating
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::HandPlacedDashboard::*)()>(&VROSC::HandPlacedDashboard::SetFreeFloating)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboard*), "SetFreeFloating", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::HandPlacedDashboard::Update
 // Il2CppName: Update
 template<>
@@ -220,6 +230,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::HandPlacedDashboard::*)()>(&VROSC::HandPlacedDashboard::ReturnToFreeFloat)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboard*), "ReturnToFreeFloat", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::HandPlacedDashboard::EvaluateDropCondition
+// Il2CppName: EvaluateDropCondition
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::HandPlacedDashboard::*)()>(&VROSC::HandPlacedDashboard::EvaluateDropCondition)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboard*), "EvaluateDropCondition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::HandPlacedDashboard::EvaluateActivationCondition

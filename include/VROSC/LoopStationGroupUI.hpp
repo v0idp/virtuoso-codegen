@@ -25,8 +25,6 @@ namespace TMPro {
 namespace UnityEngine {
   // Forward declaring type: GameObject
   class GameObject;
-  // Skipping declaration: Vector3 because it is already included!
-  // Skipping declaration: Quaternion because it is already included!
   // Skipping declaration: Color because it is already included!
 }
 // Forward declaring namespace: VROSC
@@ -45,6 +43,8 @@ namespace VROSC {
   class UIColorPicker;
   // Forward declaring type: AdjustableMesh
   class AdjustableMesh;
+  // Forward declaring type: TransformDataController
+  class TransformDataController;
   // Forward declaring type: LoopStation
   class LoopStation;
   // Forward declaring type: LoopPlaybackConfigOverride
@@ -67,15 +67,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationGroupUI : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String <DisplayName>k__BackingField
     // Size: 0x8
     // Offset: 0x18
@@ -152,97 +144,97 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String <DisplayName>k__BackingField
-    ::StringW& dyn_$DisplayName$k__BackingField();
+    [[deprecated]] ::StringW& dyn_$DisplayName$k__BackingField();
     // Get instance field reference: private TMPro.TextMeshPro _groupName
-    ::TMPro::TextMeshPro*& dyn__groupName();
+    [[deprecated]] ::TMPro::TextMeshPro*& dyn__groupName();
     // Get instance field reference: private UnityEngine.GameObject _ifEmptyState
-    ::UnityEngine::GameObject*& dyn__ifEmptyState();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn__ifEmptyState();
     // Get instance field reference: private VROSC.LoopVolumeController _volumeController
-    ::VROSC::LoopVolumeController*& dyn__volumeController();
+    [[deprecated]] ::VROSC::LoopVolumeController*& dyn__volumeController();
     // Get instance field reference: private VROSC.UIButton _renameButton
-    ::VROSC::UIButton*& dyn__renameButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__renameButton();
     // Get instance field reference: private VROSC.LoopStationGroupPlaybackUI _playBackUI
-    ::VROSC::LoopStationGroupPlaybackUI*& dyn__playBackUI();
+    [[deprecated]] ::VROSC::LoopStationGroupPlaybackUI*& dyn__playBackUI();
     // Get instance field reference: private VROSC.LoopStationLaunchpadHandler _launchpadHandler
-    ::VROSC::LoopStationLaunchpadHandler*& dyn__launchpadHandler();
+    [[deprecated]] ::VROSC::LoopStationLaunchpadHandler*& dyn__launchpadHandler();
     // Get instance field reference: private VROSC.InteractionDisabler _disabler
-    ::VROSC::InteractionDisabler*& dyn__disabler();
+    [[deprecated]] ::VROSC::InteractionDisabler*& dyn__disabler();
     // Get instance field reference: private VROSC.UIColorPicker _colorPicker
-    ::VROSC::UIColorPicker*& dyn__colorPicker();
+    [[deprecated]] ::VROSC::UIColorPicker*& dyn__colorPicker();
     // Get instance field reference: private VROSC.AdjustableMesh _background
-    ::VROSC::AdjustableMesh*& dyn__background();
+    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__background();
     // Get instance field reference: private VROSC.LoopStationGroup _owner
-    ::VROSC::LoopStationGroup*& dyn__owner();
+    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__owner();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
     // public System.Single get_Volume()
-    // Offset: 0x9131F8
+    // Offset: 0x196E5F4
     float get_Volume();
     // public System.Boolean get_IsMuted()
-    // Offset: 0x913214
+    // Offset: 0x196E634
     bool get_IsMuted();
     // public System.String get_DisplayName()
-    // Offset: 0x915168
+    // Offset: 0x197122C
     ::StringW get_DisplayName();
     // private System.Void set_DisplayName(System.String value)
-    // Offset: 0x915160
+    // Offset: 0x1971224
     void set_DisplayName(::StringW value);
     // public VROSC.LoopPlaybackConfigOverride get_PlaybackConfig()
-    // Offset: 0x913238
+    // Offset: 0x196E68C
     ::VROSC::LoopPlaybackConfigOverride* get_PlaybackConfig();
     // private System.Void Awake()
-    // Offset: 0x915170
+    // Offset: 0x1971234
     void Awake();
     // private System.Void OnDestroy()
-    // Offset: 0x915460
+    // Offset: 0x19717A4
     void OnDestroy();
     // public System.Void Setup(VROSC.LoopStationGroup owner, VROSC.LoopStation loopStation, VROSC.LoopStationGroup/VROSC.SetupVariables vars)
-    // Offset: 0x915810
+    // Offset: 0x1971D14
     void Setup(::VROSC::LoopStationGroup* owner, ::VROSC::LoopStation* loopStation, ::VROSC::LoopStationGroup::SetupVariables vars);
     // public System.Void SetInteractable(System.Boolean interactable)
-    // Offset: 0x915ABC
+    // Offset: 0x1971FF8
     void SetInteractable(bool interactable);
     // public System.Void SetVolumeOfGroup(System.Single volume)
-    // Offset: 0x913440
+    // Offset: 0x196EC18
     void SetVolumeOfGroup(float volume);
     // private System.Void GroupVolumeChanged(System.Single volume)
-    // Offset: 0x915AE4
+    // Offset: 0x197204C
     void GroupVolumeChanged(float volume);
     // private System.Void MuteChanged(System.Boolean mute)
-    // Offset: 0x915C4C
+    // Offset: 0x19721A8
     void MuteChanged(bool mute);
     // private System.Void SoloChanged(System.Boolean soloOn)
-    // Offset: 0x915C98
+    // Offset: 0x19721F4
     void SoloChanged(bool soloOn);
     // private System.Void GlobalVolumeChanged(System.Single volume)
-    // Offset: 0x915D04
+    // Offset: 0x1972260
     void GlobalVolumeChanged(float volume);
     // private System.Void UpdateVolumeOfAllGroups()
-    // Offset: 0x915B28
+    // Offset: 0x1972090
     void UpdateVolumeOfAllGroups();
     // public System.Void ShowAsEmpty(System.Boolean shouldLookEmpty)
-    // Offset: 0x915D08
+    // Offset: 0x1972264
     void ShowAsEmpty(bool shouldLookEmpty);
     // private System.Void RenameButtonPressed()
-    // Offset: 0x915D44
+    // Offset: 0x19722A0
     void RenameButtonPressed();
     // public System.Void SetText(System.String text)
-    // Offset: 0x915F18
+    // Offset: 0x1972474
     void SetText(::StringW text);
     // private System.Void KeyboardClosed()
-    // Offset: 0x915F90
+    // Offset: 0x1972508
     void KeyboardClosed();
-    // System.Void LoadLaunchPad(System.String padID, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 localScale)
-    // Offset: 0x913960
-    void LoadLaunchPad(::StringW padID, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 localScale);
+    // System.Void LoadLaunchPad(System.String padID, VROSC.TransformDataController transformData)
+    // Offset: 0x196F2AC
+    void LoadLaunchPad(::StringW padID, ::VROSC::TransformDataController* transformData);
     // private System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x9159AC
+    // Offset: 0x1971EA0
     void SetColor(::UnityEngine::Color color);
     // private System.Void Update()
-    // Offset: 0x916110
+    // Offset: 0x1972758
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x9161D4
+    // Offset: 0x197281C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -427,13 +419,11 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
 // Writing MetadataGetter for method: VROSC::LoopStationGroupUI::LoadLaunchPad
 // Il2CppName: LoadLaunchPad
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationGroupUI::*)(::StringW, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Vector3)>(&VROSC::LoopStationGroupUI::LoadLaunchPad)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC::LoopStationGroupUI::*)(::StringW, ::VROSC::TransformDataController*)>(&VROSC::LoopStationGroupUI::LoadLaunchPad)> {
   static const MethodInfo* get() {
     static auto* padID = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
-    static auto* position = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    static auto* rotation = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
-    static auto* localScale = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroupUI*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, position, rotation, localScale});
+    static auto* transformData = &::il2cpp_utils::GetClassFromName("VROSC", "TransformDataController")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroupUI*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, transformData});
   }
 };
 // Writing MetadataGetter for method: VROSC::LoopStationGroupUI::SetColor

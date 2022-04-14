@@ -46,15 +46,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class TimeOfDayPreset : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public TimeOfDayType timeOfDay
     // Size: 0x4
     // Offset: 0x18
@@ -81,7 +73,7 @@ namespace GlobalNamespace {
     ::UnityEngine::Transform* SunTransform;
     // Field size check
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
-    // [ColorUsageAttribute] Offset: 0x66CE90
+    // [ColorUsageAttribute] Offset: 0x782E5C
     // public UnityEngine.Color SunColor
     // Size: 0x10
     // Offset: 0x38
@@ -98,19 +90,19 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public TimeOfDayType timeOfDay
-    ::GlobalNamespace::TimeOfDayType& dyn_timeOfDay();
+    [[deprecated]] ::GlobalNamespace::TimeOfDayType& dyn_timeOfDay();
     // Get instance field reference: public UnityEngine.Material SkyboxMaterial
-    ::UnityEngine::Material*& dyn_SkyboxMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_SkyboxMaterial();
     // Get instance field reference: public UnityEngine.Light directionalLight
-    ::UnityEngine::Light*& dyn_directionalLight();
+    [[deprecated]] ::UnityEngine::Light*& dyn_directionalLight();
     // Get instance field reference: public UnityEngine.Transform SunTransform
-    ::UnityEngine::Transform*& dyn_SunTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn_SunTransform();
     // Get instance field reference: public UnityEngine.Color SunColor
-    ::UnityEngine::Color& dyn_SunColor();
+    [[deprecated]] ::UnityEngine::Color& dyn_SunColor();
     // Get instance field reference: public UnityEngine.GameObject[] ObjectsToActivate
-    ::ArrayW<::UnityEngine::GameObject*>& dyn_ObjectsToActivate();
+    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn_ObjectsToActivate();
     // public System.Void .ctor()
-    // Offset: 0x13FEB0C
+    // Offset: 0xA269F4
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

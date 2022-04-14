@@ -16,8 +16,8 @@
 // Begin forward declares
 // Forward declaring namespace: VROSC
 namespace VROSC {
-  // Forward declaring type: TransformData
-  class TransformData;
+  // Forward declaring type: TransformDataModel
+  class TransformDataModel;
   // Forward declaring type: LoopPlaybackConfigData
   class LoopPlaybackConfigData;
   // Forward declaring type: LoopPlaybackConfigOverrideFlags
@@ -40,15 +40,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationTrackGroup : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.String GroupId
     // Size: 0x8
     // Offset: 0x10
@@ -75,12 +67,12 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     // Padding between fields: IsUserGroup and: TransformData
     char __padding3[0x3] = {};
-    // public VROSC.TransformData TransformData
+    // public VROSC.TransformDataModel TransformData
     // Size: 0x8
     // Offset: 0x28
-    ::VROSC::TransformData* TransformData;
+    ::VROSC::TransformDataModel* TransformData;
     // Field size check
-    static_assert(sizeof(::VROSC::TransformData*) == 0x8);
+    static_assert(sizeof(::VROSC::TransformDataModel*) == 0x8);
     // public System.Boolean GroupMuted
     // Size: 0x1
     // Offset: 0x30
@@ -109,25 +101,25 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: public System.String GroupId
-    ::StringW& dyn_GroupId();
+    [[deprecated]] ::StringW& dyn_GroupId();
     // Get instance field reference: public System.String GroupName
-    ::StringW& dyn_GroupName();
+    [[deprecated]] ::StringW& dyn_GroupName();
     // Get instance field reference: public System.Single GroupVolume
-    float& dyn_GroupVolume();
+    [[deprecated]] float& dyn_GroupVolume();
     // Get instance field reference: public System.Boolean IsUserGroup
-    bool& dyn_IsUserGroup();
-    // Get instance field reference: public VROSC.TransformData TransformData
-    ::VROSC::TransformData*& dyn_TransformData();
+    [[deprecated]] bool& dyn_IsUserGroup();
+    // Get instance field reference: public VROSC.TransformDataModel TransformData
+    [[deprecated]] ::VROSC::TransformDataModel*& dyn_TransformData();
     // Get instance field reference: public System.Boolean GroupMuted
-    bool& dyn_GroupMuted();
+    [[deprecated]] bool& dyn_GroupMuted();
     // Get instance field reference: public VROSC.LoopPlaybackConfigData PlaybackConfigData
-    ::VROSC::LoopPlaybackConfigData*& dyn_PlaybackConfigData();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigData*& dyn_PlaybackConfigData();
     // Get instance field reference: public VROSC.LoopPlaybackConfigOverrideFlags PlaybackOverrideFlags
-    ::VROSC::LoopPlaybackConfigOverrideFlags*& dyn_PlaybackOverrideFlags();
+    [[deprecated]] ::VROSC::LoopPlaybackConfigOverrideFlags*& dyn_PlaybackOverrideFlags();
     // Get instance field reference: public UnityEngine.Color Color
-    ::UnityEngine::Color& dyn_Color();
+    [[deprecated]] ::UnityEngine::Color& dyn_Color();
     // public System.Void .ctor()
-    // Offset: 0x8A67A0
+    // Offset: 0x196D36C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

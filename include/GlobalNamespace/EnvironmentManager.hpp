@@ -62,15 +62,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::EnvironmentManager::$AnimateLight$d__14
     class $AnimateLight$d__14;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public TimeOfDayPreset[] TimeOfDayPresets
     // Size: 0x8
     // Offset: 0x18
@@ -147,52 +139,52 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public TimeOfDayPreset[] TimeOfDayPresets
-    ::ArrayW<::GlobalNamespace::TimeOfDayPreset*>& dyn_TimeOfDayPresets();
+    [[deprecated]] ::ArrayW<::GlobalNamespace::TimeOfDayPreset*>& dyn_TimeOfDayPresets();
     // Get instance field reference: public UnityEngine.GameObject DirLightObject
-    ::UnityEngine::GameObject*& dyn_DirLightObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_DirLightObject();
     // Get instance field reference: private UnityEngine.Coroutine _activeCoroutine
-    ::UnityEngine::Coroutine*& dyn__activeCoroutine();
+    [[deprecated]] ::UnityEngine::Coroutine*& dyn__activeCoroutine();
     // Get instance field reference: private UnityEngine.Light _activeLight
-    ::UnityEngine::Light*& dyn__activeLight();
+    [[deprecated]] ::UnityEngine::Light*& dyn__activeLight();
     // Get instance field reference: private UnityEngine.Material _skyboxMaterial
-    ::UnityEngine::Material*& dyn__skyboxMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__skyboxMaterial();
     // Get instance field reference: public UnityEngine.Material SunMaterial
-    ::UnityEngine::Material*& dyn_SunMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn_SunMaterial();
     // Get instance field reference: public UnityEngine.GameObject SunObject
-    ::UnityEngine::GameObject*& dyn_SunObject();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_SunObject();
     // Get instance field reference: public UnityEngine.GameObject AnimationPivot
-    ::UnityEngine::GameObject*& dyn_AnimationPivot();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_AnimationPivot();
     // Get instance field reference: private UnityEngine.Material _sunMaterial
-    ::UnityEngine::Material*& dyn__sunMaterial();
+    [[deprecated]] ::UnityEngine::Material*& dyn__sunMaterial();
     // Get instance field reference: private TimeOfDayPreset _currentLighting
-    ::GlobalNamespace::TimeOfDayPreset*& dyn__currentLighting();
+    [[deprecated]] ::GlobalNamespace::TimeOfDayPreset*& dyn__currentLighting();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<TimeOfDayType,TimeOfDayPreset> _presetsMap
-    ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::TimeOfDayType, ::GlobalNamespace::TimeOfDayPreset*>*& dyn__presetsMap();
+    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::TimeOfDayType, ::GlobalNamespace::TimeOfDayPreset*>*& dyn__presetsMap();
     // Get instance field reference: private System.Int32 cycleIndex
-    int& dyn_cycleIndex();
+    [[deprecated]] int& dyn_cycleIndex();
     // private System.Void Start()
-    // Offset: 0x1314AD4
+    // Offset: 0x8EEB34
     void Start();
     // private System.Void TransitionTimeOfDay(TimeOfDayType timeOfDay, System.Single animationTime)
-    // Offset: 0x1314E04
+    // Offset: 0x8EEE64
     void TransitionTimeOfDay(::GlobalNamespace::TimeOfDayType timeOfDay, float animationTime);
     // private System.Collections.IEnumerator AnimateLight(TimeOfDayType timeOfDay, System.Single animationTime)
-    // Offset: 0x1314E6C
+    // Offset: 0x8EEECC
     ::System::Collections::IEnumerator* AnimateLight(::GlobalNamespace::TimeOfDayType timeOfDay, float animationTime);
     // private System.Void SetTimeOfDay(TimeOfDayType timeOfDay)
-    // Offset: 0x1314CB8
+    // Offset: 0x8EED18
     void SetTimeOfDay(::GlobalNamespace::TimeOfDayType timeOfDay);
     // public System.Void CycleTimeOfDay()
-    // Offset: 0x1314EF8
+    // Offset: 0x8EEF58
     void CycleTimeOfDay();
     // public System.Void CycleTimeOfDayTransition()
-    // Offset: 0x1314F78
+    // Offset: 0x8EEFD8
     void CycleTimeOfDayTransition();
     // private System.Void Update()
-    // Offset: 0x1314FFC
+    // Offset: 0x8EF05C
     void Update();
     // public System.Void .ctor()
-    // Offset: 0x1315058
+    // Offset: 0x8EF0B8
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -37,15 +37,7 @@ namespace TMPro {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class TMP_SpriteAnimator::$DoSpriteAnimationInternal$d__7 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -154,58 +146,58 @@ namespace TMPro {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public TMPro.TMP_SpriteAnimator <>4__this
-    ::TMPro::TMP_SpriteAnimator*& dyn_$$4__this();
+    [[deprecated]] ::TMPro::TMP_SpriteAnimator*& dyn_$$4__this();
     // Get instance field reference: public System.Int32 start
-    int& dyn_start();
+    [[deprecated]] int& dyn_start();
     // Get instance field reference: public System.Int32 end
-    int& dyn_end();
+    [[deprecated]] int& dyn_end();
     // Get instance field reference: public TMPro.TMP_SpriteAsset spriteAsset
-    ::TMPro::TMP_SpriteAsset*& dyn_spriteAsset();
+    [[deprecated]] ::TMPro::TMP_SpriteAsset*& dyn_spriteAsset();
     // Get instance field reference: public System.Int32 currentCharacter
-    int& dyn_currentCharacter();
+    [[deprecated]] int& dyn_currentCharacter();
     // Get instance field reference: public System.Int32 framerate
-    int& dyn_framerate();
+    [[deprecated]] int& dyn_framerate();
     // Get instance field reference: private System.Int32 <currentFrame>5__2
-    int& dyn_$currentFrame$5__2();
+    [[deprecated]] int& dyn_$currentFrame$5__2();
     // Get instance field reference: private TMPro.TMP_CharacterInfo <charInfo>5__3
-    ::TMPro::TMP_CharacterInfo& dyn_$charInfo$5__3();
+    [[deprecated]] ::TMPro::TMP_CharacterInfo& dyn_$charInfo$5__3();
     // Get instance field reference: private System.Int32 <materialIndex>5__4
-    int& dyn_$materialIndex$5__4();
+    [[deprecated]] int& dyn_$materialIndex$5__4();
     // Get instance field reference: private System.Int32 <vertexIndex>5__5
-    int& dyn_$vertexIndex$5__5();
+    [[deprecated]] int& dyn_$vertexIndex$5__5();
     // Get instance field reference: private TMPro.TMP_MeshInfo <meshInfo>5__6
-    ::TMPro::TMP_MeshInfo& dyn_$meshInfo$5__6();
+    [[deprecated]] ::TMPro::TMP_MeshInfo& dyn_$meshInfo$5__6();
     // Get instance field reference: private System.Single <baseSpriteScale>5__7
-    float& dyn_$baseSpriteScale$5__7();
+    [[deprecated]] float& dyn_$baseSpriteScale$5__7();
     // Get instance field reference: private System.Single <elapsedTime>5__8
-    float& dyn_$elapsedTime$5__8();
+    [[deprecated]] float& dyn_$elapsedTime$5__8();
     // Get instance field reference: private System.Single <targetTime>5__9
-    float& dyn_$targetTime$5__9();
+    [[deprecated]] float& dyn_$targetTime$5__9();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x1247A70
+    // Offset: 0x1821B0C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x1247AB8
+    // Offset: 0x1821B54
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x124716C
+    // Offset: 0x1821208
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SpriteAnimator::$DoSpriteAnimationInternal$d__7* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SpriteAnimator::$DoSpriteAnimationInternal$d__7::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_SpriteAnimator::$DoSpriteAnimationInternal$d__7*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x1247198
+    // Offset: 0x1821234
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x124719C
+    // Offset: 0x1821238
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x1247A78
+    // Offset: 0x1821B14
     void System_Collections_IEnumerator_Reset();
   }; // TMPro.TMP_SpriteAnimator/TMPro.<DoSpriteAnimationInternal>d__7
   #pragma pack(pop)

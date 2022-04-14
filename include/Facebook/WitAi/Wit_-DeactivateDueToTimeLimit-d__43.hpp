@@ -26,15 +26,7 @@ namespace Facebook::WitAi {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class Wit::$DeactivateDueToTimeLimit$d__43 : public ::Il2CppObject/*, public ::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <>1__state
     // Size: 0x4
     // Offset: 0x10
@@ -61,32 +53,32 @@ namespace Facebook::WitAi {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    int& dyn_$$1__state();
+    [[deprecated]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public Facebook.WitAi.Wit <>4__this
-    ::Facebook::WitAi::Wit*& dyn_$$4__this();
+    [[deprecated]] ::Facebook::WitAi::Wit*& dyn_$$4__this();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-    // Offset: 0x1107308
+    // Offset: 0x167DB74
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
-    // Offset: 0x1107350
+    // Offset: 0x167DBBC
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
     // public System.Void .ctor(System.Int32 <>1__state)
-    // Offset: 0x10FC0E0
+    // Offset: 0x1672948
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Wit::$DeactivateDueToTimeLimit$d__43* New_ctor(int $$1__state) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Wit::$DeactivateDueToTimeLimit$d__43::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Wit::$DeactivateDueToTimeLimit$d__43*, creationType>($$1__state)));
     }
     // private System.Void System.IDisposable.Dispose()
-    // Offset: 0x11071D8
+    // Offset: 0x167DA44
     void System_IDisposable_Dispose();
     // private System.Boolean MoveNext()
-    // Offset: 0x11071DC
+    // Offset: 0x167DA48
     bool MoveNext();
     // private System.Void System.Collections.IEnumerator.Reset()
-    // Offset: 0x1107310
+    // Offset: 0x167DB7C
     void System_Collections_IEnumerator_Reset();
   }; // Facebook.WitAi.Wit/Facebook.WitAi.<DeactivateDueToTimeLimit>d__43
   #pragma pack(pop)

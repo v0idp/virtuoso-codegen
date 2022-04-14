@@ -34,16 +34,27 @@ namespace Firebase::Firestore {
     static int _get_numExceptionsPending();
     // Set static field: static private System.Int32 numExceptionsPending
     static void _set_numExceptionsPending(int value);
+    // static public System.Boolean get_Pending()
+    // Offset: 0xD472C0
+    static bool get_Pending();
     // static public System.Void Set(System.Exception e)
-    // Offset: 0xC4378C
+    // Offset: 0xD67544
     static void Set(::System::Exception* e);
     // static public System.Exception Retrieve()
-    // Offset: 0xC43684
+    // Offset: 0xD4732C
     static ::System::Exception* Retrieve();
   }; // Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGPendingException
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SWIGPendingException::get_Pending
+// Il2CppName: get_Pending
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)()>(&Firebase::Firestore::FirestoreCppPINVOKE::SWIGPendingException::get_Pending)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE::SWIGPendingException*), "get_Pending", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SWIGPendingException::Set
 // Il2CppName: Set
 template<>

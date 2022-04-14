@@ -42,7 +42,7 @@ namespace Firebase::Firestore::Converters {
   class GeoPointConverter : public ::Firebase::Firestore::Converters::ConverterBase {
     public:
     // System.Void .ctor()
-    // Offset: 0xC2EE94
+    // Offset: 0xD50CA4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -51,12 +51,12 @@ namespace Firebase::Firestore::Converters {
       return THROW_UNLESS((::il2cpp_utils::New<GeoPointConverter*, creationType>()));
     }
     // public override Firebase.Firestore.FieldValueProxy Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
-    // Offset: 0xC3E094
+    // Offset: 0xD61E8C
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: Firebase.Firestore.FieldValueProxy ConverterBase::Serialize(Firebase.Firestore.SerializationContext context, System.Object value)
     ::Firebase::Firestore::FieldValueProxy* Serialize(::Firebase::Firestore::SerializationContext* context, ::Il2CppObject* value);
     // protected override System.Object DeserializeGeoPoint(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.GeoPoint value)
-    // Offset: 0xC3E124
+    // Offset: 0xD61F1C
     // Implemented from: Firebase.Firestore.Converters.ConverterBase
     // Base method: System.Object ConverterBase::DeserializeGeoPoint(Firebase.Firestore.DeserializationContext context, Firebase.Firestore.GeoPoint value)
     ::Il2CppObject* DeserializeGeoPoint(::Firebase::Firestore::DeserializationContext* context, ::Firebase::Firestore::GeoPoint value);

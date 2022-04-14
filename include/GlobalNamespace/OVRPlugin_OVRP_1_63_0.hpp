@@ -38,34 +38,34 @@ namespace GlobalNamespace {
     // Set static field: static public readonly System.Version version
     static void _set_version(::System::Version* value);
     // static private System.Void .cctor()
-    // Offset: 0xF120BC
+    // Offset: 0x13EC0B8
     static void _cctor();
     // static public OVRPlugin/Result ovrp_InitializeInsightPassthrough()
-    // Offset: 0xF11BA8
+    // Offset: 0x13EBBA4
     static ::GlobalNamespace::OVRPlugin::Result ovrp_InitializeInsightPassthrough();
     // static public OVRPlugin/Result ovrp_ShutdownInsightPassthrough()
-    // Offset: 0xF11C1C
+    // Offset: 0x13EBC18
     static ::GlobalNamespace::OVRPlugin::Result ovrp_ShutdownInsightPassthrough();
     // static public OVRPlugin/Bool ovrp_GetInsightPassthroughInitialized()
-    // Offset: 0xF11C90
+    // Offset: 0x13EBC8C
     static ::GlobalNamespace::OVRPlugin::Bool ovrp_GetInsightPassthroughInitialized();
     // static public OVRPlugin/Result ovrp_SetInsightPassthroughStyle(System.Int32 layerId, OVRPlugin/InsightPassthroughStyle style)
-    // Offset: 0xF11D04
+    // Offset: 0x13EBD00
     static ::GlobalNamespace::OVRPlugin::Result ovrp_SetInsightPassthroughStyle(int layerId, ::GlobalNamespace::OVRPlugin::InsightPassthroughStyle style);
     // static public OVRPlugin/Result ovrp_CreateInsightTriangleMesh(System.Int32 layerId, System.IntPtr vertices, System.Int32 vertexCount, System.IntPtr triangles, System.Int32 triangleCount, out System.UInt64 meshHandle)
-    // Offset: 0xF11DA4
+    // Offset: 0x13EBDA0
     static ::GlobalNamespace::OVRPlugin::Result ovrp_CreateInsightTriangleMesh(int layerId, ::System::IntPtr vertices, int vertexCount, ::System::IntPtr triangles, int triangleCount, ByRef<uint64_t> meshHandle);
     // static public OVRPlugin/Result ovrp_DestroyInsightTriangleMesh(System.UInt64 meshHandle)
-    // Offset: 0xF11E64
+    // Offset: 0x13EBE60
     static ::GlobalNamespace::OVRPlugin::Result ovrp_DestroyInsightTriangleMesh(uint64_t meshHandle);
     // static public OVRPlugin/Result ovrp_AddInsightPassthroughSurfaceGeometry(System.Int32 layerId, System.UInt64 meshHandle, UnityEngine.Matrix4x4 T_world_model, out System.UInt64 geometryInstanceHandle)
-    // Offset: 0xF11EE4
+    // Offset: 0x13EBEE0
     static ::GlobalNamespace::OVRPlugin::Result ovrp_AddInsightPassthroughSurfaceGeometry(int layerId, uint64_t meshHandle, ::UnityEngine::Matrix4x4 T_world_model, ByRef<uint64_t> geometryInstanceHandle);
     // static public OVRPlugin/Result ovrp_DestroyInsightPassthroughGeometryInstance(System.UInt64 geometryInstanceHandle)
-    // Offset: 0xF11F9C
+    // Offset: 0x13EBF98
     static ::GlobalNamespace::OVRPlugin::Result ovrp_DestroyInsightPassthroughGeometryInstance(uint64_t geometryInstanceHandle);
     // static public OVRPlugin/Result ovrp_UpdateInsightPassthroughGeometryTransform(System.UInt64 geometryInstanceHandle, UnityEngine.Matrix4x4 T_world_model)
-    // Offset: 0xF1201C
+    // Offset: 0x13EC018
     static ::GlobalNamespace::OVRPlugin::Result ovrp_UpdateInsightPassthroughGeometryTransform(uint64_t geometryInstanceHandle, ::UnityEngine::Matrix4x4 T_world_model);
   }; // OVRPlugin/OVRP_1_63_0
   #pragma pack(pop)

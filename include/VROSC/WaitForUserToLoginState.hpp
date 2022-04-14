@@ -35,19 +35,19 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // public System.Void OnEnter(params System.Object[] values)
-    // Offset: 0x13538A4
+    // Offset: 0x9500F4
     void OnEnter(::ArrayW<::Il2CppObject*> values);
     // public System.Void OnExit()
-    // Offset: 0x13538A8
+    // Offset: 0x9500F8
     void OnExit();
     // public System.Void Tick()
-    // Offset: 0x13538AC
+    // Offset: 0x9500FC
     void Tick();
     // public System.Void UpdateData(params System.Object[] values)
-    // Offset: 0x13538B0
+    // Offset: 0x950100
     void UpdateData(::ArrayW<::Il2CppObject*> values);
     // public System.Void .ctor()
-    // Offset: 0x135389C
+    // Offset: 0x9500EC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

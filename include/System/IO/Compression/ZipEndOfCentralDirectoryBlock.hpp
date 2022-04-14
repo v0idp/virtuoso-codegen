@@ -93,26 +93,26 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 Signature
-    uint& dyn_Signature();
+    [[deprecated]] uint& dyn_Signature();
     // Get instance field reference: public System.UInt16 NumberOfThisDisk
-    uint16_t& dyn_NumberOfThisDisk();
+    [[deprecated]] uint16_t& dyn_NumberOfThisDisk();
     // Get instance field reference: public System.UInt16 NumberOfTheDiskWithTheStartOfTheCentralDirectory
-    uint16_t& dyn_NumberOfTheDiskWithTheStartOfTheCentralDirectory();
+    [[deprecated]] uint16_t& dyn_NumberOfTheDiskWithTheStartOfTheCentralDirectory();
     // Get instance field reference: public System.UInt16 NumberOfEntriesInTheCentralDirectoryOnThisDisk
-    uint16_t& dyn_NumberOfEntriesInTheCentralDirectoryOnThisDisk();
+    [[deprecated]] uint16_t& dyn_NumberOfEntriesInTheCentralDirectoryOnThisDisk();
     // Get instance field reference: public System.UInt16 NumberOfEntriesInTheCentralDirectory
-    uint16_t& dyn_NumberOfEntriesInTheCentralDirectory();
+    [[deprecated]] uint16_t& dyn_NumberOfEntriesInTheCentralDirectory();
     // Get instance field reference: public System.UInt32 SizeOfCentralDirectory
-    uint& dyn_SizeOfCentralDirectory();
+    [[deprecated]] uint& dyn_SizeOfCentralDirectory();
     // Get instance field reference: public System.UInt32 OffsetOfStartOfCentralDirectoryWithRespectToTheStartingDiskNumber
-    uint& dyn_OffsetOfStartOfCentralDirectoryWithRespectToTheStartingDiskNumber();
+    [[deprecated]] uint& dyn_OffsetOfStartOfCentralDirectoryWithRespectToTheStartingDiskNumber();
     // Get instance field reference: public System.Byte[] ArchiveComment
-    ::ArrayW<uint8_t>& dyn_ArchiveComment();
+    [[deprecated]] ::ArrayW<uint8_t>& dyn_ArchiveComment();
     // static public System.Void WriteBlock(System.IO.Stream stream, System.Int64 numberOfEntries, System.Int64 startOfCentralDirectory, System.Int64 sizeOfCentralDirectory, System.Byte[] archiveComment)
-    // Offset: 0x1126968
+    // Offset: 0x169E1D4
     static void WriteBlock(::System::IO::Stream* stream, int64_t numberOfEntries, int64_t startOfCentralDirectory, int64_t sizeOfCentralDirectory, ::ArrayW<uint8_t> archiveComment);
     // static public System.Boolean TryReadBlock(System.IO.BinaryReader reader, out System.IO.Compression.ZipEndOfCentralDirectoryBlock eocdBlock)
-    // Offset: 0x1125F40
+    // Offset: 0x169D7AC
     static bool TryReadBlock(::System::IO::BinaryReader* reader, ByRef<::System::IO::Compression::ZipEndOfCentralDirectoryBlock> eocdBlock);
   }; // System.IO.Compression.ZipEndOfCentralDirectoryBlock
   #pragma pack(pop)

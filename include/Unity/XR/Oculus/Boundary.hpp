@@ -35,16 +35,16 @@ namespace Unity::XR::Oculus {
     // Nested type: ::Unity::XR::Oculus::Boundary::BoundaryType
     struct BoundaryType;
     // static public System.Boolean GetBoundaryConfigured()
-    // Offset: 0x12D9554
+    // Offset: 0x18DB7C8
     static bool GetBoundaryConfigured();
     // static public System.Boolean GetBoundaryDimensions(Unity.XR.Oculus.Boundary/Unity.XR.Oculus.BoundaryType boundaryType, out UnityEngine.Vector3 dimensions)
-    // Offset: 0x12D955C
+    // Offset: 0x18DB7D0
     static bool GetBoundaryDimensions(::Unity::XR::Oculus::Boundary::BoundaryType boundaryType, ByRef<::UnityEngine::Vector3> dimensions);
     // static public System.Boolean GetBoundaryVisible()
-    // Offset: 0x12D9564
+    // Offset: 0x18DB7D8
     static bool GetBoundaryVisible();
     // static public System.Void SetBoundaryVisible(System.Boolean boundaryVisible)
-    // Offset: 0x12D956C
+    // Offset: 0x18DB7E0
     static void SetBoundaryVisible(bool boundaryVisible);
   }; // Unity.XR.Oculus.Boundary
   #pragma pack(pop)

@@ -16,6 +16,11 @@
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
+// Forward declaring namespace: Firebase
+namespace Firebase {
+  // Forward declaring type: FirebaseApp
+  class FirebaseApp;
+}
 // Forward declaring namespace: Firebase::Firestore
 namespace Firebase::Firestore {
   // Forward declaring type: CollectionReferenceProxy
@@ -42,15 +47,7 @@ namespace Firebase::Firestore {
   // [TokenAttribute] Offset: FFFFFFFF
   class FirestoreProxy : public ::Il2CppObject/*, public ::System::IDisposable*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Runtime.InteropServices.HandleRef swigCPtr
     // Size: 0x10
     // Offset: 0x10
@@ -69,33 +66,39 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    bool& dyn_swigCMemOwn();
+    [[deprecated]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xC389FC
+    // Offset: 0xD5EC30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirestoreProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirestoreProxy*, creationType>(cPtr, cMemoryOwn)));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.FirestoreProxy obj)
-    // Offset: 0xC38B08
+    // Offset: 0xD5EC94
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Firestore::FirestoreProxy* obj);
     // public System.Void Dispose()
-    // Offset: 0xC3B0A8
+    // Offset: 0xD5ED70
     void Dispose();
+    // static Firebase.Firestore.FirestoreProxy GetInstance(Firebase.FirebaseApp app)
+    // Offset: 0xD5A5DC
+    static ::Firebase::Firestore::FirestoreProxy* GetInstance(::Firebase::FirebaseApp* app);
     // public Firebase.Firestore.CollectionReferenceProxy Collection(System.String collectionPath)
-    // Offset: 0xC3B1F0
+    // Offset: 0xD5EF00
     ::Firebase::Firestore::CollectionReferenceProxy* Collection(::StringW collectionPath);
+    // public Firebase.Firestore.SettingsProxy settings()
+    // Offset: 0xD5EFDC
+    ::Firebase::Firestore::SettingsProxy* settings();
     // public System.Void set_settings(Firebase.Firestore.SettingsProxy settings)
-    // Offset: 0xC3B2D4
+    // Offset: 0xD5F10C
     void set_settings(::Firebase::Firestore::SettingsProxy* settings);
     // public Firebase.Firestore.WriteBatchProxy batch()
-    // Offset: 0xC3B42C
+    // Offset: 0xD5F25C
     ::Firebase::Firestore::WriteBatchProxy* batch();
     // protected override System.Void Finalize()
-    // Offset: 0xC3B038
+    // Offset: 0xD5ED00
     // Implemented from: System.Object
     // Base method: System.Void Object::Finalize()
     void Finalize();
@@ -126,6 +129,15 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreProxy*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreProxy::GetInstance
+// Il2CppName: GetInstance
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase::Firestore::FirestoreProxy* (*)(::Firebase::FirebaseApp*)>(&Firebase::Firestore::FirestoreProxy::GetInstance)> {
+  static const MethodInfo* get() {
+    static auto* app = &::il2cpp_utils::GetClassFromName("Firebase", "FirebaseApp")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreProxy*), "GetInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{app});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreProxy::Collection
 // Il2CppName: Collection
 template<>
@@ -133,6 +145,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
   static const MethodInfo* get() {
     static auto* collectionPath = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreProxy*), "Collection", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{collectionPath});
+  }
+};
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreProxy::settings
+// Il2CppName: settings
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase::Firestore::SettingsProxy* (Firebase::Firestore::FirestoreProxy::*)()>(&Firebase::Firestore::FirestoreProxy::settings)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreProxy*), "settings", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreProxy::set_settings

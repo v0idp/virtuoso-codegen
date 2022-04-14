@@ -35,15 +35,7 @@ namespace DG::Tweening::Core {
   // [TokenAttribute] Offset: FFFFFFFF
   class TweenLink : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly UnityEngine.GameObject target
     // Size: 0x8
     // Offset: 0x10
@@ -64,13 +56,13 @@ namespace DG::Tweening::Core {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly UnityEngine.GameObject target
-    ::UnityEngine::GameObject*& dyn_target();
+    [[deprecated]] ::UnityEngine::GameObject*& dyn_target();
     // Get instance field reference: public readonly DG.Tweening.LinkBehaviour behaviour
-    ::DG::Tweening::LinkBehaviour& dyn_behaviour();
+    [[deprecated]] ::DG::Tweening::LinkBehaviour& dyn_behaviour();
     // Get instance field reference: public System.Boolean lastSeenActive
-    bool& dyn_lastSeenActive();
+    [[deprecated]] bool& dyn_lastSeenActive();
     // public System.Void .ctor(UnityEngine.GameObject target, DG.Tweening.LinkBehaviour behaviour)
-    // Offset: 0x103AEBC
+    // Offset: 0x15B18B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TweenLink* New_ctor(::UnityEngine::GameObject* target, ::DG::Tweening::LinkBehaviour behaviour) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::TweenLink::.ctor");

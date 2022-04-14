@@ -65,13 +65,13 @@ namespace Proyecto26::Common {
     // Set static field: static private System.String DEFAULT_CONTENT_TYPE
     static void _set_DEFAULT_CONTENT_TYPE(::StringW value);
     // static private System.String GetFormSectionsContentType(out System.Byte[] bodyRaw, Proyecto26.RequestHelper options)
-    // Offset: 0x133457C
+    // Offset: 0x9491D0
     static ::StringW GetFormSectionsContentType(ByRef<::ArrayW<uint8_t>> bodyRaw, ::Proyecto26::RequestHelper* options);
     // static private System.Void ConfigureWebRequestWithOptions(UnityEngine.Networking.UnityWebRequest request, System.Byte[] bodyRaw, System.String contentType, Proyecto26.RequestHelper options)
-    // Offset: 0x133471C
+    // Offset: 0x949370
     static void ConfigureWebRequestWithOptions(::UnityEngine::Networking::UnityWebRequest* request, ::ArrayW<uint8_t> bodyRaw, ::StringW contentType, ::Proyecto26::RequestHelper* options);
     // static public System.Collections.IEnumerator SendWebRequestWithOptions(UnityEngine.Networking.UnityWebRequest request, Proyecto26.RequestHelper options)
-    // Offset: 0x1334B94
+    // Offset: 0x9497E8
     static ::System::Collections::IEnumerator* SendWebRequestWithOptions(::UnityEngine::Networking::UnityWebRequest* request, ::Proyecto26::RequestHelper* options);
   }; // Proyecto26.Common.Common
   #pragma pack(pop)

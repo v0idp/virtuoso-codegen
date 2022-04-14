@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class SignalControllerInfo : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public VROSC.InputDevice Origin
     // Size: 0x8
     // Offset: 0x10
@@ -70,15 +62,15 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: public VROSC.InputDevice Origin
-    ::VROSC::InputDevice*& dyn_Origin();
+    [[deprecated]] ::VROSC::InputDevice*& dyn_Origin();
     // Get instance field reference: public UnityEngine.Vector3 NormalizedPoint
-    ::UnityEngine::Vector3& dyn_NormalizedPoint();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_NormalizedPoint();
     // Get instance field reference: public UnityEngine.Vector3 NormalizedRotation
-    ::UnityEngine::Vector3& dyn_NormalizedRotation();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_NormalizedRotation();
     // Get instance field reference: public UnityEngine.Vector3 RelativeVelocity
-    ::UnityEngine::Vector3& dyn_RelativeVelocity();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_RelativeVelocity();
     // public System.Void .ctor(VROSC.InputDevice device, UnityEngine.Vector3 normalizedPoint, UnityEngine.Vector3 normalizedRotation, UnityEngine.Vector3 relativeVelocity)
-    // Offset: 0x13B53B0
+    // Offset: 0x192827C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SignalControllerInfo* New_ctor(::VROSC::InputDevice* device, ::UnityEngine::Vector3 normalizedPoint, ::UnityEngine::Vector3 normalizedRotation, ::UnityEngine::Vector3 relativeVelocity) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SignalControllerInfo::.ctor");

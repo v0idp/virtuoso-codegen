@@ -39,15 +39,7 @@ namespace NatSuite::Examples::Components {
   // [TokenAttribute] Offset: FFFFFFFF
   class ClipRecorder : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private readonly System.Int32 sampleRate
     // Size: 0x4
     // Offset: 0x10
@@ -68,23 +60,23 @@ namespace NatSuite::Examples::Components {
     static_assert(sizeof(::System::IO::MemoryStream*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Int32 sampleRate
-    int& dyn_sampleRate();
+    [[deprecated]] int& dyn_sampleRate();
     // Get instance field reference: private readonly System.Int32 channelCount
-    int& dyn_channelCount();
+    [[deprecated]] int& dyn_channelCount();
     // Get instance field reference: private readonly System.IO.MemoryStream audioBuffer
-    ::System::IO::MemoryStream*& dyn_audioBuffer();
+    [[deprecated]] ::System::IO::MemoryStream*& dyn_audioBuffer();
     // public System.Void .ctor(System.Int32 sampleRate, System.Int32 channelCount)
-    // Offset: 0x1331144
+    // Offset: 0x945D80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ClipRecorder* New_ctor(int sampleRate, int channelCount) {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Examples::Components::ClipRecorder::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ClipRecorder*, creationType>(sampleRate, channelCount)));
     }
     // public System.Void CommitSamples(System.Single[] sampleBuffer, System.Int64 timestamp)
-    // Offset: 0x13311C0
+    // Offset: 0x945DFC
     void CommitSamples(::ArrayW<float> sampleBuffer, int64_t timestamp);
     // public UnityEngine.AudioClip FinishWriting()
-    // Offset: 0x1331274
+    // Offset: 0x945EB0
     ::UnityEngine::AudioClip* FinishWriting();
   }; // NatSuite.Examples.Components.ClipRecorder
   #pragma pack(pop)

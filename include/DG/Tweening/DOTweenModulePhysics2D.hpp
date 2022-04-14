@@ -58,19 +58,19 @@ namespace DG::Tweening {
     // Nested type: ::DG::Tweening::DOTweenModulePhysics2D::$$c__DisplayClass4_0
     class $$c__DisplayClass4_0;
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOMove(UnityEngine.Rigidbody2D target, UnityEngine.Vector2 endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x74CEB8
+    // Offset: 0x17DBB84
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOMove(::UnityEngine::Rigidbody2D* target, ::UnityEngine::Vector2 endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOMoveX(UnityEngine.Rigidbody2D target, System.Single endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x74D07C
+    // Offset: 0x17DBD50
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOMoveX(::UnityEngine::Rigidbody2D* target, float endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions> DOMoveY(UnityEngine.Rigidbody2D target, System.Single endValue, System.Single duration, System.Boolean snapping)
-    // Offset: 0x74D238
+    // Offset: 0x17DBF14
     static ::DG::Tweening::Core::TweenerCore_3<::UnityEngine::Vector2, ::UnityEngine::Vector2, ::DG::Tweening::Plugins::Options::VectorOptions>* DOMoveY(::UnityEngine::Rigidbody2D* target, float endValue, float duration, bool snapping);
     // static public DG.Tweening.Core.TweenerCore`3<System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions> DORotate(UnityEngine.Rigidbody2D target, System.Single endValue, System.Single duration)
-    // Offset: 0x74D3F4
+    // Offset: 0x17DC0D8
     static ::DG::Tweening::Core::TweenerCore_3<float, float, ::DG::Tweening::Plugins::Options::FloatOptions>* DORotate(::UnityEngine::Rigidbody2D* target, float endValue, float duration);
     // static public DG.Tweening.Sequence DOJump(UnityEngine.Rigidbody2D target, UnityEngine.Vector2 endValue, System.Single jumpPower, System.Int32 numJumps, System.Single duration, System.Boolean snapping)
-    // Offset: 0x74D590
+    // Offset: 0x17DC27C
     static ::DG::Tweening::Sequence* DOJump(::UnityEngine::Rigidbody2D* target, ::UnityEngine::Vector2 endValue, float jumpPower, int numJumps, float duration, bool snapping);
   }; // DG.Tweening.DOTweenModulePhysics2D
   #pragma pack(pop)

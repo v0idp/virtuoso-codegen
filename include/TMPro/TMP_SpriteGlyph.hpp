@@ -35,15 +35,7 @@ namespace TMPro {
   // [TokenAttribute] Offset: FFFFFFFF
   class TMP_SpriteGlyph : public ::UnityEngine::TextCore::Glyph {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Sprite sprite
     // Size: 0x8
     // Offset: 0x40
@@ -56,16 +48,16 @@ namespace TMPro {
       return sprite;
     }
     // Get instance field reference: public UnityEngine.Sprite sprite
-    ::UnityEngine::Sprite*& dyn_sprite();
+    [[deprecated]] ::UnityEngine::Sprite*& dyn_sprite();
     // public System.Void .ctor(System.UInt32 index, UnityEngine.TextCore.GlyphMetrics metrics, UnityEngine.TextCore.GlyphRect glyphRect, System.Single scale, System.Int32 atlasIndex, UnityEngine.Sprite sprite)
-    // Offset: 0x85CAE8
+    // Offset: 0x9B3C80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SpriteGlyph* New_ctor(uint index, ::UnityEngine::TextCore::GlyphMetrics metrics, ::UnityEngine::TextCore::GlyphRect glyphRect, float scale, int atlasIndex, ::UnityEngine::Sprite* sprite) {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SpriteGlyph::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_SpriteGlyph*, creationType>(index, metrics, glyphRect, scale, atlasIndex, sprite)));
     }
     // public System.Void .ctor()
-    // Offset: 0x85C78C
+    // Offset: 0x9B3924
     // Implemented from: UnityEngine.TextCore.Glyph
     // Base method: System.Void Glyph::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -75,7 +67,7 @@ namespace TMPro {
       return THROW_UNLESS((::il2cpp_utils::New<TMP_SpriteGlyph*, creationType>()));
     }
     // public System.Void .ctor(System.UInt32 index, UnityEngine.TextCore.GlyphMetrics metrics, UnityEngine.TextCore.GlyphRect glyphRect, System.Single scale, System.Int32 atlasIndex)
-    // Offset: 0x85CA28
+    // Offset: 0x9B3BC0
     // Implemented from: UnityEngine.TextCore.Glyph
     // Base method: System.Void Glyph::.ctor(System.UInt32 index, UnityEngine.TextCore.GlyphMetrics metrics, UnityEngine.TextCore.GlyphRect glyphRect, System.Single scale, System.Int32 atlasIndex)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -42,13 +42,13 @@ namespace Facebook::WitAi {
     // Set static field: static public System.Func`2<Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam,System.String> <>9__50_0
     static void _set_$$9__50_0(::System::Func_2<::Facebook::WitAi::WitRequest::QueryParam*, ::StringW>* value);
     // static private System.Void .cctor()
-    // Offset: 0x1107390
+    // Offset: 0x167DBFC
     static void _cctor();
     // System.String <Request>b__50_0(Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam par)
-    // Offset: 0x11073F8
+    // Offset: 0x167DC64
     ::StringW $Request$b__50_0(::Facebook::WitAi::WitRequest::QueryParam* par);
     // public System.Void .ctor()
-    // Offset: 0x11073F0
+    // Offset: 0x167DC5C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

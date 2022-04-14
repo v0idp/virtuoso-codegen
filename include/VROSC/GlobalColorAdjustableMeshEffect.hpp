@@ -93,20 +93,12 @@ namespace VROSC {
       // Set static field: static public VROSC.GlobalColorAdjustableMeshEffect/VROSC.Channel None
       static void _set_None(::VROSC::GlobalColorAdjustableMeshEffect::Channel value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // VROSC.GlobalColorAdjustableMeshEffect/VROSC.Channel
     #pragma pack(pop)
     static check_size<sizeof(GlobalColorAdjustableMeshEffect::Channel), 0 + sizeof(int)> __VROSC_GlobalColorAdjustableMeshEffect_ChannelSizeCheck;
     static_assert(sizeof(GlobalColorAdjustableMeshEffect::Channel) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.GlobalColorAdjustableMeshEffect/VROSC.Channel _channel
     // Size: 0x4
     // Offset: 0x20
@@ -135,18 +127,18 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector2>) == 0x8);
     public:
     // Get instance field reference: private VROSC.GlobalColorAdjustableMeshEffect/VROSC.Channel _channel
-    ::VROSC::GlobalColorAdjustableMeshEffect::Channel& dyn__channel();
+    [[deprecated]] ::VROSC::GlobalColorAdjustableMeshEffect::Channel& dyn__channel();
     // Get instance field reference: private System.Boolean _setColor
-    bool& dyn__setColor();
+    [[deprecated]] bool& dyn__setColor();
     // Get instance field reference: private UnityEngine.Color _color
-    ::UnityEngine::Color& dyn__color();
+    [[deprecated]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private UnityEngine.Vector2[] _uv
-    ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
+    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
     // private UnityEngine.Vector2 GetUVByChannel()
-    // Offset: 0x89160C
+    // Offset: 0x19A3A8C
     ::UnityEngine::Vector2 GetUVByChannel();
     // public System.Void .ctor()
-    // Offset: 0x891634
+    // Offset: 0x19A3AB4
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -160,7 +152,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<GlobalColorAdjustableMeshEffect*, creationType>()));
     }
     // protected override System.Void OnCreation()
-    // Offset: 0x8914D4
+    // Offset: 0x19A3954
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::OnCreation()
     void OnCreation();

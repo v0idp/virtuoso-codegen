@@ -28,15 +28,7 @@ namespace BeautifyEffect {
   // [TokenAttribute] Offset: FFFFFFFF
   class Demo2 : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 demoMode
     // Size: 0x4
     // Offset: 0x18
@@ -47,18 +39,18 @@ namespace BeautifyEffect {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 demoMode
-    int& dyn_demoMode();
+    [[deprecated]] int& dyn_demoMode();
     // private System.Void Start()
-    // Offset: 0x130AE10
+    // Offset: 0x8E3FE0
     void Start();
     // private System.Void Update()
-    // Offset: 0x130B328
+    // Offset: 0x8E44F8
     void Update();
     // private System.Void UpdateDemoMode()
-    // Offset: 0x130AE14
+    // Offset: 0x8E3FE4
     void UpdateDemoMode();
     // public System.Void .ctor()
-    // Offset: 0x130B398
+    // Offset: 0x8E4568
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

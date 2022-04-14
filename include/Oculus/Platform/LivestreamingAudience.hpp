@@ -41,28 +41,28 @@ namespace Oculus::Platform {
     constexpr operator int() const noexcept {
       return value;
     }
-    // [DescriptionAttribute] Offset: 0x5A2F44
+    // [DescriptionAttribute] Offset: 0x6B70F8
     // static field const value: static public Oculus.Platform.LivestreamingAudience Unknown
     static constexpr const int Unknown = 0;
     // Get static field: static public Oculus.Platform.LivestreamingAudience Unknown
     static ::Oculus::Platform::LivestreamingAudience _get_Unknown();
     // Set static field: static public Oculus.Platform.LivestreamingAudience Unknown
     static void _set_Unknown(::Oculus::Platform::LivestreamingAudience value);
-    // [DescriptionAttribute] Offset: 0x5A2F7C
+    // [DescriptionAttribute] Offset: 0x6B7130
     // static field const value: static public Oculus.Platform.LivestreamingAudience Public
     static constexpr const int Public = 1;
     // Get static field: static public Oculus.Platform.LivestreamingAudience Public
     static ::Oculus::Platform::LivestreamingAudience _get_Public();
     // Set static field: static public Oculus.Platform.LivestreamingAudience Public
     static void _set_Public(::Oculus::Platform::LivestreamingAudience value);
-    // [DescriptionAttribute] Offset: 0x5A2FB4
+    // [DescriptionAttribute] Offset: 0x6B7168
     // static field const value: static public Oculus.Platform.LivestreamingAudience Friends
     static constexpr const int Friends = 2;
     // Get static field: static public Oculus.Platform.LivestreamingAudience Friends
     static ::Oculus::Platform::LivestreamingAudience _get_Friends();
     // Set static field: static public Oculus.Platform.LivestreamingAudience Friends
     static void _set_Friends(::Oculus::Platform::LivestreamingAudience value);
-    // [DescriptionAttribute] Offset: 0x5A2FEC
+    // [DescriptionAttribute] Offset: 0x6B71A0
     // static field const value: static public Oculus.Platform.LivestreamingAudience OnlyMe
     static constexpr const int OnlyMe = 3;
     // Get static field: static public Oculus.Platform.LivestreamingAudience OnlyMe
@@ -70,7 +70,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.LivestreamingAudience OnlyMe
     static void _set_OnlyMe(::Oculus::Platform::LivestreamingAudience value);
     // Get instance field reference: public System.Int32 value__
-    int& dyn_value__();
+    [[deprecated]] int& dyn_value__();
   }; // Oculus.Platform.LivestreamingAudience
   #pragma pack(pop)
   static check_size<sizeof(LivestreamingAudience), 0 + sizeof(int)> __Oculus_Platform_LivestreamingAudienceSizeCheck;

@@ -42,11 +42,11 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 index
-    int& dyn_index();
+    [[deprecated]] int& dyn_index();
     // Get instance field reference: public System.UInt32 unicode
-    uint& dyn_unicode();
+    [[deprecated]] uint& dyn_unicode();
     // public System.Void .ctor(System.Int32 index, System.UInt32 unicode)
-    // Offset: 0x1247BC8
+    // Offset: 0x1821C64
     // ABORTED: conflicts with another method.  CharacterSubstitution(int index, uint unicode);
   }; // TMPro.TMP_Text/TMPro.CharacterSubstitution
   #pragma pack(pop)

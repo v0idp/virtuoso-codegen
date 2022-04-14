@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class InputDeviceTransformData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Vector3 <LastPosition>k__BackingField
     // Size: 0xC
     // Offset: 0x10
@@ -84,47 +76,47 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::InputSettings*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector3 <LastPosition>k__BackingField
-    ::UnityEngine::Vector3& dyn_$LastPosition$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$LastPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <Velocity>k__BackingField
-    ::UnityEngine::Vector3& dyn_$Velocity$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$Velocity$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <SmoothPosition>k__BackingField
-    ::UnityEngine::Vector3& dyn_$SmoothPosition$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$SmoothPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 _smoothingVelocity
-    ::UnityEngine::Vector3& dyn__smoothingVelocity();
+    [[deprecated]] ::UnityEngine::Vector3& dyn__smoothingVelocity();
     // Get instance field reference: private VROSC.InputDevice _inputDevice
-    ::VROSC::InputDevice*& dyn__inputDevice();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__inputDevice();
     // Get instance field reference: private VROSC.InputSettings _inputSettings
-    ::VROSC::InputSettings*& dyn__inputSettings();
+    [[deprecated]] ::VROSC::InputSettings*& dyn__inputSettings();
     // public UnityEngine.Vector3 get_LastPosition()
-    // Offset: 0x8A28B4
+    // Offset: 0x19455C0
     ::UnityEngine::Vector3 get_LastPosition();
     // private System.Void set_LastPosition(UnityEngine.Vector3 value)
-    // Offset: 0x8A28A8
+    // Offset: 0x19455B4
     void set_LastPosition(::UnityEngine::Vector3 value);
     // public UnityEngine.Vector3 get_Velocity()
-    // Offset: 0x8A28CC
+    // Offset: 0x19455D8
     ::UnityEngine::Vector3 get_Velocity();
     // private System.Void set_Velocity(UnityEngine.Vector3 value)
-    // Offset: 0x8A28C0
+    // Offset: 0x19455CC
     void set_Velocity(::UnityEngine::Vector3 value);
     // public UnityEngine.Vector3 get_SmoothPosition()
-    // Offset: 0x8A28E4
+    // Offset: 0x19455F0
     ::UnityEngine::Vector3 get_SmoothPosition();
     // private System.Void set_SmoothPosition(UnityEngine.Vector3 value)
-    // Offset: 0x8A28D8
+    // Offset: 0x19455E4
     void set_SmoothPosition(::UnityEngine::Vector3 value);
     // public System.Void .ctor(VROSC.InputDevice inputDevice, VROSC.InputSettings inputSettings)
-    // Offset: 0x8A128C
+    // Offset: 0x1943E2C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InputDeviceTransformData* New_ctor(::VROSC::InputDevice* inputDevice, ::VROSC::InputSettings* inputSettings) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputDeviceTransformData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InputDeviceTransformData*, creationType>(inputDevice, inputSettings)));
     }
     // public System.Void UpdatePosition()
-    // Offset: 0x8A16DC
+    // Offset: 0x19443E8
     void UpdatePosition();
     // public System.Void UpdateVelocity()
-    // Offset: 0x8A1528
+    // Offset: 0x1944234
     void UpdateVelocity();
   }; // VROSC.InputDeviceTransformData
   #pragma pack(pop)

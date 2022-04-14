@@ -51,15 +51,7 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::OVRNetwork::OVRNetworkTcpClient::ConnectionState
     struct ConnectionState;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Action connectionStateChangedCallback
     // Size: 0x8
     // Offset: 0x10
@@ -104,42 +96,42 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Threading::ManualResetEvent*) == 0x8);
     public:
     // Get instance field reference: public System.Action connectionStateChangedCallback
-    ::System::Action*& dyn_connectionStateChangedCallback();
+    [[deprecated]] ::System::Action*& dyn_connectionStateChangedCallback();
     // Get instance field reference: public System.Action`4<System.Int32,System.Byte[],System.Int32,System.Int32> payloadReceivedCallback
-    ::System::Action_4<int, ::ArrayW<uint8_t>, int, int>*& dyn_payloadReceivedCallback();
+    [[deprecated]] ::System::Action_4<int, ::ArrayW<uint8_t>, int, int>*& dyn_payloadReceivedCallback();
     // Get instance field reference: private System.Net.Sockets.TcpClient tcpClient
-    ::System::Net::Sockets::TcpClient*& dyn_tcpClient();
+    [[deprecated]] ::System::Net::Sockets::TcpClient*& dyn_tcpClient();
     // Get instance field reference: private System.Byte[][] receivedBuffers
-    ::ArrayW<::ArrayW<uint8_t>>& dyn_receivedBuffers();
+    [[deprecated]] ::ArrayW<::ArrayW<uint8_t>>& dyn_receivedBuffers();
     // Get instance field reference: private System.Int32 receivedBufferIndex
-    int& dyn_receivedBufferIndex();
+    [[deprecated]] int& dyn_receivedBufferIndex();
     // Get instance field reference: private System.Int32 receivedBufferDataSize
-    int& dyn_receivedBufferDataSize();
+    [[deprecated]] int& dyn_receivedBufferDataSize();
     // Get instance field reference: private System.Threading.ManualResetEvent readyReceiveDataEvent
-    ::System::Threading::ManualResetEvent*& dyn_readyReceiveDataEvent();
+    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_readyReceiveDataEvent();
     // public OVRNetwork/OVRNetworkTcpClient/ConnectionState get_connectionState()
-    // Offset: 0x73C898
+    // Offset: 0x852F9C
     ::GlobalNamespace::OVRNetwork::OVRNetworkTcpClient::ConnectionState get_connectionState();
     // public System.Boolean get_Connected()
-    // Offset: 0x73C8C4
+    // Offset: 0x852FC8
     bool get_Connected();
     // public System.Void Connect(System.Int32 listeningPort)
-    // Offset: 0x73C8D8
+    // Offset: 0x852FDC
     void Connect(int listeningPort);
     // private System.Void ConnectCallback(System.IAsyncResult ar)
-    // Offset: 0x73CA64
+    // Offset: 0x853168
     void ConnectCallback(::System::IAsyncResult* ar);
     // public System.Void Disconnect()
-    // Offset: 0x73CDAC
+    // Offset: 0x8534B0
     void Disconnect();
     // public System.Void Tick()
-    // Offset: 0x73D028
+    // Offset: 0x85372C
     void Tick();
     // private System.Void OnReadDataCallback(System.IAsyncResult ar)
-    // Offset: 0x73D258
+    // Offset: 0x85395C
     void OnReadDataCallback(::System::IAsyncResult* ar);
     // public System.Void .ctor()
-    // Offset: 0x73D7AC
+    // Offset: 0x853EB0
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

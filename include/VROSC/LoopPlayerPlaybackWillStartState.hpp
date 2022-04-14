@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopPlayerPlaybackWillStartState : public ::VROSC::LoopPlayerPlaybackFadeState {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 <SyncOffset>k__BackingField
     // Size: 0x4
     // Offset: 0x30
@@ -59,40 +51,40 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 <SyncOffset>k__BackingField
-    int& dyn_$SyncOffset$k__BackingField();
+    [[deprecated]] int& dyn_$SyncOffset$k__BackingField();
     // Get instance field reference: private System.Int32 <InverseSyncOffset>k__BackingField
-    int& dyn_$InverseSyncOffset$k__BackingField();
+    [[deprecated]] int& dyn_$InverseSyncOffset$k__BackingField();
     // public System.Int32 get_SyncOffset()
-    // Offset: 0x908030
+    // Offset: 0x19BDFC4
     int get_SyncOffset();
     // private System.Void set_SyncOffset(System.Int32 value)
-    // Offset: 0x908038
+    // Offset: 0x19BDFCC
     void set_SyncOffset(int value);
     // public System.Int32 get_InverseSyncOffset()
-    // Offset: 0x908040
+    // Offset: 0x19BDFD4
     int get_InverseSyncOffset();
     // private System.Void set_InverseSyncOffset(System.Int32 value)
-    // Offset: 0x908048
+    // Offset: 0x19BDFDC
     void set_InverseSyncOffset(int value);
     // public System.Void SetBySettings(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 evaluateFromSample)
-    // Offset: 0x907AC0
+    // Offset: 0x19BDA58
     void SetBySettings(::VROSC::LoopPlayerPlaybackSettings* settings, int evaluateFromSample);
     // protected System.Int32 GetStateBeginSample(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 sample)
-    // Offset: 0x908148
+    // Offset: 0x19BE0DC
     int GetStateBeginSample(::VROSC::LoopPlayerPlaybackSettings* settings, int sample);
     // private System.Void CalculateSyncOffset(VROSC.LoopPlayerPlaybackSettings settings)
-    // Offset: 0x9082B4
+    // Offset: 0x19BE244
     void CalculateSyncOffset(::VROSC::LoopPlayerPlaybackSettings* settings);
     // private System.Boolean ShouldUseOffset(VROSC.LoopPlayerPlaybackSettings settings)
-    // Offset: 0x9083D8
+    // Offset: 0x19BE35C
     bool ShouldUseOffset(::VROSC::LoopPlayerPlaybackSettings* settings);
     // public override System.Boolean get_Playing()
-    // Offset: 0x908020
+    // Offset: 0x19BDFB4
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Boolean LoopPlayerPlaybackState::get_Playing()
     bool get_Playing();
     // public System.Void .ctor()
-    // Offset: 0x90760C
+    // Offset: 0x19BD5A8
     // Implemented from: VROSC.LoopPlayerPlaybackFadeState
     // Base method: System.Void LoopPlayerPlaybackFadeState::.ctor()
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
@@ -103,17 +95,17 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackWillStartState*, creationType>()));
     }
     // public override System.String DebugString()
-    // Offset: 0x908050
+    // Offset: 0x19BDFE4
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.String LoopPlayerPlaybackState::DebugString()
     ::StringW DebugString();
     // public override System.Void SetExplicit(System.Int32 startSample, System.Int32 stopSample)
-    // Offset: 0x90812C
+    // Offset: 0x19BE0C0
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::SetExplicit(System.Int32 startSample, System.Int32 stopSample)
     void SetExplicit(int startSample, int stopSample);
     // public override System.Void SetStateActive(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 atSample)
-    // Offset: 0x908248
+    // Offset: 0x19BE1D8
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::SetStateActive(VROSC.LoopPlayerPlaybackSettings settings, System.Int32 atSample)
     void SetStateActive(::VROSC::LoopPlayerPlaybackSettings* settings, int atSample);

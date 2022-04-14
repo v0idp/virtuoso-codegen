@@ -37,15 +37,7 @@ namespace VROSC::AudioReactive {
     public:
     // Writing base type padding for base size: 0x24 to desired offset: 0x28
     char ___base_padding[0x4] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.AudioReactive.GlobalColorShiftEffect _globalColorEffect
     // Size: 0x8
     // Offset: 0x28
@@ -54,15 +46,15 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::GlobalColorShiftEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorShiftEffect _globalColorEffect
-    ::VROSC::AudioReactive::GlobalColorShiftEffect*& dyn__globalColorEffect();
+    [[deprecated]] ::VROSC::AudioReactive::GlobalColorShiftEffect*& dyn__globalColorEffect();
     // private System.Void Update()
-    // Offset: 0x89257C
+    // Offset: 0x19A49FC
     void Update();
     // private System.Void SetNewGlobalColors()
-    // Offset: 0x8925D4
+    // Offset: 0x19A4A54
     void SetNewGlobalColors();
     // public System.Void .ctor()
-    // Offset: 0x892718
+    // Offset: 0x19A4B98
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -76,12 +68,12 @@ namespace VROSC::AudioReactive {
       return THROW_UNLESS((::il2cpp_utils::New<GlobalColorShiftOnBeat*, creationType>()));
     }
     // protected override System.Void Awake()
-    // Offset: 0x892540
+    // Offset: 0x19A49C0
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::Awake()
     void Awake();
     // protected override System.Void OnBeat(System.Int32 beat)
-    // Offset: 0x89259C
+    // Offset: 0x19A4A1C
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::OnBeat(System.Int32 beat)
     void OnBeat(int beat);

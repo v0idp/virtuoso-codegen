@@ -47,20 +47,20 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly UnityEngine.Vector3 <Power>k__BackingField
-    ::UnityEngine::Vector3& dyn_$Power$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$Power$k__BackingField();
     // Get instance field reference: private readonly System.Single <Velocity>k__BackingField
-    float& dyn_$Velocity$k__BackingField();
+    [[deprecated]] float& dyn_$Velocity$k__BackingField();
     // public UnityEngine.Vector3 get_Power()
-    // Offset: 0x8FC180
+    // Offset: 0xAE0918
     ::UnityEngine::Vector3 get_Power();
     // public System.Single get_Velocity()
-    // Offset: 0x8FC18C
+    // Offset: 0xAE0924
     float get_Velocity();
     // static public VROSC.PlayData get_None()
-    // Offset: 0x8FC1A0
+    // Offset: 0xAE0938
     static ::VROSC::PlayData get_None();
     // public System.Void .ctor(UnityEngine.Vector3 power, System.Single velocity)
-    // Offset: 0x8FC194
+    // Offset: 0xAE092C
     // ABORTED: conflicts with another method.  PlayData(::UnityEngine::Vector3 power, float velocity);
   }; // VROSC.PlayData
   #pragma pack(pop)

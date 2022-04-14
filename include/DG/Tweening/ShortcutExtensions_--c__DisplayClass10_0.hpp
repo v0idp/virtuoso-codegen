@@ -33,15 +33,7 @@ namespace DG::Tweening {
   // [CompilerGeneratedAttribute] Offset: FFFFFFFF
   class ShortcutExtensions::$$c__DisplayClass10_0 : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.Camera target
     // Size: 0x8
     // Offset: 0x10
@@ -54,15 +46,15 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.Camera target
-    ::UnityEngine::Camera*& dyn_target();
+    [[deprecated]] ::UnityEngine::Camera*& dyn_target();
     // UnityEngine.Vector3 <DOShakeRotation>b__0()
-    // Offset: 0x126C00C
+    // Offset: 0x18643B0
     ::UnityEngine::Vector3 $DOShakeRotation$b__0();
     // System.Void <DOShakeRotation>b__1(UnityEngine.Vector3 x)
-    // Offset: 0x126C038
+    // Offset: 0x18643DC
     void $DOShakeRotation$b__1(::UnityEngine::Vector3 x);
     // public System.Void .ctor()
-    // Offset: 0x126C004
+    // Offset: 0x18643A8
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

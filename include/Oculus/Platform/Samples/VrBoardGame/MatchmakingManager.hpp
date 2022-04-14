@@ -121,20 +121,12 @@ namespace Oculus::Platform::Samples::VrBoardGame {
       // Set static field: static public Oculus.Platform.Samples.VrBoardGame.MatchmakingManager/Oculus.Platform.Samples.VrBoardGame.MatchRoomState RemoteTurn
       static void _set_RemoteTurn(::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrBoardGame.MatchmakingManager/Oculus.Platform.Samples.VrBoardGame.MatchRoomState
     #pragma pack(pop)
     static check_size<sizeof(MatchmakingManager::MatchRoomState), 0 + sizeof(int)> __Oculus_Platform_Samples_VrBoardGame_MatchmakingManager_MatchRoomStateSizeCheck;
     static_assert(sizeof(MatchmakingManager::MatchRoomState) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private Oculus.Platform.Samples.VrBoardGame.GameController m_gameController
     // Size: 0x8
     // Offset: 0x18
@@ -193,69 +185,69 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Set static field: static private System.Single POLL_FREQUENCY
     static void _set_POLL_FREQUENCY(float value);
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameController m_gameController
-    ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
     // Get instance field reference: private UnityEngine.UI.Text m_matchButtonText
-    ::UnityEngine::UI::Text*& dyn_m_matchButtonText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_matchButtonText();
     // Get instance field reference: private UnityEngine.UI.Text m_infoText
-    ::UnityEngine::UI::Text*& dyn_m_infoText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_infoText();
     // Get instance field reference: private System.UInt64 m_matchRoom
-    uint64_t& dyn_m_matchRoom();
+    [[deprecated]] uint64_t& dyn_m_matchRoom();
     // Get instance field reference: private Oculus.Platform.Models.User m_remotePlayer
-    ::Oculus::Platform::Models::User*& dyn_m_remotePlayer();
+    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_m_remotePlayer();
     // Get instance field reference: private System.Single m_lastUpdateTime
-    float& dyn_m_lastUpdateTime();
+    [[deprecated]] float& dyn_m_lastUpdateTime();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.MatchmakingManager/Oculus.Platform.Samples.VrBoardGame.MatchRoomState m_state
-    ::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState& dyn_m_state();
+    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState& dyn_m_state();
     // private System.Void Start()
-    // Offset: 0x970A00
+    // Offset: 0xB42D9C
     void Start();
     // private System.Void Update()
-    // Offset: 0x970CAC
+    // Offset: 0xB43048
     void Update();
     // public System.Void MatchButtonPressed()
-    // Offset: 0x970E0C
+    // Offset: 0xB431A8
     void MatchButtonPressed();
     // public System.Void EndMatch(System.Int32 localScore, System.Int32 remoteScore)
-    // Offset: 0x970E24
+    // Offset: 0xB431C0
     void EndMatch(int localScore, int remoteScore);
     // private System.Void OnApplicationQuit()
-    // Offset: 0x9710AC
+    // Offset: 0xB43448
     void OnApplicationQuit();
     // private System.Void TransitionToState(Oculus.Platform.Samples.VrBoardGame.MatchmakingManager/Oculus.Platform.Samples.VrBoardGame.MatchRoomState state)
-    // Offset: 0x970ADC
+    // Offset: 0xB42E78
     void TransitionToState(::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState state);
     // private System.Void MatchmakingEnqueueCallback(Oculus.Platform.Message untyped_msg)
-    // Offset: 0x9710E4
+    // Offset: 0xB43480
     void MatchmakingEnqueueCallback(::Oculus::Platform::Message* untyped_msg);
     // private System.Void MatchFoundCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x9713A4
+    // Offset: 0xB43740
     void MatchFoundCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void MatchmakingJoinRoomCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x971520
+    // Offset: 0xB438BC
     void MatchmakingJoinRoomCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void MatchmakingRoomUpdateCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x971C38
+    // Offset: 0xB43FD4
     void MatchmakingRoomUpdateCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Void ProcessRoomData(Oculus.Platform.Models.Room room)
-    // Offset: 0x9716F0
+    // Offset: 0xB43A8C
     void ProcessRoomData(::Oculus::Platform::Models::Room* room);
     // private System.Void ProcessRemoteMove(System.String moveString)
-    // Offset: 0x971FF8
+    // Offset: 0xB44394
     void ProcessRemoteMove(::StringW moveString);
     // public System.Void SendLocalMove(Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece piece, System.Int32 boardX, System.Int32 boardY)
-    // Offset: 0x972228
+    // Offset: 0xB445C4
     void SendLocalMove(::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece piece, int boardX, int boardY);
     // private System.Void UpdateDataStoreCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
-    // Offset: 0x9725A0
+    // Offset: 0xB4493C
     void UpdateDataStoreCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
     // private System.Boolean DoesLocalUserGoFirst()
-    // Offset: 0x971FB0
+    // Offset: 0xB4434C
     bool DoesLocalUserGoFirst();
     // private System.Void GenericErrorCheckCallback(Oculus.Platform.Message msg)
-    // Offset: 0x9725D4
+    // Offset: 0xB44970
     void GenericErrorCheckCallback(::Oculus::Platform::Message* msg);
     // public System.Void .ctor()
-    // Offset: 0x97268C
+    // Offset: 0xB44A28
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

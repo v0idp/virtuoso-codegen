@@ -33,15 +33,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoopStationRecordingButtonVisual : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private UnityEngine.Color _notActiveColor
     // Size: 0x10
     // Offset: 0x10
@@ -80,31 +72,31 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Color _notActiveColor
-    ::UnityEngine::Color& dyn__notActiveColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__notActiveColor();
     // Get instance field reference: private UnityEngine.Color _offColor
-    ::UnityEngine::Color& dyn__offColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private UnityEngine.Color _waitingColor
-    ::UnityEngine::Color& dyn__waitingColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__waitingColor();
     // Get instance field reference: private UnityEngine.Color _finishingColor
-    ::UnityEngine::Color& dyn__finishingColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__finishingColor();
     // Get instance field reference: private UnityEngine.Color _recordingColor
-    ::UnityEngine::Color& dyn__recordingColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__recordingColor();
     // Get instance field reference: private UnityEngine.Color _playingColor
-    ::UnityEngine::Color& dyn__playingColor();
+    [[deprecated]] ::UnityEngine::Color& dyn__playingColor();
     // public UnityEngine.Color get_NotActiveColor()
-    // Offset: 0x8A4724
+    // Offset: 0x1977820
     ::UnityEngine::Color get_NotActiveColor();
     // public System.String GetButtonTextByState(VROSC.LoopStationRecorder/VROSC.RecordingState recordingState, VROSC.LoopStationLoopHandler/VROSC.LooperState looperstate)
-    // Offset: 0x8A3F74
+    // Offset: 0x1977084
     ::StringW GetButtonTextByState(::VROSC::LoopStationRecorder::RecordingState recordingState, ::VROSC::LoopStationLoopHandler::LooperState looperstate);
     // public UnityEngine.Color GetColorByRecordingState(VROSC.LoopStationRecorder/VROSC.RecordingState recordingState)
-    // Offset: 0x8A3344
+    // Offset: 0x197645C
     ::UnityEngine::Color GetColorByRecordingState(::VROSC::LoopStationRecorder::RecordingState recordingState);
     // public System.Boolean ShouldLengthSelectionBeDisabled(VROSC.LoopStationRecorder/VROSC.RecordingState recordingState, VROSC.LoopStationLoopHandler/VROSC.LooperState looperstate)
-    // Offset: 0x8A40E0
+    // Offset: 0x19771F0
     bool ShouldLengthSelectionBeDisabled(::VROSC::LoopStationRecorder::RecordingState recordingState, ::VROSC::LoopStationLoopHandler::LooperState looperstate);
     // public System.Void .ctor()
-    // Offset: 0x8A4730
+    // Offset: 0x197782C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -30,15 +30,7 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRNamedArrayAttribute : public ::UnityEngine::PropertyAttribute {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public readonly System.String[] names
     // Size: 0x8
     // Offset: 0x10
@@ -51,9 +43,9 @@ namespace GlobalNamespace {
       return names;
     }
     // Get instance field reference: public readonly System.String[] names
-    ::ArrayW<::StringW>& dyn_names();
+    [[deprecated]] ::ArrayW<::StringW>& dyn_names();
     // public System.Void .ctor(System.String[] names)
-    // Offset: 0x12AE31C
+    // Offset: 0x18ACEC0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRNamedArrayAttribute* New_ctor(::ArrayW<::StringW> names) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRNamedArrayAttribute::.ctor");

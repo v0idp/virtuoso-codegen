@@ -53,15 +53,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::HighlightControllerComponents::Component
     struct Component;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.ControllerComponent[] _allButtons
     // Size: 0x8
     // Offset: 0x18
@@ -134,83 +126,83 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ControllerComponent[] _allButtons
-    ::ArrayW<::VROSC::ControllerComponent*>& dyn__allButtons();
+    [[deprecated]] ::ArrayW<::VROSC::ControllerComponent*>& dyn__allButtons();
     // Get instance field reference: private VROSC.ControllerComponent _triggerButton
-    ::VROSC::ControllerComponent*& dyn__triggerButton();
+    [[deprecated]] ::VROSC::ControllerComponent*& dyn__triggerButton();
     // Get instance field reference: private VROSC.ControllerComponent _gripButton
-    ::VROSC::ControllerComponent*& dyn__gripButton();
+    [[deprecated]] ::VROSC::ControllerComponent*& dyn__gripButton();
     // Get instance field reference: private VROSC.ControllerComponent _thumbstick
-    ::VROSC::ControllerComponent*& dyn__thumbstick();
+    [[deprecated]] ::VROSC::ControllerComponent*& dyn__thumbstick();
     // Get instance field reference: private VROSC.ControllerComponent _topButton
-    ::VROSC::ControllerComponent*& dyn__topButton();
+    [[deprecated]] ::VROSC::ControllerComponent*& dyn__topButton();
     // Get instance field reference: private VROSC.ControllerComponent _bottomButton
-    ::VROSC::ControllerComponent*& dyn__bottomButton();
+    [[deprecated]] ::VROSC::ControllerComponent*& dyn__bottomButton();
     // Get instance field reference: private VROSC.ControllerComponent _menuButton
-    ::VROSC::ControllerComponent*& dyn__menuButton();
+    [[deprecated]] ::VROSC::ControllerComponent*& dyn__menuButton();
     // Get instance field reference: private VROSC.ControllerShaderEffects _shaderEffects
-    ::VROSC::ControllerShaderEffects*& dyn__shaderEffects();
+    [[deprecated]] ::VROSC::ControllerShaderEffects*& dyn__shaderEffects();
     // Get instance field reference: private VROSC.HandType _hand
-    ::VROSC::HandType& dyn__hand();
+    [[deprecated]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private System.Boolean _dirty
-    bool& dyn__dirty();
+    [[deprecated]] bool& dyn__dirty();
     // Get instance field reference: private System.Object <GetControllerComponent>k__BackingField
-    ::Il2CppObject*& dyn_$GetControllerComponent$k__BackingField();
+    [[deprecated]] ::Il2CppObject*& dyn_$GetControllerComponent$k__BackingField();
     // public VROSC.ControllerComponent[] get_AllButtons()
-    // Offset: 0x89E304
+    // Offset: 0x1940AC0
     ::ArrayW<::VROSC::ControllerComponent*> get_AllButtons();
     // public System.Object get_GetControllerComponent()
-    // Offset: 0x89E30C
+    // Offset: 0x1940AC8
     ::Il2CppObject* get_GetControllerComponent();
     // System.Void set_GetControllerComponent(System.Object value)
-    // Offset: 0x89E314
+    // Offset: 0x1940AD0
     void set_GetControllerComponent(::Il2CppObject* value);
     // private System.Void Awake()
-    // Offset: 0x89E31C
+    // Offset: 0x1940AD8
     void Awake();
     // private System.Void Start()
-    // Offset: 0x89E4A0
+    // Offset: 0x1940C5C
     void Start();
     // private System.Void OnDestroy()
-    // Offset: 0x89E668
+    // Offset: 0x1940E24
     void OnDestroy();
     // private System.Void ButtonStoppedPressing(VROSC.InputDevice device, VROSC.TriggerButton trigger)
-    // Offset: 0x89E7BC
+    // Offset: 0x1940F78
     void ButtonStoppedPressing(::VROSC::InputDevice* device, ::VROSC::TriggerButton trigger);
     // private System.Void ButtonPressing(VROSC.InputDevice device, VROSC.TriggerButton trigger)
-    // Offset: 0x89E8EC
+    // Offset: 0x19410A8
     void ButtonPressing(::VROSC::InputDevice* device, ::VROSC::TriggerButton trigger);
     // public System.Void SetButtonColor(VROSC.TriggerButton button, UnityEngine.Color color)
-    // Offset: 0x89E9B4
+    // Offset: 0x1941170
     void SetButtonColor(::VROSC::TriggerButton button, ::UnityEngine::Color color);
     // public System.Void SetActive(VROSC.TooltipData tooltip, System.Boolean active, System.Object requester)
-    // Offset: 0x89EA9C
+    // Offset: 0x1941258
     void SetActive(::VROSC::TooltipData* tooltip, bool active, ::Il2CppObject* requester);
     // public VROSC.ControllerComponent GetComponentByEnum(VROSC.HighlightControllerComponents/VROSC.Component component)
-    // Offset: 0x89EB68
+    // Offset: 0x1941324
     ::VROSC::ControllerComponent* GetComponentByEnum(::VROSC::HighlightControllerComponents::Component component);
     // public VROSC.ControllerComponent GetComponentByTriggerType(VROSC.TriggerButton trigger)
-    // Offset: 0x89E884
+    // Offset: 0x1941040
     ::VROSC::ControllerComponent* GetComponentByTriggerType(::VROSC::TriggerButton trigger);
     // public System.Void DeactivateAll()
-    // Offset: 0x89E5FC
+    // Offset: 0x1940DB8
     void DeactivateAll();
     // private System.Void Update()
-    // Offset: 0x89EBD0
+    // Offset: 0x194138C
     void Update();
     // public System.Void UpdateShaderEffects()
-    // Offset: 0x89EBFC
+    // Offset: 0x19413B8
     void UpdateShaderEffects();
     // public System.Void Transfer()
-    // Offset: 0x89EDC0
+    // Offset: 0x194157C
     void Transfer();
     // public System.Void TransferIndex()
-    // Offset: 0x89EFF4
+    // Offset: 0x19417B0
     void TransferIndex();
     // private System.Void TransferShared()
-    // Offset: 0x89EE14
+    // Offset: 0x19415D0
     void TransferShared();
     // public System.Void .ctor()
-    // Offset: 0x89F048
+    // Offset: 0x1941804
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

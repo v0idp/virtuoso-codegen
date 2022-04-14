@@ -43,15 +43,7 @@ namespace Facebook::WitAi::Data::Entities {
   // [TokenAttribute] Offset: FFFFFFFF
   class WitDynamicEntities : public ::Il2CppObject/*, public ::Facebook::WitAi::Interfaces::IDynamicEntitiesProvider*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public Facebook.WitAi.Lib.WitResponseClass entities
     // Size: 0x8
     // Offset: 0x10
@@ -68,18 +60,18 @@ namespace Facebook::WitAi::Data::Entities {
       return entities;
     }
     // Get instance field reference: public Facebook.WitAi.Lib.WitResponseClass entities
-    ::Facebook::WitAi::Lib::WitResponseClass*& dyn_entities();
+    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseClass*& dyn_entities();
     // public System.Void Add(Facebook.WitAi.Data.Entities.WitSimpleDynamicEntity entity)
-    // Offset: 0x10FDE30
+    // Offset: 0x1674698
     void Add(::Facebook::WitAi::Data::Entities::WitSimpleDynamicEntity* entity);
     // public System.Void Add(Facebook.WitAi.Data.Entities.WitDynamicEntity entity)
-    // Offset: 0x10FE180
+    // Offset: 0x16749E8
     void Add(::Facebook::WitAi::Data::Entities::WitDynamicEntity* entity);
     // public System.String ToJSON()
-    // Offset: 0x10FE66C
+    // Offset: 0x1674ED4
     ::StringW ToJSON();
     // public System.Void .ctor()
-    // Offset: 0x10FDD54
+    // Offset: 0x16745BC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

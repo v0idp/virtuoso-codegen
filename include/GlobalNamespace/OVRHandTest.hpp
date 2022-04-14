@@ -56,15 +56,7 @@ namespace GlobalNamespace {
     class BoolMonitor;
     // Nested type: ::GlobalNamespace::OVRHandTest::$$c
     class $$c;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public UnityEngine.UI.Text uiText
     // Size: 0x8
     // Offset: 0x18
@@ -155,39 +147,39 @@ namespace GlobalNamespace {
     // Set static field: static private OVRHandTest/BoolMonitor controllers
     static void _set_controllers(::GlobalNamespace::OVRHandTest::BoolMonitor* value);
     // Get instance field reference: public UnityEngine.UI.Text uiText
-    ::UnityEngine::UI::Text*& dyn_uiText();
+    [[deprecated]] ::UnityEngine::UI::Text*& dyn_uiText();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRHandTest/BoolMonitor> monitors
-    ::System::Collections::Generic::List_1<::GlobalNamespace::OVRHandTest::BoolMonitor*>*& dyn_monitors();
+    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRHandTest::BoolMonitor*>*& dyn_monitors();
     // Get instance field reference: private System.Text.StringBuilder data
-    ::System::Text::StringBuilder*& dyn_data();
+    [[deprecated]] ::System::Text::StringBuilder*& dyn_data();
     // Get instance field reference: private OVRPlugin/HandState hs_LH
-    ::GlobalNamespace::OVRPlugin::HandState& dyn_hs_LH();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::HandState& dyn_hs_LH();
     // Get instance field reference: private OVRPlugin/HandState hs_RH
-    ::GlobalNamespace::OVRPlugin::HandState& dyn_hs_RH();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::HandState& dyn_hs_RH();
     // Get instance field reference: private OVRPlugin/Skeleton skel_LH
-    ::GlobalNamespace::OVRPlugin::Skeleton& dyn_skel_LH();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Skeleton& dyn_skel_LH();
     // Get instance field reference: private OVRPlugin/Skeleton skel_RH
-    ::GlobalNamespace::OVRPlugin::Skeleton& dyn_skel_RH();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Skeleton& dyn_skel_RH();
     // Get instance field reference: private OVRPlugin/Mesh mesh_LH
-    ::GlobalNamespace::OVRPlugin::Mesh*& dyn_mesh_LH();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Mesh*& dyn_mesh_LH();
     // Get instance field reference: private OVRPlugin/Mesh mesh_RH
-    ::GlobalNamespace::OVRPlugin::Mesh*& dyn_mesh_RH();
+    [[deprecated]] ::GlobalNamespace::OVRPlugin::Mesh*& dyn_mesh_RH();
     // Get instance field reference: private System.Boolean result_skel_LH
-    bool& dyn_result_skel_LH();
+    [[deprecated]] bool& dyn_result_skel_LH();
     // Get instance field reference: private System.Boolean result_skel_RH
-    bool& dyn_result_skel_RH();
+    [[deprecated]] bool& dyn_result_skel_RH();
     // Get instance field reference: private System.Boolean result_mesh_LH
-    bool& dyn_result_mesh_LH();
+    [[deprecated]] bool& dyn_result_mesh_LH();
     // Get instance field reference: private System.Boolean result_mesh_RH
-    bool& dyn_result_mesh_RH();
+    [[deprecated]] bool& dyn_result_mesh_RH();
     // private System.Void Start()
-    // Offset: 0xD32BD0
+    // Offset: 0xFC0524
     void Start();
     // private System.Void Update()
-    // Offset: 0xD32E8C
+    // Offset: 0xFC07E0
     void Update();
     // public System.Void .ctor()
-    // Offset: 0xD33B20
+    // Offset: 0xFC1474
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -200,7 +192,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVRHandTest*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0xD33BA4
+    // Offset: 0xFC14F8
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

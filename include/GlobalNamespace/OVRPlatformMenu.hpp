@@ -89,20 +89,12 @@ namespace GlobalNamespace {
       // Set static field: static public OVRPlatformMenu/eHandler RetreatOneLevel
       static void _set_RetreatOneLevel(::GlobalNamespace::OVRPlatformMenu::eHandler value);
       // Get instance field reference: public System.Int32 value__
-      int& dyn_value__();
+      [[deprecated]] int& dyn_value__();
     }; // OVRPlatformMenu/eHandler
     #pragma pack(pop)
     static check_size<sizeof(OVRPlatformMenu::eHandler), 0 + sizeof(int)> __GlobalNamespace_OVRPlatformMenu_eHandlerSizeCheck;
     static_assert(sizeof(OVRPlatformMenu::eHandler) == 0x4);
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private OVRInput/RawButton inputCode
     // Size: 0x4
     // Offset: 0x18
@@ -129,28 +121,28 @@ namespace GlobalNamespace {
     // Set static field: static private System.Collections.Generic.Stack`1<System.String> sceneStack
     static void _set_sceneStack(::System::Collections::Generic::Stack_1<::StringW>* value);
     // Get instance field reference: private OVRInput/RawButton inputCode
-    ::GlobalNamespace::OVRInput::RawButton& dyn_inputCode();
+    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_inputCode();
     // Get instance field reference: public OVRPlatformMenu/eHandler shortPressHandler
-    ::GlobalNamespace::OVRPlatformMenu::eHandler& dyn_shortPressHandler();
+    [[deprecated]] ::GlobalNamespace::OVRPlatformMenu::eHandler& dyn_shortPressHandler();
     // Get instance field reference: public System.Func`1<System.Boolean> OnShortPress
-    ::System::Func_1<bool>*& dyn_OnShortPress();
+    [[deprecated]] ::System::Func_1<bool>*& dyn_OnShortPress();
     // private OVRPlatformMenu/eBackButtonAction HandleBackButtonState()
-    // Offset: 0xB9AFCC
+    // Offset: 0xE667FC
     ::GlobalNamespace::OVRPlatformMenu::eBackButtonAction HandleBackButtonState();
     // private System.Void Awake()
-    // Offset: 0xB9B040
+    // Offset: 0xE66870
     void Awake();
     // private System.Void ShowConfirmQuitMenu()
-    // Offset: 0xB9B1E4
+    // Offset: 0xE66A14
     void ShowConfirmQuitMenu();
     // static private System.Boolean RetreatOneLevel()
-    // Offset: 0xB9B2C4
+    // Offset: 0xE66AF4
     static bool RetreatOneLevel();
     // private System.Void Update()
-    // Offset: 0xB9B3D8
+    // Offset: 0xE66C08
     void Update();
     // public System.Void .ctor()
-    // Offset: 0xB9B44C
+    // Offset: 0xE66C7C
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
@@ -163,7 +155,7 @@ namespace GlobalNamespace {
       return THROW_UNLESS((::il2cpp_utils::New<OVRPlatformMenu*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0xB9B45C
+    // Offset: 0xE66C8C
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();

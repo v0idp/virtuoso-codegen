@@ -43,15 +43,7 @@ namespace System::Security::Util {
   // [TokenAttribute] Offset: FFFFFFFF
   class Parser : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Security.SecurityDocument _doc
     // Size: 0x8
     // Offset: 0x10
@@ -66,34 +58,34 @@ namespace System::Security::Util {
     static_assert(sizeof(::System::Security::Util::Tokenizer*) == 0x8);
     public:
     // Get instance field reference: private System.Security.SecurityDocument _doc
-    ::System::Security::SecurityDocument*& dyn__doc();
+    [[deprecated]] ::System::Security::SecurityDocument*& dyn__doc();
     // Get instance field reference: private System.Security.Util.Tokenizer _t
-    ::System::Security::Util::Tokenizer*& dyn__t();
+    [[deprecated]] ::System::Security::Util::Tokenizer*& dyn__t();
     // private System.Void .ctor(System.Security.Util.Tokenizer t)
-    // Offset: 0x112C798
+    // Offset: 0x14CA3D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Parser* New_ctor(::System::Security::Util::Tokenizer* t) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Util::Parser::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Parser*, creationType>(t)));
     }
     // System.Void .ctor(System.String input)
-    // Offset: 0x112C84C
+    // Offset: 0x14CA488
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Parser* New_ctor(::StringW input) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Util::Parser::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Parser*, creationType>(input)));
     }
     // System.Security.SecurityElement GetTopElement()
-    // Offset: 0x112BC60
+    // Offset: 0x14C989C
     ::System::Security::SecurityElement* GetTopElement();
     // private System.Void GetRequiredSizes(System.Security.Util.TokenizerStream stream, ref System.Int32 index)
-    // Offset: 0x112BC7C
+    // Offset: 0x14C98B8
     void GetRequiredSizes(::System::Security::Util::TokenizerStream* stream, ByRef<int> index);
     // private System.Int32 DetermineFormat(System.Security.Util.TokenizerStream stream)
-    // Offset: 0x112C288
+    // Offset: 0x14C9EC4
     int DetermineFormat(::System::Security::Util::TokenizerStream* stream);
     // private System.Void ParseContents()
-    // Offset: 0x112C474
+    // Offset: 0x14CA0B0
     void ParseContents();
   }; // System.Security.Util.Parser
   #pragma pack(pop)

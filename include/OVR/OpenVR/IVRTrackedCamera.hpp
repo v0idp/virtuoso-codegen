@@ -133,29 +133,29 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._GetCameraErrorNameFromEnum GetCameraErrorNameFromEnum
-    ::OVR::OpenVR::IVRTrackedCamera::_GetCameraErrorNameFromEnum*& dyn_GetCameraErrorNameFromEnum();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_GetCameraErrorNameFromEnum*& dyn_GetCameraErrorNameFromEnum();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._HasCamera HasCamera
-    ::OVR::OpenVR::IVRTrackedCamera::_HasCamera*& dyn_HasCamera();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_HasCamera*& dyn_HasCamera();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._GetCameraFrameSize GetCameraFrameSize
-    ::OVR::OpenVR::IVRTrackedCamera::_GetCameraFrameSize*& dyn_GetCameraFrameSize();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_GetCameraFrameSize*& dyn_GetCameraFrameSize();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._GetCameraIntrinsics GetCameraIntrinsics
-    ::OVR::OpenVR::IVRTrackedCamera::_GetCameraIntrinsics*& dyn_GetCameraIntrinsics();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_GetCameraIntrinsics*& dyn_GetCameraIntrinsics();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._GetCameraProjection GetCameraProjection
-    ::OVR::OpenVR::IVRTrackedCamera::_GetCameraProjection*& dyn_GetCameraProjection();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_GetCameraProjection*& dyn_GetCameraProjection();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._AcquireVideoStreamingService AcquireVideoStreamingService
-    ::OVR::OpenVR::IVRTrackedCamera::_AcquireVideoStreamingService*& dyn_AcquireVideoStreamingService();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_AcquireVideoStreamingService*& dyn_AcquireVideoStreamingService();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._ReleaseVideoStreamingService ReleaseVideoStreamingService
-    ::OVR::OpenVR::IVRTrackedCamera::_ReleaseVideoStreamingService*& dyn_ReleaseVideoStreamingService();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_ReleaseVideoStreamingService*& dyn_ReleaseVideoStreamingService();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._GetVideoStreamFrameBuffer GetVideoStreamFrameBuffer
-    ::OVR::OpenVR::IVRTrackedCamera::_GetVideoStreamFrameBuffer*& dyn_GetVideoStreamFrameBuffer();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_GetVideoStreamFrameBuffer*& dyn_GetVideoStreamFrameBuffer();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._GetVideoStreamTextureSize GetVideoStreamTextureSize
-    ::OVR::OpenVR::IVRTrackedCamera::_GetVideoStreamTextureSize*& dyn_GetVideoStreamTextureSize();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_GetVideoStreamTextureSize*& dyn_GetVideoStreamTextureSize();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._GetVideoStreamTextureD3D11 GetVideoStreamTextureD3D11
-    ::OVR::OpenVR::IVRTrackedCamera::_GetVideoStreamTextureD3D11*& dyn_GetVideoStreamTextureD3D11();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_GetVideoStreamTextureD3D11*& dyn_GetVideoStreamTextureD3D11();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._GetVideoStreamTextureGL GetVideoStreamTextureGL
-    ::OVR::OpenVR::IVRTrackedCamera::_GetVideoStreamTextureGL*& dyn_GetVideoStreamTextureGL();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_GetVideoStreamTextureGL*& dyn_GetVideoStreamTextureGL();
     // Get instance field reference: OVR.OpenVR.IVRTrackedCamera/OVR.OpenVR._ReleaseVideoStreamTextureGL ReleaseVideoStreamTextureGL
-    ::OVR::OpenVR::IVRTrackedCamera::_ReleaseVideoStreamTextureGL*& dyn_ReleaseVideoStreamTextureGL();
+    [[deprecated]] ::OVR::OpenVR::IVRTrackedCamera::_ReleaseVideoStreamTextureGL*& dyn_ReleaseVideoStreamTextureGL();
   }; // OVR.OpenVR.IVRTrackedCamera
   #pragma pack(pop)
   static check_size<sizeof(IVRTrackedCamera), 88 + sizeof(::OVR::OpenVR::IVRTrackedCamera::_ReleaseVideoStreamTextureGL*)> __OVR_OpenVR_IVRTrackedCameraSizeCheck;

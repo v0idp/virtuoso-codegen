@@ -37,15 +37,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class LoginUIPopupAcceptTermsPanel : public ::VROSC::LoginUIPopupPanelBase {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.UIButton _acceptButton
     // Size: 0x8
     // Offset: 0x30
@@ -54,24 +46,24 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIButton _acceptButton
-    ::VROSC::UIButton*& dyn__acceptButton();
+    [[deprecated]] ::VROSC::UIButton*& dyn__acceptButton();
     // protected System.Void Awake()
-    // Offset: 0x138FA14
+    // Offset: 0x19AFE68
     void Awake();
     // protected System.Void OnDestroy()
-    // Offset: 0x138FB28
+    // Offset: 0x19AFF7C
     void OnDestroy();
     // private System.Void AcceptButtonPressed()
-    // Offset: 0x138FC40
+    // Offset: 0x19B0094
     void AcceptButtonPressed();
     // private System.Void <AcceptButtonPressed>b__4_0()
-    // Offset: 0x138FDE4
+    // Offset: 0x19B0238
     void $AcceptButtonPressed$b__4_0();
     // private System.Void <AcceptButtonPressed>b__4_1(VROSC.Error error)
-    // Offset: 0x138FDFC
+    // Offset: 0x19B0250
     void $AcceptButtonPressed$b__4_1(::VROSC::Error error);
     // public System.Void .ctor()
-    // Offset: 0x138FDD4
+    // Offset: 0x19B0228
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -85,7 +77,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopupAcceptTermsPanel*, creationType>()));
     }
     // protected override System.Void EnableUI(System.Boolean enable)
-    // Offset: 0x138FBE8
+    // Offset: 0x19B003C
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::EnableUI(System.Boolean enable)
     void EnableUI(bool enable);

@@ -49,15 +49,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class KeyHitter : public ::UnityEngine::MonoBehaviour {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SimpleHaptic _haptic
     // Size: 0x8
     // Offset: 0x18
@@ -94,38 +86,38 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SimpleHaptic _haptic
-    ::VROSC::SimpleHaptic*& dyn__haptic();
+    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__haptic();
     // Get instance field reference: private System.Single _speed
-    float& dyn__speed();
+    [[deprecated]] float& dyn__speed();
     // Get instance field reference: private VROSC.InputDevice _device
-    ::VROSC::InputDevice*& dyn__device();
+    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private UnityEngine.Transform _followTransform
-    ::UnityEngine::Transform*& dyn__followTransform();
+    [[deprecated]] ::UnityEngine::Transform*& dyn__followTransform();
     // Get instance field reference: private UnityEngine.Rigidbody _rigidbody
-    ::UnityEngine::Rigidbody*& dyn__rigidbody();
+    [[deprecated]] ::UnityEngine::Rigidbody*& dyn__rigidbody();
     // private System.Void Awake()
-    // Offset: 0x1388708
+    // Offset: 0x194C01C
     void Awake();
     // public System.Void Setup(VROSC.InputDevice device, UnityEngine.Transform followTransform)
-    // Offset: 0x138875C
+    // Offset: 0x1943FA8
     void Setup(::VROSC::InputDevice* device, ::UnityEngine::Transform* followTransform);
     // public System.Void FollowObject(UnityEngine.Transform followTransform)
-    // Offset: 0x13887A4
+    // Offset: 0x194C070
     void FollowObject(::UnityEngine::Transform* followTransform);
     // private System.Void OnEnable()
-    // Offset: 0x13887F0
+    // Offset: 0x194C0BC
     void OnEnable();
     // private System.Void OnDisable()
-    // Offset: 0x13888F4
+    // Offset: 0x194C1C0
     void OnDisable();
     // private System.Void Update()
-    // Offset: 0x13889F8
+    // Offset: 0x194C2C4
     void Update();
     // private System.Void KeyPressedHapticFeedback(Key key)
-    // Offset: 0x1388B44
+    // Offset: 0x194C410
     void KeyPressedHapticFeedback(::GlobalNamespace::Key* key);
     // public System.Void .ctor()
-    // Offset: 0x1388B78
+    // Offset: 0x194C444
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

@@ -23,15 +23,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AudioMixManager::VolumeParameter::FadeSource : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // public System.Object Source
     // Size: 0x8
     // Offset: 0x10
@@ -46,11 +38,11 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Object Source
-    ::Il2CppObject*& dyn_Source();
+    [[deprecated]] ::Il2CppObject*& dyn_Source();
     // Get instance field reference: public System.Single Volume
-    float& dyn_Volume();
+    [[deprecated]] float& dyn_Volume();
     // public System.Void .ctor(System.Object source, System.Single volume)
-    // Offset: 0x1418D50
+    // Offset: 0xE8AFD0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioMixManager::VolumeParameter::FadeSource* New_ctor(::Il2CppObject* source, float volume) {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioMixManager::VolumeParameter::FadeSource::.ctor");

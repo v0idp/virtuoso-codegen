@@ -37,10 +37,10 @@ namespace Firebase::Platform::Default {
     // Set static field: static public readonly Firebase.Platform.IClockService Instance
     static void _set_Instance(::Firebase::Platform::IClockService* value);
     // static private System.Void .cctor()
-    // Offset: 0x12CB81C
+    // Offset: 0x18CABAC
     static void _cctor();
     // protected System.Void .ctor()
-    // Offset: 0x12CB814
+    // Offset: 0x18CABA4
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

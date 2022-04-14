@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class Tutorial : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _id
     // Size: 0x8
     // Offset: 0x10
@@ -58,20 +50,20 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::TutorialStep*>) == 0x8);
     public:
     // Get instance field reference: private System.String _id
-    ::StringW& dyn__id();
+    [[deprecated]] ::StringW& dyn__id();
     // Get instance field reference: private VROSC.TutorialStep[] _steps
-    ::ArrayW<::VROSC::TutorialStep*>& dyn__steps();
+    [[deprecated]] ::ArrayW<::VROSC::TutorialStep*>& dyn__steps();
     // public System.String get_Id()
-    // Offset: 0x1406AB8
+    // Offset: 0xA2E73C
     ::StringW get_Id();
     // public VROSC.TutorialStep[] get_Steps()
-    // Offset: 0x1406AC0
+    // Offset: 0xA2E744
     ::ArrayW<::VROSC::TutorialStep*> get_Steps();
     // public System.Int32 GetStepIndex(VROSC.TutorialStep step)
-    // Offset: 0x1406AC8
+    // Offset: 0xA2E74C
     int GetStepIndex(::VROSC::TutorialStep* step);
     // public System.Void .ctor()
-    // Offset: 0x1406B28
+    // Offset: 0xA2E7AC
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

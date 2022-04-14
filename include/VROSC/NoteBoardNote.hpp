@@ -48,15 +48,7 @@ namespace VROSC {
     public:
     // Nested type: ::VROSC::NoteBoardNote::Coloring
     struct Coloring;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.NoteBoardNoteVisualController _materialController
     // Size: 0x8
     // Offset: 0x18
@@ -97,70 +89,70 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteVisualController _materialController
-    ::VROSC::NoteBoardNoteVisualController*& dyn__materialController();
+    [[deprecated]] ::VROSC::NoteBoardNoteVisualController*& dyn__materialController();
     // Get instance field reference: private VROSC.NoteBoardNoteAnimator _animator
-    ::VROSC::NoteBoardNoteAnimator*& dyn__animator();
+    [[deprecated]] ::VROSC::NoteBoardNoteAnimator*& dyn__animator();
     // Get instance field reference: private VROSC.NoteBoardNoteText _textDisplay
-    ::VROSC::NoteBoardNoteText*& dyn__textDisplay();
+    [[deprecated]] ::VROSC::NoteBoardNoteText*& dyn__textDisplay();
     // Get instance field reference: private VROSC.NoteFieldNoteData <Data>k__BackingField
-    ::VROSC::NoteFieldNoteData*& dyn_$Data$k__BackingField();
+    [[deprecated]] ::VROSC::NoteFieldNoteData*& dyn_$Data$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <LocalPositionForAnimation>k__BackingField
-    ::UnityEngine::Vector3& dyn_$LocalPositionForAnimation$k__BackingField();
+    [[deprecated]] ::UnityEngine::Vector3& dyn_$LocalPositionForAnimation$k__BackingField();
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
     // public VROSC.NoteBoardNoteAnimator get_Animator()
-    // Offset: 0xA1190C
+    // Offset: 0xAD5FCC
     ::VROSC::NoteBoardNoteAnimator* get_Animator();
     // public VROSC.NoteBoardNoteVisualController get_Visual()
-    // Offset: 0xA11914
+    // Offset: 0xAD5FD4
     ::VROSC::NoteBoardNoteVisualController* get_Visual();
     // public VROSC.NoteBoardNoteText get_TextDisplay()
-    // Offset: 0xA1191C
+    // Offset: 0xAD5FDC
     ::VROSC::NoteBoardNoteText* get_TextDisplay();
     // public VROSC.NoteFieldNoteData get_Data()
-    // Offset: 0xA1192C
+    // Offset: 0xAD5FEC
     ::VROSC::NoteFieldNoteData* get_Data();
     // private System.Void set_Data(VROSC.NoteFieldNoteData value)
-    // Offset: 0xA11924
+    // Offset: 0xAD5FE4
     void set_Data(::VROSC::NoteFieldNoteData* value);
     // public UnityEngine.Vector3 get_LocalPositionForAnimation()
-    // Offset: 0xA11940
+    // Offset: 0xAD6000
     ::UnityEngine::Vector3 get_LocalPositionForAnimation();
     // private System.Void set_LocalPositionForAnimation(UnityEngine.Vector3 value)
-    // Offset: 0xA11934
+    // Offset: 0xAD5FF4
     void set_LocalPositionForAnimation(::UnityEngine::Vector3 value);
     // public System.Boolean get_IsPlaying()
-    // Offset: 0xA11958
+    // Offset: 0xAD6018
     bool get_IsPlaying();
     // private System.Void set_IsPlaying(System.Boolean value)
-    // Offset: 0xA1194C
+    // Offset: 0xAD600C
     void set_IsPlaying(bool value);
     // public System.Void Init(VROSC.NoteFieldNoteData data, System.Int32[] numberOfFields, UnityEngine.Vector3 noteScale)
-    // Offset: 0xA0E824
+    // Offset: 0xAD3684
     void Init(::VROSC::NoteFieldNoteData* data, ::ArrayW<int> numberOfFields, ::UnityEngine::Vector3 noteScale);
     // public System.Void Init(VROSC.NoteFieldParameters parameters, VROSC.NoteFieldNoteData data, UnityEngine.Vector3 noteScale)
-    // Offset: 0xA11A90
+    // Offset: 0xAD6154
     void Init(::VROSC::NoteFieldParameters* parameters, ::VROSC::NoteFieldNoteData* data, ::UnityEngine::Vector3 noteScale);
     // private System.Void InitShared(VROSC.NoteFieldNoteData data, UnityEngine.Vector3 noteScale, System.Int32[] numberOfFields)
-    // Offset: 0xA11960
+    // Offset: 0xAD6020
     void InitShared(::VROSC::NoteFieldNoteData* data, ::UnityEngine::Vector3 noteScale, ::ArrayW<int> numberOfFields);
     // public System.Void SetData(VROSC.NoteFieldNoteData data)
-    // Offset: 0xA0E888
+    // Offset: 0xAD36E8
     void SetData(::VROSC::NoteFieldNoteData* data);
     // public System.Void UpdateVisuals()
-    // Offset: 0xA11BF8
+    // Offset: 0xAD6254
     void UpdateVisuals();
     // public System.Void SetHovering(System.Boolean isHovering, System.Boolean isPlaying)
-    // Offset: 0xA11EEC
+    // Offset: 0xAD6548
     void SetHovering(bool isHovering, bool isPlaying);
     // public System.Void SetLocalPosition(UnityEngine.Vector3 position)
-    // Offset: 0xA0E7D0
+    // Offset: 0xAD3630
     void SetLocalPosition(::UnityEngine::Vector3 position);
     // public System.Void SetPlaying(System.Boolean isPlaying, VROSC.PlayData playData)
-    // Offset: 0xA11F30
+    // Offset: 0xAD658C
     void SetPlaying(bool isPlaying, ::VROSC::PlayData playData);
     // public System.Void .ctor()
-    // Offset: 0xA12050
+    // Offset: 0xAD66AC
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

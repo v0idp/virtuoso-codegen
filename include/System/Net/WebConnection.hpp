@@ -90,15 +90,7 @@ namespace System::Net {
     struct $CreateStream$d__18;
     // Nested type: ::System::Net::WebConnection::$InitConnection$d__19
     struct $InitConnection$d__19;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Net.NetworkCredential ntlm_credentials
     // Size: 0x8
     // Offset: 0x10
@@ -183,113 +175,113 @@ namespace System::Net {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Net.NetworkCredential ntlm_credentials
-    ::System::Net::NetworkCredential*& dyn_ntlm_credentials();
+    [[deprecated]] ::System::Net::NetworkCredential*& dyn_ntlm_credentials();
     // Get instance field reference: private System.Boolean ntlm_authenticated
-    bool& dyn_ntlm_authenticated();
+    [[deprecated]] bool& dyn_ntlm_authenticated();
     // Get instance field reference: private System.Boolean unsafe_sharing
-    bool& dyn_unsafe_sharing();
+    [[deprecated]] bool& dyn_unsafe_sharing();
     // Get instance field reference: private System.IO.Stream networkStream
-    ::System::IO::Stream*& dyn_networkStream();
+    [[deprecated]] ::System::IO::Stream*& dyn_networkStream();
     // Get instance field reference: private System.Net.Sockets.Socket socket
-    ::System::Net::Sockets::Socket*& dyn_socket();
+    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_socket();
     // Get instance field reference: private Mono.Net.Security.MonoTlsStream monoTlsStream
-    ::Mono::Net::Security::MonoTlsStream*& dyn_monoTlsStream();
+    [[deprecated]] ::Mono::Net::Security::MonoTlsStream*& dyn_monoTlsStream();
     // Get instance field reference: private System.Net.WebConnectionTunnel tunnel
-    ::System::Net::WebConnectionTunnel*& dyn_tunnel();
+    [[deprecated]] ::System::Net::WebConnectionTunnel*& dyn_tunnel();
     // Get instance field reference: private System.Int32 disposed
-    int& dyn_disposed();
+    [[deprecated]] int& dyn_disposed();
     // Get instance field reference: private readonly System.Net.ServicePoint <ServicePoint>k__BackingField
-    ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
+    [[deprecated]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
     // Get instance field reference: readonly System.Int32 ID
-    int& dyn_ID();
+    [[deprecated]] int& dyn_ID();
     // Get instance field reference: private System.DateTime idleSince
-    ::System::DateTime& dyn_idleSince();
+    [[deprecated]] ::System::DateTime& dyn_idleSince();
     // Get instance field reference: private System.Net.WebOperation currentOperation
-    ::System::Net::WebOperation*& dyn_currentOperation();
+    [[deprecated]] ::System::Net::WebOperation*& dyn_currentOperation();
     // public System.Net.ServicePoint get_ServicePoint()
-    // Offset: 0xAB5CF0
+    // Offset: 0xC411D8
     ::System::Net::ServicePoint* get_ServicePoint();
     // public System.Boolean get_Closed()
-    // Offset: 0xAB6A00
+    // Offset: 0xC41EE8
     bool get_Closed();
     // public System.DateTime get_IdleSince()
-    // Offset: 0xAB7104
+    // Offset: 0xC425EC
     ::System::DateTime get_IdleSince();
     // System.Boolean get_NtlmAuthenticated()
-    // Offset: 0xAB77D4
+    // Offset: 0xC42CBC
     bool get_NtlmAuthenticated();
     // System.Void set_NtlmAuthenticated(System.Boolean value)
-    // Offset: 0xAB77DC
+    // Offset: 0xC42CC4
     void set_NtlmAuthenticated(bool value);
     // System.Net.NetworkCredential get_NtlmCredential()
-    // Offset: 0xAB77E8
+    // Offset: 0xC42CD0
     ::System::Net::NetworkCredential* get_NtlmCredential();
     // System.Void set_NtlmCredential(System.Net.NetworkCredential value)
-    // Offset: 0xAB77F0
+    // Offset: 0xC42CD8
     void set_NtlmCredential(::System::Net::NetworkCredential* value);
     // System.Boolean get_UnsafeAuthenticatedConnectionSharing()
-    // Offset: 0xAB77F8
+    // Offset: 0xC42CE0
     bool get_UnsafeAuthenticatedConnectionSharing();
     // System.Void set_UnsafeAuthenticatedConnectionSharing(System.Boolean value)
-    // Offset: 0xAB7800
+    // Offset: 0xC42CE8
     void set_UnsafeAuthenticatedConnectionSharing(bool value);
     // public System.Void .ctor(System.Net.ServicePoint sPoint)
-    // Offset: 0xAB5CF8
+    // Offset: 0xC411E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebConnection* New_ctor(::System::Net::ServicePoint* sPoint) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebConnection::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WebConnection*, creationType>(sPoint)));
     }
     // private System.Boolean CanReuse()
-    // Offset: 0xAB5D24
+    // Offset: 0xC4120C
     bool CanReuse();
     // private System.Boolean CheckReusable()
-    // Offset: 0xAB5D58
+    // Offset: 0xC41240
     bool CheckReusable();
     // private System.Threading.Tasks.Task Connect(System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAB5E00
+    // Offset: 0xC412E8
     ::System::Threading::Tasks::Task* Connect(::System::Net::WebOperation* operation, ::System::Threading::CancellationToken cancellationToken);
     // private System.Threading.Tasks.Task`1<System.Boolean> CreateStream(System.Net.WebOperation operation, System.Boolean reused, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAB5F24
+    // Offset: 0xC4140C
     ::System::Threading::Tasks::Task_1<bool>* CreateStream(::System::Net::WebOperation* operation, bool reused, ::System::Threading::CancellationToken cancellationToken);
     // System.Threading.Tasks.Task`1<System.Net.WebRequestStream> InitConnection(System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken)
-    // Offset: 0xAB6088
+    // Offset: 0xC41570
     ::System::Threading::Tasks::Task_1<::System::Net::WebRequestStream*>* InitConnection(::System::Net::WebOperation* operation, ::System::Threading::CancellationToken cancellationToken);
     // static System.Net.WebException GetException(System.Net.WebExceptionStatus status, System.Exception error)
-    // Offset: 0xAB61C8
+    // Offset: 0xC416B0
     static ::System::Net::WebException* GetException(::System::Net::WebExceptionStatus status, ::System::Exception* error);
     // static System.Boolean ReadLine(System.Byte[] buffer, ref System.Int32 start, System.Int32 max, ref System.String output)
-    // Offset: 0xAB6398
+    // Offset: 0xC41880
     static bool ReadLine(::ArrayW<uint8_t> buffer, ByRef<int> start, int max, ByRef<::StringW> output);
     // System.Boolean CanReuseConnection(System.Net.WebOperation operation)
-    // Offset: 0xAB659C
+    // Offset: 0xC41A84
     bool CanReuseConnection(::System::Net::WebOperation* operation);
     // private System.Boolean PrepareSharingNtlm(System.Net.WebOperation operation)
-    // Offset: 0xAB6A10
+    // Offset: 0xC41EF8
     bool PrepareSharingNtlm(::System::Net::WebOperation* operation);
     // private System.Void Reset()
-    // Offset: 0xAB6D48
+    // Offset: 0xC42230
     void Reset();
     // private System.Void Close(System.Boolean reset)
-    // Offset: 0xAB6E14
+    // Offset: 0xC422FC
     void Close(bool reset);
     // private System.Void CloseSocket()
-    // Offset: 0xAB6EE4
+    // Offset: 0xC423CC
     void CloseSocket();
     // public System.Boolean StartOperation(System.Net.WebOperation operation, System.Boolean reused)
-    // Offset: 0xAB710C
+    // Offset: 0xC425F4
     bool StartOperation(::System::Net::WebOperation* operation, bool reused);
     // public System.Boolean Continue(System.Net.WebOperation next)
-    // Offset: 0xAB75FC
+    // Offset: 0xC42AE4
     bool Continue(::System::Net::WebOperation* next);
     // private System.Void Dispose(System.Boolean disposing)
-    // Offset: 0xAB7784
+    // Offset: 0xC42C6C
     void Dispose(bool disposing);
     // public System.Void Dispose()
-    // Offset: 0xAB77CC
+    // Offset: 0xC42CB4
     void Dispose();
     // private System.Void ResetNtlm()
-    // Offset: 0xAB6E08
+    // Offset: 0xC422F0
     void ResetNtlm();
   }; // System.Net.WebConnection
   #pragma pack(pop)

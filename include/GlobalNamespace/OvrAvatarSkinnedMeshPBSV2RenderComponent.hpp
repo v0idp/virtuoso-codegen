@@ -29,7 +29,7 @@ namespace GlobalNamespace {
   // Forward declaring type: OvrAvatar
   class OvrAvatar;
   // Forward declaring type: OvrAvatarComponent
-  class OvrAvatarComponent;
+  class OvrAvatarComponent_;
 }
 // Forward declaring namespace: System
 namespace System {
@@ -61,15 +61,7 @@ namespace GlobalNamespace {
     public:
     // Writing base type padding for base size: 0x31 to desired offset: 0x38
     char ___base_padding[0x7] = {};
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private OvrAvatarMaterialManager avatarMaterialManager
     // Size: 0x8
     // Offset: 0x38
@@ -138,39 +130,39 @@ namespace GlobalNamespace {
     // Set static field: static private System.String DEFAULT_MATERIAL_NAME
     static void _set_DEFAULT_MATERIAL_NAME(::StringW value);
     // Get instance field reference: private OvrAvatarMaterialManager avatarMaterialManager
-    ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_avatarMaterialManager();
+    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_avatarMaterialManager();
     // Get instance field reference: private System.Boolean previouslyActive
-    bool& dyn_previouslyActive();
+    [[deprecated]] bool& dyn_previouslyActive();
     // Get instance field reference: private System.Boolean isCombinedMaterial
-    bool& dyn_isCombinedMaterial();
+    [[deprecated]] bool& dyn_isCombinedMaterial();
     // Get instance field reference: private ovrAvatarExpressiveParameters ExpressiveParameters
-    ::GlobalNamespace::ovrAvatarExpressiveParameters& dyn_ExpressiveParameters();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarExpressiveParameters& dyn_ExpressiveParameters();
     // Get instance field reference: private System.Boolean EnableExpressive
-    bool& dyn_EnableExpressive();
+    [[deprecated]] bool& dyn_EnableExpressive();
     // Get instance field reference: private System.Int32 blendShapeCount
-    int& dyn_blendShapeCount();
+    [[deprecated]] int& dyn_blendShapeCount();
     // Get instance field reference: private ovrAvatarBlendShapeParams blendShapeParams
-    ::GlobalNamespace::ovrAvatarBlendShapeParams& dyn_blendShapeParams();
+    [[deprecated]] ::GlobalNamespace::ovrAvatarBlendShapeParams& dyn_blendShapeParams();
     // System.Void Initialize(System.IntPtr renderPart, ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRender, OvrAvatarMaterialManager materialManager, System.Int32 thirdPersonLayer, System.Int32 firstPersonLayer, System.Boolean combinedMesh, ovrAvatarAssetLevelOfDetail lod, System.Boolean assignExpressiveParams, OvrAvatar avatar, System.Boolean isControllerModel)
-    // Offset: 0x8F1EC8
+    // Offset: 0xF81998
     void Initialize(::System::IntPtr renderPart, ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRender, ::GlobalNamespace::OvrAvatarMaterialManager* materialManager, int thirdPersonLayer, int firstPersonLayer, bool combinedMesh, ::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod, bool assignExpressiveParams, ::GlobalNamespace::OvrAvatar* avatar, bool isControllerModel);
     // public System.Void UpdateSkinnedMeshRender(OvrAvatarComponent component, OvrAvatar avatar, System.IntPtr renderPart)
-    // Offset: 0x8F2E44
-    void UpdateSkinnedMeshRender(::GlobalNamespace::OvrAvatarComponent* component, ::GlobalNamespace::OvrAvatar* avatar, ::System::IntPtr renderPart);
+    // Offset: 0xF89828
+    void UpdateSkinnedMeshRender(::GlobalNamespace::OvrAvatarComponent_* component, ::GlobalNamespace::OvrAvatar* avatar, ::System::IntPtr renderPart);
     // private System.Void InitializeSingleComponentMaterial(System.IntPtr renderPart, System.Int32 lodIndex)
-    // Offset: 0x8F3080
+    // Offset: 0xF92B04
     void InitializeSingleComponentMaterial(::System::IntPtr renderPart, int lodIndex);
     // private System.Void InitializeCombinedMaterial(System.IntPtr renderPart, System.Int32 lodIndex)
-    // Offset: 0x8F2598
+    // Offset: 0xF92278
     void InitializeCombinedMaterial(::System::IntPtr renderPart, int lodIndex);
     // private System.Void SetMaterialTransparent(UnityEngine.Material mat)
-    // Offset: 0x8F22BC
+    // Offset: 0xF91F9C
     void SetMaterialTransparent(::UnityEngine::Material* mat);
     // private System.Void SetMaterialOpaque(UnityEngine.Material mat)
-    // Offset: 0x8F2420
+    // Offset: 0xF92100
     void SetMaterialOpaque(::UnityEngine::Material* mat);
     // public System.Void .ctor()
-    // Offset: 0x8F3908
+    // Offset: 0xF93370
     // Implemented from: OvrAvatarRenderComponent
     // Base method: System.Void OvrAvatarRenderComponent::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
@@ -210,7 +202,7 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::UpdateSkinnedMeshRender
 // Il2CppName: UpdateSkinnedMeshRender
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::*)(::GlobalNamespace::OvrAvatarComponent*, ::GlobalNamespace::OvrAvatar*, ::System::IntPtr)>(&GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::UpdateSkinnedMeshRender)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::*)(::GlobalNamespace::OvrAvatarComponent_*, ::GlobalNamespace::OvrAvatar*, ::System::IntPtr)>(&GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::UpdateSkinnedMeshRender)> {
   static const MethodInfo* get() {
     static auto* component = &::il2cpp_utils::GetClassFromName("", "OvrAvatarComponent")->byval_arg;
     static auto* avatar = &::il2cpp_utils::GetClassFromName("", "OvrAvatar")->byval_arg;

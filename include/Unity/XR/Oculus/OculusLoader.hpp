@@ -63,22 +63,22 @@ namespace Unity::XR::Oculus {
     // Set static field: static private System.Collections.Generic.List`1<UnityEngine.XR.XRInputSubsystemDescriptor> s_InputSubsystemDescriptors
     static void _set_s_InputSubsystemDescriptors(::System::Collections::Generic::List_1<::UnityEngine::XR::XRInputSubsystemDescriptor*>* value);
     // public UnityEngine.XR.XRDisplaySubsystem get_displaySubsystem()
-    // Offset: 0x12DAB74
+    // Offset: 0x18DCDE8
     ::UnityEngine::XR::XRDisplaySubsystem* get_displaySubsystem();
     // public UnityEngine.XR.XRInputSubsystem get_inputSubsystem()
-    // Offset: 0x12DABDC
+    // Offset: 0x18DCE50
     ::UnityEngine::XR::XRInputSubsystem* get_inputSubsystem();
     // static private Unity.XR.Oculus.OculusLoader/Unity.XR.Oculus.DeviceSupportedResult IsDeviceSupported()
-    // Offset: 0x12DAAD8
+    // Offset: 0x18DCD4C
     static ::Unity::XR::Oculus::OculusLoader::DeviceSupportedResult IsDeviceSupported();
     // static private System.Void RuntimeLoadOVRPlugin()
-    // Offset: 0x12DB22C
+    // Offset: 0x18DD4A0
     static void RuntimeLoadOVRPlugin();
     // public Unity.XR.Oculus.OculusSettings GetSettings()
-    // Offset: 0x12DB3C8
+    // Offset: 0x18DD63C
     ::Unity::XR::Oculus::OculusSettings* GetSettings();
     // public System.Void .ctor()
-    // Offset: 0x12DB414
+    // Offset: 0x18DD688
     // Implemented from: UnityEngine.XR.Management.XRLoaderHelper
     // Base method: System.Void XRLoaderHelper::.ctor()
     // Base method: System.Void XRLoader::.ctor()
@@ -91,27 +91,27 @@ namespace Unity::XR::Oculus {
       return THROW_UNLESS((::il2cpp_utils::New<OculusLoader*, creationType>()));
     }
     // static private System.Void .cctor()
-    // Offset: 0x12DB41C
+    // Offset: 0x18DD690
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.cctor()
     static void _cctor();
     // public override System.Boolean Initialize()
-    // Offset: 0x12DAC44
+    // Offset: 0x18DCEB8
     // Implemented from: UnityEngine.XR.Management.XRLoader
     // Base method: System.Boolean XRLoader::Initialize()
     bool Initialize();
     // public override System.Boolean Start()
-    // Offset: 0x12DAFF4
+    // Offset: 0x18DD268
     // Implemented from: UnityEngine.XR.Management.XRLoader
     // Base method: System.Boolean XRLoader::Start()
     bool Start();
     // public override System.Boolean Stop()
-    // Offset: 0x12DB098
+    // Offset: 0x18DD30C
     // Implemented from: UnityEngine.XR.Management.XRLoader
     // Base method: System.Boolean XRLoader::Stop()
     bool Stop();
     // public override System.Boolean Deinitialize()
-    // Offset: 0x12DB13C
+    // Offset: 0x18DD3B0
     // Implemented from: UnityEngine.XR.Management.XRLoaderHelper
     // Base method: System.Boolean XRLoaderHelper::Deinitialize()
     bool Deinitialize();

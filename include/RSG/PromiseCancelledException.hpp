@@ -30,7 +30,7 @@ namespace RSG {
   class PromiseCancelledException : public ::System::Exception {
     public:
     // public System.Void .ctor()
-    // Offset: 0x992030
+    // Offset: 0xB29AF8
     // Implemented from: System.Exception
     // Base method: System.Void Exception::.ctor()
     // Base method: System.Void Object::.ctor()
@@ -40,7 +40,7 @@ namespace RSG {
       return THROW_UNLESS((::il2cpp_utils::New<PromiseCancelledException*, creationType>()));
     }
     // public System.Void .ctor(System.String message)
-    // Offset: 0x992094
+    // Offset: 0xB29B5C
     // Implemented from: System.Exception
     // Base method: System.Void Exception::.ctor(System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

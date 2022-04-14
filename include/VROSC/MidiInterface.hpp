@@ -47,7 +47,7 @@ namespace VROSC {
     // Offset: 0xFFFFFFFFFFFFFFFF
     void AllNotesOff();
     // protected System.Void .ctor()
-    // Offset: 0x8B3BB0
+    // Offset: 0xAC7740
     // Implemented from: UnityEngine.MonoBehaviour
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()

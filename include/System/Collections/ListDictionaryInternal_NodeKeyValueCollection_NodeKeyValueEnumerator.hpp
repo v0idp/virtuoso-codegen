@@ -27,15 +27,7 @@ namespace System::Collections {
   // [TokenAttribute] Offset: FFFFFFFF
   class ListDictionaryInternal::NodeKeyValueCollection::NodeKeyValueEnumerator : public ::Il2CppObject/*, public ::System::Collections::IEnumerator*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Collections.ListDictionaryInternal list
     // Size: 0x8
     // Offset: 0x10
@@ -72,30 +64,30 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.ListDictionaryInternal list
-    ::System::Collections::ListDictionaryInternal*& dyn_list();
+    [[deprecated]] ::System::Collections::ListDictionaryInternal*& dyn_list();
     // Get instance field reference: private System.Collections.ListDictionaryInternal/System.Collections.DictionaryNode current
-    ::System::Collections::ListDictionaryInternal::DictionaryNode*& dyn_current();
+    [[deprecated]] ::System::Collections::ListDictionaryInternal::DictionaryNode*& dyn_current();
     // Get instance field reference: private System.Int32 version
-    int& dyn_version();
+    [[deprecated]] int& dyn_version();
     // Get instance field reference: private System.Boolean isKeys
-    bool& dyn_isKeys();
+    [[deprecated]] bool& dyn_isKeys();
     // Get instance field reference: private System.Boolean start
-    bool& dyn_start();
+    [[deprecated]] bool& dyn_start();
     // public System.Object get_Current()
-    // Offset: 0x1090A88
+    // Offset: 0x189D0AC
     ::Il2CppObject* get_Current();
     // public System.Void .ctor(System.Collections.ListDictionaryInternal list, System.Boolean isKeys)
-    // Offset: 0x1090A2C
+    // Offset: 0x189D050
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ListDictionaryInternal::NodeKeyValueCollection::NodeKeyValueEnumerator* New_ctor(::System::Collections::ListDictionaryInternal* list, bool isKeys) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::ListDictionaryInternal::NodeKeyValueCollection::NodeKeyValueEnumerator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ListDictionaryInternal::NodeKeyValueCollection::NodeKeyValueEnumerator*, creationType>(list, isKeys)));
     }
     // public System.Boolean MoveNext()
-    // Offset: 0x1090B08
+    // Offset: 0x189D12C
     bool MoveNext();
     // public System.Void Reset()
-    // Offset: 0x1090BB8
+    // Offset: 0x189D1DC
     void Reset();
   }; // System.Collections.ListDictionaryInternal/System.Collections.NodeKeyValueCollection/System.Collections.NodeKeyValueEnumerator
   #pragma pack(pop)

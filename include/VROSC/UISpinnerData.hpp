@@ -35,15 +35,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class UISpinnerData : public ::Il2CppObject {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.String _header
     // Size: 0x8
     // Offset: 0x10
@@ -58,20 +50,20 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: private System.String _header
-    ::StringW& dyn__header();
+    [[deprecated]] ::StringW& dyn__header();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _values
-    ::System::Collections::Generic::List_1<::StringW>*& dyn__values();
+    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__values();
     // public System.String get_Header()
-    // Offset: 0x13A4D34
+    // Offset: 0x1918C64
     ::StringW get_Header();
     // public System.Collections.Generic.List`1<System.String> get_Values()
-    // Offset: 0x13A4D3C
+    // Offset: 0x1918C6C
     ::System::Collections::Generic::List_1<::StringW>* get_Values();
     // public System.Void Set(System.String header, System.Collections.Generic.List`1<System.String> values)
-    // Offset: 0x13A4D44
+    // Offset: 0x1918C74
     void Set(::StringW header, ::System::Collections::Generic::List_1<::StringW>* values);
     // public System.Void .ctor()
-    // Offset: 0x13A4D4C
+    // Offset: 0x1918C7C
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

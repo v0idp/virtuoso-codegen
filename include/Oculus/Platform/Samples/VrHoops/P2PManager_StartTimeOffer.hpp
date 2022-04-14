@@ -35,20 +35,20 @@ namespace Oculus::Platform::Samples::VrHoops {
   class P2PManager::StartTimeOffer : public ::System::MulticastDelegate {
     public:
     // public System.Void .ctor(System.Object object, System.IntPtr method)
-    // Offset: 0x11560B8
+    // Offset: 0x1722FB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static P2PManager::StartTimeOffer* New_ctor(::Il2CppObject* object, ::System::IntPtr method) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<P2PManager::StartTimeOffer*, creationType>(object, method)));
     }
     // public System.Single Invoke(System.Single remoteTime)
-    // Offset: 0x11560C8
+    // Offset: 0x1722FC4
     float Invoke(float remoteTime);
     // public System.IAsyncResult BeginInvoke(System.Single remoteTime, System.AsyncCallback callback, System.Object object)
-    // Offset: 0x1156304
+    // Offset: 0x1723200
     ::System::IAsyncResult* BeginInvoke(float remoteTime, ::System::AsyncCallback* callback, ::Il2CppObject* object);
     // public System.Single EndInvoke(System.IAsyncResult result)
-    // Offset: 0x115638C
+    // Offset: 0x1723288
     float EndInvoke(::System::IAsyncResult* result);
   }; // Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.StartTimeOffer
   #pragma pack(pop)

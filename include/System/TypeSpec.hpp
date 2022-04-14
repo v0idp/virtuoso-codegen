@@ -64,15 +64,7 @@ namespace System {
     public:
     // Nested type: ::System::TypeSpec::DisplayNameFormat
     struct DisplayNameFormat;
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.TypeIdentifier name
     // Size: 0x8
     // Offset: 0x10
@@ -119,60 +111,60 @@ namespace System {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.TypeIdentifier name
-    ::System::TypeIdentifier*& dyn_name();
+    [[deprecated]] ::System::TypeIdentifier*& dyn_name();
     // Get instance field reference: private System.String assembly_name
-    ::StringW& dyn_assembly_name();
+    [[deprecated]] ::StringW& dyn_assembly_name();
     // Get instance field reference: private System.Collections.Generic.List`1<System.TypeIdentifier> nested
-    ::System::Collections::Generic::List_1<::System::TypeIdentifier*>*& dyn_nested();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::TypeIdentifier*>*& dyn_nested();
     // Get instance field reference: private System.Collections.Generic.List`1<System.TypeSpec> generic_params
-    ::System::Collections::Generic::List_1<::System::TypeSpec*>*& dyn_generic_params();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::TypeSpec*>*& dyn_generic_params();
     // Get instance field reference: private System.Collections.Generic.List`1<System.ModifierSpec> modifier_spec
-    ::System::Collections::Generic::List_1<::System::ModifierSpec*>*& dyn_modifier_spec();
+    [[deprecated]] ::System::Collections::Generic::List_1<::System::ModifierSpec*>*& dyn_modifier_spec();
     // Get instance field reference: private System.Boolean is_byref
-    bool& dyn_is_byref();
+    [[deprecated]] bool& dyn_is_byref();
     // Get instance field reference: private System.String display_fullname
-    ::StringW& dyn_display_fullname();
+    [[deprecated]] ::StringW& dyn_display_fullname();
     // System.Boolean get_HasModifiers()
-    // Offset: 0x106F998
+    // Offset: 0x12B3768
     bool get_HasModifiers();
     // System.String get_DisplayFullName()
-    // Offset: 0x106FE2C
+    // Offset: 0x12B3BFC
     ::StringW get_DisplayFullName();
     // private System.String GetDisplayFullName(System.TypeSpec/System.DisplayNameFormat flags)
-    // Offset: 0x106F9A8
+    // Offset: 0x12B3778
     ::StringW GetDisplayFullName(::System::TypeSpec::DisplayNameFormat flags);
     // private System.Text.StringBuilder GetModifierString(System.Text.StringBuilder sb)
-    // Offset: 0x106FE60
+    // Offset: 0x12B3C30
     ::System::Text::StringBuilder* GetModifierString(::System::Text::StringBuilder* sb);
     // static System.TypeSpec Parse(System.String typeName)
-    // Offset: 0x106EF98
+    // Offset: 0x12B2D98
     static ::System::TypeSpec* Parse(::StringW typeName);
     // static System.String UnescapeInternalName(System.String displayName)
-    // Offset: 0x1070BD8
+    // Offset: 0x12B49A8
     static ::StringW UnescapeInternalName(::StringW displayName);
     // System.Type Resolve(System.Func`2<System.Reflection.AssemblyName,System.Reflection.Assembly> assemblyResolver, System.Func`4<System.Reflection.Assembly,System.String,System.Boolean,System.Type> typeResolver, System.Boolean throwOnError, System.Boolean ignoreCase)
-    // Offset: 0x106F074
+    // Offset: 0x12B2E74
     ::System::Type* Resolve(::System::Func_2<::System::Reflection::AssemblyName*, ::System::Reflection::Assembly*>* assemblyResolver, ::System::Func_4<::System::Reflection::Assembly*, ::StringW, bool, ::System::Type*>* typeResolver, bool throwOnError, bool ignoreCase);
     // private System.Void AddName(System.String type_name)
-    // Offset: 0x1070CD8
+    // Offset: 0x12B4AA8
     void AddName(::StringW type_name);
     // private System.Void AddModifier(System.ModifierSpec md)
-    // Offset: 0x1070DC0
+    // Offset: 0x12B4B90
     void AddModifier(::System::ModifierSpec* md);
     // static private System.Void SkipSpace(System.String name, ref System.Int32 pos)
-    // Offset: 0x1070E6C
+    // Offset: 0x12B4C3C
     static void SkipSpace(::StringW name, ByRef<int> pos);
     // static private System.Void BoundCheck(System.Int32 idx, System.String s)
-    // Offset: 0x1070F30
+    // Offset: 0x12B4D00
     static void BoundCheck(int idx, ::StringW s);
     // static private System.TypeIdentifier ParsedTypeIdentifier(System.String displayName)
-    // Offset: 0x1070DBC
+    // Offset: 0x12B4B8C
     static ::System::TypeIdentifier* ParsedTypeIdentifier(::StringW displayName);
     // static private System.TypeSpec Parse(System.String name, ref System.Int32 p, System.Boolean is_recurse, System.Boolean allow_aqn)
-    // Offset: 0x1070020
+    // Offset: 0x12B3DF0
     static ::System::TypeSpec* Parse(::StringW name, ByRef<int> p, bool is_recurse, bool allow_aqn);
     // public System.Void .ctor()
-    // Offset: 0x1070FB8
+    // Offset: 0x12B4D88
     // Implemented from: System.Object
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

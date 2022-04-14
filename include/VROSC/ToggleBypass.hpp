@@ -36,15 +36,7 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class ToggleBypass : public ::VROSC::SignalNode {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private VROSC.SignalNode[] _nodesToToggle
     // Size: 0x8
     // Offset: 0x40
@@ -53,9 +45,9 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::SignalNode*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.SignalNode[] _nodesToToggle
-    ::ArrayW<::VROSC::SignalNode*>& dyn__nodesToToggle();
+    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__nodesToToggle();
     // public System.Void .ctor()
-    // Offset: 0x1400248
+    // Offset: 0xA28180
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
@@ -70,7 +62,7 @@ namespace VROSC {
       return THROW_UNLESS((::il2cpp_utils::New<ToggleBypass*, creationType>()));
     }
     // protected override System.Void NodeBegin(VROSC.Signal signal)
-    // Offset: 0x140015C
+    // Offset: 0xA28094
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::NodeBegin(VROSC.Signal signal)
     void NodeBegin(::VROSC::Signal* signal);

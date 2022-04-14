@@ -41,15 +41,7 @@ namespace System {
   // [TokenAttribute] Offset: FFFFFFFF
   class ArraySpec : public ::Il2CppObject/*, public ::System::ModifierSpec*/ {
     public:
-    #ifdef USE_CODEGEN_FIELDS
     public:
-    #else
-    #ifdef CODEGEN_FIELD_ACCESSIBILITY
-    CODEGEN_FIELD_ACCESSIBILITY:
-    #else
-    protected:
-    #endif
-    #endif
     // private System.Int32 dimensions
     // Size: 0x4
     // Offset: 0x10
@@ -68,24 +60,24 @@ namespace System {
       return *reinterpret_cast<::System::ModifierSpec*>(this);
     }
     // Get instance field reference: private System.Int32 dimensions
-    int& dyn_dimensions();
+    [[deprecated]] int& dyn_dimensions();
     // Get instance field reference: private System.Boolean bound
-    bool& dyn_bound();
+    [[deprecated]] bool& dyn_bound();
     // System.Void .ctor(System.Int32 dimensions, System.Boolean bound)
-    // Offset: 0xDEB2D0
+    // Offset: 0x1143CF8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ArraySpec* New_ctor(int dimensions, bool bound) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ArraySpec::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ArraySpec*, creationType>(dimensions, bound)));
     }
     // public System.Type Resolve(System.Type type)
-    // Offset: 0xDEB310
+    // Offset: 0x1143D38
     ::System::Type* Resolve(::System::Type* type);
     // public System.Text.StringBuilder Append(System.Text.StringBuilder sb)
-    // Offset: 0xDEB384
+    // Offset: 0x1143DAC
     ::System::Text::StringBuilder* Append(::System::Text::StringBuilder* sb);
     // public override System.String ToString()
-    // Offset: 0xDEB434
+    // Offset: 0x1143E5C
     // Implemented from: System.Object
     // Base method: System.String Object::ToString()
     ::StringW ToString();
